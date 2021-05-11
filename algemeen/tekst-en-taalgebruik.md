@@ -1,5 +1,8 @@
 # Tekst en taalgebruik
 
+[![hackmd-github-sync-badge](https://hackmd.io/U-WN8Is9Q62y1auHEbTBhQ/badge)](https://hackmd.io/U-WN8Is9Q62y1auHEbTBhQ)
+
+
 ## Introductie
 
 De overheid moet duidelijk communiceren. Dat betekent: rekening houden met je lezer, een persoonlijke benadering kiezen en ervoor zorgen dat de taal begrijpelijk is. Zorg er daarom voor dat begrijpelijke taal in een vroeg stadium van de productontwikkeling gewaarborgd is.
