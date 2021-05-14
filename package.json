@@ -1,0 +1,19 @@
+{
+  "name": "nl-design-system-documentatie",
+  "version": "0.0.1",
+  "description": "Documentatie voor NL Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nl-design-system/documentatie.git"
+  },
+  "author": "Community for NL Design System",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/nl-design-system/documentatie/issues"
+  },
+  "homepage": "https://github.com/nl-design-system/documentatie#readme"
+}
