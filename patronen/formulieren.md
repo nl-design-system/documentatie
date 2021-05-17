@@ -68,3 +68,7 @@ Een formulier past in een bredere context en proces van de gebruiker. Zij komt n
 
 ### Zorg voor een duidelijke afhandeling
 
+- [ ] Zorg voor een duidelijke afsluiting aan het einde van het formulier.
+- [ ] Geef aan dat het formulier verzonden is.
+- [ ] Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.
+
