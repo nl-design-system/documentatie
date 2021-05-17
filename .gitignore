@@ -1,3 +1,4 @@
 ## Generated
-node_modules/
-.docz/
+node_modules
+.docz
+dist
