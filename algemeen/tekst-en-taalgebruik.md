@@ -1,9 +1,10 @@
+---
+menu: Algemeen
+---
+
 # Tekst en taalgebruik
 
 [![hackmd-github-sync-badge](https://hackmd.io/U-WN8Is9Q62y1auHEbTBhQ/badge)](https://hackmd.io/U-WN8Is9Q62y1auHEbTBhQ)
-
-###### tags: `Algemeen` `NLDS`
-
 
 ## Introductie
 
