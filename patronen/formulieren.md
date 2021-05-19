@@ -17,9 +17,6 @@ Een formulier past in een bredere context en proces van de gebruiker. Zij komt n
 - [Stel alleen noodzakelijke vragen.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Stel-alleen-noodzakelijke-vragen)
 - [Combineer en groepeer vragen waar nodig.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Combineer-en-groepeer-vragen-waar-nodig)
 - [Breek waar nodig het formulier op in meerdere stappen.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Meerstappen-formulieren)
-
-### Bereid de gebruiker voor
-
 - Maak de functie van het formulier direct duidelijk.
 - Maak zo snel mogelijk duidelijk of het formulier van toepassing voor de gebruiker.
 - Leg uit wat een gebruiker nodig heeft om het formulier succesvol in te vullen.
