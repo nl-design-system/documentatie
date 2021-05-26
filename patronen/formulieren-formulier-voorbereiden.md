@@ -40,6 +40,12 @@ Vraag alleen om strikt noodzakelijke informatie om het doel van het formulier te
 
 Is het bijvoorbeeld nodig om [naar het geslacht]({#link-naar-inclusierichtlijnen!}) of geboortedatum te vragen? Wat is het doel hiervan voor de organisatie en vooral het voordeel voor de gebruiker?
 
+### Optionele en verplichte invoervelden
+
+Tracht optionele vragen te vermijden. Mocht je deze toch willen stellen doe dit dan aan het einde van het formulier te stellen, tenzij deze echt bij een bepaald onderwerp of groep horen.
+
+Geef duidelijk aan welke vragen optioneel zijn. De beste manier om dit aan te geven is met een tekst zodat deze ook door voorleessoftware wordt aangekondigd. Een verplicht invoerveld voorzien van het required HTML attribuut wordt als zodanig al aangekondigd door voorleessoftware.
+
 ## Zorg ervoor dat bepaalde vragen gesteld mogen worden
 
 Is het bijvoorbeeld juridisch verantwoord om deze informatie te vragen?
@@ -85,9 +91,9 @@ Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk 
 
 ## Leg uit wat een gebruiker nodig heeft om het formulier succesvol in te vullen
 
-Als een gebruiker afhankelijk is van informatie die wellicht niet direct voorhanden is, informeer de gebruiker hiervan voordat zij het formulier in gaat vullen.
+Waar nodig helpt het gebruikers een overzicht te geven van wat nodig is om een formulier succesvol af te ronden. Bijvoorbeeld wanneer een identiteitsbewijs of ondertekening door een ander nodig is.
 
-Denk bijvoorbeeld aan een rekeningnummer, paspoortgegevens of de noodzaak van mede ondertekening door een ander.
+Voeg dit overzicht als eerste toe voor een formulier getoond wordt. Dit kan een aparte sectie, maar ook een aparte pagina zijn. De sectie over groeperen en opsplitsen kan hierbij hulp bieden.
 
 ## Laat op voorhand weten wanneer een tijdslimiet van toepassing is
 
@@ -129,15 +135,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-![](https://i.imgur.com/gNAKpNw.png)
+![stappenmodel desktop](https://i.imgur.com/gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-![](https://i.imgur.com/5NOTWDu.png)
+![stappenmodel tablet](https://i.imgur.com/5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-![](https://i.imgur.com/c7Nvcz7.png)
+![stappenmodel mobiel](https://i.imgur.com/c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
