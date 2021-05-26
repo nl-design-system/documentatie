@@ -8,6 +8,8 @@ _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Vragen en antwoorden
 
+[![hackmd-github-sync-badge](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA/badge)](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA)
+
 ## Zorg voor duidelijk taalgebruik
 
 Zorg dat een gebruiker de vraag begrijpt. Het tekstlabel dient zo duidelijk en beschrijvend mogelijk te zijn en waar nodig kan er extra hulp geboden worden. Zie het onderwerp Hulp en ondersteuning voor meer informatie hierover.
