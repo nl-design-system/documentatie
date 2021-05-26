@@ -1,4 +1,5 @@
 ---
+name: Validatie en foutpreventie
 menu: Formulieren
 ---
 
@@ -7,6 +8,8 @@ menu: Formulieren
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Validatie en foutpreventie
+
+[![hackmd-github-sync-badge](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q/badge)](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q)
 
 ## Accepteer antwoorden in verschillende vormen
 
