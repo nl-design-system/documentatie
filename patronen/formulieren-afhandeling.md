@@ -8,6 +8,8 @@ _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Afhandeling
 
+[![hackmd-github-sync-badge](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw/badge)](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw)
+
 ## Zorg voor een duidelijke afsluiting
 
 Nadat een gebruiker alle vragen heeft beantwoord dien je zorg te dragen voor een juiste afhandeling en opvolging hiervan.
