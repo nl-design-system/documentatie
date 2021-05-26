@@ -3,8 +3,6 @@ name: 8. Overzicht
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Overzicht
