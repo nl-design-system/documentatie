@@ -2,7 +2,7 @@
 menu: Patronen
 ---
 
-
+[![hackmd-github-sync-badge](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ/badge)](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ)
 
 # Richtlijnen voor formulieren: Biedt een duidelijke vormgeving, opbouw en structuur
 
