@@ -1,5 +1,5 @@
 ---
-menu: Patronen
+menu: Formulieren
 ---
 
 [![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
@@ -28,7 +28,11 @@ Sommige informatie kan door een gebruiker niet gewijzigd worden. Deze informatie
 
 Andere informatie, zoals bijvoorbeeld een telefoonnummer of e-mailadres dat al bekend is, kan vooraf ingevuld worden in een invoerveld. Deze kan door de gebruiker wel gewijzigd worden.
 
-Het is mogelijk om repeterende informatie van de gebruiker in de instellingen van moderne browser op te slaan. Deze ‘autocomplete’ functie zorgt er voor dat relevante formulier elementen automatisch ingevuld worden.
+Dit kan op diverse manieren:
+- Het vooraf invullen van een formulierveld. Hierdoor heeft een gebruiker de mogelijkheid deze informatie direct aan te passen. 
+- Het tonen van de informatie (‘read-only’) met een functie om deze informatie te wijzigen.
+- Automatisch aanvullen van gedeeltelijke informatie. Bijvoorbeeld na invullen van postcode en huisnummer kan het volledige adres automatisch aangevuld worden.
+- Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen.
 
 ## Stel alleen noodzakelijke vragen
 
@@ -125,15 +129,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-![stap 1 formulier stappenmodel desktopversie](https://i.imgur.com/gNAKpNw.png)
+![](https://i.imgur.com/gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-![stap 1 formulier stappenmodel tabletversie](https://i.imgur.com/5NOTWDu.png)
+![](https://i.imgur.com/5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-![stap 1 formulier stappenmodel mobiele versie](https://i.imgur.com/c7Nvcz7.png)
+![](https://i.imgur.com/c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
