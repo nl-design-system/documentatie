@@ -8,6 +8,8 @@ _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Hulp en ondersteuning
 
+[![hackmd-github-sync-badge](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A/badge)](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A)
+
 ## Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden
 
 Optionele help tekst kan als alternatief voor placeholder tekst gebruikt worden bij invoerelementen die verduidelijkt dienen te worden.
