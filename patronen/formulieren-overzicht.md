@@ -8,6 +8,8 @@ _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Overzicht
 
+[![hackmd-github-sync-badge](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA/badge)](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA)
+
 ## Biedt een overzicht van het formulier
 
 Geef de gebruiker een overzicht van de ingevoerde informatie die verstuurd zal worden. Deze samenvatting is voornamelijk handig bij meerstappen formulieren. Dit kan bijvoorbeeld in een tabel weergegeven worden.
