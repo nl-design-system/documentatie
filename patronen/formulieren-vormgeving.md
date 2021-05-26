@@ -30,7 +30,7 @@ Een verschil in breedte kan op invoervelden worden toegepast om de verwachte len
 
 ### Voorbeeld IBAN nummer
 
-![](https://i.imgur.com/edEERws.png)
+![Iban voorbeeld](https://i.imgur.com/edEERws.png)
 
 
 ## Toon duidelijk de relatie tussen verschillende formulier elementen
