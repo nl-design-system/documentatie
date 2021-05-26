@@ -1,5 +1,5 @@
 ---
-menu: Patronen
+menu: Formulieren
 ---
 
 [![hackmd-github-sync-badge](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ/badge)](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ)
@@ -10,11 +10,13 @@ _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Vormgeving, opbouw en structuur
 
-## Vermijd zoveel mogelijk visuele afleiding
+## Vermijd zoveel mogelijk afleiding
 
-Zorg voor zo min mogelijk afleiding op een formulieren pagina.
+Zorg voor zo min mogelijk visuele of tekstuele afleiding op een formulieren pagina.
 
 ## Vermijd lange stukken tekst
+
+Biedt alleen beknopte informatie aan die voor de gebruiker op dat moment relevant is.
 
 ## Laat gebruikers makkelijk een formulier scannen
 
@@ -24,13 +26,24 @@ Om iemand comfortabel een formulier te laten scannen is het raadzaam om formulie
 
 Bij het structureren van een formulier dient er voldoende ruimte te zijn tussen verschillende visuele elementen. Deze elementen dienen zo gegroepeerd te zijn dat het duidelijk is dat bijvoorbeeld een label bij een tekstinvoerveld hoort.
 
+### Positie van tekstlabels
+
+Labels zijn de vragen die je een gebruiker stelt. Zorg dat deze zo duidelijk en vriendelijk maar beknopt mogelijk zijn. Laat een gebruiker de vragen makkelijk scannen.
+
+Een goed label is buiten een invoerveld geplaatst, niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoont.
+
+Overweeg labels op de regel boven het invoerveld te plaatsen. Voor left-to-right talen is deze links uitgelijnd. Het hier plaatsen biedt meerdere voordelen:
+1. Het biedt voldoende ruimte voor labels van verschillende lengtes. Denk bv. ook aan het vertalen van labels (zowel left-to-right en right-to-left talen hebben hierdoor ruimte) door vertaalsoftware.
+1. Gebruikers die wensen in te zoomen hebben de meeste kans om het label corresponderend met de invoer te lezen.
+1. Het biedt een natuurlijke ‘scan-lijn’ waardoor een formulier automatisch overzichtelijk en consistent wordt.
+
 ## Zorg dat het antwoord in het invoerveld past
 
 Een verschil in breedte kan op invoervelden worden toegepast om de verwachte lengte van invoer te visualiseren. Zo is een huisnummer vaak korter dan een telefoonnummer.
 
 ### Voorbeeld IBAN nummer
 
-![Iban voorbeeld](https://i.imgur.com/edEERws.png)
+![](https://i.imgur.com/edEERws.png)
 
 
 ## Toon duidelijk de relatie tussen verschillende formulier elementen
