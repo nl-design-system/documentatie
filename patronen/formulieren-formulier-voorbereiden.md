@@ -6,23 +6,37 @@ menu: Patronen
 
 # Richtlijnen voor formulieren: Bereid een formulier voor
 
-## Inventariseer of informatie al beschikbaar is
-
-Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeenteof middels DigiD.
-
 ## Formuleer de vragen die je wilt stellen
 
-Formuleer eerst alle vragen die je aan jouw gebruiker wilt stellen.
+Formuleer het doel van het formulier en maak dan een overzicht van alle vragen die je aan jouw gebruiker wilt stellen.
 
-### Selectieafhankelijke vragen
+## Inventariseer of informatie al beschikbaar is
+
+Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeente of middels Basisregistratie Personen (BRP) of DigiD.
+
+Sommige informatie kan door een gebruiker niet gewijzigd worden. Deze informatie kan echter wel getoond worden zodat de gebruiker weet welke informatie met het formulier meegestuurd wordt.
+
+Andere informatie, zoals bijvoorbeeld een telefoonnummer of e-mailadres dat al bekend is, kan vooraf ingevuld worden in een invoerveld. Deze kan door de gebruiker wel gewijzigd worden.
+
+Het is mogelijk om repeterende informatie van de gebruiker in de instellingen van moderne browser op te slaan. Deze ‘autocomplete’ functie zorgt er voor dat relevante formulier elementen automatisch ingevuld worden.
+
+## Stel alleen noodzakelijke vragen
+
+Bedenk of alle vragen daadwerkelijk nodig zijn om het doel van het formulier te bereiken.
+
+Is het bijvoorbeeld nodig om [naar het geslacht]({#link-naar-inclusierichtlijnen!}) of geboortedatum te vragen? Wat is het doel hiervan voor de organisatie en vooral het voordeel voor de gebruiker?
+
+## Zorg ervoor dat bepaalde vragen gesteld mogen worden
+
+Is het bijvoorbeeld juridisch verantwoord om deze informatie te vragen?
+
+## Selectieafhankelijke vragen
 
 Selectieafhankelijke of conditionele vragen worden getoond als reactie op een eerdere vraag.
 
 Conditionele vragen verschijnen altijd ná de originele vraag, nooit in een eerdere stap.
 
-## Stel alleen noodzakelijke vragen
-
-Bedenk of alle vragen daadwerkelijk nodig zijn. Is het bijvoorbeeld nodig om [naar het geslacht]({#link-naar-inclusierichtlijnen!}) of geboortedatum te vragen? Wat is het doel hiervan voor de organisatie en vooral het voordeel voor de gebruiker?
+Bepaal waar deze conditionele vragen logisch gegroepeerd dienen te worden.
 
 ## Combineer en groepeer vragen
 
@@ -32,9 +46,9 @@ Enkele conventies voor ‘groepeerblokken’ zijn vast te stellen, zoals bijvoor
 
 Wanneer een formulier als dialoog wordt gezien ontstaan onderwerpen vaak op een natuurlijke wijze. Gebruik deze onderwerpen om een formulier logisch te groeperen.
 
-Ook de ‘boekhoofdstuk metafoor’ of waar een koptekst moet verschijnen, kan hulp bieden bij het groeperen. Gebruikers vragen wat voor hen een logische groepering is, is uiteraard een hele goede methode om te groeperen.
+Ook de ‘boekhoofdstuk metafoor’ of waar kopteksten moeten verschijnen, kan hulp bieden bij het groeperen. Gebruikers vragen wat voor hen een logische groepering is, is uiteraard een hele goede methode om te groeperen.
 
-Voorzie de groepen van duidelijke kopteksten.
+Voorzie de groepen van duidelijke en beschrijvende kopteksten.
 
 ### Enkele vragen, meerdere elementen
 
@@ -44,6 +58,30 @@ Een enkele vraag op een formulier hoeft niet slechts één formulierelement te z
 
 Groepen kunnen op verschillende manieren gesorteerd worden. Een van de opties is dat eerst makkelijke vragen, en daarna de moeilijke aan bod komen. Een andere optie is om eerst voor ingevulde antwoorden op vragen te tonen. Optionele vragen – mits ze niet bij een bepaalde groep horen-  stel je aan het einde.
 Een gebruiker moet voordat hij aan het formulier goed kunnen zien of het formulier of een vraag voor hem bedoeld is. Als een gebruiker niet voor een bepaald onderdeel of bepaalde vraag niet in aanmerking komt, moet dit snel in het proces duidelijk zijn. Beslisbomen kunnen hierbij helpen. Zet zo’n beslisboom vooraan in het formulier.
+
+## Maak de functie van het formulier direct duidelijk
+
+Door het aanbieden van een duidelijke titel en eventuele intro tekst weet de gebruiker direct wat het doel van het formulier is.
+
+## Maak zo snel mogelijk duidelijk of het formulier relevant is voor de gebruiker
+
+Bij bijvoorbeeld [selectieafhankelijke vragen]( https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Selectieafhankelijke-vragen) kan het mogelijk zijn om een gebruiker al snel tijdens het invullen te informeren of het formulier voor haar relevant is.
+
+Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk duidelijk zijn of het formulier relevant is.
+
+## Leg uit wat een gebruiker nodig heeft om het formulier succesvol in te vullen
+
+Als een gebruiker afhankelijk is van informatie die wellicht niet direct voorhanden is, informeer de gebruiker hiervan voordat zij het formulier in gaat vullen.
+
+Denk bijvoorbeeld aan een rekeningnummer, paspoortgegevens of de noodzaak van mede ondertekening door een ander.
+
+## Laat op voorhand weten wanneer een tijdslimiet van toepassing is
+
+Als een tijdslimiet strikt noodzakelijk is, informeer de gebruiker hier dan over voordat zij het formulier in gaat vullen.
+
+Als de tijdslimiet dreigt overschreden te worden, informeer de gebruiker dan ook tijdens het invullen van een formulier.
+
+Biedt waar mogelijk een gebruiker de mogelijkheid een tijdslimiet eenvoudig te verlengen.
 
 ## Meerstappen formulieren
 
