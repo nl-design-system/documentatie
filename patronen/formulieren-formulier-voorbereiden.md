@@ -125,15 +125,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-![](https://i.imgur.com/gNAKpNw.png)
+![stap 1 formulier stappenmodel desktopversie](https://i.imgur.com/gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-![](https://i.imgur.com/5NOTWDu.png)
+![stap 1 formulier stappenmodel tabletversie](https://i.imgur.com/5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-![](https://i.imgur.com/c7Nvcz7.png)
+![stap 1 formulier stappenmodel mobiele versie](https://i.imgur.com/c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
