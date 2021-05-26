@@ -1,5 +1,5 @@
 ---
-name: 6. Validatie en foutpreventie
+name: 7. Validatie en foutpreventie
 menu: Formulieren
 ---
 
