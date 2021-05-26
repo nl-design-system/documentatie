@@ -3,8 +3,6 @@ name: 4. Inclusie en toegankelijkheid
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Inclusie en toegankelijkheid
