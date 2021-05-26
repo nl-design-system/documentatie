@@ -42,7 +42,7 @@ Een formulier past in een bredere context en proces van de gebruiker. Zij komt n
 - Laat duidelijk weten wat de noodzaak is van privacygevoelige informatie.
 - Vermijd open invoervelden en dropdown menu’s.
 - Laat bij meerkeuzevragen waar mogelijk alle antwoorden zien.
-- Combineer invoervelden, gebruik zo veel mogelijk één veld voor antwoorden die al geheel worden gezien.
+- Combineer invoervelden, gebruik zo veel mogelijk één veld voor antwoorden die als geheel worden gezien.
 - Als informatie vooraf bekend vul deze in en zorg dat deze te wijzigen zijn.
 
 
@@ -51,7 +51,7 @@ Een formulier past in een bredere context en proces van de gebruiker. Zij komt n
 - Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden.
 - Geef een duidelijk voorbeeld als een bepaalde vorm vereist is.
 - Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan.
-- Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan zoeken.
+- Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan opnemen.
 
 
 ### Validatie, foutpreventie en herstellen van fouten
@@ -68,4 +68,3 @@ Een formulier past in een bredere context en proces van de gebruiker. Zij komt n
 - Zorg voor een duidelijke afsluiting aan het einde van het formulier.
 - Geef aan dat het formulier verzonden is.
 - Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.
-
