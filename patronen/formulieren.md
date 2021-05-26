@@ -20,12 +20,12 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 
 ## Checklist
 
-### [Bereid een formulier voor](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
+### [Bereid een formulier voor](./formulieren-formulier-voorbereiden)
 
 - [Formuleer de vragen die je aan een gebruiker wilt stellen.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Formuleer-de-vragen-die-je-aan-een-gebruiker-wilt-stellen)
 - [Inventariseer of informatie al beschikbaar is.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Inventariseer-of-informatie-al-beschikbaar-is)
 - [Stel alleen noodzakelijke vragen.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Stel-alleen-noodzakelijke-vragen)
-- [Zorg ervoor dat bepaalde vragen gesteld mogen worden](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Zorg-ervoor-dat-bepaalde-vragen-gesteld-mogen-worden)
+- [Zorg ervoor dat bepaalde vragen gesteld mogen worden.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Zorg-ervoor-dat-bepaalde-vragen-gesteld-mogen-worden)
 - [Inventariseer of bepaalde informatie vragen in het formulier wijzigt.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Selectieafhankelijke-vragen)
 - [Combineer en groepeer vragen waar nodig.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Combineer-en-groepeer-vragen-waar-nodig)
 - [Maak de functie van het formulier direct duidelijk.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Maak-de-functie-van-het-formulier-direct-duidelijk)
@@ -40,7 +40,7 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Vermijd lange stukken tekst.](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Vermijd-lange-stukken-tekst)
 - [Laat gebruikers makkelijk een formulier scannen.](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Laat-gebruikers-makkelijk-een-formulier-scannen)
 - [Zorg dat het antwoord in het invoerveld past.](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Zorg-dat-het-antwoord-in-het-invoerveld-past)
-- [Toon duidelijk relaties tussen verschillende formulier elementen](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Toon-duidelijk-de-relatie-tussen-verschillende-formulier-elementen)
+- [Toon duidelijk relaties tussen verschillende formulier elementen.](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Toon-duidelijk-de-relatie-tussen-verschillende-formulier-elementen)
 - [Zorg ervoor dat pagina en velden niet onverwacht verspringen.](https://hackmd.io/8IguZZ2YRvCA3vpuoc0EyQ#Zorg-ervoor-dat-pagina-en-velden-niet-onverwacht-verspringen)
 
 ### [Zorg dat iedereen het formulier kan gebruiken](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw)
@@ -60,25 +60,28 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Vul vooraf bekende informatie in en zorg dat deze waar nodig te wijzigen is.](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA#Vul-vooraf-bekende-informatie-in)
 
 
-### Biedt waar nodig hulp
+### [Biedt waar nodig hulp](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A)
 
-- Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden.
-- Geef een duidelijk voorbeeld als een bepaalde vorm vereist is.
-- Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan.
-- Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan opnemen.
+- [Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Biedt-bij-moeilijke-vragen-extra-uitleg-of-voorzie-deze-van-voorbeelden)
+- [Geef een duidelijk voorbeeld als een bepaalde vorm vereist is.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Geef-een-voorbeeld-als-een-bepaalde-vorm-vereist-is)
+- [Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Zorg-voor-de-mogelijkheid-om-tussentijds-te-stoppen-en-later-verder-te-gaan)
+- [Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan opnemen.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Zorg-dat-een-gebruiker-ten-alle-tijden-contact-op-kan-nemen)
 
 
-### Validatie, foutpreventie en herstellen van fouten
+### [Validatie, foutpreventie en herstellen van fouten](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q)
 
-- Accepteer antwoorden in verschillende vormen.
+- [Accepteer antwoorden in verschillende vormen.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Accepteer-antwoorden-in-verschillende-vormen)
+- [Valideer op het juiste moment.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Valideer-op-het-juiste-moment)
+- [Tonen van feedback.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Tonen-van-feedback)
+- [Welke invoer valideren](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Welke-invoer-valideren)
 
-### Overzicht
+### [Overzicht](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA#Richtlijnen-voor-formulieren-Overzicht)
 
-- Biedt na het invullen van het formulier een overzicht.
-- Laat een gebruiker een antwoord wijzigen.
+- [Biedt na het invullen van het formulier een overzicht.](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA#Biedt-een-overzicht-van-het-formulier)
+- [Laat een gebruiker een antwoord wijzigen.](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA#Laat-een-gebruiker-een-antwoord-wijzigen)
 
-### Zorg voor een duidelijke afhandeling
+### [Zorg voor een duidelijke afhandeling](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw)
 
-- Zorg voor een duidelijke afsluiting aan het einde van het formulier.
-- Geef aan dat het formulier verzonden is.
-- Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.
+- [Zorg voor een duidelijke afsluiting aan het einde van het formulier.](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw#Zorg-voor-een-duidelijke-afsluiting)
+- [Geef aan dat het formulier verzonden is.](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw#Geef-aan-dat-het-formulier-verzonden-is)
+- [Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw#Vervolgstappen)
