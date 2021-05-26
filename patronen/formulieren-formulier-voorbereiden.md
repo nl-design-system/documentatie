@@ -4,7 +4,11 @@ menu: Patronen
 
 [![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
 
-# Richtlijnen voor formulieren: Bereid een formulier voor
+###### tags: `Formulieren` `NLDS`
+
+_Status: **In ontwikkeling**_
+
+# Richtlijnen voor formulieren: Voorbereiden
 
 ## Formuleer de vragen die je wilt stellen
 
