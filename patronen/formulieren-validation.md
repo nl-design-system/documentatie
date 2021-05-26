@@ -3,8 +3,6 @@ name: 7. Validatie en foutpreventie
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Validatie en foutpreventie
