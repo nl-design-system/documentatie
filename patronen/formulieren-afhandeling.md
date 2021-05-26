@@ -3,8 +3,6 @@ name: 9. Afhandeling
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Afhandeling

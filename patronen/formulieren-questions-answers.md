@@ -3,8 +3,6 @@ name: 5. Vragen en antwoorden
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Vragen en antwoorden

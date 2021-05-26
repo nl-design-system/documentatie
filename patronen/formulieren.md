@@ -7,8 +7,6 @@ menu: Formulieren
 
 [![hackmd-github-sync-badge](https://hackmd.io/vXazt598Sn2t358J65D8Qg/badge)](https://hackmd.io/vXazt598Sn2t358J65D8Qg)
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 Een goed ontworpen formulier is een efficiënte manier van informatie overbrengen en kan zowel de verzender als ontvanger tijd, frustratie en kosten besparen. 

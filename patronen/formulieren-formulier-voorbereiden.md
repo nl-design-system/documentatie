@@ -5,8 +5,6 @@ menu: Formulieren
 
 [![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Voorbereiden
