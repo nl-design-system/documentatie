@@ -3,8 +3,6 @@ name: 6. Hulp en ondersteuning
 menu: Formulieren
 ---
 
-###### tags: `Formulieren` `NLDS`
-
 _Status: **In ontwikkeling**_
 
 # Richtlijnen voor formulieren: Hulp en ondersteuning
