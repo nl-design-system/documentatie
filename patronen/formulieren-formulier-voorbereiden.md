@@ -14,9 +14,15 @@ _Status: **In ontwikkeling**_
 
 Formuleer het doel van het formulier en maak dan een overzicht van alle vragen die je aan jouw gebruiker wilt stellen.
 
+Indien het onduidelijk is waarom bepaalde informatie gevraagd wordt informeer gebruikers dan over de noodzaak hiervan maar tevens over de voordelen voor hen.
+
+Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
+
 ## Inventariseer of informatie al beschikbaar is
 
 Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeente of middels Basisregistratie Personen (BRP) of DigiD.
+
+Wanneer informatie al binnen de organisatie aanwezig is, vraag je dan af of deze nogmaals gevraagd dient te worden, bv. ter controle of ter wijziging door de gebruiker.
 
 Sommige informatie kan door een gebruiker niet gewijzigd worden. Deze informatie kan echter wel getoond worden zodat de gebruiker weet welke informatie met het formulier meegestuurd wordt.
 
@@ -26,7 +32,7 @@ Het is mogelijk om repeterende informatie van de gebruiker in de instellingen va
 
 ## Stel alleen noodzakelijke vragen
 
-Bedenk of alle vragen daadwerkelijk nodig zijn om het doel van het formulier te bereiken.
+Vraag alleen om strikt noodzakelijke informatie om het doel van het formulier te bereiken en informeer gebruikers over de noodzaak hiervan. Bij iedere vraag dien je je af te vragen of deze daadwerkelijk nodig is voor de gebruiker en/of organisatie.
 
 Is het bijvoorbeeld nodig om [naar het geslacht]({#link-naar-inclusierichtlijnen!}) of geboortedatum te vragen? Wat is het doel hiervan voor de organisatie en vooral het voordeel voor de gebruiker?
 
