@@ -3,9 +3,11 @@ name: 4. Inclusie en toegankelijkheid
 menu: Formulieren
 ---
 
+# Richtlijnen voor formulieren: Inclusie en toegankelijkheid
+
 _Status: **In ontwikkeling**_
 
-# Richtlijnen voor formulieren: Inclusie en toegankelijkheid
+[![hackmd-github-sync-badge](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw/badge)](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw)
 
 [![hackmd-github-sync-badge](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw/badge)](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw)
 
@@ -27,6 +29,7 @@ Lees voor meer informatie het artikel Terugdringen van onnodige vragen naar seks
 ## Toegankelijkheidseisen
 
 Formulierelementen moeten aan de volgende eisen voldoen, ze hebben:
+
 - Een label of instructie die is gekoppeld aan het invoerelement,
 - Bij een fout een duidelijke foutmelding gekoppeld aan het invoerelement (zowel visueel maar zorg tevens dat de foutmelding op het juiste moment en op de juiste manier door voorleessoftware wordt uitgesproken),
 - Bij een foutmelding moet duidelijk worden uitgelegd hoe deze fout kan worden verholpen en deze in de toekomst kan worden voorkomen.

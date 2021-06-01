@@ -3,17 +3,18 @@ name: 6. Hulp en ondersteuning
 menu: Formulieren
 ---
 
-_Status: **In ontwikkeling**_
-
 # Richtlijnen voor formulieren: Hulp en ondersteuning
 
-[![hackmd-github-sync-badge](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A/badge)](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A)
+_Status: **In ontwikkeling**_
+
+[![hackmd-github-sync-badge](https://hackmd.io/O2RDX5szRBu-Tsml6ON4MA/badge)](https://hackmd.io/O2RDX5szRBu-Tsml6ON4MA)
 
 ## Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden
 
 Optionele help tekst kan als alternatief voor placeholder tekst gebruikt worden bij invoerelementen die verduidelijkt dienen te worden.
 
 Overweeg om extra help tekst toe te voegen wanneer:
+
 - Je van de gebruiker informatie in bepaald formaat wenst (bijvoorbeeld de landcode voor een telefoonnummer),
 - Je een gebruiker vraagt om minder bekende informatie (bijvoorbeeld een paspoortnummer en waar deze te vinden is),
 - Een gebruiker zich af zou kunnen vragen waarom om specifieke informatie gevraagd wordt,
@@ -32,10 +33,12 @@ Gebruik in plaats van placeholder tekst help tekst.
 Help tekst kan eventueel standaard verborgen worden en alleen waar nodig door een gebruiker getoond worden. Hiervoor kan een help (i) button gebruikt worden.
 
 #### Standaard staat
+
 ![Voorbeeld van de standaard staat van help tekst op aanvraag](https://i.imgur.com/APvKjcc.png)
 In de standaard staat is de tekst verborgen.
 
 #### Hover en focus staat
+
 ![Voorbeeld van de hover en focus staat van help tekst op aanvraag](https://i.imgur.com/y2Ah2qK.png)
 In de hover en focus staat wordt de helptekst onder het invoerelement getoond.
 

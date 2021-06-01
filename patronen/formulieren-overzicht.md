@@ -3,9 +3,9 @@ name: 8. Overzicht
 menu: Formulieren
 ---
 
-_Status: **In ontwikkeling**_
-
 # Richtlijnen voor formulieren: Overzicht
+
+_Status: **In ontwikkeling**_
 
 [![hackmd-github-sync-badge](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA/badge)](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA)
 
