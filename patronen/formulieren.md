@@ -58,7 +58,6 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Combineer invoervelden, gebruik één veld voor antwoorden die als geheel worden gezien.](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA#Combineer-invoervelden-gebruik-zo-veel-mogelijk-%C3%A9%C3%A9n-veld-voor-antwoorden-die-als-geheel-worden-gezien)
 - [Vul vooraf bekende informatie in en zorg dat deze waar nodig te wijzigen is.](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA#Vul-vooraf-bekende-informatie-in)
 
-
 ### [Biedt waar nodig hulp](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A)
 
 - [Biedt bij moeilijke vragen extra uitleg of voorzie deze van voorbeelden.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Biedt-bij-moeilijke-vragen-extra-uitleg-of-voorzie-deze-van-voorbeelden)
@@ -66,12 +65,11 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Zorg-voor-de-mogelijkheid-om-tussentijds-te-stoppen-en-later-verder-te-gaan)
 - [Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan opnemen.](https://hackmd.io/_8d2TCZWThyjfsuwCFKh8A#Zorg-dat-een-gebruiker-ten-alle-tijden-contact-op-kan-nemen)
 
-
 ### [Validatie, foutpreventie en herstellen van fouten](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q)
 
 - [Accepteer antwoorden in verschillende vormen.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Accepteer-antwoorden-in-verschillende-vormen)
 - [Valideer op het juiste moment.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Valideer-op-het-juiste-moment)
-- [Tonen van feedback.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Tonen-van-feedback)
+- [Feedback is gemakkelijk op te merken en te begrijpen.](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Tonen-van-feedback)
 - [Welke invoer valideren](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q#Welke-invoer-valideren)
 
 ### [Overzicht](https://hackmd.io/lPnQNMiySWqeii_f1MDtaA#Richtlijnen-voor-formulieren-Overzicht)
