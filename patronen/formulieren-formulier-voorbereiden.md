@@ -29,7 +29,7 @@ Andere informatie, zoals bijvoorbeeld een telefoonnummer of e-mailadres dat al b
 
 Dit kan op diverse manieren:
 
-- Het vooraf invullen van een formulierveld. Hierdoor heeft een gebruiker de mogelijkheid deze informatie direct aan te passen. 
+- Het vooraf invullen van een formulierveld. Hierdoor heeft een gebruiker de mogelijkheid deze informatie direct aan te passen.
 - Het tonen van de informatie (‘read-only’) met een functie om deze informatie te wijzigen.
 - Automatisch aanvullen van gedeeltelijke informatie. Bijvoorbeeld na invullen van postcode en huisnummer kan het volledige adres automatisch aangevuld worden.
 - Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen.
@@ -135,15 +135,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-!Voorbeeld van het stappenmodel op een desktop scherm](https://i.imgur.com/gNAKpNw.png)
+![Voorbeeld van het stappenmodel op een desktop scherm](https://i.imgur.com/gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-!Voorbeeld van het stappenmodel op een tablet scherm](https://i.imgur.com/5NOTWDu.png)
+![Voorbeeld van het stappenmodel op een tablet scherm](https://i.imgur.com/5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-!Voorbeeld van het stappenmodel op een mobiel scherm](https://i.imgur.com/c7Nvcz7.png)
+![Voorbeeld van het stappenmodel op een mobiel scherm](https://i.imgur.com/c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
