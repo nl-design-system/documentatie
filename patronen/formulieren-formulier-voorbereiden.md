@@ -1,13 +1,13 @@
 ---
 naam: 2. Voorbereiden
-menu: Formulieren
+menu: Patronen/Formulieren
 ---
 
-[![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
+# Richtlijnen voor formulieren: Voorbereiden
 
 _Status: **In ontwikkeling**_
 
-# Richtlijnen voor formulieren: Voorbereiden
+[![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
 
 ## Formuleer de vragen die je wilt stellen
 
@@ -28,6 +28,7 @@ Sommige informatie kan door een gebruiker niet gewijzigd worden. Deze informatie
 Andere informatie, zoals bijvoorbeeld een telefoonnummer of e-mailadres dat al bekend is, kan vooraf ingevuld worden in een invoerveld. Deze kan door de gebruiker wel gewijzigd worden.
 
 Dit kan op diverse manieren:
+
 - Het vooraf invullen van een formulierveld. Hierdoor heeft een gebruiker de mogelijkheid deze informatie direct aan te passen. 
 - Het tonen van de informatie (‘read-only’) met een functie om deze informatie te wijzigen.
 - Automatisch aanvullen van gedeeltelijke informatie. Bijvoorbeeld na invullen van postcode en huisnummer kan het volledige adres automatisch aangevuld worden.
@@ -84,7 +85,7 @@ Door het aanbieden van een duidelijke titel en eventuele intro tekst weet de geb
 
 ## Maak zo snel mogelijk duidelijk of het formulier relevant is voor de gebruiker
 
-Bij bijvoorbeeld [selectieafhankelijke vragen]( https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Selectieafhankelijke-vragen) kan het mogelijk zijn om een gebruiker al snel tijdens het invullen te informeren of het formulier voor haar relevant is.
+Bij bijvoorbeeld [selectieafhankelijke vragen](#Selectieafhankelijke-vragen) kan het mogelijk zijn om een gebruiker al snel tijdens het invullen te informeren of het formulier voor haar relevant is.
 
 Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk duidelijk zijn of het formulier relevant is.
 
@@ -134,15 +135,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-![stappenmodel desktop](https://i.imgur.com/gNAKpNw.png)
+!Voorbeeld van het stappenmodel op een desktop scherm](https://i.imgur.com/gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-![stappenmodel tablet](https://i.imgur.com/5NOTWDu.png)
+!Voorbeeld van het stappenmodel op een tablet scherm](https://i.imgur.com/5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-![stappenmodel mobiel](https://i.imgur.com/c7Nvcz7.png)
+!Voorbeeld van het stappenmodel op een mobiel scherm](https://i.imgur.com/c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
