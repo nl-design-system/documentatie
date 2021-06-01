@@ -1,5 +1,5 @@
 ---
-name: 01. Checklist
+name: 1. Checklist
 menu: Formulieren
 ---
 
