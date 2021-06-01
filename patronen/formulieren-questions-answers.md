@@ -3,9 +3,9 @@ name: 5. Vragen en antwoorden
 menu: Formulieren
 ---
 
-_Status: **In ontwikkeling**_
-
 # Richtlijnen voor formulieren: Vragen en antwoorden
+
+_Status: **In ontwikkeling**_
 
 [![hackmd-github-sync-badge](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA/badge)](https://hackmd.io/WaIXqtnnQNy6GaRJRX6ENA)
 
@@ -28,6 +28,7 @@ Vermijd moeilijke, ongebruikelijke en officiële termen
 ## Maak gebruik van het juiste invoerelement
 
 Voor het beantwoorden van vragen bestaan meerdere elementen:
+
 - Reguliere tekst invoer (`<input type=text/email/tel/date/etc.>`)
 - Tekst invoer over meerdere regels (`<textarea>`)
 - Checkboxen
