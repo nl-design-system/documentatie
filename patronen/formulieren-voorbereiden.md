@@ -1,5 +1,5 @@
 ---
-naam: 2. Voorbereiden
+name: 2. Voorbereiden
 menu: Formulieren
 ---
 
