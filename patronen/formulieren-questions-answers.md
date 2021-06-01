@@ -29,8 +29,8 @@ Vermijd moeilijke, ongebruikelijke en officiële termen
 
 Voor het beantwoorden van vragen bestaan meerdere elementen:
 
-- Reguliere tekst invoer (`<input type=text/email/tel/date/etc.>`)
-- Tekst invoer over meerdere regels (`<textarea>`)
+- Reguliere tekst invoer (`input type=text/email/tel/date/etc.`)
+- Tekst invoer over meerdere regels (`textarea`)
 - Checkboxen
 - Radio buttons
 - Drop-down menu’s
