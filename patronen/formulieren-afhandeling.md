@@ -3,9 +3,9 @@ name: 9. Afhandeling
 menu: Formulieren
 ---
 
-_Status: **In ontwikkeling**_
-
 # Richtlijnen voor formulieren: Afhandeling
+
+_Status: **In ontwikkeling**_
 
 [![hackmd-github-sync-badge](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw/badge)](https://hackmd.io/dB2Q_lJOSt6d9XApdbs2Aw)
 
