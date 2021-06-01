@@ -9,6 +9,8 @@ _Status: **In ontwikkeling**_
 
 [![hackmd-github-sync-badge](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q/badge)](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q)
 
+[![hackmd-github-sync-badge](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q/badge)](https://hackmd.io/cfSBF3OVSiGzldZ__ykc9Q)
+
 ## Accepteer antwoorden in verschillende vormen
 
 Laat meerdere formaten toe, bv. voor postcode ‘000AA’ én ‘0000 AA’; dus met en zonder spatie.

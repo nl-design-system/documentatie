@@ -1,6 +1,6 @@
 ---
 naam: 2. Voorbereiden
-menu: Patronen/Formulieren
+menu: Formulieren
 ---
 
 # Richtlijnen voor formulieren: Voorbereiden

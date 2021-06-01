@@ -9,6 +9,8 @@ _Status: **In ontwikkeling**_
 
 [![hackmd-github-sync-badge](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw/badge)](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw)
 
+[![hackmd-github-sync-badge](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw/badge)](https://hackmd.io/Z0sXqINxRQuLdxoLbUiGWw)
+
 ## Inclusie
 
 Niemand heeft dezelfde digitale vaardigheden en voorkennis. Hou hiermee rekening bij het ontwikkelen van formulieren. Houdt rekening met gebruikers met een verschillende (culturele) achtergrond, laaggeletterden en mensen met een cognitieve, visuele of motorische beperking.
