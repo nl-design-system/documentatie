@@ -39,7 +39,6 @@ Deze invoerelementen dienen vergezeld van een tekst label dat duidelijk de vraag
 
 De verschillende vormen van invoerelementen en hun specifieke richtlijnen vindt je bij het respectievelijke component in de componenten-bibliotheek.
 
-
 ## Vermijd open invoervelden en dropdown menu’s
 
 ## Laat bij meerkeuzevragen waar mogelijk alle antwoorden zien
