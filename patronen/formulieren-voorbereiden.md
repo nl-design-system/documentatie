@@ -3,7 +3,7 @@ naam: 2. Voorbereiden
 menu: Formulieren
 ---
 
-# Richtlijnen voor formulieren: Voorbereiden
+# Richtlijnen voor formulieren: Voorbereiding
 
 _Status: **In ontwikkeling**_
 
