@@ -52,7 +52,7 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Houd vragen kort en concreet.](/patronen-formulieren-questions-answers#Houd-vragen-kort-en-concreet)
 - [Vermijd moeilijke, ongebruikelijke en officiële termen.](/patronen-formulieren-questions-answers#Vermijd-moeilijke-ongebruikelijke-en-offici%C3%ABle-termen)
 - [Laat duidelijk weten wat de noodzaak is van privacygevoelige informatie.](/patronen-formulieren-questions-answers#Informeer-over-de-noodzaak-van-privacygevoelige-informatie)
-- [Maak gebruik van het juiste invoerelement.]()
+- [Maak gebruik van het juiste invoerelement.](/patronen-formulieren-questions-answers#Maak-gebruik-van-het-juiste-invoerelement)
 - [Vermijd open invoervelden en dropdown menu’s.](/patronen-formulieren-questions-answers#Vermijd-open-invoervelden-en-dropdown-menu%E2%80%99s)
 - [Laat bij meerkeuzevragen waar mogelijk alle antwoorden zien.](/patronen-formulieren-questions-answers#Laat-bij-meerkeuzevragen-waar-mogelijk-alle-antwoorden-zien)
 - [Combineer invoervelden, gebruik één veld voor antwoorden die als geheel worden gezien.](/patronen-formulieren-questions-answers#Combineer-invoervelden-gebruik-zo-veel-mogelijk-%C3%A9%C3%A9n-veld-voor-antwoorden-die-als-geheel-worden-gezien)
