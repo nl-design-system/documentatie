@@ -19,7 +19,7 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 
 ## Checklist
 
-### [Bereid een formulier voor](./patronen-formulieren-formulier-voorbereiden)
+### [Bereid een formulier voor](./patronen-formulier-voorbereiden/patronen-formulieren-formulier-voorbereiden)
 
 - [Formuleer de vragen die je aan een gebruiker wilt stellen.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Formuleer-de-vragen-die-je-aan-een-gebruiker-wilt-stellen)
 - [Inventariseer of informatie al beschikbaar is.](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg#Inventariseer-of-informatie-al-beschikbaar-is)
