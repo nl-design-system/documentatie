@@ -19,19 +19,19 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 
 ## Checklist
 
-### [Bereid een formulier voor](/patronen-formulier-voorbereiden)
+### [Bereid een formulier voor](/patronen-formulieren-voorbereiden)
 
-- [Formuleer de vragen die je aan een gebruiker wilt stellen.](/patronen-formulier-voorbereiden#Formuleer-de-vragen-die-je-aan-een-gebruiker-wilt-stellen)
-- [Inventariseer of informatie al beschikbaar is.](/patronen-formulier-voorbereiden#Inventariseer-of-informatie-al-beschikbaar-is)
-- [Stel alleen noodzakelijke vragen.](/patronen-formulier-voorbereiden#Stel-alleen-noodzakelijke-vragen)
-- [Zorg ervoor dat bepaalde vragen gesteld mogen worden.](/patronen-formulier-voorbereiden#Zorg-ervoor-dat-bepaalde-vragen-gesteld-mogen-worden)
-- [Inventariseer of bepaalde informatie vragen in het formulier wijzigt.](/patronen-formulier-voorbereiden#Selectieafhankelijke-vragen)
-- [Combineer en groepeer vragen waar nodig.](/patronen-formulier-voorbereiden#Combineer-en-groepeer-vragen-waar-nodig)
-- [Maak de functie van het formulier direct duidelijk.](/patronen-formulier-voorbereiden#Maak-de-functie-van-het-formulier-direct-duidelijk)
-- [Maak de relevantie van het formulier zo snel mogelijk duidelijk voor de gebruiker.](/patronen-formulier-voorbereiden#Maak-zo-snel-mogelijk-duidelijk-of-het-formulier-relevant-is-voor-de-gebruiker)
-- [Leg uit wat nodig is om het formulier succesvol in te vullen.](/patronen-formulier-voorbereiden#Leg-uit-wat-een-gebruiker-nodig-heeft-om-het-formulier-succesvol-in-te-vullen)
-- [Laat op voorhand weten wanneer een tijdslimiet van toepassing is.](/patronen-formulier-voorbereiden#Laat-op-voorhand-weten-wanneer-een-tijdslimiet-van-toepassing-is)
-- [Breek waar nodig het formulier op in meerdere stappen.](/patronen-formulier-voorbereiden#Meerstappen-formulieren)
+- [Formuleer de vragen die je aan een gebruiker wilt stellen.](/patronen-formulieren-voorbereiden#Formuleer-de-vragen-die-je-aan-een-gebruiker-wilt-stellen)
+- [Inventariseer of informatie al beschikbaar is.](/patronen-formulieren-voorbereiden#Inventariseer-of-informatie-al-beschikbaar-is)
+- [Stel alleen noodzakelijke vragen.](/patronen-formulieren-voorbereiden#Stel-alleen-noodzakelijke-vragen)
+- [Zorg ervoor dat bepaalde vragen gesteld mogen worden.](/patronen-formulieren-voorbereiden#Zorg-ervoor-dat-bepaalde-vragen-gesteld-mogen-worden)
+- [Inventariseer of bepaalde informatie vragen in het formulier wijzigt.](/patronen-formulieren-voorbereiden#Selectieafhankelijke-vragen)
+- [Combineer en groepeer vragen waar nodig.](/patronen-formulieren-voorbereiden#Combineer-en-groepeer-vragen-waar-nodig)
+- [Maak de functie van het formulier direct duidelijk.](/patronen-formulieren-voorbereiden#Maak-de-functie-van-het-formulier-direct-duidelijk)
+- [Maak de relevantie van het formulier zo snel mogelijk duidelijk voor de gebruiker.](/patronen-formulieren-voorbereiden#Maak-zo-snel-mogelijk-duidelijk-of-het-formulier-relevant-is-voor-de-gebruiker)
+- [Leg uit wat nodig is om het formulier succesvol in te vullen.](/patronen-formulieren-voorbereiden#Leg-uit-wat-een-gebruiker-nodig-heeft-om-het-formulier-succesvol-in-te-vullen)
+- [Laat op voorhand weten wanneer een tijdslimiet van toepassing is.](/patronen-formulieren-voorbereiden#Laat-op-voorhand-weten-wanneer-een-tijdslimiet-van-toepassing-is)
+- [Breek waar nodig het formulier op in meerdere stappen.](/patronen-formulieren-voorbereiden#Meerstappen-formulieren)
 
 ### [Biedt een duidelijke vormgeving, opbouw en structuur](/patronen-formulieren-vormgeving)
 
