@@ -19,7 +19,7 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 
 ## Checklist
 
-### [Bereid een formulier voor](/patronen-formulier-voorbereiden/)
+### [Bereid een formulier voor](/patronen-formulier-voorbereiden)
 
 - [Formuleer de vragen die je aan een gebruiker wilt stellen.](/patronen-formulier-voorbereiden#Formuleer-de-vragen-die-je-aan-een-gebruiker-wilt-stellen)
 - [Inventariseer of informatie al beschikbaar is.](/patronen-formulier-voorbereiden#Inventariseer-of-informatie-al-beschikbaar-is)
