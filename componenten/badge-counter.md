@@ -6,6 +6,7 @@ Source: [Den Haag design system](https://www.figma.com/file/9j6sYfvFTz2t51FQsKKb
 
 Counter badges are used to indicate that there is a notification and displays the number of notifications. It is an update message that announces something new for the user to see. Badges are typically used to indicate a new message.
 
+![badge-counter-preview](https://user-images.githubusercontent.com/248921/134487355-4a193781-4fd2-4964-ab27-41cb31454695.png)
 Counter badge from Den Haag design system
 
 ## When to use
