@@ -16,7 +16,8 @@ In Figma, we aim to bridge the gap between designers and developers. We opt to u
 
 A good approach in any design file is to explicitly name objects directly after their creation. This helps adding meaning to design objects and eases handoff of a design file to another designer or a developer.
 
-[]
+![Unnamed nested frames and groups](https://user-images.githubusercontent.com/248921/140958292-85ccee96-2add-4613-9daf-755b11bd433b.png)
+
 
 For instance, if you create a rectangle meant as background and border container for a text input it is good practice to name the rectangle `text-input-background` or similar right after creating the rectangle.
 
@@ -30,11 +31,11 @@ Using the same naming as used in the front-end again eases communication and han
 
 In Figma, variant properties can be sorted by dragging and dropping individual properties.
 
-[]
+![Component variant panel in Figma](https://user-images.githubusercontent.com/248921/140958477-85782e98-ca0f-451a-b85e-1015ca081046.png)
 
 These references also help quickly setting up an interactive prototype.
 
-[]
+![Prototype settings in Figma reflect variant naming](https://user-images.githubusercontent.com/248921/140958596-9c6db66c-299b-441f-9196-af916dbe9f37.png)
 
 ### Synonyms
 
@@ -42,7 +43,7 @@ Synonyms in the description field help searching for components in libraries.
 
 In below example searching on either select, dropdown, or menu all return the library’s select component.
 
-[]
+![Synonyms for Select component](https://user-images.githubusercontent.com/248921/140958774-31867f4e-87c2-45ae-86bc-288f965b99c7.png)
 
 ### Avoid local components from being published to a library
 
@@ -50,7 +51,7 @@ Prefixing a component with an underscore (`_`) prevents it from being published 
 
 In below example searching on ‘checkbox’ returns all components with checkbox in their name. However searching on ‘placeholder’ returns no results.
 
-[]
+![Components which will be published, and components with a prefix not being published](https://user-images.githubusercontent.com/248921/140958964-90e3ddf8-5bd2-4f0b-bcdc-3b32be0958fe.png)
 
 ### Images
 
@@ -58,9 +59,9 @@ Design files are a perfect place to define the intention of images. If an image 
 
 Likewise, if an image is informative to the user, an appropriate `alt` text can already be added as image name. Using the layer to add this image description results in this text being available in Figma’s Layer and Inspect panels.
 
-[]
+![Image with undescriptive name](https://user-images.githubusercontent.com/248921/140959070-29703f9f-6b66-4fe8-947d-52905dc84458.png)
 
-[]
+![Image with descriptive name](https://user-images.githubusercontent.com/248921/140959094-c7b3b87e-f49a-4f23-8893-7e93080f94a9.png)
 
 ## File structure
 
@@ -74,19 +75,19 @@ With proper sections and layers, you can zoom into a section or layer by selecti
 
 Emojis in page and layer naming can aid quick scanning or provide a means to quickly check a status.
 
-[]
+![Emojis in page and component names](https://user-images.githubusercontent.com/248921/140959174-76e45980-73df-43c1-b918-f6cd14af3a29.png)
 
 ### Nesting
 
 Avoid unnecessary folder nesting, but do use nesting to intentionally group related elements.
 
-[]
+![Unintentional and intentional nesting examples](https://user-images.githubusercontent.com/248921/140959366-05df035f-3255-4346-8c65-f06056b241f0.png)
 
 ## Version history
 
 Version history naming helps with tracking changes.
 
-[]
+![Version history overview](https://user-images.githubusercontent.com/248921/140959456-8c2699e7-8641-4fcd-a2e8-da24664ffcc1.png)
 
 ## Design tokens in Figma
 
@@ -158,7 +159,7 @@ Once you are done editing the tokens, copy them back in the JSON tab in Figma To
 
 Keep in mind that the JSON format is strict, any comma or curly bracket that is omitted or not in the proper place will result in an invalid JSON file. The plugin will feed back an alert in case the JSON structure is invalid.
 
-[]
+<img width="475" alt="Error message when JSON is invalid from Figma Tokens" src="https://user-images.githubusercontent.com/248921/140959660-5c6bbff7-524a-4e13-8f1c-8cf756b1fda4.png">
 
 ### Backup of tokens
 
@@ -181,9 +182,8 @@ Values and units that are not possible to use in conjunction with Figma Tokens a
 
 EMs and REMs should be converted to ‘absolute’ units. One tool that can help converting these is [http://pxtoem.com/](http://pxtoem.com/).
 
-[]
-
-[]
+<img width="311" alt="PXtoEM tool" src="https://user-images.githubusercontent.com/248921/140959962-dab2fe1d-e27c-433e-a8cf-c79c103e8e6c.png">
+<img width="307" alt="PXtoEM tool with em value converted to px" src="https://user-images.githubusercontent.com/248921/140960000-4b81b493-8b6a-4465-979c-610f056e847d.png">
 
 It allows EMs to be converted to pixel values which can be used in Figma. The base pixel value is the size of your ‘root’ base (font) size. In most cases this will be 16px.
 
@@ -195,7 +195,7 @@ From there go to the **Elements** tab, where you see the source code of the curr
 
 When you have selected the element for which you want to see its calculated value, go to the property you want to know the value of. In case of the illustration below its the font-size. The value you want to attach to your token is in this case **17**.
 
-[]
+<img width="542" alt="DevTools showing calculated CSS values" src="https://user-images.githubusercontent.com/248921/140960248-1beb10f7-59fa-4d8a-93a4-e4ccffb85a75.png">
 
 ### Colors
 
@@ -210,7 +210,7 @@ Colors can be specified in multiple CSS-compatible formats:
 
 Color can be applied both to borders and fills (background). By default the Token plugin applies color as a background fill. In order to apply color to a border, right-click the token and select **Border**.
 
-[]
+<img width="227" alt="Figma Tokens size color options" src="https://user-images.githubusercontent.com/248921/140960875-03df21e8-3506-4abd-82b4-fb7be661c370.png">
 
 ### Borders
 
@@ -226,9 +226,9 @@ The following tokens for borders can be defined:
 
 Sizing can be applied both on the *X* (horizontal) and *Y* (vertical) axis. By default sizing tokens are applied to both axes.
 
-If you want to set a sizing token only along the *X* axis, the width select the token by right-clicking on the token and selecting **Width**.
+If you want to set a sizing token only along the *X* axis, select the token by right-clicking on the token and selecting **Width**.
 
-[]
+<img width="248" alt="Figma Tokens size token options" src="https://user-images.githubusercontent.com/248921/140960907-0fc7ef14-f855-4d49-aa89-f78d44e01123.png">
 
 The same applies to the *Y* axis for height, right-click the token and select **Height**.
 
@@ -240,7 +240,7 @@ Where sizing can be applied to an element in its default state, spacing tokens c
 
 Spacing can be applied both on the *X* (inline) and *Y* (block) axis. By default a spacing token is applied to the **Gap** property.
 
-[]
+<img width="194" alt="Figma Tokens space token options" src="https://user-images.githubusercontent.com/248921/140961019-ce202625-a1a2-4b66-bc55-29aaa473c02a.png">
 
 Right-clicking the token allows you to set the token to a number of properties:
 
@@ -260,7 +260,7 @@ Define the base body typeface with the token `document-font-family`. Keep in min
 
 Font weights (such as regular, medium, and bold) have to be defined exactly as they are described by the font author. Some fonts use the term ‘regular’ for its regular weight, whereas others use ‘400’ or ‘normal’. 
 
-[]
+![Figma native typespecs panel](https://user-images.githubusercontent.com/248921/140961125-b1a81200-97ed-4e07-91c4-edf3a3a1710e.png)
 
 It is vital to use the same name as used in the text panel in Figma. If this is not properly set, it will result in typographic tokens not being applied.
 
@@ -268,11 +268,11 @@ It is vital to use the same name as used in the text panel in Figma. If this is 
 
 Defining a flexible type scale can be done through the Token plugin by [using math](https://docs.tokens.studio/tokens/using-math). From one single base font-size (generally your body paragraph text) you can create a flexible scale by multiplying or diving the base-size. This will allow you to set a fixed size interval between your paragraph text, headings, secondary text, and micro typography.
 
-[]
+<img width="441" alt="Type size token with math" src="https://user-images.githubusercontent.com/248921/140961346-929ac75b-1f10-4b2f-bac7-f33089436405.png">
 
 Here the token `font-size-xl` uses the `font-size-md` as a base and multiplies it by 1.25. 
 
-[]
+<img width="437" alt="Type size token" src="https://user-images.githubusercontent.com/248921/140961372-22c61588-ef35-4801-b368-5151bf3ba191.png">
 
 The `font-size-md`, used for regular paragraph text is the only font-size defined at 16. All other font-sizes are automatically generated by multiplying or dividing `font-size-md`.
 
@@ -284,7 +284,7 @@ Should you already use a flexible modular scale for within your visual style, it
 
 In order to establish ‘combined’ typography tokens, such as headings one or a paragraph, all individual typography related tokens making up such combined tokens have to be defined first. A combined token references each of these individual tokens.
 
-[]
+<img width="446" alt="Composite type token" src="https://user-images.githubusercontent.com/248921/140961614-18918637-1385-4cf4-a204-4ac415efff1e.png">
 
 The typographic tokens that should be set in order to create a combined typographic token are:
 
@@ -313,7 +313,7 @@ This concept can also be utilised to already establish basic guidelines in your 
 
 A radio button group component restricted to a maximum of five options would look similar to this, any amount between one and five can be chosen by simply hiding the options not needed:
 
-[]
+![Slotting technique in Figma used to limit radio button group options](https://user-images.githubusercontent.com/248921/140961714-f5b2e84d-33db-4c29-aba5-c79a69124d5f.png)
 
 ## Zero-frames
 
