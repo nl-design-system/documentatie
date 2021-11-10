@@ -1,95 +1,4 @@
-# The NL Design System and Figma
-
-At NL Design System we work with Figma for designing components and patterns.
-
-We collaborate and share knowledge on Figma with designers from the municipality of Utrecht, The Hague and Haarlem as well as Logius amongst others.
-
-The goal is to offer proven components and patterns designed by these and other organisations as a ‘white-label‘ variant that can be tailored to suit your organisation’s own visual style and brand experience.
-
-The address of our Figma team is [https://www.figma.com/@nldesignsystem](https://www.figma.com/@nldesignsystem).
-
-## A shared design language
-
-In Figma, we aim to bridge the gap between designers and developers. We opt to use for instance the same naming conventions as we do in our front-end codebase. This facilitates communication between designers and developers and helps streamline designer to developer handoff. 
-
-## Naming
-
-A good approach in any design file is to explicitly name objects directly after their creation. This helps adding meaning to design objects and eases handoff of a design file to another designer or a developer.
-
-![Unnamed nested frames and groups](https://user-images.githubusercontent.com/248921/140958292-85ccee96-2add-4613-9daf-755b11bd433b.png)
-
-
-For instance, if you create a rectangle meant as background and border container for a text input it is good practice to name the rectangle `text-input-background` or similar right after creating the rectangle.
-
-Where possible, components, layers, frames, and design tokens borrow (semantic) names from HTML and SVG tags, CSS properties, ARIA roles or BEM naming.
-
-### Component variants
-
-For convenience and ‘scanablity’ when working with component variants we suggest using lowercase for boolean values, such as on/off or true/false options and sentence case for interactive and feedback states.
-
-Using the same naming as used in the front-end again eases communication and handoff. For instance for a checkbox’ checked state we use 'checked' instead of 'active'.
-
-In Figma, variant properties can be sorted by dragging and dropping individual properties.
-
-![Component variant panel in Figma](https://user-images.githubusercontent.com/248921/140958477-85782e98-ca0f-451a-b85e-1015ca081046.png)
-
-These references also help quickly setting up an interactive prototype.
-
-![Prototype settings in Figma reflect variant naming](https://user-images.githubusercontent.com/248921/140958596-9c6db66c-299b-441f-9196-af916dbe9f37.png)
-
-### Synonyms
-
-Synonyms in the description field help searching for components in libraries.
-
-In below example searching on either select, dropdown, or menu all return the library’s select component.
-
-![Synonyms for Select component](https://user-images.githubusercontent.com/248921/140958774-31867f4e-87c2-45ae-86bc-288f965b99c7.png)
-
-### Avoid local components from being published to a library
-
-Prefixing a component with an underscore (`_`) prevents it from being published to a shared library. This is especially useful to avoid atomic elements, in use by  components but with no use as a reusable standalone element, from being added to a shared library.
-
-In below example searching on ‘checkbox’ returns all components with checkbox in their name. However searching on ‘placeholder’ returns no results.
-
-![Components which will be published, and components with a prefix not being published](https://user-images.githubusercontent.com/248921/140958964-90e3ddf8-5bd2-4f0b-bcdc-3b32be0958fe.png)
-
-### Images
-
-Design files are a perfect place to define the intention of images. If an image is decorative, and as such would get a blank `alt=""` alternative text attribute this can be added to its description.
-
-Likewise, if an image is informative to the user, an appropriate `alt` text can already be added as image name. Using the layer to add this image description results in this text being available in Figma’s Layer and Inspect panels.
-
-![Image with undescriptive name](https://user-images.githubusercontent.com/248921/140959070-29703f9f-6b66-4fe8-947d-52905dc84458.png)
-
-![Image with descriptive name](https://user-images.githubusercontent.com/248921/140959094-c7b3b87e-f49a-4f23-8893-7e93080f94a9.png)
-
-## File structure
-
-A proper file structure helps in scanning and navigating Figma files. High-level sectioning (such as component groups, components, component specifications, or examples) helps quickly navigate to these sections.
-
-The keyboard shortcuts `1` and `2` allow quickly zooming in on either the whole page or a selection respectively.
-
-With proper sections and layers, you can zoom into a section or layer by selecting it from the layer panel and zooming in by pressing `2`. Zooming back to the either page or 100% of the current view can be done by pressing `1` and `0` respectively.
-
-### Emojis aid quick scanning
-
-Emojis in page and layer naming can aid quick scanning or provide a means to quickly check a status.
-
-![Emojis in page and component names](https://user-images.githubusercontent.com/248921/140959174-76e45980-73df-43c1-b918-f6cd14af3a29.png)
-
-### Nesting
-
-Avoid unnecessary folder nesting, but do use nesting to intentionally group related elements.
-
-![Unintentional and intentional nesting examples](https://user-images.githubusercontent.com/248921/140959366-05df035f-3255-4346-8c65-f06056b241f0.png)
-
-## Version history
-
-Version history naming helps with tracking changes.
-
-![Version history overview](https://user-images.githubusercontent.com/248921/140959456-8c2699e7-8641-4fcd-a2e8-da24664ffcc1.png)
-
-## Design tokens in Figma
+# Design tokens in Figma
 
 By using design tokens, both designers and developers share a unified language. It allows all disciplines to reference design features, properties, components, etc. by the same name.
 
@@ -103,7 +12,7 @@ Multiple token sets can be loaded in Figma. This allows us to easily convert to 
 
 For this to work however, we need to pay close attention to the naming convention of tokens. One other important note is that tokens are not saved as part of Figma files, in order to use them, they have to be set up first and either manually updated or synchronised via GitHub.
 
-### Token levels
+## Token levels
 
 We use a layered approach to design tokens where brand/product styling is abstracted from the underlying structural design language.
 
@@ -113,13 +22,13 @@ The three levels are:
 2. Common tokens, and
 3. Component tokens
 
-### Brand tokens
+## Brand tokens
 
 Brand tokens define your brand or product’s visual language ‘options’; its colors, typography, sizing, etc. 
 
 You are free to use your own language when naming these tokens. You might already have internal conversations about your own unique `kleur-actieblauw` or `merkkleur-rood`. We advise you to use this language for your brand tokens. After all, tokens are meant to unify language between designers and developers. If you already have an established language in your organisation it is best to continue using this over relearning a new language.
 
-### Common tokens
+## Common tokens
 
 One level below brand tokens are the common tokens. In these tokens, visual properties are assigned meaning. These tokens always refer to the brand tokens.
 
@@ -129,7 +38,7 @@ Where the first `document-color` is the text foreground color, and `utrecht-colo
 
 Common tokens add semantic meaning to common visual styles.
 
-### Component tokens
+## Component tokens
 
 Component tokens are tokens used for specific components.
 
@@ -149,7 +58,7 @@ Our Figma tokens are stored in JSON format and currently synchronised to GitHub.
 
 In order to synchronise the tokens a text-key is needed which can be optained by [contacting Rogier](mailto:rogier.barendregt@ictu.nl)
 
-### Editing of tokens
+## Editing of tokens
 
 Editing the JSON tokens is best done in an external code editor. This allows better readability and offers all the benefits of a code editor such as global search and replace, proper indentation, syntax highlighting, etc.
 
@@ -161,17 +70,17 @@ Keep in mind that the JSON format is strict, any comma or curly bracket that is 
 
 ![Error message when JSON is invalid from Figma Tokens](https://user-images.githubusercontent.com/248921/140959660-5c6bbff7-524a-4e13-8f1c-8cf756b1fda4.png)
 
-### Backup of tokens
+## Backup of tokens
 
 Another benefit of editing the tokens in an external editor is that it is easy to keep a backup copy which in turn can be added to your GitHub repository for extra backup safety or keeping all related files together.
 
 We highly recommend to make a backup each time you have done any work on tokens in Figma Tokens.
 
-### Remarks
+## Remarks
 
 Figma is a great tool to design web interfaces. However due to the flexible nature of the Web it is not possible to mimic the medium and its behaviour exactly in Figma.
 
-#### Values and units are not possible in Figma
+### Values and units are not possible in Figma
 
 Values and units that are not possible to use in conjunction with Figma Tokens are:
 
@@ -198,7 +107,7 @@ When you have selected the element for which you want to see its calculated valu
 
 ![DevTools showing calculated CSS values](https://user-images.githubusercontent.com/248921/140960248-1beb10f7-59fa-4d8a-93a4-e4ccffb85a75.png)
 
-### Colors
+## Colors
 
 Colors can be specified in multiple CSS-compatible formats:
 
@@ -213,7 +122,7 @@ Color can be applied both to borders and fills (background). By default the Toke
 
 ![Figma Tokens size color options](https://user-images.githubusercontent.com/248921/140960875-03df21e8-3506-4abd-82b4-fb7be661c370.png)
 
-### Borders
+## Borders
 
 The following tokens for borders can be defined:
 
@@ -221,9 +130,9 @@ The following tokens for borders can be defined:
 2. Border width
 3. Border radius
 
-### Sizing and spacing
+## Sizing and spacing
 
-#### Sizing
+### Sizing
 
 Sizing can be applied both on the *X* (horizontal) and *Y* (vertical) axis. By default sizing tokens are applied to both axes.
 
@@ -233,11 +142,11 @@ If you want to set a sizing token only along the *X* axis, select the token by r
 
 The same applies to the *Y* axis for height, right-click the token and select **Height**.
 
-#### Spacing
+### Spacing
 
 Where sizing can be applied to an element in its default state, spacing tokens can only be applied to elements when their container is set to Auto layout.
 
-#### Padding and margins
+### Padding and margins
 
 Spacing can be applied both on the *X* (inline) and *Y* (block) axis. By default a spacing token is applied to the **Gap** property.
 
@@ -255,7 +164,7 @@ Selecting **All** will add a uniform inner padding to objects.
 
 In order to add both inline and block margins to objects, it might sometimes be necessary to add an empty container element to your object.
 
-### Typography
+## Typography
 
 Define the base body typeface with the token `document-font-family`. Keep in mind that ‘font stacks’, where fallback options for your preferred typeface can be defined in CSS are not supported in Figma. Only a single typeface should be defined.
 
@@ -265,7 +174,7 @@ Font weights (such as regular, medium, and bold) have to be defined exactly as t
 
 It is vital to use the same name as used in the text panel in Figma. If this is not properly set, it will result in typographic tokens not being applied.
 
-#### Modular typographic scale
+### Modular typographic scale
 
 Defining a flexible type scale can be done through the Token plugin by [using math](https://docs.tokens.studio/tokens/using-math). From one single base font-size (generally your body paragraph text) you can create a flexible scale by multiplying or diving the base-size. This will allow you to set a fixed size interval between your paragraph text, headings, secondary text, and micro typography.
 
@@ -281,7 +190,7 @@ If you then were to change the base font-size, your modular scale will change dy
 
 Should you already use a flexible modular scale for within your visual style, it is easy to adopt one-to-one in Figma.
 
-#### Composite type tokens
+### Composite type tokens
 
 In order to establish ‘combined’ typography tokens, such as headings one or a paragraph, all individual typography related tokens making up such combined tokens have to be defined first. A combined token references each of these individual tokens.
 
@@ -295,51 +204,3 @@ The typographic tokens that should be set in order to create a combined typograp
 - Line-height
 - Letter-spacing (spacing between characters, best left set to 0 to inherit kerning and spacing as defined by the typeface designer for most text with the possible exception of headings and text set in all-capitals)
 - Paragraph-spacing (spacing between consecutive paragraphs and/or headings)
-
-## Auto layout
-
-Auto layout allows you to automatically lay out elements within a container frame. These are one-directional; meaning that objects are either laid out vertically or horizontally.
-
-Auto layout can be used both on template or page level, or for micro layout of components. It can be compared to how Flexbox works in CSS.
-
-Auto layout can be used to add padding to objects, margin between objects and top, right, bottom, left and center alignment (both vertical and horizontal) and space distribution of elements within objects.
-
-[See the Figma site for more on Auto layout](https://www.figma.com/blog/announcing-auto-layout/).
-
-## Slots
-
-‘Slotting’ is a technique that allow addition or removal of content from a Figma component and have its layout automatically expand or contract based on its content.
-
-This concept can also be utilised to already establish basic guidelines in your design file. A good example of this is a radio button group. Where your UX guidelines likely dictate a maximum number of radio buttons within a single group before suggesting using a different component such as a select menu, you can create a radio button group already restricted to a maximum number of options.
-
-A radio button group component restricted to a maximum of five options would look similar to this, any amount between one and five can be chosen by simply hiding the options not needed:
-
-![Slotting technique in Figma used to limit radio button group options](https://user-images.githubusercontent.com/248921/140961714-f5b2e84d-33db-4c29-aba5-c79a69124d5f.png)
-
-## Zero-frames
-
-‘Zero-frames’ in conjunction with Auto layout is a technique that help with establishing for instance minimum widths or minimum height of elements, similar to how `min-width` and `min-height` is defined in CSS.
-
-This technique comes in handy if, for instance, you want to define a minimum width for buttons or a minimum height for cards.
-
-For an in-depth explanation of this technique see the **[Pushing Figma to its limits** presentation](https://youtu.be/hnPIpkvDxjc?t=79).
-
-## Creating components
-
-### Variants
-
-In order to create variants of components the best approach is to first create a component that contains all possible options and functionalities.
-
-Functionalities not available in one or more variants can then easily be hidden.
-
-Names of states should exactly match between component variants. This means also capitalisation of names, `focus=on` and `Focus=on` resolve in two separate variant instances.
-
-## Responsive behaviour
-
-To illustrate how a component behaves in multiple viewport size settings [the Figma plugin Breakpoints](https://www.figma.com/community/plugin/824289601590456356/Breakpoints) can be used. The behaviour illustrated with this plugin is also available to Figma viewers who do not have the plugin installed. As such, it is only a dependency when you want to create a responsive illustration.
-
-Creating breakpoints and adding components to each individual breakpoint range is relatively easy. [Watch this quick video tutorial](https://www.youtube.com/watch?v=OaGSreqHCXE) to get started.
-
-## Documentation links
-
-Documentation links also work in the instances of components.
