@@ -52,6 +52,10 @@ Tracht optionele vragen te vermijden. Mocht je deze toch willen stellen doe dit 
 
 Geef duidelijk aan welke vragen optioneel zijn. De beste manier om dit aan te geven is met een tekst zodat deze ook door voorleessoftware wordt aangekondigd. Een verplicht invoerveld voorzien van het required HTML attribuut wordt als zodanig al aangekondigd door voorleessoftware.
 
+Vaak is het beter om optionele velden als zodanig te markeren, en niet de verplichte velden. Markeer nooit beiden, maar alleen degene waarvan er het minste zijn. Dit is meestal ‘optioneel’. Bron: [Adobe Spectrum](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)
+
+Het staat bovendien vriendelijker om ‘optioneel’ te noemen in plaats van ‘verplicht’.
+
 ## Zorg ervoor dat bepaalde vragen gesteld mogen worden
 
 Is het bijvoorbeeld juridisch verantwoord om deze informatie te vragen?
