@@ -57,7 +57,9 @@ Vaak is het beter om optionele velden als zodanig te markeren, en niet de verpli
 Het staat bovendien vriendelijker om ‘optioneel’ te noemen in plaats van ‘verplicht’.
 
 ![Goed voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://user-images.githubusercontent.com/248921/141824603-9c8f7a16-217d-4af9-a049-fd54eb557c3b.png)
+
 ![Slecht voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://user-images.githubusercontent.com/248921/141824613-a394b9f9-4483-49ea-a084-ed4ea4a4e7d2.png)
+
 Figuur 2. “[Mark the minority of inputs in a form as required or optional](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)” van Adobe Spectrum’s richtlijnen.
 
 ## Zorg ervoor dat bepaalde vragen gesteld mogen worden
