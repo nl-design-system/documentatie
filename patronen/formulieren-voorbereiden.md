@@ -18,6 +18,7 @@ Indien het onduidelijk is waarom bepaalde informatie gevraagd wordt informeer ge
 Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
 ![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
+
 Figuur 1. Relevantie van vraag uitgelegd in subkop Bron: [GOV.UK Design System](https://design-system.service.gov.uk/patterns/addresses/ )
 
 ## Inventariseer of informatie al beschikbaar is
@@ -104,6 +105,10 @@ Door het aanbieden van een duidelijke titel en eventuele intro tekst weet de geb
 Bij bijvoorbeeld [selectieafhankelijke vragen](#Selectieafhankelijke-vragen) kan het mogelijk zijn om een gebruiker al snel tijdens het invullen te informeren of het formulier voor haar relevant is.
 
 Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk duidelijk zijn of het formulier relevant is.
+
+![check-a-service-is-suitable-flow](https://user-images.githubusercontent.com/248921/141825980-952498fc-e238-4fba-a450-cdf31f1d6dba.jpg)
+
+Figuur 3. “[Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)” uit het GOV.UK Design System.
 
 ## Leg uit wat een gebruiker nodig heeft om het formulier succesvol in te vullen
 
