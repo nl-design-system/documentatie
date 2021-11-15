@@ -35,7 +35,10 @@ Dit kan op diverse manieren:
 - Het vooraf invullen van een formulierveld. Hierdoor heeft een gebruiker de mogelijkheid deze informatie direct aan te passen.
 - Het tonen van de informatie (‘read-only’) met een functie om deze informatie te wijzigen.
 - Automatisch aanvullen van gedeeltelijke informatie. Bijvoorbeeld na invullen van postcode en huisnummer kan het volledige adres automatisch aangevuld worden.
-- Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen.
+- Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen. Zorg ervoor dat er geen help tekst of andere benodigde informatie onder het veld staat, een eventueel autocomplete attribuut valt daar meestal overheen op desktop.
+
+![Auto-complete van een telefoonnummer valt over eventuele help tekst onder het invoerveld](https://user-images.githubusercontent.com/248921/141822978-98bd349a-b455-4501-a606-f978e0138d00.png)
+
 
 ## Stel alleen noodzakelijke vragen
 
