@@ -17,6 +17,9 @@ Indien het onduidelijk is waarom bepaalde informatie gevraagd wordt informeer ge
 
 Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
+![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
+Figuur 1 Relevantie van vraag uitgelegd in subkop Bron: [GOV.UK Design System](https://design-system.service.gov.uk/patterns/addresses/ )
+
 ## Inventariseer of informatie al beschikbaar is
 
 Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeente of middels Basisregistratie Personen (BRP) of DigiD.
