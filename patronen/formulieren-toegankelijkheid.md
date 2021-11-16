@@ -35,9 +35,11 @@ Formulierelementen moeten aan de volgende eisen voldoen, ze hebben:
 - Bij een fout een duidelijke foutmelding gekoppeld aan het invoerelement (zowel visueel maar zorg tevens dat de foutmelding op het juiste moment en op de juiste manier door voorleessoftware wordt uitgesproken),
 - Bij een foutmelding moet duidelijk worden uitgelegd hoe deze fout kan worden verholpen en deze in de toekomst kan worden voorkomen.
 
-![Voorbeeld van een foutmelding op GOV.UK](https://user-images.githubusercontent.com/248921/142022481-5968bed5-3db3-45fb-b5d4-544edcb1fb92.png)
+![Voorbeeld van een foutmelding in land selectie op GOV.UK](https://user-images.githubusercontent.com/248921/142022481-5968bed5-3db3-45fb-b5d4-544edcb1fb92.png)
 
-Voorbeeld van GOV.UK van een foutmelding én visuele indicatie op welk element deze van toepassing is.
+![Voorbeeld van een foutmelding in datum selectie op GOV.UK](https://user-images.githubusercontent.com/248921/142023371-27d769fc-eb80-4d28-a776-91eaffece98b.png)
+
+Voorbeelden van GOV.UK van foutmelding én visuele indicatie op welk element deze van toepassing zijn.
 
 ### Tekstlabels
 
