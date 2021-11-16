@@ -20,7 +20,7 @@ Overweeg om extra help tekst toe te voegen wanneer:
 - Een gebruiker zich af zou kunnen vragen waarom om specifieke informatie gevraagd wordt,
 - Een gebruiker mogelijk bezorgd kan zijn over de veiligheid of privacy van bepaalde gegevens.
 
-De beste positie voor help tekst is na de vraag en voor het invoerelement.
+De beste positie voor help tekst is na de vraag en voor het invoerelement. [^helper-text-position]
 
 ### Placeholder tekst
 
@@ -63,3 +63,6 @@ Als een bepaald formaat van invoer nodig is, b.v. telefoonnummer, geef dit dan m
 Mocht een gebruiker niet uit het formulier komen, zorg dan dat zij met jouw organisatie contact op kan nemen.
 
 Dit kan door het aanbieden van bijvoorbeeld een e-mailadres, telefoonnummer, chatbot of een link naar het Twitter of Facebook account.
+
+## Referenties
+[^helper-text-position]: [W3C Design System: Forms - Dealing with text](https://design-system.w3.org/styles/forms.html#dealing-with-text)
