@@ -53,7 +53,7 @@ Tracht optionele vragen te vermijden. Mocht je deze toch willen stellen doe dit 
 
 Geef duidelijk aan welke vragen optioneel zijn. De beste manier om dit aan te geven is met een tekst zodat deze ook door voorleessoftware wordt aangekondigd. Een verplicht invoerveld voorzien van het required HTML attribuut wordt als zodanig al aangekondigd door voorleessoftware.
 
-Vaak is het beter om optionele velden als zodanig te markeren, en niet de verplichte velden. Markeer nooit beiden, maar alleen degene waarvan er het minste zijn. Dit is meestal ‘optioneel’. Bron: [Adobe Spectrum](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional).
+Vaak is het beter om optionele velden als zodanig te markeren, en niet de verplichte velden. Markeer nooit beiden, maar alleen degene waarvan er het minste zijn. Dit is meestal ‘optioneel’. [^spectrum-optional-required]
 
 Het staat bovendien vriendelijker om ‘optioneel’ te noemen in plaats van ‘verplicht’.
 
@@ -188,3 +188,4 @@ Addresses](https://design-system.service.gov.uk/patterns/addresses/)
 [^using-progress-indicators]: [GOV.UK Design System - Patterns: Question pages - Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators)
 [^let-users-save-progress]: [Form design: from zero to hero all in one blog post - Flow and order](https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/#flow-and-order)
 [^task-list-pages]: [GOV.UK Design System - Patterns: Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)
+[^spectrum-optional-required] [Adobe Spectrum: Field label](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)
