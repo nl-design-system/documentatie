@@ -156,6 +156,8 @@ Formulieren met condities zijn lastiger op te breken. Antwoord op een vraag in e
 
 Wanneer een formulier in meerdere stappen wordt opgebroken, is te overwegen deze te voorzien van duidelijke navigatie. Hierdoor weet een gebruiker ten alle tijden waar hij vandaan komt, op dat moment is, en naartoe kan gaan. Navigatie kan tevens dienst doen om het totale aantal stappen, voortgang binnen deze stappen en eventuele validatiefouten te tonen. Het is echter aan te raden om te beginnen zonder navigatie of voortgangsindicatie daar deze vaak niet opgemerkt wordt en tevens lastig vorm te geven is voor dynamische flows met selectieafhankelijke of conditionele vragen. [^using-progress-indicators]
 
+Alhoewel het [W3C design system adviseert geen voortgandsindicatie te gebruiken, bieden zij deze toch als component aan](https://design-system.w3.org/styles/forms.html#progress-indicators).
+
 Bij het gebruik van meerdere pagina’s dient de ingevoerde informatie tussen pagina’s bewaard te blijven en door de gebruiker te wijzigen zijn.
 
 Een gebruiker zou zowel voorwaarts als terug moeten kunnen navigeren.
