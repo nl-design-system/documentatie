@@ -144,6 +144,10 @@ Als het lastig blijkt het formulier te interpreteren als niet alle vragen op een
 
 Gov.uk experimenteerd met het ‘[Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)’ patroon waarbij formulieren in kleinere, overzichtelijkere stappen opgebroken in een pagina getoont worden. Dit patroon is echter nog niet uitgebreid getest. [^task-list-pages]
 
+![Task list pages patroon van GOV.UK](https://user-images.githubusercontent.com/248921/142017147-4753ae1c-91b9-441c-98ae-a43fa4b89ece.png)
+
+Figuur 6. Task list pages patroon van GOV.UK
+
 ### Verschillende soorten formulieren
 
 Formulieren met condities zijn lastiger op te breken. Antwoord op een vraag in een stap kan er voor zorgen dat een extra stap nodig is. Hierdoor kan de navigatie wijzigen en een gebruiker in de war raken. Daarom maken we onderscheid in 3 soorten formulieren:
