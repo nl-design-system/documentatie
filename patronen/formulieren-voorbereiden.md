@@ -116,6 +116,14 @@ Waar nodig helpt het gebruikers een overzicht te geven van wat nodig is om een f
 
 Voeg dit overzicht als eerste toe voor een formulier getoond wordt. Dit kan een aparte sectie, maar ook een aparte pagina zijn. De sectie over groeperen en opsplitsen kan hierbij hulp bieden.
 
+![Start pagina concept van GOV.UK](https://user-images.githubusercontent.com/248921/141978873-2786cfee-204c-44b6-a5d0-5ccf64c3644e.png)
+
+Figuur 4. [GOV.UK gebruikt het concept ‘Start pagina’](https://design-system.service.gov.uk/patterns/start-pages/) alvorens een gebruiker een formulier in gaat vullen. Deze start pagina beschikt over vier hoofd elementen:
+- The service name: this should help people understand what your service does and whether they need to use it - [learn more about naming your service](https://www.gov.uk/service-manual/design/naming-your-service).
+- A short introduction to list things that most users will need to know, for example, what your service will let them do or how much it’ll cost.
+- The ‘Start now’ call-to-action button.
+- A list of other ways to access your service.
+
 ## Laat op voorhand weten wanneer een tijdslimiet van toepassing is
 
 Als een tijdslimiet strikt noodzakelijk is, informeer de gebruiker hier dan over voordat zij het formulier in gaat vullen.
