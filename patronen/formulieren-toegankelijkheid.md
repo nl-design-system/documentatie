@@ -23,7 +23,9 @@ Voor het juiste taalgebruik zijn de Taal en taalgebruik richtlijnen te gebruiken
 
 ## Gender inclusiviteit
 
-Vraag alleen noodzakelijke persoonlijke gegevens en vermijd onnodige vragen over geslacht. Indien je echt om een geslacht moet vragen, zorg dan tevens voor een derde, neutrale optie. Op advies van o.a. transgender netwerk TNN, kan hiervoor het tekstlabel ‘Niet relevant’ gebruikt worden. [^note] [^note]
+Vraag alleen noodzakelijke persoonlijke gegevens en vermijd onnodige vragen over geslacht. Indien je echt om een geslacht moet vragen, zorg dan tevens voor een derde, neutrale optie. Op advies van o.a. transgender netwerk TNN, kan hiervoor het tekstlabel ‘Niet relevant’ gebruikt worden. 
+[^note]
+[^note]
 
 ## Toegankelijkheidseisen
 
@@ -40,5 +42,5 @@ Een goed label is buiten een invoerveld geplaatst, niet daarbinnen (de zg. ‘fl
 Een bijkomend voordeel van het plaatsen van een label buiten het invoerveld is dat dit het klik- en tap-oppervlakte automatisch vergroot, waardoor het selecteren van een formulierelement voor zowel muis- als touchscreen gebruikers makkelijker is.
 
 ## Referenties
-[^note] Terugdringen van onnodige vragen naar sekse [https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm]
-[^note] Onnodige sekseregistratie verder teruggedrongen [https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen]
+[^note]: Terugdringen van onnodige vragen naar sekse [https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm]
+[^note]: Onnodige sekseregistratie verder teruggedrongen [https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen]
