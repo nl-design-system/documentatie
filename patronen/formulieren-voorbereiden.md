@@ -142,6 +142,8 @@ Zorg er echter voor dat deze stappen in betekenisvolle groepen zijn verdeeld.
 
 Als het lastig blijkt het formulier te interpreteren als niet alle vragen op een enkel scherm voorhanden zijn, splits deze dan niet op in meerdere stappen.
 
+Gov.uk experimenteerd met het ‘[Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)’ patroon waarbij formulieren in kleinere, overzichtelijkere stappen opgebroken in een pagina getoont worden. Dit patroon is echter nog niet uitgebreid getest. [^task-list-pages]
+
 ### Verschillende soorten formulieren
 
 Formulieren met condities zijn lastiger op te breken. Antwoord op een vraag in een stap kan er voor zorgen dat een extra stap nodig is. Hierdoor kan de navigatie wijzigen en een gebruiker in de war raken. Daarom maken we onderscheid in 3 soorten formulieren:
@@ -185,3 +187,4 @@ Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. [^let
 Addresses](https://design-system.service.gov.uk/patterns/addresses/)
 [^using-progress-indicators]: [GOV.UK Design System - Patterns: Question pages - Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators)
 [^let-users-save-progress]: [Form design: from zero to hero all in one blog post - Flow and order](https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/#flow-and-order)
+[^task-list-pages]: [GOV.UK Design System - Patterns: Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)
