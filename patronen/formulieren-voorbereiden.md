@@ -19,7 +19,7 @@ Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
 ![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
 
-Figuur 1. Relevantie van vraag uitgelegd in subkop[^1]
+Figuur 1. Relevantie van vraag uitgelegd in subkop [^note]
 
 ## Inventariseer of informatie al beschikbaar is
 
@@ -181,5 +181,5 @@ Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weerga
 Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. Het tussentijds opslaan van antwoorden is hierbij van belang, al is dit niet altijd wenselijk (bijvoorbeeld als om een machtiging gevraagd wordt). In deze gevallen is het wellicht een optie om deze vragen op 1 pagina te tonen.
 
 ## Referenties
- [^1]: [GOV.UK Design System - Patterns: Ask users for
+ [^note]: [GOV.UK Design System - Patterns: Ask users for
 Addresses](https://design-system.service.gov.uk/patterns/addresses/ )
