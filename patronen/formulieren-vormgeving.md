@@ -55,4 +55,6 @@ In enkele gevallen kunnen invoervelden *naast* elkaar getoond worden, bijvoorbee
 
 Velden kunnen verspringen of de layout kan wijzigen door bijvoorbeeld het tonen van validatie feedback. Probeer rekening te houden met de positie van eventuele feedback om het wijzigen van de layout en verspringen tot een minimum te beperken.
 
+Plaats validatie feedback daarom onder het invoerveld of de button die de fout genereerd.
+
 Maak het echter wel mogelijk om meerlijnige tekstinvoer (`textarea`’s) in de hoogte en eventueel breedte door de gebruiker aan te laten passen. Zie het `<textarea>` component voor meer infomatie hierover.
