@@ -35,6 +35,10 @@ Formulierelementen moeten aan de volgende eisen voldoen, ze hebben:
 - Bij een fout een duidelijke foutmelding gekoppeld aan het invoerelement (zowel visueel maar zorg tevens dat de foutmelding op het juiste moment en op de juiste manier door voorleessoftware wordt uitgesproken),
 - Bij een foutmelding moet duidelijk worden uitgelegd hoe deze fout kan worden verholpen en deze in de toekomst kan worden voorkomen.
 
+![Voorbeeld van een foutmelding op GOV.UK](https://user-images.githubusercontent.com/248921/142022481-5968bed5-3db3-45fb-b5d4-544edcb1fb92.png)
+
+Voorbeeld van GOV.UK van een foutmelding én visuele indicatie op welk element deze van toepassing is.
+
 ### Tekstlabels
 
 Een goed label is buiten een invoerveld geplaatst, niet daarbinnen (de zg. ‘floating labels’). Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoont. Een label dat in een invoerveld is geplaatst, kan een gebruiker in verwarring brengen, aangezien het voor reeds ingevoerde tekst aangezien kan worden. Het kan ook verward worden met inactieve of placeholder tekst.
