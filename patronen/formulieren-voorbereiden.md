@@ -19,7 +19,7 @@ Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
 ![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
 
-Figuur 1. Relevantie van vraag uitgelegd in subkop [^note]
+Figuur 1. Relevantie van vraag uitgelegd in subkop [^question-relevance]
 
 ## Inventariseer of informatie al beschikbaar is
 
@@ -138,7 +138,7 @@ Als het om een beperkt aantal onderwerpen gaat onderverdeeld in een klein aantal
 
 Overweeg het formulier in meerdere stappen of pagina's op te breken als deze heel lang is, veel informatie bevat of lastig is te interpreteren door gebruikers.
 
-Zorg er echter voor dat deze stappen in betekenisvolle groepen zijn verdeeld. Eventueel is te overwegen deze te voorzien van duidelijke navigatie. Het is echter aan te raden om te beginnen zonder navigatie of voortgangsindicatie daar deze vaak niet opgemerkt wordt en tevens lastig vorm te geven is voor dynamische flows met selectieafhankelijke of conditionele vragen. 
+Zorg er echter voor dat deze stappen in betekenisvolle groepen zijn verdeeld.
 
 Als het lastig blijkt het formulier te interpreteren als niet alle vragen op een enkel scherm voorhanden zijn, splits deze dan niet op in meerdere stappen.
 
@@ -152,7 +152,7 @@ Formulieren met condities zijn lastiger op te breken. Antwoord op een vraag in e
 
 ### Navigatie en oriëntatie
 
-Wanneer een formulier in meerdere stappen wordt opgebroken, dan is het belangrijk deze van goede navigatie te voorzien. Hierdoor weet een gebruiker ten alle tijden waar hij vandaan komt, op dat moment is, en naartoe kan gaan. Navigatie kan tevens dienst doen om het totale aantal stappen, voortgang binnen deze stappen en eventuele validatiefouten te tonen.
+Wanneer een formulier in meerdere stappen wordt opgebroken, is te overwegen deze te voorzien van duidelijke navigatie. Hierdoor weet een gebruiker ten alle tijden waar hij vandaan komt, op dat moment is, en naartoe kan gaan. Navigatie kan tevens dienst doen om het totale aantal stappen, voortgang binnen deze stappen en eventuele validatiefouten te tonen. Het is echter aan te raden om te beginnen zonder navigatie of voortgangsindicatie daar deze vaak niet opgemerkt wordt en tevens lastig vorm te geven is voor dynamische flows met selectieafhankelijke of conditionele vragen. [^using-progress-indicators]
 
 Bij het gebruik van meerdere pagina’s dient de ingevoerde informatie tussen pagina’s bewaard te blijven en door de gebruiker te wijzigen zijn.
 
@@ -181,5 +181,6 @@ Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weerga
 Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. Het tussentijds opslaan van antwoorden is hierbij van belang, al is dit niet altijd wenselijk (bijvoorbeeld als om een machtiging gevraagd wordt). In deze gevallen is het wellicht een optie om deze vragen op 1 pagina te tonen.
 
 ## Referenties
- [^note]: [GOV.UK Design System - Patterns: Ask users for
-Addresses](https://design-system.service.gov.uk/patterns/addresses/ )
+ [^question-relevance]: [GOV.UK Design System - Patterns: Ask users for
+Addresses](https://design-system.service.gov.uk/patterns/addresses/)
+[^using-progress-indicators]: [GOV.UK Design System - Patterns: Question pages - Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators)
