@@ -59,9 +59,9 @@ Eén enkel veld zodat alle soorten telefoonnummer formaten geaccepteerd worden. 
 
 ## Vul vooraf bekende informatie in
 
-Vul vooraf bekende informatie in en zorg dat deze waar nodig te wijzigen is.
+Vul vooraf bekende informatie in en zorg dat deze waar nodig te wijzigen is, en faciliteer `autocomplete`. [^gov.uk-autocomplete]
 
 ## Referenties
 [^w3c-segmented-options]: [W3C Design System: Forms - Segmented options](https://design-system.w3.org/styles/forms.html#segmented-options)
 [^gov.uk-telephone-numbers]: [GOV.UK Design System: Patterns - Telephone numbers](https://design-system.service.gov.uk/patterns/telephone-numbers/)
-
+[^gov.uk-autocomplete]: [GOV.UK Design System: Patterns - Telephone numbers, Use the autocomplete attribute](https://design-system.service.gov.uk/patterns/telephone-numbers/)
