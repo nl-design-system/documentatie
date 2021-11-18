@@ -64,7 +64,7 @@ In de standaard staat is de tekst verborgen.
 
 ![Voorbeeld van de hover en focus staat van help tekst op aanvraag](https://i.imgur.com/y2Ah2qK.png)
 
-In de hover en focus staat wordt de helptekst onder het invoerelement getoond.
+In de hover en focus staat wordt de helptekst onder het invoerelement getoond. Voor gebruikers van touch screens dient deze informatie ook ontsloten te worden!
 
 Bij het verleggen van de focus of het verlaten van de muiscursor van het icoon wordt de standaard staat weer getoond.
 
