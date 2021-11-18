@@ -93,6 +93,7 @@ Mocht een gebruiker niet uit het formulier komen, zorg dan dat zij met jouw orga
 Dit kan door het aanbieden van bijvoorbeeld een e-mailadres, telefoonnummer, chatbot of een link naar het Twitter of Facebook account.
 
 ## Referenties
+
 [^helper-text-position]: [W3C Design System: Forms - Dealing with text](https://design-system.w3.org/styles/forms.html#dealing-with-text)
 [^no-style-helper-text]: [No Style Design System: Examples - Registration form](https://nostyle.herokuapp.com/examples)
 [^spectrum-tooltips]: [Adobe Spectrum: Components - Tooltip](https://spectrum.adobe.com/page/tooltip/#Dont-use-tooltips-to-communicate-crucial-information)
