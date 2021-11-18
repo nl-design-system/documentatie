@@ -38,7 +38,17 @@ Gebruik in plaats van placeholder tekst help tekst.
 
 ### Help tekst op aanvraag
 
-Help tekst kan eventueel standaard verborgen worden en alleen waar nodig door een gebruiker getoond worden. Hiervoor kan een help (i) button gebruikt worden.
+Help tekst kan eventueel standaard verborgen worden en alleen wanneer nodig door een gebruiker getoond worden. Hiervoor kan een help (i) button gebruikt worden.
+
+Probeer echter altijd standaard help tekst te tonen en denk goed na waarom je de helper tekst zou willen verbergen.
+
+Adobe Spectrum’s richtlijnen zeggen hier het volgende over: 
+
+“Don't use tooltips to communicate crucial information
+
+Show crucial information at all times, not just when a tooltip is displayed. A tooltip should only be used to provide supplementary context or hints to the message shown in help text.
+
+For example, in a scenario where a user is entering their password into a field, the crucial information would be to state the password requirements. Supplementary context would be a message about how to get help if they have forgotten their password.” [^spectrum-tooltips]
 
 #### Standaard staat
 
@@ -77,3 +87,4 @@ Dit kan door het aanbieden van bijvoorbeeld een e-mailadres, telefoonnummer, cha
 ## Referenties
 [^helper-text-position]: [W3C Design System: Forms - Dealing with text](https://design-system.w3.org/styles/forms.html#dealing-with-text)
 [^no-style-helper-text]: [No Style Design System: Examples - Registration form](https://nostyle.herokuapp.com/examples)
+[^spectrum-tooltips]: [Adobe Spectrum: Components - Tooltip](https://spectrum.adobe.com/page/tooltip/#Dont-use-tooltips-to-communicate-crucial-information)
