@@ -27,4 +27,5 @@ Zorg dat het voor de gebruiker mogelijk is om ingevoerde informatie te wijzigen.
 Voorbeeld van een overzicht component uit het GOV.UK design system dat tevens toelaat data te wijzigen. [^gov.uk-summary-list]
 
 ## Referenties
+
 [^gov.uk-summary-list]: [GOV.UK Design System: Components - Summary list](https://design-system.service.gov.uk/components/summary-list/)
