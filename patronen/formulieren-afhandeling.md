@@ -44,4 +44,5 @@ _Your confirmation page must include:_
 Voorbeeld uit het GOV.UK Design System van een ‘Confirmation page’. [^gov.uk-confirmation-pages]
 
 ## Referenties
+
 [^gov.uk-confirmation-pages]: [GOV.UK Design System: Patterns - Confirmation pages](https://design-system.service.gov.uk/patterns/confirmation-pages/)
