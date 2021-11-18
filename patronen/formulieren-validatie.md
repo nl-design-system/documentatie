@@ -46,4 +46,5 @@ Voorbeeld van Spotify waarin over de juiste tone-of-voice om een gebruiker aan t
 Niet alle velden dienen gevalideerd te worden; voor een voornaam kunnen we uiteraard niet bepalen of deze onjuist is. Bij het verzenden van een formulier kan uiteraard wel gevalideerd worden of er daadwerkelijk iets ingevuld is. Voorkom het valideren van optionele.
 
 ## Referenties
+
 [^spotify-art-error-messages]: [Spotify: The Art of the Error Message](https://spotify.design/article/the-art-of-the-error-message)
