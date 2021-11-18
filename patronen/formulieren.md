@@ -65,6 +65,12 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan.](/patronen-formulieren-help#Zorg-voor-de-mogelijkheid-om-tussentijds-te-stoppen-en-later-verder-te-gaan)
 - [Zorg dat een gebruiker ten alle tijden contact met jouw organisatie kan opnemen.](/patronen-formulieren-help#Zorg-dat-een-gebruiker-ten-alle-tijden-contact-op-kan-nemen)
 
+### [Wachtindicatie](formulieren-wachtindicatie.md)
+
+- [‘Skeleton loading’](formulieren-wachtindicatie.md#skeleton-loading)
+- [Gebruik een laad component wanneer invoer wordt opgeslagen](formulieren-wachtindicatie.md#gebruik-een-laad-component-wanneer-invoer-wordt-opgeslagen)
+- [‘Progressive loading’: volgorde van het laden van elementen](formulieren-wachtindicatie.md#progressive-loading-volgorde-van-het-laden-van-elementen)
+
 ### [Validatie, foutpreventie en herstellen van fouten](/patronen-formulieren-validation)
 
 - [Accepteer antwoorden in verschillende vormen.](/patronen-formulieren-validation#Accepteer-antwoorden-in-verschillende-vormen)
