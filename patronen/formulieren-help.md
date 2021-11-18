@@ -50,6 +50,10 @@ _Show crucial information at all times, not just when a tooltip is displayed. A 
 
 _For example, in a scenario where a user is entering their password into a field, the crucial information would be to state the password requirements. Supplementary context would be a message about how to get help if they have forgotten their password.”_ [^spectrum-tooltips]
 
+![spectrum adobe com_page_tooltip_](https://user-images.githubusercontent.com/248921/142426915-cef223f5-0958-4edf-a56e-6ae5333f8660.png)
+
+_‘Dos en dont’s’_ van Adobe Spectrum over het gebruik van welk soort informatie wel en welke niet verborgen kan worden. [^spectrum-tooltips]
+
 #### Standaard staat
 
 ![Voorbeeld van de standaard staat van help tekst op aanvraag](https://i.imgur.com/APvKjcc.png)
