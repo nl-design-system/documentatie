@@ -22,6 +22,14 @@ Overweeg om extra help tekst toe te voegen wanneer:
 
 De beste positie voor help tekst is na de vraag en voor het invoerelement. [^helper-text-position]
 
+![Voorbeeld van helper tekst positie van het No Style design system](https://user-images.githubusercontent.com/248921/142423723-442f8506-2e12-4d57-8c25-4273002ee192.png)
+
+Voorbeeld 1 van helper tekst geplaatst ná de vraag en voor het invoerelement. [^no-style-helper-text]
+
+![Voorbeeld van helper tekst positie van het W3C design system](https://user-images.githubusercontent.com/248921/142424548-448c8a82-2b64-4667-8f8e-6c97ca00ac58.png)
+
+Voorbeeld 2 van helper tekst geplaatst ná de vraag en voor het invoerelement. [^helper-text-position]
+
 ### Placeholder tekst
 
 Door de negatieve gevolgen van het gebruik van placeholder tekst op toegankelijkheid zou placeholder tekst vermeden dienen te worden. Placeholder tekst kan o.a. aangezien worden voor reeds ingevoerde tekst en de tekst verdwijnt zodra focus op het invoerveld komt te staan waardoor waardevolle informatie niet zichtbaar is juist op het moment dat dit nodig is.
@@ -68,3 +76,4 @@ Dit kan door het aanbieden van bijvoorbeeld een e-mailadres, telefoonnummer, cha
 
 ## Referenties
 [^helper-text-position]: [W3C Design System: Forms - Dealing with text](https://design-system.w3.org/styles/forms.html#dealing-with-text)
+[^no-style-helper-text]: [No Style Design System: Examples - Registration form](https://nostyle.herokuapp.com/examples)
