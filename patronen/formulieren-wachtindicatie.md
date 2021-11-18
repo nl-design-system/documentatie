@@ -24,7 +24,7 @@ Een voorbeeld uit het Carbon Design System van een laad component op een enkel k
 
 Het laatste voorbeeld geeft direct feedback aan de gebruiker dat zowel de invoer opgeslagen wordt, en opgeslagen is. Een gebruiker weet hier door dat een actie uitgevoert wordt/is en zo verkom je dat een actie nogmaals door een gebruiker uitgevoerd wordt.
 
-## Progressive loading: volgorde van het laden van elementen
+## ‘Progressive loading’: volgorde van het laden van elementen
 
 1. Basisstructuur van de pagina (‘_skeleton_ versie’)
 2. Tekst
