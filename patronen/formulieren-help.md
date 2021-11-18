@@ -44,11 +44,11 @@ Probeer echter altijd standaard help tekst te tonen en denk goed na waarom je de
 
 Adobe Spectrum’s richtlijnen zeggen hier het volgende over: 
 
-_“Don't use tooltips to communicate crucial information
+_“Don't use tooltips to communicate crucial information_
 
-Show crucial information at all times, not just when a tooltip is displayed. A tooltip should only be used to provide supplementary context or hints to the message shown in help text.
+_Show crucial information at all times, not just when a tooltip is displayed. A tooltip should only be used to provide supplementary context or hints to the message shown in help text._
 
-For example, in a scenario where a user is entering their password into a field, the crucial information would be to state the password requirements. Supplementary context would be a message about how to get help if they have forgotten their password.”_ [^spectrum-tooltips]
+_For example, in a scenario where a user is entering their password into a field, the crucial information would be to state the password requirements. Supplementary context would be a message about how to get help if they have forgotten their password.”_ [^spectrum-tooltips]
 
 #### Standaard staat
 
