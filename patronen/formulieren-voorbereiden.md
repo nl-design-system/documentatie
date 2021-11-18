@@ -188,6 +188,7 @@ Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weerga
 Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. [^let-users-save-progress] Het tussentijds opslaan van antwoorden is hierbij van belang, al is dit niet altijd wenselijk (bijvoorbeeld als om een machtiging gevraagd wordt). In deze gevallen is het wellicht een optie om deze vragen op 1 pagina te tonen.
 
 ## Referenties
+
  [^question-relevance]: [GOV.UK Design System - Patterns: Ask users for
 Addresses](https://design-system.service.gov.uk/patterns/addresses/)
 [^using-progress-indicators]: [GOV.UK Design System - Patterns: Question pages - Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators)
