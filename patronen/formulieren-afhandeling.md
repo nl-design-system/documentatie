@@ -21,12 +21,13 @@ Het GOV.UK desing system zegt hier het volgende over:
 
 _“Confirmation pages reassure users that they have completed a transaction and helps them understand what to expect next._
 _Your confirmation page must include:_
-_- a reference number, if there is one_
-_- details of what happens next and when_
-_- contact details for the service_
-_- links to information or services that users are likely to need next_
-_- a link to your feedback page_
-_- a way for users to save a record of the transaction, for example, as a PDF_
+
+_* a reference number, if there is one_
+_* details of what happens next and when_
+_* contact details for the service_
+_* links to information or services that users are likely to need next_
+_* a link to your feedback page_
+_* a way for users to save a record of the transaction, for example, as a PDF_
 [^gov.uk-confirmation-pages]
 
 ## Geef aan dat het formulier verzonden is
