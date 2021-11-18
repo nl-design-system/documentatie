@@ -19,7 +19,7 @@ Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
 ![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
 
-Figuur 1. Relevantie van vraag uitgelegd in subkop [^question-relevance]
+Relevantie van vraag uitgelegd in subkop [^question-relevance]
 
 ## Inventariseer of informatie al beschikbaar is
 
@@ -39,7 +39,6 @@ Dit kan op diverse manieren:
 - Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen. Zorg ervoor dat er geen help tekst of andere benodigde informatie onder het veld staat, een eventueel autocomplete attribuut valt daar meestal overheen op desktop.
 
 ![Auto-complete van een telefoonnummer valt over eventuele help tekst onder het invoerveld](https://user-images.githubusercontent.com/248921/141822978-98bd349a-b455-4501-a606-f978e0138d00.png)
-
 
 ## Stel alleen noodzakelijke vragen
 
@@ -61,7 +60,7 @@ Het staat bovendien vriendelijker om ‘optioneel’ te noemen in plaats van ‘
 
 ![Slecht voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://user-images.githubusercontent.com/248921/141824613-a394b9f9-4483-49ea-a084-ed4ea4a4e7d2.png)
 
-Figuur 2. “[Mark the minority of inputs in a form as required or optional](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)” van Adobe Spectrum’s richtlijnen.
+“[Mark the minority of inputs in a form as required or optional](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)” van Adobe Spectrum’s richtlijnen.
 
 ## Zorg ervoor dat bepaalde vragen gesteld mogen worden
 
@@ -108,7 +107,7 @@ Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk 
 
 ![check-a-service-is-suitable-flow](https://user-images.githubusercontent.com/248921/141825980-952498fc-e238-4fba-a450-cdf31f1d6dba.jpg)
 
-Figuur 3. “[Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)” uit het GOV.UK Design System.
+“[Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)” uit het GOV.UK Design System.
 
 ## Leg uit wat een gebruiker nodig heeft om het formulier succesvol in te vullen
 
@@ -118,7 +117,7 @@ Voeg dit overzicht als eerste toe voor een formulier getoond wordt. Dit kan een 
 
 ![Start pagina concept van GOV.UK](https://user-images.githubusercontent.com/248921/141979966-fe045fe4-b51a-4d4e-b6d0-49ebfb768890.png)
 
-Figuur 4. [GOV.UK gebruikt het concept ‘Start pagina’](https://design-system.service.gov.uk/patterns/start-pages/) alvorens een gebruiker een formulier in gaat vullen. Deze start pagina beschikt over vier hoofd elementen:
+[GOV.UK gebruikt het concept ‘Start pagina’](https://design-system.service.gov.uk/patterns/start-pages/) alvorens een gebruiker een formulier in gaat vullen. Deze start pagina beschikt over vier hoofd elementen:
 - The service name: this should help people understand what your service does and whether they need to use it - [learn more about naming your service](https://www.gov.uk/service-manual/design/naming-your-service).
 - A short introduction to list things that most users will need to know, for example, what your service will let them do or how much it’ll cost.
 - The ‘Start now’ call-to-action button.
@@ -146,7 +145,7 @@ Gov.uk experimenteerd met het ‘[Task list pages](https://design-system.service
 
 ![Task list pages patroon van GOV.UK](https://user-images.githubusercontent.com/248921/142017147-4753ae1c-91b9-441c-98ae-a43fa4b89ece.png)
 
-Figuur 6. Task list pages patroon van GOV.UK
+Task list pages patroon van GOV.UK
 
 ### Verschillende soorten formulieren
 
