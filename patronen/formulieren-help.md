@@ -82,7 +82,7 @@ Raadpleeg voor uitgebreide informatie over feedback tekst het feedback text comp
 
 ## Geef een voorbeeld als een bepaalde vorm vereist is
 
-Als een bepaald formaat van invoer nodig is, b.v. telefoonnummer, geef dit dan middels help tekst aan.
+Als een bepaald formaat van invoer nodig is, b.v. telefoonnummer, geef dit dan middels help tekst aan. Wees bij het valideren waar mogelijk vergevingsgezind en accepteer meerdere formaten. Zie de validatie richtlijnen voor meer informatie hierover.
 
 ## Zorg voor de mogelijkheid om tussentijds te stoppen en later verder te gaan
 
