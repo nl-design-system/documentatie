@@ -13,7 +13,7 @@ _Status: **In ontwikkeling**_
 
 ## Accepteer antwoorden in verschillende vormen
 
-Laat meerdere formaten toe, bv. voor postcode ‘000AA’ én ‘0000 AA’; dus met en zonder spatie.
+Wees waar mogelijk vergevingsgezind, bijvoorbeeld bij adressen en laat meerdere formaten toe, bv. voor postcode ‘000AA’ én ‘0000 AA’; dus met en zonder spatie.
 
 ## Valideer op het juiste moment
 
