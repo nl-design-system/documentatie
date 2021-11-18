@@ -49,10 +49,13 @@ Het tonen van alle antwoorden in een meerkeuze vraag kan het begrip van de vraag
 
 Een alternatief patroon waarbij opties permanent opengeklapt zijn én alle antwoorden zichtbaar. [^w3c-segmented-options]
 
-
 ## Combineer invoervelden
 
 Gebruik zo veel mogelijk één veld voor antwoorden die als geheel worden gezien, bv. netnummer en telefoonnummer of huisnummer en toevoeging.
+
+![Voorbeeld van GOV.UK van een gecombineerd telefoon invoerveld](https://user-images.githubusercontent.com/248921/142413725-95083e41-793c-4ea0-a4a1-4ac8965b2396.png)
+
+Eén enkel veld zodat alle soorten telefoonnummer formaten geaccepteerd worden. Geef een gebruiker wel richtlijnen, met helper tekst, welke formaten geaccepteerd worden. [^gov.uk-telephone-numbers]
 
 ## Vul vooraf bekende informatie in
 
@@ -60,3 +63,5 @@ Vul vooraf bekende informatie in en zorg dat deze waar nodig te wijzigen is.
 
 ## Referenties
 [^w3c-segmented-options]: [W3C Design System: Forms - Segmented options](https://design-system.w3.org/styles/forms.html#segmented-options)
+[^gov.uk-telephone-numbers]: [GOV.UK Design System: Patterns - Telephone numbers](https://design-system.service.gov.uk/patterns/telephone-numbers/)
+
