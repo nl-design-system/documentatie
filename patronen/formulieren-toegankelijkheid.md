@@ -27,6 +27,11 @@ Vraag alleen noodzakelijke persoonlijke gegevens en vermijd onnodige vragen over
 [^1]
 [^2]
 
+Er is een verschil tussen de begrippen ‘gender’ en ‘sekse. Deze worden vaak door elkaar gebruikt, maar dat kan niet in elke context. [Raadpleeg de website van Genootschap Onze Taal voor adviezen](https://onzetaal.nl/taaladvies/sekse-geslacht-en-gender). [^onze-taal-sekse-gender-geslacht]
+
+Het GOV.UK Design System zegt het volgende hierover:
+“If you do need to ask, use ‘sex’ when you need biological data (for example, if you’re providing a medical service). In all other cases, use ‘gender’” [^gov.uk-gender-sex]
+
 ## Toegankelijkheidseisen
 
 Formulierelementen moeten aan de volgende eisen voldoen, ze hebben:
@@ -51,3 +56,5 @@ Een bijkomend voordeel van het plaatsen van een label buiten het invoerveld is d
 
 [^1]: Terugdringen van onnodige vragen naar sekse [https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm]
 [^2]: Onnodige sekseregistratie verder teruggedrongen [https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen]
+[^onze-taal-sekse-gender-geslacht]: [Genootschap Onze Taal: Taaladviezen - Sekse, geslacht en gender](https://onzetaal.nl/taaladvies/sekse-geslacht-en-gender)
+[^gov.uk-gender-sex]: [GOV.UK Design System: Patterns - Asking for gender or sex](https://design-system.service.gov.uk/patterns/gender-or-sex/)
