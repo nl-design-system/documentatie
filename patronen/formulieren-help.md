@@ -72,7 +72,11 @@ Bij het verleggen van de focus of het verlaten van de muiscursor van het icoon w
 
 Feedback tekst kan na validatie aangeven wanneer een veld onjuist is ingevuld hoe deze fout te corrigeren is.
 
-De beste positie voor feedback tekst is onder het invoerelement dat de feedback genereert. Deze moet zowel visueel als voor voorleessoftware een directe relatie hebben.
+De beste positie voor feedback tekst is onder het invoerelement dat de feedback genereert. De relatie tussen foutmelding en het invoerelement dat de feedback genereert moet zowel visueel als voor voorleessoftware een directe relatie hebben.
+
+![Voorbeeld van een datum invoer van GOV.UK met een foutmelding](https://user-images.githubusercontent.com/248921/142428309-66444044-b06a-42e7-83f2-e180901da000.png)
+
+Voorbeeld van GOV.UK waarbij de foutmelding een duidelijke relatie heeft met de invoer die de fout genereerd. [^gov.uk-error-message-date]
 
 Raadpleeg voor uitgebreide informatie over feedback tekst het feedback text component.
 
@@ -92,3 +96,4 @@ Dit kan door het aanbieden van bijvoorbeeld een e-mailadres, telefoonnummer, cha
 [^helper-text-position]: [W3C Design System: Forms - Dealing with text](https://design-system.w3.org/styles/forms.html#dealing-with-text)
 [^no-style-helper-text]: [No Style Design System: Examples - Registration form](https://nostyle.herokuapp.com/examples)
 [^spectrum-tooltips]: [Adobe Spectrum: Components - Tooltip](https://spectrum.adobe.com/page/tooltip/#Dont-use-tooltips-to-communicate-crucial-information)
+[^gov.uk-error-message-date]: [GOV.UK Design System: Components - Error message](https://design-system.service.gov.uk/components/error-message/)
