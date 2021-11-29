@@ -11,3 +11,8 @@ The address of our Figma team is [https://www.figma.com/@nldesignsystem](https:/
 ## A shared design language
 
 In Figma, we aim to bridge the gap between designers and developers. We opt to use for instance the same naming conventions as we do in our front-end codebase. This facilitates communication between designers and developers and helps streamline designer to developer handoff. 
+
+## Table of contents
+
+- [Naming in Figma](figma-naming.md)
+- 
