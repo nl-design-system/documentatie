@@ -15,4 +15,12 @@ In Figma, we aim to bridge the gap between designers and developers. We opt to u
 ## Table of contents
 
 - [Naming in Figma](figma-naming.md)
-- 
+- [File structure in Figma](figma-file-structure.md)
+- [Design tokens in Figma](figma-design-tokens.md)
+- [Creating components in Figma](figma-components.md)
+- [Documentation links] (figma-documentation-links.md)
+- [Version history](figma-version-history.md)
+- [Auto layout in Figma](figma-autolayout.md)
+- [Zero-frames in Figma](figma-zero-frames.md)
+- [Slots in Figma](figma-slots.md)
+- [Responsive behaviour](figma-responsive-behaviour.md)
