@@ -8,7 +8,7 @@ With proper sections and layers, you can zoom into a section or layer by selecti
 
 ## Grouping
 
-Grouping in Figma is done by either creating a group or frame. Frames offer the most flexibility out of these two.
+Grouping in Figma is done by either creating a group or frame. Out of these two frames offer the most flexibility.
 
 [Components can be considered another form of grouping](figma-components.md).
 

@@ -31,6 +31,8 @@ In below example searching on either select, dropdown, or menu all return the li
 
 ![Synonyms for Select component](https://user-images.githubusercontent.com/248921/140958774-31867f4e-87c2-45ae-86bc-288f965b99c7.png)
 
+Descriptions can be set on individual component variants as well.
+
 ### Avoid local components from being published to a library
 
 Prefixing a component with an underscore (`_`) prevents it from being published to a shared library. This is especially useful to avoid atomic elements, in use by  components but with no use as a reusable standalone element, from being added to a shared library.

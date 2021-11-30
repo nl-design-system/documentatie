@@ -17,3 +17,7 @@ Names of states should exactly match between component variants. This means also
 ## Locking components
 
 After creating a component it is good practice to lock it. This has no influence on the published library and users will still be able to use and edit a component’s instance from the published library.
+
+## Publishing components
+
+When publishing components via Libraries → Publish try publishing in small batches with a detailed description of what has changed and whether there are any breaking changes.
