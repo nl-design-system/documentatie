@@ -1,5 +1,11 @@
 # Creating components in Figma
 
+Figma components are reusable objects. Components can spawn multiple ‘instances’ (children) with similar properties or contents. Editing properties or contents in the parent component affects all its instances. Use components when you want to create consistent reusable objects.
+
+Components can be nested in other components. It is good practice to begin with the smallest reusable object and create bigger components from there.
+
+Since components behave as regular Figma frames, [auto layout can be applied to them](figma-autolayout.md).
+
 ## Variants
 
 In order to create variants of components the best approach is to first create a component that contains all possible options and functionalities.
