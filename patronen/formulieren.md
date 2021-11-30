@@ -78,6 +78,13 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 
 ### [Zorg voor een duidelijke afhandeling](formulieren-afhandeling.md)
 
-- [Zorg voor een duidelijke afsluiting aan het einde van het formulier.](formulieren-afhandeling.md#Zorg-voor-een-duidelijke-afsluiting)
-- [Geef aan dat het formulier verzonden is.](formulieren-afhandeling.md#Geef-aan-dat-het-formulier-verzonden-is)
-- [Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.](formulieren-afhandeling.md#Vervolgstappen)
+- [Zorg voor een duidelijke afsluiting aan het einde van het formulier.](/patronen-formulieren-afhandeling#Zorg-voor-een-duidelijke-afsluiting)
+- [Geef aan dat het formulier verzonden is.](/patronen-formulieren-afhandeling#Geef-aan-dat-het-formulier-verzonden-is)
+- [Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.](/patronen-formulieren-afhandeling#Vervolgstappen)
+
+## Referenties
+
+- [W3C Design System](https://design-system.w3.org/styles/forms.html)
+- [Form design: from zero to hero all in one blog post](https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/)
+- [GOV.UK Design System](https://design-system.service.gov.uk/)
+- [Spectrum, Adobe’s Design System](https://spectrum.adobe.com/)
