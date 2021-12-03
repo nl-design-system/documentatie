@@ -57,11 +57,11 @@ Our Figma tokens are stored in JSON format and currently synchronised to GitHub.
     2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage. 
 
 For pulling from and pushing your tokens to HitHub a couple of credentials are needed.
-    1. The __Name__ field takes a unique name you can specifiy yourself. This can be the name of your organisation or design system.
-    2. See note below to obtain the Personal Access Token.
-    3. The repository should point to `nl-design-system/figma-designtokens`.
-    4. The default branch is `main`.
-    5. The file path should point to you design token JSON in the format `__organisationname__.tokens.json`.
+1. The __Name__ field takes a unique name you can specifiy yourself. This can be the name of your organisation or design system.
+2. See note below to obtain the Personal Access Token.
+3. The repository should point to `nl-design-system/figma-designtokens`.
+4. The default branch is `main`.
+5. The file path should point to you design token JSON in the format `organisationname.tokens.json`, where `organisationname` is the unique name given to your JSON file.
 
 [Contact Rogier](mailto:rogier.barendregt@ictu.nl) to obtain the necessary access key.
 
