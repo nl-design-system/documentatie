@@ -48,6 +48,8 @@ Component tokens can refer to both brand or common tokens.
 
 ## Setup and installation
 
+**A word of caution: Once you have added or edited tokens in the plugin, be sure to push them to GitHub via the __book__ icon in the top-right corner of the plugin. If you do not push the tokens to GitHub they will get lost.**
+
 Our Figma tokens are stored in JSON format and currently synchronised to GitHub. This allows tokens to be shared by different Figma users and in multiple files and to experiment with tokens by using branching.
 
 - Start by [installing the plugin from the Figma plugin repository](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
