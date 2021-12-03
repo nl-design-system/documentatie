@@ -48,15 +48,22 @@ Component tokens can refer to both brand or common tokens.
 
 ## Setup and installation
 
+Our Figma tokens are stored in JSON format and currently synchronised to GitHub. This allows tokens to be shared by different Figma users and in multiple files and to experiment with tokens by using branching.
+
 - Start by [installing the plugin from the Figma plugin repository](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
 - Once installed, open it from the plugin menu and navigate through the help screens.
 - There are two ways to load the white-label design tokens which can be used as a basis for your own tokens.
     1. If you want to play around and get comfortable start by [copying the white-label design tokens](https://github.com/nl-design-system/figma-designtokens/blob/main/whitelabel.tokens.json) and pasting them into the text field in the **JSON** panel (overwriting the default curly brackets). If you now navigate back to the **Tokens** panel you should see the tokens grouped in categories.
-    2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage. [Contact Rogier](mailto:rogier.barendregt@ictu.nl) for the necessary credentials.
+    2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage. 
 
-Our Figma tokens are stored in JSON format and currently synchronised to GitHub. This allows tokens to be shared by different Figma users and in multiple files.
+For pulling from and pushing your tokens to HitHub a couple of credentials are needed.
+    1. The __Name__ field takes a unique name you can specifiy yourself. This can be the name of your organisation or design system.
+    2. See note below to obtain the Personal Access Token.
+    3. The repository should point to `nl-design-system/figma-designtokens`.
+    4. The default branch is `main`.
+    5. The file path should point to you design token JSON in the format `__organisationname__.tokens.json`.
 
-In order to synchronise the tokens a text-key is needed which can be optained by [contacting Rogier](mailto:rogier.barendregt@ictu.nl)
+[Contact Rogier](mailto:rogier.barendregt@ictu.nl) to obtain the necessary access key.
 
 ## Editing of tokens
 
