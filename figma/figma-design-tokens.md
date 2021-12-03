@@ -66,7 +66,7 @@ For pulling from and pushing your tokens to HitHub a couple of credentials are n
 5. The _File Path_ should point to you design token JSON in the format `organisationname.tokens.json`, where `organisationname` is the unique name given to your JSON file.
 6. _baseUrl_ can be left empty.
 
-[Contact Rogier](mailto:rogier.barendregt@ictu.nl) to obtain the necessary access key.
+[Contact Rogier to obtain the necessary access key](mailto:rogier.barendregt@ictu.nl).
 
 ## Editing of tokens
 
