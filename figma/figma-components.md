@@ -21,3 +21,5 @@ After creating a component it is good practice to lock it. This has no influence
 ## Publishing components
 
 When publishing components via Libraries → Publish try publishing in small batches with a detailed description of what has changed and whether there are any breaking changes.
+
+It is good practice to accept component changes in each file that uses an instance of the changed component. This allows to pinpoint any potential bugs right away. Updating components in bulk makes it harder to pinpoint any potential bugs and tracing it back to a specific publication.
