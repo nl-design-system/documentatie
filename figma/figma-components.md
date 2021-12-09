@@ -14,7 +14,7 @@ Functionalities not available in one or more variants can then easily be hidden.
 
 Names of states should exactly match between component variants. This means also capitalisation of names, `focus=on` and `Focus=on` resolve in two separate variant instances.
 
-Set a component’s default variant to the top left of the variant frame. This allow instances to select the default component variant by default.
+Set a component’s default variant to the top left of the variant frame. This allow instances to select the default component variant by default. This is also the variant that appears in the Assets panel.
 
 ## Locking components
 
