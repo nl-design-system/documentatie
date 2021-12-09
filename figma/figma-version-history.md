@@ -25,7 +25,7 @@ Some emojis that clearly describe the change are:
 - 💥  when introducing a breaking change (the component will not work in a similar way as it previously had)
 - 💄  to show a style has been changed or updated
 - 🩹  for a simple fix
-- 🧹  to signify cleanup
+- 🧹  to signify a cleanup
 - ♿️  communicates an accessibility improvement
 - 🚸  communicates usability improvement
 - 📱  work done on viewport responsiveness
