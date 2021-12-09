@@ -23,3 +23,11 @@ After creating a component it is good practice to lock it. This has no influence
 When publishing components via Libraries → Publish try publishing in small batches with a detailed description of what has changed and whether there are any breaking changes.
 
 It is good practice to accept component changes in each file that uses an instance of the changed component. This allows to pinpoint any potential bugs right away. Updating components in bulk makes it harder to pinpoint any potential bugs and tracing it back to a specific publication.
+
+## Prevent components from being published
+
+From time to time there might be a need to use components only locally, whether it is a often recuring design system specific component, or a component that is not functional on its own but only in a composited component.
+
+In these cases components can be prevented from being published by adding a leading underscore (`_`).
+
+![Example of a Figma component that will not be published due to a leading underscore in its name](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
