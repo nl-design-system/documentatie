@@ -50,7 +50,7 @@ Component tokens can refer to both brand or common tokens.
 
 **A word of caution: Once you have added or edited tokens in the plugin, be sure to push them to GitHub via the __book__ icon in the top-right corner of the plugin. If you do not push the tokens to GitHub they will get lost.**
 
-Our Figma tokens are stored in JSON format and currently synchronised to GitHub. This allows tokens to be shared by different Figma users and in multiple files and to experiment with tokens by using branching.
+Our Figma tokens are stored in JSON format and synchronised to GitHub. This allows tokens to be shared between different Figma users and in multiple files and to experiment with tokens by using branching (if your Figma plan allows for branching).
 
 - Start by [installing the plugin from the Figma plugin repository](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
 - Once installed, open it from the plugin menu and navigate through the help screens.
@@ -70,31 +70,35 @@ For pulling from and pushing your tokens to HitHub a couple of credentials are n
 
 A personal access token allows you to see who made which changes to the design tokens.
 
-To create a personal access token you need to have a GitHub account. If you don’t have a GitHub account, create one first.
+To create a personal access token you need to have a GitHub account. If you don’t have a GitHub account, create one first. [This link should take you directly to the Personal access tokens page](https://github.com/settings/tokens). If this link works for you, skip to step 4 below.
 
-To generate an access token go to your GitHub settings via your user menu available from the top right dropdown next to your avatar:
+1. To generate an access token go to your [GitHub settings](https://github.com/settings/profile) via your user menu available from the top right dropdown next to your avatar:
+
 <img width="209" alt="User menu on GitHub" src="https://user-images.githubusercontent.com/248921/145817754-9ee5aaaf-89c4-4469-8222-1131adad4843.png">
 
-Choose _settings_.
+2. Choose [_settings_](https://github.com/settings/profile).
 
-Next, scroll down and use the _Developer settings_ link underneath your Account settings:
+3. Next, scroll down and [use the _Developer settings_ link](https://github.com/settings/apps) underneath your Account settings:
+
 ![Developer settings on GitHub](https://user-images.githubusercontent.com/248921/145818135-a8c72615-bf7c-4378-9167-5e9b6719a3dd.png)
 
-From there, navigate to the _Personal access tokens_ page. You will be asked to provide your GitHub password. Now, add a descriptive name for your token set, an expiration date (after which you will have to generate a new access token to be used in Figma Tokens), and check _repo_ (this will automatically select all sub-nodes). There is no need to select anything else from the list of options. Confirm by pressing the _Generate token_ button.
+4. From there, [navigate to the _Personal access tokens_ page](https://github.com/settings/tokens). You will be asked to provide your GitHub password. 
+
+5. Now, add a descriptive name for your token set, an expiration date (after which you will have to generate a new access token to be used in Figma Tokens), and check _repo_ (this will automatically select all sub-nodes). There is no need to select anything else from the list of options. Confirm by pressing the _Generate token_ button.
 
 ![New personal access token page on GitHub](https://user-images.githubusercontent.com/248921/145818855-179d985c-9a27-4093-bba1-130f6c5ec835.png)
 
-You have now generated your own unique token which will allow any commits to GitHub be identified as yours. Please note that you will only be able to copy this access token once, revisiting this page will **not** display the access token!
+6. You have now generated your own unique token which will allow any commits to GitHub be identified as yours. Please note that you will only be able to copy this access token once, revisiting this page will **not** display the access token!
 
 ![Gerenated GitHub access token](https://user-images.githubusercontent.com/248921/145819244-ed4560e6-3c29-40f5-aaf9-d4bfbf94b726.png)
 
-Copy this token with the copy action next to the right of the access token and place it in the _Personal Access Token_ field in the Figma Tokens plugin:
+7. Copy this token with the copy action next to the right of the access token and place it in the _Personal Access Token_ field in the Figma Tokens plugin:
 
 ![Credential fields in Figma Tokens plugin](https://user-images.githubusercontent.com/248921/145819434-0a63b911-7751-4ef0-b6a7-05b088716098.png)
 
-You should now be able to commit any changes to your design tokens in the Figma Tokens plugin to GitHub.
+8. You should now be able to commit any changes to your design tokens in the Figma Tokens plugin to GitHub.
 
-[Contact Rogier if you run into issues](mailto:rogier.barendregt@ictu.nl).
+[Contact Rogier in case you run into issues](mailto:rogier.barendregt@ictu.nl).
 
 ## Editing of tokens
 
