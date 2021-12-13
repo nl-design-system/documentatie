@@ -114,7 +114,7 @@ Keep in mind that the JSON format is strict, any comma or curly bracket that is 
 
 ## Commiting token changes to GitHub
 
-If you have made changes to tokens, these changes have to be commited to GitHub. If not, the changes will be lost.
+If you have made changes to tokens, these changes have to be pushed to GitHub. If not, any changes will be lost.
 
 Once there are changes to your tokens a blue dot appears next to the Push to GitHub (book) icon in the top right corner of the plugin:
 
@@ -122,13 +122,24 @@ Once there are changes to your tokens a blue dot appears next to the Push to Git
 
 Provide a consice description of the changes to tokens in the _Commit message_ field:
 
-![image](https://user-images.githubusercontent.com/248921/145822652-ee89c192-1140-416a-b671-4b2cdba6dba7.png)
+![Details of commit message to GitHub](https://user-images.githubusercontent.com/248921/145822652-ee89c192-1140-416a-b671-4b2cdba6dba7.png)
 
 If you only use a _main_ branch (and do not use branching) leave the _Branch_ field as _main_.
 
 ### Keep changes between commit to a minimum
 
 It is good practice to keep changes to tokens to a minimum and work with a feature mindset (i.e. I am now working on feedback color, or I am now working on the type scale). This allows changes to be tracked more easily and also allows you to roll back to a specific change shoudl you have to.
+
+## Pulling token changes from GitHub
+
+If someone has made changes to tokens, the tokens have to be ‘pulled’ from GitHub in order to appear in the Tokens plugin. This is not done automatically and – contrary to the notification of your own token changes that have to be _pushed_ to GitHub – you are currently not notified of token changes that have to be _pulled_.
+
+It is therefor good practice to always pull from GitHub when you open the Figma Tokens plugin.
+
+Pulling tokens from GitHub is done with the _refresh_ icon in the top right corner of the plugin:
+
+![Pulling token from GitHub](https://user-images.githubusercontent.com/248921/145823867-d12d84b2-d34a-42aa-909b-0ea84b0dd846.png)
+
 
 ## Backup of tokens
 
