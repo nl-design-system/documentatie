@@ -70,7 +70,7 @@ For pulling from and pushing your tokens to HitHub a couple of credentials are n
 
 A personal access token allows you to see who made which changes to the design tokens.
 
-To create a personal access token you need to have a GitHub account. If you don’t have a GitHub account, create one first. [This link should take you directly to the Personal access tokens page](https://github.com/settings/tokens). If this link works for you, skip to step 4 below.
+To create a personal access token you need to have a GitHub account. If you don’t have a GitHub account, create one first. [This link should take you directly to the Personal access tokens page](https://github.com/settings/tokens). If this link works for you, skip to step 5 below.
 
 1. To generate an access token go to your [GitHub settings](https://github.com/settings/profile) via your user menu available from the top right dropdown next to your avatar:
 
