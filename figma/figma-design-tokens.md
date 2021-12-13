@@ -112,6 +112,24 @@ Keep in mind that the JSON format is strict, any comma or curly bracket that is 
 
 ![Error message when JSON is invalid from Figma Tokens](https://user-images.githubusercontent.com/248921/140959660-5c6bbff7-524a-4e13-8f1c-8cf756b1fda4.png)
 
+## Commiting token changes to GitHub
+
+If you have made changes to tokens, these changes have to be commited to GitHub. If not, the changes will be lost.
+
+Once there are changes to your tokens a blue dot appears next to the Push to GitHub (book) icon in the top right corner of the plugin:
+
+![Notification of token changes in Figma Tokens plugin to be commited to GitHub](https://user-images.githubusercontent.com/248921/145822431-4caecef3-8c1d-43ff-80f8-73d6cdc35a2c.png)
+
+Provide a consice description of the changes to tokens in the _Commit message_ field:
+
+![image](https://user-images.githubusercontent.com/248921/145822652-ee89c192-1140-416a-b671-4b2cdba6dba7.png)
+
+If you only use a _main_ branch (and do not use branching) leave the _Branch_ field as _main_.
+
+### Keep changes between commit to a minimum
+
+It is good practice to keep changes to tokens to a minimum and work with a feature mindset (i.e. I am now working on feedback color, or I am now working on the type scale). This allows changes to be tracked more easily and also allows you to roll back to a specific change shoudl you have to.
+
 ## Backup of tokens
 
 Another benefit of editing the tokens in an external editor is that it is easy to keep a backup copy which in turn can be added to your GitHub repository for extra backup safety or keeping all related files together.
