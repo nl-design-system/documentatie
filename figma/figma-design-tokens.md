@@ -74,7 +74,7 @@ To create a personal access token you need to have a GitHub account. If you donâ
 
 1. To generate an access token go to your [GitHub settings](https://github.com/settings/profile) via your user menu available from the top right dropdown next to your avatar:
 
-<img width="209" alt="User menu on GitHub" src="https://user-images.githubusercontent.com/248921/145817754-9ee5aaaf-89c4-4469-8222-1131adad4843.png">
+![User menu on GitHub](https://user-images.githubusercontent.com/248921/145817754-9ee5aaaf-89c4-4469-8222-1131adad4843.png)
 
 2. Choose [_settings_](https://github.com/settings/profile).
 
@@ -90,7 +90,7 @@ To create a personal access token you need to have a GitHub account. If you donâ
 
 6. You have now generated your own unique token which will allow any commits to GitHub be identified as yours. Please note that you will only be able to copy this access token once, revisiting this page will **not** display the access token!
 
-![Gerenated GitHub access token](https://user-images.githubusercontent.com/248921/145819244-ed4560e6-3c29-40f5-aaf9-d4bfbf94b726.png)
+![Generated GitHub access token](https://user-images.githubusercontent.com/248921/145819244-ed4560e6-3c29-40f5-aaf9-d4bfbf94b726.png)
 
 7. Copy this token with the copy action next to the right of the access token and place it in the _Personal Access Token_ field in the Figma Tokens plugin:
 
