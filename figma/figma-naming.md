@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Naming in Figma
 
 A good approach in any design file is to explicitly name objects directly after their creation. This helps adding meaning to design objects and eases handoff of a design file to another designer or a developer.

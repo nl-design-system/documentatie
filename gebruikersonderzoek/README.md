@@ -1,3 +1,7 @@
+---
+menu: Gebruikersonderzoek
+---
+
 # Gebruikersonderzoek
 
 ## index

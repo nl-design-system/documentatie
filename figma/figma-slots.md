@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Slots in Figma
 
 ‘Slotting’ is a technique that allow addition or removal of content from a Figma component and have its layout automatically expand or contract based on its content.

@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # File structure in Figma
 
 A proper file structure helps in scanning and navigating Figma files. High-level sectioning (such as component groups, components, component specifications, or examples) helps quickly navigate to these sections.

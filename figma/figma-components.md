@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Creating components in Figma
 
 Figma components are reusable objects. Components can spawn multiple ‘instances’ (children) with similar properties or contents. Editing properties or contents in the parent component affects all its instances. Use components when you want to create consistent reusable objects.

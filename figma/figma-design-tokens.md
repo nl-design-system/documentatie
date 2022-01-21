@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Design tokens in Figma
 
 By using design tokens, both designers and developers share a unified language. It allows all disciplines to reference design features, properties, components, etc. by the same name.

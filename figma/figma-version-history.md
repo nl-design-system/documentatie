@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Version history
 
 Version history naming helps with tracking changes.

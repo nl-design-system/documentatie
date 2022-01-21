@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Zero-frames in Figma
 
 ‘Zero-frames’ in conjunction with Auto layout is a technique that help with establishing for instance minimum widths or minimum height of elements, similar to how `min-width` and `min-height` is defined in CSS.

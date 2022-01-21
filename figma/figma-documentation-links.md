@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Documentation links
 
 Figma allows referencing component documentation and best practices from its Design panel. The input accepts a standard URL.

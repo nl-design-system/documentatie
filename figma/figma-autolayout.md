@@ -1,3 +1,7 @@
+---
+menu: Figma
+---
+
 # Auto layout in Figma
 
 Auto layout allows you to automatically lay out and distribute objects within a frame. These are one-directional; meaning that objects are either laid out vertically or horizontally. In order to apply auto layout in both vertical and horizontal direction, frames can be nested.
