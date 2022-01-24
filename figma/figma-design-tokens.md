@@ -279,3 +279,16 @@ The typographic tokens that should be set in order to create a combined typograp
 - Line-height
 - Letter-spacing (spacing between characters, best left set to 0 to inherit kerning and spacing as defined by the typeface designer for most text with the possible exception of headings and text set in all-capitals)
 - Paragraph-spacing (spacing between consecutive paragraphs and/or headings)
+
+## Creating styles from tokens
+
+Figma Styles can be created from tokens. Applying styles to objects automatically creates a link to the specific tokens in Figma Tokens. Only styles for typography and colors are created, other visual properties do not (yet) have dedicated style options in Figma.
+
+In order to create styles from tokens, click the Create Styles button at the bottom right of the plugin window.
+
+![Arrow displying location of Create Styles button](https://user-images.githubusercontent.com/248921/150785647-25d391f6-42a9-4ab8-9a82-eb57ba665876.png)
+
+![Partial view of styles created from tokens](https://user-images.githubusercontent.com/248921/150785738-b2a89dd6-f561-484c-a656-62c3eff3e759.png)
+Partial view of styles created from tokens.
+
+
