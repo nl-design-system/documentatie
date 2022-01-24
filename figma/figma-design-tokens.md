@@ -40,7 +40,7 @@ Common tokens are oft-recurring visual properties not specifically tied to a sin
 
 Where the first `document-color` is the text foreground color, and `utrecht-color-black` references the color that the municipality of Utrecht has defined as their text foreground brand color.
 
-Common tokens add semantic meaning to common visual styles.
+**Common tokens add semantic meaning** to common visual styles.
 
 ## Component tokens
 
