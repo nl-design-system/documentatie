@@ -291,4 +291,4 @@ In order to create styles from tokens, click the Create Styles button at the bot
 ![Partial view of styles created from tokens](https://user-images.githubusercontent.com/248921/150785738-b2a89dd6-f561-484c-a656-62c3eff3e759.png)
 Partial view of styles created from tokens.
 
-
+You can prevent tokens from being added to the Figma Styles panel by prefixing the token name with an underscore (`_`).
