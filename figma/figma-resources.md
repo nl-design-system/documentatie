@@ -23,7 +23,7 @@ menu: Figma
 
 ### Accessibility
 
-- [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark), a plugin containing a vision simulators (for various forms of color vision deficiencies and blurred vision), fore-/background WCAG contrast checker, a tool to document keyboard focus order, and a tool to document page landmarks. Next to a free version offers a [paid subscription plan](https://www.getstark.co/pricing/) for additional features/more tests that can be run.
+- [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark), a plugin containing a vision simulator (for various forms of color vision deficiencies and blurred vision), fore-/background WCAG contrast checker, a tool to document keyboard focus order, and a tool to document page landmarks. Next to a free version offers a [paid subscription plan](https://www.getstark.co/pricing/) for additional features/more tests that can be run.
 - [A11y - Color Contrast Checker](https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker), a WCAG color contrast checker with tha ability to tweak colors to create contrast levels that are AA or AAA compliant.
 - [A11y - Focus Orderer](https://www.figma.com/community/plugin/731310036968334777/A11y---Focus-Orderer), another tool to document focus order of interactive elements.
 - [Able – Friction free accessibility](https://www.figma.com/community/plugin/734693888346260052/Able-%E2%80%93-Friction-free-accessibility), allows you to check for WCAG compliant color contrast on elements other than frames.
