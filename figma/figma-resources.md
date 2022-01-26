@@ -11,6 +11,11 @@ menu: Figma
 - [Figma Twitter account](https://twitter.com/figmadesign), information on conferences, meetups, updates, showcases, and anything Figma.
 - [Figma Tokens](https://docs.tokens.studio/), extensive documentation on using the [Figma Tokens plugin](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
 
+## Community
+
+- [Friends of Figma](https://discord.com/invite/xzQhe2Vcvx), _Friends of Figma_ Discord channel.
+- [NL Design System Figma Slack](https://codefornl.slack.com/archives/C025HM8V362), NL Design System’s Figma Slack subchannel.
+
 ## Plugins
 
 ### Responsive design
