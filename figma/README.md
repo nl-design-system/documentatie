@@ -24,3 +24,4 @@ In Figma, we aim to bridge the gap between designers and developers. We opt to u
 - [Zero-frames in Figma](figma-zero-frames.md)
 - [Slots in Figma](figma-slots.md)
 - [Responsive behaviour](figma-responsive-behaviour.md)
+- [Resources](figma-resources.md)
