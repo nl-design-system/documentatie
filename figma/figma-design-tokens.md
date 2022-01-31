@@ -26,7 +26,7 @@ The three levels are:
 2. Common tokens, and
 3. Component tokens
 
-[Here is a quick intro on the concept of token levels](https://www.youtube.com/watch?v=mDPbLJSQYdo).
+[Here is a short introductory video on the concept of token levels (YouTube link)](https://www.youtube.com/watch?v=mDPbLJSQYdo).
 
 ### Brand tokens
 
