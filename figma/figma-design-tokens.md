@@ -26,13 +26,13 @@ The three levels are:
 2. Common tokens, and
 3. Component tokens
 
-## Brand tokens
+### Brand tokens
 
 Brand tokens define your brand or product’s visual language ‘options’; its colors, typography, sizing, etc. 
 
 You are free to use your own language when naming these tokens. You might already have internal conversations about your own unique `kleur-actieblauw` or `merkkleur-rood`. We advise you to use this language for your brand tokens. After all, tokens are meant to unify language between designers and developers. If you already have an established language in your organisation it is best to continue using this over relearning a new language.
 
-## Common tokens
+### Common tokens
 
 One level below brand tokens are the common tokens. In these tokens, visual properties are assigned meaning. These tokens always refer to the brand tokens.
 
@@ -42,13 +42,19 @@ Where the first `document-color` is the text foreground color, and `utrecht-colo
 
 **Common tokens add semantic meaning** to common visual styles.
 
-## Component tokens
+### Component tokens
 
 Component tokens are tokens used for specific components.
 
 An example of a component token key: value pair is `button-primary-action-background-color: denhaag-color-primary-action`.
 
 Component tokens can refer to both brand or common tokens.
+
+## Naming of tokens
+
+References to tokens (aliases) can be written in two ways, by enclosing the token in curly brackets (`{}`), or by using a trailing dollar sign (`$`).
+
+The curly bracket notation is prefered since both the [W3C Design Tokens Community Group](https://design-tokens.github.io/community-group/format/#aliases-references) and [Style Dictionary](https://amzn.github.io/style-dictionary/#/tokens?id=referencing-aliasing) use this notation.
 
 ## Setup and installation
 
