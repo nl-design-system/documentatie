@@ -16,6 +16,8 @@ In order to create variants of components a good approach is to first create a â
 
 https://user-images.githubusercontent.com/248921/151860040-fac715ab-c69f-4dc4-a6a6-68db277e26f4.mov
 
+Note the period (`.`) in front of the base component name. This tells Figma not to include the base component in the shared library.
+
 Functionalities not available in one or more variants can then easily be hidden.
 
 Names of states should exactly match between component variants. This means also capitalisation of names, `focus=on` and `Focus=on` resolve in two separate variant instances.
