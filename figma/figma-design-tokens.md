@@ -26,6 +26,8 @@ The three levels are:
 2. Common tokens, and
 3. Component tokens
 
+[Here is a quick intro on the concept of token levels](https://www.youtube.com/watch?v=mDPbLJSQYdo).
+
 ### Brand tokens
 
 Brand tokens define your brand or product’s visual language ‘options’; its colors, typography, sizing, etc. 
