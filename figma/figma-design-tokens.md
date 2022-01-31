@@ -300,3 +300,10 @@ In order to create styles from tokens, click the Create Styles button at the bot
 Partial view of styles created from tokens.
 
 You can prevent tokens from being added to the Figma Styles panel by prefixing the token name with an underscore (`_`).
+
+## Resources
+
+- [Figma Tokens documentation](https://docs.tokens.studio/)
+- [Design Tokens Glossary](https://www.designtokens.org/glossary/)
+- [What are Design Tokens in Figma? (YouTube)](https://www.youtube.com/watch?v=mDPbLJSQYdo)
+- [Design Tokens in Figma: How to get started, today. (YouTube)](https://www.youtube.com/watch?v=Ka1I5TphDb0)
