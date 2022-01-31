@@ -14,7 +14,7 @@ Since components behave as regular Figma frames, [auto layout can be applied to 
 
 In order to create variants of components a good approach is to first create a ‘base’ component containing all possible options and functionalities. This allows changes to all variants from a single base component.
 
-https://user-images.githubusercontent.com/248921/151841747-975d97d9-a81e-4a91-bb1a-4b87ab301243.mov
+https://user-images.githubusercontent.com/248921/151860040-fac715ab-c69f-4dc4-a6a6-68db277e26f4.mov
 
 Functionalities not available in one or more variants can then easily be hidden.
 
