@@ -106,7 +106,7 @@ Zie [het Genderdoeboek (pdf)](https://www.transgendernetwerk.nl/wp-content/uploa
 
 #### Alternatieve tekst voor afbeeldingen
 
-Alternatieve of ‘alt-’tekst wordt gebruikt om te beschrijven wat op een informatieve afbeelding weergegeven wordt. Dit wordt alleen voor afbeeldingen gebruikt die daadwerkelijk informatie toevoegen en niet voor decoratieve afbeeldingen. Deze tekst wordt tevens weergegeven in gevallen dat afbeeldingen niet laden en geïndexeerd door zoekmachines.
+Afbeeldingen kun je toegankelijk maken door ze te voorzien van een tekstueel alternatief. Alternatieve of ‘alt-’tekst wordt gebruikt om te beschrijven wat op een informatieve afbeelding weergegeven wordt. Dit wordt alleen voor afbeeldingen gebruikt die daadwerkelijk informatie toevoegen en niet voor decoratieve afbeeldingen. Deze tekst wordt tevens weergegeven in gevallen dat afbeeldingen niet laden en geïndexeerd door zoekmachines.
 
 Naast een beschrijving over wat er op de afbeelding staat is het belangrijk in de alt-tekst je bedoeling met de afbeelding over te brengen, afhankelijk van de context.
 
