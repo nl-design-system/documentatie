@@ -16,6 +16,10 @@ menu: Figma
 - [Friends of Figma](https://discord.com/invite/xzQhe2Vcvx), _Friends of Figma_ Discord channel.
 - [NL Design System Figma Slack](https://codefornl.slack.com/archives/C025HM8V362), NL Design System’s Figma Slack subchannel.
 
+## Productivity
+
+- [Figma Shortcuts (for MacOS and Windows)](https://shortcuts.design/tools/toolspage-figma/)
+
 ## Plugins
 
 ### Responsive design
