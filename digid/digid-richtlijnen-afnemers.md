@@ -49,8 +49,6 @@ Vereist: moet te zien zijn, of via background-color, of via border. Moet alle co
 
 Vrij te bewerken: background-color (zolang WCAG kleur-contrast nog behaald wordt), border-style, border-width, border-color, border-radius, shadow, width.
 
-%Voorbeeld%
-
 ##### 2. Title
 
 Functie: de flow introduceren en door de bewoording duidelijk maken wat de gebruiker gaat doen.
@@ -59,7 +57,7 @@ Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy moet z
 
 Vrij te bewerken: font-color, font-size (mag niet kleiner zijn dan paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-%Voorbeeld: Vraag parkeervergunning aan als burger%
+![Voorbeeld van titel: Vraag parkeervergunning aan als burger](https://user-images.githubusercontent.com/248921/152785652-acc4321e-8806-43cf-a656-0ea33c43a2e0.svg)
 
 ##### 3. Subtitle (optioneel)
 
@@ -69,7 +67,7 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-color, font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-%Voorbeeld: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen.%
+![Voorbeeld van subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/152785854-03a2a3a9-e248-4766-8d67-8177e4ff5df8.svg)
 
 ##### 4. logo authenticatiedienst
 
@@ -78,8 +76,8 @@ Functie: in één oogopslag laten zien dat je moet authenticeren met <authentica
 Vereist: logo design mag niet worden aangepast tenzij authenticatiedienst het logo hierziet, positie is rechtsboven het blok, size is 56px bij 56px of 3,5 rem bij rem=16.
 
 Vrij te bewerken: keuze logo
-
-%Logo DigiD%
+  
+![DigiD logo](https://user-images.githubusercontent.com/248921/152785932-3b37f443-7bc5-415f-9eab-83f915e78002.svg)
 
 ##### 5. Button
 
@@ -89,7 +87,7 @@ Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy moet z
 
 Vrij te bewerken: aantal buttons, background-color, font-color, font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy, icon-color, icon, width, shadow, border-style, border-width, border-color, border-radius, interactive states.
 
-%Voorbeeld knop%
+![Voorbeeld van een knop](https://user-images.githubusercontent.com/248921/152786160-7c365a82-c4ea-4676-833c-dd785dc41874.svg)
 
 ##### 6. Assistive text
 
@@ -99,27 +97,58 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-%Voorbeeld helptekst%
+![Voorbeeld van Voorbeeld helptekst](https://user-images.githubusercontent.com/248921/152786327-9729cbc1-7990-4a9b-bd35-2966d6589dd4.svg)
 
 #### Taak met DigiD als middel
 
-%image%
+![Voorbeeld van DigiD op desktop](https://user-images.githubusercontent.com/248921/152786793-e6049fb9-05fd-42b1-95bb-71da02d16893.svg)
+
+Voorbeeld van DigiD (desktop scherm).
+![Voorbeeld van DigiD op mobiel](https://user-images.githubusercontent.com/248921/152786775-5ac49038-8a3a-4418-8248-ba96eb19d462.svg)
+
+Voorbeeld van DigiD (mobiel scherm).
 
 #### Taak met eHerkenning als middel
 
-%image%
+![Voorbeeld van eHerkenning op desktop](https://user-images.githubusercontent.com/248921/152787019-fef1d884-2cdc-4b38-839c-b6c0de00eafd.svg)
+  
+Voorbeeld van eHerkenning (desktop scherm).
+
+![Voorbeeld van eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/152787037-8ef8f3cf-0fca-421d-bb1d-5897b7ac5a9e.svg)
+  
+Voorbeeld van eHerkenning (mobiel scherm).
 
 #### Taak met DigiD en eIDAS als middels
 
+![Voorbeeld van DigiD en eIDAS op desktop](https://user-images.githubusercontent.com/248921/152787201-c381d1d5-39ef-4c16-b40e-c7001253ef5b.svg)
+
+Voorbeeld van DigiD en eIDAS (desktop scherm).
+
+![Voorbeeld van DigiD en eIDAS op mobiel](https://user-images.githubusercontent.com/248921/152787214-060f88b9-951b-48b4-a2ed-efb089de07ed.svg)
+  
+Voorbeeld van DigiD en eIDAS (mobiel scherm).
+
 #### Taak met unspecified middel
 
-%image%
+![Voorbeeld van unspecified middel op desktop](https://user-images.githubusercontent.com/248921/152787451-cda1d99e-acd7-40ff-ab5c-d0c2c7cc5512.svg)
+
+Voorbeeld van unspecified middel (desktop scherm).
+
+![Voorbeeld van unspecified middel op mobiel](https://user-images.githubusercontent.com/248921/152787476-653d8cfa-740b-4353-afef-35725c3c4849.svg)
+
+Voorbeeld van unspecified middel (mobiel scherm).
 
 ### Voorbeelden in context
 
 #### Parkeervergunning aanvragen
 
-%image%
+![Voorbeeld aanvragen parkeervergunning voor burgers](https://user-images.githubusercontent.com/248921/152787758-f887191d-35b3-48ef-a8c4-a842377c4688.svg)
+
+Voorbeeld van het aanvragen van een parkeervergunning voor burgers.
+  
+![Voorbeeld aanvragen parkeervergunning voor ondernemers](https://user-images.githubusercontent.com/248921/152787927-e38994e3-e0a7-4c01-9f5f-03166bc42122.svg)
+  
+Voorbeeld van het aanvragen van een parkeervergunning voor ondernemers.
 
 #### Patiëntgegevens wijzigen
 
@@ -127,7 +156,9 @@ Bent u verhuisd, of hebt u een andere verzekering, huisarts of apotheek? Dan kun
 
 Na wijzigen van de gegevens, sturen wij een bevestiging naar het e-mailadres dat u hebt ingevuld. In deze bevestiging staan de gegevens die u hebt doorgegeven.
 
-%image%
+![Voorbeeld wijzigen patiëntgegevens](https://user-images.githubusercontent.com/248921/152788046-91347c4e-2b8b-4ef5-878b-42716cda2f5c.svg)
+
+Voorbeeld van het wijzigen van patiëntgegevens.
 
 ## Authenticeren voor Mijn omgeving
 
@@ -173,7 +204,7 @@ Vereist: logo design mag niet worden aangepast tenzij authenticatiedienst het lo
 
 Vrij te bewerken: keuze logo
 
-%Logo DigiD%
+![DigiD logo](https://user-images.githubusercontent.com/248921/152788616-d4e0982d-72bb-4c96-af02-d0fee0bdb97f.svg)
 
 ##### 3. Title
 
@@ -182,8 +213,8 @@ Functie: duidelijk maken dat het hier inloggen met <authenticatiedienst> betreft
 Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy zoals bovenaan deze sheet benoemd.
 
 Vrij te bewerken: font-color, font-size (mag niet kleiner zijn dan paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten).
-
-%Voorbeeld: Inloggen met eHerkenning%
+  
+![Voorbeeld titel: Inloggen met eHerkenning](https://user-images.githubusercontent.com/248921/152788725-c405688e-21e8-4944-b122-6b636ff0873a.svg)
 
 ##### 4. Subtitle (optioneel)
 
@@ -193,7 +224,7 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-color, font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-%Voorbeeld: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen.%
+![Voorbeeld subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/152788860-03e9b701-e484-4a99-9d6d-5f2f0777d2e8.svg)
 
 ##### 5. Button
 
@@ -203,7 +234,7 @@ Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy zoals 
 
 Vrij te bewerken: background-color, font-color, font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy, icon-color, icon, width, shadow, border-style, border-width, border-color, border-radius, interactive states.
 
-%Voorbeeld knop%
+![Voorbeeld knop](https://user-images.githubusercontent.com/248921/152788956-d6c6f82a-b441-4f8e-84d5-a7c9120706e3.svg)
 
 ##### 6. Assistive text
 
@@ -213,7 +244,47 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-%Voorbeeld%
+![Voorbeeld helptekst met link: Geen eHerkenning? Vraag eHerkenning aan.](https://user-images.githubusercontent.com/248921/152789035-317a50a5-4e50-4bfa-9987-060f797ec3d3.svg)
+
+### Componenten op dektop en mobiel
+
+![DigiD op dektop](https://user-images.githubusercontent.com/248921/152789452-5d2a3f93-bd0f-4548-822f-a0a476ad3305.svg)
+  
+DigiD op dektop.
+
+![DigiD op mobiel](https://user-images.githubusercontent.com/248921/152789488-3735a13a-7f20-4ab7-b910-e26b0397a4ff.svg)
+
+DigiD op mobiel.
+
+![eHerkenning op desktop](https://user-images.githubusercontent.com/248921/152789535-307ee13c-38ef-41fb-89d7-bf8b66510f37.svg)
+
+eHerkenning op desktop.
+
+![eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/152789584-9593fa2e-3042-4f5f-b58b-316c8a6932ed.svg)
+
+eHerkenning op mobiel.
+
+![eIDAS op desktop](https://user-images.githubusercontent.com/248921/152789767-9c0e492d-2c73-4c02-8d45-5c096ed4d25f.svg)
+
+eIDAS op desktop.
+
+![eIDAS op mobiel](https://user-images.githubusercontent.com/248921/152789795-5e33d78e-bb78-4fac-8627-4c1e975394b4.svg)
+
+eIDAS op mobiel.
+  
+### Voorbeelden in context
+
+#### Inloggen bij <Mijn omgeving>
+
+In de persoonlijke online omgeving <Mijn omgeving> kunt u makkelijk, snel en veilig zaken regelen bij de gemeente. Bewoners kunnen bijvoorbeeld een verhuizing doorgeven of extra parkeertegoed kopen via DigiD. Bedrijven kunnen eenvoudig online zaken regelen via eHerkenning.
+
+![Voorbeeld inloggen <Mijn omgeving> met DigiD](https://user-images.githubusercontent.com/248921/152790269-696f5358-22bc-4e80-9c1c-147b0bff7b84.svg)
+
+![Voorbeeld inloggen <Mijn omgeving> met eHerkenning](https://user-images.githubusercontent.com/248921/152790351-591b54d6-ccbc-427b-b2aa-430a9f40001d.svg)
+
+![Voorbeeld inloggen <Mijn omgeving> met eIDAS](https://user-images.githubusercontent.com/248921/152790381-5830f5ef-1d44-46e5-b8c4-2005102dbd60.svg)
+
+![Voorbeeld inloggen <Mijn omgeving> met meerdere middelen](https://user-images.githubusercontent.com/248921/152790587-be77b1cf-b7d0-4e10-b878-2e5a6cedbc1e.svg)
 
 ## Toegankelijkheid
 
