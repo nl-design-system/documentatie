@@ -71,7 +71,7 @@ Vrij te bewerken: font-color, font-size (is paragraph font-size), font-family (R
 
 ##### 4. logo authenticatiedienst
 
-Functie: in één oogopslag laten zien dat je moet authenticeren met <authenticatiedienst> als deze taak wilt uitvoeren.
+Functie: in één oogopslag laten zien dat je moet authenticeren met authenticatiedienst als deze taak wilt uitvoeren.
 
 Vereist: logo design mag niet worden aangepast tenzij authenticatiedienst het logo hierziet, positie is rechtsboven het blok, size is 56px bij 56px of 3,5 rem bij rem=16.
 
@@ -153,7 +153,7 @@ Voorbeeld van het aanvragen van een parkeervergunning voor ondernemers.
 
 #### Patiëntgegevens wijzigen
 
-Bent u verhuisd, of hebt u een andere verzekering, huisarts of apotheek? Dan kunt u de nieuwe gegevens doorgeven aan <zorginstelling> in uw <mijn omgeving>. 
+Bent u verhuisd, of hebt u een andere verzekering, huisarts of apotheek? Dan kunt u de nieuwe gegevens doorgeven aan zorginstelling in uw Mijn omgeving. 
 
 Na wijzigen van de gegevens, sturen wij een bevestiging naar het e-mailadres dat u hebt ingevuld. In deze bevestiging staan de gegevens die u hebt doorgegeven.
 
@@ -209,7 +209,7 @@ Vrij te bewerken: keuze logo
 
 ##### 3. Title
 
-Functie: duidelijk maken dat het hier inloggen met <authenticatiedienst> betreft.
+Functie: duidelijk maken dat het hier inloggen met authenticatiedienst betreft.
 
 Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy zoals bovenaan deze sheet benoemd.
 
@@ -275,17 +275,17 @@ eIDAS op mobiel.
   
 ### Voorbeelden in context
 
-#### Inloggen bij <Mijn omgeving>
+#### Inloggen bij Mijn omgeving
 
-In de persoonlijke online omgeving <Mijn omgeving> kunt u makkelijk, snel en veilig zaken regelen bij de gemeente. Bewoners kunnen bijvoorbeeld een verhuizing doorgeven of extra parkeertegoed kopen via DigiD. Bedrijven kunnen eenvoudig online zaken regelen via eHerkenning.
+In de persoonlijke online omgeving Mijn omgeving kunt u makkelijk, snel en veilig zaken regelen bij de gemeente. Bewoners kunnen bijvoorbeeld een verhuizing doorgeven of extra parkeertegoed kopen via DigiD. Bedrijven kunnen eenvoudig online zaken regelen via eHerkenning.
 
-![Voorbeeld inloggen <Mijn omgeving> met DigiD](https://user-images.githubusercontent.com/248921/152790269-696f5358-22bc-4e80-9c1c-147b0bff7b84.svg)
+![Voorbeeld inloggen Mijn omgeving met DigiD](https://user-images.githubusercontent.com/248921/152790269-696f5358-22bc-4e80-9c1c-147b0bff7b84.svg)
 
-![Voorbeeld inloggen <Mijn omgeving> met eHerkenning](https://user-images.githubusercontent.com/248921/152790351-591b54d6-ccbc-427b-b2aa-430a9f40001d.svg)
+![Voorbeeld inloggen Mijn omgeving met eHerkenning](https://user-images.githubusercontent.com/248921/152790351-591b54d6-ccbc-427b-b2aa-430a9f40001d.svg)
 
-![Voorbeeld inloggen <Mijn omgeving> met eIDAS](https://user-images.githubusercontent.com/248921/152790381-5830f5ef-1d44-46e5-b8c4-2005102dbd60.svg)
+![Voorbeeld inloggen Mijn omgeving met eIDAS](https://user-images.githubusercontent.com/248921/152790381-5830f5ef-1d44-46e5-b8c4-2005102dbd60.svg)
 
-![Voorbeeld inloggen <Mijn omgeving> met meerdere middelen](https://user-images.githubusercontent.com/248921/152790587-be77b1cf-b7d0-4e10-b878-2e5a6cedbc1e.svg)
+![Voorbeeld inloggen Mijn omgeving met meerdere middelen](https://user-images.githubusercontent.com/248921/152790587-be77b1cf-b7d0-4e10-b878-2e5a6cedbc1e.svg)
 
 ## Toegankelijkheid
 
