@@ -300,3 +300,5 @@ Let op het volgende:
 ## Referenties
 
 - [Logius](https://www.logius.nl/diensten/digid/toolkit-digid-en-digid-machtigen)
+
+Documentatie geschreven door Rowan Verbraak. Neem voor vragen en feedback contact op met rowan.verbraak@logius.nl
