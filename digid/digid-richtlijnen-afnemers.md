@@ -104,6 +104,7 @@ Vrij te bewerken: font-size (is paragraph font-size), font-family (Rijksoverheid
 ![Voorbeeld van DigiD op desktop](https://user-images.githubusercontent.com/248921/152786793-e6049fb9-05fd-42b1-95bb-71da02d16893.svg)
 
 Voorbeeld van DigiD (desktop scherm).
+
 ![Voorbeeld van DigiD op mobiel](https://user-images.githubusercontent.com/248921/152786775-5ac49038-8a3a-4418-8248-ba96eb19d462.svg)
 
 Voorbeeld van DigiD (mobiel scherm).
