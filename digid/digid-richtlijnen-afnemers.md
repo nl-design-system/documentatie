@@ -12,7 +12,7 @@ menu: DigiD
 
 ### Situatie met routeringsdienst
 
-![Flow van klantreis situatie met routeringsdienst](https://user-images.githubusercontent.com/248921/152784862-d5abba0d-cd2b-44e2-8ccb-36c71197d420.svg)
+![Flow van klantreis situatie met routeringsdienst](https://user-images.githubusercontent.com/248921/155280827-0a281144-a36e-4ad2-a6fa-66d176b78909.svg)
 
 ## Authenticeren voor taak
 
@@ -57,7 +57,7 @@ Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy moet z
 
 Vrij te bewerken: font-color, font-size (mag niet kleiner zijn dan paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-![Voorbeeld van titel: Vraag parkeervergunning aan als burger](https://user-images.githubusercontent.com/248921/152785652-acc4321e-8806-43cf-a656-0ea33c43a2e0.svg)
+![Voorbeeld van titel: Vraag parkeervergunning aan als burger](https://user-images.githubusercontent.com/248921/155281792-b49e31ca-29eb-4fa7-9d68-1cbf20e6ebe2.svg)
 
 ##### 3. Subtitle (optioneel)
 
@@ -67,7 +67,7 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-color, font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-![Voorbeeld van subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/152785854-03a2a3a9-e248-4766-8d67-8177e4ff5df8.svg)
+![Voorbeeld van subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/155281824-075edc88-ee07-460e-909b-f4999f879685.svg)
 
 ##### 4. logo authenticatiedienst
 
@@ -97,7 +97,7 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-![Voorbeeld van Voorbeeld helptekst](https://user-images.githubusercontent.com/248921/152786327-9729cbc1-7990-4a9b-bd35-2966d6589dd4.svg)
+![Voorbeeld van Voorbeeld helptekst](https://user-images.githubusercontent.com/248921/155282146-6d9e0006-ceca-489f-a210-6a3b561d6a0f.svg)
 
 #### Taak met DigiD als middel
 
