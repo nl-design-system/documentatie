@@ -286,7 +286,7 @@ In de persoonlijke online omgeving Mijn omgeving kunt u makkelijk, snel en veili
 
 ![Voorbeeld inloggen Mijn omgeving met eIDAS](https://user-images.githubusercontent.com/248921/155348551-e0a9d5d7-00de-4d37-8cbc-0c277f85a941.svg)
 
-![Voorbeeld inloggen Mijn omgeving met meerdere middelen](https://user-images.githubusercontent.com/248921/155348754-1e80a056-3a12-42ca-93dd-f00257b4489b.svg)
+![Voorbeeld inloggen Mijn omgeving met meerdere middelen](https://user-images.githubusercontent.com/248921/155349109-044b0ef8-ae5f-4c81-b0fa-60498a649af5.svg)
 
 ## Toegankelijkheid
 
