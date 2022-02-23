@@ -101,41 +101,41 @@ Vrij te bewerken: font-size (is paragraph font-size), font-family (Rijksoverheid
 
 #### Taak met DigiD als middel
 
-![Voorbeeld van DigiD op desktop](https://user-images.githubusercontent.com/248921/152786793-e6049fb9-05fd-42b1-95bb-71da02d16893.svg)
+![Voorbeeld van DigiD op desktop](https://user-images.githubusercontent.com/248921/155286644-5b43b25c-b421-4b53-9975-8b5d767a101e.svg)
 
 Voorbeeld van DigiD (desktop scherm).
 
-![Voorbeeld van DigiD op mobiel](https://user-images.githubusercontent.com/248921/152786775-5ac49038-8a3a-4418-8248-ba96eb19d462.svg)
+![Voorbeeld van DigiD op mobiel](https://user-images.githubusercontent.com/248921/155286673-82e3e570-5b33-4beb-940b-87a6545620bd.svg)
 
 Voorbeeld van DigiD (mobiel scherm).
 
 #### Taak met eHerkenning als middel
 
-![Voorbeeld van eHerkenning op desktop](https://user-images.githubusercontent.com/248921/152787019-fef1d884-2cdc-4b38-839c-b6c0de00eafd.svg)
+![Voorbeeld van eHerkenning op desktop](https://user-images.githubusercontent.com/248921/155286720-d0d802b1-8f18-4e65-a957-be487b2c9afd.svg)
   
 Voorbeeld van eHerkenning (desktop scherm).
 
-![Voorbeeld van eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/152787037-8ef8f3cf-0fca-421d-bb1d-5897b7ac5a9e.svg)
+![Voorbeeld van eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/155286788-4da4bac3-0938-4943-9210-ad4c1436c8c4.svg)
   
 Voorbeeld van eHerkenning (mobiel scherm).
 
 #### Taak met DigiD en eIDAS als middels
 
-![Voorbeeld van DigiD en eIDAS op desktop](https://user-images.githubusercontent.com/248921/152787201-c381d1d5-39ef-4c16-b40e-c7001253ef5b.svg)
+![Voorbeeld van DigiD en eIDAS op desktop](https://user-images.githubusercontent.com/248921/155286833-6b1c1276-98e0-4e8c-b345-65a6ca09199d.svg)
 
 Voorbeeld van DigiD en eIDAS (desktop scherm).
 
-![Voorbeeld van DigiD en eIDAS op mobiel](https://user-images.githubusercontent.com/248921/152787214-060f88b9-951b-48b4-a2ed-efb089de07ed.svg)
+![Voorbeeld van DigiD en eIDAS op mobiel](https://user-images.githubusercontent.com/248921/155286893-dbd62a12-af2e-4ab6-afa2-34a78473158b.svg)
   
 Voorbeeld van DigiD en eIDAS (mobiel scherm).
 
 #### Taak met unspecified middel
 
-![Voorbeeld van unspecified middel op desktop](https://user-images.githubusercontent.com/248921/152787451-cda1d99e-acd7-40ff-ab5c-d0c2c7cc5512.svg)
+![Voorbeeld van unspecified middel op desktop](https://user-images.githubusercontent.com/248921/155286932-19dd9612-d6b9-4ae1-8693-cdbbfd7804cb.svg)
 
 Voorbeeld van unspecified middel (desktop scherm).
 
-![Voorbeeld van unspecified middel op mobiel](https://user-images.githubusercontent.com/248921/152787476-653d8cfa-740b-4353-afef-35725c3c4849.svg)
+![Voorbeeld van unspecified middel op mobiel](https://user-images.githubusercontent.com/248921/155286977-d1e9365c-4357-45b8-a507-28fb4d891abe.svg)
 
 Voorbeeld van unspecified middel (mobiel scherm).
 
