@@ -157,7 +157,8 @@ Bent u verhuisd, of hebt u een andere verzekering, huisarts of apotheek? Dan kun
 
 Na wijzigen van de gegevens, sturen wij een bevestiging naar het e-mailadres dat u hebt ingevuld. In deze bevestiging staan de gegevens die u hebt doorgegeven.
 
-![Voorbeeld wijzigen patiëntgegevens](https://user-images.githubusercontent.com/248921/152788046-91347c4e-2b8b-4ef5-878b-42716cda2f5c.svg)
+![Voorbeeld wijzigen patiëntgegevens](https://user-images.githubusercontent.com/248921/155287791-b0545e21-fdc8-4490-ada6-feaa9b632e61.svg)
+
 
 Voorbeeld van het wijzigen van patiëntgegevens.
 
