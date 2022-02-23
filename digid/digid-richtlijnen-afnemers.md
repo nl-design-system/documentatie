@@ -8,7 +8,7 @@ menu: DigiD
 
 ### Situatie zonder routeringsdienst
 
-![Flow van klantreis situatie zonder routeringsdienst](https://user-images.githubusercontent.com/248921/152784845-81d7f644-9363-4494-93dc-d3155c7e9eda.svg)
+![Flow van klantreis situatie zonder routeringsdienst](https://user-images.githubusercontent.com/248921/155279536-0bb2c7b5-ca2e-4744-8a76-4f90cbed8243.svg)
 
 ### Situatie met routeringsdienst
 
