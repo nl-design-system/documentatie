@@ -216,7 +216,7 @@ Vereist: font-weight: bold, WCAG kleur-contrast moet behaald worden, copy zoals 
 
 Vrij te bewerken: font-color, font-size (mag niet kleiner zijn dan paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten).
   
-![Voorbeeld titel: Inloggen met eHerkenning](https://user-images.githubusercontent.com/248921/152788725-c405688e-21e8-4944-b122-6b636ff0873a.svg)
+![Voorbeeld titel: Inloggen met eHerkenning](https://user-images.githubusercontent.com/248921/155345393-16340dde-c04f-4d4a-980f-cba2bb477798.svg)
 
 ##### 4. Subtitle (optioneel)
 
@@ -226,7 +226,7 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-color, font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-![Voorbeeld subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/152788860-03e9b701-e484-4a99-9d6d-5f2f0777d2e8.svg)
+![Voorbeeld subtitel: U hebt minimaal eHerkenning niveau 3 nodig om in te loggen](https://user-images.githubusercontent.com/248921/155345534-b0e7374e-4059-4233-acc5-d266cd14bc12.svg)
 
 ##### 5. Button
 
@@ -246,31 +246,31 @@ Vereist: font-weight: regular, WCAG kleur-contrast moet behaald worden, copy moe
 
 Vrij te bewerken: font-size (is paragraph font-size), font-family (RijksoverheidSansWebText is vereist voor overheidsdiensten), inhoud copy.
 
-![Voorbeeld helptekst met link: Geen eHerkenning? Vraag eHerkenning aan.](https://user-images.githubusercontent.com/248921/152789035-317a50a5-4e50-4bfa-9987-060f797ec3d3.svg)
+![Voorbeeld helptekst met link: Geen eHerkenning? Vraag eHerkenning aan.](https://user-images.githubusercontent.com/248921/155347217-a05fce1b-06fb-4367-aa0b-9b25b6e1a719.svg)
 
-### Componenten op dektop en mobiel
+### Componenten op desktop, tablet en mobiel
 
-![DigiD op dektop](https://user-images.githubusercontent.com/248921/152789452-5d2a3f93-bd0f-4548-822f-a0a476ad3305.svg)
-  
-DigiD op dektop.
+![DigiD op desktop en tablet](https://user-images.githubusercontent.com/248921/155347820-9f8d6bcb-2a16-464c-b31e-50fee0f6d9eb.svg)
 
-![DigiD op mobiel](https://user-images.githubusercontent.com/248921/152789488-3735a13a-7f20-4ab7-b910-e26b0397a4ff.svg)
+DigiD op dektop en tablet.
+
+![DigiD op mobiel](https://user-images.githubusercontent.com/248921/155347910-9332cf37-5d09-4a75-96ae-05e09ece2c55.svg)
 
 DigiD op mobiel.
 
-![eHerkenning op desktop](https://user-images.githubusercontent.com/248921/152789535-307ee13c-38ef-41fb-89d7-bf8b66510f37.svg)
+![eHerkenning op desktop en tablet](https://user-images.githubusercontent.com/248921/155347981-bf6bd8fb-4837-4bf0-9c13-8e366aa5cb10.svg)
 
-eHerkenning op desktop.
+eHerkenning op desktop en tablet.
 
-![eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/152789584-9593fa2e-3042-4f5f-b58b-316c8a6932ed.svg)
+![eHerkenning op mobiel](https://user-images.githubusercontent.com/248921/155348040-75f74259-29f4-4916-bdf1-e6fd464d36b5.svg)
 
 eHerkenning op mobiel.
 
-![eIDAS op desktop](https://user-images.githubusercontent.com/248921/152789767-9c0e492d-2c73-4c02-8d45-5c096ed4d25f.svg)
+![eIDAS op desktop](https://user-images.githubusercontent.com/248921/155348112-24d83d99-5f41-4110-a756-ce3f7b039994.svg)
 
-eIDAS op desktop.
+eIDAS op desktop en tablet.
 
-![eIDAS op mobiel](https://user-images.githubusercontent.com/248921/152789795-5e33d78e-bb78-4fac-8627-4c1e975394b4.svg)
+![eIDAS op mobiel](https://user-images.githubusercontent.com/248921/155348184-e21a326e-8871-4a4f-a6f7-46f9a0bed50a.svg)
 
 eIDAS op mobiel.
   
@@ -280,13 +280,13 @@ eIDAS op mobiel.
 
 In de persoonlijke online omgeving Mijn omgeving kunt u makkelijk, snel en veilig zaken regelen bij de gemeente. Bewoners kunnen bijvoorbeeld een verhuizing doorgeven of extra parkeertegoed kopen via DigiD. Bedrijven kunnen eenvoudig online zaken regelen via eHerkenning.
 
-![Voorbeeld inloggen Mijn omgeving met DigiD](https://user-images.githubusercontent.com/248921/152790269-696f5358-22bc-4e80-9c1c-147b0bff7b84.svg)
+![Voorbeeld inloggen Mijn omgeving met DigiD](https://user-images.githubusercontent.com/248921/155348440-51d146d4-f8d2-4535-a060-191a87a01b5e.svg)
 
-![Voorbeeld inloggen Mijn omgeving met eHerkenning](https://user-images.githubusercontent.com/248921/152790351-591b54d6-ccbc-427b-b2aa-430a9f40001d.svg)
+![Voorbeeld inloggen Mijn omgeving met eHerkenning](https://user-images.githubusercontent.com/248921/155348492-b452eeb6-06e0-42e8-8555-1890f5d331b4.svg)
 
-![Voorbeeld inloggen Mijn omgeving met eIDAS](https://user-images.githubusercontent.com/248921/152790381-5830f5ef-1d44-46e5-b8c4-2005102dbd60.svg)
+![Voorbeeld inloggen Mijn omgeving met eIDAS](https://user-images.githubusercontent.com/248921/155348551-e0a9d5d7-00de-4d37-8cbc-0c277f85a941.svg)
 
-![Voorbeeld inloggen Mijn omgeving met meerdere middelen](https://user-images.githubusercontent.com/248921/152790587-be77b1cf-b7d0-4e10-b878-2e5a6cedbc1e.svg)
+![Voorbeeld inloggen Mijn omgeving met meerdere middelen](https://user-images.githubusercontent.com/248921/155348754-1e80a056-3a12-42ca-93dd-f00257b4489b.svg)
 
 ## Toegankelijkheid
 
