@@ -16,7 +16,8 @@
     "lint": "npm-run-all --continue-on-error lint:**",
     "lint:package-lock": "npm ls",
     "lint:prettier": "prettier --check .",
-    "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier"
+    "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
+    "lint-fix:prettier": "prettier --write ."
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.15",
