@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: website
-          path: standalone/docusaurus/build/
+          path: build/
 
       - name: Continuous Deployment to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.3
