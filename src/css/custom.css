@@ -39,6 +39,36 @@
   position: relative;
 }
 
+.button.button--primary {
+  --ifm-button-background-color: #148839;
+  --ifm-button-color: #fff;
+  border-color: #148839;
+}
+
+.button--primary::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  background-color: #0b732c;
+  background-image: url("../icons/arrow-right-white.svg");
+  background-size: 10px 16px;
+  background-repeat: no-repeat;
+  transition: background 0.2s;
+  background-position: center;
+}
+
+.button.button--primary:hover {
+  background-color: #0b732c;
+}
+
+.button--primary:hover::after {
+  background-color: #055c21;
+}
+
 .button.button--secondary {
   color: #004152;
 }
@@ -72,7 +102,6 @@
 
 .footer {
   width: 100%;
-  border-top: 34px solid #004152;
 }
 
 .footer--dark {
