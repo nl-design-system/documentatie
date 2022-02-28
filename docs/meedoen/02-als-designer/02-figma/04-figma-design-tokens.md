@@ -14,7 +14,7 @@ keywords:
 
 By using design tokens, both designers and developers share a unified language. It allows all disciplines to reference design features, properties, components, etc. by the same name.
 
-In its essence tokens are a *key : value* pair, where the key is the property, and the value, well, its value.
+In its essence tokens are a _key : value_ pair, where the key is the property, and the value, well, its value.
 
 Through design tokens, we can draw from a ‘single source of truth‘, meaning that they live in one centralised location to be used by both front-end and design tooling. To translate the tokens between our front-end codebase and Figma we use [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
@@ -68,17 +68,18 @@ The curly bracket notation is prefered since both the [W3C Design Tokens Communi
 
 ## Setup and installation
 
-**A word of caution: Once you have added or edited tokens in the plugin, be sure to push them to GitHub via the __book__ icon in the top-right corner of the plugin. If you do not push the tokens to GitHub they will get lost.**
+**A word of caution: Once you have added or edited tokens in the plugin, be sure to push them to GitHub via the **book** icon in the top-right corner of the plugin. If you do not push the tokens to GitHub they will get lost.**
 
 Our Figma tokens are stored in JSON format and synchronised to GitHub. This allows tokens to be shared between different Figma users and in multiple files and to experiment with tokens by using branching (if your Figma plan allows for branching).
 
 - Start by [installing the plugin from the Figma plugin repository](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
 - Once installed, open it from the plugin menu and navigate through the help screens.
 - There are two ways to load the white-label design tokens which can be used as a basis for your own tokens.
-    1. If you want to play around and get comfortable start by [copying the white-label design tokens](https://github.com/nl-design-system/figma-designtokens/blob/main/whitelabel.tokens.json) and pasting them into the text field in the **JSON** panel (overwriting the default curly brackets). If you now navigate back to the **Tokens** panel you should see the tokens grouped in categories.
-    2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage.
+  1. If you want to play around and get comfortable start by [copying the white-label design tokens](https://github.com/nl-design-system/figma-designtokens/blob/main/whitelabel.tokens.json) and pasting them into the text field in the **JSON** panel (overwriting the default curly brackets). If you now navigate back to the **Tokens** panel you should see the tokens grouped in categories.
+  2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage.
 
 For pulling from and pushing your tokens to HitHub a couple of credentials are needed.
+
 1. The _Name_ field takes a unique name you can specifiy yourself. This can be the name of your organisation or design system.
 2. See note below to obtain the _Personal Access Token_.
 3. The _Repository_ should point to `nl-design-system/figma-designtokens`.
@@ -160,7 +161,6 @@ Pulling tokens from GitHub is done with the _refresh_ icon in the top right corn
 
 ![Pulling token from GitHub](https://user-images.githubusercontent.com/248921/145823867-d12d84b2-d34a-42aa-909b-0ea84b0dd846.png)
 
-
 ## Backup of tokens
 
 Another benefit of editing the tokens in an external editor is that it is easy to keep a backup copy which in turn can be added to your GitHub repository for extra backup safety or keeping all related files together.
@@ -225,13 +225,13 @@ The following tokens for borders can be defined:
 
 ### Sizing
 
-Sizing can be applied both on the *X* (horizontal) and *Y* (vertical) axis. By default sizing tokens are applied to both axes.
+Sizing can be applied both on the _X_ (horizontal) and _Y_ (vertical) axis. By default sizing tokens are applied to both axes.
 
-If you want to set a sizing token only along the *X* axis, select the token by right-clicking on the token and selecting **Width**.
+If you want to set a sizing token only along the _X_ axis, select the token by right-clicking on the token and selecting **Width**.
 
 ![Figma Tokens size token options](https://user-images.githubusercontent.com/248921/140960907-0fc7ef14-f855-4d49-aa89-f78d44e01123.png)
 
-The same applies to the *Y* axis for height, right-click the token and select **Height**.
+The same applies to the _Y_ axis for height, right-click the token and select **Height**.
 
 ### Spacing
 
@@ -239,7 +239,7 @@ Where sizing can be applied to an element in its default state, spacing tokens c
 
 ### Padding and margins
 
-Spacing can be applied both on the *X* (inline) and *Y* (block) axis. By default a spacing token is applied to the **Gap** property.
+Spacing can be applied both on the _X_ (inline) and _Y_ (block) axis. By default a spacing token is applied to the **Gap** property.
 
 ![Figma Tokens space token options](https://user-images.githubusercontent.com/248921/140961019-ce202625-a1a2-4b66-bc55-29aaa473c02a.png)
 

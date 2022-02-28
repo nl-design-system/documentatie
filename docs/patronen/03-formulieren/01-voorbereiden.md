@@ -101,7 +101,7 @@ Een enkele vraag op een formulier hoeft niet slechts één formulierelement te z
 
 ### Sorteren
 
-Groepen kunnen op verschillende manieren gesorteerd worden. Een van de opties is dat eerst makkelijke vragen, en daarna de moeilijke aan bod komen. Een andere optie is om eerst voor ingevulde antwoorden op vragen te tonen. Optionele vragen – mits ze niet bij een bepaalde groep horen-  stel je aan het einde.
+Groepen kunnen op verschillende manieren gesorteerd worden. Een van de opties is dat eerst makkelijke vragen, en daarna de moeilijke aan bod komen. Een andere optie is om eerst voor ingevulde antwoorden op vragen te tonen. Optionele vragen – mits ze niet bij een bepaalde groep horen- stel je aan het einde.
 Een gebruiker moet voordat hij aan het formulier goed kunnen zien of het formulier of een vraag voor hem bedoeld is. Als een gebruiker niet voor een bepaald onderdeel of bepaalde vraag niet in aanmerking komt, moet dit snel in het proces duidelijk zijn. Beslisbomen kunnen hierbij helpen. Zet zo’n beslisboom vooraan in het formulier.
 
 ## Maak de functie van het formulier direct duidelijk {#verduidelijk-doel}
@@ -127,6 +127,7 @@ Voeg dit overzicht als eerste toe voor een formulier getoond wordt. Dit kan een 
 ![Start pagina concept van GOV.UK](https://user-images.githubusercontent.com/248921/141979966-fe045fe4-b51a-4d4e-b6d0-49ebfb768890.png)
 
 [GOV.UK gebruikt het concept ‘Start pagina’](https://design-system.service.gov.uk/patterns/start-pages/) alvorens een gebruiker een formulier in gaat vullen. Deze start pagina beschikt over vier hoofd elementen:
+
 - The service name: this should help people understand what your service does and whether they need to use it - [learn more about naming your service](https://www.gov.uk/service-manual/design/naming-your-service).
 - A short introduction to list things that most users will need to know, for example, what your service will let them do or how much it’ll cost.
 - The ‘Start now’ call-to-action button.
@@ -198,8 +199,10 @@ Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. [^let
 
 ## Referenties
 
- [^question-relevance]: [GOV.UK Design System - Patterns: Ask users for
-Addresses](https://design-system.service.gov.uk/patterns/addresses/)
+[^question-relevance]:
+    [GOV.UK Design System - Patterns: Ask users for
+    Addresses](https://design-system.service.gov.uk/patterns/addresses/)
+
 [^using-progress-indicators]: [GOV.UK Design System - Patterns: Question pages - Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators)
 [^let-users-save-progress]: [Form design: from zero to hero all in one blog post - Flow and order](https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/#flow-and-order)
 [^task-list-pages]: [GOV.UK Design System - Patterns: Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)

@@ -166,7 +166,6 @@ Na wijzigen van de gegevens, sturen wij een bevestiging naar het e-mailadres dat
 
 ![Voorbeeld wijzigen patiëntgegevens](https://user-images.githubusercontent.com/248921/155287791-b0545e21-fdc8-4490-ada6-feaa9b632e61.svg)
 
-
 Voorbeeld van het wijzigen van patiëntgegevens.
 
 ## Authenticeren voor Mijn omgeving
@@ -301,7 +300,7 @@ Let op het volgende:
 - Alle copy moet zoveel mogelijk taalniveau B1 halen, zodat meer mensen de tekst begrijpen. [Meer info over taalniveau B1](https://www.communicatierijk.nl/vakkennis/r/rijkswebsites/aanbevolen-richtlijnen/taalniveau-b1).
 - Alle copy moet de WCAG 2.1 kleur-contrast eis halen, zodat meer mensen de tekst kunnen lezen. [Meer info over de WCAG kleur-contrast eis](https://www.w3.org/Translations/WCAG21-nl/#contrast-minimum).
 - De copy van alle links en buttons moeten beschrijvend genoeg zijn, of voor schermleessoftware worden aangevuld met extra context, zodat iedereen de nodige context meekrijgt voor een link of button. [Meer info over linkdoelen beschrijvend maken](https://www.w3.org/Translations/WCAG21-nl/#linkdoel-in-context).
-- Content en copy moet scalable zijn (werk met rem), zodat alles nog leesbaar en bedienbaar is wanneer de browser instellingen text en spacing  vergroten. [Meer info over het herschalen van tekst](https://www.w3.org/Translations/WCAG21-nl/#herschalen-van-tekst) en [meer info over het vergroten van tekstafstanden](https://www.w3.org/Translations/WCAG21-nl/#tekstafstand).
+- Content en copy moet scalable zijn (werk met rem), zodat alles nog leesbaar en bedienbaar is wanneer de browser instellingen text en spacing vergroten. [Meer info over het herschalen van tekst](https://www.w3.org/Translations/WCAG21-nl/#herschalen-van-tekst) en [meer info over het vergroten van tekstafstanden](https://www.w3.org/Translations/WCAG21-nl/#tekstafstand).
 - Voor gebruikers die niet het logo van de authenticatiedienst kunnen waarnemen (bijvoorbeeld door blindheid) moet deze context worden gedeeld zodra de focus op de button ligt of ervoor. Anders krijgen ze deze context niet mee.
 
 ## Referenties

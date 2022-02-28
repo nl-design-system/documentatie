@@ -16,7 +16,6 @@ A good approach in any design file is to explicitly name objects directly after 
 
 ![Unnamed nested frames and groups](https://user-images.githubusercontent.com/248921/140958292-85ccee96-2add-4613-9daf-755b11bd433b.png)
 
-
 For instance, if you create a rectangle meant as background and border container for a text input it is good practice to name the rectangle `text-input-background` or similar right after creating the rectangle.
 
 Where possible, components, layers, frames, and design tokens borrow (semantic) names from HTML and SVG tags, CSS properties, ARIA roles or BEM naming.
@@ -47,7 +46,7 @@ Descriptions can be set on individual component variants as well.
 
 ### Avoid local components from being published to a library
 
-Prefixing a component with an underscore (`_`) prevents it from being published to a shared library. This is especially useful to avoid atomic elements, in use by  components but with no use as a reusable standalone element, from being added to a shared library.
+Prefixing a component with an underscore (`_`) prevents it from being published to a shared library. This is especially useful to avoid atomic elements, in use by components but with no use as a reusable standalone element, from being added to a shared library.
 
 In below example searching on ‘checkbox’ returns all components with checkbox in their name. However searching on ‘placeholder’ returns no results.
 

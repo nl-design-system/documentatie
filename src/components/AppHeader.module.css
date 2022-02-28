@@ -1,45 +1,44 @@
 .app-header {
-	--ifm-navbar-link-color: white;
-	--ifm-navbar-link-hover-color: white;
-	padding-block: 16px;
-	background-color: #00303D;
-	color: white;
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: white;
+  padding-block: 16px;
+  background-color: #00303d;
+  color: white;
 }
 
 .app-header--show-mobile-menu {
-	padding-inline: 24px;
+  padding-inline: 24px;
 }
 
 .app-header__container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app-header__logo {
-	display: flex;
-    color: white;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 20px;
 }
 
 .app-header__logo:hover {
-	color: white;
-	--ifm-link-hover-decoration: none;
+  color: white;
+  --ifm-link-hover-decoration: none;
 }
 
 .logo__image {
-	height: 65px;
-	width: 65px;
+  height: 65px;
+  width: 65px;
 }
 
 .logo__title {
-	text-transform: uppercase;
-	font-size: 44px;
-	font-family: 'league_gothic';
-	font-weight: 400;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "league_gothic";
+  font-weight: 400;
 }
 
 .app-header__menu {
-
 }

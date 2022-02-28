@@ -104,4 +104,4 @@ Verschillende disciplines zijn nodig om een duidelijk en succesvol formulier te 
 - [Form design: from zero to hero all in one blog post](https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/)
 - [GOV.UK Design System](https://design-system.service.gov.uk/)
 - [Spectrum, Adobe’s Design System](https://spectrum.adobe.com/)
-†
+  †

@@ -12,8 +12,7 @@ Om met al deze documentatie een website te maken gebruiken we [Docusaurus](https
 Fijn als je hier toevoegingen of verbeteringen aan bij wil dragen. Als je dat in Markdown kan doen is dat voor ons het aller handigst.
 Hieronder een aantal manieren waarop bijdragen voorgesteld kunnen worden.
 
-
-*Note*: We zijn blij met iedere bijdrage, dat betekend niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
+_Note_: We zijn blij met iedere bijdrage, dat betekend niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
 
 ### Maak een Gist en stuur hem ons op
 
@@ -25,10 +24,11 @@ Heb je een document dat je wil bijdragen, stuur ons dan een linkje naar die gist
 1. Maak een fork van de [documentatie repository](https://github.com/nl-design-system/documentatie) door rechts bovenin op de `fork` knop te drukken
 2. Draai deze fork lokaal zoals hieronder beschreven
 3. Voeg documentatie toe, of verbeter bestaande documentatie
-4. Commit je verbeteringen en push ze naar je fork  <!-- TODO: Commit guidelines-->
-5. Maak een pull request naar onze documentatie repository.  <!-- TODO: PR guidelines-->
+4. Commit je verbeteringen en push ze naar je fork <!-- TODO: Commit guidelines-->
+5. Maak een pull request naar onze documentatie repository. <!-- TODO: PR guidelines-->
 
 ## Lokaal draaien van de website
+
 We gebruiken `npm` om afhankelijkheden te installeren en de website met docusaurus te draaien.
 Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.nl) vinden of even een e-mail sturen
 

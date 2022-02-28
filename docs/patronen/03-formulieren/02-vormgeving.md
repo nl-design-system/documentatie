@@ -59,7 +59,7 @@ Een verschil in breedte kan op invoervelden worden toegepast om de verwachte len
 
 Houdt rekening met verschillende staten van elementen; een foutmelding moet bijvoorbeeld in de buurt van de foutieve invoer staan en een directe relatie hiermee tonen.
 
-In enkele gevallen kunnen invoervelden *naast* elkaar getoond worden, bijvoorbeeld het tonen van een toevoeging direct achter een huisnummer. Dit is echter alleen mogelijk als de velden een directe relatie tot elkaar hebben, in een logische volgorde staan en op één regel passen. Een voor- en achternaam hebben tevens een directe relatie tot elkaar maar zijn beter onder elkaar te plaatsen.
+In enkele gevallen kunnen invoervelden _naast_ elkaar getoond worden, bijvoorbeeld het tonen van een toevoeging direct achter een huisnummer. Dit is echter alleen mogelijk als de velden een directe relatie tot elkaar hebben, in een logische volgorde staan en op één regel passen. Een voor- en achternaam hebben tevens een directe relatie tot elkaar maar zijn beter onder elkaar te plaatsen.
 
 ## Zorg ervoor dat pagina en velden niet onverwacht verspringen
 

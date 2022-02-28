@@ -42,7 +42,7 @@ Veel mensen hebben baat bij duidelijke taal:
 
 ### Mensen die laaggeletterd zijn
 
-Mensen die laaggeletterd zijn hebben moeite met lezen, schrijven en/of rekenen. Verwar dit niet met de term  analfabeten. Ze kunnen wel lezen en schrijven, maar beheersen niet het eindniveau vmbo of niveau mbo-2/3.
+Mensen die laaggeletterd zijn hebben moeite met lezen, schrijven en/of rekenen. Verwar dit niet met de term analfabeten. Ze kunnen wel lezen en schrijven, maar beheersen niet het eindniveau vmbo of niveau mbo-2/3.
 
 ### Mensen die Nederlands niet als moedertaal hebben
 

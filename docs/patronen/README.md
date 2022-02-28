@@ -18,4 +18,3 @@ keywords:
 
 - [formulier patronen](03-formulieren/README.md)
 - [digid patroon](02-digid.md)
-

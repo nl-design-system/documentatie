@@ -33,7 +33,6 @@ Zorg dat een gebruiker duidelijk weet dat een formulier succesvol is verzonden. 
 
 Laat weten wanneer een gebuiker een reactie kan verwachten en/of wat de vervolgstappen zijn.
 
-
 Het GOV.UK desing system zegt hier het volgende over:
 
 _“Confirmation pages reassure users that they have completed a transaction and helps them understand what to expect next._
@@ -45,7 +44,7 @@ _Your confirmation page must include:_
 - _links to information or services that users are likely to need next_
 - _a link to your feedback page_
 - _a way for users to save a record of the transaction, for example, as a PDF_
-[^gov.uk-confirmation-pages]
+  [^gov.uk-confirmation-pages]
 
 ![Confirmation page van GOV.UK](https://user-images.githubusercontent.com/248921/142434573-fdd3a1bc-cb83-4d50-b72e-46955f20d363.png)
 

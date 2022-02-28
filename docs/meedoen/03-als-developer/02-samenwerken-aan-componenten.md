@@ -28,10 +28,10 @@ Door antwoord te geven op een paar simpele vragen wordt duidelijk of:
 
 ![Flowchart opties hoe je een NLDS component kan gebruiken](https://i.imgur.com/LZcYeXT.jpg)
 
-
 ## 1. Een kant-en-klaar component
 
 Bestaat het component in het NL Design System en is het geschikt om zo voor het design te gebruiken? Heeft het component een nl- prefix, bijvoorbeeld `nl-component`?
+
 - Gebruik het NLDS component
 
 ## 2. Een component van een andere organisatie
@@ -58,8 +58,8 @@ Er bestaat een component dat er erg op lijkt met de NLDS architectuur. Met een k
 2. Maak dan een fork
 3. Maak een pull request waarin de voorgestelde toevoeging wordt uitgelegd en aangepast.
 4. De maintainers besluiten of ze de voorgestelde wijziging accepteren.
-	- De wijziging wordt eventueel na wat aanpassingen geaccepteerd. Gebruik dan dit component met de prefix van de originele organisatie.
-	- De wijziging wordt niet geaccepteerd. De wijziging kan dan als een fork los bij de nieuwe organisatie bestaan. Kijk hiervoor ook naar optie 5.
+   - De wijziging wordt eventueel na wat aanpassingen geaccepteerd. Gebruik dan dit component met de prefix van de originele organisatie.
+   - De wijziging wordt niet geaccepteerd. De wijziging kan dan als een fork los bij de nieuwe organisatie bestaan. Kijk hiervoor ook naar optie 5.
 
 ## 5. Een nieuw herbruikbaar component maken
 

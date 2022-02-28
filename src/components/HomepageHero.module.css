@@ -1,57 +1,62 @@
 .homepage-hero {
-    background-color: #74295F;
-    color: white;
-    text-align: center;
-    padding-block-start: 24px;
-    padding-block-end: 58px;
-    padding-inline: 88px;
-    background-image: linear-gradient(3deg, #4E1C40, #4E1C40 50%, transparent 5%, transparent 90%);
-    background-repeat: no-repeat;
-    background-size: 100% 388px;
-    background-position: bottom;
+  background-color: #74295f;
+  color: white;
+  text-align: center;
+  padding-block-start: 24px;
+  padding-block-end: 58px;
+  padding-inline: 88px;
+  background-image: linear-gradient(
+    3deg,
+    #4e1c40,
+    #4e1c40 50%,
+    transparent 5%,
+    transparent 90%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 388px;
+  background-position: bottom;
 }
 
 .homepage-hero__title {
-	font-family: 'league_gothic';
-	font-size: 50px;
-	line-height: 44px;;
-	font-weight: normal;
-	margin-block-end: 48px;
+  font-family: "league_gothic";
+  font-size: 50px;
+  line-height: 44px;
+  font-weight: normal;
+  margin-block-end: 48px;
 }
 
 .homepage-hero__description {
-	text-align: center;
-	max-width: 900px;
-	margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .homepage-hero__images {
-	display: flex;
-	justify-content: center;
-	margin-block: 32px;
+  display: flex;
+  justify-content: center;
+  margin-block: 32px;
 }
 
 .homepage-hero__image {
-	max-width: 150px;
-	width: 25%;
-	display: flex;
-	width: 1fr;
+  max-width: 150px;
+  width: 25%;
+  display: flex;
+  width: 1fr;
 }
 
 .homepage-hero__call-to-action {
-	text-overflow: ellipsis;
-	max-width: 100%;
-	overflow: hidden;
-	word-wrap: break-word;
-	white-space: break-spaces;
-	}
-
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: break-spaces;
+}
 
 @media (max-width: 996px) {
-	.homepage-hero__call-to-action {
-		font-size: 16px;
-		font-family: 'montserrat';
-		text-transform: capitalize;
-		line-height: 1.5;
-	};
+  .homepage-hero__call-to-action {
+    font-size: 16px;
+    font-family: "montserrat";
+    text-transform: capitalize;
+    line-height: 1.5;
+  }
 }

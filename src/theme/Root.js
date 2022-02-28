@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "@fontsource/fira-sans";
 
 // Default implementation, that you can customize

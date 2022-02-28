@@ -1,46 +1,46 @@
 .homepage-actions {
-    display: grid;
-    grid-auto-flow: column;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-block: 40px;
-    gap: 32px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-block: 40px;
+  gap: 32px;
 }
 
 .homepage-action {
-	background-color: white;
-	padding-inline: 16px;
-	padding-block: 24px;
-	box-shadow: 4px 4px #D1D1D1;
-	border: 2px solid #F5F5F5;
-	box-sizing: border-box;
-	color: #00303D
+  background-color: white;
+  padding-inline: 16px;
+  padding-block: 24px;
+  box-shadow: 4px 4px #d1d1d1;
+  border: 2px solid #f5f5f5;
+  box-sizing: border-box;
+  color: #00303d;
 }
 
 .homepage-action__link {
-	background-image: url('../icons/arrow-right-blue.svg');
-	display: block;
-	background-repeat: no-repeat;
-    background-position: right 5px;
+  background-image: url("../icons/arrow-right-blue.svg");
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right 5px;
 }
 
 .homepage-action__link:hover {
-	text-decoration: none;
-	background-image: url('../icons/arrow-right-green.svg');
+  text-decoration: none;
+  background-image: url("../icons/arrow-right-green.svg");
 }
 
 .homepage-action__title {
-	font-size: 18px;
-	max-width: 80%;
+  font-size: 18px;
+  max-width: 80%;
 }
 
 .homepage-action__link:hover .homepage-action__title {
-	color: #C42C76;
-	text-decoration: underline;
+  color: #c42c76;
+  text-decoration: underline;
 }
 
 @media (max-width: 996px) {
-	.homepage-actions {
-		grid-auto-flow: row;
-		grid-template-columns: 1fr;
-	};
+  .homepage-actions {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
 }

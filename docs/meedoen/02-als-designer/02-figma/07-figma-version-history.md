@@ -34,17 +34,17 @@ In order to quickly scan the changes to a file or component consider using emoji
 
 Some emojis that clearly describe the change are:
 
-- 🆕  to communicate that the component is new
-- 🐛  for a bugfix
-- 💥  when introducing a breaking change (the component will not work in a similar way as it previously had)
-- 💄  to show a style has been changed or updated
-- 🩹  for a simple fix
-- 🧹  to signify a cleanup
-- ♿️  communicates an accessibility improvement
-- 🚸  communicates usability improvement
-- 📱  work done on viewport responsiveness
-- 💫  changes to an imation specifications
-- 💀  to deprecate a component
-- 🚧  component is a work in progress
-- ✏️  fix for a typo
-- ⏪️  revert a previous change
+- 🆕 to communicate that the component is new
+- 🐛 for a bugfix
+- 💥 when introducing a breaking change (the component will not work in a similar way as it previously had)
+- 💄 to show a style has been changed or updated
+- 🩹 for a simple fix
+- 🧹 to signify a cleanup
+- ♿️ communicates an accessibility improvement
+- 🚸 communicates usability improvement
+- 📱 work done on viewport responsiveness
+- 💫 changes to an imation specifications
+- 💀 to deprecate a component
+- 🚧 component is a work in progress
+- ✏️ fix for a typo
+- ⏪️ revert a previous change
