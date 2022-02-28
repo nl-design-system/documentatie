@@ -15,7 +15,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
+  organizationName: "nl-design-system", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
   presets: [
@@ -27,7 +27,7 @@ const config = {
           sidebarPath: require.resolve("./sidebarConfig.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/nl-design-system/documentatie/tree/main/",
         },
         theme: {
           customCss: [
