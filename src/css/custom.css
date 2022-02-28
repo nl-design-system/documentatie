@@ -1,0 +1,136 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #00303d;
+  --ifm-color-primary-dark: #00303d;
+  --ifm-color-primary-darker: #00303d;
+  --ifm-color-primary-darkest: #00303d;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+	--ifm-background-color: #F9F6F3;
+  --ifm-code-font-size: 95%;
+	--ifm-font-family-base: 'montserrat';
+	--ifm-button-border-radius: 0;
+	--ifm-button-padding-vertical: 8px;
+	--ifm-button-padding-horizontal: 16px;
+	--ifm-button-color: #004152;
+    --ifm-h1-font-size: 1.5rem;
+    --ifm-heading-font-weight: 700;
+	--ifm-footer-background-color: #00303D;
+	--ifm-footer-color: white;
+}
+
+.button {
+	box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
+	padding-block: 8px;
+	padding-inline-end: 48px;
+	padding-inline-start: 16px;
+	text-transform: uppercase;
+	font-family: 'league_gothic';
+	font-weight: normal;
+	font-size: 1.625rem;
+	line-height: 1;
+	position: relative;
+}
+
+.button.button--secondary {
+	color: #004152;
+}
+
+.button--secondary::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    background-color: #D1DFE3;
+	background-image: url('../icons/arrow-right-blue.svg');
+    background-size: 10px 16px;
+    background-repeat: no-repeat;
+    transition: background 0.2s;
+    background-position: center;
+}
+
+.button.button--secondary:hover {
+	background-color: #004152;
+	color: white;
+	border-color: #004152;
+}
+
+.button--secondary:hover::after {
+    background-color: #00303d;
+	background-image: url('../icons/arrow-right-white.svg');
+}
+
+.footer {
+	width: 100%;
+	border-top: 34px solid #004152;
+}
+
+.footer--dark {
+	--ifm-footer-background-color: #00303D;
+	--ifm-footer-color: white;
+}
+
+.hero--primary {
+	margin-top: 4rem;
+	background-color: white;
+}
+
+.hero--primary .container {
+	background-color: #74295f;
+	padding-bottom: 4rem;
+}
+
+.hero--primary .hero__title {
+	background-color: #4e1c40;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Overwrite docusaurus styling but use the classname to enable lookup for content position by docusaurus */
+.navbar {
+	background-color: inherit;
+	box-shadow: var(--ifm-navbar-shadow);
+	display: block;
+	height: auto;
+	padding: 0;
+}
+
+.nlds-theme  {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    align-content: inherit;
+}
+
+.markdown > h2 {
+	--ifm-h2-font-size: 1.125rem;
+}
+
+
+.markdown > h3 {
+	--ifm-h3-font-size: 1rem;
+}
+
+.markdown h1:first-child {
+	--ifm-h1-font-size: 1.5rem;
+}

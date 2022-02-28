@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   continuous-delivery:
@@ -13,17 +13,16 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
+          node-version: "16.13.x"
 
       - name: install and build
         run: |
           yarn
           yarn build
-
       - name: Continuous Deployment to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           branch: gh-pages
-          folder: dist
+          folder: build
