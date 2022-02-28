@@ -2,7 +2,6 @@ import React, { PropsWithChildren } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import style from "./HomepageHero.module.css";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 
 interface HomepageHeroProps {
   title: string;
@@ -17,33 +16,17 @@ export const HomepageHero = ({
   children,
 }: PropsWithChildren<HomepageHeroProps>) => {
   return (
-    <div className={clsx(style["homepage-hero"])}>
-      <div className={clsx(style["homepage-hero__description"])}>
+    <div className="container">
+      <div className={clsx(style["homepage-hero"])}>
         <h1 className={clsx(style["homepage-hero__title"])}>{title}</h1>
-        {children}
-      </div>
-      <div className={clsx(style["homepage-hero__images"])}>
-        <img
-          className={clsx(style["homepage-hero__image"])}
-          src={useBaseUrl("/img/angela-300x300.png")}
-        />
-        <img
-          className={clsx(style["homepage-hero__image"])}
-          src={useBaseUrl("/img/robbert-300x300.png")}
-        />
-        <img
-          className={clsx(style["homepage-hero__image"])}
-          src={useBaseUrl("/img/rogier-300x300.png")}
-        />
-        <img
-          className={clsx(style["homepage-hero__image"])}
-          src={useBaseUrl("/img/yolijn-300x300.png")}
-        />
-      </div>
-      <div className={clsx(style["homepage-hero__call-to-action"])}>
-        <Link className={clsx("button", "button--secondary")} to={ctaLink}>
-          {cta}
-        </Link>
+        <div className={clsx(style["homepage-hero__description"])}>
+          {children}
+        </div>
+        <div className={clsx(style["homepage-hero__call-to-action"])}>
+          <Link className={clsx("button", "button--secondary")} to={ctaLink}>
+            {cta}
+          </Link>
+        </div>
       </div>
     </div>
   );

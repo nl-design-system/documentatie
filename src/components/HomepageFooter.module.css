@@ -1,0 +1,24 @@
+.homepage-footer {
+  background-color: #004152;
+  padding-block: 32px;
+  color: white;
+  --ifm-link-color: white;
+  --ifm-link-hover-color: white;
+}
+
+.homepage-footer__container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 64px;
+}
+
+@media (max-width: 996px) {
+  .homepage-footer__container {
+    grid-auto-flow: row;
+    gap: 16px;
+  }
+}
+
+.homepage-footer h2 {
+  font-size: 1rem;
+}

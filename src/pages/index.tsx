@@ -1,11 +1,13 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageHero from "../components/HomepageHero";
-import {
-  HomepageAction,
-  HomepageActions,
-} from "@site/src/components/HomepageActions";
+import { HomepageActions } from "@site/src/components/HomepageActions";
+import { HomepageAction } from "@site/src/components/HomepageAction";
+import { HomepageTeasers } from "@site/src/components/HomepageTeasers";
+import { HomepageTeaser } from "@site/src/components/HomepageTeaser";
+import { HomepageFooter } from "@site/src/components/HomepageFooter";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -15,23 +17,26 @@ export default function Home() {
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
     >
       <HomepageHero
-        title="Het NL Design System"
+        title="Over het NL Design System"
         ctaLink="docs/algemeen/"
-        cta="Aanpak community gedreven design system - 10min ⏱️"
+        cta="Meer over het NL Design System"
       >
         {
           <>
             <p>
-              Overheidsdienstverlening diene toegankelijk en begrijpelijk voor
-              iedereen te zijn. Hiervoor zijn consistent ontworpen diensten en
-              websites nodig.
+              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
+              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
+              zijn consistent ontworpen diensten en websites nodig.
             </p>
             <p>
-              En daarom gaan we tussen overheidsorganisaties principes,
-              interactiepatronen en code delen via een gezamenlijk design
-              system. Het NL Design System draagt niet alleen bij aan
-              gebruiksvriendelijkere diensten van een betere kwaliteit en
-              toegankelijkheid. Het helpt ook dubbel werk te voorkomen.
+              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
+              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
+              zijn consistent ontworpen diensten en websites nodig. En daarom
+              gaan we tussen overheidsorganisaties principes, interactiepatronen
+              en code delen via een gezamenlijk design system. Dit NL Design
+              System draagt niet alleen bij aan gebruiksvriendelijkere diensten
+              van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel
+              werk te voorkomen.
             </p>
             <p>
               Het kernteam bestaat uit projectleider Angela Imhof, lead
@@ -43,46 +48,68 @@ export default function Home() {
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction
-            title="Meedoen als developer"
-            href="docs/meedoen/als-developer/"
-          >
-            <p>
-              Wil je als developer meehelpen aan de componenten te creëren om
-              een digitaal product te bouwen?
-            </p>
+          <HomepageAction title="Documentie" href="docs/algemeen/">
+            <p>Introductietekst over documentatie</p>
           </HomepageAction>
-          <HomepageAction
-            title="Meedoen als ontwerper"
-            href="docs/meedoen/als-designer/"
-          >
-            <p>
-              Wil je als ontwerper meedenken over de beste ervaring die het NL
-              Design System de eindgebruikers biedt?
-            </p>
+          <HomepageAction title="Patronen" href="docs/patronen/">
+            <p>Introductietekst over patronen</p>
           </HomepageAction>
-          <HomepageAction
-            title="Meedoen als product owner"
-            href="docs/meedoen/als-product owner/"
-          >
-            <p>
-              Wil met jouw product bijdragen of voldoen aan de richtlijnen van
-              het NL Design System?
-            </p>
+          <HomepageAction title="Componenten" href="docs/componenten/">
+            <p>Introductietekst over componenten</p>
           </HomepageAction>
-          <HomepageAction
-            title="Meedoen als copywriter"
-            href="docs/meedoen/als-copywriter/"
-          >
-            <>
-              <p>Weet je alles over het schrijven van goede teksten?</p>
-              <p>
-                Helpt het NL Design System de juiste richtlijnen voor tekst te
-                documenteren.
-              </p>
-            </>
+          <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
+            <p>Introductietekst over voorbeelden</p>
           </HomepageAction>
         </HomepageActions>
+        <HomepageTeasers>
+          <HomepageTeaser
+            title="Meedoen"
+            cta="Ik wil meedoen"
+            ctaLink="docs/meedoen/"
+          >
+            <p>
+              Hier komt een stukje tekst en een visual ter ondersteuning. Deze
+              blokken worden anders qua stijl dan de blokken hierboven.
+            </p>
+          </HomepageTeaser>
+          <HomepageTeaser
+            title="Blijf op de hoogte"
+            cta="Inschrijven op de nieuwsbrief"
+            ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
+          >
+            <p>
+              Hier komt een call-to-action voor het inschrijven van de
+              nieuwsbrief
+            </p>
+            <p> Ook komen hier contact mogelijkheden.</p>
+            <p> Ook dit blok wort qua stijl anders dan de blokken hierboven.</p>
+          </HomepageTeaser>
+        </HomepageTeasers>
+        <HomepageFooter>
+          <div>
+            <h2>Over het kernteam</h2>
+            <p>
+              Het kernteam bestaat uit projectleider Angela Imhof, lead
+              developer Robbert Broersma, front-end developer Yolijn van der
+              Kolk en designer Rogier Barendregt.
+            </p>
+            <p>
+              <Link to="docs/algemeen">Meer over het kernteam.</Link>
+            </p>
+            <p>
+              <Link to="https://gebruikercentraal.nl">
+                Meer over Gebruiker Centraal.
+              </Link>
+            </p>
+          </div>
+          <div>
+            <h2>Samenwerking</h2>
+            <p>
+              Het kernteam van het NL Design System werkt onder andere samen met
+              de volgende organisaties:
+            </p>
+          </div>
+        </HomepageFooter>
       </main>
     </Layout>
   );
