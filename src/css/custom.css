@@ -24,6 +24,9 @@
   --ifm-heading-font-weight: 700;
   --ifm-footer-background-color: #00303d;
   --ifm-footer-color: white;
+  --ifm-footer-padding-vertical: 0;
+  --ifm-footer-padding-horizontal: 0;
+  --ifm-footer-link-hover-color: white;
 }
 
 .button {
@@ -107,6 +110,29 @@
 .footer--dark {
   --ifm-footer-background-color: #00303d;
   --ifm-footer-color: white;
+}
+
+.footer__items {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 36px;
+}
+
+.footer__links {
+  justify-content: space-between;
+}
+
+.footer__links .col {
+  flex: none;
+  width: fit-content;
+}
+
+.footer__link-item svg {
+  display: none;
 }
 
 .hero--primary {
