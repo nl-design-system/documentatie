@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import style from "./HomepageHero.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 interface HomepageHeroProps {
   title: string;
@@ -24,19 +25,19 @@ export const HomepageHero = ({
       <div className={clsx(style["homepage-hero__images"])}>
         <img
           className={clsx(style["homepage-hero__image"])}
-          src="/img/angela-300x300.png"
+          src={useBaseUrl("/img/angela-300x300.png")}
         />
         <img
           className={clsx(style["homepage-hero__image"])}
-          src="/img/robbert-300x300.png"
+          src={useBaseUrl("/img/robbert-300x300.png")}
         />
         <img
           className={clsx(style["homepage-hero__image"])}
-          src="/img/rogier-300x300.png"
+          src={useBaseUrl("/img/rogier-300x300.png")}
         />
         <img
           className={clsx(style["homepage-hero__image"])}
-          src="/img/yolijn-300x300.png"
+          src={useBaseUrl("/img/yolijn-300x300.png")}
         />
       </div>
       <div className={clsx(style["homepage-hero__call-to-action"])}>
