@@ -8,11 +8,15 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
+    "clean": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "lint": "npm-run-all --continue-on-error lint:**",
+    "lint:package-lock": "npm ls",
+    "lint:prettier": "prettier --check .",
+    "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.15",
