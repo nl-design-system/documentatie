@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - main
+      - docusaurus
 
 jobs:
   continuous-delivery:
