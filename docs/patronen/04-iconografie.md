@@ -66,7 +66,13 @@ De valkuil is om hardcoded kleur waardes zoals fill="#ABCDEF te gebruiken. Gebru
 
 ### Grootte(s)
 
-Er zijn meerdere manieren om iconen op diverse groottes te tonen. Een icoon in SCG formaat kan in principe zonder kwaliteitsverlies verkleint en vergoot worden. Wanneer iconen in verschillende groottes worden getekend kunnen grotere iconen van meer detail worden voorzien, en dus als het ware opnieuw getekend.
+Er zijn meerdere manieren om iconen op diverse afmetingen te tonen. Een icoon in SVG formaat kan in principe zonder kwaliteitsverlies verkleint en vergoot worden. Wanneer iconen in verschillende groottes worden getekend kunnen grotere iconen van meer detail worden voorzien, en dus als het ware opnieuw getekend.
+
+![Voorbeeld van een icoon die op verschillende afmetingen een andere tekening heeft](https://user-images.githubusercontent.com/248921/159327469-6e213cbc-c8ce-45cf-af18-16088a4c2030.png)
+
+Bron: http://blog.useiconic.com/digitally-remastering-iconic/
+
+Er zijn meerdere manieren om iconen op diverse groottes te tonen. Een icoon in SVG formaat kan in principe zonder kwaliteitsverlies verkleint en vergoot worden. Wanneer iconen in verschillende groottes worden getekend kunnen grotere iconen van meer detail worden voorzien, en dus als het ware opnieuw getekend.
 
 ### Toegankelijkheid
 
