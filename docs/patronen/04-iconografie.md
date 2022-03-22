@@ -119,3 +119,5 @@ Wil je een bijdrage leveren of wil je meer weten over deze iconenset? Neem dan c
 - [Rijksiconen](https://www.rijkshuisstijl.nl/basiselementen/beeld/iconen-en-pictogrammen/overzicht-iconen)
 - [The Icon Handbook](https://iconhandbook.co.uk/)
 - [When does iconography start to become useless?](https://uxdesign.cc/crimes-of-ux-3-useless-iconography-5bf06ef9fed)
+- [Make your design system accessible — Part 2: Icons](https://uxdesign.cc/make-your-design-system-accessible-part-2-icons-f3f7bd0b4b5a)
+- [Het complete plaatje? Onderzoek naar het gebruik van iconen als middel voor inclusievere gemeentelijke communicatie in Nederland en Vlaanderen](https://taalunie.org/publicaties/204/onderzoek-naar-het-gebruik-van-iconen-als-middel-voor-inclusievere-gemeentelijke-communicatie-in-nederland-en-vlaanderen)
