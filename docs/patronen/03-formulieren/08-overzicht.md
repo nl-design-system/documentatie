@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Overzicht
 sidebar_position: 8
-pagination_label: Overzicht
+pagination_label: Formulieren - Overzicht
 description: Richtlijnen voor formulieren - Overzicht
 keywords:
   - formulieren

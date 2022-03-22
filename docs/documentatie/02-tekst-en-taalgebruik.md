@@ -2,8 +2,8 @@
 title: Tekst en taalgebruik
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Taalgebruik
-pagination_label: Taalgebruik
+sidebar_label: Tekst en taalgebruik
+pagination_label: Tekst en taalgebruik
 description: Tekst en taalgebruik in NL Design System
 keywords:
   - copywriter
@@ -432,32 +432,3 @@ Algemene referenties omtrent taal en content in design systems.
 - [Begrijpelijke en toepasbare voorlichtingsmaterialen & beeldverhalen](https://www.pharos.nl/thema/eenvoudig-voorlichtingsmateriaal-en-beeldverhalen/)
 - [Online checklist Toegankelijke informatie](https://www.pharos.nl/kennisbank/checklist-toegankelijke-informatie/)
 - [Writing for Web Accessibility](https://www.w3.org/WAI/tips/writing/)
-
-## Geschiedenis
-
-0.6 (27-01-2021)
-
-- Sectie over genderinclusiviteit toegevoegd (via Celina van Hees)
-
-### 0.5 (18-01-2021)
-
-- Richtlijnen m.b.t. taal en toegankelijkheid en ontwerpen voor laaggeletterden gewijzigd (Saskia Schrijver)
-- Richtlijnen voor alternatieve tekst voor afbeeldingen gewijzigd en voorzien van voorbeeld (Ronny Hendriks)
-
-### 0.4 (12-01-2021)
-
-- Placeholder categorieën richtlijnen toegevoegd (via Mark Westbeek)
-
-### 0.3 (06-01-2021)
-
-- Referentie Handboek webcontent toegevoegd (Wiep Hamstra)
-
-### 0.2 (29-12-2020)
-
-- Sectie Content ontwerp toegevoegd (Saskia Schrijver)
-- Sectie Taalregels en grammatica uitgebreid (Saskia Schrijver)
-- Diverse wijzigingen en verbeteringen (Saskia Schrijver)
-
-### 0.1 (25-11-2020)
-
-- Eerste publieke versie

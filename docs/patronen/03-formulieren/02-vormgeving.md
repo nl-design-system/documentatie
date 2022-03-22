@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Vormgeving
 sidebar_position: 2
-pagination_label: Vormgeving
+pagination_label: Formulieren - Vormgeving
 description: Richtlijnen voor formulieren - Vormgeving, opbouw en structuur
 keywords:
   - formulieren

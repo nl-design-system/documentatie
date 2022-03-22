@@ -1,11 +1,11 @@
 ---
-title: Meedoen als product owner - index
+title: Meedoen als product owner - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
 pagination_label: Index
-description: Meedoen als product owner - index
+description: Meedoen als product owner - Overzicht
 keywords:
   - product owner
 ---

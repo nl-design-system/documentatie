@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voorbereiding
 sidebar_position: 1
-pagination_label: Voorbereiding
+pagination_label: Formulieren - Voorbereiding
 description: Richtlijnen voor formulieren - Voorbereiding
 keywords:
   - formulieren
