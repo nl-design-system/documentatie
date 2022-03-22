@@ -1,0 +1,20 @@
+.definition-list {
+}
+
+.definition {
+  margin-block-end: 1rem;
+}
+
+.definition__title {
+  display: inline;
+  font-weight: bold;
+}
+
+.definition__title::after {
+  content: ": ";
+}
+
+.definition__data {
+  margin: 0;
+  display: inline;
+}
