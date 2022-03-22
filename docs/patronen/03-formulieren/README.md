@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Checklist
 sidebar_position: 1
-pagination_label: Checklist
+pagination_label: Formulieren - Checklist
 description: Richtlijnen voor formulieren - Checklist
 keywords:
   - richtlijnen

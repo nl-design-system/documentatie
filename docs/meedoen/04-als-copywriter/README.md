@@ -1,10 +1,10 @@
 ---
-title: Meedoen als copywriter - index
+title: Meedoen als copywriter - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Index
+pagination_label: Overzicht
 description: Index van resources voor copywriters
 keywords:
   - copywriter
@@ -13,11 +13,14 @@ keywords:
 
 # Leuk dat je als copywriter mee wil doen aan NL Design System
 
+Meedoen kan geheel op je eigen voorwaarden.
+
+Kijk eens naar [onze bestaande richtlijnen](/docs/documentatie/tekst-en-taalgebruik).
+
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [Aan de slag](02-aan-de-slag.md)
-- [Bestaande richtlijnen](03-richtlijnen/tekst-en-taalgebruik.md)
-- [Help ons de documentatie uit te breiden](04-bijdrage-leveren.md)
+- [Aan de slag](aan-de-slag)
+- [Help ons de documentatie uit te breiden](bijdrage-leveren)
 
 ## Neem contact met ons op
 

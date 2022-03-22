@@ -1,11 +1,11 @@
 ---
-title: Meedoen als designer - index
+title: Meedoen als designer - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
 pagination_label: Index
-description: Meedoen als designer - index
+description: Meedoen als designer - Overzicht
 keywords:
   - index
   - designer
@@ -14,11 +14,13 @@ keywords:
 
 # Leuk dat je als designer mee wil doen aan NL Design System
 
+Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we met [Figma](/docs/documentatie/figma). Het is uiteraard ook mogelijk om andere ontwerp-programmatuur te gebruiken en kennis te delen.
+
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [Aan de slag](01-aan-de-slag.md)
-- [Bestaande richtlijnen](02-figma/README.md)
-- [Help ons de documentatie uit te breiden](03-bijdrage-leveren.md)
+- [Aan de slag](aan-de-slag)
+- [Gebruik van Figma](/docs/documentatie/figma)
+- [Help ons de documentatie uit te breiden](bijdrage-leveren)
 
 ## Neem contact met ons op
 

@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Afhandeling
 sidebar_position: 9
-pagination_label: Afhandeling
+pagination_label: Formulieren - Afhandeling
 description: Richtlijnen voor formulieren - Afhandeling.
 keywords:
   - formulieren

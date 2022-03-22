@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Vragen en antwoorden
 sidebar_position: 4
-pagination_label: Vragen en antwoorden
+pagination_label: Formulieren - Vragen en antwoorden
 description: Richtlijnen voor formulieren - Vragen en antwoorden.
 keywords:
   - formulieren

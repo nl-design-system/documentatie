@@ -1,7 +1,7 @@
 ---
 title: DigiD afnemers richtlijnen
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: DigiD
 pagination_label: DigiD
 description: DigiD afnemers richtlijnen

@@ -1,18 +1,20 @@
 ---
-title: Voorbeeld applicaties - index
+title: Voorbeelden
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Voorbeelden
 sidebar_position: 1
-pagination_label: Index
-description: Voorbeeld applicaties - index
+pagination_label: Voorbeelden
+description: Voorbeelden
 keywords:
   - index
   - voorbeelden
 ---
 
-# Voorbeeld applicaties
+# Voorbeelden
 
-gemaakt met NLDS richtlijnen en componenten
+Hier tonen we voorbeelden gemaakt met richtlijnen en componenten uit het NL Design System. Deze voorbeelden zijn door diverse organisaties gemaakt op basis van documentatie, patronen en componenten van het NL Design System.
+
+Op dit moment werken we hard om voorbeelden te delen. Hou deze pagina in de gaten!
 
 <!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NLDS -->

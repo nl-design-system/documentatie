@@ -1,10 +1,10 @@
 ---
-title: Meedoen als developer - index
+title: Meedoen als developer - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Index
+pagination_label: Overzicht
 description: Index van resources voor developers
 keywords:
   - developer
