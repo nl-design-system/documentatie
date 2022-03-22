@@ -18,58 +18,56 @@ export default function Home() {
     >
       <HomepageHero
         title="Over het NL Design System"
-        ctaLink="docs/algemeen/"
+        ctaLink="docs/over/"
         cta="Meer over het NL Design System"
       >
         {
           <>
             <p>
-              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
-              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
-              zijn consistent ontworpen diensten en websites nodig.
-            </p>
-            <p>
-              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
-              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
-              zijn consistent ontworpen diensten en websites nodig. En daarom
-              gaan we tussen overheidsorganisaties principes, interactiepatronen
-              en code delen via een gezamenlijk design system. Dit NL Design
-              System draagt niet alleen bij aan gebruiksvriendelijkere diensten
-              van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel
-              werk te voorkomen.
-            </p>
-            <p>
-              Het kernteam bestaat uit projectleider Angela Imhof, lead
-              developer Robbert Broersma, front-end developer Yolijn van der
-              Kolk en designer Rogier Barendregt.
+              In het NL Design System verzamelen we principes, handvatten,
+              elementen, patronen en richtlijnen. Zo kan de hele Nederlandse
+              overheid samenwerken aan een begrijpelijke, gebruiksvriendelijke
+              én toegankelijke online dienstverlening.
             </p>
           </>
         }
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction title="Documentie" href="docs/algemeen/">
-            <p>Introductietekst over documentatie</p>
+          <HomepageAction title="Documentatie" href="docs/documentatie/">
+            <p>
+              Richtlijnen over onder meer taalgebruik, toegankelijkheid en
+              inclusie.
+            </p>
           </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
-            <p>Introductietekst over patronen</p>
+            <p>
+              Oplossingen voor veelvoorkomende problemen en herhalende
+              klantreizen.
+            </p>
           </HomepageAction>
           <HomepageAction title="Componenten" href="docs/componenten/">
-            <p>Introductietekst over componenten</p>
+            <p>
+              Kant en klare, geteste componenten om digitale producten mee te
+              maken.
+            </p>
           </HomepageAction>
           <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
-            <p>Introductietekst over voorbeelden</p>
+            <p>
+              Voorbeeld applicaties gemaakt met richtlijnen en componenten uit
+              het NL Design System.
+            </p>
           </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
           <HomepageTeaser
             title="Meedoen"
-            cta="Ik wil meedoen"
+            cta=" Vertel me meer"
             ctaLink="docs/meedoen/"
           >
             <p>
-              Hier komt een stukje tekst en een visual ter ondersteuning. Deze
-              blokken worden anders qua stijl dan de blokken hierboven.
+              Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System?
+              Meedoen kan namelijk op vele manieren.
             </p>
           </HomepageTeaser>
           <HomepageTeaser
@@ -78,35 +76,43 @@ export default function Home() {
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
             <p>
-              Hier komt een call-to-action voor het inschrijven van de
-              nieuwsbrief
+              Wil jij niets missen van de ontwikkelingen van het NL Design
+              System?
             </p>
-            <p> Ook komen hier contact mogelijkheden.</p>
-            <p> Ook dit blok wort qua stijl anders dan de blokken hierboven.</p>
+            <ul>
+              <li>
+                <a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
+                  Neem deel aan onze 2-wekelijkse Heartbeat-sessies
+                </a>
+              </li>
+              <li>
+                <a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">
+                  Schrijf je in voor onze nieuwsbrief
+                </a>
+              </li>
+              <li>
+                <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">
+                  Lees meer achtergrondinformatie op onze blogpagina
+                </a>
+              </li>
+            </ul>
           </HomepageTeaser>
         </HomepageTeasers>
         <HomepageFooter>
           <div>
             <h2>Over het kernteam</h2>
             <p>
-              Het kernteam bestaat uit projectleider Angela Imhof, lead
-              developer Robbert Broersma, front-end developer Yolijn van der
-              Kolk en designer Rogier Barendregt.
-            </p>
-            <p>
-              <Link to="docs/algemeen">Meer over het kernteam.</Link>
-            </p>
-            <p>
-              <Link to="https://gebruikercentraal.nl">
-                Meer over Gebruiker Centraal.
-              </Link>
+              Het NL Design System wordt ontwikkeld door{" "}
+              <a href="docs/meedoen/kernteam/">een vast kernteam</a> bij
+              Gebruiker Centraal.
             </p>
           </div>
           <div>
             <h2>Samenwerking</h2>
             <p>
-              Het kernteam van het NL Design System werkt onder andere samen met
-              de volgende organisaties:
+              Met <a href="docs/meedoen/">een community</a> werken we aan een
+              begrijpelijke, gebruiksvriendelijke én toegankelijke online
+              dienstverlening voor overheidsorganisaties.
             </p>
           </div>
         </HomepageFooter>

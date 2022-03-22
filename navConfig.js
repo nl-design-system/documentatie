@@ -7,16 +7,15 @@ module.exports = {
   },
   items: [
     {
-      type: "doc",
-      docId: "algemeen/README",
+      to: "/",
       position: "left",
-      label: "Algemeen",
+      label: "Home",
     },
     {
       type: "doc",
-      docId: "meedoen/README",
+      docId: "documentatie/README",
       position: "left",
-      label: "Meedoen",
+      label: "Documentatie",
     },
     {
       type: "doc",
@@ -35,6 +34,12 @@ module.exports = {
       docId: "voorbeelden/README",
       position: "left",
       label: "Voorbeelden",
+    },
+    {
+      type: "doc",
+      docId: "meedoen/README",
+      position: "left",
+      label: "Meedoen",
     },
     {
       href: "https://github.com/nl-design-system/backlog",

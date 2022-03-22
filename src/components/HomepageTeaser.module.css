@@ -1,11 +1,11 @@
 .homepage-teaser {
-  background-color: white;
+  background-color: #027bb0; /* Contrast ratio to white foreground color passes with 4.7:1 */
   padding-inline: 16px;
   padding-block: 24px;
   box-shadow: 4px 4px #d1d1d1;
-  border: 2px solid #f5f5f5;
+  border: 2px solid #027bb0;
   box-sizing: border-box;
-  color: #00303d;
+  color: white;
   min-height: 300px;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -20,6 +20,18 @@
 }
 
 .homepage-teaser__link:hover .homepage-teaser__title {
-  color: #c42c76;
+  color: white;
   text-decoration: underline;
+}
+
+.homepage-teaser p a,
+.homepage-teaser li a {
+  /* Target link in paragraphs and lists, but not in CtA button (likely better to style CtA button accordingly instead!) */
+  color: white;
+  text-decoration: underline;
+}
+
+.homepage-teaser:last-child div:last-child a {
+  /* Quick dirty hack to temporarily disable call-to-action button in last homepage teaser module */
+  display: none !important;
 }

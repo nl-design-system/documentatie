@@ -16,6 +16,7 @@
 }
 
 .homepage-hero__description {
+  font-size: 20px;
   padding-block-start: 24px;
   padding-inline: 32px;
 }
