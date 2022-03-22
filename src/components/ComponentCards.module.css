@@ -1,0 +1,96 @@
+.component-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .component-cards {
+    flex-direction: row;
+  }
+}
+
+.component-card {
+  width: 100%;
+  min-width: 300px;
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  background-color: #148839;
+  position: relative;
+  border: 0.1rem solid #d1dfe3;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .component-card {
+    width: calc(33.333% - 3rem);
+  }
+}
+
+.component-card__header {
+  background: transparent;
+  padding: 1rem;
+  padding-block-end: 4rem;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(2deg, #fff 15%, transparent 15.2%);
+}
+
+.component-card__image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.component-card__body {
+  background-color: white;
+  padding-inline: 30px;
+  padding-block-end: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.component-card__title {
+  font-size: 22px;
+  font-family: "montserrat";
+  font-weight: bold;
+}
+
+.component-card__title:hover {
+  color: #c42c76;
+}
+
+.component-card__status {
+  font-size: 12px;
+  background-color: gray;
+  color: white;
+  width: max-content;
+  padding: 5px;
+  margin-block-start: 10px;
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.component-card--help-wanted,
+.component-card__status--help-wanted {
+  background-color: #4e1c40;
+}
+
+.component-card--community,
+.component-card__status--community {
+  background-color: #027bb0;
+}
+
+.component-card--unstable,
+.component-card__status--unstable {
+  background-color: #00303d;
+}
+
+.component-card--stable,
+.component-card__status--stable {
+  background-color: #148839;
+}
