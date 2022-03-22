@@ -19,7 +19,9 @@ Iconen helpen bezoekers om de juiste taak te kiezen. Ze ondersteunen de leesbaar
 
 Iconen moeten opzettelijk gebruikt worden en waar mogelijk, met het oog op de toegankelijkheid, gekoppeld aan een tekstlabel. Iconen kunnen zowel als interactieve als statische elementen fungeren.
 
-Grofweg zijn er twee categorieën iconen; ‘applicatieve’ en illustratieve iconen. Denk bij applicatieve iconen bijvoorbeeld aan chevrons, opslaan en download indicatoren. Applicatieve iconen zijn vaak abstract en hun betekenis is vaak aangeleerd, denk hierbij bijvoorbeeld aan het floppy icoon voor opslaan, of een vergrootglas om te zoeken. Illustratieve iconen zorgen in één oogopslag dat een tekstlabel verduidelijkt of een thema uitgebeeld kan worden.
+Grofweg zijn er twee categorieën iconen; ‘applicatieve’ en illustratieve iconen. Denk bij applicatieve iconen bijvoorbeeld aan chevrons, opslaan en download indicatoren of een × om een dialoog te sluiten. Applicatieve iconen zijn vaak abstract en hun betekenis is vaak aangeleerd, denk hierbij bijvoorbeeld aan het floppy icoon voor opslaan, of een vergrootglas om te zoeken. Illustratieve iconen zorgen in één oogopslag dat een tekstlabel verduidelijkt of een thema uitgebeeld kan worden.
+
+Buiten deze kunnen tevens ‘derde partij’ iconen voorkomen, denk bijvoorbeeld aan sociale media links waarbij slechts het icoon zonder tekstlabel getoond wordt.
 
 ### Het nut van iconen
 
@@ -56,13 +58,17 @@ De valkuil is om hardcoded kleur waardes zoals fill="#ABCDEF te gebruiken. Gebru
 ### Ontwerp richtlijnen
 
 - Gebruik geen icoon wanneer tekst volstaat. Iconen kunnen onnodig voor visuele ruis zorgen, gebruikers kunnen iconen niet begrijpen en tekst is makkelijk te vertalen.
+- Overweeg of puur decoratieve iconen daadwerkelijk iets toevoegen voor de gebruiker.
 - Een icoon moet duidelijk direct de betekenis uitbeelden.
+- Maak de vormen van een icoon niet onnodig complex maar tracht deze zo simpel mogelijk te houden zonder duidelijkheid te verliezen.
 - Gebruik een consistent iconengrid voor visuele consistentie.
 - Gebruik geen outlined en filled iconen dor elkaar.
 - Zorg zoveel mogelijk voor universele concepten van iconen; gebruikers kennen voor veel concepten al een bestaande beeldtaal. Denk bijvoorbeeld aan een icoon van een verkeersbord met een ‘P’ voor parkeergelegenheden. Iets anders dan deze te gebruiken voor eenzelfde betekenis zal gebruiker alleen maar kunnen verwarren.
 - Gebruik voor verdieping van tekstpassages een illustratie of animatie.
 
 ### Outline vs. filled (solid)
+
+Te dunne lijnen kunnen tot visuele problemen leiden. Gebruikers met staar kunnen bijvoorbeeld problemen hebben met deze iconen.
 
 ### Grootte(s)
 
@@ -72,21 +78,27 @@ Er zijn meerdere manieren om iconen op diverse afmetingen te tonen. Een icoon in
 
 Bron: http://blog.useiconic.com/digitally-remastering-iconic/
 
-Er zijn meerdere manieren om iconen op diverse groottes te tonen. Een icoon in SVG formaat kan in principe zonder kwaliteitsverlies verkleint en vergoot worden. Wanneer iconen in verschillende groottes worden getekend kunnen grotere iconen van meer detail worden voorzien, en dus als het ware opnieuw getekend.
+Er zijn meerdere manieren om iconen op diverse groottes te tonen. Een icoon in SVG formaat kan in principe zonder kwaliteitsverlies verkleint en vergroot worden. Wanneer iconen in verschillende groottes worden getekend kunnen grotere iconen van meer detail worden voorzien, en dus als het ware opnieuw getekend.
 
 ### Toegankelijkheid
 
+#### Interactieve iconen
+
+Zorg bij interactieve iconen ervoor dat de interactie niet alleen gecommuniceerd wordt door middel van kleurverschil.
+
 #### Contrast
 
-Zorg, net als bij tekstuele content, dat iconen voldoende contrast hebben met de achtergrond. Zie hiervoor succescriterium [_1.4.3, contrast (minimum)_](https://www.w3.org/Translations/WCAG21-nl/#contrast-minimum) en [1.4.11, contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG21-nl/#contrast-van-niet-tekstuele-content).
+Zorg voor functionele iconen dat deze voldoende contrast hebben met de achtergrond en omliggende kleuren. Zie hiervoor [WCAG techniek G207](https://www.w3.org/WAI/WCAG21/Techniques/general/G207) en [succescriterium 1.4.11, contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG21-nl/#contrast-van-niet-tekstuele-content). Er dient een minimale contrastverhouding van 3:1 ten opzichte van onderliggende en aangrenzende kleuren te zijn.
+
+Puur decoratieve iconen hoeven niet aan deze eis te voldoen.
 
 Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien, een leeg `alt=""` attribuut is dan voldoende.
 
 #### Klik/tapoppervlakte
 
-Zorg voor voldoende klik of tapoppervlakte van interactieve iconen, zeker als deze niet vergezeld zijn van een (klikbaar) tekstueel label. Mocht er onvoldoende oppervlakte zijn van het icoon zelf, dan kan een interactieve marge rondom het icoon bijdragen aan het vergroten van het klik/tapoppervlakte.
+Zorg voor voldoende klik of tapoppervlakte van interactieve iconen, zeker als deze niet vergezeld zijn van een (klikbaar) tekstueel label. Mocht er onvoldoende oppervlakte zijn van het icoon zelf, dan kan een interactieve marge rondom het icoon bijdragen aan het vergroten van het klik/tapoppervlakte. Gebruikers kunnen echter verward raken en denken dat de interactieve oppervlakte kleiner is dan ze waarnemen, en bovendien kunnen té kleine iconen onduidelijk zijn.
 
-Hanteer voor een losstaand icoon een minimale oppervlakte van 44dp. Zo wordt gewaarborgd dat een interactief icoon op een touchscreen door gebruikers makkelijk te activeren is.
+Hanteer voor een vrijstaand icoon [een minimale oppervlakte van 44×44 dp](https://www.w3.org/WAI/WCAG21/Understanding/target-size.html). Zo wordt gewaarborgd dat een interactief icoon met zowel een muis als op een touchscreen voor gebruikers makkelijk te activeren is. Dit is in het bijzonder belangrijk voor gebruikers met een motorieke stoornis, zoals gebruikers met Arthritis of Parkinson.
 
 #### Marge
 
