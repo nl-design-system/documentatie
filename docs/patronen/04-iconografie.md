@@ -86,6 +86,8 @@ Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `
 
 Zorg voor voldoende klik of tapoppervlakte van interactieve iconen, zeker als deze niet vergezeld zijn van een (klikbaar) tekstueel label. Mocht er onvoldoende oppervlakte zijn van het icoon zelf, dan kan een interactieve marge rondom het icoon bijdragen aan het vergroten van het klik/tapoppervlakte.
 
+Hanteer voor een losstaand icoon een minimale oppervlakte van 44dp. Zo wordt gewaarborgd dat een interactief icoon op een touchscreen door gebruikers makkelijk te activeren is.
+
 #### Marge
 
 Zorg tevens voor voldoende ruimte tussen iconen. Iconen moeten duidelijk gescheiden zijn en zeker wanneer iconen van interactie zijn voorzien dient de gebruiker deze afzonderlijke interacties bewust te kunnen onderscheiden en uit te voeren.
