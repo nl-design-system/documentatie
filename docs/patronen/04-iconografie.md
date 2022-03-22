@@ -80,7 +80,7 @@ Er zijn meerdere manieren om iconen op diverse groottes te tonen. Een icoon in S
 
 Zorg, net als bij tekstuele content, dat iconen voldoende contrast hebben met de achtergrond. Zie hiervoor succescriterium [_1.4.3, contrast (minimum)_](https://www.w3.org/Translations/WCAG21-nl/#contrast-minimum) en [1.4.11, contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG21-nl/#contrast-van-niet-tekstuele-content).
 
-Daar iconen vrijwel altijd ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien.
+Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien, een leeg `alt=""` attribuut is dan voldoende.
 
 #### Klik/tapoppervlakte
 
