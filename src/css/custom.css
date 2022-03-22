@@ -110,6 +110,30 @@
 .footer--dark {
   --ifm-footer-background-color: #00303d;
   --ifm-footer-color: white;
+  --ifm-footer-link-hover-color: white;
+}
+
+.footer__items {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 36px;
+}
+
+.footer__links {
+  justify-content: space-between;
+}
+
+.footer__links .col {
+  flex: none;
+  width: fit-content;
+}
+
+.footer__link-item svg {
+  display: none;
 }
 
 .footer__items {
@@ -169,6 +193,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   padding: 0;
 }
 
+.navbar .navbar__link--active:not([href="/documentatie/"]),
+#docusaurus-base-url-issue-banner-container ~ .navbar .navbar__link--active {
+  /* Somehow homepage nav item always gets navbar__link--active class and aria-current="page" attached, even when not active, this is a dirty fix to fix nav highlight */
+  border-bottom: 3px solid #148839;
+}
+
 .nlds-theme {
   min-height: 100vh;
   display: grid;
@@ -187,4 +217,36 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .markdown h1:first-child {
   --ifm-h1-font-size: 1.5rem;
+}
+
+.avatar-coreteam {
+  /* Avatar images of coreteam members on Over/Kernteam page */
+  width: 25%;
+  max-width: 150px;
+}
+
+.mega-footer-link,
+.homepage-hero__description_src-components-HomepageHero-module a {
+  /* Add white foreground color and underline to links in hero and footer */
+  color: white;
+  text-decoration: underline;
+}
+
+p a,
+li a {
+  text-decoration: underline; /* Add underline to links in running paragraph text and lists */
+}
+
+[class^="homepage-hero__description"] p a {
+  /* Dirty hack to target link in hero banner text */
+  color: white;
+  text-decoration: underline;
+}
+
+.theme-edit-this-page {
+  display: none; /* Temporarily disable Edit this page link since not every page can be editted by the community */
+}
+
+.pagination-nav {
+  display: none; /* Temporarily disabled pagination */
 }
