@@ -4,10 +4,6 @@ module.exports = {
     {
       items: [
         {
-          label: "Privacy verklaring",
-          to: "/docs/footer/privacy",
-        },
-        {
           label: "Toegankelijkheid",
           to: "/docs/footer/toegankelijkheidsverklaring",
         },
