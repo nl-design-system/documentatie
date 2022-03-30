@@ -21,14 +21,13 @@ import {
   DefinitionData,
 } from "@site/src/components/DefinitionList";
 
-import {
-  ComponentCard,
-  ComponentCards,
-} from "@site/src/components/ComponentCards";
+import { ComponentCard } from "@site/src/components/ComponentCard";
+
+import { ComponentOverview } from "@site/src/components/ComponentOverview";
+
+import componentOverview from "./component-overview.json";
 
 import { Link } from "@docusaurus/router";
-
-<!-- MDX om een mooi gerenderd overzicht van onze componenten te tonen? -->
 
 # Componenten van NL Design System
 
@@ -72,11 +71,4 @@ De componenten van NL Design System worden met een estafette aanpak gemaakt. Daa
 
 ## Componenten
 
-<ComponentCards>
-  <ComponentCard componentId="headings" title="Headings" status="community" />
-  <ComponentCard
-    componentId="date-picker"
-    title="Date picker"
-    status="community"
-  />
-</ComponentCards>
+<ComponentOverview components={componentOverview} />
