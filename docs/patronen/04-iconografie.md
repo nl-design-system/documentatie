@@ -189,6 +189,7 @@ Wil je een bijdrage leveren of wil je meer weten over deze iconenset? Neem dan c
 - [OpenGemeente iconen InVision omgeving](https://projects.invisionapp.com/share/EX128WTLTQ7F#/screens/463025527)
 - [Inclusief communiceren met iconen](https://directduidelijk.gebruikercentraal.nl/terugkijken-webinars/inclusief-communiceren-met-iconen/)
 - [Rijksiconen](https://www.rijkshuisstijl.nl/basiselementen/beeld/iconen-en-pictogrammen/overzicht-iconen)
+- [Beelkompas: Wat is een icoon](https://www.beeldkompas.nl/kennisbank/wat-is-een-icoon)
 - [The Icon Handbook](https://iconhandbook.co.uk/)
 - [Icon Usability](https://www.nngroup.com/articles/icon-usability/)
 - [When does iconography start to become useless?](https://uxdesign.cc/crimes-of-ux-3-useless-iconography-5bf06ef9fed)
@@ -196,3 +197,5 @@ Wil je een bijdrage leveren of wil je meer weten over deze iconenset? Neem dan c
 - [Het complete plaatje? Onderzoek naar het gebruik van iconen als middel voor inclusievere gemeentelijke communicatie in Nederland en Vlaanderen](https://taalunie.org/publicaties/204/onderzoek-naar-het-gebruik-van-iconen-als-middel-voor-inclusievere-gemeentelijke-communicatie-in-nederland-en-vlaanderen)
 - [Icons As Part Of A Great User Experience](https://www.smashingmagazine.com/2016/10/icons-as-part-of-a-great-user-experience/)
 - [Solid Vs. Outline Icons: Which Are Faster to Recognize?](https://uxmovement.medium.com/solid-vs-outline-icons-which-are-faster-to-recognize-9bb0fc24821f)
+- [Filled-in vs. Outline Icons: The Impact of Icon Style on Usability](https://cdr.lib.unc.edu/concern/masters_papers/6w924g35w)
+- [A complete guide to iconography](https://www.designsystems.com/iconography-guide/)
