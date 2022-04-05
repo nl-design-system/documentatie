@@ -4,7 +4,6 @@
   box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
   display: flex;
   flex-direction: column;
-  background-color: #148839;
   position: relative;
   border: 0.1rem solid #d1dfe3;
   box-sizing: border-box;
@@ -57,7 +56,6 @@
 
 .component-card__status {
   font-size: 12px;
-  background-color: gray;
   color: white;
   width: max-content;
   padding: 5px;
