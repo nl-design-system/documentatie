@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageHero from "../components/HomepageHero";
 import { HomepageActions } from "@site/src/components/HomepageActions";

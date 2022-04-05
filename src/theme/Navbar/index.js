@@ -7,8 +7,6 @@
 import React, { useCallback, useState, useEffect } from "react";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
-import SearchBar from "@theme/SearchBar";
-import Toggle from "@theme/Toggle";
 import {
   useThemeConfig,
   useMobileSecondaryMenuRenderer,
@@ -157,13 +155,6 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
           imageClassName="navbar__logo"
           titleClassName="navbar__title"
         />
-        {!colorModeToggle.disabled && (
-          <Toggle
-            className={styles.navbarSidebarToggle}
-            checked={colorModeToggle.isDarkTheme}
-            onChange={colorModeToggle.toggle}
-          />
-        )}
         <button
           type="button"
           className="clean-btn navbar-sidebar__close"

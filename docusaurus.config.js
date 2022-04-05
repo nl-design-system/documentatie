@@ -17,7 +17,6 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "nl-design-system", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
-
   presets: [
     [
       "classic",
@@ -25,6 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebarConfig.js"),
+          breadcrumbs: false,
           // Please change this to your repo.
           editUrl:
             "https://github.com/nl-design-system/documentatie/tree/main/",

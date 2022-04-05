@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import style from "./ComponentCard.module.css";
-import { Link } from "@docusaurus/router";
+import Link from "@docusaurus/Link";
 import clsx from "clsx";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { ExternalLink } from "./ExternalLink";
