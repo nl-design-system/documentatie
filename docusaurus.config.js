@@ -10,14 +10,13 @@ const footer = require('./footerConfig');
 const config = {
   title: 'NL Design System',
   tagline: 'Eén design system voor alle huisstijlen',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://nldesignsystem.nl',
   baseUrl: '/documentatie/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  projectName: 'documentatie', // Usually your repo name.
   presets: [
     [
       'classic',
