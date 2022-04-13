@@ -13,9 +13,9 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'documentatie/README',
+      docId: 'richtlijnen/README',
       position: 'left',
-      label: 'Documentatie',
+      label: 'Richtlijnen',
     },
     {
       type: 'doc',
