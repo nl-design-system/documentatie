@@ -15,7 +15,7 @@ keywords:
 
 Meedoen kan geheel op je eigen voorwaarden.
 
-Kijk eens naar [onze bestaande richtlijnen](/docs/documentatie/tekst-en-taalgebruik).
+Kijk eens naar [onze bestaande richtlijnen](/docs/richtlijnen/tekst-en-taalgebruik).
 
 ## Hier zijn wat middelen om je op weg te helpen:
 

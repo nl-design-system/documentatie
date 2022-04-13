@@ -14,12 +14,12 @@ keywords:
 
 # Leuk dat je als designer mee wil doen aan NL Design System
 
-Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we met [Figma](/docs/documentatie/figma). Het is uiteraard ook mogelijk om andere ontwerp-programmatuur te gebruiken en kennis te delen.
+Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we met [Figma](/docs/richtlijnen/figma). Het is uiteraard ook mogelijk om andere ontwerp-programmatuur te gebruiken en kennis te delen.
 
 ## Hier zijn wat middelen om je op weg te helpen:
 
 - [Aan de slag](aan-de-slag)
-- [Gebruik van Figma](/docs/documentatie/figma)
+- [Gebruik van Figma](/docs/richtlijnen/figma)
 - [Help ons de documentatie uit te breiden](bijdrage-leveren)
 
 ## Neem contact met ons op

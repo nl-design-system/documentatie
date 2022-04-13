@@ -1,18 +1,18 @@
 ---
-title: Documentatie NL Design System
+title: Richtlijnen NL Design System
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Documentatie
+sidebar_label: Richtlijnen
 sidebar_position: 1
-pagination_label: Documentatie
-description: NL Design System documentatie
+pagination_label: Richtlijnen
+description: NL Design System richtlijnen
 keywords:
   - wat
   - design system
   - documentatie
 ---
 
-# Documentatie
+# Richtlijnen
 
 In het NL Design System verzamelen we documentatie vanuit de community. Dit kan gebruikt worden om een project te starten of een bestaand product te optimaliseren.
 

@@ -29,7 +29,7 @@ export default function Home() {
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction title="Documentatie" href="docs/documentatie/">
+          <HomepageAction title="Richtlijnen" href="docs/richtlijnen/">
             <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
