@@ -1,15 +1,15 @@
-import React, { PropsWithChildren } from "react";
-import style from "./ComponentCard.module.css";
-import { Link } from "@docusaurus/router";
-import clsx from "clsx";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import { ExternalLink } from "./ExternalLink";
+import React, { PropsWithChildren } from 'react';
+import style from './ComponentCard.module.css';
+import { Link } from '@docusaurus/router';
+import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { ExternalLink } from './ExternalLink';
 
 enum Status {
-  "help-wanted" = "Help Wanted",
-  "community" = "Community",
-  "unstable" = "Unstable",
-  "stable" = "Stable",
+  'help-wanted' = 'Help Wanted',
+  'community' = 'Community',
+  'unstable' = 'Unstable',
+  'stable' = 'Stable',
 }
 
 interface ComponentCardProps {
@@ -20,58 +20,35 @@ interface ComponentCardProps {
   communityLink?: string;
 }
 
-export const ComponentCard = ({
-  componentId,
-  title,
-  status,
-  docLink,
-  communityLink,
-}: ComponentCardProps) => (
+export const ComponentCard = ({ componentId, title, status, docLink, communityLink }: ComponentCardProps) => (
   <div
     className={clsx(
-      style["component-card"],
+      style['component-card'],
       style[`component-card--${status}`],
-      !docLink && communityLink && style["component-card--undocumented"]
+      !docLink && communityLink && style['component-card--undocumented'],
     )}
   >
-    <div className={style["component-card__header"]}>
+    <div className={style['component-card__header']}>
       {docLink && (
-        <img
-          className={style["component-card__image"]}
-          src={useBaseUrl(`img/components/${componentId}.png`)}
-        />
+        <img className={style['component-card__image']} src={useBaseUrl(`img/components/${componentId}.png`)} />
       )}
     </div>
-    <div className={style["component-card__body"]}>
+    <div className={style['component-card__body']}>
       {docLink ? (
-        <Link
-          to={docLink}
-          className={clsx(
-            style["component-card__title"],
-            style["component-card__title--link"]
-          )}
-        >
+        <Link to={docLink} className={clsx(style['component-card__title'], style['component-card__title--link'])}>
           {title}
         </Link>
       ) : communityLink ? (
         <ExternalLink
           href={communityLink}
-          className={clsx(
-            style["component-card__title"],
-            style["component-card__title--link"]
-          )}
+          className={clsx(style['component-card__title'], style['component-card__title--link'])}
         >
           {title}
         </ExternalLink>
       ) : (
-        <p className={style["component-card__title"]}>{title}</p>
+        <p className={style['component-card__title']}>{title}</p>
       )}
-      <div
-        className={clsx(
-          style["component-card__status"],
-          style[`component-card__status--${status}`]
-        )}
-      >
+      <div className={clsx(style['component-card__status'], style[`component-card__status--${status}`])}>
         {Status[status]}
       </div>
     </div>
@@ -79,5 +56,5 @@ export const ComponentCard = ({
 );
 
 export const ComponentCards = ({ children }: PropsWithChildren<{}>) => (
-  <div className={style["component-cards"]}>{children}</div>
+  <div className={style['component-cards']}>{children}</div>
 );

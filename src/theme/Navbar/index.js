@@ -4,11 +4,11 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useCallback, useState, useEffect } from "react";
-import clsx from "clsx";
-import Translate from "@docusaurus/Translate";
-import SearchBar from "@theme/SearchBar";
-import Toggle from "@theme/Toggle";
+import React, { useCallback, useState, useEffect } from 'react';
+import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
+import SearchBar from '@theme/SearchBar';
+import Toggle from '@theme/Toggle';
 import {
   useThemeConfig,
   useMobileSecondaryMenuRenderer,
@@ -18,16 +18,16 @@ import {
   useLockBodyScroll,
   useWindowSize,
   useColorMode,
-} from "@docusaurus/theme-common";
-import { useActivePlugin } from "@docusaurus/plugin-content-docs/client";
-import NavbarItem from "@theme/NavbarItem";
-import Logo from "@theme/Logo";
-import IconClose from "@theme/IconClose";
-import styles from "./styles.module.css"; // retrocompatible with v1
-import { MainNav } from "@site/src/components/MainNav";
-import { AppHeader } from "@site/src/components/AppHeader";
+} from '@docusaurus/theme-common';
+import { useActivePlugin } from '@docusaurus/plugin-content-docs/client';
+import NavbarItem from '@theme/NavbarItem';
+import Logo from '@theme/Logo';
+import IconClose from '@theme/IconClose';
+import styles from './styles.module.css'; // retrocompatible with v1
+import { MainNav } from '@site/src/components/MainNav';
+import { AppHeader } from '@site/src/components/AppHeader';
 
-const DefaultNavItemPosition = "right";
+const DefaultNavItemPosition = 'right';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -36,12 +36,8 @@ function useNavbarItems() {
 // if position is unspecified, fallback to right (as v1)
 
 function splitNavItemsByPosition(items) {
-  const leftItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === "left"
-  );
-  const rightItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === "right"
-  );
+  const leftItems = items.filter((item) => (item.position ?? DefaultNavItemPosition) === 'left');
+  const rightItems = items.filter((item) => (item.position ?? DefaultNavItemPosition) === 'right');
   return {
     leftItems,
     rightItems,
@@ -51,7 +47,7 @@ function splitNavItemsByPosition(items) {
 function useMobileSidebar() {
   const windowSize = useWindowSize(); // Mobile sidebar not visible on hydration: can avoid SSR rendering
 
-  const shouldRender = windowSize === "mobile"; // || windowSize === 'ssr';
+  const shouldRender = windowSize === 'mobile'; // || windowSize === 'ssr';
 
   const [shown, setShown] = useState(false); // Close mobile sidebar on navigation pop
   // Most likely firing when using the Android back button (but not only)
@@ -70,7 +66,7 @@ function useMobileSidebar() {
     setShown((s) => !s);
   }, []);
   useEffect(() => {
-    if (windowSize === "desktop") {
+    if (windowSize === 'desktop') {
       setShown(false);
     }
   }, [windowSize]);
@@ -88,7 +84,7 @@ function useColorModeToggle() {
   const { isDarkTheme, setLightTheme, setDarkTheme } = useColorMode();
   const toggle = useCallback(
     (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
-    [setLightTheme, setDarkTheme]
+    [setLightTheme, setDarkTheme],
   );
   return {
     isDarkTheme,
@@ -107,7 +103,7 @@ function useSecondaryMenu({ sidebarShown, toggleSidebar }) {
       // /!\ content is set with useEffect,
       // so it's not available on mount anyway
       // "return !!content" => always returns false
-      false
+      false,
   ); // When content is become available for the first time (set in useEffect)
   // we set this content to be shown!
 
@@ -152,11 +148,7 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
   return (
     <div className="navbar-sidebar">
       <div className="navbar-sidebar__brand">
-        <Logo
-          className="navbar__brand"
-          imageClassName="navbar__logo"
-          titleClassName="navbar__title"
-        />
+        <Logo className="navbar__brand" imageClassName="navbar__logo" titleClassName="navbar__title" />
         {!colorModeToggle.disabled && (
           <Toggle
             className={styles.navbarSidebarToggle}
@@ -164,21 +156,14 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
             onChange={colorModeToggle.toggle}
           />
         )}
-        <button
-          type="button"
-          className="clean-btn navbar-sidebar__close"
-          onClick={toggleSidebar}
-        >
-          <IconClose
-            color="var(--ifm-color-emphasis-600)"
-            className={styles.navbarSidebarCloseSvg}
-          />
+        <button type="button" className="clean-btn navbar-sidebar__close" onClick={toggleSidebar}>
+          <IconClose color="var(--ifm-color-emphasis-600)" className={styles.navbarSidebarCloseSvg} />
         </button>
       </div>
 
       <div
-        className={clsx("navbar-sidebar__items", {
-          "navbar-sidebar__items--show-secondary": secondaryMenu.shown,
+        className={clsx('navbar-sidebar__items', {
+          'navbar-sidebar__items--show-secondary': secondaryMenu.shown,
         })}
       >
         <div className="navbar-sidebar__item menu">
@@ -191,11 +176,7 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
 
         <div className="navbar-sidebar__item menu">
           {items.length > 0 && (
-            <button
-              type="button"
-              className="clean-btn navbar-sidebar__back"
-              onClick={secondaryMenu.hide}
-            >
+            <button type="button" className="clean-btn navbar-sidebar__back" onClick={secondaryMenu.hide}>
               <Translate
                 id="theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
                 description="The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
@@ -222,8 +203,8 @@ function Navbar() {
 
   return (
     <div
-      className={clsx("navbar", "navbar--fixed-top", {
-        "navbar-sidebar--show": mobileSidebar.shown,
+      className={clsx('navbar', 'navbar--fixed-top', {
+        'navbar-sidebar--show': mobileSidebar.shown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
       })}
@@ -237,17 +218,10 @@ function Navbar() {
 
       <MainNav menuItems={leftItems} />
 
-      <div
-        role="presentation"
-        className="navbar-sidebar__backdrop"
-        onClick={mobileSidebar.toggle}
-      />
+      <div role="presentation" className="navbar-sidebar__backdrop" onClick={mobileSidebar.toggle} />
 
       {mobileSidebar.shouldRender && (
-        <NavbarMobileSidebar
-          sidebarShown={mobileSidebar.shown}
-          toggleSidebar={mobileSidebar.toggle}
-        />
+        <NavbarMobileSidebar sidebarShown={mobileSidebar.shown} toggleSidebar={mobileSidebar.toggle} />
       )}
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Sitemap = () => {
   return <h1>Sitemap</h1>;
