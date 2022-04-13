@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_nl_design_system_documentatie=self.webpackChunk_nl_design_system_documentatie||[]).push([[6836],{6936:function(e,n,t){t.r(n),t.d(n,{Sitemap:function(){return s}});var u=t(7294),s=function(){return u.createElement("h1",null,"Sitemap")};n.default=s}}]);
