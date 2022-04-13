@@ -13,6 +13,18 @@ module.exports = {
     },
     {
       type: 'doc',
+      docId: 'meedoen/README',
+      position: 'left',
+      label: 'Meedoen',
+    },
+    {
+      type: 'doc',
+      docId: 'componenten/README',
+      position: 'left',
+      label: 'Componenten',
+    },
+    {
+      type: 'doc',
       docId: 'richtlijnen/README',
       position: 'left',
       label: 'Richtlijnen',
@@ -25,21 +37,9 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'componenten/README',
-      position: 'left',
-      label: 'Componenten',
-    },
-    {
-      type: 'doc',
       docId: 'voorbeelden/README',
       position: 'left',
       label: 'Voorbeelden',
-    },
-    {
-      type: 'doc',
-      docId: 'meedoen/README',
-      position: 'left',
-      label: 'Meedoen',
     },
     {
       href: 'https://github.com/nl-design-system/backlog',
