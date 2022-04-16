@@ -11,7 +11,7 @@ const config = {
   title: 'NL Design System',
   tagline: 'Eén design system voor alle huisstijlen',
   url: 'https://nldesignsystem.nl',
-  baseUrl: '/documentatie/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
