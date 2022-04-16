@@ -193,7 +193,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   padding: 0;
 }
 
-.navbar .navbar__link--active:not([href="/documentatie/"]),
+.navbar .navbar__link--active:not([href="/"]),
 #docusaurus-base-url-issue-banner-container ~ .navbar .navbar__link--active {
   /* Somehow homepage nav item always gets navbar__link--active class and aria-current="page" attached, even when not active, this is a dirty fix to fix nav highlight */
   border-bottom: 3px solid #148839;

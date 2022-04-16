@@ -147,7 +147,7 @@
         }
       ]
     },
-    "docLink": "/documentatie/docs/componenten/date-picker",
+    "docLink": "/docs/componenten/date-picker",
     "backlog": "https://github.com/nl-design-system/backlog/issues/35"
   },
   {
@@ -214,7 +214,7 @@
         }
       ]
     },
-    "docLink": "/documentatie/docs/componenten/headings",
+    "docLink": "/docs/componenten/headings",
     "backlog": "https://github.com/nl-design-system/backlog/issues/114"
   },
   {
