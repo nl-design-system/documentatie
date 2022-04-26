@@ -16,7 +16,7 @@ keywords:
 
 Het NL Design System is een initiatief van [Gebruiker Centraal](https://www.gebruikercentraal.nl/). De opdrachtgever van het project is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
 
-Het NL Design System is van en voor de hele overheid. Met [het centrale kernteam](kernteam) als spil werken we op dagelijkse basis samen met de community. Zo werken veel verschillende (overheids)organisaties aan de ontwikkeling van een centrale basis voor gemeenschappelijke afspraken, code en patronen voor het maken van digitale overheidsproducten.
+Het NL Design System is van en voor de hele overheid. Met [het centrale kernteam](07-samen-met-kernteam.md) als spil werken we op dagelijkse basis samen met de community. Zo werken veel verschillende (overheids)organisaties aan de ontwikkeling van een centrale basis voor gemeenschappelijke afspraken, code en patronen voor het maken van digitale overheidsproducten.
 
 ## Contact met het kernteam
 
@@ -44,9 +44,10 @@ Sluit je aan bij de [Code for NL community](https://praatmee.codefor.nl) waar we
 
 Omdat het Design System een community-effort is, kunnen we voor zowel de technische doorontwikkeling als op het gebied van content en interactiepatronen (zoals formulieren) alle hulp gebruiken. Ook hebben we behoefte aan specialisten die zich willen inzetten om het NL Design System te verbeteren, denk aan meedoen als:
 
-- [Product owner](01-als-product-owner/README.md)
-- [Designer](02-als-designer/README.md)
-- [Developer](03-als-developer/README.md)
-- [Copywriter](04-als-copywriter/README.md)
+- [Product owner](01-als-organisatie/README.md)
+- [Product owner](02-als-leverancier/README.md)
+- [Designer](04-als-designer/README.md)
+- [Developer](05-als-developer/README.md)
+- [Copywriter](06-als-copywriter/README.md)
 
 <!-- DEZE PAGINA ALS MDX MET MOOI DESIGN? -->

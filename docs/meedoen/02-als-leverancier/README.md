@@ -1,21 +1,22 @@
 ---
-title: Meedoen als product owner - Overzicht
+title: Meedoen als leverancier - Overzicht
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Overzicht
 sidebar_position: 1
 pagination_label: Index
-description: Meedoen als product owner - Overzicht
+description: Meedoen als leverancier - Overzicht
 keywords:
-  - product owner
+  - leverancier
 ---
 
-# Leuk dat je als product owner mee wil doen aan NL Design System
+# Leuk dat je als leverancier mee wil doen aan NL Design System
 
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [Aan de slag](01-nlds-wat-voor-jouw-project.md)
-- [Help ons de documentatie uit te breiden](02-bijdrage-leveren.md)
+- [NL Design System in jouw projecten?](01-nlds-wat-voor-jouw-projecten.md)
+- [Design tokens de manier om 1 project voor meerdere organisaties in te zetten](02-design-tokens.md)
+- [Bijdragen leveren als leverancier](03-bijdrage-leveren.md)
 
 ## Neem contact met ons op
 
