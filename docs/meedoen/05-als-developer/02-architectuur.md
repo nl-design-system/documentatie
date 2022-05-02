@@ -1,7 +1,7 @@
 ---
 title: Architectuur
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: Architectuur
 pagination_label: Architectuur
 description: NL Design System architectuur
@@ -127,35 +127,15 @@ Deze eigen omgeving biedt je de mogelijkheid om op eigen tempo een bibliotheek s
 
 De nieuwe [NL Design System werkwijze](https://designsystem.gebruikercentraal.nl/nieuwe-werkwijze/) betekent dat je geïmporteerde componenten van anderen kunt nomineren voor de centrale NL Design System componentenbibliotheek, wanneer ze in jouw organisatie ook succesvol blijken te werken.
 
-Wanneer je extra wensen hebt voor een component, dan kun je die melden op de [NL Design System backlog](http://github.com/nl-design-system/backlog/issues).
-
 ## Backlog voor coördinatie van eisen
 
-De "levende" backlog van NL Design System moet ontwikkelaars en designers per component en goed overzicht geven van de uiteenlopende wensen en eisen die in community bestaan.
+De "levende" [backlog van NL Design System](http://github.com/nl-design-system/backlog/issues) moet ontwikkelaars en designers per component en goed overzicht geven van de uiteenlopende wensen en eisen die in community bestaan.
+
+Wanneer je extra wensen hebt voor een component, dan kun je die melden op de [NL Design System backlog](http://github.com/nl-design-system/backlog/issues).
 
 Wanneer deelnemende organisaties helpen om voor elk component en patroon de eisen volledig te krijgen, dan kunnen teams die daadwerkelijk de component bouwen sneller aan alle eisen voldoen. Bovendien helpt het om de eisen te documenteren waaraan een huidige versie van een component voldoet, zodat die functionaliteit niet per ongeluk verloren gaat in een latere versie.
 
 De backlog is ook de centrale plek waar je kunt ontdekken welke organisaties eigen varianten van een component hebben, waar jouw organisatie mogelijk op door kan bouwen.
-
-# Meewerken aan NL Design System
-
-Wil je een nieuw project starten met NL Design System? Dan vragen we je te letten op de volgende punten:
-
-- Deel je code als open source met de [EUPL-1.2 licentie](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12).
-- Vermijd huisstijl-specifieke code in je CSS, gebruik in plaats daarvan CSS variabelen voor design tokens NL Design System die ingevuld kunnen worden met de huisstijl van anderen.
-- Deel de styling van componenten in een `.css` bestand met alleen BEM class names, en zonder "side effects": geen code voor `body` , `p` of `:root`.
-- Begin namen in je code met een prefix voor jouw organisatie, zoals in BEM class names, CSS variabelen en Custom Elements. Wij gebruiken `nl-`, jij kiest iets anders.
-- Baseer de namen in je code waar mogelijk op bestaande termen uit HTML, CSS, SVG en ARIA; deze hebben de voorkeur boven namen uit populaire frameworks en boven namen die je zelf bedenkt.
-- Publiceer een overzicht van je componenten in een Storybook website, met HTML voorbeeldcode van de componenten.
-- Wanneer je aan een component werkt, deel een link naar jouw werk in de backlog van NL Design System op GitHub.
-- In plaats alle componenten zelf te schrijven, probeer eerst in de backlog te vinden of iemand anders aan die component werkt, en begin met de code van een andere contributor.
-- Wanneer componenten van anderen niet aan al je wensen voldoen, deel dan je bevindingen in de backlog en kijk of er samenwerking mogelijk is wanneer je een eigen variant wilt ontwikkelen.
-
-Op deze manier zijn wij een samenwerking begonnen met meerdere teams, en willen we dit jaar bewijzen dat ondanks alle verschillen er toch heel veel mogelijkheden zijn voor samenwerken.
-
-Samen willen we een gebruiksvriendelijke online overheid nastreven door kennis en inzichten over toegankelijkheid en gebruiksvriendelijkheid te delen. We kunnen enorme impact hebben wanneer we inzichten uit gebruikersonderzoek en toegankelijkheidsonderzoek uit heel het land delen op de backlog van NL Design System.
-
-Kennis delen is maar een gedeelte van de oplossing: de kennis moet op het juiste moment op de juiste plek aanwezig zijn. Wat ons betreft is dat: op het moment dat een component wordt doorontwikkeld moet de kennis op de backlog van het ontwikkelteam staan! Met de backlog van NL Design System kunnen we gebruikers een stem geven in nieuwe ontwikkelingen van onze online overheid, en daarmee zetten de teams die op basis van de backlog meebouwen aan NL Design System echt de gebruiker centraal.
 
 ---
 

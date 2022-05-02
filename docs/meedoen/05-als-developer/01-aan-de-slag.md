@@ -1,7 +1,7 @@
 ---
 title: Developer getting started
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: Aan de slag
 pagination_label: Aan de slag
 description: Als developer aan de slag met NL Design System
@@ -29,7 +29,7 @@ Wil je een thema voor een andere (commerciële) organisatie ontwikkelen, dan adv
 
 ## Begin met hergebruik van componenten uit de community
 
-Teams die diensten ontwikkelen met NL Design System hebben natuurlijk al veel van de meestgebruikte componenten ontwikkeld en open source beschikbaar gesteld. [De NL Design System architectuur](/docs/richtlijnen/architectuur) houdt in dat die teams de huisstijl buiten de code van de component opslaan in een losse configuratie, zodat de component hopelijk ook voor jou herbruikbaar terwijl jouw design anders is.
+Teams die diensten ontwikkelen met NL Design System hebben natuurlijk al veel van de meestgebruikte componenten ontwikkeld en open source beschikbaar gesteld. [De NL Design System architectuur](02-architectuur.md) houdt in dat die teams de huisstijl buiten de code van de component opslaan in een losse configuratie, zodat de component hopelijk ook voor jou herbruikbaar terwijl jouw design anders is.
 
 Wanneer je een inventarisatie maakt welke componenten je gebruikt en nog nodig hebt voor je project, dan kun je dat overzicht houden naast de [lijst met NL Design System componenten](/docs/componenten/) van de community. Zo kun je snel zien welke componenten al bestaan, en of je in andere libraries nog aanvullingen moet vinden of zelf componenten moet ontwikkelen. Je kunt ook even contact opnemen met het kernteam om samen een _component assessment_ te doen van je project.
 

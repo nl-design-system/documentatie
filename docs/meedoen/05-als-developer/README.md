@@ -16,13 +16,10 @@ keywords:
 ## Hier zijn wat middelen om je op weg te helpen:
 
 - [Aan de slag](01-aan-de-slag.md)
-- [Componenten](/docs/componenten)
-- [Nieuw of bestaand component gebruiken](02-samenwerken-aan-componenten.md)
-- [Help ons de componenten bibliotheek uit te breiden](03-bijdrage-leveren.md)
-
-## Neem contact met ons op
-
-<!-- KLOPT DIT E-MAIL ADRESS? -->
-
-- Email het kernteam: [nldesignsystem@ictu.nl](mailto:nldesignsystem@ictu.nl)
-- Vind ons en de community op Slack: [#nl-design-system kanaal](https://praatmee.codefor.nl)
+- [Componenten overzicht](/docs/componenten)
+- [Architectuur](02-architectuur.md)
+- [Thema maken voor bestaande componenten](03-thema-maken.mdx)
+- [Nieuw of bestaand component gebruiken](04-samenwerken-aan-componenten.md)
+- [Component inzetten](05-component-inzetten.mdx)
+- [Help ons de componenten bibliotheek uit te breiden](08-meewerken-als-developer.md)
+- [Maak kennis met het kernteam](../07-samen-met-kernteam.md)

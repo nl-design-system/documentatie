@@ -1,9 +1,9 @@
 ---
-title: Samenwerken aan componenten
+title: Bestaand of nieuw component gebruiken
 hide_title: true
-hide_table_of_contents: true
-sidebar_label: Component nodig
-pagination_label: Component nodig
+hide_table_of_contents: false
+sidebar_label: Component kiezen
+pagination_label: Component kiezen
 description: Bestaand of nieuw component gebruiken?
 keywords:
   - developer
@@ -12,7 +12,7 @@ keywords:
   - samenwerken
 ---
 
-# Samenwerken aan componenten
+# Bestaand of nieuw component gebruiken
 
 Stel je hebt een nieuwe wens voor een component of functionaliteit. Dan wil je natuurlijk weten hoe je hiervoor het NL Design System kunt gebruiken.
 
