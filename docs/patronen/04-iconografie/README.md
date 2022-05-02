@@ -18,6 +18,9 @@ keywords:
 
 Iconen helpen bezoekers om de juiste taak te kiezen en snel functionaliteit te herkennen en begrijpen. Ze ondersteunen de leesbaarheid en scanbaarheid van informatie.
 
+“Een icoon geeft een sterk vereenvoudigde weergave van een object of principe. De context zorgt ervoor dat het icoon betekenis krijgt.”
+[Wat is een icoon?]{https://www.beeldkompas.nl/kennisbank/wat-is-een-icoon)
+
 ## Het nut van iconen
 
 - Iconen kunnen een gemeenschappelijke visuele taal zijn die een taalkloof overbrugt
