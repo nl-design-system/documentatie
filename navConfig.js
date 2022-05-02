@@ -25,12 +25,6 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'richtlijnen/README',
-      position: 'left',
-      label: 'Richtlijnen',
-    },
-    {
-      type: 'doc',
       docId: 'patronen/README',
       position: 'left',
       label: 'Patronen',

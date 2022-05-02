@@ -32,9 +32,6 @@ export default function Home() {
           <HomepageAction title="Componenten" href="docs/componenten/">
             <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
           </HomepageAction>
-          <HomepageAction title="Richtlijnen" href="docs/richtlijnen/">
-            <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
-          </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
             <p>Oplossingen voor veelvoorkomende problemen en herhalende klantreizen.</p>
           </HomepageAction>

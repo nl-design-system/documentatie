@@ -1,7 +1,7 @@
 .homepage-actions {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-block: 40px;
   gap: 32px;
 }
