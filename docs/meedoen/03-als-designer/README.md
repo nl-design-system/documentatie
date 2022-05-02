@@ -14,17 +14,12 @@ keywords:
 
 # Leuk dat je als designer mee wil doen aan NL Design System
 
-Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we met [Figma](/docs/richtlijnen/figma). Het is uiteraard ook mogelijk om andere ontwerp-programmatuur te gebruiken en kennis te delen.
+Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we met [Figma](https://www.figma.com). Het is uiteraard ook mogelijk om andere ontwerp-programmatuur te gebruiken en kennis te delen.
 
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [Aan de slag](aan-de-slag)
-- [Gebruik van Figma](/docs/richtlijnen/figma)
-- [Help ons de documentatie uit te breiden](bijdrage-leveren)
-
-## Neem contact met ons op
-
-<!-- KLOPT DIT E-MAIL ADRESS? -->
-
-- Email het kernteam: [nldesignsystem@ictu.nl](mailto:nldesignsystem@ictu.nl)
-- Vind ons en de community op Slack: [#nl-design-system kanaal](https://praatmee.codefor.nl)
+- [Aan de slag](01-aan-de-slag.md)
+- [Architectuur](02-architectuur.md)
+- [Help ons de documentatie uit te breiden](03-bijdrage-leveren.md)
+- [Gebruik van Figma](04-figma/README.md)
+- [Maak kennis met het kernteam](../06-samen-met-kernteam.md)
