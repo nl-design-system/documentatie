@@ -30,6 +30,14 @@ Maak je eigen icoon dat aansluit op onderstaande set met deze Adobe Illustrator-
 
 Door dit bestand te downloaden, gaat je akkoord met de Creative Commons licentie overeenkomst.
 
+![Overzicht van iconenset](https://user-images.githubusercontent.com/248921/166216868-2b6fa404-bed4-40bb-924b-3fdda3d27e2b.png)
+
+Overzicht van de iconenset op een lichte achtergrond.
+
+![Overzicht van iconenset (diapositief)](https://user-images.githubusercontent.com/248921/166216905-c8431616-d482-4475-8d24-afc2e6f94491.png)
+
+Overzicht van de iconenset, diapositiefop een donkere achtergrond.
+
 ### Raster- en hoofdlijnvormen {#raster-hoofdlijnvormen}
 
 De iconen hebben een consistent uiterlijk, wat zorgt voor leesbaarheid en duidelijkheid, zelfs als ze kleiner worden gebruikt.
@@ -40,6 +48,10 @@ De iconen hebben een formaat van 48 dp x 48 dp. Maak iconen voor weergave op 100
 
 #### Het raster
 
+![Iconenraster](https://user-images.githubusercontent.com/248921/166217163-4279daf9-3683-4135-9507-ee546ac87345.png)
+
+Het raster wat gebruikt wordt voor OpenGemeenten iconen.
+
 Het raster stelt duidelijke regels vast voor het plaatsen van lijnen en vormen van elementen. Maak waar mogelijk gebruik van rechte horizontale, verticale en diagonale lijnen om de consistentie in de uitstraling van de iconenset te behouden.
 
 #### Pixel perfect
@@ -49,6 +61,8 @@ Om te voorkomen dat een pictogram wordt vervormd, plaats je vormen altijd "op pi
 ### Regular versie
 
 De basis variant van de iconen is de Regular versie. Deze heeft een lijndikte van 3 dp met een tegenlijn (counter stroke) van 2 dp.
+
+![Lijndikte van OpenGemeenten iconen](https://user-images.githubusercontent.com/248921/166217265-21c80877-e5c6-4814-ba47-5d618903afd1.png)
 
 A. Lijndikte 3 dp
 
@@ -69,6 +83,8 @@ Voor details in illustratie kan gebruikt worden gemaakt van een 2 dp lijn.
 ### Regular diapositief
 
 Om iconen op een donkere achtergrond te gebruiken is er voor ieder icoon een diapositieve versie nodig. Beeldschermweergave kan er voor zorgen dat lichte lijnen dichtlopen. Subtiele aanpassingen kunnen helpen de leesbaarheid te verbeteren. Daarom krijgt de tegenlijn een dikte van 3dp mee in plaats van de 2 dp zoals de regular versie.
+
+![Lijndikte van OpenGemeenten diapositieve iconen](https://user-images.githubusercontent.com/248921/166217464-0d691a44-500a-430b-86ef-66ea7608ab45.png)
 
 A. Lijndikte 3 dp
 
