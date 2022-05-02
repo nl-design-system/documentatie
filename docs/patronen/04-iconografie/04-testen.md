@@ -41,6 +41,8 @@ Er hebben 14 van de 17 mensen geantwoord op onze vraag over het parkeer icoon.
 
 We hebben deze vraag gesteld: “Welke van deze twee knoppen vindt jij het beste passen bij informatie over parkeren?”
 
+![De twee verschillende iconen die getest zijn](https://user-images.githubusercontent.com/248921/166207736-7911d687-5092-4a31-a5bc-ef0b93e97f5e.png)
+
 - 2 van de 14 mensen vonden Knop A het beste passen.
 - 12 van de 14 mensen vonden knop B het beste passen.
 
