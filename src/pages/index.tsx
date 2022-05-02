@@ -18,7 +18,7 @@ export default function Home() {
     >
       <HomepageHero
         title="Over het NL Design System"
-        ctaLink="docs/meedoen/introduction"
+        ctaLink="docs/meedoen/introductie"
         cta="Meer over het NL Design System"
       >
         {
