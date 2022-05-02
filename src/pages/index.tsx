@@ -16,7 +16,11 @@ export default function Home() {
       title={`${siteConfig.title} - homepage`}
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
     >
-      <HomepageHero title="Over het NL Design System" ctaLink="docs/over/" cta="Meer over het NL Design System">
+      <HomepageHero
+        title="Over het NL Design System"
+        ctaLink="docs/meedoen/introduction"
+        cta="Meer over het NL Design System"
+      >
         {
           <>
             <p>
