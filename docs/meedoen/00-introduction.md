@@ -2,16 +2,16 @@
 title: Introductie NL Design System
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Introductie
+sidebar_label: Introductie NL Design System
 sidebar_position: 1
 pagination_label: Introductie
-description: NL Design System in 10 minuten
+description: NL Design System introductie
 keywords:
   - design system
   - introductie
 ---
 
-# Wat is het NL Design System
+# Introductie NL Design System
 
 ## Wat is een design system?
 
