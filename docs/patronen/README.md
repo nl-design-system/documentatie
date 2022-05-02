@@ -21,6 +21,5 @@ In het NL Design System verzamelen we UX-patronen. Dit zijn herbruikbare oplossi
 ## Hier vind je de volgende patronen:
 
 - [DigiD afnemers richtlijnen](02-digid.md)
-- [Hoe om te gaan met formulieren](03-formulieren/README.md)
-
-Deze patronen worden regelmatig, op basis van input en praktijkervaring, bijgewerkt.
+- [Formulier patronen](03-formulieren/README.md)
+- [Iconografie](04-iconografie/README.md)
