@@ -7,11 +7,11 @@ sidebar_position: 1
 pagination_label: OpenGemeenten iconen
 description: Iconografie - OpenGemeenten iconen
 keywords:
-	- iconografie
-	- iconography
-	- icons
-	- toegankelijkheid
-	- OpenGemeenten
+  - iconografie
+  - iconography
+  - icons
+  - toegankelijkheid
+  - OpenGemeenten
 ---
 
 <!-- @license CC0-1.0 -->

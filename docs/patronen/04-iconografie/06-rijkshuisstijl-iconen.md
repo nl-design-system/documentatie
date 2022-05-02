@@ -7,11 +7,11 @@ sidebar_position: 1
 pagination_label: Rijkshuisstijl iconen
 description: Iconografie - Rijkshuisstijl iconen
 keywords:
-	- iconografie
-	- iconography
-	- icons
-	- toegankelijkheid
-	- Rijkshuisstijl
+  - iconografie
+  - iconography
+  - icons
+  - toegankelijkheid
+  - Rijkshuisstijl
 ---
 
 <!-- @license CC0-1.0 -->

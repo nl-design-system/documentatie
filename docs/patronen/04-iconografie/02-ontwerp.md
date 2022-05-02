@@ -7,9 +7,9 @@ sidebar_position: 1
 pagination_label: Ontwerp
 description: Iconografie - Ontwerp
 keywords:
-	- iconografie
-	- iconography
-	- icons
+  - iconografie
+  - iconography
+  - icons
 ---
 
 <!-- @license CC0-1.0 -->

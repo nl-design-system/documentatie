@@ -7,12 +7,12 @@ sidebar_position: 1
 pagination_label: Testen
 description: Iconografie - Testen van iconen
 keywords:
-	- iconografie
-	- iconography
-	- icons
-	- toegankelijkheid
-	- inclusie
-	- testen
+  - iconografie
+  - iconography
+  - icons
+  - toegankelijkheid
+  - inclusie
+  - testen
 ---
 
 <!-- @license CC0-1.0 -->

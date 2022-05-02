@@ -7,11 +7,11 @@ sidebar_position: 1
 pagination_label: Ontwerp
 description: Iconografie - Toegankelijkheid en inclusie
 keywords:
-	- iconografie
-	- iconography
-	- icons
-	- toegankelijkheid
-	- inclusie
+  - iconografie
+  - iconography
+  - icons
+  - toegankelijkheid
+  - inclusie
 ---
 
 <!-- @license CC0-1.0 -->
