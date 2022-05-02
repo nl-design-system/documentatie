@@ -57,6 +57,10 @@ Je kan dus met iconen de bezoekers helpen navigeren of de de aandacht vestigen o
 
 ### 5. [OpenGemeente iconen](05-opengemeenten-iconen.md)
 
+- [ ] [Icoon zelf maken volgens de OpenGemeenten richtlijnen](05-opengemeenten-iconen#icoon-maken)
+- [ ] [Raster- en hoofdlijnvormen](05-opengemeenten-iconen#raster-hoofdlijnvormen)
+- [ ] [Formaat](05-opengemeenten-iconen#formaat)
+- [ ] [Raster](05-opengemeenten-iconen#raster)
 - [ ] [Voorwaarden voor gebruik](05-opengemeenten-iconen#voorwaarden)
 - [ ] [Meer informatie](05-opengemeenten-iconen#meer-informatie)
 

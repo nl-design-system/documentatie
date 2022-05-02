@@ -20,7 +20,75 @@ keywords:
 
 De OpenGemeenten iconen is een iconenset vóór gemeenten, dóór gemeenten. Deze set wordt onderhouden door [OpenGemeenten](https://www.opengemeenten.nl/projecten/iconen).
 
-Deze open source iconenset is special ontwikkeld voor gemeenten. Wil jij als gemeente je communicate verbeteren, dan kan je deze iconenset gratis gebruiken. Deze iconen zijn ook te gebruiken voor drukwerk.
+Iconen helpen bezoekers om de juiste taak te kiezen. Ze ondersteunen de leesbaarheid en scanbaarheid van informatie. Onderstaande iconenset is speciaal ontwikkeld voor gemeenten en overheid. Wil jij als organisatie je communicatie verbeteren, dan kan je deze iconenset vrij gebruiken.
+
+## Icoon zelf maken volgens de OpenGemeenten richtlijnen {#icoon-maken}
+
+Mis je een icoon voor jouw project dan kun je dit icoon aanvragen bij OpenGemeenten maar je kunt deze ook zelf maken op basis van onderstaande richtlijnen.
+
+Maak je eigen icoon dat aansluit op onderstaande set met deze Adobe Illustrator-bestanden, inclusief het 48dp-raster.
+
+Door dit bestand te downloaden, gaat je akkoord met de Creative Commons licentie overeenkomst.
+
+### Raster- en hoofdlijnvormen {#raster-hoofdlijnvormen}
+
+De iconen hebben een consistent uiterlijk, wat zorgt voor leesbaarheid en duidelijkheid, zelfs als ze kleiner worden gebruikt.
+
+#### Formaat {#formaat}
+
+De iconen hebben een formaat van 48 dp x 48 dp. Maak iconen voor weergave op 100% schaal voor pixel-perfecte nauwkeurigheid. Het icoon moet binnen het tekengebied van 36 dp x 36 dp blijven. Het tekengebied krijg 6 dp ruimte rondom, dit is de padding van het icoon.
+
+#### Het raster
+
+Het raster stelt duidelijke regels vast voor het plaatsen van lijnen en vormen van elementen. Maak waar mogelijk gebruik van rechte horizontale, verticale en diagonale lijnen om de consistentie in de uitstraling van de iconenset te behouden.
+
+#### Pixel perfect
+
+Om te voorkomen dat een pictogram wordt vervormd, plaats je vormen altijd "op pixel" door de X- en Y-coördinaten in gehele getallen te maken, zonder decimalen.
+
+### Regular versie
+
+De basis variant van de iconen is de Regular versie. Deze heeft een lijndikte van 3 dp met een tegenlijn (counter stroke) van 2 dp.
+
+A. Lijndikte 3 dp
+
+De regular iconen krijgen een lijndikte van 3 dp, inclusief curven, hoeken en zowel binnen- als buitenlijnen.
+
+B. Tegenlijn (counter stroke) 2 dp
+
+De regular iconen krijgen een lijndikte van 3 dp, inclusief curven, hoeken en zowel binnen- als buitenlijnen.
+
+C. Hoeken
+
+Hoekradiussen zijn standaard 3 dp. Binnenhoeken moeten vierkant zijn, niet afgerond.
+
+D. Illustratieve lijndikte 2 dp
+
+Voor details in illustratie kan gebruikt worden gemaakt van een 2 dp lijn.
+
+### Regular diapositief
+
+Om iconen op een donkere achtergrond te gebruiken is er voor ieder icoon een diapositieve versie nodig. Beeldschermweergave kan er voor zorgen dat lichte lijnen dichtlopen. Subtiele aanpassingen kunnen helpen de leesbaarheid te verbeteren. Daarom krijgt de tegenlijn een dikte van 3dp mee in plaats van de 2 dp zoals de regular versie.
+
+A. Lijndikte 3 dp
+
+De regular iconen krijgen een lijndikte van 3 dp, inclusief curven, hoeken en zowel binnen- als buitenlijnen.
+
+B. Tegenlijn (counter stroke) 3 dp
+
+De diapositieve iconen krijgen een lijndikte van 3 dp, inclusief curven, hoeken en zowel binnen- als buitenlijnen.
+
+C. Hoeken
+
+Hoekradiussen zijn standaard 3 dp. Binnenhoeken moeten vierkant zijn, niet afgerond.
+
+D. Illustratieve lijndikte 2 dp
+
+Als een icoon complexe details vereist kan gebruikt worden gemaakt van een 2 dp lijn.
+
+E. Variabelen
+
+Het paspoort krijgt hier een grotere hoekradius, bepaald door de lijndikte en tegenlijn van de bovenzijde van het paspoort. Dit zijn afwegingen die per icoon gemaakt moeten worden.
 
 ## Voorwaarden voor gebruik {#voorwaarden}
 
