@@ -16,7 +16,7 @@ keywords:
 
 Het NL Design System is een initiatief van [Gebruiker Centraal](https://www.gebruikercentraal.nl/). De opdrachtgever van het project is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
 
-Het NL Design System is van en voor de hele overheid. Met [het centrale kernteam](06-samen-met-kernteam.md) als spil werken we op dagelijkse basis samen met de community. Zo werken veel verschillende (overheids)organisaties aan de ontwikkeling van een centrale basis voor gemeenschappelijke afspraken, code en patronen voor het maken van digitale overheidsproducten.
+Het NL Design System is van en voor de hele overheid. Met [het centrale kernteam](06-contact-met-kernteam.md) als spil werken we op dagelijkse basis samen met de community. Zo werken veel verschillende (overheids)organisaties aan de ontwikkeling van een centrale basis voor gemeenschappelijke afspraken, code en patronen voor het maken van digitale overheidsproducten.
 
 ## Contact met het kernteam
 

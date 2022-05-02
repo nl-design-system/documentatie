@@ -22,4 +22,4 @@ Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we m
 - [Architectuur](02-architectuur.md)
 - [Help ons de documentatie uit te breiden](03-bijdrage-leveren.md)
 - [Gebruik van Figma](04-figma/README.md)
-- [Maak kennis met het kernteam](../06-samen-met-kernteam.md)
+- [Maak kennis met het kernteam](../06-contact-met-kernteam.md)

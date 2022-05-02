@@ -15,16 +15,9 @@ keywords:
 
 Meedoen kan geheel op je eigen voorwaarden.
 
-Kijk eens naar [onze bestaande richtlijnen](/docs/richtlijnen/tekst-en-taalgebruik).
-
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [Aan de slag](aan-de-slag)
-- [Help ons de documentatie uit te breiden](bijdrage-leveren)
-
-## Neem contact met ons op
-
-<!-- KLOPT DIT E-MAIL ADRESS? -->
-
-- Email het kernteam: [nldesignsystem@ictu.nl](mailto:nldesignsystem@ictu.nl)
-- Vind ons en de community op Slack: [#nl-design-system kanaal](https://praatmee.codefor.nl)
+- [Aan de slag](01-aan-de-slag.md)
+- [Tekst en taalgebruik richtlijnen](02-tekst-en-taalgebruik.md)
+- [Help ons de documentatie uit te breiden](03-bijdrage-leveren.md)
+- [Maak kennis met het kernteam](../06-contact-met-kernteam.md)

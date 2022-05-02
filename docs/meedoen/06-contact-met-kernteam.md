@@ -2,13 +2,14 @@
 title: Kernteam
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Over het kernteam
-pagination_label: Kernteam
+sidebar_label: Contact met kernteam
+pagination_label: Contact met kernteam
 description: Kernteam NL Design System
 keywords:
   - kernteam
   - over ons
   - nl design system
+  - contact
 ---
 
 # Over het kernteam
