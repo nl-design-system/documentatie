@@ -22,4 +22,4 @@ keywords:
 - [Nieuw of bestaand component gebruiken](04-samenwerken-aan-componenten.md)
 - [Component inzetten](05-component-inzetten.mdx)
 - [Help ons de componenten bibliotheek uit te breiden](08-meewerken-als-developer.md)
-- [Maak kennis met het kernteam](../07-samen-met-kernteam.md)
+- [Maak kennis met het kernteam](../06-samen-met-kernteam.md)
