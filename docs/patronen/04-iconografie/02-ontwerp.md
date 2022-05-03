@@ -31,7 +31,7 @@ keywords:
 
 ## Outline vs. filled (solid) {#outline-filled}
 
-Probeer zogenaamde zogenaamde outlined (lijn) iconen niet in dezelfde applicatie te mixen met filled (gevulde) iconen. Het is wel mogelijk om bijvoorbeeld gevulde iconen te gebruiken als actieve staat (focus/hover) wanneer standaard lijn-iconen worden gebruikt. (Zie Toegankelijkheid)
+Probeer zogenaamde outlined (lijn) iconen niet in dezelfde applicatie te mixen met filled (gevulde) iconen. Het is wel mogelijk om bijvoorbeeld gevulde iconen te gebruiken als actieve staat (focus/hover) wanneer standaard lijn-iconen worden gebruikt. (Zie Toegankelijkheid)
 
 ### Lijnen {#lijnen}
 
