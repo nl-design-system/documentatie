@@ -24,14 +24,14 @@ keywords:
 - Maak de vormen van een icoon niet onnodig complex maar tracht deze zo simpel mogelijk te houden zonder duidelijkheid te verliezen.
 - Zorg dat iconen consistent met elkaar zijn. Denk bijvoorbeeld aan lijndikte, rondingen, visuele grootte, etc.
 - Gebruik een consistent iconengrid voor visuele consistentie.
-- Gebruik geen outlined en filled iconen dor elkaar.
-- Gebruik waar mogelijk ‘universele’ iconen, iconen die algemeen voor hetzelfde doel worden gebruikt. Gebruikers kennen voor veel concepten al een bestaande beeldtaal. Denk bijvoorbeeld aan een icoon van een verkeersbord met een ‘P’ voor parkeergelegenheden. Iets anders dan deze te gebruiken voor eenzelfde betekenis zal gebruiker kunnen verwarren.
+- Gebruik geen outlined en filled iconen door elkaar.
+- Gebruik waar mogelijk ‘universele’ iconen, iconen die algemeen voor hetzelfde doel worden gebruikt. Gebruikers kennen voor veel concepten al een bestaande beeldtaal. Denk bijvoorbeeld aan een icoon van een verkeersbord met een ‘P’ voor parkeergelegenheden. Iets anders dan deze gebruiken voor eenzelfde betekenis zou een gebruiker kunnen verwarren.
 - Gebruik voor verdieping van tekstpassages een illustratie of animatie.
 - Gebruik een icoon voor een enkele betekenis. Gebruik bijvoorbeeld niet eenzelfde icoon van een persoon voor zowel een profiel als voor een contactenlijst.
 
 ## Outline vs. filled (solid) {#outline-filled}
 
-Probeer zogenaamde outlined (lijn) niet in dezelfde applicatie te mixen met filled (gevulde) iconen. Het is wel mogelijk om bijvoorbeeld gevulde iconen te gebruiken als actieve staat (focus/hover) wanneer standaard lijn-iconen worden gebruikt. (Zie Toegankelijkheid)
+Probeer zogenaamde zogenaamde outlined (lijn) iconen niet in dezelfde applicatie te mixen met filled (gevulde) iconen. Het is wel mogelijk om bijvoorbeeld gevulde iconen te gebruiken als actieve staat (focus/hover) wanneer standaard lijn-iconen worden gebruikt. (Zie Toegankelijkheid)
 
 ### Lijnen {#lijnen}
 
