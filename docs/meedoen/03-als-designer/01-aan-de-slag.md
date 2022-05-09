@@ -16,7 +16,7 @@ keywords:
 
 Als ontwerper kan je op diverse manieren meedoen en [bijdragen](04-bijdrage-leveren.md) aan het NL Design System.
 
-Of je nu Sketch, Adobe XD, Framer, of zelfs Excel gebruikt, er is geen afhankelijkheid als het gaat om ontwerpsoftware. Wel hebben het kernteam, en reeds aangesloten organisaties voorkeur voor [Figma](05-figma), omdat dit conceptueel en qua architectuur goed aansluit op de [architectuur en naamgeving van de front-end implementatie](/docs/meedoen/04-als-developer).
+Of je nu Sketch, Adobe XD, Framer, of zelfs Excel gebruikt, er is geen afhankelijkheid als het gaat om ontwerpsoftware. Wel hebben het kernteam, en reeds aangesloten organisaties voorkeur voor [Figma](/docs/meedoen/als-designer/05-figma), omdat dit conceptueel en qua architectuur goed aansluit op de [architectuur en naamgeving van de front-end implementatie](/docs/meedoen/04-als-developer).
 
 Het kan natuurlijk ook zijn dat je juist gebruikersonderzoek doet of documentatie rondom ontwerprichtlijnen, componenten en dergelijke aan wil bieden of verrijken. Fijn, want vanuit het NL Design System willen we alle ontwerp-keuzes goed onderbouwen en zoveel mogelijk voorzien van geteste en bewezen implementatie in een daadwerkelijke omgeving. Ga naar de pagina [bijdragen leveren](04-bijdrage-leveren.md) voor meer informatie over hoe je hier aan bij kan dragen.
 
