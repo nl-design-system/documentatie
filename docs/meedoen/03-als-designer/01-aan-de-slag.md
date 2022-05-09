@@ -12,7 +12,7 @@ keywords:
   - getting started
 ---
 
-# Als designer aan de slag met NL Design System
+# Als ontwerper aan de slag met NL Design System
 
 Als ontwerper kan je op diverse manieren meedoen en [bijdragen](04-bijdrage-leveren.md) aan het NL Design System.
 
