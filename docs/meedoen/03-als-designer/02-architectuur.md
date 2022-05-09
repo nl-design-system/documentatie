@@ -35,7 +35,7 @@ Wij hebben geluisterd naar alle wensen en dit jaar zijn we begonnen met enkele t
 
 Om vindbaarheid en hergebruik van componenten makkelijker te maken, stellen we voor om zoveel mogelijk de standaard HTML/CSS namen te gebruiken voor componenten en component onderdelen. Deze naamgeving kan dan ook overgenomen worden in de ontwikkeling van het component.
 
-[Kijk hier voor meer over de naamgeving die we in Figma aanhouden](/docs/meedoen/als-designer/05-figma/02-figma-naming.md). De concepten die hier worden beschreven kunnen ook voor andere ontwerp-programmatuur zoals bijvoorbeeld Sketch of Adobe XD gebruikt worden.
+[Kijk hier voor meer over de naamgeving die we in Figma aanhouden](/meedoen/als-designer/05-figma/02-figma-naming.md). De concepten die hier worden beschreven kunnen ook voor andere ontwerp-programmatuur zoals bijvoorbeeld Sketch of Adobe XD gebruikt worden.
 
 ## Configuratie opties delen tussen design en development
 
