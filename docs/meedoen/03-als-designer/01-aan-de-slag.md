@@ -22,9 +22,9 @@ Het kan natuurlijk ook zijn dat je juist gebruikersonderzoek doet of documentati
 
 ## Jouw huisstijl als ‘design tokens’
 
-Omdat het NL Design System huisstijl onafhankelijk is, en meerdere huisstijlen gebruik kunnen maken van zowel de [ontwerp als front-end componenten](/docs/componenten/) maken we gebruik van zogenaamde [design tokens](05-figma/04-figma-design-tokens). Dit stelt ons in staat om visuele eigenschappen, zoals kleuren en typografie, als ‘thema’ laag los van de structuur van componenten aan te bieden. Zo ontstaat per organisatie een eigen thema maar blijven componenten deelbaar tussen organisaties.
+Omdat het NL Design System huisstijl onafhankelijk is, en meerdere huisstijlen gebruik kunnen maken van zowel de [ontwerp als front-end componenten](/docs/componenten/) maken we gebruik van zogenaamde [design tokens](05-figma/04-figma-design-tokens.md). Dit stelt ons in staat om visuele eigenschappen, zoals kleuren en typografie, als ‘thema’ laag los van de structuur van componenten aan te bieden. Zo ontstaat per organisatie een eigen thema maar blijven componenten deelbaar tussen organisaties.
 
-Heb jij hulp nodig met het omzetten van jouw huisstijl naar een thema met design tokens, neem dan [contact op met het kernteam](06-samen-met-kernteam).
+Heb jij hulp nodig met het omzetten van jouw huisstijl naar een thema met design tokens, neem dan [contact op met het kernteam](/06-samen-met-kernteam.md).
 
 ## Zit jouw component er niet bij
 
