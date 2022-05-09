@@ -20,4 +20,4 @@ Heb je al (bewezen) documentatie over ontwerp-patronen, componenten, tekstrichtl
 
 Maakt jouw organisatie al gebruik van component-gebaseerd ontwerp en heb je al goed werkende componenten? Voeg dan een link naar deze toe in [de backlog](https://github.com/nl-design-system/backlog/projects/1).
 
-Wil je samen met andere organisaties aan een component werken in bijvoorbeeld Figma? Kijk dan naar onze [Figma documentatie](/docs/meedoen/als-designer/05-figma). Heb je hulp nodig bij het opzetten van jouw Figma omgeving, migreer je van bijvoorbeeld Sketch naar Figma? Heb je nadere vragen? Neem dan [contact op met het kernteam](meedoen/06-samen-met-kernteam.md).
+Wil je samen met andere organisaties aan een component werken in bijvoorbeeld Figma? Kijk dan naar onze Figma documentatie. Heb je hulp nodig bij het opzetten van jouw Figma omgeving, migreer je van bijvoorbeeld Sketch naar Figma? Heb je nadere vragen? Neem dan [contact op met het kernteam](meedoen/06-samen-met-kernteam.md).
