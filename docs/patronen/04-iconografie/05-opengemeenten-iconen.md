@@ -30,11 +30,11 @@ Maak je eigen icoon dat aansluit op onderstaande set met deze Adobe Illustrator-
 
 Door dit bestand te downloaden, [ga je akkoord met de Creative Commons licentie overeenkomst](https://creativecommons.org/licenses/by-sa/4.0/deed.nl).
 
-![Overzicht van iconenset](https://user-images.githubusercontent.com/248921/166216868-2b6fa404-bed4-40bb-924b-3fdda3d27e2b.png)
+![Overzicht van iconenset](https://user-images.githubusercontent.com/248921/168065569-9b5974bd-753b-4384-83e4-6c4dcc273160.png)
 
 Overzicht van de iconenset op een lichte achtergrond.
 
-![Overzicht van iconenset (diapositief)](https://user-images.githubusercontent.com/248921/166216905-c8431616-d482-4475-8d24-afc2e6f94491.png)
+![Overzicht van iconenset (diapositief](https://user-images.githubusercontent.com/248921/168065620-e246bead-e5a4-4eeb-9177-2277686cf162.png)
 
 Overzicht van de iconenset, diapositiefop een donkere achtergrond.
 
@@ -48,7 +48,7 @@ De iconen hebben een formaat van 48 dp x 48 dp. Maak iconen voor weergave op 100
 
 #### Het raster
 
-![Iconenraster](https://user-images.githubusercontent.com/248921/166217163-4279daf9-3683-4135-9507-ee546ac87345.png)
+![Iconenraster](https://user-images.githubusercontent.com/248921/168065690-909c1e74-04ba-4aa9-a10f-e8bdf310ba03.png)
 
 Het raster wat gebruikt wordt voor OpenGemeenten iconen.
 
@@ -62,7 +62,7 @@ Om te voorkomen dat een pictogram wordt vervormd, plaats je vormen altijd "op pi
 
 De basis variant van de iconen is de Regular versie. Deze heeft een lijndikte van 3 dp met een tegenlijn (counter stroke) van 2 dp.
 
-![Lijndikte van OpenGemeenten iconen](https://user-images.githubusercontent.com/248921/166217265-21c80877-e5c6-4814-ba47-5d618903afd1.png)
+![Lijndikte van OpenGemeenten iconen](https://user-images.githubusercontent.com/248921/168065764-a360f4cc-c957-4408-ae9a-f67d34f922b1.png)
 
 A. Lijndikte 3 dp
 
@@ -84,7 +84,7 @@ Voor details in illustratie kan gebruikt worden gemaakt van een 2 dp lijn.
 
 Om iconen op een donkere achtergrond te gebruiken is er voor ieder icoon een diapositieve versie nodig. Beeldschermweergave kan er voor zorgen dat lichte lijnen dichtlopen. Subtiele aanpassingen kunnen helpen de leesbaarheid te verbeteren. Daarom krijgt de tegenlijn een dikte van 3dp mee in plaats van de 2 dp zoals de regular versie.
 
-![Lijndikte van OpenGemeenten diapositieve iconen](https://user-images.githubusercontent.com/248921/166217464-0d691a44-500a-430b-86ef-66ea7608ab45.png)
+![Lijndikte van OpenGemeenten diapositieve iconen](https://user-images.githubusercontent.com/248921/168065806-fa998c0f-3685-4487-b977-de04907d5703.png)
 
 A. Lijndikte 3 dp
 
