@@ -28,7 +28,7 @@ Mis je een icoon voor jouw project dan kun je dit icoon aanvragen bij OpenGemeen
 
 Maak je eigen icoon dat aansluit op onderstaande set met deze Adobe Illustrator-bestanden, inclusief het 48dp-raster.
 
-Door dit bestand te downloaden, gaat je akkoord met de Creative Commons licentie overeenkomst.
+Door dit bestand te downloaden, [ga je akkoord met de Creative Commons licentie overeenkomst](https://creativecommons.org/licenses/by-sa/4.0/deed.nl).
 
 ![Overzicht van iconenset](https://user-images.githubusercontent.com/248921/166216868-2b6fa404-bed4-40bb-924b-3fdda3d27e2b.png)
 
