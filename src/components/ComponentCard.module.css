@@ -29,6 +29,15 @@
   background: linear-gradient(2deg, #fff 15%, transparent 15.2%);
 }
 
+.component-card__image-wrapper {
+  width: 80%;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
 .component-card__image {
   max-width: 80%;
   max-height: 80%;
