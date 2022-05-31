@@ -13,7 +13,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/102"
   },
   {
@@ -21,7 +22,8 @@
     "name": "Backlink",
     "aliases": [],
     "implementations": { "community": [] },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/8"
   },
   {
@@ -44,7 +46,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/54"
   },
   {
@@ -67,7 +70,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/38"
   },
   {
@@ -84,7 +88,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/37"
   },
   {
@@ -107,7 +112,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "/img/componenten/checkbox.svg",
     "backlog": "https://github.com/nl-design-system/backlog/issues/64"
   },
   {
@@ -130,7 +136,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/7"
   },
   {
@@ -147,7 +154,8 @@
         }
       ]
     },
-    "docLink": "/docs/componenten/date-picker",
+    "doc": "/docs/componenten/date-picker",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/35"
   },
   {
@@ -164,7 +172,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "/img/componenten/select.svg",
     "backlog": "https://github.com/nl-design-system/backlog/issues/34"
   },
   {
@@ -174,7 +183,8 @@
     "implementations": {
       "community": []
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/10"
   },
   {
@@ -191,7 +201,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/61"
   },
   {
@@ -214,7 +225,8 @@
         }
       ]
     },
-    "docLink": "/docs/componenten/headings",
+    "doc": "/docs/componenten/headings",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/114"
   },
   {
@@ -222,7 +234,8 @@
     "name": "Language switcher",
     "aliases": [],
     "implementations": { "community": [] },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/140"
   },
   {
@@ -245,7 +258,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/118"
   },
   {
@@ -262,7 +276,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/52"
   },
   {
@@ -279,7 +294,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/9"
   },
   {
@@ -296,7 +312,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/55"
   },
   {
@@ -313,7 +330,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/55"
   },
   {
@@ -336,7 +354,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/115"
   },
   {
@@ -344,7 +363,8 @@
     "name": "Progress tracker",
     "aliases": ["progress-bar", "progress-indicator"],
     "implementations": { "community": [] },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/42"
   },
   {
@@ -367,7 +387,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "/img/componenten/radio-button.svg",
     "backlog": "https://github.com/nl-design-system/backlog/issues/65"
   },
   {
@@ -375,7 +396,8 @@
     "name": "Slider",
     "aliases": ["range-input"],
     "implementations": { "community": [] },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/36"
   },
   {
@@ -392,7 +414,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/6"
   },
   {
@@ -409,7 +432,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/41"
   },
   {
@@ -426,7 +450,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/53"
   },
   {
@@ -449,7 +474,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/33"
   },
   {
@@ -472,7 +498,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/39"
   },
   {
@@ -489,7 +516,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/51"
   },
   {
@@ -512,7 +540,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "/img/componenten/textarea.svg",
     "backlog": "https://github.com/nl-design-system/backlog/issues/40"
   },
   {
@@ -535,7 +564,8 @@
         }
       ]
     },
-    "docLink": "",
+    "doc": "",
+    "preview": "/img/componenten/text-input.svg",
     "backlog": "https://github.com/nl-design-system/backlog/issues/5"
   },
   {
@@ -543,7 +573,8 @@
     "name": "Tooltip",
     "aliases": [],
     "implementations": { "community": [] },
-    "docLink": "",
+    "doc": "",
+    "preview": "",
     "backlog": "https://github.com/nl-design-system/backlog/issues/50"
   }
 ]

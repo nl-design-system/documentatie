@@ -18,7 +18,8 @@ interface OverviewComponent {
     community: Implementation[];
     nlds?: Implementation;
   };
-  docLink?: string;
+  doc?: string;
+  preview?: string;
   backlog?: string;
 }
 
@@ -30,7 +31,7 @@ export const ComponentOverview = ({ components }: ComponentOverviewProps) => (
   <div className={style['component-overview']}>
     {components
       .sort((a, b) => (a.name >= b.name ? 1 : -1))
-      .map(({ name, id, implementations: { nlds, community }, docLink, backlog }) => {
+      .map(({ name, id, implementations: { nlds, community }, doc, preview, backlog }) => {
         const status =
           nlds && nlds.stable
             ? 'stable'
@@ -49,9 +50,9 @@ export const ComponentOverview = ({ components }: ComponentOverviewProps) => (
           <ComponentCard
             key={id}
             title={name}
-            componentId={id}
             status={status}
-            docLink={docLink}
+            doc={doc}
+            preview={preview}
             communityLink={communityLink || backlog}
           />
         );

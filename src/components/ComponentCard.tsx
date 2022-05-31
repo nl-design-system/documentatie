@@ -14,28 +14,30 @@ enum Status {
 
 interface ComponentCardProps {
   title: string;
-  componentId: string;
   status: string;
-  docLink?: string;
+  doc?: string;
+  preview?: string;
   communityLink?: string;
 }
 
-export const ComponentCard = ({ componentId, title, status, docLink, communityLink }: ComponentCardProps) => (
+export const ComponentCard = ({ title, status, doc, preview, communityLink }: ComponentCardProps) => (
   <div
     className={clsx(
       style['component-card'],
       style[`component-card--${status}`],
-      !docLink && communityLink && style['component-card--undocumented'],
+      !doc && communityLink && style['component-card--undocumented'],
     )}
   >
     <div className={style['component-card__header']}>
-      {docLink && (
-        <img className={style['component-card__image']} src={useBaseUrl(`img/components/${componentId}.png`)} />
+      {preview && (
+        <div className={style['component-card__image-wrapper']}>
+          <img className={style['component-card__image']} src={useBaseUrl(preview)} alt={`${title} voorbeeld`} />
+        </div>
       )}
     </div>
     <div className={style['component-card__body']}>
-      {docLink ? (
-        <Link to={docLink} className={clsx(style['component-card__title'], style['component-card__title--link'])}>
+      {doc ? (
+        <Link to={doc} className={clsx(style['component-card__title'], style['component-card__title--link'])}>
           {title}
         </Link>
       ) : communityLink ? (
