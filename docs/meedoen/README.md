@@ -12,7 +12,7 @@ keywords:
   - overzicht
 ---
 
-# Meedoen aan het NL Design Systemssss
+# Meedoen aan het NL Design System
 
 Het NL Design System is een initiatief van [Gebruiker Centraal](https://www.gebruikercentraal.nl/). De opdrachtgever van het project is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
 
