@@ -50,3 +50,7 @@ keywords:
 ### Overdracht
 
 - [Measure](https://www.figma.com/community/plugin/739918456607459153/Measure) genereert '_red-line specs_' voor hoogte/breedte, marges, padding. Het kan tevens tooltips genereren met uitgebreide informatie over lettertype- en kleurgebruik, border radius, opacity, enz.
+
+### Ontwerp
+
+- [Table Creator](https://www.figma.com/community/plugin/885838970710285271/Table-Creator) maakt het mogelijk om makkelijk en snel data tabellen te maken. Door het koppelen van een table header en een datacel component in de plugin is het mogelijk hierna een tabel via een palet te maken op basis van een aantal kolommen en rijen. Ook kan de breedte van een kolom (toegepast op alle kolommen) opgegeven worden.
