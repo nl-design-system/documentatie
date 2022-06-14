@@ -54,3 +54,5 @@ keywords:
 ### Ontwerp
 
 - [Table Creator](https://www.figma.com/community/plugin/885838970710285271/Table-Creator) maakt het mogelijk om makkelijk en snel data tabellen te maken. Door het koppelen van een table header en een datacel component in de plugin is het mogelijk hierna een tabel via een palet te maken op basis van een aantal kolommen en rijen. Ook kan de breedte van een kolom (toegepast op alle kolommen) opgegeven worden.
+
+https://user-images.githubusercontent.com/248921/173539483-e3d05d81-8ecb-4eb0-8143-6a2a96530201.mov
