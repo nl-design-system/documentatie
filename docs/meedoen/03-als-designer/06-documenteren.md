@@ -15,6 +15,12 @@ keywords:
 
 # Als ontwerper componenten en patronen documenteren
 
+In onze documentatie maken we onderscheid tussen algemene richtlijnen, zoals bijvoorbeeld richtlijnen voor taalgebruik en het omgaan met formulieren, en richtlijnen per component. Probeer zeker in de algemene richtlijnen technisch taalgebruik te vermijden.
+
+De richtlijnen voor patronen hebben een beknopt ‘checklist’ overzicht met links naar nadere verdieping. Deze links gaan dieper in op een specifiek aspect van de richtlijn. In deze verdieping kan tevens naar componenten die nodig zijn om een patroon te creëren verwezen worden.
+
+We werken zoveel mogelijk _evidence-based_, Waar mogelijk dient documentatie voorzien te zijn van bronvermelding naar bestaande literatuur of links naar bijvoorbeeld case studies of eigen onderzoek.
+
 ## Componenten
 
 Voor het documenteren van componenten gebruiken we het volgende stramien:
