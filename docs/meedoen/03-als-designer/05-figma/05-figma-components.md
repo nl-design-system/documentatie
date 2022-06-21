@@ -53,7 +53,7 @@ Door middel van juiste naamgeving is het mogelijk om componenten te groeperen. D
 
 Dit is met name handig wanneer elementen ‘geswapped’ kunnen worden. Wanneer je bijvoorbeeld iconen van een `/` voorziet, dan komen deze allemaal in een zelfde ‘folder’ te staan.
 
-Het component `Icon / Arrow / Left` en `Icon / Arrow / Right`zullen hierdoor boven elkaar verschijnen als je het icoon wilt swappen.
+Het component `Icon / Arrow / Left` en `Icon / Arrow / Right` zullen hierdoor boven elkaar verschijnen als je het icoon wilt swappen.
 
 Meer informatie hierover [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components).
 
