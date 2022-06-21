@@ -34,7 +34,7 @@ Je kan dus met iconen de bezoekers helpen navigeren of de de aandacht vestigen o
 ### 1. [Richtlijnen](01-richtlijnen.md)
 
 - [ ] [Combinatie van icoon en tekst](01-richtlijnen.md#icoon-en-tekst)
-- [ ] [Niet teveel iconen op een pagina](01-richtlijnen.md#hoeveelheid-iconen)
+- [ ] [Niet te veel iconen op een pagina](01-richtlijnen.md#hoeveelheid-iconen)
 - [ ] [Icoon kleuren](01-richtlijnen.md#kleur)
 
 ### 2. [Ontwerp](02-ontwerp.md)
