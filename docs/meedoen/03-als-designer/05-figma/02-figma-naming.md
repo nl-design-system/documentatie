@@ -21,10 +21,6 @@ Wanneer je bijvoorbeeld een rechthoek maakt die bedoeld is als achtergrond voorz
 
 Waar mogelijk ontlenen componenten, layers, frames en design tokens (semantische) naamgeving van HTML- en SVG-tags, CSS properties, ARIA roles of BEM-naamgeving.
 
-## Groeperen
-
-In Figma kunnen
-
 ## Component varianten
 
 Eenzelfde naamgeving gebruiken als in de front-end code vergemakkelijkt de communicatie en overdracht. Een voorbeeld hiervan is het gebruik van 'checked' in plaats van 'active' voor de geselecteerde staat van een checkbox.

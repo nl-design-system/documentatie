@@ -19,6 +19,12 @@ Componenten kunnen genest worden in andere componenten. Het is een goede gewoont
 
 Aangezien componenten zich gedragen als gewone Figma frames, [kan Auto layout op ze toegepast worden](08-figma-autolayout.md).
 
+## Varianten
+
+Met varianten is het mogelijk om verschillende (interactieve) staten van eenzelfde component te maken. Een ‘instance’ van een component kan hierdoor middels het componenten paneel gewijzigd worden van staat.
+
+Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
+
 ## Component properties
 
 Door middel van component properties kunnen diverse eigenschappen van een component bewerkbaar gemaakt worden zonder dat hiervoor aparte varianten nodig zijn. Deze eigenschappen worden bloot gelegd op het hoogste niveau van een component instance.
@@ -33,27 +39,13 @@ Momenteel zijn, buiten varianten, drie bewerkbare eigenschappen toe te kennen:
 
 Meer over het maken en gebruiken van component properties [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/5579474826519-Create-and-use-component-properties).
 
-## Varianten
-
-Om varianten van componenten te maken kan het soms nodig zijn eerst een ‘basis’ component te maken die alle mogelijke opties en functionaliteiten bevat. Dit maakt het mogelijk om alle varianten te wijzigen vanuit een enkele basiscomponent.
-
-https://user-images.githubusercontent.com/248921/151860040-fac715ab-c69f-4dc4-a6a6-68db277e26f4.mov
-
-Let op de punt (`.`) voor de naam van het basis component. Hierdoor wordt het basis component niet opgenomen in de gedeelde library.
-
-Functionaliteiten die in een of meer varianten niet beschikbaar zijn, kunnen gemakkelijk worden verborgen.
-
-Naamgeving van staten moet exact overeenkomen tussen component varianten. Dit betekent dat namen hoofdlettergevoelig zijn. `focus=on` en `Focus=on` resulteren in afzonderlijke varianten.
-
-Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
-
 ## Groeperen
 
 Door middel van juiste naamgeving is het mogelijk om componenten te groeperen. Door het gebruiken van een slash (`/`) in de naam van de component kan je een folder structuur creëren.
 
 Dit is met name handig wanneer elementen ‘geswapped’ kunnen worden. Wanneer je bijvoorbeeld iconen van een `/` voorziet, dan komen deze allemaal in een zelfde ‘folder’ te staan.
 
-Het component `Icon / Arrow / Left` en `Icon / Arrow / Right` zullen hierdoor boven elkaar verschijnen als je het icoon wilt swappen.
+Het component `Icon / Arrow / Left` en `Icon / Arrow / Right` zullen hierdoor boven elkaar verschijnen als je het icoon wilt ‘swappen’.
 
 Meer informatie hierover [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components).
 
