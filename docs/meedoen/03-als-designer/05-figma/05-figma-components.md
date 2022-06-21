@@ -19,7 +19,13 @@ Componenten kunnen genest worden in andere componenten. Het is een goede gewoont
 
 Aangezien componenten zich gedragen als gewone Figma frames, [kan Auto layout op ze toegepast worden](08-figma-autolayout.md).
 
-## Varianten
+Door het toevoegen van component ‘variants’ en ‘properties’ is het mogelijk om een enkel component te voorzien van alle (interactieve) staten en eigenschappen dat een component kan herbergen.
+
+Over het algemeen worden variants gebruikt voor het maken van variaties zoals verschillende interactieve of feedback staten. Properties worden gebruikt voor eigenschappen zoals tekstaanpassingen, of het makkelijk vervangen, tonen of verbergen van elementen binnen een component.
+
+Deze eigenschappen blijven bewaard wanneer een variant van een component geselecteerd wordt, mits de onderliggende structuur en naamgeving tussen varianten consistent is. Wanneer bijvoorbeeld een tekst gewijzigd of een icoon verborgen wordt, dan zullen deze aanpassingen blijven bestaan bij het veranderen van de interactieve of feedback staat.
+
+## Varianten (component variants)
 
 Met varianten is het mogelijk om verschillende (interactieve) staten van eenzelfde component te maken. Een ‘instance’ van een component kan hierdoor middels het componenten paneel gewijzigd worden van staat.
 
