@@ -55,6 +55,8 @@ Dit is met name handig wanneer elementen ‘geswapped’ kunnen worden. Wanneer 
 
 Het component `Icon / Arrow / Left` en `Icon / Arrow / Right`zullen hierdoor boven elkaar verschijnen als je het icoon wilt swappen.
 
+Meer informatie hierover [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components).
+
 ## Componenten op slot zetten
 
 Na het creëren van een component kan je deze vergrendelen. Dit heeft geen invloed op de gepubliceerde libraries en gebruikers kunnen de instantie van een component nog steeds gebruiken en bewerken vanuit de gepubliceerde library.
