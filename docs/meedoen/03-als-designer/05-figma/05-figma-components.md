@@ -27,7 +27,6 @@ Met varianten is het mogelijk om verschillende (interactieve) staten van eenzelf
 
 Voorbeeld van een tekstinvoer component met zes verschillende varianten voor staten (links). De staten zijn hierdoor te kiezen via het component instance paneel (rechts).
 
-
 Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
 
 ## Component properties
