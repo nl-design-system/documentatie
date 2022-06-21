@@ -66,11 +66,3 @@ Na het creëren van een component kan je deze vergrendelen. Dit heeft geen invlo
 Probeer bij het publiceren van componenten via `Libraries → Publish` in kleine stukjes te publiceren met een gedetailleerde beschrijving van wat er is veranderd.
 
 Het is een goede gewoonte om component wijzigingen te accepteren in elk bestand dat een instance van het gewijzigde component gebruikt. Dit maakt het mogelijk om potentiële bugs meteen te lokaliseren. Het in bulk bijwerken van componenten maakt het moeilijker om potentiële bugs te lokaliseren en terug te voeren naar een specifieke publicatie.
-
-## Voorkomen dat componenten worden gepubliceerd
-
-Soms kan het nodig zijn componenten alleen lokaal te gebruiken, of het nu gaat om een component die vaak terugkeert in een specifiek ontwerpsysteem, of om een component die op zichzelf niet functioneel is maar alleen in de context van een samengesteld component.
-
-In deze gevallen kan worden voorkomen dat componenten worden gepubliceerd door een underscore toe te voegen (`_`).
-
-![Voorbeeld van een Figma component die niet wordt gepubliceerd vanwege een underscore in de naam](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
