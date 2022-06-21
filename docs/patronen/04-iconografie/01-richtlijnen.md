@@ -34,7 +34,7 @@ Combineer waar mogelijk een icoon met tekst.
 
 Het kan zijn dat een bezoeker een icoon niet helemaal goed begrijpt. Het gebruik van tekst (label) is ook een belangrijke factor in de navigatie. Een eenvoudig en duidelijk icoon met een goed omschreven label is superieur aan iconen of labels alleen.
 
-## Niet teveel iconen op een pagina {#hoeveelheid-iconen}
+## Niet te veel iconen op een pagina {#hoeveelheid-iconen}
 
 Te veel iconen gebruiken op een pagina kan een soort blindheid veroorzaken.
 
