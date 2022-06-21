@@ -77,4 +77,4 @@ In deze gevallen kan worden voorkomen dat componenten worden gepubliceerd door e
 
 ## Checklist voor componenten in Figma
 
-In het Figma componenten bibliotheek bestand staat [een pagina met een checklist](https://www.figma.com/file/gqQhMe3gj4YlC6JrZOWiCv/?node-id=2849%3A3859) waar componenten aan dienen te voldoen.
+In het Figma componenten bibliotheek bestand staat waar componenten aan dienen te voldoen.
