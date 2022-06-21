@@ -28,9 +28,8 @@ Momenteel zijn, buiten varianten, drie bewerkbare eigenschappen toe te kennen:
 - Een Boolean property maakt het mogelijk om een aan/uit of true/false toggle mee te geven. Dit kan bijvoorbeeld gebruikt worden om een icoon of label binnen een component aan of uit te zetten.
 - Door middel van een Instance Swap property kan je aangeven welk element binnen een component vervangen kan worden voor een ander element. Dit kan bijvoorbeeld een icoon zijn dat in een ander icoon gewijzigd kan worden.
 - Met het Text property geef je aan welke tekst in een component gewijzigd kan worden.
-- 
-<img width="760" alt="Figma compnent instance met varianten en properties toegepast" src="https://user-images.githubusercontent.com/248921/174809547-561cb329-6747-411d-88ca-5f818e31d202.png">
 
+<img width="760" alt="Figma compnent instance met varianten en properties toegepast" src="https://user-images.githubusercontent.com/248921/174809547-561cb329-6747-411d-88ca-5f818e31d202.png">
 
 Meer over het maken en gebruiken van component properties [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/5579474826519-Create-and-use-component-properties).
 
@@ -47,6 +46,14 @@ Functionaliteiten die in een of meer varianten niet beschikbaar zijn, kunnen gem
 Naamgeving van staten moet exact overeenkomen tussen component varianten. Dit betekent dat namen hoofdlettergevoelig zijn. `focus=on` en `Focus=on` resulteren in afzonderlijke varianten.
 
 Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
+
+## Groeperen
+
+Door middel van juiste naamgeving is het mogelijk om componenten te groeperen. Door het gebruiken van een slash (`/`) in de naam van de component kan je een folder structuur creëren.
+
+Dit is met name handig wanneer elementen ‘geswapped’ kunnen worden. Wanneer je bijvoorbeeld iconen van een `/` voorziet, dan komen deze allemaal in een zelfde ‘folder’ te staan.
+
+Het component `Icon / Arrow / Left` en `Icon / Arrow / Right`zullen hierdoor boven elkaar verschijnen als je het icoon wilt swappen.
 
 ## Componenten op slot zetten
 
