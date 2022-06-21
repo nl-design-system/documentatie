@@ -25,6 +25,14 @@ Door middel van component properties kunnen diverse eigenschappen van een compon
 
 Momenteel zijn, buiten varianten, drie bewerkbare eigenschappen toe te kennen:
 
+- Een Boolean property maakt het mogelijk om een aan/uit of true/false toggle mee te geven. Dit kan bijvoorbeeld gebruikt worden om een icoon of label binnen een component aan of uit te zetten.
+- Door middel van een Instance Swap property kan je aangeven welk element binnen een component vervangen kan worden voor een ander element. Dit kan bijvoorbeeld een icoon zijn dat in een ander icoon gewijzigd kan worden.
+- Met het Text property geef je aan welke tekst in een component gewijzigd kan worden.
+
+![Figma component instance met varianten en properties toegepast](https://user-images.githubusercontent.com/248921/174809547-561cb329-6747-411d-88ca-5f818e31d202.png)
+
+Meer over het maken en gebruiken van component properties [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/5579474826519-Create-and-use-component-properties).
+
 ## Varianten
 
 Om varianten van componenten te maken kan het soms nodig zijn eerst een ‘basis’ component te maken die alle mogelijke opties en functionaliteiten bevat. Dit maakt het mogelijk om alle varianten te wijzigen vanuit een enkele basiscomponent.
