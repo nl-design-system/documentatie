@@ -74,7 +74,3 @@ Soms kan het nodig zijn componenten alleen lokaal te gebruiken, of het nu gaat o
 In deze gevallen kan worden voorkomen dat componenten worden gepubliceerd door een underscore toe te voegen (`_`).
 
 ![Voorbeeld van een Figma component die niet wordt gepubliceerd vanwege een underscore in de naam](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
-
-## Checklist voor componenten in Figma
-
-In het Figma componenten bibliotheek bestand staat waar componenten aan dienen te voldoen.
