@@ -23,10 +23,6 @@ Waar mogelijk ontlenen componenten, layers, frames en design tokens (semantische
 
 ## Component varianten
 
-Voor gemak en ‘scanbaarheid’ bij het werken met component varianten raden wij aan kleine letters te gebruiken voor booleaanse waarden, zoals on/off of true/false opties en ‘sentence casing’ voor interactieve en feedback staten.
-
-Using the same naming as used in the front-end again eases communication and handoff. For instance for a checkbox’ checked state we use 'checked' instead of 'active'.
-
 Eenzelfde naamgeving gebruiken als in de front-end code vergemakkelijkt de communicatie en overdracht. Een voorbeeld hiervan is het gebruik van 'checked' in plaats van 'active' voor de geselecteerde staat van een checkbox.
 
 In Figma kunnen variant properties gesorteerd worden door individuele properties te slepen.

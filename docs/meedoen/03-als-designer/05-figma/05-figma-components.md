@@ -19,19 +19,45 @@ Componenten kunnen genest worden in andere componenten. Het is een goede gewoont
 
 Aangezien componenten zich gedragen als gewone Figma frames, [kan Auto layout op ze toegepast worden](08-figma-autolayout.md).
 
-## Varianten
+Door het toevoegen van component ‘variants’ en ‘properties’ is het mogelijk om een enkel component te voorzien van alle (interactieve) staten en eigenschappen dat een component kan herbergen.
 
-Om varianten van componenten te maken kan het soms nodig zijn eerst een ‘basis’ component te maken die alle mogelijke opties en functionaliteiten bevat. Dit maakt het mogelijk om alle varianten te wijzigen vanuit een enkele basiscomponent.
+Over het algemeen worden variants gebruikt voor het maken van variaties zoals verschillende interactieve of feedback staten. Properties worden gebruikt voor eigenschappen zoals tekstaanpassingen, of het makkelijk vervangen, tonen of verbergen van elementen binnen een component.
 
-https://user-images.githubusercontent.com/248921/151860040-fac715ab-c69f-4dc4-a6a6-68db277e26f4.mov
+Deze eigenschappen blijven bewaard wanneer een variant van een component geselecteerd wordt, mits de onderliggende structuur en naamgeving tussen varianten consistent is. Wanneer bijvoorbeeld een tekst gewijzigd of een icoon verborgen wordt, dan zullen deze aanpassingen blijven bestaan bij het veranderen van de interactieve of feedback staat.
 
-Let op de punt (`.`) voor de naam van het basis component. Hierdoor wordt het basis component niet opgenomen in de gedeelde library.
+## Varianten (component variants)
 
-Functionaliteiten die in een of meer varianten niet beschikbaar zijn, kunnen gemakkelijk worden verborgen.
+Met varianten is het mogelijk om verschillende (interactieve) staten van eenzelfde component te maken. Een ‘instance’ van een component kan hierdoor middels het componenten paneel gewijzigd worden van staat.
 
-Naamgeving van staten moet exact overeenkomen tussen component varianten. Dit betekent dat namen hoofdlettergevoelig zijn. `focus=on` en `Focus=on` resulteren in afzonderlijke varianten.
+![Figma component varianten voor interactieve staten](https://user-images.githubusercontent.com/248921/174887897-e4576061-f946-4833-a746-f7fb05a3c117.png)
+
+Voorbeeld van een tekstinvoer component met zes verschillende varianten voor staten (links). De staten zijn hierdoor te kiezen via het component instance paneel (rechts).
 
 Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
+
+## Component properties
+
+Door middel van component properties kunnen diverse eigenschappen van een component bewerkbaar gemaakt worden zonder dat hiervoor aparte varianten nodig zijn. Deze eigenschappen worden bloot gelegd op het hoogste niveau van een component instance.
+
+Momenteel zijn, buiten varianten, drie bewerkbare eigenschappen toe te kennen:
+
+- Een Boolean property maakt het mogelijk om een aan/uit of true/false toggle mee te geven. Dit kan bijvoorbeeld gebruikt worden om een icoon of label binnen een component aan of uit te zetten.
+- Door middel van een Instance Swap property kan je aangeven welk element binnen een component vervangen kan worden voor een ander element. Dit kan bijvoorbeeld een icoon zijn dat in een ander icoon gewijzigd kan worden.
+- Met het Text property geef je aan welke tekst in een component gewijzigd kan worden.
+
+![Figma component instance met varianten en properties toegepast](https://user-images.githubusercontent.com/248921/174809547-561cb329-6747-411d-88ca-5f818e31d202.png)
+
+Meer over het maken en gebruiken van component properties [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/5579474826519-Create-and-use-component-properties).
+
+## Groeperen
+
+Door middel van juiste naamgeving is het mogelijk om componenten te groeperen. Door het gebruiken van een slash (`/`) in de naam van de component kan je een folder structuur creëren.
+
+Dit is met name handig wanneer elementen ‘geswapped’ kunnen worden. Wanneer je bijvoorbeeld iconen van een `/` voorziet, dan komen deze allemaal in een zelfde ‘folder’ te staan.
+
+Het component `Icon / Arrow / Left` en `Icon / Arrow / Right` zullen hierdoor boven elkaar verschijnen als je het icoon wilt ‘swappen’.
+
+Meer informatie hierover [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components).
 
 ## Componenten op slot zetten
 
@@ -50,3 +76,7 @@ Soms kan het nodig zijn componenten alleen lokaal te gebruiken, of het nu gaat o
 In deze gevallen kan worden voorkomen dat componenten worden gepubliceerd door een underscore toe te voegen (`_`).
 
 ![Voorbeeld van een Figma component die niet wordt gepubliceerd vanwege een underscore in de naam](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
+
+## Checklist voor componenten in Figma
+
+In het Figma componenten bibliotheek bestand staat [een pagina met een checklist](https://www.figma.com/file/gqQhMe3gj4YlC6JrZOWiCv/?node-id=2849%3A3859) waar componenten aan dienen te voldoen.

@@ -23,4 +23,4 @@ Meedoen kan geheel op je eigen voorwaarden. Bij het NL Design System werken we m
 - [Design Tokens in Figma](03-design-tokens-in-figma.mdx)
 - [Help ons de documentatie uit te breiden](04-bijdrage-leveren.md)
 - [Gebruik van Figma](05-figma/README.md)
-- [Maak kennis met het kernteam](../06-samen-met-kernteam.md)
+- [Documenteren als designer](06-documenteren.md)
