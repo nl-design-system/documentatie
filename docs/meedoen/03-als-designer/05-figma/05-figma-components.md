@@ -59,7 +59,7 @@ Het component `Icon / Arrow / Left` en `Icon / Arrow / Right` zullen hierdoor bo
 
 ![Voorbeeld van naamgeving en structuur voor feedback iconen](https://user-images.githubusercontent.com/248921/175311058-bf0cfb4a-b19c-4681-b82f-cf65b12fe70b.png)
 
-In dit voorbeeld is de naamgeving en structuur van feedback iconen in het formaat `Iconen / Icoongroep / Icoonnaam`, het waaarschuwingsicoon krijgt in dit formaat de naam `Icons / Feedback / Warning`. In het ontwerppaneel in Figma worden hierdoor initieel alle iconen getoond die in de folder `Feedback` staan.
+In dit voorbeeld is de naamgeving en structuur van feedback iconen in het formaat `Iconen / Icoongroep / Icoonnaam`, het waarschuwingsicoon krijgt in dit formaat de naam `Icons / Feedback / Warning`. In het ontwerppaneel in Figma worden hierdoor initieel alle iconen getoond die in de folder `Feedback` staan.
 
 Meer informatie hierover [is te vinden op de Figma site](https://help.figma.com/hc/en-us/articles/360038663994-Name-and-organize-components).
 
