@@ -2,7 +2,7 @@
 title: Componenten - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Componenten
+sidebar_label: Componenten Overzicht
 sidebar_position: 1
 pagination_label: Componenten Overzicht
 description: Een overzicht van alle gedocumenteerde componenten uit NL Design System
@@ -20,7 +20,7 @@ import { ComponentCard } from "@site/src/components/ComponentCard";
 
 import { ComponentOverview } from "@site/src/components/ComponentOverview";
 
-import componentOverview from "./component-overview.json";
+import { components } from "@site/componentConfig";
 
 import { Link } from "@docusaurus/router";
 
@@ -64,4 +64,4 @@ De componenten van NL Design System worden met een estafette aanpak gemaakt. Daa
 
 ## Componenten
 
-<ComponentOverview components={componentOverview} />
+<ComponentOverview />

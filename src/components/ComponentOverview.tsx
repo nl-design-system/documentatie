@@ -1,61 +1,16 @@
 import React from 'react';
 import { ComponentCard } from './ComponentCard';
 import style from './ComponentOverview.module.css';
+import { components } from '@site/componentConfig';
 
-interface Implementation {
-  organisation?: '';
-  stable?: boolean;
-  repo: string;
-  documentation?: string;
-  figma?: string;
-}
-
-interface OverviewComponent {
-  id: string;
-  name: string;
-  aliases: string[];
-  implementations: {
-    community: Implementation[];
-    nlds?: Implementation;
-  };
-  doc?: string;
-  preview?: string;
-  backlog?: string;
-}
-
-interface ComponentOverviewProps {
-  components: OverviewComponent[];
-}
-
-export const ComponentOverview = ({ components }: ComponentOverviewProps) => (
+export const ComponentOverview = () => (
   <div className={style['component-overview']}>
     {components
       .sort((a, b) => (a.name >= b.name ? 1 : -1))
-      .map(({ name, id, implementations: { nlds, community }, doc, preview, backlog }) => {
-        const status =
-          nlds && nlds.stable
-            ? 'stable'
-            : nlds && !nlds.stable
-            ? 'unstable'
-            : community.length > 0
-            ? 'community'
-            : 'help-wanted';
+      .map(({ name, state, id, preview }) => {
+        const link = `/docs/componenten/${state}/${id}`;
 
-        const communityComponents = community.filter((implementation) => implementation.repo);
-
-        const communityLink =
-          communityComponents.find(({ documentation }) => documentation)?.documentation || communityComponents[0]?.repo;
-
-        return (
-          <ComponentCard
-            key={id}
-            title={name}
-            status={status}
-            doc={doc}
-            preview={preview}
-            communityLink={communityLink || backlog}
-          />
-        );
+        return <ComponentCard key={id} title={name} status={state} doc={link} preview={preview} />;
       })}
   </div>
 );

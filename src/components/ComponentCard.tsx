@@ -4,13 +4,7 @@ import { Link } from '@docusaurus/router';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { ExternalLink } from './ExternalLink';
-
-enum Status {
-  'help-wanted' = 'Help Wanted',
-  'community' = 'Community',
-  'unstable' = 'Unstable',
-  'stable' = 'Stable',
-}
+import { COMPONENT_STATES } from '@site/src/utils';
 
 interface ComponentCardProps {
   title: string;
@@ -20,14 +14,21 @@ interface ComponentCardProps {
   communityLink?: string;
 }
 
-export const ComponentCard = ({ title, status, doc, preview, communityLink }: ComponentCardProps) => (
-  <div
-    className={clsx(
-      style['component-card'],
-      style[`component-card--${status}`],
-      !doc && communityLink && style['component-card--undocumented'],
-    )}
-  >
+const mapClassName = (status) => {
+  switch (status) {
+    case COMPONENT_STATES.TODO:
+      return 'help-wanted';
+    case COMPONENT_STATES.COMMUNITY:
+      return 'community';
+    case COMPONENT_STATES.NL_UNSTABLE:
+      return 'unstable';
+    case COMPONENT_STATES.NL_STABLE:
+      return 'stable';
+  }
+};
+
+export const ComponentCard = ({ title, status, doc, preview }: ComponentCardProps) => (
+  <div className={clsx(style['component-card'], style[`component-card--${mapClassName(status)}`])}>
     <div className={style['component-card__header']}>
       {preview && (
         <div className={style['component-card__image-wrapper']}>
@@ -40,18 +41,11 @@ export const ComponentCard = ({ title, status, doc, preview, communityLink }: Co
         <Link to={doc} className={clsx(style['component-card__title'], style['component-card__title--link'])}>
           {title}
         </Link>
-      ) : communityLink ? (
-        <ExternalLink
-          href={communityLink}
-          className={clsx(style['component-card__title'], style['component-card__title--link'])}
-        >
-          {title}
-        </ExternalLink>
       ) : (
         <p className={style['component-card__title']}>{title}</p>
       )}
-      <div className={clsx(style['component-card__status'], style[`component-card__status--${status}`])}>
-        {Status[status]}
+      <div className={clsx(style['component-card__status'], style[`component-card__status--${mapClassName(status)}`])}>
+        {status}
       </div>
     </div>
   </div>
