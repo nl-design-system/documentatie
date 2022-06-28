@@ -47,6 +47,8 @@ keywords:
 - [Able – Friction free accessibility](https://www.figma.com/community/plugin/734693888346260052/Able-%E2%80%93-Friction-free-accessibility) stelt je in staat om op WCAG-kleurcontrasten op andere elementen dan frames te controleren.
 - [Color Blind](https://www.figma.com/community/plugin/733343906244951586/Color-Blind) genereert kopieën van een selectie van elementen zodat u ze kunt bekijken in acht vormen van kleurenblindheid.
 
+![Diverse kopieën van een notificatie gegenereert met Color Blind illustreren het component in acht verschillende vormen van kleurenblindheid](https://user-images.githubusercontent.com/248921/175974440-4bce04ea-bd96-4faa-bdef-d5ec2ad1596a.png)
+
 ### Overdracht
 
 - [Measure](https://www.figma.com/community/plugin/739918456607459153/Measure) genereert '_red-line specs_' voor hoogte/breedte, marges, padding. Het kan tevens tooltips genereren met uitgebreide informatie over lettertype- en kleurgebruik, border radius, opacity, enz.
