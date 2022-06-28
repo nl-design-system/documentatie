@@ -737,12 +737,6 @@ export const components: DesignSystemComponent[] = [
       {
         organisation: ORGANISATIONS.UTRECHT,
         type: COMPONENT_TYPES.CSS,
-        implementation: 'https://github.com/nl-design-system/utrecht/tree/main/components/checkbox/css',
-        story: 'https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css-checkbox--default-story',
-      },
-      {
-        organisation: ORGANISATIONS.UTRECHT,
-        type: COMPONENT_TYPES.CSS,
         implementation: 'https://github.com/nl-design-system/utrecht/tree/main/components/custom-checkbox/css',
         story: 'https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css-custom-checkbox--default-story',
       },
@@ -759,12 +753,6 @@ export const components: DesignSystemComponent[] = [
           'https://github.com/nl-design-system/utrecht/tree/main/components/custom-checkbox/web-component',
         story:
           'https://nl-design-system.github.io/utrecht/storybook/?path=/docs/web-component-custom-checkbox--default-story',
-      },
-      {
-        organisation: ORGANISATIONS.UTRECHT,
-        type: COMPONENT_TYPES.WEB_COMPONENT,
-        implementation: 'https://github.com/nl-design-system/utrecht/tree/main/components/checkbox/web-component',
-        story: 'https://nl-design-system.github.io/utrecht/storybook/?path=/docs/web-component-checkbox--default-story',
       },
       {
         organisation: ORGANISATIONS.DEN_HAAG,
