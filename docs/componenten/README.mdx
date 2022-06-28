@@ -24,6 +24,8 @@ import { components } from "@site/componentConfig";
 
 import { Link } from "@docusaurus/router";
 
+import { COMPONENT_STATES } from "@site/src/utils";
+
 # Componenten van NL Design System
 
 Hier vind je de componenten van het NL Design System. Dit zijn kant en klare, geteste en herbruikbare bouwblokken om consistente digitale ervaringen voor eindgebruikers te maken. De componenten zijn voorzien van uitgebreide documentatie en richtlijnen.
@@ -34,28 +36,28 @@ De componenten van NL Design System worden met een estafette aanpak gemaakt. Daa
 
 <DefinitionList>
   <Definition>
-    <DefinitionTitle>Help wanted</DefinitionTitle>
+    <DefinitionTitle>{COMPONENT_STATES.TODO}</DefinitionTitle>
     <DefinitionData>
       Het component moet nog ontwikkeld worden, maar staat al wel op de backlog. Heeft jouw organisatie dit component
       nodig? Neem contact op en help ons om de eerste versie te ontwikkelen.
     </DefinitionData>
   </Definition>
   <Definition>
-    <DefinitionTitle>Community</DefinitionTitle>
+    <DefinitionTitle>{COMPONENT_STATES.COMMUNITY}</DefinitionTitle>
     <DefinitionData>
       Het component is beschikbaar in de community en is gebouwd volgens de architectuur en richtlijnen van NL Design
       System.
     </DefinitionData>
   </Definition>
   <Definition>
-    <DefinitionTitle>Unstable</DefinitionTitle>
+    <DefinitionTitle>{COMPONENT_STATES.NL_UNSTABLE}</DefinitionTitle>
     <DefinitionData>
-      Het component is beschikbaar in de NL Design System repository. Hij voldoet alleen nog niet aan onze "Definition
-      of Done".
+      Het component is beschikbaar in de NL Design System unstable repository. Hij voldoet alleen nog niet aan onze
+      "Definition of Done".
     </DefinitionData>
   </Definition>
   <Definition>
-    <DefinitionTitle>Stable</DefinitionTitle>
+    <DefinitionTitle>{COMPONENT_STATES.NL_STABLE}</DefinitionTitle>
     <DefinitionData>
       Het component is beschikbaar in de NL Design System repository en voldoet volledig aan onze "Definition of Done".
     </DefinitionData>
