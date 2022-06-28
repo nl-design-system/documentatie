@@ -2,7 +2,7 @@
 title: Documenteren als designer
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Bijdragen
+sidebar_label: Documenteren als designer
 sidebar_position: 1
 pagination_label: Documenteren
 description: Documenteren als designer
