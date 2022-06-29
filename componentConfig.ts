@@ -216,7 +216,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'expandable-region',
-    name: 'Expandable Region',
+    name: 'Expandable region',
     aliases: ['collapse'],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -823,7 +823,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'modal-dialog',
-    name: 'Modal Dialog',
+    name: 'Modal dialog',
     aliases: ['modal'],
     state: COMPONENT_STATES.COMMUNITY,
     communityDocs: [
@@ -846,7 +846,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'video-player',
-    name: 'Video Player',
+    name: 'Video player',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -866,7 +866,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'file-upload',
-    name: 'File Upload',
+    name: 'File upload',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -936,7 +936,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'definition-list',
-    name: 'Definition List',
+    name: 'Definition list',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -952,7 +952,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'text-badge',
-    name: 'Text Badge',
+    name: 'Text badge',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -962,7 +962,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'dot-indicator',
-    name: 'Dot Indicator',
+    name: 'Dot indicator',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -985,7 +985,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'status-light',
-    name: 'Status Light',
+    name: 'Status light',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -995,7 +995,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'link-card',
-    name: 'Link Card',
+    name: 'Link card',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1107,7 +1107,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'unordered-list',
-    name: 'Unordered List',
+    name: 'Unordered list',
     aliases: ['ul'],
     state: COMPONENT_STATES.COMMUNITY,
     communityDocs: [],
@@ -1130,7 +1130,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'ordered-list',
-    name: 'Ordered List',
+    name: 'Ordered list',
     aliases: ['ol'],
     state: COMPONENT_STATES.COMMUNITY,
     communityDocs: [],
@@ -1269,7 +1269,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'form-error',
-    name: 'Form Error',
+    name: 'Form error',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1299,7 +1299,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'numeric-form-input',
-    name: 'Numeric Form Input',
+    name: 'Numeric form input',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1309,7 +1309,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'rich-text-content',
-    name: 'Rich Text Content',
+    name: 'Rich text content',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1319,7 +1319,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'checkbox-group',
-    name: 'Checkbox Group',
+    name: 'Checkbox group',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1329,7 +1329,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'radio-button-group',
-    name: 'Radio button Group',
+    name: 'Radio button group',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1349,7 +1349,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'confirm-checkbox',
-    name: 'Confirm Checkbox',
+    name: 'Confirm checkbox',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1359,7 +1359,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'password-input',
-    name: 'Password Input',
+    name: 'Password input',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1369,7 +1369,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'web-page-title',
-    name: 'Web page Title',
+    name: 'Web page title',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1379,7 +1379,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'geographic-map',
-    name: 'Geographic Map',
+    name: 'Geographic map',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1389,7 +1389,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'foreign-language-content',
-    name: 'Foreign language Content',
+    name: 'Foreign language content',
     aliases: [],
     state: COMPONENT_STATES.TODO,
     communityDocs: [],
@@ -1399,7 +1399,7 @@ export const components: DesignSystemComponent[] = [
   },
   {
     id: 'strong-emphasis',
-    name: 'Strong Emphasis',
+    name: 'Strong emphasis',
     aliases: [],
     state: COMPONENT_STATES.COMMUNITY,
     communityDocs: [],
@@ -1440,7 +1440,7 @@ export const components: DesignSystemComponent[] = [
   },
   // {
   //   id: 'process-steps',
-  //   name: 'Process Steps',
+  //   name: 'Process steps',
   //   aliases: [],
   //   state: COMPONENT_STATES.TODO,
   //   communityDocs: [],
@@ -1449,7 +1449,7 @@ export const components: DesignSystemComponent[] = [
   //   backlog: 'https://github.com/nl-design-system/backlog/issues/150',
   // },// {
   //   id: 'button-group',
-  //   name: 'Button Group',
+  //   name: 'Button group',
   //   aliases: [],
   //   state: COMPONENT_STATES.TODO,
   //   communityDocs: [],
