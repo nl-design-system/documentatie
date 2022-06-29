@@ -52,9 +52,15 @@ keywords:
 ### Overdracht
 
 - [Measure](https://www.figma.com/community/plugin/739918456607459153/Measure) genereert '_red-line specs_' voor hoogte/breedte, marges, padding. Het kan tevens tooltips genereren met uitgebreide informatie over lettertype- en kleurgebruik, border radius, opacity, enz.
+- [Annotate it!](https://www.figma.com/community/plugin/859894273811051899/Annotate-it!) stelt in staat om visuele elementen van meer diepgang te voorzien d.m.v. annotaties voor overdracht aan ontwikkelaars.
+- [Simple Annotate](https://www.figma.com/community/widget/1121551206624878752/Simple-Annotate) is een widget waarmee simpele annotaties gemaakt kunnen worden.
 
 ### Ontwerp
 
 - [Table Creator](https://www.figma.com/community/plugin/885838970710285271/Table-Creator) maakt het mogelijk om makkelijk en snel data tabellen te maken. Door het koppelen van een table header en een datacel component in de plugin is het mogelijk hierna een tabel via een palet te maken op basis van een aantal kolommen en rijen. Ook kan de breedte van een kolom (toegepast op alle kolommen) opgegeven worden.
 
 https://user-images.githubusercontent.com/248921/173539483-e3d05d81-8ecb-4eb0-8143-6a2a96530201.mov
+
+### Wireframing en prototyping
+
+- [Arrow Auto](https://www.figma.com/community/plugin/751007211632768205/Arrow-Auto) trekt pijlen tussen schermen of elementen. Dit kan gebruikt worden om flows te illustreren.
