@@ -5,6 +5,8 @@ import * as path from 'path';
 import { components } from '../../componentConfig';
 import {
   componentPage,
+  getDocumentTitle,
+  getImplementationsSection,
   getImplementationTitle,
   implementationDetails,
   getAliasOverview,
@@ -38,6 +40,7 @@ const ensureDir = (directoryName) => {
 components.forEach(({ state, id, name, aliases, implementations, backlog }) => {
   const dir = ensureDir(state);
   const fileName = `${dir}/${id}.mdx`;
+  const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.mdx`);
 
   try {
     fs.writeFileSync(fileName, componentPage({ name, state }));
@@ -47,8 +50,16 @@ components.forEach(({ state, id, name, aliases, implementations, backlog }) => {
 
   console.log(`File created: ${fileName}`);
 
+  if (fs.existsSync(customDocsPath)) {
+    //Include docs
+    fs.appendFileSync(fileName, fs.readFileSync(customDocsPath));
+  } else {
+    // Include document title
+    fs.appendFileSync(fileName, getDocumentTitle({ name }));
+  }
+
   if (aliases.length) {
-    fs.appendFileSync(fileName, getAliasOverview({ aliases }));
+    fs.appendFileSync(fileName, getAliasOverview({ aliases, name }));
   }
 
   fs.appendFileSync(fileName, getStateDescription({ state }));
@@ -58,6 +69,10 @@ components.forEach(({ state, id, name, aliases, implementations, backlog }) => {
     grouped[implementation.type] = [...group, implementation];
     return grouped;
   }, {} as { [key: string]: ComponentImplementation[] });
+
+  if (implementations.length) {
+    fs.appendFileSync(fileName, getImplementationsSection());
+  }
 
   Object.keys(groupedImplementations).forEach((type) => {
     const implementations = groupedImplementations[type];

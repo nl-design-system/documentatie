@@ -30,17 +30,29 @@ export const getStateDescription = ({ state }) => {
       break;
   }
 
-  return `Dit component heeft de "${state}" status: ${description}
+  return `## Component status
+
+Dit component heeft de "${state}" status: ${description}
 
 `;
 };
 
-export const getAliasOverview = ({ aliases }) => {
-  return aliases.length > 1
-    ? `Synoniemen: [${aliases.map((alias) => `"${alias}"`).join(', ')}]
+export const getAliasOverview = ({ name, aliases }) => {
+  if (!aliases.length) {
+    return;
+  }
+
+  const lastAlias = aliases.pop();
+
+  return aliases.length
+    ? `## Aliassen
+
+${name} is ook bekend als ${aliases.map((a) => `"${a}"`).join(', ')} en "${lastAlias}"
 
 `
-    : `Ook bekend als "${aliases[0]}"
+    : `## Alias
+
+${name} is ook bekend als "${lastAlias}"
 
 `;
 };
@@ -60,12 +72,16 @@ tags:
 <!-- @license CC0-1.0 -->
 <!-- File is automatically generated, please modify the componentConfig.ts file and run the script to generate component pages to modify this file  -->
 
-# ${name}
-
 `;
 };
 
-export const getImplementationTitle = ({ type }) => `## ${type}
+export const getDocumentTitle = ({ name }) => `# ${name}
+`;
+
+export const getImplementationsSection = () => `## Implementaties
+`;
+
+export const getImplementationTitle = ({ type }) => `### ${type}
 `;
 
 export const implementationDetails = ({
@@ -76,14 +92,14 @@ export const implementationDetails = ({
   type,
 }: ComponentImplementation & { name: string }) => {
   if (type !== COMPONENT_TYPES.FIGMA) {
-    return `### ${organisation}
+    return `#### ${organisation}
 
 - Implementatie: [${name} ${type} implementatie van ${organisation}](${implementation})
 - Storybook: ${story ? `[${name} ${type} storybook van ${organisation}](${story})` : '(nog) geen story beschikbaar'}
 
 `;
   } else {
-    return `### ${organisation}
+    return `#### ${organisation}
 
 - Implementatie: [${name} ${type} implementatie van ${organisation}](${implementation})
 
