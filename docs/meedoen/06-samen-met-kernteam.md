@@ -20,7 +20,6 @@ Het kernteam bestaat uit:
 - Projectleider Angela Imhof, [angela.imhof@ictu.nl](mailto:angela.imhof@ictu.nl) – 06 - 18307886
 - Lead developer Robbert Broersma, [robbert@gebruikercentraal.nl](mailto:robbert@gebruikercentraal.nl)
 - Front-end developer Yolijn van der Kolk, [yolijn@gebruikercentraal.nl](mailto:yolijn@gebruikercentraal.nl)
-- Designer Rogier Barendregt, [rogier@gebruikercentraal.nl](mailto:rogier@gebruikercentraal.nl)
 
 Heb je een vraag aan (een van) ons? Neem dan gerust contact op!
 
@@ -35,4 +34,3 @@ Wil je op de hoogte blijven van alle ontwikkelingen? [Meld je dan aan voor onze 
 <img alt="Avatar van Angela" class="avatar-coreteam" src="https://user-images.githubusercontent.com/248921/156389018-9cfe9078-3ada-4bdd-ad50-6cfdced50ff9.png" />
 <img alt="Avatar van Robbert" class="avatar-coreteam" src="https://user-images.githubusercontent.com/248921/156389031-9b6e2e47-3e06-4bb7-93c9-6ddcc1013e9a.png" />
 <img alt="Avatar van Yolijn" class="avatar-coreteam" src="https://user-images.githubusercontent.com/248921/156389047-60e9bf71-09c7-4494-8c59-2e0e9aa26fb5.png" />
-<img alt="Avatar van Rogier" class="avatar-coreteam" src="https://user-images.githubusercontent.com/248921/156389063-521ab2f8-eec4-4edc-8d05-bfb1bb933fc2.png" />

@@ -124,7 +124,7 @@ Om een personal access token aan te maken moet je een GitHub account hebben. Als
 
 8. Je bent nu in staat om alle wijzigingen aan je design tokens in de Figma Tokens plugin op GitHub te bewaren.
 
-[Neem contact op met Rogier in het geval van problemen](mailto:rogier.barendregt@ictu.nl).
+[Neem contact op met Yolijn in het geval van problemen](mailto:yolijn@gebruikercentraal.nl).
 
 ## Bewerken van tokens
 
