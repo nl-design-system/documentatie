@@ -13,6 +13,12 @@ module.exports = {
     },
     {
       type: 'doc',
+      docId: 'aanpak/README',
+      position: 'left',
+      label: 'Aanpak',
+    },
+    {
+      type: 'doc',
       docId: 'meedoen/README',
       position: 'left',
       label: 'Meedoen',
