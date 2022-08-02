@@ -1,13 +1,12 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageHero from '../components/HomepageHero';
-import { HomepageActions } from '@site/src/components/HomepageActions';
-import { HomepageAction } from '@site/src/components/HomepageAction';
-import { HomepageTeasers } from '@site/src/components/HomepageTeasers';
-import { HomepageTeaser } from '@site/src/components/HomepageTeaser';
-import { HomepageFooter } from '@site/src/components/HomepageFooter';
+import { HomepageActions } from '../components/HomepageActions';
+import { HomepageAction } from '../components/HomepageAction';
+import { HomepageTeasers } from '../components/HomepageTeasers';
+import { HomepageTeaser } from '../components/HomepageTeaser';
+import { HomepageFooter } from '../components/HomepageFooter';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();

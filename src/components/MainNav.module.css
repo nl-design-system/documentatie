@@ -5,22 +5,12 @@
 }
 
 .main-nav__container {
-  display: flex;
-  gap: 40px;
-}
-
-.main-nav__item {
-  --ifm-navbar-link-color: white;
-  --ifm-navbar-link-hover-color: white;
   --ifm-navbar-item-padding-vertical: 0;
   --ifm-navbar-item-padding-horizontal: 0;
-  font-weight: bold;
-  border-bottom: 3px solid transparent;
-  font-family: "montserrat";
-  font-size: 16px;
-}
 
-.main-nav__item:hover,
-.main-nav__item:active {
-  border-bottom-color: #148839;
+  display: flex;
+  gap: 40px;
+  font-family: montserrat;
+  font-size: 16px;
+  --ifm-font-weight-semibold: 700;
 }

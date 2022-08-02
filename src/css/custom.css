@@ -27,6 +27,9 @@
   --ifm-footer-padding-vertical: 0;
   --ifm-footer-padding-horizontal: 0;
   --ifm-footer-link-hover-color: white;
+  --ifm-navbar-background-color: #00303d;
+  --ifm-navbar-link-hover-color: white;
+  --ifm-navbar-padding-vertical: 16px;
 }
 
 .button {
@@ -186,17 +189,41 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 /* Overwrite docusaurus styling but use the classname to enable lookup for content position by docusaurus */
 .navbar {
-  background-color: inherit;
-  box-shadow: var(--ifm-navbar-shadow);
-  display: block;
+  display: unset;
   height: auto;
   padding: 0;
 }
 
 .navbar .navbar__link--active:not([href="/"]),
-#docusaurus-base-url-issue-banner-container ~ .navbar .navbar__link--active {
+#docusaurus-base-url-issue-banner-container ~ .navbar .navbar__link--active,
+.navbar__link:hover {
   /* Somehow homepage nav item always gets navbar__link--active class and aria-current="page" attached, even when not active, this is a dirty fix to fix nav highlight */
   border-bottom: 3px solid #148839;
+}
+
+.navbar--dark {
+  --ifm-navbar-background-color: var(--ifm-color-primary-darker);
+  --ifm-navbar-link-hover-color: white;
+}
+
+.navbar__inner {
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+}
+
+.navbar__brand {
+  gap: 12px;
+}
+
+.navbar__logo {
+  height: 65px;
+  width: 65px;
+}
+
+.navbar__title {
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "league_gothic";
+  font-weight: 200;
 }
 
 .nlds-theme {

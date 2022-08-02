@@ -26,6 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebarConfig.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
+          breadcrumbs: false,
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/fonts.css')],

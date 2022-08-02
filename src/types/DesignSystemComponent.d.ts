@@ -1,4 +1,4 @@
-import { COMPONENT_STATES, COMPONENT_TYPES, ORGANISATIONS, DOCUMENTATION_TYPES } from '@site/src/utils';
+import { COMPONENT_STATES, COMPONENT_TYPES, ORGANISATIONS, DOCUMENTATION_TYPES } from 'src/utils';
 
 declare interface DesignSystemComponent {
   id: string;
