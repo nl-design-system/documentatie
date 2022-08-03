@@ -1,8 +1,8 @@
-import { ComponentImplementation } from '../../src/types/DesignSystemComponent';
+import { ComponentImplementation } from '@nl-design-system/component-index';
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { components } from '../../componentConfig';
+import { components } from '@nl-design-system/component-index';
 import {
   componentPage,
   getDocumentTitle,

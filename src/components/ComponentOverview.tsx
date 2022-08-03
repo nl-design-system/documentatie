@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentCard } from './ComponentCard';
 import style from './ComponentOverview.module.css';
-import { components } from '../../componentConfig';
+import { components } from '@nl-design-system/component-index';
 
 export const ComponentOverview = () => (
   <div className={style['component-overview']}>

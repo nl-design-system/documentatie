@@ -40,6 +40,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@docusaurus/types": "^2.0.1",
+    "@nl-design-system/component-index": "^1.0.0-alpha.3",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/node": "^17.0.45",
     "mdx-embed": "^1.0.0",
