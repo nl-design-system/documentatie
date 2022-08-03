@@ -1,12 +1,4 @@
-import { COMPONENT_TYPES } from '../../src/utils';
-import { ComponentImplementation } from '../../src/types/DesignSystemComponent';
-
-const COMPONENT_STATES = {
-  TODO: 'Help Wanted',
-  COMMUNITY: 'Community',
-  NL_UNSTABLE: 'Candidate',
-  NL_STABLE: 'Hall of fame',
-};
+import { COMPONENT_STATES, COMPONENT_TYPES, ComponentImplementation } from '@nl-design-system/component-index';
 
 export const getStateDescription = ({ state }) => {
   let description = '';
@@ -70,7 +62,7 @@ tags:
 ---
 
 <!-- @license CC0-1.0 -->
-<!-- File is automatically generated, please modify the componentConfig.ts file and run the script to generate component pages to modify this file  -->
+<!-- File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  -->
 
 `;
 };

@@ -3,7 +3,7 @@ import style from './ComponentCard.module.css';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { COMPONENT_STATES } from '../utils';
+import { COMPONENT_STATES } from '@nl-design-system/component-index';
 
 interface ComponentCardProps {
   title: string;
