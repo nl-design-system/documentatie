@@ -52,7 +52,7 @@
 
 .component-card__title {
   font-size: 22px;
-  font-family: "montserrat";
+  font-family: var(--ifm-font-family-base);
   font-weight: bold;
 }
 

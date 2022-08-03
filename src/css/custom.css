@@ -15,7 +15,8 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-background-color: #f9f6f3;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "montserrat";
+  --ifm-font-family-base: "Montserrat";
+  --ifm-font-weight-semibold: 600;
   --ifm-button-border-radius: 0;
   --ifm-button-padding-vertical: 8px;
   --ifm-button-padding-horizontal: 16px;
@@ -232,6 +233,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
   align-content: inherit;
+  font-weight: 500;
 }
 
 .markdown > h2 {
