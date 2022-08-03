@@ -41,6 +41,7 @@
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@docusaurus/types": "^2.0.1",
     "@fontsource/montserrat": "^4.5.11",
+    "@nl-design-system/component-index": "^1.0.0-alpha.5",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/node": "^17.0.45",
     "npm-check-updates": "^16.0.5",

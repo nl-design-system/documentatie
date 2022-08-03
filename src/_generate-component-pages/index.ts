@@ -1,8 +1,7 @@
-import { ComponentImplementation } from '../../src/types/DesignSystemComponent';
+import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { components } from '../../componentConfig';
 import {
   componentPage,
   getDocumentTitle,
@@ -37,7 +36,7 @@ const ensureDir = (directoryName) => {
   return dirPath;
 };
 
-components.forEach(({ state, id, name, aliases, implementations, backlog }) => {
+componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
   const dir = ensureDir(state);
   const fileName = `${dir}/${id}.mdx`;
   const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.mdx`);

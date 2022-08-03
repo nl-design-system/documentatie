@@ -1,11 +1,11 @@
 import React from 'react';
 import { ComponentCard } from './ComponentCard';
 import style from './ComponentOverview.module.css';
-import { components } from '../../componentConfig';
+import { componentIndex } from '@nl-design-system/component-index';
 
 export const ComponentOverview = () => (
   <div className={style['component-overview']}>
-    {components
+    {componentIndex
       .sort((a, b) => (a.name >= b.name ? 1 : -1))
       .map(({ name, state, id, preview }) => {
         const link = `/docs/componenten/${state}/${id}`;
