@@ -20,6 +20,7 @@ keywords:
 - Sommige gebruikers lezen een automatische vertaling van de tekst, in bijvoorbeeld Grieks, Cyrillisch, Arabisch of Aziatisch schrift.
 - Sommige gebruikers lezen de tekst met extra grote letters.
 - Sommige gebruikers lezen de tekst met extra grote regelafstand.
+- Sommige gebruikers lezen de tekst met extra grote afstand tussen woorden.
 - Sommige gebruikers lezen de tekst zonder een gedownload lettertype te gebruiken.
 - Sommige gebruikers lezen de tekst met een eigen lettertype.
 
@@ -44,9 +45,9 @@ h3 {
 }
 ```
 
-## Cursief, ofwel `italic`
+<!-- TODO: ## Cursief, ofwel `italic` -->
 
-## Letter spacing
+<!-- TODO: ## Letter spacing -->
 
 ## Line height
 
@@ -141,4 +142,3 @@ Op deze manier loop je niet het risico dat gebruikers minder leesbare teksten zi
 ## Links
 
 - [Say No to Faux Bold, by Alan Stearns](https://alistapart.com/article/say-no-to-faux-bold/)
-- [On Link Underlines, by Adrian Roselli](https://adrianroselli.com/2016/06/on-link-underlines.html)
