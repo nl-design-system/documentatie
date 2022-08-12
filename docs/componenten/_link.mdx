@@ -1,0 +1,156 @@
+<!-- @license CC0-1.0 -->
+
+# Link
+
+Met de link maak je navigatie mogelijk naar een gerelateerde pagina. Je kunt links groeperen in de navigatie-regio van de pagina, zodat gebruikers snel vinden welke informatie er nog meer is. Je kunt links plaatsen in de lopende tekst. Je kunt overzichtelijke lijstjes met links plaatsen in de tekst. Je kunt links plaatsen naar dezelfde informatie in een ander formaat of in een andere taal. Je kunt van hele blokken een link maken, om die informatie in detail te openen.
+
+Sommige gebruikers gebruiken het toetsenbord om telkens met één druk op de knop naar de volgende link te gaan. De `focus-visible` variant moet daarom opvallend zijn, zodat je weet welke link je kunt activeren met `Enter`. Links moet je kunnen activeren met `Enter`, maar niet met `Space`.
+
+Sommige gebruikers gebruiken een lijst van alle links op een pagina, en kiezen een link uit op basis van de link-tekst. Deze gebruikers bekijken niet de hele pagina, en zien niet altijd de link in de context van de omliggende tekst. Daarom is het belangrijk dat de link-tekst op zichzelf duidelijk maakt welke pagina je opent. Om de juiste link te kunnen kiezen, is het ook belangrijk dat niet dezelfde link-tekst wordt gebruikt voor verschillende links. Gebruik dus niet "Lees meer" als link-tekst, die tekst is meestal niet uniek op een pagina en is onduidelijk zonder context.
+
+## Varianten
+
+Deze pagina gaat met name over links in de lopende tekst.
+
+Een aantal varianten zijn elders beschreven:
+
+- link van hoofdnavigatie
+- links die eruit zien als button
+- skip link
+
+## Design
+
+### Onderstreep de link
+
+Links zijn het meest herkenbaar als je de tekst van de link onderstreept, want dat is gebruikelijk sinds het begin van het web. Gebruik een kleur met voldoende contrast voor de streep, zodat iedereen die de tekst kan zien ook de streep kan zien. De kleur van de streep kan minder contrast hebben als de streep dikker is.
+
+Een streep die door de letters gaat maakt de tekst minder leesbaar. Gebruikers met dyslexie kunnen woorden beter herkennen als het woordbeeld niet wordt aangetast. Maak het woordbeeld van links rustiger met de volgende twee CSS properties. Je kunt met `text-decoration-skip-ink` in CSS de streep automatisch laten onderbreken, zodat je voorkomt dat woorden een beetje doorstreept worden. Met `text-underline-offset` kun je de afstand tussen de streep en de letters iets groter maken, zodat een onderbroken streep minder vaak nodig is.
+
+Links die staan op een herkenbare plek zoals de hoofdnavigatie, zijn vaak al herkenbaar als link wanneer ze niet onderstreept zijn. Je kunt extra duidelijk maken dat het een link is door de tekst alsnog onderstrepen als `hover` of `focus` effect, zodat een gebruiker zeker weet dat de browser mogelijkheden heeft zoals "Openen deze link in een nieuwe tab" of "Deel deze link".
+
+Heeft de link een icoon én tekst, onderstreep dan alleen de tekst.
+
+### `hover` en `focus`
+
+Wanneer een gebruiker met de muis over een link gaat (`hover`), of met het toetsenbord een link selecteert (`focus`), dan is het belangrijk dat er geen onvoorspelbare wijzigingen in de layout zijn.
+
+Gebruik voor `hover` en `focus` geen effecten waardoor de tekst van de link over meer regels wordt verdeeld, of waardoor de tekst na de link verschuift. Gebruik daarom geen andere `font-size` of `font-weight` als effect.
+
+Gebruik voor `hover` en `focus` geen effect waardoor de positie van de link verschuift, waardoor het moeilijk wordt de link aan te klikken.
+
+## Hoe het niet moet
+
+### Geen zichtbaar verschil tussen hover en focus state
+
+Als toetsenbordgebruiker is het belangrijk dat je weet welke link je activeert als je op `Enter` drukt. Als de hover-variant van de link (bijna) hetzelfde is als de focus-variant, dan weet je niet zeker welke link je zult activeren.
+
+### Link-tekst betekent verschillende dingen
+
+Niet goed: "contact" linkt eerst naar de contact-pagina, verder op linkt "contact" naar een telefoonnummer.
+
+```html
+<nav>
+  <a href="/contact/">contact</a>
+</nav>
+<!-- ...op een andere plek in dezelfde pagina -->
+<p>Neem <a href="tel:555-1234">contact</a> op met de klantenservice, vandaag tot 6 uur bereikbaar.</p>
+```
+
+Beter:
+
+```html
+<nav>
+  <a href="/contact/">contact</a>
+</nav>
+<!-- ...op een andere plek in dezelfde pagina -->
+<p><a href="tel:555-1234">Bel de klantenservice</a>, vandaag tot 6 uur bereikbaar.</p>
+```
+
+### Verkeerde taal
+
+Als je linkt naar een pagina waarvan de beschrijving in een andere taal is dan de context waarin de link staat, dan moet je de taal instellen op de link zelf (WCAG 3.1.2).
+
+Niet:
+
+```html
+<a href="/nl/">Nederlands</a>
+<a href="/en/">English</a>
+<a href="/fr/">François</a>
+```
+
+Wel:
+
+```html
+<a href="/nl/">Nederlands</a>
+<a href="/en/" lang="en">English</a>
+<a href="/fr/" lang="fr">François</a>
+```
+
+Niet:
+
+```html
+<p>
+  In de presentatie
+  <a href="https://www.slideshare.net/stubbornella/object-oriented-css"
+    >Object Oriented CSS for high performance web applications and sites</a
+  >
+  vertelt Nicole Sullivan over een aanpak om CSS te schrijven.
+</p>
+```
+
+```html
+<p>
+  In de presentatie
+  <a href="https://www.slideshare.net/stubbornella/object-oriented-css" lang="en"
+    >Object Oriented CSS for high performance web applications and sites</a
+  >
+  vertelt Nicole Sullivan over een aanpak om CSS te schrijven.
+</p>
+```
+
+### Link naar huidige pagina niet opmaken
+
+Gebruik niet _alleen_ een class name om duidelijk te maken dat de link verwijst naar de huidige pagina.
+
+```html
+<a href="/">Home</a> › <a href="/nieuws/">Nieuws</a> ›
+<a href="/nieuws/burgemeester" class="current">Nieuwe burgemeester</a>
+```
+
+Gebruik altijd `aria-current` om de informatie beschikbaar te maken aan de browser en tools:
+
+```html
+<a href="/">Home</a> › <a href="/nieuws/">Nieuws</a> ›
+<a href="/nieuws/burgemeester" class="current" aria-current="page">Nieuwe burgemeester</a>
+```
+
+### Onnodige link naar huidige pagina
+
+Niet goed: een link naar de homepage plaatsen op de homepage zelf. Op andere pagina's is het natuurlijk wel handig om het logo een link te maken.
+
+```html
+<header>
+  <a href="/" class="nl-logo">
+    <img src="/logo.svg" alt="Keuringsdienst van waarde" />
+  </a>
+</header>
+<h1>Home</h1>
+```
+
+Wel goed: logo zonder link op de homepage.
+
+```html
+<header>
+  <img class="nl-logo" src="/logo.svg" alt="Keuringsdienst van waarde" />
+</header>
+<h1>Home</h1>
+```
+
+## Links
+
+- [MDN: `<a>`: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+
+### Relevante WCAG regels
+
+- [WCAG 1.4.3](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+- [WCAG 3.1.2](https://www.w3.org/TR/WCAG21/#language-of-parts)
