@@ -1,0 +1,53 @@
+<!-- @license CC0-1.0 -->
+
+# Breadcrumb navigation
+
+Ook bekend als "kruimelpad navigatie" in het Nederlands.
+
+De _breadcrumb navigation_ helpt de gebruiker begrijpen hoe pagina's in een hierarchie zijn georganiseerd, terug te gaan naar een vorig niveau, en het laat zien waar de gebruiker nu is binnen een verzameling van pagina's.
+
+Gebruik een _breadcrumb navigation_ wanneer je website niet zo klein is dat elke pagina vanaf de homepage bereikbaar is, en je extra niveaus hebt om de pagina's te organiseren.
+
+## HTML
+
+Tips om je HTML op te bouwen:
+
+- plaats de component in een `<nav>` element zodat de links in een _landmark region_ staan
+- maak met `<nav aria-label="Kruimelpad">` duidelijk dat het kruimelpad navigatie is, wanneer je meerdere `<nav>` elementen hebt
+- gebruik `<a aria-current="location">` om de huidige pagina te markeren
+- gebruik extra _microdata_ markup als je wilt dat zoekmachines de breadcrumbs kunnen tonen in de zoekresultaten: [_Breadcrumb_ op Google Search Central](https://developers.google.com/search/docs/data-types/breadcrumb)
+
+## Hoe het niet moet
+
+### Navigatie in de verkeerde _landmark_
+
+Plaats het `<nav>` HTML-element met de breadcrumb navigation niet binnen de _main page content_, ofwel het `<main>` HTML-element.
+
+Niet:
+
+```html
+<main>
+  <nav class="breadcrumbs">
+    <a href="/">Home</a> /
+    <a href="/contact" aria-current="page">Contact</a>
+  </nav>
+  <h1>Contact</h1>
+</main>
+```
+
+Wel:
+
+```html
+<nav class="breadcrumbs">
+  <a href="/">Home</a> /
+  <a href="/contact" aria-current="page">Contact</a>
+</nav>
+<main>
+  <h1>Contact</h1>
+</main>
+```
+
+## Links
+
+- [WCAG 2.4.5](https://www.w3.org/TR/WCAG21/#multiple-ways)
+- [WCAG 2.4.8](https://www.w3.org/TR/WCAG21/#location)
