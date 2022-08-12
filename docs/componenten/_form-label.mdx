@@ -1,0 +1,74 @@
+<!-- @license CC0-1.0 -->
+
+# Form label
+
+## Hoe het niet moet
+
+### Label bevat extra tekst
+
+Het label moet kort en duidelijk zijn, zodat het als naam gebruikt kan worden om naar het veld te verwijzen; bijvoorbeeld als het veld nog niet valide is daarom de verzend-knop niet werkt.
+
+Gebruik niet het label-element in HTML omdat je extra onderdelen klikbaar wilt maken.
+
+Extra instructies en voorbeelden moeten je als description maken, niet als label. Gebruik voor extra aanwijzingen `aria-describedby`, samen met het _Form description_ component.
+
+Niet:
+
+```html
+<label for="first-name">Voornaam (verplicht)</label>
+```
+
+Niet:
+
+```html
+<label for="house-number">Huisnummer met toevoeging, bijvoorbeeld 37 of 42bis.</label>
+```
+
+### Label heeft grote afstand tot invoerveld
+
+Als je bijvoorbeeld twee kolommen gebruikt voor de layout van je formulier, met in de eerste kolom de labels en laatste kolom de invoervelden, dan wordt het voor sommige gebruikers onduidelijk welke labels horen bij de invoervelden. Gebruik daarom een maximale breedte voor de kolom met de labels. Het is nog beter om de labels en formuliervelden onder elkaar te zetten, in een verticale layout.
+
+### Geen uitleg voor jargon of afkortingen
+
+Wanneer je een afkorting gebruikt, of je moet jargon gebruiken omdat de officiële term verplicht is, geef dan in de description een voorbeeld of uitleg.
+
+Niet:
+
+- "IBAN" — een afkorting zonder uitleg
+- "Geslachtsnaam" — jargon zonder uitleg
+
+Wel:
+
+```html
+<p>
+  <label for="iban">IBAN</label>
+  <input name="iban" aria-describedby="iban-desc" />
+</p>
+<p id="iban-desc">Bankrekeningnummer, bijvoorbeeld NL12ABC4567890. Het staat aan de voorkant van je bankpasje.</p>
+```
+
+Wel:
+
+```html
+<p>
+  <label for="family-name">Geslachtsnaam</label>
+  <input name="family-name" autocomplete="family-name" aria-describedby="family-name-desc" />
+</p>
+<p id="family-name-desc">Je volledige achternaam, zoals deze staat op je identiteitsbewijs.</p>
+```
+
+### Letters zijn niet groot genoeg
+
+Gebruik `16px` of groter lettergrootte voor tekst labels.
+
+Het is populair geweest om het label te animeren van leesbare tekst op de plaats van het invoerveld, naar een onopvallend klein lettertype wanneer het invoerveld focus heeft. Ook wanneer het invoerveld focus heeft moet het label goed leesbaar zijn.
+
+### Label heeft een animatie
+
+Gebruik geen animatie voor het label wanneer de invoerveld focus krijgt.
+
+Voor bestaande projecten met een animatie, moet voor toegankelijkheid de animatie uitgeschakeld worden wanneer de gebruiker via de [CSS media query `prefer-reduced-motion: reduce`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) laat weten dat animaties niet gewenst zijn.
+
+### Label staat in placeholder
+
+Gebruik de placeholder-attribuut in HTML niet in plaats van een label, want het is niet een volwaardig alternatief.
