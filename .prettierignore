@@ -11,3 +11,6 @@ tmp
 .docusaurus
 CHANGELOG.md
 package-lock.json
+docs/componenten/Help Wanted/*.mdx
+docs/componenten/Community/*.mdx
+
