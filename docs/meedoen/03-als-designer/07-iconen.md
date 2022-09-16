@@ -1,8 +1,8 @@
 ---
-title: Ontwerp
+title: Iconen gebruiken
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Ontwerp
+sidebar_label: Iconen gebruiken
 sidebar_position: 1
 pagination_label: Ontwerp
 description: Iconografie - Ontwerp
@@ -14,7 +14,7 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
-# Ontwerp
+# Iconen gebruiken
 
 ## Ontwerp richtlijnen {#ontwerp-richtlijnen}
 

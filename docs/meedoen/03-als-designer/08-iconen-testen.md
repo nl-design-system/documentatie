@@ -1,8 +1,8 @@
 ---
-title: Testen
+title: Iconen testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Testen
+sidebar_label: Iconen testen
 sidebar_position: 1
 pagination_label: Testen
 description: Iconografie - Testen van iconen
