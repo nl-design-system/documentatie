@@ -38,9 +38,6 @@ export default function Home() {
           <HomepageAction title="Richtlijnen" href="docs/richtlijnen/">
             <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
-          <HomepageAction title="Patronen" href="docs/patronen/">
-            <p>Oplossingen voor veelvoorkomende problemen en herhalende klantreizen.</p>
-          </HomepageAction>
           <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
             <p>Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.</p>
           </HomepageAction>

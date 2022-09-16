@@ -13,7 +13,7 @@ keywords:
 
 # Voorbeelden
 
-Hier tonen we voorbeelden gemaakt met richtlijnen en componenten uit het NL Design System. Deze voorbeelden zijn door diverse organisaties gemaakt op basis van documentatie, patronen en componenten van het NL Design System.
+Hier tonen we voorbeelden van veelvoorkomende pagina's en klantreizen, gemaakt met richtlijnen en componenten uit het NL Design System. Deze voorbeelden zijn door diverse organisaties gemaakt op basis van documentatie, patronen en componenten van het NL Design System.
 
 Op dit moment werken we hard om voorbeelden te delen. Hou deze pagina in de gaten!
 

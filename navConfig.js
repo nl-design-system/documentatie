@@ -37,12 +37,6 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'patronen/README',
-      position: 'left',
-      label: 'Patronen',
-    },
-    {
-      type: 'doc',
       docId: 'voorbeelden/README',
       position: 'left',
       label: 'Voorbeelden',
