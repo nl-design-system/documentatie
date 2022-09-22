@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_nl_design_system_documentatie=self.webpackChunk_nl_design_system_documentatie||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"Community","permalink":"/docs/tags/community","count":32},{"label":"Help Wanted","permalink":"/docs/tags/help-wanted","count":32}]')}}]);
