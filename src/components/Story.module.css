@@ -1,0 +1,19 @@
+.story {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.story__link {
+  text-align: right;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: var(--ifm-background-color);
+  background-color: var(--ifm-button-color);
+}
+
+.story__link:hover {
+  color: white;
+  text-decoration: underline;
+}

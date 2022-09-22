@@ -22,34 +22,12 @@ export const getStateDescription = ({ state }) => {
       break;
   }
 
-  return `## Component status
-
-Dit component heeft de "${state}" status: ${description}
+  return `Dit component heeft de "${state}" status: ${description}
 
 `;
 };
 
-export const getAliasOverview = ({ name, aliases }) => {
-  if (!aliases.length) {
-    return;
-  }
-
-  const lastAlias = aliases.pop();
-
-  return aliases.length
-    ? `## Aliassen
-
-${name} is ook bekend als ${aliases.map((a) => `"${a}"`).join(', ')} en "${lastAlias}"
-
-`
-    : `## Alias
-
-${name} is ook bekend als "${lastAlias}"
-
-`;
-};
-
-export const componentPage = ({ name, state }) => {
+export const componentPage = ({ name, state, story, customDoc }) => {
   return `---
 title: ${name}
 hide_title: true
@@ -63,12 +41,40 @@ tags:
 
 <!-- @license CC0-1.0 -->
 <!-- File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  -->
+${
+  story
+    ? `import { Story } from "../../../src/components/Story";
+`
+    : ''
+}${
+    customDoc
+      ? `import { Markdown } from "../../../src/components/Markdown";
+import CustomDoc from "${customDoc}";
+`
+      : ''
+  }
+# ${name}
 
-`;
+${getStateDescription({ state })}${
+    story
+      ? `## Voorbeeld
+
+<Story label="${story.label}" href="${story.href}"/>
+
+`
+      : ''
+  }${
+    customDoc
+      ? `## UX en toegankelijkheid
+
+<Markdown omitH1>
+  <CustomDoc />
+</Markdown>
+
+`
+      : ''
+  }`;
 };
-
-export const getDocumentTitle = ({ name }) => `# ${name}
-`;
 
 export const getImplementationsSection = () => `## Implementaties
 `;

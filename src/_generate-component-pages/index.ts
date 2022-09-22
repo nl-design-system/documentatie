@@ -4,12 +4,9 @@ import * as path from 'path';
 
 import {
   componentPage,
-  getDocumentTitle,
   getImplementationsSection,
   getImplementationTitle,
   implementationDetails,
-  getAliasOverview,
-  getStateDescription,
   getBacklogLink,
 } from './component-page';
 
@@ -39,29 +36,36 @@ const ensureDir = (directoryName) => {
 componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
   const dir = ensureDir(state);
   const fileName = `${dir}/${id}.mdx`;
-  const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.mdx`);
+  const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.md`);
+
+  const storyTemplate = implementations.find(({ storyTemplate }) => storyTemplate);
+
+  const story = storyTemplate && {
+    label: `https://nl-design-system.github.io/themes/`,
+    href: `https://nl-design-system.github.io/themes/?path=/docs/${id}--${storyTemplate.organisation
+      .replace(/\s/g, '-')
+      .toLowerCase()}`,
+  };
+
+  //nl-design-system.github.io/themes/iframe.html?args=appearance:primary-action-button&id=button--gemeente-utrecht&viewMode=story
+
+  const hasCustomDoc = fs.existsSync(customDocsPath);
 
   try {
-    fs.writeFileSync(fileName, componentPage({ name, state }));
+    fs.writeFileSync(
+      fileName,
+      componentPage({
+        name,
+        state,
+        story,
+        customDoc: hasCustomDoc && path.relative(dir, customDocsPath),
+      }),
+    );
   } catch (err) {
     console.error(err);
   }
 
   console.log(`File created: ${fileName}`);
-
-  if (fs.existsSync(customDocsPath)) {
-    //Include docs
-    fs.appendFileSync(fileName, fs.readFileSync(customDocsPath));
-  } else {
-    // Include document title
-    fs.appendFileSync(fileName, getDocumentTitle({ name }));
-  }
-
-  if (aliases.length) {
-    fs.appendFileSync(fileName, getAliasOverview({ aliases, name }));
-  }
-
-  fs.appendFileSync(fileName, getStateDescription({ state }));
 
   const groupedImplementations = implementations.reduce((grouped, implementation) => {
     const group = grouped[implementation.type] || [];
