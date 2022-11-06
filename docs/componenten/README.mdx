@@ -2,9 +2,9 @@
 title: Componenten - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Componenten overzicht
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Componenten overzicht
+pagination_label: Overzicht
 description: Een overzicht van alle gedocumenteerde componenten uit NL Design System
 keywords:
   - componenten
@@ -14,55 +14,16 @@ keywords:
   - den haag
 ---
 
-import { Definition, DefinitionList, DefinitionTitle, DefinitionData } from "/src/components/DefinitionList";
-
-import { ComponentCard } from "/src/components/ComponentCard";
-
+import { StatusVisual } from "/src/components/StatusVisual";
 import { ComponentOverview } from "/src/components/ComponentOverview";
-
-import { componentIndex } from "@nl-design-system/component-index";
-
-import { Link } from "@docusaurus/router";
-
-import { COMPONENT_STATES } from "/src/utils";
 
 # Componenten van NL Design System
 
-Hier vind je de componenten van het NL Design System. Dit zijn kant en klare, geteste en herbruikbare bouwblokken om consistente digitale ervaringen voor eindgebruikers te maken. De componenten zijn voorzien van uitgebreide documentatie en richtlijnen.
-Voor het ontwerpen van componenten gebruikt het NL Design System [Figma](../meedoen/03-als-designer/05-figma/README.md).
+## Component status
 
-Hier worden regelmatig nieuwe componenten toegevoegd. Deze worden, op basis van input en praktijkervaring, bijgewerkt.
 De componenten van NL Design System worden met een estafette aanpak gemaakt. Daarom kan een component een van de volgende statussen hebben:
 
-<DefinitionList>
-  <Definition>
-    <DefinitionTitle>{COMPONENT_STATES.TODO}</DefinitionTitle>
-    <DefinitionData>
-      Het component moet nog ontwikkeld worden, maar staat al wel op de backlog. Heeft jouw organisatie dit component
-      nodig? Neem contact op en help ons om de eerste versie te ontwikkelen.
-    </DefinitionData>
-  </Definition>
-  <Definition>
-    <DefinitionTitle>{COMPONENT_STATES.COMMUNITY}</DefinitionTitle>
-    <DefinitionData>
-      Het component is beschikbaar in de community en is gebouwd volgens de architectuur en richtlijnen van NL Design
-      System.
-    </DefinitionData>
-  </Definition>
-  <Definition>
-    <DefinitionTitle>{COMPONENT_STATES.NL_UNSTABLE}</DefinitionTitle>
-    <DefinitionData>
-      Het component is beschikbaar in de NL Design System unstable repository. Hij voldoet alleen nog niet aan onze
-      "Definition of Done".
-    </DefinitionData>
-  </Definition>
-  <Definition>
-    <DefinitionTitle>{COMPONENT_STATES.NL_STABLE}</DefinitionTitle>
-    <DefinitionData>
-      Het component is beschikbaar in de NL Design System repository en voldoet volledig aan onze "Definition of Done".
-    </DefinitionData>
-  </Definition>
-</DefinitionList>
+<StatusVisual />
 
 ## Componenten
 

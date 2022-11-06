@@ -16,7 +16,7 @@ keywords:
 ## Hier zijn wat middelen om je op weg te helpen:
 
 - [Aan de slag](01-aan-de-slag.md)
-- [Componenten overzicht](/docs/componenten)
+- [Componenten overzicht](/componenten)
 - [Architectuur](02-architectuur.md)
 - [Thema maken voor bestaande componenten](03-thema-maken.mdx)
 - [Nieuw of bestaand component gebruiken](04-samenwerken-aan-componenten.md)

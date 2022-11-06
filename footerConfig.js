@@ -5,7 +5,7 @@ module.exports = {
       items: [
         {
           label: 'Toegankelijkheid',
-          to: '/docs/footer/toegankelijkheidsverklaring',
+          to: '/footer/toegankelijkheidsverklaring',
         },
         {
           label: 'Sitemap',

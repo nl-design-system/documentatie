@@ -17,7 +17,7 @@ export default function Home() {
     >
       <HomepageHero
         title="Over het NL Design System"
-        ctaLink="docs/meedoen/introductie"
+        ctaLink="meedoen/introductie"
         cta="Meer over het NL Design System"
       >
         {
@@ -32,18 +32,18 @@ export default function Home() {
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction title="Componenten" href="docs/componenten/">
+          <HomepageAction title="Componenten" href="componenten/">
             <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
           </HomepageAction>
-          <HomepageAction title="Richtlijnen" href="docs/richtlijnen/">
+          <HomepageAction title="Richtlijnen" href="richtlijnen/">
             <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
-          <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
+          <HomepageAction title="Voorbeelden" href="voorbeelden/">
             <p>Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.</p>
           </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
-          <HomepageTeaser title="Meedoen" cta=" Vertel me meer" ctaLink="docs/meedoen/">
+          <HomepageTeaser title="Meedoen" cta=" Vertel me meer" ctaLink="meedoen/">
             <p>
               Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System? Meedoen kan namelijk op vele manieren.
             </p>
@@ -77,14 +77,14 @@ export default function Home() {
           <div>
             <h2>Over het kernteam</h2>
             <p>
-              Het NL Design System wordt ontwikkeld door <a href="docs/meedoen/kernteam/">een vast kernteam</a> bij
-              Gebruiker Centraal.
+              Het NL Design System wordt ontwikkeld door <a href="meedoen/kernteam/">een vast kernteam</a> bij Gebruiker
+              Centraal.
             </p>
           </div>
           <div>
             <h2>Samenwerking</h2>
             <p>
-              Met <a href="docs/meedoen/">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
+              Met <a href="meedoen/">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
               toegankelijke online dienstverlening voor overheidsorganisaties.
             </p>
           </div>

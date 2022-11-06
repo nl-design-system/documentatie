@@ -27,7 +27,7 @@ export const getStateDescription = ({ state }) => {
 `;
 };
 
-export const componentPage = ({ name, state, story, customDoc }) => {
+export const componentPage = ({ id, name, state, story, customDoc }) => {
   return `---
 title: ${name}
 hide_title: true
@@ -35,6 +35,7 @@ hide_table_of_contents: false
 sidebar_label: ${name}
 pagination_label: ${name}
 description: UX richtlijnen voor ${name} component
+slug: /${id}
 tags:
   - ${state}
 ---
