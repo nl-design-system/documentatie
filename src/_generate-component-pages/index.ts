@@ -24,17 +24,11 @@ const ensureDir = (directoryName) => {
 
   console.log(`Directory available: ${dirPath}`);
 
-  try {
-    fs.writeFileSync(`${dirPath}/.gitignore`, '**');
-  } catch (_) {
-    throw new Error('gitignore could not be created');
-  }
-
   return dirPath;
 };
 
 componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
-  const dir = ensureDir(state);
+  const dir = ensureDir('build');
   const fileName = `${dir}/${id}.mdx`;
   const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.md`);
 
@@ -55,6 +49,7 @@ componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) 
     fs.writeFileSync(
       fileName,
       componentPage({
+        id,
         name,
         state,
         story,

@@ -1,0 +1,82 @@
+.status-visual {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2px;
+}
+
+.status-visual__status {
+  padding-inline: 20px;
+  padding-block: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.status-visual__status:not(:first-child)::before {
+  content: "➔";
+  position: absolute;
+  top: 18px;
+  left: -1px;
+  z-index: 2;
+  font-size: 30px;
+  color: white;
+}
+
+.status-visual__status--help-wanted {
+  background-color: var(--nlds-status-help-wanted-background-color);
+  color: var(--nlds-status-help-wanted-color);
+}
+
+.status-visual__status--community {
+  background-color: var(--nlds-status-community-background-color);
+  color: var(--nlds-status-community-color);
+}
+
+.status-visual__status--unstable {
+  background-color: var(--nlds-status-unstable-background-color);
+  color: var(--nlds-status-unstable-color);
+}
+
+.status-visual__status--stable {
+  background-color: var(--nlds-status-stable-background-color);
+  color: var(--nlds-status-stable-color);
+}
+
+.status-visual__title {
+  font-family: var(--nlds-alternative-font-family);
+  font-size: 42px;
+  line-height: 42px;
+  margin-block-end: 12px;
+}
+.status-visual__description {
+  margin-inline-start: 0;
+}
+
+.status-visual__link {
+  color: inherit;
+}
+
+.status-visual__link:hover {
+  color: inherit;
+}
+
+@media (max-width: 1200px) {
+  .status-visual {
+    grid-auto-flow: row;
+  }
+
+  .status-visual__status {
+    padding-block: 30px;
+  }
+
+  .status-visual__status:not(:first-child)::before {
+    content: "↓";
+    left: calc(50% - 14px);
+    top: -27px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .status-visual__title {
+    margin-block-end: 8px;
+  }
+}

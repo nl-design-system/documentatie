@@ -22,7 +22,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
+        pages: {
+          path: 'src/pages',
+          routeBasePath: '/',
+        },
         docs: {
+          routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebarConfig.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
@@ -38,7 +43,6 @@ const config = {
       },
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {

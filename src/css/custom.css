@@ -31,6 +31,18 @@
   --ifm-navbar-background-color: #00303d;
   --ifm-navbar-link-hover-color: white;
   --ifm-navbar-padding-vertical: 16px;
+
+  --nlds-status-help-wanted-background-color: #4e1c40;
+  --nlds-status-help-wanted-color: #fff;
+  --nlds-status-community-background-color: #027bb0;
+  --nlds-status-community-color: #fff;
+  --nlds-status-unstable-background-color: #148839;
+  --nlds-status-unstable-color: #fff;
+  --nlds-status-stable-background-color: #f99d1c;
+  --nlds-status-stable-color: #00303d;
+
+  --nlds-font-family: "Montserrat";
+  --nlds-alternative-font-family: "league_gothic";
 }
 
 .button {
@@ -39,7 +51,7 @@
   padding-inline-end: 48px;
   padding-inline-start: 16px;
   text-transform: uppercase;
-  font-family: "league_gothic";
+  font-family: var(--nlds-alternative-font-family);
   font-weight: normal;
   font-size: 1.625rem;
   line-height: 1;
@@ -223,7 +235,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .navbar__title {
   text-transform: uppercase;
   font-size: 44px;
-  font-family: "league_gothic";
+  font-family: var(--nlds-alternative-font-family);
   font-weight: 200;
 }
 

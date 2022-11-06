@@ -1,3 +1,10 @@
+---
+title: Toegankelijkheid
+hide_title: true
+hide_table_of_contents: false
+pagination_label: Toegankelijkheid
+---
+
 # Toegankelijkheid
 
 ## Componenten uit de community

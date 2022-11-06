@@ -8,7 +8,7 @@ export const ComponentOverview = () => (
     {componentIndex
       .sort((a, b) => (a.name >= b.name ? 1 : -1))
       .map(({ name, state, id, preview }) => {
-        const link = `/docs/componenten/${state}/${id}`;
+        const link = `/${id}`;
 
         return <ComponentCard key={id} title={name} status={state} doc={link} preview={preview} />;
       })}
