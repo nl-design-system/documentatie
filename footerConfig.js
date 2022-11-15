@@ -8,8 +8,8 @@ module.exports = {
           to: '/footer/toegankelijkheidsverklaring',
         },
         {
-          label: 'Sitemap',
-          href: '/sitemap',
+          label: 'Colofon',
+          to: '/footer/colofon',
         },
       ],
     },

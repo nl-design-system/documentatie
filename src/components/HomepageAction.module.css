@@ -21,9 +21,21 @@
   background-image: url("../icons/arrow-right-green.svg");
 }
 
+.homepage-action__icon {
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 20px;
+}
+
 .homepage-action__title {
   font-size: 18px;
-  max-width: 80%;
+  text-align: center;
+}
+
+.homepage-action__link:hover .homepage-action__icon {
+  color: #148839;
 }
 
 .homepage-action__link:hover .homepage-action__title {
