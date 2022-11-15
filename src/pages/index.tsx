@@ -41,6 +41,9 @@ export default function Home() {
           <HomepageAction title="Voorbeelden" href="voorbeelden/">
             <p>Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.</p>
           </HomepageAction>
+          <HomepageAction title="Videos" href="videos/">
+            <p>Opnames van NL Design System sessies.</p>
+          </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
           <HomepageTeaser title="Meedoen" cta=" Vertel me meer" ctaLink="meedoen/">

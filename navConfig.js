@@ -42,6 +42,12 @@ module.exports = {
       label: 'Voorbeelden',
     },
     {
+      type: 'doc',
+      docId: 'videos/README',
+      position: 'left',
+      label: 'Videos',
+    },
+    {
       href: 'https://github.com/nl-design-system/backlog',
       label: 'GitHub',
       position: 'right',
