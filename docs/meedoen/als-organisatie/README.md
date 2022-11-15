@@ -15,7 +15,7 @@ keywords:
 ## Hier zijn wat middelen om je op weg te helpen:
 
 - [Past NL Design System in jouw organisatie](01-nlds-wat-voor-jouw-organisatie.md)
-- [Maak kennis met het kernteam](02-maak-kennis-met-het-kernteam.md)
+- [Maak kennis met het kernteam](README.md)
 - [NL Design System meenemen in aanbestedingen](03-nlds-in-aanbesteding.md)
 - [Help ons NL Design System uit te breiden](04-bijdrage-leveren.md)
 

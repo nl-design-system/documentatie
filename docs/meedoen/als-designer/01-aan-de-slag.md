@@ -24,11 +24,11 @@ Het kan natuurlijk ook zijn dat je juist gebruikersonderzoek doet of documentati
 
 Omdat het NL Design System huisstijl onafhankelijk is, en meerdere huisstijlen gebruik kunnen maken van zowel de [ontwerp als front-end componenten](/componenten/) maken we gebruik van zogenaamde design tokens. Dit stelt ons in staat om visuele eigenschappen, zoals kleuren en typografie, als ‘thema’ laag los van de structuur van componenten aan te bieden. Zo ontstaat per organisatie een eigen thema maar blijven componenten deelbaar tussen organisaties.
 
-Heb jij hulp nodig met het omzetten van jouw huisstijl naar een thema met design tokens, neem dan [contact op met het kernteam](meedoen/06-samen-met-kernteam.md).
+Heb jij hulp nodig met het omzetten van jouw huisstijl naar een thema met design tokens, neem dan [contact op met het kernteam](meedoen/contact.md).
 
 ## Zit jouw component er niet bij
 
-Het kan zijn dat het component dat jij nodig hebt nog niet beschikbaar is. Een [publieke backlog](https://github.com/nl-design-system/backlog/projects/1) is beschikbaar waar je kan zien of het component al overwogen is. Staat het betreffende component hier niet bij? Voeg deze toe, of [neem bij vragen contact op met het kernteam](meedoen/06-samen-met-kernteam.md). Via de backlog kunnen we discussiëren wat de randvoorwaarden van het component moeten zijn en de samenwerking met andere organisaties aangaan om tot een volwassen, herbruikbaar component te komen.
+Het kan zijn dat het component dat jij nodig hebt nog niet beschikbaar is. Een [publieke backlog](https://github.com/nl-design-system/backlog/projects/1) is beschikbaar waar je kan zien of het component al overwogen is. Staat het betreffende component hier niet bij? Voeg deze toe, of [neem bij vragen contact op met het kernteam](meedoen/contact.md). Via de backlog kunnen we discussiëren wat de randvoorwaarden van het component moeten zijn en de samenwerking met andere organisaties aangaan om tot een volwassen, herbruikbaar component te komen.
 
 ## Hoe blijf ik als ontwerper op de hoogte?
 

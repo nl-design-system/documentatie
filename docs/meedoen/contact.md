@@ -1,17 +1,18 @@
 ---
-title: Kernteam
+title: Contact met het kernteam
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Over het kernteam
-pagination_label: Kernteam
-description: Kernteam NL Design System
+sidebar_label: Contact
+pagination_label: Contact
+description: Contact met NL Design System Kernteam
 keywords:
   - kernteam
   - over ons
   - nl design system
+  - contact
 ---
 
-# Over het kernteam
+# Contact met het kernteam
 
 Het NL Design System is van en voor de hele overheid. Daarom werkt ons centrale kernteam op dagelijkse basis samen met alle betrokken partijen.
 
