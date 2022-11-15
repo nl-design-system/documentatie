@@ -18,3 +18,4 @@ Bij NL Design System nemen we sommige online sessies op. Deze opnames kun je op 
 ## Hier vind je onder andere opnames van:
 
 - [Design System week - 2022](design-system-week-2022)
+- [De 2 wekelijkse Heartbeat](heartbeat)
