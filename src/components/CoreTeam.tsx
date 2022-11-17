@@ -67,7 +67,7 @@ export const Contact = () => (
     </p>
     <p>
       Neem gerust contact op met 1 van de kernteamleden of op ons centrale e-mailadres:{' '}
-      <a href="mailto:nldesignsystem@ictu.nl">nldesignsystem@ictu.nl</a>
+      <a href="mailto:nldesignsystem@gebruikercentraal.nl">nldesignsystem@gebruikercentraal.nl</a>
     </p>
 
     <ul>
