@@ -260,12 +260,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   --ifm-h1-font-size: 1.5rem;
 }
 
-.avatar-coreteam {
-  /* Avatar images of coreteam members on Over/Kernteam page */
-  width: 25%;
-  max-width: 150px;
-}
-
 .mega-footer-link,
 .homepage-hero__description_src-components-HomepageHero-module a {
   /* Add white foreground color and underline to links in hero and footer */
