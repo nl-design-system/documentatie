@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
+      - build/npm-package
+  # pull_request:
 
 jobs:
   continuous-integration:
