@@ -6,7 +6,7 @@
   "command": {
     "publish": {},
     "version": {
-      "allowBranch": ["main"],
+      "allowBranch": ["main", "build/npm-package"],
       "conventionalCommits": true,
       "syncWorkspaceLock": true,
       "exact": true,
