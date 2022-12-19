@@ -17,7 +17,7 @@ Alle componenten die nu op de website staan zijn nog de "community" componenten.
 
 ## Verzameling officiële componenten van NL Design System
 
-Het kernteam van NL Design System zal de komende periode veelgebruikte componenten uit de community in beheer nemen, en helpen bij het controleren van toegankelijkheid. We werken met het estafette-model, waarbij het kernteam het stokje overneemt wanneer een component succesvol werkt in de praktijk. Wanneer tenminste twéé organisaties in de community een component van elkaar hergebruiken "in productie", en de component beide keren een positieve toegankelijkheidsverklaring krijgt of alle geconstateerde problemen nadien zijn verholpen, wordt het een kandidaat om op te nemen in de officiële verzameling.
+Het kernteam van NL Design System zal de komende periode veelgebruikte componenten uit de community in beheer nemen, en helpen bij het controleren van toegankelijkheid. We werken met het estafettemodel, waarbij het kernteam het stokje overneemt wanneer een component succesvol werkt in de praktijk. Wanneer tenminste twéé organisaties in de community een component van elkaar hergebruiken "in productie", en de component beide keren een positieve toegankelijkheidsverklaring krijgt of alle geconstateerde problemen nadien zijn verholpen, wordt het een kandidaat om op te nemen in de officiële verzameling.
 
 ## Website NL Design System
 
