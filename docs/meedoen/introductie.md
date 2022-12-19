@@ -54,7 +54,7 @@ Deze community heeft een gedeelde ambitie om niet telkens het wiel opnieuw uit t
 
 Om zoveel mogelijk context te hebben bij het ontwikkelen van een component en gebruik te maken van de inzichten van anderen, hebben we ook een gedeelde ["levende" backlog](http://github.com/nl-design-system/backlog/issues). Deze bevat de gedeelde informatie over eisen en status van componenten en bij wie het component ontwikkeld wordt.
 
-Om te voorkomen dat deze wens voor compleetheid de ontwikkeling van applicaties blokkeert, werken we met z'n allen volgens "het estafette model" voor gedistribueerde ontwikkeling.
+Om te voorkomen dat deze wens voor compleetheid de ontwikkeling van applicaties blokkeert, werken we met z'n allen volgens "het estafettemodel" voor gedistribueerde ontwikkeling.
 Kortgezegd kan zo voor de componenten die nog niet in de componenten bibliotheek beschikbaar zijn snel een eigen versie gemaakt worden. Deze versie wordt in grote lijnen gebouwd volgens de architectuur, maar hoeft niet compleet te zijn.
 Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet het component én is het op meerdere plekken getest en verbeterd. Dit component komt dan in NL Design Systems "hall of fame".
 

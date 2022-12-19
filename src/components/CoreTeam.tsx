@@ -49,39 +49,4 @@ export const CoreTeam = () => {
   );
 };
 
-export const Contact = () => (
-  <div className={clsx(style['core-team__contact'])}>
-    <h2>Contact met het kernteam</h2>
-    <p>
-      Wil je kennismaken met het kernteam, heb je brandende vragen of wil je bespreken hoe je het beste kunt bijdragen?
-    </p>
-    <p>
-      Neem gerust contact op met 1 van de kernteamleden of op ons centrale e-mailadres:{' '}
-      <a href="mailto:nldesignsystem@gebruikercentraal.nl">nldesignsystem@gebruikercentraal.nl</a>
-    </p>
-
-    <ul>
-      <li>
-        Projectleider Angela Imhof, <a href="mailto:angela.imhof@ictu.nl">angela.imhof@ictu.nl</a>,{' '}
-        <a href="https://praatmee.codefor.nl">@Angela op Slack</a> of 06-18307886
-      </li>
-      <li>
-        Lead developer Robbert Broersma, <a href="mailto:robbert@gebruikercentraal.nl">robbert@gebruikercentraal.nl</a>,{' '}
-        <a href="https://praatmee.codefor.nl">@Robbert op Slack</a>
-      </li>
-      <li>
-        Front-end developer Yolijn van der Kolk,{' '}
-        <a href="mailto:yolijn@gebruikercentraal.nl">yolijn@gebruikercentraal.nl</a>,{' '}
-        <a href="https://praatmee.codefor.nl">@Yolijn op Slack</a>
-      </li>
-      <li>
-        Front-end developer Egor Kloos, <a href="https://praatmee.codefor.nl">@Egor op Slack</a>
-      </li>
-      <li>
-        UX designer Jeffrey Lauwers, <a href="https://praatmee.codefor.nl">@Jeffrey op Slack</a>
-      </li>
-    </ul>
-  </div>
-);
-
 export default CoreTeam;

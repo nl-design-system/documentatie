@@ -13,21 +13,9 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'aanpak/README',
-      position: 'left',
-      label: 'Aanpak',
-    },
-    {
-      type: 'doc',
-      docId: 'meedoen/README',
+      docId: 'meedoen/introductie',
       position: 'left',
       label: 'Meedoen',
-    },
-    {
-      type: 'doc',
-      docId: 'componenten/README',
-      position: 'left',
-      label: 'Componenten',
     },
     {
       type: 'doc',
@@ -37,24 +25,31 @@ module.exports = {
     },
     {
       type: 'doc',
+      docId: 'componenten/README',
+      position: 'left',
+      label: 'Componenten',
+    },
+    {
+      type: 'doc',
       docId: 'voorbeelden/README',
       position: 'left',
       label: 'Voorbeelden',
     },
     {
       type: 'doc',
-      docId: 'videos/README',
+      docId: 'onderzoek/README',
       position: 'left',
-      label: 'Videos',
+      label: 'Onderzoek',
+    },
+    {
+      type: 'doc',
+      docId: 'project/contact',
+      position: 'left',
+      label: 'Project',
     },
     {
       href: 'https://github.com/nl-design-system/backlog',
       label: 'GitHub',
-      position: 'right',
-    },
-    {
-      href: 'https://designsystem.gebruikercentraal.nl/blogs-nieuws/',
-      label: 'Blog',
       position: 'right',
     },
   ],

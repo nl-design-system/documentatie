@@ -14,9 +14,7 @@ keywords:
 
 ## Hier zijn wat middelen om je op weg te helpen:
 
-- [NL Design System in jouw projecten?](01-nlds-wat-voor-jouw-projecten.md)
-- [Design tokens de manier om 1 project voor meerdere organisaties in te zetten](02-design-tokens.md)
-- [Bijdragen leveren als leverancier](03-bijdrage-leveren.md)
+...Zachte landing ‘Wat is NLDS’ vanuit niet technisch perspectief (elevator pitch) voor meerdere huisstijlen
 
 ## Neem contact met ons op
 
