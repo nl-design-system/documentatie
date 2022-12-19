@@ -1,8 +1,11 @@
 {
-  "name": "@nl-design-system/documentatie",
+  "name": "@nl-design-system/website",
   "version": "0.0.0",
   "private": true,
   "license": "EUPL-1.2",
+  "workspaces": [
+    "./docs/"
+  ],
   "scripts": {
     "docusaurus": "docusaurus",
     "prestart": "npm run write-component-pages",
@@ -22,6 +25,8 @@
     "lint:prettier": "prettier --check .",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
     "lint-fix:prettier": "prettier --write .",
+    "publish": "lerna publish from-package --yes",
+    "release": "lerna version prerelease --conventional-prerelease --no-changelog --no-private --yes",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install --legacy-peer-deps",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && npm install --legacy-peer-deps",
     "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && npm install --legacy-peer-deps",
@@ -41,6 +46,7 @@
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@docusaurus/types": "^2.0.1",
     "@fontsource/montserrat": "^4.5.11",
+    "@lerna-lite/cli": "1.11.2",
     "@mdx-js/react": "^1.6.22",
     "@nl-design-system/component-index": "^1.0.0-alpha.7",
     "@tsconfig/docusaurus": "^1.0.6",
