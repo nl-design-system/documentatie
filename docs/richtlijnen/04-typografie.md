@@ -228,7 +228,7 @@ Tekst met standaard uitlijning is vrijwel altijd beter leesbaar dan uitgevulde r
 
 ### Gecentreerde tekst
 
-Probeer het gebruik van gecentreerde tekst tot een minimum te beperken. Hooguit voor een kort tekstje. Net als bij ‘Justified’ tekst moet iemands oog onlogische sprongen maken om bij het eerst woord van de volgende regel aan te komen.
+Beperk het gebruik van gecentreerde tekst tot een minimum. Hooguit voor een kort tekstje. Bij langere teksten moet iemands oog onlogische sprongen maken om bij het eerst woord van de volgende regel aan te komen.
 
 <!-- TODO: ## Cursief, ofwel `italic` -->
 
