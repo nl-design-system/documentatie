@@ -82,7 +82,7 @@ Gebruik een herkenbare sans-serif of serif maar zeker geen decoratief lettertype
 
 ### x-hoogte
 
-De x-hoogte van het lettertype zou niet te hoog moeten zijn waardoor de bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
+x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over het algemeen zorgt een hoge x-hoogte voor een betere leesbaarheid. Maar de x-hoogte van het lettertype zou ook weer niet te hoog moeten zijn. Hierdoor zouden  bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
 
 <!-- TODO: ## Afbeelding -->
 
