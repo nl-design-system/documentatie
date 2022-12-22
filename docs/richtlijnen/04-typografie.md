@@ -284,10 +284,10 @@ Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat 
 
 ### Links
 
-- [Typefaces and Fonts — WebAIM](https://webaim.org/techniques/fonts/)
-- [Practical Typography — Matthew Butterick](https://practicaltypography.com/)
-- [Knowledge — Google Fonts](https://fonts.google.com/knowledge)
-- [Line Length Readbility — Baymard](https://baymard.com/blog/line-length-readability)
+- [Typefaces and Fonts - WebAIM](https://webaim.org/techniques/fonts/)
+- [Practical Typography - Matthew Butterick](https://practicaltypography.com/)
+- [Knowledge - Google Fonts](https://fonts.google.com/knowledge)
+- [Line Length Readbility - Baymard](https://baymard.com/blog/line-length-readability)
 - [Variable fonts - Web.dev](https://web.dev/variable-fonts/)
 - [On Web Typography by Jason Santa Maria - A Book Apart](https://abookapart.com/products/on-web-typography)
 - [Say no to faux bold - A List Apart](https://alistapart.com/article/say-no-to-faux-bold)
