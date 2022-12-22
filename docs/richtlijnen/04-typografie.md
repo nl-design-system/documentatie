@@ -211,15 +211,16 @@ Beperk hoeveel lettertypes en lettertype variaties je gebruikt. Één of twee is
 
 Vergeet niet dat men mogelijk voorkeursinstellingen heeft toegepast.
 
-Zo zijn er mensen die…
+Voorbeelden van voorkeursinstellingen:
 
-- ervoor kiezen om alle tekst op hun scherm vetgedrukt te maken.
-- tekst lezen door middel van een automatische vertaling, in bijvoorbeeld Grieks, Cyrillisch, Arabisch of Aziatisch schrift.
-- tekst lezen met extra grote letters.
-- tekst lezen met extra grote regelafstand.
-- tekst lezen met extra grote afstand tussen woorden.
-- tekst lezen zonder een gedownload lettertype te gebruiken.
-- tekst lezen met een eigen lettertype.
+- Een eigen lettertype, bijvoorbeeld [Dyslexia](https://www.dyslexiefont.com/) voor mensen met dyslexie.
+- Een standaard lettertype voor mensen die het downloaden van fonts hebben uitstaan.
+- Grotere letters, bijvoorbeeld voor mensen die dan geen leesbril nodig hebben.
+- Kleinere letters, bijvoorbeeld voor mensen met kokervisus.
+- Grote regelafstand of extra grote afstand tussen woorden.
+- Alle tekst vetgedrukt.
+
+Daarnaast zijn er mensen die tekst lezen door middel van een automatische vertaling, in bijvoorbeeld Grieks, Cyrillisch, Arabisch of Aziatisch schrift.
 
 ### ‘Justified’ tekst
 
