@@ -224,7 +224,7 @@ Daarnaast zijn er mensen die tekst lezen door middel van een automatische vertal
 
 ### ‘Justified’ tekst
 
-Gebruik geen ‘Justified’ tekst ofwel ‘gatenkaas’. Het ziet er niet uit en iemands oog moet onlogische sprongen maken om bij een volgend woord aan te komen.
+Tekst met standaard uitlijning is vrijwel altijd beter leesbaar dan uitgevulde regels (justified) doordat woordafbreking en tekstuitlijning in browsers niet op het niveau zitten van drukwerk. 
 
 ### Gecentreerde tekst
 
