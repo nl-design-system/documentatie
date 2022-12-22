@@ -279,18 +279,18 @@ Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat 
 
 ### Gerelateerde WCAG Richtlijnen
 
-- https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html
-- https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html
+- [1.4.4: Resize Text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
+- [1.4.8: Visual Presentation](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
 
 ### Links
 
-- https://webaim.org/techniques/fonts/
-- https://practicaltypography.com/
-- https://fonts.google.com/knowledge
-- https://baymard.com/blog/line-length-readability
-- https://web.dev/variable-fonts/
-- https://abookapart.com/products/on-web-typography
-- https://alistapart.com/article/say-no-to-faux-bold
+- [Typefaces and Fonts — WebAIM](https://webaim.org/techniques/fonts/)
+- [Practical Typography — Matthew Butterick](https://practicaltypography.com/)
+- [Knowledge — Google Fonts](https://fonts.google.com/knowledge)
+- [Line Length Readbility — Baymard](https://baymard.com/blog/line-length-readability)
+- [Variable fonts - Web.dev](https://web.dev/variable-fonts/)
+- [On Web Typography by Jason Santa Maria - A Book Apart](https://abookapart.com/products/on-web-typography)
+- [Say no to faux bold - A List Apart](https://alistapart.com/article/say-no-to-faux-bold)
 
 ---
 
