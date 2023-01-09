@@ -139,11 +139,11 @@ h3 {
 }
 ```
 
-### Eigen font-family naam voor bold of italic variant
+### Eigen `font-family` naam voor bold of italic variant
 
 Soms wordt een lettertype aangeleverd met CSS code waarin voor hetzelfde lettertype verschillende namen zijn gebruikt. Gebruik dan niet de naam zoals die is aangeleverd, maar pas de code aan zodat elke `@font-face` dezelfde `font-family` heeft.
 
-**Niet:**
+Gebruik niet:
 
 ```css
 @font-face {
@@ -169,7 +169,7 @@ h1 {
 
 Sommige gebruikers kiezen ervoor om alle tekst op hun scherm vetgedrukt te maken. In plaats van een beter leesbare pagina, krijgen zij door bovenstaande code een automatische bold variant van `GovernmentFont` in tegenstelling tot de speciaal ontworpen `GovernmentFontBold`.
 
-**Wel:**
+Wel:
 
 ```css
 @font-face {
@@ -301,3 +301,9 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 ## Vragen?
 
 Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](https://www.nldesignsystem.nl/meedoen/contact/).
+=======
+Op deze manier loop je niet het risico dat gebruikers minder leesbare teksten zien door _faux italic_ of _faux bold_ letters, of nog erger: een vet lettertype dat met _faux bold_ nog extra vet wordt. Bovendien heb je zo duidelijkere code.
+
+## Links
+
+- [Say No to Faux Bold, by Alan Stearns](https://alistapart.com/article/say-no-to-faux-bold/)
