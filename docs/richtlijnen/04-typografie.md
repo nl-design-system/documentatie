@@ -143,7 +143,7 @@ h3 {
 
 Soms wordt een lettertype aangeleverd met CSS code waarin voor hetzelfde lettertype verschillende namen zijn gebruikt. Gebruik dan niet de naam zoals die is aangeleverd, maar pas de code aan zodat elke `@font-face` dezelfde `font-family` heeft.
 
-Gebruik niet:
+**Niet:**
 
 ```css
 @font-face {
@@ -169,7 +169,7 @@ h1 {
 
 Sommige gebruikers kiezen ervoor om alle tekst op hun scherm vetgedrukt te maken. In plaats van een beter leesbare pagina, krijgen zij door bovenstaande code een automatische bold variant van `GovernmentFont` in tegenstelling tot de speciaal ontworpen `GovernmentFontBold`.
 
-Wel:
+**Wel:**
 
 ```css
 @font-face {
