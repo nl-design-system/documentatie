@@ -6,7 +6,7 @@ export const Angela = () => (
   <img
     alt="Avatar van Angela"
     className={clsx(style['core-team__avatar'])}
-    src="https://user-images.githubusercontent.com/877246/202432223-37fa08ed-9417-4b58-ac83-154f46300069.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/angela.png"
     title="Angela - Project manager"
   />
 );
@@ -15,7 +15,7 @@ export const Robbert = () => (
   <img
     alt="Avatar van Robbert"
     className={clsx(style['core-team__avatar'])}
-    src="https://user-images.githubusercontent.com/877246/202432228-f12817a5-4025-4615-bcae-ef65ff01d324.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/robbert.png"
     title="Robbert - Techlead"
   />
 );
@@ -24,17 +24,8 @@ export const Yolijn = () => (
   <img
     alt="Avatar van Yolijn"
     className={clsx(style['core-team__avatar'])}
-    src="https://user-images.githubusercontent.com/877246/202432231-384dfc4c-ee54-4b75-bfd7-b050e30c1590.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/yolijn.png"
     title="Yolijn - Developer"
-  />
-);
-
-export const Egor = () => (
-  <img
-    alt="Avatar van Egor"
-    className={clsx(style['core-team__avatar'])}
-    src="https://user-images.githubusercontent.com/877246/202432226-d8b369ce-fe6b-4f1f-92a3-f2f416397cc9.png"
-    title="Egor - Developer"
   />
 );
 
@@ -42,7 +33,7 @@ export const Jeffrey = () => (
   <img
     alt="Avatar van Jeffrey"
     className={clsx(style['core-team__avatar'])}
-    src="https://user-images.githubusercontent.com/877246/202432227-4eb75fd5-9820-48c1-b691-9087244754d3.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/jeffrey.png"
     title="Jeffrey - UX Designer"
   />
 );
@@ -53,7 +44,6 @@ export const CoreTeam = () => {
       <Angela />
       <Robbert />
       <Yolijn />
-      <Egor />
       <Jeffrey />
     </div>
   );

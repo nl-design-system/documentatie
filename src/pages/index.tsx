@@ -64,7 +64,7 @@ export default function Home() {
           <HomepageAction title="Componenten" href="componenten/" icon={OGComponenten}>
             <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
           </HomepageAction>
-          <HomepageAction title="Richtlijnen" href="richtlijnen/" icon={OGRichtlijn}>
+          <HomepageAction title="Richtlijnen" href="richtlijnen/tekst-en-taalgebruik" icon={OGRichtlijn}>
             <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
           <HomepageAction title="Voorbeelden" href="voorbeelden/" icon={OGVoorbeeld}>
