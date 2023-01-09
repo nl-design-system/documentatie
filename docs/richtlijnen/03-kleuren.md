@@ -138,6 +138,6 @@ Sommige mensen bekijken webpagina’s liever met meer of juist minder contrast. 
 
 Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via Github.
 
-## Vragen?
+## Vragen
 
 Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](https://www.nldesignsystem.nl/meedoen/contact/).
