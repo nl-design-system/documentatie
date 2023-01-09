@@ -1,49 +1,34 @@
-# Documentatie NL Design System
+# Assets branch voor NL Design System documentatie
 
-Hier kun je informatie vinden over algemene richtlijnen, gebruikers onderzoek, patronen etc.
+Het bijhouden en opslaan van grote bestanden zoals plaatjes, video, audio etc. is altijd een van de Git tekortkomingen geweest. Ze zorgen voor enorme diffs en ook voor npm packages zorgt het automatisch voor enorme pakketjes.
 
-We zijn nog druk bezig deze informatie aan te vullen en te verbeteren. Heb je nog documentatie of gebruikers onderzoek die we misschien kunnen gebruiken? Laat het ons dan weten.
+Om dat te voorkomen en doordat onze documentatie niet alleen voor onze eigen website zal worden gebruikt, maar ook als npm packages wordt verspreid is het belangrijk dat we dat slimmer aanpakken.
 
-## Help ons de documentatie te verbeteren
+Door een `assets` branch te gebruiken waar alleen deze plaatjes etc. in zitten en Vimeo te gebruiken voor video's worden deze bestanden wel voor iedereen beschikbaar zolang ze daar bestaan, maar tellen ze niet mee in de Git of package grootte.
 
-Voor de documentatie gebruiken we [Markdown](https://www.markdownguide.org/basic-syntax/) bestanden die we met in [GitHub](https://github.com/nl-design-system/documentatie) opslaan. Hierdoor hebben we een bestandsformaat dat door vele verschillende producten ondersteund wordt en een plek waar we met versionering en reviews samen kunnen werken.
-Om met al deze documentatie een website te maken gebruiken we [Docusaurus](https://docusaurus.io).
+## Plaatje toevoegen aan Documentatie
 
-Fijn als je hier toevoegingen of verbeteringen aan bij wil dragen. Als je dat in Markdown kan doen is dat voor ons het aller handigst.
-Hieronder een aantal manieren waarop bijdragen voorgesteld kunnen worden.
+### 1. Geef een herkenbare naam
 
-_Note_: We zijn blij met iedere bijdrage, dat betekend niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
+Zorg dat je plaatje een logische naam heeft en gebruik bijvoorbeeld ook het pad zoals hij in de documentatie wordt gebruikt. Bijvoorbeeld `richtlijnen_stijl_kleuren_machtig-prachtig-voorbeeld.png` of `kernteam_jeffrey.svg`.
 
-### Maak een Gist en stuur hem ons op
+### 2. Upload het plaatje
 
-In GitHub kun je gemakkelijk een los Markdown bestand maken met [Gist](https://gist.github.com), mits je een GitHub account hebt.
-Heb je een document dat je wil bijdragen, stuur ons dan een linkje naar die gist.
+Ga naar[de assets branch](https://github.com/nl-design-system/documentatie/tree/assets) en upload het plaatje
 
-### Met een pull request
+<img width="1079" alt="selecteer upload" src="https://user-images.githubusercontent.com/877246/212078115-a694689b-fa8a-42b3-857d-f622923806f2.png">
 
-1. Maak een fork van de [documentatie repository](https://github.com/nl-design-system/documentatie) door rechts bovenin op de `fork` knop te drukken
-2. Draai deze fork lokaal zoals hieronder beschreven
-3. Voeg documentatie toe, of verbeter bestaande documentatie
-4. Commit je verbeteringen en push ze naar je fork <!-- TODO: Commit guidelines-->
-5. Maak een pull request naar onze documentatie repository. <!-- TODO: PR guidelines-->
+<img width="1221" alt="selecteer plaatje om te uploaden" src="https://user-images.githubusercontent.com/877246/212078203-83e17c92-3f9a-402f-ae67-8c77b423cf20.png">
 
-## Lokaal draaien van de website
+### 3. Commit het plaatje
 
-We gebruiken `npm` om afhankelijkheden te installeren en de website met docusaurus te draaien.
-Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.nl) vinden of even een e-mail sturen
+Je hoeft hier niets anders voor te doen dan op de groene knop te drukken, want de geschiedenis kan ons niets schelen. De vooringevulde teksten zijn dus prima.
+<img width="1240" alt="upload voorbeeld" src="https://user-images.githubusercontent.com/877246/212078227-a59e07c0-2e2f-4fcf-9e9a-56d0f4db40ed.png">
 
-1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
-2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
-3. Draai `npm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `npm run start` om Docusaurus te starten.
-5. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
-6. De website opent in je standaard browser
+### 4. Gebruik het plaatje
 
-Om documenten aan te passen kun je de folder openen in een code editor naar keuze. Wij gebruiken in het kernteam bijvoorbeeld [VSCode](https://code.visualstudio.com) of de simpelere [Sublime](https://www.sublimetext.com).
-Als je alleen markdown will aanpassen kun je ook kiezen om een los bestand aan te passen of aan te maken en een markdown editor te gebruiken zoals [iA Writer](https://ia.net/writer)
+Nu kun je het plaatje in elke willekeurige branch gebruiken. Ga naar de plek waar je de documentatie aan het toevoegen bent en gebruik `https://raw.githubusercontent.com/nl-design-system/documentatie/assets/<naam-van-het-plaatje>` dus bijvoorbeeld `https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_kleuren_machtig-prachtig-voorbeeld.png`
 
-Zolang je het script in je terminal hebt draaien zal de website automatisch de opgeslagen documentatie veranderingen laten zien.
-Als je de website structuur hebt aangepast dan is het nodig de website eerst te stoppen en dan opnieuw op te starten.
+### 5. Het plaatje is beschikbaar
 
-1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
-2. Draai `npm run start` et voilá, de veranderingen worden zichtbaar.
+Sla op en kijk of het plaatje geladen kan worden, dubbelcheck anders of de bestandsnaam klopt en of hij ook echt in [de assets branch](https://github.com/nl-design-system/documentatie/tree/assets) staat.
