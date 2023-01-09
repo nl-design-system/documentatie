@@ -82,7 +82,7 @@ Gebruik een herkenbare sans-serif of serif maar zeker geen decoratief lettertype
 
 ### x-hoogte
 
-x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over het algemeen zorgt een hoge x-hoogte voor een betere leesbaarheid. Maar de x-hoogte van het lettertype zou ook weer niet te hoog moeten zijn. Hierdoor zouden  bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
+x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over het algemeen zorgt een hoge x-hoogte voor een betere leesbaarheid. Maar de x-hoogte van het lettertype zou ook weer niet te hoog moeten zijn. Hierdoor zouden bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
 
 <!-- TODO: ## Afbeelding -->
 
@@ -224,7 +224,7 @@ Daarnaast zijn er mensen die tekst lezen door middel van een automatische vertal
 
 ### ‘Justified’ tekst
 
-Tekst met standaard uitlijning is vrijwel altijd beter leesbaar dan uitgevulde regels (justified) doordat woordafbreking en tekstuitlijning in browsers niet op het niveau zitten van drukwerk. 
+Tekst met standaard uitlijning is vrijwel altijd beter leesbaar dan uitgevulde regels (justified) doordat woordafbreking en tekstuitlijning in browsers niet op het niveau zitten van drukwerk.
 
 ### Gecentreerde tekst
 
