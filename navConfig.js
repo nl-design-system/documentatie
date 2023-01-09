@@ -3,7 +3,7 @@ module.exports = {
   style: 'dark',
   logo: {
     alt: 'NLDS Logo',
-    src: 'img/logo.svg',
+    src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo.svg',
   },
   items: [
     {
@@ -31,7 +31,7 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'richtlijnen/README',
+      docId: 'richtlijnen/tekst-en-taalgebruik',
       position: 'left',
       label: 'Richtlijnen',
     },

@@ -24,7 +24,7 @@ Echter wordt kleur niet door iedereen op dezelfde manier ervaren. Daarom hebben 
 
 Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.
 
-![Afgebeeld zijn de woorden 'onvoldoende' en 'contrast'. Waarbij 'onvoldoende' te weinig kleurcontrast heeft en 'contrast' wel.](img-kleuren/img_kleuren_contrast.png)
+![Afgebeeld zijn de woorden 'onvoldoende' en 'contrast'. Waarbij 'onvoldoende' te weinig kleurcontrast heeft en 'contrast' wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/kleuren/contrast.png)
 
 ### Tekst
 
@@ -52,7 +52,7 @@ Als je tekst over een afbeelding wilt gebruiken, plaats dan een effen vlak achte
 
 Wanneer je alleen kleur gebruikt om informatie over te brengen kan iemand die kleurenblind is de dit soms niet goed interpreteren. Maak daarom gebruik van tekst, iconen en/of andere visuele elementen om de intentie van de boodschap te versterken.
 
-![Afgebeeld is een formulier bestaande uit twee tekstvelden en een button. Het tweede tekstveld heeft een rode border. Het formulier staat daarnaast nogmaals afgebeeld maar dan is de rode kleur vervangen voor een beide grijstint.](img-kleuren/img_kleuren_deuteranoop.png)
+![Afgebeeld is een formulier bestaande uit twee tekstvelden en een button. Het tweede tekstveld heeft een rode border. Het formulier staat daarnaast nogmaals afgebeeld maar dan is de rode kleur vervangen voor een beide grijstint.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/kleuren/deuteranoop.png)
 
 In de afbeelding hierboven zie je een formulier waarbij het tekstveld 'E-mailadres' een rode border heeft. Daarnaast staat het formulier nogmaals afgebeeld, maar dan zoals een kleurenblind persoon dit kan ervaren (in dit voorbeeld deuteranoop).
 
@@ -109,7 +109,7 @@ Sommige mensen bekijken webpagina’s liever in een donker (dark-mode) of juist 
 **Aangepast contrast.**
 Sommige mensen bekijken webpagina’s liever met meer of juist minder contrast. Zij kunnen deze voorkeur aangeven via een instelling van het besturingssysteem. Door de media query [`prefers-contrast`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast) is dit te detecteren en kun je deze mensen passend kleurenthema aanbieden. Maar ze zouden ook gebruik kunnen maken van [Windows high contrast mode](https://support.microsoft.com/en-us/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696).
 
-![Afgebeeld zijn drie schermen met dezelfde inhoud. Het eerste voorbeeld toont een lichte modus. Het tweede voorbeeld toont een donkere modus. Het derde voorbeeld tot een hoog contrast voorbeeld.](img-kleuren/img_kleuren_voorkeursinstellingen.png)
+![Afgebeeld zijn drie schermen met dezelfde inhoud. Het eerste voorbeeld toont een lichte modus. Het tweede voorbeeld toont een donkere modus. Het derde voorbeeld tot een hoog contrast voorbeeld.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/kleuren/voorkeursinstellingen.png)
 
 ## Meer informatie
 

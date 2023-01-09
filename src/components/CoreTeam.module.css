@@ -1,6 +1,7 @@
 .core-team {
   display: flex;
   gap: 20px;
+  max-height: 200px;
 }
 
 .core-team__avatar {
