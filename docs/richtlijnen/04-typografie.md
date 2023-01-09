@@ -18,6 +18,8 @@ Goede typografie helpt bij het creëren van een duidelijke hiërarchie en het or
 
 Vier belangrijke typografische overwegingen voor tekst zijn [lettergrootte](#lettergrootte), [regelafstand](#regelafstand), [regellengte](#regellengte) en [lettertype](#lettertype).
 
+![testje](img-typografie/img_typografie_letter-afstand.png)
+
 ## Lettergrootte
 
 **Zorg ervoor dat letters groot genoeg zijn.**
