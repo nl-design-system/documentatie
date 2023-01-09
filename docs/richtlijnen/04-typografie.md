@@ -36,7 +36,7 @@ Gebruik een lettergrootte ofwel `font-size` die groot genoeg is voor de ‘[body
 
 Een goed ingestelde `line-height` zorgt ervoor dat men op een vloeiende manier het einde van een regel kan koppelen aan het begin van de volgende.
 
-![Paragrafen met verschillende regelaftanden. De eerste te kort, de tweede te lang, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](img-typografie/img_typografie_letter-afstand.png)
+![Paragrafen met verschillende regelaftanden. De eerste te kort, de tweede te lang, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](img-typografie/img_typografie_regelafstand.png)
 
 Standaard gebruiken browsers een `line-height` van circa `1.2`, maar voor veel mensen is tekst met een hogere `line-height` beter leesbaar. De ideale `line-height` hangt af van verschillende factoren (lettertype, lettergrootte, regellengte, etc.) maar met een `line-height` tussen `1.5` en `2.0` zit je goed. Groter dan `2.0` wordt minder leesbaar.
 
