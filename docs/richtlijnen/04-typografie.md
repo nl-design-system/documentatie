@@ -301,7 +301,7 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 ## Vragen?
 
 Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](https://www.nldesignsystem.nl/meedoen/contact/).
-=======
+
 Op deze manier loop je niet het risico dat gebruikers minder leesbare teksten zien door _faux italic_ of _faux bold_ letters, of nog erger: een vet lettertype dat met _faux bold_ nog extra vet wordt. Bovendien heb je zo duidelijkere code.
 
 ## Links
