@@ -3,7 +3,7 @@ title: Wachtindicatie
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Wachtindicatie
-sidebar_position: 6
+sidebar_position: 7
 pagination_label: Formulieren - Wachtindicatie
 description: Richtlijnen voor formulieren - Wachtindicatie.
 keywords:
@@ -27,11 +27,11 @@ IBM’s Carbon design system zegt hierover het volgende:
 
 ## Gebruik een laad component wanneer invoer wordt opgeslagen
 
-![Laad component over de gehele pagina uit het Carbon Design System](https://user-images.githubusercontent.com/248921/142436065-130ccbb7-e98e-405d-bc9f-156ae80c5b8a.png)
+![Laad component over de gehele pagina uit het Carbon Design System](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_wachtindicatie_1142436065.png)
 
 Een voorbeeld uit het Carbon Design System van een laad component die over de gehele pagina getoond wordt. [^carbon-loading]
 
-![Laad component op een enkel knop component (animatie)](https://www.carbondesignsystem.com/a12da714d1543a1ebf216983682adb8d/inline-loading-animated.gif)
+![Laad component op een enkel knop component (animatie)](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_wachtindicatie_inline-loading-animated.gif)
 
 Een voorbeeld uit het Carbon Design System van een laad component op een enkel knop component. [^carbon-loading]
 

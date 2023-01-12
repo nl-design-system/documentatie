@@ -3,7 +3,7 @@ title: Hulp en ondersteuning
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Hulp en ondersteuning
-sidebar_position: 5
+sidebar_position: 6
 pagination_label: Formulieren - Hulp en ondersteuning
 description: Richtlijnen voor formulieren - Hulp en ondersteuning.
 keywords:
@@ -31,11 +31,11 @@ Overweeg om extra help tekst toe te voegen wanneer:
 
 De beste positie voor help tekst is na de vraag en voor het invoerelement. [^helper-text-position]
 
-![Voorbeeld van helper tekst positie van het No Style design system](https://user-images.githubusercontent.com/248921/142423723-442f8506-2e12-4d57-8c25-4273002ee192.png)
+![Voorbeeld van helper tekst positie van het No Style design system](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_142423723.png)
 
 Voorbeeld 1 van helper tekst geplaatst ná de vraag en voor het invoerelement. [^no-style-helper-text]
 
-![Voorbeeld van helper tekst positie van het W3C design system](https://user-images.githubusercontent.com/248921/142424548-448c8a82-2b64-4667-8f8e-6c97ca00ac58.png)
+![Voorbeeld van helper tekst positie van het W3C design system](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_142424548.png)
 
 Voorbeeld 2 van helper tekst geplaatst ná de vraag en voor het invoerelement. [^helper-text-position]
 
@@ -59,19 +59,19 @@ _Show crucial information at all times, not just when a tooltip is displayed. A 
 
 _For example, in a scenario where a user is entering their password into a field, the crucial information would be to state the password requirements. Supplementary context would be a message about how to get help if they have forgotten their password.”_ [^spectrum-tooltips]
 
-![spectrum adobe com_page_tooltip_](https://user-images.githubusercontent.com/248921/142426915-cef223f5-0958-4edf-a56e-6ae5333f8660.png)
+![spectrum adobe com_page_tooltip_](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_142426915.png)
 
 _‘Dos en dont’s’_ van Adobe Spectrum over het gebruik van welk soort informatie wel en welke niet verborgen kan worden. [^spectrum-tooltips]
 
 #### Standaard staat
 
-![Voorbeeld van de standaard staat van help tekst op aanvraag](https://i.imgur.com/APvKjcc.png)
+![Voorbeeld van de standaard staat van help tekst op aanvraag](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_APvKjcc.png)
 
 In de standaard staat is de tekst verborgen.
 
 #### Hover en focus staat
 
-![Voorbeeld van de hover en focus staat van help tekst op aanvraag](https://i.imgur.com/y2Ah2qK.png)
+![Voorbeeld van de hover en focus staat van help tekst op aanvraag](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_y2Ah2qK.png)
 
 In de hover en focus staat wordt de helptekst onder het invoerelement getoond. Voor gebruikers van touch screens dient deze informatie ook ontsloten te worden!
 
@@ -83,7 +83,7 @@ Feedback tekst kan na validatie aangeven wanneer een veld onjuist is ingevuld ho
 
 De beste positie voor feedback tekst is onder het invoerelement dat de feedback genereert. De relatie tussen foutmelding en het invoerelement dat de feedback genereert moet zowel visueel als voor voorleessoftware een directe relatie hebben.
 
-![Voorbeeld van een datum invoer van GOV.UK met een foutmelding](https://user-images.githubusercontent.com/248921/142428309-66444044-b06a-42e7-83f2-e180901da000.png)
+![Voorbeeld van een datum invoer van GOV.UK met een foutmelding](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_help_142428309.png)
 
 Voorbeeld van GOV.UK waarbij de foutmelding een duidelijke relatie heeft met de invoer die de fout genereerd. [^gov.uk-error-message-date]
 
