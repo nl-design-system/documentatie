@@ -3,7 +3,7 @@ title: Afhandeling
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Afhandeling
-sidebar_position: 9
+sidebar_position: 10
 pagination_label: Formulieren - Afhandeling
 description: Richtlijnen voor formulieren - Afhandeling.
 keywords:
@@ -46,7 +46,7 @@ _Your confirmation page must include:_
 - _a way for users to save a record of the transaction, for example, as a PDF_
   [^gov.uk-confirmation-pages]
 
-![Confirmation page van GOV.UK](https://user-images.githubusercontent.com/248921/142434573-fdd3a1bc-cb83-4d50-b72e-46955f20d363.png)
+![Confirmation page van GOV.UK](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_afhandeling_142434573.png)
 
 Voorbeeld uit het GOV.UK Design System van een ‘Confirmation page’. [^gov.uk-confirmation-pages]
 
