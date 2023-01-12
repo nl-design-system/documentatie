@@ -17,17 +17,17 @@ keywords:
 
 Functionele iconen zijn simpel van vorm. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk aan een icoon voor een button of foutmelding.
 
-[visual]
+<!-- [visual] -->
 
 Voor het 'Voorbeeld thema' maken we gebruik van de [Tabler iconenset](https://tabler-icons.io/). Deze set bestaat uit meer dan 3100 outline iconen die Open Source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
 
-[visual]
+<!-- [visual] -->
 
 **Tip!** Voor het Voorbeeld thema hebben we een selectie gemaakt uit de Tabler iconenset. Mis je een icoon? Check dan website van de [Tabler iconenset](https://tabler-icons.io/).
 
 **Let op!** De iconen van de Tablet iconenset zijn opgebouwd uit lijnen (stroke) met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Vanuit aangesloten organisaties leerde we dat dit niet het gewenste gedrag is. Daarom hebben we de iconen in het Voorbeeld thema omgezet van lijn naar vorm (outline stroke). Waardoor de lijndikte van een icoon in verhouding meeschaalt met de afmetingen van het icoon.
 
-[visual]
+<!-- [visual] -->
 
 ## Grid
 
@@ -35,11 +35,11 @@ Voor het 'Voorbeeld thema' maken we gebruik van de [Tabler iconenset](https://ta
 
 Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid. Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door iconen binnen dit vierkant te positioneren zijn ze inwisselbaar. Hierdoor zullen teksten niet verspringen als je de iconen bijvoorbeeld toepast in een lijst.
 
-[visual]
+<!-- [visual] -->
 
 De Tabler iconenset die we gebruiken in het Voorbeeld thema is bijvoorbeeld ontworpen op een 24×24 grid.
 
-[visual]
+<!-- [visual] -->
 
 ## Grootte
 
@@ -53,7 +53,7 @@ De Tabler iconenset die we gebruiken in het Voorbeeld thema is ontworpen op een 
 
 **Tip!** Ook op component niveau kun je de grootte van een icoon aanpassen. Zo is de waarde van bijvoorbeeld `nl.button.icon.size` standaard `nl.icon.functional.size`, maar kun je deze waarde aanpassen naar `voorbeeld.size.icon.2xl` met een waarde van 32×32.
 
-<!-- TODO: Verwijzen naar Voorbeeld tokens wanneer dit een plek hebben --> 
+<!-- TODO: Verwijzen naar Voorbeeld tokens wanneer dit een plek hebben -->
 
 ## Kleur
 
@@ -61,15 +61,15 @@ De Tabler iconenset die we gebruiken in het Voorbeeld thema is ontworpen op een 
 
 Iconen nemen vaak de kleur van de bijbehorende tekst over. Zodoende hebben ze, als de tekst het ook heeft, vanzelf voldoende contrast.
 
-[visual]
+<!-- <!-- [visual] --> -->
 
 Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven dan de bijbehorende tekst? Houd dan ook rekening met contrast. Voor iconen zou het contrast tussen de voor- en achtergrondkleur 3:1 of groter moeten zijn. Tenzij het icoon puur decoratief is.
 
-[visual]
+<!-- [visual] -->
 
 **Tip!** Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.
 
-[visual]
+<!-- [visual] -->
 
 **Tip!** Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van [`current color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword). Op die manier neemt het icoon de waarde over van de `color` die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
 
@@ -83,7 +83,7 @@ Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven da
 
 **Tip!** Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.
 
-[visual]
+<!-- [visual] -->
 
 ## Iconen kiezen
 
@@ -91,11 +91,11 @@ Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven da
 
 Voor iconen, en met name functionele iconen, is het belangrijk om conventies te volgen. Zo zijn er bepaalde iconen die sterk aan concept gerelateerd zijn. Het is verstandig deze conventies te respecteren en deze iconen niet ineens voor een andere functie te gebruiken.
 
-[visual]
+<!-- [visual] -->
 
 **Tip!** In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op 'Toevoegen' zoekt komt het 'Plus' icoon bovendrijven.
 
-[visual]
+<!-- [visual] -->
 
 **Tip!** Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.
 
@@ -126,10 +126,10 @@ Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tek
 
 Het icoon zelf moet het attribuut `focusable="false"` hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.
 
-Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code `aria-hidden="true"` mee. Zo is het tekstlabel "Verwijderen" in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren. 
+Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code `aria-hidden="true"` mee. Zo is het tekstlabel "Verwijderen" in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren.
 
 ```html
-<button>  
+<button>
   <svg class="nl-icon nl-icon--text" focusable="false" aria-hidden="true">
     <use xlink:href="assets/svg/icons-core-set.svg#-icon-trashcan"></use>
   </svg>
@@ -196,7 +196,6 @@ Als de tekst van de tooltip buiten element staat, kun je het aan dit element kop
   </a>
   <span class="tooltip" id="download-tooltip">Download</span>
 </div>
-
 ```
 
 ## Meer informatie
@@ -216,14 +215,3 @@ Als de tekst van de tooltip buiten element staat, kun je het aan dit element kop
 - [Accessible icon buttons - Sara Soueidan](https://www.sarasoueidan.com/blog/accessible-icon-buttons/)
 - [Aria-label is a xenophobe - Heydon Heydon Pickering](https://heydonworks.com/article/aria-label-is-a-xenophobe/)
 - [Tabler icons - Codecalm](https://tabler-icons.io/)
-
-
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via Github.
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](https://www.nldesignsystem.nl/meedoen/contact/).

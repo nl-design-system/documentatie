@@ -15,10 +15,10 @@ keywords:
 
 # Toptaak iconen
 
-Toptaak iconen zijn gedetailleerder dan functionele iconen. Dat kan ook makkelijk omdat ze groter worden ingezet. Toptaak iconen helpen bezoekers van gemeentelijke websites om sneller bij de juiste informatie te komen. 
+Toptaak iconen zijn gedetailleerder dan functionele iconen. Dat kan ook makkelijk omdat ze groter worden ingezet. Toptaak iconen helpen bezoekers van gemeentelijke websites om sneller bij de juiste informatie te komen.
 
 Voor het 'Voorbeeld thema' maken we gebruik van de outline versie van de iconenset: [Gemeenten iconen](https://www.gemeenteniconen.nl/). Deze iconenset wordt Open Source aangeboden. Je wilt mag je deze dus ook gebruiken voor jouw organisatie.
- 
+
 [Ga naar gemeenteniconen.nl](https://www.gemeenteniconen.nl) voor meer informatie over het gebruik.
 
 ## Grootte
@@ -37,7 +37,6 @@ De toptaak iconen komen het best tot hun recht op een grootte van 48×48, 56×56
 ### Links
 
 - [Gemeenteniconen.nl](https://www.gemeenteniconen.nl)
-
 
 ---
 
