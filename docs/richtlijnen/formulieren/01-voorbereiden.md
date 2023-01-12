@@ -3,7 +3,7 @@ title: Voorbereiding
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voorbereiding
-sidebar_position: 1
+sidebar_position: 2
 pagination_label: Formulieren - Voorbereiding
 description: Richtlijnen voor formulieren - Voorbereiding
 keywords:
@@ -26,7 +26,7 @@ Indien het onduidelijk is waarom bepaalde informatie gevraagd wordt informeer ge
 
 Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
-![design-system service gov uk_patterns_addresses_](https://user-images.githubusercontent.com/248921/141821377-82d9ca36-6619-4796-87ab-aa54604105d1.png)
+![design-system service gov uk_patterns_addresses_](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141821377.png)
 
 Relevantie van vraag uitgelegd in subkop [^question-relevance]
 
@@ -47,7 +47,7 @@ Dit kan op diverse manieren:
 - Automatisch aanvullen van gedeeltelijke informatie. Bijvoorbeeld na invullen van postcode en huisnummer kan het volledige adres automatisch aangevuld worden.
 - Het `autocomplete` HTML attribuut stelt browsers in staat om bepaalde repeterende informatie zoals bijvoorbeeld naam, adres en betaalgegevens automatisch in te vullen. Zorg ervoor dat er geen help tekst of andere benodigde informatie onder het veld staat, een eventueel autocomplete attribuut valt daar meestal overheen op desktop.
 
-![Auto-complete van een telefoonnummer valt over eventuele help tekst onder het invoerveld](https://user-images.githubusercontent.com/248921/141822978-98bd349a-b455-4501-a606-f978e0138d00.png)
+![Auto-complete van een telefoonnummer valt over eventuele help tekst onder het invoerveld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141822978.png)
 
 ## Stel alleen noodzakelijke vragen {#noodzakelijke-vragen}
 
@@ -65,9 +65,9 @@ Vaak is het beter om optionele velden als zodanig te markeren, en niet de verpli
 
 Het staat bovendien vriendelijker om ‘optioneel’ te noemen in plaats van ‘verplicht’.
 
-![Goed voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://user-images.githubusercontent.com/248921/141824603-9c8f7a16-217d-4af9-a049-fd54eb557c3b.png)
+![Goed voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141824603.png)
 
-![Slecht voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://user-images.githubusercontent.com/248921/141824613-a394b9f9-4483-49ea-a084-ed4ea4a4e7d2.png)
+![Slecht voorbeeld voor het aanduiden van optionele versus verplichte invoervelden uit Adobe Spectrum’s richtlijnen](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141824613.png)
 
 “[Mark the minority of inputs in a form as required or optional](https://spectrum.adobe.com/page/field-label/#Mark-the-minority-of-inputs-in-a-form-as-required-or-optional)” van Adobe Spectrum’s richtlijnen.
 
@@ -114,7 +114,7 @@ Bij bijvoorbeeld selectieafhankelijke vragen kan het mogelijk zijn om een gebrui
 
 Ook als het formulier namens iemand anders ingevuld wordt moet zo snel mogelijk duidelijk zijn of het formulier relevant is.
 
-![check-a-service-is-suitable-flow](https://user-images.githubusercontent.com/248921/141825980-952498fc-e238-4fba-a450-cdf31f1d6dba.jpg)
+![check-a-service-is-suitable-flow](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141825980.jpg)
 
 “[Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)” uit het GOV.UK Design System.
 
@@ -124,7 +124,7 @@ Waar nodig helpt het gebruikers een overzicht te geven van wat nodig is om een f
 
 Voeg dit overzicht als eerste toe voor een formulier getoond wordt. Dit kan een aparte sectie, maar ook een aparte pagina zijn. De sectie over groeperen en opsplitsen kan hierbij hulp bieden.
 
-![Start pagina concept van GOV.UK](https://user-images.githubusercontent.com/248921/141979966-fe045fe4-b51a-4d4e-b6d0-49ebfb768890.png)
+![Start pagina concept van GOV.UK](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_141979966.png)
 
 [GOV.UK gebruikt het concept ‘Start pagina’](https://design-system.service.gov.uk/patterns/start-pages/) alvorens een gebruiker een formulier in gaat vullen. Deze start pagina beschikt over vier hoofd elementen:
 
@@ -153,7 +153,7 @@ Als het lastig blijkt het formulier te interpreteren als niet alle vragen op een
 
 Gov.uk experimenteerd met het ‘[Task list pages](https://design-system.service.gov.uk/patterns/task-list-pages/)’ patroon waarbij formulieren in kleinere, overzichtelijkere stappen opgebroken in een pagina getoont worden. Dit patroon is echter nog niet uitgebreid getest. [^task-list-pages]
 
-![Task list pages patroon van GOV.UK](https://user-images.githubusercontent.com/248921/142017147-4753ae1c-91b9-441c-98ae-a43fa4b89ece.png)
+![Task list pages patroon van GOV.UK](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_142017147.png)
 
 Task list pages patroon van GOV.UK
 
@@ -181,15 +181,15 @@ Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina 
 
 #### Stappenmodel voor desktopversie formulier
 
-![Voorbeeld van het stappenmodel op een desktop scherm](https://i.imgur.com/gNAKpNw.png)
+![Voorbeeld van het stappenmodel op een desktop scherm](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_gNAKpNw.png)
 
 #### Stappenmodel voor tabletversie formulier
 
-![Voorbeeld van het stappenmodel op een tablet scherm](https://i.imgur.com/5NOTWDu.png)
+![Voorbeeld van het stappenmodel op een tablet scherm](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_5NOTWDu.png)
 
 #### Stappenmodel voor mobiele versie formulier
 
-![Voorbeeld van het stappenmodel op een mobiel scherm](https://i.imgur.com/c7Nvcz7.png)
+![Voorbeeld van het stappenmodel op een mobiel scherm](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_voorbereiden_c7Nvcz7.png)
 
 Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 

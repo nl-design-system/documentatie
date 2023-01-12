@@ -3,7 +3,7 @@ title: Vragen en antwoorden
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Vragen en antwoorden
-sidebar_position: 4
+sidebar_position: 5
 pagination_label: Formulieren - Vragen en antwoorden
 description: Richtlijnen voor formulieren - Vragen en antwoorden.
 keywords:
@@ -54,7 +54,7 @@ De verschillende vormen van invoerelementen en hun specifieke richtlijnen vindt 
 
 Het tonen van alle antwoorden in een meerkeuze vraag kan het begrip van de vraag vergroten.
 
-![Voorbeeld van een alternatief ‘select’ patroon van het W3C design system](https://user-images.githubusercontent.com/248921/142412957-be9fed1e-5172-429f-a028-cdb68fa5a192.png)
+![Voorbeeld van een alternatief ‘select’ patroon van het W3C design system](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_vragen-en-antwoorden_142412957.png)
 
 Een alternatief patroon waarbij opties permanent opengeklapt zijn én alle antwoorden zichtbaar. [^w3c-segmented-options]
 
@@ -62,7 +62,7 @@ Een alternatief patroon waarbij opties permanent opengeklapt zijn én alle antwo
 
 Gebruik zo veel mogelijk één veld voor antwoorden die als geheel worden gezien, bv. netnummer en telefoonnummer of huisnummer en toevoeging.
 
-![Voorbeeld van GOV.UK van een gecombineerd telefoon invoerveld](https://user-images.githubusercontent.com/248921/142413725-95083e41-793c-4ea0-a4a1-4ac8965b2396.png)
+![Voorbeeld van GOV.UK van een gecombineerd telefoon invoerveld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_vragen-en-antwoorden_142413725.png)
 
 Eén enkel veld zodat alle soorten telefoonnummer formaten geaccepteerd worden. Geef een gebruiker wel richtlijnen, met helper tekst, welke formaten geaccepteerd worden. [^gov.uk-telephone-numbers]
 

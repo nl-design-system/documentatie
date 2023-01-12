@@ -3,7 +3,7 @@ title: Inclusie en toegankelijkheid
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Inclusie en toegankelijkheid
-sidebar_position: 3
+sidebar_position: 4
 pagination_label: Formulieren - Inclusie en toegankelijkheid
 description: Richtlijnen voor formulieren - Inclusie en toegankelijkheid
 keywords:
@@ -47,9 +47,9 @@ Formulierelementen moeten aan de volgende eisen voldoen, ze hebben:
 - Bij een fout een duidelijke foutmelding gekoppeld aan het invoerelement (zowel visueel maar zorg tevens dat de foutmelding op het juiste moment en op de juiste manier door voorleessoftware wordt uitgesproken),
 - Bij een foutmelding moet duidelijk worden uitgelegd hoe deze fout kan worden verholpen en deze in de toekomst kan worden voorkomen.
 
-![Voorbeeld van een foutmelding in land selectie op GOV.UK](https://user-images.githubusercontent.com/248921/142022481-5968bed5-3db3-45fb-b5d4-544edcb1fb92.png)
+![Voorbeeld van een foutmelding in land selectie op GOV.UK](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_inclusie-en-toegankelijkheid_142022481.png)
 
-![Voorbeeld van een foutmelding in datum selectie op GOV.UK](https://user-images.githubusercontent.com/248921/142023371-27d769fc-eb80-4d28-a776-91eaffece98b.png)
+![Voorbeeld van een foutmelding in datum selectie op GOV.UK](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_inclusie-en-toegankelijkheid_142023371.png)
 
 Voorbeelden van GOV.UK van foutmelding én visuele indicatie op welk element deze van toepassing zijn.
 

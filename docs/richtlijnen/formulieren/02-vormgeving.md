@@ -3,7 +3,7 @@ title: Vormgeving, opbouw en structuur
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Vormgeving
-sidebar_position: 2
+sidebar_position: 3
 pagination_label: Formulieren - Vormgeving
 description: Richtlijnen voor formulieren - Vormgeving, opbouw en structuur
 keywords:
@@ -53,7 +53,7 @@ Een verschil in breedte kan op invoervelden worden toegepast om de verwachte len
 
 ### Voorbeeld IBAN nummer
 
-![Voorbeeld van een IBAN invoerveld](https://i.imgur.com/edEERws.png)
+![Voorbeeld van een IBAN invoerveld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulieren_vormgeving_edEERws.png)
 
 ## Toon duidelijk de relatie tussen verschillende formulier elementen
 
