@@ -20,51 +20,53 @@ Iconen worden gebruikt om extra betekenis te geven. Ze brengen boodschappen in �
 
 **Let op!** Tekst zou altijd voorrang moeten krijgen ten opzichte van iconen. Gebruik iconen alleen waar extra duidelijkheid gewenst is.
 
-Binnen een Design System is het verstandig om iconen consistent toe te passen. Dat gaat gemakkelijk wanneer je gebruik maakt van een iconenset. Welk iconenset je gebruikt voor jouw organisatie staat je helemaal vrij.
+Binnen een Design System is het verstandig om iconen consistent toe te passen. Dat gaat gemakkelijk wanneer je gebruik maakt van een iconenset. Welke iconenset je gebruikt voor jouw organisatie staat je helemaal vrij.
 
-Vanuit het NL Design System gebruiken we twee iconensets. De iconen in deze sets typeren we als functionele iconen en toptaak iconen.
+Vanuit het NL Design System gebruiken we twee iconensets. De iconen in deze sets typeren we als [Functionele iconen](#functionele-iconen) en [Toptaak iconen](#toptaak-iconen).
 
 ## Functionele iconen
 
-Functionele iconen zijn simpel van vorm. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk aan een icoon voor een button of foutmelding.
+Bij functionele iconen is het belangrijk dat ze simpel van vorm zijn. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk bijvoorbeeld aan een icoon voor een button of foutmelding.
 
-<!-- TODO: afbeelding -->
+![Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_functioneel.png)
 
-Voor het 'Voorbeeld thema' maken we gebruik van de [Tabler iconenset](https://tabler-icons.io/). Deze set bestaat uit meer dan 3100 outline iconen die Open Source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
-
-<!-- TODO: afbeelding -->
-
-**Tip!** Voor het Voorbeeld thema hebben we een selectie gemaakt uit de Tabler iconenset. Mis je een icoon? Check dan website van de [Tabler iconenset](https://tabler-icons.io/).
-
-**Let op!** De iconen van de Tablet iconenset zijn opgebouwd uit lijnen (stroke) met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Vanuit aangesloten organisaties leerde we dat dit niet het gewenste gedrag is. Daarom hebben we de iconen in het Voorbeeld thema omgezet van lijn naar vorm (outline stroke). Waardoor de lijndikte van een icoon in verhouding meeschaalt met de afmetingen van het icoon.
-
-<!-- TODO: afbeelding -->
+Voor het 'Voorbeeld thema' maken we gebruik van een selectie uit de [Tabler iconenset](https://tabler-icons.io/).
 
 ### Grid
 
-**Gebruik een grid voor iconen**
+**Positioneer iconen binnen een vierkant grid.**
 
-Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid. Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door iconen binnen dit vierkant te positioneren zijn ze inwisselbaar. Hierdoor zullen teksten niet verspringen als je de iconen bijvoorbeeld toepast in een lijst.
+Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid.
 
-<!-- TODO: afbeelding -->
+![Fotocamera, klok en potloot icoon. Ieder op een vergroot grid van 24 bij 24.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid.png)
 
-De Tabler iconenset die we gebruiken in het Voorbeeld thema is bijvoorbeeld ontworpen op een 24×24 grid.
+Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door iconen binnen dit vierkant te positioneren zijn ze inwisselbaar. Hierdoor zullen teksten niet verspringen als je de iconen bijvoorbeeld toepast in een lijst.
 
-<!-- TODO: afbeelding -->
+![Twee lijstjes met vier labels. Voor elk label staat een icoon. Bij de eerste set verschillende de iconen in breedte waardoor de labels verspringen. Bij de tweede set hebben alle iconen dezelfde breedte waardoor de labels links uitlijnen.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid-geen-grid.png)
 
 ### Grootte
 
-Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast.
+**Stem de grootte van je iconen af op je lettergrootte.**
 
-Voor functionele iconen is dit vaak 16×16, 24×24 of 32×32.
+Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om deze groottes af te stemmen met je lettergrootte.
+
+![Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png)
+
+Voor functionele iconen is dit vaak 16×16, 24×24 of 32×32. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid.
 
 **Grootte als design token**
 
-De Tabler iconenset die we gebruiken in het Voorbeeld thema is ontworpen op een 24×24 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat we hier een common token voor hebben `nl.icon.functional.size`. Mogen iconen voor jouw organisatie groter of kleiner? Pas de common token aan en deze wijziging zal in vrijwel alle iconen worden doorgevoerd.
-
-**Tip!** Ook op component niveau kun je de grootte van een icoon aanpassen. Zo is de waarde van bijvoorbeeld `nl.button.icon.size` standaard `nl.icon.functional.size`, maar kun je deze waarde aanpassen naar `voorbeeld.size.icon.2xl` met een waarde van 32×32.
+Voor de grootte van functionele iconen de `nl.icon.functional.size` Design Token beschikbaar. Komen de iconen voor jouw organisatie groter of kleiner beter tot hun recht? Pas de waarde van deze common token aan en de wijziging zal in vrijwel componenten worden doorgevoerd
 
 <!-- TODO: Verwijzen naar Voorbeeld tokens wanneer dit een plek hebben -->
+
+### Lijndikte
+
+**Laat lijndikte meeschalen.**
+
+Een ‘outline’ iconenset is vaak opgebouwd uit lijnen (stroke). Bijvoorbeeld met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Over het algemeen is dit niet het gewenste gedrag omdat je zo verschillende gewichten in iconen kan krijgen.
+
+![Een kalender icoon wordt door middel van twee sets op drie formaten getoond. Klein, middel en groot. Bij de eerste set groeit de lijn-dikte niet mee, bij de tweede set wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_outline-stroke.png)
 
 ### Kleur
 
@@ -72,15 +74,15 @@ De Tabler iconenset die we gebruiken in het Voorbeeld thema is ontworpen op een 
 
 Iconen nemen vaak de kleur van de bijbehorende tekst over. Zodoende hebben ze, als de tekst het ook heeft, vanzelf voldoende contrast.
 
-<!-- TODO: afbeelding -->
+![Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon. Alle iconen hebben dezelfde kleur als de bijbehorende teksten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_kleuren-overnemen.png)
 
 Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven dan de bijbehorende tekst? Houd dan ook rekening met contrast. Voor iconen zou het contrast tussen de voor- en achtergrondkleur 3:1 of groter moeten zijn. Tenzij het icoon puur decoratief is.
 
-<!-- TODO: afbeelding -->
+![Rechter bovenhoek van een modal scherm rechts daarvan een waarschuwing. Sluit icoon van modal scherm is paars. Uitroepteken icoon in waarschuwing is donkergeel. De tekst van de waarschuwing is donkergrijs.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_eigen-kleuren.png)
 
 **Tip!** Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.
 
-<!-- TODO: afbeelding -->
+![Vier meldingen. Waarschuwingsmelding met uitroepteken in driehoek icoon. Positieve melding met check icoon. Negatieve melding met uitroepteken in cirkel icoon. Informatieve melding met 'i' in cirkel icoon.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_niet-op-kleur-vertrouwen.png)
 
 **Tip!** Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van [`current color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword). Op die manier neemt het icoon de waarde over van de `color` die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
 
@@ -92,31 +94,33 @@ Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven da
 
 **Let op!** SVG gebruikt `fill`, niet `color` of `background-color`.
 
+![Drie schermen met dezelfde inhoud (onder andere een button met pijl icoon) maar verschillende thema's. Light-mode, dark-mode en high-contrast-mode.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_high-contrast.png)
+
 **Tip!** Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.
 
-<!-- TODO: afbeelding -->
+![Twee keer een lijstje van twee labels met een icoon ervoor. Links 'Geluid aan' en 'Geluid uit' waarbij een speaker icoon per label van vorm verschilt. Rechts 'Toon wachtwoord' en 'Verberg wachtwoord' waarbij een oog icoon van vorm verschilt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_status.png)
 
 ### Iconen kiezen
 
-**Respecteer conventies**
+**Respecteer conventies.**
 
 Voor iconen, en met name functionele iconen, is het belangrijk om conventies te volgen. Zo zijn er bepaalde iconen die sterk aan concept gerelateerd zijn. Het is verstandig deze conventies te respecteren en deze iconen niet ineens voor een andere functie te gebruiken.
 
-<!-- TODO: afbeelding -->
+![Tien iconen op een rij. Vergrootglas, kruis, check, uitroepteken in driehoek, prullenbak, plus, min, play, pauze, stop.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_conventies.png)
 
 **Tip!** In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op 'Toevoegen' zoekt komt het 'Plus' icoon bovendrijven.
 
-<!-- TODO: afbeelding -->
+![Screenshot van Figma. Plus icoon is geselecteerd. Aanvullende beschrijving toont de woorden 'Add' en 'Toevoegen'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_aliassen.png)
 
 **Tip!** Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.
 
 ### SVG
 
-**Gebruik SVG voor iconen**
+**Gebruik SVG voor iconen.**
 
 SVG staat voor Scalable Vector Graphics en is een ideaal bestandsformaat voor iconen.
 
-**Voordelen van SVG**
+Voordelen van SVG:
 
 - Schaalbaar zonder kwaliteitsverlies
 - Licht in gewicht wat bijdraagt aan korte laadtijden
@@ -213,17 +217,13 @@ Als de tekst van de tooltip buiten element staat, kun je het aan dit element kop
 
 Toptaak iconen zijn gedetailleerder dan functionele iconen. Dat kan ook makkelijk omdat ze groter worden ingezet. Toptaak iconen helpen bezoekers van gemeentelijke websites om sneller bij de juiste informatie te komen.
 
-Voor het 'Voorbeeld thema' maken we gebruik van de outline versie van de iconenset: [Gemeenten iconen](https://www.gemeenteniconen.nl/). Deze iconenset wordt Open Source aangeboden. Je wilt mag je deze dus ook gebruiken voor jouw organisatie.
+Voor het 'Voorbeeld thema' maken we gebruik van de outline versie van de iconenset: [Gemeenten iconen](https://www.gemeenteniconen.nl/). Deze iconenset wordt Open Source aangeboden. Je mag deze iconen dus ook gebruiken voor jouw organisatie.
 
 [Ga naar gemeenteniconen.nl](https://www.gemeenteniconen.nl) voor meer informatie over het gebruik.
 
-### Grootte
-
-Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast.
-
-De toptaak iconen komen het best tot hun recht op een grootte van 48×48, 56×56 of 64×64.
-
 ## Meer informatie
+
+Deze documentatie is onder andere gebaseerd op de [documentatie rondom iconen van BBC GEL](https://bbc.github.io/gel/foundations/iconography/).
 
 ### Gerelateerde WCAG Richtlijnen
 
@@ -233,7 +233,6 @@ De toptaak iconen komen het best tot hun recht op een grootte van 48×48, 56×56
 ### Links
 
 - [A complete guide to iconography - Bonnie Kate Wolf](https://www.designsystems.com/iconography-guide/)
-- [Pixel-snapping in icon design - Helena Zhang](https://uxdesign.cc/pixel-snapping-in-icon-design-a-rendering-test-6ecd5b516522)
 - [Inline SVG vs Icon Fonts - CSS-tricks](https://css-tricks.com/icon-fonts-vs-svg/)
 - [Are Hollow Icons Really Harder to Recognize Than Solid Icons? - Curt Arledge](https://www.viget.com/articles/are-hollow-icons-really-harder-to-recognize-a-research-study/)
 - [Icons - Google Material](https://m3.material.io/styles/icons/overview)
