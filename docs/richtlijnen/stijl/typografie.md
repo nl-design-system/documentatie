@@ -34,9 +34,9 @@ Gebruik een lettergrootte ofwel `font-size` die groot genoeg is voor de ‘[body
 
 **Zorg voor een comfortabele regelafstand ofwel `line-height`.**
 
-Een goed ingestelde `line-height` zorgt ervoor dat men op een vloeiende manier het einde van een regel kan koppelen aan het begin van de volgende.
+Een goed afgestelde regelafstand ofwel `line-height` zorgt ervoor dat het oog op een vloeiende manier het einde van een regel kan koppelen aan het begin van de volgende.
 
-![Paragrafen met verschillende regelaftanden. De eerste te kort, de tweede te lang, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/regelafstand.png)
+![Paragrafen met verschillende regelaftanden. De eerste te kort, de tweede te lang, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_regelafstand.png)
 
 Standaard gebruiken browsers een `line-height` van circa `1.2`, maar voor veel mensen is tekst met een hogere `line-height` beter leesbaar. De ideale `line-height` hangt af van verschillende factoren (lettertype, lettergrootte, regellengte, etc.) maar met een `line-height` tussen `1.5` en `2.0` zit je goed. Groter dan `2.0` wordt minder leesbaar.
 
@@ -56,7 +56,7 @@ We gebruiken geen unit notatie zoals `px` of `pt` voor `line-height`. Dit is met
 
 Maak regels niet te lang of te kort. 45-75 karakters per regel is acceptabel. Kortere regels tekst zijn prima voor bijschriften en formulieren.
 
-![Paragrafen met verschillende regellengtes. De eerste te lang, de tweede te kort, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/regellengte.png)
+![Paragrafen met verschillende regellengtes. De eerste te lang, de tweede te kort, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_regellengte.png)
 
 **Tip!** Een waarde die binnen CSS vaak over het hoofd wordt gezien is `ch`. Door je paragrafen een `max-width` van `75ch` mee te geven zorg je ervoor dat regels nooit te lang worden.
 
@@ -72,31 +72,31 @@ Lorem ipsum dolor sit amet, consectetur adi * isicing elit, sed do eiusmo * temp
 
 **Kies een goed lettertype.**
 
-Kies een lettertype dat de leesbaarheid van paragrafen ten goede komt. Houd bij het kiezen van een lettertype rekening met de volgende factoren:
+Kies een lettertype ofwel ‘Typeface’ dat de leesbaarheid van paragrafen ten goede komt. Houd bij het kiezen van een lettertype rekening met de volgende factoren:
 
-### Typeface
+### Herkenbaarheid
 
-Gebruik een herkenbare sans-serif of serif maar zeker geen decoratief lettertype.
+Gebruik een sans-serif of serif lettertype met herkenbare lettervormen. Gebruik geen decoratief lettertype.
 
-![Paragrafen met verschillende lettertypes. De eerste sans-serif, de tweede serif, de derde decoratief. Bij de derde paragraaf staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/lettertype.png)
+![Paragrafen met verschillende lettertypes. De eerste sans-serif, de tweede serif, de derde decoratief. Bij de derde paragraaf staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettertype.png)
 
 ### x-hoogte
 
 x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over het algemeen zorgt een hoge x-hoogte voor een betere leesbaarheid. Maar de x-hoogte van het lettertype zou ook weer niet te hoog moeten zijn. Hierdoor zouden bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
 
-![Afgebeeld zijn de letters 'n' en 'h' met lettertype Futura, Roboto en Impact. Futura heeft een lage x-hoogte, Roboto gemiddeld tot hoog, Impact zeer hoog. Bij het Impact voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/x-hoogte.png)
+![Afgebeeld zijn de letters 'n' en 'h' met lettertype Futura, Roboto en Impact. Futura heeft een lage x-hoogte, Roboto gemiddeld tot hoog, Impact zeer hoog. Bij het Impact voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_x-hoogte.png)
 
 ### Letter contrast
 
 Het letter contrast, het verschil in lijndikte van een letter, zou niet te hoog of te laag moeten zijn. Te veel contrast leidt af en door te weinig contrast gaan lettervormen op elkaar lijken.
 
-![Afgebeeld is de letter 'o' met lettertypes Futura, Arial en Lao MN. Futura heeft een laag letter contrast, Arial heeft een gemiddeld letter contrast, Lao MN heeft een zeer hoog letter contrast. Bij het Lao MN voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/letter-contrast.png)
+![Afgebeeld is de letter 'o' met lettertypes Futura, Arial en Lao MN. Futura heeft een laag letter contrast, Arial heeft een gemiddeld letter contrast, Lao MN heeft een zeer hoog letter contrast. Bij het Lao MN voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-contrast.png)
 
 ### Lettervormen
 
 Individuele lettervormen zouden genoeg van vorm moeten verschillen waardoor ze niet met elkaar verward kunnen worden. De hoofdletter I de letter l en het cijfer 1 zouden bijvoorbeeld onderling moeten verschillen. Dacht geldt ook voor de hoofdletter O en het cijfer 0.
 
-![Afgebeeld zijn hoofdletter 'i' letter 'l' en cijfer '1' met lettertype Merriweather, Noto Sans en Inter. Merriweather en Noto Sans tonen een verschil in lettervorm. Bij Inter zijn hoofdletter 'i' letter 'l' gelijkwaardig in vorm. Bij het Inter voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/lettervormen.png)
+![Afgebeeld zijn hoofdletter 'i' letter 'l' en cijfer '1' met lettertype Merriweather, Noto Sans en Inter. Merriweather en Noto Sans tonen een verschil in lettervorm. Bij Inter zijn hoofdletter 'i' letter 'l' gelijkwaardig in vorm. Bij het Inter voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettervormen.png)
 
 ### Letter afstand
 
@@ -106,17 +106,17 @@ Een combinatie van de letters 'r' en 'n' (rn)' zou een duidelijke ruimte moeten 
 
 <!-- TODO: ## Linken naar uitleg Voorbeeld thema -->
 
-![De letters 'r' en 'n' zijn twee keer afgebeeld. Bij heeft eerste voorbeeld is er voldoende letter afstand. Bij het tweede voorbeeld is er te weinig letter afstand. Bij het tweede voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/letter-afstand.png)
+![De letters 'r' en 'n' zijn twee keer afgebeeld. Bij heeft eerste voorbeeld is er voldoende letter afstand. Bij het tweede voorbeeld is er te weinig letter afstand. Bij het tweede voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-afstand.png)
 
 ### Tekens
 
 Het lettertype zou alle benodigde tekens moeten ondersteunen. Denk daarbij aan speciale tekens, andere talen en stijlen (bold en/of cursief). Maar ook ‘[tabular-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)’ waardoor cijfers even breed getoond kunnen worden in tabellen en lijsten. Dit oogt fraaier en de informatie is beter te scannen en vergelijken.
 
-![Er staan twee keer twee duizendtallen boven elkaar. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van tabular-nums waardoor de de positie van de punt per duizendtal verschilt. Bij het tweede voorbeeld is er wel gebruik gemaakt van tabular-nums waardoor de punt bij beide duizendtallen op dezelfde plek staat.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/tabular-nums.png)
+![Er staan twee keer twee duizendtallen boven elkaar. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van tabular-nums waardoor de de positie van de punt per duizendtal verschilt. Bij het tweede voorbeeld is er wel gebruik gemaakt van tabular-nums waardoor de punt bij beide duizendtallen op dezelfde plek staat.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_tabular-nums.png)
 
 **Tip!** Het hebben van een ‘slashed-zero’ is handig. Zo kan men het cijfer 0 en de letter O gemakkelijk onderscheiden. Handig wanneer men voor "toon wachtwoord" kiest of bij het lezen van een code (bijvoorbeeld IBAN).
 
-![Afgebeeld is twee keer het getal 67.890. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van een slashed zero. Bij het twee voorbeeld wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/stijl/typografie/slashed-zero.png)
+![Afgebeeld is twee keer het getal 67.890. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van een slashed zero. Bij het twee voorbeeld wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_slashed-zero.png)
 
 ### Vetgedrukt
 
@@ -236,7 +236,7 @@ Beperk het gebruik van gecentreerde tekst tot een minimum. Hooguit voor een kort
 
 Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
 
-Indien je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij ‘VOER JE NAAM IN’ wordt dat wel heel vreemd. Mocht je toch tekst in all caps willen tonen gebruik dan CSS.
+Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij ‘VOER JE NAAM IN’ wordt dat wel heel vreemd. Mocht je toch tekst in all caps willen tonen gebruik dan CSS.
 
 Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!
 
