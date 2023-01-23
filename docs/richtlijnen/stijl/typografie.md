@@ -284,13 +284,26 @@ Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat 
 
 ### Links
 
-- [Typefaces and Fonts - WebAIM](https://webaim.org/techniques/fonts/)
-- [Practical Typography - Matthew Butterick](https://practicaltypography.com/)
-- [Knowledge - Google Fonts](https://fonts.google.com/knowledge)
-- [Line Length Readbility - Baymard](https://baymard.com/blog/line-length-readability)
-- [Variable fonts - Web.dev](https://web.dev/variable-fonts/)
-- [On Web Typography by Jason Santa Maria - A Book Apart](https://abookapart.com/products/on-web-typography)
-- [Say no to faux bold - A List Apart](https://alistapart.com/article/say-no-to-faux-bold)
+[Typefaces and Fonts - WebAIM](https://webaim.org/techniques/fonts/)<br/>
+Artikel over typografie en toegankelijkheid.
+
+[Practical Typography - Matthew Butterick](https://practicaltypography.com/)<br/>
+Boek (digitaal) over typografie.
+
+[Knowledge - Google Fonts](https://fonts.google.com/knowledge)<br/>
+Kennisbank over typografie.
+
+[Line Length Readbility - Baymard](https://baymard.com/blog/line-length-readability)<br/>
+Artikel over een onderzoek naar de ideale regellengte.
+
+[Variable fonts - Web.dev](https://web.dev/variable-fonts/)<br/>
+Artikel over variabele fonts.
+
+[On Web Typography by Jason Santa Maria - A Book Apart](https://abookapart.com/products/on-web-typography)<br/>
+Boek over typografie voor het web.
+
+[Say no to faux bold - A List Apart](https://alistapart.com/article/say-no-to-faux-bold)<br/>
+Artikel over de weergave van bold teksten.
 
 ---
 
