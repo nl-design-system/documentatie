@@ -232,14 +232,32 @@ Deze documentatie is onder andere gebaseerd op de [documentatie rondom iconen va
 
 ### Links
 
-- [A complete guide to iconography - Bonnie Kate Wolf](https://www.designsystems.com/iconography-guide/)
-- [Inline SVG vs Icon Fonts - CSS-tricks](https://css-tricks.com/icon-fonts-vs-svg/)
-- [Are Hollow Icons Really Harder to Recognize Than Solid Icons? - Curt Arledge](https://www.viget.com/articles/are-hollow-icons-really-harder-to-recognize-a-research-study/)
-- [Icons - Google Material](https://m3.material.io/styles/icons/overview)
-- [Accessible icon buttons - Sara Soueidan](https://www.sarasoueidan.com/blog/accessible-icon-buttons/)
-- [Aria-label is a xenophobe - Heydon Heydon Pickering](https://heydonworks.com/article/aria-label-is-a-xenophobe/)
-- [Tabler icons - Codecalm](https://tabler-icons.io/)
-- [Gemeenteniconen.nl](https://www.gemeenteniconen.nl)
+[A complete guide to iconography - Bonnie Kate Wolf](https://www.designsystems.com/iconography-guide/)<br/>
+Uitgebreid artikel over het ontwerpen en toepassen van iconen binnen een Design System.
+
+[Pixel-snapping in icon design - Helena Zhang](https://uxdesign.cc/pixel-snapping-in-icon-design-a-rendering-test-6ecd5b516522)<br/>
+Artikel over een onderzoek naar het scherp tonen van iconen.
+
+[Inline SVG vs Icon Fonts - CSS-tricks](https://css-tricks.com/icon-fonts-vs-svg/)<br/>
+Artikel over de verschillen tussen ‘Inline SVG’ en ‘Icon Fonts’ worden beschreven.
+
+[Are Hollow Icons Really Harder to Recognize Than Solid Icons? - Curt Arledge](https://www.viget.com/articles/are-hollow-icons-really-harder-to-recognize-a-research-study/)<br/>
+Artikel over een onderzoek naar het gebruik van ‘outline’ iconen ten opzicht van ‘solid’ iconen.
+
+[Icons - Google Material](https://m3.material.io/styles/icons/overview)<br/>
+Documentatie over het gebruik van iconen binnen het Material Design System van Google.
+
+[Accessible icon buttons - Sara Soueidan](https://www.sarasoueidan.com/blog/accessible-icon-buttons/)<br/>
+Artikel over het toegankelijk opzetten van buttons die alleen een icoon tonen. Er komen verschillende methodes aan bod.
+
+[Aria-label is a xenophobe - Heydon Heydon Pickering](https://heydonworks.com/article/aria-label-is-a-xenophobe/)<br/>
+Artikel over het gebruik van Aria-label en de problemen die hierbij kunnen optreden bij het vertalen van een webpagina.
+
+[Tabler icons - Codecalm](https://tabler-icons.io/)<br/>
+De iconenset die we bij het NL Design System gebruiken voor de functionele iconen van het Voorbeeld thema.
+
+[Gemeenteniconen.nl](https://www.gemeenteniconen.nl)<br/>
+De iconenset die we bij het NL Design System gebruiken voor het Voorbeeld thema.
 
 ---
 
