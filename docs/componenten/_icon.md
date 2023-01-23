@@ -87,3 +87,84 @@ In sommige contexten kunnen iconen verkeerd op gevat worden. Denk bijvoorbeeld a
 - [Icons As Part Of A Great User Experience](https://www.smashingmagazine.com/2016/10/icons-as-part-of-a-great-user-experience/)
 - [When does iconography start to become useless?](https://uxdesign.cc/crimes-of-ux-3-useless-iconography-5bf06ef9fed)
 - [Beelkompas: Wat is een icoon](https://www.beeldkompas.nl/kennisbank/wat-is-een-icoon)
+
+---
+Draft documentatie vanaf hier
+---
+
+### Toepassen in code
+
+Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tekstlabel.
+
+Het icoon zelf moet het attribuut `focusable="false"` hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.
+
+Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code `aria-hidden="true"` mee. Zo is het tekstlabel "Verwijderen" in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren.
+
+```html
+<button>
+  <svg class="nl-icon nl-icon--text" focusable="false" aria-hidden="true">
+    <use xlink:href="assets/svg/icons-core-set.svg#-icon-trashcan"></use>
+  </svg>
+  <span>Delete</span>
+</button>
+```
+
+Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeken) of een kruis (voor sluiten), zou je kunnen gebruiken zonder aanvullende visuele tekst. In deze gevallen wordt een visueel verborgen `<span>` aanbevolen.
+
+Verberg in deze gevallen de `<span>` met behulp van de class `visually-hidden` of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.
+
+**Let op!** Ook `aria-label` kan dit voor elkaar krijgen maar [`aria-label` kan voor vertaalproblemen zorgen](https://heydonworks.com/article/aria-label-is-a-xenophobe).
+
+```css
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+```
+
+#### Tooltips
+
+Als een icoon een tooltip heeft, kan de tooltip als label ingezet worden. In het volgende voorbeeld zorgt het element `class="tooltip"` voor het label.
+
+```html
+<a href="link/to/download" download>
+  <svg class="nl-icon nl-icon--text" focusable="false" aria-hidden="true">
+    <use xlink:href="assets/svg/nl-icons-core-set.svg#nl-icon-download"></use>
+  </svg>
+  <span class="tooltip">Download</span>
+</a>
+```
+
+Standaard zal de tooltip worden verborgen door middel van `display: none`. De tooltip zal dan getoond worden bij hover of focus.
+
+```css
+[download] .tooltip {
+  display: none;
+}
+[download]:hover .tooltip,
+[download]:focus .tooltip {
+  display: block;
+}
+```
+
+**Let op!** Vertrouw niet op het `title` attribuut voor tooltips. Deze verschijnen niet bij focus en zijn daarom niet toegankelijk via het toetsenbord. Ze worden meestal ook niet voorgelezen door schermlezers als de instellingen hier niet op ingesteld zijn.
+
+Als de tekst van de tooltip buiten element staat, kun je het aan dit element koppelen met behulp van `aria-labelledby`. In het volgende voorbeeld delen `aria-labelledby` en het `id` van de tooltip de waarde `download-tooltip`. Teksten die zijn gekoppeld zijn via `aria-labelledby` worden wel vertaald.
+
+```html
+<div class="download-container">
+  <a href="link/to/download" download aria-labelledby="download-tooltip">
+    <svg class="nl-icon nl-icon--text" focusable="false" aria-hidden="true">
+      <use xlink:href="assets/svg/nl-icons-core-set.svg#nl-icon-download"></use>
+    </svg>
+  </a>
+  <span class="tooltip" id="download-tooltip">Download</span>
+</div>
+```
