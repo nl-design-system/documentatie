@@ -121,16 +121,35 @@ Sommige mensen bekijken webpagina’s liever met meer of juist minder contrast. 
 
 ### Links
 
-- [Color and Contrast - Nate Baldwin](https://colorandcontrast.com/)
-- [Accessible Palette - Eugene Fedorenko](https://accessiblepalette.com/)
-- [Contrast grid - Eightshapes](https://contrast-grid.eightshapes.com/)
-- [Color review - Anton Robsarve](https://color.review/)
-- [Who can use - Corey Ginnivan](https://whocanuse.com/)
-- [Radoma11y - Components AI](https://randoma11y.com/)
-- [Viz palette - Elijah Meeks & Susie Lu](https://projects.susielu.com/viz-palette)
-- [Chrome plugin: Spectrum](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb)
-- [Orange you accessible?](https://www.bounteous.com/insights/2019/03/22/orange-you-accessible-mini-case-study-color-ratio/)
-- [Guide windows high contrast mode](https://www.smashingmagazine.com/2022/06/guide-windows-high-contrast-mode/)
+[Color and Contrast - Nate Baldwin](https://colorandcontrast.com/)<br/>
+Website met uitgebreide en interactieve documentatie over kleur.
+
+[Accessible Palette - Eugene Fedorenko](https://accessiblepalette.com/)<br/>
+Online tool waarmee je een kleurenpalet kunt genereren en direct contrast kunt checken.
+
+[Contrast grid - Eightshapes](https://contrast-grid.eightshapes.com/)<br/>
+Online tool waarbij je meerdere kleuren kunt invullen. Vervolgens ontstaat er een tabel waardoor je het contrast kunt checken.
+
+[Color review - Anton Robsarve](https://color.review/)<br/>
+Online tool waarbij je twee kleuren kunt invullen. Vervolgens kun je checken hoeveel contrast deze kleurcombinatie oplevert. Daarnaast heb je de mogelijkheid om via een colorpicker naar voldoende contrast op zoek te gaan.
+
+[Radoma11y - Components AI](https://randoma11y.com/)<br/>
+Online tool die willekeurig twee kleurcombinaties samensteld die altijd voldoende contrast hebben.
+
+[Who can use - Corey Ginnivan](https://whocanuse.com/)<br/>
+Online tool waarbij je twee kleuren kunt invullen. Vervolgens kun je checken hoe deze kleurcombinatie overkomt bij verschillende visuele beperkingen.
+
+[Viz palette - Elijah Meeks & Susie Lu](https://projects.susielu.com/viz-palette)<br/>
+Online tool waarbij je meerdere kleuren kunt invullen specifiek voor data visualisatie. Vervolgens kun je checken hoe deze kleurcombinatie overkomt bij verschillende visuele beperkingen.
+
+[Chrome plugin: Spectrum](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb)<br/>
+Broser plugin waarmee je kunt checken hoe een webpagina overkomt bij verschillende vormen van kleurenblindheid.
+
+[Orange you accessible?](https://www.bounteous.com/insights/2019/03/22/orange-you-accessible-mini-case-study-color-ratio/)<br/>
+Artikel over een onderzoek naar contrast voor de kleur oranje.
+
+[Guide windows high contrast mode](https://www.smashingmagazine.com/2022/06/guide-windows-high-contrast-mode/)<br/>
+Artikel waarin wordt beschreven hoe je een website kan inrichten zodat Windows High Contrast mode wordt ondersteund.
 
 ---
 
