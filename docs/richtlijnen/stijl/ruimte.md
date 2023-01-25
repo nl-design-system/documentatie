@@ -18,7 +18,7 @@ Ruimte (‘Spacing’ in het engels) helpt bij het organiseren van inhoud. Door 
 
 ## Spacing scale
 
-**Maak gebruik van een spacing scale.**
+### Maak gebruik van een spacing scale
 
 Om ruimte consistent toe te passen is het verstandig om te werken met een vaste set aan waardes die oplopen in grootte. Een zogenoemde ‘spacing scale’. Een spacing scale start met kleine waardes. Hiermee kun je relaties creëren op detailniveau. Vervolgens loopt de spacing scale, vaak met steeds grotere spongen, op naar waardes die ingezet kunnen worden voor een ruimere opzet.
 
@@ -28,7 +28,7 @@ Ook bij het Voorbeeld thema maken we gebruik van een spacing scale. Sterker nog,
 
 ## Box model
 
-**Werk en denk vanuit het box model.**
+### Werk en denk vanuit het box model
 
 De [spacing concepten](#spacing-concepten) van het NL Design System zijn gebouwd rond het fundamentele layout-principe van CSS, ook wel bekend als het ‘box model’.
 
@@ -36,21 +36,25 @@ Alle elementen van een webpagina staan in een box, een rechthoek die het element
 
 ![Box model structuur met een grotere box die de margin vertegenwoordigt rond een kleinere box die de content voorstelt met zijn padding en border.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_box-model.png)
 
-**Content**</br>
+### Content
+
 Inhoud ofwel ‘Content’ is de ruimte voor tekst, een plaatje of andere elementen.
 
-**Padding**</br>
+### Padding
+
 Padding is de ruimte tussen de content en de border. Zonder padding zou de border strak om de content zitten. Padding heeft dezelfde achtergrondkleur als de content.
 
-**Border**</br>
+### Border
+
 De border is de rand om de content.
 
-**Margin**</br>
+### Margin
+
 Marge ofwel ‘Margin’ is het deel buiten de border van de box. Margin zorgt voor ruimte tussen aangrenzende boxen. Margin is transparant, heeft geen eigen kleur. Margin draagt niet bij aan de breedte van een element.
 
 ## Spacing concepten
 
-**Maak gebruik van de spacing concepten.**
+### Maak gebruik van de spacing concepten
 
 Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze ‘spacing concepten’ worden met behulp van Design Tokens toegepast op alle componenten en templates.
 
@@ -116,7 +120,7 @@ Met deze spacing concepten kun je alle componenten op een consistente manier van
 
 ### Relaties
 
-**Gebruik ruimte om relaties te creëren tussen elementen.**
+#### Gebruik ruimte om relaties te creëren tussen elementen
 
 Gebruik kleine afstanden om elementen samen te groeperen en grotere afstanden om ze te scheiden. Elementen die dicht bij elkaar staan lijken meer met elkaar verbonden te zijn dan dingen die verder uit elkaar staan.
 
@@ -134,7 +138,7 @@ De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de r
 
 ### Hiërarchie
 
-**Gebruik ruimte om hiërarchie te creëren tussen elementen.**
+#### Gebruik ruimte om hiërarchie te creëren tussen elementen
 
 Gebruik ruimte om belangrijke elementen extra attentiewaarde mee te geven. Elementen met meer ruimte hebben de neiging om belangrijker te ogen dan elementen die minder ruimte om zich heen hebben.
 
@@ -142,7 +146,7 @@ Gebruik ruimte om belangrijke elementen extra attentiewaarde mee te geven. Eleme
 
 ### Ruim of Compact
 
-**Stem het gebruik van ruimte af op de functie en inhoud van de dienst.**
+#### Stem het gebruik van ruimte af op de functie en inhoud van de dienst
 
 Veel ruimte werkt goed bij het lezen van langere teksten en het creëren van een bepaalde sfeer (branding). Compacte ruimte is geschikt voor het efficiënt uitvoeren van taken. Denk bijvoorbeeld aan pagina’s met veel data in tabellen.
 
@@ -152,7 +156,7 @@ Informatie die te compact wordt gepresenteerd kan moeilijk te verwerken zijn voo
 
 ### Ruimte tussen interactieve elementen
 
-**Reserveer ruimte tussen interactieve elementen.**
+#### Reserveer ruimte tussen interactieve elementen
 
 Hoewel WCAG wel een richtlijn heeft voor target size. Wordt er niks vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.
 
