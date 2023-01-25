@@ -14,7 +14,7 @@ keywords:
 
 # Ruimte
 
-Ruimte (‘Spacing’ in het engels) helpt bij het organiseren van inhoud. Door ruimte op een voorspelbare manier toe te passen kun je visueel verbanden leggen en orde scheppen. Dit geldt voor componenten maar ook voor de algehele opmaak van een pagina ofwel ‘layout’.
+Ruimte (‘Spacing’ in het Engels) helpt bij het organiseren van inhoud. Door ruimte op een voorspelbare manier toe te passen kun je visueel verbanden leggen en orde scheppen. Dit geldt voor componenten maar ook voor de algehele opmaak van een pagina ofwel ‘layout’.
 
 ## Spacing scale
 
@@ -62,7 +62,9 @@ Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare
 
 ### Inline
 
-Gebruik de ‘Inline’ spacing scale om **binnen componenten** ruimte te creeeren **voor of na** tekst. In CSS kun je de volgende properties gebruiken:
+Inline tussenruimte is de ruimte binnen componenten, voor of na tekst.
+
+Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creeeren voor of na tekst. In CSS kun je de volgende properties gebruiken:
 
 - margin-inline-start
 - margin-inline-end
@@ -73,7 +75,9 @@ Gebruik de ‘Inline’ spacing scale om **binnen componenten** ruimte te creeer
 
 ### Block
 
-Gebruik de ‘Block’ spacing scale om **binnen componenten** ruimte te creeeren **boven of onder** tekst. In CSS kun je de volgende properties gebruiken:
+Block tussenruimte is de ruimte binnen componenten, boven of onder tekst.
+
+Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creeeren boven of onder tekst. In CSS kun je de volgende properties gebruiken:
 
 - margin-block-start
 - margin-block-end
@@ -84,13 +88,17 @@ Gebruik de ‘Block’ spacing scale om **binnen componenten** ruimte te creeere
 
 ### Text
 
-Gebruik de ‘Text’ spacing scale om **binnen componenten** ruimte te creeeren **tussen verschillende teksten of iconen**.
+Text tussenruimte is de ruimte binnen componenten, tussen tekst en iconen.
+
+Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creeeren tussen verschillende teksten of iconen.
 
 ![Spacing scale met verticaal 10 blokjes. In elk blokje staat een kalender icoon en de tekst 'label'. Tussen het icoon en de tekst staan groene vlakken. De vlakken worden per blokje breeder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-text.png)
 
 ### Column
 
-Gebruik de ‘Column’ spacing scale om **horizontaal** ruimte te creeeren **tussen componenten**. In CSS kun je de volgende properties gebruiken:
+Column tussenruimte is de horizontale ruimte tussen componenten.
+
+Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:
 
 - margin-inline-start
 - margin-inline-end
@@ -101,7 +109,9 @@ Gebruik de ‘Column’ spacing scale om **horizontaal** ruimte te creeeren **tu
 
 ### Row
 
-Gebruik de ‘Row’ spacing scale om **verticaal** ruimte te creeeren **tussen componenten**. In CSS kun je de volgende properties gebruiken:
+Row tussenruimte is de verticale ruimte tussen componenten.
+
+Gebruik de ‘Row’ spacing scale om verticaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:
 
 - margin-block-start
 - margin-block-end
