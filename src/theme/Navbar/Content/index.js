@@ -2,7 +2,6 @@ import React from 'react';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
-import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
@@ -50,7 +49,6 @@ export default function NavbarContent() {
           // Ask the user to add the respective navbar items => more flexible
           <>
             <NavbarItems items={rightItems} />
-            <NavbarColorModeToggle className={styles.colorModeToggle} />
             {!searchBarItem && (
               <NavbarSearch>
                 <SearchBar />
