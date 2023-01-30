@@ -3,6 +3,7 @@ title: Kleuren
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Kleuren
+sidebar_position: 2
 pagination_label: Kleuren
 description: Richtlijnen voor kleuren
 keywords:
@@ -20,35 +21,35 @@ Echter wordt kleur niet door iedereen op dezelfde manier ervaren. Daarom hebben 
 
 ## Contrast
 
-**Zorg voor voldoende kleurcontrast.**
+### Zorg voor voldoende kleurcontrast.
 
 Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.
 
 ![Afgebeeld zijn de woorden 'onvoldoende' en 'contrast'. Waarbij 'onvoldoende' te weinig kleurcontrast heeft en 'contrast' wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_kleuren_contrast.png)
 
-### Tekst
+Het W3C is voor [WCAG 3.0](https://www.w3.org/TR/wcag-3.0/#visual-contrast-of-text) aan het kijken naar een algoritme om kleurcontrast accurater te berekenen. Let wel; voorlopig zal je je aan de huidige contrast richtlijnen moeten houden.
+
+#### Tekst
 
 Voor tekst zou het contrast tussen de voor- en achtergrondkleur 4.5:1 of groter moeten zijn. Bij een lettergrootte van 24px (of 18.5px en bold) of hoger zou het contrast 3:1 of groter moeten zijn.
 
-### Interface elementen
+#### Interface elementen
 
 Er zijn ook interface elementen die voldoende contrast moeten hebben. Denk aan iconen, formulierelementen of datavisualisatie. Voor deze elementen zou het contrast tussen de voor- en achtergrondkleur 3:1 of groter moeten zijn.
 
-### Kleurenpalet
+#### Kleurenpalet
 
 Het is handig om een kleurenpalet te hebben waaruit je kan opmaken welke kleurcombinaties voldoende contrast opleveren. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je [accessiblepalette.com](https://accessiblepalette.com/) kunnen gebruiken. Deze tool berekend het contrast op basis van de WCAG 2.1 en 3 (concept) richtlijnen.
 
-**Tip!** Het hebben van een uitgebreid kleurenpalet is fijn (ook met het oog op dark-mode). Dat betekend niet dat je veel verschillende kleuren hoeft te gebruiken. Dit kan afleiden. Pas de kleuren uit het kleurenpalet toe voor specifieke doeleinden. Het ‘common’ niveau dat we hanteren bij het NL Design System is hier een mooi voorbeeld van.
+Het hebben van een uitgebreid kleurenpalet is fijn (ook met het oog op dark-mode). Maar het betekend niet dat je ook veel verschillende kleuren moet gebruiken. Pas de kleuren uit het kleurenpalet toe voor specifieke doeleinden. Het ‘common’ niveau dat we hanteren bij het NL Design System is hier een mooi voorbeeld van.
 
-### Tekst over afbeelding
+#### Tekst over afbeelding
 
 Als je tekst over een afbeelding wilt gebruiken, plaats dan een effen vlak achter de tekst of een transparant kleurvlak over de gehele afbeelding.
 
-**Tip!** Het W3C is voor [WCAG 3.0](https://www.w3.org/TR/wcag-3.0/#visual-contrast-of-text) aan het kijken naar een algoritme om kleurcontrast accurater te berekenen. Let wel; voorlopig zal je je aan de huidige contrast richtlijnen moeten houden.
-
 ## Gebruik
 
-**Vertrouw niet alleen op kleur.**
+### Vertrouw niet alleen op kleur.
 
 Wanneer je alleen kleur gebruikt om informatie over te brengen kan iemand die kleurenblind is de dit soms niet goed interpreteren. Maak daarom gebruik van tekst, iconen en/of andere visuele elementen om de intentie van de boodschap te versterken.
 
@@ -56,28 +57,26 @@ Wanneer je alleen kleur gebruikt om informatie over te brengen kan iemand die kl
 
 In de afbeelding hierboven zie je een formulier waarbij het tekstveld 'E-mailadres' een rode border heeft. Daarnaast staat het formulier nogmaals afgebeeld, maar dan zoals een kleurenblind persoon dit kan ervaren (in dit voorbeeld deuteranoop).
 
-**Tip!** Onderstreep links in je body text.
+Enkele tips om niet alleen op kleur te vertrouwen:
 
-**Tip!** Voeg een icoon toe aan een foutmelding en maak de border van een textbox dikker.
+- Onderstreep links in je body text.
+- Voeg een icoon toe aan een foutmelding en maak de border van het formulier element dikker.
+- Gebruik vormen of patronen als extra onderscheidend element voor datavisualisatie.
 
-**Tip!** Gebruik vormen of patronen als extra onderscheidend element voor datavisualisatie.
+Er zijn verschillende vormen van kleurenblindheid. Je kunt testen hoe jouw ontwerp overkomt op iemand die kleurenblind is. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je de [Spectrum plugin voor Google Chrome](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb) kunnen gebruiken. Deze plugin geeft aan hoe jouw ontwerp per vorm van kleurenblindheid wordt ervaren.
 
-**Tip!** Er zijn verschillende vormen van kleurenblindheid.
+### Gebruik kleur met een doel.
 
-Je kunt testen hoe jouw ontwerp overkomt op iemand die kleurenblind is. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je de [Spectrum plugin voor Google Chrome](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb) kunnen gebruiken. Deze plugin geeft aan hoe jouw ontwerp per vorm van kleurenblindheid wordt ervaren.
+Als je kleuren gebruikt doe je dat met een bepaald doel, hierdoor hebben ze een betekenis. Het is belangrijk dat die kleur consistent hoort bij die betekenis. Bijvoorbeeld: rood wordt gebruikt om risico aan te geven, of een blokkade door een foutmelding. Gebruik rood dan niet wanneer je juist wél ergens op moet klikken, zoals een link of een verzendknop.
 
-## Betekenis
-
-Als je kleuren gebruikt voor een bepaalde betekenis, dan is het belangrijk dat die kleur consistent hoort bij die betekenis. Bijvoorbeeld: rood wordt gebruikt om risico aan te geven, of een blokkade door een foutmelding. Gebruik rood dan niet wanneer je juist wél ergens op moet klikken, zoals een link of een verzendknop.
-
-**Inzicht vanuit onderzoek**
+**Inzicht vanuit onderzoek.**
 Uit een onderzoek van Gemeente Utrecht blijkt dat laaggeletterden afschrikken van de kleur rood. Bijvoorbeeld als achtergrondkleur van een knop. De tekst wordt niet gelezen, de laaggeletterde acteert op kleur. Deze kleur wordt daarom niet langer als standaard interactie kleur toegepast.
 
-### Signaalkleuren
+#### Signaalkleuren
 
 Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een belangrijke rol hebben. Gebruik dan rood en groen niet als primaire kleur voor de knop en link componenten. Maar gebruik ze als signaalkleur voor bijvoorbeeld een fout- of succesmelding.
 
-### Interactie
+#### Interactie
 
 Het is verstandig om vanuit je kleurenpalet één kleur aan te houden voor interactie. Een blauwe tint geeft het sterkste signaal voor links, maar andere kleuren werken bijna net zo goed. Gebruik de gekozen kleur voor interactie daarna niet meer voor niet-interactieve elementen.
 
