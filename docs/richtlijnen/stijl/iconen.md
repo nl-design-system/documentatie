@@ -3,6 +3,7 @@ title: Iconen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Iconen
+sidebar_position: 3
 pagination_label: Iconen
 description: Richtlijnen voor iconen
 keywords:
@@ -34,7 +35,7 @@ Voor het 'Voorbeeld thema' maken we gebruik van een selectie uit de [Tabler icon
 
 ### Grid
 
-**Positioneer iconen binnen een vierkant grid.**
+#### Positioneer iconen binnen een vierkant grid.
 
 Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid.
 
@@ -46,7 +47,7 @@ Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door 
 
 ### Grootte
 
-**Stem de grootte van je iconen af op je lettergrootte.**
+#### Stem de grootte van je iconen af op je lettergrootte.
 
 Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om deze groottes af te stemmen met je lettergrootte.
 
@@ -62,7 +63,7 @@ Voor de grootte van functionele iconen de `nl.icon.functional.size` Design Token
 
 ### Lijndikte
 
-**Laat lijndikte meeschalen.**
+#### Laat lijndikte meeschalen.
 
 Een ‘outline’ iconenset is vaak opgebouwd uit lijnen (stroke). Bijvoorbeeld met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Over het algemeen is dit niet het gewenste gedrag omdat je zo verschillende gewichten in iconen kan krijgen.
 
@@ -70,7 +71,7 @@ Een ‘outline’ iconenset is vaak opgebouwd uit lijnen (stroke). Bijvoorbeeld 
 
 ### Kleur
 
-**Zorg ook bij iconen voor voldoende contrast.**
+#### Zorg ook bij iconen voor voldoende contrast.
 
 Iconen nemen vaak de kleur van de bijbehorende tekst over. Zodoende hebben ze, als de tekst het ook heeft, vanzelf voldoende contrast.
 
@@ -80,11 +81,11 @@ Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven da
 
 ![Rechter bovenhoek van een modal scherm rechts daarvan een waarschuwing. Sluit icoon van modal scherm is paars. Uitroepteken icoon in waarschuwing is donkergeel. De tekst van de waarschuwing is donkergrijs.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_eigen-kleuren.png)
 
-**Tip!** Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.
+Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.
 
 ![Vier meldingen. Waarschuwingsmelding met uitroepteken in driehoek icoon. Positieve melding met check icoon. Negatieve melding met uitroepteken in cirkel icoon. Informatieve melding met 'i' in cirkel icoon.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_niet-op-kleur-vertrouwen.png)
 
-**Tip!** Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van [`current color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword). Op die manier neemt het icoon de waarde over van de `color` die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
+Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van [`current color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword). Op die manier neemt het icoon de waarde over van de `color` die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
 
 ```css
 .icon {
@@ -92,31 +93,31 @@ Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven da
 }
 ```
 
-**Let op!** SVG gebruikt `fill`, niet `color` of `background-color`.
+Let wel; SVG gebruikt `fill`, niet `color` of `background-color`.
 
 ![Drie schermen met dezelfde inhoud (onder andere een button met pijl icoon) maar verschillende thema's. Light-mode, dark-mode en high-contrast-mode.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_high-contrast.png)
 
-**Tip!** Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.
+Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.
 
 ![Twee keer een lijstje van twee labels met een icoon ervoor. Links 'Geluid aan' en 'Geluid uit' waarbij een speaker icoon per label van vorm verschilt. Rechts 'Toon wachtwoord' en 'Verberg wachtwoord' waarbij een oog icoon van vorm verschilt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_status.png)
 
 ### Iconen kiezen
 
-**Respecteer conventies.**
+#### Respecteer conventies.
 
 Voor iconen, en met name functionele iconen, is het belangrijk om conventies te volgen. Zo zijn er bepaalde iconen die sterk aan concept gerelateerd zijn. Het is verstandig deze conventies te respecteren en deze iconen niet ineens voor een andere functie te gebruiken.
 
 ![Tien iconen op een rij. Vergrootglas, kruis, check, uitroepteken in driehoek, prullenbak, plus, min, play, pauze, stop.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_conventies.png)
 
-**Tip!** In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op 'Toevoegen' zoekt komt het 'Plus' icoon bovendrijven.
+In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op 'Toevoegen' zoekt komt het 'Plus' icoon bovendrijven.
 
 ![Screenshot van Figma. Plus icoon is geselecteerd. Aanvullende beschrijving toont de woorden 'Add' en 'Toevoegen'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_aliassen.png)
 
-**Tip!** Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.
+Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.
 
 ### SVG
 
-**Gebruik SVG voor iconen.**
+#### Gebruik SVG voor iconen.
 
 SVG staat voor Scalable Vector Graphics en is een ideaal bestandsformaat voor iconen.
 
@@ -129,7 +130,7 @@ Voordelen van SVG:
 
 ### Iconen als font
 
-**Gebruik geen font voor iconen.**
+#### Gebruik geen font voor iconen.
 
 In tegenstelling tot SVG worden iconen van een font toegewezen aan Unicode-punten en geïnterpreteerd als tekst. Dit kan tot toegankelijkheidsproblemen leiden. Zo kan iemand een eigen lettertype hebben geïnstalleerd. Mensen met dyslectie stellen soms hun eigen lettertypen in voor een betere leesbaarheid. In dat geval worden de iconen vervangen door 'ontbrekende tekens'-symbolen. Dat gebeurd trouwens ook als het font niet geladen wordt.
 
@@ -156,7 +157,7 @@ Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeke
 
 Verberg in deze gevallen de `<span>` met behulp van de class `visually-hidden` of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.
 
-**Let op!** Ook `aria-label` kan dit voor elkaar krijgen maar [`aria-label` kan voor vertaalproblemen zorgen](https://heydonworks.com/article/aria-label-is-a-xenophobe).
+Ook `aria-label` kan dit voor elkaar krijgen maar [`aria-label` kan voor vertaalproblemen zorgen](https://heydonworks.com/article/aria-label-is-a-xenophobe).
 
 ```css
 .visually-hidden {
@@ -198,7 +199,7 @@ Standaard zal de tooltip worden verborgen door middel van `display: none`. De to
 }
 ```
 
-**Let op!** Vertrouw niet op het `title` attribuut voor tooltips. Deze verschijnen niet bij focus en zijn daarom niet toegankelijk via het toetsenbord. Ze worden meestal ook niet voorgelezen door schermlezers als de instellingen hier niet op ingesteld zijn.
+Vertrouw niet op het `title` attribuut voor tooltips. Deze verschijnen niet bij focus en zijn daarom niet toegankelijk via het toetsenbord. Ze worden meestal ook niet voorgelezen door schermlezers als de instellingen hier niet op ingesteld zijn.
 
 Als de tekst van de tooltip buiten element staat, kun je het aan dit element koppelen met behulp van `aria-labelledby`. In het volgende voorbeeld delen `aria-labelledby` en het `id` van de tooltip de waarde `download-tooltip`. Teksten die zijn gekoppeld zijn via `aria-labelledby` worden wel vertaald.
 
