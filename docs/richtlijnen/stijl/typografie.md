@@ -3,6 +3,7 @@ title: Typografie
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Typografie
+sidebar_position: 1
 pagination_label: Typografie
 description: Richtlijnen voor typografie
 keywords:
@@ -20,21 +21,21 @@ Vier belangrijke typografische overwegingen voor tekst zijn [lettergrootte](#let
 
 ## Lettergrootte
 
-**Zorg ervoor dat letters groot genoeg zijn.**
+### Zorg ervoor dat letters groot genoeg zijn.
 
 Gebruik een lettergrootte ofwel `font-size` die groot genoeg is voor de ‘[body text](https://en.wikipedia.org/wiki/Body_text)’, zodat mensen comfortabel kunnen lezen. Gebruik als richtlijn minimaal een lettergrootte van 16px.
 
-**Tip!** Hoewel we `16px` aangeven als minimale `font-size` is het beter om géén gebruik te maken van ‘fixed-size units’ zoals `px`. Gebruik liever een relatieve waarde als `em` of `rem`. Waarom? Browsers bieden de mogelijkheid om de standaard `font-size` aan te passen. Handig voor iemand die slechtziend is. Wanneer je relatieve waardes gebruikt schaalt alles netjes mee. Maar een pixel blijft een pixel en zodoende verandert er niks.
+Hoewel we `16px` aangeven als minimale `font-size` is het beter om géén gebruik te maken van ‘fixed-size units’ zoals `px`. Gebruik liever een relatieve waarde als `em` of `rem`. Waarom? Browsers bieden de mogelijkheid om de standaard `font-size` aan te passen. Handig voor iemand die slechtziend is. Wanneer je relatieve waardes gebruikt schaalt alles netjes mee. Maar een pixel blijft een pixel en zodoende verandert er niks.
 
-**Let op!** Vanuit het NL Design System zelf kiezen we momenteel wél voor pixels. Dit komt omdat wij dezelfde design token waarde willen gebruiken in Figma en in code. Wij willen de CSS nog aanpassen om px automatisch om te zetten naar rem.
+Vanuit het NL Design System zelf kiezen we momenteel wél voor pixels. Dit komt omdat wij dezelfde design token waarde willen gebruiken in Figma en in code. Wij willen de CSS nog aanpassen om px automatisch om te zetten naar rem.
 
 <!-- TODO: ## Dit zou nog mogen worden aangescherpt. Misschien met een voorbeeld? -->
 
 ## Regelafstand
 
-**Zorg voor een comfortabele regelafstand ofwel `line-height`.**
+### Zorg voor een comfortabele regelafstand.
 
-Een goed afgestelde regelafstand ofwel `line-height` zorgt ervoor dat het oog op een vloeiende manier het einde van een regel kan koppelen aan het begin van de volgende.
+Een goed afgestelde regelafstand zorgt ervoor dat het oog op een vloeiende manier het einde van een regel kan koppelen aan het begin van de volgende. Regelafstand wordt ook wel `line-height` of ‘Leading’ genoemd.
 
 ![Paragrafen met verschillende regelaftanden. De eerste te kort, de tweede te lang, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_regelafstand.png)
 
@@ -42,83 +43,77 @@ Standaard gebruiken browsers een `line-height` van circa `1.2`, maar voor veel m
 
 We gebruiken geen unit notatie zoals `px` of `pt` voor `line-height`. Dit is met opzet. Op deze manier schaalt de `line-height` keurig mee met elke lettergrootte.
 
-**Tip!** Kleinere teksten hebben een ruimere line-height nodig. Grotere teksten zoals Kopteksten ofwel ‘Headings’ komen vaak weg met een compactere `line-height`.
+Kleinere teksten hebben een ruimere `line-height` nodig. Grotere teksten zoals Kopteksten ofwel ‘Headings’ komen vaak weg met een compactere `line-height`.
 
-**Tip!** Regelafstand wordt ook wel ‘Leading’ genoemd.
-
-**Tip!** In Figma is het niet mogelijk om `line-height` zonder unit notatie toe te passen. Daarom maken we binnen Figma gebruik van een percentage als unit (`1.5` = `150%`). Deze vertaling wordt gedaan op basis van het JSON bestand dankzij Style Dictionary.
+In Figma is het niet mogelijk om `line-height` zonder unit notatie toe te passen. Daarom maken we binnen Figma gebruik van een percentage als unit (`1.5` = `150%`). Deze vertaling wordt gedaan op basis van het JSON bestand dankzij Style Dictionary.
 
 <!-- TODO: ## Linken naar uitleg Style Dictionary -->
 
 ## Regellengte
 
-**Zorg voor een comfortabele regellengte ofwel ‘Line-length’.**
+### Zorg voor een comfortabele regellengte.
 
-Maak regels niet te lang of te kort. 45-75 karakters per regel is acceptabel. Kortere regels tekst zijn prima voor bijschriften en formulieren.
+Maak regels niet te lang of te kort. 45-75 karakters per regel is acceptabel. Kortere regels tekst zijn prima voor bijschriften en formulieren. Regellengte wordt ook wel ‘Line-length’ of ‘Measure’ genoemd.
 
 ![Paragrafen met verschillende regellengtes. De eerste te lang, de tweede te kort, de derde goed. Bij de eerste twee paragrafen staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_regellengte.png)
 
-**Tip!** Een waarde die binnen CSS vaak over het hoofd wordt gezien is `ch`. Door je paragrafen een `max-width` van `75ch` mee te geven zorg je ervoor dat regels nooit te lang worden.
+Een waarde die binnen CSS vaak over het hoofd wordt gezien is `ch`. Door je paragrafen een `max-width` van `75ch` mee te geven zorg je ervoor dat regels nooit te lang worden.
 
-**Tip!** Om te checken of je regellengte tussen de 45 en 75 karakters valt kun je deze tekst gebruiken. De eerste asterisk (\*) bevindt zich op positie 45 en de tweede op positie 75.
+Om te checken of je regellengte tussen de 45 en 75 karakters valt kun je deze tekst gebruiken. De eerste asterisk (\*) bevindt zich op positie 45 en de tweede op positie 75.
 
 ```
 Lorem ipsum dolor sit amet, consectetur adi * isicing elit, sed do eiusmo * tempor incididunt ut labore et dolore magna aliqua.
 ```
 
-**Tip!** Regellengte wordt ook wel ‘Measure’ genoemd.
-
 ## Lettertype
 
-**Kies een goed lettertype.**
+### Kies een goed lettertype.
 
 Kies een lettertype ofwel ‘Typeface’ dat de leesbaarheid van paragrafen ten goede komt. Houd bij het kiezen van een lettertype rekening met de volgende factoren:
 
-### Herkenbaarheid
+#### Herkenbaarheid
 
 Gebruik een sans-serif of serif lettertype met herkenbare lettervormen. Gebruik geen decoratief lettertype.
 
 ![Paragrafen met verschillende lettertypes. De eerste sans-serif, de tweede serif, de derde decoratief. Bij de derde paragraaf staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettertype.png)
 
-### x-hoogte
+#### x-hoogte
 
 x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over het algemeen zorgt een hoge x-hoogte voor een betere leesbaarheid. Maar de x-hoogte van het lettertype zou ook weer niet te hoog moeten zijn. Hierdoor zouden bijvoorbeeld de ‘h’ en de ‘n’ te veel op elkaar gaan lijken. Daarnaast zou de x-hoogte per letter consistent moeten zijn.
 
 ![Afgebeeld zijn de letters 'n' en 'h' met lettertype Futura, Roboto en Impact. Futura heeft een lage x-hoogte, Roboto gemiddeld tot hoog, Impact zeer hoog. Bij het Impact voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_x-hoogte.png)
 
-### Letter contrast
+#### Letter contrast
 
 Het letter contrast, het verschil in lijndikte van een letter, zou niet te hoog of te laag moeten zijn. Te veel contrast leidt af en door te weinig contrast gaan lettervormen op elkaar lijken.
 
 ![Afgebeeld is de letter 'o' met lettertypes Futura, Arial en Lao MN. Futura heeft een laag letter contrast, Arial heeft een gemiddeld letter contrast, Lao MN heeft een zeer hoog letter contrast. Bij het Lao MN voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-contrast.png)
 
-### Lettervormen
+#### Lettervormen
 
 Individuele lettervormen zouden genoeg van vorm moeten verschillen waardoor ze niet met elkaar verward kunnen worden. De hoofdletter I de letter l en het cijfer 1 zouden bijvoorbeeld onderling moeten verschillen. Dacht geldt ook voor de hoofdletter O en het cijfer 0.
 
 ![Afgebeeld zijn hoofdletter 'i' letter 'l' en cijfer '1' met lettertype Merriweather, Noto Sans en Inter. Merriweather en Noto Sans tonen een verschil in lettervorm. Bij Inter zijn hoofdletter 'i' letter 'l' gelijkwaardig in vorm. Bij het Inter voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettervormen.png)
 
-### Letter afstand
+#### Letter afstand
 
-Een combinatie van de letters 'r' en 'n' (rn)' zou een duidelijke ruimte moeten hebben om verwarring te voorkomen met letter 'm'.
-
-**Tip!** Hier kun je via `letter-spacing` invloed op uitoefenen. Momenteel maken we hier geen gebruik van binnen het Voorbeeld thema.
+Een combinatie van de letters 'r' en 'n' (rn)' zou een duidelijke ruimte moeten hebben om verwarring te voorkomen met letter 'm'. Hier kun je via `letter-spacing` invloed op uitoefenen. Momenteel maken we hier geen gebruik van binnen het Voorbeeld thema.
 
 <!-- TODO: ## Linken naar uitleg Voorbeeld thema -->
 
 ![De letters 'r' en 'n' zijn twee keer afgebeeld. Bij heeft eerste voorbeeld is er voldoende letter afstand. Bij het tweede voorbeeld is er te weinig letter afstand. Bij het tweede voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-afstand.png)
 
-### Tekens
+#### Tekens
 
 Het lettertype zou alle benodigde tekens moeten ondersteunen. Denk daarbij aan speciale tekens, andere talen en stijlen (bold en/of cursief). Maar ook ‘[tabular-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)’ waardoor cijfers even breed getoond kunnen worden in tabellen en lijsten. Dit oogt fraaier en de informatie is beter te scannen en vergelijken.
 
 ![Er staan twee keer twee duizendtallen boven elkaar. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van tabular-nums waardoor de de positie van de punt per duizendtal verschilt. Bij het tweede voorbeeld is er wel gebruik gemaakt van tabular-nums waardoor de punt bij beide duizendtallen op dezelfde plek staat.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_tabular-nums.png)
 
-**Tip!** Het hebben van een ‘slashed-zero’ is handig. Zo kan men het cijfer 0 en de letter O gemakkelijk onderscheiden. Handig wanneer men voor "toon wachtwoord" kiest of bij het lezen van een code (bijvoorbeeld IBAN).
+Het hebben van een ‘slashed-zero’ is handig. Zo kan men het cijfer 0 en de letter O gemakkelijk onderscheiden. Handig wanneer men voor "toon wachtwoord" kiest of bij het lezen van een code (bijvoorbeeld IBAN).
 
 ![Afgebeeld is twee keer het getal 67.890. Bij het eerste voorbeeld wordt er geen gebruik gemaakt van een slashed zero. Bij het twee voorbeeld wel.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_slashed-zero.png)
 
-### Vetgedrukt
+#### Vetgedrukt
 
 Gebruik alleen lettertypes die zijn ontworpen voor goede leesbaarheid wanneer letters vetgedrukt ofwel `bold` zijn. Als je met CSS een eigen font gebruikt, dan moet je ook `font-weight` noemen. Gebruik in je site alleen `font-weight` waarvoor je ook echt een webfont hebt.
 
@@ -139,7 +134,7 @@ h3 {
 }
 ```
 
-### Eigen `font-family` naam voor bold of italic variant
+#### Eigen `font-family` naam voor bold of italic variant
 
 Soms wordt een lettertype aangeleverd met CSS code waarin voor hetzelfde lettertype verschillende namen zijn gebruikt. Gebruik dan niet de naam zoals die is aangeleverd, maar pas de code aan zodat elke `@font-face` dezelfde `font-family` heeft.
 
@@ -195,13 +190,13 @@ dt {
 
 Op deze manier ontloop je het risico dat gebruikers minder leesbare teksten krijgen te zien door _faux italic_ of _faux bold_ letters, of nog erger: een vetgedrukt lettertype dat met _faux bold_ nog eens extra vetgedrukt wordt. Bovendien heb je zo duidelijkere code.
 
-### Variabele lettertypes
+#### Variabele lettertypes
 
 Variabele lettertypes zijn een relatief nieuw concept binnen de wereld van typografie. Bij een variabele lettertype heb je één lettertype bestand dat meerdere stilistische variaties aan kan. Gewicht, breedte, stijl, optische grootte, etc. kunnen worden gemanipuleerd of aangepast.
 
 Bij een variabele lettertype hoeft er maar één bestand geladen te worden. Dit kan de laadsnelheid van je website bevorderen.
 
-### Aantal lettertypes
+#### Aantal lettertypes
 
 Beperk hoeveel lettertypes en lettertype variaties je gebruikt. Één of twee is voldoende.
 
