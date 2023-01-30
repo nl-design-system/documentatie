@@ -15,7 +15,8 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-background-color: #f9f6f3;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Montserrat";
+  --ifm-code-border-radius: 0;
+  --ifm-font-family-base: "Fira Sans";
   --ifm-font-weight-semibold: 600;
   --ifm-button-border-radius: 0;
   --ifm-button-padding-vertical: 8px;
@@ -41,7 +42,7 @@
   --nlds-status-stable-background-color: #f99d1c;
   --nlds-status-stable-color: #00303d;
 
-  --nlds-font-family: "Montserrat";
+  --nlds-font-family: "Fira Sans";
   --nlds-alternative-font-family: "league_gothic";
 }
 
@@ -245,7 +246,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
   align-content: inherit;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .markdown > h2 {
@@ -265,6 +266,19 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   /* Add white foreground color and underline to links in hero and footer */
   color: white;
   text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: "Fira Code VF" !important;
+  vertical-align: 1%;
+  font-feature-settings: "cv01", "cv13", "cv20", "ss01", "ss02", "ss03";
+}
+code {
+  border-inline-start: 0;
+  border-inline-end: 0;
+  background-color: transparent !important;
+  border-width: 0;
 }
 
 p a,

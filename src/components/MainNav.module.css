@@ -10,7 +10,5 @@
 
   display: flex;
   gap: 40px;
-  font-family: montserrat;
   font-size: 16px;
-  --ifm-font-weight-semibold: 700;
 }
