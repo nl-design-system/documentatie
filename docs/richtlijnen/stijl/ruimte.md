@@ -3,6 +3,7 @@ title: Ruimte
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Ruimte
+sidebar_position: 4
 pagination_label: Ruimte
 description: Richtlijnen voor ruimte
 keywords:
@@ -18,7 +19,7 @@ Ruimte (‘Spacing’ in het Engels) helpt bij het organiseren van inhoud. Door 
 
 ## Spacing scale
 
-### Maak gebruik van een spacing scale
+### Maak gebruik van een spacing scale.
 
 Om ruimte consistent toe te passen is het verstandig om te werken met een vaste set aan waardes die oplopen in grootte. Een zogenoemde ‘spacing scale’. Een spacing scale start met kleine waardes. Hiermee kun je relaties creëren op detailniveau. Vervolgens loopt de spacing scale, vaak met steeds grotere spongen, op naar waardes die ingezet kunnen worden voor een ruimere opzet.
 
@@ -28,7 +29,7 @@ Ook bij het Voorbeeld thema maken we gebruik van een spacing scale. Sterker nog,
 
 ## Box model
 
-### Werk en denk vanuit het box model
+### Werk en denk vanuit het box model.
 
 De [spacing concepten](#spacing-concepten) van het NL Design System zijn gebouwd rond het fundamentele layout-principe van CSS, ook wel bekend als het ‘box model’.
 
@@ -36,31 +37,31 @@ Alle elementen van een webpagina staan in een box, een rechthoek die het element
 
 ![Box model structuur met een grotere box die de margin vertegenwoordigt rond een kleinere box die de content voorstelt met zijn padding en border.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_box-model.png)
 
-### Content
+#### Content
 
 Inhoud ofwel ‘Content’ is de ruimte voor tekst, een plaatje of andere elementen.
 
-### Padding
+#### Padding
 
 Padding is de ruimte tussen de content en de border. Zonder padding zou de border strak om de content zitten. Padding heeft dezelfde achtergrondkleur als de content.
 
-### Border
+#### Border
 
 De border is de rand om de content.
 
-### Margin
+#### Margin
 
 Marge ofwel ‘Margin’ is het deel buiten de border van de box. Margin zorgt voor ruimte tussen aangrenzende boxen. Margin is transparant, heeft geen eigen kleur. Margin draagt niet bij aan de breedte van een element.
 
 ## Spacing concepten
 
-### Maak gebruik van de spacing concepten
+### Maak gebruik van de spacing concepten.
 
 Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze ‘spacing concepten’ worden met behulp van Design Tokens toegepast op alle componenten en templates.
 
-**Let op!** Refereer alleen voor de ruimte binnen en tussen componenten naar de spacing Design Tokens (brand niveau). Gebruik deze Design Tokens niet voor de grootte van elementen.
+Let wel; refereer alleen voor de ruimte binnen en tussen componenten naar de spacing Design Tokens (brand niveau). Gebruik deze Design Tokens niet voor de grootte van elementen.
 
-### Inline
+#### Inline
 
 Inline tussenruimte is de ruimte binnen componenten, voor of na tekst.
 
@@ -73,7 +74,7 @@ Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creeeren v
 
 ![Spacing scale met verticaal 10 blokjes. In elk blokje staat de tekst 'label'. Links en rechts van de tekst staan lichtroze vlakken. De vlakken worden per blokje breeder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-inline.png)
 
-### Block
+#### Block
 
 Block tussenruimte is de ruimte binnen componenten, boven of onder tekst.
 
@@ -86,7 +87,7 @@ Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creeeren bo
 
 ![Spacing scale met horizontaal 10 blokjes. In elk blokje staat de tekst 'label'. Boven en onder de tekst staan roze vlakken. De vlakken worden per blokje hoger.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-block.png)
 
-### Text
+#### Text
 
 Text tussenruimte is de ruimte binnen componenten, tussen tekst en iconen.
 
@@ -94,7 +95,7 @@ Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creeeren tus
 
 ![Spacing scale met verticaal 10 blokjes. In elk blokje staat een kalender icoon en de tekst 'label'. Tussen het icoon en de tekst staan groene vlakken. De vlakken worden per blokje breeder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-text.png)
 
-### Column
+#### Column
 
 Column tussenruimte is de horizontale ruimte tussen componenten.
 
@@ -107,7 +108,7 @@ Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creeeren tussen c
 
 ![Spacing scale met verticaal 2 kolommen van 10 blokjes. In elk blokje staat de tekst 'label'. Per twee blokjes is er hotizontaal een lichtblauw vlak De vlakken worden per blokje breeder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-column.png)
 
-### Row
+#### Row
 
 Row tussenruimte is de verticale ruimte tussen componenten.
 
@@ -130,11 +131,11 @@ Met deze spacing concepten kun je alle componenten op een consistente manier van
 
 ### Relaties
 
-#### Gebruik ruimte om relaties te creëren tussen elementen
+#### Gebruik ruimte om relaties te creëren tussen elementen.
 
 Gebruik kleine afstanden om elementen samen te groeperen en grotere afstanden om ze te scheiden. Elementen die dicht bij elkaar staan lijken meer met elkaar verbonden te zijn dan dingen die verder uit elkaar staan.
 
-**Tip!** Dit is een van de [Gestalt principes](https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/) ookwel bekend als [Law of proximity](https://lawsofux.com/law-of-proximity/).
+Dit is een van de [Gestalt principes](https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/) ookwel bekend als [Law of proximity](https://lawsofux.com/law-of-proximity/).
 
 ![36 stippen. Door een ruimte wordt er een groepje van 24 en 12 stippen gemaakt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties.png)
 
@@ -148,15 +149,15 @@ De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de r
 
 ### Hiërarchie
 
-#### Gebruik ruimte om hiërarchie te creëren tussen elementen
+#### Gebruik ruimte om hiërarchie te creëren tussen elementen.
 
-Gebruik ruimte om belangrijke elementen extra attentiewaarde mee te geven. Elementen met meer ruimte hebben de neiging om belangrijker te ogen dan elementen die minder ruimte om zich heen hebben.
+Gebruik ruimte om belangrijke elementen extra attentiewaarde mee te geven. Elementen met meer ruimte hebben ogen belangrijker dan elementen die minder ruimte om zich heen hebben.
 
 ![Vier stippen in vier vlakken. Er is 1 vlak dat meer witruimte heeft waardoor deze meer opvalt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_hierarchie.png)
 
 ### Ruim of Compact
 
-#### Stem het gebruik van ruimte af op de functie en inhoud van de dienst
+#### Stem het gebruik van ruimte af op de functie en inhoud van de dienst.
 
 Veel ruimte werkt goed bij het lezen van langere teksten en het creëren van een bepaalde sfeer (branding). Compacte ruimte is geschikt voor het efficiënt uitvoeren van taken. Denk bijvoorbeeld aan pagina’s met veel data in tabellen.
 
@@ -166,7 +167,7 @@ Informatie die te compact wordt gepresenteerd kan moeilijk te verwerken zijn voo
 
 ### Ruimte tussen interactieve elementen
 
-#### Reserveer ruimte tussen interactieve elementen
+#### Reserveer ruimte tussen interactieve elementen.
 
 Hoewel WCAG wel een richtlijn heeft voor target size. Wordt er niks vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.
 
