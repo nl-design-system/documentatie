@@ -26,13 +26,13 @@ Hieronder leggen we uit welke keuzes we gemaakt hebben voor het Voorbeeld thema.
 
 ![Visuale weergave van het lettertypes Source Serif Pro en Source Sans Pro.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_typografie.png)
 
-In het Voorbeeld thema maken we gebruik van de lettertypes ‘Roboto Slab’ en ‘Fira Sans’. Beide lettertypes zijn Open Source te gebruiken en voldoen aan de richtlijnen die we voor [Typografie](../../richtlijnen/stijl/REAMDE.mdx) hebben beschreven. Daarnaast zijn beide lettertypes standaard onderdeel van Figma. Hierdoor hoef je ze niet apart te installeren om te starten met de NL Design System bibliotheek.
+In het Voorbeeld thema maken we gebruik van de lettertypes ‘Roboto Slab’ en ‘Fira Sans’. Beide lettertypes zijn Open Source te gebruiken en voldoen aan de richtlijnen die we voor [Typografie](../../richtlijnen/stijl/README.md) hebben beschreven. Daarnaast zijn beide lettertypes standaard onderdeel van Figma. Hierdoor hoef je ze niet apart te installeren om te starten met de NL Design System bibliotheek.
 
 ## Kleuren
 
 ![Visuale weergave van het kleurenpalet.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_kleuren.png)
 
-In het Voorbeeld thema hebben we op [‘Brand token’ niveau](../../design-tokens/README.mdx) een zeer uitgebreid kleurenpalet opgenomen. Dit kleurenpalet bestaat uit 9 hoofdkleuren: Violet, Grijs, Roze, Rood, Oranje, Geel, Groen, Zee-groen en Blauw. En is aangevuld met zwart, wit en een aantal transparante opties. Het biedt ons veel opties met betrekking tot feedback componenten en bijvoorbeeld een dark-mode thema.
+In het Voorbeeld thema hebben we op [‘Brand token’ niveau](../../meedoen/design-tokens/README.mdx) een zeer uitgebreid kleurenpalet opgenomen. Dit kleurenpalet bestaat uit 9 hoofdkleuren: Violet, Grijs, Roze, Rood, Oranje, Geel, Groen, Zee-groen en Blauw. En is aangevuld met zwart, wit en een aantal transparante opties. Het biedt ons veel opties met betrekking tot feedback componenten en bijvoorbeeld een dark-mode thema.
 
 ## Iconen
 
