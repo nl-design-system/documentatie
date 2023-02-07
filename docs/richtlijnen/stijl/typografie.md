@@ -308,4 +308,4 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 
 ## Vragen
 
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](https://www.nldesignsystem.nl/meedoen/contact/).
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/contact.mdx).
