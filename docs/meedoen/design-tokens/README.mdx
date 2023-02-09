@@ -1,8 +1,8 @@
 ---
-title: Design Tokens
+title: Design tokens
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Design Tokens
+sidebar_label: Design tokens
 sidebar_position: 2
 pagination_label: Introductie
 description: NL Design System introductie
@@ -18,19 +18,92 @@ import VimeoPlayer from "react-player/vimeo";
 
 # Design tokens
 
-Design tokens zijn een manier om een duidelijke naam te geven aan keuzes van het visueel ontwerp van een website of huisstijl, zodat je ontwerp als data beheerd en gedeeld kan worden.
+NL Design System wil de beste componenten uit de community herbruikbaar maken voor de hele overheid. Daarom hebben de componenten van het NL Design System van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van ‘design tokens’.
 
-NL Design System wil de beste componenten uit de community herbruikbaar maken voor heel de overheid. Jouw huisstijl pas je toe op een bestaande component door het te combineren met een bestand met jouw design tokens: dat noemen wij een "thema".
+Design tokens zijn ontwerpkeuzes die je vastlegt als data. Denk bijvoorbeeld aan een kleur of lettertype.
 
-Kleuren, afmetingen, afstanden, tekstopmaak (enzovoorts) bepaal je op een centrale plek, zodat alle teams die data gaan gebruiken om consistent je ontwerpkeuzes terug te zien in jouw producten en diensten.
+**Visueel voorbeeld**
 
-We willen een standaard dataformaat ontwikkelen voor het ontwerp van de meestgebruikte componenten, door een verzameling van duidelijke en voorspelbare namen voor design tokens te hebben. NL Design System componenten moeten deze standaard design tokens gebruiken, zodat het component herbruikbaar is voor alle verschillende thema's.
+![Design tokens visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'red.500'. Font family naam Oswald met een pijl naar een design token blokje met het label 'primary.font-family'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_example.png)
+
+**Code voorbeeld**
+
+```json
+{
+  "voorbeeld": {
+    "color": {
+      "red": {
+        "500": {
+          "value": "#FA5757"
+        }
+      }
+    },
+    "typography": {
+      "font-family": {
+        "primary": {
+          "value": "Oswald"
+        }
+      }
+    }
+  }
+}
+```
+
+Kleuren, afmetingen, afstanden, tekstopmaak (enzovoorts) bepaal je op een centrale plek. Zo kunnen alle teams die data gebruiken om de ontwerpkeuzes consistent toe te passen op diverse producten en diensten van één organisatie.
 
 Elke organisatie maakt een eigen bestand met een "thema" voor de huisstijl, waarin uiteindelijk ontwerpkeuzes staan voor enkele honderden design tokens. Componenten uit de NL Design System community kun je dus gelijk gebruiken, je hoeft alleen maar de thema te maken!
 
-## Design tokens in JSON
+![Drie dezelfde interfaces. In het midden staan een interface zonder stijling. Links en rechts staan dezelfde interfaces maar ieder met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
 
-Design tokens hebben een naam en een ontwerpkeuze, bijvoorbeeld `link.color` en `blue`. Voor NL Design System maken we afspraken voor duidelijke en voorspelbare namen.
+Deze data beheer je vanuit een platform onafhankelijk bestand. Bij het NL Design System hebben we gekozen voor JSON. We gebruiken Style Dictionary](https://amzn.github.io/style-dictionary/) om het JSON bestand te vertalen. Hierdoor zijn de design tokens door diverse technieken en tools te gebruiken. Denk aan CSS, React, Angular maar ook Figma.
+
+![JSON bestand met vertakkingen naar Figma, CSS, Angular, React en Vue.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_json.png)
+
+## Thema's
+
+Iedere organisatie heeft zijn eigen huisstijl. Die huisstijl leg je vast in je eigen JSON file. Zo creëer je een eigen thema. En naast je standaard ‘light-mode’ thema kun je ook andere thema’s creëren. Denk bijvoorbeeld aan een ‘dark-mode’ of ‘high-contrast’ mode.
+
+![Drie dezelfde interfaces. De eerste interface heeft een licht thema. De tweede interface heeft een donker thema. De derde interface heeft een thema voor hoog contrast.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_themes.png)
+
+Bekijk bestaande thema's bij [NL Design System Themes Storybook](https://nl-design-system.github.io/themes/).
+
+## Design token niveaus
+
+Bij het NL Design System verdelen we design tokens over drie niveaus.
+
+### Brand tokens
+
+Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvoorbeeld de kleur rood, groen of blauw of een serif dan wel sans-serif font-family. Dat kan een breed scala aan opties waaruit je kan kiezen voor de andere niveaus. Kortom geen 50 tinten grijs meer. In de naamgeving van Brand tokens ben je helemaal vrij dus kun je altijd blijven aansluiten bij naamgeving die binnen je organisatie al staat.
+
+![Eerste design token niveau visueel weergegeven als blokje. Een hex kleurcode met een een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_brand.png)
+
+<!-- TODO: Linken naar de Brand tokens van het voorbeeld thema -->
+
+[Bekijk de richtlijnen voor stijl](../../richtlijnen/stijl)
+
+### Common tokens
+
+Dit zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek component gebonden zijn. Ze halen hun waarde uit de Brand tokens en hebben een semantische betekenis. Denk aan de font-familie voor kopteksten maar ook aan kleuren voor feedback of interactie. Die wil je consistent toepassen binnen je interface. Wat weer bijdraagt aan de toegankelijkheids richtlijn: [Consistent Identificeren](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html). Die beschrijft dat componenten met dezelfde functionaliteit zich over verschillende pagina’s op dezelfde manier dienen te gedragen.
+
+![Twee design tokens niveaus visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'. Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'feedback.invalid.color'. Voor dit blokje staat het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_common.png)
+
+<!-- TODO: Linken naar de Common tokens van het voorbeeld thema -->
+
+[Bekijk de richtlijnen voor stijl](../../richtlijnen/stijl)
+
+### Component tokens
+
+Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde vanuit het Common niveau maar soms ook direct vanuit de Brand token niveau. Denk aan de achtergrondkleur van een button of de border kleur van een textbox bij een foutmelding.
+
+![Drie design tokens niveaus visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'. Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'feedback.invalid.color'. Voor dit blokje staat het label 'Common'.Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'textbox.invalid.border-color'. Voor dit blokje staat het label 'Component'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_component.png)
+
+<!-- TODO: Linken naar de Component tokens van het voorbeeld thema -->
+
+[Bekijk het componenten overzicht](../../componenten)
+
+## Naamgeving
+
+Design tokens zijn een ontwerpkeuze en bestaan uit een naam met een waarde. Bijvoorbeeld: `link.color` en `blue`. Per thema kan de waarde veranderen, maar de naam blijft hetzelfde. Voor NL Design System maken we daarom afspraken voor duidelijke en voorspelbare namen. NL Design System componenten moeten deze standaard design tokens gebruiken, zodat het component herbruikbaar is voor alle verschillende thema's.
 
 De naam van een design token voor componenten bestaat uit lagen, in een afgesproken volgorde:
 
@@ -39,9 +112,9 @@ De naam van een design token voor componenten bestaat uit lagen, in een afgespro
 3. De naam van een onderdeel van de component, voor de situatie dat het duidelijker is om het onderdeel te noemen. Dit is optioneel, en het advies is: houdt het simpel wanneer mogelijk.
 4. De naam van de status van een component. Bijvoorbeeld: `disabled` of `visited`. Optioneel.
 5. De naam van de interactie met het component. Bijvoorbeeld: `hover` of `focus`. Optioneel.
-6. De naam van de visuele eigenschap waarvoor je een ontwerpkeuze kan maken. Bijvoorbeeld: `color` of `font-weight`. Dit is verplicht als de laatste laag, zodat je in Design Tokens JSON een andere ontwerpkeuze kan hebben voor elke status en elke interactie.
+6. De naam van de visuele eigenschap waarvoor je een ontwerpkeuze kan maken. Bijvoorbeeld: `color` of `font-weight`. Dit is verplicht als de laatste laag, zodat je in design tokens JSON een andere ontwerpkeuze kan hebben voor elke status en elke interactie.
 
-Dat ziet er als Design Tokens JSON bijvoorbeeld zo uit:
+Dat ziet er als design tokens JSON bijvoorbeeld zo uit:
 
 ```json
 {
@@ -79,7 +152,7 @@ Datzelfde geldt voor de staat en de interactie-staat van een component: vaak hee
 
 Let op dat je niet een herkenbare term gebruikt maar met een andere betekenis dan webstandaarden: een link naar de huidige pagina is bijvoorbeeld `current` en niet `active`. Een ingedrukte link is `active`.
 
-## Design tokens in front-end
+## Design tokens in CSS
 
 Front-end developers gebruiken design tokens als _CSS variable_, bijvoorbeeld:
 
@@ -95,9 +168,15 @@ Front-end developers gebruiken design tokens als _CSS variable_, bijvoorbeeld:
 }
 ```
 
-We gebruiken JSON bestanden met design tokens als bron. We maken automatisch het CSS-bestand met het thema, daarvoor zijn verschillende tools die Design Tokens JSON vertalen naar onder andere CSS. Wij gebruiken nu _Style Dictionary_ om de design tokens te publiceren als CSS, SCSS, JSON, JavaScript, enzovoorts. Je kunt in de map [`proprietary/design-tokens/` van onze example repository](https://github.com/nl-design-system/example/tree/main/proprietary/design-tokens) zien hoe je Style Dictionary gebruikt.
+We gebruiken JSON bestanden met design tokens als bron. We maken automatisch het CSS-bestand met het thema, daarvoor zijn verschillende tools die design tokens JSON vertalen naar onder andere CSS. Wij gebruiken nu _Style Dictionary_ om de design tokens te publiceren als CSS, SCSS, JSON, JavaScript, enzovoorts. Je kunt in de map [`proprietary/design-tokens/` van onze example repository](https://github.com/nl-design-system/example/tree/main/proprietary/design-tokens) zien hoe je Style Dictionary gebruikt.
 
 Van organisaties die een thema onderhouden kun je een npm-pakketje installeren met daarin al deze bestandsformaten, zodat je makkelijk toegang hebt tot de laatste versie die werkt in jouw project. Ook als je bijvoorbeeld een website met PHP gebruikt, is op dit moment het npm-pakketje waarschijnlijk de handigste manier om de CSS te installeren. [NL Design System Themes Storybook](https://nl-design-system.github.io/themes/) is een goede plek om te vinden welke thema's er al zijn.
+
+## Gebruik in Figma
+
+Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen ondersteuning voor design tokens. Daarom maken we gebruik van de [Token Studio](https://tokens.studio/).
+
+[Meer informatie over Figma structuur en gebruik](../als-designer/figma-structuur.mdx)
 
 ## Huisstijl
 
@@ -178,8 +257,25 @@ We hebben twee opnames van de onboarding-week 2021 waarin we vertellen over desi
 
 <VimeoPlayer url="https://vimeo.com/649672645" controls />
 
-## Links
+## Meer informatie
 
-- [Style Dictionary](https://amzn.github.io/style-dictionary/)
-- [Design Tokens specificatie (concept)](https://design-tokens.github.io/community-group/format/)
-- [NL Design System Themes Storybook](https://nl-design-system.github.io/themes/)
+### Links
+
+[Style Dictionary](https://amzn.github.io/style-dictionary/)<br/>
+Het systeem dat we gebruiken om design tokens te verhalen naar een taal die voor elk platform.
+
+[Design tokens specificatie (concept)](https://design-tokens.github.io/community-group/format/)<br/>
+Specificatie gepubliceerd door de Design tokens Community Group.
+
+[NL Design System Themes Storybook](https://nl-design-system.github.io/themes/)<br/>
+Storybook omgeving om te laten zien hoe design tokens verschillende componenten kunnen stijlen.
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/contact.mdx).
