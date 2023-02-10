@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   max-height: 200px;
+  align-items: baseline;
 }
 
 .core-team__avatar {
