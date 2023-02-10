@@ -2,12 +2,13 @@ import React from 'react';
 import clsx from 'clsx';
 import style from './CoreTeam.module.css';
 
-export const Angela = () => (
+export const Peter = () => (
   <img
-    alt="Avatar van Angela"
+    alt="Avatar van Peter"
     className={clsx(style['core-team__avatar'])}
-    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_angela.png"
-    title="Angela - Project manager"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam-peter-mvp.svg"
+    title="Peter - Projectleider"
+    style={{ maxHeight: '210px', height: '210px' }}
   />
 );
 
@@ -41,7 +42,7 @@ export const Jeffrey = () => (
 export const CoreTeam = () => {
   return (
     <div className={clsx(style['core-team'])}>
-      <Angela />
+      <Peter />
       <Robbert />
       <Yolijn />
       <Jeffrey />
