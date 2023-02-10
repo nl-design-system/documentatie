@@ -49,19 +49,19 @@ Design tokens zijn ontwerpkeuzes die je vastlegt als data. Denk bijvoorbeeld aan
 }
 ```
 
-Kleuren, afmetingen, afstanden, tekstopmaak (enzovoorts) bepaal je op een centrale plek. Zo kunnen alle teams die data gebruiken om de ontwerpkeuzes consistent toe te passen op diverse producten en diensten van één organisatie.
+Kleuren, afmetingen, afstanden, tekstopmaak, et cetera leg je op een centrale plek vast. Zo kunnen alle teams die data gebruiken om de ontwerpkeuzes consistent toe te passen op diverse producten en diensten van één organisatie.
 
-Elke organisatie maakt een eigen bestand met een "thema" voor de huisstijl, waarin uiteindelijk ontwerpkeuzes staan voor enkele honderden design tokens. Componenten uit de NL Design System community kun je dus gelijk gebruiken, je hoeft alleen maar de thema te maken!
-
-![Drie dezelfde interfaces. In het midden staan een interface zonder stijling. Links en rechts staan dezelfde interfaces maar ieder met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
-
-Deze data beheer je vanuit een platform onafhankelijk bestand. Bij het NL Design System hebben we gekozen voor JSON. We gebruiken [Style Dictionary](https://amzn.github.io/style-dictionary/) om het JSON bestand te vertalen. Hierdoor zijn de design tokens door diverse technieken en tools te gebruiken. Denk aan CSS, React, Angular maar ook Figma.
+Deze data beheer je vanuit een platform onafhankelijk bestand. Bij het NL Design System hebben we gekozen voor JSON. We gebruiken [Style Dictionary](https://amzn.github.io/style-dictionary/) om het JSON bestand te vertalen. Hierdoor zijn de design tokens door diverse technieken en tools te gebruiken. Denk aan CSS, React, Angular, maar ook Figma.
 
 ![JSON bestand met vertakkingen naar Figma, CSS, Angular, React en Vue.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_json.png)
 
 ## Thema's
 
-Iedere organisatie heeft zijn eigen huisstijl. Die huisstijl leg je vast in je eigen JSON file. Zo creëer je een eigen thema. En naast je standaard ‘light-mode’ thema kun je ook andere thema’s creëren. Denk bijvoorbeeld aan een ‘dark-mode’ of ‘high-contrast’ mode.
+Elke organisatie maakt een eigen bestand met een 'thema' voor de huisstijl. Daarin staan uiteindelijk ontwerpkeuzes voor honderden design tokens. Componenten uit de NL Design System community kun je dus gelijk gebruiken, je hoeft alleen maar de thema te maken!
+
+![Drie dezelfde interfaces. In het midden staan een interface zonder stijling. Links en rechts staan dezelfde interfaces maar ieder met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
+
+En naast een standaard ‘light-mode’ thema kun je ook andere thema’s creëren. Denk bijvoorbeeld aan een ‘dark-mode’ of ‘high-contrast’ mode.
 
 ![Drie dezelfde interfaces. De eerste interface heeft een licht thema. De tweede interface heeft een donker thema. De derde interface heeft een thema voor hoog contrast.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_themes.png)
 
@@ -73,7 +73,7 @@ Bij het NL Design System verdelen we design tokens over drie niveaus.
 
 ### Brand tokens
 
-Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvoorbeeld de kleur rood, groen of blauw of een serif dan wel sans-serif font-family. Dat kan een breed scala aan opties waaruit je kan kiezen voor de andere niveaus. Kortom geen 50 tinten grijs meer. In de naamgeving van Brand tokens ben je helemaal vrij dus kun je altijd blijven aansluiten bij naamgeving die binnen je organisatie al staat.
+Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvoorbeeld de kleur rood, groen of blauw of een serif dan wel sans-serif font-family. Een breed scala aan opties waaruit je kunt kiezen voor de andere niveaus. Kortom, geen 50 tinten grijs meer. In de naamgeving van Brand tokens ben je helemaal vrij. Zo kun je aansluiten bij naamgeving die binnen je organisatie al bestaat.
 
 ![Eerste design token niveau visueel weergegeven als blokje. Een hex kleurcode met een een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_brand.png)
 
@@ -103,7 +103,7 @@ Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde
 
 ## Naamgeving
 
-Design tokens zijn een ontwerpkeuze en bestaan uit een naam met een waarde. Bijvoorbeeld: `link.color` en `blue`. Per thema kan de waarde veranderen, maar de naam blijft hetzelfde. Voor NL Design System maken we daarom afspraken voor duidelijke en voorspelbare namen. NL Design System componenten moeten deze standaard design tokens gebruiken, zodat het component herbruikbaar is voor alle verschillende thema's.
+Design tokens bestaan uit een 'naam' met een 'waarde'. Bijvoorbeeld: `link.color` en `blue`. Per thema kan de waarde veranderen, maar de naam blijft hetzelfde. Voor NL Design System maken we daarom afspraken voor duidelijke en voorspelbare namen. NL Design System componenten moeten deze standaard design tokens gebruiken, zodat het component herbruikbaar is voor alle verschillende thema's.
 
 De naam van een design token voor componenten bestaat uit lagen, in een afgesproken volgorde:
 
