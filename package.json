@@ -4,7 +4,8 @@
   "private": true,
   "license": "EUPL-1.2",
   "workspaces": [
-    "./docs/"
+    "./docs/",
+    "./packages/*"
   ],
   "scripts": {
     "docusaurus": "docusaurus",
