@@ -15,7 +15,7 @@ export const Robbert = () => (
   <img
     alt="Avatar van Robbert"
     className={clsx(style['core-team__avatar'])}
-    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_robbert.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_robbert.svg"
     title="Robbert - Techlead"
   />
 );
@@ -24,8 +24,9 @@ export const Yolijn = () => (
   <img
     alt="Avatar van Yolijn"
     className={clsx(style['core-team__avatar'])}
-    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_yolijn.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_yolijn.svg"
     title="Yolijn - Developer"
+    style={{ maxHeight: '190px' }}
   />
 );
 
@@ -33,7 +34,7 @@ export const Jeffrey = () => (
   <img
     alt="Avatar van Jeffrey"
     className={clsx(style['core-team__avatar'])}
-    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_jeffrey.png"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_jeffrey.svg"
     title="Jeffrey - UX Designer"
   />
 );
