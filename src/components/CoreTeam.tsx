@@ -6,9 +6,8 @@ export const Peter = () => (
   <img
     alt="Avatar van Peter"
     className={clsx(style['core-team__avatar'])}
-    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam-peter-mvp.svg"
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam-peter.png"
     title="Peter - Projectleider"
-    style={{ maxHeight: '210px', height: '210px' }}
   />
 );
 
@@ -39,6 +38,15 @@ export const Jeffrey = () => (
   />
 );
 
+export const Andrea = () => (
+  <img
+    alt="Avatar van Andrea"
+    className={clsx(style['core-team__avatar'])}
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_andrea-mvp.svg"
+    title="Andrea - Developer"
+  />
+);
+
 export const CoreTeam = () => {
   return (
     <div className={clsx(style['core-team'])}>
@@ -46,6 +54,7 @@ export const CoreTeam = () => {
       <Robbert />
       <Yolijn />
       <Jeffrey />
+      <Andrea />
     </div>
   );
 };
