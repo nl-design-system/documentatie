@@ -24,7 +24,7 @@ Design tokens zijn ontwerpkeuzes die je vastlegt als data. Denk bijvoorbeeld aan
 
 **Visueel voorbeeld**
 
-![Design tokens visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'red.500'. Font family naam Oswald met een pijl naar een design token blokje met het label 'primary.font-family'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_example.png)
+![De kleur #FA5757 verwijst naar 'color.red.500', het lettertype Oswald verwijst naar 'typography.primary.font-family'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_example.png)
 
 **Code voorbeeld**
 
@@ -59,11 +59,11 @@ Deze data beheer je vanuit een platform onafhankelijk bestand. Bij het NL Design
 
 Elke organisatie maakt een eigen bestand met een 'thema' voor de huisstijl. Daarin staan uiteindelijk ontwerpkeuzes voor honderden design tokens. Componenten uit de NL Design System community kun je dus gelijk gebruiken, je hoeft alleen maar de thema te maken!
 
-![Drie dezelfde interfaces. In het midden staan een interface zonder stijling. Links en rechts staan dezelfde interfaces maar ieder met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
+![Drie dezelfde interfaces. Één zonder stijling. Twee met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
 
 En naast een standaard ‘light-mode’ thema kun je ook andere thema’s creëren. Denk bijvoorbeeld aan een ‘dark-mode’ of ‘high-contrast’ mode.
 
-![Drie dezelfde interfaces. De eerste interface heeft een licht thema. De tweede interface heeft een donker thema. De derde interface heeft een thema voor hoog contrast.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_themes.png)
+![Drie dezelfde interfaces. Één met een licht thema. Één met een donker thema. Één met een thema voor hoog contrast.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_themes.png)
 
 Bekijk bestaande thema's bij [NL Design System Themes Storybook](https://nl-design-system.github.io/themes/).
 
@@ -75,7 +75,7 @@ Bij het NL Design System verdelen we design tokens over drie niveaus.
 
 Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvoorbeeld de kleur rood, groen of blauw of een serif dan wel sans-serif font-family. Een breed scala aan opties waaruit je kunt kiezen voor de andere niveaus. Kortom, geen 50 tinten grijs meer. In de naamgeving van Brand tokens ben je helemaal vrij. Zo kun je aansluiten bij naamgeving die binnen je organisatie al bestaat.
 
-![Eerste design token niveau visueel weergegeven als blokje. Een hex kleurcode met een een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_brand.png)
+![De kleur #FA5757 verwijst naar 'color.red.500' met het label 'Brand'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_brand.png)
 
 <!-- TODO: Linken naar de Brand tokens van het voorbeeld thema -->
 
@@ -85,7 +85,7 @@ Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvo
 
 Dit zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek component gebonden zijn. Ze halen hun waarde uit de Brand tokens en hebben een semantische betekenis. Denk aan de font-familie voor kopteksten maar ook aan kleuren voor feedback of interactie. Die wil je consistent toepassen binnen je interface. Wat weer bijdraagt aan de toegankelijkheids richtlijn: [Consistent Identificeren](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html). Die beschrijft dat componenten met dezelfde functionaliteit zich over verschillende pagina’s op dezelfde manier dienen te gedragen.
 
-![Twee design tokens niveaus visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'. Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'feedback.invalid.color'. Voor dit blokje staat het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_common.png)
+![De kleur #FA5757 verwijst naar 'color.red.500' met het label 'Brand'. 'color.red.500' verwijst naar 'feedback.invalid.color' met het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_common.png)
 
 <!-- TODO: Linken naar de Common tokens van het voorbeeld thema -->
 
@@ -95,7 +95,7 @@ Dit zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek co
 
 Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde vanuit het Common niveau maar soms ook direct vanuit de Brand token niveau. Denk aan de achtergrondkleur van een button of de border kleur van een textbox bij een foutmelding.
 
-![Drie design tokens niveaus visueel weergegeven als blokjes. Een hex kleurcode met een neerwaartse pijl wijzend naar een design token blokje met het label 'color.red.500'. Voor dit blokje staat het label 'Brand'. Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'feedback.invalid.color'. Voor dit blokje staat het label 'Common'.Daaronder een neerwaartse pijl wijzend naar een design token blokje met het label 'textbox.invalid.border-color'. Voor dit blokje staat het label 'Component'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_component.png)
+![De kleur #FA5757 verwijst naar 'color.red.500' met het label 'Brand'. 'color.red.500' verwijst naar 'feedback.invalid.color' met het label 'Common'. 'feedback.invalid.color' verwijst naar 'textbox.invalid.border-color' met het label 'Component'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_component.png)
 
 <!-- TODO: Linken naar de Component tokens van het voorbeeld thema -->
 
