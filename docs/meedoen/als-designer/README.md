@@ -38,15 +38,15 @@ Of je nu Sketch, Adobe XD, Framer, Paint gebruikt, er is geen afhankelijkheid al
 
 [Meer informatie over Figma structuur en gebruik](figma-structuur.mdx)
 
-## Design Tokens
+## Design tokens
 
-De componenten van het NL Design System hebben van zichzelf geen specifieke huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van ‘Design Tokens’.
+De componenten van het NL Design System hebben van zichzelf geen specifieke huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van ‘Design tokens’.
 
-[Meer informatie over Design Tokens](../design-tokens/README.mdx)
+[Meer informatie over design tokens](../design-tokens/README.mdx)
 
-### Design Tokens en Figma
+### Design tokens en Figma
 
-Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen ondersteuning voor Design Tokens. Daarom maken we gebruik van de [Token Studio](https://tokens.studio/).
+Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen ondersteuning voor design tokens. Daarom maken we gebruik van de [Token Studio](https://tokens.studio/).
 
 [Meer informatie over Figma structuur en gebruik](figma-structuur.mdx)
 
@@ -60,7 +60,7 @@ Zoals aangegeven kan iedere organisatie zijn eigen huisstijl toepassen. En toch 
 
 #### Voorbeeld thema
 
-Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van Design Tokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
+Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design dokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
 
 ### Componenten
 
@@ -72,7 +72,7 @@ Op componenten passen we het estafettemodel toe.
 
 [Meer informatie over het estafettemodel](../estafettemodel.mdx)
 
-Componenten met de status 'Candidate' en 'Hall of Fame' hebben documentatie rondom richtlijnen en zijn onderdeel van de Figma bibliotheek.
+Op dit moment zijn we druk bezig om de NL Design System Figma Bibliotheek te vullen met 'Community' componenten. Geleidelijk aan zullen deze de status 'Candidate' en 'Hall of Fame' gaan krijgen.
 
 [Meer informatie over Figma structuur en gebruik](figma-structuur.mdx)
 
