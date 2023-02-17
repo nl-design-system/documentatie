@@ -272,18 +272,24 @@ code,
 pre {
   font-family: "Fira Code VF" !important;
   vertical-align: 1%;
-  font-feature-settings: "cv01", "cv13", "cv20", "ss01", "ss02", "ss03";
+  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
 }
 code {
   border-inline-start: 0;
   border-inline-end: 0;
   background-color: transparent !important;
   border-width: 0;
+  padding: 0;
+}
+
+article {
+  max-inline-size: 80ch;
 }
 
 p a,
 li a {
   text-decoration: underline; /* Add underline to links in running paragraph text and lists */
+  text-underline-offset: 0.2em;
 }
 
 [class^="homepage-hero__description"] p a {
