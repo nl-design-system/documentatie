@@ -59,7 +59,7 @@ Marge ofwel ‘Margin’ is het deel buiten de border van de box. Margin zorgt v
 
 Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze ‘spacing concepten’ worden met behulp van Design Tokens toegepast op alle componenten en templates.
 
-Let wel; refereer alleen voor de ruimte binnen en tussen componenten naar de spacing Design Tokens (brand niveau). Gebruik deze Design Tokens niet voor de grootte van elementen.
+Let wel; gebruik 'Spacing' design tokens enkel voor ruimte binnen en tussen componenten. Gebruik 'Sizing' design tokens voor de grootte van elementen.
 
 #### Inline
 
