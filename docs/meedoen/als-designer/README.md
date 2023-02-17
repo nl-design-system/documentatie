@@ -32,6 +32,12 @@ Er is een vast ‘Kernteam’ dat werkt aan het NL Design System. Het kernteam w
 
 [Meer informatie over het Kernteam](../../project/contact.mdx)
 
+### De community
+
+Binnen de community zijn designers bezig met verschillende projecten. Door als designers samen te werken kunnen we informatie en inzichten met elkaar uitwisselen. Zo leren we elke keer iets bij.
+
+[Meer informatie over de community voor designers](community.md)
+
 ## Ontwerpprogramma’s
 
 Of je nu Sketch, Adobe XD, Framer, Paint gebruikt, er is geen afhankelijkheid als het gaat om ontwerpprogramma. Wel hebben het kernteam, en reeds aangesloten organisaties een voorkeur voor Figma.
