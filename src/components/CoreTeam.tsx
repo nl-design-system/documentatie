@@ -55,7 +55,6 @@ export const CoreTeam = () => {
       <Robbert />
       <Yolijn />
       <Jeffrey />
-      <Andrea />
     </div>
   );
 };
