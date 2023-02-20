@@ -1,0 +1,50 @@
+.nlds-main-nav {
+  box-sizing: border-box;
+  background-color: var(--nlds-main-nav-background-color);
+  color: var(--nlds-main-nav-color);
+  display: flex;
+  height: var(--nlds-main-nav-height);
+  padding-inline-start: var(--nlds-main-nav-padding-inline-start, var(--nlds-main-nav-padding-inline, 0));
+  padding-inline-end: var(--nlds-main-nav-padding-inline-end, var(--nlds-main-nav-padding-inline, 0));
+  padding-block-start: var(--nlds-main-nav-padding-block-start, var(--nlds-main-nav-padding-block, 0));
+  padding-block-end: var(--nlds-main-nav-padding-block-end, var(--nlds-main-nav-padding-block, 0));
+  justify-content: space-between;
+  width: 100%;
+  font-weight: var(--nlds-main-nav-font-weight);
+}
+.nlds-main-nav__items {
+  display: flex;
+  align-items: center;
+  gap: var(--nlds-main-nav-items-gap);
+  line-height: 32px;
+}
+
+a.nlds-main-nav__item {
+  color: var(--nlds-main-nav-color);
+  position: relative;
+}
+
+.nlds-main-nav__item--hover,
+.nlds-main-nav__item:hover {
+  text-decoration: none;
+}
+
+.nlds-logo__title {
+  color: var(--nlds-logo-color, var(--nlds-main-nav-color));
+  font-family: var(--nlds-logo-font-family);
+  font-size: var(--nlds-logo-font-size);
+  font-weight: var(--nlds-logo-font-weight);
+  text-transform: uppercase;
+}
+
+.nlds-main-nav__item--active::after,
+.nlds-main-nav__item--hover::after,
+.nlds-main-nav__item:hover::after {
+  content: "";
+  height: var(--nlds-main-nav-item-active-border-height);
+  width: 100%;
+  background-color: var(--nlds-main-nav-item-active-border-color);
+  position: absolute;
+  left: 0;
+  bottom: calc(var(--nlds-main-nav-item-active-border-offset) * -1);
+}
