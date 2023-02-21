@@ -66,7 +66,7 @@ Zoals aangegeven kan iedere organisatie zijn eigen huisstijl toepassen. En toch 
 
 #### Voorbeeld thema
 
-Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design dokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
+Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design tokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
 
 ### Componenten
 
