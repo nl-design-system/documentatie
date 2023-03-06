@@ -5,34 +5,34 @@ Voor documentatie schrijven we design tokens soms als geheel uit en presenteren 
 1. Block: naam van de component, of naam van een common concept.
 2. Element: kleiner onderdeel van een component, bijvoorbeeld `icon` of `label`. Niet alle componenten hebben dit.
 3. Modifier: user action state
-    - `active`
-    - `focus`
-    - `focus-visible`
-    - `hover`
+   - `active`
+   - `focus`
+   - `focus-visible`
+   - `hover`
 4. Modifier: component state
-    - `disabled`
-    - `checked`
-    - `indeterminate`
-    - `invalid`
-    - Component state + user action state, bijvoorbeeld:
-      - `checked` + `active`
-      - `checked` + `focus`
-      - `checked` + `focus-visible`
-      - `checked` + `hover`
+   - `disabled`
+   - `checked`
+   - `indeterminate`
+   - `invalid`
+   - Component state + user action state, bijvoorbeeld:
+     - `checked` + `active`
+     - `checked` + `focus`
+     - `checked` + `focus-visible`
+     - `checked` + `hover`
 5. Modifier: appearance
-    - `large`
-    - `primary-action`
-    - `subtle`
-    - etc.
-    - Appearance + user action state, bijvoorbeeld:
-      - `large` + `active`
-      - `large` + `focus`
-    - Appearance + component state, bijvoorbeeld:
-      - `large` + `checked`
-      - `large` + `invalid`
-    - Appearance + component state + user action state, bijvoorbeeld:
-      - `large` + `checked` + `active`
-      - `large` + `checked` + `focus`
+   - `large`
+   - `primary-action`
+   - `subtle`
+   - etc.
+   - Appearance + user action state, bijvoorbeeld:
+     - `large` + `active`
+     - `large` + `focus`
+   - Appearance + component state, bijvoorbeeld:
+     - `large` + `checked`
+     - `large` + `invalid`
+   - Appearance + component state + user action state, bijvoorbeeld:
+     - `large` + `checked` + `active`
+     - `large` + `checked` + `focus`
 
 Binnen elk onderdeel houden we een alphabetische naamgeving aan vanuit HTML, CSS, SVG en WAI-ARIA.
 
