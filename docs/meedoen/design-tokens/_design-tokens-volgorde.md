@@ -10,8 +10,8 @@ Voor documentatie schrijven we design tokens soms als geheel uit en presenteren 
    - `focus-visible`
    - `hover`
 4. Modifier: component state
-   - `disabled`
    - `checked`
+   - `disabled`
    - `indeterminate`
    - `invalid`
    - Component state + user action state, bijvoorbeeld:
