@@ -26,7 +26,6 @@ Neem eens een kijkje in de keuken bij andere teams:
 - [Amsterdam Design System in Figma](https://www.figma.com/file/ORa7CBIooPgZj6HsEPBxNR/)
 - [Buren in Figma](https://www.figma.com/file/dBzv9dd3GRFLtxzCKWq9uU/)
 - [Den Haag Design System in Figma](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/)
-- [Gemeente Haarlem / Gemeente Zandvoort in Figma](https://www.figma.com/file/yNP20OJZKRG3dW5dmDtyM9/)
 - [Provincie Zuid-Holland](https://www.figma.com/file/pWIiNmzPDwYtPbYOQevpm1/)
 - [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](https://www.figma.com/file/NHV1JYxJ28vKZInSI9u200/)
 - [Rotterdam Design System in Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/)
