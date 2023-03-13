@@ -45,18 +45,18 @@
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
+  --gc-button-icon-size: 32px;
 }
 
 .button {
   box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
   padding-block: 8px;
-  padding-inline-end: 24px;
+  padding-inline-end: calc(24px + var(--gc-button-icon-size));
   padding-inline-start: 16px;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1;
   position: relative;
+  border: none;
 }
 
 .button.button--primary {
@@ -72,7 +72,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 32px;
+  width: var(--gc-button-icon-size);
   background-color: #0b732c;
   background-image: url("../icons/arrow-right-white.svg");
   background-size: 10px 16px;
@@ -209,7 +209,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__link {
-  font-weight: 600;
   font-size: 18px;
   position: relative;
 }
@@ -248,7 +247,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .navbar__title {
   font-size: 28px;
   font-family: var(--nlds-typography-alternative-font-family);
-  font-weight: 600;
 }
 
 .table-of-contents {

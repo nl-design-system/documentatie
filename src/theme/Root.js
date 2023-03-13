@@ -3,13 +3,14 @@ import '@nl-design-system-unstable/nlds-design-tokens/src/font';
 
 // Package with CSS for white-label components
 import '@utrecht/component-library-css';
+import { Document } from '@utrecht/component-library-react';
 
 // Default implementation, that you can customize
 function Root({ children }) {
   return (
-    <div className="nlds-theme utrecht-document" lang="nl">
+    <Document className="nlds-theme" lang="nl">
       {children}
-    </div>
+    </Document>
   );
 }
 

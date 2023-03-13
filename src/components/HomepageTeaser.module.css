@@ -9,10 +9,12 @@
   min-height: 300px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  --utrecht-heading-color: white;
 }
 
 .homepage-teaser__title {
   max-width: 80%;
+  margin-top: 0;
 }
 
 .homepage-teaser__link:hover .homepage-teaser__title {
