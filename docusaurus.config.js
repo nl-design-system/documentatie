@@ -1,10 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const navbar = require('./navConfig')
-const footer = require('./footerConfig')
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const navbar = require('./navConfig');
+const footer = require('./footerConfig');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -59,6 +59,6 @@ const config = {
         maxHeadingLevel: 2,
       },
     },
-}
+};
 
-module.exports = config
+module.exports = config;

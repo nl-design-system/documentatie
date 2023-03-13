@@ -1,6 +1,6 @@
-import React, {type ComponentProps, type ReactElement} from 'react';
+import React, { type ComponentProps, type ReactElement } from 'react';
 import Details from '@theme/Details';
-import type {Props} from '@theme/MDXComponents/Details';
+import type { Props } from '@theme/MDXComponents/Details';
 
 export default function MDXDetails(props: Props): JSX.Element {
   const items = React.Children.toArray(props.children);
@@ -8,8 +8,7 @@ export default function MDXDetails(props: Props): JSX.Element {
   // Details theme component
   const summary = items.find(
     (item): item is ReactElement<ComponentProps<'summary'>> =>
-      React.isValidElement(item) &&
-      (item.props as {mdxType: string} | null)?.mdxType === 'summary',
+      React.isValidElement(item) && (item.props as { mdxType: string } | null)?.mdxType === 'summary',
   );
   const children = <>{items.filter((item) => item !== summary)}</>;
 

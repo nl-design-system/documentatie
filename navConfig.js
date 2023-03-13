@@ -54,4 +54,4 @@ module.exports = {
       position: 'right',
     },
   ],
-}
+};

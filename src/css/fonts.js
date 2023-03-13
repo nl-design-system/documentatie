@@ -25,3 +25,7 @@ import '@fontsource/fira-sans/700.css';
 import '@fontsource/fira-sans/700-italic.css';
 
 import 'firacode/distr/fira_code.css';
+
+import '@fontsource/work-sans/latin.css';
+import '@fontsource/source-sans-pro/latin.css';
+import 'source-code-pro/source-code-pro.css';

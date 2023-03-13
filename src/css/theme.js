@@ -1,1 +1,1 @@
-import '@nl-design-system-unstable/nlds-design-tokens/dist/theme.css'
+import '@nl-design-system-unstable/nlds-design-tokens/dist/theme.css';
