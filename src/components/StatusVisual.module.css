@@ -42,7 +42,6 @@
 }
 
 .status-visual__title {
-  font-family: var(--nlds-alternative-font-family);
   font-size: 42px;
   line-height: 42px;
   margin-block-end: 12px;

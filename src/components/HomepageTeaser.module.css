@@ -12,11 +12,7 @@
 }
 
 .homepage-teaser__title {
-  font-size: 2.5rem;
   max-width: 80%;
-  font-family: "league_gothic";
-  text-transform: uppercase;
-  font-weight: normal;
 }
 
 .homepage-teaser__link:hover .homepage-teaser__title {

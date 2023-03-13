@@ -1,5 +1,5 @@
 import React from 'react';
-import '@fontsource/fira-sans';
+import '@nl-design-system-unstable/nlds-design-tokens/src/font';
 
 // Default implementation, that you can customize
 function Root({ children }) {
