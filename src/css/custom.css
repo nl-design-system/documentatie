@@ -77,7 +77,7 @@
   background-image: url("../icons/arrow-right-white.svg");
   background-size: 10px 16px;
   background-repeat: no-repeat;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
   background-position: center;
 }
 
@@ -105,7 +105,7 @@
   background-image: url("../icons/arrow-right-blue.svg");
   background-size: 10px 16px;
   background-repeat: no-repeat;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
   background-position: center;
 }
 
