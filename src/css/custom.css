@@ -22,8 +22,6 @@
   --ifm-button-padding-vertical: 8px;
   --ifm-button-padding-horizontal: 16px;
   --ifm-button-color: #004152;
-  --ifm-h1-font-size: 1.5rem;
-  --ifm-heading-font-weight: 700;
   --ifm-footer-background-color: #00303d;
   --ifm-footer-color: white;
   --ifm-footer-padding-vertical: 0;
@@ -32,6 +30,8 @@
   --ifm-navbar-background-color: #00303d;
   --ifm-navbar-link-hover-color: white;
   --ifm-navbar-padding-vertical: 16px;
+
+  --utrecht-space-around: 1;
 }
 
 .button {
