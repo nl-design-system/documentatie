@@ -208,11 +208,22 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   padding: 0;
 }
 
-.navbar .navbar__link--active:not([href="/"]),
-#docusaurus-base-url-issue-banner-container ~ .navbar .navbar__link--active,
-.navbar__link:hover {
-  /* Somehow homepage nav item always gets navbar__link--active class and aria-current="page" attached, even when not active, this is a dirty fix to fix nav highlight */
-  border-bottom: 3px solid #148839;
+.navbar__link {
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+/* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
+.navbar__link--active:not([href="/"]):after,
+.navbar__link:hover:after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: #148839;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
 }
 
 .navbar--dark {
