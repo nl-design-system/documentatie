@@ -52,6 +52,7 @@
     "@nl-design-system/component-index": "^1.0.0-alpha.10",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/node": "^17.0.45",
+    "@utrecht/component-library-css": "^1.0.0-alpha.446",
     "@utrecht/component-library-react": "^1.0.0-alpha.234",
     "firacode": "^6.2.0",
     "npm-check-updates": "^16.6.2",
