@@ -5,12 +5,9 @@
 }
 
 .homepage-hero__title {
-  font-family: "league_gothic";
-  font-size: 50px;
-  line-height: 44px;
-  font-weight: normal;
+  font-size: 36px;
   padding-inline: 32px;
-  padding-block: 24px;
+  padding-block: 12px;
   background-color: #4e1c40;
   margin: 0;
 }
