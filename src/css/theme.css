@@ -7,8 +7,4 @@
   --nlds-status-unstable-color: #fff;
   --nlds-status-stable-background-color: #f99d1c;
   --nlds-status-stable-color: #00303d;
-
-  --nlds-font-family: "Fira Sans";
-  --nlds-alternative-font-family: "league_gothic";
-  --utrecht-document-font-family: var(--nlds-font-family);
 }
