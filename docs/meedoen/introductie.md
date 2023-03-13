@@ -28,7 +28,7 @@ Een Design System lijkt op basis van de naam vooral over ontwerp te gaan, maar h
 Hoewel dit verschillende middelen zijn, hebben ze allemaal als doel om makkelijker consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken.
 Een goed design system ‘leeft’ dankzij nieuwe inzichten uit gebruikersonderzoek in meerdere projecten, toegankelijkheidsonderzoek en terugkoppeling door developers en designers die van de onderdelen gebruik maken.
 
-## NL Design System een systeem voor de hele overheid
+## Basisonderdelen voor de hele overheid
 
 NL Design System bevat componenten, patronen en richtlijnen, aangevuld met vele huisstijlen van organisaties die meedoen. Allemaal basisonderdelen waarover je afspraken kunt maken, gebruikersonderzoek kunt doen en van elkaar kunt leren.
 
@@ -38,7 +38,7 @@ Voor de eindgebruiker is het essentieel dat het gebruik van een site of applicat
 
 Als ook nieuwe inzichten en gebruikersonderzoek gedeeld worden, kunnen we daar met z'n allen betere richtlijnen, componenten en thema's mee maken. Deze nieuwe versies kunnen dan gebruikt worden in alle applicaties die met NL Design System zijn gebouwd en zo direct de gebruikerservaring van vele eindgebruikers verbeteren.
 
-### Eén geteste toegankelijke huisstijl vooor iedereen?
+### Eén geteste toegankelijke huisstijl voor iedereen?
 
 In Nederland hebben de vele overheidsorganisaties een eigen identiteit en huisstijl. Rijkhuisstijl is voorbehouden voor de Rijksoverheid en mag door alle andere organisaties, zoals gemeentes, niet gebruikt worden.
 Dit is een belangrijk verschil met bijvoorbeeld GOV.UK, die wel één huisstijl kent die door lokale overheiden gebruikt mag worden.
