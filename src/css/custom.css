@@ -16,7 +16,7 @@
   --ifm-background-color: #f9f6f3;
   --ifm-code-font-size: 95%;
   --ifm-code-border-radius: 0;
-  --ifm-font-family-base: "Fira Sans";
+  --ifm-font-family-base: "Source Sans Pro";
   --ifm-font-weight-semibold: 600;
   --ifm-button-border-radius: 0;
   --ifm-button-padding-vertical: 8px;
@@ -24,6 +24,7 @@
   --ifm-button-color: #004152;
   --ifm-h1-font-size: 1.5rem;
   --ifm-heading-font-weight: 700;
+  --ifm-heading-font-family: "Fira Sans";
   --ifm-footer-background-color: #00303d;
   --ifm-footer-color: white;
   --ifm-footer-padding-vertical: 0;
@@ -42,19 +43,18 @@
   --nlds-status-stable-background-color: #f99d1c;
   --nlds-status-stable-color: #00303d;
 
-  --nlds-font-family: "Fira Sans";
-  --nlds-alternative-font-family: "league_gothic";
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
 }
 
 .button {
   box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
   padding-block: 8px;
-  padding-inline-end: 48px;
+  padding-inline-end: 24px;
   padding-inline-start: 16px;
   text-transform: uppercase;
-  font-family: var(--nlds-alternative-font-family);
   font-weight: normal;
-  font-size: 1.625rem;
+  font-size: 1rem;
   line-height: 1;
   position: relative;
 }
@@ -225,19 +225,23 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__brand {
-  gap: 12px;
+  gap: 8px;
 }
 
 .navbar__logo {
-  height: 65px;
-  width: 65px;
+  height: 40px;
+  width: 40px;
+  margin-right: 0;
 }
 
 .navbar__title {
-  text-transform: uppercase;
-  font-size: 44px;
-  font-family: var(--nlds-alternative-font-family);
-  font-weight: 200;
+  font-size: 28px;
+  font-family: var(--nlds-typography-alternative-font-family);
+  font-weight: 600;
+}
+
+.table-of-contents {
+  font-size: 18px;
 }
 
 .nlds-theme {
@@ -247,18 +251,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   grid-template-columns: 100%;
   align-content: inherit;
   font-weight: 400;
-}
-
-.markdown > h2 {
-  --ifm-h2-font-size: 1.125rem;
-}
-
-.markdown > h3 {
-  --ifm-h3-font-size: 1rem;
-}
-
-.markdown h1:first-child {
-  --ifm-h1-font-size: 1.5rem;
 }
 
 .mega-footer-link,
@@ -271,6 +263,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 code,
 pre {
   font-family: "Fira Code VF" !important;
+  font-size: 16px;
   vertical-align: 1%;
   font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
 }

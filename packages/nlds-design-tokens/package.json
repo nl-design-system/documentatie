@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fontsource/fira-sans": "4.5.10",
+    "@fontsource/source-sans-pro": "^4.5.11",
     "firacode": "6.2.0"
   },
   "devDependencies": {
