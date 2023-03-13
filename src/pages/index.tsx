@@ -109,14 +109,14 @@ export default function Home() {
           <div>
             <h2>Over het kernteam</h2>
             <p>
-              Het NL Design System wordt ontwikkeld door <a href="meedoen/contact/">een vast kernteam</a> bij Gebruiker
+              Het NL Design System wordt ontwikkeld door <a href="project/contact/">een vast kernteam</a> bij Gebruiker
               Centraal.
             </p>
           </div>
           <div>
             <h2>Samenwerking</h2>
             <p>
-              Met <a href="meedoen/">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
+              Met <a href="project/links">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
               toegankelijke online dienstverlening voor overheidsorganisaties.
             </p>
           </div>
