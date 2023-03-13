@@ -35,6 +35,8 @@ const config = {
         },
         theme: {
           customCss: [
+            require.resolve('./src/css/theme.css'),
+            require.resolve('./src/css/theme.js'),
             require.resolve('./src/css/custom.css'),
             require.resolve('./src/css/fonts.css'),
             require.resolve('./src/css/fonts.js'),

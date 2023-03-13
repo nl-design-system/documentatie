@@ -1,0 +1,14 @@
+.nlds-theme {
+  --nlds-status-help-wanted-background-color: #4e1c40;
+  --nlds-status-help-wanted-color: #fff;
+  --nlds-status-community-background-color: #027bb0;
+  --nlds-status-community-color: #fff;
+  --nlds-status-unstable-background-color: #148839;
+  --nlds-status-unstable-color: #fff;
+  --nlds-status-stable-background-color: #f99d1c;
+  --nlds-status-stable-color: #00303d;
+
+  --nlds-font-family: "Fira Sans";
+  --nlds-alternative-font-family: "league_gothic";
+  --utrecht-document-font-family: var(--nlds-font-family);
+}
