@@ -118,20 +118,20 @@
 				C243.3,53.5,241.7,54,241.1,55.9L241.1,55.9z"/>
 		</g>
 		
-			<radialGradient id="SVGID_00000080900202866954744060000017387924718746114226_" cx="123.543" cy="198.7968" r="15.9853" gradientUnits="userSpaceOnUse">
-			<stop  offset="0" style="stop-color:#EDCDB5"/>
-			<stop  offset="1" style="stop-color:#F2DDCB"/>
-		</radialGradient>
-		<path style="fill:url(#SVGID_00000080900202866954744060000017387924718746114226_);" d="M139.5,198.8c0,8.8-7.2,16-16,16
-			c-8.8,0-16-7.2-16-16c0-8.8,7.2-16,16-16C132.4,182.8,139.5,190,139.5,198.8z"/>
-		
-			<radialGradient id="SVGID_00000120536208345057210900000015305236796868129969_" cx="225.7017" cy="198.7968" r="15.9853" gradientUnits="userSpaceOnUse">
-			<stop  offset="0" style="stop-color:#EDCDB5"/>
-			<stop  offset="1" style="stop-color:#F2DDCB"/>
-		</radialGradient>
-		<path style="fill:url(#SVGID_00000120536208345057210900000015305236796868129969_);" d="M241.7,198.8c0,8.8-7.2,16-16,16
-			s-16-7.2-16-16c0-8.8,7.2-16,16-16S241.7,190,241.7,198.8z"/>
-		<g>
+		<radialGradient id="SVGID_00000080900202866954744060000017387924718746114226_" cx="123.543" cy="198.7968" r="15.9853" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#EDCDB5"/>
+		<stop  offset="1" style="stop-color:#F2DDCB"/>
+	</radialGradient>
+	<path style="fill:url(#SVGID_00000080900202866954744060000017387924718746114226_);" d="M139.5,198.8c0,8.8-7.2,16-16,16
+		c-8.8,0-16-7.2-16-16c0-8.8,7.2-16,16-16C132.4,182.8,139.5,190,139.5,198.8z"/>
+	
+		<radialGradient id="SVGID_00000120536208345057210900000015305236796868129969_" cx="225.7017" cy="198.7968" r="15.9853" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#EDCDB5"/>
+		<stop  offset="1" style="stop-color:#F2DDCB"/>
+	</radialGradient>
+	<path style="fill:url(#SVGID_00000120536208345057210900000015305236796868129969_);" d="M241.7,198.8c0,8.8-7.2,16-16,16
+		s-16-7.2-16-16c0-8.8,7.2-16,16-16S241.7,190,241.7,198.8z"/>
+	<g>
 			<path class="st14" d="M76.8,334.3l0.1,0.5C76.9,334.6,76.8,334.5,76.8,334.3C76.8,334.3,76.8,334.3,76.8,334.3z"/>
 		</g>
 		<path class="st15" d="M139.4,211.2c11.1,6.7,23,10.9,35.1,10.8c12.1,0,23.8-4.7,35.4-10.8c-4.3,5-9.6,9.2-15.6,12.2
