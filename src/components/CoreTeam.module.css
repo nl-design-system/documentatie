@@ -1,9 +1,11 @@
 .core-team {
-  display: flex;
+  display: grid;
   gap: 20px;
   max-height: 200px;
   align-items: baseline;
   margin-block-start: 30px;
+  width: 100%;
+  grid-auto-flow: column;
 }
 
 .core-team__avatar {
