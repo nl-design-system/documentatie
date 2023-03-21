@@ -26,7 +26,6 @@ export const Yolijn = () => (
     className={clsx(style['core-team__avatar'])}
     src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_yolijn.svg"
     title="Yolijn - Developer"
-    style={{ maxHeight: '190px' }}
   />
 );
 
