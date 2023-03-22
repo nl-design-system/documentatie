@@ -12,9 +12,11 @@ keywords:
 
 # Leuk dat je als leverancier mee wil doen aan NL Design System
 
-## Hier zijn wat middelen om je op weg te helpen:
+Op dit moment zijn we nog druk bezig om documentatie te schrijven die leveranciers op weg kan helpen. Mocht je bezig zijn met een project voor meerdere overheidsorganisaties, laat het ons dan weten dan maken we graag tijd voor een onboarding op maat.
 
-...Zachte landing ‘Wat is NLDS’ vanuit niet technisch perspectief (elevator pitch) voor meerdere huisstijlen
+Ook houden we af en toe een praatje of interactieve sessie speciaal voor leveranciers aan de overheid. Houd onze nieuwsbrief en Slack in de gaten als je bij een volgende wil aansluiten.
+
+Van de [sessie van 21 maart 2023](./leverancier-sessie-maart-2023.md) hebben we een samenvatting gemaakt.
 
 ## Neem contact met ons op
 
