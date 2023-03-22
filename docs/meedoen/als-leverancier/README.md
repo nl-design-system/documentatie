@@ -22,5 +22,5 @@ Van de [sessie van 21 maart 2023](./leverancier-sessie-maart-2023.md) hebben we 
 
 <!-- KLOPT DIT E-MAIL ADRESS? -->
 
-- Email het kernteam: [nldesignsystem@ictu.nl](mailto:nldesignsystem@ictu.nl)
+- Email het kernteam: [NLDesignSystem@gebruikercentraal.nl](mailto:NLDesignSystem@gebruikercentraal.nl)
 - Vind ons en de community op Slack: [#nl-design-system kanaal](https://praatmee.codefor.nl)
