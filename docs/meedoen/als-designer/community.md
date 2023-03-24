@@ -15,9 +15,15 @@ keywords:
 
 # Community voor designers
 
-Je kunt als designer meekijken met andere projecten, onderzoek lezen en meepraten op Slack. Registreer je bij de [Code for NL Slack](https://praatmee.codefor.nl) en 'join' de kanalen: `#nl-design-system` en `#nl-design-system-designers`.
+Je kunt als designer meekijken met andere projecten, onderzoek lezen en meepraten op Slack.
 
-Daarnaast ben je van harte welkom bij de 'Design open hour' meeting. Hier wisselen designers informatie en inzichten met elkaar uit. De meeting is om de week op dinsdag om 13:00. [Neem contact op met het kernteam](../../project/contact.mdx) en we nodigen je uit.
+## Slack
+
+Registreer je bij de [Code for NL Slack](https://praatmee.codefor.nl) en 'join' de kanalen: `#nl-design-system` en `#nl-design-system-designers`.
+
+## Design open hour
+
+Je bent van harte welkom bij de 'Design open hour' meeting. Hier wisselen designers informatie, inzichten en tips met elkaar uit. De meeting is om de week op dinsdag om 13:00. [Neem contact op met het kernteam](../../project/contact.mdx) en we nodigen je uit.
 
 ## Design system projecten
 
