@@ -58,7 +58,7 @@ Een voorbeeld aan de hand van het 'Button' component
 - `voorbeeld.button.padding-inline-end`
 - `voorbeeld.button.padding-inline-start`
 
-- `voorbeeld.button.icon.gap`
+- `voorbeeld.button.icon.margin-inline`
 - `voorbeeld.button.icon.size`
 
 - `voorbeeld.button.active.background-color`
