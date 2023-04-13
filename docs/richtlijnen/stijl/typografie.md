@@ -272,6 +272,20 @@ Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat 
 
 ## Meer informatie
 
+### Lettertypes die voldoen aan de richtlijnen
+
+Enkele Open Source lettertypes die voldoen aan de richtlijnen.
+
+- [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
+- [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif)
+- [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
+- [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif)
+- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+- [Source Serif Pro](https://fonts.google.com/specimen/Source+Serif+Pro)
+- [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+
+Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](../../project/contact.mdx) dan vullen we de lijst verder aan.
+
 ### Gerelateerde WCAG Richtlijnen
 
 - [1.4.4: Resize Text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
