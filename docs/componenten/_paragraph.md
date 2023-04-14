@@ -4,11 +4,15 @@
 
 De _paragraph_ component gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.
 
-Gebruik hiervoor altijd het `<p>` HTML-element, die heeft automatisch de goede `paragraph` role in de accessibility tree (dat is nodig voor WCAG eis 1.3.1). Ook is zo de tekst nog steeds goed leesbaar als de CSS niet geladen kan worden.
+## HTML
+
+Gebruik hiervoor altijd het `<p>` HTML-element, die heeft automatisch de goede [`paragraph` role](https://w3c.github.io/aria/#paragraph) in de accessibility tree (dat is nodig voor WCAG eis 1.3.1). Voor een _lead paragraph_ gebruik je `<p><b>…</b></p>`. Voor _small print_ gebruik je `<p><small>…</small></p>`.
+
+Zelfs als geen CSS geladen kan worden, blijft de tekst duidelijk. Door het `<p>` element is er tussen alinea's duidelijke witruimte (WCAG 1.4.12). Door het `<b>` element is de _lead paragraph_ visueel herkenbaar. Door `<small>` is _small print_ visueel herkenbaar.
 
 ### Lead Paragraph
 
-De _lead paragraph_ is extra opvallende variant van de _paragraph_. Gebruik de _lead paragraph_ onder de _heading_ van een _article_ voor een introductietekst.
+De _lead paragraph_ is een extra opvallende variant van de _paragraph_. Gebruik de _lead paragraph_ onder de _heading_ van een _article_ voor een introductietekst.
 
 Schrijf in de eerste alinea kort en bondig waar de pagina over gaat, zodat de lezer kan besluiten om verder te lezen. Gebruik hiervoor de _lead paragraph_ variant zodat de tekst extra opvallend is.
 
@@ -139,6 +143,8 @@ Beter:
 ## Links
 
 - [MDN: `<p>`: The Paragraph element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
+- [HTML specification: The `<b>` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element). Bevat een voorbeeld van het `b` element voor lead paragraphs.
+- [HTML specification: The `<small>` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element). Bevat een voorbeeld van het `small` element voor _small print_.
 - [Hoe lang mag een alinea zijn? En waar hangt dat van af? - Taaladvies.net](https://taaladvies.net/lengte-van-alineas/)
 
 ### Relevante WCAG regels
