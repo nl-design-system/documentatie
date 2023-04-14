@@ -91,7 +91,7 @@ Het letter contrast, het verschil in lijndikte van een letter, zou niet te hoog 
 
 #### Lettervormen
 
-Individuele lettervormen zouden genoeg van vorm moeten verschillen waardoor ze niet met elkaar verward kunnen worden. De hoofdletter I de letter l en het cijfer 1 zouden bijvoorbeeld onderling moeten verschillen. Dacht geldt ook voor de hoofdletter O en het cijfer 0.
+Individuele lettervormen zouden genoeg van vorm moeten verschillen waardoor ze niet met elkaar verward kunnen worden. De hoofdletter I de letter l en het cijfer 1 zouden bijvoorbeeld onderling moeten verschillen. Dat geldt ook voor de hoofdletter O en het cijfer 0.
 
 ![Afgebeeld zijn hoofdletter 'i' letter 'l' en cijfer '1' met lettertype Merriweather, Noto Sans en Inter. Merriweather en Noto Sans tonen een verschil in lettervorm. Bij Inter zijn hoofdletter 'i' letter 'l' gelijkwaardig in vorm. Bij het Inter voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettervormen.png)
 
@@ -231,7 +231,7 @@ Beperk het gebruik van gecentreerde tekst tot een minimum. Hooguit voor een kort
 
 Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
 
-Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij ‘VOER JE NAAM IN’ wordt dat wel heel vreemd. Mocht je toch tekst in all caps willen tonen gebruik dan CSS.
+Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij VOORNAAM of NIEUWS wordt dat wel heel vreemd. Mocht je toch tekst in all caps willen tonen doe dit dan via CSS.
 
 Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!
 
