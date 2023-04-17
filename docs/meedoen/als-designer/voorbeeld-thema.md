@@ -56,7 +56,7 @@ Voor toptaak iconen maken we gebruik van de outline versie van [OpenGemeenten ic
 
 Vanuit het NL Design System onderhouden we deze iconenset niet. Het gebruik ervan is daarom je eigen verantwoordelijkheid. Mis je een icoon? Neem dan contact op met [OpenGemeenten](https://www.gemeenteniconen.nl/doe-mee).
 
-De OpenGemeenten iconenset is ontworpen op een 48×48 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat de waarde van common token `nl.icon.functional.size` 48×48 betreft.
+De OpenGemeenten iconenset is ontworpen op een 48×48 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat de waarde van common token `nl.icon.toptask.size` 48×48 betreft.
 
 ---
 
