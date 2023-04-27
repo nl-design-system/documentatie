@@ -34,14 +34,15 @@
   --ifm-navbar-link-hover-color: white;
   --ifm-navbar-padding-vertical: 16px;
 
-  --nlds-status-help-wanted-background-color: #4e1c40;
-  --nlds-status-help-wanted-color: #fff;
-  --nlds-status-community-background-color: #027bb0;
-  --nlds-status-community-color: #fff;
-  --nlds-status-unstable-background-color: #148839;
-  --nlds-status-unstable-color: #fff;
-  --nlds-status-stable-background-color: #f99d1c;
-  --nlds-status-stable-color: #00303d;
+  --nlds-status-border-color: hsla(0, 0%, 100%, 1);
+  --nlds-status-help-wanted-background-color: hsla(191, 19%, 82%, 1);
+  --nlds-status-help-wanted-color: hsla(192, 100%, 16%, 1);
+  --nlds-status-community-background-color: hsla(199, 100%, 34%, 1);
+  --nlds-status-community-color: hsla(0, 0%, 100%, 1);
+  --nlds-status-unstable-background-color: hsla(179, 100%, 21%, 1);
+  --nlds-status-unstable-color: hsla(0, 0%, 100%, 1);
+  --nlds-status-stable-background-color: hsla(317, 48%, 31%, 1);
+  --nlds-status-stable-color: hsla(0, 0%, 100%, 1);
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
