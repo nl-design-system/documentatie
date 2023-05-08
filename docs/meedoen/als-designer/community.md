@@ -33,7 +33,7 @@ Neem eens een kijkje in de keuken bij andere teams:
 - [Buren in Figma](https://www.figma.com/file/dBzv9dd3GRFLtxzCKWq9uU/)
 - [Den Haag Design System in Figma](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/)
 - [Provincie Zuid-Holland in Figma](https://www.figma.com/file/pWIiNmzPDwYtPbYOQevpm1/)
-- [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](https://www.figma.com/file/NHV1JYxJ28vKZInSI9u200/)
+- [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](<https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=282%3A5324&t=TeyvkmJuXgAeX8ge-1>)
 - [Rotterdam Design System in Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/)
 - [Utrecht Design System in Figma](https://www.figma.com/file/msb3CfQBefPoruqNQ968Zh/)
 
