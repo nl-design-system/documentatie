@@ -1,6 +1,6 @@
 .core-team {
   display: grid;
-  gap: 20px;
+  gap: 8px;
   max-height: 200px;
   align-items: baseline;
   margin-block-start: 30px;

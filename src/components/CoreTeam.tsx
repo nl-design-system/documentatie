@@ -47,6 +47,15 @@ export const Andrea = () => (
   />
 );
 
+export const Hidde = () => (
+  <img
+    alt="Avatar van Hidde"
+    className={clsx(style['core-team__avatar'])}
+    src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/kernteam_hidde.svg"
+    title="Hidde - Developer"
+  />
+);
+
 export const CoreTeam = () => {
   return (
     <div className={clsx(style['core-team'])}>
@@ -55,6 +64,7 @@ export const CoreTeam = () => {
       <Yolijn />
       <Jeffrey />
       <Andrea />
+      <Hidde />
     </div>
   );
 };
