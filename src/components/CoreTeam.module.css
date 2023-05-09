@@ -6,6 +6,7 @@
   margin-block-start: 30px;
   width: 100%;
   grid-auto-flow: column;
+  align-items: center;
 }
 
 .core-team__avatar {
