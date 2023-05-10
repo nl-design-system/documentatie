@@ -26,9 +26,9 @@ Het NL Design System zit net even anders in elkaar als andere Design Systems. Ni
 
 [Meer informatie het NL Design System](../introductie.md)
 
-### Het Kernteam
+### Het kernteam
 
-Er is een vast ‘Kernteam’ dat werkt aan het NL Design System. Het kernteam werkt op dagelijkse basis samen met verschillende disciplines vanuit de community. Denk aan designers, developers maar ook copywriters en accessibility specialisten.
+Er is een vast kernteam dat werkt aan het NL Design System. Het kernteam werkt op dagelijkse basis samen met verschillende disciplines vanuit de community. Denk aan designers, developers maar ook copywriters en accessibility specialisten.
 
 [Meer informatie over het Kernteam](../../project/contact.mdx)
 
