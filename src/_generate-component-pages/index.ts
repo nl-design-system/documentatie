@@ -14,12 +14,20 @@ const DOCS_PATH = '../../docs/componenten';
 
 const ensureDir = (directoryName) => {
   const dirPath = path.join(__dirname, DOCS_PATH, directoryName);
-  if (!fs.existsSync(dirPath)) {
+
+  if (fs.existsSync(dirPath)) {
     try {
-      fs.mkdirSync(dirPath, { recursive: true });
+      fs.rmdirSync(dirPath, { recursive: true });
     } catch (_) {
-      throw new Error('File could not be created');
+      throw new Error('Directory could not be removed');
     }
+    console.log(`Directory removed: ${dirPath}`);
+  }
+
+  try {
+    fs.mkdirSync(dirPath, { recursive: true });
+  } catch (_) {
+    throw new Error('File could not be created');
   }
 
   console.log(`Directory available: ${dirPath}`);
@@ -27,8 +35,9 @@ const ensureDir = (directoryName) => {
   return dirPath;
 };
 
+const dir = ensureDir('build');
+
 componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
-  const dir = ensureDir('build');
   const fileName = `${dir}/${id}.mdx`;
   const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.md`);
 
