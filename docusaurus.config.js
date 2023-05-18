@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const navbar = require('./navConfig');
 const footer = require('./footerConfig');
 
@@ -47,10 +45,6 @@ const config = {
     {
       navbar,
       footer,
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 2,
