@@ -33,7 +33,7 @@ const config = {
         },
         theme: {
           customCss: [
-            require.resolve('@nl-design-system-unstable/nlds-design-tokens/dist/theme.css'),
+            require.resolve('@nl-design-system-unstable/nlds-design-tokens/dist/root.css'),
             require.resolve('./src/css/custom.css'),
           ],
         },
