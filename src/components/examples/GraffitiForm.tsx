@@ -3,6 +3,7 @@ import { useLocation } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import {
   Button,
+  ButtonGroup,
   Checkbox,
   Fieldset,
   FieldsetLegend,
@@ -495,9 +496,11 @@ export const GraffitiForm = ({
                 aria-describedby={`${phoneId}-description`}
               />
             </FormField>
-            <Button type="submit" appearance="primary-action-button">
-              Vraag aan
-            </Button>
+            <ButtonGroup>
+              <Button type="submit" appearance="primary-action-button">
+                Vraag aan
+              </Button>
+            </ButtonGroup>
           </form>
         </main>
       </PageContent>

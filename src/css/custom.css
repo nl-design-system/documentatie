@@ -283,3 +283,11 @@ li a {
 .pagination-nav {
   display: none; /* Temporarily disabled pagination */
 }
+
+.utrecht-ordered-list {
+  width: auto !important;
+}
+
+.voorbeeld-theme {
+  --utrecht-button-group-margin-block-start: 20px;
+}
