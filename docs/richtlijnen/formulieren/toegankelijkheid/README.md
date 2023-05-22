@@ -2,8 +2,8 @@
 title: Inclusie en toegankelijkheid
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Inclusie en toegankelijkheid
-sidebar_position: 4
+sidebar_label: Overzicht
+sidebar_position: 1
 pagination_label: Formulieren - Inclusie en toegankelijkheid
 description: Richtlijnen voor formulieren - Inclusie en toegankelijkheid
 keywords:
@@ -14,7 +14,7 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
-# Richtlijnen voor formulieren: Inclusie en toegankelijkheid
+# Inclusie en toegankelijkheid
 
 _Status: **In ontwikkeling**_
 

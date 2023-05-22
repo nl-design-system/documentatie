@@ -1,29 +1,27 @@
 ---
-title: Overzicht
+title: Samenvatting
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Overzicht
-sidebar_position: 9
-pagination_label: Formulieren - Overzicht
-description: Richtlijnen voor formulieren - Overzicht
+sidebar_label: Samenvatting
+sidebar_position: 8
+pagination_label: Formulieren - Samenvatting
+description: Richtlijnen voor formulieren - Samenvatting van ingevulde gegevens
 keywords:
   - formulieren
-  - overzicht
+  - samenvatting
 ---
 
 <!-- @license CC0-1.0 -->
 
-# Richtlijnen voor formulieren: Overzicht
+# Richtlijnen voor formulieren: Samenvatting ingevulde gegevens
 
 _Status: **In ontwikkeling**_
-
-## Biedt een overzicht van het formulier
 
 Geef de gebruiker een overzicht van de ingevoerde informatie die verstuurd zal worden. Deze samenvatting is voornamelijk handig bij meerstappen formulieren. Dit kan bijvoorbeeld in een tabel weergegeven worden.
 
 Raadpleeg de richtlijnen voor tabellen voor meer informatie.
 
-## Laat een gebruiker een antwoord wijzigen
+## Laat een gebruiker een antwoord wijzigen{#antwoord-wijzigen}
 
 Zorg dat het voor de gebruiker mogelijk is om ingevoerde informatie te wijzigen. Dit kan op meerdere manieren:
 

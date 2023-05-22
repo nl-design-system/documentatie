@@ -3,7 +3,7 @@ title: Hulp en ondersteuning
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Hulp en ondersteuning
-sidebar_position: 6
+sidebar_position: 5
 pagination_label: Formulieren - Hulp en ondersteuning
 description: Richtlijnen voor formulieren - Hulp en ondersteuning.
 keywords:
