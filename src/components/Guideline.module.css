@@ -1,0 +1,45 @@
+.nlds-guideline:first-of-type {
+  margin-block-start: 20px;
+}
+
+.nlds-guideline {
+  --utrecht-space-around: 0;
+  --utrecht-code-font-size: 16px;
+  border: 1px solid var(--nlds-container-border-color);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-block-end: 40px;
+}
+
+.nlds-guideline__description {
+  padding: 24px;
+}
+
+.nlds-guideline__example {
+  background-color: var(--nlds-document-inverse-background-color);
+  /* padding: 20px; */
+}
+
+.nlds-guideline__icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-inline-end: 8px;
+}
+
+.nlds-guideline__title {
+  vertical-align: middle;
+}
+
+.nlds-guideline__badge {
+  margin-block-end: 16px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nlds-guideline__badge--dont {
+  color: var(--nlds-invalid-color);
+}
+
+.nlds-guideline__badge--do {
+  color: var(--nlds-valid-color);
+}
