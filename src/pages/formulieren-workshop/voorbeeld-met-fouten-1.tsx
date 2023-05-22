@@ -19,6 +19,7 @@ import {
   Textbox,
 } from '@utrecht/component-library-react';
 import clsx from 'clsx';
+import { unlink } from 'fs';
 import React, { useId } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -31,6 +32,7 @@ interface VoorbeeldMetFoutenProps {
   unclearLabel?: boolean;
   unnecessaryQuestions?: boolean;
   colorOnlyError?: boolean;
+  unlinkedLables?: boolean;
 }
 
 const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
@@ -40,6 +42,7 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data, errors);
+  const useLinkedId = () => (unlinkedLables ? undefined : useId());
 
   const { search } = useLocation();
   const searchParams = new URLSearchParams(search);
@@ -51,8 +54,22 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
   const checkboxForRadio = searchParams.get('checkboxForRadio') || props.checkboxForRadio;
   const unclearLabel = searchParams.get('unclearLabel') || props.unclearLabel;
   const unnecessaryQuestions = searchParams.get('unnecessaryQuestions') || props.unnecessaryQuestions;
+  const unlinkedLables = searchParams.get('unlinkedLables') || props.unlinkedLables;
 
   const formHeadingId = useId();
+  const straatnaamId = useLinkedId();
+  const huisnummerId = useLinkedId();
+  const huisnummerToevoegingId = useLinkedId();
+  const postcodeId = useLinkedId();
+  const woonplaatsId = useLinkedId();
+  const antiGraffitiCoatingId = useLinkedId();
+  const opmerkingenId = useLinkedId();
+  const achternaamId = useLinkedId();
+  const tussenvoegselsId = useLinkedId();
+  const voorlettersId = useLinkedId();
+  const geslachtId = useLinkedId();
+  const emailId = useLinkedId();
+  const phoneId = useLinkedId();
 
   return (
     <Layout>
@@ -70,13 +87,14 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
             <Heading3>Gegevens pand</Heading3>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="8eb3222f-7c17-4b45-810d-85e8b444acc3">
-                  Straatnaam{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
+                <FormLabel htmlFor={straatnaamId}>
+                  {unclearLabel ? 'Straatna(a)m(en)' : 'Straatnaam'}
+                  {defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['straatnaam'] && (
                 <FormFieldDescription
-                  id="straatnaam-description"
+                  id={`${straatnaamId}-description`}
                   invalid
                   className={`invalid-description--${errors['straatnaam'].type}`}
                 >
@@ -86,21 +104,21 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('straatnaam', { required: 'Verplicht: Vergeet niet een straatnaam in te vullen' })}
                 type="text"
-                id="8eb3222f-7c17-4b45-810d-85e8b444acc3"
+                id={straatnaamId}
                 autoComplete={wrongAutoComplete ? 'street-address' : undefined}
                 invalid={!!errors['straatnaam']}
-                aria-describedby="straatnaam-description"
+                aria-describedby={`${straatnaamId}-description`}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="79fbd5db-4cd2-451e-9825-94527026b042">
+                <FormLabel htmlFor={huisnummerId}>
                   Huisnummer{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['huisnummer'] && (
                 <FormFieldDescription
-                  id="huisnummer-description"
+                  id={`${huisnummerId}-description`}
                   invalid
                   className={`invalid-description--${errors['huisnummer'].type}`}
                 >
@@ -111,30 +129,30 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
                 <Textbox
                   {...register('huisnummer', { required: 'Verplicht: Vergeet niet een huisnummer in te vullen' })}
                   type="number"
-                  id="79fbd5db-4cd2-451e-9825-94527026b042"
-                  aria-describedby="huisnummer-description"
+                  id={huisnummerId}
+                  aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
                 />
               ) : (
                 <Textbox
                   {...register('huisnummer', { required: 'Verplicht: Vergeet niet een huisnummer in te vullen' })}
                   type="text"
-                  id="79fbd5db-4cd2-451e-9825-94527026b042"
+                  id={huisnummerId}
                   inputMode="numeric"
-                  aria-describedby="huisnummer-description"
+                  aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
                 />
               )}
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="53750fb1-941f-4418-9f48-5c0fc74a06b6">
+                <FormLabel htmlFor={huisnummerToevoegingId}>
                   Toevoeging huisnummer{!defaultOptional && <span> {astrixOnly ? '*' : '(optioneel)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['huisnummer-toevoeging'] && (
                 <FormFieldDescription
-                  id="huisnummer-toevoeging-description"
+                  id={`${huisnummerToevoegingId}-description`}
                   invalid
                   className={`invalid-description--${errors['huisnummer-toevoeging'].type}`}
                 >
@@ -144,19 +162,19 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('huisnummer-toevoeging')}
                 type="text"
-                id="53750fb1-941f-4418-9f48-5c0fc74a06b6"
-                aria-describedby="huisnummer-toevoeging-description"
+                id={huisnummerToevoegingId}
+                aria-describedby={`${huisnummerToevoegingId}-description`}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="eda8f886-22ff-4664-9c1e-085c1c28387b">
+                <FormLabel htmlFor={postcodeId}>
                   Postcode{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['postcode'] && (
                 <FormFieldDescription
-                  id="postcode-description"
+                  id={`${postcodeId}-description`}
                   invalid
                   className={`invalid-description--${errors['postcode'].type}`}
                 >
@@ -166,21 +184,21 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('postcode', { required: 'Verplicht: Vergeet niet een postcode in te vullen' })}
                 type="text"
-                id="eda8f886-22ff-4664-9c1e-085c1c28387b"
+                id={postcodeId}
                 autoComplete={wrongAutoComplete ? undefined : 'postal-code'}
-                aria-describedby="postcode-description"
+                aria-describedby={`${postcodeId}-description`}
                 invalid={!!errors['postcode']}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="112eceba-85d3-4135-a642-692ce37acafd">
+                <FormLabel htmlFor={woonplaatsId}>
                   Woonplaats{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['woonplaats'] && (
                 <FormFieldDescription
-                  id="woonplaats-description"
+                  id={`${woonplaatsId}-description`}
                   invalid
                   className={`invalid-description--${errors['woonplaats'].type}`}
                 >
@@ -190,9 +208,9 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('woonplaats', { required: 'Verplicht: Vergeet niet een woonplaats in te vullen' })}
                 type="text"
-                id="112eceba-85d3-4135-a642-692ce37acafd"
-                autoComplete={wrongAutoComplete ? undefined : 'postal-code'}
-                aria-describedby="woonplaats-description"
+                id={woonplaatsId}
+                autoComplete={wrongAutoComplete ? undefined : 'address-level2'}
+                aria-describedby={`${woonplaatsId}-description`}
                 invalid={!!errors['woonplaats']}
               />
             </FormField>
@@ -207,30 +225,30 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
                 >
                   {errors['anti-graffiti-coating'] && (
                     <FormFieldDescription
-                      id="anti-graffiti-coating-description"
+                      id={`${antiGraffitiCoatingId}-description`}
                       invalid
                       className={`invalid-description--${errors['anti-graffiti-coating'].type}`}
                     >
                       {errors['anti-graffiti-coating']?.message.toString()}
                     </FormFieldDescription>
                   )}
-                  <FormLabel htmlFor="2a5524f5-6ee8-4be1-90a1-87d0d619d2ee">
+                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-true`}>
                     {checkboxForRadio ? (
                       <Checkbox
                         {...register('anti-graffiti-coating')}
                         className="utrecht-form-field__input"
-                        id="2a5524f5-6ee8-4be1-90a1-87d0d619d2ee"
+                        id={`${antiGraffitiCoatingId}-true`}
                         value="true"
-                        aria-describedby="anti-graffiti-coating-description"
+                        aria-describedby={`${antiGraffitiCoatingId}-description`}
                         invalid={!!errors['anti-graffiti-coating']}
                       />
                     ) : (
                       <RadioButton
                         {...register('anti-graffiti-coating')}
                         className="utrecht-form-field__input"
-                        id="2a5524f5-6ee8-4be1-90a1-87d0d619d2ee"
+                        id={`${antiGraffitiCoatingId}-true`}
                         value="ja"
-                        aria-describedby="anti-graffiti-coating-description"
+                        aria-describedby={`${antiGraffitiCoatingId}-description`}
                         invalid={!!errors['anti-graffiti-coating']}
                       />
                     )}
@@ -243,23 +261,23 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
                     `utrecht-form-field__label--${checkboxForRadio ? 'checkbox' : 'radio'}`,
                   )}
                 >
-                  <FormLabel htmlFor="3c6ff1c4-97ec-4ed9-bbe1-ab9b73176690">
+                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-false`}>
                     {checkboxForRadio ? (
                       <Checkbox
                         {...register('anti-graffiti-coating')}
                         className="utrecht-form-field__input"
-                        id="3c6ff1c4-97ec-4ed9-bbe1-ab9b73176690"
+                        id={`${antiGraffitiCoatingId}-false`}
                         value="false"
-                        aria-describedby="anti-graffiti-coating-description"
+                        aria-describedby={`${antiGraffitiCoatingId}-description`}
                         invalid={!!errors['anti-graffiti-coating']}
                       />
                     ) : (
                       <RadioButton
                         {...register('anti-graffiti-coating')}
                         className="utrecht-form-field__input"
-                        id="3c6ff1c4-97ec-4ed9-bbe1-ab9b73176690"
+                        id={`${antiGraffitiCoatingId}-false`}
                         value="nee"
-                        aria-describedby="anti-graffiti-coating-description"
+                        aria-describedby={`${antiGraffitiCoatingId}-description`}
                         invalid={!!errors['anti-graffiti-coating']}
                       />
                     )}
@@ -270,13 +288,13 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="49a26cd1-35d4-4a93-bd1c-eb93081104eb">
+                <FormLabel htmlFor={opmerkingenId}>
                   Aanvullende opmerkingen{!defaultOptional && <span> {astrixOnly ? '*' : '(optioneel)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['opmerkingen'] && (
                 <FormFieldDescription
-                  id="opmerkingen-description"
+                  id={`${opmerkingenId}-description`}
                   invalid
                   className={`invalid-description--${errors['opmerkingen'].type}`}
                 >
@@ -285,9 +303,9 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               )}
               <Textarea
                 {...register('opmerkingen')}
-                id="49a26cd1-35d4-4a93-bd1c-eb93081104eb"
+                id={opmerkingenId}
                 invalid={!!errors['opmerkingen']}
-                aria-describedby="opmerkingen-description"
+                aria-describedby={`${opmerkingenId}-description`}
               />
             </FormField>
             <Heading3>Uw gegevens</Heading3>
@@ -297,13 +315,13 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
             </Paragraph>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="51db9692-6906-4462-b01d-6932b82a2f9d">
+                <FormLabel htmlFor={achternaamId}>
                   Achternaam{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['achternaam'] && (
                 <FormFieldDescription
-                  id="achternaam-description"
+                  id={`${achternaamId}-description`}
                   invalid
                   className={`invalid-description--${errors['achternaam'].type}`}
                 >
@@ -313,22 +331,22 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('achternaam', { required: 'Verplicht: Vergeet niet een achternaam in te vullen' })}
                 type="text"
-                id="51db9692-6906-4462-b01d-6932b82a2f9d"
+                id={achternaamId}
                 autoComplete={wrongAutoComplete ? undefined : 'cc-family-name'}
                 invalid={!!errors['achternaam']}
-                aria-describedby="achternaam-description"
+                aria-describedby={`${achternaamId}-description`}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="33ce8d53-a687-40c2-9882-3ba78197cdfe">
+                <FormLabel htmlFor={tussenvoegselsId}>
                   {unclearLabel ? 'Tussenvoegsel(s)' : 'Tussenvoegsel een of meerdere'}
                   {!defaultOptional && <span> {astrixOnly ? '*' : '(optioneel)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['tussenvoegsels'] && (
                 <FormFieldDescription
-                  id="tussenvoegsels-description"
+                  id={`${tussenvoegselsId}-description`}
                   invalid
                   className={`invalid-description--${errors['tussenvoegsels'].type}`}
                 >
@@ -338,22 +356,22 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('tussenvoegsels')}
                 type="text"
-                id="33ce8d53-a687-40c2-9882-3ba78197cdfe"
+                id={tussenvoegselsId}
                 autoComplete={wrongAutoComplete ? undefined : 'cc-family-name'}
-                aria-describedby="tussenvoegsels-description"
+                aria-describedby={`${tussenvoegselsId}-description`}
                 invalid={!!errors['tussenvoegsels']}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="1e2483b3-4df1-4e57-97ba-d324786f7a42">
+                <FormLabel htmlFor={voorlettersId}>
                   {unclearLabel ? 'Voorletter(s)' : 'Voorletters (een of meerdere)'}
                   {defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['voorletters'] && (
                 <FormFieldDescription
-                  id="voorletters-description"
+                  id={`${voorlettersId}-description`}
                   invalid
                   className={`invalid-description--${errors['voorletters'].type}`}
                 >
@@ -363,10 +381,10 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('voorletters', { required: 'Verplicht: Vergeet niet minimaal 1 voorletter in te vullen' })}
                 type="text"
-                id="1e2483b3-4df1-4e57-97ba-d324786f7a42"
+                id={voorlettersId}
                 autoComplete={wrongAutoComplete ? 'cc-family-name' : undefined}
                 invalid={!!errors['voorletters']}
-                aria-describedby="voorletters-description"
+                aria-describedby={`${voorlettersId}-description`}
               />
             </FormField>
             {unnecessaryQuestions && (
@@ -376,46 +394,46 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
                     Geslacht{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                   </FieldsetLegend>
                   <FormFieldDescription
-                    id="geslacht-description"
+                    id={`${geslachtId}-desciption`}
                     invalid={!!errors['geslacht']}
                     className={clsx(!!errors['geslacht'] && `invalid-description--${errors['geslacht'].type}`)}
                   >
                     Selecteer 'Niet relevant' als u geen keuze wilt maken in geslacht
                   </FormFieldDescription>
                   <Paragraph>
-                    <FormLabel htmlFor="257108e5-e780-4fa9-9efc-d28a67763461">
+                    <FormLabel htmlFor={`${geslachtId}-man`}>
                       <RadioButton
                         {...register('geslacht', { required: true })}
                         className="utrecht-form-field__input"
-                        id="257108e5-e780-4fa9-9efc-d28a67763461"
+                        id={`${geslachtId}-man`}
                         value="man"
-                        aria-describedby="geslacht-description"
+                        aria-describedby={`${geslachtId}-desciption`}
                         invalid={!!errors['geslacht']}
                       />
                       Man
                     </FormLabel>
                   </Paragraph>
                   <Paragraph>
-                    <FormLabel htmlFor="50e2f3e0-76a6-4a3a-8dfe-b6957bc26694">
+                    <FormLabel htmlFor={`${geslachtId}-vrouw`}>
                       <RadioButton
                         {...register('geslacht', { required: true })}
                         className="utrecht-form-field__input"
-                        id="50e2f3e0-76a6-4a3a-8dfe-b6957bc26694"
+                        id={`${geslachtId}-vrouw`}
                         value="vrouw"
-                        aria-describedby="geslacht-description"
+                        aria-describedby={`${geslachtId}-desciption`}
                         invalid={!!errors['geslacht']}
                       />
                       Vrouw
                     </FormLabel>
                   </Paragraph>
                   <Paragraph>
-                    <FormLabel htmlFor="d29fb6be-406c-42e0-b6d6-70e4a615fae7">
+                    <FormLabel htmlFor={`${geslachtId}-none`}>
                       <RadioButton
                         {...register('geslacht', { required: true })}
                         className="utrecht-form-field__input"
-                        id="d29fb6be-406c-42e0-b6d6-70e4a615fae7"
+                        id={`${geslachtId}-none`}
                         value="none"
-                        aria-describedby="geslacht-description"
+                        aria-describedby={`${geslachtId}-desciption`}
                         invalid={!!errors['geslacht']}
                       />
                       Niet relevant
@@ -426,14 +444,14 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
             )}
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="eff633bd-88f9-466e-ac87-7e7eee73fb75">
+                <FormLabel htmlFor={emailId}>
                   E-mailadres
                   {defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['email'] && (
                 <FormFieldDescription
-                  id="email-description"
+                  id={`${emailId}-description`}
                   invalid
                   className={`invalid-description--${errors['email'].type}`}
                 >
@@ -443,22 +461,22 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('email', { required: 'Verplicht: Vergeet niet je email in te vullen' })}
                 type="email"
-                id="eff633bd-88f9-466e-ac87-7e7eee73fb75"
+                id={emailId}
                 autoComplete={wrongAutoComplete ? undefined : 'email'}
                 invalid={!!errors['email']}
-                aria-describedby="email-description"
+                aria-describedby={`${emailId}-description`}
               />
             </FormField>
             <FormField type="text">
               <Paragraph>
-                <FormLabel htmlFor="ae37317a-3813-4660-a62b-86bb6c663cfe">
+                <FormLabel htmlFor={phoneId}>
                   Telefoonnummer
                   {defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
               {errors['telefoonnummer'] && (
                 <FormFieldDescription
-                  id="telefoonnummer-description"
+                  id={`${phoneId}-description`}
                   invalid
                   className={`invalid-description--${errors['telefoonnummer'].type}`}
                 >
@@ -468,10 +486,10 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
               <Textbox
                 {...register('telefoonnummer', { required: 'Verplicht: Vergeet niet je telefoonnummer in te vullen' })}
                 type="tel"
-                id="ae37317a-3813-4660-a62b-86bb6c663cfe"
+                id={phoneId}
                 autoComplete={wrongAutoComplete ? undefined : 'tel'}
                 invalid={!!errors['telefoonnummer']}
-                aria-describedby="telefoonnummer-description"
+                aria-describedby={`${phoneId}-description`}
               />
             </FormField>
             <Button type="submit" appearance="primary-action-button">
