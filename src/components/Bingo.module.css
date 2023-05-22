@@ -1,0 +1,38 @@
+.bingo {
+}
+
+.bingo__form {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+}
+
+.bingo__number {
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.bingo__input {
+  position: absolute;
+  left: -100vw;
+}
+
+.bingo__label {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.bingo__input:checked ~ .bingo__label {
+  background-color: var(--nlds-status-stable-background-color);
+  color: var(--nlds-status-stable-color);
+}
+
+.bingo_items {
+  margin-inline-start: 15px;
+}
+
+.bingo-item--checked {
+  color: grey;
+  text-decoration: line-through;
+}
