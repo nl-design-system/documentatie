@@ -1,4 +1,5 @@
 import Link from '@docusaurus/Link';
+import { useLocation } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import {
   Button,
@@ -32,21 +33,24 @@ interface VoorbeeldMetFoutenProps {
   colorOnlyError?: boolean;
 }
 
-const VoorbeeldMetFouten1 = ({
-  wrongAutoComplete = false,
-  defaultOptional = false,
-  astrixOnly = false,
-  nativeNumberInput = false,
-  checkboxForRadio = false,
-  unclearLabel = false,
-  unnecessaryQuestions = false,
-}: VoorbeeldMetFoutenProps) => {
+const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data, errors);
+
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+
+  const wrongAutoComplete = searchParams.get('wrongAutoComplete') || props.wrongAutoComplete;
+  const defaultOptional = searchParams.get('defaultOptional') || props.defaultOptional;
+  const astrixOnly = searchParams.get('astrixOnly') || props.astrixOnly;
+  const nativeNumberInput = searchParams.get('nativeNumberInput') || props.nativeNumberInput;
+  const checkboxForRadio = searchParams.get('checkboxForRadio') || props.checkboxForRadio;
+  const unclearLabel = searchParams.get('unclearLabel') || props.unclearLabel;
+  const unnecessaryQuestions = searchParams.get('unnecessaryQuestions') || props.unnecessaryQuestions;
 
   const formHeadingId = useId();
 
