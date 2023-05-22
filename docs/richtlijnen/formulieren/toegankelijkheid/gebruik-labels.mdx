@@ -1,0 +1,376 @@
+---
+title: Formulier toegankelijkheid - Gebruik Labels
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Gebruik Labels
+sidebar_position: 2
+pagination_label: Formulier toegankelijkheid - Gebruik Labels
+description: Een toegankelijk formulier begint met goede labels
+
+keywords:
+  - richtlijnen
+  - formulieren
+  - toegankelijkheid
+  - labels
+---
+
+<!-- @license CC0-1.0 -->
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import {
+  Checkbox,
+  Code,
+  FormField,
+  FormLabel,
+  Textbox,
+  Paragraph,
+  FormFieldDescription,
+  Fieldset,
+  FieldsetLegend as Legend,
+} from "@utrecht/component-library-react";
+
+# Een toegankelijk formulier begint met goede labels
+
+Zorg dat een gebruiker de vraag begrijpt. Het tekstlabel dient zo duidelijk en beschrijvend mogelijk te zijn en waar nodig kan er extra hulp geboden worden. Zie het onderwerp Hulp en ondersteuning voor meer informatie hierover.
+
+[Raadpleeg de algemene content richtlijnen](../../tekst-en-taalgebruik) voor taal en taalgebruik.
+
+<Guideline
+  appearance="dont"
+  title="Ingewikkeld label"
+  description="Door veel informatie in te korten wordt het label onduidelijk"
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="name">Voornaam(en)</label>
+        <input type="text" name="first_name" id="name" />
+      </>
+    }
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="name">Voornaam(en)</FormLabel>
+      </Paragraph>
+      <Textbox name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Simpel label met extra beschrijving"
+  description={
+    <Paragraph>
+      Gebruik waar nodig een losse
+      <Code>description</Code> om meer uitleg te geven.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="first-name">Voornaam(en)</label>
+        <p id="first-name-description"> Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
+        <input type="text" name="first_name" id="first-name" aria-describedby="first-name-description" />
+      </>
+    }
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="ff">Voornaam (een of meerdere)</FormLabel>
+      </Paragraph>
+      <FormFieldDescription className="utrecht-form-field__description" id="ff-description">
+        Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.
+      </FormFieldDescription>
+      <Textbox name="first_name" id="ff" aria-describedby="ff-description" />
+    </FormField>
+
+  </Canvas>
+</Guideline>
+
+## Gebruik de juiste code
+
+Maak je formulier meer toegankelijk door het `<label>` element op de juiste manier in te zetten.
+
+Het `<label>` element is niet alleen bedoeld om de bedoeling van de inhoud te beschrijven, maar er zit ook ingebouwde toegankelijkheid in die je met geen enkel ander element zo makkelijk kan bereiken. Elk zichtbaar formulier element moet daarom een bijbehorend `<label>` element hebben.
+Voor mensen die het formulier gebruiken zonder de zichtbare pagina context is het invullen van elk formulierveld waar een gekoppeld label aan zit stukken makkelijker.
+
+Ook kun je op het label klikken om automatisch het juiste formulierveld te selecteren.
+
+## Veel gemaakte fouten
+
+<Guideline appearance="dont" title="Helemaal geen label" description="Zonder label is het voor niemand duidelijk">
+  <Canvas language="html" code={<input type="text" name="first_name" />}>
+    <FormField type="text">
+      <Textbox name="first_name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Placeholder in plaats van label"
+  description="Met alleen een placeholder is het niet meer duidelijk waar de input voor is als de gebruiker begint met invullen.
+Ook lezen niet alle screen-readers de placeholder voor waardoor het net zo slecht werkt als zonder label"
+>
+  <Canvas language="html" code={<input type="text" name="first_name" placeholder="Voornaam" />}>
+    <Textbox type="text" name="first_name" placeholder="Voornaam" />
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Label zonder gekoppelde input"
+  description={
+    <Paragraph>
+      Door het <Code>label</Code> element te gebruiken zonder <Code>for</Code> mis je de koppeling tussen het label en
+      de input voor mensen die de visuele context niet waarnemen.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label>Voornaam</label>
+        <input type="text" name="first_name" />
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel>Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Verkeede HTML element voor het label"
+  description={
+    <Paragraph>
+      Door geen <Code>label</Code> element te gebruiken mis je de ingebouwde logica die zorgt dat hij als label kan
+      worden geinterpreteerd. Er bestaat zo geen enkele koppeling tussen het label en de input voor mensen die de
+      visuele context niet waarnemen.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <p htmlFor="name">Voornaam</p>
+        <input type="text" name="first_name" id="name" />
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph htmlFor="name">Voornaam</Paragraph>
+      <Textbox type="text" name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Input ID niet uniek"
+  description="Door het id van de input dubbel te gebruiken krijg je niet de juiste koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen."
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="name">Voornaam</label>
+        <input type="text" name="first_name" id="name" />
+        <label htmlFor="name">Achternaam</label>
+        <input type="text" name="first_name" id="name" />
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="name">Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" id="name" />
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="name">Achternaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Eén label voor meerdere inputs"
+  description={
+    <Paragraph>
+      Voor meerdere checkbox of radio elementen moeten meerdere label elementen gebruikt worden Gebruik een{" "}
+      <Code>fieldset</Code> met <Code>legend</Code> om de groep van checkbox of radio inputs heen
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="contact">Hoe wil je dat wij contact opnemen?</label>
+        <p>
+          <input id="contact" name="phone" type="checkbox" value="true" />
+          Telefoon
+        </p>
+        <p>
+          <input id="contact" name="email" type="checkbox" value="true" />
+          E-mail
+        </p>
+        <p>
+          <input id="contact" name="mail" type="checkbox" value="true" />
+          Brief
+        </p>
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="contact">Hoe wil je dat wij contact opnemen?</FormLabel>
+      </Paragraph>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <Checkbox className="utrecht-form-field__input" id="contact" name="phone" value="true" />
+          Telefoon
+        </Paragraph>
+      </FormField>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <Checkbox className="utrecht-form-field__input" id="contact" name="email" value="true" />
+          E-mail
+        </Paragraph>
+      </FormField>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <Checkbox className="utrecht-form-field__input" id="contact" name="mail" value="true" />
+          Brief
+        </Paragraph>
+      </FormField>
+    </FormField>
+  </Canvas>
+</Guideline>
+
+## Juiste manier van een label
+
+<Guideline
+  appearance="do"
+  title="Gekoppeld label met een duidelijke naam"
+  description={
+    <Paragraph>
+      Door een <Code>label</Code> te gebruiken met een duidelijk naam en de <Code>input</Code> te voorzien van een{" "}
+      <Code>id</Code> attribuut kan het label aan de input gekoppeld worden met het <Code>htmlFor</Code> attribuut
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</label>
+        <input type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
+      </>
+    }
+    copy
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Elke checkbox een eigen gekoppeld label"
+  description={
+    <Paragraph>
+      Door een <Code>label</Code> te gebruiken voor elke <Code>checkbox</Code> en deze met een unieke
+      <Code>id</Code> en <Code>for</Code> attribuut aan elkaar te koppelen werken de inputs voor iedereen. Een <Code>
+        fieldset
+      </Code> met <Code>legend</Code> helpen de checkboxes als geheel te herkennen.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <fieldset>
+        <legend>Hoe wil je dat wij contact opnemen?</legend>
+        <label htmlFor="phone">
+          <input id="phone" name="phone" type="checkbox" value="true" />
+          Telefoon
+        </label>
+        <label htmlFor="email">
+          <input id="email" name="email" type="checkbox" value="true" />
+          E-mail
+        </label>
+        <label htmlFor="mail">
+          <input id="mail" name="mail" type="checkbox" value="true" />
+          Brief
+        </label>
+      </fieldset>
+    }
+    copy
+  >
+    <Fieldset>
+      <Paragraph className="utrecht-form-field__label">
+        <Legend>Hoe wil je dat wij contact opnemen?</Legend>
+      </Paragraph>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <FormLabel htmlFor="2a5524f5-6ee8-4be1-90a1-87d0d619d2ee">
+            <Checkbox
+              className="utrecht-form-field__input"
+              id="2a5524f5-6ee8-4be1-90a1-87d0d619d2ee"
+              name="phone"
+              value="true"
+            />
+            Telefoon
+          </FormLabel>
+        </Paragraph>
+      </FormField>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <FormLabel htmlFor="1fe84cc2-16fc-4e9b-9498-856583652181">
+            <Checkbox
+              className="utrecht-form-field__input"
+              id="1fe84cc2-16fc-4e9b-9498-856583652181"
+              name="email"
+              value="true"
+            />
+            E-mail
+          </FormLabel>
+        </Paragraph>
+      </FormField>
+      <FormField type="checkbox">
+        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--checkbox">
+          <FormLabel htmlFor="96493bfe-2caa-4cb3-80ce-a4a46fc69c10">
+            <Checkbox
+              className="utrecht-form-field__input"
+              id="96493bfe-2caa-4cb3-80ce-a4a46fc69c10"
+              name="mail"
+              value="true"
+            />
+            Brief
+          </FormLabel>
+        </Paragraph>
+      </FormField>
+    </Fieldset>
+  </Canvas>
+</Guideline>
