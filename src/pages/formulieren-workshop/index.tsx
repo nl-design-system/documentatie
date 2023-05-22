@@ -15,7 +15,12 @@ const Home = () => {
         <UnorderedList>
           <UnorderedListItem>
             <Link className="utrecht-link" to="formulieren-workshop/voorbeeld-met-fouten-1">
-              Voorbeeld formulier
+              Graffiti formulier met fouten #1
+            </Link>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            <Link className="utrecht-link" to="formulieren-workshop/voorbeeld-met-fouten-2">
+              Graffiti formulier met fouten #2
             </Link>
           </UnorderedListItem>
         </UnorderedList>
