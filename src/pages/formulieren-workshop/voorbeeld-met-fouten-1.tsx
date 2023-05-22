@@ -42,7 +42,7 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data, errors);
-  const useLinkedId = () => (unlinkedLables ? undefined : useId());
+  const useLinkedId = (label) => (unlinkedLables === 'true' || unlinkedLables === label ? undefined : useId());
 
   const { search } = useLocation();
   const searchParams = new URLSearchParams(search);
@@ -57,19 +57,19 @@ const VoorbeeldMetFouten1 = (props: VoorbeeldMetFoutenProps) => {
   const unlinkedLables = searchParams.get('unlinkedLables') || props.unlinkedLables;
 
   const formHeadingId = useId();
-  const straatnaamId = useLinkedId();
-  const huisnummerId = useLinkedId();
-  const huisnummerToevoegingId = useLinkedId();
-  const postcodeId = useLinkedId();
-  const woonplaatsId = useLinkedId();
-  const antiGraffitiCoatingId = useLinkedId();
-  const opmerkingenId = useLinkedId();
-  const achternaamId = useLinkedId();
-  const tussenvoegselsId = useLinkedId();
-  const voorlettersId = useLinkedId();
-  const geslachtId = useLinkedId();
-  const emailId = useLinkedId();
-  const phoneId = useLinkedId();
+  const straatnaamId = useLinkedId('straatnaam');
+  const huisnummerId = useLinkedId('huisnummer');
+  const huisnummerToevoegingId = useLinkedId('huisnummerToevoeging');
+  const postcodeId = useLinkedId('poscode');
+  const woonplaatsId = useLinkedId('woonplaats');
+  const antiGraffitiCoatingId = useLinkedId('antiGraffitiCoating');
+  const opmerkingenId = useLinkedId('opmerkingen');
+  const achternaamId = useLinkedId('achternaam');
+  const tussenvoegselsId = useLinkedId('tussenvoegsels');
+  const voorlettersId = useLinkedId('voorletters');
+  const geslachtId = useLinkedId('geslacht');
+  const emailId = useLinkedId('email');
+  const phoneId = useLinkedId('phone');
 
   return (
     <Layout>
