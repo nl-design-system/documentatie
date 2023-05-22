@@ -3,7 +3,7 @@ title: Wachtindicatie
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Wachtindicatie
-sidebar_position: 7
+sidebar_position: 6
 pagination_label: Formulieren - Wachtindicatie
 description: Richtlijnen voor formulieren - Wachtindicatie.
 keywords:

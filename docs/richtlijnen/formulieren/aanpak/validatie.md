@@ -3,7 +3,7 @@ title: Validatie en foutpreventie
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Validatie en foutpreventie
-sidebar_position: 8
+sidebar_position: 7
 pagination_label: Formulieren - Validatie en foutpreventie
 description: Richtlijnen voor formulieren - Validatie en foutpreventie
 keywords:

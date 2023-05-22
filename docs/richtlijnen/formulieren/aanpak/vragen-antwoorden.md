@@ -3,7 +3,7 @@ title: Vragen en antwoorden
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Vragen en antwoorden
-sidebar_position: 5
+sidebar_position: 4
 pagination_label: Formulieren - Vragen en antwoorden
 description: Richtlijnen voor formulieren - Vragen en antwoorden.
 keywords:
@@ -17,12 +17,6 @@ keywords:
 # Richtlijnen voor formulieren: Vragen en antwoorden
 
 _Status: **In ontwikkeling**_
-
-## Zorg voor duidelijk taalgebruik
-
-Zorg dat een gebruiker de vraag begrijpt. Het tekstlabel dient zo duidelijk en beschrijvend mogelijk te zijn en waar nodig kan er extra hulp geboden worden. Zie het onderwerp Hulp en ondersteuning voor meer informatie hierover.
-
-[Raadpleeg de algemene content richtlijnen](https://hackmd.io/U-WN8Is9Q62y1auHEbTBhQ) voor taal en taalgebruik.
 
 ## Houd vragen kort en concreet
 
