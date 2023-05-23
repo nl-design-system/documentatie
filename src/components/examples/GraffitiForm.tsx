@@ -22,6 +22,7 @@ import {
 import clsx from 'clsx';
 import React, { useId } from 'react';
 import { useForm } from 'react-hook-form';
+import style from './GraffitiForm.module.css';
 
 interface VoorbeeldMetFoutenProps {
   noAutoComplete?: string[] | true;
@@ -34,6 +35,7 @@ interface VoorbeeldMetFoutenProps {
   colorOnlyError?: string[];
   unlinkedLables?: string[] | true;
   validationMode?: 'onBlur' | 'onChange' | 'all' | 'onSubmit' | 'onTouched';
+  telNational?: boolean;
 }
 
 export const GraffitiForm = ({
@@ -47,6 +49,7 @@ export const GraffitiForm = ({
   colorOnlyError = [],
   unlinkedLables = [],
   validationMode = 'onSubmit',
+  telNational = false,
 }: VoorbeeldMetFoutenProps) => {
   const {
     register,
@@ -73,15 +76,15 @@ export const GraffitiForm = ({
 
   return (
     <Layout>
-      <PageContent className="voorbeeld-theme">
+      <PageContent className={clsx('voorbeeld-theme', style['voorbeeld-theme--extensions'])}>
+        {' '}
         <main>
           <Heading1>Voorbeeld formulier met fouten</Heading1>
-          <form onSubmit={handleSubmit(onSubmit)} aria-labelledby={formHeadingId}>
+          <form onSubmit={handleSubmit(onSubmit)} aria-labelledby={formHeadingId} className={style['example-form']}>
             <Heading2 id={formHeadingId}>Graffiti-schoonmaakregeling aanvragen</Heading2>
             <Paragraph>
               Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
-              keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u{' '}
-              <Link to="../formulieren-workshop">de vervuiling meteen melden</Link>.
+              keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u de vervuiling meteen melden.
             </Paragraph>
             {astrixOnly && <Paragraph>Velden met een * zijn {defaultOptional ? 'verplicht' : 'optioneel'}</Paragraph>}
             <Heading3>Gegevens pand</Heading3>
@@ -110,6 +113,7 @@ export const GraffitiForm = ({
                 }
                 invalid={!!errors['straatnaam']}
                 aria-describedby={`${straatnaamId}-description`}
+                className={style['utrecht-textbox--example-street-name']}
               />
             </FormField>
             <FormField type="text">
@@ -134,6 +138,7 @@ export const GraffitiForm = ({
                   id={huisnummerId}
                   aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
+                  className={style['utrecht-textbox--example-house-number']}
                 />
               ) : (
                 <Textbox
@@ -143,6 +148,7 @@ export const GraffitiForm = ({
                   inputMode="numeric"
                   aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
+                  className={style['utrecht-textbox--example-house-number']}
                 />
               )}
             </FormField>
@@ -166,6 +172,7 @@ export const GraffitiForm = ({
                 type="text"
                 id={huisnummerToevoegingId}
                 aria-describedby={`${huisnummerToevoegingId}-description`}
+                className={style['utrecht-textbox--example-house-number-addition']}
               />
             </FormField>
             <FormField type="text">
@@ -192,6 +199,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${postcodeId}-description`}
                 invalid={!!errors['postcode']}
+                className={style['utrecht-textbox--example-postal-code-nl']}
               />
             </FormField>
             <FormField type="text">
@@ -218,6 +226,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${woonplaatsId}-description`}
                 invalid={!!errors['woonplaats']}
+                className={style['utrecht-textbox--example-woonplaats']}
               />
             </FormField>
             <FormField>
@@ -333,6 +342,7 @@ export const GraffitiForm = ({
                 }
                 invalid={!!errors['achternaam']}
                 aria-describedby={`${achternaamId}-description`}
+                className={style['utrecht-textbox--example-family-name']}
               />
             </FormField>
             <FormField type="text">
@@ -362,6 +372,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${tussenvoegselsId}-description`}
                 invalid={!!errors['tussenvoegsels']}
+                className={style['utrecht-textbox--example-voorvoegsel']}
               />
             </FormField>
             <FormField type="text">
@@ -388,6 +399,7 @@ export const GraffitiForm = ({
                 id={voorlettersId}
                 invalid={!!errors['voorletters']}
                 aria-describedby={`${voorlettersId}-description`}
+                className={style['utrecht-textbox--example-voorletters']}
               />
             </FormField>
             {unnecessaryQuestions === true ||
@@ -469,6 +481,7 @@ export const GraffitiForm = ({
                 autoComplete={noAutoComplete === true || noAutoComplete.includes('email') ? undefined : 'email'}
                 invalid={!!errors['email']}
                 aria-describedby={`${emailId}-description`}
+                className={style['utrecht-textbox--example-mail']}
               />
             </FormField>
             <FormField type="text">
@@ -491,9 +504,18 @@ export const GraffitiForm = ({
                 {...register('telefoonnummer', { required: 'Verplicht: Vergeet niet je telefoonnummer in te vullen' })}
                 type="tel"
                 id={phoneId}
-                autoComplete={noAutoComplete === true || noAutoComplete.includes('telefoonnummer') ? undefined : 'tel'}
+                autoComplete={
+                  noAutoComplete === true || noAutoComplete.includes('telefoonnummer')
+                    ? undefined
+                    : telNational
+                    ? 'tel-national'
+                    : 'tel'
+                }
                 invalid={!!errors['telefoonnummer']}
                 aria-describedby={`${phoneId}-description`}
+                className={
+                  telNational ? style['utrecht-textbox--example-tel-national'] : style['utrecht-textbox--example-tel']
+                }
               />
             </FormField>
             <ButtonGroup>
