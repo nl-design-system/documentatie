@@ -52,7 +52,7 @@ const Home = () => {
             'De naam van het formulier of de stap van het formulier staat niet in de titel van de browser tab of geschiedenis',
             'Onduidelijke invoerfoutmelding: “Invoer klopt niet! Pas het aan!”',
             'Maximum lengte te kort: max 6 voor postcode, minder dan 200 voor voornaam of achternaam, maximaal 10 voor telefoonnummer',
-            'Dropdown menu met 5 opties of minder',
+            'Select met 5 opties of minder',
           ]}
         />
       </PageContent>
