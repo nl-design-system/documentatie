@@ -36,7 +36,34 @@ interface VoorbeeldMetFoutenProps {
   unlinkedLables?: string[] | true;
   validationMode?: 'onBlur' | 'onChange' | 'all' | 'onSubmit' | 'onTouched';
   telNational?: boolean;
+  postalCodeSpace?: boolean;
+  postalCodePattern?: boolean;
 }
+
+const RadioGroup = ({ children, description, label }) => {
+  const descriptionId = description ? useId() : null;
+  return (
+    <Fieldset role="radiogroup" aria-describedby={description ? descriptionId : undefined}>
+      {label ? <FieldsetLegend>{label}</FieldsetLegend> : null}
+      {description ? <div id={descriptionId}>{description}</div> : null}
+      {children}
+    </Fieldset>
+  );
+};
+
+const RadioOption = ({ children, description }) => (
+  <FormField type="radio">
+    <p className="utrecht-form-field__label utrecht-form-field__label--radio">{children}</p>
+    {description ? <div className="utrecht-form-field__description">{description}</div> : null}
+  </FormField>
+);
+
+const CheckboxOption = ({ children, description }) => (
+  <FormField type="checkbox">
+    <p className="utrecht-form-field__label utrecht-form-field__label--checkbox">{children}</p>
+    {description ? <div className="utrecht-form-field__description">{description}</div> : null}
+  </FormField>
+);
 
 export const GraffitiForm = ({
   noAutoComplete = [],
@@ -50,6 +77,8 @@ export const GraffitiForm = ({
   unlinkedLables = [],
   validationMode = 'onSubmit',
   telNational = false,
+  postalCodeSpace,
+  postalCodePattern = true,
 }: VoorbeeldMetFoutenProps) => {
   const {
     register,
@@ -191,7 +220,16 @@ export const GraffitiForm = ({
                 </FormFieldDescription>
               )}
               <Textbox
-                {...register('postcode', { required: 'Verplicht: Vergeet niet een postcode in te vullen' })}
+                {...register('postcode', {
+                  required: 'Verplicht: Vergeet niet een postcode in te vullen',
+                  pattern: postalCodePattern
+                    ? postalCodeSpace === true
+                      ? /^\d{4} [A-Za-z]{2}$/
+                      : postalCodeSpace === false
+                      ? /^\d{4}[A-Za-z]{2}$/
+                      : /^\s*\d{4}\s*[A-Za-z]{2}\s*$/
+                    : undefined,
+                })}
                 type="text"
                 id={postcodeId}
                 autoComplete={
@@ -232,7 +270,7 @@ export const GraffitiForm = ({
             <FormField>
               <Fieldset>
                 <FieldsetLegend>Heeft uw pand een anti-graffiti-coating?</FieldsetLegend>
-                <Paragraph className={clsx('utrecht-form-field__label')}>
+                <CheckboxOption>
                   {!colorOnlyError.includes('anti-graffiti-coating') && errors['anti-graffiti-coating'] && (
                     <FormFieldDescription
                       id={`${antiGraffitiCoatingId}-description`}
@@ -242,7 +280,7 @@ export const GraffitiForm = ({
                       {errors['anti-graffiti-coating']?.message.toString()}
                     </FormFieldDescription>
                   )}
-                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-true`}>
+                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-true`} type="radio">
                     {checkboxForRadio === true || checkboxForRadio.includes('anti-graffiti-coating') ? (
                       <Checkbox
                         {...register('anti-graffiti-coating')}
@@ -264,9 +302,9 @@ export const GraffitiForm = ({
                     )}
                     Ja
                   </FormLabel>
-                </Paragraph>
-                <Paragraph className={clsx('utrecht-form-field__label')}>
-                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-false`}>
+                </CheckboxOption>
+                <CheckboxOption>
+                  <FormLabel htmlFor={`${antiGraffitiCoatingId}-false`} type="radio">
                     {checkboxForRadio === true || checkboxForRadio.includes('anti-graffiti-coating') ? (
                       <Checkbox
                         {...register('anti-graffiti-coating')}
@@ -288,7 +326,7 @@ export const GraffitiForm = ({
                     )}
                     Nee
                   </FormLabel>
-                </Paragraph>
+                </CheckboxOption>
               </Fieldset>
             </FormField>
             <FormField type="text">
@@ -350,7 +388,7 @@ export const GraffitiForm = ({
                 <FormLabel htmlFor={tussenvoegselsId}>
                   {unclearLabel === true || unclearLabel.includes('tussenvoegsels')
                     ? 'Tussenvoegsel(s)'
-                    : 'Tussenvoegsel een of meerdere'}
+                    : 'Tussenvoegsels'}
                   {!defaultOptional && <span> {astrixOnly ? '*' : '(optioneel)'}</span>}
                 </FormLabel>
               </Paragraph>
@@ -380,7 +418,7 @@ export const GraffitiForm = ({
                 <FormLabel htmlFor={voorlettersId}>
                   {unclearLabel === true || unclearLabel.includes('voorletters')
                     ? 'Voorletter(s)'
-                    : 'Voorletters (een of meerdere)'}
+                    : 'Voorletters (1 of meerdere)'}
                   {defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
                 </FormLabel>
               </Paragraph>
@@ -404,11 +442,9 @@ export const GraffitiForm = ({
             </FormField>
             {unnecessaryQuestions === true ||
               (unnecessaryQuestions.includes('gender') && (
-                <FormField type="radio">
-                  <Fieldset>
-                    <FieldsetLegend>
-                      Geslacht{defaultOptional && <span> {astrixOnly ? '*' : '(verplicht)'}</span>}
-                    </FieldsetLegend>
+                <RadioGroup
+                  label={`Geslacht ${defaultOptional ? (astrixOnly ? '*' : '(verplicht)') : ''}`}
+                  description={
                     <FormFieldDescription
                       id={`${geslachtId}-desciption`}
                       invalid={!!errors['geslacht']}
@@ -416,47 +452,48 @@ export const GraffitiForm = ({
                     >
                       Selecteer 'Niet relevant' als u geen keuze wilt maken in geslacht
                     </FormFieldDescription>
-                    <Paragraph>
-                      <FormLabel htmlFor={`${geslachtId}-man`}>
-                        <RadioButton
-                          {...register('geslacht', { required: true })}
-                          className="utrecht-form-field__input"
-                          id={`${geslachtId}-man`}
-                          value="man"
-                          aria-describedby={`${geslachtId}-desciption`}
-                          invalid={!!errors['geslacht']}
-                        />
-                        Man
-                      </FormLabel>
-                    </Paragraph>
-                    <Paragraph>
-                      <FormLabel htmlFor={`${geslachtId}-vrouw`}>
-                        <RadioButton
-                          {...register('geslacht', { required: true })}
-                          className="utrecht-form-field__input"
-                          id={`${geslachtId}-vrouw`}
-                          value="vrouw"
-                          aria-describedby={`${geslachtId}-desciption`}
-                          invalid={!!errors['geslacht']}
-                        />
-                        Vrouw
-                      </FormLabel>
-                    </Paragraph>
-                    <Paragraph>
-                      <FormLabel htmlFor={`${geslachtId}-none`}>
-                        <RadioButton
-                          {...register('geslacht', { required: true })}
-                          className="utrecht-form-field__input"
-                          id={`${geslachtId}-none`}
-                          value="none"
-                          aria-describedby={`${geslachtId}-desciption`}
-                          invalid={!!errors['geslacht']}
-                        />
-                        Niet relevant
-                      </FormLabel>
-                    </Paragraph>
-                  </Fieldset>
-                </FormField>
+                  }
+                >
+                  <RadioOption>
+                    <FormLabel htmlFor={`${geslachtId}-man`} type="radio">
+                      <RadioButton
+                        {...register('geslacht', { required: true })}
+                        className="utrecht-form-field__input"
+                        id={`${geslachtId}-man`}
+                        value="man"
+                        aria-describedby={`${geslachtId}-desciption`}
+                        invalid={!!errors['geslacht']}
+                      />
+                      Man
+                    </FormLabel>
+                  </RadioOption>
+                  <RadioOption>
+                    <FormLabel htmlFor={`${geslachtId}-vrouw`} type="radio">
+                      <RadioButton
+                        {...register('geslacht', { required: true })}
+                        className="utrecht-form-field__input"
+                        id={`${geslachtId}-vrouw`}
+                        value="vrouw"
+                        aria-describedby={`${geslachtId}-desciption`}
+                        invalid={!!errors['geslacht']}
+                      />
+                      Vrouw
+                    </FormLabel>
+                  </RadioOption>
+                  <RadioOption>
+                    <FormLabel htmlFor={`${geslachtId}-none`} type="radio">
+                      <RadioButton
+                        {...register('geslacht', { required: true })}
+                        className="utrecht-form-field__input"
+                        id={`${geslachtId}-none`}
+                        value="none"
+                        aria-describedby={`${geslachtId}-desciption`}
+                        invalid={!!errors['geslacht']}
+                      />
+                      Niet relevant
+                    </FormLabel>
+                  </RadioOption>
+                </RadioGroup>
               ))}
             <FormField type="text">
               <Paragraph>

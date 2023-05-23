@@ -11,6 +11,8 @@
   --alphanumeric-inline-size: 1.1ch;
   --char-inline-size: 1.2ch;
   --_char-inline-size: var(--char-inline-size);
+  --utrecht-radio-button-size: 24px;
+  --utrecht-action-submit-cursor: pointer;
 }
 
 .utrecht-textbox--example-house-number,
@@ -105,4 +107,6 @@
 .voorbeeld-theme--extensions {
   --utrecht-button-group-margin-block-start: 1em;
   --utrecht-form-label-font-weight: 600;
+  --utrecht-form-label-checkbox-font-weight: 400;
+  --utrecht-form-label-radio-font-weight: 400;
 }
