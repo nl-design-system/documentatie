@@ -59,7 +59,7 @@ export const Bingo = ({ items }: BingoProps) => {
               defaultChecked={bingoNumber === 'Free'}
               disabled={bingoNumber === 'Free'}
             />
-            <label htmlFor={`number-${bingoNumber}`} className={style['bingo__label']} title={items[bingoNumber]}>
+            <label htmlFor={`number-${bingoNumber}`} className={style['bingo__label']}>
               {bingoNumber}
             </label>
           </div>
