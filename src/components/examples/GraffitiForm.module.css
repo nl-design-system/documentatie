@@ -1,0 +1,108 @@
+.example-form {
+  --utrecht-space-around: 1;
+  margin-block-end: 2em;
+  /* maximum character width of a number in the current font */
+  --number-inline-size: calc(0.667 * 1ch + 0.332 * 1em);
+
+  /* maximum character width of a letter in the current font, for example, the letter "W" */
+  --letter-inline-size: 1.6ch;
+
+  /* average character width of letters and numbers in the current font */
+  --alphanumeric-inline-size: 1.1ch;
+  --char-inline-size: 1.2ch;
+  --_char-inline-size: var(--char-inline-size);
+}
+
+.utrecht-textbox--example-house-number,
+.utrecht-textbox--example-house-number-letter,
+.utrecht-textbox--example-house-number-addition,
+.utrecht-textbox--example-street-name,
+.utrecht-textbox--example-postal-code-nl,
+.utrecht-textbox--example-woonplaats,
+.utrecht-textbox--example-voorletters,
+.utrecht-textbox--example-family-name,
+.utrecht-textbox--example-given-name,
+.utrecht-textbox--example-tel,
+.utrecht-textbox--example-tel-national,
+.utrecht-textbox--example-voorvoegsel,
+.utrecht-textbox--example-mail {
+  max-inline-size: min(
+    calc(
+      var(--_char-inline-size, 1ch) * var(--max-length, 0) + var(--utrecht-textbox-padding-inline-start) +
+        var(--utrecht-textbox-padding-inline-end)
+    ),
+    100%
+  );
+}
+
+.utrecht-textbox--example-house-number {
+  /* numeric input has numeric character size */
+  --_char-inline-size: var(--number-inline-size);
+
+  /* max length for house number can depend on the region */
+  /* United States might have house numbers in the ten thousands, The Netherlands no house number highter than 9999 */
+  --max-length: 5;
+}
+
+.utrecht-textbox--example-street-name {
+  /* numeric input has numeric character size */
+  --_char-inline-size: var(--number-inline-size);
+
+  /* max length for house number can depend on the region */
+  /* United States might have house numbers in the ten thousands, The Netherlands no house number highter than 9999 */
+  --max-length: 30; /* picked 30 at random */
+}
+
+.utrecht-textbox--example-given-name,
+.utrecht-textbox--example-family-name {
+  --_char-inline-size: var(--letter-inline-size);
+  /* space for 10 digits and 3 white space separators */
+  --max-length: 30;
+}
+
+.utrecht-textbox--example-tel-national {
+  --_char-inline-size: var(--number-inline-size);
+  /* space for 10 digits and 3 white space separators */
+  --max-length: 10;
+}
+.utrecht-textbox--example-tel {
+  --_char-inline-size: var(--number-inline-size);
+  --max-length: 20;
+}
+.utrecht-textbox--example-mail {
+  --max-length: 30;
+}
+
+.utrecht-textbox--example-voorletters {
+  --_char-inline-size: var(--letter-inline-size);
+  --max-length: 5; /* TODO: Support 95% percent of length, randomly picked 5 and randomly pick 95% */
+}
+
+.utrecht-textbox--example-voorvoegsel {
+  /* The longest Dutch "voorvoegsel" is 10 characters */
+  --_char-inline-size: var(--letter-inline-size);
+  --max-length: 10;
+}
+
+.utrecht-textbox--example-house-number-addition {
+  --_char-inline-size: var(--letter-inline-size);
+  --max-length: 3;
+}
+
+.utrecht-textbox--example-postal-code-nl {
+  /* ideally postal code is a monospaced font */
+  /* should fit both wide and small postal codes: "1111 II" and "8888 WW" */
+  --_char-inline-size: var(--alphanumeric-inline-size);
+  --max-length: 7; /* TODO: Support 95% percent of length, randomly picked 5 and randomly pick 95% */
+}
+
+.utrecht-textbox--example-woonplaats {
+  /* max length 30 is inaccurate, it is based on the longest dutch municipality name as of 2023-05-22 */
+  /* Kollumerland en Nieuwkruisland */
+  --max-length: 30;
+}
+
+.voorbeeld-theme--extensions {
+  --utrecht-button-group-margin-block-start: 1em;
+  --utrecht-form-label-font-weight: 600;
+}
