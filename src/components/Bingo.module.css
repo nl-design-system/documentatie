@@ -23,6 +23,10 @@
   padding: 10px 0;
 }
 
+.bingo__number:focus-within > .bingo__label {
+  background-color: var(--nlds-focus-background-color);
+}
+
 .bingo__input:checked ~ .bingo__label {
   background-color: var(--nlds-status-stable-background-color);
   color: var(--nlds-status-stable-color);
