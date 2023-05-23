@@ -15,12 +15,12 @@ const Home = () => {
         <Heading1>Formulieren Workshop - 23 mei 2023</Heading1>
         <UnorderedList>
           <UnorderedListItem>
-            <Link className="utrecht-link" to="bingo/voorbeeld-met-fouten-1">
+            <Link className="utrecht-link" to="/bingo/voorbeeld-met-fouten-1">
               Graffiti formulier met fouten #1
             </Link>
           </UnorderedListItem>
           <UnorderedListItem>
-            <Link className="utrecht-link" to="bingo/voorbeeld-met-fouten-2">
+            <Link className="utrecht-link" to="/bingo/voorbeeld-met-fouten-2">
               Graffiti formulier met fouten #2
             </Link>
           </UnorderedListItem>
