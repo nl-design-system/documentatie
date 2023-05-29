@@ -294,7 +294,3 @@ li a {
   height: 100%;
   padding-block-start: 27px;
 }
-
-.navbar__item--github-link {
-  display: flex;
-}
