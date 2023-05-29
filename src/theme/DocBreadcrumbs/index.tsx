@@ -11,12 +11,13 @@ import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
-  const sidebarBreadcrumbs = useSidebarBreadcrumbs().map((item) => {
-    if (item.type === 'category') {
-      return { ...item, ...item.items.find((i) => i.type === 'link'), label: item.label };
-    }
-    return item;
-  });
+  const sidebarBreadcrumbs =
+    useSidebarBreadcrumbs()?.map((item) => {
+      if (item.type === 'category') {
+        return { ...item, ...item.items.find((i) => i.type === 'link'), label: item.label };
+      }
+      return item;
+    }) || [];
 
   const homeHref = useBaseUrl('/');
   const mobileSidebar = useNavbarMobileSidebar();
@@ -42,7 +43,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
         </div>
       ) : (
         <ul className={clsx(styles['breadcrumbs'])} itemScope itemType="https://schema.org/BreadcrumbList">
-          {breadcrumbs.map(({ href, label }, i, all) => {
+          {breadcrumbs?.map(({ href, label }, i, all) => {
             const isLast = all.length - 1 === i;
             return (
               <>
