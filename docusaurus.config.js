@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const navbar = require('./navConfig');
-const footer = require('./footerConfig');
+const navbar = require('./navConfig')
+const footer = require('./footerConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -29,7 +29,6 @@ const config = {
           sidebarPath: require.resolve('./sidebarConfig.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
-          breadcrumbs: false,
         },
         theme: {
           customCss: [
@@ -81,6 +80,6 @@ const config = {
       },
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config
