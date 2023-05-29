@@ -6,6 +6,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Richtlijnen',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/richtlijnen/sidebar'),
     },
@@ -14,6 +15,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Componenten',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/componenten/sidebar'),
     },
@@ -22,6 +24,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Meedoen',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/meedoen/sidebar'),
     },
@@ -30,6 +33,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Voorbeelden',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/voorbeelden/sidebar'),
     },
@@ -38,6 +42,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Onderzoek',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/onderzoek/sidebar'),
     },
@@ -46,10 +51,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'Videos',
+      collapsible: false,
       className: 'sidebar__main-category',
       items: require('./docs/project/sidebar'),
     },
   ],
-};
+}
 
-module.exports = sidebars;
+module.exports = sidebars
