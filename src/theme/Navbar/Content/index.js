@@ -1,9 +1,6 @@
 import React from 'react';
-import {useThemeConfig, ErrorCauseBoundary} from '@docusaurus/theme-common';
-import {
-  splitNavbarItems,
-  useNavbarMobileSidebar,
-} from '@docusaurus/theme-common/internal';
+import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
+import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
@@ -15,7 +12,7 @@ function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
 }
-function NavbarItems({items}) {
+function NavbarItems({ items }) {
   return (
     <>
       {items.map((item, i) => (
@@ -26,16 +23,17 @@ function NavbarItems({items}) {
               `A theme navbar item failed to render.
 Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
 ${JSON.stringify(item, null, 2)}`,
-              {cause: error},
+              { cause: error },
             )
-          }>
+          }
+        >
           <NavbarItem {...item} />
         </ErrorCauseBoundary>
       ))}
     </>
   );
 }
-function NavbarContentLayout({left, right}) {
+function NavbarContentLayout({ left, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
