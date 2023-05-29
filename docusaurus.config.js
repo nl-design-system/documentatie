@@ -42,6 +42,11 @@ const config = {
   themeConfig: {
     navbar,
     footer,
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 2,
