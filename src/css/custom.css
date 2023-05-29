@@ -181,18 +181,15 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .navbar__link {
   font-size: 18px;
   position: relative;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: transparent;
 }
 
 /* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
-.navbar__link--active:not([href="/"]):after,
-.navbar__link:hover:after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: #148839;
-  position: absolute;
-  bottom: -20px;
-  left: 0px;
+.navbar__link--active:not(.navbar__brand),
+.navbar__link:not(.navbar__item--github-link):hover {
+  border-bottom-color: #148839;
 }
 
 .navbar--dark {
@@ -201,7 +198,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__inner {
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  padding-inline: var(--ifm-navbar-padding-horizontal);
+  min-height: 80px;
 }
 
 .navbar__brand {
@@ -290,4 +288,13 @@ li a {
 
 .voorbeeld-theme {
   --utrecht-button-group-margin-block-start: 20px;
+}
+
+.navbar__item {
+  height: 100%;
+  padding-block-start: 27px;
+}
+
+.navbar__item--github-link {
+  display: flex;
 }
