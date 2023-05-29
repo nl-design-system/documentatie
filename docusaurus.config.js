@@ -50,6 +50,15 @@ const config = {
         maxHeadingLevel: 2,
       },
     },
+  i18n: {
+    defaultLocale: 'nl',
+    locales: ['nl'],
+    localeConfigs: {
+      nl: {
+        htmlLang: 'nl-NL',
+      },
+    },
+  },
 };
 
 module.exports = config;
