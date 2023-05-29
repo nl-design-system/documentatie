@@ -44,22 +44,18 @@ export default function Home() {
       title={`${siteConfig.title} - homepage`}
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
     >
-      <HomepageHero
-        title="Over het NL Design System"
-        ctaLink="meedoen/introductie"
-        cta="Meer over het NL Design System"
-      >
-        {
-          <>
-            <p>
-              In het NL Design System verzamelen we principes, handvatten, elementen, patronen en richtlijnen. Zo kan de
-              hele Nederlandse overheid samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online
-              dienstverlening.
-            </p>
-          </>
-        }
-      </HomepageHero>
       <main>
+        <HomepageHero
+          title="Over het NL Design System"
+          ctaLink="meedoen/introductie"
+          cta="Meer over het NL Design System"
+        >
+          <p>
+            In het NL Design System verzamelen we principes, handvatten, elementen, patronen en richtlijnen. Zo kan de
+            hele Nederlandse overheid samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online
+            dienstverlening.
+          </p>
+        </HomepageHero>
         <HomepageActions>
           <HomepageAction title="Componenten" href="componenten/" icon={OGComponenten}>
             <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
