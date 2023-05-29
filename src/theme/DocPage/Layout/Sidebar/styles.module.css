@@ -1,0 +1,22 @@
+:root {
+  --doc-sidebar-width: 300px;
+  --doc-sidebar-hidden-width: 48px;
+}
+
+.docSidebarContainer {
+  display: none;
+}
+
+@media (min-width: 997px) {
+  .docSidebarContainer {
+    display: block;
+  }
+
+  .sidebarViewport {
+    top: 0;
+    position: sticky;
+    height: calc(100% - var(--ifm-navbar-height));
+    max-height: 100vh;
+    /* overflow-x: scroll; */
+  }
+}

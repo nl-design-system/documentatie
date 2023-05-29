@@ -4,6 +4,7 @@ import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
+import { matchPath, useLocation } from '@docusaurus/router';
 
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,11 +20,15 @@ export default function DocBreadcrumbs(): JSX.Element | null {
       return item;
     }) || [];
 
+  console.log('sidebarBreadcrumbs', useSidebarBreadcrumbs());
+
   const homeHref = useBaseUrl('/');
   const mobileSidebar = useNavbarMobileSidebar();
 
   const breadcrumbs = [{ href: homeHref, label: 'Home' }, ...sidebarBreadcrumbs];
   const mobileBreadcrumb = breadcrumbs[breadcrumbs.length - 1] || breadcrumbs[0];
+
+  console.log(useLocation().pathname);
 
   if (!breadcrumbs) {
     return null;

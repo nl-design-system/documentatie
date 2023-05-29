@@ -1,11 +1,11 @@
 ---
-title: Voorbeelden
+title: Voorbeelden - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Voorbeelden
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Voorbeelden
-description: Voorbeelden
+pagination_label: Overzicht
+description: Voorbeelden Overzicht
 keywords:
   - index
   - voorbeelden

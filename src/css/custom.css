@@ -195,6 +195,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .navbar--dark {
   --ifm-navbar-background-color: var(--ifm-color-primary-darker);
   --ifm-navbar-link-hover-color: white;
+  --ifm-menu-color-active: white;
 }
 
 .navbar__inner {
@@ -293,4 +294,8 @@ li a {
 .navbar__item {
   height: 100%;
   padding-block-start: 27px;
+}
+
+.sidebar__main-category > .menu__list-item-collapsible {
+  display: none;
 }

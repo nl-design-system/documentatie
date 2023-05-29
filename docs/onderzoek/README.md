@@ -1,10 +1,10 @@
 ---
-title: Gebruikers onderzoek
+title: Gebruikers onderzoek - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Onderzoek
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Onderzoek
+pagination_label: Overzicht
 description: Gebruikers onderzoek
 keywords:
   - index
