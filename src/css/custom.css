@@ -307,27 +307,33 @@ li a {
   padding-inline: 0;
 }
 
-.navbar-sidebar__item .menu__link {
-  border-inline-start: 4px solid transparent;
+.menu__link {
   text-decoration: none;
-  color: white;
+  color: var(--nlds-interaction-color);
+  border-inline-start: 4px solid transparent;
 }
 
-.navbar-sidebar__item .menu__link--active {
-  border-color: var(--nlds-navbar-link-active-border-color);
-  background-color: var(--nlds-menu-item-selected-background-color);
-}
-
-.navbar-sidebar__item .menu__link:hover {
+.menu__link--active,
+.menu__link:active {
+  background-color: hsla(0, 0%, 0%, 0.05);
   border-color: var(--nlds-navbar-link-active-border-color);
 }
 
-.navbar-sidebar__item .menu__link:active {
-  background-color: var(--nlds-menu-item-selected-background-color);
+.menu__link:hover {
+  border-color: var(--nlds-navbar-link-active-border-color);
 }
 
 .sidebar__main-category > .menu__list-item-collapsible {
   display: none;
+}
+
+.navbar-sidebar__item .menu__link {
+  color: white;
+}
+
+.navbar-sidebar__item .menu__link--active,
+.navbar-sidebar__item .menu__link:active {
+  background-color: var(--nlds-menu-item-selected-background-color);
 }
 
 .navbar-sidebar .navbar__item--github-link {
