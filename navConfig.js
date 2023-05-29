@@ -11,6 +11,7 @@ module.exports = {
       to: '/',
       position: 'left',
       label: 'Home',
+      activeBaseRegex: '^/$',
     },
     {
       type: 'doc',
