@@ -49,6 +49,9 @@ const config = {
         minHeadingLevel: 2,
         maxHeadingLevel: 2,
       },
+      colorMode: {
+        disableSwitch: true,
+      },
     },
   i18n: {
     defaultLocale: 'nl',
