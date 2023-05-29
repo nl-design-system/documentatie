@@ -15,11 +15,7 @@ import { Document } from '@utrecht/component-library-react';
 
 // Default implementation, that you can customize
 function Root({ children }) {
-  return (
-    <Document className="nlds-theme" lang="nl">
-      {children}
-    </Document>
-  );
+  return <Document className="nlds-theme">{children}</Document>;
 }
 
 export default Root;
