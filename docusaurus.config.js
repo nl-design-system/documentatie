@@ -40,18 +40,15 @@ const config = {
       },
     ],
   ],
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    {
-      navbar,
-      footer,
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 2,
-      },
-      colorMode: {
-        disableSwitch: true,
-      },
+  themeConfig: {
+    navbar,
+    footer,
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 2,
+    },
+    colorMode: {
+      disableSwitch: true,
     },
   i18n: {
     defaultLocale: 'nl',
