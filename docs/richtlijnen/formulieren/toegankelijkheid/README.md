@@ -2,7 +2,7 @@
 title: Inclusie en toegankelijkheid
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Overzicht
+sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Formulieren - Inclusie en toegankelijkheid
 description: Richtlijnen voor formulieren - Inclusie en toegankelijkheid

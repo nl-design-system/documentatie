@@ -354,3 +354,7 @@ li a {
   font-weight: normal;
   padding-inline-start: 6px;
 }
+
+.doc-card-list {
+  margin-block-end: 2em !important;
+}

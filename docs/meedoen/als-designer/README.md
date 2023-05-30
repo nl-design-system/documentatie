@@ -1,11 +1,11 @@
 ---
-title: Meedoen als designer - Overzicht
+title: Meedoen als designer - Introductie
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Overzicht
+sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Index
-description: Meedoen als designer - Overzicht
+description: Meedoen als designer - Introductie
 keywords:
   - index
   - designer
