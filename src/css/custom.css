@@ -202,25 +202,10 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .navbar__inner {
   padding-inline: var(--ifm-navbar-padding-horizontal);
-  min-height: 80px;
+  min-height: 64px;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-
-.navbar__brand {
-  gap: 8px;
-}
-
-.navbar__logo {
-  height: 40px;
-  width: 40px;
-  margin-right: 0;
-}
-
-.navbar__title {
-  font-size: 28px;
-  font-family: var(--nlds-typography-alternative-font-family);
-  font-weight: 600;
-}
-
 .table-of-contents {
   font-size: 18px;
 }
@@ -293,9 +278,15 @@ li a {
   --utrecht-button-group-margin-block-start: 20px;
 }
 
+.navbar__items {
+  flex: initial;
+  gap: 15px;
+}
+
 .navbar__item {
   height: 100%;
   padding-block-start: 27px;
+  padding-inline: 0;
 }
 
 .navbar-sidebar__item {
@@ -311,6 +302,7 @@ li a {
   text-decoration: none;
   color: var(--nlds-interaction-color);
   border-inline-start: 4px solid transparent;
+  border-radius: 0;
 }
 
 .menu__link--active,
@@ -362,4 +354,11 @@ li a {
 
 .doc-card-list {
   margin-block-end: 2em !important;
+}
+
+@media (min-width: 997px) {
+  .navbar__inner {
+    align-items: stretch;
+    min-height: 80px;
+  }
 }

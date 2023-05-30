@@ -4,9 +4,9 @@ import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-comm
 import NavbarItem, { type Props as NavbarItemConfig } from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
-import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
+import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
 import styles from './styles.module.css';
 
@@ -38,8 +38,12 @@ ${JSON.stringify(item, null, 2)}`,
 }
 
 function NavbarContentLayout({ left, right }: { left: ReactNode; right: ReactNode }) {
+  const mobileSidebar = useNavbarMobileSidebar();
+
   return (
     <div className="navbar__inner">
+      {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+
       <div className="navbar__items">{left}</div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
@@ -47,8 +51,6 @@ function NavbarContentLayout({ left, right }: { left: ReactNode; right: ReactNod
 }
 
 export default function NavbarContent(): JSX.Element {
-  const mobileSidebar = useNavbarMobileSidebar();
-
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
 
@@ -59,7 +61,6 @@ export default function NavbarContent(): JSX.Element {
       left={
         // TODO stop hardcoding items?
         <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
           <NavbarItems items={leftItems} />
         </>
