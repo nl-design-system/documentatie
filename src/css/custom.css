@@ -350,9 +350,14 @@ li a {
   border-color: transparent;
 }
 
-.theme-doc-sidebar-item-link-level-3 {
+.theme-doc-sidebar-item-link-level-3,
+.theme-doc-sidebar-item-category-level-3 {
   font-weight: normal;
   padding-inline-start: 6px;
+}
+
+.theme-doc-sidebar-item-link-level-4 {
+  padding-inline-start: 12px;
 }
 
 .doc-card-list {
