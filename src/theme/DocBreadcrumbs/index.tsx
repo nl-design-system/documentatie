@@ -20,15 +20,11 @@ export default function DocBreadcrumbs(): JSX.Element | null {
       return item;
     }) || [];
 
-  console.log('sidebarBreadcrumbs', useSidebarBreadcrumbs());
-
   const homeHref = useBaseUrl('/');
   const mobileSidebar = useNavbarMobileSidebar();
 
   const breadcrumbs = [{ href: homeHref, label: 'Home' }, ...sidebarBreadcrumbs];
   const mobileBreadcrumb = breadcrumbs[breadcrumbs.length - 1] || breadcrumbs[0];
-
-  console.log(useLocation().pathname);
 
   if (!breadcrumbs) {
     return null;
@@ -51,11 +47,8 @@ export default function DocBreadcrumbs(): JSX.Element | null {
           {breadcrumbs?.map(({ href, label }, i, all) => {
             const isLast = all.length - 1 === i;
             return (
-              <>
-                <li
-                  className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}
-                  key={label}
-                >
+              <div key={label}>
+                <li className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}>
                   {isLast ? (
                     label
                   ) : (
@@ -65,7 +58,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
                   )}
                 </li>
                 {!isLast && <IconSlash className={clsx(styles['breadcrumbs__separator'])} />}
-              </>
+              </div>
             );
           })}
         </ul>

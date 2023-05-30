@@ -1,0 +1,28 @@
+.mobile-sidebar__header {
+  background-color: var(--nlds-page-header-background-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 18px;
+  text-align: right;
+}
+
+.navbar-sidebar__header-button {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.navbar-sidebar__header-button:hover {
+  --utrecht-button-hover-color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.navbar-sidebar__header-button:active {
+  color: lightgrey;
+}
+
+.navbar-sidebar__header-button--close:hover {
+  --utrecht-button-hover-background-color: var(--nlds-mobile-sidebar-background-color);
+}

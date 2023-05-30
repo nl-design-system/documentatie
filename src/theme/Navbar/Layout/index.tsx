@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { type ComponentProps } from 'react';
 import clsx from 'clsx';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
+import type { Props } from '@theme/Navbar/Layout';
+
 import styles from './styles.module.css';
-function NavbarBackdrop(props) {
+
+function NavbarBackdrop(props: ComponentProps<'div'>) {
   return <div role="presentation" {...props} className={clsx('navbar-sidebar__backdrop', props.className)} />;
 }
-export default function NavbarLayout({ children }) {
+
+export default function NavbarLayout({ children }: Props): JSX.Element {
   const {
     navbar: { hideOnScroll, style },
   } = useThemeConfig();
