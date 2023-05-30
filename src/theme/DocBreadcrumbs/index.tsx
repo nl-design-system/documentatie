@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import clsx from 'clsx';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
@@ -47,7 +47,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
           {breadcrumbs?.map(({ href, label }, i, all) => {
             const isLast = all.length - 1 === i;
             return (
-              <div key={label}>
+              <Fragment key={label}>
                 <li className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}>
                   {isLast ? (
                     label
@@ -58,7 +58,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
                   )}
                 </li>
                 {!isLast && <IconSlash className={clsx(styles['breadcrumbs__separator'])} />}
-              </div>
+              </Fragment>
             );
           })}
         </ul>
