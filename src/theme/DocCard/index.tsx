@@ -22,14 +22,16 @@ function CardLayout({
   icon = '',
   title,
   description,
+  linkDescription,
 }: {
   href: string;
+  linkDescription: string;
   icon?: ReactNode;
   title: string;
   description?: string;
 }): JSX.Element {
   return (
-    <CardContainer href={href}>
+    <div className={clsx('card', styles.card)}>
       <h2 className={clsx(styles.cardTitle)} title={title}>
         {icon} {title}
       </h2>
@@ -38,7 +40,10 @@ function CardLayout({
           {description}
         </p>
       )}
-    </CardContainer>
+      <Link href={href} className={clsx(styles.cardLink)}>
+        {linkDescription}
+      </Link>
+    </div>
   );
 }
 
@@ -54,6 +59,7 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element 
     <CardLayout
       href={href}
       title={item.label}
+      linkDescription={`Bekijk ${item.label.toLowerCase()} overzicht`}
       description={
         item.description ??
         translate(
@@ -72,8 +78,14 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element 
 
 function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
   const doc = useDocById(item.docId ?? undefined);
-
-  return <CardLayout href={item.href} title={item.label} description={item.description ?? doc?.description} />;
+  return (
+    <CardLayout
+      linkDescription={`Bekijk ${doc.title.toLowerCase()}`}
+      href={item.href}
+      title={item.label}
+      description={item.description ?? doc?.description}
+    />
+  );
 }
 
 export default function DocCard({ item }: Props): JSX.Element {
