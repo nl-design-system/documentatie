@@ -56,6 +56,6 @@ const sidebars = {
       items: require('./docs/project/sidebar'),
     },
   ],
-}
+};
 
-module.exports = sidebars
+module.exports = sidebars;
