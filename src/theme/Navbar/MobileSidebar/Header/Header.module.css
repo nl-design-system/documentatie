@@ -3,14 +3,17 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-block: 18px;
   text-align: right;
+  min-height: 64px;
+  align-items: center;
 }
 
 .navbar-sidebar__header-button {
   color: white;
   font-weight: normal;
   font-size: 18px;
+  margin: 8px;
+  height: 100%;
 }
 
 .navbar-sidebar__header-button:hover {
