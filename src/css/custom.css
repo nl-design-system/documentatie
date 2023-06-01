@@ -297,27 +297,17 @@ li a {
   padding-inline: 0;
 }
 
-.navbar__item {
+.navbar {
   --utrecht-button-subtle-color: white;
   --utrecht-link-color: white;
-}
-
-.navbar__item:hover {
   --utrecht-item-subtle-hover-color: white;
   --utrecht-button-subtle-hover-background-color: #004152;
   --utrecht-link-hover-color: white;
   --utrecht-link-hover-background-color: #004152;
-}
-
-.navbar__item:active {
   --utrecht-button-subtle-active-color: white;
   --utrecht-button-subtle-active-background-color: #224a62;
   --utrecht-link-active-color: white;
   --utrecht-link-active-background-color: #224a62;
-}
-.navbar__item:active:focus {
-  --utrecht-button-subtle-active-color: var(--nlds-focus-color);
-  --utrecht-link-active-color: var(--nlds-focus-color);
 }
 
 .navbar-sidebar__item {
@@ -393,6 +383,10 @@ li a {
   .navbar__inner {
     align-items: stretch;
     min-height: 80px;
+  }
+
+  .navbar .navbar__toggle {
+    display: none;
   }
 }
 
