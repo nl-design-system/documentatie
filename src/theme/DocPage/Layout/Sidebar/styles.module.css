@@ -10,13 +10,13 @@
 @media (min-width: 997px) {
   .docSidebarContainer {
     display: block;
+    position: sticky;
+    height: calc(100vh - 80px);
+    top: 80px;
+    bottom: 40px;
   }
 
   .sidebarViewport {
-    top: 0;
-    position: sticky;
-    height: calc(100% - var(--ifm-navbar-height));
-    max-height: 100vh;
-    /* overflow-x: scroll; */
+    height: 100%;
   }
 }

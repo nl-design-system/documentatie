@@ -52,7 +52,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
                   {isLast ? (
                     label
                   ) : (
-                    <Link className={clsx(styles['breadcrumbs__link'])} href={href}>
+                    <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={href}>
                       {label}
                     </Link>
                   )}

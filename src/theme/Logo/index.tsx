@@ -6,6 +6,7 @@ import { useThemeConfig, type NavbarLogo } from '@docusaurus/theme-common';
 import ThemedImage from '@theme/ThemedImage';
 import type { Props } from '@theme/Logo';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import clsx from 'clsx';
 
 function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt: string; imageClassName?: string }) {
   const sources = {
@@ -38,7 +39,7 @@ export default function Logo(props: Props): JSX.Element {
 
   const { shouldRender: isMobile } = useNavbarMobileSidebar();
 
-  const { imageClassName, titleClassName, ...propsRest } = props;
+  const { imageClassName, titleClassName, className, ...propsRest } = props;
   const logoLink = useBaseUrl(logo?.href || '/');
 
   // If visible title is shown, fallback alt text should be
@@ -50,7 +51,12 @@ export default function Logo(props: Props): JSX.Element {
   const alt = logo?.alt ?? fallbackAlt;
 
   return (
-    <Link to={logoLink} {...propsRest} {...(logo?.target && { target: logo.target })}>
+    <Link
+      to={logoLink}
+      {...propsRest}
+      {...(logo?.target && { target: logo.target })}
+      className={clsx('utrecht-link', className)}
+    >
       {logo && !isMobile && <LogoThemedImage logo={logo} alt={alt} imageClassName={imageClassName} />}
       {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}
     </Link>

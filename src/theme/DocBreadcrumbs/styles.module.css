@@ -7,7 +7,7 @@
   display: inline-flex;
   padding-inline-start: 0;
   align-items: center;
-  gap: 15px;
+  gap: 0.5rem;
 }
 
 .breadcrumbs__link {

@@ -5,7 +5,6 @@ import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
 import NavbarItem, { type LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DropdownNavbarItem';
-import { LinkButton } from '@utrecht/component-library-react';
 
 function isItemActive(item: LinkLikeNavbarItemProps, localPathname: string): boolean {
   if (isSamePath(item.to, localPathname)) {
@@ -108,16 +107,17 @@ function DropdownNavbarItemMobile({
         'menu__list-item--collapsed': collapsed,
       })}
     >
-      <LinkButton
+      <NavbarNavLink
+        role="button"
         className={clsx('menu__link menu__link--sublist menu__link--sublist-caret', className)}
-        // {...props}
+        {...props}
         onClick={(e) => {
           e.preventDefault();
           toggleCollapsed();
         }}
       >
         {props.children ?? props.label}
-      </LinkButton>
+      </NavbarNavLink>
       <Collapsible lazy as="ul" className="menu__list" collapsed={collapsed}>
         {items.map((childItemProps, i) => (
           <NavbarItem

@@ -1,20 +1,19 @@
 import React from 'react';
 import clsx from 'clsx';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import {useColorMode} from '@docusaurus/theme-common';
-import type {Props} from '@theme/ThemedImage';
+import { useColorMode } from '@docusaurus/theme-common';
+import type { Props } from '@theme/ThemedImage';
 
 import styles from './styles.module.css';
 
 export default function ThemedImage(props: Props): JSX.Element {
   const isBrowser = useIsBrowser();
-  const {colorMode} = useColorMode();
-  const {sources, className, alt, ...propsRest} = props;
+  const { colorMode } = useColorMode();
+  const { sources, className, alt, ...propsRest } = props;
 
   type SourceName = keyof Props['sources'];
 
-  const clientThemes: SourceName[] =
-    colorMode === 'dark' ? ['dark'] : ['light'];
+  const clientThemes: SourceName[] = colorMode === 'dark' ? ['dark'] : ['light'];
 
   const renderedSourceNames: SourceName[] = isBrowser
     ? clientThemes
@@ -29,11 +28,7 @@ export default function ThemedImage(props: Props): JSX.Element {
           key={sourceName}
           src={sources[sourceName]}
           alt={alt}
-          className={clsx(
-            styles.themedImage,
-            styles[`themedImage--${sourceName}`],
-            className,
-          )}
+          className={clsx(styles.themedImage, styles[`themedImage--${sourceName}`], className)}
           {...propsRest}
         />
       ))}
