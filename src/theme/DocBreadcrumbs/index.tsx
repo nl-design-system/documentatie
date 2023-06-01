@@ -4,11 +4,10 @@ import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
-import { matchPath, useLocation } from '@docusaurus/router';
+import { useLocation } from '@docusaurus/router';
 
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
@@ -21,10 +20,12 @@ export default function DocBreadcrumbs(): JSX.Element | null {
     }) || [];
 
   const homeHref = useBaseUrl('/');
-  const mobileSidebar = useNavbarMobileSidebar();
+  const { pathname } = useLocation();
+  const homeCrumb = { href: homeHref, label: 'Home' };
 
-  const breadcrumbs = [{ href: homeHref, label: 'Home' }, ...sidebarBreadcrumbs];
-  const mobileBreadcrumb = breadcrumbs[breadcrumbs.length - 1] || breadcrumbs[0];
+  const breadcrumbs = [homeCrumb, ...sidebarBreadcrumbs];
+  const parentCrumb = (breadcrumbs.length > 2 && breadcrumbs[breadcrumbs.length - 2]) || homeCrumb;
+  const mobileCrumb = parentCrumb.href !== pathname ? parentCrumb : homeCrumb;
 
   if (!breadcrumbs) {
     return null;
@@ -38,31 +39,35 @@ export default function DocBreadcrumbs(): JSX.Element | null {
         description: 'The ARIA label for the breadcrumbs',
       })}
     >
-      {mobileSidebar.shouldRender ? (
-        <div className={clsx(styles['breadcrumbs'])}>
-          <IconChevronLeft /> <Link href={mobileBreadcrumb.href}>{mobileBreadcrumb.label}</Link>
-        </div>
-      ) : (
-        <ul className={clsx(styles['breadcrumbs'])} itemScope itemType="https://schema.org/BreadcrumbList">
-          {breadcrumbs?.map(({ href, label }, i, all) => {
-            const isLast = all.length - 1 === i;
-            return (
-              <Fragment key={label}>
-                <li className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}>
-                  {isLast ? (
-                    label
-                  ) : (
-                    <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={href}>
-                      {label}
-                    </Link>
-                  )}
-                </li>
-                {!isLast && <IconSlash className={clsx(styles['breadcrumbs__separator'])} />}
-              </Fragment>
-            );
-          })}
-        </ul>
-      )}
+      <ul
+        className={clsx(styles['breadcrumbs'], styles['breadcrumbs--desktop'])}
+        itemScope
+        itemType="https://schema.org/BreadcrumbList"
+      >
+        {breadcrumbs?.map(({ href, label }, i, all) => {
+          const isLast = all.length - 1 === i;
+          return (
+            <Fragment key={label}>
+              <li className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}>
+                {isLast ? (
+                  label
+                ) : (
+                  <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={href}>
+                    {label}
+                  </Link>
+                )}
+              </li>
+              {!isLast && <IconSlash className={clsx(styles['breadcrumbs__separator'])} />}
+            </Fragment>
+          );
+        })}
+      </ul>
+      <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--mobile'])}>
+        <IconChevronLeft />
+        <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={mobileCrumb.href}>
+          {mobileCrumb.label}
+        </Link>
+      </div>
     </nav>
   );
 }
