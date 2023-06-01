@@ -283,7 +283,7 @@ li a {
 }
 
 .navbar__items {
-  flex: initial;
+  flex: none;
   gap: 15px;
 }
 
