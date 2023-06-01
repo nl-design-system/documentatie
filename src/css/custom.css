@@ -352,11 +352,12 @@ li a {
 }
 
 .navbar-sidebar__item .menu__link {
-  color: white;
+  --utrecht-link-color: white;
 }
 
 .navbar-sidebar__item .menu__link--active,
 .navbar-sidebar__item .menu__link:active {
+  --utrecht-link-color: white;
   background-color: var(--nlds-menu-item-selected-background-color);
 }
 
@@ -392,6 +393,12 @@ li a {
   .navbar__inner {
     align-items: stretch;
     min-height: 80px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .navbar__items--right .navbar__item--github-link {
+    display: none;
   }
 }
 

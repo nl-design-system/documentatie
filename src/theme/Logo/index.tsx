@@ -55,7 +55,7 @@ export default function Logo(props: Props): JSX.Element {
       to={logoLink}
       {...propsRest}
       {...(logo?.target && { target: logo.target })}
-      className={clsx('utrecht-link', className)}
+      className={clsx('utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a', className)}
     >
       {logo && !isMobile && <LogoThemedImage logo={logo} alt={alt} imageClassName={imageClassName} />}
       {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}

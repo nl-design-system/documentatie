@@ -59,7 +59,8 @@ module.exports = {
     {
       href: 'https://github.com/nl-design-system/backlog',
       position: 'right',
-      className: 'utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a',
+      className:
+        'utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link',
       'aria-label': 'GitHub repository',
       html: `<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path
