@@ -397,8 +397,12 @@ li a {
 }
 
 @media screen and (max-width: 996px) {
-  .navbar__items--right .navbar__item--github-link {
+  .navbar .navbar__item {
     display: none;
+  }
+
+  .navbar .navbar__item--always-visible {
+    display: flex;
   }
 }
 
