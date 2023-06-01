@@ -7,6 +7,7 @@ import { HomepageAction } from '../components/HomepageAction';
 import { HomepageTeasers } from '../components/HomepageTeasers';
 import { HomepageTeaser } from '../components/HomepageTeaser';
 import { HomepageFooter } from '../components/HomepageFooter';
+import { Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 
 // OpenGemeenten iconen tmp
 const OGComponenten = (
@@ -45,43 +46,48 @@ export default function Home() {
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
     >
       <main>
-        <HomepageHero
-          title="Over het NL Design System"
-          ctaLink="meedoen/introductie"
-          cta="Meer over het NL Design System"
-        >
-          <p>
-            In het NL Design System verzamelen we principes, handvatten, elementen, patronen en richtlijnen. Zo kan de
-            hele Nederlandse overheid samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online
-            dienstverlening.
-          </p>
+        <HomepageHero title="NL Design System" ctaLink="meedoen/introductie" cta="Lees alles over het NL Design System">
+          <Paragraph lead>
+            Dienstverlening vanuit de overheid moet toegankelijk en begrijpelijk zijn voor iedereen.
+          </Paragraph>
+          <Paragraph>
+            NL Design System architectuur zorgt ervoor dat verschillende organisaties samenwerken aan toegankelijkheid
+            en gebruiksvriendelijkheid. Terwijl iedereen vrijheid heeft voor een eigen huisstijl en eigen technologieën.
+          </Paragraph>
+          <UnorderedList>
+            <UnorderedListItem>Gevoed met kennis vanuit de community</UnorderedListItem>
+            <UnorderedListItem>Platform en huisstijl onafhankelijk</UnorderedListItem>
+            <UnorderedListItem>Uitbreidbaar en publiek beschikbaar</UnorderedListItem>
+          </UnorderedList>
         </HomepageHero>
         <HomepageActions>
           <HomepageAction title="Componenten" href="componenten/" icon={OGComponenten}>
-            <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
+            <Paragraph>Kant en klare, geteste componenten om digitale producten mee te maken.</Paragraph>
           </HomepageAction>
           <HomepageAction title="Richtlijnen" href="richtlijnen/tekst-en-taalgebruik" icon={OGRichtlijn}>
-            <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
+            <Paragraph>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</Paragraph>
           </HomepageAction>
           <HomepageAction title="Voorbeelden" href="voorbeelden/" icon={OGVoorbeeld}>
-            <p>Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.</p>
+            <Paragraph>
+              Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.
+            </Paragraph>
           </HomepageAction>
           <HomepageAction title="Videos" href="videos/" icon={OGVideo}>
-            <p>Opnames van NL Design System sessies.</p>
+            <Paragraph>Opnames van NL Design System sessies.</Paragraph>
           </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
           <HomepageTeaser title="Meedoen" cta=" Vertel me meer" ctaLink="meedoen/">
-            <p>
+            <Paragraph>
               Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System? Meedoen kan namelijk op vele manieren.
-            </p>
+            </Paragraph>
           </HomepageTeaser>
           <HomepageTeaser
             title="Blijf op de hoogte"
             cta="Inschrijven op de nieuwsbrief"
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
-            <p>Wil jij niets missen van de ontwikkelingen van het NL Design System?</p>
+            <Paragraph>Wil jij niets missen van de ontwikkelingen van het NL Design System?</Paragraph>
             <ul>
               <li>
                 <a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
@@ -104,17 +110,17 @@ export default function Home() {
         <HomepageFooter>
           <div>
             <h2>Over het kernteam</h2>
-            <p>
+            <Paragraph>
               Het NL Design System wordt ontwikkeld door <a href="project/contact/">een vast kernteam</a> bij Gebruiker
               Centraal.
-            </p>
+            </Paragraph>
           </div>
           <div>
             <h2>Samenwerking</h2>
-            <p>
+            <Paragraph>
               Met <a href="project/links">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
               toegankelijke online dienstverlening voor overheidsorganisaties.
-            </p>
+            </Paragraph>
           </div>
         </HomepageFooter>
       </main>
