@@ -1,5 +1,3 @@
-import Link from '@docusaurus/Link';
-import { useLocation } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import {
   Button,
