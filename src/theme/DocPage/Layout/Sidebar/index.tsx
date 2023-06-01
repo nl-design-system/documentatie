@@ -1,6 +1,6 @@
 import React, { type ReactNode, useState, useCallback } from 'react';
 import clsx from 'clsx';
-import { prefersReducedMotion, ThemeClassNames } from '@docusaurus/theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 import { useLocation } from '@docusaurus/router';
 import DocSidebar from '@theme/DocSidebar';

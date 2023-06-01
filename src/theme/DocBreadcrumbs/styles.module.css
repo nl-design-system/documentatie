@@ -10,6 +10,20 @@
   gap: 0.5rem;
 }
 
+.breadcrumbs--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 996px) {
+  .breadcrumbs--mobile {
+    display: inline-flex;
+  }
+
+  .breadcrumbs--desktop {
+    display: none;
+  }
+}
+
 .breadcrumbs__link {
   color: var(--nlds-interaction-color);
   text-decoration: none;
