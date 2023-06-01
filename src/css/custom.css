@@ -17,6 +17,17 @@
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
+  --ifm-container-width: 784px;
+  --ifm-container-width-xl: var(--ifm-container-width);
+}
+
+.utrecht-unordered-list {
+  list-style-type: square;
+}
+
+.utrecht-unordered-list .utrecht-unordered-list__item::marker {
+  content: "◼";
+  font-size: 16px;
 }
 
 .button {
@@ -148,20 +159,6 @@
   display: none;
 }
 
-.hero--primary {
-  margin-top: 4rem;
-  background-color: white;
-}
-
-.hero--primary .container {
-  background-color: #74295f;
-  padding-bottom: 4rem;
-}
-
-.hero--primary .hero__title {
-  background-color: #4e1c40;
-}
-
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
@@ -205,7 +202,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__inner {
-  padding-inline: var(--ifm-navbar-padding-horizontal);
   min-height: 64px;
   align-items: center;
   flex-wrap: nowrap;
@@ -381,6 +377,7 @@ li a {
 
 @media (min-width: 997px) {
   .navbar__inner {
+    padding-inline: var(--ifm-navbar-padding-horizontal);
     align-items: stretch;
     min-height: 80px;
   }

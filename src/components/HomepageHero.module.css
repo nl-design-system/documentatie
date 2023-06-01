@@ -1,20 +1,22 @@
 .homepage-hero {
+  --utrecht-heading-1-font-size: 40px;
+  --utrecht-document-color: white;
+  --utrecht-link-color: white;
+  --utrecht-link-text-decoration-color: white;
   background-color: #74295f;
+  padding-block-start: 80px;
+  padding-block-end: 172px;
   color: white;
-  margin-block-start: 40px;
+  background-image: linear-gradient(-5deg, white 11.9%, transparent 12%);
 }
 
 .homepage-hero__title {
-  padding-inline: 32px;
-  padding-block: 24px;
-  background-color: #4e1c40;
   margin: 0;
+  margin-block-end: 18px;
 }
 
 .homepage-hero__description {
   font-size: 20px;
-  padding-block-start: 24px;
-  padding-inline: 32px;
 }
 
 .homepage-hero__images {
@@ -31,20 +33,19 @@
 }
 
 .homepage-hero__call-to-action {
-  text-overflow: ellipsis;
-  max-width: 100%;
-  overflow: hidden;
-  word-wrap: break-word;
-  white-space: break-spaces;
-  padding: 32px;
-  padding-block-start: 12px;
+  margin-block-start: 48px;
 }
 
-@media (max-width: 996px) {
-  .homepage-hero__call-to-action {
-    font-size: 16px;
-    font-family: var(--ifm-font-family-base);
-    text-transform: capitalize;
-    line-height: 1.5;
+@media screen and (min-width: 996px) {
+  .homepage-hero {
+    --utrecht-paragraph-lead-font-size: 24px;
+    --utrecht-paragraph-font-size: 20px;
+    --utrecht-paragraph-margin-block-end: 18px;
+    --utrecht-unordered-list-margin-block-start: 24px;
+    --utrecht-document-font-size: 20px;
+    --utrecht-heading-1-font-size: 52px;
+    padding-block-start: 80px;
+    padding-block-end: 180px;
+    background-image: linear-gradient(-3deg, white 11.9%, transparent 12%);
   }
 }
