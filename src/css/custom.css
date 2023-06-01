@@ -181,16 +181,20 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__link {
+  --utrecht-link-text-decoration: none;
+  --utrecht-link-color: currentColor;
+  --utrecht-link-focus-color: #00303d;
   font-size: 18px;
   position: relative;
   border-bottom-style: solid;
   border-bottom-width: 4px;
   border-bottom-color: transparent;
+  text-decoration: none;
 }
 
 /* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
 .navbar__link--active:not(.navbar__brand),
-.navbar__link:not(.navbar__item--github-link):hover {
+.navbar__link:hover {
   border-bottom-color: var(--nlds-navbar-link-active-border-color);
 }
 
@@ -283,10 +287,37 @@ li a {
   gap: 15px;
 }
 
-.navbar__item {
+.navbar__items--right {
+  gap: 0;
+}
+
+.navbar__item:not(.utrecht-button-link, .utrecht-button) {
   height: 100%;
   padding-block-start: 27px;
   padding-inline: 0;
+}
+
+.navbar__item {
+  --utrecht-button-subtle-color: white;
+  --utrecht-link-color: white;
+}
+
+.navbar__item:hover {
+  --utrecht-item-subtle-hover-color: white;
+  --utrecht-button-subtle-hover-background-color: #004152;
+  --utrecht-link-hover-color: white;
+  --utrecht-link-hover-background-color: #004152;
+}
+
+.navbar__item:active {
+  --utrecht-button-subtle-active-color: white;
+  --utrecht-button-subtle-active-background-color: #224a62;
+  --utrecht-link-active-color: white;
+  --utrecht-link-active-background-color: #224a62;
+}
+.navbar__item:active:focus {
+  --utrecht-button-subtle-active-color: var(--nlds-focus-color);
+  --utrecht-link-active-color: var(--nlds-focus-color);
 }
 
 .navbar-sidebar__item {
@@ -299,6 +330,7 @@ li a {
 }
 
 .menu__link {
+  --utrecht-link-text-decoration: none;
   text-decoration: none;
   color: var(--nlds-interaction-color);
   border-inline-start: 4px solid transparent;
@@ -361,4 +393,15 @@ li a {
     align-items: stretch;
     min-height: 80px;
   }
+}
+
+a {
+  transition: none;
+}
+
+body:not(.navigation-with-keyboard) *:not(input):focus {
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
 }

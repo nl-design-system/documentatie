@@ -9,6 +9,7 @@ import NavbarSearch from '@theme/Navbar/Search';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
 import styles from './styles.module.css';
+import clsx from 'clsx';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved

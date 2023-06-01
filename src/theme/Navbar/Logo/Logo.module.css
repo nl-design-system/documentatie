@@ -1,5 +1,10 @@
 .navbar-logo {
-  gap: 8px;
+  --utrecht-link-text-decoration: none;
+  --utrecht-link-color: currentColor;
+  --utrecht-link-focus-color: #00303d;
+
+  gap: 0.5rem;
+  display: flex;
 }
 
 .navbar-logo__icon {

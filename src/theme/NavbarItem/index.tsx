@@ -1,6 +1,7 @@
 import React from 'react';
 import ComponentTypes from '@theme/NavbarItem/ComponentTypes';
 import type { NavbarItemType, Props } from '@theme/NavbarItem';
+import clsx from 'clsx';
 
 function normalizeComponentType(type: NavbarItemType, props: object) {
   // Backward compatibility: navbar item with no type set
