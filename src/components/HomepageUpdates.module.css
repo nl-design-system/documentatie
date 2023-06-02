@@ -6,3 +6,9 @@
   background-image: linear-gradient(to top left, transparent 50%, white 50%);
   height: 80px;
 }
+
+@media screen and (min-width: 996px) {
+  .homepage-hero__linear-gradient {
+    height: 40px;
+  }
+}
