@@ -2,6 +2,7 @@
   --utrecht-document-color: white;
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
+  --utrecht-heading-2-font-size: 18px;
   background-color: #004152;
   padding-block: 32px;
   color: white;
@@ -9,19 +10,10 @@
   --ifm-link-hover-color: white;
 }
 
-.homepage-footer__container {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 128px; /* Aligning text with homepage teaser modules */
-}
-
-@media (max-width: 996px) {
-  .homepage-footer__container {
-    grid-auto-flow: row;
-    gap: 16px;
-  }
-}
-
-.homepage-footer h2 {
-  font-size: 18px;
+.homepage-footer__content {
+  --utrecht-space-around: 0;
+  display: flex;
+  gap: 24px;
+  max-width: 500px;
+  align-items: center;
 }

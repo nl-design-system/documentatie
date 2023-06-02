@@ -4,6 +4,10 @@ module.exports = {
     {
       items: [
         {
+          label: 'Contact',
+          to: '/project/contact',
+        },
+        {
           label: 'Toegankelijkheid',
           to: '/footer/toegankelijkheidsverklaring',
         },
@@ -11,10 +15,6 @@ module.exports = {
           label: 'Colofon',
           to: '/footer/colofon',
         },
-      ],
-    },
-    {
-      items: [
         {
           label: 'GitHub',
           href: 'https://github.com/nl-design-system/backlog',
@@ -22,6 +22,10 @@ module.exports = {
         {
           label: 'Storybook',
           href: 'https://nl-design-system.github.io/themes',
+        },
+        {
+          label: 'Figma',
+          href: 'https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek',
         },
       ],
     },

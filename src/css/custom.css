@@ -424,3 +424,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   outline-style: var(--utrecht-focus-outline-style, revert);
   outline-width: var(--utrecht-focus-outline-width, revert);
 }
+
+.container--wide {
+  padding-inline: 24px;
+}
