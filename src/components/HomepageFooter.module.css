@@ -1,4 +1,7 @@
 .homepage-footer {
+  --utrecht-document-color: white;
+  --utrecht-link-color: white;
+  --utrecht-link-text-decoration-color: white;
   background-color: #004152;
   padding-block: 32px;
   color: white;

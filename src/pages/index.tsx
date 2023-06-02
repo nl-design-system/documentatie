@@ -7,7 +7,9 @@ import { HomepageAction } from '../components/HomepageAction';
 import { HomepageTeasers } from '../components/HomepageTeasers';
 import { HomepageTeaser } from '../components/HomepageTeaser';
 import { HomepageFooter } from '../components/HomepageFooter';
-import { Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import InternalLink from '@docusaurus/Link';
+import { Heading2, Link, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import clsx from 'clsx';
 
 // OpenGemeenten iconen tmp
 const OGComponenten = (
@@ -61,22 +63,34 @@ export default function Home() {
             <UnorderedListItem>Uitbreidbaar en publiek beschikbaar</UnorderedListItem>
           </UnorderedList>
         </HomepageHero>
-        <HomepageActions>
-          <HomepageAction title="Componenten" href="componenten/" icon={OGComponenten}>
-            <Paragraph>Kant en klare, geteste componenten om digitale producten mee te maken.</Paragraph>
-          </HomepageAction>
-          <HomepageAction title="Richtlijnen" href="richtlijnen/tekst-en-taalgebruik" icon={OGRichtlijn}>
-            <Paragraph>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</Paragraph>
-          </HomepageAction>
-          <HomepageAction title="Voorbeelden" href="voorbeelden/" icon={OGVoorbeeld}>
-            <Paragraph>
-              Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.
-            </Paragraph>
-          </HomepageAction>
-          <HomepageAction title="Videos" href="videos/" icon={OGVideo}>
-            <Paragraph>Opnames van NL Design System sessies.</Paragraph>
-          </HomepageAction>
-        </HomepageActions>
+        <HomepageActions
+          actions={[
+            {
+              title: 'Richtlijnen',
+              description:
+                'Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen. Maar ook richtlijnen voor tekst en taalgebruik.',
+              href: '/richtlijnen/tekst-en-taalgebruik',
+            },
+            {
+              title: 'Componenten',
+              description:
+                'Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer. Inclusief code en documentatie.',
+              href: '/componenten',
+            },
+            {
+              title: 'Voorbeelden',
+              description:
+                'Een overzicht van patronen en templates om vaak voorkomende scenario’s op een consistente, weloverwogen manier op te lossen.',
+              href: 'voorbeelden/',
+            },
+            {
+              title: 'Videos',
+              description:
+                'Niet gelukt om bij de heartbeat te zijn? Of zin om een sessie van de design system week te kijken? De meesten hebben we opgenomen.',
+              href: '/videos/',
+            },
+          ]}
+        ></HomepageActions>
         <HomepageTeasers>
           <HomepageTeaser title="Meedoen" cta=" Vertel me meer" ctaLink="meedoen/">
             <Paragraph>
@@ -89,38 +103,38 @@ export default function Home() {
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
             <Paragraph>Wil jij niets missen van de ontwikkelingen van het NL Design System?</Paragraph>
-            <ul>
-              <li>
-                <a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
+            <UnorderedList>
+              <UnorderedListItem>
+                <Link href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
                   Neem deel aan onze 2-wekelijkse Heartbeat-sessies
-                </a>
-              </li>
-              <li>
-                <a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">
+                </Link>
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Link href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">
                   Schrijf je in voor onze nieuwsbrief
-                </a>
-              </li>
-              <li>
-                <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">
+                </Link>
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Link href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">
                   Lees meer achtergrondinformatie op onze blogpagina
-                </a>
-              </li>
-            </ul>
+                </Link>
+              </UnorderedListItem>
+            </UnorderedList>
           </HomepageTeaser>
         </HomepageTeasers>
         <HomepageFooter>
           <div>
-            <h2>Over het kernteam</h2>
+            <Heading2>Over het kernteam</Heading2>
             <Paragraph>
-              Het NL Design System wordt ontwikkeld door <a href="project/contact/">een vast kernteam</a> bij Gebruiker
-              Centraal.
+              Het NL Design System wordt ontwikkeld door <Link href="project/contact/">een vast kernteam</Link> bij
+              Gebruiker Centraal.
             </Paragraph>
           </div>
           <div>
-            <h2>Samenwerking</h2>
+            <Heading2>Samenwerking</Heading2>
             <Paragraph>
-              Met <a href="project/links">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én
-              toegankelijke online dienstverlening voor overheidsorganisaties.
+              Met <Link href="project/links">een community</Link> werken we aan een begrijpelijke, gebruiksvriendelijke
+              én toegankelijke online dienstverlening voor overheidsorganisaties.
             </Paragraph>
           </div>
         </HomepageFooter>
