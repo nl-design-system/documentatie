@@ -13,6 +13,7 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react';
+import HomepageUpdates from '../components/HomepageUpdates';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -204,22 +205,40 @@ export default function Home() {
             En ruim 20 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
           </Paragraph>
         </div>
-        <HomepageFooter>
-          <div>
-            <Heading2>Over het kernteam</Heading2>
-            <Paragraph>
-              Het NL Design System wordt ontwikkeld door <Link href="project/contact/">een vast kernteam</Link> bij
-              Gebruiker Centraal.
-            </Paragraph>
-          </div>
-          <div>
-            <Heading2>Samenwerking</Heading2>
-            <Paragraph>
-              Met <Link href="project/links">een community</Link> werken we aan een begrijpelijke, gebruiksvriendelijke
-              én toegankelijke online dienstverlening voor overheidsorganisaties.
-            </Paragraph>
-          </div>
-        </HomepageFooter>
+        <HomepageUpdates>
+          <Heading2>Blijf op de hoogte</Heading2>
+          <CardGroup>
+            <Card>
+              <div>
+                <Heading3>Nieuwsbrief</Heading3>
+                <Paragraph>
+                  Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL
+                  Design System.
+                </Paragraph>
+              </div>
+              <Paragraph>
+                <Link href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">
+                  Meld je aan voor de nieuwsbrief
+                </Link>
+              </Paragraph>
+            </Card>
+            <Card>
+              <div>
+                <Heading3>Heartbeat</Heading3>
+                <Paragraph>
+                  Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System
+                  worden besproken.
+                </Paragraph>
+              </div>
+              <Paragraph>
+                <Link href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
+                  Meld je aan voor de heartbeat
+                </Link>
+              </Paragraph>
+            </Card>
+          </CardGroup>
+        </HomepageUpdates>
+        <HomepageFooter></HomepageFooter>
       </main>
     </Layout>
   );

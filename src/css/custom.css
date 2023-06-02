@@ -424,7 +424,3 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   outline-style: var(--utrecht-focus-outline-style, revert);
   outline-width: var(--utrecht-focus-outline-width, revert);
 }
-
-.homepage__paragraph {
-  --utrecht-paragraph-margin-block-end: 48px;
-}
