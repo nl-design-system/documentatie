@@ -11,7 +11,6 @@
 
 .cardgroup--medium {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   padding-block-end: 40px;
   gap: 32px;
 }
@@ -61,7 +60,7 @@
 }
 
 .card__content {
-  padding-inline: 16px;
+  padding-inline: 24px;
   padding-block-end: 36px;
 }
 

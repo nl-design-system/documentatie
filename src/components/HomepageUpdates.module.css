@@ -1,0 +1,8 @@
+.homepage-updates {
+  background-color: #f9f6f3;
+}
+
+.homepage-updates__linear-gradient {
+  background-image: linear-gradient(to top left, transparent 50%, white 50%);
+  height: 80px;
+}
