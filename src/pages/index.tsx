@@ -44,6 +44,7 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title} - homepage`}
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
+      wrapperClassName="marketing-page"
     >
       <main>
         <HomepageHero title="NL Design System" ctaLink="meedoen/introductie" cta="Lees alles over het NL Design System">

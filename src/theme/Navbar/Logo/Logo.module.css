@@ -31,3 +31,9 @@
     font-size: 28px;
   }
 }
+
+@media screen and (min-width: 1441px) {
+  .navbar-logo {
+    margin-inline-end: 3%;
+  }
+}

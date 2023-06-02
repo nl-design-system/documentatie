@@ -17,6 +17,11 @@
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
+  --ifm-container-width: 1030px;
+  --ifm-container-width-xl: 1080px;
+}
+
+.marketing-page {
   --ifm-container-width: 784px;
   --ifm-container-width-xl: var(--ifm-container-width);
 }
@@ -279,7 +284,6 @@ li a {
 }
 
 .navbar__items {
-  flex: none;
   gap: 15px;
 }
 
@@ -376,10 +380,15 @@ li a {
 }
 
 @media (min-width: 997px) {
+  .navbar__items--left {
+    max-width: 1000px;
+  }
+
   .navbar__inner {
     padding-inline: var(--ifm-navbar-padding-horizontal);
     align-items: stretch;
     min-height: 80px;
+    gap: 20px;
   }
 
   .navbar .navbar__toggle {
@@ -388,6 +397,14 @@ li a {
 }
 
 @media screen and (max-width: 996px) {
+  .navbar__items {
+    display: none;
+  }
+
+  .navbar__items--right {
+    display: block;
+  }
+
   .navbar .navbar__item {
     display: none;
   }
