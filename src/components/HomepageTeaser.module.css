@@ -1,4 +1,7 @@
 .homepage-teaser {
+  --utrecht-document-color: white;
+  --utrecht-link-color: white;
+  --utrecht-link-text-decoration-color: white;
   background-color: #027bb0; /* Contrast ratio to white foreground color passes with 4.7:1 */
   padding-inline: 16px;
   padding-block: 24px;

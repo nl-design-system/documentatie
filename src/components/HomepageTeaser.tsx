@@ -15,7 +15,10 @@ export const HomepageTeaser = ({ title, cta, ctaLink, children }: PropsWithChild
     <Heading2 className={clsx(style['homepage-teaser__title'])}>{title}</Heading2>
     <div className={clsx(style['homepage-teaser__description'])}>{children}</div>
     <div className={clsx(style['homepage-teaser__call-to-action'])}>
-      <Link className={clsx('button', 'button--primary')} to={ctaLink}>
+      <Link
+        className={clsx('button', 'button--primary', 'utrecht-button-link', 'utrecht-button--primary-action')}
+        to={ctaLink}
+      >
         {cta}
       </Link>
     </div>
