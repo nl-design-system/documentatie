@@ -164,6 +164,45 @@ export default function Home() {
               </Paragraph>
             </Card>
           </CardGroup>
+
+          <Heading2>Wie doen er al mee?</Heading2>
+          <CardGroup appearance="small">
+            <Card
+              appearance="small"
+              illustration={{
+                src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg',
+                alt: 'Utrecht logo',
+              }}
+              href="https://github.com/nl-design-system/utrecht"
+            />
+            <Card
+              appearance="small"
+              illustration={{
+                src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg',
+                alt: 'Den Haag logo',
+              }}
+              href="https://github.com/nl-design-system/denhaag"
+            />
+            <Card
+              appearance="small"
+              illustration={{
+                src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg',
+                alt: 'RVO logo',
+              }}
+              href="https://github.com/nl-design-system/rvo"
+            />
+            <Card
+              appearance="small"
+              illustration={{
+                src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg',
+                alt: 'Amsterdam logo',
+              }}
+              href="https://github.com/nl-design-system/amsterdam"
+            />
+          </CardGroup>
+          <Paragraph className="homepage__paragraph">
+            En ruim 20 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
+          </Paragraph>
         </div>
         <HomepageFooter>
           <div>
