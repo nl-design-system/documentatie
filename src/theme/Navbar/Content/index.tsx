@@ -44,8 +44,8 @@ function NavbarContentLayout({ left, right }: { left: ReactNode; right: ReactNod
   return (
     <div className="navbar__inner">
       {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-
-      <div className="navbar__items">{left}</div>
+      <NavbarLogo />
+      <div className="navbar__items navbar__items--left">{left}</div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   );
@@ -61,17 +61,13 @@ export default function NavbarContent(): JSX.Element {
     <NavbarContentLayout
       left={
         // TODO stop hardcoding items?
-        <>
-          <NavbarLogo />
-          <NavbarItems items={leftItems} />
-        </>
+        <NavbarItems items={leftItems} />
       }
       right={
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />
