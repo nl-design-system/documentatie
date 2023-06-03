@@ -5,38 +5,36 @@ import style from './CardGroup.module.css';
 
 type Appearance = 'small' | 'medium' | 'large';
 
-interface CardProps {
-  illustration?: { src: string; alt: string; background?: boolean };
-  illustrationAlt?: string;
-  appearance?: Appearance;
-  href?: string;
+interface CardIllustrationProps {
+  background?: boolean;
 }
 
-export const Card = ({ href, illustration, appearance = 'medium', children }: PropsWithChildren<CardProps>) => {
-  const Wrapper = ({ children }: PropsWithChildren<{}>) =>
-    href ? (
-      <Link href={href} boxContent className={clsx(style['card__link'])}>
-        {children}
-      </Link>
-    ) : (
-      <>{children}</>
-    );
+export const CardIllustration = ({ background, children }: PropsWithChildren<CardIllustrationProps>) => (
+  <div className={clsx(style['card__illustration'], background && style['card__illustration--background'])}>
+    {children}
+  </div>
+);
 
+export const CardSection = ({ children }: PropsWithChildren<{}>) => (
+  <section className={clsx(style['card__section'])}>{children}</section>
+);
+
+interface CardProps {
+  appearance?: Appearance;
+  href?: string;
+  className?: string;
+}
+
+export const Card = ({ href, appearance = 'medium', className, children }: PropsWithChildren<CardProps>) => {
   return (
-    <div className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`])}>
-      <Wrapper>
-        {illustration && (
-          <div
-            className={clsx(
-              style['card__illustration'],
-              illustration.background && style['card__illustration--background'],
-            )}
-          >
-            <Image src={illustration.src} alt={illustration.alt} />
-          </div>
-        )}
-        {children && <div className={clsx(style['card__content'])}>{children}</div>}
-      </Wrapper>
+    <div className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
+      {href ? (
+        <Link href={href} boxContent className={clsx(style['card__link'])}>
+          {children}
+        </Link>
+      ) : (
+        <>{children}</>
+      )}
     </div>
   );
 };
