@@ -1,14 +1,12 @@
-import React, { type ReactNode } from 'react';
+import React, { PropsWithChildren } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem, { type Props as NavbarItemConfig } from '@theme/NavbarItem';
-import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
-import styles from './styles.module.css';
 import clsx from 'clsx';
 
 function useNavbarItems() {
@@ -16,37 +14,44 @@ function useNavbarItems() {
   return useThemeConfig().navbar.items as NavbarItemConfig[];
 }
 
-function NavbarItems({ items }: { items: NavbarItemConfig[] }): JSX.Element {
+interface NavbarItemsProps {
+  items: NavbarItemConfig[];
+  position?: 'block-start' | 'block-end';
+  positionChildren?: 'block-start' | 'block-end';
+  showOnMobile?: boolean;
+}
+
+function NavbarItems({
+  items,
+  position = 'block-start',
+  positionChildren = 'block-end',
+  showOnMobile,
+  children,
+}: PropsWithChildren<NavbarItemsProps>): JSX.Element {
   return (
-    <>
+    <div
+      className={clsx(
+        'navbar__items',
+        position === 'block-end' ? 'navbar__items--right' : 'navbar__items--left',
+        showOnMobile && 'navbar__items--show-on-mobile',
+      )}
+    >
+      {positionChildren === 'block-start' && children}
       {items.map((item, i) => (
         <ErrorCauseBoundary
           key={i}
-          onError={(error) =>
+          onError={() =>
             new Error(
               `A theme navbar item failed to render.
 Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
 ${JSON.stringify(item, null, 2)}`,
-              { cause: error },
             )
           }
         >
           <NavbarItem {...item} />
         </ErrorCauseBoundary>
-      ))}
-    </>
-  );
-}
-
-function NavbarContentLayout({ left, right }: { left: ReactNode; right: ReactNode }) {
-  const mobileSidebar = useNavbarMobileSidebar();
-
-  return (
-    <div className="navbar__inner">
-      {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-      <NavbarLogo />
-      <div className="navbar__items navbar__items--left">{left}</div>
-      <div className="navbar__items navbar__items--right">{right}</div>
+      ))}{' '}
+      {positionChildren === 'block-end' && children}
     </div>
   );
 }
@@ -54,27 +59,22 @@ function NavbarContentLayout({ left, right }: { left: ReactNode; right: ReactNod
 export default function NavbarContent(): JSX.Element {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
-
+  const mobileSidebar = useNavbarMobileSidebar();
   const searchBarItem = items.find((item) => item.type === 'search');
 
   return (
-    <NavbarContentLayout
-      left={
-        // TODO stop hardcoding items?
-        <NavbarItems items={leftItems} />
-      }
-      right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
-        <>
-          <NavbarItems items={rightItems} />
-          {!searchBarItem && (
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
-          )}
-        </>
-      }
-    />
+    <div className="navbar__inner">
+      {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+      <NavbarLogo />
+      <NavbarItems position="block-start" items={leftItems} />
+
+      <NavbarItems position="block-end" items={rightItems} showOnMobile>
+        {!searchBarItem && (
+          <NavbarSearch>
+            <SearchBar />
+          </NavbarSearch>
+        )}
+      </NavbarItems>
+    </div>
   );
 }
