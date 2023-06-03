@@ -1,5 +1,6 @@
 .navbar-logo {
   --utrecht-link-text-decoration: none;
+  --ifm-link-hover-decoration: none;
   --utrecht-link-color: currentColor;
   --utrecht-link-focus-color: #00303d;
 

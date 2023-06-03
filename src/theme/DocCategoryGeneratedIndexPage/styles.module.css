@@ -17,3 +17,7 @@
 .list article:last-child {
   margin-bottom: 0;
 }
+
+.navbar__items--right > :last-child {
+  padding: auto;
+}
