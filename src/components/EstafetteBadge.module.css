@@ -1,0 +1,25 @@
+.estafette-badge {
+  --utrecht-badge-line-height: 24px;
+  --utrecht-badge-padding-block: 4px;
+  --utrecht-badge-padding-inline: 8px;
+}
+
+.estafette-badge--help-wanted {
+  --utrecht-badge-background-color: var(--nlds-status-help-wanted-background-color);
+  --utrecht-badge-color: var(--nlds-status-help-wanted-color);
+}
+
+.estafette-badge--community {
+  --utrecht-badge-background-color: var(--nlds-status-community-background-color);
+  --utrecht-badge-color: var(--nlds-status-community-color);
+}
+
+.estafette-badge--candidate {
+  --utrecht-badge-background-color: var(--nlds-status-unstable-background-color);
+  --utrecht-badge-color: var(--nlds-status-unstable-color);
+}
+
+.estafette-badge--hall-of-fame {
+  --utrecht-badge-background-color: var(--nlds-status-stable-background-color);
+  --utrecht-badge-color: var(--nlds-status-stable-color);
+}
