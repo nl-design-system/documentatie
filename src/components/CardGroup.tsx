@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement } from 'react';
+import React, { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import clsx from 'clsx';
 import { Image, Link } from '@utrecht/component-library-react';
 import style from './CardGroup.module.css';
@@ -15,19 +15,32 @@ export const CardIllustration = ({ background, children }: PropsWithChildren<Car
   </div>
 );
 
-export const CardSection = ({ children }: PropsWithChildren<{}>) => (
-  <section className={clsx(style['card__section'])}>{children}</section>
+export const CardContent = ({ children }: PropsWithChildren<{}>) => (
+  <div className={clsx(style['card__content'])}>{children}</div>
 );
 
 interface CardProps {
   appearance?: Appearance;
   href?: string;
   className?: string;
+  component?: 'article' | 'section' | 'div';
 }
 
-export const Card = ({ href, appearance = 'medium', className, children }: PropsWithChildren<CardProps>) => {
+export const Card = ({
+  href,
+  appearance = 'medium',
+  className,
+  component = 'div',
+  children,
+}: PropsWithChildren<CardProps>) => {
+  const Wrapper = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => {
+    if (component === 'article') return <article {...props} />;
+    if (component === 'section') return <section {...props} />;
+    return <div {...props} />;
+  };
+
   return (
-    <div className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
+    <Wrapper className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
       {href ? (
         <Link href={href} boxContent className={clsx(style['card__link'])}>
           {children}
@@ -35,7 +48,7 @@ export const Card = ({ href, appearance = 'medium', className, children }: Props
       ) : (
         <>{children}</>
       )}
-    </div>
+    </Wrapper>
   );
 };
 

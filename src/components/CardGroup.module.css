@@ -69,13 +69,14 @@
   background-color: #00303d;
 }
 
-.card__section {
+.card__content {
   padding-inline: var(--card-content-padding-inline, 24px);
   padding-block-start: var(--card-content-padding-block-start);
   padding-block-end: var(--card-content-padding-block-end, 36px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 @media (max-width: 996px) {
