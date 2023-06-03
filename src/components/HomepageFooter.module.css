@@ -1,13 +1,13 @@
 .homepage-footer {
-  --utrecht-document-color: white;
-  --utrecht-link-color: white;
-  --utrecht-link-text-decoration-color: white;
+  --utrecht-document-color: currentColor;
+  --utrecht-link-color: currentColor;
+  --utrecht-link-text-decoration-color: currentColor;
   --utrecht-heading-2-font-size: 18px;
-  background-color: #004152;
+  background-color: var(--nlds-document-inverse-background-color);
   padding-block: 32px;
-  color: white;
-  --ifm-link-color: white;
-  --ifm-link-hover-color: white;
+  color: var(--nlds-document-inverse-color);
+  --ifm-link-color: currentColor;
+  --ifm-link-hover-color: currentColor;
 }
 
 .homepage-footer__content {

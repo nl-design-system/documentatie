@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import style from './ComponentCard.module.css';
 import clsx from 'clsx';
-import { Card, CardSection, CardIllustration } from './CardGroup';
+import { Card, CardContent, CardIllustration } from './CardGroup';
 import { COMPONENT_STATES, DesignSystemComponent } from '@nl-design-system/component-index';
 import { ComponentIllustration } from './ComponentIllustration';
 import { Paragraph, Heading } from '@utrecht/component-library-react';
@@ -29,7 +29,7 @@ export const ComponentCard = ({ id, name, state, headingLevel = 2 }: PropsWithCh
   const stateModifier = getStateModifier(state);
 
   return (
-    <Card appearance="large" className={clsx(style['component-card'])}>
+    <Card appearance="large" className={clsx(style['component-card'])} component="section">
       <CardIllustration>
         <ComponentIllustration
           id={id}
@@ -37,7 +37,7 @@ export const ComponentCard = ({ id, name, state, headingLevel = 2 }: PropsWithCh
           description={`Schets van de ${name} component met de ${state} kleur`}
         />
       </CardIllustration>
-      <CardSection>
+      <CardContent>
         <div>
           <Heading level={headingLevel} className={clsx(style['component-card__title'])}>
             {name}
@@ -48,10 +48,10 @@ export const ComponentCard = ({ id, name, state, headingLevel = 2 }: PropsWithCh
         </div>
         <Paragraph>
           <Link className="utrecht-link" to={`/${id}`}>
-            Bekijk <span className={clsx(style['component-name'])}>{name}</span> component
+            Bekijk <span className={clsx(style['w'])}>{name}</span> component
           </Link>
         </Paragraph>
-      </CardSection>
+      </CardContent>
     </Card>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageHero from '../components/HomepageHero';
-import { Card, CardSection, CardGroup, CardIllustration } from '../components/CardGroup';
+import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
 import { HomepageFooter } from '../components/HomepageFooter';
 import DocusaurusLink from '@docusaurus/Link';
 import {
@@ -41,8 +41,8 @@ export default function Home() {
         </HomepageHero>
         <div className="container">
           <CardGroup>
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading2>Richtlijnen</Heading2>
                   <Paragraph>
@@ -55,11 +55,11 @@ export default function Home() {
                     Bekijk de richtlijnen
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
 
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading2>Componenten</Heading2>
                   <Paragraph>
@@ -72,11 +72,11 @@ export default function Home() {
                     Bekijk de componenten
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
 
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading2>Voorbeelden</Heading2>
                   <Paragraph>
@@ -89,11 +89,11 @@ export default function Home() {
                     Bekijk de voorbeelden
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
 
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading2>Videos</Heading2>
                   <Paragraph>
@@ -106,21 +106,21 @@ export default function Home() {
                     Bekijk de videos
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
           </CardGroup>
 
           <Heading2>Meedoen als...</Heading2>
 
           <CardGroup>
-            <Card>
+            <Card component="section">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__organisatie.svg"
                   alt="Drie verschillende avatars bij elkaar als organisatie"
                 />
               </CardIllustration>
-              <CardSection>
+              <CardContent>
                 <div>
                   <Heading3>Organisatie</Heading3>
                 </div>
@@ -129,16 +129,16 @@ export default function Home() {
                     Meer informatie voor organisaties
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
-            <Card>
+            <Card component="section">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__leverancier.svg"
                   alt="Drie verschillende avatars bij elkaar als leverancier"
                 />
               </CardIllustration>
-              <CardSection>
+              <CardContent>
                 <div>
                   <Heading3>Leverancier</Heading3>
                 </div>
@@ -147,16 +147,16 @@ export default function Home() {
                     Meer informatie voor leveranciers
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
-            <Card>
+            <Card component="section">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__developer.svg"
                   alt="Avatar als developer"
                 />
               </CardIllustration>
-              <CardSection>
+              <CardContent>
                 <div>
                   <Heading3>Developer</Heading3>
                 </div>
@@ -165,16 +165,16 @@ export default function Home() {
                     Meer informatie voor developers
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
-            <Card>
+            <Card component="section">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__designer.svg"
                   alt="Avatar als designer"
                 />
               </CardIllustration>
-              <CardSection>
+              <CardContent>
                 <div>
                   <Heading3>Designer</Heading3>
                 </div>
@@ -183,7 +183,7 @@ export default function Home() {
                     Meer informatie voor designers
                   </DocusaurusLink>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
           </CardGroup>
 
@@ -229,8 +229,8 @@ export default function Home() {
         <HomepageUpdates>
           <Heading2>Blijf op de hoogte</Heading2>
           <CardGroup>
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading3>Nieuwsbrief</Heading3>
                   <Paragraph>
@@ -243,10 +243,10 @@ export default function Home() {
                     Meld je aan voor de nieuwsbrief
                   </Link>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
-            <Card>
-              <CardSection>
+            <Card component="section">
+              <CardContent>
                 <div>
                   <Heading3>Heartbeat</Heading3>
                   <Paragraph>
@@ -259,7 +259,7 @@ export default function Home() {
                     Meld je aan voor de heartbeat
                   </Link>
                 </Paragraph>
-              </CardSection>
+              </CardContent>
             </Card>
           </CardGroup>
         </HomepageUpdates>
