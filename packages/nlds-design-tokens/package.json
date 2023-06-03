@@ -16,8 +16,8 @@
     "url": "git@github.com:nl-design-system/documentatie.git"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "5.0.0",
-    "@fontsource/source-sans-pro": "5.0.0",
+    "@fontsource/fira-sans": "5.0.2",
+    "@fontsource/source-sans-pro": "5.0.2",
     "firacode": "6.2.0"
   },
   "devDependencies": {
