@@ -382,7 +382,7 @@ li a {
 
 @media (min-width: 997px) {
   .navbar__items--left {
-    max-width: 900px;
+    max-width: 950px;
   }
 
   .navbar__inner {
