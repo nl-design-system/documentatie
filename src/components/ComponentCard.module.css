@@ -1,94 +1,15 @@
 .component-card {
-  width: 100%;
-  min-width: 300px;
-  box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border: 0.1rem solid #d1dfe3;
-  box-sizing: border-box;
-  justify-content: flex-end;
-}
-
-@media (min-width: 600px) {
-  .component-card {
-    width: calc(33.333% - 3rem);
-  }
-}
-
-.component-card__header {
-  background: transparent;
-  padding-inline: 30px;
-  padding-block-start: 0;
-  padding-block-end: 2rem;
-  text-align: center;
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(2deg, #fff 15%, transparent 15.2%);
-}
-
-.component-card__image-wrapper {
-  width: 100%;
-  margin: 20px 0;
-  padding: 20px 10px;
-  display: flex;
-  background-color: white;
-  justify-content: center;
-  box-sizing: border-box;
-  display: flex;
-}
-
-.component-card__body {
-  background-color: white;
-  padding-inline: 30px;
-  padding-block-end: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  --cardgroup-card-flex-direction: row-reverse;
+  --cardgroup-card-justify-content: space-between;
+  --card-content-padding-block-end: 0;
+  padding-block-start: 24px;
+  padding-block-end: 36px;
 }
 
 .component-card__title {
-  font-size: 22px;
-  font-family: var(--ifm-font-family-base);
-  font-weight: bold;
+  --utrecht-heading-3-margin-block-start: 0;
 }
 
-.component-card__title--link:hover {
-  color: #c42c76;
-}
-
-.component-card__status {
-  font-size: 12px;
-  width: max-content;
-  padding: 5px;
-  margin-block-start: 10px;
-  align-self: flex-end;
-  font-weight: bold;
-}
-
-.component-card--help-wanted,
-.component-card__status--help-wanted {
-  background-color: var(--nlds-status-help-wanted-background-color);
-  color: var(--nlds-status-help-wanted-color);
-}
-
-.component-card--community,
-.component-card__status--community {
-  background-color: var(--nlds-status-community-background-color);
-  color: var(--nlds-status-community-color);
-}
-
-.component-card--unstable,
-.component-card__status--unstable {
-  background-color: var(--nlds-status-unstable-background-color);
-  color: var(--nlds-status-unstable-color);
-}
-
-.component-card--stable,
-.component-card__status--stable {
-  background-color: var(--nlds-status-stable-background-color);
-  color: var(--nlds-status-stable-background-color);
+.component-name {
+  text-transform: lowercase;
 }

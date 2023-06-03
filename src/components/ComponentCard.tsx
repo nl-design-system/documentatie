@@ -1,55 +1,57 @@
 import React, { PropsWithChildren } from 'react';
 import style from './ComponentCard.module.css';
-import Link from '@docusaurus/Link';
 import clsx from 'clsx';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import { COMPONENT_STATES } from '@nl-design-system/component-index';
+import { Card, CardSection, CardIllustration } from './CardGroup';
+import { COMPONENT_STATES, DesignSystemComponent } from '@nl-design-system/component-index';
+import { ComponentIllustration } from './ComponentIllustration';
+import { Paragraph, Heading } from '@utrecht/component-library-react';
+import { EstafetteBadge } from './EstafetteBadge';
+import Link from '@docusaurus/Link';
 
-interface ComponentCardProps {
-  title: string;
-  status: string;
-  doc?: string;
-  preview?: string;
-  communityLink?: string;
-}
-
-const mapClassName = (status) => {
-  switch (status) {
+const getStateModifier = (stateModifier: COMPONENT_STATES) => {
+  switch (stateModifier) {
     case COMPONENT_STATES.TODO:
       return 'help-wanted';
     case COMPONENT_STATES.COMMUNITY:
       return 'community';
     case COMPONENT_STATES.NL_UNSTABLE:
-      return 'unstable';
+      return 'candidate';
     case COMPONENT_STATES.NL_STABLE:
-      return 'stable';
+      return 'hall-of-fame';
   }
 };
 
-export const ComponentCard = ({ title, status, doc, preview }: ComponentCardProps) => (
-  <div className={clsx(style['component-card'], style[`component-card--${mapClassName(status)}`])}>
-    <div className={style['component-card__header']}>
-      {preview && (
-        <div className={style['component-card__image-wrapper']}>
-          <img className={style['component-card__image']} src={useBaseUrl(preview)} alt={`${title} voorbeeld`} />
-        </div>
-      )}
-    </div>
-    <div className={style['component-card__body']}>
-      {doc ? (
-        <Link to={doc} className={clsx(style['component-card__title'], style['component-card__title--link'])}>
-          {title}
-        </Link>
-      ) : (
-        <p className={style['component-card__title']}>{title}</p>
-      )}
-      <div className={clsx(style['component-card__status'], style[`component-card__status--${mapClassName(status)}`])}>
-        {status}
-      </div>
-    </div>
-  </div>
-);
+interface ComponentCardProps extends DesignSystemComponent {
+  headingLevel?: number;
+}
 
-export const ComponentCards = ({ children }: PropsWithChildren<{}>) => (
-  <div className={style['component-cards']}>{children}</div>
-);
+export const ComponentCard = ({ id, name, state, headingLevel = 2 }: PropsWithChildren<ComponentCardProps>) => {
+  const stateModifier = getStateModifier(state);
+
+  return (
+    <Card appearance="large" className={clsx(style['component-card'])}>
+      <CardIllustration>
+        <ComponentIllustration
+          id={id}
+          stateModifier={stateModifier}
+          description={`Schets van de ${name} component met de ${state} kleur`}
+        />
+      </CardIllustration>
+      <CardSection>
+        <div>
+          <Heading level={headingLevel} className={clsx(style['component-card__title'])}>
+            {name}
+          </Heading>
+          <Paragraph>
+            <EstafetteBadge stateModifier={stateModifier} state={state} />
+          </Paragraph>
+        </div>
+        <Paragraph>
+          <Link className="utrecht-link" to={`/${id}`}>
+            Bekijk <span className={clsx(style['component-name'])}>{name}</span> component
+          </Link>
+        </Paragraph>
+      </CardSection>
+    </Card>
+  );
+};
