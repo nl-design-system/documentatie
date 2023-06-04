@@ -411,12 +411,20 @@ li a {
 }
 
 @media screen and (max-width: 996px) {
-  .navbar .navbar__item:not(.navbar__item--show-on-mobile) {
+  .navbar .navbar__item {
     display: none;
   }
 
-  .navbar .navbar__items:not(.navbar__items--show-on-mobile) {
+  .navbar .navbar__item--show-on-mobile {
+    display: flex;
+  }
+
+  .navbar .navbar__items {
     display: none;
+  }
+
+  .navbar .navbar__items--show-on-mobile {
+    display: flex;
   }
 
   .footer__items {
