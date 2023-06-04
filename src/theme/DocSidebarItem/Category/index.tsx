@@ -12,6 +12,8 @@ import { translate } from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import type { Props } from '@theme/DocSidebarItem/Category';
+import { Button, Icon } from '@utrecht/component-library-react';
+import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -58,13 +60,16 @@ function useCategoryHrefWithSSRFallback(item: Props['item']): string | undefined
 
 function CollapseButton({
   categoryLabel,
+  collapsed,
   onClick,
 }: {
   categoryLabel: string;
+  collapsed: boolean;
   onClick: ComponentProps<'button'>['onClick'];
 }) {
   return (
-    <button
+    <Button
+      appearance="subtle-button"
       aria-label={translate(
         {
           id: 'theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel',
@@ -74,9 +79,11 @@ function CollapseButton({
         { label: categoryLabel },
       )}
       type="button"
-      className="clean-btn menu__caret"
+      className="clean-btn"
       onClick={onClick}
-    />
+    >
+      <Icon>{collapsed ? <IconChevronDown /> : <IconChevronUp />}</Icon>
+    </Button>
   );
 }
 
@@ -175,6 +182,7 @@ export default function DocSidebarItemCategory({
               e.preventDefault();
               updateCollapsed();
             }}
+            collapsed={collapsed}
           />
         )}
       </div>

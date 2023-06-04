@@ -318,22 +318,33 @@ li a {
   padding-inline: 0;
 }
 
+.menu__list {
+  --utrecht-icon-color: var(--nlds-interaction-color);
+  --utrecht-button-icon-size: 28px;
+}
+
 .menu__link {
   --utrecht-link-text-decoration: none;
+  --utrecht-link-color: var(--nlds-interaction-color);
   text-decoration: none;
-  color: var(--nlds-interaction-color);
-  border-inline-start: 4px solid transparent;
   border-radius: 0;
+  margin-inline-start: 4px;
 }
 
 .menu__link--active,
 .menu__link:active {
   background-color: hsla(0, 0%, 0%, 0.05);
-  border-color: var(--nlds-navbar-link-active-border-color);
+  margin-inline-start: 0;
+  border-inline-start-width: 4px;
+  border-inline-start-style: solid;
+  border-inline-start-color: var(--nlds-navbar-link-active-border-color);
 }
 
 .menu__link:hover {
-  border-color: var(--nlds-navbar-link-active-border-color);
+  margin-inline-start: 0;
+  border-inline-start-width: 4px;
+  border-inline-start-style: solid;
+  border-inline-start-color: var(--nlds-navbar-link-active-border-color);
 }
 
 .sidebar__main-category > .menu__list-item-collapsible {
