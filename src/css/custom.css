@@ -219,8 +219,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .nlds-theme {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: 100%;
   align-content: inherit;
   font-weight: 400;
 }
@@ -408,6 +406,20 @@ li a {
 
   .navbar .navbar__items:not(.navbar__items--show-on-mobile) {
     display: none;
+  }
+
+  .footer__items {
+    gap: 16px;
+  }
+
+  .footer__col {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__items {
+    grid-auto-flow: row;
   }
 }
 
