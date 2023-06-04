@@ -284,7 +284,7 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 - [Source Serif Pro](https://fonts.google.com/specimen/Source+Serif+Pro)
 - [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
-Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](../../project/contact.mdx) dan vullen we de lijst verder aan.
+Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](../../project/kernteam.mdx) dan vullen we de lijst verder aan.
 
 ### Gerelateerde WCAG Richtlijnen
 
@@ -322,4 +322,4 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 
 ## Vragen
 
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/contact.mdx).
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).

@@ -35,4 +35,4 @@ Kennis delen is maar een gedeelte van de oplossing: de kennis moet op het juiste
 
 ## Hulp nodig of gewoon even kennis maken?
 
-Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](project/contact)
+Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](/project/kernteam)
