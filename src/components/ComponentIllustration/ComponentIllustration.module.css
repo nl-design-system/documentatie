@@ -1,11 +1,12 @@
 .component-illustration {
   margin: 0;
-  padding-inline: 24px;
+  padding-inline: var(--component-illustration-padding-inline, 24px);
 }
 
 .component-illustration__svg {
-  max-height: 185px;
-  width: auto;
+  max-height: var(--component-illustration-svg-max-height, 185px);
+  width: 100%;
+  height: auto;
 }
 
 .component-illustration__caption {

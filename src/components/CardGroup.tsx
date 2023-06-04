@@ -5,18 +5,26 @@ import style from './CardGroup.module.css';
 
 type Appearance = 'small' | 'medium' | 'large';
 
-interface CardIllustrationProps {
+interface CardIllustrationProps extends HTMLAttributes<HTMLElement> {
   background?: boolean;
 }
 
-export const CardIllustration = ({ background, children }: PropsWithChildren<CardIllustrationProps>) => (
-  <div className={clsx(style['card__illustration'], background && style['card__illustration--background'])}>
+export const CardIllustration = ({
+  background,
+  children,
+  className,
+  ...props
+}: PropsWithChildren<CardIllustrationProps>) => (
+  <div
+    className={clsx(style['card__illustration'], background && style['card__illustration--background'], className)}
+    {...props}
+  >
     {children}
   </div>
 );
 
-export const CardContent = ({ children }: PropsWithChildren<{}>) => (
-  <div className={clsx(style['card__content'])}>{children}</div>
+export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
+  <div className={clsx(style['card__content'])} {...props} />
 );
 
 interface CardProps {

@@ -1,15 +1,18 @@
 .component-card {
-  --cardgroup-card-flex-direction: row-reverse;
-  --cardgroup-card-justify-content: space-between;
-  --card-content-padding-block-end: 0;
-  padding-block-start: 24px;
-  padding-block-end: 36px;
+  --cardgroup-card-mobile-max-width: 300px;
+}
+
+.component-name {
+  text-transform: lowercase;
 }
 
 .component-card__title {
   --utrecht-heading-3-margin-block-start: 0;
 }
 
-.component-name {
-  text-transform: lowercase;
+@media screen and (max-width: 768px) {
+  .component-card {
+    --component-illustration-svg-max-height: none;
+    --cardgroup-card-max-width: 550px;
+  }
 }

@@ -1,0 +1,54 @@
+.core-team {
+  display: grid;
+  gap: 8px;
+  max-height: 200px;
+  align-items: baseline;
+  margin-block-start: 30px;
+  width: 100%;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.core-team__card {
+  --cardgroup-card-box-shadow: none;
+  --cardgroup-card-border-width: 1;
+  --cardgroup-card-large-padding-block-start: 0;
+  --cardgroup-card-large-padding-block-end: 0;
+}
+
+.core-team__content {
+  padding-block-start: 24px;
+  padding-block-end: 36px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+}
+
+.core-team__heading {
+  padding-block-end: 24px;
+}
+
+.core-team__heading-subtitle {
+  padding-block-start: 8px;
+  font-size: 20px;
+}
+.core-team__description {
+  padding-block-end: 24px;
+}
+
+.core-team__illustration {
+  display: flex;
+  align-items: flex-end;
+  --card-illustration-background-color: var(--nlds-document-inverse-background-color);
+}
+
+.core-team__avatar {
+  height: 150px;
+  padding-inline: 8px;
+  padding-block-start: 24px;
+}
+
+@media (max-width: 768px) {
+  .core-team__card {
+    --cardgroup-card-max-width: auto;
+  }
+}
