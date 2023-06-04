@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_nl_design_system_website=self.webpackChunk_nl_design_system_website||[]).push([[9030],{75265:e=>{e.exports=JSON.parse('{"title":"Onderzoek","keywords":["Onderzoek","overzicht"],"slug":"onderzoek","permalink":"/onderzoek","navigation":{"next":{"title":"Overzicht","permalink":"/onderzoek/"}}}')}}]);
