@@ -205,4 +205,4 @@ Bijvoorbeeld wel zo:
 
 ## Hulp nodig of gewoon even kennis maken?
 
-Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](project/contact).
+Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](/project/kernteam).

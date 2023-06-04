@@ -30,7 +30,7 @@ Het NL Design System zit net even anders in elkaar als andere Design Systems. Ni
 
 Er is een vast kernteam dat werkt aan het NL Design System. Het kernteam werkt op dagelijkse basis samen met verschillende disciplines vanuit de community. Denk aan designers, developers maar ook copywriters en accessibility specialisten.
 
-[Meer informatie over het Kernteam](../../project/contact.mdx)
+[Meer informatie over het Kernteam](../../project/kernteam.mdx)
 
 ### De community
 
@@ -86,7 +86,7 @@ Op dit moment zijn we druk bezig om de NL Design System Figma Bibliotheek te vul
 
 Mis je een component? Zou je een component graag aangepast zien? Heb je input voor de documentatie? Of nog beter heb je ooit onderzoek gedaan naar een component?
 
-[Neem contact op](../../project/contact.mdx), dan zetten we het component op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
+[Neem contact op](../../project/kernteam.mdx), dan zetten we het component op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
 
 ### Patronen en Templates
 
@@ -100,7 +100,7 @@ Daarom willen we alvast een lijst opstellen van patronen en templates die voor v
 
 Mis je een patroon of template? Heb je input voor de documentatie? Of nog beter, heb je ooit onderzoek gedaan naar een patroon of template?
 
-[Neem contact op](../../project/contact.mdx), dan zetten we het patroon of template op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
+[Neem contact op](../../project/kernteam.mdx), dan zetten we het patroon of template op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
 
 ### Tekst en taalgebruik
 
@@ -126,4 +126,4 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 
 ## Vragen
 
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/contact.mdx).
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).

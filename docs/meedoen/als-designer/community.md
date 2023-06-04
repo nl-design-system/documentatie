@@ -23,7 +23,7 @@ Registreer je bij de [Code for NL Slack](https://praatmee.codefor.nl) en 'join' 
 
 ## Design open hour
 
-Je bent van harte welkom bij de 'Design open hour' meeting. Hier wisselen designers informatie, inzichten en tips met elkaar uit. De meeting is om de week op dinsdag om 13:00. [Neem contact op met het kernteam](../../project/contact.mdx) en we nodigen je uit.
+Je bent van harte welkom bij de 'Design open hour' meeting. Hier wisselen designers informatie, inzichten en tips met elkaar uit. De meeting is om de week op dinsdag om 13:00. [Neem contact op met het kernteam](../../project/kernteam.mdx) en we nodigen je uit.
 
 ## Design system projecten
 
@@ -43,7 +43,7 @@ De volgende Figma projecten zijn nog niet openbaar. Neem contact met de auteurs 
 
 ## Rijkshuisstijl in Figma
 
-We krijgen vaak de vraag of [Rijkshuisstijl](https://www.rijkshuisstijl.nl) ook een Figma-bibliotheek heeft. Momenteel is deze er nog niet. We willen het wel mogelijk maken dat de [NL Design System Figma bibliotheek](figma-structuur.mdx#nl-design-system-bibliotheek) gebruikt kan worden met design tokens van Rijkshuisstijl. Maar daar heeft het kernteam op dit moment nog geen tijd voor. Wil je helpen om dit mogelijk te maken, [neem contact op met het kernteam](../../project/contact.mdx).
+We krijgen vaak de vraag of [Rijkshuisstijl](https://www.rijkshuisstijl.nl) ook een Figma-bibliotheek heeft. Momenteel is deze er nog niet. We willen het wel mogelijk maken dat de [NL Design System Figma bibliotheek](figma-structuur.mdx#nl-design-system-bibliotheek) gebruikt kan worden met design tokens van Rijkshuisstijl. Maar daar heeft het kernteam op dit moment nog geen tijd voor. Wil je helpen om dit mogelijk te maken, [neem contact op met het kernteam](../../project/kernteam.mdx).
 
 ---
 
@@ -53,4 +53,4 @@ Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun
 
 ## Vragen
 
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/contact.mdx).
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).

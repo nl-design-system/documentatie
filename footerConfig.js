@@ -5,7 +5,7 @@ module.exports = {
       items: [
         {
           label: 'Contact',
-          to: '/project/contact',
+          to: '/project/kernteam',
         },
         {
           label: 'Toegankelijkheid',
@@ -30,4 +30,4 @@ module.exports = {
       ],
     },
   ],
-};
+}
