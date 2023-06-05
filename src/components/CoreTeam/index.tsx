@@ -120,13 +120,13 @@ const coreteam: TeamMember[] = [
   {
     Avatar: Hidde,
     name: 'Hidde de Vries',
-    role: 'Developer Relations & Accessibility expert',
+    role: 'Developer Relations & Toegankelijkheidsspecialist',
     email: 'hidde.devries@ictu.nl',
     slack: { mention: '@Hidde', id: 'UA17NJHTR' },
     description: (
       <>
         <Paragraph>
-          Hidde werkt als toegankelijkheid expert voor NL Design System. Hij heeft zich de afgelopen jaren intensief
+          Hidde werkt als toegankelijkheidsspecialist voor NL Design System. Hij heeft zich de afgelopen jaren intensief
           beziggehouden met design systems en digitale toegankelijkheid, dat laatste onder meer bij het W3C. Daar was
           hij betrokken bij de ontwikkeling en promotie van toegankelijkheidsstandaarden als WCAG en ATAG.
         </Paragraph>
