@@ -319,7 +319,7 @@ li a {
 }
 
 .menu__list {
-  --utrecht-icon-color: var(--nlds-interaction-color);
+  --utrecht-icon-color: var(--utrecht-link-color);
   --utrecht-button-icon-size: 28px;
 }
 
