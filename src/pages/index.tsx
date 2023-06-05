@@ -114,7 +114,7 @@ export default function Home() {
 
           <CardGroup>
             <Card component="section">
-              <CardIllustration>
+              <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__organisatie.svg"
                   alt="Drie verschillende avatars bij elkaar als organisatie"
@@ -132,7 +132,7 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section">
-              <CardIllustration>
+              <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__leverancier.svg"
                   alt="Drie verschillende avatars bij elkaar als leverancier"
@@ -150,7 +150,7 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section">
-              <CardIllustration>
+              <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__developer.svg"
                   alt="Avatar als developer"
@@ -168,7 +168,7 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section">
-              <CardIllustration>
+              <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__designer.svg"
                   alt="Avatar als designer"

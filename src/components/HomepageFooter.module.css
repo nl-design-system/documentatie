@@ -12,8 +12,16 @@
 
 .homepage-footer__content {
   --utrecht-space-around: 0;
-  display: flex;
+  display: grid;
   gap: 24px;
-  max-width: 500px;
   align-items: center;
+  flex-wrap: wrap;
+  grid-template-columns: auto 1fr;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 550px) {
+  .homepage-footer__content {
+    grid-template-columns: 100px 1fr;
+  }
 }
