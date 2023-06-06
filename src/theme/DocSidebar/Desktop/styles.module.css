@@ -38,6 +38,7 @@
     min-height: var(--ifm-navbar-height);
     max-height: var(--ifm-navbar-height);
     justify-content: flex-start;
+    padding-inline-start: 24px;
   }
 
   .sidebar__toggle-button--icon-only {

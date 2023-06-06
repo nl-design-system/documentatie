@@ -1,4 +1,4 @@
-import React, { type ComponentProps, useEffect, useMemo } from 'react';
+import React, { type ComponentProps, useEffect, useMemo, HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import { ThemeClassNames, useThemeConfig, usePrevious, Collapsible, useCollapsible } from '@docusaurus/theme-common';
 import {
@@ -142,39 +142,21 @@ export default function DocSidebarItemCategory({
         className,
       )}
     >
-      <div
-        className={clsx('menu__list-item-collapsible', {
-          'menu__list-item-collapsible--active': isCurrentPage,
-        })}
-      >
-        <Link
-          className={clsx('menu__link', 'utrecht-link', {
-            'menu__link--sublist': collapsible,
-            'menu__link--sublist-caret': !href && collapsible,
-            'menu__link--active': isActive,
-          })}
-          onClick={
-            collapsible
-              ? (e) => {
-                  onItemClick?.(item);
-                  if (href) {
-                    updateCollapsed(false);
-                  } else {
-                    e.preventDefault();
-                    updateCollapsed();
-                  }
-                }
-              : () => {
-                  onItemClick?.(item);
-                }
-          }
-          aria-current={isCurrentPage ? 'page' : undefined}
-          aria-expanded={collapsible ? !collapsed : undefined}
-          href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
-          {...props}
-        >
-          {label}
-        </Link>
+      <div className={clsx('menu__list-item-collapsible')}>
+        {index === 0 ? (
+          <div className={clsx('doc-sidebar-main-category')}>{label}</div>
+        ) : (
+          <Link
+            className={clsx('menu__link', 'utrecht-link', {
+              'menu__link--sublist': collapsible,
+              'menu__link--sublist-caret': !href && collapsible,
+            })}
+            href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
+            {...props}
+          >
+            {label}
+          </Link>
+        )}
         {href && collapsible && (
           <CollapseButton
             categoryLabel={label}
