@@ -21,6 +21,23 @@
   font-weight: 600;
 }
 
+@media screen and (max-width: 350px) {
+  .navbar-logo {
+    padding-inline-start: 12px;
+    flex-grow: 1;
+  }
+
+  .navbar-logo__title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  .navbar-logo {
+    min-width: 13.875rem;
+  }
+}
+
 @media (min-width: 1150px) {
   .navbar-logo__icon {
     display: block;
