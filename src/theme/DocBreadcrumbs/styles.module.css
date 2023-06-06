@@ -17,6 +17,7 @@
 @media screen and (max-width: 996px) {
   .breadcrumbs--mobile {
     display: inline-flex;
+    color: var(--nlds-interaction-color);
   }
 
   .breadcrumbs--desktop {
