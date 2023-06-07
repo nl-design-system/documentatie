@@ -373,6 +373,10 @@ li a {
   margin-block-start: 48px;
 }
 
+.sidebar__main-category {
+  display: none;
+}
+
 .menu__list-item-collapsible > .menu__link--active:not([aria-expanded="false"], :hover) {
   border-color: transparent;
 }
@@ -451,15 +455,11 @@ li a {
     margin-bottom: 0;
   }
 
-  .doc-sidebar-main-category {
+  .sidebar__main-category {
     display: block;
     font-size: 28px;
     margin-block-end: 48px;
     padding-inline-start: 20px;
-  }
-
-  .doc-sidebar-main-category {
-    --ifm-menu-color-background-hover: var(--ifm-navbar-background-color);
   }
 }
 
