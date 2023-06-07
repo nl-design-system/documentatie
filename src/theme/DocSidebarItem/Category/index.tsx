@@ -1,11 +1,10 @@
-import React, { type ComponentProps, useEffect, useMemo, HTMLAttributes } from 'react';
+import React, { type ComponentProps, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
 import { ThemeClassNames, useThemeConfig, usePrevious, Collapsible, useCollapsible } from '@docusaurus/theme-common';
 import {
   isActiveSidebarItem,
   findFirstCategoryLink,
   useDocSidebarItemsExpandedState,
-  isSamePath,
 } from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
@@ -96,6 +95,8 @@ export default function DocSidebarItemCategory({
   ...props
 }: Props): JSX.Element {
   const { items, label, collapsible, className, href } = item;
+  const isMainCategory = className === 'sidebar__main-category';
+  if (isMainCategory) console.log(item, className, index);
   const {
     docs: {
       sidebar: { autoCollapseCategories },
@@ -104,7 +105,6 @@ export default function DocSidebarItemCategory({
   const hrefWithSSRFallback = useCategoryHrefWithSSRFallback(item);
 
   const isActive = isActiveSidebarItem(item, activePath);
-  const isCurrentPage = isSamePath(href, activePath);
 
   const { collapsed, setCollapsed } = useCollapsible({
     // Active categories are always initialized as expanded. The default
@@ -139,12 +139,11 @@ export default function DocSidebarItemCategory({
         {
           'menu__list-item--collapsed': collapsed,
         },
-        className,
       )}
     >
-      <div className={clsx('menu__list-item-collapsible')}>
-        {index === 0 ? (
-          <div className={clsx('doc-sidebar-main-category')}>{label}</div>
+      <div className={clsx('menu__list-item-collapsible', { 'sidebar__main-category': isMainCategory })}>
+        {isMainCategory ? (
+          label
         ) : (
           <Link
             className={clsx('menu__link', 'utrecht-link', {
