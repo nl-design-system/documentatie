@@ -96,7 +96,6 @@ export default function DocSidebarItemCategory({
 }: Props): JSX.Element {
   const { items, label, collapsible, className, href } = item;
   const isMainCategory = className === 'sidebar__main-category';
-  if (isMainCategory) console.log(item, className, index);
   const {
     docs: {
       sidebar: { autoCollapseCategories },
