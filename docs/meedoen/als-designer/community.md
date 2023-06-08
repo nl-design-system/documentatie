@@ -5,7 +5,7 @@ hide_table_of_contents: true
 sidebar_label: Community
 sidebar_position: 5
 pagination_label: Voorbeeld thema
-description: Community van designers die met NL Design System werken
+description: Lees over de community van designers en hoe je hier onderdeel van kan worden.
 keywords:
   - index
   - designer
