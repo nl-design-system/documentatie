@@ -5,7 +5,7 @@ hide_table_of_contents: true
 sidebar_label: Voorbeeld thema
 sidebar_position: 4
 pagination_label: Voorbeeld thema
-description: Gemaakte keuzes voor het Voorbeeld thema
+description: Toelichting op design keuzes voor het Voorbeeld thema.
 keywords:
   - index
   - designer
