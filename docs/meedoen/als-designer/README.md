@@ -5,7 +5,7 @@ hide_table_of_contents: true
 sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Index
-description: Meedoen als designer - Introductie
+description: Het startpunt voor designers die mee willen doen met het NL Design System.
 keywords:
   - index
   - designer
