@@ -46,7 +46,7 @@ Doorloop de volgende stappen om de NL Design System bibliotheek te dupliceren.
 
 1. Ga naar de [Figma Community pagina van het NL Design System](https://figma.com/@nlds).
 2. Klik op ‘NL DS - Bibliotheek’.
-3. Klik op ‘Get a copy’.
+3. Klik op ‘Open in Figma’.
 4. Hernoem het bestand naar: NL DS - [naam-van-je-organisatie] - Bibliotheek.
 5. Verplaats het bestand naar het gewenste project.
 6. Hernoem ‘Voorbeeld’ naar ‘[naam-van-je-organisatie]’ voor de cover van de Figma Bibliotheek. Je vindt de cover op de pagina ‘Helpers’.
@@ -71,7 +71,7 @@ Doorloop de volgende stappen om de Token Studio plugin te activeren.
 
 ![Screenshot van Figma. Een menu toon de plugin Token Studio.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_plugin-detail.jpg)
 
-Er worden enkele onboarding schermen getoond. Die kun je doornemen of lekker skippen.
+Nu is het moment gekomen om de plugin aan Figma te koppelen
 
 ### Koppel de plugin aan Github
 
@@ -99,33 +99,55 @@ Doorloop de volgende stappen om de Token Studio plugin aan Github te koppelen.
 
 5. Vul de gegevens in:
 
-**Name**
+**Name**  
+Dit wordt enkel gebruikt voor de plugin zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].
 
-- Dit wordt enkel gebruikt voor de plugin zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].
+**Personal Access Token**  
+Al doet de naam het vermoeden, een Personal Access Token heeft niks met design tokens te maken. Een Personal Access token zorgt ervoor dat je jouw Github account kunt koppelen aan de plugin.
 
-**Personal Access Token**
+- Heb je al een Personal Access Token? Vul deze in.
+- Heb je nog geen Personal Access Token? Volg dan de stappen onder [‘Een 'Personal Access Token' genereren’](#een-personal-access-token-genereren).
 
-- Een Personal Access Token heeft niks met design tokens te maken. De Personal Access token zorgt ervoor dat je jouw Github account kunt koppelen aan de plugin.
-  - Heb je al een Personal Access Token? Vul deze in.
-  - Heb je nog geen Personal Access Token? Volg dan de stappen onder [‘Een 'Personal Access Token' genereren’](#een-personal-access-token-genereren).
+**Repository**  
+Een repository kan je zien als de hoofdmap van je project. Wat je hier moet invullen verschilt per situatie.
 
-**Repository**
+A. Heeft je organisatie al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes)?
 
-- Vul ‘nl-design-system/themes’ in.
+- Vul in: nl-design-system/themes
 
-**Default brach**
+B. Werkt je organisatie vanuit een eigen Github omgeving?
 
-- Voeg je default brach toe. Dat is ‘main’.
+- Stem met development af waar de design tokens geplaatst moeten worden.
+- Hulp nodig? [Neem contact op met het kernteam](../../project/contact.mdx).
 
-**File Path**
+C. Wil je eerst lekker je eigen gang gaan?
 
-- Ga naar https://github.com/nl-design-system/themes/tree/main/proprietary en bekijk of er voor jouw organisatie al tokens staan.
-  - Is er nog geen thema voor jouw organisatie? [Neem contact op met het kernteam](../../project/kernteam.mdx).
-- Voeg het pad in waar je tokens moeten worden opgeslagen. Waarschijnlijk is dat ‘proprietary/[naam-van-je-organisatie]-theme/figma/[naam-van-je-organisatie].tokens.json’. Kopieer het file path niet vanuit de url balk van je browser. Github voegt daar namelijk '/blob/main'aan toe en dat zou er niet tussen moeten staan.
+- Maak een repository aan binnen je eigen Github omgeving, dit doe je door de stappen onder [‘Een 'Repository' aanmaken’](#een-repository-aanmaken) te volgen.
+- Hulp nodig? [Neem contact op met het kernteam](../../project/contact.mdx).
 
-**baseUrl**
+**Default branch**  
+Voeg je default branch toe. Dat is ‘main’.
 
-- Dit is optioneel. Hoef je niks mee te doen.
+**File Path**  
+Een file path kun je zien als de route naar je design tokens binnen de repository. Zoals je bij repository hebt kunnen lezen verschilt dit per situatie.
+
+A. Heeft je organisatie al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes)?
+
+- Vul in: proprietary/[naam-van-je-organisatie]-theme/figma/[naam-van-je-organisatie].tokens.json
+
+B. Werkt je organisatie vanuit een eigen Github omgeving?
+
+- Stem met development af waar de design tokens geplaatst moeten worden.
+- [Neem contact op met het kernteam](../../project/contact.mdx) dan kunnen we de design tokens van het Voorbeeld thema met je delen.
+
+C. Wil je eerst lekker je eigen gang gaan?
+
+- [Neem contact op met het kernteam](../../project/contact.mdx) dan kunnen we de design tokens van het Voorbeeld thema met je delen.
+
+Let op. Kopieer een file path niet vanuit de adresbalk van je browser. Github voegt daar namelijk '/blob/main'aan toe. En dat zou er niet tussen moeten staan.
+
+**baseUrl**  
+Dit is optioneel. Hoef je niks mee te doen.
 
 ![Screenshot toont de Studio Token plugin. Het formulier 'Add new credentials' wordt getoond. Alle invulvelden zijn ingevuld.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_plugin-credentials-filled.jpg)
 
@@ -213,7 +235,7 @@ Wanneer je de tokens naar wens hebt aangepast kun je deze wijzigingen in de bron
 
 - Vul de gegevens in.
   - Commit message. Beschrijf hier kort wat je hebt aangepast.
-  - Branch. ‘main’ staat al ingevuld. Het is echter verstandig om een aparte brach voor je wijzigingen aan te houden. Hoe je die branch noemt staat je vrij. Kies bijvoorbeeld voor ‘Brand update’ of ‘01-01-2023.
+  - Branch. ‘main’ staat al ingevuld. Het is echter verstandig om een aparte branch voor je wijzigingen aan te houden. Hoe je die branch noemt staat je vrij, als deze maar elke keer een andere naam heeft. Kies bijvoorbeeld voor ‘Brand update’ of ‘01-01-2023.
 - Klik op ‘Push’.
 
 ![Screenshot toont de Studio Token plugin. Er wordt een modal scherm getoond verschillende invulvelden.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_adjust-push.jpg)
@@ -223,6 +245,13 @@ De plugin stuurt de update naar Github en geeft je direct de mogelijkheid om een
 - Klik op ‘Create Pull Request’.
 
 Vervolgens wordt je automatisch naar Github geleid waar je het Pull Request kunt maken. Bespreek met een developer uit je team hoe jullie verder met pull requests om gaan.
+
+## Van Figma naar code
+
+Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je een developer nodig om de tokens te publiceren als CSS thema. Dat kan op twee manieren:
+
+1. Je krijgt een eigen directory in de [NL Design System themes repository](https://github.com/nl-design-system/themes). Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. [Neem contact op met het kernteam](../../project/contact.mdx), zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
+2. Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de [NL Design System example repository](https://github.com/nl-design-system/example) een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. [Neem contact op met het kernteam](../../project/contact.mdx) om hulp te vragen als je dit wilt doen.
 
 ## Aanvullende informatie
 
@@ -250,6 +279,22 @@ Vervolgens wordt je automatisch naar Github geleid waar je het Pull Request kunt
 
 **Let op!**
 Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel het als je persoonlijke wachtwoord.
+
+### Een 'Repository' maken
+
+**Ga direct naar [github.com/new](https://github.com/new) of volg de volgende stappen:**
+
+- Klik op je avatar (rechtsboven)
+- Klik op ‘Your repositories’
+- Klik op 'New'
+
+**Repository aanmaken**
+
+- Vul de gegevens in:
+  - Repository name. Bijvoorbeeld; tokens-[naam-van-je-organisatie].
+  - Laat 'Public' geselecteerd staan.
+- Klik op ‘Create repository’.
+- Vul de Repository verwijzing, bijvoorbeeld '[jouw-github-omgeving]/tokens-[naam-van-je-organisatie]' in bij de Github gegevens in de Token Studio plugin.
 
 ---
 
