@@ -1,0 +1,7 @@
+.blog__header-link {
+  --utrecht-link-text-decoration: none;
+}
+
+.blog__header-link:hover {
+  --utrecht-link-text-decoration: underline;
+}

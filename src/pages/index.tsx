@@ -15,14 +15,20 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react';
 import HomepageUpdates from '../components/HomepageUpdates';
+import useGlobalData from '@docusaurus/useGlobalData';
+import { BlogCard } from '../components/Blog';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const globalData = useGlobalData();
+  const BLOG_COUNT = 3;
+  const blogItems = globalData['rss-blog']['default']['blogItems'].slice(0, BLOG_COUNT);
+
   return (
     <Layout
       title={`${siteConfig.title} - homepage`}
       description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
-      wrapperClassName="marketing-page"
+      wrapperClassName="container--narrow"
     >
       <main>
         <HomepageHero title="NL Design System" ctaLink="meedoen/introductie" cta="Lees meer over het NL Design System">
@@ -266,6 +272,17 @@ export default function Home() {
               </CardContent>
             </Card>
           </CardGroup>
+          <Heading2>Blog</Heading2>
+          <CardGroup appearance="large">
+            {blogItems.map((item) => (
+              <BlogCard {...item} />
+            ))}
+          </CardGroup>
+          <Paragraph>
+            <DocusaurusLink to="/project/blog" className="utrecht-link">
+              Bekijk meer blog artikelen
+            </DocusaurusLink>
+          </Paragraph>
         </HomepageUpdates>
         <HomepageFooter />
       </main>

@@ -3,6 +3,9 @@
 
 const navbar = require('./navConfig');
 const footer = require('./footerConfig');
+const Parser = require('rss-parser');
+
+const getBlog = () => new Parser().parseURL('https://www.gebruikercentraal.nl/category/nl-design-system/feed/');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,6 +18,38 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
   projectName: 'documentatie', // Usually your repo name.
+  plugins: [
+    async function rssBlog() {
+      return {
+        name: 'rss-blog',
+        async loadContent() {
+          return await getBlog().then((blog) =>
+            blog.items.map((item) => {
+              const guiParam = item.guid.match(/p=(.*)/);
+              return { ...item, uuid: guiParam && guiParam[1] };
+            }),
+          );
+        },
+        async contentLoaded({ content, actions }) {
+          const { setGlobalData, addRoute } = actions;
+
+          setGlobalData({ blogItems: content });
+
+          addRoute({
+            path: '/project/blog/',
+            component: '@site/src/components/Blog.tsx',
+            exact: true,
+          });
+
+          addRoute({
+            path: '/project/blog/:uuid',
+            component: '@site/src/components/BlogPost.tsx',
+            exact: true,
+          });
+        },
+      };
+    },
+  ],
   presets: [
     [
       'classic',

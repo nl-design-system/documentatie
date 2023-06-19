@@ -6,7 +6,7 @@ export const HomepageUpdates = ({ children }: PropsWithChildren<{}>) => {
   return (
     <div className={clsx(style['homepage-updates'])}>
       <div className={clsx(style['homepage-updates__linear-gradient'])} />
-      <div className="container">{children}</div>
+      <div className="container padding-bottom--xl">{children}</div>
     </div>
   );
 };
