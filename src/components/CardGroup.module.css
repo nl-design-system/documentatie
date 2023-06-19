@@ -21,6 +21,7 @@
 
 .cardgroup--large {
   --cardgroup-padding-block-start: 24px;
+  --cardgroup-padding-block-end: 36px;
   --cardgroup-grid-template-columns: 1fr;
   --cardgroup-gap: 24px;
 }

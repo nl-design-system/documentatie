@@ -21,49 +21,7 @@
   --ifm-container-width-xl: 1080px;
   /* --docusaurus-announcement-bar-height: 50px; */
 }
-
-@media (min-width: 997px) {
-  .nlds-theme {
-    --docusaurus-announcement-bar-height: 40px;
-  }
-}
-
-/* HACK: these fixes need to be made in utrecht too */
-.utrecht-button:focus {
-  background-color: inherit !important;
-  border-color: inherit !important;
-  color: inherit !important;
-  scale: inherit !important;
-}
-
-.utrecht-button:focus-visible {
-  background-color: var(--_utrecht-button-focus-background-color) !important;
-  border-color: var(--_utrecht-button-focus-border-color) !important;
-  color: var(--_utrecht-button-focus-color) !important;
-  scale: var(--utrecht-button-focus-scale, 1) !important;
-}
-
-.utrecht-link:focus {
-  background-color: inherit !important;
-  color: inherit !important;
-  text-decoration: inherit !important;
-  text-decoration-thickness: inherit !important;
-}
-
-.utrecht-link:focus-visible {
-  background-color: var(--utrecht-link-focus-background-color, transparent) !important;
-  color: var(--utrecht-link-focus-color, var(--utrecht-link-color)) !important;
-  text-decoration: var(--utrecht-link-focus-text-decoration, var(--utrecht-link-text-decoration, underline)) !important;
-  text-decoration-skip: none !important;
-  text-decoration-skip-ink: none !important;
-  text-decoration-thickness: max(
-    var(--utrecht-link-focus-text-decoration-thickness, var(--utrecht-link-text-decoration-thickness)),
-    1px
-  ) !important;
-}
-/* End HACK */
-
-.marketing-page {
+.container--narrow {
   --ifm-container-width: 784px;
   --ifm-container-width-xl: var(--ifm-container-width);
 }
@@ -537,6 +495,12 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   }
 }
 
+@media (min-width: 997px) {
+  .nlds-theme {
+    --docusaurus-announcement-bar-height: 40px;
+  }
+}
+
 .dsw-usps ul {
   padding: 0;
 }
@@ -572,4 +536,43 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
 .dsw-signup-sup {
   font-size: 0.65em;
   display: block;
+}
+
+/* HACK: these fixes need to be made in utrecht too */
+.utrecht-button:focus {
+  background-color: inherit !important;
+  border-color: inherit !important;
+  color: inherit !important;
+  scale: inherit !important;
+}
+
+.utrecht-button:focus-visible {
+  background-color: var(--_utrecht-button-focus-background-color) !important;
+  border-color: var(--_utrecht-button-focus-border-color) !important;
+  color: var(--_utrecht-button-focus-color) !important;
+  scale: var(--utrecht-button-focus-scale, 1) !important;
+}
+
+.utrecht-link:focus {
+  background-color: inherit !important;
+  color: inherit !important;
+  text-decoration: inherit !important;
+  text-decoration-thickness: inherit !important;
+}
+
+.utrecht-link:focus-visible {
+  background-color: var(--utrecht-link-focus-background-color, transparent) !important;
+  color: var(--utrecht-link-focus-color, var(--utrecht-link-color)) !important;
+  text-decoration: var(--utrecht-link-focus-text-decoration, var(--utrecht-link-text-decoration, underline)) !important;
+  text-decoration-skip: none !important;
+  text-decoration-skip-ink: none !important;
+  text-decoration-thickness: max(
+    var(--utrecht-link-focus-text-decoration-thickness, var(--utrecht-link-text-decoration-thickness)),
+    1px
+  ) !important;
+}
+/* End HACK */
+
+img {
+  height: auto;
 }

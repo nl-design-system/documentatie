@@ -72,10 +72,10 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element 
 }
 
 function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
-  const doc = useDocById(item.docId ?? undefined);
+  const doc = useDocById(item.docId);
   return (
     <CardLayout
-      linkDescription={`${doc.title}`}
+      linkDescription={doc?.title || item.label}
       href={item.href}
       title={item.label}
       description={item.description ?? doc?.description}
