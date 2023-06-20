@@ -275,7 +275,7 @@ export default function Home() {
           <Heading2>Blog</Heading2>
           <CardGroup appearance="large">
             {blogItems.map((item) => (
-              <BlogCard {...item} />
+              <BlogCard {...item} key={item.uuid} />
             ))}
           </CardGroup>
           <Paragraph>
