@@ -25,8 +25,8 @@ const config = {
         async loadContent() {
           return await getBlog().then((blog) =>
             blog.items.map((item) => {
-              const guiParam = item.guid.match(/p=(.*)/);
-              return { ...item, uuid: guiParam && guiParam[1] };
+              const [_, uuid] = item.guid.match(/p=(.*)/);
+              return { ...item, uuid };
             }),
           );
         },
@@ -42,9 +42,17 @@ const config = {
           });
 
           addRoute({
-            path: '/project/blog/:uuid',
+            path: '/project/blog/',
             component: '@site/src/components/BlogPost.tsx',
-            exact: true,
+          });
+
+          // @ts-ignore
+          content.map(({ uuid }) => {
+            addRoute({
+              path: `/project/blog/${uuid}`,
+              component: '@site/src/components/BlogPost.tsx',
+              exact: true,
+            });
           });
         },
       };

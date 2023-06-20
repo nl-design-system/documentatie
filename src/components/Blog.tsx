@@ -34,7 +34,7 @@ export const Blog = () => {
         <Breadcrumbs breadcrumbs={[{ label: 'Project', href: '/project' }, { label: 'Blog' }]} />
         <CardGroup appearance="large">
           {blogItems.map((item) => {
-            return <BlogCard {...item} />;
+            return <BlogCard {...item} key={item.uuid} />;
           })}
         </CardGroup>
       </div>

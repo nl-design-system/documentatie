@@ -5,11 +5,14 @@ import parse from 'html-react-parser';
 import NotFound from '@theme/NotFound';
 import Layout from '@theme/Layout';
 import { Breadcrumbs } from '@site/src/components/Breadcrumbs';
+import { useLocation } from '@docusaurus/router';
 
-export const BlogPost = ({ match: { params } }) => {
+export const BlogPost = () => {
   const globalData = useGlobalData();
+  const { pathname } = useLocation();
+  const uuid = pathname.split('/').pop();
   const blogItems = globalData['rss-blog']['default']['blogItems'];
-  const item = blogItems.find((item) => item.uuid === params.uuid);
+  const item = blogItems.find((item) => item.uuid === uuid);
   if (!item) {
     return <NotFound />;
   }
@@ -17,7 +20,13 @@ export const BlogPost = ({ match: { params } }) => {
   return (
     <Layout>
       <div className="container container--narrow padding-top--md padding-bottom--lg">
-        <Breadcrumbs breadcrumbs={[{ href: '/blog', label: 'Blog' }, { label: item.title }]} />
+        <Breadcrumbs
+          breadcrumbs={[
+            { href: '/project', label: 'Project' },
+            { href: '/project/blog', label: 'Blog' },
+            { label: item.title },
+          ]}
+        />
         <Heading2>{item.title}</Heading2>
         <div>{parse(item['content:encoded'])}</div>
       </div>
