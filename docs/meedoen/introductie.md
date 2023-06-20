@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Introductie NL Design System
 sidebar_position: 1
 pagination_label: Introductie
-description: NL Design System introductie
+description: NL Design System bevat componenten, patronen en richtlijnen, aangevuld met vele huisstijlen van organisaties die meedoen. Allemaal basisonderdelen waarover je afspraken kunt maken, gebruikersonderzoek kunt doen en van elkaar kunt leren.
 keywords:
   - design system
   - introductie
