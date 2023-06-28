@@ -105,14 +105,18 @@ Al doet de naam het vermoeden, een Personal Access Token heeft niks met design t
 ##### Repository 
 Een repository kan je zien als de hoofdmap van je project. Wat je hier moet invullen verschilt per situatie.
 
-**Situatie A: Je organisatie heeft al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes)**  
-Vul in: nl-design-system/themes
+**Situatie A**  
+Je organisatie heeft al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes).
 
-**Situatie B: Je organisatie werkt vanuit een eigen Github omgeving**  
+- Vul in: nl-design-system/themes
+
+**Situatie B**  
+Je organisatie werkt vanuit een eigen Github omgeving.
 - Stem met development af waar de design tokens geplaatst moeten worden.
 - Hulp nodig? [Neem contact op met het kernteam](../../project/contact.mdx).
 
-**Situatie C: Je wilt eerst lekker je eigen gang gaan**  
+**Situatie C**  
+Je wilt eerst lekker je eigen gang gaan.  
 - Maak een repository aan binnen je eigen Github omgeving, dit doe je door de stappen onder [‘Een 'Repository' aanmaken’](#een-repository-aanmaken) te volgen.
 - Hulp nodig? [Neem contact op met het kernteam](../../project/contact.mdx).
 
@@ -122,14 +126,17 @@ Voeg je default branch toe. Dat is ‘main’.
 ##### File Path
 Een file path kun je zien als de route naar je design tokens binnen de repository. Zoals je bij repository hebt kunnen lezen verschilt dit per situatie.
 
-**Situatie A: Je organisatie heeft al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes)**  
-Vul in: proprietary/[naam-van-je-organisatie]-theme/figma/[naam-van-je-organisatie].tokens.json
+**Situatie A**  
+Je organisatie heeft al een mapje met tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes).  
+- Vul in: proprietary/[naam-van-je-organisatie]-theme/figma/[naam-van-je-organisatie].tokens.json
 
-**Situatie B: Je organisatie werkt vanuit een eigen Github omgeving**  
+**Situatie B**  
+Je organisatie werkt vanuit een eigen Github omgeving.  
 - Stem met development af waar de design tokens geplaatst moeten worden.
 - [Neem contact op met het kernteam](../../project/contact.mdx) dan kunnen we de design tokens van het Voorbeeld thema met je delen.
 
-**Situatie C: Je wilt eerst lekker je eigen gang gaan**   
+**Situatie C**  
+Je wilt eerst lekker je eigen gang gaan.   
 [Neem contact op met het kernteam](../../project/contact.mdx) dan kunnen we de design tokens van het Voorbeeld thema met je delen.
 
 Let op! Kopieer een file path niet vanuit de adresbalk van je browser. Github voegt daar namelijk '/blob/main'aan toe. En dat zou er niet tussen moeten staan.
@@ -182,10 +189,10 @@ Wijzig bijvoorbeeld de waarde van `[naam-van-je-organisatie].brand.primary.font-
 
 Bekijk tijdens het doorvoeren van de Brand tokens de betreffende Brand pagina binnen het Figma bestand. Zo krijg je direct visueel feedback op je keuzes.
 
-**Tip!** 
+**Tip!**  
 Laat de kleuren van het ‘Voorbeeld’ thema nog even staan tot je alle kleuren van jouw huisstijl aan Common en Component tokens hebt gerefereerd. Daarna kun je ze verwijderen.
 
-**Let op!** 
+**Let op!**  
 De tokens Font Family en Font Weight kunnen afzonderlijk van elkaar op tekst worden toegepast. Het is daarbij belangrijk om de Font Weight aan te houden zoals deze in Figma is aangegeven. Voor font family `Roboto` bijvoorbeeld `Bold` in plaats van iets als `700`.
 
 ![Screenshot van Figma en de Studio Token plugin. De pagina 'Typography' van het niveau 'Brand' is geselecteerd. Er is een deel van een Frame te zien met verschillende typografische onderdelen.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_adjust-brand.jpg)
@@ -238,10 +245,10 @@ Vervolgens wordt je automatisch naar Github geleid waar je het Pull Request kunt
 
 Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je een developer nodig om de tokens te publiceren als CSS thema. Dat kan op twee manieren:
 
-**Optie 1** 
+**Optie 1**  
 Je krijgt een eigen directory in de [NL Design System themes repository](https://github.com/nl-design-system/themes). Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. [Neem contact op met het kernteam](../../project/contact.mdx), zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
 
-**Optie 2** 
+**Optie 2**  
 Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de [NL Design System example repository](https://github.com/nl-design-system/example) een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. [Neem contact op met het kernteam](../../project/contact.mdx) om hulp te vragen als je dit wilt doen.
 
 ## Aanvullende informatie
