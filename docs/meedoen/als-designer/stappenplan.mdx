@@ -191,14 +191,14 @@ Wanneer je gevraagd wordt hoe je wilt ‘remappen’ kies dan voor ‘Document�
 
 Pak de huisstijl opties van je organisatie bij de hand. Voer de huisstijl opties van je organisatie door in de ‘brand’ token set.
 
-Wijzig bijvoorbeeld de waarde van `[naam-van-je-organisatie].brand.primary.font-family` van `Source Serif Pro` naar `Comic Sans MS` of voeg een hele nieuwe kleuren set toe.
+Wijzig bijvoorbeeld de waarde van `[naam-van-je-organisatie].brand.primary.font-family` van `Source Serif Pro` naar `Comic Sans MS` of voeg een hele nieuwe set aan kleuren toe.
 
 Bekijk tijdens het doorvoeren van de Brand tokens de betreffende Brand pagina binnen het Figma bestand. Zo krijg je direct visueel feedback op je keuzes.
 
-**Tip!**
+**Tip!** 
 Laat de kleuren van het ‘Voorbeeld’ thema nog even staan tot je alle kleuren van jouw huisstijl aan Common en Component tokens hebt gerefereerd. Daarna kun je ze verwijderen.
 
-**Let op!**
+**Let op!** 
 De tokens Font Family en Font Weight kunnen afzonderlijk van elkaar op tekst worden toegepast. Het is daarbij belangrijk om de Font Weight aan te houden zoals deze in Figma is aangegeven. Voor font family `Roboto` bijvoorbeeld `Bold` in plaats van iets als `700`.
 
 ![Screenshot van Figma en de Studio Token plugin. De pagina 'Typography' van het niveau 'Brand' is geselecteerd. Er is een deel van een Frame te zien met verschillende typografische onderdelen.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_adjust-brand.jpg)
@@ -229,20 +229,21 @@ Wijzig bijvoorbeeld de waarde van `nl.button.primary-action.background-color` va
 
 Wanneer je de tokens naar wens hebt aangepast kun je deze wijzigingen in de bron doorvoeren. In Github termen noem je dat ‘Pushen’.
 
-- Klik op ‘Push to Github’
+1. Klik op ‘Push to Github’
 
 ![Screenshot toont de Studio Token plugin. Er staat een cirkel om een button met een omhoog wijzend pijl als icoon.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_github.jpg)
 
-- Vul de gegevens in.
+2. Vul de gegevens in.
   - Commit message. Beschrijf hier kort wat je hebt aangepast.
   - Branch. ‘main’ staat al ingevuld. Het is echter verstandig om een aparte branch voor je wijzigingen aan te houden. Hoe je die branch noemt staat je vrij, als deze maar elke keer een andere naam heeft. Kies bijvoorbeeld voor ‘Brand update’ of ‘01-01-2023.
-- Klik op ‘Push’.
+
+3. Klik op ‘Push’.
 
 ![Screenshot toont de Studio Token plugin. Er wordt een modal scherm getoond verschillende invulvelden.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_stap_adjust-push.jpg)
 
 De plugin stuurt de update naar Github en geeft je direct de mogelijkheid om een ‘Pull request’ te maken.
 
-- Klik op ‘Create Pull Request’.
+4. Klik op ‘Create Pull Request’.
 
 Vervolgens wordt je automatisch naar Github geleid waar je het Pull Request kunt maken. Bespreek met een developer uit je team hoe jullie verder met pull requests om gaan.
 
@@ -250,8 +251,11 @@ Vervolgens wordt je automatisch naar Github geleid waar je het Pull Request kunt
 
 Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je een developer nodig om de tokens te publiceren als CSS thema. Dat kan op twee manieren:
 
-1. Je krijgt een eigen directory in de [NL Design System themes repository](https://github.com/nl-design-system/themes). Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. [Neem contact op met het kernteam](../../project/contact.mdx), zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
-2. Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de [NL Design System example repository](https://github.com/nl-design-system/example) een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. [Neem contact op met het kernteam](../../project/contact.mdx) om hulp te vragen als je dit wilt doen.
+**Optie 1** 
+Je krijgt een eigen directory in de [NL Design System themes repository](https://github.com/nl-design-system/themes). Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. [Neem contact op met het kernteam](../../project/contact.mdx), zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
+
+**Optie 2** 
+Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de [NL Design System example repository](https://github.com/nl-design-system/example) een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. [Neem contact op met het kernteam](../../project/contact.mdx) om hulp te vragen als je dit wilt doen.
 
 ## Aanvullende informatie
 
@@ -259,15 +263,14 @@ Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je 
 
 [Video: Personal Acces Token genereren](https://youtu.be/VTH_fWErFiQ)
 
-**Ga direct naar [github.com/settings/tokens](https://github.com/settings/tokens) of volg de volgende stappen:**
-
+**Ga direct naar [github.com/settings/tokens](https://github.com/settings/tokens) of volg de volgende stappen:** 
 - Klik op je avatar (rechtsboven)
 - Klik op ‘Settings’
 - Klik op het laatste menu item ‘Developer Settings’
 - Klik op ‘Personal Access Token’
 - Selecteer ‘Token (Classic)
 
-**Genereer een token**
+**Genereer een token** 
 
 - Vul de gegevens in:
   - Note. Dit wordt enkel gebruikt voor github zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].
@@ -277,18 +280,18 @@ Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je 
 - Kopieer je Personal Access token.
 - Vul de Personal Access token in bij de Github gegevens in de Token Studio plugin.
 
-**Let op!**
+**Let op!** 
 Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel het als je persoonlijke wachtwoord.
 
 ### Een 'Repository' maken
 
-**Ga direct naar [github.com/new](https://github.com/new) of volg de volgende stappen:**
+**Ga direct naar [github.com/new](https://github.com/new) of volg de volgende stappen:** 
 
 - Klik op je avatar (rechtsboven)
 - Klik op ‘Your repositories’
 - Klik op 'New'
 
-**Repository aanmaken**
+**Repository aanmaken** 
 
 - Vul de gegevens in:
   - Repository name. Bijvoorbeeld; tokens-[naam-van-je-organisatie].
