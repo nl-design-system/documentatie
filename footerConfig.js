@@ -9,11 +9,11 @@ module.exports = {
         },
         {
           label: 'Toegankelijkheid',
-          to: '/footer/toegankelijkheidsverklaring',
+          to: '/toegankelijkheidsverklaring',
         },
         {
           label: 'Colofon',
-          to: '/footer/colofon',
+          to: '/colofon',
         },
         {
           label: 'GitHub',
