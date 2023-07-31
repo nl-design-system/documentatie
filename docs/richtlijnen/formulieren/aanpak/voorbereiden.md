@@ -30,7 +30,7 @@ Voorkom dat gebruikers dezelfde informatie meerdere keren moeten invoeren.
 
 Relevantie van vraag uitgelegd in subkop [^question-relevance]
 
-## Inventariseer of informatie al beschikbaar i{#beschikbare-informatie}
+## Inventariseer of informatie al beschikbaar is{#beschikbare-informatie}
 
 Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeente of middels Basisregistratie Personen (BRP) of DigiD.
 
