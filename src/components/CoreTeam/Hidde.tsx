@@ -12,9 +12,14 @@ const Hidde: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Hidde werkt als toegankelijkheidsspecialist voor NL Design System. Hij heeft zich de afgelopen jaren intensief
-        beziggehouden met design systems en digitale toegankelijkheid, dat laatste onder meer bij het W3C. Daar was hij
-        betrokken bij de ontwikkeling en promotie van toegankelijkheidsstandaarden als WCAG en ATAG.
+        Hidde draagt vanuit zijn Developer Relations-rol bij aan heldere technische uitleg, workshops met ontwikkelaars
+        en het doorgronden van de wensen van teams die met NL Design System werken. Hij richt zich daarbij specifiek op
+        leveranciers van overheden.
+      </Paragraph>
+      <Paragraph>
+        Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid, dat
+        laatste onder meer bij het W3C. In zijn rol van toegankelijkheidsspecialist helpt hij om NL Design System
+        componenten, documentatie en voorbeelden zo toegankelijk mogelijk te maken.
       </Paragraph>
       <Paragraph>
         Hij wordt blij van espresso tonics en van heldere, to-the-point uitleg waar developers verder mee kunnen.
