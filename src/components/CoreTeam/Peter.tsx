@@ -15,10 +15,7 @@ const Peter: TeamMember = {
         Peter is projectleider bij NL Design System. Hij heeft de overheid al van diverse kanten kunnen zien en werkt al
         sinds 2001 bij ICTU in diverse rollen, projecten en programma's.
       </Paragraph>
-      <Paragraph>
-        Oorspronkelijk komt hij uit Den Haag, maar hij woont inmiddels in het mooie Brabant. Als Peter op vrijdag niet
-        aan het werk is kun je hem daar als barman achter de tap vinden.
-      </Paragraph>
+      <Paragraph>Oorspronkelijk komt hij uit Den Haag, maar hij woont inmiddels in het mooie Brabant.</Paragraph>
     </>
   ),
 };
