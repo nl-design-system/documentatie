@@ -6,20 +6,20 @@ import { TeamMember } from './TeamMember';
 const Robbert: TeamMember = {
   Avatar,
   name: 'Robbert Broersma',
-  role: 'Tech lead',
+  role: 'Design System lead & Developer Relations',
   email: 'robbert.broersma@ictu.nl',
   slack: { mention: '@Robbert', id: 'U019X17U5HQ' },
   Description: () => (
     <>
       <Paragraph>
-        Robbert is tech-lead van NL Design System. Met zijn ervaring bij andere Design Systems kent hij zowel de
-        valkuilen van een team overstijgend Design System als de waarde van het hergebruik van stabiele, toegankelijke
-        componenten.
+        Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel
+        de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele,
+        toegankelijke componenten.
       </Paragraph>
       <Paragraph>
-        Hij werkt graag online samen met verschillene organisaties om dit community gedragen Design System neer te
-        zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS met een haakje? Dan kun je het
-        waarschijnlijk op zijn achtergrond vinden.
+        In de rol van developer relations werkt hij graag online samen met developers van verschillende organisaties om
+        dit community gedragen design system neer te zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS
+        met een haakje? Dan kun je het waarschijnlijk op zijn achtergrond vinden.
       </Paragraph>
     </>
   ),
