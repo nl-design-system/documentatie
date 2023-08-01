@@ -10,7 +10,7 @@ import Jeffrey from './Jeffrey';
 import Andrea from './Andrea';
 import Hidde from './Hidde';
 
-const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Andrea, Hidde];
+const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Andrea];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
