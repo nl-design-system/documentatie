@@ -9,10 +9,10 @@ We zijn nog druk bezig deze informatie aan te vullen en te verbeteren. Heb je no
 Voor de documentatie gebruiken we [Markdown](https://www.markdownguide.org/basic-syntax/) bestanden die we met in [GitHub](https://github.com/nl-design-system/documentatie) opslaan. Hierdoor hebben we een bestandsformaat dat door vele verschillende producten ondersteund wordt en een plek waar we met versionering en reviews samen kunnen werken.
 Om met al deze documentatie een website te maken gebruiken we [Docusaurus](https://docusaurus.io).
 
-Fijn als je hier toevoegingen of verbeteringen aan bij wil dragen. Als je dat in Markdown kan doen is dat voor ons het aller handigst.
+Fijn als je hier toevoegingen of verbeteringen aan bij wil dragen. Als je dat in Markdown kan doen is dat voor ons het allerhandigst.
 Hieronder een aantal manieren waarop bijdragen voorgesteld kunnen worden.
 
-_Note_: We zijn blij met iedere bijdrage, dat betekend niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
+_Note_: We zijn blij met iedere bijdrage, dat betekent niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
 
 ### Maak een Gist en stuur hem ons op
 
