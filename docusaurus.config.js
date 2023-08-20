@@ -24,6 +24,9 @@ const config = {
           path: 'src/pages',
           routeBasePath: '/',
         },
+        blog: {
+          blogSidebarTitle: 'Recente berichten'
+        },
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebarConfig.js'),
