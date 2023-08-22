@@ -7,7 +7,7 @@ tags: [meta]
 hide_table_of_contents: false
 ---
 
-Je leest het eerste bericht op het nieuwe NL Design System blog. Vanaf deze plek willen we je regelmatig meenemen in dingen die we binnen het kernteam leerden. Ook kunnen we hier updates geven over bijvoorbeeld samenwerkingen, bijeenkomsten en nieuwe functionaliteiten.
+Je leest het eerste bericht op het nieuwe NL Design System blog. Op deze plek willen we je regelmatig meenemen in dingen die we leren in het kernteam of daarbuiten. Ook kunnen we hier updates geven over bijvoorbeeld samenwerkingen, bijeenkomsten en nieuwe functionaliteiten.
 
 <!--truncate-->
 
