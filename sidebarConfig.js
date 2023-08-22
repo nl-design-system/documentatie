@@ -71,19 +71,19 @@ const sidebars = {
       items: require('./docs/onderzoek/sidebar'),
     },
   ],
-  videos: [
+  events: [
     {
       type: 'category',
-      label: 'Videos',
+      label: 'Events',
       collapsible: false,
       className: 'sidebar__main-category',
       link: {
         type: 'generated-index',
-        title: "Video's",
-        slug: 'videos',
-        keywords: ['Videos', 'overzicht'],
+        title: "Events",
+        slug: 'events',
+        keywords: ['Videos', 'Events', 'overzicht'],
       },
-      items: require('./docs/videos/sidebar'),
+      items: require('./docs/events/sidebar'),
     },
   ],
   project: [
