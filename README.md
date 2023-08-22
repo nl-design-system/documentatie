@@ -35,9 +35,10 @@ Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.n
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
 3. Draai `npm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `npm run start` om Docusaurus te starten.
-5. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
-6. De website opent in je standaard browser
+4. Draai `npm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
+5. Draai `npm run start` om Docusaurus te starten.
+6. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
+7. De website opent in je standaard browser
 
 Om documenten aan te passen kun je de folder openen in een code editor naar keuze. Wij gebruiken in het kernteam bijvoorbeeld [VSCode](https://code.visualstudio.com) of de simpelere [Sublime](https://www.sublimetext.com).
 Als je alleen markdown will aanpassen kun je ook kiezen om een los bestand aan te passen of aan te maken en een markdown editor te gebruiken zoals [iA Writer](https://ia.net/writer)
