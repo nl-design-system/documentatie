@@ -531,3 +531,40 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
     gap: 20px;
   }
 }
+
+.dsw-usps ul {
+  padding: 0;
+}
+.dsw-usps li {
+  padding: 0;
+  display: inline;
+  list-style: none;
+  font-size: 1.25em;
+  color: var(--nlds-document-subtle-color);
+}
+.dsw-usps li:not(:last-child)::after {
+  content: '∙';
+  display: inline-block;
+  padding-right: .5em;
+  margin-left: .5em;
+}
+.dsw-header-signup {
+  text-decoration: none;
+  background-color: var(--utrecht-button-primary-action-background-color);
+  padding: .5em 1em;
+  margin-top: 1em;
+  border-radius: .25em;
+  color: var(--utrecht-button-primary-action-color);
+  display: inline-block;
+}
+.dsw-header-signup:hover {
+  text-decoration: inherit;
+  color: var(--utrecht-button-primary-action-color);
+}
+.dsw-header-signup-main {
+  font-weight: bold;
+}
+.dsw-header-signup-sup {
+  font-size: .65em;
+  display: block;
+}
