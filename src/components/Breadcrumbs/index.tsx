@@ -3,12 +3,12 @@ import clsx from 'clsx';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
-import type { Props } from '@theme/Breadcrumbs';
+import type { Props } from '../Breadcrumbs';
 
 import styles from './styles.module.css';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 
-export default function Breadcrumbs({ breadcrumbs, mobileCrumb }: Props): JSX.Element | null {
+export default function BlogBreadcrumbs({ breadcrumbs, mobileCrumb }: Props): JSX.Element | null {
 
   return (
     <nav

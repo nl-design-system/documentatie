@@ -1,12 +1,13 @@
 import React from 'react';
-import Breadcrumbs from '../Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useLocation } from '@docusaurus/router';
 
 export default function BlogBreadcrumbs(props) {
   const homeHref = useBaseUrl('/');
   const { pathname } = useLocation();
-  const blogPaths = [
+
+  const breadcrumbs = [
     {
       href: homeHref,
       label: 'Home'
@@ -16,10 +17,8 @@ export default function BlogBreadcrumbs(props) {
       label: 'Blog'
     }
   ];
-  const currentPost = { href: '#', label: 'Current post' };
 
-  const breadcrumbs = [...blogPaths, currentPost];
-  const parentCrumb = (breadcrumbs.length > 2 && breadcrumbs[breadcrumbs.length - 2]) || blogPaths;
+  const parentCrumb = (breadcrumbs.length > 2 && breadcrumbs[breadcrumbs.length - 2]);
   const mobileCrumb = parentCrumb.href !== pathname ? parentCrumb : blogPaths;
 
   return (

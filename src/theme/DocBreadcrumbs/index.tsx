@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
-import Breadcrumbs from '../Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
   const sidebarBreadcrumbs =
