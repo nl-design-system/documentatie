@@ -3,13 +3,19 @@ import clsx from 'clsx';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
-import type { Props } from '../Breadcrumbs';
 
 import styles from './styles.module.css';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 
-export default function BlogBreadcrumbs({ breadcrumbs, mobileCrumb }: Props): JSX.Element | null {
+export type Breadcrumb = { href: string; label: string };
 
+export interface BreadcrumbsProps {
+   breadcrumbs: Breadcrumb[]
+   mobileCrumb: Breadcrumb
+}
+
+export default function Breadcrumbs({ breadcrumbs, mobileCrumb }: BreadcrumbsProps): JSX.Element | null {
+  console.log(breadcrumbs)
   return (
     <nav
       className={clsx(ThemeClassNames.docs.docBreadcrumbs, styles.breadcrumbsContainer)}
