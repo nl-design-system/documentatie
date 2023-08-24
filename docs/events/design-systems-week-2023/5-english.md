@@ -26,7 +26,7 @@ language: en
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
 <a href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023#event-booking"
-class="dsw-header-signup"> <span className="dsw-header-signup-main">Sign up</span> <span className="dsw-header-signup-sup">at Gebruiker Centraal (Dutch)</span> </a>
+class="dsw-signup"> <span className="dsw-signup-main">Sign up</span> <span className="dsw-signup-sup">at Gebruiker Centraal (Dutch)</span> </a>
 
 ## All sessions that are in English
 

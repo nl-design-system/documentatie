@@ -515,14 +515,14 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   color: var(--utrecht-button-primary-action-color);
   display: inline-block;
 }
-.dsw-header-signup:hover {
+.dsw-signup:hover {
   text-decoration: inherit;
   color: var(--utrecht-button-primary-action-color);
 }
-.dsw-header-signup-main {
+.dsw-signup-main {
   font-weight: bold;
 }
-.dsw-header-signup-sup {
+.dsw-signup-sup {
   font-size: 0.65em;
   display: block;
 }

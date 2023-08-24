@@ -1,10 +1,11 @@
 ---
-title: Events NL Design System
+title: NL Design System
 hide_title: true
-hide_table_of_contents: false
+hide_table_of_contents: true
 sidebar_label: Events
 sidebar_position: 1
-pagination_label: Videos
+pagination_label: Events
+slug: /events
 description: Bijeenkomsten van NL Design System
 keywords:
   - videos
@@ -14,11 +15,15 @@ keywords:
 
 # Events
 
-## Videos
+Het NL Design System kernteam brengt regelmatig mensen bij elkaar. Zo zijn er tweewekelijks Design Open Hours en Heartbeats, en jaarlijks een Design Systems Week.
+
+- [Design Systems Week - 2023](design-systems-week-2023/overzicht)
+
+## Video-archief
 
 Bij NL Design System nemen we sommige online sessies op. Deze opnames kun je op de originele eventpagina's terugvinden. Om opnames zo snel mogelijk te delen kan het zijn dat deze nog niet opgepoetst of ondertiteld zijn.
 
-## Hier vind je onder andere opnames van:
+Zie bijvorobeeld de volgende opnames:
 
-- [Design Systems week - 2022](design-systems-week-2022)
+- [Design Systems Week - 2022](design-systems-week-2022)
 - [De 2-wekelijkse Heartbeat](heartbeat)
