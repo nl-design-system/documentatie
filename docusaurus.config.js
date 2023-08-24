@@ -86,7 +86,7 @@ const config = {
   },
   i18n: {
     defaultLocale: 'nl',
-    locales: ['nl', 'en'],
+    locales: ['nl'],
     localeConfigs: {
       nl: {
         htmlLang: 'nl-NL',
