@@ -78,7 +78,7 @@ const config = {
     announcementBar: {
       id: 'dsw_announcement',
       content:
-        'Design Systems Week komt eraan! <a target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a href="https://gebruikercentraal.nl/design-systems-week">bekijk de sessies tot nu toe</a>',
+        'Design Systems Week 2023 komt eraan! <a target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a href="https://gebruikercentraal.nl/design-systems-week">bekijk de sessies tot nu toe</a>',
       backgroundColor: 'rgb(250, 255, 90)',
       textColor: '#000',
       isCloseable: false,
@@ -86,7 +86,7 @@ const config = {
   },
   i18n: {
     defaultLocale: 'nl',
-    locales: ['nl', 'en'],
+    locales: ['nl'],
     localeConfigs: {
       nl: {
         htmlLang: 'nl-NL',
