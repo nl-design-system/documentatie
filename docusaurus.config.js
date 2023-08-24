@@ -25,7 +25,7 @@ const config = {
           routeBasePath: '/',
         },
         blog: {
-          blogSidebarTitle: 'Recente berichten'
+          blogSidebarTitle: 'Recente berichten',
         },
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root

@@ -4,30 +4,29 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useLocation } from '@docusaurus/router';
 import { Breadcrumb } from '../../components/Breadcrumbs';
 
-
 interface BlogBreadcrumbsProps {
- breadcrumbs: Breadcrumb[]
+  breadcrumbs: Breadcrumb[];
 }
 
-export default function BlogBreadcrumbs({breadcrumbs = []}: BlogBreadcrumbsProps) {
+export default function BlogBreadcrumbs({ breadcrumbs = [] }: BlogBreadcrumbsProps) {
   const homeHref = useBaseUrl('/');
   const { pathname } = useLocation();
 
   const homeCrumb = {
     href: homeHref,
-    label: 'Home'
+    label: 'Home',
   };
 
   const allBreadcrumbs = [
     homeCrumb,
     {
       href: '/blog',
-      label: 'Blog'
+      label: 'Blog',
     },
-    ...breadcrumbs
+    ...breadcrumbs,
   ];
 
-  const parentCrumb = (allBreadcrumbs.length > 2 && allBreadcrumbs[allBreadcrumbs.length - 2]);
+  const parentCrumb = allBreadcrumbs.length > 2 && allBreadcrumbs[allBreadcrumbs.length - 2];
   const mobileCrumb = parentCrumb && parentCrumb.href !== pathname ? parentCrumb : homeCrumb;
 
   return (

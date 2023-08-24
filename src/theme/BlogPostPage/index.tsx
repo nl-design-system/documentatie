@@ -1,26 +1,26 @@
-import React, {type ReactNode} from 'react';
+import React, { type ReactNode } from 'react';
 import clsx from 'clsx';
-import {HtmlClassNameProvider, ThemeClassNames} from '@docusaurus/theme-common';
-import {BlogPostProvider, useBlogPost} from '@docusaurus/theme-common/internal';
+import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
+import { BlogPostProvider, useBlogPost } from '@docusaurus/theme-common/internal';
 import BlogLayout from '../BlogLayout';
 import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
-import type {Props} from '@theme/BlogPostPage';
-import type {BlogSidebar} from '@docusaurus/plugin-content-blog';
+import type { Props } from '@theme/BlogPostPage';
+import type { BlogSidebar } from '@docusaurus/plugin-content-blog';
 
 function BlogPostPageContent({
   sidebar,
   children,
-  pageTitle
+  pageTitle,
 }: {
   sidebar: BlogSidebar;
   children: ReactNode;
   pageTitle: string;
 }): JSX.Element {
-  const {metadata, toc} = useBlogPost();
-  const {nextItem, prevItem, frontMatter} = metadata;
+  const { metadata, toc } = useBlogPost();
+  const { nextItem, prevItem, frontMatter } = metadata;
   const {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
@@ -32,19 +32,13 @@ function BlogPostPageContent({
       pageTitle={pageTitle}
       toc={
         !hideTableOfContents && toc.length > 0 ? (
-          <TOC
-            toc={toc}
-            minHeadingLevel={tocMinHeadingLevel}
-            maxHeadingLevel={tocMaxHeadingLevel}
-          />
+          <TOC toc={toc} minHeadingLevel={tocMinHeadingLevel} maxHeadingLevel={tocMaxHeadingLevel} />
         ) : undefined
-      }>
-
+      }
+    >
       <BlogPostItem>{children}</BlogPostItem>
 
-      {(nextItem || prevItem) && (
-        <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />
-      )}
+      {(nextItem || prevItem) && <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />}
     </BlogLayout>
   );
 }
@@ -54,14 +48,10 @@ export default function BlogPostPage(props: Props): JSX.Element {
 
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>
-      <HtmlClassNameProvider
-        className={clsx(
-          ThemeClassNames.wrapper.blogPages,
-          ThemeClassNames.page.blogPostPage,
-        )}>
+      <HtmlClassNameProvider className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogPostPage)}>
         <BlogPostPageMetadata />
         <BlogPostPageContent sidebar={props.sidebar} pageTitle={props.content.metadata.title}>
-        <BlogPostContent />
+          <BlogPostContent />
         </BlogPostPageContent>
       </HtmlClassNameProvider>
     </BlogPostProvider>

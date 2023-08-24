@@ -24,7 +24,5 @@ export default function DocBreadcrumbs(): JSX.Element | null {
   if (!breadcrumbs) {
     return null;
   }
-  return (
-    <Breadcrumbs breadcrumbs={breadcrumbs} mobileCrumb={mobileCrumb}></Breadcrumbs>
-  );
+  return <Breadcrumbs breadcrumbs={breadcrumbs} mobileCrumb={mobileCrumb}></Breadcrumbs>;
 }

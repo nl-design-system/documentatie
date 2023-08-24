@@ -2,12 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
-export default function BlogSidebarDesktop({sidebar}) {
+export default function BlogSidebarDesktop({ sidebar }) {
   return (
     <aside className="col col--3">
-      <nav
-        className={clsx(styles.sidebar, 'thin-scrollbar')}
-        aria-labelledby="nav-title">
+      <nav className={clsx(styles.sidebar, 'thin-scrollbar')} aria-labelledby="nav-title">
         <h2 id="nav-title" className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
           {sidebar.title}
         </h2>
@@ -18,7 +16,8 @@ export default function BlogSidebarDesktop({sidebar}) {
                 isNavLink
                 to={item.permalink}
                 className={styles.sidebarItemLink}
-                activeClassName={styles.sidebarItemLinkActive}>
+                activeClassName={styles.sidebarItemLinkActive}
+              >
                 {item.title}
               </Link>
             </li>
