@@ -2,9 +2,8 @@
 title: Design Systems Week 2023
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Overzicht
-pagination_label: Overzicht
 slug: "/events/design-systems-week-2023/overzicht"
+description: NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.
 ---
 
 # Design Systems Week 2023
@@ -28,6 +27,6 @@ Dit jaar hebben we nationale én internationale sprekers. We laten ons inspirere
 Kijk of luister je mee? Elke sessie is online en duurt ongeveer 30 minuten. Meld je nu aan en volg zo veel of zo weinig sessies als je wil!
 
 <a href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/" class="dsw-signup">
-  <span className="dsw-header-signup-main">Meld je aan</span>
-  <span className="dsw-header-signup-sup">bij Gebruiker Centraal</span> >
+  <span className="dsw-signup-main">Meld je aan</span>
+  <span className="dsw-signup-sup">bij Gebruiker Centraal</span>
 </a>
