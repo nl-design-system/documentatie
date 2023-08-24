@@ -545,8 +545,8 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
 .dsw-usps li:not(:last-child)::after {
   content: '∙';
   display: inline-block;
-  padding-right: .5em;
-  margin-left: .5em;
+  padding-right: .25em;
+  margin-left: .25em;
 }
 .dsw-header-signup {
   text-decoration: none;

@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Overzicht
 pagination_label: Overzicht
-slug: '/events/design-systems-week-2023'
+slug: '/events/design-systems-week-2023/overzicht'
 ---
 
 # Design Systems Week 2023
@@ -21,6 +21,12 @@ slug: '/events/design-systems-week-2023'
 * gratis toegang
 
 </div>
+
+NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.
+
+Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
+
+Kijk of luister je mee? Elke sessie is online en duurt ongeveer 30 minuten. Meld je nu aan en volg zo veel of zo weinig sessies als je wil!
 
 
 <a
