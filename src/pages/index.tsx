@@ -101,12 +101,12 @@ export default function Home() {
                 <div>
                   <Heading2>Videos</Heading2>
                   <Paragraph>
-                    Niet gelukt om bij de heartbeat te zijn? Of zin om een sessie van de design system week te kijken?
+                    Niet gelukt om bij de heartbeat te zijn? Of zin om een sessie van de Design Systems Week te kijken?
                     De meesten hebben we opgenomen.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/videos" className="utrecht-link">
+                  <DocusaurusLink to="/events" className="utrecht-link">
                     Bekijk de videos
                   </DocusaurusLink>
                 </Paragraph>
