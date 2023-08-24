@@ -25,6 +25,12 @@
   }
 }
 
+@media screen and (min-width: 996px) {
+  .breadcrumbs--mobile {
+    display: none;
+  }
+}
+
 .breadcrumbs__link {
   color: var(--nlds-interaction-color);
   text-decoration: none;
