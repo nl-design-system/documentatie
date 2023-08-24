@@ -106,7 +106,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/events" className="utrecht-link">
+                  <DocusaurusLink to="/project/events" className="utrecht-link">
                     Bekijk de videos
                   </DocusaurusLink>
                 </Paragraph>

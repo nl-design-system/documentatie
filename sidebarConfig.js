@@ -83,7 +83,7 @@ const sidebars = {
         slug: 'events',
         keywords: ['Videos', 'Events', 'overzicht'],
       },
-      items: require('./docs/events/sidebar'),
+      items: require('./docs/project/events/sidebar'),
     },
   ],
   project: [

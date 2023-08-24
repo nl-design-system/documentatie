@@ -5,7 +5,7 @@ sidebar_label: Programma
 pagination_label: Programma
 ---
 
-import DSWSession from '../../../src/components/DSWSession'
+import DSWSession from '../../../../src/components/DSWSession'
 import { speakers } from './speakers.json'
 
 Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
