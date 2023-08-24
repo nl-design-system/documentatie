@@ -4,21 +4,20 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Overzicht
 pagination_label: Overzicht
-slug: '/events/design-systems-week-2023/overzicht'
+slug: "/events/design-systems-week-2023/overzicht"
 ---
 
 # Design Systems Week 2023
 
-
 <div class="dsw-usps">
 
-* 2-5 oktober
-* alles over design systems
-* zo'n 12 boeiende sessies
-* geheel virtueel
-* voor tussendoor (20-25 minuten)
-* internationale sprekers
-* gratis toegang
+- 2-5 oktober
+- alles over design systems
+- zo'n 12 boeiende sessies
+- geheel virtueel
+- voor tussendoor (20-25 minuten)
+- internationale sprekers
+- gratis toegang
 
 </div>
 
@@ -28,12 +27,7 @@ Dit jaar hebben we nationale én internationale sprekers. We laten ons inspirere
 
 Kijk of luister je mee? Elke sessie is online en duurt ongeveer 30 minuten. Meld je nu aan en volg zo veel of zo weinig sessies als je wil!
 
-
-<a
-  href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/"
-  class="dsw-header-signup"
->
+<a href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/" class="dsw-signup">
   <span className="dsw-header-signup-main">Meld je aan</span>
-  <span className="dsw-header-signup-sup">bij Gebruiker Centraal</span>
+  <span className="dsw-header-signup-sup">bij Gebruiker Centraal</span> >
 </a>
-
