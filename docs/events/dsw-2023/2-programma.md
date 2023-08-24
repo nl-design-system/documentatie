@@ -64,4 +64,3 @@ Bij GitHub is DesignOps de ‘API’ tussen designers onderling, en tussen desig
 Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de geleerde lessen van GitHub met je te delen.
 
 </DSWSession>
-

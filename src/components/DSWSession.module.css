@@ -12,12 +12,12 @@
   font-size: 1.5em;
 }
 .dsw-session__title + .dsw-session__speakerline {
-  margin-block-start: -.5em;
+  margin-block-start: -0.5em;
 }
 .dsw-session__speakerline {
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 .dsw-session__image {
   float: right;
@@ -35,4 +35,3 @@
   font-style: italic;
   margin: 0;
 }
-

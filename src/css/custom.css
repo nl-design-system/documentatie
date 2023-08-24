@@ -543,17 +543,17 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   color: var(--nlds-document-subtle-color);
 }
 .dsw-usps li:not(:last-child)::after {
-  content: '∙';
+  content: "∙";
   display: inline-block;
-  padding-right: .25em;
-  margin-left: .25em;
+  padding-right: 0.25em;
+  margin-left: 0.25em;
 }
-.dsw-header-signup {
+.dsw-signup {
   text-decoration: none;
   background-color: var(--utrecht-button-primary-action-background-color);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin-top: 1em;
-  border-radius: .25em;
+  border-radius: 0.25em;
   color: var(--utrecht-button-primary-action-color);
   display: inline-block;
 }
@@ -565,6 +565,6 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   font-weight: bold;
 }
 .dsw-header-signup-sup {
-  font-size: .65em;
+  font-size: 0.65em;
   display: block;
 }

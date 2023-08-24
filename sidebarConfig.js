@@ -79,7 +79,7 @@ const sidebars = {
       className: 'sidebar__main-category',
       link: {
         type: 'generated-index',
-        title: "Events",
+        title: 'Events',
         slug: 'events',
         keywords: ['Videos', 'Events', 'overzicht'],
       },
