@@ -1,0 +1,38 @@
+.dsw-session {
+  margin-block: 2em;
+}
+
+.dsw-session:not(:last-child) {
+  padding-bottom: 2em;
+  border-bottom: 4px dotted #ccc;
+  margin-bottom: 1em;
+}
+
+.dsw-session__title {
+  font-size: 1.5em;
+}
+.dsw-session__title + .dsw-session__speakerline {
+  margin-block-start: -.5em;
+}
+.dsw-session__speakerline {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.dsw-session__image {
+  float: right;
+  max-width: 5em;
+  margin-inline-start: 1em;
+}
+
+.dsw-session:nth-child(odd) .dsw-session__image {
+  float: left;
+  margin-inline-start: 0;
+  margin-inline-end: 1em;
+}
+
+.dsw-session__speaker-description {
+  font-style: italic;
+  margin: 0;
+}
+

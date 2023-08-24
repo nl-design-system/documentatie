@@ -75,10 +75,18 @@ const config = {
       searchPagePath: 'search',
       //... other Algolia params
     },
+    announcementBar: {
+      id: 'dsw_announcement',
+      content:
+        'Design Systems Week komt eraan! <a target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a href="https://gebruikercentraal.nl/design-systems-week">bekijk de sessies tot nu toe</a>',
+      backgroundColor: 'rgb(250, 255, 90)',
+      textColor: '#000',
+      isCloseable: false,
+    },
   },
   i18n: {
     defaultLocale: 'nl',
-    locales: ['nl'],
+    locales: ['nl', 'en'],
     localeConfigs: {
       nl: {
         htmlLang: 'nl-NL',
