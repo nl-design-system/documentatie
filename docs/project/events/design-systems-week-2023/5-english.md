@@ -11,17 +11,7 @@ language: en
 
 # Design Systems Week 2023
 
-<div class="dsw-usps">
-
-- 2-5 October
-- all things design systems
-- ~12 exciting talks
-- fully virtual
-- 20-25 minutes each
-- international speakers
-- free to attend
-
-</div>
+From **2 to 5 October**, NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the **how and why of design systems**. This year there will be talks both in Dutch and English.
 
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
