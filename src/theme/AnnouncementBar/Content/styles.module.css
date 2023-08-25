@@ -1,0 +1,11 @@
+.content {
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 10px;
+  --utrecht-link-color: auto;
+}
+
+.content a {
+  color: inherit;
+  text-decoration: underline;
+}
