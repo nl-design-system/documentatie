@@ -19,6 +19,13 @@
   -moz-osx-font-smoothing: auto !important;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
+  /* --docusaurus-announcement-bar-height: 50px; */
+}
+
+@media (min-width: 997px) {
+  .nlds-theme {
+    --docusaurus-announcement-bar-height: 40px;
+  }
 }
 
 .marketing-page {
