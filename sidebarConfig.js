@@ -71,21 +71,6 @@ const sidebars = {
       items: require('./docs/onderzoek/sidebar'),
     },
   ],
-  events: [
-    {
-      type: 'category',
-      label: 'Events',
-      collapsible: false,
-      className: 'sidebar__main-category',
-      link: {
-        type: 'generated-index',
-        title: 'Events',
-        slug: 'events',
-        keywords: ['Videos', 'Events', 'overzicht'],
-      },
-      items: require('./docs/project/events/sidebar'),
-    },
-  ],
   project: [
     {
       type: 'category',
