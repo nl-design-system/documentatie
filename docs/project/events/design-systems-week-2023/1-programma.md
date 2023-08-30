@@ -8,7 +8,13 @@ pagination_label: Programma
 import DSWSession from '../../../../src/components/DSWSession'
 import { speakers } from './speakers.json'
 
+# Design Systems Week 2023
+
+NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
+
 Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
+
+Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week en volg zo veel of zo weinig sessies als je wil!
 
 <DSWSession title="Waarom wij als leverancier werken met NL Design System" speaker={speakers.MartijnRietveld}>
 
@@ -32,7 +38,7 @@ In deze sessie krijg je alles te horen over Trinity, het design system van de Ka
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speaker={speakers.JoeLanman}>
+<DSWSession title="The GOV.UK Prototype Kit (EN)" speaker={speakers.JoeLanman}>
 
 Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).
 
@@ -45,7 +51,7 @@ Hoe kan een design system helpen bij het verbeteren van toegankelijkheid, in 12 
 
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speaker={speakers.DavidDarnes}>
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t (EN)" speaker={speakers.DavidDarnes}>
 
 Nord is het design system van Nordhealth, een bedrijf dat software maakt voor de gezondheidszorg. Design system lead David Darnes vertelt je in deze sessie over hoe het hen vergaat met Web Components, en hoe die ervoor zorgen dat ze Nord-componenten heel flexibel kunnen gebruiken, met allerlei verschillende technologieën.
 
@@ -55,7 +61,7 @@ Natuurlijk zijn er allerlei nuances en subtiliteiten rondom het gebruik van Web 
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speaker={speakers.InayailiLeon}>
+<DSWSession title="DesignOps: designing the API of design teams (EN)" speaker={speakers.InayailiLeon}>
 
 DesignOps (design operations) is het bindmiddel dat een designteam bij elkaar houdt. Daarnaast verbindt het design met andere disciplines binnen én buiten de eigen organisatie. Zelfs als je organisatie geen formeel DesignOps-team heeft, wordt design operations waarschijnlijk wel al door iemand bij jullie gedaan.
 
@@ -64,3 +70,15 @@ Bij GitHub is DesignOps de ‘API’ tussen designers onderling, en tussen desig
 Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de geleerde lessen van GitHub met je te delen.
 
 </DSWSession>
+
+## Organisatie
+
+Design Systems Week wordt georganiseerd door het kernteam van NL Design System, met dank aan Gebruiker Centraal en het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
+
+## Code of Conduct
+
+Op Design Systems Week is de [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md) van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.
+
+## Toegankelijkheid
+
+We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [nldesignsystem@gebruikercentraal.nl](mailto:nldesignsystem@gebruikercentraal.nl).
