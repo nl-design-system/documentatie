@@ -3,9 +3,9 @@
 }
 
 .dsw-session:not(:last-child) {
-  padding-bottom: 2em;
-  border-bottom: 4px dotted #ccc;
-  margin-bottom: 1em;
+  padding-block-end: 1em;
+  border-block-end: 4px dotted #ccc;
+  margin-block-end: 1em;
 }
 
 .dsw-session__title {
@@ -19,19 +19,28 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.dsw-session__image {
-  float: right;
-  max-width: 5em;
-  margin-inline-start: 1em;
+
+.dsw-session__speakers {
+  margin-block: 2em;
 }
 
-.dsw-session:nth-child(odd) .dsw-session__image {
-  float: left;
-  margin-inline-start: 0;
-  margin-inline-end: 1em;
-}
-
-.dsw-session__speaker-description {
+.dsw-speaker {
   font-style: italic;
   margin: 0;
+  margin-block: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+
+  --utrecht-paragraph-margin-block-start: 0;
+}
+
+.dsw-session:nth-child(odd) .dsw-speaker {
+  flex-direction: row-reverse;
+}
+
+.dsw-speaker__image {
+  max-width: 5em;
+  height: 100%;
+  margin-block-start: 0.4em;
 }

@@ -438,8 +438,13 @@ li a {
   padding-inline-start: 0;
 }
 
-.theme-doc-sidebar-item-link-level-4 a {
+.theme-doc-sidebar-item-link-level-4 a,
+.theme-doc-sidebar-item-category-level-4 a {
   padding-inline-start: 40px;
+}
+
+.theme-doc-sidebar-item-link-level-5 a {
+  padding-inline-start: 56px;
 }
 
 .doc-card-list {

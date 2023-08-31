@@ -1,5 +1,14 @@
 {
   "speakers": {
+    "PeterBerrevoets": {
+      "name": "Peter Berrevoets",
+      "organisation": "NL Design System",
+      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/peter-berrevoets-edited-300x300.jpeg",
+      "description": {
+        "nl": "Peter werkt als projectleider bij ICTU. Voorheen heeft hij tal van projecten binnen de overheid geleid. Op dit moment werkt hij als projectleider nauw samen met het kernteam van NL Design System."
+      },
+      "language": "nl"
+    },
     "MartijnRietveld": {
       "name": "Martijn Rietveld",
       "organisation": "OpenGemeenten",
@@ -24,7 +33,23 @@
       "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hulya-bozkurt-300x300.jpeg",
       "image2": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/joshua_grootveld-edited-300x300.jpeg",
       "description": {
-        "nl": "Hülya Bozkurt is sinds 3 jaar product owner bij de KVK. 8 jaar geleden is ze bij de KVK gestart als interaction designer. Hülya startte in de gaming-industrie als game designer. Ook was ze online producer bij een kinderomroep en interaction designer voor diverse websites, van uitgevers tot telefonie en internet. Joshua Grootveld is nu ruim 1 jaar interaction designer bij de KVK. Voorheen werkte hij als UX-designer bij TransIP. Vervolgens werkte Joshua bij team.blue, waar hij heeft gewerkt aan het opzetten van een multi-brand white-label design system in Sketch/Figma, en product ontwikkeling op het gebied van UX/UI."
+        "nl": "Hülya Bozkurt is sinds 3 jaar product owner bij de KVK. 8 jaar geleden is ze bij de KVK gestart als interaction designer. Hülya startte in de gaming-industrie als game designer. Ook was ze online producer bij een kinderomroep en interaction designer voor diverse websites, van uitgevers tot telefonie en internet."
+      },
+      "description2": {
+        "nl": "Joshua Grootveld is nu ruim 1 jaar interaction designer bij de KVK. Voorheen werkte hij als UX-designer bij TransIP. Vervolgens werkte Joshua bij team.blue, waar hij heeft gewerkt aan het opzetten van een multi-brand white-label design system in Sketch/Figma, en product ontwikkeling op het gebied van UX/UI."
+      },
+      "language": "nl"
+    },
+    "RobbertEnHidde": {
+      "name": "Robbert Broersma & Hidde de Vries",
+      "organisation": "NL Design System",
+      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/robbert-broersma.png",
+      "image2": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hidde-de-vries-300x300.jpg",
+      "description": {
+        "nl": "Robbert is design system lead bij NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten."
+      },
+      "description2": {
+        "nl": "Hidde is developer en toegankelijkheidsspecialist bij NL Design System. Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid."
       },
       "language": "nl"
     },
