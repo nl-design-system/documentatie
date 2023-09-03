@@ -1,2 +1,5 @@
 Redirect 301 /footer/toegankelijkheidsverklaring /toegankelijkheidsverklaring
 Redirect 301 /footer/colofon /colofon
+Redirect 301 /videos/design-system-week-2022 /videos/design-systems-week-2022
+
+Redirect 301 /videos(.*)$ /project/events$1

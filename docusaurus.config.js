@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const navbar = require('./navConfig');
-const footer = require('./footerConfig');
+const navbar = require('./navConfig')
+const footer = require('./footerConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -78,7 +78,7 @@ const config = {
     announcementBar: {
       id: 'dsw_announcement',
       content:
-        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="https://gebruikercentraal.nl/design-systems-week">bekijk de sessies tot nu toe</a>',
+        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="/project/events/design-systems-week-2023/programma">bekijk de sessies tot nu toe</a>',
       backgroundColor: '#148839',
       textColor: '#fff',
       isCloseable: false,
@@ -86,13 +86,16 @@ const config = {
   },
   i18n: {
     defaultLocale: 'nl',
-    locales: ['nl'],
+    locales: ['nl', 'en'],
     localeConfigs: {
       nl: {
         htmlLang: 'nl-NL',
       },
+      en: {
+        htmlLang: 'en-EN',
+      },
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config

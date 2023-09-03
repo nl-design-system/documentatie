@@ -1,0 +1,46 @@
+.dsw-session {
+  margin-block: 2em;
+}
+
+.dsw-session:not(:last-child) {
+  padding-block-end: 1em;
+  border-block-end: 4px dotted #ccc;
+  margin-block-end: 1em;
+}
+
+.dsw-session__title {
+  font-size: 1.5em;
+}
+.dsw-session__title + .dsw-session__speakerline {
+  margin-block-start: -0.5em;
+}
+.dsw-session__speakerline {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dsw-session__speakers {
+  margin-block: 2em;
+}
+
+.dsw-speaker {
+  font-style: italic;
+  margin: 0;
+  margin-block: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+
+  --utrecht-paragraph-margin-block-start: 0;
+}
+
+.dsw-session:nth-child(odd) .dsw-speaker {
+  flex-direction: row-reverse;
+}
+
+.dsw-speaker__image {
+  max-width: 5em;
+  height: 100%;
+  margin-block-start: 0.4em;
+}

@@ -438,8 +438,13 @@ li a {
   padding-inline-start: 0;
 }
 
-.theme-doc-sidebar-item-link-level-4 a {
+.theme-doc-sidebar-item-link-level-4 a,
+.theme-doc-sidebar-item-category-level-4 a {
   padding-inline-start: 40px;
+}
+
+.theme-doc-sidebar-item-link-level-5 a {
+  padding-inline-start: 56px;
 }
 
 .doc-card-list {
@@ -530,4 +535,41 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   .navbar__items--left {
     gap: 20px;
   }
+}
+
+.dsw-usps ul {
+  padding: 0;
+}
+.dsw-usps li {
+  padding: 0;
+  display: inline;
+  list-style: none;
+  font-size: 1.25em;
+  color: var(--nlds-document-subtle-color);
+}
+.dsw-usps li:not(:last-child)::after {
+  content: "∙";
+  display: inline-block;
+  padding-right: 0.25em;
+  margin-left: 0.25em;
+}
+.dsw-signup {
+  text-decoration: none;
+  background-color: var(--utrecht-button-primary-action-background-color);
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  color: var(--utrecht-button-primary-action-color);
+  display: inline-block;
+}
+.dsw-signup:hover {
+  text-decoration: inherit;
+  color: var(--utrecht-button-primary-action-color);
+}
+.dsw-signup-main {
+  font-weight: bold;
+}
+.dsw-signup-sup {
+  font-size: 0.65em;
+  display: block;
 }

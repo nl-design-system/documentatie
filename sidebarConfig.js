@@ -71,21 +71,6 @@ const sidebars = {
       items: require('./docs/onderzoek/sidebar'),
     },
   ],
-  videos: [
-    {
-      type: 'category',
-      label: 'Videos',
-      collapsible: false,
-      className: 'sidebar__main-category',
-      link: {
-        type: 'generated-index',
-        title: "Video's",
-        slug: 'videos',
-        keywords: ['Videos', 'overzicht'],
-      },
-      items: require('./docs/videos/sidebar'),
-    },
-  ],
   project: [
     {
       type: 'category',

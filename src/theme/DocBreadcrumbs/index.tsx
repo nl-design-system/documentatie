@@ -11,13 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
-  const sidebarBreadcrumbs =
-    useSidebarBreadcrumbs()?.map((item) => {
-      if (item.type === 'category') {
-        return { ...item, ...item.items.find((i) => i.type === 'link'), label: item.label };
-      }
-      return item;
-    }) || [];
+  const sidebarBreadcrumbs = useSidebarBreadcrumbs() || [];
 
   const homeHref = useBaseUrl('/');
   const { pathname } = useLocation();
@@ -30,6 +24,7 @@ export default function DocBreadcrumbs(): JSX.Element | null {
   if (!breadcrumbs) {
     return null;
   }
+
   return (
     <nav
       className={clsx(ThemeClassNames.docs.docBreadcrumbs, styles.breadcrumbsContainer)}
