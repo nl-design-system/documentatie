@@ -3,28 +3,22 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
-import { Heading2, Paragraph } from '@utrecht/component-library-react';
+import { Heading2, Image, Paragraph } from '@utrecht/component-library-react';
 
 interface DSWSessionProps {
   title: string;
   subtitle?: string;
-  speaker: DSWSpeaker;
+  speakers: DSWSpeaker[];
   description: string;
   signupLink: string;
   lang?: 'en' | 'nl';
-  id: string;
+  organisation: string;
 }
 
 interface DSWSpeaker {
   name: string;
-  organisation: string;
-  image: string;
-  image2?: string;
+  image: { src: string; alt: string };
   description: {
-    nl: string;
-    en?: string;
-  };
-  description2?: {
     nl: string;
     en?: string;
   };
@@ -32,35 +26,31 @@ interface DSWSpeaker {
 }
 
 export const DSWSession = ({
-  id,
   lang = 'nl',
   title,
-  speaker,
+  speakers,
   signupLink,
+  organisation,
   children,
 }: PropsWithChildren<DSWSessionProps>) => (
-  <article className={clsx(style['dsw-session'])} id={id}>
+  <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading2 className={clsx(style['dsw-session__title'])}>{title}</Heading2>
     <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
-      {speaker.name} {lang === 'en' ? 'of' : 'van'} {speaker.organisation}
+      {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
     </Paragraph>
     {children}
-    {lang === 'nl' && speaker.language !== 'nl' && (
+    {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (
       <Paragraph>
         <b>Goed te weten:</b> Deze sessie is in het Engels.
       </Paragraph>
     )}
     <aside className={clsx(style['dsw-session__speakers'])}>
-      <div className={clsx(style['dsw-session__speaker'], style['dsw-speaker'])}>
-        <img className={clsx(style['dsw-speaker__image'])} src={speaker.image} alt="" />
-        <Paragraph className={clsx(style['dsw-speaker__description'])}>{speaker.description[lang]}</Paragraph>
-      </div>
-      {speaker.description2 && (
+      {speakers.map((speaker) => (
         <div className={clsx(style['dsw-session__speaker'], style['dsw-speaker'])}>
-          {speaker.image2 && <img className={clsx(style['dsw-speaker__image'])} src={speaker.image2} alt="" />}
-          <Paragraph className={clsx(style['dsw-speaker__description'])}>{speaker.description2[lang]}</Paragraph>
+          <img className={clsx(style['dsw-speaker__image'])} src={speaker.image.src} alt={speaker.image.alt} />
+          <Paragraph className={clsx(style['dsw-speaker__description'])}>{speaker.description[lang]}</Paragraph>
         </div>
-      )}
+      ))}
     </aside>
     <Paragraph className={clsx(style['homepage-hero__call-to-action'])}>
       <Link className={clsx('utrecht-link', style['homepage-hero__call-to-action-link'])} to={signupLink}>

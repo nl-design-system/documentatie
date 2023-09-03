@@ -3,7 +3,10 @@
     "PeterBerrevoets": {
       "name": "Peter Berrevoets",
       "organisation": "NL Design System",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/peter-berrevoets-edited-300x300.jpeg",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/peter-berrevoets-edited-300x300.jpeg",
+        "alt": "Peter Berrevoets"
+      },
       "description": {
         "nl": "Peter werkt als projectleider bij ICTU. Voorheen heeft hij tal van projecten binnen de overheid geleid. Op dit moment werkt hij als projectleider nauw samen met het kernteam van NL Design System."
       },
@@ -12,7 +15,10 @@
     "MartijnRietveld": {
       "name": "Martijn Rietveld",
       "organisation": "OpenGemeenten",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/martijn-rietveld-edited-300x300.png",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/martijn-rietveld-edited-300x300.png",
+        "alt": "Martijn Rietveld"
+      },
       "description": {
         "nl": "Martijn Rietveld is designer bij en mede-oprichter van OpenGemeenten. Deze leverancier wil overheidsinformatie begrijpelijk maken voor alle inwoners van Nederland. Het uitgangspunt van Martijn in zijn werk: goed ontwerp maakt gemeentelijke dienstverlening toegankelijk voor iedereen."
       },
@@ -21,34 +27,59 @@
     "JeffreyLauwers": {
       "name": "Jeffrey Lauwers",
       "organisation": "NL Design System",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/jeffrey-lauwers-150x150.png",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/jeffrey-lauwers-150x150.png",
+        "alt": "Jeffrey Lauwers"
+      },
       "description": {
         "nl": "Jeffrey Lauwers is designer bij NL Design System, met een focus op design systems en toegankelijkheid. Eerder realiseerde hij design systems voor de Nederlandse Spoorwegen, Nationale Nederlanden, Randstad en het Ministerie van VWS."
       },
       "language": "nl"
     },
-    "KVK": {
-      "name": "Hülya Bozkurt & Joshua Grootveld",
+    "HulyaBozkurt": {
+      "name": "Hülya Bozkurt",
       "organisation": "Kamer van Koophandel",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hulya-bozkurt-300x300.jpeg",
-      "image2": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/joshua_grootveld-edited-300x300.jpeg",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hulya-bozkurt-300x300.jpeg",
+        "alt": "Hülya Bozkurt"
+      },
       "description": {
         "nl": "Hülya Bozkurt is sinds 3 jaar product owner bij de KVK. 8 jaar geleden is ze bij de KVK gestart als interaction designer. Hülya startte in de gaming-industrie als game designer. Ook was ze online producer bij een kinderomroep en interaction designer voor diverse websites, van uitgevers tot telefonie en internet."
       },
-      "description2": {
+      "language": "nl"
+    },
+    "JoshuaGrootveld": {
+      "name": "Joshua Grootveld",
+      "organisation": "Kamer van Koophandel",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/joshua_grootveld-edited-300x300.jpeg",
+        "alt": "Joshua Grootveld"
+      },
+      "description": {
         "nl": "Joshua Grootveld is nu ruim 1 jaar interaction designer bij de KVK. Voorheen werkte hij als UX-designer bij TransIP. Vervolgens werkte Joshua bij team.blue, waar hij heeft gewerkt aan het opzetten van een multi-brand white-label design system in Sketch/Figma, en product ontwikkeling op het gebied van UX/UI."
       },
       "language": "nl"
     },
-    "RobbertEnHidde": {
-      "name": "Robbert Broersma & Hidde de Vries",
+    "RobbertBroersma": {
+      "name": "Robbert Broersma",
       "organisation": "NL Design System",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/robbert-broersma.png",
-      "image2": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hidde-de-vries-300x300.jpg",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/robbert-broersma.png",
+        "alt": "Robbert Broersma"
+      },
       "description": {
         "nl": "Robbert is design system lead bij NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten."
       },
-      "description2": {
+      "language": "nl"
+    },
+    "HiddeDeVries": {
+      "name": "Hidde de Vries",
+      "organisation": "NL Design System",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/hidde-de-vries-300x300.jpg",
+        "alt": "Hidde de Vries"
+      },
+      "description": {
         "nl": "Hidde is developer en toegankelijkheidsspecialist bij NL Design System. Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid."
       },
       "language": "nl"
@@ -56,7 +87,10 @@
     "JoeLanman": {
       "name": "Joe Lanman",
       "organisation": "GOV.UK",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/joe-lanman-square-1-150x150.png",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/joe-lanman-square-1-150x150.png",
+        "alt": "Joe Lanman"
+      },
       "description": {
         "nl": "Joe Lanman is design lead bij de UK Government Digital Service, in London. Hij werkte projecten als Register to Vote en Petition Parliament. En de GOV.UK Prototype Kit: een manier om snel in HTML realistische prototypes te maken van digitale overheidsdiensten en -producten.",
         "en": "Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit - a way to rapidly prototype realistic services in HTML"
@@ -66,7 +100,10 @@
     "DanielleRameau": {
       "name": "Daniëlle Rameau",
       "organisation": "Sanoma Learning",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/danielle-rameau-edited-300x300.png",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/danielle-rameau-edited-300x300.png",
+        "alt": "Daniëlle Rameau"
+      },
       "description": {
         "nl": "Daniëlle Rameau is design systems lead bij Sanoma Learning. Sinds 2022 houdt ze zich samen met haar team bezig met de ontwikkeling van het design system. Het is een multi-brand design system dat wordt gebruikt in alle producten van Sanoma Learning."
       },
@@ -75,7 +112,10 @@
     "DavidDarnes": {
       "name": "David Darnes",
       "organisation": "Nordhealth",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/david-darnes-150x150.png",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/david-darnes-150x150.png",
+        "alt": "David Darnes"
+      },
       "description": {
         "nl": "Dave is team lead van het Nord Design System bij Nordhealth. Al ruim 14 jaar ontwerpt, ontwikkelt en schrijft hij op het web.",
         "en": "Dave is Team Lead on Nord Design System at Nordhealth and has been designing, building and writing on the web for over 14 years."
@@ -85,7 +125,10 @@
     "InayailiLeon": {
       "name": "Inayaili León",
       "organisation": "GitHub",
-      "image": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/inayaili-leon-e1691492604349-150x150.jpeg",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/inayaili-leon-e1691492604349-150x150.jpeg",
+        "alt": "Inayaili León"
+      },
       "description": {
         "nl": "Inayaili León is Staff Design Program Manager bij GitHub. Hier houdt ze zich bezig met DesignOps. Daarvoor was ze Senior Designer bij Microsoft. Daar werkte ze aan design systems en DesignOps. Ook leidde Inayaili het team dat het Vanilla design system van Canonical ontwikkelde.",
         "en": "Inayaili León is a Staff Design Program Manager at GitHub, where she focuses on design operations, documentation, and more. Previously, she was as a Senior Designer at Microsoft, working on design systems and design ops, and she led the team creating Canonical's Vanilla design system"

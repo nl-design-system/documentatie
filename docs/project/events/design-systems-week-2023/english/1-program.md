@@ -18,7 +18,7 @@ From **2 to 5 October**, NL Design System organises the third edition of Design 
 
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
-<DSWSession title="The GOV.UK Prototype Kit" speaker={speakers.JoeLanman} lang="en" id="joe-lanman">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
@@ -29,7 +29,7 @@ Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessan
 Joe Lanman is als ontwerper betrokken bij dit project en vertelt je er meer over!
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speaker={speakers.DavidDarnes} lang="en" id="david-darnes">
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth">
 
 Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.
 
@@ -39,7 +39,7 @@ Of course, there is lots of nuance and there are some caveats and challenges. In
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speaker={speakers.InayailiLeon} lang="en" id="inayaili-leon">
+<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub">
 
 DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn’t have a formal DesignOps team, this work is likely being done by someone.
 
