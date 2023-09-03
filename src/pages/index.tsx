@@ -99,15 +99,15 @@ export default function Home() {
             <Card component="section">
               <CardContent>
                 <div>
-                  <Heading2>Videos</Heading2>
+                  <Heading2>Events</Heading2>
                   <Paragraph>
-                    Niet gelukt om bij de heartbeat te zijn? Of zin om een sessie van de Design Systems Week te kijken?
-                    De meesten hebben we opgenomen.
+                    Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de
+                    aankondigingen en opnames hier.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/project/events" className="utrecht-link">
-                    Bekijk de videos
+                  <DocusaurusLink to="/project/events/overzicht" className="utrecht-link">
+                    Bekijk de events
                   </DocusaurusLink>
                 </Paragraph>
               </CardContent>
