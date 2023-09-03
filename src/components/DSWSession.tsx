@@ -28,24 +28,28 @@ interface DSWSpeaker {
     nl: string;
     en?: string;
   };
+  language: string;
 }
 
 export const DSWSession = ({
   id,
   lang = 'nl',
   title,
-  subtitle,
   speaker,
   signupLink,
   children,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={id}>
     <Heading2 className={clsx(style['dsw-session__title'])}>{title}</Heading2>
-    {subtitle && <Paragraph lead>{subtitle}</Paragraph>}
-    <div className={clsx(style['dsw-session__speakerline'])}>
+    <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
       {speaker.name} {lang === 'en' ? 'of' : 'van'} {speaker.organisation}
-    </div>
+    </Paragraph>
     {children}
+    {lang === 'nl' && speaker.language !== 'nl' && (
+      <Paragraph>
+        <b>Goed te weten:</b> Deze sessie is in het Engels.
+      </Paragraph>
+    )}
     <aside className={clsx(style['dsw-session__speakers'])}>
       <div className={clsx(style['dsw-session__speaker'], style['dsw-speaker'])}>
         <img className={clsx(style['dsw-speaker__image'])} src={speaker.image} alt="" />

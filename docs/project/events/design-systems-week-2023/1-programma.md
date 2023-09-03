@@ -18,6 +18,7 @@ Dit jaar hebben we nationale én internationale sprekers. We laten ons inspirere
 Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week en volg zo veel of zo weinig sessies als je wil!
 
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speaker={speakers.PeterBerrevoets} id="peter-berrevoets">
+
 De overheid staat voor een enorme uitdaging: ervoor zorgen dat websites en apps toegankelijk worden voor iedereen. Maar hoe zorg je ervoor dat toegankelijkheid gegarandeerd onderdeel is van het ontwerp- en ontwikkelproces?
 
 Precies dát is wat NL Design System doet: ervoor zorgen dat iedereen binnen de overheid met dezelfde ‘bouwstenen’ nieuwe websites en apps kan maken. Mét behoud van de eigen huisstijl uiteraard.
@@ -52,6 +53,7 @@ In deze sessie krijg je alles te horen over Trinity, het design system van de Ka
 </DSWSession>
 
 <DSWSession title="Toegan­kelijke formulieren met NL Design System" speaker={speakers.RobbertEnHidde} id="robbert-en-hidde">
+
 Ze zijn essentieel voor vrijwel alle digitale overheidsdiensten: formulieren. Zeker nu de Wet modernisering elektronisch bestuurlijk verkeer (WMEBV) burgers en bedrijven het recht gaat geven om elektronisch zaken te doen met de overheid. Logisch dus dat steeds meer organisaties NL Design System gebruiken voor formulieren.
 
 In deze sessie vertellen ontwikkelaars Robbert Broersma en Hidde de Vries je over hoe je de beste formulieren maakt. Ze laten daarbij zien hoe digitale toegankelijkheid is ingebouwd in de componenten en richtlijnen van NL Design System, en nemen je mee in de do’s en don’ts.
@@ -63,7 +65,6 @@ Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessan
 
 Joe Lanman is als ontwerper betrokken bij dit project en vertelt je er meer over!
 
-Deze sessie is in het Engels.
 </DSWSession>
 
 <DSWSession title="Betere toegankelijkheid met een design system" speaker={speakers.DanielleRameau} id="danielle-rameau">
@@ -80,7 +81,6 @@ Al sinds de eerste voorstellen voor standaardisatie van Web Components, hielden 
 
 Natuurlijk zijn er allerlei nuances en subtiliteiten rondom het gebruik van Web Components. In zijn sessie gaat Dave in op wat er wel en niet goed werkt.
 
-Deze sessie is in het Engels.
 </DSWSession>
 
 <DSWSession title="DesignOps: designing the API of design teams" speaker={speakers.InayailiLeon} id="inayaili-leon">
@@ -91,7 +91,6 @@ Bij GitHub is DesignOps de ‘API’ tussen designers onderling, en tussen desig
 
 Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de geleerde lessen van GitHub met je te delen.
 
-Deze sessie is in het Engels.
 </DSWSession>
 
 ## Organisatie

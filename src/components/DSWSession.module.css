@@ -10,14 +10,11 @@
 
 .dsw-session__title {
   font-size: 1.5em;
+  --utrecht-heading-2-margin-block-end: 0.1em;
 }
-.dsw-session__title + .dsw-session__speakerline {
-  margin-block-start: -0.5em;
-}
-.dsw-session__speakerline {
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+
+.dsw-session__subtitle {
+  --utrecht-paragraph-margin-block-start: 0;
 }
 
 .dsw-session__speakers {
