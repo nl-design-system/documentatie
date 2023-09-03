@@ -16,7 +16,7 @@ const sidebar = [
         link: {
           type: 'generated-index',
           title: 'Design Systems Week 2023',
-          slug: '/project/events/design-systems-week-2023/overzicht',
+          slug: '/events/design-systems-week-2023/overzicht',
         },
         items: [
           {

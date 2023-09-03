@@ -5,6 +5,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Program
 pagination_label: Program
+slug: /events/design-systems-week-2023/en/program
 ---
 
 import DSWSession from '../../../../../src/components/DSWSession'

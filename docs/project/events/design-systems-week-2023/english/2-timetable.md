@@ -4,13 +4,14 @@ description: Timetable for all English talks of the Design Systems Week 2023
 hide_table_of_contents: true
 sidebar_label: Timetable
 pagination_label: Timetable
+slug: /events/design-systems-week-2023/en/timetable
 ---
 
 import { Link } from '@utrecht/component-library-react';
 
 <div lang="en">
 
-These are all timeslots with talks in English, <Link href="/project/events/design-systems-week-2023/tijdschema-per-dag" hrefLang="nl-NL">the full program in including Dutch talks</Link> shows the complete Design Systems Week 2023 timetable.
+These are all timeslots with talks in English, <Link href="/events/design-systems-week-2023/tijdschema" hrefLang="nl-NL">the full program in including Dutch talks</Link> shows the complete Design Systems Week 2023 timetable.
 
 ## Monday October 2th
 

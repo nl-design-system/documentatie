@@ -1,8 +1,10 @@
 ---
 title: Tijdschema
+description: Tijdschema per dag voor de Design Systems Week 2023
 hide_table_of_contents: true
 sidebar_label: Tijdschema
 pagination_label: Tijdschema
+slug: /events/design-systems-week-2023/tijdschema
 ---
 
 import { Link } from '@utrecht/component-library-react';
