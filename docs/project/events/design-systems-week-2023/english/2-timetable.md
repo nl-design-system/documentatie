@@ -39,7 +39,7 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Organisation
 
-Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and <Link href="international.gebruikercentraal.nl">User Needs First</Link>. All sessions can also be found there <Link href="https://international.gebruikercentraal.nl/design-systems-week-2023/">Design Systems Week 2023</Link>
+Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and <Link href="https://international.gebruikercentraal.nl">User Needs First</Link>. All sessions can also be found there <Link href="https://international.gebruikercentraal.nl/design-systems-week-2023/">Design Systems Week 2023</Link>
 
 ## Code of Conduct
 
