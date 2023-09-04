@@ -4,7 +4,8 @@ import Link from '@docusaurus/Link';
 import { findFirstCategoryLink, useDocById } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
 import type { Props } from '@theme/DocCard';
-
+import { ArrowNarrowRight } from 'tabler-icons-react';
+import { Icon } from '@utrecht/component-library-react';
 import styles from './styles.module.css';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 
@@ -32,7 +33,10 @@ function CardLayout({
         </p>
       )}
       <Link href={href} className={clsx(styles.cardLink)}>
-        {linkDescription}
+        {linkDescription}{' '}
+        <Icon>
+          <ArrowNarrowRight />
+        </Icon>
       </Link>
     </div>
   );
@@ -71,7 +75,7 @@ function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
   const doc = useDocById(item.docId ?? undefined);
   return (
     <CardLayout
-      linkDescription={`Bekijk ${doc.title.toLowerCase()}`}
+      linkDescription={`${doc.title}`}
       href={item.href}
       title={item.label}
       description={item.description ?? doc?.description}

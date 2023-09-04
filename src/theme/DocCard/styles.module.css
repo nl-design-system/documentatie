@@ -2,6 +2,9 @@
   --ifm-link-color: var(--nlds-interaction-color);
   --ifm-link-hover-color: var(--ifm-color-emphasis-700);
 
+  --utrecht-icon-size: 20px;
+  --utrecht-icon-inset-block-start: 0.25em;
+
   background-color: white;
   padding-inline: 16px;
   padding-block: 24px;
