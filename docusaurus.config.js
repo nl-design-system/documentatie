@@ -78,7 +78,7 @@ const config = {
     announcementBar: {
       id: 'dsw_announcement',
       content:
-        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="/events/design-systems-week-2023/programma">bekijk de sessies tot nu toe</a>',
+        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023">bekijk de sessies tot nu toe</a>',
       backgroundColor: '#148839',
       textColor: '#fff',
       isCloseable: false,
