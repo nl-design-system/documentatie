@@ -10,6 +10,7 @@ slug: /events/design-systems-week-2023/en/program
 
 import DSWSession from '../../../../../src/components/DSWSession'
 import { speakers } from '../speakers.json'
+import { Link } from '@utrecht/component-library-react';
 
 <div lang="en">
 
@@ -25,9 +26,6 @@ A set of components is one thing, but the true magic comes when they are put in 
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
 
 Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit – a way to rapidly prototype realistic services in HTML.
-Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).
-
-Joe Lanman is als ontwerper betrokken bij dit project en vertelt je er meer over!
 </DSWSession>
 
 <DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth">
