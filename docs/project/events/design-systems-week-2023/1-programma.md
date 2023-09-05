@@ -19,14 +19,6 @@ Dit jaar hebben we nationale én internationale sprekers. We laten ons inspirere
 
 Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week en volg zo veel of zo weinig sessies als je wil!
 
-<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
-
-Veera is een codenaam voor een design system gebruikt door vele Estlandse overheids organisaties, als een gemeenschappelijke UI taal voor de hele Estlandse staat. Aleksandr zal het hebben over zijn eigen ervaringen en die van zijn collega's bij het opzetten, onderhouden en ondersteunen van een componenten bibliotheek als levend onderdeel van het design system.
-
-Meld je aan als je wil leren van een complex praktijkvoorbeeld. Dit is het verhaal van het land dat zich met trots de eerste digitale samenleving noemt over het managen van verwachtingen, het belang van DX, zelfbeheersing en naamgeving van dingen.
-
-</DSWSession>
-
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system#event-booking">
 
 De overheid staat voor een enorme uitdaging: ervoor zorgen dat websites en apps toegankelijk worden voor iedereen. Maar hoe zorg je ervoor dat toegankelijkheid gegarandeerd onderdeel is van het ontwerp- en ontwikkelproces?
@@ -76,6 +68,14 @@ In deze sessie vertellen ontwikkelaars Robbert Broersma en Hidde de Vries je ove
 Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).
 
 Joe Lanman is als ontwerper betrokken bij dit project en vertelt je er meer over!
+
+</DSWSession>
+
+<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
+
+Veera is een codenaam voor een design system gebruikt door vele Estlandse overheids organisaties, als een gemeenschappelijke UI taal voor de hele Estlandse staat. Aleksandr zal het hebben over zijn eigen ervaringen en die van zijn collega's bij het opzetten, onderhouden en ondersteunen van een componenten bibliotheek als levend onderdeel van het design system.
+
+Meld je aan als je wil leren van een complex praktijkvoorbeeld. Dit is het verhaal van het land dat zich met trots de eerste digitale samenleving noemt over het managen van verwachtingen, het belang van DX, zelfbeheersing en naamgeving van dingen.
 
 </DSWSession>
 

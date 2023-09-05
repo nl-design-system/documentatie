@@ -28,6 +28,13 @@ Designer Joe Lanman is involved in this project as a designer and tells you more
 Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit – a way to rapidly prototype realistic services in HTML.
 </DSWSession>
 
+<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
+
+Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
+
+Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.
+</DSWSession>
+
 <DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt#event-booking">
 
 Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.
@@ -50,13 +57,6 @@ In this talk, you will learn:
 - How to see DesignOps as an opportunity to connect not just designers, but design to other disciplines, and design to the community
 - Some things we’ve tried at GitHub that didn’t work so well — and some that did
 
-</DSWSession>
-
-<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
-
-Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
-
-Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.
 </DSWSession>
 
 ## Organisation
