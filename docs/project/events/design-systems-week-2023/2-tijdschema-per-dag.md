@@ -11,39 +11,39 @@ import { Link } from '@utrecht/component-library-react';
 
 ## maandag 2 oktober
 
-| Tijd  | Spreker                            | Onderwerp                                                                                                                                                                  | Taal |
-| :---- | :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| 11:00 | Olaf Schoelink en Peter Berrevoets | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system/">Toegankelijkheid verzekeren met NL Design System</Link>             | <abbr title="Nederlands">NL</abbr>   |
-| 13:00 | Martijn Rietveld - OpenGemeenten   | <Link href="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system/">Waarom wij als leverancier werken met NL Design System</Link> | <abbr title="Nederlands">NL</abbr>   |
-| 15:00 | Jeffrey Lauwers                    | <Link href="https://www.gebruikercentraal.nl/agenda/onze-componenten-jouw-huisstijl-over-design-tokens/">Design Tokens - onze componenten jouw huisstijl</Link>            | <abbr title="Nederlands">NL</abbr>   |
-| 16:30 | Nog aan te kondigen                | -                                                                                                                                                                          | -    |
+| Tijd  | Spreker                            | Onderwerp                                                                                                                                                                  | Taal                               |
+| :---- | :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| 11:00 | Olaf Schoelink en Peter Berrevoets | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system/">Toegankelijkheid verzekeren met NL Design System</Link>             | <abbr title="Nederlands">NL</abbr> |
+| 13:00 | Martijn Rietveld - OpenGemeenten   | <Link href="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system/">Waarom wij als leverancier werken met NL Design System</Link> | <abbr title="Nederlands">NL</abbr> |
+| 15:00 | Jeffrey Lauwers                    | <Link href="https://www.gebruikercentraal.nl/agenda/onze-componenten-jouw-huisstijl-over-design-tokens/">Design Tokens - onze componenten jouw huisstijl</Link>            | <abbr title="Nederlands">NL</abbr> |
+| 16:30 | Nog aan te kondigen                | -                                                                                                                                                                          | -                                  |
 
 ## dinsdag 3 oktober
 
-| Tijd  | Spreker                            | Onderwerp                                                                                                                                                  | Taal |
-| :---- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| 11:00 | Nog aan te kondigen                | -                                                                                                                                                          | -    |
-| 11:00 | NL Design System community         | <Link href="https://www.gebruikercentraal.nl/agenda/update-heartbeat-van-het-nl-design-system-3/">Heartbeat NL Design System</Link>                        | <abbr title="Nederlands">NL</abbr>   |
-| 15:00 | Hülya Bozkurt & Joshua Grootveld   | <Link href="https://www.gebruikercentraal.nl/agenda/trinity-het-design-system-van-de-kvk/">Trinity: het design system van KvK</Link>                       | <abbr title="Nederlands">NL</abbr>   |
-| 16:30 | Hidde de Vries en Robbert Broersma | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijke-formulieren-met-nl-design-system/">Toegankelijke formulieren met NL Design System</Link> | <abbr title="Nederlands">NL</abbr>   |
+| Tijd  | Spreker                            | Onderwerp                                                                                                                                                  | Taal                               |
+| :---- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| 11:00 | Nog aan te kondigen                | -                                                                                                                                                          | -                                  |
+| 11:00 | NL Design System community         | <Link href="https://www.gebruikercentraal.nl/agenda/update-heartbeat-van-het-nl-design-system-3/">Heartbeat NL Design System</Link>                        | <abbr title="Nederlands">NL</abbr> |
+| 15:00 | Hülya Bozkurt & Joshua Grootveld   | <Link href="https://www.gebruikercentraal.nl/agenda/trinity-het-design-system-van-de-kvk/">Trinity: het design system van KvK</Link>                       | <abbr title="Nederlands">NL</abbr> |
+| 16:30 | Hidde de Vries en Robbert Broersma | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijke-formulieren-met-nl-design-system/">Toegankelijke formulieren met NL Design System</Link> | <abbr title="Nederlands">NL</abbr> |
 
 ## woensdag 4 oktober
 
-| Tijd  | Spreker             | Onderwerp                                                                                                  | Taal |
-| :---- | :------------------ | :--------------------------------------------------------------------------------------------------------- | ---- |
-| 11:00 | Nog aan te kondigen | -                                                                                                          | -    |
-| 13:00 | Joe Lanman          | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/">GOV.UK Prototype Kit</Link> | <abbr title="English">EN</abbr>   |
-| 15:00 | Aleksandr Beliaev  | <Link href="https://www.gebruikercentraal.nl/agenda/estland-design-system/">Estonia Design System</Link> | <abbr title="English">EN</abbr> |
-| 16:30 | Nog aan te kondigen | -                                                                                                          | -    |
+| Tijd  | Spreker             | Onderwerp                                                                                                  | Taal                            |
+| :---- | :------------------ | :--------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| 11:00 | Nog aan te kondigen | -                                                                                                          | -                               |
+| 13:00 | Joe Lanman          | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/">GOV.UK Prototype Kit</Link> | <abbr title="English">EN</abbr> |
+| 15:00 | Aleksandr Beliaev   | <Link href="https://www.gebruikercentraal.nl/agenda/estland-design-system/">Estonia Design System</Link>   | <abbr title="English">EN</abbr> |
+| 16:30 | Nog aan te kondigen | -                                                                                                          | -                               |
 
 ## donderdag 5 oktober
 
-| Tijd  | Spreker                           | Onderwerp                                                                                                                                                                    | Taal |
-| :---- | :-------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| 11:00 | Daniëlle Rameau - Sanoma Learning | <Link href="https://www.gebruikercentraal.nl/agenda/betere-toegankelijkheid-met-een-design-system/">Betere toegankelijkheid met een design system</Link>                     | <abbr title="Nederlands">NL</abbr>   |
-| 13:00 | David Darnes - Nord Health        | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/">Design Systems & Web Components: what works & what doesn’t</Link> | <abbr title="English">EN</abbr>   |
+| Tijd  | Spreker                           | Onderwerp                                                                                                                                                                    | Taal                               |
+| :---- | :-------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| 11:00 | Daniëlle Rameau - Sanoma Learning | <Link href="https://www.gebruikercentraal.nl/agenda/betere-toegankelijkheid-met-een-design-system/">Betere toegankelijkheid met een design system</Link>                     | <abbr title="Nederlands">NL</abbr> |
+| 13:00 | David Darnes - Nord Health        | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/">Design Systems & Web Components: what works & what doesn’t</Link> | <abbr title="English">EN</abbr>    |
 | 15:00 | Inayaili Léon - GitHub            | <Link href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/">DesignOps: designing the API of design teams</Link>                        | <abbr title="English">EN</abbr>s   |
-| 16:30 | Nog aan te kondigen               | -                                                                                                                                                                            | -    |
+| 16:30 | Nog aan te kondigen               | -                                                                                                                                                                            | -                                  |
 
 ## Organisatie
 
