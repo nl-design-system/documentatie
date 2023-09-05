@@ -33,7 +33,7 @@ import { Link } from '@utrecht/component-library-react';
 | :---- | :------------------ | :--------------------------------------------------------------------------------------------------------- | ---- |
 | 11:00 | Nog aan te kondigen | -                                                                                                          | -    |
 | 13:00 | Joe Lanman          | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/">GOV.UK Prototype Kit</Link> | <abbr title="English">EN</abbr>   |
-| 15:00 | Aleksandr Beliaev  | Estonia Design System | <abbr title="English">EN</abbr> |
+| 15:00 | Aleksandr Beliaev  | <Link href="https://www.gebruikercentraal.nl/agenda/estland-design-system/">Estonia Design System</Link> | <abbr title="English">EN</abbr> |
 | 16:30 | Nog aan te kondigen | -                                                                                                          | -    |
 
 ## donderdag 5 oktober
