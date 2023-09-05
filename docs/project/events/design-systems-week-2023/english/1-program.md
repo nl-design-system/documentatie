@@ -28,7 +28,7 @@ Designer Joe Lanman is involved in this project as a designer and tells you more
 Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit – a way to rapidly prototype realistic services in HTML.
 </DSWSession>
 
-<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
+<DSWSession lang="en" title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
 
 Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
 
