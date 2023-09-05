@@ -134,6 +134,18 @@
         "en": "Inayaili León is a Staff Design Program Manager at GitHub, where she focuses on design operations, documentation, and more. Previously, she was as a Senior Designer at Microsoft, working on design systems and design ops, and she led the team creating Canonical's Vanilla design system"
       },
       "language": "en"
+    },
+    "AleksandrBeliaev": {
+      "name": "Aleksandr Beliaev",
+      "organisation": "Nortal",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/aleksandr-beliaev-300x300.png",
+        "alt": "Aleksandr Beliaev"
+      },
+      "description": {
+        "nl": "Aleksandr Beliaev is UI Development Lead bij Nortal, gespecialiseerd in UI engineering en design systems. Aleksandr heeft al meer dan 15 jaar ervaring met werken met UI en code. Hij houdt ervan als dingen mooi, opgeruimd maar werkbaar zijn.",
+        "en": " Aleksandr Beliaev is a UI Development Lead at Nortal. His main expertise revolves around UI engineering and design systems.  Aleksandr has been working with UI code for a bit more than 15 years. He likes his things shiny, tidied-up but liveable."
+      }
     }
   }
 }
