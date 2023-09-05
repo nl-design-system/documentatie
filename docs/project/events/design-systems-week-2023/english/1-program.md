@@ -20,7 +20,7 @@ From **2 to 5 October**, NL Design System organises the third edition of Design 
 
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" signupLink="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit#event-booking">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
@@ -28,7 +28,7 @@ Designer Joe Lanman is involved in this project as a designer and tells you more
 Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit – a way to rapidly prototype realistic services in HTML.
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth">
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt#event-booking">
 
 Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.
 
@@ -38,7 +38,7 @@ Of course, there is lots of nuance and there are some caveats and challenges. In
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub">
+<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub" signupLink="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams#event-booking">
 
 DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn’t have a formal DesignOps team, this work is likely being done by someone.
 
@@ -52,7 +52,7 @@ In this talk, you will learn:
 
 </DSWSession>
 
-<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal">
+<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
 
 Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
 
