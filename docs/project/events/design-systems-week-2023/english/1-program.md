@@ -52,6 +52,13 @@ In this talk, you will learn:
 
 </DSWSession>
 
+<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal">
+
+Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
+
+Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.
+</DSWSession>
+
 ## Organisation
 
 Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and <Link href="https://international.gebruikercentraal.nl">User Needs First</Link>. All sessions can also be found there <Link href="https://international.gebruikercentraal.nl/design-systems-week-2023/">Design Systems Week 2023</Link>
