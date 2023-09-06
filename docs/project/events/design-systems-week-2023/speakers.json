@@ -146,6 +146,31 @@
         "nl": "Aleksandr Beliaev is UI Development Lead bij Nortal, gespecialiseerd in UI engineering en design systems. Aleksandr heeft al meer dan 15 jaar ervaring met werken met UI en code. Hij houdt ervan als dingen mooi, opgeruimd maar werkbaar zijn.",
         "en": " Aleksandr Beliaev is a UI Development Lead at Nortal. His main expertise revolves around UI engineering and design systems.  Aleksandr has been working with UI code for a bit more than 15 years. He likes his things shiny, tidied-up but liveable."
       }
+    },
+    "MuAnChiou": {
+      "name": "Mu-An Chiou",
+      "organisation": "Public Digital Innovation Space, Cabinet Office, Taiwan",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/mu-an-chiou-150x150.png",
+        "alt": "Mu-An Chiou"
+      },
+      "description": {
+        "nl": "Mu-An Chiou is hoofd design systems bij de Public Digital Innovation Space, dat valt onder het Taiwanese Cabinet Office. Ze werkte eerder bij GitHub, waar ze werkte aan hun design system en initiatieven leidde rondom toegankelijkheid, front-end architectuur en Web Components.",
+        "en": "Mu-An Chiou is Head of Design Systems at Public Digital Innovation Space, under Taiwan's Cabinet Office. She used to work at GitHub, where she worked on their design system and led efforts on accessibility and Web Components."
+      },
+      "language": "en"
+    },
+    "ArashAzizi": {
+      "name": "Arash Azizi",
+      "organisation": "PostNL",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/arash-azizi-300x300.jpeg",
+        "alt": "Arash Azizi"
+      },
+      "description": {
+        "nl": "Arash Azizi is product owner van het design system van PostNL. Daarnaast is hij channel manager van de PostNL-webshop. Arash was ook betrokken bij de ontwikkeling van de nieuwe website van PostNL."
+      },
+      "language": "nl"
     }
   }
 }
