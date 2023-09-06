@@ -63,13 +63,6 @@ In deze sessie vertellen ontwikkelaars Robbert Broersma en Hidde de Vries je ove
 
 </DSWSession>
 
-<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation=" Public Digital Innovation Space, Cabinet Office, Taiwan" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
-
-(Omschrijving volgt)
-
-</DSWSession>
-
-
 <DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} organisation="GOV.UK" signupLink="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit#event-booking">
 
 Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).

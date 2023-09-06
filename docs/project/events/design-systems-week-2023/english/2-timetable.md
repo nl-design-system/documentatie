@@ -21,11 +21,11 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Wednesday October 4rd
 
-| Time (CEST) | Speaker           | Topic                                                                                                                                               |
-| :---------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 11:00       | Mu-An Chiou       | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#english">Design systems as public infrastructure</Link> |
-| 13:00       | Joe Lanman        | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/#english">GOV.UK Prototype Kit</Link>                                  |
-| 15:00       | Aleksandr Beliaev | <Link href="https://www.gebruikercentraal.nl/agenda/estland-design-system/#english">Estonia Design System</Link>                                    |
+| Time (CEST) | Speaker           | Topic                                                                                                              |
+| :---------- | :---------------- | :----------------------------------------------------------------------------------------------------------------- |
+| 11:00       | To be announced   | -                                                                                                                  |
+| 13:00       | Joe Lanman        | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/#english">GOV.UK Prototype Kit</Link> |
+| 15:00       | Aleksandr Beliaev | <Link href="https://www.gebruikercentraal.nl/agenda/estland-design-system/#english">Estonia Design System</Link>   |
 
 ## Thursday October 5th
 

@@ -20,12 +20,6 @@ From **2 to 5 October**, NL Design System organises the third edition of Design 
 
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
-<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation=" Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
-
-(Description to be announced)
-
-</DSWSession>
-
 <DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" signupLink="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit#event-booking">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.

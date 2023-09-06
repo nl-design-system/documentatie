@@ -146,29 +146,6 @@
         "nl": "Aleksandr Beliaev is UI Development Lead bij Nortal, gespecialiseerd in UI engineering en design systems. Aleksandr heeft al meer dan 15 jaar ervaring met werken met UI en code. Hij houdt ervan als dingen mooi, opgeruimd maar werkbaar zijn.",
         "en": " Aleksandr Beliaev is a UI Development Lead at Nortal. His main expertise revolves around UI engineering and design systems.  Aleksandr has been working with UI code for a bit more than 15 years. He likes his things shiny, tidied-up but liveable."
       }
-    },
-    "MuAnChiou": {
-      "name": "Mu-An Chiou",
-      "organisation": "Public Digital Innovation Space, Cabinet Office, Taiwan",
-      "image": {
-        "src": "https://private-user-images.githubusercontent.com/178782/264771256-1a549877-6405-46a9-ad81-41a8d20e1898.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTM5OTk4NTQsIm5iZiI6MTY5Mzk5OTU1NCwicGF0aCI6Ii8xNzg3ODIvMjY0NzcxMjU2LTFhNTQ5ODc3LTY0MDUtNDZhOS1hZDgxLTQxYThkMjBlMTg5OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwOTA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDkwNlQxMTI1NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YjMyYjIwY2QxZWIwNDRjYTA5ZDRjMTU2MDFlMjU3ZGFkNDczNzc5M2JjZGY5ZGYwOWE5NTY0ODk5OWQxNTUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.EUcas7Coo_ZZXCGGL7xBdMVAQ5hCIFklDVFNU6Dwpec",
-        "alt": "Mu-An Chiou"
-      },
-      "description": {
-        "nl": "Mu-An Chiou is hoofd design systems bij de Public Digital Innovation Space, dat valt onder het Taiwanese Cabinet Office. Ze werkte eerder bij GitHub, waar ze werkte aan hun design system en initiatieven leidde rondom toegankelijkheid, front-end architectuur en Web Components.",
-        "en": "Mu-An Chiou is Head of Design Systems at Public Digital Innovation Space, under Taiwan's Cabinet Office. She used to work at GitHub, where she worked on their design system and led efforts on accessibility and Web Components."
-      }
-    },
-    "ArashAzizi": {
-      "name": "Arash Azizi",
-      "organisation": "PostNL",
-      "image": {
-        "src": "",
-        "alt": "Arash Azizi"
-      },
-      "description": {
-        "nl": "Arash Azizi is Design System Product Owner bij PostNL."
-      }
     }
   }
 }
