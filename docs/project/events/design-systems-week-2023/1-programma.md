@@ -75,7 +75,9 @@ In deze sessie vertellen ontwikkelaars Robbert Broersma en Hidde de Vries je ove
 
 <DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation=" Public Digital Innovation Space, Cabinet Office, Taiwan" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
 
-(Omschrijving volgt)
+Digitale overheidsdiensten zouden vandaag de dag als publieke infrastructuur moeten worden gezien. Taiwan is in de ongebruikelijke positie dat digitale weerstand essentieel is voor alle overheidsdiensten.
+
+Het design system, met name hoe het gebouwd wordt, speelt een belangrijke rol in digitale weerstand. Moderne oorlogsvoering is immers steeds meer digitaal. In deze sessie deelt Mu-An meer over het doel, de uitdagingen en de ambiites van Taiwanese online dienstverlening, met specifieke aandacht voor het design system.
 
 </DSWSession>
 
