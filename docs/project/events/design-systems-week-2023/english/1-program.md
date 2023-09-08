@@ -22,7 +22,9 @@ This event is partially in Dutch, partially in English. On this page, you can fi
 
 <DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
 
-(Description to be announced)
+Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.
+
+The design system and especially the engineering of it plays a crucial part in digital resilience as modern warfare has become increasing digital. In this talk Mu-An will share the initiative, the challenges, and the ambitions of the Taiwanese digital services, focusing on the design system aspect.
 
 </DSWSession>
 
