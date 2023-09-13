@@ -20,6 +20,14 @@ From **2 to 5 October**, NL Design System organises the third edition of Design 
 
 This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
 
+<DSWSession title="The future of design decisions" speakers={[speakers.JanSix, speakers.MarcoChristianKrenn]} organisation="GitHub / freelance" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions#event-booking">
+
+Marco-Christian Krenn and Jan Six team up to present _The future of design decisions_. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.
+
+You get a glimpse into the future around design tokens and learn about all the possibilities.
+
+</DSWSession>
+
 <DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
 
 Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.

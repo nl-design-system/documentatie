@@ -171,6 +171,32 @@
         "nl": "Arash Azizi is product owner van het design system van PostNL. Daarnaast is hij channel manager van de PostNL-webshop. Arash was ook betrokken bij de ontwikkeling van de nieuwe website van PostNL."
       },
       "language": "nl"
+    },
+    "MarcoChristianKrenn": {
+      "name": "Marco-Christian Krenn",
+      "organisation": "Freelance",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/marco-christian-krenn-300x300.png",
+        "alt": "Marco-Christian Krenn"
+      },
+      "description": {
+        "nl": "Marco-Christian Krenn is een design system architect uit Oostenrijk. Hij houdt zich graag bezig met het oplossen van ontwerpen met logische beslissingen, headless architecture en design tokens. Als onderdeel van Tokens Studio werkt hij intensief aan Generators en Resolvers en streeft hij naar innovatie en verbetering op het gebied van design systems.",
+        "en": "Marco-Christian Krenn is a Design System Architect from Austria who is passionate about solving design with logical decisions, headless architecture, and design tokens. As part of Tokens Studio, he’s deeply involved in working on Generators and Resolvers, striving to innovate and enhance the field of design systems."
+      },
+      "language": "en"
+    },
+    "JanSix": {
+      "name": "Jan Six",
+      "organisation": "GitHub",
+      "image": {
+        "src": "https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/jan-six-300x300.png",
+        "alt": "Jan Six"
+      },
+      "description": {
+        "nl": "Jan Six is een product designer bij GitHub. Hij heeft opensourcetools en plugins gebouwd die ontwerpers helpen om de vervelende en repetitieve onderdelen van hun werk te automatiseren. Met zijn opensourceproject Tokens Studio bouwt hij aan een open ecosysteem rond ontwerpbeslissingen, inclusief een Figma-plugin en een platform om ontwerpsystemen op schaal en geautomatiseerd te laten werken.",
+        "en": "Jan Six is a product designer at GitHub who has been building open-source tools and plugins that help designers automate the tedious and repetitive parts. With his open source project Tokens Studio he’s building an open ecosystem around design decisions, including a Figma plugin and a platform to help make design systems work at scale and in automated ways."
+      },
+      "language": "en"
     }
   }
 }

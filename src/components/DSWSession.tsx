@@ -36,7 +36,7 @@ export const DSWSession = ({
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading2 className={clsx(style['dsw-session__title'])}>{title}</Heading2>
     <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
-      {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
+      {speakers.map((speaker) => speaker.name).join(' & ')} ({organisation})
     </Paragraph>
     {children}
     {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (

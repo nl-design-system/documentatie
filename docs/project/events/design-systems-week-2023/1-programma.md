@@ -49,6 +49,14 @@ Jeffrey Lauwers van NL Design System vertelt kort over design tokens en laat zie
 
 </DSWSession>
 
+<DSWSession title="The future of design decisions" speakers={[speakers.JanSix, speakers.MarcoChristianKrenn]} organisation="GitHub / freelance" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions#event-booking">
+
+Marco-Christian Krenn en Jan Six presenteren samen _The future of design decisions_. Verdiep je in de overgang van design tokens naar dynamisch design. Deze overgang heeft gevolgen voor bijvoorbeeld toegankelijkheid en laat zien hoeveel impact designkeuzes hebben. Deze boeiende sessie onderstreept het essentiële verband tussen interne beslissingen en een single source of truth.
+
+Je krijgt een kijkje in de toekomst van design tokens en leert over alle mogelijkheden ervan.
+
+</DSWSession>
+
 <DSWSession title="Design system laten meegroeien met je organisatie" speakers={[speakers.ArashAzizi]} organisation="PostNL" signupLink="https://www.gebruikercentraal.nl/agenda/design-system-laten-meegroeien-met-je-organisatie#event-booking">
 
 Een design system is altijd in beweging, maar de manier waarop we eraan werken verandert naarmate het groeit. Sinds PostNL het design system Stamp introduceerde, heeft het zich ontwikkeld tot een belangrijk onderdeel van de digitale productontwikkeling. En met de volwassenheid komen er ook weer nieuwe vragen naar boven.

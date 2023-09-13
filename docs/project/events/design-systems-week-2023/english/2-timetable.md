@@ -15,13 +15,13 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Monday October 2th
 
-| Time (CEST) | Speaker         | Topic |
-| :---------- | :-------------- | :---- |
-| 16:30       | To be announced | -     |
+| Time (CEST) | Speaker(s)                      | Topic                                                                                                                             |
+| :---------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| 16:30       | Jan Six & Marco-Christian Krenn | <Link href="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions#english">The future of design decisions</Link> |
 
 ## Wednesday October 4rd
 
-| Time (CEST) | Speaker           | Topic                                                                                                                                               |
+| Time (CEST) | Speaker(s)        | Topic                                                                                                                                               |
 | :---------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 11:00       | Mu-An Chiou       | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#english">Design systems as public infrastructure</Link> |
 | 13:00       | Joe Lanman        | <Link href="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/#english">GOV.UK Prototype Kit</Link>                                  |
@@ -29,7 +29,7 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Thursday October 5th
 
-| Time (CEST) | Speaker         | Topic                                                                                                                                                                |
+| Time (CEST) | Speaker(s)      | Topic                                                                                                                                                                |
 | :---------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 13:00       | David Darnes    | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/#english">Web Components at Nordhealth design system</Link> |
 | 15:00       | Inayaili Léon   | <Link href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/#english">DesignOps at GitHub design system</Link>                   |
