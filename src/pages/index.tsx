@@ -51,7 +51,7 @@ export default function Home() {
         </HomepageHero>
         <div className="container">
           <CardGroup>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading2>Richtlijnen</Heading2>
@@ -68,7 +68,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading2>Componenten</Heading2>
@@ -85,7 +85,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading2>Voorbeelden</Heading2>
@@ -102,7 +102,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading2>Events</Heading2>
@@ -123,7 +123,7 @@ export default function Home() {
           <Heading2>Meedoen als...</Heading2>
 
           <CardGroup>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__organisatie.svg"
@@ -141,7 +141,7 @@ export default function Home() {
                 </Paragraph>
               </CardContent>
             </Card>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__leverancier.svg"
@@ -159,7 +159,7 @@ export default function Home() {
                 </Paragraph>
               </CardContent>
             </Card>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__developer.svg"
@@ -177,7 +177,7 @@ export default function Home() {
                 </Paragraph>
               </CardContent>
             </Card>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardIllustration background>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__designer.svg"
@@ -239,7 +239,7 @@ export default function Home() {
         <HomepageUpdates>
           <Heading2>Blijf op de hoogte</Heading2>
           <CardGroup>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading3>Nieuwsbrief</Heading3>
@@ -255,7 +255,7 @@ export default function Home() {
                 </Paragraph>
               </CardContent>
             </Card>
-            <Card component="section">
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading3>Heartbeat</Heading3>
@@ -275,7 +275,7 @@ export default function Home() {
           <Heading2>Blog</Heading2>
           <CardGroup appearance="large">
             {blogItems.map((item) => (
-              <BlogCard {...item} key={item.uuid} />
+              <BlogCard {...item} key={item.uuid} headingLevel={3} />
             ))}
           </CardGroup>
           <Paragraph>

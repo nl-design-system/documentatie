@@ -56,7 +56,7 @@
 .cardgroup__card--large {
   --cardgroup-card-flex-direction: row-reverse;
   --cardgroup-card-justify-content: space-between;
-  --cardgroup-card-padding-block-start: var(--cardgroup-card-large-padding-block-start, 24px);
+  --cardgroup-card-padding-block-start: var(--cardgroup-card-large-padding-block-start);
   --cardgroup-card-padding-block-end: var(--cardgroup-card-large-padding-block-end, 36px);
   --card-content-padding-block-end: 0;
 }
@@ -110,7 +110,6 @@
     --cardgroup-card-flex-direction: column;
     --cardgroup-card-padding-block-start: 0;
     --component-illustration-padding-inline: 0;
-    --card-content-padding-block-start: 24px;
   }
 
   .cardgroup--small {

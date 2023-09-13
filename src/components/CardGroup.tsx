@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Image, Link } from '@utrecht/component-library-react';
 import style from './CardGroup.module.css';
 
-type Appearance = 'small' | 'medium' | 'large';
+type Appearance = 'small' | 'medium' | 'large' | 'background';
 
 interface CardIllustrationProps extends HTMLAttributes<HTMLElement> {
   background?: boolean;
@@ -34,13 +34,7 @@ interface CardProps {
   component?: 'article' | 'section' | 'div';
 }
 
-export const Card = ({
-  href,
-  appearance = 'medium',
-  className,
-  component = 'div',
-  children,
-}: PropsWithChildren<CardProps>) => {
+export const Card = ({ href, appearance, className, component = 'div', children }: PropsWithChildren<CardProps>) => {
   const Wrapper = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => {
     if (component === 'article') return <article {...props} />;
     if (component === 'section') return <section {...props} />;

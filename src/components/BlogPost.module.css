@@ -1,0 +1,11 @@
+.blog-post {
+  --cardgroup-card-background-color: var(--nlds-blog-post-footer-background-color);
+  --cardgroup-card-padding-block-start: 16px;
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-data-list-item-key-font-size: 1.25rem;
+  --utrecht-data-list-item-key-font-weight: 600;
+}
+
+.blog-post__footer {
+  margin-block-start: 24px;
+}
