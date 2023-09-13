@@ -40,7 +40,7 @@ Binnen de community zijn designers bezig met verschillende projecten. Door als d
 
 ## Ontwerpprogramma’s
 
-Of je nu Sketch, Adobe XD, Framer, Paint gebruikt, er is geen afhankelijkheid als het gaat om ontwerpprogramma. Wel hebben het kernteam, en reeds aangesloten organisaties een voorkeur voor Figma.
+Of je nu Sketch, Adobe XD, Framer, of Paint gebruikt, er is geen afhankelijkheid als het gaat om ontwerpprogramma. Wel hebben het kernteam, en reeds aangesloten organisaties een voorkeur voor Figma.
 
 [Meer informatie over Figma structuur en gebruik](figma-structuur.mdx)
 
