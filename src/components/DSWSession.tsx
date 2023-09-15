@@ -3,9 +3,10 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
-import { Heading2, Image, Paragraph } from '@utrecht/component-library-react';
+import { Heading, Paragraph } from '@utrecht/component-library-react';
 
 interface DSWSessionProps {
+  headingLevel: 2 | 3 | 4 | 5 | 6;
   title: string;
   subtitle?: string;
   speakers: DSWSpeaker[];
@@ -27,6 +28,7 @@ interface DSWSpeaker {
 
 export const DSWSession = ({
   lang = 'nl',
+  headingLevel = 3,
   title,
   speakers,
   signupLink,
@@ -34,7 +36,9 @@ export const DSWSession = ({
   children,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
-    <Heading2 className={clsx(style['dsw-session__title'])}>{title}</Heading2>
+    <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
+      {title}
+    </Heading>
     <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
       {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
     </Paragraph>
