@@ -11,12 +11,12 @@ import { Link } from '@utrecht/component-library-react';
 
 ## maandag 2 oktober
 
-| Tijd  | Spreker                            | Onderwerp                                                                                                                                                                  | Taal                               |
-| :---- | :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| 11:00 | Olaf Schoelink en Peter Berrevoets | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system/">Toegankelijkheid verzekeren met NL Design System</Link>             | <abbr title="Nederlands">NL</abbr> |
-| 13:00 | Martijn Rietveld - OpenGemeenten   | <Link href="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system/">Waarom wij als leverancier werken met NL Design System</Link> | <abbr title="Nederlands">NL</abbr> |
-| 15:00 | Jeffrey Lauwers                    | <Link href="https://www.gebruikercentraal.nl/agenda/onze-componenten-jouw-huisstijl-over-design-tokens/">Design Tokens - onze componenten jouw huisstijl</Link>            | <abbr title="Nederlands">NL</abbr> |
-| 16:30 | Nog aan te kondigen                | -                                                                                                                                                                          | -                                  |
+| Tijd  | Spreker                          | Onderwerp                                                                                                                                                                  | Taal                               |
+| :---- | :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| 11:00 | Peter Berrevoets                 | <Link href="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system/">Toegankelijkheid verzekeren met NL Design System</Link>             | <abbr title="Nederlands">NL</abbr> |
+| 13:00 | Martijn Rietveld - OpenGemeenten | <Link href="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system/">Waarom wij als leverancier werken met NL Design System</Link> | <abbr title="Nederlands">NL</abbr> |
+| 15:00 | Jeffrey Lauwers                  | <Link href="https://www.gebruikercentraal.nl/agenda/onze-componenten-jouw-huisstijl-over-design-tokens/">Design Tokens - onze componenten jouw huisstijl</Link>            | <abbr title="Nederlands">NL</abbr> |
+| 16:30 | Jan Six en Marco-Christian Krenn | <Link href="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/">The future of design decisions</Link>                                                 | <abbr title="English">EN</abbr>    |
 
 ## dinsdag 3 oktober
 
