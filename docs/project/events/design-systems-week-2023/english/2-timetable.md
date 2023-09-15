@@ -29,11 +29,10 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Thursday October 5th
 
-| Time (CEST) | Speaker         | Topic                                                                                                                                                                |
-| :---------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 13:00       | David Darnes    | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/#english">Web Components at Nordhealth design system</Link> |
-| 15:00       | Inayaili Léon   | <Link href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/#english">DesignOps at GitHub design system</Link>                   |
-| 16:30       | To be announced | -                                                                                                                                                                    |
+| Time (CEST) | Speaker       | Topic                                                                                                                                                                |
+| :---------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 13:00       | David Darnes  | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/#english">Web Components at Nordhealth design system</Link> |
+| 15:00       | Inayaili Léon | <Link href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/#english">DesignOps at GitHub design system</Link>                   |
 
 </div>
 
