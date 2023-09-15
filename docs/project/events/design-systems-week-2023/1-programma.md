@@ -123,6 +123,14 @@ Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de gelee
 
 </DSWSession>
 
+<DSWSession title="Management-panel: ervaringen met NL Design System uit de praktijk" speakers={[speakers.JeffreyKlardie, speakers.RoelDerksen, speakers.VincentVanBeek, speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/management-panel-ervaringen-met-nl-design-system-uit-de-praktijk#event-booking">
+
+Er is tussen overheidsorganisaties enorm veel overlap in de online diensten die we bouwen. Van formulieren (van eenvoudig tot complex) tot zaaksystemen tot digitale processen voor burgers en ambtenaren. Al dit soort websites en apps willen we natuurlijk toegankelijk, inclusief en gebruiksvriendelijk opleveren.
+
+Daar is specialistische kennis voor nodig. Bij NL Design System bundelen we die kennis. We werken samen, wisselen onderzoek uit en besparen tijd door elkaars goed geteste werk op meerdere plekken in te zetten. Al meerdere organisaties ervaren dit in de praktijk, waardoor ze sneller meer toegankelijke, inclusieve digitale dienstverlening kunnen bieden aan burgers en leveranciers. In deze sessie delen ze graag hun ervaring!
+
+</DSWSession>
+
 ## Organisatie
 
 Design Systems Week wordt georganiseerd door het kernteam van NL Design System, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en <Link href="https://www.gebruikercentraal.nl">Gebruiker Centraal</Link>. Alle sessies zijn ook via Gebruiker Centraal bereikbaar <Link href="https://www.gebruikercentraal.nl/design-systems-week/">Design Systems Week 2023</Link>
