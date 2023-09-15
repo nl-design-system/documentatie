@@ -16,9 +16,15 @@ import { Link } from '@utrecht/component-library-react';
 
 # Design Systems Week 2023
 
-From **2 to 5 October**, NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the **how and why of design systems**. This year there will be talks both in Dutch and English.
+<Paragraph lead>
+    From 2 to 5 October NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the how and why of design systems. This year there will be talks both in Dutch and English.
+</Paragraph>
 
-This event is partially in Dutch, partially in English. On this page, you can find all sessions that will be in English, with sign up links to each.
+## Program
+
+These are all sessions that will be in English, with sign up links to each. You can also use the <Link href="/events/design-systems-week-2023/en/timetable">timetable</Link> to see when all sessions will be held.
+
+All sessions can be joined online for free. You will receive a link after sign-up. This link is valid for all talks during the week. Each talk will take about 30 minutes, including time for questions.
 
 <DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/#event-booking">
 
