@@ -43,7 +43,6 @@ import { Link } from '@utrecht/component-library-react';
 | 11:00 | Daniëlle Rameau - Sanoma Learning | <Link href="https://www.gebruikercentraal.nl/agenda/betere-toegankelijkheid-met-een-design-system/">Betere toegankelijkheid met een design system</Link>                     | <abbr title="Nederlands">NL</abbr> |
 | 13:00 | David Darnes - Nord Health        | <Link href="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/">Design Systems & Web Components: what works & what doesn’t</Link> | <abbr title="English">EN</abbr>    |
 | 15:00 | Inayaili Léon - GitHub            | <Link href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/">DesignOps: designing the API of design teams</Link>                        | <abbr title="English">EN</abbr>    |
-| 16:30 | Nog aan te kondigen               | -                                                                                                                                                                            | -                                  |
 
 ## Organisatie
 
