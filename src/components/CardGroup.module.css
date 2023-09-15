@@ -27,6 +27,12 @@
 }
 
 .cardgroup__card {
+  --utrecht-heading-2-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-4-margin-block-start: 0;
+  --utrecht-heading-5-margin-block-start: 0;
+  --utrecht-heading-6-margin-block-start: 0;
+
   box-sizing: border-box;
   display: flex;
   background-color: var(--cardgroup-card-background-color, var(--nlds-document-background-color, white));
@@ -37,6 +43,7 @@
   color: var(--cardgroup-card-color, var(--nlds-document-color));
   flex-direction: var(--cardgroup-card-flex-direction, column);
   justify-content: var(--cardgroup-card-justify-content, space-between);
+  align-content: var(--cardgroup-card-align-content, center);
   max-width: var(--cardgroup-card-max-width);
   min-height: var(--cardgroup-card-min-height);
   padding-block-start: var(--cardgroup-card-padding-block-start);
@@ -56,7 +63,7 @@
 .cardgroup__card--large {
   --cardgroup-card-flex-direction: row-reverse;
   --cardgroup-card-justify-content: space-between;
-  --cardgroup-card-padding-block-start: var(--cardgroup-card-large-padding-block-start);
+  --cardgroup-card-padding-block-start: var(--cardgroup-card-large-padding-block-start, 36px);
   --cardgroup-card-padding-block-end: var(--cardgroup-card-large-padding-block-end, 36px);
   --card-content-padding-block-end: 0;
 }

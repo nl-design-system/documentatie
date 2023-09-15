@@ -6,10 +6,6 @@
   text-transform: lowercase;
 }
 
-.component-card__title {
-  --utrecht-heading-3-margin-block-start: 0;
-}
-
 @media screen and (max-width: 768px) {
   .component-card {
     --component-illustration-svg-max-height: none;
