@@ -590,3 +590,8 @@ img {
   white-space: nowrap;
   width: 1px;
 }
+
+abbr[title] {
+  text-decoration: none;
+  pointer-events: none;
+}
