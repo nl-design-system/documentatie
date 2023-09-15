@@ -13,7 +13,7 @@ import { SessionTable } from "../../../../../src/components/SessionTable";
 
 <div lang="en">
 
-# Timetable
+# Design Systems Week Timetable
 
 <Paragraph lead>
     From 2 to 5 October NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the how and why of design systems. This year there will be talks both in Dutch and English. For convenience we also have a <Link href="/events/design-systems-week-2023/en/program">program of all talks that will be in English</Link>.
