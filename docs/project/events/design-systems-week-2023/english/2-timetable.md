@@ -15,9 +15,9 @@ These are all timeslots with talks in English, <Link href="/events/design-system
 
 ## Monday October 2th
 
-| Time (CEST) | Speaker         | Topic |
-| :---------- | :-------------- | :---- |
-| 16:30       | To be announced | -     |
+| Time (CEST) | Speaker                           | Topic                                                                                                                      |
+| :---------- | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| 16:30       | Jan Six and Marco-Christian Krenn | <Link href="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/">The future of design decisions</Link> |
 
 ## Wednesday October 4rd
 
