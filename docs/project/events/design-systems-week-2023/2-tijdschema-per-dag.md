@@ -11,7 +11,7 @@ import { Icon, Link, UnorderedList, UnorderedListItem } from "@utrecht/component
 import { IconUser, IconUsers } from "@tabler/icons-react";
 import { SessionTable } from "../../../../src/components/SessionTable";
 
-# Tijdschema
+# Design Systems Week Tijdschema
 
 NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 
