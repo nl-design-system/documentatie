@@ -2,15 +2,20 @@
   margin-block: 2em;
 }
 
-.dsw-session:not(:last-child) {
-  padding-block-end: 1em;
+.dsw-session {
+  padding-block-end: 2.5em;
   border-block-end: 4px dotted #ccc;
   margin-block-end: 1em;
+}
+
+.dsw-session:first-of-type {
+  border-block-start: 4px dotted #ccc;
 }
 
 .dsw-session__title {
   font-size: 1.5em;
   --utrecht-heading-2-margin-block-end: 0.1em;
+  margin-top: inherit !important;
 }
 
 .dsw-session__subtitle {
