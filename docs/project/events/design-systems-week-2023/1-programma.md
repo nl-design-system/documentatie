@@ -15,9 +15,11 @@ import { Link } from '@utrecht/component-library-react';
 
 NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 
-Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
+Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week of voor losse sessies. Na aanmelding ontvang je een link die voor alle sessies van de week gebruikt wordt.
 
-Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week en volg zo veel of zo weinig sessies als je wil!
+## Het programma
+
+Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
 
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system#event-booking">
 
