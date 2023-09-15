@@ -197,6 +197,42 @@
         "en": "Jan Six is a product designer at GitHub who has been building open-source tools and plugins that help designers automate the tedious and repetitive parts. With his open source project Tokens Studio he’s building an open ecosystem around design decisions, including a Figma plugin and a platform to help make design systems work at scale and in automated ways."
       },
       "language": "en"
+    },
+    "JeffreyKlardie": {
+      "name": "Jeffrey Klardie",
+      "organisation": "Gemeente Amsterdam",
+      "image": {
+        "src": "https://media.licdn.com/dms/image/C4D03AQGre1V5ipaP2w/profile-displayphoto-shrink_400_400/0/1662580345994?e=1700092800&v=beta&t=LBuMfPSDzVTgCrQxY9zuaAjM4hQhrO2Si6rRqdQZ_0w",
+        "alt": "Jeffrey Klardie"
+      },
+      "description": {
+        "nl": "Jeffrey Klardie is tech lead Vakgroep Software Ontwikkeling bij de gemeente Amsterdam"
+      },
+      "language": "nl"
+    },
+    "RoelDerksen": {
+      "name": "Roel Derksen",
+      "organisation": "RIVM",
+      "image": {
+        "src": "https://media.licdn.com/dms/image/C4E03AQE966BerwDdKQ/profile-displayphoto-shrink_800_800/0/1574854722636?e=1700092800&v=beta&t=lugdDNZdQGbfRL9UjQJq-0JJIGxZuT4jNY_vorZ1utg",
+        "alt": "Roel Derksen"
+      },
+      "description": {
+        "nl": "Roel Derksen is afdelingshoofd Ontwikkeling bij het Rijksinstituut voor Volksgezondheid en Milieu (RIVM)"
+      },
+      "language": "nl"
+    },
+    "VincentVanBeek": {
+      "name": "Vincent van Beek",
+      "organisation": "Gemeente Den Haag",
+      "image": {
+        "src": "https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/07/Vincent-van-Beek-Den-Haag-150x150.png",
+        "alt": "Vincent van Beek"
+      },
+      "description": {
+        "nl": "Vincent van Beek is chief product owner Online bij de gemeente Den Haag"
+      },
+      "language": "nl"
     }
   }
 }
