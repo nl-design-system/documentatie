@@ -103,55 +103,59 @@ Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde
 
 ## Naamgeving
 
-## Naamgeving
 Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. NL Design System componenten moeten deze standaard design tokens gebruiken. Zo is een component herbruikbaar voor alle verschillende thema's.
 
 ### Volgorde
+
 Deze naamgeving bestaat uit lagen in een afgesproken volgorde en maakt gebruik van de [BEM methodologie](https://getbem.com/).
 
 1. Prefix (verplicht)
 2. Block (verplicht)
 3. Element (optioneel)
-4. Modifier (optioneel) 
+4. Modifier (optioneel)
 5. Property (verplicht)
 
 #### 1. Prefix
+
 Naam van de organisatie, bijvoorbeeld `utrecht` of `denhaag`. De prefix `nl` wordt alleen gebruikt door het NL Design System kernteam. Elk team kiest een eigen prefix, met alleen de letters `a` tot `z` en zonder koppelstreepje.
 
 #### 2. Block
+
 Naam van component, bijvoorbeeld `button` of `link`.
 
-
 #### 3. Element
+
 Onderdeel van een component, bijvoorbeeld `icon` of `label`.
 
 #### 4. Modifier
+
 Variant of state van een component, bijvoorbeeld...
 
 - Appearance
-   - `large`
-   - `primary-action`
-   - `subtle`
-   - `negative`
-   - etc.
+  - `large`
+  - `primary-action`
+  - `subtle`
+  - `negative`
+  - etc.
 - Component state
-   - `checked`
-   - `disabled`
-   - `indeterminate`
-   - `invalid`
+  - `checked`
+  - `disabled`
+  - `indeterminate`
+  - `invalid`
 - User action state
-   - `active`
-   - `focus`
-   - `focus-visible`
-   - `hover`
+  - `active`
+  - `focus`
+  - `focus-visible`
+  - `hover`
 
 Deze 'modifiers' kunnen gecombineerd worden. Hou hier de volgorde Appearance, Component state en User action state aan. Bijvoorbeeld: `large.checked.active`.
 
 #### 5. Property
+
 Naam van de visuele eigenschap waarvoor je een ontwerpkeuze kan maken. Bijvoorbeeld: `color` of `font-weight`.
 
-
 ### Voorbeeld
+
 Een voorbeeld van enkele design tokens voor een button component.
 
 - voorbeeld.button.border-radius
@@ -234,10 +238,10 @@ En dezelfde design tokens in een JSON opmaak. Er zijn geen waardes ingesteld.
     }
   }
 }
-
 ```
 
 ### Schrijfwijze en advies
+
 Gebruik voor alle onderdelen alleen kleine letters, cijfers of een koppelstreepje.
 
 Basseer de naam van het component (block) of onderdeel van het component (element), indien mogelijk, op herkenbare termen uit webstandaarden. Liever termen uit HTML, CSS, SVG en WAI-ARIA dan uit 'UI frameworks' die op het moment populair zijn.
