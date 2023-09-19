@@ -18,103 +18,89 @@ import { StatusVisual } from "/src/components/StatusVisual";
 
 # Estafettemodel
 
-Het estafettemodel van NL Design System is een aanpak om samen de beste en meest bruikbare componenten, richtlijnen en patronen te maken.
+Het estafettemodel van NL Design System is een aanpak om samen de beste en meest bruikbare componenten, patronen en richtlijnen te maken.
 
-NL Design System is een design system in wording: de community doet hun best om de componenten die ze zelf nodig hebben herbruikbaar te maken voor andere teams. Developers en Designers gebruiken hier voor de NL Design System architectuur met componenten die design tokens gebruiken voor de huisstijl. Ander organisaties kunnen dan de component hergebruiken, in combinatie met een thema bestand voor hun eigen huisstijl.
+Om niet telkens "component, patroon of richtlijn" te zeggen noemen we dit samen een "onderdeel" van NL Design System.
 
-De beste en best herbruikbare componenten gaat het kernteam verzamelen en in het [componenten overzicht](/componenten/README.mdx) publiceren. In dit overzicht kunnen componenten verschillende statussen hebben.
-
-## Van Help Wanted naar Hall of Fame
+Een nieuw onderdeel volgt het estafette model en beweegt zich in een samenwerking tussen het kernteam en de community van "Help Wanted" naar "Community" naar "Candidate" en beland als hij helemaal af en herbruikbaar is in de "Hall of Fame".
 
 <StatusVisual />
 
-## Definition of Done
+Elke status heeft zijn eigen doelen en voor elke toevoeging aan het design system hebben we een Definition of Done dat valideert of we de doelen van een status hebben gehaald. Hieronder beschrijven we deze per status.
 
-Het NL Design System kent voor elke component vier verschillende statussen: 'Help wanted', 'Community', 'Candidate' en 'Hall of Fame'.
-Voor elk van deze statussen kun je een Definition of Done opstellen, waarbij het ultime doel van de 'Hall of Fame' status helemaal af is. Een 'Hall of Fame' component moet dus aan alle checks voldoen van 'Help wanted' tot en met 'Hall of Fame'.
+## Help Wanted
 
-### Help wanted
+Klaar om van de backlog opgepakt te worden door de community.
 
-Dit component bestaat nog niet, maar de rationale is duidelijk, elke organisatie die hem nodig heeft kan hem ontwikkelen volgens NL Design System architectuur:
+Bestaat nog niet, maar de rationale is duidelijk, elke organisatie die hem nodig heeft kan het onderdeel ontwikkelen volgens NL Design System architectuur.
 
-- Staat in de publieke Backlog van NL Design System
-- Er is een rationale opgesteld wat het component is en waarom het nodig is
-- Kernteam en community verwachten dat het component voor meerdere organisaties inzetbaar kan zijn
-- De rationale is onderbouwd door gebruikersonderzoek (eigen of van andere design systems)
-- De rationale is door het kernteam gereviewed
+### Doelen
 
-### Community
+- Teams aan elkaar koppelen die hetzelfde willen.
+- In een vroeg stadium acceptatiecriteria vastleggen met kennis uit de community en het kernteam.
+- Nieuwe ideeën kunnen meegenomen worden door de community wanneer zij gebruikersonderzoek doen.
+- Bewijs verzamelen dat een onderdeel door meerdere organisaties en producten gebruikt kan worden.
+- Zeker stellen dat een onderdeel aan de toegankelijkheidseisen kan voldoen en gebruiksvriendelijk kan zijn. Anders zal het als "Discouraged" aangemerkt worden.
 
-Dit component bestaat in de community, op één of meer plekken. Om bij NL Design System als 'Community component' genoemd te worden moet het component naast alle 'Help wanted' criteria aan de volgende voorwaarden voldoen:
+## Community
 
-- Component implementatie voldoet aan de rationale
-- Component is geclaimed door de organisatie in de publieke backlog
-- Component heeft de EUPL-1.2 licentie
-- Component UX en A11y documentatie heeft de Creative Commons 0 licentie (CC0)
-- Component API's zijn geprefixed met de prefix van de verantwoordelijke organisatie
-- Codebase van de component gebruikt linting en automatische code-formatting zoals Prettier
-- Component is vindbaar op de NL Design System website
-- Component staat in Storybook van de verantwoordelijke organisatie
-- Component is opgenomen in de Storybook met alle NL Design System thema's
-- Component is beschikbaar in de Figma bibliotheek van de verantwoordelijke organisatie
-- Component is besproken in het UX-overleg en/of tijdens de heartbeat en is klaar om door de community gebruikt te worden
-- Component voldoet aan de Definition of Done van de verantwoordelijke organisatie
-- Visuele regressietests zijn beschikbaar voor het component in de thema-storybook
+Door de community gebouwd volgens NL Design System richtlijnen.
 
-### Candidate
+Bestaat in de community, op één of meer plekken en voldoet aan de checklist tot en met "Community".
 
-Dit component is opgenomen in de `@nl-design-system-unstable` organisatie. Het kernteam verwacht dat het component uiteindelijk een Hall of Fame status krijgt, maar kan nog niet garanderen dat API's niet wijzigen of er onverhoopt een ander vergelijkbaar component in de plaats komt.
-Het component moet mogelijk nog extra goed getest worden en extra stabiel worden gemaakt.
-Omdat het component wel door het kernteam onderhouden wordt voldoet het naast de meeste Community DoD eisen al wel aan veel meer criteria voor stabiel hergebruik:
+### Doelen
 
-- Community component is ingezet door 2 of meer organisaties
-- Figma component in de NL Design System bibliotheek is in lijn met het component in code
-- Aliassen van (niet) geimplementeerde alternatieve componenten zijn vastgelegd in documentatie
-- Verwijzing naar extern gebruikersonderzoek die tot de keuze van dit component leiden
-- Component heeft documentatie in Storybook over hoe het te gebruiken
-- Accessibility/inclusie toolkit documentatie is beschikbaar voor de overwegingen die op dit component van toepassing zijn
-- Component is geschikt voor internationalisatie
-- Component kan omgaan met verschillende soorten content, zoals heel veel of juist heel weinig tekst etc.
-- Component implementatie is op toegankelijkheid getoetst door leden van het kernteam
-- Semantiek van het component is goedgekeurd door het kernteam
-- Design tokens en API's zijn geprefixed met `nl`
-- Design tokens volgen conventies
-- Hergebruik van logische `common` tokens is geïmplementeerd om theming makkelijk te houden.
-- API volgt conventies
-- NPM scope: `@nl-design-system-unstable`
-- Het component heeft geen organisatie specifieke API's meer, alle API's zijn gebaseerd op een gemeenschappelijke usecase
-- Alle design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties
-- Het component is geen monster component waar de documentatie of API's veel te complex zijn. Als nodig wordt de code van het community component opgeknipt en/of versimpeld
-- Component werkt in meerdere thema's
-- Component heeft regressietests voor ten minste 2 thema's
-- Changelog wordt gegenereerd
-- Component is in een heartbeat, andere publieke demo of nieuwsbrief getoond
+- Teams kunnen met vertrouwen een onderdeel van elkaar gebruiken.
+- Teams kunnen zelfstandig aan de slag, kernteam vormt geen bottleneck.
+- Teams kunnen concurrerende versies hebben van hetzelfde onderdeel.
+- Validatie dat een onderdeel door meerdere organisaties en producten gebruikt wordt.
+- Teams kunnen op elkaars onderdeel door ontwikkelen zodat de overlap duidelijk wordt voor doorontwikkeling naar "Candidate".
+- Innovatie op bestaande NL Design System "Candidate" of "Hall of Fame" mogelijk door "Community" uitbreiding op het bestaande onderdeel.
 
-### Hall of fame
+## Candidate
 
-Een component met deze status is bewezen door gebruikname in productie bij ten minste twee verschillende organisaties. Het component is daarmee in gebruik getest, zowel door developers als door gebruikers en heeft een toegankelijkheids audit succesvol doorlopen.
-Het gebruiksvriendelijk en toegankelijk gebruik van het component in context is goed gedocumenteerd, zodat designers en developers in staat zijn het component op de juiste manier in de context van hun eigen project in te zetten. Ook kan je ervan uitgaan dat de API's van het component, zoals Design Tokens en naamgeving stabiel blijven en worden updates vanaf nu voorzien van duidelijke changelogs en semantische versies die `breaking changes` goed communiceren.
+Voorstel voor een hall-of-fame onderdeel, maar input en documentatie worden nog verzameld.
 
-- Toegankelijk volgens audit
-- algemeen genoeg
-- Richtlijnen voor design tokens invullen
-- Richtlijnen voor toegankelijkheid inzetten
-- Documentatie: Do's en don'ts
-- Documentatie eventueel slecht gebruik met alternatieve component
-- Richtlijnen voor redacteuren
-- meerdere organisaties zijn tevreden
-- meerdere organisaties hebben component in toegankelijkheids audit getest
-- geen known issues voor a11y
-- Risico's m.b.t. beveiliging (security) zijn gedocumenteerd
-- Risico's m.b.t. privacy (AVG) zijn gedocumenteerd
-- npm scope: @nl-design-system
-- Getest met afnemers van design system: designer
-- Getest met afnemers van design system: developer
-- Getest met afnemers van design system: redacteur
-- Community (2+ organisaties) is geswitcht van eigen naar candidate component
-- Semver is goed geregeld
-- Semver linting is 'waterdicht'
-- Figma component is geversioneerd
-- Documentatie over updaten van het Figma component is compleet
-- Webcomponent of verschillende framework componenten beschikbaar
-- Component logica is opgenomen in regressietests
+Voldoet aan de checklist tot en met "Candidate". Het kernteam verwacht dat het uiteindelijk een "Hall of Fame" status krijgt. We verwachten dat er nog wijzigen kunnen zijn. Het onderdeel moet nog goed getest worden en stabiel worden gemaakt.
+
+### Doelen
+
+- Teams kunnen met vertrouwen het onderdeel van NL Design System gebruiken.
+- Gedeeld ownership tussen kernteam en meerdere andere teams.
+- Voorstel voor een onderdeel zonder controversiële delen. Verschillende ideeën in de community teruggebracht tot één gemene deler.
+- Controversiële delen met "Community" status kunnen in de community blijven bestaan of worden aangepast naar een aanvulling op het nieuwe "Candidate" onderdeel.
+- Zichtbaarheid geven tijdens "request for comments" periode. Zo kunnen essentiële aanvulingen en aanpassingen getest worden voordat het onderdeel volledig stabiel moet zijn.
+- Bruikbaar voor meeste huisstijlen in de publieke sector.
+- Naamgeving in lijn met conventies van bestaande NL Design System "Candidate" en "Hall of Fame" onderdelen.
+- Robuust maken. Onderdeel kan in verschillende omgevingen ingezet worden en heeft een duidelijke beschrijving wanneer het van toepassing is.
+- Onderdeel is behoorlijk stabiel en we verwachten dat er vanaf nu nog weinig veranderingen nodig zijn.
+- Best effort op toegankelijkheid. Specialisten uit het kernteam hebben het onderdeel gevalideerd en eventuele documentatie en verbeteringen zijn toegevoegd.
+- Voor componenten: Samenwerking tussen developers en designers is mogelijk gemaakt
+
+## Hall of Fame
+
+Stabiel NLDS onderdeel met garanties voor herbruikbaarheid, toegankelijkheid en stabiliteit.
+
+Is bewezen door gebruik in productie bij ten minste twee verschillende organisaties. Het onderdeel is daarmee in gebruik getest, zowel door gebruikers van het design system als door eindgebruikers. Het onderdeel heeft een toegankelijkheidsaudit succesvol doorlopen. Updates worden vanaf nu voorzien van duidelijke changelogs en semantische versies die breaking changes goed communiceren.
+
+### Doelen
+
+- Teams kunnen met garanties het onderdeel van NL Design System gebruiken.
+- Goed gedocumenteerd.
+- Veilig om vaak te updaten.
+- Goede versionering.
+- Grondig getest.
+- Makkelijk in gebruik.
+- Garantie op toegankelijkheid.
+- Garantie op bruikbaarheid.
+- Voor componenten zijn automatische tests beschikbaar om regressies te voorkomen.
+- Richtlijnen zijn onderbouwd met referenties naar gebruikersonderzoek en toegankelijkheidsaudits.
+
+## Discouraged
+
+Op basis van gebruikersonderzoek of toegankelijkheids richtlijnen is dit onderdeel af te raden. Het zal dus niet opgenomen worden in een van de NL Design System estafette statussen. Indien mogelijk is een alternatief is aangewezen.
+
+### Doelen
+
+- Voorkomen dat een onderdeel opgenomen wordt in NL Design System waarvan we al weten dat het niet bijdraagt aan inclusieve dienstverlening.
+- Documenteren om mensen te informeren en waarschuwen voor een ongebruiksvriendelijk en ontoegankelijk onderdeel.
