@@ -1,5 +1,9 @@
 .component-card {
   --cardgroup-card-mobile-max-width: 300px;
+  --cardgroup-card-padding-block-start: 36px;
+  --cardgroup-card-padding-block-end: 36px;
+  --card-content-padding-block-end: 0;
+  --card-content-padding-block-start: 0;
 }
 
 .component-name {
