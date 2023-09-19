@@ -1,6 +1,7 @@
 .component-illustration {
   margin: 0;
   padding-inline: var(--component-illustration-padding-inline, 24px);
+  display: inline;
 }
 
 .component-illustration__svg {
