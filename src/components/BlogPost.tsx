@@ -1,6 +1,15 @@
 import React from 'react';
 import useGlobalData from '@docusaurus/useGlobalData';
-import { DataList, DataListItem, DataListKey, DataListValue, Heading3, Link } from '@utrecht/component-library-react';
+import {
+  DataList,
+  DataListItem,
+  DataListKey,
+  DataListValue,
+  HTMLContent,
+  Heading1,
+  Heading2,
+  Link,
+} from '@utrecht/component-library-react';
 import parse from 'html-react-parser';
 import NotFound from '@theme/NotFound';
 import Layout from '@theme/Layout';
@@ -34,12 +43,12 @@ export const BlogPost = () => {
             { label: item.title },
           ]}
         />
-        <Heading3 id="b53e1d37-b010-40b6-b481-80128fcc2c70">{item.title}</Heading3>
-        <div>{parse(item['content:encoded'])}</div>
+        <Heading1 id="b53e1d37-b010-40b6-b481-80128fcc2c70">{item.title}</Heading1>
+        <HTMLContent className={clsx(styles['blog-post__html-content'])}>{parse(item['content:encoded'])}</HTMLContent>
         <footer aria-labelledby="b53e1d37-b010-40b6-b481-80128fcc2c70" className={styles['blog-post__footer']}>
           <Card component="section">
             <CardContent>
-              <Heading3>Over dit artikel</Heading3>
+              <Heading2>Over dit artikel</Heading2>
               <DataList>
                 <DataListItem>
                   <DataListKey>Auteur</DataListKey>
