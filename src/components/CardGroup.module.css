@@ -63,9 +63,6 @@
 .cardgroup__card--large {
   --cardgroup-card-flex-direction: row-reverse;
   --cardgroup-card-justify-content: space-between;
-  --cardgroup-card-padding-block-start: var(--cardgroup-card-large-padding-block-start, 36px);
-  --cardgroup-card-padding-block-end: var(--cardgroup-card-large-padding-block-end, 36px);
-  --card-content-padding-block-end: 0;
 }
 
 .card__link {
@@ -91,7 +88,7 @@
 
 .card__content {
   padding-inline: var(--card-content-padding-inline, 24px);
-  padding-block-start: var(--card-content-padding-block-start);
+  padding-block-start: var(--card-content-padding-block-start, 36px);
   padding-block-end: var(--card-content-padding-block-end, 36px);
   display: flex;
   flex-direction: column;
