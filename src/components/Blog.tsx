@@ -52,9 +52,6 @@ export const BlogCard = ({ uuid, creator, title, content, headingLevel, isoDate 
 export const Blog = () => {
   const globalData = useGlobalData();
   const blogItems = globalData['rss-blog']['default']['blogItems'];
-
-  console.log(blogItems);
-
   const { siteConfig } = useDocusaurusContext();
 
   return (
