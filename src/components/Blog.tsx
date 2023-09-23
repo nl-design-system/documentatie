@@ -18,36 +18,39 @@ interface BlogCardProps extends HTMLAttributes<HTMLElement> {
   creator: string;
   headingLevel: 2 | 3 | 4 | 5 | 6;
   isoDate: string;
+  path: string;
 }
 
-export const BlogCard = ({ uuid, creator, title, content, headingLevel, isoDate }: BlogCardProps) => (
-  <Card key={uuid} appearance="large" className={style['blog-card']}>
-    <CardContent>
-      <Heading level={headingLevel}>
-        <Link to={`/project/blog/${uuid}`} className={clsx('utrecht-link', style['blog-card__header-link'])}>
-          {title}
-        </Link>
-      </Heading>
-      <HTMLContent>{parse(content)}</HTMLContent>
-      <BadgeList>
-        <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--author'])}>
-          <Icon role="presentational">
-            <IconUser />
-          </Icon>
-          <span className="visually-hidden">auteur:</span>
-          {creator}
-        </DataBadge>
-        <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--date'])}>
-          <Icon role="presentational">
-            <IconCalendar />
-          </Icon>
-          <span className="visually-hidden">publicatie datum:</span>
-          <time dateTime={isoDate}>{new Intl.DateTimeFormat('nl-NL').format(new Date(isoDate))}</time>
-        </DataBadge>
-      </BadgeList>
-    </CardContent>
-  </Card>
-);
+export const BlogCard = ({ uuid, creator, title, path, content, headingLevel, isoDate }: BlogCardProps) => {
+  return (
+    <Card key={uuid} appearance="large" className={style['blog-card']}>
+      <CardContent>
+        <Heading level={headingLevel}>
+          <Link to={path} className={clsx('utrecht-link', style['blog-card__header-link'])}>
+            {title}
+          </Link>
+        </Heading>
+        <HTMLContent>{parse(content)}</HTMLContent>
+        <BadgeList>
+          <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--author'])}>
+            <Icon role="presentational">
+              <IconUser />
+            </Icon>
+            <span className="visually-hidden">auteur:</span>
+            {creator}
+          </DataBadge>
+          <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--date'])}>
+            <Icon role="presentational">
+              <IconCalendar />
+            </Icon>
+            <span className="visually-hidden">publicatie datum:</span>
+            <time dateTime={isoDate}>{new Intl.DateTimeFormat('nl-NL').format(new Date(isoDate))}</time>
+          </DataBadge>
+        </BadgeList>
+      </CardContent>
+    </Card>
+  );
+};
 
 export const Blog = () => {
   const globalData = useGlobalData();

@@ -21,11 +21,16 @@ import styles from './BlogPost.module.css';
 import clsx from 'clsx';
 import { Card, CardContent } from './CardGroup';
 
+const trimTrailingSlash = (path: string) => path.replace(/\/$/, '');
+
+// Only trimTrailingSlash for now, but could contain more normalizing steps
+const normalizePath = (path: string) => trimTrailingSlash(path);
+
 export const BlogPost = () => {
   const globalData = useGlobalData();
   const { pathname } = useLocation();
-  const uuid = pathname.split('/').pop();
   const blogItems = globalData['rss-blog']['default']['blogItems'];
+  const item = blogItems.find((item) => normalizePath(item.path) === normalizePath(pathname));
   const headingID = v4();
 
   if (!item) {

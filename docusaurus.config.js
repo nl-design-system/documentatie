@@ -4,6 +4,7 @@
 const navbar = require('./navConfig');
 const footer = require('./footerConfig');
 const Parser = require('rss-parser');
+const slug = require('limax');
 
 const getBlog = () => new Parser().parseURL('https://www.gebruikercentraal.nl/category/nl-design-system/feed/');
 
@@ -26,7 +27,8 @@ const config = {
           return await getBlog().then((blog) =>
             blog.items.map((item) => {
               const [_, uuid] = item.guid.match(/p=(.*)/);
-              return { ...item, uuid };
+              const path = `/project/blog/${slug(item.title)}`;
+              return { ...item, uuid, path };
             }),
           );
         },
@@ -41,15 +43,10 @@ const config = {
             exact: true,
           });
 
-          addRoute({
-            path: '/project/blog/',
-            component: '@site/src/components/BlogPost.tsx',
-          });
-
           // @ts-ignore
-          content.map(({ uuid }) => {
+          content.map(({ path }) => {
             addRoute({
-              path: `/project/blog/${uuid}`,
+              path,
               component: '@site/src/components/BlogPost.tsx',
               exact: true,
             });
@@ -121,7 +118,7 @@ const config = {
     announcementBar: {
       id: 'dsw_announcement',
       content:
-        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="/events/design-systems-week-2023/programma">bekijk de sessies tot nu toe</a>',
+        'Design Systems Week 2023 komt eraan! <a class="utrecht-link" target="_blank" rel="noopener noreferrer" href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking">Meld je aan</a> of <a class="utrecht-link" href="/events/design-systems-week-2023/programma">bekijk de sessies</a>',
       backgroundColor: '#148839',
       textColor: '#fff',
       isCloseable: false,
