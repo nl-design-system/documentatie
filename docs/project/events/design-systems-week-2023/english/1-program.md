@@ -9,7 +9,7 @@ slug: /events/design-systems-week-2023/en/program
 ---
 
 import DSWSession from '../../../../../src/components/DSWSession'
-import { speakers } from '../speakers.json'
+import speakers from '../speakers.json'
 import { Link } from '@utrecht/component-library-react';
 
 <div lang="en">
