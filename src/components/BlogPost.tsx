@@ -15,6 +15,7 @@ import NotFound from '@theme/NotFound';
 import Layout from '@theme/Layout';
 import { Breadcrumbs } from '@site/src/components/Breadcrumbs';
 import { useLocation } from '@docusaurus/router';
+import { v4 } from 'uuid';
 
 import styles from './BlogPost.module.css';
 import clsx from 'clsx';
@@ -25,7 +26,7 @@ export const BlogPost = () => {
   const { pathname } = useLocation();
   const uuid = pathname.split('/').pop();
   const blogItems = globalData['rss-blog']['default']['blogItems'];
-  const item = blogItems.find((item) => item.uuid === uuid);
+  const headingID = v4();
 
   if (!item) {
     return <NotFound />;
@@ -43,9 +44,9 @@ export const BlogPost = () => {
             { label: item.title },
           ]}
         />
-        <Heading1 id="b53e1d37-b010-40b6-b481-80128fcc2c70">{item.title}</Heading1>
+        <Heading1 id={headingID}>{item.title}</Heading1>
         <HTMLContent className={clsx(styles['blog-post__html-content'])}>{parse(item['content:encoded'])}</HTMLContent>
-        <footer aria-labelledby="b53e1d37-b010-40b6-b481-80128fcc2c70" className={styles['blog-post__footer']}>
+        <footer aria-labelledby={headingID} className={styles['blog-post__footer']}>
           <Card component="section">
             <CardContent>
               <Heading2>Over dit artikel</Heading2>
