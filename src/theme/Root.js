@@ -16,7 +16,7 @@ import { Document } from '@utrecht/component-library-react';
 
 // Default implementation, that you can customize
 function Root({ children }) {
-  return <Document className="nlds-theme">{children}</Document>;
+  return <Document className="nlds-theme main-layout">{children}</Document>;
 }
 
 export default Root;

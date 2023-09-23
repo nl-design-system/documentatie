@@ -221,9 +221,35 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .nlds-theme {
   min-height: 100vh;
-  display: grid;
   align-content: inherit;
   font-weight: 400;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-areas:
+    "skip-link"
+    "announcement-bar"
+    "header"
+    "main-content"
+    "footer";
+  grid-template-rows: auto auto auto 1fr auto;
+}
+
+[aria-label="Ga naar hoofdinhoud"] {
+  grid-area: skip-link;
+}
+
+.navbar {
+  grid-area: header;
+}
+
+.main-wrapper {
+  grid-area: main-content;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .mega-footer-link,
