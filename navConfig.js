@@ -44,7 +44,7 @@ module.exports = {
     },
     {
       type: 'doc',
-      docId: 'onderzoek',
+      docId: 'onderzoek/README',
       position: 'left',
       label: 'Onderzoek',
       className: 'utrecht-link',

@@ -1,8 +1,8 @@
 ---
-title: Gebruikers onderzoek - Overzicht
+title: Gebruikers onderzoek
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Overzicht
+sidebar_label: Gebruikers onderzoek
 sidebar_position: 1
 pagination_label: Overzicht
 description: Gebruikers onderzoek
@@ -13,14 +13,12 @@ keywords:
 
 # Gebruikers onderzoek
 
-In de community wordt veel gebruikersonderzoek gedaan. Omdat je veel van elkaars onderzoeksresultaten kan leren delen we hier de onderzoeks rapporten.
+In de community wordt veel gebruikersonderzoek gedaan. Omdat je veel van elkaars onderzoeksresultaten kan leren en onderzoeken over hetzelfde onderwerp kan vergelijken is de NL Design System community begonnen met het verzamelen en publiceren op een toegankelijke manier.
+
+De onderzoeken die al gedeeld zijn kan je vinden op [gebruikersonderzoeken.nl](http://gebruikersonderzoeken.nl)
+
+Heb jij ook gebruikersonderzoek gedaan en wil je de uitkomsten delen? Dat kan via een issue op [gebruikersonderzoeken op GitHub](https://github.com/nl-design-system/gebruikersonderzoeken).
 
 ## Lopend onderzoek
 
 Ga je onderzoek doen, ben je bezig van het uitwerken van resultaten of heb je een design waarvan je je afvraagt of iemand daar al onderzoek naar heeft gedaan? Dan kun je hiervoor de [discussies op GitHub](https://github.com/nl-design-system/backlog/discussions) gebruiken.
-
-## Onderzoek uit de community
-
-### Utrecht
-
-- [Product Dienst Status component](https://nl-design-system.github.io/utrecht/docs/tmp/gebruikersonderzoek/research_0022)

@@ -56,21 +56,7 @@ const sidebars = {
       items: require('./docs/voorbeelden/sidebar'),
     },
   ],
-  onderzoek: [
-    {
-      type: 'category',
-      label: 'Onderzoek',
-      collapsible: false,
-      className: 'sidebar__main-category',
-      link: {
-        type: 'generated-index',
-        title: 'Onderzoek',
-        slug: 'onderzoek',
-        keywords: ['Onderzoek', 'overzicht'],
-      },
-      items: require('./docs/onderzoek/sidebar'),
-    },
-  ],
+  onderzoek: [require('./docs/onderzoek/sidebar')],
   project: [
     {
       type: 'category',
