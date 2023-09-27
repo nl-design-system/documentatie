@@ -1,10 +1,10 @@
 ---
-title: Inclusie en toegankelijkheid
+title: Inclusieve formulieren
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie
+sidebar_label: Inclusieve formulieren
 sidebar_position: 1
-pagination_label: Formulieren - Inclusie en toegankelijkheid
+pagination_label: Inclusieve formulieren
 description: Richtlijnen voor formulieren - Inclusie en toegankelijkheid
 keywords:
   - formulieren
@@ -14,11 +14,9 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
-# Inclusie en toegankelijkheid
+# Inclusieve formulieren
 
 _Status: **In ontwikkeling**_
-
-## Inclusie
 
 Niemand heeft dezelfde digitale vaardigheden en voorkennis. Hou hiermee rekening bij het ontwikkelen van formulieren. Houdt rekening met gebruikers met een verschillende (culturele) achtergrond, laaggeletterden en mensen met een cognitieve, visuele of motorische beperking.
 
