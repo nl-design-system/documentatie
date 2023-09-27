@@ -43,7 +43,7 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = false, children,
   };
 
   return (
-    <div className={clsx(style['nlds-canvas'], 'voorbeeld-theme')}>
+    <div className={clsx(style['nlds-canvas'], 'voorbeeld-theme', 'utrecht-html')}>
       <div className={clsx(style['nlds-canvas__example'])}>{children}</div>
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
