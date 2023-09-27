@@ -76,6 +76,11 @@
   --nlds-code-block-variable-color: rgb(214, 222, 235);
 }
 
+.nlds-canvas__code-block--user-select-none {
+  user-select: none;
+  cursor: not-allowed;
+}
+
 .nlds-canvas__toolbar {
   background-color: var(--nlds-code-block-background-color);
   text-align: end;

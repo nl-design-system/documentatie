@@ -56,7 +56,11 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = false, children,
           {defaultCollapsed ? 'Bekijk code' : 'Verberg code'}
         </Button>
       </div>
-      <div className={clsx(style['nlds-canvas__code-block'])} id={codeBlockId} hidden={defaultCollapsed}>
+      <div
+        className={clsx(style['nlds-canvas__code-block'], !copy && style['nlds-canvas__code-block--user-select-none'])}
+        id={codeBlockId}
+        hidden={defaultCollapsed}
+      >
         <SyntaxHighlighter language={language} style={PrismStyle}>
           {formatted}
         </SyntaxHighlighter>
