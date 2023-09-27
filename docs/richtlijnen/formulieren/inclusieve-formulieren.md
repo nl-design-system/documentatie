@@ -59,7 +59,7 @@ Een bijkomend voordeel van het plaatsen van een label buiten het invoerveld is d
 
 ## Referenties
 
-[^1]: Terugdringen van onnodige vragen naar sekse [https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm]
-[^2]: Onnodige sekseregistratie verder teruggedrongen [https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen]
+[^1]: [Gemeente Den Haag: Terugdringen van onnodige vragen naar sekse](https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm)
+[^2]: [Rijksoverheid: Onnodige sekseregistratie verder teruggedrongen](https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen)
 [^onze-taal-sekse-gender-geslacht]: [Genootschap Onze Taal: Taaladviezen - Sekse, geslacht en gender](https://onzetaal.nl/taaladvies/sekse-geslacht-en-gender)
 [^gov.uk-gender-sex]: [GOV.UK Design System: Patterns - Asking for gender or sex](https://design-system.service.gov.uk/patterns/gender-or-sex/)
