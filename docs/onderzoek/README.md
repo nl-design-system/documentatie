@@ -1,17 +1,17 @@
 ---
-title: Gebruikers onderzoek
+title: Gebruikersonderzoek
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Gebruikers onderzoek
+sidebar_label: Gebruikersonderzoek
 sidebar_position: 1
 pagination_label: Overzicht
-description: Gebruikers onderzoek
+description: Gebruikersonderzoek
 keywords:
   - index
   - onderzoek
 ---
 
-# Gebruikers onderzoek
+# Gebruikersonderzoek
 
 In de community wordt veel gebruikersonderzoek gedaan. Omdat je veel van elkaars onderzoeksresultaten kan leren en onderzoeken over hetzelfde onderwerp kan vergelijken is de NL Design System community begonnen met het verzamelen en publiceren op een toegankelijke manier.
 
