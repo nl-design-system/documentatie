@@ -35,13 +35,13 @@ module.exports = {
       label: 'Componenten',
       className: 'utrecht-link',
     },
-    {
-      type: 'doc',
-      docId: 'voorbeelden',
-      position: 'left',
-      label: 'Voorbeelden',
-      className: 'utrecht-link',
-    },
+    // {
+    //   type: 'doc',
+    //   docId: 'voorbeelden',
+    //   position: 'left',
+    //   label: 'Voorbeelden',
+    //   className: 'utrecht-link',
+    // },
     {
       type: 'doc',
       docId: 'onderzoek/README',
