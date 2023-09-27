@@ -1,10 +1,10 @@
 ---
-title: Inclusie en toegankelijkheid
+title: Inclusieve formulieren
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie
+sidebar_label: Inclusieve formulieren
 sidebar_position: 1
-pagination_label: Formulieren - Inclusie en toegankelijkheid
+pagination_label: Inclusieve formulieren
 description: Richtlijnen voor formulieren - Inclusie en toegankelijkheid
 keywords:
   - formulieren
@@ -14,11 +14,9 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
-# Inclusie en toegankelijkheid
+# Inclusieve formulieren
 
 _Status: **In ontwikkeling**_
-
-## Inclusie
 
 Niemand heeft dezelfde digitale vaardigheden en voorkennis. Hou hiermee rekening bij het ontwikkelen van formulieren. Houdt rekening met gebruikers met een verschillende (culturele) achtergrond, laaggeletterden en mensen met een cognitieve, visuele of motorische beperking.
 
@@ -61,7 +59,7 @@ Een bijkomend voordeel van het plaatsen van een label buiten het invoerveld is d
 
 ## Referenties
 
-[^1]: Terugdringen van onnodige vragen naar sekse [https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm]
-[^2]: Onnodige sekseregistratie verder teruggedrongen [https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen]
+[^1]: [Gemeente Den Haag: Terugdringen van onnodige vragen naar sekse](https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm)
+[^2]: [Rijksoverheid: Onnodige sekseregistratie verder teruggedrongen](https://www.rijksoverheid.nl/actueel/nieuws/2019/04/01/onnodige-sekseregistratie-verder-teruggedrongen)
 [^onze-taal-sekse-gender-geslacht]: [Genootschap Onze Taal: Taaladviezen - Sekse, geslacht en gender](https://onzetaal.nl/taaladvies/sekse-geslacht-en-gender)
 [^gov.uk-gender-sex]: [GOV.UK Design System: Patterns - Asking for gender or sex](https://design-system.service.gov.uk/patterns/gender-or-sex/)
