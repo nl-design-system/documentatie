@@ -1,6 +1,9 @@
 .nlds-guideline:first-of-type {
   margin-block-start: 20px;
 }
+p + .nlds-guideline {
+  margin-block-start: 20px;
+}
 
 .nlds-guideline {
   --utrecht-space-around: 0;
