@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Gebruik Labels
 sidebar_position: 2
 pagination_label: Formulier toegankelijkheid - Gebruik Labels
-description: Een toegankelijk formulier begint met goede labels
+description: Gebruik duidelijke en beschrijvende labels
 
 keywords:
   - richtlijnen
@@ -30,11 +30,11 @@ import {
   FieldsetLegend as Legend,
 } from "@utrecht/component-library-react";
 
-# Een toegankelijk formulier begint met goede labels
+#  Gebruik effectieve labels
 
-Zorg dat een gebruiker de vraag begrijpt. Het tekstlabel dient zo duidelijk en beschrijvend mogelijk te zijn en waar nodig kan er extra hulp geboden worden. Zie het onderwerp Hulp en ondersteuning voor meer informatie hierover.
+Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is.
 
-[Raadpleeg de algemene content richtlijnen](../../tekst-en-taalgebruik) voor taal en taalgebruik.
+## Wees duidelijk
 
 <Guideline
   appearance="dont"
@@ -96,12 +96,38 @@ Zorg dat een gebruiker de vraag begrijpt. Het tekstlabel dient zo duidelijk en b
 
 ## Gebruik de juiste code
 
-Maak je formulier meer toegankelijk door het `<label>` element op de juiste manier in te zetten.
+Elk formulierveld moet een `<label>`-element hebben dat in code is gekoppeld aan het veld.
 
-Het `<label>` element is niet alleen bedoeld om de bedoeling van de inhoud te beschrijven, maar er zit ook ingebouwde toegankelijkheid in die je met geen enkel ander element zo makkelijk kan bereiken. Elk zichtbaar formulier element moet daarom een bijbehorend `<label>` element hebben.
-Voor mensen die het formulier gebruiken zonder de zichtbare pagina context is het invullen van elk formulierveld waar een gekoppeld label aan zit stukken makkelijker.
+Door deze koppeling focust het veld als de gebruiker op het bijbehorende label klikt, en werkt het formulier ook met hulptechnologieën als spraaksoftware en screenreaders.
 
-Ook kun je op het label klikken om automatisch het juiste formulierveld te selecteren.
+<Guideline
+  appearance="do"
+  title="Gekoppeld label met “for” en “id”"
+  description={
+    <Paragraph>
+      Het <code>&lt;label&gt;</code>-element heeft een <code>for</code> attribuut (of <code>htmlFor</code> in React) dat verwijst naar het <code>id</code> van het bijbehorende invoerveld.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="voornaam">Voornaam</label>
+        <input type="text" name="first_name" id="voornaam" />
+      </>
+    }
+    copy
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
 
 ## Veel gemaakte fouten
 
@@ -265,35 +291,6 @@ Ook lezen niet alle screen-readers de placeholder voor waardoor het net zo slech
 </Guideline>
 
 ## Juiste manier van een label
-
-<Guideline
-  appearance="do"
-  title="Gekoppeld label met een duidelijke naam"
-  description={
-    <Paragraph>
-      Door een <Code>label</Code> te gebruiken met een duidelijk naam en de <Code>input</Code> te voorzien van een{" "}
-      <Code>id</Code> attribuut kan het label aan de input gekoppeld worden met het <Code>htmlFor</Code> attribuut
-    </Paragraph>
-  }
->
-  <Canvas
-    language="html"
-    code={
-      <>
-        <label htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</label>
-        <input type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
-      </>
-    }
-    copy
-  >
-    <FormField>
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</FormLabel>
-      </Paragraph>
-      <Textbox type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
-    </FormField>
-  </Canvas>
-</Guideline>
 
 <Guideline
   appearance="do"
