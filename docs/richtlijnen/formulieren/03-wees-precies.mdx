@@ -1,0 +1,110 @@
+---
+title: Wees precies | Formulieren
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Wees precies
+sidebar_position: 3
+pagination_label: Formulieren - Wees precies
+description: Ga na hoeveel en welke informatie je uitvraagt
+
+keywords:
+  - richtlijnen
+  - formulieren
+  - toegankelijkheid
+  - labels
+---
+
+<!-- @license CC0-1.0 -->
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import {
+  Checkbox,
+  Code,
+  FormField,
+  FormLabel,
+  Textbox,
+  Paragraph,
+  FormFieldDescription,
+} from "@utrecht/component-library-react";
+
+# Wees precies
+
+<Paragraph lead>Bij het maken van formulieren is het zinnig om goed na te gaan welke informatie je vraagt, waarom en hoe vaak.</Paragraph>
+
+## Check of informatie ècht nodig is
+
+Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze echt nodig is. Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn.
+
+## Leg uit waarom informatie nodig is
+
+Soms lijkt een vraag overbodig, terwijl deze essentieel is. In zulke gevallen is het een goed idee een korte uitleg toe te vroegen, om bijvoorbeeld het doel te beschrijven.
+
+<Guideline appearance="do" title="Leg het doel uit" description="Met uitleg weet de gebruiker waar die aan toe is.">
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="email">Emailadres</label>
+        <p>We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
+        <input type="text" name="email" id="email" />
+      </>
+    }
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="email">Emailadres</FormLabel>
+        <FormFieldDescription>
+          We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.
+        </FormFieldDescription>
+      </Paragraph>
+      <Textbox name="email" id="email" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+## Voorkom herhaling
+
+Om zeker te weten dat iemand het juiste emailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruikersvriendelijker!
+
+Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:
+
+- toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een bevestigingspagina
+- (als het om een emailadres gaat) stuur een email ter bevestiging om de juistheid van het emailadres te controleren
+
+<Guideline
+  appearance="dont"
+  title="Herhaling ter bevestiging"
+  description="Herhaling zorgt dat mensen meer tijd kwijt zijn met het invullen van het formulier, terwijl er vaak andere manieren voorhanden zijn om informatie te bevestigen."
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <div>
+          <label htmlFor="name">Email</label>
+          <input type="text" name="first_name" id="email" />
+        </div>
+        <div>
+          <label htmlFor="name">Email (ter bevestiging)</label>
+          <input type="text" name="first_name" id="email" />
+        </div>
+      </>
+    }
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="email">Email</FormLabel>
+      </Paragraph>
+      <Textbox name="email" id="email" />
+    </FormField>
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="email-rep">Email (ter bevestiging)</FormLabel>
+      </Paragraph>
+      <Textbox name="email-rep" id="email-rep" />
+    </FormField>
+  </Canvas>
+</Guideline>
