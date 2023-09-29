@@ -1,0 +1,87 @@
+---
+title: Kies de juiste vormgeving | Formulieren
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Kies de juiste vormgeving
+sidebar_position: 2
+pagination_label: Formulieren - Kies de juiste vormgeving
+description: Maak ontwerpkeuzes die de gebruiker ondersteunen
+
+keywords:
+  - richtlijnen
+  - formulieren
+  - toegankelijkheid
+  - layout
+---
+
+<!-- @license CC0-1.0 -->
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import { Code, FormField, FormLabel, Textbox, Paragraph, FormFieldDescription } from "@utrecht/component-library-react";
+
+# Kies de juiste vormgeving
+
+Vormgeving kan het verschil maken in de gebruikersvriendelijkheid van een formulier. Op deze pagina bespreken we een aantal richtlijnen voor het vormgeven van je formulier.
+
+## Vergemakkelijk scannen
+
+### Velden onder elkaar
+
+Om iemand comfortabel een formulier te laten scannen, is de aanbeveling meerdere kolommen te vermijden. Plaats velden bij voorkeur onder elkaar.
+
+### Plaats knoppen aan het begin van de regel
+
+Wanneer knoppen aan het begin van de regel staan, zijn ze het makkelijkst te vinden, omdat daar ook de invoervelden staat. Ze vormen zo één lijn. Ook is het zo voor gebruikers die inzoomen (bijvoorbeeld gebruikers met een visuele beperking) makkelijker om de knop te vinden.
+
+Meer informatie:
+
+- [Primary & Secondary Actions in Web Forms - Luke Wroblewski](https://www.lukew.com/ff/entry.asp?571)
+- [Where to put buttons on forms](https://adamsilver.io/blog/where-to-put-buttons-on-forms/)
+
+### Positie van tekstlabels
+
+Plaats labels buiten het invoerveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoont.
+
+Overweeg labels op de regel boven het invoerveld te plaatsen. Voor left-to-right talen is deze links uitgelijnd. Deze plaatsing heeft meerdere voordelen:
+
+1. Het biedt voldoende ruimte voor labels van verschillende lengtes. Het kan zijn dat gebruikers vertaalsoftware gebruiken op de pagina, waardoor labels langer of korter kunnen zijn dan je verwacht.
+1. Dit werkt beter voor gebruikers die de tekst inzoomen
+1. Het biedt een natuurlijke ‘scan-lijn’
+
+## Vertrouw niet alleen op kleur
+
+Soms gebruikt een formulier kleur om een status aan te geven, bijvoorbeeld dat een veld een fout bevat. Zorg er dan voor dat kleur niet de enige manier is waarop het verschil tussen “goede” en “foute” invoer wordt aangegeven. Dan is de status namelijk mogelijk niet te onderscheiden door mensen met kleurenblindheid.
+
+_Dit is verplicht om te voldoen aan WCAG 2.1, [1.4.1 Gebruik van kleur](https://www.w3.org/Translations/WCAG21-nl/#gebruik-van-kleur)._
+
+<Guideline
+  appearance="do"
+  title="Beschrijf in tekst"
+  description={
+    <Paragraph>
+      Vul de kleur aan met een beschrijving in tekst dat een melding een fout betreft, bijvoorbeeld “Fout: ”.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <FormField>
+          <FormLabel htmlFor="name">Voornaam</FormLabel>
+          <FormFieldDescription invalid="true">Fout: Dit is geen goede naam</FormFieldDescription>
+          <Textbox type="text" name="first_name" id="name" />
+        </FormField>
+      </>
+    }
+  >
+    <FormField>
+      <FormLabel htmlFor="name">Voornaam</FormLabel>
+      <FormFieldDescription invalid="true" style={{ color: "darkred" }}>
+        Fout: Dit is geen goede naam
+      </FormFieldDescription>
+      <Textbox type="text" name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
