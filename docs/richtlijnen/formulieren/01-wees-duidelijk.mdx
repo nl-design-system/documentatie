@@ -1,0 +1,246 @@
+---
+title: Wees duidelijk | Formulieren
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Wees duidelijk
+sidebar_position: 1
+pagination_label: Formulieren - Wees duidelijk
+description: Gebruik duidelijke en beschrijvende labels
+
+keywords:
+  - richtlijnen
+  - formulieren
+  - toegankelijkheid
+  - labels
+---
+
+<!-- @license CC0-1.0 -->
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import { Code, FormField, FormLabel, Textbox, Paragraph } from "@utrecht/component-library-react";
+
+# Wees duidelijk
+
+<Paragraph lead>
+  Een formulier moet duidelijk zijn. Er zijn een aantal dingen die daarbij kunnen helpen: labels, focusstijlen en het
+  vermijden van jargon.
+</Paragraph>
+
+## Gebruik labels
+
+Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is.
+
+### Duidelijke labels
+
+<Guideline
+  appearance="dont"
+  title="Ingewikkeld label"
+  description="Door veel informatie in te korten wordt het label onduidelijk"
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="name">Voornaam(en)</label>
+        <input type="text" name="first_name" id="name" />
+      </>
+    }
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="name">Voornaam(en)</FormLabel>
+      </Paragraph>
+      <Textbox name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Simpel label met extra beschrijving"
+  description={
+    <Paragraph>
+      Gebruik waar nodig een losse <Code>form-field-description</Code> om meer uitleg te geven.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="first-name">Voornaam(en)</label>
+        <p id="first-name-description"> Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
+        <input type="text" name="first_name" id="first-name" aria-describedby="first-name-description" />
+      </>
+    }
+    copy
+    defaultCollapsed
+  >
+    <FormField type="text">
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="ff">Voornaam (een of meerdere)</FormLabel>
+      </Paragraph>
+      <FormFieldDescription className="utrecht-form-field__description" id="ff-description">
+        Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.
+      </FormFieldDescription>
+      <Textbox name="first_name" id="ff" aria-describedby="ff-description" />
+    </FormField>
+
+  </Canvas>
+</Guideline>
+
+### Gebruik de juiste code
+
+Elk formulierveld moet een `<label>`-element hebben dat in code is gekoppeld aan het veld.
+
+Door deze koppeling focust het veld als de gebruiker op het bijbehorende label klikt, en werkt het formulier ook met hulptechnologieën als spraaksoftware en screenreaders.
+
+<Guideline
+  appearance="do"
+  title="Gekoppeld label met “for” en “id”"
+  description={
+    <Paragraph>
+      Het <code>&lt;label&gt;</code>-element heeft een <code>for</code> attribuut (of <code>htmlFor</code> in React) dat
+      verwijst naar het <code>id</code> van het bijbehorende invoerveld.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label htmlFor="voornaam">Voornaam</label>
+        <input type="text" name="first_name" id="voornaam" />
+      </>
+    }
+    copy
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel htmlFor="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9">Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" id="357f1ba2-0c4a-4cbb-b393-3c474d9a8de9" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Label zonder gekoppelde input"
+  description={
+    <Paragraph>
+      Door het <Code>label</Code> element te gebruiken zonder <Code>for</Code> mis je de koppeling tussen het label en
+      de input voor mensen die de visuele context niet waarnemen.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <label>Voornaam</label>
+        <input type="text" name="first_name" />
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph className="utrecht-form-field__label">
+        <FormLabel>Voornaam</FormLabel>
+      </Paragraph>
+      <Textbox type="text" name="first_name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Verkeerde HTML element voor het label"
+  description={
+    <Paragraph>
+      Door geen <Code>label</Code> element te gebruiken mis je de ingebouwde logica die zorgt dat hij als label kan
+      worden geinterpreteerd. Er bestaat zo geen enkele koppeling tussen het label en de input voor mensen die de
+      visuele context niet waarnemen.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <p htmlFor="name">Voornaam</p>
+        <input type="text" name="first_name" id="name" />
+      </>
+    }
+  >
+    <FormField>
+      <Paragraph htmlFor="name">Voornaam</Paragraph>
+      <Textbox type="text" name="first_name" id="name" />
+    </FormField>
+  </Canvas>
+</Guideline>
+
+## Zorg voor focusstijlen
+
+Er is op je hele website altijd precies één element dat “focus” heeft. Als gebruikers een formulier invullen, krijgt het veld waar ze in typen focus. Zorg dat het als zodanig herkenbaar is door een duidelijke focusstijl te gebruiken.
+
+_Dit is verplicht om te voldoen aan WCAG 2.1, criterium [2.4.7 Focus Zichtbaar](https://www.w3.org/Translations/WCAG21-nl/#focus-zichtbaar)._
+
+<Guideline
+  appearance="dont"
+  title="Focus uitgezet"
+  description={
+    <Paragraph>
+      In CSS kan focus worden uitgezet met <code>outline: none</code> of <code>outline: 0</code>. Doe dit net, want het
+      zorgt dat gebruikers niet kunnen zien of het veld focus heeft.
+    </Paragraph>
+  }
+>
+  <Canvas language="css" code={":focus { outline: none; }"}></Canvas>
+</Guideline>
+
+## Leg jargon uit
+
+Soms is het niet te voorkomen dat een formulier jargon bevat, bijvoorbeeld omdat termen wettelijk zijn vastgelegd. Leg in zulke gevallen duidelijk uit wat zo'n term betekent.
+
+## Zorg voor complete paginatitels
+
+Zorg ervoor dat de titel van het formulier (of stap) ook is opgenomen in de paginatitel. Deze wordt bijvoorbeeld gebruikt voor de naam van het tabblad of wanneer een pagina gedeeld of opgeslagen wordt.
+
+_Dit is verplicht om te voldoen aan WCAG 2.1, criterium [2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG21-nl/#paginatitel)._
+
+<Guideline
+  appearance="do"
+  title="Stap in paginatitel"
+  description={
+    <Paragraph>
+      Met het <code>&lt;title&gt;</code> element wordt de titel van de pagina gedefinieerd. Zorg dat deze zo specifiek
+      mogelijk is.
+    </Paragraph>
+  }
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <title>Uw gegevens - Afspraak maken - Voorbeeldinstantie</title>
+      </>
+    }
+  ></Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Te algemene paginatitel"
+  description={<Paragraph>Zorg dat de informatie in de titel specifiek genoeg is.</Paragraph>}
+>
+  <Canvas
+    language="html"
+    code={
+      <>
+        <title>Voorbeeldinstantie</title>
+      </>
+    }
+  ></Canvas>
+</Guideline>
