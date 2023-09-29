@@ -13,6 +13,9 @@
   padding-inline: 16px;
   padding-block: 16px;
 }
+.nlds-canvas__example:empty {
+  padding: 0;
+}
 
 .nlds-canvas__code-block {
   --nlds-code-block-code-color: #c5c8c6;
