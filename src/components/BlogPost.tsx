@@ -13,7 +13,7 @@ import {
 import parse from 'html-react-parser';
 import NotFound from '@theme/NotFound';
 import Layout from '@theme/Layout';
-import { Breadcrumbs } from '@site/src/components/Breadcrumbs';
+import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
 import { useLocation } from '@docusaurus/router';
 import { v4 } from 'uuid';
 
@@ -42,7 +42,7 @@ export const BlogPost = () => {
       <div
         className={clsx(styles['blog-post'], 'container', 'container--narrow padding-top--md', 'padding-bottom--lg')}
       >
-        <Breadcrumbs
+        <BreadcrumbNav
           breadcrumbs={[
             { href: '/project', label: 'Project' },
             { href: '/project/blog', label: 'Blog' },
