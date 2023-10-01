@@ -3,7 +3,6 @@ import clsx from 'clsx';
 
 import style from './SessionTable.module.css';
 import {
-  DataList,
   Icon,
   Link,
   Paragraph,
@@ -14,7 +13,7 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
-import { IconUser } from '@tabler/icons-react';
+import { IconCalendarCheck, IconUser } from '@tabler/icons-react';
 
 interface Speaker {
   name: string;
@@ -26,6 +25,7 @@ interface Session {
   speakers: Speaker[];
   subject: string;
   singupLink: string;
+  icalLink?: string;
   language: { abbr: string; description: string };
 }
 
@@ -53,20 +53,23 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
           <TableHeaderCell>{lang === 'nl-NL' ? 'Spreker' : 'Speaker'}</TableHeaderCell>
           <TableHeaderCell>{lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}</TableHeaderCell>
           {lang === 'nl-NL' && <TableHeaderCell>Taal</TableHeaderCell>}
+          <TableHeaderCell>{lang === 'nl-NL' ? 'Agenda' : 'Calendar'}</TableHeaderCell>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {sessions.map(({ isoDateTime, speakers, subject, singupLink, language }) => (
+        {sessions.map(({ isoDateTime, speakers, subject, singupLink, icalLink, language }) => (
           <TableRow className={clsx(style['session-table__row'])}>
             <TableCell className={clsx(style['session-table__time'])}>
-              <time dateTime={isoDateTime}>
-                {new Intl.DateTimeFormat(lang, {
-                  hour: 'numeric',
-                  minute: 'numeric',
-                  timeZone: 'Europe/Amsterdam',
-                  timeZoneName: lang !== 'nl-NL' ? 'short' : undefined,
-                }).format(new Date(isoDateTime))}
-              </time>
+              <Paragraph>
+                <time dateTime={isoDateTime}>
+                  {new Intl.DateTimeFormat(lang, {
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    timeZone: 'Europe/Amsterdam',
+                    timeZoneName: lang !== 'nl-NL' ? 'short' : undefined,
+                  }).format(new Date(isoDateTime))}
+                </time>
+              </Paragraph>
             </TableCell>
             <TableCell>
               <div className={clsx(style['session-table__speakers'])}>
@@ -76,13 +79,25 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
               </div>
             </TableCell>
             <TableCell className={clsx(style['session-table__subject'])}>
-              <Link href={singupLink}>{subject}</Link>
+              <Paragraph>
+                <Link href={singupLink}>{subject}</Link>
+              </Paragraph>
             </TableCell>
             {lang === 'nl-NL' && (
               <TableCell className={clsx(style['session-table__language'])}>
                 <abbr title={language.description}>{language.abbr}</abbr>
               </TableCell>
             )}
+            <TableCell className={clsx(style['session-table__time'])}>
+              {icalLink && (
+                <Link href={icalLink} download={icalLink}>
+                  <Icon aria-label="Download uitnodiging">
+                    <IconCalendarCheck />
+                  </Icon>{' '}
+                  iCal
+                </Link>
+              )}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
