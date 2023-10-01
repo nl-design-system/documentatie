@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from './avatars/kernteam_jeffrey.svg';
-import { Paragraph } from '@utrecht/component-library-react';
+import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import { TeamMember } from './TeamMember';
 
 const Jeffrey: TeamMember = {

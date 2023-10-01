@@ -7,7 +7,7 @@ import prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { PrismStyle } from './PrismStyle';
-import { Button } from '@utrecht/component-library-react';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { v4 as uuid } from 'uuid';
 
 interface CanvasProps {

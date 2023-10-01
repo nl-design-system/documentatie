@@ -2,7 +2,7 @@ import React, { ComponentProps } from 'react';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
 import styles from './Header.module.css';
-import { Button } from '@utrecht/component-library-react';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import { IconChevronLeft, IconX } from '@tabler/icons-react';
 import { useThemeConfig } from '@docusaurus/theme-common';

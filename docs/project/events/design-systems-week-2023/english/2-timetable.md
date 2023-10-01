@@ -8,7 +8,7 @@ pagination_label: Timetable
 slug: /events/design-systems-week-2023/en/timetable
 ---
 
-import { Link, Paragraph } from '@utrecht/component-library-react';
+import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import { SessionTable } from "../../../../../src/components/SessionTable";
 
 <div lang="en">

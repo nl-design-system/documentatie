@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import style from './HomepageHero.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
-import { Heading1, Paragraph } from '@utrecht/component-library-react';
+import { Heading1, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
 interface HomepageHeroProps {
   title: string;

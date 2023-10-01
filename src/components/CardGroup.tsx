@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import clsx from 'clsx';
-import { Image, Link } from '@utrecht/component-library-react';
+import { Image, Link } from '@utrecht/component-library-react/dist/css-module';
 import style from './CardGroup.module.css';
 
 type Appearance = 'small' | 'medium' | 'large' | 'background';

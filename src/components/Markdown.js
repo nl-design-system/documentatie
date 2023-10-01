@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react';
-import { Heading2, Heading3, Heading4, Heading5, Heading6 } from '@utrecht/component-library-react';
+import { Heading2, Heading3, Heading4, Heading5, Heading6 } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 
 const resolveUrl = (from, to) => {

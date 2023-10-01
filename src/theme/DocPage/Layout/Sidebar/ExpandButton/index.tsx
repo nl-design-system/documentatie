@@ -4,7 +4,7 @@ import type { Props } from '@theme/DocPage/Layout/Sidebar/ExpandButton';
 
 import styles from './styles.module.css';
 import { IconArrowBarToRight } from '@tabler/icons-react';
-import { LinkButton } from '@utrecht/component-library-react';
+import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
 
 export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): JSX.Element {
   return (

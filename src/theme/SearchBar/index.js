@@ -9,7 +9,7 @@ import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { createPortal } from 'react-dom';
 import translations from '@theme/SearchTranslations';
-import { Button } from '@utrecht/component-library-react';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 let DocSearchModal = null;
 function Hit({ hit, children }) {
   return (

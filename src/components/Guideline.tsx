@@ -2,7 +2,7 @@ import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import { IconMoodSad, IconMoodHappy } from '@tabler/icons-react';
 import style from './Guideline.module.css';
 import clsx from 'clsx';
-import { Paragraph } from '@utrecht/component-library-react';
+import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
 interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;

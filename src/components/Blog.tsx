@@ -1,6 +1,13 @@
 import React, { HTMLAttributes } from 'react';
 import useGlobalData from '@docusaurus/useGlobalData';
-import { BadgeList, DataBadge, HTMLContent, Heading, Heading2, Icon } from '@utrecht/component-library-react';
+import {
+  BadgeList,
+  DataBadge,
+  HTMLContent,
+  Heading,
+  Heading2,
+  Icon,
+} from '@utrecht/component-library-react/dist/css-module';
 import parse from 'html-react-parser';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';

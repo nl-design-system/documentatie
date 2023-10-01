@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import style from './ComponentIllustration.module.css';
 import clsx from 'clsx';
 import * as Sketch from './sketches';
-import { Figure, FigureCaption } from '@utrecht/component-library-react';
+import { Figure, FigureCaption } from '@utrecht/component-library-react/dist/css-module';
 
 type ComponentIllustrationProps = {
   id: string;
