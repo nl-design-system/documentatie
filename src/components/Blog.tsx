@@ -12,7 +12,7 @@ import parse from 'html-react-parser';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
-import { Breadcrumbs } from '@site/src/components/Breadcrumbs';
+import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
 import { Card, CardContent, CardGroup } from '@site/src/components/CardGroup';
 import clsx from 'clsx';
 import style from './Blog.module.css';
@@ -67,7 +67,7 @@ export const Blog = () => {
   return (
     <Layout title={`${siteConfig.title} - blog overzicht`}>
       <div className={clsx('container container--narrow padding-top--md padding-bottom--lg')}>
-        <Breadcrumbs breadcrumbs={[{ label: 'Project', href: '/project' }, { label: 'Blog' }]} />
+        <BreadcrumbNav breadcrumbs={[{ label: 'Project', href: '/project' }, { label: 'Blog' }]} />
         <CardGroup appearance="large">
           {blogItems.map((item) => {
             return <BlogCard {...item} key={item.uuid} headingLevel={2} />;

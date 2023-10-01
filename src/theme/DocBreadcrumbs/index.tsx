@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
-import { Breadcrumbs } from '@site/src/components/Breadcrumbs';
+import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
   const sidebarBreadcrumbs =
@@ -12,5 +12,5 @@ export default function DocBreadcrumbs(): JSX.Element | null {
       return { href: item.href, label: item.label };
     }) || [];
 
-  return <Breadcrumbs breadcrumbs={sidebarBreadcrumbs} className={ThemeClassNames.docs.docBreadcrumbs} />;
+  return <BreadcrumbNav breadcrumbs={sidebarBreadcrumbs} className={ThemeClassNames.docs.docBreadcrumbs} />;
 }
