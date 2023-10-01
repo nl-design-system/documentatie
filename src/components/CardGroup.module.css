@@ -65,13 +65,11 @@
   --cardgroup-card-justify-content: space-between;
 }
 
-.card__link {
-  display: flex;
-  height: 100%;
-  justify-content: center;
+.cardgroup__link {
+  border: 1px solid transparent;
 }
 
-.card__link:hover {
+.cardgroup__link:hover {
   box-shadow: 4px 4px #d1d1d1;
   border: 1px solid #d1dfe3;
 }

@@ -6,6 +6,8 @@
 }
 
 .content a {
-  color: inherit;
-  text-decoration: underline;
+  --utrecht-link-color: currentColor;
+  --utrecht-link-hover-color: currentColor;
+  --utrecht-link-text-decoration-color: currentColor;
+  --ifm-link-hover-color: currentColor;
 }
