@@ -37,7 +37,7 @@
   --utrecht-paragraph-margin-block-start: 0;
 }
 
-.dsw-session:nth-child(odd) .dsw-speaker {
+.dsw-session:nth-child(even) .dsw-speaker {
   flex-direction: row-reverse;
 }
 
