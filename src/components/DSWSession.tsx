@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
-import { Heading, Paragraph } from '@utrecht/component-library-react';
+import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
 interface DSWSessionProps {
   headingLevel: 2 | 3 | 4 | 5 | 6;

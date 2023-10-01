@@ -16,7 +16,7 @@ import {
   RadioButton,
   Textarea,
   Textbox,
-} from '@utrecht/component-library-react';
+} from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { useId } from 'react';
 import { useForm } from 'react-hook-form';

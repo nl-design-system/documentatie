@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Card, CardContent, CardIllustration } from './CardGroup';
 import { COMPONENT_STATES, DesignSystemComponent } from '@nl-design-system/component-index';
 import { ComponentIllustration } from './ComponentIllustration';
-import { Paragraph, Heading } from '@utrecht/component-library-react';
+import { Paragraph, Heading } from '@utrecht/component-library-react/dist/css-module';
 import { EstafetteBadge } from './EstafetteBadge';
 import Link from '@docusaurus/Link';
 

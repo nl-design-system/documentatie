@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataBadge } from '@utrecht/component-library-react';
+import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import { COMPONENT_STATES } from '@nl-design-system/component-index';
 import style from './EstafetteBadge.module.css';
 import clsx from 'clsx';

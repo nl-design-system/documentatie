@@ -6,7 +6,7 @@ import Content from '@theme/DocSidebar/Desktop/Content';
 import type { Props } from '@theme/DocSidebar/Desktop';
 
 import styles from './styles.module.css';
-import { LinkButton } from '@utrecht/component-library-react';
+import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
 import { IconArrowBarToLeft, IconArrowBarToRight } from '@tabler/icons-react';
 
 function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden }: Props) {

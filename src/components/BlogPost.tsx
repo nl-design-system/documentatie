@@ -9,7 +9,7 @@ import {
   Heading1,
   Heading2,
   Link,
-} from '@utrecht/component-library-react';
+} from '@utrecht/component-library-react/dist/css-module';
 import parse from 'html-react-parser';
 import NotFound from '@theme/NotFound';
 import Layout from '@theme/Layout';

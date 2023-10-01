@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import style from './CoreTeam.module.css';
 import { Card, CardContent, CardGroup, CardIllustration } from '../CardGroup';
-import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react';
+import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import Peter from './Peter';
 import Robbert from './Robbert';
 import Yolijn from './Yolijn';

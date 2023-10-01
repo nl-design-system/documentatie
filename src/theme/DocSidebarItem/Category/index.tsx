@@ -11,7 +11,7 @@ import { translate } from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import type { Props } from '@theme/DocSidebarItem/Category';
-import { Button, Icon } from '@utrecht/component-library-react';
+import { Button, Icon } from '@utrecht/component-library-react/dist/css-module';
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 
 // If we navigate to a category and it becomes active, it should automatically

@@ -20,7 +20,7 @@ import {
   Paragraph,
   UnorderedList,
   UnorderedListItem,
-} from '@utrecht/component-library-react';
+} from '@utrecht/component-library-react/dist/css-module';
 
 export default function MDXContent({ children }: Props): JSX.Element {
   return (

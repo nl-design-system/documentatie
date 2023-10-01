@@ -13,7 +13,7 @@ import {
   Paragraph,
   UnorderedList,
   UnorderedListItem,
-} from '@utrecht/component-library-react';
+} from '@utrecht/component-library-react/dist/css-module';
 import HomepageUpdates from '../components/HomepageUpdates';
 import useGlobalData from '@docusaurus/useGlobalData';
 import { BlogCard } from '../components/Blog';

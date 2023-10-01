@@ -9,7 +9,7 @@ slug: /events/design-systems-week-2023/programma
 
 import DSWSession from "../../../../src/components/DSWSession";
 import speakers from "./speakers.json";
-import { Link } from '@utrecht/component-library-react';
+import { Link } from '@utrecht/component-library-react/dist/css-module';
 
 # Design Systems Week 2023
 

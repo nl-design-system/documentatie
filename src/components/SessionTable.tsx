@@ -13,7 +13,7 @@ import {
   TableHeader,
   TableHeaderCell,
   TableRow,
-} from '@utrecht/component-library-react';
+} from '@utrecht/component-library-react/dist/css-module';
 import { IconUser } from '@tabler/icons-react';
 
 interface Speaker {

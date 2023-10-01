@@ -10,9 +10,7 @@ import '@fontsource/open-sans/700.css';
 import '@fontsource/open-sans/800.css';
 
 // Package with CSS for white-label components
-import '@utrecht/component-library-css';
-import '@utrecht/component-library-css/dist/html.css';
-import { Document } from '@utrecht/component-library-react';
+import { Document } from '@utrecht/component-library-react/dist/css-module';
 
 // Default implementation, that you can customize
 function Root({ children }) {

@@ -1,6 +1,12 @@
 import React from 'react';
-import { Heading2, PageContent, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { Heading1 } from '@utrecht/component-library-react';
+import {
+  Heading2,
+  PageContent,
+  Paragraph,
+  UnorderedList,
+  UnorderedListItem,
+} from '@utrecht/component-library-react/dist/css-module';
+import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
