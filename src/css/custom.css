@@ -529,7 +529,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
 
 @media (min-width: 997px) {
   .nlds-theme {
-    --docusaurus-announcement-bar-height: 40px;
+    --docusaurus-announcement-bar-height: 80px;
   }
 }
 
