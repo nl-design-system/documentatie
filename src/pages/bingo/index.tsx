@@ -1,69 +1,97 @@
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { Bingo } from '@site/src/components/Bingo';
-import Layout from '@theme/Layout';
-import {
-  Heading2,
-  PageContent,
-  Paragraph,
-  UnorderedList,
-  UnorderedListItem,
-} from '@utrecht/component-library-react/dist/css-module';
-import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
+import { useHistory } from '@docusaurus/router';
+import { Alert, Heading1, Icon, Paragraph } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import React, { CSSProperties } from 'react';
+import { useForm } from 'react-hook-form';
+import { issues } from './_issues';
+import style from './bingo.module.css';
 
-const Home = () => {
-  const { siteConfig } = useDocusaurusContext();
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+interface BingoCardProps {
+  issues: typeof issues;
+  columns: number;
+  freeCellsIds: number[];
+}
+
+const BingoCard = ({ issues, columns, freeCellsIds }: BingoCardProps) => {
+  const { register, formState } = useForm();
 
   return (
-    <Layout title={`${siteConfig.title} - homepage`}>
-      <PageContent>
-        <Heading1>Formulieren Workshop - 23 mei 2023</Heading1>
-        <UnorderedList>
-          <UnorderedListItem>
-            <Link className="utrecht-link" to="/bingo/voorbeeld-met-fouten-1">
-              Graffiti formulier met fouten #1
-            </Link>
-          </UnorderedListItem>
-          <UnorderedListItem>
-            <Link className="utrecht-link" to="/bingo/voorbeeld-met-fouten-2">
-              Graffiti formulier met fouten #2
-            </Link>
-          </UnorderedListItem>
-        </UnorderedList>
-        <Heading2>BINGO!</Heading2>
-        <Paragraph>Speel de veelgemaakte fouten bingo en win!</Paragraph>
-        <Bingo
-          items={[
-            'Label die geen focus geeft',
-            'Vragen om invoer te herhalen',
-            'Haakje(s) voor afkorting(en)',
-            'Taal niet consistent',
-            'Invoerfout alleen met kleur aangegeven',
-            'Vragen om onnodige informatie',
-            'Naam of e-mailadres zonder autocomplete',
-            'Alle tekstvelden zijn even lang',
-            'Tekstvelden in kolommen of in een tabel',
-            'Foutmelding voor je klaar bent met invoeren',
-            'Geen uitleg waarom e-mail of telefoonnummer nodig zijn',
-            'Je kunt niet van begin tot eind met de Tab-toets door het formulier',
-            'Onduidelijk waar focus is als je met de Tab-toets door het forulier gaat',
-            'Buttons staan aan het eind van de regel',
-            'Moeilijke afkortingen en jargon worden niet uitgelegd',
-            'Belangrijke informatie in een tooltip of placeholder',
-            'E-mailadres user+inbox@example.com is invalide',
-            'Postcode moet per se mét of zónder spatie',
-            'Contactgegevens kunnen niet automatisch ingevuld worden met DigiD',
-            'Als je Google Translate gebruikt wordt je invoer vernacheld op de controlepagina',
-            'De naam van het formulier of de stap van het formulier staat niet in de titel van de browser tab of geschiedenis',
-            'Onduidelijke invoerfoutmelding: “Invoer klopt niet! Pas het aan!”',
-            'Maximum lengte te kort: max 6 voor postcode, minder dan 200 voor voornaam of achternaam, maximaal 10 voor telefoonnummer',
-            'Select met 5 opties of minder',
-          ]}
+    <>
+      <section className={clsx(style['nlds-bingo-card'])}>
+        <img
+          className={clsx(style['nlds-bingo-card__logo'])}
+          src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo-text-2.svg"
+          alt="NL Design System logo"
         />
-      </PageContent>
-    </Layout>
+        <Heading1>Foute formulieren Bingo</Heading1>
+        <form className={clsx(style['bingo-card__bingo'])}>
+          <div
+            className={clsx(style['bingo-card__grid'])}
+            style={{ '--bingo-card-grid-columns': columns } as CSSProperties}
+          >
+            {issues.map(({ number, label }, id) => (
+              <div key={label} className={clsx(style['bingo-card__cell'])}>
+                {freeCellsIds.includes(id + 1) ? (
+                  <Icon>
+                    <img
+                      src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo-icon.svg"
+                      alt="NL Design System logo icon"
+                    />
+                  </Icon>
+                ) : (
+                  <label className={clsx(style['bingo-card__cell-number'])}>
+                    <input type="checkbox" {...register(String(number), { required: true })} />
+                    {number}
+                  </label>
+                )}
+              </div>
+            ))}
+          </div>
+          {formState.isValid && (
+            <div role="alert">
+              <Alert type="info">
+                <Paragraph>Bingo!🏅</Paragraph>
+              </Alert>
+            </div>
+          )}
+        </form>
+      </section>
+    </>
   );
 };
 
-export default Home;
+export const BingoCards = () => {
+  const { location } = useHistory();
+  const params = new URLSearchParams(location.search);
+
+  const players = parseInt(params.get('players'), 10) || 1;
+  const columns = parseInt(params.get('columns'), 10) || 3;
+  const freeCellsIds = [5];
+  const skipIssues = [22, 21, 20, 18, 16, 14, 8, 7];
+  const filteredIssues = issues.filter((issue) => !skipIssues.includes(issue.number));
+
+  const bingoCards = Array(players)
+    .fill(0)
+    .map(() => {
+      const cardIssues = shuffleArray([...filteredIssues]);
+      return cardIssues.splice(0, columns * columns);
+    });
+
+  return (
+    <div id="results">
+      {bingoCards.map((issues, index) => (
+        <BingoCard issues={issues} columns={columns} freeCellsIds={freeCellsIds} key={index} />
+      ))}
+    </div>
+  );
+};
+
+export default BingoCards;

@@ -1,0 +1,97 @@
+.nlds-bingo-card__logo {
+  color: black;
+  margin: 0;
+  height: 7rem;
+  width: fit-content;
+  margin-block-end: 24px;
+}
+
+.nlds-bingo-card {
+  --utrecht-alert-info-background-color: #b2f5a7;
+  --utrecht-alert-info-border-color: #001b07;
+  --utrecht-alert-info-border-width: 2px;
+  --utrecht-alert-padding-block-end: 16px;
+  --utrecht-alert-padding-block-start: 16px;
+  --utrecht-alert-padding-inline-end: 16px;
+  --utrecht-alert-padding-inline-start: 16px;
+  --utrecht-alert-margin-block-end: 16px;
+  --utrecht-alert-margin-block-start: 16px;
+  --utrecht-heading-1-color: black;
+  --utrecht-heading-1-margin-block-start: 0;
+  --utrecht-heading-1-font-size: 2rem;
+  --utrecht-paragraph-font-size: 4rem;
+  --utrecht-icon-size: 4.5rem;
+  break-after: page;
+  size: A4;
+  margin-inline: 2rem;
+  margin-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bingo-card__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--bingo-card-grid-columns), 1fr);
+  width: fit-content;
+  height: auto;
+  background-color: white;
+}
+
+.bingo-card__cell {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+  max-inline-size: 8rem;
+  max-block-size: 8rem;
+  min-block-size: 6.875rem;
+  min-inline-size: 6.875rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bingo-card__cell-number {
+  border: 2px solid currentColor;
+  border-radius: 50px;
+  inline-size: 100%;
+  block-size: 100%;
+  line-height: 100%;
+  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.bingo-card__cell-number:has(> input:checked) {
+  background-color: #b2f5a7;
+}
+
+.bingo-card__cell-number:has(> input:focus-visible) {
+  background-color: var(--utrecht-link-focus-background-color);
+  color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: var(--utrecht-stack-focus-z-index, 1);
+}
+
+.bingo-card__cell-number:has(> input:checked:focus-visible) {
+  background-color: #37fc19;
+}
+
+.bingo-card__cell-number input {
+  margin: 0;
+  height: 0;
+  width: 0;
+}
+
+.issue-list {
+  list-style: none;
+  padding-inline-start: 0;
+  font-size: 1.2rem;
+  max-inline-size: 42%;
+}
