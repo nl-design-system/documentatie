@@ -21,6 +21,7 @@
   -moz-osx-font-smoothing: auto !important;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
+  --ifm-link-hover-color: currentColor;
   /* --docusaurus-announcement-bar-height: 50px; */
 }
 .container--narrow {
@@ -198,10 +199,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 /* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
 .navbar__link--active:not(.navbar__brand, .utrecht-button-link),
 .navbar__link:not(.utrecht-button-link):hover {
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  border-bottom-color: transparent;
-  border-bottom-color: var(--nlds-navbar-link-active-border-color);
+  border-block-end-style: solid;
+  border-block-end-width: 4px;
+  border-block-end-color: var(--nlds-navbar-link-active-border-color, transparent);
+  border-block-start-style: solid;
+  border-block-start-width: 4px;
+  border-block-start-color: transparent;
 }
 
 .navbar--dark {
@@ -321,8 +324,9 @@ li a {
 
 .navbar__item:not(.utrecht-button-link, .utrecht-button) {
   height: 100%;
-  padding-block-start: 27px;
   padding-inline: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
@@ -620,4 +624,8 @@ img {
 abbr[title] {
   text-decoration: none;
   pointer-events: none;
+}
+
+.utrecht-breadcrumb-nav {
+  margin-inline-start: calc(-1 * var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0));
 }

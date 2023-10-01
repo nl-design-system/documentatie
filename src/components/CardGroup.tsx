@@ -41,16 +41,18 @@ export const Card = ({ href, appearance, className, component = 'div', children 
     return <div {...props} />;
   };
 
-  return (
+  const card = (
     <Wrapper className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
-      {href ? (
-        <Link href={href} boxContent className={clsx(style['card__link'])}>
-          {children}
-        </Link>
-      ) : (
-        <>{children}</>
-      )}
+      {children}
     </Wrapper>
+  );
+
+  return href ? (
+    <Link href={href} boxContent className={style['cardgroup__link']}>
+      {card}
+    </Link>
+  ) : (
+    card
   );
 };
 

@@ -6,7 +6,7 @@ import Content from '@theme/DocSidebar/Desktop/Content';
 import type { Props } from '@theme/DocSidebar/Desktop';
 
 import styles from './styles.module.css';
-import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { IconArrowBarToLeft, IconArrowBarToRight } from '@tabler/icons-react';
 
 function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden }: Props) {
@@ -25,11 +25,13 @@ function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden 
         isNavbarVisible && styles.sidebarWithNavbar,
       )}
     >
-      <LinkButton
+      <Button
+        appearance="subtle-button"
         onClick={toggleSidebar}
         className={clsx(styles['sidebar__toggle-button'], isHidden && styles['sidebar__toggle-button--icon-only'])}
         aria-controls={sidebarId}
         aria-label={isHidden ? 'Toon sidebar' : 'Verberg sidebar'}
+        aria-expanded={!isHidden}
       >
         {!isHidden ? (
           <>
@@ -40,7 +42,7 @@ function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden 
             <IconArrowBarToRight />
           </>
         )}
-      </LinkButton>
+      </Button>
 
       <div
         id={sidebarId}

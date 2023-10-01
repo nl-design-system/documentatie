@@ -9,10 +9,10 @@
 }
 
 .navbar-sidebar__header-button {
-  color: white;
-  font-weight: normal;
-  font-size: 18px;
-  height: 100%;
+  --utrecht-button-color: white;
+  --utrecht-button-hover-color: white;
+  --utrecht-button-font-size: 18px;
+  --utrecht-button-min-block-size: 100%;
 }
 
 .navbar-sidebar__header-button:hover {

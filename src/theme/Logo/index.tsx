@@ -39,7 +39,7 @@ export default function Logo(props: Props): JSX.Element {
 
   const { shouldRender: isMobile } = useNavbarMobileSidebar();
 
-  const { imageClassName, titleClassName, className, ...propsRest } = props;
+  const { imageClassName, titleClassName, ...propsRest } = props;
   const logoLink = useBaseUrl(logo?.href || '/');
 
   // If visible title is shown, fallback alt text should be
@@ -51,12 +51,7 @@ export default function Logo(props: Props): JSX.Element {
   const alt = logo?.alt ?? fallbackAlt;
 
   return (
-    <Link
-      to={logoLink}
-      {...propsRest}
-      {...(logo?.target && { target: logo.target })}
-      className={clsx('utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a', className)}
-    >
+    <Link to={logoLink} {...propsRest} {...(logo?.target && { target: logo.target })}>
       {logo && !isMobile && <LogoThemedImage logo={logo} alt={alt} imageClassName={imageClassName} />}
       {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}
     </Link>
