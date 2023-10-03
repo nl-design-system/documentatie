@@ -22,12 +22,7 @@ Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren on
 
 Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
 
-<DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system#event-booking">
-
-<VimeoPlayer
-  url="https://vimeo.com/870255529"
-  controls
-/>
+<DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" vimeoUrl="https://vimeo.com/870255529">
 
 De overheid staat voor een enorme uitdaging: ervoor zorgen dat websites en apps toegankelijk worden voor iedereen. Maar hoe zorg je ervoor dat toegankelijkheid gegarandeerd onderdeel is van het ontwerp- en ontwikkelproces?
 
@@ -41,12 +36,7 @@ Tijd om nu ook de meerwaarde ervan te laten zien aan managers, beslissers en adv
 
 </DSWSession>
 
-<DSWSession title="Waarom wij als leverancier werken met NL Design System" speakers={[speakers.MartijnRietveld]} organisation="OpenGemeenten" signupLink="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system#event-booking">
-
-<VimeoPlayer
-  url="https://vimeo.com/870273121"
-  controls
-/>
+<DSWSession title="Waarom wij als leverancier werken met NL Design System" speakers={[speakers.MartijnRietveld]} organisation="OpenGemeenten" vimeoUrl="https://vimeo.com/870273121">
 
 Heeft het NL Design System toegevoegde waarde voor leveranciers van overheden? En zijn er al leerzame voorbeelden van bijdragen van leveranciers die gebruikmaken van het NL Design System? Het antwoord op beide vragen: jazeker!
 
@@ -54,12 +44,7 @@ Martijn Rietveld van OpenGemeenten laat je zien wat de samenwerking met NL Desig
 
 </DSWSession>
 
-<DSWSession title="Onze componenten, jouw huisstijl: over design tokens" speakers={[speakers.JeffreyLauwers]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system#event-booking">
-
-<VimeoPlayer
-  url="https://vimeo.com/870319489"
-  controls
-/>
+<DSWSession title="Onze componenten, jouw huisstijl: over design tokens" speakers={[speakers.JeffreyLauwers]} organisation="NL Design System" vimeoUrl="https://vimeo.com/870319489">
 
 NL Design System wil de beste componenten uit de community herbruikbaar maken voor de hele overheid. Daarom hebben de componenten van het NL Design System van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van ‘design tokens’.
 
@@ -67,12 +52,7 @@ Jeffrey Lauwers van NL Design System vertelt kort over design tokens en laat zie
 
 </DSWSession>
 
-<DSWSession title="The future of design decisions" speakers={[speakers.JanSix, speakers.MarcoChristianKrenn]} organisation="Token Studio" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/#event-booking">
-
-<VimeoPlayer
-  url="https://vimeo.com/870340269"
-  controls
-/>
+<DSWSession title="The future of design decisions" speakers={[speakers.JanSix, speakers.MarcoChristianKrenn]} organisation="Token Studio" vimeoUrl="https://vimeo.com/870340269">
 
 Marco-Christian Krenn en Jan Six presenteren samen The future of design decisions. Verdiep je in de overgang van design tokens naar dynamisch design. Deze overgang heeft gevolgen voor bijvoorbeeld toegankelijkheid en laat zien hoeveel impact designkeuzes hebben. Deze boeiende sessie onderstreept het essentiële verband tussen interne beslissingen en een single source of truth.
 
