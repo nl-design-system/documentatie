@@ -24,7 +24,6 @@ Dit jaar hebben we nationale én internationale sprekers. We laten ons inspirere
 
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system#event-booking">
 
-
 <VimeoPlayer
   url="https://vimeo.com/870255529"
   controls
