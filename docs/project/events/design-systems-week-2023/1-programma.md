@@ -10,6 +10,7 @@ slug: /events/design-systems-week-2023/programma
 import DSWSession from "../../../../src/components/DSWSession";
 import speakers from "./speakers.json";
 import { Link } from '@utrecht/component-library-react/dist/css-module';
+import VimeoPlayer from "react-player";
 
 # Design Systems Week 2023
 
@@ -22,6 +23,12 @@ Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren on
 Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
 
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system#event-booking">
+
+
+<VimeoPlayer
+  url="https://vimeo.com/870255529"
+  controls
+/>
 
 De overheid staat voor een enorme uitdaging: ervoor zorgen dat websites en apps toegankelijk worden voor iedereen. Maar hoe zorg je ervoor dat toegankelijkheid gegarandeerd onderdeel is van het ontwerp- en ontwikkelproces?
 
@@ -37,6 +44,11 @@ Tijd om nu ook de meerwaarde ervan te laten zien aan managers, beslissers en adv
 
 <DSWSession title="Waarom wij als leverancier werken met NL Design System" speakers={[speakers.MartijnRietveld]} organisation="OpenGemeenten" signupLink="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system#event-booking">
 
+<VimeoPlayer
+  url="https://vimeo.com/870273121"
+  controls
+/>
+
 Heeft het NL Design System toegevoegde waarde voor leveranciers van overheden? En zijn er al leerzame voorbeelden van bijdragen van leveranciers die gebruikmaken van het NL Design System? Het antwoord op beide vragen: jazeker!
 
 Martijn Rietveld van OpenGemeenten laat je zien wat de samenwerking met NL Design System voor hem als designer en voor OpenGemeenten als leverancier betekent. Zodat jij als designer, developer, product owner, leverancier of andere geïnteresseerde voortaan óók aanhaakt bij NL Design System-meetings, zoals het design open hour en de heartbeats.
@@ -45,6 +57,11 @@ Martijn Rietveld van OpenGemeenten laat je zien wat de samenwerking met NL Desig
 
 <DSWSession title="Onze componenten, jouw huisstijl: over design tokens" speakers={[speakers.JeffreyLauwers]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system#event-booking">
 
+<VimeoPlayer
+  url="https://vimeo.com/870319489"
+  controls
+/>
+
 NL Design System wil de beste componenten uit de community herbruikbaar maken voor de hele overheid. Daarom hebben de componenten van het NL Design System van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van ‘design tokens’.
 
 Jeffrey Lauwers van NL Design System vertelt kort over design tokens en laat zien hoe je ze kunt gebruiken in Figma. Je leert hoe je gebruik kunt maken van componenten uit de community van NL Design System, om deze vervolgens te voorzien van de huisstijl van jouw organisatie. En hoe je deze designkeuzes vanuit Figma kunt laten aansluiten op code.
@@ -52,6 +69,11 @@ Jeffrey Lauwers van NL Design System vertelt kort over design tokens en laat zie
 </DSWSession>
 
 <DSWSession title="The future of design decisions" speakers={[speakers.JanSix, speakers.MarcoChristianKrenn]} organisation="Token Studio" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/#event-booking">
+
+<VimeoPlayer
+  url="https://vimeo.com/870340269"
+  controls
+/>
 
 Marco-Christian Krenn en Jan Six presenteren samen The future of design decisions. Verdiep je in de overgang van design tokens naar dynamisch design. Deze overgang heeft gevolgen voor bijvoorbeeld toegankelijkheid en laat zien hoeveel impact designkeuzes hebben. Deze boeiende sessie onderstreept het essentiële verband tussen interne beslissingen en een single source of truth.
 
