@@ -1,10 +1,10 @@
 ---
-title: Wees precies | Formulieren
+title: Makkelijk in te vullen | Formulieren
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Wees precies
+sidebar_label: Makkelijk in te vullen
 sidebar_position: 3
-pagination_label: Formulieren - Wees precies
+pagination_label: Makkelijk in te vullen
 description: Ga na hoeveel en welke informatie je uitvraagt
 
 keywords:
@@ -28,43 +28,21 @@ import {
   FormFieldDescription,
 } from "@utrecht/component-library-react";
 
-# Wees precies
+# Makkelijk in te vullen
 
-<Paragraph lead>
-  Bij het maken van formulieren is het zinnig om goed na te gaan welke informatie je vraagt, waarom en hoe vaak.
-</Paragraph>
+<Paragraph lead>Maak het de gebruiker makkelijker door bijvoorbeeld informatie vooraf in te vullen.</Paragraph>
+
+## Vul bekende informatie in waar mogelijk
+
+Als de gebruiker is ingelogd, gebruik dan bekende informatie om velden vast in te vullen. In DigiD-sessies is bijvoorbeeld een hoop informatie beschikbaar, die zou kunnen worden geburikt om velden vooraf in te vullen.
+
+## Bereid velden voor op autocomplete
+
+Met het `autocomplete` attribuut in HTML kun je per veld aangeven wat voor soort invoer er verwacht wordt, zodat de browser bekende informatie kan voorstellen als autosuggest-opties. Gebruik je bijvoorbeeld `autocomplete="street-address"`, dan kan de browser suggesties doen. Dit kan gebruikers een hoop typewerk schelen.
 
 ## Check of informatie ècht nodig is
 
 Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze echt nodig is. Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn.
-
-## Leg uit waarom informatie nodig is
-
-Soms lijkt een vraag overbodig, terwijl deze essentieel is. In zulke gevallen is het een goed idee een korte uitleg toe te vroegen, om bijvoorbeeld het doel te beschrijven.
-
-<Guideline appearance="do" title="Leg het doel uit" description="Met uitleg weet de gebruiker waar die aan toe is.">
-  <Canvas
-    language="html"
-    code={
-      <>
-        <label htmlFor="email">Emailadres</label>
-        <p>We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
-        <input type="text" name="email" id="email" />
-      </>
-    }
-    defaultCollapsed
-  >
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="email">Emailadres</FormLabel>
-        <FormFieldDescription>
-          We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.
-        </FormFieldDescription>
-      </Paragraph>
-      <Textbox name="email" id="email" />
-    </FormField>
-  </Canvas>
-</Guideline>
 
 ## Voorkom herhaling
 
