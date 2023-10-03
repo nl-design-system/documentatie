@@ -60,7 +60,7 @@ Je krijgt een kijkje in de toekomst van design tokens en leert over alle mogelij
 
 </DSWSession>
 
-<DSWSession title="Design system laten meegroeien met je organisatie" speakers={[speakers.ArashAzizi]} organisation="PostNL" signupLink="https://www.gebruikercentraal.nl/agenda/design-system-laten-meegroeien-met-je-organisatie/#event-booking">
+<DSWSession title="Design system laten meegroeien met je organisatie" speakers={[speakers.ArashAzizi]} organisation="PostNL" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-post-nl">
 
 Een design system is altijd in beweging, maar de manier waarop we eraan werken verandert naarmate het groeit. Sinds PostNL het design system Stamp introduceerde, heeft het zich ontwikkeld tot een belangrijk onderdeel van de digitale productontwikkeling. En met de volwassenheid komen er ook weer nieuwe vragen naar boven.
 
@@ -69,13 +69,13 @@ Een design system is namelijk niet alleen een ontwerp- of technische aangelegenh
 
 </DSWSession>
 
-<DSWSession title="Trinity: het design system van de KvK" speakers={[speakers.HulyaBozkurt,speakers.JoshuaGrootveld]} organisation="Kamer van Koophandel" signupLink="https://www.gebruikercentraal.nl/agenda/trinity-het-design-system-van-de-kvk#event-booking">
+<DSWSession title="Trinity: het design system van de KvK" speakers={[speakers.HulyaBozkurt,speakers.JoshuaGrootveld]} organisation="Kamer van Koophandel" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-kvk">
 
 In deze sessie krijg je alles te horen over Trinity, het design system van de Kamer van Koophandel (KVK) dat wordt onderhouden door Team Matrix. Tooling, context en impact komt aan de orde, maar er wordt vooral dieper in gegaan op hoe KVK omgaat met de uitdagingen rondom de adoptie van het design system door de gebruikers. Ben jij erbij? Red pill or blue pill?
 
 </DSWSession>
 
-<DSWSession title="Toegan­kelijke formulieren met NL Design System" speakers={[speakers.RobbertBroersma,speakers.HiddeDeVries]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/toegankelijke-formulieren-met-nl-design-system#event-booking">
+<DSWSession title="Toegan­kelijke formulieren met NL Design System" speakers={[speakers.RobbertBroersma,speakers.HiddeDeVries]} organisation="NL Design System" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-formulieren">
 
 Ze zijn essentieel voor vrijwel alle digitale overheidsdiensten: formulieren. Zeker nu de Wet modernisering elektronisch bestuurlijk verkeer (WMEBV) burgers en bedrijven het recht gaat geven om elektronisch zaken te doen met de overheid. Logisch dus dat steeds meer organisaties NL Design System gebruiken voor formulieren.
 
