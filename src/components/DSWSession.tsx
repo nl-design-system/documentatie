@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import VimeoPlayer from 'react-player';
 
 interface DSWSessionProps {
   headingLevel: 2 | 3 | 4 | 5 | 6;
@@ -14,6 +15,7 @@ interface DSWSessionProps {
   signupLink: string;
   lang?: 'en' | 'nl';
   organisation: string;
+  vimeoUrl?: string;
 }
 
 interface DSWSpeaker {
@@ -33,15 +35,20 @@ export const DSWSession = ({
   speakers,
   signupLink,
   organisation,
+  vimeoUrl,
   children,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
       {title}
     </Heading>
-    <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
-      {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
-    </Paragraph>
+    {vimeoUrl ? (
+      <VimeoPlayer url={vimeoUrl} className={clsx(style['dsw-session__video'])} controls />
+    ) : (
+      <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
+        {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
+      </Paragraph>
+    )}
     {children}
     {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (
       <Paragraph>
@@ -56,15 +63,17 @@ export const DSWSession = ({
         </div>
       ))}
     </aside>
-    <Paragraph className={clsx(style['homepage-hero__call-to-action'])}>
-      <Link className={clsx('utrecht-link', style['homepage-hero__call-to-action-link'])} to={signupLink}>
-        {lang === 'en' ? 'Sign up for' : 'Aanmelden voor'} “{title}”
-        <IconChevronRight
-          className={clsx('utrecht-icon', style['homepage-hero__call-to-action-icon'])}
-          style={{ verticalAlign: 'middle' }}
-        />
-      </Link>
-    </Paragraph>
+    {signupLink && (
+      <Paragraph className={clsx(style['homepage-hero__call-to-action'])}>
+        <Link className={clsx('utrecht-link', style['homepage-hero__call-to-action-link'])} to={signupLink}>
+          {lang === 'en' ? 'Sign up for' : 'Aanmelden voor'} “{title}”
+          <IconChevronRight
+            className={clsx('utrecht-icon', style['homepage-hero__call-to-action-icon'])}
+            style={{ verticalAlign: 'middle' }}
+          />
+        </Link>
+      </Paragraph>
+    )}
     <div className={clsx(style['homepage-hero__linear-gradient'])} />
   </article>
 );

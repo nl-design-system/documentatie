@@ -259,7 +259,7 @@ organisation: "NL Design System",
 ],
 subject: "Management-panel: ervaringen met NL Design System uit de praktijk",
 singupLink:
-"https://https://www.gebruikercentraal.nl/agenda/management-panel-ervaringen-met-nl-design-system-uit-de-praktijk/",
+"https://www.gebruikercentraal.nl/agenda/management-panel-ervaringen-met-nl-design-system-uit-de-praktijk/",
 icalLink: "/dsweek-2023/management-panel.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },

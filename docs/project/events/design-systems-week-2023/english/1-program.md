@@ -11,6 +11,7 @@ slug: /events/design-systems-week-2023/en/program
 import DSWSession from '../../../../../src/components/DSWSession'
 import speakers from '../speakers.json'
 import { Link } from '@utrecht/component-library-react/dist/css-module';
+import VimeoPlayer from "react-player";
 
 <div lang="en">
 
@@ -27,6 +28,11 @@ These are all sessions that will be in English, with sign up links to each. You 
 All sessions can be joined online for free. You will receive a link after sign-up. This link is valid for all talks during the week. Each talk will take about 30 minutes, including time for questions.
 
 <DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/#event-booking">
+
+<VimeoPlayer
+  url="https://vimeo.com/870340269"
+  controls
+/>
 
 Marco-Christian Krenn and Jan Six team up to present The future of design decisions. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.
 
