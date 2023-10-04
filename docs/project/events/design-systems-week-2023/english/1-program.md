@@ -27,12 +27,7 @@ These are all sessions that will be in English, with sign up links to each. You 
 
 All sessions can be joined online for free. You will receive a link after sign-up. This link is valid for all talks during the week. Each talk will take about 30 minutes, including time for questions.
 
-<DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/#event-booking">
-
-<VimeoPlayer
-  url="https://vimeo.com/870340269"
-  controls
-/>
+<DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" vimeoUrl="https://vimeo.com/870340269">
 
 Marco-Christian Krenn and Jan Six team up to present The future of design decisions. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.
 
@@ -40,7 +35,7 @@ You get a glimpse into the future around design tokens and learn about all the p
 
 </DSWSession>
 
-<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
+<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-public-infrastructure">
 
 Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.
 
@@ -48,7 +43,7 @@ The design system and especially the engineering of it plays a crucial part in d
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" signupLink="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit#event-booking">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
@@ -56,7 +51,7 @@ Designer Joe Lanman is involved in this project as a designer and tells you more
 Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He’s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit – a way to rapidly prototype realistic services in HTML.
 </DSWSession>
 
-<DSWSession lang="en" title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
+<DSWSession lang="en" title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal">
 
 Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe.
 

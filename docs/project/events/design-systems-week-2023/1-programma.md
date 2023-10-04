@@ -83,7 +83,7 @@ In deze sessie vertellen ontwikkelaars Robbert Broersma en Hidde de Vries je ove
 
 </DSWSession>
 
-<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation=" Public Digital Innovation Space, Cabinet Office, Taiwan" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure#event-booking">
+<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation=" Public Digital Innovation Space, Cabinet Office, Taiwan" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-public-infrastructure">
 
 Digitale overheidsdiensten zouden vandaag de dag als publieke infrastructuur moeten worden gezien. Taiwan is in de ongebruikelijke positie dat digitale weerstand essentieel is voor alle overheidsdiensten.
 
@@ -91,7 +91,7 @@ Het design system, met name hoe het gebouwd wordt, speelt een belangrijke rol in
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} organisation="GOV.UK" signupLink="https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit#event-booking">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} organisation="GOV.UK">
 
 Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).
 
@@ -99,7 +99,7 @@ Joe Lanman is als ontwerper betrokken bij dit project en vertelt je er meer over
 
 </DSWSession>
 
-<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal" signupLink="https://www.gebruikercentraal.nl/agenda/estland-design-system#event-booking">
+<DSWSession title="Estonia Design System" speakers={[speakers.AleksandrBeliaev]} organisation="Nortal">
 
 Veera is een codenaam voor een design system gebruikt door vele Estlandse overheids organisaties, als een gemeenschappelijke UI taal voor de hele Estlandse staat. Aleksandr zal het hebben over zijn eigen ervaringen en die van zijn collega's bij het opzetten, onderhouden en ondersteunen van een componenten bibliotheek als levend onderdeel van het design system.
 
