@@ -118,7 +118,7 @@ const config = {
     announcementBar: {
       id: 'dsw_announcement',
       content:
-        '✨ Het is Design Systems Week 2023! ✨<br/>15 gratis online sessies van 30 minuten! <a class="utrecht-link" href="/events/design-systems-week-2023/tijdschema">Bekijk het schema</a> en zet ze in je agenda.',
+        'Design Systems Week 2023 is voorbij. Gelukkig hebben we de <a class="utrecht-link" href="/events/design-systems-week-2023/programma">video\'s</a> nog!',
       backgroundColor: '#148839',
       textColor: '#fff',
       isCloseable: false,
