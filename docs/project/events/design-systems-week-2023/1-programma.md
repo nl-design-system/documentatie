@@ -91,7 +91,7 @@ Het design system, met name hoe het gebouwd wordt, speelt een belangrijke rol in
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} organisation="GOV.UK">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} organisation="GOV.UK" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-govuk">
 
 Een verzameling losse componenten is 1 ding, maar het wordt pas écht interessant als ze bij elkaar komen. Zodat er een volwaardige, digitale overheidsdienst of -product ontstaat. Bij GOV.UK maken ze het makkelijker om te zien hoe zo’n dienst of product eruitziet. Daarvoor gebruiken ze de [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/).
 
@@ -107,13 +107,13 @@ Meld je aan als je wil leren van een complex praktijkvoorbeeld. Dit is het verha
 
 </DSWSession>
 
-<DSWSession title="Betere toegankelijkheid met een design system" speakers={[speakers.DanielleRameau]} organisation="Sanoma Learning" signupLink="https://www.gebruikercentraal.nl/agenda/betere-toegankelijkheid-met-een-design-system#event-booking">
+<DSWSession title="Betere toegankelijkheid met een design system" speakers={[speakers.DanielleRameau]} organisation="Sanoma Learning" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-sanoma">
 
 Hoe kan een design system helpen bij het verbeteren van toegankelijkheid, in 12 educatieve producten, die dagelijks worden gebruikt door 25 miljoen leerlingen over heel Europa? Dat is 1 van de vragen die Sanoma Learning de afgelopen tijd bezig hield. Design systems lead Daniëlle Rameau gaat je meer vertellen over hun aanpak.
 
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} organisation="Nordhealth" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt#event-booking">
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} organisation="Nordhealth" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-web-components">
 
 Nord is het design system van Nordhealth, een bedrijf dat software maakt voor de gezondheidszorg. Design system lead David Darnes vertelt je in deze sessie over hoe het hen vergaat met Web Components, en hoe die ervoor zorgen dat ze Nord-componenten heel flexibel kunnen gebruiken, met allerlei verschillende technologieën.
 
@@ -123,7 +123,7 @@ Natuurlijk zijn er allerlei nuances en subtiliteiten rondom het gebruik van Web 
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} organisation="GitHub" signupLink="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams#event-booking">
+<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} organisation="GitHub" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-designops">
 
 DesignOps (design operations) is het bindmiddel dat een designteam bij elkaar houdt. Daarnaast verbindt het design met andere disciplines binnen én buiten de eigen organisatie. Zelfs als je organisatie geen formeel DesignOps-team heeft, wordt design operations waarschijnlijk wel al door iemand bij jullie gedaan.
 
@@ -133,7 +133,7 @@ Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de gelee
 
 </DSWSession>
 
-<DSWSession title="Management-panel: ervaringen met NL Design System uit de praktijk" speakers={[speakers.JeffreyKlardie, speakers.RoelDerksen, speakers.VincentVanBeek, speakers.PeterBerrevoets]} organisation="NL Design System" signupLink="https://www.gebruikercentraal.nl/agenda/management-panel-ervaringen-met-nl-design-system-uit-de-praktijk#event-booking">
+<DSWSession title="Management-panel: ervaringen met NL Design System uit de praktijk" speakers={[speakers.JeffreyKlardie, speakers.RoelDerksen, speakers.VincentVanBeek, speakers.PeterBerrevoets]} organisation="NL Design System" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-mgmt">
 
 Er is tussen overheidsorganisaties enorm veel overlap in de online diensten die we bouwen. Van formulieren (van eenvoudig tot complex) tot zaaksystemen tot digitale processen voor burgers en ambtenaren. Al dit soort websites en apps willen we natuurlijk toegankelijk, inclusief en gebruiksvriendelijk opleveren.
 
