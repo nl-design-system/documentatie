@@ -43,7 +43,7 @@ The design system and especially the engineering of it plays a crucial part in d
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-govuk">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
@@ -58,7 +58,7 @@ Veera is a codename for a design system employed by many Estonian governmental a
 Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" signupLink="https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt#event-booking">
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-web-components">
 
 Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.
 
@@ -68,7 +68,7 @@ Of course, there is lots of nuance and there are some caveats and challenges. In
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub" signupLink="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams#event-booking">
+<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-designops">
 
 DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn’t have a formal DesignOps team, this work is likely being done by someone.
 
