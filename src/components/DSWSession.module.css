@@ -50,4 +50,15 @@
 .dsw-session__video {
   margin-block-start: 24px;
   margin-block-end: 32px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+.dsw-session__video > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.dsw-session__video iframe {
+  max-width: 100%;
 }
