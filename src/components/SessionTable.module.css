@@ -1,3 +1,8 @@
+.session-table-container {
+  max-width: 90vw;
+  overflow-x: auto;
+}
+
 .session-table {
   --utrecht-paragraph-margin-block-start: 0;
   --utrecht-icon-size: 1em;
