@@ -2,26 +2,21 @@
 exports.id = 7286;
 exports.ids = [7286];
 exports.modules = {
-
-/***/ 24296:
-/***/ ((module) => {
-
-
-
-module.exports = scss
-scss.displayName = 'scss'
-scss.aliases = []
-function scss(Prism) {
-  Prism.languages.scss = Prism.languages.extend('css', {
+ /***/ 24296: /***/ (module) => {
+  module.exports = scss;
+  scss.displayName = "scss";
+  scss.aliases = [];
+  function scss(Prism) {
+   Prism.languages.scss = Prism.languages.extend("css", {
     comment: {
-      pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
-      lookbehind: true
+     pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|\/\/.*)/,
+     lookbehind: true,
     },
     atrule: {
-      pattern: /@[\w-](?:\([^()]+\)|[^()\s]|\s+(?!\s))*?(?=\s+[{;])/,
-      inside: {
-        rule: /@[\w-]+/ // See rest below
-      }
+     pattern: /@[\w-](?:\([^()]+\)|[^()\s]|\s+(?!\s))*?(?=\s+[{;])/,
+     inside: {
+      rule: /@[\w-]+/, // See rest below
+     },
     },
     // url, compassified
     url: /(?:[-a-z]+-)?url(?=\()/i,
@@ -33,66 +28,63 @@ function scss(Prism) {
     // can "pass" as a selector- e.g: proper#{$erty})
     // this one was hard to do, so please be careful if you edit this one :)
     selector: {
-      // Initial look-ahead is used to prevent matching of blank selectors
-      pattern:
-        /(?=\S)[^@;{}()]?(?:[^@;{}()\s]|\s+(?!\s)|#\{\$[-\w]+\})+(?=\s*\{(?:\}|\s|[^}][^:{}]*[:{][^}]))/,
-      inside: {
-        parent: {
-          pattern: /&/,
-          alias: 'important'
-        },
-        placeholder: /%[-\w]+/,
-        variable: /\$[-\w]+|#\{\$[-\w]+\}/
-      }
+     // Initial look-ahead is used to prevent matching of blank selectors
+     pattern: /(?=\S)[^@;{}()]?(?:[^@;{}()\s]|\s+(?!\s)|#\{\$[-\w]+\})+(?=\s*\{(?:\}|\s|[^}][^:{}]*[:{][^}]))/,
+     inside: {
+      parent: {
+       pattern: /&/,
+       alias: "important",
+      },
+      placeholder: /%[-\w]+/,
+      variable: /\$[-\w]+|#\{\$[-\w]+\}/,
+     },
     },
     property: {
-      pattern: /(?:[-\w]|\$[-\w]|#\{\$[-\w]+\})+(?=\s*:)/,
-      inside: {
-        variable: /\$[-\w]+|#\{\$[-\w]+\}/
-      }
-    }
-  })
-  Prism.languages.insertBefore('scss', 'atrule', {
+     pattern: /(?:[-\w]|\$[-\w]|#\{\$[-\w]+\})+(?=\s*:)/,
+     inside: {
+      variable: /\$[-\w]+|#\{\$[-\w]+\}/,
+     },
+    },
+   });
+   Prism.languages.insertBefore("scss", "atrule", {
     keyword: [
-      /@(?:content|debug|each|else(?: if)?|extend|for|forward|function|if|import|include|mixin|return|use|warn|while)\b/i,
-      {
-        pattern: /( )(?:from|through)(?= )/,
-        lookbehind: true
-      }
-    ]
-  })
-  Prism.languages.insertBefore('scss', 'important', {
+     /@(?:content|debug|each|else(?: if)?|extend|for|forward|function|if|import|include|mixin|return|use|warn|while)\b/i,
+     {
+      pattern: /( )(?:from|through)(?= )/,
+      lookbehind: true,
+     },
+    ],
+   });
+   Prism.languages.insertBefore("scss", "important", {
     // var and interpolated vars
-    variable: /\$[-\w]+|#\{\$[-\w]+\}/
-  })
-  Prism.languages.insertBefore('scss', 'function', {
-    'module-modifier': {
-      pattern: /\b(?:as|hide|show|with)\b/i,
-      alias: 'keyword'
+    variable: /\$[-\w]+|#\{\$[-\w]+\}/,
+   });
+   Prism.languages.insertBefore("scss", "function", {
+    "module-modifier": {
+     pattern: /\b(?:as|hide|show|with)\b/i,
+     alias: "keyword",
     },
     placeholder: {
-      pattern: /%[-\w]+/,
-      alias: 'selector'
+     pattern: /%[-\w]+/,
+     alias: "selector",
     },
     statement: {
-      pattern: /\B!(?:default|optional)\b/i,
-      alias: 'keyword'
+     pattern: /\B!(?:default|optional)\b/i,
+     alias: "keyword",
     },
     boolean: /\b(?:false|true)\b/,
     null: {
-      pattern: /\bnull\b/,
-      alias: 'keyword'
+     pattern: /\bnull\b/,
+     alias: "keyword",
     },
     operator: {
-      pattern: /(\s)(?:[-+*\/%]|[=!]=|<=?|>=?|and|not|or)(?=\s)/,
-      lookbehind: true
-    }
-  })
-  Prism.languages.scss['atrule'].inside.rest = Prism.languages.scss
-}
+     pattern: /(\s)(?:[-+*\/%]|[=!]=|<=?|>=?|and|not|or)(?=\s)/,
+     lookbehind: true,
+    },
+   });
+   Prism.languages.scss["atrule"].inside.rest = Prism.languages.scss;
+  }
 
-
-/***/ })
-
+  /***/
+ },
 };
-;

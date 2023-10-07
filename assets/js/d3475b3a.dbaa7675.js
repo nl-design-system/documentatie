@@ -1,1 +1,9 @@
-"use strict";(self.webpackChunk_nl_design_system_website=self.webpackChunk_nl_design_system_website||[]).push([[4359],{7776:e=>{e.exports=JSON.parse('{"title":"Overzicht","keywords":["designers","overzicht"],"slug":"/meedoen/als-designer/overzicht","permalink":"/meedoen/als-designer/overzicht","navigation":{"previous":{"title":"Design Tokens - Introductie","permalink":"/meedoen/design-tokens/"},"next":{"title":"Index","permalink":"/meedoen/als-designer/"}}}')}}]);
+"use strict";
+(self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
+ [4359],
+ {
+  7776: (e) => {
+   e.exports = JSON.parse('{"title":"Overzicht","keywords":["designers","overzicht"],"slug":"/meedoen/als-designer/overzicht","permalink":"/meedoen/als-designer/overzicht","navigation":{"previous":{"title":"Design Tokens - Introductie","permalink":"/meedoen/design-tokens/"},"next":{"title":"Index","permalink":"/meedoen/als-designer/"}}}');
+  },
+ },
+]);

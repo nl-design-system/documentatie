@@ -2,17 +2,12 @@
 exports.id = 2564;
 exports.ids = [2564];
 exports.modules = {
-
-/***/ 13600:
-/***/ ((module) => {
-
-
-
-module.exports = git
-git.displayName = 'git'
-git.aliases = []
-function git(Prism) {
-  Prism.languages.git = {
+ /***/ 13600: /***/ (module) => {
+  module.exports = git;
+  git.displayName = "git";
+  git.aliases = [];
+  function git(Prism) {
+   Prism.languages.git = {
     /*
      * A simple one line comment like in a git status command
      * For instance:
@@ -38,16 +33,16 @@ function git(Prism) {
      * $ git add file.txt
      */
     command: {
-      pattern: /^.*\$ git .*$/m,
-      inside: {
-        /*
-         * A git command can contain a parameter starting by a single or a double dash followed by a string
-         * For instance:
-         * $ git diff --cached
-         * $ git log -p
-         */
-        parameter: /\s--?\w+/
-      }
+     pattern: /^.*\$ git .*$/m,
+     inside: {
+      /*
+       * A git command can contain a parameter starting by a single or a double dash followed by a string
+       * For instance:
+       * $ git diff --cached
+       * $ git log -p
+       */
+      parameter: /\s--?\w+/,
+     },
     },
     /*
      * Coordinates displayed in a git diff command
@@ -73,12 +68,10 @@ function git(Prism) {
      *
      *     Add of a new line
      */
-    'commit-sha1': /^commit \w{40}$/m
+    "commit-sha1": /^commit \w{40}$/m,
+   };
   }
-}
 
-
-/***/ })
-
+  /***/
+ },
 };
-;

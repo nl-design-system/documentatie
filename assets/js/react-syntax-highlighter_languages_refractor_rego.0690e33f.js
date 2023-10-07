@@ -2,48 +2,39 @@
 exports.id = 869;
 exports.ids = [869];
 exports.modules = {
-
-/***/ 93503:
-/***/ ((module) => {
-
-
-
-module.exports = rego
-rego.displayName = 'rego'
-rego.aliases = []
-function rego(Prism) {
-  // https://www.openpolicyagent.org/docs/latest/policy-reference/
-  Prism.languages.rego = {
+ /***/ 93503: /***/ (module) => {
+  module.exports = rego;
+  rego.displayName = "rego";
+  rego.aliases = [];
+  function rego(Prism) {
+   // https://www.openpolicyagent.org/docs/latest/policy-reference/
+   Prism.languages.rego = {
     comment: /#.*/,
     property: {
-      pattern:
-        /(^|[^\\.])(?:"(?:\\.|[^\\"\r\n])*"|`[^`]*`|\b[a-z_]\w*\b)(?=\s*:(?!=))/i,
-      lookbehind: true,
-      greedy: true
+     pattern: /(^|[^\\.])(?:"(?:\\.|[^\\"\r\n])*"|`[^`]*`|\b[a-z_]\w*\b)(?=\s*:(?!=))/i,
+     lookbehind: true,
+     greedy: true,
     },
     string: {
-      pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"|`[^`]*`/,
-      lookbehind: true,
-      greedy: true
+     pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"|`[^`]*`/,
+     lookbehind: true,
+     greedy: true,
     },
-    keyword:
-      /\b(?:as|default|else|import|not|null|package|set(?=\s*\()|some|with)\b/,
+    keyword: /\b(?:as|default|else|import|not|null|package|set(?=\s*\()|some|with)\b/,
     boolean: /\b(?:false|true)\b/,
     function: {
-      pattern: /\b[a-z_]\w*\b(?:\s*\.\s*\b[a-z_]\w*\b)*(?=\s*\()/i,
-      inside: {
-        namespace: /\b\w+\b(?=\s*\.)/,
-        punctuation: /\./
-      }
+     pattern: /\b[a-z_]\w*\b(?:\s*\.\s*\b[a-z_]\w*\b)*(?=\s*\()/i,
+     inside: {
+      namespace: /\b\w+\b(?=\s*\.)/,
+      punctuation: /\./,
+     },
     },
     number: /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
     operator: /[-+*/%|&]|[<>:=]=?|!=|\b_\b/,
-    punctuation: /[,;.\[\]{}()]/
+    punctuation: /[,;.\[\]{}()]/,
+   };
   }
-}
 
-
-/***/ })
-
+  /***/
+ },
 };
-;

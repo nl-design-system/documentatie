@@ -2,48 +2,40 @@
 exports.id = 3236;
 exports.ids = [3236];
 exports.modules = {
-
-/***/ 30527:
-/***/ ((module) => {
-
-
-
-module.exports = roboconf
-roboconf.displayName = 'roboconf'
-roboconf.aliases = []
-function roboconf(Prism) {
-  Prism.languages.roboconf = {
+ /***/ 30527: /***/ (module) => {
+  module.exports = roboconf;
+  roboconf.displayName = "roboconf";
+  roboconf.aliases = [];
+  function roboconf(Prism) {
+   Prism.languages.roboconf = {
     comment: /#.*/,
     keyword: {
-      pattern:
-        /(^|\s)(?:(?:external|import)\b|(?:facet|instance of)(?=[ \t]+[\w-]+[ \t]*\{))/,
-      lookbehind: true
+     pattern: /(^|\s)(?:(?:external|import)\b|(?:facet|instance of)(?=[ \t]+[\w-]+[ \t]*\{))/,
+     lookbehind: true,
     },
     component: {
-      pattern: /[\w-]+(?=[ \t]*\{)/,
-      alias: 'variable'
+     pattern: /[\w-]+(?=[ \t]*\{)/,
+     alias: "variable",
     },
     property: /[\w.-]+(?=[ \t]*:)/,
     value: {
-      pattern: /(=[ \t]*(?![ \t]))[^,;]+/,
-      lookbehind: true,
-      alias: 'attr-value'
+     pattern: /(=[ \t]*(?![ \t]))[^,;]+/,
+     lookbehind: true,
+     alias: "attr-value",
     },
     optional: {
-      pattern: /\(optional\)/,
-      alias: 'builtin'
+     pattern: /\(optional\)/,
+     alias: "builtin",
     },
     wildcard: {
-      pattern: /(\.)\*/,
-      lookbehind: true,
-      alias: 'operator'
+     pattern: /(\.)\*/,
+     lookbehind: true,
+     alias: "operator",
     },
-    punctuation: /[{},.;:=]/
+    punctuation: /[{},.;:=]/,
+   };
   }
-}
 
-
-/***/ })
-
+  /***/
+ },
 };
-;

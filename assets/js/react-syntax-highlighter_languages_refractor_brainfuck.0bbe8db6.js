@@ -2,40 +2,33 @@
 exports.id = 5539;
 exports.ids = [5539];
 exports.modules = {
-
-/***/ 61321:
-/***/ ((module) => {
-
-
-
-module.exports = brainfuck
-brainfuck.displayName = 'brainfuck'
-brainfuck.aliases = []
-function brainfuck(Prism) {
-  Prism.languages.brainfuck = {
+ /***/ 61321: /***/ (module) => {
+  module.exports = brainfuck;
+  brainfuck.displayName = "brainfuck";
+  brainfuck.aliases = [];
+  function brainfuck(Prism) {
+   Prism.languages.brainfuck = {
     pointer: {
-      pattern: /<|>/,
-      alias: 'keyword'
+     pattern: /<|>/,
+     alias: "keyword",
     },
     increment: {
-      pattern: /\+/,
-      alias: 'inserted'
+     pattern: /\+/,
+     alias: "inserted",
     },
     decrement: {
-      pattern: /-/,
-      alias: 'deleted'
+     pattern: /-/,
+     alias: "deleted",
     },
     branching: {
-      pattern: /\[|\]/,
-      alias: 'important'
+     pattern: /\[|\]/,
+     alias: "important",
     },
     operator: /[.,]/,
-    comment: /\S+/
+    comment: /\S+/,
+   };
   }
-}
 
-
-/***/ })
-
+  /***/
+ },
 };
-;
