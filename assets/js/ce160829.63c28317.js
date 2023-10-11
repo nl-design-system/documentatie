@@ -21,7 +21,7 @@
      "article",
      { className: (0, s.Z)(r["dsw-session"]), id: g.toLowerCase().replace(/\s/gi, "-") },
      t.createElement(l.X6, { level: i, className: (0, s.Z)(r["dsw-session__title"]) }, g),
-     u ? t.createElement(d.Z, { url: u, className: (0, s.Z)(r["dsw-session__video"]), controls: !0 }) : t.createElement(l.nv, { className: (0, s.Z)(r["dsw-session__subtitle"]), lead: !0 }, m.map((e) => e.name).join(" & "), " ", "en" === n ? "of" : "van", " ", p),
+     u ? t.createElement(d.Z, { url: u, width: "100%", height: "100%", className: (0, s.Z)(r["dsw-session__video"]), controls: !0 }) : t.createElement(l.nv, { className: (0, s.Z)(r["dsw-session__subtitle"]), lead: !0 }, m.map((e) => e.name).join(" & "), " ", "en" === n ? "of" : "van", " ", p),
      h,
      "nl" === n &&
       m.find((e) => {
