@@ -112,7 +112,7 @@
    var n = s(87462),
     a = s(67294),
     i = s(86010);
-   const r = { "session-table-container": "session-table-container_AJ5Z", "session-table": "session-table_UjSe", "session-table__row": "session-table__row_Q8zO", "session-table__time": "session-table__time_X4_g", "session-table__speakers": "session-table__speakers_zhez", "session-table__speaker": "session-table__speaker_Ghbm", speaker__icon: "speaker__icon_kFX7", speaker__organisation: "speaker__organisation_bGt9" };
+   const r = { "session-table": "session-table_UjSe", "session-table__row": "session-table__row_Q8zO", "session-table__time": "session-table__time_X4_g", "session-table__speakers": "session-table__speakers_zhez", "session-table__speaker": "session-table__speaker_Ghbm", speaker__icon: "speaker__icon_kFX7", speaker__organisation: "speaker__organisation_bGt9" };
    var l = s(65663),
     o = s(8861),
     c = (0, s(30853).Z)("calendar-check", "IconCalendarCheck", [
@@ -129,36 +129,32 @@
     d = (e) => {
      let { lang: t, sessions: s, className: o, ...d } = e;
      return a.createElement(
-      "div",
-      { className: (0, i.Z)(r["session-table-container"], o) },
+      l.iA,
+      (0, n.Z)({ className: (0, i.Z)(r["session-table"], o) }, d),
+      a.createElement(l.xD, null, a.createElement(l.SC, { className: (0, i.Z)(r["session-table__row"]) }, a.createElement(l.xs, null, "nl-NL" === t ? "Tijd" : "Time"), a.createElement(l.xs, null, "nl-NL" === t ? "Spreker" : "Speaker"), a.createElement(l.xs, null, "nl-NL" === t ? "Onderwerp" : "Subject"), "nl-NL" === t && a.createElement(l.xs, null, "Taal"), a.createElement(l.xs, null, "nl-NL" === t ? "Agenda" : "Calendar"))),
       a.createElement(
-       l.iA,
-       (0, n.Z)({ className: (0, i.Z)(r["session-table"], o) }, d),
-       a.createElement(l.xD, null, a.createElement(l.SC, { className: (0, i.Z)(r["session-table__row"]) }, a.createElement(l.xs, null, "nl-NL" === t ? "Tijd" : "Time"), a.createElement(l.xs, null, "nl-NL" === t ? "Spreker" : "Speaker"), a.createElement(l.xs, null, "nl-NL" === t ? "Onderwerp" : "Subject"), "nl-NL" === t && a.createElement(l.xs, null, "Taal"), a.createElement(l.xs, null, "nl-NL" === t ? "Agenda" : "Calendar"))),
-       a.createElement(
-        l.RM,
-        null,
-        s.map((e) => {
-         let { isoDateTime: s, speakers: n, subject: o, singupLink: d, icalLink: g, language: p } = e;
-         return a.createElement(
-          l.SC,
-          { className: (0, i.Z)(r["session-table__row"]) },
-          a.createElement(l.pj, { className: (0, i.Z)(r["session-table__time"]) }, a.createElement(l.nv, null, a.createElement("time", { dateTime: s }, new Intl.DateTimeFormat(t, { hour: "numeric", minute: "numeric", timeZone: "Europe/Amsterdam", timeZoneName: "nl-NL" !== t ? "short" : void 0 }).format(new Date(s))))),
+       l.RM,
+       null,
+       s.map((e) => {
+        let { isoDateTime: s, speakers: n, subject: o, singupLink: d, icalLink: g, language: p } = e;
+        return a.createElement(
+         l.SC,
+         { className: (0, i.Z)(r["session-table__row"]) },
+         a.createElement(l.pj, { className: (0, i.Z)(r["session-table__time"]) }, a.createElement(l.nv, null, a.createElement("time", { dateTime: s }, new Intl.DateTimeFormat(t, { hour: "numeric", minute: "numeric", timeZone: "Europe/Amsterdam", timeZoneName: "nl-NL" !== t ? "short" : void 0 }).format(new Date(s))))),
+         a.createElement(
+          l.pj,
+          null,
           a.createElement(
-           l.pj,
-           null,
-           a.createElement(
-            "div",
-            { className: (0, i.Z)(r["session-table__speakers"]) },
-            n.map((e) => a.createElement(m, e))
-           )
-          ),
-          a.createElement(l.pj, { className: (0, i.Z)(r["session-table__subject"]) }, a.createElement(l.nv, null, a.createElement(l.rU, { href: d }, o))),
-          "nl-NL" === t && a.createElement(l.pj, { className: (0, i.Z)(r["session-table__language"]) }, a.createElement("abbr", { title: p.description }, p.abbr)),
-          a.createElement(l.pj, { className: (0, i.Z)(r["session-table__time"]) }, g && a.createElement(l.rU, { href: g, download: g }, a.createElement(l.JO, { "aria-label": "Download uitnodiging" }, a.createElement(c, null)), " ", "iCal"))
-         );
-        })
-       )
+           "div",
+           { className: (0, i.Z)(r["session-table__speakers"]) },
+           n.map((e) => a.createElement(m, e))
+          )
+         ),
+         a.createElement(l.pj, { className: (0, i.Z)(r["session-table__subject"]) }, a.createElement(l.nv, null, a.createElement(l.rU, { href: d }, o))),
+         "nl-NL" === t && a.createElement(l.pj, { className: (0, i.Z)(r["session-table__language"]) }, a.createElement("abbr", { title: p.description }, p.abbr)),
+         a.createElement(l.pj, { className: (0, i.Z)(r["session-table__time"]) }, g && a.createElement(l.rU, { href: g, download: g }, a.createElement(l.JO, { "aria-label": "Download uitnodiging" }, a.createElement(c, null)), " ", "iCal"))
+        );
+       })
       )
      );
     };
