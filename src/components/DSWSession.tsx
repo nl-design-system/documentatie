@@ -43,7 +43,7 @@ export const DSWSession = ({
       {title}
     </Heading>
     {vimeoUrl ? (
-      <VimeoPlayer url={vimeoUrl} className={clsx(style['dsw-session__video'])} controls />
+      <VimeoPlayer url={vimeoUrl} width="100%" height="100%" className={clsx(style['dsw-session__video'])} controls />
     ) : (
       <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
         {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
