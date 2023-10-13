@@ -54,7 +54,6 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
             <TableHeaderCell>{lang === 'nl-NL' ? 'Spreker' : 'Speaker'}</TableHeaderCell>
             <TableHeaderCell>{lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}</TableHeaderCell>
             {lang === 'nl-NL' && <TableHeaderCell>Taal</TableHeaderCell>}
-            <TableHeaderCell>{lang === 'nl-NL' ? 'Agenda' : 'Calendar'}</TableHeaderCell>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -89,16 +88,6 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
                   <abbr title={language.description}>{language.abbr}</abbr>
                 </TableCell>
               )}
-              <TableCell className={clsx(style['session-table__time'])}>
-                {icalLink && (
-                  <Link href={icalLink} download={icalLink}>
-                    <Icon aria-label="Download uitnodiging">
-                      <IconCalendarCheck />
-                    </Icon>{' '}
-                    iCal
-                  </Link>
-                )}
-              </TableCell>
             </TableRow>
           ))}
         </TableBody>
