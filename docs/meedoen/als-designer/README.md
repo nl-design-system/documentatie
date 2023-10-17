@@ -122,7 +122,7 @@ Wil je niets missen van de ontwikkelingen van het NL Design System? Er zijn [ver
 
 ## Help deze documentatie te verbeteren
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system).
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
 
 ## Vragen
 
