@@ -86,7 +86,7 @@ Op dit moment zijn we druk bezig om de NL Design System Figma Bibliotheek te vul
 
 Mis je een component? Zou je een component graag aangepast zien? Heb je input voor de documentatie? Of nog beter heb je ooit onderzoek gedaan naar een component?
 
-[Neem contact op](../../project/kernteam.mdx), dan zetten we het component op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
+[Neem contact op](../../project/kernteam.mdx), dan zetten we het component op [de backlog](https://github.com/nl-design-system/backlog).
 
 ### Patronen en Templates
 
@@ -122,7 +122,7 @@ Wil je niets missen van de ontwikkelingen van het NL Design System? Er zijn [ver
 
 ## Help deze documentatie te verbeteren
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via Github.
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
 
 ## Vragen
 
