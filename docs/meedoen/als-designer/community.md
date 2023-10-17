@@ -49,7 +49,7 @@ We krijgen vaak de vraag of [Rijkshuisstijl](https://www.rijkshuisstijl.nl) ook 
 
 ## Help deze documentatie te verbeteren
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system).
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
 
 ## Vragen
 
