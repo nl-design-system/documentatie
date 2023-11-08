@@ -79,14 +79,14 @@ const config = {
       searchPagePath: 'search',
       //... other Algolia params
     },
-    announcementBar: {
-      id: 'dsw_announcement',
-      content:
-        'Design Systems Week 2023 is voorbij. Gelukkig hebben we de <a class="utrecht-link" href="/events/design-systems-week-2023/programma">video\'s</a> nog!',
-      backgroundColor: '#148839',
-      textColor: '#fff',
-      isCloseable: false,
-    },
+    // announcementBar: {
+    //   id: 'dsw_announcement',
+    //   content:
+    //     'Design Systems Week 2023 is voorbij. Gelukkig hebben we de <a class="utrecht-link" href="/events/design-systems-week-2023/programma">video\'s</a> nog!',
+    //   backgroundColor: '#148839',
+    //   textColor: '#fff',
+    //   isCloseable: false,
+    // },
   },
   i18n: {
     defaultLocale: 'nl',
