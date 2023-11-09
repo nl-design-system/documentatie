@@ -15,14 +15,9 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import HomepageUpdates from '../components/HomepageUpdates';
-import useGlobalData from '@docusaurus/useGlobalData';
-import { BlogCard } from '../components/Blog';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const globalData = useGlobalData();
-  const BLOG_COUNT = 3;
-  const blogItems = globalData['rss-blog']['default']['blogItems'].slice(0, BLOG_COUNT);
 
   return (
     <Layout
@@ -272,17 +267,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </CardGroup>
-          <Heading2>Blog</Heading2>
-          <CardGroup appearance="large">
-            {blogItems.map((item) => (
-              <BlogCard {...item} key={item.uuid} headingLevel={3} />
-            ))}
-          </CardGroup>
-          <Paragraph>
-            <DocusaurusLink to="/project/blog" className="utrecht-link">
-              Bekijk meer blog artikelen
-            </DocusaurusLink>
-          </Paragraph>
         </HomepageUpdates>
         <HomepageFooter />
       </main>
