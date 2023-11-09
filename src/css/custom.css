@@ -447,7 +447,7 @@ li a {
   }
 
   .navbar__inner {
-    padding-inline-start: 8px;
+    padding-inline-start: 16px;
     padding-inline-end: 16px;
     align-items: center;
     min-height: 80px;
