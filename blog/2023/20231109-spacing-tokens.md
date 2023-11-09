@@ -16,7 +16,7 @@ Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGeme
 
 De belangrijkste reden voor deze samenkomst: op dit moment zijn er nog geen afspraken over de verticale ruimte tussen componenten. Dat zit gebruikersvriendelijkheid in de weg, doordat er onvoldoende relatie en hiërarchie tussen componenten bestaat.
 
-Tijdens een workshop kwamen designers bij elkaar om samen te werken aan twee doelen:
+De designers + enkele leden uit het kernteam (Rozerin, René, Martijn, Jeroen, Jeffrey, Yolijn en Robbert) kwamen bij elkaar om samen te werken aan twee doelen:
 
 - een systeem voor verticale paddings en/of margins dat intuïtief en logisch is (met design tokens voor implementatie en documentatie)
 - richtlijnen voor het gebruik van paddings en margins (waarin redeneringen en werking worden uitgelegd)
