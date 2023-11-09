@@ -1,4 +1,4 @@
-/*! For license information please see main.53f9f224.js.LICENSE.txt */
+/*! For license information please see main.9d786ae1.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -12657,7 +12657,6 @@
      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
      colorMode: { disableSwitch: !0, defaultMode: "light", respectPrefersColorScheme: !1 },
      algolia: { appId: "HS7BGF6EOX", apiKey: "ce625c137581b1c1f4bdd3912398834b", indexName: "nldesignsystem", contextualSearch: !0, searchParameters: {}, searchPagePath: "search" },
-     announcementBar: { id: "dsw_announcement", content: 'Design Systems Week 2023 is voorbij. Gelukkig hebben we de <a class="utrecht-link" href="/events/design-systems-week-2023/programma">video\'s</a> nog!', backgroundColor: "#148839", textColor: "#fff", isCloseable: !1 },
      metadata: [],
      prism: {
       additionalLanguages: [],
