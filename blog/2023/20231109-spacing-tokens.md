@@ -48,10 +48,10 @@ Er zijn ook nog wel wat open vragen:
 - Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?
 - Hoe zou je deze spacing als designer willen toepassen in een ontwerptool als Figma? Als “spacer-blokje”? Met behulp van variabele? Wil je dit überhaupt wel allemaal in Figma doorvoeren?
 
-Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in `#nl-design-system-designers` in onze Slack community.
+Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het `#nl-design-system-designers`-kanaal in de [Code for NL Slack community](https://praatmee.codefor.nl/).
 
 ## Vervolg
 
 We zijn bovenstaand systeem aan het uittesten in Figma, om te kijken hoe het in de praktijk werkt. Dat willen we ook gaan doen voor bijvoorbeeld formulier- en contentpagina's: _the proof of the pudding is in the eating_.
 
-Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op Slack (`nl-design-system-designers`), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.
+Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op [Slack](https://praatmee.codefor.nl/) (kanaal: `#nl-design-system-designers`), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.
