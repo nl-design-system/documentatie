@@ -1,0 +1,12 @@
+"use strict";
+(self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
+ [50081],
+ {
+  56267: (e) => {
+   function s(e) {
+    e.languages.properties = { comment: /^[ \t]*[#!].*$/m, "attr-value": { pattern: /(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?: *[=:] *(?! )| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m, lookbehind: !0 }, "attr-name": /^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?= *[=:]| )/m, punctuation: /[=:]/ };
+   }
+   (e.exports = s), (s.displayName = "properties"), (s.aliases = []);
+  },
+ },
+]);

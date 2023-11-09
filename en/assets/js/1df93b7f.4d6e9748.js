@@ -1,0 +1,62 @@
+"use strict";
+(self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
+ [53237],
+ {
+  53865: (e, t, n) => {
+   n.d(t, { Z: () => a });
+   var a = (0, n(30853).Z)("chevron-right", "IconChevronRight", [["path", { d: "M9 6l6 6l-6 6", key: "svg-0" }]]);
+  },
+  31817: (e, t, n) => {
+   n.d(t, { Zb: () => s, aY: () => i, um: () => d, wu: () => o });
+   var a = n(87462),
+    r = n(67294),
+    l = n(86010),
+    c = n(65663);
+   const m = { cardgroup: "cardgroup_0VVt", "cardgroup--small": "cardgroup--small_BDzz", "cardgroup--medium": "cardgroup--medium_xS6r", "cardgroup--large": "cardgroup--large_Tjo8", cardgroup__card: "cardgroup__card_emnt", "cardgroup__card--small": "cardgroup__card--small_bxfC", "cardgroup__card--medium": "cardgroup__card--medium_xiP2", "cardgroup__card--large": "cardgroup__card--large_PGe3", cardgroup__link: "cardgroup__link_YISR", card__illustration: "card__illustration_MVXv", "card__illustration--background": "card__illustration--background_cTcZ", card__content: "card__content_LYKG" },
+    o = (e) => {
+     let { background: t, children: n, className: c, ...o } = e;
+     return r.createElement("div", (0, a.Z)({ className: (0, l.Z)(m.card__illustration, t && m["card__illustration--background"], c) }, o), n);
+    },
+    i = (e) => r.createElement("div", (0, a.Z)({ className: (0, l.Z)(m.card__content) }, e)),
+    s = (e) => {
+     let { href: t, appearance: n, className: a, component: o = "div", children: i } = e;
+     const s = (e) => ("article" === o ? r.createElement("article", e) : "section" === o ? r.createElement("section", e) : r.createElement("div", e)),
+      d = r.createElement(s, { className: (0, l.Z)(m.cardgroup__card, m[`cardgroup__card--${n}`], a) }, i);
+     return t ? r.createElement(c.rU, { href: t, boxContent: !0, className: m.cardgroup__link }, d) : d;
+    },
+    d = (e) => {
+     let { appearance: t = "medium", children: n } = e;
+     return r.createElement("div", { className: (0, l.Z)(m.cardgroup, m[`cardgroup--${t}`]) }, n);
+    };
+  },
+  53894: (e, t, n) => {
+   n.r(t), n.d(t, { default: () => k });
+   var a = n(67294),
+    r = n(23770),
+    l = n(52263),
+    c = n(86010),
+    m = n(39960);
+   const o = { "homepage-hero": "homepage-hero_QhlF", "homepage-hero__container": "homepage-hero__container_PcJa", "homepage-hero__linear-gradient": "homepage-hero__linear-gradient_h5LU", "homepage-hero__title": "homepage-hero__title_tZhO", "homepage-hero__description": "homepage-hero__description_yXXB", "homepage-hero__images": "homepage-hero__images_sfmM", "homepage-hero__image": "homepage-hero__image_gRv6", "homepage-hero__call-to-action": "homepage-hero__call-to-action_O5xN" };
+   var i = n(53865),
+    s = n(65663);
+   const d = (e) => {
+    let { title: t, ctaLink: n, cta: r, children: l } = e;
+    return a.createElement("div", { className: (0, c.Z)(o["homepage-hero"]) }, a.createElement("div", { className: (0, c.Z)("container", o["homepage-hero__container"]) }, a.createElement(s.nL, { className: (0, c.Z)(o["homepage-hero__title"]) }, t), a.createElement("div", { className: (0, c.Z)(o["homepage-hero__description"]) }, l), a.createElement(s.nv, { className: (0, c.Z)(o["homepage-hero__call-to-action"]) }, a.createElement(m.Z, { className: (0, c.Z)("utrecht-link", o["homepage-hero__call-to-action-link"]), to: n }, r, a.createElement(i.Z, { className: (0, c.Z)("utrecht-icon", o["homepage-hero__call-to-action-icon"]), style: { verticalAlign: "middle" } })))), a.createElement("div", { className: (0, c.Z)(o["homepage-hero__linear-gradient"]) }));
+   };
+   var u = n(31817);
+   const g = "homepage-footer_wrqV",
+    h = "homepage-footer__content_J0LR",
+    p = () => a.createElement("div", { className: (0, c.Z)(g) }, a.createElement("div", { className: (0, c.Z)(h, "container--wide") }, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo-gebruiker-centraal.svg", alt: "Gebruiker Centraal Logo" }), a.createElement(s.nv, null, "NL Design System is onderdeel van ", a.createElement(s.rU, { href: "https://gebruikercentraal.nl" }, "Gebruiker Centraal")))),
+    E = "homepage-updates_AnWt",
+    _ = "homepage-updates__linear-gradient_IYyX",
+    v = (e) => {
+     let { children: t } = e;
+     return a.createElement("div", { className: (0, c.Z)(E) }, a.createElement("div", { className: (0, c.Z)(_) }), a.createElement("div", { className: "container padding-bottom--xl" }, t));
+    };
+   function k() {
+    const { siteConfig: e } = (0, l.Z)();
+    return a.createElement(r.Z, { title: `${e.title} - homepage`, description: "NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke \xe9n toegankelijke online dienstverlening", wrapperClassName: "container--narrow" }, a.createElement("main", null, a.createElement(d, { title: "NL Design System", ctaLink: "meedoen/introductie", cta: "Lees meer over het NL Design System" }, a.createElement(s.nv, { lead: !0 }, "Samen maken we de digitale dienstverlening van de overheid toegankelijk, inclusief en gebruiksvriendelijk."), a.createElement(s.nv, null, "Een design system lijkt op basis van de naam vooral over ontwerp te gaan, maar het is eigenlijk een brede aanpak om makkelijker consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken."), a.createElement(s.nv, null, "Dat doet het kernteam niet alleen, maar samen met ontwerpers, ontwikkelaars, content schrijvers en andere experts uit verschillende organisaties."), a.createElement(s.QI, null, a.createElement(s.AS, null, "Gebouwd en gebruikt door de community"), a.createElement(s.AS, null, "Platform en huisstijl onafhankelijk"), a.createElement(s.AS, null, "Uitbreidbaar en publiek beschikbaar"))), a.createElement("div", { className: "container" }, a.createElement(u.um, null, a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.XJ, null, "Richtlijnen"), a.createElement(s.nv, null, "Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen. Maar ook richtlijnen voor tekst en taalgebruik.")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/richtlijnen/tekst-en-taalgebruik", className: "utrecht-link" }, "Bekijk de richtlijnen")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.XJ, null, "Componenten"), a.createElement(s.nv, null, "Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer. Inclusief code en documentatie.")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/componenten", className: "utrecht-link" }, "Bekijk de componenten")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.XJ, null, "Voorbeelden"), a.createElement(s.nv, null, "Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen.")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/voorbeelden", className: "utrecht-link" }, "Bekijk de voorbeelden")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.XJ, null, "Events"), a.createElement(s.nv, null, "Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de aankondigingen en opnames hier.")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/project/events/overzicht", className: "utrecht-link" }, "Bekijk de events"))))), a.createElement(s.XJ, null, "Meedoen als..."), a.createElement(u.um, null, a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.wu, { background: !0 }, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__organisatie.svg", alt: "Drie verschillende avatars bij elkaar als organisatie" })), a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Organisatie")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/meedoen/introductie", className: "utrecht-link" }, "Meer informatie voor organisaties")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.wu, { background: !0 }, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__leverancier.svg", alt: "Drie verschillende avatars bij elkaar als leverancier" })), a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Leverancier")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/meedoen/als-leverancier/overzicht", className: "utrecht-link" }, "Meer informatie voor leveranciers")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.wu, { background: !0 }, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__developer.svg", alt: "Avatar als developer" })), a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Developer")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/meedoen/als-developer/overzicht", className: "utrecht-link" }, "Meer informatie voor developers")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.wu, { background: !0 }, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__designer.svg", alt: "Avatar als designer" })), a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Designer")), a.createElement(s.nv, null, a.createElement(m.Z, { to: "/meedoen/als-designer/overzicht", className: "utrecht-link" }, "Meer informatie voor designers"))))), a.createElement(s.XJ, null, "Wie doen er al mee?"), a.createElement(u.um, { appearance: "small" }, a.createElement(u.Zb, { appearance: "small", href: "https://github.com/nl-design-system/utrecht" }, a.createElement(u.wu, null, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg", alt: "Utrecht logo" }))), a.createElement(u.Zb, { appearance: "small", href: "https://github.com/nl-design-system/denhaag" }, a.createElement(u.wu, null, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg", alt: "Den Haag logo" }))), a.createElement(u.Zb, { appearance: "small", href: "https://github.com/nl-design-system/rvo" }, a.createElement(u.wu, null, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg", alt: "RVO logo" }))), a.createElement(u.Zb, { appearance: "small", href: "https://github.com/nl-design-system/amsterdam" }, a.createElement(u.wu, null, a.createElement(s.Ee, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg", alt: "Amsterdam logo" })))), a.createElement(s.nv, { className: "homepage__paragraph" }, "En ruim 20 ", a.createElement(s.rU, { href: "https://github.com/nl-design-system/themes" }, "organisaties met een eigen thema"))), a.createElement(v, null, a.createElement(s.XJ, null, "Blijf op de hoogte"), a.createElement(u.um, null, a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Nieuwsbrief"), a.createElement(s.nv, null, "Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System.")), a.createElement(s.nv, null, a.createElement(s.rU, { href: "https://designsystem.gebruikercentraal.nl/nieuwsbrieven/" }, "Meld je aan voor de nieuwsbrief")))), a.createElement(u.Zb, { component: "section", appearance: "medium" }, a.createElement(u.aY, null, a.createElement("div", null, a.createElement(s.aC, null, "Heartbeat"), a.createElement(s.nv, null, "Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken.")), a.createElement(s.nv, null, a.createElement(s.rU, { href: "https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/" }, "Meld je aan voor de heartbeat")))))), a.createElement(p, null)));
+   }
+  },
+ },
+]);
