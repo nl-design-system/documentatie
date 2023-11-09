@@ -21,7 +21,7 @@ export default function BlogLayout(props: BlogLayoutProps): JSX.Element {
             <BreadcrumbNav breadcrumbs={breadcrumbs} />
           </div>
           <main
-            className={clsx('col', {
+            className={clsx('utrecht-document', 'utrecht-html', 'col', {
               'col--7': hasSidebar,
               'col--9 col--offset-1': !hasSidebar,
             })}
