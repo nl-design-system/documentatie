@@ -32,6 +32,6 @@ const sidebar = [
   { type: 'doc', id: 'project/blijf-op-de-hoogte' },
   { type: 'doc', id: 'project/links' },
   { type: 'link', label: 'Blog', href: '/blog' },
-]
+];
 
-module.exports = sidebar
+module.exports = sidebar;
