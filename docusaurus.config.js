@@ -1,12 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const navbar = require('./navConfig');
-const footer = require('./footerConfig');
-const Parser = require('rss-parser');
-const slug = require('limax');
-
-const getBlog = () => new Parser().parseURL('https://www.gebruikercentraal.nl/category/nl-design-system/feed/');
+const navbar = require('./navConfig')
+const footer = require('./footerConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -19,42 +15,6 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
   projectName: 'documentatie', // Usually your repo name.
-  plugins: [
-    async function rssBlog() {
-      return {
-        name: 'rss-blog',
-        async loadContent() {
-          return await getBlog().then((blog) =>
-            blog.items.map((item) => {
-              const [_, uuid] = item.guid.match(/p=(.*)/);
-              const path = `/project/blog/${slug(item.title)}`;
-              return { ...item, uuid, path };
-            }),
-          );
-        },
-        async contentLoaded({ content, actions }) {
-          const { setGlobalData, addRoute } = actions;
-
-          setGlobalData({ blogItems: content });
-
-          addRoute({
-            path: '/project/blog/',
-            component: '@site/src/components/Blog.tsx',
-            exact: true,
-          });
-
-          // @ts-ignore
-          content.map(({ path }) => {
-            addRoute({
-              path,
-              component: '@site/src/components/BlogPost.tsx',
-              exact: true,
-            });
-          });
-        },
-      };
-    },
-  ],
   presets: [
     [
       'classic',
@@ -69,6 +29,10 @@ const config = {
           sidebarPath: require.resolve('./sidebarConfig.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
+        },
+        blog: {
+          postsPerPage: 'ALL',
+          blogSidebarCount: 0,
         },
         theme: {
           customCss: [
@@ -136,6 +100,6 @@ const config = {
       },
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config
