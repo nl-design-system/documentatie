@@ -16,7 +16,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import HomepageUpdates from '../components/HomepageUpdates';
 
-export default function Home() {
+export default function Home(props) {
   const { siteConfig } = useDocusaurusContext();
 
   return (

@@ -4,6 +4,10 @@ module.exports = {
     {
       items: [
         {
+          label: 'Blog',
+          href: '/blog',
+        },
+        {
           label: 'Contact',
           to: '/project/kernteam',
         },
@@ -30,4 +34,4 @@ module.exports = {
       ],
     },
   ],
-};
+}
