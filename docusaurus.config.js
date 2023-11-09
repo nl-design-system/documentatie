@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const navbar = require('./navConfig')
-const footer = require('./footerConfig')
+const navbar = require('./navConfig');
+const footer = require('./footerConfig');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -100,6 +100,6 @@ const config = {
       },
     },
   },
-}
+};
 
-module.exports = config
+module.exports = config;
