@@ -101,7 +101,7 @@
     let { breadcrumbs: t, ...a } = e;
     const E = [{ href: (0, r.Z)("/"), label: "Home", rel: "home" }, ...t],
      { pathname: d } = (0, i.TH)(),
-     b = [...E].reverse().find((e) => e.href !== d);
+     h = [...E].reverse().find((e) => e.href !== d);
     return l.createElement(
      l.Fragment,
      null,
@@ -118,7 +118,7 @@
        })
       )
      ),
-     b && l.createElement("div", { className: (0, m.Z)(n, c) }, l.createElement(u.hE, null, l.createElement(g.Z, { href: b.href, rel: b.rel, className: "utrecht-link utrecht-link--html-a" }, l.createElement(u.JO, null, l.createElement(o.Z, null)), b.label)))
+     h && l.createElement("div", { className: (0, m.Z)(n, c) }, l.createElement(u.hE, null, l.createElement(g.Z, { href: h.href, rel: h.rel, className: "utrecht-link utrecht-link--html-a" }, l.createElement(u.JO, null, l.createElement(o.Z, null)), h.label)))
     );
    };
   },
@@ -131,7 +131,7 @@
    function s(e) {
     const { sidebar: t, toc: a, breadcrumbs: s = [], children: m, ...o } = e,
      u = t && t.items.length > 0;
-    return l.createElement(n.Z, o, l.createElement("div", { className: "container margin-vert--md" }, l.createElement("div", { className: "row" }, l.createElement("div", { className: "col col--9 col--offset-1" }, l.createElement(c.Q, { breadcrumbs: s })), l.createElement("main", { className: (0, r.Z)("col", { "col--7": u, "col--9 col--offset-1": !u }), itemScope: !0, itemType: "http://schema.org/Blog" }, m), a && l.createElement("div", { className: "col col--2" }, a))));
+    return l.createElement(n.Z, o, l.createElement("div", { className: "container margin-vert--md" }, l.createElement("div", { className: "row" }, l.createElement("div", { className: "col col--9 col--offset-1" }, l.createElement(c.Q, { breadcrumbs: s })), l.createElement("main", { className: (0, r.Z)("utrecht-document", "utrecht-html", "col", { "col--7": u, "col--9 col--offset-1": !u }), itemScope: !0, itemType: "http://schema.org/Blog" }, m), a && l.createElement("div", { className: "col col--2" }, a))));
    }
   },
  },

@@ -58,13 +58,13 @@
     o = "breadcrumbs--desktop_v9Xv";
    var s = t(86010),
     d = t(21209),
-    i = t(65663),
-    m = t(76775),
+    m = t(65663),
+    i = t(76775),
     u = t(39960);
    const g = (e) => {
     let { breadcrumbs: a, ...t } = e;
     const g = [{ href: (0, l.Z)("/"), label: "Home", rel: "home" }, ...a],
-     { pathname: _ } = (0, m.TH)(),
+     { pathname: _ } = (0, i.TH)(),
      p = [...g].reverse().find((e) => e.href !== _);
     return r.createElement(
      r.Fragment,
@@ -73,21 +73,21 @@
       "div",
       { className: (0, s.Z)(n, o) },
       r.createElement(
-       i.Qu,
+       m.Qu,
        t,
        g.map((e, a, t) => {
         let { label: l, href: n, rel: c } = e,
          { length: o } = t;
-        return r.createElement(r.Fragment, { key: a }, r.createElement(i.yY, { href: n, current: a === o - 1, disabled: a === o - 1, rel: (0, s.Z)(c, { up: a === o - 2 }) }, l), a < o - 1 && r.createElement(i.sc, null, "/"));
+        return r.createElement(r.Fragment, { key: a }, r.createElement(m.yY, { href: n, current: a === o - 1, disabled: a === o - 1, rel: (0, s.Z)(c, { up: a === o - 2 }) }, l), a < o - 1 && r.createElement(m.sc, null, "/"));
        })
       )
      ),
-     p && r.createElement("div", { className: (0, s.Z)(n, c) }, r.createElement(i.hE, null, r.createElement(u.Z, { href: p.href, rel: p.rel, className: "utrecht-link utrecht-link--html-a" }, r.createElement(i.JO, null, r.createElement(d.Z, null)), p.label)))
+     p && r.createElement("div", { className: (0, s.Z)(n, c) }, r.createElement(m.hE, null, r.createElement(u.Z, { href: p.href, rel: p.rel, className: "utrecht-link utrecht-link--html-a" }, r.createElement(m.JO, null, r.createElement(d.Z, null)), p.label)))
     );
    };
   },
   31817: (e, a, t) => {
-   t.d(a, { Zb: () => i, aY: () => d, um: () => m, wu: () => s });
+   t.d(a, { Zb: () => m, aY: () => d, um: () => i, wu: () => s });
    var r = t(87462),
     l = t(67294),
     n = t(86010),
@@ -98,13 +98,13 @@
      return l.createElement("div", (0, r.Z)({ className: (0, n.Z)(o.card__illustration, a && o["card__illustration--background"], c) }, s), t);
     },
     d = (e) => l.createElement("div", (0, r.Z)({ className: (0, n.Z)(o.card__content) }, e)),
-    i = (e) => {
-     let { href: a, appearance: t, className: r, component: s = "div", children: d } = e;
-     const i = (e) => ("article" === s ? l.createElement("article", e) : "section" === s ? l.createElement("section", e) : l.createElement("div", e)),
-      m = l.createElement(i, { className: (0, n.Z)(o.cardgroup__card, o[`cardgroup__card--${t}`], r) }, d);
-     return a ? l.createElement(c.rU, { href: a, boxContent: !0, className: o.cardgroup__link }, m) : m;
-    },
     m = (e) => {
+     let { href: a, appearance: t, className: r, component: s = "div", children: d } = e;
+     const m = (e) => ("article" === s ? l.createElement("article", e) : "section" === s ? l.createElement("section", e) : l.createElement("div", e)),
+      i = l.createElement(m, { className: (0, n.Z)(o.cardgroup__card, o[`cardgroup__card--${t}`], r) }, d);
+     return a ? l.createElement(c.rU, { href: a, boxContent: !0, className: o.cardgroup__link }, i) : i;
+    },
+    i = (e) => {
      let { appearance: a = "medium", children: t } = e;
      return l.createElement("div", { className: (0, n.Z)(o.cardgroup, o[`cardgroup--${a}`]) }, t);
     };
@@ -117,8 +117,8 @@
     c = t(26595);
    function o(e) {
     const { sidebar: a, toc: t, breadcrumbs: o = [], children: s, ...d } = e,
-     i = a && a.items.length > 0;
-    return r.createElement(n.Z, d, r.createElement("div", { className: "container margin-vert--md" }, r.createElement("div", { className: "row" }, r.createElement("div", { className: "col col--9 col--offset-1" }, r.createElement(c.Q, { breadcrumbs: o })), r.createElement("main", { className: (0, l.Z)("col", { "col--7": i, "col--9 col--offset-1": !i }), itemScope: !0, itemType: "http://schema.org/Blog" }, s), t && r.createElement("div", { className: "col col--2" }, t))));
+     m = a && a.items.length > 0;
+    return r.createElement(n.Z, d, r.createElement("div", { className: "container margin-vert--md" }, r.createElement("div", { className: "row" }, r.createElement("div", { className: "col col--9 col--offset-1" }, r.createElement(c.Q, { breadcrumbs: o })), r.createElement("main", { className: (0, l.Z)("utrecht-document", "utrecht-html", "col", { "col--7": m, "col--9 col--offset-1": !m }), itemScope: !0, itemType: "http://schema.org/Blog" }, s), t && r.createElement("div", { className: "col col--2" }, t))));
    }
   },
   36200: (e, a, t) => {
@@ -130,8 +130,8 @@
     o = t(35281),
     s = t(31627),
     d = t(99703),
-    i = t(90197),
-    m = t(1799),
+    m = t(90197),
+    i = t(1799),
     u = t(53579);
    function g(e) {
     const { metadata: a } = e,
@@ -140,11 +140,11 @@
      } = (0, n.Z)(),
      { blogDescription: l, blogTitle: o, permalink: s } = a,
      d = "/" === s ? t : o;
-    return r.createElement(r.Fragment, null, r.createElement(c.d, { title: d, description: l }), r.createElement(i.Z, { tag: "blog_posts_list" }));
+    return r.createElement(r.Fragment, null, r.createElement(c.d, { title: d, description: l }), r.createElement(m.Z, { tag: "blog_posts_list" }));
    }
    function _(e) {
     const { metadata: a, items: t, sidebar: l } = e;
-    return r.createElement(s.Z, { sidebar: l, breadcrumbs: [{ label: a.blogTitle }] }, r.createElement(u.nL, null, a.blogTitle), r.createElement(m.Z, { items: t }), r.createElement(d.Z, { metadata: a }));
+    return r.createElement(s.Z, { sidebar: l, breadcrumbs: [{ label: a.blogTitle }] }, r.createElement(u.nL, null, a.blogTitle), r.createElement(i.Z, { items: t }), r.createElement(d.Z, { metadata: a }));
    }
    function p(e) {
     return r.createElement(c.FG, { className: (0, l.Z)(o.k.wrapper.blogPages, o.k.page.blogListPage) }, r.createElement(g, e), r.createElement(_, e));
@@ -159,8 +159,8 @@
    const o = { "blog-card": "blog-card_ZodC", "blog-card__header-link": "blog-card__header-link_rMVL", "blog-card__badge": "blog-card__badge_bQ4F" };
    var s = t(86010),
     d = t(39960),
-    i = t(8861),
-    m = (0, t(30853).Z)("calendar", "IconCalendar", [
+    m = t(8861),
+    i = (0, t(30853).Z)("calendar", "IconCalendar", [
      ["path", { d: "M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z", key: "svg-0" }],
      ["path", { d: "M16 3v4", key: "svg-1" }],
      ["path", { d: "M8 3v4", key: "svg-2" }],
@@ -189,8 +189,8 @@
          r.createElement(
           c.k,
           null,
-          a.metadata.authors.map((e) => r.createElement(c.Ou, { key: e.name, className: (0, s.Z)(o["blog-card__badge"], o["blog-card__badge--author"]) }, r.createElement(c.JO, { role: "presentational" }, r.createElement(i.Z, null)), r.createElement("span", { className: "visually-hidden" }, "auteur:"), " ", e.name)),
-          r.createElement(c.Ou, { className: (0, s.Z)(o["blog-card__badge"], o["blog-card__badge--date"]) }, r.createElement(c.JO, { role: "presentational" }, r.createElement(m, null)), r.createElement("span", { className: "visually-hidden" }, "publicatie datum:"), " ", r.createElement("time", { dateTime: a.metadata.date }, a.metadata.formattedDate))
+          a.metadata.authors.map((e) => r.createElement(c.Ou, { key: e.name, className: (0, s.Z)(o["blog-card__badge"], o["blog-card__badge--author"]) }, r.createElement(c.JO, { role: "presentational" }, r.createElement(m.Z, null)), r.createElement("span", { className: "visually-hidden" }, "auteur:"), " ", e.name)),
+          r.createElement(c.Ou, { className: (0, s.Z)(o["blog-card__badge"], o["blog-card__badge--date"]) }, r.createElement(c.JO, { role: "presentational" }, r.createElement(i, null)), r.createElement("span", { className: "visually-hidden" }, "publicatie datum:"), " ", r.createElement("time", { dateTime: a.metadata.date }, a.metadata.formattedDate))
          )
         )
        )
