@@ -42,7 +42,7 @@ In deze eerste sessie is al veel denkwerk verricht, liet Jeroen zien. In een spr
 
 Er zijn ook nog wel wat open vragen:
 
-- Hoeveel relaties is voldoende om de meeste scenario's af te dekken? Is er nog een relatie nodig na 'Onbekenden'?
+- Hoeveel relaties zijn voldoende om de meeste scenario's af te dekken? Is er nog een relatie nodig na 'Onbekenden'?
 - Hoe kan dit worden uitgewerkt in de front-end? (Er waren al wat eerste ideeën, door aanwezigheid van developers Yolijn en Robbert)
 - Hoe zit het met verticale ruimte binnen componenten?
 - Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?
