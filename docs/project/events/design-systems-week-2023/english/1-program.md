@@ -11,7 +11,6 @@ slug: /events/design-systems-week-2023/en/program
 import DSWSession from '../../../../../src/components/DSWSession'
 import speakers from '../speakers.json'
 import { Link } from '@utrecht/component-library-react/dist/css-module';
-import VimeoPlayer from "react-player";
 
 <div lang="en">
 
@@ -27,7 +26,7 @@ These are all sessions that will be in English, with sign up links to each. You 
 
 All sessions can be joined online for free. You will receive a link after sign-up. This link is valid for all talks during the week. Each talk will take about 30 minutes, including time for questions.
 
-<DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" vimeoUrl="https://vimeo.com/870340269">
+<DSWSession title="The future of design decisions" speakers={[speakers.MarcoChristianKrenn, speakers.JanSix]} organisation="Token Studio" lang="en" videoUrl="https://youtu.be/TFQbp2yNABk">
 
 Marco-Christian Krenn and Jan Six team up to present The future of design decisions. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.
 
@@ -35,7 +34,7 @@ You get a glimpse into the future around design tokens and learn about all the p
 
 </DSWSession>
 
-<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-public-infrastructure">
+<DSWSession title="Design systems as public infrastructure" speakers={[speakers.MuAnChiou]} organisation="Public Digital Innovation Space, Cabinet Office, Taiwan" lang="en" videoUrl="https://youtu.be/_X2zQoL5okw">
 
 Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.
 
@@ -43,7 +42,7 @@ The design system and especially the engineering of it plays a crucial part in d
 
 </DSWSession>
 
-<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-govuk">
+<DSWSession title="The GOV.UK Prototype Kit" speakers={[speakers.JoeLanman]} lang="en" organisation="GOV.UK" videoUrl="https://youtu.be/PuxojwJ2OEE">
 
 A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.
 Designer Joe Lanman is involved in this project as a designer and tells you more about it!
@@ -58,7 +57,7 @@ Veera is a codename for a design system employed by many Estonian governmental a
 Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.
 </DSWSession>
 
-<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-web-components">
+<DSWSession title="Design Systems & Web Components: what works & what doesn’t" speakers={[speakers.DavidDarnes]} lang="en" organisation="Nordhealth" videoUrl="https://youtu.be/QXHLivD5Y_Q">
 
 Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.
 
@@ -68,7 +67,7 @@ Of course, there is lots of nuance and there are some caveats and challenges. In
 
 </DSWSession>
 
-<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub" vimeoUrl="https://vimeo.com/gebruikercentraal/design-systems-week-designops">
+<DSWSession title="DesignOps: designing the API of design teams" speakers={[speakers.InayailiLeon]} lang="en" organisation="GitHub" videoUrl="https://youtu.be/GYUcd17cLJM">
 
 DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn’t have a formal DesignOps team, this work is likely being done by someone.
 

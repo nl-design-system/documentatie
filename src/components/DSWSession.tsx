@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
-import VimeoPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 
 interface DSWSessionProps {
   headingLevel: 2 | 3 | 4 | 5 | 6;
@@ -15,7 +15,7 @@ interface DSWSessionProps {
   signupLink: string;
   lang?: 'en' | 'nl';
   organisation: string;
-  vimeoUrl?: string;
+  videoUrl?: string;
 }
 
 interface DSWSpeaker {
@@ -35,15 +35,15 @@ export const DSWSession = ({
   speakers,
   signupLink,
   organisation,
-  vimeoUrl,
+  videoUrl,
   children,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
       {title}
     </Heading>
-    {vimeoUrl ? (
-      <VimeoPlayer url={vimeoUrl} width="100%" height="100%" className={clsx(style['dsw-session__video'])} controls />
+    {videoUrl ? (
+      <ReactPlayer url={videoUrl} width="100%" height="100%" className={clsx(style['dsw-session__video'])} controls />
     ) : (
       <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
         {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
