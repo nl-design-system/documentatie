@@ -8,8 +8,9 @@ import Robbert from './Robbert';
 import Yolijn from './Yolijn';
 import Jeffrey from './Jeffrey';
 import Hidde from './Hidde';
+import Rian from './Rian';
 
-const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde];
+const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Rian];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
