@@ -8,9 +8,7 @@ slug: /toegankelijkheidsverklaring/rapport-2023
 
 Dit is het [WCAG EM Auditrapport](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/) van NLDesignSystem.nl.
 
-Extra informatie:
-- [bijbehorende json file](/toegankelijkheidsverklaring/nl-design-system-evaluation.json)
-- [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsverklaring)
+Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsverklaring).
 
 <div class="wcag-em">
 <h2>Over deze evaluatie</h2>
