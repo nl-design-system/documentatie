@@ -631,10 +631,6 @@ abbr[title] {
   margin-inline-start: calc(-1 * var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0));
 }
 
-.video-player {
-  margin-block-start: 24px;
-  margin-block-end: 32px;
-}
 /* WCAG EM rapport */
 .wcag-em dt {
   font-weight: bold;
