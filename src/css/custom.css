@@ -635,3 +635,18 @@ abbr[title] {
   margin-block-start: 24px;
   margin-block-end: 32px;
 }
+/* WCAG EM rapport */
+.wcag-em dt {
+  font-weight: bold;
+}
+.wcag-em td,
+.wcag-em th {
+  text-align: left;
+  vertical-align: top;
+}
+
+.wcag-em td h6,
+.wcag-em th h6 {
+  margin-top: auto;
+}
+
