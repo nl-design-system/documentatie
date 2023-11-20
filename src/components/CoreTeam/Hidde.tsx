@@ -12,7 +12,9 @@ const Hidde: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Hidde is als PR lead bij NL Design System verantwoordelijk voor de communicatiestrategie, bijeenkomsten als de Heartbeat en Design Systems Week en de promotie van NL Design System bij organisaties en hun design system teams.
+        Hidde is als PR lead bij NL Design System verantwoordelijk voor de communicatiestrategie, bijeenkomsten als de
+        Heartbeat en Design Systems Week en de promotie van NL Design System bij organisaties en hun design system
+        teams.
       </Paragraph>
       <Paragraph>
         Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid, dat
