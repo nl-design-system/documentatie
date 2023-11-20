@@ -6,15 +6,13 @@ import { TeamMember } from './TeamMember';
 const Hidde: TeamMember = {
   Avatar,
   name: 'Hidde de Vries',
-  role: 'Developer Relations & Toegankelijkheidsspecialist',
+  role: 'Public Relations Lead & Toegankelijkheidsspecialist',
   email: 'hidde.devries@ictu.nl',
   slack: { mention: '@Hidde', id: 'UA17NJHTR' },
   Description: () => (
     <>
       <Paragraph>
-        Hidde draagt vanuit zijn Developer Relations-rol bij aan heldere technische uitleg, workshops met ontwikkelaars
-        en het doorgronden van de wensen van teams die met NL Design System werken. Hij richt zich daarbij specifiek op
-        leveranciers van overheden.
+        Hidde is als PR lead bij NL Design System verantwoordelijk voor de communicatiestrategie, bijeenkomsten als de Heartbeat en Design Systems Week en de promotie van NL Design System bij organisaties en hun design system teams.
       </Paragraph>
       <Paragraph>
         Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid, dat
@@ -22,7 +20,8 @@ const Hidde: TeamMember = {
         componenten, documentatie en voorbeelden zo toegankelijk mogelijk te maken.
       </Paragraph>
       <Paragraph>
-        Hij wordt blij van espresso tonics en van heldere, to-the-point uitleg waar developers verder mee kunnen.
+        Hij wordt blij van espresso tonics en van heldere, to-the-point uitleg die mensen duidelijkheid geeft. Maar wel
+        met voldoende nuance.
       </Paragraph>
     </>
   ),
