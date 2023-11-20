@@ -1458,7 +1458,9 @@ area[href].breadcrumbs__link:hover {
 .list_XVd1 article:last-child {
  margin-bottom: 0;
 }
-.card__footer {
+.card__footer,
+.wcag-em td h6,
+.wcag-em th h6 {
  margin-top: auto;
 }
 .table-of-contents {
@@ -2693,7 +2695,8 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .dsw-signup:hover {
  text-decoration: inherit;
 }
-.dsw-signup-main {
+.dsw-signup-main,
+.wcag-em dt {
  font-weight: 700;
 }
 .dsw-signup-sup {
@@ -2748,6 +2751,11 @@ body:not(.navigation-with-keyboard) :not(input):focus {
  -webkit-margin-after: 32px;
  margin-block-end: 32px;
  margin-block-start: 24px;
+}
+.wcag-em td,
+.wcag-em th {
+ text-align: left;
+ vertical-align: top;
 }
 @font-face {
  font-display: var(--fontsource-display, swap);

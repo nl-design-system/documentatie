@@ -3,7 +3,7 @@
  [6752],
  {
   3905: (e, n, t) => {
-   t.d(n, { Zo: () => c, kt: () => g });
+   t.d(n, { Zo: () => m, kt: () => g });
    var i = t(67294);
    function o(e, n, t) {
     return n in e ? Object.defineProperty(e, n, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : (e[n] = t), e;
@@ -60,28 +60,28 @@
       t = n;
      return e && (t = "function" == typeof e ? e(n) : a(a({}, n), e)), t;
     },
-    c = function (e) {
+    m = function (e) {
      var n = d(e.components);
      return i.createElement(s.Provider, { value: n }, e.children);
     },
-    m = "mdxType",
-    k = {
+    c = "mdxType",
+    p = {
      inlineCode: "code",
      wrapper: function (e) {
       var n = e.children;
       return i.createElement(i.Fragment, {}, n);
      },
     },
-    p = i.forwardRef(function (e, n) {
+    k = i.forwardRef(function (e, n) {
      var t = e.components,
       o = e.mdxType,
       r = e.originalType,
       s = e.parentName,
-      c = l(e, ["components", "mdxType", "originalType", "parentName"]),
-      m = d(t),
-      p = o,
-      g = m["".concat(s, ".").concat(p)] || m[p] || k[p] || r;
-     return t ? i.createElement(g, a(a({ ref: n }, c), {}, { components: t })) : i.createElement(g, a({ ref: n }, c));
+      m = l(e, ["components", "mdxType", "originalType", "parentName"]),
+      c = d(t),
+      k = o,
+      g = c["".concat(s, ".").concat(k)] || c[k] || p[k] || r;
+     return t ? i.createElement(g, a(a({ ref: n }, m), {}, { components: t })) : i.createElement(g, a({ ref: n }, m));
     });
    function g(e, n) {
     var t = arguments,
@@ -89,19 +89,19 @@
     if ("string" == typeof e || o) {
      var r = t.length,
       a = new Array(r);
-     a[0] = p;
+     a[0] = k;
      var l = {};
      for (var s in n) hasOwnProperty.call(n, s) && (l[s] = n[s]);
-     (l.originalType = e), (l[m] = "string" == typeof e ? e : o), (a[1] = l);
+     (l.originalType = e), (l[c] = "string" == typeof e ? e : o), (a[1] = l);
      for (var d = 2; d < r; d++) a[d] = t[d];
      return i.createElement.apply(null, a);
     }
     return i.createElement.apply(null, t);
    }
-   p.displayName = "MDXCreateElement";
+   k.displayName = "MDXCreateElement";
   },
   11848: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => s, contentTitle: () => a, default: () => k, frontMatter: () => r, metadata: () => l, toc: () => d });
+   t.r(n), t.d(n, { assets: () => s, contentTitle: () => a, default: () => p, frontMatter: () => r, metadata: () => l, toc: () => d });
    var i = t(87462),
     o = (t(67294), t(3905));
    const r = { title: "Toegankelijkheid", hide_title: !0, hide_table_of_contents: !1, pagination_label: "Toegankelijkheid", slug: "/toegankelijkheidsverklaring" },
@@ -113,13 +113,13 @@
      { value: "Verzameling offici\xeble componenten van NL Design System", id: "verzameling-offici\xeble-componenten-van-nl-design-system", level: 2 },
      { value: "Website NL Design System", id: "website-nl-design-system", level: 2 },
     ],
-    c = { toc: d },
-    m = "wrapper";
-   function k(e) {
+    m = { toc: d },
+    c = "wrapper";
+   function p(e) {
     let { components: n, ...t } = e;
-    return (0, o.kt)(m, (0, i.Z)({}, c, t, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h1", { id: "toegankelijkheid" }, "Toegankelijkheid"), (0, o.kt)("h2", { id: "componenten-uit-de-community" }, "Componenten uit de community"), (0, o.kt)("p", null, 'De componenten die de NL Design System community ontwikkelt worden direct open source gedeeld. Componenten zijn vaak beschikbaar zodra teams beginnnen met de ontwikkeling, wanneer toegankelijkheid nog niet onafhankelijk is getest. Let op welk label het component heeft in het componenten-overzicht van Storybook: "work in progress", "alpha", "beta" of "production".'), (0, o.kt)("p", null, 'De bedoeling is dat componenten het label "production" krijgen wanneer het team de component heeft ingezet, de website vervolgens is gecontroleerd en een toegankelijkheidsverklaring heeft, en geconstateerde toegankelijkheidsproblemen zijn verholpen.'), (0, o.kt)("p", null, 'Alle componenten die nu op de website staan zijn nog de "community" componenten. Controleer daarom zelf naar beste kunnen de toegankelijkheid wanneer je de component inzet, deel resultaten uit een onafhankelijke toegankelijkheidsverklaring, en werk samen met de community om de kwaliteit te verbeteren.'), (0, o.kt)("h2", { id: "verzameling-offici\xeble-componenten-van-nl-design-system" }, "Verzameling offici\xeble componenten van NL Design System"), (0, o.kt)("p", null, 'Het kernteam van NL Design System zal de komende periode veelgebruikte componenten uit de community in beheer nemen, en helpen bij het controleren van toegankelijkheid. We werken met het estafettemodel, waarbij het kernteam het stokje overneemt wanneer een component succesvol werkt in de praktijk. Wanneer tenminste tw\xe9\xe9 organisaties in de community een component van elkaar hergebruiken "in productie", en de component beide keren een positieve toegankelijkheidsverklaring krijgt of alle geconstateerde problemen nadien zijn verholpen, wordt het een kandidaat om op te nemen in de offici\xeble verzameling.'), (0, o.kt)("h2", { id: "website-nl-design-system" }, "Website NL Design System"), (0, o.kt)("p", null, "Deze website die documentatie, patronen en componenten herbergt is echter nog volop in ontwikkeling. Hierdoor kan het zijn dat deze minder toegankelijk is. We willen stapsgewijs verbeteringen maken door ook deze website met NL Design System componenten op te bouwen, zodat we een toegankelijkheidsverklaring kunnen aanvragen voor de doelarchitectuur."));
+    return (0, o.kt)(c, (0, i.Z)({}, m, t, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h1", { id: "toegankelijkheid" }, "Toegankelijkheid"), (0, o.kt)("h2", { id: "componenten-uit-de-community" }, "Componenten uit de community"), (0, o.kt)("p", null, 'De componenten die de NL Design System community ontwikkelt worden direct open source gedeeld.\nComponenten zijn vaak beschikbaar zodra teams beginnen met de ontwikkeling, wanneer toegankelijkheid nog niet onafhankelijk is getest.\nLet op welk label het component heeft in het componenten-overzicht van Storybook: "work in progress", "alpha", "beta" of "production".'), (0, o.kt)("p", null, 'De bedoeling is dat componenten het label "production" krijgen wanneer het team de component heeft ingezet, de website vervolgens is gecontroleerd en een toegankelijkheidsverklaring heeft, en geconstateerde toegankelijkheidsproblemen zijn verholpen.'), (0, o.kt)("p", null, 'Alle componenten die nu op de website staan zijn nog de "community" componenten. Controleer daarom zelf naar beste kunnen de toegankelijkheid wanneer je de component inzet, deel resultaten uit een onafhankelijke toegankelijkheidsverklaring, en werk samen met de community om de kwaliteit te verbeteren.'), (0, o.kt)("h2", { id: "verzameling-offici\xeble-componenten-van-nl-design-system" }, "Verzameling offici\xeble componenten van NL Design System"), (0, o.kt)("p", null, "Het kernteam van NL Design System zal de komende periode veelgebruikte componenten uit de community in beheer nemen, en helpen bij het controleren van toegankelijkheid. We werken met het estafettemodel, waarbij het kernteam het stokje overneemt wanneer een component succesvol werkt in de praktijk."), (0, o.kt)("p", null, 'Wanneer tenminste tw\xe9\xe9 organisaties in de community een component van elkaar hergebruiken "in productie", en de component beide keren een positieve toegankelijkheidsverklaring krijgt of alle geconstateerde problemen nadien zijn verholpen, wordt het een kandidaat om op te nemen in de offici\xeble verzameling.'), (0, o.kt)("h2", { id: "website-nl-design-system" }, "Website NL Design System"), (0, o.kt)("p", null, "We streven ernaar voor de website nldesignsystem.nl te voldoen aan de ", (0, o.kt)("a", { parentName: "p", href: "https://www.w3.org/TR/WCAG22/" }, "WCAG 2.2 AA richtlijnen"), ", zoals opgesteld door het W3C."), (0, o.kt)("p", null, "Op 20 november 2023 is de website nldesignsystem.nl geaudit (", (0, o.kt)("a", { parentName: "p", href: "/toegankelijkheidsverklaring/rapport-2023" }, "Auditrapport 2023"), ")\nDe problemen die uit deze audit kwamen worden nu aangepakt. Het streven is om uiterlijk eind 2024 (liefst eerder) alle problemen opgelost te hebben."), (0, o.kt)("p", null, "Ondervind je een probleem bij het gebruik van deze website of heb je hier een vraag over?\nNeem dan ", (0, o.kt)("a", { parentName: "p", href: "project/kernteam" }, "contact"), " met ons op."));
    }
-   k.isMDXComponent = !0;
+   p.isMDXComponent = !0;
   },
  },
 ]);
