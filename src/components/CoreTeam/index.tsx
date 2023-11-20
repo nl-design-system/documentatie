@@ -19,7 +19,7 @@ export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
         return (
           <Card appearance="large" className={clsx(style['core-team__card'])} component="section" key={name}>
             <CardIllustration className={clsx(style['core-team__illustration'])}>
-              <Avatar className={clsx(style['core-team__avatar'], style['core-team__avatar--peter'])} />
+              <Avatar className={clsx(style['core-team__avatar'])} />
             </CardIllustration>
             <CardContent className={clsx(style['core-team__content'])}>
               <HeadingGroup className={clsx(style['core-team__heading'])}>
