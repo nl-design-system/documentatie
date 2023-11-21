@@ -33,6 +33,7 @@ const config = {
         blog: {
           postsPerPage: 'ALL',
           blogSidebarCount: 0,
+          showReadingTime: false,
         },
         theme: {
           customCss: [
