@@ -631,6 +631,10 @@ abbr[title] {
   margin-inline-start: calc(-1 * var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0));
 }
 
+#__blog-post-container > p:first-child {
+  font-size: var(--utrecht-paragraph-lead-font-size);
+}
+
 /* WCAG EM rapport */
 .wcag-em dt {
   font-weight: bold;
