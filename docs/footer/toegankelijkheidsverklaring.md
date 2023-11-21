@@ -28,8 +28,14 @@ Wanneer tenminste twéé organisaties in de community een component van elkaar h
 
 We streven ernaar voor de website nldesignsystem.nl te voldoen aan de [WCAG 2.2 AA richtlijnen](https://www.w3.org/TR/WCAG22/), zoals opgesteld door het W3C.
 
-Op 20 november 2023 is de website nldesignsystem.nl geaudit ([Auditrapport 2023](/toegankelijkheidsverklaring/rapport-2023))
+Op 20 november 2023 is de website nldesignsystem.nl geaudit ([Auditrapport 2023](/toegankelijkheidsverklaring/rapport-2023)).
 De problemen die uit deze audit kwamen worden nu aangepakt. Het streven is om uiterlijk eind 2024 (liefst eerder) alle problemen opgelost te hebben.
 
 Ondervind je een probleem bij het gebruik van deze website of heb je hier een vraag over?
-Neem dan [contact](project/kernteam) met ons op.
+Neem dan [contact](https://nldesignsystem.nl/project/kernteam) met ons op.
+
+<p>
+<a href="https://www.toegankelijkheidsverklaring.nl/register/12250">
+  <img src="https://www.toegankelijkheidsverklaring.nl/files/verklaring/label/c35c932f9287cfbe2ced503c9d3fa04d.12250.svg?1700559665" alt="Status toegankelijkheidslabel van NL Design System. Volg de link voor de volledige toegankelijkheidsverklaring." width="692" height="251" />
+</a>
+</p>
