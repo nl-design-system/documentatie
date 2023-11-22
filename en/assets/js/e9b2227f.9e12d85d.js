@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [11585],
+ [71639],
  {
   3905: (e, n, t) => {
    t.d(n, { Zo: () => d, kt: () => c });
@@ -100,16 +100,16 @@
    }
    p.displayName = "MDXCreateElement";
   },
-  39188: (e, n, t) => {
+  7624: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => l, contentTitle: () => s, default: () => g, frontMatter: () => a, metadata: () => o, toc: () => m });
    var r = t(87462),
     i = (t(67294), t(3905));
-   const a = { title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: new Date("2023-11-21T00:00:00.000Z"), image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
+   const a = { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: new Date("2023-11-21T00:00:00.000Z"), image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
     s = void 0,
     o = {
      permalink: "/en/blog/wmebv-gebruikerstesten",
      source: "@site/blog/2023/20231121-wmebv-gebruikerstesten.md",
-     title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen",
+     title: "Testen met Wmebv-formulieren: eerste lessen",
      description: "In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.",
      date: "2023-11-21T00:00:00.000Z",
      formattedDate: "November 21, 2023",
@@ -120,7 +120,7 @@
      ],
      hasTruncateMarker: !1,
      authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
-     frontMatter: { title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: "2023-11-21T00:00:00.000Z", image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
+     frontMatter: { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: "2023-11-21T00:00:00.000Z", image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
      nextItem: { title: "Spacing tokens als systeem voor verticale ruimte", permalink: "/en/blog/spacing-tokens" },
     },
     l = { authorsImageUrls: [void 0] },

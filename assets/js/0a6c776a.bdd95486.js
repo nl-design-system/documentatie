@@ -3,7 +3,7 @@
  [90418],
  {
   3905: (e, n, t) => {
-   t.d(n, { Zo: () => p, kt: () => g });
+   t.d(n, { Zo: () => p, kt: () => u });
    var r = t(67294);
    function i(e, n, t) {
     return n in e ? Object.defineProperty(e, n, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : (e[n] = t), e;
@@ -72,24 +72,24 @@
       return r.createElement(r.Fragment, {}, n);
      },
     },
-    u = r.forwardRef(function (e, n) {
+    g = r.forwardRef(function (e, n) {
      var t = e.components,
       i = e.mdxType,
       a = e.originalType,
       l = e.parentName,
       p = s(e, ["components", "mdxType", "originalType", "parentName"]),
       m = d(t),
-      u = i,
-      g = m["".concat(l, ".").concat(u)] || m[u] || k[u] || a;
-     return t ? r.createElement(g, o(o({ ref: n }, p), {}, { components: t })) : r.createElement(g, o({ ref: n }, p));
+      g = i,
+      u = m["".concat(l, ".").concat(g)] || m[g] || k[g] || a;
+     return t ? r.createElement(u, o(o({ ref: n }, p), {}, { components: t })) : r.createElement(u, o({ ref: n }, p));
     });
-   function g(e, n) {
+   function u(e, n) {
     var t = arguments,
      i = n && n.mdxType;
     if ("string" == typeof e || i) {
      var a = t.length,
       o = new Array(a);
-     o[0] = u;
+     o[0] = g;
      var s = {};
      for (var l in n) hasOwnProperty.call(n, l) && (s[l] = n[l]);
      (s.originalType = e), (s[m] = "string" == typeof e ? e : i), (o[1] = s);
@@ -98,7 +98,7 @@
     }
     return r.createElement.apply(null, t);
    }
-   u.displayName = "MDXCreateElement";
+   g.displayName = "MDXCreateElement";
   },
   39030: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => l, contentTitle: () => o, default: () => k, frontMatter: () => a, metadata: () => s, toc: () => d });
@@ -120,7 +120,7 @@
      hasTruncateMarker: !0,
      authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Spacing tokens als systeem voor verticale ruimte", slug: "spacing-tokens", authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "design tokens"], hide_table_of_contents: !1, date: "2023-11-09T00:00:00.000Z" },
-     prevItem: { title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen", permalink: "/blog/wmebv-gebruikerstesten" },
+     prevItem: { title: "Testen met Wmebv-formulieren: eerste lessen", permalink: "/blog/wmebv-gebruikerstesten" },
      nextItem: { title: "Design Systems Week 2023 komt eraan!", permalink: "/blog/design-systems-week-2023-komt-eraan" },
     },
     l = { authorsImageUrls: [void 0] },
