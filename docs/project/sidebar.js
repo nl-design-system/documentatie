@@ -29,6 +29,7 @@ const sidebar = [
       { type: 'doc', id: 'project/events/heartbeat' },
     ],
   },
+  { type: 'doc', id: 'project/wie-doet-mee' },
   { type: 'doc', id: 'project/blijf-op-de-hoogte' },
   { type: 'doc', id: 'project/links' },
   { type: 'link', label: 'Blog', href: '/blog' },
