@@ -3,7 +3,7 @@
  [74937],
  {
   91203: (s) => {
-   s.exports = JSON.parse('{"label":"NL design system","permalink":"/en/blog/tags/nl-design-system","allTagsPath":"/en/blog/tags","count":18}');
+   s.exports = JSON.parse('{"label":"NL design system","permalink":"/en/blog/tags/nl-design-system","allTagsPath":"/en/blog/tags","count":19}');
   },
  },
 ]);

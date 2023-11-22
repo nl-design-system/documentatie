@@ -2746,6 +2746,9 @@ body:not(.navigation-with-keyboard) :not(input):focus {
  -webkit-margin-start: calc(var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0) * -1);
  margin-inline-start: calc(var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0) * -1);
 }
+#__blog-post-container > p:first-child {
+ font-size: var(--utrecht-paragraph-lead-font-size);
+}
 .wcag-em td,
 .wcag-em th {
  text-align: left;

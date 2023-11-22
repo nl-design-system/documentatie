@@ -3,7 +3,7 @@
  [76902],
  {
   3905: (e, t, n) => {
-   n.d(t, { Zo: () => p, kt: () => g });
+   n.d(t, { Zo: () => m, kt: () => g });
    var r = n(67294);
    function i(e, t, n) {
     return t in e ? Object.defineProperty(e, t, { value: n, enumerable: !0, configurable: !0, writable: !0 }) : (e[t] = n), e;
@@ -60,12 +60,12 @@
       n = t;
      return e && (n = "function" == typeof e ? e(t) : o(o({}, t), e)), n;
     },
-    p = function (e) {
+    m = function (e) {
      var t = c(e.components);
      return r.createElement(l.Provider, { value: t }, e.children);
     },
-    d = "mdxType",
-    m = {
+    p = "mdxType",
+    d = {
      inlineCode: "code",
      wrapper: function (e) {
       var t = e.children;
@@ -77,11 +77,11 @@
       i = e.mdxType,
       s = e.originalType,
       l = e.parentName,
-      p = a(e, ["components", "mdxType", "originalType", "parentName"]),
-      d = c(n),
+      m = a(e, ["components", "mdxType", "originalType", "parentName"]),
+      p = c(n),
       u = i,
-      g = d["".concat(l, ".").concat(u)] || d[u] || m[u] || s;
-     return n ? r.createElement(g, o(o({ ref: t }, p), {}, { components: n })) : r.createElement(g, o({ ref: t }, p));
+      g = p["".concat(l, ".").concat(u)] || p[u] || d[u] || s;
+     return n ? r.createElement(g, o(o({ ref: t }, m), {}, { components: n })) : r.createElement(g, o({ ref: t }, m));
     });
    function g(e, t) {
     var n = arguments,
@@ -92,7 +92,7 @@
      o[0] = u;
      var a = {};
      for (var l in t) hasOwnProperty.call(t, l) && (a[l] = t[l]);
-     (a.originalType = e), (a[d] = "string" == typeof e ? e : i), (o[1] = a);
+     (a.originalType = e), (a[p] = "string" == typeof e ? e : i), (o[1] = a);
      for (var c = 2; c < s; c++) o[c] = n[c];
      return r.createElement.apply(null, o);
     }
@@ -101,36 +101,37 @@
    u.displayName = "MDXCreateElement";
   },
   64833: (e, t, n) => {
-   n.r(t), n.d(t, { assets: () => l, contentTitle: () => o, default: () => m, frontMatter: () => s, metadata: () => a, toc: () => c });
+   n.r(t), n.d(t, { assets: () => l, contentTitle: () => o, default: () => d, frontMatter: () => s, metadata: () => a, toc: () => c });
    var r = n(87462),
     i = (n(67294), n(3905));
    const s = { title: "Spacing tokens als systeem voor verticale ruimte", slug: "spacing-tokens", authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "design tokens"], hide_table_of_contents: !1, date: new Date("2023-11-09T00:00:00.000Z") },
     o = void 0,
     a = {
-     permalink: "/en/blog/spacing-tokens",
+     permalink: "/blog/spacing-tokens",
      source: "@site/blog/2023/20231109-spacing-tokens.md",
      title: "Spacing tokens als systeem voor verticale ruimte",
      description: "Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour.",
      date: "2023-11-09T00:00:00.000Z",
-     formattedDate: "November 9, 2023",
+     formattedDate: "9 november 2023",
      tags: [
-      { label: "NL design system", permalink: "/en/blog/tags/nl-design-system" },
-      { label: "design tokens", permalink: "/en/blog/tags/design-tokens" },
+      { label: "NL design system", permalink: "/blog/tags/nl-design-system" },
+      { label: "design tokens", permalink: "/blog/tags/design-tokens" },
      ],
      hasTruncateMarker: !0,
      authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Spacing tokens als systeem voor verticale ruimte", slug: "spacing-tokens", authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "design tokens"], hide_table_of_contents: !1, date: "2023-11-09T00:00:00.000Z" },
-     nextItem: { title: "Design Systems Week 2023 komt eraan!", permalink: "/en/blog/design-systems-week-2023-komt-eraan" },
+     prevItem: { title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen", permalink: "/blog/wmebv-gebruikerstesten" },
+     nextItem: { title: "Design Systems Week 2023 komt eraan!", permalink: "/blog/design-systems-week-2023-komt-eraan" },
     },
     l = { authorsImageUrls: [void 0] },
     c = [],
-    p = { toc: c },
-    d = "wrapper";
-   function m(e) {
+    m = { toc: c },
+    p = "wrapper";
+   function d(e) {
     let { components: t, ...n } = e;
-    return (0, i.kt)(d, (0, r.Z)({}, p, n, { components: t, mdxType: "MDXLayout" }), (0, i.kt)("p", null, "Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour."));
+    return (0, i.kt)(p, (0, r.Z)({}, m, n, { components: t, mdxType: "MDXLayout" }), (0, i.kt)("p", null, "Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour."));
    }
-   m.isMDXComponent = !0;
+   d.isMDXComponent = !0;
   },
  },
 ]);

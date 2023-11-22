@@ -3,7 +3,7 @@
  [90418],
  {
   3905: (e, n, t) => {
-   t.d(n, { Zo: () => p, kt: () => u });
+   t.d(n, { Zo: () => p, kt: () => g });
    var r = t(67294);
    function i(e, n, t) {
     return n in e ? Object.defineProperty(e, n, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : (e[n] = t), e;
@@ -72,24 +72,24 @@
       return r.createElement(r.Fragment, {}, n);
      },
     },
-    g = r.forwardRef(function (e, n) {
+    u = r.forwardRef(function (e, n) {
      var t = e.components,
       i = e.mdxType,
       a = e.originalType,
       l = e.parentName,
       p = s(e, ["components", "mdxType", "originalType", "parentName"]),
       m = d(t),
-      g = i,
-      u = m["".concat(l, ".").concat(g)] || m[g] || k[g] || a;
-     return t ? r.createElement(u, o(o({ ref: n }, p), {}, { components: t })) : r.createElement(u, o({ ref: n }, p));
+      u = i,
+      g = m["".concat(l, ".").concat(u)] || m[u] || k[u] || a;
+     return t ? r.createElement(g, o(o({ ref: n }, p), {}, { components: t })) : r.createElement(g, o({ ref: n }, p));
     });
-   function u(e, n) {
+   function g(e, n) {
     var t = arguments,
      i = n && n.mdxType;
     if ("string" == typeof e || i) {
      var a = t.length,
       o = new Array(a);
-     o[0] = g;
+     o[0] = u;
      var s = {};
      for (var l in n) hasOwnProperty.call(n, l) && (s[l] = n[l]);
      (s.originalType = e), (s[m] = "string" == typeof e ? e : i), (o[1] = s);
@@ -98,7 +98,7 @@
     }
     return r.createElement.apply(null, t);
    }
-   g.displayName = "MDXCreateElement";
+   u.displayName = "MDXCreateElement";
   },
   39030: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => l, contentTitle: () => o, default: () => k, frontMatter: () => a, metadata: () => s, toc: () => d });
@@ -107,20 +107,21 @@
    const a = { title: "Spacing tokens als systeem voor verticale ruimte", slug: "spacing-tokens", authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "design tokens"], hide_table_of_contents: !1, date: new Date("2023-11-09T00:00:00.000Z") },
     o = void 0,
     s = {
-     permalink: "/blog/spacing-tokens",
+     permalink: "/en/blog/spacing-tokens",
      source: "@site/blog/2023/20231109-spacing-tokens.md",
      title: "Spacing tokens als systeem voor verticale ruimte",
      description: "Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour.",
      date: "2023-11-09T00:00:00.000Z",
-     formattedDate: "9 november 2023",
+     formattedDate: "November 9, 2023",
      tags: [
-      { label: "NL design system", permalink: "/blog/tags/nl-design-system" },
-      { label: "design tokens", permalink: "/blog/tags/design-tokens" },
+      { label: "NL design system", permalink: "/en/blog/tags/nl-design-system" },
+      { label: "design tokens", permalink: "/en/blog/tags/design-tokens" },
      ],
      hasTruncateMarker: !0,
      authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Spacing tokens als systeem voor verticale ruimte", slug: "spacing-tokens", authors: [{ name: "Hidde de Vries", title: "Public relations & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "design tokens"], hide_table_of_contents: !1, date: "2023-11-09T00:00:00.000Z" },
-     nextItem: { title: "Design Systems Week 2023 komt eraan!", permalink: "/blog/design-systems-week-2023-komt-eraan" },
+     prevItem: { title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen", permalink: "/en/blog/wmebv-gebruikerstesten" },
+     nextItem: { title: "Design Systems Week 2023 komt eraan!", permalink: "/en/blog/design-systems-week-2023-komt-eraan" },
     },
     l = { authorsImageUrls: [void 0] },
     d = [
