@@ -1,5 +1,5 @@
 ---
-title: "Gebruikerstesten met Wmebv-formulieren: eerste lessen"
+title: "Testen met Wmebv-formulieren: eerste lessen"
 slug: wmebv-gebruikerstesten
 authors:
   - name: Hidde de Vries
