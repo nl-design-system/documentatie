@@ -26,7 +26,7 @@ In het kader van Wembv, werkte UX designer Francesca Vonk de afgelopen maanden a
 
 In Francesca's voorbeeldscenario's zoekt Jeroen van Drouwen, een (fictief) persoon, contact met zijn gemeente over de status van zijn aanvraag bijstandsuitkering. Hij had al iets moeten horen, en wil weten hoe het zit. Er waren twee scenario's: met en zonder DigiD. Deze situaties zijn grotendeels in front-end code gebouwd (uiteraard met NL Design System componenten). Er waren ook enkele schermen in Figma, en er was een heuse Gmail-omgeving opgezet met een tijdelijke nep-accounts, zodat het extra realistisch was.
 
-In totaal deden met deze test 7 participanten mee, deels laaggeletterd en deels met visuele beperkingen. In een kantoorsituatie hebben ze op een laptop beide testscenario's uitgebreid doorlopen. Ons team keek via Teams mee.
+In totaal deden met deze test 7 participanten mee, deels visueel en fysiek beperkt. In een kantoorsituatie hebben ze op een laptop beide testscenario's uitgebreid doorlopen. Ons team keek via Teams mee.
 
 ## Eerste lessen
 
@@ -34,12 +34,12 @@ Gebruikerstesten blijken altijd weer ontzettend leerzaam te zijn. De ene gebruik
 
 We zijn de punten nog uitgebreid aan het verwerken, maar hier zijn vast zes punten die ons opvielen:
 
-- voor ons was het formulier min of meer een gegeven, maar eigenlijk iedereen gaf aan liever te bellen met de vraag
-- de participanten waren vaak wel bekend met DigiD, maar waren er ook huiverig
-- taalgebruik was vaak een barrière, uitdrukkingen als “melding openbare ruimte” leidden tot verwarring
-- de foutmeldingen werden heel goed begrepen
-- meerdere participanten zeiden normaliter liever een telefoon of tablet te gebruiken dan de testlaptop (dit kunnen we in vervolgtesten beter faciliteren)
-- de snelheid waarmee participanten door een formulier gingen verschilde enorm, en op de “5 minuten” die op de eerste pagina werden aangekondigd werd verschillend gereageerd (van “wat lang!“ tot “wat kort!”)
+- Voor ons was het formulier min of meer een gegeven, maar eigenlijk iedereen gaf aan liever te bellen met de vraag.
+- De participanten waren vaak wel bekend met DigiD, maar waren er ook huiverig.
+- Taalgebruik was vaak een barrière, uitdrukkingen als “melding openbare ruimte” leidden tot verwarring.
+- De foutmeldingen werden heel goed begrepen.
+- Meerdere participanten zeiden normaliter liever een telefoon of tablet te gebruiken dan de testlaptop (dit kunnen we in vervolgtesten beter faciliteren).
+- De snelheid waarmee participanten door een formulier gingen verschilde enorm, en op de “5 minuten” die op de eerste pagina werden aangekondigd werd verschillend gereageerd (van “wat lang!“ tot “wat kort!”).
 
 ![mirobord vol met postits in heel veel kleuren](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png)
 
