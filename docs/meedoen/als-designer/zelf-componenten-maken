@@ -1,0 +1,55 @@
+---
+title: Zelf componenten maken
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Zelf componenten maken
+sidebar_position: 4
+pagination_label: Zelf componenten maken
+description: Uitleg hoe je zelf componenten kan maken in Figma met design tokens.
+keywords:
+  - index
+  - designer
+  - meedoen
+  - componenten
+  - figma
+---
+
+# Zelf componenten maken
+
+De Figma bibliotheek van het NL Design System bevat vast (nog) niet alle componenten die nodig zijn voor jouw organisatie. Je kunt zelf componenten gaan opbouwen of de bestaande componenten van jouw organisatie aanpassen. Hoe dan ook, het is het fijn als je dit doet op basis van de NL Design System structuur. Open-source en op basis van design tokens met de juiste naamgeving. Zo kunnen componenten binnen de community met elkaar worden gedeeld. In onderstaande video's laten we zien hoe twee lokale componenten (Demo sticker en Demo card) worden opgebouwd op basis van de NL Design System structuur.
+
+Voordat je begint is het verstandig dat je het [stappenplan](stappenplan.mdx) hebt doorlopen. Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+
+## Demo sticker maken
+
+In deze video laten we zien hoe je de 'Demo sticker' kan opbouwen met design tokens.
+
+<iframe width="778" height="438" src="https://www.youtube.com/embed/cN37hd7KWMY?si=zH16k2Pi1UvESt-i" title="Demo sticker component maken" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Demo sticker documenteren
+
+In deze video laten we zien hoe je de design tokens van de 'Demo sticker' kan documenteren.
+
+<iframe width="778" height="438" src="https://www.youtube.com/embed/2_SzboMo15c?si=fkiTWZKKOBhlSdGT" title="Demo sticker component documenteren" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Demo card maken
+
+In deze video laten we zien hoe je de 'Demo card' kan opbouwen met design tokens.
+
+<iframe width="778" height="438" src="https://www.youtube.com/embed/UbrN67pU0dk?si=0g_aKOrdfDgJ26nq" title="Demo card component maken" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Demo card documenteren
+
+In deze video laten we zien hoe je de design tokens van de 'Demo card' kan documenteren.
+
+<iframe width="778" height="438" src="https://www.youtube.com/embed/w_5ITXBx8kE?si=JLXhAbx8UPH8veFk" title="Demo card component documenteren" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
