@@ -3,7 +3,7 @@ title: Voorbeeld thema
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Voorbeeld thema
-sidebar_position: 4
+sidebar_position: 5
 pagination_label: Voorbeeld thema
 description: Toelichting op design keuzes voor het Voorbeeld thema.
 keywords:
