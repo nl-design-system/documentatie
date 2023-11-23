@@ -5,7 +5,7 @@ const sidebar = [
     label: 'Stijl',
     link: {
       type: 'generated-index',
-      title: 'Overzicht',
+      title: 'Stijl',
       slug: '/richtlijnen/stijl/overzicht',
       keywords: ['Stijl', 'overzicht'],
     },
@@ -16,7 +16,7 @@ const sidebar = [
     label: 'Formulieren',
     link: {
       type: 'generated-index',
-      title: 'Overzicht',
+      title: 'Formulieren',
       slug: '/richtlijnen/formulieren/overzicht',
       keywords: ['Formulieren', 'overzicht'],
     },
