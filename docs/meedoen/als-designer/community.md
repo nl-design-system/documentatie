@@ -3,7 +3,7 @@ title: Community voor designers
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Community
-sidebar_position: 5
+sidebar_position: 6
 pagination_label: Voorbeeld thema
 description: Lees over de community van designers en hoe je hier onderdeel van kan worden.
 keywords:
