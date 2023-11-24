@@ -9,4 +9,3 @@ Bijvoorbeeld als de gebruiker een paspoort- of burgerservicenummer nodig heeft, 
 
 **Let op**: de link moet niet alleen visueel, maar ook in de DOM (Document Object Modal) in de goede volgorde staan.
 Dus een link visueel verplaatsen via bijvoorbeeld flex-order is niet voldoende. De DOM-order is echt belangrijk voor screenreadergebruikers.
-
