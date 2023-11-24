@@ -7,7 +7,7 @@ const sidebar = [
     label: 'Voor designers',
     link: {
       type: 'generated-index',
-      title: 'Overzicht',
+      title: 'Voor designers',
       slug: '/meedoen/als-designer/overzicht',
       keywords: ['designers', 'overzicht'],
     },
@@ -18,7 +18,7 @@ const sidebar = [
     label: 'Voor developers',
     link: {
       type: 'generated-index',
-      title: 'Overzicht',
+      title: 'Voor developers',
       slug: '/meedoen/als-developer/overzicht',
       keywords: ['developer', 'overzicht'],
     },
@@ -29,7 +29,7 @@ const sidebar = [
     label: 'Voor organisaties',
     link: {
       type: 'generated-index',
-      title: 'Overzicht',
+      title: 'Voor organisaties',
       slug: '/meedoen/als-organisatie/overzicht',
       keywords: ['organisaties', 'overzicht'],
     },
