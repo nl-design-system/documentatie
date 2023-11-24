@@ -2,8 +2,7 @@
 
 ## Zet geen link in een label
 
-Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld het privacybeleid. Zoals:
-Alt: checkbox met in het label Ik ga akkoord met het privacybeleid, en de tekst privacybeleid is een link.
+Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld het privacybeleid.
 
 Dit is om twee redenen geen goede constructie:
 
