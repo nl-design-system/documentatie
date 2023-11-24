@@ -6,7 +6,7 @@ Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld he
 
 Dit is om twee redenen geen goede constructie:
 
-- Een label kan [geen links of buttons elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns) bevatten. Lees hierover meer in de richtlijn [Labels].
+- Een label kan [geen links of buttons elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns) bevatten. Lees hierover meer in de [richtlijnen over Labels](/richtlijnen/formulieren/alle-richtlijnen/labels).
 - Screenreaders kunnen struikelen over de combinatie “label en link” en lezen daardoor het label niet goed voor.
 
 Bijvoorbeeld:

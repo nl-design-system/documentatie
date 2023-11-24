@@ -22,6 +22,11 @@ p + .nlds-guideline {
   /* padding: 20px; */
 }
 
+.nlds-guideline select {
+  margin-bottom: 0.5em;
+  display: block;
+}
+
 .nlds-guideline__icon {
   height: 20px;
   width: 20px;

@@ -649,3 +649,10 @@ abbr[title] {
 .wcag-em th h6 {
   margin-top: auto;
 }
+
+/* CSS Richtlijnen */
+.nlds-dont {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #cc0000;
+}

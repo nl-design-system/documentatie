@@ -41,64 +41,7 @@ Zorg ervoor dat door het hele formulier voor dezelfde dingen dezelfde termen wor
 ## Duidelijke labels
 
 Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is.
-
-<Guideline
-  appearance="do"
-  title="Simpel label met extra beschrijving"
-  description={
-    <Paragraph>
-      Gebruik waar nodig een losse <Code>form-field-description</Code> om meer uitleg te geven.
-    </Paragraph>
-  }
->
-  <Canvas
-    language="html"
-    code={
-      <>
-        <label htmlFor="first-name">Voornaam(en)</label>
-        <p id="first-name-description"> Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
-        <input type="text" name="first_name" id="first-name" aria-describedby="first-name-description" />
-      </>
-    }
-    copy
-    defaultCollapsed
-  >
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="ff">Voornaam (een of meerdere)</FormLabel>
-      </Paragraph>
-      <FormFieldDescription className="utrecht-form-field__description" id="ff-description">
-        Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.
-      </FormFieldDescription>
-      <Textbox name="first_name" id="ff" aria-describedby="ff-description" />
-    </FormField>
-
-  </Canvas>
-</Guideline>
-
-<Guideline
-  appearance="dont"
-  title="Ingewikkeld label"
-  description="Door veel informatie in te korten wordt het label onduidelijk"
->
-  <Canvas
-    language="html"
-    code={
-      <>
-        <label htmlFor="name">Voornaam(en)</label>
-        <input type="text" name="first_name" id="name" />
-      </>
-    }
-    defaultCollapsed
-  >
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="name">Voornaam(en)</FormLabel>
-      </Paragraph>
-      <Textbox name="first_name" id="name" />
-    </FormField>
-  </Canvas>
-</Guideline>
+Lees hierover meer op de [richtlijnen over labels](http://localhost:3000/richtlijnen/formulieren/alle-richtlijnen/labels).
 
 ## Leg uit waarom informatie nodig is
 
