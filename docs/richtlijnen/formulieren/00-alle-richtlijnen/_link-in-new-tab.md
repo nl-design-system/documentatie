@@ -2,9 +2,11 @@
 
 ## Geef aan als een link in een nieuwe tab opent
 
-Het is handig om een link in een nieuwe tab te laten openen, zodat bijvoorbeeld de al ingevulde inhoud van een formulier niet verloren gaat. Geef dat aan in de linktekst.
+Het is onhandig als je de ingevulde informatie van een formulier kwijt raakt als je een link opent. In formulieren is het daarom handiger dat links niet openen in hetzelfde browser-venster.
 
-Een link openen in een nieuwe tab (of venster) is geen standaard (default) gedrag. Vooral voor screenreadergebruikers is het fijn om te weten wat er gaat gebeuren en waarom bijvoorbeeld de terugknop het niet meer doet.
+In de HTML kan dit met het attribuut '_target="_blank"' in de link.
+
+Een link openen in een nieuwe tab is geen standaard browser gedrag. Maak duidelijk hoe deze speciale links in formulieren werken, zodat de gebruiker bijvoorbeeld weet waarom de terugknop het niet doet. Voor screenreadergebruikers is dit extra belangrijk.
 
 Daarnaast: alle gebruikers moeten dezelfde informatie krijgen, dus er moet ook een visuele indicatie zijn dat de link in een nieuwe tab opent.
 
