@@ -4,7 +4,7 @@
 
 Het is onhandig als je de ingevulde informatie van een formulier kwijt raakt als je een link opent. In formulieren is het daarom handiger dat links niet openen in hetzelfde browser-venster.
 
-In de HTML kan dit met het attribuut '_target="_blank"' in de link.
+In de HTML kan dit met het attribuut `target="_blank"` in de link.
 
 Een link openen in een nieuwe tab is geen standaard browser gedrag. Maak duidelijk hoe deze speciale links in formulieren werken, zodat de gebruiker bijvoorbeeld weet waarom de terugknop het niet doet. Voor screenreadergebruikers is dit extra belangrijk.
 
