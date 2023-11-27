@@ -1,0 +1,18 @@
+<!-- @license CC0-1.0 -->
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline appearance="do" title="koppel alle descriptions aan het formulierveld.">
+  <Canvas language="html">
+    <label for="wachtwoord">Nieuw wachtwoord</label>
+    <div id="description-wachtwoord">Kies een wachtwoord van minimaal 8 karakters lang.</div>
+    <div id="error-wachtwoord">Je gekozen wachtwoord is te kort.</div>
+    <input
+      id="wachtwoord"
+      type="password"
+      name="nieuw-wachtwoord"
+      aria-describedby="description-wachtwoord error-wachtwoord"
+    />
+  </Canvas>
+</Guideline>
