@@ -3,32 +3,18 @@
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 
-
 <Guideline appearance="do" title="koppel een description aan het formulierveld, met aria-describedby.">
   <Canvas language="html">
     <label for="wachtwoord">Nieuw wachtwoord</label>
-    <p id="description-wachtwoord">
-      Kies een wachtwoord van minimaal 8 karakters lang.
-    </p>
-    <input
-      id="wachtwoord"
-      type="password"
-      name="nieuw-wachtwoord"
-      aria-describedby="description-wachtwoord"
-    />
+    <p id="description-wachtwoord">Kies een wachtwoord van minimaal 8 karakters lang.</p>
+    <input id="wachtwoord" type="password" name="nieuw-wachtwoord" aria-describedby="description-wachtwoord" />
   </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="koppeling weglaten.">
   <Canvas language="html">
     <label for="wachtwoord">Nieuw wachtwoord</label>
-    <p>
-      Kies een wachtwoord van minimaal 8 karakters lang.
-    </p>
-    <input
-      id="wachtwoord"
-      type="password"
-      name="nieuw-wachtwoord"
-    />
+    <p>Kies een wachtwoord van minimaal 8 karakters lang.</p>
+    <input id="wachtwoord" type="password" name="nieuw-wachtwoord" />
   </Canvas>
 </Guideline>

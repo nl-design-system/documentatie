@@ -6,9 +6,9 @@ sidebar_label: Richtlijnen
 pagination_label: Richtlijnen
 description: NL Design System richtlijnen
 keywords:
-- wat
-- design system
-- documentatie
+  - wat
+  - design system
+  - documentatie
 ---
 
 # Richtlijnen
@@ -63,6 +63,7 @@ _label-text-visibility.md
 ```
 
 <!-- TODO! -->
+
 ### Namen voor partials
 
 We willen de namen liefst niet meer veranderen, en dus toekomstbestendig maken (vanuit de ‘cool URI's don't change’ gedachte).
