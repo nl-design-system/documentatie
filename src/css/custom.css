@@ -656,3 +656,7 @@ abbr[title] {
   padding: 20px;
   border: 2px solid #cc0000;
 }
+
+input[type="text"] {
+  display: block;
+}
