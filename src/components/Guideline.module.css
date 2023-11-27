@@ -45,9 +45,13 @@ p + .nlds-guideline {
 }
 
 .nlds-guideline__badge--dont {
+  --utrecht-paragraph-color: var(--nlds-invalid-color);
+  --utrecht-paragraph-font-weight: bold;
   color: var(--nlds-invalid-color);
 }
 
 .nlds-guideline__badge--do {
+  --utrecht-paragraph-color: var(--nlds-valid-color);
+  --utrecht-paragraph-font-weight: bold;
   color: var(--nlds-valid-color);
 }
