@@ -28,9 +28,7 @@ export const Guideline = ({ title, appearance, description, children }: PropsWit
               <IconMoodSad className={style['nlds-guideline__icon']} />
               <span className={style['nlds-guideline__title']}>{guidelineLabel['dont']}</span>
             </Paragraph>
-            <Paragraph>
-              {title}
-            </Paragraph>
+            <Paragraph>{title}</Paragraph>
           </>
         ) : (
           <>
@@ -38,9 +36,7 @@ export const Guideline = ({ title, appearance, description, children }: PropsWit
               <IconMoodHappy className={style['nlds-guideline__icon']} />
               <span className={style['nlds-guideline__title']}>{guidelineLabel['do']}</span>
             </Paragraph>
-            <Paragraph>
-              {title}
-            </Paragraph>
+            <Paragraph>{title}</Paragraph>
           </>
         )}
         {description}
