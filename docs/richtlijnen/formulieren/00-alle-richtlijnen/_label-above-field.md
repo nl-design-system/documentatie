@@ -8,11 +8,11 @@ Deze plaatsing heeft meerdere voordelen:
 
 - Het biedt voldoende ruimte voor labels van verschillende lengtes. Het kan zijn dat gebruikers vertaalsoftware gebruiken op de pagina, waardoor labels langer of korter kunnen zijn dan je verwacht.
 - Dit werkt beter voor gebruikers die de tekst inzoomen.
-- Het biedt een natuurlijke ‘scan-lijn’.
+- Door labels, formuliervelden en acties verticaal uit te lijnen, wordt een natuurlijke 'scan-lijn' gecreëerd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten.
 
 Waarom is dit belangrijk? Mensen lezen van boven naar beneden en verwachten dat de informatie in die volgorde staat.
 
-Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort.
+Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij [de richtlijnen over stijl: Ruimte](https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte#ontwerpen-met-ruimte).
 
 Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond.
 

@@ -657,6 +657,6 @@ abbr[title] {
   border: 2px solid #cc0000;
 }
 
-input[type="text"] {
+.docs-doc-page input[type="text"] {
   display: block;
 }
