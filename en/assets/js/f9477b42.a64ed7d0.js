@@ -7,8 +7,8 @@
    var t = l(67294);
    const o = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
    var a = l(86010),
-    i = l(28182),
-    r = l.n(i),
+    r = l(28182),
+    i = l.n(r),
     d = l(72237),
     s = l.n(d),
     c = l(73945),
@@ -25,17 +25,17 @@
      (t.hidden = !t.hidden), n.setAttribute("aria-expanded", !t.hidden), (n.innerText = t.hidden ? "Bekijk code" : "Verberg code");
     },
     h = (e) => {
-     let { code: n, copy: l = !1, defaultCollapsed: i = !1, children: d, language: c } = e;
-     const h = m().format(k.uS(n || d), { parser: "html", plugins: [r(), s()], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" }),
+     let { code: n, copy: l = !1, defaultCollapsed: r = !1, children: d, language: c } = e;
+     const h = m().format(k.uS(n || d), { parser: "html", plugins: [i(), s()], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" }),
       f = (0, g.Z)();
      return t.createElement(
       "div",
       { className: (0, a.Z)(o["nlds-canvas"], "voorbeeld-theme", "utrecht-html") },
       t.createElement("div", { className: (0, a.Z)(o["nlds-canvas__example"]) }, d),
-      t.createElement("div", { className: (0, a.Z)(o["nlds-canvas__toolbar"]) }, t.createElement(b.zx, { className: (0, a.Z)(o["nlds-canvas__button"], o["nlds-canvas__toggle-code-button"]), appearance: "subtle-button", onClick: v, "aria-expanded": !i, "aria-controls": f }, i ? "Bekijk code" : "Verberg code")),
+      t.createElement("div", { className: (0, a.Z)(o["nlds-canvas__toolbar"]) }, t.createElement(b.zx, { className: (0, a.Z)(o["nlds-canvas__button"], o["nlds-canvas__toggle-code-button"]), appearance: "subtle-button", onClick: v, "aria-expanded": !r, "aria-controls": f }, r ? "Bekijk code" : "Verberg code")),
       t.createElement(
        "div",
-       { className: (0, a.Z)(o["nlds-canvas__code-block"], !l && o["nlds-canvas__code-block--user-select-none"]), id: f, hidden: i },
+       { className: (0, a.Z)(o["nlds-canvas__code-block"], !l && o["nlds-canvas__code-block--user-select-none"]), id: f, hidden: r },
        t.createElement(u.Z, { language: c, style: p }, h),
        l &&
         t.createElement(
@@ -62,18 +62,18 @@
    var t = l(67294),
     o = l(12569),
     a = l(46451);
-   const i = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
-   var r = l(86010),
+   const r = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
+   var i = l(86010),
     d = l(65663);
    const s = (e) => {
     let { title: n, appearance: l, description: s, children: c } = e;
-    const m = { do: "Doen", dont: "Niet doen" },
-     k = n ? `${m[l]}: ${n}` : m[l];
-    return t.createElement("div", { className: (0, r.Z)(i["nlds-guideline"], i[`nlds-guideline--${l}`]), id: null == n ? void 0 : n.toLowerCase().replace(/\s/g, "-") }, t.createElement("div", { className: (0, r.Z)(i["nlds-guideline__description"]) }, "dont" === l ? t.createElement(d.nv, { className: (0, r.Z)(i["nlds-guideline__badge"], i[`nlds-guideline__badge--${l}`]) }, t.createElement(o.Z, { className: i["nlds-guideline__icon"] }), t.createElement("span", { className: i["nlds-guideline__title"] }, k)) : t.createElement(d.nv, { className: (0, r.Z)(i["nlds-guideline__badge"], i[`nlds-guideline__badge--${l}`]) }, t.createElement(a.Z, { className: i["nlds-guideline__icon"] }), t.createElement("span", { className: i["nlds-guideline__title"] }, k)), s), t.createElement("div", { className: (0, r.Z)(i["nlds-guideline__example"]) }, c));
+    const m = "Doen",
+     k = "Niet doen";
+    return t.createElement("div", { className: (0, i.Z)(r["nlds-guideline"], r[`nlds-guideline--${l}`]), id: null == n ? void 0 : n.toLowerCase().replace(/\s/g, "-") }, t.createElement("div", { className: (0, i.Z)(r["nlds-guideline__description"]) }, "dont" === l ? t.createElement(t.Fragment, null, t.createElement(d.nv, { className: (0, i.Z)(r["nlds-guideline__badge"], r[`nlds-guideline__badge--${l}`]) }, t.createElement(o.Z, { className: r["nlds-guideline__icon"] }), t.createElement("span", { className: r["nlds-guideline__title"] }, k)), t.createElement(d.nv, null, n)) : t.createElement(t.Fragment, null, t.createElement(d.nv, { className: (0, i.Z)(r["nlds-guideline__badge"], r[`nlds-guideline__badge--${l}`]) }, t.createElement(a.Z, { className: r["nlds-guideline__icon"] }), t.createElement("span", { className: r["nlds-guideline__title"] }, m)), t.createElement(d.nv, null, n)), s), t.createElement("div", { className: (0, i.Z)(r["nlds-guideline__example"]) }, c));
    };
   },
   91997: (e, n, l) => {
-   l.r(n), l.d(n, { assets: () => U, contentTitle: () => O, default: () => K, frontMatter: () => F, metadata: () => P, toc: () => $ });
+   l.r(n), l.d(n, { assets: () => U, contentTitle: () => O, default: () => $, frontMatter: () => R, metadata: () => P, toc: () => J });
    var t = l(87462),
     o = (l(67294), l(3905));
    const a = {
@@ -82,19 +82,19 @@
       { value: "De for/id relatie", id: "de-forid-relatie", level: 3 },
      ],
     },
-    i = "wrapper";
-   function r(e) {
+    r = "wrapper";
+   function i(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(i, (0, t.Z)({}, a, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h2", { id: "geef-een-formulierveld-toegankelijke-naam-met-een-label" }, "Geef een formulierveld toegankelijke naam met een label"), (0, o.kt)("p", null, "Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld met een ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), "/", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), ' relatie. De labeltekst wordt dan de zogenaamde "toegankelijke naam" van het formulierveld.'), (0, o.kt)("p", null, "Waarom is dit belangrijk?"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Screenreader (schermlezer) gebruikers krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt."), (0, o.kt)("li", { parentName: "ul" }, "Voice recognition (stembediening) gebruikers kunnen het veld focus geven door die naam uit te spreken."), (0, o.kt)("li", { parentName: "ul" }, "Muis- en touchscreen gebruikers kunnen het label aanklikken om het formulierveld focus te geven.")), (0, o.kt)("p", null, "Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Is er meer uitleg nodig? Gebruik dan een beschrijving (description)."), (0, o.kt)("h3", { id: "de-forid-relatie" }, "De for/id relatie"), (0, o.kt)("p", null, "Opzet in de HTML:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Geef het formulierveld een ID."), (0, o.kt)("li", { parentName: "ul" }, "Geef het label het attribute ", (0, o.kt)("inlineCode", { parentName: "li" }, "for"), " met als waarde de ID van het bijbehorende formulierveld.")), (0, o.kt)("pre", null, (0, o.kt)("code", { parentName: "pre", className: "language-html" }, '<label for="kleur1">Wat is je lievelingskleur</label>\n<input type="text" id="kleur1" name="lievelingskleur" />\n')), (0, o.kt)("p", null, "Let op: De gebruikte ", (0, o.kt)("strong", { parentName: "p" }, "ID's"), " moeten uniek zijn voor de pagina, anders worden de verkeerde namen bij de velden voorgelezen."), (0, o.kt)("p", null, "Een snelle test of de koppeling werkt: klik op het label en ga na of het veld focus krijgt."), (0, o.kt)("p", null, "Doen: Gekoppeld label met ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), " en ", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), ". Het ", (0, o.kt)("inlineCode", { parentName: "p" }, "<label>"), "-element heeft een ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), " attribuut (of ", (0, o.kt)("inlineCode", { parentName: "p" }, "htmlFor"), " in React) dat verwijst naar het ", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), " van het bijbehorende formulierveld."), (0, o.kt)("p", null, "Zo werkt dit bijvoorbeeld met een ", (0, o.kt)("inlineCode", { parentName: "p" }, "<select>"), ":"), (0, o.kt)("pre", null, (0, o.kt)("code", { parentName: "pre", className: "language-html" }, '<label for="kleur2">Wat is je lievelingskleur?</label>\n<select id="kleur2" name="lievelingskleur">\n  <option>Rood</option>\n  <option>Blauw</option>\n  <option>Wit</option>\n</select>\n')), (0, o.kt)("p", null, "Het geven van een goede toegankelijke naam aan formuliervelden is verplicht volgens WCAG. Deze succescriteria zijn relevant:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels" }, "2.4.6: Koppen en labels (niveau AA)")), (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions" }, "3.3.2: Labels of instructies (niveau A)")), (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html" }, "4.1.2: Naam, rol, waarde (niveau A)"))));
+    return (0, o.kt)(r, (0, t.Z)({}, a, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h2", { id: "geef-een-formulierveld-toegankelijke-naam-met-een-label" }, "Geef een formulierveld toegankelijke naam met een label"), (0, o.kt)("p", null, "Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld met een ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), "/", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), ' relatie. De labeltekst wordt dan de zogenaamde "toegankelijke naam" van het formulierveld.'), (0, o.kt)("p", null, "Waarom is dit belangrijk?"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Screenreader (schermlezer) gebruikers krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt."), (0, o.kt)("li", { parentName: "ul" }, "Voice recognition (stembediening) gebruikers kunnen het veld focus geven door die naam uit te spreken."), (0, o.kt)("li", { parentName: "ul" }, "Muis- en touchscreen gebruikers kunnen het label aanklikken om het formulierveld focus te geven.")), (0, o.kt)("p", null, "Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Is er meer uitleg nodig? Gebruik dan een beschrijving (description)."), (0, o.kt)("h3", { id: "de-forid-relatie" }, "De for/id relatie"), (0, o.kt)("p", null, "Opzet in de HTML:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Geef het formulierveld een ID."), (0, o.kt)("li", { parentName: "ul" }, "Geef het label het attribute ", (0, o.kt)("inlineCode", { parentName: "li" }, "for"), " met als waarde de ID van het bijbehorende formulierveld.")), (0, o.kt)("pre", null, (0, o.kt)("code", { parentName: "pre", className: "language-html" }, '<label for="kleur1">Wat is je lievelingskleur</label>\n<input type="text" id="kleur1" name="lievelingskleur" />\n')), (0, o.kt)("p", null, "Let op: De gebruikte ", (0, o.kt)("strong", { parentName: "p" }, "ID's"), " moeten uniek zijn voor de pagina, anders worden de verkeerde namen bij de velden voorgelezen."), (0, o.kt)("p", null, "Een snelle test of de koppeling werkt: klik op het label en ga na of het veld focus krijgt."), (0, o.kt)("p", null, "Doen: Gekoppeld label met ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), " en ", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), ". Het ", (0, o.kt)("inlineCode", { parentName: "p" }, "<label>"), "-element heeft een ", (0, o.kt)("inlineCode", { parentName: "p" }, "for"), " attribuut (of ", (0, o.kt)("inlineCode", { parentName: "p" }, "htmlFor"), " in React) dat verwijst naar het ", (0, o.kt)("inlineCode", { parentName: "p" }, "id"), " van het bijbehorende formulierveld."), (0, o.kt)("p", null, "Zo werkt dit bijvoorbeeld met een ", (0, o.kt)("inlineCode", { parentName: "p" }, "<select>"), ":"), (0, o.kt)("pre", null, (0, o.kt)("code", { parentName: "pre", className: "language-html" }, '<label for="kleur2">Wat is je lievelingskleur?</label>\n<select id="kleur2" name="lievelingskleur">\n  <option>Rood</option>\n  <option>Blauw</option>\n  <option>Wit</option>\n</select>\n')), (0, o.kt)("p", null, "Het geven van een goede toegankelijke naam aan formuliervelden is verplicht volgens WCAG. Deze succescriteria zijn relevant:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels" }, "2.4.6: Koppen en labels (niveau AA)")), (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions" }, "3.3.2: Labels of instructies (niveau A)")), (0, o.kt)("li", { parentName: "ul" }, (0, o.kt)("a", { parentName: "li", href: "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html" }, "4.1.2: Naam, rol, waarde (niveau A)"))));
    }
-   r.isMDXComponent = !0;
+   i.isMDXComponent = !0;
    var d = l(13455),
     s = l(31092);
    const c = { toc: [] },
     m = "wrapper";
    function k(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(m, (0, t.Z)({}, c, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "een div in plaats van een label gebruiken. De for en id koppeling werkt alleen met een label-element.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("div", { for: "kleur3" }, "Wat is je lievelingskleur?"), (0, o.kt)("input", { type: "text", id: "kleur3", name: "lievelingskleur" }))), (0, o.kt)(s.X, { appearance: "dont", title: "een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", null, "Wat is je lievelingskleur?"), (0, o.kt)("select", { name: "lievelingskleur" }, (0, o.kt)("option", null, "Rood"), (0, o.kt)("option", null, "Blauw"), (0, o.kt)("option", null, "Wit")))));
+    return (0, o.kt)(m, (0, t.Z)({}, c, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "Een div in plaats van een label gebruiken. De for en id koppeling werkt alleen met een label-element.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("div", { for: "kleur3" }, "Wat is je lievelingskleur?"), (0, o.kt)("input", { type: "text", id: "kleur3", name: "lievelingskleur" }))), (0, o.kt)(s.X, { appearance: "dont", title: "Een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", null, "Wat is je lievelingskleur?"), (0, o.kt)("select", { name: "lievelingskleur" }, (0, o.kt)("option", null, "Rood"), (0, o.kt)("option", null, "Blauw"), (0, o.kt)("option", null, "Wit")))));
    }
    k.isMDXComponent = !0;
    const u = { toc: [{ value: "De zichtbare naam moet overeenkomen met de toegankelijke naam", id: "de-zichtbare-naam-moet-overeenkomen-met-de-toegankelijke-naam", level: 2 }] },
@@ -108,7 +108,7 @@
     v = "wrapper";
    function h(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(v, (0, t.Z)({}, g, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "alleen een placeholder gebruiken om te laten zien wat de gebruiker moet invullen, terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("input", { type: "text", name: "lievelingskleur", "aria-label": "Vul een kleur in", placeholder: "Wat is je lievelingskleur" }))), (0, o.kt)(s.X, { appearance: "dont", title: "alleen losse tekst gebruiken om te laten zien wat de gebruiker moet invullen, terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("div", null, "Zoek"), (0, o.kt)("input", { type: "search", name: "trefwoord", "aria-label": "Trefwoord" }))));
+    return (0, o.kt)(v, (0, t.Z)({}, g, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "Alleen een placeholder gebruiken om te laten zien wat de gebruiker moet invullen, terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("input", { type: "text", name: "lievelingskleur", "aria-label": "Vul een kleur in", placeholder: "Wat is je lievelingskleur" }))), (0, o.kt)(s.X, { appearance: "dont", title: "Alleen losse tekst gebruiken om te laten zien wat de gebruiker moet invullen, terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("div", null, "Zoek"), (0, o.kt)("input", { type: "search", name: "trefwoord", "aria-label": "Trefwoord" }))));
    }
    h.isMDXComponent = !0;
    const f = { toc: [{ value: "Zet het label boven het formulierveld", id: "zet-het-label-boven-het-formulierveld", level: 2 }] },
@@ -122,7 +122,7 @@
     _ = "wrapper";
    function x(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(_, (0, t.Z)({}, w, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "het label inconsequent plaatsen in een formulier (visueel en in code).", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "lievelingskleur" }, "Wat is je lievelingskleur?"), (0, o.kt)("select", { name: "lievelingskleur", id: "lievelingskleur" }, (0, o.kt)("option", null, "Rood"), (0, o.kt)("option", null, "Blauw"), (0, o.kt)("option", null, "Wit")), (0, o.kt)("input", { type: "text", id: "dier", name: "lievelingsdier" }), (0, o.kt)("label", { for: "dier" }, "Wat is je lievelingsdier?"))));
+    return (0, o.kt)(_, (0, t.Z)({}, w, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "dont", title: "Het label inconsequent plaatsen in een formulier (visueel en in code).", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "lievelingskleur" }, "Wat is je lievelingskleur?"), (0, o.kt)("select", { name: "lievelingskleur", id: "lievelingskleur" }, (0, o.kt)("option", null, "Rood"), (0, o.kt)("option", null, "Blauw"), (0, o.kt)("option", null, "Wit")), (0, o.kt)("input", { type: "text", id: "dier", name: "lievelingsdier" }), (0, o.kt)("label", { for: "dier" }, "Wat is je lievelingsdier?"))));
    }
    x.isMDXComponent = !0;
    const z = { toc: [{ value: "Zorg ervoor dat het label altijd zichtbaar is", id: "zorg-ervoor-dat-het-label-altijd-zichtbaar-is", level: 2 }] },
@@ -136,62 +136,62 @@
     C = "wrapper";
    function X(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(C, (0, t.Z)({}, T, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "het label blijft zichtbaar, ook als de gebruiker gaat invullen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "dier1" }, "Wat is je lievelingsdier?"), (0, o.kt)("input", { type: "text", id: "dier1", name: "lievelingsdier", placeholder: "Bijvoorbeeld cavia" }))), (0, o.kt)(s.X, { appearance: "dont", title: "alleen een placeholder gebruiken als zichtbaar label.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "dier2", class: "visually-hidden" }, "Wat is je lievelingsdier?"), (0, o.kt)("input", { type: "text", id: "dier2", name: "lievelingsdier", placeholder: "Wat is je lievelingsdier?" }))));
+    return (0, o.kt)(C, (0, t.Z)({}, T, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "Het label blijft zichtbaar, ook als de gebruiker gaat invullen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "dier1" }, "Wat is je lievelingsdier?"), (0, o.kt)("input", { type: "text", id: "dier1", name: "lievelingsdier", placeholder: "Bijvoorbeeld cavia" }))), (0, o.kt)(s.X, { appearance: "dont", title: "Alleen een placeholder gebruiken als zichtbaar label.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "dier2", class: "visually-hidden" }, "Wat is je lievelingsdier?"), (0, o.kt)("input", { type: "text", id: "dier2", name: "lievelingsdier", placeholder: "Wat is je lievelingsdier?" }))));
    }
    X.isMDXComponent = !0;
    const Z = { toc: [{ value: "Zet alleen tekst in het label", id: "zet-alleen-tekst-in-het-label", level: 2 }] },
     L = "wrapper";
-   function M(e) {
+   function S(e) {
     let { components: n, ...l } = e;
     return (0, o.kt)(L, (0, t.Z)({}, Z, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h2", { id: "zet-alleen-tekst-in-het-label" }, "Zet alleen tekst in het label"), (0, o.kt)("p", null, "Gebruik alleen tekst in een label. Dus geen links, buttons, tooltips of kopjes."), (0, o.kt)("p", null, "Dit geeft problemen bij het voorlezen van het label door screenreaders en het activeren via voice recognition."), (0, o.kt)("p", null, "Zet extra informatie boven het formulier, als links boven het label of formulierveld (wat logisch is qua leesvolgorde) of als beschrijving bij het veld. Vermijd tooltips."), (0, o.kt)("p", null, "Lees ook de ", (0, o.kt)("a", { parentName: "p", href: "/richtlijnen/formulieren/alle-richtlijnen/links" }, "richtlijnen voor links in formulieren"), "."));
    }
-   M.isMDXComponent = !0;
-   const S = { toc: [] },
+   S.isMDXComponent = !0;
+   const M = { toc: [] },
     A = "wrapper";
-   function G(e) {
+   function E(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(A, (0, t.Z)({}, S, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "de link buiten het label plaatsen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("p", null, (0, o.kt)("a", { href: "#" }, "Onze algemene leveringsvoorwaarden")), (0, o.kt)("input", { id: "alv1", type: "checkbox" }), (0, o.kt)("label", { for: "alv1" }, "Ik ga akkoord met de algemene leveringsvoorwaarden"))), (0, o.kt)(s.X, { appearance: "dont", title: "de link binnen het label plaatsen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("input", { id: "alv2", type: "checkbox" }), (0, o.kt)("label", { for: "alv2" }, "Ik ga akkoord met de ", (0, o.kt)("a", { href: "#" }, "algemene leveringsvoorwaarden")))));
+    return (0, o.kt)(A, (0, t.Z)({}, M, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "De link buiten het label plaatsen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("p", null, (0, o.kt)("a", { href: "#" }, "Onze algemene leveringsvoorwaarden")), (0, o.kt)("input", { id: "alv1", type: "checkbox" }), (0, o.kt)("label", { for: "alv1" }, "Ik ga akkoord met de algemene leveringsvoorwaarden"))), (0, o.kt)(s.X, { appearance: "dont", title: "De link binnen het label plaatsen.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("input", { id: "alv2", type: "checkbox" }), (0, o.kt)("label", { for: "alv2" }, "Ik ga akkoord met de ", (0, o.kt)("a", { href: "#" }, "algemene leveringsvoorwaarden")))));
    }
-   G.isMDXComponent = !0;
-   const W = { toc: [{ value: "Gebruik duidelijke labelteksten", id: "gebruik-duidelijke-labelteksten", level: 2 }] },
-    E = "wrapper";
+   E.isMDXComponent = !0;
+   const G = { toc: [{ value: "Gebruik duidelijke labelteksten", id: "gebruik-duidelijke-labelteksten", level: 2 }] },
+    W = "wrapper";
    function H(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(E, (0, t.Z)({}, W, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h2", { id: "gebruik-duidelijke-labelteksten" }, "Gebruik duidelijke labelteksten"), (0, o.kt)("p", null, "Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is."));
+    return (0, o.kt)(W, (0, t.Z)({}, G, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h2", { id: "gebruik-duidelijke-labelteksten" }, "Gebruik duidelijke labelteksten"), (0, o.kt)("p", null, "Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is."));
    }
    H.isMDXComponent = !0;
    const I = { toc: [] },
     B = "wrapper";
    function V(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(B, (0, t.Z)({}, I, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "simpel label met extra beschrijving. Gebruik waar nodig een losse description om meer uitleg te geven.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "first-name" }, "Voornaam (een of meerdere)"), (0, o.kt)("p", { id: "first-name-description" }, "Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan."), (0, o.kt)("input", { autocomplete: "given-name", type: "text", name: "first_name", id: "first-name", "aria-describedby": "first-name-description" }))), (0, o.kt)(s.X, { appearance: "dont", title: "Ingewikkeld label. Door veel informatie in te korten wordt het label onduidelijk", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "first-name2" }, "Voornaam(en)"), (0, o.kt)("input", { autocomplete: "given-name", type: "text", name: "first_name", id: "first-name2" }))));
+    return (0, o.kt)(B, (0, t.Z)({}, I, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)(s.X, { appearance: "do", title: "Simpel label met extra beschrijving. Gebruik waar nodig een losse description om meer uitleg te geven.", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "first-name" }, "Voornaam (een of meerdere)"), (0, o.kt)("p", { id: "first-name-description" }, "Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan."), (0, o.kt)("input", { autocomplete: "given-name", type: "text", name: "first_name", id: "first-name", "aria-describedby": "first-name-description" }))), (0, o.kt)(s.X, { appearance: "dont", title: "Ingewikkeld label. Door veel informatie in te korten wordt het label onduidelijk", mdxType: "Guideline" }, (0, o.kt)(d.X, { language: "html", mdxType: "Canvas" }, (0, o.kt)("label", { for: "first-name2" }, "Voornaam(en)"), (0, o.kt)("input", { autocomplete: "given-name", type: "text", name: "first_name", id: "first-name2" }))));
    }
    V.isMDXComponent = !0;
-   var R = l(75695);
-   const F = { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
+   var F = l(75695);
+   const R = { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
     O = void 0,
     P = { unversionedId: "richtlijnen/formulieren/alle-richtlijnen/labels", id: "richtlijnen/formulieren/alle-richtlijnen/labels", title: "Labels in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/01-labels.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/labels", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/labels", draft: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/01-labels.mdx", tags: [], version: "current", sidebarPosition: 1, frontMatter: { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Alle richtlijnen (beta)", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen" }, next: { title: "Links in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/links" } },
     U = {},
-    $ = [],
-    J = { toc: $ },
-    q = "wrapper";
-   function K(e) {
+    J = [],
+    q = { toc: J },
+    K = "wrapper";
+   function $(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(q, (0, t.Z)({}, J, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h1", { id: "labels-in-een-formulier" }, "Labels in een formulier"), (0, o.kt)("p", null, "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Geef een formulierveld een toegankelijke naam met een label."), (0, o.kt)("li", { parentName: "ul" }, "De zichtbare naam moet overeenkomen met de toegankelijke naam."), (0, o.kt)("li", { parentName: "ul" }, "Zet het label boven het formulierveld."), (0, o.kt)("li", { parentName: "ul" }, "Zorg ervoor dat het label altijd zichtbaar is."), (0, o.kt)("li", { parentName: "ul" }, "Zet alleen tekst in het label."), (0, o.kt)("li", { parentName: "ul" }, "Gebruik duidelijke labelteksten.")), (0, o.kt)(r, { mdxType: "AccessibleName" }), (0, o.kt)(k, { mdxType: "AccessibleNameCode" }), (0, o.kt)(b, { mdxType: "VisibleAccessibleName" }), (0, o.kt)(h, { mdxType: "VisibleAccessibleNameCode" }), (0, o.kt)(j, { mdxType: "LabelAboveField" }), (0, o.kt)(x, { mdxType: "LabelAboveFieldCode" }), (0, o.kt)(D, { mdxType: "LabelAlwaysVisible" }), (0, o.kt)(X, { mdxType: "LabelAlwaysVisibleCode" }), (0, o.kt)(M, { mdxType: "LabelOnlyText" }), (0, o.kt)(G, { mdxType: "LabelOnlyTextCode" }), (0, o.kt)(H, { mdxType: "LabelText" }), (0, o.kt)(V, { mdxType: "LabelTextCode" }), (0, o.kt)(R.ZP, { mdxType: "FormFooterInfo" }));
+    return (0, o.kt)(K, (0, t.Z)({}, q, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("h1", { id: "labels-in-een-formulier" }, "Labels in een formulier"), (0, o.kt)("p", null, "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:"), (0, o.kt)("ul", null, (0, o.kt)("li", { parentName: "ul" }, "Geef een formulierveld een toegankelijke naam met een label."), (0, o.kt)("li", { parentName: "ul" }, "De zichtbare naam moet overeenkomen met de toegankelijke naam."), (0, o.kt)("li", { parentName: "ul" }, "Zet het label boven het formulierveld."), (0, o.kt)("li", { parentName: "ul" }, "Zorg ervoor dat het label altijd zichtbaar is."), (0, o.kt)("li", { parentName: "ul" }, "Zet alleen tekst in het label."), (0, o.kt)("li", { parentName: "ul" }, "Gebruik duidelijke labelteksten.")), (0, o.kt)(i, { mdxType: "AccessibleName" }), (0, o.kt)(k, { mdxType: "AccessibleNameCode" }), (0, o.kt)(b, { mdxType: "VisibleAccessibleName" }), (0, o.kt)(h, { mdxType: "VisibleAccessibleNameCode" }), (0, o.kt)(j, { mdxType: "LabelAboveField" }), (0, o.kt)(x, { mdxType: "LabelAboveFieldCode" }), (0, o.kt)(D, { mdxType: "LabelAlwaysVisible" }), (0, o.kt)(X, { mdxType: "LabelAlwaysVisibleCode" }), (0, o.kt)(S, { mdxType: "LabelOnlyText" }), (0, o.kt)(E, { mdxType: "LabelOnlyTextCode" }), (0, o.kt)(H, { mdxType: "LabelText" }), (0, o.kt)(V, { mdxType: "LabelTextCode" }), (0, o.kt)(F.ZP, { mdxType: "FormFooterInfo" }));
    }
-   K.isMDXComponent = !0;
+   $.isMDXComponent = !0;
   },
   75695: (e, n, l) => {
-   l.d(n, { ZP: () => r });
+   l.d(n, { ZP: () => i });
    var t = l(87462),
     o = (l(67294), l(3905));
    const a = { toc: [] },
-    i = "wrapper";
-   function r(e) {
+    r = "wrapper";
+   function i(e) {
     let { components: n, ...l } = e;
-    return (0, o.kt)(i, (0, t.Z)({}, a, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("p", null, "Deze richtlijnen worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, o.kt)("a", { parentName: "p", href: "https://github.com/nl-design-system/documentatie/issues/new" }, "Open een issue op GitHub"), " met je suggesties."));
+    return (0, o.kt)(r, (0, t.Z)({}, a, l, { components: n, mdxType: "MDXLayout" }), (0, o.kt)("p", null, "Deze richtlijnen worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, o.kt)("a", { parentName: "p", href: "https://github.com/nl-design-system/documentatie/issues/new" }, "Open een issue op GitHub"), " met je suggesties."));
    }
-   r.isMDXComponent = !0;
+   i.isMDXComponent = !0;
   },
  },
 ]);

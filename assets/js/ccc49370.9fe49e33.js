@@ -308,7 +308,7 @@
     p = a(65663);
    function h(e) {
     let { children: t } = e;
-    return r.createElement(l.Zo, { components: { head: o, code: p.EK, a: p.rU, em: p.j$, pre: s, p: p.nv, details: u, ul: p.QI, li: p.AS, img: p.Ee, h1: p.nL, h2: p.XJ, h3: p.aC, h4: p.k8, h5: p.by, h6: p.Cd, admonition: d.Z, mermaid: g.Z } }, t);
+    return r.createElement(l.Zo, { components: { head: o, code: p.EK, a: p.rU, em: p.j$, pre: s, details: u, ul: p.QI, li: p.AS, img: p.Ee, h1: p.nL, h2: p.XJ, h3: p.aC, h4: p.k8, h5: p.by, h6: p.Cd, admonition: d.Z, mermaid: g.Z } }, t);
    }
   },
  },

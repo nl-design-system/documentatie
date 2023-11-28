@@ -2757,10 +2757,10 @@ body:not(.navigation-with-keyboard) :not(input):focus {
  font-size: 0.65em;
 }
 .utrecht-button:focus {
- background-color: inherit !important;
- border-color: inherit !important;
- color: inherit !important;
- scale: inherit !important;
+ background-color: var(--_utrecht-button-background-color) !important;
+ border-color: var(--_utrecht-button-border-color) !important;
+ color: var(--_utrecht-button-color) !important;
+ scale: var(--utrecht-button-scale, 1) !important;
 }
 .utrecht-button:focus-visible {
  background-color: var(--_utrecht-button-focus-background-color) !important;
@@ -5999,14 +5999,15 @@ p + .nlds-guideline_tEmj {
 }
 .nlds-guideline__badge_cDbY {
  -webkit-margin-after: 16px;
+ --utrecht-paragraph-font-weight: bold;
  font-size: 20px;
- font-weight: 700;
  margin-block-end: 16px;
 }
 .nlds-guideline__badge--dont_w4Jz {
- color: var(--nlds-invalid-color);
+ --utrecht-paragraph-color: var(--nlds-invalid-color);
 }
 .nlds-guideline__badge--do_wylG {
+ --utrecht-paragraph-color: var(--nlds-valid-color);
  color: var(--nlds-valid-color);
 }
 .example-form_t2kS {
