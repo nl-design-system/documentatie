@@ -62,7 +62,6 @@ _label-no-activate.md
 _label-text-visibility.md
 ```
 
-<!-- TODO! -->
 
 ### Namen voor partials
 
