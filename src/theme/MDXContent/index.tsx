@@ -17,7 +17,6 @@ import {
   Heading6,
   Image,
   Link,
-  Paragraph,
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
@@ -31,7 +30,6 @@ export default function MDXContent({ children }: Props): JSX.Element {
         a: Link,
         em: Emphasis,
         pre: MDXPre,
-        p: Paragraph,
         details: MDXDetails,
         ul: UnorderedList,
         li: UnorderedListItem,
