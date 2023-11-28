@@ -666,3 +666,142 @@ abbr[title] {
 .docs-doc-page input[type="password"] {
   display: block;
 }
+
+code[class*="language-"] {
+  color: var(--nlds-code-block-code-color);
+  background-color: var(--nlds-code-block-background-color);
+  font-family: var(--nlds-code-block-font-family, monospace);
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: var(--nlds-code-block-line-height, 1.5);
+  -moz-tab-size: var(--nlds-code-block-tab-size, 4);
+  -o-tab-size: var(--nlds-code-block-tab-size, 4);
+  tab-size: var(--nlds-code-block-tab-size, 4);
+  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
+  -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  ms-hyphens: var(--nlds-code-block-hyphens, none);
+  hyphens: var(--nlds-code-block-hyphens, none);
+}
+
+pre[class*="language-"] {
+  color: var(--nlds-code-block-color);
+  font-family: var(--nlds-code-block-font-family, monospace);
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: var(--nlds-code-block-line-height, 1.5);
+  font-size: var(--nlds-code-block-font-size, 1em);
+  -moz-tab-size: var(--nlds-code-block-tab-size, 4);
+  -o-tab-size: var(--nlds-code-block-tab-size, 4);
+  tab-size: var(--nlds-code-block-tab-size, 4);
+  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
+  -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  ms-hyphens: var(--nlds-code-block-hyphens, none);
+  hyphens: var(--nlds-code-block-hyphens, none);
+  padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em);
+  padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em);
+  padding-block-start: var(--nlds-code-block-padding-block-start, 1em);
+  padding-block-end: var(--nlds-code-block-padding-block-end, 1em);
+  margin-inline-start: var(--nlds-code-block-margin-inline-start, 0);
+  margin-inline-end: var(--nlds-code-block-margin-inline-end, 0);
+  margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em);
+  margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em);
+  overflow: auto;
+  background-color: var(--nlds-code-block-background-color);
+}
+
+pre > code {
+  padding: 0 !important;
+  /* avoid double spacing */
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: var(--nlds-code-block-selected-background-color);
+}
+
+code.language-css .token.string {
+  color: var(--nlds-code-block-css-token-color);
+}
+
+code .style .token.string {
+  color: var(--nlds-code-block-style-token-color);
+}
+
+code .namespace {
+  color: var(--nlds-code-block-namespace-color);
+}
+
+pre {
+  --nlds-code-block-code-color: #c5c8c6;
+  --nlds-code-block-color: #fff;
+  --nlds-code-block-font-family: "Fira Code", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  --nlds-code-block-tab-size: 4;
+  --nlds-code-block-tab-size: 4;
+  --nlds-code-block-tab-size: 4;
+  --nlds-code-block-hyphens: none;
+  --nlds-code-block-hyphens: none;
+  --nlds-code-block-hyphens: none;
+  --nlds-code-block-hyphens: none;
+  --nlds-code-block-padding-inline-start: 1em;
+  --nlds-code-block-padding-inline-end: 1em;
+  --nlds-code-block-padding-block-start: 1em;
+  --nlds-code-block-padding-block-end: 1em;
+  --nlds-code-block-margin-inline-start: 0;
+  --nlds-code-block-margin-inline-end: 0;
+  --nlds-code-block-margin-inline-start: 0;
+  --nlds-code-block-margin-inline-end: 0;
+  --nlds-code-block-background-color: #011627;
+  --nlds-code-block-selected-background-color: rgba(29, 59, 83, 0.99);
+  --nlds-code-block-comment-color: rgb(99, 119, 119);
+  --nlds-code-block-comment-font-style: italic;
+  --nlds-code-block-prolog-color: rgb(99, 119, 119);
+  --nlds-code-block-prolog-font-style: italic;
+  --nlds-code-block-cdata-color: rgb(99, 119, 119);
+  --nlds-code-block-cdata-font-style: italic;
+  --nlds-code-block-punctuation-color: rgb(199, 146, 234);
+  --nlds-code-block-namespace-color: rgb(178, 204, 214);
+  --nlds-code-block-deleted-color: rgba(239, 83, 80, 0.56);
+  --nlds-code-block-deleted-font-style: italic;
+  --nlds-code-block-symbol-color: rgb(128, 203, 196);
+  --nlds-code-block-property-color: rgb(128, 203, 196);
+  --nlds-code-block-tag-color: rgb(127, 219, 202);
+  --nlds-code-block-operator-color: rgb(127, 219, 202);
+  --nlds-code-block-boolean-color: rgb(255, 88, 116);
+  --nlds-code-block-number-color: rgb(247, 140, 108);
+  --nlds-code-block-constant-color: rgb(130, 170, 255);
+  --nlds-code-block-function-color: rgb(130, 170, 255);
+  --nlds-code-block-builtin-color: rgb(130, 170, 255);
+  --nlds-code-block-char-color: rgb(130, 170, 255);
+  --nlds-code-block-selector-color: rgb(199, 146, 234);
+  --nlds-code-block-selector-font-style: italic;
+  --nlds-code-block-doctype-color: rgb(199, 146, 234);
+  --nlds-code-block-doctype-font-style: italic;
+  --nlds-code-block-attr-name-color: rgb(173, 219, 103);
+  --nlds-code-block-attr-name-font-style: italic;
+  --nlds-code-block-inserted-color: rgb(173, 219, 103);
+  --nlds-code-block-inserted-font-style: italic;
+  --nlds-code-block-string-color: rgb(173, 219, 103);
+  --nlds-code-block-url-color: rgb(173, 219, 103);
+  --nlds-code-block-entity-color: rgb(173, 219, 103);
+  --nlds-code-block-css-token-color: rgb(173, 219, 103);
+  --nlds-code-block-style-token-color: rgb(173, 219, 103);
+  --nlds-code-block-class-name-color: rgb(255, 203, 139);
+  --nlds-code-block-atrule-color: rgb(255, 203, 139);
+  --nlds-code-block-attr-value-color: rgb(255, 203, 139);
+  --nlds-code-block-regex-color: rgb(214, 222, 235);
+  --nlds-code-block-important-color: rgb(214, 222, 235);
+  --nlds-code-block-variable-color: rgb(214, 222, 235);
+}

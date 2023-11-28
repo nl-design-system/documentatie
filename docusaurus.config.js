@@ -3,6 +3,7 @@
 
 const navbar = require('./navConfig');
 const footer = require('./footerConfig');
+const nldsPrism = require('./nldsPrism');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -47,6 +48,15 @@ const config = {
   themeConfig: {
     navbar,
     footer,
+    prism: {
+      theme: {
+        plain: {
+          color: 'var(--nlds-code-block-color)',
+          backgroundColor: 'var(--nlds-code-block-background-color)',
+        },
+        styles: nldsPrism,
+      },
+    },
     docs: {
       sidebar: {
         hideable: true,
