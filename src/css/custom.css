@@ -573,10 +573,10 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
 
 /* HACK: these fixes need to be made in utrecht too */
 .utrecht-button:focus {
-  background-color: inherit !important;
-  border-color: inherit !important;
-  color: inherit !important;
-  scale: inherit !important;
+  background-color: var(--_utrecht-button-background-color) !important;
+  border-color: var(--_utrecht-button-border-color) !important;
+  color: var(--_utrecht-button-color) !important;
+  scale: var(--utrecht-button-scale, 1) !important;
 }
 
 .utrecht-button:focus-visible {

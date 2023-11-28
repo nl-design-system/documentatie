@@ -11,12 +11,10 @@ interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const Guideline = ({ title, appearance, description, children }: PropsWithChildren<GuidelineProps>) => {
-  const getBadgeTitle = {
+  const guidelineLabel = {
     do: 'Doen',
     dont: 'Niet doen',
   };
-
-  const badgeTitle = title ? `${getBadgeTitle[appearance]}: ${title}` : getBadgeTitle[appearance];
 
   return (
     <div
@@ -25,15 +23,21 @@ export const Guideline = ({ title, appearance, description, children }: PropsWit
     >
       <div className={clsx(style['nlds-guideline__description'])}>
         {appearance === 'dont' ? (
-          <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-            <IconMoodSad className={style['nlds-guideline__icon']} />
-            <span className={style['nlds-guideline__title']}>{badgeTitle}</span>
-          </Paragraph>
+          <>
+            <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
+              <IconMoodSad className={style['nlds-guideline__icon']} />
+              <span className={style['nlds-guideline__title']}>{guidelineLabel['dont']}</span>
+            </Paragraph>
+            <Paragraph>{title}</Paragraph>
+          </>
         ) : (
-          <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-            <IconMoodHappy className={style['nlds-guideline__icon']} />
-            <span className={style['nlds-guideline__title']}>{badgeTitle}</span>
-          </Paragraph>
+          <>
+            <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
+              <IconMoodHappy className={style['nlds-guideline__icon']} />
+              <span className={style['nlds-guideline__title']}>{guidelineLabel['do']}</span>
+            </Paragraph>
+            <Paragraph>{title}</Paragraph>
+          </>
         )}
         {description}
       </div>
