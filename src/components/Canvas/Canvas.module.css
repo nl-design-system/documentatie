@@ -103,6 +103,3 @@
   --utrecht-button-subtle-focus-color: var(--nlds-focus-color);
   --utrecht-button-subtle-focus-font-weight: normal;
 }
-.nlds-canvas__button:focus {
-  background-color: var(--utrecht-button-focus-background-color) !important;
-}
