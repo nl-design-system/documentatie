@@ -720,6 +720,11 @@ pre > code {
   /* avoid double spacing */
 }
 
+ul + div[class*="language-"],
+ul + .nlds-guideline_src-components-Guideline-module {
+  margin-block-start: var(--nlds-code-block-margin-inline-start, 1.5em);
+}
+
 pre[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
