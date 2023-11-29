@@ -62,7 +62,6 @@ _label-no-activate.md
 _label-text-visibility.md
 ```
 
-
 ### Namen voor partials
 
 We willen de namen liefst niet meer veranderen, en dus toekomstbestendig maken (vanuit de ‘cool URI's don't change’ gedachte).
