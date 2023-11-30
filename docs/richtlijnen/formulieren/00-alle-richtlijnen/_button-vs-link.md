@@ -10,22 +10,6 @@ Maar hoe gaan we hiermee om in het design? Standaard ziet een button eruit als e
 Soms wordt hiervan afgeweken om een knop minder visueel gewicht te geven. Kies dan voor een ander ontwerp van de button en gebruik dat consistent binnen de website. Kies niet voor een button die eruitziet als een link en andersom.
 
 Door te zorgen voor een consistente weergave van links en buttons, voldoe je aan:
+
 - het WCAG-succescriterium [3.2.4 Consistente identificatie](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html);
 - de [WCAG richtlijn 3.2 Voorspelbaar](https://www.w3.org/WAI/WCAG22/Understanding/predictable.html): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,6 +5,7 @@ Maak de buttontekst voor iedereen beschikbaar, zorg dus voor een toegankelijke n
 We beschrijven hieronder een aantal technieken om een button een toegankelijke naam te geven.
 
 ### Button met alleen tekst
+
 Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met CSS kan de buttontekst gestyled worden. De toegankelijke naam is de button tekst.
 
 ```html
@@ -12,58 +13,49 @@ Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met C
 ```
 
 ### Een button met een icoontje en tekst
+
 **Optie 1**: Een icoon toevoegen via CSS met daarnaast tekst geplaatst. De toegankelijke naam is de buttontekst.
+
 ```html
-<button class="icon-delete" type="button">
-    Verwijder bestand
-</button>
+<button class="icon-delete" type="button">Verwijder bestand</button>
 ```
 
 ```html
 <button type="button">
-    <span
-      class="fa-solid fa-trash-can"
-      aria-hidden="true"
-    >
-    </span>
-    Verwijder bestand
+  <span class="fa-solid fa-trash-can" aria-hidden="true"> </span>
+  Verwijder bestand
 </button>
 ```
-
 
 **Optie 2**: Een SVG-bestand samen met tekst. De afbeelding heeft een `alt` attribuut met een lege waarde, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
+
 ```html
 <button type="button">
-    <img src="close.svg" alt="">
-    Sluit
+  <img src="close.svg" alt="" />
+  Sluit
 </button>
 ```
 
 **Optie 3**: SVG-code samen met tekst. Voeg hiervoor `aria-hidden="true"` toe aan de SVG, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
+
 ```html
 <button type="button">
-    <svg
-      aria-hidden="true"
-      viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
-    >
-        <line x1="1" y1="11" x2="11" y2="1" stroke="black" stroke-width="2"></line>
-	      <line x1="1" y1="1" x2="11" y2="11" stroke="black" stroke-width="2"></line>
-    </svg>
-    Sluit
+  <svg aria-hidden="true" viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <line x1="1" y1="11" x2="11" y2="1" stroke="black" stroke-width="2"></line>
+    <line x1="1" y1="1" x2="11" y2="11" stroke="black" stroke-width="2"></line>
+  </svg>
+  Sluit
 </button>
 ```
 
 **Optie 4**: SVG-code met een `role="img"` en een `aria-label` met de toegankelijke naam.
+
 ```html
 <button type="button">
-    <svg
-      role="img"
-      aria-label="Sluit"
-      viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
-    >
-	    <line x1="1" y1="11" x2="11" y2="1" stroke="black" stroke-width="2"></line>
-	    <line x1="1" y1="1" x2="11" y2="11" stroke="black" stroke-width="2"></line>
-    </svg>
+  <svg role="img" aria-label="Sluit" viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <line x1="1" y1="11" x2="11" y2="1" stroke="black" stroke-width="2"></line>
+    <line x1="1" y1="1" x2="11" y2="11" stroke="black" stroke-width="2"></line>
+  </svg>
 </button>
 ```
 

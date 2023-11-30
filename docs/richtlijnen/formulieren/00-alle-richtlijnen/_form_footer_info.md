@@ -1,4 +1,3 @@
-
 ## Aanvullingen of opmerkingen?
 
 Deze richtlijnen worden onderhouden door het NL Design System.
