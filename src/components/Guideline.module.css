@@ -12,6 +12,9 @@ p + .nlds-guideline {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
   margin-block-end: 40px;
 }
+.nlds-guideline + .nlds-guideline {
+  margin-block-start: -20px;
+}
 
 .nlds-guideline__description {
   padding: 24px;

@@ -657,7 +657,13 @@ abbr[title] {
   border: 2px solid #cc0000;
 }
 
-.docs-doc-page input[type="text"] {
+.docs-doc-page .utrecht-html label,
+.docs-doc-page .utrecht-html legend {
+  font-weight: bold;
+}
+
+.docs-doc-page input[type="text"],
+.docs-doc-page input[type="password"] {
   display: block;
 }
 
@@ -712,6 +718,11 @@ pre[class*="language-"] {
 pre > code {
   padding: 0 !important;
   /* avoid double spacing */
+}
+
+ul + div[class*="language-"],
+ul + .nlds-guideline_src-components-Guideline-module {
+  margin-block-start: var(--nlds-code-block-margin-inline-start, 1.5em);
 }
 
 pre[class*="language-"]::-moz-selection,

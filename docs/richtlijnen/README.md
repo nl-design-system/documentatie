@@ -62,4 +62,24 @@ _label-no-activate.md
 _label-text-visibility.md
 ```
 
+### Namen voor partials
+
+We willen de namen liefst niet meer veranderen, en dus toekomstbestendig maken (vanuit de ‘cool URI's don't change’ gedachte).
+
+Enkele richtlijnen:
+
+- gebruik enkelvoud tenzij meervoud noodzakelijk is
+- gebruik keywords uit HTML/CSS/SVG voor IDs/slugs/filenames
+- gebruik prefixes en hiërarchie in prefixes zodat door sorteren automatisch groepjes ontstaan
+
+Voorbeelden van namen voor label-gerelateerde partials:
+
+```
+_label-position.md
+_label-text.md
+_label-visibility.md
+_label-no-activate.md
+_label-text-visibility.md
+```
+
 <!-- TODO! -->
