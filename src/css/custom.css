@@ -667,6 +667,24 @@ abbr[title] {
   display: block;
 }
 
+.docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module input[type="text"]::placeholder {
+  opacity: 1;
+  color: #757575;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+}
+
 code[class*="language-"] {
   color: var(--nlds-code-block-code-color);
   background-color: var(--nlds-code-block-background-color);
