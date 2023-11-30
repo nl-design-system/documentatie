@@ -108,7 +108,7 @@ Zie [het Genderdoeboek (pdf)](https://www.transgendernetwerk.nl/wp-content/uploa
 - Vermijd afleiding zoals banners of drukke achtergronden
 - Voorkom tijdsdruk
 
-### Screen readers
+### Screenreaders
 
 #### Alternatieve tekst voor afbeeldingen
 
