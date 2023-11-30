@@ -666,6 +666,20 @@ abbr[title] {
 .docs-doc-page input[type="password"] {
   display: block;
 }
+.docs-doc-page ul {
+  margin-bottom: 20px;
+}
+.docs-doc-page div.button {
+  border-radius: 8px;
+  border: 1px solid #223C61;
+  font-weight: 700;
+  padding-inline-end: 12px;
+}
+
+.docs-doc-page div.button:hover,
+.docs-doc-page button:hover {
+  cursor: pointer;
+}
 
 code[class*="language-"] {
   color: var(--nlds-code-block-code-color);
