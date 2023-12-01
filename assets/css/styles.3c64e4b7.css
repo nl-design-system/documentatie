@@ -2625,6 +2625,13 @@ p a {
 .utrecht-ordered-list {
  width: auto !important;
 }
+.sr-only,
+.visually-hidden {
+ height: 1px;
+ overflow: hidden;
+ position: absolute;
+ width: 1px;
+}
 .navbar__items {
  gap: 16px;
 }
@@ -2790,12 +2797,8 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .visually-hidden {
  clip: rect(0 0 0 0);
  border: 0;
- height: 1px;
  margin: -1px;
- overflow: hidden;
  padding: 0;
- position: absolute;
- width: 1px;
 }
 .utrecht-breadcrumb-nav {
  -webkit-margin-start: calc(var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0) * -1);
@@ -2817,6 +2820,19 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .docs-doc-page input[type="password"],
 .docs-doc-page input[type="text"] {
  display: block;
+}
+.docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module input[type="text"]::placeholder {
+ color: #757575;
+ opacity: 1;
+}
+.sr-only {
+ clip: rect(1px, 1px, 1px, 1px);
+ word-wrap: normal;
+ border: 0;
+ -webkit-clip-path: inset(50%);
+ clip-path: inset(50%);
+ margin: -1px;
+ padding: 0;
 }
 code[class*="language-"] {
  color: var(--nlds-code-block-code-color);
