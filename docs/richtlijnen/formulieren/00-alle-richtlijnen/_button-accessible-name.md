@@ -6,7 +6,7 @@ We beschrijven hieronder een aantal technieken om een button een toegankelijke n
 
 ### Button met alleen tekst
 
-Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met CSS kan de buttontekst gestyled worden. De toegankelijke naam is de button tekst.
+Dit is de eenvoudigste en meest robuuste manier om een button een naam te geven. Met CSS kan de buttontekst gestyled worden. De toegankelijke naam is de buttontekst.
 
 ```html
 <button>Geef je op</button>
@@ -27,7 +27,7 @@ Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met C
 </button>
 ```
 
-**Optie 2**: Een SVG-bestand samen met tekst. De afbeelding heeft een `alt` attribuut met een lege waarde, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
+**Optie 2**: Een decoratief icoon als SVG-bestand samen met tekst. De afbeelding heeft een `alt` attribuut met een lege waarde, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
 
 ```html
 <button type="button">
@@ -36,7 +36,8 @@ Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met C
 </button>
 ```
 
-**Optie 3**: SVG-code samen met tekst. Voeg hiervoor `aria-hidden="true"` toe aan de SVG, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
+**Optie 3**: Een decoratief icoon als SVG-code samen met de tekst. Voeg hiervoor `aria-hidden="true"` toe aan de SVG, waardoor het wordt overgeslagen door hulptechnologieën zoals schermlezers. De toegankelijke naam is de buttontekst.
+Deze optie heeft de voorkeur omdat nu `currentColor` kan worden gebruikt in de CSS waardoor forced colors kunnen worden overgenomen.
 
 ```html
 <button type="button">
@@ -49,6 +50,7 @@ Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met C
 ```
 
 **Optie 4**: SVG-code met een `role="img"` en een `aria-label` met de toegankelijke naam.
+Deze optie heeft niet de voorkeur omdat er geen visuele tekst bij het icoontje staat.
 
 ```html
 <button type="button">
@@ -61,4 +63,4 @@ Dit is de eenvoudigste en robuuste manier om een button een naam te geven. Met C
 
 Voor het toekennen van toegankelijke namen aan SVGs bestaan ook andere technieken, Carie Fisher beschrijft ze in [Accessible SVGs: Perfect Patterns For Screen Reader Users](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/).
 
-Door te zorgen voor een toegankelijke naam voor de button, voldoe je aan het WCAG-succescriterium: [4.1.2 Naam, rol en waarde (Niveau A)](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value).
+Door te zorgen voor een toegankelijke naam voor de button, voldoe je aan één van de voorwaarden voor het WCAG-succescriterium: [4.1.2 Naam, rol en waarde (Niveau A)](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value).
