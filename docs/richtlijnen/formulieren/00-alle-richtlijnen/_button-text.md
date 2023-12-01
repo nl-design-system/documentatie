@@ -9,6 +9,8 @@ Geef buttons een duidelijke tekst, die beschrijft wat er gaat gebeuren.
 
 Dit is geruststellend en duidelijk. De gebruiker weet wat er gaat gebeuren en zal minder onzeker zijn om een formulier in te vullen en te versturen. Bij “Volgende” kan er tenslotte van alles gebeuren.
 
+![Een button met het label 'wijzig' en een button met het label 'Wijzig uw gegevens'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_label.png)
+
 Buttons kunnen tekst bevatten, een icoontje en een combinatie van beide. Uit gebruikersonderzoek blijkt dat niet iedereen alle icoontjes snapt. Het is beter om naast een icoontje ook zichtbare tekst te plaatsen. Volgens de Nielsen Norman Group in [Icon Usability
 ](https://www.nngroup.com/articles/icon-usability/):
 
