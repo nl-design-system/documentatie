@@ -2,10 +2,10 @@
 
 Geef buttons een duidelijke tekst, die beschrijft wat er gaat gebeuren.
 
-- Niet "Verstuur", maar bijvoorbeeld “Meld je aan”, "Aanmelden", “Geef je op”, “Verstuur uw klacht” of "Registreer".
-- Niet “Wijzig”, maar bijvoorbeeld “Wijzig uw adresgegevens”.
-- Niet “Volgende”, maar bijvoorbeeld “Naar stap 2, je gegevens invullen”.
-- Niet “Volgende”, maar bijvoorbeeld “Naar stap 3, uw gegevens controleren”.
+- Liever niet "Verstuur", maar bijvoorbeeld “Meld je aan”, "Aanmelden", “Geef je op”, “Verstuur uw klacht” of "Registreer".
+- Liever niet “Wijzig”, maar bijvoorbeeld “Wijzig uw adresgegevens”.
+- Liever niet “Volgende”, maar bijvoorbeeld “Naar stap 2, je gegevens invullen”.
+- Liever niet “Volgende”, maar bijvoorbeeld “Naar stap 3, uw gegevens controleren”.
 
 Dit is geruststellend en duidelijk. De gebruiker weet wat er gaat gebeuren en zal minder onzeker zijn om een formulier in te vullen en te versturen. Bij “Volgende” kan er tenslotte van alles gebeuren.
 

@@ -1,6 +1,6 @@
 ## Afbeeldingen als buttons
 
-Zorg ervoor dat tekst in afbeeldingen goed meeschalt als de gebruiker inzoomt. Een gebruiker die inzoomt moet de tekst kunnen blijven lezen.
+Zorg ervoor dat tekst in afbeeldingen goed meeschaalt als de gebruiker inzoomt. Een gebruiker die inzoomt moet de tekst kunnen blijven lezen.
 
 Gebruik daarom liever geen jpg-, gif- of png-bestanden voor buttontekst. Maar gebruik bij voorkeur CSS om buttontekst mooi gestyled weer te geven. Dan heeft de gebruiker meer controle over de weergave en grootte van de tekst.
 
