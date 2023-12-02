@@ -1,4 +1,5 @@
 const sidebar = [
+  { type: 'doc', id: 'project/over-nlds' },
   { type: 'doc', id: 'project/kernteam' },
   {
     type: 'category',
