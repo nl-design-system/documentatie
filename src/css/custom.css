@@ -669,6 +669,8 @@ abbr[title] {
 }
 
 .docs-doc-page input[type="text"],
+.docs-doc-page input[type="email"],
+.docs-doc-page input[type="tel"],
 .docs-doc-page input[type="password"] {
   display: block;
 }

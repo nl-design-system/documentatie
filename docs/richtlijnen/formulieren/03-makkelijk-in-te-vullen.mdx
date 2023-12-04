@@ -42,49 +42,10 @@ Met het `autocomplete` attribuut in HTML kun je per veld aangeven wat voor soort
 
 ## Check of informatie ècht nodig is
 
-Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze echt nodig is. Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn.
+Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze echt nodig is.
+Lees ook de [richtlijnen over uit te vragen informatie](/richtlijnen/formulieren/alle-richtlijnen/vragen).
 
 ## Voorkom herhaling
 
-Om zeker te weten dat iemand het juiste emailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruikersvriendelijker!
-
-Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:
-
-- toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een bevestigingspagina
-- (als het om een emailadres gaat) stuur een email ter bevestiging om de juistheid van het emailadres te controleren
-
-<Guideline
-  appearance="dont"
-  title="Herhaling ter bevestiging"
-  description="Herhaling zorgt dat mensen meer tijd kwijt zijn met het invullen van het formulier, terwijl er vaak andere manieren voorhanden zijn om informatie te bevestigen."
->
-  <Canvas
-    language="html"
-    code={
-      <>
-        <div>
-          <label htmlFor="name">Email</label>
-          <input type="text" name="first_name" id="email" />
-        </div>
-        <div>
-          <label htmlFor="name">Email (ter bevestiging)</label>
-          <input type="text" name="first_name" id="email" />
-        </div>
-      </>
-    }
-    defaultCollapsed
-  >
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="email">Email</FormLabel>
-      </Paragraph>
-      <Textbox name="email" id="email" />
-    </FormField>
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="email-rep">Email (ter bevestiging)</FormLabel>
-      </Paragraph>
-      <Textbox name="email-rep" id="email-rep" />
-    </FormField>
-  </Canvas>
-</Guideline>
+Om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruikersvriendelijker!
+Lees verder bij de [richtlijnen over uit te vragen informatie](/richtlijnen/formulieren/alle-richtlijnen/vragen).
