@@ -11,8 +11,7 @@ Dit is geruststellend en duidelijk. De gebruiker weet wat er gaat gebeuren en za
 
 ![Een button met het label 'wijzig' en een button met het label 'Wijzig uw gegevens'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_label.png)
 
-Buttons kunnen tekst bevatten, een icoontje en een combinatie van beide. Uit gebruikersonderzoek blijkt dat niet iedereen alle icoontjes snapt. Het is beter om naast een icoontje ook zichtbare tekst te plaatsen. Volgens de Nielsen Norman Group in [Icon Usability
-](https://www.nngroup.com/articles/icon-usability/):
+Buttons kunnen tekst bevatten, een icoontje en een combinatie van beide. Uit gebruikersonderzoek blijkt dat niet iedereen alle icoontjes snapt. Het is beter om naast een icoontje ook zichtbare tekst te plaatsen. Volgens de Nielsen Norman Group in [Icon Usability](https://www.nngroup.com/articles/icon-usability/).
 
 > Het begrijpen van een icoon is gebaseerd op eerdere ervaringen. Omdat de meeste iconen geen vaste betekenis hebben, zijn tekstlabels nodig om de betekenis eenduidig over te brengen.
 
