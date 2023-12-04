@@ -28,7 +28,7 @@ import { Code, FormField, FormLabel, Textbox, Paragraph, FormFieldDescription } 
 
 ## Vermijd belangrijke informatie in tooltips
 
-Informatie die nodig is om een veld in te kunnen vullen, kan beste beste worden opgenomen als onderdeel van de content, bijvoorbeeld als omschrijving onder het label. Vermijd het gebruik van tooltips (of placeholders) voor belangrijke informatie..
+Informatie die nodig is om een veld in te kunnen vullen, kan het beste worden opgenomen als onderdeel van de content, bijvoorbeeld als omschrijving onder het label. Vermijd het gebruik van tooltips (of placeholders) voor belangrijke informatie..
 
 ## Leg jargon uit
 
@@ -45,28 +45,5 @@ Lees hierover meer op de [richtlijnen over labels](/richtlijnen/formulieren/alle
 
 ## Leg uit waarom informatie nodig is
 
-Soms lijkt een vraag overbodig, terwijl deze essentieel is. In zulke gevallen is het een goed idee een korte uitleg toe te vroegen, om bijvoorbeeld het doel te beschrijven.
-
-<Guideline appearance="do" title="Leg het doel uit" description="Met uitleg weet de gebruiker waar die aan toe is.">
-  <Canvas
-    language="html"
-    code={
-      <>
-        <label htmlFor="email">Emailadres</label>
-        <p>We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
-        <input type="text" name="email" id="email" />
-      </>
-    }
-    defaultCollapsed
-  >
-    <FormField type="text">
-      <Paragraph className="utrecht-form-field__label">
-        <FormLabel htmlFor="email">Emailadres</FormLabel>
-        <FormFieldDescription>
-          We hebben uw emailadres nodig om een afspraakbevestiging te kunnen sturen.
-        </FormFieldDescription>
-      </Paragraph>
-      <Textbox name="email" id="email" />
-    </FormField>
-  </Canvas>
-</Guideline>
+Soms lijkt een vraag overbodig, terwijl deze essentieel is. In zulke gevallen is het een goed idee een korte uitleg toe te vragen, om bijvoorbeeld het doel te beschrijven.
+Lees hierover meer op de [richtlijnen over uit te vragen informatie](/richtlijnen/formulieren/alle-richtlijnen/labels).

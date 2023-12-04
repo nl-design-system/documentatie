@@ -657,12 +657,20 @@ abbr[title] {
   border: 2px solid #cc0000;
 }
 
+.nlds-icon-ext {
+  background-image: url("../icons/external-link.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
 .docs-doc-page .utrecht-html label,
 .docs-doc-page .utrecht-html legend {
   font-weight: bold;
 }
 
 .docs-doc-page input[type="text"],
+.docs-doc-page input[type="email"],
+.docs-doc-page input[type="tel"],
 .docs-doc-page input[type="password"] {
   display: block;
 }

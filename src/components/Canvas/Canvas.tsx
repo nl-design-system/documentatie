@@ -26,7 +26,7 @@ const toggleExpanded = ({ target }) => {
   target.innerText = region.hidden ? 'Bekijk code' : 'Verberg code';
 };
 
-export const Canvas = ({ code, copy = false, defaultCollapsed = false, children, language }: CanvasProps) => {
+export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language }: CanvasProps) => {
   const formatted = prettier.format(ReactDOMServer.renderToStaticMarkup(code || children), {
     parser: 'html',
     plugins: [prettierBabel, prettierHTML],
