@@ -2,7 +2,7 @@
 
 Veel gebruikers navigeren door een formulier met hun Tab-toets om van focusable element naar focusable element te springen (buttons, links, invoervelden, radiobuttons, checkboxes etc).
 
-Krijgt een button de toetsenbordfocus, dan kan die met “enter” of “spatiebalk” worden gekozen. Zorg ervoor dat deze functionaliteit blijft werken als je een webcomponent bouwt, dit is standaard en verwacht gedrag van een button.
+Krijgt een button de toetsenbordfocus, dan kan die met “enter” of “spatiebalk” worden geactiveerd. Zorg ervoor dat deze functionaliteit blijft werken als je een webcomponent bouwt, dit is standaard en verwacht gedrag van een button.
 
 Door te zorgen voor een consistente toetsenbordbediening, voldoe je aan de volgende WCAG-succescriteria:
 
