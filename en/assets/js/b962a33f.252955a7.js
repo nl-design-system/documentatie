@@ -25,7 +25,7 @@
      (t.hidden = !t.hidden), n.setAttribute("aria-expanded", !t.hidden), (n.innerText = t.hidden ? "Bekijk code" : "Verberg code");
     },
     h = (e) => {
-     let { code: n, copy: o = !1, defaultCollapsed: a = !1, children: d, language: c } = e;
+     let { code: n, copy: o = !1, defaultCollapsed: a = !0, children: d, language: c } = e;
      const h = p().format(m.uS(n || d), { parser: "html", plugins: [i(), s()], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" }),
       w = (0, b.Z)();
      return t.createElement(

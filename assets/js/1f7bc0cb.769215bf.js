@@ -25,7 +25,7 @@
      (l.hidden = !l.hidden), n.setAttribute("aria-expanded", !l.hidden), (n.innerText = l.hidden ? "Bekijk code" : "Verberg code");
     },
     h = (e) => {
-     let { code: n, copy: o = !1, defaultCollapsed: r = !1, children: i, language: s } = e;
+     let { code: n, copy: o = !1, defaultCollapsed: r = !0, children: i, language: s } = e;
      const h = k().format(m.uS(n || i), { parser: "html", plugins: [d(), c()], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" }),
       _ = (0, p.Z)();
      return l.createElement(
@@ -82,7 +82,7 @@
     i = o(53579);
    const c = { title: "Toegankelijk | Formulieren", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Toegankelijk", sidebar_position: 1, pagination_label: "Toegankelijk", description: "Een formulier moet toegankelijk zijn", keywords: ["richtlijnen", "formulieren", "toegankelijkheid", "labels"] },
     s = void 0,
-    k = { unversionedId: "richtlijnen/formulieren/toegankelijk", id: "richtlijnen/formulieren/toegankelijk", title: "Toegankelijk | Formulieren", description: "Een formulier moet toegankelijk zijn", source: "@site/docs/richtlijnen/formulieren/01-toegankelijk.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/toegankelijk", permalink: "/en/richtlijnen/formulieren/toegankelijk", draft: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/01-toegankelijk.mdx", tags: [], version: "current", sidebarPosition: 1, frontMatter: { title: "Toegankelijk | Formulieren", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Toegankelijk", sidebar_position: 1, pagination_label: "Toegankelijk", description: "Een formulier moet toegankelijk zijn", keywords: ["richtlijnen", "formulieren", "toegankelijkheid", "labels"] }, sidebar: "richtlijnen", previous: { title: "Placeholders in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/placeholders" }, next: { title: "Duidelijk", permalink: "/en/richtlijnen/formulieren/duidelijk" } },
+    k = { unversionedId: "richtlijnen/formulieren/toegankelijk", id: "richtlijnen/formulieren/toegankelijk", title: "Toegankelijk | Formulieren", description: "Een formulier moet toegankelijk zijn", source: "@site/docs/richtlijnen/formulieren/01-toegankelijk.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/toegankelijk", permalink: "/richtlijnen/formulieren/toegankelijk", draft: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/01-toegankelijk.mdx", tags: [], version: "current", sidebarPosition: 1, frontMatter: { title: "Toegankelijk | Formulieren", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Toegankelijk", sidebar_position: 1, pagination_label: "Toegankelijk", description: "Een formulier moet toegankelijk zijn", keywords: ["richtlijnen", "formulieren", "toegankelijkheid", "labels"] }, sidebar: "richtlijnen", previous: { title: "Uit te vragen informatie in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/vragen" }, next: { title: "Duidelijk", permalink: "/richtlijnen/formulieren/duidelijk" } },
     m = {},
     b = [
      { value: "Maak alles bereikbaar met het toetsenbord", id: "maak-alles-bereikbaar-met-het-toetsenbord", level: 2 },
