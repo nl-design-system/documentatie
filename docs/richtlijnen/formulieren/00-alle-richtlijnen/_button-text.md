@@ -15,7 +15,7 @@ Buttons kunnen tekst bevatten, een icoontje en een combinatie van beide. Uit geb
 
 > Het begrijpen van een icoon is gebaseerd op eerdere ervaringen. Omdat de meeste iconen geen vaste betekenis hebben, zijn tekstlabels nodig om de betekenis eenduidig over te brengen.
 
-Deze richtlijn een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
+Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 
 - [Wat overheden kunnen leren van de ideale webshop](https://www.ncdt.nl/programma/wat-overheden-kunnen-leren-van-de-ideale-webshop), presentatie van Anouk Butterlin.
 - [Why Your Form Buttons Should Never Say 'Submit'](https://uxmovement.com/forms/why-your-form-buttons-should-never-say-submit/), UX Movement.

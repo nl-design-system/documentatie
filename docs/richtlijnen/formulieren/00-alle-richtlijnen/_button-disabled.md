@@ -12,9 +12,9 @@ Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons
 
 Een goede oplossing en vervanging voor een disabled button: schrijf goede labelteksten, descriptions en foutmeldingen. Zodat de gebruiker weet wat er mis is en niet hoeft te puzzelen.
 
-Deze is richtlijn een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
+Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 
 - [The problem with disabled buttons and what to do instead](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/), Adam Silver.
 - [Don't disable buttons](https://gomakethings.com/dont-disable-buttons/), Chris Ferdinandi in Go Make Things.
 - [Usability Pitfalls of Disabled Buttons, and How To Avoid Them](https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/), Vitaly Friedman in Smashing Magazine.
-- [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/)
+- [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/).
