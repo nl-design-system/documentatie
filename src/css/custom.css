@@ -18,6 +18,8 @@
   --nlds-navbar-link-active-border-color: #5eba5b;
   --nlds-sidebar-menu-item-active-border-color: #148839;
 
+  --nlds-code-block-background-color: #011627;
+
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
   --ifm-container-width: 1030px;
