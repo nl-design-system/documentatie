@@ -9,6 +9,6 @@ Opzet in de HTML:
 - Geef description een ID: `id="description-wachtwoord"`.
 - Verwijs in het formulierveld naar dat ID:`aria-describedby="description-wachtwoord"`.
 
-Hierdoor wordt naast de labeltekst ook de description voorgelezen, wanneer een screen reader gebruiker het formulierveld focus geeft.
+Hierdoor wordt naast de labeltekst ook de description voorgelezen, wanneer een screenreadergebruiker het formulierveld focus geeft.
 
 Lees ook: [MDN over aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby).
