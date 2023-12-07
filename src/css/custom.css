@@ -16,6 +16,14 @@
   --nlds-navbar-link-active-border-color: #5eba5b;
   --nlds-sidebar-menu-item-active-border-color: #148839;
   --nlds-code-block-background-color: #011627;
+
+  --utrecht-space-around: .5;
+  --utrecht-button-group-margin-block-start: 2em;
+  --utrecht-form-field-margin-block-end: 2em;
+  --utrecht-button-group-inline-gap: .25em;
+
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
