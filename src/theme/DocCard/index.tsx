@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import { findFirstCategoryLink, useDocById } from '@docusaurus/theme-common/internal';
+import { findFirstSidebarItemLink, useDocById } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
 import type { Props } from '@theme/DocCard';
 import { ArrowNarrowRight } from 'tabler-icons-react';
@@ -43,7 +43,7 @@ function CardLayout({
 }
 
 function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element | null {
-  const href = findFirstCategoryLink(item);
+  const href = findFirstSidebarItemLink(item);
 
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
