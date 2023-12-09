@@ -1,0 +1,294 @@
+[
+  {
+    "resourceIdentifier": "http://standaarden.overheid.nl/owms/terms/Nijmegen_(gemeente)",
+    "label": "Nijmegen",
+    "project": "Nijmegen Design System"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Amsterdam",
+    "project": "Amsterdam Design System"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Utrecht",
+    "project": "Utrecht Design System"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Rotterdam",
+    "project": "Rotterdam Design System"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Hoeksche Waard",
+    "project": "MijnZaken",
+    "description": "Figma ontwerp gebaseerd op MijnZaken van gemeente Den Haag"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Buren",
+    "project": "MijnZaken",
+    "description": "Status component gebaseerd op ontwerpen van gemeente Den Haag"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Groningen",
+    "project": "Open Formulieren"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Groningen",
+    "project": "Open Formulieren",
+    "status": "work in progress"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Deventer",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Enschede",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Zwolle",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Leeuwarden",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Zaanstad",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Haarlemmermeer",
+    "project": "Open Formulieren",
+    "status": "scheduled"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "RIVM",
+    "project": "website gevaarlijke stoffen",
+    "status": "work in progress"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "RVO",
+    "project": "ROOS Design System",
+    "status": "production"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "Rotterdam",
+    "project": "website Open Catalogi",
+    "url": "https://opencatalogi.nl",
+    "status": "production"
+  },
+  {
+    "resourceIdentifier": "",
+    "label": "VNG (Vereniging van Nederlandse Gemeenten)",
+    "project": "WMEBV formulieren handreiking",
+    "status": "work in progress"
+  },
+  { "label": "gemeente Heerenveen", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Lansingerland", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Súdwest-Fryslân", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Stichtse Vecht", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Alkmaar", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Pijnacker-Nootdorp", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Hoeksche Waard", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Gouda", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Dronten", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Texel", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Stede Broec", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Enkhuizen", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Drechterland", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Berkelland", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Wageningen", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Rijssen-Holten", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente De Fryske Marren", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Leeuwarden", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Albrandswaard", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Barendrecht", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Ridderkerk", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Ommen", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Rozendaal", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Waddinxveen", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente ’s Hertogenbosch", "status": "indirect", "description": "OpenWebConcept" },
+  { "label": "gemeente Noordwijk", "status": "indirect", "description": "OpenWebConcept" },
+  {
+    "label": "gemeente Barneveld",
+    "url": "https://www.barneveld.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Bergen (Noord-Holland)",
+    "url": "https://www.bergen-nh.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Bloemendaal",
+    "url": "https://www.bloemendaal.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Bunnik",
+    "url": "https://www.bunnik.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Castricum",
+    "url": "https://www.castricum.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente De Bilt",
+    "url": "https://www.debilt.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Dijk en Waard",
+    "url": "https://www.dijkenwaard.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Ede",
+    "url": "https://www.ede.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Ermelo",
+    "url": "http://ermelo.nl",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Harderwijk",
+    "url": "http://harderwijk.nl",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Heemskerk",
+    "url": "http://www.heemskerk.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Heiloo",
+    "url": "https://www.heiloo.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Houten",
+    "url": "https://www.houten.nl/home/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Katwijk",
+    "url": "https://www.katwijk.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Medemblik",
+    "url": "https://www.medemblik.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Nieuwegein",
+    "url": "https://www.nieuwegein.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Rhenen",
+    "url": "https://www.rhenen.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Schouwen-Duiveland",
+    "url": "https://www.schouwen-duiveland.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Soest",
+    "url": "https://www.soest.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Tholen",
+    "url": "https://www.tholen.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Uitgeest",
+    "url": "https://www.uitgeest.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Veenendaal",
+    "url": "https://www.veenendaal.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Voerendaal",
+    "url": "https://www.voerendaal.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Wijk bij Duurstede",
+    "url": "https://www.wijkbijduurstede.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Woudenberg",
+    "url": "https://www.woudenberg.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Zeewolde",
+    "url": "https://www.zeewolde.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  },
+  {
+    "label": "gemeente Zeist",
+    "url": "https://www.zeist.nl/",
+    "status": "indirect",
+    "description": "Open Gemeenten CMS (Typo3)"
+  }
+]

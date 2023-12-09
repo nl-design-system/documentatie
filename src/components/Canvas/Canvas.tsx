@@ -7,7 +7,7 @@ import prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { PrismStyle } from './PrismStyle';
-import { Button } from '@utrecht/component-library-react/dist/css-module';
+import { Button, HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import { v4 as uuid } from 'uuid';
 
 interface CanvasProps {
@@ -43,8 +43,10 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
   };
 
   return (
-    <div className={clsx(style['nlds-canvas'], 'voorbeeld-theme', 'utrecht-html')}>
-      <div className={clsx(style['nlds-canvas__example'])}>{children}</div>
+    <div className={clsx(style['nlds-canvas'])}>
+      <div className={clsx(style['nlds-canvas__example'])}>
+        <HTMLContent className="voorbeeld-theme">{children}</HTMLContent>
+      </div>
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
           className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}
