@@ -17,19 +17,14 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="do" title="Plaats alle descriptions, ook de foutmeldingen, op een consistente plek, liefst tussen het label en het formulierveld.">
   <Canvas language="html">
     <label for="wachtwoord2">Nieuw wachtwoord</label>
-    <p id="description-wachtwoord2">
-      Kies een wachtwoord van minimaal 8 karakters lang.
-    </p>
-    <p id="error-wachtwoord2">
-      Je gekozen wachtwoord is te kort.
-    </p>
+    <p id="description-wachtwoord2">Kies een wachtwoord van minimaal 8 karakters lang.</p>
+    <p id="error-wachtwoord2">Je gekozen wachtwoord is te kort.</p>
     <input
       id="wachtwoord2"
       type="password"
       name="nieuw-wachtwoord"
       aria-describedby="description-wachtwoord2 error-wachtwoord2"
     />
-
   </Canvas>
 </Guideline>
 
