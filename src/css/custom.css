@@ -696,6 +696,14 @@ abbr[title] {
   color: #757575;
 }
 
+.docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module button {
+  margin: 16px 0;
+}
+
+.docs-doc-page .utrecht-html input[type="text" i]:invalid {
+  border-color: #7a8aa0;
+  border-width: 1px;
+}
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
