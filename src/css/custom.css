@@ -852,3 +852,7 @@ pre {
   --nlds-code-block-important-color: rgb(214, 222, 235);
   --nlds-code-block-variable-color: rgb(214, 222, 235);
 }
+
+.theme-doc-sidebar-container {
+  margin-top: 0 !important;
+}
