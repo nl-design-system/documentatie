@@ -15,4 +15,4 @@ Zie [::placeholder - CSS: Cascading Style Sheets](https://developer.mozilla.org/
 
 **Tip:** De lichtste kleur grijs die je kunt gebruiken ten opzichte van een witte achtergrond is #757575 of rgb( 117, 117, 117).
 
-Wanneer je zorgt voor voldoende kleurcontrast tussen placeholder en achtergrond, voldoe je aan het WCAG succescriterium: [Contrast (minimum), niveau AA](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+Wanneer je zorgt voor voldoende kleurcontrast tussen placeholder en achtergrond, voldoe je aan het WCAG-succescriterium: [Contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), niveau AA.
