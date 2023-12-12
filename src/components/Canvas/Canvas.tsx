@@ -13,7 +13,7 @@ import { v4 as uuid } from 'uuid';
 interface CanvasProps {
   defaultCollapsed?: boolean;
   code?: ReactNode;
-  children: ReactNode;
+  children: ReactNode | (() => ReactNode);
   language: any;
   copy?: boolean;
 }
@@ -27,6 +27,9 @@ const toggleExpanded = ({ target }) => {
 };
 
 export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language }: CanvasProps) => {
+  if (typeof children === 'function') {
+    children = children();
+  }
   const formatted = prettier.format(ReactDOMServer.renderToStaticMarkup(code || children), {
     parser: 'html',
     plugins: [prettierBabel, prettierHTML],
