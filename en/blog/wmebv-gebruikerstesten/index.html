@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-EN" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default">
+<html lang="en-EN" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
-  <meta name="generator" content="Docusaurus v2.4.1" />
+  <meta name="generator" content="Docusaurus v3.0.1" />
   <title data-rh="true">Testen met Wmebv-formulieren: eerste lessen | NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
   <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/en/blog/wmebv-gebruikerstesten" />
+  <meta data-rh="true" property="og:locale" content="en_EN" />
+  <meta data-rh="true" property="og:locale:alternate" content="nl_NL" />
   <meta data-rh="true" name="docusaurus_locale" content="en" />
   <meta data-rh="true" name="docusaurus_tag" content="default" />
   <meta data-rh="true" name="docsearch:language" content="en" />
@@ -30,9 +32,9 @@
   <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
-  <link rel="stylesheet" href="/en/assets/css/styles.8e651d9a.css" />
-  <link rel="preload" href="/en/assets/js/runtime~main.c1ef1e8a.js" as="script" />
-  <link rel="preload" href="/en/assets/js/main.c3ba740a.js" as="script" />
+  <link rel="stylesheet" href="/en/assets/css/styles.8bbed43c.css" />
+  <script src="/en/assets/js/runtime~main.83187020.js" defer="defer"></script>
+  <script src="/en/assets/js/main.88e5393a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -42,21 +44,27 @@
     }
     var e =
      (function () {
-      var t = null;
       try {
-       t = new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get("docusaurus-theme");
       } catch (t) {}
-      return t;
      })() ||
      (function () {
-      var t = null;
       try {
-       t = localStorage.getItem("theme");
+       return localStorage.getItem("theme");
       } catch (t) {}
-      return t;
      })();
     t(null !== e ? e : "light");
-   })();
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith("docusaurus-data-")) {
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
@@ -115,8 +123,8 @@
         </div>
        </div>
        <main class="utrecht-document utrecht-html col col--9 col--offset-1" itemscope="" itemtype="http://schema.org/Blog">
-        <article itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-         <meta itemprop="image" content="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" />
+        <article itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+         <meta itemprop="description" content="In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht." /><link itemprop="image" href="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" />
          <header>
           <h1 class="title_f1Hy" itemprop="headline">Testen met Wmebv-formulieren: eerste lessen</h1>
           <div class="container_mt6G margin-vert--md"><time datetime="2023-11-21T00:00:00.000Z" itemprop="datePublished">November 21, 2023</time></div>
@@ -211,7 +219,5 @@
     </footer>
    </div>
   </div>
-  <script src="/en/assets/js/runtime~main.c1ef1e8a.js"></script>
-  <script src="/en/assets/js/main.c3ba740a.js"></script>
  </body>
 </html>

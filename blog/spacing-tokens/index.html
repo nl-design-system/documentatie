@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl-NL" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default">
+<html lang="nl-NL" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
-  <meta name="generator" content="Docusaurus v2.4.1" />
+  <meta name="generator" content="Docusaurus v3.0.1" />
   <title data-rh="true">Spacing tokens als systeem voor verticale ruimte | NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
   <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/blog/spacing-tokens" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" property="og:locale:alternate" content="en_EN" />
   <meta data-rh="true" name="docusaurus_locale" content="nl" />
   <meta data-rh="true" name="docusaurus_tag" content="default" />
   <meta data-rh="true" name="docsearch:language" content="nl" />
@@ -28,9 +30,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.233d1e5c.css" />
-  <link rel="preload" href="/assets/js/runtime~main.72cf5e82.js" as="script" />
-  <link rel="preload" href="/assets/js/main.0d52e53d.js" as="script" />
+  <link rel="stylesheet" href="/assets/css/styles.b1899075.css" />
+  <script src="/assets/js/runtime~main.b1a0a8bd.js" defer="defer"></script>
+  <script src="/assets/js/main.9eff262f.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -40,21 +42,27 @@
     }
     var e =
      (function () {
-      var t = null;
       try {
-       t = new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get("docusaurus-theme");
       } catch (t) {}
-      return t;
      })() ||
      (function () {
-      var t = null;
       try {
-       t = localStorage.getItem("theme");
+       return localStorage.getItem("theme");
       } catch (t) {}
-      return t;
      })();
     t(null !== e ? e : "light");
-   })();
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith("docusaurus-data-")) {
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
@@ -113,7 +121,8 @@
         </div>
        </div>
        <main class="utrecht-document utrecht-html col col--9 col--offset-1" itemscope="" itemtype="http://schema.org/Blog">
-        <article itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <article itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+         <meta itemprop="description" content="Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour." />
          <header>
           <h1 class="title_f1Hy" itemprop="headline">Spacing tokens als systeem voor verticale ruimte</h1>
           <div class="container_mt6G margin-vert--md"><time datetime="2023-11-09T00:00:00.000Z" itemprop="datePublished">9 november 2023</time></div>
@@ -140,18 +149,11 @@
           </ul>
           <h2 id="relaties-versus-afstanden" class="utrecht-heading-2">Relaties versus afstanden</h2>
           <p>Tijdens de workshop werden verschillende relaties tussen componenten bedacht: “vrienden” staan dicht bij elkaar, “besties” heel dicht en “kennissen” nemen wat meer afstand. Elk van deze relaties krijgt een bepaalde waarde, bijvoorbeeld:</p>
-          <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-           <div class="codeBlockContent_biex">
-            <pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">onbekenden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 32px</span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">kennissen</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 24px</span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">vrienden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 16px</span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">besties</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 8px</span><br></span></code></pre>
-            <div class="buttonGroup__atx">
-             <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-              <span class="copyButtonIcons_eSgA" aria-hidden="true"
-               ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-              ></span>
-             </button>
-            </div>
-           </div>
-          </div>
+          <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-yaml">onbekenden: 32px
+kennissen: 24px
+vrienden: 16px
+besties: 8px
+</code></code></pre>
           <p>Natuurlijk hoeven de waarden niet in pixels te worden uitgedrukt. Het kunnen bijvoorbeeld ook relatieve waarden zijn, en die kunnen ook nog eens per viewport verschillen.</p>
           <p>Het idee is dat de waarden instelbaar zijn met design tokens. Design systems kunnen hierin dus zelf een keuze maken. Of meerdere keuzes. Misschien is de afstand tussen “vrienden” bijvoorbeeld net anders in een Mijn Zaken-systeem dan in een contentwebsite. Het ene scherm is “information-dense”, met bijvoorbeeld veel tabellen, terwijl bij het andere leesbaarheid van tekst belangrijk is. Waarden van de design tokens kunnen per geval anders worden ingesteld.</p>
           <h2 id="open-vragen" class="utrecht-heading-2">Open vragen</h2>
@@ -164,10 +166,10 @@
            <li class="utrecht-unordered-list__item">Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?</li>
            <li class="utrecht-unordered-list__item">Hoe zou je deze spacing als designer willen toepassen in een ontwerptool als Figma? Als “spacer-blokje”? Met behulp van variabele? Wil je dit überhaupt wel allemaal in Figma doorvoeren?</li>
           </ul>
-          <p>Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het <code>#nl-design-system-designers</code>-kanaal in de <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Code for NL Slack community</a>.</p>
+          <p>Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het <code class="utrecht-code">#nl-design-system-designers</code>-kanaal in de <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Code for NL Slack community</a>.</p>
           <h2 id="vervolg" class="utrecht-heading-2">Vervolg</h2>
           <p>We zijn bovenstaand systeem aan het uittesten in Figma, om te kijken hoe het in de praktijk werkt. Dat willen we ook gaan doen voor bijvoorbeeld formulier- en contentpagina&#x27;s: <em class="utrecht-emphasis utrecht-emphasis--stressed">the proof of the pudding is in the eating</em>.</p>
-          <p>Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Slack</a> (kanaal: <code>#nl-design-system-designers</code>), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.</p>
+          <p>Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Slack</a> (kanaal: <code class="utrecht-code">#nl-design-system-designers</code>), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.</p>
          </div>
          <footer class="row docusaurus-mt-lg blogPostFooterDetailsFull_mRVl">
           <div class="col">
@@ -221,7 +223,5 @@
     </footer>
    </div>
   </div>
-  <script src="/assets/js/runtime~main.72cf5e82.js"></script>
-  <script src="/assets/js/main.0d52e53d.js"></script>
  </body>
 </html>

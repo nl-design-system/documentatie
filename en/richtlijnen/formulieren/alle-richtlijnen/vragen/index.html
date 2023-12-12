@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-EN" dir="ltr" class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-richtlijnen/formulieren/alle-richtlijnen/questions">
+<html lang="en-EN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-richtlijnen/formulieren/alle-richtlijnen/questions" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
-  <meta name="generator" content="Docusaurus v2.4.1" />
+  <meta name="generator" content="Docusaurus v3.0.1" />
   <title data-rh="true">Uit te vragen informatie in een formulier | Richtlijnen | NL Design System | NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
   <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/en/richtlijnen/formulieren/alle-richtlijnen/vragen" />
+  <meta data-rh="true" property="og:locale" content="en_EN" />
+  <meta data-rh="true" property="og:locale:alternate" content="nl_NL" />
   <meta data-rh="true" name="docusaurus_locale" content="en" />
   <meta data-rh="true" name="docsearch:language" content="en" />
   <meta data-rh="true" name="docusaurus_version" content="current" />
@@ -27,9 +29,9 @@
   <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
-  <link rel="stylesheet" href="/en/assets/css/styles.8e651d9a.css" />
-  <link rel="preload" href="/en/assets/js/runtime~main.c1ef1e8a.js" as="script" />
-  <link rel="preload" href="/en/assets/js/main.c3ba740a.js" as="script" />
+  <link rel="stylesheet" href="/en/assets/css/styles.8bbed43c.css" />
+  <script src="/en/assets/js/runtime~main.83187020.js" defer="defer"></script>
+  <script src="/en/assets/js/main.88e5393a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -39,21 +41,27 @@
     }
     var e =
      (function () {
-      var t = null;
       try {
-       t = new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get("docusaurus-theme");
       } catch (t) {}
-      return t;
      })() ||
      (function () {
-      var t = null;
       try {
-       t = localStorage.getItem("theme");
+       return localStorage.getItem("theme");
       } catch (t) {}
-      return t;
      })();
     t(null !== e ? e : "light");
-   })();
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith("docusaurus-data-")) {
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
@@ -80,151 +88,152 @@
      </div>
      <div role="presentation" class="navbar-sidebar__backdrop"></div>
     </nav>
-    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docsWrapper_BCFX">
-     <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button>
-     <div class="docPage__5DB">
-      <aside class="theme-doc-sidebar-container docSidebarContainer_rpaz">
-       <div class="sidebarViewport_YVHi">
-        <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
-         <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":R2qqk:" aria-label="Verberg sidebar" aria-expanded="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
-           <path d="M10 12l10 0"></path>
-           <path d="M10 12l4 4"></path>
-           <path d="M10 12l4 -4"></path>
-           <path d="M4 4l0 16"></path>
-          </svg>
-          Verberg
-         </button>
-         <div id=":R2qqk:" aria-expanded="true" class="sidebar__content_LJMP">
-          <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
-           <ul class="theme-doc-sidebar-menu menu__list">
-            <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
-             <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
-             <ul style="display: block; overflow: visible; height: auto" class="menu__list">
-              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/tekst-en-taalgebruik">Tekst en taalgebruik</a></li>
-              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
-               <div class="menu__list-item-collapsible">
-                <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/stijl/overzicht">Stijl</a
-                ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Stijl&#x27;">
-                 <span aria-hidden="true" class="utrecht-icon"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </li>
-              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
-               <div class="menu__list-item-collapsible">
-                <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/formulieren/overzicht">Formulieren</a
-                ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Formulieren&#x27;">
-                 <span aria-hidden="true" class="utrecht-icon"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
-                 ></span>
-                </button>
-               </div>
-               <ul style="display: block; overflow: visible; height: auto" class="menu__list">
-                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
-                 <div class="menu__list-item-collapsible"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen">Alle richtlijnen (beta)</a></div>
-                 <ul style="display: block; overflow: visible; height: auto" class="menu__list">
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/labels">Labels</a></li>
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/descriptions">Descriptions</a></li>
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/links">Links</a></li>
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/buttons">Buttons</a></li>
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/placeholders">Placeholders</a></li>
-                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/vragen">Uit te vragen informatie</a></li>
-                 </ul>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/toegankelijk">Toegankelijk</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/duidelijk">Duidelijk</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/makkelijk-in-te-vullen">Makkelijk in te vullen</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/goed-gecontroleerd">Goed gecontroleerd</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/voorspelbaar">Voorspelbaar</a></li>
-               </ul>
-              </li>
-             </ul>
-            </li>
-           </ul>
-          </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0">
+     <div class="docsWrapper_hBAB">
+      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button>
+      <div class="docRoot_UBD9">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_YfHR">
+        <div class="sidebarViewport_aRkj">
+         <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/tekst-en-taalgebruik">Tekst en taalgebruik</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/stijl/overzicht">Stijl</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Stijl&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/formulieren/overzicht">Formulieren</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Formulieren&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
+                  <div class="menu__list-item-collapsible"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen">Alle richtlijnen (beta)</a></div>
+                  <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/labels">Labels</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/descriptions">Descriptions</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/links">Links</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/buttons">Buttons</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/placeholders">Placeholders</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/vragen">Uit te vragen informatie</a></li>
+                  </ul>
+                 </li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/toegankelijk">Toegankelijk</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/duidelijk">Duidelijk</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/makkelijk-in-te-vullen">Makkelijk in te vullen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/goed-gecontroleerd">Goed gecontroleerd</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/voorspelbaar">Voorspelbaar</a></li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
          </div>
         </div>
-       </div>
-      </aside>
-      <main class="docMainContainer_gTbr">
-       <div class="container padding-top--md padding-bottom--lg">
-        <div class="row">
-         <div class="col docItemCol_VOVn">
-          <div class="docItemContainer_Djhp">
-           <article>
-            <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
-             <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
-              <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/en/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
-               </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/en/richtlijnen/tekst-en-taalgebruik" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
-               </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/en/richtlijnen/formulieren/toegankelijk" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Formulieren</span></a>
-               </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/en/richtlijnen/formulieren/alle-richtlijnen/labels" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Alle richtlijnen (beta)</span></a>
-               </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Uit te vragen informatie</span></a>
-               </li>
-              </ol>
-             </nav>
-            </div>
-            <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
-             <p class="utrecht-button-group">
-              <a class="utrecht-link utrecht-link--html-a" href="/en/richtlijnen/formulieren/alle-richtlijnen/labels"
-               ><span aria-hidden="true" class="utrecht-icon"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
-               >Alle richtlijnen (beta)</a
-              >
-             </p>
-            </div>
-            <div class="theme-doc-markdown">
-             <h1 id="uit-te-vragen-informatie-in-een-formulier" class="utrecht-heading-1">Uit te vragen informatie in een formulier</h1>
-             <p>Welke informatie heb je nodig van je gebruiker? En welke niet? Waarom heb je bepaalde informatie nodig en wat doe je ermee? Overweeg dit zorgvuldig bij het samenstellen van een formulier.</p>
-             <p>Bij het uitvragen van informatie in een formulier zijn de volgende punten belangrijk:</p>
-             <ul role="list" class="utrecht-unordered-list">
-              <li class="utrecht-unordered-list__item">Leg uit waarom informatie nodig is.</li>
-              <li class="utrecht-unordered-list__item">Check of informatie ècht nodig is</li>
-              <li class="utrecht-unordered-list__item">Biedt verschillende manieren om contact op te nemen.</li>
-              <li class="utrecht-unordered-list__item">Vraag niet meerdere keren dezelfde informatie uit.</li>
-              <li class="utrecht-unordered-list__item">Geef invoervelden geen minimum en/of maximum aantal in te voeren tekens.</li>
-             </ul>
-             <h2 id="leg-uit-waarom-informatie-nodig-is" class="utrecht-heading-2">Leg uit waarom informatie nodig is</h2>
-             <p>Soms lijkt een vraag overbodig, terwijl deze informatie essentieel is voor het verwerken van de gegevens. In zulke gevallen is het een goed idee een korte uitleg toe te voegen, om bijvoorbeeld het doel te beschrijven.</p>
-             <p>Vertel waarom je deze informatie nodig hebt en wat je ermee doet. Uitleg geeft duidelijkheid aan de bezoeker en voorkomt onzekerheid bij het invullen.</p>
-             <div class="nlds-guideline_tEmj" id="leg-het-doel-uit.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 9l.01 0"></path>
-                 <path d="M15 9l.01 0"></path>
-                 <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Doen</span>
-               </p>
-               <p class="utrecht-paragraph">Leg het doel uit.</p>
-               Met uitleg weet de gebruiker waar die aan toe is.
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53">
-                 <label for="email">E-mailadres</label>
-                 <p id="email-description">We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
-                 <input aria-describedby="email-description" autocomplete="email" id="email" type="email" />
-                </div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="2089e9a7-1f71-49b7-bfc3-2a22d7071fbb">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="2089e9a7-1f71-49b7-bfc3-2a22d7071fbb" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;email&quot;&gt;E-mailadres&lt;/label&gt;
+       </aside>
+       <main class="docMainContainer_TBSr">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_VOVn">
+           <div class="docItemContainer_Djhp">
+            <article>
+             <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/richtlijnen/tekst-en-taalgebruik" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/richtlijnen/formulieren/toegankelijk" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Formulieren</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/richtlijnen/formulieren/alle-richtlijnen/labels" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Alle richtlijnen (beta)</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Uit te vragen informatie</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a" href="/en/richtlijnen/formulieren/alle-richtlijnen/labels"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Alle richtlijnen (beta)</a
+               >
+              </p>
+             </div>
+             <div class="theme-doc-markdown">
+              <h1 id="uit-te-vragen-informatie-in-een-formulier" class="utrecht-heading-1">Uit te vragen informatie in een formulier</h1>
+              <p>Welke informatie heb je nodig van je gebruiker? En welke niet? Waarom heb je bepaalde informatie nodig en wat doe je ermee? Overweeg dit zorgvuldig bij het samenstellen van een formulier.</p>
+              <p>Bij het uitvragen van informatie in een formulier zijn de volgende punten belangrijk:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Leg uit waarom informatie nodig is.</li>
+               <li class="utrecht-unordered-list__item">Check of informatie ècht nodig is</li>
+               <li class="utrecht-unordered-list__item">Biedt verschillende manieren om contact op te nemen.</li>
+               <li class="utrecht-unordered-list__item">Vraag niet meerdere keren dezelfde informatie uit.</li>
+               <li class="utrecht-unordered-list__item">Geef invoervelden geen minimum en/of maximum aantal in te voeren tekens.</li>
+              </ul>
+              <h2 id="leg-uit-waarom-informatie-nodig-is" class="utrecht-heading-2">Leg uit waarom informatie nodig is</h2>
+              <p>Soms lijkt een vraag overbodig, terwijl deze informatie essentieel is voor het verwerken van de gegevens. In zulke gevallen is het een goed idee een korte uitleg toe te voegen, om bijvoorbeeld het doel te beschrijven.</p>
+              <p>Vertel waarom je deze informatie nodig hebt en wat je ermee doet. Uitleg geeft duidelijkheid aan de bezoeker en voorkomt onzekerheid bij het invullen.</p>
+              <div class="nlds-guideline_tEmj" id="leg-het-doel-uit.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Leg het doel uit.</p>
+                Met uitleg weet de gebruiker waar die aan toe is.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53">
+                  <label for="email">E-mailadres</label>
+                  <p id="email-description">We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
+                  <input aria-describedby="email-description" autocomplete="email" id="email" type="email" />
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="2a935f03-60b8-4e37-960a-b8c0880535f5">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="2a935f03-60b8-4e37-960a-b8c0880535f5" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;email&quot;&gt;E-mailadres&lt;/label&gt;
 &lt;p id=&quot;email-description&quot;&gt;
   We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.
 &lt;/p&gt;
@@ -235,61 +244,62 @@
   type=&quot;email&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <div class="nlds-guideline_tEmj" id="privacygevoelige-informatie-vragen-zonder-uitleg-waarom-deze-gegevens-nodig-zijn.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 10l.01 0"></path>
-                 <path d="M15 10l.01 0"></path>
-                 <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
-               </p>
-               <p class="utrecht-paragraph">Privacygevoelige informatie vragen zonder uitleg waarom deze gegevens nodig zijn.</p>
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="bsn">Burgerservicenummer</label><input id="bsn" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="95bce106-3eae-44f9-89db-2162c1fdef9e">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="95bce106-3eae-44f9-89db-2162c1fdef9e" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;bsn&quot;&gt;Burgerservicenummer&lt;/label&gt;
+              <div class="nlds-guideline_tEmj" id="privacygevoelige-informatie-vragen-zonder-uitleg-waarom-deze-gegevens-nodig-zijn.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Privacygevoelige informatie vragen zonder uitleg waarom deze gegevens nodig zijn.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="bsn">Burgerservicenummer</label><input id="bsn" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="de3bb4eb-1544-41a1-9c30-174fae904be4">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="de3bb4eb-1544-41a1-9c30-174fae904be4" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;bsn&quot;&gt;Burgerservicenummer&lt;/label&gt;
 &lt;input
   id=&quot;bsn&quot;
   type=&quot;text&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <h2 id="check-of-informatie-ècht-nodig-is" class="utrecht-heading-2">Check of informatie ècht nodig is</h2>
-             <p>Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze informatie echt nodig is.</p>
-             <p>Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn. Is het echt belangrijk om te weten of iemand een man/vrouw/andere is?</p>
-             <p>Is het nodig voor het afhandelen van het formulier dat gebruiker via DigiD inlogt, zodat ook het burgerservicenummer van de verzender bekend wordt? <a href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)." class="utrecht-link utrecht-link--html-a">Uitvragen van een BSN</a> is aan wettelijke richtlijnen gebonden.</p>
-             <h2 id="biedt-verschillende-manieren-om-contact-op-te-nemen" class="utrecht-heading-2">Biedt verschillende manieren om contact op te nemen</h2>
-             <p>Vraag niet alleen om contact via een telefoonnummer. Gebruikers die doof zijn of heel verlegen, stotteren of een vorm van autisme hebben, kunnen soms niet (goed) bellen. Voeg een alternatief toe, in de vorm van een e-mailadres.</p>
-             <div class="nlds-guideline_tEmj" id="naast-een-telefoonnummer-ook-een-e-mailadres-uitvragen.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 9l.01 0"></path>
-                 <path d="M15 9l.01 0"></path>
-                 <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Doen</span>
-               </p>
-               <p class="utrecht-paragraph">Naast een telefoonnummer ook een e-mailadres uitvragen.</p>
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="telefoon1">Uw telefoonnummer</label><input id="telefoon1" type="tel" name="telefoon" autocomplete="tel" /><label for="email1">Uw e-mailadres</label><input id="email1" type="email" name="email" autocomplete="email" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="00f10466-0c10-4eef-a31e-7a3886a1d92b">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="00f10466-0c10-4eef-a31e-7a3886a1d92b" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;telefoon1&quot;&gt;Uw telefoonnummer&lt;/label&gt;
+              <h2 id="check-of-informatie-ècht-nodig-is" class="utrecht-heading-2">Check of informatie ècht nodig is</h2>
+              <p>Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze informatie echt nodig is.</p>
+              <p>Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn. Is het echt belangrijk om te weten of iemand een man/vrouw/andere is?</p>
+              <p>Is het nodig voor het afhandelen van het formulier dat gebruiker via DigiD inlogt, zodat ook het burgerservicenummer van de verzender bekend wordt? <a href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)." class="utrecht-link utrecht-link--html-a">Uitvragen van een BSN</a> is aan wettelijke richtlijnen gebonden.</p>
+              <!-- -->
+              <h2 id="biedt-verschillende-manieren-om-contact-op-te-nemen" class="utrecht-heading-2">Biedt verschillende manieren om contact op te nemen</h2>
+              <p>Vraag niet alleen om contact via een telefoonnummer. Gebruikers die doof zijn of heel verlegen, stotteren of een vorm van autisme hebben, kunnen soms niet (goed) bellen. Voeg een alternatief toe, in de vorm van een e-mailadres.</p>
+              <div class="nlds-guideline_tEmj" id="naast-een-telefoonnummer-ook-een-e-mailadres-uitvragen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Naast een telefoonnummer ook een e-mailadres uitvragen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="telefoon1">Uw telefoonnummer</label><input id="telefoon1" type="tel" name="telefoon" autocomplete="tel" /><label for="email1">Uw e-mailadres</label><input id="email1" type="email" name="email" autocomplete="email" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="99634c8a-703e-4bb9-b62d-026a30a9e0c8">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="99634c8a-703e-4bb9-b62d-026a30a9e0c8" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;telefoon1&quot;&gt;Uw telefoonnummer&lt;/label&gt;
 &lt;input
   id=&quot;telefoon1&quot;
   type=&quot;tel&quot;
@@ -304,28 +314,28 @@
   autocomplete=&quot;email&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <div class="nlds-guideline_tEmj" id="alleen-een-telefoonnummer-uitvragen.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 10l.01 0"></path>
-                 <path d="M15 10l.01 0"></path>
-                 <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
-               </p>
-               <p class="utrecht-paragraph">Alleen een telefoonnummer uitvragen.</p>
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="telefoon2">Uw telefoonnummer (verplicht)</label><input id="telefoon2" type="tel" name="telefoon" autocomplete="tel" aria-required="true" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="587219c1-7685-48fa-bc48-3e20797735e9">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="587219c1-7685-48fa-bc48-3e20797735e9" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;telefoon2&quot;&gt;Uw telefoonnummer (verplicht)&lt;/label&gt;
+              <div class="nlds-guideline_tEmj" id="alleen-een-telefoonnummer-uitvragen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Alleen een telefoonnummer uitvragen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="telefoon2">Uw telefoonnummer (verplicht)</label><input id="telefoon2" type="tel" name="telefoon" autocomplete="tel" aria-required="true" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="cf54e534-9181-4405-9f3d-6d25fe1a75a3">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="cf54e534-9181-4405-9f3d-6d25fe1a75a3" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;telefoon2&quot;&gt;Uw telefoonnummer (verplicht)&lt;/label&gt;
 &lt;input
   id=&quot;telefoon2&quot;
   type=&quot;tel&quot;
@@ -334,36 +344,36 @@
   aria-required=&quot;true&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <h2 id="vraag-niet-meerdere-keren-dezelfde-informatie-uit" class="utrecht-heading-2">Vraag niet meerdere keren dezelfde informatie uit</h2>
-             <p>Voorkom herhaling: om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruiksvriendelijker!</p>
-             <p>Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:</p>
-             <ul role="list" class="utrecht-unordered-list">
-              <li class="utrecht-unordered-list__item">toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een bevestigingspagina;</li>
-              <li class="utrecht-unordered-list__item">(als het om een e-mailadres gaat) stuur een e-mail ter bevestiging om de juistheid van het e-mailadres te controleren.</li>
-             </ul>
-             <p>Door gegevens niet meerdere keren binnen een formulier uit te vragen voldoe je aan het WCAG-Succescriterium <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html" class="utrecht-link utrecht-link--html-a">3.3.7 Overbodige Invoer</a> (niveau A).</p>
-             <div class="nlds-guideline_tEmj" id="herhaling-ter-bevestiging.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 10l.01 0"></path>
-                 <path d="M15 10l.01 0"></path>
-                 <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
-               </p>
-               <p class="utrecht-paragraph">Herhaling ter bevestiging.</p>
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="email1">Uw e-mailadres</label><input id="email1" type="email" name="email" autocomplete="email" /><label for="email2">Geef nogmaals uw e-mailadres</label><input id="email2" type="email" name="email" autocomplete="email" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="be805ee5-1b82-4a64-879c-0382e0edcff1">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="be805ee5-1b82-4a64-879c-0382e0edcff1" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;email1&quot;&gt;Uw e-mailadres&lt;/label&gt;
+              <h2 id="vraag-niet-meerdere-keren-dezelfde-informatie-uit" class="utrecht-heading-2">Vraag niet meerdere keren dezelfde informatie uit</h2>
+              <p>Voorkom herhaling: om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruiksvriendelijker!</p>
+              <p>Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een bevestigingspagina;</li>
+               <li class="utrecht-unordered-list__item">(als het om een e-mailadres gaat) stuur een e-mail ter bevestiging om de juistheid van het e-mailadres te controleren.</li>
+              </ul>
+              <p>Door gegevens niet meerdere keren binnen een formulier uit te vragen voldoe je aan het WCAG-Succescriterium <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html" class="utrecht-link utrecht-link--html-a">3.3.7 Overbodige Invoer</a> (niveau A).</p>
+              <div class="nlds-guideline_tEmj" id="herhaling-ter-bevestiging.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Herhaling ter bevestiging.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="email1">Uw e-mailadres</label><input id="email1" type="email" name="email" autocomplete="email" /><label for="email2">Geef nogmaals uw e-mailadres</label><input id="email2" type="email" name="email" autocomplete="email" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="318d8d24-0ac9-40c8-bb72-72ebc4190323">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="318d8d24-0ac9-40c8-bb72-72ebc4190323" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;email1&quot;&gt;Uw e-mailadres&lt;/label&gt;
 &lt;input
   id=&quot;email1&quot;
   type=&quot;email&quot;
@@ -378,30 +388,30 @@
   autocomplete=&quot;email&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <h2 id="geef-invoervelden-geen-minimummaximum-tekstlengte" class="utrecht-heading-2">Geef invoervelden geen minimum/maximum tekstlengte</h2>
-             <p>Soms is het verleidelijk om met minimale of maximale lengtes te werken. Maar in veel gevallen, bijvoorbeeld bij namen, kan dit bijvoorbeeld zorgen dat mensen hun naam niet kunnen invullen. Optimaliseer in dit geval voor uitersten. Er zijn namen van één karakter en van vijftig: aannames vermijden is dus het devies.</p>
-             <div class="nlds-guideline_tEmj" id="geef-de-mogelijkheid-korte-en-lange-teksten-in-te-vullen.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 9l.01 0"></path>
-                 <path d="M15 9l.01 0"></path>
-                 <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Doen</span>
-               </p>
-               <p class="utrecht-paragraph">Geef de mogelijkheid korte en lange teksten in te vullen.</p>
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="woonplaats1">Uw woonplaats</label><input id="woonplaats1" name="email" autocomplete="address-level2" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="ed4a9e9e-cd59-4165-9cc5-bb4e9f2f7741">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="ed4a9e9e-cd59-4165-9cc5-bb4e9f2f7741" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;woonplaats1&quot;&gt;Uw woonplaats&lt;/label&gt;
+              <h2 id="geef-invoervelden-geen-minimummaximum-tekstlengte" class="utrecht-heading-2">Geef invoervelden geen minimum/maximum tekstlengte</h2>
+              <p>Soms is het verleidelijk om met minimale of maximale lengtes te werken. Maar in veel gevallen, bijvoorbeeld bij namen, kan dit bijvoorbeeld zorgen dat mensen hun naam niet kunnen invullen. Optimaliseer in dit geval voor uitersten. Er zijn namen van één karakter en van vijftig: aannames vermijden is dus het devies.</p>
+              <div class="nlds-guideline_tEmj" id="geef-de-mogelijkheid-korte-en-lange-teksten-in-te-vullen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Geef de mogelijkheid korte en lange teksten in te vullen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="woonplaats1">Uw woonplaats</label><input id="woonplaats1" name="email" autocomplete="address-level2" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="a0108a90-1933-4b4c-8852-888d14aa737a">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="a0108a90-1933-4b4c-8852-888d14aa737a" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;woonplaats1&quot;&gt;Uw woonplaats&lt;/label&gt;
 &lt;input
   id=&quot;woonplaats1&quot;
   type=&quot;text&quot;
@@ -409,29 +419,29 @@
   autocomplete=&quot;address-level2&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <div class="nlds-guideline_tEmj" id="limiteer-het-maximaal-aantal-in-te-voeren-tekens.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 10l.01 0"></path>
-                 <path d="M15 10l.01 0"></path>
-                 <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
-               </p>
-               <p class="utrecht-paragraph">Limiteer het maximaal aantal in te voeren tekens.</p>
-               Mensen uit Gasselterboerveenschemond of Westerhaar-Vriezenveensewijk willen ook graag hun woonplaats invoeren.
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="woonplaats2">Uw woonplaats</label><input id="woonplaats2" name="email" maxlength="20" autocomplete="address-level2" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="50112ba6-242d-4ce3-915f-d934369aad38">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="50112ba6-242d-4ce3-915f-d934369aad38" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;woonplaats2&quot;&gt;Uw woonplaats&lt;/label&gt;
+              <div class="nlds-guideline_tEmj" id="limiteer-het-maximaal-aantal-in-te-voeren-tekens.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Limiteer het maximaal aantal in te voeren tekens.</p>
+                Mensen uit Gasselterboerveenschemond of Westerhaar-Vriezenveensewijk willen ook graag hun woonplaats invoeren.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="woonplaats2">Uw woonplaats</label><input id="woonplaats2" name="email" maxlength="20" autocomplete="address-level2" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="6b381024-7aa5-492d-aca7-95584b69955c">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="6b381024-7aa5-492d-aca7-95584b69955c" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;woonplaats2&quot;&gt;Uw woonplaats&lt;/label&gt;
 &lt;input
   id=&quot;woonplaats2&quot;
   type=&quot;text&quot;
@@ -440,29 +450,29 @@
   autocomplete=&quot;address-level2&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
-             </div>
-             <div class="nlds-guideline_tEmj" id="limiteer-het-minimaal-aantal-in-te-voeren-tekens.">
-              <div class="nlds-guideline__description_Rmd2">
-               <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
-                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                 <path d="M9 10l.01 0"></path>
-                 <path d="M15 10l.01 0"></path>
-                 <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
-                ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
-               </p>
-               <p class="utrecht-paragraph">Limiteer het minimaal aantal in te voeren tekens.</p>
-               Jo, Bo en X willen ook graag hun voornaam invullen.
-              </div>
-              <div class="nlds-guideline__example_Npzh">
-               <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
-                <div class="nlds-canvas__example_sS53"><label for="voornaam1">Je voornaam</label><input id="voornaam1" name="voornaam" minlength="3" autocomplete="given-name" /></div>
-                <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="405431e9-2a97-4fe7-841e-f6f35a56bc57">Bekijk code</button></div>
-                <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="405431e9-2a97-4fe7-841e-f6f35a56bc57" hidden="">
-                 <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;voornaam1&quot;&gt;Je voornaam&lt;/label&gt;
+              <div class="nlds-guideline_tEmj" id="limiteer-het-minimaal-aantal-in-te-voeren-tekens.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Limiteer het minimaal aantal in te voeren tekens.</p>
+                Jo, Bo en X willen ook graag hun voornaam invullen.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz voorbeeld-theme utrecht-html">
+                 <div class="nlds-canvas__example_sS53"><label for="voornaam1">Je voornaam</label><input id="voornaam1" name="voornaam" minlength="3" autocomplete="given-name" /></div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls="8a40b8cf-386e-4604-b33f-55b71c132516">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id="8a40b8cf-386e-4604-b33f-55b71c132516" hidden="">
+                  <pre style="color: var(--nlds-code-block-color); font-family: var(--nlds-code-block-font-family, monospace); text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: var(--nlds-code-block-line-height, 1.5); font-size: var(--nlds-code-block-font-size, 1em); -moz-tab-size: var(--nlds-code-block-tab-size, 4); -o-tab-size: var(--nlds-code-block-tab-size, 4); tab-size: var(--nlds-code-block-tab-size, 4); -webkit-hyphens: var(--nlds-code-block-hyphens, none); -moz-hyphens: var(--nlds-code-block-hyphens, none); -ms-hyphens: var(--nlds-code-block-hyphens, none); hyphens: var(--nlds-code-block-hyphens, none); padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em); padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em); padding-block-start: var(--nlds-code-block-padding-block-start, 1em); padding-block-end: var(--nlds-code-block-padding-block-end, 1em); margin-inline-start: var(--nlds-code-block-margin-inline-start, 0); margin-inline-end: var(--nlds-code-block-margin-inline-end, 0); margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em); margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em); overflow: auto; background-color: var(--nlds-code-block-background-color)"><code class="language-text" style="color:var(--nlds-cod-block-code-color);font-family:var(--nlds-code-block-font-family, monospace);direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:var(--nlds-code-block-line-height, 1.5);-moz-tab-size:var(--nlds-code-block-tab-size, 4);-o-tab-size:var(--nlds-code-block-tab-size, 4);tab-size:var(--nlds-code-block-tab-size, 4);-webkit-hyphens:var(--nlds-code-block-hyphens, none);-moz-hyphens:var(--nlds-code-block-hyphens, none);-ms-hyphens:var(--nlds-code-block-hyphens, none);hyphens:var(--nlds-code-block-hyphens, none)">&lt;label for=&quot;voornaam1&quot;&gt;Je voornaam&lt;/label&gt;
 &lt;input
   id=&quot;voornaam1&quot;
   type=&quot;text&quot;
@@ -471,40 +481,41 @@
   autocomplete=&quot;given-name&quot;
 /&gt;
 </code></pre>
+                 </div>
                 </div>
                </div>
               </div>
+              <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
+              <p>Deze richtlijnen worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues/new" class="utrecht-link utrecht-link--html-a">Open een issue op GitHub</a> met je suggesties.</p>
              </div>
-             <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
-             <p>Deze richtlijnen worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues/new" class="utrecht-link utrecht-link--html-a">Open een issue op GitHub</a> met je suggesties.</p>
-            </div>
-            <footer class="theme-doc-footer docusaurus-mt-lg">
-             <div class="theme-doc-footer-edit-meta-row row">
-              <div class="col">
-               <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/06-questions.mdx" target="_blank" rel="noreferrer noopener" class="theme-edit-this-page"
-                ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true">
-                 <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
-                >Edit this page</a
-               >
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/06-questions.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Edit this page</a
+                >
+               </div>
+               <div class="col lastUpdated_vwxv"></div>
               </div>
-              <div class="col lastUpdated_vwxv"></div>
-             </div>
-            </footer>
-           </article>
-           <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
-            <a class="pagination-nav__link pagination-nav__link--prev" href="/en/richtlijnen/formulieren/alle-richtlijnen/placeholders"
-             ><div class="pagination-nav__sublabel">Previous</div>
-             <div class="pagination-nav__label">Placeholders in een formulier</div></a
-            ><a class="pagination-nav__link pagination-nav__link--next" href="/en/richtlijnen/formulieren/toegankelijk"
-             ><div class="pagination-nav__sublabel">Next</div>
-             <div class="pagination-nav__label">Toegankelijk</div></a
-            >
-           </nav>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/en/richtlijnen/formulieren/alle-richtlijnen/placeholders"
+              ><div class="pagination-nav__sublabel">Previous</div>
+              <div class="pagination-nav__label">Placeholders in een formulier</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/en/richtlijnen/formulieren/toegankelijk"
+              ><div class="pagination-nav__sublabel">Next</div>
+              <div class="pagination-nav__label">Toegankelijk</div></a
+             >
+            </nav>
+           </div>
           </div>
          </div>
         </div>
-       </div>
-      </main>
+       </main>
+      </div>
      </div>
     </div>
     <footer class="footer footer--dark footer_VVap">
@@ -527,7 +538,5 @@
     </footer>
    </div>
   </div>
-  <script src="/en/assets/js/runtime~main.c1ef1e8a.js"></script>
-  <script src="/en/assets/js/main.c3ba740a.js"></script>
  </body>
 </html>

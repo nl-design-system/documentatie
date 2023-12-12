@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl-NL" dir="ltr" class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-richtlijnen/stijl/iconen">
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-richtlijnen/stijl/iconen" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
-  <meta name="generator" content="Docusaurus v2.4.1" />
+  <meta name="generator" content="Docusaurus v3.0.1" />
   <title data-rh="true">Iconen | NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
   <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/richtlijnen/stijl/iconen" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" property="og:locale:alternate" content="en_EN" />
   <meta data-rh="true" name="docusaurus_locale" content="nl" />
   <meta data-rh="true" name="docsearch:language" content="nl" />
   <meta data-rh="true" name="docusaurus_version" content="current" />
@@ -27,9 +29,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.233d1e5c.css" />
-  <link rel="preload" href="/assets/js/runtime~main.72cf5e82.js" as="script" />
-  <link rel="preload" href="/assets/js/main.0d52e53d.js" as="script" />
+  <link rel="stylesheet" href="/assets/css/styles.b1899075.css" />
+  <script src="/assets/js/runtime~main.b1a0a8bd.js" defer="defer"></script>
+  <script src="/assets/js/main.9eff262f.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -39,21 +41,27 @@
     }
     var e =
      (function () {
-      var t = null;
       try {
-       t = new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get("docusaurus-theme");
       } catch (t) {}
-      return t;
      })() ||
      (function () {
-      var t = null;
       try {
-       t = localStorage.getItem("theme");
+       return localStorage.getItem("theme");
       } catch (t) {}
-      return t;
      })();
     t(null !== e ? e : "light");
-   })();
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith("docusaurus-data-")) {
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
@@ -80,342 +88,320 @@
      </div>
      <div role="presentation" class="navbar-sidebar__backdrop"></div>
     </nav>
-    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docsWrapper_BCFX">
-     <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button>
-     <div class="docPage__5DB">
-      <aside class="theme-doc-sidebar-container docSidebarContainer_rpaz">
-       <div class="sidebarViewport_YVHi">
-        <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
-         <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":R2qqk:" aria-label="Verberg sidebar" aria-expanded="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
-           <path d="M10 12l10 0"></path>
-           <path d="M10 12l4 4"></path>
-           <path d="M10 12l4 -4"></path>
-           <path d="M4 4l0 16"></path>
-          </svg>
-          Verberg
-         </button>
-         <div id=":R2qqk:" aria-expanded="true" class="sidebar__content_LJMP">
-          <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
-           <ul class="theme-doc-sidebar-menu menu__list">
-            <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
-             <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
-             <ul style="display: block; overflow: visible; height: auto" class="menu__list">
-              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/tekst-en-taalgebruik">Tekst en taalgebruik</a></li>
-              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
-               <div class="menu__list-item-collapsible">
-                <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/stijl/overzicht">Stijl</a
-                ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Klap de opvouwbare zijbalkcategorie &#x27;Stijl&#x27; in of uit">
-                 <span aria-hidden="true" class="utrecht-icon"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
-                 ></span>
-                </button>
-               </div>
-               <ul style="display: block; overflow: visible; height: auto" class="menu__list">
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/">Overzicht</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/typografie">Typografie</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/kleuren">Kleuren</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/richtlijnen/stijl/iconen">Iconen</a></li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/ruimte">Ruimte</a></li>
-               </ul>
-              </li>
-              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
-               <div class="menu__list-item-collapsible">
-                <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/formulieren/overzicht">Formulieren</a
-                ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Klap de opvouwbare zijbalkcategorie &#x27;Formulieren&#x27; in of uit">
-                 <span aria-hidden="true" class="utrecht-icon"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </li>
-             </ul>
-            </li>
-           </ul>
-          </nav>
-         </div>
-        </div>
-       </div>
-      </aside>
-      <main class="docMainContainer_gTbr">
-       <div class="container padding-top--md padding-bottom--lg">
-        <div class="row">
-         <div class="col docItemCol_VOVn">
-          <div class="docItemContainer_Djhp">
-           <article>
-            <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
-             <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
-              <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0">
+     <div class="docsWrapper_hBAB">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button>
+      <div class="docRoot_UBD9">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_YfHR">
+        <div class="sidebarViewport_aRkj">
+         <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/tekst-en-taalgebruik">Tekst en taalgebruik</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/stijl/overzicht">Stijl</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Stijl&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/">Overzicht</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/typografie">Typografie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/kleuren">Kleuren</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/richtlijnen/stijl/iconen">Iconen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/stijl/ruimte">Ruimte</a></li>
+                </ul>
                </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/richtlijnen/tekst-en-taalgebruik" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/formulieren/overzicht">Formulieren</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Formulieren&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
                </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="/richtlijnen/stijl/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Stijl</span></a>
-               </li>
-               <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
-               <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Iconen</span></a>
-               </li>
-              </ol>
-             </nav>
-            </div>
-            <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
-             <p class="utrecht-button-group">
-              <a class="utrecht-link utrecht-link--html-a" href="/richtlijnen/stijl/"
-               ><span aria-hidden="true" class="utrecht-icon"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
-               >Stijl</a
-              >
-             </p>
-            </div>
-            <div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Op deze pagina</button></div>
-            <div class="theme-doc-markdown">
-             <h1 id="iconen" class="utrecht-heading-1">Iconen</h1>
-             <p>Iconen worden gebruikt om extra betekenis te geven. Ze brengen boodschappen in één oogopslag over en vestigen aandacht op belangrijke informatie. Ook kunnen ze hulp bieden aan iemand met een cognitieve beperking of als iemand moeite heeft met taal.</p>
-             <p><strong>Let op!</strong> Tekst zou altijd voorrang moeten krijgen ten opzichte van iconen. Gebruik iconen alleen waar extra duidelijkheid gewenst is.</p>
-             <p>Binnen een Design System is het verstandig om iconen consistent toe te passen. Dat gaat gemakkelijk wanneer je gebruik maakt van een iconenset. Welke iconenset je gebruikt voor jouw organisatie staat je helemaal vrij.</p>
-             <p>Vanuit het NL Design System gebruiken we twee iconensets. De iconen in deze sets typeren we als <a href="#functionele-iconen" class="utrecht-link utrecht-link--html-a">Functionele iconen</a> en <a href="#toptaak-iconen" class="utrecht-link utrecht-link--html-a">Toptaak iconen</a>.</p>
-             <h2 id="functionele-iconen" class="utrecht-heading-2">Functionele iconen</h2>
-             <p>Bij functionele iconen is het belangrijk dat ze simpel van vorm zijn. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk bijvoorbeeld aan een icoon voor een button of foutmelding.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_functioneel.png" alt="Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon." class="utrecht-img" /></p>
-             <p>Voor het &#x27;Voorbeeld thema&#x27; maken we gebruik van een selectie uit de <a href="https://tabler-icons.io/" class="utrecht-link utrecht-link--html-a">Tabler iconenset</a>.</p>
-             <h3 id="grid" class="utrecht-heading-3">Grid</h3>
-             <h4 id="positioneer-iconen-binnen-een-vierkant-grid" class="utrecht-heading-4">Positioneer iconen binnen een vierkant grid.</h4>
-             <p>Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid.png" alt="Fotocamera, klok en potloot icoon. Ieder op een vergroot grid van 24 bij 24." class="utrecht-img" /></p>
-             <p>Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door iconen binnen dit vierkant te positioneren zijn ze inwisselbaar. Hierdoor zullen teksten niet verspringen als je de iconen bijvoorbeeld toepast in een lijst.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid-geen-grid.png" alt="Twee lijstjes met vier labels. Voor elk label staat een icoon. Bij de eerste set verschillende de iconen in breedte waardoor de labels verspringen. Bij de tweede set hebben alle iconen dezelfde breedte waardoor de labels links uitlijnen." class="utrecht-img" /></p>
-             <h3 id="grootte" class="utrecht-heading-3">Grootte</h3>
-             <h4 id="stem-de-grootte-van-je-iconen-af-op-je-lettergrootte" class="utrecht-heading-4">Stem de grootte van je iconen af op je lettergrootte.</h4>
-             <p>Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om deze groottes af te stemmen met je lettergrootte.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png" alt="Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee." class="utrecht-img" /></p>
-             <p>Voor functionele iconen is dit vaak 16×16, 24×24 of 32×32. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid.</p>
-             <p><strong>Grootte als design token</strong></p>
-             <p>Voor de grootte van functionele iconen de <code>nl.icon.functional.size</code> Design Token beschikbaar. Komen de iconen voor jouw organisatie groter of kleiner beter tot hun recht? Pas de waarde van deze common token aan en de wijziging zal in vrijwel componenten worden doorgevoerd</p>
-             <h3 id="lijndikte" class="utrecht-heading-3">Lijndikte</h3>
-             <h4 id="laat-lijndikte-meeschalen" class="utrecht-heading-4">Laat lijndikte meeschalen.</h4>
-             <p>Een ‘outline’ iconenset is vaak opgebouwd uit lijnen (stroke). Bijvoorbeeld met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Over het algemeen is dit niet het gewenste gedrag omdat je zo verschillende gewichten in iconen kan krijgen.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_outline-stroke.png" alt="Een kalender icoon wordt door middel van twee sets op drie formaten getoond. Klein, middel en groot. Bij de eerste set groeit de lijn-dikte niet mee, bij de tweede set wel." class="utrecht-img" /></p>
-             <h3 id="kleur" class="utrecht-heading-3">Kleur</h3>
-             <h4 id="zorg-ook-bij-iconen-voor-voldoende-contrast" class="utrecht-heading-4">Zorg ook bij iconen voor voldoende contrast.</h4>
-             <p>Iconen nemen vaak de kleur van de bijbehorende tekst over. Zodoende hebben ze, als de tekst het ook heeft, vanzelf voldoende contrast.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_kleuren-overnemen.png" alt="Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon. Alle iconen hebben dezelfde kleur als de bijbehorende teksten." class="utrecht-img" /></p>
-             <p>Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven dan de bijbehorende tekst? Houd dan ook rekening met contrast. Voor iconen zou het contrast tussen de voor- en achtergrondkleur 3:1 of groter moeten zijn. Tenzij het icoon puur decoratief is.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_eigen-kleuren.png" alt="Rechter bovenhoek van een modal scherm rechts daarvan een waarschuwing. Sluit icoon van modal scherm is paars. Uitroepteken icoon in waarschuwing is donkergeel. De tekst van de waarschuwing is donkergrijs." class="utrecht-img" /></p>
-             <p>Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_niet-op-kleur-vertrouwen.png" alt="Vier meldingen. Waarschuwingsmelding met uitroepteken in driehoek icoon. Positieve melding met check icoon. Negatieve melding met uitroepteken in cirkel icoon. Informatieve melding met &#x27;i&#x27; in cirkel icoon." class="utrecht-img" /></p>
-             <p>
-              Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword" class="utrecht-link utrecht-link--html-a"><code>current color</code></a
-              >. Op die manier neemt het icoon de waarde over van de <code>color</code> die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
-             </p>
-             <div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">.icon</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">fill</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> currentColor</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <p>Let wel; SVG gebruikt <code>fill</code>, niet <code>color</code> of <code>background-color</code>.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_high-contrast.png" alt="Drie schermen met dezelfde inhoud (onder andere een button met pijl icoon) maar verschillende thema&#x27;s. Light-mode, dark-mode en high-contrast-mode." class="utrecht-img" /></p>
-             <p>Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_status.png" alt="Twee keer een lijstje van twee labels met een icoon ervoor. Links &#x27;Geluid aan&#x27; en &#x27;Geluid uit&#x27; waarbij een speaker icoon per label van vorm verschilt. Rechts &#x27;Toon wachtwoord&#x27; en &#x27;Verberg wachtwoord&#x27; waarbij een oog icoon van vorm verschilt." class="utrecht-img" /></p>
-             <h3 id="iconen-kiezen" class="utrecht-heading-3">Iconen kiezen</h3>
-             <h4 id="respecteer-conventies" class="utrecht-heading-4">Respecteer conventies.</h4>
-             <p>Voor iconen, en met name functionele iconen, is het belangrijk om conventies te volgen. Zo zijn er bepaalde iconen die sterk aan concept gerelateerd zijn. Het is verstandig deze conventies te respecteren en deze iconen niet ineens voor een andere functie te gebruiken.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_conventies.png" alt="Tien iconen op een rij. Vergrootglas, kruis, check, uitroepteken in driehoek, prullenbak, plus, min, play, pauze, stop." class="utrecht-img" /></p>
-             <p>In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op &#x27;Toevoegen&#x27; zoekt komt het &#x27;Plus&#x27; icoon bovendrijven.</p>
-             <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_aliassen.png" alt="Screenshot van Figma. Plus icoon is geselecteerd. Aanvullende beschrijving toont de woorden &#x27;Add&#x27; en &#x27;Toevoegen&#x27;." class="utrecht-img" /></p>
-             <p>Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.</p>
-             <h3 id="svg" class="utrecht-heading-3">SVG</h3>
-             <h4 id="gebruik-svg-voor-iconen" class="utrecht-heading-4">Gebruik SVG voor iconen.</h4>
-             <p>SVG staat voor Scalable Vector Graphics en is een ideaal bestandsformaat voor iconen.</p>
-             <p>Voordelen van SVG:</p>
-             <ul role="list" class="utrecht-unordered-list">
-              <li class="utrecht-unordered-list__item">Schaalbaar zonder kwaliteitsverlies</li>
-              <li class="utrecht-unordered-list__item">Licht in gewicht wat bijdraagt aan korte laadtijden</li>
-              <li class="utrecht-unordered-list__item">Te kleuren door middel van CSS</li>
-              <li class="utrecht-unordered-list__item">Te animeren</li>
-             </ul>
-             <h3 id="iconen-als-font" class="utrecht-heading-3">Iconen als font</h3>
-             <h4 id="gebruik-geen-font-voor-iconen" class="utrecht-heading-4">Gebruik geen font voor iconen.</h4>
-             <p>In tegenstelling tot SVG worden iconen van een font toegewezen aan Unicode-punten en geïnterpreteerd als tekst. Dit kan tot toegankelijkheidsproblemen leiden. Zo kan iemand een eigen lettertype hebben geïnstalleerd. Mensen met dyslectie stellen soms hun eigen lettertypen in voor een betere leesbaarheid. In dat geval worden de iconen vervangen door &#x27;ontbrekende tekens&#x27;-symbolen. Dat gebeurd trouwens ook als het font niet geladen wordt.</p>
-             <p>Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een &#x27;A&#x27;. Wanneer men een ander font gebruik of als het icoon font niet wordt geladen staat er simpelweg een &#x27;A&#x27;. Daarnaast wordt dit icoon door schermlezers ook uitgesproken als &#x27;A&#x27;.</p>
-             <h3 id="toepassen-in-code" class="utrecht-heading-3">Toepassen in code</h3>
-             <p>Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tekstlabel.</p>
-             <p>Het icoon zelf moet het attribuut <code>focusable=&quot;false&quot;</code> hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.</p>
-             <p>Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code <code>aria-hidden=&quot;true&quot;</code> mee. Zo is het tekstlabel &quot;Verwijderen&quot; in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren.</p>
-             <div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-icon nl-icon--text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">focusable</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">false</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">aria-hidden</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">true</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name namespace" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">xlink:</span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">assets/svg/icons-core-set.svg#-icon-trashcan</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Delete</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <p>Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeken) of een kruis (voor sluiten), zou je kunnen gebruiken zonder aanvullende visuele tekst. In deze gevallen wordt een visueel verborgen <code>&lt;span&gt;</code> aanbevolen.</p>
-             <p>Verberg in deze gevallen de <code>&lt;span&gt;</code> met behulp van de class <code>visually-hidden</code> of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.</p>
-             <p>
-              Ook <code>aria-label</code> kan dit voor elkaar krijgen maar <a href="https://heydonworks.com/article/aria-label-is-a-xenophobe" class="utrecht-link utrecht-link--html-a"><code>aria-label</code> kan voor vertaalproblemen zorgen</a>.
-             </p>
-             <div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">.visually-hidden</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">border</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">clip</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">rect</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1</span><span class="token unit">px</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">margin</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">-1</span><span class="token unit">px</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">overflow</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> hidden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">padding</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">position</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> absolute</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">white-space</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> nowrap</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">width</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1</span><span class="token unit">px</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <h4 id="tooltips" class="utrecht-heading-4">Tooltips</h4>
-             <p>Als een icoon een tooltip heeft, kan de tooltip als label ingezet worden. In het volgende voorbeeld zorgt het element <code>class=&quot;tooltip&quot;</code> voor het label.</p>
-             <div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">link/to/download</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">download</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-icon nl-icon--text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">focusable</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">false</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">aria-hidden</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">true</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name namespace" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">xlink:</span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">assets/svg/nl-icons-core-set.svg#nl-icon-download</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">tooltip</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Download</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <p>Standaard zal de tooltip worden verborgen door middel van <code>display: none</code>. De tooltip zal dan getoond worden bij hover of focus.</p>
-             <div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">[</span><span class="token selector attribute attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">download</span><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">]</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)"> </span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">.tooltip</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">display</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> none</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">[</span><span class="token selector attribute attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">download</span><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">]</span><span class="token selector pseudo-class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">:hover</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)"> </span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">.tooltip</span><span class="token selector punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">,</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)"></span><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">[</span><span class="token selector attribute attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">download</span><span class="token selector attribute punctuation" style="color:var(--nlds-code-block-punctuation-color);font-style:var(--nlds-code-block-selector-font-style)">]</span><span class="token selector pseudo-class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">:focus</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)"> </span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:var(--nlds-code-block-selector-font-style)">.tooltip</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">display</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> block</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <p>Vertrouw niet op het <code>title</code> attribuut voor tooltips. Deze verschijnen niet bij focus en zijn daarom niet toegankelijk via het toetsenbord. Ze worden meestal ook niet voorgelezen door schermlezers als de instellingen hier niet op ingesteld zijn.</p>
-             <p>Als de tekst van de tooltip buiten element staat, kun je het aan dit element koppelen met behulp van <code>aria-labelledby</code>. In het volgende voorbeeld delen <code>aria-labelledby</code> en het <code>id</code> van de tooltip de waarde <code>download-tooltip</code>. Teksten die zijn gekoppeld zijn via <code>aria-labelledby</code> worden wel vertaald.</p>
-             <div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)">
-              <div class="codeBlockContent_biex">
-               <pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">download-container</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">link/to/download</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">download</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">aria-labelledby</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">download-tooltip</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-icon nl-icon--text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">focusable</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">false</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">aria-hidden</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">true</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name namespace" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">xlink:</span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">assets/svg/nl-icons-core-set.svg#nl-icon-download</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">use</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">tooltip</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:var(--nlds-code-block-attr-name-font-style)">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">download-tooltip</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Download</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><br></span></code></pre>
-               <div class="buttonGroup__atx">
-                <button type="button" aria-label="Kopieer code naar klembord" title="Kopieer" class="clean-btn">
-                 <span class="copyButtonIcons_eSgA" aria-hidden="true"
-                  ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg
-                 ></span>
-                </button>
-               </div>
-              </div>
-             </div>
-             <h2 id="toptaak-iconen" class="utrecht-heading-2">Toptaak iconen</h2>
-             <p>Toptaak iconen zijn gedetailleerder dan functionele iconen. Dat kan ook makkelijk omdat ze groter worden ingezet. Toptaak iconen helpen bezoekers van gemeentelijke websites om sneller bij de juiste informatie te komen.</p>
-             <p>Voor het &#x27;Voorbeeld thema&#x27; maken we gebruik van de outline versie van de iconenset: <a href="https://www.gemeenteniconen.nl/" class="utrecht-link utrecht-link--html-a">Gemeenten iconen</a>. Deze iconenset wordt Open Source aangeboden. Je mag deze iconen dus ook gebruiken voor jouw organisatie.</p>
-             <p><a href="https://www.gemeenteniconen.nl" class="utrecht-link utrecht-link--html-a">Ga naar gemeenteniconen.nl</a> voor meer informatie over het gebruik.</p>
-             <h2 id="meer-informatie" class="utrecht-heading-2">Meer informatie</h2>
-             <p>Deze documentatie is onder andere gebaseerd op de <a href="https://bbc.github.io/gel/foundations/iconography/" class="utrecht-link utrecht-link--html-a">documentatie rondom iconen van BBC GEL</a>.</p>
-             <h3 id="gerelateerde-wcag-richtlijnen" class="utrecht-heading-3">Gerelateerde WCAG Richtlijnen</h3>
-             <ul role="list" class="utrecht-unordered-list">
-              <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" class="utrecht-link utrecht-link--html-a">1.1.1: Non text content</a></li>
-              <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="utrecht-link utrecht-link--html-a">1.4.11: Non text contrast</a></li>
-             </ul>
-             <h3 id="links" class="utrecht-heading-3">Links</h3>
-             <p>
-              <a href="https://www.designsystems.com/iconography-guide/" class="utrecht-link utrecht-link--html-a">A complete guide to iconography - Bonnie Kate Wolf</a><br />
-              Uitgebreid artikel over het ontwerpen en toepassen van iconen binnen een Design System.
-             </p>
-             <p>
-              <a href="https://uxdesign.cc/pixel-snapping-in-icon-design-a-rendering-test-6ecd5b516522" class="utrecht-link utrecht-link--html-a">Pixel-snapping in icon design - Helena Zhang</a><br />
-              Artikel over een onderzoek naar het scherp tonen van iconen.
-             </p>
-             <p>
-              <a href="https://css-tricks.com/icon-fonts-vs-svg/" class="utrecht-link utrecht-link--html-a">Inline SVG vs Icon Fonts - CSS-tricks</a><br />
-              Artikel over de verschillen tussen ‘Inline SVG’ en ‘Icon Fonts’ worden beschreven.
-             </p>
-             <p>
-              <a href="https://www.viget.com/articles/are-hollow-icons-really-harder-to-recognize-a-research-study/" class="utrecht-link utrecht-link--html-a">Are Hollow Icons Really Harder to Recognize Than Solid Icons? - Curt Arledge</a><br />
-              Artikel over een onderzoek naar het gebruik van ‘outline’ iconen ten opzicht van ‘solid’ iconen.
-             </p>
-             <p>
-              <a href="https://m3.material.io/styles/icons/overview" class="utrecht-link utrecht-link--html-a">Icons - Google Material</a><br />
-              Documentatie over het gebruik van iconen binnen het Material Design System van Google.
-             </p>
-             <p>
-              <a href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/" class="utrecht-link utrecht-link--html-a">Accessible icon buttons - Sara Soueidan</a><br />
-              Artikel over het toegankelijk opzetten van buttons die alleen een icoon tonen. Er komen verschillende methodes aan bod.
-             </p>
-             <p>
-              <a href="https://heydonworks.com/article/aria-label-is-a-xenophobe/" class="utrecht-link utrecht-link--html-a">Aria-label is a xenophobe - Heydon Heydon Pickering</a><br />
-              Artikel over het gebruik van Aria-label en de problemen die hierbij kunnen optreden bij het vertalen van een webpagina.
-             </p>
-             <p>
-              <a href="https://tabler-icons.io/" class="utrecht-link utrecht-link--html-a">Tabler icons - Codecalm</a><br />
-              De iconenset die we bij het NL Design System gebruiken voor de functionele iconen van het Voorbeeld thema.
-             </p>
-             <p>
-              <a href="https://www.gemeenteniconen.nl" class="utrecht-link utrecht-link--html-a">Gemeenteniconen.nl</a><br />
-              De iconenset die we bij het NL Design System gebruiken voor het Voorbeeld thema.
-             </p>
-             <hr />
-             <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
-             <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">Github</a>.</p>
-             <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
-             <p>Heb je een vraag? Twijfel niet en <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
-            </div>
-            <footer class="theme-doc-footer docusaurus-mt-lg">
-             <div class="theme-doc-footer-edit-meta-row row">
-              <div class="col">
-               <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/stijl/iconen.md" target="_blank" rel="noreferrer noopener" class="theme-edit-this-page"
-                ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true">
-                 <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
-                >Bewerk deze pagina</a
-               >
-              </div>
-              <div class="col lastUpdated_vwxv"></div>
-             </div>
-            </footer>
-           </article>
-           <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
-            <a class="pagination-nav__link pagination-nav__link--prev" href="/richtlijnen/stijl/kleuren"
-             ><div class="pagination-nav__sublabel">Vorige</div>
-             <div class="pagination-nav__label">Kleuren</div></a
-            ><a class="pagination-nav__link pagination-nav__link--next" href="/richtlijnen/stijl/ruimte"
-             ><div class="pagination-nav__sublabel">Volgende</div>
-             <div class="pagination-nav__label">Ruimte</div></a
-            >
+              </ul>
+             </li>
+            </ul>
            </nav>
           </div>
          </div>
-         <div class="col col--3">
-          <div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop">
-           <ul class="table-of-contents table-of-contents__left-border">
-            <li><a href="#functionele-iconen" class="table-of-contents__link toc-highlight">Functionele iconen</a></li>
-            <li><a href="#toptaak-iconen" class="table-of-contents__link toc-highlight">Toptaak iconen</a></li>
-            <li><a href="#meer-informatie" class="table-of-contents__link toc-highlight">Meer informatie</a></li>
-            <li><a href="#help-deze-documentatie-te-verbeteren" class="table-of-contents__link toc-highlight">Help deze documentatie te verbeteren</a></li>
-            <li><a href="#vragen" class="table-of-contents__link toc-highlight">Vragen</a></li>
-           </ul>
+        </div>
+       </aside>
+       <main class="docMainContainer_TBSr">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_VOVn">
+           <div class="docItemContainer_Djhp">
+            <article>
+             <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/richtlijnen/tekst-en-taalgebruik" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/richtlijnen/stijl/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Stijl</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Iconen</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a" href="/richtlijnen/stijl/"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Stijl</a
+               >
+              </p>
+             </div>
+             <div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Op deze pagina</button></div>
+             <div class="theme-doc-markdown">
+              <h1 id="iconen" class="utrecht-heading-1">Iconen</h1>
+              <p>Iconen worden gebruikt om extra betekenis te geven. Ze brengen boodschappen in één oogopslag over en vestigen aandacht op belangrijke informatie. Ook kunnen ze hulp bieden aan iemand met een cognitieve beperking of als iemand moeite heeft met taal.</p>
+              <p><strong>Let op!</strong> Tekst zou altijd voorrang moeten krijgen ten opzichte van iconen. Gebruik iconen alleen waar extra duidelijkheid gewenst is.</p>
+              <p>Binnen een Design System is het verstandig om iconen consistent toe te passen. Dat gaat gemakkelijk wanneer je gebruik maakt van een iconenset. Welke iconenset je gebruikt voor jouw organisatie staat je helemaal vrij.</p>
+              <p>Vanuit het NL Design System gebruiken we twee iconensets. De iconen in deze sets typeren we als <a href="#functionele-iconen" class="utrecht-link utrecht-link--html-a">Functionele iconen</a> en <a href="#toptaak-iconen" class="utrecht-link utrecht-link--html-a">Toptaak iconen</a>.</p>
+              <h2 id="functionele-iconen" class="utrecht-heading-2">Functionele iconen</h2>
+              <p>Bij functionele iconen is het belangrijk dat ze simpel van vorm zijn. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk bijvoorbeeld aan een icoon voor een button of foutmelding.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_functioneel.png" alt="Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon." class="utrecht-img" /></p>
+              <p>Voor het &#x27;Voorbeeld thema&#x27; maken we gebruik van een selectie uit de <a href="https://tabler-icons.io/" class="utrecht-link utrecht-link--html-a">Tabler iconenset</a>.</p>
+              <h3 id="grid" class="utrecht-heading-3">Grid</h3>
+              <h4 id="positioneer-iconen-binnen-een-vierkant-grid" class="utrecht-heading-4">Positioneer iconen binnen een vierkant grid.</h4>
+              <p>Per icoon kan de vorm verschillen in hoogte en breedte. Denk bijvoorbeeld aan een stoplicht of een bus. Een iconenset wordt vaak ontworpen op basis van een vierkant grid.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid.png" alt="Fotocamera, klok en potloot icoon. Ieder op een vergroot grid van 24 bij 24." class="utrecht-img" /></p>
+              <p>Door te werken met een grid zorg je voor consistente vormen en afmetingen. Door iconen binnen dit vierkant te positioneren zijn ze inwisselbaar. Hierdoor zullen teksten niet verspringen als je de iconen bijvoorbeeld toepast in een lijst.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grid-geen-grid.png" alt="Twee lijstjes met vier labels. Voor elk label staat een icoon. Bij de eerste set verschillende de iconen in breedte waardoor de labels verspringen. Bij de tweede set hebben alle iconen dezelfde breedte waardoor de labels links uitlijnen." class="utrecht-img" /></p>
+              <h3 id="grootte" class="utrecht-heading-3">Grootte</h3>
+              <h4 id="stem-de-grootte-van-je-iconen-af-op-je-lettergrootte" class="utrecht-heading-4">Stem de grootte van je iconen af op je lettergrootte.</h4>
+              <p>Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om deze groottes af te stemmen met je lettergrootte.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png" alt="Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee." class="utrecht-img" /></p>
+              <p>Voor functionele iconen is dit vaak 16×16, 24×24 of 32×32. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid.</p>
+              <p><strong>Grootte als design token</strong></p>
+              <p>Voor de grootte van functionele iconen de <code class="utrecht-code">nl.icon.functional.size</code> Design Token beschikbaar. Komen de iconen voor jouw organisatie groter of kleiner beter tot hun recht? Pas de waarde van deze common token aan en de wijziging zal in vrijwel componenten worden doorgevoerd</p>
+              <h3 id="lijndikte" class="utrecht-heading-3">Lijndikte</h3>
+              <h4 id="laat-lijndikte-meeschalen" class="utrecht-heading-4">Laat lijndikte meeschalen.</h4>
+              <p>Een ‘outline’ iconenset is vaak opgebouwd uit lijnen (stroke). Bijvoorbeeld met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Over het algemeen is dit niet het gewenste gedrag omdat je zo verschillende gewichten in iconen kan krijgen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_outline-stroke.png" alt="Een kalender icoon wordt door middel van twee sets op drie formaten getoond. Klein, middel en groot. Bij de eerste set groeit de lijn-dikte niet mee, bij de tweede set wel." class="utrecht-img" /></p>
+              <h3 id="kleur" class="utrecht-heading-3">Kleur</h3>
+              <h4 id="zorg-ook-bij-iconen-voor-voldoende-contrast" class="utrecht-heading-4">Zorg ook bij iconen voor voldoende contrast.</h4>
+              <p>Iconen nemen vaak de kleur van de bijbehorende tekst over. Zodoende hebben ze, als de tekst het ook heeft, vanzelf voldoende contrast.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_kleuren-overnemen.png" alt="Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon. Alle iconen hebben dezelfde kleur als de bijbehorende teksten." class="utrecht-img" /></p>
+              <p>Gebruik je een icoon zonder tekst? Of wil je het icoon een andere kleur geven dan de bijbehorende tekst? Houd dan ook rekening met contrast. Voor iconen zou het contrast tussen de voor- en achtergrondkleur 3:1 of groter moeten zijn. Tenzij het icoon puur decoratief is.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_eigen-kleuren.png" alt="Rechter bovenhoek van een modal scherm rechts daarvan een waarschuwing. Sluit icoon van modal scherm is paars. Uitroepteken icoon in waarschuwing is donkergeel. De tekst van de waarschuwing is donkergrijs." class="utrecht-img" /></p>
+              <p>Iconen zijn een ideaal hulpmiddel om niet alleen op kleur te vertrouwen om een boodschap over te brengen. Denk bijvoorbeeld aan een foutmeldingen of feedback elementen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_niet-op-kleur-vertrouwen.png" alt="Vier meldingen. Waarschuwingsmelding met uitroepteken in driehoek icoon. Positieve melding met check icoon. Negatieve melding met uitroepteken in cirkel icoon. Informatieve melding met &#x27;i&#x27; in cirkel icoon." class="utrecht-img" /></p>
+              <p>
+               Wanneer je iconen als SVG gebruikt kun je de iconen kleuren door middel van <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">current color</code></a
+               >. Op die manier neemt het icoon de waarde over van de <code class="utrecht-code">color</code> die is toegepast. Hierdoor kleuren je iconen ook netjes mee als iemand gebruik maakt van bijvoorbeeld een donker thema (dark-mode) of Windows High Contrast Mode.
+              </p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">.icon {
+  fill: currentColor;
+}
+</code></code></pre>
+              <p>Let wel; SVG gebruikt <code class="utrecht-code">fill</code>, niet <code class="utrecht-code">color</code> of <code class="utrecht-code">background-color</code>.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_high-contrast.png" alt="Drie schermen met dezelfde inhoud (onder andere een button met pijl icoon) maar verschillende thema&#x27;s. Light-mode, dark-mode en high-contrast-mode." class="utrecht-img" /></p>
+              <p>Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan geluid aan/uit zetten of het wel/niet tonen van een wachtwoord. In dit soort gevallen is het belangrijk om niet enkel op kleur te vertrouwen, omdat kleur niet door iedereen op dezelfde manier wordt ervaren. Een afwijking in de vorm van het icoon is dan een oplossing.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_status.png" alt="Twee keer een lijstje van twee labels met een icoon ervoor. Links &#x27;Geluid aan&#x27; en &#x27;Geluid uit&#x27; waarbij een speaker icoon per label van vorm verschilt. Rechts &#x27;Toon wachtwoord&#x27; en &#x27;Verberg wachtwoord&#x27; waarbij een oog icoon van vorm verschilt." class="utrecht-img" /></p>
+              <h3 id="iconen-kiezen" class="utrecht-heading-3">Iconen kiezen</h3>
+              <h4 id="respecteer-conventies" class="utrecht-heading-4">Respecteer conventies.</h4>
+              <p>Voor iconen, en met name functionele iconen, is het belangrijk om conventies te volgen. Zo zijn er bepaalde iconen die sterk aan concept gerelateerd zijn. Het is verstandig deze conventies te respecteren en deze iconen niet ineens voor een andere functie te gebruiken.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_conventies.png" alt="Tien iconen op een rij. Vergrootglas, kruis, check, uitroepteken in driehoek, prullenbak, plus, min, play, pauze, stop." class="utrecht-img" /></p>
+              <p>In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. Wanneer men dan op &#x27;Toevoegen&#x27; zoekt komt het &#x27;Plus&#x27; icoon bovendrijven.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_aliassen.png" alt="Screenshot van Figma. Plus icoon is geselecteerd. Aanvullende beschrijving toont de woorden &#x27;Add&#x27; en &#x27;Toevoegen&#x27;." class="utrecht-img" /></p>
+              <p>Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.</p>
+              <h3 id="svg" class="utrecht-heading-3">SVG</h3>
+              <h4 id="gebruik-svg-voor-iconen" class="utrecht-heading-4">Gebruik SVG voor iconen.</h4>
+              <p>SVG staat voor Scalable Vector Graphics en is een ideaal bestandsformaat voor iconen.</p>
+              <p>Voordelen van SVG:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Schaalbaar zonder kwaliteitsverlies</li>
+               <li class="utrecht-unordered-list__item">Licht in gewicht wat bijdraagt aan korte laadtijden</li>
+               <li class="utrecht-unordered-list__item">Te kleuren door middel van CSS</li>
+               <li class="utrecht-unordered-list__item">Te animeren</li>
+              </ul>
+              <h3 id="iconen-als-font" class="utrecht-heading-3">Iconen als font</h3>
+              <h4 id="gebruik-geen-font-voor-iconen" class="utrecht-heading-4">Gebruik geen font voor iconen.</h4>
+              <p>In tegenstelling tot SVG worden iconen van een font toegewezen aan Unicode-punten en geïnterpreteerd als tekst. Dit kan tot toegankelijkheidsproblemen leiden. Zo kan iemand een eigen lettertype hebben geïnstalleerd. Mensen met dyslectie stellen soms hun eigen lettertypen in voor een betere leesbaarheid. In dat geval worden de iconen vervangen door &#x27;ontbrekende tekens&#x27;-symbolen. Dat gebeurd trouwens ook als het font niet geladen wordt.</p>
+              <p>Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een &#x27;A&#x27;. Wanneer men een ander font gebruik of als het icoon font niet wordt geladen staat er simpelweg een &#x27;A&#x27;. Daarnaast wordt dit icoon door schermlezers ook uitgesproken als &#x27;A&#x27;.</p>
+              <h3 id="toepassen-in-code" class="utrecht-heading-3">Toepassen in code</h3>
+              <p>Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tekstlabel.</p>
+              <p>Het icoon zelf moet het attribuut <code class="utrecht-code">focusable=&quot;false&quot;</code> hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.</p>
+              <p>Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> mee. Zo is het tekstlabel &quot;Verwijderen&quot; in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren.</p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-html">&lt;button&gt;
+  &lt;svg class=&quot;nl-icon nl-icon--text&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;use xlink:href=&quot;assets/svg/icons-core-set.svg#-icon-trashcan&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+  &lt;span&gt;Delete&lt;/span&gt;
+&lt;/button&gt;
+</code></code></pre>
+              <p>Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeken) of een kruis (voor sluiten), zou je kunnen gebruiken zonder aanvullende visuele tekst. In deze gevallen wordt een visueel verborgen <code class="utrecht-code">&lt;span&gt;</code> aanbevolen.</p>
+              <p>Verberg in deze gevallen de <code class="utrecht-code">&lt;span&gt;</code> met behulp van de class <code class="utrecht-code">visually-hidden</code> of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.</p>
+              <p>
+               Ook <code class="utrecht-code">aria-label</code> kan dit voor elkaar krijgen maar <a href="https://heydonworks.com/article/aria-label-is-a-xenophobe" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">aria-label</code> kan voor vertaalproblemen zorgen</a>.
+              </p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+</code></code></pre>
+              <h4 id="tooltips" class="utrecht-heading-4">Tooltips</h4>
+              <p>Als een icoon een tooltip heeft, kan de tooltip als label ingezet worden. In het volgende voorbeeld zorgt het element <code class="utrecht-code">class=&quot;tooltip&quot;</code> voor het label.</p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-html">&lt;a href=&quot;link/to/download&quot; download&gt;
+  &lt;svg class=&quot;nl-icon nl-icon--text&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;use xlink:href=&quot;assets/svg/nl-icons-core-set.svg#nl-icon-download&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+  &lt;span class=&quot;tooltip&quot;&gt;Download&lt;/span&gt;
+&lt;/a&gt;
+</code></code></pre>
+              <p>Standaard zal de tooltip worden verborgen door middel van <code class="utrecht-code">display: none</code>. De tooltip zal dan getoond worden bij hover of focus.</p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">[download] .tooltip {
+  display: none;
+}
+
+[download]:hover .tooltip,
+[download]:focus .tooltip {
+  display: block;
+}
+</code></code></pre>
+              <p>Vertrouw niet op het <code class="utrecht-code">title</code> attribuut voor tooltips. Deze verschijnen niet bij focus en zijn daarom niet toegankelijk via het toetsenbord. Ze worden meestal ook niet voorgelezen door schermlezers als de instellingen hier niet op ingesteld zijn.</p>
+              <p>Als de tekst van de tooltip buiten element staat, kun je het aan dit element koppelen met behulp van <code class="utrecht-code">aria-labelledby</code>. In het volgende voorbeeld delen <code class="utrecht-code">aria-labelledby</code> en het <code class="utrecht-code">id</code> van de tooltip de waarde <code class="utrecht-code">download-tooltip</code>. Teksten die zijn gekoppeld zijn via <code class="utrecht-code">aria-labelledby</code> worden wel vertaald.</p>
+              <pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-html">&lt;div class=&quot;download-container&quot;&gt;
+  &lt;a href=&quot;link/to/download&quot; download aria-labelledby=&quot;download-tooltip&quot;&gt;
+    &lt;svg class=&quot;nl-icon nl-icon--text&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;use xlink:href=&quot;assets/svg/nl-icons-core-set.svg#nl-icon-download&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span class=&quot;tooltip&quot; id=&quot;download-tooltip&quot;&gt;Download&lt;/span&gt;
+&lt;/div&gt;
+</code></code></pre>
+              <h2 id="toptaak-iconen" class="utrecht-heading-2">Toptaak iconen</h2>
+              <p>Toptaak iconen zijn gedetailleerder dan functionele iconen. Dat kan ook makkelijk omdat ze groter worden ingezet. Toptaak iconen helpen bezoekers van gemeentelijke websites om sneller bij de juiste informatie te komen.</p>
+              <p>Voor het &#x27;Voorbeeld thema&#x27; maken we gebruik van de outline versie van de iconenset: <a href="https://www.gemeenteniconen.nl/" class="utrecht-link utrecht-link--html-a">Gemeenten iconen</a>. Deze iconenset wordt Open Source aangeboden. Je mag deze iconen dus ook gebruiken voor jouw organisatie.</p>
+              <p><a href="https://www.gemeenteniconen.nl" class="utrecht-link utrecht-link--html-a">Ga naar gemeenteniconen.nl</a> voor meer informatie over het gebruik.</p>
+              <h2 id="meer-informatie" class="utrecht-heading-2">Meer informatie</h2>
+              <p>Deze documentatie is onder andere gebaseerd op de <a href="https://bbc.github.io/gel/foundations/iconography/" class="utrecht-link utrecht-link--html-a">documentatie rondom iconen van BBC GEL</a>.</p>
+              <h3 id="gerelateerde-wcag-richtlijnen" class="utrecht-heading-3">Gerelateerde WCAG Richtlijnen</h3>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" class="utrecht-link utrecht-link--html-a">1.1.1: Non text content</a></li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="utrecht-link utrecht-link--html-a">1.4.11: Non text contrast</a></li>
+              </ul>
+              <h3 id="links" class="utrecht-heading-3">Links</h3>
+              <p>
+               <a href="https://www.designsystems.com/iconography-guide/" class="utrecht-link utrecht-link--html-a">A complete guide to iconography - Bonnie Kate Wolf</a><br />
+               Uitgebreid artikel over het ontwerpen en toepassen van iconen binnen een Design System.
+              </p>
+              <p>
+               <a href="https://uxdesign.cc/pixel-snapping-in-icon-design-a-rendering-test-6ecd5b516522" class="utrecht-link utrecht-link--html-a">Pixel-snapping in icon design - Helena Zhang</a><br />
+               Artikel over een onderzoek naar het scherp tonen van iconen.
+              </p>
+              <p>
+               <a href="https://css-tricks.com/icon-fonts-vs-svg/" class="utrecht-link utrecht-link--html-a">Inline SVG vs Icon Fonts - CSS-tricks</a><br />
+               Artikel over de verschillen tussen ‘Inline SVG’ en ‘Icon Fonts’ worden beschreven.
+              </p>
+              <p>
+               <a href="https://www.viget.com/articles/are-hollow-icons-really-harder-to-recognize-a-research-study/" class="utrecht-link utrecht-link--html-a">Are Hollow Icons Really Harder to Recognize Than Solid Icons? - Curt Arledge</a><br />
+               Artikel over een onderzoek naar het gebruik van ‘outline’ iconen ten opzicht van ‘solid’ iconen.
+              </p>
+              <p>
+               <a href="https://m3.material.io/styles/icons/overview" class="utrecht-link utrecht-link--html-a">Icons - Google Material</a><br />
+               Documentatie over het gebruik van iconen binnen het Material Design System van Google.
+              </p>
+              <p>
+               <a href="https://www.sarasoueidan.com/blog/accessible-icon-buttons/" class="utrecht-link utrecht-link--html-a">Accessible icon buttons - Sara Soueidan</a><br />
+               Artikel over het toegankelijk opzetten van buttons die alleen een icoon tonen. Er komen verschillende methodes aan bod.
+              </p>
+              <p>
+               <a href="https://heydonworks.com/article/aria-label-is-a-xenophobe/" class="utrecht-link utrecht-link--html-a">Aria-label is a xenophobe - Heydon Heydon Pickering</a><br />
+               Artikel over het gebruik van Aria-label en de problemen die hierbij kunnen optreden bij het vertalen van een webpagina.
+              </p>
+              <p>
+               <a href="https://tabler-icons.io/" class="utrecht-link utrecht-link--html-a">Tabler icons - Codecalm</a><br />
+               De iconenset die we bij het NL Design System gebruiken voor de functionele iconen van het Voorbeeld thema.
+              </p>
+              <p>
+               <a href="https://www.gemeenteniconen.nl" class="utrecht-link utrecht-link--html-a">Gemeenteniconen.nl</a><br />
+               De iconenset die we bij het NL Design System gebruiken voor het Voorbeeld thema.
+              </p>
+              <hr />
+              <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
+              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">Github</a>.</p>
+              <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
+              <p>Heb je een vraag? Twijfel niet en <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/stijl/iconen.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_vwxv"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/richtlijnen/stijl/kleuren"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Kleuren</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/richtlijnen/stijl/ruimte"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Ruimte</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#functionele-iconen" class="table-of-contents__link toc-highlight">Functionele iconen</a></li>
+             <li><a href="#toptaak-iconen" class="table-of-contents__link toc-highlight">Toptaak iconen</a></li>
+             <li><a href="#meer-informatie" class="table-of-contents__link toc-highlight">Meer informatie</a></li>
+             <li><a href="#help-deze-documentatie-te-verbeteren" class="table-of-contents__link toc-highlight">Help deze documentatie te verbeteren</a></li>
+             <li><a href="#vragen" class="table-of-contents__link toc-highlight">Vragen</a></li>
+            </ul>
+           </div>
           </div>
          </div>
         </div>
-       </div>
-      </main>
+       </main>
+      </div>
      </div>
     </div>
     <footer class="footer footer--dark footer_VVap">
@@ -438,7 +424,5 @@
     </footer>
    </div>
   </div>
-  <script src="/assets/js/runtime~main.72cf5e82.js"></script>
-  <script src="/assets/js/main.0d52e53d.js"></script>
  </body>
 </html>
