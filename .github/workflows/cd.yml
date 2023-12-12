@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: "16.16.x"
+          node-version-file: ".nvmrc"
 
       - name: Install
         run: |
@@ -78,7 +78,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: "16.16.x"
+          node-version-file: ".nvmrc"
 
       - name: "Continuous Deployment: publish to GitHub repository"
         env:
