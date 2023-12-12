@@ -3,10 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "license": "EUPL-1.2",
-  "workspaces": [
-    "./docs/",
-    "./packages/*"
-  ],
   "scripts": {
     "docusaurus": "docusaurus",
     "prestart": "npm run write-component-pages",
