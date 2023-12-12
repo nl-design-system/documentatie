@@ -6,7 +6,8 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="do" title="Heel basaal, de link vlak boven het formulierveld plaatsen.">
   <Canvas language="html">
     <p>
-      <a href="#">Privacybeleid gemeente Voorbeeld</a>.
+      <a href="#">Privacybeleid gemeente Voorbeeld</a>
+      {"."}
     </p>
     <input id="pb" type="checkbox" name="privacybeleid" />
     <label for="pb">Ik ga akkoord met het privacybeleid</label>
@@ -21,12 +22,13 @@ import { Guideline } from "@site/src/components/Guideline";
     <fieldset>
       <legend>Privacystatement gemeente Voorbeeld</legend>
       <p id="desc">
-        Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees
-        onze{" "}
+        {
+          "Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees onze "
+        }
         <a href="#" target="_blank">
-          privacybeleid (opent in een nieuw venster){" "}
+          privacybeleid (opent in een nieuw venster)
         </a>
-        .
+        {"."}
       </p>
       <input type="checkbox" aria-describedby="desc" id="pvs" />
       <label for="pvs">Ik ga akkoord met het privacybeleid</label>
