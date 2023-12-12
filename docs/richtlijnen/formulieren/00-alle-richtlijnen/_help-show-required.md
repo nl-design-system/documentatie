@@ -19,7 +19,7 @@ Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. 
 
 ### Screenreaderfeedback
 
-Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met de HTML-attributen `aria-required="true"` of `required`.
+Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-atribuut `aria-required="true"` of met het HTML%-attribuut `required`.
 
 ```html
 <form>
@@ -29,8 +29,7 @@ Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met de HTM
 </form>
 ```
 
-**`Let op`**: Gebruik je `required` in een invoerveld, neem dan ook [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element.
-
+**`Let op`**: Gebruik je `required` in een invoerveld, neem dan ook [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element. Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet.
 ```html
 <form novalidate>
   <label for="kleur3">Wat is je lievelingskleur(verplicht)</label>
@@ -38,7 +37,5 @@ Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met de HTM
   [... etc ...]
 </form>
 ```
-
-Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet.
 
 Door te helpen fouten te voorkomen voldoe van aan WCAG [Succescriterium 3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG21-nl/#labels-of-instructies), niveau A.
