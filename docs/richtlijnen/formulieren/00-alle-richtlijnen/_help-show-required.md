@@ -30,6 +30,7 @@ Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het AR
 ```
 
 **`Let op`**: Gebruik je `required` in een invoerveld, neem dan ook [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element. Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet.
+
 ```html
 <form novalidate>
   <label for="kleur3">Wat is je lievelingskleur(verplicht)</label>
