@@ -1,7 +1,7 @@
 import React from 'react';
 import '@nl-design-system-unstable/nlds-design-tokens/src/font';
-import '@nl-design-system-unstable/example-theme/dist/design-tokens.css';
-import '@nl-design-system-unstable/example-theme/dist/custom.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/design-tokens.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/custom.css';
 import '@fontsource/open-sans/300.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/500.css';
