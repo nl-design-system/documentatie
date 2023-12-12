@@ -6,8 +6,8 @@ Gebruik daarom liever geen jpg-, gif- of png-bestanden voor buttontekst. Maar ge
 
 Door te zorgen voor een schaalbare en flexibele weergave tekst in buttons voldoe je aan de WCAG-succescritera:
 
-- [1.4.4: Herschalen van tekst (niveau AA)](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html)
-- [1.4.10 Reflow (niveau AA)](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html).
-- [1.4.5 Afbeeldingen van tekst (niveau AA)](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html)
+- [1.4.4: Herschalen van tekst](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html) (niveau AA).
+- [1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) (niveau AA)
+- [1.4.5 Afbeeldingen van tekst](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html) (niveau AA).
 
 ![Een button met het label 'Verstuur uw vraag' daarnaast een vergroting waarbij de tekst korrelig wordt](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_label-as-image.png)

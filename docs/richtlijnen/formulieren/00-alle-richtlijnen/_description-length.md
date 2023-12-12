@@ -1,4 +1,4 @@
-## Houd de description kort en to-the-point.
+## Houd de description kort en to-the-point
 
 Heb je erg veel tekst nodig om het formulier goed in te vullen, vermeld deze tekst dan boven het formulier of op een introductiepagina voordat een gebruiker het formulier gaat invullen.
 

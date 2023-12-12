@@ -4,7 +4,7 @@ Bij een goede koppeling tussen het label en het formulierveld, zijn beide elemen
 
 Een description ertussen verkleint de aanklikbare ruimte. Zorg er daarom voor dat het aanklikbare gedeelte van een formulierveld **tenminste** 24 bij 24 pixels is, liever nog groter waar mogelijk. Zodat gebruikers met dikke vingertoppen op een mobiel of met trillende handen met een muis toch een formulierveld kunnen selecteren.
 
-Een minimale grootte van het aanklikbare gedeelte is een vereiste volgens WCAG-succescriterium [2.5.8 (Niveau A): Minimale grootte van het aanwijsgebied](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).
+Een minimale grootte van het aanklikbare gedeelte is een vereiste volgens WCAG-succescriterium [2.5.8: Minimale grootte van het aanwijsgebied](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) (niveau A).
 
 ![Formfield met textbox van 48 pixels hoog, en formfield met radiobuttons van 24 pixels hoog.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_description_size.png)
 
