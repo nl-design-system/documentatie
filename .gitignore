@@ -9,6 +9,10 @@ dist/
 .docusaurus
 .cache-loader
 
+# Other lockfiles
+yarn.lock
+package-lock.json
+
 # Misc
 .DS_Store
 .env.local
