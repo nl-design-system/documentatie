@@ -1,7 +1,7 @@
-import React from 'react';
-import clsx from 'clsx';
-import style from './HomepageFooter.module.css';
 import { Image, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React from 'react';
+import style from './HomepageFooter.module.css';
 
 export const HomepageFooter = () => (
   <div className={clsx(style['homepage-footer'])}>

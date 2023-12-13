@@ -1,13 +1,13 @@
-import React, { type ReactNode } from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import { findFirstSidebarItemLink, useDocById } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
-import type { Props } from '@theme/DocCard';
-import { ArrowNarrowRight } from 'tabler-icons-react';
-import { Icon } from '@utrecht/component-library-react/dist/css-module';
-import styles from './styles.module.css';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
+import { findFirstSidebarItemLink, useDocById } from '@docusaurus/theme-common/internal';
+import type { Props } from '@theme/DocCard';
+import { Icon } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { type ReactNode } from 'react';
+import { ArrowNarrowRight } from 'tabler-icons-react';
+import styles from './styles.module.css';
 
 function CardLayout({
   href,

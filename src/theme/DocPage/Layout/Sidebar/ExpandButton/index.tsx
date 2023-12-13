@@ -1,10 +1,9 @@
-import React from 'react';
 import { translate } from '@docusaurus/Translate';
-import type { Props } from '@theme/DocPage/Layout/Sidebar/ExpandButton';
-
-import styles from './styles.module.css';
 import { IconArrowBarToRight } from '@tabler/icons-react';
+import type { Props } from '@theme/DocPage/Layout/Sidebar/ExpandButton';
 import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
+import React from 'react';
+import styles from './styles.module.css';
 
 export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): JSX.Element {
   return (

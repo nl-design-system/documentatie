@@ -1,13 +1,12 @@
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
-import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
+import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import IconLanguage from '@theme/Icon/Language';
 import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
+import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
-
+import React from 'react';
 import styles from './styles.module.css';
 
 export default function LocaleDropdownNavbarItem({
@@ -36,7 +35,6 @@ export default function LocaleDropdownNavbarItem({
       target: '_self',
       autoAddBaseUrl: false,
       className:
-        // eslint-disable-next-line no-nested-ternary
         locale === currentLocale
           ? // Similar idea as DefaultNavbarItem: select the right Infima active
             // class name. This cannot be substituted with isActive, because the

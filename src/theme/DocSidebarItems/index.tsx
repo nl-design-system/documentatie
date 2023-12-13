@@ -1,8 +1,7 @@
-import React, { memo } from 'react';
 import { DocSidebarItemsExpandedStateProvider } from '@docusaurus/theme-common/internal';
 import DocSidebarItem from '@theme/DocSidebarItem';
-
 import type { Props } from '@theme/DocSidebarItems';
+import React, { memo } from 'react';
 
 // TODO this item should probably not receive the "activePath" props
 // TODO this triggers whole sidebar re-renders on navigation

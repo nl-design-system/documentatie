@@ -1,13 +1,13 @@
-import React, { ComponentProps } from 'react';
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { translate } from '@docusaurus/Translate';
-import styles from './Header.module.css';
+import { useThemeConfig } from '@docusaurus/theme-common';
+import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
+import { IconChevronLeft, IconX } from '@tabler/icons-react';
+import { ButtonProps } from '@utrecht/component-library-react/dist/Button';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import { IconChevronLeft, IconX } from '@tabler/icons-react';
-import { useThemeConfig } from '@docusaurus/theme-common';
-import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
-import { ButtonProps } from '@utrecht/component-library-react/dist/Button';
+import React, { ComponentProps } from 'react';
+import styles from './Header.module.css';
 
 function CloseButton() {
   const mobileSidebar = useNavbarMobileSidebar();

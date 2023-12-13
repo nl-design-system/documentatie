@@ -1,7 +1,7 @@
-import React from 'react';
-import clsx from 'clsx';
-import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DefaultNavbarItem';
+import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
+import clsx from 'clsx';
+import React from 'react';
 
 function DefaultNavbarItemDesktop({ className, isDropdownItem = false, ...props }: DesktopOrMobileNavBarItemProps) {
   const element = (

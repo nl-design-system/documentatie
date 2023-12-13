@@ -1,14 +1,13 @@
-import React from 'react';
 import { PageMetadata, useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import DocCardList from '@theme/DocCardList';
-import DocPaginator from '@theme/DocPaginator';
-import DocVersionBanner from '@theme/DocVersionBanner';
-import DocVersionBadge from '@theme/DocVersionBadge';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
-import Heading from '@theme/Heading';
+import DocCardList from '@theme/DocCardList';
 import type { Props } from '@theme/DocCategoryGeneratedIndexPage';
-
+import DocPaginator from '@theme/DocPaginator';
+import DocVersionBadge from '@theme/DocVersionBadge';
+import DocVersionBanner from '@theme/DocVersionBanner';
+import Heading from '@theme/Heading';
+import React from 'react';
 import styles from './styles.module.css';
 
 function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): JSX.Element {

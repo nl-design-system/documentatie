@@ -1,10 +1,6 @@
-import React from 'react';
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageHero from '../components/HomepageHero';
-import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
-import { HomepageFooter } from '../components/HomepageFooter';
 import DocusaurusLink from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
 import {
   Heading2,
   Heading3,
@@ -14,6 +10,10 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
+import React from 'react';
+import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
+import { HomepageFooter } from '../components/HomepageFooter';
+import HomepageHero from '../components/HomepageHero';
 import HomepageUpdates from '../components/HomepageUpdates';
 
 export default function Home() {

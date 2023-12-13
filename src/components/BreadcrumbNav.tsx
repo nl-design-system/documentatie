@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
+import Link from '@docusaurus/Link';
+import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './Breadcrumbs.module.css';
-import clsx from 'clsx';
 import { IconChevronLeft } from '@tabler/icons-react';
 import {
-  BreadcrumbNav as UtrechtBreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Icon,
   ButtonGroup,
+  Icon,
+  BreadcrumbNav as UtrechtBreadcrumbNav,
 } from '@utrecht/component-library-react/dist/css-module';
-import { useLocation } from '@docusaurus/router';
-import Link from '@docusaurus/Link';
+import clsx from 'clsx';
+import React, { Fragment } from 'react';
+import styles from './Breadcrumbs.module.css';
 
 export interface BreadcrumbNavProps {
   breadcrumbs: {

@@ -1,7 +1,6 @@
-import React from 'react';
-import clsx from 'clsx';
-
 import type { Props } from '@theme/NavbarItem/HtmlNavbarItem';
+import clsx from 'clsx';
+import React from 'react';
 
 export default function HtmlNavbarItem({
   value,

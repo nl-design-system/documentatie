@@ -1,11 +1,11 @@
+import Link from '@docusaurus/Link';
+import { translate } from '@docusaurus/Translate';
+import { useLocation } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
+import clsx from 'clsx';
 import React, { Fragment, HTMLAttributes } from 'react';
 import styles from './Breadcrumbs.module.css';
-import clsx from 'clsx';
-import { translate } from '@docusaurus/Translate';
-import Link from '@docusaurus/Link';
-import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useLocation } from '@docusaurus/router';
 
 interface BreadcrumbItem {
   label: string;

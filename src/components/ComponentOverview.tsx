@@ -1,7 +1,7 @@
-import React from 'react';
-import { ComponentCard } from './ComponentCard';
 import { componentIndex } from '@nl-design-system/component-index';
+import React from 'react';
 import { CardGroup } from './CardGroup';
+import { ComponentCard } from './ComponentCard';
 
 interface ComponentOverviewProps {
   headingLevel: number;

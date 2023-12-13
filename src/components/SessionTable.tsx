@@ -1,7 +1,4 @@
-import React, { HTMLAttributes } from 'react';
-import clsx from 'clsx';
-
-import style from './SessionTable.module.css';
+import { IconCalendarCheck, IconUser } from '@tabler/icons-react';
 import {
   Icon,
   Link,
@@ -13,7 +10,9 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
-import { IconCalendarCheck, IconUser } from '@tabler/icons-react';
+import clsx from 'clsx';
+import React, { HTMLAttributes } from 'react';
+import style from './SessionTable.module.css';
 
 interface Speaker {
   name: string;

@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const navbar = require('./navConfig');
 const footer = require('./footerConfig');
+const navbar = require('./navConfig');
 const nldsPrism = require('./nldsPrism');
 
 /** @type {import('@docusaurus/types').Config} */

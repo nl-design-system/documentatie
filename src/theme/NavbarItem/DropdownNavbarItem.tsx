@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
-import clsx from 'clsx';
-import { isRegexpStringMatch, useCollapsible, Collapsible } from '@docusaurus/theme-common';
+import { Collapsible, isRegexpStringMatch, useCollapsible } from '@docusaurus/theme-common';
 import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal';
-import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
 import NavbarItem, { type LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DropdownNavbarItem';
+import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
+import clsx from 'clsx';
+import React, { useEffect, useRef, useState } from 'react';
 
 function isItemActive(item: LinkLikeNavbarItemProps, localPathname: string): boolean {
   if (isSamePath(item.to, localPathname)) {

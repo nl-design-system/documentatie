@@ -1,6 +1,6 @@
-import React, { type ReactElement } from 'react';
 import Head, { type Props as HeadProps } from '@docusaurus/Head';
 import type { Props } from '@theme/MDXComponents/Head';
+import React, { type ReactElement } from 'react';
 
 // MDX elements are wrapped through the MDX pragma. In some cases (notably usage
 // with Head/Helmet) we need to unwrap those elements.

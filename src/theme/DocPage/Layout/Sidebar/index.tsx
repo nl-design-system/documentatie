@@ -1,11 +1,10 @@
-import React, { type ReactNode, useState, useCallback } from 'react';
-import clsx from 'clsx';
+import { useLocation } from '@docusaurus/router';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useDocsSidebar } from '@docusaurus/theme-common/internal';
-import { useLocation } from '@docusaurus/router';
-import DocSidebar from '@theme/DocSidebar';
 import type { Props } from '@theme/DocPage/Layout/Sidebar';
-
+import DocSidebar from '@theme/DocSidebar';
+import clsx from 'clsx';
+import React, { type ReactNode, useCallback, useState } from 'react';
 import styles from './styles.module.css';
 
 // Reset sidebar state when sidebar changes

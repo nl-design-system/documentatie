@@ -1,18 +1,18 @@
-import React, { type ComponentProps, useEffect, useMemo } from 'react';
-import clsx from 'clsx';
-import { ThemeClassNames, useThemeConfig, usePrevious, Collapsible, useCollapsible } from '@docusaurus/theme-common';
-import {
-  isActiveSidebarItem,
-  findFirstSidebarItemLink,
-  useDocSidebarItemsExpandedState,
-} from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
+import { Collapsible, ThemeClassNames, useCollapsible, usePrevious, useThemeConfig } from '@docusaurus/theme-common';
+import {
+  findFirstSidebarItemLink,
+  isActiveSidebarItem,
+  useDocSidebarItemsExpandedState,
+} from '@docusaurus/theme-common/internal';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import DocSidebarItems from '@theme/DocSidebarItems';
-import type { Props } from '@theme/DocSidebarItem/Category';
-import { Button, Icon } from '@utrecht/component-library-react/dist/css-module';
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import type { Props } from '@theme/DocSidebarItem/Category';
+import DocSidebarItems from '@theme/DocSidebarItems';
+import { Button, Icon } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { type ComponentProps, useEffect, useMemo } from 'react';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself

@@ -1,9 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-
-import type { Props } from '@theme/BlogLayout';
 import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
+import type { Props } from '@theme/BlogLayout';
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import React from 'react';
 
 interface BlogLayoutProps extends Props {
   breadcrumbs: { label: string; href?: string; rel?: string }[];

@@ -1,10 +1,10 @@
-import React, { type ComponentProps } from 'react';
-import clsx from 'clsx';
+import { translate } from '@docusaurus/Translate';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
-import { translate } from '@docusaurus/Translate';
-import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
 import type { Props } from '@theme/Navbar/Layout';
+import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
+import clsx from 'clsx';
+import React, { type ComponentProps } from 'react';
 
 function NavbarBackdrop(props: ComponentProps<'div'>) {
   return <div role="presentation" {...props} className={clsx('navbar-sidebar__backdrop', props.className)} />;

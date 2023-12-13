@@ -1,6 +1,6 @@
-import React from 'react';
-import clsx from 'clsx';
 import type { Props } from '@theme/Footer/Layout';
+import clsx from 'clsx';
+import React from 'react';
 import styles from './Layout.module.css';
 
 export default function FooterLayout({ style, links, logo, copyright }: Props): JSX.Element {

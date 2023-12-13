@@ -1,13 +1,12 @@
 import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
 import * as fs from 'fs';
 import * as path from 'path';
-
 import {
   componentPage,
+  getBacklogLink,
   getImplementationsSection,
   getImplementationTitle,
   implementationDetails,
-  getBacklogLink,
 } from './component-page';
 
 const DOCS_PATH = '../../docs/componenten';

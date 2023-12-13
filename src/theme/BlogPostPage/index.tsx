@@ -1,14 +1,14 @@
-import React, { type ReactNode } from 'react';
-import clsx from 'clsx';
+import type { BlogSidebar } from '@docusaurus/plugin-content-blog';
 import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
 import { BlogPostProvider, useBlogPost } from '@docusaurus/theme-common/internal';
-import BlogLayout from '../BlogLayout';
 import BlogPostItem from '@theme/BlogPostItem';
-import BlogPostPaginator from '@theme/BlogPostPaginator';
-import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
-import TOC from '@theme/TOC';
 import type { Props } from '@theme/BlogPostPage';
-import type { BlogSidebar } from '@docusaurus/plugin-content-blog';
+import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
+import BlogPostPaginator from '@theme/BlogPostPaginator';
+import TOC from '@theme/TOC';
+import clsx from 'clsx';
+import React, { type ReactNode } from 'react';
+import BlogLayout from '../BlogLayout';
 
 function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; children: ReactNode }): JSX.Element {
   const { metadata, toc } = useBlogPost();

@@ -1,7 +1,7 @@
-import React from 'react';
-import clsx from 'clsx';
 import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
+import clsx from 'clsx';
+import React from 'react';
 import styles from './Layout.module.css';
 
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): JSX.Element {

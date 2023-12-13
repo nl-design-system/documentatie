@@ -1,9 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 import { useColorMode } from '@docusaurus/theme-common';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 import type { Props } from '@theme/ThemedImage';
-
+import clsx from 'clsx';
+import React from 'react';
 import styles from './styles.module.css';
 
 export default function ThemedImage(props: Props): JSX.Element {

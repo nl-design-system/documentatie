@@ -1,10 +1,10 @@
-import React from 'react';
-import clsx from 'clsx';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useDoc } from '@docusaurus/theme-common/internal';
+import type { Props } from '@theme/DocItem/Content';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
-import type { Props } from '@theme/DocItem/Content';
+import clsx from 'clsx';
+import React from 'react';
 
 /**
  Title can be declared inside md content or declared through

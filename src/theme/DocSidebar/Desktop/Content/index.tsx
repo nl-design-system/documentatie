@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
+import { translate } from '@docusaurus/Translate';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useAnnouncementBar, useScrollPosition } from '@docusaurus/theme-common/internal';
-import { translate } from '@docusaurus/Translate';
-import DocSidebarItems from '@theme/DocSidebarItems';
 import type { Props } from '@theme/DocSidebar/Desktop/Content';
-
+import DocSidebarItems from '@theme/DocSidebarItems';
+import clsx from 'clsx';
+import React, { useState } from 'react';
 import styles from './styles.module.css';
 
 function useShowAnnouncementBar() {

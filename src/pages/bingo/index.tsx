@@ -1,4 +1,7 @@
-import React from 'react';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { Bingo } from '@site/src/components/Bingo';
+import Layout from '@theme/Layout';
 import {
   Heading2,
   PageContent,
@@ -7,10 +10,7 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Link from '@docusaurus/Link';
-import { Bingo } from '@site/src/components/Bingo';
+import React from 'react';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();

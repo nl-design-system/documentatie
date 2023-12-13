@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import style from './HomepageHero.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Heading1, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { PropsWithChildren } from 'react';
+import style from './HomepageHero.module.css';
 
 interface HomepageHeroProps {
   title: string;

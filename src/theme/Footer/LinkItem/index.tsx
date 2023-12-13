@@ -1,9 +1,8 @@
-import React from 'react';
-
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import type { Props } from '@theme/Footer/LinkItem';
 import clsx from 'clsx';
+import React from 'react';
 
 export default function FooterLinkItem({ item }: Props): JSX.Element {
   const { to, href, label, prependBaseUrlToHref, ...props } = item;
