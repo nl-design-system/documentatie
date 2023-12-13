@@ -3,21 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "license": "EUPL-1.2",
-  "workspaces": [
-    "./docs/",
-    "./packages/*"
-  ],
+  "packageManager": "pnpm@8.12.1",
   "engines": {
-    "node": "^20"
+    "node": "^20",
+    "pnpm": "^8"
   },
   "scripts": {
     "docusaurus": "docusaurus",
-    "prestart": "npm run write-component-pages",
+    "prestart": "pnpm run write-component-pages",
     "start": "docusaurus start",
-    "prebuild": "npm run write-component-pages",
-    "build": "npm run build:workspaces && npm run build:docusaurus && npm run build:optimize-view-source",
+    "prebuild": "pnpm run write-component-pages",
+    "build": "pnpm run build:workspaces && pnpm run build:docusaurus && pnpm run build:optimize-view-source",
     "build:docusaurus": "docusaurus build",
-    "build:workspaces": "npm run build --workspaces --if-present",
+    "build:workspaces": "lerna run build",
     "build:optimize-view-source": "cd build && npx prettier --config ../.prettierrc.build.json --no-editorconfig --write .",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -28,7 +26,6 @@
     "write-component-pages": "ts-node --project ./tsconfig.commonjs.json src/_generate-component-pages",
     "typecheck": "tsc",
     "lint": "npm-run-all --continue-on-error lint:**",
-    "lint:package-lock": "npm ls",
     "lint:prettier": "prettier --check .",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
     "lint-fix:prettier": "prettier --write .",
@@ -62,7 +59,11 @@
     "@fontsource/open-sans": "^5.0.18",
     "@fontsource/source-sans-pro": "5.0.8",
     "@lerna-lite/cli": "3.1.0",
+    "@lerna-lite/publish": "3.1.0",
+    "@lerna-lite/run": "3.1.0",
+    "@lerna-lite/version": "3.1.0",
     "@mdx-js/react": "3.0.0",
+    "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.103",
     "@nl-design-system/component-index": "1.0.0-alpha.16",
     "@types/node": "20.10.4",
