@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import React from 'react';
 import ReactPlayer from 'react-player';
-import clsx from 'clsx';
 import style from './VideoPlayer.module.css';
 
 export const VideoPlayer = ({ videoId, className, ...restProps }) => (

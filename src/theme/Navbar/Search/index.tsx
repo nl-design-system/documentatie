@@ -1,6 +1,6 @@
-import React from 'react';
-import clsx from 'clsx';
 import type { Props } from '@theme/Navbar/Search';
+import clsx from 'clsx';
+import React from 'react';
 import styles from './Search.module.css';
 
 export default function NavbarSearch({ children, className, ...props }: Props): JSX.Element {

@@ -1,12 +1,12 @@
-import React from 'react';
-import { BlogPostProvider } from '@docusaurus/theme-common/internal';
-import type { Props } from '@theme/BlogPostItems';
-import { Card, CardContent, CardGroup } from '@site/src/components/CardGroup';
-import { BadgeList, DataBadge, Heading2, Icon } from '@utrecht/component-library-react';
-import style from './styles.module.css';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import { BlogPostProvider } from '@docusaurus/theme-common/internal';
+import { Card, CardContent, CardGroup } from '@site/src/components/CardGroup';
 import { IconCalendar, IconUser } from '@tabler/icons-react';
+import type { Props } from '@theme/BlogPostItems';
+import { BadgeList, DataBadge, Heading2, Icon } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import React from 'react';
+import style from './styles.module.css';
 
 export default function BlogPostItems({ items }: Props): JSX.Element {
   return (

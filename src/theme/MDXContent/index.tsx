@@ -1,11 +1,10 @@
-import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
+import Admonition from '@theme/Admonition';
+import MDXDetails from '@theme/MDXComponents/Details';
 import MDXHead from '@theme/MDXComponents/Head';
 import MDXPre from '@theme/MDXComponents/Pre';
-import MDXDetails from '@theme/MDXComponents/Details';
-import Admonition from '@theme/Admonition';
-import Mermaid from '@theme/Mermaid';
 import type { Props } from '@theme/MDXContent';
+import Mermaid from '@theme/Mermaid';
 import {
   Code,
   Emphasis,
@@ -20,6 +19,7 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
+import React from 'react';
 
 export default function MDXContent({ children }: Props): JSX.Element {
   return (

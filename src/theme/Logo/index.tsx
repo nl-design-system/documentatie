@@ -1,12 +1,12 @@
-import React from 'react';
 import Link from '@docusaurus/Link';
+import { type NavbarLogo, useThemeConfig } from '@docusaurus/theme-common';
+import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useThemeConfig, type NavbarLogo } from '@docusaurus/theme-common';
-import ThemedImage from '@theme/ThemedImage';
 import type { Props } from '@theme/Logo';
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
+import React from 'react';
 
 function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt: string; imageClassName?: string }) {
   const sources = {

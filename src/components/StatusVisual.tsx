@@ -1,8 +1,7 @@
-import React from 'react';
 import clsx from 'clsx';
-
-import style from './StatusVisual.module.css';
+import React from 'react';
 import { ArrowDown } from './Icons';
+import style from './StatusVisual.module.css';
 
 export const StatusVisual = () => {
   return (

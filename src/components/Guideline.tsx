@@ -1,8 +1,8 @@
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import { IconMoodSad, IconMoodHappy } from '@tabler/icons-react';
-import style from './Guideline.module.css';
-import clsx from 'clsx';
+import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import style from './Guideline.module.css';
 
 interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;

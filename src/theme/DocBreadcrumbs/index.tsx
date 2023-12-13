@@ -1,7 +1,7 @@
-import React from 'react';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
 import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
+import React from 'react';
 
 export default function DocBreadcrumbs(): JSX.Element | null {
   const sidebarBreadcrumbs =

@@ -1,8 +1,8 @@
-import React from 'react';
-import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import { COMPONENT_STATES } from '@nl-design-system/component-index';
-import style from './EstafetteBadge.module.css';
+import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
+import React from 'react';
+import style from './EstafetteBadge.module.css';
 
 interface EstafetteBadgeProps {
   stateModifier: 'help-wanted' | 'community' | 'candidate' | 'hall-of-fame';

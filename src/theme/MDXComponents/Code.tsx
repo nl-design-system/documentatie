@@ -1,7 +1,7 @@
-import type { ComponentProps } from 'react';
-import React, { isValidElement } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import type { Props } from '@theme/MDXComponents/Code';
+import type { ComponentProps } from 'react';
+import React, { isValidElement } from 'react';
 
 export default function MDXCode(props: Props): JSX.Element {
   const inlineElements: (string | undefined)[] = [

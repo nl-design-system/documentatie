@@ -1,6 +1,6 @@
-import React, { isValidElement } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import type { Props } from '@theme/MDXComponents/Pre';
+import React, { isValidElement } from 'react';
 
 export default function MDXPre(props: Props): JSX.Element {
   return (

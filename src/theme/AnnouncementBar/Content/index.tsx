@@ -1,7 +1,7 @@
-import React from 'react';
-import clsx from 'clsx';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import type { Props } from '@theme/AnnouncementBar/Content';
+import clsx from 'clsx';
+import React from 'react';
 import styles from './styles.module.css';
 
 export default function AnnouncementBarContent(props: Props): JSX.Element | null {
@@ -12,7 +12,7 @@ export default function AnnouncementBarContent(props: Props): JSX.Element | null
       {...props}
       className={clsx(styles.content, props.className)}
       // Developer provided the HTML, so assume it's safe.
-      // eslint-disable-next-line react/no-danger
+
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );

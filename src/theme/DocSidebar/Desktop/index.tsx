@@ -1,13 +1,12 @@
-import React, { useId } from 'react';
-import clsx from 'clsx';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import { useHideableNavbar } from '@docusaurus/theme-common/internal';
-import Content from '@theme/DocSidebar/Desktop/Content';
-import type { Props } from '@theme/DocSidebar/Desktop';
-
-import styles from './styles.module.css';
-import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { IconArrowBarToLeft, IconArrowBarToRight } from '@tabler/icons-react';
+import type { Props } from '@theme/DocSidebar/Desktop';
+import Content from '@theme/DocSidebar/Desktop/Content';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { useId } from 'react';
+import styles from './styles.module.css';
 
 function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden }: Props) {
   const {

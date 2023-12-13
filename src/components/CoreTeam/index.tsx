@@ -1,14 +1,14 @@
-import React from 'react';
-import clsx from 'clsx';
-import style from './CoreTeam.module.css';
-import { Card, CardContent, CardGroup, CardIllustration } from '../CardGroup';
 import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React from 'react';
+import style from './CoreTeam.module.css';
+import Hidde from './Hidde';
+import Jeffrey from './Jeffrey';
 import Peter from './Peter';
+import Rian from './Rian';
 import Robbert from './Robbert';
 import Yolijn from './Yolijn';
-import Jeffrey from './Jeffrey';
-import Hidde from './Hidde';
-import Rian from './Rian';
+import { Card, CardContent, CardGroup, CardIllustration } from '../CardGroup';
 
 const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Rian];
 

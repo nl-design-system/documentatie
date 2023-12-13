@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import style from './DSWSession.module.css';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
+import React, { PropsWithChildren } from 'react';
+import style from './DSWSession.module.css';
 import { VideoPlayer } from './VideoPlayer';
 
 interface DSWSessionProps {

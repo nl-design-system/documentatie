@@ -1,14 +1,14 @@
-import React, { ReactNode } from 'react';
-import style from './Canvas.module.css';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/parser-babel';
 import prettierHTML from 'prettier/parser-html';
 import prettier from 'prettier/standalone';
+import React, { ReactNode } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { PrismStyle } from './PrismStyle';
-import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { v4 as uuid } from 'uuid';
+import style from './Canvas.module.css';
+import { PrismStyle } from './PrismStyle';
 
 interface CanvasProps {
   defaultCollapsed?: boolean;

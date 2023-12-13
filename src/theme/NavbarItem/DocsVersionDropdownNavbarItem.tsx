@@ -1,13 +1,13 @@
-import React from 'react';
-import { useVersions, useActiveDocContext } from '@docusaurus/plugin-content-docs/client';
+import { translate } from '@docusaurus/Translate';
+import { useActiveDocContext, useVersions } from '@docusaurus/plugin-content-docs/client';
+import type { GlobalVersion } from '@docusaurus/plugin-content-docs/client';
+import { useLocation } from '@docusaurus/router';
 import { useDocsPreferredVersion } from '@docusaurus/theme-common';
 import { useDocsVersionCandidates } from '@docusaurus/theme-common/internal';
-import { translate } from '@docusaurus/Translate';
-import { useLocation } from '@docusaurus/router';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
-import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { Props } from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
-import type { GlobalVersion } from '@docusaurus/plugin-content-docs/client';
+import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
+import React from 'react';
 
 const getVersionMainDoc = (version: GlobalVersion) => version.docs.find((doc) => doc.id === version.mainDocId)!;
 

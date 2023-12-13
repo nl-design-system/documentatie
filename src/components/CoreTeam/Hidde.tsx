@@ -1,7 +1,7 @@
-import React from 'react';
-import Avatar from './avatars/kernteam_hidde.svg';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import React from 'react';
 import { TeamMember } from './TeamMember';
+import Avatar from './avatars/kernteam_hidde.svg';
 
 const Hidde: TeamMember = {
   Avatar,

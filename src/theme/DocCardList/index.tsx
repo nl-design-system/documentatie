@@ -1,8 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import { useCurrentSidebarCategory, filterDocCardListItems } from '@docusaurus/theme-common';
+import { filterDocCardListItems, useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import DocCard from '@theme/DocCard';
 import type { Props } from '@theme/DocCardList';
+import clsx from 'clsx';
+import React from 'react';
 
 function DocCardListForCurrentSidebarCategory({ className }: Props) {
   const category = useCurrentSidebarCategory();

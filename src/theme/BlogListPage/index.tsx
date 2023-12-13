@@ -1,14 +1,13 @@
-import React from 'react';
-import clsx from 'clsx';
-
+import { HtmlClassNameProvider, PageMetadata, ThemeClassNames } from '@docusaurus/theme-common';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { PageMetadata, HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
-import BlogLayout from '../BlogLayout';
-import BlogListPaginator from '@theme/BlogListPaginator';
-import SearchMetadata from '@theme/SearchMetadata';
 import type { Props } from '@theme/BlogListPage';
+import BlogListPaginator from '@theme/BlogListPaginator';
 import BlogPostItems from '@theme/BlogPostItems';
+import SearchMetadata from '@theme/SearchMetadata';
 import { Heading1 } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import React from 'react';
+import BlogLayout from '../BlogLayout';
 
 function BlogListPageMetadata(props: Props): JSX.Element {
   const { metadata } = props;

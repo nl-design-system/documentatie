@@ -1,13 +1,12 @@
-import React, { PropsWithChildren } from 'react';
-import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
+import { ErrorCauseBoundary, useThemeConfig } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import NavbarLogo from '@theme/Navbar/Logo';
+import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
+import NavbarSearch from '@theme/Navbar/Search';
 import NavbarItem, { type Props as NavbarItemConfig } from '@theme/NavbarItem';
 import SearchBar from '@theme/SearchBar';
-import NavbarLogo from '@theme/Navbar/Logo';
-import NavbarSearch from '@theme/Navbar/Search';
-import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
-
 import clsx from 'clsx';
+import React, { PropsWithChildren } from 'react';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved

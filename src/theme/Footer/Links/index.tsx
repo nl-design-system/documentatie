@@ -1,9 +1,8 @@
-import React from 'react';
-
 import { isMultiColumnFooterLinks } from '@docusaurus/theme-common';
+import type { Props } from '@theme/Footer/Links';
 import FooterLinksMultiColumn from '@theme/Footer/Links/MultiColumn';
 import FooterLinksSimple from '@theme/Footer/Links/Simple';
-import type { Props } from '@theme/Footer/Links';
+import React from 'react';
 
 export default function FooterLinks({ links }: Props): JSX.Element {
   return isMultiColumnFooterLinks(links) ? (
