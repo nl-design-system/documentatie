@@ -57,7 +57,7 @@
 </ul>
 <h2 id="relaties-versus-afstanden" class="utrecht-heading-2">Relaties versus afstanden</h2>
 <p>Tijdens de workshop werden verschillende relaties tussen componenten bedacht: “vrienden” staan dicht bij elkaar, “besties” heel dicht en “kennissen” nemen wat meer afstand. Elk van deze relaties krijgt een bepaalde waarde, bijvoorbeeld:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-yaml">onbekenden: 32px
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-yaml">onbekenden: 32px
 kennissen: 24px
 vrienden: 16px
 besties: 8px
@@ -334,14 +334,14 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content:encoded>
 <p>Een design token is een kleine eigenschap van je visueel ontwerp, zoals een kleur of een lettertype. Elke huisstijl bestaat uit kleurenpalet en 1 of meerdere lettertypes: dit noemen wij ‘brand identity design tokens’, maar we korten het vaak af als ‘brand tokens‘. Deze design tokens zijn er om de herkenbaarheid van je websites te waarborgen. Meestal is het de bedoeling dat geen kleuren of lettertypes worden gebruikt die niet een officiële design token zijn.</p>
 <p>Meestal wordt CSS geschreven op een manier dat deze kleuren en lettertypes in elke uithoek van de code voorkomen, zodat elke component aan de huisstijl voldoet. Uit onze rondvraag bleek dat al die huisstijl-specifieke code een belangrijke belemmering is om samen te werken aan code van een andere organisatie. Daarom vervangen onze teams al deze kleuren in hun code door CSS-variabelen van NL Design System. De naam ‘variabele’ zegt het al: de kleur of lettertype wordt afhankelijk van de website waarin je de component gebruikt.</p>
 <p>Front-end developers zullen zich inmiddels afvragen: hoe ziet dat er uit in de code? Hier bijvoorbeeld 2 ‘brand tokens’ voor Rijkshuisstijl, uit de bovenste laag:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">:root {
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">:root {
   --rijkshuisstijl-color-hemelblauw-basis: hsl(203deg 100% 39%);
 
   --rijkshuisstijl-typography-sans-serif-font-family: "Rijksoverheid SansWebText";
 }
 </code></code></pre>
 <p>Om de code van componenten vrij te houden van huisstijl (en zo hergebruik mogelijk te maken) moet de code natuurlijk ook geen gebruik maken van de CSS-variabele <code class="utrecht-code">var(--rijkshuisstijl-color-hemelblauw-basis)</code>, net zo min als de kleurcode <code class="utrecht-code">#007bc7</code> herbruikbaar is voor anderen. In plaats daarvan gebruiken we CSS variabelen van NL Design System in de onderste laag, de CSs van componenten:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">.nl-paragraph {
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">.nl-paragraph {
   font-family: var(--nl-document-font-family);
 }
 
@@ -350,7 +350,7 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content:encoded>
 }
 </code></code></pre>
 <p>Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de <em class="utrecht-emphasis utrecht-emphasis--stressed">brand identity design token</em> worden gekoppeld aan <em class="utrecht-emphasis utrecht-emphasis--stressed">component design tokens</em>:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">:root {
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">:root {
   --nl-document-font-family: var(--rijkshuisstijl-typography-sans-serif-font-family);
 
   --nl-action-primary-color: var(--rijkshuisstijl-color-hemelblauw-basis);
@@ -361,11 +361,11 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content:encoded>
 <p>Teams die werken aan templates in een CMS en teams die werken aan code in een framework naar keuze (zoals React, Vue.js, Angular, Stencil of Svelte) hebben iets gemeen: ze kunnen allemaal gebruik maken van de NL Design System design tokens en CSS-variabelen. Zelfs als teams binnen je organisatie werken met verschillende frameworks, kunnen ze al beginnen om centraal de design tokens te beheren.</p>
 <p>Alle teams hebben nóg iets gemeen: de CSS van componenten kan op alle soorten HTML toegepast worden met de <a href="http://getbem.com/" class="utrecht-link utrecht-link--html-a">BEM class names</a> van de NL Design System-architectuur, waardoor hergebruik in uiteenlopende technieken mogelijk wordt.</p>
 <p>Een simpel voorbeeld is een button in een HTML template van bijvoorbeeld een CMS of een Angular template:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-html">&lt;button class="nl-button nl-button--primary-action"&gt;OK&lt;/button&gt;
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-html">&lt;button class="nl-button nl-button--primary-action"&gt;OK&lt;/button&gt;
 </code></code></pre>
 <p>Het essentiele voordeel van BEM class names is dat elk onderdeel van de CSS een unieke naam heeft waar je gemakkelijk naar kan verwijzen, iets dat niet vanzelfsprekend is voor een complexe CSS selector zoals <code class="utrecht-code">form button:hover</code>. Dat betekent dat je de CSS zelfs kan gebruiken in situaties waarin je niet de class name van NL Design System op een HTML element kan of wilt plaatsen.</p>
 <p>Met SCSS kun je de BEM class name van NL Design System bijvoorbeeld toepassen op de HTML van je huidige CMS templates, waardoor je oude system al gedeeltelijk naar NL Design System kan migreren:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-css">@import "./nl-design-system";
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">@import "./nl-design-system";
 
 .content p {
   @extend .nl-paragraph;
@@ -379,12 +379,12 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content:encoded>
 </code></code></pre>
 <p>Veel React projecten maken gebruik van <em class="utrecht-emphasis utrecht-emphasis--stressed">styled-components</em>: dat is een alternatief voor CSS-bestanden. Zulke projecten zonder CSS hebben niet een mogelijkheid om samen te werken aan het visueel ontwerp met teams in de organisatie die een ander framework gebruiken zoals Vue.js.</p>
 <p>De BEM class names van NL Design System maken het mogelijk dat beide teams samenwerken aan de CSS. Hier volgt een voorbeeld van BEM class names in React door gebruik te maken van CSS-modules:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-js">import styles from "./nl-design-system.css";
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-js">import styles from "./nl-design-system.css";
 
 const Button = () =&gt; &lt;button className={styles["nl-button"]}&gt;OK&lt;/button&gt;;
 </code></code></pre>
 <p>Dezelfde CSS kan met CSS-modules in een Vue.js template worden gebruikt:</p>
-<pre tabindex="0" class="codeBlockStandalone_MEMb thin-scrollbar codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_e6Vv"><code class="utrecht-code language-html">&lt;template&gt;
+<pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color:var(--nlds-code-block-color);--prism-background-color:var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-html">&lt;template&gt;
   &lt;button :class="$style['nl-button']"&gt;OK&lt;/button&gt;
 &lt;/template&gt;
 </code></code></pre>
