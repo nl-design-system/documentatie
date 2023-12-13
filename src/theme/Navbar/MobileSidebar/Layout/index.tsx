@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './Layout.module.css';
 
-export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): JSX.Element {
+export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): React.Element {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
   return (
     <div className={clsx('navbar-sidebar', styles['navbar-sidebar'])}>

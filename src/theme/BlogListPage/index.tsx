@@ -9,7 +9,7 @@ import clsx from 'clsx';
 import React from 'react';
 import BlogLayout from '../BlogLayout';
 
-function BlogListPageMetadata(props: Props): JSX.Element {
+function BlogListPageMetadata(props: Props): React.Element {
   const { metadata } = props;
   const {
     siteConfig: { title: siteTitle },
@@ -25,7 +25,7 @@ function BlogListPageMetadata(props: Props): JSX.Element {
   );
 }
 
-function BlogListPageContent(props: Props): JSX.Element {
+function BlogListPageContent(props: Props): React.Element {
   const { metadata, items, sidebar } = props;
   return (
     <BlogLayout
@@ -43,7 +43,7 @@ function BlogListPageContent(props: Props): JSX.Element {
   );
 }
 
-export default function BlogListPage(props: Props): JSX.Element {
+export default function BlogListPage(props: Props): React.Element {
   return (
     <HtmlClassNameProvider className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogListPage)}>
       <BlogListPageMetadata {...props} />

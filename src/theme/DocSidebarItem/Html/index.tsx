@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function DocSidebarItemHtml({ item, level, index }: Props): JSX.Element {
+export default function DocSidebarItemHtml({ item, level, index }: Props): React.Element {
   const { value, defaultStyle, className } = item;
   return (
     <li

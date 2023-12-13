@@ -5,7 +5,7 @@ import AnnouncementBarContent from '@theme/AnnouncementBar/Content';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function AnnouncementBar(): JSX.Element | null {
+export default function AnnouncementBar(): React.Element | null {
   const { announcementBar } = useThemeConfig();
   const { isActive, close } = useAnnouncementBar();
   if (!isActive) {

@@ -6,13 +6,13 @@ import React, { type ReactElement } from 'react';
 // with Head/Helmet) we need to unwrap those elements.
 function unwrapMDXElement(element: ReactElement<{ mdxType?: string; originalType?: string } | undefined>) {
   if (element.props?.mdxType && element.props.originalType) {
-    const { mdxType, originalType, ...newProps } = element.props;
+    const { ...newProps } = element.props;
     return React.createElement(element.props.originalType, newProps);
   }
   return element;
 }
 
-export default function MDXHead(props: Props): JSX.Element {
+export default function MDXHead(props: Props): React.Element {
   const unwrappedChildren = React.Children.map(props.children, (child) =>
     React.isValidElement(child) ? unwrapMDXElement(child) : child,
   );

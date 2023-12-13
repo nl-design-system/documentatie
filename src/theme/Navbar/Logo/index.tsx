@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './Logo.module.css';
 
-export default function NavbarLogo(): JSX.Element {
+export default function NavbarLogo(): React.Element {
   return (
     <Logo
       className={clsx(

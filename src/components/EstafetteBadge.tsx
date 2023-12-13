@@ -5,7 +5,7 @@ import React from 'react';
 import style from './EstafetteBadge.module.css';
 
 interface EstafetteBadgeProps {
-  stateModifier: 'help-wanted' | 'community' | 'candidate' | 'hall-of-fame';
+  stateModifier: string | 'help-wanted' | 'community' | 'candidate' | 'hall-of-fame';
   state: COMPONENT_STATES;
 }
 

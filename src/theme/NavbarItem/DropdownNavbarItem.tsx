@@ -23,7 +23,13 @@ function containsActiveItems(items: readonly LinkLikeNavbarItemProps[], localPat
   return items.some((item) => isItemActive(item, localPathname));
 }
 
-function DropdownNavbarItemDesktop({ items, position, className, onClick, ...props }: DesktopOrMobileNavBarItemProps) {
+function DropdownNavbarItemDesktop({
+  items,
+  position,
+  className,
+  onClick: _onClick,
+  ...props
+}: DesktopOrMobileNavBarItemProps) {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -83,7 +89,7 @@ function DropdownNavbarItemDesktop({ items, position, className, onClick, ...pro
 function DropdownNavbarItemMobile({
   items,
   className,
-  position, // Need to destructure position from props so that it doesn't get passed on.
+  position: _, // Need to destructure position from props so that it doesn't get passed on.
   onClick,
   ...props
 }: DesktopOrMobileNavBarItemProps) {
@@ -134,7 +140,7 @@ function DropdownNavbarItemMobile({
   );
 }
 
-export default function DropdownNavbarItem({ mobile = false, ...props }: Props): JSX.Element {
+export default function DropdownNavbarItem({ mobile = false, ...props }: Props): React.Element {
   const Comp = mobile ? DropdownNavbarItemMobile : DropdownNavbarItemDesktop;
   return <Comp {...props} />;
 }

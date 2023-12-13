@@ -16,7 +16,7 @@ export default function NavbarNavLink({
   isDropdownLink,
   prependBaseUrlToHref,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   // TODO all this seems hacky
   // {to: 'version'} should probably be forbidden, in favor of {to: '/version'}
   const toUrl = useBaseUrl(to);

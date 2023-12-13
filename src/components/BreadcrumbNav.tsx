@@ -21,7 +21,7 @@ export interface BreadcrumbNavProps {
   }[];
 }
 
-export const BreadcrumbNav = ({ breadcrumbs, ...restProps }) => {
+export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps) => {
   const homeHref = useBaseUrl('/');
   const links = [{ href: homeHref, label: 'Home', rel: 'home' }, ...breadcrumbs];
   const { pathname } = useLocation();

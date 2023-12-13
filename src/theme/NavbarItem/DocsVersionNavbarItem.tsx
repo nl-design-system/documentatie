@@ -11,7 +11,7 @@ export default function DocsVersionNavbarItem({
   to: staticTo,
   docsPluginId,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const version = useDocsVersionCandidates(docsPluginId)[0];
   const label = staticLabel ?? version.label;
   const path = staticTo ?? getVersionMainDoc(version).path;

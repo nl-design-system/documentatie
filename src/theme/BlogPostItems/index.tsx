@@ -8,7 +8,7 @@ import clsx from 'clsx';
 import React from 'react';
 import style from './styles.module.css';
 
-export default function BlogPostItems({ items }: Props): JSX.Element {
+export default function BlogPostItems({ items }: Props): React.Element {
   return (
     <CardGroup appearance="large">
       {items.map(({ content }) => {

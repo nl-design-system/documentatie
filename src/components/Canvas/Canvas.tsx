@@ -27,10 +27,13 @@ const toggleExpanded = ({ target }) => {
 };
 
 export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language }: CanvasProps) => {
+  let reactNode;
   if (typeof children === 'function') {
-    children = children();
+    reactNode = children();
+  } else {
+    reactNode = children;
   }
-  const formatted = prettier.format(ReactDOMServer.renderToStaticMarkup(code || children), {
+  const formatted = prettier.format(ReactDOMServer.renderToStaticMarkup(code || reactNode), {
     parser: 'html',
     plugins: [prettierBabel, prettierHTML],
     semi: false,

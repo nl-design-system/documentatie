@@ -22,7 +22,7 @@ function useShowAnnouncementBar() {
   return isActive && showAnnouncementBar;
 }
 
-export default function DocSidebarDesktopContent({ path, sidebar, className }: Props): JSX.Element {
+export default function DocSidebarDesktopContent({ path, sidebar, className }: Props): React.Element {
   const showAnnouncementBar = useShowAnnouncementBar();
 
   return (

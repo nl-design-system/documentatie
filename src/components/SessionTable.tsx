@@ -1,4 +1,4 @@
-import { IconCalendarCheck, IconUser } from '@tabler/icons-react';
+import { IconUser } from '@tabler/icons-react';
 import {
   Icon,
   Link,
@@ -11,7 +11,7 @@ import {
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLTableAttributes } from 'react';
 import style from './SessionTable.module.css';
 
 interface Speaker {
@@ -28,11 +28,12 @@ interface Session {
   language: { abbr: string; description: string };
 }
 
-interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
+interface SessionTableProps extends HTMLTableAttributes<HTMLTableElement> {
+  lang?: string;
   sessions: Session[];
 }
 
-const Speaker = ({ name, organisation }: Speaker) => (
+const SpeakerData = ({ name, organisation }: Speaker) => (
   <Paragraph className={clsx(style['session-table__speaker'], style['speaker'])}>
     <Icon role="presentational" className={style['speaker__icon']}>
       <IconUser />
@@ -56,8 +57,8 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
           </TableRow>
         </TableHeader>
         <TableBody>
-          {sessions.map(({ isoDateTime, speakers, subject, singupLink, icalLink, language }) => (
-            <TableRow className={clsx(style['session-table__row'])}>
+          {sessions.map(({ isoDateTime, speakers, subject, singupLink, language }, index) => (
+            <TableRow className={clsx(style['session-table__row'])} key={index}>
               <TableCell className={clsx(style['session-table__time'])}>
                 <Paragraph>
                   <time dateTime={isoDateTime}>
@@ -72,8 +73,8 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
               </TableCell>
               <TableCell>
                 <div className={clsx(style['session-table__speakers'])}>
-                  {speakers.map((speaker) => (
-                    <Speaker {...speaker} />
+                  {speakers.map((speaker, index) => (
+                    <SpeakerData key={index} {...speaker} />
                   ))}
                 </div>
               </TableCell>

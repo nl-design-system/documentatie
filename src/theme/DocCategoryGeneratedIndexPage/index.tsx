@@ -10,7 +10,7 @@ import Heading from '@theme/Heading';
 import React from 'react';
 import styles from './styles.module.css';
 
-function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): JSX.Element {
+function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): React.Element {
   return (
     <PageMetadata
       title={categoryGeneratedIndex.title}
@@ -22,7 +22,7 @@ function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props
   );
 }
 
-function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): JSX.Element {
+function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): React.Element {
   const category = useCurrentSidebarCategory();
   return (
     <div className={styles.generatedIndexPage}>
@@ -48,7 +48,7 @@ function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props)
   );
 }
 
-export default function DocCategoryGeneratedIndexPage(props: Props): JSX.Element {
+export default function DocCategoryGeneratedIndexPage(props: Props): React.Element {
   return (
     <>
       <DocCategoryGeneratedIndexPageMetadata {...props} />

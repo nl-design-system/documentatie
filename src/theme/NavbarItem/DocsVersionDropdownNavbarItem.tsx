@@ -18,7 +18,7 @@ export default function DocsVersionDropdownNavbarItem({
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const { search, hash } = useLocation();
   const activeDocContext = useActiveDocContext(docsPluginId);
   const versions = useVersions(docsPluginId);

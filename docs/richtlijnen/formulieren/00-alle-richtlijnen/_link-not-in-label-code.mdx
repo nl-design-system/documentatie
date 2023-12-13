@@ -1,4 +1,4 @@
-<!-- @license CC0-1.0 -->
+{/* @license CC0-1.0 */}
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
@@ -26,7 +26,7 @@ import { Guideline } from "@site/src/components/Guideline";
           "Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees onze "
         }
         <a href="#" target="_blank">
-          privacybeleid (opent in een nieuw venster)
+          {"privacybeleid (opent in een nieuw venster)"}
         </a>
         {"."}
       </p>
@@ -38,11 +38,15 @@ import { Guideline } from "@site/src/components/Guideline";
 
 <Guideline appearance="dont" title="Link in het label plaatsen.">
   <Canvas language="html">
-    <input id="privacybeleid" type="checkbox" name="privacybeleid" />
-    <label for="privacybeleid">
-      {" "}
-      Ik ga akkoord met het <a href="#">privacybeleid</a>{" "}
-    </label>
+    {() => (
+      <>
+        <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
+        <label for="privacybeleid">
+          {"Ik ga akkoord met het "}
+          <a href="#">privacybeleid</a>
+        </label>
+      </>
+    )}
   </Canvas>
 </Guideline>
 

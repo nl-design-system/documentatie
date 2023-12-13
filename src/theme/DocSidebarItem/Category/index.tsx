@@ -23,7 +23,7 @@ function useAutoExpandActiveCategory({
 }: {
   isActive: boolean;
   collapsed: boolean;
-  updateCollapsed: (b: boolean) => void;
+  updateCollapsed: (_: boolean) => void;
 }) {
   const wasActive = usePrevious(isActive);
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function DocSidebarItemCategory({
   level,
   index,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const { items, label, collapsible, className, href } = item;
   const isMainCategory = className === 'sidebar__main-category';
   const {
@@ -124,7 +124,13 @@ export default function DocSidebarItemCategory({
   };
   useAutoExpandActiveCategory({ isActive, collapsed, updateCollapsed });
   useEffect(() => {
-    if (collapsible && expandedItem != null && expandedItem !== index && autoCollapseCategories) {
+    if (
+      collapsible &&
+      expandedItem !== null &&
+      typeof expandedItem !== 'undefined' &&
+      expandedItem !== index &&
+      autoCollapseCategories
+    ) {
       setCollapsed(true);
     }
   }, [collapsible, expandedItem, index, setCollapsed, autoCollapseCategories]);

@@ -9,7 +9,7 @@ function useNavbarItems() {
 }
 
 // The primary menu displays the navbar items
-export default function NavbarMobilePrimaryMenu(): JSX.Element {
+export default function NavbarMobilePrimaryMenu(): React.Element {
   const mobileSidebar = useNavbarMobileSidebar();
 
   // TODO how can the order be defined for mobile?

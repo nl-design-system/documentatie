@@ -18,7 +18,7 @@ import {
   Textbox,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { useId } from 'react';
+import React, { PropsWithChildren, ReactNode, useId } from 'react';
 import { useForm } from 'react-hook-form';
 import style from './GraffitiForm.module.css';
 
@@ -38,7 +38,12 @@ interface VoorbeeldMetFoutenProps {
   postalCodePattern?: boolean;
 }
 
-const RadioGroup = ({ children, description, label }) => {
+interface RadioGroupProps {
+  description?: ReactNode;
+  label?: ReactNode;
+}
+
+const RadioGroup = ({ children, description, label }: PropsWithChildren<RadioGroupProps>) => {
   const descriptionId = description ? useId() : null;
   return (
     <Fieldset role="radiogroup" aria-describedby={description ? descriptionId : undefined}>
@@ -49,14 +54,22 @@ const RadioGroup = ({ children, description, label }) => {
   );
 };
 
-const RadioOption = ({ children, description }) => (
+interface RadioOptionProps {
+  description?: ReactNode;
+}
+
+const RadioOption = ({ children, description }: PropsWithChildren<RadioOptionProps>) => (
   <FormField type="radio">
     <p className="utrecht-form-field__label utrecht-form-field__label--radio">{children}</p>
     {description ? <div className="utrecht-form-field__description">{description}</div> : null}
   </FormField>
 );
 
-const CheckboxOption = ({ children, description }) => (
+interface CheckboxOptionProps {
+  description?: ReactNode;
+}
+
+const CheckboxOption = ({ children, description }: PropsWithChildren<CheckboxOptionProps>) => (
   <FormField type="checkbox">
     <p className="utrecht-form-field__label utrecht-form-field__label--checkbox">{children}</p>
     {description ? <div className="utrecht-form-field__description">{description}</div> : null}

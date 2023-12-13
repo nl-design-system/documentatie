@@ -7,9 +7,6 @@ function transformImgClassName(className?: string): string {
   return clsx(className, styles.img);
 }
 
-export default function MDXImg(props: Props): JSX.Element {
-  return (
-    // eslint-disable-next-line jsx-a11y/alt-text
-    <img loading="lazy" {...props} className={transformImgClassName(props.className)} />
-  );
+export default function MDXImg(props: Props): React.Element {
+  return <img loading="lazy" {...props} className={transformImgClassName(props.className)} />;
 }

@@ -5,7 +5,7 @@ import React, { memo } from 'react';
 
 // TODO this item should probably not receive the "activePath" props
 // TODO this triggers whole sidebar re-renders on navigation
-function DocSidebarItems({ items, ...props }: Props): JSX.Element {
+function DocSidebarItems({ items, ...props }: Props): React.Element {
   return (
     <DocSidebarItemsExpandedStateProvider>
       {items.map((item, index) => (

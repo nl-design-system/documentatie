@@ -1,3 +1,4 @@
+import { Document } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import '@nl-design-system-unstable/nlds-design-tokens/src/font';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/design-tokens.css';
@@ -8,9 +9,6 @@ import '@fontsource/open-sans/500.css';
 import '@fontsource/open-sans/600.css';
 import '@fontsource/open-sans/700.css';
 import '@fontsource/open-sans/800.css';
-
-// Package with CSS for white-label components
-import { Document } from '@utrecht/component-library-react/dist/css-module';
 
 // Default implementation, that you can customize
 function Root({ children }) {

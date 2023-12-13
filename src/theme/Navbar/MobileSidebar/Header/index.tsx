@@ -6,7 +6,7 @@ import { IconChevronLeft, IconX } from '@tabler/icons-react';
 import { ButtonProps } from '@utrecht/component-library-react/dist/Button';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { ComponentProps } from 'react';
+import React from 'react';
 import styles from './Header.module.css';
 
 function CloseButton() {
@@ -35,7 +35,7 @@ function SecondaryMenuBackButton(props: ButtonProps) {
   );
 }
 
-export default function NavbarMobileSidebarHeader(): JSX.Element {
+export default function NavbarMobileSidebarHeader(): React.Element {
   const isPrimaryMenuEmpty = useThemeConfig().navbar.items.length === 0;
   const { hide, shown } = useNavbarSecondaryMenu();
 

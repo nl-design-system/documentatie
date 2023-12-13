@@ -5,7 +5,7 @@ import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): JSX.Element {
+export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): React.Element {
   return (
     <LinkButton
       className={styles.expandButton}

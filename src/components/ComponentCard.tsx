@@ -19,6 +19,7 @@ const getStateModifier = (stateModifier: COMPONENT_STATES) => {
     case COMPONENT_STATES.NL_STABLE:
       return 'hall-of-fame';
   }
+  return '';
 };
 
 interface ComponentCardProps extends DesignSystemComponent {

@@ -1,5 +1,6 @@
 {
   "rules": {
+    "react/no-unescaped-entities": "off",
     "array-callback-return": ["error", { "checkForEach": false }],
     "block-scoped-var": "error",
     "consistent-return": "error",

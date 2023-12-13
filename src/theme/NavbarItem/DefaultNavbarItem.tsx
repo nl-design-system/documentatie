@@ -19,7 +19,7 @@ function DefaultNavbarItemDesktop({ className, isDropdownItem = false, ...props 
   return element;
 }
 
-function DefaultNavbarItemMobile({ className, isDropdownItem, ...props }: DesktopOrMobileNavBarItemProps) {
+function DefaultNavbarItemMobile({ className, isDropdownItem: _, ...props }: DesktopOrMobileNavBarItemProps) {
   return (
     <li className="menu__list-item">
       <NavbarNavLink className={clsx('menu__link', className)} {...props} />
@@ -29,9 +29,9 @@ function DefaultNavbarItemMobile({ className, isDropdownItem, ...props }: Deskto
 
 export default function DefaultNavbarItem({
   mobile = false,
-  position, // Need to destructure position from props so that it doesn't get passed on.
+  position: _, // Need to destructure position from props so that it doesn't get passed on.
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const Comp = mobile ? DefaultNavbarItemMobile : DefaultNavbarItemDesktop;
   return (
     <Comp

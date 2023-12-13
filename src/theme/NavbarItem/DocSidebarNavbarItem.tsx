@@ -4,7 +4,7 @@ import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
 import type { Props } from '@theme/NavbarItem/DocSidebarNavbarItem';
 import React from 'react';
 
-export default function DocSidebarNavbarItem({ sidebarId, label, docsPluginId, ...props }: Props): JSX.Element {
+export default function DocSidebarNavbarItem({ sidebarId, label, docsPluginId, ...props }: Props): React.Element {
   const { activeDoc } = useActiveDocContext(docsPluginId);
   const sidebarLink = useLayoutDocsSidebar(sidebarId, docsPluginId).link;
   if (!sidebarLink) {
