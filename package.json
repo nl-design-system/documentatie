@@ -52,7 +52,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@docsearch/react": "3.5.2",
     "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/plugin-content-docs": "3.0.1",
     "@docusaurus/tsconfig": "3.0.1",
     "@docusaurus/types": "3.0.1",
     "@fontsource/fira-sans": "5.0.18",
@@ -79,6 +81,7 @@
     "tabler-icons-react": "^1.56.0",
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
+    "uuid": "9.0.1",
     "yaml-loader": "^0.8.0"
   },
   "overrides": {
