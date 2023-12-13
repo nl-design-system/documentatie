@@ -1,4 +1,4 @@
-import { Button } from '@utrecht/component-library-react/dist/css-module';
+import { Button, HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/parser-babel';
 import prettierHTML from 'prettier/parser-html';
@@ -49,8 +49,10 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
   };
 
   return (
-    <div className={clsx(style['nlds-canvas'], 'voorbeeld-theme', 'utrecht-html')}>
-      <div className={clsx(style['nlds-canvas__example'])}>{children}</div>
+    <div className={clsx(style['nlds-canvas'])}>
+      <div className={clsx(style['nlds-canvas__example'])}>
+        <HTMLContent className="voorbeeld-theme">{reactNode}</HTMLContent>
+      </div>
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
           className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}
