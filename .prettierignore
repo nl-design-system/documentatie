@@ -1,16 +1,24 @@
-# Ignore 3rd-party dependencies
-node_modules
-
-# Ignore minified files
-*.min.js
+# Ignore 3rd party files
+node_modules/
+vendor/
 
 # Ignore generated files
-dist
-build
-tmp
-.docusaurus
+.docusaurus/
+build/
+coverage/
+dist/
+tmp/
 CHANGELOG.md
+*.min.js
+
+# The indentation of dependency JSON files should only be updated by `yarn` and
+# `npm` commands, so dependency automation scripts (such as Dependabot and
+# Snyk) automatically use the correct indentation.
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore generated files
 docs/componenten/Help Wanted/*.mdx
 docs/componenten/Community/*.mdx
 
