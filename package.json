@@ -10,7 +10,7 @@
   },
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "npm-run-all --sequential write-component-pages docusaurus:start",
+    "start": "npm-run-all --sequential write-component-pages start:docusaurus",
     "start:docusaurus": "docusaurus start",
     "build": "npm-run-all --sequential write-component-pages build:workspaces build:docusaurus build:optimize-view-source",
     "build:component-pages": "docusaurus build",
