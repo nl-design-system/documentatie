@@ -1,7 +1,6 @@
 import { OrderedList, OrderedListItem } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import { type } from 'os';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import style from './Bingo.module.css';
 

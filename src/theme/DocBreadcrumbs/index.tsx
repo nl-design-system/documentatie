@@ -3,7 +3,7 @@ import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
 import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
 import React from 'react';
 
-export default function DocBreadcrumbs(): JSX.Element | null {
+export default function DocBreadcrumbs(): React.Element | null {
   const sidebarBreadcrumbs =
     useSidebarBreadcrumbs()?.map((item) => {
       if (item.type === 'category') {

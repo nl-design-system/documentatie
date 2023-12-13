@@ -21,7 +21,7 @@ function CardLayout({
   icon?: ReactNode;
   title: string;
   description?: string;
-}): JSX.Element {
+}): React.Element {
   return (
     <div className={clsx('card', styles.card)}>
       <h2 className={clsx(styles.cardTitle)} title={title}>
@@ -42,7 +42,7 @@ function CardLayout({
   );
 }
 
-function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element | null {
+function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Element | null {
   const href = findFirstSidebarItemLink(item);
 
   // Unexpected: categories that don't have a link have been filtered upfront
@@ -71,7 +71,7 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element 
   );
 }
 
-function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
+function CardLink({ item }: { item: PropSidebarItemLink }): React.Element {
   const doc = useDocById(item.docId);
   return (
     <CardLayout
@@ -83,7 +83,7 @@ function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
   );
 }
 
-export default function DocCard({ item }: Props): JSX.Element {
+export default function DocCard({ item }: Props): React.Element {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;

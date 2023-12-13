@@ -1,6 +1,6 @@
 import { Figure, FigureCaption } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import style from './ComponentIllustration.module.css';
 import * as Sketch from './sketches';
 
@@ -23,7 +23,7 @@ export const ComponentIllustration = ({ id, stateModifier, description }: Compon
   const getFigure = () => {
     const component = kebabToPascal(id);
 
-    if (Sketch.hasOwnProperty(component)) {
+    if (Object.prototype.hasOwnProperty.call(Sketch, component)) {
       return { SVG: Sketch[component], caption: description, modifier: stateModifier };
     } else {
       return { SVG: Sketch.Todo, caption: 'Leeg grid zonder component schets' };

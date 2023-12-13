@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 export const DateInput = (props: HTMLAttributes<SVGElement>) => (
   <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>

@@ -13,9 +13,9 @@ export default function DocSidebarItemLink({
   onItemClick,
   activePath,
   level,
-  index,
+  index: _,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const { href, label, className, autoAddBaseUrl } = item;
   const isActive = isActiveSidebarItem(item, activePath);
   const isInternalLink = isInternalUrl(href);

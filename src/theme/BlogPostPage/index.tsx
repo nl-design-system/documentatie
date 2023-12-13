@@ -10,7 +10,7 @@ import clsx from 'clsx';
 import React, { type ReactNode } from 'react';
 import BlogLayout from '../BlogLayout';
 
-function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; children: ReactNode }): JSX.Element {
+function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; children: ReactNode }): React.Element {
   const { metadata, toc } = useBlogPost();
   const { nextItem, prevItem, frontMatter } = metadata;
   const {
@@ -35,7 +35,7 @@ function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; chil
   );
 }
 
-export default function BlogPostPage(props: Props): JSX.Element {
+export default function BlogPostPage(props: Props): React.Element {
   const BlogPostContent = props.content;
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>

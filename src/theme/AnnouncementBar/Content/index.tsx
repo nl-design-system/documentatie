@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function AnnouncementBarContent(props: Props): JSX.Element | null {
+export default function AnnouncementBarContent(props: Props): React.Element | null {
   const { announcementBar } = useThemeConfig();
   const { content } = announcementBar!;
   return (

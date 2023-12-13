@@ -19,7 +19,7 @@ export default function DocPageLayoutSidebar({
   sidebar,
   hiddenSidebarContainer,
   setHiddenSidebarContainer,
-}: Props): JSX.Element {
+}: Props): React.Element {
   const { pathname } = useLocation();
 
   const [hiddenSidebar, setHiddenSidebar] = useState(false);
@@ -30,7 +30,7 @@ export default function DocPageLayoutSidebar({
   return (
     <aside
       className={clsx(ThemeClassNames.docs.docSidebarContainer, styles.docSidebarContainer)}
-      onTransitionEnd={(e) => {
+      onTransitionEnd={(_evt) => {
         if (hiddenSidebarContainer) {
           setHiddenSidebar(true);
         }

@@ -14,7 +14,7 @@ export default function LocaleDropdownNavbarItem({
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): JSX.Element {
+}: Props): React.Element {
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();

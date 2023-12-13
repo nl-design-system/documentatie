@@ -56,8 +56,8 @@ export const DSWSession = ({
       </Paragraph>
     )}
     <aside className={clsx(style['dsw-session__speakers'])}>
-      {speakers.map((speaker) => (
-        <div className={clsx(style['dsw-session__speaker'], style['dsw-speaker'])}>
+      {speakers.map((speaker, index) => (
+        <div key={index} className={clsx(style['dsw-session__speaker'], style['dsw-speaker'])}>
           <img className={clsx(style['dsw-speaker__image'])} src={speaker.image.src} alt={speaker.image.alt} />
           <Paragraph className={clsx(style['dsw-speaker__description'])}>{speaker.description[lang]}</Paragraph>
         </div>

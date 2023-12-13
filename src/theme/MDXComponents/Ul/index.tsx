@@ -13,6 +13,6 @@ function transformUlClassName(className?: string): string {
   );
 }
 
-export default function MDXUl(props: Props): JSX.Element {
+export default function MDXUl(props: Props): React.Element {
   return <ul {...props} className={transformUlClassName(props.className)} />;
 }

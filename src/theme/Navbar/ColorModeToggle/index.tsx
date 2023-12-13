@@ -4,7 +4,7 @@ import type { Props } from '@theme/Navbar/ColorModeToggle';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function NavbarColorModeToggle({ className }: Props): JSX.Element | null {
+export default function NavbarColorModeToggle({ className }: Props): React.Element | null {
   const navbarStyle = useThemeConfig().navbar.style;
   const disabled = useThemeConfig().colorMode.disableSwitch;
   const { colorMode, setColorMode } = useColorMode();

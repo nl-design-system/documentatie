@@ -5,7 +5,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import type { Props } from '@theme/Logo';
 import ThemedImage from '@theme/ThemedImage';
-import clsx from 'clsx';
 import React from 'react';
 
 function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt: string; imageClassName?: string }) {
@@ -29,7 +28,7 @@ function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt:
   return imageClassName ? <div className={imageClassName}>{themedImage}</div> : themedImage;
 }
 
-export default function Logo(props: Props): JSX.Element {
+export default function Logo(props: Props): React.Element {
   const {
     siteConfig: { title },
   } = useDocusaurusContext();
@@ -53,7 +52,7 @@ export default function Logo(props: Props): JSX.Element {
   return (
     <Link to={logoLink} {...propsRest} {...(logo?.target && { target: logo.target })}>
       {logo && !isMobile && <LogoThemedImage logo={logo} alt={alt} imageClassName={imageClassName} />}
-      {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}
+      {navbarTitle && <b className={titleClassName}>{navbarTitle}</b>}
     </Link>
   );
 }

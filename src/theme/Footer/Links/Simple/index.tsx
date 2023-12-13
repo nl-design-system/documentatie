@@ -19,7 +19,7 @@ function SimpleLinkItem({ item }: { item: Props['links'][number] }) {
   );
 }
 
-export default function FooterLinksSimple({ links }: Props): JSX.Element {
+export default function FooterLinksSimple({ links }: Props): React.Element {
   return (
     <div className="footer__links text--center">
       <div className="footer__links">

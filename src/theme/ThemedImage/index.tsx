@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function ThemedImage(props: Props): JSX.Element {
+export default function ThemedImage(props: Props): React.Element {
   const isBrowser = useIsBrowser();
   const { colorMode } = useColorMode();
   const { sources, className, alt, ...propsRest } = props;

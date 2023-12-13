@@ -1,3 +1,4 @@
+/* eslint-env node */
 import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -36,7 +37,7 @@ const ensureDir = (directoryName) => {
 
 const dir = ensureDir('build');
 
-componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
+componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   const fileName = `${dir}/${id}.mdx`;
   const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.md`);
 

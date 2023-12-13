@@ -5,7 +5,7 @@ import FooterLinks from '@theme/Footer/Links';
 import FooterLogo from '@theme/Footer/Logo';
 import React from 'react';
 
-function Footer(): JSX.Element | null {
+function Footer(): React.Element | null {
   const { footer } = useThemeConfig();
   if (!footer) {
     return null;

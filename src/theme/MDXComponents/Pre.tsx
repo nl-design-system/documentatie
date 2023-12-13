@@ -2,7 +2,7 @@ import CodeBlock from '@theme/CodeBlock';
 import type { Props } from '@theme/MDXComponents/Pre';
 import React, { isValidElement } from 'react';
 
-export default function MDXPre(props: Props): JSX.Element {
+export default function MDXPre(props: Props): React.Element {
   return (
     <CodeBlock
       // If this pre is created by a ``` fenced codeblock, unwrap the children

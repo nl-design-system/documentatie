@@ -1,6 +1,5 @@
 import type { NavbarItemType, Props } from '@theme/NavbarItem';
 import ComponentTypes from '@theme/NavbarItem/ComponentTypes';
-import clsx from 'clsx';
 import React from 'react';
 
 function normalizeComponentType(type: NavbarItemType, props: object) {
@@ -12,7 +11,7 @@ function normalizeComponentType(type: NavbarItemType, props: object) {
   return type;
 }
 
-export default function NavbarItem({ type, ...props }: Props): JSX.Element {
+export default function NavbarItem({ type, ...props }: Props): React.Element {
   const componentType = normalizeComponentType(type, props);
   const NavbarItemComponent = ComponentTypes[componentType];
   if (!NavbarItemComponent) {

@@ -8,7 +8,7 @@ interface BlogLayoutProps extends Props {
   breadcrumbs: { label: string; href?: string; rel?: string }[];
 }
 
-export default function BlogLayout(props: BlogLayoutProps): JSX.Element {
+export default function BlogLayout(props: BlogLayoutProps): React.Element {
   const { sidebar, toc, breadcrumbs = [], children, ...layoutProps } = props;
   const hasSidebar = sidebar && sidebar.items.length > 0;
 

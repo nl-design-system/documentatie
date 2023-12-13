@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import React from 'react';
 import styles from './Layout.module.css';
 
-export default function FooterLayout({ style, links, logo, copyright }: Props): JSX.Element {
+export default function FooterLayout({ style, links, logo, copyright }: Props): React.Element {
   return (
     <footer
       className={clsx(

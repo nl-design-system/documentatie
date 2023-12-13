@@ -21,7 +21,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 
-export default function MDXContent({ children }: Props): JSX.Element {
+export default function MDXContent({ children }: Props): React.Element {
   return (
     <MDXProvider
       components={{

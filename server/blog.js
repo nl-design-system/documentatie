@@ -1,3 +1,4 @@
+/* eslint-env node */
 const express = require('express');
 const Parser = require('rss-parser');
 

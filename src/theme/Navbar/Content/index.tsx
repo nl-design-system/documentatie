@@ -26,7 +26,7 @@ function NavbarItems({
   positionChildren = 'block-end',
   showOnMobile,
   children,
-}: PropsWithChildren<NavbarItemsProps>): JSX.Element {
+}: PropsWithChildren<NavbarItemsProps>): React.Element {
   return (
     <div
       className={clsx(
@@ -55,7 +55,7 @@ ${JSON.stringify(item, null, 2)}`,
   );
 }
 
-export default function NavbarContent(): JSX.Element {
+export default function NavbarContent(): React.Element {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const mobileSidebar = useNavbarMobileSidebar();

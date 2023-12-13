@@ -40,8 +40,8 @@ tags:
   - ${state}
 ---
 
-<!-- @license CC0-1.0 -->
-<!-- File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  -->
+{/* @license CC0-1.0 */}
+{/* File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  */}
 ${
   story
     ? `import { Story } from "../../../src/components/Story";
