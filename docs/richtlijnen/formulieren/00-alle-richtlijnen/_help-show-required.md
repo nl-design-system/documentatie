@@ -19,7 +19,7 @@ Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. 
 
 ### Screenreaderfeedback
 
-Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-atribuut `aria-required="true"` of met het HTML%-attribuut `required`.
+Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-atribuut `aria-required="true"`.
 
 ```html
 <form>
@@ -29,7 +29,8 @@ Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het AR
 </form>
 ```
 
-**`Let op`**: Gebruik je `required` in een invoerveld, neem dan ook [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element. Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet.
+**`Let op`**: Gebruik liever geen `required` in een invoerveld, dit vereist ook het attribuut [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element.
+Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet. Alhoewel het gebruik van `required` in plaats van `aria-required` niet fout is, geven we hierom de voorkeur aan `aria-required`.
 
 ```html
 <form novalidate>
