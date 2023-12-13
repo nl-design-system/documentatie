@@ -3,14 +3,24 @@ title: Adres uitvragen
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Adres uitvragen
-sidebar_position: 2
-pagination_label: Adres uitvragen
-description: Adres uitvragen in formulieren
+sidebar_position: 99
+pagination_label: Adres uitvragen binnen een formulier
+description: Documentatie rondom het uitvragen van een adres binnen een formulier
 keywords:
+  - voorbeelden
   - patronen
-  - design system
-  - adres uitvragen
   - formulieren
+  - adres
+  - onderzoek
 ---
 
-# Adres uitvragen in formulieren
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
