@@ -28,9 +28,9 @@
   <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
-  <link rel="stylesheet" href="/en/assets/css/styles.70af09ba.css" />
-  <script src="/en/assets/js/runtime~main.faf9a19f.js" defer="defer"></script>
-  <script src="/en/assets/js/main.a1a293f1.js" defer="defer"></script>
+  <link rel="stylesheet" href="/en/assets/css/styles.7e10de29.css" />
+  <script src="/en/assets/js/runtime~main.4c3778b7.js" defer="defer"></script>
+  <script src="/en/assets/js/main.ad51cad1.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -64,7 +64,7 @@
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
-    <div role="region" aria-label="Skip to main content"><a class="skipToContent_VTH7" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
+    <div role="region" aria-label="Skip to main content"><a class="skipToContent_r_KO" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-label="Toggle navigation bar" aria-expanded="false">Menu</button
@@ -87,12 +87,12 @@
      </div>
      <div role="presentation" class="navbar-sidebar__backdrop"></div>
     </nav>
-    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_tGx7">
-     <div class="docsWrapper_fqMb">
-      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_hZqM" type="button"></button>
-      <div class="docRoot_XAo5">
-       <aside class="theme-doc-sidebar-container docSidebarContainer_QuYa">
-        <div class="sidebarViewport_OFwt">
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_ctkk">
+     <div class="docsWrapper_vK1H">
+      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_gxl1" type="button"></button>
+      <div class="docRoot_Qusp">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_xTAu">
+        <div class="sidebarViewport_gAQR">
          <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
           <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
@@ -161,11 +161,11 @@
          </div>
         </div>
        </aside>
-       <main class="docMainContainer_fTqD">
+       <main class="docMainContainer_sKIO">
         <div class="container padding-top--md padding-bottom--lg">
          <div class="row">
-          <div class="col docItemCol_EjVV">
-           <div class="docItemContainer_oKNs">
+          <div class="col docItemCol_CXpa">
+           <div class="docItemContainer_Qh2M">
             <article>
              <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
               <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
@@ -197,7 +197,7 @@
                >
               </p>
              </div>
-             <div class="tocCollapsible_ECvL theme-doc-toc-mobile tocMobile_Z8p_"><button type="button" class="clean-btn tocCollapsibleButton_fZKt">On this page</button></div>
+             <div class="tocCollapsible_IFhG theme-doc-toc-mobile tocMobile_xdyr"><button type="button" class="clean-btn tocCollapsibleButton_uXbH">On this page</button></div>
              <div class="theme-doc-markdown">
               <h1 id="jouw-project-inrichten-op-de-nl-design-system-architectuur" class="utrecht-heading-1">Jouw project inrichten op de NL Design System architectuur</h1>
               <p>Twee teams bij verschillende organisaties werken deze periode voor hun eigen doeleinden aan NL Design System componenten. De ontwikkelingen zijn ver genoeg gevorderd dat ze de komende twee weken gebruik gaan maken van elkaars componenten. Binnenkort sluiten meer teams aan. Daarna komen de componenten één voor één beschikbaar voor Rijkshuisstijl en voor projecten voor Gemeente Amsterdam. Hoe kunnen ze zo succesvol samenwerken, terwijl ze technisch andere eisen hebben? Hoe kunnen projecten samenwerken en ook een helemaal eigen visueel ontwerp realiseren?</p>
@@ -214,14 +214,14 @@
               <p>Een design token is een kleine eigenschap van je visueel ontwerp, zoals een kleur of een lettertype. Elke huisstijl bestaat uit kleurenpalet en één of meerdere lettertypes: dit noemen wij <em class="utrecht-emphasis utrecht-emphasis--stressed">brand identity design tokens</em>, maar we korten het vaak af als &quot;<em class="utrecht-emphasis utrecht-emphasis--stressed">brand tokens</em>&quot;. Deze design tokens zijn er om de herkenbaarheid van je websites te waarborgen. Meestal is het de bedoeling dat geen kleuren of lettertypes worden gebruikt die niet een officiële design token zijn.</p>
               <p>Meestal wordt CSS geschreven op een manier dat deze kleuren en lettertypes in elke uithoek van de code voorkomen, zodat elke component aan de huisstijl voldoet. Uit onze rondvraag bleek dat al die huisstijl-specifieke code een belangrijke belemmering is om samen te werken aan code van een andere organisatie. Daarom vervangen onze teams al deze kleuren in hun code door CSS variabelen van NL Design System. De naam &quot;variabele&quot; zegt het al: de kleur of lettertype wordt afhankelijk van de website waarin je de component gebruikt.</p>
               <p>Front-end developers zullen zich inmiddels afvragen: hoe ziet dat er uit in de code? Hier bijvoorbeeld twee &quot;brand tokens&quot; voor Rijkshuisstijl, uit de bovenste laag:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">:root {
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">:root {
   --rijkshuisstijl-color-hemelblauw-basis: hsl(203deg 100% 39%);
 
   --rijkshuisstijl-typography-sans-serif-font-family: &quot;Rijksoverheid SansWebText&quot;;
 }
 </code></code></pre>
               <p>Om de code van componenten vrij te houden van huisstijl (en zo hergebruik mogelijk te maken) moet de code natuurlijk ook geen gebruik maken van de CSS variabele <code class="utrecht-code">var(--rijkshuisstijl-color-hemelblauw-basis)</code>, net zo min als de kleurcode <code class="utrecht-code">#007bc7</code> herbruikbaar is voor anderen. In plaats daarvan gebruiken we CSS variabelen van NL Design System in de onderste laag, de CSs van componenten:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">.nl-paragraph {
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.nl-paragraph {
   font-family: var(--nl-document-font-family);
 }
 
@@ -230,7 +230,7 @@
 }
 </code></code></pre>
               <p>Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de <em class="utrecht-emphasis utrecht-emphasis--stressed">brand identity design token</em> worden gekoppeld aan <em class="utrecht-emphasis utrecht-emphasis--stressed">component design tokens</em>:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-css">:root {
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">:root {
   --nl-document-font-family: var(--rijkshuisstijl-typography-sans-serif-font-family);
 
   --nl-action-primary-color: var(--rijkshuisstijl-color-hemelblauw-basis);
@@ -241,11 +241,11 @@
               <p>Teams die werken aan templates in een CMS en teams die werken aan code in een framework naar keuze (zoals React, Vue.js, Angular, Stencil of Svelte) hebben iets gemeen: ze kunnen allemaal gebruik maken van de NL Design System design tokens en CSS variabelen. Zelfs als teams binnen je organisatie werken met verschillende frameworks, kunnen ze al beginnen om centraal de design tokens te beheren.</p>
               <p>Alle teams hebben nóg iets gemeen: de CSS van componenten kan op alle soorten HTML toegepast worden met de <a href="http://getbem.com" class="utrecht-link utrecht-link--html-a">BEM class names</a> van de NL Design System architectuur, waardoor hergebruik in uiteenlopende technieken mogelijk wordt.</p>
               <p>Een simpel voorbeeld is een button in een HTML template van bijvoorbeeld een CMS of een Angular template:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-html">&lt;button class=&quot;nl-button nl-button--primary-action&quot;&gt;OK&lt;/button&gt;
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-html">&lt;button class=&quot;nl-button nl-button--primary-action&quot;&gt;OK&lt;/button&gt;
 </code></code></pre>
               <p>Het essentiele voordeel van BEM class names is dat elk onderdeel van de CSS een unieke naam heeft waar je gemakkelijk naar kan verwijzen, iets dat niet vanzelfsprekend is voor een complexe CSS selector zoals <code class="utrecht-code">form button:hover</code>. Dat betekent dat je de CSS zelfs kan gebruiken in situaties waarin je niet de class name van NL Design System op een HTML element kan of wilt plaatsen.</p>
               <p>Met SCSS kun je de BEM class name van NL Design System bijvoorbeeld toepassen op de HTML van je huidige CMS templates, waardoor je oude system al gedeeltelijk naar NL Design System kan migreren:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-scss">@import &quot;./nl-design-system&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@import &quot;./nl-design-system&quot;;
 
 .content p {
   @extend .nl-paragraph;
@@ -259,12 +259,12 @@
 </code></code></pre>
               <p>Veel React projecten maken gebruik van <code class="utrecht-code">styled-components</code>: dat is een alternatief voor CSS bestanden. Zulke projecten zonder CSS hebben niet een mogelijkheid om samen te werken aan het visueel ontwerp met teams in de organisatie die een ander framework gebruiken zoals Vue.js.</p>
               <p>De BEM class names van NL Design System maken het mogelijk dat beide teams samenwerken aan de CSS. Hier volgt een voorbeeld van BEM class names in React door gebruik te maken van CSS modules:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-jsx">import styles from &quot;./nl-design-system.css&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-jsx">import styles from &quot;./nl-design-system.css&quot;;
 
 const Button = () =&gt; &lt;button className={styles[&quot;nl-button&quot;]}&gt;OK&lt;/button&gt;;
 </code></code></pre>
               <p>Dezelfde CSS kan met CSS modules in een Vue.js template worden gebruikt:</p>
-              <pre tabindex="0" class="codeBlockStandalone_iGp0 thin-scrollbar codeBlockContainer_Lynl theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_oQH9"><code class="utrecht-code language-html">&lt;template&gt;
+              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-html">&lt;template&gt;
   &lt;button :class=&quot;$style[&#x27;nl-button&#x27;]&quot;&gt;OK&lt;/button&gt;
 &lt;/template&gt;
 </code></code></pre>
@@ -285,12 +285,12 @@ const Button = () =&gt; &lt;button className={styles[&quot;nl-button&quot;]}&gt;
               <div class="theme-doc-footer-edit-meta-row row">
                <div class="col">
                 <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/meedoen/als-developer/02-architectuur.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
-                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_LLUu" aria-hidden="true">
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_hzmE" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Edit this page</a
                 >
                </div>
-               <div class="col lastUpdated_ZmFM"></div>
+               <div class="col lastUpdated_qSJ5"></div>
               </div>
              </footer>
             </article>
@@ -306,7 +306,7 @@ const Button = () =&gt; &lt;button className={styles[&quot;nl-button&quot;]}&gt;
            </div>
           </div>
           <div class="col col--3">
-           <div class="tableOfContents_v_vT thin-scrollbar theme-doc-toc-desktop">
+           <div class="tableOfContents_HotW thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#design-tokens-voor-css" class="table-of-contents__link toc-highlight">Design Tokens voor CSS</a></li>
              <li><a href="#bem-class-names-voor-css" class="table-of-contents__link toc-highlight">BEM class names voor CSS</a></li>
