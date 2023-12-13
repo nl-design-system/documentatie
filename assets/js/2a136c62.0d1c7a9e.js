@@ -3,12 +3,12 @@
  [33874],
  {
   85037: (e, n, o) => {
-   o.r(n), o.d(n, { assets: () => B, contentTitle: () => X, default: () => C, frontMatter: () => U, metadata: () => Z, toc: () => F });
+   o.r(n), o.d(n, { assets: () => B, contentTitle: () => X, default: () => C, frontMatter: () => U, metadata: () => Z, toc: () => A });
    var l = o(85893),
     r = o(11151);
    function i(e) {
     const n = { h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "leg-uit-waarom-informatie-nodig-is", children: "Leg uit waarom informatie nodig is" }), "\n", (0, l.jsx)(n.p, { children: "Soms lijkt een vraag overbodig, terwijl deze informatie essentieel is voor het verwerken van de gegevens. In zulke gevallen is het een goed idee een korte uitleg toe te voegen, om bijvoorbeeld het doel te beschrijven." }), "\n", (0, l.jsx)(n.p, { children: "Vertel waarom je deze informatie nodig hebt en wat je ermee doet. Uitleg geeft duidelijkheid aan de bezoeker en voorkomt onzekerheid bij het invullen." })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "leg-uit-waarom-informatie-nodig-is", children: "Leg uit waarom informatie nodig is" }), "\n", (0, l.jsx)(n.p, { children: "Soms lijkt een vraag overbodig, terwijl deze informatie essentieel is voor het verwerken van de gegevens. In zulke gevallen is het een goed idee een korte uitleg toe te voegen, om bijvoorbeeld het doel te beschrijven." }), "\n", (0, l.jsx)(n.p, { children: "Vertel waarom je deze informatie nodig hebt en wat je ermee doet. Uitleg geeft duidelijkheid aan de gebruiker en voorkomt onzekerheid bij het invullen." })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -25,7 +25,7 @@
    }
    function m(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "check-of-informatie-\xe8cht-nodig-is", children: "Check of informatie \xe8cht nodig is" }), "\n", (0, l.jsx)(n.p, { children: "Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze informatie echt nodig is." }), "\n", (0, l.jsx)(n.p, { children: "Zo is het bijvoorbeeld vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn. Is het echt belangrijk om te weten of iemand een man/vrouw/andere is?" }), "\n", (0, l.jsxs)(n.p, { children: ["Is het nodig voor het afhandelen van het formulier dat gebruiker via DigiD inlogt, zodat ook het burgerservicenummer van de verzender bekend wordt? ", (0, l.jsx)(n.a, { href: "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN).", children: "Uitvragen van een BSN" }), " is aan wettelijke richtlijnen gebonden."] })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "check-of-informatie-\xe8cht-nodig-is", children: "Check of informatie \xe8cht nodig is" }), "\n", (0, l.jsx)(n.p, { children: "Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze informatie echt nodig is." }), "\n", (0, l.jsx)(n.p, { children: "Zo is het vaak onnodig om te vragen naar een straatnaam, als huisnummer en postcode al bekend zijn. Is het echt belangrijk om te weten of iemand een man/vrouw/andere is?" }), "\n", (0, l.jsxs)(n.p, { children: ["Is het nodig voor het afhandelen van het formulier dat gebruiker via DigiD inlogt, zodat ook het burgerservicenummer van de verzender bekend wordt? ", (0, l.jsx)(n.a, { href: "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN).", children: "Uitvragen van een BSN" }), " is aan wettelijke richtlijnen gebonden."] })] });
    }
    function g(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -40,7 +40,7 @@
    }
    function v(e) {
     const n = { h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "biedt-verschillende-manieren-om-contact-op-te-nemen", children: "Biedt verschillende manieren om contact op te nemen" }), "\n", (0, l.jsx)(n.p, { children: "Vraag niet alleen om contact via een telefoonnummer.\nGebruikers die doof zijn of heel verlegen, stotteren of een vorm van autisme hebben, kunnen soms niet (goed) bellen.\nVoeg een alternatief toe, in de vorm van een e-mailadres." })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "biedt-verschillende-manieren-om-contact-op-te-nemen", children: "Biedt verschillende manieren om contact op te nemen" }), "\n", (0, l.jsx)(n.p, { children: "Vraag niet alleen om contact via een telefoonnummer.\nGebruikers die doof zijn of heel verlegen, stotteren of een vorm van autisme hebben, kunnen soms niet (goed) bellen. Andere gebruikers spreken de Nederlandse taal misschien niet goed, waardoor zij liever niet bellen.\nVoeg een alternatief toe, bijvoorbeeld in de vorm van een e-mailadres of chat functionaliteit." })] });
    }
    function p(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -55,14 +55,14 @@
    }
    function k(e) {
     const n = { a: "a", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "vraag-niet-meerdere-keren-dezelfde-informatie-uit", children: "Vraag niet meerdere keren dezelfde informatie uit" }), "\n", (0, l.jsx)(n.p, { children: "Voorkom herhaling: om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruiksvriendelijker!" }), "\n", (0, l.jsx)(n.p, { children: "Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een bevestigingspagina;" }), "\n", (0, l.jsx)(n.li, { children: "(als het om een e-mailadres gaat) stuur een e-mail ter bevestiging om de juistheid van het e-mailadres te controleren." }), "\n"] }), "\n", (0, l.jsxs)(n.p, { children: ["Door gegevens niet meerdere keren binnen een formulier uit te vragen voldoe je aan het WCAG-Succescriterium ", (0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html", children: "3.3.7 Overbodige Invoer" }), " (niveau A)."] })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "vraag-niet-meerdere-keren-dezelfde-informatie-uit", children: "Vraag niet meerdere keren dezelfde informatie uit" }), "\n", (0, l.jsx)(n.p, { children: "Voorkom herhaling: om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruiksvriendelijker!" }), "\n", (0, l.jsx)(n.p, { children: "Als het essentieel is dat de informatie correct is, zijn er deze alternatieven:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "toon dan voor het verzenden nog eens de invoer, bijvoorbeeld op een controlepagina;" }), "\n", (0, l.jsx)(n.li, { children: "(als het om een e-mailadres gaat) stuur een e-mail ter bevestiging om de juistheid van het e-mailadres te controleren." }), "\n"] }), "\n", (0, l.jsxs)(n.p, { children: ["Door gegevens niet meerdere keren binnen een formulier uit te vragen voldoe je aan het WCAG-Succescriterium ", (0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html", children: "3.3.7 Overbodige Invoer" }), " (niveau A)."] })] });
    }
    function f(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(k, { ...e }) }) : k(e);
    }
    function x(e) {
-    return (0, l.jsx)(s.X, { appearance: "dont", title: "Herhaling ter bevestiging.", children: (0, l.jsxs)(t.X, { language: "html", children: [(0, l.jsx)("label", { for: "email1", children: "Uw e-mailadres" }), (0, l.jsx)("input", { id: "email1", type: "email", name: "email", autocomplete: "email" }), (0, l.jsx)("label", { for: "email2", children: "Geef nogmaals uw e-mailadres" }), (0, l.jsx)("input", { id: "email2", type: "email", name: "email", autocomplete: "email" })] }) });
+    return (0, l.jsx)(s.X, { appearance: "dont", title: "Herhaling ter bevestiging.", children: (0, l.jsxs)(t.X, { language: "html", children: [(0, l.jsx)("label", { for: "email1", children: "Uw e-mailadres" }), (0, l.jsx)("input", { id: "email1", type: "email", name: "email", autocomplete: "email" }), (0, l.jsx)("label", { for: "email2", children: "Herhaal uw e-mailadres" }), (0, l.jsx)("input", { id: "email2", type: "email", name: "email", autocomplete: "email" })] }) });
    }
    function _(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -88,14 +88,14 @@
     X = "Uit te vragen informatie in een formulier",
     Z = { id: "richtlijnen/formulieren/alle-richtlijnen/questions", title: "Uit te vragen informatie in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor uit te vragen informatie in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/06-questions.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/vragen", permalink: "/richtlijnen/formulieren/alle-richtlijnen/vragen", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/06-questions.mdx", tags: [], version: "current", sidebarPosition: 6, frontMatter: { title: "Uit te vragen informatie in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Uit te vragen informatie", pagination_label: "Uit te vragen informatie in een formulier", description: "Richtlijnen voor uit te vragen informatie in een formulier.", slug: "vragen", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Placeholders in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/placeholders" }, next: { title: "Toegankelijk", permalink: "/richtlijnen/formulieren/toegankelijk" } },
     B = {},
-    F = [];
-   function A(e) {
+    A = [];
+   function F(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: "uit-te-vragen-informatie-in-een-formulier", children: "Uit te vragen informatie in een formulier" }), "\n", (0, l.jsx)(n.p, { children: "Welke informatie heb je nodig van je gebruiker? En welke niet? Waarom heb je bepaalde informatie nodig en wat doe je ermee? Overweeg dit zorgvuldig bij het samenstellen van een formulier." }), "\n", (0, l.jsx)(n.p, { children: "Bij het uitvragen van informatie in een formulier zijn de volgende punten belangrijk:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Leg uit waarom informatie nodig is." }), "\n", (0, l.jsx)(n.li, { children: "Check of informatie \xe8cht nodig is" }), "\n", (0, l.jsx)(n.li, { children: "Biedt verschillende manieren om contact op te nemen." }), "\n", (0, l.jsx)(n.li, { children: "Vraag niet meerdere keren dezelfde informatie uit." }), "\n", (0, l.jsx)(n.li, { children: "Geef invoervelden geen minimum en/of maximum aantal in te voeren tekens." }), "\n"] }), "\n", (0, l.jsx)(a, {}), "\n", (0, l.jsx)(c, {}), "\n", (0, l.jsx)(g, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(p, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(f, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(y, {}), "\n", (0, l.jsx)(S, {}), "\n", (0, l.jsx)(N.ZP, {})] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: "uit-te-vragen-informatie-in-een-formulier", children: "Uit te vragen informatie in een formulier" }), "\n", (0, l.jsx)(n.p, { children: "Welke informatie heb je nodig van je gebruiker? En welke niet? Waarom heb je bepaalde informatie nodig en wat doe je ermee? Overweeg dit zorgvuldig bij het samenstellen van een formulier." }), "\n", (0, l.jsx)(n.p, { children: "Bij het uitvragen van informatie in een formulier zijn de volgende punten belangrijk:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Leg uit waarom informatie nodig is." }), "\n", (0, l.jsx)(n.li, { children: "Check of informatie \xe8cht nodig is." }), "\n", (0, l.jsx)(n.li, { children: "Biedt verschillende manieren om contact op te nemen." }), "\n", (0, l.jsx)(n.li, { children: "Vraag niet meerdere keren dezelfde informatie uit." }), "\n", (0, l.jsx)(n.li, { children: "Geef invoervelden geen minimum en/of maximum aantal in te voeren tekens." }), "\n"] }), "\n", (0, l.jsx)(a, {}), "\n", (0, l.jsx)(c, {}), "\n", (0, l.jsx)(g, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(p, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(f, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(y, {}), "\n", (0, l.jsx)(S, {}), "\n", (0, l.jsx)(N.ZP, {})] });
    }
    function C(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(A, { ...e }) }) : A(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(F, { ...e }) }) : F(e);
    }
   },
   59467: (e, n, o) => {
