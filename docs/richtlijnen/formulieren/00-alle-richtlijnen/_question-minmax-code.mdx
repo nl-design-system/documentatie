@@ -5,8 +5,12 @@ import { Guideline } from "@site/src/components/Guideline";
 
 <Guideline appearance="do" title="Geef de mogelijkheid korte en lange teksten in te vullen.">
   <Canvas language="html">
-    <label for="woonplaats1">Uw woonplaats</label>
-    <input id="woonplaats1" type="text" name="email" autocomplete="address-level2" />
+    {() => (
+      <>
+        <label for="woonplaats1">Uw woonplaats</label>
+        <input id="woonplaats1" type="text" name="email" autocomplete="address-level2" />
+      </>
+    )}
   </Canvas>
 </Guideline>
 
@@ -16,8 +20,12 @@ import { Guideline } from "@site/src/components/Guideline";
   description="Mensen uit Gasselterboerveenschemond of Westerhaar-Vriezenveensewijk willen ook graag hun woonplaats invoeren."
 >
   <Canvas language="html">
-    <label for="woonplaats2">Uw woonplaats</label>
-    <input id="woonplaats2" type="text" name="email" maxlength="20" autocomplete="address-level2" />
+    {() => (
+      <>
+        <label for="woonplaats2">Uw woonplaats</label>
+        <input id="woonplaats2" type="text" name="email" maxlength="20" autocomplete="address-level2" />
+      </>
+    )}
   </Canvas>
 </Guideline>
 
@@ -27,7 +35,11 @@ import { Guideline } from "@site/src/components/Guideline";
   description="Jo, Bo en X willen ook graag hun voornaam invullen."
 >
   <Canvas language="html">
-    <label for="voornaam1">Je voornaam</label>
-    <input id="voornaam1" type="text" name="voornaam" minlength="3" autocomplete="given-name" />
+    {() => (
+      <>
+        <label for="voornaam1">Je voornaam</label>
+        <input id="voornaam1" type="text" name="voornaam" minlength="3" autocomplete="given-name" />
+      </>
+    )}
   </Canvas>
 </Guideline>

@@ -8,10 +8,14 @@ import { Guideline } from "@site/src/components/Guideline";
   title="De placeholder samen met tekst van de submitknop gebruiken zichtbaar label in een kort zoekformulier."
 >
   <Canvas language="html">
-    <label class="sr-only" for="header-search">
-      Zoek
-    </label>
-    <input id="header-search" placeholder="Zoek" type="search" />
-    <button>Zoek</button>
+    {() => (
+      <>
+        <label class="sr-only" for="header-search">
+          Zoek
+        </label>
+        <input id="header-search" placeholder="Zoek" type="search" />
+        <button>Zoek</button>
+      </>
+    )}
   </Canvas>
 </Guideline>

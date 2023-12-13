@@ -5,8 +5,12 @@ import { Guideline } from "@site/src/components/Guideline";
 
 <Guideline appearance="do" title="Het zichtbare label is de toegankelijke naam.">
   <Canvas language="html">
-    <label for="hond">Hoe heet je hond</label>
-    <input type="text" id="hond" name="hond" />
+    {() => (
+      <>
+        <label for="hond">Hoe heet je hond</label>
+        <input type="text" id="hond" name="hond" />
+      </>
+    )}
   </Canvas>
 </Guideline>
 
@@ -16,7 +20,9 @@ import { Guideline } from "@site/src/components/Guideline";
   description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
 >
   <Canvas language="html">
-    <input type="text" name="lievelingskleur" aria-label="Vul een kleur in" placeholder="Wat is je lievelingskleur" />
+    {() => (
+      <input type="text" name="lievelingskleur" aria-label="Vul een kleur in" placeholder="Wat is je lievelingskleur" />
+    )}
   </Canvas>
 </Guideline>
 
@@ -26,7 +32,11 @@ import { Guideline } from "@site/src/components/Guideline";
   description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
 >
   <Canvas language="html">
-    <div>Zoek</div>
-    <input type="search" name="trefwoord" aria-label="Trefwoord" />
+    {() => (
+      <>
+        <div>Zoek</div>
+        <input type="search" name="trefwoord" aria-label="Trefwoord" />
+      </>
+    )}
   </Canvas>
 </Guideline>
