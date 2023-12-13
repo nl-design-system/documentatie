@@ -1,7 +1,7 @@
 {
   "overrides": [
     {
-      "files": ["*.js", "*.jsx"],
+      "files": ["*.cjs", "*.js", "*.jsx", "*.mjs"],
       "options": {
         "parser": "flow",
         "printWidth": 120,
