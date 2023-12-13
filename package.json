@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/tsconfig": "3.0.1",
     "@docusaurus/types": "3.0.1",
     "@fontsource/fira-sans": "5.0.18",
     "@fontsource/open-sans": "^5.0.18",
@@ -61,7 +62,6 @@
     "@mdx-js/react": "3.0.0",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.102",
     "@nl-design-system/component-index": "1.0.0-alpha.16",
-    "@tsconfig/docusaurus": "1.0.7",
     "@types/node": "20.10.4",
     "@utrecht/component-library-css": "1.0.2-alpha.0",
     "@utrecht/component-library-react": "1.0.2-alpha.0",
