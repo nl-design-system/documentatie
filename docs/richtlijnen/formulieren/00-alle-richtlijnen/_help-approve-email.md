@@ -1,3 +1,5 @@
+{/* @license CC0-1.0 */}
+
 ### Geldige e-mailadressen
 
 Sommige mensen gebruiken een + in hun e-mailadres, bijvoorbeeld om e-mails makkelijker te kunnen groeperen.

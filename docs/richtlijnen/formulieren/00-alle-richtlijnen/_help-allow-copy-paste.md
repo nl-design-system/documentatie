@@ -1,3 +1,5 @@
+{/* @license CC0-1.0 */}
+
 ## Sta knippen en plakken van een wachtwoord toe
 
 Een wachtwoord moet veilig zijn. Als je het knippen en plakken van een wachtwoord verhindert, dwing je gebruikers tot een simpel en goed te onthouden wachtwoord. Dat is nu juist niet de bedoeling.

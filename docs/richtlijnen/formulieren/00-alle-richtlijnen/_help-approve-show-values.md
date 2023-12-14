@@ -1,3 +1,5 @@
+{/* @license CC0-1.0 */}
+
 ## Geef geldige waardes aan voor een invoerveld
 
 Geef geldige waardes aan voor een invoerveld (bijvoorbeeld de datum- of wachtwoordeisen) en niet alleen in de placeholder.

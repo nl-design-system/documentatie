@@ -1,3 +1,5 @@
+{/* @license CC0-1.0 */}
+
 ## Vul bekende informatie in waar mogelijk
 
 Als de gebruiker is ingelogd, gebruik dan bekende informatie om velden vast in te vullen. In DigiD-sessies is bijvoorbeeld al veel informatie beschikbaar, die zou kunnen worden gebruikt om velden vooraf in te vullen.

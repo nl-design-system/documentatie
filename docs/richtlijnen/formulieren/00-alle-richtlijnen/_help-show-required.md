@@ -1,3 +1,5 @@
+{/* @license CC0-1.0 */}
+
 ## Vermeld duidelijk als een veld verplicht is
 
 Laat bezoekers niet raden, maar wees duidelijk welke velden verplicht zijn. Dit kan op een aantal manieren:
