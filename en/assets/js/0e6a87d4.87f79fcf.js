@@ -24,6 +24,7 @@
      authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: "2023-11-21T00:00:00.000Z", image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
      unlisted: !1,
+     prevItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/en/blog/community-online-formulieren" },
      nextItem: { title: "Spacing tokens als systeem voor verticale ruimte", permalink: "/en/blog/spacing-tokens" },
     },
     o = { authorsImageUrls: [void 0] },

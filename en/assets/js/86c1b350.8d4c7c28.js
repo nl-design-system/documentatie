@@ -3,7 +3,7 @@
  [88202],
  {
   7862: (e) => {
-   e.exports = JSON.parse('{"label":"formulieren","permalink":"/en/blog/tags/formulieren","allTagsPath":"/en/blog/tags","count":1,"unlisted":false}');
+   e.exports = JSON.parse('{"label":"formulieren","permalink":"/en/blog/tags/formulieren","allTagsPath":"/en/blog/tags","count":2,"unlisted":false}');
   },
  },
 ]);

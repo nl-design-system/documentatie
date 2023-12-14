@@ -1,8 +1,8 @@
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [11585],
+ [71639],
  {
-  75102: (e, n, t) => {
+  66812: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => o, contentTitle: () => a, default: () => g, frontMatter: () => s, metadata: () => l, toc: () => d });
    var i = t(11527),
     r = t(47214);
@@ -24,6 +24,7 @@
      authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: "2023-11-21T00:00:00.000Z", image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
      unlisted: !1,
+     prevItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/blog/community-online-formulieren" },
      nextItem: { title: "Spacing tokens als systeem voor verticale ruimte", permalink: "/blog/spacing-tokens" },
     },
     o = { authorsImageUrls: [void 0] },

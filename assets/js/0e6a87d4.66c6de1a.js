@@ -1,30 +1,31 @@
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [71639],
+ [11585],
  {
-  66812: (e, n, t) => {
+  75102: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => o, contentTitle: () => a, default: () => g, frontMatter: () => s, metadata: () => l, toc: () => d });
    var i = t(11527),
     r = t(47214);
    const s = { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: new Date("2023-11-21T00:00:00.000Z"), image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
     a = void 0,
     l = {
-     permalink: "/en/blog/wmebv-gebruikerstesten",
+     permalink: "/blog/wmebv-gebruikerstesten",
      source: "@site/blog/2023/20231121-wmebv-gebruikerstesten.md",
      title: "Testen met Wmebv-formulieren: eerste lessen",
      description: "In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.",
      date: "2023-11-21T00:00:00.000Z",
-     formattedDate: "November 21, 2023",
+     formattedDate: "21 november 2023",
      tags: [
-      { label: "NL design system", permalink: "/en/blog/tags/nl-design-system" },
-      { label: "gebruikerstesten", permalink: "/en/blog/tags/gebruikerstesten" },
-      { label: "formulieren", permalink: "/en/blog/tags/formulieren" },
+      { label: "NL design system", permalink: "/blog/tags/nl-design-system" },
+      { label: "gebruikerstesten", permalink: "/blog/tags/gebruikerstesten" },
+      { label: "formulieren", permalink: "/blog/tags/formulieren" },
      ],
      hasTruncateMarker: !1,
      authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Testen met Wmebv-formulieren: eerste lessen", slug: "wmebv-gebruikerstesten", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["NL design system", "gebruikerstesten", "formulieren"], hide_table_of_contents: !1, date: "2023-11-21T00:00:00.000Z", image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" },
      unlisted: !1,
-     nextItem: { title: "Spacing tokens als systeem voor verticale ruimte", permalink: "/en/blog/spacing-tokens" },
+     prevItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/blog/community-online-formulieren" },
+     nextItem: { title: "Spacing tokens als systeem voor verticale ruimte", permalink: "/blog/spacing-tokens" },
     },
     o = { authorsImageUrls: [void 0] },
     d = [
