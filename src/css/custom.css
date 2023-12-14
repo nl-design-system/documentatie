@@ -27,6 +27,8 @@
   --utrecht-button-group-margin-block-start: 2em;
   --utrecht-form-field-margin-block-end: 2em;
   --utrecht-button-group-inline-gap: .25em;
+  --nlds-code-block-background-color: #011627;
+  --utrecht-form-field-error-message-color: red;
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
