@@ -1,4 +1,4 @@
-{/_ @license CC0-1.0 _/}
+{/* @license CC0-1.0 */}
 
 ## Geef geldige waardes aan voor een invoerveld
 
