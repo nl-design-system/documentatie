@@ -1,4 +1,4 @@
-{/* @license CC0-1.0 */}
+<!-- @license CC0-1.0 -->
 
 ## Keur niet te snel af
 
