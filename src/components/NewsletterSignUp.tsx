@@ -8,8 +8,8 @@ import {
   Textbox,
 } from '@utrecht/component-library-react';
 import React, { PropsWithChildren } from 'react';
+import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-// import style from './NewsletterSignUp.module.css';
 
 interface NewsletterSignUpProps {
   listId: string;
@@ -31,6 +31,7 @@ export const NewsletterSignUp = ({
     handleSubmit,
     formState: { errors },
   } = useForm<{ [key: string]: string }>();
+  const form = useRef(null);
 
   return (
     <form
@@ -38,29 +39,29 @@ export const NewsletterSignUp = ({
       action="https://nl-design-system.email-provider.eu/subscribe/post/index.php"
       noValidate
       acceptCharset="utf-8"
+      ref={form}
       onSubmit={handleSubmit((data) => {
         console.log(data);
-
-        /* do actual submitting ?*/
+        form.current.submit();
       })}
     >
       <FormField type="email">
         <Paragraph>
-          <FormLabel htmlFor={emailFieldId}>E-mailadres</FormLabel>
+          <FormLabel htmlFor={`id-${emailFieldId}`}>E-mailadres</FormLabel>
         </Paragraph>
-        {errors.email && (
+        {errors[emailFieldId] && (
           <FormFieldErrorMessage>
-            <Paragraph>{errors.email.message}</Paragraph>
+            <Paragraph>{errors[emailFieldId].message}</Paragraph>
           </FormFieldErrorMessage>
         )}
         <Paragraph>
           <Textbox
-            id={emailFieldId}
+            id={`id-${emailFieldId}`}
             name={emailFieldId}
             type="email"
             aria-required="true"
             autoComplete="email"
-            {...register('email', {
+            {...register(`${emailFieldId}`, {
               required: {
                 value: true,
                 message: 'Dit veld is verplicht, maar het is niet ingevuld.',
@@ -70,7 +71,7 @@ export const NewsletterSignUp = ({
                 message: 'Dit is geen correct emailadres.',
               },
             })}
-            invalid={!!errors.email}
+            invalid={!!errors[emailFieldId]}
           />
         </Paragraph>
       </FormField>
@@ -86,7 +87,7 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={lastNameFieldId}>Achternaam (opioneel)</FormLabel>
+          <FormLabel htmlFor={lastNameFieldId}>Achternaam (optioneel)</FormLabel>
         </Paragraph>
         <Paragraph>
           <Textbox id={lastNameFieldId} name={lastNameFieldId} type="text" autoComplete="family-name" />

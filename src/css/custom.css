@@ -16,21 +16,15 @@
   --nlds-navbar-link-active-border-color: #5eba5b;
   --nlds-sidebar-menu-item-active-border-color: #148839;
   --nlds-code-block-background-color: #011627;
-
-  --nlds-code-block-background-color: #011627;
-  --utrecht-space-around: .5;
-  --utrecht-button-group-margin-block-start: 2em;
-  --utrecht-form-field-margin-block-end: 2em;
-  --utrecht-button-group-inline-gap: .25em;
-
-  --utrecht-button-group-margin-block-start: 2em;
-  --utrecht-form-field-margin-block-end: 2em;
-  --utrecht-button-group-inline-gap: .25em;
-  --nlds-code-block-background-color: #011627;
+  --utrecht-space-around: 1;
+  --utrecht-button-group-margin-block-start: 1em;
+  --utrecht-form-field-margin-block-end: 1em;
+  --utrecht-button-group-inline-gap: 0.25em;
   --utrecht-form-field-error-message-color: red;
-
-  -webkit-font-smoothing: auto !important;
-  -moz-osx-font-smoothing: auto !important;
+  --utrecht-textbox-padding-block-start: 0.5em;
+  --utrecht-textbox-padding-block-end: 0.5em;
+  --utrecht-textbox-padding-inline-start: 0.5em;
+  --utrecht-textbox-padding-inline-end: 0.5em;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
