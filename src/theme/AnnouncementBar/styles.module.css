@@ -3,11 +3,8 @@
 }
 
 .announcementBar {
-  display: flex;
   align-items: center;
-  height: var(--docusaurus-announcement-bar-height);
   background-color: var(--ifm-color-white);
-  color: var(--ifm-color-black);
 
   /*
   Unfortunately we can't make announcement bar render above the navbar
@@ -18,6 +15,9 @@
   z-index: calc(var(--ifm-z-index-fixed) + 1);
   */
   border-bottom: 1px solid var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-black);
+  display: flex;
+  height: var(--docusaurus-announcement-bar-height);
 }
 
 html[data-announcement-bar-initially-dismissed="true"] .announcementBar {
@@ -29,8 +29,8 @@ html[data-announcement-bar-initially-dismissed="true"] .announcementBar {
 }
 
 .announcementBarClose {
-  flex: 0 0 30px;
   align-self: stretch;
+  flex: 0 0 30px;
 }
 
 .announcementBarContent {
@@ -43,7 +43,7 @@ html[data-announcement-bar-initially-dismissed="true"] .announcementBar {
   }
 }
 
-@media (min-width: 997px) {
+@media (width >= 997px) {
   :root {
     --docusaurus-announcement-bar-height: 30px;
   }

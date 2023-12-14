@@ -1,11 +1,11 @@
 .mobile-sidebar__header {
+  align-items: center;
   background-color: var(--nlds-page-header-background-color);
   color: white;
   display: flex;
   justify-content: space-between;
-  text-align: right;
   min-height: 64px;
-  align-items: center;
+  text-align: right;
 }
 
 .navbar-sidebar__header-button {
@@ -17,6 +17,7 @@
 
 .navbar-sidebar__header-button:hover {
   --utrecht-button-hover-color: white;
+
   text-decoration: underline;
   text-underline-offset: 2px;
 }

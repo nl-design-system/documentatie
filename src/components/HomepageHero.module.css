@@ -3,10 +3,11 @@
   --utrecht-document-color: white;
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
+
   background-color: #74295f;
-  padding-block-start: 80px;
   color: white;
   margin-block-end: 48px;
+  padding-block-start: 80px;
 }
 
 .homepage-hero__container {
@@ -34,9 +35,9 @@
 }
 
 .homepage-hero__image {
+  display: flex;
   max-width: 150px;
   width: 25%;
-  display: flex;
   width: 1fr;
 }
 
@@ -44,7 +45,7 @@
   margin-block-start: 48px;
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (width >= 996px) {
   .homepage-hero {
     --utrecht-paragraph-lead-font-size: 24px;
     --utrecht-paragraph-font-size: 20px;

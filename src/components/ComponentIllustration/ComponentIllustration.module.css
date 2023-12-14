@@ -1,18 +1,18 @@
 .component-illustration {
+  display: inline;
   margin: 0;
   padding-inline: var(--component-illustration-padding-inline, 24px);
-  display: inline;
 }
 
 .component-illustration__svg {
+  height: auto;
   max-height: var(--component-illustration-svg-max-height, 185px);
   width: 100%;
-  height: auto;
 }
 
 .component-illustration__caption {
-  position: absolute;
   left: -1000vw;
+  position: absolute;
 }
 
 .component-illustration--help-wanted {

@@ -12,19 +12,17 @@
   --utrecht-heading-2-line-height: 1.3;
   --utrecht-heading-3-line-height: 1.3;
   --utrecht-heading-4-line-height: 1.4;
-
   --nlds-blog-post-footer-background-color: #f2ebe4;
-
   --nlds-navbar-link-active-border-color: #5eba5b;
   --nlds-sidebar-menu-item-active-border-color: #148839;
-
   --nlds-code-block-background-color: #011627;
-
-  -webkit-font-smoothing: auto !important;
-  -moz-osx-font-smoothing: auto !important;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
+
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+
   /* --docusaurus-announcement-bar-height: 50px; */
 }
 .container--narrow {
@@ -42,37 +40,38 @@
 }
 
 .button {
+  border: none;
   box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
-  padding-block-start: var(--utrecht-button-padding-block-start);
-  padding-block-end: var(--utrecht-button-padding-block-end);
-  padding-inline-end: calc(8px + var(--utrecht-button-icon-size) + var(--utrecht-button-padding-inline-end));
-  padding-inline-start: var(--utrecht-button-padding-inline-start);
   font-size: var(--utrecht-button-font-size);
   line-height: var(--utrecht-button-line-height);
+  padding-block-end: var(--utrecht-button-padding-block-end);
+  padding-block-start: var(--utrecht-button-padding-block-start);
+  padding-inline-end: calc(8px + var(--utrecht-button-icon-size) + var(--utrecht-button-padding-inline-end));
+  padding-inline-start: var(--utrecht-button-padding-inline-start);
   position: relative;
-  border: none;
 }
 
 .button.button--primary {
   --ifm-button-background-color: #148839;
   --ifm-button-color: #fff;
+
   border-color: #148839;
 }
 
 .button--primary::after {
-  content: " ";
-  position: absolute;
-  display: block;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: var(--gc-button-icon-size);
   background-color: #0b732c;
   background-image: url("../icons/arrow-right-white.svg");
-  background-size: 10px 16px;
-  background-repeat: no-repeat;
-  transition: background-color 0.2s;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px 16px;
+  bottom: 0;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.2s;
+  width: var(--gc-button-icon-size);
 }
 
 .button.button--primary:hover {
@@ -88,25 +87,25 @@
 }
 
 .button--secondary::after {
-  content: " ";
-  position: absolute;
-  display: block;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 32px;
   background-color: #d1dfe3;
   background-image: url("../icons/arrow-right-blue.svg");
-  background-size: 10px 16px;
-  background-repeat: no-repeat;
-  transition: background-color 0.2s;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px 16px;
+  bottom: 0;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.2s;
+  width: 32px;
 }
 
 .button.button--secondary:hover {
   background-color: #004152;
-  color: white;
   border-color: #004152;
+  color: white;
 }
 
 .button--secondary:hover::after {
@@ -115,8 +114,8 @@
 }
 
 .footer {
-  width: 100%;
   padding-block: 16px;
+  width: 100%;
 }
 
 .footer--dark {
@@ -126,13 +125,13 @@
 }
 
 .footer__items {
+  display: grid;
+  gap: 36px;
+  grid-auto-flow: column;
+  justify-content: flex-start;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: flex-start;
-  gap: 36px;
 }
 
 .footer__links {
@@ -149,13 +148,13 @@
 }
 
 .footer__items {
+  display: grid;
+  gap: 36px;
+  grid-auto-flow: column;
+  justify-content: flex-start;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: flex-start;
-  gap: 36px;
 }
 
 .footer__links {
@@ -172,28 +171,30 @@
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(0 0 0 / 10%);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0 0 0 / 30%);
 }
 
 /* Overwrite docusaurus styling but use the classname to enable lookup for content position by docusaurus */
 .navbar {
+  --ifm-link-hover-decoration: none;
+
   display: unset;
   height: auto;
   padding: 0;
-  --ifm-link-hover-decoration: none;
 }
 
 .navbar__link {
   --utrecht-link-text-decoration: none;
   --utrecht-link-color: currentColor;
   --utrecht-link-focus-color: #00303d;
+
   font-size: 18px;
   position: relative;
   text-decoration: none;
@@ -202,12 +203,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 /* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
 .navbar__link--active:not(.navbar__brand, .utrecht-button-link),
 .navbar__link:not(.utrecht-button-link):hover {
+  border-block-end-color: var(--nlds-navbar-link-active-border-color, transparent);
   border-block-end-style: solid;
   border-block-end-width: 4px;
-  border-block-end-color: var(--nlds-navbar-link-active-border-color, transparent);
+  border-block-start-color: transparent;
   border-block-start-style: solid;
   border-block-start-width: 4px;
-  border-block-start-color: transparent;
 }
 
 .navbar--dark {
@@ -217,18 +218,18 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .navbar__inner {
-  min-height: 64px;
   align-items: center;
   flex-wrap: nowrap;
+  min-height: 64px;
 }
 .table-of-contents {
   font-size: 18px;
 }
 
 .nlds-theme {
-  min-height: 100vh;
   align-content: inherit;
   font-weight: 400;
+  min-height: 100vh;
 }
 
 .main-layout {
@@ -272,14 +273,14 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 code,
 pre {
   font-family: "Fira Code VF" !important;
+  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
   font-size: 16px;
   vertical-align: 1%;
-  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
 }
 code {
-  border-inline-start: 0;
-  border-inline-end: 0;
   background-color: transparent !important;
+  border-inline-end: 0;
+  border-inline-start: 0;
   border-width: 0;
   padding: 0;
 }
@@ -326,10 +327,10 @@ li a {
 }
 
 .navbar__item:not(.utrecht-button-link, .utrecht-button) {
+  align-items: center;
+  display: flex;
   height: 100%;
   padding-inline: 0;
-  display: flex;
-  align-items: center;
 }
 
 .navbar {
@@ -363,27 +364,28 @@ li a {
 .menu__link {
   --utrecht-link-text-decoration: none;
   --utrecht-link-color: var(--nlds-interaction-color);
-  text-decoration: none;
+
   border-radius: 0;
-  margin-inline-start: 4px;
   line-height: 1.5;
+  margin-inline-start: 4px;
   padding-block: 0.75rem;
+  text-decoration: none;
 }
 
 .menu__link--active,
 .menu__link:active {
-  background-color: hsla(0, 0%, 0%, 0.05);
-  margin-inline-start: 0;
-  border-inline-start-width: 4px;
-  border-inline-start-style: solid;
+  background-color: hsl(0 0% 0% / 5%);
   border-inline-start-color: var(--nlds-sidebar-menu-item-active-border-color);
+  border-inline-start-style: solid;
+  border-inline-start-width: 4px;
+  margin-inline-start: 0;
 }
 
 .menu__link:hover {
-  margin-inline-start: 0;
-  border-inline-start-width: 4px;
-  border-inline-start-style: solid;
   border-inline-start-color: var(--nlds-sidebar-menu-item-active-border-color);
+  border-inline-start-style: solid;
+  border-inline-start-width: 4px;
+  margin-inline-start: 0;
 }
 
 .menu__list-item-collapsible {
@@ -401,6 +403,7 @@ li a {
 .navbar-sidebar__item .menu__link--active,
 .navbar-sidebar__item .menu__link:active {
   --utrecht-link-color: white;
+
   background-color: var(--nlds-menu-item-selected-background-color);
 }
 
@@ -418,7 +421,7 @@ li a {
 
 .theme-doc-sidebar-item-link-level-3,
 .theme-doc-sidebar-item-category-level-3 {
-  font-weight: normal;
+  font-weight: 400;
   padding-inline-start: 0;
 }
 
@@ -444,17 +447,17 @@ li a {
   margin-block-end: 2em !important;
 }
 
-@media (min-width: 997px) {
+@media (width >= 997px) {
   .navbar__items--left {
     max-width: 945px;
   }
 
   .navbar__inner {
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
     align-items: center;
-    min-height: 80px;
     gap: 20px;
+    min-height: 80px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
   }
 
   .navbar__items {
@@ -466,7 +469,7 @@ li a {
   }
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (width <= 996px) {
   .navbar .navbar__item {
     display: none;
   }
@@ -503,7 +506,7 @@ li a {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .footer__items {
     grid-auto-flow: row;
   }
@@ -524,13 +527,13 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   padding-inline: 24px;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (width >= 1150px) {
   .navbar__items--left {
     gap: 20px;
   }
 }
 
-@media (min-width: 997px) {
+@media (width >= 997px) {
   .nlds-theme {
     --docusaurus-announcement-bar-height: 80px;
   }
@@ -540,37 +543,37 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
   padding: 0;
 }
 .dsw-usps li {
-  padding: 0;
-  display: inline;
-  list-style: none;
-  font-size: 1.25em;
   color: var(--nlds-document-subtle-color);
+  display: inline;
+  font-size: 1.25em;
+  list-style: none;
+  padding: 0;
 }
 .dsw-usps li:not(:last-child)::after {
   content: "∙";
   display: inline-block;
-  padding-right: 0.25em;
   margin-left: 0.25em;
+  padding-right: 0.25em;
 }
 .dsw-signup {
-  text-decoration: none;
   background-color: var(--utrecht-button-primary-action-background-color);
-  padding: 0.5em 1em;
-  margin-top: 1em;
   border-radius: 0.25em;
   color: var(--utrecht-button-primary-action-color);
   display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  text-decoration: none;
 }
 .dsw-signup:hover {
-  text-decoration: inherit;
   color: var(--utrecht-button-primary-action-color);
+  text-decoration: inherit;
 }
 .dsw-signup-main {
-  font-weight: bold;
+  font-weight: 700;
 }
 .dsw-signup-sup {
-  font-size: 0.65em;
   display: block;
+  font-size: 0.65em;
 }
 
 /* HACK: these fixes need to be made in utrecht too */
@@ -606,6 +609,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
     1px
   ) !important;
 }
+
 /* End HACK */
 
 img {
@@ -625,8 +629,8 @@ img {
 }
 
 abbr[title] {
-  text-decoration: none;
   pointer-events: none;
+  text-decoration: none;
 }
 
 .utrecht-breadcrumb-nav {
@@ -639,7 +643,7 @@ abbr[title] {
 
 /* WCAG EM rapport */
 .wcag-em dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 .wcag-em td,
 .wcag-em th {
@@ -654,9 +658,9 @@ abbr[title] {
 
 /* CSS Richtlijnen */
 .nlds-dont {
+  border: 2px solid #c00;
   margin: 20px;
   padding: 20px;
-  border: 2px solid #cc0000;
 }
 
 .nlds-icon-ext {
@@ -667,7 +671,7 @@ abbr[title] {
 }
 .docs-doc-page .utrecht-html label,
 .docs-doc-page .utrecht-html legend {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .docs-doc-page input[type="text"],
@@ -680,8 +684,8 @@ abbr[title] {
   margin-bottom: 20px;
 }
 .docs-doc-page div.button {
-  border-radius: 8px;
   border: 1px solid #223c61;
+  border-radius: 8px;
   font-weight: 700;
   padding-inline-end: 12px;
 }
@@ -692,8 +696,8 @@ abbr[title] {
 }
 
 .docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module input[type="text"]::placeholder {
-  opacity: 1;
   color: #757575;
+  opacity: 100%;
 }
 
 .sr-only {
@@ -710,55 +714,56 @@ abbr[title] {
 }
 
 code[class*="language-"] {
-  color: var(--nlds-code-block-code-color);
   background-color: var(--nlds-code-block-background-color);
-  font-family: var(--nlds-code-block-font-family, monospace);
+  color: var(--nlds-code-block-code-color);
   direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
+  font-family: var(--nlds-code-block-font-family, monospace);
+  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
+  -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  hyphens: var(--nlds-code-block-hyphens, none);
   line-height: var(--nlds-code-block-line-height, 1.5);
+  ms-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
-  -moz-hyphens: var(--nlds-code-block-hyphens, none);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
-  hyphens: var(--nlds-code-block-hyphens, none);
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
 }
 
 pre[class*="language-"] {
+  background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-color);
   font-family: var(--nlds-code-block-font-family, monospace);
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: var(--nlds-code-block-line-height, 1.5);
   font-size: var(--nlds-code-block-font-size, 1em);
+  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
+  -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  hyphens: var(--nlds-code-block-hyphens, none);
+  line-height: var(--nlds-code-block-line-height, 1.5);
+  margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em);
+  margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em);
+  margin-inline-end: var(--nlds-code-block-margin-inline-end, 0);
+  margin-inline-start: var(--nlds-code-block-margin-inline-start, 0);
+  ms-hyphens: var(--nlds-code-block-hyphens, none);
+  overflow: auto;
+  padding-block-end: var(--nlds-code-block-padding-block-end, 1em);
+  padding-block-start: var(--nlds-code-block-padding-block-start, 1em);
+  padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em);
+  padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em);
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  -webkit-hyphens: var(--nlds-code-block-hyphens, none);
-  -moz-hyphens: var(--nlds-code-block-hyphens, none);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
-  hyphens: var(--nlds-code-block-hyphens, none);
-  padding-inline-start: var(--nlds-code-block-padding-inline-start, 1em);
-  padding-inline-end: var(--nlds-code-block-padding-inline-end, 1em);
-  padding-block-start: var(--nlds-code-block-padding-block-start, 1em);
-  padding-block-end: var(--nlds-code-block-padding-block-end, 1em);
-  margin-inline-start: var(--nlds-code-block-margin-inline-start, 0);
-  margin-inline-end: var(--nlds-code-block-margin-inline-end, 0);
-  margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em);
-  margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em);
-  overflow: auto;
-  background-color: var(--nlds-code-block-background-color);
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
 }
 
 pre > code {
   padding: 0 !important;
+
   /* avoid double spacing */
 }
 
@@ -767,16 +772,16 @@ ul + .nlds-guideline_src-components-Guideline-module {
   margin-block-start: var(--nlds-code-block-margin-inline-start, 1.5em);
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
-  text-shadow: none;
   background: var(--nlds-code-block-selected-background-color);
+  text-shadow: none;
 }
 
 code.language-css .token.string {
@@ -811,46 +816,46 @@ pre {
   --nlds-code-block-margin-inline-start: 0;
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
-  --nlds-code-block-selected-background-color: rgba(29, 59, 83, 0.99);
-  --nlds-code-block-comment-color: rgb(99, 119, 119);
+  --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
+  --nlds-code-block-comment-color: rgb(99 119 119);
   --nlds-code-block-comment-font-style: italic;
-  --nlds-code-block-prolog-color: rgb(99, 119, 119);
+  --nlds-code-block-prolog-color: rgb(99 119 119);
   --nlds-code-block-prolog-font-style: italic;
-  --nlds-code-block-cdata-color: rgb(99, 119, 119);
+  --nlds-code-block-cdata-color: rgb(99 119 119);
   --nlds-code-block-cdata-font-style: italic;
-  --nlds-code-block-punctuation-color: rgb(199, 146, 234);
-  --nlds-code-block-namespace-color: rgb(178, 204, 214);
-  --nlds-code-block-deleted-color: rgba(239, 83, 80, 0.56);
+  --nlds-code-block-punctuation-color: rgb(199 146 234);
+  --nlds-code-block-namespace-color: rgb(178 204 214);
+  --nlds-code-block-deleted-color: rgb(239 83 80 / 56%);
   --nlds-code-block-deleted-font-style: italic;
-  --nlds-code-block-symbol-color: rgb(128, 203, 196);
-  --nlds-code-block-property-color: rgb(128, 203, 196);
-  --nlds-code-block-tag-color: rgb(127, 219, 202);
-  --nlds-code-block-operator-color: rgb(127, 219, 202);
-  --nlds-code-block-boolean-color: rgb(255, 88, 116);
-  --nlds-code-block-number-color: rgb(247, 140, 108);
-  --nlds-code-block-constant-color: rgb(130, 170, 255);
-  --nlds-code-block-function-color: rgb(130, 170, 255);
-  --nlds-code-block-builtin-color: rgb(130, 170, 255);
-  --nlds-code-block-char-color: rgb(130, 170, 255);
-  --nlds-code-block-selector-color: rgb(199, 146, 234);
+  --nlds-code-block-symbol-color: rgb(128 203 196);
+  --nlds-code-block-property-color: rgb(128 203 196);
+  --nlds-code-block-tag-color: rgb(127 219 202);
+  --nlds-code-block-operator-color: rgb(127 219 202);
+  --nlds-code-block-boolean-color: rgb(255 88 116);
+  --nlds-code-block-number-color: rgb(247 140 108);
+  --nlds-code-block-constant-color: rgb(130 170 255);
+  --nlds-code-block-function-color: rgb(130 170 255);
+  --nlds-code-block-builtin-color: rgb(130 170 255);
+  --nlds-code-block-char-color: rgb(130 170 255);
+  --nlds-code-block-selector-color: rgb(199 146 234);
   --nlds-code-block-selector-font-style: italic;
-  --nlds-code-block-doctype-color: rgb(199, 146, 234);
+  --nlds-code-block-doctype-color: rgb(199 146 234);
   --nlds-code-block-doctype-font-style: italic;
-  --nlds-code-block-attr-name-color: rgb(173, 219, 103);
+  --nlds-code-block-attr-name-color: rgb(173 219 103);
   --nlds-code-block-attr-name-font-style: italic;
-  --nlds-code-block-inserted-color: rgb(173, 219, 103);
+  --nlds-code-block-inserted-color: rgb(173 219 103);
   --nlds-code-block-inserted-font-style: italic;
-  --nlds-code-block-string-color: rgb(173, 219, 103);
-  --nlds-code-block-url-color: rgb(173, 219, 103);
-  --nlds-code-block-entity-color: rgb(173, 219, 103);
-  --nlds-code-block-css-token-color: rgb(173, 219, 103);
-  --nlds-code-block-style-token-color: rgb(173, 219, 103);
-  --nlds-code-block-class-name-color: rgb(255, 203, 139);
-  --nlds-code-block-atrule-color: rgb(255, 203, 139);
-  --nlds-code-block-attr-value-color: rgb(255, 203, 139);
-  --nlds-code-block-regex-color: rgb(214, 222, 235);
-  --nlds-code-block-important-color: rgb(214, 222, 235);
-  --nlds-code-block-variable-color: rgb(214, 222, 235);
+  --nlds-code-block-string-color: rgb(173 219 103);
+  --nlds-code-block-url-color: rgb(173 219 103);
+  --nlds-code-block-entity-color: rgb(173 219 103);
+  --nlds-code-block-css-token-color: rgb(173 219 103);
+  --nlds-code-block-style-token-color: rgb(173 219 103);
+  --nlds-code-block-class-name-color: rgb(255 203 139);
+  --nlds-code-block-atrule-color: rgb(255 203 139);
+  --nlds-code-block-attr-value-color: rgb(255 203 139);
+  --nlds-code-block-regex-color: rgb(214 222 235);
+  --nlds-code-block-important-color: rgb(214 222 235);
+  --nlds-code-block-variable-color: rgb(214 222 235);
 }
 
 .theme-doc-sidebar-container {

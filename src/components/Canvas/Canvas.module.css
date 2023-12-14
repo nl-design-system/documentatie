@@ -1,25 +1,26 @@
 .nlds-canvas {
   --nlds-container-border-color: hsl(193 24% 85%);
+
   border: 1px solid var(--nlds-container-border-color);
 }
 
 .nlds-canvas--distanced {
-  margin-block-start: 16px;
   margin-block-end: 8px;
+  margin-block-start: 16px;
 }
 
 .nlds-canvas__example {
   background-color: hsl(30 33% 96%);
-  padding-inline: 16px;
   padding-block: 16px;
+  padding-inline: 16px;
 }
 .nlds-canvas__example:empty {
   padding: 0;
 }
 
 .nlds-canvas__code-block--user-select-none {
-  user-select: none;
   cursor: not-allowed;
+  user-select: none;
 }
 
 .nlds-canvas__toolbar {
@@ -28,13 +29,13 @@
 }
 
 .nlds-canvas__button {
-  --utrecht-button-subtle-background-color: hsla(0, 0%, 100%, 0.1);
+  --utrecht-button-subtle-background-color: hsl(0 0% 100% / 10%);
   --utrecht-button-subtle-color: #fff;
   --utrecht-button-subtle-font-weight: normal;
-  --utrecht-button-subtle-hover-background-color: hsla(0, 0%, 100%, 0.2);
+  --utrecht-button-subtle-hover-background-color: hsl(0 0% 100% / 20%);
   --utrecht-button-subtle-hover-color: #fff;
   --utrecht-button-subtle-hover-font-weight: normal;
-  --utrecht-button-subtle-active-background-color: hsla(0, 0%, 100%, 0.1);
+  --utrecht-button-subtle-active-background-color: hsl(0 0% 100% / 10%);
   --utrecht-button-subtle-active-color: #fff;
   --utrecht-button-subtle-active-font-weight: normal;
   --utrecht-button-subtle-focus-background-color: var(--nlds-focus-background-color);

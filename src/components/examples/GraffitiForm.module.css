@@ -1,6 +1,6 @@
 .example-form {
   --utrecht-space-around: 1;
-  margin-block-end: 2em;
+
   /* maximum character width of a number in the current font */
   --number-inline-size: calc(0.667 * 1ch + 0.332 * 1em);
 
@@ -13,6 +13,8 @@
   --_char-inline-size: var(--char-inline-size);
   --utrecht-radio-button-size: 24px;
   --utrecht-action-submit-cursor: pointer;
+
+  margin-block-end: 2em;
 }
 
 .utrecht-textbox--example-house-number,
@@ -42,6 +44,7 @@
   --_char-inline-size: var(--number-inline-size);
 
   /* max length for house number can depend on the region */
+
   /* United States might have house numbers in the ten thousands, The Netherlands no house number highter than 9999 */
   --max-length: 5;
 }
@@ -51,6 +54,7 @@
   --_char-inline-size: var(--number-inline-size);
 
   /* max length for house number can depend on the region */
+
   /* United States might have house numbers in the ten thousands, The Netherlands no house number highter than 9999 */
   --max-length: 30; /* picked 30 at random */
 }
@@ -58,12 +62,14 @@
 .utrecht-textbox--example-given-name,
 .utrecht-textbox--example-family-name {
   --_char-inline-size: var(--letter-inline-size);
+
   /* space for 10 digits and 3 white space separators */
   --max-length: 30;
 }
 
 .utrecht-textbox--example-tel-national {
   --_char-inline-size: var(--number-inline-size);
+
   /* space for 10 digits and 3 white space separators */
   --max-length: 10;
 }
@@ -93,6 +99,7 @@
 
 .utrecht-textbox--example-postal-code-nl {
   /* ideally postal code is a monospaced font */
+
   /* should fit both wide and small postal codes: "1111 II" and "8888 WW" */
   --_char-inline-size: var(--alphanumeric-inline-size);
   --max-length: 7; /* TODO: Support 95% percent of length, randomly picked 5 and randomly pick 95% */
@@ -100,6 +107,7 @@
 
 .utrecht-textbox--example-woonplaats {
   /* max length 30 is inaccurate, it is based on the longest dutch municipality name as of 2023-05-22 */
+
   /* Kollumerland en Nieuwkruisland */
   --max-length: 30;
 }

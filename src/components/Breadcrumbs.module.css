@@ -1,23 +1,24 @@
 .breadcrumbsContainer {
   --ifm-breadcrumb-size-multiplier: 0.8;
+
   margin-bottom: 0.8rem;
 }
 
 .breadcrumbs {
-  display: inline-flex;
-  padding-inline-start: 0;
   align-items: center;
+  display: inline-flex;
   gap: 0.5rem;
+  padding-inline-start: 0;
 }
 
 .breadcrumbs--mobile {
   display: none;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (width <= 996px) {
   .breadcrumbs--mobile {
-    display: inline-flex;
     color: var(--nlds-interaction-color);
+    display: inline-flex;
   }
 
   .breadcrumbs--desktop {
