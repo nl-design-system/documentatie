@@ -7,20 +7,20 @@
 }
 
 .bingo__number {
-  border: 1px solid black;
   background-color: white;
+  border: 1px solid black;
   position: relative;
 }
 
 .bingo__input {
-  position: absolute;
   left: -100vw;
+  position: absolute;
 }
 
 .bingo__label {
   display: block;
-  text-align: center;
   padding: 10px 0;
+  text-align: center;
 }
 
 .bingo__number:focus-within > .bingo__label {

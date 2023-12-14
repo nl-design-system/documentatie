@@ -1,20 +1,20 @@
 .status-visual__status {
-  padding-inline-end: 24px;
-  padding-inline-start: 24px;
-  padding-block-end: 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border-bottom: 2px solid var(--nlds-status-border-color);
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 32px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  text-align: center;
 }
 
 .status-visual__connector {
-  display: block;
   color: var(--nlds-status-border-color);
+  display: block;
   height: 24px;
-  width: 24px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .status-visual__status--help-wanted {

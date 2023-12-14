@@ -10,7 +10,7 @@
   text-transform: lowercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .component-card {
     --component-illustration-svg-max-height: none;
     --cardgroup-card-max-width: 400px;

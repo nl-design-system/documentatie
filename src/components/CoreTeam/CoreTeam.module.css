@@ -1,12 +1,12 @@
 .core-team {
+  align-items: baseline;
+  align-items: center;
   display: grid;
   gap: 8px;
-  max-height: 200px;
-  align-items: baseline;
-  margin-block-start: 30px;
-  width: 100%;
   grid-auto-flow: column;
-  align-items: center;
+  margin-block-start: 30px;
+  max-height: 200px;
+  width: 100%;
 }
 
 .core-team__card {
@@ -17,8 +17,8 @@
 }
 
 .core-team__content {
-  padding-block-start: 24px;
   padding-block-end: 36px;
+  padding-block-start: 24px;
   padding-inline-end: 24px;
   padding-inline-start: 24px;
 }
@@ -28,26 +28,27 @@
 }
 
 .core-team__heading-subtitle {
-  padding-block-start: 8px;
   font-size: 20px;
+  padding-block-start: 8px;
 }
 .core-team__description {
   padding-block-end: 24px;
 }
 
 .core-team__illustration {
-  display: flex;
-  align-items: flex-end;
   --card-illustration-background-color: var(--nlds-document-inverse-background-color);
+
+  align-items: flex-end;
+  display: flex;
 }
 
 .core-team__avatar {
   height: 150px;
-  padding-inline: 8px;
   padding-block-start: 24px;
+  padding-inline: 8px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .core-team__card {
     --cardgroup-card-max-width: auto;
   }

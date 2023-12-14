@@ -1,16 +1,16 @@
 .story {
-  border: 1px solid #dddddd;
-  border-radius: 4px;
   background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .story__link {
-  text-align: right;
-  padding: 10px 20px;
-  display: block;
-  text-decoration: none;
-  color: var(--ifm-background-color);
   background-color: var(--ifm-button-color);
+  color: var(--ifm-background-color);
+  display: block;
+  padding: 10px 20px;
+  text-align: right;
+  text-decoration: none;
 }
 
 .story__link:hover {

@@ -1,9 +1,9 @@
-@media (min-width: 997px) {
+@media (width >= 997px) {
   .menu {
     flex-grow: 1;
-    padding-inline-start: 0.5rem;
-    padding-inline-end: 0;
     padding-block: 0.5rem;
+    padding-inline-end: 0;
+    padding-inline-start: 0.5rem;
   }
 
   .menuWithAnnouncementBar {

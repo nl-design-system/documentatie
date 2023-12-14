@@ -1,12 +1,12 @@
-@media (min-width: 997px) {
+@media (width >= 997px) {
   .sidebar {
+    border-right: 1px solid var(--ifm-toc-border-color);
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: var(--doc-sidebar-width);
-    border-right: 1px solid var(--ifm-toc-border-color);
-    will-change: width;
     transition: width var(--ifm-transition-fast) ease;
+    width: var(--doc-sidebar-width);
+    will-change: width;
   }
 
   .sidebarWithHideableNavbar {
@@ -24,7 +24,7 @@
   }
 
   .sidebar__content--hidden {
-    opacity: 0;
+    opacity: 0%;
     visibility: hidden;
   }
 
@@ -33,20 +33,20 @@
     --utrecht-button-font-size: 18px;
     --utrecht-button-subtle-color: currentColor;
 
-    display: flex;
     align-items: center;
-    text-decoration: none;
-    margin: 0;
-    min-height: var(--ifm-navbar-height);
-    max-height: var(--ifm-navbar-height);
+    display: flex;
     justify-content: flex-start !important;
+    margin: 0;
+    max-height: var(--ifm-navbar-height);
+    min-height: var(--ifm-navbar-height);
     padding-inline-start: 24px;
+    text-decoration: none;
   }
 
   .sidebar__toggle-button--icon-only {
-    padding: 0;
-    margin: 0;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }

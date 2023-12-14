@@ -7,7 +7,7 @@
 
 .definition__title {
   display: inline;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .definition__title::after {
@@ -15,6 +15,6 @@
 }
 
 .definition__data {
-  margin: 0;
   display: inline;
+  margin: 0;
 }

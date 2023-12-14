@@ -8,8 +8,9 @@ p + .nlds-guideline {
 .nlds-guideline {
   --utrecht-space-around: 0;
   --utrecht-code-font-size: 16px;
+
   border: 1px solid var(--nlds-container-border-color);
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
   margin-block-end: 40px;
 }
 .nlds-guideline + .nlds-guideline {
@@ -22,19 +23,20 @@ p + .nlds-guideline {
 
 .nlds-guideline__example {
   background-color: var(--nlds-document-inverse-background-color);
+
   /* padding: 20px; */
 }
 
 .nlds-guideline select {
-  margin-bottom: 0.5em;
   display: block;
+  margin-bottom: 0.5em;
 }
 
 .nlds-guideline__icon {
   height: 20px;
-  width: 20px;
-  vertical-align: middle;
   margin-inline-end: 8px;
+  vertical-align: middle;
+  width: 20px;
 }
 
 .nlds-guideline__title {
@@ -42,9 +44,10 @@ p + .nlds-guideline {
 }
 
 .nlds-guideline__badge {
-  margin-block-end: 16px;
-  font-size: 20px;
   --utrecht-paragraph-font-weight: bold;
+
+  font-size: 20px;
+  margin-block-end: 16px;
 }
 
 .nlds-guideline__badge--dont {
@@ -53,5 +56,6 @@ p + .nlds-guideline {
 
 .nlds-guideline__badge--do {
   --utrecht-paragraph-color: var(--nlds-valid-color);
+
   color: var(--nlds-valid-color);
 }
