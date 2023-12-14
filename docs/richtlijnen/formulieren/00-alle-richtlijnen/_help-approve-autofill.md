@@ -1,4 +1,4 @@
-{/* @license CC0-1.0 */}
+{/_ @license CC0-1.0 _/}
 
 ## Vul bekende informatie in waar mogelijk
 

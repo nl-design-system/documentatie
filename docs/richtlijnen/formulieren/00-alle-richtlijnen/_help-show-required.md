@@ -1,4 +1,4 @@
-{/* @license CC0-1.0 */}
+{/_ @license CC0-1.0 _/}
 
 ## Vermeld duidelijk als een veld verplicht is
 
