@@ -44,15 +44,15 @@ export const NewsletterSignUp = ({
         /* do actual submitting ?*/
       })}
     >
-      <input type="hidden" name="next" value={thanksPage} />
-      <input type="hidden" name="a" value="iyihtuzpiq" />
-      <input type="hidden" name="l" value={listId} />
-
       <FormField type="email">
         <Paragraph>
           <FormLabel htmlFor={emailFieldId}>E-mailadres</FormLabel>
         </Paragraph>
-        {errors.email && (<FormFieldErrorMessage>{errors.email.message}</FormFieldErrorMessage>)}
+        {errors.email && (
+          <FormFieldErrorMessage>
+            <Paragraph>{errors.email.message}</Paragraph>
+          </FormFieldErrorMessage>
+        )}
         <Paragraph>
           <Textbox
             id={emailFieldId}
@@ -67,7 +67,7 @@ export const NewsletterSignUp = ({
               },
               pattern: {
                 value: /\S+@\S+\.\S+/,
-                message: 'Dit is geen correct emailadres'
+                message: 'Dit is geen correct emailadres.',
               },
             })}
             invalid={!!errors.email}
@@ -93,8 +93,17 @@ export const NewsletterSignUp = ({
         </Paragraph>
       </FormField>
 
-      <input name="osnD9cWRI3" autoComplete="on" id="id-osnD9cWRI3" type="hidden" value="NLDS website" />
+      <ButtonGroup>
+        <Button type="submit" appearance="primary-action-button">
+          Aanmelden
+        </Button>
+      </ButtonGroup>
 
+      <input type="hidden" name="next" value={thanksPage} />
+      <input type="hidden" name="a" value="iyihtuzpiq" />
+      <input type="hidden" name="l" value={listId} />
+      <input name="osnD9cWRI3" autoComplete="on" id="id-osnD9cWRI3" type="hidden" value="NLDS website" />
+      {/* honeypot */}
       <input
         autoComplete="new-password"
         type="email"
@@ -104,12 +113,6 @@ export const NewsletterSignUp = ({
         className="sr-only"
         aria-hidden="true"
       />
-
-      <ButtonGroup>
-        <Button type="submit" appearance="primary-action-button">
-          Aanmelden
-        </Button>
-      </ButtonGroup>
     </form>
   );
 };
