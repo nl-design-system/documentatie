@@ -10,7 +10,7 @@ hide_table_of_contents: false
 date: 2023-12-14
 ---
 
-Op donderdag 7 december kwam de [Community Online Formulieren](https://www.gebruikercentraal.nl/community-online-formulieren/) van Gebruiker Centraal bij elkaar. Francesca Vonk en Rian Rietveld waren namens het NL Design System aanwezig om meer te vertellen over de richtlijnen voor formulieren én over het testen met gebruikers.
+Op donderdag 7 december kwam de [Community Online Formulieren](https://www.gebruikercentraal.nl/community-online-formulieren/) van Gebruiker Centraal bij elkaar. Francesca Vonk en Rian Rietveld waren uitgenodigd om meer te vertellen over de richtlijnen voor formulieren én over het testen met gebruikers.
 
 <!-- truncate -->
 
