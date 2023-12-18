@@ -38,7 +38,7 @@ jobs:
           pnpm run --if-present test
 
       - name: "Retain build artifact: website"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: website
           path: build/
