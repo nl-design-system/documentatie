@@ -63,7 +63,7 @@ Enkele tips om niet alleen op kleur te vertrouwen:
 - Voeg een icoon toe aan een foutmelding en maak de border van het formulier element dikker.
 - Gebruik vormen of patronen als extra onderscheidend element voor datavisualisatie.
 
-Er zijn verschillende vormen van kleurenblindheid. Je kunt testen hoe jouw ontwerp overkomt op iemand die kleurenblind is. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je de [Spectrum plugin voor Google Chrome](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb) kunnen gebruiken. Deze plugin geeft aan hoe jouw ontwerp per vorm van kleurenblindheid wordt ervaren.
+Er zijn verschillende vormen van kleurenblindheid. Je kunt testen hoe jouw ontwerp overkomt op iemand die kleurenblind is. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je de [Colorblindly plugin voor Google Chrome](https://chromewebstore.google.com/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg) kunnen gebruiken. Deze plugin geeft aan hoe jouw ontwerp per vorm van kleurenblindheid wordt ervaren.
 
 ### Gebruik kleur met een doel.
 
@@ -141,7 +141,7 @@ Online tool waarbij je twee kleuren kunt invullen. Vervolgens kun je checken hoe
 [Viz palette - Elijah Meeks & Susie Lu](https://projects.susielu.com/viz-palette)<br/>
 Online tool waarbij je meerdere kleuren kunt invullen specifiek voor data visualisatie. Vervolgens kun je checken hoe deze kleurcombinatie overkomt bij verschillende visuele beperkingen.
 
-[Chrome plugin: Spectrum](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb)<br/>
+[Chrome plugin: Colorblindly](https://chromewebstore.google.com/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg)<br/>
 Broser plugin waarmee je kunt checken hoe een webpagina overkomt bij verschillende vormen van kleurenblindheid.
 
 [Orange you accessible?](https://www.bounteous.com/insights/2019/03/22/orange-you-accessible-mini-case-study-color-ratio/)<br/>
