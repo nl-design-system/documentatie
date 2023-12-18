@@ -43,7 +43,7 @@ Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het AR
 ```
 
 **`Let op`**: Gebruik liever geen `required` in een invoerveld, dit vereist ook het attribuut [novalidate](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate) als attribute op in het `<form>` element.
-Dit voorkomt dat de HTML5-formuliervalidatie in werking treedt. Voor `aria-required="true"` hoeft dit niet. Alhoewel het gebruik van `required` in plaats van `aria-required` niet fout is, geven we hierom de voorkeur aan `aria-required`.
+Dit voorkomt dat de formuliervalidatie van de browser in werking treedt. Voor `aria-required="true"` hoeft dit niet. Alhoewel het gebruik van `required` in plaats van `aria-required` niet fout is, geven we hierom de voorkeur aan `aria-required`.
 
 ```html
 <form novalidate>
