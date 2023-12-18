@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-## Vermeld duidelijk als een veld verplicht is
+## Vermeld duidelijk of een veld verplicht is
 
 Laat bezoekers niet raden, maar wees duidelijk welke velden verplicht zijn. Dit kan op een aantal manieren:
 
@@ -32,7 +32,7 @@ Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. 
 
 ### Screenreaderfeedback
 
-Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-atribuut `aria-required="true"`.
+Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-attribuut `aria-required="true"`.
 
 ```html
 <form>
