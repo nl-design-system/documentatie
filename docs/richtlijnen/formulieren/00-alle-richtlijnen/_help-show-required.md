@@ -32,7 +32,7 @@ Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. 
 
 ### Screenreaderfeedback
 
-Vertel altijd aan een screenreadergebruiker dat een veld verplicht is met het ARIA-attribuut `aria-required="true"`.
+Vertel altijd aan een gebruiker van hulptechnologieën (als screenreaders) dat een veld verplicht is met het ARIA-attribuut `aria-required="true"`.
 
 ```html
 <form>
