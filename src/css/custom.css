@@ -695,11 +695,21 @@ abbr[title] {
   cursor: pointer;
 }
 
+.docs-doc-page .utrecht-html input[type="text"]::placeholder,
 .docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module input[type="text"]::placeholder {
+  opacity: 1;
   color: #757575;
   opacity: 100%;
 }
 
+.docs-doc-page .utrecht-html button {
+  margin: 16px 0;
+}
+
+.docs-doc-page .utrecht-html input[type="text" i]:invalid {
+  border-color: #7a8aa0;
+  border-width: 1px;
+}
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
