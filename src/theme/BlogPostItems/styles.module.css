@@ -3,7 +3,7 @@
   --utrecht-badge-list-item-margin-inline: 16px;
   --utrecht-badge-font-weight: 400;
   --utrecht-badge-background-color: transparent;
-  --utrecht-badge-color: rgb(74, 111, 120);
+  --utrecht-badge-color: rgb(74 111 120);
   --cardgroup-card-justify-content: start;
   --utrecht-icon-size: 1em;
   --utrecht-icon-inset-block-start: 0.12em;
@@ -18,7 +18,7 @@
 }
 
 .blog-card__badge {
-  margin-block-start: 24px;
   display: flex;
   gap: 4px;
+  margin-block-start: 24px;
 }

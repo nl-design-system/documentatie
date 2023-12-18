@@ -1,7 +1,7 @@
 .main-nav {
   background-color: #004152;
-  padding-block-start: 18px;
   padding-block-end: 15px;
+  padding-block-start: 18px;
 }
 
 .main-nav__container {
@@ -9,6 +9,6 @@
   --ifm-navbar-item-padding-horizontal: 0;
 
   display: flex;
-  gap: 40px;
   font-size: 16px;
+  gap: 40px;
 }

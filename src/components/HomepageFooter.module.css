@@ -3,24 +3,26 @@
   --utrecht-link-color: currentColor;
   --utrecht-link-text-decoration-color: currentColor;
   --utrecht-heading-2-font-size: 18px;
-  background-color: var(--nlds-document-inverse-background-color);
-  padding-block: 32px;
-  color: var(--nlds-document-inverse-color);
   --ifm-link-color: currentColor;
   --ifm-link-hover-color: currentColor;
+
+  background-color: var(--nlds-document-inverse-background-color);
+  color: var(--nlds-document-inverse-color);
+  padding-block: 32px;
 }
 
 .homepage-footer__content {
   --utrecht-space-around: 0;
-  display: grid;
-  gap: 24px;
+
   align-items: center;
+  display: grid;
   flex-wrap: wrap;
+  gap: 24px;
   grid-template-columns: auto 1fr;
   max-width: 500px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .homepage-footer__content {
     grid-template-columns: 100px 1fr;
   }

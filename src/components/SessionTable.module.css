@@ -7,9 +7,10 @@
   --utrecht-paragraph-margin-block-start: 0;
   --utrecht-icon-size: 1em;
   --utrecht-icon-inset-block-start: 0.1em;
+
+  display: table;
   table-layout: auto;
   width: 100%;
-  display: table;
 }
 
 .session-table__row {
@@ -26,6 +27,7 @@
 
 .session-table__speaker {
   --utrecht-icon-margin-inline-end: 4px;
+
   padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
   width: max-content;
 }
