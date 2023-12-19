@@ -123,7 +123,7 @@
       }
       return "";
      })(e);
-     return (0, l.jsxs)(s.Zb, { appearance: "large", className: (0, d.Z)(g["component-card"]), component: "section", children: [(0, l.jsx)(s.wu, { children: (0, l.jsx)(Lt, { id: r, stateModifier: a, description: `Schets van de ${i} component met de ${e} kleur` }) }), (0, l.jsxs)(s.aY, { children: [(0, l.jsxs)("div", { children: [(0, l.jsx)(c.X6, { level: o, className: (0, d.Z)(g["component-card__title"]), children: i }), (0, l.jsx)(c.nv, { children: (0, l.jsx)(Wt, { stateModifier: a, state: e }) })] }), (0, l.jsx)(c.nv, { children: (0, l.jsxs)(h.Z, { className: "utrecht-link", to: `/${r}`, children: ["Bekijk ", (0, l.jsx)("span", { className: (0, d.Z)(g.w), children: i }), " component"] }) })] })] });
+     return (0, l.jsxs)(s.Zb, { appearance: "large", className: (0, d.Z)(g["component-card"]), component: "section", children: [(0, l.jsx)(s.wu, { children: a && (0, l.jsx)(Lt, { id: r, stateModifier: a, description: `Schets van de ${i} component met de ${e} kleur` }) }), (0, l.jsxs)(s.aY, { children: [(0, l.jsxs)("div", { children: [(0, l.jsx)(c.X6, { level: o, className: (0, d.Z)(g["component-card__title"]), children: i }), (0, l.jsx)(c.nv, { children: (0, l.jsx)(Wt, { stateModifier: a, state: e }) })] }), (0, l.jsx)(c.nv, { children: (0, l.jsxs)(h.Z, { className: "utrecht-link", to: `/${r}`, children: ["Bekijk ", (0, l.jsx)("span", { className: (0, d.Z)(g.w), children: i }), " component"] }) })] })] });
     },
     Bt = (t) => {
      let { headingLevel: r } = t;

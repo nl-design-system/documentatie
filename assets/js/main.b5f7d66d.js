@@ -1,4 +1,4 @@
-/*! For license information please see main.8344653c.js.LICENSE.txt */
+/*! For license information please see main.b5f7d66d.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -11673,7 +11673,7 @@
     favicon: "img/favicon.ico",
     organizationName: "nl-design-system",
     projectName: "documentatie",
-    presets: [["classic", { pages: { path: "src/pages", routeBasePath: "/" }, docs: { routeBasePath: "/", sidebarPath: "/home/runner/work/documentatie/documentatie/sidebarConfig.cjs", editUrl: "https://github.com/nl-design-system/documentatie/tree/main/" }, blog: { postsPerPage: "ALL", blogSidebarCount: 0, showReadingTime: !1 }, theme: { customCss: ["/home/runner/work/documentatie/documentatie/packages/nlds-design-tokens/dist/root.css", "/home/runner/work/documentatie/documentatie/src/css/custom.css"] } }]],
+    presets: [["classic", { pages: { path: "src/pages", routeBasePath: "/" }, docs: { routeBasePath: "/", sidebarPath: "/home/runner/work/documentatie/documentatie/sidebarConfig.ts", editUrl: "https://github.com/nl-design-system/documentatie/tree/main/" }, blog: { postsPerPage: "ALL", blogSidebarCount: 0, showReadingTime: !1 }, theme: { customCss: ["/home/runner/work/documentatie/documentatie/packages/nlds-design-tokens/dist/root.css", "/home/runner/work/documentatie/documentatie/src/css/custom.css"] } }]],
     themeConfig: {
      navbar: {
       title: "NL Design System",
@@ -11711,11 +11711,11 @@
       theme: {
        plain: { color: "var(--nlds-code-block-color)", backgroundColor: "var(--nlds-code-block-background-color)" },
        styles: [
-        { types: ["comment"], style: { color: "var(--nlds-code-block-comment-color)", fontStyle: "var(--nlds-code-block-comment-font-style)" } },
-        { types: ["prolog"], style: { color: "var(--nlds-code-block-prolog-color)", fontStyle: "var(--nlds-code-block-prolog-font-style)" } },
-        { types: ["cdata"], style: { color: "var(--nlds-code-block-cdata-color)", fontStyle: "var(--nlds-code-block-cdata-font-style)" } },
+        { types: ["comment"], style: { color: "var(--nlds-code-block-comment-color)", fontStyle: "italic" } },
+        { types: ["prolog"], style: { color: "var(--nlds-code-block-prolog-color)", fontStyle: "italic" } },
+        { types: ["cdata"], style: { color: "var(--nlds-code-block-cdata-color)", fontStyle: "italic" } },
         { types: ["punctuation"], style: { color: "var(--nlds-code-block-punctuation-color)" } },
-        { types: ["deleted"], style: { color: "var(--nlds-code-block-deleted-color)", fontStyle: "var(--nlds-code-block-deleted-font-style)" } },
+        { types: ["deleted"], style: { color: "var(--nlds-code-block-deleted-color)", fontStyle: "italic" } },
         { types: ["symbol"], style: { color: "var(--nlds-code-block-symbol-color)" } },
         { types: ["property"], style: { color: "var(--nlds-code-block-property-color)" } },
         { types: ["tag"], style: { color: "var(--nlds-code-block-tag-color)" } },
@@ -11727,10 +11727,10 @@
         { types: ["function"], style: { color: "var(--nlds-code-block-function-color)" } },
         { types: ["builtin"], style: { color: "var(--nlds-code-block-builtin-color)" } },
         { types: ["char"], style: { color: "var(--nlds-code-block-char-color)" } },
-        { types: ["selector"], style: { color: "var(--nlds-code-block-selector-color)", fontStyle: "var(--nlds-code-block-selector-font-style)" } },
-        { types: ["doctype"], style: { color: "var(--nlds-code-block-doctype-color)", fontStyle: "var(--nlds-code-block-doctype-font-style)" } },
-        { types: ["attr-name"], style: { color: "var(--nlds-code-block-attr-name-color)", fontStyle: "var(--nlds-code-block-attr-name-font-style)" } },
-        { types: ["inserted"], style: { color: "var(--nlds-code-block-inserted-color)", fontStyle: "var(--nlds-code-block-inserted-font-style)" } },
+        { types: ["selector"], style: { color: "var(--nlds-code-block-selector-color)", fontStyle: "italic" } },
+        { types: ["doctype"], style: { color: "var(--nlds-code-block-doctype-color)", fontStyle: "italic" } },
+        { types: ["attr-name"], style: { color: "var(--nlds-code-block-attr-name-color)", fontStyle: "italic" } },
+        { types: ["inserted"], style: { color: "var(--nlds-code-block-inserted-color)", fontStyle: "italic" } },
         { types: ["string"], style: { color: "var(--nlds-code-block-string-color)" } },
         { types: ["url"], style: { color: "var(--nlds-code-block-url-color)" } },
         { types: ["entity"], style: { color: "var(--nlds-code-block-entity-color)" } },
