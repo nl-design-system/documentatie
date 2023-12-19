@@ -32,11 +32,13 @@ export const ComponentCard = ({ id, name, state, headingLevel = 2 }: PropsWithCh
   return (
     <Card appearance="large" className={clsx(style['component-card'])} component="section">
       <CardIllustration>
-        <ComponentIllustration
-          id={id}
-          stateModifier={stateModifier}
-          description={`Schets van de ${name} component met de ${state} kleur`}
-        />
+        {stateModifier && (
+          <ComponentIllustration
+            id={id}
+            stateModifier={stateModifier}
+            description={`Schets van de ${name} component met de ${state} kleur`}
+          />
+        )}
       </CardIllustration>
       <CardContent>
         <div>
