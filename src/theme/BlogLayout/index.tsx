@@ -2,13 +2,13 @@ import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
 import type { Props } from '@theme/BlogLayout';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 interface BlogLayoutProps extends Props {
   breadcrumbs: { label: string; href?: string; rel?: string }[];
 }
 
-export default function BlogLayout(props: BlogLayoutProps): React.Element {
+export default function BlogLayout(props: PropsWithChildren<BlogLayoutProps>): React.Element {
   const { sidebar, toc, breadcrumbs = [], children, ...layoutProps } = props;
   const hasSidebar = sidebar && sidebar.items.length > 0;
 
