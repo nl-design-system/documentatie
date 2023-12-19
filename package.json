@@ -58,7 +58,9 @@
   "devDependencies": {
     "@docsearch/react": "3.5.2",
     "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/plugin-content-blog": "3.0.1",
     "@docusaurus/plugin-content-docs": "3.0.1",
+    "@docusaurus/theme-classic": "3.0.1",
     "@docusaurus/tsconfig": "3.0.1",
     "@docusaurus/types": "3.0.1",
     "@fontsource/fira-sans": "5.0.18",
