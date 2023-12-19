@@ -28,6 +28,7 @@
     "lint": "npm-run-all --continue-on-error lint:**",
     "lint:js": "eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx,.vue' --report-unused-disable-directives .",
     "lint:prettier": "prettier --check .",
+    "lint-todo:ts": "tsc --project tsconfig.json --noEmit",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
     "lint-fix:js": "eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx' --fix --report-unused-disable-directives .",
     "lint-fix:prettier": "prettier --write .",
