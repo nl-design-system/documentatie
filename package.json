@@ -29,6 +29,7 @@
     "lint-todo:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx,.vue' --report-unused-disable-directives .",
     "lint:prettier": "prettier --check .",
+    "lint-todo:ts": "tsc --project tsconfig.json --noEmit",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
     "lint-fix-todo:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx' --fix --report-unused-disable-directives .",
