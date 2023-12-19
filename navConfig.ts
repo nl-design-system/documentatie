@@ -1,4 +1,6 @@
-module.exports = {
+import type { Navbar } from '@docusaurus/theme-common';
+
+const navbar: Navbar = {
   title: 'NL Design System',
   style: 'dark',
   hideOnScroll: true,
@@ -70,3 +72,5 @@ module.exports = {
     },
   ],
 };
+
+export default navbar;

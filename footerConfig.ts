@@ -1,4 +1,6 @@
-module.exports = {
+import type { Footer } from '@docusaurus/theme-common';
+
+const footer: Footer = {
   style: 'dark',
   links: [
     {
@@ -35,3 +37,5 @@ module.exports = {
     },
   ],
 };
+
+export default footer;

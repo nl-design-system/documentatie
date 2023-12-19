@@ -1,12 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const footer = require('./footerConfig');
-const navbar = require('./navConfig');
-const nldsPrism = require('./nldsPrism');
+import type { Config } from '@docusaurus/types';
+import footer from './footerConfig';
+import navbar from './navConfig';
+import nldsPrismTheme from './nldsPrism';
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: 'NL Design System',
   tagline: 'Eén design system voor alle huisstijlen',
   url: 'https://nldesignsystem.nl',
@@ -27,7 +27,7 @@ const config = {
         },
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root
-          sidebarPath: require.resolve('./sidebarConfig.cjs'),
+          sidebarPath: require.resolve('./sidebarConfig.ts'),
           // Please change this to your repo.
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
         },
@@ -49,13 +49,7 @@ const config = {
     navbar,
     footer,
     prism: {
-      theme: {
-        plain: {
-          color: 'var(--nlds-code-block-color)',
-          backgroundColor: 'var(--nlds-code-block-background-color)',
-        },
-        styles: nldsPrism,
-      },
+      theme: nldsPrismTheme,
     },
     docs: {
       sidebar: {
@@ -113,4 +107,4 @@ const config = {
   },
 };
 
-module.exports = config;
+export default config;
