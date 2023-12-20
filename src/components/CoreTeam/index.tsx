@@ -5,12 +5,13 @@ import style from './CoreTeam.module.css';
 import Hidde from './Hidde';
 import Jeffrey from './Jeffrey';
 import Peter from './Peter';
+import Renate from './Renate';
 import Rian from './Rian';
 import Robbert from './Robbert';
 import Yolijn from './Yolijn';
 import { Card, CardContent, CardGroup, CardIllustration } from '../CardGroup';
 
-const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Rian];
+const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
