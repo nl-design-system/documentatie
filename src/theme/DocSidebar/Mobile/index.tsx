@@ -1,10 +1,16 @@
+import { PropSidebarItem } from '@docusaurus/plugin-content-docs';
 import { NavbarSecondaryMenuFiller, ThemeClassNames } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import clsx from 'clsx';
 import React from 'react';
 
-const DocSidebarMobileSecondaryMenu = ({ sidebar, path }) => {
+interface SecondaryMenuProps {
+  path: string;
+  sidebar: PropSidebarItem[];
+}
+
+const DocSidebarMobileSecondaryMenu = ({ sidebar, path }: SecondaryMenuProps) => {
   const mobileSidebar = useNavbarMobileSidebar();
   return (
     <ul className={clsx(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>

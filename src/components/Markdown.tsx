@@ -1,5 +1,6 @@
 import { MDXProvider } from '@mdx-js/react';
 import { Heading2, Heading3, Heading4, Heading5, Heading6 } from '@utrecht/component-library-react/dist/css-module';
+import { PropsWithChildren } from 'react';
 import React from 'react';
 
 const resolveUrl = (from, to) => {
@@ -40,6 +41,17 @@ const setHeadings = (omitH1, headingLevel) => {
   return mapHeadings[headingLevel];
 };
 
-export const Markdown = ({ children, omitH1 = false, headingLevel = 1, baseUrl = '' }) => (
+export interface MarkdownProps {
+  baseUrl?: string;
+  headingLevel?: number;
+  omitH1?: boolean;
+}
+
+export const Markdown = ({
+  children,
+  omitH1 = false,
+  headingLevel = 1,
+  baseUrl = '',
+}: PropsWithChildren<MarkdownProps>) => (
   <MDXProvider components={{ ...setHeadings(omitH1, headingLevel), ...addBaseUrl(baseUrl) }}>{children}</MDXProvider>
 );
