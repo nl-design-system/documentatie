@@ -2,7 +2,12 @@ import IframeResizer from 'iframe-resizer-react';
 import React from 'react';
 import style from './Story.module.css';
 
-export const Story = ({ label, href }) => {
+export interface StoryProps {
+  href: string;
+  label: string;
+}
+
+export const Story = ({ label, href }: StoryProps) => {
   const storySrc = href;
   const iframeSrc = href.replace('?path=/docs/', 'iframe.html?id=') + '&viewMode=story';
 
