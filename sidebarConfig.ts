@@ -189,7 +189,20 @@ const sidebars: SidebarsConfig = {
               ],
             },
             { type: 'doc', id: 'project/events/design-systems-week-2022' },
-            { type: 'doc', id: 'project/events/heartbeat' },
+            {
+              type: 'category',
+              label: 'Heartbeat',
+              link: {
+                type: 'generated-index',
+                title: 'Heartbeat',
+                slug: '/events/heartbeat/overzicht',
+              },
+              items: [
+                { type: 'doc', id: 'project/events/heartbeat/heartbeat' },
+                { type: 'doc', id: 'project/events/heartbeat/videos' },
+                { type: 'doc', id: 'project/events/heartbeat/aanmelden' },
+              ],
+            },
           ],
         },
         { type: 'doc', id: 'project/wie-doet-mee' },
