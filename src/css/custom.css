@@ -20,7 +20,9 @@
   --utrecht-button-group-margin-block-start: 1em;
   --utrecht-form-field-margin-block-end: 1em;
   --utrecht-button-group-inline-gap: 0.25em;
-  --utrecht-form-field-error-message-color: red;
+  --utrecht-form-field-error-message-color: darkred;
+  --utrecht-form-control-max-inline-size: 20em;
+  --utrecht-form-control-border-width: 1px;
   --utrecht-textbox-padding-block-start: 0.5em;
   --utrecht-textbox-padding-block-end: 0.5em;
   --utrecht-textbox-padding-inline-start: 0.5em;
