@@ -36,9 +36,9 @@
     "lint-fix:prettier": "prettier --write .",
     "publish": "lerna publish from-package --yes",
     "release": "lerna version prerelease --conventional-prerelease --no-changelog --no-private --yes",
-    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install --legacy-peer-deps",
-    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && npm install --legacy-peer-deps",
-    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && npm install --legacy-peer-deps",
+    "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs --deep --dep dev,prod --target patch --upgrade && npm install --legacy-peer-deps",
+    "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs --deep --dep dev,prod --target minor --upgrade && npm install --legacy-peer-deps",
+    "update-major": "npm-check-updates --configFileName .ncurc.major.cjs --deep --dep dev,prod --target latest --upgrade && npm install --legacy-peer-deps",
     "test-update": "npm-run-all --sequential clean lint build"
   },
   "dependencies": {
