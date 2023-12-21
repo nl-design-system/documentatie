@@ -78,7 +78,7 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={firstNameFieldId}>Voornaam (optioneel)</FormLabel>
+          <FormLabel htmlFor={firstNameFieldId}>Voornaam (niet verplicht)</FormLabel>
         </Paragraph>
         <Paragraph>
           <Textbox id={firstNameFieldId} name={firstNameFieldId} type="text" autoComplete="given-name" />
@@ -87,7 +87,7 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={lastNameFieldId}>Achternaam (optioneel)</FormLabel>
+          <FormLabel htmlFor={lastNameFieldId}>Achternaam (niet verplicht)</FormLabel>
         </Paragraph>
         <Paragraph>
           <Textbox id={lastNameFieldId} name={lastNameFieldId} type="text" autoComplete="family-name" />
