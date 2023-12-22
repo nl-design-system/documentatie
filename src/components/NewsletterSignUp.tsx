@@ -13,6 +13,7 @@ import { useForm } from 'react-hook-form';
 
 interface NewsletterSignUpProps {
   listId: string;
+  laPostaId: string;
   emailFieldId: string;
   firstNameFieldId: string;
   thanksPage: string;
@@ -20,6 +21,7 @@ interface NewsletterSignUpProps {
 
 export const NewsletterSignUp = ({
   listId = '',
+  laPostaId = '',
   thanksPage = '',
   emailFieldId = '',
   firstNameFieldId = '',
@@ -89,7 +91,7 @@ export const NewsletterSignUp = ({
       </ButtonGroup>
 
       <input type="hidden" name="next" value={thanksPage} />
-      <input type="hidden" name="a" value="iyihtuzpiq" />
+      <input type="hidden" name="a" value={laPostaId} />
       <input type="hidden" name="l" value={listId} />
       <input name="osnD9cWRI3" autoComplete="on" id="id-osnD9cWRI3" type="hidden" value="NLDS website" />
       {/* honeypot */}
