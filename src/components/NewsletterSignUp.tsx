@@ -15,7 +15,6 @@ interface NewsletterSignUpProps {
   listId: string;
   emailFieldId: string;
   firstNameFieldId: string;
-  lastNameFieldId: string;
   thanksPage: string;
 }
 
@@ -24,7 +23,6 @@ export const NewsletterSignUp = ({
   thanksPage = '',
   emailFieldId = '',
   firstNameFieldId = '',
-  lastNameFieldId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -40,8 +38,7 @@ export const NewsletterSignUp = ({
       noValidate
       acceptCharset="utf-8"
       ref={form}
-      onSubmit={handleSubmit((data) => {
-        console.log(data);
+      onSubmit={handleSubmit(() => {
         form.current.submit();
       })}
     >
@@ -78,19 +75,10 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={firstNameFieldId}>Voornaam (niet verplicht)</FormLabel>
+          <FormLabel htmlFor={firstNameFieldId}>Naam (niet verplicht)</FormLabel>
         </Paragraph>
         <Paragraph>
           <Textbox id={firstNameFieldId} name={firstNameFieldId} type="text" autoComplete="given-name" />
-        </Paragraph>
-      </FormField>
-
-      <FormField type="text">
-        <Paragraph>
-          <FormLabel htmlFor={lastNameFieldId}>Achternaam (niet verplicht)</FormLabel>
-        </Paragraph>
-        <Paragraph>
-          <Textbox id={lastNameFieldId} name={lastNameFieldId} type="text" autoComplete="family-name" />
         </Paragraph>
       </FormField>
 
