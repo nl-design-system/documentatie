@@ -1,4 +1,4 @@
-## Plaatsing van een buttons binnen een formulier
+## Plaatsing van een button binnen een formulier
 
 Plaats buttons aan het begin van de regel. Zo wordt een natuurlijke 'scan-lijn' gecreëerd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten.
 
