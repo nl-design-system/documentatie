@@ -65,7 +65,7 @@
    }
    function w(e) {
     const n = { code: "code", h2: "h2", p: "p", ...(0, l.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "meerdere-descriptions-koppelen", children: "Meerdere descriptions koppelen" }), "\n", (0, r.jsx)(n.p, { children: "Je kunt meerdere descriptions koppelen aan een formulierveld. Bijvoorbeeld als er een ook nog een foutmelding is." }), "\n", (0, r.jsxs)(n.p, { children: ["Geef dan ", (0, r.jsx)(n.code, { children: "aria-describedby" }), " twee waardes (IDs), mee gescheiden door een spatie. De volgorde van de ID's meegegeven in de ", (0, r.jsx)(n.code, { children: "aria-describedby" }), " is de volgorde waarin het voorgelezen wordt."] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "meerdere-descriptions-koppelen", children: "Meerdere descriptions koppelen" }), "\n", (0, r.jsx)(n.p, { children: "Je kunt meerdere descriptions koppelen aan een formulierveld. Bijvoorbeeld als er een ook nog een foutmelding is." }), "\n", (0, r.jsxs)(n.p, { children: ["Geef dan ", (0, r.jsx)(n.code, { children: "aria-describedby" }), " twee waardes (IDs) mee, gescheiden door een spatie. De volgorde van de ID's meegegeven in de ", (0, r.jsx)(n.code, { children: "aria-describedby" }), " is de volgorde waarin het voorgelezen wordt."] })] });
    }
    function f(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
