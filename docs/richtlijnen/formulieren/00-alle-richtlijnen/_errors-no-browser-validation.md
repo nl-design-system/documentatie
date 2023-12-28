@@ -1,6 +1,6 @@
 ## Gebruik geen HTML-formuliervalidatie
 
-![Voorbeeld van HTML validatie, een ballonntje boven het formulierveld met "vul dit veld in"](https://github.com/nl-design-system/documentatie/blob/assets/guidelines-errors-browser-validation-example.png?raw=true)
+![Voorbeeld van HTML validatie, een ballonntje boven het formulierveld met "vul dit veld in"](https://hackmd.io/_uploads/rJZg89H8T.png)
 
 De meeste browsers kunnen zelf controleren of een veld is ingevuld. Dit gebeurt als het HTML attribuut `required` in het formulierveld staat.
 
