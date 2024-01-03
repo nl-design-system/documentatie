@@ -18,6 +18,10 @@ const footer: Footer = {
           to: '/toegankelijkheidsverklaring',
         },
         {
+          label: 'Privacyverklaring',
+          to: '/privacyverklaring',
+        },
+        {
           label: 'Colofon',
           to: '/colofon',
         },

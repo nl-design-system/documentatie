@@ -244,9 +244,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <Link href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">
-                    Meld je aan voor de nieuwsbrief
-                  </Link>
+                  <Link href="/project/blijf-op-de-hoogte#nieuwsbrief">Meld je aan voor de nieuwsbrief</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -260,9 +258,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <Link href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">
-                    Meld je aan voor de heartbeat
-                  </Link>
+                  <Link href="/events/heartbeat/aanmelden">Meld je aan voor de heartbeat</Link>
                 </Paragraph>
               </CardContent>
             </Card>
