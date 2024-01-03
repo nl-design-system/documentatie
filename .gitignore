@@ -8,6 +8,7 @@ dist/
 # Generated files
 .docusaurus
 .cache-loader
+tmp/
 
 # Other lockfiles
 yarn.lock
