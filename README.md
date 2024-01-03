@@ -47,7 +47,7 @@ Zolang je het script in je terminal hebt draaien zal de website automatisch de o
 Als je de website structuur hebt aangepast dan is het nodig de website eerst te stoppen en dan opnieuw op te starten.
 
 1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
-2. Draai `npm run start` et voilá, de veranderingen worden zichtbaar.
+2. Draai `pnpm run start` et voilá, de veranderingen worden zichtbaar.
 
 ## End-to-end tests
 
