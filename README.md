@@ -48,3 +48,19 @@ Als je de website structuur hebt aangepast dan is het nodig de website eerst te 
 
 1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
 2. Draai `npm run start` et voilá, de veranderingen worden zichtbaar.
+
+## End-to-end tests
+
+1. Start de website, in de development of de productie versie.
+   - Productie: `pnpm run build` na elke wijziging en `pnpm run serve`
+   - Development: `pnpm run build` eenmalig, daarna `pnpm run start`
+2. Draai `pnpm run test-e2e`
+3. Bekijk de resultaten met `pnpm run serve:test-report`
+
+## Visual regression tests
+
+Gebaseerd op de blog post van Docusaurus [Upgrading frontend dependencies with confidence](https://docusaurus.io/blog/upgrading-frontend-dependencies-with-confidence-using-visual-regression-testing) gebruiken we Playwright met Argos CI voor visuele regressie-tests van de website nldesignsystem.nl.
+
+Voeg het label `visual regression test` toe aan je pull request om Argos CI aan het werk te zetten. We hebben 5,000 screenshots per maand, verspil geen screenshots als je pull request nog niet klaar is.
+
+[![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/nl-design-system-ci/nldesignsystem.nl/reference)

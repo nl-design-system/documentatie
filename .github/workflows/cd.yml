@@ -44,6 +44,66 @@ jobs:
           path: build/
           retention-days: 1
 
+  e2e-test:
+    runs-on: ubuntu-latest
+    needs: [continuous-integration]
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          run_install: true
+
+      - name: "Install headless browsers for end-to-end testing"
+        run: |
+          pnpm run --if-present install-test-browsers
+
+      - name: "Restore build artifact: website"
+        uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: build/
+
+      - name: "Continuous Integration: end-to-end tests"
+        run: |
+          pnpm run --if-present test-e2e
+
+      - name: "Continuous Integration: make screenshots"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
+        run: |
+          pnpm run --if-present test-visual
+
+      - name: "Continuous Integration: publish screenshots to Argos"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
+        env:
+          ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
+        run: |
+          pnpm run --if-present publish:argos
+
+      - name: "Retain build artifact: test report"
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: tmp/playwright-html-report/
+          retention-days: 7
+
+      - name: "Retain build artifact: screenshots"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: tmp/screenshots/
+          retention-days: 7
+
   publish-website:
     runs-on: ubuntu-latest
     needs: continuous-integration
