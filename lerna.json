@@ -9,7 +9,7 @@
       "conventionalCommits": true,
       "syncWorkspaceLock": true,
       "exact": true,
-      "message": "docs(release): design system packages"
+      "message": "docs(release): design system packages\n\n[skip ci]"
     }
   }
 }
