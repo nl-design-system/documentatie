@@ -26,17 +26,19 @@ export default function Home() {
       wrapperClassName="container--narrow"
     >
       <main>
-        <HomepageHero title="NL Design System" ctaLink="meedoen/introductie" cta="Lees meer over het NL Design System">
-          <Paragraph lead>
-            Samen maken we de digitale dienstverlening van de overheid toegankelijk, inclusief en gebruiksvriendelijk.
+        <HomepageHero
+          title="Samenwerken aan bouwstenen voor iedereen"
+          ctaLink="project/over-nlds"
+          cta="Lees meer over het NL Design System"
+        >
+          <Paragraph>
+            NL Design System brengt webspecialisten van de overheid bij elkaar, om samen te werken aan{' '}
+            <b>componenten</b> (code, ontwerp), <b>richtlijnen</b> en <b>onderzoek</b>. Die maken we publiek
+            beschikbaar, zodat iedereen ze kan gebruiken.{' '}
           </Paragraph>
           <Paragraph>
-            Een design system lijkt op basis van de naam vooral over ontwerp te gaan, maar het is eigenlijk een brede
-            aanpak om makkelijker consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken.
-          </Paragraph>
-          <Paragraph>
-            Dat doet het kernteam niet alleen, maar samen met ontwerpers, ontwikkelaars, content schrijvers en andere
-            experts uit verschillende organisaties.
+            Daarmee bieden we praktische tools om de digitale dienstverlening van de overheid toegankelijk, inclusief en
+            gebruiksvriendelijk te maken.
           </Paragraph>
           <UnorderedList>
             <UnorderedListItem>Gebouwd en gebruikt door de community</UnorderedListItem>
