@@ -1,5 +1,5 @@
 .homepage-hero {
-  --utrecht-heading-1-font-size: 40px;
+  --utrecht-heading-1-font-size: 32px;
   --utrecht-document-color: white;
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
@@ -52,7 +52,7 @@
     --utrecht-paragraph-margin-block-end: 18px;
     --utrecht-unordered-list-margin-block-start: 24px;
     --utrecht-document-font-size: 20px;
-    --utrecht-heading-1-font-size: 52px;
+    --utrecht-heading-1-font-size: 40px;
   }
   .homepage-hero__linear-gradient {
     height: 80px;

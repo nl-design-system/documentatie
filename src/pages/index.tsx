@@ -27,23 +27,25 @@ export default function Home() {
     >
       <main>
         <HomepageHero
-          title="Samenwerken aan bouwstenen voor iedereen"
-          ctaLink="project/over-nlds"
-          cta="Lees meer over het NL Design System"
+          title="Doe mee met NL Design System"
+          ctaLink="meedoen/introductie"
+          cta="Lees de NL Design System introductie"
         >
-          <Paragraph>
-            NL Design System brengt webspecialisten van de overheid bij elkaar, om samen te werken aan{' '}
-            <b>componenten</b> (code, ontwerp), <b>richtlijnen</b> en <b>onderzoek</b>. Die maken we publiek
-            beschikbaar, zodat iedereen ze kan gebruiken.{' '}
+          <Paragraph lead>
+            Met een actieve community van specialisten verzamelt het kernteam de beste{' '}
+            <DocusaurusLink to="/richtlijnen">richtlijnen</DocusaurusLink>,{' '}
+            <DocusaurusLink to="/componenten">componenten</DocusaurusLink> en voorbeelden om robuuste websites en
+            webapplicaties te bouwen.
           </Paragraph>
+
           <Paragraph>
-            Daarmee bieden we praktische tools om de digitale dienstverlening van de overheid toegankelijk, inclusief en
-            gebruiksvriendelijk te maken.
+            NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk onwikkelen makkelijk te maken.{' '}
           </Paragraph>
+
           <UnorderedList>
-            <UnorderedListItem>Gebouwd en gebruikt door de community</UnorderedListItem>
-            <UnorderedListItem>Platform en huisstijl onafhankelijk</UnorderedListItem>
-            <UnorderedListItem>Uitbreidbaar en publiek beschikbaar</UnorderedListItem>
+            <UnorderedListItem>Gebouwd en gebruikt door de community.</UnorderedListItem>
+            <UnorderedListItem>Platformonafhankelijk en voor iedere huisstijl.</UnorderedListItem>
+            <UnorderedListItem>Uitbreidbaar en publiek beschikbaar.</UnorderedListItem>
           </UnorderedList>
         </HomepageHero>
         <div className="container">
