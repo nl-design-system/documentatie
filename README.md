@@ -29,14 +29,14 @@ Heb je een document dat je wil bijdragen, stuur ons dan een linkje naar die gist
 
 ## Lokaal draaien van de website
 
-We gebruiken `npm` om afhankelijkheden te installeren en de website met docusaurus te draaien.
+We gebruiken `pnpm` om afhankelijkheden te installeren en de website met Docusaurus te draaien. Zorg dat je dat eerst installeert, dat kan bijvoorbeeld met `npm`.
 Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.nl) vinden of even een e-mail sturen
 
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
-3. Draai `npm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `npm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
-5. Draai `npm run start` om Docusaurus te starten.
+3. Draai `pnpm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
+4. Draai `pnpm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
+5. Draai `pnpm run start` om Docusaurus te starten.
 6. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
 7. De website opent in je standaard browser
 
