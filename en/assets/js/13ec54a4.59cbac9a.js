@@ -127,7 +127,7 @@
       "\n",
       (0, a.jsx)(s.h2, { id: "toegankelijkheid", children: "Toegankelijkheid" }),
       "\n",
-      (0, a.jsxs)(s.p, { children: ["We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ", (0, a.jsx)(s.a, { href: "mailto:nldesignsystem@gebruikercentraal.nl", children: "nldesignsystem@gebruikercentraal.nl" }), "."] }),
+      (0, a.jsxs)(s.p, { children: ["We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ", (0, a.jsx)(s.a, { href: "mailto:kernteam@nldesignsystem.nl", children: "kernteam@nldesignsystem.nl" }), "."] }),
      ],
     });
    }
