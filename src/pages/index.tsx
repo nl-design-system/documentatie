@@ -12,7 +12,6 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
-import { HomepageFooter } from '../components/HomepageFooter';
 import HomepageHero from '../components/HomepageHero';
 import HomepageUpdates from '../components/HomepageUpdates';
 
@@ -268,7 +267,6 @@ export default function Home() {
             </Card>
           </CardGroup>
         </HomepageUpdates>
-        <HomepageFooter />
       </main>
     </Layout>
   );
