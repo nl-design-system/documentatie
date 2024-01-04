@@ -262,4 +262,4 @@ Op Design Systems Week is de [NL Design System Code of Conduct](https://github.c
 
 ## Toegankelijkheid
 
-We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [nldesignsystem@gebruikercentraal.nl](mailto:nldesignsystem@gebruikercentraal.nl).
+We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
