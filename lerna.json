@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
-  "npmClient": "npm",
+  "npmClient": "pnpm",
   "version": "independent",
   "command": {
     "publish": {},
