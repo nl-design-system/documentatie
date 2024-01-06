@@ -10,10 +10,6 @@ dist/
 .cache-loader
 tmp/
 
-# Other lockfiles
-yarn.lock
-package-lock.json
-
 # Misc
 .DS_Store
 .env.local
@@ -21,6 +17,8 @@ package-lock.json
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Only track the pnpm lockfile in the root
+ yarn.lock
+ package-lock.json
+ pnpm-lock.yaml
+ !/pnpm-lock.yaml
