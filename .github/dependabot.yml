@@ -6,6 +6,20 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      day: "monday"
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    reviewers:
+      - "nl-design-system/kernteam-sysadmin"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      day: "monday"
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    versioning-strategy: "increase-if-necessary"
+    open-pull-requests-limit: 20
     reviewers:
       - "nl-design-system/kernteam-sysadmin"
