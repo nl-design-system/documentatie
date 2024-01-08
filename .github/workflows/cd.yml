@@ -24,6 +24,7 @@ jobs:
         id: pnpm-install
         with:
           run_install: true
+          version: 8
 
       - name: "Continuous Integration: lint"
         run: |
@@ -62,6 +63,7 @@ jobs:
         id: pnpm-install
         with:
           run_install: true
+          version: 8
 
       - name: "Install headless browsers for end-to-end testing"
         run: |
@@ -146,6 +148,7 @@ jobs:
         id: pnpm-install
         with:
           run_install: true
+          version: 8
 
       - name: "Continuous Deployment: publish to GitHub repository"
         env:
