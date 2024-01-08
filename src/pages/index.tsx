@@ -38,7 +38,7 @@ export default function Home() {
           </Paragraph>
 
           <Paragraph>
-            NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk onwikkelen makkelijk te maken.{' '}
+            NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk te maken.{' '}
           </Paragraph>
 
           <UnorderedList>
