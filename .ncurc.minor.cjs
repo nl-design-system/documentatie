@@ -1,4 +1,4 @@
-const patchConfig = require('./.ncurc.patch');
+const patchConfig = require('./.ncurc.patch.cjs');
 
 module.exports = {
   reject: [...patchConfig.reject],
