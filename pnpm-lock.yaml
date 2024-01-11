@@ -52,8 +52,8 @@ importers:
         specifier: 1.0.6
         version: 1.0.6
       '@argos-ci/playwright':
-        specifier: 1.6.1
-        version: 1.6.1
+        specifier: 1.6.3
+        version: 1.6.3
       '@docsearch/react':
         specifier: 3.5.2
         version: 3.5.2(@algolia/client-search@4.21.1)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)
@@ -401,8 +401,8 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@1.6.1:
-    resolution: {integrity: sha512-P2ZsiMZIS+DxWFM3mIZoqNIxHfKm129rM2r00K5jwiPxlhNDu6iQAcZFcRuzqTdXwYQyV/TBapCh0yXRcMbUnA==}
+  /@argos-ci/playwright@1.6.3:
+    resolution: {integrity: sha512-UBQDA+ZL6C/IbWQCtEr1V9/S42xv9adBLAfu1Ip9JE3sfKoq932AUJcJj08LVKSF9hwssI80xdr+4dlkXcqYwg==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/browser': 1.3.0
