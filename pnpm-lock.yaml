@@ -103,8 +103,8 @@ importers:
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 1.0.0-alpha.109
-        version: 1.0.0-alpha.109
+        specifier: 1.0.0-alpha.110
+        version: 1.0.0-alpha.110
       '@nl-design-system/component-index':
         specifier: 1.0.0-alpha.16
         version: 1.0.0-alpha.16
@@ -2867,8 +2867,8 @@ packages:
       '@types/react': 18.2.45
       react: 18.2.0
 
-  /@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.109:
-    resolution: {integrity: sha512-TXDhTSBUQRlRKYTBM1FQGKgiiEsk6+qXBQUMHjqB5DFYDKnc9OPbhAahJuioTuV0072bBM9OWDDMfqKl0xuXIw==}
+  /@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.110:
+    resolution: {integrity: sha512-JxdBN3FisKeH58b8DHm+1Dnnr0NNGQHJ5JMbcVudxTq1+nBlfRDdt3p+urwieB5HAHa1oFs8hhN+5tHEAhnw8g==}
     dev: true
 
   /@nl-design-system/component-index@1.0.0-alpha.16:
