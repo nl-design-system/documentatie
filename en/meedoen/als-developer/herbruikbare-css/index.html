@@ -2,7 +2,7 @@
 <html lang="en-EN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-meedoen/als-developer/herbruikbare-css" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
-  <meta name="generator" content="Docusaurus v3.0.1" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
   <title data-rh="true">Herbruikbare CSS schrijven | NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
@@ -29,9 +29,9 @@
   <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
-  <link rel="stylesheet" href="/en/assets/css/styles.83a71072.css" />
-  <script src="/en/assets/js/runtime~main.51a48bb7.js" defer="defer"></script>
-  <script src="/en/assets/js/main.e85071cd.js" defer="defer"></script>
+  <link rel="stylesheet" href="/en/assets/css/styles.62048c99.css" />
+  <script src="/en/assets/js/runtime~main.d3f844c3.js" defer="defer"></script>
+  <script src="/en/assets/js/main.c52fab61.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -65,7 +65,7 @@
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
-    <div role="region" aria-label="Skip to main content"><a class="skipToContent_r_KO" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
+    <div role="region" aria-label="Skip to main content"><a class="skipToContent__WnV" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-label="Toggle navigation bar" aria-expanded="false">Menu</button
@@ -88,12 +88,12 @@
      </div>
      <div role="presentation" class="navbar-sidebar__backdrop"></div>
     </nav>
-    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_ctkk">
-     <div class="docsWrapper_vK1H">
-      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_gxl1" type="button"></button>
-      <div class="docRoot_Qusp">
-       <aside class="theme-doc-sidebar-container docSidebarContainer_xTAu">
-        <div class="sidebarViewport_gAQR">
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_QjoL">
+     <div class="docsWrapper_sZZp">
+      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_AbiN" type="button"></button>
+      <div class="docRoot_mdNq">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_vD62">
+        <div class="sidebarViewport_h8aq">
          <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
           <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
@@ -162,11 +162,11 @@
          </div>
         </div>
        </aside>
-       <main class="docMainContainer_sKIO">
+       <main class="docMainContainer_ZMok">
         <div class="container padding-top--md padding-bottom--lg">
          <div class="row">
-          <div class="col docItemCol_CXpa">
-           <div class="docItemContainer_Qh2M">
+          <div class="col docItemCol_Fms6">
+           <div class="docItemContainer_V0kI">
             <article>
              <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
               <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
@@ -198,7 +198,7 @@
                >
               </p>
              </div>
-             <div class="tocCollapsible_IFhG theme-doc-toc-mobile tocMobile_xdyr"><button type="button" class="clean-btn tocCollapsibleButton_uXbH">On this page</button></div>
+             <div class="tocCollapsible_jt91 theme-doc-toc-mobile tocMobile_oZGg"><button type="button" class="clean-btn tocCollapsibleButton_OGmT">On this page</button></div>
              <div class="theme-doc-markdown">
               <h1 id="herbruikbare-css-schrijven-voor-nl-design-system" class="utrecht-heading-1">Herbruikbare CSS schrijven voor NL Design System</h1>
               <p>We hebben tips om herbruikbare CSS te schrijven, voor iedereen die werkt aan projecten in de NL Design System community. Wanneer je een nieuw component gaat ontwikkelen, omdat je iets nodig hebt dat nog niet bestaat in de community, dan kun je herbruikbare CSS schrijven zodat anderen ook je nieuwe component kunnen gebruiken.</p>
@@ -206,17 +206,17 @@
               <h2 id="schrijf-css-die-ook-werkt-voor-anderen" class="utrecht-heading-2">Schrijf CSS die ook werkt voor anderen</h2>
               <p>Vermijd code voor je huisstijl in herbruikbare CSS. Gebruik CSS variabelen voor <em class="utrecht-emphasis utrecht-emphasis--stressed">component design tokens</em> die ingevuld kunnen worden met de huisstijl van anderen. Dit is belangrijk als jouw componenten door anderen gebruikt worden, of als je aan software bouwt die door verschillende organisaties wordt geïnstalleerd met hun eigen huisstijl.</p>
               <p>Bijvoorbeeld zo niet, met <em class="utrecht-emphasis utrecht-emphasis--stressed">brand design tokens</em> in je component:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.example-button {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.example-button {
   background-color: var(--example-blue);
 }
 </code></code></pre>
               <p>Maar wel zo, met <em class="utrecht-emphasis utrecht-emphasis--stressed">component design tokens</em> voor je component:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.example-button {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.example-button {
   background-color: var(--example-button-background-color);
 }
 </code></code></pre>
               <p>De code voor je eigen huisstijl gebruik je dan als losse theme. In je thema zal de <em class="utrecht-emphasis utrecht-emphasis--stressed">component design token</em> verwijzen naar de <em class="utrecht-emphasis utrecht-emphasis--stressed">brand design token</em>.</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.example-theme {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.example-theme {
   --example-blue: navy;
   --example-button-background-color: var(--example-blue);
 }
@@ -225,7 +225,7 @@
               <h2 id="schrijf-css-die-niet-de-stylesheet-van-anderen-in-de-weg-zit" class="utrecht-heading-2">Schrijf CSS die niet de stylesheet van anderen in de weg zit</h2>
               <p>Deel je CSS in een file die anderen kunnen importeren zonder dat het effect heeft op hun website. De pagina moet eerst een CSS class name gebruiken, voordat jouw CSS effect heeft. Op deze manier kunnen anderen zonder extra werk delen van jouw CSS hergebruiken.</p>
               <p>Bijvoorbeeld <em class="utrecht-emphasis utrecht-emphasis--stressed">niet</em> zo:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">:root {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">:root {
   --example-link-color: blue;
 }
 
@@ -234,7 +234,7 @@ a:link {
 }
 </code></code></pre>
               <p>Maar zo:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.example-theme {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.example-theme {
   --example-link-color: blue;
 }
 
@@ -245,7 +245,7 @@ a:link {
 </code></code></pre>
               <h2 id="schrijf-css-die-niet-afhankelijk-is-van-een-resetcss" class="utrecht-heading-2">Schrijf CSS die niet afhankelijk is van een <code class="utrecht-code">reset.css</code></h2>
               <p>Als je een HTML element zoals <code class="utrecht-code">&lt;ul&gt;</code> gebruikt om een navigatie-component te maken, dan wil je bijvoorbeeld geen last hebben van <code class="utrecht-code">padding-inline-start</code> uit de browser default stylesheet (zoals <a href="https://hg.mozilla.org/mozilla-central/file/tip/layout/style/res/html.css" class="utrecht-link utrecht-link--html-a">die van Firefox</a> of <a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" class="utrecht-link utrecht-link--html-a">van Safari</a>). Gebruik dan expliciet in de component daarvoor CSS:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">ul.example-nav {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">ul.example-nav {
   padding-inline-start: 0;
   /* …other styles… */
 }
@@ -254,7 +254,7 @@ a:link {
                Als jouw project een <a href="https://meyerweb.com/eric/tools/css/reset/" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">reset.css</code> variant</a> gebruikt dan heb jij die padding reset misschien niet nodig, maar gebruik dan toch wel die CSS zodat het ook werkt voor anderen zonder jouw <code class="utrecht-code">reset.css</code>.
               </p>
               <p>Dus <em class="utrecht-emphasis utrecht-emphasis--stressed">niet</em> zo:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">* {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">* {
   padding: 0;
 }
 
@@ -264,13 +264,13 @@ ul.example-nav {
 </code></code></pre>
               <h3 id="reset-in-een-scss-mixin" class="utrecht-heading-3">Reset in een SCSS mixin</h3>
               <p>Als je in CSS ziet dat een property is ingesteld <em class="utrecht-emphasis utrecht-emphasis--stressed">initial value</em> van die property (zoals <code class="utrecht-code">0</code> voor padding properties), dan kun je denken: die code kan gewoon weg. Als reset code in een los bestand staat met mixins, dan ontbreekt de context dat het bedoeld is om een bepaald HTML element te resetten.</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@mixin example-nav {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@mixin example-nav {
   padding-inline-start: 0;
   /* …other styles… */
 }
 </code></code></pre>
               <p>Je wilt dan duidelijk maken waarom de code er is, om te voorkomen dat iemand het later &quot;opschoont&quot;. Je kunt bijvoorbeeld de code verplaatsen naar een mixin voor alleen de reset code:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@mixin reset-ul {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@mixin reset-ul {
   padding-inline-start: 0;
   /* …other styles… */
 }
@@ -285,33 +285,33 @@ ul.example-nav {
                Als de onderdelen van je CSS deelt als <a href="https://sass-lang.com/documentation/at-rules/mixin" class="utrecht-link utrecht-link--html-a">SCSS <em class="utrecht-emphasis utrecht-emphasis--stressed">mixin</em></a> dan kan jouw CSS ook werken voor projecten die een andere CSS selector gebruiken dan jij.
               </p>
               <p>Bijvoorbeeld <code class="utrecht-code">_mixin.scss</code>:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@mixin example-link {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@mixin example-link {
   color: var(--example-link-color);
 }
 </code></code></pre>
               <p>Bijvoorbeeld <code class="utrecht-code">index.scss</code>:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@import &quot;./mixin&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@import &quot;./mixin&quot;;
 
 .example-link {
   @include example-link;
 }
 </code></code></pre>
               <p>Een ander project moet de CSS misschien op alle links toepassen op de pagina, omdat ze geen invloed hebben op de HTML:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
 
 a:link {
   @include example-link;
 }
 </code></code></pre>
               <p>Nog een ander project gebruikt de CSS voor een web component met Shadow DOM:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
 
 :host {
   @include example-link;
 }
 </code></code></pre>
               <p>Nog een ander project gebruikt het tijdelijk tijdens een migratie voor oude CSS class names, totdat alle templates de nieuwe <code class="utrecht-code">example-link</code> class name gebruiken.</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-scss">@import &quot;@example/css-components/link&quot;;
 
 .old-link {
   @include example-link;
@@ -321,13 +321,13 @@ a:link {
               <p>Begin namen in je code met een prefix voor jouw organisatie, zoals in BEM class names, CSS variabelen en Custom Elements. Wij gebruiken <code class="utrecht-code">nl-</code>, jij kiest iets anders. Gebruik alleen letters en cijfers in de prefix, geen andere tekens zoals het koppelstreepje.</p>
               <p>Heb je een variant nodig op een CSS component uit de community? Gebruik dan je eigen prefix voor de uitbreiding, niet de prefix van anderen. Je moet geen class name maken die de developers van de andere prefix in de toekomst misschien gaan gebruiken.</p>
               <p>Bijvoorbeeld niet zo, als je een <code class="utrecht-code">small</code> variant van de <code class="utrecht-code">nl-button</code> nodig hebt:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.nl-button--small {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.nl-button--small {
   font-size: 16px;
 }
 </code></code></pre>
               <p>Wanneer de developers later een nieuwe versie maken met dezelfde naam, dan zul je de code moeten aanpassen om veilig te updaten naar de laatste versie.</p>
               <p>Bijvoorbeeld wel zo:</p>
-              <pre tabindex="0" class="codeBlockStandalone_P57C thin-scrollbar codeBlockContainer_bk9F theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_w3vH"><code class="utrecht-code language-css">.example-button--small {
+              <pre tabindex="0" class="codeBlockStandalone_EeLH thin-scrollbar codeBlockContainer_at7R theme-code-block" style="--prism-color: var(--nlds-code-block-color); --prism-background-color: var(--nlds-code-block-background-color)"><code class="codeBlockLines_lH8r"><code class="utrecht-code language-css">.example-button--small {
   font-size: 16px;
 }
 </code></code></pre>
@@ -338,12 +338,12 @@ a:link {
               <div class="theme-doc-footer-edit-meta-row row">
                <div class="col">
                 <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/meedoen/als-developer/10-herbruikbare-css.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
-                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_hzmE" aria-hidden="true">
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_OQA9" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Edit this page</a
                 >
                </div>
-               <div class="col lastUpdated_qSJ5"></div>
+               <div class="col lastUpdated_JGtH"></div>
               </div>
              </footer>
             </article>
@@ -359,7 +359,7 @@ a:link {
            </div>
           </div>
           <div class="col col--3">
-           <div class="tableOfContents_HotW thin-scrollbar theme-doc-toc-desktop">
+           <div class="tableOfContents_lgqo thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#schrijf-css-die-ook-werkt-voor-anderen" class="table-of-contents__link toc-highlight">Schrijf CSS die ook werkt voor anderen</a></li>
              <li><a href="#schrijf-css-die-niet-de-stylesheet-van-anderen-in-de-weg-zit" class="table-of-contents__link toc-highlight">Schrijf CSS die niet de stylesheet van anderen in de weg zit</a></li>

@@ -1,0 +1,43 @@
+"use strict";
+(self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
+ [3162],
+ {
+  34680: (e, t, n) => {
+   n.r(t), n.d(t, { assets: () => l, contentTitle: () => i, default: () => h, frontMatter: () => r, metadata: () => o, toc: () => d });
+   var a = n(11527),
+    s = n(47214);
+   const r = { title: "Heartbeat", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Heartbeat", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/events/heartbeat" },
+    i = "Heartbeat",
+    o = { id: "project/events/heartbeat/heartbeat", title: "Heartbeat", description: "In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de laatste stand van zaken is. Daarnaast laten we organisaties aan het woord die met/aan het NL Design System werken.", source: "@site/docs/project/events/heartbeat/heartbeat.mdx", sourceDirName: "project/events/heartbeat", slug: "/events/heartbeat", permalink: "/events/heartbeat", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/project/events/heartbeat/heartbeat.mdx", tags: [], version: "current", frontMatter: { title: "Heartbeat", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Heartbeat", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/events/heartbeat" }, sidebar: "project", previous: { title: "Heartbeat", permalink: "/events/heartbeat/overzicht" }, next: { title: "Video's van de afgelopen Heartbeats", permalink: "/events/heartbeat/videos" } },
+    l = {},
+    d = [];
+   function c(e) {
+    const t = { a: "a", h1: "h1", p: "p", ...(0, s.a)(), ...e.components };
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(t.h1, { id: "heartbeat", children: "Heartbeat" }), "\n", (0, a.jsx)(t.p, { children: "In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de laatste stand van zaken is. Daarnaast laten we organisaties aan het woord die met/aan het NL Design System werken." }), "\n", (0, a.jsxs)(t.p, { children: ["Deze sessies zijn publiek toegankelijk. ", (0, a.jsx)(t.a, { href: "/events/heartbeat/aanmelden", children: "Meld je aan" }), " of ", (0, a.jsx)(t.a, { href: "/events/heartbeat/videos", children: "kijk de video's terug" }), "."] }), "\n", (0, a.jsxs)(t.p, { children: ["Heb je vragen of wil je zelf iets vertellen of presenteren tijdens een van de heartbeats? Stuur ons dan een mailtje op ", (0, a.jsx)("a", { href: "mailto:kernteam@nldesignsystem.nl", children: (0, a.jsx)(t.a, { href: "mailto:kernteam@nldesignsystem.nl", children: "kernteam@nldesignsystem.nl" }) })] })] });
+   }
+   function h(e = {}) {
+    const { wrapper: t } = { ...(0, s.a)(), ...e.components };
+    return t ? (0, a.jsx)(t, { ...e, children: (0, a.jsx)(c, { ...e }) }) : c(e);
+   }
+  },
+  47214: (e, t, n) => {
+   n.d(t, { Z: () => o, a: () => i });
+   var a = n(50959);
+   const s = {},
+    r = a.createContext(s);
+   function i(e) {
+    const t = a.useContext(r);
+    return a.useMemo(
+     function () {
+      return "function" == typeof e ? e(t) : { ...t, ...e };
+     },
+     [t, e]
+    );
+   }
+   function o(e) {
+    let t;
+    return (t = e.disableParentContext ? ("function" == typeof e.components ? e.components(s) : e.components || s) : i(e.components)), a.createElement(r.Provider, { value: t }, e.children);
+   }
+  },
+ },
+]);
