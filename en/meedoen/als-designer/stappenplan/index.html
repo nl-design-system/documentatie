@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.83a71072.css" />
-  <script src="/en/assets/js/runtime~main.167d672a.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.fb20eb4d.js" defer="defer"></script>
   <script src="/en/assets/js/main.e85071cd.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -384,35 +384,38 @@
                <!-- -->Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de <a href="https://github.com/nl-design-system/example" class="utrecht-link utrecht-link--html-a">NL Design System example repository</a> een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. <a href="/en/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a> om hulp te vragen als je dit wilt doen.
               </p>
               <h2 id="aanvullende-informatie" class="utrecht-heading-2">Aanvullende informatie</h2>
-              <h3 id="een-personal-access-token-genereren" class="utrecht-heading-3">Een ‘Personal Access Token’ genereren</h3>
-              <p><a href="https://youtu.be/2SZRxb7YnlM" class="utrecht-link utrecht-link--html-a">Video: Personal Acces Token genereren</a></p>
+              <h3 id="een-personal-access-token-genereren" class="utrecht-heading-3">Een ‘Personal access token’ genereren</h3>
+              <p><a href="https://youtu.be/FsS2afRqTFo" class="utrecht-link utrecht-link--html-a">Video: Personal access token genereren</a></p>
               <p>
-               <strong>Ga direct naar <a href="https://github.com/settings/tokens" class="utrecht-link utrecht-link--html-a">github.com/settings/tokens</a> of volg de volgende stappen:</strong>
+               <strong>Ga direct naar <a href="https://github.com/settings/tokens?type=beta" class="utrecht-link utrecht-link--html-a">github.com/settings/tokens</a> of volg de volgende stappen:</strong>
               </p>
               <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Klik op je avatar (rechtsboven)</li>
-               <li class="utrecht-unordered-list__item">Klik op ‘Settings’</li>
-               <li class="utrecht-unordered-list__item">Klik op het laatste menu item ‘Developer Settings’</li>
-               <li class="utrecht-unordered-list__item">Klik op ‘Personal Access Token’</li>
-               <li class="utrecht-unordered-list__item">Selecteer ‘Token (Classic)</li>
+               <li class="utrecht-unordered-list__item">Klik op je avatar (rechtsboven).</li>
+               <li class="utrecht-unordered-list__item">Klik op ‘Settings’.</li>
+               <li class="utrecht-unordered-list__item">Klik op het laatste menu item ‘Developer Settings’.</li>
+               <li class="utrecht-unordered-list__item">Klik op ‘Personal access tokens’.</li>
+               <li class="utrecht-unordered-list__item">Selecteer ‘Fine-grained tokens&#x27;.</li>
+               <li class="utrecht-unordered-list__item">Klik op &#x27;Generate new token&#x27;.</li>
               </ul>
-              <p><strong>Genereer een token</strong></p>
+              <p><strong>Vul de gegevens in</strong></p>
               <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Vul de gegevens in:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Note. Dit wordt enkel gebruikt voor github zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].</li>
-                 <li class="utrecht-unordered-list__item">Expiration. Beslis zelf wanneer het token zou moeten verlopen.</li>
-                 <li class="utrecht-unordered-list__item">Select scopes. Selecteer enkel ‘repo’.</li>
-                </ul>
-               </li>
+               <li class="utrecht-unordered-list__item">Token name: Deze wordt enkel gebruikt voor github zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].</li>
+               <li class="utrecht-unordered-list__item">Expiration: Bepaal wanneer je personal access token zou moeten verlopen. Bijvooreeld na een half jaar. Je krijgt vanzelf een email wanneer deze datum in zicht is.</li>
+               <li class="utrecht-unordered-list__item">Resource owner: Staan je tokens in de NL Design System &#x27;themes repository&#x27;? Kies dan voor &#x27;nl-design-system. Staan de tokens in je persoonlijke Github omgeving? Kies dan voor je eigen naam.</li>
+               <li class="utrecht-unordered-list__item">Kies bij &#x27;Repository access&#x27; voor &#x27;Only select repositories&#x27;.</li>
+               <li class="utrecht-unordered-list__item">Selecteer de repository waar de tokens van jouw organisatie staan.</li>
+               <li class="utrecht-unordered-list__item">Klik onder &#x27;Permissions&#x27; op &#x27;Repository permissions&#x27;.</li>
+               <li class="utrecht-unordered-list__item">Kies bij &#x27;Contents&#x27; voor &#x27;Access: Read and write&#x27;.</li>
+              </ul>
+              <p><strong>Genereer en gebruik je token</strong></p>
+              <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">Klik op ‘Generate token’.</li>
                <li class="utrecht-unordered-list__item">Kopieer je Personal Access token.</li>
                <li class="utrecht-unordered-list__item">Vul de Personal Access token in bij de Github gegevens in de Token Studio plugin.</li>
               </ul>
               <p>
                <strong>Let op!</strong><br />
-               <!-- -->Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel het als je persoonlijke wachtwoord.
+               <!-- -->Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel de token als je persoonlijke wachtwoord.
               </p>
               <h3 id="een-repository-aanmaken" class="utrecht-heading-3">Een &#x27;Repository&#x27; aanmaken</h3>
               <p><a href="https://youtu.be/NKCt-IZKBfI" class="utrecht-link utrecht-link--html-a">Video: Een Repository aanmaken</a></p>
