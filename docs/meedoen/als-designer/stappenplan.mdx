@@ -265,30 +265,37 @@ Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan
 
 ## Aanvullende informatie
 
-### Een ‘Personal Access Token’ genereren
+### Een ‘Personal access token’ genereren
 
-[Video: Personal Acces Token genereren](https://youtu.be/2SZRxb7YnlM)
+[Video: Personal access token genereren](https://youtu.be/FsS2afRqTFo)
 
-**Ga direct naar [github.com/settings/tokens](https://github.com/settings/tokens) of volg de volgende stappen:**
+**Ga direct naar [github.com/settings/tokens](https://github.com/settings/tokens?type=beta) of volg de volgende stappen:**
 
-- Klik op je avatar (rechtsboven)
-- Klik op ‘Settings’
-- Klik op het laatste menu item ‘Developer Settings’
-- Klik op ‘Personal Access Token’
-- Selecteer ‘Token (Classic)
+- Klik op je avatar (rechtsboven).
+- Klik op ‘Settings’.
+- Klik op het laatste menu item ‘Developer Settings’.
+- Klik op ‘Personal access tokens’.
+- Selecteer ‘Fine-grained tokens'.
+- Klik op 'Generate new token'.
 
-**Genereer een token**
+**Vul de gegevens in**
 
-- Vul de gegevens in:
-  - Note. Dit wordt enkel gebruikt voor github zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].
-  - Expiration. Beslis zelf wanneer het token zou moeten verlopen.
-  - Select scopes. Selecteer enkel ‘repo’.
+- Token name: Deze wordt enkel gebruikt voor github zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld; Tokens van [naam-van-je-organisatie].
+- Expiration: Bepaal wanneer je personal access token zou moeten verlopen. Bijvooreeld na een half jaar. Je krijgt vanzelf een email wanneer deze datum in zicht is.
+- Resource owner: Staan je tokens in de NL Design System 'themes repository'? Kies dan voor 'nl-design-system. Staan de tokens in je persoonlijke Github omgeving? Kies dan voor je eigen naam.
+- Kies bij 'Repository access' voor 'Only select repositories'.
+- Selecteer de repository waar de tokens van jouw organisatie staan.
+- Klik onder 'Permissions' op 'Repository permissions'.
+- Kies bij 'Contents' voor 'Access: Read and write'.
+
+**Genereer en gebruik je token**
+
 - Klik op ‘Generate token’.
 - Kopieer je Personal Access token.
 - Vul de Personal Access token in bij de Github gegevens in de Token Studio plugin.
 
 **Let op!**  
-Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel het als je persoonlijke wachtwoord.
+Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel de token als je persoonlijke wachtwoord.
 
 ### Een 'Repository' aanmaken
 
