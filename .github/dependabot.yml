@@ -11,7 +11,7 @@ updates:
       time: "09:00"
       timezone: "Europe/Amsterdam"
     reviewers:
-      - "nl-design-system/kernteam-sysadmin"
+      - "nl-design-system/kernteam-dependabot"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -22,4 +22,4 @@ updates:
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
-      - "nl-design-system/kernteam-sysadmin"
+      - "nl-design-system/kernteam-dependabot"
