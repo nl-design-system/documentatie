@@ -29,11 +29,11 @@ Je bent van harte welkom bij de 'Design open hour' meeting. Hier wisselen design
 
 Neem eens een kijkje in de keuken bij andere teams:
 
-- [Amsterdam Design System in Figma](https://www.figma.com/file/ORa7CBIooPgZj6HsEPBxNR/)
+- [Amsterdam Design System in Figma](https://www.figma.com/file/9IGm6IdPUYizBNGsUnueBd/Amsterdam-Design-System?type=design&node-id=741%3A19633&mode=design&t=Oojd5zdzhTU8jgQh-1)
 - [Buren in Figma](https://www.figma.com/file/dBzv9dd3GRFLtxzCKWq9uU/)
 - [Den Haag Design System in Figma](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/)
 - [Provincie Zuid-Holland in Figma](https://www.figma.com/file/pWIiNmzPDwYtPbYOQevpm1/)
-- [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](<https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=282%3A5324&t=TeyvkmJuXgAeX8ge-1>)
+- [Rijksdienst voor Ondernemend Nederland (RVO)](https://nl-design-system.github.io/rvo/docs/)
 - [Rotterdam Design System in Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/)
 - [Utrecht Design System in Figma](https://www.figma.com/file/msb3CfQBefPoruqNQ968Zh/)
 
