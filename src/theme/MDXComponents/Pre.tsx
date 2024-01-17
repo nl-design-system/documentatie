@@ -1,15 +1,27 @@
-import CodeBlock from '@theme/CodeBlock';
-import type { Props } from '@theme/MDXComponents/Pre';
+import type { Props as MDXPreProps } from '@theme/MDXComponents/Pre';
 import React, { isValidElement } from 'react';
+import { CodeBlockSyntaxHiglighting } from '/src/components/CodeBlockSyntaxHiglighting';
+import { Element, Props } from 'react';
 
-export default function MDXPre(props: Props): React.Element {
-  return (
-    <CodeBlock
-      // If this pre is created by a ``` fenced codeblock, unwrap the children
-      {...(isValidElement(props.children) &&
-      (props.children.props as { originalType: string } | null)?.originalType === 'code'
-        ? props.children.props
-        : { ...props })}
-    />
-  );
+export default function MDXPre(props: MDXPreProps): React.Element {
+  let syntax;
+  let textContent = '';
+
+  if (isValidElement(props.children)) {
+    const elementProps = (props.children as Element).props as Props;
+    const match =
+      typeof elementProps.className === 'string'
+        ? elementProps.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/)
+        : null;
+
+    if (match) {
+      syntax = match[1];
+    }
+
+    if (typeof elementProps.children === 'string') {
+      textContent = elementProps.children;
+    }
+  }
+
+  return <CodeBlockSyntaxHiglighting syntax={syntax} textContent={textContent} trim />;
 }
