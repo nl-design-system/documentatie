@@ -2,7 +2,7 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [12652],
  {
-  61687: (e, t, n) => {
+  72139: (e, t, n) => {
    n.r(t), n.d(t, { assets: () => a, contentTitle: () => s, default: () => p, frontMatter: () => r, metadata: () => u, toc: () => c });
    var o = n(11527),
     i = n(47214);

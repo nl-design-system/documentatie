@@ -29,8 +29,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.e9ce866a.css" />
-  <script src="/en/assets/js/runtime~main.7ee63dc5.js" defer="defer"></script>
-  <script src="/en/assets/js/main.2b214668.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.b9250d8e.js" defer="defer"></script>
+  <script src="/en/assets/js/main.02937009.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -248,18 +248,18 @@
 </span></code></pre>
               <p>Het essentiele voordeel van BEM class names is dat elk onderdeel van de CSS een unieke naam heeft waar je gemakkelijk naar kan verwijzen, iets dat niet vanzelfsprekend is voor een complexe CSS selector zoals <code class="utrecht-code">form button:hover</code>. Dat betekent dat je de CSS zelfs kan gebruiken in situaties waarin je niet de class name van NL Design System op een HTML element kan of wilt plaatsen.</p>
               <p>Met SCSS kun je de BEM class name van NL Design System bijvoorbeeld toepassen op de HTML van je huidige CMS templates, waardoor je oude system al gedeeltelijk naar NL Design System kan migreren:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">@import &quot;./nl-design-system&quot;;</span>
+              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;./nl-design-system&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">.content p {</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  @extend .nl-paragraph;</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">}</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">.content a {</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  @extend .nl-link;</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">}</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">.content a:hover {</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  @extend .nl-link--hover;</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">.content p </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@extend</span><span class="token plain"> .nl-paragraph</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">.content a </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@extend</span><span class="token plain"> .nl-link</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">.content a:hover </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@extend</span><span class="token plain"> .nl-link--hover</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
               <p>Veel React projecten maken gebruik van <code class="utrecht-code">styled-components</code>: dat is een alternatief voor CSS bestanden. Zulke projecten zonder CSS hebben niet een mogelijkheid om samen te werken aan het visueel ontwerp met teams in de organisatie die een ander framework gebruiken zoals Vue.js.</p>
               <p>De BEM class names van NL Design System maken het mogelijk dat beide teams samenwerken aan de CSS. Hier volgt een voorbeeld van BEM class names in React door gebruik te maken van CSS modules:</p>
