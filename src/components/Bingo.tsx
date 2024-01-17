@@ -1,3 +1,4 @@
+import Head from '@docusaurus/Head';
 import { OrderedList, OrderedListItem } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React from 'react';
@@ -47,6 +48,9 @@ export const Bingo = ({ items }: BingoProps) => {
 
   return (
     <div className={style['bingo']}>
+      <Head>
+        <meta name="argos" content="false" />
+      </Head>
       <div className={style['bingo__form']}>
         {bingoNumbers.map((bingoNumber) => (
           <div className={style['bingo__number']} key={bingoNumber}>
