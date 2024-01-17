@@ -39,6 +39,11 @@ const screenshotPathname = (pathname: string) => {
     const url = siteUrl + pathname;
     await page.goto(url);
     await page.waitForFunction(waitForDocusaurusHydration);
+
+    const noVisualRegressionTest = (await page.locator('meta[name="argos"][content="false"]').count()) > 0;
+
+    test.skip(noVisualRegressionTest, 'Skipped because of <meta name="argos" content="false">');
+
     await argosScreenshot(page, `${screenshotPath}${pathnameToArgosName(pathname)}`);
   });
 };
