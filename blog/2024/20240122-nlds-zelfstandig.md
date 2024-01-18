@@ -9,7 +9,7 @@ authors:
     title: Public relations lead & Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/hiddedevries/
 tags: [meta, NL design system]
-image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/06/gc-nlds-beeldmerk.png
+image: https://github.com/nl-design-system/documentatie/blob/assets/blogpost-nlds-zelfstandig.png?raw=true
 hide_table_of_contents: false
 date: 2024-01-22
 ---
