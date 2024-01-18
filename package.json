@@ -46,6 +46,7 @@
     "install-test-browsers": "playwright install",
     "test-e2e": "playwright test test/e2e/",
     "test-visual": "playwright test test/visual/",
+    "build-screenshots": "playwright test test/screenshots.test.ts",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build"
   },
