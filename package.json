@@ -80,7 +80,7 @@
     "@lerna-lite/cli": "3.2.0",
     "@lerna-lite/publish": "3.2.0",
     "@lerna-lite/run": "3.2.0",
-    "@lerna-lite/version": "3.2.0",
+    "@lerna-lite/version": "3.2.1",
     "@mdx-js/react": "3.0.0",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.109",
