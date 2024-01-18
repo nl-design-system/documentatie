@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Color palette for forced-colors mode</title>
+    <meta name="emulate-forced-colors" content="active" />
+    <meta name="emulate-color-scheme" content="dark" />
+    <style>
+      .utrecht-color-sample {
+        background-color: var(--utrecht-color-sample-background-color, currentColor);
+        block-size: var(--utrecht-color-sample-block-size, 2em);
+        border-color: var(--utrecht-color-sample-border-color, var(--utrecht-color-sample-default-border-color));
+        border-radius: var(--utrecht-color-sample-border-radius, 0);
+        border-style: solid;
+        border-width: var(--utrecht-color-sample-border-width, 0);
+        box-sizing: border-box;
+        display: inline-block;
+        inline-size: var(--utrecht-color-sample-inline-size, 2em);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      @media (forced-colors: active) {
+        .utrecht-color-sample {
+          forced-color-adjust: none;
+        }
+      }
+      @media (forced-colors: active) and (prefers-color-scheme: dark) {
+        .utrecht-color-sample {
+          --utrecht-color-sample-default-border-color: var(--utrecht-color-sample-dark-border-color, #000);
+        }
+      }
+      @media (forced-colors: active) and (prefers-color-scheme: light) {
+        .utrecht-color-sample {
+          --utrecht-color-sample-default-border-color: var(--utrecht-color-sample-light-border-color, #fff);
+        }
+      }
+      :root {
+        --utrecht-color-sample-border-color: CanvasText;
+        --utrecht-color-sample-border-width: 1px;
+        --utrecht-color-sample-border-radius: 3px;
+        font-size: 48px;
+      }
+      code {
+        font-family: "Monaco", monospace;
+      }
+      dl > div:not([hidden]) {
+        display: flex;
+        margin-block-end: 1em;
+      }
+      dl > div > dt {
+        min-inline-size: 7.5em;
+      }
+      body {
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <dl>
+      <div>
+        <dt><code>Canvas</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: Canvas"></div>
+        </dd>
+      </div>
+      <div>
+        <dt><code>CanvasText</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: CanvasText"></div>
+        </dd>
+      </div>
+      <div hidden>
+        <dt><code>Mark</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: Mark"></div>
+        </dd>
+      </div>
+      <div hidden>
+        <dt><code>MarkText</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: MarkText"></div>
+        </dd>
+      </div>
+      <div>
+        <dt><code>LinkText</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: LinkText"></div>
+        </dd>
+      </div>
+      <div>
+        <dt><code>Highlight</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: Highlight"></div>
+        </dd>
+      </div>
+      <div>
+        <dt><code>GrayText</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: GrayText"></div>
+        </dd>
+      </div>
+      <div>
+        <dt><code>ButtonBorder</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: ButtonBorder"></div>
+        </dd>
+      </div>
+      <div hidden>
+        <dt><code>VisitedText</code></dt>
+        <dd>
+          <div class="utrecht-color-sample" style="color: VisitedText"></div>
+        </dd>
+      </div>
+    </dl>
+  </body>
+</html>
