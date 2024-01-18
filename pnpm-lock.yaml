@@ -106,8 +106,8 @@ importers:
         specifier: 1.0.0-alpha.109
         version: 1.0.0-alpha.109
       '@nl-design-system/component-index':
-        specifier: 1.0.0-alpha.16
-        version: 1.0.0-alpha.16
+        specifier: 1.0.0-alpha.18
+        version: 1.0.0-alpha.18
       '@playwright/test':
         specifier: 1.40.1
         version: 1.40.1
@@ -2871,8 +2871,8 @@ packages:
     resolution: {integrity: sha512-TXDhTSBUQRlRKYTBM1FQGKgiiEsk6+qXBQUMHjqB5DFYDKnc9OPbhAahJuioTuV0072bBM9OWDDMfqKl0xuXIw==}
     dev: true
 
-  /@nl-design-system/component-index@1.0.0-alpha.16:
-    resolution: {integrity: sha512-g3Is8EGhTr9M4s42Pp42zo5TNr8OFilNQ/4+h4zfbtSzObIYP9r19XHNu8FLZfDXSmN9dBUihs8BQF7pcHGZTw==}
+  /@nl-design-system/component-index@1.0.0-alpha.18:
+    resolution: {integrity: sha512-A+dhRs2zIegw/VCdZGDabTNqnnLs3V5FsPAQIPWlcwlQKwyZdpV3MWjRxBaBBZ2Jf5gRNg886REKPCsq5oU+2g==}
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
