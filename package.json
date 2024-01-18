@@ -85,7 +85,7 @@
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.109",
     "@nl-design-system/component-index": "1.0.0-alpha.16",
-    "@playwright/test": "1.40.1",
+    "@playwright/test": "1.41.0",
     "@types/node": "20.10.7",
     "@typescript-eslint/eslint-plugin": "6.18.0",
     "@typescript-eslint/parser": "6.18.0",
