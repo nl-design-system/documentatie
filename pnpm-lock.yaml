@@ -232,8 +232,8 @@ importers:
         specifier: 1.69.7
         version: 1.69.7
       style-dictionary:
-        specifier: 3.9.1
-        version: 3.9.1
+        specifier: 3.9.2
+        version: 3.9.2
 
 packages:
 
@@ -13081,8 +13081,8 @@ packages:
       through: 2.3.8
     dev: true
 
-  /style-dictionary@3.9.1:
-    resolution: {integrity: sha512-odyTC7wMYE4B3VOhc3LW1g0PCz9g+0WZZt5qp8KpWP9POlhw0+8MYiPQYwYfBmu4MEs1qbZ+GHySu4TTjQPH9A==}
+  /style-dictionary@3.9.2:
+    resolution: {integrity: sha512-M2pcQ6hyRtqHOh+NyT6T05R3pD/gwNpuhREBKvxC1En0vyywx+9Wy9nXWT1SZ9ePzv1vAo65ItnpA16tT9ZUCg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
