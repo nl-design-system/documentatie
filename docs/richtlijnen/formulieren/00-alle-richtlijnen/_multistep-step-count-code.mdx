@@ -1,0 +1,60 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline appearance="do" title="Beschrijf in de titel in welke stap van welk formulier de gebruiker is. ">
+  <Canvas language="html">
+    {() => (
+      <>
+        <title>Contact opnemen, Stap 2 van 3: Uw gegevens - Gemeente Voorbeeld</title>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Voor elke (volgende) stap / dezelfde titel.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <title>Contact opnemen - Gemeente voorbeeld</title>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Stap in het kopje van het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Stap 2 van 3, uw gegevens</h2>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Stap onder het kopje van het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Uw gegevens</h2>
+<p>Stap 2 van 3</p>
+
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Stap boven het kopje van het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+<p>Stap 2 van 3</p>
+<h2>Uw gegevens</h2>
+
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
