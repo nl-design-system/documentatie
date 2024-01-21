@@ -13,7 +13,7 @@
     c = [{ value: "Levende Backlog", id: "levende-backlog", level: 2 }];
    function d(e) {
     const t = { a: "a", h1: "h1", h2: "h2", p: "p", ...(0, i.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: ["\n", "\n", (0, o.jsx)(t.h1, { id: "tooltip", children: "Tooltip" }), "\n", (0, o.jsx)(t.p, { children: 'Dit component heeft de "Discouraged" status: Dit component is geen onderdeel van de NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.' }), "\n", (0, o.jsx)(t.h2, { id: "levende-backlog", children: "Levende Backlog" }), "\n", (0, o.jsxs)(t.p, { children: ["De Tooltip component staat bij NL Design System in de ", (0, o.jsx)(t.a, { href: "https://github.com/nl-design-system/backlog/issues/50", children: "levende backlog" }), ", heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!"] })] });
+    return (0, o.jsxs)(o.Fragment, { children: ["\n", "\n", (0, o.jsx)(t.h1, { id: "tooltip", children: "Tooltip" }), "\n", (0, o.jsx)(t.p, { children: 'Dit component heeft de "Discouraged" status: Dit component is geen onderdeel van NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.' }), "\n", (0, o.jsx)(t.h2, { id: "levende-backlog", children: "Levende Backlog" }), "\n", (0, o.jsxs)(t.p, { children: ["De Tooltip component staat bij NL Design System in de ", (0, o.jsx)(t.a, { href: "https://github.com/nl-design-system/backlog/issues/50", children: "levende backlog" }), ", heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!"] })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
