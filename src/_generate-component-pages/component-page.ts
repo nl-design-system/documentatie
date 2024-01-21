@@ -12,13 +12,20 @@ export const getStateDescription = ({ state }) => {
       description =
         'Heb je hem succesvol ingezet voor jouw project met jouw huisstijl? Laat ons dit weten, misschien kan dit component dan opgenomen worden in NL Design System.';
       break;
-    case COMPONENT_STATES.NL_STABLE:
+    case COMPONENT_STATES.NL_UNSTABLE:
       description =
         'Het component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
       break;
-    default:
+    case COMPONENT_STATES.NL_STABLE:
       description =
-        'Dit component is onderdeel van de NL Design System Hall of fame en wordt al door anderen succesvol in productie ingezet';
+        'Dit component is onderdeel van de NL Design System Hall of fame en wordt al door anderen succesvol in productie ingezet.';
+      break;
+    case COMPONENT_STATES.DISCOURAGED:
+      description =
+        'Dit component is geen onderdeel van de NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.';
+      break;
+    default:
+      description = '';
       break;
   }
 
