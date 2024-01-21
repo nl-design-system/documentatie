@@ -18,11 +18,11 @@ export const getStateDescription = ({ state }) => {
       break;
     case COMPONENT_STATES.NL_STABLE:
       description =
-        'Dit component is onderdeel van de NL Design System Hall of fame en wordt al door anderen succesvol in productie ingezet.';
+        'Dit component is onderdeel van de "Hall of fame" en wordt al door anderen succesvol in productie ingezet.';
       break;
     case COMPONENT_STATES.DISCOURAGED:
       description =
-        'Dit component is geen onderdeel van de NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.';
+        'Dit component is geen onderdeel van NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.';
       break;
     default:
       description = '';
