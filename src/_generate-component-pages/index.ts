@@ -71,11 +71,14 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
 
   console.log(`File created: ${fileName}`);
 
-  const groupedImplementations = implementations.reduce((grouped, implementation) => {
-    const group = grouped[implementation.type] || [];
-    grouped[implementation.type] = [...group, implementation];
-    return grouped;
-  }, {} as { [key: string]: ComponentImplementation[] });
+  const groupedImplementations = implementations.reduce(
+    (grouped, implementation) => {
+      const group = grouped[implementation.type] || [];
+      grouped[implementation.type] = [...group, implementation];
+      return grouped;
+    },
+    {} as { [key: string]: ComponentImplementation[] },
+  );
 
   if (implementations.length) {
     fs.appendFileSync(fileName, getImplementationsSection());
