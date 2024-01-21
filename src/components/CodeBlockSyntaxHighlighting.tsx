@@ -3,19 +3,19 @@ import { Highlight } from 'prism-react-renderer';
 import React, { Element, PropsWithChildren } from 'react';
 import nldsPrismTheme from '../../nldsPrism';
 
-export interface CodeBlockSyntaxHiglightingProps extends CodeBlockProps {
+export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
   lineNumber?: boolean;
   textContent: string;
   syntax?: string;
   trim?: boolean;
 }
 
-export function CodeBlockSyntaxHiglighting({
+export function CodeBlockSyntaxHighlighting({
   lineNumber,
   syntax,
   textContent,
   trim,
-}: PropsWithChildren<CodeBlockSyntaxHiglightingProps>): Element {
+}: PropsWithChildren<CodeBlockSyntaxHighlightingProps>): Element {
   let code = textContent;
 
   if (trim) {
@@ -41,4 +41,4 @@ export function CodeBlockSyntaxHiglighting({
   );
 }
 
-export default CodeBlockSyntaxHiglighting;
+export default CodeBlockSyntaxHighlighting;

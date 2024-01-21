@@ -1,6 +1,6 @@
 import type { Props as MDXPreProps } from '@theme/MDXComponents/Pre';
 import React, { isValidElement } from 'react';
-import { CodeBlockSyntaxHiglighting } from '/src/components/CodeBlockSyntaxHiglighting';
+import { CodeBlockSyntaxHighlighting } from '/src/components/CodeBlockSyntaxHighlighting';
 import { Element, Props } from 'react';
 
 export default function MDXPre(props: MDXPreProps): React.Element {
@@ -23,5 +23,5 @@ export default function MDXPre(props: MDXPreProps): React.Element {
     }
   }
 
-  return <CodeBlockSyntaxHiglighting syntax={syntax} textContent={textContent} trim />;
+  return <CodeBlockSyntaxHighlighting syntax={syntax} textContent={textContent} trim />;
 }
