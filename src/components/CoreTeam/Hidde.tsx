@@ -7,7 +7,6 @@ const Hidde: TeamMember = {
   Avatar,
   name: 'Hidde de Vries',
   role: 'Public Relations Lead & Toegankelijkheidsspecialist',
-  email: 'hidde.devries@ictu.nl',
   slack: { mention: '@Hidde', id: 'UA17NJHTR' },
   Description: () => (
     <>

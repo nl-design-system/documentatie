@@ -7,7 +7,6 @@ const Rian: TeamMember = {
   Avatar,
   name: 'Rian Rietveld',
   role: 'Specialist webtoegankelijkheid',
-  email: 'rian.rietveld@ictu.nl',
   slack: { mention: '@Rian Rietveld', id: 'U05UTKUNF6Y' },
   Description: () => (
     <>
