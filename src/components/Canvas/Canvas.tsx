@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';
 import prettierHTML from 'prettier/plugins/html.mjs';
+import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
 import React, { isValidElement, ReactNode, useEffect, useState } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
@@ -40,7 +41,7 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
     const formatWithPrettier = async () => {
       displayCode = await prettier.format(unformattedCode, {
         parser: language,
-        plugins: [prettierBabel, prettierESTree, prettierHTML],
+        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
         semi: false,
         singleAttributePerLine: true,
         embeddedLanguageFormatting: 'off',
