@@ -1,0 +1,44 @@
+.contrast-ratio {
+  position: relative;
+  inline-size: 100%;
+  min-block-size: 320px;
+}
+
+.contrast-ratio__sample {
+  display: inline-block;
+  inline-size: 50%;
+  block-size: 100%;
+  --utrecht-color-sample-inline-size: 100%;
+  --utrecht-color-sample-block-size: 100%;
+}
+
+.contrast-ratio__sample-value {
+  margin-inline-start: 0; /* reset <dd> */
+  block-size: 10em;
+}
+
+.contrast-ratio__color {
+  inline-size: 50%;
+  block-size: 100%;
+}
+
+.contrast-ratio__result {
+  --inline-size: 10em;
+  --block-size: 4.5em;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  background-color: white;
+  color: black;
+  border: 1px solid silver;
+  min-inline-size: var(--inline-size);
+  min-block-size: var(--block-size);
+  margin-inline-start: calc(-1 * 0.5 * var(--inline-size));
+  margin-block-start: calc(-1 * var(--block-size));
+  text-align: center;
+}
+
+.contrast-ratio__result-value {
+  margin-inline-start: 0; /* reset <dd> */
+  font-size: 200%;
+}
