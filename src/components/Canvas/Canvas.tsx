@@ -60,9 +60,11 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
 
   return (
     <div className={clsx(style['nlds-canvas'])}>
-      <div className={clsx(style['nlds-canvas__example'])}>
-        <HTMLContent className="voorbeeld-theme">{jsxTree}</HTMLContent>
-      </div>
+      {jsxTree && (
+        <div className={clsx(style['nlds-canvas__example'])}>
+          <HTMLContent className="voorbeeld-theme">{jsxTree}</HTMLContent>
+        </div>
+      )}
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
           className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}
