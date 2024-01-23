@@ -16,7 +16,7 @@
    }
   },
   2909: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => f, contentTitle: () => k, default: () => w, frontMatter: () => j, metadata: () => x, toc: () => _ });
+   i.r(n), i.d(n, { assets: () => f, contentTitle: () => k, default: () => w, frontMatter: () => b, metadata: () => x, toc: () => _ });
    var l = i(1527),
     t = i(7214);
    function s(e) {
@@ -61,15 +61,15 @@
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
    }
-   var b = i(3324);
-   const j = { title: "Bevestigingspagina | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] },
+   var j = i(3324);
+   const b = { title: "Bevestigingspagina | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] },
     k = "Bevestigingspagina",
-    x = { id: "richtlijnen/formulieren/alle-richtlijnen/confirmation", title: "Bevestigingspagina | Richtlijnen | NL Design System", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/confirmation.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/bevestigingspagina", permalink: "/richtlijnen/formulieren/alle-richtlijnen/bevestigingspagina", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/confirmation.mdx", tags: [], version: "current", frontMatter: { title: "Bevestigingspagina | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Voorkom fouten in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker" }, next: { title: "Toegankelijk", permalink: "/richtlijnen/formulieren/toegankelijk" } },
+    x = { id: "richtlijnen/formulieren/alle-richtlijnen/confirmation", title: "Bevestigingspagina | Richtlijnen | NL Design System", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/confirmation.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/bevestigingspagina", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/bevestigingspagina", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/confirmation.mdx", tags: [], version: "current", frontMatter: { title: "Bevestigingspagina | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Autocomplete in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/autocomplete" }, next: { title: "Toegankelijk", permalink: "/en/richtlijnen/formulieren/toegankelijk" } },
     f = {},
     _ = [];
    function y(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, t.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "bevestigingspagina", children: "Bevestigingspagina" }), "\n", (0, l.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, l.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld dat het formulier succesvol is verzonden." }), "\n", (0, l.jsx)(n.li, { children: "Maak de succesmelding toegankelijk voor alle gebruikers." }), "\n", (0, l.jsx)(n.li, { children: "Vertel wat de vervolgacties zijn." }), "\n", (0, l.jsx)(n.li, { children: "Zorg dat de gebruiker contact op kan nemen bij vragen." }), "\n"] }), "\n", (0, l.jsx)(m, {}), "\n", (0, l.jsx)(o, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(a, {}), "\n", (0, l.jsx)(b.ZP, {})] });
+    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "bevestigingspagina", children: "Bevestigingspagina" }), "\n", (0, l.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, l.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld dat het formulier succesvol is verzonden." }), "\n", (0, l.jsx)(n.li, { children: "Maak de succesmelding toegankelijk voor alle gebruikers." }), "\n", (0, l.jsx)(n.li, { children: "Vertel wat de vervolgacties zijn." }), "\n", (0, l.jsx)(n.li, { children: "Zorg dat de gebruiker contact op kan nemen bij vragen." }), "\n"] }), "\n", (0, l.jsx)(m, {}), "\n", (0, l.jsx)(o, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(a, {}), "\n", (0, l.jsx)(j.ZP, {})] });
    }
    function w(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -77,7 +77,7 @@
    }
   },
   3460: (e, n, i) => {
-   i.d(n, { X: () => b });
+   i.d(n, { X: () => j });
    var l = i(6532),
     t = i(6259),
     s = i(1910),
@@ -97,9 +97,9 @@
       l = n.ownerDocument.getElementById(i);
      (l.hidden = !l.hidden), n.setAttribute("aria-expanded", !l.hidden), (n.innerText = l.hidden ? "Bekijk code" : "Verberg code");
     },
-    b = (e) => {
-     let { code: n, copy: i = !1, defaultCollapsed: b = !0, children: j, language: k } = e,
-      x = "function" == typeof j ? j() : j,
+    j = (e) => {
+     let { code: n, copy: i = !1, defaultCollapsed: j = !0, children: b, language: k } = e,
+      x = "function" == typeof b ? b() : b,
       f = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
       _ = "string" == typeof n ? n : g.uS(f || x),
       [y, w] = (0, c.useState)(_);
@@ -113,11 +113,11 @@
       className: (0, t.Z)(v["nlds-canvas"]),
       children: [
        (0, p.jsx)("div", { className: (0, t.Z)(v["nlds-canvas__example"]), children: (0, p.jsx)(l.pu, { className: "voorbeeld-theme", children: x }) }),
-       (0, p.jsx)("div", { className: (0, t.Z)(v["nlds-canvas__toolbar"]), children: (0, p.jsx)(l.zx, { className: (0, t.Z)(v["nlds-canvas__button"], v["nlds-canvas__toggle-code-button"]), appearance: "subtle-button", onClick: m, "aria-expanded": !b, "aria-controls": z, children: b ? "Bekijk code" : "Verberg code" }) }),
+       (0, p.jsx)("div", { className: (0, t.Z)(v["nlds-canvas__toolbar"]), children: (0, p.jsx)(l.zx, { className: (0, t.Z)(v["nlds-canvas__button"], v["nlds-canvas__toggle-code-button"]), appearance: "subtle-button", onClick: m, "aria-expanded": !j, "aria-controls": z, children: j ? "Bekijk code" : "Verberg code" }) }),
        (0, p.jsxs)("div", {
         className: (0, t.Z)(v["nlds-canvas__code-block"], !i && v["nlds-canvas__code-block--user-select-none"]),
         id: z,
-        hidden: b,
+        hidden: j,
         children: [
          (0, p.jsx)(h.u, { syntax: k, textContent: y, trim: !0 }),
          i &&
