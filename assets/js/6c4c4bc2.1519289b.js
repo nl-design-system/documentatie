@@ -120,7 +120,7 @@
      return (0, j.jsxs)("div", {
       className: (0, r.Z)(u["nlds-canvas"]),
       children: [
-       (0, j.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, j.jsx)(i.pu, { className: "voorbeeld-theme", children: x }) }),
+       x && (0, j.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, j.jsx)(i.pu, { className: "voorbeeld-theme", children: x }) }),
        (0, j.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__toolbar"]), children: (0, j.jsx)(i.zx, { className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__toggle-code-button"]), appearance: "subtle-button", onClick: g, "aria-expanded": !m, "aria-controls": z, children: m ? "Bekijk code" : "Verberg code" }) }),
        (0, j.jsxs)("div", {
         className: (0, r.Z)(u["nlds-canvas__code-block"], !l && u["nlds-canvas__code-block--user-select-none"]),
