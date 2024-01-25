@@ -34,7 +34,7 @@ Neem eens een kijkje in de keuken bij andere teams:
 - [Den Haag Design System in Figma - Huidig](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/)
 - [Den Haag Design System in Figma](https://www.figma.com/file/x4RkF6BIdrNZbh7D53NTzB/%F0%9F%92%A0-NLDS---Den-Haag---Bibliotheek?type=design&node-id=197%3A664&mode=design&t=DNdxVz8Jh4eR1p7b-1)
 - [Provincie Zuid-Holland in Figma](https://www.figma.com/file/pWIiNmzPDwYtPbYOQevpm1/)
-- [Rijksdienst voor Ondernemend Nederland (RVO)]([https://nl-design-system.github.io/rvo/docs/](https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=282%3A5324&mode=design&t=8GzXgFckRTFr0OX6-1))
+- [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=282%3A5324&mode=design&t=8GzXgFckRTFr0OX6-1))
 - [Rotterdam Design System in Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/)
 - [Utrecht Design System in Figma](https://www.figma.com/file/UXIHcIurAD8hyoBWx4hDBV/NLDS---Gemeente-Utrecht---Bibliotheek?type=design&node-id=197%3A664&mode=design&t=QPCkq0xOt8SFquC4-1)
 
