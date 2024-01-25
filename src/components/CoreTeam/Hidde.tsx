@@ -1,10 +1,8 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { TeamMember } from './TeamMember';
-import Avatar from './avatars/kernteam_hidde.svg';
 
 const Hidde: TeamMember = {
-  Avatar,
   name: 'Hidde de Vries',
   role: 'Public Relations Lead & Toegankelijkheidsspecialist',
   slack: { mention: '@Hidde', id: 'UA17NJHTR' },

@@ -1,10 +1,8 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { TeamMember } from './TeamMember';
-import Avatar from './avatars/kernteam_peter.svg';
 
 const Peter: TeamMember = {
-  Avatar,
   name: 'Peter Berrevoets',
   role: 'Projectleider',
   slack: { mention: '@Peter Berrevoets', id: 'U04J217KA67' },
