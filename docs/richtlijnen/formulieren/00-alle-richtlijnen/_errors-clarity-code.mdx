@@ -41,6 +41,7 @@ import { Guideline } from "@site/src/components/Guideline";
         <p id="description-passport-validity-2">Dit veld is verplicht.</p>
         <input
           id="passport-validity-2"
+          aria-invalid="false"
           type="text"
           name="passport-validity-2"
           aria-describedby="description-passport-validity-2"
@@ -50,18 +51,3 @@ import { Guideline } from "@site/src/components/Guideline";
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Alleen een visuele indicatie geven dat er iets fout is gegaan.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <label for="passport-validity-3">Geldig tot</label>
-        <input
-          id="passport-validity-3"
-          type="text"
-          name="passport-validity-3"
-          aria-describedby="description-passport-validity-3"
-        />
-      </>
-    )}
-  </Canvas>
-</Guideline>

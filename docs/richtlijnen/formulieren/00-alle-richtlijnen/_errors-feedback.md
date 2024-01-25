@@ -6,7 +6,7 @@ Door het geven van feedback aan screenreadergebuikers foutmeldingen voldoe je aa
 
 ### Gebruik ARIA voor feedback
 
-Screenreaders geven via ARIA aanvullende informatie en feedback aan hun gebruikers. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
+Gebruik ARIA om aanvullende informatie en feedback te geven aan screenreadergebruikers. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
 
 Twee ARIA-attributen zijn belangrijk voor screenreaderfeedback:
 
@@ -31,16 +31,7 @@ VoiceOver leest voor: "Voorbeeld, vereist, ongeldige gegevens, bewerk tekst".
 
 ### Screenreaderfeedback en focusmanagement na submit
 
-Voor toetsenbord- en screenreadergebruikers is het van belang dat na een submit, de toetsenbordfocus op een logische plek komt.
-
-Aanbevolen werkwijze bij foutmeldingen: Na het verzenden van het formulier verplaatst de zichtbare- en toetsenbordfocus naar de titel van de samenvatting boven het formulier. Bijkomend voordeel is dat de titel dan meteen ook wordt uitgesproken door een screenreader.
-
-Als de gebruiker verder tabt, komt de focus op de eerste foutmelding, die foutmelding is ook een link naar het bijbehorende invoerveld.
-
-Wordt het formulier dynamisch verzonden, zonder page reload, kan er extra screenreaderfeedback nodig zijn via `role="alert"` of `aria-live="assertive"`
-Laat niet met ARIA de hele samenvatting voorlezen, alleen de titel van de samenvatting zelf.
-
-Een voorbeeld van hoe dit op te zetten, met gebruik van screenreaderfeedback is [How to make inline error messages accessible](https://hidde.blog/how-to-make-inline-error-messages-accessible/) van Hidde de Vries.
+Voor toetsenbord- en screenreadergebruikers is het van belang dat na een submit, de visuele- en toetsenbordfocus op een logische plek komt.
 
 ### Update het `<title>` element in de `<head>`
 
@@ -53,15 +44,6 @@ Je kunt hier dus waardevolle informatie kwijt zoals:
 - een formulier is succesvol verzonden.
 
 Bijvoorbeeld:
-
-```html
-<head>
-  <title>Het formulier is niet verzonden, er zijn 2 foutmeldingen - Contact - Gemeente Voorbeeld</title>
-  [...]
-</head>
-```
-
-Of:
 
 ```html
 <head>
