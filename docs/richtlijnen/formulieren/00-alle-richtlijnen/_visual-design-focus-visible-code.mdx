@@ -1,0 +1,25 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import { Link } from "@utrecht/component-library-react/dist/css-module";
+
+<Guideline
+  appearance="do"
+  title="Geef invoerveld een duidelijke visuele focusstijl."
+  description={
+    <>
+      In dit voorbeeld is de focus herkenbaar aan een stippellijn rond het invoerveld. Klik in het veld of tab ernaar met het toetsenbord om het effect te zien.
+    </>
+  }
+>
+  <Canvas
+    language="html"
+  >
+    {() => (
+      <>
+        <input type="text" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
