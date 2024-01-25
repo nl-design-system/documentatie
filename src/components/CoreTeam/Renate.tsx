@@ -1,10 +1,8 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { TeamMember } from './TeamMember';
-import Avatar from './avatars/kernteam_renate.svg';
 
 const Renate: TeamMember = {
-  Avatar,
   name: 'Renate Bruinenberg',
   role: 'Communicatieadviseur',
   slack: { mention: '@Renate Bruinenberg', id: 'U039TN2VAC8' },
