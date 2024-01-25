@@ -11,12 +11,7 @@
 }
 
 .homepage-hero__container {
-  padding-block-end: 92px;
-}
-
-.homepage-hero__linear-gradient {
-  background-image: linear-gradient(to bottom right, transparent 50%, white 50.5%);
-  height: 40px;
+  padding-block-end: 40px;
 }
 
 .homepage-hero__title {
@@ -53,8 +48,5 @@
     --utrecht-unordered-list-margin-block-start: 24px;
     --utrecht-document-font-size: 20px;
     --utrecht-heading-1-font-size: 40px;
-  }
-  .homepage-hero__linear-gradient {
-    height: 80px;
   }
 }
