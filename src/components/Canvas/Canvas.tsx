@@ -6,7 +6,7 @@ import prettierESTree from 'prettier/plugins/estree.mjs';
 import prettierHTML from 'prettier/plugins/html.mjs';
 import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
-import React, { CSSProperties, isValidElement, ReactNode, useEffect, useState } from 'react';
+import React, { isValidElement, ReactNode, useEffect, useState } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import { v4 as uuid } from 'uuid';
 import style from './Canvas.module.css';
@@ -18,7 +18,6 @@ interface CanvasProps {
   children: ReactNode | (() => ReactNode);
   language: any;
   copy?: boolean;
-  designTokens?: CSSProperties;
 }
 
 const toggleExpanded = ({ target }) => {
@@ -29,7 +28,7 @@ const toggleExpanded = ({ target }) => {
   target.innerText = region.hidden ? 'Bekijk code' : 'Verberg code';
 };
 
-export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language, designTokens }: CanvasProps) => {
+export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language }: CanvasProps) => {
   // By default the `children` argument is converted to code.
   let jsxTree = typeof children === 'function' ? children() : children;
   // You can override the code from `children` with the `code` argument.
@@ -61,11 +60,11 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
 
   return (
     <div className={clsx(style['nlds-canvas'])}>
-      <div className={clsx(style['nlds-canvas__example'])}>
-        <HTMLContent className="voorbeeld-theme" style={designTokens}>
-          {jsxTree}
-        </HTMLContent>
-      </div>
+      {jsxTree && (
+        <div className={clsx(style['nlds-canvas__example'])}>
+          <HTMLContent className="voorbeeld-theme">{jsxTree}</HTMLContent>
+        </div>
+      )}
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
           className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}

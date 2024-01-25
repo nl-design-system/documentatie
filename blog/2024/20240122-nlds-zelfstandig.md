@@ -16,7 +16,7 @@ date: 2024-01-22
 
 Vanaf 2024 gaat NL Design System verder als zelfstandig project. We spreken Victor Zuydweg (initiatiefnemer Gebruiker Centraal) en Peter Berrevoets (projectleider NL Design System) over toen en nu.
 
-Ergens in 2018 begon het verschillende mensen in overheidsland op te vallen hoe verschillend overheidswebsites waren. Teams vonden opnieuw het wiel uit. De gebruikte patronen waren niet altijd gebruiksvriendelijk. De vraag was al snel: “Kunnen we niet beter samenwerken?”. Er ontstond een community rondom het plan om samen een design system op te zetten (zie: [Wat is een design system?](/meedoen/introductie#wat-is-een-design-system)). Deze community kwam in 2019 als experiment onder de vleugels van Gebruiker Centraal en kreeg daar de kans te groeien.
+Ergens in 2018 begon het verschillende mensen in overheidsland op te vallen hoe verschillend overheidswebsites waren. Teams vonden opnieuw het wiel uit. Het resultaat was niet altijd gebruiksvriendelijk. De vraag was al snel: “Kunnen we niet beter samenwerken?”. Er ontstond een community rondom het plan om samen een design system op te zetten (zie: [Wat is een design system?](/meedoen/introductie#wat-is-een-design-system)). Deze community kwam in 2019 als experiment onder de vleugels van Gebruiker Centraal en kreeg daar de kans te groeien.
 
 <!-- truncate -->
 
@@ -30,7 +30,7 @@ Volgens Victor staat iedere knop voor een team, bestaande uit ontwikkelaars en o
 
 In 2018 bestonden er al op allerlei plekken design systems, ook bij de overheid. Zo had de Belastingdienst iBieb. Geïnspireerd op deze naam werden de plannen om een design system te ontwikkelen steeds concreter, en ontstond de OBieb. De ontwikkeling hiervan ontstond uit een samenwerking tussen Gebruiker Centraal en het programma Mens Centraal. Victor: “Onze toenmalige opdrachtgever vanuit het ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) was Raph de Rooij. Raph heeft zelf een lange historie op het gebied van digitale toegankelijkheid. Hij snapte de noodzaak van het project direct. Zijn enthousiasme heeft destijds zeker geholpen bij het realiseren van onze plannen.”
 
-In 2019 werd de naam omgedoopt in NL Design System. Volgens Victor omdat de naam uiteindelijk gewoon zegt wat het is. Na een succesvol experiment volgde [het toekennen van innovatiebudgetten](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2020-de-24-geselecteerde-projecten/). Daarmee werd het systeem doorontwikkeld, een white-label-aanpak bedacht (huisstijl-onafhankelijk), de architectuur opgezet en een community gevormd voor samenwerking tussen verschillende overheden. Een vast kernteam met specialisten begon met bouwen.
+In 2019 werd de naam omgedoopt in NL Design System. Volgens Victor omdat de naam uiteindelijk gewoon zegt wat het is. Na een succesvol experiment volgde [het toekennen van innovatiebudgetten](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2020-de-24-geselecteerde-projecten/). Daarmee werd het systeem doorontwikkeld, [huisstijl-onafhankelijk met design tokens](https://nldesignsystem.nl/meedoen/design-tokens/), de architectuur opgezet en een community gevormd voor samenwerking tussen verschillende overheden. Een vast kernteam met specialisten begon met bouwen.
 
 ## “Iedereen draagt zijn steentje bij”
 
@@ -38,7 +38,7 @@ Het NL Design System is geen standaard design system, zoals je wellicht in ander
 
 Projectleider Angela Imhof stond samen met [het kernteam](https://nldesignsystem.nl/project/kernteam), bestaande uit Yolijn van der Kolk en Robbert Broersma, al vanaf de start van het NL Design System project aan het roer. Fast forward naar 2023: Angela droeg het stokje over aan Peter Berrevoets, die haar rol als projectleider overnam.
 
-Toen Peter begin 2023 aansloot, was hij gelijk enthousiast. “De naam van het programma 'Gebruiker Centraal' sprak me erg aan. De mate waarin NL Design System bijdraagt aan de toegankelijkheidsopgave van veel overheidsorganisaties misschien nog wel meer! Dus ik stapte maar wat graag aan boord en het voelde gelijk goed om hier iets aan te mogen bijdragen.”
+Toen Peter begin 2023 aansloot, was hij gelijk enthousiast. “De naam van het programma 'Gebruiker Centraal' sprak me erg aan. Want dáár draait het natuurlijk om: we doen het voor de gebruiker, voor de inwoner, de burger. De mate waarin NL Design System bijdraagt aan de toegankelijkheidsopgave van veel overheidsorganisaties misschien nog wel meer! Dus ik stapte maar wat graag aan boord en het voelde gelijk goed om hier iets aan te mogen bijdragen.”
 
 ## NL Design System gaat ‘op kamers’
 
