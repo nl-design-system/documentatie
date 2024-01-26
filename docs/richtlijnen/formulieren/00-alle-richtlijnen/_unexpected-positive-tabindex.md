@@ -1,6 +1,6 @@
 ## Gebruik geen positieve tabindex
 
-Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) te geven met een waarde groter dan nul, bijvoorbeeld `tabindex="1"`. De gebruiker is meteen klaar om het formulier in te gaan vullen.
+Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) te geven met een waarde groter dan nul, bijvoorbeeld `tabindex="1"` of met gebruik van `autofocus`. De gebruiker is meteen klaar om het formulier in te gaan vullen.
 
 Maar dit levert voor toetsenbord- en screenreadergebruikers problemen op. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren.
 
@@ -16,7 +16,7 @@ Let wel: `tabindex="0"` is wel toegestaan om bepaalde elementen focus te kunnen 
 
 Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: [How To Avoid Breaking Web Pages For Keyboard Users](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
 
-Geen positieve tabindex gebruiken helpt je te voldoen aan de volgende WCAG-succescriteria:
+Geen positieve tabindex of autofocus gebruiken helpt je te voldoen aan de volgende WCAG-succescriteria:
 
 - [2.4.3 Focusvolgorde](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) (niveau A).
 - [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) (niveau AA).
