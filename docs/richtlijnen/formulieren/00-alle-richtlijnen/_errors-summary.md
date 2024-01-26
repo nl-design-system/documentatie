@@ -1,6 +1,6 @@
 ## Samenvatting boven het formulier
 
-Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:n
+Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:
 
 - een samenvatting boven het formulier en;
 - per formulierveld de foutmelding herhalen.
