@@ -1,21 +1,24 @@
-import { Button, HTMLContent } from '@utrecht/component-library-react/dist/css-module';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
+import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import prettierBabel from 'prettier/parser-babel';
-import prettierHTML from 'prettier/parser-html';
+import prettierBabel from 'prettier/plugins/babel.mjs';
+import prettierESTree from 'prettier/plugins/estree.mjs';
+import prettierHTML from 'prettier/plugins/html.mjs';
+import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
-import React, { ReactNode } from 'react';
+import React, { CSSProperties, isValidElement, ReactNode, useEffect, useState } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { v4 as uuid } from 'uuid';
 import style from './Canvas.module.css';
-import { PrismStyle } from './PrismStyle';
+import { CodeBlockSyntaxHighlighting } from '/src/components/CodeBlockSyntaxHighlighting';
 
 interface CanvasProps {
   defaultCollapsed?: boolean;
-  code?: ReactNode;
+  code?: string | ReactNode | (() => ReactNode);
   children: ReactNode | (() => ReactNode);
   language: any;
   copy?: boolean;
+  designTokens?: CSSProperties;
 }
 
 const toggleExpanded = ({ target }) => {
@@ -26,33 +29,52 @@ const toggleExpanded = ({ target }) => {
   target.innerText = region.hidden ? 'Bekijk code' : 'Verberg code';
 };
 
-export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, language }: CanvasProps) => {
-  let reactNode;
-  if (typeof children === 'function') {
-    reactNode = children();
-  } else {
-    reactNode = children;
-  }
-  const formatted = prettier.format(ReactDOMServer.renderToStaticMarkup(code || reactNode), {
-    parser: 'html',
-    plugins: [prettierBabel, prettierHTML],
-    semi: false,
-    singleAttributePerLine: true,
-    embeddedLanguageFormatting: 'off',
-    htmlWhitespaceSensitivity: 'ignore',
-  });
+export const Canvas = ({
+  code,
+  copy = false,
+  defaultCollapsed = true,
+  children,
+  language,
+  designTokens,
+}: CanvasProps) => {
+  // By default the `children` argument is converted to code.
+  let jsxTree = typeof children === 'function' ? children() : children;
+  // You can override the code from `children` with the `code` argument.
+  // The code argument can be a string, or JSX, or a function that generates JSX.
+  let codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
+  let unformattedCode = typeof code === 'string' ? code : ReactDOMServer.renderToStaticMarkup(codeJsxTree || jsxTree);
+  let [displayCode, setDisplayCode] = useState(unformattedCode);
+
+  useEffect(() => {
+    const formatWithPrettier = async () => {
+      displayCode = await prettier.format(unformattedCode, {
+        parser: language,
+        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
+        semi: false,
+        singleAttributePerLine: true,
+        embeddedLanguageFormatting: 'off',
+        htmlWhitespaceSensitivity: 'ignore',
+      });
+      setDisplayCode(displayCode);
+    };
+    formatWithPrettier();
+  }, [unformattedCode]);
 
   const codeBlockId = uuid();
 
   const copyCode = () => {
-    navigator.clipboard.writeText(formatted).catch((err) => console.error('Copy code failed', err));
+    navigator.clipboard.writeText(displayCode).catch((err) => console.error('Copy code failed', err));
   };
 
   return (
     <div className={clsx(style['nlds-canvas'])}>
-      <div className={clsx(style['nlds-canvas__example'])}>
-        <HTMLContent className="voorbeeld-theme">{reactNode}</HTMLContent>
-      </div>
+      {jsxTree && (
+        <div className={clsx(style['nlds-canvas__example'])}>
+          <HTMLContent className="voorbeeld-theme" style={designTokens}>
+            {jsxTree}
+          </HTMLContent>
+        </div>
+      )}
       <div className={clsx(style['nlds-canvas__toolbar'])}>
         <Button
           className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}
@@ -69,9 +91,7 @@ export const Canvas = ({ code, copy = false, defaultCollapsed = true, children, 
         id={codeBlockId}
         hidden={defaultCollapsed}
       >
-        <SyntaxHighlighter language={language} style={PrismStyle}>
-          {formatted}
-        </SyntaxHighlighter>
+        <CodeBlockSyntaxHighlighting syntax={language} textContent={displayCode} trim />
         {copy && (
           <div className={clsx(style['nlds-canvas__toolbar'])}>
             <Button

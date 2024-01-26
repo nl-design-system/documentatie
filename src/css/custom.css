@@ -13,7 +13,7 @@
   --utrecht-heading-3-line-height: 1.3;
   --utrecht-heading-4-line-height: 1.4;
   --nlds-blog-post-footer-background-color: #f2ebe4;
-  --nlds-navbar-link-active-border-color: #5eba5b;
+  --nlds-navbar-link-active-border-color: white;
   --nlds-sidebar-menu-item-active-border-color: #148839;
   --nlds-code-block-background-color: #011627;
   --utrecht-space-around: 1;
@@ -52,7 +52,6 @@
 
 .button {
   border: none;
-  box-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
   font-size: var(--utrecht-button-font-size);
   line-height: var(--utrecht-button-line-height);
   padding-block-end: var(--utrecht-button-padding-block-end);
@@ -130,7 +129,7 @@
 }
 
 .footer--dark {
-  --ifm-footer-background-color: #00303d;
+  --ifm-footer-background-color: #0d1f2a;
   --ifm-footer-color: white;
   --ifm-footer-link-hover-color: white;
 }

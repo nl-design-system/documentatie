@@ -4,10 +4,10 @@ const navbar: Navbar = {
   title: 'NL Design System',
   style: 'dark',
   hideOnScroll: true,
-  logo: {
-    alt: 'NLDS Logo',
-    src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo.svg',
-  },
+  // logo: {
+  //   alt: 'NL Design System Logo',
+  //   src: '',
+  // },
   items: [
     {
       to: '/',
