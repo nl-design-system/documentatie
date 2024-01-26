@@ -13,7 +13,7 @@ Twee ARIA-attributen zijn belangrijk voor screenreaderfeedback:
 - `aria-required="true"` vertelt dat een veld verplicht is.
 - `aria-invalid="true"` vertelt dat een veld niet goed is ingevuld.
 
-Initieel staat de waarde van `aria-invalid` op `false`. Verander bij foutmeldingen de waarde van `true` naar `false`. Eventueel kan het attribuut `aria-invalid` kan ook worden weggelaten totdat de tot validatie is uitgevoerd.
+Initieel staat de waarde van `aria-invalid` op `false`. Verander bij foutmeldingen de waarde van `false` naar `true`. Eventueel kan het attribuut `aria-invalid` kan ook worden weggelaten totdat de validatie is uitgevoerd.
 
 ```html
 <label for="voorbeeld">Voorbeeld</label>
