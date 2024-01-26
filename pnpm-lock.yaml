@@ -26,9 +26,6 @@ importers:
       '@utrecht/design-tokens':
         specifier: 1.0.0-alpha.622
         version: 1.0.0-alpha.622
-      '@utrecht/web-component-library-react':
-        specifier: 1.0.2
-        version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
       clsx:
         specifier: 2.1.0
         version: 2.1.0
@@ -126,6 +123,12 @@ importers:
       '@utrecht/component-library-react':
         specifier: 3.0.0
         version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/web-component-library-react':
+        specifier: 1.0.2
+        version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/web-component-library-stencil':
+        specifier: 1.1.1-alpha.10
+        version: 1.1.1-alpha.10
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -3385,7 +3388,13 @@ packages:
     resolution: {integrity: sha512-XRbHdb9t4SQzCCbF9qsh0dexvnlArEzCDJl19BJzxzazVBM398SeJUKCBh4p91AZIWveN0gHuZSIGMhLWR7qSA==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
-    dev: false
+    dev: true
+
+  /@stencil/core@4.8.2:
+    resolution: {integrity: sha512-KdZEAtz9VnqMtXOkf51+8mphyRt0fN/LYgtj5M8gnveGspG8KzoyTDzlWt0wsstWIsJJ21RA1yd3AgMMZiu3MA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: true
 
   /@svgr/babel-plugin-add-jsx-attribute@6.5.1(@babel/core@7.23.6):
     resolution: {integrity: sha512-9PYGcXrAxitycIjRmZB+Q0JaN07GZIWaTBIGQzfaZv+qr1n8X1XUEJ5rZ/vx6OVD9RRYlrNnXWExQXcmZeD/BQ==}
@@ -4056,13 +4065,19 @@ packages:
       '@utrecht/web-component-library-stencil': 1.1.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
+    dev: true
 
   /@utrecht/web-component-library-stencil@1.1.0:
     resolution: {integrity: sha512-3gHqaSqI5y6J+H6ZABHNxgdPxhQDzLFJX+ILfQDzuzQUOywyuAFodrArE2J53uPPcL6cw6ckXlIPEOZmuy3KSA==}
     dependencies:
       '@stencil/core': 4.5.0
-    dev: false
+    dev: true
+
+  /@utrecht/web-component-library-stencil@1.1.1-alpha.10:
+    resolution: {integrity: sha512-ptfAmwe/5Zc/x4QzHfLjlKC2xGSlLiS5mnZDzsVxYNawQELzcSGvxxQhvIQS3uLogbUOWCUgVbqLf05yjcsD4w==}
+    dependencies:
+      '@stencil/core': 4.8.2
+    dev: true
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
