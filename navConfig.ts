@@ -46,6 +46,13 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
+      docId: 'community',
+      position: 'left',
+      label: 'Community',
+      className: 'utrecht-link',
+    },
+    {
+      type: 'doc',
       docId: 'project',
       position: 'left',
       label: 'Project',
