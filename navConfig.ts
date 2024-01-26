@@ -11,9 +11,9 @@ const navbar: Navbar = {
   items: [
     {
       type: 'doc',
-      docId: 'meedoen',
+      docId: 'handboek',
       position: 'left',
-      label: 'Meedoen',
+      label: 'Handboek',
       className: 'utrecht-link',
     },
     {

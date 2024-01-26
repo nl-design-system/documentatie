@@ -125,7 +125,7 @@ Je kunt beginnen met de NL Design System architectuur voor jouw organisatie gebr
 
 Deze eigen omgeving biedt je de mogelijkheid om op eigen tempo een bibliotheek samen te stellen van eigen componenten en geïmporteerde componenten die in de bredere NL Design System community gevonden kunnen worden. Je kunt zelf kiezen welke onderdelen je overneemt van anderen en welke je anders gaat aanpakken. De doorlooptijd van eigen componenten heb je volledig zelf in de hand, terwijl je nog steeds tijd kunt besparen door gedeeltelijke hergebruik. Je kunt bijvoorbeeld de code van een component zelf schrijven, maar de documentatie over toegankelijkheid van zo'n component uit NL Design System overnemen.
 
-De nieuwe [NL Design System werkwijze](https://nldesignsystem.nl/meedoen/estafettemodel) betekent dat je geïmporteerde componenten van anderen kunt nomineren voor de centrale NL Design System componentenbibliotheek, wanneer ze in jouw organisatie ook succesvol blijken te werken.
+De nieuwe [NL Design System werkwijze](/handboek/estafettemodel) betekent dat je geïmporteerde componenten van anderen kunt nomineren voor de centrale NL Design System componentenbibliotheek, wanneer ze in jouw organisatie ook succesvol blijken te werken.
 
 ## Backlog voor coördinatie van eisen
 

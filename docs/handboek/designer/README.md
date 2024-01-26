@@ -1,5 +1,5 @@
 ---
-title: Meedoen als designer - Introductie
+title: Designer - Introductie
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Introductie
@@ -12,27 +12,25 @@ keywords:
   - meedoen
 ---
 
-# Meedoen als designer
+# Introductie
 
-## Introductie
-
-### Welkom designer 👋
+## Welkom designer 👋
 
 Leuk dat je er bent! Of je nu mee wilt helpen aan het NL Design System of simpelweg even wilt rondneuzen, als designer is dit een goed startpunt.
 
-### NL Design System
+## NL Design System
 
 Het NL Design System zit net even anders in elkaar als andere Design Systems. Niet gericht op één organisatie maar een verzameling van componenten, patronen en richtlijnen, waar iedere overheidsorganisatie zijn eigen huisstijl op kan toepassen.
 
 [Meer informatie het NL Design System](../introductie.md)
 
-### Het kernteam
+## Het kernteam
 
 Er is een vast kernteam dat werkt aan het NL Design System. Het kernteam werkt op dagelijkse basis samen met verschillende disciplines vanuit de community. Denk aan designers, developers maar ook copywriters en accessibility specialisten.
 
 [Meer informatie over het Kernteam](../../project/kernteam.mdx)
 
-### De community
+## De community
 
 Binnen de community zijn designers bezig met verschillende projecten. Door als designers samen te werken kunnen we informatie en inzichten met elkaar uitwisselen. Zo leren we elke keer iets bij.
 
@@ -50,7 +48,7 @@ De componenten van het NL Design System hebben van zichzelf geen specifieke huis
 
 [Meer informatie over design tokens](../design-tokens/README.mdx)
 
-### Design tokens en Figma
+## Design tokens en Figma
 
 Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen ondersteuning voor design tokens. Daarom maken we gebruik van de [Token Studio](https://tokens.studio/).
 
@@ -64,7 +62,7 @@ Zoals aangegeven kan iedere organisatie zijn eigen huisstijl toepassen. En toch 
 
 [Bekijk de stijl documentatie](../../richtlijnen/stijl/README.md)
 
-#### Voorbeeld thema
+### Voorbeeld thema
 
 Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design tokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
 
@@ -102,13 +100,13 @@ Mis je een patroon of template? Heb je input voor de documentatie? Of nog beter,
 
 [Neem contact op](../../project/kernteam.mdx), dan zetten we het patroon of template op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
 
-### Tekst en taalgebruik
+## Tekst en taalgebruik
 
 We hebben richtlijnen beschikbaar voor tekst en taalgebruik.
 
 [Bekijk de richtlijnen voor tekst en taalgebruik](../../richtlijnen/tekst-en-taalgebruik.md)
 
-### Onderzoek
+## Onderzoek
 
 Design, code en documentatie stoelen we graag op onderzoek. Hiervoor speuren we het web af naar inzichten. Maar we vragen ook de community, jou dus, om hulp. Heb je gebruikersonderzoek gedaan en inzichten opgedaan die voor de gehele community waardevol zijn? Dan horen we dat graag.
 
