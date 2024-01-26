@@ -108,8 +108,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   const resultsFooterComponent = useMemo(
     () =>
       // eslint-disable-next-line react/no-unstable-nested-components
-      (footerProps) =>
-        <ResultsFooter {...footerProps} onClose={onClose} />,
+      (footerProps) => <ResultsFooter {...footerProps} onClose={onClose} />,
     [onClose],
   );
   const transformSearchClient = useCallback(

@@ -49,11 +49,8 @@ _Dit is verplicht om te voldoen aan WCAG 2.1, criterium [2.4.2 Paginatitel](http
 >
   <Canvas
     language="html"
-    code={
-      <>
-        <title>Uw gegevens - Afspraak maken - Voorbeeldinstantie</title>
-      </>
-    }
+    code={<title>Uw gegevens - Afspraak maken - Voorbeeldinstantie</title>}
+    defaultCollapsed={false}
   ></Canvas>
 </Guideline>
 
@@ -62,14 +59,7 @@ _Dit is verplicht om te voldoen aan WCAG 2.1, criterium [2.4.2 Paginatitel](http
   title="Te algemene paginatitel"
   description={<Paragraph>Zorg dat de informatie in de titel specifiek genoeg is.</Paragraph>}
 >
-  <Canvas
-    language="html"
-    code={
-      <>
-        <title>Voorbeeldinstantie</title>
-      </>
-    }
-  ></Canvas>
+  <Canvas defaultCollapsed={false} language="html" code={<title>Voorbeeldinstantie</title>}></Canvas>
 </Guideline>
 
 ## Velden onder elkaar

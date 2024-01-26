@@ -237,8 +237,8 @@ export const GraffitiForm = ({
                     ? postalCodeSpace === true
                       ? /^\d{4} [A-Za-z]{2}$/
                       : postalCodeSpace === false
-                      ? /^\d{4}[A-Za-z]{2}$/
-                      : /^\s*\d{4}\s*[A-Za-z]{2}\s*$/
+                        ? /^\d{4}[A-Za-z]{2}$/
+                        : /^\s*\d{4}\s*[A-Za-z]{2}\s*$/
                     : undefined,
                 })}
                 type="text"
@@ -556,8 +556,8 @@ export const GraffitiForm = ({
                   noAutoComplete === true || noAutoComplete.includes('telefoonnummer')
                     ? undefined
                     : telNational
-                    ? 'tel-national'
-                    : 'tel'
+                      ? 'tel-national'
+                      : 'tel'
                 }
                 invalid={!!errors['telefoonnummer']}
                 aria-describedby={`${phoneId}-description`}

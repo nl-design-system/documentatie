@@ -74,7 +74,6 @@ export const DSWSession = ({
         </Link>
       </Paragraph>
     )}
-    <div className={clsx(style['homepage-hero__linear-gradient'])} />
   </article>
 );
 
