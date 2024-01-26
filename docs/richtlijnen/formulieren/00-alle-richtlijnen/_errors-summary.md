@@ -15,8 +15,4 @@ De constructie is als volgt:
 - Dit kopje krijgt de toetsenbordfocus zodat het meteen in beeld staat en ook voorgelezen wordt door een screenreader.
 - Daaronder staat een lijst met de foutmeldingen. Elke foutmelding is ook een link naar het bijbehorende formulierveld.
 
-Doen: voorbeeld van hoe het moet, voor zover dat kan in een guideline
-Niet doen: samenvatting binnen het formulier zetten
-Niet doen: alles "Labelnaam - Dit veld is verplicht" noemen.
-
 Door het schrijven van duidelijke foutmeldingen voldoe je aan het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG21-nl/#foutidentificatie) (niveau A).
