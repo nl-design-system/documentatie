@@ -10,13 +10,6 @@ const navbar: Navbar = {
   // },
   items: [
     {
-      to: '/',
-      position: 'left',
-      label: 'Home',
-      activeBaseRegex: '^/$',
-      className: 'utrecht-link',
-    },
-    {
       type: 'doc',
       docId: 'meedoen',
       position: 'left',
