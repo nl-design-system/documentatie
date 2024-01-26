@@ -8,13 +8,11 @@ import { Guideline } from "@site/src/components/Guideline";
   title="Beschrijf in de titel in welke stap van welk formulier de gebruiker is. "
   description="Met de titel bedoelen we hier het title-element. Bekijk de code voor een voorbeeld in HTML."
 >
-  <Canvas language="html">
-    {() => (
-      <>
-        <title>Contact opnemen, Stap 2 van 3: Uw gegevens - Gemeente Voorbeeld</title>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={<title>Stap 2 van 3, uw gegevens - Gemeente voorbeeld</title>}
+    defaultCollapsed={false}
+  ></Canvas>
 </Guideline>
 
 <Guideline
@@ -22,13 +20,8 @@ import { Guideline } from "@site/src/components/Guideline";
   title="Voor elke (volgende) stap / dezelfde titel."
   description="Met de titel bedoelen we hier het title-element. Bekijk de code voor een voorbeeld in HTML."
 >
-  <Canvas language="html">
-    {() => (
-      <>
-        <title>Contact opnemen - Gemeente voorbeeld</title>
-      </>
-    )}
-  </Canvas>
+<Canvas language="html" code={<title>Contact opnemen - Gemeente voorbeeld</title>} defaultCollapsed={false}></Canvas>
+
 </Guideline>
 
 <Guideline appearance="do" title="Stap in het kopje van het formulier.">
