@@ -1,10 +1,8 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { TeamMember } from './TeamMember';
-import Avatar from './avatars/kernteam_yolijn.svg';
 
 const Yolijn: TeamMember = {
-  Avatar,
   name: 'Yolijn van der Kolk',
   role: 'Productmanager & Developer Relations',
   slack: { mention: '@Yolijn', id: 'U01B7T1F24S' },

@@ -38,8 +38,7 @@
   background-color: var(--cardgroup-card-background-color, var(--nlds-document-background-color, white));
   border-color: var(--cardgroup-card-border-color, #d1dfe3);
   border-style: var(--cardgroup-card-border-style, solid);
-  border-width: var(--cardgroup-card-border-width, 1px);
-  box-shadow: var(--cardgroup-card-box-shadow, 4px 4px #d1d1d1);
+  border-width: var(--cardgroup-card-border-width, 2px);
   box-sizing: border-box;
   color: var(--cardgroup-card-color, var(--nlds-document-color));
   display: flex;
