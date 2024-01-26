@@ -1,0 +1,4 @@
+/**
+ * (c) 2023 Frameless B.V.
+ * @license EUPL-1.2
+ */
