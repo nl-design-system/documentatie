@@ -27,7 +27,7 @@ export default function Home() {
       <main>
         <HomepageHero
           title="Doe mee met NL Design System"
-          ctaLink="meedoen/introductie"
+          ctaLink="handboek/introductie"
           cta="Lees de NL Design System introductie"
         >
           <Paragraph lead>
@@ -133,7 +133,7 @@ export default function Home() {
                   <Heading3>Organisatie</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/introductie" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/introductie" className="utrecht-link">
                     Meer informatie voor organisaties
                   </DocusaurusLink>
                 </Paragraph>
@@ -151,7 +151,7 @@ export default function Home() {
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-leverancier/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/leverancier/overzicht" className="utrecht-link">
                     Meer informatie voor leveranciers
                   </DocusaurusLink>
                 </Paragraph>
@@ -169,7 +169,7 @@ export default function Home() {
                   <Heading3>Developer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-developer/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/developer/overzicht" className="utrecht-link">
                     Meer informatie voor developers
                   </DocusaurusLink>
                 </Paragraph>
@@ -187,7 +187,7 @@ export default function Home() {
                   <Heading3>Designer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-designer/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/designer/overzicht" className="utrecht-link">
                     Meer informatie voor designers
                   </DocusaurusLink>
                 </Paragraph>
