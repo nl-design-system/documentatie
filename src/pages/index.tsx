@@ -110,7 +110,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/project/events/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
                     Bekijk de events
                   </DocusaurusLink>
                 </Paragraph>
