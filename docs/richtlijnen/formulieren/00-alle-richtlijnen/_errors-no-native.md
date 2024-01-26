@@ -10,7 +10,7 @@ De meeste browsers kunnen zelf controleren of een veld is ingevuld. Dit gebeurt 
 
 Dit type foutafhandeling geeft onvoldoende informatie. In veel browsers wordt niet aan alle gebruikers overgebracht dat het veld verplicht is, en mist uitleg wanneer niet wordt voldaan een een opgegeven `pattern`. Zie ook: [Avoid default field validation](https://adrianroselli.com/2019/02/avoid-default-field-validation.html) van Adrian Roselli.
 
-Wanneer er voldoende tijd en kennis, heeft het de voorkeur om zelf client-side validatie toe te voegen.
+Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-side validatie toe te voegen.
 
 Om specifiek aan hulptechnologieën te communiceren dat een veld verplicht is, kan `aria-required` worden gebruikt. Als je alleen `aria-required` gebruikt, zal de browser niet zelf valideren of feedback geven.
 
