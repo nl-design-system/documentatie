@@ -26,9 +26,6 @@ importers:
       '@utrecht/design-tokens':
         specifier: 1.0.0-alpha.622
         version: 1.0.0-alpha.622
-      '@utrecht/web-component-library-react':
-        specifier: 1.0.2
-        version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
       clsx:
         specifier: 2.1.0
         version: 2.1.0
@@ -126,6 +123,12 @@ importers:
       '@utrecht/component-library-react':
         specifier: 3.0.0
         version: 3.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/web-component-library-react':
+        specifier: 1.0.2
+        version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/web-component-library-stencil':
+        specifier: 1.1.1-alpha.10
+        version: 1.1.1-alpha.10
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -185,7 +188,7 @@ importers:
         version: 9.0.5(stylelint@16.2.0)
       stylelint-config-standard-scss:
         specifier: 13.0.0
-        version: 13.0.0(postcss@8.4.32)(stylelint@16.2.0)
+        version: 13.0.0(postcss@8.4.33)(stylelint@16.2.0)
       stylelint-order:
         specifier: 6.0.4
         version: 6.0.4(stylelint@16.2.0)
@@ -3382,7 +3385,13 @@ packages:
     resolution: {integrity: sha512-XRbHdb9t4SQzCCbF9qsh0dexvnlArEzCDJl19BJzxzazVBM398SeJUKCBh4p91AZIWveN0gHuZSIGMhLWR7qSA==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
-    dev: false
+    dev: true
+
+  /@stencil/core@4.8.2:
+    resolution: {integrity: sha512-KdZEAtz9VnqMtXOkf51+8mphyRt0fN/LYgtj5M8gnveGspG8KzoyTDzlWt0wsstWIsJJ21RA1yd3AgMMZiu3MA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: true
 
   /@svgr/babel-plugin-add-jsx-attribute@6.5.1(@babel/core@7.23.6):
     resolution: {integrity: sha512-9PYGcXrAxitycIjRmZB+Q0JaN07GZIWaTBIGQzfaZv+qr1n8X1XUEJ5rZ/vx6OVD9RRYlrNnXWExQXcmZeD/BQ==}
@@ -4053,13 +4062,19 @@ packages:
       '@utrecht/web-component-library-stencil': 1.1.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
+    dev: true
 
   /@utrecht/web-component-library-stencil@1.1.0:
     resolution: {integrity: sha512-3gHqaSqI5y6J+H6ZABHNxgdPxhQDzLFJX+ILfQDzuzQUOywyuAFodrArE2J53uPPcL6cw6ckXlIPEOZmuy3KSA==}
     dependencies:
       '@stencil/core': 4.5.0
-    dev: false
+    dev: true
+
+  /@utrecht/web-component-library-stencil@1.1.1-alpha.10:
+    resolution: {integrity: sha512-ptfAmwe/5Zc/x4QzHfLjlKC2xGSlLiS5mnZDzsVxYNawQELzcSGvxxQhvIQS3uLogbUOWCUgVbqLf05yjcsD4w==}
+    dependencies:
+      '@stencil/core': 4.8.2
+    dev: true
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -11517,13 +11532,13 @@ packages:
       postcss: 8.4.33
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.32):
+  /postcss-scss@4.0.9(postcss@8.4.33):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.32
+      postcss: 8.4.33
     dev: true
 
   /postcss-selector-parser@6.0.13:
@@ -13321,7 +13336,7 @@ packages:
       stylelint: 16.2.0(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.32)(stylelint@16.2.0):
+  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.33)(stylelint@16.2.0):
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -13331,8 +13346,8 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.32
-      postcss-scss: 4.0.9(postcss@8.4.32)
+      postcss: 8.4.33
+      postcss-scss: 4.0.9(postcss@8.4.33)
       stylelint: 16.2.0(typescript@5.3.3)
       stylelint-config-recommended: 14.0.0(stylelint@16.2.0)
       stylelint-scss: 6.0.0(stylelint@16.2.0)
@@ -13347,7 +13362,7 @@ packages:
       stylelint: 16.2.0(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-standard-scss@13.0.0(postcss@8.4.32)(stylelint@16.2.0):
+  /stylelint-config-standard-scss@13.0.0(postcss@8.4.33)(stylelint@16.2.0):
     resolution: {integrity: sha512-WaLvkP689qSYUpJQPCo30TFJSSc3VzvvoWnrgp+7PpVby5o8fRUY1cZcP0sePZfjrFl9T8caGhcKg0GO34VDiQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -13357,9 +13372,9 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.32
+      postcss: 8.4.33
       stylelint: 16.2.0(typescript@5.3.3)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.32)(stylelint@16.2.0)
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.33)(stylelint@16.2.0)
       stylelint-config-standard: 36.0.0(stylelint@16.2.0)
     dev: true
 
