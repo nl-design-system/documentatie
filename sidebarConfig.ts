@@ -202,6 +202,19 @@ const sidebars: SidebarsConfig = {
                 { type: 'doc', id: 'community/events/heartbeat/aanmelden' },
               ],
             },
+            {
+              type: 'category',
+              label: 'Design Open Hour',
+              link: {
+                type: 'generated-index',
+                title: 'Design Open Hour',
+                slug: '/events/design-open-hour/overzicht',
+              },
+              items: [
+                { type: 'doc', id: 'community/events/design-open-hour/design-open-hour' },
+                { type: 'doc', id: 'community/events/design-open-hour/aanmelden' },
+              ],
+            },
           ],
         },
         { type: 'doc', id: 'community/wie-doet-mee' },
