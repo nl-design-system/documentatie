@@ -3,25 +3,27 @@ import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import style from './Guideline.module.css';
-
 interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
   description?: ReactNode;
   appearance: 'do' | 'dont';
+  figure?: boolean;
 }
 
-export const Guideline = ({ title, appearance, description, children }: PropsWithChildren<GuidelineProps>) => {
+export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
     do: 'Doen',
     dont: 'Niet doen',
   };
+  const ContainerElement = figure ? 'figure' : 'div';
+  const CaptionElement = figure ? 'figcaption' : 'div';
 
   return (
-    <div
+    <ContainerElement
       className={clsx(style['nlds-guideline'], style[`nlds-guideline--${appearance}`])}
-      id={title?.toLowerCase().replace(/\s/g, '-')}
+      id={typeof title === 'string' ? title?.toLowerCase().replace(/\s/g, '-') : undefined}
     >
-      <div className={clsx(style['nlds-guideline__description'])}>
+      <CaptionElement className={clsx(style['nlds-guideline__description'])}>
         {appearance === 'dont' ? (
           <>
             <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
@@ -40,8 +42,8 @@ export const Guideline = ({ title, appearance, description, children }: PropsWit
           </>
         )}
         {description}
-      </div>
+      </CaptionElement>
       <div className={clsx(style['nlds-guideline__example'])}>{children}</div>
-    </div>
+    </ContainerElement>
   );
 };

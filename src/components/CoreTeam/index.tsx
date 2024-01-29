@@ -16,12 +16,14 @@ const coreteam = [Peter, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate];
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
     <CardGroup appearance="large">
-      {coreteam.map(({ Avatar, name, role, Description, email, slack }) => {
+      {coreteam.map(({ Avatar, name, role, Description, slack }) => {
         return (
           <Card appearance="large" className={clsx(style['core-team__card'])} component="section" key={name}>
-            <CardIllustration className={clsx(style['core-team__illustration'])}>
-              <Avatar className={clsx(style['core-team__avatar'])} />
-            </CardIllustration>
+            {Avatar && (
+              <CardIllustration className={clsx(style['core-team__illustration'])}>
+                <Avatar className={clsx(style['core-team__avatar'])} />
+              </CardIllustration>
+            )}
             <CardContent className={clsx(style['core-team__content'])}>
               <HeadingGroup className={clsx(style['core-team__heading'])}>
                 <Heading level={headingLevel} className={clsx(style['core-team__heading-title'])}>
@@ -34,8 +36,6 @@ export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
               </div>
 
               <Paragraph>
-                Email adres: <Link href={`mailto:${email}`}>{email}</Link>
-                <br />
                 Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
               </Paragraph>
             </CardContent>

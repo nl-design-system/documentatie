@@ -1,13 +1,10 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import { TeamMember } from './TeamMember';
-import Avatar from './avatars/kernteam_robbert.svg';
 
 const Robbert: TeamMember = {
-  Avatar,
   name: 'Robbert Broersma',
   role: 'Design System lead & Developer Relations',
-  email: 'robbert.broersma@ictu.nl',
   slack: { mention: '@Robbert', id: 'U019X17U5HQ' },
   Description: () => (
     <>

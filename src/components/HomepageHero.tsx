@@ -26,7 +26,6 @@ export const HomepageHero = ({ title, ctaLink, cta, children }: PropsWithChildre
         </Link>
       </Paragraph>
     </div>
-    <div className={clsx(style['homepage-hero__linear-gradient'])} />
   </div>
 );
 

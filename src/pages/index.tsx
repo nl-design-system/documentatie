@@ -47,7 +47,7 @@ export default function Home() {
             <UnorderedListItem>Uitbreidbaar en publiek beschikbaar.</UnorderedListItem>
           </UnorderedList>
         </HomepageHero>
-        <div className="container">
+        <div className="container" style={{ paddingBlockEnd: '40px' }}>
           <CardGroup>
             <Card component="section" appearance="medium">
               <CardContent>
@@ -122,12 +122,12 @@ export default function Home() {
 
           <CardGroup>
             <Card component="section" appearance="medium">
-              <CardIllustration background>
+              {/* <CardIllustration background>
                 <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__organisatie.svg"
-                  alt="Drie verschillende avatars bij elkaar als organisatie"
+                  src="..."
+                  alt="..."
                 />
-              </CardIllustration>
+              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Organisatie</Heading3>
@@ -140,12 +140,12 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              <CardIllustration background>
+              {/* <CardIllustration background>
                 <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__leverancier.svg"
-                  alt="Drie verschillende avatars bij elkaar als leverancier"
+                  src="..."
+                  alt="..."
                 />
-              </CardIllustration>
+              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Leverancier</Heading3>
@@ -158,12 +158,12 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              <CardIllustration background>
+              {/* <CardIllustration background>
                 <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__developer.svg"
-                  alt="Avatar als developer"
+                  src="..."
+                  alt="..."
                 />
-              </CardIllustration>
+              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Developer</Heading3>
@@ -176,12 +176,12 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              <CardIllustration background>
+              {/* <CardIllustration background>
                 <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__designer.svg"
-                  alt="Avatar als designer"
+                  src="..."
+                  alt="..."
                 />
-              </CardIllustration>
+              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Designer</Heading3>
