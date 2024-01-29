@@ -98,6 +98,7 @@
     "@utrecht/component-library-css": "3.0.0",
     "@utrecht/component-library-react": "3.0.0",
     "cheerio": "1.0.0-rc.12",
+    "color": "4.2.3",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",

@@ -1,0 +1,25 @@
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline
+  appearance="do"
+  title="Een samenvatting van de fouten boven het formulier."
+  description="Verplaats focus naar de samenvatting of de kop van de samenvatting."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Invoerfouten gevonden in het formulier</h2>
+        <ul>
+          <li>
+            <a href="#naam">Vul uw naam in.</a>
+          </li>
+          <li>
+            <a href="#email">Vul uw e-mailadres in.</a>
+          </li>
+        </ul>
+        <form>[...]</form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
