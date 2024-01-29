@@ -24,8 +24,8 @@ importers:
         specifier: 2.46.0
         version: 2.46.0(react@18.2.0)
       '@utrecht/design-tokens':
-        specifier: 1.0.0-alpha.622
-        version: 1.0.0-alpha.622
+        specifier: 1.0.0-alpha.623
+        version: 1.0.0-alpha.623
       clsx:
         specifier: 2.1.0
         version: 2.1.0
@@ -4052,8 +4052,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@utrecht/design-tokens@1.0.0-alpha.622:
-    resolution: {integrity: sha512-m0uIDrm235AdfXP2TNR3aMl/wvlJLTD3iDAxCqCERmAWvw302pCOhrAVC5qKU17hJTdIcjbr/JduBsGrsn+WpA==}
+  /@utrecht/design-tokens@1.0.0-alpha.623:
+    resolution: {integrity: sha512-6Ud8CcgKsSC8xgX+r14U4bIi2mRoHwvjKndgDvlk57UOB6ZWLYbTm4yWmtx50EeSqn7AIeIhcJUNFCo6u3cDAg==}
     dev: false
 
   /@utrecht/web-component-library-react@1.0.2(react-dom@18.2.0)(react@18.2.0):
