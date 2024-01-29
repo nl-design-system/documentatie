@@ -240,6 +240,34 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
+                  <Heading3>Heartbeat</Heading3>
+                  <Paragraph>
+                    Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System
+                    worden besproken.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link href="/events/heartbeat/aanmelden">Meld je aan voor de Heartbeat</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading3>Design Open Hour</Heading3>
+                  <Paragraph>
+                    Om de week komen designers van verschillende organisaties bij elkaar om informatie, inzichten en
+                    tips met elkaar uit te wisselen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link href="/events/design-open-hour/aanmelden">Meld je aan voor het Design Open Hour</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
                   <Heading3>Nieuwsbrief</Heading3>
                   <Paragraph>
                     Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL
@@ -254,14 +282,14 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
-                  <Heading3>Heartbeat</Heading3>
+                  <Heading3>Blog</Heading3>
                   <Paragraph>
-                    Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System
-                    worden besproken.
+                    Op ons blog schrijven we over wat er speelt in het kernteam en de community. Ook kun je er meer
+                    lezen over wat we doen en waarom.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <Link href="/events/heartbeat/aanmelden">Meld je aan voor de heartbeat</Link>
+                  <Link href="/blog">Lees het blog</Link>
                 </Paragraph>
               </CardContent>
             </Card>
