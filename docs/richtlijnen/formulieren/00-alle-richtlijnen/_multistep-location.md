@@ -1,6 +1,6 @@
 ## Plaats de informatie over waar de gebruiker is in de stappen boven het formulier
 
-Zet inhoud die niet is gerelateerd aan formuliervelden altijd boven het formulier van elke stap. Dus zet informatie over de stappen **boven** en niet **binnen** het `<form>` element. Dan is de kans dat screenreadergebruikers deze informatie missen het kleinst.
+Plaats tekst en uitleg die hoort bij het formulier buiten het `<form>` element. Dus zet informatie over de stappen **boven** en niet **binnen** het `<form>` element. Dan is de kans dat screenreadergebruikers deze informatie missen het kleinst.
 
 Screenreaders, zoals JAWS, schakelen over naar de “formulierenmodus” wanneer ze inhoud binnen een `<form>` element verwerken. In deze modus lezen screenreaders alleen de formuliervelden voor, inclusief de daaraan gekoppelde informatie (met bijvoorbeeld `aria-describedby`), en niet-gekoppelde informatie niet, tenzij de gebruiker er zelf naar zoekt.
 

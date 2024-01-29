@@ -1,6 +1,6 @@
 ## Disabled submitbuttons
 
-Disabled submit buttons worden gebruikt om
+Disabled submitbuttons worden gebruikt om
 te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden (goed) zijn ingevuld.
 
 Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:
