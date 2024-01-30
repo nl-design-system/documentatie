@@ -35,6 +35,8 @@
   -moz-osx-font-smoothing: auto !important;
 
   /* --docusaurus-announcement-bar-height: 50px; */
+  max-width: 100vw;
+  overflow-x: auto;
 }
 .container--narrow {
   --ifm-container-width: 784px;
@@ -516,7 +518,7 @@ li a {
   }
 }
 
-@media screen and (width <= 550px) {
+@media screen and (width <= 850px) {
   .footer__items {
     grid-auto-flow: row;
   }
