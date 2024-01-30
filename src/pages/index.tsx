@@ -256,8 +256,8 @@ export default function Home() {
                 <div>
                   <Heading3>Design Open Hour</Heading3>
                   <Paragraph>
-                    Om de week komen designers van verschillende organisaties bij elkaar om informatie, inzichten en
-                    tips met elkaar uit te wisselen.
+                    Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit
+                    te wisselen.
                   </Paragraph>
                 </div>
                 <Paragraph>
