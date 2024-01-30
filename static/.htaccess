@@ -5,3 +5,12 @@ Redirect 301 /footer/colofon /colofon
 Redirect 301 /videos/design-system-week-2022 /videos/design-systems-week-2022
 
 Redirect 301 /videos(.*)$ /project/events$1
+
+Redirect 301 /meedoen/als-organisatie/(.*)$ /handboek/organisatie$1
+Redirect 301 /meedoen/als-leverancier/(.*)$ /handboek/leverancier$1
+Redirect 301 /meedoen/als-developer/(.*)$ /handboek/developer$1
+Redirect 301 /meedoen/als-designer/(.*)$ /handboek/designer$1
+Redirect 301 /meedoen(.*)$ /handboek$1
+
+Redirect 301 /project/events(.*)$ /community/events$1
+ Redirect 301 /project/wie-doet-mee /community/wie-doet-mee
