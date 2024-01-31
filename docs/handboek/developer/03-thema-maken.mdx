@@ -27,8 +27,7 @@ Het kan ook zijn dat er duidelijk meerdere varianten zijn van één kleur, bijvo
 
 De kleuren zetten we uiteindelijk in een JSON-bestand (in het [Design Tokens Format](https://tr.designtokens.org/format/)):
 
-```js
-// colors.tokens.json
+```json title="colors.tokens.json"
 {
   "organisatie": {
     "color": {
@@ -61,11 +60,10 @@ Binnen NL Design System gebruiken we ook design tokens voor andere designkeuzes,
 
 Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. Hier wordt bijvoorbeeld in de tokens voor het `link` component van `organisatie` verwezen naar een kleur rood van `andereOrganisatie`, met de verwijzing in curly brackets:
 
-```js
-// link.tokens.json
+```json title="link.tokens.json"
 "organisatie": {
   "link": {
-    "color": { "value": "{andereOrganisatie.color.red.45}" },
+    "color": { "value": "{andereOrganisatie.color.red.45}" }
   }
 }
 ```
@@ -78,8 +76,7 @@ Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met to
 
 Zoals genoemd kunnen deze JSON-bestanden in allerlei toepassingen worden gebruikt. Bij NL Design System zorgt [Style Dictionary](https://amzn.github.io/style-dictionary) dat de tokens bruikbaar worden in CSS, door een `design-tokens.css` te genereren. Die output kan er bijvoorbeeld zo uit zien:
 
-```css
-// dist/design-tokens.css
+```css title="dist/design-tokens.css"
 /**
   * Do not edit directly
   * Generated at […]
