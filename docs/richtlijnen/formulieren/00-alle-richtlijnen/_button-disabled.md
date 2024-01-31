@@ -1,7 +1,6 @@
 ## Disabled submitbuttons
 
-Disabled submitbuttons worden gebruikt om
-te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden (goed) zijn ingevuld.
+In de praktijk worden disabled submitbuttons vaak gebruikt om te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden goed zijn ingevuld.
 
 Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:
 
@@ -18,3 +17,9 @@ Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 - [Don't disable buttons](https://gomakethings.com/dont-disable-buttons/), Chris Ferdinandi in Go Make Things.
 - [Usability Pitfalls of Disabled Buttons, and How To Avoid Them](https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/), Vitaly Friedman in Smashing Magazine.
 - [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/).
+
+Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:
+
+- Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: `#767676` tegen een witte achtergrond.
+- Gebruik `tabindex="0"` zodat de button wel ontdekt kan worden door screenreadergebruikers.
+- Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met `aria-describedby` aan de button.
