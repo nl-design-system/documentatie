@@ -44,40 +44,40 @@ import { Guideline } from "@site/src/components/Guideline";
           <legend>Geboortedatum</legend>
           <div>
             <label for="day2">Dag</label>
+            <div id="description-day2">Bijvoorbeeld 31.</div>
+            <input
+              id="day2"
+              type="text"
+              inputmode="numeric"
+              aria-describedby="description-day2"
+              autocomplete="bday-day"
+              maxlength="2"
+            />
           </div>
-          <div id="description-day2">Bijvoorbeeld 31.</div>
-          <input
-            id="day2"
-            type="text"
-            inputmode="numeric"
-            aria-describedby="description-day2"
-            autocomplete="bday-day"
-            maxlength="2"
-          />
           <div>
             <label for="month2">Maand</label>
+            <div id="description-month2">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month2"
+              type="text"
+              inputmode="numeric"
+              aria-describedby="description-month2"
+              autocomplete="bday-month"
+              maxlength="2"
+            />
           </div>
-          <div id="description-month2">Bijvoorbeeld 12 voor december.</div>
-          <input
-            id="month2"
-            type="text"
-            inputmode="numeric"
-            aria-describedby="description-month2"
-            autocomplete="bday-month"
-            maxlength="2"
-          />
           <div>
             <label for="year2">Jaar</label>
+            <div id="description-year2">Bijvoorbeeld 1970.</div>
+            <input
+              id="c2"
+              type="text"
+              inputmode="numeric"
+              aria-describedby="description-year2"
+              autocomplete="bday-year"
+              maxlength="4"
+            />
           </div>
-          <div id="description-year2">Bijvoorbeeld 1970.</div>
-          <input
-            id="c2"
-            type="text"
-            inputmode="numeric"
-            aria-describedby="description-year2"
-            autocomplete="bday-year"
-            maxlength="4"
-          />
         </fieldset>
       </>
     )}
@@ -97,26 +97,33 @@ import { Guideline } from "@site/src/components/Guideline";
           <legend>Geboortedatum</legend>
           <div>
             <label for="day3">Dag</label>
+            <div id="description-day3">Bijvoorbeeld 31.</div>
+            <input
+              id="day3"
+              type="number"
+              aria-describedby="description-day3"
+              autocomplete="bday-day"
+              min="1"
+              max="31"
+            />
           </div>
-          <div id="description-day3">Bijvoorbeeld 31.</div>
-          <input id="day3" type="number" aria-describedby="description-day3" autocomplete="bday-day" min="1" max="31" />
           <div>
             <label for="month3">Maand</label>
+            <div id="description-month3">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month3"
+              type="number"
+              aria-describedby="description-month3"
+              autocomplete="bday-month"
+              min="1"
+              max="12"
+            />
           </div>
-          <div id="description-month3">Bijvoorbeeld 12 voor december.</div>
-          <input
-            id="month3"
-            type="number"
-            aria-describedby="description-month3"
-            autocomplete="bday-month"
-            min="1"
-            max="12"
-          />
           <div>
             <label for="year3">Jaar</label>
+            <div id="description-year3">Bijvoorbeeld 1970.</div>
+            <input id="year3" type="number" aria-describedby="description-year3" autocomplete="bday-year" />
           </div>
-          <div id="description-year3">Bijvoorbeeld 1970.</div>
-          <input id="year3" type="number" aria-describedby="description-year3" autocomplete="bday-year" />
         </fieldset>
       </>
     )}
