@@ -8,7 +8,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <label for="date0">Geboortedatum</label>
-        <p id="description-date0">Bijvoorbeeld 1 januari 1970.</p>
+        <p id="description-date0">Bijvoorbeeld 31 december 1970.</p>
         <input id="date0" type="text" autocomplete="bday" aria-describedby="description-date0" />
       </>
     )}
@@ -24,7 +24,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <label for="date1">Geboortedatum</label>
-        <p id="description-date1">Bijvoorbeeld 31/12/2003.</p>
+        <p id="description-date1">Bijvoorbeeld 31/12/1970.</p>
         <input id="date1" type="date" aria-describedby="description-date1" autocomplete="bday" />
       </>
     )}
@@ -32,7 +32,11 @@ import { Guideline } from "@site/src/components/Guideline";
 </Guideline>
 
 <Guideline appearance="do" title="Uitvragen geboortedatum met een inputmode=numeric.">
-  <Canvas language="html">
+  <Canvas language="html"
+          designTokens={{
+            "--utrecht-textbox-max-inline-size": "1em;"
+          }}
+  >
     {() => (
       <>
         <fieldset>
@@ -40,7 +44,7 @@ import { Guideline } from "@site/src/components/Guideline";
           <div>
             <label for="day2">Dag</label>
           </div>
-          <div id="description-day2">Bijvoorbeeld 1.</div>
+          <div id="description-day2">Bijvoorbeeld 31.</div>
           <input
             id="day2"
             type="text"
@@ -52,7 +56,7 @@ import { Guideline } from "@site/src/components/Guideline";
           <div>
             <label for="month2">Maand</label>
           </div>
-          <div id="description-month2">Bijvoorbeeld 10 voor oktober.</div>
+          <div id="description-month2">Bijvoorbeeld 12 voor december.</div>
           <input
             id="month2"
             type="text"
@@ -88,12 +92,12 @@ import { Guideline } from "@site/src/components/Guideline";
           <div>
             <label for="day3">Dag</label>
           </div>
-          <div id="description-day3">Bijvoorbeeld 1.</div>
+          <div id="description-day3">Bijvoorbeeld 31.</div>
           <input id="day3" type="number" aria-describedby="description-day3" autocomplete="bday-day" min="1" max="31" />
           <div>
             <label for="month3">Maand</label>
           </div>
-          <div id="description-month3">Bijvoorbeeld 10 voor oktober.</div>
+          <div id="description-month3">Bijvoorbeeld 12 voor december.</div>
           <input
             id="month3"
             type="number"
