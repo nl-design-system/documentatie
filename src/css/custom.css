@@ -516,7 +516,7 @@ li a {
   }
 }
 
-@media screen and (width <= 550px) {
+@media screen and (width <= 850px) {
   .footer__items {
     grid-auto-flow: row;
   }
