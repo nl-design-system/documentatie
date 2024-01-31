@@ -57,7 +57,7 @@ Een optie is het gebruik van 3 select-opties met de waardes van bijvoorbeeld dag
 
 #### Tekstveld
 
-Een makkelijke optie voor de gebruiker is een tekstveld, als die data niet verder automatisch verwerkt gaat worden. Dan is de gebruiker vrij een eigen format te kiezen. Geef dan wel een hint in de description hoe dit het beste te doen.
+Als de data niet verder automatisch verwerkt gaat worden is een tekstveld een makkelijke optie. Dan is de gebruiker vrij een eigen format te kiezen. Geef dan wel een hint in de description hoe dit het beste te doen.
 
 #### De keuze hangt af van de context
 
