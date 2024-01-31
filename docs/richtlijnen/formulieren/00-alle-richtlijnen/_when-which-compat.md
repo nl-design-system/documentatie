@@ -26,7 +26,7 @@ Datum- en tijdkiezers zijn lastig goed toegankelijk te maken, zodat ze voor iede
 
 De beste optie is om naast de kiezer ook een alternatief toe te voegen, een formulierveld waar gebruikers de datum of tijd kunnen invullen.
 
-Veel browsers voegen zelf al een kiezer toe voor de `<input type="date">` en `<input type="time">`-elementen, de gebruiker kan dan beide opties gebruiken. Het is alleen jammer dat deze pickers (nog) niet te stijlen zijn met CSS en de pickers zien er in de verschillende browsers anders uit en werken ook anders.
+Veel browsers voegen zelf al een kiezer toe voor de `<input type="date">` en `<input type="time">`-elementen, de gebruiker kan dan beide opties gebruiken. Het is alleen jammer dat deze kiezers (nog) niet te stijlen zijn met CSS. Daarnaast zien de kiezers er per browser verschillend uit en werken ze anders.
 
 #### Input type="number" versus inputmode="numeric"
 
