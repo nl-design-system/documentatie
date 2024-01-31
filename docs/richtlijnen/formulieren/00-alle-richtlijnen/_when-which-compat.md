@@ -34,8 +34,7 @@ Een andere optie is het laten invoeren van alleen nummers met `<input type="numb
 Bijvoorbeeld:
 
 ```html
-<label for="dag1">Geboortedag</label>
-<input id="dag1" type="number" autocomplete="bday-day" min="1" max="31"/>
+<label for="dag1">Geboortedag</label> <input id="dag1" type="number" autocomplete="bday-day" min="1" max="31" />
 ```
 
 GOV.UK heeft hier onderzoek naar gedaan en vindt [type=number qua gebruikersvriendelijkheid te foutgevoelig](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/).
@@ -47,8 +46,7 @@ Zij beveelt het gebruik van `inputmode="numeric"` aan, omdat dit het numerieke t
 Bijvoorbeeld:
 
 ```html
-<label for="dag2">Geboortedag</label>
-<input id="dag2" type="text" inputmode="numeric" autocomplete="bday-day"/>
+<label for="dag2">Geboortedag</label> <input id="dag2" type="text" inputmode="numeric" autocomplete="bday-day" />
 ```
 
 #### Selects voor dag, maand en jaar

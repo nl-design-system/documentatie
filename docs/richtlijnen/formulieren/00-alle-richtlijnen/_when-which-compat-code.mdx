@@ -32,7 +32,12 @@ import { Guideline } from "@site/src/components/Guideline";
 </Guideline>
 
 <Guideline appearance="do" title="Uitvragen geboortedatum met een inputmode=numeric.">
-  <Canvas language="html">
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-textbox-max-inline-size": "20ch",
+    }}
+  >
     {() => (
       <>
         <fieldset>
@@ -80,7 +85,12 @@ import { Guideline } from "@site/src/components/Guideline";
 </Guideline>
 
 <Guideline appearance="dont" title="Uitvragen geboortedatum met een nummerveld (type=number).">
-  <Canvas language="html">
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-textbox-max-inline-size": "20ch",
+    }}
+  >
     {() => (
       <>
         <fieldset>
