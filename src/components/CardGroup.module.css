@@ -94,18 +94,18 @@
   padding-inline: var(--card-content-padding-inline, 24px);
 }
 
-@media (width <= 996px) {
+@media (width => 768px) {
   .cardgroup--medium {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
     min-height: fit-content;
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .cardgroup--medium {
     grid-auto-flow: row;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .cardgroup__card--large {
