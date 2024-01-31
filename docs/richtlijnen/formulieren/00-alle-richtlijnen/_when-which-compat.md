@@ -64,7 +64,7 @@ Een makkelijke optie voor de gebruiker is een tekstveld, als die data niet verde
 Welke optie je kiest, hangt af van wat je uitvraagt en wat met de data gaat gebeuren, het is afhankelijk van de context. Bijvoorbeeld:
 
 - Kent men de datum uit het hoofd (bijvoorbeeld geboortedatum)? Gebruik dan drie losse invulvelden.
-- Kan men een datum prikken (bijvoorbeeld een afspraak) dan is een datumkiezer in combinatie met zelf invullen een goed plan. "Ik weet de datum niet maar woensdagen komen mij het best uit". Hou wel rekening met "niet beschikbare" dagen, gebruik in dat geval als alternatie bijvoorbeeld een select-optie met beperkte keuzes.
+- Kan men een datum prikken (bijvoorbeeld een afspraak)? Dan is een datumkiezer in combinatie met zelf invullen een goed plan. "Ik weet de datum niet maar woensdagen komen mij het best uit". Hou wel rekening met 'niet beschikbare' dagen, gebruik in dat geval als alternatief bijvoorbeeld een select-optie met beperkte keuzes.
 - Kan de gebruiker alleen kiezen uit een paar data (bijvoorbeeld vanaf vandaag tot een week vooruit), dan zijn radio buttons geschikt.
 
 Lees hierover meer op [Ask users for Dates](https://design-system.service.gov.uk/patterns/dates/) van GOV.UK.
