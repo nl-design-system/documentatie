@@ -61,9 +61,11 @@ Binnen NL Design System gebruiken we ook design tokens voor andere designkeuzes,
 Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. Hier wordt bijvoorbeeld in de tokens voor het `link` component van `organisatie` verwezen naar een kleur rood van `andereOrganisatie`, met de verwijzing in curly brackets:
 
 ```json title="link.tokens.json"
-"organisatie": {
-  "link": {
-    "color": { "value": "{andereOrganisatie.color.red.45}" }
+{
+  "organisatie": {
+    "link": {
+      "color": { "value": "{andereOrganisatie.color.red.45}" }
+    }
   }
 }
 ```
