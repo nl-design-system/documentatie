@@ -24,7 +24,7 @@ Gebruik in plaats van multiselect bijvoorbeeld checkboxes om gebruikers meerdere
 
 Datum- en tijdkiezers zijn lastig goed toegankelijk te maken, zodat ze voor iedereen makkelijk te begrijpen en te bedienen zijn. Maar ze kunnen wel handig zijn voor ziende muisgebruikers.
 
-De beste optie is om naast de picker ook een alternatief toe te voegen, een formulierveld waar gebruikers de datum of tijd kunnen invullen.
+De beste optie is om naast de kiezer ook een alternatief toe te voegen, een formulierveld waar gebruikers de datum of tijd kunnen invullen.
 
 Veel browsers voegen zelf al een kiezer toe voor de `<input type="date">` en `<input type="time">`-elementen, de gebruiker kan dan beide opties gebruiken. Het is alleen jammer dat deze pickers (nog) niet te stijlen zijn met CSS en de pickers zien er in de verschillende browsers anders uit en werken ook anders.
 
