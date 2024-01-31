@@ -27,7 +27,7 @@ export default function Home() {
       <main>
         <HomepageHero
           title="Doe mee met NL Design System"
-          ctaLink="meedoen/introductie"
+          ctaLink="handboek/introductie"
           cta="Lees de NL Design System introductie"
         >
           <Paragraph lead>
@@ -110,7 +110,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/project/events/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
                     Bekijk de events
                   </DocusaurusLink>
                 </Paragraph>
@@ -133,7 +133,7 @@ export default function Home() {
                   <Heading3>Organisatie</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/introductie" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/introductie" className="utrecht-link">
                     Meer informatie voor organisaties
                   </DocusaurusLink>
                 </Paragraph>
@@ -151,7 +151,7 @@ export default function Home() {
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-leverancier/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/leverancier/overzicht" className="utrecht-link">
                     Meer informatie voor leveranciers
                   </DocusaurusLink>
                 </Paragraph>
@@ -169,7 +169,7 @@ export default function Home() {
                   <Heading3>Developer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-developer/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/developer/overzicht" className="utrecht-link">
                     Meer informatie voor developers
                   </DocusaurusLink>
                 </Paragraph>
@@ -187,7 +187,7 @@ export default function Home() {
                   <Heading3>Designer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/meedoen/als-designer/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/designer/overzicht" className="utrecht-link">
                     Meer informatie voor designers
                   </DocusaurusLink>
                 </Paragraph>
@@ -240,6 +240,34 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
+                  <Heading3>Heartbeat</Heading3>
+                  <Paragraph>
+                    Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System
+                    worden besproken.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link href="/events/heartbeat/aanmelden">Meld je aan voor de Heartbeat</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading3>Design Open Hour</Heading3>
+                  <Paragraph>
+                    Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit
+                    te wisselen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link href="/events/design-open-hour/aanmelden">Meld je aan voor het Design Open Hour</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
                   <Heading3>Nieuwsbrief</Heading3>
                   <Paragraph>
                     Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL
@@ -254,14 +282,14 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
-                  <Heading3>Heartbeat</Heading3>
+                  <Heading3>Blog</Heading3>
                   <Paragraph>
-                    Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System
-                    worden besproken.
+                    Op ons blog schrijven we over wat er speelt in het kernteam en de community. Ook kun je er meer
+                    lezen over wat we doen en waarom.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <Link href="/events/heartbeat/aanmelden">Meld je aan voor de heartbeat</Link>
+                  <Link href="/blog">Lees het blog</Link>
                 </Paragraph>
               </CardContent>
             </Card>

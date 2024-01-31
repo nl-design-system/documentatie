@@ -32,7 +32,7 @@ In het Voorbeeld thema maken we gebruik van de lettertypes ‘Source Serif Pro�
 
 ![Visuale weergave van het kleurenpalet.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_kleuren.png)
 
-In het Voorbeeld thema hebben we op [‘Brand token’ niveau](../../meedoen/design-tokens/README.mdx) een zeer uitgebreid kleurenpalet opgenomen. Dit kleurenpalet bestaat uit 9 hoofdkleuren: Violet, Grijs, Roze, Rood, Oranje, Geel, Groen, Zee-groen en Blauw. En is aangevuld met zwart, wit en een aantal transparante opties. Het biedt ons veel opties met betrekking tot feedback componenten en bijvoorbeeld een dark-mode thema.
+In het Voorbeeld thema hebben we op [‘Brand token’ niveau](../../handboek/design-tokens/README.mdx) een zeer uitgebreid kleurenpalet opgenomen. Dit kleurenpalet bestaat uit 9 hoofdkleuren: Violet, Grijs, Roze, Rood, Oranje, Geel, Groen, Zee-groen en Blauw. En is aangevuld met zwart, wit en een aantal transparante opties. Het biedt ons veel opties met betrekking tot feedback componenten en bijvoorbeeld een dark-mode thema.
 
 ## Iconen
 

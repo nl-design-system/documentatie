@@ -10,17 +10,10 @@ const navbar: Navbar = {
   // },
   items: [
     {
-      to: '/',
-      position: 'left',
-      label: 'Home',
-      activeBaseRegex: '^/$',
-      className: 'utrecht-link',
-    },
-    {
       type: 'doc',
-      docId: 'meedoen',
+      docId: 'handboek',
       position: 'left',
-      label: 'Meedoen',
+      label: 'Handboek',
       className: 'utrecht-link',
     },
     {
@@ -49,6 +42,13 @@ const navbar: Navbar = {
       docId: 'onderzoek/README',
       position: 'left',
       label: 'Onderzoek',
+      className: 'utrecht-link',
+    },
+    {
+      type: 'doc',
+      docId: 'community',
+      position: 'left',
+      label: 'Community',
       className: 'utrecht-link',
     },
     {
