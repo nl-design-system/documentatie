@@ -33,7 +33,7 @@ Veel browsers voegen zelf al een kiezer toe voor de `<input type="date">` en `<i
 Een andere optie is het laten invoeren van alleen nummers met `<input type="number">`
 Bijvoorbeeld:
 
-```
+```html
 <label for="dag1">Geboortedag</label>
 <input id="dag1" type="number" autocomplete="bday-day" min="1" max="31"/>
 ```
@@ -46,7 +46,7 @@ Zij beveelt het gebruik van `inputmode="numeric"` aan, omdat dit het numerieke t
 
 Bijvoorbeeld:
 
-```
+```html
 <label for="dag2">Geboortedag</label>
 <input id="dag2" type="text" inputmode="numeric" autocomplete="bday-day"/>
 ```
