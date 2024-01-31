@@ -16,7 +16,7 @@
    }
   },
   46681: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => F, contentTitle: () => W, default: () => E, frontMatter: () => G, metadata: () => B, toc: () => V });
+   t.r(n), t.d(n, { assets: () => F, contentTitle: () => W, default: () => E, frontMatter: () => Z, metadata: () => B, toc: () => V });
    var s = t(11527),
     o = t(47214);
    function r(e) {
@@ -35,8 +35,8 @@
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(l, { ...e }) }) : l(e);
    }
    function d(e) {
-    const n = { a: "a", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, o.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "disabled-submitbuttons", children: "Disabled submitbuttons" }), "\n", (0, s.jsx)(n.p, { children: "Disabled submit buttons worden gebruikt om\nte verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden (goed) zijn ingevuld." }), "\n", (0, s.jsx)(n.p, { children: "Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?" }), "\n", (0, s.jsx)(n.li, { children: "Meestal is een disabled button grijs met grijze tekst. Dit is voor veel gebruikers slecht zichtbaar." }), "\n", (0, s.jsx)(n.li, { children: "Toetsenbord- en screenreadergebruikers kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik." }), "\n", (0, s.jsx)(n.li, { children: "Gebruikers kunnen verandering van disabled in enabled soms niet opmerken als deze uit beeld is en blijven zoeken naar wat er mis is." }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "Een goede oplossing en vervanging voor een disabled button: schrijf goede labelteksten, descriptions en foutmeldingen. Zodat de gebruiker weet wat er mis is en niet hoeft te puzzelen." }), "\n", (0, s.jsx)(n.p, { children: "Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/", children: "The problem with disabled buttons and what to do instead" }), ", Adam Silver."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://gomakethings.com/dont-disable-buttons/", children: "Don't disable buttons" }), ", Chris Ferdinandi in Go Make Things."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/", children: "Usability Pitfalls of Disabled Buttons, and How To Avoid Them" }), ", Vitaly Friedman in Smashing Magazine."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://axesslab.com/disabled-buttons-suck/", children: "Disabled buttons suck" }), "."] }), "\n"] })] });
+    const n = { a: "a", code: "code", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, o.a)(), ...e.components };
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "disabled-submitbuttons", children: "Disabled submitbuttons" }), "\n", (0, s.jsx)(n.p, { children: "In de praktijk worden disabled submitbuttons vaak gebruikt om te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden goed zijn ingevuld." }), "\n", (0, s.jsx)(n.p, { children: "Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?" }), "\n", (0, s.jsx)(n.li, { children: "Meestal is een disabled button grijs met grijze tekst. Dit is voor veel gebruikers slecht zichtbaar." }), "\n", (0, s.jsx)(n.li, { children: "Toetsenbord- en screenreadergebruikers kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik." }), "\n", (0, s.jsx)(n.li, { children: "Gebruikers kunnen verandering van disabled in enabled soms niet opmerken als deze uit beeld is en blijven zoeken naar wat er mis is." }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "Een goede oplossing en vervanging voor een disabled button: schrijf goede labelteksten, descriptions en foutmeldingen. Zodat de gebruiker weet wat er mis is en niet hoeft te puzzelen." }), "\n", (0, s.jsx)(n.p, { children: "Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/", children: "The problem with disabled buttons and what to do instead" }), ", Adam Silver."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://gomakethings.com/dont-disable-buttons/", children: "Don't disable buttons" }), ", Chris Ferdinandi in Go Make Things."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/", children: "Usability Pitfalls of Disabled Buttons, and How To Avoid Them" }), ", Vitaly Friedman in Smashing Magazine."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://axesslab.com/disabled-buttons-suck/", children: "Disabled buttons suck" }), "."] }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: ["Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: ", (0, s.jsx)(n.code, { children: "#767676" }), " tegen een witte achtergrond."] }), "\n", (0, s.jsxs)(n.li, { children: ["Gebruik ", (0, s.jsx)(n.code, { children: 'tabindex="0"' }), " zodat de button wel ontdekt kan worden door screenreadergebruikers."] }), "\n", (0, s.jsxs)(n.li, { children: ["Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met ", (0, s.jsx)(n.code, { children: "aria-describedby" }), " aan de button."] }), "\n"] })] });
    }
    function c(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -65,14 +65,14 @@
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(g, { ...e }) }) : g(e);
    }
    var j = t(73460),
-    v = t(30036);
-   function x(e) {
+    x = t(30036);
+   function v(e) {
     const n = { button: "button", div: "div", ...(0, o.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(v.X, { appearance: "do", title: "Gebruik een button, zodat de toetsenbordinteractie vanzelf goed gaat.", children: (0, s.jsx)(j.X, { language: "html", children: () => (0, s.jsx)(n.button, { class: "doFancyStuff button", children: "Geef je op" }) }) }), "\n", (0, s.jsx)(v.X, { appearance: "dont", title: "Een div gebruiken die alleen met de muis aanklikbaar is.", children: (0, s.jsx)(j.X, { language: "html", children: () => (0, s.jsx)(n.div, { class: "doFancyStuff button", children: "Geef je op" }) }) })] });
+    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(x.X, { appearance: "do", title: "Gebruik een button, zodat de toetsenbordinteractie vanzelf goed gaat.", children: (0, s.jsx)(j.X, { language: "html", children: () => (0, s.jsx)(n.button, { class: "doFancyStuff button", children: "Geef je op" }) }) }), "\n", (0, s.jsx)(x.X, { appearance: "dont", title: "Een div gebruiken die alleen met de muis aanklikbaar is.", children: (0, s.jsx)(j.X, { language: "html", children: () => (0, s.jsx)(n.div, { class: "doFancyStuff button", children: "Geef je op" }) }) })] });
    }
    function k(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(x, { ...e }) }) : x(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(v, { ...e }) }) : v(e);
    }
    function f(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, o.a)(), ...e.components };
@@ -112,15 +112,15 @@
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(A, { ...e }) }) : A(e);
    }
-   var Z = t(3324);
-   const G = { title: "Buttons in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
+   var G = t(3324);
+   const Z = { title: "Buttons in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
     W = "Buttons in een formulier",
     B = { id: "richtlijnen/formulieren/alle-richtlijnen/buttons", title: "Buttons in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/buttons.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/buttons", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/buttons", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/buttons.mdx", tags: [], version: "current", frontMatter: { title: "Buttons in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Autocomplete in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/autocomplete" }, next: { title: "Bevestigingspagina", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/bevestigingspagina" } },
     F = {},
     V = [];
    function P(e) {
     const n = { code: "code", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, o.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "buttons-in-een-formulier", children: "Buttons in een formulier" }), "\n", (0, s.jsxs)(n.p, { children: ["Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand.\nIn deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: \u201cbutton\u201d. Omdat ", (0, s.jsx)(n.code, { children: "<button>" }), " het HTML-element is waar deze richtlijnen over gaan."] }), "\n", (0, s.jsx)(n.p, { children: "Binnen een formulier bestaan er drie soorten knoppen:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="submit">' }), ", om het formulier mee te verzenden (dit is de default waarde binnen een formulier);"] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="button">' }), ", dit zijn knoppen die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;"] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="reset">' }), ", om alle ingevulde informatie binnen een formulier te wissen."] }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "De hier beschreven richtlijnen gelden voor al deze buttons." }), "\n", (0, s.jsx)(n.p, { children: "Voor de toegankelijkheid en goede code van het formulier zijn de volgende punten belangrijk voor een button:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "Toetsenbordbediening van een button." }), "\n", (0, s.jsx)(n.li, { children: "Plaatsing van een button binnen een formulier." }), "\n", (0, s.jsx)(n.li, { children: "Duidelijk buttontekst die beschrijft wat de button doet." }), "\n", (0, s.jsx)(n.li, { children: "De toegankelijke naam van een button." }), "\n", (0, s.jsx)(n.li, { children: "Afbeeldingen en iconen als buttons." }), "\n", (0, s.jsx)(n.li, { children: "Disabled submitbuttons." }), "\n"] }), "\n", (0, s.jsx)(w, {}), "\n", (0, s.jsx)(k, {}), "\n", (0, s.jsx)(N, {}), "\n", (0, s.jsx)(_, {}), "\n", (0, s.jsx)(C, {}), "\n", (0, s.jsx)(D, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(i, {}), "\n", (0, s.jsx)(p, {}), "\n", (0, s.jsx)(m, {}), "\n", (0, s.jsx)(c, {}), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(Z.ZP, {})] });
+    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "buttons-in-een-formulier", children: "Buttons in een formulier" }), "\n", (0, s.jsxs)(n.p, { children: ["Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand.\nIn deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: \u201cbutton\u201d. Omdat ", (0, s.jsx)(n.code, { children: "<button>" }), " het HTML-element is waar deze richtlijnen over gaan."] }), "\n", (0, s.jsx)(n.p, { children: "Binnen een formulier bestaan er drie soorten knoppen:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="submit">' }), ", om het formulier mee te verzenden (dit is de default waarde binnen een formulier);"] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="button">' }), ", dit zijn knoppen die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;"] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.code, { children: '<button type="reset">' }), ", om alle ingevulde informatie binnen een formulier te wissen."] }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "De hier beschreven richtlijnen gelden voor al deze buttons." }), "\n", (0, s.jsx)(n.p, { children: "Voor de toegankelijkheid en goede code van het formulier zijn de volgende punten belangrijk voor een button:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "Toetsenbordbediening van een button." }), "\n", (0, s.jsx)(n.li, { children: "Plaatsing van een button binnen een formulier." }), "\n", (0, s.jsx)(n.li, { children: "Duidelijk buttontekst die beschrijft wat de button doet." }), "\n", (0, s.jsx)(n.li, { children: "De toegankelijke naam van een button." }), "\n", (0, s.jsx)(n.li, { children: "Afbeeldingen en iconen als buttons." }), "\n", (0, s.jsx)(n.li, { children: "Disabled submitbuttons." }), "\n"] }), "\n", (0, s.jsx)(w, {}), "\n", (0, s.jsx)(k, {}), "\n", (0, s.jsx)(N, {}), "\n", (0, s.jsx)(_, {}), "\n", (0, s.jsx)(C, {}), "\n", (0, s.jsx)(D, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(i, {}), "\n", (0, s.jsx)(p, {}), "\n", (0, s.jsx)(m, {}), "\n", (0, s.jsx)(c, {}), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(G.ZP, {})] });
    }
    function E(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -128,7 +128,7 @@
    }
   },
   73460: (e, n, t) => {
-   t.d(n, { X: () => v });
+   t.d(n, { X: () => x });
    var s = t(16532),
     o = t(86259),
     r = t(11910),
@@ -156,27 +156,27 @@
     return (0, m.jsx)(s.Tg, { className: h["nlds-canvas__example-surface"], children: n });
    };
    j.displayName = "SurfaceContainer";
-   const v = (e) => {
-    let { code: n, copy: t = !1, defaultExpandedCode: v = !1, displayCode: x = !0, children: k, container: f = "document", language: w, designTokens: y } = e,
+   const x = (e) => {
+    let { code: n, copy: t = !1, defaultExpandedCode: x = !1, displayCode: v = !0, children: k, container: f = "document", language: w, designTokens: y } = e,
      _ = "function" == typeof k ? k() : k,
      z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      N = "string" == typeof n ? n : u.uS(z || _),
      [S, D] = (0, c.useState)(N),
-     [A, C] = (0, c.useState)(v);
+     [A, C] = (0, c.useState)(x);
     (0, c.useEffect)(() => {
      (async () => {
       (S = await d.ZP.format(N, { parser: w, plugins: [r.Z, i.ZP, l.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), D(S);
      })();
     }, [N]);
-    const Z = (0, c.useId)();
-    let G = c.Fragment;
+    const G = (0, c.useId)();
+    let Z = c.Fragment;
     return (
-     "paragraph" === f ? (G = g) : "document" === f ? (G = p) : "surface" === f && (G = j),
+     "paragraph" === f ? (Z = g) : "document" === f ? (Z = p) : "surface" === f && (Z = j),
      (0, m.jsxs)("div", {
       className: (0, o.Z)(h["nlds-canvas"]),
       children: [
-       _ && (0, m.jsx)("div", { className: (0, o.Z)(h["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(G, { children: (0, m.jsx)(s.pu, { children: _ }) }) }) }),
-       x &&
+       _ && (0, m.jsx)("div", { className: (0, o.Z)(h["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(Z, { children: (0, m.jsx)(s.pu, { children: _ }) }) }) }),
+       v &&
         (0, m.jsx)("div", {
          className: (0, o.Z)(h["nlds-canvas__toolbar"]),
          children: (0, m.jsx)(s.zx, {
@@ -186,14 +186,14 @@
            C(!A);
           },
           "aria-expanded": A,
-          "aria-controls": Z,
+          "aria-controls": G,
           children: A ? "Verberg code" : "Bekijk code",
          }),
         }),
-       x &&
+       v &&
         (0, m.jsxs)("div", {
          className: (0, o.Z)(h["nlds-canvas__code-block"], !t && h["nlds-canvas__code-block--user-select-none"]),
-         id: Z,
+         id: G,
          hidden: !A,
          children: [
           (0, m.jsx)(b.u, { syntax: w, textContent: S, trim: !0 }),

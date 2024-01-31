@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f73ab33a.css" />
-  <script src="/assets/js/runtime~main.3f055a89.js" defer="defer"></script>
-  <script src="/assets/js/main.68d0e02b.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.3199bd02.js" defer="defer"></script>
+  <script src="/assets/js/main.3e838fc9.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -138,6 +138,7 @@
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker">Voorkom fouten</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/labels">Labels</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/links">Links</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen">Meerdere stappen</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/placeholders">Placeholders</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/vragen">Uit te vragen informatie</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp">Visueel ontwerp</a></li>
@@ -374,7 +375,7 @@
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_label-as-image.png" alt="Een button met het label &#x27;Verstuur uw vraag&#x27; daarnaast een vergroting waarbij de tekst korrelig wordt" class="utrecht-img" /></p>
               <!-- -->
               <h2 id="disabled-submitbuttons" class="utrecht-heading-2">Disabled submitbuttons</h2>
-              <p>Disabled submit buttons worden gebruikt om te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden (goed) zijn ingevuld.</p>
+              <p>In de praktijk worden disabled submitbuttons vaak gebruikt om te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden goed zijn ingevuld.</p>
               <p>Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:</p>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?</li>
@@ -389,6 +390,12 @@
                <li class="utrecht-unordered-list__item"><a href="https://gomakethings.com/dont-disable-buttons/" class="utrecht-link utrecht-link--html-a">Don&#x27;t disable buttons</a>, Chris Ferdinandi in Go Make Things.</li>
                <li class="utrecht-unordered-list__item"><a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" class="utrecht-link utrecht-link--html-a">Usability Pitfalls of Disabled Buttons, and How To Avoid Them</a>, Vitaly Friedman in Smashing Magazine.</li>
                <li class="utrecht-unordered-list__item"><a href="https://axesslab.com/disabled-buttons-suck/" class="utrecht-link utrecht-link--html-a">Disabled buttons suck</a>.</li>
+              </ul>
+              <p>Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: <code class="utrecht-code">#767676</code> tegen een witte achtergrond.</li>
+               <li class="utrecht-unordered-list__item">Gebruik <code class="utrecht-code">tabindex=&quot;0&quot;</code> zodat de button wel ontdekt kan worden door screenreadergebruikers.</li>
+               <li class="utrecht-unordered-list__item">Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met <code class="utrecht-code">aria-describedby</code> aan de button.</li>
               </ul>
               <!-- -->
               <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
