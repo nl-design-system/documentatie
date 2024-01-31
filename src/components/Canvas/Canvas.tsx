@@ -61,7 +61,7 @@ interface CanvasProps {
 export const Canvas = ({
   code,
   copy = false,
-  defaultExpandedCode = true,
+  defaultExpandedCode = false,
   displayCode = true,
   children,
   container = 'document',
