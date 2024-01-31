@@ -11,7 +11,7 @@ Voeg deze informatie toe op twee plekken:
 
 Aanpassen van de `<title>` in de `<head>` geldt voor WCAG ook voor dynamisch gegenereerde formulieren en dus ook voor de verschillende stappen. Wanneer de gebruiker technisch gezien op dezelfde pagina blijft, en je met script de volgende formulierstap in beeld brengt, dan moet de paginatitel aangepast worden zodat die klopt bij de stap. Je kunt met script de titel aanpassen:
 
-```
+```js
 document.title = "Stap 3 van 6: Adresgegevens";
 ```
 
