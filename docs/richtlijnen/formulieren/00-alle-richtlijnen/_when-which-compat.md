@@ -61,7 +61,7 @@ Een makkelijke optie voor de gebruiker is een tekstveld, als die data niet verde
 
 #### De keuze hangt af van de context
 
-Welke optie je kiest, hangt af van wat je uitvraagt en wat met de data gaat gebeuren, het is afhankelijk van de context. Bijvoorbeeld:
+Welke optie je kiest is afhankelijk van de context. Wat vraag je uit? En wat gaat er met de data gebeuren? Bijvoorbeeld:
 
 - Kent men de datum uit het hoofd (bijvoorbeeld geboortedatum)? Gebruik dan drie losse invulvelden.
 - Kan men een datum prikken (bijvoorbeeld een afspraak)? Dan is een datumkiezer in combinatie met zelf invullen een goed plan. "Ik weet de datum niet maar woensdagen komen mij het best uit". Hou wel rekening met 'niet beschikbare' dagen, gebruik in dat geval als alternatief bijvoorbeeld een select-optie met beperkte keuzes.
