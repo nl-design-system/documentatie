@@ -25,6 +25,11 @@ module.exports = {
       files: ['*.json'],
     },
     {
+      extends: ['plugin:jsonc/recommended-with-json5'],
+      files: ['*.json5'],
+      parser: 'jsonc-eslint-parser',
+    },
+    {
       extends: [
         'plugin:react/recommended',
         'eslint-config-prettier',
