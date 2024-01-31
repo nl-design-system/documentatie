@@ -53,7 +53,7 @@ Bijvoorbeeld:
 
 #### Selects voor dag, maand en jaar
 
-Een optie is het gebruik van 3 select-opties met de waardes van bijvoorbeeld dag, maand en jaar. Het nadeel hiervan is dat de select voor een geboortejaar een hele lange lijst kan worden. Nooit leuk om te beseffen dat je wel erg oud bent, al scrollend door een lange, lange lijst jaartallen.
+Een optie is het gebruik van 3 select-opties met de waardes van bijvoorbeeld dag, maand en jaar. Het nadeel hiervan is dat de select voor een geboortejaar een hele lange lijst kan worden. Het kan confronterend zijn als, scrollend door een lange lijst aan jaartallen, beseft dat je wel erg oud aan het worden bent...
 
 #### Tekstveld
 
