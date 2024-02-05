@@ -14,12 +14,8 @@ Een checkbox met in het label "Ik ga akkoord met het privacybeleid", en de tekst
 Dit is geen goede constructie:
 
 ```html
-
-  <input id="p" type="checkbox" name="privacybeleid" />
-  <label for="p">
-    Ik ga akkoord met het <a href="#">privacybeleid</a>
-  </label>
-
+<input id="p" type="checkbox" name="privacybeleid" />
+<label for="p">Ik ga akkoord met het <a href="#">privacybeleid</a></label>
 ```
 
 VoiceOver in Safari op Mac OS Sonoma 14 leest als label voor: "Ik ga akkoord met het en nog 1 onderdeel", dat onderdeel is de link.
