@@ -13,12 +13,14 @@ Bijvoorbeeld:
 Een checkbox met in het label "Ik ga akkoord met het privacybeleid", en de tekst privacybeleid is ook een link.
 Dit is geen goede constructie:
 
-<div class="nlds-dont">
+```html
+
   <input id="p" type="checkbox" name="privacybeleid" />
   <label for="p">
     Ik ga akkoord met het <a href="#">privacybeleid</a>
   </label>
-</div>
+
+```
 
 VoiceOver in Safari op Mac OS Sonoma 14 leest als label voor: "Ik ga akkoord met het en nog 1 onderdeel", dat onderdeel is de link.
 
