@@ -10,7 +10,7 @@ Gebruik dus ook nooit meerdere positieve tabindexen om de gebruiker te dwingen e
 
 Laat de bezoeker zelf beslissen wat ze wil lezen en in welke volgorde. Kaap de toetsenbordfocus niet maar hou de natuurlijke tabvolgorde intact.
 
-Adam Silver geeft hier uitgebereid uitleg over in [The problem with automatically focusing the first input and what to do instead](https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/).
+Adam Silver geeft hier uitgebreid uitleg over in [The problem with automatically focusing the first input and what to do instead](https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/).
 
 Let wel: `tabindex="0"` en `tabindex="-1"` zijn wel toegestaan om bepaalde elementen focus te kunnen geven die van nature geen focus krijgen. Dit verstoort de natuurlijke tabvolgorde niet. Wanneer welke waarde te gebruiken wordt uitgelegd in [0 and -1 Values](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
 
