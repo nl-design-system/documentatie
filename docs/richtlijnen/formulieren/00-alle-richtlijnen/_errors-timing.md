@@ -8,4 +8,4 @@ Die melding verdwijnt pas als het hele e-mailadres is ingevuld. Dit is niet alle
 
 Controleer een veld bijvoorbeeld als de gebruiker het veld heeft aangepast en daarna verlaat ('blur' en 'input') of wanneer het formulier wordt verzonden.
 
-Meer informatie over de bezwaren van "live" validatie: [The problem with live validation and what to do instead](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/) van Adam Silver.
+Meer informatie over de bezwaren van "live" validatie: [<span lang="en">The problem with live validation and what to do instead</span>](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/) van Adam Silver.

@@ -4,7 +4,7 @@
 
 Waarom? Als het label verdwijnt bij het typen kan er verwarring ontstaan: wat moet je ook alweer invullen? Daarom is een placeholder geen goede vervanging van het label.
 
-De placeholder kan ook voor verwarring zorgen bij gebruikers. Is het al veld ingevuld? Zie het onderzoek [Placeholders in Form Fields Are Harmful](https://www.nngroup.com/articles/form-design-placeholders/) van de Nielsen Norman Group.
+De placeholder kan ook voor verwarring zorgen bij gebruikers. Is het al veld ingevuld? Zie het onderzoek [<span lang="en">Placeholders in Form Fields Are Harmful</span>](https://www.nngroup.com/articles/form-design-placeholders/) van de Nielsen Norman Group.
 
 Een label vertelt **wat** je moet invullen en een placeholder **hoe** je een formulierveld moet invullen. Voor een e-mailveld kan het label bijvoorbeeld “Jouw e-mailadres” zijn en de placeholder “naam@voorbeeld.com”.
 
