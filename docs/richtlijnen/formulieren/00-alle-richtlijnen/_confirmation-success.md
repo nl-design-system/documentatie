@@ -14,4 +14,4 @@ Geef de gebruiker zekerheid welke informatie is verstuurd. Dit kan bijvoorbeeld 
 
 Alleen de melding geven "Uw formulier is verzonden", of automatisch naar de voorpagina gaan is onvoldoende.
 
-Goede feedback is geen vereiste om te voldoen aan WCAG, maar wordt wel geadviseerd in [Technique G199: Providing success feedback when data is submitted successfully](https://www.w3.org/WAI/WCAG22/Techniques/general/G199.html).
+Goede feedback is geen vereiste om te voldoen aan WCAG, maar wordt wel geadviseerd in [<span lang="en">Technique G199: Providing success feedback when data is submitted successfully</span>](https://www.w3.org/WAI/WCAG22/Techniques/general/G199.html).

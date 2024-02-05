@@ -13,10 +13,10 @@ Een goede oplossing en vervanging voor een disabled button: schrijf goede labelt
 
 Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 
-- [The problem with disabled buttons and what to do instead](https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/), Adam Silver.
-- [Don't disable buttons](https://gomakethings.com/dont-disable-buttons/), Chris Ferdinandi in Go Make Things.
-- [Usability Pitfalls of Disabled Buttons, and How To Avoid Them](https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/), Vitaly Friedman in Smashing Magazine.
-- [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/).
+- [<span lang="en">The problem with disabled buttons and what to do instead</span>](https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/), Adam Silver.
+- [<span lang="en">Don't disable buttons</span>](https://gomakethings.com/dont-disable-buttons/), Chris Ferdinandi in Go Make Things.
+- [<span lang="en">Usability Pitfalls of Disabled Buttons, and How To Avoid Them</span>](https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/), Vitaly Friedman in Smashing Magazine.
+- [<span lang="en">Disabled buttons suck</span>](https://axesslab.com/disabled-buttons-suck/).
 
 Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:
 
