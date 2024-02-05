@@ -16,7 +16,7 @@ Let wel: `tabindex="0"` en `tabindex="-1"` zijn wel toegestaan om bepaalde eleme
 
 Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: [How To Avoid Breaking Web Pages For Keyboard Users](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
 
-Geen positieve tabindex of autofocus gebruiken helpt je te voldoen aan de volgende WCAG-succescriteria:
+Geen positieve tabindex of autofocus gebruiken is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
 - [2.4.3 Focusvolgorde](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) (niveau A).
 - [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) (niveau AA).

@@ -4,7 +4,7 @@ Zorg ervoor dat tekst in afbeeldingen goed meeschaalt als de gebruiker inzoomt. 
 
 Gebruik daarom liever geen jpg-, gif- of png-bestanden voor buttontekst. Maar gebruik bij voorkeur CSS om buttontekst mooi gestyled weer te geven. Dan heeft de gebruiker meer controle over de weergave en grootte van de tekst.
 
-Door te zorgen voor een schaalbare en flexibele weergave tekst in buttons voldoe je aan de WCAG-succescritera:
+Een schaalbare en flexibele weergave tekst in buttons is nodig om te voldoen aan de WCAG-succescritera:
 
 - [1.4.4: Herschalen van tekst](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html) (niveau AA).
 - [1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) (niveau AA)

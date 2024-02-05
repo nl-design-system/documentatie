@@ -7,4 +7,4 @@ Geef op een consistente plek, met een consistente benaming, aan hoe de gebruiker
 
 Zorg er dus voor dat links en buttons binnen de formulieren op dezelfde plaats staan en dat ze ook een consistente naam hebben. Door consistentie heeft de gebruiker minder moeite de navigatie te begrijpen en weet ook beter wat er gaat komen na een keuze.
 
-Door het consistent gebruik van navigatie in een formulier voldoe je aan het WCAG-succescriterium: [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) (niveau AA).
+Consistent gebruik van navigatie in een formulier is nodig om te voldoen het WCAG-succescriterium: [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) (niveau AA).

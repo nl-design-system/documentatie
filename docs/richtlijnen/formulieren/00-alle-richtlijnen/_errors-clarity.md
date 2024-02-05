@@ -14,7 +14,7 @@ Gebruik een punt aan het eind van de foutmelding (of andere melding). Dan stopt 
 
 Het design system van GOV.UK geeft duidelijke (Engelstalige) informatie over de tekst van foutmeldingen [Be clear and concise](https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise).
 
-Door het schrijven van foutmeldingen en een duidelijke toelichting op wat er mis gaat, voldoe je aan de volgende WCAG-succescriteria:
+Het schrijven van foutmeldingen en een duidelijke toelichting op wat er mis gaat, is nodig om te voldoen de volgende WCAG-succescriteria:
 
 - [3.3.1 Foutidentificatie](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html) (niveau A).
 - [3.3.3 Foutsuggestie](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html) (niveau AA).

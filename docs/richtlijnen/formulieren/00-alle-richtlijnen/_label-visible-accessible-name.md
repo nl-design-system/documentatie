@@ -6,4 +6,4 @@ Gebruikers van voice recognition software kunnen een formulierveld focus geven d
 
 Als de toegankelijke naam niet begint met de zichtbare naam werkt dit niet goed. Dit kan gebeuren bij het verkeerd gebruik van het attribute `aria-label`. Met `aria-label` kan een formulierveld ook een toegankelijke naam worden gegeven, onzichtbaar voor de ziende gebruiker.
 
-Door te zorgen dat de zichtbare naam en toegankelijke naam overeenkomen, voldoe je aan een WCAG-criterium: [2.5.3: Label in naam](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html) (niveau A).
+Zorgen dat de zichtbare naam en toegankelijke naam overeenkomen, is nodig om te voldoen WCAG-succescriterium: [2.5.3: Label in naam](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html) (niveau A).

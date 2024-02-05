@@ -42,7 +42,7 @@ Zo werkt dit bijvoorbeeld met een `<select>`:
 </select>
 ```
 
-Het geven van een goede toegankelijke naam aan formuliervelden is verplicht volgens WCAG. Deze succescriteria zijn relevant:
+Het geven van een goede toegankelijke naam aan formuliervelden is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
 - [2.4.6: Koppen en labels](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels) (niveau AA).
 - [3.3.2: Labels of instructies](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions) (niveau A).

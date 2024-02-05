@@ -14,4 +14,4 @@ Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-sid
 
 Om specifiek aan hulptechnologieën te communiceren dat een veld verplicht is, kan `aria-required` worden gebruikt. Als je alleen `aria-required` gebruikt, zal de browser niet zelf valideren of feedback geven.
 
-Door het toegankelijk maken van foutmeldingen voldoe je aan het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG21-nl/#foutidentificatie) (niveau A).
+Het toegankelijk maken van foutmeldingen is nodig om te voldoen het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG21-nl/#foutidentificatie) (niveau A).
