@@ -16,7 +16,7 @@
    }
   },
   46435: (e, n, r) => {
-   r.r(n), r.d(n, { assets: () => q, contentTitle: () => V, default: () => T, frontMatter: () => L, metadata: () => W, toc: () => P });
+   r.r(n), r.d(n, { assets: () => q, contentTitle: () => L, default: () => T, frontMatter: () => V, metadata: () => W, toc: () => P });
    var l = r(11527),
     t = r(47214),
     i = r(3324),
@@ -32,7 +32,7 @@
    }
    function c(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, t.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "sta-knippen-en-plakken-van-een-wachtwoord-toe", children: "Sta knippen en plakken van een wachtwoord toe" }), "\n", (0, l.jsx)(n.p, { children: "Een wachtwoord moet veilig zijn. Als je het knippen en plakken van een wachtwoord verhindert, dwing je gebruikers tot een simpel en goed te onthouden wachtwoord. Dat is nu juist niet de bedoeling." }), "\n", (0, l.jsx)(n.p, { children: "Kopi\xebren/plakken vanuit een wachtwoordmanager is een veel veiligere manier om een gebruiker een wachtwoord te laten invullen." }), "\n", (0, l.jsxs)(n.p, { children: ["Zoals het Britse National Cyber Security Centre uitlegt in ", (0, l.jsx)(n.a, { href: "https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords", children: "Let them paste passwords" }), "."] })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "sta-knippen-en-plakken-van-een-wachtwoord-toe", children: "Sta knippen en plakken van een wachtwoord toe" }), "\n", (0, l.jsx)(n.p, { children: "Een wachtwoord moet veilig zijn. Als je het knippen en plakken van een wachtwoord verhindert, dwing je gebruikers tot een simpel en goed te onthouden wachtwoord. Dat is nu juist niet de bedoeling." }), "\n", (0, l.jsx)(n.p, { children: "Kopi\xebren/plakken vanuit een wachtwoordmanager is een veel veiligere manier om een gebruiker een wachtwoord te laten invullen." }), "\n", (0, l.jsxs)(n.p, { children: ["Zoals het Britse ", (0, l.jsx)("span", { lang: "en", children: "National Cyber Security Centre" }), " uitlegt in ", (0, l.jsx)(n.a, { href: "https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords", children: (0, l.jsx)("span", { lang: "en", children: "Let them paste passwords" }) }), "."] })] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -57,17 +57,17 @@
    function g(e) {
     return (0, l.jsx)(l.Fragment, {});
    }
-   function v(e = {}) {
+   function x(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(g, { ...e }) }) : g();
    }
-   function x(e) {
+   function v(e) {
     const n = { a: "a", h3: "h3", img: "img", p: "p", ...(0, t.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h3, { id: "geldige-e-mailadressen", children: "Geldige e-mailadressen" }), "\n", (0, l.jsx)(n.p, { children: "Sommige mensen gebruiken een + in hun e-mailadres, bijvoorbeeld om e-mails makkelijker te kunnen groeperen." }), "\n", (0, l.jsxs)(n.p, { children: ["Zo kiezen ze voor ", (0, l.jsx)(n.a, { href: "mailto:naam+school@voorbeeld.nl", children: "naam+school@voorbeeld.nl" }), " voor e-mails van school en ", (0, l.jsx)(n.a, { href: "mailto:naam+werk@voorbeeld.nl", children: "naam+werk@voorbeeld.nl" }), " voor e-mails over werk. Dit zijn geldige e-mailadressen, keur ze dus niet af."] }), "\n", (0, l.jsx)(n.p, { children: (0, l.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_voorkom-fouten_email.png", alt: "email met een plus teken is goedgekeurd" }) })] });
    }
    function b(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(x, { ...e }) }) : x(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(v, { ...e }) }) : v(e);
    }
    function f(e) {
     const n = { h2: "h2", p: "p", ...(0, t.a)(), ...e.components };
@@ -100,21 +100,21 @@
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(S, { ...e }) }) : S(e);
    }
-   function D(e) {
+   function Z(e) {
     const n = { h2: "h2", img: "img", p: "p", ...(0, t.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "geef-geldige-waardes-aan-voor-een-invoerveld", children: "Geef geldige waardes aan voor een invoerveld" }), "\n", (0, l.jsx)(n.p, { children: "Geef geldige waardes aan voor een invoerveld (bijvoorbeeld de datum- of wachtwoordeisen) en niet alleen in de placeholder." }), "\n", (0, l.jsx)(n.p, { children: "Bedenk ook of het echt belangrijk is of, bijvoorbeeld een geboortedatum of telefoonnummer aan exacte invoereisen moet voldoen." }), "\n", (0, l.jsx)(n.p, { children: (0, l.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_voorkom-fouten_wachtwoord-alt.png", alt: "Wachtwoord-eisen zijn in de description getoond" }) }), "\n", (0, l.jsx)(n.p, { children: (0, l.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_voorkom-fouten_geboortedatum.png", alt: "Voorbeeld van de waarden voor de geboortedatum worden in de description getoond" }) })] });
    }
-   function F(e = {}) {
+   function D(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(D, { ...e }) }) : D(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(Z, { ...e }) }) : Z(e);
    }
-   function Z(e) {
+   function F(e) {
     const n = { button: "button", form: "form", input: "input", label: "label", p: "p", ...(0, t.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Voeg novalidate toe als je required gebruikt.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { novalidate: "novalidate", children: [(0, l.jsx)(n.label, { for: "kleur1", children: "Wat is je lievelingskleur (verplicht)" }), (0, l.jsx)(n.input, { type: "text", id: "kleur1", name: "lievelingskleur", required: !0, "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Mijn lievelingskleur" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Vertel duidelijk wat het verplichte veld is.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email1", children: "Uw e-mailadres (verplicht)" }), (0, l.jsx)(n.input, { type: "text", id: "email1", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Leg het sterretje uit boven het formulier", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.p, { children: "* betekent verplicht in te vullen." }), (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email2", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email2", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Vertrouw op HTML5-formuliervalidatie.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email3", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email3", name: "email", required: "required" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Leg het sterretje niet uit.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email4", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email4", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Geef geen feedback aan screenreadergebruikers.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.p, { children: "* betekent verplicht in te vullen." }), (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email3", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email3", name: "email" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] })] }) }) })] });
    }
    function X(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(Z, { ...e }) }) : Z(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(F, { ...e }) }) : F(e);
    }
    function A(e) {
     const n = { a: "a", code: "code", h2: "h2", h3: "h3", li: "li", p: "p", pre: "pre", strong: "strong", ul: "ul", ...(0, t.a)(), ...e.components };
@@ -124,14 +124,14 @@
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(A, { ...e }) }) : A(e);
    }
-   const L = { title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Voorkom fouten", pagination_label: "Voorkom fouten in een formulier", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", slug: "help-de-gebruiker", keywords: ["informatie", "formulier", "design", "code"] },
-    V = "Voorkom fouten, help de gebruiker",
-    W = { id: "richtlijnen/formulieren/alle-richtlijnen/help-the-user", title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", permalink: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", tags: [], version: "current", frontMatter: { title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Voorkom fouten", pagination_label: "Voorkom fouten in een formulier", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", slug: "help-de-gebruiker", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Foutmeldingen", permalink: "/richtlijnen/formulieren/alle-richtlijnen/foutmeldingen" }, next: { title: "Labels in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/labels" } },
+   const V = { title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Voorkom fouten", pagination_label: "Voorkom fouten in een formulier", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", slug: "help-de-gebruiker", keywords: ["informatie", "formulier", "design", "code"] },
+    L = "Voorkom fouten, help de gebruiker",
+    W = { id: "richtlijnen/formulieren/alle-richtlijnen/help-the-user", title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", tags: [], version: "current", frontMatter: { title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Voorkom fouten", pagination_label: "Voorkom fouten in een formulier", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", slug: "help-de-gebruiker", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Foutmeldingen", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/foutmeldingen" }, next: { title: "Zorg dat het formulier werkt met een toetsenbord", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/toetsenbord" } },
     q = {},
     P = [];
    function M(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, t.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, l.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld het duidelijk of een veld verplicht is." }), "\n", (0, l.jsx)(n.li, { children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe." }), "\n", (0, l.jsx)(n.li, { children: "Keur niet te snel af." }), "\n", (0, l.jsx)(n.li, { children: "Geef geldige waardes aan voor een invoerveld." }), "\n", (0, l.jsx)(n.li, { children: "Vul bekende informatie in waar mogelijk." }), "\n"] }), "\n", (0, l.jsx)(C, {}), "\n", (0, l.jsx)(X, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(d, {}), "\n", (0, l.jsx)(k, {}), "\n", (0, l.jsx)(b, {}), "\n", (0, l.jsx)(v, {}), "\n", (0, l.jsx)(N, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(F, {}), "\n", (0, l.jsx)(z, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(i.ZP, {})] });
+    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, l.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld het duidelijk of een veld verplicht is." }), "\n", (0, l.jsx)(n.li, { children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe." }), "\n", (0, l.jsx)(n.li, { children: "Keur niet te snel af." }), "\n", (0, l.jsx)(n.li, { children: "Geef geldige waardes aan voor een invoerveld." }), "\n", (0, l.jsx)(n.li, { children: "Vul bekende informatie in waar mogelijk." }), "\n"] }), "\n", (0, l.jsx)(C, {}), "\n", (0, l.jsx)(X, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(d, {}), "\n", (0, l.jsx)(k, {}), "\n", (0, l.jsx)(b, {}), "\n", (0, l.jsx)(x, {}), "\n", (0, l.jsx)(N, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(D, {}), "\n", (0, l.jsx)(z, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(i.ZP, {})] });
    }
    function T(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -139,7 +139,7 @@
    }
   },
   73460: (e, n, r) => {
-   r.d(n, { X: () => x });
+   r.d(n, { X: () => v });
    var l = r(16532),
     t = r(86259),
     i = r(11910),
@@ -162,27 +162,27 @@
     return (0, m.jsx)(l.Tg, { className: p["nlds-canvas__example-surface"], children: (0, m.jsx)(l.BB, { className: (0, t.Z)("utrecht-document--surface", p["nlds-canvas__example-document"]), children: n }) });
    };
    g.displayName = "DocumentContainer";
-   const v = (e) => {
+   const x = (e) => {
     let { children: n } = e;
     return (0, m.jsx)(l.Tg, { className: p["nlds-canvas__example-surface"], children: n });
    };
-   v.displayName = "SurfaceContainer";
-   const x = (e) => {
-    let { code: n, copy: r = !1, defaultExpandedCode: x = !1, displayCode: b = !0, children: f, container: k = "document", language: w, designTokens: _ } = e,
+   x.displayName = "SurfaceContainer";
+   const v = (e) => {
+    let { code: n, copy: r = !1, defaultExpandedCode: v = !1, displayCode: b = !0, children: f, container: k = "document", language: w, designTokens: _ } = e,
      y = "function" == typeof f ? f() : f,
      N = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      S = "string" == typeof n ? n : u.uS(N || y),
-     [z, D] = (0, c.useState)(S),
-     [F, Z] = (0, c.useState)(x);
+     [z, Z] = (0, c.useState)(S),
+     [D, F] = (0, c.useState)(v);
     (0, c.useEffect)(() => {
      (async () => {
-      (z = await d.ZP.format(S, { parser: w, plugins: [i.Z, o.ZP, a.ZP, s.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), D(z);
+      (z = await d.ZP.format(S, { parser: w, plugins: [i.Z, o.ZP, a.ZP, s.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(z);
      })();
     }, [S]);
     const X = (0, c.useId)();
     let A = c.Fragment;
     return (
-     "paragraph" === k ? (A = j) : "document" === k ? (A = g) : "surface" === k && (A = v),
+     "paragraph" === k ? (A = j) : "document" === k ? (A = g) : "surface" === k && (A = x),
      (0, m.jsxs)("div", {
       className: (0, t.Z)(p["nlds-canvas"]),
       children: [
@@ -194,18 +194,18 @@
           className: (0, t.Z)(p["nlds-canvas__button"], p["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           Z(!F);
+           F(!D);
           },
-          "aria-expanded": F,
+          "aria-expanded": D,
           "aria-controls": X,
-          children: F ? "Verberg code" : "Bekijk code",
+          children: D ? "Verberg code" : "Bekijk code",
          }),
         }),
        b &&
         (0, m.jsxs)("div", {
          className: (0, t.Z)(p["nlds-canvas__code-block"], !r && p["nlds-canvas__code-block--user-select-none"]),
          id: X,
-         hidden: !F,
+         hidden: !D,
          children: [
           (0, m.jsx)(h.u, { syntax: w, textContent: z, trim: !0 }),
           r &&

@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.0ba7f7b4.css" />
-  <script src="/en/assets/js/runtime~main.c77f3dd7.js" defer="defer"></script>
-  <script src="/en/assets/js/main.49dca35f.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.c9c258a4.js" defer="defer"></script>
+  <script src="/en/assets/js/main.fbfb3a7e.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -136,6 +136,7 @@
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/descriptions">Descriptions</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/foutmeldingen">Foutmeldingen</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker">Voorkom fouten</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/toetsenbord">Toetsenbord</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/labels">Labels</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/links">Links</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen">Meerdere stappen</a></li>
@@ -220,7 +221,9 @@
               <p>Stel, je typt een e-mailadres en na het invoeren van het eerste karakter verschijnt al een foutmelding &quot;Ongeldig e-mailadres&quot;.</p>
               <p>Die melding verdwijnt pas als het hele e-mailadres is ingevuld. Dit is niet alleen irritant, het kan ook onzekerheid en verwarring veroorzaken. “Wat doe ik fout? Ik ben nog niet klaar met invullen en het is nu al fout!”</p>
               <p>Controleer een veld bijvoorbeeld als de gebruiker het veld heeft aangepast en daarna verlaat (&#x27;blur&#x27; en &#x27;input&#x27;) of wanneer het formulier wordt verzonden.</p>
-              <p>Meer informatie over de bezwaren van &quot;live&quot; validatie: <a href="https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/" class="utrecht-link utrecht-link--html-a">The problem with live validation and what to do instead</a> van Adam Silver.</p>
+              <p>
+               Meer informatie over de bezwaren van &quot;live&quot; validatie: <a href="https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/" class="utrecht-link utrecht-link--html-a"><span lang="en">The problem with live validation and what to do instead</span></a> van Adam Silver.
+              </p>
               <h2 id="schrijf-een-foutmelding-uit-in-tekst" class="utrecht-heading-2">Schrijf een foutmelding uit in tekst</h2>
               <p>Schrijf de foutmelding altijd uit in tekst. Dus niet alleen met een rood randje om het veld heen of met een icoontje van een uitroepteken, maar in duidelijke taal.</p>
               <p>Je kunt zeker kleur en icoontjes gebruiken, maar niet als <strong>enige</strong> foutindicatie.</p>
@@ -303,7 +306,10 @@
                <li class="utrecht-unordered-list__item">Vul het huisnummer in zodat wij je bestelling kunnen opsturen.</li>
               </ul>
               <p>Gebruik een punt aan het eind van de foutmelding (of andere melding). Dan stopt de screenreader even en is het duidelijker dat de foutmelding apart een zin is.</p>
-              <p>Het design system van GOV.UK geeft duidelijke (Engelstalige) informatie over de tekst van foutmeldingen <a href="https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise" class="utrecht-link utrecht-link--html-a">Be clear and concise</a>.</p>
+              <p>
+               Het design system van GOV.UK geeft duidelijke (Engelstalige) informatie over de tekst van foutmeldingen <a href="https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise" class="utrecht-link utrecht-link--html-a"><span lang="en">Be clear and concise</span></a
+               >.
+              </p>
               <p>Door het schrijven van foutmeldingen en een duidelijke toelichting op wat er mis gaat, voldoe je aan de volgende WCAG-succescriteria:</p>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</li>
@@ -494,7 +500,9 @@
               <p>De meeste browsers kunnen zelf controleren of een veld is ingevuld. Dit gebeurt als het HTML-attribuut <code class="utrecht-code">required</code> in het formulierveld staat.</p>
               <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">voorbeeld</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">voorbeeld</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">required</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
 </span></code></pre>
-              <p>Dit type foutafhandeling geeft onvoldoende informatie. In veel browsers wordt niet aan alle gebruikers overgebracht dat het veld verplicht is, en mist uitleg wanneer niet wordt voldaan een een opgegeven <code class="utrecht-code">pattern</code>. Zie ook: <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html" class="utrecht-link utrecht-link--html-a">Avoid default field validation</a> van Adrian Roselli.</p>
+              <p>
+               Dit type foutafhandeling geeft onvoldoende informatie. In veel browsers wordt niet aan alle gebruikers overgebracht dat het veld verplicht is, en mist uitleg wanneer niet wordt voldaan een een opgegeven <code class="utrecht-code">pattern</code>. Zie ook: <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Avoid default field validation</span></a> van Adrian Roselli.
+              </p>
               <p>Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-side validatie toe te voegen.</p>
               <p>Om specifiek aan hulptechnologieën te communiceren dat een veld verplicht is, kan <code class="utrecht-code">aria-required</code> worden gebruikt. Als je alleen <code class="utrecht-code">aria-required</code> gebruikt, zal de browser niet zelf valideren of feedback geven.</p>
               <p>Door het toegankelijk maken van foutmeldingen voldoe je aan het WCAG-succescriterium <a href="https://www.w3.org/Translations/WCAG21-nl/#foutidentificatie" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</p>

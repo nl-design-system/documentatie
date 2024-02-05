@@ -32,7 +32,7 @@
    }
    function c(e) {
     const n = { a: "a", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zet-het-label-boven-het-formulierveld", children: "Zet het label boven het formulierveld" }), "\n", (0, i.jsx)(n.p, { children: "Zet het label boven het formulierveld. Niet ernaast, niet eronder en niet in het formulierveld, maar op de regel boven het formulierveld. Doe dit consequent voor alle formuliervelden. Voor left-to-right talen is het label links uitgelijnd." }), "\n", (0, i.jsx)(n.p, { children: "Deze plaatsing heeft meerdere voordelen:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Het biedt voldoende ruimte voor labels van verschillende lengtes. Het kan zijn dat gebruikers vertaalsoftware gebruiken op de pagina, waardoor labels langer of korter kunnen zijn dan je verwacht." }), "\n", (0, i.jsx)(n.li, { children: "Dit werkt beter voor gebruikers die de tekst inzoomen." }), "\n", (0, i.jsx)(n.li, { children: "Door labels, formuliervelden en acties verticaal uit te lijnen, wordt een natuurlijke 'scan-lijn' gecre\xeberd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten." }), "\n"] }), "\n", (0, i.jsx)(n.p, { children: "Waarom is dit belangrijk? Mensen lezen van boven naar beneden en verwachten dat de informatie in die volgorde staat." }), "\n", (0, i.jsxs)(n.p, { children: ["Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij ", (0, i.jsx)(n.a, { href: "https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte#ontwerpen-met-ruimte", children: "de richtlijnen over stijl: Ruimte" }), "."] }), "\n", (0, i.jsx)(n.p, { children: "Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond." }), "\n", (0, i.jsxs)(n.p, { children: ["Gebruik geen zogenaamde \u201cfloating labels\u201d. Deze zijn moeilijker te begrijpen. Zie: ", (0, i.jsx)(n.a, { href: "https://www.smashingmagazine.com/2021/02/material-design-text-fields/", children: "Material Design Text Fields Are Badly Designed in Smashing Magazine" }), "."] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zet-het-label-boven-het-formulierveld", children: "Zet het label boven het formulierveld" }), "\n", (0, i.jsx)(n.p, { children: "Zet het label boven het formulierveld. Niet ernaast, niet eronder en niet in het formulierveld, maar op de regel boven het formulierveld. Doe dit consequent voor alle formuliervelden. Voor left-to-right talen is het label links uitgelijnd." }), "\n", (0, i.jsx)(n.p, { children: "Deze plaatsing heeft meerdere voordelen:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Het biedt voldoende ruimte voor labels van verschillende lengtes. Het kan zijn dat gebruikers vertaalsoftware gebruiken op de pagina, waardoor labels langer of korter kunnen zijn dan je verwacht." }), "\n", (0, i.jsx)(n.li, { children: "Dit werkt beter voor gebruikers die de tekst inzoomen." }), "\n", (0, i.jsx)(n.li, { children: "Door labels, formuliervelden en acties verticaal uit te lijnen, wordt een natuurlijke 'scan-lijn' gecre\xeberd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten." }), "\n"] }), "\n", (0, i.jsx)(n.p, { children: "Waarom is dit belangrijk? Mensen lezen van boven naar beneden en verwachten dat de informatie in die volgorde staat." }), "\n", (0, i.jsxs)(n.p, { children: ["Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij ", (0, i.jsx)(n.a, { href: "https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte#ontwerpen-met-ruimte", children: "de richtlijnen over stijl: Ruimte" }), "."] }), "\n", (0, i.jsx)(n.p, { children: "Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond." }), "\n", (0, i.jsxs)(n.p, { children: ["Gebruik geen zogenaamde \u201cfloating labels\u201d. Deze zijn moeilijker te begrijpen. Zie: ", (0, i.jsx)(n.a, { href: "https://www.smashingmagazine.com/2021/02/material-design-text-fields/", children: (0, i.jsx)("span", { lang: "en", children: "Material Design Text Fields Are Badly Designed in Smashing Magazine" }) }), "."] })] });
    }
    function h(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -62,13 +62,13 @@
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(g, { ...e }) }) : g(e);
    }
-   function v(e) {
+   function x(e) {
     const n = { a: "a", h2: "h2", p: "p", strong: "strong", ...(0, r.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zorg-ervoor-dat-het-label-altijd-zichtbaar-is", children: "Zorg ervoor dat het label altijd zichtbaar is" }), "\n", (0, i.jsx)(n.p, { children: "Waarom? Als het label verdwijnt bij het typen kan er verwarring ontstaan: wat moet je ook alweer invullen? Daarom is een placeholder geen goede vervanging van het label." }), "\n", (0, i.jsxs)(n.p, { children: ["De placeholder kan ook voor verwarring zorgen bij gebruikers. Is het al veld ingevuld? Zie het onderzoek ", (0, i.jsx)(n.a, { href: "https://www.nngroup.com/articles/form-design-placeholders/", children: "Placeholders in Form Fields Are Harmful" }), " van de Nielsen Norman Group."] }), "\n", (0, i.jsxs)(n.p, { children: ["Een label vertelt ", (0, i.jsx)(n.strong, { children: "wat" }), " je moet invullen en een placeholder ", (0, i.jsx)(n.strong, { children: "hoe" }), " je een formulierveld moet invullen. Voor een e-mailveld kan het label bijvoorbeeld \u201cJouw e-mailadres\u201d zijn en de placeholder \u201c", (0, i.jsx)(n.a, { href: "mailto:naam@voorbeeld.com", children: "naam@voorbeeld.com" }), "\u201d."] }), "\n", (0, i.jsxs)(n.p, { children: ["De ", (0, i.jsx)(n.strong, { children: "hoe" }), " informatie kan ook in een description worden opgenomen, dan blijft deze informatie ook zichtbaar tijdens het invullen."] }), "\n", (0, i.jsx)(n.p, { children: "Een andere reden om een label niet te verbergen is om beter te kunnen controleren of alles goed is ingevuld met autocomplete." }), "\n", (0, i.jsx)(n.p, { children: "Namen, adressen en telefoonnummers kunnen automatisch vooraf worden ingevuld door de browser. Wanneer het label verborgen is, moet de gebruiker controleren of elke waarde juist is ingevuld bij het goede formulierveld. Dat is veel gemakkelijker als het label altijd zichtbaar is." })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zorg-ervoor-dat-het-label-altijd-zichtbaar-is", children: "Zorg ervoor dat het label altijd zichtbaar is" }), "\n", (0, i.jsx)(n.p, { children: "Waarom? Als het label verdwijnt bij het typen kan er verwarring ontstaan: wat moet je ook alweer invullen? Daarom is een placeholder geen goede vervanging van het label." }), "\n", (0, i.jsxs)(n.p, { children: ["De placeholder kan ook voor verwarring zorgen bij gebruikers. Is het al veld ingevuld? Zie het onderzoek ", (0, i.jsx)(n.a, { href: "https://www.nngroup.com/articles/form-design-placeholders/", children: (0, i.jsx)("span", { lang: "en", children: "Placeholders in Form Fields Are Harmful" }) }), " van de Nielsen Norman Group."] }), "\n", (0, i.jsxs)(n.p, { children: ["Een label vertelt ", (0, i.jsx)(n.strong, { children: "wat" }), " je moet invullen en een placeholder ", (0, i.jsx)(n.strong, { children: "hoe" }), " je een formulierveld moet invullen. Voor een e-mailveld kan het label bijvoorbeeld \u201cJouw e-mailadres\u201d zijn en de placeholder \u201c", (0, i.jsx)(n.a, { href: "mailto:naam@voorbeeld.com", children: "naam@voorbeeld.com" }), "\u201d."] }), "\n", (0, i.jsxs)(n.p, { children: ["De ", (0, i.jsx)(n.strong, { children: "hoe" }), " informatie kan ook in een description worden opgenomen, dan blijft deze informatie ook zichtbaar tijdens het invullen."] }), "\n", (0, i.jsx)(n.p, { children: "Een andere reden om een label niet te verbergen is om beter te kunnen controleren of alles goed is ingevuld met autocomplete." }), "\n", (0, i.jsx)(n.p, { children: "Namen, adressen en telefoonnummers kunnen automatisch vooraf worden ingevuld door de browser. Wanneer het label verborgen is, moet de gebruiker controleren of elke waarde juist is ingevuld bij het goede formulierveld. Dat is veel gemakkelijker als het label altijd zichtbaar is." })] });
    }
-   function x(e = {}) {
+   function v(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(v, { ...e }) }) : v(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
    }
    function k(e) {
     const n = { a: "a", input: "input", label: "label", p: "p", ...(0, r.a)(), ...e.components };
@@ -120,12 +120,12 @@
    }
    const A = { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
     C = "Labels in een formulier",
-    L = { id: "richtlijnen/formulieren/alle-richtlijnen/labels", title: "Labels in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/labels.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/labels", permalink: "/richtlijnen/formulieren/alle-richtlijnen/labels", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/labels.mdx", tags: [], version: "current", frontMatter: { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Voorkom fouten in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker" }, next: { title: "Links in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/links" } },
+    L = { id: "richtlijnen/formulieren/alle-richtlijnen/labels", title: "Labels in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/labels.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/labels", permalink: "/richtlijnen/formulieren/alle-richtlijnen/labels", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/labels.mdx", tags: [], version: "current", frontMatter: { title: "Labels in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Labels", pagination_label: "Labels in een formulier", description: "Richtlijnen voor het ontwerp en de code van labels in een formulier.", keywords: ["labels", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Zorg dat het formulier werkt met een toetsenbord", permalink: "/richtlijnen/formulieren/alle-richtlijnen/toetsenbord" }, next: { title: "Links in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/links" } },
     S = {},
     G = [];
    function H(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "labels-in-een-formulier", children: "Labels in een formulier" }), "\n", (0, i.jsx)(n.p, { children: "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Geef een formulierveld een toegankelijke naam met een label." }), "\n", (0, i.jsx)(n.li, { children: "De zichtbare naam moet overeenkomen met de toegankelijke naam." }), "\n", (0, i.jsx)(n.li, { children: "Zet het label boven het formulierveld." }), "\n", (0, i.jsx)(n.li, { children: "Zorg ervoor dat het label altijd zichtbaar is." }), "\n", (0, i.jsx)(n.li, { children: "Zet alleen tekst in het label." }), "\n", (0, i.jsx)(n.li, { children: "Gebruik duidelijke labelteksten." }), "\n"] }), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(X, {}), "\n", (0, i.jsx)(F, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(x, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(y, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(D, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(t.ZP, {})] });
+    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "labels-in-een-formulier", children: "Labels in een formulier" }), "\n", (0, i.jsx)(n.p, { children: "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Geef een formulierveld een toegankelijke naam met een label." }), "\n", (0, i.jsx)(n.li, { children: "De zichtbare naam moet overeenkomen met de toegankelijke naam." }), "\n", (0, i.jsx)(n.li, { children: "Zet het label boven het formulierveld." }), "\n", (0, i.jsx)(n.li, { children: "Zorg ervoor dat het label altijd zichtbaar is." }), "\n", (0, i.jsx)(n.li, { children: "Zet alleen tekst in het label." }), "\n", (0, i.jsx)(n.li, { children: "Gebruik duidelijke labelteksten." }), "\n"] }), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(X, {}), "\n", (0, i.jsx)(F, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(v, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(y, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(D, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(t.ZP, {})] });
    }
    function B(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -133,7 +133,7 @@
    }
   },
   73460: (e, n, l) => {
-   l.d(n, { X: () => v });
+   l.d(n, { X: () => x });
    var i = l(16532),
     r = l(86259),
     t = l(11910),
@@ -161,13 +161,13 @@
     return (0, m.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: n });
    };
    b.displayName = "SurfaceContainer";
-   const v = (e) => {
-    let { code: n, copy: l = !1, defaultExpandedCode: v = !1, displayCode: x = !0, children: k, container: f = "document", language: _, designTokens: y } = e,
+   const x = (e) => {
+    let { code: n, copy: l = !1, defaultExpandedCode: x = !1, displayCode: v = !0, children: k, container: f = "document", language: _, designTokens: y } = e,
      w = "function" == typeof k ? k() : k,
      z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      N = "string" == typeof n ? n : h.uS(z || w),
      [D, Z] = (0, c.useState)(N),
-     [F, W] = (0, c.useState)(v);
+     [F, W] = (0, c.useState)(x);
     (0, c.useEffect)(() => {
      (async () => {
       (D = await d.ZP.format(N, { parser: _, plugins: [t.Z, a.ZP, o.ZP, s.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(D);
@@ -181,7 +181,7 @@
       className: (0, r.Z)(u["nlds-canvas"]),
       children: [
        w && (0, m.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(A, { children: (0, m.jsx)(i.pu, { children: w }) }) }) }),
-       x &&
+       v &&
         (0, m.jsx)("div", {
          className: (0, r.Z)(u["nlds-canvas__toolbar"]),
          children: (0, m.jsx)(i.zx, {
@@ -195,7 +195,7 @@
           children: F ? "Verberg code" : "Bekijk code",
          }),
         }),
-       x &&
+       v &&
         (0, m.jsxs)("div", {
          className: (0, r.Z)(u["nlds-canvas__code-block"], !l && u["nlds-canvas__code-block--user-select-none"]),
          id: X,
