@@ -16,7 +16,7 @@
    }
   },
   46435: (e, n, r) => {
-   r.r(n), r.d(n, { assets: () => q, contentTitle: () => L, default: () => T, frontMatter: () => V, metadata: () => W, toc: () => P });
+   r.r(n), r.d(n, { assets: () => q, contentTitle: () => L, default: () => M, frontMatter: () => V, metadata: () => W, toc: () => P });
    var l = r(11527),
     t = r(47214),
     i = r(3324),
@@ -48,7 +48,7 @@
    }
    function m(e) {
     const n = { a: "a", code: "code", h2: "h2", h3: "h3", p: "p", ...(0, t.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "vul-bekende-informatie-in-waar-mogelijk", children: "Vul bekende informatie in waar mogelijk" }), "\n", (0, l.jsxs)(n.p, { children: ["Als de gebruiker is ingelogd, gebruik dan bekende informatie om velden vast in te vullen. In DigiD-sessies is bijvoorbeeld al veel informatie beschikbaar, die zou kunnen worden gebruikt om velden vooraf in te vullen.\nHet ", (0, l.jsx)(n.a, { href: "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN).", children: "gebruik van DigiD" }), " is wel aan wettelijke voorwaarden verbonden."] }), "\n", (0, l.jsx)(n.h3, { id: "autocomplete", children: "Autocomplete" }), "\n", (0, l.jsxs)(n.p, { children: ["Het HTML-attribuut ", (0, l.jsx)(n.code, { children: "autocomplete" }), " maakt het voor de gebruiker makkelijker om al eerder ingevulde informatie automatisch toe te voegen. De volledige lijst waarden staat op de MDN-website: ", (0, l.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete", children: "HTML-attribuut: autocomplete" }), "."] }), "\n", (0, l.jsxs)(n.p, { children: ["Sommige waarden zijn onduidelijk of ontbreken voor Nederlandse toepassingen. Jules Ernst van 200 OK heeft een overzicht gemaakt van de beste manier om ", (0, l.jsx)(n.a, { href: "https://www.200ok.nl/tips/autocomplete/#dutch", children: "autocomplete in Nederlandse formulieren" }), " toe te passen."] }), "\n", (0, l.jsxs)(n.p, { children: ["Door het toevoegen van autocomplete aan de formuliervelden voldoe je aan het WCAG Succescriterium ", (0, l.jsx)(n.a, { href: "https://www.w3.org/Translations/WCAG21-nl/#identificeer-het-doel-van-de-input", children: "1.3.5 Identificeer het doel van de input" }), " (niveau AA)."] })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "vul-bekende-informatie-in-waar-mogelijk", children: "Vul bekende informatie in waar mogelijk" }), "\n", (0, l.jsxs)(n.p, { children: ["Als de gebruiker is ingelogd, gebruik dan bekende informatie om velden vast in te vullen. In DigiD-sessies is bijvoorbeeld al veel informatie beschikbaar, die zou kunnen worden gebruikt om velden vooraf in te vullen.\nHet ", (0, l.jsx)(n.a, { href: "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN).", children: "gebruik van DigiD" }), " is wel aan wettelijke voorwaarden verbonden."] }), "\n", (0, l.jsx)(n.h3, { id: "autocomplete", children: "Autocomplete" }), "\n", (0, l.jsxs)(n.p, { children: ["Het HTML-attribuut ", (0, l.jsx)(n.code, { children: "autocomplete" }), " maakt het voor de gebruiker makkelijker om al eerder ingevulde informatie automatisch toe te voegen. De volledige lijst waarden staat op de MDN-website: ", (0, l.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete", children: "HTML-attribuut: autocomplete" }), "."] }), "\n", (0, l.jsxs)(n.p, { children: ["Sommige waarden zijn onduidelijk of ontbreken voor Nederlandse toepassingen. Jules Ernst van 200 OK heeft een overzicht gemaakt van de beste manier om ", (0, l.jsx)(n.a, { href: "https://www.200ok.nl/tips/autocomplete/#dutch", children: "autocomplete in Nederlandse formulieren" }), " toe te passen."] }), "\n", (0, l.jsxs)(n.p, { children: ["Toevoegen van autocomplete aan de formuliervelden is nodig om te voldoen aan het WCAG-Succescriterium ", (0, l.jsx)(n.a, { href: "https://www.w3.org/Translations/WCAG21-nl/#identificeer-het-doel-van-de-input", children: "1.3.5 Identificeer het doel van de input" }), " (niveau AA)."] })] });
    }
    function j(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -104,17 +104,17 @@
     const n = { h2: "h2", img: "img", p: "p", ...(0, t.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "geef-geldige-waardes-aan-voor-een-invoerveld", children: "Geef geldige waardes aan voor een invoerveld" }), "\n", (0, l.jsx)(n.p, { children: "Geef geldige waardes aan voor een invoerveld (bijvoorbeeld de datum- of wachtwoordeisen) en niet alleen in de placeholder." }), "\n", (0, l.jsx)(n.p, { children: "Bedenk ook of het echt belangrijk is of, bijvoorbeeld een geboortedatum of telefoonnummer aan exacte invoereisen moet voldoen." }), "\n", (0, l.jsx)(n.p, { children: (0, l.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_voorkom-fouten_wachtwoord-alt.png", alt: "Wachtwoord-eisen zijn in de description getoond" }) }), "\n", (0, l.jsx)(n.p, { children: (0, l.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_voorkom-fouten_geboortedatum.png", alt: "Voorbeeld van de waarden voor de geboortedatum worden in de description getoond" }) })] });
    }
-   function D(e = {}) {
+   function F(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(Z, { ...e }) }) : Z(e);
    }
-   function F(e) {
+   function D(e) {
     const n = { button: "button", form: "form", input: "input", label: "label", p: "p", ...(0, t.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Voeg novalidate toe als je required gebruikt.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { novalidate: "novalidate", children: [(0, l.jsx)(n.label, { for: "kleur1", children: "Wat is je lievelingskleur (verplicht)" }), (0, l.jsx)(n.input, { type: "text", id: "kleur1", name: "lievelingskleur", required: !0, "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Mijn lievelingskleur" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Vertel duidelijk wat het verplichte veld is.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email1", children: "Uw e-mailadres (verplicht)" }), (0, l.jsx)(n.input, { type: "text", id: "email1", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "do", title: "Leg het sterretje uit boven het formulier", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.p, { children: "* betekent verplicht in te vullen." }), (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email2", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email2", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Vertrouw op HTML5-formuliervalidatie.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email3", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email3", name: "email", required: "required" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Leg het sterretje niet uit.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email4", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email4", name: "email", "aria-required": "true", "aria-invalid": "false" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] }) }) }), "\n", (0, l.jsx)(a.X, { appearance: "dont", title: "Geef geen feedback aan screenreadergebruikers.", children: (0, l.jsx)(o.X, { language: "html", children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.p, { children: "* betekent verplicht in te vullen." }), (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.label, { for: "email3", children: "Uw e-mailadres *" }), (0, l.jsx)(n.input, { type: "text", id: "email3", name: "email" }), (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief" })] })] }) }) })] });
    }
    function X(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(F, { ...e }) }) : F(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(D, { ...e }) }) : D(e);
    }
    function A(e) {
     const n = { a: "a", code: "code", h2: "h2", h3: "h3", li: "li", p: "p", pre: "pre", strong: "strong", ul: "ul", ...(0, t.a)(), ...e.components };
@@ -129,13 +129,13 @@
     W = { id: "richtlijnen/formulieren/alle-richtlijnen/help-the-user", title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/help-de-gebruiker", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/help-the-user.mdx", tags: [], version: "current", frontMatter: { title: "Voorkom fouten in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Voorkom fouten", pagination_label: "Voorkom fouten in een formulier", description: "Richtlijnen het voorkomen van fouten door hulp aan de gebruiker in een formulier.", slug: "help-de-gebruiker", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Foutmeldingen", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/foutmeldingen" }, next: { title: "Zorg dat het formulier werkt met een toetsenbord", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/toetsenbord" } },
     q = {},
     P = [];
-   function M(e) {
+   function T(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, t.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, l.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld het duidelijk of een veld verplicht is." }), "\n", (0, l.jsx)(n.li, { children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe." }), "\n", (0, l.jsx)(n.li, { children: "Keur niet te snel af." }), "\n", (0, l.jsx)(n.li, { children: "Geef geldige waardes aan voor een invoerveld." }), "\n", (0, l.jsx)(n.li, { children: "Vul bekende informatie in waar mogelijk." }), "\n"] }), "\n", (0, l.jsx)(C, {}), "\n", (0, l.jsx)(X, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(d, {}), "\n", (0, l.jsx)(k, {}), "\n", (0, l.jsx)(b, {}), "\n", (0, l.jsx)(x, {}), "\n", (0, l.jsx)(N, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(D, {}), "\n", (0, l.jsx)(z, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(i.ZP, {})] });
+    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, l.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsx)(n.li, { children: "Vermeld het duidelijk of een veld verplicht is." }), "\n", (0, l.jsx)(n.li, { children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe." }), "\n", (0, l.jsx)(n.li, { children: "Keur niet te snel af." }), "\n", (0, l.jsx)(n.li, { children: "Geef geldige waardes aan voor een invoerveld." }), "\n", (0, l.jsx)(n.li, { children: "Vul bekende informatie in waar mogelijk." }), "\n"] }), "\n", (0, l.jsx)(C, {}), "\n", (0, l.jsx)(X, {}), "\n", (0, l.jsx)(u, {}), "\n", (0, l.jsx)(d, {}), "\n", (0, l.jsx)(k, {}), "\n", (0, l.jsx)(b, {}), "\n", (0, l.jsx)(x, {}), "\n", (0, l.jsx)(N, {}), "\n", (0, l.jsx)(_, {}), "\n", (0, l.jsx)(F, {}), "\n", (0, l.jsx)(z, {}), "\n", (0, l.jsx)(j, {}), "\n", (0, l.jsx)(h, {}), "\n", (0, l.jsx)(i.ZP, {})] });
    }
-   function T(e = {}) {
+   function M(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(M, { ...e }) }) : M(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(T, { ...e }) }) : T(e);
    }
   },
   73460: (e, n, r) => {
@@ -173,7 +173,7 @@
      N = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      S = "string" == typeof n ? n : u.uS(N || y),
      [z, Z] = (0, c.useState)(S),
-     [D, F] = (0, c.useState)(v);
+     [F, D] = (0, c.useState)(v);
     (0, c.useEffect)(() => {
      (async () => {
       (z = await d.ZP.format(S, { parser: w, plugins: [i.Z, o.ZP, a.ZP, s.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(z);
@@ -194,18 +194,18 @@
           className: (0, t.Z)(p["nlds-canvas__button"], p["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           F(!D);
+           D(!F);
           },
-          "aria-expanded": D,
+          "aria-expanded": F,
           "aria-controls": X,
-          children: D ? "Verberg code" : "Bekijk code",
+          children: F ? "Verberg code" : "Bekijk code",
          }),
         }),
        b &&
         (0, m.jsxs)("div", {
          className: (0, t.Z)(p["nlds-canvas__code-block"], !r && p["nlds-canvas__code-block--user-select-none"]),
          id: X,
-         hidden: !D,
+         hidden: !F,
          children: [
           (0, m.jsx)(h.u, { syntax: w, textContent: z, trim: !0 }),
           r &&

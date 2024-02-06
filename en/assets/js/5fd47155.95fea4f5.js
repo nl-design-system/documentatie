@@ -3,7 +3,7 @@
  [4499],
  {
   95441: (e, n, l) => {
-   l.r(n), l.d(n, { assets: () => z, contentTitle: () => w, default: () => C, frontMatter: () => y, metadata: () => N, toc: () => S });
+   l.r(n), l.d(n, { assets: () => S, contentTitle: () => w, default: () => C, frontMatter: () => y, metadata: () => N, toc: () => z });
    var r = l(11527),
     o = l(47214),
     t = l(73460),
@@ -34,7 +34,7 @@
    }
    function u(e) {
     const n = { a: "a", code: "code", h2: "h2", p: "p", pre: "pre", strong: "strong", ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "zorg-voor-een-goed-kleurcontrast-van-de-placeholdertekst", children: "Zorg voor een goed kleurcontrast van de placeholdertekst" }), "\n", (0, r.jsx)(n.p, { children: "Kleurcontrast voor tekst ten opzichte van de achtergrond moet voldoen aan WCAG, dit geldt ook voor placeholders." }), "\n", (0, r.jsxs)(n.p, { children: ["Sommige browsers zoals Firefox maken placeholdertekst standaard doorzichtiger. Voeg daarom in de CSS ", (0, r.jsx)(n.code, { children: "opacity: 1" }), " toe voor de placeholder."] }), "\n", (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: "language-css!", children: "::placeholder {\n    opacity: 1;\n    color: #757575;\n}\n" }) }), "\n", (0, r.jsxs)(n.p, { children: ["Zie ", (0, r.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder", children: "::placeholder - CSS: Cascading Style Sheets" }), ", op MDN."] }), "\n", (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.strong, { children: "Tip:" }), " De lichtste kleur grijs die je kunt gebruiken ten opzichte van een witte achtergrond is #757575 of rgb( 117, 117, 117)."] }), "\n", (0, r.jsxs)(n.p, { children: ["Wanneer je zorgt voor voldoende kleurcontrast tussen placeholder en achtergrond, voldoe je aan het WCAG-succescriterium: ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html", children: "Contrast (minimum)" }), " (niveau AA)."] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "zorg-voor-een-goed-kleurcontrast-van-de-placeholdertekst", children: "Zorg voor een goed kleurcontrast van de placeholdertekst" }), "\n", (0, r.jsx)(n.p, { children: "Kleurcontrast voor tekst ten opzichte van de achtergrond moet voldoen aan WCAG, dit geldt ook voor placeholders." }), "\n", (0, r.jsxs)(n.p, { children: ["Sommige browsers zoals Firefox maken placeholdertekst standaard doorzichtiger. Voeg daarom in de CSS ", (0, r.jsx)(n.code, { children: "opacity: 1" }), " toe voor de placeholder."] }), "\n", (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: "language-css!", children: "::placeholder {\n    opacity: 1;\n    color: #757575;\n}\n" }) }), "\n", (0, r.jsxs)(n.p, { children: ["Zie ", (0, r.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder", children: "::placeholder - CSS: Cascading Style Sheets" }), ", op MDN."] }), "\n", (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.strong, { children: "Tip:" }), " De lichtste kleur grijs die je kunt gebruiken ten opzichte van een witte achtergrond is #757575 of rgb( 117, 117, 117)."] }), "\n", (0, r.jsxs)(n.p, { children: ["Voldoende kleurcontrast tussen placeholder en achtergrond is nodig om te voldoen aan het WCAG-succescriterium: ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html", children: "Contrast (minimum)" }), " (niveau AA)."] })] });
    }
    function m(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -50,7 +50,7 @@
    }
    function v(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "een-placeholder-is-geen-vervanger-van-een-label", children: "Een placeholder is geen vervanger van een label" }), "\n", (0, r.jsx)(n.p, { children: "De gebruiker moet altijd een zichtbare indicatie hebben over wat in te vullen. Ook tijdens het typen, wanneer de placeholder verdwijnt of als de informatie al automatisch is ingevuld." }), "\n", (0, r.jsx)(n.p, { children: "Gebruik dus niet enkel de placeholder om aan te geven wat een gebruiker moet invullen." }), "\n", (0, r.jsx)(n.p, { children: "Een ander probleem met placeholders is dat bij inzoomen lange tekst te groot kan worden voor het formulierveld en daardoor afhakt en onleesbaar wordt." }), "\n", (0, r.jsxs)(n.p, { children: ["Door het permanent goed zichtbaar tonen van het label voldoe je aan het WCAG-succescriterium 3.3.2: ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions", children: "Labels of instructies" }), " (niveau A). Meer hierover bij de ", (0, r.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/links", children: "richtlijnen over labels" }), "."] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "een-placeholder-is-geen-vervanger-van-een-label", children: "Een placeholder is geen vervanger van een label" }), "\n", (0, r.jsx)(n.p, { children: "De gebruiker moet altijd een zichtbare indicatie hebben over wat in te vullen. Ook tijdens het typen, wanneer de placeholder verdwijnt of als de informatie al automatisch is ingevuld." }), "\n", (0, r.jsx)(n.p, { children: "Gebruik dus niet enkel de placeholder om aan te geven wat een gebruiker moet invullen." }), "\n", (0, r.jsx)(n.p, { children: "Een ander probleem met placeholders is dat bij inzoomen lange tekst te groot kan worden voor het formulierveld en daardoor afhakt en onleesbaar wordt." }), "\n", (0, r.jsxs)(n.p, { children: ["Het permanent goed zichtbaar tonen van het label is nodig om te voldoen aan het WCAG-succescriterium 3.3.2: ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions", children: "Labels of instructies" }), " (niveau A). Meer hierover bij de ", (0, r.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/links", children: "richtlijnen over labels" }), "."] })] });
    }
    function b(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -75,8 +75,8 @@
    const y = { title: "Placeholders in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Placeholders", pagination_label: "Placeholders in een formulier", description: "Richtlijnen voor het ontwerp en de code van placeholders in een formulier.", keywords: ["placeholders", "formulier", "design", "code"] },
     w = "Placeholders in een formulier",
     N = { id: "richtlijnen/formulieren/alle-richtlijnen/placeholders", title: "Placeholders in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerp en de code van placeholders in een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/placeholders.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/placeholders", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/placeholders", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/placeholders.mdx", tags: [], version: "current", frontMatter: { title: "Placeholders in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Placeholders", pagination_label: "Placeholders in een formulier", description: "Richtlijnen voor het ontwerp en de code van placeholders in een formulier.", keywords: ["placeholders", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Meerdere stappen", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen" }, next: { title: "Uit te vragen informatie in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/vragen" } },
-    z = {},
-    S = [];
+    S = {},
+    z = [];
    function Z(e) {
     const n = { a: "a", h1: "h1", li: "li", p: "p", strong: "strong", ul: "ul", ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "placeholders-in-een-formulier", children: "Placeholders in een formulier" }), "\n", (0, r.jsx)(n.p, { children: "Een placeholder geeft de gebruiker een korte hint over het verwachte type gegevens dat in het formulierveld moet worden." }), "\n", (0, r.jsxs)(n.p, { children: ["Een ", (0, r.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/labels/", children: "label" }), " vertelt ", (0, r.jsx)(n.strong, { children: "wat" }), " je moet invullen en een ", (0, r.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/placeholder", children: "placeholder" }), " vertelt wat voor ", (0, r.jsx)(n.strong, { children: "soort gegevens" }), ' in een veld wordt verwacht. Voor een e-mailveld kan het label bijvoorbeeld "Jouw e-mailadres" zijn en de placeholder "', (0, r.jsx)(n.a, { href: "mailto:naam@voorbeeld.com", children: "naam@voorbeeld.com" }), '".'] }), "\n", (0, r.jsx)(n.p, { children: "Voor de toegankelijkheid en gebruiksvriendelijkheid van een placeholder is het volgende van belang:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsx)(n.li, { children: "Een placeholder is geen vervanger van een label." }), "\n", (0, r.jsx)(n.li, { children: "Voorkom verwarring bij de gebruiker." }), "\n", (0, r.jsx)(n.li, { children: "Zorg voor een voldoende kleurcontract voor de placeholdertekst." }), "\n"] }), "\n", (0, r.jsx)(b, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(_, {}), "\n", (0, r.jsx)(k, {}), "\n", (0, r.jsx)(d, {}), "\n", (0, r.jsx)(i, {}), "\n", (0, r.jsx)(m, {}), "\n", (0, r.jsx)(p, {})] });
@@ -119,14 +119,14 @@
     let { code: n, copy: l = !1, defaultExpandedCode: b = !1, displayCode: x = !0, children: k, container: f = "document", language: _, designTokens: y } = e,
      w = "function" == typeof k ? k() : k,
      N = "function" == typeof n ? n() : (0, d.isValidElement)(n) ? n : void 0,
-     z = "string" == typeof n ? n : h.uS(N || w),
-     [S, Z] = (0, d.useState)(z),
+     S = "string" == typeof n ? n : h.uS(N || w),
+     [z, Z] = (0, d.useState)(S),
      [C, F] = (0, d.useState)(b);
     (0, d.useEffect)(() => {
      (async () => {
-      (S = await c.ZP.format(z, { parser: _, plugins: [t.Z, s.ZP, a.ZP, i.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(S);
+      (z = await c.ZP.format(S, { parser: _, plugins: [t.Z, s.ZP, a.ZP, i.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(z);
      })();
-    }, [z]);
+    }, [S]);
     const P = (0, d.useId)();
     let W = d.Fragment;
     return (
@@ -155,7 +155,7 @@
          id: P,
          hidden: !C,
          children: [
-          (0, m.jsx)(u.u, { syntax: _, textContent: S, trim: !0 }),
+          (0, m.jsx)(u.u, { syntax: _, textContent: z, trim: !0 }),
           l &&
            (0, m.jsx)("div", {
             className: (0, o.Z)(p["nlds-canvas__toolbar"]),
@@ -163,7 +163,7 @@
              className: (0, o.Z)(p["nlds-canvas__button"], p["nlds-canvas__copy-button"]),
              appearance: "subtle-button",
              onClick: () => {
-              navigator.clipboard.writeText(S).catch((e) => console.error("Copy code failed", e));
+              navigator.clipboard.writeText(z).catch((e) => console.error("Copy code failed", e));
              },
              children: "Kopieer",
             }),

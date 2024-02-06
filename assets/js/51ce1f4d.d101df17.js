@@ -3,14 +3,14 @@
  [4991],
  {
   3324: (e, n, t) => {
-   t.d(n, { ZP: () => s });
+   t.d(n, { ZP: () => i });
    var l = t(11527),
     o = t(47214);
    function r(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, o.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "aanvullingen-of-opmerkingen", children: "Aanvullingen of opmerkingen?" }), "\n", (0, l.jsxs)(n.p, { children: ["Deze richtlijnen worden onderhouden door het NL Design System.\nHeb je aanvullingen of opmerkingen? ", (0, l.jsx)(n.a, { href: "https://github.com/nl-design-system/documentatie/discussions/473", children: "Deel je mening op GitHub" }), " met je suggesties."] })] });
    }
-   function s(e = {}) {
+   function i(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(r, { ...e }) }) : r(e);
    }
@@ -20,11 +20,11 @@
    var l = t(11527),
     o = t(47214),
     r = t(3324),
-    s = t(73460),
-    i = t(30036);
+    i = t(73460),
+    s = t(30036);
    function a(e) {
     const n = { button: "button", div: "div", form: "form", input: "input", label: "label", ...(0, o.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(i.X, { appearance: "do", title: "Formulier zonder tabindex.", children: (0, l.jsx)(s.X, { language: "html", children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "naam1", children: "Uw naam" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "naam1", autocomplete: "name" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "email1", children: "Uw e-mailadres" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "email1", autocomplete: "email" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief!" }) })] }) }) }) }), "\n", (0, l.jsx)(i.X, { appearance: "dont", title: "Formulier met gebruik van een positieve tabindex.", children: (0, l.jsx)(s.X, { language: "html", children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "naam2", children: "Uw naam" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "naam2", autocomplete: "name", tabindex: "1" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "email2", children: "Uw e-mailadres" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "email2", autocomplete: "email" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief!" }) })] }) }) }) })] });
+    return (0, l.jsxs)(l.Fragment, { children: ["\n", "\n", "\n", (0, l.jsx)(s.X, { appearance: "do", title: "Formulier zonder tabindex.", children: (0, l.jsx)(i.X, { language: "html", children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "naam1", children: "Uw naam" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "naam1", autocomplete: "name" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "email1", children: "Uw e-mailadres" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "email1", autocomplete: "email" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief!" }) })] }) }) }) }), "\n", (0, l.jsx)(s.X, { appearance: "dont", title: "Formulier met gebruik van een positieve tabindex.", children: (0, l.jsx)(i.X, { language: "html", children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.form, { children: [(0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "naam2", children: "Uw naam" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "naam2", autocomplete: "name", tabindex: "1" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.label, { for: "email2", children: "Uw e-mailadres" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.input, { id: "email2", autocomplete: "email" }) }), (0, l.jsx)(n.div, { children: (0, l.jsx)(n.button, { children: "Stuur mij de nieuwsbrief!" }) })] }) }) }) })] });
    }
    function d(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -32,7 +32,7 @@
    }
    function c(e) {
     const n = { a: "a", code: "code", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, o.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "gebruik-geen-positieve-tabindex", children: "Gebruik geen positieve tabindex" }), "\n", (0, l.jsxs)(n.p, { children: ["Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een ", (0, l.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex", children: "tabindex" }), " te geven met een waarde groter dan nul, bijvoorbeeld ", (0, l.jsx)(n.code, { children: 'tabindex="1"' }), " of met gebruik van ", (0, l.jsx)(n.code, { children: "autofocus" }), ". De gebruiker is meteen klaar om het formulier in te gaan vullen."] }), "\n", (0, l.jsx)(n.p, { children: "Maar dit levert voor toetsenbord- en screenreadergebruikers problemen op. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren." }), "\n", (0, l.jsx)(n.p, { children: "Een screenreadergebruiker kan zo tekst missen die boven het formulier staat. Misschien staan daar wel instructies of aanvullende informatie over hoe het formulier goed in te vullen." }), "\n", (0, l.jsx)(n.p, { children: "Gebruik dus ook nooit meerdere positieve tabindexen om de gebruiker te dwingen een bepaalde tabvolgorde aan te houden." }), "\n", (0, l.jsx)(n.p, { children: "Laat de bezoeker zelf beslissen wat ze wil lezen en in welke volgorde. Kaap de toetsenbordfocus niet maar hou de natuurlijke tabvolgorde intact." }), "\n", (0, l.jsxs)(n.p, { children: ["Adam Silver geeft hier uitgebereid uitleg over in ", (0, l.jsx)(n.a, { href: "https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/", children: "The problem with automatically focusing the first input and what to do instead" }), "."] }), "\n", (0, l.jsxs)(n.p, { children: ["Let wel: ", (0, l.jsx)(n.code, { children: 'tabindex="0"' }), " en ", (0, l.jsx)(n.code, { children: 'tabindex="-1"' }), " zijn wel toegestaan om bepaalde elementen focus te kunnen geven die van nature geen focus krijgen. Dit verstoort de natuurlijke tabvolgorde niet. Wanneer welke waarde te gebruiken wordt uitgelegd in ", (0, l.jsx)(n.a, { href: "https://webaim.org/techniques/keyboard/tabindex#zero-negative-one", children: "0 and -1 Values" }), " van WebAIM."] }), "\n", (0, l.jsxs)(n.p, { children: ["Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: ", (0, l.jsx)(n.a, { href: "https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/", children: "How To Avoid Breaking Web Pages For Keyboard Users" }), " van Andrew Nevins."] }), "\n", (0, l.jsx)(n.p, { children: "Geen positieve tabindex of autofocus gebruiken helpt je te voldoen aan de volgende WCAG-succescriteria:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html", children: "2.4.3 Focusvolgorde" }), " (niveau A)."] }), "\n", (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html", children: "3.2.3 Consistente navigatie" }), " (niveau AA)."] }), "\n"] })] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: "gebruik-geen-positieve-tabindex", children: "Gebruik geen positieve tabindex" }), "\n", (0, l.jsxs)(n.p, { children: ["Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een ", (0, l.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex", children: "tabindex" }), " te geven met een waarde groter dan nul, bijvoorbeeld ", (0, l.jsx)(n.code, { children: 'tabindex="1"' }), " of met gebruik van ", (0, l.jsx)(n.code, { children: "autofocus" }), ". De gebruiker is meteen klaar om het formulier in te gaan vullen."] }), "\n", (0, l.jsx)(n.p, { children: "Maar dit levert voor toetsenbord- en screenreadergebruikers problemen op. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren." }), "\n", (0, l.jsx)(n.p, { children: "Een screenreadergebruiker kan zo tekst missen die boven het formulier staat. Misschien staan daar wel instructies of aanvullende informatie over hoe het formulier goed in te vullen." }), "\n", (0, l.jsx)(n.p, { children: "Gebruik dus ook nooit meerdere positieve tabindexen om de gebruiker te dwingen een bepaalde tabvolgorde aan te houden." }), "\n", (0, l.jsx)(n.p, { children: "Laat de bezoeker zelf beslissen wat ze wil lezen en in welke volgorde. Kaap de toetsenbordfocus niet maar hou de natuurlijke tabvolgorde intact." }), "\n", (0, l.jsxs)(n.p, { children: ["Adam Silver geeft hier uitgebereid uitleg over in ", (0, l.jsx)(n.a, { href: "https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/", children: "The problem with automatically focusing the first input and what to do instead" }), "."] }), "\n", (0, l.jsxs)(n.p, { children: ["Let wel: ", (0, l.jsx)(n.code, { children: 'tabindex="0"' }), " en ", (0, l.jsx)(n.code, { children: 'tabindex="-1"' }), " zijn wel toegestaan om bepaalde elementen focus te kunnen geven die van nature geen focus krijgen. Dit verstoort de natuurlijke tabvolgorde niet. Wanneer welke waarde te gebruiken wordt uitgelegd in ", (0, l.jsx)(n.a, { href: "https://webaim.org/techniques/keyboard/tabindex#zero-negative-one", children: "0 and -1 Values" }), " van WebAIM."] }), "\n", (0, l.jsxs)(n.p, { children: ["Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: ", (0, l.jsx)(n.a, { href: "https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/", children: "How To Avoid Breaking Web Pages For Keyboard Users" }), " van Andrew Nevins."] }), "\n", (0, l.jsx)(n.p, { children: "Geen positieve tabindex of autofocus gebruiken is nodig om te voldoen aan de volgende WCAG-succescriteria:" }), "\n", (0, l.jsxs)(n.ul, { children: ["\n", (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html", children: "2.4.3 Focusvolgorde" }), " (niveau A)."] }), "\n", (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html", children: "3.2.3 Consistente navigatie" }), " (niveau AA)."] }), "\n"] })] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -57,8 +57,8 @@
    var l = t(16532),
     o = t(86259),
     r = t(11910),
-    s = t(59560),
-    i = t(80486),
+    i = t(59560),
+    s = t(80486),
     a = t(69267),
     d = t(80495),
     c = t(50959),
@@ -90,7 +90,7 @@
      [C, A] = (0, c.useState)(x);
     (0, c.useEffect)(() => {
      (async () => {
-      (z = await d.ZP.format(Z, { parser: y, plugins: [r.Z, s.ZP, i.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), S(z);
+      (z = await d.ZP.format(Z, { parser: y, plugins: [r.Z, i.ZP, s.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), S(z);
      })();
     }, [Z]);
     const T = (0, c.useId)();
@@ -142,7 +142,7 @@
    };
   },
   41179: (e, n, t) => {
-   t.d(n, { u: () => i });
+   t.d(n, { u: () => s });
    var l = t(16532),
     o = t(2425);
    t(50959);
@@ -182,19 +182,19 @@
      { types: ["italic"], style: { fontStyle: "italic" } },
     ],
    };
-   var s = t(11527);
-   function i(e) {
-    let { lineNumber: n, syntax: t, textContent: i, trim: a } = e,
-     d = i;
+   var i = t(11527);
+   function s(e) {
+    let { lineNumber: n, syntax: t, textContent: s, trim: a } = e,
+     d = s;
     return (
      a && (d = d.trim()),
-     (0, s.jsx)(o.y$, {
+     (0, i.jsx)(o.y$, {
       theme: r,
       code: d,
       language: t || "",
       children: (e) => {
-       let { style: t, tokens: o, getLineProps: r, getTokenProps: i } = e;
-       return (0, s.jsx)(l.dn, { style: t, children: o.map((e, t) => (0, s.jsxs)("span", { ...r({ line: e }), children: [n && (0, s.jsx)("span", { children: t + 1 }), e.map((e, n) => (0, s.jsx)("span", { ...i({ token: e }) }, n)), "\n"] }, t)) });
+       let { style: t, tokens: o, getLineProps: r, getTokenProps: s } = e;
+       return (0, i.jsx)(l.dn, { style: t, children: o.map((e, t) => (0, i.jsxs)("span", { ...r({ line: e }), children: [n && (0, i.jsx)("span", { children: t + 1 }), e.map((e, n) => (0, i.jsx)("span", { ...s({ token: e }) }, n)), "\n"] }, t)) });
       },
      })
     );
@@ -205,9 +205,9 @@
    var l = t(9842),
     o = t(91406),
     r = t(16532),
-    s = t(86259);
+    i = t(86259);
    t(50959);
-   const i = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
+   const s = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
    var a = t(11527);
    const d = (e) => {
     let { title: n, appearance: t, description: d, children: c, figure: u } = e;
@@ -215,15 +215,15 @@
      h = "Niet doen",
      b = u ? "figure" : "div",
      p = u ? "figcaption" : "div";
-    return (0, a.jsxs)(b, { className: (0, s.Z)(i["nlds-guideline"], i[`nlds-guideline--${t}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, s.Z)(i["nlds-guideline__description"]), children: ["dont" === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(r.nv, { className: (0, s.Z)(i["nlds-guideline__badge"], i[`nlds-guideline__badge--${t}`]), children: [(0, a.jsx)(l.Z, { className: i["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: i["nlds-guideline__title"], children: h })] }), (0, a.jsx)(r.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(r.nv, { className: (0, s.Z)(i["nlds-guideline__badge"], i[`nlds-guideline__badge--${t}`]), children: [(0, a.jsx)(o.Z, { className: i["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: i["nlds-guideline__title"], children: m })] }), (0, a.jsx)(r.nv, { children: n })] }), d] }), (0, a.jsx)("div", { className: (0, s.Z)(i["nlds-guideline__example"]), children: c })] });
+    return (0, a.jsxs)(b, { className: (0, i.Z)(s["nlds-guideline"], s[`nlds-guideline--${t}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, i.Z)(s["nlds-guideline__description"]), children: ["dont" === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(r.nv, { className: (0, i.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${t}`]), children: [(0, a.jsx)(l.Z, { className: s["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: s["nlds-guideline__title"], children: h })] }), (0, a.jsx)(r.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(r.nv, { className: (0, i.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${t}`]), children: [(0, a.jsx)(o.Z, { className: s["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: s["nlds-guideline__title"], children: m })] }), (0, a.jsx)(r.nv, { children: n })] }), d] }), (0, a.jsx)("div", { className: (0, i.Z)(s["nlds-guideline__example"]), children: c })] });
    };
   },
   47214: (e, n, t) => {
-   t.d(n, { Z: () => i, a: () => s });
+   t.d(n, { Z: () => s, a: () => i });
    var l = t(50959);
    const o = {},
     r = l.createContext(o);
-   function s(e) {
+   function i(e) {
     const n = l.useContext(r);
     return l.useMemo(
      function () {
@@ -232,9 +232,9 @@
      [n, e],
     );
    }
-   function i(e) {
+   function s(e) {
     let n;
-    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(o) : e.components || o) : s(e.components)), l.createElement(r.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(o) : e.components || o) : i(e.components)), l.createElement(r.Provider, { value: n }, e.children);
    }
   },
  },
