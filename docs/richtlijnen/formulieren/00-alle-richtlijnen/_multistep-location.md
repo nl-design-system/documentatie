@@ -11,4 +11,4 @@ Meer informatie over de formulierenmodus:
 - [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/), Web Accessibility Initiative.
 - [Browse and focus modes](https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes), Accessibility Developer Guide.
 
-Door het aangeven van de hoeveelheid stappen boven het formulier voldoe je aan de WCAG-succescriterium [1.3.2 Betekenisvolle volgorde](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html) (niveau A).
+Het aangeven van de hoeveelheid stappen boven het formulier is nodig om te voldoen aan het WCAG-succescriterium [1.3.2 Betekenisvolle volgorde](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html) (niveau A).

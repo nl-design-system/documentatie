@@ -2,7 +2,7 @@
 
 We geven je 3 extra manieren om feedback te geven over foutmeldingen voor screenreadergebruikers. Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.
 
-Door het geven van feedback aan screenreadergebuikers foutmeldingen voldoe je aan het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html) (niveau A).
+Het geven van feedback aan screenreadergebuikers foutmeldingen is nodig om te voldoen aan het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html) (niveau A).
 
 ### Gebruik ARIA voor feedback
 
@@ -61,4 +61,4 @@ Of:
 </head>
 ```
 
-Door een beschrijvend `<title>`-element te geven voldoe je aan het WCAG-succescriterium [2.4.2 Paginatitel](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html) (niveau A).
+Het geven van een beschrijvend `<title>`-element is nodig om te voldoen aan het WCAG-succescriterium [2.4.2 Paginatitel](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html) (niveau A).

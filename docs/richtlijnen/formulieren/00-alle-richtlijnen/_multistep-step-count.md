@@ -17,7 +17,7 @@ document.title = "Stap 3 van 6: Adresgegevens";
 
 De stappen kort uitschrijven als tekst heeft de voorkeur boven een visuele weergave zoals in een progressbar. Tekst schaalt beter mee bij vergroting of op mobiele weergave. Bovendien is het sneller te lezen en wordt het beter gevonden. Lees hierover [Using progress indicators](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators) op [gov.uk](http://gov.uk/).
 
-Door het duidelijk aangeven van het aantal stappen en de huidige locatie binnen de stappen voldoe je aan de WCAG-succescriteria:
+Het duidelijk aangeven van het aantal stappen en de huidige locatie binnen de stappen is nodig om te voldoen de WCAG-succescriteria:
 
 - [1.3.2 Betekenisvolle volgorde](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html) (niveau A).
 - [2.4.2 Paginatitel](https://www.w3.org/WAI/WCAG22/Understanding/page-titled) (niveau A), deze richtlijn geldt ook voor dynamische pagina’s.
