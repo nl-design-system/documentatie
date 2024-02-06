@@ -6,7 +6,7 @@ Op [HTML5 Accessibility](https://html5accessibility.com/) houdt Steve Faulkner d
 
 De ontwikkeling van browsers gaat snel en het gebruik van HTML geeft niet altijd garantie voor toegankelijkheid. Test daarom altijd een formulier met toetsenbord, screenreader of stembesturing.
 
-Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nodig om te voldoen de volgende WCAG-succescriteria:
+Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
 - [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG21-nl/#info-en-relaties) (niveau A)
 - [2.1.1 Toetsenbord](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) (niveau A)
