@@ -16,4 +16,4 @@ Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook vo
 
 Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond.
 
-Gebruik geen zogenaamde “floating labels”. Deze zijn moeilijker te begrijpen. Zie: [Material Design Text Fields Are Badly Designed in Smashing Magazine](https://www.smashingmagazine.com/2021/02/material-design-text-fields/).
+Gebruik geen zogenaamde “floating labels”. Deze zijn moeilijker te begrijpen. Zie: [<span lang="en">Material Design Text Fields Are Badly Designed in Smashing Magazine</span>](https://www.smashingmagazine.com/2021/02/material-design-text-fields/).

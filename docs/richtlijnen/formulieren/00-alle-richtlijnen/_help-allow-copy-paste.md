@@ -6,4 +6,4 @@ Een wachtwoord moet veilig zijn. Als je het knippen en plakken van een wachtwoor
 
 Kopiëren/plakken vanuit een wachtwoordmanager is een veel veiligere manier om een gebruiker een wachtwoord te laten invullen.
 
-Zoals het Britse National Cyber Security Centre uitlegt in [Let them paste passwords](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords).
+Zoals het Britse <span lang="en">National Cyber Security Centre</span> uitlegt in [<span lang="en">Let them paste passwords</span>](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords).
