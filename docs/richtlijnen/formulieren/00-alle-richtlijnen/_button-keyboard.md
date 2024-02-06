@@ -6,4 +6,4 @@ Krijgt een button de toetsenbordfocus, dan kan die met “enter” of “spatieb
 
 Een consistente toetsenbordbediening is nodig om te voldoen aan het WCAG-succescriterium [2.1.1 Toetsenbord](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) (niveau A).
 
-En ook volg je dan de [WCAG-richtlijn 3.2 Voorspelbaar](https://www.w3.org/WAI/WCAG22/Understanding/predictable.html): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
+En ook volg je dan de WCAG-richtlijn [3.2 Voorspelbaar](https://www.w3.org/WAI/WCAG22/Understanding/predictable.html): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
