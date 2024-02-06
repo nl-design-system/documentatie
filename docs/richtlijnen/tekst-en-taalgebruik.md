@@ -123,6 +123,8 @@ Vragen om jezelf te stellen bij het maken van een alternatieve tekst:
 - Welke informatie wil ik met de afbeelding overbrengen?
 - Als ik geen afbeelding kon gebruiken, hoe zou ik deze informatie dan overbrengen?
 
+Op 200Ok.nl staat een [alt-besluitboom](https://www.200ok.nl/tips/afbeeldingen/): wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
+
 ##### Voorbeeld zonsondergang met drone
 
 ![Diep oranje zonsondergang met het silhouet van een drone.](https://images.unsplash.com/photo-1489558546780-a69e0b3293e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80)
