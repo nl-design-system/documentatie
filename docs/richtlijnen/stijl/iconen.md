@@ -228,7 +228,7 @@ Deze documentatie is onder andere gebaseerd op de [documentatie rondom iconen va
 
 ### Gerelateerde WCAG Richtlijnen
 
-- [1.1.1: Non text content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [1.1.1: Niet-tekstuele content](/wcag/1.1.1/)
 - [1.4.11: Non text contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
 
 ### Links

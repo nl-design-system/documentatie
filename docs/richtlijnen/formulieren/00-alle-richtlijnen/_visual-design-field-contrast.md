@@ -4,4 +4,4 @@ Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of che
 
 Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn.
 
-Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het WCAG-succescriterium [1.1.1 Niet-tekstuele content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html) (niveau AA).
+Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het WCAG-succescriterium [1.1.1 Niet-tekstuele content](/wcag/1.1.1/) (niveau AA).
