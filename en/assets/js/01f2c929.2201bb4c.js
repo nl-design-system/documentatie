@@ -16,7 +16,7 @@
    }
   },
   83659: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => V, contentTitle: () => X, default: () => B, frontMatter: () => W, metadata: () => U, toc: () => T });
+   t.r(n), t.d(n, { assets: () => U, contentTitle: () => X, default: () => H, frontMatter: () => W, metadata: () => V, toc: () => T });
    var r = t(11527),
     o = t(47214),
     l = t(73460),
@@ -41,7 +41,7 @@
    }
    function p(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "geef-duidelijk-aan-waar-een-invoerveld-is", children: "Geef duidelijk aan waar een invoerveld is" }), "\n", (0, r.jsx)(n.p, { children: "Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of checkbox is." }), "\n", (0, r.jsx)(n.p, { children: "Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn." }), "\n", (0, r.jsxs)(n.p, { children: ["Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html", children: "1.1.1 Niet-tekstuele content" }), " (niveau AA)."] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "geef-duidelijk-aan-waar-een-invoerveld-is", children: "Geef duidelijk aan waar een invoerveld is" }), "\n", (0, r.jsx)(n.p, { children: "Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of checkbox is." }), "\n", (0, r.jsx)(n.p, { children: "Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn." }), "\n", (0, r.jsxs)(n.p, { children: ["Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "/wcag/1.1.1/", children: "1.1.1 Niet-tekstuele content" }), " (niveau AA)."] })] });
    }
    function g(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -55,13 +55,13 @@
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
    }
-   function x(e) {
+   function v(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "maak-aanklikbare-formuliervelden-groot-genoeg", children: "Maak aanklikbare formuliervelden groot genoeg" }), "\n", (0, r.jsxs)(n.p, { children: ["Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 pixels groot is. Dit is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html", children: "2.5.8 Grootte aanwijsgebied (minimum)" }), " (niveau AA)."] }), "\n", (0, r.jsx)(n.p, { children: "Maar een aanklikbaar gebied van 44 bij 44 pixels, voor het aanklikbare deel, is veel gebruiksvriendelijker voor mensen met dikke vingers of een trillende hand. Houdt daarom een aanklikbaar gedeelte aan van tenminste 44 bij 44 pixels." }), "\n", (0, r.jsxs)(n.p, { children: ["Adrian Roselli over doelgrootte in ", (0, r.jsx)(n.a, { href: "https://adrianroselli.com/2019/06/target-size-and-2-5-5.html", children: (0, r.jsx)("span", { lang: "en", children: "Target Size and 2.5.5" }) }), ': "Ongeacht het toegankelijkheidsniveau dat je wilt aanhouden, probeer ervoor te zorgen dat interactieve besturingselementen minimaal 44 bij 44 pixels groot zijn. Links in tekstblokken zijn uitgezonderd.".'] }), "\n", (0, r.jsxs)(n.p, { children: ["In ", (0, r.jsx)(n.a, { href: "https://ishadeed.com/article/target-size", children: (0, r.jsx)("span", { lang: "en", children: "Designing better target sizes" }) }), " legt Ahmad Shadeed duidelijk uit wat doelgrootte precies is en wat de impact is voor een gebruiker. Hij pleit ook voor een minimale doelgrootte van 44 bij 44 pixels."] }), "\n", (0, r.jsxs)(n.p, { children: ["Google's Material Design kiest ook voor een groter aanklikgebied, ondersteund met gebruikersonderzoek. Dit wordt uitgelegd in de YouTube video ", (0, r.jsx)(n.a, { href: "https://www.youtube.com/watch?v=nTNwZXVRGdY&t=163s", children: (0, r.jsx)("span", { lang: "en", children: "Designing A11y with Material Design" }) }), "."] }), "\n", (0, r.jsxs)(n.p, { children: ["Zie ook het WCAG-succescriterium: ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html", children: "Grootte aanwijsgebied (verbeterd)" }), " (niveau AAA)."] })] });
    }
-   function v(e = {}) {
+   function x(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(x, { ...e }) }) : x(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(v, { ...e }) }) : v(e);
    }
    function f(e) {
     const n = { input: "input", ...(0, o.a)(), ...e.components };
@@ -129,20 +129,20 @@
    }
    const W = { title: "Visueel ontwerp van formulieren | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Visueel ontwerp", pagination_label: "Visueel ontwerp van formulieren", description: "Richtlijnen voor het ontwerpen van formulieren.", slug: "visueel-ontwerp", keywords: ["informatie", "formulier", "design", "code"] },
     X = "Visueel ontwerp van formulieren",
-    U = { id: "richtlijnen/formulieren/alle-richtlijnen/visual-design", title: "Visueel ontwerp van formulieren | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerpen van formulieren.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/visual-design.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp", permalink: "/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/visual-design.mdx", tags: [], version: "current", frontMatter: { title: "Visueel ontwerp van formulieren | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Visueel ontwerp", pagination_label: "Visueel ontwerp van formulieren", description: "Richtlijnen voor het ontwerpen van formulieren.", slug: "visueel-ontwerp", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Uit te vragen informatie in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/vragen" }, next: { title: "Wanneer gebruik je welk formulierelement", permalink: "/richtlijnen/formulieren/alle-richtlijnen/wanneer-welk-form-element" } },
-    V = {},
+    V = { id: "richtlijnen/formulieren/alle-richtlijnen/visual-design", title: "Visueel ontwerp van formulieren | Richtlijnen | NL Design System", description: "Richtlijnen voor het ontwerpen van formulieren.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/visual-design.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/visual-design.mdx", tags: [], version: "current", frontMatter: { title: "Visueel ontwerp van formulieren | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Visueel ontwerp", pagination_label: "Visueel ontwerp van formulieren", description: "Richtlijnen voor het ontwerpen van formulieren.", slug: "visueel-ontwerp", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Uit te vragen informatie in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/vragen" }, next: { title: "Wanneer gebruik je welk formulierelement", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/wanneer-welk-form-element" } },
+    U = {},
     T = [];
-   function I(e) {
+   function B(e) {
     const n = { h1: "h1", li: "li", ul: "ul", ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "visueel-ontwerp-van-formulieren", children: "Visueel ontwerp van formulieren" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsx)(n.li, { children: "Geef duidelijk aan waar het invoerveld is." }), "\n", (0, r.jsx)(n.li, { children: "Geef tekst voldoende kleurcontrast." }), "\n", (0, r.jsx)(n.li, { children: "Geef placeholders voldoende kleurcontrast." }), "\n", (0, r.jsx)(n.li, { children: "Maak de toetsenbordfocus goed zichtbaar." }), "\n", (0, r.jsx)(n.li, { children: "Maak aanklikbare formuliervelden groot genoeg." }), "\n", (0, r.jsx)(n.li, { children: "Geef fouten weer met meer dan alleen kleur." }), "\n", (0, r.jsx)(n.li, { children: "Gebruik geen afbeelding voor knoppen maar stijl tekst met CSS." }), "\n", (0, r.jsx)(n.li, { children: "Zorg voor een logische volgorde van de informatie." }), "\n"] }), "\n", (0, r.jsx)(g, {}), "\n", (0, r.jsx)(u, {}), "\n", (0, r.jsx)(D, {}), "\n", (0, r.jsx)(c, {}), "\n", (0, r.jsx)(N, {}), "\n", (0, r.jsx)(G, {}), "\n", (0, r.jsx)(w, {}), "\n", (0, r.jsx)(b, {}), "\n", (0, r.jsx)(v, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(S, {}), "\n", (0, r.jsx)(y, {}), "\n", (0, r.jsx)(A, {}), "\n", (0, r.jsx)(d.ZP, {})] });
+    return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "visueel-ontwerp-van-formulieren", children: "Visueel ontwerp van formulieren" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsx)(n.li, { children: "Geef duidelijk aan waar het invoerveld is." }), "\n", (0, r.jsx)(n.li, { children: "Geef tekst voldoende kleurcontrast." }), "\n", (0, r.jsx)(n.li, { children: "Geef placeholders voldoende kleurcontrast." }), "\n", (0, r.jsx)(n.li, { children: "Maak de toetsenbordfocus goed zichtbaar." }), "\n", (0, r.jsx)(n.li, { children: "Maak aanklikbare formuliervelden groot genoeg." }), "\n", (0, r.jsx)(n.li, { children: "Geef fouten weer met meer dan alleen kleur." }), "\n", (0, r.jsx)(n.li, { children: "Gebruik geen afbeelding voor knoppen maar stijl tekst met CSS." }), "\n", (0, r.jsx)(n.li, { children: "Zorg voor een logische volgorde van de informatie." }), "\n"] }), "\n", (0, r.jsx)(g, {}), "\n", (0, r.jsx)(u, {}), "\n", (0, r.jsx)(D, {}), "\n", (0, r.jsx)(c, {}), "\n", (0, r.jsx)(N, {}), "\n", (0, r.jsx)(G, {}), "\n", (0, r.jsx)(w, {}), "\n", (0, r.jsx)(b, {}), "\n", (0, r.jsx)(x, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(S, {}), "\n", (0, r.jsx)(y, {}), "\n", (0, r.jsx)(A, {}), "\n", (0, r.jsx)(d.ZP, {})] });
    }
-   function B(e = {}) {
+   function H(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(I, { ...e }) }) : I(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(B, { ...e }) }) : B(e);
    }
   },
   73460: (e, n, t) => {
-   t.d(n, { X: () => v });
+   t.d(n, { X: () => x });
    var r = t(16532),
     o = t(86259),
     l = t(11910),
@@ -165,18 +165,18 @@
     return (0, g.jsx)(r.Tg, { className: u["nlds-canvas__example-surface"], children: (0, g.jsx)(r.BB, { className: (0, o.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: n }) });
    };
    j.displayName = "DocumentContainer";
-   const x = (e) => {
+   const v = (e) => {
     let { children: n } = e;
     return (0, g.jsx)(r.Tg, { className: u["nlds-canvas__example-surface"], children: n });
    };
-   x.displayName = "SurfaceContainer";
-   const v = (e) => {
-    let { code: n, copy: t = !1, defaultExpandedCode: v = !1, displayCode: f = !0, children: b, container: k = "document", language: w, designTokens: _ } = e,
+   v.displayName = "SurfaceContainer";
+   const x = (e) => {
+    let { code: n, copy: t = !1, defaultExpandedCode: x = !1, displayCode: f = !0, children: b, container: k = "document", language: w, designTokens: _ } = e,
      y = "function" == typeof b ? b() : b,
      z = "function" == typeof n ? n() : (0, d.isValidElement)(n) ? n : void 0,
      A = "string" == typeof n ? n : h.uS(z || y),
      [F, G] = (0, d.useState)(A),
-     [C, N] = (0, d.useState)(v);
+     [C, N] = (0, d.useState)(x);
     (0, d.useEffect)(() => {
      (async () => {
       (F = await c.ZP.format(A, { parser: w, plugins: [l.Z, i.ZP, s.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), G(F);
@@ -185,7 +185,7 @@
     const Z = (0, d.useId)();
     let D = d.Fragment;
     return (
-     "paragraph" === k ? (D = m) : "document" === k ? (D = j) : "surface" === k && (D = x),
+     "paragraph" === k ? (D = m) : "document" === k ? (D = j) : "surface" === k && (D = v),
      (0, g.jsxs)("div", {
       className: (0, o.Z)(u["nlds-canvas"]),
       children: [
