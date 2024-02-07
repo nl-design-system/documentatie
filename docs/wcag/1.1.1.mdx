@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: WCAG Succescriterium 1.1.1 Niet-tekstuele content
 pagination_label: WCAG Succescriterium 1.1.1 Niet-tekstuele content
-description: Wat is NL Design System en hoe werken we?
+description: Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.
 slug: 1.1.1
 keywords:
   - WCAG
@@ -15,23 +15,19 @@ keywords:
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 
-# WCAG Succescriterium 1.1.1 Niet-tekstuele content, niveau A
-
-## Beschrijving in WCAG 2.1
-
-Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat een gelijkwaardig doel dient, behalve voor de hierna vermelde situaties.
-
-- **Bedieningselementen, invoer**: Als niet-tekstuele content een bedieningselement is of gebruikersinvoer accepteert, dan heeft deze een naam die het doel ervan beschrijft. Zie ook Succescriterium 4.1.2.
-- **Op tijd gebaseerde media**: Als niet-tekstuele content op tijd gebaseerde media is, dan leveren tekstalternatieven tenminste een beschrijving van de niet-tekstuele content. Zie ook Richtlijn 1.2.
-- **Test**: Als niet-tekstuele content een test of oefening is die, als ze door middel van tekst gepresenteerd wordt onjuist zou zijn, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content.
-- **Zintuiglijk**: Als niet-tekstuele content primair is bedoeld om een specifieke zintuiglijke ervaring te creëren, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content.
-- **CAPTCHA**: Als het doel van niet-tekstuele content is om te bevestigen dat content wordt gebruikt door een persoon in plaats van een computer, dan worden tekstalternatieven geleverd die het doel van de niet-tekstuele content identificeren en beschrijven. En er worden alternatieve vormen van CAPTCHA aangeboden gebruikmakend van uitvoermodes voor verschillende soorten van zintuiglijke perceptie om tegemoet te komen aan verschillende functiebeperkingen.
-- **Decoratie**, opmaak, onzichtbaar: Als niet-tekstuele content puur decoratief is, slechts voor visuele opmaak wordt gebruikt, of niet aan gebruikers wordt gerepresenteerd, dan wordt het op zo'n manier geïmplementeerd dat het genegeerd kan worden door hulptechnologie.
+# WCAG Succescriterium 1.1.1 Niet-tekstuele content
 
 ## W3C referenties
 
+- Engelse tekst van het WCAG-succescriterium [<span lang="en">1.1.1 Non-text Content</span>](https://www.w3.org/TR/WCAG22/#non-text-content).
 - Nederlandse vertaling van het WCAG-succescriterium [1.1.1 Niet-tekstuele content](https://www.w3.org/Translations/WCAG21-nl/#tekstalternatieven).
-- Engelstalige uitleg: [<span lang="en">Understanding SC 1.1.1:Non-text Content</span>](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.1.1:Non-text Content</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html).
+
+## Korte samenvatting
+
+Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat een gelijkwaardig doel dient.
+
+Uitzonderingen zijn bedieningselementen en invoer met een toegankelijke naam, op tijd gebaseerde media, een test of oefening, content bedoeld om een specifieke zintuiglijke ervaring te creëren, CAPTCHA's en niet-tekstuele bedoeld voor decoratie.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -41,7 +37,7 @@ Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een 
 
 ## Bronnen
 
-- De [alt-besluitboom](https://www.200ok.nl/tips/afbeeldingen/) van 200 OK: wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
+- De [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/) van 200 OK: wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
 
 ## Gebruikersonderzoek
 
@@ -51,11 +47,18 @@ Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een 
 
 ### Alternatieve teksten op afbeeldingen
 
-Inspecteer de gegenereerde HTML-code van de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
 
 Check voor afbeeldingen:
 
-- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn: `<img src="img-url" alt="">` of met een alt-tekst `<img src="img-url" alt="wit konijn">"`.
+- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn:
+  ```html
+  <img src="img-url" alt="">
+  ```
+  of met een alt-tekst
+  ```html
+  <img src="img-url" alt="wit konijn">"
+  ```
 - als een afbeelding betekenisvol is, moet de alt-tekst het doel ervan beschrijven.
 - als een afbeelding decoratief is, moet de alt-tekst leeg zijn.
 - de alt-tekst kan worden leeg gelaten als de betekenis van de afbeelding vlak bij de afbeelding staat.
@@ -70,6 +73,6 @@ Controleer voor afbeeldingen in links en buttons:
 
 - Video: is er gesproken tekst dan moet deze beschikbaar zijn via ondertiteling.
 - Video: is er essentiële informatie in beeld die niet wordt uitgesproken dan moet deze via audiodescriptie beschikbaar zijn.
-- Audio: is er gesproken tekst in een audio dan moet deze beschikbaar zijn via uitgeschreven tekst (transcriptie).
+- Audio: is er gesproken tekst in de audio dan moet deze beschikbaar zijn via uitgeschreven tekst (transcriptie).
 
 <WCAGFooterInfo />
