@@ -3,7 +3,7 @@ title: Ruimte
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Ruimte
-sidebar_position: 4
+sidebar_position: 3
 pagination_label: Ruimte
 description: Richtlijnen voor ruimte
 keywords:

@@ -3,7 +3,7 @@ title: Iconen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Iconen
-sidebar_position: 3
+sidebar_position: 1
 pagination_label: Iconen
 description: Richtlijnen voor iconen
 keywords:
