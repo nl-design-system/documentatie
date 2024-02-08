@@ -48,6 +48,8 @@ Mensen die laaggeletterd zijn hebben moeite met lezen, schrijven en/of rekenen. 
 
 Het kunnen mensen zijn die doof zijn en waarbij gebarentaal hun moedertaal is. Nederlandse Gebarentaal (NGT) heeft een andere grammatica en vocabulaire. Het zijn ook mensen met een migratieachtergrond en die een andere moedertaal hebben dan het Nederlands.
 
+Test met vertaaldiensten. Sommige gebruikers maken gebruik van vertaaldiensten als Google Translate om formulieren te bekijken, bijvoorbeeld inwoners die het Nederlands niet machtig zijn. Optimaliseer voor compatibiliteit met dit soort diensten: zorg bijvoorbeeld dat het vervangen van woorden of zinnen door langere of kortere teksten de lay-out ongedeerd laat.
+
 ### Mensen met autisme
 
 Mensen met autisme hebben moeite met begrijpend lezen. Zij vatten woorden letterlijk op.
