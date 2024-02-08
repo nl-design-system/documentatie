@@ -2,7 +2,7 @@
 title: Richtlijnen voor stijl
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Overzicht
+sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Introductie
 description: Richtlijnen voor stijl
