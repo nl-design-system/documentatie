@@ -95,6 +95,7 @@ Zie [het Genderdoeboek (pdf)](https://www.transgendernetwerk.nl/wp-content/uploa
 - Tracht meerkeuze antwoorden in formulieren te gebruiken
 - Zorg voor rustige webpagina’s
 - Geef waar nodig positieve feedback, uitleg en hulp
+- Zorg ervoor dat voor dezelfde dingen dezelfde termen worden gebruikt
 
 #### Don’t
 
