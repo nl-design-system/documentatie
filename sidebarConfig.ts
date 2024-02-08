@@ -78,7 +78,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         {
-          type: 'doc', id: 'richtlijnen/introductie'
+          type: 'doc',
+          id: 'richtlijnen/introductie',
         },
         {
           type: 'category',
