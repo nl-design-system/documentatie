@@ -6,6 +6,7 @@ services:
       - ./build:/usr/local/apache2/htdocs/
       - ./static/.htaccess:/usr/local/apache2/htdocs/.htaccess
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
-    image: httpd:2.4
+    build:
+      dockerfile: httpd.Dockerfile
     ports:
       - "8080:80"
