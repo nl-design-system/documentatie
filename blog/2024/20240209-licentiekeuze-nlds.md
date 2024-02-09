@@ -8,7 +8,7 @@ authors:
 tags: [meta, NL design system]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blogpost-licentiekeuze-nl-design-system.png
 hide_table_of_contents: false
-date: 2024-02-07
+date: 2024-02-09
 ---
 
 Bij NL Design System hebben we er heel bewust voor gekozen om alles open source beschikbaar maken. Zo kunnen we niet alleen makkelijker samenwerken, het maakt ook onze code echt herbruikbaar. De manier waarop we dat doen: licenties!
