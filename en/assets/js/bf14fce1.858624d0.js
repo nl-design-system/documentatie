@@ -20,15 +20,15 @@
     },
     r = void 0,
     o = {
-     permalink: "/blog/nlds-zelfstandig",
+     permalink: "/en/blog/nlds-zelfstandig",
      source: "@site/blog/2024/20240122-nlds-zelfstandig.md",
      title: "NL Design System nu als zelfstandig project verder",
      description: "Vanaf 2024 gaat NL Design System verder als zelfstandig project. We spreken Victor Zuydweg (initiatiefnemer Gebruiker Centraal) en Peter Berrevoets (projectleider NL Design System) over toen en nu.",
      date: "2024-01-22T00:00:00.000Z",
-     formattedDate: "22 januari 2024",
+     formattedDate: "January 22, 2024",
      tags: [
-      { label: "meta", permalink: "/blog/tags/meta" },
-      { label: "NL design system", permalink: "/blog/tags/nl-design-system" },
+      { label: "meta", permalink: "/en/blog/tags/meta" },
+      { label: "NL design system", permalink: "/en/blog/tags/nl-design-system" },
      ],
      hasTruncateMarker: !0,
      authors: [
@@ -48,7 +48,8 @@
       date: "2024-01-22T00:00:00.000Z",
      },
      unlisted: !1,
-     nextItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/blog/community-online-formulieren" },
+     prevItem: { title: "Over de licentiekeuze van NL Design System", permalink: "/en/blog/licentiekeuze-nl-design-system" },
+     nextItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/en/blog/community-online-formulieren" },
     },
     d = { authorsImageUrls: [void 0, void 0] },
     l = [

@@ -3,7 +3,7 @@
  [4603],
  {
   25697: (e) => {
-   e.exports = JSON.parse('{"label":"meta","permalink":"/en/blog/tags/meta","allTagsPath":"/en/blog/tags","count":1,"unlisted":false}');
+   e.exports = JSON.parse('{"label":"meta","permalink":"/en/blog/tags/meta","allTagsPath":"/en/blog/tags","count":2,"unlisted":false}');
   },
  },
 ]);

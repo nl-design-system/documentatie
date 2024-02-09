@@ -48,6 +48,7 @@
       date: "2024-01-22T00:00:00.000Z",
      },
      unlisted: !1,
+     prevItem: { title: "Over de licentiekeuze van NL Design System", permalink: "/en/blog/licentiekeuze-nl-design-system" },
      nextItem: { title: "Rian en Francesca aanwezig bij Community Online Formulieren ", permalink: "/en/blog/community-online-formulieren" },
     },
     o = { authorsImageUrls: [void 0, void 0] },
