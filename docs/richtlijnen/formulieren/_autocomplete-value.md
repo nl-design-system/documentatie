@@ -4,7 +4,7 @@ WCAG bevat een volledige [lijst van waarden voor autocomplete](https://www.w3.or
 
 Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie](https://www.200ok.nl/tips/autocomplete/) gemaakt.
 
-Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de [richtlijnen over labels](/richtlijnen/formulieren/alle-richtlijnen/labels).
+Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de [richtlijnen over labels](/richtlijnen/formulieren/labels).
 
 Het gebruik van het juiste `autocomplete`-attribuut is nodig om te voldoen aan het WCAG-succescriterium [1.3.5 Identificeer het doel van de input](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose) (niveau AA).
 
