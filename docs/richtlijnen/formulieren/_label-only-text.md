@@ -8,4 +8,4 @@ Dit geeft problemen bij het voorlezen van het label door screenreaders en het ac
 
 Zet extra informatie boven het formulier, als links boven het label of formulierveld (wat logisch is qua leesvolgorde) of als beschrijving bij het veld. Vermijd tooltips.
 
-Lees ook de [richtlijnen voor links in formulieren](/richtlijnen/formulieren/alle-richtlijnen/links).
+Lees ook de [richtlijnen voor links in formulieren](/richtlijnen/formulieren/links).
