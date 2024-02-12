@@ -20,8 +20,8 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## W3C referenties
 
-- Engelse tekst van het WCAG-succescriterium [<span lang="en">2.1.1 Keyboard</span>](https://www.w3.org/TR/WCAG22/#keyboard).
-- Nederlandse vertaling van het WCAG-succescriterium [2.1.1 Toetsenbord](https://www.w3.org/Translations/WCAG21-nl/#toetsenbord).
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.1 Keyboard</span>](https://www.w3.org/TR/WCAG22/#keyboard).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.1.1 Toetsenbord](https://www.w3.org/Translations/WCAG21-nl/#toetsenbord).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html).
 
 ## Korte samenvatting
@@ -41,9 +41,9 @@ Uitgezonderd zijn functies die niet met het toetsenbord zijn uit te voeren, zoal
 
 ## Bronnen
 
-- [A Guide To Keyboard Accessibility: HTML And CSS](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) by Cristian Díaz in Smashing Magazine.
+- [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) by Cristian Díaz in Smashing Magazine.
 - [<span lang="en">The problem with automatically focusing the first input and what to do instead</span>](https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/) van Adam Silver.
-- [<span lang="en">0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
+- [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
 - [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
 
 ## Gebruikersonderzoek
@@ -59,9 +59,9 @@ Hierbij is een aantal testen belangrijk:
 - is de tabvolgorde logisch en voorspelbaar?
 - is alles goed bereikbaar, ook als je inzoomt?
 - verplaatst de toetsenbordfocus zich goed bij het openen van een menu of dialog?
-- is er geen toetsenbordval?
+- is er geen "toetsenbordval"? Dat betekent: kun je met Tab-navigatie door naar de rest van de pagina, of kom je in een _loop_ terecht waardoor je niet verder komt?
 
-Hoe toetsenbord navigatie werkt, is beschreven op [<span lang="en">Keyboard testing</span>](https://webaim.org/techniques/keyboard/#testing) van WebAIM.
+Hoe toetsenbordnavigatie werkt, is beschreven op [<span lang="en">Keyboard testing</span>](https://webaim.org/techniques/keyboard/#testing) van WebAIM.
 
 Zorg dat de instellingen van de MacOS en browsers goed staan:
 
@@ -70,14 +70,15 @@ Zorg dat de instellingen van de MacOS en browsers goed staan:
 
 ### Werkt alle functionaliteit met een toetsenbord
 
-- Controleer of links en knoppen focus krijgen en doen wat ze moeten doen (menu openen, modal openen en sluiten, accordeon openen en sluiten).
+- Controleer of links en knoppen focus krijgen en doen wat ze moeten doen. Bijvoorbeeld: een menu openen, een dialog openen of sluiten, een accordeon openen en sluiten.
+- Controleer dat je buttons op beide manieren kan activeren: met `Space` en met `Enter`.
 - Doe alle testen op de verschillende weergaves van een website, door bijvoorbeeld in te zoomen en nogmaals te testen.
 
 ### Toetsenbordfocus
 
-- Tab door de website en controleer of de focus logisch en voorspelbaar is.
-- Controleer of de focus niet verborgen zit achter een ander element.
+- Tab door de website en controleer of de focus volgorde logisch en voorspelbaar is. De logische volgorde van Nederlandse websites is meestal: van boven naar beneden, van links naar rechts.
+- Controleer of het onderdeel met focus en de focus-ring niet verborgen zit achter een ander element.
 - Controleer of de focus niet ineens verdwijnt (weer bovenaan de pagina staat) na het uitvoeren van een actie.
-- Verplaatst de focus zich naar een geopend dialog, kun je het weer modal sluiten met het toetsenbord en met de Escape toets? Na sluiten, komt de focus weer terug op de "open dialog"-button?.
+- Wanneer de focus zich verplaatst naar een dialog die wordt geopend, kun je dan de dialog weer sluiten met het toetsenbord en met de Escape toets? Wanneer de dialog gesloten wordt, komt de focus weer terug op de "open dialog"-button?
 
 <WCAGFooterInfo />
