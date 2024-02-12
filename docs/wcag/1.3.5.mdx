@@ -1,0 +1,56 @@
+---
+title: WCAG Succescriterium 1.3.5 Identificeer het doel van de input
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: WCAG Succescriterium 1.3.5 Identificeer het doel van de input
+pagination_label: WCAG Succescriterium 1.3.5 Identificeer het doel van de input
+description: Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.
+slug: 1.3.5
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+
+# WCAG Succescriterium 1.3.5 Identificeer het doel van de input
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium [<span lang="en">1.3.5 Identify Input Purpose</span>](https://www.w3.org/TR/WCAG22/#identify-input-purpose).
+- Nederlandse vertaling van het WCAG-succescriterium [1.3.5 Identificeer het doel van de input](https://www.w3.org/Translations/WCAG21-nl/#niet-tekstuele-content).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.5 Identify Input Purpose</span>](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html).
+
+## Korte samenvatting
+
+Zorg dat de software (bijvoorbeeld een browser) kan begrijpen wat een gebruiker invoert als:
+
+- het invoerveld een doel heeft dat al is beschreven en
+- software technologieën gebruikt die kunnen begrijpen wat de gebruiker probeert in te voeren.
+
+Dit kan door gebruik te maken van het HTML-attribuut `autocomplete`.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Autocomplete: [Autocomplete](/richtlijnen/formulieren/alle-richtlijnen/autocomplete).
+
+## Bronnen
+
+- WCAG bevat een volledige lijst van [waarden voor autocomplete](https://www.w3.org/Translations/WCAG21-nl/#input-purposes).
+- Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie van autocomplete](https://www.200ok.nl/tips/autocomplete/)gemaakt.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Inspecteer in de gegenereerde HTML-code van de webpagina de invoervelden, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+
+Controleer of de invoervelden van formulieren een autocomplete attribuut hebben met een geldige waarde.
+
+**Let op:** dit geldt alleen voor invoervelden waarin persoonlijke gegevens worden uitgevraagd en niet voor bijvoorbeeld een formulier om op de website te zoeken.
+
+<WCAGFooterInfo />
