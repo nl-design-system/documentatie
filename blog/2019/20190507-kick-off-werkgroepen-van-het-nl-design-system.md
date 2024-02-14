@@ -5,7 +5,7 @@ authors:
   - name: Edo Plantinga
     title: Freelance projectleider en communitymanager
     url: https://www.linkedin.com/in/edoplantinga
-tags: [werkgroepen, NL design system]
+tags: [werkgroepen, NL Design System]
 image: https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2019/05/binary-2450188_1920-1200x675.jpg
 hide_table_of_contents: false
 date: 2019-05-07

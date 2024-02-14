@@ -5,7 +5,7 @@ authors:
   - name: Renate Bruinenberg
     title: Communicatieadviseur NL Design System
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
-tags: [NL design system, formulieren]
+tags: [NL Design System, formulieren]
 hide_table_of_contents: false
 date: 2023-12-14
 ---

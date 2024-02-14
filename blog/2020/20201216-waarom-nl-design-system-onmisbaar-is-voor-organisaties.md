@@ -5,7 +5,7 @@ authors:
   - name: Jessica Straetemans
     title: Coördinator Communicatie bij Gebruiker Centraal
     url: https://www.linkedin.com/in/jessicastraetemans/
-tags: [contentrichtlijnen, NL design system]
+tags: [contentrichtlijnen, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/06/gc-nlds-beeldmerk.png
 hide_table_of_contents: false
 date: 2020-12-16

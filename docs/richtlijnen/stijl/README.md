@@ -14,7 +14,7 @@ import StyleFooterInfo from "./\_style_footer_info.md";
 
 # Introductie richtlijnen voor stijl
 
-Het NL Design system geeft richtlijnen voor stijl en visueel ontwerp. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.
+Het NL Design System geeft richtlijnen voor stijl en visueel ontwerp. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.
 
 ## Opzet
 
