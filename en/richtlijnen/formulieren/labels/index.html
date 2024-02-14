@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en-EN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-richtlijnen/formulieren/labels" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">Labels in een formulier | Richtlijnen | NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/en/richtlijnen/formulieren/labels" />
+  <meta data-rh="true" property="og:locale" content="en_EN" />
+  <meta data-rh="true" property="og:locale:alternate" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="en" />
+  <meta data-rh="true" name="docsearch:language" content="en" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Labels in een formulier | Richtlijnen | NL Design System" />
+  <meta data-rh="true" name="description" content="Richtlijnen voor het ontwerp en de code van labels in een formulier." />
+  <meta data-rh="true" property="og:description" content="Richtlijnen voor het ontwerp en de code van labels in een formulier." />
+  <meta data-rh="true" name="keywords" content="labels,formulier,design,code" />
+  <link data-rh="true" rel="icon" href="/en/img/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/en/richtlijnen/formulieren/labels" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/richtlijnen/formulieren/labels" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/en/richtlijnen/formulieren/labels" hreflang="en-EN" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/richtlijnen/formulieren/labels" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/en/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
+  <link rel="stylesheet" href="/en/assets/css/styles.43faa9d8.css" />
+  <script src="/en/assets/js/runtime~main.2991c5c2.js" defer="defer"></script>
+  <script src="/en/assets/js/main.8f22e58a.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute("data-theme", t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get("docusaurus-theme");
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem("theme");
+      } catch (t) {}
+     })();
+    t(null !== e ? e : "light");
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith("docusaurus-data-")) {
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Skip to main content"><a class="skipToContent_YjmR" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-label="Toggle navigation bar" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/en/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a class="navbar__item navbar__link utrecht-link" href="/en/handboek">Handboek</a><a aria-current="page" class="navbar__item navbar__link utrecht-link navbar__link--active" href="/en/richtlijnen">Richtlijnen</a><a class="navbar__item navbar__link utrecht-link" href="/en/componenten/">Componenten</a><a class="navbar__item navbar__link utrecht-link" href="/en/onderzoek/">Onderzoek</a><a class="navbar__item navbar__link utrecht-link" href="/en/community">Community</a><a class="navbar__item navbar__link utrecht-link" href="/en/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div>
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" translations="[object Object]" aria-label="Start met zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+     <div role="presentation" class="navbar-sidebar__backdrop"></div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_srsL">
+     <div class="docsWrapper_PQM9">
+      <button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_yNYc" type="button"></button>
+      <div class="docRoot_RjXE">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_xp5r">
+        <div class="sidebarViewport_uKVI">
+         <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/introductie">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/tekst-en-taalgebruik/overzicht">Tekst en taalgebruik</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Tekst en taalgebruik&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/stijl/overzicht">Stijl</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Stijl&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/en/richtlijnen/formulieren/overzicht">Formulieren</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Formulieren&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/">Introductie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/autocomplete">Autocomplete</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/buttons">Buttons</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/bevestigingspagina">Bevestigingspagina</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/descriptions">Descriptions</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/foutmeldingen">Foutmeldingen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/en/richtlijnen/formulieren/labels">Labels</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/links">Links</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/meerdere-stappen">Meerdere stappen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/placeholders">Placeholders</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/toetsenbord">Toetsenbord</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/vragen">Uit te vragen informatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/visueel-ontwerp">Visueel ontwerp</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/voorkom-fouten">Voorkom fouten</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/richtlijnen/formulieren/wanneer-welk-form-element">Wanneer welk element?</a></li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_RjdX">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_lNhe">
+           <div class="docItemContainer_a1ut">
+            <article>
+             <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/richtlijnen/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/en/richtlijnen/formulieren/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Formulieren</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Labels</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a" href="/en/richtlijnen/formulieren/"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Formulieren</a
+               >
+              </p>
+             </div>
+             <div class="theme-doc-markdown">
+              <!-- -->
+              <!-- -->
+              <h1 id="labels-in-een-formulier" class="utrecht-heading-1">Labels in een formulier</h1>
+              <p>Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen. Voor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Geef een formulierveld een toegankelijke naam met een label.</li>
+               <li class="utrecht-unordered-list__item">De zichtbare naam moet overeenkomen met de toegankelijke naam.</li>
+               <li class="utrecht-unordered-list__item">Zet het label boven het formulierveld.</li>
+               <li class="utrecht-unordered-list__item">Zorg ervoor dat het label altijd zichtbaar is.</li>
+               <li class="utrecht-unordered-list__item">Zet alleen tekst in het label.</li>
+               <li class="utrecht-unordered-list__item">Gebruik duidelijke labelteksten.</li>
+              </ul>
+              <h2 id="geef-een-formulierveld-toegankelijke-naam-met-een-label" class="utrecht-heading-2">Geef een formulierveld toegankelijke naam met een label</h2>
+              <p>Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld met een <code class="utrecht-code">for</code>/<code class="utrecht-code">id</code> relatie. De labeltekst wordt dan de zogenaamde &quot;toegankelijke naam&quot; van het formulierveld.</p>
+              <p>Waarom is dit belangrijk?</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Screenreader (schermlezer) gebruikers krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt.</li>
+               <li class="utrecht-unordered-list__item">Voice recognition (stembediening) gebruikers kunnen het veld focus geven door die naam uit te spreken.</li>
+               <li class="utrecht-unordered-list__item">Muis- en touchscreen gebruikers kunnen het label aanklikken om het formulierveld focus te geven.</li>
+              </ul>
+              <p>Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Is er meer uitleg nodig? Gebruik dan een beschrijving (description).</p>
+              <h3 id="de-forid-relatie" class="utrecht-heading-3">De for/id relatie</h3>
+              <p>Opzet in de HTML:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Geef het formulierveld een ID.</li>
+               <li class="utrecht-unordered-list__item">Geef het label het attribute <code class="utrecht-code">for</code> met als waarde de ID van het bijbehorende formulierveld.</li>
+              </ul>
+              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+              <p>Let op: De gebruikte <strong>ID&#x27;s</strong> moeten uniek zijn voor de pagina, anders worden de verkeerde namen bij de velden voorgelezen.</p>
+              <p>Een snelle test of de koppeling werkt: klik op het label en ga na of het veld focus krijgt.</p>
+              <p>Doen: Gekoppeld label met <code class="utrecht-code">for</code> en <code class="utrecht-code">id</code>. Het <code class="utrecht-code">&lt;label&gt;</code>-element heeft een <code class="utrecht-code">for</code> attribuut (of <code class="utrecht-code">htmlFor</code> in React) dat verwijst naar het <code class="utrecht-code">id</code> van het bijbehorende formulierveld.</p>
+              <p>Zo werkt dit bijvoorbeeld met een <code class="utrecht-code">&lt;select&gt;</code>:</p>
+              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Rood</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Blauw</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wit</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+              <p>Het geven van een goede toegankelijke naam aan formuliervelden is nodig om te voldoen aan de volgende WCAG-succescriteria:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels" class="utrecht-link utrecht-link--html-a">2.4.6: Koppen en labels</a> (niveau AA).</li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions" class="utrecht-link utrecht-link--html-a">3.3.2: Labels of instructies</a> (niveau A).</li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html" class="utrecht-link utrecht-link--html-a">4.1.2: Naam, rol, waarde</a> (niveau A).</li>
+              </ul>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="koppel-het-label-aan-het-formulierveld.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Koppel het label aan het formulierveld.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><label for="kleur3">Wat is je lievelingskleur?</label><input id="kleur3" name="lievelingskleur" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R91ihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R91ihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur3</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur3</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="koppel-het-label-aan-het-formulierveld-(select).">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Koppel het label aan het formulierveld (select).</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <label for="kleur4">Wat is je lievelingskleur?</label
+                      ><select id="kleur4" name="lievelingskleur">
+                       <option>Rood</option>
+                       <option>Blauw</option>
+                       <option>Wit</option>
+                      </select>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R9hihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R9hihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur4</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur4</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Rood</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Blauw</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wit</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="een-div-in-plaats-van-een-label-gebruiken.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Een div in plaats van een label gebruiken.</p>
+                De for en id koppeling werkt alleen met een label-element.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <div for="kleur5">Wat is je lievelingskleur?</div>
+                      <input id="kleur5" name="lievelingskleur" />
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":Ra1ihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":Ra1ihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur5</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">kleur5</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="een-label-zonder-gekoppelde-input.-door-het-label-element-te-gebruiken-zonder-for-mis-je-de-koppeling-tussen-het-label-en-de-input-voor-mensen-die-de-visuele-context-niet-waarnemen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <label>Wat is je lievelingskleur?</label
+                      ><select name="lievelingskleur">
+                       <option>Rood</option>
+                       <option>Blauw</option>
+                       <option>Wit</option>
+                      </select>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":Rahihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":Rahihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Rood</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Blauw</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wit</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="de-zichtbare-naam-moet-overeenkomen-met-de-toegankelijke-naam" class="utrecht-heading-2">De zichtbare naam moet overeenkomen met de toegankelijke naam</h2>
+              <p>Gebruikers van voice recognition software kunnen een formulierveld focus geven door de naam uit te spreken.</p>
+              <p>Als de toegankelijke naam niet begint met de zichtbare naam werkt dit niet goed. Dit kan gebeuren bij het verkeerd gebruik van het attribute <code class="utrecht-code">aria-label</code>. Met <code class="utrecht-code">aria-label</code> kan een formulierveld ook een toegankelijke naam worden gegeven, onzichtbaar voor de ziende gebruiker.</p>
+              <p>Zorgen dat de zichtbare naam en toegankelijke naam overeenkomen, is nodig om te voldoen WCAG-succescriterium: <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html" class="utrecht-link utrecht-link--html-a">2.5.3: Label in naam</a> (niveau A).</p>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="het-zichtbare-label-is-de-toegankelijke-naam.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Het zichtbare label is de toegankelijke naam.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><label for="hond">Hoe heet je hond</label><input id="hond" name="hond" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R922hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R922hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">hond</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Hoe heet je hond</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">hond</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">hond</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="alleen-een-placeholder-gebruiken-om-te-laten-zien-wat-de-gebruiker-moet-invullen,">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Alleen een placeholder gebruiken om te laten zien wat de gebruiker moet invullen,</p>
+                terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><input name="lievelingskleur" aria-label="Vul een kleur in" placeholder="Wat is je lievelingskleur" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R9i2hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R9i2hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Vul een kleur in</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">placeholder</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Wat is je lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="alleen-losse-tekst-gebruiken-om-te-laten-zien-wat-de-gebruiker-moet-invullen,">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Alleen losse tekst gebruiken om te laten zien wat de gebruiker moet invullen,</p>
+                terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft.
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <div>Zoek</div>
+                      <input type="search" name="trefwoord" aria-label="Trefwoord" />
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":Ra22hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":Ra22hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Zoek</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">search</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">trefwoord</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Trefwoord</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="zet-het-label-boven-het-formulierveld" class="utrecht-heading-2">Zet het label boven het formulierveld</h2>
+              <p>Zet het label boven het formulierveld. Niet ernaast, niet eronder en niet in het formulierveld, maar op de regel boven het formulierveld. Doe dit consequent voor alle formuliervelden. Voor left-to-right talen is het label links uitgelijnd.</p>
+              <p>Deze plaatsing heeft meerdere voordelen:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Het biedt voldoende ruimte voor labels van verschillende lengtes. Het kan zijn dat gebruikers vertaalsoftware gebruiken op de pagina, waardoor labels langer of korter kunnen zijn dan je verwacht.</li>
+               <li class="utrecht-unordered-list__item">Dit werkt beter voor gebruikers die de tekst inzoomen.</li>
+               <li class="utrecht-unordered-list__item">Door labels, formuliervelden en acties verticaal uit te lijnen, wordt een natuurlijke &#x27;scan-lijn&#x27; gecreëerd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten.</li>
+              </ul>
+              <p>Waarom is dit belangrijk? Mensen lezen van boven naar beneden en verwachten dat de informatie in die volgorde staat.</p>
+              <p>Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij <a href="https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte#ontwerpen-met-ruimte" class="utrecht-link utrecht-link--html-a">de richtlijnen over stijl: Ruimte</a>.</p>
+              <p>Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond.</p>
+              <p>
+               Gebruik geen zogenaamde “floating labels”. Deze zijn moeilijker te begrijpen. Zie: <a href="https://www.smashingmagazine.com/2021/02/material-design-text-fields/" class="utrecht-link utrecht-link--html-a"><span lang="en">Material Design Text Fields Are Badly Designed in Smashing Magazine</span></a
+               >.
+              </p>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="het-label-inconsequent-plaatsen-in-een-formulier-(visueel-en-in-code).">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Het label inconsequent plaatsen in een formulier (visueel en in code).</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <label for="lievelingskleur">Wat is je lievelingskleur?</label
+                      ><select name="lievelingskleur" id="lievelingskleur">
+                       <option>Rood</option>
+                       <option>Blauw</option>
+                       <option>Wit</option></select
+                      ><input id="dier" name="lievelingsdier" /><label for="dier">Wat is je lievelingsdier?</label>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R52ihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R52ihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingskleur?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingskleur</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Rood</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Blauw</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wit</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">option</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">select</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingsdier</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingsdier?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="zorg-ervoor-dat-het-label-altijd-zichtbaar-is" class="utrecht-heading-2">Zorg ervoor dat het label altijd zichtbaar is</h2>
+              <p>Waarom? Als het label verdwijnt bij het typen kan er verwarring ontstaan: wat moet je ook alweer invullen? Daarom is een placeholder geen goede vervanging van het label.</p>
+              <p>
+               De placeholder kan ook voor verwarring zorgen bij gebruikers. Is het al veld ingevuld? Zie het onderzoek <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="utrecht-link utrecht-link--html-a"><span lang="en">Placeholders in Form Fields Are Harmful</span></a> van de Nielsen Norman Group.
+              </p>
+              <p>Een label vertelt <strong>wat</strong> je moet invullen en een placeholder <strong>hoe</strong> je een formulierveld moet invullen. Voor een e-mailveld kan het label bijvoorbeeld “Jouw e-mailadres” zijn en de placeholder “<a href="mailto:naam@voorbeeld.com" class="utrecht-link utrecht-link--html-a">naam@voorbeeld.com</a>”.</p>
+              <p>De <strong>hoe</strong> informatie kan ook in een description worden opgenomen, dan blijft deze informatie ook zichtbaar tijdens het invullen.</p>
+              <p>Een andere reden om een label niet te verbergen is om beter te kunnen controleren of alles goed is ingevuld met autocomplete.</p>
+              <p>Namen, adressen en telefoonnummers kunnen automatisch vooraf worden ingevuld door de browser. Wanneer het label verborgen is, moet de gebruiker controleren of elke waarde juist is ingevuld bij het goede formulierveld. Dat is veel gemakkelijker als het label altijd zichtbaar is.</p>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="het-label-blijft-zichtbaar,-ook-als-de-gebruiker-gaat-invullen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Het label blijft zichtbaar, ook als de gebruiker gaat invullen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><label for="dier1">Wat is je lievelingsdier?</label><input id="dier1" name="lievelingsdier" placeholder="Bijvoorbeeld cavia" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R532hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R532hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingsdier?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingsdier</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">placeholder</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Bijvoorbeeld cavia</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="alleen-een-placeholder-gebruiken-als-zichtbaar-label.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Alleen een placeholder gebruiken als zichtbaar label.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><label for="dier2" class="visually-hidden">Wat is je lievelingsdier?</label><input id="dier2" name="lievelingsdier" placeholder="Wat is je lievelingsdier?" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R5j2hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R5j2hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">visually-hidden</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Wat is je lievelingsdier?</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">dier2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lievelingsdier</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">placeholder</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Wat is je lievelingsdier?</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="zet-alleen-tekst-in-het-label" class="utrecht-heading-2">Zet alleen tekst in het label</h2>
+              <p>Gebruik alleen tekst in een label. Dus geen links, buttons, tooltips of kopjes.</p>
+              <p>Dit geeft problemen bij het voorlezen van het label door screenreaders en het activeren via voice recognition.</p>
+              <p>Zet extra informatie boven het formulier, als links boven het label of formulierveld (wat logisch is qua leesvolgorde) of als beschrijving bij het veld. Vermijd tooltips.</p>
+              <p>Lees ook de <a href="/richtlijnen/formulieren/links" class="utrecht-link utrecht-link--html-a">richtlijnen voor links in formulieren</a>.</p>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="de-link-buiten-het-label-plaatsen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">De link buiten het label plaatsen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <p><a href="#" class="utrecht-link utrecht-link--html-a">Onze algemene leveringsvoorwaarden</a></p>
+                      <input id="alv1" type="checkbox" /><label for="alv1">Ik ga akkoord met de algemene leveringsvoorwaarden</label>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R53ihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R53ihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">#</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">utrecht-link utrecht-link--html-a</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Onze algemene leveringsvoorwaarden</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">alv1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">checkbox</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">alv1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Ik ga akkoord met de algemene leveringsvoorwaarden</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="de-link-binnen-het-label-plaatsen.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">De link binnen het label plaatsen.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <input id="alv2" type="checkbox" /><label for="alv2">Ik ga akkoord met de <a href="#" class="utrecht-link utrecht-link--html-a">algemene leveringsvoorwaarden</a></label>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R5jihralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R5jihralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">alv2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">checkbox</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">alv2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Ik ga akkoord met de </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">#</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">utrecht-link utrecht-link--html-a</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">algemene leveringsvoorwaarden</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="gebruik-duidelijke-labelteksten" class="utrecht-heading-2">Gebruik duidelijke labelteksten</h2>
+              <p>Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Waar nodig wordt er ook extra hulp geboden worden, zoals een omschrijving van waar een BSN-nummer te vinden is.</p>
+              <p>Wanneer je een afkorting gebruikt, of je moet jargon gebruiken omdat de officiële term verplicht is, geef dan in de beschrijving een voorbeeld of uitleg.</p>
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <div class="nlds-guideline_tEmj" id="simpel-label-met-extra-beschrijving.-gebruik-waar-nodig-een-losse-description-om-meer-uitleg-te-geven.">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Simpel label met extra beschrijving. Gebruik waar nodig een losse description om meer uitleg te geven.</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html">
+                      <label for="first-name">Voornaam (een of meerdere)</label>
+                      <p id="first-name-description">Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
+                      <input autocomplete="given-name" name="first_name" id="first-name" aria-describedby="first-name-description" />
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R542hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R542hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam (een of meerdere)</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name-description</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">autocomplete</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">given-name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first_name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-describedby</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name-description</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="nlds-guideline_tEmj" id="ingewikkeld-label.-door-veel-informatie-in-te-korten-wordt-het-label-onduidelijk">
+               <div class="nlds-guideline__description_Rmd2">
+                <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--dont_w4Jz">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nlds-guideline__icon_CMAh">
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title_Kp8d">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Ingewikkeld label. Door veel informatie in te korten wordt het label onduidelijk</p>
+               </div>
+               <div class="nlds-guideline__example_Npzh">
+                <div class="nlds-canvas_h8Yz">
+                 <div class="nlds-canvas__example_sS53">
+                  <div class="voorbeeld-theme">
+                   <div class="utrecht-surface">
+                    <div class="utrecht-document utrecht-document--surface nlds-canvas__example-document_cR3e">
+                     <div class="utrecht-html"><label for="first-name2">Voornaam(en)</label><input autocomplete="given-name" name="first_name" id="first-name2" /></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="nlds-canvas__toolbar_AMcV"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button_cHBw" type="button" aria-expanded="false" aria-controls=":R5k2hralaqh:">Bekijk code</button></div>
+                 <div class="nlds-canvas__code-block--user-select-none_Jv1j" id=":R5k2hralaqh:" hidden="">
+                  <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam(en)</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">autocomplete</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">given-name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">text</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">name</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first_name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">first-name2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
+              <p>Deze richtlijnen worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/discussions/473" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a> met je suggesties.</p>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/labels.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_JF7p" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Edit this page</a
+                >
+               </div>
+               <div class="col lastUpdated_t3Xf"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/en/richtlijnen/formulieren/foutmeldingen"
+              ><div class="pagination-nav__sublabel">Previous</div>
+              <div class="pagination-nav__label">Foutmeldingen</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/en/richtlijnen/formulieren/links"
+              ><div class="pagination-nav__sublabel">Next</div>
+              <div class="pagination-nav__label">Links in een formulier</div></a
+             >
+            </nav>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer_VVap">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link" href="/en/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
