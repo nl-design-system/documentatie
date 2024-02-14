@@ -16,7 +16,7 @@
    }
   },
   50640: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => C, contentTitle: () => z, default: () => Z, frontMatter: () => w, metadata: () => A, toc: () => S });
+   t.r(n), t.d(n, { assets: () => C, contentTitle: () => z, default: () => Z, frontMatter: () => w, metadata: () => A, toc: () => N });
    var r = t(11527),
     i = t(27034),
     s = t(3324),
@@ -55,8 +55,8 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
    }
    function v(e) {
-    const n = { a: "a", code: "code", h2: "h2", li: "li", p: "p", strong: "strong", ul: "ul", ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "plaats-de-informatie-over-waar-de-gebruiker-is-in-de-stappen-boven-het-formulier", children: "Plaats de informatie over waar de gebruiker is in de stappen boven het formulier" }), "\n", (0, r.jsxs)(n.p, { children: ["Plaats tekst en uitleg die hoort bij het formulier buiten het ", (0, r.jsx)(n.code, { children: "<form>" }), " element. Dus zet informatie over de stappen ", (0, r.jsx)(n.strong, { children: "boven" }), " en niet ", (0, r.jsx)(n.strong, { children: "binnen" }), " het ", (0, r.jsx)(n.code, { children: "<form>" }), " element. Dan is de kans dat screenreadergebruikers deze informatie missen het kleinst."] }), "\n", (0, r.jsxs)(n.p, { children: ["Screenreaders, zoals JAWS, schakelen over naar de \u201cformulierenmodus\u201d wanneer ze inhoud binnen een ", (0, r.jsx)(n.code, { children: "<form>" }), " element verwerken. In deze modus lezen screenreaders alleen de formuliervelden voor, inclusief de daaraan gekoppelde informatie (met bijvoorbeeld ", (0, r.jsx)(n.code, { children: "aria-describedby" }), "), en niet-gekoppelde informatie niet, tenzij de gebruiker er zelf naar zoekt."] }), "\n", (0, r.jsx)(n.p, { children: "Plaats informatie over een formulier dus erboven. Dat scheelt de complexiteit van eventueel gebruik van ARIA om tekst te laten voorlezen." }), "\n", (0, r.jsx)(n.p, { children: "Meer informatie over de formulierenmodus:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/tutorials/forms/instructions/", children: "Form Instructions" }), ", Web Accessibility Initiative."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes", children: "Browse and focus modes" }), ", Accessibility Developer Guide."] }), "\n"] }), "\n", (0, r.jsxs)(n.p, { children: ["Het aangeven van de hoeveelheid stappen boven het formulier is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html", children: "1.3.2 Betekenisvolle volgorde" }), " (niveau A)."] })] });
+    const n = { a: "a", code: "code", h2: "h2", p: "p", strong: "strong", ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "plaats-de-informatie-over-waar-de-gebruiker-is-in-de-stappen-boven-het-formulier", children: "Plaats de informatie over waar de gebruiker is in de stappen boven het formulier" }), "\n", (0, r.jsxs)(n.p, { children: ["Plaats tekst en uitleg die hoort bij het formulier buiten het ", (0, r.jsx)(n.code, { children: "<form>" }), " element. Dus zet informatie over de stappen ", (0, r.jsx)(n.strong, { children: "boven" }), " en niet ", (0, r.jsx)(n.strong, { children: "binnen" }), " het ", (0, r.jsx)(n.code, { children: "<form>" }), " element. Dan is de kans dat screenreadergebruikers deze informatie missen het kleinst. Het waarom staat uitgelegd bij de ", (0, r.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/descriptions", children: "richtlijnen over descriptions" }), "."] }), "\n", (0, r.jsxs)(n.p, { children: ["Het voordeel van een formulier in meer stappen is, dat je makkelijker uitgebreide informatie per stap kunt toevoegen ", (0, r.jsx)(n.strong, { children: "boven" }), " het formulier. Dat scheelt de complexiteit van eventueel gebruik van ARIA om tekst te laten voorlezen bij een formulierveld."] }), "\n", (0, r.jsxs)(n.p, { children: ["Het aangeven van de hoeveelheid stappen boven het formulier is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html", children: "1.3.2 Betekenisvolle volgorde" }), " (niveau A)."] })] });
    }
    function j(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -90,14 +90,14 @@
     z = "Meerdere stappen",
     A = { id: "richtlijnen/formulieren/alle-richtlijnen/multistep", title: "Meerdere stappen | Richtlijnen | NL Design System", description: "Bestaat een formulier uit veel vragen, dan kan het gebruiksvriendelijk en overzichtelijk zijn om het formulier in meerdere stappen op te delen, of om een vraag per stap te stellen.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/multistep.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen", permalink: "/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/multistep.mdx", tags: [], version: "current", frontMatter: { title: "Meerdere stappen | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Meerdere stappen", pagination_label: "Meerdere stappen", description: "Bestaat een formulier uit veel vragen, dan kan het gebruiksvriendelijk en overzichtelijk zijn om het formulier in meerdere stappen op te delen, of om een vraag per stap te stellen.", slug: "meerdere-stappen", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Links in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/links" }, next: { title: "Placeholders in een formulier", permalink: "/richtlijnen/formulieren/alle-richtlijnen/placeholders" } },
     C = {},
-    S = [];
-   function N(e) {
+    N = [];
+   function S(e) {
     const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "meerdere-stappen", children: "Meerdere stappen" }), "\n", (0, r.jsx)(n.p, { children: "Bestaat een formulier uit veel vragen, dan kan het gebruiksvriendelijk en overzichtelijk zijn om het formulier in meerdere stappen op te delen, of om een vraag per stap te stellen." }), "\n", (0, r.jsxs)(n.p, { children: ["Of je een meerstappenformulier gebruikt hangt af van de hoeveelheid en de complexiteit van de vragen die je de bezoekers wilt stellen. Doe vooraf gebruikersonderzoek voordat je beslist een formulier in meerdere stappen op te delen. Adam Silver beschrijft zijn overwegingen in ", (0, r.jsx)(n.a, { href: "https://www.smashingmagazine.com/2017/05/better-form-design-one-thing-per-page/", children: (0, r.jsx)("span", { lang: "en", children: "Better Form Design: One Thing Per Page (Case Study)" }) }), "."] }), "\n", (0, r.jsx)(n.p, { children: "Kies je voor een opzet met meerdere stappen, dan is het volgende belangrijk:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsx)(n.li, { children: "Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt." }), "\n", (0, r.jsx)(n.li, { children: "Plaats informatie over de stappen boven het formulier." }), "\n", (0, r.jsx)(n.li, { children: "Zorg voor een consistente navigatie en benaming van links en buttons." }), "\n", (0, r.jsx)(n.li, { children: "Bied als laatste stap een opsomming aan van alle ingevoerde gegevens." }), "\n", (0, r.jsx)(n.li, { children: "Geef duidelijk aan wanneer het formulier verzonden gaat worden." }), "\n"] }), "\n", (0, r.jsx)(k, {}), "\n", (0, r.jsx)(f, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(m, {}), "\n", (0, r.jsx)(p, {}), "\n", (0, r.jsx)(d, {}), "\n", (0, r.jsx)(u, {}), "\n", (0, r.jsx)(y, {}), "\n", (0, r.jsx)(s.ZP, {})] });
    }
    function Z(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(N, { ...e }) }) : N(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(S, { ...e }) }) : S(e);
    }
   },
   73460: (e, n, t) => {
@@ -134,11 +134,11 @@
      w = "function" == typeof b ? b() : b,
      z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      A = "string" == typeof n ? n : p.uS(z || w),
-     [C, S] = (0, c.useState)(A),
-     [N, Z] = (0, c.useState)(x);
+     [C, N] = (0, c.useState)(A),
+     [S, Z] = (0, c.useState)(x);
     (0, c.useEffect)(() => {
      (async () => {
-      (C = await d.ZP.format(A, { parser: _, plugins: [s.Z, l.ZP, o.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), S(C);
+      (C = await d.ZP.format(A, { parser: _, plugins: [s.Z, l.ZP, o.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), N(C);
      })();
     }, [A]);
     const F = (0, c.useId)();
@@ -156,18 +156,18 @@
           className: (0, i.Z)(h["nlds-canvas__button"], h["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           Z(!N);
+           Z(!S);
           },
-          "aria-expanded": N,
+          "aria-expanded": S,
           "aria-controls": F,
-          children: N ? "Verberg code" : "Bekijk code",
+          children: S ? "Verberg code" : "Bekijk code",
          }),
         }),
        f &&
         (0, g.jsxs)("div", {
          className: (0, i.Z)(h["nlds-canvas__code-block"], !t && h["nlds-canvas__code-block--user-select-none"]),
          id: F,
-         hidden: !N,
+         hidden: !S,
          children: [
           (0, g.jsx)(u.u, { syntax: _, textContent: C, trim: !0 }),
           t &&
