@@ -16,7 +16,7 @@
    }
   },
   54835: (e, n, l) => {
-   l.r(n), l.d(n, { assets: () => _, contentTitle: () => f, default: () => N, frontMatter: () => x, metadata: () => y, toc: () => w });
+   l.r(n), l.d(n, { assets: () => _, contentTitle: () => f, default: () => z, frontMatter: () => x, metadata: () => y, toc: () => w });
    var i = l(11527),
     r = l(27034),
     t = l(3324),
@@ -63,8 +63,8 @@
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(g, { ...e }) }) : g(e);
    }
    function v(e) {
-    const n = { a: "a", h2: "h2", img: "img", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zet-geen-link-in-een-label", children: "Zet geen link in een label" }), "\n", (0, i.jsx)(n.p, { children: "Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld het privacybeleid." }), "\n", (0, i.jsx)(n.p, { children: "Dit is om twee redenen geen goede constructie:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: ["Een label kan ", (0, i.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns", children: "geen links of buttons elementen" }), " bevatten. Lees hierover meer in de ", (0, i.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/labels", children: "richtlijnen over Labels" }), "."] }), "\n", (0, i.jsx)(n.li, { children: "Screenreaders kunnen struikelen over de combinatie \u201clabel en link\u201d en lezen daardoor het label niet goed voor." }), "\n"] }), "\n", (0, i.jsx)(n.p, { children: 'Bijvoorbeeld:\nEen checkbox met in het label "Ik ga akkoord met het privacybeleid", en de tekst privacybeleid is ook een link.\nDit is geen goede constructie:' }), "\n", (0, i.jsxs)("div", { class: "nlds-dont", children: [(0, i.jsx)("input", { id: "p", type: "checkbox", name: "privacybeleid" }), (0, i.jsx)("label", { for: "p", children: (0, i.jsxs)(n.p, { children: ["Ik ga akkoord met het ", (0, i.jsx)("a", { href: "#", children: "privacybeleid" })] }) })] }), "\n", (0, i.jsx)(n.p, { children: 'VoiceOver in Safari op Mac OS Sonoma 14 leest als label voor: "Ik ga akkoord met het en nog 1 onderdeel", dat onderdeel is de link.' }), "\n", (0, i.jsx)(n.p, { children: (0, i.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/_img_links-vo-link-in-label.png", alt: "Screenshot van uitvoer VoiceOver met de tekst: Ik ga akkoord met het en nog 1 onderdeel, dat onderdeel is de link." }) }), "\n", (0, i.jsx)(n.p, { children: "Een link buiten het label plaatsen is een aanbevolen werkwijze, vanuit gebruikersvriendelijk voor screenreadergebruikers en om te voldoen aan de HTML-specificaties." })] });
+    const n = { a: "a", code: "code", h2: "h2", img: "img", li: "li", p: "p", pre: "pre", ul: "ul", ...(0, r.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "zet-geen-link-in-een-label", children: "Zet geen link in een label" }), "\n", (0, i.jsx)(n.p, { children: "Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld het privacybeleid." }), "\n", (0, i.jsx)(n.p, { children: "Dit is om twee redenen geen goede constructie:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: ["Een label kan ", (0, i.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns", children: "geen links of buttons elementen" }), " bevatten. Lees hierover meer in de ", (0, i.jsx)(n.a, { href: "/richtlijnen/formulieren/alle-richtlijnen/labels", children: "richtlijnen over Labels" }), "."] }), "\n", (0, i.jsx)(n.li, { children: "Screenreaders kunnen struikelen over de combinatie \u201clabel en link\u201d en lezen daardoor het label niet goed voor." }), "\n"] }), "\n", (0, i.jsx)(n.p, { children: 'Bijvoorbeeld:\nEen checkbox met in het label "Ik ga akkoord met het privacybeleid", en de tekst privacybeleid is ook een link.\nDit is geen goede constructie:' }), "\n", (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: "language-html", children: '<input id="p" type="checkbox" name="privacybeleid" />\n<label for="p">Ik ga akkoord met het <a href="#">privacybeleid</a></label>\n' }) }), "\n", (0, i.jsx)(n.p, { children: 'VoiceOver in Safari op Mac OS Sonoma 14 leest als label voor: "Ik ga akkoord met het en nog 1 onderdeel", dat onderdeel is de link.' }), "\n", (0, i.jsx)(n.p, { children: (0, i.jsx)(n.img, { src: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/_img_links-vo-link-in-label.png", alt: "Screenshot van uitvoer VoiceOver met de tekst: Ik ga akkoord met het en nog 1 onderdeel, dat onderdeel is de link." }) }), "\n", (0, i.jsx)(n.p, { children: "Een link buiten het label plaatsen is een aanbevolen werkwijze, vanuit gebruikersvriendelijk voor screenreadergebruikers en om te voldoen aan de HTML-specificaties." })] });
    }
    function k(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -75,13 +75,13 @@
     y = { id: "richtlijnen/formulieren/alle-richtlijnen/links", title: "Links in een formulier | Richtlijnen | NL Design System", description: "Richtlijnen voor het plaatsen van links binnen een formulier.", source: "@site/docs/richtlijnen/formulieren/00-alle-richtlijnen/links.mdx", sourceDirName: "richtlijnen/formulieren/00-alle-richtlijnen", slug: "/richtlijnen/formulieren/alle-richtlijnen/links", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/links", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/00-alle-richtlijnen/links.mdx", tags: [], version: "current", frontMatter: { title: "Links in een formulier | Richtlijnen | NL Design System", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Links", pagination_label: "Links in een formulier", description: "Richtlijnen voor het plaatsen van links binnen een formulier.", keywords: ["links", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Labels in een formulier", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/labels" }, next: { title: "Meerdere stappen", permalink: "/en/richtlijnen/formulieren/alle-richtlijnen/meerdere-stappen" } },
     _ = {},
     w = [];
-   function z(e) {
+   function N(e) {
     const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "links-in-een-formulier", children: "Links in een formulier" }), "\n", (0, i.jsx)(n.p, { children: "Soms wil je binnen een formulier verwijzen naar een andere pagina, bijvoorbeeld de algemene voorwaarden of het privacybeleid. Zo\u2019n link kun je boven het formulier zetten, maar ook bij een specifieke vraag plaatsen.\nVoor het plaatsen van een link binnen een formulier zijn voor de toegankelijkheid de volgende punten belangrijk:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Plaats de link boven het gerelateerde formulierveld." }), "\n", (0, i.jsx)(n.li, { children: "Zet geen link in een label." }), "\n", (0, i.jsx)(n.li, { children: "Geef aan als een link in een nieuwe tab opent." }), "\n"] }), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(k, {}), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(u, {}), "\n", (0, i.jsx)(t.ZP, {})] });
    }
-   function N(e = {}) {
+   function z(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(z, { ...e }) }) : z(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(N, { ...e }) }) : N(e);
    }
   },
   73460: (e, n, l) => {
@@ -116,15 +116,15 @@
    const v = (e) => {
     let { code: n, copy: l = !1, defaultExpandedCode: v = !1, displayCode: k = !0, children: x, container: f = "document", language: y, designTokens: _ } = e,
      w = "function" == typeof x ? x() : x,
-     z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
-     N = "string" == typeof n ? n : p.uS(z || w),
-     [L, Z] = (0, c.useState)(N),
+     N = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
+     z = "string" == typeof n ? n : p.uS(N || w),
+     [L, Z] = (0, c.useState)(z),
      [S, X] = (0, c.useState)(v);
     (0, c.useEffect)(() => {
      (async () => {
-      (L = await d.ZP.format(N, { parser: y, plugins: [t.Z, a.ZP, s.ZP, o.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(L);
+      (L = await d.ZP.format(z, { parser: y, plugins: [t.Z, a.ZP, s.ZP, o.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), Z(L);
      })();
-    }, [N]);
+    }, [z]);
     const D = (0, c.useId)();
     let F = c.Fragment;
     return (
