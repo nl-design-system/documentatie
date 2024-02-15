@@ -31,7 +31,7 @@
    }
    function c(e) {
     const n = { a: "a", code: "code", h2: "h2", p: "p", strong: "strong", ...(0, l.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { id: "gebruik-autocomplete-als-er-een-waarde-voor-is-gedefinieerd", children: "Gebruik autocomplete als er een waarde voor is gedefinieerd" }), "\n", (0, o.jsxs)(n.p, { children: ["WCAG bevat een volledige ", (0, o.jsx)(n.a, { href: "https://www.w3.org/Translations/WCAG21-nl/#input-purposes", children: "lijst van waarden voor autocomplete" }), ". Gebruik altijd een autocomplete-attribuut als er een waarde voor een formulierveld gedefinieerd is in deze lijst."] }), "\n", (0, o.jsxs)(n.p, { children: ["Jules Ernst van 200 OK heeft van deze lijst een ", (0, o.jsx)(n.a, { href: "https://www.200ok.nl/tips/autocomplete/", children: "Nederlandse interpretatie" }), " gemaakt."] }), "\n", (0, o.jsxs)(n.p, { children: ["Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de ", (0, o.jsx)(n.a, { href: "/richtlijnen/formulieren/labels", children: "richtlijnen over labels" }), "."] }), "\n", (0, o.jsxs)(n.p, { children: ["Het gebruik van het juiste ", (0, o.jsx)(n.code, { children: "autocomplete" }), "-attribuut is nodig om te voldoen aan het WCAG-succescriterium ", (0, o.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose", children: "1.3.5 Identificeer het doel van de input" }), " (niveau AA)."] }), "\n", (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: "Let op" }), ": ", (0, o.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-autocomplete", children: "aria-autocomplete" }), " heeft een ander doel en ander gebruik dan autocomplete bij formuliervelden. ", (0, o.jsx)(n.code, { children: "aria-autocomplete" }), " wordt gebruikt in webcomponenten, bijvoorbeeld om aan te geven dat er suggesties zijn bij zoekresultaten."] })] });
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { id: "gebruik-autocomplete-als-er-een-waarde-voor-is-gedefinieerd", children: "Gebruik autocomplete als er een waarde voor is gedefinieerd" }), "\n", (0, o.jsxs)(n.p, { children: ["WCAG bevat een volledige ", (0, o.jsx)(n.a, { href: "https://www.w3.org/Translations/WCAG21-nl/#input-purposes", children: "lijst van waarden voor autocomplete" }), ". Gebruik altijd een autocomplete-attribuut als er een waarde voor een formulierveld gedefinieerd is in deze lijst."] }), "\n", (0, o.jsxs)(n.p, { children: ["Jules Ernst van 200 OK heeft van deze lijst een ", (0, o.jsx)(n.a, { href: "https://www.200ok.nl/tips/autocomplete/", children: "Nederlandse interpretatie" }), " gemaakt."] }), "\n", (0, o.jsxs)(n.p, { children: ["Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de ", (0, o.jsx)(n.a, { href: "/richtlijnen/formulieren/labels", children: "richtlijnen over labels" }), "."] }), "\n", (0, o.jsxs)(n.p, { children: ["Het gebruik van het juiste ", (0, o.jsx)(n.code, { children: "autocomplete" }), "-attribuut is nodig om te voldoen aan het WCAG-succescriterium ", (0, o.jsx)(n.a, { href: "/wcag/1.3.5/", children: "1.3.5 Identificeer het doel van de input" }), " (niveau AA)."] }), "\n", (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: "Let op" }), ": ", (0, o.jsx)(n.a, { href: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-autocomplete", children: "aria-autocomplete" }), " heeft een ander doel en ander gebruik dan autocomplete bij formuliervelden. ", (0, o.jsx)(n.code, { children: "aria-autocomplete" }), " wordt gebruikt in webcomponenten, bijvoorbeeld om aan te geven dat er suggesties zijn bij zoekresultaten."] })] });
    }
    function d(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
@@ -94,13 +94,13 @@
      })();
     }, [A]);
     const P = (0, d.useId)();
-    let W = d.Fragment;
+    let B = d.Fragment;
     return (
-     "paragraph" === x ? (W = b) : "document" === x ? (W = g) : "surface" === x && (W = v),
+     "paragraph" === x ? (B = b) : "document" === x ? (B = g) : "surface" === x && (B = v),
      (0, h.jsxs)("div", {
       className: (0, l.Z)(p["nlds-canvas"]),
       children: [
-       w && (0, h.jsx)("div", { className: (0, l.Z)(p["nlds-canvas__example"]), children: (0, h.jsx)("div", { className: "voorbeeld-theme", style: k, children: (0, h.jsx)(W, { children: (0, h.jsx)(o.pu, { children: w }) }) }) }),
+       w && (0, h.jsx)("div", { className: (0, l.Z)(p["nlds-canvas__example"]), children: (0, h.jsx)("div", { className: "voorbeeld-theme", style: k, children: (0, h.jsx)(B, { children: (0, h.jsx)(o.pu, { children: w }) }) }) }),
        j &&
         (0, h.jsx)("div", {
          className: (0, l.Z)(p["nlds-canvas__toolbar"]),
