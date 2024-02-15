@@ -5,7 +5,7 @@ authors:
   - name: Hidde de Vries
     title: Public relations & Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/hiddedevries/
-tags: [NL design system, design tokens]
+tags: [NL Design System, design tokens]
 hide_table_of_contents: false
 date: 2023-11-09
 ---

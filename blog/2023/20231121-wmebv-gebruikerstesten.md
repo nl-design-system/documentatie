@@ -5,7 +5,7 @@ authors:
   - name: Hidde de Vries
     title: Public relations lead & Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/hiddedevries/
-tags: [NL design system, gebruikerstesten, formulieren]
+tags: [NL Design System, gebruikerstesten, formulieren]
 hide_table_of_contents: false
 date: 2023-11-21
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png

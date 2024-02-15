@@ -5,7 +5,7 @@ authors:
   - name: Angela Imhof
     title: Projectmanager
     url: https://www.linkedin.com/in/angelaimhof
-tags: [update, NL design system]
+tags: [update, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/08/drie-mannen-design-system.jpg
 hide_table_of_contents: false
 date: 2020-08-04
@@ -35,9 +35,9 @@ Parallel aan de bouwsessies starten we ook met sessies voor het gebruik en de in
 
 ## Doe mee
 
-Benieuwd naar de [huidige versie](https://designsystem.gebruikercentraal.nl/) van het NL Design system? Kijk op onze website. Laat ons weten wat je ervan vindt. We kunnen je hulp goed gebruiken voor zowel de doorontwikkeling als de UX-sessies!
+Benieuwd naar de [huidige versie](https://designsystem.gebruikercentraal.nl/) van het NL Design System? Kijk op onze website. Laat ons weten wat je ervan vindt. We kunnen je hulp goed gebruiken voor zowel de doorontwikkeling als de UX-sessies!
 
-Je kunt ons ook vinden op Slack. Meld je aan bij onze [Slackgroep ‘NL Design system (praatmee.codefor.nl)’](https://praatmee.codefor.nl/) en blijf op de hoogte van de laatste ontwikkelingen.
+Je kunt ons ook vinden op Slack. Meld je aan bij onze [Slackgroep ‘NL Design System (praatmee.codefor.nl)’](https://praatmee.codefor.nl/) en blijf op de hoogte van de laatste ontwikkelingen.
 
 ## Links
 

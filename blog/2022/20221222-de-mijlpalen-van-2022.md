@@ -5,7 +5,7 @@ authors:
   - name: Laura van Swigchum
     title: Communicatieadviseur en Tekstschrijver ICTU | Gebruiker Centraal
     url: https://www.linkedin.com/in/lauravanswigchum/
-tags: [mijlpalen, NL design system]
+tags: [mijlpalen, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2022/06/Bryan-de-Jong.jpeg
 hide_table_of_contents: false
 date: 2022-12-22

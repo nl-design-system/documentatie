@@ -5,7 +5,7 @@ authors:
   - name: Edo Plantinga
     title: Freelance projectleider en communitymanager
     url: https://www.linkedin.com/in/edoplantinga
-tags: [een overheid, NL design system]
+tags: [een overheid, NL Design System]
 image: https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2019/01/Schermafbeelding-2019-01-25-om-13.28.37-e1548707554969.png
 hide_table_of_contents: false
 date: 2019-03-25

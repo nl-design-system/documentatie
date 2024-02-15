@@ -5,7 +5,7 @@ authors:
   - name: Angela Imhof
     title: Projectmanager
     url: https://www.linkedin.com/in/angelaimhof
-tags: [update, NL design system]
+tags: [update, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/08/drie-mannen-design-system.jpg
 hide_table_of_contents: false
 date: 2020-01-22

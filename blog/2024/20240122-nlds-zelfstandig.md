@@ -8,7 +8,7 @@ authors:
   - name: Hidde de Vries
     title: Public relations lead & Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/hiddedevries/
-tags: [meta, NL design system]
+tags: [meta, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blogpost-nlds-zelfstandig.png
 hide_table_of_contents: false
 date: 2024-01-22

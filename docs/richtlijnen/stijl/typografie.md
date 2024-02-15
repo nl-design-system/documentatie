@@ -1,9 +1,9 @@
 ---
-title: Typografie
+title: Typografie | Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Typografie
-sidebar_position: 1
+sidebar_position: 4
 pagination_label: Typografie
 description: Richtlijnen voor typografie
 keywords:
