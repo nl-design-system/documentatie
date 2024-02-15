@@ -5,7 +5,7 @@ authors:
   - name: Robbert Broersma
     title: Design System Lead NL Design System
     url: http://robbertbroersma.nl
-tags: [architectuur, NL design system]
+tags: [architectuur, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/05/MicrosoftTeams-image.png
 hide_table_of_contents: false
 date: 2021-05-21

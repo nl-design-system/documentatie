@@ -5,7 +5,7 @@ authors:
   - name: Jeroen Schalk
     title: Webredacteur en communicatieadviseur
     url: https://linkedin.com/in/ietsvanjeroen/
-tags: [lettertype, NL design system, Gebruiker Centraal]
+tags: [lettertype, NL Design System, Gebruiker Centraal]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2023/05/0412_Uitgelichte-afbeeldingen_NLDS-1024x576.jpg
 hide_table_of_contents: false
 date: 2023-04-11

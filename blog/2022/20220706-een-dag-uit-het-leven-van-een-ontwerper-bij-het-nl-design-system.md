@@ -5,7 +5,7 @@ authors:
   - name: Renate Bruinenberg
     title: Communicatieadviseur en Tekstschrijver ICTU | Gebruiker Centraal
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
-tags: [Figma, NL design system]
+tags: [Figma, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2022/06/Bryan-de-Jong.jpeg
 hide_table_of_contents: false
 date: 2022-07-06

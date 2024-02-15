@@ -40,7 +40,7 @@ Het component bestaat niet in het NL Design System maar wel bij een van de organ
 Het component voldoet verder wel aan de wensen en heeft voldoende design tokens om aan het design te voldoen.
 
 - Gebruik dit component dan met de organisatie prefix van de bestaande component en gebruik deze prefix ook voor de component design tokens.
-- Laat ons ook weten dat dit component succesvol is ingezet zodat we kunnen overwegen het component op te nemen in het NL Design system met de `nl` prefix.
+- Laat ons ook weten dat dit component succesvol is ingezet zodat we kunnen overwegen het component op te nemen in het NL Design System met de `nl` prefix.
 
 ## 3. Een component met kleine wijziging
 
