@@ -26,11 +26,14 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## Korte samenvatting
 
-Het moet zichtbaar zijn welk element de toetsenbordfocus heeft, wanneer je de website navigeert met een toetsenbord of vergelijkbare bediening.
+Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je de website navigeert met een toetsenbord of vergelijkbare bediening.
+
+**Let op**: Voor WCAG 2.4.7, versie 2.2 niveau AA is het [intact houden van de browser-outline](https://www.w3.org/WAI/WCAG22/Techniques/general/G149.html) voldoende, maar voor het NL Design System houden we ook het WCAG-succescriterium [2.4.13 Focusweergave](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html), (niveau AAA) aan dat eisen stelt aan aan de weergave en het kleurcontrast van de focusring (outline).
 
 ## Gerelateerde NL Design System-richtlijnen
 
-Formulieren - Visueel Ontwerp: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/alle-richtlijnen/visueel-ontwerp).
+- Formulieren - Visueel Ontwerp: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp).
+- Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord).
 
 ## Bronnen
 
@@ -45,8 +48,9 @@ Formulieren - Visueel Ontwerp: [Maak de toetsenbordfocus goed zichtbaar](/richtl
 Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt.
 Als in de CSS de outline is verwijderd (`outline: none;`), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft.
 
-Voor WCAG 2.4.7 2.2 niveau AA is het [intact houden van de browser-outline](https://www.w3.org/WAI/WCAG22/Techniques/general/G149.html) voldoende.
+Additionele testen:
 
-Check ook of de outline (of het alternatief) goed zichtbaar is in dark- en light-mode als deze aangeboden worden op de webpagina.
+- de [skip link](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css_css-skip-link--docs) wordt zichtbaar als deze toetsenbord krijgt.
+- de outline (of het alternatief) is goed zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.
 
 <WCAGFooterInfo />
