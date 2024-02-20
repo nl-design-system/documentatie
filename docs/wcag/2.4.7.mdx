@@ -48,9 +48,11 @@ Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer j
 Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt.
 Als in de CSS de outline is verwijderd (`outline: none;`), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft.
 
+Voor dit succescriterium is intact houden van de browser-outline voldoende, maar test ook op het WCAG-succescriterium [2.4.13: Focusweergave](/wcag/2.4.13). Hierbij is kleurcontrast en dikte van de focusring van belang.
+
 Additionele testen:
 
 - de [skip link](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css_css-skip-link--docs) wordt zichtbaar als deze toetsenbord krijgt.
-- de outline (of het alternatief) is goed zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.
+- de outline (of het alternatief) is zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.
 
 <WCAGFooterInfo />
