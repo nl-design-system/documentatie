@@ -30,29 +30,35 @@ De componenten van NL Design System worden met een [estafette aanpak]('/handboek
 
 Dit component bestaat nog niet, maar de rationale is duidelijk, elke organisatie die hem nodig heeft kan hem ontwikkelen volgens NL Design System architectuur:
 
-- Staat in de publieke Backlog van NL Design System
+- Staat in de [publieke Backlog](https://github.com/nl-design-system/backlog/issues) van NL Design System
 - Er is een rationale opgesteld wat het component is en waarom het nodig is
+- Screenshots verzameld van het component in diverse huisstijlen
+- Varianten van het component die regelmatig voorkomen opgeschreven en beschreven wanneer je ze gebruikt
+- Screenshots verzameld van iedere variatie in diverse huisstijlen
 - Kernteam en community verwachten dat het component voor meerdere organisaties inzetbaar kan zijn
-- De rationale is onderbouwd door gebruikersonderzoek (eigen of van andere design systems)
-- De rationale is door het kernteam gereviewed
+- De rationale is onderbouwd door gebruikersonderzoek (eigen of van anderen)
+- De rationale is door het kernteam bevestigd
+- Component is vindbaar op de NL Design System website
 
 ### Community
 
 Dit component bestaat in de community, op één of meer plekken. Om bij NL Design System als 'Community component' genoemd te worden moet het component naast alle 'Help wanted' criteria aan de volgende voorwaarden voldoen:
 
-- Component implementatie voldoet aan de rationale
-- Component is geclaimed door de organisatie in de publieke backlog
+- Component implementatie van 1 of meer varianten voldoen aan de rationale
+- Component is publiek beschikbaar
+- Component en varianten hebben voldoende design tokens om de huisstijlen uit de verzamelde screenshots mogelijk te maken
 - Component heeft de EUPL-1.2 licentie
-- Component UX en A11y documentatie heeft de Creative Commons 0 licentie (CC0)
+- Component documentatie heeft de Creative Commons 0 licentie (CC0)
+- Component is beschikbaar als CSS component
 - Component API's zijn geprefixed met de prefix van de verantwoordelijke organisatie
-- Codebase van de component gebruikt linting en automatische code-formatting zoals Prettier
-- Component is vindbaar op de NL Design System website
-- Component staat in Storybook van de verantwoordelijke organisatie
-- Component is opgenomen in de Storybook met alle NL Design System thema's
-- Component is beschikbaar in de Figma bibliotheek van de verantwoordelijke organisatie
-- Component is besproken in het UX-overleg en/of tijdens de heartbeat en is klaar om door de community gebruikt te worden
-- Component voldoet aan de Definition of Done van de verantwoordelijke organisatie
+- Component staat in, publiek beschikbare, Storybook van de verantwoordelijke organisatie
+- Component is opgenomen in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/)
 - Visuele regressietests zijn beschikbaar voor het component in de thema-storybook
+- Component is beschikbaar in de NL Design System Figma bibliotheek.
+- Component storybook en figma linkjes zijn toegevoegd aan de component index
+- Component is beschikbaar in de NLDS component Quick Scan
+- Component status is aangepast
+- Component is in een heartbeat, Slack en nieuwsbrief geïntroduceerd
 
 ### Candidate
 
@@ -60,54 +66,35 @@ Dit component is opgenomen in de `@nl-design-system-unstable` organisatie. Het k
 Het component moet mogelijk nog extra goed getest worden en extra stabiel worden gemaakt.
 Omdat het component wel door het kernteam onderhouden wordt voldoet het naast de meeste Community DoD eisen al wel aan veel meer criteria voor stabiel hergebruik:
 
-- Community component is ingezet door 2 of meer organisaties
+- Community component is ingezet door 2 of meer organisaties met verschillende huisstijlen
 - Figma component in de NL Design System bibliotheek is in lijn met het component in code
-- Aliassen van (niet) geimplementeerde alternatieve componenten zijn vastgelegd in documentatie
-- Verwijzing naar extern gebruikersonderzoek die tot de keuze van dit component leiden
-- Component heeft documentatie in Storybook over hoe het te gebruiken
-- Accessibility/inclusie toolkit documentatie is beschikbaar voor de overwegingen die op dit component van toepassing zijn
-- Component is geschikt voor internationalisatie
-- Component kan omgaan met verschillende soorten content, zoals heel veel of juist heel weinig tekst etc.
-- Component implementatie is op toegankelijkheid getoetst door leden van het kernteam
-- Semantiek van het component is goedgekeurd door het kernteam
-- Design tokens en API's zijn geprefixed met `nl`
-- Design tokens volgen conventies
-- Hergebruik van logische `common` tokens is geïmplementeerd om theming makkelijk te houden.
-- API volgt conventies
-- NPM scope: `@nl-design-system-unstable`
+- Aliassen van niet geïmplementeerde alternatieve componenten zijn vastgelegd in documentatie
+- Anatomie van het component is vastgelegd
+- Het component is waar nodig versimpelt of opgesplitst. Zodat er één of meerdere componenten over zijn met een duidelijke use-case en documentatie
 - Het component heeft geen organisatie specifieke API's meer, alle API's zijn gebaseerd op een gemeenschappelijke usecase
+- API volgt conventies en is geprefixed met 'nl'
+- Design tokens volgen conventies en zijn geprefixed met 'nl'
+- Hergebruik van logische common tokens is geïmplementeerd om theming makkelijk te houden.
 - Alle design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties
-- Het component is geen monster component waar de documentatie of API's veel te complex zijn. Als nodig wordt de code van het community component opgeknipt en/of versimpeld
-- Component werkt in meerdere thema's
-- Component heeft regressietests voor ten minste 2 thema's
-- Changelog wordt gegenereerd
-- Component is in een heartbeat, andere publieke demo of nieuwsbrief getoond
+- Component beschikbaar in NL Design System storybook
+- Component als candidate beschikbaar Figma library
+- Component heeft dezelfde documentatie op de website, Figma en Storybook over hoe te gebruiken
+- Stories, Figma voorbeelden en unit tests hebben coverage van alle features
+- Verwijzing naar extern gebruikersonderzoek beschikbaar die tot de keuze van dit component leiden
+- Accessibility en inclusie documentatie is beschikbaar voor de overwegingen die op dit component van toepassing zijn
+- Semantiek (roles, names, states in HTML/ARIA) van het component is goedgekeurd door het kernteam
+- Component implementatie en documentatie is op toegankelijkheid getest door leden van het kernteam
+- Component is getest op geschiktheid voor internationalisatie
+- Component kan omgaan met verschillende soorten content, zoals heel veel, missende of juist heel weinig content.
+- Codebase van het component gebruikt linting en automatische code-formatting met Prettier volgens NL Design System configuraties
+- Component beschikbaar in NPM scope: @nl-design-system-unstable
+- Changelog wordt gepubliceerd bij nieuwe versies
+- Documentatie is bij de doelgroepen getest en goed bevonden
+- Component status is aangepast
 
 ### Hall of fame
 
 Een component met deze status is bewezen door gebruikname in productie bij ten minste twee verschillende organisaties. Het component is daarmee in gebruik getest, zowel door developers als door gebruikers en heeft een toegankelijkheids audit succesvol doorlopen.
 Het gebruiksvriendelijk en toegankelijk gebruik van het component in context is goed gedocumenteerd, zodat designers en developers in staat zijn het component op de juiste manier in de context van hun eigen project in te zetten. Ook kan je ervan uitgaan dat de API's van het component, zoals Design Tokens en naamgeving stabiel blijven en worden updates vanaf nu voorzien van duidelijke changelogs en semantische versies die `breaking changes` goed communiceren.
 
-- Toegankelijk volgens audit
-- algemeen genoeg
-- Richtlijnen voor design tokens invullen
-- Richtlijnen voor toegankelijkheid inzetten
-- Documentatie: Do's en don'ts
-- Documentatie eventueel slecht gebruik met alternatieve component
-- Richtlijnen voor redacteuren
-- meerdere organisaties zijn tevreden
-- meerdere organisaties hebben component in toegankelijkheids audit getest
-- geen known issues voor a11y
-- Risico's m.b.t. beveiliging (security) zijn gedocumenteerd
-- Risico's m.b.t. privacy (AVG) zijn gedocumenteerd
-- npm scope: @nl-design-system
-- Getest met afnemers van design system: designer
-- Getest met afnemers van design system: developer
-- Getest met afnemers van design system: redacteur
-- Community (2+ organisaties) is geswitcht van eigen naar candidate component
-- Semver is goed geregeld
-- Semver linting is 'waterdicht'
-- Figma component is geversioneerd
-- Documentatie over updaten van het Figma component is compleet
-- Webcomponent of verschillende framework componenten beschikbaar
-- Component logica is opgenomen in regressietests
+_Aan de Definition of Done van de Hall of Fame wordt nog gewerkt_
