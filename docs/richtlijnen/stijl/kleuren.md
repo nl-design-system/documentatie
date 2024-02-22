@@ -78,7 +78,7 @@ Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een 
 
 #### Interactie
 
-Het is verstandig om vanuit je kleurenpalet één kleur als uitgangspunt aan te houden voor interactie. Door dat te doen, help je gebruikers interactieve elementen te herkennen, en wordt je interface geen kleuren kermis. Een blauwe tint geeft het sterkste signaal voor interactie, maar andere kleuren werken bijna net zo goed. Gebruik deze kleur vervolgens niet meer voor niet-interactieve elementen. Dus wel voor buttons, links, breadcrumbs, pagination, accordions, etc. Maar niet voor headings.
+Het is verstandig om vanuit je kleurenpalet één kleur als uitgangspunt aan te houden voor interactie. Door dat te doen, help je gebruikers interactieve elementen te herkennen, en wordt je interface geen kleurenkermis. Een blauwe tint geeft het sterkste signaal voor interactie, maar andere kleuren werken bijna net zo goed. Gebruik deze kleur vervolgens niet meer voor niet-interactieve elementen. Dus wel voor buttons, links, breadcrumbs, pagination, accordions, etc. Maar niet voor headings.
 
 ## Overig
 
