@@ -16,5 +16,5 @@ Het design system van GOV.UK geeft duidelijke (Engelstalige) informatie over de 
 
 Het schrijven van foutmeldingen en een duidelijke toelichting op wat er mis gaat, is nodig om te voldoen de volgende WCAG-succescriteria:
 
-- [3.3.1 Foutidentificatie](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html) (niveau A).
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/) (niveau A).
 - [3.3.3 Foutsuggestie](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html) (niveau AA).
