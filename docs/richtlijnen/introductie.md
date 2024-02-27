@@ -18,7 +18,6 @@ Het NL Design system geeft richtlijnen voor het bouwen van webcomponenten. Hierb
 
 ## De richtlijnen zijn onderverdeeld in:
 
-- [Richtlijnen voor taalgebruik](/richtlijnen/tekst-en-taalgebruik)
 - [Richtlijnen voor stijl](/richtlijnen/stijl/)
 - [Richtlijnen voor formulieren](/richtlijnen/formulieren/)
 
