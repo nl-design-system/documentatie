@@ -33,12 +33,14 @@ Taal in het NL Design System bestaat uit meerdere niveaus. Op een hoog niveau ge
 Taal en toegankelijkheid gaan hand in hand. Het is niet vanzelfsprekend dat alle gebruikers een tekst direct begrijpen. Duidelijke taal zorgt er voor dat iedereen begrijpt wat je met je tekst wilt overbrengen.
 
 Veel mensen hebben baat bij duidelijke taal, denk bijvoorbeeld aan mensen die
+
 - laaggeletterd zijn;
 - Nederlands niet als moedertaal hebben;
 - met autisme;
 - met dyslexie.
 
 #### Mensen die laaggeletterd zijn
+
 Mensen die laaggeletterd zijn hebben moeite met lezen, schrijven en/of rekenen. Verwar dit niet met de term analfabeten. Ze kunnen wel lezen en schrijven, maar beheersen niet het eindniveau vmbo of niveau mbo-2/3.
 
 #### Mensen die Nederlands niet als moedertaal hebben
@@ -97,6 +99,7 @@ Op 200Ok.nl staat een [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/):
 
 ![Diep oranje zonsondergang met het silhouet van een drone.](https://images.unsplash.com/photo-1489558546780-a69e0b3293e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80)
 Voor de bovenstaande afbeelding kunnen twee verschillende alt-teksten van toepassing zijn, afhaneklijk van de context.
+
 1. Diep oranje zonsondergang met het silhouet van een drone.
 2. De camera is ingesteld om de zonsondergang correct te belichten, waardoor de drone op de voorgrond een silhouet wordt.
 
@@ -127,7 +130,6 @@ Eenvoudig geschreven tekst:
 - Vermijd vakjargon en ‘buzzwords’.
 - Vermijd het gebruik van metaforen.
 - Vermijd het gebruik van Latijnse tekst.
-
 
 ## Zorg voor correcte en consistente grammatica
 
