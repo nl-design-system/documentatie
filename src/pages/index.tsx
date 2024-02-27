@@ -55,11 +55,10 @@ export default function Home() {
                   <Heading2>Richtlijnen</Heading2>
                   <Paragraph>
                     Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
-                    Maar ook richtlijnen voor tekst en taalgebruik.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/richtlijnen/tekst-en-taalgebruik" className="utrecht-link">
+                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
                     Bekijk de richtlijnen
                   </DocusaurusLink>
                 </Paragraph>
