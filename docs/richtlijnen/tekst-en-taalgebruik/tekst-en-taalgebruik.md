@@ -14,7 +14,9 @@ keywords:
 
 ## Introductie
 
-De overheid moet duidelijk communiceren. Dat betekent: rekening houden met je lezer, een persoonlijke benadering kiezen en ervoor zorgen dat de taal begrijpelijk is. Zorg er daarom voor dat begrijpelijke taal in een vroeg stadium van de productontwikkeling gewaarborgd is.
+De overheid moet duidelijk communiceren, zodat iedere inwoner van Nederland de aangeboden informatie begrijpt.
+
+Dat betekent: rekening houden met je lezer, een persoonlijke benadering kiezen en ervoor zorgen dat de taal begrijpelijk is. Zorg er daarom voor dat begrijpelijke taal in een vroeg stadium van de productontwikkeling gewaarborgd is.
 
 Publieke organisaties hebben contact met veel verschillende mensen. Hoe zorg je voor duidelijke taal? Hoe maak je jouw communicatieboodschap inclusief en dus begrijpelijk voor iedereen?
 
@@ -22,79 +24,45 @@ Taal in het NL Design System bestaat uit meerdere niveaus. Op een hoog niveau ge
 
 ### Content soorten
 
-#### Informerende tekst
+- Informerende tekst: Lopende artikel tekst, tabellen tekst.
+- Service-content, zoals een uitleg, veelgestelde vragen en contactgegevens.
+- Teksten in formulieren, zoals knoptekst, formulierlabels, feedbacktekst en contextuele uitleg.
 
-Lopende artikel tekst, tabellen tekst.
+### Voor wie schrijven we
 
-#### Service-content
+Taal en toegankelijkheid gaan hand in hand. Het is niet vanzelfsprekend dat alle gebruikers een tekst direct begrijpen. Duidelijke taal zorgt er voor dat iedereen begrijpt wat je met je tekst wilt overbrengen.
 
-Bv. help bestanden, veelgestelde vragen, contactgegevens.
+Veel mensen hebben baat bij duidelijke taal, denk bijvoorbeeld aan mensen die
+- laaggeletterd zijn;
+- Nederlands niet als moedertaal hebben;
+- met autisme;
+- met dyslexie.
 
-#### ‘Applicatieve’ tekst
-
-Bv. knoptekst, formulierlabels, feedbacktekst, contextuele helptekst.
-
-## Voor wie schrijven we
-
-Taal en toegankelijkheid gaan hand in hand. Als de tekst over een product niet of moeilijk begrepen wordt, dan is het product niet toegankelijk. Duidelijke taal zorgt er voor dat iedereen begrijpt wat je met je tekst wilt overbrengen.
-
-Veel mensen hebben baat bij duidelijke taal:
-
-### Mensen die laaggeletterd zijn
-
+#### Mensen die laaggeletterd zijn
 Mensen die laaggeletterd zijn hebben moeite met lezen, schrijven en/of rekenen. Verwar dit niet met de term analfabeten. Ze kunnen wel lezen en schrijven, maar beheersen niet het eindniveau vmbo of niveau mbo-2/3.
 
-### Mensen die Nederlands niet als moedertaal hebben
+#### Mensen die Nederlands niet als moedertaal hebben
 
 Het kunnen mensen zijn die doof zijn en waarbij gebarentaal hun moedertaal is. Nederlandse Gebarentaal (NGT) heeft een andere grammatica en vocabulaire. Het zijn ook mensen met een migratieachtergrond en die een andere moedertaal hebben dan het Nederlands.
 
 Test met vertaaldiensten. Sommige gebruikers maken gebruik van vertaaldiensten als Google Translate om formulieren te bekijken, bijvoorbeeld inwoners die het Nederlands niet machtig zijn. Optimaliseer voor compatibiliteit met dit soort diensten: zorg bijvoorbeeld dat het vervangen van woorden of zinnen door langere of kortere teksten de lay-out ongedeerd laat.
 
-### Mensen met autisme
+#### Mensen in het autismespectrum
 
-Mensen met autisme hebben moeite met begrijpend lezen. Zij vatten woorden letterlijk op.
+Mensen met autisme kunnen informatie anders verwerken, daardoor kan het voorkomen dat ze woorden letterlijk opvatten. Vermijd daarom het gebruik van figuurlijk taalgebruik.
 
-### Mensen die dyslectisch zijn
+#### Mensen met dyslexie
 
-Mensen die dyslectisch zijn hebben behoefte aan begrijpelijke taal, goede opmaak zoals koppen, voldoende wit tussen de regels, opsommingen.
+Mensen met dyslexie hebben een probleem met technisch lezen. Gebruik daarom een goede opmaak zoals een duidelijke structuur, kopjes, alinea's, voldoende wit tussen de regels en opsommingen.
 
-Hoger opgeleiden hebben ook baat bij begrijpelijke taal. Zij lezen ook liever een tekst in B1 geschreven. Maar denk ook aan aan mensen die zorgen en stress hebben en zaken moeten regelen bij de overheid.
-
-### Genderinclusiviteit
-
-0.6 á 0.7% van de Nederlandse bevolking is transgender. Daarnaast identificeert 3.9% van de bevolking zich niet of niet eenduidig met het geboortegeslacht.
-
-In formulieren wordt vaak gevraagd naar het geslacht. Meestal is de keuze hierbij beperkt tot man of vrouw. Het vragen naar het geslacht dient echter te worden vermeden. Mocht dit toch nodig blijken, biedt dan een neutrale optie aan. Op advies van belanghebbenden, zoals het transgendernetwerk TNN, wordt hiervoor ‘Niet relevant’ als text label gebruikt en daarmee de mogelijkheid gegeven neutraal te antwoorden op de sekse-uitvraag.
-
-De keuze voor ‘man/vrouw/niet relevant/geen keuze’ heeft invloed op de aanhef en communicatie naar de gebruiker toe.
-
-Wanneer je een groep mensen aan wilt spreken, gebruik dan datgene wat ze allemaal gemeen hebben, bijvoorbeeld:
-
-- Geachte aanwezigen
-- Beste lezers
-- Beste mensen
-- Beste inwoners
-
-Je hoeft een groep mensen niet per se als groep aan te spreken, maar ook hier kan je hen aanspreken door te gebruiken wat ze allemaal gemeen hebben, bijvoorbeeld:
-
-- Geachte aanwezige
-- Beste lezer
-- Beste inwoner
-
-Wanneer je wel over voor- en achternaam beschikt en mensen individueel aan kan spreken gebruik dan bijvoorbeeld:
-
-- Beste Sam de Jong
-- Geachte W.G. Jansen
-
-Wanneer je iemands voornaam weet, dan kan je deze gebruiken in plaats van ‘mevrouw’ of ‘meneer’.
-
-Zie [het Genderdoeboek (pdf)](https://www.transgendernetwerk.nl/wp-content/uploads/Het-Genderdoeboek-2017.pdf) van Transgender netwerk Nederland en [de pagina over het terugdringen van onnodige vragen naar sekse](https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm) voor meer informatie.
+Uiteindelijk heeft iedereen baat bij begrijpelijke taal. Iedereen kan in een situatie terechtkomen waardoor je zorgen en stress krijgt. Daardoor kan het op dat moment ook lastiger zijn om een tekst direct te begrijpen.
 
 #### Do
 
 - Schrijf korte, actieve zinnen met dagelijks taalgebruik
 - Gebruik alternatieven om tekst te ondersteunen zoals afbeeldingen, video en spraak
-- Tracht meerkeuze antwoorden in formulieren te gebruiken
+- Gebruik een duidelijke tekststructuur, denk hierbij aan kopjes, alinea's, voldoende wit tussen de regels en opsommingen
+- Gebruik meerkeuzevragen in formulieren
 - Zorg voor rustige webpagina’s
 - Geef waar nodig positieve feedback, uitleg en hulp
 - Zorg ervoor dat voor dezelfde dingen dezelfde termen worden gebruikt
@@ -104,20 +72,17 @@ Zie [het Genderdoeboek (pdf)](https://www.transgendernetwerk.nl/wp-content/uploa
 - Vermijd jargon
 - Vermijd afkortingen
 - Vermijd kinderachtig taalgebruik
-- Vermijd abstracte figuren
+- Vermijd passief taalgebruik, denk aan woorden zoals zullen, worden, kunnen
+- Vermijd figuurlijk taalgebruik
 - Vermijd metaforen
 - Vermijd sarcasme en ironie
-- Vermijd open tekstvelden en voorkom dat een gebruiker veel moet typen in formulieren
+- Voorkom dat een gebruiker veel moet typen in formulieren
 - Vermijd afleiding zoals banners of drukke achtergronden
 - Voorkom tijdsdruk
 
-### Screenreaders
+### Alternatieve tekst voor afbeeldingen
 
-#### Alternatieve tekst voor afbeeldingen
-
-Afbeeldingen kun je toegankelijk maken door ze te voorzien van een tekstueel alternatief. Alternatieve of ‘alt-’tekst wordt gebruikt om te beschrijven wat op een informatieve afbeelding weergegeven wordt. Dit wordt alleen voor afbeeldingen gebruikt die daadwerkelijk informatie toevoegen en niet voor decoratieve afbeeldingen. Deze tekst wordt tevens weergegeven in gevallen dat afbeeldingen niet laden en geïndexeerd door zoekmachines.
-
-Naast een beschrijving over wat er op de afbeelding staat is het belangrijk in de alt-tekst je bedoeling met de afbeelding over te brengen, afhankelijk van de context.
+Maak afbeeldingen toegankelijk voor mensen met een visuele beperking door een alternatieve tekst toe te voegen. Gebruik alternatieve of 'alt-tekst' om te beschrijven wat er op een informatieve afbeelding wordt weergegeven. Pas dit toe op afbeeldingen die daadwerkelijk informatie toevoegen, niet op decoratieve afbeeldingen. De tekst wordt ook weergegeven wanneer afbeeldingen niet laden en zoekmachines indexeren deze voor betere vindbaarheid.
 
 Vragen om jezelf te stellen bij het maken van een alternatieve tekst:
 
@@ -128,16 +93,14 @@ Vragen om jezelf te stellen bij het maken van een alternatieve tekst:
 
 Op 200Ok.nl staat een [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/): wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
 
-##### Voorbeeld zonsondergang met drone
+### Voorbeeld zonsondergang met drone
 
 ![Diep oranje zonsondergang met het silhouet van een drone.](https://images.unsplash.com/photo-1489558546780-a69e0b3293e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80)
-
+Voor de bovenstaande afbeelding kunnen twee verschillende alt-teksten van toepassing zijn, afhaneklijk van de context.
 1. Diep oranje zonsondergang met het silhouet van een drone.
 2. De camera is ingesteld om de zonsondergang correct te belichten, waardoor de drone op de voorgrond een silhouet wordt.
 
-## Richtlijnen voor leesbaarheid
-
-### Duidelijke, klare taal
+## Schrijf leesbare teksten
 
 Maak teksten duidelijk en begrijpelijk.
 
@@ -165,13 +128,12 @@ Eenvoudig geschreven tekst:
 - Vermijd het gebruik van metaforen.
 - Vermijd het gebruik van Latijnse tekst.
 
-### Woorden om te vermijden, en hun alternatieven
 
-## Taalregels en grammatica
+## Zorg voor correcte en consistente grammatica
 
 ### Aanhalingstekens
 
-Altijd enkele aanhalingstekens gebruiken, ook al is het een uitspraak van een persoon.
+Gebruik enkele aanhalingstekens, ook al is het een uitspraak van een persoon.
 
 ### Aanspreekvorm
 
@@ -337,7 +299,7 @@ Bij 0900 nummers: 0900 - 0001 (€ 0,10/minuut)
 
 Vermijd het onderlijnen van tekst. Reserveer tekst onderlijning voor links.
 
-## Content ontwerp
+## Gebruik een duidelijke contentstructuur
 
 Webteksten beginnen met de essentie van de boodschap, de ‘conclusie’, met hierna de uitleg en achtergronden, de omgekeerde piramide. Bovenin staat de belangrijkste boodschap, onderin de minst belangrijke informatie. Het is essentieel dat de lezer aan de titel en het begin van de inleiding kan zien waarover de pagina gaat. Zorg voor call-to-actions zoals een link naar een download, contactinformatie of een andere website met meer informatie. Eindtekst kan verwijzing naar andere pagina of document zijn.
 
