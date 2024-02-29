@@ -1,4 +1,6 @@
 module.exports = {
+  dep: ['dev', 'prod'],
+  install: 'always',
   reject: [
     ...Object.keys({
       // Defer upgrading to Docusaurus 3.1.1 because of _a lot_ of warnings,
@@ -16,4 +18,8 @@ module.exports = {
       '@docusaurus/types': '3.1.0',
     }),
   ],
+  root: true,
+  target: 'patch',
+  upgrade: true,
+  workspaces: true,
 };
