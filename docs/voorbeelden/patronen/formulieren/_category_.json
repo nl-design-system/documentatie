@@ -1,3 +1,9 @@
 {
-  "label": "Formulieren"
+  "label": "Formulieren",
+  "link": {
+    "type": "generated-index",
+    "title": "Patronen - Formulieren",
+    "keywords": ["patronen", "formulieren"],
+    "slug": "voorbeelden/patronen/formulieren"
+  }
 }
