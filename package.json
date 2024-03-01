@@ -86,7 +86,7 @@
     "@lerna-lite/publish": "3.2.1",
     "@lerna-lite/run": "3.2.1",
     "@lerna-lite/version": "3.2.1",
-    "@mdx-js/react": "3.0.0",
+    "@mdx-js/react": "3.0.1",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.121",
     "@nl-design-system/component-index": "1.0.0-alpha.18",
