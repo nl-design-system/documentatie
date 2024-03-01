@@ -88,7 +88,7 @@
     "@lerna-lite/version": "3.2.1",
     "@mdx-js/react": "3.0.0",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
-    "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.121",
+    "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.126",
     "@nl-design-system/component-index": "1.0.0-alpha.18",
     "@playwright/test": "1.41.2",
     "@types/node": "20.11.16",

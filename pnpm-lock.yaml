@@ -100,8 +100,8 @@ importers:
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 1.0.0-alpha.121
-        version: 1.0.0-alpha.121
+        specifier: 1.0.0-alpha.126
+        version: 1.0.0-alpha.126
       '@nl-design-system/component-index':
         specifier: 1.0.0-alpha.18
         version: 1.0.0-alpha.18
@@ -2905,8 +2905,8 @@ packages:
       '@types/react': 18.2.55
       react: 18.2.0
 
-  /@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.121:
-    resolution: {integrity: sha512-Gpel6fj6rLp39zss0+yBhNj4AD35k6LOtxxPJCiJzXgdJ6E+AAE6Lp6ErpUt51xoouh0LnAzP+d2PszswG0bTA==}
+  /@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.126:
+    resolution: {integrity: sha512-xnb1AypyvK5Tx6lxcbv1uPtD5FA60QljUMoqKQbtR7kn0l9MCPgkAILdSW2fMoctuSuX3YjAGi0mZuLUuwe6OA==}
     dev: true
 
   /@nl-design-system/component-index@1.0.0-alpha.18:
