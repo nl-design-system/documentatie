@@ -46,8 +46,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@argos-ci/cli':
-        specifier: 1.0.9
-        version: 1.0.9
+        specifier: 1.0.11
+        version: 1.0.11
       '@argos-ci/playwright':
         specifier: 1.9.0
         version: 1.9.0
@@ -411,12 +411,12 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: true
 
-  /@argos-ci/cli@1.0.9:
-    resolution: {integrity: sha512-BcOT3EOXrwp7N61fKKuXmfBv44OwJreL1TP3cybNulEpAN8sM1yqkabX5SCiHS4hDKX1LBFudlkpSuej5namZA==}
+  /@argos-ci/cli@1.0.11:
+    resolution: {integrity: sha512-pZjjxljBUN22Dz3Q8n5JUUm7yzrny/XdsyJU5soMpGPGwD6oNaDdFucyyIDv07qck/qTG85GlNord/0SuqHZBA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 1.5.2
+      '@argos-ci/core': 1.5.4
       commander: 11.1.0
       ora: 7.0.1
       update-notifier: 6.0.2
@@ -429,6 +429,21 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/util': 1.2.0
+      axios: 1.6.3(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/core@1.5.4:
+    resolution: {integrity: sha512-XgRJSJYfauCbqOGNLFFiVri70TAp0TORfKrK/6yXyt7k9NgZD6vD10hUhSMeJP7REwYrqD3wxY7l85K+wwoo3Q==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.1
       axios: 1.6.3(debug@4.3.4)
       convict: 6.2.4
       debug: 4.3.4
@@ -453,6 +468,11 @@ packages:
 
   /@argos-ci/util@1.2.0:
     resolution: {integrity: sha512-e/sAEECDzUr02v5sXPcd1Ky3WqNOMDWkutfBC8RBizj3Z+CUp6uwV+bzyTZaE9Zms9WekqXAfKe1rZkEie+DrA==}
+    engines: {node: '>=16.0.0'}
+    dev: true
+
+  /@argos-ci/util@1.2.1:
+    resolution: {integrity: sha512-/o7t0TcSED3BsBnnPrvXdmT+reThGMoGC9Lk+TTghrEE9GFlSKhjBmfYt4fUgXj5hQIe5tcdO01BVB2TsjjYSw==}
     engines: {node: '>=16.0.0'}
     dev: true
 
