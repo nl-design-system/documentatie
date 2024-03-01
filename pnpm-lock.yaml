@@ -30,8 +30,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0
       html-react-parser:
-        specifier: 5.1.1
-        version: 5.1.1(react@18.2.0)
+        specifier: 5.1.8
+        version: 5.1.8(@types/react@18.2.55)(react@18.2.0)
       iframe-resizer-react:
         specifier: 1.1.0
         version: 1.1.0(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -7674,8 +7674,8 @@ packages:
       readable-stream: 2.3.8
       wbuf: 1.7.3
 
-  /html-dom-parser@5.0.7:
-    resolution: {integrity: sha512-2YD2/yB0QgrlkBIn0CsGaRXC89E1gtuPVpiOGC52NTzPCC83n0WMdGD+5q7lpcKqbCpnWValQbovuy/NI/0kag==}
+  /html-dom-parser@5.0.8:
+    resolution: {integrity: sha512-vuWiX9EXgu8CJ5m9EP5c7bvBmNSuQVnrY8tl0z0ZX96Uth1IPlYH/8W8VZ/hBajFf18EN+j2pukbCNd01HEd1w==}
     dependencies:
       domhandler: 5.0.3
       htmlparser2: 9.1.0
@@ -7720,13 +7720,18 @@ packages:
       relateurl: 0.2.7
       terser: 5.26.0
 
-  /html-react-parser@5.1.1(react@18.2.0):
-    resolution: {integrity: sha512-L5VK0rKN3VM7uzRH+4wxAL9elvHuCNDjyWKKjcCDR+YWW5Qr7WWSK7+e627DcePVAFi5IMqc+rAU8j/1DpC/Tw==}
+  /html-react-parser@5.1.8(@types/react@18.2.55)(react@18.2.0):
+    resolution: {integrity: sha512-oAXgUB4JYHFg4le3RQZtoge1TGMkwXSZPiWiexwdx3AuldgG+QEvbwMrscSViu90JNje3V4Zq5gCUSoTxa0W0A==}
     peerDependencies:
+      '@types/react': 17 || 18
       react: 0.14 || 15 || 16 || 17 || 18
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
     dependencies:
+      '@types/react': 18.2.55
       domhandler: 5.0.3
-      html-dom-parser: 5.0.7
+      html-dom-parser: 5.0.8
       react: 18.2.0
       react-property: 2.0.2
       style-to-js: 1.1.10
