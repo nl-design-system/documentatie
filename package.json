@@ -92,7 +92,7 @@
     "@nl-design-system/component-index": "1.0.0-alpha.18",
     "@playwright/test": "1.41.2",
     "@types/node": "20.11.16",
-    "@typescript-eslint/eslint-plugin": "6.20.0",
+    "@typescript-eslint/eslint-plugin": "7.0.0",
     "@typescript-eslint/parser": "6.20.0",
     "@utrecht/component-library-css": "3.0.0",
     "@utrecht/component-library-react": "3.0.0",
