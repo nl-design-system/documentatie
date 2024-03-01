@@ -90,7 +90,7 @@
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.121",
     "@nl-design-system/component-index": "1.0.0-alpha.18",
-    "@playwright/test": "1.41.2",
+    "@playwright/test": "1.42.0",
     "@types/node": "20.11.16",
     "@typescript-eslint/eslint-plugin": "6.20.0",
     "@typescript-eslint/parser": "6.20.0",
