@@ -84,7 +84,7 @@
     "@fontsource/source-sans-pro": "5.0.8",
     "@lerna-lite/cli": "3.2.1",
     "@lerna-lite/publish": "3.2.1",
-    "@lerna-lite/run": "3.2.1",
+    "@lerna-lite/run": "3.3.0",
     "@lerna-lite/version": "3.2.1",
     "@mdx-js/react": "3.0.0",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
