@@ -12,5 +12,9 @@ RedirectMatch 301 "^/meedoen/als-developer/(.*)$" "/handboek/developer$1"
 RedirectMatch 301 "^/meedoen/als-designer/(.*)$" "/handboek/designer$1"
 RedirectMatch 301 "^/meedoen(.*)$" "/handboek$1"
 
+RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.*)$" "/richtlijnen/formulieren/$1"
+
 RedirectMatch 301 "^/project/events(.*)$" "/community/events$1"
 Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
+
+Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"

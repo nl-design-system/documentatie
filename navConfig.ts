@@ -30,18 +30,11 @@ const navbar: Navbar = {
       label: 'Componenten',
       className: 'utrecht-link',
     },
-    // {
-    //   type: 'doc',
-    //   docId: 'voorbeelden',
-    //   position: 'left',
-    //   label: 'Voorbeelden',
-    //   className: 'utrecht-link',
-    // },
     {
       type: 'doc',
-      docId: 'onderzoek/README',
+      docId: 'voorbeelden',
       position: 'left',
-      label: 'Onderzoek',
+      label: 'Voorbeelden',
       className: 'utrecht-link',
     },
     {
