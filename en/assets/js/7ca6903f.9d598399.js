@@ -23,6 +23,7 @@
      authors: [{ name: "Renate Bruinenberg", title: "Communicatieadviseur NL Design System", url: "https://www.linkedin.com/in/renate-bruinenberg-886019163/" }],
      frontMatter: { title: "Over de licentiekeuze van NL Design System", slug: "licentiekeuze-nl-design-system", authors: [{ name: "Renate Bruinenberg", title: "Communicatieadviseur NL Design System", url: "https://www.linkedin.com/in/renate-bruinenberg-886019163/" }], tags: ["meta", "NL Design System"], image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blogpost-licentiekeuze-nl-design-system.png", hide_table_of_contents: !1, date: "2024-02-09T00:00:00.000Z" },
      unlisted: !1,
+     prevItem: { title: "Ik wil je wat vragen, maar ik heb geen WhatsApp!", permalink: "/en/blog/meerdere-manieren-contact" },
      nextItem: { title: "NL Design System nu als zelfstandig project verder", permalink: "/en/blog/nlds-zelfstandig" },
     },
     l = { authorsImageUrls: [void 0] },
