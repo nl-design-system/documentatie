@@ -12,7 +12,7 @@ Een voorbeeld: wanneer gebruik je een `<select>` met opties en wanneer radiobutt
 - [Burn your select tags](https://www.youtube.com/watch?v=CUkMCQR4TpY), video van Alice Bartlett.
 - [Under-Engineered Multi-Selects](https://adrianroselli.com/2022/05/under-engineered-multi-selects.html) van Adrian Roselli.
 - [UX Design: Drop-Downs in Forms](https://uxplanet.org/ux-design-drop-downs-in-forms-c6943ec30037) van Nick Babich.
-- [Listboxes vs. Dropdown Lists](https://www.nngroup.com/articles/listbox-dropdown/) van de Nielsen Norman Group (NN-group).
+- [Listboxes vs. Dropdown Lists](https://www.nngroup.com/articles/listbox-dropdown/) van de Nielsen Norman Group.
 - [7 Rules of Using Radio Buttons vs Drop-Down Menus](https://uxdworld.com/2018/05/06/7-rules-of-using-radio-buttons-vs-drop-down-menus/) van UX World.
 
 Andere bronnen voor gebruikersonderzoek:
