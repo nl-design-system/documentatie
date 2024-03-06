@@ -4,9 +4,9 @@
 
 Laat bezoekers niet raden, maar wees duidelijk welke velden verplicht zijn. Dit kan op een aantal manieren:
 
-- Door boven het formulier te vermelden dat alle velden verplicht zijn, mits anders vermeld. Dan kan in het label de tekst "(optioneel)" worden gezet.
-- Door bij de verplichte velden in het label de tekst (verplicht) op te nemen.
-- Met een asterisk bij het label. Leg dan wel boven het formulier uit wat het sterretje betekent. Een sterretje alleen bij het formulierveld is niet voldoende.
+- Door boven, of voorafgaand, aan het formulier te vermelden dat alle velden verplicht zijn, mits anders vermeld. Dan kan in het label de tekst '(niet verplicht)' worden opgenomen.
+- Door bij de verplichte velden in het label de tekst '(verplicht)' op te nemen.
+- Door bij de verplichte velden in het label een asterisk '*' op te nemen. Leg dan wel boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende.
 
 Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. Screenreadergebruiker kunnen extra tekst missen binnen een formulier, als die niet gekoppeld zijn aan een formulierveld.
 
@@ -24,7 +24,7 @@ Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. 
 <form>
   <label for="kleur2">Wat is je lievelingskleur</label>
   <input type="text" id="kleur2" name="lievelingskleur" aria-required="true" aria-invalid="false" />
-  <label for="kleur1">Wat is je lievelingsdier (optioneel)</label>
+  <label for="kleur1">Wat is je lievelingsdier (niet verplicht)</label>
   <input type="text" id="dier2" name="lievelingsdier" />
   [... etc ...]
 </form>
