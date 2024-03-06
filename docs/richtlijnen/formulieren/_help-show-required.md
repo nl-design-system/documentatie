@@ -6,7 +6,7 @@ Laat bezoekers niet raden, maar wees duidelijk welke velden verplicht zijn. Dit 
 
 - Door boven of voorafgaand aan het formulier te vermelden dat alle velden verplicht zijn, mits anders vermeld. Dan kan in het label de tekst '(niet verplicht)' worden opgenomen.
 - Door bij de verplichte velden in het label de tekst '(verplicht)' op te nemen.
-- Door bij de verplichte velden in het label een asterisk '*' op te nemen. Leg dan wel boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende.
+- Door bij de verplichte velden in het label een asterisk '\*' op te nemen. Leg dan wel boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende.
 
 Zet eventuele extra uitleg altijd boven het formulier en niet in het formulier. Screenreadergebruiker kunnen extra tekst missen binnen een formulier, als die niet gekoppeld zijn aan een formulierveld.
 
