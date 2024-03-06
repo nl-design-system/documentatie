@@ -8,7 +8,7 @@ Een verkeerd of onvolledig ingevuld formulier kan grote consequenties hebben voo
 
 Dit is niet alleen belangrijk voor mensen met een functiebeperking, maar voor iedereen. Je wilt toch graag extra goed controleren of je de juiste aankomst- en vertrekdatum hebt ingevuld bij het boeken van een dure vakantie. Of dat je alles naar waarheid en compleet hebt ingevuld bij de belastingaangifte.
 
-Zorg er daarom voor dat gebruiker de ingevulde gegevens kan controleren en indien gewenst kan corrigeren. En als dat niet mogelijk is: bied de mogelijkheid om een inzending van transactie te annuleren.
+Zorg er daarom voor dat gebruiker de ingevulde gegevens kan controleren en indien gewenst kan corrigeren. En als dat niet mogelijk is: bied de mogelijkheid om een inzending of transactie te annuleren.
 
 Bied **ten minste één** van de volgende opties aan: "omkeerbaar", "gecontroleerd" of "bevestigd".
 
