@@ -34,7 +34,7 @@ Geef de gebruiker, voor inzending, de mogelijkheid om de ingevulde gegevens te l
 
 Bij een complex formulier en als er juridische, financiële of persoonlijke gegevens worden uitgevraagd, is het essentieel dat de gebruiker kan controleren of alles goed is ingevuld voor verzenden.
 
-Alles op een rij in de laatste stap van het formulier, met de mogelijkheid om nog correcties te maken. Dit staat uitgebreider beschreven bij de [richtlijnen Meerdere stappen in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen).
+Alles op een rij in de laatste stap van het formulier, met de mogelijkheid om nog correcties te maken. Dit staat uitgebreider beschreven in [Meerdere stappen in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen).
 
 Gebruikersonderzoek voor het [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/wmebv/vng-online-formulieren) laat goed zien hoe belangrijk deze laatste stap is.
 
