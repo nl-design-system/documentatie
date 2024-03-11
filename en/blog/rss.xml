@@ -4,10 +4,41 @@
         <title>NL Design System Blog</title>
         <link>https://nldesignsystem.nl/en/blog</link>
         <description>NL Design System Blog</description>
-        <lastBuildDate>Tue, 05 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers]]></title>
+            <link>https://nldesignsystem.nl/en/blog/gebruikerstest-ondernemers-den-haag</link>
+            <guid>https://nldesignsystem.nl/en/blog/gebruikerstest-ondernemers-den-haag</guid>
+            <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.]]></description>
+            <content:encoded><![CDATA[<p>Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.</p>
+<p>In december 2023 nam het team Innovatie en Dienstverlening van de gemeente Den Haag gebruikerstesten af met ondernemers uit de Haagse regio. Ananta maakte een nieuw prototype van een formulier om een horecavergunning aan te vragen. Vervolgens testten ze dit formulier met de deelnemers. Ananta vertelt: “Het nieuwe formulier is gefocust op het begeleiden van ondernemers bij het correct opstellen en indienen van documenten. Daarnaast wilden we het belang van het aanleveren van de juiste documenten benadrukken.”</p>
+<p>De volgende onderzoeksvragen stonden centraal:</p>
+<ul role="list" class="utrecht-unordered-list">
+<li class="utrecht-unordered-list__item">In hoeverre geeft dit ontwerp voldoende ondersteuning om de benodigde documenten op te kunnen stellen?</li>
+<li class="utrecht-unordered-list__item">In hoeverre stimuleert dit ontwerp ondernemers om de aanvraag volledig in te vullen én in te dienen?</li>
+<li class="utrecht-unordered-list__item">In hoeverre hebben ondernemers het vertrouwen dat ze aan de hand van dit ontwerp zelf een correcte aanvraag kunnen indienen?</li>
+<li class="utrecht-unordered-list__item">Hoe ervaren ondernemers de navigatie door het aanvraagproces?</li>
+<li class="utrecht-unordered-list__item">Is de informatie volledig en duidelijk?</li>
+</ul>
+<h2 id="alle-aanvragen-worden-behandeld-ook-als-ze-foutief-of-onvolledig-zijn" class="utrecht-heading-2">Alle aanvragen worden behandeld, ook als ze foutief of onvolledig zijn</h2>
+<p>Ananta en Margo vertellen dat er nog te veel aanvragen via online formulieren fout gaan. Denk aan het foutief invullen of onvolledige aanvragen waarbij bijlagen missen. Ananta: “Het is goed om te realiseren dat alle aanvragen die binnenkomen worden behandeld. Ook als ze foutief of onvolledig zijn. Dit kost de behandelaars extra tijd én zorgt uiteindelijk voor irritatie bij de aanvrager. Want het moet opnieuw of er moeten aanvullende stukken worden verstuurd. Dit proberen we nu te voorkomen door aan het begin van het proces aan te geven welke formulieren nodig zijn voor de betreffende aanvraag.”</p>
+<p>Margo vertelt: “Aan het begin van de aanvraag in het prototype zie je een opsomming, waarin alle benodigde bijlagen staan vermeld. Hierboven staat ‘Heeft u deze documenten?’ Het is handig dat mensen de kans hebben om de aanvraag op te slaan, zodat ze op een later moment verder kunnen gaan. Zeker bij aanvragen waar meerdere bijlagen worden gevraagd, geeft dit mensen de kans om ze op te zoeken zonder het hele proces opnieuw te moeten starten.”</p>
+<p>Het blijft volgens Margo niet alleen bij deze opsomming: “We hebben ervoor gekozen om een extra uitleg bij de benodigde documenten toe te voegen. Zoals: een uitleg waarom de gemeente dit nodig heeft bij de aanvraag, maar ook voorbeelden van documenten. Er verschijnt ook een waarschuwing als er een document mist. We hopen dat deze extra uitleg zorgt voor meer bewustwording van de aanvrager, zodat ze begrijpen dat het ontbreken van bijlagen consequenties heeft voor de aanvraag.”</p>
+<h2 id="gebruikerstest-met-ondernemers-uit-den-haag-en-omstreken" class="utrecht-heading-2">Gebruikerstest met ondernemers uit Den Haag en omstreken</h2>
+<p>Uiteindelijk is het team gaan testen met 6 ondernemers uit Den Haag en omstreken. Dit bestond uit het doorlopen van het prototype-aanvraagformulier in combinatie met het uitvoeren van verschillende opdrachten. Iedere test duurde 1 uur.</p>
+<p>Margo: “Het viel ons op dat de meerderheid van de deelnemers (na het zien van de waarschuwing) aangaf dat ze niet verder zouden gaan met het aanvraagproces zonder de benodigde documenten die aan het begin worden genoemd. Ook vonden ze allemaal de optie om tussentijds op te slaan heel handig. Daarnaast werden de voorbeelden die we in het prototype noemen als heel positief ervaren. Denk hierbij aan een voorbeeld van het maken van een ondernemingsplan.”</p>
+<h2 id="doel-alle-formulieren-overzetten-naar-het-nieuwe-ontwerp" class="utrecht-heading-2">Doel: alle formulieren overzetten naar het nieuwe ontwerp</h2>
+<p>Volgens Ananta is het uiteindelijk de bedoeling dat alle formulieren voor vergunningen worden omgezet naar het nieuwe ontwerp: “De eerste stap is om de verantwoordelijkheid hiervan over te dragen aan de betreffende afdelingen. Vervolgens moeten de afdelingen de realisatie hiervan afstemmen met onze afdeling Online, zodat zij de formulieren daadwerkelijk gaan aanpassen én begrijpen wat er precies moet gebeuren. Daarnaast is het ook handig om te kijken naar wat er nog meer geoptimaliseerd kan worden in de toekomst. We willen uiteindelijk meer met gebruikersdata doen, zoals het meten van de website. Dit kunnen we dan weer vergelijken met de inzichten uit gebruikersonderzoeken. Denk aan informatie als wanneer klikken mensen weg?”</p>
+<p>Ananta vertelt: “Bij het nieuwe ontwerp willen we de ‘waarschuwingsfunctie’ (alert) gebruiken uit de NL Design System-community. Bij het gedeelte waar mensen formulieren moeten toevoegen zie je momenteel de optie om alle formulieren in 1 keer te uploaden. Deze splitsen we nu uit in individuele documenten en het is de bedoeling dat de waarschuwingsfunctie naar voren komt als de aanvrager niet alle benodigde documenten upload.”</p>
+<h2 id="benieuwd-naar-deze-gebruikerstest" class="utrecht-heading-2">Benieuwd naar deze gebruikerstest?</h2>
+<p>Onlangs gaven Margo en Ananta een presentatie over dit onderwerp tijdens de 2-wekelijkse Heartbeat van het NL Design System. Ben je benieuwd en wil je het terugkijken? Bekijk de <a href="https://www.youtube.com/watch?v=CQE3DZ2Gx9E&amp;t=1466s" class="utrecht-link utrecht-link--html-a">presentatie op YouTube</a>.</p>]]></content:encoded>
+            <category>meta</category>
+            <category>NL Design System</category>
+        </item>
         <item>
             <title><![CDATA[Ik wil je wat vragen, maar ik heb geen WhatsApp!]]></title>
             <link>https://nldesignsystem.nl/en/blog/meerdere-manieren-contact</link>
@@ -709,51 +740,6 @@ Voor onderhoud is het NL Design System grotendeels afhankelijk van het enthousia
 <p>Uitkomsten vragenlijst design systeem</p>
 <p>Het resultaat: een top 10 aan onderwerpen die volgens de respondenten de meeste waarde toevoegen aan een design systeem. De eerste versie van het NL Design System komt in de loop van februari online beschikbaar. Bij de doorontwikkeling gaan we prioriteit geven aan de verzamelde top 10.</p>
 <p><a href="https://www.gebruikercentraal.nl/blog/de-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-systeem/" class="utrecht-link utrecht-link--html-a">Lees het volledige artikel op Gebruiker Centraal</a>.</p>]]></content:encoded>
-            <category>update</category>
-            <category>NL Design System</category>
-        </item>
-        <item>
-            <title><![CDATA[Update - NL Design System]]></title>
-            <link>https://nldesignsystem.nl/en/blog/update-nl-design-system</link>
-            <guid>https://nldesignsystem.nl/en/blog/update-nl-design-system</guid>
-            <pubDate>Thu, 06 Jun 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Update over de stand van zaken rondom het traject NL Design System, geïnitieerd door Gebruiker Centraal. In samenwerking met medewerkers van diverse overheidsorganisaties.]]></description>
-            <content:encoded><![CDATA[<p>Update over de stand van zaken rondom het traject NL Design System, geïnitieerd door Gebruiker Centraal. In samenwerking met medewerkers van diverse overheidsorganisaties.</p>
-<p>Begin dit jaar zijn we gestart met de ontwikkeling van een gezamenlijk design system voor de Nederlandse overheid. Professionals van diverse overheidsorganisaties bundelen hun kennis en ontwikkelen een design system waarin ontwerpprincipes, interactiepatronen, componenten (zoals formulierelementen en knoppen) en code gedeeld worden.</p>
-<p>Lees in dit blog een korte samenvatting van wat we tot nu toe hebben gedaan en geleerd rondom het NL Design System en wat de vervolgstappen zijn.</p>
-<h2 id="de-voordelen-van-een-gezamenlijk-design-system" class="utrecht-heading-2">De voordelen van een gezamenlijk design system</h2>
-<p>Ter herinnering: dit is waarom we gestart zijn met het NL Design System:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Het NL Design System verbetert de gebruiksvriendelijkheid van online overheidsdiensten en websites. Consistente digitale diensten zorgen ervoor dat burgers en makkelijker zaken kunnen doen met de overheid.</li>
-<li class="utrecht-unordered-list__item">De onderdelen in het design system worden grondig getest met gebruikers. Ook met gebruikers met een visuele of andere beperking. Hierdoor neemt de zowel de kwaliteit als de toegankelijkheid toe.</li>
-<li class="utrecht-unordered-list__item">Doordat we niet elke keer over hetzelfde na hoeven te denken wordt dubbel werk voorkomen. Projecten komen daardoor sneller uit de startblokken en kunnen sneller resultaat laten zien. Als ontwerper of ontwikkelaar kun je je richten op dingen die echt uniek zijn voor je dienst.</li>
-</ul>
-<h2 id="meetups-2018-en-2019-design-system-voor-en-door-professionals" class="utrecht-heading-2">Meetups 2018 en 2019: Design System voor en door professionals</h2>
-<p>Met name ontwikkelaars en interactie-ontwerpers maken dagelijks gebruik van het design system. In onze <a href="https://www.gebruikercentraal.nl/blog/van-start-een-gezamenlijk-design-system-voor-de-overheid/#hoe-we-gaan-werken" class="utrecht-link utrecht-link--html-a">werkwijze</a> sluiten we daarom zo goed mogelijk aan bij hun wensen.</p>
-<p>In 2018 hebben we in een tweetal meetups de interesse én de behoeftes gepeild onder deze professionals. Nadat het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties het project besloot te financieren, hebben we in februari en maart van 2019 nog een tweetal meetups gehouden. Dit om de ontwikkelaars en ontwerpers bij het project te betrekken en inzicht te krijgen in wat zij in hun werk nodig hebben.</p>
-<h2 id="januari-april-wensen--criteria" class="utrecht-heading-2">Januari-april: wensen &amp; criteria</h2>
-<p>Zoveel mensen, zoveel wensen. Om snel te kunnen lanceren met een proof of concept, moeten we eerst bepalen wat écht belangrijk is. We hebben de wensen en criteria uit de workshops daarom gezamenlijk gewogen en verwerkt in een <a href="https://docs.google.com/presentation/d/1QHWUh8zQH-3BA6EEdzO1nkIvGMuzYbSFbGnXG5eE_0w/edit#slide=id.g52957a68be_1_12" class="utrecht-link utrecht-link--html-a">multicriteria analyse</a>. Die hebben we vervolgens gebruikt om te kijken naar bestaande design systems binnen de overheid, om te zien welke delen goed herbruikbaar zijn. Maar belangrijker nog: de analyse geeft structuur aan de levendige gesprekken en discussies tussen ontwikkelaars en ontwerpers.
-Bekijk de <a href="https://docs.google.com/document/d/1i4msTX1rX7aRjeOMi2jLu3Cg8RldtlIXx4oLyGsFCsI/edit#heading=h.i2ykj4cvndw4" class="utrecht-link utrecht-link--html-a">belangrijkste conclusies</a>.</p>
-<p>Naast de meetups hebben we meer dan 20 mensen in de overheid <a href="https://docs.google.com/document/d/1i4msTX1rX7aRjeOMi2jLu3Cg8RldtlIXx4oLyGsFCsI/edit#heading=h.vbw0pb3lkt7m" class="utrecht-link utrecht-link--html-a">geïnterviewd</a> over hun design systems.</p>
-<h2 id="maart-april-top-down-ondersteuning-en-commitment" class="utrecht-heading-2">Maart-april: Top-down ondersteuning en commitment</h2>
-<p>Een design system dat de dagelijkse gebruikers goed ondersteunt, is belangrijk voor de adoptie. Maar het is niet afdoende. Op tijd support en commitment krijgen van beslissers bij de belangrijkste dienstverleners in de overheid is essentieel. Zo voorkomen we dat bij de eerste technische of organisatorische hobbel organisaties afhaken omdat het voor déze organisatie nét even anders werkt.</p>
-<p>We overtuigen organisaties om hun ondersteuning zichtbaar te maken via citaten die we op de projectwebsite publiceren. Dit geeft gelijk een zwaan-kleef-aan effect. Als je het <a href="https://accept.designsystem.gebruikercentraal.nl/betrokken-partijen/" class="utrecht-link utrecht-link--html-a">lijstje met betrokken organisaties</a> ziet, dan kun je toch niet achterblijven?</p>
-<h2 id="april-2019-start-van-de-werkgroepen" class="utrecht-heading-2">April 2019: Start van de werkgroepen</h2>
-<p>Na de bredere analyse zijn we met twee werkgroepen van start gegaan om echt aan de slag te gaan met het in de lucht krijgen van een design system.</p>
-<p>De Werkgroep Componenten houdt zich vooral bezig met het de kwaliteit van de componenten in het design system. Zijn ze breed bruikbaar? Getest op gebruikers? We verwachten dat grote delen van bestaande design systems in de overheid hergebruikt kunnen worden.</p>
-<p>De Werkgroep Tools en Technieken kijkt naar meer technische zaken en leunt meer op de input van ontwikkelaars. Hoe is het versiebeheer geregeld? Hoe is de onafhankelijkheid van frameworks? Etcetera.</p>
-<p><img src="https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2019/06/Plaatje-werkgroepen.png" alt="Illustratie over hoe de werkgroepen en interviews bijdragen aan de wensen en criteria voor het design system. " class="utrecht-img"></p>
-<p>“En de burger dan, hoe is die betrokken?” horen we je denken. Uiteraard heeft een design system pas meerwaarde voor burgers en ondernemers als de bouwstenen goed zijn getest bij de gebruikers van de diverse doelgroepen. Dat gaan we doen in de volgende fase van het project.</p>
-<h2 id="vervolgstappen-bouwen-maar-proof-of-concept-en-pilot" class="utrecht-heading-2">Vervolgstappen: Bouwen maar! Proof of Concept en pilot</h2>
-<p>Op basis van de meetups, de multi-criteria analyse en de interviews, hebben we onze conclusies opgesteld als <a href="https://docs.google.com/document/d/1i4msTX1rX7aRjeOMi2jLu3Cg8RldtlIXx4oLyGsFCsI/edit" class="utrecht-link utrecht-link--html-a">onderbouwing voor de keuze van het Proof of Concept</a>. Je feedback op dit document is nog altijd welkom.</p>
-<p>Het moment is nu aangebroken om een eerste design system te gaan bouwen! Voor het Proof of Concept hergebruiken we de tool van het <a href="https://design-system.service.gov.uk/" class="utrecht-link utrecht-link--html-a">design system van GOV.UK</a>, aangevuld met die elementen die nodig zijn voor het maken van een contactformulier (meer details vind je in het hiervoor gelinkte document). Als basis voor die elementen nemen we het design system van DUO.</p>
-<p>Na het Proof of Concept, en na goedkeuring van de stuurgroep, zullen we (ergens na de zomervakantie) starten met een pilotfase. Daarin gaan we met een beperkt aantal organisaties gezamenlijk het NL Design System ontwikkelen, met een projectteam van professionals uit die organisaties. Zo veel mogelijk op een open en transparante manier, maar nog zonder support voor gebruikers buiten de pilotorganisaties.</p>
-<h2 id="voor-de-zomervakantie-kun-je-deze-bijeenkomsten-nog-verwachten" class="utrecht-heading-2">Voor de zomervakantie kun je deze bijeenkomsten nog verwachten:</h2>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">3 juli 13.00-17.00 bij ICTU, Den Haag: Werksessie voor de werkgroepen.</li>
-<li class="utrecht-unordered-list__item">9 of 11 juli 13.00-17.30 bij de Gemeente Utrecht (voorlopig; definitieve datum volgt): open kennisbijeenkomst voor iedereen die meer wil weten over design systems bij de overheid. Houd deze website in de gaten voor meer informatie (of schrijf je in voor de nieuwsbrief).</li>
-</ul>
-<p>Meer weten? Word dan lid van de <a href="http://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Slack groep</a> van Code for NL en zoek het NL Design System kanaal op. Meer details kun je lezen op de projectwebsite.</p>]]></content:encoded>
             <category>update</category>
             <category>NL Design System</category>
         </item>

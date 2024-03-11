@@ -23,6 +23,7 @@
      authors: [{ name: "Rian Rietveld", title: "Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }],
      frontMatter: { title: "Ik wil je wat vragen, maar ik heb geen WhatsApp!", slug: "meerdere-manieren-contact", authors: [{ name: "Rian Rietveld", title: "Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }], tags: ["toegankelijkheid", "NL Design System"], image: "https://github.com/nl-design-system/documentatie/blob/assets/meerdere-manieren.png?raw=true", hide_table_of_contents: !1, date: "2024-03-05T00:00:00.000Z" },
      unlisted: !1,
+     prevItem: { title: "Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers", permalink: "/blog/gebruikerstest-ondernemers-den-haag" },
      nextItem: { title: "Over de licentiekeuze van NL Design System", permalink: "/blog/licentiekeuze-nl-design-system" },
     },
     l = { authorsImageUrls: [void 0] },
