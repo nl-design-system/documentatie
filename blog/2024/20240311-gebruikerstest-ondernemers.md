@@ -8,7 +8,7 @@ authors:
 tags: [meta, NL Design System]
 image: https://github.com/nl-design-system/documentatie/blob/assets/lessen-gebruikerstest.png?raw=true
 hide_table_of_contents: false
-date: 2024-03-06
+date: 2024-03-11
 ---
 
 Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.
