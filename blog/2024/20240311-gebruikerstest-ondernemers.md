@@ -47,4 +47,4 @@ Ananta vertelt: “Bij het nieuwe ontwerp willen we de ‘waarschuwingsfunctie�
 
 ## Benieuwd naar deze gebruikerstest?
 
-Onlangs gaven Margo en Ananta een presentatie over dit onderwerp tijdens de 2-wekelijkse Heartbeat van het NL Design System. Ben je benieuwd en wil je het terugkijken? Bekijk de [presentatie op YouTube](https://www.youtube.com/watch?v=CQE3DZ2Gx9E&t=1466s).
+Onlangs gaven Margo en Ananta een presentatie over dit onderwerp tijdens de 2-wekelijkse Heartbeat van het NL Design System. Ben je benieuwd en wil je het terugkijken? Bekijk de [presentatie op YouTube](https://www.youtube.com/watch?v=CQE3DZ2Gx9E&t=92).
