@@ -37,6 +37,6 @@ Voor veel andere componenten zijn deze checks ook al uitgevoerd, een volledig ov
 
 ## Het vervolg
 
-Wil je meewerken om componenten te inventariseren en van status te veranderen? Wil je meehelpen met het verzamelen van screenshots of onderzoek? Graag! De komende tijd zullen we regelmatig de samenwerkdagen om componenten na te lopen. Deze dagen zijn openbaar toegankelijk, laat Jeffrey of iemand anders uit het kernteam weten als je mee wilt doen.
+Wil je meewerken om componenten te inventariseren en van status te veranderen? Wil je meehelpen met het verzamelen van screenshots of onderzoek? Graag! De komende tijd zullen we regelmatig de samenwerkdagen gebruiken om componenten na te lopen. Deze samenwerkdagen zijn openbaar toegankelijk, laat Jeffrey of iemand anders uit het kernteam weten als je mee wilt doen.
 
 Ondertussen blijven we als kernteam meer voorbereidend werk doen, om zo te zorgen dat er steeds meer componenten, naast dat ze al gebruikt worden in sites en plug-ins, de juiste status krijgen. Wordt vervolgd!
