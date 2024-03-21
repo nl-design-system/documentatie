@@ -5,7 +5,7 @@ authors:
   - name: Hidde de Vries
     title: Public relations lead & Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/hiddedevries/
-tags: [meta, NL Design System]
+tags: [meta, estafettemodel, designers, NL Design System]
 image: https://github.com/nl-design-system/documentatie/blob/assets/samen-aan-de-slag.png?raw=true
 hide_table_of_contents: false
 date: 2024-03-22
