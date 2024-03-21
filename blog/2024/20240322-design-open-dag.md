@@ -1,5 +1,5 @@
 ---
-title: Estafette­model op de samen­werk­dag voor de­signers
+title: Samen aan de slag met het es­ta­fette­­mo­del
 slug: design-open-dag
 authors:
   - name: Hidde de Vries
