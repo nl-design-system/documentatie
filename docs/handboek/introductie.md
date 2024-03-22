@@ -24,7 +24,7 @@ NL Design System gaat niet alleen over ontwerp. We bereiken onze doelen met een 
 - Componentenbibliotheek voor ontwikkelaars.
 - Gedeelde inzichten over toegankelijkheid, opgenomen in die richtlijnen en in documentatie voor componenten.
 - Een methode om je huisstijl toe te passen op onze componenten ([design tokens](/handboek/design-tokens)).
-- Technische architectuur om werk efficiënt te testen, te delen en uit te rollen.
+- Technische infrastructuur om werk efficiënt te testen, te delen en uit te rollen (zoals een voorbeeldrepository met Storybook en visuele regressietests).
 - Stijlgids om de huisstijl van je organisatie consistent te gebruiken.
 
 Hoewel dit verschillende middelen zijn, hebben ze allemaal als doel om makkelijk consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken.
