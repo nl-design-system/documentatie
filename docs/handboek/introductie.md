@@ -1,8 +1,8 @@
 ---
-title: Introductie NL Design System
+title: Introductie
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie NL Design System
+sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Introductie
 description: NL Design System bevat componenten, patronen en richtlijnen, aangevuld met vele huisstijlen van organisaties die meedoen. Allemaal basisonderdelen waarover je afspraken kunt maken, gebruikersonderzoek kunt doen en van elkaar kunt leren.
@@ -11,22 +11,23 @@ keywords:
   - introductie
 ---
 
-# Introductie NL Design System
+# Introductie
 
-## Wat is een Design System?
+We maken toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk. Op deze pagina lees je meer over wat dat technisch betekent. Voor meer informatie over het project zelf, zie [Over NL Design System](/project/over-nlds).
 
-Een Design System lijkt op basis van de naam vooral over ontwerp te gaan, maar het is eigenlijk een brede aanpak om mensen te helpen (nieuwe) projecten consistent en goed te bouwen.
+## Meer dan alleen ontwerp
 
-- Communicatiemiddel naar teams die nieuwe dingen bouwen
-- Stijlgids voor consistente huisstijl
-- Richtlijnen voor schrijven teksten en ontwerp formulieren
-- Proces om verbeteringen te testen, besluiten en uit te rollen
-- Gedeelde inzichten over toegankelijkheid
-- Design kit voor grafisch vormgevers en UX-ontwerpers
-- Componenten bibliotheek voor ontwikkelaars
+NL Design System gaat niet alleen over ontwerp. We bereiken onze doelen met een aantal verschillende onderdelen die samen gebruikt kunnen worden:
 
-Hoewel dit verschillende middelen zijn, hebben ze allemaal als doel om makkelijker consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken.
-Een goed design system ‘leeft’ dankzij nieuwe inzichten uit gebruikersonderzoek in meerdere projecten, toegankelijkheidsonderzoek en terugkoppeling door developers en designers die van de onderdelen gebruik maken.
+- Richtlijnen voor hoe je de beste digitale diensten maakt, zoals voor het [maken van formulieren](/richtlijnen/formulieren/).
+- Design kit voor grafisch vormgevers en UX-ontwerpers.
+- Componentenbibliotheek voor ontwikkelaars.
+- Gedeelde inzichten over toegankelijkheid, opgenomen in die richtlijnen en in documentatie voor componenten.
+- Een methode om je huisstijl toe te passen op onze componenten ([design tokens](/handboek/design-tokens)).
+- Technische architectuur om werk efficiënt te testen, te delen en uit te rollen.
+- Stijlgids om de huisstijl van je organisatie consistent te gebruiken.
+
+Hoewel dit verschillende middelen zijn, hebben ze allemaal als doel om makkelijk consistente, toegankelijke en gebruiksvriendelijke websites en applicaties te maken.
 
 ## Basisonderdelen voor de hele overheid
 
@@ -49,7 +50,7 @@ Door thema's te maken met beschikbare design tokens kunnen applicaties super sne
 
 ### Samen werken aan een herbruikbare componenten bibliotheek
 
-Het NL Design System bestaan uit een community van 430+ leden, een multidisciplinaire groep van geïnteresseerden van verschillende overheidsorganisaties en bedrijven die met overheden werken.
+Het NL Design System bestaan uit een community van 560+ leden, een multidisciplinaire groep van geïnteresseerden van verschillende overheidsorganisaties en bedrijven die met overheden werken.
 Deze community heeft een gedeelde ambitie om niet telkens het wiel opnieuw uit te vinden, maar wil ook niet geblokkeerd worden in de ontwikkeling van nieuwe applicaties.
 
 Om zoveel mogelijk context te hebben bij het ontwikkelen van een component en gebruik te maken van de inzichten van anderen, hebben we ook een gedeelde ["levende" backlog](http://github.com/nl-design-system/backlog/issues). Deze bevat de gedeelde informatie over eisen en status van componenten en bij wie het component ontwikkeld wordt.
@@ -67,4 +68,4 @@ Zo'n "hall of fame" component:
 - Wordt "in productie" gebruikt in tenminste twéé websites
 - Is succesvol meegenomen in toegankelijkheisonderzoek en gebruikersonderzoek waarvan de uitkomsten beschikbaar zijn
 
-Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De organisaties en componenten die zij maken kun je vinden onder de [NL Design System organisatie op Github](http://github.com/nl-design-system).
+Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De organisaties en componenten die zij maken kun je vinden onder de [NL Design System organisatie op GitHub](http://github.com/nl-design-system).
