@@ -29,8 +29,8 @@
   <link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
-  <link rel="stylesheet" href="/en/assets/css/styles.68b9f570.css" />
-  <script src="/en/assets/js/runtime~main.20238a6d.js" defer="defer"></script>
+  <link rel="stylesheet" href="/en/assets/css/styles.58819594.css" />
+  <script src="/en/assets/js/runtime~main.4a1ad0ea.js" defer="defer"></script>
   <script src="/en/assets/js/main.0bab032d.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -195,13 +195,13 @@
               <p>Formuliervalidatie werkt het best met duidelijke en goed getimede foutmeldingen en logische validatieregels. Als een veld niet goed is ingevuld, moet voor iedereen duidelijk zijn wat er niet klopt. Hoe help je de gebruiker het beste als deze onjuiste of onvolledige informatie invult?</p>
               <p>Belangrijk bij het aangeven van fouten:</p>
               <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Controleer op het juiste moment op fouten.</li>
-               <li class="utrecht-unordered-list__item">Schrijf een foutmelding uit in tekst.</li>
-               <li class="utrecht-unordered-list__item">Schrijf een duidelijke foutmelding.</li>
-               <li class="utrecht-unordered-list__item">Zet de foutmeldingen bij de betreffende formuliervelden.</li>
-               <li class="utrecht-unordered-list__item">Gebruik geen HTML-formuliervalidatie.</li>
-               <li class="utrecht-unordered-list__item">Zet een samenvatting van de foutmeldingen boven het formulier.</li>
-               <li class="utrecht-unordered-list__item">Geef feedback aan screenreadergebruikers.</li>
+               <li class="utrecht-unordered-list__item"><a href="#controleer-op-het-juiste-moment-op-fouten" class="utrecht-link utrecht-link--html-a">Controleer op het juiste moment op fouten</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#schrijf-een-foutmelding-uit-in-tekst" class="utrecht-link utrecht-link--html-a">Schrijf een foutmelding uit in tekst</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Schrijf een duidelijke foutmelding</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#zet-de-foutmeldingen-bij-de-betreffende-formuliervelden" class="utrecht-link utrecht-link--html-a">Zet de foutmeldingen bij de betreffende formuliervelden</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#gebruik-geen-html-formuliervalidatie" class="utrecht-link utrecht-link--html-a">Gebruik geen HTML-formuliervalidatie</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-link utrecht-link--html-a">Zet een samenvatting van de foutmeldingen boven het formulier</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="#geef-feedback-aan-screenreadergebruikers" class="utrecht-link utrecht-link--html-a">Geef feedback aan screenreadergebruikers</a>.</li>
               </ul>
               <p>Twee uitgebreide bronnen die de aspecten van foutmeldingen goed beschrijven:</p>
               <ul role="list" class="utrecht-unordered-list">
@@ -504,7 +504,7 @@
               <p>Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-side validatie toe te voegen.</p>
               <p>Om specifiek aan hulptechnologieën te communiceren dat een veld verplicht is, kan <code class="utrecht-code">aria-required</code> worden gebruikt. Als je alleen <code class="utrecht-code">aria-required</code> gebruikt, zal de browser niet zelf valideren of feedback geven.</p>
               <p>Het toegankelijk maken van foutmeldingen is nodig om te voldoen aan het WCAG-succescriterium <a href="/wcag/3.3.1/" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</p>
-              <h2 id="samenvatting-boven-het-formulier" class="utrecht-heading-2">Samenvatting boven het formulier</h2>
+              <h2 id="zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-heading-2">Zet een samenvatting van de foutmeldingen boven het formulier</h2>
               <p>Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:</p>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">een samenvatting boven het formulier en;</li>
@@ -562,7 +562,7 @@
                 </div>
                </div>
               </div>
-              <h2 id="feedback-voor-screenreadergebruikers" class="utrecht-heading-2">Feedback voor screenreadergebruikers</h2>
+              <h2 id="geef-feedback-aan-screenreadergebruikers" class="utrecht-heading-2">Geef feedback aan screenreadergebruikers</h2>
               <p>We geven je 3 extra manieren om feedback te geven over foutmeldingen voor screenreadergebruikers. Met <code class="utrecht-code">aria-required</code>, <code class="utrecht-code">aria-invalid</code> in het formulierveld en het <code class="utrecht-code">&lt;title&gt;</code> element in de <code class="utrecht-code">&lt;head&gt;</code> van de webpagina.</p>
               <p>Het geven van feedback aan screenreadergebuikers foutmeldingen is nodig om te voldoen aan het WCAG-succescriterium <a href="/wcag/3.3.1/" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</p>
               <h3 id="gebruik-aria-voor-feedback" class="utrecht-heading-3">Gebruik ARIA voor feedback</h3>

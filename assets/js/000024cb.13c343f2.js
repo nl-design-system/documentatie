@@ -42,17 +42,17 @@
     const n = { div: "div", input: "input", label: "label", option: "option", select: "select", ...(0, r.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(o.X, { appearance: "do", title: "Koppel het label aan het formulierveld.", children: (0, i.jsx)(a.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: "kleur3", children: "Wat is je lievelingskleur?" }), (0, i.jsx)(n.input, { type: "text", id: "kleur3", name: "lievelingskleur" })] }) }) }), "\n", (0, i.jsx)(o.X, { appearance: "do", title: "Koppel het label aan het formulierveld (select).", children: (0, i.jsx)(a.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: "kleur4", children: "Wat is je lievelingskleur?" }), (0, i.jsxs)(n.select, { id: "kleur4", name: "lievelingskleur", children: [(0, i.jsx)(n.option, { children: "Rood" }), (0, i.jsx)(n.option, { children: "Blauw" }), (0, i.jsx)(n.option, { children: "Wit" })] })] }) }) }), "\n", (0, i.jsx)(o.X, { appearance: "dont", title: "Een div in plaats van een label gebruiken.", description: "De for en id koppeling werkt alleen met een label-element.", children: (0, i.jsx)(a.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.div, { for: "kleur5", children: "Wat is je lievelingskleur?" }), (0, i.jsx)(n.input, { type: "text", id: "kleur5", name: "lievelingskleur" })] }) }) }), "\n", (0, i.jsx)(o.X, { appearance: "dont", title: "Een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen.", children: (0, i.jsx)(a.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { children: "Wat is je lievelingskleur?" }), (0, i.jsxs)(n.select, { name: "lievelingskleur", children: [(0, i.jsx)(n.option, { children: "Rood" }), (0, i.jsx)(n.option, { children: "Blauw" }), (0, i.jsx)(n.option, { children: "Wit" })] })] }) }) })] });
    }
-   function p(e = {}) {
+   function m(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
    }
-   function m(e) {
+   function p(e) {
     const n = { a: "a", code: "code", h2: "h2", h3: "h3", li: "li", p: "p", pre: "pre", strong: "strong", ul: "ul", ...(0, r.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "geef-een-formulierveld-toegankelijke-naam-met-een-label", children: "Geef een formulierveld toegankelijke naam met een label" }), "\n", (0, i.jsxs)(n.p, { children: ["Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld met een ", (0, i.jsx)(n.code, { children: "for" }), "/", (0, i.jsx)(n.code, { children: "id" }), ' relatie. De labeltekst wordt dan de zogenaamde "toegankelijke naam" van het formulierveld.'] }), "\n", (0, i.jsx)(n.p, { children: "Waarom is dit belangrijk?" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Screenreader (schermlezer) gebruikers krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt." }), "\n", (0, i.jsx)(n.li, { children: "Voice recognition (stembediening) gebruikers kunnen het veld focus geven door die naam uit te spreken." }), "\n", (0, i.jsx)(n.li, { children: "Muis- en touchscreen gebruikers kunnen het label aanklikken om het formulierveld focus te geven." }), "\n"] }), "\n", (0, i.jsx)(n.p, { children: "Het doel van een label is dat de gebruiker de vraag begrijpt. Een effectief label is duidelijk en beschrijvend. Is er meer uitleg nodig? Gebruik dan een beschrijving (description)." }), "\n", (0, i.jsx)(n.h3, { id: "de-forid-relatie", children: "De for/id relatie" }), "\n", (0, i.jsx)(n.p, { children: "Opzet in de HTML:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Geef het formulierveld een ID." }), "\n", (0, i.jsxs)(n.li, { children: ["Geef het label het attribute ", (0, i.jsx)(n.code, { children: "for" }), " met als waarde de ID van het bijbehorende formulierveld."] }), "\n"] }), "\n", (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: "language-html", children: '<label for="kleur1">Wat is je lievelingskleur</label>\n<input type="text" id="kleur1" name="lievelingskleur" />\n' }) }), "\n", (0, i.jsxs)(n.p, { children: ["Let op: De gebruikte ", (0, i.jsx)(n.strong, { children: "ID's" }), " moeten uniek zijn voor de pagina, anders worden de verkeerde namen bij de velden voorgelezen."] }), "\n", (0, i.jsx)(n.p, { children: "Een snelle test of de koppeling werkt: klik op het label en ga na of het veld focus krijgt." }), "\n", (0, i.jsxs)(n.p, { children: ["Doen: Gekoppeld label met ", (0, i.jsx)(n.code, { children: "for" }), " en ", (0, i.jsx)(n.code, { children: "id" }), ". Het ", (0, i.jsx)(n.code, { children: "<label>" }), "-element heeft een ", (0, i.jsx)(n.code, { children: "for" }), " attribuut (of ", (0, i.jsx)(n.code, { children: "htmlFor" }), " in React) dat verwijst naar het ", (0, i.jsx)(n.code, { children: "id" }), " van het bijbehorende formulierveld."] }), "\n", (0, i.jsxs)(n.p, { children: ["Zo werkt dit bijvoorbeeld met een ", (0, i.jsx)(n.code, { children: "<select>" }), ":"] }), "\n", (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: "language-html", children: '<label for="kleur2">Wat is je lievelingskleur?</label>\n<select id="kleur2" name="lievelingskleur">\n  <option>Rood</option>\n  <option>Blauw</option>\n  <option>Wit</option>\n</select>\n' }) }), "\n", (0, i.jsx)(n.p, { children: "Het geven van een goede toegankelijke naam aan formuliervelden is nodig om te voldoen aan de volgende WCAG-succescriteria:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels", children: "2.4.6: Koppen en labels" }), " (niveau AA)."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions", children: "3.3.2: Labels of instructies" }), " (niveau A)."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html", children: "4.1.2: Naam, rol, waarde" }), " (niveau A)."] }), "\n"] })] });
    }
    function j(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(p, { ...e }) }) : p(e);
    }
    function g(e) {
     const n = { input: "input", label: "label", ...(0, r.a)(), ...e.components };
@@ -124,8 +124,8 @@
     L = {},
     S = [];
    function H(e) {
-    const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "labels-in-een-formulier", children: "Labels in een formulier" }), "\n", (0, i.jsx)(n.p, { children: "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Geef een formulierveld een toegankelijke naam met een label." }), "\n", (0, i.jsx)(n.li, { children: "De zichtbare naam moet overeenkomen met de toegankelijke naam." }), "\n", (0, i.jsx)(n.li, { children: "Zet het label boven het formulierveld." }), "\n", (0, i.jsx)(n.li, { children: "Zorg ervoor dat het label altijd zichtbaar is." }), "\n", (0, i.jsx)(n.li, { children: "Zet alleen tekst in het label." }), "\n", (0, i.jsx)(n.li, { children: "Gebruik duidelijke labelteksten." }), "\n"] }), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(X, {}), "\n", (0, i.jsx)(F, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(v, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(y, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(Z, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(t.ZP, {})] });
+    const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "labels-in-een-formulier", children: "Labels in een formulier" }), "\n", (0, i.jsx)(n.p, { children: "Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen.\nVoor de toegankelijkheid van labels en dus ook formuliervelden zijn de volgende punten belangrijk:" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#geef-een-formulierveld-toegankelijke-naam-met-een-label", children: "Geef een formulierveld een toegankelijke naam met een label" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#de-zichtbare-naam-moet-overeenkomen-met-de-toegankelijke-naam", children: "De zichtbare naam moet overeenkomen met de toegankelijke naam" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#zet-het-label-boven-het-formulierveld", children: "Zet het label boven het formulierveld" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#zorg-ervoor-dat-het-label-altijd-zichtbaar-is", children: "Zorg ervoor dat het label altijd zichtbaar is" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#zet-alleen-tekst-in-het-label", children: "Zet alleen tekst in het label" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#gebruik-duidelijke-labelteksten", children: "Gebruik duidelijke labelteksten" }), "."] }), "\n"] }), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(m, {}), "\n", (0, i.jsx)(X, {}), "\n", (0, i.jsx)(F, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(v, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(y, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(Z, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(t.ZP, {})] });
    }
    function P(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -144,21 +144,21 @@
     c = l(50959),
     h = l(9995);
    const u = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
-   var p = l(41179),
-    m = l(11527);
+   var m = l(41179),
+    p = l(11527);
    const j = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: (0, m.jsx)(i.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: (0, m.jsx)(i.nv, { className: u["nlds-canvas__example-paragraph"], children: n }) }) });
+    return (0, p.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: (0, p.jsx)(i.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: (0, p.jsx)(i.nv, { className: u["nlds-canvas__example-paragraph"], children: n }) }) });
    };
    j.displayName = "ParagraphContainer";
    const g = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: (0, m.jsx)(i.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: n }) });
+    return (0, p.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: (0, p.jsx)(i.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: n }) });
    };
    g.displayName = "DocumentContainer";
    const b = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: n });
+    return (0, p.jsx)(i.Tg, { className: u["nlds-canvas__example-surface"], children: n });
    };
    b.displayName = "SurfaceContainer";
    const x = (e) => {
@@ -177,14 +177,14 @@
     let A = c.Fragment;
     return (
      "paragraph" === f ? (A = j) : "document" === f ? (A = g) : "surface" === f && (A = b),
-     (0, m.jsxs)("div", {
+     (0, p.jsxs)("div", {
       className: (0, r.Z)(u["nlds-canvas"]),
       children: [
-       w && (0, m.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(A, { children: (0, m.jsx)(i.pu, { children: w }) }) }) }),
+       w && (0, p.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, p.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, p.jsx)(A, { children: (0, p.jsx)(i.pu, { children: w }) }) }) }),
        v &&
-        (0, m.jsx)("div", {
+        (0, p.jsx)("div", {
          className: (0, r.Z)(u["nlds-canvas__toolbar"]),
-         children: (0, m.jsx)(i.zx, {
+         children: (0, p.jsx)(i.zx, {
           className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
@@ -196,16 +196,16 @@
          }),
         }),
        v &&
-        (0, m.jsxs)("div", {
+        (0, p.jsxs)("div", {
          className: (0, r.Z)(u["nlds-canvas__code-block"], !l && u["nlds-canvas__code-block--user-select-none"]),
          id: X,
          hidden: !F,
          children: [
-          (0, m.jsx)(p.u, { syntax: _, textContent: Z, trim: !0 }),
+          (0, p.jsx)(m.u, { syntax: _, textContent: Z, trim: !0 }),
           l &&
-           (0, m.jsx)("div", {
+           (0, p.jsx)("div", {
             className: (0, r.Z)(u["nlds-canvas__toolbar"]),
-            children: (0, m.jsx)(i.zx, {
+            children: (0, p.jsx)(i.zx, {
              className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__copy-button"]),
              appearance: "subtle-button",
              onClick: () => {
@@ -292,10 +292,10 @@
    const d = (e) => {
     let { title: n, appearance: l, description: d, children: c, figure: h } = e;
     const u = "Doen",
-     p = "Niet doen",
-     m = h ? "figure" : "div",
+     m = "Niet doen",
+     p = h ? "figure" : "div",
      j = h ? "figcaption" : "div";
-    return (0, s.jsxs)(m, { className: (0, a.Z)(o["nlds-guideline"], o[`nlds-guideline--${l}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, s.jsxs)(j, { className: (0, a.Z)(o["nlds-guideline__description"]), children: ["dont" === l ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(t.nv, { className: (0, a.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${l}`]), children: [(0, s.jsx)(i.Z, { className: o["nlds-guideline__icon"] }), (0, s.jsx)("span", { className: o["nlds-guideline__title"], children: p })] }), (0, s.jsx)(t.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(t.nv, { className: (0, a.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${l}`]), children: [(0, s.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, s.jsx)("span", { className: o["nlds-guideline__title"], children: u })] }), (0, s.jsx)(t.nv, { children: n })] }), d] }), (0, s.jsx)("div", { className: (0, a.Z)(o["nlds-guideline__example"]), children: c })] });
+    return (0, s.jsxs)(p, { className: (0, a.Z)(o["nlds-guideline"], o[`nlds-guideline--${l}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, s.jsxs)(j, { className: (0, a.Z)(o["nlds-guideline__description"]), children: ["dont" === l ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(t.nv, { className: (0, a.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${l}`]), children: [(0, s.jsx)(i.Z, { className: o["nlds-guideline__icon"] }), (0, s.jsx)("span", { className: o["nlds-guideline__title"], children: m })] }), (0, s.jsx)(t.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(t.nv, { className: (0, a.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${l}`]), children: [(0, s.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, s.jsx)("span", { className: o["nlds-guideline__title"], children: u })] }), (0, s.jsx)(t.nv, { children: n })] }), d] }), (0, s.jsx)("div", { className: (0, a.Z)(o["nlds-guideline__example"]), children: c })] });
    };
   },
   80877: (e, n, l) => {

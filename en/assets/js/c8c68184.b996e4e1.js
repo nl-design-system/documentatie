@@ -69,13 +69,13 @@
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
    }
-   function b(e) {
+   function k(e) {
     const n = { h2: "h2", p: "p", ...(0, l.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: "keur-niet-te-snel-af", children: "Keur niet te snel af" }), "\n", (0, i.jsx)(n.p, { children: "In de formuliervalidatie kan er al veel afgevangen worden.\nDenk met de gebruiker mee." })] });
    }
-   function k(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(b, { ...e }) }) : b(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
    }
    function w(e) {
     return (0, i.jsx)(i.Fragment, {});
@@ -138,8 +138,8 @@
     G = {},
     P = [];
    function B(e) {
-    const n = { h1: "h1", li: "li", p: "p", ul: "ul", ...(0, l.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, i.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsx)(n.li, { children: "Vermeld het duidelijk of een veld verplicht is." }), "\n", (0, i.jsx)(n.li, { children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe." }), "\n", (0, i.jsx)(n.li, { children: "Keur niet te snel af." }), "\n", (0, i.jsx)(n.li, { children: "Geef geldige waardes aan voor een invoerveld." }), "\n", (0, i.jsx)(n.li, { children: "Vul bekende informatie in waar mogelijk." }), "\n", (0, i.jsx)(n.li, { children: "Maak het mogelijk een inzending te controleren, te wijzigen of ongedaan te maken." }), "\n"] }), "\n", (0, i.jsx)(W, {}), "\n", (0, i.jsx)(A, {}), "\n", (0, i.jsx)(u, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(k, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(v, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(_, {}), "\n", (0, i.jsx)(D, {}), "\n", (0, i.jsx)(S, {}), "\n", (0, i.jsx)(g, {}), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(C, {}), "\n", (0, i.jsx)(t.ZP, {})] });
+    const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, l.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "voorkom-fouten-help-de-gebruiker", children: "Voorkom fouten, help de gebruiker" }), "\n", (0, i.jsx)(n.p, { children: "Een formulier invullen moet zo gemakkelijk mogelijk zijn. Hoe help je je gebruiker het beste?" }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#vermeld-duidelijk-of-een-veld-verplicht-is", children: "Vermeld duidelijk of een veld verplicht is" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#sta-knippen-en-plakken-van-een-wachtwoord-toe", children: "Sta knippen en plakken van gegevens (zoals een wachtwoord) toe" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#keur-niet-te-snel-af", children: "Keur niet te snel af" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#geef-geldige-waardes-aan-voor-een-invoerveld", children: "Geef geldige waardes aan voor een invoerveld" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#vul-bekende-informatie-in-waar-mogelijk", children: "Vul bekende informatie in waar mogelijk" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#maak-het-mogelijk-een-inzending-te-controleren-te-wijzigen-of-ongedaan-te-maken", children: "Maak het mogelijk een inzending te controleren, te wijzigen of ongedaan te maken" }), "."] }), "\n"] }), "\n", (0, i.jsx)(W, {}), "\n", (0, i.jsx)(A, {}), "\n", (0, i.jsx)(u, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(b, {}), "\n", (0, i.jsx)(f, {}), "\n", (0, i.jsx)(v, {}), "\n", (0, i.jsx)(z, {}), "\n", (0, i.jsx)(_, {}), "\n", (0, i.jsx)(D, {}), "\n", (0, i.jsx)(S, {}), "\n", (0, i.jsx)(g, {}), "\n", (0, i.jsx)(p, {}), "\n", (0, i.jsx)(C, {}), "\n", (0, i.jsx)(t.ZP, {})] });
    }
    function E(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
@@ -176,8 +176,8 @@
    };
    v.displayName = "SurfaceContainer";
    const x = (e) => {
-    let { code: n, copy: r = !1, defaultExpandedCode: x = !1, displayCode: f = !0, children: b, container: k = "document", language: w, designTokens: _ } = e,
-     y = "function" == typeof b ? b() : b,
+    let { code: n, copy: r = !1, defaultExpandedCode: x = !1, displayCode: f = !0, children: k, container: b = "document", language: w, designTokens: _ } = e,
+     y = "function" == typeof k ? k() : k,
      z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      N = "string" == typeof n ? n : u.uS(z || y),
      [S, F] = (0, c.useState)(N),
@@ -190,7 +190,7 @@
     const C = (0, c.useId)();
     let V = c.Fragment;
     return (
-     "paragraph" === k ? (V = g) : "document" === k ? (V = j) : "surface" === k && (V = v),
+     "paragraph" === b ? (V = g) : "document" === b ? (V = j) : "surface" === b && (V = v),
      (0, m.jsxs)("div", {
       className: (0, l.Z)(h["nlds-canvas"]),
       children: [

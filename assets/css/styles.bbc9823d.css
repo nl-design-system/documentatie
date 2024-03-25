@@ -2630,6 +2630,9 @@ abbr[title] {
 .homepage-hero_src-components-HomepageHero-module {
  --ifm-h1-font-size: var(--utrecht-heading-3-font-size);
 }
+.theme-doc-markdown h2 {
+ scroll-margin-top: 4em;
+}
 code,
 pre {
  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
