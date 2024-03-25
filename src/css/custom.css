@@ -280,6 +280,11 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   --ifm-h1-font-size: var(--utrecht-heading-3-font-size);
 }
 
+/* Display internal link below sticky header */
+.theme-doc-markdown h2 {
+  scroll-margin-top: 4em;
+}
+
 code,
 pre {
   font-family: "Fira Code VF" !important;
