@@ -281,13 +281,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 /* Display internal link below sticky header */
-.theme-doc-markdown h2:before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 0;
-  height: 4em;
-  margin-top: -4em;
+.theme-doc-markdown h2 {
+  scroll-margin-top: 4em;
 }
 
 code,
