@@ -78,6 +78,7 @@ header h1 + p {
     column-count: 2;
     column-gap: 2em;
   }
+  .usps-long ul
 }
 
 /* footer */
@@ -128,10 +129,14 @@ header h1 + p {
 
 body {
   margin: 0;
-  font-size: 125%;
   box-sizing: border-box;
   color: #004152;
   font-family: "Source Sans 3", sans-serif;
+}
+@media (min-width: 50em) {
+  body {
+    font-size: 125%;
+  }
 }
 
 h1,
