@@ -16,10 +16,34 @@ header h1 {
     font-size: 2.25em;
   }
 }
+header .pre-h1 {
+  font-size: 0.5em;
+  display: block;
+  margin-bottom: 0.25em;
+  opacity: 0.85;
+}
+header .pre-h1::after {
+  content: '';
+  height: .25em;
+  width: 1.5em;
+  background: #fff;
+  display: block;
+  margin-bottom: 2.4em;
+  margin-top: 1.2em;
+  opacity: .85;
+}
 
 header h1 + p {
-  font-weight: bold;
-  max-width: 44em;
+  max-width: 42em;
+  font-size: 1.2em;
+}
+@media (min-width: 50em) {
+  header .product-name
+
+  /* keep together if space allows */
+    {
+    white-space: nowrap;
+  }
 }
 
 /* usps area */
@@ -28,16 +52,20 @@ header h1 + p {
   margin-bottom: 2em;
 }
 .usps-short h2 {
-  margin-bottom: 0.25em;
+  margin-bottom: 1.2em;
 }
 .usps-short p {
   font-size: 120%;
+}
+.usps-long h3 {
+  margin-bottom: 1.5em;
+  margin-top: 0.3em;
 }
 .usps-long ul {
   padding-left: 0.85em;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 54em) {
   .usps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,16 +75,16 @@ header h1 + p {
     grid-column: span 2;
   }
   .usps-long ul {
-    display: grid;
-    gap: 0.5em 2.5em;
-    grid-template-columns: 1fr 1fr;
+    column-count: 2;
+    column-gap: 2em;
   }
 }
 
 /* footer */
 
 .footer {
-  background-color: #f2f8fb;
+  border-top: 4px solid #D1DFE3;
+  border-bottom: 4px solid #D1DFE3;  background-color: #f2f8fb;
   color: #004152;
   background-image: url(./blocks.png);
   background-size: 30em;
@@ -67,6 +95,12 @@ header h1 + p {
 }
 .footer-items div {
   margin: 0.5em 0 2em;
+}
+.footer .pre-h3 {
+  font-size: .6em;
+  display: block;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
 }
 @media (min-width: 50em) {
   .footer {
@@ -94,6 +128,7 @@ header h1 + p {
 
 body {
   margin: 0;
+  font-size: 125%;
   box-sizing: border-box;
   color: #004152;
   font-family: "Source Sans 3", sans-serif;
@@ -103,6 +138,7 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  font-family: "Fira Sans";
 }
 
 h3 {
