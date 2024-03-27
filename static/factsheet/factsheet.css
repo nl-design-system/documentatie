@@ -52,6 +52,7 @@ header h1 + p {
   margin-bottom: 2em;
 }
 .usps-short h2 {
+  margin-top: .6em;
   margin-bottom: 1.2em;
 }
 .usps-short p {
@@ -64,6 +65,9 @@ header h1 + p {
 .usps-long ul {
   padding-left: 0.85em;
 }
+.usps-long li {
+  margin-bottom: .4em;
+}
 
 @media (min-width: 54em) {
   .usps {
@@ -71,12 +75,19 @@ header h1 + p {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3em;
   }
+  .usps-short h2 {
+    margin-top: 0;
+  }
   .usps-long {
     grid-column: span 2;
   }
   .usps-long ul {
     column-count: 2;
     column-gap: 2em;
+  }
+  .usps-long li {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
 
@@ -91,7 +102,7 @@ header h1 + p {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-blend-mode: multiply;
-  padding-bottom: 7em;
+  padding-bottom: 6em;
 }
 .footer-items div {
   margin: 0.5em 0 2em;
@@ -105,7 +116,7 @@ header h1 + p {
 @media (min-width: 50em) {
   .footer {
     background-position: bottom right;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
   }
   .footer-items {
     display: grid;
