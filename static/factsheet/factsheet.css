@@ -23,14 +23,14 @@ header .pre-h1 {
   opacity: 0.85;
 }
 header .pre-h1::after {
-  content: '';
-  height: .25em;
+  content: "";
+  height: 0.25em;
   width: 1.5em;
   background: #fff;
   display: block;
   margin-bottom: 2.4em;
   margin-top: 1.2em;
-  opacity: .85;
+  opacity: 0.85;
 }
 
 header h1 + p {
@@ -40,8 +40,7 @@ header h1 + p {
 @media (min-width: 50em) {
   header .product-name
 
-  /* keep together if space allows */
-    {
+  /* keep together if space allows */ {
     white-space: nowrap;
   }
 }
@@ -52,7 +51,7 @@ header h1 + p {
   margin-bottom: 2em;
 }
 .usps-short h2 {
-  margin-top: .6em;
+  margin-top: 0.6em;
   margin-bottom: 1.2em;
 }
 .usps-short p {
@@ -66,7 +65,7 @@ header h1 + p {
   padding-left: 0.85em;
 }
 .usps-long li {
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 
 @media (min-width: 54em) {
@@ -94,8 +93,9 @@ header h1 + p {
 /* footer */
 
 .footer {
-  border-top: 4px solid #D1DFE3;
-  border-bottom: 4px solid #D1DFE3;  background-color: #f2f8fb;
+  border-top: 4px solid #d1dfe3;
+  border-bottom: 4px solid #d1dfe3;
+  background-color: #f2f8fb;
   color: #004152;
   background-image: url(./blocks.png);
   background-size: 30em;
@@ -108,7 +108,7 @@ header h1 + p {
   margin: 0.5em 0 2em;
 }
 .footer .pre-h3 {
-  font-size: .6em;
+  font-size: 0.6em;
   display: block;
   margin-bottom: 0.3em;
   text-transform: uppercase;
