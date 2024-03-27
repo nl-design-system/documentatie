@@ -3,7 +3,7 @@ title: Iconen | Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Iconen
-sidebar_position: 1
+sidebar_position: 4
 pagination_label: Iconen
 description: Richtlijnen voor iconen
 keywords:
@@ -113,7 +113,7 @@ In Figma kun je iconen aliassen mee geven door een beschrijving toe te voegen. W
 
 ![Screenshot van Figma. Plus icoon is geselecteerd. Aanvullende beschrijving toont de woorden 'Add' en 'Toevoegen'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_aliassen.png)
 
-Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen.
+Twijfel je of je icoon herkenbaar is? Laat het onderzoeken. Zo heeft Gemeente Utrecht inmiddels meerdere iconen laten onderzoeken waardoor ze deze met zekerheid kunnen toepassen. Bekijk deze onderzoeken op [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/).
 
 ### SVG
 
