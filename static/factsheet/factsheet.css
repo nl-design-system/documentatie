@@ -134,6 +134,9 @@ header h1 + p {
 .contact p {
   display: inline;
 }
+.contact a {
+  color: #006fa3;
+}
 
 /* generic */
 
