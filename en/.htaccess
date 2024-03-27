@@ -18,3 +18,5 @@ RedirectMatch 301 "^/project/events(.*)$" "/community/events$1"
 Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
 
 Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
+
+Redirect 301 "/factsheets" "/factsheets/managers" # until we have multiple factsheets and turn /factsheets into an overview page
