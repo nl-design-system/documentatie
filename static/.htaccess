@@ -19,4 +19,4 @@ Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
 
 Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
 
-Redirect 301 "/factsheets" "/factsheets/managers" # until we have multiple factsheets and turn /factsheets into an overview page
+Redirect 301 "/factsheets" "/factsheets/managers" 
