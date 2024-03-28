@@ -19,7 +19,7 @@ Op deze pagina geven we antwoord op vragen die regelmatig aan het kernteam van N
 - [Wat is het estafettemodel? Hoe werkt dat model?](#wat-is-het-estafettemodel-hoe-werkt-dat-model)
 - [Waarom maken jullie niet gewoon zelf componenten, richtlijnen en ontwerpen en stellen die beschikbaar?](#waarom-maken-jullie-niet-gewoon-zelf-componenten-richtlijnen-en-ontwerpen-en-stellen-die-beschikbaar)
 - [Waarom hebben jullie een community? Wat doet die voor mij?](#waarom-hebben-jullie-een-community-wat-doet-die-voor-mij)
-- [Welke NLDS-richtlijnen en componenten kan ik nu direct gebruiken om mijn website digitaal, gebruiksvriendelijk en toegankelijk te krijgen?](#welke-nlds-richtlijnen-en-componenten-kan-ik-nu-direct-gebruiken-om-mijn-website-digitaal-gebruiksvriendelijk-en-toegankelijk-te-krijgen)
+- [Welke richtlijnen en componenten kan ik nu direct gebruiken om mijn website digitaal, gebruiksvriendelijk en toegankelijk te krijgen?](#welke-nlds-richtlijnen-en-componenten-kan-ik-nu-direct-gebruiken-om-mijn-website-digitaal-gebruiksvriendelijk-en-toegankelijk-te-krijgen)
 - [Ik wil NL Design System gaan gebruiken voor mijn toegankelijkheidsopgave maar waar moet ik beginnen?](#ik-wil-nl-design-system-gaan-gebruiken-voor-mijn-toegankelijkheidsopgave-maar-waar-moet-ik-beginnen)
 - [Mijn leverancier heeft vragen over NL Design System. Naar wie van jullie kan ik hem verwijzen?](#mijn-leverancier-heeft-vragen-over-nl-design-system-naar-wie-van-jullie-kan-ik-hem-verwijzen)
 - [Ik wil mijn manager voorstellen om mee te doen met NL Design System. Wat zijn de kosten en doorlooptijd? Waar moet ik zelf voor zorgen?](#ik-wil-mijn-manager-voorstellen-om-mee-te-doen-met-nl-design-system-wat-zijn-de-kosten-en-doorlooptijd-waar-moet-ik-zelf-voor-zorgen)
@@ -39,12 +39,11 @@ Het NL Design System bestaat uit verschillende soorten onderdelen:
 - [Richtlijnen](/richtlijnen/introductie): adviezen over verschillende onderwerpen, zoals het [maken van formulieren](/richtlijnen/formulieren/).
 - [Componenten](/componenten): bouwblokken waarmee websites en applicaties kunnen worden opgebouwd, zoals knoppen, invulvelden en tabellen.
 - [Patronen](/voorbeelden/patronen): voorbeelden van hoe componenten samen kunnen worden gebruikt voor specifieke taken die gebruikers willen doen, op basis van inzichten uit [gebruikersonderzoek](/voorbeelden/onderzoek).
+- Er is ook een [handboek](/handboek/introductie) over het gebruik van NL Design System.
 
-Er is ook een [handboek](/handboek/introductie), documentatie over het gebruik van NL Design System.
+De community neemt het initiatief voor deze onderdelen, bijvoorbeeld wanneer een gemeente of ministerie een specifiek component of patroon nodig heeft.
 
-Deze onderdelen ontstaan niet bij het kernteam, maar in de community. Bijvoorbeeld omdat een gemeente of ministerie een specifiek component of patroon nodig heeft.
-
-Als blijkt dat meer organisaties datzelfde component willen gebruiken, wordt er samengewerkt aan een ultieme versie, waarop het kernteam regie voert, kwaliteit bewaakt en garanties geeft. Dit doen we met het ‘[estafettemodel](/handboek/estafettemodel)’. Hierin krijgen richtlijnen, componenten en patronen een status, die aangeeft hoe ver ze zijn gevorderd.
+Het kernteam geeft ondersteuning als blijkt dat meer organisaties datzelfde component willen gebruiken. Dan wordt er samengewerkt aan een ultieme versie, waarop het kernteam regie voert, kwaliteit bewaakt en garanties geeft. Dit doen we met het ‘[estafettemodel](/handboek/estafettemodel)’. Hierin krijgen richtlijnen, componenten en patronen een status, die aangeeft hoe ver ze zijn gevorderd.
 
 ## Wat is het estafettemodel? Hoe werkt dat model?
 
@@ -99,11 +98,19 @@ NL Design System wordt gebruikt in verschillende projecten van overheidsorganisa
 Meedoen kan op allerlei manieren, van alleen gebruiken tot zelf meebouwen:
 
 - **Gebruik de bouwstenen**: gebruik [richtlijnen](/richtlijnen/introductie), [componenten](/componenten) of [onderzoek](/onderzoek) voor je websites en applicaties.
-- **Doe kennis op**: kom naar bijeenkomsten als de tweewekelijkse Heartbeat, Design Systems Week of hackatons. Of word lid van onze [Slack community bij CodeForNL](https://praatmee.codefor.nl/) (kanaal: #nl-design-system).
-- **Werk mee**: deel je eigen richtlijnen, componenten of onderzoek, of geef feedback op de bestaande bouwstenen.
+- **Doe kennis op**: kom naar bijeenkomsten als de tweewekelijkse Heartbeat, Design Systems Week of hackatons. Of word lid van onze [Slack community bij Code for NL](https://praatmee.codefor.nl/) (kanaal: #nl-design-system).
+- **Werk mee**: deel je eigen richtlijnen, componenten of onderzoek, [maak een thema voor je huisstijl](/handboek/developer/thema-maken), of geef feedback op de bestaande bouwstenen.
 
 ## Hoe is security geregeld binnen NLDS?
 
-Het kernteam beheert de [repository's](https://github.com/orgs/nl-design-system/repositories) waarin de diverse NL Design System projecten publiek worden ontsloten, zoals thema's en organisatie-specifieke design systems.
+Het kernteam helpt de community om hun [repository's](https://github.com/orgs/nl-design-system/repositories) vers en veilig te houden, zodat iedereen gerust gebruik kan maken van de componenten en thema's.
+
+- Alle code wordt verplicht door een tweede teamlid gecontroleerd.
+- Elke dag worden backups gemaakt van de NL Design System projecten op GitHub.
+- Elke maand werken we samen om updates te installeren.
+- De updates gaan niet automatisch, alle wijzigingen worden door twee personen gecontroleerd.
+- Organisaties die werken op [github.com/nl-design-system](github.com/nl-design-system) worden [geholpen met infrastructuur](http://github.com/nl-design-system/terraform) die toegang tot de code en de integriteit van de code bewaakt.
+- Twee-factor-authenticatie (2FA) is verplicht voor alle bijdragen aan NL Design System.
+- Alle code controleren we automatisch op secure coding practices, en voldoen aan die regels is verplicht.
 
 We passen best practices toe om te zorgen dat deze repository's up to date en veilig blijven, zoals automatisch instellen van rechten, branch protection en procedures voor het regelmatig updaten van dependency's.
