@@ -1,9 +1,9 @@
-/*! For license information please see main.2606239a.js.LICENSE.txt */
+/*! For license information please see main.6d375584.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [179],
  {
-  24295: (e, t, r) => {
-   var o = { "./prism-js-extras": 5018, "./prism-jsx": 88257, "./prism-markdown": 64746, "./prism-markup": 61687, "./prism-scss": 81320, "./prism-tsx": 79904, "./prism-yaml": 57010 };
+  7081: (e, t, r) => {
+   var o = { "./prism-js-extras": 5018, "./prism-json": 21417, "./prism-jsx": 88257, "./prism-markdown": 64746, "./prism-markup": 61687, "./prism-scss": 81320, "./prism-tsx": 79904, "./prism-yaml": 57010 };
    function n(e) {
     var t = a(e);
     return r(t);
@@ -20,7 +20,7 @@
    }),
     (n.resolve = a),
     (e.exports = n),
-    (n.id = 24295);
+    (n.id = 7081);
   },
   68199: (e, t, r) => {
    "use strict";
@@ -1351,7 +1351,7 @@
      { additionalLanguages: o } = t;
     (globalThis.Prism = e),
      o.forEach((e) => {
-      "php" === e && r(31559), r(24295)(`./prism-${e}`);
+      "php" === e && r(31559), r(7081)(`./prism-${e}`);
      }),
      delete globalThis.Prism;
    })(o.p1);
@@ -4117,6 +4117,9 @@
      (a.inside = c), (c["maybe-class-name"] = /^[A-Z][\s\S]*/);
     }
    })(Prism);
+  },
+  21417: () => {
+   (Prism.languages.json = { property: { pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?=\s*:)/, lookbehind: !0, greedy: !0 }, string: { pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/, lookbehind: !0, greedy: !0 }, comment: { pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/, greedy: !0 }, number: /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i, punctuation: /[{}[\],]/, operator: /:/, boolean: /\b(?:false|true)\b/, null: { pattern: /\bnull\b/, alias: "keyword" } }), (Prism.languages.webmanifest = Prism.languages.json);
   },
   88257: () => {
    !(function (e) {
@@ -11914,7 +11917,7 @@
         { types: ["italic"], style: { fontStyle: "italic" } },
        ],
       },
-      additionalLanguages: ["markup", "jsx", "tsx", "js-extras", "yaml", "markdown", "scss"],
+      additionalLanguages: ["markup", "jsx", "tsx", "json", "js-extras", "yaml", "markdown", "scss"],
       magicComments: [{ className: "theme-code-block-highlighted-line", line: "highlight-next-line", block: { start: "highlight-start", end: "highlight-end" } }],
      },
      docs: { sidebar: { hideable: !0, autoCollapseCategories: !1 }, versionPersistence: "localStorage" },
