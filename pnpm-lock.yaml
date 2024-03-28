@@ -46,8 +46,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@argos-ci/cli':
-        specifier: 1.0.11
-        version: 1.0.11
+        specifier: 1.0.12
+        version: 1.0.12
       '@argos-ci/playwright':
         specifier: 1.9.3
         version: 1.9.3
@@ -408,12 +408,12 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: true
 
-  /@argos-ci/cli@1.0.11:
-    resolution: {integrity: sha512-pZjjxljBUN22Dz3Q8n5JUUm7yzrny/XdsyJU5soMpGPGwD6oNaDdFucyyIDv07qck/qTG85GlNord/0SuqHZBA==}
+  /@argos-ci/cli@1.0.12:
+    resolution: {integrity: sha512-Hd/n6kuQwAbIMqfQg/+zzYzC4xoqekBCkfc695KdU2eFDnIokUcxyJmAnBDE9zD99VfaV2kw/0VGVAoAZnzEYA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 1.5.4
+      '@argos-ci/core': 1.5.5
       commander: 11.1.0
       ora: 7.0.1
       update-notifier: 6.0.2
@@ -423,6 +423,21 @@ packages:
 
   /@argos-ci/core@1.5.4:
     resolution: {integrity: sha512-XgRJSJYfauCbqOGNLFFiVri70TAp0TORfKrK/6yXyt7k9NgZD6vD10hUhSMeJP7REwYrqD3wxY7l85K+wwoo3Q==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.1
+      axios: 1.6.3(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/core@1.5.5:
+    resolution: {integrity: sha512-m271rCtp5fnpUU89eSlS/If5WnDIUGduEHfW9YrwVHnMYWPCNBDxp2q87Wgjl3O5RTm/x+sDED3vFD9i1q+yTQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/util': 1.2.1
@@ -5763,7 +5778,7 @@ packages:
       postcss-modules-scope: 3.0.0(postcss@8.4.32)
       postcss-modules-values: 4.0.0(postcss@8.4.32)
       postcss-value-parser: 4.2.0
-      semver: 7.5.4
+      semver: 7.6.0
       webpack: 5.89.0
 
   /css-minimizer-webpack-plugin@4.2.2(clean-css@5.3.3)(webpack@5.89.0):
@@ -11236,7 +11251,7 @@ packages:
       cosmiconfig: 8.3.6(typescript@5.3.3)
       jiti: 1.21.0
       postcss: 8.4.32
-      semver: 7.5.4
+      semver: 7.6.0
       webpack: 5.89.0
     transitivePeerDependencies:
       - typescript
@@ -14142,7 +14157,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.4
+      semver: 7.6.0
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
