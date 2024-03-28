@@ -74,7 +74,7 @@
     "@argos-ci/playwright": "1.9.3",
     "@docsearch/react": "3.5.2",
     "@docusaurus/module-type-aliases": "3.1.0",
-    "@docusaurus/plugin-content-blog": "3.1.0",
+    "@docusaurus/plugin-content-blog": "3.1.1",
     "@docusaurus/plugin-content-docs": "3.1.0",
     "@docusaurus/theme-classic": "3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
