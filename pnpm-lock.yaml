@@ -30,8 +30,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0
       html-react-parser:
-        specifier: 5.1.8
-        version: 5.1.8(@types/react@18.2.55)(react@18.2.0)
+        specifier: 5.1.9
+        version: 5.1.9(@types/react@18.2.55)(react@18.2.0)
       iframe-resizer-react:
         specifier: 1.1.0
         version: 1.1.0(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -7943,8 +7943,8 @@ packages:
       relateurl: 0.2.7
       terser: 5.26.0
 
-  /html-react-parser@5.1.8(@types/react@18.2.55)(react@18.2.0):
-    resolution: {integrity: sha512-oAXgUB4JYHFg4le3RQZtoge1TGMkwXSZPiWiexwdx3AuldgG+QEvbwMrscSViu90JNje3V4Zq5gCUSoTxa0W0A==}
+  /html-react-parser@5.1.9(@types/react@18.2.55)(react@18.2.0):
+    resolution: {integrity: sha512-MP0MQDEGlzkJT0OwY//tKYrgIzBM1frYLxx9RF7ALdIjI+MCMumydcNovXDX4X/iDi1zfgaU28VxoNXZn7EPjQ==}
     peerDependencies:
       '@types/react': 17 || 18
       react: 0.14 || 15 || 16 || 17 || 18
@@ -7957,7 +7957,7 @@ packages:
       html-dom-parser: 5.0.8
       react: 18.2.0
       react-property: 2.0.2
-      style-to-js: 1.1.10
+      style-to-js: 1.1.11
     dev: false
 
   /html-tags@3.3.1:
@@ -13286,8 +13286,8 @@ packages:
       tinycolor2: 1.6.0
     dev: true
 
-  /style-to-js@1.1.10:
-    resolution: {integrity: sha512-VC7MBJa+y0RZhpnLKDPmVRLRswsASLmixkiZ5R8xZpNT9VyjeRzwnXd2pBzAWdgSGv/pCNNH01gPCCUsB9exYg==}
+  /style-to-js@1.1.11:
+    resolution: {integrity: sha512-yHpYzXzEkx7iDjGEmE8Eyl4K/hWIm36FXPdRsl2NHEpbigLeawLVsv6tcYp+2xNhfpCrut4w08dYqeCxWMdRxw==}
     dependencies:
       style-to-object: 1.0.5
     dev: false
