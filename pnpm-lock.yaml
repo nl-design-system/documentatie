@@ -49,8 +49,8 @@ importers:
         specifier: 1.0.11
         version: 1.0.11
       '@argos-ci/playwright':
-        specifier: 1.9.3
-        version: 1.9.3
+        specifier: 2.0.0
+        version: 2.0.0
       '@docsearch/react':
         specifier: 3.5.2
         version: 3.5.2(@algolia/client-search@4.22.1)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)
@@ -436,14 +436,30 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@1.9.3:
-    resolution: {integrity: sha512-kgMy7SHkBj4MFXfpeqh8Gk6upQwgs16/4zcV9U/C2A8JpXRov96IKetK5vlCqqcrO/k0oglS+eZypMP5bvmfsw==}
+  /@argos-ci/core@1.5.5:
+    resolution: {integrity: sha512-m271rCtp5fnpUU89eSlS/If5WnDIUGduEHfW9YrwVHnMYWPCNBDxp2q87Wgjl3O5RTm/x+sDED3vFD9i1q+yTQ==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.1
+      axios: 1.6.3(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/playwright@2.0.0:
+    resolution: {integrity: sha512-rER3LPRYCS7CD3VK7ddP63tXj/3crQKZqrPGtY3QobyRO0IFech6xejEAHz2zM8ZT8aXH/dQydoU7vR9PCP8SQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/browser': 1.5.0
-      '@argos-ci/core': 1.5.4
+      '@argos-ci/core': 1.5.5
       '@argos-ci/util': 1.2.1
       chalk: 5.3.0
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5763,7 +5779,7 @@ packages:
       postcss-modules-scope: 3.0.0(postcss@8.4.32)
       postcss-modules-values: 4.0.0(postcss@8.4.32)
       postcss-value-parser: 4.2.0
-      semver: 7.5.4
+      semver: 7.6.0
       webpack: 5.89.0
 
   /css-minimizer-webpack-plugin@4.2.2(clean-css@5.3.3)(webpack@5.89.0):
@@ -11236,7 +11252,7 @@ packages:
       cosmiconfig: 8.3.6(typescript@5.3.3)
       jiti: 1.21.0
       postcss: 8.4.32
-      semver: 7.5.4
+      semver: 7.6.0
       webpack: 5.89.0
     transitivePeerDependencies:
       - typescript
