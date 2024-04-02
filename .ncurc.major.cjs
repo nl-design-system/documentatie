@@ -2,6 +2,6 @@ const minorConfig = require('./.ncurc.minor.cjs');
 
 module.exports = {
   ...minorConfig,
-  reject: [...minorConfig.reject, 'prettier'],
+  reject: [...minorConfig.reject],
   target: 'latest',
 };

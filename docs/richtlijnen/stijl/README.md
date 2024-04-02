@@ -20,9 +20,9 @@ Het NL Design System geeft richtlijnen voor stijl en visueel ontwerp. Hierbij zi
 
 De richtlijnen zijn onderverdeeld in een aantal pagina's per onderwerp:
 
-- [Iconen](./iconen.md)
+- [Typografie](./typografie.md)
 - [Kleuren](./kleuren.md)
 - [Ruimte](./ruimte.md)
-- [Typografie](./typografie.md)
+- [Iconen](./iconen.md)
 
 <StyleFooterInfo />

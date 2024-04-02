@@ -1,4 +1,4 @@
-## Samenvatting boven het formulier
+## Zet een samenvatting van de foutmeldingen boven het formulier
 
 Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:
 

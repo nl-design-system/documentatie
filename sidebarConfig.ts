@@ -249,6 +249,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         { type: 'doc', id: 'project/over-nlds' },
+        { type: 'doc', id: 'project/faq' },
         { type: 'doc', id: 'project/kernteam' },
         { type: 'doc', id: 'project/blijf-op-de-hoogte' },
         { type: 'doc', id: 'project/links' },
