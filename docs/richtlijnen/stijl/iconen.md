@@ -262,10 +262,8 @@ De iconenset die we bij het NL Design System gebruiken voor het Voorbeeld thema.
 
 ---
 
-## Help deze documentatie te verbeteren
+## Over deze richtlijnen
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in _beta_.
 
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? [Deel je mening op GitHub](https://github.com/nl-design-system/documentatie/discussions/473) met je suggesties.
