@@ -3,14 +3,14 @@
  [3753],
  {
   9190: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => c, contentTitle: () => d, default: () => g, frontMatter: () => o, metadata: () => a, toc: () => h });
+   t.r(n), t.d(n, { assets: () => c, contentTitle: () => a, default: () => g, frontMatter: () => o, metadata: () => d, toc: () => h });
    var i = t(11527),
     r = t(80877),
     s = t(45942),
     l = t(17560);
-   const o = { title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", pagination_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "1.1.1", keywords: ["WCAG"] },
-    d = "WCAG Succescriterium 1.1.1 Niet-tekstuele content",
-    a = { id: "wcag/1.1.1", title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", source: "@site/docs/wcag/1.1.1.mdx", sourceDirName: "wcag", slug: "/wcag/1.1.1", permalink: "/en/wcag/1.1.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.1.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", pagination_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "1.1.1", keywords: ["WCAG"] } },
+   const o = { title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "1.1.1 Niet-tekstuele content", pagination_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Zorg bij niet-tekstuele content voor een tekstalternatief.", slug: "1.1.1", keywords: ["WCAG"] },
+    a = "WCAG Succescriterium 1.1.1 Niet-tekstuele content",
+    d = { id: "wcag/1.1.1", title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Zorg bij niet-tekstuele content voor een tekstalternatief.", source: "@site/docs/wcag/1.1.1.mdx", sourceDirName: "wcag", slug: "/wcag/1.1.1", permalink: "/en/wcag/1.1.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.1.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "1.1.1 Niet-tekstuele content", pagination_label: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", description: "Zorg bij niet-tekstuele content voor een tekstalternatief.", slug: "1.1.1", keywords: ["WCAG"] }, sidebar: "richtlijnen", previous: { title: "WCAG", permalink: "/en/wcag" }, next: { title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", permalink: "/en/wcag/1.3.5" } },
     c = {},
     h = [
      { value: "W3C referenties", id: "w3c-referenties", level: 2 },

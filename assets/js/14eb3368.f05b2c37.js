@@ -190,7 +190,7 @@
    var g = n(11527);
    function p(e) {
     let { href: t, icon: n = "", title: s, description: i, linkDescription: r } = e;
-    return (0, g.jsxs)("div", { className: (0, d.Z)("card", x.card), children: [(0, g.jsxs)("h2", { className: (0, d.Z)(x.cardTitle), title: s, children: [n, " ", s] }), i && (0, g.jsx)("p", { className: (0, d.Z)(x.cardDescription), title: i, children: i }), (0, g.jsxs)(l.Z, { href: t, className: (0, d.Z)(x.cardLink), children: [r, " ", (0, g.jsx)(c.JO, { children: (0, g.jsx)(v, {}) })] })] });
+    return (0, g.jsxs)("div", { className: (0, d.Z)("card", x.card), children: [(0, g.jsxs)("h2", { className: (0, d.Z)(x.cardTitle), children: [n, " ", s] }), i && (0, g.jsx)("p", { className: (0, d.Z)(x.cardDescription), children: i }), (0, g.jsxs)(l.Z, { href: t, className: (0, d.Z)(x.cardLink), children: [r, " ", (0, g.jsx)(c.JO, { children: (0, g.jsx)(v, {}) })] })] });
    }
    function j(e) {
     let { item: t } = e;

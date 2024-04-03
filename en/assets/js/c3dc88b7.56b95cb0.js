@@ -3,15 +3,15 @@
  [6194],
  {
   57459: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => l, contentTitle: () => c, default: () => g, frontMatter: () => a, metadata: () => d, toc: () => u });
+   t.r(n), t.d(n, { assets: () => d, contentTitle: () => a, default: () => g, frontMatter: () => c, metadata: () => l, toc: () => u });
    var i = t(11527),
     r = t(80877),
     o = t(45942),
     s = t(17560);
-   const a = { title: "WCAG Succescriterium 3.2.1 Bij focus", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.2.1 Bij focus", pagination_label: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.2.1", keywords: ["WCAG"] },
-    c = "WCAG Succescriterium 3.2.1 Bij focus",
-    d = { id: "wcag/3.2.1", title: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", source: "@site/docs/wcag/3.2.1.mdx", sourceDirName: "wcag", slug: "/wcag/3.2.1", permalink: "/en/wcag/3.2.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 3.2.1 Bij focus", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.2.1 Bij focus", pagination_label: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.2.1", keywords: ["WCAG"] } },
-    l = {},
+   const c = { title: "WCAG Succescriterium 3.2.1 Bij focus", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.2.1 Bij focus", pagination_label: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.2.1", keywords: ["WCAG"] },
+    a = "WCAG Succescriterium 3.2.1 Bij focus",
+    l = { id: "wcag/3.2.1", title: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", source: "@site/docs/wcag/3.2.1.mdx", sourceDirName: "wcag", slug: "/wcag/3.2.1", permalink: "/en/wcag/3.2.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 3.2.1 Bij focus", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.2.1 Bij focus", pagination_label: "WCAG Succescriterium 3.2.1 Bij focus", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.2.1", keywords: ["WCAG"] }, sidebar: "richtlijnen", previous: { title: "WCAG Succescriterium 2.1.1 Toetsenbord", permalink: "/en/wcag/2.1.1" }, next: { title: "WCAG Succescriterium 3.3.1 Foutidentificatie", permalink: "/en/wcag/3.3.1" } },
+    d = {},
     u = [
      { value: "W3C referenties", id: "w3c-referenties", level: 2 },
      { value: "Korte samenvatting", id: "korte-samenvatting", level: 2 },
@@ -54,7 +54,7 @@
    }
   },
   80877: (e, n, t) => {
-   t.d(n, { Z: () => a, a: () => s });
+   t.d(n, { Z: () => c, a: () => s });
    var i = t(50959);
    const r = {},
     o = i.createContext(r);
@@ -67,7 +67,7 @@
      [n, e],
     );
    }
-   function a(e) {
+   function c(e) {
     let n;
     return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(r) : e.components || r) : s(e.components)), i.createElement(o.Provider, { value: n }, e.children);
    }

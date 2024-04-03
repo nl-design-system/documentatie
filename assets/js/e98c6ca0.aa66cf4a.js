@@ -3,14 +3,14 @@
  [3538],
  {
   38937: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => c, contentTitle: () => o, default: () => g, frontMatter: () => d, metadata: () => a, toc: () => h });
+   i.r(n), i.d(n, { assets: () => c, contentTitle: () => d, default: () => g, frontMatter: () => o, metadata: () => a, toc: () => h });
    var r = i(11527),
     t = i(80877),
     s = i(45942),
     l = i(17560);
-   const d = { title: "WCAG Succescriterium 3.3.1 Foutidentificatie", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", pagination_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.3.1", keywords: ["WCAG"] },
-    o = "WCAG Succescriterium 3.3.1 Foutidentificatie",
-    a = { id: "wcag/3.3.1", title: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", source: "@site/docs/wcag/3.3.1.mdx", sourceDirName: "wcag", slug: "/wcag/3.3.1", permalink: "/wcag/3.3.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.3.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 3.3.1 Foutidentificatie", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", pagination_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "3.3.1", keywords: ["WCAG"] } },
+   const o = { title: "WCAG Succescriterium 3.3.1 Foutidentificatie", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "3.3.1 Foutidentificatie", pagination_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Laat een gebruiker weten als er fouten zijn bij het invullen van een formulier.", slug: "3.3.1", keywords: ["WCAG"] },
+    d = "WCAG Succescriterium 3.3.1 Foutidentificatie",
+    a = { id: "wcag/3.3.1", title: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Laat een gebruiker weten als er fouten zijn bij het invullen van een formulier.", source: "@site/docs/wcag/3.3.1.mdx", sourceDirName: "wcag", slug: "/wcag/3.3.1", permalink: "/wcag/3.3.1", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.3.1.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 3.3.1 Foutidentificatie", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "3.3.1 Foutidentificatie", pagination_label: "WCAG Succescriterium 3.3.1 Foutidentificatie", description: "Laat een gebruiker weten als er fouten zijn bij het invullen van een formulier.", slug: "3.3.1", keywords: ["WCAG"] }, sidebar: "richtlijnen", previous: { title: "WCAG Succescriterium 3.2.1 Bij focus", permalink: "/wcag/3.2.1" }, next: { title: "WCAG Succescriterium 3.3.3 Foutsuggestie", permalink: "/wcag/3.3.3" } },
     c = {},
     h = [
      { value: "W3C referenties", id: "w3c-referenties", level: 2 },
@@ -56,7 +56,7 @@
    }
   },
   80877: (e, n, i) => {
-   i.d(n, { Z: () => d, a: () => l });
+   i.d(n, { Z: () => o, a: () => l });
    var r = i(50959);
    const t = {},
     s = r.createContext(t);
@@ -69,7 +69,7 @@
      [n, e],
     );
    }
-   function d(e) {
+   function o(e) {
     let n;
     return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(t) : e.components || t) : l(e.components)), r.createElement(s.Provider, { value: n }, e.children);
    }

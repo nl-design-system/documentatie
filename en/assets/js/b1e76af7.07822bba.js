@@ -16,19 +16,19 @@
    }
   },
   21810: (e, n, r) => {
-   r.r(n), r.d(n, { assets: () => x, contentTitle: () => g, default: () => y, frontMatter: () => b, metadata: () => v, toc: () => k });
+   r.r(n), r.d(n, { assets: () => x, contentTitle: () => b, default: () => y, frontMatter: () => g, metadata: () => v, toc: () => k });
    var i = r(11527),
     t = r(80877),
     l = r(70592),
     o = r(73460),
     s = r(30036);
-   function d(e) {
+   function a(e) {
     const n = { div: "div", fieldset: "fieldset", input: "input", label: "label", legend: "legend", p: "p", ...(0, t.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(s.X, { appearance: "do", title: "Uitvragen geboortedatum met een tekstveld.", children: (0, i.jsx)(o.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: "date0", children: "Geboortedatum" }), (0, i.jsx)(n.p, { id: "description-date0", children: "Bijvoorbeeld 31 december 1970." }), (0, i.jsx)(n.input, { id: "date0", type: "text", autocomplete: "bday", "aria-describedby": "description-date0" })] }) }) }), "\n", (0, i.jsx)(s.X, { appearance: "do", title: "Uitvragen geboortedatum met een datumveld.", description: "De meeste browsers voegen zelf een datumkiezer toe.", children: (0, i.jsx)(o.X, { language: "html", children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: "date1", children: "Geboortedatum" }), (0, i.jsx)(n.p, { id: "description-date1", children: "Bijvoorbeeld 31/12/1970." }), (0, i.jsx)(n.input, { id: "date1", type: "date", "aria-describedby": "description-date1", autocomplete: "bday" })] }) }) }), "\n", (0, i.jsx)(s.X, { appearance: "do", title: "Uitvragen geboortedatum met een inputmode=numeric.", children: (0, i.jsx)(o.X, { language: "html", designTokens: { "--utrecht-textbox-max-inline-size": "20ch" }, children: () => (0, i.jsx)(i.Fragment, { children: (0, i.jsxs)(n.fieldset, { children: [(0, i.jsx)(n.legend, { children: "Geboortedatum" }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "day2", children: "Dag" }), (0, i.jsx)(n.div, { id: "description-day2", children: "Bijvoorbeeld 31." }), (0, i.jsx)(n.input, { id: "day2", type: "text", inputmode: "numeric", "aria-describedby": "description-day2", autocomplete: "bday-day", maxlength: "2" })] }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "month2", children: "Maand" }), (0, i.jsx)(n.div, { id: "description-month2", children: "Bijvoorbeeld 12 voor december." }), (0, i.jsx)(n.input, { id: "month2", type: "text", inputmode: "numeric", "aria-describedby": "description-month2", autocomplete: "bday-month", maxlength: "2" })] }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "year2", children: "Jaar" }), (0, i.jsx)(n.div, { id: "description-year2", children: "Bijvoorbeeld 1970." }), (0, i.jsx)(n.input, { id: "c2", type: "text", inputmode: "numeric", "aria-describedby": "description-year2", autocomplete: "bday-year", maxlength: "4" })] })] }) }) }) }), "\n", (0, i.jsx)(s.X, { appearance: "dont", title: "Uitvragen geboortedatum met een nummerveld (type=number).", children: (0, i.jsx)(o.X, { language: "html", designTokens: { "--utrecht-textbox-max-inline-size": "20ch" }, children: () => (0, i.jsx)(i.Fragment, { children: (0, i.jsxs)(n.fieldset, { children: [(0, i.jsx)(n.legend, { children: "Geboortedatum" }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "day3", children: "Dag" }), (0, i.jsx)(n.div, { id: "description-day3", children: "Bijvoorbeeld 31." }), (0, i.jsx)(n.input, { id: "day3", type: "number", "aria-describedby": "description-day3", autocomplete: "bday-day", min: "1", max: "31" })] }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "month3", children: "Maand" }), (0, i.jsx)(n.div, { id: "description-month3", children: "Bijvoorbeeld 12 voor december." }), (0, i.jsx)(n.input, { id: "month3", type: "number", "aria-describedby": "description-month3", autocomplete: "bday-month", min: "1", max: "12" })] }), (0, i.jsxs)(n.div, { children: [(0, i.jsx)(n.label, { for: "year3", children: "Jaar" }), (0, i.jsx)(n.div, { id: "description-year3", children: "Bijvoorbeeld 1970." }), (0, i.jsx)(n.input, { id: "year3", type: "number", "aria-describedby": "description-year3", autocomplete: "bday-year" })] })] }) }) }) })] });
    }
-   function a(e = {}) {
+   function d(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
    }
    function c(e) {
     const n = { a: "a", blockquote: "blockquote", code: "code", h2: "h2", h3: "h3", h4: "h4", li: "li", p: "p", pre: "pre", ul: "ul", ...(0, t.a)(), ...e.components };
@@ -53,14 +53,14 @@
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(p, { ...e }) }) : p(e);
    }
-   const b = { title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Wanneer welk element?", sidebar_position: 14, pagination_label: "Wanneer gebruik je welk formulierelement", description: "Richtlijnen voor het kiezen van formulierelementen.", slug: "wanneer-welk-form-element", keywords: ["informatie", "formulier", "design", "code"] },
-    g = "Wanneer gebruik je welk formulierelement",
-    v = { id: "richtlijnen/formulieren/when-which", title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", description: "Richtlijnen voor het kiezen van formulierelementen.", source: "@site/docs/richtlijnen/formulieren/when-which.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/wanneer-welk-form-element", permalink: "/en/richtlijnen/formulieren/wanneer-welk-form-element", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/when-which.mdx", tags: [], version: "current", sidebarPosition: 14, frontMatter: { title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Wanneer welk element?", sidebar_position: 14, pagination_label: "Wanneer gebruik je welk formulierelement", description: "Richtlijnen voor het kiezen van formulierelementen.", slug: "wanneer-welk-form-element", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Voorkom fouten in een formulier", permalink: "/en/richtlijnen/formulieren/voorkom-fouten" } },
+   const g = { title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Wanneer welk element?", sidebar_position: 14, pagination_label: "Wanneer gebruik je welk formulierelement", description: "Richtlijnen voor het kiezen van formulierelementen.", slug: "wanneer-welk-form-element", keywords: ["informatie", "formulier", "design", "code"] },
+    b = "Wanneer gebruik je welk formulierelement",
+    v = { id: "richtlijnen/formulieren/when-which", title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", description: "Richtlijnen voor het kiezen van formulierelementen.", source: "@site/docs/richtlijnen/formulieren/when-which.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/wanneer-welk-form-element", permalink: "/en/richtlijnen/formulieren/wanneer-welk-form-element", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/when-which.mdx", tags: [], version: "current", sidebarPosition: 14, frontMatter: { title: "Wanneer gebruik je welk formulierelement? | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Wanneer welk element?", sidebar_position: 14, pagination_label: "Wanneer gebruik je welk formulierelement", description: "Richtlijnen voor het kiezen van formulierelementen.", slug: "wanneer-welk-form-element", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Voorkom fouten in een formulier", permalink: "/en/richtlijnen/formulieren/voorkom-fouten" }, next: { title: "WCAG", permalink: "/en/wcag" } },
     x = {},
     k = [];
    function f(e) {
     const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, t.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "wanneer-gebruik-je-welk-formulierelement", children: "Wanneer gebruik je welk formulierelement" }), "\n", (0, i.jsx)(n.p, { children: "Je wilt natuurlijk dat zoveel mogelijk mensen een formulier kunnen invullen op de makkelijkste manier. We geven twee richtlijnen die hierbij helpen." }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#zorg-dat-iedereen-een-formulierelement-kan-bedienen-of-geef-een-alternatief", children: "Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#kies-voor-het-meest-gebruiksvriendelijke-formulierelement", children: "Kies voor het meest gebruiksvriendelijke formulierelement" }), "."] }), "\n"] }), "\n", (0, i.jsxs)(n.p, { children: ["Er is nog veel te onderzoeken over wat het beste formulierelement is voor wat je wilt uitvragen. Doe je gebruikersonderzoek? Deel dan alsjeblieft je bevindingen op ", (0, i.jsx)(n.a, { href: "http://gebruikersonderzoeken.nl/", children: "gebruikersonderzoeken.nl" }), " zodat we hiervan allemaal kunnen leren."] }), "\n", (0, i.jsx)(u, {}), "\n", (0, i.jsx)(a, {}), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(l.ZP, {})] });
+    return (0, i.jsxs)(i.Fragment, { children: ["\n", "\n", "\n", (0, i.jsx)(n.h1, { id: "wanneer-gebruik-je-welk-formulierelement", children: "Wanneer gebruik je welk formulierelement" }), "\n", (0, i.jsx)(n.p, { children: "Je wilt natuurlijk dat zoveel mogelijk mensen een formulier kunnen invullen op de makkelijkste manier. We geven twee richtlijnen die hierbij helpen." }), "\n", (0, i.jsxs)(n.ul, { children: ["\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#zorg-dat-iedereen-een-formulierelement-kan-bedienen-of-geef-een-alternatief", children: "Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief" }), "."] }), "\n", (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: "#kies-voor-het-meest-gebruiksvriendelijke-formulierelement", children: "Kies voor het meest gebruiksvriendelijke formulierelement" }), "."] }), "\n"] }), "\n", (0, i.jsxs)(n.p, { children: ["Er is nog veel te onderzoeken over wat het beste formulierelement is voor wat je wilt uitvragen. Doe je gebruikersonderzoek? Deel dan alsjeblieft je bevindingen op ", (0, i.jsx)(n.a, { href: "http://gebruikersonderzoeken.nl/", children: "gebruikersonderzoeken.nl" }), " zodat we hiervan allemaal kunnen leren."] }), "\n", (0, i.jsx)(u, {}), "\n", (0, i.jsx)(d, {}), "\n", (0, i.jsx)(j, {}), "\n", (0, i.jsx)(h, {}), "\n", (0, i.jsx)(l.ZP, {})] });
    }
    function y(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -74,8 +74,8 @@
     l = r(28942),
     o = r(76653),
     s = r(33691),
-    d = r(99821),
-    a = r(64663),
+    a = r(99821),
+    d = r(64663),
     c = r(50959),
     u = r(9995);
    const m = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
@@ -86,16 +86,16 @@
     return (0, p.jsx)(i.Tg, { className: m["nlds-canvas__example-surface"], children: (0, p.jsx)(i.BB, { className: (0, t.Z)("utrecht-document--surface", m["nlds-canvas__example-document"]), children: (0, p.jsx)(i.nv, { className: m["nlds-canvas__example-paragraph"], children: n }) }) });
    };
    j.displayName = "ParagraphContainer";
-   const b = (e) => {
+   const g = (e) => {
     let { children: n } = e;
     return (0, p.jsx)(i.Tg, { className: m["nlds-canvas__example-surface"], children: (0, p.jsx)(i.BB, { className: (0, t.Z)("utrecht-document--surface", m["nlds-canvas__example-document"]), children: n }) });
    };
-   b.displayName = "DocumentContainer";
-   const g = (e) => {
+   g.displayName = "DocumentContainer";
+   const b = (e) => {
     let { children: n } = e;
     return (0, p.jsx)(i.Tg, { className: m["nlds-canvas__example-surface"], children: n });
    };
-   g.displayName = "SurfaceContainer";
+   b.displayName = "SurfaceContainer";
    const v = (e) => {
     let { code: n, copy: r = !1, defaultExpandedCode: v = !1, displayCode: x = !0, children: k, container: f = "document", language: y, designTokens: _ } = e,
      w = "function" == typeof k ? k() : k,
@@ -105,17 +105,17 @@
      [C, Z] = (0, c.useState)(v);
     (0, c.useEffect)(() => {
      (async () => {
-      (D = await a.ZP.format(N, { parser: y, plugins: [l.Z, o.ZP, s.ZP, d.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), A(D);
+      (D = await d.ZP.format(N, { parser: y, plugins: [l.Z, o.ZP, s.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), A(D);
      })();
     }, [N]);
     const S = (0, c.useId)();
-    let B = c.Fragment;
+    let G = c.Fragment;
     return (
-     "paragraph" === f ? (B = j) : "document" === f ? (B = b) : "surface" === f && (B = g),
+     "paragraph" === f ? (G = j) : "document" === f ? (G = g) : "surface" === f && (G = b),
      (0, p.jsxs)("div", {
       className: (0, t.Z)(m["nlds-canvas"]),
       children: [
-       w && (0, p.jsx)("div", { className: (0, t.Z)(m["nlds-canvas__example"]), children: (0, p.jsx)("div", { className: "voorbeeld-theme", style: _, children: (0, p.jsx)(B, { children: (0, p.jsx)(i.pu, { children: w }) }) }) }),
+       w && (0, p.jsx)("div", { className: (0, t.Z)(m["nlds-canvas__example"]), children: (0, p.jsx)("div", { className: "voorbeeld-theme", style: _, children: (0, p.jsx)(G, { children: (0, p.jsx)(i.pu, { children: w }) }) }) }),
        x &&
         (0, p.jsx)("div", {
          className: (0, t.Z)(m["nlds-canvas__toolbar"]),
@@ -199,13 +199,13 @@
    };
    var o = r(11527);
    function s(e) {
-    let { lineNumber: n, syntax: r, textContent: s, trim: d } = e,
-     a = s;
+    let { lineNumber: n, syntax: r, textContent: s, trim: a } = e,
+     d = s;
     return (
-     d && (a = a.trim()),
+     a && (d = d.trim()),
      (0, o.jsx)(t.y$, {
       theme: l,
-      code: a,
+      code: d,
       language: r || "",
       children: (e) => {
        let { style: r, tokens: t, getLineProps: l, getTokenProps: s } = e;
@@ -216,21 +216,21 @@
    }
   },
   30036: (e, n, r) => {
-   r.d(n, { X: () => a });
+   r.d(n, { X: () => d });
    var i = r(9842),
     t = r(91406),
     l = r(16532),
     o = r(86259);
    r(50959);
    const s = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
-   var d = r(11527);
-   const a = (e) => {
-    let { title: n, appearance: r, description: a, children: c, figure: u } = e;
+   var a = r(11527);
+   const d = (e) => {
+    let { title: n, appearance: r, description: d, children: c, figure: u } = e;
     const m = "Doen",
      h = "Niet doen",
      p = u ? "figure" : "div",
      j = u ? "figcaption" : "div";
-    return (0, d.jsxs)(p, { className: (0, o.Z)(s["nlds-guideline"], s[`nlds-guideline--${r}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, d.jsxs)(j, { className: (0, o.Z)(s["nlds-guideline__description"]), children: ["dont" === r ? (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(l.nv, { className: (0, o.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${r}`]), children: [(0, d.jsx)(i.Z, { className: s["nlds-guideline__icon"] }), (0, d.jsx)("span", { className: s["nlds-guideline__title"], children: h })] }), (0, d.jsx)(l.nv, { children: n })] }) : (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(l.nv, { className: (0, o.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${r}`]), children: [(0, d.jsx)(t.Z, { className: s["nlds-guideline__icon"] }), (0, d.jsx)("span", { className: s["nlds-guideline__title"], children: m })] }), (0, d.jsx)(l.nv, { children: n })] }), a] }), (0, d.jsx)("div", { className: (0, o.Z)(s["nlds-guideline__example"]), children: c })] });
+    return (0, a.jsxs)(p, { className: (0, o.Z)(s["nlds-guideline"], s[`nlds-guideline--${r}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(j, { className: (0, o.Z)(s["nlds-guideline__description"]), children: ["dont" === r ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(l.nv, { className: (0, o.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${r}`]), children: [(0, a.jsx)(i.Z, { className: s["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: s["nlds-guideline__title"], children: h })] }), (0, a.jsx)(l.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(l.nv, { className: (0, o.Z)(s["nlds-guideline__badge"], s[`nlds-guideline__badge--${r}`]), children: [(0, a.jsx)(t.Z, { className: s["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: s["nlds-guideline__title"], children: m })] }), (0, a.jsx)(l.nv, { children: n })] }), d] }), (0, a.jsx)("div", { className: (0, o.Z)(s["nlds-guideline__example"]), children: c })] });
    };
   },
   80877: (e, n, r) => {

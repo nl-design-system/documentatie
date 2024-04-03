@@ -3,14 +3,14 @@
  [8152],
  {
   53132: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => c, contentTitle: () => l, default: () => p, frontMatter: () => d, metadata: () => a, toc: () => u });
+   t.r(n), t.d(n, { assets: () => c, contentTitle: () => d, default: () => p, frontMatter: () => a, metadata: () => l, toc: () => u });
    var r = t(11527),
     i = t(80877),
     s = t(45942),
     o = t(17560);
-   const d = { title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", pagination_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "1.3.5", keywords: ["WCAG"] },
-    l = "WCAG Succescriterium 1.3.5 Identificeer het doel van de input",
-    a = { id: "wcag/1.3.5", title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", source: "@site/docs/wcag/1.3.5.mdx", sourceDirName: "wcag", slug: "/wcag/1.3.5", permalink: "/en/wcag/1.3.5", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.3.5.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", pagination_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Beschrijving, documentatie, gerelateerde NLDS-richtlijnen, bronnen, gebruikersonderzoek en hoe te testen.", slug: "1.3.5", keywords: ["WCAG"] } },
+   const a = { title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "1.3.5 Identificeer het doel van de input", pagination_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Zorg dat de browser kan begrijpen wat een gebruiker moet invoeren, zodat die kan helpen en het makkelijker kan maken.", slug: "1.3.5", keywords: ["WCAG"] },
+    d = "WCAG Succescriterium 1.3.5 Identificeer het doel van de input",
+    l = { id: "wcag/1.3.5", title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Zorg dat de browser kan begrijpen wat een gebruiker moet invoeren, zodat die kan helpen en het makkelijker kan maken.", source: "@site/docs/wcag/1.3.5.mdx", sourceDirName: "wcag", slug: "/wcag/1.3.5", permalink: "/wcag/1.3.5", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.3.5.mdx", tags: [], version: "current", frontMatter: { title: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "1.3.5 Identificeer het doel van de input", pagination_label: "WCAG Succescriterium 1.3.5 Identificeer het doel van de input", description: "Zorg dat de browser kan begrijpen wat een gebruiker moet invoeren, zodat die kan helpen en het makkelijker kan maken.", slug: "1.3.5", keywords: ["WCAG"] }, sidebar: "richtlijnen", previous: { title: "WCAG Succescriterium 1.1.1 Niet-tekstuele content", permalink: "/wcag/1.1.1" }, next: { title: "WCAG Succescriterium 2.1.1 Toetsenbord", permalink: "/wcag/2.1.1" } },
     c = {},
     u = [
      { value: "W3C referenties", id: "w3c-referenties", level: 2 },
@@ -56,7 +56,7 @@
    }
   },
   80877: (e, n, t) => {
-   t.d(n, { Z: () => d, a: () => o });
+   t.d(n, { Z: () => a, a: () => o });
    var r = t(50959);
    const i = {},
     s = r.createContext(i);
@@ -69,7 +69,7 @@
      [n, e],
     );
    }
-   function d(e) {
+   function a(e) {
     let n;
     return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), r.createElement(s.Provider, { value: n }, e.children);
    }
