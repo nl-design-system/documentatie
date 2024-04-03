@@ -47,7 +47,7 @@ Door [thema's te maken](/handboek/developer/thema-maken) met beschikbare [design
 
 ### Samenwerken aan een herbruikbare componentenbibliotheek
 
-De community rondom NL Design System omvat 500+ specialisten van verschillende overheidsorganisaties en hun leveranciers.
+De community rondom NL Design System bestaat uit 500+ specialisten van verschillende overheidsorganisaties en hun leveranciers.
 We willen niet steeds hetzelfde wiel uitvinden, maar ook niet door elkaar geblokkeerd worden in de ontwikkeling van nieuwe applicaties.
 
 Om elkaar niet in de weg te zitten, werken we met het “[estafettemodel](/handboek/estafettemodel)”. Kortgezegd kunnen organisaties voor componenten die nog niet centraal beschikbaar een eigen versie maken. Deze versie wordt in grote lijnen gebouwd volgens de gedeelde architectuur, maar hoeft niet compleet te zijn.
