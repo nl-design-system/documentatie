@@ -18,7 +18,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'richtlijnen',
+      docId: 'richtlijnen/introductie',
       position: 'left',
       label: 'Richtlijnen',
       className: 'utrecht-link',

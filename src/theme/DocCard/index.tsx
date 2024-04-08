@@ -24,14 +24,10 @@ function CardLayout({
 }): React.Element {
   return (
     <div className={clsx('card', styles.card)}>
-      <h2 className={clsx(styles.cardTitle)} title={title}>
+      <h2 className={clsx(styles.cardTitle)}>
         {icon} {title}
       </h2>
-      {description && (
-        <p className={clsx(styles.cardDescription)} title={description}>
-          {description}
-        </p>
-      )}
+      {description && <p className={clsx(styles.cardDescription)}>{description}</p>}
       <Link href={href} className={clsx(styles.cardLink)}>
         {linkDescription}{' '}
         <Icon>

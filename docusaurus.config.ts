@@ -50,7 +50,7 @@ const config: Config = {
     footer,
     prism: {
       theme: nldsPrismTheme,
-      additionalLanguages: ['markup', 'jsx', 'tsx', 'js-extras', 'yaml', 'markdown', 'scss'],
+      additionalLanguages: ['markup', 'jsx', 'tsx', 'json', 'js-extras', 'yaml', 'markdown', 'scss'],
     },
     docs: {
       sidebar: {

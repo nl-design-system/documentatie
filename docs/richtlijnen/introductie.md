@@ -14,14 +14,26 @@ keywords:
 
 # Richtlijnen
 
-Het NL Design system geeft richtlijnen voor het bouwen van webcomponenten. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.
+Het NL Design System geeft richtlijnen voor het ontwikkelen van digitale diensten. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.
 
-## De richtlijnen zijn onderverdeeld in:
+De richtlijnen zijn onderverdeeld in:
 
 - [Richtlijnen voor stijl](/richtlijnen/stijl/)
 - [Richtlijnen voor formulieren](/richtlijnen/formulieren/)
 
+## Onderbouwing
+
+### Toegankelijkheid
+
+De richtlijnen zijn gebaseerd op de Web Content Accessibility Guidelines, versie 2.2 niveau AA (WCAG 2.2 AA).
+
+Bij enkele richtlijnen is niveau AAA aangehouden, om een betere gebruikerservaring te garanderen. Bijvoorbeeld voor de minimale grootte van het aanklikbare gedeelte van links en formulierelementen.
+
+### Gebruikersvriendelijkheid
+
+Om de gebruikersvriendelijkheid te garanderen zijn er ook richtlijnen toegevoegd naar aanleiding van gebruikersonderzoek. Bijvoorbeeld door een formulierlabel altijd zichtbaar boven het invoerveld te plaatsen.
+
 ## Aanvullingen of opmerkingen?
 
-Deze richtlijnen worden onderhouden door het NL Design System.
-Heb je aanvullingen of opmerkingen? [Deel je mening op GitHub](https://github.com/nl-design-system/documentatie/issues).
+Deze richtlijnen worden beheerd door het NL Design System, samen met de community, en zijn op dit moment nog in ontwikkeling.
+We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je aanvullingen of opmerkingen? [Discusieer mee](https://github.com/nl-design-system/documentatie/discussions/473) of [open een nieuw issue](https://github.com/nl-design-system/documentatie/issues) op GitHub.
