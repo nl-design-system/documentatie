@@ -16,7 +16,7 @@
    }
   },
   4303: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => T, contentTitle: () => E, default: () => I, frontMatter: () => Z, metadata: () => P, toc: () => M });
+   t.r(n), t.d(n, { assets: () => T, contentTitle: () => E, default: () => R, frontMatter: () => W, metadata: () => P, toc: () => M });
    var r = t(11527),
     s = t(80877);
    function o(e) {
@@ -105,20 +105,20 @@
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(S, { ...e }) }) : S(e);
    }
-   function C(e) {
+   function D(e) {
     const n = { a: "a", h2: "h2", p: "p", strong: "strong", ...(0, s.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld", children: "Verstuur een formulier niet automatisch na het wijzigen of invullen van een formulierveld" }), "\n", (0, r.jsx)(n.p, { children: "Verstuur bij voorkeur alleen het formulier wanneer de gebruiker de verzendknop gebruikt, doe dit niet automatisch met een andere aanleiding. Is het echt noodzakelijk om het formulier op een ander moment te versturen, informeer de gebruiker dan duidelijk vooraf." }), "\n", (0, r.jsx)(n.p, { children: "Versturen na bijvoorbeeld het kiezen van een optie kan de gebruiker verrassen: wat gebeurt er, ik wilde nog even checken wat ik had ingevuld, heb ik nu het goede gekozen?" }), "\n", (0, r.jsxs)(n.p, { children: ["Let wel: het gaat hier om het daadwerkelijk versturen van het formulier. Dus als de ", (0, r.jsx)(n.strong, { children: "context" }), " verandert. Bijvoorbeeld: je gaat naar een bevestigingspagina."] }), "\n", (0, r.jsxs)(n.p, { children: ["Het updaten van bijvoorbeeld zoekresultaten waarbij alleen de ", (0, r.jsx)(n.strong, { children: "content" }), " verandert valt hier niet onder. Bijvoorbeeld: alleen het aantal zoekresultaten verandert, maar je blijft op dezelfde pagina."] }), "\n", (0, r.jsxs)(n.p, { children: ["Een formulier niet onverwacht versturen is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG22/Understanding/on-input.html", children: "3.2.2 Bij Input" }), " (niveau A)."] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: "verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld", children: "Verstuur een formulier niet automatisch na het wijzigen of invullen van een formulierveld" }), "\n", (0, r.jsx)(n.p, { children: "Verstuur bij voorkeur alleen het formulier wanneer de gebruiker de verzendknop gebruikt, doe dit niet automatisch met een andere aanleiding. Is het echt noodzakelijk om het formulier op een ander moment te versturen, informeer de gebruiker dan duidelijk vooraf." }), "\n", (0, r.jsx)(n.p, { children: "Versturen na bijvoorbeeld het kiezen van een optie kan de gebruiker verrassen: wat gebeurt er, ik wilde nog even checken wat ik had ingevuld, heb ik nu het goede gekozen?" }), "\n", (0, r.jsxs)(n.p, { children: ["Let wel: het gaat hier om het daadwerkelijk versturen van het formulier. Dus als de ", (0, r.jsx)(n.strong, { children: "context" }), " verandert. Bijvoorbeeld: je gaat naar een bevestigingspagina."] }), "\n", (0, r.jsxs)(n.p, { children: ["Het updaten van bijvoorbeeld zoekresultaten waarbij alleen de ", (0, r.jsx)(n.strong, { children: "content" }), " verandert valt hier niet onder. Bijvoorbeeld: alleen het aantal zoekresultaten verandert, maar je blijft op dezelfde pagina."] }), "\n", (0, r.jsxs)(n.p, { children: ["Een formulier niet onverwacht versturen is nodig om te voldoen aan het WCAG-succescriterium ", (0, r.jsx)(n.a, { href: "/wcag/3.2.2/", children: "3.2.2 Bij Input" }), " (niveau A)."] })] });
    }
-   function D(e = {}) {
+   function C(e = {}) {
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(C, { ...e }) }) : C(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
    }
-   function G(e) {
+   function B(e) {
     return (0, r.jsx)(r.Fragment, {});
    }
-   function B(e = {}) {
+   function G(e = {}) {
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(G, { ...e }) }) : G();
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(B, { ...e }) }) : B();
    }
    function F(e) {
     const n = { a: "a", blockquote: "blockquote", h2: "h2", img: "img", li: "li", p: "p", ul: "ul", ...(0, s.a)(), ...e.components };
@@ -128,19 +128,19 @@
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(F, { ...e }) }) : F(e);
    }
-   var W = t(70592);
-   const Z = { title: "Buttons in een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", sidebar_position: 2, pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
+   var Z = t(70592);
+   const W = { title: "Buttons in een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", sidebar_position: 2, pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] },
     E = "Buttons in een formulier",
     P = { id: "richtlijnen/formulieren/buttons", title: "Buttons in een formulier | Richtlijnen", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", source: "@site/docs/richtlijnen/formulieren/buttons.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/buttons", permalink: "/en/richtlijnen/formulieren/buttons", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/buttons.mdx", tags: [], version: "current", sidebarPosition: 2, frontMatter: { title: "Buttons in een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Buttons", sidebar_position: 2, pagination_label: "Buttons in een formulier", description: "Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.", keywords: ["labels", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Autocomplete in een formulier", permalink: "/en/richtlijnen/formulieren/autocomplete" }, next: { title: "Bevestigingspagina", permalink: "/en/richtlijnen/formulieren/bevestigingspagina" } },
     T = {},
     M = [];
-   function U(e) {
+   function L(e) {
     const n = { a: "a", code: "code", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, s.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "buttons-in-een-formulier", children: "Buttons in een formulier" }), "\n", (0, r.jsxs)(n.p, { children: ["Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand.\nIn deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: \u201cbutton\u201d. Omdat ", (0, r.jsx)(n.code, { children: "<button>" }), " het HTML-element is waar deze richtlijnen over gaan."] }), "\n", (0, r.jsx)(n.p, { children: "Binnen een formulier bestaan er drie soorten knoppen:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="submit">' }), ", om het formulier mee te verzenden (dit is de default waarde binnen een formulier);"] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="button">' }), ", dit zijn knoppen die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;"] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="reset">' }), ", om alle ingevulde informatie binnen een formulier te wissen."] }), "\n"] }), "\n", (0, r.jsx)(n.p, { children: "De hier beschreven richtlijnen gelden voor al deze buttons." }), "\n", (0, r.jsx)(n.p, { children: "Voor de toegankelijkheid en goede code van het formulier zijn de volgende punten belangrijk voor een button:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#toetsenbordbediening-van-een-button", children: "Toetsenbordbediening van een button" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld", children: "Verstuur een formulier niet automatisch na het wijzigen of invullen van een formulierveld" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#plaatsing-van-een-button-binnen-een-formulier", children: "Plaatsing van een button binnen een formulier" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#duidelijk-buttontekst-die-beschrijft-wat-de-button-doet", children: "Duidelijk buttontekst die beschrijft wat de button doet" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#de-toegankelijke-naam-van-een-button", children: "De toegankelijke naam van een button" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#afbeeldingen-als-buttons", children: "Afbeeldingen als buttons" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#disabled-submitbuttons", children: "Disabled submitbuttons" }), "."] }), "\n"] }), "\n", (0, r.jsx)(w, {}), "\n", (0, r.jsx)(k, {}), "\n", (0, r.jsx)(A, {}), "\n", (0, r.jsx)(D, {}), "\n", (0, r.jsx)(N, {}), "\n", (0, r.jsx)(_, {}), "\n", (0, r.jsx)(V, {}), "\n", (0, r.jsx)(B, {}), "\n", (0, r.jsx)(a, {}), "\n", (0, r.jsx)(i, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(m, {}), "\n", (0, r.jsx)(c, {}), "\n", (0, r.jsx)(h, {}), "\n", (0, r.jsx)(W.ZP, {})] });
+    return (0, r.jsxs)(r.Fragment, { children: ["\n", "\n", "\n", (0, r.jsx)(n.h1, { id: "buttons-in-een-formulier", children: "Buttons in een formulier" }), "\n", (0, r.jsxs)(n.p, { children: ["Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand.\nIn deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: \u201cbutton\u201d. Omdat ", (0, r.jsx)(n.code, { children: "<button>" }), " het HTML-element is waar deze richtlijnen over gaan."] }), "\n", (0, r.jsx)(n.p, { children: "Binnen een formulier bestaan er drie soorten knoppen:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="submit">' }), ", om het formulier mee te verzenden (dit is de default waarde binnen een formulier);"] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="button">' }), ", dit zijn knoppen die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;"] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<button type="reset">' }), ", om alle ingevulde informatie binnen een formulier te wissen."] }), "\n"] }), "\n", (0, r.jsx)(n.p, { children: "De hier beschreven richtlijnen gelden voor al deze buttons." }), "\n", (0, r.jsx)(n.p, { children: "Voor de toegankelijkheid en goede code van het formulier zijn de volgende punten belangrijk voor een button:" }), "\n", (0, r.jsxs)(n.ul, { children: ["\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#toetsenbordbediening-van-een-button", children: "Toetsenbordbediening van een button" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld", children: "Verstuur een formulier niet automatisch na het wijzigen of invullen van een formulierveld" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#plaatsing-van-een-button-binnen-een-formulier", children: "Plaatsing van een button binnen een formulier" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#duidelijk-buttontekst-die-beschrijft-wat-de-button-doet", children: "Duidelijk buttontekst die beschrijft wat de button doet" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#de-toegankelijke-naam-van-een-button", children: "De toegankelijke naam van een button" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#afbeeldingen-als-buttons", children: "Afbeeldingen als buttons" }), "."] }), "\n", (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.a, { href: "#disabled-submitbuttons", children: "Disabled submitbuttons" }), "."] }), "\n"] }), "\n", (0, r.jsx)(w, {}), "\n", (0, r.jsx)(k, {}), "\n", (0, r.jsx)(A, {}), "\n", (0, r.jsx)(C, {}), "\n", (0, r.jsx)(N, {}), "\n", (0, r.jsx)(_, {}), "\n", (0, r.jsx)(V, {}), "\n", (0, r.jsx)(G, {}), "\n", (0, r.jsx)(a, {}), "\n", (0, r.jsx)(i, {}), "\n", (0, r.jsx)(j, {}), "\n", (0, r.jsx)(m, {}), "\n", (0, r.jsx)(c, {}), "\n", (0, r.jsx)(h, {}), "\n", (0, r.jsx)(Z.ZP, {})] });
    }
-   function I(e = {}) {
+   function R(e = {}) {
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(U, { ...e }) }) : U(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(L, { ...e }) }) : L(e);
    }
   },
   73460: (e, n, t) => {
@@ -178,20 +178,20 @@
      z = "function" == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
      N = "string" == typeof n ? n : u.uS(z || _),
      [S, A] = (0, c.useState)(N),
-     [C, D] = (0, c.useState)(x);
+     [D, C] = (0, c.useState)(x);
     (0, c.useEffect)(() => {
      (async () => {
       (S = await d.ZP.format(N, { parser: w, plugins: [o.Z, i.ZP, l.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), A(S);
      })();
     }, [N]);
-    const G = (0, c.useId)();
-    let B = c.Fragment;
+    const B = (0, c.useId)();
+    let G = c.Fragment;
     return (
-     "paragraph" === f ? (B = g) : "document" === f ? (B = j) : "surface" === f && (B = p),
+     "paragraph" === f ? (G = g) : "document" === f ? (G = j) : "surface" === f && (G = p),
      (0, m.jsxs)("div", {
       className: (0, s.Z)(h["nlds-canvas"]),
       children: [
-       _ && (0, m.jsx)("div", { className: (0, s.Z)(h["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(B, { children: (0, m.jsx)(r.pu, { children: _ }) }) }) }),
+       _ && (0, m.jsx)("div", { className: (0, s.Z)(h["nlds-canvas__example"]), children: (0, m.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, m.jsx)(G, { children: (0, m.jsx)(r.pu, { children: _ }) }) }) }),
        v &&
         (0, m.jsx)("div", {
          className: (0, s.Z)(h["nlds-canvas__toolbar"]),
@@ -199,18 +199,18 @@
           className: (0, s.Z)(h["nlds-canvas__button"], h["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           D(!C);
+           C(!D);
           },
-          "aria-expanded": C,
-          "aria-controls": G,
-          children: C ? "Verberg code" : "Bekijk code",
+          "aria-expanded": D,
+          "aria-controls": B,
+          children: D ? "Verberg code" : "Bekijk code",
          }),
         }),
        v &&
         (0, m.jsxs)("div", {
          className: (0, s.Z)(h["nlds-canvas__code-block"], !t && h["nlds-canvas__code-block--user-select-none"]),
-         id: G,
-         hidden: !C,
+         id: B,
+         hidden: !D,
          children: [
           (0, m.jsx)(b.u, { syntax: w, textContent: S, trim: !0 }),
           t &&
