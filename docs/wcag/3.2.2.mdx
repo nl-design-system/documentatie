@@ -26,9 +26,9 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## Korte samenvatting
 
-Verrast een gebruiker niet, maar maak functionaliteit voorspelbaar en daardoor goed te begrijpen.
+Verras een gebruiker niet, maar maak functionaliteit voorspelbaar en daardoor goed te begrijpen.
 
-Als een gebruiker een component selecteert met het toetsenbord of aanklikt met de muis, veroorzaakt dit niet automatisch een contextwijziging.
+Als een gebruiker een formuliercomponent of -optie selecteert of een invoerveld invult met het toetsenbord of met de muis, veroorzaakt dit niet automatisch een contextwijziging.
 
 Bij een contextwijziging verandert onverwacht de indeling, informatie of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.
 
@@ -46,9 +46,10 @@ Formulieren - Buttons:
 
 ## Hoe te testen
 
-Bepaal eerst of er interactieve componenten op de pagina zijn, zoals in formulieren. En dan:
+Bepaal eerst of er interactieve componenten op de pagina zijn, zoals invoervelden, radiobuttons, selects en checkboxes. En dan:
 
 - Selecteer/activeer elk formulierelement.
+- Indien van toepassing: vul een formulierveld in en verlaat het veld weer (haal de focus weg).
 - Test of er geen onverwachte dingen gebeuren zoals het verzenden van het formulier, het verplaatsen van de focus of het openen van een nieuw venster of tab.
 - Test dit met de muis en daarna ook met het toetsenbord.
 
