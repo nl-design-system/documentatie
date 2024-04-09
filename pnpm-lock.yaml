@@ -67,8 +67,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.2.55)(eslint@8.57.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
       '@docusaurus/tsconfig':
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.2.1
+        version: 3.2.1
       '@docusaurus/types':
         specifier: 3.1.0
         version: 3.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -2385,8 +2385,8 @@ packages:
       fs-extra: 11.2.0
       tslib: 2.6.2
 
-  /@docusaurus/tsconfig@3.1.0:
-    resolution: {integrity: sha512-PE6fSuj5gJy5sNC1OO+bYAU1/xZH5YqddGjhrNu3/T7OAUroqkMZfVl13Tz70CjYB8no4OWcraqSkObAeNdIcQ==}
+  /@docusaurus/tsconfig@3.2.1:
+    resolution: {integrity: sha512-+biUwtsYW3oChLxYezzA+NIgS3Q9KDRl7add/YT54RXs9Q4rKInebxdHdG6JFs5BaTg45gyjDu0rvNVcGeHODg==}
     dev: true
 
   /@docusaurus/types@3.1.0(react-dom@18.2.0)(react@18.2.0):

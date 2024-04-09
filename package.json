@@ -77,7 +77,7 @@
     "@docusaurus/plugin-content-blog": "3.1.0",
     "@docusaurus/plugin-content-docs": "3.1.0",
     "@docusaurus/theme-classic": "3.1.0",
-    "@docusaurus/tsconfig": "3.1.0",
+    "@docusaurus/tsconfig": "3.2.1",
     "@docusaurus/types": "3.1.0",
     "@fontsource/fira-sans": "5.0.19",
     "@fontsource/open-sans": "5.0.27",
