@@ -47,7 +47,7 @@ Bijvoorbeeld:
 
 ```html
 <head>
-  <title>Fout: Stap 1 van 4: Uw vraag - Gemeente Voorbeeld</title>
+  <title>2 foutmeldingen - Stap 1 van 4 - Uw vraag - Gemeente Voorbeeld</title>
   [...]
 </head>
 ```
