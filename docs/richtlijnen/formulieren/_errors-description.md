@@ -4,4 +4,7 @@ Schrijf de foutmelding altijd uit in tekst. Dus niet alleen met een rood randje 
 
 Je kunt zeker kleur en icoontjes gebruiken, maar niet als **enige** foutindicatie.
 
-Formulierfouten in tekst beschrijven is nodig om te voldoen aan het WCAG-succescriterium [3.3.1 Foutidentificatie](/wcag/3.3.1/) (niveau A).
+Formulierfouten in tekst beschrijven is nodig om te voldoen aan de WCAG-succescriteria:
+
+- [1.3.1 Info en relaties](wcag/1.3.1) (niveau A).
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/) (niveau A).

@@ -63,4 +63,7 @@ Deze optie heeft niet de voorkeur omdat er geen visuele tekst bij het icoontje s
 
 Voor het toekennen van toegankelijke namen aan SVG's bestaan ook andere technieken, Carie Fisher beschrijft ze in [<span lang="en">Accessible SVGs: Perfect Patterns For Screen Reader Users</span>](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/).
 
-Een toegankelijke naam voor de button, is nodig om te voldoen aan één van de voorwaarden voor het WCAG-succescriterium: [4.1.2 Naam, rol en waarde](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value) (niveau A).
+Een toegankelijke naam voor de button, is nodig om te voldoen aan één van de voorwaarden voor de WCAG-succescriteria:
+
+- [1.3.1 Info en relaties](wcag/1.3.1) (niveau A).
+- [4.1.2 Naam, rol en waarde](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value) (niveau A).
