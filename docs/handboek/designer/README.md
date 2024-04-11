@@ -100,12 +100,6 @@ Mis je een patroon of template? Heb je input voor de documentatie? Of nog beter,
 
 [Neem contact op](../../project/kernteam.mdx), dan zetten we het patroon of template op [de backlog](https://github.com/nl-design-system/backlog/projects/1).
 
-## Tekst en taalgebruik
-
-We hebben richtlijnen beschikbaar voor tekst en taalgebruik.
-
-[Bekijk de richtlijnen voor tekst en taalgebruik](../../richtlijnen/tekst-en-taalgebruik.md)
-
 ## Onderzoek
 
 Design, code en documentatie stoelen we graag op onderzoek. Hiervoor speuren we het web af naar inzichten. Maar we vragen ook de community, jou dus, om hulp. Heb je gebruikersonderzoek gedaan en inzichten opgedaan die voor de gehele community waardevol zijn? Dan horen we dat graag.

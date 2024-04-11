@@ -1,4 +1,4 @@
-## Samenvatting boven het formulier
+## Zet een samenvatting van de foutmeldingen boven het formulier
 
 Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:
 
@@ -17,4 +17,4 @@ De constructie is als volgt:
 
 GOV.UK geeft hiervan enkele duidelijke voorbeelden op [<span lang="en">Components Error summary</span>](https://design-system.service.gov.uk/components/error-summary/).
 
-Duidelijke foutmeldingen zijn nodig om te voldoen aan het WCAG-succescriterium [3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG21-nl/#foutidentificatie) (niveau A).
+Duidelijke foutmeldingen zijn nodig om te voldoen aan het WCAG-succescriterium [3.3.1 Foutidentificatie](/wcag/3.3.1/) (niveau A).

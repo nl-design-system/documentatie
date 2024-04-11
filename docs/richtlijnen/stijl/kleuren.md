@@ -70,15 +70,15 @@ Er zijn verschillende vormen van kleurenblindheid. Je kunt testen hoe jouw ontwe
 Als je kleuren gebruikt doe je dat met een bepaald doel, hierdoor hebben ze een betekenis. Het is belangrijk dat die kleur consistent hoort bij die betekenis. Bijvoorbeeld: rood wordt gebruikt om risico aan te geven, of een blokkade door een foutmelding. Gebruik rood dan niet wanneer je juist wél ergens op moet klikken, zoals een link of een verzendknop.
 
 **Inzicht vanuit onderzoek.**
-Uit een onderzoek van Gemeente Utrecht blijkt dat laaggeletterden afschrikken van de kleur rood. Bijvoorbeeld als achtergrondkleur van een knop. De tekst wordt niet gelezen, de laaggeletterde acteert op kleur. Deze kleur wordt daarom niet langer als standaard interactie kleur toegepast.
+Uit een onderzoek van Gemeente Utrecht blijkt dat de kleur rood mensen die laaggeletterd zijn afschrikt. Bijvoorbeeld als achtergrondkleur van een knop. De tekst wordt niet gelezen, de laaggeletterde acteert op kleur. Deze kleur wordt daarom niet langer als standaard interactie kleur toegepast.
 
 #### Signaalkleuren
 
-Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een belangrijke rol hebben. Gebruik dan rood en groen niet als primaire kleur voor de knop en link componenten. Maar gebruik ze als signaalkleur voor bijvoorbeeld een fout- of succesmelding.
+Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een belangrijke rol hebben. Gebruik rood dan niet als primaire kleur voor interactieve elementen zoals een link of button. Probeer deze 'stoplichtkleuren' op plekken te gebruiken waar ze je huisstijl ondersteunen maar geen verwarring veroorzaken voor gebruikers. Daarnaast zijn ze ook inzetbaar als signaalkleur voor bijvoorbeeld een fout- of succesmelding.
 
 #### Interactie
 
-Het is verstandig om vanuit je kleurenpalet één kleur aan te houden voor interactie. Een blauwe tint geeft het sterkste signaal voor links, maar andere kleuren werken bijna net zo goed. Gebruik de gekozen kleur voor interactie daarna niet meer voor niet-interactieve elementen.
+Het is verstandig om vanuit je kleurenpalet één kleur als uitgangspunt aan te houden voor interactie. Door dat te doen, help je gebruikers interactieve elementen te herkennen, en wordt je interface geen kleurenkermis. Een blauwe tint geeft het sterkste signaal voor interactie, maar andere kleuren werken bijna net zo goed. Gebruik deze kleur vervolgens niet meer voor niet-interactieve elementen. Dus wel voor buttons, links, breadcrumbs, pagination, accordions, etc. Maar niet voor headings.
 
 ## Overig
 
@@ -152,10 +152,8 @@ Artikel waarin wordt beschreven hoe je een website kan inrichten zodat Windows H
 
 ---
 
-## Help deze documentatie te verbeteren
+## Over deze richtlijnen
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via Github.
+Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in _beta_.
 
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? [Deel je mening op GitHub](https://github.com/nl-design-system/documentatie/discussions/473) met je suggesties.

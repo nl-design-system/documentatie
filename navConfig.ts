@@ -18,7 +18,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'richtlijnen',
+      docId: 'richtlijnen/introductie',
       position: 'left',
       label: 'Richtlijnen',
       className: 'utrecht-link',
@@ -30,18 +30,11 @@ const navbar: Navbar = {
       label: 'Componenten',
       className: 'utrecht-link',
     },
-    // {
-    //   type: 'doc',
-    //   docId: 'voorbeelden',
-    //   position: 'left',
-    //   label: 'Voorbeelden',
-    //   className: 'utrecht-link',
-    // },
     {
       type: 'doc',
-      docId: 'onderzoek/README',
+      docId: 'voorbeelden',
       position: 'left',
-      label: 'Onderzoek',
+      label: 'Voorbeelden',
       className: 'utrecht-link',
     },
     {

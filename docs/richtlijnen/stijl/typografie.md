@@ -3,7 +3,7 @@ title: Typografie | Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Typografie
-sidebar_position: 4
+sidebar_position: 1
 pagination_label: Typografie
 description: Richtlijnen voor typografie
 keywords:
@@ -316,10 +316,8 @@ Artikel over de weergave van bold teksten.
 
 ---
 
-## Help deze documentatie te verbeteren
+## Over deze richtlijnen
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via Github.
+Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in _beta_.
 
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? [Deel je mening op GitHub](https://github.com/nl-design-system/documentatie/discussions/473) met je suggesties.

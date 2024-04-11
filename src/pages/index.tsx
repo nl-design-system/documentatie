@@ -34,7 +34,7 @@ export default function Home() {
             Met een actieve community van specialisten verzamelt het kernteam de beste{' '}
             <DocusaurusLink to="/richtlijnen">richtlijnen</DocusaurusLink>,{' '}
             <DocusaurusLink to="/componenten">componenten</DocusaurusLink> en voorbeelden om robuuste websites en
-            webapplicaties te bouwen.
+            webapplicaties voor de digitale overheid te bouwen.
           </Paragraph>
 
           <Paragraph>
@@ -42,7 +42,7 @@ export default function Home() {
           </Paragraph>
 
           <UnorderedList>
-            <UnorderedListItem>Gebouwd en gebruikt door de community.</UnorderedListItem>
+            <UnorderedListItem>Gebouwd en gebruikt door de community (voor en door de overheid).</UnorderedListItem>
             <UnorderedListItem>Platformonafhankelijk en voor iedere huisstijl.</UnorderedListItem>
             <UnorderedListItem>Uitbreidbaar en publiek beschikbaar.</UnorderedListItem>
           </UnorderedList>
@@ -55,11 +55,10 @@ export default function Home() {
                   <Heading2>Richtlijnen</Heading2>
                   <Paragraph>
                     Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
-                    Maar ook richtlijnen voor tekst en taalgebruik.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/richtlijnen/tekst-en-taalgebruik" className="utrecht-link">
+                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
                     Bekijk de richtlijnen
                   </DocusaurusLink>
                 </Paragraph>
