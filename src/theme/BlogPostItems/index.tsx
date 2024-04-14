@@ -31,14 +31,14 @@ export default function BlogPostItems({ items }: Props): React.Element {
                       key={author.name}
                       className={clsx(style['blog-card__badge'], style['blog-card__badge--author'])}
                     >
-                      <Icon role="presentational">
+                      <Icon>
                         <IconUser />
                       </Icon>
                       <span className="visually-hidden">auteur:</span> {author.name}
                     </DataBadge>
                   ))}
                   <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--date'])}>
-                    <Icon role="presentational">
+                    <Icon>
                       <IconCalendar />
                     </Icon>
                     <span className="visually-hidden">publicatie datum:</span>{' '}
