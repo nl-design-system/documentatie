@@ -35,7 +35,7 @@ interface SessionTableProps extends HTMLTableAttributes<HTMLTableElement> {
 
 const SpeakerData = ({ name, organisation }: Speaker) => (
   <Paragraph className={clsx(style['session-table__speaker'], style['speaker'])}>
-    <Icon role="presentational" className={style['speaker__icon']}>
+    <Icon className={style['speaker__icon']}>
       <IconUser />
     </Icon>
     <span className={clsx(style['speaker__name'])}>{name}</span>
