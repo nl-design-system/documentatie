@@ -14,7 +14,7 @@
   --utrecht-heading-4-line-height: 1.4;
   --nlds-blog-post-footer-background-color: #f2ebe4;
   --nlds-navbar-link-active-border-color: white;
-  --nlds-sidebar-menu-item-active-border-color: #148839;
+  --nlds-sidebar-menu-item-active-border-color: white;
   --nlds-code-block-background-color: #011627;
   --utrecht-space-around: 1;
   --utrecht-button-group-margin-block-start: 1em;
@@ -551,6 +551,7 @@ body:not(.navigation-with-keyboard) *:not(input):focus {
 @media (width >= 997px) {
   .nlds-theme {
     --docusaurus-announcement-bar-height: 80px;
+    --nlds-sidebar-menu-item-active-border-color: #148839;
   }
 }
 
