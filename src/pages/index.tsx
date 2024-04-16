@@ -48,7 +48,6 @@ export default function Home() {
           </UnorderedList>
         </HomepageHero>
         <div className="container" style={{ paddingBlockEnd: '40px' }}>
-
           <Heading2>Meedoen als...</Heading2>
 
           <CardGroup appearance="medium">

@@ -11,7 +11,7 @@ description: Waarom zou je als leverancier meedoen aan NL Design System?
   - waarom een design system
 ---
 
-#  Introductie
+# Introductie
 
 _Verbeter je online dienstverlening met NL Design System_
 
