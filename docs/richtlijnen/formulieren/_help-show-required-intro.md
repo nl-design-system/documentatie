@@ -2,7 +2,12 @@
 
 ## Vermeld duidelijk of een veld wel of niet verplicht is
 
-Laat bezoekers duidelijk weten welke informatie ingevuld moeten worden om een formulier te verzenden. Dit kan kan op twee manieren, door de **verplichte** velden te markeren of door de **niet-verplichte** velden te markeren. We geven je hieronder twee opties, waarvan we de eerste optie 'Geef aan welke velden niet verplicht zijn' aanbevelen.
+Laat gebruikers duidelijk weten welke informatie ingevuld moeten worden om een formulier te verzenden. Hiervoor heb je twee opties.
+
+- Door de **niet-verplichte** velden te markeren.
+- Door de **verplichte** velden te markeren.
+
+Op basis van gebruikersonderzoek zouden wij de eerste optie aanbevelen.
 
 Plaats extra uitleg over wat al dan niet verplicht is altijd boven het formulier, zodat de gebruiker weet wat te verwachten bij het invullen.
 
