@@ -8,4 +8,4 @@ Gebruikersonderzoek over de toepassing van 'niet verplicht' versus 'verplicht':
 - [Required versus optional fields](https://ask.lukew.com/chat?id=f6862342-64d1-4de9-a28a-16f4fe614452) van Luke Wroblewski.
 - [Required vs. Optional form fields](https://www.lukew.com/ff/entry.asp?725) van Luke Wroblewski.
 
-**Let op**: Het woord 'optioneel' kan te moeilijk zijn voor mensen die laaggeletterd zijn. Gebruik dus 'niet verplicht.'
+**Let op**: Het woord 'optioneel' kan te moeilijk zijn voor mensen die laaggeletterd zijn. Gebruik dus 'niet verplicht'.
