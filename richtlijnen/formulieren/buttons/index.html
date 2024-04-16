@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.62edcfaa.css" />
-  <script src="/assets/js/runtime~main.92d35f99.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.480364f2.js" defer="defer"></script>
   <script src="/assets/js/main.579f9554.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -202,11 +202,11 @@
               <!-- -->
               <!-- -->
               <h1 id="buttons-in-een-formulier" class="utrecht-heading-1">Buttons in een formulier</h1>
-              <p>Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand. In deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: “button”. Omdat <code class="utrecht-code">&lt;button&gt;</code> het HTML-element is waar deze richtlijnen over gaan.</p>
-              <p>Binnen een formulier bestaan er drie soorten knoppen:</p>
+              <p>Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand. In deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: &#x27;button&#x27;. Omdat <code class="utrecht-code">&lt;button&gt;</code> het HTML-element is waar deze richtlijnen over gaan.</p>
+              <p>Binnen een formulier bestaan er drie soorten buttons:</p>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;button type=&quot;submit&quot;&gt;</code>, om het formulier mee te verzenden (dit is de default waarde binnen een formulier);</li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;button type=&quot;button&quot;&gt;</code>, dit zijn knoppen die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;</li>
+               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;button type=&quot;button&quot;&gt;</code>, dit zijn buttons die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;</li>
                <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;button type=&quot;reset&quot;&gt;</code>, om alle ingevulde informatie binnen een formulier te wissen.</li>
               </ul>
               <p>De hier beschreven richtlijnen gelden voor al deze buttons.</p>
@@ -293,7 +293,7 @@
               <!-- -->
               <!-- -->
               <!-- -->
-              <div class="nlds-guideline_tEmj" id="het-formulier-wordt-verzonden-na-het-kiezen-van-de-submitknop.">
+              <div class="nlds-guideline_tEmj" id="het-formulier-wordt-verzonden-na-het-kiezen-van-de-submitbutton.">
                <div class="nlds-guideline__description_Rmd2">
                 <p class="utrecht-paragraph nlds-guideline__badge_cDbY nlds-guideline__badge--do_wylG">
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon_CMAh">
@@ -303,7 +303,7 @@
                   <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
                  ><span class="nlds-guideline__title_Kp8d">Doen</span>
                 </p>
-                <p class="utrecht-paragraph">Het formulier wordt verzonden na het kiezen van de submitknop.</p>
+                <p class="utrecht-paragraph">Het formulier wordt verzonden na het kiezen van de submitbutton.</p>
                </div>
                <div class="nlds-guideline__example_Npzh">
                 <div class="nlds-canvas_h8Yz">
@@ -375,7 +375,7 @@
                </div>
               </div>
               <h2 id="verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld" class="utrecht-heading-2">Verstuur een formulier niet automatisch na het wijzigen of invullen van een formulierveld</h2>
-              <p>Verstuur bij voorkeur alleen het formulier wanneer de gebruiker de verzendknop gebruikt, doe dit niet automatisch met een andere aanleiding. Is het echt noodzakelijk om het formulier op een ander moment te versturen, informeer de gebruiker dan duidelijk vooraf.</p>
+              <p>Verstuur bij voorkeur alleen het formulier wanneer de gebruiker de submitbutton gebruikt, doe dit niet automatisch met een andere aanleiding. Is het echt noodzakelijk om het formulier op een ander moment te versturen, informeer de gebruiker dan duidelijk vooraf.</p>
               <p>Versturen na bijvoorbeeld het kiezen van een optie kan de gebruiker verrassen: wat gebeurt er, ik wilde nog even checken wat ik had ingevuld, heb ik nu het goede gekozen?</p>
               <p>Let wel: het gaat hier om het daadwerkelijk versturen van het formulier. Dus als de <strong>context</strong> verandert. Bijvoorbeeld: je gaat naar een bevestigingspagina.</p>
               <p>Het updaten van bijvoorbeeld zoekresultaten waarbij alleen de <strong>content</strong> verandert valt hier niet onder. Bijvoorbeeld: alleen het aantal zoekresultaten verandert, maar je blijft op dezelfde pagina.</p>
