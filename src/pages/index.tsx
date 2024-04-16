@@ -81,7 +81,7 @@ export default function Home() {
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/leverancier/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/leverancier/introductie" className="utrecht-link">
                     Meer informatie voor leveranciers
                   </DocusaurusLink>
                 </Paragraph>
