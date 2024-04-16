@@ -1,6 +1,6 @@
 ### Optie 2: 'verplichte' velden markeren
 
-Als het formulier meer niet-verplichte velden bevat, of als je CMS of plug-in het niet toelaat om alleen niet-verplichte velden aan te duiden is het omgekeerde mogelijk: geef aan welke velden verplicht zijn.
+Zijn de meeste velden in een formulier niet verplicht? Of is het technisch niet mogelijk om de niet-verplichte velden te markeren? Draai het dan om door bij de verplichte velden de tekst '(verplicht)' in het label op te nemen.
 
 Geef dit aan door bij de verplichte velden de tekst '(verplicht)' in het label op te nemen.
 
