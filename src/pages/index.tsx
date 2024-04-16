@@ -162,7 +162,7 @@ export default function Home() {
             </Card>
           </CardGroup>
           <Paragraph className="homepage__paragraph">
-            En ruim 20 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
+            En ruim 30 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
           </Paragraph>
         </div>
         <div className="container" style={{ paddingBlockStart: '40px', paddingBlockEnd: '40px' }}>
