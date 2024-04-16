@@ -1,4 +1,4 @@
-### Optie 1: Geef aan welke velden niet verplicht zijn
+### Optie 1: 'niet-verplichte' velden markeren
 
 Omdat je een formulier kort, bondig en to-the-point wilt houden, komen verplichte velden waarschijnlijk het meest voor en is 'niet verplicht' eigenlijk een uitzondering op de regel. Geef dit aan door bij de niet-verplichte velden de tekst '(niet verplicht)' in het label op te nemen.
 
