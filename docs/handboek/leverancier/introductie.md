@@ -1,29 +1,29 @@
 ---
-title: Leverancier sessie maart 2023
+title: Introductie
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Leverancier sessie maart 2023
+sidebar_label: Introductie
 sidebar_position: 2
-pagination_label: Leverancier sessie maart 2023
-description: Samenvatting van de interactieve leverancier sessie
+pagination_label: Introductie
+description: Waarom zou je als leverancier meedoen aan NL Design System?
   - leverancier
   - waarom NLDS
   - waarom een design system
 ---
 
-# Leverancier sessie NL Design System maart 2023
+# Introductie
 
-In de eerste leverancier sessie van NL Design System hebben we onderwerpen opgehaald uit de community en iedereen op onderwerpen laten stemmen. Hieronder de onderwerpen die uiteindelijk aan bod zijn gekomen met een samenvatting van wat we erover vertelden.
+Veel organisaties werken met NL Design System _via_ hun leverancier, of zijn van plan dat te doen. Op deze pagina vind je meer informatie over hoe dat werkt en wat het voordeel is.
 
 ## Voorbeelden van leveranciers
 
 > Zijn er al leerzame voorbeelden van bijdragen van leveranciers die gebruikmaken van het NL Design System?
 
-Jazeker zijn die er, bijvoorbeeld de leverancier die voor de gemeente Den Haag Gutenberg blocks in Wordpress maakte om NL Design System componenten heen. Zij zijn nu met een andere leverancier aan het samenwerken om deze open source en herbruikbaar voor de hele community beschikbaar te maken. Zo kun je straks niet alleen de componenten via Wordpress inzetten, maar worden ook de redacteuren van relevante richtlijnen voorzijn tijdens het maken van content.
+Jazeker zijn die er, bijvoorbeeld de leverancier die voor de gemeente Den Haag Gutenberg blocks in WordPress maakte om NL Design System componenten heen. Zij zijn nu met een andere leverancier aan het samenwerken om deze open source en herbruikbaar voor de hele community beschikbaar te maken. Zo kun je straks niet alleen de componenten via WordPress inzetten, maar worden ook de redacteuren van relevante richtlijnen voorzijn tijdens het maken van content.
 
 Maar bijdrages kunnen heel erg verschillen, wat dacht je van de leverancier die de toptaak iconen heeft ontworpen en beschikbaar heeft gemaakt om als webcomponent in te zetten? Die heeft zelfs gewerkt aan een nieuwe versie die nog beter aansluit bij het design van de functionele iconen die Jeffrey van het kernteam graag gebruikt.
 
-## Wat heb je aan NL Design System
+## Wat heb je aan NL Design System?
 
 > Wat heb je als leverancier aan NL Design System?
 
