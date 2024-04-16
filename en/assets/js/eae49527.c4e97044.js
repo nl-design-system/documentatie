@@ -1,4 +1,4 @@
-/*! For license information please see eae49527.2527277d.js.LICENSE.txt */
+/*! For license information please see eae49527.c4e97044.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [3510],
@@ -11,7 +11,7 @@
     r = n(96207);
    const o = { title: "Timetable", description: "Timetable for all English talks of the Design Systems Week 2023", hide_table_of_contents: !0, hide_title: !0, sidebar_label: "Timetable", pagination_label: "Timetable", slug: "/events/design-systems-week-2023/en/timetable" },
     l = "Design Systems Week Timetable",
-    d = { id: "community/events/design-systems-week-2023/english/timetable", title: "Timetable", description: "Timetable for all English talks of the Design Systems Week 2023", source: "@site/docs/community/events/design-systems-week-2023/english/2-timetable.md", sourceDirName: "community/events/design-systems-week-2023/english", slug: "/events/design-systems-week-2023/en/timetable", permalink: "/events/design-systems-week-2023/en/timetable", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/2-timetable.md", tags: [], version: "current", sidebarPosition: 2, frontMatter: { title: "Timetable", description: "Timetable for all English talks of the Design Systems Week 2023", hide_table_of_contents: !0, hide_title: !0, sidebar_label: "Timetable", pagination_label: "Timetable", slug: "/events/design-systems-week-2023/en/timetable" }, sidebar: "community", previous: { title: "Program", permalink: "/events/design-systems-week-2023/en/program" }, next: { title: "Design Systems Week 2022", permalink: "/events/design-systems-week-2022" } },
+    d = { id: "community/events/design-systems-week-2023/english/timetable", title: "Timetable", description: "Timetable for all English talks of the Design Systems Week 2023", source: "@site/docs/community/events/design-systems-week-2023/english/2-timetable.md", sourceDirName: "community/events/design-systems-week-2023/english", slug: "/events/design-systems-week-2023/en/timetable", permalink: "/en/events/design-systems-week-2023/en/timetable", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/2-timetable.md", tags: [], version: "current", sidebarPosition: 2, frontMatter: { title: "Timetable", description: "Timetable for all English talks of the Design Systems Week 2023", hide_table_of_contents: !0, hide_title: !0, sidebar_label: "Timetable", pagination_label: "Timetable", slug: "/events/design-systems-week-2023/en/timetable" }, sidebar: "community", previous: { title: "Program", permalink: "/en/events/design-systems-week-2023/en/program" }, next: { title: "Design Systems Week 2022", permalink: "/en/events/design-systems-week-2022" } },
     c = {},
     m = [
      { value: "Monday October 2th", id: "monday-october-2th", level: 2 },
@@ -92,7 +92,7 @@
    var o = n(11527);
    const l = (e) => {
      let { name: s, organisation: n } = e;
-     return (0, o.jsxs)(i.nv, { className: (0, a.Z)(r["session-table__speaker"], r.speaker), children: [(0, o.jsx)(i.JO, { role: "presentational", className: r.speaker__icon, children: (0, o.jsx)(t.Z, {}) }), (0, o.jsx)("span", { className: (0, a.Z)(r.speaker__name), children: s }), (0, o.jsx)("br", {}), (0, o.jsx)("span", { className: (0, a.Z)(r.speaker__organisation), children: n })] });
+     return (0, o.jsxs)(i.nv, { className: (0, a.Z)(r["session-table__speaker"], r.speaker), children: [(0, o.jsx)(i.JO, { className: r.speaker__icon, children: (0, o.jsx)(t.Z, {}) }), (0, o.jsx)("span", { className: (0, a.Z)(r.speaker__name), children: s }), (0, o.jsx)("br", {}), (0, o.jsx)("span", { className: (0, a.Z)(r.speaker__organisation), children: n })] });
     },
     d = (e) => {
      let { lang: s, sessions: n, className: t, ...d } = e;

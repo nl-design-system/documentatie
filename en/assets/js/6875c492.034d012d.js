@@ -1,4 +1,4 @@
-/*! For license information please see 6875c492.a46891f6.js.LICENSE.txt */
+/*! For license information please see 6875c492.034d012d.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [8610],
@@ -337,7 +337,7 @@
      appearance: "large",
      children: n.map((e) => {
       let { content: n } = e;
-      return (0, u.jsx)(r.n, { content: n, children: (0, u.jsx)(s.Zb, { appearance: "large", className: d["blog-card"], children: (0, u.jsxs)(s.aY, { children: [(0, u.jsx)(o.XJ, { children: (0, u.jsx)(a.Z, { to: n.metadata.permalink, className: (0, c.Z)("utrecht-link", d["blog-card__header-link"]), children: n.metadata.title }) }), (0, u.jsx)("div", { children: n.metadata.description }), (0, u.jsxs)(o.k, { children: [n.metadata.authors.map((e) => (0, u.jsxs)(o.Ou, { className: (0, c.Z)(d["blog-card__badge"], d["blog-card__badge--author"]), children: [(0, u.jsx)(o.JO, { role: "presentational", children: (0, u.jsx)(i.Z, {}) }), (0, u.jsx)("span", { className: "visually-hidden", children: "auteur:" }), " ", e.name] }, e.name)), (0, u.jsxs)(o.Ou, { className: (0, c.Z)(d["blog-card__badge"], d["blog-card__badge--date"]), children: [(0, u.jsx)(o.JO, { role: "presentational", children: (0, u.jsx)(l, {}) }), (0, u.jsx)("span", { className: "visually-hidden", children: "publicatie datum:" }), " ", (0, u.jsx)("time", { dateTime: n.metadata.date, children: n.metadata.formattedDate })] })] })] }) }) }, n.metadata.permalink);
+      return (0, u.jsx)(r.n, { content: n, children: (0, u.jsx)(s.Zb, { appearance: "large", className: d["blog-card"], children: (0, u.jsxs)(s.aY, { children: [(0, u.jsx)(o.XJ, { children: (0, u.jsx)(a.Z, { to: n.metadata.permalink, className: (0, c.Z)("utrecht-link", d["blog-card__header-link"]), children: n.metadata.title }) }), (0, u.jsx)("div", { children: n.metadata.description }), (0, u.jsxs)(o.k, { children: [n.metadata.authors.map((e) => (0, u.jsxs)(o.Ou, { className: (0, c.Z)(d["blog-card__badge"], d["blog-card__badge--author"]), children: [(0, u.jsx)(o.JO, { children: (0, u.jsx)(i.Z, {}) }), (0, u.jsx)("span", { className: "visually-hidden", children: "auteur:" }), " ", e.name] }, e.name)), (0, u.jsxs)(o.Ou, { className: (0, c.Z)(d["blog-card__badge"], d["blog-card__badge--date"]), children: [(0, u.jsx)(o.JO, { children: (0, u.jsx)(l, {}) }), (0, u.jsx)("span", { className: "visually-hidden", children: "publicatie datum:" }), " ", (0, u.jsx)("time", { dateTime: n.metadata.date, children: n.metadata.formattedDate })] })] })] }) }) }, n.metadata.permalink);
      }),
     });
    }

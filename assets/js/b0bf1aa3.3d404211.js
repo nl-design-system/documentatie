@@ -1,4 +1,4 @@
-/*! For license information please see b0bf1aa3.d7e15ecd.js.LICENSE.txt */
+/*! For license information please see b0bf1aa3.3d404211.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [8595],
@@ -147,7 +147,7 @@
    var o = n(11527);
    const d = (e) => {
      let { name: s, organisation: n } = e;
-     return (0, o.jsxs)(i.nv, { className: (0, t.Z)(r["session-table__speaker"], r.speaker), children: [(0, o.jsx)(i.JO, { role: "presentational", className: r.speaker__icon, children: (0, o.jsx)(a.Z, {}) }), (0, o.jsx)("span", { className: (0, t.Z)(r.speaker__name), children: s }), (0, o.jsx)("br", {}), (0, o.jsx)("span", { className: (0, t.Z)(r.speaker__organisation), children: n })] });
+     return (0, o.jsxs)(i.nv, { className: (0, t.Z)(r["session-table__speaker"], r.speaker), children: [(0, o.jsx)(i.JO, { className: r.speaker__icon, children: (0, o.jsx)(a.Z, {}) }), (0, o.jsx)("span", { className: (0, t.Z)(r.speaker__name), children: s }), (0, o.jsx)("br", {}), (0, o.jsx)("span", { className: (0, t.Z)(r.speaker__organisation), children: n })] });
     },
     l = (e) => {
      let { lang: s, sessions: n, className: a, ...l } = e;

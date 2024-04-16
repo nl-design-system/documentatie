@@ -1,4 +1,4 @@
-/*! For license information please see main.e26ade89.js.LICENSE.txt */
+/*! For license information please see main.9084f932.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [179],
  {
@@ -1534,7 +1534,7 @@
    var ie = r(16532);
    function le() {
     const { toggle: e, shown: t } = (0, D.e)();
-    return (0, s.jsx)(ie.zx, { appearance: "subtle-button", onClick: e, "aria-label": (0, l.I)({ id: "theme.docs.sidebar.toggleSidebarButtonAriaLabel", message: "Toggle navigation bar", description: "The ARIA label for hamburger menu button of mobile navigation" }), "aria-expanded": t, className: "navbar__toggle clean-btn", type: "button", children: "Menu" });
+    return (0, s.jsx)(ie.zx, { appearance: "subtle-button", onClick: e, "aria-expanded": t, className: "navbar__toggle clean-btn", type: "button", children: "Menu" });
    }
    const ue = {};
    function se(e) {
