@@ -28,15 +28,20 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt.
 
-Geef de outline (focusring):
+Een optie is het geven van een outline (focusring). Dit kan via de CSS-properties `outline` of `border`.
+
+Geef de outline :
 
 - een dikte van minimaal 2 [CSS-pixels](https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel);
 - een kleurcontrast van ten minste 3:1 ten opzichte van de aangrenzende kleuren;
 - een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de **gefocuste** en **niet-gefocuste** staat.
 
+Een andere optie is geen outline toepassen, maar het hele element van kleur te laten veranderen.
+Bijvoorbeeld een button die van kleur verandert bij toetsenbordfocus. Ook hier geldt een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de **gefocuste** en **niet-gefocuste** staat.
+
 Voor het NL Design System houden de richtlijnen van WCAG 2.2 **AA** aan, maar we willen we ook voldoen aan dit WCAG-succescriterium 2.4.13 Focusweergave, niveau **AAA**.
 
-Het intact houden van de browser-outline is voldoende voor het WCAG-succescriterium [2.4.7 Focus zichtbaar](/wcag/2.4.7), maar in de praktijk is die focusring niet altijd duidelijk genoeg. Verschillende browsers geven verschillende kleuren en type lijnen weer voor de outline. Dit maakt het onbetrouwbaar maakt om op de browser-outline te vertrouwen voor een consistente, goed zichtbare focus.
+Het intact laten van de standaard outline die door een browser wordt geleverd is voldoende voor het WCAG-succescriterium [2.4.7 Focus zichtbaar](/wcag/2.4.7). Maar in de praktijk is deze standaard outline niet altijd duidelijk genoeg. Elke browser hanteert een eigen stijl voor de outline. Hierdoor kun je niet op de standaard browser-outline vertrouwen voor een consistente, goed zichtbare focus.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -60,15 +65,18 @@ Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik d
 
 Als in de CSS de outline is verwijderd door de CSS `outline: none;`, moet er een alternatief zijn die de toetsenbordfocus visueel duidelijk aangeeft. Bijvoorbeeld door het definiëren van een border als een element focus krijgt.
 
-Controleer of de breedte van de focusring tenminste 2 CSS-pixels breed is.
+Controleer of de breedte van de outline tenminste 2 CSS-pixels breed is.
 Inspecteer in de gegenereerde HTML-code van de webpagina de elementen die de toetsenbordfocus kunnen krijgen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
 
 - Zorg dat het element wat je wilt inspecteren de focus heeft.
 - In de CSS-properties moet gedefinieerd staan dat de `outline-width` of `border-width` ten minste 2 pixels is.
+- Controleer of het kleurcontrast van de outline ten minste 3:1 is ten opzichte van de aangrenzende kleuren, dus de binnen- en buitenkant van de lijn.
+- Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de gefocuste en niet-gefocuste staat.
 
-Controleer of het kleurcontrast van de focusring ten minste 3:1 is ten opzichte van de aangrenzende kleuren, dus de binnen- en buitenkant van de lijn.
+Is er geen outline, maar verandert de kleur van het hele element?
 
-Is er geen speciale focusring, maar verandert de kleur van het hele element? Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de **gefocuste** en **niet-gefocuste** staat. Bijvoorbeeld voor een button die van kleur verandert bij toetsenbordfocus.
+- Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de **gefocuste** en **niet-gefocuste** staat. Bijvoorbeeld voor een button die van kleur verandert bij toetsenbordfocus.
+- Controleer of de tekst in dit element aan de [richtlijnen voor contrast](https://www.w3.org/Translations/WCAG21-nl/#contrast-minimum) voldoet in gefocuste en niet-gefocuste staat.
 
 Mooie tools om het kleurcontrast te testen en zo nodig een alternatief te kiezen zijn:
 
@@ -79,6 +87,7 @@ Mooie tools om het kleurcontrast te testen en zo nodig een alternatief te kiezen
 Additionele testen:
 
 - de [skip link](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css_css-skip-link--docs) wordt zichtbaar als deze toetsenbord krijgt.
+- de outline (of het alternatief) is goed zichtbaar bij componenten met verschillende achtergrondkleuren, zoals bij een Page-header of footer.
 - de outline (of het alternatief) is goed zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.
 
 <WCAGFooterInfo />
