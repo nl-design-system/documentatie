@@ -1,6 +1,6 @@
 ### Optie 1: 'niet-verplichte' velden markeren
 
-Omdat je een formulier kort, bondig en to-the-point wilt houden, komen verplichte velden waarschijnlijk het meest voor en is 'niet verplicht' eigenlijk een uitzondering op de regel. Geef dit aan door bij de niet-verplichte velden de tekst '(niet verplicht)' in het label op te nemen.
+Uitgaande van het gegeven dat je in formulieren enkel het broodnodige uitvraagt zullen de meeste velden verplicht zijn. Hierdoor vormen de niet-verplichte velden een uitzondering. Geef dit aan door bij de niet-verplichte velden de tekst '(niet verplicht)' in het label op te nemen.
 
 Gebruikersonderzoek over de toepassing van 'niet verplicht' versus 'verplicht':
 
