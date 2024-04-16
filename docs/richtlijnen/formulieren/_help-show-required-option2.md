@@ -1,4 +1,4 @@
-### Optie 2: Geef aan welke velden verplicht zijn
+### Optie 2: 'verplichte' velden markeren
 
 Als het formulier meer niet-verplichte velden bevat, of als je CMS of plug-in het niet toelaat om alleen niet-verplichte velden aan te duiden is het omgekeerde mogelijk: geef aan welke velden verplicht zijn.
 
