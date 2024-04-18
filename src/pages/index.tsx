@@ -48,79 +48,10 @@ export default function Home() {
           </UnorderedList>
         </HomepageHero>
         <div className="container" style={{ paddingBlockEnd: '40px' }}>
-          <CardGroup>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Richtlijnen</Heading2>
-                  <Paragraph>
-                    Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
-                    Bekijk de richtlijnen
-                  </DocusaurusLink>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Componenten</Heading2>
-                  <Paragraph>
-                    Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en
-                    meer. Inclusief code en documentatie.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <DocusaurusLink to="/componenten" className="utrecht-link">
-                    Bekijk de componenten
-                  </DocusaurusLink>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Voorbeelden</Heading2>
-                  <Paragraph>
-                    Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente,
-                    weloverwogen manier op te lossen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <DocusaurusLink to="/voorbeelden" className="utrecht-link">
-                    Bekijk de voorbeelden
-                  </DocusaurusLink>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Events</Heading2>
-                  <Paragraph>
-                    Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de
-                    aankondigingen en opnames hier.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
-                    Bekijk de events
-                  </DocusaurusLink>
-                </Paragraph>
-              </CardContent>
-            </Card>
-          </CardGroup>
-
           <Heading2>Meedoen als...</Heading2>
 
-          <CardGroup>
-            <Card component="section" appearance="medium">
+          <CardGroup appearance="medium">
+            <Card component="section" appearance="small">
               {/* <CardIllustration background>
                 <Image
                   src="..."
@@ -129,11 +60,11 @@ export default function Home() {
               </CardIllustration> */}
               <CardContent>
                 <div>
-                  <Heading3>Organisatie</Heading3>
+                  <Heading3>Manager</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/introductie" className="utrecht-link">
-                    Meer informatie voor organisaties
+                  <DocusaurusLink to="/handboek/manager/introductie" className="utrecht-link">
+                    Meer informatie voor managers
                   </DocusaurusLink>
                 </Paragraph>
               </CardContent>
@@ -150,7 +81,7 @@ export default function Home() {
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/leverancier/overzicht" className="utrecht-link">
+                  <DocusaurusLink to="/handboek/leverancier/introductie" className="utrecht-link">
                     Meer informatie voor leveranciers
                   </DocusaurusLink>
                 </Paragraph>
@@ -230,8 +161,78 @@ export default function Home() {
             </Card>
           </CardGroup>
           <Paragraph className="homepage__paragraph">
-            En ruim 20 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
+            En ruim 30 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
           </Paragraph>
+        </div>
+        <div className="container" style={{ paddingBlockStart: '40px', paddingBlockEnd: '40px' }}>
+          <CardGroup>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Richtlijnen</Heading2>
+                  <Paragraph>
+                    Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
+                    Bekijk de richtlijnen
+                  </DocusaurusLink>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Componenten</Heading2>
+                  <Paragraph>
+                    Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en
+                    meer. Inclusief code en documentatie.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <DocusaurusLink to="/componenten" className="utrecht-link">
+                    Bekijk de componenten
+                  </DocusaurusLink>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Voorbeelden</Heading2>
+                  <Paragraph>
+                    Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente,
+                    weloverwogen manier op te lossen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <DocusaurusLink to="/voorbeelden" className="utrecht-link">
+                    Bekijk de voorbeelden
+                  </DocusaurusLink>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Events</Heading2>
+                  <Paragraph>
+                    Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de
+                    aankondigingen en opnames hier.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
+                    Bekijk de events
+                  </DocusaurusLink>
+                </Paragraph>
+              </CardContent>
+            </Card>
+          </CardGroup>
         </div>
         <HomepageUpdates>
           <Heading2>Blijf op de hoogte</Heading2>
