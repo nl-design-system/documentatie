@@ -9,7 +9,9 @@ Laat gebruikers duidelijk weten welke informatie ingevuld moeten worden om een f
 
 Op basis van gebruikersonderzoek zouden wij de eerste optie aanbevelen.
 
-Plaats de uitleg over wel of niet verplichte velden altijd boven het formulier, zodat de gebruiker weet wat te verwachten bij het invullen. Maak de markering onderdeel van de labeltekst.
+Plaats de uitleg over wel of niet verplichte velden altijd boven het formulier, zodat de gebruiker weet wat te verwachten bij het invullen.
+
+Maak de markering ook onderdeel van de labeltekst.
 
 Screenreadergebruikers krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.
 
