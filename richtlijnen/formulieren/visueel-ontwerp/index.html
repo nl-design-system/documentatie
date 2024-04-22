@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.62edcfaa.css" />
-  <script src="/assets/js/runtime~main.90fadd2d.js" defer="defer"></script>
-  <script src="/assets/js/main.a68c3a6e.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.fd9d1b32.js" defer="defer"></script>
+  <script src="/assets/js/main.17afb4ef.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -471,8 +471,16 @@
                </div>
               </div>
               <h2 id="maak-toetsenbord-focus-goed-zichtbaar" class="utrecht-heading-2">Maak toetsenbord focus goed zichtbaar</h2>
-              <p>Voor gebruikers van een toetsenbord of van spraakherkenning moet duidelijk zijn welk formulierveld de focus heeft. Deze zogenaamde focusstijlen moeten consistent en duidelijk genoeg zijn. Goed zichtbare focusstijlen zijn nodig om te voldoen het aan WCAG-succescriterium <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a> (niveau AA).</p>
-              <p>Zorg ervoor dat de focusstijl een kleurcontrast heeft van tenminste 3:1 ten opzichte van de achtergrond van het formulierveld en de omringende achtergrond. Dit is nodig om te voldoen aan het WCAG-succescriterium <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a> (niveau AA).</p>
+              <p>Voor gebruikers van een toetsenbord of van spraakherkenning moet duidelijk zijn welk formulierveld de focus heeft. Maak de focusstijl makkelijk te herkennen en geef het voldoende kleurcontrast. Dan kunnen ook slechtziende of kleurenblinde bezoekers het element met focus goed herkennen.</p>
+              <p>Dit doe je door een minimale dikte van <strong>2 CSS-pixels</strong> en een <strong>minimaal contrast van 3:1</strong> ten opzichten van aangrenzende kleuren. En daarmee bedoelen we de kleur van het component dat focus heeft, maar ook de achtergrond waar het component ‘bovenop’ ligt.</p>
+              <p>Een button of link komt namelijk misschien het meest voor op een witte achtergrond, maar houdt ook het scenario’s in gedachten waarbij de link of button op een getinte achtergrond staat zoals bijvoorbeeld een footer.</p>
+              <p>Zorg er ook voor dat de focusring heeft een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat.</p>
+              <p>Goed zichtbare focusstijlen zijn nodig om te voldoen het aan de WCAG-succescriteria:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a> (niveau AA).</li>
+               <li class="utrecht-unordered-list__item"><a href="/wcag/2.4.7/" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a> (niveau AA).</li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a> (niveau AAA)</li>
+              </ul>
               <!-- -->
               <!-- -->
               <!-- -->
