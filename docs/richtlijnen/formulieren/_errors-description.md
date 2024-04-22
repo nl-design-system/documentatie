@@ -6,5 +6,5 @@ Je kunt zeker kleur en icoontjes gebruiken, maar niet als **enige** foutindicati
 
 Formulierfouten in tekst beschrijven is nodig om te voldoen aan de WCAG-succescriteria:
 
-- [1.3.1 Info en relaties](wcag/1.3.1) (niveau A).
+- [1.3.1 Info en relaties](/wcag/1.3.1) (niveau A).
 - [3.3.1 Foutidentificatie](/wcag/3.3.1/) (niveau A).
