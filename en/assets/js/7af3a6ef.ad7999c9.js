@@ -28,8 +28,8 @@
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(t, { ...e }) }) : t(e);
    }
    function o(e) {
-    const n = { h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "\n", (0, s.jsx)(n.p, { children: "Zorg dat de gebruiker contact op kan nemen bij vragen. Dit kan in de bevestiging, maar ook via een contactmogelijkheid op de website. Biedt dan niet alleen een telefoonnummer aan als wijze van contact opnemen." }), "\n", (0, s.jsx)(n.p, { children: "Telefonisch contact is voor sommige gebruikers niet mogelijk of niet handig. Denk aan gebruikers die doof zijn, stotteren of een vorm van autisme hebben. Of aan gebruikers die heel verlegen zijn, of de Nederlandse taal niet zo goed spreken." }), "\n", (0, s.jsx)(n.p, { children: "Voeg een alternatief toe, bijvoorbeeld in de vorm van een e-mailadres of chatfunctionaliteit." })] });
+    const n = { a: "a", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "\n", (0, s.jsx)(n.p, { children: "Zorg dat de gebruiker contact op kan nemen bij vragen. Dit kan in de bevestiging, maar ook via een contactmogelijkheid op de website. Biedt dan niet alleen een telefoonnummer aan als wijze van contact opnemen." }), "\n", (0, s.jsx)(n.p, { children: "Telefonisch contact is voor sommige gebruikers niet mogelijk of niet handig. Denk aan gebruikers die doof zijn, stotteren of een vorm van autisme hebben. Of aan gebruikers die heel verlegen zijn, of de Nederlandse taal niet zo goed spreken." }), "\n", (0, s.jsxs)(n.p, { children: ["Voeg een alternatief toe, bijvoorbeeld in de vorm van een e-mailadres of chatfunctionaliteit. De blogpost ", (0, s.jsx)(n.a, { href: "/blog/meerdere-manieren-contact", children: "Ik wil je wat vragen, maar ik heb geen WhatsApp!" }), " gaat hier uitgebreid op in."] })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -37,13 +37,13 @@
    }
    var c = i(65477),
     d = i(32957);
-   function u(e) {
+   function g(e) {
     const n = { div: "div", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(d.X, { appearance: "do", title: "Informeren dat het formulier is verzonden en wat de vervolgacties zijn.", children: (0, s.jsx)(c.X, { language: "html", children: () => (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.p, { children: "Uw vraag is met succes verstuurd. Zaaknummer 123456789." }), (0, s.jsx)(n.p, { children: "Wat gaat er nu gebeuren?" }), (0, s.jsxs)(n.ul, { children: [(0, s.jsx)(n.li, { children: "U ontvangt een bevestigingsmail op gebruiker@voorbeeld.com" }), (0, s.jsx)(n.li, { children: "De afdeling Vraagbaak gaat met uw vraag aan de slag." }), (0, s.jsx)(n.li, { children: "U wordt per e-mail op de hoogte gehouden maar kunt de voortgang ook inzien binnen uw Mijn omgeving." })] })] }) }) }), "\n", (0, s.jsx)(d.X, { appearance: "dont", title: "Vervolgstappen weglaten.", children: (0, s.jsx)(c.X, { language: "html", children: () => (0, s.jsx)(n.p, { children: "Uw vraag is verstuurd." }) }) })] });
    }
-   function g(e = {}) {
+   function u(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(u, { ...e }) }) : u(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(g, { ...e }) }) : g(e);
    }
    function m(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
@@ -64,12 +64,12 @@
    var j = i(12921);
    const b = { title: "Bevestigingspagina van een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", sidebar_position: 3, pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] },
     x = "Bevestigingspagina van een formulier",
-    f = { id: "richtlijnen/formulieren/confirmation", title: "Bevestigingspagina van een formulier | Richtlijnen", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", source: "@site/docs/richtlijnen/formulieren/confirmation.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/bevestigingspagina", permalink: "/richtlijnen/formulieren/bevestigingspagina", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/confirmation.mdx", tags: [], version: "current", sidebarPosition: 3, frontMatter: { title: "Bevestigingspagina van een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", sidebar_position: 3, pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Buttons in een formulier", permalink: "/richtlijnen/formulieren/buttons" }, next: { title: "Descriptions in een formulier", permalink: "/richtlijnen/formulieren/descriptions" } },
+    f = { id: "richtlijnen/formulieren/confirmation", title: "Bevestigingspagina van een formulier | Richtlijnen", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", source: "@site/docs/richtlijnen/formulieren/confirmation.mdx", sourceDirName: "richtlijnen/formulieren", slug: "/richtlijnen/formulieren/bevestigingspagina", permalink: "/en/richtlijnen/formulieren/bevestigingspagina", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/confirmation.mdx", tags: [], version: "current", sidebarPosition: 3, frontMatter: { title: "Bevestigingspagina van een formulier | Richtlijnen", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Bevestigingspagina", sidebar_position: 3, pagination_label: "Bevestigingspagina", description: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn.", slug: "bevestigingspagina", keywords: ["informatie", "formulier", "design", "code"] }, sidebar: "richtlijnen", previous: { title: "Buttons in een formulier", permalink: "/en/richtlijnen/formulieren/buttons" }, next: { title: "Descriptions in een formulier", permalink: "/en/richtlijnen/formulieren/descriptions" } },
     k = {},
     _ = [];
    function y(e) {
     const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "bevestigingspagina-van-een-formulier", children: "Bevestigingspagina van een formulier" }), "\n", (0, s.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, s.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vermeld-dat-het-formulier-succesvol-is-verzonden", children: "Vermeld dat het formulier succesvol is verzonden" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vertel-wat-de-vervolgacties-zijn", children: "Vertel wat de vervolgacties zijn" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "."] }), "\n"] }), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(l, {}), "\n", (0, s.jsx)(v, {}), "\n", (0, s.jsx)(g, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(j.ZP, {})] });
+    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "bevestigingspagina-van-een-formulier", children: "Bevestigingspagina van een formulier" }), "\n", (0, s.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, s.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vermeld-dat-het-formulier-succesvol-is-verzonden", children: "Vermeld dat het formulier succesvol is verzonden" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vertel-wat-de-vervolgacties-zijn", children: "Vertel wat de vervolgacties zijn" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "."] }), "\n"] }), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(l, {}), "\n", (0, s.jsx)(v, {}), "\n", (0, s.jsx)(u, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(j.ZP, {})] });
    }
    function w(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -86,71 +86,71 @@
     a = i(99821),
     c = i(64663),
     d = i(50959),
-    u = i(9995);
-   const g = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
+    g = i(9995);
+   const u = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
    var m = i(41179),
     v = i(11527);
    const p = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", g["nlds-canvas__example-document"]), children: (0, v.jsx)(s.nv, { className: g["nlds-canvas__example-paragraph"], children: n }) }) });
+    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: (0, v.jsx)(s.nv, { className: u["nlds-canvas__example-paragraph"], children: n }) }) });
    };
    p.displayName = "ParagraphContainer";
    const h = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", g["nlds-canvas__example-document"]), children: n }) });
+    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: n }) });
    };
    h.displayName = "DocumentContainer";
    const j = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: n });
+    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: n });
    };
    j.displayName = "SurfaceContainer";
    const b = (e) => {
     let { code: n, copy: i = !1, defaultExpandedCode: b = !1, displayCode: x = !0, children: f, container: k = "document", language: _, designTokens: y } = e,
      w = "function" == typeof f ? f() : f,
      z = "function" == typeof n ? n() : (0, d.isValidElement)(n) ? n : void 0,
-     N = "string" == typeof n ? n : u.uS(z || w),
+     N = "string" == typeof n ? n : g.uS(z || w),
      [Z, C] = (0, d.useState)(N),
-     [B, S] = (0, d.useState)(b);
+     [B, D] = (0, d.useState)(b);
     (0, d.useEffect)(() => {
      (async () => {
       (Z = await c.ZP.format(N, { parser: _, plugins: [t.Z, l.ZP, o.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), C(Z);
      })();
     }, [N]);
-    const D = (0, d.useId)();
+    const S = (0, d.useId)();
     let P = d.Fragment;
     return (
      "paragraph" === k ? (P = p) : "document" === k ? (P = h) : "surface" === k && (P = j),
      (0, v.jsxs)("div", {
-      className: (0, r.Z)(g["nlds-canvas"]),
+      className: (0, r.Z)(u["nlds-canvas"]),
       children: [
-       w && (0, v.jsx)("div", { className: (0, r.Z)(g["nlds-canvas__example"]), children: (0, v.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, v.jsx)(P, { children: (0, v.jsx)(s.pu, { children: w }) }) }) }),
+       w && (0, v.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, v.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, v.jsx)(P, { children: (0, v.jsx)(s.pu, { children: w }) }) }) }),
        x &&
         (0, v.jsx)("div", {
-         className: (0, r.Z)(g["nlds-canvas__toolbar"]),
+         className: (0, r.Z)(u["nlds-canvas__toolbar"]),
          children: (0, v.jsx)(s.zx, {
-          className: (0, r.Z)(g["nlds-canvas__button"], g["nlds-canvas__toggle-code-button"]),
+          className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           S(!B);
+           D(!B);
           },
           "aria-expanded": B,
-          "aria-controls": D,
+          "aria-controls": S,
           children: B ? "Verberg code" : "Bekijk code",
          }),
         }),
        x &&
         (0, v.jsxs)("div", {
-         className: (0, r.Z)(g["nlds-canvas__code-block"], !i && g["nlds-canvas__code-block--user-select-none"]),
-         id: D,
+         className: (0, r.Z)(u["nlds-canvas__code-block"], !i && u["nlds-canvas__code-block--user-select-none"]),
+         id: S,
          hidden: !B,
          children: [
           (0, v.jsx)(m.u, { syntax: _, textContent: Z, trim: !0 }),
           i &&
            (0, v.jsx)("div", {
-            className: (0, r.Z)(g["nlds-canvas__toolbar"]),
+            className: (0, r.Z)(u["nlds-canvas__toolbar"]),
             children: (0, v.jsx)(s.zx, {
-             className: (0, r.Z)(g["nlds-canvas__button"], g["nlds-canvas__copy-button"]),
+             className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__copy-button"]),
              appearance: "subtle-button",
              onClick: () => {
               navigator.clipboard.writeText(Z).catch((e) => console.error("Copy code failed", e));
@@ -234,12 +234,12 @@
    const o = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
    var a = i(11527);
    const c = (e) => {
-    let { title: n, appearance: i, description: c, children: d, figure: u } = e;
-    const g = "Doen",
+    let { title: n, appearance: i, description: c, children: d, figure: g } = e;
+    const u = "Doen",
      m = "Niet doen",
-     v = u ? "figure" : "div",
-     p = u ? "figcaption" : "div";
-    return (0, a.jsxs)(v, { className: (0, l.Z)(o["nlds-guideline"], o[`nlds-guideline--${i}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, l.Z)(o["nlds-guideline__description"]), children: ["dont" === i ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(s.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: m })] }), (0, a.jsx)(t.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: g })] }), (0, a.jsx)(t.nv, { children: n })] }), c] }), (0, a.jsx)("div", { className: (0, l.Z)(o["nlds-guideline__example"]), children: d })] });
+     v = g ? "figure" : "div",
+     p = g ? "figcaption" : "div";
+    return (0, a.jsxs)(v, { className: (0, l.Z)(o["nlds-guideline"], o[`nlds-guideline--${i}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, l.Z)(o["nlds-guideline__description"]), children: ["dont" === i ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(s.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: m })] }), (0, a.jsx)(t.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: u })] }), (0, a.jsx)(t.nv, { children: n })] }), c] }), (0, a.jsx)("div", { className: (0, l.Z)(o["nlds-guideline__example"]), children: d })] });
    };
   },
   80877: (e, n, i) => {
