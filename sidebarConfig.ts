@@ -97,7 +97,7 @@ const sidebars: SidebarsConfig = {
           label: 'Stijl',
           link: {
             type: 'generated-index',
-            title: 'Stijl',
+            title: 'Richtlijnen voor Stijl',
             slug: '/richtlijnen/stijl/overzicht',
             keywords: ['Stijl', 'overzicht'],
           },
@@ -108,7 +108,7 @@ const sidebars: SidebarsConfig = {
           label: 'Formulieren',
           link: {
             type: 'generated-index',
-            title: 'Formulieren',
+            title: 'Richtlijnen voor formulieren',
             slug: '/richtlijnen/formulieren/overzicht',
             keywords: ['Formulieren', 'overzicht'],
           },
