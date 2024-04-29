@@ -26,76 +26,82 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## Korte samenvatting
 
-Geef interactieve elementen zoals buttons, links en formuliervelden een toegankelijke naam, een bijpassende rol, toestand (state), eigenschappen en een waarde.
+Geef interactieve elementen zoals buttons, links en formuliervelden een [toegankelijke naam](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name) en een bijpassende rol. Geef daarnaast, afhankelijk van de functionaliteit, het element een toestand (state), eigenschappen en een waarde mee.
 
-Waarom is dit nodig? Gebruikers van een screenreader krijgen deze informatie voorgelezen en weten zo hoe een interactief element te bedienen en wat de huidige status is.
-Voor stembesturing is het belangrijk dat een element te activeren is, dit kan door de toegankelijke naam uit te spreken.
+Waarom is dit nodig? Gebruikers van een screenreader krijgen deze informatie voorgelezen en weten zo hoe een interactief element te bedienen en wat de huidige waarde of status is.
+Een goede toegankelijke naam is ook belangrijk bij stembesturing. De gebruiker kan een interactief element activeren (aanklikken) door deze naam uit te spreken.
+
+Deze informatie kun je ook terugvinden in de zogenaamde [accessibility tree](https://www.internetacademy.nl/ebooks/wcag-in-de-praktijk/html-dom-accessibility-tree-en-wai-aria). Naast een 'DOM tree' maken browsers ook een 'accessibility tree' van een webpagina. Hulpmiddelen gebruiken deze gegevens.
+
+**Let op**: Bij het gebruik van HTML is de rol al gedefinieerd en hoef je geen rol toe te voegen. Gebruik je op maat gemaakte webcomponenten zonder gebruik te maken van HTML, dan zul je de naam, rol en waarde met ARIA en de toetsenbord-interactie met bijvoorbeeld JavaScript moeten toevoegen.
 
 We geven een paar voorbeelden.
 
 ### Radiobutton
+
 In een formulier kun je je favoriete kleur kiezen uit een paar kleuren.
 Een geselecteerde radiobutton (keuzerondje) heeft de naam 'Blauw', de rol van 'radio' en de state is 'checked'.
-De naam komt van het label, de rol komt door het inputelement type="radio" te geven en de waarde checked wordt door de browser gezet als de gebruiker `Blauw` selecteert.
+De naam komt van het label, de rol komt door het invoerveld `type="radio"` te geven en de state `checked` wordt door de browser gezet als de gebruiker 'Blauw' selecteert.
 
 In code:
-```
-<input id="kleur1" type="radio">
-<label for="kleur1">Blauw</label>
-```
-De screenreader VoiceOver leest dan voor: 'Blauw, geselecteerd, keuzerondje'.
-Deze informatie kun je ook terugvinden in de zogenaamde [accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree).
 
-Chrome laat voor dit voorbeeld zien voor het inputveld:
+```html
+<input id="kleur1" type="radio" /> <label for="kleur1">Blauw</label>
+```
+
+De screenreader VoiceOver dan leest voor: 'Blauw, geselecteerd, keuzerondje'.
+
+De accessibility tree van Chrome vermeldt voor het inputveld:
+
 - Name: Blauw
 - From label (for=attribute): label Blauw
 - Role: radio
 - Checked: true
 
-screenshot a11y tree
-
 ### Link naar de contactpagina
 
-De linktekst 'Contact' is de toegankelijke naam, de rol is link en de waarde is de url 'https://nldesignsystem.nl/project/kernteam'
+In code:
 
- code:
-```
+```html
 <a href="https://nldesignsystem.nl/project/kernteam">Contact</a>
 ```
-De screenreader VoiceOver leest dan voor: 'Link, contact'. En als de link al een keer aangeklikt is: 'Bezocht, Link, contact'
 
+De screenreader VoiceOver leest voor: 'Link, contact'. En als de link al een keer aangeklikt is: 'Bezocht, Link, contact'
+
+De naam is 'Contact', de rol is 'link' en de waarde is de url, in dit geval https://nldesignsystem.nl/project/kernteam.
 
 ### Een button voor het openen en sluiten van een menu.
 
 In dit voorbeeld heeft de button (knop) de toegankelijke naam 'Menu', de rol van button en de state expanded (open) of collapsed (gesloten).
 
-Code voor het gesloten menu.
-```
+Code voor het gesloten menu:
+
+```html
 <button aria-expanded="false">Menu</button>
 ```
-De screenreader VoiceOver leest dan voor: 'Menu, samengevouwen, knop'.
-screenshot
 
-Code voor het open menu
-```
+De screenreader VoiceOver leest dan voor: 'Menu, samengevouwen, knop'.
+
+Code voor het open menu:
+
+```html
 <button aria-expanded="true">Menu</button>
 ```
+
 De screenreader VoiceOver leest dan voor: 'Menu, uitgevouwen, knop'.
 
-De accessibility tree van Chrome vermeldt:
+De accessibility tree van Chrome vermeldt voor de button:
+
 - Name: Menu
 - Contents: "Menu"
 - Role: button
 - Expanded: true
 
-**Let op**: Bij het gebruik van HTML is de rol al gedefinieerd voor de browser en hoef je geen rol toe te voegen. Gebruik je op maat gemaakte webcomponenten zonder gebruik te maken van HTML, dan zul je de naam, rol en waarde met ARIA en de toetsenbordinteractie met bijvoorbeeld JavaScript moeten toevoegen.
-
-
 ## Gerelateerde NL Design System-richtlijnen
 
-Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief
-## Bronnen
-
+- Formulieren - Buttons: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons#de-toegankelijke-naam-van-een-button).
+- Formulieren - Labels: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels#geef-een-formulierveld-toegankelijke-naam-met-een-label)
+- Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren//wanneer-welk-form-element#zorg-dat-iedereen-een-formulierelement-kan-bedienen-of-geef-een-alternatief)
 
 ## Gebruikersonderzoek
 
@@ -103,5 +109,115 @@ Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief
 
 ## Hoe te testen
 
+Goede tools voor het controleren voor dit succescriterium:
+
+- [axe Devtools](https://www.deque.com/axe/browser-extensions/).
+- de accessibility tree van je browser
+- een screenreader, bijvoorbeeld [NVDA voor Windows](https://www.nvaccess.org/download/) of [VoiceOver/Safari](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) voor MacOS.
+
+### Controleer de toegankelijke naam
+
+Elk interactief element moet een toegankelijke naam hebben. Een link vertelt waar deze naar toe gaat, een button beschrijft wat er gebeurt als je erop klikt en een formulierveld vertelt wat je moet invullen.
+
+Een aria-label overschrijft alle inhoud in een interactief element. Komt het aria-label overeen met wat zichtbaar is?
+In dit voorbeeld hoort de screenreadergebruiker 'Ga verder' en ziet een ziende gebruiker 'Stop'.
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<button onclick="doe-iets" aria-label="Ga verder">Stop</button>
+```
+
+Zijn de aria-labels goed vertaald? Aria-labels moeten in de taal van de website geschreven zijn. Bij een meertalige website moeten dus ook de aria-labels vertaald zijn.
+
+```html
+<!-- Dit is fout als de website in het Nederlands is  -->
+<button onclick="doe-iets" class="fa fa-search" aria-label="Search this site"></button>
+```
+
+### Check de semantische rol en waarde
+
+Een HTML-element heeft van zichzelf al een rol en indien van toepassing een waarde.
+Controleer of HTML van interactieve elementen goed gebruikt wordt. Vaak worden bijvoorbeeld links en buttons door elkaar gehaald.
+
+Bijvoorbeeld: verkeerd gebruik van een link in plaats van een button:
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<a onclick="doe-iets">Klik hier</a>
+```
+
+Wordt er een rol toegekend aan een element dat een totaal andere rol heeft?
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<h1 role="button">Klik hier</h1>
+```
+Regel is om de rol van een element niet aan te passen, maar er zijn uitzonderingen zoals bijvoorbeeld.
+- `<form role="search">` voor een zoekformulier
+- `<button type="button" role="switch" aria-checked="true">` voor een uit/uit-schakelaar.
+
+### Controleer of een state dynamisch wordt aangepast
+
+Een paar voorbeelden:
+
+- Staat er het attribuut `aria-expanded` in een button, verandert de waarde van `false` naar `true` bij het openen of sluiten van de gerelateerde component?
+- Wordt de waarde van `aria-current="page"` aangepast als de link niet meer de huidige pagina is?
+
+### Controleer bij webcomponenten of ARIA goed is toegepast
+
+Het toekennen van een rol betekent niet dat alle toetsenbord en screenreader interactie meteen goed werkt.
+`<div role="button">Klik hier</div>` alleen is onvoldoende om de div als button te laten werken.
+
+### Controleer op typefouten en ongeldige waardes voor ARIA-attributen
+
+Typefouten zoals `aria-lable`, `treu', 'role="presenational' zijn niet ongewoon. [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert deze fouten.
+
+## Veelgemaakte fouten
+
+### Foute toegankelijke naam voor link op een afbeelding
+
+Een link naar de voorpagina die een afbeelding van het logo bevat.
+Hierbij is de alt-tekst bijvoorbeeld: "Logo gemeente Voorbeeld".
+
+In code:
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<a href="link-url">
+  <img src="img-url" alt="Logo gemeente Voorbeeld" />
+</a>
+```
+
+De toegankelijke naam van de link is in dit geval de alt-tekst en de linktekst wordt dus 'Logo gemeente Voorbeeld'.
+Dit is geen goede toegankelijke naam. De naam beschrijft niet waar de link naar toe gaat.
+
+Een goede oplossing is de alt-tekst te wijzigen in 'Gemeente Voorbeeld logo, naar de homepagina'.
+
+```html
+<a href="link-url">
+  <img src="img-url" alt="Gemeente Voorbeeld logo, naar de homepagina" />
+</a>
+```
+
+Dan vertel je wat er op de afbeelding staat en waar de link naar toe gaat.
+VoiceOver leest voor: 'Link, afbeelding, Gemeente Voorbeeld logo, naar de voorpagina'
+
+### De aria-expanded toggle staat niet op de button maar op het menu
+
+Het ARIA-atribuut `aria-expanded` is bedoeld om aan te geven of een menu, dialog of accordeon open of dicht is.
+Een veel voorkomende fout is dat deze toggle op de component zelf staat en niet op de button die het open of sluit. Dit lijkt logisch want dat element is al dan niet zichtbaar. Maar een blinde screenreader gebruiker kan zo nooit ontdekken want de state is.
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<button>Menu</button>
+<div id="hamburger" aria-expanded="false">[...]</div>
+```
+
+Oplossing: zet de toggle aria-expanded="true/false" op de button, omdat deze state bij de button wordt voorgelezen.
+
+```html
+<button aria-expanded="false">Menu</button>
+<div id="hamburger">[...]</div>
+```
 
 <WCAGFooterInfo />
