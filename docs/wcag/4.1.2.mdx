@@ -1,0 +1,107 @@
+---
+title: WCAG Succescriterium 4.1.2 Naam, rol, waarde
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 4.1.2 Naam, rol, waarde
+pagination_label: WCAG Succescriterium 4.1.2 Naam, rol, waarde
+description: Wanneer een gebruiker een formulier invult met juridische, financiële of persoonlijke gegevens, zorg er dan voor dat gebruiker de ingevulde gegevens kan controleren en corrigeren.
+slug: 4.1.2
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+
+# WCAG Succescriterium 4.1.2 Naam, rol, waarde
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">4.1.2 Name, role, value</span>](https://www.w3.org/TR/WCAG22/#name-role-value).
+- Nederlandse vertaling van het WCAG-succescriterium: [4.1.2 Naam, rol, waarde](https://www.w3.org/Translations/WCAG21-nl/#naam-rol-waarde).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html).
+
+## Korte samenvatting
+
+Geef interactieve elementen zoals buttons, links en formuliervelden een toegankelijke naam, een bijpassende rol, toestand (state), eigenschappen en een waarde.
+
+Waarom is dit nodig? Gebruikers van een screenreader krijgen deze informatie voorgelezen en weten zo hoe een interactief element te bedienen en wat de huidige status is.
+Voor stembesturing is het belangrijk dat een element te activeren is, dit kan door de toegankelijke naam uit te spreken.
+
+We geven een paar voorbeelden.
+
+### Radiobutton
+In een formulier kun je je favoriete kleur kiezen uit een paar kleuren.
+Een geselecteerde radiobutton (keuzerondje) heeft de naam 'Blauw', de rol van 'radio' en de state is 'checked'.
+De naam komt van het label, de rol komt door het inputelement type="radio" te geven en de waarde checked wordt door de browser gezet als de gebruiker `Blauw` selecteert.
+
+In code:
+```
+<input id="kleur1" type="radio">
+<label for="kleur1">Blauw</label>
+```
+De screenreader VoiceOver leest dan voor: 'Blauw, geselecteerd, keuzerondje'.
+Deze informatie kun je ook terugvinden in de zogenaamde [accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree).
+
+Chrome laat voor dit voorbeeld zien voor het inputveld:
+- Name: Blauw
+- From label (for=attribute): label Blauw
+- Role: radio
+- Checked: true
+
+screenshot a11y tree
+
+### Link naar de contactpagina
+
+De linktekst 'Contact' is de toegankelijke naam, de rol is link en de waarde is de url 'https://nldesignsystem.nl/project/kernteam'
+
+ code:
+```
+<a href="https://nldesignsystem.nl/project/kernteam">Contact</a>
+```
+De screenreader VoiceOver leest dan voor: 'Link, contact'. En als de link al een keer aangeklikt is: 'Bezocht, Link, contact'
+
+
+### Een button voor het openen en sluiten van een menu.
+
+In dit voorbeeld heeft de button (knop) de toegankelijke naam 'Menu', de rol van button en de state expanded (open) of collapsed (gesloten).
+
+Code voor het gesloten menu.
+```
+<button aria-expanded="false">Menu</button>
+```
+De screenreader VoiceOver leest dan voor: 'Menu, samengevouwen, knop'.
+screenshot
+
+Code voor het open menu
+```
+<button aria-expanded="true">Menu</button>
+```
+De screenreader VoiceOver leest dan voor: 'Menu, uitgevouwen, knop'.
+
+De accessibility tree van Chrome vermeldt:
+- Name: Menu
+- Contents: "Menu"
+- Role: button
+- Expanded: true
+
+**Let op**: Bij het gebruik van HTML is de rol al gedefinieerd voor de browser en hoef je geen rol toe te voegen. Gebruik je op maat gemaakte webcomponenten zonder gebruik te maken van HTML, dan zul je de naam, rol en waarde met ARIA en de toetsenbordinteractie met bijvoorbeeld JavaScript moeten toevoegen.
+
+
+## Gerelateerde NL Design System-richtlijnen
+
+Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief
+## Bronnen
+
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+
+<WCAGFooterInfo />
