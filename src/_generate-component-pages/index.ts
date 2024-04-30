@@ -45,9 +45,7 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
 
   const story = storyTemplate && {
     label: `https://nl-design-system.github.io/themes/`,
-    href: `https://nl-design-system.github.io/themes/?path=/docs/${id}--${storyTemplate.organisation
-      .replace(/\s/g, '-')
-      .toLowerCase()}`,
+    href: `https://nl-design-system.github.io/themes/iframe.html?viewMode=story&id=${id}--utrecht`,
   };
 
   //nl-design-system.github.io/themes/iframe.html?args=appearance:primary-action-button&id=button--gemeente-utrecht&viewMode=story
