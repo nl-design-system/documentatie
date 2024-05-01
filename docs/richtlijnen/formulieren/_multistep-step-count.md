@@ -20,5 +20,5 @@ De stappen kort uitschrijven als tekst heeft de voorkeur boven een visuele weerg
 Het duidelijk aangeven van het aantal stappen en de huidige locatie binnen de stappen is nodig om te voldoen de WCAG-succescriteria:
 
 - [1.3.2 Betekenisvolle volgorde](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html) (niveau A).
-- [2.4.2 Paginatitel](https://www.w3.org/WAI/WCAG22/Understanding/page-titled) (niveau A), deze richtlijn geldt ook voor dynamische pagina’s.
+- [2.4.2 Paginatitel](/wcag/2.4.2) (niveau A), deze richtlijn geldt ook voor dynamische pagina’s.
 - [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html) (niveau AA)
