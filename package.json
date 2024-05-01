@@ -82,7 +82,7 @@
     "@fontsource/fira-sans": "5.0.19",
     "@fontsource/open-sans": "5.0.27",
     "@fontsource/source-sans-pro": "5.0.8",
-    "@lerna-lite/cli": "3.3.2",
+    "@lerna-lite/cli": "3.3.3",
     "@lerna-lite/publish": "3.3.2",
     "@lerna-lite/run": "3.3.2",
     "@lerna-lite/version": "3.3.2",
