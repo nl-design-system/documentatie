@@ -127,8 +127,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
       '@utrecht/web-component-library-stencil':
-        specifier: 1.1.1-alpha.27
-        version: 1.1.1-alpha.27
+        specifier: 1.1.1-alpha.30
+        version: 1.1.1-alpha.30
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -4140,8 +4140,8 @@ packages:
       '@stencil/core': 4.5.0
     dev: true
 
-  /@utrecht/web-component-library-stencil@1.1.1-alpha.27:
-    resolution: {integrity: sha512-31ngMbeusXiwGXg5nUvxqJWaTx2jIGhRnwQQ7ioYq8DcOZN7PNdlrzsx8FHpmcT9DQVyPLk8OCFPfRMbD3tptQ==}
+  /@utrecht/web-component-library-stencil@1.1.1-alpha.30:
+    resolution: {integrity: sha512-gkme+YnN6lEeesRDjz8Jes2C18E++rhrP+K2UDzTS0JJ77tkTROsjAOUnuI5K/YQpzUe72ZmXgrUokgJCLMevQ==}
     dependencies:
       '@stencil/core': 4.8.2
     dev: true
