@@ -21,8 +21,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(@algolia/client-search@4.22.1)(@docusaurus/types@3.1.0)(@types/react@18.2.55)(eslint@8.57.0)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)(typescript@5.4.3)
       '@tabler/icons-react':
-        specifier: 3.1.0
-        version: 3.1.0(react@18.2.0)
+        specifier: 3.3.0
+        version: 3.3.0(react@18.2.0)
       '@utrecht/design-tokens':
         specifier: 1.0.0-alpha.640
         version: 1.0.0-alpha.640
@@ -3604,17 +3604,17 @@ packages:
     dependencies:
       defer-to-connect: 2.0.1
 
-  /@tabler/icons-react@3.1.0(react@18.2.0):
-    resolution: {integrity: sha512-k/WTlax2vbj/LpxvaJ+BmaLAAhVUgyLj4Ftgaczz66tUSNzqrAZXCFdOU7cRMYPNVBqyqE2IdQd2rzzhDEJvkw==}
+  /@tabler/icons-react@3.3.0(react@18.2.0):
+    resolution: {integrity: sha512-Qn1Po+0gErh1zCWlaOdoVoGqeonWfSuiboYgwZBs6PIJNsj7yr3bIa4BkHmgJgtlXLT9LvCzt/RvwlgjxLfjjg==}
     peerDependencies:
       react: '>= 16'
     dependencies:
-      '@tabler/icons': 3.1.0
+      '@tabler/icons': 3.3.0
       react: 18.2.0
     dev: false
 
-  /@tabler/icons@3.1.0:
-    resolution: {integrity: sha512-CpZGyS1IVJKFcv88yZ2sYZIpWWhQ6oy76BQKQ5SF0fGgOqgyqKdBGG/YGyyMW632on37MX7VqQIMTzN/uQqmFg==}
+  /@tabler/icons@3.3.0:
+    resolution: {integrity: sha512-PLVe9d7b59sKytbx00KgeGhQG3N176Ezv8YMmsnSz4s0ifDzMWlp/h2wEfQZ0ZNe8e377GY2OW6kovUe3Rnd0g==}
     dev: false
 
   /@tootallnate/once@2.0.0:
