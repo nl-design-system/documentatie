@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.4 Linkdoel (in context)
 pagination_label: WCAG Succescriterium 2.4.4 Linkdoel (in context)
-description: Alle gebruikers moeten over dezelfde informatie kunnen beschikken.
+description: De linktekst vertelt aan de gebruiker waar de link naar toe gaat (het linkdoel).
 slug: 2.4.4
 keywords:
   - WCAG
@@ -24,7 +24,7 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
-## Korte samenvatting
+## Uitleg
 
 De linktekst vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).
 
@@ -47,7 +47,7 @@ Dit kan door gebruik te maken van CSS-classes zoals [.sr-only](https://tailwindc
 In code:
 
 ```html
-<a href="url">Lees meer<span class="sr-only"> over Warmtepompen</a>.
+<a href="url">Lees meer<span class="sr-only"> over warmtepompen</a>.
 ```
 
 Of door het toevoegen van een aria-label` aan de link.
@@ -119,5 +119,33 @@ Deze constructie om een card te linken is een ramp om naar te luisteren met een 
 Mogelijke oplossingen:
 
 Florian Schroiff beschrijft hoe een card aanklikbaar te maken via CSS met een [pseudo-element link overlay](https://www.frontendbbq.com/articles/accessible-teaser). In de Youtube video [What makes an accessible card?](https://www.youtube.com/watch?v=AH2NagMoYYE) onderzoekt Rian Rietveld de manieren om een card zo toegankelijk mogelijk te maken.
+
+### Fout: Verkeerde linktekst voor een link met een afbeelding
+
+Een link naar de voorpagina die een afbeelding van het logo bevat in de header is een bekend patroon.
+Een veel voorkomende fout is bijvoorbeeld de alt-tekst "Logo gemeente Voorbeeld".
+De alt-tekst beschrijft de afbeelding. Maar de alt tekst is hier ook de toegankelijke naam van de link.
+In code:
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<a href="link-url">
+  <img src="img-url" alt="Logo gemeente Voorbeeld" />
+</a>
+```
+
+De toegankelijke naam van de link is in dit geval de alt-tekst en de linktekst wordt dus 'Logo gemeente Voorbeeld'.
+Dit is geen goede toegankelijke naam. De naam beschrijft niet waar de link naar toe gaat.
+
+Een goede oplossing is de alt-tekst te wijzigen in 'Gemeente Voorbeeld logo, naar de homepagina'.
+
+```html
+<a href="link-url">
+  <img src="img-url" alt="Gemeente Voorbeeld logo, naar de homepagina" />
+</a>
+```
+
+Dan vertel je wat er op de afbeelding staat en waar de link naar toe gaat.
+VoiceOver leest voor: 'Link, afbeelding, Gemeente Voorbeeld logo, naar de voorpagina'.
 
 <WCAGFooterInfo />
