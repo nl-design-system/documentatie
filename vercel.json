@@ -1,7 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "git": {
     "deploymentEnabled": {
       "assets": false
     }
-  }
+  },
+  "ignoreCommand": "[[ $(git log -1 --pretty=%an) == 'dependabot[bot]' ]]"
 }
