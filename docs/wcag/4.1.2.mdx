@@ -114,6 +114,43 @@ De accessibility tree van Chrome vermeldt voor de button:
 - Role: button
 - Expanded: true
 
+### Wat is de huidige pagina of stap?
+
+Met [aria-current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current) kun je aangeven wat de huidige pagina is of de huidige stap in een proces is. Een screenreader leest dit voor bij de link of stap.
+
+Bijvoorbeeld bij het menu, als de huidige pagina voor de contactpagina is, in code:
+
+```html
+<ul>
+  <li><a href="url">Home</a></li>
+  <li><a href="url">About us</a></li>
+  <li><a href="url" aria-current="page">Contact</a></li>
+</ul>
+```
+
+En om aan te geven in welke stap de gebruiker is in een .
+
+```html
+<ul>
+  <li>Stap 1</li>
+  <li aria-current="step">Stap 2</li>
+  <li>Stap 3</li>
+</ul>
+```
+
+Het voordeel hiervan is ook dat je CSS aan aria-current states kunt toekennen.
+Je hebt dan geen speciale 'active" CSS-class meer nodig.
+
+In CSS:
+
+```css
+[aria-current]:not([aria-current="false"]) {
+  font-weight: bold;
+}
+```
+
+Dus in plaats van alleen visueel de state aan te geven met bijvoorbeeld `class="active"`, maak je nu voor iedereen duidelijk wat het actieve menu-item is, door de CSS alleen aan aria-current toe te kennen.
+
 ## Gerelateerde NL Design System-richtlijnen
 
 - Formulieren - Buttons: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons#de-toegankelijke-naam-van-een-button).
