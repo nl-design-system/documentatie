@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.6ea80038.css" />
-  <script src="/en/assets/js/runtime~main.8bf5db28.js" defer="defer"></script>
-  <script src="/en/assets/js/main.53f43055.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.cb11c7d0.js" defer="defer"></script>
+  <script src="/en/assets/js/main.c26aa594.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -518,6 +518,16 @@
               <p>Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-side validatie toe te voegen.</p>
               <p>Om specifiek aan hulptechnologieën te communiceren dat een veld verplicht is, kan <code class="utrecht-code">aria-required</code> worden gebruikt. Als je alleen <code class="utrecht-code">aria-required</code> gebruikt, zal de browser niet zelf valideren of feedback geven.</p>
               <p>Het toegankelijk maken van foutmeldingen is nodig om te voldoen aan het WCAG-succescriterium <a href="/wcag/3.3.1/" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</p>
+              <h3 id="progressive-enhancement" class="utrecht-heading-3">Progressive enhancement</h3>
+              <p>Alhoewel we HTML-formuliervalidatie afraden en niet als eindoplossing zien, kan het nuttig zijn om te gebruiken als fallback bij een slechte internetverbinding als er nog geen JavaScript beschikbaar is.</p>
+              <p>Deze optie geldt alleen voor formulieren waarbij de foutmeldingen worden afgehandeld door JavaScript.</p>
+              <p>De opzet is dan als volgt:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Bij de formuliervelden wordt het attribuut <code class="utrecht-code">required</code> gebruikt in plaats van &#x27;aria-required`.</li>
+               <li class="utrecht-unordered-list__item">Zodra de JavaScript wordt ingeladen wordt meteen het attribuut <code class="utrecht-code">novalidate</code> toegevoegd aan het <code class="utrecht-code">&lt;form&gt;</code> element om de HTML-validatie uit te schakelen.</li>
+              </ul>
+              <p>Dan voorkom je dat gebruikers met een slechte internetverbinding niet op tijd worden geïnformeerd over fouten in het formulier.</p>
+              <p>Dit is een optie en geen vereiste. Uiteindelijk is een op maat gemaakte server side eind-validatie van de formuliervelden het meest betrouwbaar en toegankelijk en daardoor de richtlijn.</p>
               <h2 id="zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-heading-2">Zet een samenvatting van de foutmeldingen boven het formulier</h2>
               <p>Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:</p>
               <ul role="list" class="utrecht-unordered-list">
@@ -621,7 +631,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  [...]</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">head</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
-              <p>Het geven van een beschrijvend <code class="utrecht-code">&lt;title&gt;</code>-element is nodig om te voldoen aan het WCAG-succescriterium <a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html" class="utrecht-link utrecht-link--html-a">2.4.2 Paginatitel</a> (niveau A).</p>
+              <p>Het geven van een beschrijvend <code class="utrecht-code">&lt;title&gt;</code>-element is nodig om te voldoen aan het WCAG-succescriterium <a href="/wcag/2.4.2" class="utrecht-link utrecht-link--html-a">2.4.2 Paginatitel</a> (niveau A).</p>
               <h2 id="over-deze-richtlijnen" class="utrecht-heading-2">Over deze richtlijnen</h2>
               <p>Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in <em class="utrecht-emphasis utrecht-emphasis--stressed">beta</em>.</p>
               <p>We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/discussions/473" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a> met je suggesties.</p>

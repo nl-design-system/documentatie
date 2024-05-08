@@ -3,29 +3,29 @@
  [3411],
  {
   12921: (e, n, i) => {
-   i.d(n, { ZP: () => l });
+   i.d(n, { ZP: () => t });
    var s = i(11527),
     r = i(80877);
-   function t(e) {
+   function l(e) {
     const n = { a: "a", em: "em", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "over-deze-richtlijnen", children: "Over deze richtlijnen" }), "\n", (0, s.jsxs)(n.p, { children: ["Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in ", (0, s.jsx)(n.em, { children: "beta" }), "."] }), "\n", (0, s.jsxs)(n.p, { children: ["We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? ", (0, s.jsx)(n.a, { href: "https://github.com/nl-design-system/documentatie/discussions/473", children: "Deel je mening op GitHub" }), " met je suggesties."] })] });
    }
-   function l(e = {}) {
+   function t(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(t, { ...e }) }) : t(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(l, { ...e }) }) : l(e);
    }
   },
   57484: (e, n, i) => {
    i.r(n), i.d(n, { assets: () => k, contentTitle: () => x, default: () => w, frontMatter: () => b, metadata: () => f, toc: () => _ });
    var s = i(11527),
     r = i(80877);
-   function t(e) {
+   function l(e) {
     const n = { a: "a", code: "code", h2: "h2", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "\n", (0, s.jsx)(n.p, { children: "Net zoals bij de foutmeldingen is het belangrijk dat de gebruiker de succesmelding ziet en/of hoort. Dit kan met dezelfde technieken die zijn beschrijven bij de [url foutmeldingen](weergave van de foutmeldingen) zoals:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "Screenreaderfeedback en focusmanagement na submit." }), "\n", (0, s.jsxs)(n.li, { children: ["Update van de ", (0, s.jsx)(n.code, { children: "<title>" }), " in het ", (0, s.jsx)(n.code, { children: "<head>" }), "-element."] }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "De succesmelding toegankelijk te maken voor alle gebruikers is nodig om te voldoen aan de WCAG-succescriteria:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "/wcag/1.3.1", children: "1.3.1 Info en relaties" }), " (niveau A)."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html", children: "2.4.2 Paginatitel" }), " (niveau A)."] }), "\n"] })] });
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { id: "maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "\n", (0, s.jsxs)(n.p, { children: ["Net zoals bij de foutmeldingen is het belangrijk dat de gebruiker de succesmelding ziet en/of hoort. Dit kan met dezelfde technieken die zijn beschrijven bij de richtlijnen voor ", (0, s.jsx)(n.a, { href: "/richtlijnen/formulieren/foutmeldingen", children: "foutmeldingen" }), " zoals:"] }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsx)(n.li, { children: "Screenreaderfeedback en focusmanagement na submit." }), "\n", (0, s.jsxs)(n.li, { children: ["Update van de ", (0, s.jsx)(n.code, { children: "<title>" }), " in het ", (0, s.jsx)(n.code, { children: "<head>" }), "-element."] }), "\n"] }), "\n", (0, s.jsx)(n.p, { children: "De succesmelding toegankelijk te maken voor alle gebruikers is nodig om te voldoen aan de WCAG-succescriteria:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "/wcag/1.3.1", children: "1.3.1 Info en relaties" }), " (niveau A)."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "/wcag/2.4.2", children: "2.4.2 Paginatitel" }), " (niveau A)."] }), "\n"] })] });
    }
-   function l(e = {}) {
+   function t(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(t, { ...e }) }) : t(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(l, { ...e }) }) : l(e);
    }
    function o(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
@@ -37,13 +37,13 @@
    }
    var c = i(65477),
     d = i(32957);
-   function g(e) {
+   function u(e) {
     const n = { div: "div", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(d.X, { appearance: "do", title: "Informeren dat het formulier is verzonden en wat de vervolgacties zijn.", children: (0, s.jsx)(c.X, { language: "html", children: () => (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.p, { children: "Uw vraag is met succes verstuurd. Zaaknummer 123456789." }), (0, s.jsx)(n.p, { children: "Wat gaat er nu gebeuren?" }), (0, s.jsxs)(n.ul, { children: [(0, s.jsx)(n.li, { children: "U ontvangt een bevestigingsmail op gebruiker@voorbeeld.com" }), (0, s.jsx)(n.li, { children: "De afdeling Vraagbaak gaat met uw vraag aan de slag." }), (0, s.jsx)(n.li, { children: "U wordt per e-mail op de hoogte gehouden maar kunt de voortgang ook inzien binnen uw Mijn omgeving." })] })] }) }) }), "\n", (0, s.jsx)(d.X, { appearance: "dont", title: "Vervolgstappen weglaten.", children: (0, s.jsx)(c.X, { language: "html", children: () => (0, s.jsx)(n.p, { children: "Uw vraag is verstuurd." }) }) })] });
    }
-   function u(e = {}) {
+   function g(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(g, { ...e }) }) : g(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(u, { ...e }) }) : u(e);
    }
    function m(e) {
     const n = { a: "a", h2: "h2", p: "p", ...(0, r.a)(), ...e.components };
@@ -69,7 +69,7 @@
     _ = [];
    function y(e) {
     const n = { a: "a", h1: "h1", li: "li", p: "p", ul: "ul", ...(0, r.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "bevestigingspagina-van-een-formulier", children: "Bevestigingspagina van een formulier" }), "\n", (0, s.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, s.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vermeld-dat-het-formulier-succesvol-is-verzonden", children: "Vermeld dat het formulier succesvol is verzonden" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vertel-wat-de-vervolgacties-zijn", children: "Vertel wat de vervolgacties zijn" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "."] }), "\n"] }), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(l, {}), "\n", (0, s.jsx)(v, {}), "\n", (0, s.jsx)(u, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(j.ZP, {})] });
+    return (0, s.jsxs)(s.Fragment, { children: ["\n", "\n", "\n", (0, s.jsx)(n.h1, { id: "bevestigingspagina-van-een-formulier", children: "Bevestigingspagina van een formulier" }), "\n", (0, s.jsx)(n.p, { children: "Een bevestigingspagina informeert gebruikers dat hun data met succes is verstuurd en wat de eventuele vervolgacties zijn." }), "\n", (0, s.jsx)(n.p, { children: "Belangrijk voor het informeren van de gebruiker is hierbij:" }), "\n", (0, s.jsxs)(n.ul, { children: ["\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vermeld-dat-het-formulier-succesvol-is-verzonden", children: "Vermeld dat het formulier succesvol is verzonden" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#maak-de-succesmelding-toegankelijk-voor-alle-gebruikers", children: "Maak de succesmelding toegankelijk voor alle gebruikers" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#vertel-wat-de-vervolgacties-zijn", children: "Vertel wat de vervolgacties zijn" }), "."] }), "\n", (0, s.jsxs)(n.li, { children: [(0, s.jsx)(n.a, { href: "#zorg-dat-de-gebruiker-contact-op-kan-nemen-bij-vragen", children: "Zorg dat de gebruiker contact op kan nemen bij vragen" }), "."] }), "\n"] }), "\n", (0, s.jsx)(h, {}), "\n", (0, s.jsx)(t, {}), "\n", (0, s.jsx)(v, {}), "\n", (0, s.jsx)(g, {}), "\n", (0, s.jsx)(a, {}), "\n", (0, s.jsx)(j.ZP, {})] });
    }
    function w(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -80,41 +80,41 @@
    i.d(n, { X: () => b });
    var s = i(16532),
     r = i(86259),
-    t = i(28942),
-    l = i(76653),
+    l = i(28942),
+    t = i(76653),
     o = i(33691),
     a = i(99821),
     c = i(64663),
     d = i(50959),
-    g = i(9995);
-   const u = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
+    u = i(9995);
+   const g = { "nlds-canvas": "nlds-canvas_h8Yz", "nlds-canvas--distanced": "nlds-canvas--distanced_BU4b", "nlds-canvas__example": "nlds-canvas__example_sS53", "nlds-canvas__example-document": "nlds-canvas__example-document_cR3e", "nlds-canvas__code-block--user-select-none": "nlds-canvas__code-block--user-select-none_Jv1j", "nlds-canvas__toolbar": "nlds-canvas__toolbar_AMcV", "nlds-canvas__button": "nlds-canvas__button_cHBw" };
    var m = i(41179),
     v = i(11527);
    const p = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: (0, v.jsx)(s.nv, { className: u["nlds-canvas__example-paragraph"], children: n }) }) });
+    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", g["nlds-canvas__example-document"]), children: (0, v.jsx)(s.nv, { className: g["nlds-canvas__example-paragraph"], children: n }) }) });
    };
    p.displayName = "ParagraphContainer";
    const h = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", u["nlds-canvas__example-document"]), children: n }) });
+    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: (0, v.jsx)(s.BB, { className: (0, r.Z)("utrecht-document--surface", g["nlds-canvas__example-document"]), children: n }) });
    };
    h.displayName = "DocumentContainer";
    const j = (e) => {
     let { children: n } = e;
-    return (0, v.jsx)(s.Tg, { className: u["nlds-canvas__example-surface"], children: n });
+    return (0, v.jsx)(s.Tg, { className: g["nlds-canvas__example-surface"], children: n });
    };
    j.displayName = "SurfaceContainer";
    const b = (e) => {
     let { code: n, copy: i = !1, defaultExpandedCode: b = !1, displayCode: x = !0, children: f, container: k = "document", language: _, designTokens: y } = e,
      w = "function" == typeof f ? f() : f,
      z = "function" == typeof n ? n() : (0, d.isValidElement)(n) ? n : void 0,
-     N = "string" == typeof n ? n : g.uS(z || w),
-     [Z, C] = (0, d.useState)(N),
-     [B, D] = (0, d.useState)(b);
+     N = "string" == typeof n ? n : u.uS(z || w),
+     [Z, B] = (0, d.useState)(N),
+     [C, D] = (0, d.useState)(b);
     (0, d.useEffect)(() => {
      (async () => {
-      (Z = await c.ZP.format(N, { parser: _, plugins: [t.Z, l.ZP, o.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), C(Z);
+      (Z = await c.ZP.format(N, { parser: _, plugins: [l.Z, t.ZP, o.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: "off", htmlWhitespaceSensitivity: "ignore" })), B(Z);
      })();
     }, [N]);
     const S = (0, d.useId)();
@@ -122,35 +122,35 @@
     return (
      "paragraph" === k ? (P = p) : "document" === k ? (P = h) : "surface" === k && (P = j),
      (0, v.jsxs)("div", {
-      className: (0, r.Z)(u["nlds-canvas"]),
+      className: (0, r.Z)(g["nlds-canvas"]),
       children: [
-       w && (0, v.jsx)("div", { className: (0, r.Z)(u["nlds-canvas__example"]), children: (0, v.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, v.jsx)(P, { children: (0, v.jsx)(s.pu, { children: w }) }) }) }),
+       w && (0, v.jsx)("div", { className: (0, r.Z)(g["nlds-canvas__example"]), children: (0, v.jsx)("div", { className: "voorbeeld-theme", style: y, children: (0, v.jsx)(P, { children: (0, v.jsx)(s.pu, { children: w }) }) }) }),
        x &&
         (0, v.jsx)("div", {
-         className: (0, r.Z)(u["nlds-canvas__toolbar"]),
+         className: (0, r.Z)(g["nlds-canvas__toolbar"]),
          children: (0, v.jsx)(s.zx, {
-          className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__toggle-code-button"]),
+          className: (0, r.Z)(g["nlds-canvas__button"], g["nlds-canvas__toggle-code-button"]),
           appearance: "subtle-button",
           onClick: () => {
-           D(!B);
+           D(!C);
           },
-          "aria-expanded": B,
+          "aria-expanded": C,
           "aria-controls": S,
-          children: B ? "Verberg code" : "Bekijk code",
+          children: C ? "Verberg code" : "Bekijk code",
          }),
         }),
        x &&
         (0, v.jsxs)("div", {
-         className: (0, r.Z)(u["nlds-canvas__code-block"], !i && u["nlds-canvas__code-block--user-select-none"]),
+         className: (0, r.Z)(g["nlds-canvas__code-block"], !i && g["nlds-canvas__code-block--user-select-none"]),
          id: S,
-         hidden: !B,
+         hidden: !C,
          children: [
           (0, v.jsx)(m.u, { syntax: _, textContent: Z, trim: !0 }),
           i &&
            (0, v.jsx)("div", {
-            className: (0, r.Z)(u["nlds-canvas__toolbar"]),
+            className: (0, r.Z)(g["nlds-canvas__toolbar"]),
             children: (0, v.jsx)(s.zx, {
-             className: (0, r.Z)(u["nlds-canvas__button"], u["nlds-canvas__copy-button"]),
+             className: (0, r.Z)(g["nlds-canvas__button"], g["nlds-canvas__copy-button"]),
              appearance: "subtle-button",
              onClick: () => {
               navigator.clipboard.writeText(Z).catch((e) => console.error("Copy code failed", e));
@@ -170,7 +170,7 @@
    var s = i(16532),
     r = i(2425);
    i(50959);
-   const t = {
+   const l = {
     plain: { color: "var(--nlds-code-block-color)", backgroundColor: "var(--nlds-code-block-background-color)" },
     styles: [
      { types: ["comment"], style: { color: "var(--nlds-code-block-comment-color)", fontStyle: "italic" } },
@@ -206,19 +206,19 @@
      { types: ["italic"], style: { fontStyle: "italic" } },
     ],
    };
-   var l = i(11527);
+   var t = i(11527);
    function o(e) {
     let { lineNumber: n, syntax: i, textContent: o, trim: a } = e,
      c = o;
     return (
      a && (c = c.trim()),
-     (0, l.jsx)(r.y$, {
-      theme: t,
+     (0, t.jsx)(r.y$, {
+      theme: l,
       code: c,
       language: i || "",
       children: (e) => {
-       let { style: i, tokens: r, getLineProps: t, getTokenProps: o } = e;
-       return (0, l.jsx)(s.dn, { style: i, children: r.map((e, i) => (0, l.jsxs)("span", { ...t({ line: e }), children: [n && (0, l.jsx)("span", { children: i + 1 }), e.map((e, n) => (0, l.jsx)("span", { ...o({ token: e }) }, n)), "\n"] }, i)) });
+       let { style: i, tokens: r, getLineProps: l, getTokenProps: o } = e;
+       return (0, t.jsx)(s.dn, { style: i, children: r.map((e, i) => (0, t.jsxs)("span", { ...l({ line: e }), children: [n && (0, t.jsx)("span", { children: i + 1 }), e.map((e, n) => (0, t.jsx)("span", { ...o({ token: e }) }, n)), "\n"] }, i)) });
       },
      })
     );
@@ -228,27 +228,27 @@
    i.d(n, { X: () => c });
    var s = i(78574),
     r = i(46835),
-    t = i(16532),
-    l = i(86259);
+    l = i(16532),
+    t = i(86259);
    i(50959);
    const o = { "nlds-guideline": "nlds-guideline_tEmj", "nlds-guideline__description": "nlds-guideline__description_Rmd2", "nlds-guideline__example": "nlds-guideline__example_Npzh", "nlds-guideline__icon": "nlds-guideline__icon_CMAh", "nlds-guideline__title": "nlds-guideline__title_Kp8d", "nlds-guideline__badge": "nlds-guideline__badge_cDbY", "nlds-guideline__badge--dont": "nlds-guideline__badge--dont_w4Jz", "nlds-guideline__badge--do": "nlds-guideline__badge--do_wylG" };
    var a = i(11527);
    const c = (e) => {
-    let { title: n, appearance: i, description: c, children: d, figure: g } = e;
-    const u = "Doen",
+    let { title: n, appearance: i, description: c, children: d, figure: u } = e;
+    const g = "Doen",
      m = "Niet doen",
-     v = g ? "figure" : "div",
-     p = g ? "figcaption" : "div";
-    return (0, a.jsxs)(v, { className: (0, l.Z)(o["nlds-guideline"], o[`nlds-guideline--${i}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, l.Z)(o["nlds-guideline__description"]), children: ["dont" === i ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(s.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: m })] }), (0, a.jsx)(t.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, l.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: u })] }), (0, a.jsx)(t.nv, { children: n })] }), c] }), (0, a.jsx)("div", { className: (0, l.Z)(o["nlds-guideline__example"]), children: d })] });
+     v = u ? "figure" : "div",
+     p = u ? "figcaption" : "div";
+    return (0, a.jsxs)(v, { className: (0, t.Z)(o["nlds-guideline"], o[`nlds-guideline--${i}`]), id: "string" == typeof n ? n?.toLowerCase().replace(/\s/g, "-") : void 0, children: [(0, a.jsxs)(p, { className: (0, t.Z)(o["nlds-guideline__description"]), children: ["dont" === i ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(l.nv, { className: (0, t.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(s.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: m })] }), (0, a.jsx)(l.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(l.nv, { className: (0, t.Z)(o["nlds-guideline__badge"], o[`nlds-guideline__badge--${i}`]), children: [(0, a.jsx)(r.Z, { className: o["nlds-guideline__icon"] }), (0, a.jsx)("span", { className: o["nlds-guideline__title"], children: g })] }), (0, a.jsx)(l.nv, { children: n })] }), c] }), (0, a.jsx)("div", { className: (0, t.Z)(o["nlds-guideline__example"]), children: d })] });
    };
   },
   80877: (e, n, i) => {
-   i.d(n, { Z: () => o, a: () => l });
+   i.d(n, { Z: () => o, a: () => t });
    var s = i(50959);
    const r = {},
-    t = s.createContext(r);
-   function l(e) {
-    const n = s.useContext(t);
+    l = s.createContext(r);
+   function t(e) {
+    const n = s.useContext(l);
     return s.useMemo(
      function () {
       return "function" == typeof e ? e(n) : { ...n, ...e };
@@ -258,7 +258,7 @@
    }
    function o(e) {
     let n;
-    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(r) : e.components || r) : l(e.components)), s.createElement(t.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(r) : e.components || r) : t(e.components)), s.createElement(l.Provider, { value: n }, e.children);
    }
   },
  },
