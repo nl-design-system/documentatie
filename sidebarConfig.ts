@@ -224,6 +224,8 @@ const sidebars: SidebarsConfig = {
                 title: 'Heartbeat',
                 slug: '/events/heartbeat/overzicht',
               },
+              description:
+                "In onze tweewekelijkse Heartbeat vertellen kernteam en community wat er gaande is. Meld je aan of kijk video's terug.",
               items: [
                 { type: 'doc', id: 'community/events/heartbeat/heartbeat' },
                 { type: 'doc', id: 'community/events/heartbeat/videos' },
@@ -233,6 +235,8 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: 'Design Open Hour',
+              description:
+                'Tijdens het (online) Design Open Hour delen designers van verschillende organisaties kennis.',
               link: {
                 type: 'generated-index',
                 title: 'Design Open Hour',
