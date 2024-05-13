@@ -1,0 +1,101 @@
+---
+title: WCAG Succescriterium 4.1.1 Parsen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 4.1.1 Parsen
+pagination_label: WCAG Succescriterium 4.1.1 Parsen
+description: Zorg dat er geen fouten in de HTML-code zijn.
+slug: 4.1.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+
+# WCAG Succescriterium 4.1.1 Parsen
+
+**Let op**: Dit succescriterium is in WCAG-versie 2.2 vervallen. Maar we vinden het belangrijk hier te vermelden en uit te leggen, omdat het niet goed toepassen grote consequences heeft voor de werking van formuleren.
+
+## W3C referenties WCAG-versie 2.1
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">4.1.1 Parsing</span>](https://www.w3.org/TR/WCAG21/#parsing).
+- Nederlandse vertaling van het WCAG-succescriterium: [4.1.1 Parsen](https://www.w3.org/Translations/WCAG21-nl/#parsen).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#parsing).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html).
+
+## Uitleg
+
+Wat is parsen? Officieel: het analyseren van informatie aan de hand van losse componenten, of het analyseren van de syntax.
+
+Voor WCAG betekent het dat de HTML-code moet kloppen, foutloos moet zijn. Dan werkt een webpagina beter. Vooral voor formulieren is het belangrijk dat ID's uniek zijn op een webpagina. Er zijn 4 criteria gedefinieerd.
+
+### 1. Elementen zijn volgens hun specificaties afgesloten
+
+Denk hier bijvoorbeeld aan paragrafen, headings, divs, spans en andere elementen die een sluittag vereisen.
+Een `<p>` moet afsluiten met een `</p>`.
+
+### 2. Elementen zijn genest volgens hun specificaties
+
+Verkeerd nesten van elementen kan voorkomen bij interactieve elementen: een button die een tweede button bevat.
+Of bij het verkeerd combineren van elementen: een label die een link bevat.
+Daarnaast moeten bijvoorbeeld lists en definition lists goed opgebouwd zijn.
+
+Silvestar Bistrović beschrijft een aantal [<span lang="en">Common nesting issues in HTML</span>](https://www.htmhell.dev/adventcalendar/2022/20/).
+
+### 3. Elementen bevatten geen dubbele attributen
+
+Combineer waardes in attributen en herhaal de attributen zelf niet.
+Bijvoorbeeld voor het toekennen van CSS-classes:
+
+```html
+<!-- Foute code, niet gebruiken -->
+<h1 class="heading" class="x-large">Contact</h1>
+```
+
+Voeg de classes samen, gescheiden door een spatie:
+
+```html
+<h1 class="heading x-large">Contact</h1>
+```
+
+### 4. Alle ID's zijn uniek, behalve waar de specificatie deze eigenschappen toelaat
+
+Dit is voor formulieren belangrijk. Labels en formuliervelden zijn via een ID aan elkaar gekoppeld. Komt een ID meerdere keren voor op een pagina, dan kan het verkeerde label bij een formulierveld worden voorgelezen.
+
+In code:
+
+```html
+<label for="kleur">Wat is je lievelingskleur?</label> <input type="text" id="kleur" name="lievelingskleur" />
+```
+
+Bij de richtlijnen over labels staat hoe deze [for/id relatie](/richtlijnen/formulieren/labels/de-forid-relatie) werkt.
+
+Een ander probleem is het toevoegen van twee keer hetzelfde formulier met hetzelfde formulier-ID, de foutafhandeling staat dan misschien bij het verkeerde formulier.
+CMSsen bieden functies aan om een ID uniek te maken. Bijvoorbeeld voor WordPress [wp_unique_id](https://developer.wordpress.org/reference/functions/wp_unique_id/) en voor Drupal
+[function Html::getUniqueId](https://api.drupal.org/api/drupal/core!lib!Drupal!Component!Utility!Html.php/function/Html%3A%3AgetUniqueId/8.9.x)
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+- Controleer de webpagina op de [Markup Validation Service](https://validator.w3.org/).
+- [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert enkele (maar niet alle) parse-fouten in de HTML.
+
+Voor developers:
+
+- Gebruik een [HTML-linter](https://github.com/caramelomartins/awesome-linters?tab=readme-ov-file#html), of een linter naar keuze die ook voor correcte HTML test.
+- Bij twijfel: check de '<span lang="en">Permitted content</span>' bij de '<span lang="en">Technical Summary</span>' van een HTML-element op de MDN-website. Bijvoorbeeld [de technische samenvatting voor een link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#technical_summary).
+
+## Veelgemaakte fouten
+
+### Fout: meerdere keren hetzelfde Gravity Forms formulier op een webpagina.
+
+De WordPress formulieren-plugin [Gravity Forms](https://docs.gravityforms.com/accessibility-checklist-for-gravity-forms/) geeft elk formulier een eigen ID. Voeg je hetzelfde formulier twee keer toe op een pagina, dan worden de fouten afgehandeld bij het bovenste formulier. Dit is verwarrend als je het net onderste formulier aan het invullen bent.
+Een formulier dat vaak twee keer wordt toegevoegd is een aanmeldformulier voor de nieuwsbrief. Wil je toch hetzelfde formulier meerdere keren op een pagina, maak dan verschillende formulieren hiervoor aan.
+
+<WCAGFooterInfo />
