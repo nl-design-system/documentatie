@@ -205,6 +205,8 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Events',
+          description:
+            'NL Design System organiseert regelmatig events, online en offline, met als doel om samen te werken en kennis te delen.',
           collapsible: true,
           link: {
             type: 'generated-index',
@@ -251,6 +253,7 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'community/events/estafettemodeldag' },
           ],
         },
+        { type: 'doc', id: 'community/sluit-je-aan' },
         { type: 'doc', id: 'community/wie-doet-mee' },
       ],
     },
