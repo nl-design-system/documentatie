@@ -16,6 +16,8 @@ interface NewsletterSignUpProps {
   laPostaId: string;
   emailFieldId: string;
   firstNameFieldId: string;
+  orgId: string;
+  interestsId: string;
   thanksPage: string;
 }
 
@@ -25,6 +27,8 @@ export const NewsletterSignUp = ({
   thanksPage = '',
   emailFieldId = '',
   firstNameFieldId = '',
+  orgId = '',
+  interestsId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -83,6 +87,19 @@ export const NewsletterSignUp = ({
           <Textbox id={firstNameFieldId} name={firstNameFieldId} type="text" autoComplete="given-name" />
         </Paragraph>
       </FormField>
+
+      {orgId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={orgId}>Organisatie (niet verplicht)</FormLabel>
+          </Paragraph>
+          <Paragraph>
+            <Textbox id={orgId} name={orgId} type="text" />
+          </Paragraph>
+        </FormField>
+      )}
+
+      {interestsId && <Paragraph>checkboxes</Paragraph>}
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
