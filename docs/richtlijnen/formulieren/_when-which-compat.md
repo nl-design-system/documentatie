@@ -8,10 +8,10 @@ De ontwikkeling van browsers gaat snel en het gebruik van HTML geeft niet altijd
 
 Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
-- [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG21-nl/#info-en-relaties) (niveau A)
-- [2.1.1 Toetsenbord](/wcag/2.1.1) (niveau A)
-- [2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG21-nl/#koppen-en-labels) (niveau AA)
-- [3.3.2 Labels of Instructies](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) (niveau A)
+- [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG21-nl/#info-en-relaties) (niveau A).
+- [2.1.1 Toetsenbord](/wcag/2.1.1) (niveau A).
+- [2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG21-nl/#koppen-en-labels) (niveau AA).
+- [3.3.2 Labels of Instructies](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) (niveau A).
 - [4.1.2 Naam, rol en waarde](/wcag/4.1.2) (niveau A).
 
 ### Multiselect
@@ -59,7 +59,7 @@ Als de data niet verder automatisch verwerkt gaat worden is een tekstveld een ma
 
 #### De keuze hangt af van de context
 
-Welke optie je kiest is afhankelijk van de context. Wat vraag je uit? En wat gaat er met de data gebeuren? Bijvoorbeeld:
+Welke optie je kiest, is afhankelijk van de context. Wat vraag je uit? En wat gaat er met de data gebeuren? Bijvoorbeeld:
 
 - Kent men de datum uit het hoofd (bijvoorbeeld geboortedatum)? Gebruik dan drie losse invulvelden.
 - Kan men een datum prikken (bijvoorbeeld een afspraak)? Dan is een datumkiezer in combinatie met zelf invullen een goed plan. "Ik weet de datum niet maar woensdagen komen mij het best uit". Hou wel rekening met 'niet beschikbare' dagen, gebruik in dat geval als alternatief bijvoorbeeld een select-optie met beperkte keuzes.
