@@ -23,6 +23,7 @@ interface NewsletterSignUpProps {
   interestsId: string;
   interests: Array<string>;
   thanksPage: string;
+  workAreasId: string;
 }
 
 export const NewsletterSignUp = ({
@@ -34,6 +35,7 @@ export const NewsletterSignUp = ({
   orgId = '',
   interestsId = '',
   interests = [],
+  workAreasId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -116,6 +118,19 @@ export const NewsletterSignUp = ({
             </FormField>
           ))}
         </Fieldset>
+      )}
+
+      {workAreasId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={workAreasId}>
+              Waar werk je momenteel vooral aan? Denk aan mijn-omgevingen, formulieren, kaarten. (niet verplicht)
+            </FormLabel>
+          </Paragraph>
+          <Paragraph>
+            <Textbox id={workAreasId} name={workAreasId} type="text" />
+          </Paragraph>
+        </FormField>
       )}
 
       <ButtonGroup>
