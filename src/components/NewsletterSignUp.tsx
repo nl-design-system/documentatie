@@ -1,6 +1,9 @@
 import {
   Button,
   ButtonGroup,
+  Checkbox,
+  Fieldset,
+  FieldsetLegend,
   FormField,
   FormFieldErrorMessage,
   FormLabel,
@@ -18,6 +21,7 @@ interface NewsletterSignUpProps {
   firstNameFieldId: string;
   orgId: string;
   interestsId: string;
+  interests: Array<string>;
   thanksPage: string;
 }
 
@@ -29,6 +33,7 @@ export const NewsletterSignUp = ({
   firstNameFieldId = '',
   orgId = '',
   interestsId = '',
+  interests = [],
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -99,7 +104,19 @@ export const NewsletterSignUp = ({
         </FormField>
       )}
 
-      {interestsId && <Paragraph>checkboxes</Paragraph>}
+      {interestsId && (
+        <Fieldset>
+          <FieldsetLegend>Waar ligt je interesse? (meerdere opties mogelijk; niet verplicht)</FieldsetLegend>
+          {interests.map((interest, index) => (
+            <FormField type="checkbox" key={interest}>
+              <Paragraph>
+                <Checkbox name={`${interestsId}[]`} value={index + 1} id={`${interestsId}-${index + 1}`} />
+                <FormLabel htmlFor={`${interestsId}-${index + 1}`}>{interest}</FormLabel>
+              </Paragraph>
+            </FormField>
+          ))}
+        </Fieldset>
+      )}
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
