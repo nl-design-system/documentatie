@@ -8,10 +8,10 @@
   ],
   "private": true,
   "license": "EUPL-1.2",
-  "packageManager": "pnpm@8.12.1",
+  "packageManager": "pnpm@9.1.1+sha256.9551e803dcb7a1839fdf5416153a844060c7bce013218ce823410532504ac10b",
   "engines": {
     "node": "^20",
-    "pnpm": "^8"
+    "pnpm": "^9"
   },
   "scripts": {
     "docusaurus": "docusaurus",
