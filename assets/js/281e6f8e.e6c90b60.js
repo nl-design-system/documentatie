@@ -3,12 +3,12 @@
  [8218],
  {
   84550: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => d, contentTitle: () => l, default: () => m, frontMatter: () => a, metadata: () => o, toc: () => h });
+   t.r(n), t.d(n, { assets: () => d, contentTitle: () => a, default: () => m, frontMatter: () => l, metadata: () => o, toc: () => h });
    var i = t(11527),
     r = t(80877),
     s = t(82415);
-   const a = { title: "Op de hoogte blijven", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Op de hoogte blijven", pagination_label: "Op de hoogte blijven", description: "De verschillende manieren om op de hoogte te blijven van wat er in het kernteam of in de community gebeurt.", keywords: ["heartbeat", "blog", "slack"] },
-    l = "Op de hoogte blijven",
+   const l = { title: "Op de hoogte blijven", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Op de hoogte blijven", pagination_label: "Op de hoogte blijven", description: "De verschillende manieren om op de hoogte te blijven van wat er in het kernteam of in de community gebeurt.", keywords: ["heartbeat", "blog", "slack"] },
+    a = "Op de hoogte blijven",
     o = { id: "project/blijf-op-de-hoogte", title: "Op de hoogte blijven", description: "De verschillende manieren om op de hoogte te blijven van wat er in het kernteam of in de community gebeurt.", source: "@site/docs/project/blijf-op-de-hoogte.mdx", sourceDirName: "project", slug: "/project/blijf-op-de-hoogte", permalink: "/project/blijf-op-de-hoogte", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/project/blijf-op-de-hoogte.mdx", tags: [], version: "current", frontMatter: { title: "Op de hoogte blijven", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Op de hoogte blijven", pagination_label: "Op de hoogte blijven", description: "De verschillende manieren om op de hoogte te blijven van wat er in het kernteam of in de community gebeurt.", keywords: ["heartbeat", "blog", "slack"] }, sidebar: "project", previous: { title: "Kernteam", permalink: "/project/kernteam" }, next: { title: "Links", permalink: "/project/links" } },
     d = {},
     h = [{ value: "Nieuwsbrief", id: "nieuwsbrief", level: 2 }];
@@ -22,38 +22,38 @@
    }
   },
   82415: (e, n, t) => {
-   t.d(n, { Z: () => l });
+   t.d(n, { Z: () => a });
    var i = t(83778),
     r = t(50959),
     s = t(6556),
-    a = t(11527);
-   const l = (e) => {
-    let { listId: n = "", laPostaId: t = "", thanksPage: l = "", emailFieldId: o = "", firstNameFieldId: d = "", orgId: h = "", interestsId: c = "", interests: m = [], workAreasId: p = "" } = e;
+    l = t(11527);
+   const a = (e) => {
+    let { listId: n = "", laPostaId: t = "", thanksPage: a = "", emailFieldId: o = "", firstNameFieldId: d = "", orgId: h = "", interestsId: c = "", interests: m = [], workAreasId: p = "" } = e;
     const {
-      register: u,
-      handleSubmit: j,
+      register: j,
+      handleSubmit: u,
       formState: { errors: v },
      } = (0, s.cI)(),
      g = (0, r.useRef)(null);
-    return (0, a.jsxs)("form", {
+    return (0, l.jsxs)("form", {
      method: "post",
      action: "https://nl-design-system.email-provider.eu/subscribe/post/index.php",
      noValidate: !0,
      acceptCharset: "utf-8",
      ref: g,
-     onSubmit: j(() => {
+     onSubmit: u(() => {
       g.current.submit();
      }),
-     children: [(0, a.jsxs)(i.Wi, { type: "email", children: [(0, a.jsx)(i.nv, { children: (0, a.jsx)(i.lX, { htmlFor: `id-${o}`, children: "E-mailadres" }) }), v[o] && (0, a.jsx)(i.w7, { children: v[o].message }), (0, a.jsx)(i.nv, { children: (0, a.jsx)(i.fE, { id: `id-${o}`, name: o, type: "email", autoComplete: "email", "aria-required": "true", ...u(`${o}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." }, pattern: { value: /\S+@\S+\.\S+/, message: "Dit is geen correct emailadres." } }), invalid: !!v[o] }) })] }), (0, a.jsxs)(i.Wi, { type: "text", children: [(0, a.jsx)(i.nv, { children: (0, a.jsx)(i.lX, { htmlFor: d, children: "Naam" }) }), v[d] && (0, a.jsx)(i.w7, { children: v[d].message }), (0, a.jsx)(i.nv, { children: (0, a.jsx)(i.fE, { id: d, name: d, type: "text", autoComplete: "given-name", "aria-required": "true", ...u(`${d}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." } }), invalid: !!v[d] }) })] }), h && (0, a.jsxs)(i.Wi, { type: "text", children: [(0, a.jsx)(i.nv, { children: (0, a.jsx)(i.lX, { htmlFor: h, children: "Organisatie" }) }), v[h] && (0, a.jsx)(i.w7, { children: v[h].message }), (0, a.jsx)(i.nv, { children: (0, a.jsx)(i.fE, { id: h, name: h, type: "text", "aria-required": "true", ...u(`${h}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." } }), invalid: !!v[h] }) })] }), c && (0, a.jsxs)(i.pg, { children: [(0, a.jsx)(i.Qv, { children: "Waar ligt je interesse? (niet verplicht)" }), m.map((e, n) => (0, a.jsx)(i.Wi, { type: "checkbox", children: (0, a.jsxs)(i.nv, { children: [(0, a.jsx)(i.XZ, { name: `${c}[]`, value: n + 1, id: `${c}-${n + 1}` }), (0, a.jsx)(i.lX, { htmlFor: `${c}-${n + 1}`, children: e })] }) }, e))] }), p && (0, a.jsxs)(i.Wi, { type: "text", children: [(0, a.jsxs)(i.nv, { children: [(0, a.jsx)(i.lX, { htmlFor: p, children: "Waar werk je momenteel vooral aan? (niet verplicht)" }), (0, a.jsx)(i.ue, { children: "Denk aan mijn-omgevingen, formulieren en/of kaarten. Antwoord gerust met meerdere onderwerpen." })] }), (0, a.jsx)(i.nv, { children: (0, a.jsx)(i.fE, { id: p, name: p, type: "text" }) })] }), (0, a.jsx)(i.hE, { children: (0, a.jsx)(i.zx, { type: "submit", appearance: "primary-action-button", children: "Aanmelden" }) }), (0, a.jsx)("input", { type: "hidden", name: "next", value: l }), (0, a.jsx)("input", { type: "hidden", name: "a", value: t }), (0, a.jsx)("input", { type: "hidden", name: "l", value: n }), (0, a.jsx)("input", { name: "osnD9cWRI3", autoComplete: "on", id: "id-osnD9cWRI3", type: "hidden", value: "NLDS website" }), (0, a.jsx)("input", { autoComplete: "new-password", type: "email", id: "email", name: "email", placeholder: "Your e-mail here", className: "sr-only", "aria-hidden": "true" })],
+     children: [(0, l.jsxs)(i.Wi, { type: "email", children: [(0, l.jsx)(i.nv, { children: (0, l.jsx)(i.lX, { htmlFor: `id-${o}`, children: "E-mailadres" }) }), v[o] && (0, l.jsx)(i.w7, { children: v[o].message }), (0, l.jsx)(i.nv, { children: (0, l.jsx)(i.fE, { id: `id-${o}`, name: o, type: "email", autoComplete: "email", "aria-required": "true", ...j(`${o}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." }, pattern: { value: /\S+@\S+\.\S+/, message: "Dit is geen correct emailadres." } }), invalid: !!v[o] }) })] }), (0, l.jsxs)(i.Wi, { type: "text", children: [(0, l.jsx)(i.nv, { children: (0, l.jsx)(i.lX, { htmlFor: d, children: "Naam" }) }), v[d] && (0, l.jsx)(i.w7, { children: v[d].message }), (0, l.jsx)(i.nv, { children: (0, l.jsx)(i.fE, { id: d, name: d, type: "text", autoComplete: "given-name", "aria-required": "true", ...j(`${d}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." } }), invalid: !!v[d] }) })] }), h && (0, l.jsxs)(i.Wi, { type: "text", children: [(0, l.jsx)(i.nv, { children: (0, l.jsx)(i.lX, { htmlFor: h, children: "Organisatie" }) }), v[h] && (0, l.jsx)(i.w7, { children: v[h].message }), (0, l.jsx)(i.nv, { children: (0, l.jsx)(i.fE, { id: h, name: h, type: "text", "aria-required": "true", ...j(`${h}`, { required: { value: !0, message: "Dit veld is verplicht, maar het is niet ingevuld." } }), invalid: !!v[h] }) })] }), c && (0, l.jsxs)(i.pg, { children: [(0, l.jsx)(i.Qv, { children: "Waar wil je NL Design System voor gebruiken? (niet verplicht)" }), (0, l.jsx)(i.ue, { children: "Meerdere antwoorden mogelijk." }), m.map((e, n) => (0, l.jsx)(i.Wi, { type: "checkbox", children: (0, l.jsxs)(i.nv, { children: [(0, l.jsx)(i.XZ, { name: `${c}[]`, value: n + 1, id: `${c}-${n + 1}` }), (0, l.jsx)(i.lX, { htmlFor: `${c}-${n + 1}`, children: e })] }) }, e))] }), p && (0, l.jsxs)(i.Wi, { type: "text", children: [(0, l.jsxs)(i.nv, { children: [(0, l.jsx)(i.lX, { htmlFor: p, children: "Aan wat voor projecten werk je? (niet verplicht)" }), (0, l.jsx)(i.ue, { children: "Denk aan mijn-omgevingen, formulieren en/of kaarten." })] }), (0, l.jsx)(i.nv, { children: (0, l.jsx)(i.gx, { id: p, name: p }) })] }), (0, l.jsx)(i.hE, { children: (0, l.jsx)(i.zx, { type: "submit", appearance: "primary-action-button", children: "Aanmelden" }) }), (0, l.jsx)("input", { type: "hidden", name: "next", value: a }), (0, l.jsx)("input", { type: "hidden", name: "a", value: t }), (0, l.jsx)("input", { type: "hidden", name: "l", value: n }), (0, l.jsx)("input", { name: "osnD9cWRI3", autoComplete: "on", id: "id-osnD9cWRI3", type: "hidden", value: "NLDS website" }), (0, l.jsx)("input", { autoComplete: "new-password", type: "email", id: "email", name: "email", placeholder: "Your e-mail here", className: "sr-only", "aria-hidden": "true" })],
     });
    };
   },
   80877: (e, n, t) => {
-   t.d(n, { Z: () => l, a: () => a });
+   t.d(n, { Z: () => a, a: () => l });
    var i = t(50959);
    const r = {},
     s = i.createContext(r);
-   function a(e) {
+   function l(e) {
     const n = i.useContext(s);
     return i.useMemo(
      function () {
@@ -62,9 +62,9 @@
      [n, e],
     );
    }
-   function l(e) {
+   function a(e) {
     let n;
-    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(r) : e.components || r) : a(e.components)), i.createElement(s.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(r) : e.components || r) : l(e.components)), i.createElement(s.Provider, { value: n }, e.children);
    }
   },
  },
