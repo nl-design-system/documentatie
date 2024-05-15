@@ -9,6 +9,7 @@ import {
   FormFieldErrorMessage,
   FormLabel,
   Paragraph,
+  Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
 import React, { PropsWithChildren } from 'react';
@@ -132,7 +133,8 @@ export const NewsletterSignUp = ({
 
       {interestsId && (
         <Fieldset>
-          <FieldsetLegend>Waar ligt je interesse? (niet verplicht)</FieldsetLegend>
+          <FieldsetLegend>Waar wil je NL Design System voor gebruiken? (niet verplicht)</FieldsetLegend>
+          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
               <Paragraph>
@@ -147,13 +149,11 @@ export const NewsletterSignUp = ({
       {workAreasId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={workAreasId}>Waar werk je momenteel vooral aan? (niet verplicht)</FormLabel>
-            <FormFieldDescription>
-              Denk aan mijn-omgevingen, formulieren en/of kaarten. Antwoord gerust met meerdere onderwerpen.
-            </FormFieldDescription>
+            <FormLabel htmlFor={workAreasId}>Aan wat voor projecten werk je? (niet verplicht)</FormLabel>
+            <FormFieldDescription>Denk aan mijn-omgevingen, formulieren en/of kaarten.</FormFieldDescription>
           </Paragraph>
           <Paragraph>
-            <Textbox id={workAreasId} name={workAreasId} type="text" />
+            <Textarea id={workAreasId} name={workAreasId}></Textarea>
           </Paragraph>
         </FormField>
       )}
