@@ -9,8 +9,8 @@ import {
   FormFieldErrorMessage,
   FormLabel,
   Paragraph,
-  Textbox,
   Textarea,
+  Textbox,
 } from '@utrecht/component-library-react';
 import React, { PropsWithChildren } from 'react';
 import { useRef } from 'react';
@@ -150,9 +150,7 @@ export const NewsletterSignUp = ({
         <FormField type="text">
           <Paragraph>
             <FormLabel htmlFor={workAreasId}>Aan wat voor projecten werk je? (niet verplicht)</FormLabel>
-            <FormFieldDescription>
-              Denk aan mijn-omgevingen, formulieren en/of kaarten.
-            </FormFieldDescription>
+            <FormFieldDescription>Denk aan mijn-omgevingen, formulieren en/of kaarten.</FormFieldDescription>
           </Paragraph>
           <Paragraph>
             <Textarea id={workAreasId} name={workAreasId}></Textarea>
