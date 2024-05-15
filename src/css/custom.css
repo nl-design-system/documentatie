@@ -27,6 +27,10 @@
   --utrecht-textbox-padding-block-end: 0.5em;
   --utrecht-textbox-padding-inline-start: 0.5em;
   --utrecht-textbox-padding-inline-end: 0.5em;
+  --utrecht-form-fieldset-legend-font-weight: 700;
+  --utrecht-form-label-font-weight: 700;
+  --utrecht-form-field-error-message-margin-block-start: 0;
+  --utrecht-form-field-error-message-margin-block-end: 1em;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
@@ -132,6 +136,10 @@
 
 .utrecht-form-field--checkbox > p .utrecht-checkbox--custom.utrecht-checkbox--html-input:checked {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.utrecht-form-field--checkbox label {
+  --utrecht-form-label-font-weight: 400;
 }
 
 .footer {

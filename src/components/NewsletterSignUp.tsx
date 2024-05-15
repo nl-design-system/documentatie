@@ -5,6 +5,7 @@ import {
   Fieldset,
   FieldsetLegend,
   FormField,
+  FormFieldDescription,
   FormFieldErrorMessage,
   FormLabel,
   Paragraph,
@@ -59,18 +60,14 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <FormLabel htmlFor={`id-${emailFieldId}`}>E-mailadres</FormLabel>
         </Paragraph>
-        {errors[emailFieldId] && (
-          <FormFieldErrorMessage>
-            <Paragraph>{errors[emailFieldId].message}</Paragraph>
-          </FormFieldErrorMessage>
-        )}
+        {errors[emailFieldId] && <FormFieldErrorMessage>{errors[emailFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
           <Textbox
             id={`id-${emailFieldId}`}
             name={emailFieldId}
             type="email"
-            aria-required="true"
             autoComplete="email"
+            aria-required="true"
             {...register(`${emailFieldId}`, {
               required: {
                 value: true,
@@ -88,20 +85,47 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={firstNameFieldId}>Naam (niet verplicht)</FormLabel>
+          <FormLabel htmlFor={firstNameFieldId}>Naam</FormLabel>
         </Paragraph>
+        {errors[firstNameFieldId] && <FormFieldErrorMessage>{errors[firstNameFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
-          <Textbox id={firstNameFieldId} name={firstNameFieldId} type="text" autoComplete="given-name" />
+          <Textbox
+            id={firstNameFieldId}
+            name={firstNameFieldId}
+            type="text"
+            autoComplete="given-name"
+            aria-required="true"
+            {...register(`${firstNameFieldId}`, {
+              required: {
+                value: true,
+                message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+              },
+            })}
+            invalid={!!errors[firstNameFieldId]}
+          />
         </Paragraph>
       </FormField>
 
       {orgId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={orgId}>Organisatie (niet verplicht)</FormLabel>
+            <FormLabel htmlFor={orgId}>Organisatie</FormLabel>
           </Paragraph>
+          {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
-            <Textbox id={orgId} name={orgId} type="text" />
+            <Textbox
+              id={orgId}
+              name={orgId}
+              type="text"
+              aria-required="true"
+              {...register(`${orgId}`, {
+                required: {
+                  value: true,
+                  message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+                },
+              })}
+              invalid={!!errors[orgId]}
+            />
           </Paragraph>
         </FormField>
       )}
@@ -123,9 +147,10 @@ export const NewsletterSignUp = ({
       {workAreasId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={workAreasId}>
-              Waar werk je momenteel vooral aan? Denk aan mijn-omgevingen, formulieren, kaarten. (niet verplicht)
-            </FormLabel>
+            <FormLabel htmlFor={workAreasId}>Waar werk je momenteel vooral aan? (niet verplicht)</FormLabel>
+            <FormFieldDescription>
+              Denk aan mijn-omgevingen, formulieren en/of kaarten. Antwoord gerust met meerdere onderwerpen.
+            </FormFieldDescription>
           </Paragraph>
           <Paragraph>
             <Textbox id={workAreasId} name={workAreasId} type="text" />
