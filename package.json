@@ -80,7 +80,7 @@
     "@docusaurus/tsconfig": "3.1.0",
     "@docusaurus/types": "3.1.0",
     "@fontsource/fira-sans": "5.0.19",
-    "@fontsource/open-sans": "5.0.27",
+    "@fontsource/open-sans": "5.0.28",
     "@fontsource/source-sans-pro": "5.0.8",
     "@lerna-lite/cli": "3.3.2",
     "@lerna-lite/publish": "3.3.2",
