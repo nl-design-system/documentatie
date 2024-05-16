@@ -121,7 +121,7 @@
     "stylelint-order": "6.0.4",
     "tabler-icons-react": "1.56.0",
     "ts-node": "10.9.2",
-    "typescript": "5.4.3",
+    "typescript": "5.4.5",
     "uuid": "9.0.1",
     "yaml-loader": "0.8.1"
   },
