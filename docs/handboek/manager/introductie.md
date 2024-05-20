@@ -1,17 +1,17 @@
 ---
-title: Introductie
+title: Voor managers
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie
+sidebar_label: Voor managers
 sidebar_position: 2
-pagination_label: Introductie
-description: Waarom zou je als leverancier meedoen aan NL Design System?
-  - leverancier
+pagination_label: Voor managers
+description: Waarom zou je als manager investeren in NL Design System?
+  - manager
   - waarom NLDS
   - waarom een design system
 ---
 
-# Introductie
+# Voor managers
 
 _Verbeter je online dienstverlening met NL Design System_
 
