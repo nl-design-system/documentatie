@@ -100,8 +100,8 @@ importers:
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 1.0.0-alpha.136
-        version: 1.0.0-alpha.136
+        specifier: 1.0.0-alpha.137
+        version: 1.0.0-alpha.137
       '@nl-design-system/component-index':
         specifier: 1.0.0-alpha.18
         version: 1.0.0-alpha.18
@@ -1482,8 +1482,8 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.136':
-    resolution: {integrity: sha512-fc8RbyfMZNW32H3A4UQRITp9TP3ryL5GCZYjJ1WZ3y7a11wv4NJUglfFrRHmKrM20BjNywxzeyR55fwPndcqwg==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.137':
+    resolution: {integrity: sha512-VxuvEnrhZTFktKT9DdSYtgeUDrg7S6xlpJnFa+bX9OXJIdH1WQaGzD1UgIEM5Hi6BXuBC+N79A7G1dIP6ZzahQ==}
 
   '@nl-design-system/component-index@1.0.0-alpha.18':
     resolution: {integrity: sha512-A+dhRs2zIegw/VCdZGDabTNqnnLs3V5FsPAQIPWlcwlQKwyZdpV3MWjRxBaBBZ2Jf5gRNg886REKPCsq5oU+2g==}
@@ -10001,7 +10001,7 @@ snapshots:
       '@types/react': 18.2.55
       react: 18.3.1
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.136': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.137': {}
 
   '@nl-design-system/component-index@1.0.0-alpha.18': {}
 
