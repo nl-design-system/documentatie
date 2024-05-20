@@ -127,8 +127,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/web-component-library-stencil':
-        specifier: 1.1.1-alpha.30
-        version: 1.1.1-alpha.30
+        specifier: 1.1.1-alpha.39
+        version: 1.1.1-alpha.39
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -2154,8 +2154,8 @@ packages:
   '@utrecht/web-component-library-stencil@1.1.0':
     resolution: {integrity: sha512-3gHqaSqI5y6J+H6ZABHNxgdPxhQDzLFJX+ILfQDzuzQUOywyuAFodrArE2J53uPPcL6cw6ckXlIPEOZmuy3KSA==}
 
-  '@utrecht/web-component-library-stencil@1.1.1-alpha.30':
-    resolution: {integrity: sha512-gkme+YnN6lEeesRDjz8Jes2C18E++rhrP+K2UDzTS0JJ77tkTROsjAOUnuI5K/YQpzUe72ZmXgrUokgJCLMevQ==}
+  '@utrecht/web-component-library-stencil@1.1.1-alpha.39':
+    resolution: {integrity: sha512-vB43bgFo30hscwUeHLtcrqRw2z7j8l9zoly8ui/TUmHIjpD1JYILtmD9jP+QWAhufSxQC1fiZI7mps3NWUw8XQ==}
 
   '@webassemblyjs/ast@1.11.6':
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -10768,7 +10768,7 @@ snapshots:
     dependencies:
       '@stencil/core': 4.5.0
 
-  '@utrecht/web-component-library-stencil@1.1.1-alpha.30':
+  '@utrecht/web-component-library-stencil@1.1.1-alpha.39':
     dependencies:
       '@stencil/core': 4.8.2
 
