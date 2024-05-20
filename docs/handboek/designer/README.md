@@ -104,7 +104,7 @@ Mis je een patroon of template? Heb je input voor de documentatie? Of nog beter,
 
 Design, code en documentatie stoelen we graag op onderzoek. Hiervoor speuren we het web af naar inzichten. Maar we vragen ook de community, jou dus, om hulp. Heb je gebruikersonderzoek gedaan en inzichten opgedaan die voor de gehele community waardevol zijn? Dan horen we dat graag.
 
-[Bekijk het onderzoek overzicht](../../onderzoek/README.md)
+[Bekijk het onderzoek overzicht](../../voorbeelden/onderzoek/README.md)
 
 ## Op de hoogte blijven
 

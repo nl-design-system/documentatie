@@ -1,10 +1,15 @@
 import {
   Button,
   ButtonGroup,
+  Checkbox,
+  Fieldset,
+  FieldsetLegend,
   FormField,
+  FormFieldDescription,
   FormFieldErrorMessage,
   FormLabel,
   Paragraph,
+  Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
 import React, { PropsWithChildren } from 'react';
@@ -16,7 +21,11 @@ interface NewsletterSignUpProps {
   laPostaId: string;
   emailFieldId: string;
   firstNameFieldId: string;
+  orgId: string;
+  interestsId: string;
+  interests: Array<string>;
   thanksPage: string;
+  workAreasId: string;
 }
 
 export const NewsletterSignUp = ({
@@ -25,6 +34,10 @@ export const NewsletterSignUp = ({
   thanksPage = '',
   emailFieldId = '',
   firstNameFieldId = '',
+  orgId = '',
+  interestsId = '',
+  interests = [],
+  workAreasId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -48,18 +61,14 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <FormLabel htmlFor={`id-${emailFieldId}`}>E-mailadres</FormLabel>
         </Paragraph>
-        {errors[emailFieldId] && (
-          <FormFieldErrorMessage>
-            <Paragraph>{errors[emailFieldId].message}</Paragraph>
-          </FormFieldErrorMessage>
-        )}
+        {errors[emailFieldId] && <FormFieldErrorMessage>{errors[emailFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
           <Textbox
             id={`id-${emailFieldId}`}
             name={emailFieldId}
             type="email"
-            aria-required="true"
             autoComplete="email"
+            aria-required="true"
             {...register(`${emailFieldId}`, {
               required: {
                 value: true,
@@ -77,12 +86,77 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={firstNameFieldId}>Naam (niet verplicht)</FormLabel>
+          <FormLabel htmlFor={firstNameFieldId}>Naam</FormLabel>
         </Paragraph>
+        {errors[firstNameFieldId] && <FormFieldErrorMessage>{errors[firstNameFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
-          <Textbox id={firstNameFieldId} name={firstNameFieldId} type="text" autoComplete="given-name" />
+          <Textbox
+            id={firstNameFieldId}
+            name={firstNameFieldId}
+            type="text"
+            autoComplete="given-name"
+            aria-required="true"
+            {...register(`${firstNameFieldId}`, {
+              required: {
+                value: true,
+                message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+              },
+            })}
+            invalid={!!errors[firstNameFieldId]}
+          />
         </Paragraph>
       </FormField>
+
+      {orgId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={orgId}>Organisatie</FormLabel>
+          </Paragraph>
+          {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
+          <Paragraph>
+            <Textbox
+              id={orgId}
+              name={orgId}
+              type="text"
+              aria-required="true"
+              {...register(`${orgId}`, {
+                required: {
+                  value: true,
+                  message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+                },
+              })}
+              invalid={!!errors[orgId]}
+            />
+          </Paragraph>
+        </FormField>
+      )}
+
+      {interestsId && (
+        <Fieldset>
+          <FieldsetLegend>Waar wil je NL Design System voor gebruiken? (niet verplicht)</FieldsetLegend>
+          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
+          {interests.map((interest, index) => (
+            <FormField type="checkbox" key={interest}>
+              <Paragraph>
+                <Checkbox name={`${interestsId}[]`} value={index + 1} id={`${interestsId}-${index + 1}`} />
+                <FormLabel htmlFor={`${interestsId}-${index + 1}`}>{interest}</FormLabel>
+              </Paragraph>
+            </FormField>
+          ))}
+        </Fieldset>
+      )}
+
+      {workAreasId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={workAreasId}>Aan wat voor projecten werk je? (niet verplicht)</FormLabel>
+            <FormFieldDescription>Denk aan mijn-omgevingen, formulieren en/of kaarten.</FormFieldDescription>
+          </Paragraph>
+          <Paragraph>
+            <Textarea id={workAreasId} name={workAreasId}></Textarea>
+          </Paragraph>
+        </FormField>
+      )}
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
