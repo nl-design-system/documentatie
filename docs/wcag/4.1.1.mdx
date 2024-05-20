@@ -17,7 +17,7 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 # WCAG-succescriterium 4.1.1 Parsen
 
-**Let op**: Dit succescriterium is in WCAG-versie 2.2 vervallen. Maar we vinden het belangrijk hier te vermelden en uit te leggen, omdat het niet goed toepassen grote consequences heeft voor de werking van formuleren.
+**Let op**: Dit succescriterium is in WCAG-versie 2.2 verwijderd. Pas wanneer de opvolger van [EN_301_549 3.2.1](https://nl.wikipedia.org/wiki/EN_301_549) overstapt van WCAG 2.1 naar 2.2 dan is dit succescriterium niet meer wettelijk verplicht.
 
 ## W3C referenties WCAG-versie 2.1
 
@@ -28,7 +28,7 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## Uitleg
 
-Voor WCAG betekent het dat de HTML-code moet kloppen, foutloos moet zijn. Dan werkt een webpagina beter. Vooral voor formulieren is het belangrijk dat ID's uniek zijn op een webpagina.
+Voor WCAG 2.1 moet de "markup parsen" geen problemen opleveren, dat betekent dat de HTML-code foutloos moet zijn. Dan werkt een webpagina beter.
 
 Wat betekent parsen eigenlijk? Officieel: het analyseren van informatie aan de hand van losse componenten, of het analyseren van de syntax.
 
@@ -84,6 +84,7 @@ Een ander probleem is het toevoegen van twee keer hetzelfde formulier met hetzel
 ## Hoe te testen
 
 - Controleer de webpagina op de [Markup Validation Service](https://validator.w3.org/).
+- Controleer de webpagina met de [span lang="en">WCAG 2.1 parsing error bookmarklet</span>](https://www.tpgi.com/wcag-2-0-parsing-error-bookmarklet/) van Steve Faulkner
 - [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert enkele (maar niet alle) parse-fouten in de HTML.
 
 Voor developers:
