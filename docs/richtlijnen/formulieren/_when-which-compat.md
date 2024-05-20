@@ -10,7 +10,7 @@ Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nod
 
 - [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG21-nl/#info-en-relaties) (niveau A).
 - [2.1.1 Toetsenbord](/wcag/2.1.1) (niveau A).
-- [2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG21-nl/#koppen-en-labels) (niveau AA).
+- [2.4.6 Koppen en labels](/wcag/2.4.6) (niveau AA).
 - [3.3.2 Labels of Instructies](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) (niveau A).
 - [4.1.2 Naam, rol en waarde](/wcag/4.1.2) (niveau A).
 
