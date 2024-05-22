@@ -204,6 +204,7 @@ const sidebars: SidebarsConfig = {
         keywords: ['Community', 'overzicht'],
       },
       items: [
+        { type: 'doc', id: 'community/sluit-je-aan' },
         {
           type: 'category',
           label: 'Events',
@@ -255,7 +256,6 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'community/events/estafettemodeldag' },
           ],
         },
-        { type: 'doc', id: 'community/sluit-je-aan' },
         { type: 'doc', id: 'community/wie-doet-mee' },
       ],
     },
