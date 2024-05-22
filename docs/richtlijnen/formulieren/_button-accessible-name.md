@@ -66,4 +66,4 @@ Voor het toekennen van toegankelijke namen aan SVG's bestaan ook andere techniek
 Een toegankelijke naam voor de button, is nodig om te voldoen aan één van de voorwaarden voor de WCAG-succescriteria:
 
 - [1.3.1 Info en relaties](/wcag/1.3.1) (niveau A).
-- [4.1.2 Naam, rol en waarde](/wcag/4.1.2) (niveau A).
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2) (niveau A).

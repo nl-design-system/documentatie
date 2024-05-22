@@ -16,35 +16,31 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
       - name: Install pnpm package manager
-        uses: pnpm/action-setup@v3.0.0
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
-        run: |
-          pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: "Continuous Integration: lint"
-        run: |
-          pnpm run --if-present lint
+        run: pnpm run --if-present lint
 
       - name: "Continuous Integration: build"
-        run: |
-          pnpm run --if-present build
+        run: pnpm run --if-present build
 
       - name: "Continuous Integration: test"
-        run: |
-          pnpm run --if-present test
+        run: pnpm run --if-present test
 
       - name: "Retain build artifact: website"
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
           name: website
           path: build/
@@ -56,49 +52,44 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
       - name: Install pnpm package manager
-        uses: pnpm/action-setup@v3.0.0
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
-        run: |
-          pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: "Install headless browsers for end-to-end testing"
-        run: |
-          pnpm run --if-present install-test-browsers
+        run: pnpm run --if-present install-test-browsers
 
       - name: "Restore build artifact: website"
-        uses: actions/download-artifact@v4.1.4
+        uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
         with:
           name: website
           path: build/
 
       - name: "Continuous Integration: end-to-end tests"
-        run: |
-          pnpm run --if-present test-e2e
+        run: pnpm run --if-present test-e2e
 
       - name: "Continuous Integration: make screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
-        run: |
-          pnpm run --if-present test-visual
+        run: pnpm run --if-present test-visual
 
       - name: "Continuous Integration: publish screenshots to Argos"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
         env:
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
-        run: |
-          pnpm run --if-present publish:argos
+        run: pnpm run --if-present publish:argos
 
       - name: "Retain build artifact: test report"
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
           name: playwright-report
           path: tmp/playwright-html-report/
@@ -106,7 +97,7 @@ jobs:
 
       - name: "Retain build artifact: screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
           name: screenshots
           path: tmp/screenshots/
@@ -119,16 +110,16 @@ jobs:
 
     steps:
       - name: Checkout release branch
-        uses: actions/checkout@v4.1.3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
       - name: "Restore build artifact: website"
-        uses: actions/download-artifact@v4.1.4
+        uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
         with:
           name: website
           path: build/
 
       - name: Continuous Deployment to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@5c6e9e9f3672ce8fd37b9856193d2a537941e66c # v4.6.1
         with:
           branch: gh-pages
           folder: build/
@@ -140,22 +131,21 @@ jobs:
 
     steps:
       - name: Checkout release branch
-        uses: actions/checkout@v4.1.3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v3.0.0
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
-        run: |
-          pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: "Continuous Deployment: publish to GitHub repository"
         env:
