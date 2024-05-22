@@ -60,7 +60,7 @@ interface CanvasProps {
 
 export const Canvas = ({
   code,
-  copy = false,
+  copy = true,
   defaultExpandedCode = false,
   displayCode = true,
   children,
@@ -147,7 +147,7 @@ export const Canvas = ({
         >
           <CodeBlockSyntaxHighlighting syntax={language} textContent={exampleSourceCode} trim />
           {copy && (
-            <div className={clsx(style['nlds-canvas__toolbar'])}>
+            <div className={clsx(style['nlds-canvas__toolbar'], style['nlds-canvas__toolbar--copy'])}>
               <Button
                 className={clsx(style['nlds-canvas__button'], style['nlds-canvas__copy-button'])}
                 appearance="subtle-button"
