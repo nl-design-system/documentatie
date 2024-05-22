@@ -17,7 +17,7 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 # WCAG-succescriterium 4.1.1 Parsen
 
-**Let op**: Dit succescriterium is in WCAG-versie 2.2 verwijderd. Pas wanneer de opvolger van [EN_301_549 3.2.1](https://nl.wikipedia.org/wiki/EN_301_549) overstapt van WCAG 2.1 naar 2.2 dan is dit succescriterium niet meer wettelijk verplicht.
+**Let op**: Dit succescriterium is misschien in jouw situatie niet meer van toepassing. Het is in WCAG-versie 2.2 verwijderd. In versie 2.1 is een [opmerking](https://www.w3.org/TR/WCAG21/#h-note-26) toegevoegd dat het criterium automatisch voldoet wanneer HTML of XML wordt gebruikt, maar die is niet ‘normatief’.
 
 ## W3C referenties WCAG-versie 2.1
 
@@ -28,15 +28,13 @@ import WCAGFooterInfo from "./_wcag_footer_info.md";
 
 ## Uitleg
 
-Voor WCAG 2.1 moet de "markup parsen" geen problemen opleveren, dat betekent dat de HTML-code foutloos moet zijn. Dan werkt een webpagina beter.
-
-Wat betekent parsen eigenlijk? Officieel: het analyseren van informatie aan de hand van losse componenten, of het analyseren van de syntax.
+De “markup” van pagina's, denk aan bijvoorbeeld HTML-code, moet voldoen aan bepaalde voorwaarden. Zo wordt de samenwerking tussen webpagina's, browsers en hulptechnologieën minder foutgevoelig.
 
 Er zijn 4 voorwaarden gedefinieerd.
 
 ### 1. Elementen zijn volgens hun specificaties afgesloten
 
-Denk hier bijvoorbeeld aan paragrafen, headings, divs, spans en andere elementen die een sluittag vereisen.
+Denk hier bijvoorbeeld aan headings, divs, spans en andere elementen die een sluittag vereisen.
 Een `<div>` moet afsluiten met een `</div>`.
 
 ### 2. Elementen zijn genest volgens hun specificaties
@@ -49,15 +47,15 @@ Silvestar Bistrović beschrijft een aantal [<span lang="en">Common nesting issue
 
 ### 3. Elementen bevatten geen dubbele attributen
 
-Combineer waardes in attributen en herhaal de attributen zelf niet.
-Bijvoorbeeld voor het toekennen van CSS-classes:
+Gebruik een attribuut maximaal één keer.
+Vermijd bijvoorbeeld meerdere `class`-attributen:
 
 ```html
 <!-- Foute code, niet gebruiken -->
 <h1 class="heading" class="x-large">Contact</h1>
 ```
 
-Voeg de classes samen, gescheiden door een spatie:
+In het geval van het class-attribuut scheid je meerdere waarden met een spatie:
 
 ```html
 <h1 class="heading x-large">Contact</h1>
@@ -84,7 +82,6 @@ Een ander probleem is het toevoegen van twee keer hetzelfde formulier met hetzel
 ## Hoe te testen
 
 - Controleer de webpagina op de [Markup Validation Service](https://validator.w3.org/).
-- Controleer de webpagina met de [<span lang="en">WCAG 2.1 parsing error bookmarklet</span>](https://www.tpgi.com/wcag-2-0-parsing-error-bookmarklet/) van Steve Faulkner
 - [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert enkele (maar niet alle) parse-fouten in de HTML.
 
 Voor developers:
@@ -94,9 +91,10 @@ Voor developers:
 
 ## Veelgemaakte fouten
 
-### Fout: meerdere keren hetzelfde Gravity Forms formulier op een webpagina.
+### Fout: dubbele ID's doordat een formulier meerdere keren wordt gebruikt.
 
-De WordPress formulieren-plugin [Gravity Forms](https://docs.gravityforms.com/accessibility-checklist-for-gravity-forms/) geeft elk formulier een eigen ID. Voeg je hetzelfde formulier twee keer toe op een pagina, dan worden de fouten afgehandeld bij het bovenste formulier. Dit is verwarrend als je net het onderste formulier aan het invullen bent.
-Een formulier dat vaak twee keer wordt toegevoegd, is een aanmeldformulier voor de nieuwsbrief. Wil je toch hetzelfde formulier meerdere keren op een pagina, maak dan verschillende formulieren hiervoor aan.
+Met sommige formulierenplugins kun je hetzelfde formulier meerdere keren toevoegen op een pagina. Let in dit geval op dat de plugin wel unieke ID's toevoegt aan de velden en het formulier. Dat kan er, naast problemen bij de `for/id` relaties, ook voor zorgen dat validatiescripts op de verkeerde plek worden uitgevoerd.
+
+Een formulier dat vaak twee keer wordt toegevoegd, is een aanmeldformulier voor de nieuwsbrief. Wil je toch hetzelfde formulier meerdere keren op een pagina, maak dan verschillende formulieren aan.
 
 <WCAGFooterInfo />
