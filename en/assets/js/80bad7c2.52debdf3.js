@@ -25,6 +25,7 @@
      authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }],
      frontMatter: { title: "Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel", slug: "design-open-dag", authors: [{ name: "Hidde de Vries", title: "Public relations lead & Toegankelijkheidsspecialist NL Design System", url: "https://www.linkedin.com/in/hiddedevries/" }], tags: ["meta", "estafettemodel", "designers", "NL Design System"], image: "https://github.com/nl-design-system/documentatie/blob/assets/samen-aan-de-slag.png?raw=true", hide_table_of_contents: !1, date: "2024-03-22T00:00:00.000Z" },
      unlisted: !1,
+     prevItem: { title: "Van eigen componenten naar open source \u201cblocks\u201d voor WordPress", permalink: "/en/blog/community-blocks" },
      nextItem: { title: "Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers", permalink: "/en/blog/gebruikerstest-ondernemers-den-haag" },
     },
     d = { authorsImageUrls: [void 0] },
