@@ -105,6 +105,9 @@ importers:
       '@nl-design-system/component-index':
         specifier: 1.0.0-alpha.21
         version: 1.0.0-alpha.21
+      '@nl-design-system/component-progress':
+        specifier: 1.0.1-alpha.0
+        version: 1.0.1-alpha.0
       '@playwright/test':
         specifier: 1.44.1
         version: 1.44.1
@@ -1487,6 +1490,9 @@ packages:
 
   '@nl-design-system/component-index@1.0.0-alpha.21':
     resolution: {integrity: sha512-gTjzV8WDmuhEDETQ2kIkiMPExYCoKUHOHtKg2dr0jAzZf5ae63vQkmnAnNmGj2NJzc1hrbBfTzeYr7zaHgZk5w==}
+
+  '@nl-design-system/component-progress@1.0.1-alpha.0':
+    resolution: {integrity: sha512-dwIo+ZPsyYRLI8bW6t6GCmHKXZINpgBgxccI2+ZwqeGS4gctR949iSdLgB/L3nbGCTRMtM3h0ixz5hoPDNadSA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -10112,6 +10118,8 @@ snapshots:
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.140': {}
 
   '@nl-design-system/component-index@1.0.0-alpha.21': {}
+
+  '@nl-design-system/component-progress@1.0.1-alpha.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
