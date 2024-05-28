@@ -3,13 +3,13 @@
  [6004],
  {
   94949: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => d, contentTitle: () => o, default: () => c, frontMatter: () => s, metadata: () => l, toc: () => r });
+   t.r(n), t.d(n, { assets: () => l, contentTitle: () => o, default: () => c, frontMatter: () => s, metadata: () => d, toc: () => r });
    var a = t(52676),
     i = t(24785);
    const s = { title: "Estafettemodeldag", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Estafettemodeldag", pagination_label: "In het Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.", slug: "/community/events/estafettemodeldag" },
     o = "Estafettemodeldag",
-    l = { id: "community/events/estafettemodeldag", title: "Estafettemodeldag", description: "Op estafettemodeldagen gaan we met designers en developers langs componenten, om na te gaan of ze voldoen aan onze Definition of Done.", source: "@site/docs/community/events/estafettemodeldag.mdx", sourceDirName: "community/events", slug: "/community/events/estafettemodeldag", permalink: "/community/events/estafettemodeldag", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/estafettemodeldag.mdx", tags: [], version: "current", frontMatter: { title: "Estafettemodeldag", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Estafettemodeldag", pagination_label: "In het Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.", slug: "/community/events/estafettemodeldag" }, sidebar: "community", previous: { title: "Design Open Dag is een samenwerkdag waar designers met elkaar werken aan ontwerpproblemen.", permalink: "/events/design-open-dag" }, next: { title: "Wie doet mee?", permalink: "/community/wie-doet-mee" } },
-    d = {},
+    d = { id: "community/events/estafettemodeldag", title: "Estafettemodeldag", description: "Op estafettemodeldagen gaan we met designers en developers langs componenten, om na te gaan of ze voldoen aan onze Definition of Done.", source: "@site/docs/community/events/estafettemodeldag.mdx", sourceDirName: "community/events", slug: "/community/events/estafettemodeldag", permalink: "/community/events/estafettemodeldag", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/estafettemodeldag.mdx", tags: [], version: "current", frontMatter: { title: "Estafettemodeldag", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Estafettemodeldag", pagination_label: "In het Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.", slug: "/community/events/estafettemodeldag" }, sidebar: "community", previous: { title: "Tijdens de Design Open Dag komen designers bij elkaar om samen te werken aan designvraagstukken.", permalink: "/events/design-open-dag" }, next: { title: "Wie doet mee?", permalink: "/community/wie-doet-mee" } },
+    l = {},
     r = [
      { value: "Planning", id: "planning", level: 2 },
      { value: "Aanmelden", id: "aanmelden", level: 2 },
@@ -24,7 +24,7 @@
    }
   },
   24785: (e, n, t) => {
-   t.d(n, { Z: () => l, a: () => o });
+   t.d(n, { Z: () => d, a: () => o });
    var a = t(75271);
    const i = {},
     s = a.createContext(i);
@@ -37,7 +37,7 @@
      [n, e],
     );
    }
-   function l(e) {
+   function d(e) {
     let n;
     return (n = e.disableParentContext ? ("function" == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), a.createElement(s.Provider, { value: n }, e.children);
    }
