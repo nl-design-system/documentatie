@@ -1,5 +1,6 @@
 /* eslint-env node */
 import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
+import progress from '@nl-design-system/component-progress/dist/component-progress.json'
 import * as fs from 'fs';
 import * as path from 'path';
 import {
@@ -37,6 +38,22 @@ const ensureDir = (directoryName) => {
 
 const dir = ensureDir('build');
 
+function normalizeUrl(url) {
+  return url.split('#')[0];
+}
+
+function findMatchingProgressComponent(backlogUrl, progressData) {
+  const normalizedBacklog = normalizeUrl(backlogUrl);
+  for (const component of progressData) {
+    const normalizedUrl = normalizeUrl(component.url);
+    if (normalizedUrl === normalizedBacklog) {
+      return component;
+    }
+  }
+  return null;
+}
+
+
 componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   const fileName = `${dir}/${id}.mdx`;
   const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.md`);
@@ -68,6 +85,10 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   }
 
   console.log(`File created: ${fileName}`);
+  console.log({state, id, name, implementations, backlog});
+
+  const componentProgress = findMatchingProgressComponent(backlog, progress);
+  console.log(componentProgress);
 
   const groupedImplementations = implementations.reduce(
     (grouped, implementation) => {
