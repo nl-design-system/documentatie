@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.1.2 Taal van onderdelen
 pagination_label: WCAG-succescriterium 3.1.2 Taal van onderdelen
-description: Geef wisseling van de menselijke taal waarin de tekst van elke passage of zin is geschreven aan. Dit kan door in het html-element waarbinnen de tekst staat het attribuut ‘lang’ mee te geven.
+description: Als je pagina tekst bevat in een andere taal dan de hoofdtaal, geef dit dan aan. Dit kan door in het html-element waarbinnen de tekst staat het attribuut ‘lang’ mee te geven.
 slug: 3.1.2
 keywords:
   - WCAG
@@ -27,13 +27,15 @@ import { VideoPlayer } from "../../src/components/VideoPlayer";
 
 ## Uitleg
 
-Als er in de tekst woorden of zinnen voorkomen in een andere taal dan die van de webpagina is het fijn als deze tekst begrijpelijk wordt voorgelezen.
+Geef wisseling van de taal aan waarin de tekst van elke passage of zin is geschreven. Dit kan door in het HTML-element waarbinnen deze tekst staat het attribuut ‘lang’ mee te geven.
 
-Geef daarom wisseling van de menselijke taal waarin de tekst van elke passage of zin is geschreven aan. Dit kan door in het html-element waarbinnen deze tekst staat het attribuut ‘lang’ mee te geven.
+Dan wordt tekst in die andere taal correct uitgesproken en daardoor beter te begrijpen voor gebruikers die de website laten voorlezen.
 
-Er is een uitzondering voor eigennamen, technische termen, woorden van onbepaalde taal, en woorden of zinsdelen die deel uitmaken van het jargon van de omliggende tekst.
+Er is een uitzondering voor eigennamen, technische termen, woorden in een onbekende taal, en woorden of zinsdelen die deel uitmaken van het jargon van de omliggende tekst.
 
-Met het `lang`-attribuut vertel je aan een screenreader en andere voorleessoftware in welke taal de tekst van de pagina staat. Dan wordt deze tekst goed voorgelezen, afhankelijk van de instellingen van de voorleessoftware.
+Met het `lang`-attribuut breng je over welke taal (een deel van) je tekst heeft. Dan kunnen hulptechnologieën als screenreaders of vertaalsoftware daarop handelen. In het geval van screenreaders bijvoorbeeld door de tekst met de juiste stem voor te lezen.
+
+Of de juiste stem ook echt wordt gebruikt is afhankelijk van de instellingen van de gebruikte screenreader of voorleessoftware.
 
 Bijvoorbeeld `<p lang="en">Not all those who wander are lost.</p>` voor een zin in het Engels, in een verder Nederlandse tekst.
 
@@ -53,6 +55,8 @@ Bij het WCAG-succescriterium [3.1.1 Taal van de pagina](/wcag/3.1.1) staat uitge
 
 ### Demo taalwisseling met VoiceOver
 
+In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten die met het `lang`-attribuut zijn gemarkeerd.
+
 <VideoPlayer videoId="2UAjJ_5nxqw" />
 
 ## Bronnen
@@ -60,7 +64,7 @@ Bij het WCAG-succescriterium [3.1.1 Taal van de pagina](/wcag/3.1.1) staat uitge
 - [<span lang="en">The lang attribute: browsers telling lies, telling sweet little lies</span>](https://www.matuzo.at/blog/lang-attribute) van Manuel Matuzović over de problemen met het automatisch vertalen met Google Translate.
 - [<span lang="en">Language subtag lookup</span>](https://r12a.github.io/app-subtags/)
 - [<span lang="en">`lang`-attribuut op MDN</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
-- [<span lang="en">Language tags in HTML and XML</span>](https://www.w3.org/International/articles/language-tags/index.en) van de W3C.
+- [<span lang="en">Language tags in HTML and XML</span>](https://www.w3.org/International/articles/language-tags/index.en) van het W3C.
 
 ## Gebruikersonderzoek
 
