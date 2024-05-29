@@ -14,7 +14,7 @@ Zorg dat je plaatje een logische naam heeft en gebruik bijvoorbeeld ook het pad 
 
 ### 2. Upload het plaatje
 
-Ga naar[de assets branch](https://github.com/nl-design-system/documentatie/tree/assets) en upload het plaatje
+Ga naar [de assets branch](https://github.com/nl-design-system/documentatie/tree/assets) en upload het plaatje
 
 <img width="1079" alt="selecteer upload" src="https://user-images.githubusercontent.com/877246/212078115-a694689b-fa8a-42b3-857d-f622923806f2.png">
 
