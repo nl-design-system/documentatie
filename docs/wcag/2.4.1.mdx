@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.1 Blokken omzeilen
 pagination_label: WCAG-succescriterium 2.4.1 Blokken omzeilen
-description: Geef interactieve elementen een toegankelijke naam en een rol. Geef daarnaast, afhankelijk van de functionaliteit, het element een toestand (state), eigenschappen en een waarde mee.
+description: Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sneller te navigeren door onderdelen te kunnen overslaan.
 slug: 2.4.1
 keywords:
   - WCAG
@@ -27,41 +27,62 @@ import { VideoPlayer } from "../../src/components/VideoPlayer";
 
 ## Uitleg
 
-Gebruikers die de website van boven naar beneden doorlezen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. En dan speciaal grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie.
+Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.
 
-Zo voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.
+Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.
+
+Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.
 
 Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een screenreadergebruiker een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken.
+
 Maar voor een toetsenbordgebruiker is dat geen optie. Omdat screenreadergebruikers ook toetsenbordgebruiker zijn, is een zogenaamde skiplink een goede optie om content over te slaan. Deze techniek is voor iedereen beschikbaar.
 
 Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Het eerste focusable element, en staat deze zichtbaar linksboven op een vaste plek.
 
-Een uitzondering is als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.
+Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.
 
-Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud. Een skiplink naar het zoekformulier kan zinvol zijn. Ook kun je binnen de webpagina interne links plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.
+Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud. Een skiplink naar het zoekformulier kan zinvol zijn. Ook kun je binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.
 
 ### Demo skiplink op de website van de gemeente Den Haag
+Deze video laat zien hoe een skiplink werkt op de website van de [gemeente Den Haag](https://www.denhaag.nl/nl/).
 
 <VideoPlayer videoId="CULH5Iq9Tr8" />
 
 ### Hoe werkt een skiplink?
 
 Een skiplink in een interne link naar bijvoorbeeld het begin van de inhoud. Als een gebruiker deze link aanklikt, verplaats de focus naar een punt vlak boven de hoofdinhoud.
+
 De skiplink kan altijd zichtbaar zijn, of alleen zichtbaar worden als de link toetsenbordfocus krijgt. Beide opties zijn goed.
 
-In de HTML
+Je kunt bijvoorbeeld naar het `<main>`-element linken, als dit de hoofdinhoud van een webpagina bevat.
+
+Consistentie is belangrijk. Zet de skiplink altijd op dezelfde plek binnen een website en laat deze dezelfde plek linken.
+
+### Tabindex="-1"
+
+Om een skiplink in alle browsers goed te laten werken is het belangrijk dat de focus zich goed verplaatst naar het doelelement.
+
+Als dit element van nature geen focus kan krijgen, zoals een `<main>` landmark, kan het zijn dat de focus niet goed wordt verplaatst. Voeg daarom `tabindex="-1"` toe aan het element dat de focus moet krijgen.
+
+Het voordeel van `tabindex="-1"` is dat het element niet in de natuurlijke tabvolgorde wordt opgenomen, maar het wel focus kan krijgen.
+
+**Let op**: gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
+
+### Codevoorbeelden van een skiplink
+
+In de HTML:
 
 ```html
 <!-- De skiplink, geplaatst als eerste focusable element op de webpagina -->
-<a class="sr-only-focusable" href="#site-content">Ga naar de hoofdinhoud</a>
+<a class="sr-only-focusable" href="#site-content">Naar de hoofdinhoud</a>
 ```
 
 ```html
 <!-- Het doel van de skiplink, waar de hoofdinhoud begint -->
-<main id="site-content" class="content"></main>
+<main id="site-content" class="content" tabindex="-1">[...]</main>
 ```
 
-In de CSS (bijvoorbeeld, er zijn meerdere technieken om hetzelfde te bereiken.)
+In de CSS. Dit is een voorbeeld, er zijn meerdere technieken om hetzelfde effect te bereiken.
 
 ```css
 .sr-only-focusable {
@@ -85,19 +106,23 @@ In de CSS (bijvoorbeeld, er zijn meerdere technieken om hetzelfde te bereiken.)
 In het WordPress thema [Twenty Twenty-Four](https://nl.wordpress.org/themes/twentytwentyfour/):
 
 In de HTML:
+
 ```html
 <!-- De skiplink, geplaatst als eerste focusable element op de webpagina -->
-<a class="skip-link screen-reader-text" href="#wp--skip-link--target">Skip to content</a>
+<a class="skip-link screen-reader-text" href="#wp--skip-link--target">Naar de hoofdinhoud</a>
 ```
+
 ```html
 <!-- Het doel van de skiplink, waar de hoofdinhoud begint -->
-<main class="..." id="wp--skip-link--target">
+<main class="..." id="wp--skip-link--target" tabindex="-1">[...]</main>
 ```
+
 In de CSS:
+
 ```css
 .skip-link.screen-reader-text {
   border: 0;
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -130,49 +155,64 @@ In de CSS:
 
 - [Zo zet je skiplinks in voor een optimale navigatie](https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie) van Stichting Accessibility.
 - [Skiplinks](http://niekderksen.nl/toegankelijkheid/skiplinks/) van Niek Derksen.
+- [<span lang="en">Understanding skip link</span>](https://tatiana-fokina-blog.ru/en/articles/understanding-a-skip-link/) van Tatiana Fokina.
+- [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
 - [Skip link component op Gov.UK](https://design-system.service.gov.uk/components/skip-link/).
 - [Skip link component van het CIBG](https://designsystem.cibg.nl/componenten/skiplink/).
 
 ## Gebruikersonderzoek
 
-WebAim publiceert elk jaar de [<span lang="en">Screen Reader User Survey</span>](https://webaim.org/projects/screenreadersurvey10/). In 2024 staat het ontbreken van een skiplink in de [top 12 van problemen](https://webaim.org/projects/screenreadersurvey10/#problematic).
+WebAIM publiceert elk jaar de [<span lang="en">Screen Reader User Survey</span>](https://webaim.org/projects/screenreadersurvey10/). In 2024 staat het ontbreken van een skiplink in de [top 12 van problemen](https://webaim.org/projects/screenreadersurvey10/#problematic).
 
 <CTAGebruikersonderzoek />
 
 ## Hoe te testen
 
-Bepaal eerst of er een skiplink nodig is. Als er geen navigatiebokken bovenaan de webpagina staan en de pagina meteen met de hoofdinhoud begint is een skiplink zinloos.
+Bepaal eerst of er een skiplink nodig is. Als er bijvoorbeeld geen navigatieblokken bovenaan de webpagina staan en de pagina meteen met de hoofdinhoud begint is een skiplink zinloos.
 
 Als een skiplink wel zin heeft op een webpagina:
-- Controleer of een skiplink niet verborden wordt met de CSS `display: none;` De skiplink moet voor screenreadergebruikers ook zonder focus te herkennen zijn in de lijst met links.
-- Controleer of een verborgen skiplink zichtbaar wordt op toetsenbordfocus,
+
+- Controleer of een skiplink niet verborgen wordt met de CSS `display: none;` De skiplink moet voor screenreadergebruikers ook zonder focus te herkennen zijn in de lijst met links.
+- Controleer of een verborgen skiplink zichtbaar wordt op toetsenbordfocus.
+- Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.
 - Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.
 
-Sommige validatiesoftware meldt dat een skiplink binnen een landmark moet staan. Hierover zijn de meningen verdeeld. Het plaatsen van een skiplink buiten de landmarkstructuur is in ieder geval geen voorwaarde om aan dit WCAG-succescriterium te voldoen.
+Sommige validatiesoftware meldt dat een skiplink binnen een landmark moet staan. Hierover zijn de meningen verdeeld. Het plaatsen van een skiplink binnen een landmark is in ieder geval geen voorwaarde om aan WCAG te voldoen.
 
 ## Veelgemaakte fouten
 
 ### Fout: de toetsenbordfocus verplaatst zich niet na aanklikken skiplink
-Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een `scrollIntoView()` method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus. Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met `focus()`. Voor sommige browsers is het in dit geval nodig het doelelement tabindex="0" mee te geven om het de focus te kunnen geven.
 
-**Let op**: gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
+Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een `scrollIntoView()` method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus.
+Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met `focus()`. Voeg tabindex="-1" toe aan het doelelement om het de focus te kunnen geven met `tabIndex = -1`.
 
 ### Fout: het linkdoel van de skiplink bestaat niet
-Controleer altijd of het doel waar de skiplink naar toe gaat ook inderdaad bestaat. Bij aanpassingen aan een template kan dit wel eens over het hoofd gezoen worden.
 
-### Fout: Het link-attribuut `name` wordt gebruikt in een skiplink
+Controleer altijd of het doel waar de skiplink naar toe gaat ook inderdaad bestaat. Bij aanpassingen aan een template kan dit wel eens over het hoofd gezien worden.
 
-In HTML5 is het gebruik van het `name` attribuut in een interne link niet ondersteund.
-Zie
+### Fout: de skiplink verwijst naar een name-attribuut
+
+In HTML5 wordt het gebruik van het `name` attribuut in een interne link [niet ondersteund](https://html.spec.whatwg.org/multipage/obsolete.html#obsolete-but-conforming-features).
+
+Wat vroeger een goede opzet was in HTML4, is nu in HTML5 niet meer geldig.
+
 ```html
-<!-- Niet gebruiken, foute code -->
-<a href="#internal-url" name="name"></a><h1>Contact</h1>
-
-
+<!-- Niet gebruiken, code is niet geldig in HTML5 -->
+<a href="#site-content">Naar de hoofdinhoud</a>
+[...]
+<main>
+  <a name="site-content"></a>
+  [...]
+</main>
 ```
+
+Correcte code: verwijs naar een element met een id.
 
 ```html
 <!-- Correcte opzet van een skiplink -->
+<a href="#site-content">Naar de hoofdinhoud</a>
+[...]
+<main id="site-content" tabindex="-1">[...]</main>
 ```
 
 <WCAGFooterInfo />
