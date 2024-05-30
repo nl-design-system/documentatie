@@ -87,7 +87,7 @@ const config: Config = {
     },
     announcementBar: {
       content:
-        'Doe je mee of wil je meedoen met NL Design System? <a href="/community/sluit-je-aan" class="utrecht-link">Meld  je aan</a> bij onze community!',
+        'Kom je eind juni naar onze borrel in Utrecht? <a href="/community/sluit-je-aan" class="utrecht-link">Meld  je aan</a> bij onze community!',
       backgroundColor: '#148839',
       textColor: '#fff',
       isCloseable: false,
