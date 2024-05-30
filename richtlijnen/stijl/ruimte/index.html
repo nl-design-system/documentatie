@@ -31,7 +31,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.8ba60658.css" />
   <script src="/assets/js/runtime~main.d59cfc72.js" defer="defer"></script>
-  <script src="/assets/js/main.5ff4bc1a.js" defer="defer"></script>
+  <script src="/assets/js/main.04706268.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -54,18 +54,30 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith("docusaurus-data-")) {
-        var a = t.replace("docusaurus-data-", "data-");
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     "data-announcement-bar-initially-dismissed",
+     (function () {
+      try {
+       return "true" === localStorage.getItem("docusaurus.announcement.dismiss");
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_msKp" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar_s0pr" style="background-color: #148839; color: #fff" role="banner">
+     <div class="content_zf74 announcementBarContent_dpRF">Kom je eind juni naar onze borrel in Utrecht? <a href="/community/sluit-je-aan" class="utrecht-link">Meld je aan</a> bij onze community!</div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
@@ -101,7 +113,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
@@ -212,9 +224,137 @@
               <p>Marge ofwel ‘Margin’ is het deel buiten de border van de box. Margin zorgt voor ruimte tussen aangrenzende boxen. Margin is transparant, heeft geen eigen kleur. Margin draagt niet bij aan de breedte van een element.</p>
               <h2 id="spacing-concepten" class="utrecht-heading-2">Spacing concepten</h2>
               <h3 id="maak-gebruik-van-de-spacing-concepten" class="utrecht-heading-3">Maak gebruik van de spacing concepten.</h3>
-              <p>Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze ‘spacing concepten</p>
+              <p>Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze ‘spacing concepten’ worden met behulp van Design Tokens toegepast op alle componenten en templates.</p>
+              <p>Let wel; gebruik &#x27;Spacing&#x27; design tokens enkel voor ruimte binnen en tussen componenten. Gebruik &#x27;Sizing&#x27; design tokens voor de grootte van elementen.</p>
+              <h4 id="inline" class="utrecht-heading-4">Inline</h4>
+              <p>Inline tussenruimte is de ruimte binnen componenten, voor of na tekst.</p>
+              <p>Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creeeren voor of na tekst. In CSS kun je de volgende properties gebruiken:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">margin-inline-start</li>
+               <li class="utrecht-unordered-list__item">margin-inline-end</li>
+               <li class="utrecht-unordered-list__item">padding-inline-start</li>
+               <li class="utrecht-unordered-list__item">padding-inline-end</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-inline.png" alt="Spacing scale met verticaal 10 blokjes. In elk blokje staat de tekst &#x27;label&#x27;. Links en rechts van de tekst staan lichtroze vlakken. De vlakken worden per blokje breeder." class="utrecht-img" /></p>
+              <h4 id="block" class="utrecht-heading-4">Block</h4>
+              <p>Block tussenruimte is de ruimte binnen componenten, boven of onder tekst.</p>
+              <p>Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creeeren boven of onder tekst. In CSS kun je de volgende properties gebruiken:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">margin-block-start</li>
+               <li class="utrecht-unordered-list__item">margin-block-end</li>
+               <li class="utrecht-unordered-list__item">padding-block-start</li>
+               <li class="utrecht-unordered-list__item">padding-block-end</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-block.png" alt="Spacing scale met horizontaal 10 blokjes. In elk blokje staat de tekst &#x27;label&#x27;. Boven en onder de tekst staan roze vlakken. De vlakken worden per blokje hoger." class="utrecht-img" /></p>
+              <h4 id="text" class="utrecht-heading-4">Text</h4>
+              <p>Text tussenruimte is de ruimte binnen componenten, tussen tekst en iconen.</p>
+              <p>Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creeeren tussen verschillende teksten of iconen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-text.png" alt="Spacing scale met verticaal 10 blokjes. In elk blokje staat een kalender icoon en de tekst &#x27;label&#x27;. Tussen het icoon en de tekst staan groene vlakken. De vlakken worden per blokje breeder." class="utrecht-img" /></p>
+              <h4 id="column" class="utrecht-heading-4">Column</h4>
+              <p>Column tussenruimte is de horizontale ruimte tussen componenten.</p>
+              <p>Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">margin-inline-start</li>
+               <li class="utrecht-unordered-list__item">margin-inline-end</li>
+               <li class="utrecht-unordered-list__item">padding-inline-start</li>
+               <li class="utrecht-unordered-list__item">padding-inline-end</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-column.png" alt="Spacing scale met verticaal 2 kolommen van 10 blokjes. In elk blokje staat de tekst &#x27;label&#x27;. Per twee blokjes is er hotizontaal een lichtblauw vlak De vlakken worden per blokje breeder." class="utrecht-img" /></p>
+              <h4 id="row" class="utrecht-heading-4">Row</h4>
+              <p>Row tussenruimte is de verticale ruimte tussen componenten.</p>
+              <p>Gebruik de ‘Row’ spacing scale om verticaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">margin-block-start</li>
+               <li class="utrecht-unordered-list__item">margin-block-end</li>
+               <li class="utrecht-unordered-list__item">padding-block-start</li>
+               <li class="utrecht-unordered-list__item">padding-block-end</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-row.png" alt="Spacing scale met horizontaal 2 rijen van 10 blokjes. In elk blokje staat de tekst &#x27;label&#x27;. Per twee blokjes is er verticaal een blauw vlak. De vlakken worden per blokje hoger." class="utrecht-img" /></p>
+              <p>Met deze spacing concepten kun je alle componenten op een consistente manier van ruimte voorzien. Denk bijvoorbeeld aan een ‘Card’ of de ruimte tussen de elementen in een formulier.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_card.png" alt="Twee card componenten. Bij het eerste card component zijn door middel van kleurvlakken de ruimtes aangeduid." class="utrecht-img" /></p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_form.png" alt="Twee korte formulieren. Bij het eerste formulier zijn door middel van kleurvlakken de verticale ruimtes aangeduid." class="utrecht-img" /></p>
+              <h2 id="ontwerpen-met-ruimte" class="utrecht-heading-2">Ontwerpen met ruimte</h2>
+              <h3 id="relaties" class="utrecht-heading-3">Relaties</h3>
+              <h4 id="gebruik-ruimte-om-relaties-te-creëren-tussen-elementen" class="utrecht-heading-4">Gebruik ruimte om relaties te creëren tussen elementen.</h4>
+              <p>Gebruik kleine afstanden om elementen samen te groeperen en grotere afstanden om ze te scheiden. Elementen die dicht bij elkaar staan lijken meer met elkaar verbonden te zijn dan dingen die verder uit elkaar staan.</p>
+              <p>Dit is een van de <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" class="utrecht-link utrecht-link--html-a">Gestalt principes</a> ookwel bekend als <a href="https://lawsofux.com/law-of-proximity/" class="utrecht-link utrecht-link--html-a">Law of proximity</a>.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties.png" alt="36 stippen. Door een ruimte wordt er een groepje van 24 en 12 stippen gemaakt." class="utrecht-img" /></p>
+              <h4 id="relaties-binnen-typografie" class="utrecht-heading-4">Relaties binnen typografie</h4>
+              <p>De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de ruimte tussen de koptekst en de eerste alinea na die koptekst.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties-typografie.png" alt="Screenshot van een artikel. Duidelijk is dat de witruimte boven kopteksten groter is dan onder de kopteksten." class="utrecht-img" /></p>
+              <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html" class="utrecht-link utrecht-link--html-a">WCAG richtlijn 1.4.8 ‘Visual Presentation’</a> beschrijft dat de regelafstand van een alinea ten minste 1.5 zou moeten zijn. En dat de afstand tussen alinea’s ten minste 1,5 keer zo groot zou moeten zijn als de regelafstand.</p>
+              <h3 id="hiërarchie" class="utrecht-heading-3">Hiërarchie</h3>
+              <h4 id="gebruik-ruimte-om-hiërarchie-te-creëren-tussen-elementen" class="utrecht-heading-4">Gebruik ruimte om hiërarchie te creëren tussen elementen.</h4>
+              <p>Gebruik ruimte om belangrijke elementen extra attentiewaarde mee te geven. Elementen met meer ruimte hebben ogen belangrijker dan elementen die minder ruimte om zich heen hebben.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_hierarchie.png" alt="Vier stippen in vier vlakken. Er is 1 vlak dat meer witruimte heeft waardoor deze meer opvalt." class="utrecht-img" /></p>
+              <h3 id="ruim-of-compact" class="utrecht-heading-3">Ruim of Compact</h3>
+              <h4 id="stem-het-gebruik-van-ruimte-af-op-de-functie-en-inhoud-van-de-dienst" class="utrecht-heading-4">Stem het gebruik van ruimte af op de functie en inhoud van de dienst.</h4>
+              <p>Veel ruimte werkt goed bij het lezen van langere teksten en het creëren van een bepaalde sfeer (branding). Compacte ruimte is geschikt voor het efficiënt uitvoeren van taken. Denk bijvoorbeeld aan pagina’s met veel data in tabellen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_purpose.png" alt="Twee schematische weergaves van een interface. De eerste is ruim opgezet met een groot vlak en tekst. De tweede is compact met een tabel" class="utrecht-img" /></p>
+              <p>Informatie die te compact wordt gepresenteerd kan moeilijk te verwerken zijn voor gebruikers. Zorg er daarom voor dat de layout van de pagina voldoende witruimte heeft.</p>
+              <h3 id="ruimte-tussen-interactieve-elementen" class="utrecht-heading-3">Ruimte tussen interactieve elementen</h3>
+              <h4 id="reserveer-ruimte-tussen-interactieve-elementen" class="utrecht-heading-4">Reserveer ruimte tussen interactieve elementen.</h4>
+              <p>Hoewel WCAG wel een richtlijn heeft voor target size. Wordt er niks vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.</p>
+              <p>Voor iemand met een bevende hand kan een website lastiger te gebruiken zijn als grote delen van het scherm interactief (button of link) zijn.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_interactieve-elementen.png" alt="Drie verticaal gestapelde vlakken met daarin het woord &#x27;Interactie element&#x27;. Tussen deze vlakken bevindt zich een lege ruimte met de tekst &#x27;witruimte&#x27;" class="utrecht-img" /></p>
+              <h2 id="meer-informatie" class="utrecht-heading-2">Meer informatie</h2>
+              <h3 id="gerelateerde-wcag-richtlijnen" class="utrecht-heading-3">Gerelateerde WCAG Richtlijnen</h3>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html" class="utrecht-link utrecht-link--html-a">1.4.8: Visual presentation</a></li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p10-whitespace/" class="utrecht-link utrecht-link--html-a">Use White Spacing - Supplemental Guidance to WCAG 2</a></li>
+              </ul>
+              <h3 id="links" class="utrecht-heading-3">Links</h3>
+              <p>
+               <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" class="utrecht-link utrecht-link--html-a">Visual Perception And The Principles Of Gestalt - Steven Bradley</a><br />
+               Artikel waarin de verschillende gestalt principes worden beschreven.
+              </p>
+              <p>
+               <a href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62" class="utrecht-link utrecht-link--html-a">Space in design systems - Nathan Curtis</a><br />
+               Artikel waarin het toepassen van ruimte binnen een design system wordt beschreven.
+              </p>
+              <p>
+               <a href="https://axesslab.com/hand-tremors/" class="utrecht-link utrecht-link--html-a">Hand tremors and the giant-button-problem - Hampus Sethfors</a><br />
+               Artikel, en video, waarin duidelijk wordt waarom het van belang is om voldoende witruimte bij grote interactieve elementen toe te voegen.
+              </p>
+              <hr />
+              <h2 id="over-deze-richtlijnen" class="utrecht-heading-2">Over deze richtlijnen</h2>
+              <p>Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in <em class="utrecht-emphasis utrecht-emphasis--stressed">beta</em>.</p>
+              <p>We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/discussions/473" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a> met je suggesties.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/stijl/ruimte.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_R0Yn" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_tQw2"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/richtlijnen/stijl/kleuren"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Kleuren</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/richtlijnen/stijl/iconen"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Iconen</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_rrDq thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#spacing-scale" class="table-of-contents__link toc-highlight">Spacing scale</a></li>
+             <li><a href="#box-model" class="table-of-contents__link toc-highlight">Box model</a></li>
+             <li><a href="#spacing-concepten" class="table-of-contents__link toc-highlight">Spacing concepten</a></li>
+             <li><a href="#ontwerpen-met-ruimte" class="table-of-contents__link toc-highlight">Ontwerpen met ruimte</a></li>
+             <li><a href="#meer-informatie" class="table-of-contents__link toc-highlight">Meer informatie</a></li>
+             <li><a href="#over-deze-richtlijnen" class="table-of-contents__link toc-highlight">Over deze richtlijnen</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -223,6 +363,25 @@
       </div>
      </div>
     </div>
+    <footer class="footer footer--dark footer_VVap">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>
