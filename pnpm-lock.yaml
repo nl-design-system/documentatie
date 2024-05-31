@@ -118,8 +118,8 @@ importers:
         specifier: 7.8.0
         version: 7.8.0(eslint@8.57.0)(typescript@5.4.5)
       '@utrecht/component-library-css':
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.1.0
+        version: 3.1.0
       '@utrecht/component-library-react':
         specifier: 3.0.0
         version: 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2123,8 +2123,8 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@utrecht/component-library-css@3.0.0':
-    resolution: {integrity: sha512-g4DUnyGqkpg0f307tYbg+KZHHvvIllm4svK8u9TEIcHbXsa86wc+T4ncBZqLbNik4EPOX+g4nDEnePVmFgPS/A==}
+  '@utrecht/component-library-css@3.1.0':
+    resolution: {integrity: sha512-x5Eq8VrxCShMx7e1myEp0asja8boYHPGbOxvR3xt0lRdLK0hCh1xKDKarlY2Dm+kfxO7CLTRrFPu6vdUxTgWIw==}
 
   '@utrecht/component-library-react@3.0.0':
     resolution: {integrity: sha512-7ftpjtQ6ygIMqlB+pWQZAT7psFo1oXkbBSlbVw/uMV5OABRDX5t3V2lN/UDTPjdMRtcj8ZBYl19zPcfkV+Gc5w==}
@@ -10747,7 +10747,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@utrecht/component-library-css@3.0.0': {}
+  '@utrecht/component-library-css@3.1.0': {}
 
   '@utrecht/component-library-react@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
