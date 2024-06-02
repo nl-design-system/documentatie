@@ -1,0 +1,56 @@
+.task-list {
+  --todo-task-list-item-column-gap: 12px;
+  --todo-task-list-font-size: var(--utrecht-paragraph-font-size);
+  --todo-task-list-icon-color: #167e33;
+  --todo-task-list-icon-size: 16px;
+  --todo-task-list-item-marker-size: 24px;
+  --todo-task-list-item-marker-background-color: #0a2750;
+  --todo-task-list-item-marker-checked-background-color: inherit;
+
+  --utrecht-space-around: 0.4;
+  --utrecht-heading-3-font-size: var(--todo-task-list-font-size);
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-end: 0;
+  --utrecht-paragraph-margin-block-start: 0;
+  --utrecht-icon-size: var(--todo-task-list-icon-size);
+  --utrecht-icon-color: var(--todo-task-list-icon-color);
+
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding-block-start: 4px;
+}
+
+.task-list-item {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--todo-task-list-item-column-gap);
+  align-items: baseline;
+  margin-block-start: 4px;
+  margin-block-end: 16px;
+}
+
+.task-list-item__marker {
+  border-radius: 50%;
+  background-color: white;
+  width: var(--todo-task-list-item-marker-size);
+  height: var(--todo-task-list-item-marker-size);
+  min-width: var(--todo-task-list-item-marker-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.task-list-item__marker:not(.task-list-item__marker--checked)::before {
+  content: "";
+  background-color: var(--todo-task-list-item-marker-background-color);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  bottom: 2px;
+  position: absolute;
+}
+
+.task-list-item__marker--checked {
+  background-color: var(--todo-task-list-item-marker-checked-background-color);
+}
