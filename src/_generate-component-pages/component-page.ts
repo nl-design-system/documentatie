@@ -84,22 +84,23 @@ ${getStateDescription({ state })}${
   }`;
 };
 
-export const getComponentStatus = (projectChecks, componentChecks) => `## Help Wanted
+export const getComponentStatus = (projectChecks, componentChecks) => {
 
-${projectChecks.map(({ name, id }) => {
-  if (name === "Title") return ``;
+  const checks = projectChecks
+    .filter(check => check.dataType !== "TITLE")
+    .map(check => {
+      const componentCheck = componentChecks.find(({ id }) => id === check.id);
+      return {
+        ...check,
+        ...componentCheck
+      };
 
-  const componentCheck = componentChecks.find((check) => check.id === id);
+    });
 
-  if (componentCheck) {
-    return `
-    - [x] ${name}`;
-  } else {
-    return `
-    - [ ] ${name}`;
-  }
-})}
-`;
+  return `## Help Wanted
+
+  `
+};
 
 export const getImplementationsSection = () => `## Implementaties
 `;
