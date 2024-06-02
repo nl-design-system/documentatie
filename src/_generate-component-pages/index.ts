@@ -1,18 +1,19 @@
 /* eslint-env node */
-import { COMPONENT_STATES, ComponentImplementation, componentIndex } from "@nl-design-system/component-index";
-import progress from "@nl-design-system/component-progress/dist/component-progress.json";
-import projectDetails from "@nl-design-system/component-progress/dist/project-details.json";
-import * as fs from "fs";
-import * as path from "path";
+import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
+import progress from '@nl-design-system/component-progress/dist/component-progress.json';
+import projectDetails from '@nl-design-system/component-progress/dist/project-details.json';
+import * as fs from 'fs';
+import * as path from 'path';
 import {
   componentPage,
-  getBacklogLink, getComponentStatus,
+  getBacklogLink,
+  getComponentStatus,
   getImplementationsSection,
   getImplementationTitle,
-  implementationDetails
-} from "./component-page";
+  implementationDetails,
+} from './component-page';
 
-const DOCS_PATH = "../../docs/componenten";
+const DOCS_PATH = '../../docs/componenten';
 
 const ensureDir = (directoryName) => {
   const dirPath = path.join(__dirname, DOCS_PATH, directoryName);
@@ -21,7 +22,7 @@ const ensureDir = (directoryName) => {
     try {
       fs.rmdirSync(dirPath, { recursive: true });
     } catch (_) {
-      throw new Error("Directory could not be removed");
+      throw new Error('Directory could not be removed');
     }
     console.log(`Directory removed: ${dirPath}`);
   }
@@ -29,7 +30,7 @@ const ensureDir = (directoryName) => {
   try {
     fs.mkdirSync(dirPath, { recursive: true });
   } catch (_) {
-    throw new Error("File could not be created");
+    throw new Error('File could not be created');
   }
 
   console.log(`Directory available: ${dirPath}`);
@@ -37,32 +38,24 @@ const ensureDir = (directoryName) => {
   return dirPath;
 };
 
-const dir = ensureDir("build");
+const dir = ensureDir('build');
 
 function normalizeUrl(url) {
-  return url.split("#")[0];
+  return url.split('#')[0];
 }
 
 function findMatchingProgressComponent(backlogUrl, progressData) {
-  const normalizedBacklog = normalizeUrl(backlogUrl);
-  for (const component of progressData) {
-    const normalizedUrl = normalizeUrl(component.url);
-    if (normalizedUrl === normalizedBacklog) {
-      return component;
-    }
-  }
-  return null;
+  const normalizedBacklogUrl = normalizeUrl(backlogUrl);
+  return progressData.find((component) => normalizeUrl(component.url) === normalizedBacklogUrl);
 }
 
-function getProjectInComponentProgress(component, projectId) {
+function getComponentChecks(component, projectId) {
   const project = component.projects.find((project: never) => project[projectId] !== undefined);
   if (project) {
-    return project[projectId];
-  } else {
-    throw new Error(`Project with number ${projectId} not found in component progress`);
+    return project[projectId].checks;
   }
+  return [];
 }
-
 
 function findProjectDetails(projectData, projectName) {
   if (projectData[projectName] !== undefined) {
@@ -72,7 +65,7 @@ function findProjectDetails(projectData, projectName) {
   }
 }
 
-const helpWantedProject = findProjectDetails(projectDetails, "HELP_WANTED");
+const helpWantedProject = findProjectDetails(projectDetails, 'HELP_WANTED');
 
 componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   const fileName = `${dir}/${id}.mdx`;
@@ -82,7 +75,7 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
 
   const story = storyTemplate && {
     label: `https://nl-design-system.github.io/themes/`,
-    href: `https://nl-design-system.github.io/themes/iframe.html?viewMode=story&id=${id}--utrecht`
+    href: `https://nl-design-system.github.io/themes/iframe.html?viewMode=story&id=${id}--utrecht`,
   };
 
   //nl-design-system.github.io/themes/iframe.html?args=appearance:primary-action-button&id=button--gemeente-utrecht&viewMode=story
@@ -97,21 +90,21 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
         name,
         state,
         story,
-        customDoc: hasCustomDoc && path.relative(dir, customDocsPath)
-      })
+        customDoc: hasCustomDoc && path.relative(dir, customDocsPath),
+      }),
     );
   } catch (err) {
     console.error(err);
   }
 
-  if (state === COMPONENT_STATES.TODO) {
-    const componentProgress = findMatchingProgressComponent(backlog, progress);
-    const projectId = helpWantedProject.number.toString();
-    const componentChecks = getProjectInComponentProgress(componentProgress, projectId).checks;
-    const projectChecks = findProjectDetails(projectDetails, "HELP_WANTED").view.fields.checks;
+  const componentProgress = backlog && findMatchingProgressComponent(backlog, progress);
 
-    if (componentProgress)
-      fs.appendFileSync(fileName, getComponentStatus(projectChecks, componentChecks));
+  if (componentProgress) {
+    const projectId = helpWantedProject.number.toString();
+    const componentChecks = getComponentChecks(componentProgress, projectId);
+    const projectChecks = findProjectDetails(projectDetails, 'HELP_WANTED').view.fields.checks;
+
+    if (componentProgress) fs.appendFileSync(fileName, getComponentStatus(projectChecks, componentChecks));
   }
 
   const groupedImplementations = implementations.reduce(
@@ -120,7 +113,7 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
       grouped[implementation.type] = [...group, implementation];
       return grouped;
     },
-    {} as { [key: string]: ComponentImplementation[] }
+    {} as { [key: string]: ComponentImplementation[] },
   );
 
   if (implementations.length) {
