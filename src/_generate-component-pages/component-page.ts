@@ -1,31 +1,31 @@
-import { COMPONENT_STATES, COMPONENT_TYPES, ComponentImplementation } from '@nl-design-system/component-index';
+import { COMPONENT_STATES, COMPONENT_TYPES, ComponentImplementation } from "@nl-design-system/component-index";
 
 export const getStateDescription = ({ state }) => {
-  let description = '';
+  let description = "";
 
   switch (state) {
     case COMPONENT_STATES.TODO:
       description =
-        'Heb je dit component nodig? Laat het ons weten, misschien kunnen we samen aan een eerste community versie werken volgens de NL Design System architectuur.';
+        "Heb je dit component nodig? Laat het ons weten, misschien kunnen we samen aan een eerste community versie werken volgens de NL Design System architectuur.";
       break;
     case COMPONENT_STATES.COMMUNITY:
       description =
-        'Heb je hem succesvol ingezet voor jouw project met jouw huisstijl? Laat ons dit weten, misschien kan dit component dan opgenomen worden in NL Design System.';
+        "Heb je hem succesvol ingezet voor jouw project met jouw huisstijl? Laat ons dit weten, misschien kan dit component dan opgenomen worden in NL Design System.";
       break;
     case COMPONENT_STATES.NL_UNSTABLE:
       description =
-        'Het component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
+        "Het component is een kandidaat voor onze \"Hall of fame\". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!";
       break;
     case COMPONENT_STATES.NL_STABLE:
       description =
-        'Dit component is onderdeel van de "Hall of fame" en wordt al door anderen succesvol in productie ingezet.';
+        "Dit component is onderdeel van de \"Hall of fame\" en wordt al door anderen succesvol in productie ingezet.";
       break;
     case COMPONENT_STATES.DISCOURAGED:
       description =
-        'Dit component is geen onderdeel van NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.';
+        "Dit component is geen onderdeel van NL Design System. Gebruik van dit component wordt door het kernteam afgeraden.";
       break;
     default:
-      description = '';
+      description = "";
       break;
   }
 
@@ -50,16 +50,16 @@ tags:
 {/* @license CC0-1.0 */}
 {/* File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  */}
 ${
-  story
-    ? `import { Story } from "../../../src/components/Story";
+    story
+      ? `import { Story } from "../../../src/components/Story";
 `
-    : ''
-}${
+      : ""
+  }${
     customDoc
       ? `import { Markdown } from "../../../src/components/Markdown";
 import CustomDoc from "${customDoc}";
 `
-      : ''
+      : ""
   }
 # ${name}
 
@@ -70,7 +70,7 @@ ${getStateDescription({ state })}${
 <Story label="${story.label}" href="${story.href}"/>
 
 `
-      : ''
+      : ""
   }${
     customDoc
       ? `## UX en toegankelijkheid
@@ -80,9 +80,26 @@ ${getStateDescription({ state })}${
 </Markdown>
 
 `
-      : ''
+      : ""
   }`;
 };
+
+export const getComponentStatus = (projectChecks, componentChecks) => `## Help Wanted
+
+${projectChecks.map(({ name, id }) => {
+  if (name === "Title") return ``;
+
+  const componentCheck = componentChecks.find((check) => check.id === id);
+
+  if (componentCheck) {
+    return `
+    - [x] ${name}`;
+  } else {
+    return `
+    - [ ] ${name}`;
+  }
+})}
+`;
 
 export const getImplementationsSection = () => `## Implementaties
 `;
@@ -91,17 +108,17 @@ export const getImplementationTitle = ({ type }) => `### ${type}
 `;
 
 export const implementationDetails = ({
-  name,
-  organisation,
-  implementation,
-  story,
-  type,
-}: ComponentImplementation & { name: string }) => {
+                                        name,
+                                        organisation,
+                                        implementation,
+                                        story,
+                                        type
+                                      }: ComponentImplementation & { name: string }) => {
   if (type !== COMPONENT_TYPES.FIGMA) {
     return `#### ${organisation}
 
 - Implementatie: [${name} ${type} implementatie van ${organisation}](${implementation})
-- Storybook: ${story ? `[${name} ${type} storybook van ${organisation}](${story})` : '(nog) geen story beschikbaar'}
+- Storybook: ${story ? `[${name} ${type} storybook van ${organisation}](${story})` : "(nog) geen story beschikbaar"}
 
 `;
   } else {
