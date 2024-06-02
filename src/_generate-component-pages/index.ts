@@ -1,17 +1,18 @@
 /* eslint-env node */
-import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
-import progress from '@nl-design-system/component-progress/dist/component-progress.json'
-import * as fs from 'fs';
-import * as path from 'path';
+import { COMPONENT_STATES, ComponentImplementation, componentIndex } from "@nl-design-system/component-index";
+import progress from "@nl-design-system/component-progress/dist/component-progress.json";
+import projectDetails from "@nl-design-system/component-progress/dist/project-details.json";
+import * as fs from "fs";
+import * as path from "path";
 import {
   componentPage,
-  getBacklogLink,
+  getBacklogLink, getComponentStatus,
   getImplementationsSection,
   getImplementationTitle,
-  implementationDetails,
-} from './component-page';
+  implementationDetails
+} from "./component-page";
 
-const DOCS_PATH = '../../docs/componenten';
+const DOCS_PATH = "../../docs/componenten";
 
 const ensureDir = (directoryName) => {
   const dirPath = path.join(__dirname, DOCS_PATH, directoryName);
@@ -20,7 +21,7 @@ const ensureDir = (directoryName) => {
     try {
       fs.rmdirSync(dirPath, { recursive: true });
     } catch (_) {
-      throw new Error('Directory could not be removed');
+      throw new Error("Directory could not be removed");
     }
     console.log(`Directory removed: ${dirPath}`);
   }
@@ -28,7 +29,7 @@ const ensureDir = (directoryName) => {
   try {
     fs.mkdirSync(dirPath, { recursive: true });
   } catch (_) {
-    throw new Error('File could not be created');
+    throw new Error("File could not be created");
   }
 
   console.log(`Directory available: ${dirPath}`);
@@ -36,10 +37,10 @@ const ensureDir = (directoryName) => {
   return dirPath;
 };
 
-const dir = ensureDir('build');
+const dir = ensureDir("build");
 
 function normalizeUrl(url) {
-  return url.split('#')[0];
+  return url.split("#")[0];
 }
 
 function findMatchingProgressComponent(backlogUrl, progressData) {
@@ -53,6 +54,25 @@ function findMatchingProgressComponent(backlogUrl, progressData) {
   return null;
 }
 
+function getProjectInComponentProgress(component, projectId) {
+  const project = component.projects.find((project: never) => project[projectId] !== undefined);
+  if (project) {
+    return project[projectId];
+  } else {
+    throw new Error(`Project with number ${projectId} not found in component progress`);
+  }
+}
+
+
+function findProjectDetails(projectData, projectName) {
+  if (projectData[projectName] !== undefined) {
+    return projectData[projectName];
+  } else {
+    throw new Error(`Project ${projectName} not found in project details`);
+  }
+}
+
+const helpWantedProject = findProjectDetails(projectDetails, "HELP_WANTED");
 
 componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   const fileName = `${dir}/${id}.mdx`;
@@ -62,7 +82,7 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
 
   const story = storyTemplate && {
     label: `https://nl-design-system.github.io/themes/`,
-    href: `https://nl-design-system.github.io/themes/iframe.html?viewMode=story&id=${id}--utrecht`,
+    href: `https://nl-design-system.github.io/themes/iframe.html?viewMode=story&id=${id}--utrecht`
   };
 
   //nl-design-system.github.io/themes/iframe.html?args=appearance:primary-action-button&id=button--gemeente-utrecht&viewMode=story
@@ -77,18 +97,22 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
         name,
         state,
         story,
-        customDoc: hasCustomDoc && path.relative(dir, customDocsPath),
-      }),
+        customDoc: hasCustomDoc && path.relative(dir, customDocsPath)
+      })
     );
   } catch (err) {
     console.error(err);
   }
 
-  console.log(`File created: ${fileName}`);
-  console.log({state, id, name, implementations, backlog});
+  if (state === COMPONENT_STATES.TODO) {
+    const componentProgress = findMatchingProgressComponent(backlog, progress);
+    const projectId = helpWantedProject.number.toString();
+    const componentChecks = getProjectInComponentProgress(componentProgress, projectId).checks;
+    const projectChecks = findProjectDetails(projectDetails, "HELP_WANTED").view.fields.checks;
 
-  const componentProgress = findMatchingProgressComponent(backlog, progress);
-  console.log(componentProgress);
+    if (componentProgress)
+      fs.appendFileSync(fileName, getComponentStatus(projectChecks, componentChecks));
+  }
 
   const groupedImplementations = implementations.reduce(
     (grouped, implementation) => {
@@ -96,7 +120,7 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
       grouped[implementation.type] = [...group, implementation];
       return grouped;
     },
-    {} as { [key: string]: ComponentImplementation[] },
+    {} as { [key: string]: ComponentImplementation[] }
   );
 
   if (implementations.length) {
