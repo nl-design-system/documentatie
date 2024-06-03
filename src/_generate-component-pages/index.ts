@@ -1,5 +1,5 @@
 /* eslint-env node */
-import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
+import { COMPONENT_STATES, ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
 import progress from '@nl-design-system/component-progress/dist/component-progress.json';
 import projectDetails from '@nl-design-system/component-progress/dist/project-details.json';
 import * as fs from 'fs';
@@ -12,6 +12,7 @@ import {
   getImplementationTitle,
   implementationDetails,
 } from './component-page';
+import { EXCLUDED_HELP_WANTED_CHECKS, HELP_WANTED_CHECKS } from '../utils';
 
 const DOCS_PATH = '../../docs/componenten';
 
@@ -99,10 +100,22 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
 
   const componentProgress = backlog && findMatchingProgressComponent(backlog, progress);
 
-  if (componentProgress) {
+  if (componentProgress && [COMPONENT_STATES.UNKNOWN, COMPONENT_STATES.TODO].includes(state)) {
     const projectId = helpWantedProject.number.toString();
     const componentChecks = getComponentChecks(componentProgress, projectId);
-    const projectChecks = findProjectDetails(projectDetails, 'HELP_WANTED').view.fields.checks;
+    const projectChecks = findProjectDetails(projectDetails, 'HELP_WANTED')
+      .view.fields.checks.filter((check: { id: string }) => !EXCLUDED_HELP_WANTED_CHECKS.includes(check.id))
+      .map((check: { dataType: string; name: string; id: string }) => {
+        if (HELP_WANTED_CHECKS[check.id] !== undefined) {
+          const { label, description } = HELP_WANTED_CHECKS[check.id];
+          return {
+            ...check,
+            label,
+            description,
+          };
+        }
+        return check;
+      });
 
     if (componentProgress) fs.appendFileSync(fileName, getComponentStatus(projectChecks, componentChecks));
   }

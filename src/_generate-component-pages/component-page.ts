@@ -87,20 +87,18 @@ ${getStateDescription({ state })}${
 };
 
 export const getComponentStatus = (projectChecks, componentChecks) => {
-  const checks = projectChecks
-    .filter((check) => check.dataType !== 'TITLE')
-    .map((check) => {
-      const componentCheck = componentChecks.find(({ id }) => id === check.id);
-      return {
-        ...check,
-        ...componentCheck,
-      };
-    });
+  const checks = projectChecks.map((check) => {
+    const componentCheck = componentChecks.find(({ id }) => id === check.id);
+    return {
+      ...check,
+      ...componentCheck,
+    };
+  });
 
   return `## Help Wanted
   <TaskList>
-    ${checks.map(({ id, name, value }) => {
-      return `<TaskListItem ${value ? 'checked={true}' : ''} title={"${name}"} key={"${id}"} description={"Checklist item description"} />`;
+    ${checks.map(({ id, name, value, label, description }) => {
+      return `<TaskListItem ${value ? 'checked={true}' : ''} title={"${label || name}"} key={"${id}"} description={"${description}"} />`;
     }).join(`
     `)}
   </TaskList>
