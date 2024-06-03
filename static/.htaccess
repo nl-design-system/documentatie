@@ -4,6 +4,7 @@ Redirect 301 "/footer/toegankelijkheidsverklaring" "/toegankelijkheidsverklaring
 Redirect 301 "/footer/colofon" "/colofon"
 Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022"
 Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/leverancier/introductie"
+Redirect 301 "/counter-badge" "/number-badge"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
