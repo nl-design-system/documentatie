@@ -103,8 +103,8 @@ importers:
         specifier: 1.0.0-alpha.136
         version: 1.0.0-alpha.136
       '@nl-design-system/component-index':
-        specifier: 1.0.0-alpha.18
-        version: 1.0.0-alpha.18
+        specifier: 1.0.0-alpha.21
+        version: 1.0.0-alpha.21
       '@playwright/test':
         specifier: 1.43.1
         version: 1.43.1
@@ -1485,8 +1485,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.136':
     resolution: {integrity: sha512-fc8RbyfMZNW32H3A4UQRITp9TP3ryL5GCZYjJ1WZ3y7a11wv4NJUglfFrRHmKrM20BjNywxzeyR55fwPndcqwg==}
 
-  '@nl-design-system/component-index@1.0.0-alpha.18':
-    resolution: {integrity: sha512-A+dhRs2zIegw/VCdZGDabTNqnnLs3V5FsPAQIPWlcwlQKwyZdpV3MWjRxBaBBZ2Jf5gRNg886REKPCsq5oU+2g==}
+  '@nl-design-system/component-index@1.0.0-alpha.21':
+    resolution: {integrity: sha512-gTjzV8WDmuhEDETQ2kIkiMPExYCoKUHOHtKg2dr0jAzZf5ae63vQkmnAnNmGj2NJzc1hrbBfTzeYr7zaHgZk5w==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -10003,7 +10003,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.136': {}
 
-  '@nl-design-system/component-index@1.0.0-alpha.18': {}
+  '@nl-design-system/component-index@1.0.0-alpha.21': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
