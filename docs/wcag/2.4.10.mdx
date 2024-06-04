@@ -1,0 +1,184 @@
+---
+title: WCAG-succescriterium 2.4.10 Paragraafkoppen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 2.4.10 Paragraafkoppen
+pagination_label: WCAG-succescriterium 2.4.10 Paragraafkoppen
+description: Gebruik paragraafkoppen (kopjes) om de content te structureren.
+slug: 2.4.10
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+
+# WCAG-succescriterium 2.4.10 Paragraafkoppen
+
+**Let op**: Dit succescriterium heeft het WCAG-niveau **AAA**, wat betekent dat het geen vereiste is om de [A-status](https://www.digitaleoverheid.nl/nieuws/hoe-digitaal-toegankelijk-is-jouw-website-of-applicatie/) te behalen voor een website. Maar goed toepassen van een semantische koppenstructuur heeft enorme voordelen voor de gebruikersvriendelijkheid voor alle gebruikers. Daarom is het hier ook opgenomen.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.10
+  Section Headings</span>](https://www.w3.org/TR/WCAG22/#section-headings).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.10 Paragraafkoppen](https://www.w3.org/Translations/WCAG21-nl/#paragraafkoppen).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.10
+  Section Headings</span>](https://www.w3.org/WAI/WCAG22/quickref/#section-headings).
+- Engelstalige toelichting: [<span lang="en">Understanding SC: 2.4.10
+  Section Headings</span>](https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html).
+
+## Uitleg
+
+Gebruik paragraafkoppen om de content te structureren. Aan de hand van de koppenstructuur geef je dan een goede indruk van de inhoud. Het is dan niet nodig de hele tekst te lezen om te vinden wat je zoekt.
+
+Een paragraaf is gedefinieerd als een 'op zichzelf staand gedeelte van geschreven content die gaat over één of meer gerelateerde onderwerpen of ideeën'. Dit succescriterium gaat alleen over de indeling en aanduiding de inhoud. Dit kan tekst zijn, een titel, maar ook een tabel, lijst of bijvoorbeeld grafiek.
+
+De gebruikelijke manier om een paragraafkop aan te geven is met een HTML-kopje, van `h1` tot en met `h6`.
+HTML-koppen vormen de ruggengraat van de inhoud van een pagina. Een goede koppenstructuur is nuttig voor verschillende soorten gebruikers:
+
+- Ziende lezers kunnen 'koppensnellen' om snel informatie te vinden, de pagina via visueel duidelijk onderscheidbare koppen scannen op de gezochte informatie.
+- Screenreadergebruikers kunnen een lijst van koppen opvragen en zo beslissen welke informatie te gaan lezen.
+- Zoekmachines begrijpen de inhoud van een webpagina beter, als deze is opgedeeld via een semantische koppenstructuur en kunnen zo de inhoud beter indexeren.
+
+**Let op**: Dit succescriterium gaat over het beschrijven van de tekstuele inhoud en niet over componenten van de gebruikersinterface. Componenten van de gebruikersinterface vallen onder WCAG-succescriterium [4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+WCAG-succescriterium [2.4.6 Koppen en labels](/wcag/2.4.6) gaat specifiek over de tekst van koppen.
+
+### Semantische koppenstructuur
+
+In het succescriterium staat eigenlijk alleen: "Paragraafkoppen worden gebruikt om de content te structureren".
+
+Maar een goede werkwijze voor HTML-koppen is:
+
+- Gebruik één unieke h1 per pagina die beschrijft waar die pagina over gaat. Deze h1 begint bij voorkeur net boven de hoofdinhoud.
+- Maak tekst niet op als HTML-kop om alleen de tekst groter te laten lijken of op te laten vallen. Koppen beschrijven altijd over de inhoud eronder.
+- Kies een kop niet op basis van de zichtbare grootte, maar op basis van het niveau in de context van de inhoud.
+- Sla geen kopniveau over, in de koppenstructuur van boven naar beneden.
+- Wees consistent in het opzet van de koppenstructuur binnen de website. Dit maakt het voor gebruikers makkelijker om de structuur van de content te begrijpen en zo sneller te vinden wat ze willen lezen.
+
+Voorbeeld van een semantische koppenstructuur:
+
+```html
+<h1>Contact met de gemeente Voorbeeld</h1>
+[...]
+<h2>Naam contact op</h2>
+<h3>Telefoonnummers</h3>
+[...]
+<h3>E-mailadressen</h3>
+[...]
+<h3>Postadres</h3>
+[...]
+<h3>Social media</h3>
+[...]
+<h2>Melding, klacht of bezwaar doorgeven</h2>
+[...]
+<h3>Rommel of overlast melden</h3>
+[...]
+<h3>klacht indienen</h3>
+[...]
+<h3>Bezwaar maken</h3>
+[...]
+<h2>Afspraak maken</h2>
+[...]
+<h2>Over deze website</h2>
+```
+
+In het artikel [<span lang="en">Accessible heading structure</span>](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) op The A11y Project staat gedetailleerd beschreven hoe koppen te gebruiken in een webpagina.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Foutmeldingen: [Zet een samenvatting van de foutmeldingen boven het formulier](https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier).
+- Formulieren - Meer stappen: [Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen#geef-aan-hoeveel-stappen-er-zijn-en-in-welke-stap-de-gebruiker-zich-bevindt).
+
+## Bronnen
+
+- [<span lang="en">Accessible heading structure</span>](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) op The A11y Project.
+- [<span lang="en">Semantic Structure: Regions, Headings, and Lists</span>](https://webaim.org/techniques/semanticstructure/) van WebAIM.
+- [Toegankelijke koppen](http://niekderksen.nl/toegankelijkheid/toegankelijke-koppen/) van Niek Derksen.
+- [Toegankelijke tekst: 3 tips voor webredacteuren](https://www.limoengroen.nl/nieuws/toegankelijke-tekst-3-tips-voor-webredacteuren) van Marloes Bosch.
+
+## Gebruikersonderzoek
+
+Jaarlijks vraagt WebAIM aan screenreadergebruikers (onder andere) hoe zij een website navigeren. In de [Gebruikersenquête voor screenreaders #10](https://webaim.org/projects/screenreadersurvey10/#heading) van 2024 vond 88,8% van de respondenten HTML-koppen hierbij zeer of enigszins nuttig. In de [top 12 van problemen](https://webaim.org/projects/screenreadersurvey10/#problematic) staat op nummer 8: Ontbrekende of onjuiste koppen.
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+- Controleer of koppen alleen worden gebruikt om onderliggende inhoud te beschrijven
+- Alle tekst die bij een kopje hoort, moet in de code, in de [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), onder het kopje staan. Visueel kan dit afwijken, afhankelijk van het ontwerp, maar voor een screenreadergebruiker moet het duidelijk zijn welke inhoud bij welk kopje hoort.
+- Is er een `h1`-kopje, dat de inhoud van de pagina beschrijft? Controleer ook of deze `h1` niet dezelfde inhoud heeft voor alle pagina's binnen de website.
+- Controleer of de structuur van de inhoud logisch wordt weergegeven via de koppenstructuur en er geen niveau's worden overgeslagen.
+
+De browserextensie HeadingsMap geeft de koppenstructuur van een webpagina overzichtelijk weer:
+
+- [HeadingsMap voor Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi).
+- [HeadingsMap voor Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/).
+- [HeadingsMap voor Edge](https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo).
+
+![Screenshot de koppensctructuur van de pagina over richtlijnen op deze website](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_screenshot_headingsmap.png)
+
+[Axe DevTools](https://www.deque.com/axe/browser-extensions/) in 'Best Practice'-mode controleert op onjuiste semantiek voor koppen, zoals het overslaan van een kopniveau of een ontbrekende `h1`.
+Ook [WAVE](https://wave.webaim.org/) meldt het overslaan van een kopniveau of een ontbrekende `h1`, bij de alerts.
+
+## Veelgemaakte fouten
+
+### Fout: ontbrekend h1-kopje
+
+Zeker op de voorpagina kan het in de vormgeving een puzzel zijn waar de `h1`-kop te plaatsen. Maar weglaten is geen optie.
+
+Een oplossing kan zijn de `h1` visueel te verbergen met CSS, met de classes [.screen-reader-text](https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/), [sr-only](https://tailwindcss.com/docs/screen-readers) of [visually-hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html) afhankelijk van het CMS of framework wat je gebruikt. Verberg de `h1` niet met `display:none` omdat dit de tekst ook verbergt voor hulpmiddelen zoals een screenreader.
+
+Een h1, op elke pagina op dezelfde plek, biedt houvast aan alle gebruikers. Toon de `h1` dus op elke pagina, op dezelfde plek, liefst vlak boven de hoofdinhoud.
+
+### Fout: kopniveau kiezen op grootte
+
+Een _Call to Action_ in een vette grote `h1`, dat trekt visueel de aandacht!
+Maar dit is verkeerd gebruik van het kopje en wekt verwarring bij screenreadergebruikers. Waar gaat deze pagina nu over?
+
+Wil je tekst groot en vet maken, gebruik dan CSS om de tekst vorm te geven en geen kopje.
+
+### Fout: in plaats van een kopje, vet gemaakt tekst gebruiken
+
+Tekst vet, bold of strong maken om een kopje te maken, geeft alleen visuele informatie weer. Screenreadergebruikers en zoekmachines herkennen dit niet als een kopje en missen zo context.
+Als een kopje te groot is in jouw ogen, vraag aan de webbouwer om aanpassing van de styling en gebruik geen vet om een kopje aan te geven.
+
+### Fout: dezelfde h1 voor elke pagina binnen de website
+
+Op alle pagina's is het logo een link naar de voorpagina geplaatst binnen een `h1`-kopje.
+
+In code:
+
+```html
+<!-- Dit is fout, niet gebruiken -->
+<h1>
+  <a href="/"><img src="logo.svg" alt="Gemeente Voorbeeld" /></a>
+</h1>
+```
+
+Deze `h1` geeft geen goede informatie over de inhoud van de pagina als deze zo op elke pagina wordt herhaald. Zet in plaats daarvan een `h1`-kopje vlak boven het begin van de inhoud en beschrijf in dat `h1`-kopje waar de webpagina over gaat.
+
+### Fout: alle section-kopjes zijn een h1
+
+Het gebruik van meerdere `h1`-koppen in de outline van de DOM strcutuur wordt niet langer ondersteund in HTML.
+Lees hierover: [<span lang="en">Avoid using multiple `<h1>` elements on one page</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page) op MDN.
+
+### Gebruikersonvriendelijk: section markeren met labelledby, verwijzend naar een kopje eronder.
+
+Sommige frameworks of thema's labelen elke section met een [aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-), verwijzend naar de heading binnen de sectie.
+Op deze manier heeft de sectie een toegankelijke naam. In de lijst met landmarks wordt deze naam erbij gezet.
+
+```html
+<!-- Dit is gebruikersonvriendelijk, niet gebruiken -->
+<section aria-labelledby="adres">
+  <h2 id="adres">Adresgegevens gemeente Voorbeeld</h2>
+  [...]
+</section>
+```
+
+Een screenreader leest de naam van de sectie op en daarna de inhoud van het kopje, twee keer dezelfde tekst. Dubbelop en daardoor niet gebruikersvriendelijk. Omdat de meeste screenreadergebruikers navigeren via koppen, is alleen een kopje gebruiken voldoende in dit geval.
+
+Geef alleen dezelfde landmarks een naam met `aria-label` ter voorkoming van verwarring, bijvoorbeeld bij het meerdere keren gebruiken van een navigatie: `<nav aria-label="Hoofd">` en `<nav aria-label="Kruimelpad">`
+
+<WCAGFooterInfo />
