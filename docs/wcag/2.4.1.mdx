@@ -27,7 +27,7 @@ import { VideoPlayer } from "../../src/components/VideoPlayer";
 
 ## Uitleg
 
-Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.
+Geef gebruikers van hulpmiddelen de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.
 
 Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.
 
@@ -41,7 +41,10 @@ Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de 
 
 Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.
 
-Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud. Een skiplink naar het zoekformulier kan zinvol zijn. Ook kun je binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.
+Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud.
+
+- Een skiplink naar het zoekformulier kan zinvol zijn.
+- Je kunt binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.
 
 ### Demo skiplink op de website van de gemeente Den Haag
 
@@ -51,7 +54,7 @@ Deze video laat zien hoe een skiplink werkt op de website van de [gemeente Den H
 
 ### Hoe werkt een skiplink?
 
-Een skiplink in een interne link naar bijvoorbeeld het begin van de inhoud. Als een gebruiker deze link aanklikt, verplaats de focus naar een punt vlak boven de hoofdinhoud.
+Een skiplink is een interne link naar bijvoorbeeld het begin van de inhoud. Als een gebruiker deze link aanklikt, verplaats de focus naar een punt vlak boven de hoofdinhoud.
 
 De skiplink kan altijd zichtbaar zijn, of alleen zichtbaar worden als de link toetsenbordfocus krijgt. Beide opties zijn goed.
 
@@ -59,13 +62,15 @@ Je kunt bijvoorbeeld naar het `<main>`-element linken, als dit de hoofdinhoud va
 
 Consistentie is belangrijk. Zet de skiplink altijd op dezelfde plek binnen een website en laat deze dezelfde plek linken.
 
-### Tabindex="-1"
+### tabindex="-1"
 
 Om een skiplink in alle browsers goed te laten werken is het belangrijk dat de focus zich goed verplaatst naar het doelelement.
 
 Als dit element van nature geen focus kan krijgen, zoals een `<main>` landmark, kan het zijn dat de focus niet goed wordt verplaatst. Voeg daarom `tabindex="-1"` toe aan het element dat de focus moet krijgen.
 
 Het voordeel van `tabindex="-1"` is dat het element niet in de natuurlijke tabvolgorde wordt opgenomen, maar het wel focus kan krijgen.
+
+Lees ook: [<span lang="en">Where focus goes when following in page links</span>](https://hidde.blog/where-focus-goes-when-following-in-page-links/) van Hidde de Vries.
 
 **Let op**: gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
 
@@ -185,11 +190,13 @@ Sommige validatiesoftware meldt dat een skiplink binnen een landmark moet staan.
 ### Fout: de toetsenbordfocus verplaatst zich niet na aanklikken skiplink
 
 Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een `scrollIntoView()` method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus.
-Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met `focus()`. Voeg tabindex="-1" toe aan het doelelement om het de focus te kunnen geven met `tabIndex = -1`.
+Voeg tabindex="-1" toe aan het doelelement om het de focus te kunnen geven met `tabIndex = -1`. Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met `focus()`.
 
 ### Fout: het linkdoel van de skiplink bestaat niet
 
 Controleer altijd of het doel waar de skiplink naar toe gaat ook inderdaad bestaat. Bij aanpassingen aan een template kan dit wel eens over het hoofd gezien worden.
+
+Als het ID, waar in de skiplink naar wordt verwezen, niet bestaat of afwezig is, werkt de skiplink niet.
 
 ### Fout: de skiplink verwijst naar een name-attribuut
 
