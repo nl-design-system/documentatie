@@ -14,10 +14,6 @@ const Renate: TeamMember = {
         en blogs. Ook maakt ze de maandelijkse nieuwsbrief waarin alle updates gedeeld worden.
       </Paragraph>
       <Paragraph>
-        Naast haar werk als communicatieadviseur is Renate ook copywriter en coach op het gebied van schrijven en
-        zoekmachineoptimalisatie (SEO).
-      </Paragraph>
-      <Paragraph>
         In haar vrije tijd is ze druk met haar grote gezin, waarvoor ze graag in de keuken staat om lekkere gerechten te
         bereiden. Die passie voor gezelligheid en lekker eten komt voort uit haar Italiaanse roots.
       </Paragraph>
