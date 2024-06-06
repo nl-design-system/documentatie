@@ -10,21 +10,16 @@ import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Wart from './Wart';
 import Yolijn from './Yolijn';
-import { Card, CardContent, CardGroup, CardIllustration } from '../CardGroup';
+import { Card, CardContent, CardGroup } from '../CardGroup';
 
 const coreteam = [Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
     <CardGroup appearance="large">
-      {coreteam.map(({ Avatar, name, role, Description, slack }) => {
+      {coreteam.map(({ name, role, Description, slack }) => {
         return (
           <Card appearance="large" className={clsx(style['core-team__card'])} component="section" key={name}>
-            {Avatar && (
-              <CardIllustration className={clsx(style['core-team__illustration'])}>
-                <Avatar className={clsx(style['core-team__avatar'])} />
-              </CardIllustration>
-            )}
             <CardContent className={clsx(style['core-team__content'])}>
               <HeadingGroup className={clsx(style['core-team__heading'])}>
                 <Heading level={headingLevel} className={clsx(style['core-team__heading-title'])}>
