@@ -66,13 +66,11 @@ Consistentie is belangrijk. Zet de skiplink altijd op dezelfde plek binnen een w
 
 Om een skiplink in alle browsers goed te laten werken is het belangrijk dat de focus zich goed verplaatst naar het doelelement.
 
-Als dit element van nature geen focus kan krijgen, zoals een `<main>` landmark, kan het zijn dat de focus niet goed wordt verplaatst. Voeg daarom `tabindex="-1"` toe aan het element dat de focus moet krijgen.
+Als dit element van nature geen focus kan krijgen, zoals een `<main>` landmark, kan het zijn dat de focus niet goed wordt verplaatst voor een screenreader. Voeg daarom `tabindex="-1"` toe aan het element dat de focus moet krijgen.
 
-Het voordeel van `tabindex="-1"` is dat het element niet in de natuurlijke tabvolgorde wordt opgenomen, maar het wel focus kan krijgen.
+Het voordeel van `tabindex="-1"` in plaats van `tabindex="0"` is dat het element niet in de natuurlijke tabvolgorde wordt opgenomen, maar het wel focus kan krijgen. Gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom, staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
 
 Lees ook: [<span lang="en">Where focus goes when following in page links</span>](https://hidde.blog/where-focus-goes-when-following-in-page-links/) van Hidde de Vries.
-
-**Let op**: gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
 
 ### Codevoorbeelden van een skiplink
 
@@ -92,20 +90,20 @@ In de CSS. Dit is een voorbeeld, er zijn meerdere technieken om hetzelfde effect
 
 ```css
 .sr-only-focusable {
-  left: -100%;
-  position: absolute;
-  top: 5%;
+    inset-block-start: 5%;
+    inset-inline-start: -100%;
+    position: absolute;
 }
 
 .sr-only-focusable:focus {
-  background-color: #ffeb85;
-  color: #1e357e;
-  left: 0;
-  outline: 2px solid #2b0000;
-  outline-offset: 0;
-  padding: 10px;
-  text-decoration: none;
-  z-index: 1;
+    background-color: #ffeb85;
+    color: #1e357e;
+    inset-inline-start: 0;
+    outline: 2px solid #2b0000;
+    outline-offset: 0;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 1;
 }
 ```
 
@@ -196,7 +194,7 @@ Voeg tabindex="-1" toe aan het doelelement om het de focus te kunnen geven met `
 
 Controleer altijd of het doel waar de skiplink naar toe gaat ook inderdaad bestaat. Bij aanpassingen aan een template kan dit wel eens over het hoofd gezien worden.
 
-Als het ID, waar in de skiplink naar wordt verwezen, niet bestaat of afwezig is, werkt de skiplink niet.
+Als het ID, waar in de skiplink naar verwijst niet bestaat, werkt de skiplink niet.
 
 ### Fout: de skiplink verwijst naar een name-attribuut
 
