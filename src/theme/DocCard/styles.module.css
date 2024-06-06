@@ -1,4 +1,5 @@
 .card {
+  --utrecht-space-around: 0;
   --ifm-link-color: var(--nlds-interaction-color);
   --ifm-link-hover-color: var(--ifm-color-emphasis-700);
   --utrecht-icon-size: 20px;
