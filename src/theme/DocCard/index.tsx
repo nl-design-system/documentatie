@@ -1,15 +1,13 @@
 import Link from '@docusaurus/Link';
-import { translate } from '@docusaurus/Translate';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
-import { findFirstSidebarItemLink, useDocById } from '@docusaurus/theme-common/internal';
+import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import { Icon } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { PropsWithChildren, type ReactNode } from 'react';
 import { ArrowNarrowRight } from 'tabler-icons-react';
 import styles from './styles.module.css';
-import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { randomUUID } from 'crypto';
 
 function CardLayout({
   href,
@@ -24,7 +22,7 @@ function CardLayout({
   icon?: ReactNode;
   title: string;
   description?: string;
-}>): React.Element {
+}>) {
   return (
     <div className={clsx('card', styles.card)}>
       <h2 className={clsx(styles.cardTitle)}>

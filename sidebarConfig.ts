@@ -24,7 +24,9 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'generated-index',
             title: 'Estafettemodel',
-            slug: '/handboek/estafettemodel',
+            description:
+              'Het estafettemodel van NL Design System is een aanpak om samen de beste en meest bruikbare componenten, patronen en richtlijnen te maken.',
+            slug: '/handboek/estafettemodel/overzicht',
           },
           items: [
             { type: 'doc', id: 'handboek/estafettemodel' },
@@ -43,6 +45,8 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'generated-index',
             title: 'Voor designers',
+            description:
+              'Mee designen aan het NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
             slug: '/handboek/designer/overzicht',
             keywords: ['designers', 'overzicht'],
           },
@@ -56,6 +60,9 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'generated-index',
             title: 'Voor developers',
+            description:
+              'Mee ontwikkelen aan NL Design System of gebruik maken van bestaande componenten? Als developer vind je hier alle documentatie die je nodig hebt om te beginnen.',
+
             slug: '/handboek/developer/overzicht',
             keywords: ['developer', 'overzicht'],
           },
@@ -103,11 +110,15 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Richtlijnen',
+      description:
+        'Onze richtlijnen om te helpen met het ontwikkelen van begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening. Onze richtlijnen zijn zoveel mogelijk onderbouwd met gebruikersonderzoek.',
       collapsible: false,
       className: 'sidebar__main-category',
       link: {
         type: 'generated-index',
         title: 'Richtlijnen',
+        description:
+          'Onze richtlijnen om te helpen met het ontwikkelen van begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening. Onze richtlijnen zijn zoveel mogelijk onderbouwd met gebruikersonderzoek.',
         slug: 'richtlijnen',
         keywords: ['Richtlijnen', 'overzicht'],
       },
@@ -119,9 +130,11 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Stijl',
+          description: 'Onze richtlijnen voor een toegankelijke huisstijl en visueel ontwerp.',
           link: {
             type: 'generated-index',
             title: 'Richtlijnen voor Stijl',
+            description: 'Onze richtlijnen voor een toegankelijke huisstijl en visueel ontwerp.',
             slug: '/richtlijnen/stijl/overzicht',
             keywords: ['Stijl', 'overzicht'],
           },
@@ -130,9 +143,11 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Formulieren',
+          description: 'Onze richtlijnen voor inclusieve formulieren.',
           link: {
             type: 'generated-index',
             title: 'Richtlijnen voor formulieren',
+            description: 'Onze richtlijnen voor inclusieve formulieren.',
             slug: '/richtlijnen/formulieren/overzicht',
             keywords: ['Formulieren', 'overzicht'],
           },
@@ -141,13 +156,13 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'WCAG',
+          description:
+            "Hier proberen WCAG begrijpelijk uit te leggen en daardoor makkelijker toepasbaar te maken. Daarnaast staat beschreven hoe je webpagina's voor de verschillende succescriteria kunt testen.",
           link: {
             type: 'generated-index',
             title: 'WCAG-succescriteria uitgelegd',
             description:
-              'Een overzicht van de Web Content Accessibility Guidelines (WCAG). ' +
-              'Met per succescriterium W3C-referenties, een korte samenvatting, hoe hiervoor te testen en links naar gerelateerde NLDS-richtlijnen, bronnen en gebruikersonderzoek.',
-
+              "In deze pagina's vind je Web Content Accessibility Guidelines (WCAG) beschreven en uitgelegd. Het doel is om WCAG begrijpelijk uit te leggen en daardoor makkelijker toepasbaar te maken. Daarnaast staat beschreven hoe je webpagina's voor de verschillende succescriteria kunt testen. Deze pagina's bevatten praktische uitleg, voorbeelden en interpretatie bij de Web Content Accessibility Guidelines (WCAG). Let op: De richtlijnen in NL Design System zijn niet verplicht en geen vervanging voor de WCAG norm waarnaar in wetgeving wordt verwezen.",
             slug: '/wcag',
             keywords: ['WCAG', 'overzicht'],
           },
