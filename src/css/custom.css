@@ -505,6 +505,16 @@ li a {
 }
 
 @media screen and (width <= 996px) {
+  .nlds-theme {
+    --utrecht-article-max-inline-size: calc(100vw - 2 * var(--ifm-spacing-horizontal));
+    --utrecht-heading-1-font-size: 32px;
+    --utrecht-heading-2-font-size: 24px;
+    --utrecht-heading-3-font-size: 22px;
+    --utrecht-heading-4-font-size: 20px;
+    --utrecht-heading-5-font-size: 18px;
+    --utrecht-heading-6-font-size: 16px;
+  }
+
   .navbar .navbar__item {
     display: none;
   }
