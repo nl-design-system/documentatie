@@ -18,6 +18,8 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Estafettemodel',
+          description:
+            'Het estafettemodel van NL Design System is een aanpak om samen de beste en meest bruikbare componenten, patronen en richtlijnen te maken.',
           collapsible: true,
           link: {
             type: 'generated-index',
@@ -36,6 +38,8 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Voor designers',
+          description:
+            'Mee designen aan het NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
           link: {
             type: 'generated-index',
             title: 'Voor designers',
@@ -47,6 +51,8 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Voor developers',
+          description:
+            'Mee ontwikkelen aan NL Design System of gebruik maken van bestaande componenten? Als developer vind je hier alle documentatie die je nodig hebt om te beginnen.',
           link: {
             type: 'generated-index',
             title: 'Voor developers',
