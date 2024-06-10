@@ -51,6 +51,15 @@
   position: absolute;
 }
 
+.task-list-item__marker-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
 .task-list-item__marker--checked {
   background-color: var(--todo-task-list-item-marker-checked-background-color);
 }

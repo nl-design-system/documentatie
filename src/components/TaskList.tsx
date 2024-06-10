@@ -10,18 +10,21 @@ export const TaskListItem = ({
   checked,
   title,
   description,
-}: FC<{ title: string; description: string; checked: boolean }>) => (
-  <li className={clsx(style['task-list-item'])}>
-    <span
-      className={clsx(style['task-list-item__marker'], {
-        [style['task-list-item__marker--checked']]: checked,
-      })}
-    >
-      {checked && <UtrechtIconCheckmark className={'utrecht-icon'} />}
-    </span>
-    <span>
-      <Heading3>{title}</Heading3>
-      <Paragraph>{description}</Paragraph>
-    </span>
-  </li>
-);
+}: FC<{ title: string; description: string; checked: boolean }>) => {
+  return (
+    <li className={clsx(style['task-list-item'])}>
+      <div
+        className={clsx(style['task-list-item__marker'], {
+          [style['task-list-item__marker--checked']]: checked,
+        })}
+      >
+        <span className={style['task-list-item__marker-label']}>{checked ? 'Afgevinkt. ' : 'Niet afgevinkt. '}</span>
+        {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
+      </div>
+      <div>
+        <Heading3 role="presentation">{title}</Heading3>
+        <Paragraph>{description}</Paragraph>
+      </div>
+    </li>
+  );
+};
