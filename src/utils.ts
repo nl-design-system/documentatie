@@ -54,6 +54,7 @@ export const HELP_WANTED_CHECKS = {
   'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': {
     label: 'Bruikbaar',
     description: 'Bewijs verzameld dat het component algemeen bruikbaar is.',
+    doneValue: 'Algemeen bruikbaar',
   },
   PVTSSF_lADOBGdlVM4AdX8lzgasBms: {
     label: 'Discussion',

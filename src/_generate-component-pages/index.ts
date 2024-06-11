@@ -107,11 +107,10 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
       .view.fields.checks.filter((check: { id: string }) => !EXCLUDED_HELP_WANTED_CHECKS.includes(check.id))
       .map((check: { dataType: string; name: string; id: string }) => {
         if (HELP_WANTED_CHECKS[check.id] !== undefined) {
-          const { label, description } = HELP_WANTED_CHECKS[check.id];
+          const checkData = HELP_WANTED_CHECKS[check.id];
           return {
             ...check,
-            label,
-            description,
+            ...checkData,
           };
         }
         return check;
