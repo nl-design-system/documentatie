@@ -49,7 +49,7 @@ Doel: Het component is ingezet door twee of meer organisaties met verschillende 
 
 Controleer of er voldoende properties middels tokens aan te passen zijn om aan de wensen te voldoen van de huisstijlen van de betrokken organisaties.
 
-Via de tokens ```{button.primary.default}``` en ```{button.radius}``` kunnen twee organisaties hun specifieke huisstijl doorvoeren op hetzelfde component.
+Via de tokens ```{nl.button.primary-action.background-color}``` en ```{nl.button.border-radius}``` kunnen twee organisaties hun specifieke huisstijl doorvoeren op hetzelfde component.
 
 - Utrecht heeft een blauwe actie kleur en een border-radius van 2px
 - Amsterdam heeft een rode actie kleur en een border-radius van 8px
@@ -97,9 +97,12 @@ Wanneer een component uiteenlopende doelen en use cases bediend, kan het kerntea
 
 ## Gemeenschappelijk API
 
-Doel: Voorkomen van het adopteren van organisatie specifieke API's; alle API's zijn gebaseerd op een gemeenschappelijke use case.
+Doel: Voorkomen van het adopteren van organisatie specifieke API's.
+
+Alle API's zijn gebaseerd op een gemeenschappelijke use case.
 
 **🚩 Checkpoint**: API gemeenschappelijk
+
 
 ## API volgt conventies.
 
@@ -107,9 +110,12 @@ Doel: API volgt conventies en is geprefixed met 'nl'.
 
 **🚩 Checkpoint**: API conventie
 
+
 ## Design tokens volgen conventies
 
 Doel: Design tokens volgen [conventies](https://nldesignsystem.nl/handboek/design-tokens/) en zijn geprefixed met 'nl'.
+
+Zoals ```{nl.button.border-radius}```.
 
 **🚩 Checkpoint**: Design token conventie
 
@@ -118,6 +124,8 @@ Doel: Design tokens volgen [conventies](https://nldesignsystem.nl/handboek/desig
 
 Doel: Hergebruik van logische common tokens ïmplementeren om theming makkelijk te houden.
 
+[Common tokens](https://nldesignsystem.nl/handboek/design-tokens/#common-tokens), ook wel alias tokens genoemd, zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek component gebonden zijn. Dit helpt onder andere met het implementeren van specifieke huisstijlen.
+
 **🚩 Checkpoint**: Common tokens
 
 
@@ -125,33 +133,36 @@ Doel: Hergebruik van logische common tokens ïmplementeren om theming makkelijk 
 
 Doel: De design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
 
+Een achtergrond kleur ```{nl.button.background-color}``` van een button zal niet ter sprake komen, maar een border bottom ```{button.border-bottom-color}``` en ```{button.border-bottom-width}``` bijvoorbeeld wel.
+
 **🚩 Checkpoint**: Design tokens nuttig
 
 
 ## Beschikbaar in de NL Design System Storybook.
 
-Doel: Het component is beschikbaar in de NL Design System Storybook en daarmee publiek toegankelijk.
+Doel: Het component is beschikbaar in de [NL Design System Storybook] (https://nl-design-system.github.io/themes/?path=/story/button--gemeente-voorbeeld) en daarmee publiek toegankelijk.
 
 **🚩 Checkpoint**: Storybook NLDS
 
 
 ## Beschikbaar in de NL Design System Figma bibliotheek.
 
-Doel: Het component is beschikbaar in de NL Design System Figma bibliotheek en daarmee bruikbaar voor alle organisaties.
+Doel: Het component is beschikbaar in de [NL Design System Figma bibliotheek] (https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek) en daarmee bruikbaar voor alle organisaties.
 
 **🚩 Checkpoint**: Figma NLDS
 
 
 ## Documentatie op de website en Storybook
 
-Doel: Om discrepancies te voorkomen en alle disciplines evenredig te informeren, heeft het component dezelfde documentatie op de website en Storybook over gebruik.
+Doel: De documentatie van het component is gelijk op de website en Storybook. Door alle disciplines gelijke informatie te verstrekken waarborgen we de consistentie en bevorderen we de communicatie. 
 
 **🚩 Checkpoint**
 Documentatie gebruik
 
+
 ## Figma verwijst naar de documentatie op de website.
 
-Doel: Figma verwijst naar de documentatie op de website, zodat designers gemakkelijk component specifieke documentatie kunnen raadplegen vanuit Figma.
+Doel: Figma verwijst naar de documentatie op de [website] (https://nldesignsystem.nl/componenten/), zodat designers gemakkelijk component specifieke documentatie kunnen raadplegen vanuit Figma.
 
 **🚩 Checkpoint**
 ```👉🏻 niet aanwezig in projectboard```
@@ -160,7 +171,6 @@ Doel: Figma verwijst naar de documentatie op de website, zodat designers gemakke
 ## Storybook stories, Figma voorbeelden en unit tests hebben coverage van alle features.
 
 Doel: De storybook stories, Figma voorbeelden en unit tests hebben coverage van alle features.
-```👉🏻 lijkt op Figma in lijn```
 
 **🚩 Checkpoint**: coverage features
 
