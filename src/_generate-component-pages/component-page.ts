@@ -97,8 +97,9 @@ export const getComponentStatus = (projectChecks, componentChecks) => {
 
   return `## Help Wanted
   <TaskList>
-    ${checks.map(({ id, name, value, label, description }) => {
-      return `<TaskListItem ${value ? 'checked={true}' : ''} title={"${label || name}"} key={"${id}"} description={"${description}"} />`;
+    ${checks.map(({ id, name, value, label, description, doneValue }) => {
+      const isDone = doneValue !== undefined ? value === doneValue : value;
+      return `<TaskListItem ${isDone ? 'checked={true}' : ''} title={"${label || name}"} key={"${id}"} description={"${description}"} />`;
     }).join(`
     `)}
   </TaskList>
