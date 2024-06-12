@@ -41,13 +41,14 @@ const ensureDir = (directoryName) => {
 
 const dir = ensureDir('build');
 
-function normalizeUrl(url) {
-  return url.split('#')[0];
+function toNormalizedBacklogUrl(url: string) {
+  const backlogUrl = new URL(url);
+  return backlogUrl.origin + backlogUrl.pathname;
 }
 
 function findMatchingProgressComponent(backlogUrl, progressData) {
-  const normalizedBacklogUrl = normalizeUrl(backlogUrl);
-  return progressData.find((component) => normalizeUrl(component.url) === normalizedBacklogUrl);
+  const normalizedBacklogUrl = toNormalizedBacklogUrl(backlogUrl);
+  return progressData.find((component) => toNormalizedBacklogUrl(component.url) === normalizedBacklogUrl);
 }
 
 function getComponentChecks(component, projectId) {

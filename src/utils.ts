@@ -29,11 +29,13 @@ export enum DOCUMENTATION_TYPES {
   COPY = 'Content richtlijnen',
 }
 
+// TODO: refactor into index repo
 export const EXCLUDED_HELP_WANTED_CHECKS = [
   'PVTF_lADOBGdlVM4AdX8lzgTC3T4', // Title
   'PVTSSF_lADOBGdlVM4AdX8lzgTDB3w', // Finish for help wanted
 ];
 
+// TODO: refactor doneValue and key into index repo
 export const HELP_WANTED_CHECKS = {
   PVTSSF_lADOBGdlVM4AdX8lzgasA5I: {
     label: 'Naam',
