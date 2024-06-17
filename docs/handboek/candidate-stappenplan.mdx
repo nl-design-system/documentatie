@@ -30,7 +30,7 @@ keywords:
   - [x] ~Titels herzien~
   - [x] ~Uitschrijven van de stappen~
   - [ ] Volgorde aanpassen projectboard of stappenplan
-  - [ ] Opdelen in 2-4 stappen (zoals bij community)
+  - [x] Opdelen in 2-4 stappen (zoals bij community)
   - [x] ~Linken naar documentatie~
   - [x] ~Pagina voor ontbrekende informatie? > issue aanmaken in backlog~
 </div>
@@ -40,78 +40,70 @@ keywords:
 
 Bij **Candidate** is het component opgenomen in de `@nl-design-system-unstable` organisatie. Het kernteam verwacht dat het component uiteindelijk een Hall of Fame status krijgt. De API's zijn nog niet gegarandeerd en kunnen nog wijzigen. Ook bestaat er een mogelijkheid dat het component vervangen wordt door een vergelijkbare component. In deze fase bekijken we of het component mogelijk nog extra goed getest en stabiel gemaakt moet worden. Omdat het component door het kernteam onderhouden wordt voldoet het, naast de meeste Community DoD eisen, al wel aan veel meer criteria voor stabiel hergebruik.
 
-```👉🏻De typische duur van deze fase is X dagen en word uitgevoerd door het kernteam.```
+## 1. Voltooien van de eigenschappen
 
-
-## Ingezet met verschillende huisstijlen
-
-Doel: Het component is ingezet door twee of meer organisaties met verschillende huisstijlen en toont aan dat het met meerdere huisstijlen overweg kan. 
-
-Controleer of er voldoende properties middels tokens aan te passen zijn om aan de wensen te voldoen van de huisstijlen van de betrokken organisaties.
-
-Via de tokens ```{nl.button.primary-action.background-color}``` en ```{nl.button.border-radius}``` kunnen twee organisaties hun specifieke huisstijl doorvoeren op hetzelfde component.
-
-- Utrecht heeft een blauwe actie kleur en een border-radius van 2px
-- Amsterdam heeft een rode actie kleur en een border-radius van 8px
-
-**🚩 Checkpoint**:  > 2 Thema’s
-
-
-## Gespiegelde werkelijkheid tussen Figma en code
-
-Doel: De Figma bibliotheek van NL Design System komt overeen met de implementatie van het component in code wat betreft varianten, states, design tokens en naamgeving.
-
-Een component kan gebruik maken van enums (selectie lijst in Figma), booleans (toggle in Figma), en strings (inputfield in Figma). Je kunt de naam van de eigenschappen (properties) en type eigenschap gelijk trekken tussen Figma en de code implementatie.
-
-**🚩 Checkpoint**: Figma in lijn ```👉🏻 gespiegelde werkelijkheid```
-
-
-## Aliassen van alternatieve namen
-
-Doel: Aliassen van alternatieve namen voor het component zijn vastgelegd in documentatie.
-
-Dit vergemakkelijkt het vinden van componenten of alternatieven. Aliassen en alternatieve namen komen meestal voort uit de Help Wanted fase. Voorbeelden hiervan zijn: _Spinner_ en _Loader_ of _Select_ en _Dropdown_.
-
-**🚩 Checkpoint**: Documentatie aliassen
-
-
-## Anatomie documenteren
-
-Doel: Anatomie van het component is vastgelegd.
-
-Anatomie is de naam van het component en onderdelen van het componenten. Zoals _button_ en _icon/label_ als onderdeel van button.
-
-**🚩 Checkpoint**: Documentatie anatomie
-
-
-## Versimpelen of opgesplitsten
-
-```👉🏻 basisregels? Wanneer een component teveel kan en niet in lijn is met Doel, dan moet het worden opgesplitst. Heeft dit consequenties met eerdere stappen, o.a. testen?```
+### Versimpelen of opgesplitsten
 
 Doel: Component in lijn brengen met het doel en use case.
 
-Wanneer een component uiteenlopende doelen en use cases bediend, kan het kernteam ervoor kiezen dit component op te splitsen of te versimpelen. Het [doel](http://localhost:3000/handboek/help-wanted-stappenplan#doel-bepalen) is de basis waarop we componenten indelen.
+Wanneer een component diverse doelen en use cases dient, kan het kernteam ervoor kiezen om dit component op te splitsen of te vereenvoudigen. Het [doel](/handboek/help-wanted-stappenplan#doel-bepalen) is de basis waarop we componenten indelen.
 
 **🚩 Checkpoint**: Versimpeld of gesplitst
 
-
-## Gemeenschappelijk API
-
-Doel: Voorkomen van het adopteren van organisatie specifieke API's.
-
-Alle API's zijn gebaseerd op een gemeenschappelijke use case.
-
-**🚩 Checkpoint**: API gemeenschappelijk
-
-
-## API volgt conventies.
+### API volgt conventies
 
 Doel: API volgt conventies en is geprefixed met 'nl'.
 
 **🚩 Checkpoint**: API conventie
 
+### Gemeenschappelijk API
 
-## Design tokens volgen conventies
+Doel: Het voorkomen van de adoptie van organisatiespecifieke API's.
+
+Alle API's zijn gebaseerd op een gemeenschappelijke use case.
+
+**🚩 Checkpoint**: API gemeenschappelijk
+
+### Component kan omgaan met verschillende soorten content
+
+Doel: Het component is flexibel en kan verschillende soorten content aan, zoals korte tekst, veel woorden, lange woorden, of zelfs ontbrekende inhoud.
+
+**🚩 Checkpoint**: content flexibel
+
+### Goedkeuring van de semantiek
+
+Doel: De semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.
+
+**🚩 Checkpoint**: Semantiek goedgekeurd
+
+### Gespiegelde werkelijkheid tussen Figma en code
+
+Doel: De Figma-bibliotheek van het NL Design System moet overeenkomen met de implementatie van het component in code, met betrekking tot varianten, states, design tokens en naamgeving.
+
+Een component kan gebruikmaken van enums (selectielijst in Figma), booleans (toggle in Figma) en strings (invoerveld in Figma). Het is mogelijk om de naam van de eigenschappen (properties) en het type eigenschap tussen Figma en de code-implementatie gelijk te trekken.
+
+**🚩 Checkpoint**: Figma in lijn
+
+### Linting en automatische code-formatting
+
+Doel: De codebase maakt gebruik van linting en automatische codeformatting met Prettier volgens de configuraties van het NL Design System.
+
+De juister configuraties zijn gewaardborgd in de *example* [repository](https://github.com/nl-design-system/example).
+
+**🚩 Checkpoint**: Linting en formatting
+
+
+## 2. Tokens opleveren
+
+### Gebruikt in verschillende huisstijlen
+
+Doel: Het component is ingezet door twee of meer organisaties met verschillende huisstijlen en toont aan dat het met meerdere huisstijlen overweg kan. 
+
+Controleer of er genoeg eigenschappen zijn die via tokens aangepast kunnen worden om aan de behoeften van de huisstijlen van de betrokken organisaties te voldoen.
+
+**🚩 Checkpoint**:  > 2 Thema’s
+
+### Design tokens volgen conventies
 
 Doel: Design tokens volgen [conventies](https://nldesignsystem.nl/handboek/design-tokens/) en zijn geprefixed met 'nl'.
 
@@ -119,8 +111,15 @@ Zoals ```{nl.button.border-radius}```.
 
 **🚩 Checkpoint**: Design token conventie
 
+### Algemeen nuttige design tokens
 
-## Common tokens toegepast
+Doel: De design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
+
+Een achtergrond kleur ```{nl.button.background-color}``` van een button zal niet ter sprake komen, maar een border bottom ```{button.border-bottom-color}``` en ```{button.border-bottom-width}``` bijvoorbeeld wel.
+
+**🚩 Checkpoint**: Design tokens nuttig
+
+### Common tokens toegepast
 
 Doel: Hergebruik van logische common tokens ïmplementeren om theming makkelijk te houden.
 
@@ -129,46 +128,9 @@ Doel: Hergebruik van logische common tokens ïmplementeren om theming makkelijk 
 **🚩 Checkpoint**: Common tokens
 
 
-## Algemeen nuttige design tokens
+## 3. Testen van het component
 
-Doel: De design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
-
-Een achtergrond kleur ```{nl.button.background-color}``` van een button zal niet ter sprake komen, maar een border bottom ```{button.border-bottom-color}``` en ```{button.border-bottom-width}``` bijvoorbeeld wel.
-
-**🚩 Checkpoint**: Design tokens nuttig
-
-
-## Beschikbaar in de NL Design System Storybook.
-
-Doel: Het component is beschikbaar in de [NL Design System Storybook] (https://nl-design-system.github.io/themes/?path=/story/button--gemeente-voorbeeld) en daarmee publiek toegankelijk.
-
-**🚩 Checkpoint**: Storybook NLDS
-
-
-## Beschikbaar in de NL Design System Figma bibliotheek.
-
-Doel: Het component is beschikbaar in de [NL Design System Figma bibliotheek] (https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek) en daarmee bruikbaar voor alle organisaties.
-
-**🚩 Checkpoint**: Figma NLDS
-
-
-## Documentatie op de website en Storybook
-
-Doel: De documentatie van het component is gelijk op de website en Storybook. Door alle disciplines gelijke informatie te verstrekken waarborgen we de consistentie en bevorderen we de communicatie. 
-
-**🚩 Checkpoint**
-Documentatie gebruik
-
-
-## Figma verwijst naar de documentatie op de website.
-
-Doel: Figma verwijst naar de documentatie op de [website] (https://nldesignsystem.nl/componenten/), zodat designers gemakkelijk component specifieke documentatie kunnen raadplegen vanuit Figma.
-
-**🚩 Checkpoint**
-```👉🏻 niet aanwezig in projectboard```
-
-
-## Demonstreren en testen van features.
+### Demonstreren en testen van features.
 
 Doel: De Storybook-stories en Figma-voorbeelden demonstreren alle features die tevens zijn opgenomen als unit tests.
 
@@ -176,57 +138,86 @@ In Figma tonen we de mogelijke configuraties op een pagina. Bij Storybook kun je
 
 **🚩 Checkpoint**: coverage features
 
+### Getest op geschiktheid voor internationalisatie.
 
-## Verwijzing naar extern gebruikersonderzoek
+Doel: De implementatie is getest op geschiktheid voor internationalisering om te verzekeren dat het component correct functioneert in verschillende taalomgevingen.
 
-Doel: Verwijzing is beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
+**🚩 Checkpoint**: I18N getest
 
-**🚩 Checkpoint**: Documentatie onderzoek
+### Op toegankelijkheid getest
 
+Doel: De implementatie en documentatie is op toegankelijkheid getest.
 
-## Accessibility en inclusie documentatie
+**🚩 Checkpoint**: A11Y getest
+
+## 4. Opleveren van de documentatie
+
+### Aliassen van alternatieve namen
+
+Doel: Alternatieve namen voor het component zijn gedocumenteerd als aliassen.
+
+Dit maakt het vinden van componenten of alternatieven gemakkelijker. Aliassen en alternatieve namen ontstaan meestal tijdens de 'Help Wanted' fase. Voorbeelden hiervan zijn: _Spinner_ en _Loader_ of _Select_ en _Dropdown_.
+
+**🚩 Checkpoint**: Documentatie aliassen
+
+### Anatomie documenteren
+
+Doel: De anatomie van het component is vastgelegd.
+
+De anatomie verwijst naar de naam van het component en de onderdelen ervan, zoals de _button_ en het _label_ dat deel uitmaakt van de button.
+
+**🚩 Checkpoint**: Documentatie anatomie
+
+### Documentatie is getest
+
+Doel: De documentatie is getest onder de doelgroepen en goed ontvangen.
+
+De documentatie is eenduidig, helder en volledig. Wanneer we iemand uit de doelgroep vragen of ze op basis van deze documentatie het component wel of niet zouden gebruiken, kunnen ze daarop een antwoord geven.
+
+**🚩 Checkpoint**: Documentatie getest
+
+### Accessibility en inclusie documentatie
 
 Doel: Accessibility en inclusie documentatie is beschikbaar voor de overwegingen die van toepassing zijn.
 
 **🚩 Checkpoint**: Documentatie A11Y
 
 
-## Goedkeuring van de semantiek
+## 5. Publiceren van het component
 
-Doel: De semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.
+### Beschikbaar in de NL Design System Storybook.
 
-**🚩 Checkpoint**: Semantiek goedgekeurd
+Doel: Het component is beschikbaar in de [NL Design System Storybook] (https://nl-design-system.github.io/themes/?path=/story/button--gemeente-voorbeeld) en daarmee publiek toegankelijk.
 
+**🚩 Checkpoint**: Storybook NLDS
 
-## Op toegankelijkheid getest
+### Beschikbaar in de NL Design System Figma bibliotheek.
 
-Doel: De implementatie en documentatie is op toegankelijkheid getest.
+Doel: Het component is beschikbaar in de [NL Design System Figma bibliotheek] (https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek) en daarmee bruikbaar voor alle organisaties.
 
-**🚩 Checkpoint**: A11Y getest
+**🚩 Checkpoint**: Figma NLDS
 
+### Documentatie op de website en Storybook
 
-## Getest op geschiktheid voor internationalisatie.
+Doel: De documentatie van het component is gelijk op de website en Storybook. Door alle disciplines gelijke informatie te verstrekken waarborgen we de consistentie en bevorderen we de communicatie. 
 
-Doel: De implementatie is getest op geschiktheid voor internationalisatie.
+**🚩 Checkpoint**
+Documentatie gebruik
 
-**🚩 Checkpoint**: I18N getest
+### Figma verwijst naar de documentatie op de website.
 
+Doel: Figma verwijst naar de documentatie op de [website] (https://nldesignsystem.nl/componenten/), zodat designers gemakkelijk componentdocumentatie kunnen raadplegen vanuit Figma.
 
-## Component kan omgaan met verschillende soorten content
+**🚩 Checkpoint**
+```👉🏻 niet aanwezig in projectboard```
 
-Doel: Het component is flexibel en kan omgaan met verschillende soorten content: bijvoorbeeld korte tekst, veel woorden, lange woorden, of juist ontbrekende content.
+### Verwijzing naar extern gebruikersonderzoek
 
-**🚩 Checkpoint**: content flexibel
+Doel: Verwijzing is beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
 
+**🚩 Checkpoint**: Documentatie onderzoek
 
-## Linting en automatische code-formatting
-
-Doel: De codebase gebruikt linting en automatische code-formatting met Prettier volgens NL Design System configuraties.
-
-**🚩 Checkpoint**: Linting en formatting
-
-
-## Gepubliceerd op NPM
+### Gepubliceerd op NPM
 
 Doel: Het component is gepubliceerd op NPM in de scope van `@nl-design-system-unstable`.
 
@@ -234,26 +225,15 @@ In de volgende fase, de 'Hall of Fame', komt het component beschikbaar in de NPM
 
 **🚩 Checkpoint**: NPM (unstable)
 
+### Changelog wordt gepubliceerd
 
-## Changelog wordt gepubliceerd
-
-Doel: De changelog wordt gepubliceerd op Github bij nieuwe versies van dit component, zodat gebruikers goed op te hoogte blijven van wijzigingen.
+Doel: Bij nieuwe versies van dit component wordt de changelog op Github gepubliceerd, zodat gebruikers goed op de hoogte blijven van wijzigingen.
 
 Zoals de [button van Utrecht](https://github.com/nl-design-system/utrecht/blob/main/components/button/CHANGELOG.md)
 
 **🚩 Checkpoint**: Changelog
 
-
-## Documentatie is getest
-
-Doel: De documentatie is getest bij de doelgroepen en goed bevonden.
-
-De documentatie is eenduidig, helder en volledig. Als we iemand uit de doelgroep vragen of zij op basis van deze documentatie het component wel of niet moeten gebruiken, kunnen zij daar een antwoord op geven.
-
-**🚩 Checkpoint**: Documentatie getest
-
-
-## Status bijgewerkt naar Candidate.
+### Status bijgewerkt naar Candidate.
 
 Doel: De status is bijgewerkt naar naar Candidate.
 
