@@ -14,6 +14,209 @@ keywords:
   - candidate
 ---
 
+
 # Stappenplan: Candidate
 
-Dit stappenplan is nog in ontwikkeling.
+Bij **Candidate** is het component opgenomen in de `@nl-design-system-unstable` organisatie. Het kernteam verwacht dat het component uiteindelijk een Hall of Fame status krijgt. De API's zijn nog niet gegarandeerd en kunnen nog wijzigen. Ook bestaat er een mogelijkheid dat het component vervangen wordt door een vergelijkbare component. In deze fase bekijken we of het component mogelijk nog extra goed getest en stabiel gemaakt moet worden. Omdat het component door het kernteam onderhouden wordt voldoet het, naast de meeste Community DoD eisen, al wel aan veel meer criteria voor stabiel hergebruik.
+
+## 1. Voltooien van de eigenschappen
+
+### Versimpelen of opsplitsten
+
+Doel: Component in lijn brengen met het doel en use case.
+
+Wanneer een component diverse doelen en use cases dient, kan het kernteam ervoor kiezen om dit component op te splitsen of te vereenvoudigen. Het [doel](/handboek/help-wanted-stappenplan#doel-bepalen) is de basis waarop we componenten indelen.
+
+**🚩 Checkpoint**: Versimpeld of gesplitst
+
+### API volgt conventies
+
+Doel: API volgt conventies en is geprefixed met 'nl'.
+
+**🚩 Checkpoint**: API conventie
+
+### Gemeenschappelijk API
+
+Doel: Het voorkomen van de adoptie van organisatiespecifieke API's.
+
+Alle API's zijn gebaseerd op een gemeenschappelijke use case.
+
+**🚩 Checkpoint**: API gemeenschappelijk
+
+### Component kan omgaan met verschillende soorten content
+
+Doel: Het component is flexibel en kan verschillende soorten content aan, zoals korte tekst, veel woorden, lange woorden, of zelfs ontbrekende inhoud.
+
+**🚩 Checkpoint**: Content flexibel
+
+### Goedkeuring van de semantiek
+
+Doel: De semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.
+
+**🚩 Checkpoint**: Semantiek goedgekeurd
+
+### Gespiegelde werkelijkheid tussen Figma en code
+
+Doel: De Figma-bibliotheek van het NL Design System moet overeenkomen met de implementatie van het component in code, met betrekking tot varianten, states, design tokens en naamgeving.
+
+Een component kan gebruikmaken van enums (selectielijst in Figma), booleans (toggle in Figma) en strings (invoerveld in Figma). Het is mogelijk om de naam van de eigenschappen (properties) en het type eigenschap tussen Figma en de code-implementatie gelijk te trekken.
+
+**🚩 Checkpoint**: Figma in lijn
+
+### Linting en automatische code-formatting
+
+Doel: De codebase maakt gebruik van linting en automatische codeformatting met Prettier volgens de configuraties van het NL Design System.
+
+De juister configuraties zijn gewaardborgd in de *example* [repository](https://github.com/nl-design-system/example).
+
+**🚩 Checkpoint**: Linting en formatting
+
+
+## 2. Tokens opleveren
+
+### Gebruikt in verschillende huisstijlen
+
+Doel: Het component is ingezet door twee of meer organisaties met verschillende huisstijlen en toont aan dat het met meerdere huisstijlen overweg kan. 
+
+Controleer of er genoeg eigenschappen zijn die via tokens aangepast kunnen worden om aan de behoeften van de huisstijlen van de betrokken organisaties te voldoen.
+
+**🚩 Checkpoint**:  > 2 Thema’s
+
+### Design tokens volgen conventies
+
+Doel: Design tokens volgen [conventies](https://nldesignsystem.nl/handboek/design-tokens/) en zijn geprefixed met 'nl'.
+
+Zoals ```{nl.button.border-radius}```.
+
+**🚩 Checkpoint**: Design token conventie
+
+### Algemeen nuttige design tokens
+
+Doel: De design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
+
+Een achtergrond kleur ```{nl.button.background-color}``` van een button zal niet ter sprake komen, maar een border bottom ```{button.border-bottom-color}``` en ```{button.border-bottom-width}``` bijvoorbeeld wel.
+
+**🚩 Checkpoint**: Design tokens nuttig
+
+### Common tokens toegepast
+
+Doel: Hergebruik van logische common tokens ïmplementeren om theming makkelijk te houden.
+
+[Common tokens](https://nldesignsystem.nl/handboek/design-tokens/#common-tokens), ook wel alias tokens genoemd, zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek component gebonden zijn. Dit helpt onder andere met het implementeren van specifieke huisstijlen.
+
+**🚩 Checkpoint**: Common tokens
+
+
+## 3. Opleveren van de documentatie
+
+### Aliassen van alternatieve namen
+
+Doel: Alternatieve namen voor het component zijn gedocumenteerd als aliassen.
+
+Dit maakt het vinden van componenten of alternatieven gemakkelijker. Aliassen en alternatieve namen ontstaan meestal tijdens de 'Help Wanted' fase. Voorbeelden hiervan zijn: _Spinner_ en _Loader_ of _Select_ en _Dropdown_.
+
+**🚩 Checkpoint**: Documentatie aliassen
+
+### Anatomie documenteren
+
+Doel: De anatomie van het component is vastgelegd.
+
+De anatomie verwijst naar de naam van het component en de onderdelen ervan, zoals de _button_ en het _label_ dat deel uitmaakt van de button.
+
+**🚩 Checkpoint**: Documentatie anatomie
+
+### Accessibility en inclusie documentatie
+
+Doel: Accessibility en inclusie documentatie is beschikbaar voor de overwegingen die van toepassing zijn.
+
+**🚩 Checkpoint**: Documentatie A11Y
+
+
+## 4. Testen van het component
+
+### Demonstreren en testen van features.
+
+Doel: De Storybook-stories en Figma-voorbeelden demonstreren alle features die tevens zijn opgenomen als unit tests.
+
+In Figma tonen we de mogelijke configuraties op een pagina. Bij Storybook kun je via voorselecties of de knobs de configuraties zien.
+
+**🚩 Checkpoint**: Coverage features
+
+### Getest op geschiktheid voor internationalisatie.
+
+Doel: De implementatie is getest op geschiktheid voor internationalisering om te verzekeren dat het component correct functioneert in verschillende taalomgevingen.
+
+**🚩 Checkpoint**: I18N getest
+
+### Op toegankelijkheid getest
+
+Doel: De implementatie en documentatie is op toegankelijkheid getest.
+
+**🚩 Checkpoint**: A11Y getest
+
+### Documentatie is getest
+
+Doel: De documentatie is getest onder de doelgroepen en goed ontvangen.
+
+De documentatie is eenduidig, helder en volledig. Wanneer we iemand uit de doelgroep vragen of ze op basis van deze documentatie het component wel of niet zouden gebruiken, kunnen ze daarop een antwoord geven.
+
+**🚩 Checkpoint**: Documentatie getest
+
+
+## 5. Publiceren van het component
+
+### Beschikbaar in de NL Design System Storybook.
+
+Doel: Het component is beschikbaar in de [NL Design System Storybook](https://nl-design-system.github.io/themes/?path=/story/button--gemeente-voorbeeld) en daarmee publiek toegankelijk.
+
+**🚩 Checkpoint**: Storybook NLDS
+
+### Beschikbaar in de NL Design System Figma bibliotheek.
+
+Doel: Het component is beschikbaar in de [NL Design System Figma bibliotheek](https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek) en daarmee bruikbaar voor alle organisaties.
+
+**🚩 Checkpoint**: Figma NLDS
+
+### Documentatie op de website en Storybook
+
+Doel: De documentatie van het component is gelijk op de website en Storybook. Door alle disciplines gelijke informatie te verstrekken waarborgen we de consistentie en bevorderen we de communicatie. 
+
+**🚩 Checkpoint**: Documentatie op website
+
+### Figma verwijst naar de documentatie op de website.
+
+Doel: Figma verwijst naar de documentatie op de [website](https://nldesignsystem.nl/componenten/), zodat designers gemakkelijk componentdocumentatie kunnen raadplegen vanuit Figma.
+
+**🚩 Checkpoint**: Figma link documentatie
+
+### Verwijzing naar extern gebruikersonderzoek
+
+Doel: Verwijzing is beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
+
+**🚩 Checkpoint**: Documentatie onderzoek
+
+### Gepubliceerd op NPM
+
+Doel: Het component is gepubliceerd op NPM in de scope van `@nl-design-system-unstable`.
+
+In de volgende fase, de 'Hall of Fame', komt het component beschikbaar in de NPM scope van @nl-design-system. In dat geval ontvang je een melding dat dit component _'deprecated'_ is binnen `*-unstable`.
+
+**🚩 Checkpoint**: NPM (unstable)
+
+### Changelog wordt gepubliceerd
+
+Doel: Bij nieuwe versies van dit component wordt de changelog op Github gepubliceerd, zodat gebruikers goed op de hoogte blijven van wijzigingen.
+
+Zoals de [button van Utrecht](https://github.com/nl-design-system/utrecht/blob/main/components/button/CHANGELOG.md)
+
+**🚩 Checkpoint**: Changelog
+
+### Status bijgewerkt naar Candidate.
+
+Doel: De status is bijgewerkt naar naar Candidate.
+
+Het component heeft alle stappen van Candidate doorlopen. Het is een stabiele versie die inhoudelijk niet meer veranderd. We zijn nu klaar voor de volgende fase: de [Hall of Fame](https://nldesignsystem.nl/handboek/hall-of-fame-stappenplan).
+
+**🚩 Checkpoint**: Status Candidate
+
+Bekijk de status op [het projectbord voor de Candidate componenten](https://github.com/orgs/nl-design-system/projects/32).
