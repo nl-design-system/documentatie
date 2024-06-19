@@ -310,7 +310,7 @@ const sidebars: SidebarsConfig = {
         keywords: ['Project', 'overzicht'],
       },
       items: [
-        { type: 'doc', id: 'project/over-nlds' },
+        { type: 'doc', id: 'project/over-nl-design-system' },
         { type: 'doc', id: 'project/faq' },
         { type: 'doc', id: 'project/kernteam' },
         { type: 'doc', id: 'project/blijf-op-de-hoogte' },
