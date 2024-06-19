@@ -7,7 +7,7 @@ sidebar_position: 2
 pagination_label: Voor leveranciers
 description: Waarom zou je als leverancier meedoen aan NL Design System?
   - leverancier
-  - waarom NLDS
+  - waarom NL Design System
   - waarom een design system
 ---
 

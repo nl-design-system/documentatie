@@ -7,7 +7,7 @@ sidebar_position: 2
 pagination_label: Aanbestedingen
 description: Vragen over aanbestedingen
   - leverancier
-  - waarom NLDS
+  - waarom NL Design System
   - waarom een design system
 ---
 
@@ -51,13 +51,13 @@ Er is niet zoiets als een NL Design System keurmerk of compliance. Wel kunnen we
 
 Bij [meedoen met je organisatie](/handboek/organisatie/meedoen) hebben we opgenomen hoe wij de niveaus zouden beoordelen.
 
-### Wat moeten wij als gemeenten zelf doen zodat een leverancier met het NLDS voor ons aan de slag kan
+### Wat moeten wij als gemeenten zelf doen zodat een leverancier met het NL Design System voor ons aan de slag kan
 
 - Deel je huisstijl informatie
 - Stel een contactpersoon beschikbaar om designkeuzes te maken, bijvoorbeeld wanneer een al eerder gemaakte keuze niet toegankelijk is of niet voldoet aan de richtlijnen van NL Design System.
 - Die contactpersoon kan ook deelnemen aan de Slack van #nl-design-system, zodat mensen laagdrempelig vragen kunnen stellen.
 
-### Wat betekent dat voor reeds bestaande design/techniek die nog niet aan de standaarden van NLDS voldoet
+### Wat betekent dat voor reeds bestaande design/techniek die nog niet aan de standaarden van NL Design System voldoet
 
 1. Verbeter issues uit de toegankelijkheidsverklaring met hulp van de NL Design System richtlijnen
 2. Maak een eigen thema voor componenten die je later uit NL Design System wil gebruiken

@@ -17,4 +17,4 @@ Hier tonen we voorbeelden van veelvoorkomende pagina's en klantreizen, gemaakt m
 
 Op dit moment werken we hard om voorbeelden te delen. Hou deze pagina in de gaten!
 
-<!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NLDS -->
+<!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NL Design System -->
