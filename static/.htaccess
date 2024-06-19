@@ -6,6 +6,7 @@ Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022
 Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/leverancier/introductie"
 Redirect 301 "/counter-badge" "/number-badge"
 Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
+Redirect 301 "/blog/nlds-zelfstandig" "blog/nl-design-system-zelfstandig-verder"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
