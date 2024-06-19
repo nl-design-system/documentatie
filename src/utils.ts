@@ -47,7 +47,7 @@ export const HELP_WANTED_CHECKS = {
   },
   PVTSSF_lADOBGdlVM4AdX8lzgasBXs: {
     label: 'Afbeelding',
-    description: 'Afbeelding gemaakt om het component visueel duidelijk te maken.',
+    description: 'Afbeelding gemaakt om de component visueel duidelijk te maken.',
   },
   PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: {
     label: 'Backlog',
@@ -55,7 +55,7 @@ export const HELP_WANTED_CHECKS = {
   },
   'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': {
     label: 'Bruikbaar',
-    description: 'Bewijs verzameld dat het component algemeen bruikbaar is.',
+    description: 'Bewijs verzameld dat de component algemeen bruikbaar is.',
     doneValue: 'Algemeen bruikbaar',
   },
   PVTSSF_lADOBGdlVM4AdX8lzgasBms: {

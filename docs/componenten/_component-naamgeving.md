@@ -1,6 +1,6 @@
 # Component naamgeving
 
-Voor veel componenten hebben we de namen al vastgelegd. Bij nieuwe componenten gaan we in overleg over de juiste naamgeving. Hierbij proberen we ons zoveel mogelijk aan standaarden te houden. We zorgen dat de naam niet wordt gekozen op basis van de vorm van het component maar altijd op de functie.
+Voor veel componenten hebben we de namen al vastgelegd. Bij nieuwe componenten gaan we in overleg over de juiste naamgeving. Hierbij proberen we ons zoveel mogelijk aan standaarden te houden. We zorgen dat de naam niet wordt gekozen op basis van de vorm van de component maar altijd op de functie.
 
 ## 'Component as link' en 'Component as button'
 

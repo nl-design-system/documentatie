@@ -54,7 +54,7 @@ Bij het maken van prototypes is gebruik gemaakt van de Figma bibliotheek van N D
 
 **Minimale optie**: Wanneer de component niet bruikbaar is, dan kies je een eigen weg.
 
-**Ideale optie**: Deel het met de community wanneer je een bestaande component niet kan hergebruiken, bijvoorbeeld in de GitHub Discussion over het component of door een GitHub Issue aan te maken bij de maker van de component.
+**Ideale optie**: Deel het met de community wanneer je een bestaande component niet kan hergebruiken, bijvoorbeeld in de GitHub Discussion over de component of door een GitHub Issue aan te maken bij de maker van de component.
 
 **Tip**: We raden de leverancier aan om deel te nemen aan designer en developer open hours zodat vragen gesteld kunnen worden en samengewerkt kan worden met de bestaande community.
 
@@ -74,18 +74,18 @@ Wanneer een component uit de community niet helemaal voldoet aan de eisen die he
 
 Nieuw componenten die nodig zijn voor het project en waarvan waarschijnlijk is dat het bruikbaar is voor de rest van Nederland zijn opgeleverd volgens de NL Design System aanpak. Dat betekent:
 
-- Het component is aangemaakt als GitHub Discussion voor Help Wanted
+- De component is aangemaakt als GitHub Discussion voor Help Wanted
 - De eerste stappen voor “Community component” zijn gevolgd: https://nldesignsystem.nl/handboek/community-stappenplan
-- Het component is gebouwd volgens de NL Design System architectuur
-- Het component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
+- De component is gebouwd volgens de NL Design System architectuur
+- De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
 
-**Ideale optie**: Het component is ook in Figma beschikbaar volgens de Figma architectuur
+**Ideale optie**: De component is ook in Figma beschikbaar volgens de Figma architectuur
 
 ## Niveau 7. Design System beschikbaar maken voor de community en documenteren met Storybook
 
 ### Bewijs:
 
-Er is een Storybook website waarin het component en de verschillende varianten van het component zijn gedocumenteerd.
+Er is een Storybook website waarin de component en de verschillende varianten van de component zijn gedocumenteerd.
 
 **Ideale optie**: De leverancier heeft een storybook omgeving opgeleverd waarin de pagina’s die nodig zijn voor de applicatie gedocumenteerd zijn en door anderen over te nemen. Een goed voorbeeld zijn de MijnZaken pagina’s van Den Haag https://nl-design-system.github.io/denhaag/?path=/story/templates-overview--overview die naast de componenten documentatie beschikbaar zijn gemaakt.
 
