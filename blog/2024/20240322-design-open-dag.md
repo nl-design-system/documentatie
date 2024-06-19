@@ -29,7 +29,7 @@ We zijn deze administratie daarom check voor check aan het inhalen. Dat betekent
 
 Jeffrey Lauwers, UX designer in het kernteam, is al sinds januari veel van het voorwerk aan het doen. Hij heeft zodoende al voor veel componenten een inventarisatie gedaan. Dat is waarom je hem in onze Slack-community regelmatig hoort vragen naar het gebruik van verschillende componenten.
 
-Op de samenwerkdag praatte Jeffrey ons door het Paragraph component heen, en konden we als groep vinkjes zetten bij de verschillende criteria. Zo weten we nu bijvoorbeeld dat het Paragraph component volledig voldoet aan de Definition of Done voor ‘Help Wanted’, en grotendeels aan die van ‘Community’.
+Op de samenwerkdag praatte Jeffrey ons door de Paragraph component heen, en konden we als groep vinkjes zetten bij de verschillende criteria. Zo weten we nu bijvoorbeeld dat de Paragraph component volledig voldoet aan de Definition of Done voor ‘Help Wanted’, en grotendeels aan die van ‘Community’.
 
 <img src="https://github.com/nl-design-system/documentatie/blob/assets/components-bord-1.jpg?raw=true" alt="een GitHub projectbord genaamd Components - 1 - Help Wanted met daarop componenten in rijen per component en kolommen per status, waarbij 3 van de acht rijen vooral  groene statussen staan" /> _Checks per component op het [projectbord](https://github.com/orgs/nl-design-system/projects/27/views/1)_
 

@@ -64,7 +64,7 @@ Er bestaat een component dat er erg op lijkt met de NLDS architectuur. Met een k
 ## 5. Een nieuw herbruikbaar component maken
 
 Er bestaat nog geen component dat kan worden gebruikt voor het nieuwe project.
-Het is mogelijk dat het nieuw te maken component gebruikt kan worden door andere projecten.
+Het is mogelijk dat de nieuw te maken component gebruikt kan worden door andere projecten.
 
 - Overheidsorganisaties gebruiken idealiter een repo binnen nl-design-system Github met een eigen organisatie naam. Deze is dan goed vindbaar voor anderen die de component later kunnen gebruiken. Voor andere (commerciële) partijen wordt een eigen organisatie repo gebruikt, hier kan wel door NLDS naar verwezen worden door de topic nl-design-system toe te voegen.
 - Gebruik een eigen prefix, idealiter de naam van de organisatie
