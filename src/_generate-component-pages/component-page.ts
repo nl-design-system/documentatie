@@ -14,7 +14,7 @@ export const getStateDescription = ({ state }) => {
       break;
     case COMPONENT_STATES.NL_UNSTABLE:
       description =
-        'Het component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
+        'De component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
       break;
     case COMPONENT_STATES.NL_STABLE:
       description =
