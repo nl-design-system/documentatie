@@ -7,7 +7,7 @@ sidebar_position: 2
 pagination_label: Voor managers
 description: Waarom zou je als manager investeren in NL Design System?
   - manager
-  - waarom NLDS
+  - waarom NL Design System
   - waarom een design system
 ---
 

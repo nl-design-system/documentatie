@@ -7,7 +7,7 @@ sidebar_position: 2
 pagination_label: Meedoen
 description: Meedoen als organisatie
   - leverancier
-  - waarom NLDS
+  - waarom NL Design System
   - waarom een design system
 ---
 

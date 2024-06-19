@@ -21,22 +21,22 @@ Door antwoord te geven op een paar simpele vragen wordt duidelijk of:
 - Optie 1 en 2: Het met een bestaand component kan
 - Optie 3: Het met een bestaand component kan door een kleine toevoeging of token toe te voegen
 - Optie 4: Je een bestaand component verder kan uitbreiden
-- Optie 5: Je een nieuw component volgens de NLDS architectuur maakt
+- Optie 5: Je een nieuw component volgens de NL Design System architectuur maakt
 - Optie 6: Je er een losstaande niet herbruikbare implementatie van maakt
 
 ## Flowchart
 
-![Flowchart opties hoe je een NLDS component kan gebruiken](https://i.imgur.com/LZcYeXT.jpg)
+![Flowchart opties hoe je een component kan gebruiken](https://i.imgur.com/LZcYeXT.jpg)
 
 ## 1. Een kant-en-klaar component
 
 Bestaat de component in het NL Design System en is het geschikt om zo voor het design te gebruiken? Heeft de component een nl- prefix, bijvoorbeeld `nl-component`?
 
-- Gebruik het NLDS component
+- Gebruik het NL Design System component
 
 ## 2. Een component van een andere organisatie
 
-De component bestaat niet in het NL Design System maar wel bij een van de organisaties die met de NLDS architectuur werken. Daarom heeft het een andere prefix, bijvoorbeeld `utrecht-component` of `den-haag-component`.
+De component bestaat niet in het NL Design System maar wel bij een van de organisaties die met de NL Design System architectuur werken. Daarom heeft het een andere prefix, bijvoorbeeld `utrecht-component` of `den-haag-component`.
 De component voldoet verder wel aan de wensen en heeft voldoende design tokens om aan het design te voldoen.
 
 - Gebruik dit component dan met de organisatie prefix van de bestaande component en gebruik deze prefix ook voor de component design tokens.
@@ -52,7 +52,7 @@ De component bestaat met de NL Design System architectuur. Ook kan het met wat e
 
 ## 4. Extra feature toevoegen aan een component
 
-Er bestaat een component dat er erg op lijkt met de NLDS architectuur. Met een kleine wijziging die niet het doel van de component aantast en er geen Frankenstein van maakt kan de component voldoen aan de wensen van het nieuwe project.
+Er bestaat een component dat er erg op lijkt met de NL Design System architectuur. Met een kleine wijziging die niet het doel van de component aantast en er geen Frankenstein van maakt kan de component voldoen aan de wensen van het nieuwe project.
 
 1. Overleg met de maintainers of het logisch is de component uit te breiden. Als een nieuwe component moet worden gemaakt ga dan door naar optie 5.
 2. Maak dan een fork
@@ -66,9 +66,9 @@ Er bestaat een component dat er erg op lijkt met de NLDS architectuur. Met een k
 Er bestaat nog geen component dat kan worden gebruikt voor het nieuwe project.
 Het is mogelijk dat de nieuw te maken component gebruikt kan worden door andere projecten.
 
-- Overheidsorganisaties gebruiken idealiter een repo binnen nl-design-system Github met een eigen organisatie naam. Deze is dan goed vindbaar voor anderen die de component later kunnen gebruiken. Voor andere (commerciële) partijen wordt een eigen organisatie repo gebruikt, hier kan wel door NLDS naar verwezen worden door de topic nl-design-system toe te voegen.
+- Overheidsorganisaties gebruiken idealiter een repo binnen nl-design-system Github met een eigen organisatie naam. Deze is dan goed vindbaar voor anderen die de component later kunnen gebruiken. Voor andere (commerciële) partijen wordt een eigen organisatie repo gebruikt, hier kan wel door NL Design System naar verwezen worden door de topic nl-design-system toe te voegen.
 - Gebruik een eigen prefix, idealiter de naam van de organisatie
-- Maak de component volgens de NLDS architectuur, het kernteam vind het leuk om hier bij te adviseren!
+- Maak de component volgens de NL Design System architectuur, het kernteam vind het leuk om hier bij te adviseren!
 
 ## 6. Dit design wordt geen onderdeel van het design system
 
