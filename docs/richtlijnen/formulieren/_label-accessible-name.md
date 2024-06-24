@@ -47,4 +47,4 @@ Het geven van een goede toegankelijke naam aan formuliervelden is nodig om te vo
 - [1.3.1 Info en relaties](/wcag/1.3.1) (niveau A).
 - [2.4.6: Koppen en labels](/wcag/2.4.6) (niveau AA).
 - [3.3.2: Labels of instructies](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions) (niveau A).
-- [4.1.2 Naam, rol en waarde](/wcag/4.1.2) (niveau A).
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2) (niveau A).

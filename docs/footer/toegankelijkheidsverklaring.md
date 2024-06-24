@@ -12,7 +12,7 @@ slug: /toegankelijkheidsverklaring
 
 De componenten die de NL Design System community ontwikkelt worden direct open source gedeeld.
 Componenten zijn vaak beschikbaar zodra teams beginnen met de ontwikkeling, wanneer toegankelijkheid nog niet onafhankelijk is getest.
-Let op welk label het component heeft in het componenten-overzicht van Storybook: "work in progress", "alpha", "beta" of "production".
+Let op welk label de component heeft in het componenten-overzicht van Storybook: "work in progress", "alpha", "beta" of "production".
 
 De bedoeling is dat componenten het label "production" krijgen wanneer het team de component heeft ingezet, de website vervolgens is gecontroleerd en een toegankelijkheidsverklaring heeft, en geconstateerde toegankelijkheidsproblemen zijn verholpen.
 

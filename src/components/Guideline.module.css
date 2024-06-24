@@ -63,3 +63,9 @@ p + .nlds-guideline {
 
   color: var(--nlds-valid-color);
 }
+
+.nlds-guideline--dont {
+  --nlds-canvas-toolbar-copy-display: none;
+  --nlds-canvas-code-block-cursor: not-allowed;
+  --nlds-canvas-code-block-user-select: none;
+}

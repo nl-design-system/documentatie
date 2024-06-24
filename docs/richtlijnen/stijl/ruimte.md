@@ -123,7 +123,7 @@ Gebruik de ‘Row’ spacing scale om verticaal ruimte te creeeren tussen compon
 
 Met deze spacing concepten kun je alle componenten op een consistente manier van ruimte voorzien. Denk bijvoorbeeld aan een ‘Card’ of de ruimte tussen de elementen in een formulier.
 
-![Twee card componenten. Bij het eerste card component zijn door middel van kleurvlakken de ruimtes aangeduid.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_card.png)
+![Twee card componenten. Bij de eerste card component zijn door middel van kleurvlakken de ruimtes aangeduid.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_card.png)
 
 ![Twee korte formulieren. Bij het eerste formulier zijn door middel van kleurvlakken de verticale ruimtes aangeduid.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_form.png)
 

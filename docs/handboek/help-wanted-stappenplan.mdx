@@ -1,0 +1,430 @@
+---
+title: Help Wanted stappenplan
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Help Wanted componenten
+sidebar_position: 2
+pagination_label: Help Wanted
+description: Stappen voor de Help Wanted fase van Definition of Done
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - definition of done
+  - help wanted
+---
+
+{/* @license CC0-1.0 */}
+
+# Stappenplan: Help Wanted
+
+Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Help Wanted' status](https://github.com/orgs/nl-design-system/projects/27/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+
+## Naam bepalen
+
+Begin met het bepalen van een naam.
+
+Baseer de naam van de component indien mogelijk, op herkenbare termen uit webstandaarden. Liever termen uit HTML, CSS, SVG en WAI-ARIA dan uit 'UI frameworks' die op het moment populair zijn. We schrijven componenten over het algemeen als enkelvoud.
+
+Kijk voor inspiratie bij:
+
+- [Component gallery](https://component.gallery)
+- [UI guideline](https://www.uiguideline.com/components)
+- [NL Design System componenten](https://www.nldesignsystem.nl/componenten/)
+
+Zijn er meerdere namen voor de component? Kies de meest gangbare. De andere namen kun je later toevoegen aan de documentatie.
+
+**🚩 Checkpoint**: Naam bepaald op basis van NL Design System naamgeving.
+
+## Doel bepalen
+
+Doel: Zorgen dat we als community op 1 lijn zitten. Wat is de component wel, en wat niet. Daarnaast duidelijk maken of er gerelateerde componenten zijn.
+
+Het doel (nut) van de component beschrijft in één zin waar de component voor dient.
+
+Kijk ter inspiratie bij:
+
+- https://design-system.service.gov.uk
+- https://designsystem.digital.gov
+- https://spectrum.adobe.com
+- https://carbondesignsystem.com
+- https://cedar.rei.com
+
+We proberen de schrijfwijze van het doel zoveel mogelijk te beginnen met een werkwoord en de term 'gebruiker' te vermijden. Bekijk bestaande [GitHub Discussions](https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions) als voorbeeld.
+
+**🚩 Checkpoint**: Doel van component is in één zin beschreven.
+
+## Afbeelding maken
+
+Doel: De component is visueel duidelijk
+
+Om de community letterlijk een beeld te geven van de component voegen we een afbeelding toe. Deze kun je maken in het [Figma 'Schetsboek'](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=439-969&mode=design).
+
+**🚩 Checkpoint**: Afbeelding gemaakt om de component visueel duidelijk te maken.
+
+## GitHub Discussion starten
+
+Doel: Een plek om input te verzamelen.
+
+We gebruiken [Github 'Discussions' van NL Design System](https://github.com/orgs/nl-design-system/discussions) om input te verzamelen.
+
+- Start een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/new?category=component-suggestions) voor de component.
+- Vul als titel in: `Component: {naam-component}`.
+- Vul als beschrijving onderstaande template in en start de GitHub Discussion.
+
+```md
+## Naam
+
+{naam-component}
+
+## Doel
+
+{doel-component}
+
+## Ook bekend als (niet verplicht)
+
+{andere namen die je bent tegengekomen toen je de naam bepaalde}
+
+## Gerelateerde componenten (niet verplicht)
+
+{zie hieronder}
+
+## Onderzoek
+```
+
+### Gerelateerde componenten
+
+Het kan voorkomen dat andere componenten sterk gerelateerd zijn aan dit component. Denk bijvoorbeeld aan Button en Button group. Dan is het handig om deze componenten naar elkaar te laten verwijzen, indien mogelijk via een link. Noteer gerelateerde componenten als volgt:
+
+```md
+## Gerelateerde componenten
+
+X, Y, of Z.
+```
+
+**🚩 Checkpoint**: Aangemaakt als een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions).
+
+## Input verzamelen
+
+Doel: Bewijs verzameld dat de component algemeen bruikbaar is.
+
+### Community om hulp vragen
+
+Om meer te leren over de component vragen we de community om hulp. Deze oproep doen we via de GitHub Discussion en Slack.
+
+#### Oproep via GitHub Discussion
+
+Vul de beschrijving van de GitHub Discussion aan met de onderstaande oproep. Plaats deze **boven** de informatie die daar al stond zoals Naam, Doel, etc.
+
+- Voeg de afbeelding toe.
+- Wijzig de 'alt text' die automatisch door Github wordt toegevoegd. Bijvoorbeeld:
+  - `verschillende vormen van de {naam-component} component`
+  - `visuele weergave van de {naam-component} component`
+- Voeg onderstaande tekst toe, vul aan waar nodig en 'Update' de GitHub Discussion.
+
+```md
+We willen graag meer leren over de {naam-component} component. In welke vorm, of vormen, wordt deze momenteel ingezet en toegepast binnen jouw organisatie?
+
+Deel hieronder een link naar Figma, Storybook, Github of screenshots. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.
+
+Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!
+
+[Link naar bericht in Slack]({link-naar-Slack-bericht})
+
+---
+```
+
+#### Oproep via Slack
+
+Plaats de oproep in het Slack channel [#nl-design-system](https://codefornl.slack.com/archives/C7KDQRXMZ).
+
+- Voeg de afbeelding toe aan je bericht.
+- Voeg ook hier de 'alt text' toe. [Alt text toevoegen aan een Slack bericht](https://slack.com/help/articles/4403914924435-Add-descriptions-to-images)
+- Voeg onderstaande tekst toe, vul aan waar nodig en verstuur je bericht.
+
+```md
+Hey community 👋
+
+We willen graag meer leren over de {naam-component} component. In welke vorm, of vormen, wordt deze momenteel ingezet en toegepast binnen jouw organisatie?
+
+Deel een link naar Figma, Storybook, Github of screenshots in de [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}), of in een thread onder dit bericht. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.
+
+Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!
+```
+
+Vergeet niet de link naar het Slack bericht toe te voegen aan de oproep in de GitHub Discussion.
+
+### Zelf op onderzoek uit
+
+Niet elke organisatie zal op de oproep reageren. Ga daarom ook zelf op onderzoek uit. Duik in Figma, Storybook, Github en documentatie omgevingen voor een 'Screenshot-Safari 📸'. Maak screenshots van de component, varianten en states. Het gaat om bewijs verzamelen dat de component bestaat en in welke vorm, of vormen, deze wordt toegepast.
+
+- Kom je de component maar op 1 plek tegen? Zorg dan voor een uitgebreide beschrijving van het doel.
+- Kom je de component niet tegen in Figma, Storybook, Github of documentatie omgevingen? Dan zou je ook de website van de organisatie kunnen bekijken.
+
+Vooralsnog houden we deze set aan organisaties aan. Hiermee hebben we een mooie mix te pakken van gemeentes, leveranciers en overige overheidsorganisaties.
+
+#### Amsterdam
+
+- [Storybook](https://amsterdam.github.io/design-system/?path=/docs/docs-intro--docs)
+- [Figma](https://www.figma.com/file/9IGm6IdPUYizBNGsUnueBd/Standaard-Design-Library---Desktop?type=design&node-id=1222%3A39437&t=nLmwomuRhjnfhbCa-1)
+- [Github](https://github.com/amsterdam/design-system) ([CSS componenten](https://github.com/Amsterdam/design-system/tree/develop/packages/css/src/components))
+
+#### Den Haag
+
+- [Storybook](https://nl-design-system.github.io/denhaag/?path=/story/den-haag-introduction--page)
+- [Figma - Huidig](https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/)
+- [Figma - WIP](https://www.figma.com/file/x4RkF6BIdrNZbh7D53NTzB/%F0%9F%92%A0-NLDS---Den-Haag---Bibliotheek?type=design&node-id=197%3A664&mode=design&t=F9Lon3x3TsDbzI9q-1)
+- [Github](https://github.com/nl-design-system/denhaag) ([CSS componenten](https://github.com/nl-design-system/denhaag/tree/main/components))
+
+#### DSO
+
+- [Documentatie website](https://dso-toolkit.nl/62.8.4/intro/)
+- [Storybook](https://storybook.dso-toolkit.nl/62.8.4/?path=/docs/html-css-accordion--docs)
+- [Github](https://github.com/dso-toolkit/dso-toolkit) ([CSS componenten](https://github.com/dso-toolkit/dso-toolkit/tree/master/packages/dso-toolkit/src/components))
+
+#### DUO
+
+[Documentatie website](https://uno.dfront.rijkscloud.nl/)
+
+#### Open Formulieren
+
+[Storybook](https://open-formulieren.github.io/open-forms-sdk/?path=/docs/introduction--docs)
+
+#### OpenGemeenten
+
+- [Documentatie website](https://componenten.lenteveld.nl/)
+- [Patternlab](https://patternlab.lenteveld.nl/index.html)
+
+Gebruik in Patternlab het linkadres van de `h2` of `h3` om naar een specifiek onderdeel te linken.
+
+#### Rotterdam
+
+- [Storybook](https://nl-design-system.github.io/rotterdam/?path=/docs/rotterdam-rotterdam-design-system--docs)
+- [Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/Gemeente-Rotterdam-Design-System?type=design&node-id=413%3A13001&mode=design&t=8rW24O9QRoIbb8Ry-1)
+- [Github](https://github.com/nl-design-system/rotterdam) ([CSS componenten](https://github.com/nl-design-system/rotterdam/tree/main/packages/components-css))
+
+#### RVO
+
+- [Documentatie website](https://nl-design-system.github.io/rvo/docs/)
+- [Storybook](https://nl-design-system.github.io/rvo/?path=/docs/introductie--docs)
+- [Figma](<https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=484-13305&t=vZTjQBvAiufxd5Qs-0>)
+- [Github](https://github.com/nl-design-system/rvo) ([CSS componenten](https://github.com/nl-design-system/rvo/tree/master/components))
+
+#### Utrecht
+
+- [Documentatie website](https://nl-design-system.github.io/utrecht/)
+- [Storybook](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/utrecht-readme--docs)
+- [Figma](https://www.figma.com/file/UXIHcIurAD8hyoBWx4hDBV/NLDS---Gemeente-Utrecht---Bibliotheek?type=design&node-id=197%3A664&mode=design&t=QPCkq0xOt8SFquC4-1)
+- [Github](https://github.com/nl-design-system/utrecht) ([CSS componenten](https://github.com/nl-design-system/utrecht/tree/main/components))
+
+### Bevindingen vastleggen
+
+Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik onderstaande tekst als basis.
+
+```md
+## {Naam-organisatie}
+
+- [Documentatie website]({link-naar-component-in-documentatie-website})
+- [Storybook]({link-naar-component-in-storybook})
+- [Figma]({link-naar-component-in-figma})
+- [Github]({link-naar-component-in-github})
+
+---
+
+### Screenshots / Varianten
+
+**Storybook**
+
+Naam variant
+Rationale variant
+Screenshot
+
+**Figma**
+
+Naam variant
+Rationale variant
+Screenshot
+
+---
+
+### Notities
+```
+
+- Vul aan waar nodig.
+- Laat weg wat niet van toepassing is.
+- Noteer wat je opvalt.
+  - Zijn er specifieke opties (properties) beschikbaar?
+  - Zijn er specifieke design keuzes gemaakt?
+  - Is er documentatie beschikbaar?
+  - Heeft de component een andere naam?
+  - Is er onderzoek beschikbaar?
+  - etc.
+
+**🚩 Checkpoint**:
+
+- Bewijs verzameld dat de component algemeen bruikbaar is.
+- Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.
+
+## Varianten vastgeleggen
+
+Doel: Alleen varianten die algemeen nut hebben zijn vastgelegd. Daarnaast is het duidelijk waarvoor de variant bedoeld is.
+
+De varianten kun je baseren op de screenshots van de stap hierboven. Beschrijf de naam en het doel van de algemeen nuttige varianten. Als je twijfelt over de rationale van een variant kun je de betreffende organisatie eventueel om aanvullende toelichting vragen.
+
+**🚩 Checkpoint**: Naam en doel van benodigde varianten beschreven.
+
+## Onderzoek toevoegen
+
+Doel: We kunnen aantonen dat dit een component is dat voor eindgebruikers werkt.
+
+Zijn er inzichten rondom de component beschikbaar omdat deze een rol heeft gespeeld bij gebruikersonderzoek? Super! Daarnaast kun je 'desk-research' doen om inzichten en 'best-practices' te verzamelen.
+
+Kijk bijvoorbeeld bij:
+
+- [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/)
+- [nngroup.com](https://www.nngroup.com/)
+- [baymard.com](https://baymard.com/)
+- [GOV.UK - Discussions](https://github.com/orgs/alphagov/projects/43/views/1)
+
+Plaats verwijzingen naar onderzoek onderaan in de beschrijving van de GitHub Discussion. Noteer deze als volgt:
+
+```md
+## Onderzoek
+
+[Titel - Afzender](link)
+Korte beschrijving
+
+[Titel - Afzender](link)
+Korte beschrijving
+
+[Titel - Afzender (PDF, 124 kb](link)
+Korte beschrijving
+```
+
+**🚩 Checkpoint**: Nut van component is onderbouwd door gebruikersonderzoek.
+
+## Toevoegen aan backlog
+
+Doel: Zichtbaarheid en overzicht creëren zodat componenten niet dubbel worden toevoegd.
+
+We gebruiken 'Issues' in de [Github 'Backlog' repository van NL Design System](https://github.com/nl-design-system/backlog/issues) om onze backlog te beheren.
+
+- Maak een ['Issue](https://github.com/nl-design-system/backlog/issues/new) voor de component.
+- Vul als titel in: `Component: {naam-component}`.
+- Vul als beschrijving onderstaande template in en maak het issue aan.
+
+```md
+## Naam
+
+{naam-component}
+
+[Link naar GitHub Discussion]({link-naar-github-discussion})
+```
+
+Selecteer bij 'Projects' de volgende projecten:
+
+- Components - 1 - Help Wanted
+- Components - 2 - Community
+- Components - 3 - Candidate
+- Components - 4 - Hall of Fame
+
+**🚩 Checkpoint**: Staat in de [publieke backlog van NL Design System](https://github.com/nl-design-system/backlog/issues).
+
+## Checkpoints afvinken
+
+Doel: Voortgang van component inzichtelijk maken.
+
+Door de vorige stap is de component toegevoegd aan het [Help Wanted bord](https://github.com/orgs/nl-design-system/projects/27/views/1). Je kunt nu de reeds behaalde checkpoints afvinken door per kolom de juiste waarde te selecteren.
+
+## Bevestiging door kernteam
+
+Doel: kernteam verwacht dat dit component tot Hall of Fame kan komen.
+
+Dit is het moment om de component in zijn geheel nog eens af te stemmen met het kernteam. Deel een link naar de GitHub Discussion met het kernteam via Slack. Na akkoord voert het kernteam de laatste stap uit.
+
+Stuur dit bericht naar #nl-design-system op Slack:
+
+```md
+Hiep hoi!
+
+Het is zover, {naam-component} is helemaal klaar voor een Help Wanted stempel.
+Er is nog 1 stap over, namelijk: verwachten we dat deze in de Hall of Fame zou kunnen komen? Laat het weten via een emoticon.
+
+🤩 Top, doen! (hetzelfde als niets zeggen).
+😭 Nee, deze moet nooit naar de Hall of Fame.
+🤨 Ik snap de naam of het nut niet.
+```
+
+### Kernteam hakt knoop door
+
+Deze stap kan enkel worden uitgevoerd door het kernteam.
+
+Iedereen mag wat vinden, maar de verschillende specialismes uit het kernteam moeten wat vinden. Dus post een linkje naar het 'Hiep hoi' bericht in het #nl-design-system-kernteam kanaal. Je kan `@here` gebruiken om iedereen even wakker te schudden.
+
+Het kernteam bespreekt de component aan het eind van de eerstvolgende weekly. Eventueel benodigde acties worden ter plekke doorgevoerd of voor een volgende sprint vastgelegd.
+
+#### Akkoord?
+
+Ga verder bij [Status naar Help Wanted](#status-naar-help-wanted).
+
+#### Niet akkoord?
+
+Plaats deze tekst in de 'thread' van het 'Hiep hoi' bericht, vul aan waar nodig.
+
+```md
+❌ Het kernteam heeft besloten dat de naam en het doel van dit component duidelijk zijn, maar niet voldoende nuttig is voor meerdere organisaties.
+
+Dit hoeft niet te betekenen dat {naam-component} nooit de Help Wanted status krijgt. De [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}) blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.
+```
+
+**🚩 Checkpoint**: Nut van component is door het kernteam bevestigd.
+
+## Status naar Help Wanted
+
+Doel: iedereen kan zien dat de component nu richting Candidate wil.
+
+Deze stap kan enkel worden uitgevoerd door het kernteam.
+
+- Voeg het 'Help Wanted' label toe aan het backlog issue.
+- Voeg het 'Help Wanted' label toe aan de GitHub Discussion.
+- Filter het [Community bord](https://github.com/orgs/nl-design-system/projects/29/views/1) op de component door op `Component: {naam-component}` te zoeken.
+- Kopieer de url na het filteren.
+- Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
+
+```md
+## ✨ Dit component is nu Help Wanted ✨
+
+Help je mee hem door de Community stappen te krijgen?
+[{naam-component} op het Community bord]({url-community-bord})
+```
+
+Plaats deze tekst in de 'thread' van het 'Hiep hoi' bericht, vul aan waar nodig.
+
+```md
+✅ Het kernteam heeft besloten dat de naam en het doel van dit component duidelijk zijn en de component algemeen nuttig is voor meerdere organisaties.
+
+✨ **Dit component is nu Help Wanted** ✨
+
+Help je mee hem door de Community stappen te krijgen?
+[{naam-component} op het Community bord]({url-community-bord})
+
+De [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}) blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.
+```
+
+**🚩 Checkpoint**: Status bijgewerkt naar Help Wanted.
+
+## Toevoegen aan documentatie website
+
+Doel: Hierdoor kan de component worden opgepakt door de community.
+
+Deze stap kan enkel worden uitgevoerd door het kernteam.
+
+- Schematische afbeelding gemaakt in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
+- Informatie van component toegevoegd aan [Component index](https://github.com/nl-design-system/index/blob/main/packages/component-index/src/index.ts).
+- Website updaten.
+
+**🚩 Checkpoint**: Vindbaar op de NL Design System website.
+
+## 🏁 Finish
+
+Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de ['Help Wanted' status](https://github.com/orgs/nl-design-system/projects/27/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done). De component gaat nu door voor de 'Community' status.

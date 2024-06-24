@@ -60,7 +60,7 @@ Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen onderste
 
 Zoals aangegeven kan iedere organisatie zijn eigen huisstijl toepassen. En toch bieden we vanuit het NL Design System documentatie aan rondom stijl. Hier vind je richtlijnen en tips die je kunt meenemen bij het toepassen van je eigen huisstijl.
 
-[Bekijk de stijl documentatie](../../richtlijnen/stijl/README.md)
+[Bekijk de stijl documentatie](/richtlijnen/stijl/overzicht)
 
 ### Voorbeeld thema
 
@@ -84,7 +84,7 @@ Op dit moment zijn we druk bezig om de NL Design System Figma Bibliotheek te vul
 
 Mis je een component? Zou je een component graag aangepast zien? Heb je input voor de documentatie? Of nog beter heb je ooit onderzoek gedaan naar een component?
 
-[Neem contact op](../../project/kernteam.mdx), dan zetten we het component op [de backlog](https://github.com/nl-design-system/backlog).
+[Neem contact op](../../project/kernteam.mdx), dan zetten we de component op [de backlog](https://github.com/nl-design-system/backlog).
 
 ### Patronen en Templates
 

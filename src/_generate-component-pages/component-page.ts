@@ -14,7 +14,7 @@ export const getStateDescription = ({ state }) => {
       break;
     case COMPONENT_STATES.NL_UNSTABLE:
       description =
-        'Het component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
+        'De component is een kandidaat voor onze "Hall of fame". Heb je hem gebruikt en ben je enthousiast? Hebben jullie gebruikersonderzoek gedaan en goede feedback? Laat het ons dan weten!';
       break;
     case COMPONENT_STATES.NL_STABLE:
       description =
@@ -49,6 +49,7 @@ tags:
 
 {/* @license CC0-1.0 */}
 {/* File is automatically generated based on @nl-design-system/component-index and custom documentation files starting with __<component-id>  */}
+import { TaskList, TaskListItem } from "../../../src/components/TaskList";
 ${
   story
     ? `import { Story } from "../../../src/components/Story";
@@ -61,6 +62,7 @@ import CustomDoc from "${customDoc}";
 `
       : ''
   }
+
 # ${name}
 
 ${getStateDescription({ state })}${
@@ -82,6 +84,26 @@ ${getStateDescription({ state })}${
 `
       : ''
   }`;
+};
+
+export const getComponentStatus = (projectChecks, componentChecks) => {
+  const checks = projectChecks.map((check) => {
+    const componentCheck = componentChecks.find(({ id }) => id === check.id);
+    return {
+      ...check,
+      ...componentCheck,
+    };
+  });
+
+  return `## Help Wanted
+  <TaskList>
+    ${checks.map(({ id, name, value, label, description, doneValue }) => {
+      const isDone = doneValue !== undefined ? value === doneValue : value;
+      return `<TaskListItem ${isDone ? 'checked={true}' : ''} title={"${label || name}"} key={"${id}"} description={"${description}"} />`;
+    }).join(`
+    `)}
+  </TaskList>
+  `;
 };
 
 export const getImplementationsSection = () => `## Implementaties

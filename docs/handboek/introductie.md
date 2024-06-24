@@ -13,7 +13,7 @@ keywords:
 
 # Introductie
 
-NL Design System maakt toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk. Op deze pagina lees je meer over wat dat technisch betekent. Voor meer informatie over het project zelf, zie [Over NL Design System](/project/over-nlds).
+NL Design System maakt toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk. Op deze pagina lees je meer over wat dat technisch betekent. Voor meer informatie over het project zelf, zie [Over NL Design System](/project/over-nl-design-system).
 
 ## Meer dan alleen ontwerp
 
@@ -52,6 +52,6 @@ We willen niet steeds hetzelfde wiel uitvinden, maar elkaar ook niet vertragen b
 
 Om elkaar niet in de weg te zitten, werken we met het “[estafettemodel](/handboek/estafettemodel)”. Kortgezegd kunnen organisaties voor componenten die nog niet centraal beschikbaar een eigen versie maken. Deze versie wordt in grote lijnen gebouwd volgens de gedeelde architectuur, maar hoeft niet compleet te zijn.
 
-Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet het component én is het op meerdere plekken getest en verbeterd.
+Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet de component én is het op meerdere plekken getest en verbeterd.
 
 Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De eisen voor componenten per fase vind je in de [Definition of Done](/componenten/definition-of-done). De organisaties en componenten die zij maken kun je vinden onder de [NL Design System organisatie op GitHub](http://github.com/nl-design-system).

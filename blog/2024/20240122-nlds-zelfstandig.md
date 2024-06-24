@@ -1,6 +1,6 @@
 ---
 title: NL Design System nu als zelfstandig project verder
-slug: nlds-zelfstandig
+slug: nl-design-system-zelfstandig-verder
 authors:
   - name: Renate Bruinenberg
     title: Communicatieadviseur NL Design System

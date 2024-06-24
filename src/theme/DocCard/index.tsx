@@ -1,11 +1,11 @@
 import Link from '@docusaurus/Link';
-import { translate } from '@docusaurus/Translate';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
-import { findFirstSidebarItemLink, useDocById } from '@docusaurus/theme-common/internal';
+import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import { Icon } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { type ReactNode } from 'react';
+import React, { PropsWithChildren, type ReactNode } from 'react';
 import { ArrowNarrowRight } from 'tabler-icons-react';
 import styles from './styles.module.css';
 
@@ -15,55 +15,54 @@ function CardLayout({
   title,
   description,
   linkDescription,
-}: {
-  href: string;
-  linkDescription: string;
+  children,
+}: PropsWithChildren<{
+  href?: string;
+  linkDescription?: string;
   icon?: ReactNode;
   title: string;
   description?: string;
-}): React.Element {
+}>) {
   return (
     <div className={clsx('card', styles.card)}>
       <h2 className={clsx(styles.cardTitle)}>
         {icon} {title}
       </h2>
       {description && <p className={clsx(styles.cardDescription)}>{description}</p>}
-      <Link href={href} className={clsx(styles.cardLink)}>
-        {linkDescription}{' '}
-        <Icon>
-          <ArrowNarrowRight />
-        </Icon>
-      </Link>
+      {children}
+      {href && linkDescription && (
+        <Link href={href} className={clsx(styles.cardLink)}>
+          {linkDescription}{' '}
+          <Icon>
+            <ArrowNarrowRight />
+          </Icon>
+        </Link>
+      )}
     </div>
   );
 }
 
 function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Element | null {
-  const href = findFirstSidebarItemLink(item);
-
-  // Unexpected: categories that don't have a link have been filtered upfront
-  if (!href) {
-    return null;
-  }
-
   return (
-    <CardLayout
-      href={href}
-      title={item.label}
-      linkDescription={`Bekijk ${item.label.toLowerCase()} overzicht`}
-      description={
-        item.description ??
-        translate(
-          {
-            message: '{count} items',
-            id: 'theme.docs.DocCard.categoryDescription',
-            description:
-              'The default description for a category card in the generated index about how many items this category includes',
-          },
-          { count: item.items.length },
-        )
-      }
-    />
+    <CardLayout title={item.label} description={item.description}>
+      <UnorderedList>
+        {item.items
+          .filter((listItem) => listItem.type === 'link' || listItem.type === 'category')
+          .map((listItem, index) => (
+            <UnorderedListItem key={index}>
+              {listItem.type === 'link' ? (
+                <Link to={listItem.href}>{listItem.label}</Link>
+              ) : listItem.type === 'category' ? (
+                <Link to={listItem.href}>
+                  {listItem.items.length} pagina's voor {listItem.label}
+                </Link>
+              ) : (
+                <></>
+              )}
+            </UnorderedListItem>
+          ))}
+      </UnorderedList>
+    </CardLayout>
   );
 }
 

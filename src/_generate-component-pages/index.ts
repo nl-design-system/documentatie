@@ -1,14 +1,18 @@
 /* eslint-env node */
-import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
+import { COMPONENT_STATES, ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
+import progress from '@nl-design-system/component-progress/dist/component-progress.json';
+import projectDetails from '@nl-design-system/component-progress/dist/project-details.json';
 import * as fs from 'fs';
 import * as path from 'path';
 import {
   componentPage,
   getBacklogLink,
+  getComponentStatus,
   getImplementationsSection,
   getImplementationTitle,
   implementationDetails,
 } from './component-page';
+import { EXCLUDED_HELP_WANTED_CHECKS, HELP_WANTED_CHECKS } from '../utils';
 
 const DOCS_PATH = '../../docs/componenten';
 
@@ -36,6 +40,34 @@ const ensureDir = (directoryName) => {
 };
 
 const dir = ensureDir('build');
+
+function toNormalizedBacklogUrl(url: string) {
+  const backlogUrl = new URL(url);
+  return backlogUrl.origin + backlogUrl.pathname;
+}
+
+function findMatchingProgressComponent(backlogUrl, progressData) {
+  const normalizedBacklogUrl = toNormalizedBacklogUrl(backlogUrl);
+  return progressData.find((component) => toNormalizedBacklogUrl(component.url) === normalizedBacklogUrl);
+}
+
+function getComponentChecks(component, projectId) {
+  const project = component.projects.find((project: never) => project[projectId] !== undefined);
+  if (project) {
+    return project[projectId].checks;
+  }
+  return [];
+}
+
+function findProjectDetails(projectData, projectName) {
+  if (projectData[projectName] !== undefined) {
+    return projectData[projectName];
+  } else {
+    throw new Error(`Project ${projectName} not found in project details`);
+  }
+}
+
+const helpWantedProject = findProjectDetails(projectDetails, 'HELP_WANTED');
 
 componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
   const fileName = `${dir}/${id}.mdx`;
@@ -67,7 +99,26 @@ componentIndex.forEach(({ state, id, name, implementations, backlog }) => {
     console.error(err);
   }
 
-  console.log(`File created: ${fileName}`);
+  const componentProgress = backlog && findMatchingProgressComponent(backlog, progress);
+
+  if (componentProgress && [COMPONENT_STATES.UNKNOWN, COMPONENT_STATES.TODO].includes(state)) {
+    const projectId = helpWantedProject.number.toString();
+    const componentChecks = getComponentChecks(componentProgress, projectId);
+    const projectChecks = findProjectDetails(projectDetails, 'HELP_WANTED')
+      .view.fields.checks.filter((check: { id: string }) => !EXCLUDED_HELP_WANTED_CHECKS.includes(check.id))
+      .map((check: { dataType: string; name: string; id: string }) => {
+        if (HELP_WANTED_CHECKS[check.id] !== undefined) {
+          const checkData = HELP_WANTED_CHECKS[check.id];
+          return {
+            ...check,
+            ...checkData,
+          };
+        }
+        return check;
+      });
+
+    if (componentProgress) fs.appendFileSync(fileName, getComponentStatus(projectChecks, componentChecks));
+  }
 
   const groupedImplementations = implementations.reduce(
     (grouped, implementation) => {

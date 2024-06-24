@@ -1,17 +1,17 @@
 ---
-title: Introductie
+title: Voor leveranciers
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie
+sidebar_label: Voor leveranciers
 sidebar_position: 2
-pagination_label: Introductie
+pagination_label: Voor leveranciers
 description: Waarom zou je als leverancier meedoen aan NL Design System?
   - leverancier
-  - waarom NLDS
+  - waarom NL Design System
   - waarom een design system
 ---
 
-# Introductie
+# Voor leveranciers
 
 Veel organisaties werken met NL Design System _via_ hun leverancier, of zijn van plan dat te doen. Op deze pagina vind je meer informatie over hoe dat werkt en wat het voordeel is.
 

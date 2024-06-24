@@ -138,7 +138,11 @@ export const NewsletterSignUp = ({
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
               <Paragraph>
-                <Checkbox name={`${interestsId}[]`} value={index + 1} id={`${interestsId}-${index + 1}`} />
+                <Checkbox
+                  name={`${interestsId}[]`}
+                  value={index >= 6 ? index + 2 : index + 1}
+                  id={`${interestsId}-${index + 1}`}
+                />
                 <FormLabel htmlFor={`${interestsId}-${index + 1}`}>{interest}</FormLabel>
               </Paragraph>
             </FormField>
