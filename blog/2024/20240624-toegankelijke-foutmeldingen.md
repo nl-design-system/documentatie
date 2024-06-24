@@ -5,6 +5,7 @@ authors:
   - name: Rian Rietveld
     title: Specialist webtoegankelijkheid NL Design System
     url: https://www.linkedin.com/in/rianrietveld/
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.pngF
 tags: [formulieren, toegankelijkheid, richtlijnen, NL Design System]
 hide_table_of_contents: false
 date: 2024-06-24
@@ -54,9 +55,9 @@ Ga altijd uit van je gebruiker, doe gebruikersonderzoek in plaats van aannames t
 
 Sommige formuliervelden kun je beter niet gebruiken omdat ze lastig te bedienen zijn, zoals multiselect. Gebruik je date pickers? Check de gebruikerservaring voor mensen die alleen een toetsenbord of een screenreader gebruiken.
 
-Een simpele oplossing kan voor iedereen fijn zijn, zoals de wijze datumselectie die de KLM gebruikt voor het invullen van een datum. Simpel, eenduidig en voor iedereen makkelijk te snappen en te bedienen.
+Een simpele oplossing kan voor iedereen fijn zijn, zoals de wijze van datumselectie die de KLM gebruikt voor het invullen van een datum. Simpel, eenduidig en voor iedereen makkelijk te snappen en te bedienen.
 
-[TODO aangepast plaatje van date picker klm]
+![Datum selectie met een tekstveld voor de dag, een select voor de maand en een tekstveld voor het jaar](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen-date-picker.png)
 
 Lees hierover de richtlijnen op [Wanneer welk element](/richtlijnen/formulieren/wanneer-welk-form-element).
 
