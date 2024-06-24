@@ -15,4 +15,4 @@ Maak de markering ook onderdeel van de labeltekst.
 
 Screenreadergebruikers krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.
 
-Door te helpen fouten te voorkomen voldoe van aan WCAG-Succescriterium [3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG21-nl/#labels-of-instructies) (niveau A).
+Door te helpen fouten te voorkomen voldoe van aan WCAG-Succescriterium [3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG22-nl/#labels-of-instructies) (niveau A).

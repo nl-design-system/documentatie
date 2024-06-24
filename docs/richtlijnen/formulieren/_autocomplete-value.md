@@ -1,6 +1,6 @@
 ## Gebruik autocomplete als er een waarde voor is gedefinieerd
 
-WCAG bevat een volledige [lijst van waarden voor autocomplete](https://www.w3.org/Translations/WCAG21-nl/#input-purposes). Gebruik altijd een autocomplete-attribuut als er een waarde voor een formulierveld gedefinieerd is in deze lijst.
+WCAG bevat een volledige [lijst van waarden voor autocomplete](https://www.w3.org/Translations/WCAG22-nl/#input-purposes). Gebruik altijd een autocomplete-attribuut als er een waarde voor een formulierveld gedefinieerd is in deze lijst.
 
 Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie](https://www.200ok.nl/tips/autocomplete/) gemaakt.
 
