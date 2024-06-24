@@ -4,10 +4,107 @@
         <title>NL Design System Blog</title>
         <link>https://nldesignsystem.nl/blog</link>
         <description>NL Design System Blog</description>
-        <lastBuildDate>Wed, 22 May 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>nl</language>
+        <item>
+            <title><![CDATA[Toegankelijke foutmeldingen in formulieren]]></title>
+            <link>https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren</link>
+            <guid>https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren</guid>
+            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.]]></description>
+            <content:encoded><![CDATA[<p>Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.</p>
+<p>In dit artikel ga ik stap voor stap in op het voorkomen, aanduiden en het geven van hulp bij foutmeldingen in een formulier voor verschillende soorten gebruikers.</p>
+<p>Stel jezelf de volgende vragen:</p>
+<ul role="list" class="utrecht-unordered-list">
+<li class="utrecht-unordered-list__item">Wat wil ik echt weten?</li>
+<li class="utrecht-unordered-list__item">Hoe ga ik deze informatie uitvragen?</li>
+<li class="utrecht-unordered-list__item">Welke informatie kan ik vooraf geven om de gebruiker te helpen?</li>
+<li class="utrecht-unordered-list__item">Hoe geef ik aan welke velden verplicht zijn?</li>
+<li class="utrecht-unordered-list__item">Wanneer controleer ik op fouten?</li>
+<li class="utrecht-unordered-list__item">Hoe geef ik aan of een vraag niet of niet goed is ingevuld?</li>
+<li class="utrecht-unordered-list__item">Wat zijn goede teksten voor foutmeldingen?</li>
+<li class="utrecht-unordered-list__item">Hoe geef ik aan of een formulier succesvol is verzonden?</li>
+<li class="utrecht-unordered-list__item">Hoe bied ik hulp als een gebruiker niet uitkomt?</li>
+</ul>
+<p>We geven per stap referenties naar de verschillende <a href="https://nldesignsystem.nl/richtlijnen/formulieren/" class="utrecht-link utrecht-link--html-a">richtlijnen voor formulieren</a> van het NL Design System die dieper ingaan op de verschillende onderwerpen.</p>
+<p>Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een screenreader.</p>
+<p>Niemand vult een formulier graag in en alle hulp is nuttig, hou dat doel voor ogen. Jij wilt wat weten van je gebruiker of je gebruiker wil jou wat vertellen. Maak dit proces zo makkelijk mogelijk.</p>
+<h2 id="wat-wil-ik-echt-weten" class="utrecht-heading-2">Wat wil ik echt weten?</h2>
+<p>Een goede foutafhandeling begint eigenlijk al bij de vragen die je wilt stellen. Sommige vragen zijn lastig te beantwoorden. Is het echt belangrijk of je weet of iemand man of vrouw is? Wil je alleen contact opnemen via de telefoon? Misschien wil de gebruiker wat anders invullen, kan geen keuze maken en stopt met invullen.</p>
+<p>Vraag alleen uit wat je echt nodig hebt om de gegevens goed te verwerken. Hoe minder je vraagt, hoe lager de drempel is om een formulier in te vullen.</p>
+<p>Leg ook goed uit waarom je privacygevoelige persoonlijke informatie nodig hebt, bijvoorbeeld een burgerservicenummer of medische gegevens.</p>
+<p>Lees hierover de richtlijnen over <a href="https://nldesignsystem.nl/richtlijnen/formulieren/vragen" class="utrecht-link utrecht-link--html-a">Uit te vragen informatie in een formulier</a> en de blogpost <a href="https://nldesignsystem.nl/blog/meerdere-manieren-contact/" class="utrecht-link utrecht-link--html-a">Ik wil je wat vragen maar heb geen WhatsApp</a>.</p>
+<h2 id="hoe-ga-ik-deze-informatie-uitvragen" class="utrecht-heading-2">Hoe ga ik deze informatie uitvragen?</h2>
+<p>Kies je voor een uniek ontwerp voor je formuliervelden of ga je voor bekende herkenbare patronen? Probeer niet het wiel opnieuw uit te vinden voor zoiets essentieels als formuliervelden.</p>
+<p>Bijvoorbeeld: gebruikers herkennen radiobuttons als rondjes en checkboxes als vierkantjes, hou je aan deze conventie want radiobuttons en checkboxen werken verschillend met toetsenbordbediening.</p>
+<p>Heydon Pickering zegt hierover in zijn presentatie <a href="https://www.youtube.com/watch?v=ediHVy0869c" class="utrecht-link utrecht-link--html-a"><span lang="en">Get Your Priorities Straight</span></a>: <em class="utrecht-emphasis utrecht-emphasis--stressed">Real people aren't looking to be delighted. People want to get the task done and get on with their lives</em>. In het Nederlands: 'Echte mensen willen niet blij gemaakt worden. Mensen willen de taak voltooien en doorgaan met hun leven'.</p>
+<p>Ga altijd uit van je gebruiker, doe gebruikersonderzoek in plaats van aannames te doen. Mensen vullen een formulier niet in voor hun plezier, bekende patronen zijn voor formulieren altijd het beste.</p>
+<p>Sommige formuliervelden kun je beter niet gebruiken omdat ze lastig te bedienen zijn, zoals multiselect. Gebruik je date pickers? Check de gebruikerservaring voor mensen die alleen een toetsenbord of een screenreader gebruiken.</p>
+<p>Een simpele oplossing kan voor iedereen fijn zijn, zoals de wijze van datumselectie die de KLM gebruikt voor het invullen van een datum. Simpel, eenduidig en voor iedereen makkelijk te snappen en te bedienen.</p>
+<p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen-date-picker.png" alt="Datum selectie met een tekstveld voor de dag, een select voor de maand en een tekstveld voor het jaar" class="utrecht-img"></p>
+<p>Lees hierover de richtlijnen op <a href="https://nldesignsystem.nl/richtlijnen/formulieren/wanneer-welk-form-element" class="utrecht-link utrecht-link--html-a">Wanneer welk element</a>.</p>
+<h2 id="welke-informatie-kan-ik-vooraf-geven-om-de-gebruiker-te-helpen" class="utrecht-heading-2">Welke informatie kan ik vooraf geven om de gebruiker te helpen?</h2>
+<p>Je kent het vast wel: je vult een nieuw wachtwoord in, drukt op verzenden en dan pas krijg je te weten wat de eisen zijn. Waarna je boos naar het scherm roept 'vertel me dit dan vooraf'!</p>
+<p>De blogpost <a href="https://www.a11y-collective.com/blog/blind-people-dont-visit-my-website/" class="utrecht-link utrecht-link--html-a"><span lang="en">Blind people don't visit my website</span></a> somt frustraties op van gebruikers van het web. Bijvoorbeeld: 'Error messages that come afterwards and eventually don't explain what you need to change'. In het Nederlands: 'Foutmeldingen die achteraf komen en uiteindelijk niet uitleggen wat je moet veranderen'.</p>
+<p>Laat de bezoeker niet raden maar geef zo veel mogelijk hulp, in begrijpelijke taal.</p>
+<p>Geef voor het invullen bijvoorbeeld aan welke documenten de gebruiker nodig heeft bij het invullen, leg uit wat al dan niet verplichte velden zijn. Voeg zo nodig een description (beschrijving) toe bij een formulierveld met extra uitleg.</p>
+<p>Lees hierover de richtlijnen <a href="https://nldesignsystem.nl/richtlijnen/formulieren/descriptions/" class="utrecht-link utrecht-link--html-a">Descriptions in een formulier
+</a> en <a href="https://nldesignsystem.nl/richtlijnen/formulieren/voorkom-fouten" class="utrecht-link utrecht-link--html-a">Voorkom fouten, help de gebruiker</a>.</p>
+<h2 id="hoe-geef-ik-aan-welke-velden-verplicht-zijn" class="utrecht-heading-2">Hoe geef ik aan welke velden verplicht zijn?</h2>
+<p>Als je uitgaat van het principe 'ik vraag alleen uit wat ik echt wil weten', dan zouden alle velden verplicht kunnen zijn. Maar dat hoeft natuurlijk niet.</p>
+<h3 id="hoe-geef-je-dat-het-beste-aan" class="utrecht-heading-3">Hoe geef je dat het beste aan?</h3>
+<p>Veel sites gebruiken 'verplicht', 'optioneel', 'niet verplicht' of alleen een asterisk (*). Maar wat is het duidelijkst?</p>
+<p>Liever 'niet verplicht' in plaats van 'optioneel'.<br>
+<!-- -->Liever 'verplicht' in plaats van een asterisk.</p>
+<p>'Optioneel' is voor laaggeletterde lezers lastig en een asterisk vereist voorkennis van de betekenis.
+Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
+<h3 id="verplichte-velden-of-niet-verplichte-velden-aanmerken" class="utrecht-heading-3">Verplichte velden of niet-verplichte velden aanmerken?</h3>
+<p>Wat heeft de voorkeur: verplichte velden aanmerken of niet-verplichte velden aanmerken? Het hangt ervan af … Welke van de twee je kiest, is afhankelijk van de functionaliteit van het formulier, het CMS of de formulieren-plugin die je gebruikt en van gebruikersonderzoek.</p>
+<p>Een keuze kan zijn: zijn de meeste velden verplicht, markeer dan de niet-verplichte velden. En andersom: zijn de meeste velden niet verplicht, markeer dan de verplichte velden.</p>
+<p>Wat je ook kiest, wees consequent binnen het formulier en ook binnen alle formulieren van de website en laat de gebruiker altijd boven het formulier weten hoe al dan niet verplichte velden zijn aangemerkt.</p>
+<p>Bijvoorbeeld met de tekst 'Vul alle velden in. Als een veld niet verplicht is, staat dit erbij.'</p>
+<p>Lees hierover de richtlijn <a href="https://nldesignsystem.nl/richtlijnen/formulieren/voorkom-fouten#vermeld-duidelijk-of-een-veld-verplicht-is" class="utrecht-link utrecht-link--html-a">Vermeld duidelijk of een veld wel of niet verplicht is
+</a>.</p>
+<h2 id="wanneer-controleer-ik-op-fouten" class="utrecht-heading-2">Wanneer controleer ik op fouten?</h2>
+<p>Websites controleren op foutmeldingen tijdens het typen van een antwoord, na het verlaten van een formulierveld of na het verzenden van het formulier. Wanneer controleer je zo gebruikersvriendelijk mogelijk?</p>
+<p>Al tijdens het typen controleren kan heel verwarrend zijn. Je bent een e-mailadres aan het typen en al bij de eerste letter verschijnt de fout 'ongeldig e-mailadres'. Ja, natuurlijk, ik was nog niet klaar met typen!</p>
+<p>De richtlijn <a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#gebruik-geen-html-formuliervalidatie" class="utrecht-link utrecht-link--html-a">Gebruik geen HTML-formuliervalidatie</a> legt uit dat foutafhandeling door de browser onvoldoende informatie geeft. 'Dit veld is verplicht' is te vaag en wordt ook niet door alle screenreaders goed voorgelezen.</p>
+<p>Dan blijven er twee opties over: na het verlaten van het veld of na het verzenden van het formulier. Het een hoeft het ander niet uit te sluiten. Voor sommige velden kan het handig zijn om meteen te checken, zoals een datum die in de toekomst moet zijn. Maar een check na verzenden moet natuurlijk altijd gebeuren.</p>
+<p>De volgende richtlijnen leggen uit hoe dit op te zetten:</p>
+<ul role="list" class="utrecht-unordered-list">
+<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Controleer op het juiste moment op fouten</a>.</li>
+<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/blog/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Schrijf een duidelijke foutmelding</a>.</li>
+<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-link utrecht-link--html-a">Zet een samenvatting van de foutmeldingen boven het formulier</a>.</li>
+</ul>
+<h2 id="hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld" class="utrecht-heading-2">Hoe geef ik aan of een vraag niet of niet goed is ingevuld?</h2>
+<p>Geef fouten aan met meer dan alleen een kleur. De kans is groot dat een gebruiker, die slechtziend of kleurenblind is, een rood randje om een formulierveld mist.</p>
+<p>Het gebruik van kleur is prima en kan voor goedziende gebruikers heel duidelijk zijn, maar voeg altijd ook een duidelijke foutmelding in tekst toe.</p>
+<p>De richtlijnen <a href="https://nldesignsystem.nl/richtlijnen/formulieren/voorkom-fouten#vermeld-duidelijk-of-een-veld-verplicht-is" class="utrecht-link utrecht-link--html-a">Vermeld duidelijk of een veld wel of niet verplicht is</a>, <a href="https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/#geef-fouten-weer-met-meer-dan-alleen-kleur" class="utrecht-link utrecht-link--html-a">Geef fouten weer met meer dan alleen kleur</a> en <a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#schrijf-een-foutmelding-uit-in-tekst" class="utrecht-link utrecht-link--html-a">Schrijf een foutmelding uit in tekst</a> leggen dit uit.</p>
+<p>Een <a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen/#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-link utrecht-link--html-a">samenvatting van alle fouten boven het formulier</a> geeft de gebruiker een goed overzicht van wat er nog moet worden aangepast.</p>
+<h2 id="wat-zijn-goede-teksten-voor-foutmeldingen" class="utrecht-heading-2">Wat zijn goede teksten voor foutmeldingen?</h2>
+<p>Melden zoals 'Dit veld is verplicht' of 'Ongeldige waarde' bieden de gebruiker te weinig hulp. Schrijf eenduidige foutmeldingen die uitleggen wat er ontbreekt of anders moet.</p>
+<p>Bijvoorbeeld: 'Vul je voornaam in' of 'Je gekozen wachtwoord is te kort, kies een wachtwoord van minimaal 8 karakters lang'. Deze informatie biedt veel meer houvast aan gebruikers dan een algemene tekst.</p>
+<p>De richtlijn <a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Schrijf een duidelijke foutmelding</a> gaat hier op in.</p>
+<h2 id="hoe-geef-ik-aan-of-een-formulier-succesvol-is-verzonden" class="utrecht-heading-2">Hoe geef ik aan of een formulier succesvol is verzonden?</h2>
+<p>Je drukt op versturen en er gebeurt niets. Of je gaat naar de voorpagina. Is je vraag nu verzonden of niet?</p>
+<p>Geef de gebruiker duidelijkheid en zekerheid dat het formulier daadwerkelijk succesvol is verzonden, welke informatie is verstuurd en wat er hierna gebeurt.</p>
+<p>Dit kan daarnaast ook in een bevestigingsmail waarin de ingevulde informatie wordt herhaald of een verwijzing naar de "Mijn Omgeving", waar de informatie is terug te vinden.</p>
+<p>Op de pagina <a href="https://nldesignsystem.nl/richtlijnen/formulieren/bevestigingspagina" class="utrecht-link utrecht-link--html-a">Bevestigingspagina van een formulier</a> staan de richtlijnen die uitleggen hoe de gebruiker te informeren dat het formulier verzonden is, wat eventueel de vervolgacties zijn en hoe contact op te nemen bij vragen.</p>
+<h2 id="hoe-bied-ik-hulp-als-een-gebruiker-niet-uitkomt" class="utrecht-heading-2">Hoe bied ik hulp als een gebruiker niet uitkomt?</h2>
+<p>Als een gebruiker vastloopt of vragen heeft tijdens het invullen van een complex formulier, moet het makkelijk zijn om hulp te vragen.</p>
+<p>Zet de contactinformatie dan niet helemaal onderaan het formulier, maar bijvoorbeeld bovenaan in een kort zinnetje. Zorg altijd voor <a href="https://nldesignsystem.nl/blog/meerdere-manieren-contact" class="utrecht-link utrecht-link--html-a">verschillende manieren om contact op te nemen</a>. Niet iedereen kan opbellen.</p>
+<h2 id="samenvatting" class="utrecht-heading-2">Samenvatting</h2>
+<p>Help je gebruiker zo goed mogelijk om een formulier in te vullen. Stel geen overbodige vragen, bied de juiste keuzes, vertel hoe een veld moet worden ingevuld, zorg voor duidelijke foutmeldingen op het juiste moment en geef aan hoe contact op te nemen als iemand er niet uitkomt.</p>
+<p>Hou in gedachten: mensen willen een formulier graag snel invullen en daarna doorgaan met hun leven. Maak die taak dan zo gemakkelijk mogelijk.</p>
+<h2 id="op-de-hoogte-blijven-van-het-nl-design-system" class="utrecht-heading-2">Op de hoogte blijven van het NL Design System?</h2>
+<p>Ben je benieuwd naar de ontwikkelingen van het NL Design System? <a href="https://nldesignsystem.nl/project/blijf-op-de-hoogte/#nieuwsbrief" class="utrecht-link utrecht-link--html-a">Meld je dan aan voor de maandelijkse nieuwsbrief</a> of <a href="https://nldesignsystem.nl/events/heartbeat/aanmelden/" class="utrecht-link utrecht-link--html-a">schuif aan tijdens de 2-wekelijkse update (Heartbeat)</a>. Hierin delen we alle relevante updates.</p>]]></content:encoded>
+            <category>formulieren</category>
+            <category>toegankelijkheid</category>
+            <category>richtlijnen</category>
+            <category>NL Design System</category>
+        </item>
         <item>
             <title><![CDATA[Van eigen componenten naar open source “blocks” voor WordPress]]></title>
             <link>https://nldesignsystem.nl/blog/community-blocks</link>
@@ -702,54 +799,6 @@ Tegen organisaties die twijfelen of meedoen aan het NL Design System nuttig is, 
 <p>We nodigen je tevens van harte uit voor een <a href="https://www.gebruikercentraal.nl/agenda/online-bijeenkomst-met-het-kernteam-van-nl-design-system/" class="utrecht-link utrecht-link--html-a">online bijeenkomst met het kernteam van NL Design System</a> op 5 januari (13.00-14.30 uur). Deze sessie is meteen een aftrap voor de ‘heartbeat’ van het project. Want daarna zullen we elke 2 weken een sessie organiseren waarin we geïnteresseerden en betrokkenen meenemen in wat is er gedaan en wat gaan we doen.</p>
 <p>Sjef van Leeuwen is adviseur Strategie &amp; Innovatie bij Wigo4it met name werkzaam binnen de transitie van de digitale overheid. Hij heeft 25 jaar ervaring in het creëren van digitale waardeproposities binnen meerdere marktsegmenten. Deze proposities liggen op het snijvlak van mensgerichtheid en data science. Zijn doel: het ontwikkelen van een intuïtieve digitale dienstverlening naar de burger in co-creatie, daarbij technologie als hulpmiddel efficiënt en kostenbesparend in te zetten.</p>
 <p>Carina PalumboCarina Palumbo is Innovatie en UX coördinator bij Wigo4it. Na haar studies op het gebied van Information Studies en Experience Design begon ze haar carrière in het versterken van overheids-, commerciële en financiële IT-organisaties door het gebruik van Design Thinking, User Experience en Innovatie methodes. In haar huidige rol bij Wigo4it helpt ze de vier grote steden in Nederland met het realiseren van een mensgerichte overheid in het sociaal domein. Haar doel: relevante en waardevol digitale dienstverlening voor een soepele interactie overheid-burger.</p>]]></content:encoded>
-            <category>contentrichtlijnen</category>
-            <category>NL Design System</category>
-        </item>
-        <item>
-            <title><![CDATA[Uitkomsten bijeenkomst contentrichtlijnen en het NL Design System]]></title>
-            <link>https://nldesignsystem.nl/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system</link>
-            <guid>https://nldesignsystem.nl/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system</guid>
-            <pubDate>Fri, 04 Dec 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[In een (online) bijeenkomst op 3 november presenteerden we een aantal goede voorbeelden van contentricthtlijnen en gingen we met de deelnemers aan de slag om met elkaar te verzinnen hoe dit in het Nederlandse designsysteem zou passen. Tijdens deze bijeenkomst is er gesproken over de verschillende content-aspecten in een designsysteem. We hebben de algemene conclusies voor je op een rij gezet.]]></description>
-            <content:encoded><![CDATA[<p>In een (online) bijeenkomst op 3 november presenteerden we een aantal goede voorbeelden van contentricthtlijnen en gingen we met de deelnemers aan de slag om met elkaar te verzinnen hoe dit in het Nederlandse designsysteem zou passen. Tijdens deze bijeenkomst is er gesproken over de verschillende content-aspecten in een designsysteem. We hebben de algemene conclusies voor je op een rij gezet.</p>
-<p>De Agenda Digitale Overheid stelt dat overheidsdienstverlening toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor zijn consistent ontworpen diensten en websites nodig. Met het NL Design System wordt er gewerkt aan een open bibliotheek waar principes, interactiepatronen en code gedeeld. Dit design system draagt niet alleen bij aan gebruiksvriendelijkere diensten van een betere kwaliteit en toegankelijkheid maar het helpt ook dubbel werk te voorkomen.</p>
-<p>Een aantal designs systems bevatten contentrichtlijnen, zoals de <a href="https://readabilityguidelines.co.uk/" class="utrecht-link utrecht-link--html-a">Readability Guidelines</a> van het Verenigd Koninkrijk.</p>
-<p>In een (online) bijeenkomst op 3 november presenteerden we een aantal goede voorbeelden en gingen we met de deelnemers (van gemeenten, ministeries, waterschappen, Logius, CBS, NOVUM, DUO, Belastingdienst en commerciële partijen) aan de slag om met elkaar te verzinnen hoe dit in het Nederlandse designsysteem zou passen. Welke richtlijnen horen er écht in? Moet er (wetenschappelijke) onderbouwing bij?</p>
-<p>Tijdens deze bijeenkomst is er gesproken over de verschillende content-aspecten in een designsysteem. In 5 ‘break-out sessies’ gingen de deelnemers met elkaar in gesprek. Deze sessies lieten een aantal algemene conclusies zien.</p>
-<h2 id="1-content-in-het-nl-design-system" class="utrecht-heading-2">1. Content in het NL Design System</h2>
-<p>Het is duidelijk dat contentrichtlijnen zorgen voor een belangrijke functie in een designsysteem. Wel is gebleken dat het lastig is om een eenduidige tone of voice aan te houden in een ‘white label designsysteem’. Dit komt omdat de richtlijnen qua branding per product verschillen. Er kunnen wél overkoepelende richtlijnen worden vastgelegd, zoals het gebruik van taalniveau-B1.</p>
-<h2 id="2-content-als-hoeksteen-binnen-het-proces" class="utrecht-heading-2">2. Content als hoeksteen binnen het proces</h2>
-<p>Goede content zorgt voor toegankelijkheid en gebruiksvriendelijkheid. Ontwerp en inhoud kunnen dan ook niet van elkaar gescheiden worden, het is aan te raden om elkaar in een vroeg stadium te informeren.
-Het testen van taalgebruik is goed te combineren met de testen voor gebruiksvriendelijkheid. Deze uitslagen zijn te gebruiken als input voor het NL Design System.</p>
-<h2 id="3-soorten-content" class="utrecht-heading-2">3. Soorten content</h2>
-<p>Content is in verschillende soorten tekst op te splitsen, zoals:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">(Lange) informerende teksten</li>
-<li class="utrecht-unordered-list__item">Applicatie/interfaceteksten (zoals knopteksten en formulierelementen)</li>
-<li class="utrecht-unordered-list__item">Categorie- en feedbackteksten.</li>
-</ul>
-<p>Onder content wordt niet alleen tekst verstaan, maar ook (informatieve) afbeeldingen, alt-tekst en extra verduidelijking voor screenreadergebruikers valt hieronder.</p>
-<h2 id="4-consistent-taalgebruik" class="utrecht-heading-2">4. Consistent taalgebruik</h2>
-<p>Het is belangrijk dat er consistent taalgebruik is tijdens alle contactmomenten. Dit geldt voor webpagina’s, e-mails, sociale media en zelfs voor telefooncontact.</p>
-<h2 id="5-bestaande-kennis" class="utrecht-heading-2">5. Bestaande kennis</h2>
-<p>Veel richtlijnen zijn al beschikbaar en (direct) bruikbaar.
-Door de overlap in deze richtlijnen is het NL Design System dé plek om alle informatie te verzamelen, zodat het een basis-set wordt met algemene contentrichtlijnen.
-(Verdieping kan plaatsvinden door te linken naar product-specifieke contentrichtlijnen en illustratieve voorbeelden van content in daadwerkelijk gebruik.)</p>
-<h2 id="6-zorgen-en-aandachtspunten" class="utrecht-heading-2">6. Zorgen en aandachtspunten</h2>
-<p>Voor het opnemen van contentrichtlijnen in een centraal designsysteem zijn ook een aantal zorgen en aandachtspunten besproken.</p>
-<p>De grootste zorgen en aandachtspunten gaan over:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">De ‘adoptie’: het systeem moet makkelijk te vinden én gebruiken zijn.</li>
-<li class="utrecht-unordered-list__item">Het onderhoud en mandaat van de content: wie gaat het onderhouden?</li>
-</ul>
-<p>Een groot deel van deze zorgen kunnen we met het NL Design System verlichten. Door content op te nemen in de ‘definition of done’ voor componenten en patronen, kan de vuistregel in acht genomen worden voor het volwassen model. (Een component of patroon krijgt pas een volwassen 1.0 status als het voldoen aan alle vuistregels).</p>
-<p>De vuistregel betreft:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Is de tekst leesbaar en begrijpelijk?</li>
-<li class="utrecht-unordered-list__item">Zijn afbeeldingen voorzien van een beschrijvende alt-tekst?</li>
-</ul>
-<p>Het aanbieden van formulierelementen zou een deel van de buy-in zorgen kunnen wegnemen (de tekstinvoer al voorzien van de juiste content in verschillende contexten). De juiste componenten zijn immers al centraal beschikbaar, er is al een opzet gemaakt.
-Voor onderhoud is het NL Design System grotendeels afhankelijk van het enthousiasme van contentspecialisten die willen deelnemen. Het moet zo makkelijk mogelijk zijn om hieraan bij te dragen.</p>]]></content:encoded>
             <category>contentrichtlijnen</category>
             <category>NL Design System</category>
         </item>
