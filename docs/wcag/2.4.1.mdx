@@ -33,9 +33,7 @@ Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grot
 
 Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.
 
-Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een screenreadergebruiker een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken.
-
-Maar voor een toetsenbordgebruiker is dat geen optie. Omdat screenreadergebruikers ook toetsenbordgebruiker zijn, is een zogenaamde skiplink een goede optie om content over te slaan. Deze techniek is voor iedereen beschikbaar.
+Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een screenreadergebruiker een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken. Maar de skiplink is ook voor screenreadergebruikers handig.
 
 Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Het eerste focusable element, en staat deze zichtbaar linksboven op een vaste plek.
 
@@ -107,62 +105,17 @@ In de CSS. Dit is een voorbeeld, er zijn meerdere technieken om hetzelfde effect
 }
 ```
 
-In het WordPress thema [Twenty Twenty-Four](https://nl.wordpress.org/themes/twentytwentyfour/):
-
-In de HTML:
-
-```html
-<!-- De skiplink, geplaatst als eerste focusable element op de webpagina -->
-<a class="skip-link screen-reader-text" href="#wp--skip-link--target">Naar de hoofdinhoud</a>
-```
-
-```html
-<!-- Het doel van de skiplink, waar de hoofdinhoud begint -->
-<main class="..." id="wp--skip-link--target" tabindex="-1">[...]</main>
-```
-
-In de CSS:
-
-```css
-.skip-link.screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
-}
-
-.skip-link.screen-reader-text:focus {
-  background-color: #eee;
-  clip: auto !important;
-  clip-path: none;
-  color: #444;
-  display: block;
-  font-size: 1em;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-}
-```
+Tip: [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) zorgt ervoor dat de skiplink zich aanpast aan de leesrichting [dir](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#dir) van een pagina.
+Voor `<html lang="nl" dir="rtl">` staat de skiplink dan aan de rechterkant in plaats van de linkerkant.
 
 ## Bronnen
 
 - [Zo zet je skiplinks in voor een optimale navigatie](https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie) van Stichting Accessibility.
-- [Skiplinks](http://niekderksen.nl/toegankelijkheid/skiplinks/) van Niek Derksen.
 - [<span lang="en">Understanding skip link</span>](https://tatiana-fokina-blog.ru/en/articles/understanding-a-skip-link/) van Tatiana Fokina.
 - [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
 - [Skip link component op Gov.UK](https://design-system.service.gov.uk/components/skip-link/).
 - [Skip link component van het CIBG](https://designsystem.cibg.nl/componenten/skiplink/).
+- [<span lang="en">The CSS class screen-reader-text</span>](https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/) in het Make WordPress Accessible Handbook.
 
 ## Gebruikersonderzoek
 
