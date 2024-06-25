@@ -5,7 +5,7 @@ authors:
   - name: Rian Rietveld
     title: Specialist webtoegankelijkheid NL Design System
     url: https://www.linkedin.com/in/rianrietveld/
-image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.pngF
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.png
 tags: [formulieren, toegankelijkheid, richtlijnen, NL Design System]
 hide_table_of_contents: false
 date: 2024-06-24
