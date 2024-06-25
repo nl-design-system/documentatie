@@ -1,31 +1,31 @@
 "use strict";
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [33728],
+ [18481],
  {
-  23728: (e, n, i) => {
+  25540: (e, n, i) => {
    i.r(n), i.d(n, { assets: () => d, contentTitle: () => o, default: () => g, frontMatter: () => l, metadata: () => a, toc: () => s });
    var t = i(52676),
     r = i(24785);
-   const l = { title: "Toegankelijke foutmeldingen in formulieren", slug: "toegankelijke-foutmeldingen-formulieren", authors: [{ name: "Rian Rietveld", title: "Specialist webtoegankelijkheid NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }], image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.pngF", tags: ["formulieren", "toegankelijkheid", "richtlijnen", "NL Design System"], hide_table_of_contents: !1, date: new Date("2024-06-24T00:00:00.000Z") },
+   const l = { title: "Toegankelijke foutmeldingen in formulieren", slug: "toegankelijke-foutmeldingen-formulieren", authors: [{ name: "Rian Rietveld", title: "Specialist webtoegankelijkheid NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }], image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.png", tags: ["formulieren", "toegankelijkheid", "richtlijnen", "NL Design System"], hide_table_of_contents: !1, date: new Date("2024-06-24T00:00:00.000Z") },
     o = void 0,
     a = {
-     permalink: "/blog/toegankelijke-foutmeldingen-formulieren",
+     permalink: "/en/blog/toegankelijke-foutmeldingen-formulieren",
      source: "@site/blog/2024/20240624-toegankelijke-foutmeldingen.md",
      title: "Toegankelijke foutmeldingen in formulieren",
      description: "Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.",
      date: "2024-06-24T00:00:00.000Z",
-     formattedDate: "24 juni 2024",
+     formattedDate: "June 24, 2024",
      tags: [
-      { label: "formulieren", permalink: "/blog/tags/formulieren" },
-      { label: "toegankelijkheid", permalink: "/blog/tags/toegankelijkheid" },
-      { label: "richtlijnen", permalink: "/blog/tags/richtlijnen" },
-      { label: "NL Design System", permalink: "/blog/tags/nl-design-system" },
+      { label: "formulieren", permalink: "/en/blog/tags/formulieren" },
+      { label: "toegankelijkheid", permalink: "/en/blog/tags/toegankelijkheid" },
+      { label: "richtlijnen", permalink: "/en/blog/tags/richtlijnen" },
+      { label: "NL Design System", permalink: "/en/blog/tags/nl-design-system" },
      ],
      hasTruncateMarker: !1,
      authors: [{ name: "Rian Rietveld", title: "Specialist webtoegankelijkheid NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }],
-     frontMatter: { title: "Toegankelijke foutmeldingen in formulieren", slug: "toegankelijke-foutmeldingen-formulieren", authors: [{ name: "Rian Rietveld", title: "Specialist webtoegankelijkheid NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }], image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.pngF", tags: ["formulieren", "toegankelijkheid", "richtlijnen", "NL Design System"], hide_table_of_contents: !1, date: "2024-06-24T00:00:00.000Z" },
+     frontMatter: { title: "Toegankelijke foutmeldingen in formulieren", slug: "toegankelijke-foutmeldingen-formulieren", authors: [{ name: "Rian Rietveld", title: "Specialist webtoegankelijkheid NL Design System", url: "https://www.linkedin.com/in/rianrietveld/" }], image: "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.png", tags: ["formulieren", "toegankelijkheid", "richtlijnen", "NL Design System"], hide_table_of_contents: !1, date: "2024-06-24T00:00:00.000Z" },
      unlisted: !1,
-     nextItem: { title: "Van eigen componenten naar open source \u201cblocks\u201d voor WordPress", permalink: "/blog/community-blocks" },
+     nextItem: { title: "Van eigen componenten naar open source \u201cblocks\u201d voor WordPress", permalink: "/en/blog/community-blocks" },
     },
     d = { authorsImageUrls: [void 0] },
     s = [
