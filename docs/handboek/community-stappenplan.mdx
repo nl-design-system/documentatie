@@ -18,7 +18,13 @@ keywords:
 
 # Stappenplan: Community
 
-Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+
+Voorbereiding op dit stappenplan vindt plaats in losse projectborden per community design system.
+
+- [Projectenbord Amsterdam](https://github.com/orgs/nl-design-system/projects/48)
+- [Projectenbord RVO](https://github.com/orgs/nl-design-system/projects/49/views/1)
+- [Projectenbord Utrecht](https://github.com/orgs/nl-design-system/projects/36)
 
 Heb je een vraag? Twijfel niet en stel je vraag via het [#nl-design-system Slack kanaal](https://praatmee.codefor.nl/) van CodeForNL of [neem contact op met het kernteam](/project/kernteam).
 
@@ -26,7 +32,7 @@ Heb je een vraag? Twijfel niet en stel je vraag via het [#nl-design-system Slack
 
 Doel: De component kan ingezet worden in een framework naar keuze.
 
-De component moet beschikbaar zijn in code. Minimaal als HTML/CSS.
+De CSS component moet te installeren zijn als [NPM package](https://www.npmjs.com/).
 
 Ontwikkel de component zelf of controleer de Storybook en/of GitHub omgevingen van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
 
@@ -46,7 +52,7 @@ De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.
 
 ## Implementatie
 
-Doel: De component is de component dat we als kernteam verwachten.
+Doel: De component voldoet aan verwachting bij naam en doel.
 
 In de GitHub Discussion van de component staan de naam en het doel genoteerd. Check of de implementatie van jouw organisatie hieraan voldoet. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
 
@@ -54,25 +60,38 @@ Noteer de implementatie bijvoorbeeld `utrecht-paragraph` of `ams-paragraph` in d
 
 **Tip!** Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
 
-**🚩 Checkpoint**: Implementatie voldoet aan naam en doel uit de GitHub Discussion.
+**🚩 Checkpoint**: Implementatie voldoet aan naam en doel zoals beschreven voor het [component](https://www.nldesignsystem.nl/componenten/).
+
+## Prefix
+
+Doel: Organisaties kunnen componenten naast elkaar gebruiken zonder 'clashes'. Developers en designers kunnen zien waar het component vandaan komt.
+
+Zorg ervoor dat de prefix van jouw organisatie zoals bijvoorbeeld `utrecht-` of `ams-` is toegevoegd aan onderstaande onderdelen. Of controleer de organisaties die aan de GitHub Discussion van het component zijn toegevoegd.
+
+- CSS class selectors.
+- Design tokens in JSON.
+- CSS variables.
+
+**🚩 Checkpoint**: API's hebben een prefix van de verantwoordelijke organisatie.
 
 ## Minimale design tokens
 
 Doel: Meerdere organisaties kunnen de component naar hun huisstijl omzetten.
 
-Door met [design tokens](/handboek/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.
+Door met [design tokens](/handboek/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien.
 
-Zorg ervoor dat de component van jouw organisatie gebruik maakt van design tokens. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+Zorg ervoor dat er ten minste design tokens beschikbaar zijn als de implementatie design beslissingen bevat voor typografie en kleur.
 
 **Tip!** Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--denhaag-button-primary-action-background-color` of `--ams-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
 
-**🚩 Checkpoint**: Implementatie heeft minimaal kleur en typografie beslissingen met design tokens gebruikt.
+
+**🚩 Checkpoint**: Implementatie bevat minimaal design tokens voor kleur en typografie.
 
 ## Naamgeving design tokens
 
 Doel: Een voorspelbare naamgeving van design tokens.
 
-Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. De beschikbare design tokens van een component moeten voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
+Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen van design tokens op component niveau. De beschikbare design tokens van een component moeten daarom voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
 
 Zorg ervoor dat de design tokens van de component van jouw organisatie voldoen aan de naamgeving conventie. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
 
@@ -91,7 +110,7 @@ Zorg ervoor dat jouw organisatie naar de EUPL-1.2 licentie verwijst op de onders
 - **Storybook**: Als een aparte pagina binnen de sidebar, of binnen de introductiepagina danwel README.
 - **Figma** (optioneel): Op de cover of direct naast de cover van de Figma bibliotheek.
 
-**🚩 Checkpoint**: EUPL-1.2 licentie toegepast.
+**🚩 Checkpoint**: Component heeft Openbare Licentie van de Europese Unie (EUPL-1.2).
 
 ## Licentie documentatie
 
