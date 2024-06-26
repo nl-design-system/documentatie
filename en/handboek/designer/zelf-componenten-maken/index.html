@@ -31,7 +31,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.40f77ce7.css" />
   <script src="/en/assets/js/runtime~main.651e1eeb.js" defer="defer"></script>
-  <script src="/en/assets/js/main.186f3cf3.js" defer="defer"></script>
+  <script src="/en/assets/js/main.059d8d81.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -54,30 +54,18 @@
    })(),
     (function () {
      try {
-      const a = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of a)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith("docusaurus-data-")) {
-        var n = t.replace("docusaurus-data-", "data-");
-        document.documentElement.setAttribute(n, e);
+        var a = t.replace("docusaurus-data-", "data-");
+        document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     "data-announcement-bar-initially-dismissed",
-     (function () {
-      try {
-       return "true" === localStorage.getItem("docusaurus.announcement.dismiss");
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Skip to main content"><a class="skipToContent_msKp" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
-    <div class="announcementBar_s0pr" style="background-color: #148839; color: #fff" role="banner">
-     <div class="content_zf74 announcementBarContent_dpRF">Kom je eind juni naar onze borrel in Utrecht? <a href="/community/sluit-je-aan" class="utrecht-link">Meld je aan</a> bij onze community!</div>
-    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/en/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
@@ -113,7 +101,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
@@ -225,192 +213,10 @@
               <h3 id="pagina-voorbereiden" class="utrecht-heading-3">Pagina voorbereiden</h3>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">Open jouw Local - [Organisatie] - Bibliotheek.</li>
-               <li class="utrecht-unordered-list__item">Voeg een nieuwe pagina toe en noem deze ‘Demo sticker’.</li>
-               <li class="utrecht-unordered-list__item">Plaats deze pagina in alfabetische volgorde.</li>
+               <li class="utrecht-unordered-list__item">Voeg een nieuwe pagina toe en noem deze</li>
               </ul>
-              <h3 id="component-maken" class="utrecht-heading-3">Component maken</h3>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Verzamel de benodigde elementen (label en een icoon). Maak daarbij zo veel mogelijk gebruik van jouw [Organisatie] - Bibliotheek die je hebt gekoppeld aan je Local Bibliotheek.</li>
-               <li class="utrecht-unordered-list__item">Maak een component van de verzamelde elementen (Mac: ⌥ Option - ⌘ Command - K of Windows: Ctrl + Alt + K).</li>
-               <li class="utrecht-unordered-list__item">Noem de component ‘[organisatie]-demo-sticker’.</li>
-              </ul>
-              <h3 id="component-van-huisstijl-voorzien" class="utrecht-heading-3">Component van huisstijl voorzien</h3>
-              <p>Je kunt een component van huisstijl voorzien zoals je dat gewend bent (Shared Styles, Auto-layout, Variables). Zolang je deze designkeuzes uiteindelijk maar vastlegt via Token Studio. Hierdoor zijn je design tokens te koppelen met code. We vervolgen deze uitleg door direct te werken met de Tokens Studio plugin.</p>
-              <h4 id="tokens-studio-plugin-gebruiken" class="utrecht-heading-4">Tokens Studio plugin gebruiken</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Open de Tokens Studio plugin.</li>
-               <li class="utrecht-unordered-list__item">Maak binnen ‘components’ een nieuwe set aan en noem deze ‘components/demo-sticker’.</li>
-               <li class="utrecht-unordered-list__item">Plaats dit component in alfabetische volgorde door het te slepen.</li>
-               <li class="utrecht-unordered-list__item">Zet de checkbox van demo-sticker aan.</li>
-              </ul>
-              <h4 id="token-naamgeving" class="utrecht-heading-4">Token naamgeving</h4>
-              <p>Gebruik de <a href="https://www.nldesignsystem.nl/handboek/design-tokens/" class="utrecht-link utrecht-link--html-a">documentatie over de naamgeving</a>. Hierin staat hoe je naamgeving van component tokens op kan bouwen.</p>
-              <h4 id="kleur-color-tokens-aanmaken" class="utrecht-heading-4">Kleur (color) tokens aanmaken</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Voor een achtergrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Klik bij ‘Color’ op het plusje.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe achtergrondkleur token ‘[organisatie].demo-sticker.background-color’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Voor een voorgrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Dupliceer het achtergrondkleur token. Op deze manier hoef je de naam niet in z’n geheel opnieuw te schrijven.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe voorgrondkleur token ‘[organisatie].demo-sticker.color’.</li>
-                 <li class="utrecht-unordered-list__item">Kies opnieuw een kleur naar keuze en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="kleur-tokens-koppelen" class="utrecht-heading-4">Kleur tokens koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Koppel de achtergrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Selecteer de juiste laag. In dit geval is dat het hele component.</li>
-                 <li class="utrecht-unordered-list__item">Klik op het aangemaakte achtergrondkleur token of gebruik rechtermuisklik en kies voor ‘Fill’.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Koppel de voorgrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Selecteer de lagen ‘Label’ en ‘Shape’ (gebruik diepe selectie: Mac: ⌘ Command of Windows: Control).</li>
-                 <li class="utrecht-unordered-list__item">Klik op het aangemaakte voorgrondkleur token.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="ruimte-spacing-tokens-aanmaken" class="utrecht-heading-4">Ruimte (spacing) tokens aanmaken</h4>
-              <p>Gebruik de <a href="https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte" class="utrecht-link utrecht-link--html-a">documentatie over de ruimte</a>. Hierin staat informatie over de spacing scale en concepten.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Voor inline:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Klik bij ‘Spacing’ op het plusje.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe token ‘[organisatie].demo-sticker.padding-inline’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Value’ een waarde uit je common of brand laag en klik op ‘Create’. Tip: typ ‘{inline’ om gebruik te maken van autosuggestie.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Voor block:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Dupliceer de inline token.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe token ‘[organisatie].demo-sticker.padding-block’.</li>
-                 <li class="utrecht-unordered-list__item">Kies opnieuw een waarde naar keuze en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="ruimte-tokens-aan-component-koppelen" class="utrecht-heading-4">Ruimte tokens aan component koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Selecteer de juiste laag. In dit geval is dat het hele component.</li>
-               <li class="utrecht-unordered-list__item">Gebruik rechtermuisklik bij de inline token en klik op ‘Left’ en ‘Right’.</li>
-               <li class="utrecht-unordered-list__item">Gebruik rechtermuisklik bij de block token en klik op ‘Top’ en ‘Bottom’.</li>
-              </ul>
-              <h4 id="typografie-tokens-aanmaken" class="utrecht-heading-4">Typografie tokens aanmaken</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Voor font family:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Klik bij ‘Font Family’ op het plusje.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-family’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Font Family’ voor een typografie uit het common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Voor font weight:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Om de dikte van het woord ‘Label’ te bepalen, klik je bij ‘Font Weight’ op het plusje.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-weight’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Font Size’ een grootte uit het common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Voor font size en line height:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Herhaal bovenstaande stappen met tokens uit het common niveau.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="typografie-tokens-aan-component-koppelen" class="utrecht-heading-4">Typografie tokens aan component koppelen</h4>
-              <p>Selecteer de laag ‘Label’ en klik op de aangemaakte typografie tokens.</p>
-              <h3 id="tokens-aanpassen-of-nieuwe-tokens-maken" class="utrecht-heading-3">Tokens aanpassen of nieuwe tokens maken</h3>
-              <p>Voeg indien nodig tokens toe voor bijvoorbeeld de spacing tussen het icoon en het label, of voor de grootte van het icoon.</p>
-              <h3 id="varianten-maken" class="utrecht-heading-3">Varianten maken</h3>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Geef de achtergrondkleur van de component set de document.background-color uit het common niveau. Tip: dit is handig wanneer je ooit met dark-mode gaat werken. De achtergrondkleur kleurt dan mee.</li>
-               <li class="utrecht-unordered-list__item">Pas auto-layout toe de component met varianten. Kies 48px voor de vertical gap, horizontal padding en vertical padding.</li>
-               <li class="utrecht-unordered-list__item">Verander de naam van de property in overleg met je developer (bijv. ‘Appearance’). Tip: kijk hoe de properties worden genoemd bij andere componenten die ook meerdere varianten hebben.</li>
-               <li class="utrecht-unordered-list__item">Hernoem de varianten naar ‘Default’ en ‘Hyper’.</li>
-              </ul>
-              <h4 id="border-tokens-aanmaken" class="utrecht-heading-4">Border tokens aanmaken</h4>
-              <p>Als voorbeeld voegen we enkel border tokens toe aan de &#x27;hyper&#x27; variant.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                Voor border kleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Dupliceer het voorgrondkleur token.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-color’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.</li>
-                </ul>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                Voor border width:<!-- -->
-                <ul role="list" class="utrecht-unordered-list">
-                 <li class="utrecht-unordered-list__item">Klik bij ‘Border Width’ op het plusje.</li>
-                 <li class="utrecht-unordered-list__item">Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-width’.</li>
-                 <li class="utrecht-unordered-list__item">Kies bij ‘Border Width’ voor een dikte uit het brand of common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="border-tokens-aan-component-koppelen" class="utrecht-heading-4">Border tokens aan component koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Selecteer de variant ‘Hyper’.</li>
-               <li class="utrecht-unordered-list__item">Gebruik rechtermuisklik bij het border kleur token en klik op ‘Border’.</li>
-               <li class="utrecht-unordered-list__item">Gebruik rechtermuisklik bij het border width token en klik op ‘All’.</li>
-              </ul>
-              <h3 id="afronden" class="utrecht-heading-3">Afronden</h3>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Je bent klaar met het opbouwen van je component met design tokens!</li>
-               <li class="utrecht-unordered-list__item">De volgende stap is om de tokens inzichtelijk te maken voor anderen door ze te documenteren.</li>
-              </ul>
-              <h2 id="demo-sticker-documenteren" class="utrecht-heading-2">Demo sticker documenteren</h2>
-              <p>In deze video laten we zien hoe je de design tokens van de &#x27;Demo sticker&#x27; kan documenteren.</p>
-              <div style="width: 100%; height: 100%" class="video-player__6fg undefined"></div>
-              <h2 id="demo-card-maken" class="utrecht-heading-2">Demo card maken</h2>
-              <p>In deze video laten we zien hoe je de &#x27;Demo card&#x27; kan opbouwen met design tokens.</p>
-              <div style="width: 100%; height: 100%" class="video-player__6fg undefined"></div>
-              <h2 id="demo-card-documenteren" class="utrecht-heading-2">Demo card documenteren</h2>
-              <p>In deze video laten we zien hoe je de design tokens van de &#x27;Demo card&#x27; kan documenteren.</p>
-              <div style="width: 100%; height: 100%" class="video-player__6fg undefined"></div>
-              <hr />
-              <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
-              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">Github</a>.</p>
-              <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
-              <p>Heb je een vraag? Twijfel niet en <a href="/en/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
              </div>
-             <footer class="theme-doc-footer docusaurus-mt-lg">
-              <div class="theme-doc-footer-edit-meta-row row">
-               <div class="col">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/zelf-componenten-maken.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
-                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_R0Yn" aria-hidden="true">
-                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
-                 >Edit this page</a
-                >
-               </div>
-               <div class="col lastUpdated_tQw2"></div>
-              </div>
-             </footer>
             </article>
-            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
-             <a class="pagination-nav__link pagination-nav__link--prev" href="/en/handboek/designer/stappenplan"
-              ><div class="pagination-nav__sublabel">Previous</div>
-              <div class="pagination-nav__label">Stappenplan</div></a
-             ><a class="pagination-nav__link pagination-nav__link--next" href="/en/handboek/designer/voorbeeld-thema"
-              ><div class="pagination-nav__sublabel">Next</div>
-              <div class="pagination-nav__label">Voorbeeld thema</div></a
-             >
-            </nav>
            </div>
           </div>
          </div>
@@ -419,25 +225,6 @@
       </div>
      </div>
     </div>
-    <footer class="footer footer--dark footer_VVap">
-     <div class="container--wide">
-      <div class="row footer__links">
-       <div class="col footer__col">
-        <div class="footer__title"></div>
-        <ul class="footer__items clean-list">
-         <li class="footer__item"><a class="utrecht-link" href="/en/blog">Blog</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/en/project/kernteam">Contact</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/en/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/en/privacyverklaring">Privacyverklaring</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/en/colofon">Colofon</a></li>
-         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
-         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
-         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
-        </ul>
-       </div>
-      </div>
-     </div>
-    </footer>
    </div>
   </div>
  </body>

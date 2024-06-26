@@ -1,4 +1,4 @@
-/*! For license information please see main.3d4f3e17.js.LICENSE.txt */
+/*! For license information please see main.5692b488.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -11928,7 +11928,6 @@
      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
      colorMode: { disableSwitch: !0, defaultMode: "light", respectPrefersColorScheme: !1 },
      algolia: { appId: "HS7BGF6EOX", apiKey: "ce625c137581b1c1f4bdd3912398834b", indexName: "nldesignsystem", contextualSearch: !0, searchParameters: {}, searchPagePath: "search" },
-     announcementBar: { content: 'Kom je eind juni naar onze borrel in Utrecht? <a href="/community/sluit-je-aan" class="utrecht-link">Meld  je aan</a> bij onze community!', backgroundColor: "#148839", textColor: "#fff", isCloseable: !1, id: "announcement-bar" },
      metadata: [],
     },
     i18n: { defaultLocale: "nl", locales: ["nl", "en"], localeConfigs: { nl: { htmlLang: "nl-NL", direction: "ltr" }, en: { htmlLang: "en-EN", direction: "ltr" } }, path: "i18n" },
