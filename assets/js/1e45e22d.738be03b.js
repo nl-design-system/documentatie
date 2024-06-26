@@ -6,9 +6,9 @@
    i.r(n), i.d(n, { assets: () => s, contentTitle: () => a, default: () => g, frontMatter: () => d, metadata: () => r, toc: () => l });
    var t = i(52676),
     o = i(24785);
-   const d = { title: "Code of Conduct", hide_title: !0, hide_table_of_contents: !0, pagination_label: "Code of Conduct", slug: "/coc" },
+   const d = { title: "Code of Conduct", hide_title: !0, hide_table_of_contents: !0, pagination_label: "Code of Conduct", slug: "/coc", unlisted: !0 },
     a = "Code of Conduct",
-    r = { id: "footer/coc", title: "Code of Conduct", description: "Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.", source: "@site/docs/footer/coc.md", sourceDirName: "footer", slug: "/coc", permalink: "/coc", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md", tags: [], version: "current", frontMatter: { title: "Code of Conduct", hide_title: !0, hide_table_of_contents: !0, pagination_label: "Code of Conduct", slug: "/coc" } },
+    r = { id: "footer/coc", title: "Code of Conduct", description: "Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.", source: "@site/docs/footer/coc.md", sourceDirName: "footer", slug: "/coc", permalink: "/coc", draft: !1, unlisted: !0, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md", tags: [], version: "current", frontMatter: { title: "Code of Conduct", hide_title: !0, hide_table_of_contents: !0, pagination_label: "Code of Conduct", slug: "/coc", unlisted: !0 } },
     s = {},
     l = [
      { value: "Gedragscode", id: "gedragscode", level: 2 },

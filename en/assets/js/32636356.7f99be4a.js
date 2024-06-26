@@ -6,9 +6,9 @@
    n.r(t), n.d(t, { assets: () => c, contentTitle: () => r, default: () => u, frontMatter: () => i, metadata: () => a, toc: () => d });
    var o = n(52676),
     s = n(24785);
-   const i = { title: "Bedankt voor je aanmelding", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Aanmelden", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt" },
+   const i = { title: "Bedankt voor je aanmelding", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Aanmelden", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", unlisted: !0 },
     r = "Bedankt!",
-    a = { id: "project/newsletter-success", title: "Bedankt voor je aanmelding", description: "Je bent nu aangemeld voor onze nieuwsbrief!", source: "@site/docs/project/newsletter-success.mdx", sourceDirName: "project", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", permalink: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", draft: !1, unlisted: !1, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/project/newsletter-success.mdx", tags: [], version: "current", frontMatter: { title: "Bedankt voor je aanmelding", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Aanmelden", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt" } },
+    a = { id: "project/newsletter-success", title: "Bedankt voor je aanmelding", description: "Je bent nu aangemeld voor onze nieuwsbrief!", source: "@site/docs/project/newsletter-success.mdx", sourceDirName: "project", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", permalink: "/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", draft: !1, unlisted: !0, editUrl: "https://github.com/nl-design-system/documentatie/tree/main/docs/project/newsletter-success.mdx", tags: [], version: "current", frontMatter: { title: "Bedankt voor je aanmelding", hide_title: !0, hide_table_of_contents: !1, sidebar_label: "Aanmelden", pagination_label: "2 wekelijkse updates van het kernteam en community", slug: "/project/blijf-op-de-hoogte/nieuwsbrief/bedankt", unlisted: !0 } },
     c = {},
     d = [];
    function l(e) {
