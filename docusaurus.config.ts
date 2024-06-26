@@ -85,13 +85,6 @@ const config: Config = {
       searchPagePath: 'search',
       //... other Algolia params
     },
-    announcementBar: {
-      content:
-        'Kom je eind juni naar onze borrel in Utrecht? <a href="/community/sluit-je-aan" class="utrecht-link">Meld  je aan</a> bij onze community!',
-      backgroundColor: '#148839',
-      textColor: '#fff',
-      isCloseable: false,
-    },
   },
   i18n: {
     defaultLocale: 'nl',
