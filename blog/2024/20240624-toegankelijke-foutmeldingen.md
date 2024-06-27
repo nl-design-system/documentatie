@@ -25,7 +25,7 @@ Stel jezelf de volgende vragen:
 - Hoe geef ik aan of een vraag niet of niet goed is ingevuld?
 - Wat zijn goede teksten voor foutmeldingen?
 - Hoe geef ik aan of een formulier succesvol is verzonden?
-- Hoe bied ik hulp als een gebruiker niet uitkomt?
+- Hoe bied ik hulp als een gebruiker er niet uitkomt?
 
 We geven per stap referenties naar de verschillende [richtlijnen voor formulieren](/richtlijnen/formulieren/) van het NL Design System die dieper ingaan op de verschillende onderwerpen.
 
