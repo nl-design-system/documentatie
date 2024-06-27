@@ -25,7 +25,7 @@ Stel jezelf de volgende vragen:
 - Hoe geef ik aan of een vraag niet of niet goed is ingevuld?
 - Wat zijn goede teksten voor foutmeldingen?
 - Hoe geef ik aan of een formulier succesvol is verzonden?
-- Hoe bied ik hulp als een gebruiker niet uitkomt?
+- Hoe bied ik hulp als een gebruiker er niet uitkomt?
 
 We geven per stap referenties naar de verschillende [richtlijnen voor formulieren](/richtlijnen/formulieren/) van het NL Design System die dieper ingaan op de verschillende onderwerpen.
 
@@ -149,7 +149,7 @@ Op de pagina [Bevestigingspagina van een formulier](/richtlijnen/formulieren/bev
 
 Als een gebruiker vastloopt of vragen heeft tijdens het invullen van een complex formulier, moet het makkelijk zijn om hulp te vragen.
 
-Zet de contactinformatie dan niet helemaal onderaan het formulier, maar bijvoorbeeld bovenaan in een kort zinnetje. Zorg altijd voor [verschillende manieren om contact op te nemen](/blog/meerdere-manieren-contact). Niet iedereen kan opbellen.
+Zet de contactinformatie dan niet helemaal onderaan het formulier, maar bijvoorbeeld bovenaan in een kort zinnetje. Ook de footer is een geschikte plek om contactinformatie in op te nemen. Zorg altijd voor [verschillende manieren om contact op te nemen](/blog/meerdere-manieren-contact). Niet iedereen kan opbellen.
 
 ## Samenvatting
 
