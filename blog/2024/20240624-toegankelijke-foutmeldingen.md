@@ -149,7 +149,7 @@ Op de pagina [Bevestigingspagina van een formulier](/richtlijnen/formulieren/bev
 
 Als een gebruiker vastloopt of vragen heeft tijdens het invullen van een complex formulier, moet het makkelijk zijn om hulp te vragen.
 
-Zet de contactinformatie dan niet helemaal onderaan het formulier, maar bijvoorbeeld bovenaan in een kort zinnetje. Zorg altijd voor [verschillende manieren om contact op te nemen](/blog/meerdere-manieren-contact). Niet iedereen kan opbellen.
+Zet de contactinformatie dan niet helemaal onderaan het formulier, maar bijvoorbeeld bovenaan in een kort zinnetje. Ook de footer is een geschikte plek zijn om contactinformatie in op te nemen. Zorg altijd voor [verschillende manieren om contact op te nemen](/blog/meerdere-manieren-contact). Niet iedereen kan opbellen.
 
 ## Samenvatting
 
