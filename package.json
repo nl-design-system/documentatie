@@ -21,7 +21,7 @@
     "build:component-pages": "docusaurus build",
     "build:docusaurus": "docusaurus build",
     "build:workspaces": "lerna run build",
-    "build:optimize-view-source": "cd build && npx prettier --config ../.prettierrc.build.json --no-editorconfig --write .",
+    "build:optimize-view-source": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clean": "npm-run-all clean:**",
