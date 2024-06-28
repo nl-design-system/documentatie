@@ -1,24 +1,16 @@
 version: 2
 
-# Documentation:
-# https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-version-updates
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      day: "monday"
       interval: "monthly"
-      time: "09:00"
-      timezone: "Europe/Amsterdam"
     reviewers:
       - "nl-design-system/kernteam-dependabot"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      day: "monday"
       interval: "monthly"
-      time: "09:00"
-      timezone: "Europe/Amsterdam"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
