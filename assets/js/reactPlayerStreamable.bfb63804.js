@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var Streamable_exports = {};
@@ -42,22 +42,22 @@ exports.modules = {
   var import_react = __toESM(__webpack_require__(75271));
   var import_utils = __webpack_require__(21981);
   var import_patterns = __webpack_require__(39090);
-  const SDK_URL = "https://cdn.embed.ly/player-0.1.0.min.js";
-  const SDK_GLOBAL = "playerjs";
+  const SDK_URL = 'https://cdn.embed.ly/player-0.1.0.min.js';
+  const SDK_GLOBAL = 'playerjs';
   class Streamable extends import_react.Component {
    constructor() {
     super(...arguments);
-    __publicField(this, "callPlayer", import_utils.callPlayer);
-    __publicField(this, "duration", null);
-    __publicField(this, "currentTime", null);
-    __publicField(this, "secondsLoaded", null);
-    __publicField(this, "mute", () => {
-     this.callPlayer("mute");
+    __publicField(this, 'callPlayer', import_utils.callPlayer);
+    __publicField(this, 'duration', null);
+    __publicField(this, 'currentTime', null);
+    __publicField(this, 'secondsLoaded', null);
+    __publicField(this, 'mute', () => {
+     this.callPlayer('mute');
     });
-    __publicField(this, "unmute", () => {
-     this.callPlayer("unmute");
+    __publicField(this, 'unmute', () => {
+     this.callPlayer('unmute');
     });
-    __publicField(this, "ref", (iframe) => {
+    __publicField(this, 'ref', (iframe) => {
      this.iframe = iframe;
     });
    }
@@ -69,17 +69,17 @@ exports.modules = {
      if (!this.iframe) return;
      this.player = new playerjs.Player(this.iframe);
      this.player.setLoop(this.props.loop);
-     this.player.on("ready", this.props.onReady);
-     this.player.on("play", this.props.onPlay);
-     this.player.on("pause", this.props.onPause);
-     this.player.on("seeked", this.props.onSeek);
-     this.player.on("ended", this.props.onEnded);
-     this.player.on("error", this.props.onError);
-     this.player.on("timeupdate", ({ duration, seconds }) => {
+     this.player.on('ready', this.props.onReady);
+     this.player.on('play', this.props.onPlay);
+     this.player.on('pause', this.props.onPause);
+     this.player.on('seeked', this.props.onSeek);
+     this.player.on('ended', this.props.onEnded);
+     this.player.on('error', this.props.onError);
+     this.player.on('timeupdate', ({ duration, seconds }) => {
       this.duration = duration;
       this.currentTime = seconds;
      });
-     this.player.on("buffered", ({ percent }) => {
+     this.player.on('buffered', ({ percent }) => {
       if (this.duration) {
        this.secondsLoaded = this.duration * percent;
       }
@@ -90,23 +90,23 @@ exports.modules = {
     }, this.props.onError);
    }
    play() {
-    this.callPlayer("play");
+    this.callPlayer('play');
    }
    pause() {
-    this.callPlayer("pause");
+    this.callPlayer('pause');
    }
    stop() {}
    seekTo(seconds, keepPlaying = true) {
-    this.callPlayer("setCurrentTime", seconds);
+    this.callPlayer('setCurrentTime', seconds);
     if (!keepPlaying) {
      this.pause();
     }
    }
    setVolume(fraction) {
-    this.callPlayer("setVolume", fraction * 100);
+    this.callPlayer('setVolume', fraction * 100);
    }
    setLoop(loop) {
-    this.callPlayer("setLoop", loop);
+    this.callPlayer('setLoop', loop);
    }
    getDuration() {
     return this.duration;
@@ -120,21 +120,21 @@ exports.modules = {
    render() {
     const id = this.props.url.match(import_patterns.MATCH_URL_STREAMABLE)[1];
     const style = {
-     width: "100%",
-     height: "100%",
+     width: '100%',
+     height: '100%',
     };
-    return /* @__PURE__ */ import_react.default.createElement("iframe", {
+    return /* @__PURE__ */ import_react.default.createElement('iframe', {
      ref: this.ref,
      src: `https://streamable.com/o/${id}`,
-     frameBorder: "0",
-     scrolling: "no",
+     frameBorder: '0',
+     scrolling: 'no',
      style,
-     allow: "encrypted-media; autoplay; fullscreen;",
+     allow: 'encrypted-media; autoplay; fullscreen;',
     });
    }
   }
-  __publicField(Streamable, "displayName", "Streamable");
-  __publicField(Streamable, "canPlay", import_patterns.canPlay.streamable);
+  __publicField(Streamable, 'displayName', 'Streamable');
+  __publicField(Streamable, 'canPlay', import_patterns.canPlay.streamable);
 
   /***/
  },

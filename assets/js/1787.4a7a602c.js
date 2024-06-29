@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 1787;
 exports.ids = [1787];
 exports.modules = {
@@ -10,14 +10,14 @@ exports.modules = {
   });
   /* harmony import */ var _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79058);
 
-  const utrechtIconContainerCss = ".utrecht-icon-container{display:inline-block;color:var(--utrecht-icon-color);width:var(--utrecht-icon-size);height:var(--utrecht-icon-size)}";
+  const utrechtIconContainerCss = '.utrecht-icon-container{display:inline-block;color:var(--utrecht-icon-color);width:var(--utrecht-icon-size);height:var(--utrecht-icon-size)}';
 
   const UtrechtIconContainer = class {
    constructor(hostRef) {
     (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.r)(this, hostRef);
    }
    render() {
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: "utrecht-icon-container" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null));
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'utrecht-icon-container' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null));
    }
   };
   UtrechtIconContainer.style = utrechtIconContainerCss;

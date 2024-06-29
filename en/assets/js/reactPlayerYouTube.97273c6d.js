@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var YouTube_exports = {};
@@ -42,41 +42,41 @@ exports.modules = {
   var import_react = __toESM(__webpack_require__(75271));
   var import_utils = __webpack_require__(21981);
   var import_patterns = __webpack_require__(39090);
-  const SDK_URL = "https://www.youtube.com/iframe_api";
-  const SDK_GLOBAL = "YT";
-  const SDK_GLOBAL_READY = "onYouTubeIframeAPIReady";
+  const SDK_URL = 'https://www.youtube.com/iframe_api';
+  const SDK_GLOBAL = 'YT';
+  const SDK_GLOBAL_READY = 'onYouTubeIframeAPIReady';
   const MATCH_PLAYLIST = /[?&](?:list|channel)=([a-zA-Z0-9_-]+)/;
   const MATCH_USER_UPLOADS = /user\/([a-zA-Z0-9_-]+)\/?/;
   const MATCH_NOCOOKIE = /youtube-nocookie\.com/;
-  const NOCOOKIE_HOST = "https://www.youtube-nocookie.com";
+  const NOCOOKIE_HOST = 'https://www.youtube-nocookie.com';
   class YouTube extends import_react.Component {
    constructor() {
     super(...arguments);
-    __publicField(this, "callPlayer", import_utils.callPlayer);
-    __publicField(this, "parsePlaylist", (url) => {
+    __publicField(this, 'callPlayer', import_utils.callPlayer);
+    __publicField(this, 'parsePlaylist', (url) => {
      if (url instanceof Array) {
       return {
-       listType: "playlist",
-       playlist: url.map(this.getID).join(","),
+       listType: 'playlist',
+       playlist: url.map(this.getID).join(','),
       };
      }
      if (MATCH_PLAYLIST.test(url)) {
       const [, playlistId] = url.match(MATCH_PLAYLIST);
       return {
-       listType: "playlist",
-       list: playlistId.replace(/^UC/, "UU"),
+       listType: 'playlist',
+       list: playlistId.replace(/^UC/, 'UU'),
       };
      }
      if (MATCH_USER_UPLOADS.test(url)) {
       const [, username] = url.match(MATCH_USER_UPLOADS);
       return {
-       listType: "user_uploads",
+       listType: 'user_uploads',
        list: username,
       };
      }
      return {};
     });
-    __publicField(this, "onStateChange", (event) => {
+    __publicField(this, 'onStateChange', (event) => {
      const { data } = event;
      const {
       onPlay,
@@ -97,7 +97,7 @@ exports.modules = {
      if (data === PAUSED) onPause();
      if (data === BUFFERING) onBuffer();
      if (data === ENDED) {
-      const isPlaylist = !!this.callPlayer("getPlaylist");
+      const isPlaylist = !!this.callPlayer('getPlaylist');
       if (loop && !isPlaylist) {
        if (playerVars.start) {
         this.seekTo(playerVars.start);
@@ -109,13 +109,13 @@ exports.modules = {
      }
      if (data === CUED) onReady();
     });
-    __publicField(this, "mute", () => {
-     this.callPlayer("mute");
+    __publicField(this, 'mute', () => {
+     this.callPlayer('mute');
     });
-    __publicField(this, "unmute", () => {
-     this.callPlayer("unMute");
+    __publicField(this, 'unmute', () => {
+     this.callPlayer('unMute');
     });
-    __publicField(this, "ref", (container) => {
+    __publicField(this, 'ref', (container) => {
      this.container = container;
     });
    }
@@ -147,8 +147,8 @@ exports.modules = {
     (0, import_utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, (YT) => YT.loaded).then((YT) => {
      if (!this.container) return;
      this.player = new YT.Player(this.container, {
-      width: "100%",
-      height: "100%",
+      width: '100%',
+      height: '100%',
       videoId: id,
       playerVars: {
        autoplay: playing ? 1 : 0,
@@ -178,55 +178,55 @@ exports.modules = {
      });
     }, onError);
     if (embedOptions.events) {
-     console.warn("Using `embedOptions.events` will likely break things. Use ReactPlayer\u2019s callback props instead, eg onReady, onPlay, onPause");
+     console.warn('Using `embedOptions.events` will likely break things. Use ReactPlayer\u2019s callback props instead, eg onReady, onPlay, onPause');
     }
    }
    play() {
-    this.callPlayer("playVideo");
+    this.callPlayer('playVideo');
    }
    pause() {
-    this.callPlayer("pauseVideo");
+    this.callPlayer('pauseVideo');
    }
    stop() {
-    if (!document.body.contains(this.callPlayer("getIframe"))) return;
-    this.callPlayer("stopVideo");
+    if (!document.body.contains(this.callPlayer('getIframe'))) return;
+    this.callPlayer('stopVideo');
    }
    seekTo(amount, keepPlaying = false) {
-    this.callPlayer("seekTo", amount);
+    this.callPlayer('seekTo', amount);
     if (!keepPlaying && !this.props.playing) {
      this.pause();
     }
    }
    setVolume(fraction) {
-    this.callPlayer("setVolume", fraction * 100);
+    this.callPlayer('setVolume', fraction * 100);
    }
    setPlaybackRate(rate) {
-    this.callPlayer("setPlaybackRate", rate);
+    this.callPlayer('setPlaybackRate', rate);
    }
    setLoop(loop) {
-    this.callPlayer("setLoop", loop);
+    this.callPlayer('setLoop', loop);
    }
    getDuration() {
-    return this.callPlayer("getDuration");
+    return this.callPlayer('getDuration');
    }
    getCurrentTime() {
-    return this.callPlayer("getCurrentTime");
+    return this.callPlayer('getCurrentTime');
    }
    getSecondsLoaded() {
-    return this.callPlayer("getVideoLoadedFraction") * this.getDuration();
+    return this.callPlayer('getVideoLoadedFraction') * this.getDuration();
    }
    render() {
     const { display } = this.props;
     const style = {
-     width: "100%",
-     height: "100%",
+     width: '100%',
+     height: '100%',
      display,
     };
-    return /* @__PURE__ */ import_react.default.createElement("div", { style }, /* @__PURE__ */ import_react.default.createElement("div", { ref: this.ref }));
+    return /* @__PURE__ */ import_react.default.createElement('div', { style }, /* @__PURE__ */ import_react.default.createElement('div', { ref: this.ref }));
    }
   }
-  __publicField(YouTube, "displayName", "YouTube");
-  __publicField(YouTube, "canPlay", import_patterns.canPlay.youtube);
+  __publicField(YouTube, 'displayName', 'YouTube');
+  __publicField(YouTube, 'canPlay', import_patterns.canPlay.youtube);
 
   /***/
  },

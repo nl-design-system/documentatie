@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [57840],
  {
@@ -10,10 +10,10 @@
      (0, r.r)(this, e);
     }
     render() {
-     return (0, r.h)(r.H, { role: "row" }, (0, r.h)("slot", null));
+     return (0, r.h)(r.H, { role: 'row' }, (0, r.h)('slot', null));
     }
    };
-   i.style = ":host{break-inside:avoid;page-break-inside:avoid;display:table-row}";
+   i.style = ':host{break-inside:avoid;page-break-inside:avoid;display:table-row}';
   },
  },
 ]);

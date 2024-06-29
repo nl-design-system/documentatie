@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 4923;
 exports.ids = [4923];
 exports.modules = {
@@ -10,7 +10,7 @@ exports.modules = {
   });
   /* harmony import */ var _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79058);
 
-  const columnLayoutCss = ":host{column-gap:var(--utrecht-column-layout-gap, 2em);column-width:var(--utrecht-column-layout-column-width, 40ch);display:block}:host([rule]){column-rule-color:var(--utrecht-column-layout-column-rule-color);column-rule-style:solid;column-rule-width:var(--utrecht-column-layout-column-rule-width, 0)}:host([hidden]){display:none !important}";
+  const columnLayoutCss = ':host{column-gap:var(--utrecht-column-layout-gap, 2em);column-width:var(--utrecht-column-layout-column-width, 40ch);display:block}:host([rule]){column-rule-color:var(--utrecht-column-layout-column-rule-color);column-rule-style:solid;column-rule-width:var(--utrecht-column-layout-column-rule-width, 0)}:host([hidden]){display:none !important}';
 
   const ColumnLayout = class {
    constructor(hostRef) {
@@ -18,7 +18,7 @@ exports.modules = {
     this.rule = false;
    }
    render() {
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null);
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null);
    }
   };
   ColumnLayout.style = columnLayoutCss;

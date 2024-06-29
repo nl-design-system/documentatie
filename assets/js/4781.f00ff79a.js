@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 4781;
 exports.ids = [4781];
 exports.modules = {
@@ -10,15 +10,15 @@ exports.modules = {
   function r(e) {
    var t,
     f,
-    n = "";
-   if ("string" == typeof e || "number" == typeof e) n += e;
-   else if ("object" == typeof e)
-    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += " "), (n += f));
-    else for (t in e) e[t] && (n && (n += " "), (n += t));
+    n = '';
+   if ('string' == typeof e || 'number' == typeof e) n += e;
+   else if ('object' == typeof e)
+    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += ' '), (n += f));
+    else for (t in e) e[t] && (n && (n += ' '), (n += t));
    return n;
   }
   function clsx() {
-   for (var e, t, f = 0, n = ""; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += " "), (n += t));
+   for (var e, t, f = 0, n = ''; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += ' '), (n += t));
    return n;
   }
 
@@ -46,24 +46,24 @@ exports.modules = {
    render() {
     const items = JSON.parse(this.json);
     return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-     "nav",
-     { class: "utrecht-sidenav" },
+     'nav',
+     { class: 'utrecht-sidenav' },
      (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-      "ul",
-      { class: "utrecht-sidenav__list" },
+      'ul',
+      { class: 'utrecht-sidenav__list' },
       items.map(({ href, title, current, focus, children, sibling, haschildren }, index, array) =>
        (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-        "li",
-        { key: href, class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__item", index + 1 === array.length && "utrecht-sidenav__item--last", sibling && "utrecht-sidenav__item--sibling", haschildren && "utrecht-sidenav__item--parent") },
-        (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("a", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__link", current && "utrecht-sidenav__link--current", focus && "utrecht-sidenav__link--focus", sibling && "utrecht-sidenav__link--sibling", haschildren && "utrecht-sidenav__link--parent"), href: href }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__marker", current && "utrecht-sidenav__marker--current") }), (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__connection", haschildren && "utrecht-sidenav__connection--parent", sibling && "utrecht-sidenav__connection--sibling", index + 1 === array.length && "utrecht-sidenav__connection--last") }), title),
+        'li',
+        { key: href, class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__item', index + 1 === array.length && 'utrecht-sidenav__item--last', sibling && 'utrecht-sidenav__item--sibling', haschildren && 'utrecht-sidenav__item--parent') },
+        (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('a', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__link', current && 'utrecht-sidenav__link--current', focus && 'utrecht-sidenav__link--focus', sibling && 'utrecht-sidenav__link--sibling', haschildren && 'utrecht-sidenav__link--parent'), href: href }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__marker', current && 'utrecht-sidenav__marker--current') }), (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__connection', haschildren && 'utrecht-sidenav__connection--parent', sibling && 'utrecht-sidenav__connection--sibling', index + 1 === array.length && 'utrecht-sidenav__connection--last') }), title),
         children
          ? (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-            "ul",
-            { class: "utrecht-sidenav__list utrecht-sidenav__list--child" },
-            children.map(({ href, title, current, focus }) => (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("li", { key: href, class: "utrecht-sidenav__item utrecht-sidenav__item--child" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("a", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__link", "utrecht-sidenav__link--child", current && "utrecht-sidenav__link--current", current && "utrecht-sidenav__link--current-child", focus && "utrecht-sidenav__link--focus"), href: href }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-sidenav__marker", "utrecht-sidenav__marker--child", current && "utrecht-sidenav__marker--current", current && "utrecht-sidenav__marker--current-child") }), title))),
+            'ul',
+            { class: 'utrecht-sidenav__list utrecht-sidenav__list--child' },
+            children.map(({ href, title, current, focus }) => (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('li', { key: href, class: 'utrecht-sidenav__item utrecht-sidenav__item--child' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('a', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__link', 'utrecht-sidenav__link--child', current && 'utrecht-sidenav__link--current', current && 'utrecht-sidenav__link--current-child', focus && 'utrecht-sidenav__link--focus'), href: href }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-sidenav__marker', 'utrecht-sidenav__marker--child', current && 'utrecht-sidenav__marker--current', current && 'utrecht-sidenav__marker--current-child') }), title))),
            )
-         : "",
-        (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: "utrecht-sidenav__item-separator" }),
+         : '',
+        (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'utrecht-sidenav__item-separator' }),
        ),
       ),
      ),

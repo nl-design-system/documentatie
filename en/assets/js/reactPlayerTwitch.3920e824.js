@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var Twitch_exports = {};
@@ -42,19 +42,19 @@ exports.modules = {
   var import_react = __toESM(__webpack_require__(75271));
   var import_utils = __webpack_require__(21981);
   var import_patterns = __webpack_require__(39090);
-  const SDK_URL = "https://player.twitch.tv/js/embed/v1.js";
-  const SDK_GLOBAL = "Twitch";
-  const PLAYER_ID_PREFIX = "twitch-player-";
+  const SDK_URL = 'https://player.twitch.tv/js/embed/v1.js';
+  const SDK_GLOBAL = 'Twitch';
+  const PLAYER_ID_PREFIX = 'twitch-player-';
   class Twitch extends import_react.Component {
    constructor() {
     super(...arguments);
-    __publicField(this, "callPlayer", import_utils.callPlayer);
-    __publicField(this, "playerID", this.props.config.playerId || `${PLAYER_ID_PREFIX}${(0, import_utils.randomString)()}`);
-    __publicField(this, "mute", () => {
-     this.callPlayer("setMuted", true);
+    __publicField(this, 'callPlayer', import_utils.callPlayer);
+    __publicField(this, 'playerID', this.props.config.playerId || `${PLAYER_ID_PREFIX}${(0, import_utils.randomString)()}`);
+    __publicField(this, 'mute', () => {
+     this.callPlayer('setMuted', true);
     });
-    __publicField(this, "unmute", () => {
-     this.callPlayer("setMuted", false);
+    __publicField(this, 'unmute', () => {
+     this.callPlayer('setMuted', false);
     });
    }
    componentDidMount() {
@@ -68,16 +68,16 @@ exports.modules = {
      if (isChannel) {
       this.player.setChannel(id);
      } else {
-      this.player.setVideo("v" + id);
+      this.player.setVideo('v' + id);
      }
      return;
     }
     (0, import_utils.getSDK)(SDK_URL, SDK_GLOBAL).then((Twitch2) => {
      this.player = new Twitch2.Player(this.playerID, {
-      video: isChannel ? "" : id,
-      channel: isChannel ? id : "",
-      height: "100%",
-      width: "100%",
+      video: isChannel ? '' : id,
+      channel: isChannel ? id : '',
+      height: '100%',
+      width: '100%',
       playsinline,
       autoplay: this.props.playing,
       muted: this.props.muted,
@@ -97,43 +97,43 @@ exports.modules = {
     }, onError);
    }
    play() {
-    this.callPlayer("play");
+    this.callPlayer('play');
    }
    pause() {
-    this.callPlayer("pause");
+    this.callPlayer('pause');
    }
    stop() {
-    this.callPlayer("pause");
+    this.callPlayer('pause');
    }
    seekTo(seconds, keepPlaying = true) {
-    this.callPlayer("seek", seconds);
+    this.callPlayer('seek', seconds);
     if (!keepPlaying) {
      this.pause();
     }
    }
    setVolume(fraction) {
-    this.callPlayer("setVolume", fraction);
+    this.callPlayer('setVolume', fraction);
    }
    getDuration() {
-    return this.callPlayer("getDuration");
+    return this.callPlayer('getDuration');
    }
    getCurrentTime() {
-    return this.callPlayer("getCurrentTime");
+    return this.callPlayer('getCurrentTime');
    }
    getSecondsLoaded() {
     return null;
    }
    render() {
     const style = {
-     width: "100%",
-     height: "100%",
+     width: '100%',
+     height: '100%',
     };
-    return /* @__PURE__ */ import_react.default.createElement("div", { style, id: this.playerID });
+    return /* @__PURE__ */ import_react.default.createElement('div', { style, id: this.playerID });
    }
   }
-  __publicField(Twitch, "displayName", "Twitch");
-  __publicField(Twitch, "canPlay", import_patterns.canPlay.twitch);
-  __publicField(Twitch, "loopOnEnded", true);
+  __publicField(Twitch, 'displayName', 'Twitch');
+  __publicField(Twitch, 'canPlay', import_patterns.canPlay.twitch);
+  __publicField(Twitch, 'loopOnEnded', true);
 
   /***/
  },

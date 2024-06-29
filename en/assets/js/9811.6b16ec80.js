@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 9811;
 exports.ids = [9811];
 exports.modules = {
@@ -10,7 +10,7 @@ exports.modules = {
   });
   /* harmony import */ var _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79058);
 
-  const tableCaptionCss = ":host{break-inside:avoid;color:var(--utrecht-table-caption-color);font-family:var(--utrecht-table-caption-font-family);font-size:var(--utrecht-table-caption-font-size);font-weight:var(--utrecht-table-caption-font-weight);line-height:var(--utrecht-table-caption-line-height);margin-block-end:var(--utrecht-table-caption-margin-block-end);page-break-after:avoid;text-align:var(--utrecht-table-caption-text-align, center);display:table-caption;page-break-after:avoid;page-break-inside:avoid}";
+  const tableCaptionCss = ':host{break-inside:avoid;color:var(--utrecht-table-caption-color);font-family:var(--utrecht-table-caption-font-family);font-size:var(--utrecht-table-caption-font-size);font-weight:var(--utrecht-table-caption-font-weight);line-height:var(--utrecht-table-caption-line-height);margin-block-end:var(--utrecht-table-caption-margin-block-end);page-break-after:avoid;text-align:var(--utrecht-table-caption-text-align, center);display:table-caption;page-break-after:avoid;page-break-inside:avoid}';
 
   const TableCaption = class {
    constructor(hostRef) {
@@ -18,7 +18,7 @@ exports.modules = {
    }
    render() {
     // TODO: Associate with parent <utrecht-table> aria-labelledby attribute
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null);
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null);
    }
   };
   TableCaption.style = tableCaptionCss;

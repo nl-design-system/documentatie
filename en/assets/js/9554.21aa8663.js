@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 9554;
 exports.ids = [9554];
 exports.modules = {
@@ -10,14 +10,14 @@ exports.modules = {
   });
   /* harmony import */ var _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79058);
 
-  const tableBodyCss = ":host{--_utrecht-table-header-cell-z-index:2;display:table-row-group}";
+  const tableBodyCss = ':host{--_utrecht-table-header-cell-z-index:2;display:table-row-group}';
 
   const TableBody = class {
    constructor(hostRef) {
     (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.r)(this, hostRef);
    }
    render() {
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(_index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.H, { role: "rowgroup" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null));
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(_index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.H, { role: 'rowgroup' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null));
    }
   };
   TableBody.style = tableBodyCss;

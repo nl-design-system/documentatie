@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var Mixcloud_exports = {};
@@ -42,18 +42,18 @@ exports.modules = {
   var import_react = __toESM(__webpack_require__(75271));
   var import_utils = __webpack_require__(21981);
   var import_patterns = __webpack_require__(39090);
-  const SDK_URL = "https://widget.mixcloud.com/media/js/widgetApi.js";
-  const SDK_GLOBAL = "Mixcloud";
+  const SDK_URL = 'https://widget.mixcloud.com/media/js/widgetApi.js';
+  const SDK_GLOBAL = 'Mixcloud';
   class Mixcloud extends import_react.Component {
    constructor() {
     super(...arguments);
-    __publicField(this, "callPlayer", import_utils.callPlayer);
-    __publicField(this, "duration", null);
-    __publicField(this, "currentTime", null);
-    __publicField(this, "secondsLoaded", null);
-    __publicField(this, "mute", () => {});
-    __publicField(this, "unmute", () => {});
-    __publicField(this, "ref", (iframe) => {
+    __publicField(this, 'callPlayer', import_utils.callPlayer);
+    __publicField(this, 'duration', null);
+    __publicField(this, 'currentTime', null);
+    __publicField(this, 'secondsLoaded', null);
+    __publicField(this, 'mute', () => {});
+    __publicField(this, 'unmute', () => {});
+    __publicField(this, 'ref', (iframe) => {
      this.iframe = iframe;
     });
    }
@@ -77,14 +77,14 @@ exports.modules = {
     }, this.props.onError);
    }
    play() {
-    this.callPlayer("play");
+    this.callPlayer('play');
    }
    pause() {
-    this.callPlayer("pause");
+    this.callPlayer('pause');
    }
    stop() {}
    seekTo(seconds, keepPlaying = true) {
-    this.callPlayer("seek", seconds);
+    this.callPlayer('seek', seconds);
     if (!keepPlaying) {
      this.pause();
     }
@@ -103,26 +103,26 @@ exports.modules = {
     const { url, config } = this.props;
     const id = url.match(import_patterns.MATCH_URL_MIXCLOUD)[1];
     const style = {
-     width: "100%",
-     height: "100%",
+     width: '100%',
+     height: '100%',
     };
     const query = (0, import_utils.queryString)({
      ...config.options,
      feed: `/${id}/`,
     });
-    return /* @__PURE__ */ import_react.default.createElement("iframe", {
+    return /* @__PURE__ */ import_react.default.createElement('iframe', {
      key: id,
      ref: this.ref,
      style,
      src: `https://www.mixcloud.com/widget/iframe/?${query}`,
-     frameBorder: "0",
-     allow: "autoplay",
+     frameBorder: '0',
+     allow: 'autoplay',
     });
    }
   }
-  __publicField(Mixcloud, "displayName", "Mixcloud");
-  __publicField(Mixcloud, "canPlay", import_patterns.canPlay.mixcloud);
-  __publicField(Mixcloud, "loopOnEnded", true);
+  __publicField(Mixcloud, 'displayName', 'Mixcloud');
+  __publicField(Mixcloud, 'canPlay', import_patterns.canPlay.mixcloud);
+  __publicField(Mixcloud, 'loopOnEnded', true);
 
   /***/
  },

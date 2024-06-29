@@ -24,15 +24,15 @@
   <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
   <script data-rh="true">
    function insertBanner() {
-    var n = document.createElement("div");
-    n.id = "__docusaurus-base-url-issue-banner-container";
+    var n = document.createElement('div');
+    n.id = '__docusaurus-base-url-issue-banner-container';
     (n.innerHTML = '\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/</span>  (default value)</p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n'), document.body.prepend(n);
-    var e = document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),
+    var e = document.getElementById('__docusaurus-base-url-issue-banner-suggestion-container'),
      s = window.location.pathname,
-     o = "/" === s.substr(-1) ? s : s + "/";
+     o = '/' === s.substr(-1) ? s : s + '/';
     e.innerHTML = o;
    }
-   document.addEventListener("DOMContentLoaded", function () {
+   document.addEventListener('DOMContentLoaded', function () {
     void 0 === window.docusaurus && insertBanner();
    });
   </script>
@@ -48,27 +48,27 @@
   <script>
    !(function () {
     function t(t) {
-     document.documentElement.setAttribute("data-theme", t);
+     document.documentElement.setAttribute('data-theme', t);
     }
     var e =
      (function () {
       try {
-       return new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
       } catch (t) {}
      })() ||
      (function () {
       try {
-       return localStorage.getItem("theme");
+       return localStorage.getItem('theme');
       } catch (t) {}
      })();
-    t(null !== e ? e : "light");
+    t(null !== e ? e : 'light');
    })(),
     (function () {
      try {
       const c = new URLSearchParams(window.location.search).entries();
       for (var [t, e] of c)
-       if (t.startsWith("docusaurus-data-")) {
-        var a = t.replace("docusaurus-data-", "data-");
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
         document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}

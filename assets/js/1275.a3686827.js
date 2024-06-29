@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 1275;
 exports.ids = [1275];
 exports.modules = {
@@ -17,7 +17,7 @@ exports.modules = {
     (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.r)(this, hostRef);
    }
    render() {
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("div", { class: "utrecht-html" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null));
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'utrecht-html' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null));
    }
   };
   HTMLContent.style = htmlContentCss;

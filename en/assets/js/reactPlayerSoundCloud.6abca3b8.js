@@ -10,37 +10,37 @@
     a = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     p = (e, t, s, r) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let o of n(t)) u.call(e, o) || o === s || i(e, o, { get: () => t[o], enumerable: !(r = l(t, o)) || r.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let o of n(t)) u.call(e, o) || o === s || i(e, o, { get: () => t[o], enumerable: !(r = l(t, o)) || r.enumerable });
      return e;
     },
     h = (e, t, s) => (
      ((e, t, s) => {
       t in e ? i(e, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : (e[t] = s);
-     })(e, "symbol" != typeof t ? t + "" : t, s),
+     })(e, 'symbol' != typeof t ? t + '' : t, s),
      s
     ),
     d = {};
    ((e, t) => {
     for (var s in t) i(e, s, { get: t[s], enumerable: !0 });
    })(d, { default: () => f }),
-    (e.exports = ((r = d), p(i({}, "__esModule", { value: !0 }), r)));
-   var c = ((e, t, s) => ((s = null != e ? o(a(e)) : {}), p(!t && e && e.__esModule ? s : i(s, "default", { value: e, enumerable: !0 }), e)))(s(75271)),
+    (e.exports = ((r = d), p(i({}, '__esModule', { value: !0 }), r)));
+   var c = ((e, t, s) => ((s = null != e ? o(a(e)) : {}), p(!t && e && e.__esModule ? s : i(s, 'default', { value: e, enumerable: !0 }), e)))(s(75271)),
     y = s(21981),
     m = s(39090);
    class f extends c.Component {
     constructor() {
      super(...arguments),
-      h(this, "callPlayer", y.callPlayer),
-      h(this, "duration", null),
-      h(this, "currentTime", null),
-      h(this, "fractionLoaded", null),
-      h(this, "mute", () => {
+      h(this, 'callPlayer', y.callPlayer),
+      h(this, 'duration', null),
+      h(this, 'currentTime', null),
+      h(this, 'fractionLoaded', null),
+      h(this, 'mute', () => {
        this.setVolume(0);
       }),
-      h(this, "unmute", () => {
+      h(this, 'unmute', () => {
        null !== this.props.volume && this.setVolume(this.props.volume);
       }),
-      h(this, "ref", (e) => {
+      h(this, 'ref', (e) => {
        this.iframe = e;
       });
     }
@@ -48,7 +48,7 @@
      this.props.onMount && this.props.onMount(this);
     }
     load(e, t) {
-     (0, y.getSDK)("https://w.soundcloud.com/player/api.js", "SC").then((s) => {
+     (0, y.getSDK)('https://w.soundcloud.com/player/api.js', 'SC').then((s) => {
       if (!this.iframe) return;
       const { PLAY: r, PLAY_PROGRESS: o, PAUSE: i, FINISH: l, ERROR: n } = s.Widget.Events;
       t ||
@@ -73,17 +73,17 @@
      });
     }
     play() {
-     this.callPlayer("play");
+     this.callPlayer('play');
     }
     pause() {
-     this.callPlayer("pause");
+     this.callPlayer('pause');
     }
     stop() {}
     seekTo(e, t = !0) {
-     this.callPlayer("seekTo", 1e3 * e), t || this.pause();
+     this.callPlayer('seekTo', 1e3 * e), t || this.pause();
     }
     setVolume(e) {
-     this.callPlayer("setVolume", 100 * e);
+     this.callPlayer('setVolume', 100 * e);
     }
     getDuration() {
      return this.duration;
@@ -96,11 +96,11 @@
     }
     render() {
      const { display: e } = this.props,
-      t = { width: "100%", height: "100%", display: e };
-     return c.default.createElement("iframe", { ref: this.ref, src: `https://w.soundcloud.com/player/?url=${encodeURIComponent(this.props.url)}`, style: t, frameBorder: 0, allow: "autoplay" });
+      t = { width: '100%', height: '100%', display: e };
+     return c.default.createElement('iframe', { ref: this.ref, src: `https://w.soundcloud.com/player/?url=${encodeURIComponent(this.props.url)}`, style: t, frameBorder: 0, allow: 'autoplay' });
     }
    }
-   h(f, "displayName", "SoundCloud"), h(f, "canPlay", m.canPlay.soundcloud), h(f, "loopOnEnded", !0);
+   h(f, 'displayName', 'SoundCloud'), h(f, 'canPlay', m.canPlay.soundcloud), h(f, 'loopOnEnded', !0);
   },
  },
 ]);

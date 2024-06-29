@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [19566],
  {
@@ -6,15 +6,15 @@
    function c(r) {
     var t,
      e,
-     n = "";
-    if ("string" == typeof r || "number" == typeof r) n += r;
-    else if ("object" == typeof r)
-     if (Array.isArray(r)) for (t = 0; t < r.length; t++) r[t] && (e = c(r[t])) && (n && (n += " "), (n += e));
-     else for (t in r) r[t] && (n && (n += " "), (n += t));
+     n = '';
+    if ('string' == typeof r || 'number' == typeof r) n += r;
+    else if ('object' == typeof r)
+     if (Array.isArray(r)) for (t = 0; t < r.length; t++) r[t] && (e = c(r[t])) && (n && (n += ' '), (n += e));
+     else for (t in r) r[t] && (n && (n += ' '), (n += t));
     return n;
    }
    function n() {
-    for (var r, t, e = 0, n = ""; e < arguments.length; ) (r = arguments[e++]) && (t = c(r)) && (n && (n += " "), (n += t));
+    for (var r, t, e = 0, n = ''; e < arguments.length; ) (r = arguments[e++]) && (t = c(r)) && (n && (n += ' '), (n += t));
     return n;
    }
    e.d(t, { c: () => n });
@@ -31,12 +31,12 @@
      const { json: r, variant: t } = this,
       e = r ? JSON.parse(r) : [];
      return (0, c.h)(
-      "nav",
-      { class: (0, n.c)("utrecht-breadcrumb-nav", "arrows" === t && "utrecht-breadcrumb-nav--arrows") },
+      'nav',
+      { class: (0, n.c)('utrecht-breadcrumb-nav', 'arrows' === t && 'utrecht-breadcrumb-nav--arrows') },
       (0, c.h)(
-       "ol",
-       { class: "utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol", itemscope: !0, itemtype: "https://schema.org/BreadcrumbList" },
-       e.map(({ href: r, title: t, current: e }, a) => (0, c.h)("li", { key: r, class: "utrecht-breadcrumb-nav__item", itemscope: !0, itemtype: "https://schema.org/ListItem", itemprop: "itemListElement" }, (0, c.h)("a", { class: (0, n.c)("utrecht-breadcrumb-nav__link", "utrecht-link", "utrecht-link--html-a", e && "utrecht-link--current"), href: r, "aria-current": e ? "location" : null, itemprop: "item" }, (0, c.h)("span", { class: "utrecht-breadcrumb-nav__text", itemprop: "name" }, t), (0, c.h)("meta", { itemprop: "position", content: a + 1 })))),
+       'ol',
+       { class: 'utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol', itemscope: !0, itemtype: 'https://schema.org/BreadcrumbList' },
+       e.map(({ href: r, title: t, current: e }, a) => (0, c.h)('li', { key: r, class: 'utrecht-breadcrumb-nav__item', itemscope: !0, itemtype: 'https://schema.org/ListItem', itemprop: 'itemListElement' }, (0, c.h)('a', { class: (0, n.c)('utrecht-breadcrumb-nav__link', 'utrecht-link', 'utrecht-link--html-a', e && 'utrecht-link--current'), href: r, 'aria-current': e ? 'location' : null, itemprop: 'item' }, (0, c.h)('span', { class: 'utrecht-breadcrumb-nav__text', itemprop: 'name' }, t), (0, c.h)('meta', { itemprop: 'position', content: a + 1 })))),
       ),
      );
     }

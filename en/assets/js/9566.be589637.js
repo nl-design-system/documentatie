@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 9566;
 exports.ids = [9566];
 exports.modules = {
@@ -10,15 +10,15 @@ exports.modules = {
   function r(e) {
    var t,
     f,
-    n = "";
-   if ("string" == typeof e || "number" == typeof e) n += e;
-   else if ("object" == typeof e)
-    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += " "), (n += f));
-    else for (t in e) e[t] && (n && (n += " "), (n += t));
+    n = '';
+   if ('string' == typeof e || 'number' == typeof e) n += e;
+   else if ('object' == typeof e)
+    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += ' '), (n += f));
+    else for (t in e) e[t] && (n && (n += ' '), (n += t));
    return n;
   }
   function clsx() {
-   for (var e, t, f = 0, n = ""; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += " "), (n += t));
+   for (var e, t, f = 0, n = ''; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += ' '), (n += t));
    return n;
   }
 
@@ -48,12 +48,12 @@ exports.modules = {
     const { json, variant } = this;
     const items = json ? JSON.parse(json) : [];
     return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-     "nav",
-     { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-breadcrumb-nav", variant === "arrows" && "utrecht-breadcrumb-nav--arrows") },
+     'nav',
+     { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-breadcrumb-nav', variant === 'arrows' && 'utrecht-breadcrumb-nav--arrows') },
      (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)(
-      "ol",
-      { class: "utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol", itemscope: true, itemtype: "https://schema.org/BreadcrumbList" },
-      items.map(({ href, title, current }, index) => (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("li", { key: href, class: "utrecht-breadcrumb-nav__item", itemscope: true, itemtype: "https://schema.org/ListItem", itemprop: "itemListElement" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("a", { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-breadcrumb-nav__link", "utrecht-link", "utrecht-link--html-a", current && "utrecht-link--current"), href: href, "aria-current": current ? "location" : null, itemprop: "item" }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("span", { class: "utrecht-breadcrumb-nav__text", itemprop: "name" }, title), (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("meta", { itemprop: "position", content: index + 1 })))),
+      'ol',
+      { class: 'utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol', itemscope: true, itemtype: 'https://schema.org/BreadcrumbList' },
+      items.map(({ href, title, current }, index) => (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('li', { key: href, class: 'utrecht-breadcrumb-nav__item', itemscope: true, itemtype: 'https://schema.org/ListItem', itemprop: 'itemListElement' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('a', { class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-breadcrumb-nav__link', 'utrecht-link', 'utrecht-link--html-a', current && 'utrecht-link--current'), href: href, 'aria-current': current ? 'location' : null, itemprop: 'item' }, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'utrecht-breadcrumb-nav__text', itemprop: 'name' }, title), (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('meta', { itemprop: 'position', content: index + 1 })))),
      ),
     );
    }

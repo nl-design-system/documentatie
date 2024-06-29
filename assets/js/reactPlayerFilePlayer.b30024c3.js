@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var FilePlayer_exports = {};
@@ -42,68 +42,68 @@ exports.modules = {
   var import_react = __toESM(__webpack_require__(75271));
   var import_utils = __webpack_require__(21981);
   var import_patterns = __webpack_require__(39090);
-  const HAS_NAVIGATOR = typeof navigator !== "undefined";
-  const IS_IPAD_PRO = HAS_NAVIGATOR && navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+  const HAS_NAVIGATOR = typeof navigator !== 'undefined';
+  const IS_IPAD_PRO = HAS_NAVIGATOR && navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
   const IS_IOS = HAS_NAVIGATOR && (/iPad|iPhone|iPod/.test(navigator.userAgent) || IS_IPAD_PRO) && !window.MSStream;
   const IS_SAFARI = HAS_NAVIGATOR && /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && !window.MSStream;
-  const HLS_SDK_URL = "https://cdn.jsdelivr.net/npm/hls.js@VERSION/dist/hls.min.js";
-  const HLS_GLOBAL = "Hls";
-  const DASH_SDK_URL = "https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js";
-  const DASH_GLOBAL = "dashjs";
-  const FLV_SDK_URL = "https://cdn.jsdelivr.net/npm/flv.js@VERSION/dist/flv.min.js";
-  const FLV_GLOBAL = "flvjs";
+  const HLS_SDK_URL = 'https://cdn.jsdelivr.net/npm/hls.js@VERSION/dist/hls.min.js';
+  const HLS_GLOBAL = 'Hls';
+  const DASH_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js';
+  const DASH_GLOBAL = 'dashjs';
+  const FLV_SDK_URL = 'https://cdn.jsdelivr.net/npm/flv.js@VERSION/dist/flv.min.js';
+  const FLV_GLOBAL = 'flvjs';
   const MATCH_DROPBOX_URL = /www\.dropbox\.com\/.+/;
   const MATCH_CLOUDFLARE_STREAM = /https:\/\/watch\.cloudflarestream\.com\/([a-z0-9]+)/;
-  const REPLACE_CLOUDFLARE_STREAM = "https://videodelivery.net/{id}/manifest/video.m3u8";
+  const REPLACE_CLOUDFLARE_STREAM = 'https://videodelivery.net/{id}/manifest/video.m3u8';
   class FilePlayer extends import_react.Component {
    constructor() {
     super(...arguments);
     // Proxy methods to prevent listener leaks
-    __publicField(this, "onReady", (...args) => this.props.onReady(...args));
-    __publicField(this, "onPlay", (...args) => this.props.onPlay(...args));
-    __publicField(this, "onBuffer", (...args) => this.props.onBuffer(...args));
-    __publicField(this, "onBufferEnd", (...args) => this.props.onBufferEnd(...args));
-    __publicField(this, "onPause", (...args) => this.props.onPause(...args));
-    __publicField(this, "onEnded", (...args) => this.props.onEnded(...args));
-    __publicField(this, "onError", (...args) => this.props.onError(...args));
-    __publicField(this, "onPlayBackRateChange", (event) => this.props.onPlaybackRateChange(event.target.playbackRate));
-    __publicField(this, "onEnablePIP", (...args) => this.props.onEnablePIP(...args));
-    __publicField(this, "onDisablePIP", (e) => {
+    __publicField(this, 'onReady', (...args) => this.props.onReady(...args));
+    __publicField(this, 'onPlay', (...args) => this.props.onPlay(...args));
+    __publicField(this, 'onBuffer', (...args) => this.props.onBuffer(...args));
+    __publicField(this, 'onBufferEnd', (...args) => this.props.onBufferEnd(...args));
+    __publicField(this, 'onPause', (...args) => this.props.onPause(...args));
+    __publicField(this, 'onEnded', (...args) => this.props.onEnded(...args));
+    __publicField(this, 'onError', (...args) => this.props.onError(...args));
+    __publicField(this, 'onPlayBackRateChange', (event) => this.props.onPlaybackRateChange(event.target.playbackRate));
+    __publicField(this, 'onEnablePIP', (...args) => this.props.onEnablePIP(...args));
+    __publicField(this, 'onDisablePIP', (e) => {
      const { onDisablePIP, playing } = this.props;
      onDisablePIP(e);
      if (playing) {
       this.play();
      }
     });
-    __publicField(this, "onPresentationModeChange", (e) => {
+    __publicField(this, 'onPresentationModeChange', (e) => {
      if (this.player && (0, import_utils.supportsWebKitPresentationMode)(this.player)) {
       const { webkitPresentationMode } = this.player;
-      if (webkitPresentationMode === "picture-in-picture") {
+      if (webkitPresentationMode === 'picture-in-picture') {
        this.onEnablePIP(e);
-      } else if (webkitPresentationMode === "inline") {
+      } else if (webkitPresentationMode === 'inline') {
        this.onDisablePIP(e);
       }
      }
     });
-    __publicField(this, "onSeek", (e) => {
+    __publicField(this, 'onSeek', (e) => {
      this.props.onSeek(e.target.currentTime);
     });
-    __publicField(this, "mute", () => {
+    __publicField(this, 'mute', () => {
      this.player.muted = true;
     });
-    __publicField(this, "unmute", () => {
+    __publicField(this, 'unmute', () => {
      this.player.muted = false;
     });
-    __publicField(this, "renderSourceElement", (source, index) => {
-     if (typeof source === "string") {
-      return /* @__PURE__ */ import_react.default.createElement("source", { key: index, src: source });
+    __publicField(this, 'renderSourceElement', (source, index) => {
+     if (typeof source === 'string') {
+      return /* @__PURE__ */ import_react.default.createElement('source', { key: index, src: source });
      }
-     return /* @__PURE__ */ import_react.default.createElement("source", { key: index, ...source });
+     return /* @__PURE__ */ import_react.default.createElement('source', { key: index, ...source });
     });
-    __publicField(this, "renderTrack", (track, index) => {
-     return /* @__PURE__ */ import_react.default.createElement("track", { key: index, ...track });
+    __publicField(this, 'renderTrack', (track, index) => {
+     return /* @__PURE__ */ import_react.default.createElement('track', { key: index, ...track });
     });
-    __publicField(this, "ref", (player) => {
+    __publicField(this, 'ref', (player) => {
      if (this.player) {
       this.prevPlayer = this.player;
      }
@@ -131,7 +131,7 @@ exports.modules = {
     }
    }
    componentWillUnmount() {
-    this.player.removeAttribute("src");
+    this.player.removeAttribute('src');
     this.removeListeners(this.player);
     if (this.hls) {
      this.hls.destroy();
@@ -139,41 +139,41 @@ exports.modules = {
    }
    addListeners(player) {
     const { url, playsinline } = this.props;
-    player.addEventListener("play", this.onPlay);
-    player.addEventListener("waiting", this.onBuffer);
-    player.addEventListener("playing", this.onBufferEnd);
-    player.addEventListener("pause", this.onPause);
-    player.addEventListener("seeked", this.onSeek);
-    player.addEventListener("ended", this.onEnded);
-    player.addEventListener("error", this.onError);
-    player.addEventListener("ratechange", this.onPlayBackRateChange);
-    player.addEventListener("enterpictureinpicture", this.onEnablePIP);
-    player.addEventListener("leavepictureinpicture", this.onDisablePIP);
-    player.addEventListener("webkitpresentationmodechanged", this.onPresentationModeChange);
+    player.addEventListener('play', this.onPlay);
+    player.addEventListener('waiting', this.onBuffer);
+    player.addEventListener('playing', this.onBufferEnd);
+    player.addEventListener('pause', this.onPause);
+    player.addEventListener('seeked', this.onSeek);
+    player.addEventListener('ended', this.onEnded);
+    player.addEventListener('error', this.onError);
+    player.addEventListener('ratechange', this.onPlayBackRateChange);
+    player.addEventListener('enterpictureinpicture', this.onEnablePIP);
+    player.addEventListener('leavepictureinpicture', this.onDisablePIP);
+    player.addEventListener('webkitpresentationmodechanged', this.onPresentationModeChange);
     if (!this.shouldUseHLS(url)) {
-     player.addEventListener("canplay", this.onReady);
+     player.addEventListener('canplay', this.onReady);
     }
     if (playsinline) {
-     player.setAttribute("playsinline", "");
-     player.setAttribute("webkit-playsinline", "");
-     player.setAttribute("x5-playsinline", "");
+     player.setAttribute('playsinline', '');
+     player.setAttribute('webkit-playsinline', '');
+     player.setAttribute('x5-playsinline', '');
     }
    }
    removeListeners(player, url) {
-    player.removeEventListener("canplay", this.onReady);
-    player.removeEventListener("play", this.onPlay);
-    player.removeEventListener("waiting", this.onBuffer);
-    player.removeEventListener("playing", this.onBufferEnd);
-    player.removeEventListener("pause", this.onPause);
-    player.removeEventListener("seeked", this.onSeek);
-    player.removeEventListener("ended", this.onEnded);
-    player.removeEventListener("error", this.onError);
-    player.removeEventListener("ratechange", this.onPlayBackRateChange);
-    player.removeEventListener("enterpictureinpicture", this.onEnablePIP);
-    player.removeEventListener("leavepictureinpicture", this.onDisablePIP);
-    player.removeEventListener("webkitpresentationmodechanged", this.onPresentationModeChange);
+    player.removeEventListener('canplay', this.onReady);
+    player.removeEventListener('play', this.onPlay);
+    player.removeEventListener('waiting', this.onBuffer);
+    player.removeEventListener('playing', this.onBufferEnd);
+    player.removeEventListener('pause', this.onPause);
+    player.removeEventListener('seeked', this.onSeek);
+    player.removeEventListener('ended', this.onEnded);
+    player.removeEventListener('error', this.onError);
+    player.removeEventListener('ratechange', this.onPlayBackRateChange);
+    player.removeEventListener('enterpictureinpicture', this.onEnablePIP);
+    player.removeEventListener('leavepictureinpicture', this.onDisablePIP);
+    player.removeEventListener('webkitpresentationmodechanged', this.onPresentationModeChange);
     if (!this.shouldUseHLS(url)) {
-     player.removeEventListener("canplay", this.onReady);
+     player.removeEventListener('canplay', this.onReady);
     }
    }
    shouldUseAudio(props) {
@@ -209,7 +209,7 @@ exports.modules = {
      this.dash.reset();
     }
     if (this.shouldUseHLS(url)) {
-     (0, import_utils.getSDK)(HLS_SDK_URL.replace("VERSION", hlsVersion), HLS_GLOBAL).then((Hls) => {
+     (0, import_utils.getSDK)(HLS_SDK_URL.replace('VERSION', hlsVersion), HLS_GLOBAL).then((Hls) => {
       this.hls = new Hls(hlsOptions);
       this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
        this.props.onReady();
@@ -219,7 +219,7 @@ exports.modules = {
       });
       if (MATCH_CLOUDFLARE_STREAM.test(url)) {
        const id = url.match(MATCH_CLOUDFLARE_STREAM)[1];
-       this.hls.loadSource(REPLACE_CLOUDFLARE_STREAM.replace("{id}", id));
+       this.hls.loadSource(REPLACE_CLOUDFLARE_STREAM.replace('{id}', id));
       } else {
        this.hls.loadSource(url);
       }
@@ -228,10 +228,10 @@ exports.modules = {
      });
     }
     if (this.shouldUseDASH(url)) {
-     (0, import_utils.getSDK)(DASH_SDK_URL.replace("VERSION", dashVersion), DASH_GLOBAL).then((dashjs) => {
+     (0, import_utils.getSDK)(DASH_SDK_URL.replace('VERSION', dashVersion), DASH_GLOBAL).then((dashjs) => {
       this.dash = dashjs.MediaPlayer().create();
       this.dash.initialize(this.player, url, this.props.playing);
-      this.dash.on("error", this.props.onError);
+      this.dash.on('error', this.props.onError);
       if (parseInt(dashVersion) < 3) {
        this.dash.getDebug().setLogToBrowserConsole(false);
       } else {
@@ -241,8 +241,8 @@ exports.modules = {
      });
     }
     if (this.shouldUseFLV(url)) {
-     (0, import_utils.getSDK)(FLV_SDK_URL.replace("VERSION", flvVersion), FLV_GLOBAL).then((flvjs) => {
-      this.flv = flvjs.createPlayer({ type: "flv", url });
+     (0, import_utils.getSDK)(FLV_SDK_URL.replace('VERSION', flvVersion), FLV_GLOBAL).then((flvjs) => {
+      this.flv = flvjs.createPlayer({ type: 'flv', url });
       this.flv.attachMediaElement(this.player);
       this.flv.on(flvjs.Events.ERROR, (e, data) => {
        this.props.onError(e, data, this.flv, flvjs);
@@ -271,7 +271,7 @@ exports.modules = {
     this.player.pause();
    }
    stop() {
-    this.player.removeAttribute("src");
+    this.player.removeAttribute('src');
     if (this.dash) {
      this.dash.reset();
     }
@@ -288,15 +288,15 @@ exports.modules = {
    enablePIP() {
     if (this.player.requestPictureInPicture && document.pictureInPictureElement !== this.player) {
      this.player.requestPictureInPicture();
-    } else if ((0, import_utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== "picture-in-picture") {
-     this.player.webkitSetPresentationMode("picture-in-picture");
+    } else if ((0, import_utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== 'picture-in-picture') {
+     this.player.webkitSetPresentationMode('picture-in-picture');
     }
    }
    disablePIP() {
     if (document.exitPictureInPicture && document.pictureInPictureElement === this.player) {
      document.exitPictureInPicture();
-    } else if ((0, import_utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== "inline") {
-     this.player.webkitSetPresentationMode("inline");
+    } else if ((0, import_utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== 'inline') {
+     this.player.webkitSetPresentationMode('inline');
     }
    }
    setPlaybackRate(rate) {
@@ -339,17 +339,17 @@ exports.modules = {
      return void 0;
     }
     if (MATCH_DROPBOX_URL.test(url)) {
-     return url.replace("www.dropbox.com", "dl.dropboxusercontent.com");
+     return url.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
     }
     return url;
    }
    render() {
     const { url, playing, loop, controls, muted, config, width, height } = this.props;
     const useAudio = this.shouldUseAudio(this.props);
-    const Element = useAudio ? "audio" : "video";
+    const Element = useAudio ? 'audio' : 'video';
     const style = {
-     width: width === "auto" ? width : "100%",
-     height: height === "auto" ? height : "100%",
+     width: width === 'auto' ? width : '100%',
+     height: height === 'auto' ? height : '100%',
     };
     return /* @__PURE__ */ import_react.default.createElement(
      Element,
@@ -357,7 +357,7 @@ exports.modules = {
       ref: this.ref,
       src: this.getSource(url),
       style,
-      preload: "auto",
+      preload: 'auto',
       autoPlay: playing || void 0,
       controls,
       muted,
@@ -369,8 +369,8 @@ exports.modules = {
     );
    }
   }
-  __publicField(FilePlayer, "displayName", "FilePlayer");
-  __publicField(FilePlayer, "canPlay", import_patterns.canPlay.file);
+  __publicField(FilePlayer, 'displayName', 'FilePlayer');
+  __publicField(FilePlayer, 'canPlay', import_patterns.canPlay.file);
 
   /***/
  },

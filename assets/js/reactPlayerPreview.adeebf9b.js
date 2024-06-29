@@ -13,7 +13,7 @@ exports.modules = {
    for (var name in all) __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
-   if ((from && typeof from === "object") || typeof from === "function") {
+   if ((from && typeof from === 'object') || typeof from === 'function') {
     for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
    }
    return to;
@@ -25,13 +25,13 @@ exports.modules = {
     // file that has been converted to a CommonJS file using a Babel-
     // compatible transform (i.e. "__esModule" has not been set), then set
     // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, 'default', { value: mod, enumerable: true }) : target,
     mod,
    )
   );
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, '__esModule', { value: true }), mod);
   var __publicField = (obj, key, value) => {
-   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+   __defNormalProp(obj, typeof key !== 'symbol' ? key + '' : key, value);
    return value;
   };
   var Preview_exports = {};
@@ -40,17 +40,17 @@ exports.modules = {
   });
   module.exports = __toCommonJS(Preview_exports);
   var import_react = __toESM(__webpack_require__(75271));
-  const ICON_SIZE = "64px";
+  const ICON_SIZE = '64px';
   const cache = {};
   class Preview extends import_react.Component {
    constructor() {
     super(...arguments);
-    __publicField(this, "mounted", false);
-    __publicField(this, "state", {
+    __publicField(this, 'mounted', false);
+    __publicField(this, 'state', {
      image: null,
     });
-    __publicField(this, "handleKeyPress", (e) => {
-     if (e.key === "Enter" || e.key === " ") {
+    __publicField(this, 'handleKeyPress', (e) => {
+     if (e.key === 'Enter' || e.key === ' ') {
       this.props.onClick();
      }
     });
@@ -72,7 +72,7 @@ exports.modules = {
     if (import_react.default.isValidElement(light)) {
      return;
     }
-    if (typeof light === "string") {
+    if (typeof light === 'string') {
      this.setState({ image: light });
      return;
     }
@@ -82,11 +82,11 @@ exports.modules = {
     }
     this.setState({ image: null });
     return window
-     .fetch(oEmbedUrl.replace("{url}", url))
+     .fetch(oEmbedUrl.replace('{url}', url))
      .then((response) => response.json())
      .then((data) => {
       if (data.thumbnail_url && this.mounted) {
-       const image = data.thumbnail_url.replace("height=100", "height=480").replace("-d_295x166", "-d_640");
+       const image = data.thumbnail_url.replace('height=100', 'height=480').replace('-d_295x166', '-d_640');
        this.setState({ image });
        cache[url] = image;
       }
@@ -97,45 +97,45 @@ exports.modules = {
     const { image } = this.state;
     const isElement = import_react.default.isValidElement(light);
     const flexCenter = {
-     display: "flex",
-     alignItems: "center",
-     justifyContent: "center",
+     display: 'flex',
+     alignItems: 'center',
+     justifyContent: 'center',
     };
     const styles = {
      preview: {
-      width: "100%",
-      height: "100%",
+      width: '100%',
+      height: '100%',
       backgroundImage: image && !isElement ? `url(${image})` : void 0,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      cursor: "pointer",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      cursor: 'pointer',
       ...flexCenter,
      },
      shadow: {
-      background: "radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)",
+      background: 'radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
       borderRadius: ICON_SIZE,
       width: ICON_SIZE,
       height: ICON_SIZE,
-      position: isElement ? "absolute" : void 0,
+      position: isElement ? 'absolute' : void 0,
       ...flexCenter,
      },
      playIcon: {
-      borderStyle: "solid",
-      borderWidth: "16px 0 16px 26px",
-      borderColor: "transparent transparent transparent white",
-      marginLeft: "7px",
+      borderStyle: 'solid',
+      borderWidth: '16px 0 16px 26px',
+      borderColor: 'transparent transparent transparent white',
+      marginLeft: '7px',
      },
     };
-    const defaultPlayIcon = /* @__PURE__ */ import_react.default.createElement("div", { style: styles.shadow, className: "react-player__shadow" }, /* @__PURE__ */ import_react.default.createElement("div", { style: styles.playIcon, className: "react-player__play-icon" }));
+    const defaultPlayIcon = /* @__PURE__ */ import_react.default.createElement('div', { style: styles.shadow, className: 'react-player__shadow' }, /* @__PURE__ */ import_react.default.createElement('div', { style: styles.playIcon, className: 'react-player__play-icon' }));
     return /* @__PURE__ */ import_react.default.createElement(
-     "div",
+     'div',
      {
       style: styles.preview,
-      className: "react-player__preview",
+      className: 'react-player__preview',
       onClick,
       tabIndex: previewTabIndex,
       onKeyPress: this.handleKeyPress,
-      ...(previewAriaLabel ? { "aria-label": previewAriaLabel } : {}),
+      ...(previewAriaLabel ? { 'aria-label': previewAriaLabel } : {}),
      },
      isElement ? light : null,
      playIcon || defaultPlayIcon,

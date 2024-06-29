@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 1701;
 exports.ids = [1701];
 exports.modules = {
@@ -10,15 +10,15 @@ exports.modules = {
   function r(e) {
    var t,
     f,
-    n = "";
-   if ("string" == typeof e || "number" == typeof e) n += e;
-   else if ("object" == typeof e)
-    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += " "), (n += f));
-    else for (t in e) e[t] && (n && (n += " "), (n += t));
+    n = '';
+   if ('string' == typeof e || 'number' == typeof e) n += e;
+   else if ('object' == typeof e)
+    if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += ' '), (n += f));
+    else for (t in e) e[t] && (n && (n += ' '), (n += t));
    return n;
   }
   function clsx() {
-   for (var e, t, f = 0, n = ""; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += " "), (n += t));
+   for (var e, t, f = 0, n = ''; f < arguments.length; ) (e = arguments[f++]) && (t = r(e)) && (n && (n += ' '), (n += t));
    return n;
   }
 
@@ -41,32 +41,32 @@ exports.modules = {
   const Textbox = class {
    constructor(hostRef) {
     (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.r)(this, hostRef);
-    this.utrechtBlur = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, "utrechtBlur", 7);
-    this.utrechtChange = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, "utrechtChange", 7);
-    this.utrechtFocus = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, "utrechtFocus", 7);
-    this.utrechtInput = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, "utrechtInput", 7);
-    this.autoComplete = "";
+    this.utrechtBlur = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, 'utrechtBlur', 7);
+    this.utrechtChange = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, 'utrechtChange', 7);
+    this.utrechtFocus = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, 'utrechtFocus', 7);
+    this.utrechtInput = (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.c)(this, 'utrechtInput', 7);
+    this.autoComplete = '';
     this.disabled = false;
     this.invalid = false;
-    this.min = "";
-    this.max = "";
-    this.pattern = "";
-    this.placeholder = "";
+    this.min = '';
+    this.max = '';
+    this.pattern = '';
+    this.placeholder = '';
     this.readOnly = false;
     this.required = false;
-    this.type = "";
-    this.value = "";
+    this.type = '';
+    this.value = '';
    }
    render() {
     const { autoComplete, disabled, invalid, min, max, pattern, placeholder, readOnly, required, type, value } = this;
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("input", {
-     class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)("utrecht-textbox", "utrecht-textbox--html-input", disabled && "utrecht-textbox--disabled", invalid && "utrecht-textbox--invalid", readOnly && "utrecht-textbox--readonly"),
-     type: type || "text",
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('input', {
+     class: (0, _clsx_m_9f200cc0_js__WEBPACK_IMPORTED_MODULE_1__.c)('utrecht-textbox', 'utrecht-textbox--html-input', disabled && 'utrecht-textbox--disabled', invalid && 'utrecht-textbox--invalid', readOnly && 'utrecht-textbox--readonly'),
+     type: type || 'text',
      autoComplete: autoComplete ? autoComplete : null,
      disabled: disabled,
-     dir: "auto",
-     min: typeof min === "number" ? String(min) : typeof min === "string" ? min : null,
-     max: typeof max === "number" ? String(max) : typeof max === "string" ? max : null,
+     dir: 'auto',
+     min: typeof min === 'number' ? String(min) : typeof min === 'string' ? min : null,
+     max: typeof max === 'number' ? String(max) : typeof max === 'string' ? max : null,
      pattern: pattern ? pattern : null,
      placeholder: placeholder || null,
      readonly: readOnly,

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [44781],
  {
@@ -6,15 +6,15 @@
    function n(e) {
     var t,
      r,
-     i = "";
-    if ("string" == typeof e || "number" == typeof e) i += e;
-    else if ("object" == typeof e)
-     if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (r = n(e[t])) && (i && (i += " "), (i += r));
-     else for (t in e) e[t] && (i && (i += " "), (i += t));
+     i = '';
+    if ('string' == typeof e || 'number' == typeof e) i += e;
+    else if ('object' == typeof e)
+     if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (r = n(e[t])) && (i && (i += ' '), (i += r));
+     else for (t in e) e[t] && (i && (i += ' '), (i += t));
     return i;
    }
    function i() {
-    for (var e, t, r = 0, i = ""; r < arguments.length; ) (e = arguments[r++]) && (t = n(e)) && (i && (i += " "), (i += t));
+    for (var e, t, r = 0, i = ''; r < arguments.length; ) (e = arguments[r++]) && (t = n(e)) && (i && (i += ' '), (i += t));
     return i;
    }
    r.d(t, { c: () => i });
@@ -30,24 +30,24 @@
     render() {
      const e = JSON.parse(this.json);
      return (0, n.h)(
-      "nav",
-      { class: "utrecht-sidenav" },
+      'nav',
+      { class: 'utrecht-sidenav' },
       (0, n.h)(
-       "ul",
-       { class: "utrecht-sidenav__list" },
+       'ul',
+       { class: 'utrecht-sidenav__list' },
        e.map(({ href: e, title: t, current: r, focus: c, children: s, sibling: a, haschildren: o }, l, d) =>
         (0, n.h)(
-         "li",
-         { key: e, class: (0, i.c)("utrecht-sidenav__item", l + 1 === d.length && "utrecht-sidenav__item--last", a && "utrecht-sidenav__item--sibling", o && "utrecht-sidenav__item--parent") },
-         (0, n.h)("a", { class: (0, i.c)("utrecht-sidenav__link", r && "utrecht-sidenav__link--current", c && "utrecht-sidenav__link--focus", a && "utrecht-sidenav__link--sibling", o && "utrecht-sidenav__link--parent"), href: e }, (0, n.h)("div", { class: (0, i.c)("utrecht-sidenav__marker", r && "utrecht-sidenav__marker--current") }), (0, n.h)("div", { class: (0, i.c)("utrecht-sidenav__connection", o && "utrecht-sidenav__connection--parent", a && "utrecht-sidenav__connection--sibling", l + 1 === d.length && "utrecht-sidenav__connection--last") }), t),
+         'li',
+         { key: e, class: (0, i.c)('utrecht-sidenav__item', l + 1 === d.length && 'utrecht-sidenav__item--last', a && 'utrecht-sidenav__item--sibling', o && 'utrecht-sidenav__item--parent') },
+         (0, n.h)('a', { class: (0, i.c)('utrecht-sidenav__link', r && 'utrecht-sidenav__link--current', c && 'utrecht-sidenav__link--focus', a && 'utrecht-sidenav__link--sibling', o && 'utrecht-sidenav__link--parent'), href: e }, (0, n.h)('div', { class: (0, i.c)('utrecht-sidenav__marker', r && 'utrecht-sidenav__marker--current') }), (0, n.h)('div', { class: (0, i.c)('utrecht-sidenav__connection', o && 'utrecht-sidenav__connection--parent', a && 'utrecht-sidenav__connection--sibling', l + 1 === d.length && 'utrecht-sidenav__connection--last') }), t),
          s
           ? (0, n.h)(
-             "ul",
-             { class: "utrecht-sidenav__list utrecht-sidenav__list--child" },
-             s.map(({ href: e, title: t, current: r, focus: c }) => (0, n.h)("li", { key: e, class: "utrecht-sidenav__item utrecht-sidenav__item--child" }, (0, n.h)("a", { class: (0, i.c)("utrecht-sidenav__link", "utrecht-sidenav__link--child", r && "utrecht-sidenav__link--current", r && "utrecht-sidenav__link--current-child", c && "utrecht-sidenav__link--focus"), href: e }, (0, n.h)("div", { class: (0, i.c)("utrecht-sidenav__marker", "utrecht-sidenav__marker--child", r && "utrecht-sidenav__marker--current", r && "utrecht-sidenav__marker--current-child") }), t))),
+             'ul',
+             { class: 'utrecht-sidenav__list utrecht-sidenav__list--child' },
+             s.map(({ href: e, title: t, current: r, focus: c }) => (0, n.h)('li', { key: e, class: 'utrecht-sidenav__item utrecht-sidenav__item--child' }, (0, n.h)('a', { class: (0, i.c)('utrecht-sidenav__link', 'utrecht-sidenav__link--child', r && 'utrecht-sidenav__link--current', r && 'utrecht-sidenav__link--current-child', c && 'utrecht-sidenav__link--focus'), href: e }, (0, n.h)('div', { class: (0, i.c)('utrecht-sidenav__marker', 'utrecht-sidenav__marker--child', r && 'utrecht-sidenav__marker--current', r && 'utrecht-sidenav__marker--current-child') }), t))),
             )
-          : "",
-         (0, n.h)("div", { class: "utrecht-sidenav__item-separator" }),
+          : '',
+         (0, n.h)('div', { class: 'utrecht-sidenav__item-separator' }),
         ),
        ),
       ),

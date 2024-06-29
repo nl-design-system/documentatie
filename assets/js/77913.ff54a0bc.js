@@ -2,17 +2,17 @@
  [77913],
  {
   12454: (e) => {
-   "use strict";
+   'use strict';
    var t = function (e) {
     return (
      (function (e) {
-      return !!e && "object" == typeof e;
+      return !!e && 'object' == typeof e;
      })(e) &&
      !(function (e) {
       var t = Object.prototype.toString.call(e);
       return (
-       "[object RegExp]" === t ||
-       "[object Date]" === t ||
+       '[object RegExp]' === t ||
+       '[object Date]' === t ||
        (function (e) {
         return e.$$typeof === r;
        })(e)
@@ -20,7 +20,7 @@
      })(e)
     );
    };
-   var r = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
+   var r = 'function' == typeof Symbol && Symbol.for ? Symbol.for('react.element') : 60103;
    function n(e, t) {
     return !1 !== t.clone && t.isMergeableObject(e) ? s(((r = e), Array.isArray(r) ? [] : {}), e, t) : e;
     var r;
@@ -63,7 +63,7 @@
         ? (a[o] = (function (e, t) {
            if (!t.customMerge) return s;
            var r = t.customMerge(e);
-           return "function" == typeof r ? r : s;
+           return 'function' == typeof r ? r : s;
           })(o, r)(e[o], t[o], r))
         : (a[o] = n(t[o], r)));
      }),
@@ -76,7 +76,7 @@
     return i === Array.isArray(e) ? (i ? o.arrayMerge(e, r, o) : l(e, r, o)) : n(r, o);
    }
    s.all = function (e, t) {
-    if (!Array.isArray(e)) throw new Error("first argument should be an array");
+    if (!Array.isArray(e)) throw new Error('first argument should be an array');
     return e.reduce(function (e, r) {
      return s(e, r, t);
     }, {});
@@ -90,41 +90,41 @@
      (this.onerror = this.onload = null), t(null, e);
     }),
      (e.onerror = function () {
-      (this.onerror = this.onload = null), t(new Error("Failed to load " + this.src), e);
+      (this.onerror = this.onload = null), t(new Error('Failed to load ' + this.src), e);
      });
    }
    function r(e, t) {
     e.onreadystatechange = function () {
-     ("complete" != this.readyState && "loaded" != this.readyState) || ((this.onreadystatechange = null), t(null, e));
+     ('complete' != this.readyState && 'loaded' != this.readyState) || ((this.onreadystatechange = null), t(null, e));
     };
    }
    e.exports = function (e, n, a) {
-    var o = document.head || document.getElementsByTagName("head")[0],
-     i = document.createElement("script");
-    "function" == typeof n && ((a = n), (n = {})),
+    var o = document.head || document.getElementsByTagName('head')[0],
+     i = document.createElement('script');
+    'function' == typeof n && ((a = n), (n = {})),
      (n = n || {}),
      (a = a || function () {}),
-     (i.type = n.type || "text/javascript"),
-     (i.charset = n.charset || "utf8"),
-     (i.async = !("async" in n) || !!n.async),
+     (i.type = n.type || 'text/javascript'),
+     (i.charset = n.charset || 'utf8'),
+     (i.async = !('async' in n) || !!n.async),
      (i.src = e),
      n.attrs &&
       (function (e, t) {
        for (var r in t) e.setAttribute(r, t[r]);
       })(i, n.attrs),
-     n.text && (i.text = "" + n.text),
-     ("onload" in i ? t : r)(i, a),
+     n.text && (i.text = '' + n.text),
+     ('onload' in i ? t : r)(i, a),
      i.onload || t(i, a),
      o.appendChild(i);
    };
   },
   57699: (e, t, r) => {
-   "use strict";
+   'use strict';
    r.r(t), r.d(t, { default: () => o });
    var n =
     Number.isNaN ||
     function (e) {
-     return "number" == typeof e && e != e;
+     return 'number' == typeof e && e != e;
     };
    function a(e, t) {
     if (e.length !== t.length) return !1;
@@ -153,21 +153,21 @@
     s = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     c = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
      return e;
     },
-    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, "default", { value: e, enumerable: !0 }), e)),
+    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, 'default', { value: e, enumerable: !0 }), e)),
     p = (e, t, r) => (
      ((e, t, r) => {
       t in e ? o(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : (e[t] = r);
-     })(e, "symbol" != typeof t ? t + "" : t, r),
+     })(e, 'symbol' != typeof t ? t + '' : t, r),
      r
     ),
     y = {};
    ((e, t) => {
     for (var r in t) o(e, r, { get: t[r], enumerable: !0 });
    })(y, { default: () => P }),
-    (e.exports = ((n = y), c(o({}, "__esModule", { value: !0 }), n)));
+    (e.exports = ((n = y), c(o({}, '__esModule', { value: !0 }), n)));
    var h = d(r(75271)),
     f = d(r(15154)),
     m = r(975),
@@ -175,19 +175,19 @@
    class P extends h.Component {
     constructor() {
      super(...arguments),
-      p(this, "mounted", !1),
-      p(this, "isReady", !1),
-      p(this, "isPlaying", !1),
-      p(this, "isLoading", !0),
-      p(this, "loadOnReady", null),
-      p(this, "startOnPlay", !0),
-      p(this, "seekOnPlay", null),
-      p(this, "onDurationCalled", !1),
-      p(this, "handlePlayerMount", (e) => {
+      p(this, 'mounted', !1),
+      p(this, 'isReady', !1),
+      p(this, 'isPlaying', !1),
+      p(this, 'isLoading', !0),
+      p(this, 'loadOnReady', null),
+      p(this, 'startOnPlay', !0),
+      p(this, 'seekOnPlay', null),
+      p(this, 'onDurationCalled', !1),
+      p(this, 'handlePlayerMount', (e) => {
        this.player || ((this.player = e), this.player.load(this.props.url)), this.progress();
       }),
-      p(this, "getInternalPlayer", (e) => (this.player ? this.player[e] : null)),
-      p(this, "progress", () => {
+      p(this, 'getInternalPlayer', (e) => (this.player ? this.player[e] : null)),
+      p(this, 'progress', () => {
        if (this.props.url && this.player && this.isReady) {
         const e = this.getCurrentTime() || 0,
          t = this.getSecondsLoaded(),
@@ -199,33 +199,33 @@
        }
        this.progressTimeout = setTimeout(this.progress, this.props.progressFrequency || this.props.progressInterval);
       }),
-      p(this, "handleReady", () => {
+      p(this, 'handleReady', () => {
        if (!this.mounted) return;
        (this.isReady = !0), (this.isLoading = !1);
        const { onReady: e, playing: t, volume: r, muted: n } = this.props;
        e(), n || null === r || this.player.setVolume(r), this.loadOnReady ? (this.player.load(this.loadOnReady, !0), (this.loadOnReady = null)) : t && this.player.play(), this.handleDurationCheck();
       }),
-      p(this, "handlePlay", () => {
+      p(this, 'handlePlay', () => {
        (this.isPlaying = !0), (this.isLoading = !1);
        const { onStart: e, onPlay: t, playbackRate: r } = this.props;
        this.startOnPlay && (this.player.setPlaybackRate && 1 !== r && this.player.setPlaybackRate(r), e(), (this.startOnPlay = !1)), t(), this.seekOnPlay && (this.seekTo(this.seekOnPlay), (this.seekOnPlay = null)), this.handleDurationCheck();
       }),
-      p(this, "handlePause", (e) => {
+      p(this, 'handlePause', (e) => {
        (this.isPlaying = !1), this.isLoading || this.props.onPause(e);
       }),
-      p(this, "handleEnded", () => {
+      p(this, 'handleEnded', () => {
        const { activePlayer: e, loop: t, onEnded: r } = this.props;
        e.loopOnEnded && t && this.seekTo(0), t || ((this.isPlaying = !1), r());
       }),
-      p(this, "handleError", (...e) => {
+      p(this, 'handleError', (...e) => {
        (this.isLoading = !1), this.props.onError(...e);
       }),
-      p(this, "handleDurationCheck", () => {
+      p(this, 'handleDurationCheck', () => {
        clearTimeout(this.durationCheckTimeout);
        const e = this.getDuration();
        e ? this.onDurationCalled || (this.props.onDuration(e), (this.onDurationCalled = !0)) : (this.durationCheckTimeout = setTimeout(this.handleDurationCheck, 100));
       }),
-      p(this, "handleLoaded", () => {
+      p(this, 'handleLoaded', () => {
        this.isLoading = !1;
       });
     }
@@ -262,9 +262,9 @@
         this.seekOnPlay = null;
        }, 5e3))
       );
-     if (t ? "fraction" === t : e > 0 && e < 1) {
+     if (t ? 'fraction' === t : e > 0 && e < 1) {
       const t = this.player.getDuration();
-      return t ? void this.player.seekTo(t * e, r) : void console.warn("ReactPlayer: could not seek using fraction \u2013\xa0duration not yet available");
+      return t ? void this.player.seekTo(t * e, r) : void console.warn('ReactPlayer: could not seek using fraction \u2013\xa0duration not yet available');
      }
      this.player.seekTo(e, r);
     }
@@ -273,7 +273,7 @@
      return e ? h.default.createElement(e, { ...this.props, onMount: this.handlePlayerMount, onReady: this.handleReady, onPlay: this.handlePlay, onPause: this.handlePause, onEnded: this.handleEnded, onLoaded: this.handleLoaded, onError: this.handleError }) : null;
     }
    }
-   p(P, "displayName", "Player"), p(P, "propTypes", m.propTypes), p(P, "defaultProps", m.defaultProps);
+   p(P, 'displayName', 'Player'), p(P, 'propTypes', m.propTypes), p(P, 'defaultProps', m.defaultProps);
   },
   42696: (e, t, r) => {
    var n,
@@ -284,21 +284,21 @@
     s = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     c = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
      return e;
     },
-    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, "default", { value: e, enumerable: !0 }), e)),
+    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, 'default', { value: e, enumerable: !0 }), e)),
     p = (e, t, r) => (
      ((e, t, r) => {
       t in e ? o(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : (e[t] = r);
-     })(e, "symbol" != typeof t ? t + "" : t, r),
+     })(e, 'symbol' != typeof t ? t + '' : t, r),
      r
     ),
     y = {};
    ((e, t) => {
     for (var r in t) o(e, r, { get: t[r], enumerable: !0 });
    })(y, { createReactPlayer: () => S }),
-    (e.exports = ((n = y), c(o({}, "__esModule", { value: !0 }), n)));
+    (e.exports = ((n = y), c(o({}, '__esModule', { value: !0 }), n)));
    var h = d(r(75271)),
     f = d(r(12454)),
     m = d(r(57699)),
@@ -307,7 +307,7 @@
     g = r(21981),
     w = d(r(28228));
    const v = (0, g.lazy)(() => r.e(87664).then(r.t.bind(r, 17310, 23))),
-    O = "undefined" != typeof window && window.document && "undefined" != typeof document,
+    O = 'undefined' != typeof window && window.document && 'undefined' != typeof document,
     k = void 0 !== r.g && r.g.window && r.g.window.document,
     _ = Object.keys(P.propTypes),
     T = O || k ? h.Suspense : () => null,
@@ -318,8 +318,8 @@
       (r = class extends h.Component {
        constructor() {
         super(...arguments),
-         p(this, "state", { showPreview: !!this.props.light }),
-         p(this, "references", {
+         p(this, 'state', { showPreview: !!this.props.light }),
+         p(this, 'references', {
           wrapper: (e) => {
            this.wrapper = e;
           },
@@ -327,26 +327,26 @@
            this.player = e;
           },
          }),
-         p(this, "handleClickPreview", (e) => {
+         p(this, 'handleClickPreview', (e) => {
           this.setState({ showPreview: !1 }), this.props.onClickPreview(e);
          }),
-         p(this, "showPreview", () => {
+         p(this, 'showPreview', () => {
           this.setState({ showPreview: !0 });
          }),
-         p(this, "getDuration", () => (this.player ? this.player.getDuration() : null)),
-         p(this, "getCurrentTime", () => (this.player ? this.player.getCurrentTime() : null)),
-         p(this, "getSecondsLoaded", () => (this.player ? this.player.getSecondsLoaded() : null)),
-         p(this, "getInternalPlayer", (e = "player") => (this.player ? this.player.getInternalPlayer(e) : null)),
-         p(this, "seekTo", (e, t, r) => {
+         p(this, 'getDuration', () => (this.player ? this.player.getDuration() : null)),
+         p(this, 'getCurrentTime', () => (this.player ? this.player.getCurrentTime() : null)),
+         p(this, 'getSecondsLoaded', () => (this.player ? this.player.getSecondsLoaded() : null)),
+         p(this, 'getInternalPlayer', (e = 'player') => (this.player ? this.player.getInternalPlayer(e) : null)),
+         p(this, 'seekTo', (e, t, r) => {
           if (!this.player) return null;
           this.player.seekTo(e, t, r);
          }),
-         p(this, "handleReady", () => {
+         p(this, 'handleReady', () => {
           this.props.onReady(this);
          }),
          p(
           this,
-          "getActivePlayer",
+          'getActivePlayer',
           (0, m.default)((r) => {
            for (const t of [...j, ...e]) if (t.canPlay(r)) return t;
            return t || null;
@@ -354,7 +354,7 @@
          ),
          p(
           this,
-          "getConfig",
+          'getConfig',
           (0, m.default)((e, t) => {
            const { config: r } = this.props;
            return f.default.all([P.defaultProps.config, P.defaultProps.config[t] || {}, r, r[t] || {}]);
@@ -362,10 +362,10 @@
          ),
          p(
           this,
-          "getAttributes",
+          'getAttributes',
           (0, m.default)((e) => (0, g.omit)(this.props, _)),
          ),
-         p(this, "renderActivePlayer", (e) => {
+         p(this, 'renderActivePlayer', (e) => {
           if (!e) return null;
           const t = this.getActivePlayer(e);
           if (!t) return null;
@@ -389,24 +389,24 @@
         const { url: e, style: t, width: r, height: n, fallback: a, wrapper: o } = this.props,
          { showPreview: i } = this.state,
          l = this.getAttributes(e),
-         s = "string" == typeof o ? this.references.wrapper : void 0;
+         s = 'string' == typeof o ? this.references.wrapper : void 0;
         return h.default.createElement(o, { ref: s, style: { ...t, width: r, height: n }, ...l }, h.default.createElement(T, { fallback: a }, i ? this.renderPreview(e) : this.renderActivePlayer(e)));
        }
       }),
-      p(r, "displayName", "ReactPlayer"),
-      p(r, "propTypes", P.propTypes),
-      p(r, "defaultProps", P.defaultProps),
-      p(r, "addCustomPlayer", (e) => {
+      p(r, 'displayName', 'ReactPlayer'),
+      p(r, 'propTypes', P.propTypes),
+      p(r, 'defaultProps', P.defaultProps),
+      p(r, 'addCustomPlayer', (e) => {
        j.push(e);
       }),
-      p(r, "removeCustomPlayers", () => {
+      p(r, 'removeCustomPlayers', () => {
        j.length = 0;
       }),
-      p(r, "canPlay", (t) => {
+      p(r, 'canPlay', (t) => {
        for (const r of [...j, ...e]) if (r.canPlay(t)) return !0;
        return !1;
       }),
-      p(r, "canEnablePIP", (t) => {
+      p(r, 'canEnablePIP', (t) => {
        for (const r of [...j, ...e]) if (r.canEnablePIP && r.canEnablePIP(t)) return !0;
        return !1;
       }),
@@ -423,15 +423,15 @@
     s = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     c = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
      return e;
     },
     d = {};
    ((e, t) => {
     for (var r in t) o(e, r, { get: t[r], enumerable: !0 });
    })(d, { default: () => f }),
-    (e.exports = ((n = d), c(o({}, "__esModule", { value: !0 }), n)));
-   var p = ((e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, "default", { value: e, enumerable: !0 }), e)))(r(9665)),
+    (e.exports = ((n = d), c(o({}, '__esModule', { value: !0 }), n)));
+   var p = ((e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, 'default', { value: e, enumerable: !0 }), e)))(r(9665)),
     y = r(42696);
    const h = p.default[p.default.length - 1];
    var f = (0, y.createReactPlayer)(p.default, h);
@@ -449,9 +449,9 @@
     (e.exports =
      ((n = s),
      ((e, t, r, n) => {
-      if ((t && "object" == typeof t) || "function" == typeof t) for (let s of i(t)) l.call(e, s) || s === r || a(e, s, { get: () => t[s], enumerable: !(n = o(t, s)) || n.enumerable });
+      if ((t && 'object' == typeof t) || 'function' == typeof t) for (let s of i(t)) l.call(e, s) || s === r || a(e, s, { get: () => t[s], enumerable: !(n = o(t, s)) || n.enumerable });
       return e;
-     })(a({}, "__esModule", { value: !0 }), n)));
+     })(a({}, '__esModule', { value: !0 }), n)));
    var u = r(21981);
    const c = /(?:youtu\.be\/|youtube(?:-nocookie|education)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=|shorts\/|live\/))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//,
     d = /(?:soundcloud\.com|snd\.sc)\/[^.]+$/,
@@ -475,7 +475,7 @@
     C = (e) => {
      if (e instanceof Array) {
       for (const t of e) {
-       if ("string" == typeof t && C(t)) return !0;
+       if ('string' == typeof t && C(t)) return !0;
        if (C(t.src)) return !0;
       }
       return !1;
@@ -492,30 +492,30 @@
     i = Object.getOwnPropertyNames,
     l = (Object.getPrototypeOf, Object.prototype.hasOwnProperty),
     s = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let s of i(t)) l.call(e, s) || s === r || a(e, s, { get: () => t[s], enumerable: !(n = o(t, s)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let s of i(t)) l.call(e, s) || s === r || a(e, s, { get: () => t[s], enumerable: !(n = o(t, s)) || n.enumerable });
      return e;
     },
     u = {};
    ((e, t) => {
     for (var r in t) a(e, r, { get: t[r], enumerable: !0 });
    })(u, { default: () => p }),
-    (e.exports = ((n = u), s(a({}, "__esModule", { value: !0 }), n)));
+    (e.exports = ((n = u), s(a({}, '__esModule', { value: !0 }), n)));
    var c = r(21981),
     d = r(39090),
     p = [
-     { key: "youtube", name: "YouTube", canPlay: d.canPlay.youtube, lazyPlayer: (0, c.lazy)(() => r.e(64439).then(r.t.bind(r, 68559, 23))) },
-     { key: "soundcloud", name: "SoundCloud", canPlay: d.canPlay.soundcloud, lazyPlayer: (0, c.lazy)(() => r.e(6125).then(r.t.bind(r, 22814, 23))) },
-     { key: "vimeo", name: "Vimeo", canPlay: d.canPlay.vimeo, lazyPlayer: (0, c.lazy)(() => r.e(73743).then(r.t.bind(r, 1378, 23))) },
-     { key: "mux", name: "Mux", canPlay: d.canPlay.mux, lazyPlayer: (0, c.lazy)(() => r.e(64258).then(r.t.bind(r, 49495, 23))) },
-     { key: "facebook", name: "Facebook", canPlay: d.canPlay.facebook, lazyPlayer: (0, c.lazy)(() => r.e(12121).then(r.t.bind(r, 49263, 23))) },
-     { key: "streamable", name: "Streamable", canPlay: d.canPlay.streamable, lazyPlayer: (0, c.lazy)(() => r.e(52546).then(r.t.bind(r, 61906, 23))) },
-     { key: "wistia", name: "Wistia", canPlay: d.canPlay.wistia, lazyPlayer: (0, c.lazy)(() => r.e(88055).then(r.t.bind(r, 28316, 23))) },
-     { key: "twitch", name: "Twitch", canPlay: d.canPlay.twitch, lazyPlayer: (0, c.lazy)(() => r.e(86216).then(r.t.bind(r, 85309, 23))) },
-     { key: "dailymotion", name: "DailyMotion", canPlay: d.canPlay.dailymotion, lazyPlayer: (0, c.lazy)(() => r.e(47596).then(r.t.bind(r, 33700, 23))) },
-     { key: "mixcloud", name: "Mixcloud", canPlay: d.canPlay.mixcloud, lazyPlayer: (0, c.lazy)(() => r.e(84667).then(r.t.bind(r, 13710, 23))) },
-     { key: "vidyard", name: "Vidyard", canPlay: d.canPlay.vidyard, lazyPlayer: (0, c.lazy)(() => r.e(68888).then(r.t.bind(r, 57267, 23))) },
-     { key: "kaltura", name: "Kaltura", canPlay: d.canPlay.kaltura, lazyPlayer: (0, c.lazy)(() => r.e(10261).then(r.t.bind(r, 74643, 23))) },
-     { key: "file", name: "FilePlayer", canPlay: d.canPlay.file, canEnablePIP: (e) => d.canPlay.file(e) && (document.pictureInPictureEnabled || (0, c.supportsWebKitPresentationMode)()) && !d.AUDIO_EXTENSIONS.test(e), lazyPlayer: (0, c.lazy)(() => r.e(26011).then(r.t.bind(r, 94483, 23))) },
+     { key: 'youtube', name: 'YouTube', canPlay: d.canPlay.youtube, lazyPlayer: (0, c.lazy)(() => r.e(64439).then(r.t.bind(r, 68559, 23))) },
+     { key: 'soundcloud', name: 'SoundCloud', canPlay: d.canPlay.soundcloud, lazyPlayer: (0, c.lazy)(() => r.e(6125).then(r.t.bind(r, 22814, 23))) },
+     { key: 'vimeo', name: 'Vimeo', canPlay: d.canPlay.vimeo, lazyPlayer: (0, c.lazy)(() => r.e(73743).then(r.t.bind(r, 1378, 23))) },
+     { key: 'mux', name: 'Mux', canPlay: d.canPlay.mux, lazyPlayer: (0, c.lazy)(() => r.e(64258).then(r.t.bind(r, 49495, 23))) },
+     { key: 'facebook', name: 'Facebook', canPlay: d.canPlay.facebook, lazyPlayer: (0, c.lazy)(() => r.e(12121).then(r.t.bind(r, 49263, 23))) },
+     { key: 'streamable', name: 'Streamable', canPlay: d.canPlay.streamable, lazyPlayer: (0, c.lazy)(() => r.e(52546).then(r.t.bind(r, 61906, 23))) },
+     { key: 'wistia', name: 'Wistia', canPlay: d.canPlay.wistia, lazyPlayer: (0, c.lazy)(() => r.e(88055).then(r.t.bind(r, 28316, 23))) },
+     { key: 'twitch', name: 'Twitch', canPlay: d.canPlay.twitch, lazyPlayer: (0, c.lazy)(() => r.e(86216).then(r.t.bind(r, 85309, 23))) },
+     { key: 'dailymotion', name: 'DailyMotion', canPlay: d.canPlay.dailymotion, lazyPlayer: (0, c.lazy)(() => r.e(47596).then(r.t.bind(r, 33700, 23))) },
+     { key: 'mixcloud', name: 'Mixcloud', canPlay: d.canPlay.mixcloud, lazyPlayer: (0, c.lazy)(() => r.e(84667).then(r.t.bind(r, 13710, 23))) },
+     { key: 'vidyard', name: 'Vidyard', canPlay: d.canPlay.vidyard, lazyPlayer: (0, c.lazy)(() => r.e(68888).then(r.t.bind(r, 57267, 23))) },
+     { key: 'kaltura', name: 'Kaltura', canPlay: d.canPlay.kaltura, lazyPlayer: (0, c.lazy)(() => r.e(10261).then(r.t.bind(r, 74643, 23))) },
+     { key: 'file', name: 'FilePlayer', canPlay: d.canPlay.file, canEnablePIP: (e) => d.canPlay.file(e) && (document.pictureInPictureEnabled || (0, c.supportsWebKitPresentationMode)()) && !d.AUDIO_EXTENSIONS.test(e), lazyPlayer: (0, c.lazy)(() => r.e(26011).then(r.t.bind(r, 94483, 23))) },
     ];
   },
   975: (e, t, r) => {
@@ -527,19 +527,19 @@
     s = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     c = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
      return e;
     },
     d = {};
    ((e, t) => {
     for (var r in t) o(e, r, { get: t[r], enumerable: !0 });
    })(d, { defaultProps: () => _, propTypes: () => O }),
-    (e.exports = ((n = d), c(o({}, "__esModule", { value: !0 }), n)));
-   var p = ((e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, "default", { value: e, enumerable: !0 }), e)))(r(40507));
+    (e.exports = ((n = d), c(o({}, '__esModule', { value: !0 }), n)));
+   var p = ((e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, 'default', { value: e, enumerable: !0 }), e)))(r(40507));
    const { string: y, bool: h, number: f, array: m, oneOfType: b, shape: P, object: g, func: w, node: v } = p.default,
     O = { url: b([y, m, g]), playing: h, loop: h, controls: h, volume: f, muted: h, playbackRate: f, width: b([y, f]), height: b([y, f]), style: g, progressInterval: f, playsinline: h, pip: h, stopOnUnmount: h, light: b([h, y, g]), playIcon: v, previewTabIndex: f, previewAriaLabel: y, fallback: v, oEmbedUrl: y, wrapper: b([y, w, P({ render: w.isRequired })]), config: P({ soundcloud: P({ options: g }), youtube: P({ playerVars: g, embedOptions: g, onUnstarted: w }), facebook: P({ appId: y, version: y, playerId: y, attributes: g }), dailymotion: P({ params: g }), vimeo: P({ playerOptions: g, title: y }), mux: P({ attributes: g, version: y }), file: P({ attributes: g, tracks: m, forceVideo: h, forceAudio: h, forceHLS: h, forceSafariHLS: h, forceDisableHls: h, forceDASH: h, forceFLV: h, hlsOptions: g, hlsVersion: y, dashVersion: y, flvVersion: y }), wistia: P({ options: g, playerId: y, customControls: m }), mixcloud: P({ options: g }), twitch: P({ options: g, playerId: y }), vidyard: P({ options: g }) }), onReady: w, onStart: w, onPlay: w, onPause: w, onBuffer: w, onBufferEnd: w, onEnded: w, onError: w, onDuration: w, onSeek: w, onPlaybackRateChange: w, onPlaybackQualityChange: w, onProgress: w, onClickPreview: w, onEnablePIP: w, onDisablePIP: w },
     k = () => {},
-    _ = { playing: !1, loop: !1, controls: !1, volume: null, muted: !1, playbackRate: 1, width: "640px", height: "360px", style: {}, progressInterval: 1e3, playsinline: !1, pip: !1, stopOnUnmount: !0, light: !1, fallback: null, wrapper: "div", previewTabIndex: 0, previewAriaLabel: "", oEmbedUrl: "https://noembed.com/embed?url={url}", config: { soundcloud: { options: { visual: !0, buying: !1, liking: !1, download: !1, sharing: !1, show_comments: !1, show_playcount: !1 } }, youtube: { playerVars: { playsinline: 1, showinfo: 0, rel: 0, iv_load_policy: 3, modestbranding: 1 }, embedOptions: {}, onUnstarted: k }, facebook: { appId: "1309697205772819", version: "v3.3", playerId: null, attributes: {} }, dailymotion: { params: { api: 1, "endscreen-enable": !1 } }, vimeo: { playerOptions: { autopause: !1, byline: !1, portrait: !1, title: !1 }, title: null }, mux: { attributes: {}, version: "2" }, file: { attributes: {}, tracks: [], forceVideo: !1, forceAudio: !1, forceHLS: !1, forceDASH: !1, forceFLV: !1, hlsOptions: {}, hlsVersion: "1.1.4", dashVersion: "3.1.3", flvVersion: "1.5.0", forceDisableHls: !1 }, wistia: { options: {}, playerId: null, customControls: null }, mixcloud: { options: { hide_cover: 1 } }, twitch: { options: {}, playerId: null }, vidyard: { options: {} } }, onReady: k, onStart: k, onPlay: k, onPause: k, onBuffer: k, onBufferEnd: k, onEnded: k, onError: k, onDuration: k, onSeek: k, onPlaybackRateChange: k, onPlaybackQualityChange: k, onProgress: k, onClickPreview: k, onEnablePIP: k, onDisablePIP: k };
+    _ = { playing: !1, loop: !1, controls: !1, volume: null, muted: !1, playbackRate: 1, width: '640px', height: '360px', style: {}, progressInterval: 1e3, playsinline: !1, pip: !1, stopOnUnmount: !0, light: !1, fallback: null, wrapper: 'div', previewTabIndex: 0, previewAriaLabel: '', oEmbedUrl: 'https://noembed.com/embed?url={url}', config: { soundcloud: { options: { visual: !0, buying: !1, liking: !1, download: !1, sharing: !1, show_comments: !1, show_playcount: !1 } }, youtube: { playerVars: { playsinline: 1, showinfo: 0, rel: 0, iv_load_policy: 3, modestbranding: 1 }, embedOptions: {}, onUnstarted: k }, facebook: { appId: '1309697205772819', version: 'v3.3', playerId: null, attributes: {} }, dailymotion: { params: { api: 1, 'endscreen-enable': !1 } }, vimeo: { playerOptions: { autopause: !1, byline: !1, portrait: !1, title: !1 }, title: null }, mux: { attributes: {}, version: '2' }, file: { attributes: {}, tracks: [], forceVideo: !1, forceAudio: !1, forceHLS: !1, forceDASH: !1, forceFLV: !1, hlsOptions: {}, hlsVersion: '1.1.4', dashVersion: '3.1.3', flvVersion: '1.5.0', forceDisableHls: !1 }, wistia: { options: {}, playerId: null, customControls: null }, mixcloud: { options: { hide_cover: 1 } }, twitch: { options: {}, playerId: null }, vidyard: { options: {} } }, onReady: k, onStart: k, onPlay: k, onPause: k, onBuffer: k, onBufferEnd: k, onEnded: k, onError: k, onDuration: k, onSeek: k, onPlaybackRateChange: k, onPlaybackQualityChange: k, onProgress: k, onClickPreview: k, onEnablePIP: k, onDisablePIP: k };
   },
   21981: (e, t, r) => {
    var n,
@@ -550,22 +550,22 @@
     s = Object.getPrototypeOf,
     u = Object.prototype.hasOwnProperty,
     c = (e, t, r, n) => {
-     if ((t && "object" == typeof t) || "function" == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
+     if ((t && 'object' == typeof t) || 'function' == typeof t) for (let a of l(t)) u.call(e, a) || a === r || o(e, a, { get: () => t[a], enumerable: !(n = i(t, a)) || n.enumerable });
      return e;
     },
-    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, "default", { value: e, enumerable: !0 }), e)),
+    d = (e, t, r) => ((r = null != e ? a(s(e)) : {}), c(!t && e && e.__esModule ? r : o(r, 'default', { value: e, enumerable: !0 }), e)),
     p = {};
    ((e, t) => {
     for (var r in t) o(e, r, { get: t[r], enumerable: !0 });
    })(p, { callPlayer: () => A, getConfig: () => C, getSDK: () => E, isBlobUrl: () => M, isMediaStream: () => R, lazy: () => m, omit: () => I, parseEndTime: () => k, parseStartTime: () => O, queryString: () => T, randomString: () => _, supportsWebKitPresentationMode: () => L }),
-    (e.exports = ((n = p), c(o({}, "__esModule", { value: !0 }), n)));
+    (e.exports = ((n = p), c(o({}, '__esModule', { value: !0 }), n)));
    var y = d(r(75271)),
     h = d(r(27499)),
     f = d(r(12454));
    const m = (e) =>
      y.default.lazy(async () => {
       const t = await e();
-      return "function" == typeof t.default ? t : t.default;
+      return 'function' == typeof t.default ? t : t.default;
      }),
     b = /[?&#](?:start|t)=([0-9hms]+)/,
     P = /[?&#]end=([0-9hms]+)/,
@@ -582,7 +582,7 @@
         r = g.exec(e);
        for (; null !== r; ) {
         const [, n, a] = r;
-        "h" === a && (t += 60 * parseInt(n, 10) * 60), "m" === a && (t += 60 * parseInt(n, 10)), "s" === a && (t += parseInt(n, 10)), (r = g.exec(e));
+        'h' === a && (t += 60 * parseInt(n, 10) * 60), 'm' === a && (t += 60 * parseInt(n, 10)), 's' === a && (t += parseInt(n, 10)), (r = g.exec(e));
        }
        return t;
       })(e);
@@ -601,7 +601,7 @@
    function T(e) {
     return Object.keys(e)
      .map((t) => `${t}=${e[t]}`)
-     .join("&");
+     .join('&');
    }
    function j(e) {
     return window[e] ? window[e] : window.exports && window.exports[e] ? window.exports[e] : window.module && window.module.exports && window.module.exports[e] ? window.module.exports[e] : null;
@@ -644,23 +644,23 @@
    function A(e, ...t) {
     if (!this.player || !this.player[e]) {
      let t = `ReactPlayer: ${this.constructor.displayName} player could not call %c${e}%c \u2013 `;
-     return this.player ? this.player[e] || (t += "The method was not available") : (t += "The player was not available"), console.warn(t, "font-weight: bold", ""), null;
+     return this.player ? this.player[e] || (t += 'The method was not available') : (t += 'The player was not available'), console.warn(t, 'font-weight: bold', ''), null;
     }
     return this.player[e](...t);
    }
    function R(e) {
-    return "undefined" != typeof window && void 0 !== window.MediaStream && e instanceof window.MediaStream;
+    return 'undefined' != typeof window && void 0 !== window.MediaStream && e instanceof window.MediaStream;
    }
    function M(e) {
     return /^blob:/.test(e);
    }
-   function L(e = document.createElement("video")) {
+   function L(e = document.createElement('video')) {
     const t = !1 === /iPhone|iPod/.test(navigator.userAgent);
-    return e.webkitSupportsPresentationMode && "function" == typeof e.webkitSetPresentationMode && t;
+    return e.webkitSupportsPresentationMode && 'function' == typeof e.webkitSetPresentationMode && t;
    }
   },
   24785: (e, t, r) => {
-   "use strict";
+   'use strict';
    r.d(t, { Z: () => l, a: () => i });
    var n = r(75271);
    const a = {},
@@ -669,14 +669,14 @@
     const t = n.useContext(o);
     return n.useMemo(
      function () {
-      return "function" == typeof e ? e(t) : { ...t, ...e };
+      return 'function' == typeof e ? e(t) : { ...t, ...e };
      },
      [t, e],
     );
    }
    function l(e) {
     let t;
-    return (t = e.disableParentContext ? ("function" == typeof e.components ? e.components(a) : e.components || a) : i(e.components)), n.createElement(o.Provider, { value: t }, e.children);
+    return (t = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : i(e.components)), n.createElement(o.Provider, { value: t }, e.children);
    }
   },
  },

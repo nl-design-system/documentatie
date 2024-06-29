@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.id = 1607;
 exports.ids = [1607];
 exports.modules = {
@@ -10,14 +10,14 @@ exports.modules = {
   });
   /* harmony import */ var _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79058);
 
-  const dataListCss = ":host{display:contents}dl{display:block;margin-block-end:calc(var(--utrecht-space-around, 0) * var(--utrecht-data-list-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0) * var(--utrecht-data-list-margin-block-start, 0))}:host([hidden]){display:none !important}";
+  const dataListCss = ':host{display:contents}dl{display:block;margin-block-end:calc(var(--utrecht-space-around, 0) * var(--utrecht-data-list-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0) * var(--utrecht-data-list-margin-block-start, 0))}:host([hidden]){display:none !important}';
 
   const DataList = class {
    constructor(hostRef) {
     (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.r)(this, hostRef);
    }
    render() {
-    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("dl", null, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)("slot", null));
+    return (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('dl', null, (0, _index_47778138_js__WEBPACK_IMPORTED_MODULE_0__.h)('slot', null));
    }
   };
   DataList.style = dataListCss;

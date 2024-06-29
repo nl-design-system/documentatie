@@ -5,14 +5,14 @@
    const n = r(99419),
     o = {};
    for (const s of Object.keys(n)) o[n[s]] = s;
-   const a = { rgb: { channels: 3, labels: "rgb" }, hsl: { channels: 3, labels: "hsl" }, hsv: { channels: 3, labels: "hsv" }, hwb: { channels: 3, labels: "hwb" }, cmyk: { channels: 4, labels: "cmyk" }, xyz: { channels: 3, labels: "xyz" }, lab: { channels: 3, labels: "lab" }, lch: { channels: 3, labels: "lch" }, hex: { channels: 1, labels: ["hex"] }, keyword: { channels: 1, labels: ["keyword"] }, ansi16: { channels: 1, labels: ["ansi16"] }, ansi256: { channels: 1, labels: ["ansi256"] }, hcg: { channels: 3, labels: ["h", "c", "g"] }, apple: { channels: 3, labels: ["r16", "g16", "b16"] }, gray: { channels: 1, labels: ["gray"] } };
+   const a = { rgb: { channels: 3, labels: 'rgb' }, hsl: { channels: 3, labels: 'hsl' }, hsv: { channels: 3, labels: 'hsv' }, hwb: { channels: 3, labels: 'hwb' }, cmyk: { channels: 4, labels: 'cmyk' }, xyz: { channels: 3, labels: 'xyz' }, lab: { channels: 3, labels: 'lab' }, lch: { channels: 3, labels: 'lch' }, hex: { channels: 1, labels: ['hex'] }, keyword: { channels: 1, labels: ['keyword'] }, ansi16: { channels: 1, labels: ['ansi16'] }, ansi256: { channels: 1, labels: ['ansi256'] }, hcg: { channels: 3, labels: ['h', 'c', 'g'] }, apple: { channels: 3, labels: ['r16', 'g16', 'b16'] }, gray: { channels: 1, labels: ['gray'] } };
    t.exports = a;
    for (const s of Object.keys(a)) {
-    if (!("channels" in a[s])) throw new Error("missing channels property: " + s);
-    if (!("labels" in a[s])) throw new Error("missing channel labels property: " + s);
-    if (a[s].labels.length !== a[s].channels) throw new Error("channel and label counts mismatch: " + s);
+    if (!('channels' in a[s])) throw new Error('missing channels property: ' + s);
+    if (!('labels' in a[s])) throw new Error('missing channel labels property: ' + s);
+    if (a[s].labels.length !== a[s].channels) throw new Error('channel and label counts mismatch: ' + s);
     const { channels: t, labels: e } = a[s];
-    delete a[s].channels, delete a[s].labels, Object.defineProperty(a[s], "channels", { value: t }), Object.defineProperty(a[s], "labels", { value: e });
+    delete a[s].channels, delete a[s].labels, Object.defineProperty(a[s], 'channels', { value: t }), Object.defineProperty(a[s], 'labels', { value: e });
    }
    (a.rgb.hsl = function (t) {
     const e = t[0] / 255,
@@ -251,7 +251,7 @@
     }),
     (a.rgb.hex = function (t) {
      const e = (((255 & Math.round(t[0])) << 16) + ((255 & Math.round(t[1])) << 8) + (255 & Math.round(t[2]))).toString(16).toUpperCase();
-     return "000000".substring(e.length) + e;
+     return '000000'.substring(e.length) + e;
     }),
     (a.hex.rgb = function (t) {
      const e = t.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);
@@ -259,9 +259,9 @@
      let r = e[0];
      3 === e[0].length &&
       (r = r
-       .split("")
+       .split('')
        .map((t) => t + t)
-       .join(""));
+       .join(''));
      const n = parseInt(r, 16);
      return [(n >> 16) & 255, (n >> 8) & 255, 255 & n];
     }),
@@ -369,7 +369,7 @@
     (a.gray.hex = function (t) {
      const e = 255 & Math.round((t[0] / 100) * 255),
       r = ((e << 16) + (e << 8) + e).toString(16).toUpperCase();
-     return "000000".substring(r.length) + r;
+     return '000000'.substring(r.length) + r;
     }),
     (a.rgb.gray = function (t) {
      return [((t[0] + t[1] + t[2]) / 3 / 255) * 100];
@@ -380,7 +380,7 @@
     o = r(3153),
     a = {};
    Object.keys(n).forEach((t) => {
-    (a[t] = {}), Object.defineProperty(a[t], "channels", { value: n[t].channels }), Object.defineProperty(a[t], "labels", { value: n[t].labels });
+    (a[t] = {}), Object.defineProperty(a[t], 'channels', { value: n[t].channels }), Object.defineProperty(a[t], 'labels', { value: n[t].labels });
     const e = o(t);
     Object.keys(e).forEach((r) => {
      const n = e[r];
@@ -390,17 +390,17 @@
        if (null == r) return r;
        r.length > 1 && (e = r);
        const n = t(e);
-       if ("object" == typeof n) for (let t = n.length, o = 0; o < t; o++) n[o] = Math.round(n[o]);
+       if ('object' == typeof n) for (let t = n.length, o = 0; o < t; o++) n[o] = Math.round(n[o]);
        return n;
       };
-      return "conversion" in t && (e.conversion = t.conversion), e;
+      return 'conversion' in t && (e.conversion = t.conversion), e;
      })(n)),
       (a[t][r].raw = (function (t) {
        const e = function (...e) {
         const r = e[0];
         return null == r ? r : (r.length > 1 && (e = r), t(e));
        };
-       return "conversion" in t && (e.conversion = t.conversion), e;
+       return 'conversion' in t && (e.conversion = t.conversion), e;
       })(n));
     });
    }),
@@ -451,7 +451,7 @@
    };
   },
   99419: (t) => {
-   "use strict";
+   'use strict';
    t.exports = { aliceblue: [240, 248, 255], antiquewhite: [250, 235, 215], aqua: [0, 255, 255], aquamarine: [127, 255, 212], azure: [240, 255, 255], beige: [245, 245, 220], bisque: [255, 228, 196], black: [0, 0, 0], blanchedalmond: [255, 235, 205], blue: [0, 0, 255], blueviolet: [138, 43, 226], brown: [165, 42, 42], burlywood: [222, 184, 135], cadetblue: [95, 158, 160], chartreuse: [127, 255, 0], chocolate: [210, 105, 30], coral: [255, 127, 80], cornflowerblue: [100, 149, 237], cornsilk: [255, 248, 220], crimson: [220, 20, 60], cyan: [0, 255, 255], darkblue: [0, 0, 139], darkcyan: [0, 139, 139], darkgoldenrod: [184, 134, 11], darkgray: [169, 169, 169], darkgreen: [0, 100, 0], darkgrey: [169, 169, 169], darkkhaki: [189, 183, 107], darkmagenta: [139, 0, 139], darkolivegreen: [85, 107, 47], darkorange: [255, 140, 0], darkorchid: [153, 50, 204], darkred: [139, 0, 0], darksalmon: [233, 150, 122], darkseagreen: [143, 188, 143], darkslateblue: [72, 61, 139], darkslategray: [47, 79, 79], darkslategrey: [47, 79, 79], darkturquoise: [0, 206, 209], darkviolet: [148, 0, 211], deeppink: [255, 20, 147], deepskyblue: [0, 191, 255], dimgray: [105, 105, 105], dimgrey: [105, 105, 105], dodgerblue: [30, 144, 255], firebrick: [178, 34, 34], floralwhite: [255, 250, 240], forestgreen: [34, 139, 34], fuchsia: [255, 0, 255], gainsboro: [220, 220, 220], ghostwhite: [248, 248, 255], gold: [255, 215, 0], goldenrod: [218, 165, 32], gray: [128, 128, 128], green: [0, 128, 0], greenyellow: [173, 255, 47], grey: [128, 128, 128], honeydew: [240, 255, 240], hotpink: [255, 105, 180], indianred: [205, 92, 92], indigo: [75, 0, 130], ivory: [255, 255, 240], khaki: [240, 230, 140], lavender: [230, 230, 250], lavenderblush: [255, 240, 245], lawngreen: [124, 252, 0], lemonchiffon: [255, 250, 205], lightblue: [173, 216, 230], lightcoral: [240, 128, 128], lightcyan: [224, 255, 255], lightgoldenrodyellow: [250, 250, 210], lightgray: [211, 211, 211], lightgreen: [144, 238, 144], lightgrey: [211, 211, 211], lightpink: [255, 182, 193], lightsalmon: [255, 160, 122], lightseagreen: [32, 178, 170], lightskyblue: [135, 206, 250], lightslategray: [119, 136, 153], lightslategrey: [119, 136, 153], lightsteelblue: [176, 196, 222], lightyellow: [255, 255, 224], lime: [0, 255, 0], limegreen: [50, 205, 50], linen: [250, 240, 230], magenta: [255, 0, 255], maroon: [128, 0, 0], mediumaquamarine: [102, 205, 170], mediumblue: [0, 0, 205], mediumorchid: [186, 85, 211], mediumpurple: [147, 112, 219], mediumseagreen: [60, 179, 113], mediumslateblue: [123, 104, 238], mediumspringgreen: [0, 250, 154], mediumturquoise: [72, 209, 204], mediumvioletred: [199, 21, 133], midnightblue: [25, 25, 112], mintcream: [245, 255, 250], mistyrose: [255, 228, 225], moccasin: [255, 228, 181], navajowhite: [255, 222, 173], navy: [0, 0, 128], oldlace: [253, 245, 230], olive: [128, 128, 0], olivedrab: [107, 142, 35], orange: [255, 165, 0], orangered: [255, 69, 0], orchid: [218, 112, 214], palegoldenrod: [238, 232, 170], palegreen: [152, 251, 152], paleturquoise: [175, 238, 238], palevioletred: [219, 112, 147], papayawhip: [255, 239, 213], peachpuff: [255, 218, 185], peru: [205, 133, 63], pink: [255, 192, 203], plum: [221, 160, 221], powderblue: [176, 224, 230], purple: [128, 0, 128], rebeccapurple: [102, 51, 153], red: [255, 0, 0], rosybrown: [188, 143, 143], royalblue: [65, 105, 225], saddlebrown: [139, 69, 19], salmon: [250, 128, 114], sandybrown: [244, 164, 96], seagreen: [46, 139, 87], seashell: [255, 245, 238], sienna: [160, 82, 45], silver: [192, 192, 192], skyblue: [135, 206, 235], slateblue: [106, 90, 205], slategray: [112, 128, 144], slategrey: [112, 128, 144], snow: [255, 250, 250], springgreen: [0, 255, 127], steelblue: [70, 130, 180], tan: [210, 180, 140], teal: [0, 128, 128], thistle: [216, 191, 216], tomato: [255, 99, 71], turquoise: [64, 224, 208], violet: [238, 130, 238], wheat: [245, 222, 179], white: [255, 255, 255], whitesmoke: [245, 245, 245], yellow: [255, 255, 0], yellowgreen: [154, 205, 50] };
   },
   2489: (t, e, r) => {
@@ -466,19 +466,19 @@
    }
    function c(t) {
     var e = Math.round(t).toString(16).toUpperCase();
-    return e.length < 2 ? "0" + e : e;
+    return e.length < 2 ? '0' + e : e;
    }
    (i.get = function (t) {
     var e, r;
     switch (t.substring(0, 3).toLowerCase()) {
-     case "hsl":
-      (e = i.get.hsl(t)), (r = "hsl");
+     case 'hsl':
+      (e = i.get.hsl(t)), (r = 'hsl');
       break;
-     case "hwb":
-      (e = i.get.hwb(t)), (r = "hwb");
+     case 'hwb':
+      (e = i.get.hwb(t)), (r = 'hwb');
       break;
      default:
-      (e = i.get.rgb(t)), (r = "rgb");
+      (e = i.get.rgb(t)), (r = 'rgb');
     }
     return e ? { model: r, value: e } : null;
    }),
@@ -501,7 +501,7 @@
       for (r = 0; r < 3; r++) s[r] = parseInt(e[r + 1], 0);
       e[4] && (e[5] ? (s[3] = 0.01 * parseFloat(e[4])) : (s[3] = parseFloat(e[4])));
      } else {
-      if (!(e = t.match(/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/))) return (e = t.match(/^(\w+)$/)) ? ("transparent" === e[1] ? [0, 0, 0, 0] : a.call(n, e[1]) ? (((s = n[e[1]])[3] = 1), s) : null) : null;
+      if (!(e = t.match(/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/))) return (e = t.match(/^(\w+)$/)) ? ('transparent' === e[1] ? [0, 0, 0, 0] : a.call(n, e[1]) ? (((s = n[e[1]])[3] = 1), s) : null) : null;
       for (r = 0; r < 3; r++) s[r] = Math.round(2.55 * parseFloat(e[r + 1]));
       e[4] && (e[5] ? (s[3] = 0.01 * parseFloat(e[4])) : (s[3] = parseFloat(e[4])));
      }
@@ -528,27 +528,27 @@
     }),
     (i.to.hex = function () {
      var t = o(arguments);
-     return "#" + c(t[0]) + c(t[1]) + c(t[2]) + (t[3] < 1 ? c(Math.round(255 * t[3])) : "");
+     return '#' + c(t[0]) + c(t[1]) + c(t[2]) + (t[3] < 1 ? c(Math.round(255 * t[3])) : '');
     }),
     (i.to.rgb = function () {
      var t = o(arguments);
-     return t.length < 4 || 1 === t[3] ? "rgb(" + Math.round(t[0]) + ", " + Math.round(t[1]) + ", " + Math.round(t[2]) + ")" : "rgba(" + Math.round(t[0]) + ", " + Math.round(t[1]) + ", " + Math.round(t[2]) + ", " + t[3] + ")";
+     return t.length < 4 || 1 === t[3] ? 'rgb(' + Math.round(t[0]) + ', ' + Math.round(t[1]) + ', ' + Math.round(t[2]) + ')' : 'rgba(' + Math.round(t[0]) + ', ' + Math.round(t[1]) + ', ' + Math.round(t[2]) + ', ' + t[3] + ')';
     }),
     (i.to.rgb.percent = function () {
      var t = o(arguments),
       e = Math.round((t[0] / 255) * 100),
       r = Math.round((t[1] / 255) * 100),
       n = Math.round((t[2] / 255) * 100);
-     return t.length < 4 || 1 === t[3] ? "rgb(" + e + "%, " + r + "%, " + n + "%)" : "rgba(" + e + "%, " + r + "%, " + n + "%, " + t[3] + ")";
+     return t.length < 4 || 1 === t[3] ? 'rgb(' + e + '%, ' + r + '%, ' + n + '%)' : 'rgba(' + e + '%, ' + r + '%, ' + n + '%, ' + t[3] + ')';
     }),
     (i.to.hsl = function () {
      var t = o(arguments);
-     return t.length < 4 || 1 === t[3] ? "hsl(" + t[0] + ", " + t[1] + "%, " + t[2] + "%)" : "hsla(" + t[0] + ", " + t[1] + "%, " + t[2] + "%, " + t[3] + ")";
+     return t.length < 4 || 1 === t[3] ? 'hsl(' + t[0] + ', ' + t[1] + '%, ' + t[2] + '%)' : 'hsla(' + t[0] + ', ' + t[1] + '%, ' + t[2] + '%, ' + t[3] + ')';
     }),
     (i.to.hwb = function () {
      var t = o(arguments),
-      e = "";
-     return t.length >= 4 && 1 !== t[3] && (e = ", " + t[3]), "hwb(" + t[0] + ", " + t[1] + "%, " + t[2] + "%" + e + ")";
+      e = '';
+     return t.length >= 4 && 1 !== t[3] && (e = ', ' + t[3]), 'hwb(' + t[0] + ', ' + t[1] + '%, ' + t[2] + '%' + e + ')';
     }),
     (i.to.keyword = function (t) {
      return s[t.slice(0, 3)];
@@ -557,31 +557,31 @@
   22305: (t, e, r) => {
    const n = r(2489),
     o = r(2771),
-    a = ["keyword", "gray", "hex"],
+    a = ['keyword', 'gray', 'hex'],
     s = {};
-   for (const g of Object.keys(o)) s[[...o[g].labels].sort().join("")] = g;
+   for (const g of Object.keys(o)) s[[...o[g].labels].sort().join('')] = g;
    const l = {};
    function i(t, e) {
     if (!(this instanceof i)) return new i(t, e);
-    if ((e && e in a && (e = null), e && !(e in o))) throw new Error("Unknown model: " + e);
+    if ((e && e in a && (e = null), e && !(e in o))) throw new Error('Unknown model: ' + e);
     let r, h;
-    if (null == t) (this.model = "rgb"), (this.color = [0, 0, 0]), (this.valpha = 1);
+    if (null == t) (this.model = 'rgb'), (this.color = [0, 0, 0]), (this.valpha = 1);
     else if (t instanceof i) (this.model = t.model), (this.color = [...t.color]), (this.valpha = t.valpha);
-    else if ("string" == typeof t) {
+    else if ('string' == typeof t) {
      const e = n.get(t);
-     if (null === e) throw new Error("Unable to parse color from string: " + t);
-     (this.model = e.model), (h = o[this.model].channels), (this.color = e.value.slice(0, h)), (this.valpha = "number" == typeof e.value[h] ? e.value[h] : 1);
+     if (null === e) throw new Error('Unable to parse color from string: ' + t);
+     (this.model = e.model), (h = o[this.model].channels), (this.color = e.value.slice(0, h)), (this.valpha = 'number' == typeof e.value[h] ? e.value[h] : 1);
     } else if (t.length > 0) {
-     (this.model = e || "rgb"), (h = o[this.model].channels);
+     (this.model = e || 'rgb'), (h = o[this.model].channels);
      const r = Array.prototype.slice.call(t, 0, h);
-     (this.color = b(r, h)), (this.valpha = "number" == typeof t[h] ? t[h] : 1);
-    } else if ("number" == typeof t) (this.model = "rgb"), (this.color = [(t >> 16) & 255, (t >> 8) & 255, 255 & t]), (this.valpha = 1);
+     (this.color = b(r, h)), (this.valpha = 'number' == typeof t[h] ? t[h] : 1);
+    } else if ('number' == typeof t) (this.model = 'rgb'), (this.color = [(t >> 16) & 255, (t >> 8) & 255, 255 & t]), (this.valpha = 1);
     else {
      this.valpha = 1;
      const e = Object.keys(t);
-     "alpha" in t && (e.splice(e.indexOf("alpha"), 1), (this.valpha = "number" == typeof t.alpha ? t.alpha : 0));
-     const n = e.sort().join("");
-     if (!(n in s)) throw new Error("Unable to parse color from object: " + JSON.stringify(t));
+     'alpha' in t && (e.splice(e.indexOf('alpha'), 1), (this.valpha = 'number' == typeof t.alpha ? t.alpha : 0));
+     const n = e.sort().join('');
+     if (!(n in s)) throw new Error('Unable to parse color from object: ' + JSON.stringify(t));
      this.model = s[n];
      const { labels: a } = o[this.model],
       l = [];
@@ -604,12 +604,12 @@
     },
     string(t) {
      let e = this.model in n.to ? this : this.rgb();
-     e = e.round("number" == typeof t ? t : 1);
+     e = e.round('number' == typeof t ? t : 1);
      const r = 1 === e.valpha ? e.color : [...e.color, this.valpha];
      return n.to[e.model](r);
     },
     percentString(t) {
-     const e = this.rgb().round("number" == typeof t ? t : 1),
+     const e = this.rgb().round('number' == typeof t ? t : 1),
       r = 1 === e.valpha ? e.color : [...e.color, this.valpha];
      return n.to.rgb.percent(r);
     },
@@ -637,28 +637,28 @@
     alpha(t) {
      return void 0 !== t ? new i([...this.color, Math.max(0, Math.min(1, t))], this.model) : this.valpha;
     },
-    red: c("rgb", 0, u(255)),
-    green: c("rgb", 1, u(255)),
-    blue: c("rgb", 2, u(255)),
-    hue: c(["hsl", "hsv", "hsl", "hwb", "hcg"], 0, (t) => ((t % 360) + 360) % 360),
-    saturationl: c("hsl", 1, u(100)),
-    lightness: c("hsl", 2, u(100)),
-    saturationv: c("hsv", 1, u(100)),
-    value: c("hsv", 2, u(100)),
-    chroma: c("hcg", 1, u(100)),
-    gray: c("hcg", 2, u(100)),
-    white: c("hwb", 1, u(100)),
-    wblack: c("hwb", 2, u(100)),
-    cyan: c("cmyk", 0, u(100)),
-    magenta: c("cmyk", 1, u(100)),
-    yellow: c("cmyk", 2, u(100)),
-    black: c("cmyk", 3, u(100)),
-    x: c("xyz", 0, u(95.047)),
-    y: c("xyz", 1, u(100)),
-    z: c("xyz", 2, u(108.833)),
-    l: c("lab", 0, u(100)),
-    a: c("lab", 1),
-    b: c("lab", 2),
+    red: c('rgb', 0, u(255)),
+    green: c('rgb', 1, u(255)),
+    blue: c('rgb', 2, u(255)),
+    hue: c(['hsl', 'hsv', 'hsl', 'hwb', 'hcg'], 0, (t) => ((t % 360) + 360) % 360),
+    saturationl: c('hsl', 1, u(100)),
+    lightness: c('hsl', 2, u(100)),
+    saturationv: c('hsv', 1, u(100)),
+    value: c('hsv', 2, u(100)),
+    chroma: c('hcg', 1, u(100)),
+    gray: c('hcg', 2, u(100)),
+    white: c('hwb', 1, u(100)),
+    wblack: c('hwb', 2, u(100)),
+    cyan: c('cmyk', 0, u(100)),
+    magenta: c('cmyk', 1, u(100)),
+    yellow: c('cmyk', 2, u(100)),
+    black: c('cmyk', 3, u(100)),
+    x: c('xyz', 0, u(95.047)),
+    y: c('xyz', 1, u(100)),
+    z: c('xyz', 2, u(108.833)),
+    l: c('lab', 0, u(100)),
+    a: c('lab', 1),
+    b: c('lab', 2),
     keyword(t) {
      return void 0 !== t ? new i(t) : o[this.model].keyword(this.color);
     },
@@ -671,7 +671,7 @@
      let r = Math.round(255 * this.valpha)
       .toString(16)
       .toUpperCase();
-     return 1 === r.length && (r = "0" + r), n.to.hex(e) + r;
+     return 1 === r.length && (r = '0' + r), n.to.hex(e) + r;
     },
     rgbNumber() {
      const t = this.rgb().color;
@@ -693,7 +693,7 @@
     },
     level(t) {
      const e = this.contrast(t);
-     return e >= 7 ? "AAA" : e >= 4.5 ? "AA" : "";
+     return e >= 7 ? 'AAA' : e >= 4.5 ? 'AA' : '';
     },
     isDark() {
      const t = this.rgb().color;
@@ -768,7 +768,7 @@
     }),
      (i[g] = function (...e) {
       let r = e[0];
-      return "number" == typeof r && (r = b(e, t)), new i(r, g);
+      return 'number' == typeof r && (r = b(e, t)), new i(r, g);
      });
    }
    function h(t) {
@@ -795,18 +795,18 @@
     };
    }
    function b(t, e) {
-    for (let r = 0; r < e; r++) "number" != typeof t[r] && (t[r] = 0);
+    for (let r = 0; r < e; r++) 'number' != typeof t[r] && (t[r] = 0);
     return t;
    }
    t.exports = i;
   },
   48254: (t) => {
    t.exports = function (t) {
-    return !(!t || "string" == typeof t) && (t instanceof Array || Array.isArray(t) || (t.length >= 0 && (t.splice instanceof Function || (Object.getOwnPropertyDescriptor(t, t.length - 1) && "String" !== t.constructor.name))));
+    return !(!t || 'string' == typeof t) && (t instanceof Array || Array.isArray(t) || (t.length >= 0 && (t.splice instanceof Function || (Object.getOwnPropertyDescriptor(t, t.length - 1) && 'String' !== t.constructor.name))));
    };
   },
   27933: (t, e, r) => {
-   "use strict";
+   'use strict';
    var n = r(48254),
     o = Array.prototype.concat,
     a = Array.prototype.slice,

@@ -35,27 +35,27 @@
   <script>
    !(function () {
     function t(t) {
-     document.documentElement.setAttribute("data-theme", t);
+     document.documentElement.setAttribute('data-theme', t);
     }
     var e =
      (function () {
       try {
-       return new URLSearchParams(window.location.search).get("docusaurus-theme");
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
       } catch (t) {}
      })() ||
      (function () {
       try {
-       return localStorage.getItem("theme");
+       return localStorage.getItem('theme');
       } catch (t) {}
      })();
-    t(null !== e ? e : "light");
+    t(null !== e ? e : 'light');
    })(),
     (function () {
      try {
       const c = new URLSearchParams(window.location.search).entries();
       for (var [t, e] of c)
-       if (t.startsWith("docusaurus-data-")) {
-        var a = t.replace("docusaurus-data-", "data-");
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
         document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}

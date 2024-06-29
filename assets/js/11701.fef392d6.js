@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [11701],
  {
@@ -6,15 +6,15 @@
    function e(t) {
     var r,
      o,
-     c = "";
-    if ("string" == typeof t || "number" == typeof t) c += t;
-    else if ("object" == typeof t)
-     if (Array.isArray(t)) for (r = 0; r < t.length; r++) t[r] && (o = e(t[r])) && (c && (c += " "), (c += o));
-     else for (r in t) t[r] && (c && (c += " "), (c += r));
+     c = '';
+    if ('string' == typeof t || 'number' == typeof t) c += t;
+    else if ('object' == typeof t)
+     if (Array.isArray(t)) for (r = 0; r < t.length; r++) t[r] && (o = e(t[r])) && (c && (c += ' '), (c += o));
+     else for (r in t) t[r] && (c && (c += ' '), (c += r));
     return c;
    }
    function c() {
-    for (var t, r, o = 0, c = ""; o < arguments.length; ) (t = arguments[o++]) && (r = e(t)) && (c && (c += " "), (c += r));
+    for (var t, r, o = 0, c = ''; o < arguments.length; ) (t = arguments[o++]) && (r = e(t)) && (c && (c += ' '), (c += r));
     return c;
    }
    o.d(r, { c: () => c });
@@ -25,18 +25,18 @@
     c = o(39026);
    const l = class {
     constructor(t) {
-     (0, e.r)(this, t), (this.utrechtBlur = (0, e.c)(this, "utrechtBlur", 7)), (this.utrechtChange = (0, e.c)(this, "utrechtChange", 7)), (this.utrechtFocus = (0, e.c)(this, "utrechtFocus", 7)), (this.utrechtInput = (0, e.c)(this, "utrechtInput", 7)), (this.autoComplete = ""), (this.disabled = !1), (this.invalid = !1), (this.min = ""), (this.max = ""), (this.pattern = ""), (this.placeholder = ""), (this.readOnly = !1), (this.required = !1), (this.type = ""), (this.value = "");
+     (0, e.r)(this, t), (this.utrechtBlur = (0, e.c)(this, 'utrechtBlur', 7)), (this.utrechtChange = (0, e.c)(this, 'utrechtChange', 7)), (this.utrechtFocus = (0, e.c)(this, 'utrechtFocus', 7)), (this.utrechtInput = (0, e.c)(this, 'utrechtInput', 7)), (this.autoComplete = ''), (this.disabled = !1), (this.invalid = !1), (this.min = ''), (this.max = ''), (this.pattern = ''), (this.placeholder = ''), (this.readOnly = !1), (this.required = !1), (this.type = ''), (this.value = '');
     }
     render() {
      const { autoComplete: t, disabled: r, invalid: o, min: l, max: a, pattern: u, placeholder: n, readOnly: h, required: i, type: d, value: b } = this;
-     return (0, e.h)("input", {
-      class: (0, c.c)("utrecht-textbox", "utrecht-textbox--html-input", r && "utrecht-textbox--disabled", o && "utrecht-textbox--invalid", h && "utrecht-textbox--readonly"),
-      type: d || "text",
+     return (0, e.h)('input', {
+      class: (0, c.c)('utrecht-textbox', 'utrecht-textbox--html-input', r && 'utrecht-textbox--disabled', o && 'utrecht-textbox--invalid', h && 'utrecht-textbox--readonly'),
+      type: d || 'text',
       autoComplete: t || null,
       disabled: r,
-      dir: "auto",
-      min: "number" == typeof l ? String(l) : "string" == typeof l ? l : null,
-      max: "number" == typeof a ? String(a) : "string" == typeof a ? a : null,
+      dir: 'auto',
+      min: 'number' == typeof l ? String(l) : 'string' == typeof l ? l : null,
+      max: 'number' == typeof a ? String(a) : 'string' == typeof a ? a : null,
       pattern: u || null,
       placeholder: n || null,
       readonly: h,
