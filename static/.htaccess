@@ -7,6 +7,12 @@ Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/le
 Redirect 301 "/counter-badge" "/number-badge"
 Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
 Redirect 301 "/blog/nlds-zelfstandig" "/blog/nl-design-system-zelfstandig-verder"
+Redirect 301 "/componenten/definition-of-done" "/handboek/component-bijdragen/definition-of-done"
+Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/component-bijdragen/help-wanted-stappenplan"
+Redirect 301 "/handboek/community-stappenplan" "/handboek/component-bijdragen/community-stappenplan"
+Redirect 301 "/handboek/candidate-stappenplan" "/handboek/component-bijdragen/candidate-stappenplan"
+Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen/hall-of-fame-stappenplan"
+Redirect 301 "/button-group" "/action-group"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
