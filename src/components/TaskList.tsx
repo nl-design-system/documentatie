@@ -1,16 +1,18 @@
 import { Heading3, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
-import React, { FC, PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react';
 import style from './TaskList.module.css';
 
 export const TaskList = ({ children }: PropsWithChildren<{}>) => <ul className={style['task-list']}>{children}</ul>;
 
-export const TaskListItem = ({
-  checked,
-  title,
-  description,
-}: FC<{ title: string; description: string; checked: boolean }>) => {
+interface TaskListItemProps {
+  title: string;
+  description: string;
+  checked: boolean;
+}
+
+export const TaskListItem = ({ checked, title, description }: TaskListItemProps) => {
   return (
     <li className={clsx(style['task-list-item'])}>
       <div

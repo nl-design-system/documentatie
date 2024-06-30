@@ -1,0 +1,38 @@
+---
+title: Progress list
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Progress list
+pagination_label: Progress list
+description: Toont de voortgang van een reeks stappen en biedt indien nodig extra details over een stap.
+slug: /progress-list
+sidebar_custom_props:
+  illustration: ProgressListSketch
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Progress list";
+export const description = "Toont de voortgang van een reeks stappen en biedt indien nodig extra details over een stap.";
+export const illustration = "ProgressListSketch";
+export const issueNumber = 150;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

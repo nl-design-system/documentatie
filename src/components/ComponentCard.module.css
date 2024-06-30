@@ -4,6 +4,13 @@
   --cardgroup-card-padding-block-end: 36px;
   --card-content-padding-block-end: 0;
   --card-content-padding-block-start: 0;
+  --component-illustration-svg-max-height: 185px;
+  --component-illustration-padding-inline: 24px;
+  --card-content-inline-size: 60%;
+}
+
+.component-card--suggestion {
+  --utrecht-heading-color: #333;
 }
 
 .component-name {
@@ -14,5 +21,6 @@
   .component-card {
     --component-illustration-svg-max-height: none;
     --cardgroup-card-max-width: 400px;
+    --card-content-inline-size: 100%;
   }
 }

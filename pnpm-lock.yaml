@@ -102,12 +102,12 @@ importers:
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 1.0.0-alpha.140
         version: 1.0.0-alpha.140
-      '@nl-design-system/component-index':
-        specifier: 1.0.0-alpha.21
-        version: 1.0.0-alpha.21
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.0
-        version: 1.0.1-alpha.0
+        specifier: 1.0.1-alpha.6
+        version: 1.0.1-alpha.6
+      '@persoonlijke-regelingen-assistent/components-react':
+        specifier: 1.0.0-alpha.145
+        version: 1.0.0-alpha.145(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@playwright/test':
         specifier: 1.44.1
         version: 1.44.1
@@ -1242,6 +1242,226 @@ packages:
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
+  '@gemeente-denhaag/accordion@0.2.3-alpha.374':
+    resolution: {integrity: sha512-IsfFVGZFG5ST0BTQc2CDB5hQ5InFBsUI9LrZLwyxRcaI5hOUXriy5Rmbhu9nG+FsAJTU8PJBAGY69v0njBQyKA==}
+
+  '@gemeente-denhaag/action@0.1.1-alpha.40':
+    resolution: {integrity: sha512-kmcH2+FxiVUlpM7kE9OyCM7r+j7ZMYt0SRyVBe29H24kvgLCcKG70wADLDSjtOh8oviSbeuWXMzFHdvualX1Rw==}
+
+  '@gemeente-denhaag/alert@0.1.1-alpha.344':
+    resolution: {integrity: sha512-cewJfRZmLGDbfBtiu00N4qiwaeWwO3EcxIESTGSiyWW8QgDeICXHeivi7cR8XIUk7t0LZlK/3KU4Z3VuTFLRYA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/badge-counter@0.1.1-alpha.374':
+    resolution: {integrity: sha512-Lnl4OorU7lbnNxAD8f30LrqmniHicbv5P3RdP3w31diqqQoG+6EUly/xvhvOucoiVVUGGisSFra5+EJQko+brg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/breadcrumb@0.1.1-alpha.302':
+    resolution: {integrity: sha512-ln+YPbfKeJqsaCd2DiV+1a6TOUOcoPIaTIx1+mBtqt4d7la8RPaSGFZFBwkd2h0HaucqEnXW2b+ip0SiDC6FlA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/button-group@0.1.1-alpha.243':
+    resolution: {integrity: sha512-C8Q1izxRS8FuU424+wNLXQKQS0iFmhypn8v6J64AJLVRdP4+ER/cJJwqRLoiN1wyMa4ldQd8OZ1NvWtH0IxYow==}
+
+  '@gemeente-denhaag/button@0.2.3-alpha.374':
+    resolution: {integrity: sha512-+iDBO8dvzzXDfNtuMC03wJN540W+HfI9syden0I+Rzzw/TGC+FLce2PSx4qtFdFA8YbMtcFsANNGXNaJxlgTBg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/card-authentication@0.1.1-alpha.103':
+    resolution: {integrity: sha512-OS5IVgYthbPaDZl0pxIr7kzQRYfzlfZG78zE/rxcfZVoVi4Vw34zi1/LUfTJcuCIxgzDbZQVJDNyOpLA7uW7tw==}
+
+  '@gemeente-denhaag/card-group@0.1.1-alpha.103':
+    resolution: {integrity: sha512-jt8l/mY3rW0FZu2+6mC+MpFoLUk6sCsWJ7WO8XhvYF54kTkKSgrl2fSoJMxSXg9au7eWoOdcnIl05EWpE2CzuQ==}
+
+  '@gemeente-denhaag/card@0.2.3-alpha.374':
+    resolution: {integrity: sha512-3jjz3HGerc8C3mxFmcjNHV/ltzjbjoI9qYMKIG8fIYs2UktqkJkFIXl4I7PxbBRznVFhT903lIopw17dhUEH9A==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/checkbox@0.3.0-alpha.374':
+    resolution: {integrity: sha512-SgFRXGGrjahj7b+RRxqIWuhFPUjYa65OOVuHpj+4f5Q/ilXhik4FsN4qHHpu6cWUCV7EtsDRMT7cO5C1uIBeHw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/components-react@0.1.1-alpha.316':
+    resolution: {integrity: sha512-+nVJ2scaKdH/qcAn12e0/y1HpX2eZoZ0L2i6hHg8T/ylGrMKA4f8oQ1TNdeQqxrTlSJbM38gwZApXhlMnyvb0w==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/contact-timeline@0.1.1-alpha.32':
+    resolution: {integrity: sha512-JMEDv1/DjsYKGjr3573QHL1mX9uxaQBUtufW7NWiqGXmkNHjQQTnZoo2mxuI3T6BV8mTcCue76qWgxC+NmOSZA==}
+
+  '@gemeente-denhaag/descriptionlist@0.1.1-alpha.274':
+    resolution: {integrity: sha512-6QOA3l68TaJEsc/jJllMeYOXJkXSp97UPCJ01SHMKoU5cXk0d2etu+3S9LGIl7qkA9pvL/ikZOl2nP3b5jhZJg==}
+
+  '@gemeente-denhaag/design-tokens-common@0.2.3-alpha.376':
+    resolution: {integrity: sha512-qakCv75QO2BnnKqHHMABWCj+z2I2pX1vxB8vJ1DmpHlXmtLyN1pJsHSEKZ8xVDu3qLWn7aswakbgXTXi8jX8jA==}
+
+  '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.376':
+    resolution: {integrity: sha512-Z6flaBLBbXplRHZB+fgZafSqKtiW1cLlZhoG6ADBGmIO2A2MWqCEYGaMxXNFJapOZaJqOo6e/NtYmjrtyGOt2A==}
+
+  '@gemeente-denhaag/divider@0.2.3-alpha.374':
+    resolution: {integrity: sha512-BGRM55uTaBXwZoOXJf9Vy0HIuAE1s9/AIJeZLAfpFrH2UNizK8igwRfbE3kZD/gA57F/pNdEzZcaUxWj1Oq6Xg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/dotindicator@0.1.1-alpha.374':
+    resolution: {integrity: sha512-8s9H580+N82+8f95BclR9spa8Jpu4EfBFnT1+o5u1XBQta2UpPVNKnV+MLcdJ/MesRNF9oPMcV0rzp0TMCY7gQ==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/file@0.1.1-alpha.46':
+    resolution: {integrity: sha512-aDei9PkbhFI38aD4PXTSKZy88TR6Xz993ahL3eEhehWipkYnsD0hr7+kOMVlzUJOhnIVVq8Tb8EFeQIrl2Gb2Q==}
+
+  '@gemeente-denhaag/footer@0.1.1-alpha.233':
+    resolution: {integrity: sha512-WZkF6gnZQrp90bYwl051kkDAozaPRcRg+xtJ9xvu/LGccIu6tZLykSsstoG09snrptaQEwVP10SaV+ol57yK/g==}
+
+  '@gemeente-denhaag/form-field-description@0.3.0-alpha.7':
+    resolution: {integrity: sha512-LJSef6MIIMUkYo1ETMhYnCXvaAJ6+EvaUf/eKYR3B6VaWjyDD8dAiwDNTHvT046mZ5XVo2rTnCPgOamRpAeMQw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/form-field-error-message@0.3.0-alpha.7':
+    resolution: {integrity: sha512-bg3vSIqyjlpY2HdPUnSEfjBzfLSV8WhyWfFAzKlO/bgcigD9XCUQOJ+sxSumY1fMvqOsIafas4UPsm41OPG00g==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/form-field@0.3.0-alpha.250':
+    resolution: {integrity: sha512-EYkcXRDcvQO8FzcrmIfZU3bEeAI52E1bqR1XP1DDbIz4grXr4rnd1UL2J87Jap0+7sv0WpMT0yDpWM9r8JbNcQ==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/form-fieldset@0.3.0-alpha.7':
+    resolution: {integrity: sha512-rq+RANsfwyQ5NWNDbQuVnQtgmwwjBHUx+69f0BKqZ6chLVX554q3UqROdh4locSdGcLai7aupoi/qW4xUAh+KQ==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/form-label@0.3.0-alpha.7':
+    resolution: {integrity: sha512-zRc6shjmplD31esrHc2OFbnwo6sQzbXLQI/u83lcFeNk9T6Y+J0gTazOltKEJ51B8yu3hg46onvO2LjN8ZJCiQ==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/form-progress@0.1.1-alpha.249':
+    resolution: {integrity: sha512-qq75TYJyiQeZCq6JWKMZQJ4UcA0c+AYoJLuoiLM4stW10XteRaKkiR39nd56RTIJlb01z1ozx7th3D2bxzA3cg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/header-logo@0.1.1-alpha.234':
+    resolution: {integrity: sha512-Wh50dcIJUoR9SlbDOeOl+I3V7SKH3/6dXXBtw5DohrCDI8eEgEsydldbOBx6T9I+B7iWeUEgyhpjH/oeKei3Qg==}
+
+  '@gemeente-denhaag/header@0.1.1-alpha.234':
+    resolution: {integrity: sha512-Cyn9s3925qj0wLHTZAUTDqWJT/9d5bU2oJCdYHEXvCLdFw0bF2pUV/WTDIprxA1t9t5wtwvK34RYtCrB9eyFIw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/iconbutton@0.2.3-alpha.374':
+    resolution: {integrity: sha512-QVTWdgMMG3Sba1QY2Nn8uF1JahGTQ2cftiwjUUe2nUXAGw6KuzXxJBBEfHX8sSU5IU/tU/z44lA/skureO1cbA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/icons@0.2.3-alpha.374':
+    resolution: {integrity: sha512-63ZmHziHtSIrkc/bEJQOT6lNFujLsEkGVg59gd5JwoICQv16GIZQSUzqVyQwgkrBGk7tvpIBFAw1uZchLnsEkw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/language-switcher@0.2.3-alpha.366':
+    resolution: {integrity: sha512-5zbIgKeRYaQQi6CFHScFb5ppt/Ti12/n2PFoTGThqsviip+gi0QwpLR+oq6FYs72c5qEvH2kvYoSYiQPzPLLvg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/link-group@0.1.3-alpha.235':
+    resolution: {integrity: sha512-eZo+RZJPTGY/Lbp33PMupB4xaIwh1bO9RlE4wxPBZtPEe8GZpDQUMjwYGLVEaQLJwr+T23REE9oBrqikgu3O2w==}
+
+  '@gemeente-denhaag/link@0.2.3-alpha.374':
+    resolution: {integrity: sha512-Q8qtNzieAQuTeOEt3ob71xSv6SzojtUUUWVFgP3Sw9W+PditWP4OvtpDBWp2IBhtb3U3NXJDx7S77hgMWPpfXA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/list@0.2.3-alpha.374':
+    resolution: {integrity: sha512-s9LZFJdwprgoWg/y7tCaAirQJBdmFqOnAzxsWsZhGuKQ8LxdQMVF6fPY1rSdrcgp/hE6RUmOCYKROPW4NvzDIg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/menu@0.2.3-alpha.374':
+    resolution: {integrity: sha512-6wUlNVdZF8X9eLXARevQ1/AoMyZ+JfxIlXEeDPlMfmxK4tmK0npp5WJvWoGnAV7pfHPw8JV9Zg0qqOVkTsyvOA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/page@0.1.1-alpha.234':
+    resolution: {integrity: sha512-izLsAr/eUJS6TKxOWIwSuzuMxjeuXfJwin8EQDq5lurtL8VYLhH+fzidz20Y8FdAyDOeYm5YHnif62Vju51JFw==}
+
+  '@gemeente-denhaag/pagination@0.1.1-alpha.301':
+    resolution: {integrity: sha512-WvubgLoGxld9IJONzTMzS9YsouIhDtaJ/HvaZi/kS37V/C+3rz1sZa64eS9aRcX1YbQM3QkY8v7n+0uQRlZA8A==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/process-steps@0.1.0-alpha.203':
+    resolution: {integrity: sha512-JQ6WkT403mHC9ylcEdZctmb1yYfwefJZkGunbFzBcUaHNZzgB9SN5sHZ243+CXMOjA9ElSI0nihjrUe8ZCvZcg==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/radio-button@0.3.0-alpha.7':
+    resolution: {integrity: sha512-ZsjbF2ETunOQpDCwLwPojf/vckIvh5Ye0yVz1aPRjEDMOIkYRUZm1cwZD55Yi0psxQJJTuL5NE0JvQgBEQU09A==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/responsive-content@0.1.1-alpha.234':
+    resolution: {integrity: sha512-n3RnsyQXPi5jceBH7K0RGLXC+4wjQClSnJx+leHaKIF73fc07OztU1mRHwjjhsjk2TDNpNWKWnTp4NqtCP0N/A==}
+
+  '@gemeente-denhaag/sheet@0.1.0-alpha.170':
+    resolution: {integrity: sha512-apRUzkPeY2izIiGpPZqnFZsKonGC4LU/Tg+97rxP96lYESsBu0x3lEP+zvIRktunZ9T1MKYCTdghkCG1me5Zag==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/sidenav@0.1.0-alpha.192':
+    resolution: {integrity: sha512-USN3YcBeYNod4icQ7ZpNWpadiH56AbdSBYGboOSFyDZyE7bwpn0LH0DE2GavFKWu2R9s2mmxqEtYhuHF0O/aCA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/step-marker@0.0.1-alpha.75':
+    resolution: {integrity: sha512-cfxvCKPKJFAE8TGK3YuOhlpeBPN3yQG8WwptXk/KEWy4D2C5zqX8+v0xUD4sCYAwZd/o40X2P/It1nb57vcAQw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374':
+    resolution: {integrity: sha512-OqvNv8YHxCuGaIgy6dBUnjR8iZGgge95/AHYgPF0EGrJ8LjeomzdCdrwTn5Vkww+g9+a/Sec+zbALiZVoD7Elw==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/tab@0.2.3-alpha.374':
+    resolution: {integrity: sha512-Wsps7SdToeYZP0O6dguWSIj4X7TNJ4D84oZ+V/riwsjHYJEGuUs3dU+pu/+qDfUN+tGm82xUgQKFpD6cNXD8xA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/table@0.1.1-alpha.276':
+    resolution: {integrity: sha512-VOOvrA65a1ronfFhFMQv6YuDanKE0WoBUvT5u1hK5zP+RZQIutZ4BLej3rpuRb/3e+dM38UW4lgYg5ryDroEUA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/text-input@0.3.0-alpha.374':
+    resolution: {integrity: sha512-yFDashKOcRD8dfmRGnlSI7uO4io/tZhkGipUMJ/MlOnai5on/TwR6r4caIkbvVhKBUtCEAyq/pRVQjs8ooc6/A==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/textarea@0.3.0-alpha.7':
+    resolution: {integrity: sha512-04eQfhlFymloKhoiFaz/mgF80S3gBUEhPn7xFwGaRsvxKRetZKN1YLVMLxNm4JqjMh6+jRkccUg797o6KrnBnA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/typography@0.2.3-alpha.374':
+    resolution: {integrity: sha512-dH43abmRd1HTXjie0gTxWNeyk7CYYJm7reRed6pybclwIdZmDqCp867QcOnv2kTTYx/zwacVjPlm86qQ2rNZGA==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@gemeente-denhaag/utils@0.2.3-alpha.373':
+    resolution: {integrity: sha512-Orm5e/pKgjUKwkOIOdtMcQZ0ZebXOlD9bDukZ1Rxb/w2iLemrAveEe5qxHjTOSs9bGogeyhrxPjffniA6QfrKw==}
+    peerDependencies:
+      react: ^18.0.0
+
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
 
@@ -1488,11 +1708,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.140':
     resolution: {integrity: sha512-fqBUs13JyDXmwfWoK1isfKWV8vz0tYCwmckupnsW8PWvvm6jW8/gl3NlBsNeLJMx+zppe9KZAE3V5D9m0YBL3g==}
 
-  '@nl-design-system/component-index@1.0.0-alpha.21':
-    resolution: {integrity: sha512-gTjzV8WDmuhEDETQ2kIkiMPExYCoKUHOHtKg2dr0jAzZf5ae63vQkmnAnNmGj2NJzc1hrbBfTzeYr7zaHgZk5w==}
-
-  '@nl-design-system/component-progress@1.0.1-alpha.0':
-    resolution: {integrity: sha512-dwIo+ZPsyYRLI8bW6t6GCmHKXZINpgBgxccI2+ZwqeGS4gctR949iSdLgB/L3nbGCTRMtM3h0ixz5hoPDNadSA==}
+  '@nl-design-system/component-progress@1.0.1-alpha.6':
+    resolution: {integrity: sha512-90FBQalKqsF1ovOdYSMVErpgexk1A+rbMZ4NndIxCH4PKP3q4M8QRopXcZiKc/ozqTNI+L2ErbyVsQ7FLEktSA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1640,6 +1857,12 @@ packages:
 
   '@octokit/types@13.5.0':
     resolution: {integrity: sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==}
+
+  '@persoonlijke-regelingen-assistent/components-react@1.0.0-alpha.145':
+    resolution: {integrity: sha512-A4+fXpbskX/G4hK6XdK/vdZNV5zeCFtX9KFdtuNvk1wxKIT+XSGiamp3IJVsL6EAFaqz4ibYchWYNQ8+mEbpiQ==}
+    peerDependencies:
+      react: 16 - 18
+      react-dom: 16 - 18
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1892,6 +2115,39 @@ packages:
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
 
+  '@types/d3-array@3.0.3':
+    resolution: {integrity: sha512-Reoy+pKnvsksN0lQUlcH6dOGjRZ/3WRwXR//m+/8lt1BXeI4xyaUZoqULNjyXXRuh0Mj4LNpkCvhUpQlY3X5xQ==}
+
+  '@types/d3-color@3.1.0':
+    resolution: {integrity: sha512-HKuicPHJuvPgCD+np6Se9MQvS6OCbJmOjGvylzMJRlDwUXjKTTXs6Pwgk79O09Vj/ho3u1ofXnhFOaEWWPrlwA==}
+
+  '@types/d3-delaunay@6.0.1':
+    resolution: {integrity: sha512-tLxQ2sfT0p6sxdG75c6f/ekqxjyYR0+LwPrsO1mbC9YDBzPJhs2HbJJRrn8Ez1DBoHRo2yx7YEATI+8V1nGMnQ==}
+
+  '@types/d3-format@3.0.1':
+    resolution: {integrity: sha512-5KY70ifCCzorkLuIkDe0Z9YTf9RR2CjBX1iaJG+rgM/cPP+sO+q9YdQ9WdhQcgPj1EQiJ2/0+yUkkziTG6Lubg==}
+
+  '@types/d3-geo@3.1.0':
+    resolution: {integrity: sha512-856sckF0oP/diXtS4jNsiQw/UuK5fQG8l/a9VVLeSouf1/PPbBE1i1W852zVwKwYCBkFJJB7nCFTbk6UMEXBOQ==}
+
+  '@types/d3-interpolate@3.0.1':
+    resolution: {integrity: sha512-jx5leotSeac3jr0RePOH1KdR9rISG91QIE4Q2PYTu4OymLTZfA3SrnURSLzKH48HmXVUru50b8nje4E79oQSQw==}
+
+  '@types/d3-path@1.0.11':
+    resolution: {integrity: sha512-4pQMp8ldf7UaB/gR8Fvvy69psNHkTpD/pVw3vmEi8iZAB9EPMBruB1JvHO4BIq9QkUUd2lV1F5YXpMNj7JPBpw==}
+
+  '@types/d3-scale@4.0.2':
+    resolution: {integrity: sha512-Yk4htunhPAwN0XGlIwArRomOjdoBFXC3+kCxK2Ubg7I9shQlVSJy/pG/Ht5ASN+gdMIalpk8TJ5xV74jFsetLA==}
+
+  '@types/d3-shape@1.3.12':
+    resolution: {integrity: sha512-8oMzcd4+poSLGgV0R1Q1rOlx/xdmozS4Xab7np0eamFFUYq71AU9pOCJEFnkXW2aI/oXdVYJzw6pssbSut7Z9Q==}
+
+  '@types/d3-time-format@2.1.0':
+    resolution: {integrity: sha512-/myT3I7EwlukNOX2xVdMzb8FRgNzRMpsZddwst9Ld/VFe6LyJyRp0s32l/V9XoUzk+Gqu56F/oGk6507+8BxrA==}
+
+  '@types/d3-time@3.0.0':
+    resolution: {integrity: sha512-sZLCdHvBUcNby1cB6Fd3ZBrABbjz3v1Vm90nysCQ6Vt7vd6e/h9Lt7SiJUoEX0l4Dzc7P5llKyhqSi1ycSf1Hg==}
+
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
@@ -1912,6 +2168,9 @@ packages:
 
   '@types/express@4.17.21':
     resolution: {integrity: sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==}
+
+  '@types/geojson@7946.0.14':
+    resolution: {integrity: sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==}
 
   '@types/gtag.js@0.0.12':
     resolution: {integrity: sha512-YQV9bUsemkzG81Ea295/nF/5GijnD2Af7QhEofh7xu+kvCN6RdodgNwwGWXB5GMI3NoyvQo0odNctoH/qLMIpg==}
@@ -1954,6 +2213,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/lodash@4.17.6':
+    resolution: {integrity: sha512-OpXEVoCKSS3lQqjx9GGGOapBeuW5eUboYHRlHP9urXPX25IKZ6AnP5ZRxtVf63iieUbsHxLn8NQ5Nlftc6yzAA==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -2051,6 +2313,9 @@ packages:
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
 
+  '@types/uuid@9.0.8':
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
+
   '@types/ws@8.5.10':
     resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
 
@@ -2121,8 +2386,46 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  '@utrecht/component-library-css@3.0.0':
+    resolution: {integrity: sha512-g4DUnyGqkpg0f307tYbg+KZHHvvIllm4svK8u9TEIcHbXsa86wc+T4ncBZqLbNik4EPOX+g4nDEnePVmFgPS/A==}
+
+  '@utrecht/component-library-css@3.0.1-alpha.18':
+    resolution: {integrity: sha512-3njH4mb42sxQnuiWkKXSe+qgfQhfzg05eIBFwB05yTiW5Z1Af1dCTTKWMeo2Y+mzx9A1yb+lQBEIiPrfYc4e0w==}
+
   '@utrecht/component-library-css@3.2.0':
     resolution: {integrity: sha512-gye9m5NaxZGTTHLeYiCaGwugitNZE6jB1OPyo10m/YGesh6zmM+lCJoFf1UY2Q9UyTQih6SKC9dn5QU7QObY9g==}
+
+  '@utrecht/component-library-react@3.0.0':
+    resolution: {integrity: sha512-7ftpjtQ6ygIMqlB+pWQZAT7psFo1oXkbBSlbVw/uMV5OABRDX5t3V2lN/UDTPjdMRtcj8ZBYl19zPcfkV+Gc5w==}
+    peerDependencies:
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
+
+  '@utrecht/component-library-react@3.0.1-alpha.18':
+    resolution: {integrity: sha512-6N3+XIvf12rQvvQVYqf/gEP90yg+2rS6r960NArwG3dTQh33CGYBbiNk8X1aYUkyKirkrhJP63ffhqfL+6/I9g==}
+    peerDependencies:
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
 
   '@utrecht/component-library-react@3.1.0':
     resolution: {integrity: sha512-mz2CGkPbbAZiv+wcdUPu5MwfZ3fUqIUVI0HKzAfHNDPbB71pnboW8QSMV9HItsQ/bu5+4zM+l4fyJ69mvOGK0w==}
@@ -2140,6 +2443,12 @@ packages:
       vega:
         optional: true
 
+  '@utrecht/components@3.0.0':
+    resolution: {integrity: sha512-TO39Ti6Af50l+I2gt4S3iacGVuVoxBK/+G/bsK9wvii53fO35NYJul7xB98/IYSBmewaN4GtmyWGphVDdFMt1A==}
+
+  '@utrecht/components@3.0.1-alpha.18':
+    resolution: {integrity: sha512-K70QrVpP1lHGdpYNShnhy7FYM1Ce8S1BXW4ES3E+9YBbiA9WgDV+G9iAx2TI10NduOVkjt9KRy7YZ9I8/OUVug==}
+
   '@utrecht/design-tokens@1.0.0-alpha.655':
     resolution: {integrity: sha512-URNcXhjmv1kzD0RJzQpyO8oM8dE7jvmGLjhum7NblJeaVHHo/rTfPCl/jMloJg4uKPh2HsBsnbT4RRvQBNgcwQ==}
 
@@ -2151,6 +2460,25 @@ packages:
 
   '@utrecht/web-component-library-stencil@1.2.0':
     resolution: {integrity: sha512-EGYoIxHGFMHRGfwYpCpxrxQahJbSlJSKhT3L6Jub4EtOyTKe/BXq6EeeQpxUB43JaHk3lV5xXnjuhAqrH12ekg==}
+
+  '@visx/curve@3.3.0':
+    resolution: {integrity: sha512-G1l1rzGWwIs8ka3mBhO/gj8uYK6XdU/3bwRSoiZ+MockMahQFPog0bUkuVgPwwzPSJfsA/E5u53Y/DNesnHQxg==}
+
+  '@visx/group@3.3.0':
+    resolution: {integrity: sha512-yKepDKwJqlzvnvPS0yDuW13XNrYJE4xzT6xM7J++441nu6IybWWwextyap8ey+kU651cYDb+q1Oi6aHvQwyEyw==}
+    peerDependencies:
+      react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+
+  '@visx/scale@3.5.0':
+    resolution: {integrity: sha512-xo3zrXV2IZxrMq9Y9RUVJUpd93h3NO/r/y3GVi5F9AsbOzOhsLIbsPkunhO9mpUSR8LZ9TiumLEBrY+3frRBSg==}
+
+  '@visx/shape@3.5.0':
+    resolution: {integrity: sha512-DP3t9jBQ7dSE3e6ptA1xO4QAIGxO55GrY/6P+S6YREuQGjZgq20TLYLAsiaoPEzFSS4tp0m12ZTPivWhU2VBTw==}
+    peerDependencies:
+      react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+
+  '@visx/vendor@3.5.0':
+    resolution: {integrity: sha512-yt3SEZRVmt36+APsCISSO9eSOtzQkBjt+QRxNRzcTWuzwMAaF3PHCCSe31++kkpgY9yFoF+Gfes1TBe5NlETiQ==}
 
   '@webassemblyjs/ast@1.11.6':
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -2732,6 +3060,9 @@ packages:
     resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
     engines: {node: '>=8'}
 
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+
   clean-css@5.3.3:
     resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
     engines: {node: '>= 10.0'}
@@ -2781,6 +3112,10 @@ packages:
 
   clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+
+  clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
 
   clsx@2.1.1:
@@ -3121,6 +3456,48 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
+  d3-array@3.2.1:
+    resolution: {integrity: sha512-gUY/qeHq/yNqqoCKNq4vtpFLdoCdvyNpWoC/KNjhGbhDuQpAM9sIQQKkXSNpXa9h5KySs/gzm7R88WkUutgwWQ==}
+    engines: {node: '>=12'}
+
+  d3-color@3.1.0:
+    resolution: {integrity: sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==}
+    engines: {node: '>=12'}
+
+  d3-delaunay@6.0.2:
+    resolution: {integrity: sha512-IMLNldruDQScrcfT+MWnazhHbDJhcRJyOEBAJfwQnHle1RPh6WDuLvxNArUju2VSMSUuKlY5BGHRJ2cYyoFLQQ==}
+    engines: {node: '>=12'}
+
+  d3-format@3.1.0:
+    resolution: {integrity: sha512-YyUI6AEuY/Wpt8KWLgZHsIU86atmikuoOmCfommt0LYHiQSPjvX2AcFc38PX0CBpr2RCyZhjex+NS/LPOv6YqA==}
+    engines: {node: '>=12'}
+
+  d3-geo@3.1.0:
+    resolution: {integrity: sha512-JEo5HxXDdDYXCaWdwLRt79y7giK8SbhZJbFWXqbRTolCHFI5jRqteLzCsq51NKbUoX0PjBVSohxrx+NoOUujYA==}
+    engines: {node: '>=12'}
+
+  d3-interpolate@3.0.1:
+    resolution: {integrity: sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==}
+    engines: {node: '>=12'}
+
+  d3-path@1.0.9:
+    resolution: {integrity: sha512-VLaYcn81dtHVTjEHd8B+pbe9yHWpXKZUC87PzoFmsFrJqgFwDe/qxfp5MlfsfM1V5E/iVt0MmEbWQ7FVIXh/bg==}
+
+  d3-scale@4.0.2:
+    resolution: {integrity: sha512-GZW464g1SH7ag3Y7hXjf8RoUuAFIqklOAq3MRl4OaWabTFJY9PN/E1YklhXLh+OQ3fM9yS2nOkCoS+WLZ6kvxQ==}
+    engines: {node: '>=12'}
+
+  d3-shape@1.3.7:
+    resolution: {integrity: sha512-EUkvKjqPFUAZyOlhY5gzCxCeI0Aep04LwIRpsZ/mLFelJiUfnK56jo5JMDSE7yyP2kLSb6LtF+S5chMk7uqPqw==}
+
+  d3-time-format@4.1.0:
+    resolution: {integrity: sha512-dJxPBlzC7NugB2PDLwo9Q8JiTR3M3e4/XANkreKSUxF8vvXKqm1Yfq4Q5dl8budlunRVlUUaDUgFt7eA8D6NLg==}
+    engines: {node: '>=12'}
+
+  d3-time@3.1.0:
+    resolution: {integrity: sha512-VqKjzBLejbSMT4IgbmVgDjpkYrNWUYJnbCGo874u7MMKIWsILRX+OpX/gTk8MqjpT1A/c6HY2dCA77ZN0lkQ2Q==}
+    engines: {node: '>=12'}
+
   dargs@8.1.0:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
     engines: {node: '>=12'}
@@ -3140,6 +3517,9 @@ packages:
   data-view-byte-offset@1.0.0:
     resolution: {integrity: sha512-t/Ygsytq+R995EJ5PZlD4Cu56sWa8InXySaViRzw9apusqsOO2bQP+SbYzAhR0pFKoB+43lYy8rWban9JSuXnA==}
     engines: {node: '>= 0.4'}
+
+  date-fns@3.3.1:
+    resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
 
   debounce@1.2.1:
     resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
@@ -3237,6 +3617,9 @@ packages:
   del@6.1.1:
     resolution: {integrity: sha512-ua8BhapfP0JUJKC/zV9yHHDW/rDoDxP4Zhn3AkA6/xT6gY7jYXJiaeyBZznYVujhZZET+UgcbZiQ7sN3WqcImg==}
     engines: {node: '>=10'}
+
+  delaunator@5.0.1:
+    resolution: {integrity: sha512-8nvh+XBe96aCESrGOqMp/84b13H9cdKbG5P2ejQCh4d4sK9RL4371qou9drQjMhvnPmhWl5hnmqbEE0fXr9Xnw==}
 
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -4455,6 +4838,10 @@ packages:
   internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
     engines: {node: '>= 0.4'}
+
+  internmap@2.0.3:
+    resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
+    engines: {node: '>=12'}
 
   interpret@1.4.0:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
@@ -6745,6 +7132,9 @@ packages:
     resolution: {integrity: sha512-nV6YcJo5wbLW77m+8KjH8aB/7/rxQy9SZ0HY5shnwULfS+9nmTtVXAJET5NdZmCzA4fPI/Hm1wo/Po/4mopOdg==}
     engines: {node: '>=14.18'}
     hasBin: true
+
+  robust-predicates@3.0.2:
+    resolution: {integrity: sha512-IXgzBWvWQwE6PrDI05OvmXUIruQTcoMDzRsOd5CDvHCVLcLHMTSYvOK5Cm46kWqlV3yAbuSpBZdJ5oP5OUoStg==}
 
   rtl-detect@1.1.2:
     resolution: {integrity: sha512-PGMBq03+TTG/p/cRB7HCLKJ1MgDIi07+QU1faSjiYRfmY5UsAttV9Hs08jDAHVwcOwmVLcSJkpwyfXszVjWfIQ==}
@@ -9736,6 +10126,388 @@ snapshots:
 
   '@gar/promisify@1.1.3': {}
 
+  '@gemeente-denhaag/accordion@0.2.3-alpha.374': {}
+
+  '@gemeente-denhaag/action@0.1.1-alpha.40(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/utils': 0.2.3-alpha.373(react@18.3.1)
+      date-fns: 3.3.1
+    transitivePeerDependencies:
+      - react
+
+  '@gemeente-denhaag/alert@0.1.1-alpha.344(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/badge-counter@0.1.1-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/dotindicator': 0.1.1-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/breadcrumb@0.1.1-alpha.302(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
+      react: 18.3.1
+
+  '@gemeente-denhaag/button-group@0.1.1-alpha.243': {}
+
+  '@gemeente-denhaag/button@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/card-authentication@0.1.1-alpha.103(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/button-group': 0.1.1-alpha.243
+      '@gemeente-denhaag/card': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  '@gemeente-denhaag/card-group@0.1.1-alpha.103(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/card-authentication': 0.1.1-alpha.103(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  '@gemeente-denhaag/card@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/checkbox@0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/components-react@0.1.1-alpha.316(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/accordion': 0.2.3-alpha.374
+      '@gemeente-denhaag/action': 0.1.1-alpha.40(react@18.3.1)
+      '@gemeente-denhaag/alert': 0.1.1-alpha.344(react@18.3.1)
+      '@gemeente-denhaag/badge-counter': 0.1.1-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/card': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/card-group': 0.1.1-alpha.103(react@18.3.1)
+      '@gemeente-denhaag/checkbox': 0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/contact-timeline': 0.1.1-alpha.32(react@18.3.1)
+      '@gemeente-denhaag/descriptionlist': 0.1.1-alpha.274
+      '@gemeente-denhaag/divider': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/file': 0.1.1-alpha.46(react@18.3.1)
+      '@gemeente-denhaag/footer': 0.1.1-alpha.233(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-field': 0.3.0-alpha.250(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-field-description': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-field-error-message': 0.3.0-alpha.7(react@18.3.1)
+      '@gemeente-denhaag/form-fieldset': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-label': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-progress': 0.1.1-alpha.249(react@18.3.1)
+      '@gemeente-denhaag/header': 0.1.1-alpha.234(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/list': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/menu': 0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/page': 0.1.1-alpha.234
+      '@gemeente-denhaag/pagination': 0.1.1-alpha.301(react@18.3.1)
+      '@gemeente-denhaag/process-steps': 0.1.0-alpha.203(react@18.3.1)
+      '@gemeente-denhaag/radio-button': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
+      '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
+      '@gemeente-denhaag/sidenav': 0.1.0-alpha.192(react@18.3.1)
+      '@gemeente-denhaag/stylesprovider': 0.1.1-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/tab': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/table': 0.1.1-alpha.276(react@18.3.1)
+      '@gemeente-denhaag/text-input': 0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/textarea': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/contact-timeline@0.1.1-alpha.32(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/file': 0.1.1-alpha.46(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/process-steps': 0.1.0-alpha.203(react@18.3.1)
+      '@gemeente-denhaag/step-marker': 0.0.1-alpha.75(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/utils': 0.2.3-alpha.373(react@18.3.1)
+      clsx: 2.1.0
+    transitivePeerDependencies:
+      - react
+
+  '@gemeente-denhaag/descriptionlist@0.1.1-alpha.274': {}
+
+  '@gemeente-denhaag/design-tokens-common@0.2.3-alpha.376': {}
+
+  '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.376': {}
+
+  '@gemeente-denhaag/divider@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/dotindicator@0.1.1-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/file@0.1.1-alpha.46(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  '@gemeente-denhaag/footer@0.1.1-alpha.233(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button-group': 0.1.1-alpha.243
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link-group': 0.1.3-alpha.235
+      '@gemeente-denhaag/list': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
+      '@utrecht/component-library-css': 3.0.0
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - date-fns
+      - react
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-field-description@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-field-error-message@0.3.0-alpha.7(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/form-field@0.3.0-alpha.250(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-fieldset@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-label@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-progress@0.1.1-alpha.249(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/header-logo@0.1.1-alpha.234': {}
+
+  '@gemeente-denhaag/header@0.1.1-alpha.234(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/breadcrumb': 0.1.1-alpha.302(react@18.3.1)
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/header-logo': 0.1.1-alpha.234
+      '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link-group': 0.1.3-alpha.235
+      '@gemeente-denhaag/menu': 0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
+      '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/iconbutton@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/icons@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/link-group@0.1.3-alpha.235': {}
+
+  '@gemeente-denhaag/link@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/list@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/menu@0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
+      '@types/uuid': 9.0.8
+      '@utrecht/component-library-css': 3.0.0
+      react: 18.3.1
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/page@0.1.1-alpha.234': {}
+
+  '@gemeente-denhaag/pagination@0.1.1-alpha.301(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/process-steps@0.1.0-alpha.203(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
+      '@gemeente-denhaag/step-marker': 0.0.1-alpha.75(react@18.3.1)
+      '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
+      react: 18.3.1
+
+  '@gemeente-denhaag/radio-button@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/responsive-content@0.1.1-alpha.234': {}
+
+  '@gemeente-denhaag/sheet@0.1.0-alpha.170(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/sidenav@0.1.0-alpha.192(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/step-marker@0.0.1-alpha.75(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/tab@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+      uuid: 9.0.1
+
+  '@gemeente-denhaag/table@0.1.1-alpha.276(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@gemeente-denhaag/text-input@0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/textarea@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - date-fns
+      - react-dom
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/typography@0.2.3-alpha.374(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/design-tokens-common': 0.2.3-alpha.376
+      '@gemeente-denhaag/design-tokens-components': 0.2.3-alpha.376
+      '@utrecht/components': 3.0.0
+      react: 18.3.1
+
+  '@gemeente-denhaag/utils@0.2.3-alpha.373(react@18.3.1)':
+    dependencies:
+      date-fns: 3.3.1
+      react: 18.3.1
+
   '@hapi/hoek@9.3.0': {}
 
   '@hapi/topo@5.1.0':
@@ -10117,9 +10889,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.140': {}
 
-  '@nl-design-system/component-index@1.0.0-alpha.21': {}
-
-  '@nl-design-system/component-progress@1.0.1-alpha.0': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.6': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -10337,6 +11107,22 @@ snapshots:
   '@octokit/types@13.5.0':
     dependencies:
       '@octokit/openapi-types': 22.2.0
+
+  '@persoonlijke-regelingen-assistent/components-react@1.0.0-alpha.145(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/components-react': 0.1.1-alpha.316(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-css': 3.0.1-alpha.18
+      '@utrecht/component-library-react': 3.0.1-alpha.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/components': 3.0.1-alpha.18
+      '@visx/group': 3.3.0(react@18.3.1)
+      '@visx/scale': 3.5.0
+      '@visx/shape': 3.5.0(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - date-fns
+      - react-vega
+      - vega
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -10596,6 +11382,36 @@ snapshots:
     dependencies:
       '@types/node': 20.14.2
 
+  '@types/d3-array@3.0.3': {}
+
+  '@types/d3-color@3.1.0': {}
+
+  '@types/d3-delaunay@6.0.1': {}
+
+  '@types/d3-format@3.0.1': {}
+
+  '@types/d3-geo@3.1.0':
+    dependencies:
+      '@types/geojson': 7946.0.14
+
+  '@types/d3-interpolate@3.0.1':
+    dependencies:
+      '@types/d3-color': 3.1.0
+
+  '@types/d3-path@1.0.11': {}
+
+  '@types/d3-scale@4.0.2':
+    dependencies:
+      '@types/d3-time': 3.0.0
+
+  '@types/d3-shape@1.3.12':
+    dependencies:
+      '@types/d3-path': 1.0.11
+
+  '@types/d3-time-format@2.1.0': {}
+
+  '@types/d3-time@3.0.0': {}
+
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 0.7.34
@@ -10629,6 +11445,8 @@ snapshots:
       '@types/express-serve-static-core': 4.17.41
       '@types/qs': 6.9.10
       '@types/serve-static': 1.15.5
+
+  '@types/geojson@7946.0.14': {}
 
   '@types/gtag.js@0.0.12': {}
 
@@ -10667,6 +11485,8 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/lodash@4.17.6': {}
 
   '@types/mdast@3.0.15':
     dependencies:
@@ -10772,6 +11592,8 @@ snapshots:
 
   '@types/unist@3.0.2': {}
 
+  '@types/uuid@9.0.8': {}
+
   '@types/ws@8.5.10':
     dependencies:
       '@types/node': 20.14.2
@@ -10865,7 +11687,25 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
+  '@utrecht/component-library-css@3.0.0': {}
+
+  '@utrecht/component-library-css@3.0.1-alpha.18': {}
+
   '@utrecht/component-library-css@3.2.0': {}
+
+  '@utrecht/component-library-react@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      clsx: 1.2.1
+      lodash.chunk: 4.2.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/component-library-react@3.0.1-alpha.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      clsx: 1.2.1
+      lodash.chunk: 4.2.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/component-library-react@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -10873,6 +11713,14 @@ snapshots:
       lodash.chunk: 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/components@3.0.0':
+    dependencies:
+      clsx: 1.2.1
+
+  '@utrecht/components@3.0.1-alpha.18':
+    dependencies:
+      clsx: 1.2.1
 
   '@utrecht/design-tokens@1.0.0-alpha.655': {}
 
@@ -10885,6 +11733,60 @@ snapshots:
   '@utrecht/web-component-library-stencil@1.2.0':
     dependencies:
       '@stencil/core': 4.8.2
+
+  '@visx/curve@3.3.0':
+    dependencies:
+      '@types/d3-shape': 1.3.12
+      d3-shape: 1.3.7
+
+  '@visx/group@3.3.0(react@18.3.1)':
+    dependencies:
+      '@types/react': 18.2.55
+      classnames: 2.5.1
+      prop-types: 15.8.1
+      react: 18.3.1
+
+  '@visx/scale@3.5.0':
+    dependencies:
+      '@visx/vendor': 3.5.0
+
+  '@visx/shape@3.5.0(react@18.3.1)':
+    dependencies:
+      '@types/d3-path': 1.0.11
+      '@types/d3-shape': 1.3.12
+      '@types/lodash': 4.17.6
+      '@types/react': 18.2.55
+      '@visx/curve': 3.3.0
+      '@visx/group': 3.3.0(react@18.3.1)
+      '@visx/scale': 3.5.0
+      classnames: 2.5.1
+      d3-path: 1.0.9
+      d3-shape: 1.3.7
+      lodash: 4.17.21
+      prop-types: 15.8.1
+      react: 18.3.1
+
+  '@visx/vendor@3.5.0':
+    dependencies:
+      '@types/d3-array': 3.0.3
+      '@types/d3-color': 3.1.0
+      '@types/d3-delaunay': 6.0.1
+      '@types/d3-format': 3.0.1
+      '@types/d3-geo': 3.1.0
+      '@types/d3-interpolate': 3.0.1
+      '@types/d3-scale': 4.0.2
+      '@types/d3-time': 3.0.0
+      '@types/d3-time-format': 2.1.0
+      d3-array: 3.2.1
+      d3-color: 3.1.0
+      d3-delaunay: 6.0.2
+      d3-format: 3.1.0
+      d3-geo: 3.1.0
+      d3-interpolate: 3.0.1
+      d3-scale: 4.0.2
+      d3-time: 3.1.0
+      d3-time-format: 4.1.0
+      internmap: 2.0.3
 
   '@webassemblyjs/ast@1.11.6':
     dependencies:
@@ -11639,6 +12541,8 @@ snapshots:
 
   ci-info@4.0.0: {}
 
+  classnames@2.5.1: {}
+
   clean-css@5.3.3:
     dependencies:
       source-map: 0.6.1
@@ -11686,6 +12590,8 @@ snapshots:
   clone@1.0.4: {}
 
   clsx@1.2.1: {}
+
+  clsx@2.1.0: {}
 
   clsx@2.1.1: {}
 
@@ -12066,6 +12972,48 @@ snapshots:
 
   csstype@3.1.3: {}
 
+  d3-array@3.2.1:
+    dependencies:
+      internmap: 2.0.3
+
+  d3-color@3.1.0: {}
+
+  d3-delaunay@6.0.2:
+    dependencies:
+      delaunator: 5.0.1
+
+  d3-format@3.1.0: {}
+
+  d3-geo@3.1.0:
+    dependencies:
+      d3-array: 3.2.1
+
+  d3-interpolate@3.0.1:
+    dependencies:
+      d3-color: 3.1.0
+
+  d3-path@1.0.9: {}
+
+  d3-scale@4.0.2:
+    dependencies:
+      d3-array: 3.2.1
+      d3-format: 3.1.0
+      d3-interpolate: 3.0.1
+      d3-time: 3.1.0
+      d3-time-format: 4.1.0
+
+  d3-shape@1.3.7:
+    dependencies:
+      d3-path: 1.0.9
+
+  d3-time-format@4.1.0:
+    dependencies:
+      d3-time: 3.1.0
+
+  d3-time@3.1.0:
+    dependencies:
+      d3-array: 3.2.1
+
   dargs@8.1.0: {}
 
   data-uri-to-buffer@4.0.1: {}
@@ -12087,6 +13035,8 @@ snapshots:
       call-bind: 1.0.7
       es-errors: 1.3.0
       is-data-view: 1.0.1
+
+  date-fns@3.3.1: {}
 
   debounce@1.2.1: {}
 
@@ -12167,6 +13117,10 @@ snapshots:
       p-map: 4.0.0
       rimraf: 3.0.2
       slash: 3.0.0
+
+  delaunator@5.0.1:
+    dependencies:
+      robust-predicates: 3.0.2
 
   delayed-stream@1.0.0: {}
 
@@ -13790,6 +14744,8 @@ snapshots:
       es-errors: 1.3.0
       hasown: 2.0.1
       side-channel: 1.0.4
+
+  internmap@2.0.3: {}
 
   interpret@1.4.0: {}
 
@@ -16590,6 +17546,8 @@ snapshots:
   rimraf@5.0.7:
     dependencies:
       glob: 10.4.1
+
+  robust-predicates@3.0.2: {}
 
   rtl-detect@1.1.2: {}
 

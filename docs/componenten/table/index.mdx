@@ -1,0 +1,46 @@
+---
+title: Table
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Table
+pagination_label: Table
+description: UX richtlijnen voor Table component
+slug: /table
+sidebar_custom_props:
+  illustration: TableSketch
+---
+
+{/* @license CC0-1.0 */}
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+// eslint-disable-next-line no-useless-escape
+import Guidelines from "./\_guidelines.md";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+import { Markdown } from "../../../src/components/Markdown";
+
+{/* Add name and description for the component */}
+export const title = "Paragraph";
+export const description = "Toont een alinea aan tekst.";
+export const illustration = "ParagraphSketch";
+export const issueNumber = 39;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Richtlijnen
+
+<Markdown omitH1 headingLevel={3}>
+  <Guidelines />
+</Markdown>
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

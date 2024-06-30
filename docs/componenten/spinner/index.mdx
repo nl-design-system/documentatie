@@ -1,0 +1,38 @@
+---
+title: Spinner
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Spinner
+pagination_label: Spinner
+description: Een 'spinner' is een animatie die aangeeft dat een pagina of een deel van een pagina aan het laden is of een interactie blokkeert.
+slug: /spinner
+sidebar_custom_props:
+  illustration: SpinnerSketch
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Spinner";
+export const description = "Een 'spinner' is een animatie die aangeeft dat een pagina of een deel van een pagina aan het laden is of een interactie blokkeert.";
+export const illustration = "SpinnerSketch";
+export const issueNumber = 75;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

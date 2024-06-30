@@ -1,6 +1,5 @@
 .cardgroup {
   --utrecht-heading-2-font-size: 28px;
-
   display: grid;
   gap: var(--cardgroup-gap);
   grid-template-columns: var(--cardgroup-grid-template-columns);
@@ -10,30 +9,24 @@
 
 .cardgroup--small {
   --cardgroup-grid-template-columns: 1fr 1fr 1fr 1fr;
-  --cardgroup-padding-block-end: 16px;
-  --cardgroup-gap: 32px;
+  --cardgroup-padding-block-end: var(--cardgroup-small-padding-block-end, 16px);
+  --cardgroup-gap: var(--cardgroup-small-gap, 32px);
 }
 
 .cardgroup--medium {
   --cardgroup-grid-template-columns: 1fr 1fr;
-  --cardgroup-padding-block-end: 40px;
-  --cardgroup-gap: 32px;
+  --cardgroup-padding-block-end: var(--cardgroup-medium-padding-block-end, 40px);
+  --cardgroup-gap: var(--cardgroup-medium-gap, 32px);
 }
 
 .cardgroup--large {
-  --cardgroup-padding-block-start: 24px;
-  --cardgroup-padding-block-end: 36px;
+  --cardgroup-padding-block-start: var(--cardgroup-large-padding-block-start, 24px);
+  --cardgroup-padding-block-end: var(--cardgroup-padding-block-end, 36px);
   --cardgroup-grid-template-columns: 1fr;
-  --cardgroup-gap: 24px;
+  --cardgroup-gap: var(--cardgroup-large-gap, 24px);
 }
 
 .cardgroup__card {
-  --utrecht-heading-2-margin-block-start: 0;
-  --utrecht-heading-3-margin-block-start: 0;
-  --utrecht-heading-4-margin-block-start: 0;
-  --utrecht-heading-5-margin-block-start: 0;
-  --utrecht-heading-6-margin-block-start: 0;
-
   align-content: var(--cardgroup-card-align-content, center);
   background-color: var(--cardgroup-card-background-color, var(--nlds-document-background-color, white));
   border-color: var(--cardgroup-card-border-color, #d1dfe3);
@@ -85,6 +78,7 @@
 }
 
 .card__content {
+  --utrecht-heading-2-margin-block-start: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -92,6 +86,7 @@
   padding-block-end: var(--card-content-padding-block-end, 36px);
   padding-block-start: var(--card-content-padding-block-start, 36px);
   padding-inline: var(--card-content-padding-inline, 24px);
+  inline-size: var(--card-content-inline-size);
 }
 
 @media (width => 768px) {

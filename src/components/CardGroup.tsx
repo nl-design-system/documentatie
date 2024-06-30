@@ -56,10 +56,10 @@ export const Card = ({ href, appearance, className, component = 'div', children 
   );
 };
 
-interface CardGroupProps {
+interface CardGroupProps extends HTMLAttributes<HTMLDivElement> {
   appearance?: Appearance;
 }
 
-export const CardGroup = ({ appearance = 'medium', children }: PropsWithChildren<CardGroupProps>) => (
-  <div className={clsx(style['cardgroup'], style[`cardgroup--${appearance}`])}>{children}</div>
+export const CardGroup = ({ appearance = 'medium', children, className }: PropsWithChildren<CardGroupProps>) => (
+  <div className={clsx(style['cardgroup'], style[`cardgroup--${appearance}`], className)}>{children}</div>
 );
