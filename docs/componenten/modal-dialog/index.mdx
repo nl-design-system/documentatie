@@ -1,0 +1,38 @@
+---
+title: Modal dialog
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Modal dialog
+pagination_label: Modal dialog
+description: Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.
+slug: /modal-dialog
+sidebar_custom_props:
+  illustration: ModalDialogSketch
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Modal dialog";
+export const description = "Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.";
+export const illustration = "ModalDialogSketch";
+export const issueNumber = 66;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

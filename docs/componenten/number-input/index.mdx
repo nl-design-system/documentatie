@@ -1,0 +1,38 @@
+---
+title: Number input
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Number input
+pagination_label: Number input
+description: " "
+slug: /number-input
+sidebar_custom_props:
+  illustration: NumberInputSketch
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Number input";
+export const description = "";
+export const illustration = "NumberInputSketch";
+export const issueNumber = 194;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

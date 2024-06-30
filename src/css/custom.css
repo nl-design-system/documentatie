@@ -35,12 +35,18 @@
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
+  --utrecht-heading-2-margin-block-start: 32px;
 
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: auto !important;
 
   /* --docusaurus-announcement-bar-height: 50px; */
 }
+
+.utrecht-breadcrumb-nav {
+  margin-block-end: var(--utrecht-breadcrumb-nav-margin-block-end, 20px);
+}
+
 .container--narrow {
   --ifm-container-width: 784px;
   --ifm-container-width-xl: var(--ifm-container-width);
@@ -916,4 +922,24 @@ pre {
 
 .theme-doc-sidebar-container {
   margin-top: 0 !important;
+}
+
+/* HACK: Persoonlijke Regelingen Assistent DonutChart */
+.pra-donutchart {
+  border: none !important;
+  display: inline-flex !important;
+  inline-size: auto !important;
+  padding-inline-end: 1ch;
+  vertical-align: middle;
+}
+
+.pra-donutchart-chart {
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.pra-donutchart-legend {
+  display: none !important;
 }

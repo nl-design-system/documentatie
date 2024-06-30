@@ -1,3 +1,4 @@
+import { toKebabCase } from '@site/src/utils';
 import { Figure, FigureCaption } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React from 'react';
@@ -5,35 +6,30 @@ import style from './ComponentIllustration.module.css';
 import * as Sketch from './sketches';
 
 type ComponentIllustrationProps = {
-  id: string;
-  stateModifier: 'help-wanted' | 'community' | 'candidate' | 'hall-of-fame';
+  component: string;
+  relayStep: string;
   description: string;
 };
 
-export const ComponentIllustration = ({ id, stateModifier, description }: ComponentIllustrationProps) => {
-  const kebabToPascal = (s: string) =>
-    s
-      .split('-')
-      .map((word) => {
-        const [first, ...rest] = word.split('');
-        return first.toUpperCase() + rest.join('');
-      })
-      .join('');
-
+export const ComponentIllustration = ({ component, relayStep, description }: ComponentIllustrationProps) => {
   const getFigure = () => {
-    const component = kebabToPascal(id);
-
     if (Object.prototype.hasOwnProperty.call(Sketch, component)) {
-      return { SVG: Sketch[component], caption: description, modifier: stateModifier };
+      return { SVG: Sketch[component], caption: description };
     } else {
-      return { SVG: Sketch.Todo, caption: 'Leeg grid zonder component schets' };
+      return { SVG: Sketch.TodoSketch, caption: 'Leeg grid zonder component schets' };
     }
   };
 
-  const { SVG, caption, modifier } = getFigure();
+  const { SVG, caption } = getFigure();
+  const stateModifier = toKebabCase(relayStep);
 
   return (
-    <Figure className={clsx(style['component-illustration'], modifier && style[`component-illustration--${modifier}`])}>
+    <Figure
+      className={clsx(
+        style['component-illustration'],
+        stateModifier && style[`component-illustration--${stateModifier}`],
+      )}
+    >
       <SVG className={clsx(style['component-illustration__svg'])} />
       <FigureCaption className={clsx(style['component-illustration__caption'])}>{caption}</FigureCaption>
     </Figure>

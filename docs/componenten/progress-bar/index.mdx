@@ -1,0 +1,38 @@
+---
+title: Progress bar
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Progress bar
+pagination_label: Progress bar
+description: " "
+slug: /progress-bar
+sidebar_custom_props:
+  illustration: ProgressBarSketch
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Progress bar";
+export const description = "";
+export const illustration = "ProgressBarSketch";
+export const issueNumber = 42;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />

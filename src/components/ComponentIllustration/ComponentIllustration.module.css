@@ -1,13 +1,14 @@
 .component-illustration {
   display: inline;
   margin: 0;
-  padding-inline: var(--component-illustration-padding-inline, 24px);
+  padding-inline: var(--component-illustration-padding-inline);
 }
 
 .component-illustration__svg {
   height: auto;
-  max-height: var(--component-illustration-svg-max-height, 185px);
-  width: 100%;
+  max-height: var(--component-illustration-svg-max-height);
+  width: auto;
+  max-width: 100%;
 }
 
 .component-illustration__caption {

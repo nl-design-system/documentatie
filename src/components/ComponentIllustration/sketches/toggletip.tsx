@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 
-export const Toggletip = (props: HTMLAttributes<SVGElement>) => (
+export const ToggletipSketch = (props: HTMLAttributes<SVGElement>) => (
   <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <g clipPath="url(#clip0_642_3535)">
       <rect width="960" height="540" fill="var(--component-illustration-background-color, white)" />
