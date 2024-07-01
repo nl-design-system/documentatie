@@ -7,6 +7,13 @@ Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/le
 Redirect 301 "/counter-badge" "/number-badge"
 Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
 Redirect 301 "/blog/nlds-zelfstandig" "/blog/nl-design-system-zelfstandig-verder"
+Redirect 301 "/componenten/definition-of-done" "/handboek/component-bijdragen/definition-of-done"
+Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/component-bijdragen/help-wanted-stappenplan"
+Redirect 301 "/handboek/community-stappenplan" "/handboek/component-bijdragen/community-stappenplan"
+Redirect 301 "/handboek/candidate-stappenplan" "/handboek/component-bijdragen/candidate-stappenplan"
+Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen/hall-of-fame-stappenplan"
+Redirect 301 "/button-group" "/action-group"
+Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
@@ -25,4 +32,9 @@ Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
 
 # until we have multiple factsheets and turn /factsheets into an overview page
-RedirectMatch 302 "^/factsheets/?$" "/factsheets/managers"
+RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
+
+# until the component is part of help-wanted board
+Redirect 307 "/calendar" "/componenten"
+Redirect 307 "/character-count" "/componenten"
+Redirect 307 "/tooltip" "/componenten"
