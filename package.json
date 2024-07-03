@@ -73,7 +73,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@argos-ci/cli": "2.1.0",
+    "@argos-ci/cli": "2.2.0",
     "@argos-ci/playwright": "3.1.0",
     "@changesets/cli": "2.27.7",
     "@docsearch/react": "3.6.0",

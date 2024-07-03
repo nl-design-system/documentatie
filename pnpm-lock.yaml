@@ -46,8 +46,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@argos-ci/cli':
-        specifier: 2.1.0
-        version: 2.1.0
+        specifier: 2.2.0
+        version: 2.2.0
       '@argos-ci/playwright':
         specifier: 3.1.0
         version: 3.1.0
@@ -332,13 +332,17 @@ packages:
     resolution: {integrity: sha512-4dpz76kW0KnXCYdxtkcdiaYUM4owmKtT9zPqrd1yPo+VuSNCNULyCZJ4mdy0aXWT716JLMMmIZ3AnQSkyaqvaA==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.1.0':
-    resolution: {integrity: sha512-nbubtKVqtGt4VW0AhSDxBL3wryk1INC9Fv4Hk+BEI72nATjA7OMWqZKs/iVQp4iDbrk7ydnzy+0dSNN1m5WPYg==}
+  '@argos-ci/cli@2.2.0':
+    resolution: {integrity: sha512-znga+b+Hrn+Sh6IBU9z70B36EYNW48akcnn/Qec2MiM0Ppc9EYgo9AE0lWDJoHLKA8j9FIqe+Lb+st9qmzgong==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
   '@argos-ci/core@2.2.0':
     resolution: {integrity: sha512-T5W37CZ6HZjRcVAXuPj0wUB/Fm4VdwLvKpQL9yqSwiJganeNz7u8AFYJ30ujSUJS1jdUViW5TNnmsgDjuvGyTQ==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/core@2.3.0':
+    resolution: {integrity: sha512-0mHncBeOD7GFYfGZYUEcDgLyzsvPyxK/L1MROfAurFeWcw89ODG24JEdPsECtZBSCZMmMcK8XqeJIJkZsnDGZA==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/playwright@3.1.0':
@@ -1517,6 +1521,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1524,6 +1529,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -4462,6 +4468,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -6424,6 +6431,7 @@ packages:
   read-package-json@6.0.4:
     resolution: {integrity: sha512-AEtWXYfopBj2z5N5PbkAOeNHRPUg5q+Nen7QLxV8M2zJq1ym6/lCz3fYNTCXe19puu2d06jfHhrP7v/S2PtMMw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-pkg-up@7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
@@ -7974,9 +7982,9 @@ snapshots:
 
   '@argos-ci/browser@2.1.2': {}
 
-  '@argos-ci/cli@2.1.0':
+  '@argos-ci/cli@2.2.0':
     dependencies:
-      '@argos-ci/core': 2.2.0
+      '@argos-ci/core': 2.3.0
       commander: 12.1.0
       ora: 8.0.1
       update-notifier: 7.0.0
@@ -7984,6 +7992,18 @@ snapshots:
       - supports-color
 
   '@argos-ci/core@2.2.0':
+    dependencies:
+      '@argos-ci/util': 2.0.0
+      axios: 1.7.0(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.33.4
+      tmp: 0.2.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@argos-ci/core@2.3.0':
     dependencies:
       '@argos-ci/util': 2.0.0
       axios: 1.7.0(debug@4.3.4)
@@ -10288,7 +10308,7 @@ snapshots:
       proc-log: 3.0.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.6.0
+      semver: 7.6.2
       which: 3.0.1
     transitivePeerDependencies:
       - bluebird
@@ -15035,7 +15055,7 @@ snapshots:
     dependencies:
       hosted-git-info: 6.1.1
       proc-log: 3.0.0
-      semver: 7.6.0
+      semver: 7.6.2
       validate-npm-package-name: 5.0.0
 
   npm-package-json-lint@8.0.0(typescript@5.4.5):
@@ -15070,7 +15090,7 @@ snapshots:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 10.1.0
-      semver: 7.6.0
+      semver: 7.6.2
 
   npm-registry-fetch@14.0.5:
     dependencies:
@@ -16347,7 +16367,7 @@ snapshots:
 
   semver-diff@4.0.0:
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.2
 
   semver-utils@1.1.4: {}
 
@@ -17355,7 +17375,7 @@ snapshots:
       is-npm: 6.0.0
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.6.0
+      semver: 7.6.2
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
