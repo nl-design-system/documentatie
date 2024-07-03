@@ -41,7 +41,7 @@ Momenteel staat het project nog in de opstartfase, zegt Aline. “We zijn begonn
 
 Het gaat hier om de [Button login](https://nl-design-system.github.io/lux/?path=/docs/web-components-button-login--docs). Vanuit Logius is er beschreven hoe de inlogknoppen van DigiD, eHerkenning en European login eruit moeten zien. Als LUX bieden wij dit component aan, zodat een organisatie eenvoudig aan de [Stijlhandleiding aansluiten Toegang](https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang) kan voldoen. Het is een uniek component. Zo zijn updates aan de teksten, logo’s of opmaak gemakkelijk te doen.
 
-![screenshot van stickervel in Figma, met daarin een lijst van buttons met verschillende login opties zoals digid en eherkenning](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/digid-stickervel.png)
+![screenshot van stickervel in Figma, met daarin een lijst van buttons met verschillende login opties zoals digid en eherkenning](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/digid-stickervel.png) _Het [button login component](https://nl-design-system.github.io/lux/?path=/docs/web-components-button-login--docs) in Figma_
 
 De community van NL Design System is voor Aline dé plek om hun ideeën te toetsen en te testen. Aline: “Het is zo fijn dat mensen vanuit de community er echt mee aan de slag gaan. Het is een makkelijke manier om gelijkgestemde professionals te vinden die willen helpen en feedback geven. Het kernteam begeleidt ons hierbij, zodat de component door [het estafettemodel](/handboek/estafettemodel) van het NL Design System gaat. Uiteindelijk is het de bedoeling om de component ‘overheidsbreed’ te kunnen gebruiken.”
 
