@@ -33,6 +33,8 @@ Daarom begonnen we met het voeren van de nodige gesprekken om aan te sluiten op 
 
 De grootste uitdaging van LUX is dat het over meerdere producten gaat. Denk aan [MijnOverheid](https://mijn.overheid.nl), [Digitoegankelijk](https://digitoegankelijkl.nl) en [DigiD](https://digid.nl). Deze producten hebben momenteel allemaal een eigen Storybook en Figma-bibliotheek. LUX is een soort mini community binnen NL Design System. Hierdoor kunnen wij veel leren en hergebruiken van de werkwijze van NL Design System. Maar ook van de design tokens voor meerdere thema’s, hoe je elkaars componenten kunt hergebruiken of zelf een community component opbouwt.
 
+![video van scherm in figma waar met een dropdown verschillende huisstijlen worden toegepast en dezelfde elementen er steeds net anders uit zien](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logius-huisstijlen.gif) _Componenten in meerdere thema's_
+
 De meeste partijen die aansluiten bij NL Design System hebben 1 huisstijl. Logius heeft er meerdere, daarom is de indeling van de tokens voor ons heel belangrijk. De kennis die wij hierover op doe delen we graag weer met de community.
 
 “Het is een puzzel hoe we samen met zoveel teams en afdelingen kunnen werken aan een gezamenlijk design system", zegt Raoul. “Gelukkig is er enorm veel enthousiasme en helpt het dat we nu een toegewijd team hebben die de andere collega’s hier in kunnen helpen.
