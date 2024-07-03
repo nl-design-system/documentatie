@@ -1,4 +1,4 @@
-/*! For license information please see main.c69507a5.js.LICENSE.txt */
+/*! For license information please see main.ab5c482a.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -29,7 +29,7 @@
    var n = r(86953),
     o = r.n(n),
     a = r(16887);
-   const c = { '000024cb': [() => Promise.all([r.e(40532), r.e(14889), r.e(3247)]).then(r.bind(r, 49636)), '@site/docs/richtlijnen/formulieren/labels.mdx', 49636], '0088abd0': [() => r.e(1036).then(r.bind(r, 79180)), '@site/docs/community/events/design-systems-week-2024.mdx', 79180], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 2236)), '@theme/BlogTagsListPage', 2236], '02601132': [() => r.e(1384).then(r.t.bind(r, 86724, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834-list.json', 86724], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 17891)), '@site/docs/project/kernteam.mdx', 17891], '04087e03': [() => r.e(18670).then(r.t.bind(r, 87256, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431.json', 87256], '0556c22e': [() => Promise.all([r.e(40532), r.e(14889), r.e(63696)]).then(r.bind(r, 92897)), '@site/docs/richtlijnen/formulieren/descriptions.mdx', 92897], '08d81d65': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(67132)]).then(r.bind(r, 54043)), '@site/docs/componenten/rich-text-content/index.mdx', 54043], '09d51e35': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44014)]).then(r.bind(r, 71055)), '@site/docs/componenten/legend/index.mdx', 71055], '0a6c776a': [() => r.e(90418).then(r.bind(r, 45149)), '@site/blog/2023/20231109-spacing-tokens.md', 45149], '0abe0c91': [() => r.e(18552).then(r.t.bind(r, 56007, 19)), '~docs/default/category-en-voorbeelden-category-voorbeelden-2d6.json', 56007], '0ca15ddc': [() => r.e(75220).then(r.t.bind(r, 91370, 19)), '~docs/default/category-en-richtlijnen-category-wcag-succescriteria-uitgelegd-ae0.json', 91370], '0cf410ab': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54496)]).then(r.bind(r, 27853)), '@site/docs/componenten/dot-badge/index.mdx', 27853], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 96680)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 96680], '0eacf79f': [() => r.e(34193).then(r.bind(r, 86639)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 86639], '0f134466': [() => Promise.all([r.e(40532), r.e(14889), r.e(8321)]).then(r.bind(r, 67285)), '@site/docs/richtlijnen/formulieren/placeholders.mdx', 67285], '0fd7eb6e': [() => r.e(65361).then(r.t.bind(r, 95896, 19)), '~blog/default/en-blog-tags-design-tokens-7be.json', 95896], '121271ef': [() => r.e(79749).then(r.bind(r, 32774)), '@site/docs/wcag/4.1.3.mdx', 32774], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 43447)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 43447], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 12732)), '@site/docs/community/events/heartbeat/videos.mdx', 12732], '13ecdb40': [() => r.e(75854).then(r.bind(r, 62990)), '@site/docs/richtlijnen/stijl/kleuren.md', 62990], '14a250a4': [() => r.e(86926).then(r.t.bind(r, 6262, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3.json', 6262], '14eb3368': [() => Promise.all([r.e(40532), r.e(40168), r.e(9817)]).then(r.bind(r, 72576)), '@theme/DocCategoryGeneratedIndexPage', 72576], '150707f3': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88230)]).then(r.bind(r, 87433)), '@site/docs/componenten/heading-1/index.mdx', 87433], '15a4ec34': [() => r.e(14418).then(r.bind(r, 80408)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 80408], '164232d1': [() => r.e(50607).then(r.t.bind(r, 13231, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa-list.json', 13231], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 45754)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 45754], '16fd2d30': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(33430)]).then(r.bind(r, 55746)), '@site/docs/componenten/heading-2/index.mdx', 55746], 17896441: [() => Promise.all([r.e(40532), r.e(6418), r.e(27918)]).then(r.bind(r, 86001)), '@theme/DocItem', 86001], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 26385)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 26385], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 93285)), '@site/docs/handboek/designer/figma-structuur.mdx', 93285], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 20414)), '@theme/SearchPage', 20414], '1aa77dba': [() => r.e(78849).then(r.t.bind(r, 52138, 19)), '~blog/default/en-blog-tags-meta-594-list.json', 52138], '1b445115': [() => r.e(35432).then(r.bind(r, 12700)), '@site/docs/handboek/designer/community.md', 12700], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 75401)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 75401], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(34894)]).then(r.bind(r, 51671)), '@site/docs/componenten/checkbox/index.mdx', 51671], '1c4e5244': [() => r.e(80637).then(r.t.bind(r, 33328, 19)), '~docs/default/category-en-voorbeelden-category-patronen-0d6.json', 33328], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 73227)), '@site/src/pages/index.tsx', 73227], '1e45e22d': [() => r.e(70591).then(r.bind(r, 56809)), '@site/docs/footer/coc.md', 56809], '1fd620f1': [() => r.e(58990).then(r.bind(r, 38919)), '@site/docs/wcag/2.1.1.mdx', 38919], '20a411f0': [() => r.e(2936).then(r.t.bind(r, 39916, 19)), '~docs/default/category-en-community-category-heartbeat-dff.json', 39916], '20f2808f': [() => r.e(30761).then(r.bind(r, 939)), '@site/docs/handboek/leverancier/introductie.md', 939], '210e540d': [() => r.e(2601).then(r.bind(r, 52425)), '@site/docs/wcag/2.4.13.mdx', 52425], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 83703)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 83703], '2289dd67': [() => r.e(16451).then(r.bind(r, 58942)), '@site/docs/handboek/designer/stappenplan.mdx', 58942], '22ebae92': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20858)]).then(r.bind(r, 48467)), '@site/docs/componenten/text-input-group/index.mdx', 48467], '232d0db4': [() => r.e(2716).then(r.t.bind(r, 23538, 19)), '~blog/default/en-blog-tags-buitenland-7d6.json', 23538], '235c86a2': [() => r.e(88979).then(r.bind(r, 55384)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 55384], '2383fbae': [() => r.e(90909).then(r.bind(r, 81748)), '@site/docs/footer/privacyverklaring.md', 81748], 24071437: [() => r.e(58687).then(r.bind(r, 7446)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 7446], '2435a34f': [() => r.e(10936).then(r.t.bind(r, 16413, 19)), '~blog/default/en-blog-tags-formulieren-89f-list.json', 16413], '257a732d': [() => r.e(74937).then(r.t.bind(r, 91203, 19)), '~blog/default/en-blog-tags-nl-design-system-be8.json', 91203], '25b93367': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(98634)]).then(r.bind(r, 64277)), '@site/docs/componenten/link/index.mdx', 64277], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 62334)), '@site/docs/handboek/manager/introductie.md', 62334], '27ff9d14': [() => r.e(22669).then(r.t.bind(r, 19665, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431-list.json', 19665], '281e6f8e': [() => Promise.all([r.e(40168), r.e(16953), r.e(98218)]).then(r.bind(r, 57858)), '@site/docs/project/blijf-op-de-hoogte.mdx', 57858], '28d3d582': [() => r.e(96597).then(r.bind(r, 5250)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 5250], '28e99dcb': [() => r.e(73722).then(r.bind(r, 26286)), '@site/docs/wcag/3.1.1.mdx', 26286], '2933852b': [() => r.e(6752).then(r.bind(r, 54887)), '@site/docs/footer/toegankelijkheidsverklaring.md', 54887], '2c881fe2': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(82200)]).then(r.bind(r, 99551)), '@site/docs/componenten/ordered-list/index.mdx', 99551], '2d21fce7': [() => r.e(94210).then(r.bind(r, 12793)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 12793], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2da1f935': [() => r.e(41724).then(r.t.bind(r, 77640, 19)), '~blog/default/en-blog-tags-architectuur-246-list.json', 77640], '2e11687d': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(42112)]).then(r.bind(r, 53163)), '@site/docs/componenten/data-badge/index.mdx', 53163], '2f0980e2': [() => r.e(71752).then(r.bind(r, 46341)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 46341], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(81565)]).then(r.bind(r, 64033)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 64033], '2fe778e5': [() => r.e(32697).then(r.bind(r, 37400)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 37400], '3015a2b9': [() => r.e(78882).then(r.bind(r, 74807)), '@site/docs/richtlijnen/stijl/typografie.md', 74807], '306030dd': [() => r.e(20932).then(r.bind(r, 22005)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 22005], '3060e3ce': [() => r.e(11078).then(r.t.bind(r, 20299, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-97f.json', 20299], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 82321)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 82321], '323b7945': [() => Promise.all([r.e(40168), r.e(16953), r.e(31875)]).then(r.bind(r, 61777)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 61777], '32470cbe': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(16406)]).then(r.bind(r, 57456)), '@site/docs/componenten/figure/index.mdx', 57456], 32636356: [() => r.e(52400).then(r.bind(r, 98933)), '@site/docs/project/newsletter-success.mdx', 98933], '333bf37f': [() => r.e(79479).then(r.bind(r, 46845)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 46845], '3464a859': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(41769)]).then(r.bind(r, 30556)), '@site/docs/componenten/page-header/index.mdx', 30556], '34a37bdc': [() => r.e(55856).then(r.t.bind(r, 34863, 19)), '~docs/default/category-en-handboek-category-voor-organisaties-bf9.json', 34863], '34b859b1': [() => r.e(97177).then(r.bind(r, 71959)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 71959], '35677b07': [() => r.e(15956).then(r.t.bind(r, 28433, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6-list.json', 28433], '3679878e': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(76318)]).then(r.bind(r, 7375)), '@site/docs/componenten/pagination/index.mdx', 7375], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 1117)), '@theme/DocTagsListPage', 1117], '37c1945c': [() => Promise.all([r.e(40532), r.e(77913), r.e(30561)]).then(r.bind(r, 48695)), '@site/docs/wcag/2.4.1.mdx', 48695], '381b9e37': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(9910)]).then(r.bind(r, 31481)), '@site/docs/componenten/action-group/index.mdx', 31481], '38471ef1': [() => r.e(37377).then(r.bind(r, 615)), '@site/blog/2023/20231214-community-online-formulieren.md', 615], '39418f7b': [() => r.e(28417).then(r.t.bind(r, 32258, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a.json', 32258], '3a63c8bb': [() => r.e(34866).then(r.t.bind(r, 59970, 19)), '~blog/default/en-blog-tags-nl-design-system-be8-list.json', 59970], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 97239)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 97239], '3bb8863e': [() => Promise.all([r.e(40532), r.e(16953), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 14855)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 14855], '3d377413': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(17903)]).then(r.bind(r, 97735)), '@site/docs/componenten/page-footer/index.mdx', 97735], '3d58a721': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(9591)]).then(r.bind(r, 54593)), '@site/docs/componenten/date-input-group/index.mdx', 54593], '3d7707fa': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(86423)]).then(r.bind(r, 6230)), '@site/docs/componenten/alert/index.mdx', 6230], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 32579)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 32579], '3ec61807': [() => r.e(71955).then(r.t.bind(r, 93261, 19)), '~blog/default/en-blog-tags-buitenland-7d6-list.json', 93261], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 2529)), '@site/blog/2019/20190606-update-nl-design-system.md', 2529], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(506)]).then(r.bind(r, 46084)), '@site/docs/componenten/pre-heading/index.mdx', 46084], '3ff65370': [() => r.e(80852).then(r.t.bind(r, 79963, 19)), '~blog/default/en-blog-tags-estafettemodel-16f.json', 79963], 40355699: [() => r.e(88567).then(r.bind(r, 5844)), '@site/blog/2024/20240522-community-blocks.md', 5844], '411e6d0c': [() => r.e(34104).then(r.bind(r, 90789)), '@site/docs/handboek/introductie.md', 90789], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 17929)), '@site/docs/handboek/estafettemodel.mdx', 17929], '452f106e': [() => r.e(10860).then(r.bind(r, 48437)), '@site/docs/footer/wcag-em-rapport-2023.md', 48437], '45431ea1': [() => r.e(54220).then(r.bind(r, 15637)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 15637], '45a413d9': [() => Promise.all([r.e(40532), r.e(16953), r.e(13026)]).then(r.bind(r, 98447)), '@site/src/pages/bingo/index.tsx', 98447], '463aafc7': [() => r.e(99220).then(r.t.bind(r, 73190, 19)), '~blog/default/en-blog-tags-estafettemodel-16f-list.json', 73190], 46500269: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15593)]).then(r.bind(r, 11882)), '@site/docs/componenten/range/index.mdx', 11882], '465cea2f': [() => r.e(16636).then(r.bind(r, 92497)), '@site/docs/project/links.mdx', 92497], '489d45c6': [() => r.e(3900).then(r.bind(r, 88808)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 88808], '48c36009': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(78239)]).then(r.bind(r, 29761)), '@site/docs/componenten/date-input/index.mdx', 29761], '4921393f': [() => r.e(17205).then(r.t.bind(r, 28363, 19)), '~docs/default/category-en-handboek-category-voor-designers-366.json', 28363], '492f3cec': [() => r.e(17979).then(r.t.bind(r, 92224, 19)), '~docs/default/category-en-voorbeelden-category-patronen-formulieren-208.json', 92224], '49d1ff28': [() => r.e(98477).then(r.bind(r, 95280)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 95280], '4a8999c7': [() => r.e(17329).then(r.t.bind(r, 32488, 19)), '~blog/default/en-blog-tags-een-overheid-6d9.json', 32488], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(45119)]).then(r.bind(r, 66257)), '@site/docs/componenten/date-picker/index.mdx', 66257], '4ea98559': [() => r.e(97323).then(r.bind(r, 50076)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 50076], '4ecafe36': [() => r.e(58279).then(r.t.bind(r, 72985, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5.json', 72985], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54942)]).then(r.bind(r, 31555)), '@site/docs/componenten/summary-list/index.mdx', 31555], '5110c353': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(40284)]).then(r.bind(r, 29665)), '@site/docs/componenten/button/index.mdx', 29665], '51323ca8': [() => r.e(86464).then(r.bind(r, 93957)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 93957], '520ccf84': [() => r.e(32362).then(r.t.bind(r, 56877, 19)), '~blog/default/en-blog-tags-design-tokens-7be-list.json', 56877], '5293bf37': [() => r.e(66004).then(r.bind(r, 94949)), '@site/docs/community/events/estafettemodeldag.mdx', 94949], '52bdf594': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(94770)]).then(r.bind(r, 9666)), '@site/docs/componenten/form-field-radio-option/index.mdx', 9666], '53ec08ea': [() => r.e(47599).then(r.t.bind(r, 68298, 19)), '~docs/default/tag-en-tags-community-711.json', 68298], '54b1e9e3': [() => r.e(6981).then(r.bind(r, 3708)), '@site/docs/richtlijnen/formulieren/README.mdx', 3708], '555de4b4': [() => r.e(22281).then(r.bind(r, 15528)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 15528], '558da7c0': [() => r.e(13027).then(r.bind(r, 11011)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 11011], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '564db768': [() => r.e(51244).then(r.bind(r, 40539)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 40539], '569c0776': [() => r.e(44307).then(r.bind(r, 90094)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 90094], '582c75ff': [() => r.e(94268).then(r.bind(r, 8056)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 8056], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88094)]).then(r.bind(r, 37599)), '@site/docs/componenten/fieldset/index.mdx', 37599], '5aa1d05c': [() => Promise.all([r.e(40532), r.e(14889), r.e(28533)]).then(r.bind(r, 28160)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour.mdx', 28160], '5b0260c8': [() => r.e(50681).then(r.bind(r, 2528)), '@site/docs/wcag/3.3.3.mdx', 2528], '5e41da51': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(94960)]).then(r.bind(r, 94285)), '@site/docs/componenten/drawer/index.mdx', 94285], '5e427ce0': [() => r.e(79442).then(r.bind(r, 79082)), '@site/docs/wcag/4.1.2.mdx', 79082], '5e95c892': [() => r.e(29661).then(r.bind(r, 60133)), '@theme/DocsRoot', 60133], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5ecc2432': [() => r.e(78264).then(r.bind(r, 50437)), '@site/docs/wcag/2.4.7.mdx', 50437], '5f26db3b': [() => r.e(48074).then(r.bind(r, 94802)), '@site/docs/voorbeelden/templates/README.md', 94802], '5f7673a0': [() => r.e(4629).then(r.bind(r, 75827)), '@site/docs/project/over-nl-design-system.mdx', 75827], '6076374a': [() => r.e(70374).then(r.bind(r, 73867)), '@site/docs/footer/colofon.mdx', 73867], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 73071)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 73071], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 31223)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 31223], '61e31d3f': [() => r.e(88916).then(r.t.bind(r, 75298, 19)), '~blog/default/en-blog-tags-een-overheid-6d9-list.json', 75298], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 28183)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 28183], '66227b34': [() => r.e(80249).then(r.bind(r, 92285)), '@site/docs/wcag/2.4.4.mdx', 92285], '667b53b1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(77936)]).then(r.bind(r, 41739)), '@site/docs/componenten/task-list/index.mdx', 41739], '6765bbe1': [() => r.e(62951).then(r.t.bind(r, 51116, 19)), '~blog/default/en-blog-tags-lettertype-b29.json', 51116], '67d19623': [() => r.e(49451).then(r.bind(r, 81889)), '@site/docs/open-source/eupl.md', 81889], 68117824: [() => r.e(73526).then(r.t.bind(r, 84245, 19)), '~blog/default/en-blog-tags-lettertype-b29-list.json', 84245], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 83180)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 83180], '6875c492': [() => Promise.all([r.e(40532), r.e(40168), r.e(48610)]).then(r.bind(r, 97406)), '@theme/BlogTagsPostsPage', 97406], '68b96050': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(23221)]).then(r.bind(r, 77241)), '@site/docs/componenten/paragraph/index.mdx', 77241], '68ddddde': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(5643)]).then(r.bind(r, 33360)), '@site/docs/componenten/skip-link/index.mdx', 33360], '6a2f4d46': [() => r.e(59794).then(r.t.bind(r, 59369, 19)), '~blog/default/en-blog-tags-design-systems-0c3-list.json', 59369], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(18181)]).then(r.bind(r, 24555)), '@site/docs/componenten/form-field/index.mdx', 24555], '6ab13dac': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(83760)]).then(r.bind(r, 94867)), '@site/docs/componenten/form-field-partial-label/index.mdx', 94867], '6ad1359b': [() => Promise.all([r.e(40532), r.e(14889), r.e(43800)]).then(r.bind(r, 53596)), '@site/docs/richtlijnen/formulieren/questions.mdx', 53596], '6b7d4ee0': [() => r.e(10093).then(r.bind(r, 17624)), '@site/docs/richtlijnen/introductie.md', 17624], '6c269cf8': [() => Promise.all([r.e(40532), r.e(40168), r.e(14889), r.e(22305), r.e(12356)]).then(r.bind(r, 23499)), '@site/src/pages/contrast/index.tsx', 23499], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 4129)), '@site/docs/handboek/design-tokens/README.mdx', 4129], '6dba794c': [() => r.e(13961).then(r.t.bind(r, 57040, 19)), '~blog/default/en-blog-tags-designers-2a7.json', 57040], '6e114b37': [() => r.e(31906).then(r.bind(r, 80795)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 80795], '6f323067': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(17768)]).then(r.bind(r, 16680)), '@site/docs/componenten/form-field-partial/index.mdx', 16680], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 59346)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 59346], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(72755)]).then(r.bind(r, 60881)), '@site/docs/componenten/heading/index.mdx', 60881], '6fdf8dbf': [() => r.e(20940).then(r.bind(r, 19563)), '@site/docs/wcag/4.1.1.mdx', 19563], '707334e0': [() => r.e(44136).then(r.bind(r, 84980)), '@site/docs/richtlijnen/stijl/iconen.md', 84980], '70ebfaef': [() => r.e(33728).then(r.bind(r, 23728)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 23728], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 26291)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 26291], '70fe0045': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(97979)]).then(r.bind(r, 88221)), '@site/docs/componenten/textarea/index.mdx', 88221], '7290f823': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44275)]).then(r.bind(r, 96004)), '@site/docs/componenten/alert-dialog/index.mdx', 96004], '72af1482': [() => r.e(37923).then(r.bind(r, 11100)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 11100], '72b0d195': [() => r.e(29396).then(r.bind(r, 87302)), '@site/docs/open-source/cc0.md', 87302], '73bf6027': [() => r.e(96103).then(r.bind(r, 95078)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 95078], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(6526)]).then(r.bind(r, 73804)), '@site/docs/handboek/developer/03-thema-maken.mdx', 73804], 77321757: [() => r.e(70325).then(r.bind(r, 61950)), '@site/docs/handboek/designer/voorbeeld-thema.md', 61950], '77bf2607': [() => r.e(61472).then(r.bind(r, 98388)), '@site/docs/project/faq.mdx', 98388], '7a777bcb': [() => r.e(87782).then(r.t.bind(r, 10958, 19)), '~docs/default/category-en-community-category-community-69b.json', 10958], '7af3a6ef': [() => Promise.all([r.e(40532), r.e(14889), r.e(43411)]).then(r.bind(r, 56586)), '@site/docs/richtlijnen/formulieren/confirmation.mdx', 56586], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(3693)]).then(r.bind(r, 39006)), '@site/docs/componenten/blockquote/index.mdx', 39006], '7bab27bf': [() => r.e(71853).then(r.t.bind(r, 72676, 19)), '~blog/default/en-blog-tags-designers-2a7-list.json', 72676], '7c4f6831': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(71337)]).then(r.bind(r, 52287)), '@site/docs/componenten/sub-heading/index.mdx', 52287], '7ca6903f': [() => r.e(84373).then(r.bind(r, 61921)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 61921], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(24366)]).then(r.bind(r, 45321)), '@site/docs/componenten/radio-group/index.mdx', 45321], '7e0bd177': [() => r.e(2452).then(r.t.bind(r, 58378, 19)), '~blog/default/en-blog-tags-update-b0c-list.json', 58378], '7e11c81b': [() => r.e(56388).then(r.t.bind(r, 83299, 19)), '~blog/default/en-blog-tags-werkgroepen-866.json', 83299], '7e20bedc': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(39783)]).then(r.bind(r, 34826)), '@site/docs/componenten/tabs/index.mdx', 34826], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 67691)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 67691], '7faf29d7': [() => r.e(53200).then(r.t.bind(r, 44575, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a-list.json', 44575], '80bad7c2': [() => r.e(41368).then(r.bind(r, 90733)), '@site/blog/2024/20240322-design-open-dag.md', 90733], '80c19b87': [() => r.e(9351).then(r.t.bind(r, 1702, 19)), '~blog/default/en-blog-tags-figma-431.json', 1702], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '8165282b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(49619)]).then(r.bind(r, 18733)), '@site/docs/componenten/text-input/index.mdx', 18733], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 1918)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 1918], '845a118e': [() => r.e(81213).then(r.bind(r, 36020)), '@site/docs/community/events/design-systems-week-2023/index.md', 36020], '861e17e8': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(43396)]).then(r.bind(r, 81337)), '@site/docs/componenten/definition-list/index.mdx', 81337], '86c1b350': [() => r.e(88202).then(r.t.bind(r, 7862, 19)), '~blog/default/en-blog-tags-formulieren-89f.json', 7862], '897f202a': [() => r.e(81700).then(r.bind(r, 26033)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 26033], '89a96570': [() => r.e(77754).then(r.bind(r, 7728)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 7728], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(87034)]).then(r.bind(r, 59345)), '@site/docs/componenten/file-input/index.mdx', 59345], '8b659173': [() => r.e(30217).then(r.bind(r, 66295)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 66295], '8baef6f7': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(21229)]).then(r.bind(r, 3538)), '@site/docs/componenten/icon/index.mdx', 3538], '8de5412f': [() => r.e(8557).then(r.bind(r, 11582)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 11582], '8df97ee5': [() => r.e(52143).then(r.t.bind(r, 85280, 19)), '~blog/default/en-blog-tags-architectuur-246.json', 85280], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(79947)]).then(r.bind(r, 17077)), '@site/docs/componenten/number-badge/index.mdx', 17077], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 99126)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 99126], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(3578)]).then(r.bind(r, 99728)), '@site/docs/componenten/heading-3/index.mdx', 99728], '8fc68f72': [() => r.e(48549).then(r.t.bind(r, 36288, 19)), '~blog/default/en-blog-tags-word-press-ee5-list.json', 36288], '90f10f11': [() => Promise.all([r.e(40532), r.e(14889), r.e(41915)]).then(r.bind(r, 5086)), '@site/docs/richtlijnen/formulieren/links.mdx', 5086], '91059c25': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(61057)]).then(r.bind(r, 93679)), '@site/docs/componenten/heading-6/index.mdx', 93679], '9186edf4': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20994)]).then(r.bind(r, 36440)), '@site/docs/componenten/card-as-link/index.mdx', 36440], '91ad73c4': [() => r.e(94299).then(r.bind(r, 42286)), '@site/docs/wcag/0-introduction.mdx', 42286], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88016)]).then(r.bind(r, 77554)), '@site/docs/componenten/checkbox-group/index.mdx', 77554], '920ddf01': [() => r.e(82184).then(r.bind(r, 95022)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 95022], '9228e550': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54291)]).then(r.bind(r, 38376)), '@site/docs/componenten/password-input/index.mdx', 38376], '92e5e01e': [() => r.e(68536).then(r.bind(r, 56978)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 56978], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 70114)), '@site/docs/handboek/developer/01-aan-de-slag.md', 70114], '94b6170a': [() => r.e(95250).then(r.bind(r, 35842)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 35842], '94c4067d': [() => r.e(38352).then(r.bind(r, 84699)), '@site/docs/wcag/1.3.1.mdx', 84699], '94d55c70': [() => r.e(78508).then(r.bind(r, 57415)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 57415], 95312783: [() => Promise.all([r.e(40532), r.e(14889), r.e(15220)]).then(r.bind(r, 17668)), '@site/docs/richtlijnen/formulieren/visual-design.mdx', 17668], '95a20731': [() => r.e(1607).then(r.t.bind(r, 20030, 19)), '~docs/default/category-en-handboek-category-componenten-bijdragen-ede.json', 20030], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 35600)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 35600], '9764e22e': [() => r.e(9336).then(r.bind(r, 17457)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 17457], '98a78e5e': [() => r.e(44455).then(r.bind(r, 93828)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 93828], '9b2e9553': [() => r.e(85063).then(r.bind(r, 39901)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 39901], '9b74bec5': [() => r.e(88176).then(r.t.bind(r, 24652, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6.json', 24652], '9bdd22eb': [() => r.e(92253).then(r.t.bind(r, 55803, 19)), '~blog/default/en-blog-tags-tags-c25.json', 55803], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 74094)), '@site/docs/handboek/developer/02-architectuur.md', 74094], '9c510eeb': [() => r.e(834).then(r.t.bind(r, 47452, 19)), '~blog/default/en-blog-tags-word-press-ee5.json', 47452], '9e2ab78b': [() => r.e(2626).then(r.t.bind(r, 62988, 19)), '~docs/default/category-en-project-category-project-ce0.json', 62988], '9e4087bc': [() => r.e(53608).then(r.bind(r, 7647)), '@theme/BlogArchivePage', 7647], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15739)]).then(r.bind(r, 90357)), '@site/docs/componenten/heading-5/index.mdx', 90357], '9f18257a': [() => r.e(61408).then(r.t.bind(r, 36766, 19)), '~docs/default/category-en-community-category-events-42b.json', 36766], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 64056)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 64056], '9f867b5d': [() => Promise.all([r.e(40532), r.e(20257), r.e(12487)]).then(r.bind(r, 21075)), '@site/docs/componenten/README.mdx', 21075], a2514f03: [() => r.e(51794).then(r.t.bind(r, 95669, 19)), '~blog/default/en-blog-tags-figma-431-list.json', 95669], a2bb2b83: [() => r.e(13575).then(r.t.bind(r, 36093, 19)), '~blog/default/en-blog-tags-developers-6ee-list.json', 36093], a52685f4: [() => r.e(88152).then(r.bind(r, 10604)), '@site/docs/wcag/1.3.5.mdx', 10604], a55f7ab7: [() => r.e(82714).then(r.bind(r, 1363)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 1363], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(40168), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a7537d50: [() => Promise.all([r.e(40532), r.e(14889), r.e(53626)]).then(r.bind(r, 20992)), '@site/docs/richtlijnen/formulieren/autocomplete.mdx', 20992], a77e5ea3: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(76401)]).then(r.bind(r, 35494)), '@site/docs/componenten/accordion/index.mdx', 35494], a792b491: [() => r.e(90623).then(r.t.bind(r, 20675, 19)), '~blog/default/en-blog-tags-design-systems-0c3.json', 20675], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 9259)), '@theme/DocVersionRoot', 9259], a7f84bbe: [() => r.e(58803).then(r.bind(r, 51030)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 51030], a81e9677: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44921)]).then(r.bind(r, 98294)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 98294], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 81987)), '@theme/DocRoot', 81987], a9493cdf: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(92532)]).then(r.bind(r, 76124)), '@site/docs/componenten/form-field-option-label/index.mdx', 76124], aa8a543f: [() => Promise.all([r.e(40532), r.e(14889), r.e(77057)]).then(r.bind(r, 33891)), '@site/docs/richtlijnen/formulieren/buttons.mdx', 33891], ac66737c: [() => r.e(34838).then(r.bind(r, 14988)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 14988], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 92933)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 92933], ace6628c: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(83373)]).then(r.bind(r, 89887)), '@site/docs/componenten/calendar/index.mdx', 89887], ad9d479a: [() => Promise.all([r.e(40168), r.e(16953), r.e(22746)]).then(r.bind(r, 22937)), '@site/docs/community/sluit-je-aan.mdx', 22937], adb328b9: [() => r.e(91344).then(r.bind(r, 56585)), '@site/docs/community/sluit-je-aan-success.mdx', 56585], adc7d54a: [() => Promise.all([r.e(40168), r.e(16953), r.e(90134)]).then(r.bind(r, 85843)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 85843], aeaf35c2: [() => r.e(53345).then(r.bind(r, 47369)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 47369], af5d61d0: [() => r.e(96753).then(r.t.bind(r, 39402, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834.json', 39402], b0a486e7: [() => r.e(74602).then(r.t.bind(r, 69330, 19)), '~docs/default/category-en-community-category-design-open-hour-15e.json', 69330], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(40168), r.e(48595)]).then(r.bind(r, 98852)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 98852], b171e401: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(67398)]).then(r.bind(r, 45438)), '@site/docs/componenten/switch/index.mdx', 45438], b1e76af7: [() => Promise.all([r.e(40532), r.e(14889), r.e(64796)]).then(r.bind(r, 54875)), '@site/docs/richtlijnen/formulieren/when-which.mdx', 54875], b24d1ef2: [() => r.e(43753).then(r.bind(r, 11919)), '@site/docs/wcag/1.1.1.mdx', 11919], b2991567: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(36918)]).then(r.bind(r, 94242)), '@site/docs/componenten/invalid-form-alert/index.mdx', 94242], b3531ef4: [() => r.e(36118).then(r.t.bind(r, 43501, 19)), '~blog/default/en-blog-tags-werkgroepen-866-list.json', 43501], b4150b56: [() => Promise.all([r.e(40532), r.e(16953), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b46e901f: [() => r.e(23116).then(r.t.bind(r, 29579, 19)), '~docs/default/category-en-handboek-category-voor-developers-794.json', 29579], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(34492)]).then(r.bind(r, 52726)), '@site/docs/componenten/progress-bar/index.mdx', 52726], b50de158: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(12505)]).then(r.bind(r, 69391)), '@site/docs/componenten/side-navigation/index.mdx', 69391], b56159c8: [() => r.e(66360).then(r.bind(r, 90213)), '@site/docs/community/wie-doet-mee.mdx', 90213], b56ace87: [() => r.e(62736).then(r.bind(r, 12862)), '@site/docs/wcag/3.3.4.mdx', 12862], b68f03f7: [() => r.e(815).then(r.bind(r, 51531)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 51531], b70cd504: [() => r.e(36546).then(r.bind(r, 84066)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 84066], b729a1a1: [() => r.e(29386).then(r.bind(r, 31253)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 31253], b75db01c: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(46536)]).then(r.bind(r, 5807)), '@site/docs/componenten/modal-dialog/index.mdx', 5807], b83fe955: [() => Promise.all([r.e(40532), r.e(14889), r.e(78883)]).then(r.bind(r, 9616)), '@site/docs/richtlijnen/formulieren/errors.mdx', 9616], b8bffd88: [() => r.e(65391).then(r.bind(r, 14179)), '@site/docs/handboek/designer/README.md', 14179], bc199175: [() => r.e(96222).then(r.bind(r, 35347)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 35347], bc2d69ea: [() => r.e(85634).then(r.bind(r, 9697)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 9697], bf14fce1: [() => r.e(15470).then(r.bind(r, 88981)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 88981], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 12464)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 12464], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 8419)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 8419], c20168b0: [() => r.e(68e3).then(r.t.bind(r, 62945, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3-list.json', 62945], c2b84a26: [() => r.e(53367).then(r.bind(r, 5006)), '@site/docs/wcag/3.2.2.mdx', 5006], c3dc88b7: [() => r.e(36194).then(r.bind(r, 86576)), '@site/docs/wcag/3.2.1.mdx', 86576], c51cb369: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(90258)]).then(r.bind(r, 42246)), '@site/docs/componenten/language-navigation/index.mdx', 42246], c651b2e8: [() => r.e(75386).then(r.bind(r, 63510)), '@site/docs/project/nieuwsbrief.mdx', 63510], c6b96a0f: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20911)]).then(r.bind(r, 33060)), '@site/docs/componenten/non-modal-dialog/index.mdx', 33060], c776d6ea: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(85)]).then(r.bind(r, 16932)), '@site/docs/componenten/heading-4/index.mdx', 16932], c8ac2561: [() => r.e(67586).then(r.bind(r, 30401)), '@site/docs/handboek/naamgeving.mdx', 30401], c8c68184: [() => Promise.all([r.e(40532), r.e(14889), r.e(48373)]).then(r.bind(r, 44876)), '@site/docs/richtlijnen/formulieren/help-the-user.mdx', 44876], ca36df4d: [() => r.e(60917).then(r.bind(r, 56711)), '@site/docs/CHANGELOG.md', 56711], ca82639c: [() => r.e(90266).then(r.t.bind(r, 24068, 19)), '~blog/default/en-blog-tags-developers-6ee.json', 24068], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 25540)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 25540], cc7e1584: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(36200)]).then(r.bind(r, 30749)), '@site/docs/componenten/strong/index.mdx', 30749], ccc49370: [() => Promise.all([r.e(40532), r.e(6418), r.e(46103)]).then(r.bind(r, 78856)), '@theme/BlogPostPage', 78856], cd3c7377: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(25425)]).then(r.bind(r, 93983)), '@site/docs/componenten/form-field-description/index.mdx', 93983], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 5063)), '@site/docs/community/events/design-systems-week-2022.mdx', 5063], ce7b85cb: [() => r.e(37498).then(r.bind(r, 91626)), '@site/docs/handboek/organisatie/meedoen.md', 91626], ced44f18: [() => r.e(81484).then(r.bind(r, 9019)), '@site/docs/community/events/design-open-dag.mdx', 9019], d0b753ca: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(47531)]).then(r.bind(r, 79395)), '@site/docs/componenten/radio-button/index.mdx', 79395], d19ee383: [() => r.e(95282).then(r.bind(r, 31183)), '@site/docs/wcag/2.4.6.mdx', 31183], d3c1b80a: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(58441)]).then(r.bind(r, 36265)), '@site/docs/componenten/avatar/index.mdx', 36265], d3deb5db: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88021)]).then(r.bind(r, 48114)), '@site/docs/componenten/toggletip/index.mdx', 48114], d4552b9e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15403)]).then(r.bind(r, 85027)), '@site/docs/componenten/form-field-error-message/index.mdx', 85027], d459b62b: [() => r.e(23668).then(r.t.bind(r, 73103, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-voor-stijl-652.json', 73103], d467e203: [() => r.e(76902).then(r.bind(r, 72574)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 72574], d5f36106: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(16833)]).then(r.bind(r, 32144)), '@site/docs/componenten/status-badge/index.mdx', 32144], d647d050: [() => r.e(26801).then(r.t.bind(r, 71148, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa.json', 71148], d9284525: [() => r.e(54836).then(r.bind(r, 70266)), '@site/docs/wcag/2.4.10.mdx', 70266], da2da55d: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(95102)]).then(r.bind(r, 94645)), '@site/docs/componenten/heading-group/index.mdx', 94645], da8aeb86: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54472)]).then(r.bind(r, 93601)), '@site/docs/componenten/navigation-bar/index.mdx', 93601], db7926ce: [() => r.e(21177).then(r.t.bind(r, 35288, 19)), '~docs/default/category-en-handboek-category-handboek-bd8.json', 35288], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 27107)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 27107], dd06f6af: [() => r.e(18148).then(r.bind(r, 21179)), '@site/docs/voorbeelden/README.md', 21179], dd706f12: [() => r.e(57874).then(r.t.bind(r, 81729, 19)), '~blog/default/en-blog-tags-update-b0c.json', 81729], ddf35722: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(68424)]).then(r.bind(r, 58768)), '@site/docs/componenten/form-field-label/index.mdx', 58768], df203c0f: [() => r.e(99924).then(r.bind(r, 63083)), '@theme/DocTagDocListPage', 63083], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 64129)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 64129], e07f5d94: [() => r.e(67833).then(r.bind(r, 99502)), '@site/docs/richtlijnen/stijl/ruimte.md', 99502], e12b15f5: [() => Promise.all([r.e(40532), r.e(77913), r.e(40125)]).then(r.bind(r, 24176)), '@site/docs/wcag/3.1.2.mdx', 24176], e21395b4: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(48239)]).then(r.bind(r, 29926)), '@site/docs/componenten/notification-banner/index.mdx', 29926], e3b51539: [() => r.e(69592).then(r.bind(r, 16706)), '@site/docs/handboek/developer/07-componenten-maken.md', 16706], e59d1036: [() => r.e(38934).then(r.bind(r, 6963)), '@site/docs/voorbeelden/onderzoek/README.md', 6963], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(41990)]).then(r.bind(r, 77514)), '@site/docs/componenten/separator/index.mdx', 77514], e73f9950: [() => r.e(58021).then(r.t.bind(r, 80905, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5-list.json', 80905], e756447e: [() => r.e(83516).then(r.bind(r, 57144)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 57144], e94ed988: [() => r.e(54171).then(r.bind(r, 78190)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 78190], e98c6ca0: [() => r.e(13538).then(r.bind(r, 18334)), '@site/docs/wcag/3.3.1.mdx', 18334], e9b2227f: [() => r.e(71639).then(r.bind(r, 65578)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 65578], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 9704)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 9704], ed74afc1: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(19552)]).then(r.bind(r, 55755)), '@site/docs/componenten/select/index.mdx', 55755], f15b6573: [() => r.e(74605).then(r.bind(r, 24096)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 24096], f1833817: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(43166)]).then(r.bind(r, 32649)), '@site/docs/componenten/table/index.mdx', 32649], f1c1d91e: [() => r.e(20550).then(r.bind(r, 24437)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 24437], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f36b0a83: [() => r.e(90281).then(r.bind(r, 87704)), '@site/docs/wcag/2.4.2.mdx', 87704], f42b87d8: [() => r.e(12263).then(r.t.bind(r, 27993, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-voor-formulieren-86c.json', 27993], f52fcd14: [() => Promise.all([r.e(40532), r.e(14889), r.e(28370)]).then(r.bind(r, 87602)), '@site/docs/richtlijnen/formulieren/multistep.mdx', 87602], f5daaf40: [() => r.e(47587).then(r.bind(r, 68011)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 68011], f5dc78b8: [() => r.e(98625).then(r.bind(r, 37179)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 37179], f5f3cece: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(32652)]).then(r.bind(r, 73532)), '@site/docs/componenten/spinner/index.mdx', 73532], f633a06a: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(85270)]).then(r.bind(r, 35947)), '@site/docs/componenten/link-list/index.mdx', 35947], f67ebaad: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(25507)]).then(r.bind(r, 41198)), '@site/docs/componenten/video/index.mdx', 41198], f6cbeee1: [() => r.e(12535).then(r.t.bind(r, 74641, 19)), '~blog/default/en-blog-archive-10f.json', 74641], fba6c282: [() => r.e(4364).then(r.t.bind(r, 99501, 19)), '~blog/default/en-blog-038.json', 99501], fbf7ea66: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20322)]).then(r.bind(r, 40570)), '@site/docs/componenten/case-card/index.mdx', 40570], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(2930)]).then(r.bind(r, 27491)), '@site/docs/componenten/progress-list/index.mdx', 27491], fd2458ef: [() => r.e(39680).then(r.bind(r, 42395)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 42395], fd87590a: [() => r.e(44603).then(r.t.bind(r, 25697, 19)), '~blog/default/en-blog-tags-meta-594.json', 25697], fe9a39bd: [() => r.e(35959).then(r.bind(r, 68113)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 68113], ff07fdf2: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(75221)]).then(r.bind(r, 50479)), '@site/docs/componenten/unordered-list/index.mdx', 50479], ff0d970f: [() => r.e(99605).then(r.bind(r, 38184)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 38184], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 85838)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 85838], ffcf9766: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(7869)]).then(r.bind(r, 13101)), '@site/docs/componenten/number-input/index.mdx', 13101] };
+   const c = { '000024cb': [() => Promise.all([r.e(40532), r.e(14889), r.e(3247)]).then(r.bind(r, 49636)), '@site/docs/richtlijnen/formulieren/labels.mdx', 49636], '002a89ff': [() => r.e(36303).then(r.t.bind(r, 67692, 19)), '~docs/default/category-voorbeelden-category-patronen-formulieren-5c0.json', 67692], '0088abd0': [() => r.e(1036).then(r.bind(r, 79180)), '@site/docs/community/events/design-systems-week-2024.mdx', 79180], '016d3eb4': [() => r.e(34380).then(r.t.bind(r, 83959, 19)), '~blog/default/blog-tags-design-tokens-0d0.json', 83959], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 2236)), '@theme/BlogTagsListPage', 2236], '031b9593': [() => r.e(96461).then(r.t.bind(r, 63826, 19)), '~docs/default/category-community-category-community-84d.json', 63826], '03606068': [() => r.e(11872).then(r.t.bind(r, 21833, 19)), '~blog/default/blog-tags-design-systems-719.json', 21833], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 17891)), '@site/docs/project/kernteam.mdx', 17891], '044d2994': [() => r.e(6526).then(r.t.bind(r, 76671, 19)), '~blog/default/blog-tags-lettertype-5b1-list.json', 76671], '0556c22e': [() => Promise.all([r.e(40532), r.e(14889), r.e(63696)]).then(r.bind(r, 92897)), '@site/docs/richtlijnen/formulieren/descriptions.mdx', 92897], '08d81d65': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(67132)]).then(r.bind(r, 54043)), '@site/docs/componenten/rich-text-content/index.mdx', 54043], '09d51e35': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44014)]).then(r.bind(r, 71055)), '@site/docs/componenten/legend/index.mdx', 71055], '0a2d80a0': [() => r.e(48644).then(r.t.bind(r, 10028, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1.json', 10028], '0a6c776a': [() => r.e(90418).then(r.bind(r, 45149)), '@site/blog/2023/20231109-spacing-tokens.md', 45149], '0cf410ab': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54496)]).then(r.bind(r, 27853)), '@site/docs/componenten/dot-badge/index.mdx', 27853], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 96680)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 96680], '0eacf79f': [() => r.e(34193).then(r.bind(r, 86639)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 86639], '0f134466': [() => Promise.all([r.e(40532), r.e(14889), r.e(8321)]).then(r.bind(r, 67285)), '@site/docs/richtlijnen/formulieren/placeholders.mdx', 67285], '121271ef': [() => r.e(79749).then(r.bind(r, 32774)), '@site/docs/wcag/4.1.3.mdx', 32774], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 43447)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 43447], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 12732)), '@site/docs/community/events/heartbeat/videos.mdx', 12732], '13ecdb40': [() => r.e(75854).then(r.bind(r, 62990)), '@site/docs/richtlijnen/stijl/kleuren.md', 62990], '14eb3368': [() => Promise.all([r.e(40532), r.e(40168), r.e(9817)]).then(r.bind(r, 72576)), '@theme/DocCategoryGeneratedIndexPage', 72576], '150707f3': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88230)]).then(r.bind(r, 87433)), '@site/docs/componenten/heading-1/index.mdx', 87433], '15a4ec34': [() => r.e(14418).then(r.bind(r, 80408)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 80408], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 45754)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 45754], '16fd2d30': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(33430)]).then(r.bind(r, 55746)), '@site/docs/componenten/heading-2/index.mdx', 55746], 17896441: [() => Promise.all([r.e(40532), r.e(6418), r.e(27918)]).then(r.bind(r, 86001)), '@theme/DocItem', 86001], '17c216dc': [() => r.e(95661).then(r.t.bind(r, 47408, 19)), '~blog/default/blog-tags-logius-aab.json', 47408], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 26385)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 26385], '18f72304': [() => r.e(76671).then(r.t.bind(r, 68362, 19)), '~blog/default/blog-tags-een-overheid-756-list.json', 68362], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 93285)), '@site/docs/handboek/designer/figma-structuur.mdx', 93285], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 20414)), '@theme/SearchPage', 20414], '1b445115': [() => r.e(35432).then(r.bind(r, 12700)), '@site/docs/handboek/designer/community.md', 12700], '1b7e5f7c': [() => r.e(34728).then(r.t.bind(r, 40495, 19)), '~docs/default/category-handboek-category-componenten-bijdragen-2d3.json', 40495], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 75401)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 75401], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(34894)]).then(r.bind(r, 51671)), '@site/docs/componenten/checkbox/index.mdx', 51671], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 73227)), '@site/src/pages/index.tsx', 73227], '1e45e22d': [() => r.e(70591).then(r.bind(r, 56809)), '@site/docs/footer/coc.md', 56809], '1fd620f1': [() => r.e(58990).then(r.bind(r, 38919)), '@site/docs/wcag/2.1.1.mdx', 38919], '20f2808f': [() => r.e(30761).then(r.bind(r, 939)), '@site/docs/handboek/leverancier/introductie.md', 939], '210e540d': [() => r.e(2601).then(r.bind(r, 52425)), '@site/docs/wcag/2.4.13.mdx', 52425], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 83703)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 83703], '2289dd67': [() => r.e(16451).then(r.bind(r, 58942)), '@site/docs/handboek/designer/stappenplan.mdx', 58942], '22ebae92': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20858)]).then(r.bind(r, 48467)), '@site/docs/componenten/text-input-group/index.mdx', 48467], '235c86a2': [() => r.e(88979).then(r.bind(r, 55384)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 55384], '2383fbae': [() => r.e(90909).then(r.bind(r, 81748)), '@site/docs/footer/privacyverklaring.md', 81748], 24071437: [() => r.e(58687).then(r.bind(r, 7446)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 7446], '25b93367': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(98634)]).then(r.bind(r, 64277)), '@site/docs/componenten/link/index.mdx', 64277], '2669888f': [() => r.e(30717).then(r.t.bind(r, 48231, 19)), '~blog/default/blog-tags-nl-design-system-5c1-list.json', 48231], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 62334)), '@site/docs/handboek/manager/introductie.md', 62334], '281e6f8e': [() => Promise.all([r.e(40168), r.e(16953), r.e(98218)]).then(r.bind(r, 57858)), '@site/docs/project/blijf-op-de-hoogte.mdx', 57858], '28d3d582': [() => r.e(96597).then(r.bind(r, 5250)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 5250], '28e99dcb': [() => r.e(73722).then(r.bind(r, 26286)), '@site/docs/wcag/3.1.1.mdx', 26286], '292daa85': [() => r.e(56254).then(r.t.bind(r, 62532, 19)), '~blog/default/blog-tags-mijlpalen-1bf.json', 62532], '2933852b': [() => r.e(6752).then(r.bind(r, 54887)), '@site/docs/footer/toegankelijkheidsverklaring.md', 54887], '2c881fe2': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(82200)]).then(r.bind(r, 99551)), '@site/docs/componenten/ordered-list/index.mdx', 99551], '2d21fce7': [() => r.e(94210).then(r.bind(r, 12793)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 12793], '2d685956': [() => r.e(49537).then(r.t.bind(r, 12542, 19)), '~blog/default/blog-tags-werkgroepen-ba6-list.json', 12542], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2e11687d': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(42112)]).then(r.bind(r, 53163)), '@site/docs/componenten/data-badge/index.mdx', 53163], '2ed736ae': [() => r.e(41936).then(r.t.bind(r, 92614, 19)), '~blog/default/blog-tags-update-827.json', 92614], '2efe344a': [() => r.e(22644).then(r.t.bind(r, 40037, 19)), '~blog/default/blog-tags-nl-design-system-5c1.json', 40037], '2f04c335': [() => r.e(71992).then(r.t.bind(r, 37080, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced.json', 37080], '2f0980e2': [() => r.e(71752).then(r.bind(r, 46341)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 46341], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(81565)]).then(r.bind(r, 64033)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 64033], '2fe778e5': [() => r.e(32697).then(r.bind(r, 37400)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 37400], '3015a2b9': [() => r.e(78882).then(r.bind(r, 74807)), '@site/docs/richtlijnen/stijl/typografie.md', 74807], '306030dd': [() => r.e(20932).then(r.bind(r, 22005)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 22005], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 82321)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 82321], '323b7945': [() => Promise.all([r.e(40168), r.e(16953), r.e(31875)]).then(r.bind(r, 61777)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 61777], '32470cbe': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(16406)]).then(r.bind(r, 57456)), '@site/docs/componenten/figure/index.mdx', 57456], 32636356: [() => r.e(52400).then(r.bind(r, 98933)), '@site/docs/project/newsletter-success.mdx', 98933], '32660e7c': [() => r.e(94932).then(r.t.bind(r, 29951, 19)), '~blog/default/blog-tags-formulieren-1bd.json', 29951], '333bf37f': [() => r.e(79479).then(r.bind(r, 46845)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 46845], '3464a859': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(41769)]).then(r.bind(r, 30556)), '@site/docs/componenten/page-header/index.mdx', 30556], '34b859b1': [() => r.e(97177).then(r.bind(r, 71959)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 71959], '3679878e': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(76318)]).then(r.bind(r, 7375)), '@site/docs/componenten/pagination/index.mdx', 7375], '36aae756': [() => r.e(76138).then(r.t.bind(r, 51313, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3.json', 51313], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 1117)), '@theme/DocTagsListPage', 1117], '37c1945c': [() => Promise.all([r.e(40532), r.e(77913), r.e(30561)]).then(r.bind(r, 48695)), '@site/docs/wcag/2.4.1.mdx', 48695], '381b9e37': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(9910)]).then(r.bind(r, 31481)), '@site/docs/componenten/action-group/index.mdx', 31481], '38471ef1': [() => r.e(37377).then(r.bind(r, 615)), '@site/blog/2023/20231214-community-online-formulieren.md', 615], '389658a5': [() => r.e(74122).then(r.t.bind(r, 27114, 19)), '~docs/default/category-handboek-category-voor-designers-e56.json', 27114], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 97239)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 97239], '3bb8863e': [() => Promise.all([r.e(40532), r.e(16953), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 14855)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 14855], '3d377413': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(17903)]).then(r.bind(r, 97735)), '@site/docs/componenten/page-footer/index.mdx', 97735], '3d58a721': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(9591)]).then(r.bind(r, 54593)), '@site/docs/componenten/date-input-group/index.mdx', 54593], '3d7707fa': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(86423)]).then(r.bind(r, 6230)), '@site/docs/componenten/alert/index.mdx', 6230], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 32579)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 32579], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 2529)), '@site/blog/2019/20190606-update-nl-design-system.md', 2529], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(506)]).then(r.bind(r, 46084)), '@site/docs/componenten/pre-heading/index.mdx', 46084], 40355699: [() => r.e(88567).then(r.bind(r, 5844)), '@site/blog/2024/20240522-community-blocks.md', 5844], '411e6d0c': [() => r.e(34104).then(r.bind(r, 90789)), '@site/docs/handboek/introductie.md', 90789], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 17929)), '@site/docs/handboek/estafettemodel.mdx', 17929], '44e0c4b7': [() => r.e(70679).then(r.t.bind(r, 21986, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-36c.json', 21986], '452f106e': [() => r.e(10860).then(r.bind(r, 48437)), '@site/docs/footer/wcag-em-rapport-2023.md', 48437], '45431ea1': [() => r.e(54220).then(r.bind(r, 15637)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 15637], '45a413d9': [() => Promise.all([r.e(40532), r.e(16953), r.e(13026)]).then(r.bind(r, 98447)), '@site/src/pages/bingo/index.tsx', 98447], '45f9a259': [() => r.e(48202).then(r.t.bind(r, 89879, 19)), '~blog/default/blog-tags-een-overheid-756.json', 89879], 46500269: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15593)]).then(r.bind(r, 11882)), '@site/docs/componenten/range/index.mdx', 11882], '465cea2f': [() => r.e(16636).then(r.bind(r, 92497)), '@site/docs/project/links.mdx', 92497], '489d45c6': [() => r.e(3900).then(r.bind(r, 88808)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 88808], '48c36009': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(78239)]).then(r.bind(r, 29761)), '@site/docs/componenten/date-input/index.mdx', 29761], '49d1ff28': [() => r.e(98477).then(r.bind(r, 95280)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 95280], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(45119)]).then(r.bind(r, 66257)), '@site/docs/componenten/date-picker/index.mdx', 66257], '4ea98559': [() => r.e(97323).then(r.bind(r, 50076)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 50076], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54942)]).then(r.bind(r, 31555)), '@site/docs/componenten/summary-list/index.mdx', 31555], '5110c353': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(40284)]).then(r.bind(r, 29665)), '@site/docs/componenten/button/index.mdx', 29665], '51323ca8': [() => r.e(86464).then(r.bind(r, 93957)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 93957], '5293bf37': [() => r.e(66004).then(r.bind(r, 94949)), '@site/docs/community/events/estafettemodeldag.mdx', 94949], '52bdf594': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(94770)]).then(r.bind(r, 9666)), '@site/docs/componenten/form-field-radio-option/index.mdx', 9666], '533b6d18': [() => r.e(45118).then(r.t.bind(r, 79973, 19)), '~blog/default/blog-tags-estafettemodel-0cf-list.json', 79973], '54b1e9e3': [() => r.e(6981).then(r.bind(r, 3708)), '@site/docs/richtlijnen/formulieren/README.mdx', 3708], '555de4b4': [() => r.e(22281).then(r.bind(r, 15528)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 15528], '558da7c0': [() => r.e(13027).then(r.bind(r, 11011)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 11011], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '564db768': [() => r.e(51244).then(r.bind(r, 40539)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 40539], '569c0776': [() => r.e(44307).then(r.bind(r, 90094)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 90094], '582c75ff': [() => r.e(94268).then(r.bind(r, 8056)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 8056], '5919194a': [() => r.e(14466).then(r.t.bind(r, 61571, 19)), '~blog/default/blog-tags-developers-a6f-list.json', 61571], '5a463406': [() => r.e(19750).then(r.t.bind(r, 94703, 19)), '~blog/default/blog-tags-developers-a6f.json', 94703], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88094)]).then(r.bind(r, 37599)), '@site/docs/componenten/fieldset/index.mdx', 37599], '5aa1d05c': [() => Promise.all([r.e(40532), r.e(14889), r.e(28533)]).then(r.bind(r, 28160)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour.mdx', 28160], '5b0260c8': [() => r.e(50681).then(r.bind(r, 2528)), '@site/docs/wcag/3.3.3.mdx', 2528], '5b53ebf6': [() => r.e(83148).then(r.t.bind(r, 6643, 19)), '~blog/default/blog-tags-architectuur-22a.json', 6643], '5e41da51': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(94960)]).then(r.bind(r, 94285)), '@site/docs/componenten/drawer/index.mdx', 94285], '5e427ce0': [() => r.e(79442).then(r.bind(r, 79082)), '@site/docs/wcag/4.1.2.mdx', 79082], '5e95c892': [() => r.e(29661).then(r.bind(r, 60133)), '@theme/DocsRoot', 60133], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5ecc2432': [() => r.e(78264).then(r.bind(r, 50437)), '@site/docs/wcag/2.4.7.mdx', 50437], '5f26db3b': [() => r.e(48074).then(r.bind(r, 94802)), '@site/docs/voorbeelden/templates/README.md', 94802], '5f7673a0': [() => r.e(4629).then(r.bind(r, 75827)), '@site/docs/project/over-nl-design-system.mdx', 75827], '5ffa4053': [() => r.e(16045).then(r.t.bind(r, 84729, 19)), '~blog/default/blog-tags-gebruikerstesten-eea.json', 84729], '60213d5c': [() => r.e(95394).then(r.t.bind(r, 16825, 19)), '~blog/default/blog-tags-toegankelijkheid-91e.json', 16825], '6076374a': [() => r.e(70374).then(r.bind(r, 73867)), '@site/docs/footer/colofon.mdx', 73867], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 73071)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 73071], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 31223)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 31223], 61890307: [() => r.e(76686).then(r.t.bind(r, 3683, 19)), '~blog/default/blog-tags-design-systems-719-list.json', 3683], '64b13969': [() => r.e(86199).then(r.t.bind(r, 98408, 19)), '~blog/default/blog-tags-architectuur-22a-list.json', 98408], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 28183)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 28183], '66227b34': [() => r.e(80249).then(r.bind(r, 92285)), '@site/docs/wcag/2.4.4.mdx', 92285], '667b53b1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(77936)]).then(r.bind(r, 41739)), '@site/docs/componenten/task-list/index.mdx', 41739], '67d19623': [() => r.e(49451).then(r.bind(r, 81889)), '@site/docs/open-source/eupl.md', 81889], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 83180)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 83180], '6875c492': [() => Promise.all([r.e(40532), r.e(40168), r.e(48610)]).then(r.bind(r, 97406)), '@theme/BlogTagsPostsPage', 97406], '68b96050': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(23221)]).then(r.bind(r, 77241)), '@site/docs/componenten/paragraph/index.mdx', 77241], '68ddddde': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(5643)]).then(r.bind(r, 33360)), '@site/docs/componenten/skip-link/index.mdx', 33360], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(18181)]).then(r.bind(r, 24555)), '@site/docs/componenten/form-field/index.mdx', 24555], '6ab13dac': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(83760)]).then(r.bind(r, 94867)), '@site/docs/componenten/form-field-partial-label/index.mdx', 94867], '6ad1359b': [() => Promise.all([r.e(40532), r.e(14889), r.e(43800)]).then(r.bind(r, 53596)), '@site/docs/richtlijnen/formulieren/questions.mdx', 53596], '6b7d4ee0': [() => r.e(10093).then(r.bind(r, 17624)), '@site/docs/richtlijnen/introductie.md', 17624], '6b8ad28a': [() => r.e(24582).then(r.t.bind(r, 43403, 19)), '~blog/default/blog-tags-word-press-c72.json', 43403], '6c269cf8': [() => Promise.all([r.e(40532), r.e(40168), r.e(14889), r.e(22305), r.e(12356)]).then(r.bind(r, 23499)), '@site/src/pages/contrast/index.tsx', 23499], '6c57e36f': [() => r.e(53020).then(r.t.bind(r, 59021, 19)), '~blog/default/blog-tags-buitenland-af0-list.json', 59021], '6d8df171': [() => r.e(89019).then(r.t.bind(r, 45255, 19)), '~blog/default/blog-tags-designers-24d-list.json', 45255], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 4129)), '@site/docs/handboek/design-tokens/README.mdx', 4129], '6e114b37': [() => r.e(31906).then(r.bind(r, 80795)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 80795], '6f323067': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(17768)]).then(r.bind(r, 16680)), '@site/docs/componenten/form-field-partial/index.mdx', 16680], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 59346)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 59346], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(72755)]).then(r.bind(r, 60881)), '@site/docs/componenten/heading/index.mdx', 60881], '6fdf8dbf': [() => r.e(20940).then(r.bind(r, 19563)), '@site/docs/wcag/4.1.1.mdx', 19563], '707334e0': [() => r.e(44136).then(r.bind(r, 84980)), '@site/docs/richtlijnen/stijl/iconen.md', 84980], '70ebfaef': [() => r.e(33728).then(r.bind(r, 23728)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 23728], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 26291)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 26291], '70fe0045': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(97979)]).then(r.bind(r, 88221)), '@site/docs/componenten/textarea/index.mdx', 88221], '7290f823': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44275)]).then(r.bind(r, 96004)), '@site/docs/componenten/alert-dialog/index.mdx', 96004], '72af1482': [() => r.e(37923).then(r.bind(r, 11100)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 11100], '72b0d195': [() => r.e(29396).then(r.bind(r, 87302)), '@site/docs/open-source/cc0.md', 87302], '72c446ac': [() => r.e(78116).then(r.t.bind(r, 46951, 19)), '~docs/default/category-community-category-events-1ab.json', 46951], '73bf6027': [() => r.e(96103).then(r.bind(r, 95078)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 95078], '73d20161': [() => r.e(11047).then(r.t.bind(r, 43306, 19)), '~blog/default/blog-tags-werkgroepen-ba6.json', 43306], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(67064)]).then(r.bind(r, 73804)), '@site/docs/handboek/developer/03-thema-maken.mdx', 73804], 77321757: [() => r.e(70325).then(r.bind(r, 61950)), '@site/docs/handboek/designer/voorbeeld-thema.md', 61950], '77bf2607': [() => r.e(61472).then(r.bind(r, 98388)), '@site/docs/project/faq.mdx', 98388], '7af3a6ef': [() => Promise.all([r.e(40532), r.e(14889), r.e(43411)]).then(r.bind(r, 56586)), '@site/docs/richtlijnen/formulieren/confirmation.mdx', 56586], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(3693)]).then(r.bind(r, 39006)), '@site/docs/componenten/blockquote/index.mdx', 39006], '7b7af99a': [() => r.e(13971).then(r.t.bind(r, 84122, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced-list.json', 84122], '7c4f6831': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(71337)]).then(r.bind(r, 52287)), '@site/docs/componenten/sub-heading/index.mdx', 52287], '7ca6903f': [() => r.e(84373).then(r.bind(r, 61921)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 61921], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(24366)]).then(r.bind(r, 45321)), '@site/docs/componenten/radio-group/index.mdx', 45321], '7e20bedc': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(39783)]).then(r.bind(r, 34826)), '@site/docs/componenten/tabs/index.mdx', 34826], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 67691)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 67691], '80bad7c2': [() => r.e(41368).then(r.bind(r, 90733)), '@site/blog/2024/20240322-design-open-dag.md', 90733], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '81536b8a': [() => r.e(766).then(r.t.bind(r, 59199, 19)), '~blog/default/blog-tags-componenten-652.json', 59199], '8165282b': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(49619)]).then(r.bind(r, 18733)), '@site/docs/componenten/text-input/index.mdx', 18733], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 1918)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 1918], '839d3c4e': [() => r.e(29636).then(r.t.bind(r, 4212, 19)), '~blog/default/blog-tags-figma-d77.json', 4212], '845a118e': [() => r.e(81213).then(r.bind(r, 36020)), '@site/docs/community/events/design-systems-week-2023/index.md', 36020], '84a56bc3': [() => r.e(21928).then(r.t.bind(r, 60517, 19)), '~docs/default/category-community-category-design-open-hour-4a0.json', 60517], '861e17e8': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(43396)]).then(r.bind(r, 81337)), '@site/docs/componenten/definition-list/index.mdx', 81337], '8762f664': [() => r.e(89300).then(r.t.bind(r, 75056, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1-list.json', 75056], '897f202a': [() => r.e(81700).then(r.bind(r, 26033)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 26033], '89a96570': [() => r.e(77754).then(r.bind(r, 7728)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 7728], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(87034)]).then(r.bind(r, 59345)), '@site/docs/componenten/file-input/index.mdx', 59345], '8b659173': [() => r.e(30217).then(r.bind(r, 66295)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 66295], '8b6c8a8c': [() => r.e(73566).then(r.t.bind(r, 44258, 19)), '~blog/default/blog-tags-buitenland-af0.json', 44258], '8baef6f7': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(21229)]).then(r.bind(r, 3538)), '@site/docs/componenten/icon/index.mdx', 3538], '8de5412f': [() => r.e(8557).then(r.bind(r, 11582)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 11582], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(79947)]).then(r.bind(r, 17077)), '@site/docs/componenten/number-badge/index.mdx', 17077], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 99126)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 99126], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(3578)]).then(r.bind(r, 99728)), '@site/docs/componenten/heading-3/index.mdx', 99728], '90f10f11': [() => Promise.all([r.e(40532), r.e(14889), r.e(41915)]).then(r.bind(r, 5086)), '@site/docs/richtlijnen/formulieren/links.mdx', 5086], '91059c25': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(61057)]).then(r.bind(r, 93679)), '@site/docs/componenten/heading-6/index.mdx', 93679], '9186edf4': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20994)]).then(r.bind(r, 36440)), '@site/docs/componenten/card-as-link/index.mdx', 36440], '91ad73c4': [() => r.e(94299).then(r.bind(r, 42286)), '@site/docs/wcag/0-introduction.mdx', 42286], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88016)]).then(r.bind(r, 77554)), '@site/docs/componenten/checkbox-group/index.mdx', 77554], '920ddf01': [() => r.e(82184).then(r.bind(r, 95022)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 95022], '9228e550': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54291)]).then(r.bind(r, 38376)), '@site/docs/componenten/password-input/index.mdx', 38376], '92e5e01e': [() => r.e(68536).then(r.bind(r, 56978)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 56978], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 70114)), '@site/docs/handboek/developer/01-aan-de-slag.md', 70114], '94b5e6fd': [() => r.e(28808).then(r.t.bind(r, 43190, 19)), '~blog/default/blog-tags-design-systems-week-c33.json', 43190], '94b6170a': [() => r.e(95250).then(r.bind(r, 35842)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 35842], '94c4067d': [() => r.e(38352).then(r.bind(r, 84699)), '@site/docs/wcag/1.3.1.mdx', 84699], '94d55c70': [() => r.e(78508).then(r.bind(r, 57415)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 57415], 95312783: [() => Promise.all([r.e(40532), r.e(14889), r.e(15220)]).then(r.bind(r, 17668)), '@site/docs/richtlijnen/formulieren/visual-design.mdx', 17668], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 35600)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 35600], '9764e22e': [() => r.e(9336).then(r.bind(r, 17457)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 17457], '98a78e5e': [() => r.e(44455).then(r.bind(r, 93828)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 93828], '9a9a4fab': [() => r.e(51476).then(r.t.bind(r, 90222, 19)), '~blog/default/blog-tags-mijlpalen-1bf-list.json', 90222], '9b2e9553': [() => r.e(85063).then(r.bind(r, 39901)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 39901], '9bf7fd7b': [() => r.e(23759).then(r.t.bind(r, 12142, 19)), '~blog/default/blog-tags-toegankelijkheid-91e-list.json', 12142], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 74094)), '@site/docs/handboek/developer/02-architectuur.md', 74094], '9e4087bc': [() => r.e(53608).then(r.bind(r, 7647)), '@theme/BlogArchivePage', 7647], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15739)]).then(r.bind(r, 90357)), '@site/docs/componenten/heading-5/index.mdx', 90357], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 64056)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 64056], '9f867b5d': [() => Promise.all([r.e(40532), r.e(20257), r.e(12487)]).then(r.bind(r, 21075)), '@site/docs/componenten/README.mdx', 21075], a3332bc9: [() => r.e(85303).then(r.bind(r, 11222)), '@site/blog/2024/20240701-meerdere-producten.md?truncated=true', 11222], a52685f4: [() => r.e(88152).then(r.bind(r, 10604)), '@site/docs/wcag/1.3.5.mdx', 10604], a55f7ab7: [() => r.e(82714).then(r.bind(r, 1363)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 1363], a5657520: [() => r.e(40128).then(r.t.bind(r, 6435, 19)), '~blog/default/blog-tags-design-tokens-0d0-list.json', 6435], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a5d65f05: [() => r.e(77827).then(r.t.bind(r, 37256, 19)), '~blog/default/blog-tags-design-systems-week-c33-list.json', 37256], a65373b3: [() => r.e(60250).then(r.t.bind(r, 32567, 19)), '~blog/default/blog-tags-gebruikerstesten-eea-list.json', 32567], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(40168), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a7023ddc: [() => r.e(11713).then(r.t.bind(r, 53457, 19)), '~blog/default/blog-tags-tags-4c2.json', 53457], a7537d50: [() => Promise.all([r.e(40532), r.e(14889), r.e(53626)]).then(r.bind(r, 20992)), '@site/docs/richtlijnen/formulieren/autocomplete.mdx', 20992], a77e5ea3: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(76401)]).then(r.bind(r, 35494)), '@site/docs/componenten/accordion/index.mdx', 35494], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 9259)), '@theme/DocVersionRoot', 9259], a7f84bbe: [() => r.e(58803).then(r.bind(r, 51030)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 51030], a81e9677: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(44921)]).then(r.bind(r, 98294)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 98294], a89706a3: [() => r.e(89138).then(r.t.bind(r, 39152, 19)), '~blog/default/blog-tags-logius-aab-list.json', 39152], a8a015ed: [() => r.e(58827).then(r.t.bind(r, 45811, 19)), '~blog/default/blog-tags-update-827-list.json', 45811], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 81987)), '@theme/DocRoot', 81987], a9493cdf: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(92532)]).then(r.bind(r, 76124)), '@site/docs/componenten/form-field-option-label/index.mdx', 76124], aa8a543f: [() => Promise.all([r.e(40532), r.e(14889), r.e(77057)]).then(r.bind(r, 33891)), '@site/docs/richtlijnen/formulieren/buttons.mdx', 33891], abcc39c5: [() => r.e(40399).then(r.t.bind(r, 65696, 19)), '~blog/default/blog-tags-word-press-c72-list.json', 65696], ac66737c: [() => r.e(34838).then(r.bind(r, 14988)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 14988], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 92933)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 92933], ace5ddd0: [() => r.e(86495).then(r.t.bind(r, 80827, 19)), '~docs/default/category-richtlijnen-category-wcag-succescriteria-uitgelegd-b99.json', 80827], ace6628c: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(83373)]).then(r.bind(r, 89887)), '@site/docs/componenten/calendar/index.mdx', 89887], ad9d479a: [() => Promise.all([r.e(40168), r.e(16953), r.e(22746)]).then(r.bind(r, 22937)), '@site/docs/community/sluit-je-aan.mdx', 22937], adb328b9: [() => r.e(91344).then(r.bind(r, 56585)), '@site/docs/community/sluit-je-aan-success.mdx', 56585], adc7d54a: [() => Promise.all([r.e(40168), r.e(16953), r.e(90134)]).then(r.bind(r, 85843)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 85843], aeaf35c2: [() => r.e(53345).then(r.bind(r, 47369)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 47369], af16d7d3: [() => r.e(969).then(r.t.bind(r, 26338, 19)), '~docs/default/category-handboek-category-voor-developers-73b.json', 26338], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(40168), r.e(48595)]).then(r.bind(r, 98852)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 98852], b0ef882f: [() => r.e(69379).then(r.t.bind(r, 22346, 19)), '~blog/default/blog-tags-meta-401-list.json', 22346], b171e401: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(67398)]).then(r.bind(r, 45438)), '@site/docs/componenten/switch/index.mdx', 45438], b1e76af7: [() => Promise.all([r.e(40532), r.e(14889), r.e(64796)]).then(r.bind(r, 54875)), '@site/docs/richtlijnen/formulieren/when-which.mdx', 54875], b24d1ef2: [() => r.e(43753).then(r.bind(r, 11919)), '@site/docs/wcag/1.1.1.mdx', 11919], b2991567: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(36918)]).then(r.bind(r, 94242)), '@site/docs/componenten/invalid-form-alert/index.mdx', 94242], b2b675dd: [() => r.e(90533).then(r.t.bind(r, 28017, 19)), '~blog/default/blog-c06.json', 28017], b2f554cd: [() => r.e(11477).then(r.t.bind(r, 30010, 19)), '~blog/default/blog-archive-80c.json', 30010], b4150b56: [() => Promise.all([r.e(40532), r.e(16953), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(34492)]).then(r.bind(r, 52726)), '@site/docs/componenten/progress-bar/index.mdx', 52726], b50de158: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(12505)]).then(r.bind(r, 69391)), '@site/docs/componenten/side-navigation/index.mdx', 69391], b519f87e: [() => r.e(84487).then(r.t.bind(r, 25603, 19)), '~blog/default/blog-tags-formulieren-1bd-list.json', 25603], b56159c8: [() => r.e(66360).then(r.bind(r, 90213)), '@site/docs/community/wie-doet-mee.mdx', 90213], b56ace87: [() => r.e(62736).then(r.bind(r, 12862)), '@site/docs/wcag/3.3.4.mdx', 12862], b68f03f7: [() => r.e(815).then(r.bind(r, 51531)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 51531], b70cd504: [() => r.e(36546).then(r.bind(r, 84066)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 84066], b729a1a1: [() => r.e(29386).then(r.bind(r, 31253)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 31253], b75db01c: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(46536)]).then(r.bind(r, 5807)), '@site/docs/componenten/modal-dialog/index.mdx', 5807], b83fe955: [() => Promise.all([r.e(40532), r.e(14889), r.e(78883)]).then(r.bind(r, 9616)), '@site/docs/richtlijnen/formulieren/errors.mdx', 9616], b8bffd88: [() => r.e(65391).then(r.bind(r, 14179)), '@site/docs/handboek/designer/README.md', 14179], b9e57eaa: [() => r.e(82884).then(r.t.bind(r, 44234, 19)), '~docs/default/category-voorbeelden-category-voorbeelden-795.json', 44234], bb678bf7: [() => r.e(58479).then(r.t.bind(r, 8263, 19)), '~blog/default/blog-tags-lettertype-5b1.json', 8263], bc199175: [() => r.e(96222).then(r.bind(r, 35347)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 35347], bc2d69ea: [() => r.e(85634).then(r.bind(r, 9697)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 9697], be0dd82d: [() => r.e(59288).then(r.t.bind(r, 76777, 19)), '~docs/default/category-voorbeelden-category-patronen-a5b.json', 76777], bf13cd03: [() => r.e(75505).then(r.t.bind(r, 95446, 19)), '~docs/default/category-community-category-heartbeat-3a1.json', 95446], bf14fce1: [() => r.e(15470).then(r.bind(r, 88981)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 88981], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 12464)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 12464], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 8419)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 8419], c2b84a26: [() => r.e(53367).then(r.bind(r, 5006)), '@site/docs/wcag/3.2.2.mdx', 5006], c3dc88b7: [() => r.e(36194).then(r.bind(r, 86576)), '@site/docs/wcag/3.2.1.mdx', 86576], c45f29d0: [() => r.e(91215).then(r.t.bind(r, 37463, 19)), '~docs/default/category-handboek-category-handboek-24f.json', 37463], c51cb369: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(90258)]).then(r.bind(r, 42246)), '@site/docs/componenten/language-navigation/index.mdx', 42246], c651b2e8: [() => r.e(75386).then(r.bind(r, 63510)), '@site/docs/project/nieuwsbrief.mdx', 63510], c6b96a0f: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20911)]).then(r.bind(r, 33060)), '@site/docs/componenten/non-modal-dialog/index.mdx', 33060], c776d6ea: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(85)]).then(r.bind(r, 16932)), '@site/docs/componenten/heading-4/index.mdx', 16932], c8ac2561: [() => r.e(67586).then(r.bind(r, 30401)), '@site/docs/handboek/naamgeving.mdx', 30401], c8c68184: [() => Promise.all([r.e(40532), r.e(14889), r.e(48373)]).then(r.bind(r, 44876)), '@site/docs/richtlijnen/formulieren/help-the-user.mdx', 44876], c9609a68: [() => r.e(72822).then(r.bind(r, 84955)), '@site/blog/2024/20240701-meerdere-producten.md', 84955], c9c3106d: [() => r.e(35048).then(r.t.bind(r, 37907, 19)), '~blog/default/blog-tags-designers-24d.json', 37907], ca36df4d: [() => r.e(60917).then(r.bind(r, 56711)), '@site/docs/CHANGELOG.md', 56711], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 25540)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 25540], cc7e1584: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(36200)]).then(r.bind(r, 30749)), '@site/docs/componenten/strong/index.mdx', 30749], ccc49370: [() => Promise.all([r.e(40532), r.e(6418), r.e(46103)]).then(r.bind(r, 78856)), '@theme/BlogPostPage', 78856], cd3c7377: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(25425)]).then(r.bind(r, 93983)), '@site/docs/componenten/form-field-description/index.mdx', 93983], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 5063)), '@site/docs/community/events/design-systems-week-2022.mdx', 5063], ce7b85cb: [() => r.e(37498).then(r.bind(r, 91626)), '@site/docs/handboek/organisatie/meedoen.md', 91626], ced44f18: [() => r.e(81484).then(r.bind(r, 9019)), '@site/docs/community/events/design-open-dag.mdx', 9019], d01ba261: [() => r.e(6639).then(r.t.bind(r, 99706, 19)), '~blog/default/blog-tags-richtlijnen-d98-list.json', 99706], d0b753ca: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(47531)]).then(r.bind(r, 79395)), '@site/docs/componenten/radio-button/index.mdx', 79395], d19a514d: [() => r.e(20724).then(r.t.bind(r, 49372, 19)), '~blog/default/blog-tags-meta-401.json', 49372], d19ee383: [() => r.e(95282).then(r.bind(r, 31183)), '@site/docs/wcag/2.4.6.mdx', 31183], d35b0244: [() => r.e(79951).then(r.t.bind(r, 57883, 19)), '~blog/default/blog-tags-estafettemodel-0cf.json', 57883], d3c1b80a: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(58441)]).then(r.bind(r, 36265)), '@site/docs/componenten/avatar/index.mdx', 36265], d3deb5db: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(88021)]).then(r.bind(r, 48114)), '@site/docs/componenten/toggletip/index.mdx', 48114], d4552b9e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(15403)]).then(r.bind(r, 85027)), '@site/docs/componenten/form-field-error-message/index.mdx', 85027], d467e203: [() => r.e(76902).then(r.bind(r, 72574)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 72574], d5484ed9: [() => r.e(59355).then(r.t.bind(r, 6827, 19)), '~docs/default/tag-tags-community-74e.json', 6827], d5f36106: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(16833)]).then(r.bind(r, 32144)), '@site/docs/componenten/status-badge/index.mdx', 32144], d9284525: [() => r.e(54836).then(r.bind(r, 70266)), '@site/docs/wcag/2.4.10.mdx', 70266], da2da55d: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(95102)]).then(r.bind(r, 94645)), '@site/docs/componenten/heading-group/index.mdx', 94645], da8aeb86: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(54472)]).then(r.bind(r, 93601)), '@site/docs/componenten/navigation-bar/index.mdx', 93601], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 27107)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 27107], dd06f6af: [() => r.e(18148).then(r.bind(r, 21179)), '@site/docs/voorbeelden/README.md', 21179], dd47c273: [() => r.e(24012).then(r.t.bind(r, 39464, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-voor-stijl-d34.json', 39464], dd7e6517: [() => r.e(88492).then(r.t.bind(r, 74857, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3-list.json', 74857], ddf35722: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(68424)]).then(r.bind(r, 58768)), '@site/docs/componenten/form-field-label/index.mdx', 58768], de9ea4b2: [() => r.e(69285).then(r.t.bind(r, 74212, 19)), '~docs/default/category-project-category-project-1ac.json', 74212], df203c0f: [() => r.e(99924).then(r.bind(r, 63083)), '@theme/DocTagDocListPage', 63083], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 64129)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 64129], e07f5d94: [() => r.e(67833).then(r.bind(r, 99502)), '@site/docs/richtlijnen/stijl/ruimte.md', 99502], e12b15f5: [() => Promise.all([r.e(40532), r.e(77913), r.e(40125)]).then(r.bind(r, 24176)), '@site/docs/wcag/3.1.2.mdx', 24176], e21395b4: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(48239)]).then(r.bind(r, 29926)), '@site/docs/componenten/notification-banner/index.mdx', 29926], e3b51539: [() => r.e(69592).then(r.bind(r, 16706)), '@site/docs/handboek/developer/07-componenten-maken.md', 16706], e59d1036: [() => r.e(38934).then(r.bind(r, 6963)), '@site/docs/voorbeelden/onderzoek/README.md', 6963], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(41990)]).then(r.bind(r, 77514)), '@site/docs/componenten/separator/index.mdx', 77514], e756447e: [() => r.e(83516).then(r.bind(r, 57144)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 57144], e83393d8: [() => r.e(47826).then(r.t.bind(r, 8877, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-voor-formulieren-4bc.json', 8877], e8c696cf: [() => r.e(10775).then(r.t.bind(r, 57331, 19)), '~blog/default/blog-tags-figma-d77-list.json', 57331], e94ed988: [() => r.e(54171).then(r.bind(r, 78190)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 78190], e98c6ca0: [() => r.e(13538).then(r.bind(r, 18334)), '@site/docs/wcag/3.3.1.mdx', 18334], e9b2227f: [() => r.e(71639).then(r.bind(r, 65578)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 65578], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 9704)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 9704], ed74afc1: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(19552)]).then(r.bind(r, 55755)), '@site/docs/componenten/select/index.mdx', 55755], f15b6573: [() => r.e(74605).then(r.bind(r, 24096)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 24096], f1833817: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(43166)]).then(r.bind(r, 32649)), '@site/docs/componenten/table/index.mdx', 32649], f1c1d91e: [() => r.e(20550).then(r.bind(r, 24437)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 24437], f20a3699: [() => r.e(80684).then(r.t.bind(r, 30203, 19)), '~blog/default/blog-tags-richtlijnen-d98.json', 30203], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f36b0a83: [() => r.e(90281).then(r.bind(r, 87704)), '@site/docs/wcag/2.4.2.mdx', 87704], f52fcd14: [() => Promise.all([r.e(40532), r.e(14889), r.e(28370)]).then(r.bind(r, 87602)), '@site/docs/richtlijnen/formulieren/multistep.mdx', 87602], f5daaf40: [() => r.e(47587).then(r.bind(r, 68011)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 68011], f5dc78b8: [() => r.e(98625).then(r.bind(r, 37179)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 37179], f5f3cece: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(32652)]).then(r.bind(r, 73532)), '@site/docs/componenten/spinner/index.mdx', 73532], f633a06a: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(85270)]).then(r.bind(r, 35947)), '@site/docs/componenten/link-list/index.mdx', 35947], f67ebaad: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(25507)]).then(r.bind(r, 41198)), '@site/docs/componenten/video/index.mdx', 41198], f9097464: [() => r.e(36315).then(r.t.bind(r, 55450, 19)), '~blog/default/blog-tags-componenten-652-list.json', 55450], facf449e: [() => r.e(64474).then(r.t.bind(r, 77040, 19)), '~docs/default/category-handboek-category-voor-organisaties-b2b.json', 77040], fbf7ea66: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(20322)]).then(r.bind(r, 40570)), '@site/docs/componenten/case-card/index.mdx', 40570], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(2930)]).then(r.bind(r, 27491)), '@site/docs/componenten/progress-list/index.mdx', 27491], fd2458ef: [() => r.e(39680).then(r.bind(r, 42395)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 42395], fe9a39bd: [() => r.e(35959).then(r.bind(r, 68113)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 68113], ff07fdf2: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(75221)]).then(r.bind(r, 50479)), '@site/docs/componenten/unordered-list/index.mdx', 50479], ff0d970f: [() => r.e(99605).then(r.bind(r, 38184)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 38184], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 85838)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 85838], ffcf9766: [() => Promise.all([r.e(40532), r.e(40168), r.e(20257), r.e(52722), r.e(7869)]).then(r.bind(r, 13101)), '@site/docs/componenten/number-input/index.mdx', 13101] };
    var i = r(52676);
    function l(e) {
     let { error: t, retry: r, pastDelay: n } = e;
@@ -93,306 +93,310 @@
     );
    }
    const h = [
-    { path: '/en/bingo/', component: d('/en/bingo/', '4ac'), exact: !0 },
-    { path: '/en/bingo/voorbeeld-met-fouten-1', component: d('/en/bingo/voorbeeld-met-fouten-1', 'dab'), exact: !0 },
-    { path: '/en/bingo/voorbeeld-met-fouten-2', component: d('/en/bingo/voorbeeld-met-fouten-2', 'd09'), exact: !0 },
-    { path: '/en/blog', component: d('/en/blog', 'fbd'), exact: !0 },
-    { path: '/en/blog/archive', component: d('/en/blog/archive', '170'), exact: !0 },
-    { path: '/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', 'eff'), exact: !0 },
-    { path: '/en/blog/community-blocks', component: d('/en/blog/community-blocks', 'd61'), exact: !0 },
-    { path: '/en/blog/community-online-formulieren', component: d('/en/blog/community-online-formulieren', 'c2a'), exact: !0 },
-    { path: '/en/blog/de-mijlpalen-van-2022', component: d('/en/blog/de-mijlpalen-van-2022', '8f1'), exact: !0 },
-    { path: '/en/blog/design-open-dag', component: d('/en/blog/design-open-dag', '16e'), exact: !0 },
-    { path: '/en/blog/design-systems-in-het-buitenland-6-lessen', component: d('/en/blog/design-systems-in-het-buitenland-6-lessen', '5c7'), exact: !0 },
-    { path: '/en/blog/design-systems-week-2023-komt-eraan', component: d('/en/blog/design-systems-week-2023-komt-eraan', '3af'), exact: !0 },
-    { path: '/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'd27'), exact: !0 },
-    { path: '/en/blog/een-overheid-practice-what-you-preach', component: d('/en/blog/een-overheid-practice-what-you-preach', '298'), exact: !0 },
-    { path: '/en/blog/gebruikerstest-ondernemers-den-haag', component: d('/en/blog/gebruikerstest-ondernemers-den-haag', 'ed2'), exact: !0 },
-    { path: '/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', 'e52'), exact: !0 },
-    { path: '/en/blog/innovatiebudget-voor-nl-design-system', component: d('/en/blog/innovatiebudget-voor-nl-design-system', 'a92'), exact: !0 },
-    { path: '/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '5a9'), exact: !0 },
-    { path: '/en/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/en/blog/kick-off-werkgroepen-van-het-nl-design-system', '75e'), exact: !0 },
-    { path: '/en/blog/licentiekeuze-nl-design-system', component: d('/en/blog/licentiekeuze-nl-design-system', '322'), exact: !0 },
-    { path: '/en/blog/meerdere-manieren-contact', component: d('/en/blog/meerdere-manieren-contact', '7b8'), exact: !0 },
-    { path: '/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'b74'), exact: !0 },
-    { path: '/en/blog/nl-design-system-in-2021', component: d('/en/blog/nl-design-system-in-2021', 'bbc'), exact: !0 },
-    { path: '/en/blog/nl-design-system-zelfstandig-verder', component: d('/en/blog/nl-design-system-zelfstandig-verder', 'cf9'), exact: !0 },
-    { path: '/en/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/en/blog/over-figma-als-keuze-voor-het-nl-design-system', '750'), exact: !0 },
-    { path: '/en/blog/spacing-tokens', component: d('/en/blog/spacing-tokens', '11e'), exact: !0 },
-    { path: '/en/blog/tags', component: d('/en/blog/tags', '8bb'), exact: !0 },
-    { path: '/en/blog/tags/architectuur', component: d('/en/blog/tags/architectuur', '93f'), exact: !0 },
-    { path: '/en/blog/tags/buitenland', component: d('/en/blog/tags/buitenland', 'c08'), exact: !0 },
-    { path: '/en/blog/tags/contentrichtlijnen', component: d('/en/blog/tags/contentrichtlijnen', '267'), exact: !0 },
-    { path: '/en/blog/tags/design-systems', component: d('/en/blog/tags/design-systems', 'acf'), exact: !0 },
-    { path: '/en/blog/tags/design-systems-week', component: d('/en/blog/tags/design-systems-week', '9a8'), exact: !0 },
-    { path: '/en/blog/tags/design-tokens', component: d('/en/blog/tags/design-tokens', 'c98'), exact: !0 },
-    { path: '/en/blog/tags/designers', component: d('/en/blog/tags/designers', '115'), exact: !0 },
-    { path: '/en/blog/tags/developers', component: d('/en/blog/tags/developers', '0b0'), exact: !0 },
-    { path: '/en/blog/tags/een-overheid', component: d('/en/blog/tags/een-overheid', '648'), exact: !0 },
-    { path: '/en/blog/tags/estafettemodel', component: d('/en/blog/tags/estafettemodel', 'a2f'), exact: !0 },
-    { path: '/en/blog/tags/figma', component: d('/en/blog/tags/figma', '407'), exact: !0 },
-    { path: '/en/blog/tags/formulieren', component: d('/en/blog/tags/formulieren', '011'), exact: !0 },
-    { path: '/en/blog/tags/gebruiker-centraal', component: d('/en/blog/tags/gebruiker-centraal', '6fa'), exact: !0 },
-    { path: '/en/blog/tags/gebruikerstesten', component: d('/en/blog/tags/gebruikerstesten', 'fe0'), exact: !0 },
-    { path: '/en/blog/tags/lettertype', component: d('/en/blog/tags/lettertype', '982'), exact: !0 },
-    { path: '/en/blog/tags/meta', component: d('/en/blog/tags/meta', '1b2'), exact: !0 },
-    { path: '/en/blog/tags/mijlpalen', component: d('/en/blog/tags/mijlpalen', '70a'), exact: !0 },
-    { path: '/en/blog/tags/nl-design-system', component: d('/en/blog/tags/nl-design-system', '513'), exact: !0 },
-    { path: '/en/blog/tags/richtlijnen', component: d('/en/blog/tags/richtlijnen', '3c7'), exact: !0 },
-    { path: '/en/blog/tags/toegankelijkheid', component: d('/en/blog/tags/toegankelijkheid', 'f80'), exact: !0 },
-    { path: '/en/blog/tags/update', component: d('/en/blog/tags/update', '651'), exact: !0 },
-    { path: '/en/blog/tags/werkgroepen', component: d('/en/blog/tags/werkgroepen', 'e31'), exact: !0 },
-    { path: '/en/blog/tags/word-press', component: d('/en/blog/tags/word-press', '87e'), exact: !0 },
-    { path: '/en/blog/toegankelijke-foutmeldingen-formulieren', component: d('/en/blog/toegankelijke-foutmeldingen-formulieren', '078'), exact: !0 },
-    { path: '/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', '3e3'), exact: !0 },
-    { path: '/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e9d'), exact: !0 },
-    { path: '/en/blog/update-nl-design-system', component: d('/en/blog/update-nl-design-system', 'fca'), exact: !0 },
-    { path: '/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', 'c4b'), exact: !0 },
-    { path: '/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '9ab'), exact: !0 },
-    { path: '/en/blog/wmebv-gebruikerstesten', component: d('/en/blog/wmebv-gebruikerstesten', '9d6'), exact: !0 },
-    { path: '/en/contrast/', component: d('/en/contrast/', 'dce'), exact: !0 },
-    { path: '/en/search', component: d('/en/search', '1e0'), exact: !0 },
-    { path: '/en/', component: d('/en/', 'b64'), exact: !0 },
+    { path: '/bingo/', component: d('/bingo/', '32d'), exact: !0 },
+    { path: '/bingo/voorbeeld-met-fouten-1', component: d('/bingo/voorbeeld-met-fouten-1', '382'), exact: !0 },
+    { path: '/bingo/voorbeeld-met-fouten-2', component: d('/bingo/voorbeeld-met-fouten-2', '73d'), exact: !0 },
+    { path: '/blog', component: d('/blog', 'e28'), exact: !0 },
+    { path: '/blog/archive', component: d('/blog/archive', 'f70'), exact: !0 },
+    { path: '/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', '9ba'), exact: !0 },
+    { path: '/blog/community-blocks', component: d('/blog/community-blocks', '20f'), exact: !0 },
+    { path: '/blog/community-online-formulieren', component: d('/blog/community-online-formulieren', '2d3'), exact: !0 },
+    { path: '/blog/de-mijlpalen-van-2022', component: d('/blog/de-mijlpalen-van-2022', '802'), exact: !0 },
+    { path: '/blog/design-open-dag', component: d('/blog/design-open-dag', '18d'), exact: !0 },
+    { path: '/blog/design-systems-in-het-buitenland-6-lessen', component: d('/blog/design-systems-in-het-buitenland-6-lessen', 'b57'), exact: !0 },
+    { path: '/blog/design-systems-week-2023-komt-eraan', component: d('/blog/design-systems-week-2023-komt-eraan', 'a8c'), exact: !0 },
+    { path: '/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'b32'), exact: !0 },
+    { path: '/blog/een-design-system-meerdere-producten', component: d('/blog/een-design-system-meerdere-producten', '522'), exact: !0 },
+    { path: '/blog/een-overheid-practice-what-you-preach', component: d('/blog/een-overheid-practice-what-you-preach', 'aa1'), exact: !0 },
+    { path: '/blog/gebruikerstest-ondernemers-den-haag', component: d('/blog/gebruikerstest-ondernemers-den-haag', '654'), exact: !0 },
+    { path: '/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', '932'), exact: !0 },
+    { path: '/blog/innovatiebudget-voor-nl-design-system', component: d('/blog/innovatiebudget-voor-nl-design-system', '07b'), exact: !0 },
+    { path: '/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '25a'), exact: !0 },
+    { path: '/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/blog/kick-off-werkgroepen-van-het-nl-design-system', '222'), exact: !0 },
+    { path: '/blog/licentiekeuze-nl-design-system', component: d('/blog/licentiekeuze-nl-design-system', '36b'), exact: !0 },
+    { path: '/blog/meerdere-manieren-contact', component: d('/blog/meerdere-manieren-contact', '4ed'), exact: !0 },
+    { path: '/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'bd7'), exact: !0 },
+    { path: '/blog/nl-design-system-in-2021', component: d('/blog/nl-design-system-in-2021', 'b94'), exact: !0 },
+    { path: '/blog/nl-design-system-zelfstandig-verder', component: d('/blog/nl-design-system-zelfstandig-verder', '916'), exact: !0 },
+    { path: '/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/blog/over-figma-als-keuze-voor-het-nl-design-system', 'b7d'), exact: !0 },
+    { path: '/blog/spacing-tokens', component: d('/blog/spacing-tokens', '178'), exact: !0 },
+    { path: '/blog/tags', component: d('/blog/tags', 'f94'), exact: !0 },
+    { path: '/blog/tags/architectuur', component: d('/blog/tags/architectuur', '219'), exact: !0 },
+    { path: '/blog/tags/buitenland', component: d('/blog/tags/buitenland', '40f'), exact: !0 },
+    { path: '/blog/tags/componenten', component: d('/blog/tags/componenten', '1db'), exact: !0 },
+    { path: '/blog/tags/contentrichtlijnen', component: d('/blog/tags/contentrichtlijnen', '784'), exact: !0 },
+    { path: '/blog/tags/design-systems', component: d('/blog/tags/design-systems', '075'), exact: !0 },
+    { path: '/blog/tags/design-systems-week', component: d('/blog/tags/design-systems-week', 'e88'), exact: !0 },
+    { path: '/blog/tags/design-tokens', component: d('/blog/tags/design-tokens', '015'), exact: !0 },
+    { path: '/blog/tags/designers', component: d('/blog/tags/designers', 'c39'), exact: !0 },
+    { path: '/blog/tags/developers', component: d('/blog/tags/developers', 'c7b'), exact: !0 },
+    { path: '/blog/tags/een-overheid', component: d('/blog/tags/een-overheid', '3b2'), exact: !0 },
+    { path: '/blog/tags/estafettemodel', component: d('/blog/tags/estafettemodel', 'f65'), exact: !0 },
+    { path: '/blog/tags/figma', component: d('/blog/tags/figma', '7e0'), exact: !0 },
+    { path: '/blog/tags/formulieren', component: d('/blog/tags/formulieren', '891'), exact: !0 },
+    { path: '/blog/tags/gebruiker-centraal', component: d('/blog/tags/gebruiker-centraal', 'e1e'), exact: !0 },
+    { path: '/blog/tags/gebruikersonderzoeken', component: d('/blog/tags/gebruikersonderzoeken', '8d7'), exact: !0 },
+    { path: '/blog/tags/gebruikerstesten', component: d('/blog/tags/gebruikerstesten', '5ff'), exact: !0 },
+    { path: '/blog/tags/lettertype', component: d('/blog/tags/lettertype', 'e97'), exact: !0 },
+    { path: '/blog/tags/logius', component: d('/blog/tags/logius', 'ef0'), exact: !0 },
+    { path: '/blog/tags/meta', component: d('/blog/tags/meta', 'c3b'), exact: !0 },
+    { path: '/blog/tags/mijlpalen', component: d('/blog/tags/mijlpalen', '6cd'), exact: !0 },
+    { path: '/blog/tags/nl-design-system', component: d('/blog/tags/nl-design-system', 'd2e'), exact: !0 },
+    { path: '/blog/tags/richtlijnen', component: d('/blog/tags/richtlijnen', 'ea4'), exact: !0 },
+    { path: '/blog/tags/toegankelijkheid', component: d('/blog/tags/toegankelijkheid', '5d0'), exact: !0 },
+    { path: '/blog/tags/update', component: d('/blog/tags/update', 'e38'), exact: !0 },
+    { path: '/blog/tags/werkgroepen', component: d('/blog/tags/werkgroepen', '7fb'), exact: !0 },
+    { path: '/blog/tags/word-press', component: d('/blog/tags/word-press', 'c96'), exact: !0 },
+    { path: '/blog/toegankelijke-foutmeldingen-formulieren', component: d('/blog/toegankelijke-foutmeldingen-formulieren', 'dc6'), exact: !0 },
+    { path: '/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', 'ac9'), exact: !0 },
+    { path: '/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e3f'), exact: !0 },
+    { path: '/blog/update-nl-design-system', component: d('/blog/update-nl-design-system', 'd7c'), exact: !0 },
+    { path: '/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', '925'), exact: !0 },
+    { path: '/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '3b9'), exact: !0 },
+    { path: '/blog/wmebv-gebruikerstesten', component: d('/blog/wmebv-gebruikerstesten', '2ec'), exact: !0 },
+    { path: '/contrast/', component: d('/contrast/', '6e5'), exact: !0 },
+    { path: '/search', component: d('/search', 'c7a'), exact: !0 },
+    { path: '/', component: d('/', 'cab'), exact: !0 },
     {
-     path: '/en/',
-     component: d('/en/', 'f81'),
+     path: '/',
+     component: d('/', '3f9'),
      routes: [
       {
-       path: '/en/',
-       component: d('/en/', '98b'),
+       path: '/',
+       component: d('/', 'b91'),
        routes: [
-        { path: '/en/tags', component: d('/en/tags', '01c'), exact: !0 },
-        { path: '/en/tags/community', component: d('/en/tags/community', '1ff'), exact: !0 },
+        { path: '/tags', component: d('/tags', 'd7a'), exact: !0 },
+        { path: '/tags/community', component: d('/tags/community', 'e15'), exact: !0 },
         {
-         path: '/en/',
-         component: d('/en/', '954'),
+         path: '/',
+         component: d('/', '83e'),
          routes: [
-          { path: '/en/accordion', component: d('/en/accordion', 'b0f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/action-group', component: d('/en/action-group', '24c'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/alert', component: d('/en/alert', '5e0'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/alert-dialog', component: d('/en/alert-dialog', '9bd'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/avatar', component: d('/en/avatar', 'e85'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/blockquote', component: d('/en/blockquote', '57d'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/breadcrumb-navigation', component: d('/en/breadcrumb-navigation', 'c6e'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/button', component: d('/en/button', 'f7b'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/Calendar', component: d('/en/Calendar', '310'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/card-as-link', component: d('/en/card-as-link', '121'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/case-card', component: d('/en/case-card', '991'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/CHANGELOG', component: d('/en/CHANGELOG', '192'), exact: !0 },
-          { path: '/en/checkbox', component: d('/en/checkbox', '860'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/checkbox-group', component: d('/en/checkbox-group', 'fb7'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/coc', component: d('/en/coc', '4b6'), exact: !0 },
-          { path: '/en/colofon', component: d('/en/colofon', 'b43'), exact: !0 },
-          { path: '/en/community', component: d('/en/community', '2bb'), exact: !0, sidebar: 'community' },
-          { path: '/en/community/events/estafettemodeldag', component: d('/en/community/events/estafettemodeldag', '791'), exact: !0, sidebar: 'community' },
-          { path: '/en/community/events/overzicht', component: d('/en/community/events/overzicht', 'aa6'), exact: !0, sidebar: 'community' },
-          { path: '/en/community/sluit-je-aan', component: d('/en/community/sluit-je-aan', '3d4'), exact: !0, sidebar: 'community' },
-          { path: '/en/community/sluit-je-aan/bedankt', component: d('/en/community/sluit-je-aan/bedankt', '838'), exact: !0 },
-          { path: '/en/community/wie-doet-mee', component: d('/en/community/wie-doet-mee', '109'), exact: !0, sidebar: 'community' },
-          { path: '/en/componenten/', component: d('/en/componenten/', '040'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/data-badge', component: d('/en/data-badge', 'c07'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/date-input', component: d('/en/date-input', '6e0'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/date-input-group', component: d('/en/date-input-group', '807'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/date-picker', component: d('/en/date-picker', '39a'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/definition-list', component: d('/en/definition-list', '47f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/dot-badge', component: d('/en/dot-badge', '3a9'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/drawer', component: d('/en/drawer', '204'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/events/design-open-dag', component: d('/en/events/design-open-dag', '5ba'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/design-open-hour', component: d('/en/events/design-open-hour', '6bd'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/design-open-hour/aanmelden', component: d('/en/events/design-open-hour/aanmelden', '3d7'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/design-open-hour/aanmelden/bedankt', component: d('/en/events/design-open-hour/aanmelden/bedankt', '283'), exact: !0 },
-          { path: '/en/events/design-open-hour/overzicht', component: d('/en/events/design-open-hour/overzicht', '16c'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/design-systems-week-2022', component: d('/en/events/design-systems-week-2022', 'f5c'), exact: !0 },
-          { path: '/en/events/design-systems-week-2023', component: d('/en/events/design-systems-week-2023', 'bc7'), exact: !0 },
-          { path: '/en/events/design-systems-week-2023/en/program', component: d('/en/events/design-systems-week-2023/en/program', '22d'), exact: !0 },
-          { path: '/en/events/design-systems-week-2023/en/timetable', component: d('/en/events/design-systems-week-2023/en/timetable', 'eb9'), exact: !0 },
-          { path: '/en/events/design-systems-week-2023/programma', component: d('/en/events/design-systems-week-2023/programma', '5a2'), exact: !0 },
-          { path: '/en/events/design-systems-week-2023/tijdschema', component: d('/en/events/design-systems-week-2023/tijdschema', '83e'), exact: !0 },
-          { path: '/en/events/design-systems-week-2024', component: d('/en/events/design-systems-week-2024', '535'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/heartbeat', component: d('/en/events/heartbeat', 'b03'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/heartbeat/aanmelden', component: d('/en/events/heartbeat/aanmelden', 'd05'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/heartbeat/aanmelden/bedankt', component: d('/en/events/heartbeat/aanmelden/bedankt', '057'), exact: !0 },
-          { path: '/en/events/heartbeat/overzicht', component: d('/en/events/heartbeat/overzicht', 'cbb'), exact: !0, sidebar: 'community' },
-          { path: '/en/events/heartbeat/videos', component: d('/en/events/heartbeat/videos', 'efc'), exact: !0, sidebar: 'community' },
-          { path: '/en/fieldset', component: d('/en/fieldset', '30f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/figure', component: d('/en/figure', '51c'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/file-input', component: d('/en/file-input', '922'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field', component: d('/en/form-field', 'bea'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-checkbox-option', component: d('/en/form-field-checkbox-option', '9ea'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-description', component: d('/en/form-field-description', '574'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-error-message', component: d('/en/form-field-error-message', 'd71'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-label', component: d('/en/form-field-label', '96b'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-option-label', component: d('/en/form-field-option-label', '867'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-partial', component: d('/en/form-field-partial', '218'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-partial-label', component: d('/en/form-field-partial-label', '90d'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/form-field-radio-option', component: d('/en/form-field-radio-option', '082'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/handboek', component: d('/en/handboek', '934'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/candidate-stappenplan', component: d('/en/handboek/component-bijdragen/candidate-stappenplan', '4e4'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/community-stappenplan', component: d('/en/handboek/component-bijdragen/community-stappenplan', 'e53'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/definition-of-done', component: d('/en/handboek/component-bijdragen/definition-of-done', 'cc4'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/en/handboek/component-bijdragen/hall-of-fame-stappenplan', '32a'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/en/handboek/component-bijdragen/help-wanted-stappenplan', 'c04'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/component-bijdragen/overzicht', component: d('/en/handboek/component-bijdragen/overzicht', '9b2'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/design-tokens/', component: d('/en/handboek/design-tokens/', '955'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/', component: d('/en/handboek/designer/', '1aa'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/community', component: d('/en/handboek/designer/community', 'cf3'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/figma-structuur', component: d('/en/handboek/designer/figma-structuur', '31c'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/overzicht', component: d('/en/handboek/designer/overzicht', '07f'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/stappenplan', component: d('/en/handboek/designer/stappenplan', '4b1'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/voorbeeld-thema', component: d('/en/handboek/designer/voorbeeld-thema', '920'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/designer/zelf-componenten-maken', component: d('/en/handboek/designer/zelf-componenten-maken', '875'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/aan-de-slag', component: d('/en/handboek/developer/aan-de-slag', '799'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/architectuur', component: d('/en/handboek/developer/architectuur', '814'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/component-inzetten', component: d('/en/handboek/developer/component-inzetten', '0e8'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/component-uitbreiden', component: d('/en/handboek/developer/component-uitbreiden', '940'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/componenten-maken', component: d('/en/handboek/developer/componenten-maken', 'd74'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/herbruikbare-css', component: d('/en/handboek/developer/herbruikbare-css', '9e2'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/meewerken-als-developer', component: d('/en/handboek/developer/meewerken-als-developer', '395'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/overzicht', component: d('/en/handboek/developer/overzicht', 'a06'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/samenwerken-aan-componenten', component: d('/en/handboek/developer/samenwerken-aan-componenten', '37c'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/developer/thema-maken', component: d('/en/handboek/developer/thema-maken', '4ec'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/estafettemodel', component: d('/en/handboek/estafettemodel', '7d6'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/introductie', component: d('/en/handboek/introductie', '910'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/leverancier/introductie', component: d('/en/handboek/leverancier/introductie', '42a'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/manager/introductie', component: d('/en/handboek/manager/introductie', 'ce3'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/naamgeving', component: d('/en/handboek/naamgeving', '1d5'), exact: !0 },
-          { path: '/en/handboek/organisatie/meedoen', component: d('/en/handboek/organisatie/meedoen', 'f3e'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/organisatie/overzicht', component: d('/en/handboek/organisatie/overzicht', 'b60'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/handboek/organisatie/vragen-over-aanbestedingen', component: d('/en/handboek/organisatie/vragen-over-aanbestedingen', 'bdc'), exact: !0, sidebar: 'handboek' },
-          { path: '/en/heading', component: d('/en/heading', 'd97'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-1', component: d('/en/heading-1', 'e3e'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-2', component: d('/en/heading-2', '205'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-3', component: d('/en/heading-3', '160'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-4', component: d('/en/heading-4', 'b74'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-5', component: d('/en/heading-5', '632'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-6', component: d('/en/heading-6', 'd1e'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/heading-group', component: d('/en/heading-group', '06c'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/icon', component: d('/en/icon', '540'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/invalid-form-alert', component: d('/en/invalid-form-alert', '953'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/language-navigation', component: d('/en/language-navigation', 'cf8'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/legend', component: d('/en/legend', 'c6f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/link', component: d('/en/link', '6a7'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/link-list', component: d('/en/link-list', 'dfe'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/modal-dialog', component: d('/en/modal-dialog', '617'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/navigation-bar', component: d('/en/navigation-bar', '18d'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/non-modal-dialog', component: d('/en/non-modal-dialog', 'da9'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/notification-banner', component: d('/en/notification-banner', '685'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/number-badge', component: d('/en/number-badge', '2f6'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/number-input', component: d('/en/number-input', 'c93'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/open-source/cc0', component: d('/en/open-source/cc0', 'efb'), exact: !0 },
-          { path: '/en/open-source/eupl', component: d('/en/open-source/eupl', 'faf'), exact: !0 },
-          { path: '/en/ordered-list', component: d('/en/ordered-list', '2f7'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/page-footer', component: d('/en/page-footer', '750'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/page-header', component: d('/en/page-header', '40f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/pagination', component: d('/en/pagination', 'c17'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/paragraph', component: d('/en/paragraph', 'e05'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/password-input', component: d('/en/password-input', 'f65'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/pre-heading', component: d('/en/pre-heading', 'b30'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/privacyverklaring', component: d('/en/privacyverklaring', 'ff9'), exact: !0 },
-          { path: '/en/progress-bar', component: d('/en/progress-bar', '473'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/progress-list', component: d('/en/progress-list', '5cf'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/project', component: d('/en/project', '986'), exact: !0, sidebar: 'project' },
-          { path: '/en/project/blijf-op-de-hoogte', component: d('/en/project/blijf-op-de-hoogte', '0f9'), exact: !0, sidebar: 'project' },
-          { path: '/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '08d'), exact: !0 },
-          { path: '/en/project/faq', component: d('/en/project/faq', 'cea'), exact: !0, sidebar: 'project' },
-          { path: '/en/project/kernteam', component: d('/en/project/kernteam', '87b'), exact: !0, sidebar: 'project' },
-          { path: '/en/project/links', component: d('/en/project/links', '5cb'), exact: !0, sidebar: 'project' },
-          { path: '/en/project/nieuwsbrief', component: d('/en/project/nieuwsbrief', 'ff4'), exact: !0 },
-          { path: '/en/project/over-nl-design-system', component: d('/en/project/over-nl-design-system', 'ddf'), exact: !0, sidebar: 'project' },
-          { path: '/en/radio-button', component: d('/en/radio-button', 'a20'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/radio-group', component: d('/en/radio-group', 'd27'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/range', component: d('/en/range', '4eb'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/rich-text-content', component: d('/en/rich-text-content', 'f5b'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/richtlijnen', component: d('/en/richtlijnen', 'c7a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/', component: d('/en/richtlijnen/formulieren/', 'b5e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/autocomplete', component: d('/en/richtlijnen/formulieren/autocomplete', '053'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/bevestigingspagina', component: d('/en/richtlijnen/formulieren/bevestigingspagina', '670'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/buttons', component: d('/en/richtlijnen/formulieren/buttons', '9d1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/descriptions', component: d('/en/richtlijnen/formulieren/descriptions', '369'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/foutmeldingen', component: d('/en/richtlijnen/formulieren/foutmeldingen', '74b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/labels', component: d('/en/richtlijnen/formulieren/labels', 'c6c'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/links', component: d('/en/richtlijnen/formulieren/links', '392'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/meerdere-stappen', component: d('/en/richtlijnen/formulieren/meerdere-stappen', '65a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/overzicht', component: d('/en/richtlijnen/formulieren/overzicht', '3b5'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/placeholders', component: d('/en/richtlijnen/formulieren/placeholders', '361'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/toetsenbord', component: d('/en/richtlijnen/formulieren/toetsenbord', 'f77'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/visueel-ontwerp', component: d('/en/richtlijnen/formulieren/visueel-ontwerp', 'e3a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/voorkom-fouten', component: d('/en/richtlijnen/formulieren/voorkom-fouten', 'cc4'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/vragen', component: d('/en/richtlijnen/formulieren/vragen', '997'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/formulieren/wanneer-welk-form-element', component: d('/en/richtlijnen/formulieren/wanneer-welk-form-element', '8dc'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/introductie', component: d('/en/richtlijnen/introductie', 'dfe'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/stijl/iconen', component: d('/en/richtlijnen/stijl/iconen', 'e62'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/stijl/kleuren', component: d('/en/richtlijnen/stijl/kleuren', '0d9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/stijl/overzicht', component: d('/en/richtlijnen/stijl/overzicht', 'a44'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/stijl/ruimte', component: d('/en/richtlijnen/stijl/ruimte', '8c1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/richtlijnen/stijl/typografie', component: d('/en/richtlijnen/stijl/typografie', 'c04'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/select', component: d('/en/select', '831'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/separator', component: d('/en/separator', '6d1'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/side-navigation', component: d('/en/side-navigation', '1a0'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/skip-link', component: d('/en/skip-link', 'df2'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/spinner', component: d('/en/spinner', 'f5a'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/status-badge', component: d('/en/status-badge', '799'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/strong', component: d('/en/strong', '808'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/sub-heading', component: d('/en/sub-heading', 'd1f'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/summary-list', component: d('/en/summary-list', 'f83'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/switch', component: d('/en/switch', '499'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/table', component: d('/en/table', 'a74'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/tabs', component: d('/en/tabs', '283'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/task-list', component: d('/en/task-list', '339'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/text-input', component: d('/en/text-input', '4a4'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/text-input-group', component: d('/en/text-input-group', 'd64'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/textarea', component: d('/en/textarea', '761'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/toegankelijkheidsverklaring', component: d('/en/toegankelijkheidsverklaring', 'cd8'), exact: !0 },
-          { path: '/en/toegankelijkheidsverklaring/rapport-2023', component: d('/en/toegankelijkheidsverklaring/rapport-2023', '98a'), exact: !0 },
-          { path: '/en/toggletip', component: d('/en/toggletip', 'e24'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/unordered-list', component: d('/en/unordered-list', '763'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/video', component: d('/en/video', 'ee8'), exact: !0, sidebar: 'componenten' },
-          { path: '/en/voorbeelden', component: d('/en/voorbeelden', '6c2'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/', component: d('/en/voorbeelden/', 'dd5'), exact: !0 },
-          { path: '/en/voorbeelden/onderzoek/', component: d('/en/voorbeelden/onderzoek/', '525'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen', component: d('/en/voorbeelden/patronen', 'e59'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren', component: d('/en/voorbeelden/patronen/formulieren', '03c'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/en/voorbeelden/patronen/formulieren/bevestigingspagina', '852'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/controlepagina', component: d('/en/voorbeelden/patronen/formulieren/controlepagina', '5da'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/en/voorbeelden/patronen/formulieren/foutmeldingen', '6d7'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/funnel-header', component: d('/en/voorbeelden/patronen/formulieren/funnel-header', '33f'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/inloggen', component: d('/en/voorbeelden/patronen/formulieren/inloggen', '6ee'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/intropagina', component: d('/en/voorbeelden/patronen/formulieren/intropagina', 'dcb'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/en/voorbeelden/patronen/formulieren/meerstappenformulier', '539'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', 'dc4'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '92b'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/responsive-design', component: d('/en/voorbeelden/patronen/formulieren/responsive-design', '213'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'd0d'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/startpunt', component: d('/en/voorbeelden/patronen/formulieren/startpunt', '5dd'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/en/voorbeelden/patronen/formulieren/terug-navigeren', '7bb'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/uploaden', component: d('/en/voorbeelden/patronen/formulieren/uploaden', '52b'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/visual-design', component: d('/en/voorbeelden/patronen/formulieren/visual-design', '5c6'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/volgende-stap', component: d('/en/voorbeelden/patronen/formulieren/volgende-stap', 'ac3'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/en/voorbeelden/patronen/formulieren/voortgang-indicatie', '5ec'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/en/voorbeelden/templates/', component: d('/en/voorbeelden/templates/', 'f01'), exact: !0 },
-          { path: '/en/wcag', component: d('/en/wcag', '51a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/1.1.1', component: d('/en/wcag/1.1.1', '46c'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/1.3.1', component: d('/en/wcag/1.3.1', '210'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/1.3.5', component: d('/en/wcag/1.3.5', '3ca'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.1.1', component: d('/en/wcag/2.1.1', '2e5'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.1', component: d('/en/wcag/2.4.1', '01a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.10', component: d('/en/wcag/2.4.10', '74f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.13', component: d('/en/wcag/2.4.13', '73a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.2', component: d('/en/wcag/2.4.2', '237'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.4', component: d('/en/wcag/2.4.4', '405'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.6', component: d('/en/wcag/2.4.6', '5a9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/2.4.7', component: d('/en/wcag/2.4.7', 'faa'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.1.1', component: d('/en/wcag/3.1.1', '828'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.1.2', component: d('/en/wcag/3.1.2', '3f6'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.2.1', component: d('/en/wcag/3.2.1', '95b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.2.2', component: d('/en/wcag/3.2.2', '8ad'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.3.1', component: d('/en/wcag/3.3.1', '995'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.3.3', component: d('/en/wcag/3.3.3', '9b6'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/3.3.4', component: d('/en/wcag/3.3.4', '386'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/4.1.1', component: d('/en/wcag/4.1.1', '4d7'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/4.1.2', component: d('/en/wcag/4.1.2', '32f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/4.1.3', component: d('/en/wcag/4.1.3', '3ac'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/en/wcag/introduction', component: d('/en/wcag/introduction', 'f51'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/accordion', component: d('/accordion', 'a3b'), exact: !0, sidebar: 'componenten' },
+          { path: '/action-group', component: d('/action-group', 'e09'), exact: !0, sidebar: 'componenten' },
+          { path: '/alert', component: d('/alert', '16f'), exact: !0, sidebar: 'componenten' },
+          { path: '/alert-dialog', component: d('/alert-dialog', '9e5'), exact: !0, sidebar: 'componenten' },
+          { path: '/avatar', component: d('/avatar', 'ed9'), exact: !0, sidebar: 'componenten' },
+          { path: '/blockquote', component: d('/blockquote', '85f'), exact: !0, sidebar: 'componenten' },
+          { path: '/breadcrumb-navigation', component: d('/breadcrumb-navigation', 'd89'), exact: !0, sidebar: 'componenten' },
+          { path: '/button', component: d('/button', '7ed'), exact: !0, sidebar: 'componenten' },
+          { path: '/Calendar', component: d('/Calendar', '206'), exact: !0, sidebar: 'componenten' },
+          { path: '/card-as-link', component: d('/card-as-link', 'c7b'), exact: !0, sidebar: 'componenten' },
+          { path: '/case-card', component: d('/case-card', '92c'), exact: !0, sidebar: 'componenten' },
+          { path: '/CHANGELOG', component: d('/CHANGELOG', '5b7'), exact: !0 },
+          { path: '/checkbox', component: d('/checkbox', '8c2'), exact: !0, sidebar: 'componenten' },
+          { path: '/checkbox-group', component: d('/checkbox-group', 'a25'), exact: !0, sidebar: 'componenten' },
+          { path: '/coc', component: d('/coc', '1af'), exact: !0 },
+          { path: '/colofon', component: d('/colofon', 'ed3'), exact: !0 },
+          { path: '/community', component: d('/community', '42f'), exact: !0, sidebar: 'community' },
+          { path: '/community/events/estafettemodeldag', component: d('/community/events/estafettemodeldag', '5f2'), exact: !0, sidebar: 'community' },
+          { path: '/community/events/overzicht', component: d('/community/events/overzicht', 'acd'), exact: !0, sidebar: 'community' },
+          { path: '/community/sluit-je-aan', component: d('/community/sluit-je-aan', '00a'), exact: !0, sidebar: 'community' },
+          { path: '/community/sluit-je-aan/bedankt', component: d('/community/sluit-je-aan/bedankt', 'c5c'), exact: !0 },
+          { path: '/community/wie-doet-mee', component: d('/community/wie-doet-mee', 'd5c'), exact: !0, sidebar: 'community' },
+          { path: '/componenten/', component: d('/componenten/', '804'), exact: !0, sidebar: 'componenten' },
+          { path: '/data-badge', component: d('/data-badge', 'f88'), exact: !0, sidebar: 'componenten' },
+          { path: '/date-input', component: d('/date-input', 'a49'), exact: !0, sidebar: 'componenten' },
+          { path: '/date-input-group', component: d('/date-input-group', '428'), exact: !0, sidebar: 'componenten' },
+          { path: '/date-picker', component: d('/date-picker', 'f04'), exact: !0, sidebar: 'componenten' },
+          { path: '/definition-list', component: d('/definition-list', 'fdd'), exact: !0, sidebar: 'componenten' },
+          { path: '/dot-badge', component: d('/dot-badge', 'f25'), exact: !0, sidebar: 'componenten' },
+          { path: '/drawer', component: d('/drawer', 'f81'), exact: !0, sidebar: 'componenten' },
+          { path: '/events/design-open-dag', component: d('/events/design-open-dag', 'c4d'), exact: !0, sidebar: 'community' },
+          { path: '/events/design-open-hour', component: d('/events/design-open-hour', '08f'), exact: !0, sidebar: 'community' },
+          { path: '/events/design-open-hour/aanmelden', component: d('/events/design-open-hour/aanmelden', 'a61'), exact: !0, sidebar: 'community' },
+          { path: '/events/design-open-hour/aanmelden/bedankt', component: d('/events/design-open-hour/aanmelden/bedankt', '796'), exact: !0 },
+          { path: '/events/design-open-hour/overzicht', component: d('/events/design-open-hour/overzicht', '0f1'), exact: !0, sidebar: 'community' },
+          { path: '/events/design-systems-week-2022', component: d('/events/design-systems-week-2022', '528'), exact: !0 },
+          { path: '/events/design-systems-week-2023', component: d('/events/design-systems-week-2023', '50d'), exact: !0 },
+          { path: '/events/design-systems-week-2023/en/program', component: d('/events/design-systems-week-2023/en/program', 'dc2'), exact: !0 },
+          { path: '/events/design-systems-week-2023/en/timetable', component: d('/events/design-systems-week-2023/en/timetable', '818'), exact: !0 },
+          { path: '/events/design-systems-week-2023/programma', component: d('/events/design-systems-week-2023/programma', 'b22'), exact: !0 },
+          { path: '/events/design-systems-week-2023/tijdschema', component: d('/events/design-systems-week-2023/tijdschema', '4c1'), exact: !0 },
+          { path: '/events/design-systems-week-2024', component: d('/events/design-systems-week-2024', '8f5'), exact: !0, sidebar: 'community' },
+          { path: '/events/heartbeat', component: d('/events/heartbeat', 'ee2'), exact: !0, sidebar: 'community' },
+          { path: '/events/heartbeat/aanmelden', component: d('/events/heartbeat/aanmelden', 'ef9'), exact: !0, sidebar: 'community' },
+          { path: '/events/heartbeat/aanmelden/bedankt', component: d('/events/heartbeat/aanmelden/bedankt', 'e99'), exact: !0 },
+          { path: '/events/heartbeat/overzicht', component: d('/events/heartbeat/overzicht', 'f94'), exact: !0, sidebar: 'community' },
+          { path: '/events/heartbeat/videos', component: d('/events/heartbeat/videos', 'a37'), exact: !0, sidebar: 'community' },
+          { path: '/fieldset', component: d('/fieldset', 'a0d'), exact: !0, sidebar: 'componenten' },
+          { path: '/figure', component: d('/figure', '47b'), exact: !0, sidebar: 'componenten' },
+          { path: '/file-input', component: d('/file-input', 'e63'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field', component: d('/form-field', 'de8'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-checkbox-option', component: d('/form-field-checkbox-option', '53c'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-description', component: d('/form-field-description', '1bd'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-error-message', component: d('/form-field-error-message', 'e1c'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-label', component: d('/form-field-label', '31e'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-option-label', component: d('/form-field-option-label', '598'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-partial', component: d('/form-field-partial', '48c'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-partial-label', component: d('/form-field-partial-label', '0e8'), exact: !0, sidebar: 'componenten' },
+          { path: '/form-field-radio-option', component: d('/form-field-radio-option', '6ca'), exact: !0, sidebar: 'componenten' },
+          { path: '/handboek', component: d('/handboek', '198'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/candidate-stappenplan', component: d('/handboek/component-bijdragen/candidate-stappenplan', '0ad'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/community-stappenplan', component: d('/handboek/component-bijdragen/community-stappenplan', '83c'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/definition-of-done', component: d('/handboek/component-bijdragen/definition-of-done', '690'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/handboek/component-bijdragen/hall-of-fame-stappenplan', '319'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/handboek/component-bijdragen/help-wanted-stappenplan', '7eb'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/component-bijdragen/overzicht', component: d('/handboek/component-bijdragen/overzicht', '6c2'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/design-tokens/', component: d('/handboek/design-tokens/', 'ba2'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/', component: d('/handboek/designer/', 'd2b'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/community', component: d('/handboek/designer/community', '3a0'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/figma-structuur', component: d('/handboek/designer/figma-structuur', 'b8d'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/overzicht', component: d('/handboek/designer/overzicht', '8b5'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/stappenplan', component: d('/handboek/designer/stappenplan', 'b2e'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/voorbeeld-thema', component: d('/handboek/designer/voorbeeld-thema', '531'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/designer/zelf-componenten-maken', component: d('/handboek/designer/zelf-componenten-maken', '2ce'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/aan-de-slag', component: d('/handboek/developer/aan-de-slag', '45e'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/architectuur', component: d('/handboek/developer/architectuur', '270'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/component-inzetten', component: d('/handboek/developer/component-inzetten', 'b57'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/component-uitbreiden', component: d('/handboek/developer/component-uitbreiden', '3d3'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/componenten-maken', component: d('/handboek/developer/componenten-maken', '13b'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/herbruikbare-css', component: d('/handboek/developer/herbruikbare-css', '233'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/meewerken-als-developer', component: d('/handboek/developer/meewerken-als-developer', 'b38'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/overzicht', component: d('/handboek/developer/overzicht', '59c'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/samenwerken-aan-componenten', component: d('/handboek/developer/samenwerken-aan-componenten', '5a3'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/developer/thema-maken', component: d('/handboek/developer/thema-maken', 'e85'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/estafettemodel', component: d('/handboek/estafettemodel', '1f8'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/introductie', component: d('/handboek/introductie', 'f9a'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/leverancier/introductie', component: d('/handboek/leverancier/introductie', '4a5'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/manager/introductie', component: d('/handboek/manager/introductie', 'd4c'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/naamgeving', component: d('/handboek/naamgeving', '7ee'), exact: !0 },
+          { path: '/handboek/organisatie/meedoen', component: d('/handboek/organisatie/meedoen', 'daa'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/organisatie/overzicht', component: d('/handboek/organisatie/overzicht', '6be'), exact: !0, sidebar: 'handboek' },
+          { path: '/handboek/organisatie/vragen-over-aanbestedingen', component: d('/handboek/organisatie/vragen-over-aanbestedingen', 'd3e'), exact: !0, sidebar: 'handboek' },
+          { path: '/heading', component: d('/heading', '805'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-1', component: d('/heading-1', 'da6'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-2', component: d('/heading-2', 'aa5'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-3', component: d('/heading-3', 'd27'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-4', component: d('/heading-4', '238'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-5', component: d('/heading-5', '628'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-6', component: d('/heading-6', '314'), exact: !0, sidebar: 'componenten' },
+          { path: '/heading-group', component: d('/heading-group', '44c'), exact: !0, sidebar: 'componenten' },
+          { path: '/icon', component: d('/icon', '86d'), exact: !0, sidebar: 'componenten' },
+          { path: '/invalid-form-alert', component: d('/invalid-form-alert', 'ae2'), exact: !0, sidebar: 'componenten' },
+          { path: '/language-navigation', component: d('/language-navigation', '50a'), exact: !0, sidebar: 'componenten' },
+          { path: '/legend', component: d('/legend', '726'), exact: !0, sidebar: 'componenten' },
+          { path: '/link', component: d('/link', '028'), exact: !0, sidebar: 'componenten' },
+          { path: '/link-list', component: d('/link-list', '574'), exact: !0, sidebar: 'componenten' },
+          { path: '/modal-dialog', component: d('/modal-dialog', '03c'), exact: !0, sidebar: 'componenten' },
+          { path: '/navigation-bar', component: d('/navigation-bar', '219'), exact: !0, sidebar: 'componenten' },
+          { path: '/non-modal-dialog', component: d('/non-modal-dialog', '9e9'), exact: !0, sidebar: 'componenten' },
+          { path: '/notification-banner', component: d('/notification-banner', '087'), exact: !0, sidebar: 'componenten' },
+          { path: '/number-badge', component: d('/number-badge', '1ee'), exact: !0, sidebar: 'componenten' },
+          { path: '/number-input', component: d('/number-input', '0d1'), exact: !0, sidebar: 'componenten' },
+          { path: '/open-source/cc0', component: d('/open-source/cc0', '80b'), exact: !0 },
+          { path: '/open-source/eupl', component: d('/open-source/eupl', '097'), exact: !0 },
+          { path: '/ordered-list', component: d('/ordered-list', '4ec'), exact: !0, sidebar: 'componenten' },
+          { path: '/page-footer', component: d('/page-footer', '821'), exact: !0, sidebar: 'componenten' },
+          { path: '/page-header', component: d('/page-header', '697'), exact: !0, sidebar: 'componenten' },
+          { path: '/pagination', component: d('/pagination', 'aa9'), exact: !0, sidebar: 'componenten' },
+          { path: '/paragraph', component: d('/paragraph', 'e83'), exact: !0, sidebar: 'componenten' },
+          { path: '/password-input', component: d('/password-input', '93c'), exact: !0, sidebar: 'componenten' },
+          { path: '/pre-heading', component: d('/pre-heading', '87e'), exact: !0, sidebar: 'componenten' },
+          { path: '/privacyverklaring', component: d('/privacyverklaring', 'e5f'), exact: !0 },
+          { path: '/progress-bar', component: d('/progress-bar', 'db6'), exact: !0, sidebar: 'componenten' },
+          { path: '/progress-list', component: d('/progress-list', '5da'), exact: !0, sidebar: 'componenten' },
+          { path: '/project', component: d('/project', 'fa6'), exact: !0, sidebar: 'project' },
+          { path: '/project/blijf-op-de-hoogte', component: d('/project/blijf-op-de-hoogte', 'c41'), exact: !0, sidebar: 'project' },
+          { path: '/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '645'), exact: !0 },
+          { path: '/project/faq', component: d('/project/faq', 'e37'), exact: !0, sidebar: 'project' },
+          { path: '/project/kernteam', component: d('/project/kernteam', 'ae3'), exact: !0, sidebar: 'project' },
+          { path: '/project/links', component: d('/project/links', '342'), exact: !0, sidebar: 'project' },
+          { path: '/project/nieuwsbrief', component: d('/project/nieuwsbrief', 'de8'), exact: !0 },
+          { path: '/project/over-nl-design-system', component: d('/project/over-nl-design-system', '7b0'), exact: !0, sidebar: 'project' },
+          { path: '/radio-button', component: d('/radio-button', '63a'), exact: !0, sidebar: 'componenten' },
+          { path: '/radio-group', component: d('/radio-group', 'cce'), exact: !0, sidebar: 'componenten' },
+          { path: '/range', component: d('/range', '9a8'), exact: !0, sidebar: 'componenten' },
+          { path: '/rich-text-content', component: d('/rich-text-content', '73e'), exact: !0, sidebar: 'componenten' },
+          { path: '/richtlijnen', component: d('/richtlijnen', 'a7a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/', component: d('/richtlijnen/formulieren/', 'dbd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/autocomplete', component: d('/richtlijnen/formulieren/autocomplete', '402'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/bevestigingspagina', component: d('/richtlijnen/formulieren/bevestigingspagina', 'c6a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/buttons', component: d('/richtlijnen/formulieren/buttons', '683'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/descriptions', component: d('/richtlijnen/formulieren/descriptions', '910'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/foutmeldingen', component: d('/richtlijnen/formulieren/foutmeldingen', '19d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/labels', component: d('/richtlijnen/formulieren/labels', 'f4e'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/links', component: d('/richtlijnen/formulieren/links', '925'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/meerdere-stappen', component: d('/richtlijnen/formulieren/meerdere-stappen', '6c3'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/overzicht', component: d('/richtlijnen/formulieren/overzicht', '63e'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/placeholders', component: d('/richtlijnen/formulieren/placeholders', 'cee'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/toetsenbord', component: d('/richtlijnen/formulieren/toetsenbord', '0c2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/visueel-ontwerp', component: d('/richtlijnen/formulieren/visueel-ontwerp', '323'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/voorkom-fouten', component: d('/richtlijnen/formulieren/voorkom-fouten', '2db'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/vragen', component: d('/richtlijnen/formulieren/vragen', 'be7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/formulieren/wanneer-welk-form-element', component: d('/richtlijnen/formulieren/wanneer-welk-form-element', 'faf'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/introductie', component: d('/richtlijnen/introductie', '360'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/stijl/iconen', component: d('/richtlijnen/stijl/iconen', '5b9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/stijl/kleuren', component: d('/richtlijnen/stijl/kleuren', 'fa7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/stijl/overzicht', component: d('/richtlijnen/stijl/overzicht', 'adf'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/stijl/ruimte', component: d('/richtlijnen/stijl/ruimte', '79f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/richtlijnen/stijl/typografie', component: d('/richtlijnen/stijl/typografie', '483'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/select', component: d('/select', '5e7'), exact: !0, sidebar: 'componenten' },
+          { path: '/separator', component: d('/separator', '454'), exact: !0, sidebar: 'componenten' },
+          { path: '/side-navigation', component: d('/side-navigation', '600'), exact: !0, sidebar: 'componenten' },
+          { path: '/skip-link', component: d('/skip-link', 'd13'), exact: !0, sidebar: 'componenten' },
+          { path: '/spinner', component: d('/spinner', '70f'), exact: !0, sidebar: 'componenten' },
+          { path: '/status-badge', component: d('/status-badge', '6aa'), exact: !0, sidebar: 'componenten' },
+          { path: '/strong', component: d('/strong', '40f'), exact: !0, sidebar: 'componenten' },
+          { path: '/sub-heading', component: d('/sub-heading', 'b7e'), exact: !0, sidebar: 'componenten' },
+          { path: '/summary-list', component: d('/summary-list', '4fa'), exact: !0, sidebar: 'componenten' },
+          { path: '/switch', component: d('/switch', '5b4'), exact: !0, sidebar: 'componenten' },
+          { path: '/table', component: d('/table', 'b60'), exact: !0, sidebar: 'componenten' },
+          { path: '/tabs', component: d('/tabs', '963'), exact: !0, sidebar: 'componenten' },
+          { path: '/task-list', component: d('/task-list', '293'), exact: !0, sidebar: 'componenten' },
+          { path: '/text-input', component: d('/text-input', '54b'), exact: !0, sidebar: 'componenten' },
+          { path: '/text-input-group', component: d('/text-input-group', 'ed4'), exact: !0, sidebar: 'componenten' },
+          { path: '/textarea', component: d('/textarea', '5a3'), exact: !0, sidebar: 'componenten' },
+          { path: '/toegankelijkheidsverklaring', component: d('/toegankelijkheidsverklaring', 'e63'), exact: !0 },
+          { path: '/toegankelijkheidsverklaring/rapport-2023', component: d('/toegankelijkheidsverklaring/rapport-2023', 'feb'), exact: !0 },
+          { path: '/toggletip', component: d('/toggletip', '5b0'), exact: !0, sidebar: 'componenten' },
+          { path: '/unordered-list', component: d('/unordered-list', '525'), exact: !0, sidebar: 'componenten' },
+          { path: '/video', component: d('/video', '3ac'), exact: !0, sidebar: 'componenten' },
+          { path: '/voorbeelden', component: d('/voorbeelden', 'a40'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/', component: d('/voorbeelden/', 'fa9'), exact: !0 },
+          { path: '/voorbeelden/onderzoek/', component: d('/voorbeelden/onderzoek/', '62d'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen', component: d('/voorbeelden/patronen', 'c72'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren', component: d('/voorbeelden/patronen/formulieren', 'c44'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/voorbeelden/patronen/formulieren/bevestigingspagina', '5ca'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/controlepagina', component: d('/voorbeelden/patronen/formulieren/controlepagina', '50c'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/voorbeelden/patronen/formulieren/foutmeldingen', '4a9'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/funnel-header', component: d('/voorbeelden/patronen/formulieren/funnel-header', '4d8'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/inloggen', component: d('/voorbeelden/patronen/formulieren/inloggen', '651'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/intropagina', component: d('/voorbeelden/patronen/formulieren/intropagina', 'a29'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/voorbeelden/patronen/formulieren/meerstappenformulier', '96a'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/voorbeelden/patronen/formulieren/niet-verplichte-velden', '1e0'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '0b8'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/responsive-design', component: d('/voorbeelden/patronen/formulieren/responsive-design', 'a94'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'fe2'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/startpunt', component: d('/voorbeelden/patronen/formulieren/startpunt', '6a4'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/voorbeelden/patronen/formulieren/terug-navigeren', '567'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/uploaden', component: d('/voorbeelden/patronen/formulieren/uploaden', 'a29'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/visual-design', component: d('/voorbeelden/patronen/formulieren/visual-design', '2ad'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/volgende-stap', component: d('/voorbeelden/patronen/formulieren/volgende-stap', '977'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/voorbeelden/patronen/formulieren/voortgang-indicatie', '038'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/voorbeelden/templates/', component: d('/voorbeelden/templates/', '2b1'), exact: !0 },
+          { path: '/wcag', component: d('/wcag', 'd32'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/1.1.1', component: d('/wcag/1.1.1', '616'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/1.3.1', component: d('/wcag/1.3.1', '07d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/1.3.5', component: d('/wcag/1.3.5', '070'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.1.1', component: d('/wcag/2.1.1', '2f9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.1', component: d('/wcag/2.4.1', 'bb1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.10', component: d('/wcag/2.4.10', 'a92'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.13', component: d('/wcag/2.4.13', 'bff'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.2', component: d('/wcag/2.4.2', 'c38'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.4', component: d('/wcag/2.4.4', 'ee6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.6', component: d('/wcag/2.4.6', '1dd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/2.4.7', component: d('/wcag/2.4.7', '73d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.1.1', component: d('/wcag/3.1.1', '665'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.1.2', component: d('/wcag/3.1.2', '44a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.2.1', component: d('/wcag/3.2.1', '7ed'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.2.2', component: d('/wcag/3.2.2', '78d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.3.1', component: d('/wcag/3.3.1', 'd9f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.3.3', component: d('/wcag/3.3.3', 'a8b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/3.3.4', component: d('/wcag/3.3.4', '881'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/4.1.1', component: d('/wcag/4.1.1', 'dc2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/4.1.2', component: d('/wcag/4.1.2', 'a09'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/4.1.3', component: d('/wcag/4.1.3', 'a78'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/wcag/introduction', component: d('/wcag/introduction', 'f78'), exact: !0, sidebar: 'richtlijnen' },
          ],
         },
        ],
@@ -503,8 +507,8 @@
     return S.set(e.pathname, t), { ...e, pathname: t };
    }
    var N = r(86344),
-    z = r(2285),
-    L = r(59424);
+    L = r(2285),
+    z = r(59424);
    function T(e) {
     for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
     const o = l.map((t) => {
@@ -516,7 +520,7 @@
    const D = function (e) {
     let { children: t, location: r, previousLocation: n } = e;
     return (
-     (0, L.Z)(() => {
+     (0, z.Z)(() => {
       n !== r &&
        (!(function (e) {
         let { location: t, previousLocation: r } = e;
@@ -537,13 +541,13 @@
      t
     );
    };
-   function R(e) {
+   function A(e) {
     const t = Array.from(new Set([e, decodeURI(e)]))
      .map((e) => (0, d.f)(u.Z, e))
      .flat();
     return Promise.all(t.map((e) => e.route.component.preload?.()));
    }
-   class A extends n.Component {
+   class R extends n.Component {
     previousLocation;
     routeUpdateCleanupCb;
     constructor(e) {
@@ -556,7 +560,7 @@
       (this.previousLocation = this.props.location),
       this.setState({ nextRouteHasLoaded: !1 }),
       (this.routeUpdateCleanupCb = T('onRouteUpdate', { previousLocation: this.previousLocation, location: r })),
-      R(r.pathname)
+      A(r.pathname)
        .then(() => {
         this.routeUpdateCleanupCb(), this.setState({ nextRouteHasLoaded: !0 });
        })
@@ -571,14 +575,14 @@
      return (0, b.jsx)(D, { previousLocation: this.previousLocation, location: t, children: (0, b.jsx)(s.AW, { location: t, render: () => e }) });
     }
    }
-   const Z = A,
-    I = '__docusaurus-base-url-issue-banner-container',
-    M = '__docusaurus-base-url-issue-banner',
+   const Z = R,
+    M = '__docusaurus-base-url-issue-banner-container',
+    I = '__docusaurus-base-url-issue-banner',
     F = '__docusaurus-base-url-issue-banner-suggestion-container';
    function B(e) {
-    return `\ndocument.addEventListener('DOMContentLoaded', function maybeInsertBanner() {\n  var shouldInsert = typeof window['docusaurus'] === 'undefined';\n  shouldInsert && insertBanner();\n});\n\nfunction insertBanner() {\n  var bannerContainer = document.createElement('div');\n  bannerContainer.id = '${I}';\n  var bannerHtml = ${JSON.stringify(
+    return `\ndocument.addEventListener('DOMContentLoaded', function maybeInsertBanner() {\n  var shouldInsert = typeof window['docusaurus'] === 'undefined';\n  shouldInsert && insertBanner();\n});\n\nfunction insertBanner() {\n  var bannerContainer = document.createElement('div');\n  bannerContainer.id = '${M}';\n  var bannerHtml = ${JSON.stringify(
      (function (e) {
-      return `\n<div id="${M}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${e}</span> ${'/' === e ? ' (default value)' : ''}</p>\n   <p>We suggest trying baseUrl = <span id="${F}" style="font-weight: bold; color: green;"></span></p>\n</div>\n`;
+      return `\n<div id="${I}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${e}</span> ${'/' === e ? ' (default value)' : ''}</p>\n   <p>We suggest trying baseUrl = <span id="${F}" style="font-weight: bold; color: green;"></span></p>\n</div>\n`;
      })(e),
     ).replace(/</g, '\\<')};\n  bannerContainer.innerHTML = bannerHtml;\n  document.body.prepend(bannerContainer);\n  var suggestionContainer = document.getElementById('${F}');\n  var actualHomePagePath = window.location.pathname;\n  var suggestedBaseUrl = actualHomePagePath.substr(-1) === '/'\n        ? actualHomePagePath\n        : actualHomePagePath + '/';\n  suggestionContainer.innerHTML = suggestedBaseUrl;\n}\n`;
    }
@@ -588,14 +592,14 @@
     } = (0, m.Z)();
     return (0, b.jsx)(b.Fragment, { children: !i.Z.canUseDOM && (0, b.jsx)(f.Z, { children: (0, b.jsx)('script', { children: B(e) }) }) });
    }
-   function H() {
+   function U() {
     const {
       siteConfig: { baseUrl: e, baseUrlIssueBanner: t },
      } = (0, m.Z)(),
      { pathname: r } = (0, s.TH)();
     return t && r === e ? (0, b.jsx)($, {}) : null;
    }
-   function U() {
+   function H() {
     const {
       siteConfig: { favicon: e, title: t, noIndex: r },
       i18n: { currentLocale: n, localeConfigs: o },
@@ -613,7 +617,7 @@
    function G() {
     const e = (0, d.H)(u.Z),
      t = (0, s.TH)();
-    return (0, b.jsx)(V.Z, { children: (0, b.jsx)(z.M, { children: (0, b.jsxs)(N.t, { children: [(0, b.jsxs)(p, { children: [(0, b.jsx)(U, {}), (0, b.jsx)(P, {}), (0, b.jsx)(H, {}), (0, b.jsx)(Z, { location: E(t), children: e })] }), (0, b.jsx)(W, {})] }) }) });
+    return (0, b.jsx)(V.Z, { children: (0, b.jsx)(L.M, { children: (0, b.jsxs)(N.t, { children: [(0, b.jsxs)(p, { children: [(0, b.jsx)(H, {}), (0, b.jsx)(P, {}), (0, b.jsx)(U, {}), (0, b.jsx)(Z, { location: E(t), children: e })] }), (0, b.jsx)(W, {})] }) }) });
    }
    var K = r(16887);
    const Y = (function (e) {
@@ -673,7 +677,7 @@
        }),
       );
      },
-     preload: (e) => !!((e) => !ee() && !J.has(e))(e) && (J.add(e), R(e)),
+     preload: (e) => !!((e) => !ee() && !J.has(e))(e) && (J.add(e), A(e)),
     },
     re = Object.freeze(te),
     ne = Boolean(!0);
@@ -696,7 +700,7 @@
        });
       }
      };
-    R(window.location.pathname).then(i);
+    A(window.location.pathname).then(i);
    }
   },
   2285: (e, t, r) => {
@@ -704,8 +708,8 @@
    r.d(t, { _: () => d, M: () => h });
    var n = r(75271),
     o = r(36809);
-   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/en/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/en/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/en/CHANGELOG"},{"id":"community/events/design-open-dag","path":"/en/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden","path":"/en/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/en/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/en/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/en/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/en/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/en/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/en/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/en/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/en/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024","path":"/en/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/en/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden","path":"/en/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/en/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/en/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/en/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/en/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/en/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/en/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/en/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/en/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/en/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/en/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/en/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/en/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/en/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/en/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/en/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/en/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/en/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/en/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/en/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/en/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/en/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/en/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/en/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/en/definition-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/en/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/en/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/en/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/en/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/en/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/en/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/en/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/en/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/en/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/en/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/en/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/en/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/en/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/en/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/en/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/en/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/en/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/en/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/en/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/en/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/en/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/en/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/en/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/en/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/en/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/en/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/en/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/en/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/en/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/en/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/en/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/en/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/en/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/en/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/en/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/en/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/en/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/en/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/en/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/en/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/en/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/en/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/en/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/en/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/en/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/en/range","sidebar":"componenten"},{"id":"componenten/README","path":"/en/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/en/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/en/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/en/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/en/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/en/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/en/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/en/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/en/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/en/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/en/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/en/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/en/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/en/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/en/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/en/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/en/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/en/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/en/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/en/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/en/video","sidebar":"componenten"},{"id":"footer/coc","path":"/en/coc","unlisted":true},{"id":"footer/colofon","path":"/en/colofon"},{"id":"footer/privacyverklaring","path":"/en/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/en/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/en/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/en/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/en/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/en/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/en/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/en/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/en/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/en/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/en/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/en/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/en/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/en/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/en/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/en/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/en/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/en/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/en/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/en/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/en/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/en/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/en/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/en/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/en/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/en/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/en/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/en/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/en/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/en/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/en/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/en/open-source/cc0"},{"id":"open-source/eupl","path":"/en/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/en/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/en/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/en/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/en/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/en/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/en/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/autocomplete","path":"/en/richtlijnen/formulieren/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/buttons","path":"/en/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation","path":"/en/richtlijnen/formulieren/bevestigingspagina","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/descriptions","path":"/en/richtlijnen/formulieren/descriptions","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/errors","path":"/en/richtlijnen/formulieren/foutmeldingen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help-the-user","path":"/en/richtlijnen/formulieren/voorkom-fouten","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour","path":"/en/richtlijnen/formulieren/toetsenbord","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/labels","path":"/en/richtlijnen/formulieren/labels","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/links","path":"/en/richtlijnen/formulieren/links","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep","path":"/en/richtlijnen/formulieren/meerdere-stappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholders","path":"/en/richtlijnen/formulieren/placeholders","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions","path":"/en/richtlijnen/formulieren/vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/en/richtlijnen/formulieren/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design","path":"/en/richtlijnen/formulieren/visueel-ontwerp","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which","path":"/en/richtlijnen/formulieren/wanneer-welk-form-element","sidebar":"richtlijnen"},{"id":"richtlijnen/introductie","path":"/en/richtlijnen/introductie","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/en/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/en/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/en/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/en/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/en/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/en/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/en/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/en/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/en/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/en/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/en/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/en/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/en/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/en/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/en/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/en/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/en/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/en/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/en/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/en/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/en/voorbeelden/templates/"},{"id":"wcag/1.1.1","path":"/en/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.1","path":"/en/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.5","path":"/en/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/2.1.1","path":"/en/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.1","path":"/en/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/en/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/en/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.4.2","path":"/en/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.4","path":"/en/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.6","path":"/en/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.7","path":"/en/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/3.1.1","path":"/en/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.2","path":"/en/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.1","path":"/en/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.2","path":"/en/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.1","path":"/en/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.3","path":"/en/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.4","path":"/en/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/4.1.1","path":"/en/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.2","path":"/en/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.3","path":"/en/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/en/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/en/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/en/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/en/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/en/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/en/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"richtlijnen","path":"/en/richtlijnen","sidebar":"richtlijnen"},{"id":"/richtlijnen/stijl/overzicht","path":"/en/richtlijnen/stijl/overzicht","sidebar":"richtlijnen"},{"id":"/richtlijnen/formulieren/overzicht","path":"/en/richtlijnen/formulieren/overzicht","sidebar":"richtlijnen"},{"id":"/wcag","path":"/en/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/en/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/en/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/en/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/en/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/en/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/en/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/en/events/design-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/en/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/en/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/en/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/en/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/en/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/en/community","label":"Community"}},"project":{"link":{"path":"/en/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
-    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"en","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
+   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/CHANGELOG"},{"id":"community/events/design-open-dag","path":"/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden","path":"/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024","path":"/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden","path":"/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/definition-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/range","sidebar":"componenten"},{"id":"componenten/README","path":"/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/video","sidebar":"componenten"},{"id":"footer/coc","path":"/coc","unlisted":true},{"id":"footer/colofon","path":"/colofon"},{"id":"footer/privacyverklaring","path":"/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/open-source/cc0"},{"id":"open-source/eupl","path":"/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/autocomplete","path":"/richtlijnen/formulieren/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/buttons","path":"/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation","path":"/richtlijnen/formulieren/bevestigingspagina","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/descriptions","path":"/richtlijnen/formulieren/descriptions","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/errors","path":"/richtlijnen/formulieren/foutmeldingen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help-the-user","path":"/richtlijnen/formulieren/voorkom-fouten","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour","path":"/richtlijnen/formulieren/toetsenbord","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/labels","path":"/richtlijnen/formulieren/labels","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/links","path":"/richtlijnen/formulieren/links","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep","path":"/richtlijnen/formulieren/meerdere-stappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholders","path":"/richtlijnen/formulieren/placeholders","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions","path":"/richtlijnen/formulieren/vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/richtlijnen/formulieren/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design","path":"/richtlijnen/formulieren/visueel-ontwerp","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which","path":"/richtlijnen/formulieren/wanneer-welk-form-element","sidebar":"richtlijnen"},{"id":"richtlijnen/introductie","path":"/richtlijnen/introductie","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/voorbeelden/templates/"},{"id":"wcag/1.1.1","path":"/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.1","path":"/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.5","path":"/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/2.1.1","path":"/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.1","path":"/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.4.2","path":"/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.4","path":"/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.6","path":"/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.7","path":"/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/3.1.1","path":"/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.2","path":"/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.1","path":"/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.2","path":"/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.1","path":"/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.3","path":"/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.4","path":"/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/4.1.1","path":"/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.2","path":"/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.3","path":"/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"richtlijnen","path":"/richtlijnen","sidebar":"richtlijnen"},{"id":"/richtlijnen/stijl/overzicht","path":"/richtlijnen/stijl/overzicht","sidebar":"richtlijnen"},{"id":"/richtlijnen/formulieren/overzicht","path":"/richtlijnen/formulieren/overzicht","sidebar":"richtlijnen"},{"id":"/wcag","path":"/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/events/design-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/community","label":"Community"}},"project":{"link":{"path":"/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
+    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"nl","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
    var i = r(57529);
    const l = JSON.parse('{"docusaurusVersion":"3.1.0","siteVersion":"0.0.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.1.0"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.1.0"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.1.0"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.1.0"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.1.0"},"docusaurus-theme-search-algolia":{"type":"package","name":"@docusaurus/theme-search-algolia","version":"3.1.0"}}}');
    var u = r(52676);
@@ -804,25 +808,25 @@
     P && j && (P = (0, a.applyTrailingSlash)(P, { trailingSlash: y, baseUrl: k }));
     const E = (0, n.useRef)(!1),
      N = r ? o.OL : o.rU,
-     z = l.Z.canUseIntersectionObserver,
-     L = (0, n.useRef)(),
+     L = l.Z.canUseIntersectionObserver,
+     z = (0, n.useRef)(),
      T = () => {
       E.current || null == P || (window.docusaurus.preload(P), (E.current = !0));
      };
     (0, n.useEffect)(
      () => (
-      !z && j && null != P && window.docusaurus.prefetch(P),
+      !L && j && null != P && window.docusaurus.prefetch(P),
       () => {
-       z && L.current && L.current.disconnect();
+       L && z.current && z.current.disconnect();
       }
      ),
-     [L, P, z, j],
+     [z, P, L, j],
     );
     const D = P?.startsWith('#') ?? !1,
-     R = !P || !j || D;
+     A = !P || !j || D;
     return (
-     R || m || w.collectLink(P),
-     R
+     A || m || w.collectLink(P),
+     A
       ? (0, d.jsx)('a', { ref: _, href: P, ...(C && !j && { target: '_blank', rel: 'noopener noreferrer' }), ...v })
       : (0, d.jsx)(N, {
          ...v,
@@ -830,15 +834,15 @@
          onTouchStart: T,
          innerRef: (e) => {
           (_.current = e),
-           z &&
+           L &&
             e &&
             j &&
-            ((L.current = new window.IntersectionObserver((t) => {
+            ((z.current = new window.IntersectionObserver((t) => {
              t.forEach((t) => {
-              e === t.target && (t.isIntersecting || t.intersectionRatio > 0) && (L.current.unobserve(e), L.current.disconnect(), null != P && window.docusaurus.prefetch(P));
+              e === t.target && (t.isIntersecting || t.intersectionRatio > 0) && (z.current.unobserve(e), z.current.disconnect(), null != P && window.docusaurus.prefetch(P));
              });
             })),
-            L.current.observe(e));
+            z.current.observe(e));
          },
          to: P,
          ...(r && { isActive: f, activeClassName: p }),
@@ -1465,10 +1469,10 @@
    }
    var E = r(47216);
    const N = { errorBoundaryError: 'errorBoundaryError_Xgcp', errorBoundaryFallback: 'errorBoundaryFallback_l2Lo' };
-   function z(e) {
+   function L(e) {
     return (0, s.jsx)('button', { type: 'button', ...e, children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.tryAgain', description: 'The label of the button to try again rendering when the React error boundary captures an error', children: 'Try again' }) });
    }
-   function L(e) {
+   function z(e) {
     let { error: t } = e;
     const r = (0, E.getErrorCausalChain)(t)
      .map((e) => e.message)
@@ -1484,17 +1488,17 @@
     }
    }
    var D = r(18274),
-    R = r(30473),
-    A = r(61454);
+    A = r(30473),
+    R = r(61454);
    const Z = n.createContext(null);
-   function I(e) {
+   function M(e) {
     let { children: t } = e;
     const r = (function () {
      const e = (0, D.e)(),
-      t = (0, R.HY)(),
+      t = (0, A.HY)(),
       [r, o] = (0, n.useState)(!1),
       a = null !== t.component,
-      c = (0, A.D9)(a);
+      c = (0, R.D9)(a);
      return (
       (0, n.useEffect)(() => {
        a && !c && o(!0);
@@ -1507,7 +1511,7 @@
     })();
     return (0, s.jsx)(Z.Provider, { value: r, children: t });
    }
-   function M(e) {
+   function I(e) {
     if (e.component) {
      const t = e.component;
      return (0, s.jsx)(t, { ...e.props });
@@ -1515,16 +1519,16 @@
    }
    function F() {
     const e = (0, n.useContext)(Z);
-    if (!e) throw new A.i6('NavbarSecondaryMenuDisplayProvider');
+    if (!e) throw new R.i6('NavbarSecondaryMenuDisplayProvider');
     const [t, r] = e,
      o = (0, n.useCallback)(() => r(!1), [r]),
-     a = (0, R.HY)();
-    return (0, n.useMemo)(() => ({ shown: t, hide: o, content: M(a) }), [o, a, t]);
+     a = (0, A.HY)();
+    return (0, n.useMemo)(() => ({ shown: t, hide: o, content: I(a) }), [o, a, t]);
    }
    const B = 'right';
    var $ = r(15854),
-    H = r(70155),
-    U = r(73200),
+    U = r(70155),
+    H = r(73200),
     V = r(98469),
     q = r(54711);
    const W = n.createContext(void 0),
@@ -1542,7 +1546,7 @@
     const t = (0, ee.Z)(),
      { colorMode: r } = (function () {
       const e = (0, n.useContext)(W);
-      if (null == e) throw new A.i6('ColorModeProvider', 'Please see https://docusaurus.io/docs/api/themes/configuration#use-color-mode.');
+      if (null == e) throw new R.i6('ColorModeProvider', 'Please see https://docusaurus.io/docs/api/themes/configuration#use-color-mode.');
       return e;
      })(),
      { sources: a, className: c, alt: i, ...l } = e,
@@ -1551,20 +1555,20 @@
    }
    function ne(e) {
     let { logo: t, alt: r, imageClassName: n } = e;
-    const o = { light: (0, H.Z)(t.src), dark: (0, H.Z)(t.srcDark || t.src) },
+    const o = { light: (0, U.Z)(t.src), dark: (0, U.Z)(t.srcDark || t.src) },
      a = (0, s.jsx)(re, { className: t.className, sources: o, height: t.height, width: t.width, alt: r, style: t.style });
     return n ? (0, s.jsx)('div', { className: n, children: a }) : a;
    }
    function oe(e) {
     const {
       siteConfig: { title: t },
-     } = (0, U.Z)(),
+     } = (0, H.Z)(),
      {
       navbar: { title: r, logo: n },
      } = (0, k.L)(),
      { shouldRender: o } = (0, D.e)(),
      { imageClassName: a, titleClassName: c, ...i } = e,
-     l = (0, H.Z)(n?.href || '/'),
+     l = (0, U.Z)(n?.href || '/'),
      u = r ? '' : t,
      d = n?.alt ?? u;
     return (0, s.jsxs)($.Z, { to: l, ...i, ...(n?.target && { target: n.target }), children: [n && !o && (0, s.jsx)(ne, { logo: n, alt: d, imageClassName: a }), r && (0, s.jsx)('b', { className: c, children: r })] });
@@ -1588,9 +1592,9 @@
     be = r(89868);
    function pe(e) {
     let { activeBasePath: t, activeBaseRegex: r, to: n, href: o, label: a, html: c, isDropdownLink: i, prependBaseUrlToHref: l, ...u } = e;
-    const d = (0, H.Z)(n),
-     h = (0, H.Z)(t),
-     b = (0, H.Z)(o, { forcePrependBaseUrl: !0 }),
+    const d = (0, U.Z)(n),
+     h = (0, U.Z)(t),
+     b = (0, U.Z)(o, { forcePrependBaseUrl: !0 }),
      p = a && o && !(0, de.Z)(o),
      f = c ? { dangerouslySetInnerHTML: { __html: c } } : { children: (0, s.jsxs)(s.Fragment, { children: [a, p && (0, s.jsx)(be.Z, { ...(i && { width: 12, height: 12 }) })] }) };
     return o ? (0, s.jsx)($.Z, { href: l ? b : o, ...u, ...f }) : (0, s.jsx)($.Z, { to: d, isNavLink: !0, ...((t || r) && { isActive: (e, t) => (r ? (0, he.F)(r, t.pathname) : t.pathname.startsWith(h)) }), ...u, ...f });
@@ -1656,7 +1660,7 @@
         },
         children: i.children ?? i.label,
        }),
-       (0, s.jsx)('ul', { className: 'dropdown__menu', children: t.map((e, t) => (0, n.createElement)(He, { isDropdownItem: !0, activeClassName: 'dropdown__link--active', ...e, key: t })) }),
+       (0, s.jsx)('ul', { className: 'dropdown__menu', children: t.map((e, t) => (0, n.createElement)(Ue, { isDropdownItem: !0, activeClassName: 'dropdown__link--active', ...e, key: t })) }),
       ],
      })
     );
@@ -1666,7 +1670,7 @@
     const u = (function () {
       const {
         siteConfig: { baseUrl: e },
-       } = (0, U.Z)(),
+       } = (0, H.Z)(),
        { pathname: t } = (0, i.TH)();
       return t.replace(e, '/');
      })(),
@@ -1688,7 +1692,7 @@
         },
         children: l.children ?? l.label,
        }),
-       (0, s.jsx)(xe.z, { lazy: !0, as: 'ul', className: 'menu__list', collapsed: h, children: t.map((e, t) => (0, n.createElement)(He, { mobile: !0, isDropdownItem: !0, onClick: c, activeClassName: 'menu__link--active', ...e, key: t })) }),
+       (0, s.jsx)(xe.z, { lazy: !0, as: 'ul', className: 'menu__list', collapsed: h, children: t.map((e, t) => (0, n.createElement)(Ue, { mobile: !0, isDropdownItem: !0, onClick: c, activeClassName: 'menu__link--active', ...e, key: t })) }),
       ],
      })
     );
@@ -1705,25 +1709,25 @@
     return (0, s.jsx)('svg', { viewBox: '0 0 24 24', width: t, height: r, 'aria-hidden': !0, ...n, children: (0, s.jsx)('path', { fill: 'currentColor', d: 'M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z' }) });
    }
    const Ne = 'iconLanguage_DSK9';
-   var ze = r(32604),
-    Le = r(9710),
+   var Le = r(32604),
+    ze = r(9710),
     Te = r(57894),
     De = r(19729);
-   var Re = r(30967);
-   const Ae = { button: { buttonText: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }), buttonAriaLabel: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }) }, modal: { searchBox: { resetButtonTitle: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), resetButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), cancelButtonText: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }), cancelButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }) }, startScreen: { recentSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.recentSearchesTitle', message: 'Recent', description: 'The title for recent searches' }), noRecentSearchesText: (0, l.I)({ id: 'theme.SearchModal.startScreen.noRecentSearchesText', message: 'No recent searches', description: 'The text when no recent searches' }), saveRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.saveRecentSearchButtonTitle', message: 'Save this search', description: 'The label for save recent search button' }), removeRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeRecentSearchButtonTitle', message: 'Remove this search from history', description: 'The label for remove recent search button' }), favoriteSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.favoriteSearchesTitle', message: 'Favorite', description: 'The title for favorite searches' }), removeFavoriteSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle', message: 'Remove this search from favorites', description: 'The label for remove favorite search button' }) }, errorScreen: { titleText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.titleText', message: 'Unable to fetch results', description: 'The title for error screen of search modal' }), helpText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.helpText', message: 'You might want to check your network connection.', description: 'The help text for error screen of search modal' }) }, footer: { selectText: (0, l.I)({ id: 'theme.SearchModal.footer.selectText', message: 'to select', description: 'The explanatory text of the action for the enter key' }), selectKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.selectKeyAriaLabel', message: 'Enter key', description: 'The ARIA label for the Enter key button that makes the selection' }), navigateText: (0, l.I)({ id: 'theme.SearchModal.footer.navigateText', message: 'to navigate', description: 'The explanatory text of the action for the Arrow up and Arrow down key' }), navigateUpKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateUpKeyAriaLabel', message: 'Arrow up', description: 'The ARIA label for the Arrow up key button that makes the navigation' }), navigateDownKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateDownKeyAriaLabel', message: 'Arrow down', description: 'The ARIA label for the Arrow down key button that makes the navigation' }), closeText: (0, l.I)({ id: 'theme.SearchModal.footer.closeText', message: 'to close', description: 'The explanatory text of the action for Escape key' }), closeKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.closeKeyAriaLabel', message: 'Escape key', description: 'The ARIA label for the Escape key button that close the modal' }), searchByText: (0, l.I)({ id: 'theme.SearchModal.footer.searchByText', message: 'Search by', description: 'The text explain that the search is making by Algolia' }) }, noResultsScreen: { noResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.noResultsText', message: 'No results for', description: 'The text explains that there are no results for the following search' }), suggestedQueryText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.suggestedQueryText', message: 'Try searching for', description: 'The text for the suggested query when no results are found for the following search' }), reportMissingResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsText', message: 'Believe this query should return results?', description: 'The text for the question where the user thinks there are missing results' }), reportMissingResultsLinkText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsLinkText', message: 'Let us know.', description: 'The text for the link to report missing results' }) } }, placeholder: (0, l.I)({ id: 'theme.SearchModal.placeholder', message: 'Search docs', description: 'The placeholder of the input of the DocSearch pop-up modal' }) };
+   var Ae = r(30967);
+   const Re = { button: { buttonText: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }), buttonAriaLabel: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }) }, modal: { searchBox: { resetButtonTitle: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), resetButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), cancelButtonText: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }), cancelButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }) }, startScreen: { recentSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.recentSearchesTitle', message: 'Recent', description: 'The title for recent searches' }), noRecentSearchesText: (0, l.I)({ id: 'theme.SearchModal.startScreen.noRecentSearchesText', message: 'No recent searches', description: 'The text when no recent searches' }), saveRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.saveRecentSearchButtonTitle', message: 'Save this search', description: 'The label for save recent search button' }), removeRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeRecentSearchButtonTitle', message: 'Remove this search from history', description: 'The label for remove recent search button' }), favoriteSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.favoriteSearchesTitle', message: 'Favorite', description: 'The title for favorite searches' }), removeFavoriteSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle', message: 'Remove this search from favorites', description: 'The label for remove favorite search button' }) }, errorScreen: { titleText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.titleText', message: 'Unable to fetch results', description: 'The title for error screen of search modal' }), helpText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.helpText', message: 'You might want to check your network connection.', description: 'The help text for error screen of search modal' }) }, footer: { selectText: (0, l.I)({ id: 'theme.SearchModal.footer.selectText', message: 'to select', description: 'The explanatory text of the action for the enter key' }), selectKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.selectKeyAriaLabel', message: 'Enter key', description: 'The ARIA label for the Enter key button that makes the selection' }), navigateText: (0, l.I)({ id: 'theme.SearchModal.footer.navigateText', message: 'to navigate', description: 'The explanatory text of the action for the Arrow up and Arrow down key' }), navigateUpKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateUpKeyAriaLabel', message: 'Arrow up', description: 'The ARIA label for the Arrow up key button that makes the navigation' }), navigateDownKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateDownKeyAriaLabel', message: 'Arrow down', description: 'The ARIA label for the Arrow down key button that makes the navigation' }), closeText: (0, l.I)({ id: 'theme.SearchModal.footer.closeText', message: 'to close', description: 'The explanatory text of the action for Escape key' }), closeKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.closeKeyAriaLabel', message: 'Escape key', description: 'The ARIA label for the Escape key button that close the modal' }), searchByText: (0, l.I)({ id: 'theme.SearchModal.footer.searchByText', message: 'Search by', description: 'The text explain that the search is making by Algolia' }) }, noResultsScreen: { noResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.noResultsText', message: 'No results for', description: 'The text explains that there are no results for the following search' }), suggestedQueryText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.suggestedQueryText', message: 'Try searching for', description: 'The text for the suggested query when no results are found for the following search' }), reportMissingResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsText', message: 'Believe this query should return results?', description: 'The text for the question where the user thinks there are missing results' }), reportMissingResultsLinkText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsLinkText', message: 'Let us know.', description: 'The text for the link to report missing results' }) } }, placeholder: (0, l.I)({ id: 'theme.SearchModal.placeholder', message: 'Search docs', description: 'The placeholder of the input of the DocSearch pop-up modal' }) };
    let Ze = null;
-   function Ie(e) {
+   function Me(e) {
     let { hit: t, children: r } = e;
     return (0, s.jsx)($.Z, { to: t.url, className: 'utrecht-link', children: r });
    }
-   function Me(e) {
+   function Ie(e) {
     let { state: t, onClose: r } = e;
-    const n = (0, Le.M)();
+    const n = (0, ze.M)();
     return (0, s.jsx)($.Z, { to: n(t.query), onClick: r, className: 'utrecht-link', children: (0, s.jsx)(l.Z, { id: 'theme.SearchBar.seeAll', values: { count: t.context.nbHits }, children: 'See all {count} results' }) });
    }
    function Fe(e) {
     let { contextualSearch: t, externalUrlRegex: o, ...a } = e;
-    const { siteMetadata: c } = (0, U.Z)(),
+    const { siteMetadata: c } = (0, H.Z)(),
      l = (0, Te.l)(),
      u = (function () {
       const { locale: e, tags: t } = (0, De._q)();
@@ -1775,7 +1779,7 @@
       },
      }).current,
      O = (0, n.useRef)((e) => (a.transformItems ? a.transformItems(e) : e.map((e) => ({ ...e, url: l(e.url) })))).current,
-     P = (0, n.useMemo)(() => (e) => (0, s.jsx)(Me, { ...e, onClose: _ }), [_]),
+     P = (0, n.useMemo)(() => (e) => (0, s.jsx)(Ie, { ...e, onClose: _ }), [_]),
      S = (0, n.useCallback)((e) => (e.addAlgoliaAgent('docusaurus', c.docusaurusVersion), e), [c.docusaurusVersion]);
     return (
      (function (e) {
@@ -1810,11 +1814,11 @@
        [t, r, o, a, c],
       );
      })({ isOpen: g, onOpen: w, onClose: _, onInput: C, searchButtonRef: m }),
-     (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(ze.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: m, translations: Ae.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Ze && f.current && (0, Re.createPortal)((0, s.jsx)(Ze, { onClose: _, initialScrollY: window.scrollY, initialQuery: y, navigator: j, transformItems: O, hitComponent: Ie, transformSearchClient: S, ...(a.searchPagePath && { resultsFooterComponent: P }), ...a, searchParameters: b, placeholder: Ae.placeholder, translations: Ae.modal }), f.current)] })
+     (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(Le.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: m, translations: Re.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Ze && f.current && (0, Ae.createPortal)((0, s.jsx)(Ze, { onClose: _, initialScrollY: window.scrollY, initialQuery: y, navigator: j, transformItems: O, hitComponent: Me, transformSearchClient: S, ...(a.searchPagePath && { resultsFooterComponent: P }), ...a, searchParameters: b, placeholder: Re.placeholder, translations: Re.modal }), f.current)] })
     );
    }
    function Be() {
-    const { siteConfig: e } = (0, U.Z)();
+    const { siteConfig: e } = (0, H.Z)();
     return (0, s.jsx)(Fe, { ...e.themeConfig.algolia });
    }
    const $e = {
@@ -1823,7 +1827,7 @@
      let { mobile: t, dropdownItemsBefore: r, dropdownItemsAfter: n, ...o } = e;
      const {
        i18n: { currentLocale: a, locales: c, localeConfigs: u },
-      } = (0, U.Z)(),
+      } = (0, H.Z)(),
       d = (0, Se.l)(),
       { search: h, hash: b } = (0, i.TH)(),
       p = [
@@ -1887,7 +1891,7 @@
      return f.length <= 1 ? (0, s.jsx)(ge, { ...c, mobile: t, label: g, to: v, isActive: n ? () => !1 : void 0 }) : (0, s.jsx)(Oe, { ...c, mobile: t, label: g, to: v, items: f, isActive: n ? () => !1 : void 0 });
     },
    };
-   function He(e) {
+   function Ue(e) {
     let { type: t, ...r } = e;
     const n = (function (e, t) {
       return e && 'default' !== e ? e : 'items' in t ? 'dropdown' : 'default';
@@ -1896,9 +1900,9 @@
     if (!o) throw new Error(`No NavbarItem component found for type "${t}".`);
     return (0, s.jsx)(o, { ...r });
    }
-   function Ue(e) {
+   function He(e) {
     let { items: t, position: r = 'block-start', positionChildren: n = 'block-end', showOnMobile: a, children: c } = e;
-    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(T, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(He, { ...e }) }, t)), ' ', 'block-end' === n && c] });
+    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(T, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(Ue, { ...e }) }, t)), ' ', 'block-end' === n && c] });
    }
    function Ve() {
     const e = (0, k.L)().navbar.items,
@@ -1910,7 +1914,7 @@
      })(e),
      n = (0, D.e)(),
      o = e.find((e) => 'search' === e.type);
-    return (0, s.jsxs)('div', { className: 'navbar__inner', children: [!n.disabled && (0, s.jsx)(le, {}), (0, s.jsx)(ce, {}), (0, s.jsx)(Ue, { position: 'block-start', items: t }), (0, s.jsx)(Ue, { position: 'block-end', items: r, showOnMobile: !0, children: !o && (0, s.jsx)(se, { children: (0, s.jsx)(Be, {}) }) })] });
+    return (0, s.jsxs)('div', { className: 'navbar__inner', children: [!n.disabled && (0, s.jsx)(le, {}), (0, s.jsx)(ce, {}), (0, s.jsx)(He, { position: 'block-start', items: t }), (0, s.jsx)(He, { position: 'block-end', items: r, showOnMobile: !0, children: !o && (0, s.jsx)(se, { children: (0, s.jsx)(Be, {}) }) })] });
    }
    var qe = r(34947);
    var We = (0, r(81226).Z)('outline', 'x', 'IconX', [
@@ -1940,7 +1944,7 @@
    function tt() {
     const e = (0, D.e)(),
      t = (0, k.L)().navbar.items;
-    return (0, s.jsx)('ul', { className: 'menu__list', children: t.map((t, r) => (0, n.createElement)(He, { mobile: !0, ...t, onClick: () => e.toggle(), key: r })) });
+    return (0, s.jsx)('ul', { className: 'menu__list', children: t.map((t, r) => (0, n.createElement)(Ue, { mobile: !0, ...t, onClick: () => e.toggle(), key: r })) });
    }
    function rt() {
     const e = F();
@@ -1990,8 +1994,8 @@
    function st(e) {
     let { item: t } = e;
     const { to: r, href: n, label: a, prependBaseUrlToHref: c, ...i } = t,
-     l = (0, H.Z)(r),
-     u = (0, H.Z)(n, { forcePrependBaseUrl: !0 });
+     l = (0, U.Z)(r),
+     u = (0, U.Z)(n, { forcePrependBaseUrl: !0 });
     return (0, s.jsx)($.Z, { className: (0, o.Z)('utrecht-link'), href: c ? u : n, to: l, ...i, children: a });
    }
    function dt(e) {
@@ -2028,7 +2032,7 @@
    const vt = { footerLogoLink: 'footerLogoLink_DDai' };
    function yt(e) {
     let { logo: t } = e;
-    const { withBaseUrl: r } = (0, H.C)(),
+    const { withBaseUrl: r } = (0, U.C)(),
      n = { light: r(t.src), dark: r(t.srcDark ?? t.src) };
     return (0, s.jsx)(re, { className: (0, o.Z)('footer__logo', t.className), alt: t.alt, sources: n, width: t.width, height: t.height, style: t.style });
    }
@@ -2044,7 +2048,7 @@
    }
    const wt = n.memo(xt);
    var _t = r(73868);
-   const Ct = (0, A.Qc)([
+   const Ct = (0, R.Qc)([
     function (e) {
      let { children: t } = e;
      const r = (function () {
@@ -2111,7 +2115,7 @@
     c.VC,
     function (e) {
      let { children: t } = e;
-     return (0, s.jsx)(R.n2, { children: (0, s.jsx)(D.M, { children: (0, s.jsx)(I, { children: t }) }) });
+     return (0, s.jsx)(A.n2, { children: (0, s.jsx)(D.M, { children: (0, s.jsx)(M, { children: t }) }) });
     },
    ]);
    function jt(e) {
@@ -2121,7 +2125,7 @@
    var Ot = r(64536);
    function Pt(e) {
     let { error: t, tryAgain: r } = e;
-    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Ot.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(z, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(L, { error: t }) })] }) }) });
+    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Ot.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(L, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(z, { error: t }) })] }) }) });
    }
    const St = { mainWrapper: 'mainWrapper_F8Q7' };
    function Et(e) {
@@ -3371,60 +3375,60 @@
       return void 0 === e.state && -1 === navigator.userAgent.indexOf('CriOS');
      })(e) || T(O(e.state));
     }
-    function z() {
+    function L() {
      T(O(y()));
     }
-    var L = !1;
+    var z = !1;
     function T(e) {
-     if (L) (L = !1), E();
+     if (z) (z = !1), E();
      else {
       S.confirmTransitionTo(e, 'POP', w, function (t) {
        t
         ? E({ action: 'POP', location: e })
         : (function (e) {
            var t = B.location,
-            r = R.indexOf(t.key);
+            r = A.indexOf(t.key);
            -1 === r && (r = 0);
-           var n = R.indexOf(e.key);
+           var n = A.indexOf(e.key);
            -1 === n && (n = 0);
            var o = r - n;
-           o && ((L = !0), Z(o));
+           o && ((z = !0), Z(o));
           })(e);
       });
      }
     }
     var D = O(y()),
-     R = [D.key];
-    function A(e) {
+     A = [D.key];
+    function R(e) {
      return j + h(e);
     }
     function Z(e) {
      r.go(e);
     }
-    var I = 0;
-    function M(e) {
-     1 === (I += e) && 1 === e ? (window.addEventListener(g, N), a && window.addEventListener(v, z)) : 0 === I && (window.removeEventListener(g, N), a && window.removeEventListener(v, z));
+    var M = 0;
+    function I(e) {
+     1 === (M += e) && 1 === e ? (window.addEventListener(g, N), a && window.addEventListener(v, L)) : 0 === M && (window.removeEventListener(g, N), a && window.removeEventListener(v, L));
     }
     var F = !1;
     var B = {
      length: r.length,
      action: 'POP',
      location: D,
-     createHref: A,
+     createHref: R,
      push: function (e, t) {
       var n = 'PUSH',
        a = b(e, t, P(), B.location);
       S.confirmTransitionTo(a, n, w, function (e) {
        if (e) {
-        var t = A(a),
+        var t = R(a),
          c = a.key,
          i = a.state;
         if (o)
          if ((r.pushState({ key: c, state: i }, null, t), k)) window.location.href = t;
          else {
-          var l = R.indexOf(B.location.key),
-           u = R.slice(0, l + 1);
-          u.push(a.key), (R = u), E({ action: n, location: a });
+          var l = A.indexOf(B.location.key),
+           u = A.slice(0, l + 1);
+          u.push(a.key), (A = u), E({ action: n, location: a });
          }
         else window.location.href = t;
        }
@@ -3435,14 +3439,14 @@
        a = b(e, t, P(), B.location);
       S.confirmTransitionTo(a, n, w, function (e) {
        if (e) {
-        var t = A(a),
+        var t = R(a),
          c = a.key,
          i = a.state;
         if (o)
          if ((r.replaceState({ key: c, state: i }, null, t), k)) window.location.replace(t);
          else {
-          var l = R.indexOf(B.location.key);
-          -1 !== l && (R[l] = a.key), E({ action: n, location: a });
+          var l = A.indexOf(B.location.key);
+          -1 !== l && (A[l] = a.key), E({ action: n, location: a });
          }
         else window.location.replace(t);
        }
@@ -3459,18 +3463,18 @@
       void 0 === e && (e = !1);
       var t = S.setPrompt(e);
       return (
-       F || (M(1), (F = !0)),
+       F || (I(1), (F = !0)),
        function () {
-        return F && ((F = !1), M(-1)), t();
+        return F && ((F = !1), I(-1)), t();
        }
       );
      },
      listen: function (e) {
       var t = S.appendListener(e);
       return (
-       M(1),
+       I(1),
        function () {
-        M(-1), t();
+        I(-1), t();
        }
       );
      },
@@ -3524,7 +3528,7 @@
     }
     var E = !1,
      N = null;
-    function z() {
+    function L() {
      var e,
       t,
       r = C(),
@@ -3545,31 +3549,31 @@
            ? S({ action: t, location: e })
            : (function (e) {
               var t = F.location,
-               r = R.lastIndexOf(h(t));
+               r = A.lastIndexOf(h(t));
               -1 === r && (r = 0);
-              var n = R.lastIndexOf(h(e));
+              var n = A.lastIndexOf(h(e));
               -1 === n && (n = 0);
               var o = r - n;
-              o && ((E = !0), A(o));
+              o && ((E = !0), R(o));
              })(e);
          });
         }
        })(o);
      }
     }
-    var L = C(),
-     T = y(L);
-    L !== T && j(T);
+    var z = C(),
+     T = y(z);
+    z !== T && j(T);
     var D = O(),
-     R = [h(D)];
-    function A(e) {
+     A = [h(D)];
+    function R(e) {
      t.go(e);
     }
     var Z = 0;
-    function I(e) {
-     1 === (Z += e) && 1 === e ? window.addEventListener(x, z) : 0 === Z && window.removeEventListener(x, z);
+    function M(e) {
+     1 === (Z += e) && 1 === e ? window.addEventListener(x, L) : 0 === Z && window.removeEventListener(x, L);
     }
-    var M = !1;
+    var I = !1;
     var F = {
      length: t.length,
      action: 'POP',
@@ -3591,9 +3595,9 @@
           (function (e) {
            window.location.hash = e;
           })(o);
-         var a = R.lastIndexOf(h(F.location)),
-          c = R.slice(0, a + 1);
-         c.push(t), (R = c), S({ action: r, location: n });
+         var a = A.lastIndexOf(h(F.location)),
+          c = A.slice(0, a + 1);
+         c.push(t), (A = c), S({ action: r, location: n });
         } else S();
        }
       });
@@ -3606,34 +3610,34 @@
         var t = h(n),
          o = y(g + t);
         C() !== o && ((N = t), j(o));
-        var a = R.indexOf(h(F.location));
-        -1 !== a && (R[a] = t), S({ action: r, location: n });
+        var a = A.indexOf(h(F.location));
+        -1 !== a && (A[a] = t), S({ action: r, location: n });
        }
       });
      },
-     go: A,
+     go: R,
      goBack: function () {
-      A(-1);
+      R(-1);
      },
      goForward: function () {
-      A(1);
+      R(1);
      },
      block: function (e) {
       void 0 === e && (e = !1);
       var t = P.setPrompt(e);
       return (
-       M || (I(1), (M = !0)),
+       I || (M(1), (I = !0)),
        function () {
-        return M && ((M = !1), I(-1)), t();
+        return I && ((I = !1), M(-1)), t();
        }
       );
      },
      listen: function (e) {
       var t = P.appendListener(e);
       return (
-       I(1),
+       M(1),
        function () {
-        I(-1), t();
+        M(-1), t();
        }
       );
      },
@@ -4618,31 +4622,31 @@
     S = Symbol.for('react.forward_ref'),
     E = Symbol.for('react.suspense'),
     N = Symbol.for('react.suspense_list'),
-    z = Symbol.for('react.memo'),
-    L = Symbol.for('react.lazy');
+    L = Symbol.for('react.memo'),
+    z = Symbol.for('react.lazy');
    Symbol.for('react.scope'), Symbol.for('react.debug_trace_mode');
    var T = Symbol.for('react.offscreen');
    Symbol.for('react.legacy_hidden'), Symbol.for('react.cache'), Symbol.for('react.tracing_marker');
    var D = Symbol.iterator;
-   function R(e) {
+   function A(e) {
     return null === e || 'object' != typeof e ? null : 'function' == typeof (e = (D && e[D]) || e['@@iterator']) ? e : null;
    }
-   var A,
+   var R,
     Z = Object.assign;
-   function I(e) {
-    if (void 0 === A)
+   function M(e) {
+    if (void 0 === R)
      try {
       throw Error();
      } catch (r) {
       var t = r.stack.trim().match(/\n( *(at )?)/);
-      A = (t && t[1]) || '';
+      R = (t && t[1]) || '';
      }
-    return '\n' + A + e;
+    return '\n' + R + e;
    }
-   var M = !1;
+   var I = !1;
    function F(e, t) {
-    if (!e || M) return '';
-    M = !0;
+    if (!e || I) return '';
+    I = !0;
     var r = Error.prepareStackTrace;
     Error.prepareStackTrace = void 0;
     try {
@@ -4696,20 +4700,20 @@
        }
      }
     } finally {
-     (M = !1), (Error.prepareStackTrace = r);
+     (I = !1), (Error.prepareStackTrace = r);
     }
-    return (e = e ? e.displayName || e.name : '') ? I(e) : '';
+    return (e = e ? e.displayName || e.name : '') ? M(e) : '';
    }
    function B(e) {
     switch (e.tag) {
      case 5:
-      return I(e.type);
+      return M(e.type);
      case 16:
-      return I('Lazy');
+      return M('Lazy');
      case 13:
-      return I('Suspense');
+      return M('Suspense');
      case 19:
-      return I('SuspenseList');
+      return M('SuspenseList');
      case 0:
      case 2:
      case 15:
@@ -4749,9 +4753,9 @@
       case S:
        var t = e.render;
        return (e = e.displayName) || (e = '' !== (e = t.displayName || t.name || '') ? 'ForwardRef(' + e + ')' : 'ForwardRef'), e;
-      case z:
-       return null !== (t = e.displayName || null) ? t : $(e.type) || 'Memo';
       case L:
+       return null !== (t = e.displayName || null) ? t : $(e.type) || 'Memo';
+      case z:
        (t = e._payload), (e = e._init);
        try {
         return $(e(t));
@@ -4759,7 +4763,7 @@
      }
     return null;
    }
-   function H(e) {
+   function U(e) {
     var t = e.type;
     switch (e.tag) {
      case 24:
@@ -4809,7 +4813,7 @@
     }
     return null;
    }
-   function U(e) {
+   function H(e) {
     switch (typeof e) {
      case 'boolean':
      case 'number':
@@ -4883,18 +4887,18 @@
    function Y(e, t) {
     var r = null == t.defaultValue ? '' : t.defaultValue,
      n = null != t.checked ? t.checked : t.defaultChecked;
-    (r = U(null != t.value ? t.value : r)), (e._wrapperState = { initialChecked: n, initialValue: r, controlled: 'checkbox' === t.type || 'radio' === t.type ? null != t.checked : null != t.value });
+    (r = H(null != t.value ? t.value : r)), (e._wrapperState = { initialChecked: n, initialValue: r, controlled: 'checkbox' === t.type || 'radio' === t.type ? null != t.checked : null != t.value });
    }
    function Q(e, t) {
     null != (t = t.checked) && y(e, 'checked', t, !1);
    }
    function X(e, t) {
     Q(e, t);
-    var r = U(t.value),
+    var r = H(t.value),
      n = t.type;
     if (null != r) 'number' === n ? ((0 === r && '' === e.value) || e.value != r) && (e.value = '' + r) : e.value !== '' + r && (e.value = '' + r);
     else if ('submit' === n || 'reset' === n) return void e.removeAttribute('value');
-    t.hasOwnProperty('value') ? ee(e, t.type, r) : t.hasOwnProperty('defaultValue') && ee(e, t.type, U(t.defaultValue)), null == t.checked && null != t.defaultChecked && (e.defaultChecked = !!t.defaultChecked);
+    t.hasOwnProperty('value') ? ee(e, t.type, r) : t.hasOwnProperty('defaultValue') && ee(e, t.type, H(t.defaultValue)), null == t.checked && null != t.defaultChecked && (e.defaultChecked = !!t.defaultChecked);
    }
    function J(e, t, r) {
     if (t.hasOwnProperty('value') || t.hasOwnProperty('defaultValue')) {
@@ -4914,7 +4918,7 @@
      for (var o = 0; o < r.length; o++) t['$' + r[o]] = !0;
      for (r = 0; r < e.length; r++) (o = t.hasOwnProperty('$' + e[r].value)), e[r].selected !== o && (e[r].selected = o), o && n && (e[r].defaultSelected = !0);
     } else {
-     for (r = '' + U(r), t = null, o = 0; o < e.length; o++) {
+     for (r = '' + H(r), t = null, o = 0; o < e.length; o++) {
       if (e[o].value === r) return (e[o].selected = !0), void (n && (e[o].defaultSelected = !0));
       null !== t || e[o].disabled || (t = e[o]);
      }
@@ -4938,11 +4942,11 @@
      }
      null == t && (t = ''), (r = t);
     }
-    e._wrapperState = { initialValue: U(r) };
+    e._wrapperState = { initialValue: H(r) };
    }
    function ae(e, t) {
-    var r = U(t.value),
-     n = U(t.defaultValue);
+    var r = H(t.value),
+     n = H(t.defaultValue);
     null != r && ((r = '' + r) !== e.value && (e.value = r), null == t.defaultValue && e.defaultValue !== r && (e.defaultValue = r)), null != n && (e.defaultValue = '' + n);
    }
    function ce(e) {
@@ -5060,7 +5064,7 @@
    }
    function Ee() {}
    var Ne = !1;
-   function ze(e, t, r) {
+   function Le(e, t, r) {
     if (Ne) return e(t, r);
     Ne = !0;
     try {
@@ -5069,7 +5073,7 @@
      (Ne = !1), (null !== _e || null !== Ce) && (Ee(), Pe());
     }
    }
-   function Le(e, t) {
+   function ze(e, t) {
     var r = e.stateNode;
     if (null === r) return null;
     var n = wo(r);
@@ -5110,7 +5114,7 @@
     } catch (se) {
      Te = !1;
     }
-   function Re(e, t, r, n, o, a, c, i, l) {
+   function Ae(e, t, r, n, o, a, c, i, l) {
     var u = Array.prototype.slice.call(arguments, 3);
     try {
      t.apply(r, u);
@@ -5118,17 +5122,17 @@
      this.onError(s);
     }
    }
-   var Ae = !1,
+   var Re = !1,
     Ze = null,
-    Ie = !1,
-    Me = null,
+    Me = !1,
+    Ie = null,
     Fe = {
      onError: function (e) {
-      (Ae = !0), (Ze = e);
+      (Re = !0), (Ze = e);
      },
     };
    function Be(e, t, r, n, o, a, c, i, l) {
-    (Ae = !1), (Ze = null), Re.apply(Fe, arguments);
+    (Re = !1), (Ze = null), Ae.apply(Fe, arguments);
    }
    function $e(e) {
     var t = e,
@@ -5142,14 +5146,14 @@
     }
     return 3 === t.tag ? r : null;
    }
-   function He(e) {
+   function Ue(e) {
     if (13 === e.tag) {
      var t = e.memoizedState;
      if ((null === t && null !== (e = e.alternate) && (t = e.memoizedState), null !== t)) return t.dehydrated;
     }
     return null;
    }
-   function Ue(e) {
+   function He(e) {
     if ($e(e) !== e) throw Error(a(188));
    }
    function Ve(e) {
@@ -5173,8 +5177,8 @@
        }
        if (o.child === c.child) {
         for (c = o.child; c; ) {
-         if (c === r) return Ue(o), e;
-         if (c === n) return Ue(o), t;
+         if (c === r) return He(o), e;
+         if (c === n) return He(o), t;
          c = c.sibling;
         }
         throw Error(a(188));
@@ -5377,11 +5381,11 @@
     St = null,
     Et = null,
     Nt = null,
-    zt = new Map(),
     Lt = new Map(),
+    zt = new Map(),
     Tt = [],
     Dt = 'mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit'.split(' ');
-   function Rt(e, t) {
+   function At(e, t) {
     switch (e) {
      case 'focusin':
      case 'focusout':
@@ -5397,14 +5401,14 @@
       break;
      case 'pointerover':
      case 'pointerout':
-      zt.delete(t.pointerId);
+      Lt.delete(t.pointerId);
       break;
      case 'gotpointercapture':
      case 'lostpointercapture':
-      Lt.delete(t.pointerId);
+      zt.delete(t.pointerId);
     }
    }
-   function At(e, t, r, n, o, a) {
+   function Rt(e, t, r, n, o, a) {
     return null === e || e.nativeEvent !== a ? ((e = { blockedOn: t, domEventName: r, eventSystemFlags: n, nativeEvent: a, targetContainers: [o] }), null !== t && null !== (t = ko(t)) && wt(t), e) : ((e.eventSystemFlags |= n), (t = e.targetContainers), null !== o && -1 === t.indexOf(o) && t.push(o), e);
    }
    function Zt(e) {
@@ -5413,7 +5417,7 @@
      var r = $e(t);
      if (null !== r)
       if (13 === (t = r.tag)) {
-       if (null !== (t = He(r)))
+       if (null !== (t = Ue(r)))
         return (
          (e.blockedOn = t),
          void jt(e.priority, function () {
@@ -5424,7 +5428,7 @@
     }
     e.blockedOn = null;
    }
-   function It(e) {
+   function Mt(e) {
     if (null !== e.blockedOn) return !1;
     for (var t = e.targetContainers; 0 < t.length; ) {
      var r = Kt(e.domEventName, e.eventSystemFlags, t[0], e.nativeEvent);
@@ -5434,11 +5438,11 @@
     }
     return !0;
    }
-   function Mt(e, t, r) {
-    It(e) && r.delete(t);
+   function It(e, t, r) {
+    Mt(e) && r.delete(t);
    }
    function Ft() {
-    (Ot = !1), null !== St && It(St) && (St = null), null !== Et && It(Et) && (Et = null), null !== Nt && It(Nt) && (Nt = null), zt.forEach(Mt), Lt.forEach(Mt);
+    (Ot = !1), null !== St && Mt(St) && (St = null), null !== Et && Mt(Et) && (Et = null), null !== Nt && Mt(Nt) && (Nt = null), Lt.forEach(It), zt.forEach(It);
    }
    function Bt(e, t) {
     e.blockedOn === t && ((e.blockedOn = null), Ot || ((Ot = !0), o.unstable_scheduleCallback(o.unstable_NormalPriority, Ft)));
@@ -5454,62 +5458,62 @@
       n.blockedOn === e && (n.blockedOn = null);
      }
     }
-    for (null !== St && Bt(St, e), null !== Et && Bt(Et, e), null !== Nt && Bt(Nt, e), zt.forEach(t), Lt.forEach(t), r = 0; r < Tt.length; r++) (n = Tt[r]).blockedOn === e && (n.blockedOn = null);
+    for (null !== St && Bt(St, e), null !== Et && Bt(Et, e), null !== Nt && Bt(Nt, e), Lt.forEach(t), zt.forEach(t), r = 0; r < Tt.length; r++) (n = Tt[r]).blockedOn === e && (n.blockedOn = null);
     for (; 0 < Tt.length && null === (r = Tt[0]).blockedOn; ) Zt(r), null === r.blockedOn && Tt.shift();
    }
-   var Ht = k.ReactCurrentBatchConfig,
-    Ut = !0;
+   var Ut = k.ReactCurrentBatchConfig,
+    Ht = !0;
    function Vt(e, t, r, n) {
     var o = yt,
-     a = Ht.transition;
-    Ht.transition = null;
+     a = Ut.transition;
+    Ut.transition = null;
     try {
      (yt = 1), Wt(e, t, r, n);
     } finally {
-     (yt = o), (Ht.transition = a);
+     (yt = o), (Ut.transition = a);
     }
    }
    function qt(e, t, r, n) {
     var o = yt,
-     a = Ht.transition;
-    Ht.transition = null;
+     a = Ut.transition;
+    Ut.transition = null;
     try {
      (yt = 4), Wt(e, t, r, n);
     } finally {
-     (yt = o), (Ht.transition = a);
+     (yt = o), (Ut.transition = a);
     }
    }
    function Wt(e, t, r, n) {
-    if (Ut) {
+    if (Ht) {
      var o = Kt(e, t, r, n);
-     if (null === o) Un(e, t, n, Gt, r), Rt(e, n);
+     if (null === o) Hn(e, t, n, Gt, r), At(e, n);
      else if (
       (function (e, t, r, n, o) {
        switch (t) {
         case 'focusin':
-         return (St = At(St, e, t, r, n, o)), !0;
+         return (St = Rt(St, e, t, r, n, o)), !0;
         case 'dragenter':
-         return (Et = At(Et, e, t, r, n, o)), !0;
+         return (Et = Rt(Et, e, t, r, n, o)), !0;
         case 'mouseover':
-         return (Nt = At(Nt, e, t, r, n, o)), !0;
+         return (Nt = Rt(Nt, e, t, r, n, o)), !0;
         case 'pointerover':
          var a = o.pointerId;
-         return zt.set(a, At(zt.get(a) || null, e, t, r, n, o)), !0;
+         return Lt.set(a, Rt(Lt.get(a) || null, e, t, r, n, o)), !0;
         case 'gotpointercapture':
-         return (a = o.pointerId), Lt.set(a, At(Lt.get(a) || null, e, t, r, n, o)), !0;
+         return (a = o.pointerId), zt.set(a, Rt(zt.get(a) || null, e, t, r, n, o)), !0;
        }
        return !1;
       })(o, e, t, r, n)
      )
       n.stopPropagation();
-     else if ((Rt(e, n), 4 & t && -1 < Dt.indexOf(e))) {
+     else if ((At(e, n), 4 & t && -1 < Dt.indexOf(e))) {
       for (; null !== o; ) {
        var a = ko(o);
-       if ((null !== a && xt(a), null === (a = Kt(e, t, r, n)) && Un(e, t, n, Gt, r), a === o)) break;
+       if ((null !== a && xt(a), null === (a = Kt(e, t, r, n)) && Hn(e, t, n, Gt, r), a === o)) break;
        o = a;
       }
       null !== o && n.stopPropagation();
-     } else Un(e, t, n, null, r);
+     } else Hn(e, t, n, null, r);
     }
    }
    var Gt = null;
@@ -5517,7 +5521,7 @@
     if (((Gt = null), null !== (e = yo((e = xe(n))))))
      if (null === (t = $e(e))) e = null;
      else if (13 === (r = t.tag)) {
-      if (null !== (e = He(t))) return e;
+      if (null !== (e = Ue(t))) return e;
       e = null;
      } else if (3 === r) {
       if (t.stateNode.current.memoizedState.isDehydrated) return 3 === t.tag ? t.stateNode.containerInfo : null;
@@ -5767,19 +5771,19 @@
      deltaZ: 0,
      deltaMode: 0,
     }),
-    zr = or(Nr),
-    Lr = [9, 13, 27, 32],
+    Lr = or(Nr),
+    zr = [9, 13, 27, 32],
     Tr = s && 'CompositionEvent' in window,
     Dr = null;
    s && 'documentMode' in document && (Dr = document.documentMode);
-   var Rr = s && 'TextEvent' in window && !Dr,
-    Ar = s && (!Tr || (Dr && 8 < Dr && 11 >= Dr)),
+   var Ar = s && 'TextEvent' in window && !Dr,
+    Rr = s && (!Tr || (Dr && 8 < Dr && 11 >= Dr)),
     Zr = String.fromCharCode(32),
-    Ir = !1;
-   function Mr(e, t) {
+    Mr = !1;
+   function Ir(e, t) {
     switch (e) {
      case 'keyup':
-      return -1 !== Lr.indexOf(t.keyCode);
+      return -1 !== zr.indexOf(t.keyCode);
      case 'keydown':
       return 229 !== t.keyCode;
      case 'keypress':
@@ -5795,17 +5799,17 @@
    }
    var Br = !1;
    var $r = { color: !0, date: !0, datetime: !0, 'datetime-local': !0, email: !0, month: !0, number: !0, password: !0, range: !0, search: !0, tel: !0, text: !0, time: !0, url: !0, week: !0 };
-   function Hr(e) {
+   function Ur(e) {
     var t = e && e.nodeName && e.nodeName.toLowerCase();
     return 'input' === t ? !!$r[e.type] : 'textarea' === t;
    }
-   function Ur(e, t, r, n) {
+   function Hr(e, t, r, n) {
     Oe(n), 0 < (t = qn(t, 'onChange')).length && ((r = new ur('onChange', 'change', null, r, n)), e.push({ event: r, listeners: t }));
    }
    var Vr = null,
     qr = null;
    function Wr(e) {
-    In(e, 0);
+    Mn(e, 0);
    }
    function Gr(e) {
     if (W(xo(e))) return e;
@@ -5832,7 +5836,7 @@
    function tn(e) {
     if ('value' === e.propertyName && Gr(qr)) {
      var t = [];
-     Ur(t, qr, e, xe(e)), ze(Wr, t);
+     Hr(t, qr, e, xe(e)), Le(Wr, t);
     }
    }
    function rn(e, t, r) {
@@ -5958,30 +5962,30 @@
     Sn = jn('animationstart'),
     En = jn('transitionend'),
     Nn = new Map(),
-    zn = 'abort auxClick cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel'.split(' ');
-   function Ln(e, t) {
+    Ln = 'abort auxClick cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel'.split(' ');
+   function zn(e, t) {
     Nn.set(e, t), l(t, [e]);
    }
-   for (var Tn = 0; Tn < zn.length; Tn++) {
-    var Dn = zn[Tn];
-    Ln(Dn.toLowerCase(), 'on' + (Dn[0].toUpperCase() + Dn.slice(1)));
+   for (var Tn = 0; Tn < Ln.length; Tn++) {
+    var Dn = Ln[Tn];
+    zn(Dn.toLowerCase(), 'on' + (Dn[0].toUpperCase() + Dn.slice(1)));
    }
-   Ln(On, 'onAnimationEnd'), Ln(Pn, 'onAnimationIteration'), Ln(Sn, 'onAnimationStart'), Ln('dblclick', 'onDoubleClick'), Ln('focusin', 'onFocus'), Ln('focusout', 'onBlur'), Ln(En, 'onTransitionEnd'), u('onMouseEnter', ['mouseout', 'mouseover']), u('onMouseLeave', ['mouseout', 'mouseover']), u('onPointerEnter', ['pointerout', 'pointerover']), u('onPointerLeave', ['pointerout', 'pointerover']), l('onChange', 'change click focusin focusout input keydown keyup selectionchange'.split(' ')), l('onSelect', 'focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange'.split(' ')), l('onBeforeInput', ['compositionend', 'keypress', 'textInput', 'paste']), l('onCompositionEnd', 'compositionend focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionStart', 'compositionstart focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionUpdate', 'compositionupdate focusout keydown keypress keyup mousedown'.split(' '));
-   var Rn = 'abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting'.split(' '),
-    An = new Set('cancel close invalid load scroll toggle'.split(' ').concat(Rn));
+   zn(On, 'onAnimationEnd'), zn(Pn, 'onAnimationIteration'), zn(Sn, 'onAnimationStart'), zn('dblclick', 'onDoubleClick'), zn('focusin', 'onFocus'), zn('focusout', 'onBlur'), zn(En, 'onTransitionEnd'), u('onMouseEnter', ['mouseout', 'mouseover']), u('onMouseLeave', ['mouseout', 'mouseover']), u('onPointerEnter', ['pointerout', 'pointerover']), u('onPointerLeave', ['pointerout', 'pointerover']), l('onChange', 'change click focusin focusout input keydown keyup selectionchange'.split(' ')), l('onSelect', 'focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange'.split(' ')), l('onBeforeInput', ['compositionend', 'keypress', 'textInput', 'paste']), l('onCompositionEnd', 'compositionend focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionStart', 'compositionstart focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionUpdate', 'compositionupdate focusout keydown keypress keyup mousedown'.split(' '));
+   var An = 'abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting'.split(' '),
+    Rn = new Set('cancel close invalid load scroll toggle'.split(' ').concat(An));
    function Zn(e, t, r) {
     var n = e.type || 'unknown-event';
     (e.currentTarget = r),
      (function (e, t, r, n, o, c, i, l, u) {
-      if ((Be.apply(this, arguments), Ae)) {
-       if (!Ae) throw Error(a(198));
+      if ((Be.apply(this, arguments), Re)) {
+       if (!Re) throw Error(a(198));
        var s = Ze;
-       (Ae = !1), (Ze = null), Ie || ((Ie = !0), (Me = s));
+       (Re = !1), (Ze = null), Me || ((Me = !0), (Ie = s));
       }
      })(n, t, void 0, e),
      (e.currentTarget = null);
    }
-   function In(e, t) {
+   function Mn(e, t) {
     t = 0 != (4 & t);
     for (var r = 0; r < e.length; r++) {
      var n = e[r],
@@ -6004,30 +6008,30 @@
        }
      }
     }
-    if (Ie) throw ((e = Me), (Ie = !1), (Me = null), e);
+    if (Me) throw ((e = Ie), (Me = !1), (Ie = null), e);
    }
-   function Mn(e, t) {
+   function In(e, t) {
     var r = t[mo];
     void 0 === r && (r = t[mo] = new Set());
     var n = e + '__bubble';
-    r.has(n) || (Hn(t, e, 2, !1), r.add(n));
+    r.has(n) || (Un(t, e, 2, !1), r.add(n));
    }
    function Fn(e, t, r) {
     var n = 0;
-    t && (n |= 4), Hn(r, e, n, t);
+    t && (n |= 4), Un(r, e, n, t);
    }
    var Bn = '_reactListening' + Math.random().toString(36).slice(2);
    function $n(e) {
     if (!e[Bn]) {
      (e[Bn] = !0),
       c.forEach(function (t) {
-       'selectionchange' !== t && (An.has(t) || Fn(t, !1, e), Fn(t, !0, e));
+       'selectionchange' !== t && (Rn.has(t) || Fn(t, !1, e), Fn(t, !0, e));
       });
      var t = 9 === e.nodeType ? e : e.ownerDocument;
      null === t || t[Bn] || ((t[Bn] = !0), Fn('selectionchange', !1, t));
     }
    }
-   function Hn(e, t, r, n) {
+   function Un(e, t, r, n) {
     switch (Yt(t)) {
      case 1:
       var o = Vt;
@@ -6040,7 +6044,7 @@
     }
     (r = o.bind(null, t, r, e)), (o = void 0), !Te || ('touchstart' !== t && 'touchmove' !== t && 'wheel' !== t) || (o = !0), n ? (void 0 !== o ? e.addEventListener(t, r, { capture: !0, passive: o }) : e.addEventListener(t, r, !0)) : void 0 !== o ? e.addEventListener(t, r, { passive: o }) : e.addEventListener(t, r, !1);
    }
-   function Un(e, t, r, n, o) {
+   function Hn(e, t, r, n, o) {
     var a = n;
     if (0 == (1 & t) && 0 == (2 & t) && null !== n)
      e: for (;;) {
@@ -6066,7 +6070,7 @@
       }
       n = n.return;
      }
-    ze(function () {
+    Le(function () {
      var n = a,
       o = xe(r),
       c = [];
@@ -6132,7 +6136,7 @@
          l = dr;
          break;
         case 'wheel':
-         l = zr;
+         l = Lr;
          break;
         case 'copy':
         case 'cut':
@@ -6155,7 +6159,7 @@
        s = [];
        for (var b, p = n; null !== p; ) {
         var f = (b = p).stateNode;
-        if ((5 === b.tag && null !== f && ((b = f), null !== h && null != (f = Le(p, h)) && s.push(Vn(p, f, b))), d)) break;
+        if ((5 === b.tag && null !== f && ((b = f), null !== h && null != (f = ze(p, h)) && s.push(Vn(p, f, b))), d)) break;
         p = p.return;
        }
        0 < s.length && ((i = new l(i, u, null, r, o)), c.push({ event: i, listeners: s }));
@@ -6179,16 +6183,16 @@
        null !== l && Gn(c, i, l, s, !1), null !== u && null !== d && Gn(c, d, u, s, !0);
       }
       if ('select' === (l = (i = n ? xo(n) : window).nodeName && i.nodeName.toLowerCase()) || ('input' === l && 'file' === i.type)) var m = Kr;
-      else if (Hr(i))
+      else if (Ur(i))
        if (Yr) m = an;
        else {
         m = nn;
         var g = rn;
        }
       else (l = i.nodeName) && 'input' === l.toLowerCase() && ('checkbox' === i.type || 'radio' === i.type) && (m = on);
-      switch ((m && (m = m(e, n)) ? Ur(c, m, r, o) : (g && g(e, i, n), 'focusout' === e && (g = i._wrapperState) && g.controlled && 'number' === i.type && ee(i, 'number', i.value)), (g = n ? xo(n) : window), e)) {
+      switch ((m && (m = m(e, n)) ? Hr(c, m, r, o) : (g && g(e, i, n), 'focusout' === e && (g = i._wrapperState) && g.controlled && 'number' === i.type && ee(i, 'number', i.value)), (g = n ? xo(n) : window), e)) {
        case 'focusin':
-        (Hr(g) || 'true' === g.contentEditable) && ((mn = g), (gn = n), (vn = null));
+        (Ur(g) || 'true' === g.contentEditable) && ((mn = g), (gn = n), (vn = null));
         break;
        case 'focusout':
         vn = gn = mn = null;
@@ -6223,23 +6227,23 @@
         }
         y = void 0;
        }
-      else Br ? Mr(e, r) && (y = 'onCompositionEnd') : 'keydown' === e && 229 === r.keyCode && (y = 'onCompositionStart');
-      y && (Ar && 'ko' !== r.locale && (Br || 'onCompositionStart' !== y ? 'onCompositionEnd' === y && Br && (v = er()) : ((Xt = 'value' in (Qt = o) ? Qt.value : Qt.textContent), (Br = !0))), 0 < (g = qn(n, y)).length && ((y = new yr(y, e, null, r, o)), c.push({ event: y, listeners: g }), v ? (y.data = v) : null !== (v = Fr(r)) && (y.data = v))),
-       (v = Rr
+      else Br ? Ir(e, r) && (y = 'onCompositionEnd') : 'keydown' === e && 229 === r.keyCode && (y = 'onCompositionStart');
+      y && (Rr && 'ko' !== r.locale && (Br || 'onCompositionStart' !== y ? 'onCompositionEnd' === y && Br && (v = er()) : ((Xt = 'value' in (Qt = o) ? Qt.value : Qt.textContent), (Br = !0))), 0 < (g = qn(n, y)).length && ((y = new yr(y, e, null, r, o)), c.push({ event: y, listeners: g }), v ? (y.data = v) : null !== (v = Fr(r)) && (y.data = v))),
+       (v = Ar
         ? (function (e, t) {
            switch (e) {
             case 'compositionend':
              return Fr(t);
             case 'keypress':
-             return 32 !== t.which ? null : ((Ir = !0), Zr);
+             return 32 !== t.which ? null : ((Mr = !0), Zr);
             case 'textInput':
-             return (e = t.data) === Zr && Ir ? null : e;
+             return (e = t.data) === Zr && Mr ? null : e;
             default:
              return null;
            }
           })(e, r)
         : (function (e, t) {
-           if (Br) return 'compositionend' === e || (!Tr && Mr(e, t)) ? ((e = er()), (Jt = Xt = Qt = null), (Br = !1), e) : null;
+           if (Br) return 'compositionend' === e || (!Tr && Ir(e, t)) ? ((e = er()), (Jt = Xt = Qt = null), (Br = !1), e) : null;
            switch (e) {
             case 'paste':
             default:
@@ -6251,13 +6255,13 @@
              }
              return null;
             case 'compositionend':
-             return Ar && 'ko' !== t.locale ? null : t.data;
+             return Rr && 'ko' !== t.locale ? null : t.data;
            }
           })(e, r)) &&
         0 < (n = qn(n, 'onBeforeInput')).length &&
         ((o = new yr('onBeforeInput', 'beforeinput', null, r, o)), c.push({ event: o, listeners: n }), (o.data = v));
      }
-     In(c, t);
+     Mn(c, t);
     });
    }
    function Vn(e, t, r) {
@@ -6267,7 +6271,7 @@
     for (var r = t + 'Capture', n = []; null !== e; ) {
      var o = e,
       a = o.stateNode;
-     5 === o.tag && null !== a && ((o = a), null != (a = Le(e, r)) && n.unshift(Vn(e, a, o)), null != (a = Le(e, t)) && n.push(Vn(e, a, o))), (e = e.return);
+     5 === o.tag && null !== a && ((o = a), null != (a = ze(e, r)) && n.unshift(Vn(e, a, o)), null != (a = ze(e, t)) && n.push(Vn(e, a, o))), (e = e.return);
     }
     return n;
    }
@@ -6284,7 +6288,7 @@
       l = i.alternate,
       u = i.stateNode;
      if (null !== l && l === n) break;
-     5 === i.tag && null !== u && ((i = u), o ? null != (l = Le(r, a)) && c.unshift(Vn(r, l, i)) : o || (null != (l = Le(r, a)) && c.push(Vn(r, l, i)))), (r = r.return);
+     5 === i.tag && null !== u && ((i = u), o ? null != (l = ze(r, a)) && c.unshift(Vn(r, l, i)) : o || (null != (l = ze(r, a)) && c.push(Vn(r, l, i)))), (r = r.return);
     }
     0 !== c.length && e.push({ event: t, listeners: c });
    }
@@ -6404,8 +6408,8 @@
    var So = {},
     Eo = jo(So),
     No = jo(!1),
-    zo = So;
-   function Lo(e, t) {
+    Lo = So;
+   function zo(e, t) {
     var r = e.type.contextTypes;
     if (!r) return So;
     var n = e.stateNode;
@@ -6421,53 +6425,53 @@
    function Do() {
     Oo(No), Oo(Eo);
    }
-   function Ro(e, t, r) {
+   function Ao(e, t, r) {
     if (Eo.current !== So) throw Error(a(168));
     Po(Eo, t), Po(No, r);
    }
-   function Ao(e, t, r) {
+   function Ro(e, t, r) {
     var n = e.stateNode;
     if (((t = t.childContextTypes), 'function' != typeof n.getChildContext)) return r;
-    for (var o in (n = n.getChildContext())) if (!(o in t)) throw Error(a(108, H(e) || 'Unknown', o));
+    for (var o in (n = n.getChildContext())) if (!(o in t)) throw Error(a(108, U(e) || 'Unknown', o));
     return Z({}, r, n);
    }
    function Zo(e) {
-    return (e = ((e = e.stateNode) && e.__reactInternalMemoizedMergedChildContext) || So), (zo = Eo.current), Po(Eo, e), Po(No, No.current), !0;
+    return (e = ((e = e.stateNode) && e.__reactInternalMemoizedMergedChildContext) || So), (Lo = Eo.current), Po(Eo, e), Po(No, No.current), !0;
    }
-   function Io(e, t, r) {
+   function Mo(e, t, r) {
     var n = e.stateNode;
     if (!n) throw Error(a(169));
-    r ? ((e = Ao(e, t, zo)), (n.__reactInternalMemoizedMergedChildContext = e), Oo(No), Oo(Eo), Po(Eo, e)) : Oo(No), Po(No, r);
+    r ? ((e = Ro(e, t, Lo)), (n.__reactInternalMemoizedMergedChildContext = e), Oo(No), Oo(Eo), Po(Eo, e)) : Oo(No), Po(No, r);
    }
-   var Mo = null,
+   var Io = null,
     Fo = !1,
     Bo = !1;
    function $o(e) {
-    null === Mo ? (Mo = [e]) : Mo.push(e);
+    null === Io ? (Io = [e]) : Io.push(e);
    }
-   function Ho() {
-    if (!Bo && null !== Mo) {
+   function Uo() {
+    if (!Bo && null !== Io) {
      Bo = !0;
      var e = 0,
       t = yt;
      try {
-      var r = Mo;
+      var r = Io;
       for (yt = 1; e < r.length; e++) {
        var n = r[e];
        do {
         n = n(!0);
        } while (null !== n);
       }
-      (Mo = null), (Fo = !1);
+      (Io = null), (Fo = !1);
      } catch (o) {
-      throw (null !== Mo && (Mo = Mo.slice(e + 1)), We(Je, Ho), o);
+      throw (null !== Io && (Io = Io.slice(e + 1)), We(Je, Uo), o);
      } finally {
       (yt = t), (Bo = !1);
      }
     }
     return null;
    }
-   var Uo = [],
+   var Ho = [],
     Vo = 0,
     qo = null,
     Wo = 0,
@@ -6477,7 +6481,7 @@
     Qo = 1,
     Xo = '';
    function Jo(e, t) {
-    (Uo[Vo++] = Wo), (Uo[Vo++] = qo), (qo = e), (Wo = t);
+    (Ho[Vo++] = Wo), (Ho[Vo++] = qo), (qo = e), (Wo = t);
    }
    function ea(e, t, r) {
     (Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Yo = e);
@@ -6495,7 +6499,7 @@
     null !== e.return && (Jo(e, 1), ea(e, 1, 0));
    }
    function ra(e) {
-    for (; e === qo; ) (qo = Uo[--Vo]), (Uo[Vo] = null), (Wo = Uo[--Vo]), (Uo[Vo] = null);
+    for (; e === qo; ) (qo = Ho[--Vo]), (Ho[Vo] = null), (Wo = Ho[--Vo]), (Ho[Vo] = null);
     for (; e === Yo; ) (Yo = Go[--Ko]), (Go[Ko] = null), (Xo = Go[--Ko]), (Go[Ko] = null), (Qo = Go[--Ko]), (Go[Ko] = null);
    }
    var na = null,
@@ -6503,7 +6507,7 @@
     aa = !1,
     ca = null;
    function ia(e, t) {
-    var r = zu(5, null, null, 0);
+    var r = Lu(5, null, null, 0);
     (r.elementType = 'DELETED'), (r.stateNode = t), (r.return = e), null === (t = e.deletions) ? ((e.deletions = [r]), (e.flags |= 16)) : t.push(r);
    }
    function la(e, t) {
@@ -6514,7 +6518,7 @@
      case 6:
       return null !== (t = '' === e.pendingProps || 3 !== t.nodeType ? null : t) && ((e.stateNode = t), (na = e), (oa = null), !0);
      case 13:
-      return null !== (t = 8 !== t.nodeType ? null : t) && ((r = null !== Yo ? { id: Qo, overflow: Xo } : null), (e.memoizedState = { dehydrated: t, treeContext: r, retryLane: 1073741824 }), ((r = zu(18, null, null, 0)).stateNode = t), (r.return = e), (e.child = r), (na = e), (oa = null), !0);
+      return null !== (t = 8 !== t.nodeType ? null : t) && ((r = null !== Yo ? { id: Qo, overflow: Xo } : null), (e.memoizedState = { dehydrated: t, treeContext: r, retryLane: 1073741824 }), ((r = Lu(18, null, null, 0)).stateNode = t), (r.return = e), (e.child = r), (na = e), (oa = null), !0);
      default:
       return !1;
     }
@@ -6642,13 +6646,13 @@
     }
     function u(e, t, r, n) {
      var a = r.type;
-     return a === _ ? d(e, t, r.props.children, n, r.key) : null !== t && (t.elementType === a || ('object' == typeof a && null !== a && a.$$typeof === L && ya(a) === t.type)) ? (((n = o(t, r.props)).ref = ga(e, t, r)), (n.return = e), n) : (((n = Du(r.type, r.key, r.props, null, e.mode, n)).ref = ga(e, t, r)), (n.return = e), n);
+     return a === _ ? d(e, t, r.props.children, n, r.key) : null !== t && (t.elementType === a || ('object' == typeof a && null !== a && a.$$typeof === z && ya(a) === t.type)) ? (((n = o(t, r.props)).ref = ga(e, t, r)), (n.return = e), n) : (((n = Du(r.type, r.key, r.props, null, e.mode, n)).ref = ga(e, t, r)), (n.return = e), n);
     }
     function s(e, t, r, n) {
-     return null === t || 4 !== t.tag || t.stateNode.containerInfo !== r.containerInfo || t.stateNode.implementation !== r.implementation ? (((t = Iu(r, e.mode, n)).return = e), t) : (((t = o(t, r.children || [])).return = e), t);
+     return null === t || 4 !== t.tag || t.stateNode.containerInfo !== r.containerInfo || t.stateNode.implementation !== r.implementation ? (((t = Mu(r, e.mode, n)).return = e), t) : (((t = o(t, r.children || [])).return = e), t);
     }
     function d(e, t, r, n, a) {
-     return null === t || 7 !== t.tag ? (((t = Ru(r, e.mode, n, a)).return = e), t) : (((t = o(t, r)).return = e), t);
+     return null === t || 7 !== t.tag ? (((t = Au(r, e.mode, n, a)).return = e), t) : (((t = o(t, r)).return = e), t);
     }
     function h(e, t, r) {
      if (('string' == typeof t && '' !== t) || 'number' == typeof t) return ((t = Zu('' + t, e.mode, r)).return = e), t;
@@ -6657,11 +6661,11 @@
        case x:
         return ((r = Du(t.type, t.key, t.props, null, e.mode, r)).ref = ga(e, null, t)), (r.return = e), r;
        case w:
-        return ((t = Iu(t, e.mode, r)).return = e), t;
-       case L:
+        return ((t = Mu(t, e.mode, r)).return = e), t;
+       case z:
         return h(e, (0, t._init)(t._payload), r);
       }
-      if (te(t) || R(t)) return ((t = Ru(t, e.mode, r, null)).return = e), t;
+      if (te(t) || A(t)) return ((t = Au(t, e.mode, r, null)).return = e), t;
       va(e, t);
      }
      return null;
@@ -6675,10 +6679,10 @@
         return r.key === o ? u(e, t, r, n) : null;
        case w:
         return r.key === o ? s(e, t, r, n) : null;
-       case L:
+       case z:
         return b(e, t, (o = r._init)(r._payload), n);
       }
-      if (te(r) || R(r)) return null !== o ? null : d(e, t, r, n, null);
+      if (te(r) || A(r)) return null !== o ? null : d(e, t, r, n, null);
       va(e, r);
      }
      return null;
@@ -6691,10 +6695,10 @@
         return u(t, (e = e.get(null === n.key ? r : n.key) || null), n, o);
        case w:
         return s(t, (e = e.get(null === n.key ? r : n.key) || null), n, o);
-       case L:
+       case z:
         return p(e, t, r, (0, n._init)(n._payload), o);
       }
-      if (te(n) || R(n)) return d(t, (e = e.get(r) || null), n, o, null);
+      if (te(n) || A(n)) return d(t, (e = e.get(r) || null), n, o, null);
       va(t, n);
      }
      return null;
@@ -6725,7 +6729,7 @@
      );
     }
     function m(o, i, l, u) {
-     var s = R(l);
+     var s = A(l);
      if ('function' != typeof s) throw Error(a(150));
      if (null == (l = s.call(l))) throw Error(a(151));
      for (var d = (s = null), f = i, m = (i = 0), g = null, v = l.next(); null !== f && !v.done; m++, v = l.next()) {
@@ -6764,7 +6768,7 @@
              r(n, s.sibling), ((a = o(s, c.props.children)).return = n), (n = a);
              break e;
             }
-           } else if (s.elementType === u || ('object' == typeof u && null !== u && u.$$typeof === L && ya(u) === s.type)) {
+           } else if (s.elementType === u || ('object' == typeof u && null !== u && u.$$typeof === z && ya(u) === s.type)) {
             r(n, s.sibling), ((a = o(s, c.props)).ref = ga(n, s, c)), (a.return = n), (n = a);
             break e;
            }
@@ -6773,7 +6777,7 @@
           }
           t(n, s), (s = s.sibling);
          }
-         c.type === _ ? (((a = Ru(c.props.children, n.mode, l, c.key)).return = n), (n = a)) : (((l = Du(c.type, c.key, c.props, null, n.mode, l)).ref = ga(n, a, c)), (l.return = n), (n = l));
+         c.type === _ ? (((a = Au(c.props.children, n.mode, l, c.key)).return = n), (n = a)) : (((l = Du(c.type, c.key, c.props, null, n.mode, l)).ref = ga(n, a, c)), (l.return = n), (n = l));
         }
         return i(n);
        case w:
@@ -6789,14 +6793,14 @@
           }
           t(n, a), (a = a.sibling);
          }
-         ((a = Iu(c, n.mode, l)).return = n), (n = a);
+         ((a = Mu(c, n.mode, l)).return = n), (n = a);
         }
         return i(n);
-       case L:
+       case z:
         return e(n, a, (s = c._init)(c._payload), l);
       }
       if (te(c)) return f(n, a, c, l);
-      if (R(c)) return m(n, a, c, l);
+      if (A(c)) return m(n, a, c, l);
       va(n, c);
      }
      return ('string' == typeof c && '' !== c) || 'number' == typeof c ? ((c = '' + c), null !== a && 6 === a.tag ? (r(n, a.sibling), ((a = o(a, c)).return = n), (n = a)) : (r(n, a), ((a = Zu(c, n.mode, l)).return = n), (n = a)), i(n)) : r(n, a);
@@ -6825,7 +6829,7 @@
    function Na(e, t) {
     (Ca = e), (Oa = ja = null), null !== (e = e.dependencies) && null !== e.firstContext && (0 != (e.lanes & t) && (yi = !0), (e.firstContext = null));
    }
-   function za(e) {
+   function La(e) {
     var t = e._currentValue;
     if (Oa !== e)
      if (((e = { context: e, memoizedValue: t, next: null }), null === ja)) {
@@ -6834,28 +6838,28 @@
      } else ja = ja.next = e;
     return t;
    }
-   var La = null;
+   var za = null;
    function Ta(e) {
-    null === La ? (La = [e]) : La.push(e);
+    null === za ? (za = [e]) : za.push(e);
    }
    function Da(e, t, r, n) {
     var o = t.interleaved;
-    return null === o ? ((r.next = r), Ta(t)) : ((r.next = o.next), (o.next = r)), (t.interleaved = r), Ra(e, n);
+    return null === o ? ((r.next = r), Ta(t)) : ((r.next = o.next), (o.next = r)), (t.interleaved = r), Aa(e, n);
    }
-   function Ra(e, t) {
+   function Aa(e, t) {
     e.lanes |= t;
     var r = e.alternate;
     for (null !== r && (r.lanes |= t), r = e, e = e.return; null !== e; ) (e.childLanes |= t), null !== (r = e.alternate) && (r.childLanes |= t), (r = e), (e = e.return);
     return 3 === r.tag ? r.stateNode : null;
    }
-   var Aa = !1;
+   var Ra = !1;
    function Za(e) {
     e.updateQueue = { baseState: e.memoizedState, firstBaseUpdate: null, lastBaseUpdate: null, shared: { pending: null, interleaved: null, lanes: 0 }, effects: null };
    }
-   function Ia(e, t) {
+   function Ma(e, t) {
     (e = e.updateQueue), t.updateQueue === e && (t.updateQueue = { baseState: e.baseState, firstBaseUpdate: e.firstBaseUpdate, lastBaseUpdate: e.lastBaseUpdate, shared: e.shared, effects: e.effects });
    }
-   function Ma(e, t) {
+   function Ia(e, t) {
     return { eventTime: e, lane: t, tag: 0, payload: null, callback: null, next: null };
    }
    function Fa(e, t, r) {
@@ -6863,9 +6867,9 @@
     if (null === n) return null;
     if (((n = n.shared), 0 != (2 & Sl))) {
      var o = n.pending;
-     return null === o ? (t.next = t) : ((t.next = o.next), (o.next = t)), (n.pending = t), Ra(e, r);
+     return null === o ? (t.next = t) : ((t.next = o.next), (o.next = t)), (n.pending = t), Aa(e, r);
     }
-    return null === (o = n.interleaved) ? ((t.next = t), Ta(n)) : ((t.next = o.next), (o.next = t)), (n.interleaved = t), Ra(e, r);
+    return null === (o = n.interleaved) ? ((t.next = t), Ta(n)) : ((t.next = o.next), (o.next = t)), (n.interleaved = t), Aa(e, r);
    }
    function Ba(e, t, r) {
     if (null !== (t = t.updateQueue) && ((t = t.shared), 0 != (4194240 & r))) {
@@ -6890,9 +6894,9 @@
     }
     null === (e = r.lastBaseUpdate) ? (r.firstBaseUpdate = t) : (e.next = t), (r.lastBaseUpdate = t);
    }
-   function Ha(e, t, r, n) {
+   function Ua(e, t, r, n) {
     var o = e.updateQueue;
-    Aa = !1;
+    Ra = !1;
     var a = o.firstBaseUpdate,
      c = o.lastBaseUpdate,
      i = o.shared.pending;
@@ -6929,7 +6933,7 @@
           d = Z({}, d, h);
           break e;
          case 2:
-          Aa = !0;
+          Ra = !0;
         }
        }
        null !== i.callback && 0 !== i.lane && ((e.flags |= 64), null === (h = o.effects) ? (o.effects = [i]) : h.push(i));
@@ -6945,10 +6949,10 @@
        (c |= o.lane), (o = o.next);
       } while (o !== t);
      } else null === a && (o.shared.lanes = 0);
-     (Al |= c), (e.lanes = c), (e.memoizedState = d);
+     (Rl |= c), (e.lanes = c), (e.memoizedState = d);
     }
    }
-   function Ua(e, t, r) {
+   function Ha(e, t, r) {
     if (((e = t.effects), (t.effects = null), null !== e))
      for (t = 0; t < e.length; t++) {
       var n = e[t],
@@ -7094,7 +7098,7 @@
       if ((cc & d) === d) null !== u && (u = u.next = { lane: 0, action: s.action, hasEagerState: s.hasEagerState, eagerState: s.eagerState, next: null }), (n = s.hasEagerState ? s.eagerState : e(n, s.action));
       else {
        var h = { lane: d, action: s.action, hasEagerState: s.hasEagerState, eagerState: s.eagerState, next: null };
-       null === u ? ((l = u = h), (i = n)) : (u = u.next = h), (ic.lanes |= d), (Al |= d);
+       null === u ? ((l = u = h), (i = n)) : (u = u.next = h), (ic.lanes |= d), (Rl |= d);
       }
       s = s.next;
      } while (null !== s && s !== c);
@@ -7103,7 +7107,7 @@
     if (null !== (e = r.interleaved)) {
      o = e;
      do {
-      (c = o.lane), (ic.lanes |= c), (Al |= c), (o = o.next);
+      (c = o.lane), (ic.lanes |= c), (Rl |= c), (o = o.next);
      } while (o !== e);
     } else null === o && (r.lanes = 0);
     return [t.memoizedState, r.dispatch];
@@ -7132,8 +7136,8 @@
      n = yc(),
      o = t(),
      c = !cn(n.memoizedState, o);
-    if ((c && ((n.memoizedState = o), (yi = !0)), (n = n.queue), Ac(Pc.bind(null, r, n, e), [e]), n.getSnapshot !== t || c || (null !== uc && 1 & uc.memoizedState.tag))) {
-     if (((r.flags |= 2048), zc(9, Oc.bind(null, r, n, o, t), void 0, null), null === El)) throw Error(a(349));
+    if ((c && ((n.memoizedState = o), (yi = !0)), (n = n.queue), Rc(Pc.bind(null, r, n, e), [e]), n.getSnapshot !== t || c || (null !== uc && 1 & uc.memoizedState.tag))) {
+     if (((r.flags |= 2048), Lc(9, Oc.bind(null, r, n, o, t), void 0, null), null === El)) throw Error(a(349));
      0 != (30 & cc) || jc(r, t, o);
     }
     return o;
@@ -7160,22 +7164,22 @@
     }
    }
    function Ec(e) {
-    var t = Ra(e, 1);
+    var t = Aa(e, 1);
     null !== t && ru(t, e, 1, -1);
    }
    function Nc(e) {
     var t = vc();
     return 'function' == typeof e && (e = e()), (t.memoizedState = t.baseState = e), (e = { pending: null, interleaved: null, lanes: 0, dispatch: null, lastRenderedReducer: kc, lastRenderedState: e }), (t.queue = e), (e = e.dispatch = Gc.bind(null, ic, e)), [t.memoizedState, e];
    }
-   function zc(e, t, r, n) {
+   function Lc(e, t, r, n) {
     return (e = { tag: e, create: t, destroy: r, deps: n, next: null }), null === (t = ic.updateQueue) ? ((t = { lastEffect: null, stores: null }), (ic.updateQueue = t), (t.lastEffect = e.next = e)) : null === (r = t.lastEffect) ? (t.lastEffect = e.next = e) : ((n = r.next), (r.next = e), (e.next = n), (t.lastEffect = e)), e;
    }
-   function Lc() {
+   function zc() {
     return yc().memoizedState;
    }
    function Tc(e, t, r, n) {
     var o = vc();
-    (ic.flags |= e), (o.memoizedState = zc(1 | t, r, void 0, void 0 === n ? null : n));
+    (ic.flags |= e), (o.memoizedState = Lc(1 | t, r, void 0, void 0 === n ? null : n));
    }
    function Dc(e, t, r, n) {
     var o = yc();
@@ -7183,23 +7187,23 @@
     var a = void 0;
     if (null !== lc) {
      var c = lc.memoizedState;
-     if (((a = c.destroy), null !== n && fc(n, c.deps))) return void (o.memoizedState = zc(t, r, a, n));
+     if (((a = c.destroy), null !== n && fc(n, c.deps))) return void (o.memoizedState = Lc(t, r, a, n));
     }
-    (ic.flags |= e), (o.memoizedState = zc(1 | t, r, a, n));
-   }
-   function Rc(e, t) {
-    return Tc(8390656, 8, e, t);
+    (ic.flags |= e), (o.memoizedState = Lc(1 | t, r, a, n));
    }
    function Ac(e, t) {
+    return Tc(8390656, 8, e, t);
+   }
+   function Rc(e, t) {
     return Dc(2048, 8, e, t);
    }
    function Zc(e, t) {
     return Dc(4, 2, e, t);
    }
-   function Ic(e, t) {
+   function Mc(e, t) {
     return Dc(4, 4, e, t);
    }
-   function Mc(e, t) {
+   function Ic(e, t) {
     return 'function' == typeof t
      ? ((e = e()),
        t(e),
@@ -7215,7 +7219,7 @@
        : void 0;
    }
    function Fc(e, t, r) {
-    return (r = null != r ? r.concat([e]) : null), Dc(4, 4, Mc.bind(null, t, e), r);
+    return (r = null != r ? r.concat([e]) : null), Dc(4, 4, Ic.bind(null, t, e), r);
    }
    function Bc() {}
    function $c(e, t) {
@@ -7224,14 +7228,14 @@
     var n = r.memoizedState;
     return null !== n && null !== t && fc(t, n[1]) ? n[0] : ((r.memoizedState = [e, t]), e);
    }
-   function Hc(e, t) {
+   function Uc(e, t) {
     var r = yc();
     t = void 0 === t ? null : t;
     var n = r.memoizedState;
     return null !== n && null !== t && fc(t, n[1]) ? n[0] : ((e = e()), (r.memoizedState = [e, t]), e);
    }
-   function Uc(e, t, r) {
-    return 0 == (21 & cc) ? (e.baseState && ((e.baseState = !1), (yi = !0)), (e.memoizedState = r)) : (cn(r, t) || ((r = ft()), (ic.lanes |= r), (Al |= r), (e.baseState = !0)), t);
+   function Hc(e, t, r) {
+    return 0 == (21 & cc) ? (e.baseState && ((e.baseState = !1), (yi = !0)), (e.memoizedState = r)) : (cn(r, t) || ((r = ft()), (ic.lanes |= r), (Rl |= r), (e.baseState = !0)), t);
    }
    function Vc(e, t) {
     var r = yt;
@@ -7287,16 +7291,16 @@
      (r |= n &= e.pendingLanes), (t.lanes = r), vt(e, r);
     }
    }
-   var Xc = { readContext: za, useCallback: pc, useContext: pc, useEffect: pc, useImperativeHandle: pc, useInsertionEffect: pc, useLayoutEffect: pc, useMemo: pc, useReducer: pc, useRef: pc, useState: pc, useDebugValue: pc, useDeferredValue: pc, useTransition: pc, useMutableSource: pc, useSyncExternalStore: pc, useId: pc, unstable_isNewReconciler: !1 },
+   var Xc = { readContext: La, useCallback: pc, useContext: pc, useEffect: pc, useImperativeHandle: pc, useInsertionEffect: pc, useLayoutEffect: pc, useMemo: pc, useReducer: pc, useRef: pc, useState: pc, useDebugValue: pc, useDeferredValue: pc, useTransition: pc, useMutableSource: pc, useSyncExternalStore: pc, useId: pc, unstable_isNewReconciler: !1 },
     Jc = {
-     readContext: za,
+     readContext: La,
      useCallback: function (e, t) {
       return (vc().memoizedState = [e, void 0 === t ? null : t]), e;
      },
-     useContext: za,
-     useEffect: Rc,
+     useContext: La,
+     useEffect: Ac,
      useImperativeHandle: function (e, t, r) {
-      return (r = null != r ? r.concat([e]) : null), Tc(4194308, 4, Mc.bind(null, t, e), r);
+      return (r = null != r ? r.concat([e]) : null), Tc(4194308, 4, Ic.bind(null, t, e), r);
      },
      useLayoutEffect: function (e, t) {
       return Tc(4194308, 4, e, t);
@@ -7338,7 +7342,7 @@
       }
       o.memoizedState = r;
       var c = { value: r, getSnapshot: t };
-      return (o.queue = c), Rc(Pc.bind(null, n, c, e), [e]), (n.flags |= 2048), zc(9, Oc.bind(null, n, c, r, t), void 0, null), r;
+      return (o.queue = c), Ac(Pc.bind(null, n, c, e), [e]), (n.flags |= 2048), Lc(9, Oc.bind(null, n, c, r, t), void 0, null), r;
      },
      useId: function () {
       var e = vc(),
@@ -7352,22 +7356,22 @@
      unstable_isNewReconciler: !1,
     },
     ei = {
-     readContext: za,
+     readContext: La,
      useCallback: $c,
-     useContext: za,
-     useEffect: Ac,
+     useContext: La,
+     useEffect: Rc,
      useImperativeHandle: Fc,
      useInsertionEffect: Zc,
-     useLayoutEffect: Ic,
-     useMemo: Hc,
+     useLayoutEffect: Mc,
+     useMemo: Uc,
      useReducer: xc,
-     useRef: Lc,
+     useRef: zc,
      useState: function () {
       return xc(kc);
      },
      useDebugValue: Bc,
      useDeferredValue: function (e) {
-      return Uc(yc(), lc.memoizedState, e);
+      return Hc(yc(), lc.memoizedState, e);
      },
      useTransition: function () {
       return [xc(kc)[0], yc().memoizedState];
@@ -7378,23 +7382,23 @@
      unstable_isNewReconciler: !1,
     },
     ti = {
-     readContext: za,
+     readContext: La,
      useCallback: $c,
-     useContext: za,
-     useEffect: Ac,
+     useContext: La,
+     useEffect: Rc,
      useImperativeHandle: Fc,
      useInsertionEffect: Zc,
-     useLayoutEffect: Ic,
-     useMemo: Hc,
+     useLayoutEffect: Mc,
+     useMemo: Uc,
      useReducer: wc,
-     useRef: Lc,
+     useRef: zc,
      useState: function () {
       return wc(kc);
      },
      useDebugValue: Bc,
      useDeferredValue: function (e) {
       var t = yc();
-      return null === lc ? (t.memoizedState = e) : Uc(t, lc.memoizedState, e);
+      return null === lc ? (t.memoizedState = e) : Hc(t, lc.memoizedState, e);
      },
      useTransition: function () {
       return [wc(kc)[0], yc().memoizedState];
@@ -7422,21 +7426,21 @@
      e = e._reactInternals;
      var n = eu(),
       o = tu(e),
-      a = Ma(n, o);
+      a = Ia(n, o);
      (a.payload = t), null != r && (a.callback = r), null !== (t = Fa(e, a, o)) && (ru(t, e, o, n), Ba(t, e, o));
     },
     enqueueReplaceState: function (e, t, r) {
      e = e._reactInternals;
      var n = eu(),
       o = tu(e),
-      a = Ma(n, o);
+      a = Ia(n, o);
      (a.tag = 1), (a.payload = t), null != r && (a.callback = r), null !== (t = Fa(e, a, o)) && (ru(t, e, o, n), Ba(t, e, o));
     },
     enqueueForceUpdate: function (e, t) {
      e = e._reactInternals;
      var r = eu(),
       n = tu(e),
-      o = Ma(r, n);
+      o = Ia(r, n);
      (o.tag = 2), null != t && (o.callback = t), null !== (t = Fa(e, o, n)) && (ru(t, e, n, r), Ba(t, e, n));
     },
    };
@@ -7447,7 +7451,7 @@
     var n = !1,
      o = So,
      a = t.contextType;
-    return 'object' == typeof a && null !== a ? (a = za(a)) : ((o = To(t) ? zo : Eo.current), (a = (n = null != (n = t.contextTypes)) ? Lo(e, o) : So)), (t = new t(r, a)), (e.memoizedState = null !== t.state && void 0 !== t.state ? t.state : null), (t.updater = oi), (e.stateNode = t), (t._reactInternals = e), n && (((e = e.stateNode).__reactInternalMemoizedUnmaskedChildContext = o), (e.__reactInternalMemoizedMaskedChildContext = a)), t;
+    return 'object' == typeof a && null !== a ? (a = La(a)) : ((o = To(t) ? Lo : Eo.current), (a = (n = null != (n = t.contextTypes)) ? zo(e, o) : So)), (t = new t(r, a)), (e.memoizedState = null !== t.state && void 0 !== t.state ? t.state : null), (t.updater = oi), (e.stateNode = t), (t._reactInternals = e), n && (((e = e.stateNode).__reactInternalMemoizedUnmaskedChildContext = o), (e.__reactInternalMemoizedMaskedChildContext = a)), t;
    }
    function ii(e, t, r, n) {
     (e = t.state), 'function' == typeof t.componentWillReceiveProps && t.componentWillReceiveProps(r, n), 'function' == typeof t.UNSAFE_componentWillReceiveProps && t.UNSAFE_componentWillReceiveProps(r, n), t.state !== e && oi.enqueueReplaceState(t, t.state, null);
@@ -7456,7 +7460,7 @@
     var o = e.stateNode;
     (o.props = r), (o.state = e.memoizedState), (o.refs = {}), Za(e);
     var a = t.contextType;
-    'object' == typeof a && null !== a ? (o.context = za(a)) : ((a = To(t) ? zo : Eo.current), (o.context = Lo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), Ha(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
+    'object' == typeof a && null !== a ? (o.context = La(a)) : ((a = To(t) ? Lo : Eo.current), (o.context = zo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), Ua(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
    }
    function ui(e, t) {
     try {
@@ -7485,17 +7489,17 @@
    }
    var hi = 'function' == typeof WeakMap ? WeakMap : Map;
    function bi(e, t, r) {
-    ((r = Ma(-1, r)).tag = 3), (r.payload = { element: null });
+    ((r = Ia(-1, r)).tag = 3), (r.payload = { element: null });
     var n = t.value;
     return (
      (r.callback = function () {
-      Ul || ((Ul = !0), (Vl = n)), di(0, t);
+      Hl || ((Hl = !0), (Vl = n)), di(0, t);
      }),
      r
     );
    }
    function pi(e, t, r) {
-    (r = Ma(-1, r)).tag = 3;
+    (r = Ia(-1, r)).tag = 3;
     var n = e.type.getDerivedStateFromError;
     if ('function' == typeof n) {
      var o = t.value;
@@ -7536,7 +7540,7 @@
     return null;
    }
    function gi(e, t, r, n, o) {
-    return 0 == (1 & e.mode) ? (e === t ? (e.flags |= 65536) : ((e.flags |= 128), (r.flags |= 131072), (r.flags &= -52805), 1 === r.tag && (null === r.alternate ? (r.tag = 17) : (((t = Ma(-1, 1)).tag = 2), Fa(r, t, 1))), (r.lanes |= 1)), e) : ((e.flags |= 65536), (e.lanes = o), e);
+    return 0 == (1 & e.mode) ? (e === t ? (e.flags |= 65536) : ((e.flags |= 128), (r.flags |= 131072), (r.flags &= -52805), 1 === r.tag && (null === r.alternate ? (r.tag = 17) : (((t = Ia(-1, 1)).tag = 2), Fa(r, t, 1))), (r.lanes |= 1)), e) : ((e.flags |= 65536), (e.lanes = o), e);
    }
    var vi = k.ReactCurrentOwner,
     yi = !1;
@@ -7546,16 +7550,16 @@
    function xi(e, t, r, n, o) {
     r = r.render;
     var a = t.ref;
-    return Na(t, o), (n = mc(e, t, r, n, a, o)), (r = gc()), null === e || yi ? (aa && r && ta(t), (t.flags |= 1), ki(e, t, n, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Ui(e, t, o));
+    return Na(t, o), (n = mc(e, t, r, n, a, o)), (r = gc()), null === e || yi ? (aa && r && ta(t), (t.flags |= 1), ki(e, t, n, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
    }
    function wi(e, t, r, n, o) {
     if (null === e) {
      var a = r.type;
-     return 'function' != typeof a || Lu(a) || void 0 !== a.defaultProps || null !== r.compare || void 0 !== r.defaultProps ? (((e = Du(r.type, null, n, t, t.mode, o)).ref = t.ref), (e.return = t), (t.child = e)) : ((t.tag = 15), (t.type = a), _i(e, t, a, n, o));
+     return 'function' != typeof a || zu(a) || void 0 !== a.defaultProps || null !== r.compare || void 0 !== r.defaultProps ? (((e = Du(r.type, null, n, t, t.mode, o)).ref = t.ref), (e.return = t), (t.child = e)) : ((t.tag = 15), (t.type = a), _i(e, t, a, n, o));
     }
     if (((a = e.child), 0 == (e.lanes & o))) {
      var c = a.memoizedProps;
-     if ((r = null !== (r = r.compare) ? r : ln)(c, n) && e.ref === t.ref) return Ui(e, t, o);
+     if ((r = null !== (r = r.compare) ? r : ln)(c, n) && e.ref === t.ref) return Hi(e, t, o);
     }
     return (t.flags |= 1), ((e = Tu(a, n)).ref = t.ref), (e.return = t), (t.child = e);
    }
@@ -7563,7 +7567,7 @@
     if (null !== e) {
      var a = e.memoizedProps;
      if (ln(a, n) && e.ref === t.ref) {
-      if (((yi = !1), (t.pendingProps = n = a), 0 == (e.lanes & o))) return (t.lanes = e.lanes), Ui(e, t, o);
+      if (((yi = !1), (t.pendingProps = n = a), 0 == (e.lanes & o))) return (t.lanes = e.lanes), Hi(e, t, o);
       0 != (131072 & e.flags) && (yi = !0);
      }
     }
@@ -7574,12 +7578,12 @@
      o = n.children,
      a = null !== e ? e.memoizedState : null;
     if ('hidden' === n.mode)
-     if (0 == (1 & t.mode)) (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), Po(Tl, Ll), (Ll |= r);
+     if (0 == (1 & t.mode)) (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), Po(Tl, zl), (zl |= r);
      else {
-      if (0 == (1073741824 & r)) return (e = null !== a ? a.baseLanes | r : r), (t.lanes = t.childLanes = 1073741824), (t.memoizedState = { baseLanes: e, cachePool: null, transitions: null }), (t.updateQueue = null), Po(Tl, Ll), (Ll |= e), null;
-      (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), (n = null !== a ? a.baseLanes : r), Po(Tl, Ll), (Ll |= n);
+      if (0 == (1073741824 & r)) return (e = null !== a ? a.baseLanes | r : r), (t.lanes = t.childLanes = 1073741824), (t.memoizedState = { baseLanes: e, cachePool: null, transitions: null }), (t.updateQueue = null), Po(Tl, zl), (zl |= e), null;
+      (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), (n = null !== a ? a.baseLanes : r), Po(Tl, zl), (zl |= n);
      }
-    else null !== a ? ((n = a.baseLanes | r), (t.memoizedState = null)) : (n = r), Po(Tl, Ll), (Ll |= n);
+    else null !== a ? ((n = a.baseLanes | r), (t.memoizedState = null)) : (n = r), Po(Tl, zl), (zl |= n);
     return ki(e, t, o, r), t.child;
    }
    function ji(e, t) {
@@ -7587,57 +7591,57 @@
     ((null === e && null !== r) || (null !== e && e.ref !== r)) && ((t.flags |= 512), (t.flags |= 2097152));
    }
    function Oi(e, t, r, n, o) {
-    var a = To(r) ? zo : Eo.current;
-    return (a = Lo(t, a)), Na(t, o), (r = mc(e, t, r, n, a, o)), (n = gc()), null === e || yi ? (aa && n && ta(t), (t.flags |= 1), ki(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Ui(e, t, o));
+    var a = To(r) ? Lo : Eo.current;
+    return (a = zo(t, a)), Na(t, o), (r = mc(e, t, r, n, a, o)), (n = gc()), null === e || yi ? (aa && n && ta(t), (t.flags |= 1), ki(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
    }
    function Pi(e, t, r, n, o) {
     if (To(r)) {
      var a = !0;
      Zo(t);
     } else a = !1;
-    if ((Na(t, o), null === t.stateNode)) Hi(e, t), ci(t, r, n), li(t, r, n, o), (n = !0);
+    if ((Na(t, o), null === t.stateNode)) Ui(e, t), ci(t, r, n), li(t, r, n, o), (n = !0);
     else if (null === e) {
      var c = t.stateNode,
       i = t.memoizedProps;
      c.props = i;
      var l = c.context,
       u = r.contextType;
-     'object' == typeof u && null !== u ? (u = za(u)) : (u = Lo(t, (u = To(r) ? zo : Eo.current)));
+     'object' == typeof u && null !== u ? (u = La(u)) : (u = zo(t, (u = To(r) ? Lo : Eo.current)));
      var s = r.getDerivedStateFromProps,
       d = 'function' == typeof s || 'function' == typeof c.getSnapshotBeforeUpdate;
-     d || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== n || l !== u) && ii(t, c, n, u)), (Aa = !1);
+     d || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== n || l !== u) && ii(t, c, n, u)), (Ra = !1);
      var h = t.memoizedState;
-     (c.state = h), Ha(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || No.current || Aa ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Aa || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
+     (c.state = h), Ua(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || No.current || Ra ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Ra || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
     } else {
-     (c = t.stateNode), Ia(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = za(l)) : (l = Lo(t, (l = To(r) ? zo : Eo.current)));
+     (c = t.stateNode), Ma(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = La(l)) : (l = zo(t, (l = To(r) ? Lo : Eo.current)));
      var b = r.getDerivedStateFromProps;
-     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Aa = !1), (h = t.memoizedState), (c.state = h), Ha(t, n, c, o);
+     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Ra = !1), (h = t.memoizedState), (c.state = h), Ua(t, n, c, o);
      var p = t.memoizedState;
-     i !== d || h !== p || No.current || Aa ? ('function' == typeof b && (ni(t, r, b, n), (p = t.memoizedState)), (u = Aa || ai(t, r, u, n, h, p, l) || !1) ? (s || ('function' != typeof c.UNSAFE_componentWillUpdate && 'function' != typeof c.componentWillUpdate) || ('function' == typeof c.componentWillUpdate && c.componentWillUpdate(n, p, l), 'function' == typeof c.UNSAFE_componentWillUpdate && c.UNSAFE_componentWillUpdate(n, p, l)), 'function' == typeof c.componentDidUpdate && (t.flags |= 4), 'function' == typeof c.getSnapshotBeforeUpdate && (t.flags |= 1024)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (t.memoizedProps = n), (t.memoizedState = p)), (c.props = n), (c.state = p), (c.context = l), (n = u)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (n = !1));
+     i !== d || h !== p || No.current || Ra ? ('function' == typeof b && (ni(t, r, b, n), (p = t.memoizedState)), (u = Ra || ai(t, r, u, n, h, p, l) || !1) ? (s || ('function' != typeof c.UNSAFE_componentWillUpdate && 'function' != typeof c.componentWillUpdate) || ('function' == typeof c.componentWillUpdate && c.componentWillUpdate(n, p, l), 'function' == typeof c.UNSAFE_componentWillUpdate && c.UNSAFE_componentWillUpdate(n, p, l)), 'function' == typeof c.componentDidUpdate && (t.flags |= 4), 'function' == typeof c.getSnapshotBeforeUpdate && (t.flags |= 1024)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (t.memoizedProps = n), (t.memoizedState = p)), (c.props = n), (c.state = p), (c.context = l), (n = u)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (n = !1));
     }
     return Si(e, t, r, n, a, o);
    }
    function Si(e, t, r, n, o, a) {
     ji(e, t);
     var c = 0 != (128 & t.flags);
-    if (!n && !c) return o && Io(t, r, !1), Ui(e, t, a);
+    if (!n && !c) return o && Mo(t, r, !1), Hi(e, t, a);
     (n = t.stateNode), (vi.current = t);
     var i = c && 'function' != typeof r.getDerivedStateFromError ? null : n.render();
-    return (t.flags |= 1), null !== e && c ? ((t.child = xa(t, e.child, null, a)), (t.child = xa(t, null, i, a))) : ki(e, t, i, a), (t.memoizedState = n.state), o && Io(t, r, !0), t.child;
+    return (t.flags |= 1), null !== e && c ? ((t.child = xa(t, e.child, null, a)), (t.child = xa(t, null, i, a))) : ki(e, t, i, a), (t.memoizedState = n.state), o && Mo(t, r, !0), t.child;
    }
    function Ei(e) {
     var t = e.stateNode;
-    t.pendingContext ? Ro(0, t.pendingContext, t.pendingContext !== t.context) : t.context && Ro(0, t.context, !1), Ya(e, t.containerInfo);
+    t.pendingContext ? Ao(0, t.pendingContext, t.pendingContext !== t.context) : t.context && Ao(0, t.context, !1), Ya(e, t.containerInfo);
    }
    function Ni(e, t, r, n, o) {
     return pa(), fa(o), (t.flags |= 256), ki(e, t, r, n), t.child;
    }
-   var zi,
-    Li,
+   var Li,
+    zi,
     Ti,
     Di,
-    Ri = { dehydrated: null, treeContext: null, retryLane: 0 };
-   function Ai(e) {
+    Ai = { dehydrated: null, treeContext: null, retryLane: 0 };
+   function Ri(e) {
     return { baseLanes: e, cachePool: null, transitions: null };
    }
    function Zi(e, t, r) {
@@ -7646,14 +7650,14 @@
      c = ec.current,
      i = !1,
      l = 0 != (128 & t.flags);
-    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Po(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Au(l, o, 0, null)), (e = Ru(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ai(r)), (t.memoizedState = Ri), e) : Ii(t, l));
+    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Po(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Ru(l, o, 0, null)), (e = Au(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ri(r)), (t.memoizedState = Ai), e) : Mi(t, l));
     if (null !== (c = e.memoizedState) && null !== (n = c.dehydrated))
      return (function (e, t, r, n, o, c, i) {
-      if (r) return 256 & t.flags ? ((t.flags &= -257), Mi(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Au({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Ru(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ai(i)), (t.memoizedState = Ri), c);
-      if (0 == (1 & t.mode)) return Mi(e, t, i, null);
+      if (r) return 256 & t.flags ? ((t.flags &= -257), Ii(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Ru({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Au(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ri(i)), (t.memoizedState = Ai), c);
+      if (0 == (1 & t.mode)) return Ii(e, t, i, null);
       if ('$!' === o.data) {
        if ((n = o.nextSibling && o.nextSibling.dataset)) var l = n.dgst;
-       return (n = l), Mi(e, t, i, (n = si((c = Error(a(419))), n, void 0)));
+       return (n = l), Ii(e, t, i, (n = si((c = Error(a(419))), n, void 0)));
       }
       if (((l = 0 != (i & e.childLanes)), yi || l)) {
        if (null !== (n = El)) {
@@ -7693,24 +7697,24 @@
          default:
           o = 0;
         }
-        0 !== (o = 0 != (o & (n.suspendedLanes | i)) ? 0 : o) && o !== c.retryLane && ((c.retryLane = o), Ra(e, o), ru(n, e, o, -1));
+        0 !== (o = 0 != (o & (n.suspendedLanes | i)) ? 0 : o) && o !== c.retryLane && ((c.retryLane = o), Aa(e, o), ru(n, e, o, -1));
        }
-       return fu(), Mi(e, t, i, (n = si(Error(a(421)))));
+       return fu(), Ii(e, t, i, (n = si(Error(a(421)))));
       }
-      return '$?' === o.data ? ((t.flags |= 128), (t.child = e.child), (t = Pu.bind(null, e)), (o._reactRetry = t), null) : ((e = c.treeContext), (oa = uo(o.nextSibling)), (na = t), (aa = !0), (ca = null), null !== e && ((Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Qo = e.id), (Xo = e.overflow), (Yo = t)), (t = Ii(t, n.children)), (t.flags |= 4096), t);
+      return '$?' === o.data ? ((t.flags |= 128), (t.child = e.child), (t = Pu.bind(null, e)), (o._reactRetry = t), null) : ((e = c.treeContext), (oa = uo(o.nextSibling)), (na = t), (aa = !0), (ca = null), null !== e && ((Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Qo = e.id), (Xo = e.overflow), (Yo = t)), (t = Mi(t, n.children)), (t.flags |= 4096), t);
      })(e, t, l, o, n, c, r);
     if (i) {
      (i = o.fallback), (l = t.mode), (n = (c = e.child).sibling);
      var u = { mode: 'hidden', children: o.children };
-     return 0 == (1 & l) && t.child !== c ? (((o = t.child).childLanes = 0), (o.pendingProps = u), (t.deletions = null)) : ((o = Tu(c, u)).subtreeFlags = 14680064 & c.subtreeFlags), null !== n ? (i = Tu(n, i)) : ((i = Ru(i, l, r, null)).flags |= 2), (i.return = t), (o.return = t), (o.sibling = i), (t.child = o), (o = i), (i = t.child), (l = null === (l = e.child.memoizedState) ? Ai(r) : { baseLanes: l.baseLanes | r, cachePool: null, transitions: l.transitions }), (i.memoizedState = l), (i.childLanes = e.childLanes & ~r), (t.memoizedState = Ri), o;
+     return 0 == (1 & l) && t.child !== c ? (((o = t.child).childLanes = 0), (o.pendingProps = u), (t.deletions = null)) : ((o = Tu(c, u)).subtreeFlags = 14680064 & c.subtreeFlags), null !== n ? (i = Tu(n, i)) : ((i = Au(i, l, r, null)).flags |= 2), (i.return = t), (o.return = t), (o.sibling = i), (t.child = o), (o = i), (i = t.child), (l = null === (l = e.child.memoizedState) ? Ri(r) : { baseLanes: l.baseLanes | r, cachePool: null, transitions: l.transitions }), (i.memoizedState = l), (i.childLanes = e.childLanes & ~r), (t.memoizedState = Ai), o;
     }
     return (e = (i = e.child).sibling), (o = Tu(i, { mode: 'visible', children: o.children })), 0 == (1 & t.mode) && (o.lanes = r), (o.return = t), (o.sibling = null), null !== e && (null === (r = t.deletions) ? ((t.deletions = [e]), (t.flags |= 16)) : r.push(e)), (t.child = o), (t.memoizedState = null), o;
    }
-   function Ii(e, t) {
-    return ((t = Au({ mode: 'visible', children: t }, e.mode, 0, null)).return = e), (e.child = t);
+   function Mi(e, t) {
+    return ((t = Ru({ mode: 'visible', children: t }, e.mode, 0, null)).return = e), (e.child = t);
    }
-   function Mi(e, t, r, n) {
-    return null !== n && fa(n), xa(t, e.child, null, r), ((e = Ii(t, t.pendingProps.children)).flags |= 2), (t.memoizedState = null), e;
+   function Ii(e, t, r, n) {
+    return null !== n && fa(n), xa(t, e.child, null, r), ((e = Mi(t, t.pendingProps.children)).flags |= 2), (t.memoizedState = null), e;
    }
    function Fi(e, t, r) {
     e.lanes |= t;
@@ -7769,11 +7773,11 @@
      }
     return t.child;
    }
-   function Hi(e, t) {
+   function Ui(e, t) {
     0 == (1 & t.mode) && null !== e && ((e.alternate = null), (t.alternate = null), (t.flags |= 2));
    }
-   function Ui(e, t, r) {
-    if ((null !== e && (t.dependencies = e.dependencies), (Al |= t.lanes), 0 == (r & t.childLanes))) return null;
+   function Hi(e, t, r) {
+    if ((null !== e && (t.dependencies = e.dependencies), (Rl |= t.lanes), 0 == (r & t.childLanes))) return null;
     if (null !== e && t.child !== e.child) throw Error(a(153));
     if (null !== t.child) {
      for (r = Tu((e = t.child), e.pendingProps), t.child = r, r.return = t; null !== e.sibling; ) (e = e.sibling), ((r = r.sibling = Tu(e, e.pendingProps)).return = t);
@@ -7821,7 +7825,7 @@
      case 17:
       return To(t.type) && Do(), qi(t), null;
      case 3:
-      return (n = t.stateNode), Qa(), Oo(No), Oo(Eo), nc(), n.pendingContext && ((n.context = n.pendingContext), (n.pendingContext = null)), (null !== e && null !== e.child) || (ha(t) ? (t.flags |= 4) : null === e || (e.memoizedState.isDehydrated && 0 == (256 & t.flags)) || ((t.flags |= 1024), null !== ca && (cu(ca), (ca = null)))), Li(e, t), qi(t), null;
+      return (n = t.stateNode), Qa(), Oo(No), Oo(Eo), nc(), n.pendingContext && ((n.context = n.pendingContext), (n.pendingContext = null)), (null !== e && null !== e.child) || (ha(t) ? (t.flags |= 4) : null === e || (e.memoizedState.isDehydrated && 0 == (256 & t.flags)) || ((t.flags |= 1024), null !== ca && (cu(ca), (ca = null)))), zi(e, t), qi(t), null;
      case 5:
       Ja(t);
       var o = Ka(Ga.current);
@@ -7836,41 +7840,41 @@
         var c = t.memoizedProps;
         switch (((n[bo] = t), (n[po] = c), (e = 0 != (1 & t.mode)), r)) {
          case 'dialog':
-          Mn('cancel', n), Mn('close', n);
+          In('cancel', n), In('close', n);
           break;
          case 'iframe':
          case 'object':
          case 'embed':
-          Mn('load', n);
+          In('load', n);
           break;
          case 'video':
          case 'audio':
-          for (o = 0; o < Rn.length; o++) Mn(Rn[o], n);
+          for (o = 0; o < An.length; o++) In(An[o], n);
           break;
          case 'source':
-          Mn('error', n);
+          In('error', n);
           break;
          case 'img':
          case 'image':
          case 'link':
-          Mn('error', n), Mn('load', n);
+          In('error', n), In('load', n);
           break;
          case 'details':
-          Mn('toggle', n);
+          In('toggle', n);
           break;
          case 'input':
-          Y(n, c), Mn('invalid', n);
+          Y(n, c), In('invalid', n);
           break;
          case 'select':
-          (n._wrapperState = { wasMultiple: !!c.multiple }), Mn('invalid', n);
+          (n._wrapperState = { wasMultiple: !!c.multiple }), In('invalid', n);
           break;
          case 'textarea':
-          oe(n, c), Mn('invalid', n);
+          oe(n, c), In('invalid', n);
         }
         for (var l in (ve(r, c), (o = null), c))
          if (c.hasOwnProperty(l)) {
           var u = c[l];
-          'children' === l ? ('string' == typeof u ? n.textContent !== u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', u])) : 'number' == typeof u && n.textContent !== '' + u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', '' + u]))) : i.hasOwnProperty(l) && null != u && 'onScroll' === l && Mn('scroll', n);
+          'children' === l ? ('string' == typeof u ? n.textContent !== u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', u])) : 'number' == typeof u && n.textContent !== '' + u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', '' + u]))) : i.hasOwnProperty(l) && null != u && 'onScroll' === l && In('scroll', n);
          }
         switch (r) {
          case 'input':
@@ -7887,50 +7891,50 @@
         }
         (n = o), (t.updateQueue = n), null !== n && (t.flags |= 4);
        } else {
-        (l = 9 === o.nodeType ? o : o.ownerDocument), 'http://www.w3.org/1999/xhtml' === e && (e = ie(r)), 'http://www.w3.org/1999/xhtml' === e ? ('script' === r ? (((e = l.createElement('div')).innerHTML = '<script></script>'), (e = e.removeChild(e.firstChild))) : 'string' == typeof n.is ? (e = l.createElement(r, { is: n.is })) : ((e = l.createElement(r)), 'select' === r && ((l = e), n.multiple ? (l.multiple = !0) : n.size && (l.size = n.size)))) : (e = l.createElementNS(e, r)), (e[bo] = t), (e[po] = n), zi(e, t, !1, !1), (t.stateNode = e);
+        (l = 9 === o.nodeType ? o : o.ownerDocument), 'http://www.w3.org/1999/xhtml' === e && (e = ie(r)), 'http://www.w3.org/1999/xhtml' === e ? ('script' === r ? (((e = l.createElement('div')).innerHTML = '<script></script>'), (e = e.removeChild(e.firstChild))) : 'string' == typeof n.is ? (e = l.createElement(r, { is: n.is })) : ((e = l.createElement(r)), 'select' === r && ((l = e), n.multiple ? (l.multiple = !0) : n.size && (l.size = n.size)))) : (e = l.createElementNS(e, r)), (e[bo] = t), (e[po] = n), Li(e, t, !1, !1), (t.stateNode = e);
         e: {
          switch (((l = ye(r, n)), r)) {
           case 'dialog':
-           Mn('cancel', e), Mn('close', e), (o = n);
+           In('cancel', e), In('close', e), (o = n);
            break;
           case 'iframe':
           case 'object':
           case 'embed':
-           Mn('load', e), (o = n);
+           In('load', e), (o = n);
            break;
           case 'video':
           case 'audio':
-           for (o = 0; o < Rn.length; o++) Mn(Rn[o], e);
+           for (o = 0; o < An.length; o++) In(An[o], e);
            o = n;
            break;
           case 'source':
-           Mn('error', e), (o = n);
+           In('error', e), (o = n);
            break;
           case 'img':
           case 'image':
           case 'link':
-           Mn('error', e), Mn('load', e), (o = n);
+           In('error', e), In('load', e), (o = n);
            break;
           case 'details':
-           Mn('toggle', e), (o = n);
+           In('toggle', e), (o = n);
            break;
           case 'input':
-           Y(e, n), (o = K(e, n)), Mn('invalid', e);
+           Y(e, n), (o = K(e, n)), In('invalid', e);
            break;
           case 'option':
           default:
            o = n;
            break;
           case 'select':
-           (e._wrapperState = { wasMultiple: !!n.multiple }), (o = Z({}, n, { value: void 0 })), Mn('invalid', e);
+           (e._wrapperState = { wasMultiple: !!n.multiple }), (o = Z({}, n, { value: void 0 })), In('invalid', e);
            break;
           case 'textarea':
-           oe(e, n), (o = ne(e, n)), Mn('invalid', e);
+           oe(e, n), (o = ne(e, n)), In('invalid', e);
          }
          for (c in (ve(r, o), (u = o)))
           if (u.hasOwnProperty(c)) {
            var s = u[c];
-           'style' === c ? me(e, s) : 'dangerouslySetInnerHTML' === c ? null != (s = s ? s.__html : void 0) && de(e, s) : 'children' === c ? ('string' == typeof s ? ('textarea' !== r || '' !== s) && he(e, s) : 'number' == typeof s && he(e, '' + s)) : 'suppressContentEditableWarning' !== c && 'suppressHydrationWarning' !== c && 'autoFocus' !== c && (i.hasOwnProperty(c) ? null != s && 'onScroll' === c && Mn('scroll', e) : null != s && y(e, c, s, l));
+           'style' === c ? me(e, s) : 'dangerouslySetInnerHTML' === c ? null != (s = s ? s.__html : void 0) && de(e, s) : 'children' === c ? ('string' == typeof s ? ('textarea' !== r || '' !== s) && he(e, s) : 'number' == typeof s && he(e, '' + s)) : 'suppressContentEditableWarning' !== c && 'suppressHydrationWarning' !== c && 'autoFocus' !== c && (i.hasOwnProperty(c) ? null != s && 'onScroll' === c && In('scroll', e) : null != s && y(e, c, s, l));
           }
          switch (r) {
           case 'input':
@@ -7940,7 +7944,7 @@
            q(e), ce(e);
            break;
           case 'option':
-           null != n.value && e.setAttribute('value', '' + U(n.value));
+           null != n.value && e.setAttribute('value', '' + H(n.value));
            break;
           case 'select':
            (e.multiple = !!n.multiple), null != (c = n.value) ? re(e, !!n.multiple, c, !1) : null != n.defaultValue && re(e, !!n.multiple, n.defaultValue, !0);
@@ -7999,7 +8003,7 @@
       }
       return 0 != (128 & t.flags) ? ((t.lanes = r), t) : ((n = null !== n) !== (null !== e && null !== e.memoizedState) && n && ((t.child.flags |= 8192), 0 != (1 & t.mode) && (null === e || 0 != (1 & ec.current) ? 0 === Dl && (Dl = 3) : fu())), null !== t.updateQueue && (t.flags |= 4), qi(t), null);
      case 4:
-      return Qa(), Li(e, t), null === e && $n(t.stateNode.containerInfo), qi(t), null;
+      return Qa(), zi(e, t), null === e && $n(t.stateNode.containerInfo), qi(t), null;
      case 10:
       return Sa(t.type._context), qi(t), null;
      case 19:
@@ -8027,7 +8031,7 @@
       return null !== c.tail ? ((t = c.tail), (c.rendering = t), (c.tail = t.sibling), (c.renderingStartTime = Qe()), (t.sibling = null), (r = ec.current), Po(ec, n ? (1 & r) | 2 : 1 & r), t) : (qi(t), null);
      case 22:
      case 23:
-      return du(), (n = null !== t.memoizedState), null !== e && (null !== e.memoizedState) !== n && (t.flags |= 8192), n && 0 != (1 & t.mode) ? 0 != (1073741824 & Ll) && (qi(t), 6 & t.subtreeFlags && (t.flags |= 8192)) : qi(t), null;
+      return du(), (n = null !== t.memoizedState), null !== e && (null !== e.memoizedState) !== n && (t.flags |= 8192), n && 0 != (1 & t.mode) ? 0 != (1073741824 & zl) && (qi(t), 6 & t.subtreeFlags && (t.flags |= 8192)) : qi(t), null;
      case 24:
      case 25:
       return null;
@@ -8061,7 +8065,7 @@
       return null;
     }
    }
-   (zi = function (e, t) {
+   (Li = function (e, t) {
     for (var r = t.child; null !== r; ) {
      if (5 === r.tag || 6 === r.tag) e.appendChild(r.stateNode);
      else if (4 !== r.tag && null !== r.child) {
@@ -8076,7 +8080,7 @@
      (r.sibling.return = r.return), (r = r.sibling);
     }
    }),
-    (Li = function () {}),
+    (zi = function () {}),
     (Ti = function (e, t, r, n) {
      var o = e.memoizedProps;
      if (o !== n) {
@@ -8110,7 +8114,7 @@
           for (a in l) !l.hasOwnProperty(a) || (u && u.hasOwnProperty(a)) || (r || (r = {}), (r[a] = ''));
           for (a in u) u.hasOwnProperty(a) && l[a] !== u[a] && (r || (r = {}), (r[a] = u[a]));
          } else r || (c || (c = []), c.push(s, r)), (r = u);
-        else 'dangerouslySetInnerHTML' === s ? ((u = u ? u.__html : void 0), (l = l ? l.__html : void 0), null != u && l !== u && (c = c || []).push(s, u)) : 'children' === s ? ('string' != typeof u && 'number' != typeof u) || (c = c || []).push(s, '' + u) : 'suppressContentEditableWarning' !== s && 'suppressHydrationWarning' !== s && (i.hasOwnProperty(s) ? (null != u && 'onScroll' === s && Mn('scroll', e), c || l === u || (c = [])) : (c = c || []).push(s, u));
+        else 'dangerouslySetInnerHTML' === s ? ((u = u ? u.__html : void 0), (l = l ? l.__html : void 0), null != u && l !== u && (c = c || []).push(s, u)) : 'children' === s ? ('string' != typeof u && 'number' != typeof u) || (c = c || []).push(s, '' + u) : 'suppressContentEditableWarning' !== s && 'suppressHydrationWarning' !== s && (i.hasOwnProperty(s) ? (null != u && 'onScroll' === s && In('scroll', e), c || l === u || (c = [])) : (c = c || []).push(s, u));
       }
       r && (c = c || []).push('style', r);
       var s = c;
@@ -8548,7 +8552,7 @@
             n.componentDidUpdate(o, r.memoizedState, n.__reactInternalSnapshotBeforeUpdate);
            }
           var c = t.updateQueue;
-          null !== c && Ua(t, c, n);
+          null !== c && Ha(t, c, n);
           break;
          case 3:
           var i = t.updateQueue;
@@ -8559,7 +8563,7 @@
              case 1:
               r = t.child.stateNode;
             }
-           Ua(t, i, r);
+           Ha(t, i, r);
           }
           break;
          case 5:
@@ -8698,20 +8702,20 @@
     Sl = 0,
     El = null,
     Nl = null,
-    zl = 0,
     Ll = 0,
+    zl = 0,
     Tl = jo(0),
     Dl = 0,
-    Rl = null,
-    Al = 0,
+    Al = null,
+    Rl = 0,
     Zl = 0,
-    Il = 0,
-    Ml = null,
+    Ml = 0,
+    Il = null,
     Fl = null,
     Bl = 0,
     $l = 1 / 0,
-    Hl = null,
-    Ul = !1,
+    Ul = null,
+    Hl = !1,
     Vl = null,
     ql = null,
     Wl = !1,
@@ -8725,11 +8729,11 @@
     return 0 != (6 & Sl) ? Qe() : -1 !== Xl ? Xl : (Xl = Qe());
    }
    function tu(e) {
-    return 0 == (1 & e.mode) ? 1 : 0 != (2 & Sl) && 0 !== zl ? zl & -zl : null !== ma.transition ? (0 === Jl && (Jl = ft()), Jl) : 0 !== (e = yt) ? e : (e = void 0 === (e = window.event) ? 16 : Yt(e.type));
+    return 0 == (1 & e.mode) ? 1 : 0 != (2 & Sl) && 0 !== Ll ? Ll & -Ll : null !== ma.transition ? (0 === Jl && (Jl = ft()), Jl) : 0 !== (e = yt) ? e : (e = void 0 === (e = window.event) ? 16 : Yt(e.type));
    }
    function ru(e, t, r, n) {
     if (50 < Yl) throw ((Yl = 0), (Ql = null), Error(a(185)));
-    gt(e, r, n), (0 != (2 & Sl) && e === El) || (e === El && (0 == (2 & Sl) && (Zl |= r), 4 === Dl && iu(e, zl)), nu(e, n), 1 === r && 0 === Sl && 0 == (1 & t.mode) && (($l = Qe() + 500), Fo && Ho()));
+    gt(e, r, n), (0 != (2 & Sl) && e === El) || (e === El && (0 == (2 & Sl) && (Zl |= r), 4 === Dl && iu(e, Ll)), nu(e, n), 1 === r && 0 === Sl && 0 == (1 & t.mode) && (($l = Qe() + 500), Fo && Uo()));
    }
    function nu(e, t) {
     var r = e.callbackNode;
@@ -8741,7 +8745,7 @@
       -1 === l ? (0 != (i & r) && 0 == (i & n)) || (o[c] = bt(i, t)) : l <= t && (e.expiredLanes |= i), (a &= ~i);
      }
     })(e, t);
-    var n = ht(e, e === El ? zl : 0);
+    var n = ht(e, e === El ? Ll : 0);
     if (0 === n) null !== r && Ge(r), (e.callbackNode = null), (e.callbackPriority = 0);
     else if (((t = n & -n), e.callbackPriority !== t)) {
      if ((null != r && Ge(r), 1 === t))
@@ -8751,7 +8755,7 @@
          })(lu.bind(null, e))
        : $o(lu.bind(null, e)),
        co(function () {
-        0 == (6 & Sl) && Ho();
+        0 == (6 & Sl) && Uo();
        }),
        (r = null);
      else {
@@ -8778,7 +8782,7 @@
     if (((Xl = -1), (Jl = 0), 0 != (6 & Sl))) throw Error(a(327));
     var r = e.callbackNode;
     if (wu() && e.callbackNode !== r) return null;
-    var n = ht(e, e === El ? zl : 0);
+    var n = ht(e, e === El ? Ll : 0);
     if (0 === n) return null;
     if (0 != (30 & n) || 0 != (n & e.expiredLanes) || t) t = mu(e, n);
     else {
@@ -8786,17 +8790,17 @@
      var o = Sl;
      Sl |= 2;
      var c = pu();
-     for ((El === e && zl === t) || ((Hl = null), ($l = Qe() + 500), hu(e, t)); ; )
+     for ((El === e && Ll === t) || ((Ul = null), ($l = Qe() + 500), hu(e, t)); ; )
       try {
        vu();
        break;
       } catch (l) {
        bu(e, l);
       }
-     Pa(), (jl.current = c), (Sl = o), null !== Nl ? (t = 0) : ((El = null), (zl = 0), (t = Dl));
+     Pa(), (jl.current = c), (Sl = o), null !== Nl ? (t = 0) : ((El = null), (Ll = 0), (t = Dl));
     }
     if (0 !== t) {
-     if ((2 === t && 0 !== (o = pt(e)) && ((n = o), (t = au(e, o))), 1 === t)) throw ((r = Rl), hu(e, 0), iu(e, n), nu(e, Qe()), r);
+     if ((2 === t && 0 !== (o = pt(e)) && ((n = o), (t = au(e, o))), 1 === t)) throw ((r = Al), hu(e, 0), iu(e, n), nu(e, Qe()), r);
      if (6 === t) iu(e, n);
      else {
       if (
@@ -8832,14 +8836,14 @@
         })(o) &&
         (2 === (t = mu(e, n)) && 0 !== (c = pt(e)) && ((n = c), (t = au(e, c))), 1 === t))
       )
-       throw ((r = Rl), hu(e, 0), iu(e, n), nu(e, Qe()), r);
+       throw ((r = Al), hu(e, 0), iu(e, n), nu(e, Qe()), r);
       switch (((e.finishedWork = o), (e.finishedLanes = n), t)) {
        case 0:
        case 1:
         throw Error(a(345));
        case 2:
        case 5:
-        xu(e, Fl, Hl);
+        xu(e, Fl, Ul);
         break;
        case 3:
         if ((iu(e, n), (130023424 & n) === n && 10 < (t = Bl + 500 - Qe()))) {
@@ -8848,10 +8852,10 @@
           eu(), (e.pingedLanes |= e.suspendedLanes & o);
           break;
          }
-         e.timeoutHandle = no(xu.bind(null, e, Fl, Hl), t);
+         e.timeoutHandle = no(xu.bind(null, e, Fl, Ul), t);
          break;
         }
-        xu(e, Fl, Hl);
+        xu(e, Fl, Ul);
         break;
        case 4:
         if ((iu(e, n), (4194240 & n) === n)) break;
@@ -8860,10 +8864,10 @@
          (c = 1 << i), (i = t[i]) > o && (o = i), (n &= ~c);
         }
         if (((n = o), 10 < (n = (120 > (n = Qe() - n) ? 120 : 480 > n ? 480 : 1080 > n ? 1080 : 1920 > n ? 1920 : 3e3 > n ? 3e3 : 4320 > n ? 4320 : 1960 * Cl(n / 1960)) - n))) {
-         e.timeoutHandle = no(xu.bind(null, e, Fl, Hl), n);
+         e.timeoutHandle = no(xu.bind(null, e, Fl, Ul), n);
          break;
         }
-        xu(e, Fl, Hl);
+        xu(e, Fl, Ul);
         break;
        default:
         throw Error(a(329));
@@ -8873,14 +8877,14 @@
     return nu(e, Qe()), e.callbackNode === r ? ou.bind(null, e) : null;
    }
    function au(e, t) {
-    var r = Ml;
+    var r = Il;
     return e.current.memoizedState.isDehydrated && (hu(e, t).flags |= 256), 2 !== (e = mu(e, t)) && ((t = Fl), (Fl = r), null !== t && cu(t)), e;
    }
    function cu(e) {
     null === Fl ? (Fl = e) : Fl.push.apply(Fl, e);
    }
    function iu(e, t) {
-    for (t &= ~Il, t &= ~Zl, e.suspendedLanes |= t, e.pingedLanes &= ~t, e = e.expirationTimes; 0 < t; ) {
+    for (t &= ~Ml, t &= ~Zl, e.suspendedLanes |= t, e.pingedLanes &= ~t, e = e.expirationTimes; 0 < t; ) {
      var r = 31 - ct(t),
       n = 1 << r;
      (e[r] = -1), (t &= ~n);
@@ -8896,9 +8900,9 @@
      var n = pt(e);
      0 !== n && ((t = n), (r = au(e, n)));
     }
-    if (1 === r) throw ((r = Rl), hu(e, 0), iu(e, t), nu(e, Qe()), r);
+    if (1 === r) throw ((r = Al), hu(e, 0), iu(e, t), nu(e, Qe()), r);
     if (6 === r) throw Error(a(345));
-    return (e.finishedWork = e.current.alternate), (e.finishedLanes = t), xu(e, Fl, Hl), nu(e, Qe()), null;
+    return (e.finishedWork = e.current.alternate), (e.finishedLanes = t), xu(e, Fl, Ul), nu(e, Qe()), null;
    }
    function uu(e, t) {
     var r = Sl;
@@ -8906,7 +8910,7 @@
     try {
      return e(t);
     } finally {
-     0 === (Sl = r) && (($l = Qe() + 500), Fo && Ho());
+     0 === (Sl = r) && (($l = Qe() + 500), Fo && Uo());
     }
    }
    function su(e) {
@@ -8918,11 +8922,11 @@
     try {
      if (((Pl.transition = null), (yt = 1), e)) return e();
     } finally {
-     (yt = n), (Pl.transition = r), 0 == (6 & (Sl = t)) && Ho();
+     (yt = n), (Pl.transition = r), 0 == (6 & (Sl = t)) && Uo();
     }
    }
    function du() {
-    (Ll = Tl.current), Oo(Tl);
+    (zl = Tl.current), Oo(Tl);
    }
    function hu(e, t) {
     (e.finishedWork = null), (e.finishedLanes = 0);
@@ -8956,9 +8960,9 @@
       }
       r = r.return;
      }
-    if (((El = e), (Nl = e = Tu(e.current, null)), (zl = Ll = t), (Dl = 0), (Rl = null), (Il = Zl = Al = 0), (Fl = Ml = null), null !== La)) {
-     for (t = 0; t < La.length; t++)
-      if (null !== (n = (r = La[t]).interleaved)) {
+    if (((El = e), (Nl = e = Tu(e.current, null)), (Ll = zl = t), (Dl = 0), (Al = null), (Ml = Zl = Rl = 0), (Fl = Il = null), null !== za)) {
+     for (t = 0; t < za.length; t++)
+      if (null !== (n = (r = za[t]).interleaved)) {
        r.interleaved = null;
        var o = n.next,
         a = r.pending;
@@ -8968,7 +8972,7 @@
        }
        r.pending = n;
       }
-     La = null;
+     za = null;
     }
     return e;
    }
@@ -8984,7 +8988,7 @@
        sc = !1;
       }
       if (((cc = 0), (uc = lc = ic = null), (dc = !1), (hc = 0), (Ol.current = null), null === r || null === r.return)) {
-       (Dl = 1), (Rl = t), (Nl = null);
+       (Dl = 1), (Al = t), (Nl = null);
        break;
       }
       e: {
@@ -8992,7 +8996,7 @@
         i = r.return,
         l = r,
         u = t;
-       if (((t = zl), (l.flags |= 32768), null !== u && 'object' == typeof u && 'function' == typeof u.then)) {
+       if (((t = Ll), (l.flags |= 32768), null !== u && 'object' == typeof u && 'function' == typeof u.then)) {
         var s = u,
          d = l,
          h = d.tag;
@@ -9022,7 +9026,7 @@
          break e;
         }
        }
-       (c = u = ui(u, l)), 4 !== Dl && (Dl = 2), null === Ml ? (Ml = [c]) : Ml.push(c), (c = i);
+       (c = u = ui(u, l)), 4 !== Dl && (Dl = 2), null === Il ? (Il = [c]) : Il.push(c), (c = i);
        do {
         switch (c.tag) {
          case 3:
@@ -9053,13 +9057,13 @@
     return (jl.current = Xc), null === e ? Xc : e;
    }
    function fu() {
-    (0 !== Dl && 3 !== Dl && 2 !== Dl) || (Dl = 4), null === El || (0 == (268435455 & Al) && 0 == (268435455 & Zl)) || iu(El, zl);
+    (0 !== Dl && 3 !== Dl && 2 !== Dl) || (Dl = 4), null === El || (0 == (268435455 & Rl) && 0 == (268435455 & Zl)) || iu(El, Ll);
    }
    function mu(e, t) {
     var r = Sl;
     Sl |= 2;
     var n = pu();
-    for ((El === e && zl === t) || ((Hl = null), hu(e, t)); ; )
+    for ((El === e && Ll === t) || ((Ul = null), hu(e, t)); ; )
      try {
       gu();
       break;
@@ -9067,7 +9071,7 @@
       bu(e, o);
      }
     if ((Pa(), (Sl = r), (jl.current = n), null !== Nl)) throw Error(a(261));
-    return (El = null), (zl = 0), Dl;
+    return (El = null), (Ll = 0), Dl;
    }
    function gu() {
     for (; null !== Nl; ) yu(Nl);
@@ -9076,7 +9080,7 @@
     for (; null !== Nl && !Ke(); ) yu(Nl);
    }
    function yu(e) {
-    var t = _l(e.alternate, e, Ll);
+    var t = _l(e.alternate, e, zl);
     (e.memoizedProps = e.pendingProps), null === t ? ku(e) : (Nl = t), (Ol.current = null);
    }
    function ku(e) {
@@ -9084,7 +9088,7 @@
     do {
      var r = t.alternate;
      if (((e = t.return), 0 == (32768 & t.flags))) {
-      if (null !== (r = Wi(r, t, Ll))) return void (Nl = r);
+      if (null !== (r = Wi(r, t, zl))) return void (Nl = r);
      } else {
       if (null !== (r = Gi(r, t))) return (r.flags &= 32767), void (Nl = r);
       if (null === e) return (Dl = 6), void (Nl = null);
@@ -9123,7 +9127,7 @@
           (t[o] = 0), (n[o] = -1), (e[o] = -1), (r &= ~a);
          }
         })(e, c),
-        e === El && ((Nl = El = null), (zl = 0)),
+        e === El && ((Nl = El = null), (Ll = 0)),
         (0 == (2064 & r.subtreeFlags) && 0 == (2064 & r.flags)) ||
          Wl ||
          ((Wl = !0),
@@ -9140,7 +9144,7 @@
         (Sl |= 4),
          (Ol.current = null),
          (function (e, t) {
-          if (((eo = Ut), bn((e = hn())))) {
+          if (((eo = Ht), bn((e = hn())))) {
            if ('selectionStart' in e) var r = { start: e.selectionStart, end: e.selectionEnd };
            else
             e: {
@@ -9177,7 +9181,7 @@
             }
            r = r || { start: 0, end: 0 };
           } else r = null;
-          for (to = { focusedElem: e, selectionRange: r }, Ut = !1, Xi = t; null !== Xi; )
+          for (to = { focusedElem: e, selectionRange: r }, Ht = !1, Xi = t; null !== Xi; )
            if (((e = (t = Xi).child), 0 != (1028 & t.subtreeFlags) && null !== e)) (e.return = t), (Xi = e);
            else
             for (; null !== Xi; ) {
@@ -9223,7 +9227,7 @@
          })(e, r),
          ml(r, e),
          pn(to),
-         (Ut = !!eo),
+         (Ht = !!eo),
          (to = eo = null),
          (e.current = r),
          vl(r, e, o),
@@ -9246,8 +9250,8 @@
         null !== t)
        )
         for (n = e.onRecoverableError, r = 0; r < t.length; r++) (o = t[r]), n(o.value, { componentStack: o.stack, digest: o.digest });
-       if (Ul) throw ((Ul = !1), (e = Vl), (Vl = null), e);
-       0 != (1 & Kl) && 0 !== e.tag && wu(), (c = e.pendingLanes), 0 != (1 & c) ? (e === Ql ? Yl++ : ((Yl = 0), (Ql = e))) : (Yl = 0), Ho();
+       if (Hl) throw ((Hl = !1), (e = Vl), (Vl = null), e);
+       0 != (1 & Kl) && 0 !== e.tag && wu(), (c = e.pendingLanes), 0 != (1 & c) ? (e === Ql ? Yl++ : ((Yl = 0), (Ql = e))) : (Yl = 0), Uo();
       })(e, t, r, n);
     } finally {
      (Pl.transition = o), (yt = n);
@@ -9359,7 +9363,7 @@
           Xi = l.return;
          }
        }
-       if (((Sl = o), Ho(), at && 'function' == typeof at.onPostCommitFiberRoot))
+       if (((Sl = o), Uo(), at && 'function' == typeof at.onPostCommitFiberRoot))
         try {
          at.onPostCommitFiberRoot(ot, e);
         } catch (w) {}
@@ -9395,12 +9399,12 @@
    }
    function ju(e, t, r) {
     var n = e.pingCache;
-    null !== n && n.delete(t), (t = eu()), (e.pingedLanes |= e.suspendedLanes & r), El === e && (zl & r) === r && (4 === Dl || (3 === Dl && (130023424 & zl) === zl && 500 > Qe() - Bl) ? hu(e, 0) : (Il |= r)), nu(e, t);
+    null !== n && n.delete(t), (t = eu()), (e.pingedLanes |= e.suspendedLanes & r), El === e && (Ll & r) === r && (4 === Dl || (3 === Dl && (130023424 & Ll) === Ll && 500 > Qe() - Bl) ? hu(e, 0) : (Ml |= r)), nu(e, t);
    }
    function Ou(e, t) {
     0 === t && (0 == (1 & e.mode) ? (t = 1) : ((t = st), 0 == (130023424 & (st <<= 1)) && (st = 4194304)));
     var r = eu();
-    null !== (e = Ra(e, t)) && (gt(e, t, r), nu(e, r));
+    null !== (e = Aa(e, t)) && (gt(e, t, r), nu(e, r));
    }
    function Pu(e) {
     var t = e.memoizedState,
@@ -9429,35 +9433,35 @@
    function Nu(e, t, r, n) {
     (this.tag = e), (this.key = r), (this.sibling = this.child = this.return = this.stateNode = this.type = this.elementType = null), (this.index = 0), (this.ref = null), (this.pendingProps = t), (this.dependencies = this.memoizedState = this.updateQueue = this.memoizedProps = null), (this.mode = n), (this.subtreeFlags = this.flags = 0), (this.deletions = null), (this.childLanes = this.lanes = 0), (this.alternate = null);
    }
-   function zu(e, t, r, n) {
+   function Lu(e, t, r, n) {
     return new Nu(e, t, r, n);
    }
-   function Lu(e) {
+   function zu(e) {
     return !(!(e = e.prototype) || !e.isReactComponent);
    }
    function Tu(e, t) {
     var r = e.alternate;
-    return null === r ? (((r = zu(e.tag, t, e.key, e.mode)).elementType = e.elementType), (r.type = e.type), (r.stateNode = e.stateNode), (r.alternate = e), (e.alternate = r)) : ((r.pendingProps = t), (r.type = e.type), (r.flags = 0), (r.subtreeFlags = 0), (r.deletions = null)), (r.flags = 14680064 & e.flags), (r.childLanes = e.childLanes), (r.lanes = e.lanes), (r.child = e.child), (r.memoizedProps = e.memoizedProps), (r.memoizedState = e.memoizedState), (r.updateQueue = e.updateQueue), (t = e.dependencies), (r.dependencies = null === t ? null : { lanes: t.lanes, firstContext: t.firstContext }), (r.sibling = e.sibling), (r.index = e.index), (r.ref = e.ref), r;
+    return null === r ? (((r = Lu(e.tag, t, e.key, e.mode)).elementType = e.elementType), (r.type = e.type), (r.stateNode = e.stateNode), (r.alternate = e), (e.alternate = r)) : ((r.pendingProps = t), (r.type = e.type), (r.flags = 0), (r.subtreeFlags = 0), (r.deletions = null)), (r.flags = 14680064 & e.flags), (r.childLanes = e.childLanes), (r.lanes = e.lanes), (r.child = e.child), (r.memoizedProps = e.memoizedProps), (r.memoizedState = e.memoizedState), (r.updateQueue = e.updateQueue), (t = e.dependencies), (r.dependencies = null === t ? null : { lanes: t.lanes, firstContext: t.firstContext }), (r.sibling = e.sibling), (r.index = e.index), (r.ref = e.ref), r;
    }
    function Du(e, t, r, n, o, c) {
     var i = 2;
-    if (((n = e), 'function' == typeof e)) Lu(e) && (i = 1);
+    if (((n = e), 'function' == typeof e)) zu(e) && (i = 1);
     else if ('string' == typeof e) i = 5;
     else
      e: switch (e) {
       case _:
-       return Ru(r.children, o, c, t);
+       return Au(r.children, o, c, t);
       case C:
        (i = 8), (o |= 8);
        break;
       case j:
-       return ((e = zu(12, r, t, 2 | o)).elementType = j), (e.lanes = c), e;
+       return ((e = Lu(12, r, t, 2 | o)).elementType = j), (e.lanes = c), e;
       case E:
-       return ((e = zu(13, r, t, o)).elementType = E), (e.lanes = c), e;
+       return ((e = Lu(13, r, t, o)).elementType = E), (e.lanes = c), e;
       case N:
-       return ((e = zu(19, r, t, o)).elementType = N), (e.lanes = c), e;
+       return ((e = Lu(19, r, t, o)).elementType = N), (e.lanes = c), e;
       case T:
-       return Au(r, o, c, t);
+       return Ru(r, o, c, t);
       default:
        if ('object' == typeof e && null !== e)
         switch (e.$$typeof) {
@@ -9470,34 +9474,34 @@
          case S:
           i = 11;
           break e;
-         case z:
+         case L:
           i = 14;
           break e;
-         case L:
+         case z:
           (i = 16), (n = null);
           break e;
         }
        throw Error(a(130, null == e ? e : typeof e, ''));
      }
-    return ((t = zu(i, r, t, o)).elementType = e), (t.type = n), (t.lanes = c), t;
-   }
-   function Ru(e, t, r, n) {
-    return ((e = zu(7, e, n, t)).lanes = r), e;
+    return ((t = Lu(i, r, t, o)).elementType = e), (t.type = n), (t.lanes = c), t;
    }
    function Au(e, t, r, n) {
-    return ((e = zu(22, e, n, t)).elementType = T), (e.lanes = r), (e.stateNode = { isHidden: !1 }), e;
+    return ((e = Lu(7, e, n, t)).lanes = r), e;
+   }
+   function Ru(e, t, r, n) {
+    return ((e = Lu(22, e, n, t)).elementType = T), (e.lanes = r), (e.stateNode = { isHidden: !1 }), e;
    }
    function Zu(e, t, r) {
-    return ((e = zu(6, e, null, t)).lanes = r), e;
+    return ((e = Lu(6, e, null, t)).lanes = r), e;
    }
-   function Iu(e, t, r) {
-    return ((t = zu(4, null !== e.children ? e.children : [], e.key, t)).lanes = r), (t.stateNode = { containerInfo: e.containerInfo, pendingChildren: null, implementation: e.implementation }), t;
+   function Mu(e, t, r) {
+    return ((t = Lu(4, null !== e.children ? e.children : [], e.key, t)).lanes = r), (t.stateNode = { containerInfo: e.containerInfo, pendingChildren: null, implementation: e.implementation }), t;
    }
-   function Mu(e, t, r, n, o) {
+   function Iu(e, t, r, n, o) {
     (this.tag = t), (this.containerInfo = e), (this.finishedWork = this.pingCache = this.current = this.pendingChildren = null), (this.timeoutHandle = -1), (this.callbackNode = this.pendingContext = this.context = null), (this.callbackPriority = 0), (this.eventTimes = mt(0)), (this.expirationTimes = mt(-1)), (this.entangledLanes = this.finishedLanes = this.mutableReadLanes = this.expiredLanes = this.pingedLanes = this.suspendedLanes = this.pendingLanes = 0), (this.entanglements = mt(0)), (this.identifierPrefix = n), (this.onRecoverableError = o), (this.mutableSourceEagerHydrationData = null);
    }
    function Fu(e, t, r, n, o, a, c, i, l) {
-    return (e = new Mu(e, t, r, i, l)), 1 === t ? ((t = 1), !0 === a && (t |= 8)) : (t = 0), (a = zu(3, null, null, t)), (e.current = a), (a.stateNode = e), (a.memoizedState = { element: n, isDehydrated: r, cache: null, transitions: null, pendingSuspenseBoundaries: null }), Za(a), e;
+    return (e = new Iu(e, t, r, i, l)), 1 === t ? ((t = 1), !0 === a && (t |= 8)) : (t = 0), (a = Lu(3, null, null, t)), (e.current = a), (a.stateNode = e), (a.memoizedState = { element: n, isDehydrated: r, cache: null, transitions: null, pendingSuspenseBoundaries: null }), Za(a), e;
    }
    function Bu(e) {
     if (!e) return So;
@@ -9521,20 +9525,20 @@
     }
     if (1 === e.tag) {
      var r = e.type;
-     if (To(r)) return Ao(e, r, t);
+     if (To(r)) return Ro(e, r, t);
     }
     return t;
    }
    function $u(e, t, r, n, o, a, c, i, l) {
-    return ((e = Fu(r, n, !0, e, 0, a, 0, i, l)).context = Bu(null)), (r = e.current), ((a = Ma((n = eu()), (o = tu(r)))).callback = null != t ? t : null), Fa(r, a, o), (e.current.lanes = o), gt(e, o, n), nu(e, n), e;
+    return ((e = Fu(r, n, !0, e, 0, a, 0, i, l)).context = Bu(null)), (r = e.current), ((a = Ia((n = eu()), (o = tu(r)))).callback = null != t ? t : null), Fa(r, a, o), (e.current.lanes = o), gt(e, o, n), nu(e, n), e;
    }
-   function Hu(e, t, r, n) {
+   function Uu(e, t, r, n) {
     var o = t.current,
      a = eu(),
      c = tu(o);
-    return (r = Bu(r)), null === t.context ? (t.context = r) : (t.pendingContext = r), ((t = Ma(a, c)).payload = { element: e }), null !== (n = void 0 === n ? null : n) && (t.callback = n), null !== (e = Fa(o, t, c)) && (ru(e, o, c, a), Ba(e, o, c)), c;
+    return (r = Bu(r)), null === t.context ? (t.context = r) : (t.pendingContext = r), ((t = Ia(a, c)).payload = { element: e }), null !== (n = void 0 === n ? null : n) && (t.callback = n), null !== (e = Fa(o, t, c)) && (ru(e, o, c, a), Ba(e, o, c)), c;
    }
-   function Uu(e) {
+   function Hu(e) {
     return (e = e.current).child ? (e.child.tag, e.child.stateNode) : null;
    }
    function Vu(e, t) {
@@ -9573,7 +9577,7 @@
            Po(_a, n._currentValue), (n._currentValue = o);
            break;
           case 13:
-           if (null !== (n = t.memoizedState)) return null !== n.dehydrated ? (Po(ec, 1 & ec.current), (t.flags |= 128), null) : 0 != (r & t.child.childLanes) ? Zi(e, t, r) : (Po(ec, 1 & ec.current), null !== (e = Ui(e, t, r)) ? e.sibling : null);
+           if (null !== (n = t.memoizedState)) return null !== n.dehydrated ? (Po(ec, 1 & ec.current), (t.flags |= 128), null) : 0 != (r & t.child.childLanes) ? Zi(e, t, r) : (Po(ec, 1 & ec.current), null !== (e = Hi(e, t, r)) ? e.sibling : null);
            Po(ec, 1 & ec.current);
            break;
           case 19:
@@ -9587,7 +9591,7 @@
           case 23:
            return (t.lanes = 0), Ci(e, t, r);
          }
-         return Ui(e, t, r);
+         return Hi(e, t, r);
         })(e, t, r)
        );
       yi = 0 != (131072 & e.flags);
@@ -9596,8 +9600,8 @@
     switch (((t.lanes = 0), t.tag)) {
      case 2:
       var n = t.type;
-      Hi(e, t), (e = t.pendingProps);
-      var o = Lo(t, Eo.current);
+      Ui(e, t), (e = t.pendingProps);
+      var o = zo(t, Eo.current);
       Na(t, r), (o = mc(null, t, n, e, o, r));
       var c = gc();
       return (t.flags |= 1), 'object' == typeof o && null !== o && 'function' == typeof o.render && void 0 === o.$$typeof ? ((t.tag = 1), (t.memoizedState = null), (t.updateQueue = null), To(n) ? ((c = !0), Zo(t)) : (c = !1), (t.memoizedState = null !== o.state && void 0 !== o.state ? o.state : null), Za(t), (o.updater = oi), (t.stateNode = o), (o._reactInternals = t), li(t, n, e, r), (t = Si(null, t, n, !0, c, r))) : ((t.tag = 0), aa && c && ta(t), ki(null, t, o, r), (t = t.child)), t;
@@ -9605,16 +9609,16 @@
       n = t.elementType;
       e: {
        switch (
-        (Hi(e, t),
+        (Ui(e, t),
         (e = t.pendingProps),
         (n = (o = n._init)(n._payload)),
         (t.type = n),
         (o = t.tag =
          (function (e) {
-          if ('function' == typeof e) return Lu(e) ? 1 : 0;
+          if ('function' == typeof e) return zu(e) ? 1 : 0;
           if (null != e) {
            if ((e = e.$$typeof) === S) return 11;
-           if (e === z) return 14;
+           if (e === L) return 14;
           }
           return 2;
          })(n)),
@@ -9644,7 +9648,7 @@
      case 3:
       e: {
        if ((Ei(t), null === e)) throw Error(a(387));
-       (n = t.pendingProps), (o = (c = t.memoizedState).element), Ia(e, t), Ha(t, n, null, r);
+       (n = t.pendingProps), (o = (c = t.memoizedState).element), Ma(e, t), Ua(t, n, null, r);
        var i = t.memoizedState;
        if (((n = i.element), c.isDehydrated)) {
         if (((c = { element: n, isDehydrated: !1, cache: i.cache, pendingSuspenseBoundaries: i.pendingSuspenseBoundaries, transitions: i.transitions }), (t.updateQueue.baseState = c), (t.memoizedState = c), 256 & t.flags)) {
@@ -9658,7 +9662,7 @@
         for (oa = uo(t.stateNode.containerInfo.firstChild), na = t, aa = !0, ca = null, r = wa(t, null, n, r), t.child = r; r; ) (r.flags = (-3 & r.flags) | 4096), (r = r.sibling);
        } else {
         if ((pa(), n === o)) {
-         t = Ui(e, t, r);
+         t = Hi(e, t, r);
          break e;
         }
         ki(e, t, n, r);
@@ -9686,7 +9690,7 @@
        if (((n = t.type._context), (o = t.pendingProps), (c = t.memoizedProps), (i = o.value), Po(_a, n._currentValue), (n._currentValue = i), null !== c))
         if (cn(c.value, i)) {
          if (c.children === o.children && !No.current) {
-          t = Ui(e, t, r);
+          t = Hi(e, t, r);
           break e;
          }
         } else
@@ -9697,7 +9701,7 @@
            for (var u = l.firstContext; null !== u; ) {
             if (u.context === n) {
              if (1 === c.tag) {
-              (u = Ma(-1, r & -r)).tag = 2;
+              (u = Ia(-1, r & -r)).tag = 2;
               var s = c.updateQueue;
               if (null !== s) {
                var d = (s = s.shared).pending;
@@ -9733,13 +9737,13 @@
       }
       return t;
      case 9:
-      return (o = t.type), (n = t.pendingProps.children), Na(t, r), (n = n((o = za(o)))), (t.flags |= 1), ki(e, t, n, r), t.child;
+      return (o = t.type), (n = t.pendingProps.children), Na(t, r), (n = n((o = La(o)))), (t.flags |= 1), ki(e, t, n, r), t.child;
      case 14:
       return (o = ri((n = t.type), t.pendingProps)), wi(e, t, n, (o = ri(n.type, o)), r);
      case 15:
       return _i(e, t, t.type, t.pendingProps, r);
      case 17:
-      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), Hi(e, t), (t.tag = 1), To(n) ? ((e = !0), Zo(t)) : (e = !1), Na(t, r), ci(t, n, o), li(t, n, o, r), Si(null, t, n, !0, e, r);
+      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), Ui(e, t), (t.tag = 1), To(n) ? ((e = !0), Zo(t)) : (e = !1), Na(t, r), ci(t, n, o), li(t, n, o, r), Si(null, t, n, !0, e, r);
      case 19:
       return $i(e, t, r);
      case 22:
@@ -9773,18 +9777,18 @@
      if ('function' == typeof o) {
       var i = o;
       o = function () {
-       var e = Uu(c);
+       var e = Hu(c);
        i.call(e);
       };
      }
-     Hu(t, c, e, o);
+     Uu(t, c, e, o);
     } else
      c = (function (e, t, r, n, o) {
       if (o) {
        if ('function' == typeof n) {
         var a = n;
         n = function () {
-         var e = Uu(c);
+         var e = Hu(c);
          a.call(e);
         };
        }
@@ -9795,7 +9799,7 @@
       if ('function' == typeof n) {
        var i = n;
        n = function () {
-        var e = Uu(l);
+        var e = Hu(l);
         i.call(e);
        };
       }
@@ -9805,18 +9809,18 @@
        (e[fo] = l.current),
        $n(8 === e.nodeType ? e.parentNode : e),
        su(function () {
-        Hu(t, l, r, n);
+        Uu(t, l, r, n);
        }),
        l
       );
      })(r, t, e, o, n);
-    return Uu(c);
+    return Hu(c);
    }
    (Ku.prototype.render = Gu.prototype.render =
     function (e) {
      var t = this._internalRoot;
      if (null === t) throw Error(a(409));
-     Hu(e, t, null, null);
+     Uu(e, t, null, null);
     }),
     (Ku.prototype.unmount = Gu.prototype.unmount =
      function () {
@@ -9825,7 +9829,7 @@
        this._internalRoot = null;
        var t = e.containerInfo;
        su(function () {
-        Hu(null, e, null, null);
+        Uu(null, e, null, null);
        }),
         (t[fo] = null);
       }
@@ -9844,12 +9848,12 @@
        var t = e.stateNode;
        if (t.current.memoizedState.isDehydrated) {
         var r = dt(t.pendingLanes);
-        0 !== r && (vt(t, 1 | r), nu(t, Qe()), 0 == (6 & Sl) && (($l = Qe() + 500), Ho()));
+        0 !== r && (vt(t, 1 | r), nu(t, Qe()), 0 == (6 & Sl) && (($l = Qe() + 500), Uo()));
        }
        break;
       case 13:
        su(function () {
-        var t = Ra(e, 1);
+        var t = Aa(e, 1);
         if (null !== t) {
          var r = eu();
          ru(t, e, 1, r);
@@ -9860,7 +9864,7 @@
     }),
     (wt = function (e) {
      if (13 === e.tag) {
-      var t = Ra(e, 134217728);
+      var t = Aa(e, 134217728);
       if (null !== t) ru(t, e, 134217728, eu());
       qu(e, 134217728);
      }
@@ -9868,7 +9872,7 @@
     (_t = function (e) {
      if (13 === e.tag) {
       var t = tu(e),
-       r = Ra(e, t);
+       r = Aa(e, t);
       if (null !== r) ru(r, e, t, eu());
       qu(e, t);
      }
@@ -10232,7 +10236,7 @@
     N = function (e) {
      return Array.isArray(e) ? e.join('') : e;
     },
-    z = function (e, t) {
+    L = function (e, t) {
      return Array.isArray(e)
       ? e.reduce(
          function (e, r) {
@@ -10250,7 +10254,7 @@
         )
       : { default: e };
     },
-    L = function (e, t) {
+    z = function (e, t) {
      var r;
      return h({}, e, (((r = {})[t] = void 0), r));
     },
@@ -10258,13 +10262,13 @@
     D = function (e, t) {
      return void 0 === t && (t = !0), !1 === t ? String(e) : String(e).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
     },
-    R = function (e) {
+    A = function (e) {
      return Object.keys(e).reduce(function (t, r) {
       var n = void 0 !== e[r] ? r + '="' + e[r] + '"' : '' + r;
       return t ? t + ' ' + n : n;
      }, '');
     },
-    A = function (e, t) {
+    R = function (e, t) {
      return (
       void 0 === t && (t = {}),
       Object.keys(e).reduce(function (t, r) {
@@ -10285,17 +10289,17 @@
       );
      });
     },
-    I = function (e, t, r) {
+    M = function (e, t, r) {
      switch (e) {
       case m.TITLE:
        return {
         toComponent: function () {
-         return (r = t.titleAttributes), ((o = { key: (e = t.title) })['data-rh'] = !0), (a = A(r, o)), [n.createElement(m.TITLE, a, e)];
+         return (r = t.titleAttributes), ((o = { key: (e = t.title) })['data-rh'] = !0), (a = R(r, o)), [n.createElement(m.TITLE, a, e)];
          var e, r, o, a;
         },
         toString: function () {
          return (function (e, t, r, n) {
-          var o = R(r),
+          var o = A(r),
            a = N(t);
           return o ? '<' + e + ' data-rh="true" ' + o + '>' + D(a, n) + '</' + e + '>' : '<' + e + ' data-rh="true">' + D(a, n) + '</' + e + '>';
          })(e, t.title, t.titleAttributes, r);
@@ -10305,10 +10309,10 @@
       case 'htmlAttributes':
        return {
         toComponent: function () {
-         return A(t);
+         return R(t);
         },
         toString: function () {
-         return R(t);
+         return A(t);
         },
        };
       default:
@@ -10336,7 +10340,7 @@
        };
      }
     },
-    M = function (e) {
+    I = function (e) {
      var t = e.baseTag,
       r = e.bodyAttributes,
       n = e.encode,
@@ -10360,16 +10364,16 @@
        var t = e.linkTags,
         r = e.scriptTags,
         n = e.encode,
-        o = z(e.metaTags, y),
-        a = z(t, g),
-        c = z(r, v);
+        o = L(e.metaTags, y),
+        a = L(t, g),
+        c = L(r, v);
        return {
         priorityMethods: {
          toComponent: function () {
           return [].concat(Z(m.META, o.priority), Z(m.LINK, a.priority), Z(m.SCRIPT, c.priority));
          },
          toString: function () {
-          return I(m.META, o.priority, n) + ' ' + I(m.LINK, a.priority, n) + ' ' + I(m.SCRIPT, c.priority, n);
+          return M(m.META, o.priority, n) + ' ' + M(m.LINK, a.priority, n) + ' ' + M(m.SCRIPT, c.priority, n);
          },
         },
         metaTags: o.default,
@@ -10379,7 +10383,7 @@
       })(e);
       (b = p.priorityMethods), (s = p.linkTags), (d = p.metaTags), (h = p.scriptTags);
      }
-     return { priority: b, base: I(m.BASE, t, n), bodyAttributes: I('bodyAttributes', r, n), htmlAttributes: I('htmlAttributes', o, n), link: I(m.LINK, s, n), meta: I(m.META, d, n), noscript: I(m.NOSCRIPT, a, n), script: I(m.SCRIPT, h, n), style: I(m.STYLE, c, n), title: I(m.TITLE, { title: l, titleAttributes: u }, n) };
+     return { priority: b, base: M(m.BASE, t, n), bodyAttributes: M('bodyAttributes', r, n), htmlAttributes: M('htmlAttributes', o, n), link: M(m.LINK, s, n), meta: M(m.META, d, n), noscript: M(m.NOSCRIPT, a, n), script: M(m.SCRIPT, h, n), style: M(m.STYLE, c, n), title: M(m.TITLE, { title: l, titleAttributes: u }, n) };
     },
     F = [],
     B = function (e, t) {
@@ -10405,11 +10409,11 @@
       }),
       (this.context = e),
       (this.canUseDOM = t),
-      t || (e.helmet = M({ baseTag: [], bodyAttributes: {}, encodeSpecialCharacters: !0, htmlAttributes: {}, linkTags: [], metaTags: [], noscriptTags: [], scriptTags: [], styleTags: [], title: '', titleAttributes: {} }));
+      t || (e.helmet = I({ baseTag: [], bodyAttributes: {}, encodeSpecialCharacters: !0, htmlAttributes: {}, linkTags: [], metaTags: [], noscriptTags: [], scriptTags: [], styleTags: [], title: '', titleAttributes: {} }));
     },
     $ = n.createContext({}),
-    H = a().shape({ setHelmet: a().func, helmetInstances: a().shape({ get: a().func, add: a().func, remove: a().func }) }),
-    U = 'undefined' != typeof document,
+    U = a().shape({ setHelmet: a().func, helmetInstances: a().shape({ get: a().func, add: a().func, remove: a().func }) }),
+    H = 'undefined' != typeof document,
     V = (function (e) {
      function t(r) {
       var n;
@@ -10423,7 +10427,7 @@
       t
      );
     })(n.Component);
-   (V.canUseDOM = U), (V.propTypes = { context: a().shape({ helmet: a().shape() }), children: a().node.isRequired }), (V.defaultProps = { context: {} }), (V.displayName = 'HelmetProvider');
+   (V.canUseDOM = H), (V.propTypes = { context: a().shape({ helmet: a().shape() }), children: a().node.isRequired }), (V.defaultProps = { context: {} }), (V.displayName = 'HelmetProvider');
    var q = function (e, t) {
      var r,
       n = document.head || document.querySelector(m.HEAD),
@@ -10534,7 +10538,7 @@
               });
              }))
            : (G(t), (K = null)))
-        : M && (o = M(a)),
+        : I && (o = I(a)),
         n(o);
       }),
       (r.init = function () {
@@ -10546,7 +10550,7 @@
       t
      );
     })(n.Component);
-   (Y.propTypes = { context: H.isRequired }), (Y.displayName = 'HelmetDispatcher');
+   (Y.propTypes = { context: U.isRequired }), (Y.displayName = 'HelmetDispatcher');
    var Q = ['children'],
     X = ['children'],
     J = (function (e) {
@@ -10557,7 +10561,7 @@
      var r = t.prototype;
      return (
       (r.shouldComponentUpdate = function (e) {
-       return !i()(L(this.props, 'helmetData'), L(e, 'helmetData'));
+       return !i()(z(this.props, 'helmetData'), z(e, 'helmetData'));
       }),
       (r.mapNestedChildrenToProps = function (e, t) {
        if (!t) return null;
@@ -10943,7 +10947,7 @@
       S = P ? (0, n.LX)(r.pathname, { path: P, exact: f, sensitive: x, strict: w }) : null,
       E = !!(y ? y(S, r) : S),
       N = 'function' == typeof p ? p(E) : p,
-      z = 'function' == typeof _ ? _(E) : _;
+      L = 'function' == typeof _ ? _(E) : _;
      E &&
       ((N = (function () {
        for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
@@ -10953,15 +10957,15 @@
         })
         .join(' ');
       })(N, s)),
-      (z = (0, i.Z)({}, z, b)));
-     var L = (0, i.Z)({ 'aria-current': (E && o) || null, className: N, style: z, to: c }, O);
-     return g !== v ? (L.ref = t || j) : (L.innerRef = j), a.createElement(m, L);
+      (L = (0, i.Z)({}, L, b)));
+     var z = (0, i.Z)({ 'aria-current': (E && o) || null, className: N, style: L, to: c }, O);
+     return g !== v ? (z.ref = t || j) : (z.innerRef = j), a.createElement(m, z);
     });
    });
   },
   3225: (e, t, r) => {
    'use strict';
-   r.d(t, { AW: () => C, F0: () => y, LX: () => _, TH: () => T, k6: () => L, rs: () => N, s6: () => v });
+   r.d(t, { AW: () => C, F0: () => y, LX: () => _, TH: () => T, k6: () => z, rs: () => N, s6: () => v });
    var n = r(38156),
     o = r(75271),
     a = r(40507),
@@ -11243,12 +11247,12 @@
      t
     );
    })(o.Component);
-   var z = o.useContext;
-   function L() {
-    return z(g);
+   var L = o.useContext;
+   function z() {
+    return L(g);
    }
    function T() {
-    return z(v).location;
+    return L(v).location;
    }
   },
   38193: (e, t, r) => {
@@ -11410,7 +11414,7 @@
      n
     );
    }
-   function z(e) {
+   function L(e) {
     if (-1 === e._status) {
      var t = e._result;
      (t = t()).then(
@@ -11426,10 +11430,10 @@
     if (1 === e._status) return e._result.default;
     throw e._result;
    }
-   var L = { current: null },
+   var z = { current: null },
     T = { transition: null },
-    D = { ReactCurrentDispatcher: L, ReactCurrentBatchConfig: T, ReactCurrentOwner: _ };
-   function R() {
+    D = { ReactCurrentDispatcher: z, ReactCurrentBatchConfig: T, ReactCurrentOwner: _ };
+   function A() {
     throw Error('act(...) is not supported in production builds of React.');
    }
    (t.Children = {
@@ -11471,7 +11475,7 @@
     (t.StrictMode = a),
     (t.Suspense = s),
     (t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = D),
-    (t.act = R),
+    (t.act = A),
     (t.cloneElement = function (e, t, n) {
      if (null == e) throw Error('React.cloneElement(...): The argument must be a React element, but you passed ' + e + '.');
      var o = f({}, e.props),
@@ -11507,7 +11511,7 @@
     }),
     (t.isValidElement = O),
     (t.lazy = function (e) {
-     return { $$typeof: h, _payload: { _status: -1, _result: e }, _init: z };
+     return { $$typeof: h, _payload: { _status: -1, _result: e }, _init: L };
     }),
     (t.memo = function (e, t) {
      return { $$typeof: d, type: e, compare: void 0 === t ? null : t };
@@ -11521,49 +11525,49 @@
       T.transition = t;
      }
     }),
-    (t.unstable_act = R),
+    (t.unstable_act = A),
     (t.useCallback = function (e, t) {
-     return L.current.useCallback(e, t);
+     return z.current.useCallback(e, t);
     }),
     (t.useContext = function (e) {
-     return L.current.useContext(e);
+     return z.current.useContext(e);
     }),
     (t.useDebugValue = function () {}),
     (t.useDeferredValue = function (e) {
-     return L.current.useDeferredValue(e);
+     return z.current.useDeferredValue(e);
     }),
     (t.useEffect = function (e, t) {
-     return L.current.useEffect(e, t);
+     return z.current.useEffect(e, t);
     }),
     (t.useId = function () {
-     return L.current.useId();
+     return z.current.useId();
     }),
     (t.useImperativeHandle = function (e, t, r) {
-     return L.current.useImperativeHandle(e, t, r);
+     return z.current.useImperativeHandle(e, t, r);
     }),
     (t.useInsertionEffect = function (e, t) {
-     return L.current.useInsertionEffect(e, t);
+     return z.current.useInsertionEffect(e, t);
     }),
     (t.useLayoutEffect = function (e, t) {
-     return L.current.useLayoutEffect(e, t);
+     return z.current.useLayoutEffect(e, t);
     }),
     (t.useMemo = function (e, t) {
-     return L.current.useMemo(e, t);
+     return z.current.useMemo(e, t);
     }),
     (t.useReducer = function (e, t, r) {
-     return L.current.useReducer(e, t, r);
+     return z.current.useReducer(e, t, r);
     }),
     (t.useRef = function (e) {
-     return L.current.useRef(e);
+     return z.current.useRef(e);
     }),
     (t.useState = function (e) {
-     return L.current.useState(e);
+     return z.current.useState(e);
     }),
     (t.useSyncExternalStore = function (e, t, r) {
-     return L.current.useSyncExternalStore(e, t, r);
+     return z.current.useSyncExternalStore(e, t, r);
     }),
     (t.useTransition = function () {
-     return L.current.useTransition();
+     return z.current.useTransition();
     }),
     (t.version = '18.3.1');
   },
@@ -11705,11 +11709,11 @@
      y(N);
     };
    else if ('undefined' != typeof MessageChannel) {
-    var z = new MessageChannel(),
-     L = z.port2;
-    (z.port1.onmessage = N),
+    var L = new MessageChannel(),
+     z = L.port2;
+    (L.port1.onmessage = N),
      (_ = function () {
-      L.postMessage(null);
+      z.postMessage(null);
      });
    } else
     _ = function () {
@@ -11847,7 +11851,7 @@
     title: 'NL Design System',
     tagline: 'E\xe9n design system voor alle huisstijlen',
     url: 'https://nldesignsystem.nl',
-    baseUrl: '/en/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -12139,7 +12143,7 @@
   },
   78187: (e, t, r) => {
    'use strict';
-   r.d(t, { AS: () => va, B6: () => Le, BB: () => We, Bc: () => yt, Cd: () => fr, EK: () => Ce, EU: () => Yn, Ee: () => Dr, GS: () => gn, JH: () => En, JO: () => Or, OX: () => yr, Ou: () => He, Pj: () => bn, QD: () => _t, QI: () => pa, Qu: () => ne, Qv: () => ft, RM: () => zo, SC: () => Jo, Tg: () => ko, Ux: () => xn, Wi: () => Pt, X6: () => y, XJ: () => Jt, XZ: () => ke, aC: () => nr, by: () => dr, dn: () => Se, fE: () => ia, gx: () => na, hE: () => de, iA: () => Po, j$: () => ct, k8: () => ir, lX: () => It, nL: () => Kt, nv: () => Mn, pg: () => dt, pj: () => Io, pu: () => Vt, rU: () => G, sc: () => ae, ue: () => zt, xD: () => Vo, xs: () => Ko, yY: () => ce, zx: () => f });
+   r.d(t, { AS: () => va, B6: () => ze, BB: () => We, Bc: () => yt, Cd: () => fr, EK: () => Ce, EU: () => Yn, Ee: () => Dr, GS: () => gn, JH: () => En, JO: () => Or, OX: () => yr, Ou: () => Ue, Pj: () => bn, QD: () => _t, QI: () => pa, Qu: () => ne, Qv: () => ft, RM: () => Lo, SC: () => Jo, Tg: () => ko, Ux: () => xn, Wi: () => Pt, X6: () => y, XJ: () => Jt, XZ: () => ke, aC: () => nr, by: () => dr, dn: () => Se, fE: () => ia, gx: () => na, hE: () => de, iA: () => Po, j$: () => ct, k8: () => ir, lX: () => Mt, nL: () => Kt, nv: () => In, pg: () => dt, pj: () => Mo, pu: () => Vt, rU: () => G, sc: () => ae, ue: () => Lt, xD: () => Vo, xs: () => Ko, yY: () => ce, zx: () => f });
    var n = r(11130),
     o = r(25940),
     a = r(12177),
@@ -12291,10 +12295,10 @@
       E = { className: (0, l.Z)('utrecht-accordion__panel', { 'utrecht-accordion__panel--expanded': b }), hidden: !b, 'aria-hidden': !b },
       N = O || (null === O ? null : (0, i.jsx)(C, {}));
      'utrecht' === P && (N = null);
-     var z = 'utrecht-accordion',
-      L = r || (0, c.useId)(),
-      T = ''.concat(z).concat(L, '-button'),
-      D = ''.concat(z).concat(L, '-panel');
+     var L = 'utrecht-accordion',
+      z = r || (0, c.useId)(),
+      T = ''.concat(L).concat(z, '-button'),
+      D = ''.concat(L).concat(z, '-panel');
      return (0, i.jsxs)(
       'div',
       _(
@@ -12494,7 +12498,7 @@
    }).displayName = 'Alert';
    d('.utrecht-alert-dialog:not(dialog:not([open])){--utrecht-alert-dialog-margin-block-start:auto;--utrecht-alert-dialog-margin-block-end:auto;background-color:var(--_utrecht-alert-background-color,var(--utrecht-alert-background-color));border-color:var(--utrecht-alert-dialog-border-color);border-radius:var(--utrecht-alert-border-radius,0);border-radius:var(--utrecht-alert-dialog-border-radius,0);border-style:solid;border-width:var(--utrecht-alert-dialog-border-width,0);box-shadow:var(--utrecht-alert-dialog-box-shadow);color:var(--_utrecht-alert-color,var(--utrecht-alert-color));display:grid;gap:var(--utrecht-alert-icon-gap);grid-template-areas:"icon message";grid-template-columns:0fr 100fr;margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-alert-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-alert-margin-block-start, 0));max-block-size:var(--utrecht-alert-dialog-max-block-size);max-inline-size:var(--utrecht-alert-dialog-max-inline-size);min-block-size:var(--utrecht-alert-dialog-min-block-size);min-inline-size:var(--utrecht-alert-dialog-min-inline-size);padding-block-end:var(--utrecht-alert-padding-block-end);padding-block-start:var(--utrecht-alert-padding-block-start);padding-inline-end:var(--utrecht-alert-padding-inline-end);padding-inline-start:var(--utrecht-alert-padding-inline-start)}.utrecht-alert-dialog::backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-opacity);--_utrecht-backdrop-fade-in-animation-duration:var(--utrecht-backdrop-fade-in-animation-duration,0);animation-duration:min(var(--utrecht-motion-max-animation-duration,var(--_utrecht-backdrop-fade-in-animation-duration)),var(--_utrecht-backdrop-fade-in-animation-duration,0));animation-name:utrecht-backdrop-fade-in;animation-timing-function:ease-in-out;background-color:var(--utrecht-backdrop-background-color);color:var(--utrecht-backdrop-color);opacity:var(--_utrecht-backdrop-opacity);-webkit-user-select:none;user-select:none}@keyframes utrecht-backdrop-fade-in{0%{opacity:0}to{opacity:var(--_utrecht-backdrop-opacity)}}@media (prefers-reduced-motion:reduce){.utrecht-alert-dialog::backdrop{--_utrecht-backdrop-fade-in-animation-duration:0}}@media (prefers-reduced-transparency:reduce){.utrecht-alert-dialog::backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-reduced-transparency-opacity,100%)}}.utrecht-alert-dialog__icon{--utrecht-icon-color:var(--_utrecht-alert-icon-color,var(--utrecht-alert-icon-color));grid-area:icon}.utrecht-alert-dialog__message{grid-area:message}.utrecht-alert-dialog--error{--_utrecht-alert-icon-color:var(--utrecht-alert-icon-error-color);--_utrecht-alert-background-color:var(--utrecht-alert-error-background-color);--_utrecht-alert-border-color:var(--utrecht-alert-error-border-color);--_utrecht-alert-border-width:var(--utrecht-alert-error-border-width);--_utrecht-alert-color:var(--utrecht-alert-error-color)}.utrecht-alert-dialog--info{--_utrecht-alert-icon-color:var(--utrecht-alert-icon-info-color);--_utrecht-alert-background-color:var(--utrecht-alert-info-background-color);--_utrecht-alert-border-color:var(--utrecht-alert-info-border-color);--_utrecht-alert-border-width:var(--utrecht-alert-info-border-width);--_utrecht-alert-color:var(--utrecht-alert-info-color)}.utrecht-alert-dialog--warning{--_utrecht-alert-icon-color:var(--utrecht-alert-icon-warning-color);--_utrecht-alert-background-color:var(--utrecht-alert-warning-background-color);--_utrecht-alert-border-color:var(--utrecht-alert-warning-border-color);--_utrecht-alert-border-width:var(--utrecht-alert-warning-border-width);--_utrecht-alert-color:var(--utrecht-alert-warning-color)}');
    var N = ['children', 'className', 'icon', 'type'];
-   function z(e, t) {
+   function L(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -12506,16 +12510,16 @@
     }
     return r;
    }
-   function L(e) {
+   function z(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? z(Object(r), !0).forEach(function (t) {
+      ? L(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : z(Object(r)).forEach(function (t) {
+        : L(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -12527,7 +12531,7 @@
      o = e.icon,
      c = e.type,
      u = (0, a.Z)(e, N);
-    return (0, i.jsxs)('dialog', L(L({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-alert-dialog', { 'utrecht-alert-dialog--error': 'error' === c, 'utrecht-alert-dialog--info': 'info' === c, 'utrecht-alert-dialog--warning': 'warning' === c, className: n }), children: [o && (0, i.jsx)('div', { className: 'utrecht-alert-dialog__icon', children: o }), (0, i.jsx)('div', { className: 'utrecht-alert-dialog__message', children: r })] }));
+    return (0, i.jsxs)('dialog', z(z({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-alert-dialog', { 'utrecht-alert-dialog--error': 'error' === c, 'utrecht-alert-dialog--info': 'info' === c, 'utrecht-alert-dialog--warning': 'warning' === c, className: n }), children: [o && (0, i.jsx)('div', { className: 'utrecht-alert-dialog__icon', children: o }), (0, i.jsx)('div', { className: 'utrecht-alert-dialog__message', children: r })] }));
    }).displayName = 'AlertDialog';
    d('.utrecht-article{max-inline-size:var(--utrecht-article-max-inline-size)}');
    var T = ['children', 'className'];
@@ -12543,7 +12547,7 @@
     }
     return r;
    }
-   function R(e) {
+   function A(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -12562,10 +12566,10 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, T);
-    return (0, i.jsx)('article', R(R({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-article', n), children: r }));
+    return (0, i.jsx)('article', A(A({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-article', n), children: r }));
    }).displayName = 'Article';
    d('.utrecht-backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-opacity);--_utrecht-backdrop-fade-in-animation-duration:var(--utrecht-backdrop-fade-in-animation-duration,0);animation-duration:min(var(--utrecht-motion-max-animation-duration,var(--_utrecht-backdrop-fade-in-animation-duration)),var(--_utrecht-backdrop-fade-in-animation-duration,0));animation-name:utrecht-backdrop-fade-in;animation-timing-function:ease-in-out;background-color:var(--utrecht-backdrop-background-color);color:var(--utrecht-backdrop-color);display:block;inset-block-end:0;inset-block-start:0;inset-inline-end:0;inset-inline-start:0;opacity:var(--_utrecht-backdrop-opacity);position:absolute;-webkit-user-select:none;user-select:none;z-index:var(--utrecht-backdrop-z-index)}@keyframes utrecht-backdrop-fade-in{0%{opacity:0}to{opacity:var(--_utrecht-backdrop-opacity)}}@media (prefers-reduced-motion:reduce){.utrecht-backdrop{--_utrecht-backdrop-fade-in-animation-duration:0}}@media (prefers-reduced-transparency:reduce){.utrecht-backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-reduced-transparency-opacity,100%)}}.utrecht-backdrop--reduced-motion{--_utrecht-backdrop-fade-in-animation-duration:0}.utrecht-backdrop--reduced-transparency{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-reduced-transparency-opacity,100%)}.utrecht-backdrop--viewport{position:fixed}');
-   var A = ['children', 'className'];
+   var R = ['children', 'className'];
    function Z(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -12578,7 +12582,7 @@
     }
     return r;
    }
-   function I(e) {
+   function M(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -12596,11 +12600,11 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, A);
-    return (0, i.jsx)('div', I(I({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-backdrop', n), children: r }));
+     o = (0, a.Z)(e, R);
+    return (0, i.jsx)('div', M(M({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-backdrop', n), children: r }));
    }).displayName = 'Backdrop';
    d('.utrecht-badge-counter{background-color:var(--utrecht-badge-counter-background-color,var(--utrecht-badge-background-color,#000));border-radius:var(--utrecht-badge-counter-border-radius,var(--utrecht-badge-border-radius,.5ch));color:var(--utrecht-badge-counter-color,var(--utrecht-badge-color,#fff));display:inline-block;font-family:var(--utrecht-badge-counter-font-family,var(--utrecht-badge-font-family,var(--utrecht-document-font-family,sans-serif)));font-size:var(--utrecht-badge-counter-font-size,var(--utrecht-badge-font-size));font-style:var(--utrecht-badge-counter-font-style,normal);font-weight:var(--utrecht-badge-counter-font-weight,var(--utrecht-badge-font-weight,bold));line-height:1;max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--utrecht-badge-counter-min-size,1em);min-inline-size:var(--utrecht-badge-counter-min-size,1em);padding-block-end:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-block-start:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-inline-end:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));padding-inline-start:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));text-align:center;text-decoration:none;white-space:nowrap}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-badge-counter{border:1px solid}}');
-   var M = ['children', 'className', 'value'];
+   var I = ['children', 'className', 'value'];
    function F(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -12632,13 +12636,13 @@
     var r = e.children,
      n = e.className,
      o = e.value,
-     c = (0, a.Z)(e, M),
+     c = (0, a.Z)(e, I),
      u = B({ children: r, className: (0, l.Z)('utrecht-badge-counter', n) }, c);
     return void 0 !== o ? (0, i.jsx)('data', B(B({}, u), {}, { value: o, ref: t })) : (0, i.jsx)('span', B(B({}, u), {}, { ref: t }));
    }).displayName = 'BadgeCounter';
    d('.utrecht-badge-list{display:flex;flex-wrap:wrap;gap:var(--utrecht-badge-list-item-margin-block) var(--utrecht-badge-list-item-margin-inline)}');
    var $ = ['children', 'className'];
-   function H(e, t) {
+   function U(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -12650,16 +12654,16 @@
     }
     return r;
    }
-   function U(e) {
+   function H(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? H(Object(r), !0).forEach(function (t) {
+      ? U(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : H(Object(r)).forEach(function (t) {
+        : U(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -12669,7 +12673,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, $);
-    return (0, i.jsx)('div', U(U({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-badge-list', n), children: r }));
+    return (0, i.jsx)('div', H(H({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-badge-list', n), children: r }));
    }).displayName = 'BadgeList';
    d('.utrecht-breadcrumb-nav{--utrecht-focus-background-color:var(--utrecht-breadcrumb-nav-link-focus-background-color);--utrecht-link-background-color:var(--utrecht-breadcrumb-nav-link-background-color);--utrecht-link-text-decoration:var(--utrecht-breadcrumb-nav-link-text-decoration);--utrecht-link-focus-color:var(--utrecht-breadcrumb-nav-link-focus-color,var(--utrecht-breadcrumb-nav-link-color));--utrecht-link-focus-text-decoration:var(\n    --utrecht-breadcrumb-nav-link-focus-text-decoration,var(--utrecht-breadcrumb-nav-link-text-decoration)\n  );--utrecht-link-hover-color:var(--utrecht-breadcrumb-nav-link-hover-color,var(--utrecht-breadcrumb-nav-link-color));--utrecht-link-hover-text-decoration:var(\n    --utrecht-breadcrumb-nav-link-hover-text-decoration,var(--utrecht-breadcrumb-nav-link-text-decoration)\n  );--utrecht-link-visited-color:var(--utrecht-breadcrumb-nav-link-color);--utrecht-link-visited-text-decoration:var(--utrecht-link-text-decoration);--utrecht-link-color:var(--utrecht-breadcrumb-nav-link-color);--utrecht-link-placeholder-color:var(--utrecht-link-breadcrumb-link-disabled-color);font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-breadcrumb-nav-font-size);text-transform:var(--utrecht-document-text-transform,inherit)}.utrecht-breadcrumb-nav__heading{display:none}.utrecht-breadcrumb-nav__list{display:flex;flex-wrap:wrap;min-block-size:var(--utrecht-breadcrumb-nav-min-block-size)}.utrecht-breadcrumb-nav__list--html-ol{list-style:none;padding-inline-start:0}.utrecht-breadcrumb-nav__list--html-ol,.utrecht-breadcrumb-nav__list--html-p{margin-block-end:0;margin-block-start:0}.utrecht-breadcrumb-nav__item{block-size:100%}.utrecht-breadcrumb-nav__link{--utrecht-icon-size:var(--utrecht-breadcrumb-nav-link-icon-size);--utrecht-link-icon-size:var(--utrecht-breadcrumb-nav-link-icon-size);background-color:var(--utrecht-breadcrumb-nav-link-background-color);display:inline-block;padding-block-end:var(--utrecht-breadcrumb-nav-item-padding-block-end,8px);padding-block-start:var(--utrecht-breadcrumb-nav-item-padding-block-start,8px);padding-inline-end:var(--utrecht-breadcrumb-nav-item-padding-inline-end,8px);padding-inline-start:var(--utrecht-breadcrumb-nav-item-padding-inline-start,8px)}.utrecht-breadcrumb-nav__link--current{--utrecht-link-current-font-weight:var(--utrecht-breadcrumb-nav-link-current-font-weight,inherit);--_utrecht-breadcrumb-nav-link-current-cursor:var(--utrecht-action-inert-cursor,default);font-weight:var(--utrecht-breadcrumb-nav-link-current-font-weight,inherit)}.utrecht-breadcrumb-nav__link--disabled{--utrecht-link-placeholder-color:var(\n    --utrecht-breadcrumb-nav-link-disabled-color,var(--utrecht-breadcrumb-nav-link-color)\n  );--_utrecht-breadcrumb-nav-link-disabled-cursor:var(--utrecht-action-disabled-cursor,not-allowed);background-color:var(--utrecht-breadcrumb-nav-link-disabled-background-color,var(--utrecht-breadcrumb-nav-link-background-color));cursor:var(--_utrecht-breadcrumb-nav-link-current-cursor,var(--_utrecht-breadcrumb-nav-link-disabled-cursor))}.utrecht-breadcrumb-nav__separator,.utrecht-breadcrumb-nav__separator--html-li{--_utrecht-breadcrumb-nav-separator-display:inline-flex;--utrecht-icon-size:var(--utrecht-breadcrumb-nav-separator-icon-size);align-items:center;color:var(--utrecht-breadcrumb-nav-separator-color);cursor:var(--utrecht-action-inert-cursor,default);display:var(--_utrecht-breadcrumb-nav-separator-display);inline-size:fit-content;-webkit-user-select:none;user-select:none}.utrecht-breadcrumb-nav--arrows{--utrecht-breadcrumb-nav-arrow-size:24px;min-block-size:var(--utrecht-breadcrumb-nav-min-block-size);overflow:hidden}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link{background-color:var(--utrecht-breadcrumb-nav-arrows-link-background-color);padding-inline-end:0;position:relative}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:after,.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:before{block-size:0;border-block-end-width:var(--utrecht-breadcrumb-nav-min-block-size);border-block-start-width:var(--utrecht-breadcrumb-nav-min-block-size);border-color:transparent;border-style:solid;content:" ";display:block;inline-size:0;inset-block-start:50%;inset-inline-start:100%;margin-block-start:calc(var(--utrecht-breadcrumb-nav-min-block-size)*-1);position:absolute}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:after{border-inline-start-color:var(--utrecht-breadcrumb-nav-arrows-link-background-color);border-inline-start-width:var(--utrecht-breadcrumb-nav-arrow-size);z-index:2}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:before{border-inline-start-color:var(--utrecht-document-background-color);border-inline-start-width:var(--utrecht-breadcrumb-nav-arrow-size);margin-block-start:calc(var(--utrecht-breadcrumb-nav-min-block-size)*-1);margin-inline-start:1px;z-index:1}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link--focus,.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:focus{--utrecht-link-focus-background-color:var(--utrecht-breadcrumb-nav-arrows-link-focus-background-color);background-color:var(--utrecht-breadcrumb-nav-arrows-link-focus-background-color)}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link--focus:after,.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link:focus:after{border-inline-start-color:var(--utrecht-breadcrumb-nav-arrows-link-focus-background-color)}.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__item~.utrecht-breadcrumb-nav__item .utrecht-breadcrumb-nav__link,.utrecht-breadcrumb-nav--arrows .utrecht-breadcrumb-nav__link~.utrecht-breadcrumb-nav__link{padding-inline-start:calc(var(--utrecht-breadcrumb-nav-item-padding-inline-start) + var(--utrecht-breadcrumb-nav-arrow-size))}.utrecht-breadcrumb-nav__item~.utrecht-breadcrumb-nav__item{margin-inline-start:var(--utrecht-breadcrumb-nav-item-divider-inline-size)}');
    var V = ['boxContent', 'children', 'className', 'external', 'href', 'placeholder', 'role'];
@@ -13011,7 +13015,7 @@
     }
     return r;
    }
-   function ze(e) {
+   function Le(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -13026,15 +13030,15 @@
     }
     return e;
    }
-   var Le = (0, c.forwardRef)(function (e, t) {
+   var ze = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.color,
      c = e.style,
      u = (0, a.Z)(e, Ee);
-    return (0, i.jsx)('data', ze(ze({ ref: t, className: (0, l.Z)('utrecht-color-sample', n), style: ze(ze({}, c), {}, { color: o }), value: o }, u), {}, { children: r }));
+    return (0, i.jsx)('data', Le(Le({ ref: t, className: (0, l.Z)('utrecht-color-sample', n), style: Le(Le({}, c), {}, { color: o }), value: o }, u), {}, { children: r }));
    });
-   Le.displayName = 'ColorSample';
+   ze.displayName = 'ColorSample';
    d('.utrecht-column-layout{column-gap:var(--utrecht-column-layout-gap,2em);column-width:var(--utrecht-column-layout-column-width,40ch);display:block}.utrecht-column-layout--rule{column-rule-color:var(--utrecht-column-layout-column-rule-color);column-rule-style:solid;column-rule-width:var(--utrecht-column-layout-column-rule-width,0)}'),
     ((0, c.forwardRef)(function (e, t) {
      var r = e.children,
@@ -13045,7 +13049,7 @@
    d('.utrecht-combobox{inline-size:100%;max-inline-size:var(--utrecht-textbox-max-inline-size,var(--utrecht-form-control-max-inline-size));position:relative}.utrecht-combobox__popover{background-color:canvas;block-size:fit-content;border-width:0;color:canvastext;inline-size:fit-content;inset:0;overflow:auto;padding-block-end:0;padding-block-start:0;padding-inline-end:0;padding-inline-start:0;position:absolute;z-index:var(--utrecht-combobox-popover-z-index)}.utrecht-combobox__popover--block-end{inset-block-start:100%}.utrecht-combobox__popover--hidden{display:none!important}');
    var Te = ['className'],
     De = ['className', 'position'];
-   function Re(e, t) {
+   function Ae(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13057,16 +13061,16 @@
     }
     return r;
    }
-   function Ae(e) {
+   function Re(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Re(Object(r), !0).forEach(function (t) {
+      ? Ae(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Re(Object(r)).forEach(function (t) {
+        : Ae(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13075,17 +13079,17 @@
    ((0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = (0, a.Z)(e, Te);
-    return (0, i.jsx)('div', Ae(Ae({ className: (0, l.Z)('utrecht-combobox', r) }, n), {}, { ref: t }));
+    return (0, i.jsx)('div', Re(Re({ className: (0, l.Z)('utrecht-combobox', r) }, n), {}, { ref: t }));
    }).displayName = 'Combobox'),
     ((0, c.forwardRef)(function (e, t) {
      var r = e.className,
       n = e.position,
       o = (0, a.Z)(e, De);
-     return (0, i.jsx)('div', Ae(Ae({ className: (0, l.Z)('utrecht-combobox__popover', { 'utrecht-search-bar__popover--block-end': !n || 'block-end' === n }, r) }, o), {}, { ref: t }));
+     return (0, i.jsx)('div', Re(Re({ className: (0, l.Z)('utrecht-combobox__popover', { 'utrecht-search-bar__popover--block-end': !n || 'block-end' === n }, r) }, o), {}, { ref: t }));
     }).displayName = 'ComboboxPopover');
    d('.utrecht-currency-data{font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}');
    var Ze = ['children', 'currency', 'amount', 'locale', 'className'];
-   function Ie(e, t) {
+   function Me(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13097,16 +13101,16 @@
     }
     return r;
    }
-   function Me(e) {
+   function Ie(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ie(Object(r), !0).forEach(function (t) {
+      ? Me(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ie(Object(r)).forEach(function (t) {
+        : Me(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13129,7 +13133,7 @@
       var n = new Intl.NumberFormat(e, { style: 'currency', currency: t }).format(r);
       return (n = n.replace(/-/, '\u2212')), ('nl' !== e && 'nl-NL' !== e) || !/\u2212/.test(n) || (n = n.replace(/(.+)\u2212(.+)/, '\u2212 $1$2')), n.replace(/ /g, '\xa0');
      })(s, o, b);
-    return (0, i.jsx)('data', Me(Me({}, h), {}, { ref: t, value: ''.concat(o, ' ').concat(c), className: (0, l.Z)('utrecht-currency-data', b < 0 && 'utrecht-currency-data--negative', b > 0 && 'utrecht-currency-data--positive', d), 'aria-label': p, children: r || f }));
+    return (0, i.jsx)('data', Ie(Ie({}, h), {}, { ref: t, value: ''.concat(o, ' ').concat(c), className: (0, l.Z)('utrecht-currency-data', b < 0 && 'utrecht-currency-data--negative', b > 0 && 'utrecht-currency-data--positive', d), 'aria-label': p, children: r || f }));
    }).displayName = 'CurrencyData';
    d('.utrecht-badge-data{background-color:var(--utrecht-badge-background-color,#000);border-radius:var(--utrecht-badge-border-radius,.5ch);color:var(--utrecht-badge-color,#fff);display:inline-block;font-family:var(--utrecht-document-font-family,sans-serif);font-size:var(--utrecht-badge-font-size,inherit);font-style:var(--utrecht-badge-font-style,normal);font-weight:var(--utrecht-badge-font-weight,bold);letter-spacing:var(--utrecht-badge-data-letter-spacing,inherit);line-height:var(--utrecht-badge-line-height,1em);max-block-size:max-content;max-inline-size:max-content;min-block-size:1em;min-inline-size:1em;padding-block-end:var(--utrecht-badge-padding-block,.5ex);padding-block-start:var(--utrecht-badge-padding-block,.5ex);padding-inline-end:var(--utrecht-badge-padding-inline,.5ch);padding-inline-start:var(--utrecht-badge-padding-inline,.5ch);text-decoration:none;text-transform:var(--utrecht-badge-data-text-transform,inherit)}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-badge-data{border:1px solid}}');
    var Fe = ['children', 'className', 'dateTime', 'value'];
@@ -13160,7 +13164,7 @@
     }
     return e;
    }
-   var He = (0, c.forwardRef)(function (e, t) {
+   var Ue = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.dateTime,
@@ -13169,9 +13173,9 @@
      s = $e({ children: r, className: (0, l.Z)('utrecht-badge-data', n) }, u);
     return void 0 !== o ? (0, i.jsx)('time', $e($e({}, s), {}, { dateTime: o, ref: t })) : void 0 !== c ? (0, i.jsx)('data', $e($e({}, s), {}, { value: c, ref: t })) : (0, i.jsx)('span', $e($e({}, s), {}, { ref: t }));
    });
-   He.displayName = 'DataBadge';
+   Ue.displayName = 'DataBadge';
    d('.utrecht-document{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;color:var(--utrecht-document-color,inherit);font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-document-font-size,inherit);font-weight:var(--utrecht-document-font-weight,inherit);line-height:var(--utrecht-document-line-height,inherit);text-rendering:optimizeLegibility}.utrecht-document :lang(ar){letter-spacing:0!important}.utrecht-document--surface{background-color:var(--utrecht-document-background-color,inherit)}');
-   var Ue = ['children', 'className'];
+   var He = ['children', 'className'];
    function Ve(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -13202,7 +13206,7 @@
    var We = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, Ue);
+     o = (0, a.Z)(e, He);
     return (0, i.jsx)('div', qe(qe({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-document', n), children: r }));
    });
    We.displayName = 'Document';
@@ -13584,7 +13588,7 @@
     }
     return e;
    }
-   var zt = (0, c.forwardRef)(function (e, t) {
+   var Lt = (0, c.forwardRef)(function (e, t) {
     var r = e.invalid,
      n = e.valid,
      o = e.warning,
@@ -13593,9 +13597,9 @@
      s = (0, a.Z)(e, St);
     return (0, i.jsx)('div', Nt(Nt({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-field-description', r && 'utrecht-form-field-description--invalid', n && 'utrecht-form-field-description--valid', o && 'utrecht-form-field-description--warning', c), children: u }));
    });
-   zt.displayName = 'FormFieldDescription';
+   Lt.displayName = 'FormFieldDescription';
    d('.utrecht-form-field-error-message{--utrecht-document-color:currentColor;background-color:var(--utrecht-form-field-error-message-background-color);color:var(--utrecht-form-field-error-message-color);display:block;font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-form-field-error-message-font-size,inherit);font-style:var(--utrecht-form-field-error-message-font-style);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-error-message-margin-block-end, var(--utrecht-paragraph-margin-block-end, 0)));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-error-message-margin-block-start, var(--utrecht-paragraph-margin-block-start, 0)));padding-block-end:var(--utrecht-form-field-error-message-padding-block-end);padding-block-start:var(--utrecht-form-field-error-message-padding-block-start);padding-inline-end:var(--utrecht-form-field-error-message-padding-inline-end);padding-inline-start:var(--utrecht-form-field-error-message-padding-inline-start)}.utrecht-form-field-error-message>*{--utrecht-space-around:1}');
-   var Lt = ['className', 'children'];
+   var zt = ['className', 'children'];
    function Tt(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -13626,12 +13630,12 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = e.children,
-     o = (0, a.Z)(e, Lt);
+     o = (0, a.Z)(e, zt);
     return (0, i.jsx)('div', Dt(Dt({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-form-field-error-message', r), children: n }));
    }).displayName = 'FormFieldErrorMessage';
    d('.utrecht-form-label{color:var(--utrecht-form-label-color);font-size:var(--utrecht-form-label-font-size);font-weight:var(--utrecht-form-label-font-weight)}.utrecht-form-label--checkbox{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-checkbox-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--checked{font-weight:var(--utrecht-form-label-checked-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--disabled{color:var(--utrecht-form-label-disabled-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-disabled-cursor,revert)}.utrecht-form-label--radio{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-radio-font-weight,var(--utrecht-form-label-font-weight))}');
-   var Rt = ['children', 'className', 'type', 'disabled', 'checked'];
-   function At(e, t) {
+   var At = ['children', 'className', 'type', 'disabled', 'checked'];
+   function Rt(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13647,29 +13651,29 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? At(Object(r), !0).forEach(function (t) {
+      ? Rt(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : At(Object(r)).forEach(function (t) {
+        : Rt(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
     return e;
    }
-   var It = (0, c.forwardRef)(function (e, t) {
+   var Mt = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.type,
      c = e.disabled,
      u = e.checked,
-     s = (0, a.Z)(e, Rt);
+     s = (0, a.Z)(e, At);
     return (0, i.jsx)('label', Zt(Zt({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-label', o && 'utrecht-form-label--'.concat(o), c && 'utrecht-form-label--disabled', u && 'utrecht-form-label--checked', n), children: r }));
    });
-   It.displayName = 'FormLabel';
+   Mt.displayName = 'FormLabel';
    d('.utrecht-form-toggle{align-items:center;block-size:var(--utrecht-form-toggle-height,2em);border-color:var(--utrecht-form-toggle-border-color,currentColor);border-radius:var(--utrecht-form-toggle-border-radius,999rem);border-style:var(--utrecht-form-toggle-border-style,solid);border-width:var(--utrecht-form-toggle-border-width,1px);color:var(--utrecht-form-toggle-color);cursor:var(--utrecht-action-activate-cursor,revert);display:flex;inline-size:var(--utrecht-form-toggle-width,6em);padding-block-end:var(--utrecht-form-toggle-padding-block-end);padding-block-start:var(--utrecht-form-toggle-padding-block-start);padding-inline-end:var(--utrecht-form-toggle-padding-inline-end);padding-inline-start:var(--utrecht-form-toggle-padding-inline-start);position:relative;-webkit-user-select:none;user-select:none}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-form-toggle{--utrecht-form-toggle-background-color:ButtonFace;--utrecht-form-toggle-border-color:buttonborder;--utrecht-form-toggle-border-width:1px;--utrecht-form-toggle-border-radius:var(--utrecht-form-toggle-track-border-radius);--utrecht-form-toggle-thumb-background-color:ButtonText;--utrecht-form-toggle-thumb-disabled-background-color:GrayText;border-color:var(--utrecht-form-toggle-track-disabled-border-color,var(--utrecht-form-toggle-track-border-color));border-width:min(var(--utrecht-form-toggle-border-width,1px),1px)}}.utrecht-form-toggle--focus-visible,.utrecht-form-toggle--html-div:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--hover{background-color:var(--utrecht-form-toggle-hover-background-color,var(--utrecht-form-toggle-background-color));color:var(--utrecht-form-toggle-hover-color,var(--utrecht-form-toggle-color))}.utrecht-form-toggle--disabled,.utrecht-form-toggle--html-div:disabled{border-color:var(--utrecht-form-toggle-disabled-border-color,var(--utrecht-form-toggle-border-color,currentColor));border-style:var(--utrecht-form-toggle-disabled-border-style,var(--utrecht-form-toggle-border-style,solid));border-width:var(--utrecht-form-toggle-disabled-border-width,var(--utrecht-form-toggle-border-width,1px));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-form-toggle__thumb{background-color:var(--utrecht-form-toggle-thumb-background-color,currentColor);border-radius:var(--utrecht-form-toggle-thumb-border-radius,50%);box-shadow:var(--utrecht-form-toggle-thumb-box-shadow);margin-inline-end:var(--utrecht-form-toggle-thumb-margin-inline-end,0);margin-inline-start:var(--utrecht-form-toggle-thumb-margin-inline-start,0);min-block-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);min-inline-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);z-index:20}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--checked{margin-inline-start:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:not(:checked)~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--not-checked{margin-inline-end:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--disabled{background-color:var(--utrecht-form-toggle-thumb-disabled-background-color,#aaa);box-shadow:var(--utrecht-form-toggle-thumb-disabled-box-shadow,0)}.utrecht-form-toggle__track{align-items:center;background-color:var(--utrecht-form-toggle-accent-color);block-size:100%;border-radius:var(--utrecht-form-toggle-track-border-radius,var(--utrecht-form-toggle-border-radius));display:flex;inline-size:100%}.utrecht-form-toggle__track--html-label{cursor:inherit}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track,.utrecht-form-toggle__track--checked{background-color:var(--utrecht-form-toggle-checked-accent-color,var(--utrecht-form-toggle-accent-color))}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track,.utrecht-form-toggle__track--disabled{background-color:var(--utrecht-form-toggle-background-disabled-background-color,#ddd);color:var(--utrecht-form-toggle-disabled-color,#000)}.utrecht-form-toggle__track--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox{clip:rect(1px,1px,1px,1px)!important;block-size:1px!important;border:0!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;inline-size:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:focus-visible~.utrecht-form-toggle__track{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}');
-   var Mt = ['checked', 'disabled', 'invalid', 'id', 'hidden', 'required', 'role', 'tabIndex', 'className'];
+   var It = ['checked', 'disabled', 'invalid', 'id', 'hidden', 'required', 'role', 'tabIndex', 'className'];
    function Ft(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -13707,12 +13711,12 @@
      d = e.role,
      h = e.tabIndex,
      b = e.className,
-     p = (0, a.Z)(e, Mt);
+     p = (0, a.Z)(e, It);
     return (0, i.jsxs)('div', { className: (0, l.Z)('utrecht-form-toggle', 'utrecht-form-toggle--html-checkbox', { 'utrecht-form-toggle--disabled': n, 'utrecht-form-toggle--invalid': o, 'utrecht-form-toggle--required': s }, b), hidden: u, children: [(0, i.jsx)('input', Bt({ id: c, 'aria-invalid': o || void 0, type: 'checkbox', className: 'utrecht-form-toggle__checkbox', defaultChecked: r || void 0, disabled: n || void 0, required: s, ref: t, role: d, tabIndex: h }, p)), (0, i.jsx)('label', { htmlFor: c, className: (0, l.Z)('utrecht-form-toggle__track', 'utrecht-form-toggle__track--html-label'), children: (0, i.jsx)('div', { className: 'utrecht-form-toggle__thumb' }) })] });
    }).displayName = 'FormToggle';
    d('@charset "UTF-8";.utrecht-html{--utrecht-space-around:1}.utrecht-html article{max-inline-size:var(--utrecht-article-max-inline-size)}.utrecht-html blockquote{--utrecht-document-color:var(--utrecht-blockquote-content-color,inherit);--utrecht-paragraph-font-size:var(--utrecht-blockquote-content-font-size,inherit);--utrecht-space-around:1;background-color:var(--utrecht-blockquote-background-color);color:var(--utrecht-blockquote-color);color:var(--utrecht-blockquote-content-color,inherit);font-family:var(--utrecht-document-font-family);font-size:var(--utrecht-blockquote-font-size);font-size:var(--utrecht-blockquote-content-font-size,inherit);font-style:var(--utrecht-blockquote-font-style);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-blockquote-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-blockquote-margin-block-start, 0));margin-inline-end:var(--utrecht-blockquote-margin-inline-end);margin-inline-start:var(--utrecht-blockquote-margin-inline-start);padding-block-end:var(--utrecht-blockquote-padding-block-end);padding-block-start:var(--utrecht-blockquote-padding-block-start);padding-inline-end:var(--utrecht-blockquote-padding-inline-end);padding-inline-start:var(--utrecht-blockquote-padding-inline-start)}.utrecht-html button,.utrecht-html input[type=button i],.utrecht-html input[type=reset i],.utrecht-html input[type=submit i]{--_utrecht-button-background-color:var(\n    --_utrecht-button-hint-background-color,var(--_utrecht-button-appearance-background-color,var(--utrecht-button-background-color))\n  );--_utrecht-button-color:var(\n    --_utrecht-button-hint-color,var(--_utrecht-button-appearance-color,var(--utrecht-button-color))\n  );--_utrecht-button-border-color:var(\n    --_utrecht-button-hint-border-color,var(--_utrecht-button-appearance-border-color,var(--utrecht-button-border-color,transparent))\n  );--_utrecht-button-border-bottom-color:var(\n    --_utrecht-button-hint-border-bottom-color,var(\n      --_utrecht-button-hint-border-color,var(\n        --_utrecht-button-appearance-border-bottom-color,var(\n          --_utrecht-button-appearance-border-color,var(--utrecht-button-border-bottom-color,var(--utrecht-button-border-color,transparent))\n        )\n      )\n    )\n  );--_utrecht-button-disabled-background-color:var(\n    --_utrecht-button-hint-disabled-background-color,var(\n      --_utrecht-button-appearance-disabled-background-color,var(--utrecht-button-disabled-background-color,var(--utrecht-button-background-color))\n    )\n  );--_utrecht-button-disabled-border-color:var(\n    --_utrecht-button-hint-disabled-border-color,var(\n      --_utrecht-button-appearance-disabled-border-color,var(--utrecht-button-disabled-border-color,var(--utrecht-button-border-color))\n    )\n  );--_utrecht-button-disabled-color:var(\n    --_utrecht-button-hint-disabled-color,var(--_utrecht-button-appearance-disabled-color,var(--utrecht-button-disabled-color,var(--utrecht-button-color)))\n  );--_utrecht-button-pressed-background-color:var(\n    --_utrecht-button-hint-pressed-background-color,var(\n      --_utrecht-button-hint-background-color,var(\n        --_utrecht-button-appearance-pressed-background-color,var(\n          --_utrecht-button-appearance-background-color,var(--utrecht-button-pressed-background-color,var(--utrecht-button-background-color))\n        )\n      )\n    )\n  );--_utrecht-button-pressed-border-color:var(\n    --_utrecht-button-hint-pressed-border-color,var(\n      --_utrecht-button-hint-border-color,var(\n        --_utrecht-button-appearance-pressed-border-color,var(\n          --_utrecht-button-appearance-border-color,var(--utrecht-button-pressed-border-color,var(--utrecht-button-border-color))\n        )\n      )\n    )\n  );--_utrecht-button-pressed-color:var(\n    --_utrecht-button-hint-pressed-color,var(\n      --_utrecht-button-hint-color,var(\n        --_utrecht-button-appearance-pressed-color,var(--_utrecht-button-appearance-color,var(--utrecht-button-pressed-color,var(--utrecht-button-color)))\n      )\n    )\n  );--_utrecht-button-focus-background-color:var(\n    --_utrecht-button-hint-focus-background-color,var(\n      --_utrecht-button-hint-background-color,var(\n        --_utrecht-button-appearance-focus-background-color,var(\n          --_utrecht-button-appearance-background-color,var(--utrecht-button-focus-background-color,var(--utrecht-button-background-color))\n        )\n      )\n    )\n  );--_utrecht-button-focus-border-color:var(\n    --_utrecht-button-hint-focus-border-color,var(\n      --_utrecht-button-hint-border-color,var(\n        --_utrecht-button-appearance-focus-border-color,var(\n          --_utrecht-button-appearance-border-color,var(--utrecht-button-focus-border-color,var(--utrecht-button-border-color))\n        )\n      )\n    )\n  );--_utrecht-button-focus-color:var(\n    --_utrecht-button-hint-focus-color,var(\n      --_utrecht-button-hint-color,var(\n        --_utrecht-button-appearance-focus-color,var(--_utrecht-button-appearance-color,var(--utrecht-button-focus-color,var(--utrecht-button-color)))\n      )\n    )\n  );--_utrecht-button-hover-background-color:var(\n    --_utrecht-button-hint-hover-background-color,var(\n      --_utrecht-button-hint-background-color,var(\n        --_utrecht-button-appearance-hover-background-color,var(\n          --_utrecht-button-appearance-background-color,var(--utrecht-button-hover-background-color,var(--utrecht-button-background-color))\n        )\n      )\n    )\n  );--_utrecht-button-hover-border-color:var(\n    --_utrecht-button-hint-hover-border-color,var(\n      --_utrecht-button-hint-border-color,var(\n        --_utrecht-button-appearance-hover-border-color,var(\n          --_utrecht-button-appearance-border-color,var(--utrecht-button-hover-border-color,var(--utrecht-button-border-color))\n        )\n      )\n    )\n  );--_utrecht-button-hover-color:var(\n    --_utrecht-button-hint-hover-color,var(\n      --_utrecht-button-hint-color,var(\n        --_utrecht-button-appearance-hover-color,var(--_utrecht-button-appearance-color,var(--utrecht-button-hover-color,var(--utrecht-button-color)))\n      )\n    )\n  );--_utrecht-button-active-background-color:var(\n    --_utrecht-button-hint-active-background-color,var(\n      --_utrecht-button-hint-background-color,var(\n        --_utrecht-button-appearance-active-background-color,var(\n          --_utrecht-button-appearance-background-color,var(--utrecht-button-active-background-color,var(--utrecht-button-background-color))\n        )\n      )\n    )\n  );--_utrecht-button-active-border-color:var(\n    --_utrecht-button-hint-active-border-color,var(\n      --_utrecht-button-hint-border-color,var(\n        --_utrecht-button-appearance-active-border-color,var(\n          --_utrecht-button-appearance-border-color,var(--utrecht-button-active-border-color,var(--utrecht-button-border-color))\n        )\n      )\n    )\n  );--_utrecht-button-active-color:var(\n    --_utrecht-button-hint-active-color,var(\n      --_utrecht-button-hint-color,var(\n        --_utrecht-button-appearance-active-color,var(--_utrecht-button-appearance-color,var(--utrecht-button-active-color,var(--utrecht-button-color)))\n      )\n    )\n  );--_utrecht-button-border-width:var(--_utrecht-button-appearance-border-width,var(--utrecht-button-border-width,0));--_utrecht-button-border-block-end-width:var(\n    --utrecht-button-border-bottom-width,var(--_utrecht-button-border-width,0)\n  );--utrecht-icon-size:var(--utrecht-button-icon-size,1em);align-items:center;background-color:var(--_utrecht-button-background-color);block-size:fit-content;border-block-end-color:var(--_utrecht-button-border-bottom-color);border-block-end-width:var(--_utrecht-button-border-block-end-width);border-color:var(--_utrecht-button-border-color);border-radius:var(--utrecht-button-border-radius);border-style:solid;border-width:var(--_utrecht-button-border-width);box-sizing:border-box;color:var(--_utrecht-button-color);cursor:var(--utrecht-action-activate-cursor,revert);display:inline-flex;font-family:var(--utrecht-button-font-family,var(--utrecht-document-font-family));font-size:var(--utrecht-button-font-size,var(--utrecht-document-font-family,inherit));font-weight:var(--_utrecht-button-appearance-font-weight,var(--utrecht-button-font-weight));gap:var(--utrecht-button-icon-gap);inline-size:var(--utrecht-button-inline-size,auto);justify-content:center;line-height:var(--utrecht-button-line-height);margin-block-end:var(--utrecht-button-margin-block-end);margin-block-start:var(--utrecht-button-margin-block-start);margin-inline-end:var(--utrecht-button-margin-inline-end);margin-inline-start:var(--utrecht-button-margin-inline-start);max-inline-size:var(--utrecht-button-max-inline-size,fit-content);min-block-size:var(--utrecht-button-min-block-size,44px);min-inline-size:var(--utrecht-button-min-inline-size,44px);padding-block-end:var(--utrecht-button-padding-block-end);padding-block-start:var(--utrecht-button-padding-block-start);padding-inline-end:var(--utrecht-button-padding-inline-end);padding-inline-start:var(--utrecht-button-padding-inline-start);scale:1;text-transform:var(--utrecht-button-text-transform);-webkit-user-select:none;user-select:none}.utrecht-html button[hidden]{display:none}.utrecht-html button[type=submit i],.utrecht-html input[type=submit i]{cursor:var(--utrecht-action-submit-cursor,revert)}.utrecht-html button:disabled,.utrecht-html button[aria-disabled=true]{background-color:var(--_utrecht-button-disabled-background-color);border-color:var(--_utrecht-button-disabled-border-color);color:var(--_utrecht-button-disabled-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-html button:disabled[aria-busy=true],.utrecht-html button[aria-busy=true],.utrecht-html button[aria-disabled=true][aria-busy=true]{cursor:var(--utrecht-action-busy-cursor,wait)}.utrecht-html button:active:not([aria-disabled=true],:disabled){background-color:var(--_utrecht-button-active-background-color);border-color:var(--_utrecht-button-active-border-color);color:var(--_utrecht-button-active-color)}.utrecht-html button:hover:not([aria-disabled=true],:disabled){background-color:var(--_utrecht-button-hover-background-color);border-color:var(--_utrecht-button-hover-border-color);color:var(--_utrecht-button-hover-color);scale:var(--utrecht-button-hover-scale,1)}.utrecht-html button:focus:not([aria-disabled=true],:disabled){background-color:var(--_utrecht-button-focus-background-color);border-color:var(--_utrecht-button-focus-border-color);color:var(--_utrecht-button-focus-color);scale:var(--utrecht-button-focus-scale,1)}.utrecht-html button:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html input[type=checkbox i]{cursor:var(--utrecht-action-activate-cursor,revert);margin-block-end:0;margin-block-start:0;margin-inline-end:0;margin-inline-start:0;-webkit-user-select:none;user-select:none}.utrecht-html input[type=checkbox i]:disabled{cursor:var(--utrecht-action-disabled-cursor,revert)}.utrecht-html input[type=checkbox i]:focus{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html input[type=checkbox i]:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-html body{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;background-color:var(--utrecht-document-background-color,inherit);color:var(--utrecht-document-color,inherit);font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-document-font-size,inherit);font-weight:var(--utrecht-document-font-weight,inherit);line-height:var(--utrecht-document-line-height,inherit);text-rendering:optimizeLegibility}.utrecht-html body :lang(ar){letter-spacing:0!important}.utrecht-html code{background-color:var(--utrecht-code-background-color);color:var(--utrecht-code-color);font-family:var(--utrecht-code-font-family,monospace),monospace;font-size:var(--utrecht-code-font-size,inherit);font-variant-ligatures:none;line-height:var(--utrecht-code-line-height)}.utrecht-html em{font-style:var(--utrecht-emphasis-stressed-font-style,italic)}.utrecht-html strong{font-weight:var(--utrecht-emphasis-strong-font-weight,bold)}.utrecht-html fieldset{--utrecht-space-around:1;all:revert;border:0;margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-fieldset-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-fieldset-margin-block-start, 0));margin-inline-end:0;margin-inline-start:0;min-inline-size:0;padding-block-end:0;padding-block-start:.01em;padding-inline-end:0;padding-inline-start:0}.utrecht-html fieldset[hidden]{display:none}.utrecht-html figure{margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-figure-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-figure-margin-block-start, 0))}.utrecht-html figcaption{color:var(--utrecht-figure-caption-color);font-size:var(--utrecht-figure-caption-font-size);line-height:var(--utrecht-figure-caption-line-height)}.utrecht-html form{display:block;max-inline-size:var(--utrecht-form-max-inline-size)}.utrecht-html legend{break-inside:avoid;color:var(--utrecht-form-fieldset-legend-color,var(--utrecht-document-color,inherit));display:table;font-family:var(--utrecht-form-fieldset-legend-font-family,var(--utrecht-document-font-family));font-size:var(--utrecht-form-fieldset-legend-font-size);font-weight:var(--utrecht-form-fieldset-legend-font-weight);inline-size:100%;line-height:var(--utrecht-form-fieldset-legend-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-fieldset-legend-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-fieldset-legend-margin-block-start, 0));padding-inline-end:0;padding-inline-start:0;page-break-after:avoid;page-break-inside:avoid}.utrecht-html legend[hidden]{display:none}.utrecht-html fieldset:disabled>legend{color:var(--utrecht-form-fieldset-legend-disabled-color,var(--utrecht-form-fieldset-legend-color,var(--utrecht-document-color,inherit)))}.utrecht-html label{color:var(--utrecht-form-label-color);font-size:var(--utrecht-form-label-font-size);font-weight:var(--utrecht-form-label-font-weight)}.utrecht-html input[type=checkbox i]~label{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-checkbox-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-html input[type=radio i]~label{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-radio-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-html mark{background-color:var(--utrecht-mark-background-color,revert);color:var(--utrecht-mark-color,revert)}@media print{.utrecht-html mark{outline-color:currentColor;outline-style:dotted;outline-width:.1em}}@media screen and (-ms-high-contrast:active){.utrecht-html mark{background-color:Highlight;color:HighlightText}}.utrecht-html h1{color:var(--utrecht-heading-1-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-1-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-1-font-size,revert);font-weight:var(--utrecht-heading-1-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-1-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-1-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-1-margin-block-start, 0))}.utrecht-html h1,.utrecht-html h2{--utrecht-space-around:1;break-inside:avoid-column;page-break-after:avoid;page-break-inside:avoid}.utrecht-html h2{color:var(--utrecht-heading-2-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-2-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-2-font-size,revert);font-weight:var(--utrecht-heading-2-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-2-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-2-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-2-margin-block-start, 0))}.utrecht-html h3{color:var(--utrecht-heading-3-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-3-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-3-font-size,revert);font-weight:var(--utrecht-heading-3-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-3-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-3-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-3-margin-block-start, 0))}.utrecht-html h3,.utrecht-html h4{--utrecht-space-around:1;break-inside:avoid-column;page-break-after:avoid;page-break-inside:avoid}.utrecht-html h4{color:var(--utrecht-heading-4-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-4-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-4-font-size,revert);font-weight:var(--utrecht-heading-4-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-4-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-4-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-4-margin-block-start, 0))}.utrecht-html h5{color:var(--utrecht-heading-5-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-5-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-5-font-size,revert);font-weight:var(--utrecht-heading-5-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-5-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-5-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-5-margin-block-start, 0))}.utrecht-html h5,.utrecht-html h6{--utrecht-space-around:1;break-inside:avoid-column;page-break-after:avoid;page-break-inside:avoid}.utrecht-html h6{color:var(--utrecht-heading-6-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-6-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-6-font-size,revert);font-weight:var(--utrecht-heading-6-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-6-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-6-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-6-margin-block-start, 0))}.utrecht-html hgroup{--utrecht-pre-heading-order:-1;--utrecht-space-around:1;display:flex;flex-direction:column;margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-group-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-group-margin-block-start, 0))}.utrecht-html hgroup>*{--utrecht-space-around:0}.utrecht-html a{--utrecht-icon-size:var(--utrecht-link-icon-size,1em);color:var(--_utrecht-link-state-color,var(--utrecht-link-color,var(--_utrecht-link-forced-colors-color)))}.utrecht-html a:visited{--_utrecht-link-forced-colors-color:visitedtext;--_utrecht-link-state-color:var(--utrecht-link-visited-color)}.utrecht-html a:hover{--_utrecht-link-forced-colors-color:linktext;--_utrecht-link-state-color:var(--utrecht-link-hover-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-hover-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-hover-text-decoration-thickness);text-decoration-skip:none;text-decoration-skip-ink:none}.utrecht-html a:active{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-html a:focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-link-focus-background-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);text-decoration-skip-ink:none;z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-html a:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-html a[href^="tel:" i]{white-space:nowrap}.utrecht-html ol{--utrecht-space-around:1;box-sizing:border-box;font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-ordered-list-font-size,var(--utrecht-unordered-list-font-size,var(--utrecht-document-font-size,inherit)));line-height:var(--utrecht-ordered-list-font-size,var(--utrecht-unordered-list-line-height,var(--utrecht-document-line-height,inherit)));margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-ordered-list-margin-block-end, var(--utrecht-unordered-list-margin-block-end, 0)));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-ordered-list-margin-block-start, var(--utrecht-unordered-list-margin-block-start, 0)));padding-inline-start:var(--utrecht-ordered-list-padding-inline-start,var(--utrecht-unordered-list-padding-inline-start,2ch));text-align:start}.utrecht-html ol>li{margin-block-end:var(--utrecht-ordered-list-item-margin-block-end,var(--utrecht-unordered-list-item-margin-block-end));margin-block-start:var(--utrecht-ordered-list-item-margin-block-start,var(--utrecht-unordered-list-item-margin-block-start));padding-inline-start:var(--utrecht-ordered-list-item-padding-inline-start,var(--utrecht-unordered-list-item-padding-inline-start,1ch))}.utrecht-html ol:lang(ar){list-style:arabic-indic}.utrecht-html p{color:var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit));font-family:var(--utrecht-paragraph-font-family,var(--utrecht-document-font-family,inherit));font-size:var(--utrecht-paragraph-font-size,var(--utrecht-document-font-size,inherit));font-weight:var(--utrecht-paragraph-font-weight,inherit);line-height:var(--utrecht-paragraph-line-height,var(--utrecht-document-line-height,inherit));margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-start, 0))}.utrecht-html p.lead{color:var(--utrecht-paragraph-lead-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-lead-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-lead-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-lead-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-html *~p{--utrecht-space-around:1}.utrecht-html p:has(>small:only-child){color:var(--utrecht-paragraph-small-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-small-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-small-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-small-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-html p>small:only-child{font-size:inherit}.utrecht-html pre:has(>code:only-child){--utrecht-code-color:var(--utrecht-code-block-color,inherit);--utrecht-code-background-color:var(--utrecht-code-block-background-color,inherit);--utrecht-code-font-weight:var(--utrecht-code-block-font-weight,inherit);--utrecht-code-font-size:var(--utrecht-code-block-font-size,inherit);--utrecht-code-font-family:var(--utrecht-code-block-font-family,monospace);background-color:var(--utrecht-code-background-color);background-color:var(--utrecht-code-block-background-color);color:var(--utrecht-code-color);display:block;font-family:var(--utrecht-code-font-family,monospace),monospace;font-size:var(--utrecht-code-font-size,inherit);font-size:var(--utrecht-code-block-font-size,var(--utrecht-code-font-size,inherit));font-variant-ligatures:none;line-height:var(--utrecht-code-line-height);line-height:var(--utrecht-code-block-line-height,var(--utrecht-code-line-height));margin-block-end:var(--utrecht-code-block-margin-block-end);margin-block-start:var(--utrecht-code-block-margin-block-start);margin-inline-end:var(--utrecht-code-block-margin-inline-end);margin-inline-start:var(--utrecht-code-block-margin-inline-start);padding-block-end:var(--utrecht-code-block-padding-block-end);padding-block-start:var(--utrecht-code-block-padding-block-start);padding-inline-end:var(--utrecht-code-block-padding-inline-end);padding-inline-start:var(--utrecht-code-block-padding-inline-start);white-space:pre}.utrecht-html pre[hidden]:has(>code:only-child){display:none}.utrecht-html pre:has(>code:only-child)>code{display:contents}.utrecht-html input[type=radio i]{--_utrecht-radio-button-background-color:var(\n    --_utrecht-radio-button-interactive-background-color,var(--_utrecht-radio-button-state-background-color,var(--utrecht-radio-button-background-color))\n  );--_utrecht-radio-button-border-color:var(\n    --_utrecht-radio-button-interactive-border-color,var(--_utrecht-radio-button-state-border-color,var(--utrecht-radio-button-border-color,currentColor))\n  );--_utrecht-radio-button-border-width:var(\n    --_utrecht-radio-button-interactive-border-width,var(--_utrecht-radio-button-state-border-width,var(--utrecht-radio-button-border-width))\n  );--_utrecht-radio-button-color:var(\n    --_utrecht-radio-button-interactive-color,var(--_utrecht-radio-button-state-color,var(--utrecht-radio-button-color,currentColor))\n  );--_utrecht-radio-button-icon-size:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:var(--_utrecht-radio-button-background-color);background-image:radial-gradient(circle,var(--_utrecht-radio-button-color,transparent) calc(var(--_utrecht-radio-button-icon-size, 50%) - 5%),var(--_utrecht-radio-button-background-color,currentColor) var(--_utrecht-radio-button-icon-size,50%));background-position:50%;background-repeat:no-repeat;background-size:contain;block-size:var(--utrecht-radio-button-size,1em);border-color:var(--_utrecht-radio-button-border-color);border-radius:50%;border-style:solid;border-width:var(--_utrecht-radio-button-border-width);cursor:var(--utrecht-action-activate-cursor,revert);inline-size:var(--utrecht-radio-button-size,1em);margin-block-end:0;margin-block-start:0;margin-inline-end:0;margin-inline-end:var(--utrecht-radio-button-margin-inline-end);margin-inline-start:0;min-block-size:24px;min-inline-size:24px;-webkit-print-color-adjust:exact;print-color-adjust:exact;-webkit-user-select:none;user-select:none;vertical-align:top}.utrecht-html input[type=radio i]:checked{--_utrecht-radio-button-icon-size:var(--utrecht-radio-button-icon-size,50%);--_utrecht-radio-button-state-background-color:var(--utrecht-radio-button-checked-background-color);--_utrecht-radio-button-state-border-color:var(--utrecht-radio-button-checked-border-color);--_utrecht-radio-button-state-border-width:var(--utrecht-radio-button-checked-border-width);--_utrecht-radio-button-state-color:var(--utrecht-radio-button-checked-color);--_utrecht-radio-button-state-active-background-color:var(--utrecht-radio-button-checked-active-background-color);--_utrecht-radio-button-state-active-border-color:var(--utrecht-radio-button-checked-active-border-color);--_utrecht-radio-button-state-active-border-width:var(--utrecht-radio-button-checked-active-border-width);--_utrecht-radio-button-state-active-color:var(--utrecht-radio-button-checked-active-color);--_utrecht-radio-button-state-focus-background-color:var(--utrecht-radio-button-checked-focus-background-color);--_utrecht-radio-button-state-focus-border-color:var(--utrecht-radio-button-checked-focus-border-color);--_utrecht-radio-button-state-focus-border-width:var(--utrecht-radio-button-checked-focus-border-width);--_utrecht-radio-button-state-focus-color:var(--utrecht-radio-button-checked-focus-color);--_utrecht-radio-button-state-hover-background-color:var(--utrecht-radio-button-checked-hover-background-color);--_utrecht-radio-button-state-hover-border-color:var(--utrecht-radio-button-checked-hover-border-color);--_utrecht-radio-button-state-hover-border-width:var(--utrecht-radio-button-checked-hover-border-width);--_utrecht-radio-button-state-hover-color:var(--utrecht-radio-button-checked-hover-color)}.utrecht-html input[type=radio i]:disabled{--_utrecht-radio-button-background-color:var(--utrecht-radio-button-disabled-background-color);--_utrecht-radio-button-border-color:var(--utrecht-radio-button-disabled-border-color);--_utrecht-radio-button-border-width:var(--utrecht-radio-button-disabled-border-width);--_utrecht-radio-button-color:var(--utrecht-radio-button-disabled-color);--_utrecht-radio-button-focus-background-color:var(--_utrecht-radio-button-background-color);--_utrecht-radio-button-focus-border-color:var(--_utrecht-radio-button-border-color);--_utrecht-radio-button-focus-border-width:var(--_utrecht-radio-button-border-width);--_utrecht-radio-button-focus-color:var(--_utrecht-radio-button-color);--_utrecht-radio-button-active-background-color:var(--_utrecht-radio-button-background-color);--_utrecht-radio-button-active-border-color:var(--_utrecht-radio-button-border-color);--_utrecht-radio-button-active-border-width:var(--_utrecht-radio-button-border-width);--_utrecht-radio-button-active-color:var(--_utrecht-radio-button-color);--_utrecht-radio-button-hover-background-color:var(--_utrecht-radio-button-background-color);--_utrecht-radio-button-hover-border-color:var(--_utrecht-radio-button-border-color);--_utrecht-radio-button-hover-border-width:var(--_utrecht-radio-button-border-width);--_utrecht-radio-button-hover-color:var(--_utrecht-radio-button-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-html input[type=radio i]:invalid,.utrecht-html input[type=radio i][aria-invalid=true]{border-color:var(--utrecht-radio-button-invalid-border-color,var(--utrecht-radio-button-border-color));border-width:var(--utrecht-radio-button-invalid-border-width,var(--utrecht-radio-button-border-width));color:var(--utrecht-radio-button-invalid-color,var(--utrecht-radio-button-color))}.utrecht-html input[type=radio i]:focus:not([aria-disabled=true],:disabled){--_utrecht-radio-button-interactive-background-color:var(\n    --utrecht-radio-button-focus-background-color,var(--utrecht-radio-button-focus-background-color)\n  );--_utrecht-radio-button-interactive-border-color:var(\n    --utrecht-radio-button-focus-border-color,var(--utrecht-radio-button-focus-border-color)\n  );--_utrecht-radio-button-interactive-border-width:var(\n    --utrecht-radio-button-focus-border-width,var(--utrecht-radio-button-focus-border-width)\n  );--_utrecht-radio-button-interactive-color:var(\n    --utrecht-radio-button-focus-color,var(--utrecht-radio-button-focus-color)\n  )}.utrecht-html input[type=radio i]:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html input[type=radio i]:hover:not([aria-disabled=true],:disabled){--_utrecht-radio-button-interactive-background-color:var(\n    --_utrecht-radio-button-state-hover-background-color,var(--utrecht-radio-button-hover-background-color)\n  );--_utrecht-radio-button-interactive-border-color:var(\n    --_utrecht-radio-button-state-hover-border-color,var(--utrecht-radio-button-hover-border-color)\n  );--_utrecht-radio-button-interactive-border-width:var(\n    --_utrecht-radio-button-state-hover-border-width,var(--utrecht-radio-button-hover-border-width)\n  );--_utrecht-radio-button-interactive-color:var(\n    --_utrecht-radio-button-state-hover-color,var(--utrecht-radio-button-hover-color)\n  )}.utrecht-html input[type=radio i]:active:not([aria-disabled=true],:disabled){--_utrecht-radio-button-interactive-background-color:var(\n    --_utrecht-radio-button-state-active-background-color,var(--utrecht-radio-button-active-background-color)\n  );--_utrecht-radio-button-interactive-border-color:var(\n    --_utrecht-radio-button-state-active-border-color,var(--utrecht-radio-button-active-border-color)\n  );--_utrecht-radio-button-interactive-border-width:var(\n    --_utrecht-radio-button-state-active-border-width,var(--utrecht-radio-button-active-border-width)\n  );--_utrecht-radio-button-interactive-color:var(\n    --_utrecht-radio-button-state-active-color,var(--utrecht-radio-button-active-color)\n  )}.utrecht-html select{background-color:var(--utrecht-select-background-color,var(--utrecht-form-control-background-color));border-block-end-width:var(--utrecht-select-border-block-end-width,var(--utrecht-select-border-width,var(--utrecht-form-control-border-width)));border-block-start-width:var(--utrecht-select-border-width,var(--utrecht-form-control-border-width));border-color:var(--utrecht-select-border-color,var(--utrecht-form-control-border-color));border-inline-end-width:var(--utrecht-select-border-width,var(--utrecht-form-control-border-width));border-inline-start-width:var(--utrecht-select-border-width,var(--utrecht-form-control-border-width));border-radius:var(--utrecht-select-border-radius,var(--utrecht-form-control-border-radius,0));border-style:solid;color:var(--utrecht-select-color,var(--utrecht-form-control-color));font-family:var(--utrecht-select-font-family,var(--utrecht-form-control-font-family));font-size:var(--utrecht-select-font-size,var(--utrecht-form-control-font-size));inline-size:100%;max-inline-size:var(--utrecht-select-max-inline-size,var(--utrecht-form-control-max-inline-size));min-block-size:var(--utrecht-select-min-block-size,var(--utrecht-pointer-target-min-size,44px));min-inline-size:var(--utrecht-pointer-target-min-size,44px);padding-block-end:var(--utrecht-select-padding-block-end,var(--utrecht-form-control-padding-block-end));padding-block-start:var(--utrecht-select-padding-block-start,var(--utrecht-form-control-padding-block-start));padding-inline-end:var(--utrecht-select-padding-inline-end,var(--utrecht-form-control-padding-inline-end));padding-inline-start:var(--utrecht-select-padding-inline-start,var(--utrecht-form-control-padding-inline-start))}.utrecht-html select:focus{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-select-focus-background-color,var(--utrecht-form-control-focus-background-color,var(--utrecht-select-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-select-focus-border-color,var(--utrecht-form-control-focus-border-color,var(--utrecht-select-border-color,var(--utrecht-form-control-border-color))));box-shadow:var(--_utrecht-focus-ring-box-shadow);color:var(--utrecht-select-focus-color,var(--utrecht-form-control-focus-color,var(--utrecht-select-color,var(--utrecht-form-control-color))));outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html select:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-html select:disabled{background-color:var(--utrecht-select-disabled-background-color,var(--utrecht-form-control-disabled-background-color,var(--utrecht-select-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-select-disabled-border-color,var(--utrecht-form-control-disabled-border-color,var(--utrecht-select-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-select-disabled-color,var(--utrecht-form-control-disabled-color,var(--utrecht-select-color,var(--utrecht-form-control-color))));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-html select[aria-invalid=true]{--_utrecht-select-border-width:var(\n    --utrecht-select-invalid-border-width,var(\n      --utrecht-form-control-invalid-border-width,var(--utrecht-select-border-width,var(--utrecht-form-control-border-width))\n    )\n  );background-color:var(--utrecht-select-invalid-background-color,var(--utrecht-form-control-invalid-background-color,var(--utrecht-select-background-color,var(--utrecht-form-control-background-color))));border-width:var(--_utrecht-select-border-width);border-block-end-width:var(--utrecht-select-invalid-border-block-end-width,var(--utrecht-form-control-invalid-border-block-end-width,var(--utrecht-select-border-block-end-width,var(--utrecht-form-control-border-block-end-width,var(--_utrecht-select-border-width)))));border-color:var(--utrecht-select-invalid-border-color,var(--utrecht-form-control-invalid-border-color,var(--utrecht-select-border-color,var(--utrecht-form-control-border-color))))}.utrecht-html hr{--utrecht-space-around:1;border-color:var(--utrecht-separator-color);border-style:solid;border-width:0 0 var(--utrecht-separator-block-size) 0;margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-separator-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-separator-margin-block-start, 0))}.utrecht-html table{--utrecht-space-around:1;border-collapse:separate;border-color:var(--utrecht-table-border-color,0);border-spacing:0;border-style:solid;border-width:var(--utrecht-table-border-width,0);font-family:var(--utrecht-table-font-family,var(--utrecht-document-font-family));font-size:var(--utrecht-table-font-size,inherit);inline-size:100%;line-height:var(--utrecht-table-line-height,inherit);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-table-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-table-margin-block-start, 0))}.utrecht-html caption{break-inside:avoid;color:var(--utrecht-table-caption-color);font-family:var(--utrecht-table-caption-font-family);font-size:var(--utrecht-table-caption-font-size);font-weight:var(--utrecht-table-caption-font-weight);line-height:var(--utrecht-table-caption-line-height);margin-block-end:var(--utrecht-table-caption-margin-block-end);page-break-after:avoid;text-align:var(--utrecht-table-caption-text-align,center)}.utrecht-html thead{--_utrecht-table-header-cell-vertical-align:bottom;--_utrecht-table-header-cell-z-index:8;background-color:var(--utrecht-table-header-background-color);break-inside:avoid;color:var(--utrecht-table-header-color);font-weight:var(--utrecht-table-header-font-weight);page-break-inside:avoid;text-transform:var(--utrecht-table-header-text-transform)}.utrecht-html tbody{--_utrecht-table-header-cell-z-index:2}.utrecht-html th{color:var(--utrecht-table-header-cell-color);font-size:var(--utrecht-table-header-cell-font-size);font-weight:var(--utrecht-table-header-cell-font-weight,bold);text-transform:var(--utrecht-table-header-cell-text-transform);vertical-align:var(--_utrecht-table-header-cell-vertical-align,top);z-index:var(--_utrecht-table-header-cell-z-index)}.utrecht-html td,.utrecht-html th{--utrecht-icon-size:var(--utrecht-table-cell-icon-size);block-size:var(--utrecht-table-cell-line-height,1em);line-height:var(--utrecht-table-cell-line-height,inherit);padding-block-end:var(--utrecht-table-cell-padding-block-end,0);padding-block-start:var(--utrecht-table-cell-padding-block-start,0);padding-inline-end:var(--utrecht-table-cell-padding-inline-end,0);padding-inline-start:var(--utrecht-table-cell-padding-inline-start,0);text-align:start}.utrecht-html td,.utrecht-html th{border-block-end-color:var(--utrecht-table-row-border-block-end-color,transparent);border-block-end-style:solid;border-block-end-width:var(--utrecht-table-row-border-block-end-width,0);vertical-align:top}.utrecht-html td:first-child,.utrecht-html th:first-child{padding-inline-start:var(--utrecht-table-row-padding-inline-start,var(--utrecht-table-cell-padding-inline-start,0))}.utrecht-html td:last-child,.utrecht-html th:last-child{padding-inline-end:var(--utrecht-table-row-padding-inline-end,var(--utrecht-table-cell-padding-inline-end,0))}.utrecht-html thead tr:last-child th{border-block-end-color:var(--utrecht-table-header-border-block-end-color,transparent);border-block-end-style:solid;border-block-end-width:var(--utrecht-table-header-border-block-end-width,0)}.utrecht-html td.numeric,.utrecht-html tfoot>tr>th.numeric,.utrecht-html th[scope=column].numeric,.utrecht-html thead>tr>th.numeric{--_utrecht-table-cell-text-align:right;text-align:var(--_utrecht-table-cell-text-align)}.utrecht-html td.numeric{font-variant-numeric:lining-nums tabular-nums}.utrecht-html table.alternate-row-color>tr:nth-child(2n)>td,.utrecht-html table.alternate-row-color>tr:nth-child(2n)>th{background-color:var(--utrecht-table-row-alternate-even-background-color);color:var(--utrecht-table-row-alternate-even-color)}.utrecht-html table.alternate-row-color>tr:nth-child(odd)>td,.utrecht-html table.alternate-row-color>tr:nth-child(odd)>th{background-color:var(--utrecht-table-row-alternate-odd-background-color);color:var(--utrecht-table-row-alternate-odd-color)}.utrecht-html table.alternate-row-color>tbody>tr:nth-child(2n)>td,.utrecht-html table.alternate-row-color>tbody>tr:nth-child(2n)>th{background-color:var(--utrecht-table-row-alternate-even-background-color);color:var(--utrecht-table-row-alternate-even-color)}.utrecht-html table.alternate-row-color>tbody>tr:nth-child(odd)>td,.utrecht-html table.alternate-row-color>tbody>tr:nth-child(odd)>th{background-color:var(--utrecht-table-row-alternate-odd-background-color);color:var(--utrecht-table-row-alternate-odd-color)}.utrecht-html textarea{background-color:var(--utrecht-textarea-background-color,var(--utrecht-form-control-background-color));block-size:auto;border-width:var(--utrecht-textarea-border-width,var(--utrecht-form-control-border-width));border-block-end-width:var(--utrecht-textarea-border-bottom-width,var(--utrecht-textarea-border-width,var(--utrecht-form-control-border-width)));border-color:var(--utrecht-textarea-border-color,var(--utrecht-form-control-border-color));border-radius:var(--utrecht-textarea-border-radius,var(--utrecht-form-control-border-radius,0));border-style:solid;box-sizing:border-box;color:var(--utrecht-textarea-color,var(--utrecht-form-control-color));font-family:var(--utrecht-textarea-font-family,var(--utrecht-form-control-font-family));font-size:var(--utrecht-textarea-font-size,var(--utrecht-form-control-font-size,inherit));font-weight:400;inline-size:100%;line-height:var(--utrecht-textarea-line-height,initial);max-inline-size:var(--utrecht-textarea-max-inline-size,var(--utrecht-form-control-max-inline-size));min-block-size:var(--utrecht-textarea-min-block-size,var(--utrecht-pointer-target-min-size,44px));min-inline-size:var(--utrecht-pointer-target-min-size,44px);padding-block-end:var(--utrecht-textarea-padding-block-end,var(--utrecht-form-control-padding-block-end,0));padding-block-start:var(--utrecht-textarea-padding-block-start,var(--utrecht-form-control-padding-block-start,0));padding-inline-end:var(--utrecht-textarea-padding-inline-end,var(--utrecht-form-control-padding-inline-end,initial));padding-inline-start:var(--utrecht-textarea-padding-inline-start,var(--utrecht-form-control-padding-inline-start,initial));resize:vertical;resize:block}.utrecht-html textarea:focus{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-textarea-focus-background-color,var(--utrecht-form-control-focus-background-color,var(--utrecht-textarea-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textarea-focus-border-color,var(--utrecht-form-control-focus-border-color,var(--utrecht-textarea-border-color,var(--utrecht-form-control-border-color))));box-shadow:var(--_utrecht-focus-ring-box-shadow);color:var(--utrecht-textarea-focus-color,var(--utrecht-form-control-focus-color,var(--utrecht-textarea-color,var(--utrecht-form-control-color))));outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html textarea:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-html textarea:invalid,.utrecht-html textarea[aria-invalid=true]{--_utrecht-textarea-border-width:var(\n    --utrecht-textarea-invalid-border-width,var(\n      --utrecht-form-control-invalid-border-width,var(--utrecht-textarea-border-width,var(--utrecht-form-control-border-width))\n    )\n  );background-color:var(--utrecht-textarea-invalid-background-color,var(--utrecht-form-control-invalid-background-color,var(--utrecht-textarea-background-color,var(--utrecht-form-control-background-color))));border-width:var(--_utrecht-textarea-border-width);border-block-end-width:var(--utrecht-textarea-invalid-border-bottom-width,var(--utrecht-form-control-invalid-border-bottom-width,var(--utrecht-textarea-border-bottom-width,var(--utrecht-form-control-border-bottom-width,var(--_utrecht-textarea-border-width)))));border-color:var(--utrecht-textarea-invalid-border-color,var(--utrecht-form-control-invalid-border-color,var(--utrecht-textarea-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textarea-invalid-color,var(--utrecht-form-control-invalid-color,var(--utrecht-textarea-color,var(--utrecht-form-control-color))))}.utrecht-html textarea:read-only{background-color:var(--utrecht-textarea-read-only-border,var(--utrecht-form-control-read-only-background-color,var(--utrecht-textarea-border,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textarea-read-only-border,var(--utrecht-form-control-read-only-border-color,var(--utrecht-textarea-border,var(--utrecht-form-control-border-color))));color:var(--utrecht-textarea-read-only-color,var(--utrecht-form-control-read-only-color,var(--utrecht-textarea-color,var(--utrecht-form-control-color))))}.utrecht-html textarea:disabled{background-color:var(--utrecht-textarea-disabled-background-color,var(--utrecht-form-control-disabled-background-color,var(--utrecht-textarea-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textarea-disabled-border-color,var(--utrecht-form-control-disabled-border-color,var(--utrecht-textarea-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textarea-disabled-color,var(--utrecht-form-control-disabled-color,var(--utrecht-textarea-color,var(--utrecht-form-control-color))));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-html textarea::placeholder{color:var(--utrecht-textarea-placeholder-color,var(--utrecht-form-control-placeholder-color,var(--utrecht-textarea-color,var(--utrecht-form-control-color))));font-style:var(--utrecht-form-control-placeholder-font-style);opacity:100%}.utrecht-html input:not([type]),.utrecht-html input[type=date i],.utrecht-html input[type=datetime-local i],.utrecht-html input[type=email i],.utrecht-html input[type=month i],.utrecht-html input[type=number i],.utrecht-html input[type=password i],.utrecht-html input[type=search i],.utrecht-html input[type=tel i],.utrecht-html input[type=text i],.utrecht-html input[type=time i],.utrecht-html input[type=url i],.utrecht-html input[type=week i]{--_utrecht-textbox-value-char:0.667em + 0.334ch;--_utrecht-textbox-max-inline-size:calc(var(--utrecht-textbox-value-max-length)*var(--_utrecht-textbox-value-char) + var(--utrecht-textbox-padding-inline-end, var(--utrecht-form-control-padding-inline-end, 0)) + var(--utrecht-textbox-padding-inline-start, var(--utrecht-form-control-padding-inline-start, 0)) + var(--utrecht-textbox-border-width, var(--utrecht-form-control-border-width, 0)) + var(--utrecht-textbox-autocomplete-ui-size, 44px));background-color:var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color));block-size:auto;border-width:var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width));border-block-end-width:var(--utrecht-textbox-border-bottom-width,var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width)));border-color:var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color));border-radius:var(--utrecht-textbox-border-radius,var(--utrecht-form-control-border-radius,0));border-style:solid;box-sizing:border-box;color:var(--utrecht-textbox-color,var(--utrecht-form-control-color));font-family:var(--utrecht-textbox-font-family,var(--utrecht-form-control-font-family));font-size:var(--utrecht-textbox-font-size,var(--utrecht-form-control-font-size,inherit));font-weight:400;inline-size:100%;line-height:var(--utrecht-textbox-line-height,var(--utrecht-form-control-line-height,initial));max-inline-size:min(var(--_utrecht-textbox-max-inline-size,100%),var(--utrecht-textbox-max-inline-size,var(--utrecht-form-control-max-inline-size)));min-block-size:var(--utrecht-pointer-target-min-size,44px);min-inline-size:var(--utrecht-pointer-target-min-size,44px);padding-block-end:var(--utrecht-textbox-padding-block-end,var(--utrecht-form-control-padding-block-end,0));padding-block-start:var(--utrecht-textbox-padding-block-start,var(--utrecht-form-control-padding-block-start,0));padding-inline-end:var(--utrecht-textbox-padding-inline-end,var(--utrecht-form-control-padding-inline-end,initial));padding-inline-start:var(--utrecht-textbox-padding-inline-start,var(--utrecht-form-control-padding-inline-start,initial))}.utrecht-html input:not([type]):focus,.utrecht-html input[type=date i]:focus,.utrecht-html input[type=datetime-local i]:focus,.utrecht-html input[type=email i]:focus,.utrecht-html input[type=month i]:focus,.utrecht-html input[type=number i]:focus,.utrecht-html input[type=password i]:focus,.utrecht-html input[type=search i]:focus,.utrecht-html input[type=tel i]:focus,.utrecht-html input[type=text i]:focus,.utrecht-html input[type=time i]:focus,.utrecht-html input[type=url i]:focus,.utrecht-html input[type=week i]:focus{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-textbox-focus-background-color,var(--utrecht-form-control-focus-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-focus-border-color,var(--utrecht-form-control-focus-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));box-shadow:var(--_utrecht-focus-ring-box-shadow);color:var(--utrecht-textbox-focus-color,var(--utrecht-form-control-focus-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-html input:not([type]):focus:not(:focus-visible),.utrecht-html input[type=date i]:focus:not(:focus-visible),.utrecht-html input[type=datetime-local i]:focus:not(:focus-visible),.utrecht-html input[type=email i]:focus:not(:focus-visible),.utrecht-html input[type=month i]:focus:not(:focus-visible),.utrecht-html input[type=number i]:focus:not(:focus-visible),.utrecht-html input[type=password i]:focus:not(:focus-visible),.utrecht-html input[type=search i]:focus:not(:focus-visible),.utrecht-html input[type=tel i]:focus:not(:focus-visible),.utrecht-html input[type=text i]:focus:not(:focus-visible),.utrecht-html input[type=time i]:focus:not(:focus-visible),.utrecht-html input[type=url i]:focus:not(:focus-visible),.utrecht-html input[type=week i]:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-html input:not([type]):invalid,.utrecht-html input:not([type])[aria-invalid=true],.utrecht-html input[type=date i]:invalid,.utrecht-html input[type=date i][aria-invalid=true],.utrecht-html input[type=datetime-local i]:invalid,.utrecht-html input[type=datetime-local i][aria-invalid=true],.utrecht-html input[type=email i]:invalid,.utrecht-html input[type=email i][aria-invalid=true],.utrecht-html input[type=month i]:invalid,.utrecht-html input[type=month i][aria-invalid=true],.utrecht-html input[type=number i]:invalid,.utrecht-html input[type=number i][aria-invalid=true],.utrecht-html input[type=password i]:invalid,.utrecht-html input[type=password i][aria-invalid=true],.utrecht-html input[type=search i]:invalid,.utrecht-html input[type=search i][aria-invalid=true],.utrecht-html input[type=tel i]:invalid,.utrecht-html input[type=tel i][aria-invalid=true],.utrecht-html input[type=text i]:invalid,.utrecht-html input[type=text i][aria-invalid=true],.utrecht-html input[type=time i]:invalid,.utrecht-html input[type=time i][aria-invalid=true],.utrecht-html input[type=url i]:invalid,.utrecht-html input[type=url i][aria-invalid=true],.utrecht-html input[type=week i]:invalid,.utrecht-html input[type=week i][aria-invalid=true]{--_utrecht-textbox-border-width:var(\n    --utrecht-textbox-invalid-border-width,var(\n      --utrecht-form-control-invalid-border-width,var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width))\n    )\n  );background-color:var(--utrecht-textbox-invalid-background-color,var(--utrecht-form-control-invalid-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-width:var(--_utrecht-textbox-border-width);border-block-end-width:var(--utrecht-textbox-invalid-border-bottom-width,var(--utrecht-form-control-invalid-border-bottom-width,var(--utrecht-textbox-border-bottom-width,var(--utrecht-form-control-border-bottom-width,var(--_utrecht-textbox-border-width)))));border-color:var(--utrecht-textbox-invalid-border-color,var(--utrecht-form-control-invalid-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-invalid-color,var(--utrecht-form-control-invalid-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-html input:not([type]):read-only,.utrecht-html input[type=date i]:read-only,.utrecht-html input[type=datetime-local i]:read-only,.utrecht-html input[type=email i]:read-only,.utrecht-html input[type=month i]:read-only,.utrecht-html input[type=number i]:read-only,.utrecht-html input[type=password i]:read-only,.utrecht-html input[type=search i]:read-only,.utrecht-html input[type=tel i]:read-only,.utrecht-html input[type=text i]:read-only,.utrecht-html input[type=time i]:read-only,.utrecht-html input[type=url i]:read-only,.utrecht-html input[type=week i]:read-only{background-color:var(--utrecht-textbox-read-only-background-color,var(--utrecht-form-control-read-only-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-read-only-border-color,var(--utrecht-form-control-read-only-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-read-only-color,var(--utrecht-form-control-read-only-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-html input:not([type]):disabled,.utrecht-html input[type=date i]:disabled,.utrecht-html input[type=datetime-local i]:disabled,.utrecht-html input[type=email i]:disabled,.utrecht-html input[type=month i]:disabled,.utrecht-html input[type=number i]:disabled,.utrecht-html input[type=password i]:disabled,.utrecht-html input[type=search i]:disabled,.utrecht-html input[type=tel i]:disabled,.utrecht-html input[type=text i]:disabled,.utrecht-html input[type=time i]:disabled,.utrecht-html input[type=url i]:disabled,.utrecht-html input[type=week i]:disabled{background-color:var(--utrecht-textbox-disabled-background-color,var(--utrecht-form-control-disabled-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-disabled-border-color,var(--utrecht-form-control-disabled-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-disabled-color,var(--utrecht-form-control-disabled-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-html input:not([type])::placeholder,.utrecht-html input[type=date i]::placeholder,.utrecht-html input[type=datetime-local i]::placeholder,.utrecht-html input[type=email i]::placeholder,.utrecht-html input[type=month i]::placeholder,.utrecht-html input[type=number i]::placeholder,.utrecht-html input[type=password i]::placeholder,.utrecht-html input[type=search i]::placeholder,.utrecht-html input[type=tel i]::placeholder,.utrecht-html input[type=text i]::placeholder,.utrecht-html input[type=time i]::placeholder,.utrecht-html input[type=url i]::placeholder,.utrecht-html input[type=week i]::placeholder{color:var(--utrecht-textbox-placeholder-color,var(--utrecht-form-control-placeholder-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));font-style:var(--utrecht-form-control-placeholder-font-style);opacity:100%}.utrecht-html input[autocomplete~=current-password i],.utrecht-html input[autocomplete~=new-password i],.utrecht-html input[type=password i]{font-variant-ligatures:none;font-variant-numeric:slashed-zero}.utrecht-html input[autocomplete~=bday i],.utrecht-html input[autocomplete~=bday-day i],.utrecht-html input[autocomplete~=bday-month i],.utrecht-html input[autocomplete~=bday-year i],.utrecht-html input[autocomplete~=cc-csc i],.utrecht-html input[autocomplete~=cc-exp i],.utrecht-html input[autocomplete~=cc-exp-month i],.utrecht-html input[autocomplete~=cc-exp-year i],.utrecht-html input[autocomplete~=cc-number i],.utrecht-html input[autocomplete~=one-time-code i],.utrecht-html input[autocomplete~=postal-code i],.utrecht-html input[autocomplete~=tel i],.utrecht-html input[autocomplete~=tel-area-code i],.utrecht-html input[autocomplete~=tel-country-code i],.utrecht-html input[autocomplete~=tel-extension i],.utrecht-html input[autocomplete~=tel-local i],.utrecht-html input[autocomplete~=tel-national i],.utrecht-html input[autocomplete~=transaction-amount i],.utrecht-html input[inputmode=decimal i],.utrecht-html input[inputmode=numeric i],.utrecht-html input[inputmode=tel i],.utrecht-html input[type=number i],.utrecht-html input[type=tel i]{-moz-appearance:textfield;font-variant-numeric:lining-nums tabular-nums}.utrecht-html input[inputmode=email i],.utrecht-html input[inputmode=url i],.utrecht-html input[type=email i],.utrecht-html input[type=url i]{font-variant-ligatures:none}.utrecht-html ul{--utrecht-space-around:1;box-sizing:border-box;font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-unordered-list-font-size,var(--utrecht-document-font-size,inherit));line-height:var(--utrecht-unordered-list-line-height,var(--utrecht-document-line-height,inherit));margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-unordered-list-margin-block-end, var(--utrecht-paragraph-margin-block-end, 0)));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-unordered-list-margin-block-start, var(--utrecht-paragraph-margin-block-start, 0)));padding-inline-start:var(--utrecht-unordered-list-padding-inline-start,2ch);text-align:start}.utrecht-html ul>li{margin-block-end:var(--utrecht-unordered-list-item-margin-block-end);margin-block-start:var(--utrecht-unordered-list-item-margin-block-start);padding-inline-start:var(--utrecht-unordered-list-item-padding-inline-start,1ch)}.utrecht-html ul>li::marker{color:var(--utrecht-unordered-list-marker-color);content:"\u25cf"}');
    var $t = ['children', 'className'];
-   function Ht(e, t) {
+   function Ut(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13724,16 +13728,16 @@
     }
     return r;
    }
-   function Ut(e) {
+   function Ht(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ht(Object(r), !0).forEach(function (t) {
+      ? Ut(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ht(Object(r)).forEach(function (t) {
+        : Ut(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13743,7 +13747,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, $t);
-    return (0, i.jsx)('div', Ut(Ut({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-html', n), children: r }));
+    return (0, i.jsx)('div', Ht(Ht({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-html', n), children: r }));
    });
    Vt.displayName = 'HTMLContent';
    d('.utrecht-heading-1{break-inside:avoid-column;color:var(--utrecht-heading-1-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-heading-1-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-1-font-size,revert);font-weight:var(--utrecht-heading-1-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-heading-1-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-1-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-heading-1-margin-block-start, 0));page-break-after:avoid;page-break-inside:avoid}.utrecht-heading-1--distanced{--utrecht-space-around:1}');
@@ -14172,8 +14176,8 @@
    });
    Nr.displayName = 'IndexCharNav';
    d('.utrecht-img{height:auto;width:auto}.utrecht-img--photo,.utrecht-img--scale-down{max-height:100%;max-width:100%}');
-   var zr = ['className', 'photo'];
-   function Lr(e, t) {
+   var Lr = ['className', 'photo'];
+   function zr(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -14189,12 +14193,12 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Lr(Object(r), !0).forEach(function (t) {
+      ? zr(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Lr(Object(r)).forEach(function (t) {
+        : zr(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -14203,14 +14207,14 @@
    var Dr = (0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = e.photo,
-     o = (0, a.Z)(e, zr);
+     o = (0, a.Z)(e, Lr);
     return (0, i.jsx)('img', Tr(Tr({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-img', { 'utrecht-img--photo': n }, r) }));
    });
    Dr.displayName = 'Image';
    d('.utrecht-link{--utrecht-icon-size:var(--utrecht-link-icon-size,1em);color:var(--_utrecht-link-state-color,var(--utrecht-link-color,var(--_utrecht-link-forced-colors-color)))}.utrecht-link:any-link{--_utrecht-link-forced-colors-color:linktext;text-decoration-color:var(--_utrecht-link-state-text-decoration-color,var(--utrecht-link-text-decoration-color,currentColor));text-decoration-line:var(--_utrecht-link-state-text-decoration,var(--utrecht-link-text-decoration,underline));text-decoration-skip-ink:all;text-decoration-thickness:max(var(--_utrecht-link-state-text-decoration-thickness,var(--utrecht-link-text-decoration-thickness)),1px);text-underline-offset:var(--utrecht-link-text-underline-offset)}.utrecht-link--icon-left{background-image:var(--utrecht-link-icon-left-background-image,none);background-position:0 .25em;background-repeat:no-repeat;color:var(--utrecht-link-color,LinkText);font-weight:var(--utrecht-typography-weight-scale-bold-font-weight);padding-inline-start:var(--utrecht-space-block-md);text-decoration-line:none}.utrecht-link--visited{--_utrecht-link-forced-colors-color:visitedtext;--_utrecht-link-state-color:var(--utrecht-link-visited-color)}.utrecht-link--hover,.utrecht-link--html-a:any-link:hover{--_utrecht-link-forced-colors-color:linktext;--_utrecht-link-state-color:var(--utrecht-link-hover-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-hover-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-hover-text-decoration-thickness);text-decoration-skip:none;text-decoration-skip-ink:none}.utrecht-link--focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;background-color:var(--utrecht-link-focus-background-color,transparent);text-decoration-skip-ink:none}.utrecht-link--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link--html-a:any-link:focus,.utrecht-link--html-span:focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-link-focus-background-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);text-decoration-skip-ink:none;z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link--html-a:any-link:focus:not(:focus-visible),.utrecht-link--html-span:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-link--active,.utrecht-link--html-a:any-link:active,.utrecht-link--html-span:active{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link--telephone{white-space:nowrap}.utrecht-link--current{cursor:var(--utrecht-action-inert-cursor,normal);font-weight:var(--utrecht-link-current-font-weight)}.utrecht-link--box-content:any-link{color:unset;display:inline-block;text-decoration-line:unset;text-decoration-skip-ink:unset;text-decoration-thickness:unset;text-underline-offset:unset}.utrecht-link--placeholder{--_utrecht-link-forced-colors-color:GrayText;--_utrecht-link-state-color:var(--utrecht-link-placeholder-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed);font-weight:var(--utrecht-link-placeholder-font-weight);text-decoration-line:none}.utrecht-link--forced-colors{--utrecht-focus-outline-color:Highlight;--utrecht-focus-inverse-outline-color:HighlightText;--utrecht-link-color:linktext;--utrecht-link-hover-color:linktext;--utrecht-link-focus-color:linktext;--utrecht-link-active-color:activetext;--utrecht-link-visited-color:visitedtext;--utrecht-link-placeholder-color:GrayText}');
    d('.utrecht-link-button{--utrecht-icon-size:var(--utrecht-link-icon-size,1em);--_utrecht-link-forced-colors-color:linktext;--utrecht-icon-size:var(--utrecht-button-icon-size,1em);align-items:center;color:var(--_utrecht-link-state-color,var(--utrecht-link-color,var(--_utrecht-link-forced-colors-color)));cursor:pointer;display:inline-flex;font-family:var(--utrecht-button-font-family,var(--utrecht-document-font-family));font-size:var(--utrecht-button-font-size,var(--utrecht-document-font-family));font-weight:var(--utrecht-button-font-weight);gap:var(--utrecht-button-icon-gap);inline-size:var(--utrecht-button-inline-size,auto);justify-content:center;line-height:inherit;min-block-size:var(--utrecht-button-min-block-size,44px);min-inline-size:var(--utrecht-button-min-inline-size,44px);padding-block-end:var(--utrecht-button-padding-block-end);padding-block-start:var(--utrecht-button-padding-block-start);padding-inline-end:var(--utrecht-button-padding-inline-end);padding-inline-start:var(--utrecht-button-padding-inline-start);text-decoration-color:var(--_utrecht-link-state-text-decoration-color,var(--utrecht-link-text-decoration-color,currentColor));text-decoration-line:var(--_utrecht-link-state-text-decoration,var(--utrecht-link-text-decoration,underline));text-decoration-skip-ink:all;text-decoration-thickness:max(var(--_utrecht-link-state-text-decoration-thickness,var(--utrecht-link-text-decoration-thickness)),1px);text-transform:var(--utrecht-button-text-transform);text-underline-offset:var(--utrecht-link-text-underline-offset);-webkit-user-select:none;user-select:none}.utrecht-link-button--hover,.utrecht-link-button--html-button:not(:disabled):hover{--_utrecht-link-forced-colors-color:linktext;--_utrecht-link-state-color:var(--utrecht-link-hover-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-hover-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-hover-text-decoration-thickness);text-decoration-skip:none;text-decoration-skip-ink:none}.utrecht-link-button--disabled{--_utrecht-link-forced-colors-color:GrayText;--_utrecht-link-state-color:var(--utrecht-link-placeholder-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed);font-weight:var(--utrecht-link-placeholder-font-weight);text-decoration-line:none}.utrecht-link-button--focus,.utrecht-link-button--html-button:not(:disabled):focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;background-color:var(--utrecht-link-focus-background-color,transparent);text-decoration-skip-ink:none}.utrecht-link-button--focus-visible,.utrecht-link-button--html-button:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link-button--active,.utrecht-link-button--html-button:not(:disabled):active{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link-button--inline{--utrecht-icon-inset-block-start:var(--utrecht-icon-baseline-inset-block-start);min-block-size:auto;min-inline-size:auto;padding-block-end:0;padding-block-start:0;padding-inline-end:0;padding-inline-start:0}.utrecht-link-button--pressed{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link-button--html-button{background-color:transparent;border-width:0}');
-   var Rr = ['children', 'disabled', 'inline', 'className', 'pressed', 'type'];
-   function Ar(e, t) {
+   var Ar = ['children', 'disabled', 'inline', 'className', 'pressed', 'type'];
+   function Rr(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -14226,30 +14230,30 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ar(Object(r), !0).forEach(function (t) {
+      ? Rr(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ar(Object(r)).forEach(function (t) {
+        : Rr(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
     return e;
    }
-   var Ir = (0, c.forwardRef)(function (e, t) {
+   var Mr = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.disabled,
      o = e.inline,
      c = e.className,
      u = e.pressed,
      s = e.type,
-     d = (0, a.Z)(e, Rr);
+     d = (0, a.Z)(e, Ar);
     return (0, i.jsx)('button', Zr(Zr({ ref: t, 'aria-pressed': 'boolean' == typeof u ? u : void 0, className: (0, l.Z)('utrecht-link-button', 'utrecht-link-button--html-button', { 'utrecht-link-button--disabled': n, 'utrecht-link-button--inline': o, 'utrecht-link-button--pressed': u }, c), disabled: n, type: s || 'button' }, d), {}, { children: r }));
    });
-   Ir.displayName = 'LinkButton';
+   Mr.displayName = 'LinkButton';
    d('.utrecht-link-list,.utrecht-link-list--html-ul{margin-block-end:0;margin-block-start:0;margin-inline-end:0;margin-inline-start:0;padding-inline-start:0}.utrecht-link-list--html-ul>li,.utrecht-link-list>li{list-style:none}.utrecht-link-list{--utrecht-link-text-decoration:none;--utrecht-link-hover-text-decoration:underline;--utrecht-link-focus-text-decoration:underline;margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-link-list-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-link-list-margin-block-start, 0))}.utrecht-link-list--distanced{--utrecht-space-around:1}.utrecht-link-list__item{--utrecht-icon-size:var(--utrecht-link-list-icon-size);--utrecht-link-icon-size:var(--utrecht-link-list-icon-size);--utrecht-icon-inset-block-start:var(--utrecht-link-list-icon-inset-block-start);display:block;font-weight:var(--utrecht-link-list-item-font-weight)}.utrecht-link-list__item+.utrecht-link-list__item{margin-block-start:var(--utrecht-link-list-item-margin-block-start)}.utrecht-link-list__link{align-items:baseline;column-gap:var(--utrecht-link-list-item-column-gap);display:inline-flex}');
-   var Mr = ['className', 'icon', 'children'],
+   var Ir = ['className', 'icon', 'children'],
     Fr = ['children', 'icon', 'links', 'className'];
    function Br(e, t) {
     var r = Object.keys(e);
@@ -14278,14 +14282,14 @@
     }
     return e;
    }
-   var Hr = (0, c.forwardRef)(function (e, t) {
+   var Ur = (0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = e.icon,
      o = e.children,
-     c = (0, a.Z)(e, Mr);
+     c = (0, a.Z)(e, Ir);
     return (0, i.jsx)('li', { className: (0, l.Z)('utrecht-link-list__item', r), children: (0, i.jsxs)(G, $r($r({ className: 'utrecht-link-list__link' }, c), {}, { ref: t, children: [n, (0, i.jsx)('span', { className: 'utrecht-link-list__link-text', children: o })] })) });
    });
-   (Hr.displayName = 'LinkListLink'),
+   (Ur.displayName = 'LinkListLink'),
     ((0, c.forwardRef)(function (e, t) {
      var r = e.children,
       n = e.icon,
@@ -14302,7 +14306,7 @@
          r,
          Array.isArray(o) &&
           o.map(function (e, t) {
-           return (0, i.jsx)(Hr, $r({ icon: 'function' == typeof n ? n() : void 0 }, e), t);
+           return (0, i.jsx)(Ur, $r({ icon: 'function' == typeof n ? n() : void 0 }, e), t);
           }),
         ],
        },
@@ -14310,7 +14314,7 @@
      );
     }).displayName = 'LinkList');
    d('.utrecht-link-social{--utrecht-icon-size:var(--utrecht-link-social-icon-size);--utrecht-icon-color:currentColor;align-items:center;background-color:var(--utrecht-link-social-background-color);block-size:var(--utrecht-link-social-size);border-color:var(--utrecht-link-social-border-color);border-radius:50%;border-style:solid;border-width:var(--utrecht-link-social-border-width);color:var(--utrecht-link-social-color);display:inline-flex;inline-size:var(--utrecht-link-social-size);justify-content:center}.utrecht-link-social--hover,.utrecht-link-social:hover{background-color:var(--utrecht-link-social-hover-background-color,var(--utrecht-link-social-background-color));color:var(--utrecht-link-social-hover-color,var(--utrecht-link-social-color));transform:var(--utrecht-link-social-hover-transform-scale)}.utrecht-link-social--focus-visible,.utrecht-link-social:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-link-social--distanced{margin-inline-start:var(--utrecht-link-social-margin-inline-start)}');
-   var Ur = ['children', 'className', 'external'];
+   var Hr = ['children', 'className', 'external'];
    function Vr(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -14342,7 +14346,7 @@
     var r = e.children,
      n = e.className,
      o = e.external,
-     c = (0, a.Z)(e, Ur);
+     c = (0, a.Z)(e, Hr);
     return (0, i.jsx)('a', qr(qr({}, c), {}, { ref: t, className: (0, l.Z)('utrecht-link-social', n), rel: !1 !== o ? 'external noopener noreferrer' : void 0, children: r }));
    }).displayName = 'LinkSocial';
    d('.utrecht-listbox{--utrecht-listbox-max-block-size:300px;background-color:var(--utrecht-listbox-background-color);border-color:var(--utrecht-listbox-border-color);border-radius:var(--utrecht-listbox-border-radius);border-style:solid;border-width:var(--utrecht-listbox-border-width);box-sizing:border-box;cursor:default;display:flex;flex-direction:column;inline-size:var(--utrecht-listbox-inline-size,var(--utrecht-form-input-max-inline-size));max-block-size:var(--utrecht-listbox-max-block-size);min-block-size:1em;overflow-block:auto;overflow-y:auto;padding-block-end:var(--utrecht-listbox-padding-block-end);padding-block-start:var(--utrecht-listbox-padding-block-start);padding-inline-end:var(--utrecht-listbox-padding-inline-end);padding-inline-start:var(--utrecht-listbox-padding-inline-start);-webkit-user-select:none;user-select:none}@media (forced-colors:active){.utrecht-listbox{--utrecht-listbox-option-selected-background-color:Highlight;--utrecht-listbox-option-selected-color:HighlightText;--utrecht-listbox-option-disabled-background-color:field;--utrecht-listbox-option-disabled-color:GrayText;background-color:field;color:fieldtext}}.utrecht-listbox--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-listbox__group,.utrecht-listbox__list{margin-block-end:0;margin-block-start:0;margin-inline-end:0;margin-inline-start:0;padding-inline-start:0}.utrecht-listbox__group{margin-block-end:var(--utrecht-listbox-option-group-margin-block-end)}.utrecht-listbox__group-label{color:var(--utrecht-listbox-option-group-label-color);font-size:var(--utrecht-listbox-option-group-label-font-size);font-weight:var(--utrecht-listbox-option-group-label-font-weight);line-height:var(--utrecht-listbox-option-group-label-line-height);margin-inline-start:var(--utrecht-listbox-option-group-label-margin-inline-start)}@media (forced-colors:active){.utrecht-listbox__group-label{background-color:field;color:fieldtext}}.utrecht-listbox__option{--utrecht-icon-size:var(--utrecht-listbox-option-icon-size,16px);align-items:center;background-color:var(--utrecht-listbox-option-background-color);box-sizing:border-box;color:var(--utrecht-listbox-option-color);display:flex;list-style:none;min-block-size:var(--utrecht-listbox-option-min-block-size,var(--utrecht-pointer-target-min-size,24px));padding-block-end:var(--utrecht-listbox-option-padding-block-end);padding-block-start:var(--utrecht-listbox-option-padding-block-start);padding-inline-end:var(--utrecht-listbox-option-padding-inline-end);padding-inline-start:var(--utrecht-listbox-option-padding-inline-start)}@media (forced-colors:active){.utrecht-listbox__option{forced-color-adjust:none}}.utrecht-listbox__option--disabled{background-color:var(--utrecht-listbox-option-disabled-background-color);color:var(--utrecht-listbox-option-disabled-color)}.utrecht-listbox__option--hover{background-color:var(--utrecht-listbox-option-hover-background-color,var(--utrecht-listbox-option-color));color:var(--utrecht-listbox-option-hover-color,var(--utrecht-listbox-option-color))}.utrecht-listbox__option--focus{background-color:var(--utrecht-listbox-option-focus-background-color,var(--utrecht-listbox-option-color));color:var(--utrecht-listbox-option-focus-color,var(--utrecht-listbox-option-color))}.utrecht-listbox__option--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);--utrecht-focus-outline-offset:calc(var(--utrecht-focus-outline-width)*-1);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-listbox__option--active{background-color:var(--utrecht-listbox-option-is-active-background-color);color:var(--utrecht-listbox-option-is-active-color);font-weight:var(--utrecht-listbox-option-is-active-font-weight)}.utrecht-listbox__option--selected{background-color:var(--utrecht-listbox-option-selected-background-color);color:var(--utrecht-listbox-option-selected-color)}.utrecht-listbox__option--html-li{list-style:none}.utrecht-listbox__option--html-li:hover{background-color:var(--utrecht-listbox-option-hover-background-color,var(--utrecht-listbox-option-color));color:var(--utrecht-listbox-option-hover-color,var(--utrecht-listbox-option-color))}.utrecht-listbox__option--html-li:focus{background-color:var(--utrecht-listbox-option-focus-background-color,var(--utrecht-listbox-option-color));color:var(--utrecht-listbox-option-focus-color,var(--utrecht-listbox-option-color))}.utrecht-listbox--disabled{cursor:var(--utrecht-action-disabled-cursor,not-allowed)}@media (forced-colors:active){.utrecht-listbox--disabled{--utrecht-listbox-option-selected-background-color:GrayText;--utrecht-listbox-option-selected-color:field;--utrecht-listbox-option-background-color:field;--utrecht-listbox-option-color:GrayText;--utrecht-listbox-background-color:field;--utrecht-listbox-color:GrayText}}.utrecht-listbox--html-div:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}');
@@ -14729,7 +14733,7 @@
     }).displayName = 'PageContentMain');
    d('.utrecht-page-footer{--utrecht-document-color:currentColor;--utrecht-heading-color:currentColor;--utrecht-link-color:currentColor;--utrecht-link-focus-color:currentColor;--utrecht-link-hover-color:currentColor;--utrecht-link-active-color:currentColor;--utrecht-link-visited-color:currentColor;background-color:var(--utrecht-page-footer-background-color);background-image:var(--utrecht-page-footer-background-image);color:var(--utrecht-page-footer-color);font-family:var(--utrecht-document-font-family);font-size:var(--utrecht-document-font-size);padding-block-end:var(--utrecht-page-footer-padding-block-end);padding-block-start:var(--utrecht-page-footer-padding-block-start);padding-inline-end:var(--utrecht-page-footer-padding-inline-end);padding-inline-start:var(--utrecht-page-footer-padding-inline-start)}.utrecht-page-footer__address--reset-address{font-style:inherit;margin-block-end:0;margin-block-start:0}');
    var Nn = ['children', 'className'];
-   function zn(e, t) {
+   function Ln(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -14741,16 +14745,16 @@
     }
     return r;
    }
-   function Ln(e) {
+   function zn(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? zn(Object(r), !0).forEach(function (t) {
+      ? Ln(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : zn(Object(r)).forEach(function (t) {
+        : Ln(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -14760,7 +14764,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Nn);
-    return (0, i.jsx)('footer', Ln(Ln({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-footer', n), children: r }));
+    return (0, i.jsx)('footer', zn(zn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-footer', n), children: r }));
    }).displayName = 'PageFooter';
    d('.utrecht-page-header{background-color:var(--utrecht-page-header-background-color);color:var(--utrecht-page-header-color);grid-area:"utrecht-header";padding-block-end:var(--utrecht-page-header-padding-block-end);padding-block-start:var(--utrecht-page-header-padding-block-start);padding-inline-end:var(--utrecht-page-padding-inline-end);padding-inline-start:var(--utrecht-page-padding-inline-start)}.utrecht-page-header__content{max-inline-size:var(--utrecht-page-max-inline-size)}');
    var Tn = ['children', 'className'];
@@ -14776,7 +14780,7 @@
     }
     return r;
    }
-   function Rn(e) {
+   function An(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -14795,10 +14799,10 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Tn);
-    return (0, i.jsx)('header', Rn(Rn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-header', n), children: r }));
+    return (0, i.jsx)('header', An(An({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-header', n), children: r }));
    }).displayName = 'PageHeader';
    d('.utrecht-paragraph{color:var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit));font-family:var(--utrecht-paragraph-font-family,var(--utrecht-document-font-family,inherit));font-size:var(--utrecht-paragraph-font-size,var(--utrecht-document-font-size,inherit));font-weight:var(--utrecht-paragraph-font-weight,inherit);line-height:var(--utrecht-paragraph-line-height,var(--utrecht-document-line-height,inherit));margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-start, 0))}.utrecht-paragraph--lead{color:var(--utrecht-paragraph-lead-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-lead-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-lead-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-lead-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-paragraph--small{color:var(--utrecht-paragraph-small-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-small-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-small-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-small-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-paragraph__small{font-size:inherit}.utrecht-paragraph__b{font-weight:inherit}.utrecht-paragraph--distanced{--utrecht-space-around:1}');
-   var An = ['children', 'className', 'lead', 'small'];
+   var Rn = ['children', 'className', 'lead', 'small'];
    function Zn(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -14811,7 +14815,7 @@
     }
     return r;
    }
-   function In(e) {
+   function Mn(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -14826,15 +14830,15 @@
     }
     return e;
    }
-   var Mn = (0, c.forwardRef)(function (e, t) {
+   var In = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.lead,
      c = e.small,
-     u = (0, a.Z)(e, An);
-    return (0, i.jsx)('p', In(In({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-paragraph', o && 'utrecht-paragraph--lead', c && 'utrecht-paragraph--small', n), children: o ? (0, i.jsx)('b', { className: 'utrecht-paragraph__b', children: r }) : c ? (0, i.jsx)('small', { className: 'utrecht-paragraph__small', children: r }) : r }));
+     u = (0, a.Z)(e, Rn);
+    return (0, i.jsx)('p', Mn(Mn({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-paragraph', o && 'utrecht-paragraph--lead', c && 'utrecht-paragraph--small', n), children: o ? (0, i.jsx)('b', { className: 'utrecht-paragraph__b', children: r }) : c ? (0, i.jsx)('small', { className: 'utrecht-paragraph__small', children: r }) : r }));
    });
-   Mn.displayName = 'Paragraph';
+   In.displayName = 'Paragraph';
    d('.utrecht-data-placeholder{background-color:var(--utrecht-data-placeholder-background-color,currentColor);block-size:1em;display:inline-block;inline-size:min(100%,var(--utrecht-data-placeholder-max-inline-size));max-inline-size:var(--utrecht-data-placeholder-max-inline-size);min-inline-size:var(--utrecht-data-placeholder-min-inline-size,10ch);vertical-align:-.1em}@media print{.utrecht-data-placeholder{outline-color:currentColor;outline-style:dashed;outline-width:.1em}}@media screen and (prefers-contrast:more){.utrecht-data-placeholder{background-color:var(--utrecht-data-placeholder-high-contrast-background-color,var(--utrecht-data-placeholder-background-color,currentColor))}}@media screen and (forced-colors:active){.utrecht-data-placeholder{background-color:GrayText}}.utrecht-data-placeholder--loading{cursor:var(--utrecht-action-busy-cursor,busy)}.utrecht-data-placeholder--print{outline-color:currentColor;outline-style:dashed;outline-width:.1em}.utrecht-data-placeholder--forced-colors{background-color:GrayText}.utrecht-data-placeholder--high-contrast{cursor:var(--utrecht-action-busy-cursor,busy)}');
    var Fn = ['loading', 'className'];
    function Bn(e, t) {
@@ -14874,7 +14878,7 @@
    }).displayName = 'DataPlaceholder';
    d('.utrecht-pre-heading{color:var(--utrecht-pre-heading-color,var(--utrecht-heading-color,var(--utrecht-document-color,inherit)));font-family:var(--utrecht-pre-heading-font-family,var(--utrecht-heading-font-family,var(--utrecht-document-font-family)));font-size:var(--utrecht-pre-heading-font-size);font-weight:var(--utrecht-pre-heading-font-weight,var(--utrecht-heading-font-weight,bold));line-height:var(--utrecht-pre-heading-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-pre-heading-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-pre-heading-margin-block-start, 0));order:var(--utrecht-pre-heading-order,0)}.utrecht-pre-heading--distanced{--utrecht-space-around:1}');
    var $n = ['children', 'className'];
-   function Hn(e, t) {
+   function Un(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -14886,16 +14890,16 @@
     }
     return r;
    }
-   function Un(e) {
+   function Hn(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Hn(Object(r), !0).forEach(function (t) {
+      ? Un(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Hn(Object(r)).forEach(function (t) {
+        : Un(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -14905,7 +14909,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, $n);
-    return (0, i.jsx)('p', Un(Un({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-pre-heading', n), children: r }));
+    return (0, i.jsx)('p', Hn(Hn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-pre-heading', n), children: r }));
    }).displayName = 'PreHeading';
    d('.utrecht-preserve-data{white-space-collapse:preserve-spaces;unicode-bidi:isolate}');
    var Vn = ['children', 'className', 'dateTime', 'value'];
@@ -15346,14 +15350,14 @@
     }
     return e;
    }
-   var zo = (0, c.forwardRef)(function (e, t) {
+   var Lo = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, So);
     return (0, i.jsx)('tbody', No(No({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__body', n), children: r }));
    });
-   zo.displayName = 'TableBody';
-   var Lo = ['children', 'className'];
+   Lo.displayName = 'TableBody';
+   var zo = ['children', 'className'];
    function To(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -15384,11 +15388,11 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, Lo);
+     o = (0, a.Z)(e, zo);
     return (0, i.jsx)('caption', Do(Do({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__caption', n), children: r }));
    }).displayName = 'TableCaption';
-   var Ro = ['children', 'className', 'numericColumn', 'selected'];
-   function Ao(e, t) {
+   var Ao = ['children', 'className', 'numericColumn', 'selected'];
+   function Ro(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -15404,27 +15408,27 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ao(Object(r), !0).forEach(function (t) {
+      ? Ro(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ao(Object(r)).forEach(function (t) {
+        : Ro(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
     return e;
    }
-   var Io = (0, c.forwardRef)(function (e, t) {
+   var Mo = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.numericColumn,
      c = e.selected,
-     u = (0, a.Z)(e, Ro);
+     u = (0, a.Z)(e, Ao);
     return (0, i.jsx)('td', Zo(Zo({ 'aria-selected': !!c || void 0 }, u), {}, { ref: t, className: (0, l.Z)('utrecht-table__cell', { 'utrecht-table__cell--selected': c, 'utrecht-table__cell--numeric-column': o }, n), children: r }));
    });
-   Io.displayName = 'TableCell';
-   var Mo = ['children', 'className', 'sticky'];
+   Mo.displayName = 'TableCell';
+   var Io = ['children', 'className', 'sticky'];
    function Fo(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -15456,11 +15460,11 @@
     var r = e.children,
      n = e.className,
      o = e.sticky,
-     c = (0, a.Z)(e, Mo);
+     c = (0, a.Z)(e, Io);
     return (0, i.jsx)('tfoot', Bo(Bo({}, c), {}, { ref: t, className: (0, l.Z)('utrecht-table__footer', { 'utrecht-table__footer--sticky': o }, n), children: r }));
    }).displayName = 'TableFooter';
    var $o = ['children', 'className', 'sticky'];
-   function Ho(e, t) {
+   function Uo(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -15472,16 +15476,16 @@
     }
     return r;
    }
-   function Uo(e) {
+   function Ho(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ho(Object(r), !0).forEach(function (t) {
+      ? Uo(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ho(Object(r)).forEach(function (t) {
+        : Uo(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -15492,7 +15496,7 @@
      n = e.className,
      o = e.sticky,
      c = (0, a.Z)(e, $o);
-    return (0, i.jsx)('thead', Uo(Uo({}, c), {}, { ref: t, className: (0, l.Z)('utrecht-table__header', { 'utrecht-table__header--sticky': o }, n), children: r }));
+    return (0, i.jsx)('thead', Ho(Ho({}, c), {}, { ref: t, className: (0, l.Z)('utrecht-table__header', { 'utrecht-table__header--sticky': o }, n), children: r }));
    });
    Vo.displayName = 'TableHeader';
    var qo = ['children', 'className', 'numericColumn', 'selected', 'sticky', 'scope'];
@@ -16004,15 +16008,15 @@
                O--, (C = e.slice(_, E)), (j.index -= _);
               } else if (!(j = a(x, 0, C, g))) continue;
               P = j.index;
-              var z = j[0],
-               L = C.slice(0, P),
-               T = C.slice(P + z.length),
+              var L = j[0],
+               z = C.slice(0, P),
+               T = C.slice(P + L.length),
                D = _ + C.length;
               d && D > d.reach && (d.reach = D);
-              var R = w.prev;
-              if ((L && ((R = l(t, R, L)), (_ += L.length)), u(t, R, O), (w = l(t, R, new o(h, m ? n.tokenize(z, m) : z, y, z))), T && l(t, w, T), O > 1)) {
-               var A = { cause: h + ',' + p, reach: D };
-               c(e, t, r, w.prev, _, A), d && A.reach > d.reach && (d.reach = A.reach);
+              var A = w.prev;
+              if ((z && ((A = l(t, A, z)), (_ += z.length)), u(t, A, O), (w = l(t, A, new o(h, m ? n.tokenize(L, m) : L, y, L))), T && l(t, w, T), O > 1)) {
+               var R = { cause: h + ',' + p, reach: D };
+               c(e, t, r, w.prev, _, R), d && R.reach > d.reach && (d.reach = R.reach);
               }
              }
             }
@@ -16833,7 +16837,7 @@
     (P.languages.py = P.languages.python);
    ((e, t) => {
     for (var r in t) b(e, r, { get: t[r], enumerable: !0 });
-   })({}, { dracula: () => S, duotoneDark: () => E, duotoneLight: () => N, github: () => z, jettwaveDark: () => U, jettwaveLight: () => V, nightOwl: () => L, nightOwlLight: () => T, oceanicNext: () => A, okaidia: () => Z, oneDark: () => q, oneLight: () => W, palenight: () => I, shadesOfPurple: () => M, synthwave84: () => F, ultramin: () => B, vsDark: () => $, vsLight: () => H });
+   })({}, { dracula: () => S, duotoneDark: () => E, duotoneLight: () => N, github: () => L, jettwaveDark: () => H, jettwaveLight: () => V, nightOwl: () => z, nightOwlLight: () => T, oceanicNext: () => R, okaidia: () => Z, oneDark: () => q, oneLight: () => W, palenight: () => M, shadesOfPurple: () => I, synthwave84: () => F, ultramin: () => B, vsDark: () => $, vsLight: () => U });
    var S = {
      plain: { color: '#F8F8F2', backgroundColor: '#282A36' },
      styles: [
@@ -16883,7 +16887,7 @@
       { types: ['important'], style: { color: '#896724' } },
      ],
     },
-    z = {
+    L = {
      plain: { color: '#393A34', backgroundColor: '#f6f8fa' },
      styles: [
       { types: ['comment', 'prolog', 'doctype', 'cdata'], style: { color: '#999988', fontStyle: 'italic' } },
@@ -16897,7 +16901,7 @@
       { types: ['tag', 'selector', 'keyword'], style: { color: '#00009f' } },
      ],
     },
-    L = {
+    z = {
      plain: { color: '#d6deeb', backgroundColor: '#011627' },
      styles: [
       { types: ['changed'], style: { color: 'rgb(162, 191, 252)', fontStyle: 'italic' } },
@@ -16936,18 +16940,18 @@
      ],
     },
     D = '#c5a5c5',
-    R = '#8dc891',
-    A = {
+    A = '#8dc891',
+    R = {
      plain: { backgroundColor: '#282c34', color: '#ffffff' },
      styles: [
       { types: ['attr-name'], style: { color: D } },
-      { types: ['attr-value'], style: { color: R } },
+      { types: ['attr-value'], style: { color: A } },
       { types: ['comment', 'block-comment', 'prolog', 'doctype', 'cdata', 'shebang'], style: { color: '#999999' } },
       { types: ['property', 'number', 'function-name', 'constant', 'symbol', 'deleted'], style: { color: '#5a9bcf' } },
       { types: ['boolean'], style: { color: '#ff8b50' } },
       { types: ['tag'], style: { color: '#fc929e' } },
-      { types: ['string'], style: { color: R } },
-      { types: ['punctuation'], style: { color: R } },
+      { types: ['string'], style: { color: A } },
+      { types: ['punctuation'], style: { color: A } },
       { types: ['selector', 'char', 'builtin', 'inserted'], style: { color: '#D8DEE9' } },
       { types: ['function'], style: { color: '#79b6f2' } },
       { types: ['operator', 'entity', 'url', 'variable'], style: { color: '#d7deea' } },
@@ -16981,7 +16985,7 @@
       { types: ['rule'], style: { color: '#e6db74' } },
      ],
     },
-    I = {
+    M = {
      plain: { color: '#bfc7d5', backgroundColor: '#292d3e' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(105, 112, 152)', fontStyle: 'italic' } },
@@ -17000,7 +17004,7 @@
       { types: ['url'], style: { color: 'rgb(221, 221, 221)' } },
      ],
     },
-    M = {
+    I = {
      plain: { color: '#9EFEFF', backgroundColor: '#2D2A55' },
      styles: [
       { types: ['changed'], style: { color: 'rgb(255, 238, 128)' } },
@@ -17067,7 +17071,7 @@
       { types: ['char'], style: { color: 'rgb(209, 105, 105)' } },
      ],
     },
-    H = {
+    U = {
      plain: { color: '#000000', backgroundColor: '#ffffff' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(0, 128, 0)' } },
@@ -17083,7 +17087,7 @@
       { types: ['class-name'], style: { color: 'rgb(38, 127, 153)' } },
      ],
     },
-    U = {
+    H = {
      plain: { color: '#f8fafc', backgroundColor: '#011627' },
      styles: [
       { types: ['prolog'], style: { color: '#000080' } },
@@ -17279,11 +17283,11 @@
   },
   57529: (e) => {
    'use strict';
-   e.exports = {};
+   e.exports = JSON.parse('{"theme.AnnouncementBar.closeButtonAriaLabel":"Sluiten","theme.BackToTopButton.buttonAriaLabel":"Scroll naar boven","theme.CodeBlock.copied":"Gekopieerd","theme.CodeBlock.copy":"Kopieer","theme.CodeBlock.copyButtonAriaLabel":"Kopieer code naar klembord","theme.CodeBlock.wordWrapToggle":"Tekstterugloop in-/uitschakelen","theme.DocSidebarItem.collapseCategoryAriaLabel":"Collapse sidebar category \'{label}\'","theme.DocSidebarItem.expandCategoryAriaLabel":"Expand sidebar category \'{label}\'","theme.ErrorPageContent.title":"Deze pagina is gecrasht.","theme.ErrorPageContent.tryAgain":"Probeer opnieuw","theme.NavBar.navAriaLabel":"Main","theme.NotFound.p1":"We kunnen niet vinden waar je naar op zoek bent.","theme.NotFound.p2":"Neem contact op met de eigenaar van de website die naar de originele URL heeft geleid en laat weten dat de link niet meer werkt.","theme.NotFound.title":"Pagina niet gevonden","theme.TOCCollapsible.toggleButtonLabel":"Op deze pagina","theme.admonition.caution":"pas op","theme.admonition.danger":"gevaar","theme.admonition.info":"info","theme.admonition.note":"notitie","theme.admonition.tip":"tip","theme.admonition.warning":"warning","theme.blog.archive.description":"Archief","theme.blog.archive.title":"Archief","theme.blog.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.paginator.newerEntries":"Nieuwere items","theme.blog.paginator.olderEntries":"Oudere items","theme.blog.post.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.post.paginator.newerPost":"Nieuwer bericht","theme.blog.post.paginator.olderPost":"Ouder bericht","theme.blog.post.plurals":"Een bericht|{count} berichten","theme.blog.post.readMore":"Lees meer","theme.blog.post.readMoreLabel":"Lees meer over {title}","theme.blog.post.readingTime.plurals":"Een minuut leestijd|{readingTime} minuten leestijd","theme.blog.sidebar.navAriaLabel":"Navigatie recente blogitems","theme.blog.tagTitle":"{nPosts} getagd met \\"{tagName}\\"","theme.colorToggle.ariaLabel":"Schakel tussen donkere en lichte modus (momenteel {mode})","theme.colorToggle.ariaLabel.mode.dark":"donkere modus","theme.colorToggle.ariaLabel.mode.light":"lichte modus","theme.common.editThisPage":"Bewerk deze pagina","theme.common.headingLinkTitle":"Direct link naar {heading}","theme.common.skipToMainContent":"Ga naar hoofdinhoud","theme.docs.DocCard.categoryDescription":"{count} artikelen","theme.docs.breadcrumbs.home":"Homepagina","theme.docs.breadcrumbs.navAriaLabel":"Broodkruimels","theme.docs.paginator.navAriaLabel":"Documentatie pagina","theme.docs.paginator.next":"Volgende","theme.docs.paginator.previous":"Vorige","theme.docs.sidebar.closeSidebarButtonAriaLabel":"Close navigation bar","theme.docs.sidebar.collapseButtonAriaLabel":"Zijbalk inklappen","theme.docs.sidebar.collapseButtonTitle":"Zijbalk inklappen","theme.docs.sidebar.expandButtonAriaLabel":"Zijbalk uitklappen","theme.docs.sidebar.expandButtonTitle":"Zijbalk uitklappen","theme.docs.sidebar.navAriaLabel":"Docs sidebar","theme.docs.sidebar.toggleSidebarButtonAriaLabel":"Toggle navigation bar","theme.docs.tagDocListPageTitle":"{nDocsTagged} met \\"{tagName}\\"","theme.docs.tagDocListPageTitle.nDocsTagged":"Een artikel getagd|{count} artikelen getagd","theme.docs.versionBadge.label":"Versie: {versionLabel}","theme.docs.versions.latestVersionLinkLabel":"laatste versie","theme.docs.versions.latestVersionSuggestionLabel":"Voor de huidige documentatie, zie de {latestVersionLink} ({versionLabel}).","theme.docs.versions.unmaintainedVersionLabel":"Dit is de documentatie voor {siteTitle} {versionLabel}, welke niet langer actief wordt onderhouden.","theme.docs.versions.unreleasedVersionLabel":"Dit is nog niet uitgegeven documentatie voor {siteTitle}, versie {versionLabel}","theme.lastUpdated.atDate":" op {date}","theme.lastUpdated.byUser":" door {user}","theme.lastUpdated.lastUpdatedAtBy":"Laatst bijgewerkt{atDate}{byUser}","theme.navbar.mobileLanguageDropdown.label":"Talen","theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel":"\u2190 Terug naar het hoofdmenu","theme.navbar.mobileVersionsDropdown.label":"Versies","theme.tags.tagsListLabel":"Tags:","theme.tags.tagsPageLink":"Laat alle tags zien","theme.tags.tagsPageTitle":"Tags","theme.unlistedContent.message":"This page is unlisted. Search engines will not index it, and only users having a direct link can access it.","theme.unlistedContent.title":"Unlisted page","theme.SearchBar.label":"Zoeken","theme.SearchBar.seeAll":"Laat alle {count} resultaten zien","theme.SearchModal.errorScreen.helpText":"Misschien wilt u uw netwerkverbinding controleren.","theme.SearchModal.errorScreen.titleText":"Niet in staat resultaten op te halen","theme.SearchModal.footer.closeKeyAriaLabel":"Escape-toets","theme.SearchModal.footer.closeText":"om te sluiten","theme.SearchModal.footer.navigateDownKeyAriaLabel":"Pijltoets naar beneden","theme.SearchModal.footer.navigateText":"om te navigeren","theme.SearchModal.footer.navigateUpKeyAriaLabel":"Pijltoets naar boven","theme.SearchModal.footer.searchByText":"Zoek op","theme.SearchModal.footer.selectKeyAriaLabel":"Enter-toets","theme.SearchModal.footer.selectText":"om te selecteren","theme.SearchModal.noResultsScreen.noResultsText":"Geen resultaten voor","theme.SearchModal.noResultsScreen.reportMissingResultsLinkText":"Laat het ons weten.","theme.SearchModal.noResultsScreen.reportMissingResultsText":"Zou deze zoekopdracht resultaten moeten opleveren?","theme.SearchModal.noResultsScreen.suggestedQueryText":"Probeer om te zoeken op","theme.SearchModal.placeholder":"Doorzoek de documentatie","theme.SearchModal.searchBox.cancelButtonText":"Annuleren","theme.SearchModal.searchBox.resetButtonTitle":"Maak de zoekopdracht leeg","theme.SearchModal.startScreen.favoriteSearchesTitle":"Favoriet","theme.SearchModal.startScreen.noRecentSearchesText":"Geen recente zoekopdrachten","theme.SearchModal.startScreen.recentSearchesTitle":"Recente zoekopdrachten","theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn favorieten","theme.SearchModal.startScreen.removeRecentSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn geschiedenis","theme.SearchModal.startScreen.saveRecentSearchButtonTitle":"Sla deze zoekopdracht op","theme.SearchPage.algoliaLabel":"Zoeken door Algolia","theme.SearchPage.documentsFound.plurals":"Een document gevonden|{count} documenten gevonden","theme.SearchPage.emptyResultsTitle":"Doorzoek de documentatie","theme.SearchPage.existingResultsTitle":"Zoekresultaten voor \\"{query}\\"","theme.SearchPage.fetchingNewResults":"Resultaten ophalen...","theme.SearchPage.inputLabel":"Zoeken","theme.SearchPage.inputPlaceholder":"Typ hier uw zoekopdracht","theme.SearchPage.noResultsText":"Geen resultaten gevonden"}');
   },
   16887: (e) => {
    'use strict';
-   e.exports = JSON.parse('{"/en/bingo/-4ac":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-1-dab":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-2-d09":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/blog-fbd":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"fba6c282"},"/en/blog/archive-170":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"f6cbeee1"},"/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-eff":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/en/blog/community-blocks-d61":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/en/blog/community-online-formulieren-c2a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/en/blog/de-mijlpalen-van-2022-8f1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/en/blog/design-open-dag-16e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/en/blog/design-systems-in-het-buitenland-6-lessen-5c7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/en/blog/design-systems-week-2023-komt-eraan-3af":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-d27":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/en/blog/een-overheid-practice-what-you-preach-298":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/en/blog/gebruikerstest-ondernemers-den-haag-ed2":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-e52":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/en/blog/innovatiebudget-voor-nl-design-system-a92":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-5a9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/en/blog/kick-off-werkgroepen-van-het-nl-design-system-75e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/en/blog/licentiekeuze-nl-design-system-322":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/en/blog/meerdere-manieren-contact-7b8":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-b74":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/en/blog/nl-design-system-in-2021-bbc":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/en/blog/nl-design-system-zelfstandig-verder-cf9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/en/blog/over-figma-als-keuze-voor-het-nl-design-system-750":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/en/blog/spacing-tokens-11e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/en/blog/tags-8bb":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"9bdd22eb"},"/en/blog/tags/architectuur-93f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"8df97ee5","listMetadata":"2da1f935"},"/en/blog/tags/buitenland-c08":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"232d0db4","listMetadata":"3ec61807"},"/en/blog/tags/contentrichtlijnen-267":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"d647d050","listMetadata":"164232d1"},"/en/blog/tags/design-systems-acf":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"a792b491","listMetadata":"6a2f4d46"},"/en/blog/tags/design-systems-week-9a8":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"4ecafe36","listMetadata":"e73f9950"},"/en/blog/tags/design-tokens-c98":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"0fd7eb6e","listMetadata":"520ccf84"},"/en/blog/tags/designers-115":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"6dba794c","listMetadata":"7bab27bf"},"/en/blog/tags/developers-0b0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"ca82639c","listMetadata":"a2bb2b83"},"/en/blog/tags/een-overheid-648":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"4a8999c7","listMetadata":"61e31d3f"},"/en/blog/tags/estafettemodel-a2f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"3ff65370","listMetadata":"463aafc7"},"/en/blog/tags/figma-407":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"80c19b87","listMetadata":"a2514f03"},"/en/blog/tags/formulieren-011":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"86c1b350","listMetadata":"2435a34f"},"/en/blog/tags/gebruiker-centraal-6fa":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"9b74bec5","listMetadata":"35677b07"},"/en/blog/tags/gebruikerstesten-fe0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"af5d61d0","listMetadata":"02601132"},"/en/blog/tags/lettertype-982":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"6765bbe1","listMetadata":"68117824"},"/en/blog/tags/meta-1b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"fd87590a","listMetadata":"1aa77dba"},"/en/blog/tags/mijlpalen-70a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"39418f7b","listMetadata":"7faf29d7"},"/en/blog/tags/nl-design-system-513":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"257a732d","listMetadata":"3a63c8bb"},"/en/blog/tags/richtlijnen-3c7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"14a250a4","listMetadata":"c20168b0"},"/en/blog/tags/toegankelijkheid-f80":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"04087e03","listMetadata":"27ff9d14"},"/en/blog/tags/update-651":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"dd706f12","listMetadata":"7e0bd177"},"/en/blog/tags/werkgroepen-e31":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"7e11c81b","listMetadata":"b3531ef4"},"/en/blog/tags/word-press-87e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"9c510eeb","listMetadata":"8fc68f72"},"/en/blog/toegankelijke-foutmeldingen-formulieren-078":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-3e3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e9d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/en/blog/update-nl-design-system-fca":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-c4b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-9ab":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/en/blog/wmebv-gebruikerstesten-9d6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/en/contrast/-dce":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/search-1e0":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/en/-b64":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/-f81":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/en/-98b":{"__comp":"a7bd4aaa","version":"935f2afb"},"/en/tags-01c":{"__comp":"3720c009","tags":"55960ee5"},"/en/tags/community-1ff":{"__comp":"df203c0f","tag":"53ec08ea"},"/en/-954":{"__comp":"a94703ab"},"/en/accordion-b0f":{"__comp":"17896441","content":"a77e5ea3"},"/en/action-group-24c":{"__comp":"17896441","content":"381b9e37"},"/en/alert-5e0":{"__comp":"17896441","content":"3d7707fa"},"/en/alert-dialog-9bd":{"__comp":"17896441","content":"7290f823"},"/en/avatar-e85":{"__comp":"17896441","content":"d3c1b80a"},"/en/blockquote-57d":{"__comp":"17896441","content":"7b6dc98e"},"/en/breadcrumb-navigation-c6e":{"__comp":"17896441","content":"a81e9677"},"/en/button-f7b":{"__comp":"17896441","content":"5110c353"},"/en/Calendar-310":{"__comp":"17896441","content":"ace6628c"},"/en/card-as-link-121":{"__comp":"17896441","content":"9186edf4"},"/en/case-card-991":{"__comp":"17896441","content":"fbf7ea66"},"/en/CHANGELOG-192":{"__comp":"17896441","content":"ca36df4d"},"/en/checkbox-860":{"__comp":"17896441","content":"1c0b529b"},"/en/checkbox-group-fb7":{"__comp":"17896441","content":"91c9e2b1"},"/en/coc-4b6":{"__comp":"17896441","content":"1e45e22d"},"/en/colofon-b43":{"__comp":"17896441","content":"6076374a"},"/en/community-2bb":{"__comp":"14eb3368","categoryGeneratedIndex":"7a777bcb"},"/en/community/events/estafettemodeldag-791":{"__comp":"17896441","content":"5293bf37"},"/en/community/events/overzicht-aa6":{"__comp":"14eb3368","categoryGeneratedIndex":"9f18257a"},"/en/community/sluit-je-aan-3d4":{"__comp":"17896441","content":"ad9d479a"},"/en/community/sluit-je-aan/bedankt-838":{"__comp":"17896441","content":"adb328b9"},"/en/community/wie-doet-mee-109":{"__comp":"17896441","content":"b56159c8"},"/en/componenten/-040":{"__comp":"17896441","content":"9f867b5d"},"/en/data-badge-c07":{"__comp":"17896441","content":"2e11687d"},"/en/date-input-6e0":{"__comp":"17896441","content":"48c36009"},"/en/date-input-group-807":{"__comp":"17896441","content":"3d58a721"},"/en/date-picker-39a":{"__comp":"17896441","content":"4d3e1a9b"},"/en/definition-list-47f":{"__comp":"17896441","content":"861e17e8"},"/en/dot-badge-3a9":{"__comp":"17896441","content":"0cf410ab"},"/en/drawer-204":{"__comp":"17896441","content":"5e41da51"},"/en/events/design-open-dag-5ba":{"__comp":"17896441","content":"ced44f18"},"/en/events/design-open-hour-6bd":{"__comp":"17896441","content":"0eacf79f"},"/en/events/design-open-hour/aanmelden-3d7":{"__comp":"17896441","content":"adc7d54a"},"/en/events/design-open-hour/aanmelden/bedankt-283":{"__comp":"17896441","content":"1bc7f6c3"},"/en/events/design-open-hour/overzicht-16c":{"__comp":"14eb3368","categoryGeneratedIndex":"b0a486e7"},"/en/events/design-systems-week-2022-f5c":{"__comp":"17896441","content":"cd7f02d4"},"/en/events/design-systems-week-2023-bc7":{"__comp":"17896441","content":"845a118e"},"/en/events/design-systems-week-2023/en/program-22d":{"__comp":"17896441","content":"60ab2a10"},"/en/events/design-systems-week-2023/en/timetable-eb9":{"__comp":"17896441","content":"eae49527"},"/en/events/design-systems-week-2023/programma-5a2":{"__comp":"17896441","content":"bf203e4a"},"/en/events/design-systems-week-2023/tijdschema-83e":{"__comp":"17896441","content":"b0bf1aa3"},"/en/events/design-systems-week-2024-535":{"__comp":"17896441","content":"0088abd0"},"/en/events/heartbeat-b03":{"__comp":"17896441","content":"235c86a2"},"/en/events/heartbeat/aanmelden-d05":{"__comp":"17896441","content":"323b7945"},"/en/events/heartbeat/aanmelden/bedankt-057":{"__comp":"17896441","content":"73bf6027"},"/en/events/heartbeat/overzicht-cbb":{"__comp":"14eb3368","categoryGeneratedIndex":"20a411f0"},"/en/events/heartbeat/videos-efc":{"__comp":"17896441","content":"125932a1"},"/en/fieldset-30f":{"__comp":"17896441","content":"5a50c8e4"},"/en/figure-51c":{"__comp":"17896441","content":"32470cbe"},"/en/file-input-922":{"__comp":"17896441","content":"8aa0ba1c"},"/en/form-field-bea":{"__comp":"17896441","content":"6a94b0c3"},"/en/form-field-checkbox-option-9ea":{"__comp":"17896441","content":"2fd1f4fe"},"/en/form-field-description-574":{"__comp":"17896441","content":"cd3c7377"},"/en/form-field-error-message-d71":{"__comp":"17896441","content":"d4552b9e"},"/en/form-field-label-96b":{"__comp":"17896441","content":"ddf35722"},"/en/form-field-option-label-867":{"__comp":"17896441","content":"a9493cdf"},"/en/form-field-partial-218":{"__comp":"17896441","content":"6f323067"},"/en/form-field-partial-label-90d":{"__comp":"17896441","content":"6ab13dac"},"/en/form-field-radio-option-082":{"__comp":"17896441","content":"52bdf594"},"/en/handboek-934":{"__comp":"14eb3368","categoryGeneratedIndex":"db7926ce"},"/en/handboek/component-bijdragen/candidate-stappenplan-4e4":{"__comp":"17896441","content":"564db768"},"/en/handboek/component-bijdragen/community-stappenplan-e53":{"__comp":"17896441","content":"98a78e5e"},"/en/handboek/component-bijdragen/definition-of-done-cc4":{"__comp":"17896441","content":"124d4001"},"/en/handboek/component-bijdragen/hall-of-fame-stappenplan-32a":{"__comp":"17896441","content":"28d3d582"},"/en/handboek/component-bijdragen/help-wanted-stappenplan-c04":{"__comp":"17896441","content":"aeaf35c2"},"/en/handboek/component-bijdragen/overzicht-9b2":{"__comp":"14eb3368","categoryGeneratedIndex":"95a20731"},"/en/handboek/design-tokens/-955":{"__comp":"17896441","content":"6db74d90"},"/en/handboek/designer/-1aa":{"__comp":"17896441","content":"b8bffd88"},"/en/handboek/designer/community-cf3":{"__comp":"17896441","content":"1b445115"},"/en/handboek/designer/figma-structuur-31c":{"__comp":"17896441","content":"19f8dbc7"},"/en/handboek/designer/overzicht-07f":{"__comp":"14eb3368","categoryGeneratedIndex":"4921393f"},"/en/handboek/designer/stappenplan-4b1":{"__comp":"17896441","content":"2289dd67"},"/en/handboek/designer/voorbeeld-thema-920":{"__comp":"17896441","content":"77321757"},"/en/handboek/designer/zelf-componenten-maken-875":{"__comp":"17896441","content":"dfb098ef"},"/en/handboek/developer/aan-de-slag-799":{"__comp":"17896441","content":"93a8441b"},"/en/handboek/developer/architectuur-814":{"__comp":"17896441","content":"9c1b7be2"},"/en/handboek/developer/component-inzetten-0e8":{"__comp":"17896441","content":"dcd65422"},"/en/handboek/developer/component-uitbreiden-940":{"__comp":"17896441","content":"9b2e9553"},"/en/handboek/developer/componenten-maken-d74":{"__comp":"17896441","content":"e3b51539"},"/en/handboek/developer/herbruikbare-css-9e2":{"__comp":"17896441","content":"555de4b4"},"/en/handboek/developer/meewerken-als-developer-395":{"__comp":"17896441","content":"bc2d69ea"},"/en/handboek/developer/overzicht-a06":{"__comp":"14eb3368","categoryGeneratedIndex":"b46e901f"},"/en/handboek/developer/samenwerken-aan-componenten-37c":{"__comp":"17896441","content":"e756447e"},"/en/handboek/developer/thema-maken-4ec":{"__comp":"17896441","content":"751bfb55"},"/en/handboek/estafettemodel-7d6":{"__comp":"17896441","content":"43a0fbb9"},"/en/handboek/introductie-910":{"__comp":"17896441","content":"411e6d0c"},"/en/handboek/leverancier/introductie-42a":{"__comp":"17896441","content":"20f2808f"},"/en/handboek/manager/introductie-ce3":{"__comp":"17896441","content":"26a7a4d1"},"/en/handboek/naamgeving-1d5":{"__comp":"17896441","content":"c8ac2561"},"/en/handboek/organisatie/meedoen-f3e":{"__comp":"17896441","content":"ce7b85cb"},"/en/handboek/organisatie/overzicht-b60":{"__comp":"14eb3368","categoryGeneratedIndex":"34a37bdc"},"/en/handboek/organisatie/vragen-over-aanbestedingen-bdc":{"__comp":"17896441","content":"ac66737c"},"/en/heading-d97":{"__comp":"17896441","content":"6fd5f6ab"},"/en/heading-1-e3e":{"__comp":"17896441","content":"150707f3"},"/en/heading-2-205":{"__comp":"17896441","content":"16fd2d30"},"/en/heading-3-160":{"__comp":"17896441","content":"8f6d3c26"},"/en/heading-4-b74":{"__comp":"17896441","content":"c776d6ea"},"/en/heading-5-632":{"__comp":"17896441","content":"9ec6ce4c"},"/en/heading-6-d1e":{"__comp":"17896441","content":"91059c25"},"/en/heading-group-06c":{"__comp":"17896441","content":"da2da55d"},"/en/icon-540":{"__comp":"17896441","content":"8baef6f7"},"/en/invalid-form-alert-953":{"__comp":"17896441","content":"b2991567"},"/en/language-navigation-cf8":{"__comp":"17896441","content":"c51cb369"},"/en/legend-c6f":{"__comp":"17896441","content":"09d51e35"},"/en/link-6a7":{"__comp":"17896441","content":"25b93367"},"/en/link-list-dfe":{"__comp":"17896441","content":"f633a06a"},"/en/modal-dialog-617":{"__comp":"17896441","content":"b75db01c"},"/en/navigation-bar-18d":{"__comp":"17896441","content":"da8aeb86"},"/en/non-modal-dialog-da9":{"__comp":"17896441","content":"c6b96a0f"},"/en/notification-banner-685":{"__comp":"17896441","content":"e21395b4"},"/en/number-badge-2f6":{"__comp":"17896441","content":"8ea6c2d1"},"/en/number-input-c93":{"__comp":"17896441","content":"ffcf9766"},"/en/open-source/cc0-efb":{"__comp":"17896441","content":"72b0d195"},"/en/open-source/eupl-faf":{"__comp":"17896441","content":"67d19623"},"/en/ordered-list-2f7":{"__comp":"17896441","content":"2c881fe2"},"/en/page-footer-750":{"__comp":"17896441","content":"3d377413"},"/en/page-header-40f":{"__comp":"17896441","content":"3464a859"},"/en/pagination-c17":{"__comp":"17896441","content":"3679878e"},"/en/paragraph-e05":{"__comp":"17896441","content":"68b96050"},"/en/password-input-f65":{"__comp":"17896441","content":"9228e550"},"/en/pre-heading-b30":{"__comp":"17896441","content":"3f3eb7e2"},"/en/privacyverklaring-ff9":{"__comp":"17896441","content":"2383fbae"},"/en/progress-bar-473":{"__comp":"17896441","content":"b4f4fb7e"},"/en/progress-list-5cf":{"__comp":"17896441","content":"fbfd5b4f"},"/en/project-986":{"__comp":"14eb3368","categoryGeneratedIndex":"9e2ab78b"},"/en/project/blijf-op-de-hoogte-0f9":{"__comp":"17896441","content":"281e6f8e"},"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-08d":{"__comp":"17896441","content":"32636356"},"/en/project/faq-cea":{"__comp":"17896441","content":"77bf2607"},"/en/project/kernteam-87b":{"__comp":"17896441","content":"03722200"},"/en/project/links-5cb":{"__comp":"17896441","content":"465cea2f"},"/en/project/nieuwsbrief-ff4":{"__comp":"17896441","content":"c651b2e8"},"/en/project/over-nl-design-system-ddf":{"__comp":"17896441","content":"5f7673a0"},"/en/radio-button-a20":{"__comp":"17896441","content":"d0b753ca"},"/en/radio-group-d27":{"__comp":"17896441","content":"7cc1f45d"},"/en/range-4eb":{"__comp":"17896441","content":"46500269"},"/en/rich-text-content-f5b":{"__comp":"17896441","content":"08d81d65"},"/en/richtlijnen-c7a":{"__comp":"14eb3368","categoryGeneratedIndex":"3060e3ce"},"/en/richtlijnen/formulieren/-b5e":{"__comp":"17896441","content":"54b1e9e3"},"/en/richtlijnen/formulieren/autocomplete-053":{"__comp":"17896441","content":"a7537d50"},"/en/richtlijnen/formulieren/bevestigingspagina-670":{"__comp":"17896441","content":"7af3a6ef"},"/en/richtlijnen/formulieren/buttons-9d1":{"__comp":"17896441","content":"aa8a543f"},"/en/richtlijnen/formulieren/descriptions-369":{"__comp":"17896441","content":"0556c22e"},"/en/richtlijnen/formulieren/foutmeldingen-74b":{"__comp":"17896441","content":"b83fe955"},"/en/richtlijnen/formulieren/labels-c6c":{"__comp":"17896441","content":"000024cb"},"/en/richtlijnen/formulieren/links-392":{"__comp":"17896441","content":"90f10f11"},"/en/richtlijnen/formulieren/meerdere-stappen-65a":{"__comp":"17896441","content":"f52fcd14"},"/en/richtlijnen/formulieren/overzicht-3b5":{"__comp":"14eb3368","categoryGeneratedIndex":"f42b87d8"},"/en/richtlijnen/formulieren/placeholders-361":{"__comp":"17896441","content":"0f134466"},"/en/richtlijnen/formulieren/toetsenbord-f77":{"__comp":"17896441","content":"5aa1d05c"},"/en/richtlijnen/formulieren/visueel-ontwerp-e3a":{"__comp":"17896441","content":"95312783"},"/en/richtlijnen/formulieren/voorkom-fouten-cc4":{"__comp":"17896441","content":"c8c68184"},"/en/richtlijnen/formulieren/vragen-997":{"__comp":"17896441","content":"6ad1359b"},"/en/richtlijnen/formulieren/wanneer-welk-form-element-8dc":{"__comp":"17896441","content":"b1e76af7"},"/en/richtlijnen/introductie-dfe":{"__comp":"17896441","content":"6b7d4ee0"},"/en/richtlijnen/stijl/iconen-e62":{"__comp":"17896441","content":"707334e0"},"/en/richtlijnen/stijl/kleuren-0d9":{"__comp":"17896441","content":"13ecdb40"},"/en/richtlijnen/stijl/overzicht-a44":{"__comp":"14eb3368","categoryGeneratedIndex":"d459b62b"},"/en/richtlijnen/stijl/ruimte-8c1":{"__comp":"17896441","content":"e07f5d94"},"/en/richtlijnen/stijl/typografie-c04":{"__comp":"17896441","content":"3015a2b9"},"/en/select-831":{"__comp":"17896441","content":"ed74afc1"},"/en/separator-6d1":{"__comp":"17896441","content":"e5bc4a9e"},"/en/side-navigation-1a0":{"__comp":"17896441","content":"b50de158"},"/en/skip-link-df2":{"__comp":"17896441","content":"68ddddde"},"/en/spinner-f5a":{"__comp":"17896441","content":"f5f3cece"},"/en/status-badge-799":{"__comp":"17896441","content":"d5f36106"},"/en/strong-808":{"__comp":"17896441","content":"cc7e1584"},"/en/sub-heading-d1f":{"__comp":"17896441","content":"7c4f6831"},"/en/summary-list-f83":{"__comp":"17896441","content":"4ecd84ac"},"/en/switch-499":{"__comp":"17896441","content":"b171e401"},"/en/table-a74":{"__comp":"17896441","content":"f1833817"},"/en/tabs-283":{"__comp":"17896441","content":"7e20bedc"},"/en/task-list-339":{"__comp":"17896441","content":"667b53b1"},"/en/text-input-4a4":{"__comp":"17896441","content":"8165282b"},"/en/text-input-group-d64":{"__comp":"17896441","content":"22ebae92"},"/en/textarea-761":{"__comp":"17896441","content":"70fe0045"},"/en/toegankelijkheidsverklaring-cd8":{"__comp":"17896441","content":"2933852b"},"/en/toegankelijkheidsverklaring/rapport-2023-98a":{"__comp":"17896441","content":"452f106e"},"/en/toggletip-e24":{"__comp":"17896441","content":"d3deb5db"},"/en/unordered-list-763":{"__comp":"17896441","content":"ff07fdf2"},"/en/video-ee8":{"__comp":"17896441","content":"f67ebaad"},"/en/voorbeelden-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"0abe0c91"},"/en/voorbeelden/-dd5":{"__comp":"17896441","content":"dd06f6af"},"/en/voorbeelden/onderzoek/-525":{"__comp":"17896441","content":"e59d1036"},"/en/voorbeelden/patronen-e59":{"__comp":"14eb3368","categoryGeneratedIndex":"1c4e5244"},"/en/voorbeelden/patronen/formulieren-03c":{"__comp":"14eb3368","categoryGeneratedIndex":"492f3cec"},"/en/voorbeelden/patronen/formulieren/bevestigingspagina-852":{"__comp":"17896441","content":"311596ba"},"/en/voorbeelden/patronen/formulieren/controlepagina-5da":{"__comp":"17896441","content":"3e8bb961"},"/en/voorbeelden/patronen/formulieren/foutmeldingen-6d7":{"__comp":"17896441","content":"228952b2"},"/en/voorbeelden/patronen/formulieren/funnel-header-33f":{"__comp":"17896441","content":"682b2c96"},"/en/voorbeelden/patronen/formulieren/inloggen-6ee":{"__comp":"17896441","content":"60f94907"},"/en/voorbeelden/patronen/formulieren/intropagina-dcb":{"__comp":"17896441","content":"8eda713e"},"/en/voorbeelden/patronen/formulieren/meerstappenformulier-539":{"__comp":"17896441","content":"51323ca8"},"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden-dc4":{"__comp":"17896441","content":"9f3e56ab"},"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen-92b":{"__comp":"17896441","content":"18328f1a"},"/en/voorbeelden/patronen/formulieren/responsive-design-213":{"__comp":"17896441","content":"c1a8ab3a"},"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-d0d":{"__comp":"17896441","content":"bc199175"},"/en/voorbeelden/patronen/formulieren/startpunt-5dd":{"__comp":"17896441","content":"3b7bee57"},"/en/voorbeelden/patronen/formulieren/terug-navigeren-7bb":{"__comp":"17896441","content":"acbbc3fa"},"/en/voorbeelden/patronen/formulieren/uploaden-52b":{"__comp":"17896441","content":"65c3b531"},"/en/voorbeelden/patronen/formulieren/visual-design-5c6":{"__comp":"17896441","content":"9652d10b"},"/en/voorbeelden/patronen/formulieren/volgende-stap-ac3":{"__comp":"17896441","content":"ff61fdd4"},"/en/voorbeelden/patronen/formulieren/voortgang-indicatie-5ec":{"__comp":"17896441","content":"70f68e65"},"/en/voorbeelden/templates/-f01":{"__comp":"17896441","content":"5f26db3b"},"/en/wcag-51a":{"__comp":"14eb3368","categoryGeneratedIndex":"0ca15ddc"},"/en/wcag/1.1.1-46c":{"__comp":"17896441","content":"b24d1ef2"},"/en/wcag/1.3.1-210":{"__comp":"17896441","content":"94c4067d"},"/en/wcag/1.3.5-3ca":{"__comp":"17896441","content":"a52685f4"},"/en/wcag/2.1.1-2e5":{"__comp":"17896441","content":"1fd620f1"},"/en/wcag/2.4.1-01a":{"__comp":"17896441","content":"37c1945c"},"/en/wcag/2.4.10-74f":{"__comp":"17896441","content":"d9284525"},"/en/wcag/2.4.13-73a":{"__comp":"17896441","content":"210e540d"},"/en/wcag/2.4.2-237":{"__comp":"17896441","content":"f36b0a83"},"/en/wcag/2.4.4-405":{"__comp":"17896441","content":"66227b34"},"/en/wcag/2.4.6-5a9":{"__comp":"17896441","content":"d19ee383"},"/en/wcag/2.4.7-faa":{"__comp":"17896441","content":"5ecc2432"},"/en/wcag/3.1.1-828":{"__comp":"17896441","content":"28e99dcb"},"/en/wcag/3.1.2-3f6":{"__comp":"17896441","content":"e12b15f5"},"/en/wcag/3.2.1-95b":{"__comp":"17896441","content":"c3dc88b7"},"/en/wcag/3.2.2-8ad":{"__comp":"17896441","content":"c2b84a26"},"/en/wcag/3.3.1-995":{"__comp":"17896441","content":"e98c6ca0"},"/en/wcag/3.3.3-9b6":{"__comp":"17896441","content":"5b0260c8"},"/en/wcag/3.3.4-386":{"__comp":"17896441","content":"b56ace87"},"/en/wcag/4.1.1-4d7":{"__comp":"17896441","content":"6fdf8dbf"},"/en/wcag/4.1.2-32f":{"__comp":"17896441","content":"5e427ce0"},"/en/wcag/4.1.3-3ac":{"__comp":"17896441","content":"121271ef"},"/en/wcag/introduction-f51":{"__comp":"17896441","content":"91ad73c4"}}');
+   e.exports = JSON.parse('{"/bingo/-32d":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-1-382":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-2-73d":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/blog-e28":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"b2b675dd"},"/blog/archive-f70":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"b2f554cd"},"/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-9ba":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/blog/community-blocks-20f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/blog/community-online-formulieren-2d3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/blog/de-mijlpalen-van-2022-802":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/blog/design-open-dag-18d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/blog/design-systems-in-het-buitenland-6-lessen-b57":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/blog/design-systems-week-2023-komt-eraan-a8c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-b32":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/blog/een-design-system-meerdere-producten-522":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"c9609a68"},"/blog/een-overheid-practice-what-you-preach-aa1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/blog/gebruikerstest-ondernemers-den-haag-654":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-932":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/blog/innovatiebudget-voor-nl-design-system-07b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-25a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/blog/kick-off-werkgroepen-van-het-nl-design-system-222":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/blog/licentiekeuze-nl-design-system-36b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/blog/meerdere-manieren-contact-4ed":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-bd7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/blog/nl-design-system-in-2021-b94":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/blog/nl-design-system-zelfstandig-verder-916":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/blog/over-figma-als-keuze-voor-het-nl-design-system-b7d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/blog/spacing-tokens-178":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/blog/tags-f94":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"a7023ddc"},"/blog/tags/architectuur-219":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"5b53ebf6","listMetadata":"64b13969"},"/blog/tags/buitenland-40f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"8b6c8a8c","listMetadata":"6c57e36f"},"/blog/tags/componenten-1db":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"81536b8a","listMetadata":"f9097464"},"/blog/tags/contentrichtlijnen-784":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"2f04c335","listMetadata":"7b7af99a"},"/blog/tags/design-systems-075":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"03606068","listMetadata":"61890307"},"/blog/tags/design-systems-week-e88":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"94b5e6fd","listMetadata":"a5d65f05"},"/blog/tags/design-tokens-015":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"016d3eb4","listMetadata":"a5657520"},"/blog/tags/designers-c39":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"c9c3106d","listMetadata":"6d8df171"},"/blog/tags/developers-c7b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"5a463406","listMetadata":"5919194a"},"/blog/tags/een-overheid-3b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"45f9a259","listMetadata":"18f72304"},"/blog/tags/estafettemodel-f65":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"d35b0244","listMetadata":"533b6d18"},"/blog/tags/figma-7e0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"839d3c4e","listMetadata":"e8c696cf"},"/blog/tags/formulieren-891":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"32660e7c","listMetadata":"b519f87e"},"/blog/tags/gebruiker-centraal-e1e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"36aae756","listMetadata":"dd7e6517"},"/blog/tags/gebruikersonderzoeken-8d7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"0a2d80a0","listMetadata":"8762f664"},"/blog/tags/gebruikerstesten-5ff":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"5ffa4053","listMetadata":"a65373b3"},"/blog/tags/lettertype-e97":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"bb678bf7","listMetadata":"044d2994"},"/blog/tags/logius-ef0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"17c216dc","listMetadata":"a89706a3"},"/blog/tags/meta-c3b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"d19a514d","listMetadata":"b0ef882f"},"/blog/tags/mijlpalen-6cd":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"292daa85","listMetadata":"9a9a4fab"},"/blog/tags/nl-design-system-d2e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"2efe344a","listMetadata":"2669888f"},"/blog/tags/richtlijnen-ea4":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"f20a3699","listMetadata":"d01ba261"},"/blog/tags/toegankelijkheid-5d0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"60213d5c","listMetadata":"9bf7fd7b"},"/blog/tags/update-e38":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"2ed736ae","listMetadata":"a8a015ed"},"/blog/tags/werkgroepen-7fb":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"73d20161","listMetadata":"2d685956"},"/blog/tags/word-press-c96":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"6b8ad28a","listMetadata":"abcc39c5"},"/blog/toegankelijke-foutmeldingen-formulieren-dc6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-ac9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e3f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/blog/update-nl-design-system-d7c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-925":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-3b9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/blog/wmebv-gebruikerstesten-2ec":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/contrast/-6e5":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/search-c7a":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/-cab":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/-3f9":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/-b91":{"__comp":"a7bd4aaa","version":"935f2afb"},"/tags-d7a":{"__comp":"3720c009","tags":"55960ee5"},"/tags/community-e15":{"__comp":"df203c0f","tag":"d5484ed9"},"/-83e":{"__comp":"a94703ab"},"/accordion-a3b":{"__comp":"17896441","content":"a77e5ea3"},"/action-group-e09":{"__comp":"17896441","content":"381b9e37"},"/alert-16f":{"__comp":"17896441","content":"3d7707fa"},"/alert-dialog-9e5":{"__comp":"17896441","content":"7290f823"},"/avatar-ed9":{"__comp":"17896441","content":"d3c1b80a"},"/blockquote-85f":{"__comp":"17896441","content":"7b6dc98e"},"/breadcrumb-navigation-d89":{"__comp":"17896441","content":"a81e9677"},"/button-7ed":{"__comp":"17896441","content":"5110c353"},"/Calendar-206":{"__comp":"17896441","content":"ace6628c"},"/card-as-link-c7b":{"__comp":"17896441","content":"9186edf4"},"/case-card-92c":{"__comp":"17896441","content":"fbf7ea66"},"/CHANGELOG-5b7":{"__comp":"17896441","content":"ca36df4d"},"/checkbox-8c2":{"__comp":"17896441","content":"1c0b529b"},"/checkbox-group-a25":{"__comp":"17896441","content":"91c9e2b1"},"/coc-1af":{"__comp":"17896441","content":"1e45e22d"},"/colofon-ed3":{"__comp":"17896441","content":"6076374a"},"/community-42f":{"__comp":"14eb3368","categoryGeneratedIndex":"031b9593"},"/community/events/estafettemodeldag-5f2":{"__comp":"17896441","content":"5293bf37"},"/community/events/overzicht-acd":{"__comp":"14eb3368","categoryGeneratedIndex":"72c446ac"},"/community/sluit-je-aan-00a":{"__comp":"17896441","content":"ad9d479a"},"/community/sluit-je-aan/bedankt-c5c":{"__comp":"17896441","content":"adb328b9"},"/community/wie-doet-mee-d5c":{"__comp":"17896441","content":"b56159c8"},"/componenten/-804":{"__comp":"17896441","content":"9f867b5d"},"/data-badge-f88":{"__comp":"17896441","content":"2e11687d"},"/date-input-a49":{"__comp":"17896441","content":"48c36009"},"/date-input-group-428":{"__comp":"17896441","content":"3d58a721"},"/date-picker-f04":{"__comp":"17896441","content":"4d3e1a9b"},"/definition-list-fdd":{"__comp":"17896441","content":"861e17e8"},"/dot-badge-f25":{"__comp":"17896441","content":"0cf410ab"},"/drawer-f81":{"__comp":"17896441","content":"5e41da51"},"/events/design-open-dag-c4d":{"__comp":"17896441","content":"ced44f18"},"/events/design-open-hour-08f":{"__comp":"17896441","content":"0eacf79f"},"/events/design-open-hour/aanmelden-a61":{"__comp":"17896441","content":"adc7d54a"},"/events/design-open-hour/aanmelden/bedankt-796":{"__comp":"17896441","content":"1bc7f6c3"},"/events/design-open-hour/overzicht-0f1":{"__comp":"14eb3368","categoryGeneratedIndex":"84a56bc3"},"/events/design-systems-week-2022-528":{"__comp":"17896441","content":"cd7f02d4"},"/events/design-systems-week-2023-50d":{"__comp":"17896441","content":"845a118e"},"/events/design-systems-week-2023/en/program-dc2":{"__comp":"17896441","content":"60ab2a10"},"/events/design-systems-week-2023/en/timetable-818":{"__comp":"17896441","content":"eae49527"},"/events/design-systems-week-2023/programma-b22":{"__comp":"17896441","content":"bf203e4a"},"/events/design-systems-week-2023/tijdschema-4c1":{"__comp":"17896441","content":"b0bf1aa3"},"/events/design-systems-week-2024-8f5":{"__comp":"17896441","content":"0088abd0"},"/events/heartbeat-ee2":{"__comp":"17896441","content":"235c86a2"},"/events/heartbeat/aanmelden-ef9":{"__comp":"17896441","content":"323b7945"},"/events/heartbeat/aanmelden/bedankt-e99":{"__comp":"17896441","content":"73bf6027"},"/events/heartbeat/overzicht-f94":{"__comp":"14eb3368","categoryGeneratedIndex":"bf13cd03"},"/events/heartbeat/videos-a37":{"__comp":"17896441","content":"125932a1"},"/fieldset-a0d":{"__comp":"17896441","content":"5a50c8e4"},"/figure-47b":{"__comp":"17896441","content":"32470cbe"},"/file-input-e63":{"__comp":"17896441","content":"8aa0ba1c"},"/form-field-de8":{"__comp":"17896441","content":"6a94b0c3"},"/form-field-checkbox-option-53c":{"__comp":"17896441","content":"2fd1f4fe"},"/form-field-description-1bd":{"__comp":"17896441","content":"cd3c7377"},"/form-field-error-message-e1c":{"__comp":"17896441","content":"d4552b9e"},"/form-field-label-31e":{"__comp":"17896441","content":"ddf35722"},"/form-field-option-label-598":{"__comp":"17896441","content":"a9493cdf"},"/form-field-partial-48c":{"__comp":"17896441","content":"6f323067"},"/form-field-partial-label-0e8":{"__comp":"17896441","content":"6ab13dac"},"/form-field-radio-option-6ca":{"__comp":"17896441","content":"52bdf594"},"/handboek-198":{"__comp":"14eb3368","categoryGeneratedIndex":"c45f29d0"},"/handboek/component-bijdragen/candidate-stappenplan-0ad":{"__comp":"17896441","content":"564db768"},"/handboek/component-bijdragen/community-stappenplan-83c":{"__comp":"17896441","content":"98a78e5e"},"/handboek/component-bijdragen/definition-of-done-690":{"__comp":"17896441","content":"124d4001"},"/handboek/component-bijdragen/hall-of-fame-stappenplan-319":{"__comp":"17896441","content":"28d3d582"},"/handboek/component-bijdragen/help-wanted-stappenplan-7eb":{"__comp":"17896441","content":"aeaf35c2"},"/handboek/component-bijdragen/overzicht-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"1b7e5f7c"},"/handboek/design-tokens/-ba2":{"__comp":"17896441","content":"6db74d90"},"/handboek/designer/-d2b":{"__comp":"17896441","content":"b8bffd88"},"/handboek/designer/community-3a0":{"__comp":"17896441","content":"1b445115"},"/handboek/designer/figma-structuur-b8d":{"__comp":"17896441","content":"19f8dbc7"},"/handboek/designer/overzicht-8b5":{"__comp":"14eb3368","categoryGeneratedIndex":"389658a5"},"/handboek/designer/stappenplan-b2e":{"__comp":"17896441","content":"2289dd67"},"/handboek/designer/voorbeeld-thema-531":{"__comp":"17896441","content":"77321757"},"/handboek/designer/zelf-componenten-maken-2ce":{"__comp":"17896441","content":"dfb098ef"},"/handboek/developer/aan-de-slag-45e":{"__comp":"17896441","content":"93a8441b"},"/handboek/developer/architectuur-270":{"__comp":"17896441","content":"9c1b7be2"},"/handboek/developer/component-inzetten-b57":{"__comp":"17896441","content":"dcd65422"},"/handboek/developer/component-uitbreiden-3d3":{"__comp":"17896441","content":"9b2e9553"},"/handboek/developer/componenten-maken-13b":{"__comp":"17896441","content":"e3b51539"},"/handboek/developer/herbruikbare-css-233":{"__comp":"17896441","content":"555de4b4"},"/handboek/developer/meewerken-als-developer-b38":{"__comp":"17896441","content":"bc2d69ea"},"/handboek/developer/overzicht-59c":{"__comp":"14eb3368","categoryGeneratedIndex":"af16d7d3"},"/handboek/developer/samenwerken-aan-componenten-5a3":{"__comp":"17896441","content":"e756447e"},"/handboek/developer/thema-maken-e85":{"__comp":"17896441","content":"751bfb55"},"/handboek/estafettemodel-1f8":{"__comp":"17896441","content":"43a0fbb9"},"/handboek/introductie-f9a":{"__comp":"17896441","content":"411e6d0c"},"/handboek/leverancier/introductie-4a5":{"__comp":"17896441","content":"20f2808f"},"/handboek/manager/introductie-d4c":{"__comp":"17896441","content":"26a7a4d1"},"/handboek/naamgeving-7ee":{"__comp":"17896441","content":"c8ac2561"},"/handboek/organisatie/meedoen-daa":{"__comp":"17896441","content":"ce7b85cb"},"/handboek/organisatie/overzicht-6be":{"__comp":"14eb3368","categoryGeneratedIndex":"facf449e"},"/handboek/organisatie/vragen-over-aanbestedingen-d3e":{"__comp":"17896441","content":"ac66737c"},"/heading-805":{"__comp":"17896441","content":"6fd5f6ab"},"/heading-1-da6":{"__comp":"17896441","content":"150707f3"},"/heading-2-aa5":{"__comp":"17896441","content":"16fd2d30"},"/heading-3-d27":{"__comp":"17896441","content":"8f6d3c26"},"/heading-4-238":{"__comp":"17896441","content":"c776d6ea"},"/heading-5-628":{"__comp":"17896441","content":"9ec6ce4c"},"/heading-6-314":{"__comp":"17896441","content":"91059c25"},"/heading-group-44c":{"__comp":"17896441","content":"da2da55d"},"/icon-86d":{"__comp":"17896441","content":"8baef6f7"},"/invalid-form-alert-ae2":{"__comp":"17896441","content":"b2991567"},"/language-navigation-50a":{"__comp":"17896441","content":"c51cb369"},"/legend-726":{"__comp":"17896441","content":"09d51e35"},"/link-028":{"__comp":"17896441","content":"25b93367"},"/link-list-574":{"__comp":"17896441","content":"f633a06a"},"/modal-dialog-03c":{"__comp":"17896441","content":"b75db01c"},"/navigation-bar-219":{"__comp":"17896441","content":"da8aeb86"},"/non-modal-dialog-9e9":{"__comp":"17896441","content":"c6b96a0f"},"/notification-banner-087":{"__comp":"17896441","content":"e21395b4"},"/number-badge-1ee":{"__comp":"17896441","content":"8ea6c2d1"},"/number-input-0d1":{"__comp":"17896441","content":"ffcf9766"},"/open-source/cc0-80b":{"__comp":"17896441","content":"72b0d195"},"/open-source/eupl-097":{"__comp":"17896441","content":"67d19623"},"/ordered-list-4ec":{"__comp":"17896441","content":"2c881fe2"},"/page-footer-821":{"__comp":"17896441","content":"3d377413"},"/page-header-697":{"__comp":"17896441","content":"3464a859"},"/pagination-aa9":{"__comp":"17896441","content":"3679878e"},"/paragraph-e83":{"__comp":"17896441","content":"68b96050"},"/password-input-93c":{"__comp":"17896441","content":"9228e550"},"/pre-heading-87e":{"__comp":"17896441","content":"3f3eb7e2"},"/privacyverklaring-e5f":{"__comp":"17896441","content":"2383fbae"},"/progress-bar-db6":{"__comp":"17896441","content":"b4f4fb7e"},"/progress-list-5da":{"__comp":"17896441","content":"fbfd5b4f"},"/project-fa6":{"__comp":"14eb3368","categoryGeneratedIndex":"de9ea4b2"},"/project/blijf-op-de-hoogte-c41":{"__comp":"17896441","content":"281e6f8e"},"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-645":{"__comp":"17896441","content":"32636356"},"/project/faq-e37":{"__comp":"17896441","content":"77bf2607"},"/project/kernteam-ae3":{"__comp":"17896441","content":"03722200"},"/project/links-342":{"__comp":"17896441","content":"465cea2f"},"/project/nieuwsbrief-de8":{"__comp":"17896441","content":"c651b2e8"},"/project/over-nl-design-system-7b0":{"__comp":"17896441","content":"5f7673a0"},"/radio-button-63a":{"__comp":"17896441","content":"d0b753ca"},"/radio-group-cce":{"__comp":"17896441","content":"7cc1f45d"},"/range-9a8":{"__comp":"17896441","content":"46500269"},"/rich-text-content-73e":{"__comp":"17896441","content":"08d81d65"},"/richtlijnen-a7a":{"__comp":"14eb3368","categoryGeneratedIndex":"44e0c4b7"},"/richtlijnen/formulieren/-dbd":{"__comp":"17896441","content":"54b1e9e3"},"/richtlijnen/formulieren/autocomplete-402":{"__comp":"17896441","content":"a7537d50"},"/richtlijnen/formulieren/bevestigingspagina-c6a":{"__comp":"17896441","content":"7af3a6ef"},"/richtlijnen/formulieren/buttons-683":{"__comp":"17896441","content":"aa8a543f"},"/richtlijnen/formulieren/descriptions-910":{"__comp":"17896441","content":"0556c22e"},"/richtlijnen/formulieren/foutmeldingen-19d":{"__comp":"17896441","content":"b83fe955"},"/richtlijnen/formulieren/labels-f4e":{"__comp":"17896441","content":"000024cb"},"/richtlijnen/formulieren/links-925":{"__comp":"17896441","content":"90f10f11"},"/richtlijnen/formulieren/meerdere-stappen-6c3":{"__comp":"17896441","content":"f52fcd14"},"/richtlijnen/formulieren/overzicht-63e":{"__comp":"14eb3368","categoryGeneratedIndex":"e83393d8"},"/richtlijnen/formulieren/placeholders-cee":{"__comp":"17896441","content":"0f134466"},"/richtlijnen/formulieren/toetsenbord-0c2":{"__comp":"17896441","content":"5aa1d05c"},"/richtlijnen/formulieren/visueel-ontwerp-323":{"__comp":"17896441","content":"95312783"},"/richtlijnen/formulieren/voorkom-fouten-2db":{"__comp":"17896441","content":"c8c68184"},"/richtlijnen/formulieren/vragen-be7":{"__comp":"17896441","content":"6ad1359b"},"/richtlijnen/formulieren/wanneer-welk-form-element-faf":{"__comp":"17896441","content":"b1e76af7"},"/richtlijnen/introductie-360":{"__comp":"17896441","content":"6b7d4ee0"},"/richtlijnen/stijl/iconen-5b9":{"__comp":"17896441","content":"707334e0"},"/richtlijnen/stijl/kleuren-fa7":{"__comp":"17896441","content":"13ecdb40"},"/richtlijnen/stijl/overzicht-adf":{"__comp":"14eb3368","categoryGeneratedIndex":"dd47c273"},"/richtlijnen/stijl/ruimte-79f":{"__comp":"17896441","content":"e07f5d94"},"/richtlijnen/stijl/typografie-483":{"__comp":"17896441","content":"3015a2b9"},"/select-5e7":{"__comp":"17896441","content":"ed74afc1"},"/separator-454":{"__comp":"17896441","content":"e5bc4a9e"},"/side-navigation-600":{"__comp":"17896441","content":"b50de158"},"/skip-link-d13":{"__comp":"17896441","content":"68ddddde"},"/spinner-70f":{"__comp":"17896441","content":"f5f3cece"},"/status-badge-6aa":{"__comp":"17896441","content":"d5f36106"},"/strong-40f":{"__comp":"17896441","content":"cc7e1584"},"/sub-heading-b7e":{"__comp":"17896441","content":"7c4f6831"},"/summary-list-4fa":{"__comp":"17896441","content":"4ecd84ac"},"/switch-5b4":{"__comp":"17896441","content":"b171e401"},"/table-b60":{"__comp":"17896441","content":"f1833817"},"/tabs-963":{"__comp":"17896441","content":"7e20bedc"},"/task-list-293":{"__comp":"17896441","content":"667b53b1"},"/text-input-54b":{"__comp":"17896441","content":"8165282b"},"/text-input-group-ed4":{"__comp":"17896441","content":"22ebae92"},"/textarea-5a3":{"__comp":"17896441","content":"70fe0045"},"/toegankelijkheidsverklaring-e63":{"__comp":"17896441","content":"2933852b"},"/toegankelijkheidsverklaring/rapport-2023-feb":{"__comp":"17896441","content":"452f106e"},"/toggletip-5b0":{"__comp":"17896441","content":"d3deb5db"},"/unordered-list-525":{"__comp":"17896441","content":"ff07fdf2"},"/video-3ac":{"__comp":"17896441","content":"f67ebaad"},"/voorbeelden-a40":{"__comp":"14eb3368","categoryGeneratedIndex":"b9e57eaa"},"/voorbeelden/-fa9":{"__comp":"17896441","content":"dd06f6af"},"/voorbeelden/onderzoek/-62d":{"__comp":"17896441","content":"e59d1036"},"/voorbeelden/patronen-c72":{"__comp":"14eb3368","categoryGeneratedIndex":"be0dd82d"},"/voorbeelden/patronen/formulieren-c44":{"__comp":"14eb3368","categoryGeneratedIndex":"002a89ff"},"/voorbeelden/patronen/formulieren/bevestigingspagina-5ca":{"__comp":"17896441","content":"311596ba"},"/voorbeelden/patronen/formulieren/controlepagina-50c":{"__comp":"17896441","content":"3e8bb961"},"/voorbeelden/patronen/formulieren/foutmeldingen-4a9":{"__comp":"17896441","content":"228952b2"},"/voorbeelden/patronen/formulieren/funnel-header-4d8":{"__comp":"17896441","content":"682b2c96"},"/voorbeelden/patronen/formulieren/inloggen-651":{"__comp":"17896441","content":"60f94907"},"/voorbeelden/patronen/formulieren/intropagina-a29":{"__comp":"17896441","content":"8eda713e"},"/voorbeelden/patronen/formulieren/meerstappenformulier-96a":{"__comp":"17896441","content":"51323ca8"},"/voorbeelden/patronen/formulieren/niet-verplichte-velden-1e0":{"__comp":"17896441","content":"9f3e56ab"},"/voorbeelden/patronen/formulieren/opslaan-of-stoppen-0b8":{"__comp":"17896441","content":"18328f1a"},"/voorbeelden/patronen/formulieren/responsive-design-a94":{"__comp":"17896441","content":"c1a8ab3a"},"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-fe2":{"__comp":"17896441","content":"bc199175"},"/voorbeelden/patronen/formulieren/startpunt-6a4":{"__comp":"17896441","content":"3b7bee57"},"/voorbeelden/patronen/formulieren/terug-navigeren-567":{"__comp":"17896441","content":"acbbc3fa"},"/voorbeelden/patronen/formulieren/uploaden-a29":{"__comp":"17896441","content":"65c3b531"},"/voorbeelden/patronen/formulieren/visual-design-2ad":{"__comp":"17896441","content":"9652d10b"},"/voorbeelden/patronen/formulieren/volgende-stap-977":{"__comp":"17896441","content":"ff61fdd4"},"/voorbeelden/patronen/formulieren/voortgang-indicatie-038":{"__comp":"17896441","content":"70f68e65"},"/voorbeelden/templates/-2b1":{"__comp":"17896441","content":"5f26db3b"},"/wcag-d32":{"__comp":"14eb3368","categoryGeneratedIndex":"ace5ddd0"},"/wcag/1.1.1-616":{"__comp":"17896441","content":"b24d1ef2"},"/wcag/1.3.1-07d":{"__comp":"17896441","content":"94c4067d"},"/wcag/1.3.5-070":{"__comp":"17896441","content":"a52685f4"},"/wcag/2.1.1-2f9":{"__comp":"17896441","content":"1fd620f1"},"/wcag/2.4.1-bb1":{"__comp":"17896441","content":"37c1945c"},"/wcag/2.4.10-a92":{"__comp":"17896441","content":"d9284525"},"/wcag/2.4.13-bff":{"__comp":"17896441","content":"210e540d"},"/wcag/2.4.2-c38":{"__comp":"17896441","content":"f36b0a83"},"/wcag/2.4.4-ee6":{"__comp":"17896441","content":"66227b34"},"/wcag/2.4.6-1dd":{"__comp":"17896441","content":"d19ee383"},"/wcag/2.4.7-73d":{"__comp":"17896441","content":"5ecc2432"},"/wcag/3.1.1-665":{"__comp":"17896441","content":"28e99dcb"},"/wcag/3.1.2-44a":{"__comp":"17896441","content":"e12b15f5"},"/wcag/3.2.1-7ed":{"__comp":"17896441","content":"c3dc88b7"},"/wcag/3.2.2-78d":{"__comp":"17896441","content":"c2b84a26"},"/wcag/3.3.1-d9f":{"__comp":"17896441","content":"e98c6ca0"},"/wcag/3.3.3-a8b":{"__comp":"17896441","content":"5b0260c8"},"/wcag/3.3.4-881":{"__comp":"17896441","content":"b56ace87"},"/wcag/4.1.1-dc2":{"__comp":"17896441","content":"6fdf8dbf"},"/wcag/4.1.2-a09":{"__comp":"17896441","content":"5e427ce0"},"/wcag/4.1.3-a78":{"__comp":"17896441","content":"121271ef"},"/wcag/introduction-f78":{"__comp":"17896441","content":"91ad73c4"}}');
   },
  },
  (e) => {

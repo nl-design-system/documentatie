@@ -1,8 +1,8 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [18481],
+ [33728],
  {
-  25540: (e, n, i) => {
+  23728: (e, n, i) => {
    i.r(n), i.d(n, { assets: () => d, contentTitle: () => o, default: () => g, frontMatter: () => l, metadata: () => a, toc: () => s });
    var t = i(52676),
     r = i(24785);
@@ -25,6 +25,7 @@
      authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }],
      frontMatter: { title: 'Toegankelijke foutmeldingen in formulieren', slug: 'toegankelijke-foutmeldingen-formulieren', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.png', tags: ['formulieren', 'toegankelijkheid', 'richtlijnen', 'NL Design System'], hide_table_of_contents: !1, date: '2024-06-24T00:00:00.000Z' },
      unlisted: !1,
+     prevItem: { title: 'Design systems bij Logius: hoe \xe9\xe9n design system meerdere producten ondersteunt', permalink: '/blog/een-design-system-meerdere-producten' },
      nextItem: { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', permalink: '/blog/community-blocks' },
     },
     d = { authorsImageUrls: [void 0] },
