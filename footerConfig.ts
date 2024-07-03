@@ -37,6 +37,10 @@ const footer: Footer = {
           label: 'Figma',
           href: 'https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek',
         },
+        {
+          label: 'Changelog',
+          href: '/changelog',
+        },
       ],
     },
   ],
