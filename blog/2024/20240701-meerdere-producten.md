@@ -19,6 +19,8 @@ Vorig jaar ging het design system team van Logius, de organisatie die achter ond
 
 Aline vertelt dat ze altijd al interesse had in design systems. 3 jaar geleden is Logius gestart met het opnieuw bouwen van de producten rondom authenticatie en machtigen. Denk hierbij aan de DigiD inlogschermen, [digid.nl](https://digid.nl) en [machtigen.digid.nl](https://machtigen.digid.nl). Maar ook de interface voor de helpdeskmedewerkers. “Voor deze herbouw had ik de kans om samen met mijn collega’s een design system te bouwen voor DigiD. Welke componenten en patronen zijn herbruikbaar in de verschillende producten van DigiD?”
 
+![screenshots van verschillende Logius-producten: machtigen homepage, digid homepage en digid inlogschermen](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logius-producten.png) _Machtigen, DigiD homepage en DigiD inlogscherm_
+
 Aline: “Met mijn UX-collega’s keek ik ook naar andere producten die Logius maakt. Hoe sluiten de interactiepatronen en stijl op elkaar aan? Daarnaast ben ik mij gaan verdiepen in NL Design System. Ik was benieuwd welke kennis daar te halen was. De magie van design tokens greep mij direct. Het is fijn om direct veel informatie te vinden én gelijkgestemde mensen binnen de community.”
 
 ## Toestemming van ‘hogerop’ nodig
