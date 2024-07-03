@@ -15,5 +15,8 @@
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/documentatie.git",
     "directory": "docs"
-  }
+  },
+  "files": [
+    "**/*.md"
+  ]
 }
