@@ -78,7 +78,7 @@ Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat b
 - De component is gebouwd volgens de NL Design System architectuur.
 - De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
 
-Daarnaast is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland.
+Daarnaast is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland. Bij componenten die waarschijnlijk niet bruikbaar zijn voor de rest van Nederland, maar wel binnen eigen websites en apps, kiezen organisaties soms om ze alleen in hun eigen design system op te nemen, als zogenaamde ‘snowflake’.
 
 **Ideale optie**: De component is ook in Figma beschikbaar volgens de Figma architectuur.
 
