@@ -1,5 +1,5 @@
 ---
-title: "Design systems bij Logius: een soort mini community binnen NL Design System"
+title: "Design systems bij Logius: hoe één design system meerdere producten ondersteunt"
 slug: een-design-system-meerdere-producten
 authors:
   - name: Renate Bruinenberg
