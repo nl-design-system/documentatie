@@ -6,7 +6,7 @@ authors:
     title: Communicatieadviseur NL Design System
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_een-product.png
-tags: [logius, toegankelijkheid, NL Design System]
+tags: [logius, NL Design System, gebruikersonderzoeken]
 hide_table_of_contents: false
 date: 2024-07-01
 ---
