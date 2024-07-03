@@ -22,3 +22,9 @@ pnpm-lock.yaml
 docs/componenten/Help Wanted/*.mdx
 docs/componenten/Community/*.mdx
 
+
+ # Ignore changeset files, because they are temporary and frequently contributed by non-developers
+ .changeset/*.md
+
+ # Ignore this config file, because apparently it considers `.markdown*` a Markdown file
+ .markdownlintignore
