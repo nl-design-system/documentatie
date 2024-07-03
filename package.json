@@ -13,6 +13,11 @@
     "node": "^20",
     "pnpm": "^9"
   },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "."
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "npm-run-all --sequential start:docusaurus",

@@ -13,7 +13,8 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/documentatie.git"
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/nlds-design-tokens"
   },
   "dependencies": {
     "@fontsource/fira-sans": "5.0.20",
