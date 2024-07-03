@@ -25,7 +25,7 @@ Aline: “Met mijn UX-collega’s keek ik ook naar andere producten die Logius m
 
 ## Toestemming van ‘hogerop’ nodig
 
-Componenten en patronen inventariseren, best practices uitzoeken om vervolgens tot een gezamenlijk ontwerp te komen kost tijd. Zeker als het gaat om meerdere producten. Deze tijd wordt geregeld onderschat of niet geprioriteerd, waardoor het werk blijft liggen. Zo ook bij Logius. Als designers keken wij met een schuin oog naar elkaars werk, maar tijd om hierop door te ontwerpen is schaars. Om vervolgens deze aanpassingen in de code te krijgen is helemaal een uitdaging.
+Componenten en patronen inventariseren, best practices uitzoeken om vervolgens tot een gezamenlijk ontwerp te komen kost tijd. Zeker als het gaat om meerdere producten. Deze tijd wordt vaak onderschat of niet geprioriteerd, waardoor het werk blijft liggen. Zo ook bij Logius. Als designers keken wij met een schuin oog naar elkaars werk, maar tijd om hierop door te ontwerpen is schaars. Om vervolgens deze aanpassingen in de code te krijgen is helemaal een uitdaging.
 
 Daarom begonnen we met het voeren van de nodige gesprekken om aan te sluiten op NL Design System. Denk aan gesprekken tussen designers en architecten om te bedenken hoe het maken van 1 gezamenlijk design system gerealiseerd kan worden. Aline: “Eigenlijk was er van ‘hogerop’ toestemming nodig om mensen vrij te maken, zodat zij moeite én tijd erin kunnen steken. Uiteindelijk ontstond er een groep van enthousiaste mensen die zich hard hebben gemaakt om budget te krijgen, zodat we verder konden werken aan het Logius Design System (later dus LUX).”
 
