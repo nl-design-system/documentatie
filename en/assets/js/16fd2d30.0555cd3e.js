@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: ' ', slug: '/heading-2', sidebar_custom_props: { illustration: 'HeadingSketch' } },
+   const s = { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: 'Toont de titel van een sectie en helpt de inhoud van een pagina te structureren.', slug: '/heading-2', sidebar_custom_props: { illustration: 'HeadingSketch' } },
     a = void 0,
-    u = { id: 'componenten/heading-2/index', title: 'Heading 2', description: ' ', source: '@site/docs/componenten/heading-2/index.mdx', sourceDirName: 'componenten/heading-2', slug: '/heading-2', permalink: '/en/heading-2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-2/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: ' ', slug: '/heading-2', sidebar_custom_props: { illustration: 'HeadingSketch' } }, sidebar: 'componenten', previous: { title: 'Heading 1', permalink: '/en/heading-1' }, next: { title: 'Heading 3', permalink: '/en/heading-3' } },
+    u = { id: 'componenten/heading-2/index', title: 'Heading 2', description: 'Toont de titel van een sectie en helpt de inhoud van een pagina te structureren.', source: '@site/docs/componenten/heading-2/index.mdx', sourceDirName: 'componenten/heading-2', slug: '/heading-2', permalink: '/en/heading-2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-2/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: 'Toont de titel van een sectie en helpt de inhoud van een pagina te structureren.', slug: '/heading-2', sidebar_custom_props: { illustration: 'HeadingSketch' } }, sidebar: 'componenten', previous: { title: 'Heading 1', permalink: '/en/heading-1' }, next: { title: 'Heading 3', permalink: '/en/heading-3' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Heading 2',
-    j = '',
+    j = 'Toont de titel van een sectie en helpt de inhoud van een pagina te structureren.',
     y = 'HeadingSketch',
     g = 158,
     m = i.find((e) => e.number === g);
@@ -71,7 +71,7 @@
   },
   21998: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => L, cN: () => D, W: () => T, Rv: () => M });
+   n.d(t, { Gn: () => L, cN: () => T, W: () => D, Rv: () => M });
    var r = n(40168),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -125,7 +125,7 @@
     };
    var S = n(14669);
    const z = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    D = (e) => {
+    T = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => z.includes(e.id)),
       o = i && z.map((e) => i.find((t) => t.id === e)).filter(Boolean);
@@ -153,7 +153,7 @@
       })
      );
     },
-    T = (e) => {
+    D = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !z.includes(e.id));
      return t && i.length
