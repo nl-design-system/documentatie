@@ -1,0 +1,38 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1164_2553)">
+<rect width="960" height="540" fill="#F9F6F3"/>
+<g clip-path="url(#clip1_1164_2553)">
+<rect width="960" height="540" fill="#F9F6F3"/>
+<rect width="2" height="540" transform="translate(69)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(151)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(233)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(315)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(397)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(479)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(561)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(643)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(725)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(807)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(889)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 64)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 146)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 228)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 310)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 392)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 474)" fill="#E4EBED"/>
+</g>
+<rect x="182" y="262" width="80" height="16" rx="8" fill="#004152"/>
+<rect x="287" y="262" width="96" height="16" rx="8" fill="#004152"/>
+<rect x="408" y="262" width="120" height="16" rx="8" fill="#004152"/>
+<rect x="553" y="262" width="80" height="16" rx="8" fill="#004152"/>
+<rect x="658" y="262" width="120" height="16" rx="8" fill="#004152"/>
+</g>
+<defs>
+<clipPath id="clip0_1164_2553">
+<rect width="960" height="540" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1164_2553">
+<rect width="960" height="540" fill="white"/>
+</clipPath>
+</defs>
+</svg>
