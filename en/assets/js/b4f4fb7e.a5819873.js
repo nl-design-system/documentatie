@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Progress bar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Progress bar', pagination_label: 'Progress bar', description: ' ', slug: '/progress-bar', sidebar_custom_props: { illustration: 'ProgressBarSketch' } },
+   const s = { title: 'Progress bar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Progress bar', pagination_label: 'Progress bar', description: 'Toont de voortgang van een proces in een balk.', slug: '/progress-bar', sidebar_custom_props: { illustration: 'ProgressBarSketch' } },
     a = void 0,
-    u = { id: 'componenten/progress-bar/index', title: 'Progress bar', description: ' ', source: '@site/docs/componenten/progress-bar/index.mdx', sourceDirName: 'componenten/progress-bar', slug: '/progress-bar', permalink: '/en/progress-bar', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/progress-bar/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Progress bar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Progress bar', pagination_label: 'Progress bar', description: ' ', slug: '/progress-bar', sidebar_custom_props: { illustration: 'ProgressBarSketch' } }, sidebar: 'componenten', previous: { title: 'Pre heading', permalink: '/en/pre-heading' }, next: { title: 'Progress list', permalink: '/en/progress-list' } },
+    u = { id: 'componenten/progress-bar/index', title: 'Progress bar', description: 'Toont de voortgang van een proces in een balk.', source: '@site/docs/componenten/progress-bar/index.mdx', sourceDirName: 'componenten/progress-bar', slug: '/progress-bar', permalink: '/en/progress-bar', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/progress-bar/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Progress bar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Progress bar', pagination_label: 'Progress bar', description: 'Toont de voortgang van een proces in een balk.', slug: '/progress-bar', sidebar_custom_props: { illustration: 'ProgressBarSketch' } }, sidebar: 'componenten', previous: { title: 'Pre heading', permalink: '/en/pre-heading' }, next: { title: 'Progress list', permalink: '/en/progress-list' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Progress bar',
-    j = '',
+    j = 'Toont de voortgang van een proces in een balk.',
     y = 'ProgressBarSketch',
     g = 42,
     m = i.find((e) => e.number === g);
@@ -71,7 +71,7 @@
   },
   21998: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => L, cN: () => D, W: () => T, Rv: () => P });
+   n.d(t, { Gn: () => L, cN: () => T, W: () => D, Rv: () => P });
    var r = n(40168),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -125,7 +125,7 @@
     };
    var S = n(14669);
    const z = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    D = (e) => {
+    T = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => z.includes(e.id)),
       o = i && z.map((e) => i.find((t) => t.id === e)).filter(Boolean);
@@ -153,7 +153,7 @@
       })
      );
     },
-    T = (e) => {
+    D = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !z.includes(e.id));
      return t && i.length
