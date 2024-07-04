@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Unordered list', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Unordered list', pagination_label: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', slug: '/unordered-list', sidebar_custom_props: { illustration: 'OrderedListSketch' } },
+   const s = { title: 'Unordered list', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Unordered list', pagination_label: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', slug: '/unordered-list', sidebar_custom_props: { illustration: 'UnorderedListSketch' } },
     a = void 0,
-    u = { id: 'componenten/unordered-list/index', title: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', source: '@site/docs/componenten/unordered-list/index.mdx', sourceDirName: 'componenten/unordered-list', slug: '/unordered-list', permalink: '/en/unordered-list', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/unordered-list/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Unordered list', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Unordered list', pagination_label: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', slug: '/unordered-list', sidebar_custom_props: { illustration: 'OrderedListSketch' } }, sidebar: 'componenten', previous: { title: 'Toggletip', permalink: '/en/toggletip' }, next: { title: 'Video', permalink: '/en/video' } },
+    u = { id: 'componenten/unordered-list/index', title: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', source: '@site/docs/componenten/unordered-list/index.mdx', sourceDirName: 'componenten/unordered-list', slug: '/unordered-list', permalink: '/en/unordered-list', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/unordered-list/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Unordered list', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Unordered list', pagination_label: 'Unordered list', description: 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.', slug: '/unordered-list', sidebar_custom_props: { illustration: 'UnorderedListSketch' } }, sidebar: 'componenten', previous: { title: 'Toggletip', permalink: '/en/toggletip' }, next: { title: 'Video', permalink: '/en/video' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -20,7 +20,7 @@
     h = 'Unordered list',
     j = 'Toont een lijst met items waarvan de volgorde geen betekenis heeft.',
     y = 'UnorderedListSketch',
-    m = 50,
+    m = 116,
     g = i.find((e) => e.number === m);
    function p(e) {
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
