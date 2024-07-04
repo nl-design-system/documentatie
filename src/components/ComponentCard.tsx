@@ -34,7 +34,7 @@ export const ComponentCard = ({
         <ComponentIllustration
           component={illustration}
           relayStep={relayStep}
-          description={`Schets van de ${name} component met de ${relayStep} kleur`}
+          description={`Schets van de ${name} component`}
         />
       </CardIllustration>
       <CardContent>
