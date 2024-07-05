@@ -36,11 +36,27 @@
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
   --utrecht-heading-2-margin-block-start: 32px;
-
-  -webkit-font-smoothing: auto !important;
+  --utrecht-checkbox-size: 32px;
+  --utrecht-checkbox-checked-background-color: green;
+  --utrecht-accordion-panel-padding-block-end: 24px;
+  --utrecht-accordion-panel-padding-block-start: 0;
+  --utrecht-accordion-panel-padding-inline-end: 16px;
+  --utrecht-accordion-panel-padding-inline-start: 16px;
+  --utrecht-accordion-button-gap: 16px;
+  --utrecht-form-toggle-width: 2.5em;
+  --utrecht-form-toggle-height: 1.5em;
+  --utrecht-form-toggle-thumb-min-inline-size: 0.8em;
+  --utrecht-form-toggle-thumb-margin-inline-start: 0.2em;
+  --utrecht-form-toggle-thumb-margin-inline-end: 0.2em;
+  --utrecht-form-toggle-accent-color: grey;
+  --utrecht-form-toggle-checked-accent-color: green;
+  --utrecht-form-toggle-thumb-background-color: white;
+  --utrecht-form-toggle-track-border-radius: 2em;
   -moz-osx-font-smoothing: auto !important;
+}
 
-  /* --docusaurus-announcement-bar-height: 50px; */
+.utrecht-form-field--checkbox {
+  align-items: center;
 }
 
 .utrecht-breadcrumb-nav {
