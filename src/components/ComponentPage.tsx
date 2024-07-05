@@ -7,7 +7,7 @@ import style from './ComponentPage.module.css';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { TaskList, TaskListItem } from './TaskList';
-import { COMPONENT_STATES, getRelayBoardDescription, toKebabCase } from '../utils';
+import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
 
 type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
 type PROJECT_ID =
@@ -43,15 +43,6 @@ interface Component {
     };
   }[];
 }
-
-const previousRelayStep = {
-  HELP_WANTED: 'UNKNOWN',
-  COMMUNITY: 'HELP_WANTED',
-  CANDIDATE: 'COMMUNITY',
-  HALL_OF_FAME: 'CANDIDATE',
-};
-
-const relayProjectIds = Object.keys(previousRelayStep);
 
 interface ComponentPageSectionProps {
   component: Component;
