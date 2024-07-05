@@ -77,7 +77,7 @@
     "@argos-ci/playwright": "3.3.0",
     "@changesets/cli": "2.27.7",
     "@docsearch/react": "3.6.0",
-    "@docusaurus/module-type-aliases": "3.1.0",
+    "@docusaurus/module-type-aliases": "3.4.0",
     "@docusaurus/plugin-content-blog": "3.1.0",
     "@docusaurus/plugin-content-docs": "3.1.0",
     "@docusaurus/theme-classic": "3.1.0",
