@@ -1,26 +1,26 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [25507],
+ [58441],
  {
-  41198: (e, t, n) => {
+  36265: (e, t, n) => {
    'use strict';
    n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => u, title: () => h, toc: () => d });
    var r = n(52676),
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Video', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Video', pagination_label: 'Video', description: ' ', slug: '/video', sidebar_custom_props: { illustration: 'VideoSketch' } },
+   const s = { title: 'Avatar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Avatar', pagination_label: 'Avatar', description: 'Toont een grafische weergave van een gebruiker, meestal in de vorm van een foto, illustratie, of initialen.', slug: '/avatar', sidebar_custom_props: { illustration: 'AvatarSketch' } },
     a = void 0,
-    u = { id: 'componenten/video/index', title: 'Video', description: ' ', source: '@site/docs/componenten/video/index.mdx', sourceDirName: 'componenten/video', slug: '/video', permalink: '/video', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/video/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Video', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Video', pagination_label: 'Video', description: ' ', slug: '/video', sidebar_custom_props: { illustration: 'VideoSketch' } }, sidebar: 'componenten', previous: { title: 'Unordered list', permalink: '/unordered-list' } },
+    u = { id: 'componenten/avatar/index', title: 'Avatar', description: 'Toont een grafische weergave van een gebruiker, meestal in de vorm van een foto, illustratie, of initialen.', source: '@site/docs/componenten/avatar/index.mdx', sourceDirName: 'componenten/avatar', slug: '/avatar', permalink: '/avatar', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/avatar/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Avatar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Avatar', pagination_label: 'Avatar', description: 'Toont een grafische weergave van een gebruiker, meestal in de vorm van een foto, illustratie, of initialen.', slug: '/avatar', sidebar_custom_props: { illustration: 'AvatarSketch' } }, sidebar: 'componenten', previous: { title: 'Alert dialog', permalink: '/alert-dialog' }, next: { title: 'Blockquote', permalink: '/blockquote' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
-    h = 'Video',
-    j = '',
-    y = 'VideoSketch',
-    m = 69,
+    h = 'Avatar',
+    j = 'Toont een grafische weergave van een gebruiker, meestal in de vorm van een foto, illustratie, of initialen.',
+    y = 'AvatarSketch',
+    m = 83,
     g = i.find((e) => e.number === m);
    function p(e) {
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
@@ -71,7 +71,7 @@
   },
   21998: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => T, cN: () => V, W: () => D, Rv: () => L });
+   n.d(t, { Gn: () => L, cN: () => T, W: () => D, Rv: () => M });
    var r = n(40168),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -115,17 +115,17 @@
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
     w = 'task-list-item__marker-label_XAyi',
-    N = (e) => {
+    A = (e) => {
      let { children: t } = e;
      return (0, l.jsx)('ul', { className: k, children: t });
     },
-    A = (e) => {
+    N = (e) => {
      let { checked: t, title: n, description: r } = e;
      return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
     };
    var S = n(14669);
    const z = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    V = (e) => {
+    T = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => z.includes(e.id)),
       o = i && z.map((e) => i.find((t) => t.id === e)).filter(Boolean);
@@ -140,10 +140,10 @@
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
         body: (0, l.jsxs)(l.Fragment, {
          children: [
-          (0, l.jsx)(N, {
+          (0, l.jsx)(A, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
-            return (0, l.jsx)(A, { checked: t, title: n, description: (0, S.Q6)(r) }, r);
+            return (0, l.jsx)(N, { checked: t, title: n, description: (0, S.Q6)(r) }, r);
            }),
           }),
           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -211,11 +211,11 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    T = (e) => {
+    L = (e) => {
      let { component: t } = e;
      return t && (0, l.jsxs)(r.nv, { children: ['De ', t.title, ' component staat bij NL Design System in de', ' ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'levende backlog' }), ', heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!'] });
     },
-    L = (e) => {
+    M = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
      const i = t && S.$3[t.relayStep];
      return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, l.jsx)(p.y, { state: i })] }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });

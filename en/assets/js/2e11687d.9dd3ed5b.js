@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Data badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data badge', pagination_label: 'Data badge', description: ' ', slug: '/data-badge', sidebar_custom_props: { illustration: 'DataBadgeSketch' } },
+   const s = { title: 'Data badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data badge', pagination_label: 'Data badge', description: 'Toont een klein label dat de aandacht trekt en informeert bijvoorbeeld over een categorie.', slug: '/data-badge', sidebar_custom_props: { illustration: 'DataBadgeSketch' } },
     a = void 0,
-    u = { id: 'componenten/data-badge/index', title: 'Data badge', description: ' ', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/en/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data badge', pagination_label: 'Data badge', description: ' ', slug: '/data-badge', sidebar_custom_props: { illustration: 'DataBadgeSketch' } }, sidebar: 'componenten', previous: { title: 'Checkbox group', permalink: '/en/checkbox-group' }, next: { title: 'Date input', permalink: '/en/date-input' } },
+    u = { id: 'componenten/data-badge/index', title: 'Data badge', description: 'Toont een klein label dat de aandacht trekt en informeert bijvoorbeeld over een categorie.', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/en/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data badge', pagination_label: 'Data badge', description: 'Toont een klein label dat de aandacht trekt en informeert bijvoorbeeld over een categorie.', slug: '/data-badge', sidebar_custom_props: { illustration: 'DataBadgeSketch' } }, sidebar: 'componenten', previous: { title: 'Checkbox group', permalink: '/en/checkbox-group' }, next: { title: 'Date input', permalink: '/en/date-input' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Data badge',
-    j = '',
+    j = 'Toont een klein label dat de aandacht trekt en informeert bijvoorbeeld over een categorie.',
     y = 'DataBadgeSketch',
     g = 94,
     m = i.find((e) => e.number === g);
