@@ -3,14 +3,14 @@
  {
   24555: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => f, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => l, title: () => h, toc: () => d });
+   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => m, issueNumber: () => y, metadata: () => l, title: () => h, toc: () => d });
    var r = n(52676),
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: ' ', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } },
+   const s = { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } },
     a = void 0,
-    l = { id: 'componenten/form-field/index', title: 'Form field', description: ' ', source: '@site/docs/componenten/form-field/index.mdx', sourceDirName: 'componenten/form-field', slug: '/form-field', permalink: '/en/form-field', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: ' ', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } }, sidebar: 'componenten', previous: { title: 'File input', permalink: '/en/file-input' }, next: { title: 'Form field checkbox option', permalink: '/en/form-field-checkbox-option' } },
+    l = { id: 'componenten/form-field/index', title: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', source: '@site/docs/componenten/form-field/index.mdx', sourceDirName: 'componenten/form-field', slug: '/form-field', permalink: '/en/form-field', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } }, sidebar: 'componenten', previous: { title: 'File input', permalink: '/en/file-input' }, next: { title: 'Form field checkbox option', permalink: '/en/form-field-checkbox-option' } },
     u = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,15 +18,15 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Form field',
-    j = '',
-    y = 'FormFieldSketch',
-    m = 176,
-    g = i.find((e) => e.number === m);
+    j = 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.',
+    m = 'FormFieldSketch',
+    y = 176,
+    g = i.find((e) => e.number === y);
    function p(e) {
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j, illustration: y }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: g, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j, illustration: m }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: g, headingLevel: 3 })] });
    }
-   function f(e = {}) {
+   function v(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
@@ -86,11 +86,11 @@
      return (0, u.jsx)(r.JO, { children: d[t] || (0, u.jsx)(l.Z, {}) });
     };
    var j = n(48459);
-   const y = { 'definition-of-done': 'definition-of-done_hA8T', 'definition-of-done--help-wanted': 'definition-of-done--help-wanted_eyW6', 'definition-of-done--community': 'definition-of-done--community_s9uY', 'definition-of-done--candidate': 'definition-of-done--candidate_kcli', 'definition-of-done--hall-of-fame': 'definition-of-done--hall-of-fame_uZjI', 'implementation-card-group': 'implementation-card-group_aUZX', 'implementation-card': 'implementation-card_nkoa' };
-   var m = n(29795);
+   const m = { 'definition-of-done': 'definition-of-done_hA8T', 'definition-of-done--help-wanted': 'definition-of-done--help-wanted_eyW6', 'definition-of-done--community': 'definition-of-done--community_s9uY', 'definition-of-done--candidate': 'definition-of-done--candidate_kcli', 'definition-of-done--hall-of-fame': 'definition-of-done--hall-of-fame_uZjI', 'implementation-card-group': 'implementation-card-group_aUZX', 'implementation-card': 'implementation-card_nkoa' };
+   var y = n(29795);
    const g = (e) => {
     let { checked: t, unchecked: r } = e;
-    return (0, u.jsx)(m.Z, {
+    return (0, u.jsx)(y.Z, {
      fallback: (0, u.jsx)(u.Fragment, {}),
      children: () => {
       const e = n(99487).YE;
@@ -108,20 +108,20 @@
     });
    };
    var p = n(5671),
-    f = n(78187),
-    b = n(89870);
-   const v = 'task-list_hh8j',
+    v = n(78187),
+    f = n(89870);
+   const b = 'task-list_hh8j',
     k = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
     w = 'task-list-item__marker-label_XAyi',
     N = (e) => {
      let { children: t } = e;
-     return (0, u.jsx)('ul', { className: v, children: t });
+     return (0, u.jsx)('ul', { className: b, children: t });
     },
     A = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, u.jsxs)('li', { className: (0, c.Z)(k), children: [(0, u.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, u.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(f.aC, { role: 'presentation', children: n }), (0, u.jsx)(f.nv, { children: r })] })] });
+     return (0, u.jsxs)('li', { className: (0, c.Z)(k), children: [(0, u.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, u.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(v.aC, { role: 'presentation', children: n }), (0, u.jsx)(v.nv, { children: r })] })] });
     };
    var S = n(14669);
    const z = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
@@ -134,7 +134,7 @@
       (0, u.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, S.mA)(e.title)}`]),
+        className: (0, c.Z)(m['definition-of-done'], m[`definition-of-done--${(0, S.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
@@ -159,7 +159,7 @@
      return t && i.length
       ? (0, u.jsx)(j.um, {
          appearance: 'large',
-         className: (0, c.Z)(y['implementation-card-group']),
+         className: (0, c.Z)(m['implementation-card-group']),
          children: i
           .sort((e, t) => {
            const n = e.progress.max - e.progress.value,
@@ -185,7 +185,7 @@
            return (0, u.jsx)(
             j.Zb,
             {
-             className: (0, c.Z)(y['implementation-card']),
+             className: (0, c.Z)(m['implementation-card']),
              children: (0, u.jsxs)(j.aY, {
               children: [
                (0, u.jsx)(r.X6, { level: n, children: e.title }),

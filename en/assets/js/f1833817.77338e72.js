@@ -3,23 +3,23 @@
  {
   32649: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => j, component: () => k, contentTitle: () => h, default: () => x, description: () => g, frontMatter: () => d, illustration: () => b, issueNumber: () => y, metadata: () => u, title: () => p, toc: () => m });
+   t.r(n), t.d(n, { assets: () => j, component: () => y, contentTitle: () => h, default: () => x, description: () => p, frontMatter: () => d, illustration: () => b, issueNumber: () => k, metadata: () => u, title: () => g, toc: () => m });
    var r = t(52676),
     i = t(24785),
-    a = t(61475);
-   function o(e) {
+    o = t(61475);
+   function a(e) {
     const n = { a: 'a', code: 'code', em: 'em', h1: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h1, { id: 'tabel', children: 'Tabel' }), '\n', (0, r.jsx)(n.p, { children: "Er zijn eindeloos veel varianten van de tabel, daarom is het niet mogelijk op \xe9\xe9n pagina een volledig overzicht te hebben met tips. Op deze pagina zullen we algemene tips geven. In de toekomst willen we losse pagina's aanbieden voor speciale soorten tabellen." }), '\n', (0, r.jsx)(n.h2, { id: 'duidelijke-koppen', children: 'Duidelijke koppen' }), '\n', (0, r.jsxs)(n.p, { children: ["In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveau's koppen bevatten: kop van de tabel (", (0, r.jsx)(n.em, { children: 'caption' }), '), kop van de kolom (', (0, r.jsx)(n.em, { children: 'column header' }), ') en kop van de rij (', (0, r.jsx)(n.em, { children: 'row header' }), '). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:'] }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<caption>' }), ' voor de kop van de tabel'] }), '\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<th scope="col">' }), ' voor de kop van de kolom'] }), '\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<th scope="row">' }), ' voor de kop van de rij'] }), '\n'] }), '\n', (0, r.jsx)(n.h2, { id: 'sorteer-de-tabelrijen', children: 'Sorteer de tabelrijen' }), '\n', (0, r.jsx)(n.p, { children: 'Voor screen reader gebruikers is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met \xe9\xe9n druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.' }), '\n', (0, r.jsx)(n.p, { children: 'Als je de informatie niet kan vinden bij de datum die je verwacht, dan is het belangrijk om te weten dat op datum is gesorteerd: alleen dan kun weet je zeker dat de informatie helemaal niet in de tabel staat.' }), '\n', (0, r.jsxs)(n.p, { children: ['Plaats de gegevens waarop gesorteerd is in een eigen kolom, en geef met ', (0, r.jsx)(n.code, { children: 'aria-sort="\u2026"' }), ' aan dat deze kolom de volgorde bepaalt.'] }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<table>\n  <caption>\n    Openingstijden gemeentehuis\n  </caption>\n  <thead>\n    <tr>\n      <th scope="col" aria-sort="ascending">Dag</th>\n      <th scope="col">Geopend</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope="row">Maandag</th>\n      <td>12:00\u201418:00</td>\n    </tr>\n    <tr>\n      <th scope="row">Dinsdag</th>\n      <td>08:00\u201418:00</td>\n    </tr>\n    \u2026\n  </tbody>\n</table>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je geeft met de volgende code aan in welke volgorde de informatie staat:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: 'aria-sort="ascending"' }), ' voor "oplopende volgorde", bijvoorbeeld namen van A tot Z (namen), van bedragen en aantallen van klein naar groot, geplande activiteiten van eerdere naar latere datums'] }), '\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: 'aria-sort="descending"' }), ' voor "aflopende volgorde", bijvoorbeeld namen van Z naar A, ontvangen berichten van nieuw naar oud, bedragen en aantallen van groot naar klein'] }), '\n'] }), '\n', (0, r.jsxs)(n.h2, { id: 'responsive-tabellen', children: [(0, r.jsx)(n.em, { children: 'Responsive' }), ' tabellen'] }), '\n', (0, r.jsx)(n.p, { children: "Volgens WCAG 1.4.10 moeten pagina's leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:" }), '\n', (0, r.jsxs)(n.p, { children: ['Techniek 1: de bestaande ', (0, r.jsx)(n.code, { children: 'table' }), '-HTML niet te tonen als tabel door met CSS een andere ', (0, r.jsx)(n.code, { children: 'display' }), ' te gebruiken voor ', (0, r.jsx)(n.code, { children: 'table' }), ', ', (0, r.jsx)(n.code, { children: 'td' }), ' en alle andere tabel-elementen. ', (0, r.jsx)(n.em, { children: 'Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken.' }), ' Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Techniek 2: HTML aanbieden in twee varianten. Naast de HTML ', (0, r.jsx)(n.code, { children: '<table>' }), ' element, ook de gegevens tonen met HTML elementen die niet zoveel ruimte nodig hebben in twee dimensies, zoals koppen met daaronder een datalijst. Afhankelijk van de situatie verberg je de \xe9ne of de andere variant.'] }), '\n', (0, r.jsx)(n.h2, { id: 'hoe-het-niet-moet', children: 'Hoe het niet moet' }), '\n', (0, r.jsx)(n.h3, { id: 'koppen-niet-gekoppeld', children: 'Koppen van tabel niet gekoppeld aan datacellen' }), '\n', (0, r.jsx)(n.p, { children: "Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveau's van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is." }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG21/#info-and-relationships', children: 'WCAG 2.1, 1.3.1' }), ' zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.'] }), '\n', (0, r.jsx)(n.h4, { id: 'tabel-kop-niet-gekoppeld', children: 'Kop van de tabel niet gekoppeld' }), '\n', (0, r.jsx)(n.p, { children: 'Niet:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h2>Openingstijden</h2>\n<table>\n  <thead>\n    \u2026\n  </thead>\n</table>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Wel:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<table>\n  <caption class="heading-2">\n    Openingstijden\n  </caption>\n  <thead>\n    \u2026\n  </thead>\n</table>\n' }) }), '\n', (0, r.jsx)(n.h4, { id: 'tabelrij-kop-niet-gekoppeld', children: 'Kop van de tabelrij niet gekoppeld' }), '\n', (0, r.jsx)(n.p, { children: 'Niet:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<tr>\n  <td>\n    <strong>maandag</strong>\n  </td>\n  <td>gesloten</td>\n</tr>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Wel:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<tr>\n  <th scope="row">maandag</td>\n  <td>gesloten</td>\n</tr>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'geen-tabel-kop-in-de-tabel', children: 'Kop van de tabel in de tabel zelf' }), '\n', (0, r.jsx)(n.p, { children: 'Niet:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<table>\n  <thead>\n    <tr>\n      <th colspan="2">Openingstijden</th>\n    </tr>\n  </thead>\n  \u2026\n</table>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Wel:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<table>\n  <caption>\n    Openingstijden\n  </caption>\n  \u2026\n</table>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'geen-grote-afstand-tussen-kolommen', children: 'Afstand tussen kolommen is te groot' }), '\n', (0, r.jsx)(n.p, { children: 'Je moet goed kunnen zien welke cellen bij elkaar horen. Een tabel die breed is en relatief weinig informatie bevat, is moeilijk te begrijpen als er veel lege ruimte zit tussen de cellen.' }), '\n', (0, r.jsxs)(n.p, { children: ['Voorkom teveel lege ruimte: gebruik bijvoorbeeld niet ', (0, r.jsx)(n.code, { children: 'width: 100%' }), ' voor een tabel met openingstijden. Kies per tabel welke breedte het meest duidelijk is. Als er lege ruimte ontstaat, zorg dan dat die niet tussen kolommen is, maar plaats de lege ruimte aan het eind van de laatste kolom.'] }), '\n', (0, r.jsxs)(n.h3, { id: 'geen-eigen-css-display', children: ['Tabel niet toegankelijk door eigen CSS ', (0, r.jsx)(n.code, { children: 'display' })] }), '\n', (0, r.jsxs)(n.p, { children: ['Screen readers maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screen readers uit de code begrijpen wat de ', (0, r.jsx)(n.em, { children: 'column header' }), ' is en wat de ', (0, r.jsx)(n.em, { children: 'row header' }), ' is.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Wanneer je met CSS ', (0, r.jsx)(n.code, { children: 'display' }), ' aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de ', (0, r.jsx)(n.em, { children: 'accessibility tree' }), ' en maak je de relatie tussen de ', (0, r.jsx)(n.em, { children: 'data cell' }), ' en de ', (0, r.jsx)(n.em, { children: 'header cell' }), ' kapot. Tabellen waarvan de ', (0, r.jsx)(n.code, { children: 'display' }), ' wordt aangepast werken daarom niet meer in screen readers, tenzij de ', (0, r.jsx)(n.em, { children: 'accessibility tree' }), ' door extra code wordt hersteld.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Je kunt voorkomen dat de ', (0, r.jsx)(n.em, { children: 'accessibility tree' }), ' anders wordt opgebouwd. Je moet dan op \xe9lk element van de tabel expliciet zeggen welke ', (0, r.jsx)(n.code, { children: 'role' }), ' het heeft. Omdat deze techniek veel extra werk geeft en foutgevoelig is, raden wij aan om alternatieven te kiezen zoals niet ', (0, r.jsx)(n.code, { children: 'display' }), ' aanpassen of twee varianten maken.'] }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: [(0, r.jsx)(n.code, { children: '<caption id="unique-id-here">' }), ' samen met ', (0, r.jsx)(n.code, { children: '<table aria-labelledby="unique-id-here">' })] }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<table role="table">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<tbody role="table-row-group">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<td role="cell">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<tfoot role="table-row-group">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<th scope="col" role="columnheader">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<th scope="row" role="rowheader">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<thead role="table-row-group">' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.code, { children: '<tr role="table-row">' }) }), '\n'] }), '\n', (0, r.jsx)(n.h2, { id: 'links', children: 'Links' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsxs)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table', children: ['MDN: ', (0, r.jsx)(n.code, { children: '<table>' }), ': The Table element'] }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsxs)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-sort', children: ['MDN: ', (0, r.jsx)(n.code, { children: 'aria-sort' })] }) }), '\n'] }), '\n', (0, r.jsx)(n.h3, { id: 'relevante-wcag-regels', children: 'Relevante WCAG regels' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG21/#reflow', children: 'WCAG 1.4.10' }) }), '\n'] })] });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
    }
    var c = t(21998),
     l = t(57716);
-   const d = { title: 'Table', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Table', pagination_label: 'Table', description: 'UX richtlijnen voor Table component', slug: '/table', sidebar_custom_props: { illustration: 'TableSketch' } },
+   const d = { title: 'Table', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Table', pagination_label: 'Table', description: 'Toont en organiseert data in gestructureerde rijen en kolommen.', slug: '/table', sidebar_custom_props: { illustration: 'TableSketch' } },
     h = void 0,
-    u = { id: 'componenten/table/index', title: 'Table', description: 'UX richtlijnen voor Table component', source: '@site/docs/componenten/table/index.mdx', sourceDirName: 'componenten/table', slug: '/table', permalink: '/en/table', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/table/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Table', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Table', pagination_label: 'Table', description: 'UX richtlijnen voor Table component', slug: '/table', sidebar_custom_props: { illustration: 'TableSketch' } }, sidebar: 'componenten', previous: { title: 'Switch', permalink: '/en/switch' }, next: { title: 'Tabs', permalink: '/en/tabs' } },
+    u = { id: 'componenten/table/index', title: 'Table', description: 'Toont en organiseert data in gestructureerde rijen en kolommen.', source: '@site/docs/componenten/table/index.mdx', sourceDirName: 'componenten/table', slug: '/table', permalink: '/en/table', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/table/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Table', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Table', pagination_label: 'Table', description: 'Toont en organiseert data in gestructureerde rijen en kolommen.', slug: '/table', sidebar_custom_props: { illustration: 'TableSketch' } }, sidebar: 'componenten', previous: { title: 'Switch', permalink: '/en/switch' }, next: { title: 'Tabs', permalink: '/en/tabs' } },
     j = {},
     m = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -27,14 +27,14 @@
      { value: 'Richtlijnen', id: 'richtlijnen', level: 2 },
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
-    p = 'Paragraph',
-    g = 'Toont een alinea aan tekst.',
-    b = 'ParagraphSketch',
-    y = 39,
-    k = a.find((e) => e.number === y);
+    g = 'Table',
+    p = 'Toont en organiseert data in gestructureerde rijen en kolommen.',
+    b = 'TableSketch',
+    k = '',
+    y = o.find((e) => e.number === k);
    function v(e) {
     const n = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(c.Rv, { component: k, headingLevel: 1, description: g, illustration: b }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(c.cN, { component: k, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(c.W, { component: k, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'richtlijnen', children: 'Richtlijnen' }), '\n', (0, r.jsx)(l.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(s, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(c.Gn, { component: k, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(c.Rv, { component: y, headingLevel: 1, description: p, illustration: b }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(c.cN, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(c.W, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'richtlijnen', children: 'Richtlijnen' }), '\n', (0, r.jsx)(l.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(s, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(c.Gn, { component: y, headingLevel: 3 })] });
    }
    function x(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -61,22 +61,22 @@
    var r = t(78187),
     i = t(4814);
    t(75271);
-   const a = { cardgroup: 'cardgroup_0VVt', 'cardgroup--small': 'cardgroup--small_BDzz', 'cardgroup--medium': 'cardgroup--medium_xS6r', 'cardgroup--large': 'cardgroup--large_Tjo8', cardgroup__card: 'cardgroup__card_emnt', 'cardgroup__card--small': 'cardgroup__card--small_bxfC', 'cardgroup__card--medium': 'cardgroup__card--medium_xiP2', 'cardgroup__card--large': 'cardgroup__card--large_PGe3', cardgroup__link: 'cardgroup__link_YISR', card__illustration: 'card__illustration_MVXv', 'card__illustration--background': 'card__illustration--background_cTcZ', card__content: 'card__content_LYKG' };
-   var o = t(52676);
+   const o = { cardgroup: 'cardgroup_0VVt', 'cardgroup--small': 'cardgroup--small_BDzz', 'cardgroup--medium': 'cardgroup--medium_xS6r', 'cardgroup--large': 'cardgroup--large_Tjo8', cardgroup__card: 'cardgroup__card_emnt', 'cardgroup__card--small': 'cardgroup__card--small_bxfC', 'cardgroup__card--medium': 'cardgroup__card--medium_xiP2', 'cardgroup__card--large': 'cardgroup__card--large_PGe3', cardgroup__link: 'cardgroup__link_YISR', card__illustration: 'card__illustration_MVXv', 'card__illustration--background': 'card__illustration--background_cTcZ', card__content: 'card__content_LYKG' };
+   var a = t(52676);
    const s = (e) => {
      let { background: n, children: t, className: r, ...s } = e;
-     return (0, o.jsx)('div', { className: (0, i.Z)(a.card__illustration, n && a['card__illustration--background'], r), ...s, children: t });
+     return (0, a.jsx)('div', { className: (0, i.Z)(o.card__illustration, n && o['card__illustration--background'], r), ...s, children: t });
     },
-    c = (e) => (0, o.jsx)('div', { className: (0, i.Z)(a.card__content), ...e }),
+    c = (e) => (0, a.jsx)('div', { className: (0, i.Z)(o.card__content), ...e }),
     l = (e) => {
      let { href: n, appearance: t, className: s, component: c = 'div', children: l } = e;
-     const d = (e) => ('article' === c ? (0, o.jsx)('article', { ...e }) : 'section' === c ? (0, o.jsx)('section', { ...e }) : (0, o.jsx)('div', { ...e })),
-      h = (0, o.jsx)(d, { className: (0, i.Z)(a.cardgroup__card, a[`cardgroup__card--${t}`], s), children: l });
-     return n ? (0, o.jsx)(r.rU, { href: n, boxContent: !0, className: a.cardgroup__link, children: h }) : h;
+     const d = (e) => ('article' === c ? (0, a.jsx)('article', { ...e }) : 'section' === c ? (0, a.jsx)('section', { ...e }) : (0, a.jsx)('div', { ...e })),
+      h = (0, a.jsx)(d, { className: (0, i.Z)(o.cardgroup__card, o[`cardgroup__card--${t}`], s), children: l });
+     return n ? (0, a.jsx)(r.rU, { href: n, boxContent: !0, className: o.cardgroup__link, children: h }) : h;
     },
     d = (e) => {
      let { appearance: n = 'medium', children: t, className: r } = e;
-     return (0, o.jsx)('div', { className: (0, i.Z)(a.cardgroup, a[`cardgroup--${n}`], r), children: t });
+     return (0, a.jsx)('div', { className: (0, i.Z)(o.cardgroup, o[`cardgroup--${n}`], r), children: t });
     };
   },
   21998: (e, n, t) => {
@@ -84,23 +84,23 @@
    t.d(n, { Gn: () => L, cN: () => S, W: () => C, Rv: () => D });
    var r = t(40168),
     i = t(4814),
-    a = (t(75271), t(39854)),
-    o = t(7522),
+    o = (t(75271), t(39854)),
+    a = t(7522),
     s = t(62559),
     c = t(79734),
     l = t(32636),
     d = t(52676);
-   const h = { figma: (0, d.jsx)(a.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(s.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
+   const h = { figma: (0, d.jsx)(o.Z, {}), github: (0, d.jsx)(a.Z, {}), npm: (0, d.jsx)(s.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
     u = (e) => {
      let { brand: n } = e;
      return (0, d.jsx)(r.JO, { children: h[n] || (0, d.jsx)(l.Z, {}) });
     };
    var j = t(48459);
    const m = { 'definition-of-done': 'definition-of-done_hA8T', 'definition-of-done--help-wanted': 'definition-of-done--help-wanted_eyW6', 'definition-of-done--community': 'definition-of-done--community_s9uY', 'definition-of-done--candidate': 'definition-of-done--candidate_kcli', 'definition-of-done--hall-of-fame': 'definition-of-done--hall-of-fame_uZjI', 'implementation-card-group': 'implementation-card-group_aUZX', 'implementation-card': 'implementation-card_nkoa' };
-   var p = t(29795);
-   const g = (e) => {
+   var g = t(29795);
+   const p = (e) => {
     let { checked: n, unchecked: r } = e;
-    return (0, d.jsx)(p.Z, {
+    return (0, d.jsx)(g.Z, {
      fallback: (0, d.jsx)(d.Fragment, {}),
      children: () => {
       const e = t(99487).YE;
@@ -118,8 +118,8 @@
     });
    };
    var b = t(5671),
-    y = t(78187),
-    k = t(89870);
+    k = t(78187),
+    y = t(89870);
    const v = 'task-list_hh8j',
     x = 'task-list-item_oypx',
     f = 'task-list-item__marker_Eefn',
@@ -131,19 +131,19 @@
     },
     T = (e) => {
      let { checked: n, title: t, description: r } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)(x), children: [(0, d.jsxs)('div', { className: (0, i.Z)(f, { [_]: n }), children: [(0, d.jsx)('span', { className: w, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.aC, { role: 'presentation', children: t }), (0, d.jsx)(y.nv, { children: r })] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)(x), children: [(0, d.jsxs)('div', { className: (0, i.Z)(f, { [_]: n }), children: [(0, d.jsx)('span', { className: w, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(y.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(k.aC, { role: 'presentation', children: t }), (0, d.jsx)(k.nv, { children: r })] })] });
     };
    var N = t(14669);
    const A = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
     S = (e) => {
      let { component: n, headingLevel: t } = e;
-     const a = n && n.projects.filter((e) => A.includes(e.id)),
-      o = a && A.map((e) => a.find((n) => n.id === e)).filter(Boolean);
+     const o = n && n.projects.filter((e) => A.includes(e.id)),
+      a = o && A.map((e) => o.find((n) => n.id === e)).filter(Boolean);
      return (
       n &&
       (0, d.jsx)(r.a2, {
        appearance: '',
-       sections: o.map((e) => ({
+       sections: a.map((e) => ({
         className: (0, i.Z)(m['definition-of-done'], m[`definition-of-done--${(0, N.mA)(e.title)}`]),
         headingLevel: t,
         expanded: !1,
@@ -165,12 +165,12 @@
     },
     C = (e) => {
      let { component: n, headingLevel: t } = e;
-     const a = n && n.projects.filter((e) => !A.includes(e.id));
-     return n && a.length
+     const o = n && n.projects.filter((e) => !A.includes(e.id));
+     return n && o.length
       ? (0, d.jsx)(j.um, {
          appearance: 'large',
          className: (0, i.Z)(m['implementation-card-group']),
-         children: a
+         children: o
           .sort((e, n) => {
            const t = e.progress.max - e.progress.value,
             r = n.progress.max - n.progress.value;
@@ -181,16 +181,16 @@
              let { name: n } = e;
              return 'Naam' === n;
             }),
-            a = new Map([
+            o = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${n} in Figma` }],
              ['NPM URL (CSS)', { brand: 'npm', desciption: `${n} op NPM` }],
              ['GitHub URL (CSS)', { brand: 'github', desciption: `${n} op GitHub` }],
              ['Storybook URL (CSS)', { brand: 'storybook', desciption: `${n} in Storybook van ${e.title}` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${n} voor visuele regressie tests` }],
             ]),
-            o = e.tasks.filter((e) => {
+            a = e.tasks.filter((e) => {
              let { name: n, value: t } = e;
-             return a.has(n) && URL.canParse(t) && 'https:' === new URL(t).protocol;
+             return o.has(n) && URL.canParse(t) && 'https:' === new URL(t).protocol;
             });
            return (0, d.jsx)(
             j.Zb,
@@ -199,14 +199,14 @@
              children: (0, d.jsxs)(j.aY, {
               children: [
                (0, d.jsx)(r.X6, { level: t, children: e.title }),
-               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               o.length &&
+               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(p, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               a.length &&
                 (0, d.jsxs)(d.Fragment, {
                  children: [
                   (0, d.jsx)(r.X6, { level: t + 1, children: 'Component gebruiken?' }),
                   (0, d.jsx)(r.Mc, {
-                   children: o.map((e) => {
-                    const { brand: n, desciption: t } = a.get(e.name);
+                   children: a.map((e) => {
+                    const { brand: n, desciption: t } = o.get(e.name);
                     return (0, d.jsxs)(r.k7, { href: e.value, children: [(0, d.jsx)(u, { brand: n }), ' ', t] }, e.id);
                    }),
                   }),
@@ -227,8 +227,8 @@
     },
     D = (e) => {
      let { component: n, headingLevel: t, description: i } = e;
-     const a = n && N.$3[n.relayStep];
-     return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(r.X6, { level: t, children: [n.title, ' ', a && (0, d.jsx)(b.y, { state: a })] }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
+     const o = n && N.$3[n.relayStep];
+     return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(r.X6, { level: t, children: [n.title, ' ', o && (0, d.jsx)(b.y, { state: o })] }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   5671: (e, n, t) => {
@@ -237,13 +237,13 @@
    var r = t(78187),
     i = t(4814);
    t(75271);
-   const a = { 'estafette-badge': 'estafette-badge_amWR', 'estafette-badge--todo': 'estafette-badge--todo_EYw0', 'estafette-badge--help-wanted': 'estafette-badge--help-wanted_N7qd', 'estafette-badge--community': 'estafette-badge--community_FJTQ', 'estafette-badge--candidate': 'estafette-badge--candidate_Q2O5', 'estafette-badge--hall-of-fame': 'estafette-badge--hall-of-fame_SqQ1' };
-   var o = t(14669),
+   const o = { 'estafette-badge': 'estafette-badge_amWR', 'estafette-badge--todo': 'estafette-badge--todo_EYw0', 'estafette-badge--help-wanted': 'estafette-badge--help-wanted_N7qd', 'estafette-badge--community': 'estafette-badge--community_FJTQ', 'estafette-badge--candidate': 'estafette-badge--candidate_Q2O5', 'estafette-badge--hall-of-fame': 'estafette-badge--hall-of-fame_SqQ1' };
+   var a = t(14669),
     s = t(52676);
    const c = (e) => {
     let { state: n } = e;
-    const t = (0, o.mA)(n);
-    return (0, s.jsx)(r.Ou, { className: (0, i.Z)(a['estafette-badge'], t && a[`estafette-badge--${t}`]), children: n });
+    const t = (0, a.mA)(n);
+    return (0, s.jsx)(r.Ou, { className: (0, i.Z)(o['estafette-badge'], t && o[`estafette-badge--${t}`]), children: n });
    };
   },
   57716: (e, n, t) => {
@@ -251,8 +251,8 @@
    t.d(n, { U: () => d });
    var r = t(24785),
     i = t(78187),
-    a = (t(75271), t(52676));
-   const o = (e, n) => {
+    o = (t(75271), t(52676));
+   const a = (e, n) => {
      const t = new URL(n, new URL(e, 'resolve://pathname/'));
      if ('resolve:' === t.protocol) {
       const { pathname: t, search: r, hash: i } = new URL(n, new URL(e, 'http://example.com/'));
@@ -264,7 +264,7 @@
     c = (e) => ({
      img: (n) => {
       let { src: t, ...r } = n;
-      return (0, a.jsx)('img', { ...r, src: o(e, t), className: 'utrecht-img utrecht-img--fit' });
+      return (0, o.jsx)('img', { ...r, src: a(e, t), className: 'utrecht-img utrecht-img--fit' });
      },
     }),
     l = (e, n) => {
@@ -275,16 +275,16 @@
      return s[n];
     },
     d = (e) => {
-     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: o = '' } = e;
-     return (0, a.jsx)(r.Z, { components: { ...l(t, i), ...c(o) }, children: n });
+     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: a = '' } = e;
+     return (0, o.jsx)(r.Z, { components: { ...l(t, i), ...c(a) }, children: n });
     };
   },
   14669: (e, n, t) => {
    'use strict';
-   t.d(n, { $3: () => r, Q6: () => a, mA: () => i });
+   t.d(n, { $3: () => r, Q6: () => o, mA: () => i });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
-    a = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e];
+    o = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e];
   },
  },
 ]);

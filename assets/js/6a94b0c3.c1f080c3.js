@@ -1,34 +1,34 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [9591],
+ [18181],
  {
-  54593: (e, t, n) => {
+  24555: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => p, metadata: () => u, title: () => h, toc: () => d });
+   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => m, issueNumber: () => y, metadata: () => l, title: () => h, toc: () => d });
    var r = n(52676),
     c = n(24785),
     i = n(61475),
     o = n(21998);
-   const s = { title: 'Date input group', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Date input group', pagination_label: 'Date input group', description: ' ', slug: '/date-input-group', sidebar_custom_props: { illustration: 'DateInputGroupSketch' } },
+   const s = { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } },
     a = void 0,
-    u = { id: 'componenten/date-input-group/index', title: 'Date input group', description: ' ', source: '@site/docs/componenten/date-input-group/index.mdx', sourceDirName: 'componenten/date-input-group', slug: '/date-input-group', permalink: '/date-input-group', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/date-input-group/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Date input group', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Date input group', pagination_label: 'Date input group', description: ' ', slug: '/date-input-group', sidebar_custom_props: { illustration: 'DateInputGroupSketch' } }, sidebar: 'componenten', previous: { title: 'Date input', permalink: '/date-input' }, next: { title: 'Date picker', permalink: '/date-picker' } },
-    l = {},
+    l = { id: 'componenten/form-field/index', title: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', source: '@site/docs/componenten/form-field/index.mdx', sourceDirName: 'componenten/form-field', slug: '/form-field', permalink: '/form-field', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Form field', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form field', pagination_label: 'Form field', description: 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.', slug: '/form-field', sidebar_custom_props: { illustration: 'FormFieldSketch' } }, sidebar: 'componenten', previous: { title: 'File input', permalink: '/file-input' }, next: { title: 'Form field checkbox option', permalink: '/form-field-checkbox-option' } },
+    u = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
-    h = 'Date input group',
-    j = '',
-    y = 'DateInputGroupSketch',
-    p = 189,
-    m = i.find((e) => e.number === p);
-   function g(e) {
+    h = 'Form field',
+    j = 'Groepeert de verschillende onderdelen van een formulier element en kan gevalideerd worden.',
+    m = 'FormFieldSketch',
+    y = 176,
+    g = i.find((e) => e.number === y);
+   function p(e) {
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: m, headingLevel: 1, description: j, illustration: y }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: m, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j, illustration: m }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: g, headingLevel: 3 })] });
    }
    function v(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
   },
   87230: (e, t, n) => {
@@ -47,7 +47,7 @@
   },
   48459: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => u, aY: () => a, um: () => l, wu: () => s });
+   n.d(t, { Zb: () => l, aY: () => a, um: () => u, wu: () => s });
    var r = n(78187),
     c = n(4814);
    n(75271);
@@ -58,43 +58,43 @@
      return (0, o.jsx)('div', { className: (0, c.Z)(i.card__illustration, t && i['card__illustration--background'], r), ...s, children: n });
     },
     a = (e) => (0, o.jsx)('div', { className: (0, c.Z)(i.card__content), ...e }),
-    u = (e) => {
-     let { href: t, appearance: n, className: s, component: a = 'div', children: u } = e;
-     const l = (e) => ('article' === a ? (0, o.jsx)('article', { ...e }) : 'section' === a ? (0, o.jsx)('section', { ...e }) : (0, o.jsx)('div', { ...e })),
-      d = (0, o.jsx)(l, { className: (0, c.Z)(i.cardgroup__card, i[`cardgroup__card--${n}`], s), children: u });
+    l = (e) => {
+     let { href: t, appearance: n, className: s, component: a = 'div', children: l } = e;
+     const u = (e) => ('article' === a ? (0, o.jsx)('article', { ...e }) : 'section' === a ? (0, o.jsx)('section', { ...e }) : (0, o.jsx)('div', { ...e })),
+      d = (0, o.jsx)(u, { className: (0, c.Z)(i.cardgroup__card, i[`cardgroup__card--${n}`], s), children: l });
      return t ? (0, o.jsx)(r.rU, { href: t, boxContent: !0, className: i.cardgroup__link, children: d }) : d;
     },
-    l = (e) => {
+    u = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, o.jsx)('div', { className: (0, c.Z)(i.cardgroup, i[`cardgroup--${t}`], r), children: n });
     };
   },
   21998: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => L, cN: () => z, W: () => T, Rv: () => M });
+   n.d(t, { Gn: () => T, cN: () => F, W: () => D, Rv: () => L });
    var r = n(40168),
     c = n(4814),
     i = (n(75271), n(39854)),
     o = n(7522),
     s = n(62559),
     a = n(79734),
-    u = n(32636),
-    l = n(52676);
-   const d = { figma: (0, l.jsx)(i.Z, {}), github: (0, l.jsx)(o.Z, {}), npm: (0, l.jsx)(s.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
+    l = n(32636),
+    u = n(52676);
+   const d = { figma: (0, u.jsx)(i.Z, {}), github: (0, u.jsx)(o.Z, {}), npm: (0, u.jsx)(s.Z, {}), storybook: (0, u.jsx)(a.Z, {}) },
     h = (e) => {
      let { brand: t } = e;
-     return (0, l.jsx)(r.JO, { children: d[t] || (0, l.jsx)(u.Z, {}) });
+     return (0, u.jsx)(r.JO, { children: d[t] || (0, u.jsx)(l.Z, {}) });
     };
    var j = n(48459);
-   const y = { 'definition-of-done': 'definition-of-done_hA8T', 'definition-of-done--help-wanted': 'definition-of-done--help-wanted_eyW6', 'definition-of-done--community': 'definition-of-done--community_s9uY', 'definition-of-done--candidate': 'definition-of-done--candidate_kcli', 'definition-of-done--hall-of-fame': 'definition-of-done--hall-of-fame_uZjI', 'implementation-card-group': 'implementation-card-group_aUZX', 'implementation-card': 'implementation-card_nkoa' };
-   var p = n(29795);
-   const m = (e) => {
+   const m = { 'definition-of-done': 'definition-of-done_hA8T', 'definition-of-done--help-wanted': 'definition-of-done--help-wanted_eyW6', 'definition-of-done--community': 'definition-of-done--community_s9uY', 'definition-of-done--candidate': 'definition-of-done--candidate_kcli', 'definition-of-done--hall-of-fame': 'definition-of-done--hall-of-fame_uZjI', 'implementation-card-group': 'implementation-card-group_aUZX', 'implementation-card': 'implementation-card_nkoa' };
+   var y = n(29795);
+   const g = (e) => {
     let { checked: t, unchecked: r } = e;
-    return (0, l.jsx)(p.Z, {
-     fallback: (0, l.jsx)(l.Fragment, {}),
+    return (0, u.jsx)(y.Z, {
+     fallback: (0, u.jsx)(u.Fragment, {}),
      children: () => {
       const e = n(99487).YE;
-      return (0, l.jsx)(e, {
+      return (0, u.jsx)(e, {
        radius: 20,
        arcWidth: 4,
        data: [
@@ -107,59 +107,59 @@
      },
     });
    };
-   var g = n(5671),
+   var p = n(5671),
     v = n(78187),
-    b = n(89870);
-   const k = 'task-list_hh8j',
-    f = 'task-list-item_oypx',
+    f = n(89870);
+   const b = 'task-list_hh8j',
+    k = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
     w = 'task-list-item__marker-label_XAyi',
     N = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: k, children: t });
+     return (0, u.jsx)('ul', { className: b, children: t });
     },
-    D = (e) => {
+    A = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
+     return (0, u.jsxs)('li', { className: (0, c.Z)(k), children: [(0, u.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, u.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(v.aC, { role: 'presentation', children: n }), (0, u.jsx)(v.nv, { children: r })] })] });
     };
-   var A = n(14669);
-   const S = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    z = (e) => {
+   var S = n(14669);
+   const z = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    F = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => S.includes(e.id)),
-      o = i && S.map((e) => i.find((t) => t.id === e)).filter(Boolean);
+     const i = t && t.projects.filter((e) => z.includes(e.id)),
+      o = i && z.map((e) => i.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
-      (0, l.jsx)(r.a2, {
+      (0, u.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, A.mA)(e.title)}`]),
+        className: (0, c.Z)(m['definition-of-done'], m[`definition-of-done--${(0, S.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
-        body: (0, l.jsxs)(l.Fragment, {
+        body: (0, u.jsxs)(u.Fragment, {
          children: [
-          (0, l.jsx)(N, {
+          (0, u.jsx)(N, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
-            return (0, l.jsx)(D, { checked: t, title: n, description: (0, A.Q6)(r) }, r);
+            return (0, u.jsx)(A, { checked: t, title: n, description: (0, S.Q6)(r) }, r);
            }),
           }),
-          (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
+          (0, u.jsx)(r.nv, { children: (0, u.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
          ],
         }),
        })),
       })
      );
     },
-    T = (e) => {
+    D = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !S.includes(e.id));
+     const i = t && t.projects.filter((e) => !z.includes(e.id));
      return t && i.length
-      ? (0, l.jsx)(j.um, {
+      ? (0, u.jsx)(j.um, {
          appearance: 'large',
-         className: (0, c.Z)(y['implementation-card-group']),
+         className: (0, c.Z)(m['implementation-card-group']),
          children: i
           .sort((e, t) => {
            const n = e.progress.max - e.progress.value,
@@ -182,22 +182,22 @@
              let { name: t, value: n } = e;
              return i.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
-           return (0, l.jsx)(
+           return (0, u.jsx)(
             j.Zb,
             {
-             className: (0, c.Z)(y['implementation-card']),
-             children: (0, l.jsxs)(j.aY, {
+             className: (0, c.Z)(m['implementation-card']),
+             children: (0, u.jsxs)(j.aY, {
               children: [
-               (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, u.jsx)(r.X6, { level: n, children: e.title }),
+               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                o.length &&
-                (0, l.jsxs)(l.Fragment, {
+                (0, u.jsxs)(u.Fragment, {
                  children: [
-                  (0, l.jsx)(r.X6, { level: n + 1, children: 'Component gebruiken?' }),
-                  (0, l.jsx)(r.Mc, {
+                  (0, u.jsx)(r.X6, { level: n + 1, children: 'Component gebruiken?' }),
+                  (0, u.jsx)(r.Mc, {
                    children: o.map((e) => {
                     const { brand: t, desciption: n } = i.get(e.name);
-                    return (0, l.jsxs)(r.k7, { href: e.value, children: [(0, l.jsx)(h, { brand: t }), ' ', n] }, e.id);
+                    return (0, u.jsxs)(r.k7, { href: e.value, children: [(0, u.jsx)(h, { brand: t }), ' ', n] }, e.id);
                    }),
                   }),
                  ],
@@ -209,16 +209,16 @@
            );
           }),
         })
-      : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
+      : (0, u.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
+    },
+    T = (e) => {
+     let { component: t } = e;
+     return t && (0, u.jsxs)(r.nv, { children: ['De ', t.title, ' component staat bij NL Design System in de', ' ', (0, u.jsx)(r.rU, { href: t.backlog, children: 'levende backlog' }), ', heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!'] });
     },
     L = (e) => {
-     let { component: t } = e;
-     return t && (0, l.jsxs)(r.nv, { children: ['De ', t.title, ' component staat bij NL Design System in de', ' ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'levende backlog' }), ', heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!'] });
-    },
-    M = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
-     const i = t && A.$3[t.relayStep];
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, l.jsx)(g.y, { state: i })] }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
+     const i = t && S.$3[t.relayStep];
+     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, u.jsx)(p.y, { state: i })] }), (0, u.jsx)(r.nv, { lead: !0, children: c })] });
     };
   },
   5671: (e, t, n) => {
