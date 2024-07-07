@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Textarea', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Textarea', pagination_label: 'Textarea', description: ' ', slug: '/textarea', sidebar_custom_props: { illustration: 'TextAreaSketch' } },
+   const s = { title: 'Textarea', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Textarea', pagination_label: 'Textarea', description: 'Biedt de mogelijkheid om meerdere regels aan tekens in te vullen.', slug: '/textarea', sidebar_custom_props: { illustration: 'TextAreaSketch' } },
     a = void 0,
-    u = { id: 'componenten/textarea/index', title: 'Textarea', description: ' ', source: '@site/docs/componenten/textarea/index.mdx', sourceDirName: 'componenten/textarea', slug: '/textarea', permalink: '/en/textarea', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/textarea/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Textarea', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Textarea', pagination_label: 'Textarea', description: ' ', slug: '/textarea', sidebar_custom_props: { illustration: 'TextAreaSketch' } }, sidebar: 'componenten', previous: { title: 'Text input group', permalink: '/en/text-input-group' }, next: { title: 'Toggletip', permalink: '/en/toggletip' } },
+    u = { id: 'componenten/textarea/index', title: 'Textarea', description: 'Biedt de mogelijkheid om meerdere regels aan tekens in te vullen.', source: '@site/docs/componenten/textarea/index.mdx', sourceDirName: 'componenten/textarea', slug: '/textarea', permalink: '/en/textarea', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/textarea/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Textarea', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Textarea', pagination_label: 'Textarea', description: 'Biedt de mogelijkheid om meerdere regels aan tekens in te vullen.', slug: '/textarea', sidebar_custom_props: { illustration: 'TextAreaSketch' } }, sidebar: 'componenten', previous: { title: 'Text input group', permalink: '/en/text-input-group' }, next: { title: 'Toggletip', permalink: '/en/toggletip' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Textarea',
-    j = '',
+    j = 'Biedt de mogelijkheid om meerdere regels aan tekens in te vullen.',
     y = 'TextAreaSketch',
     m = 40,
     g = i.find((e) => e.number === m);
@@ -109,19 +109,19 @@
    };
    var p = n(42677),
     v = n(93706),
-    b = n(49427);
-   const k = 'task-list_hh8j',
+    k = n(49427);
+   const b = 'task-list_hh8j',
     f = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
     w = 'task-list-item__marker-label_XAyi',
     N = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: k, children: t });
+     return (0, l.jsx)('ul', { className: b, children: t });
     },
     T = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
     };
    var A = n(14669);
    const S = (e) => {
