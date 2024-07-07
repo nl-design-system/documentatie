@@ -940,6 +940,12 @@ pre {
   margin-top: 0 !important;
 }
 
+.utrecht-document {
+  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+}
+
 /* HACK: Persoonlijke Regelingen Assistent DonutChart */
 .pra-donutchart {
   border: none !important;
