@@ -1,6 +1,7 @@
 import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React from 'react';
+import Astrid from './Astrid';
 import style from './CoreTeam.module.css';
 import Hidde from './Hidde';
 import Jeffrey from './Jeffrey';
@@ -12,7 +13,7 @@ import Wart from './Wart';
 import Yolijn from './Yolijn';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 
-const coreteam = [Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
