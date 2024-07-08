@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Skip link',
-    j = 'e mogelijkheid om content over te slaan en direct naar een onderdeel binnen pagina te navigeren.',
+    j = 'Biedt de mogelijkheid om content over te slaan en direct naar een onderdeel binnen pagina te navigeren.',
     y = 'SkipLinkSketch',
     m = 74,
     g = c.find((e) => e.number === m);
