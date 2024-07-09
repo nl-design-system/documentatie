@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Pre heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pre heading', pagination_label: 'Pre heading', description: ' ', slug: '/pre-heading', sidebar_custom_props: { illustration: 'PreHeadingSketch' } },
+   const s = { title: 'Pre heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pre heading', pagination_label: 'Pre heading', description: 'Een ondersteunende tekst die boven een kop staat.', slug: '/pre-heading', sidebar_custom_props: { illustration: 'PreHeadingSketch' } },
     a = void 0,
-    u = { id: 'componenten/pre-heading/index', title: 'Pre heading', description: ' ', source: '@site/docs/componenten/pre-heading/index.mdx', sourceDirName: 'componenten/pre-heading', slug: '/pre-heading', permalink: '/en/pre-heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/pre-heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Pre heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pre heading', pagination_label: 'Pre heading', description: ' ', slug: '/pre-heading', sidebar_custom_props: { illustration: 'PreHeadingSketch' } }, sidebar: 'componenten', previous: { title: 'Password input', permalink: '/en/password-input' }, next: { title: 'Progress bar', permalink: '/en/progress-bar' } },
+    u = { id: 'componenten/pre-heading/index', title: 'Pre heading', description: 'Een ondersteunende tekst die boven een kop staat.', source: '@site/docs/componenten/pre-heading/index.mdx', sourceDirName: 'componenten/pre-heading', slug: '/pre-heading', permalink: '/en/pre-heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/pre-heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Pre heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pre heading', pagination_label: 'Pre heading', description: 'Een ondersteunende tekst die boven een kop staat.', slug: '/pre-heading', sidebar_custom_props: { illustration: 'PreHeadingSketch' } }, sidebar: 'componenten', previous: { title: 'Password input', permalink: '/en/password-input' }, next: { title: 'Progress bar', permalink: '/en/progress-bar' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Pre heading',
-    j = '',
+    j = 'Een ondersteunende tekst die boven een kop staat.',
     y = 'PreHeadingSketch',
     g = 246,
     m = i.find((e) => e.number === g);
