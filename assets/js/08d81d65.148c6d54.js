@@ -3,14 +3,14 @@
  {
   88314: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => k, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Rich text content', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rich text content', pagination_label: 'Rich text content', description: ' ', slug: '/rich-text-content', sidebar_custom_props: { illustration: 'RichTextContentSketch' } },
+   const s = { title: 'Rich text content', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rich text content', pagination_label: 'Rich text content', description: 'Tekst met uitgebreide opmaakopties zoals links, koppen, lijsten en tabellen.', slug: '/rich-text-content', sidebar_custom_props: { illustration: 'RichTextContentSketch' } },
     a = void 0,
-    u = { id: 'componenten/rich-text-content/index', title: 'Rich text content', description: ' ', source: '@site/docs/componenten/rich-text-content/index.mdx', sourceDirName: 'componenten/rich-text-content', slug: '/rich-text-content', permalink: '/rich-text-content', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/rich-text-content/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Rich text content', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rich text content', pagination_label: 'Rich text content', description: ' ', slug: '/rich-text-content', sidebar_custom_props: { illustration: 'RichTextContentSketch' } }, sidebar: 'componenten', previous: { title: 'Range', permalink: '/range' }, next: { title: 'Select', permalink: '/select' } },
+    u = { id: 'componenten/rich-text-content/index', title: 'Rich text content', description: 'Tekst met uitgebreide opmaakopties zoals links, koppen, lijsten en tabellen.', source: '@site/docs/componenten/rich-text-content/index.mdx', sourceDirName: 'componenten/rich-text-content', slug: '/rich-text-content', permalink: '/rich-text-content', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/rich-text-content/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Rich text content', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rich text content', pagination_label: 'Rich text content', description: 'Tekst met uitgebreide opmaakopties zoals links, koppen, lijsten en tabellen.', slug: '/rich-text-content', sidebar_custom_props: { illustration: 'RichTextContentSketch' } }, sidebar: 'componenten', previous: { title: 'Range', permalink: '/range' }, next: { title: 'Select', permalink: '/select' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     d = 'Rich text content',
-    j = '',
+    j = 'Tekst met uitgebreide opmaakopties zoals links, koppen, lijsten en tabellen.',
     y = 'RichTextContentSketch',
     m = 127,
     g = i.find((e) => e.number === m);
@@ -26,7 +26,7 @@
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j, illustration: y }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: g, headingLevel: 3 })] });
    }
-   function v(e = {}) {
+   function k(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
@@ -71,7 +71,7 @@
   },
   16391: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => D, cN: () => z, W: () => T, Rv: () => L });
+   n.d(t, { Gn: () => D, cN: () => S, W: () => T, Rv: () => L });
    var r = n(47027),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -108,32 +108,32 @@
     });
    };
    var p = n(42677),
-    v = n(93706),
+    k = n(93706),
     b = n(49427);
-   const k = 'task-list_hh8j',
+   const v = 'task-list_hh8j',
     f = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
     w = 'task-list-item__marker-label_XAyi',
     N = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: k, children: t });
+     return (0, l.jsx)('ul', { className: v, children: t });
     },
-    A = (e) => {
+    z = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(k.aC, { role: 'presentation', children: n }), (0, l.jsx)(k.nv, { children: r })] })] });
     };
-   var S = n(14669);
-   const z = (e) => {
+   var A = n(14669);
+   const S = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => S.e9.includes(e.id)),
-      o = i && S.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
+     const i = t && t.projects.filter((e) => A.e9.includes(e.id)),
+      o = i && A.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, l.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, S.mA)(e.title)}`]),
+        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, A.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
@@ -142,7 +142,7 @@
           (0, l.jsx)(N, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
-            return (0, l.jsx)(A, { checked: t, title: n, description: (0, S.Q6)(r) }, r);
+            return (0, l.jsx)(z, { checked: t, title: n, description: (0, A.Q6)(r) }, r);
            }),
           }),
           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -154,7 +154,7 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !S.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !A.e9.includes(e.id));
      return t && i.length
       ? (0, l.jsx)(j.um, {
          appearance: 'large',
@@ -216,7 +216,7 @@
     },
     L = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
-     const i = t && S.$3[t.relayStep];
+     const i = t && A.$3[t.relayStep];
      return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, l.jsx)(p.y, { state: i })] }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
     };
   },
