@@ -1,0 +1,40 @@
+/* TODO: When SCSS is supported, use the mixins */
+/*
+@import "@utrecht/heading-1/src/mixin";
+@import "@utrecht/heading-2/src/mixin";
+@import "@utrecht/heading-3/src/mixin";
+@import "@utrecht/heading-4/src/mixin";
+@import "@utrecht/heading-5/src/mixin";
+@import "@utrecht/heading-6/src/mixin";
+
+.nlds-inline-heading-group--level-1 {
+   @include utrecht-heading-1
+}
+.nlds-inline-heading-group--level-2 {
+   @include utrecht-heading-2
+}
+.nlds-inline-heading-group--level-3 {
+   @include utrecht-heading-3
+}
+.nlds-inline-heading-group--level-4 {
+   @include utrecht-heading-4
+}
+.nlds-inline-heading-group--level-5 {
+   @include utrecht-heading-5
+}
+.nlds-inline-heading-group--level-6 {
+   @include utrecht-heading-6
+}
+*/
+
+.nlds-inline-heading-group__heading,
+.nlds-inline-heading-group__suffix {
+  display: inline;
+}
+
+.nlds-inline-heading-group__heading {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}

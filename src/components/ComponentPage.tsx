@@ -6,6 +6,7 @@ import { Card, CardContent, CardGroup } from './CardGroup';
 import style from './ComponentPage.module.css';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
+import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
 import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
 
@@ -166,9 +167,9 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
   return (
     component && (
       <>
-        <Heading level={headingLevel}>
-          {component.title} {relayStep && <EstafetteBadge state={relayStep} />}
-        </Heading>
+        <InlineHeadingGroup level={headingLevel} suffix={relayStep && <EstafetteBadge state={relayStep} />}>
+          {component.title}
+        </InlineHeadingGroup>
         <Paragraph lead>{description}</Paragraph>
       </>
     )
