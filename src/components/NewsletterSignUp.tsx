@@ -26,6 +26,7 @@ interface NewsletterSignUpProps {
   interests: Array<string>;
   thanksPage: string;
   workAreasId: string;
+  privacyPolicyId: string;
 }
 
 export const NewsletterSignUp = ({
@@ -38,6 +39,7 @@ export const NewsletterSignUp = ({
   interestsId = '',
   interests = [],
   workAreasId = '',
+  privacyPolicyId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -159,6 +161,21 @@ export const NewsletterSignUp = ({
           <Paragraph>
             <Textarea id={workAreasId} name={workAreasId}></Textarea>
           </Paragraph>
+        </FormField>
+      )}
+
+    {privacyPolicyId && (
+        <FormField type="text">
+          <FormFieldDescription id={`${privacyPolicyId}-description`}>Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van toepassing.</FormFieldDescription>
+            <FormField type="checkbox">
+              <Checkbox
+                name={`${privacyPolicyId}[]`}
+                value="1"
+                id={`${privacyPolicyId}-1`}
+                aria-describedby={`${privacyPolicyId}-description`}
+              />
+              <FormLabel htmlFor={`${privacyPolicyId}-1`}> Ik ga  akkoord met het gebruik van mijn gegevens volgens de privacyverklaring</FormLabel>
+            </FormField>
         </FormField>
       )}
 
