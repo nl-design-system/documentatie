@@ -3,14 +3,14 @@
  {
   31603: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => b, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => g, metadata: () => u, title: () => h, toc: () => d });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => g, metadata: () => u, title: () => h, toc: () => d });
    var r = n(52676),
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: ' ', slug: '/strong', sidebar_custom_props: { illustration: 'StrongSketch' } },
+   const s = { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: 'Toont tekst met sterke nadruk, meestal weergegeven in vetgedrukte vorm.', slug: '/strong', sidebar_custom_props: { illustration: 'StrongSketch' } },
     a = void 0,
-    u = { id: 'componenten/strong/index', title: 'Strong', description: ' ', source: '@site/docs/componenten/strong/index.mdx', sourceDirName: 'componenten/strong', slug: '/strong', permalink: '/strong', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/strong/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: ' ', slug: '/strong', sidebar_custom_props: { illustration: 'StrongSketch' } }, sidebar: 'componenten', previous: { title: 'Status badge', permalink: '/status-badge' }, next: { title: 'Sub heading', permalink: '/sub-heading' } },
+    u = { id: 'componenten/strong/index', title: 'Strong', description: 'Toont tekst met sterke nadruk, meestal weergegeven in vetgedrukte vorm.', source: '@site/docs/componenten/strong/index.mdx', sourceDirName: 'componenten/strong', slug: '/strong', permalink: '/strong', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/strong/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: 'Toont tekst met sterke nadruk, meestal weergegeven in vetgedrukte vorm.', slug: '/strong', sidebar_custom_props: { illustration: 'StrongSketch' } }, sidebar: 'componenten', previous: { title: 'Status badge', permalink: '/status-badge' }, next: { title: 'Sub heading', permalink: '/sub-heading' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Strong',
-    j = '',
+    j = 'Toont tekst met sterke nadruk, meestal weergegeven in vetgedrukte vorm.',
     y = 'StrongSketch',
     g = 138,
     m = i.find((e) => e.number === g);
@@ -26,7 +26,7 @@
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: m, headingLevel: 1, description: j, illustration: y }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: m, headingLevel: 3 })] });
    }
-   function b(e = {}) {
+   function v(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
@@ -71,7 +71,7 @@
   },
   16391: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => T, cN: () => z, W: () => D, Rv: () => L });
+   n.d(t, { Gn: () => D, cN: () => z, W: () => T, Rv: () => L });
    var r = n(47027),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -108,20 +108,20 @@
     });
    };
    var p = n(42677),
-    b = n(93706),
-    v = n(49427);
-   const k = 'task-list_hh8j',
+    v = n(93706),
+    k = n(49427);
+   const b = 'task-list_hh8j',
     f = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
     x = 'task-list-item__marker--checked_y8Vc',
-    S = 'task-list-item__marker-label_XAyi',
-    w = (e) => {
+    w = 'task-list-item__marker-label_XAyi',
+    S = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: k, children: t });
+     return (0, l.jsx)('ul', { className: b, children: t });
     },
     N = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: S, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(b.aC, { role: 'presentation', children: n }), (0, l.jsx)(b.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
     };
    var A = n(14669);
    const z = (e) => {
@@ -139,7 +139,7 @@
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
         body: (0, l.jsxs)(l.Fragment, {
          children: [
-          (0, l.jsx)(w, {
+          (0, l.jsx)(S, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
             return (0, l.jsx)(N, { checked: t, title: n, description: (0, A.Q6)(r) }, r);
@@ -152,7 +152,7 @@
       })
      );
     },
-    D = (e) => {
+    T = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !A.e9.includes(e.id));
      return t && i.length
@@ -210,7 +210,7 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    T = (e) => {
+    D = (e) => {
      let { component: t } = e;
      return t && (0, l.jsxs)(r.nv, { children: ['De ', t.title, ' component staat bij NL Design System in de', ' ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'levende backlog' }), ', heb je een concrete eisen of wensen voor dit component? Laat het ons dan daar weten!'] });
     },
