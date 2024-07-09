@@ -8,9 +8,9 @@
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Password input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password input', pagination_label: 'Password input', description: ' ', slug: '/password-input', sidebar_custom_props: { illustration: 'PasswordInputSketch' } },
+   const s = { title: 'Password input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password input', pagination_label: 'Password input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', slug: '/password-input', sidebar_custom_props: { illustration: 'PasswordInputSketch' } },
     a = void 0,
-    u = { id: 'componenten/password-input/index', title: 'Password input', description: ' ', source: '@site/docs/componenten/password-input/index.mdx', sourceDirName: 'componenten/password-input', slug: '/password-input', permalink: '/en/password-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/password-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Password input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password input', pagination_label: 'Password input', description: ' ', slug: '/password-input', sidebar_custom_props: { illustration: 'PasswordInputSketch' } }, sidebar: 'componenten', previous: { title: 'Paragraph', permalink: '/en/paragraph' }, next: { title: 'Pre heading', permalink: '/en/pre-heading' } },
+    u = { id: 'componenten/password-input/index', title: 'Password input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', source: '@site/docs/componenten/password-input/index.mdx', sourceDirName: 'componenten/password-input', slug: '/password-input', permalink: '/en/password-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/password-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Password input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password input', pagination_label: 'Password input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', slug: '/password-input', sidebar_custom_props: { illustration: 'PasswordInputSketch' } }, sidebar: 'componenten', previous: { title: 'Paragraph', permalink: '/en/paragraph' }, next: { title: 'Pre heading', permalink: '/en/pre-heading' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Password input',
-    j = '',
+    j = 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.',
     y = 'PasswordInputSketch',
     m = 133,
     p = i.find((e) => e.number === m);
@@ -71,7 +71,7 @@
   },
   16391: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => T, cN: () => z, W: () => D, Rv: () => L });
+   n.d(t, { Gn: () => T, cN: () => S, W: () => D, Rv: () => L });
    var r = n(47027),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -123,17 +123,17 @@
      let { checked: t, title: n, description: r } = e;
      return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
     };
-   var S = n(14669);
-   const z = (e) => {
+   var z = n(14669);
+   const S = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => S.e9.includes(e.id)),
-      o = i && S.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
+     const i = t && t.projects.filter((e) => z.e9.includes(e.id)),
+      o = i && z.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, l.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, S.mA)(e.title)}`]),
+        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, z.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
@@ -142,7 +142,7 @@
           (0, l.jsx)(N, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
-            return (0, l.jsx)(A, { checked: t, title: n, description: (0, S.Q6)(r) }, r);
+            return (0, l.jsx)(A, { checked: t, title: n, description: (0, z.Q6)(r) }, r);
            }),
           }),
           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -154,7 +154,7 @@
     },
     D = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !S.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !z.e9.includes(e.id));
      return t && i.length
       ? (0, l.jsx)(j.um, {
          appearance: 'large',
@@ -216,7 +216,7 @@
     },
     L = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
-     const i = t && S.$3[t.relayStep];
+     const i = t && z.$3[t.relayStep];
      return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, l.jsx)(g.y, { state: i })] }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
     };
   },
