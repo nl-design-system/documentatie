@@ -167,8 +167,8 @@ export const NewsletterSignUp = ({
       {privacyPolicyId && (
         <FormField type="text">
           <FormFieldDescription id={`${privacyPolicyId}-description`}>
-            Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
-            toepassing.
+            <p>Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
+            toepassing.</p>
           </FormFieldDescription>
           <FormField type="checkbox">
             <Checkbox
