@@ -3,14 +3,14 @@
  {
   57266: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => b, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => v, description: () => j, frontMatter: () => s, illustration: () => y, issueNumber: () => m, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     c = n(24785),
     i = n(31612),
     o = n(16391);
-   const s = { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: ' ', slug: '/switch', sidebar_custom_props: { illustration: 'SwitchSketch' } },
+   const s = { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten.', slug: '/switch', sidebar_custom_props: { illustration: 'SwitchSketch' } },
     a = void 0,
-    u = { id: 'componenten/switch/index', title: 'Switch', description: ' ', source: '@site/docs/componenten/switch/index.mdx', sourceDirName: 'componenten/switch', slug: '/switch', permalink: '/en/switch', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/switch/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: ' ', slug: '/switch', sidebar_custom_props: { illustration: 'SwitchSketch' } }, sidebar: 'componenten', previous: { title: 'Summary list', permalink: '/en/summary-list' }, next: { title: 'Table', permalink: '/en/table' } },
+    u = { id: 'componenten/switch/index', title: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten.', source: '@site/docs/componenten/switch/index.mdx', sourceDirName: 'componenten/switch', slug: '/switch', permalink: '/en/switch', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/switch/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten.', slug: '/switch', sidebar_custom_props: { illustration: 'SwitchSketch' } }, sidebar: 'componenten', previous: { title: 'Summary list', permalink: '/en/summary-list' }, next: { title: 'Table', permalink: '/en/table' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     d = 'Switch',
-    j = '',
+    j = 'Invoerveld om een optie aan of uit te zetten.',
     y = 'SwitchSketch',
     m = 33,
     g = i.find((e) => e.number === m);
@@ -26,7 +26,7 @@
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j, illustration: y }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'levende-backlog', children: 'Levende Backlog' }), '\n', (0, r.jsx)(o.Gn, { component: g, headingLevel: 3 })] });
    }
-   function b(e = {}) {
+   function v(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
@@ -71,7 +71,7 @@
   },
   16391: (e, t, n) => {
    'use strict';
-   n.d(t, { Gn: () => D, cN: () => z, W: () => T, Rv: () => L });
+   n.d(t, { Gn: () => D, cN: () => A, W: () => T, Rv: () => L });
    var r = n(47027),
     c = n(4814),
     i = (n(75271), n(39854)),
@@ -108,8 +108,8 @@
     });
    };
    var p = n(42677),
-    b = n(93706),
-    v = n(49427);
+    v = n(93706),
+    b = n(49427);
    const k = 'task-list_hh8j',
     f = 'task-list-item_oypx',
     _ = 'task-list-item__marker_Eefn',
@@ -121,19 +121,19 @@
     },
     N = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(b.aC, { role: 'presentation', children: n }), (0, l.jsx)(b.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, c.Z)(f), children: [(0, l.jsxs)('div', { className: (0, c.Z)(_, { [x]: t }), children: [(0, l.jsx)('span', { className: w, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.aC, { role: 'presentation', children: n }), (0, l.jsx)(v.nv, { children: r })] })] });
     };
-   var A = n(14669);
-   const z = (e) => {
+   var z = n(14669);
+   const A = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => A.e9.includes(e.id)),
-      o = i && A.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
+     const i = t && t.projects.filter((e) => z.e9.includes(e.id)),
+      o = i && z.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, l.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, A.mA)(e.title)}`]),
+        className: (0, c.Z)(y['definition-of-done'], y[`definition-of-done--${(0, z.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: `${e.title} - ${e.progress.value} van ${e.progress.max}`,
@@ -142,7 +142,7 @@
           (0, l.jsx)(S, {
            children: e.tasks.map((e) => {
             let { checked: t, name: n, id: r } = e;
-            return (0, l.jsx)(N, { checked: t, title: n, description: (0, A.Q6)(r) }, r);
+            return (0, l.jsx)(N, { checked: t, title: n, description: (0, z.Q6)(r) }, r);
            }),
           }),
           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -154,7 +154,7 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !A.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !z.e9.includes(e.id));
      return t && i.length
       ? (0, l.jsx)(j.um, {
          appearance: 'large',
@@ -216,7 +216,7 @@
     },
     L = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
-     const i = t && A.$3[t.relayStep];
+     const i = t && z.$3[t.relayStep];
      return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n, children: [t.title, ' ', i && (0, l.jsx)(p.y, { state: i })] }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
     };
   },
