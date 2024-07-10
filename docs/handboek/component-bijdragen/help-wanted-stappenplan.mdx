@@ -20,7 +20,7 @@ keywords:
 
 Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Help Wanted' status](https://github.com/orgs/nl-design-system/projects/27/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
 
-## Naam bepalen
+## Naam bepaald op basis van NL Design System naamgeving
 
 Begin met het bepalen van een naam.
 
@@ -34,9 +34,9 @@ Kijk voor inspiratie bij:
 
 Zijn er meerdere namen voor de component? Kies de meest gangbare. De andere namen kun je later toevoegen aan de documentatie.
 
-**🚩 Checkpoint**: Naam bepaald op basis van NL Design System naamgeving.
+**🚩 Checkpoint**: Naam
 
-## Doel bepalen
+## Doel van component is in één zin beschreven.
 
 Doel: Vanuit het componentenoverzicht kan men de juiste component uitzoeken.
 
@@ -52,17 +52,17 @@ Kijk ter inspiratie bij:
 
 Beschrijf specifiek, kort en bondig wat het doel is voor de component. [Bekijk het overzicht](https://www.nldesignsystem.nl/componenten/) ter inspiratie.
 
-**🚩 Checkpoint**: Doel van component is in één zin beschreven.
+**🚩 Checkpoint**: Doel
 
-## Afbeelding maken
+## Afbeelding gemaakt om de component visueel duidelijk te maken.
 
 Doel: De component is visueel duidelijk.
 
 Om de community letterlijk een beeld te geven van de component voegen we een afbeelding toe. Het kernteam maakt deze in het [Figma 'Schetsboek'](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=439-969&mode=design). Zelf kun je een eigen afbeelding maken, huisstijl maakt niet uit.
 
-**🚩 Checkpoint**: Afbeelding gemaakt om de component visueel duidelijk te maken.
+**🚩 Checkpoint**: Afbeelding
 
-## GitHub Discussion starten
+## Aangemaakt als een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions).
 
 Doel: Een plek om input te verzamelen.
 
@@ -102,9 +102,9 @@ Het kan voorkomen dat andere componenten sterk gerelateerd zijn aan dit componen
 X, Y, of Z.
 ```
 
-**🚩 Checkpoint**: Aangemaakt als een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions).
+**🚩 Checkpoint**: Discussion URL
 
-## Toevoegen aan backlog
+## Staat in de [publieke backlog van NL Design System](https://github.com/nl-design-system/backlog/issues).
 
 Doel: Zichtbaarheid en overzicht creëren zodat componenten niet dubbel worden toevoegd.
 
@@ -125,17 +125,15 @@ We gebruiken 'Issues' in de [Github 'Backlog' repository van NL Design System](h
 Selecteer bij 'Labels' het label: Component.
 Selecteer bij 'Projects' het project: Components - 1 - Help Wanted.
 
-**🚩 Checkpoint**: Staat in de [publieke backlog van NL Design System](https://github.com/nl-design-system/backlog/issues).
+**🚩 Checkpoint**: Backlog
 
-## Checkpoints afvinken
-
-Doel: Voortgang van component inzichtelijk maken.
+### Tip: Checkpoints afvinken
 
 Door de vorige stap is de component toegevoegd aan het [Help Wanted bord](https://github.com/orgs/nl-design-system/projects/27/views/1). Je kunt nu de reeds behaalde checkpoints afvinken door per kolom de juiste waarde in te vullen.
 
-## Input verzamelen
+## Bewijs verzameld dat de component algemeen bruikbaar is
 
-Doel: Bewijs verzameld dat de component algemeen bruikbaar is.
+Doel: Alleen componenten die naar verwachting in de Hall of Fame kunnen komen willen we toevoegen als Help Wanted.
 
 ### Community om hulp vragen
 
@@ -253,6 +251,8 @@ Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik ond
 ```md
 ## {Naam-organisatie}
 
+<!-- Links naar component implementatie (niet verplicht) -->
+
 - [Documentatie website]({link-naar-component-in-documentatie-website})
 - [Storybook]({link-naar-component-in-storybook})
 - [Figma]({link-naar-component-in-figma})
@@ -262,23 +262,17 @@ Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik ond
 
 ### Screenshots / Varianten
 
-**Storybook**
+**{Omgeving}**
 
-Naam variant
-Rationale variant
-Screenshot
-
-**Figma**
-
-Naam variant
-Rationale variant
-Screenshot
+{Naam variant}
+{Rationale variant}
+{Screenshot}
 
 ---
 
 ### Notities
-```
 
+<!--
 - Vul aan waar nodig.
 - Laat weg wat niet van toepassing is.
 - Noteer wat je opvalt.
@@ -288,21 +282,31 @@ Screenshot
   - Heeft de component een andere naam?
   - Is er onderzoek beschikbaar?
   - etc.
+ -->
+```
 
-**🚩 Checkpoint**:
+**🚩 Checkpoint**: Bruikbaar
 
-- Bewijs verzameld dat de component algemeen bruikbaar is.
-- Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.
+## Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.
 
-## Varianten vastgeleggen
+Doel: Er is niet alleen een schets beschikbaar, maar tenminste één uitgewerkte implementatie.
+
+In de stap [Bevindingen vastleggen](#bevindingen-vastleggen) zijn er waarschijnlijk al links beschikbaar. Dan is deze stap al gedaan.
+Voeg anders een linkje van je eigen implementatie in Figma of Storybook toe in de discussion. Zorg ervoor dat dit linkje te bekijken is zonder in te loggen.
+
+**🚩 Checkpoint**: Link
+
+## Naam en doel van benodigde varianten beschreven
 
 Doel: Alleen varianten die algemeen nut hebben zijn vastgelegd. Daarnaast is het duidelijk waarvoor de variant bedoeld is.
 
-De varianten kun je baseren op de screenshots van de stap hierboven. Beschrijf de naam en het doel van de algemeen nuttige varianten. Als je twijfelt over de rationale van een variant kun je de betreffende organisatie eventueel om aanvullende toelichting vragen. Als je twijfelt over het algemeen nut van een variant kun je deze altijd later nog toevoegen.
+In de stap [Bevindingen vastleggen](#bevindingen-vastleggen) zijn er waarschijnlijk al beschrijvingen van varianten beschikbaar. Dan is deze stap al gedaan.
 
-**🚩 Checkpoint**: Naam en doel van benodigde varianten beschreven.
+Beschrijf anders de naam en het doel van de algemeen nuttige varianten. Als je twijfelt over de rationale van een variant kun je de betreffende organisatie eventueel om aanvullende toelichting vragen. Als je twijfelt over het algemeen nut van een variant kun je deze altijd later nog toevoegen.
 
-## Onderzoek toevoegen
+**🚩 Checkpoint**: Varianten
+
+## Nut van component is onderbouwd door gebruikersonderzoek.
 
 Doel: We kunnen aantonen dat dit een component is dat voor eindgebruikers werkt.
 
@@ -330,9 +334,9 @@ Korte beschrijving
 Korte beschrijving
 ```
 
-**🚩 Checkpoint**: Nut van component is onderbouwd door gebruikersonderzoek.
+**🚩 Checkpoint**: Onderzoek
 
-## Bevestiging door kernteam
+## Nut van component is door het kernteam bevestigd
 
 Doel: kernteam verwacht dat dit component tot Hall of Fame kan komen.
 
@@ -363,6 +367,8 @@ Het kernteam bespreekt de component aan het eind van de eerstvolgende weekly. Ev
 
 Ga verder bij [Status naar Help Wanted](#status-naar-help-wanted).
 
+**🚩 Checkpoint**: Kernteam = 'Done'
+
 #### Niet akkoord?
 
 Plaats deze tekst in de 'thread' van het 'Hiep hoi' bericht, vul aan waar nodig.
@@ -373,11 +379,23 @@ Plaats deze tekst in de 'thread' van het 'Hiep hoi' bericht, vul aan waar nodig.
 Dit hoeft niet te betekenen dat {naam-component} nooit de Help Wanted status krijgt. De [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}) blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.
 ```
 
-Geef de 'Bruikbaar' en 'Kernteam' kolommen op het [Help Wanted bord](https://github.com/orgs/nl-design-system/projects/27/views/1) de juiste waarde, bijvoorbeeld 'Snowflake' en 'Declined'.
+**🚩 Checkpoint**: Kernteam = 'Declined'
 
-**🚩 Checkpoint**: Nut van component is door het kernteam bevestigd.
+## Vindbaar op de NL Design System website.
 
-## Status naar Help Wanted
+Doel: Hierdoor kan de component worden opgepakt door de community.
+
+Deze stap kan enkel worden uitgevoerd door het kernteam.
+
+- Schematische afbeelding gemaakt in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
+- Component progress geupdate zodat de laatste status van de component wordt meegenomen.
+  - [Pakketje](https://www.npmjs.com/package/@nl-design-system/component-progress) updaten met [action](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml).
+  - In de documentatie repository `pnpm install --save-dev @nl-design-system/component-progress@latest`
+- Component toegevoegd aan de [documentatie repository](https://github.com/nl-design-system/documentatie/tree/main/docs/componenten) met behulp van [de component template](https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx).
+
+**🚩 Checkpoint**: nldesignsystem.nl
+
+## Status bijgewerkt naar Help Wanted
 
 Doel: iedereen kan zien dat de component nu richting Candidate wil.
 
@@ -415,21 +433,7 @@ Help je mee hem door de Community stappen te krijgen?
 De [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}) blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.
 ```
 
-**🚩 Checkpoint**: Status bijgewerkt naar Help Wanted.
-
-## Toevoegen aan documentatie website
-
-Doel: Hierdoor kan de component worden opgepakt door de community.
-
-Deze stap kan enkel worden uitgevoerd door het kernteam.
-
-- Schematische afbeelding gemaakt in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
-- Component progress geupdate zodat de laatste status van de component wordt meegenomen.
-  - [Pakketje](https://www.npmjs.com/package/@nl-design-system/component-progress) updaten met [action](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml).
-  - In de documentatie repository `pnpm install --save-dev @nl-design-system/component-progress@latest`
-- Component toegevoegd aan de [documentatie repository](https://github.com/nl-design-system/documentatie/tree/main/docs/componenten) met behulp van [de component template](https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx).
-
-**🚩 Checkpoint**: Vindbaar op de NL Design System website.
+**🚩 Checkpoint**: Status
 
 ## 🏁 Finish
 
