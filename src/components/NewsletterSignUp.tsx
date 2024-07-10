@@ -162,18 +162,17 @@ export const NewsletterSignUp = ({
           </FormFieldDescription>
           <FormField type="checkbox">
             <Checkbox
-              name={`${privacyPolicyId}[]`}
               value="1"
               id={`${privacyPolicyId}-1`}
               aria-describedby={`${privacyPolicyId}-description`}
               aria-required="true"
-              {...register(`${privacyPolicyId}`, {
+              {...register(`${privacyPolicyId}[]`, {
                 required: {
                   value: true,
                   message: 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
                 },
               })}
-              invalid={!!errors[privacyPolicyId]}
+              invalid={!!errors[`${privacyPolicyId}[]`]}
             />
             <FormLabel htmlFor={`${privacyPolicyId}-1`}>
               {' '}
