@@ -166,12 +166,21 @@ export const NewsletterSignUp = ({
               value="1"
               id={`${privacyPolicyId}-1`}
               aria-describedby={`${privacyPolicyId}-description`}
+              aria-required="true"
+              {...register(`${privacyPolicyId}`, {
+                required: {
+                  value: true,
+                  message: 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
+                },
+              })}
+              invalid={!!errors[privacyPolicyId]}
             />
             <FormLabel htmlFor={`${privacyPolicyId}-1`}>
               {' '}
               Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring
             </FormLabel>
           </FormField>
+          {errors[privacyPolicyId] && <FormFieldErrorMessage>{errors[privacyPolicyId].message}</FormFieldErrorMessage>}
         </FormField>
       )}
 
