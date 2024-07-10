@@ -116,19 +116,7 @@ export const NewsletterSignUp = ({
           </Paragraph>
           {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
-            <Textbox
-              id={orgId}
-              name={orgId}
-              type="text"
-              aria-required="true"
-              {...register(`${orgId}`, {
-                required: {
-                  value: true,
-                  message: 'Dit veld is verplicht, maar het is niet ingevuld.',
-                },
-              })}
-              invalid={!!errors[orgId]}
-            />
+            <Textbox id={orgId} name={orgId} type="text" />
           </Paragraph>
         </FormField>
       )}
