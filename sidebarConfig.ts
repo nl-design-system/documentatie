@@ -284,6 +284,21 @@ const sidebars: SidebarsConfig = {
                 { type: 'doc', id: 'community/events/design-open-hour/aanmelden' },
               ],
             },
+            {
+              type: 'category',
+              label: 'Developer Open Hour',
+              description:
+                'Tijdens het (online) Developer Open Hour delen developers van verschillende organisaties kennis.',
+              link: {
+                type: 'generated-index',
+                title: 'Developer Open Hour',
+                slug: '/events/developer-open-hour/overzicht',
+              },
+              items: [
+                { type: 'doc', id: 'community/events/developer-open-hour/developer-open-hour' },
+                { type: 'doc', id: 'community/events/developer-open-hour/aanmelden' },
+              ],
+            },
             { type: 'doc', id: 'community/events/design-open-dag' },
             { type: 'doc', id: 'community/events/estafettemodeldag' },
           ],
