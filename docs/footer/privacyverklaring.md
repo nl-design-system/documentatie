@@ -40,6 +40,6 @@ Goed om te weten: uiteraard mag je jezelf op ieder moment afmelden. Dit kan door
 
 ## Meer informatie
 
-Mocht je vragen hebben over bescherming van uw privacy in relatie tot de website nldesignsystem.nl, dan kun je contact opnemen met het kernteam via kernteam@nldesignsystem.nl.
+Mocht je vragen hebben over bescherming van je privacy in relatie tot de website nldesignsystem.nl, dan kun je contact opnemen met het kernteam via kernteam@nldesignsystem.nl.
 
-Degene van wie persoonsgegevens worden verwerkt heeft het recht zich tot NL Design System te richten met een verzoek om deze persoonsgegevens in te zien, te corrigeren of te (laten) verwijderen. Ook hiervoor kunt u contact opnemen met het kernteam via [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
+Degene van wie persoonsgegevens worden verwerkt heeft het recht zich tot NL Design System te richten met een verzoek om deze persoonsgegevens in te zien, te corrigeren of te (laten) verwijderen. Ook hiervoor kun je contact opnemen met het kernteam via [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
