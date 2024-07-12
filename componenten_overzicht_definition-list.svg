@@ -1,0 +1,47 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1120_2564)">
+<rect width="960" height="540" fill="#F9F6F3"/>
+<g clip-path="url(#clip1_1120_2564)">
+<rect width="960" height="540" fill="#F9F6F3"/>
+<rect width="2" height="540" transform="translate(69)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(151)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(233)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(315)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(397)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(479)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(561)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(643)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(725)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(807)" fill="#E4EBED"/>
+<rect width="2" height="540" transform="translate(889)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 64)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 146)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 228)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 310)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 392)" fill="#E4EBED"/>
+<rect width="960" height="2" transform="translate(0 474)" fill="#E4EBED"/>
+</g>
+<mask id="path-1-inside-1_1120_2564" fill="white">
+<path d="M151 145H809V272H151V145Z"/>
+</mask>
+<path d="M151 149H809V141H151V149ZM809 268H151V276H809V268Z" fill="#004152" mask="url(#path-1-inside-1_1120_2564)"/>
+<rect x="151" y="179" width="136" height="16" rx="8" fill="#004152"/>
+<rect x="479" y="179" width="330" height="16" rx="8" fill="#004152"/>
+<rect x="479" y="220" width="128" height="16" rx="8" fill="#004152"/>
+<mask id="path-6-inside-2_1120_2564" fill="white">
+<path d="M151 268H809V395H151V268Z"/>
+</mask>
+<path d="M151 272H809V264H151V272ZM809 391H151V399H809V391Z" fill="#004152" mask="url(#path-6-inside-2_1120_2564)"/>
+<rect x="151" y="302" width="212" height="16" rx="8" fill="#004152"/>
+<rect x="479" y="302" width="330" height="16" rx="8" fill="#004152"/>
+<rect x="479" y="343" width="211" height="16" rx="8" fill="#004152"/>
+</g>
+<defs>
+<clipPath id="clip0_1120_2564">
+<rect width="960" height="540" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1120_2564">
+<rect width="960" height="540" fill="white"/>
+</clipPath>
+</defs>
+</svg>
