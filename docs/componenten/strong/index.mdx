@@ -6,8 +6,6 @@ sidebar_label: Strong
 pagination_label: Strong
 description: Korte belangrijke tekst die vetgedrukt wordt weergegeven.
 slug: /strong
-sidebar_custom_props:
-  illustration: StrongSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Strong";
 export const description = "Korte belangrijke tekst die vetgedrukt wordt weergegeven.";
-export const illustration = "StrongSketch";
 export const issueNumber = 138;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

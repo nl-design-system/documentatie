@@ -6,8 +6,6 @@ sidebar_label: Switch
 pagination_label: Switch
 description: Invoerveld om een optie aan of uit te zetten.
 slug: /switch
-sidebar_custom_props:
-  illustration: SwitchSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Switch";
 export const description = "Invoerveld om een optie aan of uit te zetten.";
-export const illustration = "SwitchSketch";
 export const issueNumber = 33;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

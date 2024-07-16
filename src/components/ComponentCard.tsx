@@ -17,7 +17,6 @@ interface ComponentCardProps {
 }
 
 export const ComponentCard = ({
-  illustration = 'TodoSketch',
   name,
   description,
   relayStep,
@@ -31,11 +30,7 @@ export const ComponentCard = ({
       component="section"
     >
       <CardIllustration>
-        <ComponentIllustration
-          component={illustration}
-          relayStep={relayStep}
-          description={`Schets van de ${name} component`}
-        />
+        <ComponentIllustration relayStep={relayStep} description={`Schets van de ${name} component`} name={name} />
       </CardIllustration>
       <CardContent>
         <div>

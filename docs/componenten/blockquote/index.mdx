@@ -6,8 +6,6 @@ sidebar_label: Blockquote
 pagination_label: Blockquote
 description: Toont een citaat dat afwijkt van de hoofdtekst.
 slug: /blockquote
-sidebar_custom_props:
-  illustration: BlockquoteSketch
 keywords:
   - blockquote
   - citaat
@@ -31,12 +29,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Blockquote";
 export const description = "Toont een citaat dat afwijkt van de hoofdtekst.";
-export const illustration = "BlockquoteSketch";
 export const issueNumber = 73;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

@@ -19,13 +19,9 @@
 <rect width="960" height="2" transform="translate(0 310)" fill="var(--component-illustration-grid-color, #eee)"/>
 <rect width="960" height="2" transform="translate(0 392)" fill="var(--component-illustration-grid-color, #eee)"/>
 <rect width="960" height="2" transform="translate(0 474)" fill="var(--component-illustration-grid-color, #eee)"/>
-</g>
-<g clip-path="url(#clip2_641_3289)">
 <rect x="356" y="242" width="246" height="56" fill="var(--component-illustration-color, #666)"/>
-</g>
 <rect x="436" y="262" width="124" height="16" rx="8" fill="var(--component-illustration-background-color, white)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M413.414 258.586C414.195 259.367 414.195 260.633 413.414 261.414L393.414 281.414C392.633 282.195 391.367 282.195 390.586 281.414L380.586 271.414C379.805 270.633 379.805 269.367 380.586 268.586C381.367 267.805 382.633 267.805 383.414 268.586L392 277.172L410.586 258.586C411.367 257.805 412.633 257.805 413.414 258.586Z" fill="var(--component-illustration-background-color, white)"/>
-</g>
 </symbol>
 <use href='#component-illustration'/>
 </svg>

@@ -6,8 +6,6 @@ sidebar_label: Dot badge
 pagination_label: Dot badge
 description: " "
 slug: /dot-badge
-sidebar_custom_props:
-  illustration: DotBadgeSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Dot badge";
 export const description = "";
-export const illustration = "DotBadgeSketch";
 export const issueNumber = 98;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

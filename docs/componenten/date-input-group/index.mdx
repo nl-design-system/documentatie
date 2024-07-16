@@ -6,8 +6,6 @@ sidebar_label: Date input group
 pagination_label: Date input group
 description: Formulierveld voor een datum die de gebruiker al weet of die van bekende gegevens overgenomen kan worden.
 slug: /date-input-group
-sidebar_custom_props:
-  illustration: DateInputGroupSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Date input group";
 export const description = "Formulierveld voor een datum die de gebruiker al weet of die van bekende gegevens overgenomen kan worden.";
-export const illustration = "DateInputGroupSketch";
 export const issueNumber = 189;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

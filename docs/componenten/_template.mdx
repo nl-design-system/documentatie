@@ -6,8 +6,6 @@ sidebar_label: VUL_NAAM_IN
 pagination_label: VUL_NAAM_IN
 description: VUL_DOEL_IN
 slug: /VUL_NAAM_ALS_KEBABJE_IN
-sidebar_custom_props:
-  illustration: VUL_NAAM_ALS_PASCAL_IN+SKETCH
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "VUL_NAAM_IN";
 export const description = "VUL_DOEL_IN";
-export const illustration = "VUL_NAAM_ALS_PASCAL_IN+SKETCH";
 export const issueNumber = "VUL_GITHUB_ISSUE_NUMMER_IN";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

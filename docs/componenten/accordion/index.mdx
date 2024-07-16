@@ -6,8 +6,6 @@ sidebar_label: Accordion
 pagination_label: Accordion
 description: Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.
 slug: /accordion
-sidebar_custom_props:
-  illustration: AccordionSketch
 keywords:
   - accordeon
   - accordion
@@ -38,12 +36,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Accordion";
 export const description = "Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.";
-export const illustration = "AccordionSketch";
 export const issueNumber = 102;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

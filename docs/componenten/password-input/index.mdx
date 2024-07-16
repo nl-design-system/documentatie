@@ -6,8 +6,6 @@ sidebar_label: Password input
 pagination_label: Password input
 description: Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.
 slug: /password-input
-sidebar_custom_props:
-  illustration: PasswordInputSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Password input";
 export const description = "Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.";
-export const illustration = "PasswordInputSketch";
 export const issueNumber = 133;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
