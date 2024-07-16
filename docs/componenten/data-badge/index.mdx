@@ -6,8 +6,6 @@ sidebar_label: Data badge
 pagination_label: Data badge
 description: Label met extra informatie, zoals een categorie of een eigenschap.
 slug: /data-badge
-sidebar_custom_props:
-  illustration: DataBadgeSketch
 keywords:
   - annotatie
   - annotation
@@ -48,12 +46,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Data badge";
 export const description = "Label met extra informatie, zoals een categorie of een eigenschap.";
-export const illustration = "DataBadgeSketch";
 export const issueNumber = 94;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

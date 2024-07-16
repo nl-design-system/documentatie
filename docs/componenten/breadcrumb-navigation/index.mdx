@@ -6,8 +6,6 @@ sidebar_label: Breadcrumb navigation
 pagination_label: Breadcrumb navigation
 description: Toont de locatie van de pagina binnen de hiërarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.
 slug: /breadcrumb-navigation
-sidebar_custom_props:
-  illustration: BreadcrumbNavigationSketch
 keywords:
   - back
   - back link
@@ -39,12 +37,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Breadcrumb navigation";
 export const description = "Toont de locatie van de pagina binnen de hiërarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.";
-export const illustration = "BreadcrumbNavigationSketch";
 export const issueNumber = 54;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

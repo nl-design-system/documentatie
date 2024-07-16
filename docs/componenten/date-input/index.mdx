@@ -6,8 +6,6 @@ sidebar_label: Date input
 pagination_label: Date input
 description: Invoerveld om een datum in te vullen met de mogelijkheden die de browser biedt.
 slug: /date-input
-sidebar_custom_props:
-  illustration: DateInputSketch
 keywords:
   - browser
   - built-in
@@ -43,12 +41,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Date input";
 export const description = "Invoerveld om een datum in te vullen met de mogelijkheden die de browser biedt.";
-export const illustration = "DateInputSketch";
 export const issueNumber = 188;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

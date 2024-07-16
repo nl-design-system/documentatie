@@ -6,8 +6,6 @@ sidebar_label: Link list
 pagination_label: Link list
 description: Een lijst met gerelateerde links naar andere pagina’s of websites.
 slug: /link-list
-sidebar_custom_props:
-  illustration: LinkListSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Link list";
 export const description = "Een lijst met gerelateerde links naar andere pagina’s of websites.";
-export const illustration = "LinkListSketch";
 export const issueNumber = 264;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

@@ -8,8 +8,6 @@ description: Toont een alinea aan tekst.
 slug: /paragraph
 tags:
   - Community
-sidebar_custom_props:
-  illustration: ParagraphSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -22,12 +20,11 @@ import { Markdown } from "../../../src/components/Markdown";
 {/* Add name and description for the component */}
 export const title = "Paragraph";
 export const description = "Toont een alinea aan tekst.";
-export const illustration = "ParagraphSketch";
 export const issueNumber = 115;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

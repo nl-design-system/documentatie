@@ -6,8 +6,6 @@ sidebar_label: Alert dialog
 pagination_label: Alert dialog
 description: "Opent een venster waarin de gebruiker een actie moet uitvoeren om verder te gaan. De rest van de pagina is tijdelijk geblokkeerd."
 slug: /alert-dialog
-sidebar_custom_props:
-  illustration: AlertDialogSketch
 keywords:
   - actie
   - action
@@ -36,12 +34,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Alert dialog";
 export const description = "Opent een venster waarin de gebruiker een actie moet uitvoeren om verder te gaan. De rest van de pagina is tijdelijk geblokkeerd.";
-export const illustration = "AlertDialogSketch";
 export const issueNumber = 182;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

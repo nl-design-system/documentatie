@@ -6,8 +6,6 @@ sidebar_label: Separator
 pagination_label: Separator
 description: Toont een horizontale lijn om content te scheiden.
 slug: /separator
-sidebar_custom_props:
-  illustration: SeparatorSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -18,12 +16,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Separator";
 export const description = "Toont een horizontale lijn om content te scheiden.";
-export const illustration = "SeparatorSketch";
 export const issueNumber = 119;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

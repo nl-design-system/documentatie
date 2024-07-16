@@ -6,8 +6,6 @@ sidebar_label: Avatar
 pagination_label: Avatar
 description: Een afbeelding die een identiteit vertegenwoordigt, meestal in de vorm van een foto, illustratie, of initialen.
 slug: /avatar
-sidebar_custom_props:
-  illustration: AvatarSketch
 keywords:
   - afbeelding
   - avatar
@@ -40,12 +38,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Avatar";
 export const description = "Een afbeelding die een identiteit vertegenwoordigt, meestal in de vorm van een foto, illustratie, of initialen.";
-export const illustration = "AvatarSketch";
 export const issueNumber = 83;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

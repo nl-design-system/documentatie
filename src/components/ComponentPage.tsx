@@ -60,11 +60,14 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
       <AccordionProvider
         appearance=""
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx(style['definition-of-done'], style[`definition-of-done--${toKebabCase(project.title)}`]),
+          className: clsx(
+            style['definition-of-done'],
+            project && style[`definition-of-done--${toKebabCase(project.title)}`],
+          ),
           headingLevel: headingLevel,
           expanded: false,
-          label: `${project.title} - ${project.progress.value} van ${project.progress.max}`,
-          body: (
+          label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
+          body: project && (
             <>
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
@@ -96,7 +99,9 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           return aTodo === bTodo ? a.title.localeCompare(b.title) : aTodo - bTodo;
         })
         .map((project) => {
-          const { value: alias } = project.tasks.find(({ name }) => name === 'Naam');
+          const task = project.tasks.find(({ name }) => name === 'Naam');
+
+          const alias = task?.value;
 
           const urlMap = new Map([
             ['Figma URL', { brand: 'figma', desciption: `${alias} in Figma` }],
@@ -127,11 +132,13 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                     <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
                     <LinkList>
                       {links.map((item) => {
-                        const { brand, desciption } = urlMap.get(item.name);
-                        return (
+                        const url = urlMap.get(item.name);
+                        return url ? (
                           <LinkListLink key={item.id} href={item.value}>
-                            <BrandIcon brand={brand} /> {desciption}
+                            <BrandIcon brand={url.brand} /> {url.desciption}
                           </LinkListLink>
+                        ) : (
+                          <></>
                         );
                       })}
                     </LinkList>

@@ -6,8 +6,6 @@ sidebar_label: Form field
 pagination_label: Form field
 description: Een invoerveld en bijbehorende onderdelen die helpen bij het invullen.
 slug: /form-field
-sidebar_custom_props:
-  illustration: FormFieldSketch
 keywords:
   - form field
   - formulierveld
@@ -21,12 +19,11 @@ import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../
 {/* Add name and description for the component */}
 export const title = "Form field";
 export const description = "Een invoerveld en bijbehorende onderdelen die helpen bij het invullen.";
-export const illustration = "FormFieldSketch";
 export const issueNumber = 176;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

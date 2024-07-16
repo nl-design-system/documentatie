@@ -6,8 +6,6 @@ sidebar_label: Table
 pagination_label: Table
 description: Structureert data in rijen en kolommen.
 slug: /table
-sidebar_custom_props:
-  illustration: TableSketch
 ---
 
 {/* @license CC0-1.0 */}
@@ -20,12 +18,11 @@ import { Markdown } from "../../../src/components/Markdown";
 {/* Add name and description for the component */}
 export const title = "Table";
 export const description = "Structureert data in rijen en kolommen.";
-export const illustration = "TableSketch";
 export const issueNumber = "";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
