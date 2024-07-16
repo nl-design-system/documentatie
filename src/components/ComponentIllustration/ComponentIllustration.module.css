@@ -1,19 +1,11 @@
 .component-illustration {
   display: inline;
-  margin: 0;
-  padding-inline: var(--component-illustration-padding-inline);
-}
-
-.component-illustration__svg {
   height: auto;
+  margin: 0;
   max-height: var(--component-illustration-svg-max-height);
-  width: auto;
   max-width: 100%;
-}
-
-.component-illustration__caption {
-  left: -1000vw;
-  position: absolute;
+  padding-inline: var(--component-illustration-padding-inline);
+  width: auto;
 }
 
 .component-illustration--help-wanted {
@@ -38,4 +30,9 @@
   --component-illustration-background-color: #f4eef2;
   --component-illustration-grid-color: #eadfe7;
   --component-illustration-color: #74295f;
+}
+
+.component-illustration__caption {
+  left: -1000vw;
+  position: absolute;
 }
