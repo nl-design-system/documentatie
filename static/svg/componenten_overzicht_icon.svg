@@ -1,0 +1,31 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="component-illustration">
+<g fill="var(--component-illustration-background-color, white)">
+<rect width="960" height="540"/>
+<rect width="960" height="540"/>
+</g>
+<g fill="var(--component-illustration-grid-color, #eee)">
+    <rect width="2" height="540" transform="translate(69)"/>
+    <rect width="2" height="540" transform="translate(151)"/>
+    <rect width="2" height="540" transform="translate(233)"/>
+    <rect width="2" height="540" transform="translate(315)"/>
+    <rect width="2" height="540" transform="translate(397)"/>
+    <rect width="2" height="540" transform="translate(479)"/>
+    <rect width="2" height="540" transform="translate(561)"/>
+    <rect width="2" height="540" transform="translate(643)"/>
+    <rect width="2" height="540" transform="translate(725)"/>
+    <rect width="2" height="540" transform="translate(807)"/>
+    <rect width="2" height="540" transform="translate(889)"/>
+    <rect width="960" height="2" transform="translate(0 64)"/>
+    <rect width="960" height="2" transform="translate(0 146)"/>
+    <rect width="960" height="2" transform="translate(0 228)"/>
+    <rect width="960" height="2" transform="translate(0 310)"/>
+    <rect width="960" height="2" transform="translate(0 392)"/>
+    <rect width="960" height="2" transform="translate(0 474)"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M446.464 236.464C448.417 234.512 451.583 234.512 453.536 236.464L480 262.929L506.464 236.464C508.417 234.512 511.583 234.512 513.536 236.464C515.488 238.417 515.488 241.583 513.536 243.536L487.071 270L513.536 296.464C515.488 298.417 515.488 301.583 513.536 303.536C511.583 305.488 508.417 305.488 506.464 303.536L480 277.071L453.536 303.536C451.583 305.488 448.417 305.488 446.464 303.536C444.512 301.583 444.512 298.417 446.464 296.464L472.929 270L446.464 243.536C444.512 241.583 444.512 238.417 446.464 236.464Z" fill="var(--component-illustration-color, #666)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M663 230C663 224.477 667.477 220 673 220H693C698.523 220 703 224.477 703 230V240H717.942C717.977 240 718.012 240 718.047 240H723C725.761 240 728 242.239 728 245C728 247.761 725.761 250 723 250H722.601L717.998 305.228C717.876 313.407 711.208 320 703 320H663C654.792 320 648.124 313.407 648.002 305.228L643.399 250H643C640.239 250 638 247.761 638 245C638 242.239 640.239 240 643 240H647.953C647.988 240 648.023 240 648.058 240H663V230ZM653.434 250L657.983 304.585C657.994 304.723 658 304.861 658 305C658 307.761 660.239 310 663 310H703C705.761 310 708 307.761 708 305C708 304.861 708.006 304.723 708.017 304.585L712.566 250H653.434ZM693 240H673V230H693V240ZM673 260C675.761 260 678 262.239 678 265V295C678 297.761 675.761 300 673 300C670.239 300 668 297.761 668 295V265C668 262.239 670.239 260 673 260ZM693 260C695.761 260 698 262.239 698 265V295C698 297.761 695.761 300 693 300C690.239 300 688 297.761 688 295V265C688 262.239 690.239 260 693 260Z" fill="var(--component-illustration-color, #666)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M267 230C250.431 230 237 243.431 237 260C237 276.569 250.431 290 267 290C283.569 290 297 276.569 297 260C297 243.431 283.569 230 267 230ZM227 260C227 237.909 244.909 220 267 220C289.091 220 307 237.909 307 260C307 269.244 303.865 277.755 298.599 284.528L325.536 311.464C327.488 313.417 327.488 316.583 325.536 318.536C323.583 320.488 320.417 320.488 318.464 318.536L291.528 291.599C284.755 296.865 276.244 300 267 300C244.909 300 227 282.091 227 260Z" fill="var(--component-illustration-color, #666)"/>
+</symbol>
+<use href="#component-illustration"/>
+</svg>
