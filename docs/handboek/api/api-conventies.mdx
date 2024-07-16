@@ -1,3 +1,15 @@
+---
+title: API Conventies
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: API Conventies
+sidebar_position: 11
+pagination_label: API Conventies
+description: Informatie over onze API Conventies
+keywords:
+  - API
+---
+
 # API Conventies
 
 ## Algemeen
@@ -32,24 +44,11 @@ Ook hier is het belangrijk om consistentie na te streven door dezelfde termen en
 
 ---
 
-<aside>
-👉🏻 API Alignment
-
-## Hoe komt een API tot stand?
-
-1. Design klaar; dekt alle use cases, laat alle varianten zien
-2. API alignment tussen designer en developer
-3. Checken van conventies
-4. Na de API conventies > tokens
-</aside>
-
----
-
 ## Conventies
 
 ### Algemene conventies en richtlijnen
 
-**Taal**
+#### Taal
 
 Alle onderdelen van de API zijn in het Engels. Alle programmeertalen die gebruikt worden om het design system te bouwen, zijn in het Engels. Daarnaast zijn vrijwel alle ontwikkelaars gewend om in het Engels te werken.
 
@@ -58,11 +57,11 @@ Bijvoorbeelden:
 - `utrecht-select` en geen `utrecht-selectie`
 - `type=primary` en geen `type=primair`
 
-**Naamgeving voor property**
+#### Naamgeving voor property
 
 Een naam van een property beschrijft *wat* iets is, niet *waarvoor* het gebruikt wordt.
 
-**Value types**
+#### Value types
 
 Bij types/variants en states gebruiken we:
 
@@ -90,7 +89,7 @@ We zien liever het volgende
 
 Zo kunnen designers in Figma dit ook nabootsen.
 
-**Value**
+#### Value
 
 De waarde geeft aan wat de mogelijkheden zijn. Kies ervoor om het doel te beschrijven in plaats van de vorm. De vorm kan per platform veranderen via tokens, maar het doel blijft hetzelfde.
 
@@ -98,11 +97,11 @@ Bijvoorbeeld:
 
 In het rijtje `primary, secondary` past *tertiary* beter dan `ghost-button` of `text-button`
 
-**Description**
+#### Description
 
 In de *description* geef je een toelichting over hoe om te gaan met deze *property*. Wees kort en bondig en stel het uitschrijven niet uit; de toelichting zit verser in het geheugen na een API-alignment.
 
-**Code / Design**
+#### Code / Design
 
 Het is van belang dat de properties gaan over code en design, omdat we te maken hebben met UI-componenten. De *properties* en *types* kunnen meestal worden overgenomen in Figma. In dit veld vul je c*ode/design* in wanneer het betrekking heeft op beiden. In sommige gevallen gaat het alleen om code, wanneer het een *property* betreft die alleen code betreft.
 
@@ -113,20 +112,20 @@ Voorbeeld:
 | Variant | enum | primary, secondary, tertiary | Hierarchy in the application of the button | code/design |
 - case type even parkeren
     
-    ### Case type
-    
-    **Constanten**
-    
-    Voor constanten gebruiken we `snake_case` met `ALL_CAPS`. 
-    
-    Ondanks dat er andere case types in omgang zijn is dit een veel voorkomende type dat kan worden gezien als een industrie standaard. `ALL_CAPS` kan (1) niet voor andere doeleinde worden gebruikt dan voor constanten en (2) onderscheid zich duidelijk door de kapitalen.
-    
-    **Acroniemen**
-    
-    Acroniemen zien we als een losstaand woord. Hier volgen we dezelfde regels als het stukje API waar het wordt toegepast, zoals in deze tabel beschreven.
-    
-    - acroniemen
-    - componenten
+### Case type
+
+#### Constanten
+
+Voor constanten gebruiken we `snake_case` met `ALL_CAPS`. 
+
+Ondanks dat er andere case types in omgang zijn is dit een veel voorkomende type dat kan worden gezien als een industrie standaard. `ALL_CAPS` kan (1) niet voor andere doeleinde worden gebruikt dan voor constanten en (2) onderscheid zich duidelijk door de kapitalen.
+
+#### Acroniemen
+
+Acroniemen zien we als een losstaand woord. Hier volgen we dezelfde regels als het stukje API waar het wordt toegepast, zoals in deze tabel beschreven.
+
+- acroniemen
+- componenten
 
 ---
 
@@ -156,11 +155,11 @@ Andere prefixes zijn te vinden in de themes repository.
 
 ### CSS
 
-**Classnames**
+#### Classnames
 
 Bij het stylen kun je dezelfde benaming gebruiken als zijn gedefineerd tijdens de API Alignment. Een primary button krijgt de class `.primary`. 
 
-**States**
+#### States
 
 In CSS worden pseudo-classes gebruikt om verschillende states en styles voor elementen te definiëren.
 
@@ -170,7 +169,7 @@ button.primary:hover { color:#4545BA; }
 
 Wanneer je states definieert, neem dan ook pseudo-classes mee voor states die de toegankelijkheid verbeteren. Zoals `:focus` en `:focus-visible`.
 
-**States forceren**
+#### States forceren
 
 In uitzonderlijke gevallen kun je een state forceren. Bijvoorbeeld als demo op Storybook of als je een applicatie wilt uitleggen aan de gebruiker. In dit geval gebruik je de state door een BEM modifier class toe te voegen, zoals hier:
 
@@ -187,7 +186,7 @@ buttom.primary:hover {
 }
 ```
 
-**De meest voorkomende pseudo-classes zijn**
+#### De meest voorkomende pseudo-classes
 
 | Pseudo-Class | Beschrijving |
 | --- | --- |
@@ -198,17 +197,12 @@ buttom.primary:hover {
 | :link | Wanneer een link niet is bezocht |
 | :disabled | Wanneer een element is uitgeschakeld |
 | :checked | Wanneer een selectievakje of radiobutton is geselecteerd |
-|  |  |
-|  |  |
-|  |  |
 | :focus-visible | Wanneer een element focus krijgt en de focus zichtbaar is (bijv. toetsenbordfocus) |
-|  |  |
-|  |  |
-|  |  |
 
-## Termen lijst - welke termen gebruiken we
+## Termen
+Om onnodig nieuwe termen te introduceren, moedigen we je aan om zoveel mogelijk de onderstaande termen te gebruiken. Wanneer dit niet toereikend genoeg is, raadpleeg eerst de webstandaarden van [MDN](https://developer.mozilla.org/en-US/).
 
-### Alle termen
+### Termenlijst
 
 | Term | Beschrijving |
 | --- | --- |
