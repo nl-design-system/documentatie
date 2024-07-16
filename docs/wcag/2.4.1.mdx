@@ -35,7 +35,7 @@ Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet t
 
 Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een screenreadergebruiker een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken. Maar de skiplink is ook voor screenreadergebruikers handig.
 
-Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Het eerste focusable element, en staat deze zichtbaar linksboven op een vaste plek.
+Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Plaats deze link binnen de header-landmark. Als eerste focusable element, bovenaan de pagina, op een vaste plek.
 
 Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.
 
@@ -136,7 +136,7 @@ Als een skiplink van toepassing is voor een webpagina:
 - Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.
 - Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.
 
-Sommige validatiesoftware meldt dat een skiplink binnen een landmark moet staan. Hierover zijn de meningen verdeeld. Het plaatsen van een skiplink binnen een landmark is in ieder geval geen voorwaarde om aan WCAG te voldoen.
+Het plaatsen van een skiplink binnen de header-landmark is _best practice_. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit **geen** overtreding van dit WCAG-succescriterium.
 
 ## Veelgemaakte fouten
 
