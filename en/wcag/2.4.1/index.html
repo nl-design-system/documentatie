@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.6158e03f.css" />
-  <script src="/en/assets/js/runtime~main.95cb2b6f.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.cb2e38bb.js" defer="defer"></script>
   <script src="/en/assets/js/main.f3affaa1.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -232,7 +232,7 @@
               <p>Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.</p>
               <p>Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.</p>
               <p>Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een screenreadergebruiker een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken. Maar de skiplink is ook voor screenreadergebruikers handig.</p>
-              <p>Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Het eerste focusable element, en staat deze zichtbaar linksboven op een vaste plek.</p>
+              <p>Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Plaats deze link binnen de header-landmark. Als eerste focusable element, bovenaan de pagina, op een vaste plek.</p>
               <p>Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.</p>
               <p>Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud.</p>
               <ul role="list" class="utrecht-unordered-list">
@@ -313,7 +313,7 @@
                <li class="utrecht-unordered-list__item">Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.</li>
                <li class="utrecht-unordered-list__item">Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.</li>
               </ul>
-              <p>Sommige validatiesoftware meldt dat een skiplink binnen een landmark moet staan. Hierover zijn de meningen verdeeld. Het plaatsen van een skiplink binnen een landmark is in ieder geval geen voorwaarde om aan WCAG te voldoen.</p>
+              <p>Het plaatsen van een skiplink binnen de header-landmark is <em class="utrecht-emphasis utrecht-emphasis--stressed">best practice</em>. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit <strong>geen</strong> overtreding van dit WCAG-succescriterium.</p>
               <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
               <h3 id="fout-de-toetsenbordfocus-verplaatst-zich-niet-na-aanklikken-skiplink" class="utrecht-heading-3">Fout: de toetsenbordfocus verplaatst zich niet na aanklikken skiplink</h3>
               <p>Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een <code class="utrecht-code">scrollIntoView()</code> method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus. Voeg tabindex=&quot;-1&quot; toe aan het doelelement om het de focus te kunnen geven met <code class="utrecht-code">tabIndex = -1</code>. Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met <code class="utrecht-code">focus()</code>.</p>
