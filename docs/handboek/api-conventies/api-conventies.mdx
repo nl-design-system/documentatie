@@ -1,0 +1,254 @@
+# API Conventies
+
+## Algemeen
+
+### Doel
+
+Wanneer we deze API-conventies volgen, zorgen we ervoor dat het component robuust is. Door gebruik te maken van bekende termen kan de gebruiker (designer en developer) makkelijker zijn of haar weg vinden in de documentatie.
+
+### Scope
+
+We beperken ons tot API's die relevant zijn voor onze UI-componenten. Op een uitzondering na, zullen we geen data specifieke API's behandelen.
+
+### Publiek
+
+We moedigen een nauwe samenwerken aan tussen designers en developers. Dit document is geschreven voor beide disciplines.
+
+---
+
+## Principes
+
+### Documenteer de API
+
+Schrijf een documentatiecommentaar voor elke declaratie, zodat iedereen goed begrijpt wat de declaratie doet en hoe je het aanstuurt. Documenteer inzichten direct, die verkregen zijn vanuit het ontwerp proces, dan is het nog vers. Stel het niet uit.
+
+### Makkelijk leesbaar, toepasbaar en te onderhouden
+
+Maak toepassingen duidelijk en beknopt. Zorg ervoor dat de property of method goed leesbaar is. Ga eerder voor lang en duidelijk, dan voor kort en wellicht onduidelijk. Let er daarbij wel op dat je dubbelzinnige interpretaties en onnodige woorden vermijdt.
+
+### Consistent
+
+Ook hier is het belangrijk om consistentie na te streven door dezelfde termen en schrijfstijl te hanteren. Zo voelt de community zich thuis in de omgeving en kan makkelijker meedoen aan de ontwikkeling.
+
+---
+
+<aside>
+👉🏻 API Alignment
+
+## Hoe komt een API tot stand?
+
+1. Design klaar; dekt alle use cases, laat alle varianten zien
+2. API alignment tussen designer en developer
+3. Checken van conventies
+4. Na de API conventies > tokens
+</aside>
+
+---
+
+## Conventies
+
+### Algemene conventies en richtlijnen
+
+**Taal**
+
+Alle onderdelen van de API zijn in het Engels. Alle programmeertalen die gebruikt worden om het design system te bouwen, zijn in het Engels. Daarnaast zijn vrijwel alle ontwikkelaars gewend om in het Engels te werken.
+
+Bijvoorbeelden:
+
+- `utrecht-select` en geen `utrecht-selectie`
+- `type=primary` en geen `type=primair`
+
+**Naamgeving voor property**
+
+Een naam van een property beschrijft *wat* iets is, niet *waarvoor* het gebruikt wordt.
+
+**Value types**
+
+Bij types/variants en states gebruiken we:
+
+- `enum` (lijstjes)
+- `booleans` (true/false)
+- `strings` (text)
+
+We vermijden we het gebruik van objecten als *value* binnen de *property.* Bijvoorbeeld:
+
+```tsx
+"button-type": [
+    {
+      "type": "primary",
+      "disabled": true
+    }
+  ]
+```
+
+We zien liever het volgende
+
+```tsx
+"type": "primary",
+"disabled": true
+```
+
+Zo kunnen designers in Figma dit ook nabootsen.
+
+**Value**
+
+De waarde geeft aan wat de mogelijkheden zijn. Kies ervoor om het doel te beschrijven in plaats van de vorm. De vorm kan per platform veranderen via tokens, maar het doel blijft hetzelfde.
+
+Bijvoorbeeld:
+
+In het rijtje `primary, secondary` past *tertiary* beter dan `ghost-button` of `text-button`
+
+**Description**
+
+In de *description* geef je een toelichting over hoe om te gaan met deze *property*. Wees kort en bondig en stel het uitschrijven niet uit; de toelichting zit verser in het geheugen na een API-alignment.
+
+**Code / Design**
+
+Het is van belang dat de properties gaan over code en design, omdat we te maken hebben met UI-componenten. De *properties* en *types* kunnen meestal worden overgenomen in Figma. In dit veld vul je c*ode/design* in wanneer het betrekking heeft op beiden. In sommige gevallen gaat het alleen om code, wanneer het een *property* betreft die alleen code betreft.
+
+Voorbeeld:
+
+| Property | Type | Value | Description | Code / Design |
+| --- | --- | --- | --- | --- |
+| Variant | enum | primary, secondary, tertiary | Hierarchy in the application of the button | code/design |
+- case type even parkeren
+    
+    ### Case type
+    
+    **Constanten**
+    
+    Voor constanten gebruiken we `snake_case` met `ALL_CAPS`. 
+    
+    Ondanks dat er andere case types in omgang zijn is dit een veel voorkomende type dat kan worden gezien als een industrie standaard. `ALL_CAPS` kan (1) niet voor andere doeleinde worden gebruikt dan voor constanten en (2) onderscheid zich duidelijk door de kapitalen.
+    
+    **Acroniemen**
+    
+    Acroniemen zien we als een losstaand woord. Hier volgen we dezelfde regels als het stukje API waar het wordt toegepast, zoals in deze tabel beschreven.
+    
+    - acroniemen
+    - componenten
+
+---
+
+### Prefix
+
+Hanteer een vendor prefix voor de component naam. Gebruik hiervoor een door jou gekozen naam, meestal de gemeente of instantie, zoals `utrecht-button`. Zo weten we waar het component vandaan komt en voorkomen we conflicten met native componenten. Wanneer een component een Hall of Fame-status bereikt, verandert de prefix naar `nl`.
+
+De naam van het component inclusief prefix is zichtbaar onder het kopje ‘Implementaties’ op een component’ documentatiepagina.
+
+Schrijf de prefix in lowercase (zonder hoofdletters) en houd de prefix zo kort mogelijk, maar leesbaar.
+
+Deze prefixes zijn bij ons bekend:
+
+| Prefix | Description |
+| --- | --- |
+| utrecht | gemeente Utrecht |
+| denhaag | gemeente Den Haag |
+| lux | Logius Design System |
+| nlrvo | Rijksdienst voor Ondernemers |
+| nl | NL Design System core team |
+| gov | NL Design System core team |
+| rods | Rotterdam Design System (RODS) |
+| bldc | Bold Components of the Belastingdienst |
+| lc | Logius Components |
+
+Andere prefixes zijn te vinden in de themes repository.
+
+### CSS
+
+**Classnames**
+
+Bij het stylen kun je dezelfde benaming gebruiken als zijn gedefineerd tijdens de API Alignment. Een primary button krijgt de class `.primary`. 
+
+**States**
+
+In CSS worden pseudo-classes gebruikt om verschillende states en styles voor elementen te definiëren.
+
+```css
+button.primary:hover { color:#4545BA; }
+```
+
+Wanneer je states definieert, neem dan ook pseudo-classes mee voor states die de toegankelijkheid verbeteren. Zoals `:focus` en `:focus-visible`.
+
+**States forceren**
+
+In uitzonderlijke gevallen kun je een state forceren. Bijvoorbeeld als demo op Storybook of als je een applicatie wilt uitleggen aan de gebruiker. In dit geval gebruik je de state door een BEM modifier class toe te voegen, zoals hier:
+
+```css
+<button class="example-button example-button--hover">Click me</button>
+```
+
+Om deze class te ondersteunen in CSS kun je die het beste combineren met de pseudo-class:
+
+```css
+button.primary--hover,
+buttom.primary:hover {
+	color:#4545BA;
+}
+```
+
+**De meest voorkomende pseudo-classes zijn**
+
+| Pseudo-Class | Beschrijving |
+| --- | --- |
+| :hover | Wanneer de muiscursor over een element beweegt |
+| :active | Wanneer een element wordt geactiveerd (bijv. aangeklikt) |
+| :focus | Wanneer een element is gefocust (bijv. door er naartoe te tabben) |
+| :visited | Wanneer een link is bezocht |
+| :link | Wanneer een link niet is bezocht |
+| :disabled | Wanneer een element is uitgeschakeld |
+| :checked | Wanneer een selectievakje of radiobutton is geselecteerd |
+|  |  |
+|  |  |
+|  |  |
+| :focus-visible | Wanneer een element focus krijgt en de focus zichtbaar is (bijv. toetsenbordfocus) |
+|  |  |
+|  |  |
+|  |  |
+
+## Termen lijst - welke termen gebruiken we
+
+### Alle termen
+
+| Term | Beschrijving |
+| --- | --- |
+| active | wanneer je op een button klikt of drukt |
+| alert | geeft een waarschuwingsmelding weer |
+| alert-dialog | een dialog dat een waarschuwing bevat |
+| backdrop | achtergrondscherm dat verschijnt achter een modal of dialog |
+| body | geschikt voor table body |
+| button | een klikbaar element dat een actie uitvoert |
+| cell | aanspreken van een table cell |
+| checked | geeft aan dat een checkbox of radiobutton is geselecteerd |
+| current | geeft het huidige actieve element aan |
+| data |  |
+| description |  |
+| disabled | geeft aan dat een element niet beschikbaar is voor interactie |
+| document | een gestructureerde verzameling van gegevens of content |
+| error-message | foutmelding |
+| focus | (met tab) geselecteerd element dat is voor gebruik of interactie |
+| footer | onderste gedeelte van een site, document of sectie |
+| form |  |
+| header | bovenste gedeelte van een document, pagina of sectie |
+| heading | een titel of kop die een sectie inleidt |
+| hover | wanneer een muiscursor over een element beweegt (ook iPadOS ondersteund :hover) |
+| image | afbeelding (JPG of PNG) |
+| option | combobox option, radio button group option |
+| label | een tekst dat een een input element beschrijft |
+| link | een klikbare referentie naar een andere locatie of resource |
+| list | een gestructureerde verzameling van items; genummerd of ongeordend |
+| mark | markeert of benadrukt een tekstgedeelte |
+| nav | een navigatiebalk of menu |
+| number | een numerieke waarde |
+| placeholder | tijdelijke tekst dat aangeeft welk type invoer verwacht wordt |
+| pressed | bijvoorbeeld een ingedrukte toggle button |
+| radio-group | een groep van radiobuttons |
+| row | een rij in een tabel |
+| selected | geeft aan dat een item is geselecteerd |
+| separator | een visuele scheidingslijn tussen elementen |
+| switch | een schakelaar voor aan/uit functionaliteit |
+| table |  |
+| textarea | een invoerveld voor meerdere tekstregels |
+| visited | geeft aan dat een link eerder is bezocht |
+
+---
