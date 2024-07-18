@@ -18,11 +18,15 @@ keywords:
 
 # Stappenplan: Community
 
-Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+Organisaties die een component bij willen dragen kunnen het [Stappenplan voor organisaties](/handboek/component-bijdragen/community-stappenplan-voor-organisaties) gebruiken.
 
-Heb je een vraag? Twijfel niet en stel je vraag via het [#nl-design-system Slack kanaal](https://praatmee.codefor.nl/) van CodeForNL of [neem contact op met het kernteam](/project/kernteam).
+Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.
 
-## CSS
+Er kunnen meerdere community implementaties zijn die volledig voldoen, maar voor dit bord kijken we naar een component die het meest ver is. De component heeft een Community status als er minimaal één implementatie beschikbaar is die aan alle checkpoints voldoet.
+Voordat je begint kies je het [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten) waar het component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar "tenminste één organisatie" mee te beoordelen.
+
+## Beschikbaar in CSS
 
 Doel: De component kan ingezet worden in een framework naar keuze.
 
@@ -32,9 +36,9 @@ Tenminste één organisatie heeft zijn `GitHub URL (CSS)` ingevuld. Bekijk hierv
 
 De GitHub omgeving moet te bekijken zijn zonder te hoeven inloggen.
 
-**🚩 Checkpoint**: Beschikbaar in CSS.
+**🚩 Checkpoint**: GitHub (CSS)
 
-## Publiek beschikbaar
+## Publiek beschikbaar in Storybook
 
 Doel: Men kan de component vinden, bekijken, gebruiken, forken en verbeteren.
 
@@ -46,9 +50,9 @@ Tenminste één organisatie heeft zijn `Storybook URL (CSS)` ingevuld. Bekijk hi
 
 De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.
 
-**🚩 Checkpoint**: Publiek beschikbaar in Storybook.
+**🚩 Checkpoint**: Storybook (CSS)
 
-## Implementatie
+## Implementatie voldoet aan naam en doel uit de GitHub Discussion
 
 Doel: De component is de component dat we als kernteam verwachten.
 
@@ -58,9 +62,9 @@ Noteer de implementatie bijvoorbeeld `utrecht-paragraph` of `ams-paragraph` in d
 
 **Tip!** Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
 
-**🚩 Checkpoint**: Implementatie voldoet aan naam en doel uit de GitHub Discussion.
+**🚩 Checkpoint**: Implementatie voldoet
 
-## Minimale design tokens
+## Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd
 
 Doel: Meerdere organisaties kunnen de component naar hun huisstijl omzetten.
 
@@ -70,9 +74,23 @@ Zorg ervoor dat de component van jouw organisatie gebruik maakt van design token
 
 **Tip!** Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--denhaag-button-primary-action-background-color` of `--ams-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
 
-**🚩 Checkpoint**: Implementatie heeft minimaal kleur en typografie beslissingen met design tokens gebruikt.
+**🚩 Checkpoint**: Minimale design tokens
 
-## Naamgeving design tokens
+## API's zoals design tokens hebben een prefix van de verantwoordelijke organisatie
+
+Doel: Organisaties kunnen componenten naast elkaar gebruiken zonder dat deze met elkaar conflicteren. Developers en designers kunnen zien waar de component vandaan komt.
+
+Om componenten van elkaar te kunnen gebruiken is het toevoegen van een prefix zoals bijvoorbeeld `utrecht-` of `ams-` verplicht.
+
+Zorg ervoor dat de prefix van jouw organisatie is toegevoegd aan onderstaande onderdelen. Of controleer de organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+
+- CSS class selectors.
+- Design tokens in JSON.
+- CSS variables.
+
+**🚩 Checkpoint**: Prefix
+
+## Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System
 
 Doel: Een voorspelbare naamgeving van design tokens.
 
@@ -80,9 +98,9 @@ Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare 
 
 Zorg ervoor dat de design tokens van de component van jouw organisatie voldoen aan de naamgeving conventie. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
 
-**🚩 Checkpoint**: Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System.
+**🚩 Checkpoint**: Naamgeving design tokens
 
-## Licentie component
+## EUPL-1.2 licentie toegepast
 
 Doel: De component mag door andere organisaties gebruikt worden. Producten die ermee gemaakt worden hoeven niet per se open source te zijn.
 
@@ -95,9 +113,9 @@ Zorg ervoor dat jouw organisatie naar de EUPL-1.2 licentie verwijst op de onders
 - **Storybook**: Als een aparte pagina binnen de sidebar, of binnen de introductiepagina danwel README.
 - **Figma** (optioneel): Op de cover of direct naast de cover van de Figma bibliotheek.
 
-**🚩 Checkpoint**: EUPL-1.2 licentie toegepast.
+**🚩 Checkpoint**: Licentie component
 
-## Licentie documentatie
+## Documentatie heeft de Creative Commons 0 licentie (CC0)
 
 Doel: De documentatie van een component mag door andere organisaties hergebruikt of gecombineerd worden zonder enige bronvermelding.
 
@@ -107,44 +125,28 @@ Zorg ervoor dat jouw organisatie de CC0 licentie benoemt in het README.md bestan
 
 **Tip!** Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
 
-**🚩 Checkpoint**: Documentatie heeft de Creative Commons 0 licentie (CC0).
+**🚩 Checkpoint**: Licentie documentatie
 
-## Prefix
+## Beschikbaar in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/)
 
-Doel: Organisaties kunnen componenten naast elkaar gebruiken zonder 'clashes'. Developers en designers kunnen zien waar de component vandaan komt.
-
-Om componenten van elkaar te kunnen gebruiken is het toevoegen van een prefix zoals bijvoorbeeld `utrecht-` of `ams-` verplicht.
-
-Zorg ervoor dat de prefix van jouw organisatie is toegevoegd aan onderstaande onderdelen. Of controleer de organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
-
-- CSS class selectors.
-- Design tokens in JSON.
-- CSS variables.
-
-**🚩 Checkpoint**: API's hebben een prefix van de verantwoordelijke organisatie.
-
-## Storybook met NL Design System thema's
-
-Doel: De component wordt beschikbaar voor andere organisaties.
+Doel: De component wordt beter vindbaar voor andere organisaties en kan makkelijk worden voorzien van een eigen thema.
 
 [Neem contact op met het kernteam](/project/kernteam) om deze stap uit te voeren.
 
 Het kernteam maakt de component beschikbaar in de ['Themes' repository](https://github.com/nl-design-system/themes), waardoor deze terug te vinden is in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/). Andere organisaties kunnen vervolgens de component gaan gebruiken.
 
-**🚩 Checkpoint**: Beschikbaar in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/).
+**🚩 Checkpoint**: Storybook thema's
 
-## Visuele regressietests
+## Visuele regressietests zijn beschikbaar in de Thema Storybook
 
 Doel: De component wordt voorzien van het Voorbeeld thema, en organisaties worden geïnformeerd wanneer aanpassingen in de component gevolgen hebben voor hun thema.
-
-Deze stap kan alleen worden uitgevoerd door het kernteam.
 
 - Component wordt voorzien van het Voorbeeld thema.
 - Communiceren dat men de component kan gaan gebruiken en dat daar automatisch visuele regressietests op zullen plaatsvinden.
 
-**🚩 Checkpoint**: Visuele regressietests zijn beschikbaar in de Thema Storybook.
+**🚩 Checkpoint**: Visuele regressietest
 
-## Figma bibliotheek
+## Beschikbaar in de NL Design System Figma bibliotheek
 
 Doel: De component wordt beschikbaar in de [NL Design System Figma bibliotheek](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=450-4121&t=AKzhgDPYAKNI1gaT-1). Designers van andere organisaties kunnen de component overnemen en gaan gebruiken.
 
@@ -154,31 +156,33 @@ Het kernteam neemt de component over uit de Figma omgeving van jouw organisatie,
 
 Organisaties die de NL Design System Figma bibliotheek vanaf dat moment dupliceren, krijgen de component direct meegeleverd. Organisaties die de NL Design System Figma bibliotheek al hadden gedupliceerd, worden tijdens de volgende 'Bieb sync video' geïnformeerd over hoe ze dit component ook kunnen overnemen.
 
-**🚩 Checkpoint**: Beschikbaar in de NL Design System Figma bibliotheek.
+Kopieer de URL van de component pagina door in Figma met rechtermuisknop op de component in de sidebar te klikken (Copy link to page). Kun je dat niet doen, vraag dan iemand met edit rechten om de URL.
 
-## Component index
+**🚩 Checkpoint**: Figma URL
+
+## Informatie van de component beschikbaar op nldesignsystem.nl
 
 Doel: Op nldesignsystem.nl zijn er verwijzingen beschikbaar naar de component met het Voorbeeld thema.
 
-Deze stap kan alleen worden uitgevoerd door het kernteam.
+Het kernteam maakt de laatste informatie van de GitHub projectborden beschikbaar in het npm pakketje `@nl-design-system/component-progress`.
 
-Het kernteam vult de component index aan met links naar de component met het Voorbeeld thema. We verwijzen hierbij naar de component in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/) en de [NL Design System Figma bibliotheek](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=450-4121&t=AKzhgDPYAKNI1gaT-1).
+- Draai het script in de `main` branch opnieuw te draaien met `Run Workflow` in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml)
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 
-**🚩 Checkpoint**: Storybook en Figma links zijn toegevoegd aan de component index.
+**🚩 Checkpoint**: nldesignsystem.nl
 
-## Component assessment
+## Beschikbaar in de NL Design System Component assessment (Figma)
 
 Doel: Organisaties worden bij een onboarding snel naar de juiste component verwezen.
-
-Deze stap kan alleen worden uitgevoerd door het kernteam.
 
 Het kernteam voegt een 'Component sticker' toe aan het Figma bestand '[NL Design System Component assessment](https://www.figma.com/design/NLbNbckFo9manEihRFeJmR/NL-Design-System---Component-Assessment?m=auto&t=J0gWvRWoyCJhSqot-6)'. Deze sticker linkt naar de documentatiepagina van de component op nldesignsystem.nl.
 
 Door deze 'Component stickers' op screenshots te plakken, kan het kernteam geïnteresseerden organisaties inzicht bieden welke componenten beschikbaar zijn om hun website of applicatie mee op te bouwen.
 
-**🚩 Checkpoint**: Beschikbaar in de NL Design System Component assessment (Figma).
+**🚩 Checkpoint**: Component assessment
 
-## Status naar Community
+## Status bijgewerkt naar Community
 
 Doel: iedereen kan zien dat de component nu richting Candidate wil.
 
@@ -197,9 +201,9 @@ Help je mee hem door de Candidate stappen te krijgen?
 [{naam-component} op het Candidate bord]({url-candidate-bord})
 ```
 
-**🚩 Checkpoint**: Status bijgewerkt naar Community.
+**🚩 Checkpoint**: Status naar Community
 
-## Promotie
+## Gebruik van component uit de community gepromoot
 
 Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.
 
@@ -236,7 +240,7 @@ Daarnaast plaatsen we een bericht in de nieuwsbrief en op LinkedIn. Daarin nemen
 - Credits.
 - Eventueel in combinatie met een kort interview.
 
-**🚩 Checkpoint**: Gebruik van component uit de community gepromoot.
+**🚩 Checkpoint**: Promotie
 
 ## 🏁 Finish
 
