@@ -1,4 +1,4 @@
-/*! For license information please see main.16c3899c.js.LICENSE.txt */
+/*! For license information please see main.f41871d9.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -29,7 +29,7 @@
    var n = r(86953),
     o = r.n(n),
     a = r(16887);
-   const c = { '000024cb': [() => Promise.all([r.e(40532), r.e(51755), r.e(3247)]).then(r.bind(r, 43067)), '@site/docs/richtlijnen/formulieren/labels.mdx', 43067], '002a89ff': [() => r.e(36303).then(r.t.bind(r, 67692, 19)), '~docs/default/category-voorbeelden-category-patronen-formulieren-5c0.json', 67692], '0088abd0': [() => r.e(1036).then(r.bind(r, 567)), '@site/docs/community/events/design-systems-week-2024.mdx', 567], '016d3eb4': [() => r.e(34380).then(r.t.bind(r, 83959, 19)), '~blog/default/blog-tags-design-tokens-0d0.json', 83959], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 49089)), '@theme/BlogTagsListPage', 49089], '031b9593': [() => r.e(96461).then(r.t.bind(r, 63826, 19)), '~docs/default/category-community-category-community-84d.json', 63826], '03606068': [() => r.e(11872).then(r.t.bind(r, 21833, 19)), '~blog/default/blog-tags-design-systems-719.json', 21833], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 3031)), '@site/docs/project/kernteam.mdx', 3031], '044d2994': [() => r.e(6526).then(r.t.bind(r, 48459, 19)), '~blog/default/blog-tags-lettertype-5b1-list.json', 48459], '0556c22e': [() => Promise.all([r.e(40532), r.e(51755), r.e(63696)]).then(r.bind(r, 66105)), '@site/docs/richtlijnen/formulieren/descriptions.mdx', 66105], '08d81d65': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(67132)]).then(r.bind(r, 88314)), '@site/docs/componenten/rich-text-content/index.mdx', 88314], '09d51e35': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44014)]).then(r.bind(r, 29674)), '@site/docs/componenten/legend/index.mdx', 29674], '0a2d80a0': [() => r.e(48644).then(r.t.bind(r, 10028, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1.json', 10028], '0a6c776a': [() => r.e(90418).then(r.bind(r, 65447)), '@site/blog/2023/20231109-spacing-tokens.md', 65447], '0cf410ab': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54496)]).then(r.bind(r, 32915)), '@site/docs/componenten/dot-badge/index.mdx', 32915], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 68453)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 68453], '0eacf79f': [() => r.e(34193).then(r.bind(r, 838)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 838], '0f134466': [() => Promise.all([r.e(40532), r.e(51755), r.e(8321)]).then(r.bind(r, 6368)), '@site/docs/richtlijnen/formulieren/placeholders.mdx', 6368], '121271ef': [() => r.e(79749).then(r.bind(r, 18029)), '@site/docs/wcag/4.1.3.mdx', 18029], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 68140)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 68140], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 18066)), '@site/docs/community/events/heartbeat/videos.mdx', 18066], '13ecdb40': [() => r.e(75854).then(r.bind(r, 29228)), '@site/docs/richtlijnen/stijl/kleuren.md', 29228], '14eb3368': [() => Promise.all([r.e(40532), r.e(47027), r.e(9817)]).then(r.bind(r, 70387)), '@theme/DocCategoryGeneratedIndexPage', 70387], '150707f3': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88230)]).then(r.bind(r, 82197)), '@site/docs/componenten/heading-1/index.mdx', 82197], '15a4ec34': [() => r.e(14418).then(r.bind(r, 34072)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 34072], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 93880)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 93880], '16fd2d30': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(33430)]).then(r.bind(r, 96905)), '@site/docs/componenten/heading-2/index.mdx', 96905], 17896441: [() => Promise.all([r.e(40532), r.e(11009), r.e(27918)]).then(r.bind(r, 27668)), '@theme/DocItem', 27668], '17c216dc': [() => r.e(95661).then(r.t.bind(r, 47408, 19)), '~blog/default/blog-tags-logius-aab.json', 47408], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 31791)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 31791], '18f72304': [() => r.e(76671).then(r.t.bind(r, 68362, 19)), '~blog/default/blog-tags-een-overheid-756-list.json', 68362], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 89933)), '@site/docs/handboek/designer/figma-structuur.mdx', 89933], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 41775)), '@theme/SearchPage', 41775], '1b445115': [() => r.e(35432).then(r.bind(r, 93142)), '@site/docs/handboek/designer/community.md', 93142], '1b7e5f7c': [() => r.e(34728).then(r.t.bind(r, 40495, 19)), '~docs/default/category-handboek-category-componenten-bijdragen-2d3.json', 40495], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 21624)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 21624], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(34894)]).then(r.bind(r, 19736)), '@site/docs/componenten/checkbox/index.mdx', 19736], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 50808)), '@site/src/pages/index.tsx', 50808], '1e45e22d': [() => r.e(70591).then(r.bind(r, 78140)), '@site/docs/footer/coc.md', 78140], '1fd620f1': [() => r.e(58990).then(r.bind(r, 93564)), '@site/docs/wcag/2.1.1.mdx', 93564], '20f2808f': [() => r.e(30761).then(r.bind(r, 79665)), '@site/docs/handboek/leverancier/introductie.md', 79665], '210e540d': [() => r.e(2601).then(r.bind(r, 72452)), '@site/docs/wcag/2.4.13.mdx', 72452], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 27847)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 27847], '2289dd67': [() => r.e(16451).then(r.bind(r, 8784)), '@site/docs/handboek/designer/stappenplan.mdx', 8784], '22ebae92': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20858)]).then(r.bind(r, 79856)), '@site/docs/componenten/text-input-group/index.mdx', 79856], '235c86a2': [() => r.e(88979).then(r.bind(r, 47638)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 47638], '2383fbae': [() => r.e(90909).then(r.bind(r, 73960)), '@site/docs/footer/privacyverklaring.md', 73960], 24071437: [() => r.e(58687).then(r.bind(r, 788)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 788], '25b93367': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(98634)]).then(r.bind(r, 29416)), '@site/docs/componenten/link/index.mdx', 29416], '2669888f': [() => r.e(30717).then(r.t.bind(r, 48231, 19)), '~blog/default/blog-tags-nl-design-system-5c1-list.json', 48231], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 79722)), '@site/docs/handboek/manager/introductie.md', 79722], '281e6f8e': [() => Promise.all([r.e(47027), r.e(43430), r.e(98218)]).then(r.bind(r, 64103)), '@site/docs/project/blijf-op-de-hoogte.mdx', 64103], '28d3d582': [() => r.e(96597).then(r.bind(r, 73890)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 73890], '28e99dcb': [() => r.e(73722).then(r.bind(r, 17985)), '@site/docs/wcag/3.1.1.mdx', 17985], '292daa85': [() => r.e(56254).then(r.t.bind(r, 62532, 19)), '~blog/default/blog-tags-mijlpalen-1bf.json', 62532], '2933852b': [() => r.e(6752).then(r.bind(r, 46975)), '@site/docs/footer/toegankelijkheidsverklaring.md', 46975], '2c881fe2': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(82200)]).then(r.bind(r, 61983)), '@site/docs/componenten/ordered-list/index.mdx', 61983], '2d21fce7': [() => r.e(94210).then(r.bind(r, 80260)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 80260], '2d685956': [() => r.e(49537).then(r.t.bind(r, 12542, 19)), '~blog/default/blog-tags-werkgroepen-ba6-list.json', 12542], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2e11687d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(42112)]).then(r.bind(r, 41378)), '@site/docs/componenten/data-badge/index.mdx', 41378], '2ed736ae': [() => r.e(41936).then(r.t.bind(r, 92614, 19)), '~blog/default/blog-tags-update-827.json', 92614], '2efe344a': [() => r.e(22644).then(r.t.bind(r, 40037, 19)), '~blog/default/blog-tags-nl-design-system-5c1.json', 40037], '2f04c335': [() => r.e(71992).then(r.t.bind(r, 37080, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced.json', 37080], '2f0980e2': [() => r.e(71752).then(r.bind(r, 45727)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 45727], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(81565)]).then(r.bind(r, 35258)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 35258], '2fe778e5': [() => r.e(32697).then(r.bind(r, 51433)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 51433], '3015a2b9': [() => r.e(78882).then(r.bind(r, 37166)), '@site/docs/richtlijnen/stijl/typografie.md', 37166], '306030dd': [() => r.e(20932).then(r.bind(r, 95435)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 95435], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 25441)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 25441], '323b7945': [() => Promise.all([r.e(47027), r.e(43430), r.e(31875)]).then(r.bind(r, 57088)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 57088], '32470cbe': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(16406)]).then(r.bind(r, 38306)), '@site/docs/componenten/figure/index.mdx', 38306], 32636356: [() => r.e(52400).then(r.bind(r, 5382)), '@site/docs/project/newsletter-success.mdx', 5382], '32660e7c': [() => r.e(94932).then(r.t.bind(r, 29951, 19)), '~blog/default/blog-tags-formulieren-1bd.json', 29951], '333bf37f': [() => r.e(79479).then(r.bind(r, 13738)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 13738], '3464a859': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(41769)]).then(r.bind(r, 18343)), '@site/docs/componenten/page-header/index.mdx', 18343], '34b859b1': [() => r.e(97177).then(r.bind(r, 38453)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 38453], '3679878e': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(76318)]).then(r.bind(r, 18130)), '@site/docs/componenten/pagination/index.mdx', 18130], '36aae756': [() => r.e(76138).then(r.t.bind(r, 51313, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3.json', 51313], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 1179)), '@theme/DocTagsListPage', 1179], '37c1945c': [() => Promise.all([r.e(40532), r.e(77913), r.e(30561)]).then(r.bind(r, 6188)), '@site/docs/wcag/2.4.1.mdx', 6188], '381b9e37': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(9910)]).then(r.bind(r, 1172)), '@site/docs/componenten/action-group/index.mdx', 1172], '38471ef1': [() => r.e(37377).then(r.bind(r, 20741)), '@site/blog/2023/20231214-community-online-formulieren.md', 20741], '389658a5': [() => r.e(74122).then(r.t.bind(r, 27114, 19)), '~docs/default/category-handboek-category-voor-designers-e56.json', 27114], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 80551)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 80551], '3bb8863e': [() => Promise.all([r.e(40532), r.e(43430), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 48021)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 48021], '3d377413': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(17903)]).then(r.bind(r, 74781)), '@site/docs/componenten/page-footer/index.mdx', 74781], '3d58a721': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(9591)]).then(r.bind(r, 90079)), '@site/docs/componenten/date-input-group/index.mdx', 90079], '3d7707fa': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(86423)]).then(r.bind(r, 52490)), '@site/docs/componenten/alert/index.mdx', 52490], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 87221)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 87221], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 59642)), '@site/blog/2019/20190606-update-nl-design-system.md', 59642], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(506)]).then(r.bind(r, 36057)), '@site/docs/componenten/pre-heading/index.mdx', 36057], 40355699: [() => r.e(88567).then(r.bind(r, 57126)), '@site/blog/2024/20240522-community-blocks.md', 57126], '411e6d0c': [() => r.e(34104).then(r.bind(r, 52250)), '@site/docs/handboek/introductie.md', 52250], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 82304)), '@site/docs/handboek/estafettemodel.mdx', 82304], '44e0c4b7': [() => r.e(70679).then(r.t.bind(r, 21986, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-36c.json', 21986], '452f106e': [() => r.e(10860).then(r.bind(r, 28913)), '@site/docs/footer/wcag-em-rapport-2023.md', 28913], '45431ea1': [() => r.e(54220).then(r.bind(r, 8618)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 8618], '45a413d9': [() => Promise.all([r.e(40532), r.e(43430), r.e(13026)]).then(r.bind(r, 5441)), '@site/src/pages/bingo/index.tsx', 5441], '45f9a259': [() => r.e(48202).then(r.t.bind(r, 89879, 19)), '~blog/default/blog-tags-een-overheid-756.json', 89879], 46500269: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15593)]).then(r.bind(r, 87517)), '@site/docs/componenten/range/index.mdx', 87517], '465cea2f': [() => r.e(16636).then(r.bind(r, 43209)), '@site/docs/project/links.mdx', 43209], '489d45c6': [() => r.e(3900).then(r.bind(r, 89262)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 89262], '48a6b01c': [() => r.e(4105).then(r.t.bind(r, 70368, 19)), '~docs/default/category-community-category-developer-open-hour-eab.json', 70368], '48c36009': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(78239)]).then(r.bind(r, 48008)), '@site/docs/componenten/date-input/index.mdx', 48008], '49d1ff28': [() => r.e(98477).then(r.bind(r, 60744)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 60744], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(45119)]).then(r.bind(r, 46832)), '@site/docs/componenten/date-picker/index.mdx', 46832], '4ea98559': [() => r.e(97323).then(r.bind(r, 14770)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 14770], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54942)]).then(r.bind(r, 99598)), '@site/docs/componenten/summary-list/index.mdx', 99598], '5110c353': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(40284)]).then(r.bind(r, 18461)), '@site/docs/componenten/button/index.mdx', 18461], '51323ca8': [() => r.e(86464).then(r.bind(r, 70694)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 70694], '5293bf37': [() => Promise.all([r.e(47027), r.e(43430), r.e(66004)]).then(r.bind(r, 4403)), '@site/docs/community/events/estafettemodeldag.mdx', 4403], '52bdf594': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(94770)]).then(r.bind(r, 70041)), '@site/docs/componenten/form-field-radio-option/index.mdx', 70041], '533b6d18': [() => r.e(45118).then(r.t.bind(r, 79973, 19)), '~blog/default/blog-tags-estafettemodel-0cf-list.json', 79973], '54b1e9e3': [() => r.e(6981).then(r.bind(r, 91733)), '@site/docs/richtlijnen/formulieren/README.mdx', 91733], '555de4b4': [() => r.e(22281).then(r.bind(r, 46755)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 46755], '558da7c0': [() => r.e(13027).then(r.bind(r, 20279)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 20279], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '564db768': [() => r.e(51244).then(r.bind(r, 58722)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 58722], '569c0776': [() => r.e(44307).then(r.bind(r, 20212)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 20212], '582c75ff': [() => r.e(94268).then(r.bind(r, 97619)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 97619], '5919194a': [() => r.e(14466).then(r.t.bind(r, 61571, 19)), '~blog/default/blog-tags-developers-a6f-list.json', 61571], '5a463406': [() => r.e(19750).then(r.t.bind(r, 94703, 19)), '~blog/default/blog-tags-developers-a6f.json', 94703], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88094)]).then(r.bind(r, 32006)), '@site/docs/componenten/fieldset/index.mdx', 32006], '5aa1d05c': [() => Promise.all([r.e(40532), r.e(51755), r.e(28533)]).then(r.bind(r, 42843)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour.mdx', 42843], '5b0260c8': [() => r.e(50681).then(r.bind(r, 42719)), '@site/docs/wcag/3.3.3.mdx', 42719], '5b53ebf6': [() => r.e(83148).then(r.t.bind(r, 6643, 19)), '~blog/default/blog-tags-architectuur-22a.json', 6643], '5e41da51': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(94960)]).then(r.bind(r, 3033)), '@site/docs/componenten/drawer/index.mdx', 3033], '5e427ce0': [() => r.e(79442).then(r.bind(r, 34057)), '@site/docs/wcag/4.1.2.mdx', 34057], '5e95c892': [() => r.e(29661).then(r.bind(r, 75789)), '@theme/DocsRoot', 75789], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5ecc2432': [() => r.e(78264).then(r.bind(r, 9798)), '@site/docs/wcag/2.4.7.mdx', 9798], '5f26db3b': [() => r.e(48074).then(r.bind(r, 87752)), '@site/docs/voorbeelden/templates/README.md', 87752], '5f7673a0': [() => r.e(4629).then(r.bind(r, 98513)), '@site/docs/project/over-nl-design-system.mdx', 98513], '5ffa4053': [() => r.e(16045).then(r.t.bind(r, 84729, 19)), '~blog/default/blog-tags-gebruikerstesten-eea.json', 84729], '60213d5c': [() => r.e(95394).then(r.t.bind(r, 16825, 19)), '~blog/default/blog-tags-toegankelijkheid-91e.json', 16825], '6076374a': [() => r.e(70374).then(r.bind(r, 30247)), '@site/docs/footer/colofon.mdx', 30247], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 68950)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 68950], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 99878)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 99878], 61890307: [() => r.e(76686).then(r.t.bind(r, 3683, 19)), '~blog/default/blog-tags-design-systems-719-list.json', 3683], '64b13969': [() => r.e(86199).then(r.t.bind(r, 98408, 19)), '~blog/default/blog-tags-architectuur-22a-list.json', 98408], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 97720)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 97720], '66227b34': [() => r.e(80249).then(r.bind(r, 72299)), '@site/docs/wcag/2.4.4.mdx', 72299], '667b53b1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(77936)]).then(r.bind(r, 60499)), '@site/docs/componenten/task-list/index.mdx', 60499], '67d19623': [() => r.e(49451).then(r.bind(r, 29433)), '@site/docs/open-source/eupl.md', 29433], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 41942)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 41942], '6875c492': [() => Promise.all([r.e(40532), r.e(47027), r.e(48610)]).then(r.bind(r, 17235)), '@theme/BlogTagsPostsPage', 17235], '68b96050': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(23221)]).then(r.bind(r, 51102)), '@site/docs/componenten/paragraph/index.mdx', 51102], '68ddddde': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(5643)]).then(r.bind(r, 41676)), '@site/docs/componenten/skip-link/index.mdx', 41676], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(18181)]).then(r.bind(r, 57290)), '@site/docs/componenten/form-field/index.mdx', 57290], '6ab13dac': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(83760)]).then(r.bind(r, 62604)), '@site/docs/componenten/form-field-partial-label/index.mdx', 62604], '6ad1359b': [() => Promise.all([r.e(40532), r.e(51755), r.e(43800)]).then(r.bind(r, 26461)), '@site/docs/richtlijnen/formulieren/questions.mdx', 26461], '6b7d4ee0': [() => r.e(10093).then(r.bind(r, 50656)), '@site/docs/richtlijnen/introductie.md', 50656], '6b8ad28a': [() => r.e(24582).then(r.t.bind(r, 43403, 19)), '~blog/default/blog-tags-word-press-c72.json', 43403], '6c269cf8': [() => Promise.all([r.e(40532), r.e(47027), r.e(51755), r.e(22305), r.e(12356)]).then(r.bind(r, 40592)), '@site/src/pages/contrast/index.tsx', 40592], '6c57e36f': [() => r.e(53020).then(r.t.bind(r, 59021, 19)), '~blog/default/blog-tags-buitenland-af0-list.json', 59021], '6d8df171': [() => r.e(89019).then(r.t.bind(r, 45255, 19)), '~blog/default/blog-tags-designers-24d-list.json', 45255], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 3483)), '@site/docs/handboek/design-tokens/README.mdx', 3483], '6e114b37': [() => r.e(31906).then(r.bind(r, 3398)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 3398], '6f323067': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(17768)]).then(r.bind(r, 93672)), '@site/docs/componenten/form-field-partial/index.mdx', 93672], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 38864)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 38864], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(72755)]).then(r.bind(r, 13038)), '@site/docs/componenten/heading/index.mdx', 13038], '6fdf8dbf': [() => r.e(20940).then(r.bind(r, 86951)), '@site/docs/wcag/4.1.1.mdx', 86951], '707334e0': [() => r.e(44136).then(r.bind(r, 57193)), '@site/docs/richtlijnen/stijl/iconen.md', 57193], '70ebfaef': [() => r.e(33728).then(r.bind(r, 21340)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 21340], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 47056)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 47056], '70fe0045': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(97979)]).then(r.bind(r, 17687)), '@site/docs/componenten/textarea/index.mdx', 17687], '7290f823': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44275)]).then(r.bind(r, 72934)), '@site/docs/componenten/alert-dialog/index.mdx', 72934], '72af1482': [() => r.e(37923).then(r.bind(r, 76476)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 76476], '72b0d195': [() => r.e(29396).then(r.bind(r, 58781)), '@site/docs/open-source/cc0.md', 58781], '72c446ac': [() => r.e(78116).then(r.t.bind(r, 46951, 19)), '~docs/default/category-community-category-events-1ab.json', 46951], '73bf6027': [() => r.e(96103).then(r.bind(r, 34491)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 34491], '73d20161': [() => r.e(11047).then(r.t.bind(r, 43306, 19)), '~blog/default/blog-tags-werkgroepen-ba6.json', 43306], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(67064)]).then(r.bind(r, 26493)), '@site/docs/handboek/developer/03-thema-maken.mdx', 26493], 77321757: [() => r.e(70325).then(r.bind(r, 28684)), '@site/docs/handboek/designer/voorbeeld-thema.md', 28684], '77bf2607': [() => r.e(61472).then(r.bind(r, 10036)), '@site/docs/project/faq.mdx', 10036], '7af3a6ef': [() => Promise.all([r.e(40532), r.e(51755), r.e(43411)]).then(r.bind(r, 47680)), '@site/docs/richtlijnen/formulieren/confirmation.mdx', 47680], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(3693)]).then(r.bind(r, 83374)), '@site/docs/componenten/blockquote/index.mdx', 83374], '7b7af99a': [() => r.e(13971).then(r.t.bind(r, 84122, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced-list.json', 84122], '7c4f6831': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(71337)]).then(r.bind(r, 95615)), '@site/docs/componenten/sub-heading/index.mdx', 95615], '7ca6903f': [() => r.e(84373).then(r.bind(r, 4366)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 4366], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(24366)]).then(r.bind(r, 20278)), '@site/docs/componenten/radio-group/index.mdx', 20278], '7e20bedc': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(39783)]).then(r.bind(r, 62184)), '@site/docs/componenten/tabs/index.mdx', 62184], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 33748)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 33748], '80bad7c2': [() => r.e(41368).then(r.bind(r, 61762)), '@site/blog/2024/20240322-design-open-dag.md', 61762], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '81536b8a': [() => r.e(766).then(r.t.bind(r, 59199, 19)), '~blog/default/blog-tags-componenten-652.json', 59199], '8165282b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(49619)]).then(r.bind(r, 51176)), '@site/docs/componenten/text-input/index.mdx', 51176], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 41203)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 41203], '839d3c4e': [() => r.e(29636).then(r.t.bind(r, 4212, 19)), '~blog/default/blog-tags-figma-d77.json', 4212], '845a118e': [() => r.e(81213).then(r.bind(r, 50209)), '@site/docs/community/events/design-systems-week-2023/index.md', 50209], '84a56bc3': [() => r.e(21928).then(r.t.bind(r, 60517, 19)), '~docs/default/category-community-category-design-open-hour-4a0.json', 60517], '861e17e8': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(43396)]).then(r.bind(r, 75494)), '@site/docs/componenten/definition-list/index.mdx', 75494], '8762f664': [() => r.e(89300).then(r.t.bind(r, 75056, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1-list.json', 75056], '897f202a': [() => r.e(81700).then(r.bind(r, 38883)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 38883], '89a96570': [() => r.e(77754).then(r.bind(r, 38946)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 38946], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(87034)]).then(r.bind(r, 42717)), '@site/docs/componenten/file-input/index.mdx', 42717], '8b659173': [() => r.e(30217).then(r.bind(r, 58648)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 58648], '8b6c8a8c': [() => r.e(73566).then(r.t.bind(r, 44258, 19)), '~blog/default/blog-tags-buitenland-af0.json', 44258], '8baef6f7': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(21229)]).then(r.bind(r, 21744)), '@site/docs/componenten/icon/index.mdx', 21744], '8de5412f': [() => r.e(8557).then(r.bind(r, 24704)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 24704], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(79947)]).then(r.bind(r, 99960)), '@site/docs/componenten/number-badge/index.mdx', 99960], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 66574)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 66574], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(3578)]).then(r.bind(r, 3049)), '@site/docs/componenten/heading-3/index.mdx', 3049], '90f10f11': [() => Promise.all([r.e(40532), r.e(51755), r.e(41915)]).then(r.bind(r, 509)), '@site/docs/richtlijnen/formulieren/links.mdx', 509], '91059c25': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(61057)]).then(r.bind(r, 95788)), '@site/docs/componenten/heading-6/index.mdx', 95788], '9186edf4': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20994)]).then(r.bind(r, 99835)), '@site/docs/componenten/card-as-link/index.mdx', 99835], '91ad73c4': [() => r.e(94299).then(r.bind(r, 84151)), '@site/docs/wcag/0-introduction.mdx', 84151], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88016)]).then(r.bind(r, 39051)), '@site/docs/componenten/checkbox-group/index.mdx', 39051], '920ddf01': [() => r.e(82184).then(r.bind(r, 11270)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 11270], '9228e550': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54291)]).then(r.bind(r, 32254)), '@site/docs/componenten/password-input/index.mdx', 32254], '92e5e01e': [() => r.e(68536).then(r.bind(r, 85771)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 85771], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 59008)), '@site/docs/handboek/developer/01-aan-de-slag.md', 59008], '94b5e6fd': [() => r.e(28808).then(r.t.bind(r, 43190, 19)), '~blog/default/blog-tags-design-systems-week-c33.json', 43190], '94b6170a': [() => r.e(95250).then(r.bind(r, 81914)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 81914], '94c4067d': [() => r.e(38352).then(r.bind(r, 6141)), '@site/docs/wcag/1.3.1.mdx', 6141], '94d55c70': [() => r.e(78508).then(r.bind(r, 73790)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 73790], 95312783: [() => Promise.all([r.e(40532), r.e(51755), r.e(15220)]).then(r.bind(r, 67286)), '@site/docs/richtlijnen/formulieren/visual-design.mdx', 67286], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 55986)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 55986], '9764e22e': [() => r.e(9336).then(r.bind(r, 17350)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 17350], '98a78e5e': [() => r.e(44455).then(r.bind(r, 10962)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 10962], '9a9a4fab': [() => r.e(51476).then(r.t.bind(r, 90222, 19)), '~blog/default/blog-tags-mijlpalen-1bf-list.json', 90222], '9b2e9553': [() => r.e(85063).then(r.bind(r, 3561)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 3561], '9bf7fd7b': [() => r.e(23759).then(r.t.bind(r, 12142, 19)), '~blog/default/blog-tags-toegankelijkheid-91e-list.json', 12142], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 57321)), '@site/docs/handboek/developer/02-architectuur.md', 57321], '9e4087bc': [() => r.e(53608).then(r.bind(r, 59193)), '@theme/BlogArchivePage', 59193], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15739)]).then(r.bind(r, 66419)), '@site/docs/componenten/heading-5/index.mdx', 66419], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 52008)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 52008], '9f867b5d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(12487)]).then(r.bind(r, 74065)), '@site/docs/componenten/README.mdx', 74065], a3332bc9: [() => r.e(85303).then(r.bind(r, 3617)), '@site/blog/2024/20240701-meerdere-producten.md?truncated=true', 3617], a52685f4: [() => r.e(88152).then(r.bind(r, 99567)), '@site/docs/wcag/1.3.5.mdx', 99567], a55f7ab7: [() => r.e(82714).then(r.bind(r, 94793)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 94793], a5657520: [() => r.e(40128).then(r.t.bind(r, 6435, 19)), '~blog/default/blog-tags-design-tokens-0d0-list.json', 6435], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a5d65f05: [() => r.e(77827).then(r.t.bind(r, 37256, 19)), '~blog/default/blog-tags-design-systems-week-c33-list.json', 37256], a65373b3: [() => r.e(60250).then(r.t.bind(r, 32567, 19)), '~blog/default/blog-tags-gebruikerstesten-eea-list.json', 32567], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(47027), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a7023ddc: [() => r.e(11713).then(r.t.bind(r, 53457, 19)), '~blog/default/blog-tags-tags-4c2.json', 53457], a7537d50: [() => Promise.all([r.e(40532), r.e(51755), r.e(53626)]).then(r.bind(r, 42998)), '@site/docs/richtlijnen/formulieren/autocomplete.mdx', 42998], a77e5ea3: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(76401)]).then(r.bind(r, 24941)), '@site/docs/componenten/accordion/index.mdx', 24941], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 66045)), '@theme/DocVersionRoot', 66045], a7f84bbe: [() => r.e(58803).then(r.bind(r, 86017)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 86017], a81e9677: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44921)]).then(r.bind(r, 65807)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 65807], a89706a3: [() => r.e(89138).then(r.t.bind(r, 39152, 19)), '~blog/default/blog-tags-logius-aab-list.json', 39152], a8a015ed: [() => r.e(58827).then(r.t.bind(r, 45811, 19)), '~blog/default/blog-tags-update-827-list.json', 45811], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 79698)), '@theme/DocRoot', 79698], a9493cdf: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(92532)]).then(r.bind(r, 42931)), '@site/docs/componenten/form-field-option-label/index.mdx', 42931], aa8a543f: [() => Promise.all([r.e(40532), r.e(51755), r.e(77057)]).then(r.bind(r, 64004)), '@site/docs/richtlijnen/formulieren/buttons.mdx', 64004], abcc39c5: [() => r.e(40399).then(r.t.bind(r, 65696, 19)), '~blog/default/blog-tags-word-press-c72-list.json', 65696], ac66737c: [() => r.e(34838).then(r.bind(r, 81017)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 81017], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 76001)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 76001], ace5ddd0: [() => r.e(86495).then(r.t.bind(r, 80827, 19)), '~docs/default/category-richtlijnen-category-wcag-succescriteria-uitgelegd-b99.json', 80827], ace6628c: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(83373)]).then(r.bind(r, 4869)), '@site/docs/componenten/calendar/index.mdx', 4869], ad9d479a: [() => Promise.all([r.e(47027), r.e(43430), r.e(22746)]).then(r.bind(r, 87370)), '@site/docs/community/sluit-je-aan.mdx', 87370], adb328b9: [() => r.e(91344).then(r.bind(r, 30887)), '@site/docs/community/sluit-je-aan-success.mdx', 30887], adc7d54a: [() => Promise.all([r.e(47027), r.e(43430), r.e(90134)]).then(r.bind(r, 41487)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 41487], aeaf35c2: [() => r.e(53345).then(r.bind(r, 1429)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 1429], af16d7d3: [() => r.e(969).then(r.t.bind(r, 26338, 19)), '~docs/default/category-handboek-category-voor-developers-73b.json', 26338], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(47027), r.e(48595)]).then(r.bind(r, 66869)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 66869], b0ef882f: [() => r.e(69379).then(r.t.bind(r, 22346, 19)), '~blog/default/blog-tags-meta-401-list.json', 22346], b171e401: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(67398)]).then(r.bind(r, 57266)), '@site/docs/componenten/switch/index.mdx', 57266], b1e76af7: [() => Promise.all([r.e(40532), r.e(51755), r.e(64796)]).then(r.bind(r, 91916)), '@site/docs/richtlijnen/formulieren/when-which.mdx', 91916], b24d1ef2: [() => r.e(43753).then(r.bind(r, 21463)), '@site/docs/wcag/1.1.1.mdx', 21463], b2991567: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(36918)]).then(r.bind(r, 7337)), '@site/docs/componenten/invalid-form-alert/index.mdx', 7337], b2b675dd: [() => r.e(90533).then(r.t.bind(r, 28017, 19)), '~blog/default/blog-c06.json', 28017], b2f554cd: [() => r.e(11477).then(r.t.bind(r, 30010, 19)), '~blog/default/blog-archive-80c.json', 30010], b4150b56: [() => Promise.all([r.e(40532), r.e(43430), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(34492)]).then(r.bind(r, 65123)), '@site/docs/componenten/progress-bar/index.mdx', 65123], b50de158: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(12505)]).then(r.bind(r, 41697)), '@site/docs/componenten/side-navigation/index.mdx', 41697], b519f87e: [() => r.e(84487).then(r.t.bind(r, 25603, 19)), '~blog/default/blog-tags-formulieren-1bd-list.json', 25603], b56159c8: [() => r.e(66360).then(r.bind(r, 78111)), '@site/docs/community/wie-doet-mee.mdx', 78111], b56ace87: [() => r.e(62736).then(r.bind(r, 50775)), '@site/docs/wcag/3.3.4.mdx', 50775], b68f03f7: [() => r.e(815).then(r.bind(r, 47585)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 47585], b70cd504: [() => r.e(36546).then(r.bind(r, 42316)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 42316], b729a1a1: [() => r.e(29386).then(r.bind(r, 2558)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 2558], b75db01c: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(46536)]).then(r.bind(r, 85099)), '@site/docs/componenten/modal-dialog/index.mdx', 85099], b83fe955: [() => Promise.all([r.e(40532), r.e(51755), r.e(78883)]).then(r.bind(r, 21429)), '@site/docs/richtlijnen/formulieren/errors.mdx', 21429], b8bffd88: [() => r.e(65391).then(r.bind(r, 8570)), '@site/docs/handboek/designer/README.md', 8570], b9e57eaa: [() => r.e(82884).then(r.t.bind(r, 44234, 19)), '~docs/default/category-voorbeelden-category-voorbeelden-795.json', 44234], ba4a9952: [() => r.e(2850).then(r.bind(r, 74819)), '@site/docs/community/events/developer-open-hour/developer-open-hour.mdx', 74819], bb678bf7: [() => r.e(58479).then(r.t.bind(r, 8263, 19)), '~blog/default/blog-tags-lettertype-5b1.json', 8263], bc199175: [() => r.e(96222).then(r.bind(r, 68198)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 68198], bc2d69ea: [() => r.e(85634).then(r.bind(r, 70966)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 70966], be0dd82d: [() => r.e(59288).then(r.t.bind(r, 76777, 19)), '~docs/default/category-voorbeelden-category-patronen-a5b.json', 76777], bf13cd03: [() => r.e(75505).then(r.t.bind(r, 95446, 19)), '~docs/default/category-community-category-heartbeat-3a1.json', 95446], bf14fce1: [() => r.e(15470).then(r.bind(r, 17716)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 17716], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 45999)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 45999], bf8a7bac: [() => r.e(56596).then(r.bind(r, 4296)), '@site/docs/community/events/estafettemodeldag-success.mdx', 4296], c15f67bc: [() => r.e(39810).then(r.bind(r, 52218)), '@site/docs/community/events/design-open-dag-success.mdx', 52218], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 25153)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 25153], c2b84a26: [() => r.e(53367).then(r.bind(r, 31300)), '@site/docs/wcag/3.2.2.mdx', 31300], c3dc88b7: [() => r.e(36194).then(r.bind(r, 81825)), '@site/docs/wcag/3.2.1.mdx', 81825], c45f29d0: [() => r.e(91215).then(r.t.bind(r, 37463, 19)), '~docs/default/category-handboek-category-handboek-24f.json', 37463], c51cb369: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(90258)]).then(r.bind(r, 47202)), '@site/docs/componenten/language-navigation/index.mdx', 47202], c651b2e8: [() => r.e(75386).then(r.bind(r, 3254)), '@site/docs/project/nieuwsbrief.mdx', 3254], c6b96a0f: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20911)]).then(r.bind(r, 47242)), '@site/docs/componenten/non-modal-dialog/index.mdx', 47242], c776d6ea: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(85)]).then(r.bind(r, 77283)), '@site/docs/componenten/heading-4/index.mdx', 77283], c8ac2561: [() => r.e(67586).then(r.bind(r, 71732)), '@site/docs/handboek/naamgeving.mdx', 71732], c8c68184: [() => Promise.all([r.e(40532), r.e(51755), r.e(48373)]).then(r.bind(r, 55213)), '@site/docs/richtlijnen/formulieren/help-the-user.mdx', 55213], c91a40d5: [() => Promise.all([r.e(47027), r.e(43430), r.e(11839)]).then(r.bind(r, 83545)), '@site/docs/community/events/developer-open-hour/aanmelden.mdx', 83545], c9609a68: [() => r.e(72822).then(r.bind(r, 72641)), '@site/blog/2024/20240701-meerdere-producten.md', 72641], c9c3106d: [() => r.e(35048).then(r.t.bind(r, 37907, 19)), '~blog/default/blog-tags-designers-24d.json', 37907], ca36df4d: [() => r.e(60917).then(r.bind(r, 46167)), '@site/docs/CHANGELOG.md', 46167], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 2881)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 2881], cc7e1584: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(36200)]).then(r.bind(r, 31603)), '@site/docs/componenten/strong/index.mdx', 31603], ccc49370: [() => Promise.all([r.e(40532), r.e(11009), r.e(46103)]).then(r.bind(r, 24910)), '@theme/BlogPostPage', 24910], cd3c7377: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(25425)]).then(r.bind(r, 69645)), '@site/docs/componenten/form-field-description/index.mdx', 69645], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 73222)), '@site/docs/community/events/design-systems-week-2022.mdx', 73222], ce7b85cb: [() => r.e(37498).then(r.bind(r, 78283)), '@site/docs/handboek/organisatie/meedoen.md', 78283], ced44f18: [() => Promise.all([r.e(47027), r.e(43430), r.e(81484)]).then(r.bind(r, 58308)), '@site/docs/community/events/design-open-dag.mdx', 58308], d01ba261: [() => r.e(6639).then(r.t.bind(r, 99706, 19)), '~blog/default/blog-tags-richtlijnen-d98-list.json', 99706], d0b753ca: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(47531)]).then(r.bind(r, 27857)), '@site/docs/componenten/radio-button/index.mdx', 27857], d19a514d: [() => r.e(20724).then(r.t.bind(r, 49372, 19)), '~blog/default/blog-tags-meta-401.json', 49372], d19ee383: [() => r.e(95282).then(r.bind(r, 99510)), '@site/docs/wcag/2.4.6.mdx', 99510], d35b0244: [() => r.e(79951).then(r.t.bind(r, 57883, 19)), '~blog/default/blog-tags-estafettemodel-0cf.json', 57883], d3c1b80a: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(58441)]).then(r.bind(r, 93891)), '@site/docs/componenten/avatar/index.mdx', 93891], d3deb5db: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88021)]).then(r.bind(r, 31563)), '@site/docs/componenten/toggletip/index.mdx', 31563], d4552b9e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15403)]).then(r.bind(r, 4248)), '@site/docs/componenten/form-field-error-message/index.mdx', 4248], d467e203: [() => r.e(76902).then(r.bind(r, 20793)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 20793], d5484ed9: [() => r.e(59355).then(r.t.bind(r, 6827, 19)), '~docs/default/tag-tags-community-74e.json', 6827], d5f36106: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(16833)]).then(r.bind(r, 53412)), '@site/docs/componenten/status-badge/index.mdx', 53412], d9284525: [() => r.e(54836).then(r.bind(r, 5924)), '@site/docs/wcag/2.4.10.mdx', 5924], da2da55d: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(95102)]).then(r.bind(r, 3795)), '@site/docs/componenten/heading-group/index.mdx', 3795], da8aeb86: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54472)]).then(r.bind(r, 94480)), '@site/docs/componenten/navigation-bar/index.mdx', 94480], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 72696)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 72696], dd06f6af: [() => r.e(18148).then(r.bind(r, 68444)), '@site/docs/voorbeelden/README.md', 68444], dd47c273: [() => r.e(24012).then(r.t.bind(r, 39464, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-voor-stijl-d34.json', 39464], dd7e6517: [() => r.e(88492).then(r.t.bind(r, 74857, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3-list.json', 74857], ddf35722: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(68424)]).then(r.bind(r, 44132)), '@site/docs/componenten/form-field-label/index.mdx', 44132], de9ea4b2: [() => r.e(69285).then(r.t.bind(r, 74212, 19)), '~docs/default/category-project-category-project-1ac.json', 74212], df203c0f: [() => r.e(99924).then(r.bind(r, 80878)), '@theme/DocTagDocListPage', 80878], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 9226)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 9226], e07f5d94: [() => r.e(67833).then(r.bind(r, 35162)), '@site/docs/richtlijnen/stijl/ruimte.md', 35162], e12b15f5: [() => Promise.all([r.e(40532), r.e(77913), r.e(40125)]).then(r.bind(r, 92615)), '@site/docs/wcag/3.1.2.mdx', 92615], e21395b4: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(48239)]).then(r.bind(r, 38191)), '@site/docs/componenten/notification-banner/index.mdx', 38191], e3b51539: [() => r.e(69592).then(r.bind(r, 19317)), '@site/docs/handboek/developer/07-componenten-maken.md', 19317], e59d1036: [() => r.e(38934).then(r.bind(r, 20821)), '@site/docs/voorbeelden/onderzoek/README.md', 20821], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(41990)]).then(r.bind(r, 6818)), '@site/docs/componenten/separator/index.mdx', 6818], e756447e: [() => r.e(83516).then(r.bind(r, 81326)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 81326], e83393d8: [() => r.e(47826).then(r.t.bind(r, 8877, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-voor-formulieren-4bc.json', 8877], e8c696cf: [() => r.e(10775).then(r.t.bind(r, 57331, 19)), '~blog/default/blog-tags-figma-d77-list.json', 57331], e94ed988: [() => r.e(54171).then(r.bind(r, 18479)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 18479], e98c6ca0: [() => r.e(13538).then(r.bind(r, 96345)), '@site/docs/wcag/3.3.1.mdx', 96345], e9b2227f: [() => r.e(71639).then(r.bind(r, 64808)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 64808], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 18170)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 18170], ed74afc1: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(19552)]).then(r.bind(r, 81127)), '@site/docs/componenten/select/index.mdx', 81127], f15b6573: [() => r.e(74605).then(r.bind(r, 5569)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 5569], f1833817: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(43166)]).then(r.bind(r, 29943)), '@site/docs/componenten/table/index.mdx', 29943], f19e5f41: [() => r.e(95594).then(r.bind(r, 45005)), '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', 45005], f1c1d91e: [() => r.e(20550).then(r.bind(r, 19387)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 19387], f20a3699: [() => r.e(80684).then(r.t.bind(r, 30203, 19)), '~blog/default/blog-tags-richtlijnen-d98.json', 30203], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f36b0a83: [() => r.e(90281).then(r.bind(r, 92291)), '@site/docs/wcag/2.4.2.mdx', 92291], f52fcd14: [() => Promise.all([r.e(40532), r.e(51755), r.e(28370)]).then(r.bind(r, 99849)), '@site/docs/richtlijnen/formulieren/multistep.mdx', 99849], f5daaf40: [() => r.e(47587).then(r.bind(r, 14095)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 14095], f5dc78b8: [() => r.e(98625).then(r.bind(r, 79969)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 79969], f5f3cece: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(32652)]).then(r.bind(r, 47095)), '@site/docs/componenten/spinner/index.mdx', 47095], f633a06a: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(85270)]).then(r.bind(r, 42438)), '@site/docs/componenten/link-list/index.mdx', 42438], f67ebaad: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(25507)]).then(r.bind(r, 30283)), '@site/docs/componenten/video/index.mdx', 30283], f9097464: [() => r.e(36315).then(r.t.bind(r, 55450, 19)), '~blog/default/blog-tags-componenten-652-list.json', 55450], facf449e: [() => r.e(64474).then(r.t.bind(r, 77040, 19)), '~docs/default/category-handboek-category-voor-organisaties-b2b.json', 77040], fbf7ea66: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20322)]).then(r.bind(r, 22422)), '@site/docs/componenten/case-card/index.mdx', 22422], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(2930)]).then(r.bind(r, 73055)), '@site/docs/componenten/progress-list/index.mdx', 73055], fd2458ef: [() => r.e(39680).then(r.bind(r, 63150)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 63150], fe9a39bd: [() => r.e(35959).then(r.bind(r, 92977)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 92977], ff07fdf2: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(75221)]).then(r.bind(r, 79489)), '@site/docs/componenten/unordered-list/index.mdx', 79489], ff0d970f: [() => r.e(99605).then(r.bind(r, 98431)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 98431], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 2073)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 2073], ffcf9766: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(7869)]).then(r.bind(r, 47671)), '@site/docs/componenten/number-input/index.mdx', 47671] };
+   const c = { '000024cb': [() => Promise.all([r.e(40532), r.e(51755), r.e(3247)]).then(r.bind(r, 43067)), '@site/docs/richtlijnen/formulieren/labels.mdx', 43067], '0088abd0': [() => r.e(1036).then(r.bind(r, 567)), '@site/docs/community/events/design-systems-week-2024.mdx', 567], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 49089)), '@theme/BlogTagsListPage', 49089], '02601132': [() => r.e(1384).then(r.t.bind(r, 86724, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834-list.json', 86724], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 3031)), '@site/docs/project/kernteam.mdx', 3031], '04087e03': [() => r.e(18670).then(r.t.bind(r, 87256, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431.json', 87256], '0556c22e': [() => Promise.all([r.e(40532), r.e(51755), r.e(63696)]).then(r.bind(r, 66105)), '@site/docs/richtlijnen/formulieren/descriptions.mdx', 66105], '08d81d65': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(67132)]).then(r.bind(r, 88314)), '@site/docs/componenten/rich-text-content/index.mdx', 88314], '09d51e35': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44014)]).then(r.bind(r, 29674)), '@site/docs/componenten/legend/index.mdx', 29674], '0a6c776a': [() => r.e(90418).then(r.bind(r, 65447)), '@site/blog/2023/20231109-spacing-tokens.md', 65447], '0abe0c91': [() => r.e(18552).then(r.t.bind(r, 56007, 19)), '~docs/default/category-en-voorbeelden-category-voorbeelden-2d6.json', 56007], '0ca15ddc': [() => r.e(75220).then(r.t.bind(r, 91370, 19)), '~docs/default/category-en-richtlijnen-category-wcag-succescriteria-uitgelegd-ae0.json', 91370], '0cf410ab': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54496)]).then(r.bind(r, 32915)), '@site/docs/componenten/dot-badge/index.mdx', 32915], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 68453)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 68453], '0eacf79f': [() => r.e(34193).then(r.bind(r, 838)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 838], '0f134466': [() => Promise.all([r.e(40532), r.e(51755), r.e(8321)]).then(r.bind(r, 6368)), '@site/docs/richtlijnen/formulieren/placeholders.mdx', 6368], '0fd7eb6e': [() => r.e(65361).then(r.t.bind(r, 95896, 19)), '~blog/default/en-blog-tags-design-tokens-7be.json', 95896], '121271ef': [() => r.e(79749).then(r.bind(r, 18029)), '@site/docs/wcag/4.1.3.mdx', 18029], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 68140)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 68140], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 18066)), '@site/docs/community/events/heartbeat/videos.mdx', 18066], '13ecdb40': [() => r.e(75854).then(r.bind(r, 29228)), '@site/docs/richtlijnen/stijl/kleuren.md', 29228], '14a250a4': [() => r.e(86926).then(r.t.bind(r, 6262, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3.json', 6262], '14eb3368': [() => Promise.all([r.e(40532), r.e(47027), r.e(9817)]).then(r.bind(r, 70387)), '@theme/DocCategoryGeneratedIndexPage', 70387], '150707f3': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88230)]).then(r.bind(r, 82197)), '@site/docs/componenten/heading-1/index.mdx', 82197], '15a4ec34': [() => r.e(14418).then(r.bind(r, 34072)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 34072], '164232d1': [() => r.e(50607).then(r.t.bind(r, 13231, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa-list.json', 13231], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 93880)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 93880], '16fd2d30': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(33430)]).then(r.bind(r, 96905)), '@site/docs/componenten/heading-2/index.mdx', 96905], 17896441: [() => Promise.all([r.e(40532), r.e(11009), r.e(27918)]).then(r.bind(r, 27668)), '@theme/DocItem', 27668], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 31791)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 31791], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 89933)), '@site/docs/handboek/designer/figma-structuur.mdx', 89933], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 41775)), '@theme/SearchPage', 41775], '1aa77dba': [() => r.e(78849).then(r.t.bind(r, 52138, 19)), '~blog/default/en-blog-tags-meta-594-list.json', 52138], '1b445115': [() => r.e(35432).then(r.bind(r, 93142)), '@site/docs/handboek/designer/community.md', 93142], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 21624)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 21624], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(34894)]).then(r.bind(r, 19736)), '@site/docs/componenten/checkbox/index.mdx', 19736], '1c4e5244': [() => r.e(80637).then(r.t.bind(r, 33328, 19)), '~docs/default/category-en-voorbeelden-category-patronen-0d6.json', 33328], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 50808)), '@site/src/pages/index.tsx', 50808], '1e45e22d': [() => r.e(70591).then(r.bind(r, 78140)), '@site/docs/footer/coc.md', 78140], '1fd620f1': [() => r.e(58990).then(r.bind(r, 93564)), '@site/docs/wcag/2.1.1.mdx', 93564], '20a411f0': [() => r.e(2936).then(r.t.bind(r, 39916, 19)), '~docs/default/category-en-community-category-heartbeat-dff.json', 39916], '20f2808f': [() => r.e(30761).then(r.bind(r, 79665)), '@site/docs/handboek/leverancier/introductie.md', 79665], '210e540d': [() => r.e(2601).then(r.bind(r, 72452)), '@site/docs/wcag/2.4.13.mdx', 72452], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 27847)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 27847], '2289dd67': [() => r.e(16451).then(r.bind(r, 8784)), '@site/docs/handboek/designer/stappenplan.mdx', 8784], '22ebae92': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20858)]).then(r.bind(r, 79856)), '@site/docs/componenten/text-input-group/index.mdx', 79856], '232d0db4': [() => r.e(2716).then(r.t.bind(r, 23538, 19)), '~blog/default/en-blog-tags-buitenland-7d6.json', 23538], '235c86a2': [() => r.e(88979).then(r.bind(r, 47638)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 47638], '2383fbae': [() => r.e(90909).then(r.bind(r, 73960)), '@site/docs/footer/privacyverklaring.md', 73960], 24071437: [() => r.e(58687).then(r.bind(r, 788)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 788], '2435a34f': [() => r.e(10936).then(r.t.bind(r, 16413, 19)), '~blog/default/en-blog-tags-formulieren-89f-list.json', 16413], '257a732d': [() => r.e(74937).then(r.t.bind(r, 91203, 19)), '~blog/default/en-blog-tags-nl-design-system-be8.json', 91203], '25b93367': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(98634)]).then(r.bind(r, 29416)), '@site/docs/componenten/link/index.mdx', 29416], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 79722)), '@site/docs/handboek/manager/introductie.md', 79722], '27ff9d14': [() => r.e(22669).then(r.t.bind(r, 19665, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431-list.json', 19665], '281e6f8e': [() => Promise.all([r.e(47027), r.e(43430), r.e(98218)]).then(r.bind(r, 64103)), '@site/docs/project/blijf-op-de-hoogte.mdx', 64103], '28d3d582': [() => r.e(96597).then(r.bind(r, 73890)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 73890], '28e99dcb': [() => r.e(73722).then(r.bind(r, 17985)), '@site/docs/wcag/3.1.1.mdx', 17985], '2933852b': [() => r.e(6752).then(r.bind(r, 46975)), '@site/docs/footer/toegankelijkheidsverklaring.md', 46975], '2c881fe2': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(82200)]).then(r.bind(r, 61983)), '@site/docs/componenten/ordered-list/index.mdx', 61983], '2d21fce7': [() => r.e(94210).then(r.bind(r, 80260)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 80260], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2da1f935': [() => r.e(41724).then(r.t.bind(r, 77640, 19)), '~blog/default/en-blog-tags-architectuur-246-list.json', 77640], '2e11687d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(42112)]).then(r.bind(r, 41378)), '@site/docs/componenten/data-badge/index.mdx', 41378], '2f0980e2': [() => r.e(71752).then(r.bind(r, 45727)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 45727], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(81565)]).then(r.bind(r, 35258)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 35258], '2fe778e5': [() => r.e(32697).then(r.bind(r, 51433)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 51433], '3015a2b9': [() => r.e(78882).then(r.bind(r, 37166)), '@site/docs/richtlijnen/stijl/typografie.md', 37166], '306030dd': [() => r.e(20932).then(r.bind(r, 95435)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 95435], '3060e3ce': [() => r.e(11078).then(r.t.bind(r, 20299, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-97f.json', 20299], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 25441)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 25441], '323b7945': [() => Promise.all([r.e(47027), r.e(43430), r.e(31875)]).then(r.bind(r, 57088)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 57088], '32470cbe': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(16406)]).then(r.bind(r, 38306)), '@site/docs/componenten/figure/index.mdx', 38306], 32636356: [() => r.e(52400).then(r.bind(r, 5382)), '@site/docs/project/newsletter-success.mdx', 5382], '333bf37f': [() => r.e(79479).then(r.bind(r, 13738)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 13738], '3464a859': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(41769)]).then(r.bind(r, 18343)), '@site/docs/componenten/page-header/index.mdx', 18343], '34a37bdc': [() => r.e(55856).then(r.t.bind(r, 34863, 19)), '~docs/default/category-en-handboek-category-voor-organisaties-bf9.json', 34863], '34b859b1': [() => r.e(97177).then(r.bind(r, 38453)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 38453], '35677b07': [() => r.e(15956).then(r.t.bind(r, 28433, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6-list.json', 28433], '3679878e': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(76318)]).then(r.bind(r, 18130)), '@site/docs/componenten/pagination/index.mdx', 18130], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 1179)), '@theme/DocTagsListPage', 1179], '37c1945c': [() => Promise.all([r.e(40532), r.e(77913), r.e(30561)]).then(r.bind(r, 6188)), '@site/docs/wcag/2.4.1.mdx', 6188], '381b9e37': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(9910)]).then(r.bind(r, 1172)), '@site/docs/componenten/action-group/index.mdx', 1172], '38471ef1': [() => r.e(37377).then(r.bind(r, 20741)), '@site/blog/2023/20231214-community-online-formulieren.md', 20741], '39418f7b': [() => r.e(28417).then(r.t.bind(r, 32258, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a.json', 32258], '3a63c8bb': [() => r.e(34866).then(r.t.bind(r, 59970, 19)), '~blog/default/en-blog-tags-nl-design-system-be8-list.json', 59970], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 80551)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 80551], '3bb8863e': [() => Promise.all([r.e(40532), r.e(43430), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 48021)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 48021], '3d377413': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(17903)]).then(r.bind(r, 74781)), '@site/docs/componenten/page-footer/index.mdx', 74781], '3d58a721': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(9591)]).then(r.bind(r, 90079)), '@site/docs/componenten/date-input-group/index.mdx', 90079], '3d7707fa': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(86423)]).then(r.bind(r, 52490)), '@site/docs/componenten/alert/index.mdx', 52490], '3e3ea08d': [() => r.e(22725).then(r.t.bind(r, 90453, 19)), '~blog/default/en-blog-tags-gebruikersonderzoeken-7e1-list.json', 90453], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 87221)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 87221], '3ec61807': [() => r.e(71955).then(r.t.bind(r, 93261, 19)), '~blog/default/en-blog-tags-buitenland-7d6-list.json', 93261], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 59642)), '@site/blog/2019/20190606-update-nl-design-system.md', 59642], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(506)]).then(r.bind(r, 36057)), '@site/docs/componenten/pre-heading/index.mdx', 36057], '3ff65370': [() => r.e(80852).then(r.t.bind(r, 79963, 19)), '~blog/default/en-blog-tags-estafettemodel-16f.json', 79963], 40355699: [() => r.e(88567).then(r.bind(r, 57126)), '@site/blog/2024/20240522-community-blocks.md', 57126], '411e6d0c': [() => r.e(34104).then(r.bind(r, 52250)), '@site/docs/handboek/introductie.md', 52250], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 82304)), '@site/docs/handboek/estafettemodel.mdx', 82304], '452f106e': [() => r.e(10860).then(r.bind(r, 28913)), '@site/docs/footer/wcag-em-rapport-2023.md', 28913], '45431ea1': [() => r.e(54220).then(r.bind(r, 8618)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 8618], '45a413d9': [() => Promise.all([r.e(40532), r.e(43430), r.e(13026)]).then(r.bind(r, 5441)), '@site/src/pages/bingo/index.tsx', 5441], '463aafc7': [() => r.e(99220).then(r.t.bind(r, 73190, 19)), '~blog/default/en-blog-tags-estafettemodel-16f-list.json', 73190], 46500269: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15593)]).then(r.bind(r, 87517)), '@site/docs/componenten/range/index.mdx', 87517], '465cea2f': [() => r.e(16636).then(r.bind(r, 43209)), '@site/docs/project/links.mdx', 43209], '489d45c6': [() => r.e(3900).then(r.bind(r, 89262)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 89262], '48c36009': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(78239)]).then(r.bind(r, 48008)), '@site/docs/componenten/date-input/index.mdx', 48008], '4921393f': [() => r.e(17205).then(r.t.bind(r, 28363, 19)), '~docs/default/category-en-handboek-category-voor-designers-366.json', 28363], '492f3cec': [() => r.e(17979).then(r.t.bind(r, 92224, 19)), '~docs/default/category-en-voorbeelden-category-patronen-formulieren-208.json', 92224], '49d1ff28': [() => r.e(98477).then(r.bind(r, 60744)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 60744], '4a8999c7': [() => r.e(17329).then(r.t.bind(r, 32488, 19)), '~blog/default/en-blog-tags-een-overheid-6d9.json', 32488], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(45119)]).then(r.bind(r, 46832)), '@site/docs/componenten/date-picker/index.mdx', 46832], '4ea98559': [() => r.e(97323).then(r.bind(r, 14770)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 14770], '4ecafe36': [() => r.e(58279).then(r.t.bind(r, 72985, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5.json', 72985], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54942)]).then(r.bind(r, 99598)), '@site/docs/componenten/summary-list/index.mdx', 99598], '5110c353': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(40284)]).then(r.bind(r, 18461)), '@site/docs/componenten/button/index.mdx', 18461], '51323ca8': [() => r.e(86464).then(r.bind(r, 70694)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 70694], '520ccf84': [() => r.e(32362).then(r.t.bind(r, 56877, 19)), '~blog/default/en-blog-tags-design-tokens-7be-list.json', 56877], '5293bf37': [() => Promise.all([r.e(47027), r.e(43430), r.e(66004)]).then(r.bind(r, 4403)), '@site/docs/community/events/estafettemodeldag.mdx', 4403], '52bdf594': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(94770)]).then(r.bind(r, 70041)), '@site/docs/componenten/form-field-radio-option/index.mdx', 70041], '53ec08ea': [() => r.e(47599).then(r.t.bind(r, 68298, 19)), '~docs/default/tag-en-tags-community-711.json', 68298], '54b1e9e3': [() => r.e(6981).then(r.bind(r, 91733)), '@site/docs/richtlijnen/formulieren/README.mdx', 91733], '555de4b4': [() => r.e(22281).then(r.bind(r, 46755)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 46755], '558da7c0': [() => r.e(13027).then(r.bind(r, 20279)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 20279], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '564db768': [() => r.e(51244).then(r.bind(r, 58722)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 58722], '569c0776': [() => r.e(44307).then(r.bind(r, 20212)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 20212], '57b28864': [() => r.e(2608).then(r.t.bind(r, 11097, 19)), '~blog/default/en-blog-tags-componenten-63a.json', 11097], '582c75ff': [() => r.e(94268).then(r.bind(r, 97619)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 97619], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88094)]).then(r.bind(r, 32006)), '@site/docs/componenten/fieldset/index.mdx', 32006], '5aa1d05c': [() => Promise.all([r.e(40532), r.e(51755), r.e(28533)]).then(r.bind(r, 42843)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour.mdx', 42843], '5b0260c8': [() => r.e(50681).then(r.bind(r, 42719)), '@site/docs/wcag/3.3.3.mdx', 42719], '5e41da51': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(94960)]).then(r.bind(r, 3033)), '@site/docs/componenten/drawer/index.mdx', 3033], '5e427ce0': [() => r.e(79442).then(r.bind(r, 34057)), '@site/docs/wcag/4.1.2.mdx', 34057], '5e95c892': [() => r.e(29661).then(r.bind(r, 75789)), '@theme/DocsRoot', 75789], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5ecc2432': [() => r.e(78264).then(r.bind(r, 9798)), '@site/docs/wcag/2.4.7.mdx', 9798], '5efd353f': [() => r.e(24903).then(r.t.bind(r, 51484, 19)), '~blog/default/en-blog-tags-logius-6b8-list.json', 51484], '5f26db3b': [() => r.e(48074).then(r.bind(r, 87752)), '@site/docs/voorbeelden/templates/README.md', 87752], '5f7673a0': [() => r.e(4629).then(r.bind(r, 98513)), '@site/docs/project/over-nl-design-system.mdx', 98513], '6076374a': [() => r.e(70374).then(r.bind(r, 30247)), '@site/docs/footer/colofon.mdx', 30247], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 68950)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 68950], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 99878)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 99878], '61e31d3f': [() => r.e(88916).then(r.t.bind(r, 75298, 19)), '~blog/default/en-blog-tags-een-overheid-6d9-list.json', 75298], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 97720)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 97720], '66227b34': [() => r.e(80249).then(r.bind(r, 72299)), '@site/docs/wcag/2.4.4.mdx', 72299], '667b53b1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(77936)]).then(r.bind(r, 60499)), '@site/docs/componenten/task-list/index.mdx', 60499], '6765bbe1': [() => r.e(62951).then(r.t.bind(r, 51116, 19)), '~blog/default/en-blog-tags-lettertype-b29.json', 51116], '67d19623': [() => r.e(49451).then(r.bind(r, 29433)), '@site/docs/open-source/eupl.md', 29433], 68117824: [() => r.e(73526).then(r.t.bind(r, 84245, 19)), '~blog/default/en-blog-tags-lettertype-b29-list.json', 84245], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 41942)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 41942], '6875c492': [() => Promise.all([r.e(40532), r.e(47027), r.e(48610)]).then(r.bind(r, 17235)), '@theme/BlogTagsPostsPage', 17235], '68b96050': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(23221)]).then(r.bind(r, 51102)), '@site/docs/componenten/paragraph/index.mdx', 51102], '68ddddde': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(5643)]).then(r.bind(r, 41676)), '@site/docs/componenten/skip-link/index.mdx', 41676], '6a2f4d46': [() => r.e(59794).then(r.t.bind(r, 59369, 19)), '~blog/default/en-blog-tags-design-systems-0c3-list.json', 59369], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(18181)]).then(r.bind(r, 57290)), '@site/docs/componenten/form-field/index.mdx', 57290], '6ab13dac': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(83760)]).then(r.bind(r, 62604)), '@site/docs/componenten/form-field-partial-label/index.mdx', 62604], '6ad1359b': [() => Promise.all([r.e(40532), r.e(51755), r.e(43800)]).then(r.bind(r, 26461)), '@site/docs/richtlijnen/formulieren/questions.mdx', 26461], '6b7d4ee0': [() => r.e(10093).then(r.bind(r, 50656)), '@site/docs/richtlijnen/introductie.md', 50656], '6c269cf8': [() => Promise.all([r.e(40532), r.e(47027), r.e(51755), r.e(22305), r.e(12356)]).then(r.bind(r, 40592)), '@site/src/pages/contrast/index.tsx', 40592], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 3483)), '@site/docs/handboek/design-tokens/README.mdx', 3483], '6dba794c': [() => r.e(13961).then(r.t.bind(r, 57040, 19)), '~blog/default/en-blog-tags-designers-2a7.json', 57040], '6e114b37': [() => r.e(31906).then(r.bind(r, 3398)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 3398], '6f323067': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(17768)]).then(r.bind(r, 93672)), '@site/docs/componenten/form-field-partial/index.mdx', 93672], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 38864)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 38864], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(72755)]).then(r.bind(r, 13038)), '@site/docs/componenten/heading/index.mdx', 13038], '6fdf8dbf': [() => r.e(20940).then(r.bind(r, 86951)), '@site/docs/wcag/4.1.1.mdx', 86951], '707334e0': [() => r.e(44136).then(r.bind(r, 57193)), '@site/docs/richtlijnen/stijl/iconen.md', 57193], '70ebfaef': [() => r.e(33728).then(r.bind(r, 21340)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 21340], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 47056)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 47056], '70fe0045': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(97979)]).then(r.bind(r, 17687)), '@site/docs/componenten/textarea/index.mdx', 17687], '7290f823': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44275)]).then(r.bind(r, 72934)), '@site/docs/componenten/alert-dialog/index.mdx', 72934], '72af1482': [() => r.e(37923).then(r.bind(r, 76476)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 76476], '72b0d195': [() => r.e(29396).then(r.bind(r, 58781)), '@site/docs/open-source/cc0.md', 58781], '73bf6027': [() => r.e(96103).then(r.bind(r, 34491)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 34491], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(6526)]).then(r.bind(r, 26493)), '@site/docs/handboek/developer/03-thema-maken.mdx', 26493], 77321757: [() => r.e(70325).then(r.bind(r, 28684)), '@site/docs/handboek/designer/voorbeeld-thema.md', 28684], '77bf2607': [() => r.e(61472).then(r.bind(r, 10036)), '@site/docs/project/faq.mdx', 10036], '7a777bcb': [() => r.e(87782).then(r.t.bind(r, 10958, 19)), '~docs/default/category-en-community-category-community-69b.json', 10958], '7af3a6ef': [() => Promise.all([r.e(40532), r.e(51755), r.e(43411)]).then(r.bind(r, 47680)), '@site/docs/richtlijnen/formulieren/confirmation.mdx', 47680], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(3693)]).then(r.bind(r, 83374)), '@site/docs/componenten/blockquote/index.mdx', 83374], '7bab27bf': [() => r.e(71853).then(r.t.bind(r, 72676, 19)), '~blog/default/en-blog-tags-designers-2a7-list.json', 72676], '7c4f6831': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(71337)]).then(r.bind(r, 95615)), '@site/docs/componenten/sub-heading/index.mdx', 95615], '7ca6903f': [() => r.e(84373).then(r.bind(r, 4366)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 4366], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(24366)]).then(r.bind(r, 20278)), '@site/docs/componenten/radio-group/index.mdx', 20278], '7e0bd177': [() => r.e(2452).then(r.t.bind(r, 58378, 19)), '~blog/default/en-blog-tags-update-b0c-list.json', 58378], '7e11c81b': [() => r.e(56388).then(r.t.bind(r, 83299, 19)), '~blog/default/en-blog-tags-werkgroepen-866.json', 83299], '7e20bedc': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(39783)]).then(r.bind(r, 62184)), '@site/docs/componenten/tabs/index.mdx', 62184], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 33748)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 33748], '7faf29d7': [() => r.e(53200).then(r.t.bind(r, 44575, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a-list.json', 44575], '80bad7c2': [() => r.e(41368).then(r.bind(r, 61762)), '@site/blog/2024/20240322-design-open-dag.md', 61762], '80c19b87': [() => r.e(9351).then(r.t.bind(r, 1702, 19)), '~blog/default/en-blog-tags-figma-431.json', 1702], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '8165282b': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(49619)]).then(r.bind(r, 51176)), '@site/docs/componenten/text-input/index.mdx', 51176], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 41203)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 41203], '845a118e': [() => r.e(81213).then(r.bind(r, 50209)), '@site/docs/community/events/design-systems-week-2023/index.md', 50209], '861e17e8': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(43396)]).then(r.bind(r, 75494)), '@site/docs/componenten/definition-list/index.mdx', 75494], '86c1b350': [() => r.e(88202).then(r.t.bind(r, 7862, 19)), '~blog/default/en-blog-tags-formulieren-89f.json', 7862], '893094ee': [() => r.e(17906).then(r.t.bind(r, 46988, 19)), '~blog/default/en-blog-tags-componenten-63a-list.json', 46988], '897f202a': [() => r.e(81700).then(r.bind(r, 38883)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 38883], '89a96570': [() => r.e(77754).then(r.bind(r, 38946)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 38946], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(87034)]).then(r.bind(r, 42717)), '@site/docs/componenten/file-input/index.mdx', 42717], '8b659173': [() => r.e(30217).then(r.bind(r, 58648)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 58648], '8baef6f7': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(21229)]).then(r.bind(r, 21744)), '@site/docs/componenten/icon/index.mdx', 21744], '8de5412f': [() => r.e(8557).then(r.bind(r, 24704)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 24704], '8df97ee5': [() => r.e(52143).then(r.t.bind(r, 85280, 19)), '~blog/default/en-blog-tags-architectuur-246.json', 85280], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(79947)]).then(r.bind(r, 99960)), '@site/docs/componenten/number-badge/index.mdx', 99960], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 66574)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 66574], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(3578)]).then(r.bind(r, 3049)), '@site/docs/componenten/heading-3/index.mdx', 3049], '8fc68f72': [() => r.e(48549).then(r.t.bind(r, 36288, 19)), '~blog/default/en-blog-tags-word-press-ee5-list.json', 36288], '90f10f11': [() => Promise.all([r.e(40532), r.e(51755), r.e(41915)]).then(r.bind(r, 509)), '@site/docs/richtlijnen/formulieren/links.mdx', 509], '91059c25': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(61057)]).then(r.bind(r, 95788)), '@site/docs/componenten/heading-6/index.mdx', 95788], '9186edf4': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20994)]).then(r.bind(r, 99835)), '@site/docs/componenten/card-as-link/index.mdx', 99835], '91ad73c4': [() => r.e(94299).then(r.bind(r, 84151)), '@site/docs/wcag/0-introduction.mdx', 84151], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88016)]).then(r.bind(r, 39051)), '@site/docs/componenten/checkbox-group/index.mdx', 39051], '920ddf01': [() => r.e(82184).then(r.bind(r, 11270)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 11270], '9228e550': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54291)]).then(r.bind(r, 32254)), '@site/docs/componenten/password-input/index.mdx', 32254], '92e5e01e': [() => r.e(68536).then(r.bind(r, 85771)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 85771], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 59008)), '@site/docs/handboek/developer/01-aan-de-slag.md', 59008], '94b6170a': [() => r.e(95250).then(r.bind(r, 81914)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 81914], '94c4067d': [() => r.e(38352).then(r.bind(r, 6141)), '@site/docs/wcag/1.3.1.mdx', 6141], '94d55c70': [() => r.e(78508).then(r.bind(r, 73790)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 73790], '94dc40b0': [() => r.e(42423).then(r.t.bind(r, 67139, 19)), '~docs/default/category-en-community-category-developer-open-hour-ece.json', 67139], 95312783: [() => Promise.all([r.e(40532), r.e(51755), r.e(15220)]).then(r.bind(r, 67286)), '@site/docs/richtlijnen/formulieren/visual-design.mdx', 67286], '95a20731': [() => r.e(1607).then(r.t.bind(r, 20030, 19)), '~docs/default/category-en-handboek-category-componenten-bijdragen-ede.json', 20030], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 55986)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 55986], '9764e22e': [() => r.e(9336).then(r.bind(r, 17350)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 17350], '98a78e5e': [() => r.e(44455).then(r.bind(r, 10962)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 10962], '9b2e9553': [() => r.e(85063).then(r.bind(r, 3561)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 3561], '9b74bec5': [() => r.e(88176).then(r.t.bind(r, 24652, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6.json', 24652], '9bdd22eb': [() => r.e(92253).then(r.t.bind(r, 55803, 19)), '~blog/default/en-blog-tags-tags-c25.json', 55803], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 57321)), '@site/docs/handboek/developer/02-architectuur.md', 57321], '9c510eeb': [() => r.e(834).then(r.t.bind(r, 47452, 19)), '~blog/default/en-blog-tags-word-press-ee5.json', 47452], '9e2ab78b': [() => r.e(2626).then(r.t.bind(r, 62988, 19)), '~docs/default/category-en-project-category-project-ce0.json', 62988], '9e4087bc': [() => r.e(53608).then(r.bind(r, 59193)), '@theme/BlogArchivePage', 59193], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15739)]).then(r.bind(r, 66419)), '@site/docs/componenten/heading-5/index.mdx', 66419], '9f18257a': [() => r.e(61408).then(r.t.bind(r, 36766, 19)), '~docs/default/category-en-community-category-events-42b.json', 36766], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 52008)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 52008], '9f867b5d': [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(12487)]).then(r.bind(r, 74065)), '@site/docs/componenten/README.mdx', 74065], a2514f03: [() => r.e(51794).then(r.t.bind(r, 95669, 19)), '~blog/default/en-blog-tags-figma-431-list.json', 95669], a2bb2b83: [() => r.e(13575).then(r.t.bind(r, 36093, 19)), '~blog/default/en-blog-tags-developers-6ee-list.json', 36093], a3332bc9: [() => r.e(85303).then(r.bind(r, 3617)), '@site/blog/2024/20240701-meerdere-producten.md?truncated=true', 3617], a52685f4: [() => r.e(88152).then(r.bind(r, 99567)), '@site/docs/wcag/1.3.5.mdx', 99567], a55f7ab7: [() => r.e(82714).then(r.bind(r, 94793)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 94793], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(47027), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a7537d50: [() => Promise.all([r.e(40532), r.e(51755), r.e(53626)]).then(r.bind(r, 42998)), '@site/docs/richtlijnen/formulieren/autocomplete.mdx', 42998], a77e5ea3: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(76401)]).then(r.bind(r, 24941)), '@site/docs/componenten/accordion/index.mdx', 24941], a792b491: [() => r.e(90623).then(r.t.bind(r, 20675, 19)), '~blog/default/en-blog-tags-design-systems-0c3.json', 20675], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 66045)), '@theme/DocVersionRoot', 66045], a7f84bbe: [() => r.e(58803).then(r.bind(r, 86017)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 86017], a81e9677: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(44921)]).then(r.bind(r, 65807)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 65807], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 79698)), '@theme/DocRoot', 79698], a9493cdf: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(92532)]).then(r.bind(r, 42931)), '@site/docs/componenten/form-field-option-label/index.mdx', 42931], aa8a543f: [() => Promise.all([r.e(40532), r.e(51755), r.e(77057)]).then(r.bind(r, 64004)), '@site/docs/richtlijnen/formulieren/buttons.mdx', 64004], ac66737c: [() => r.e(34838).then(r.bind(r, 81017)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 81017], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 76001)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 76001], ace6628c: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(83373)]).then(r.bind(r, 4869)), '@site/docs/componenten/calendar/index.mdx', 4869], ad9d479a: [() => Promise.all([r.e(47027), r.e(43430), r.e(22746)]).then(r.bind(r, 87370)), '@site/docs/community/sluit-je-aan.mdx', 87370], adb328b9: [() => r.e(91344).then(r.bind(r, 30887)), '@site/docs/community/sluit-je-aan-success.mdx', 30887], adc7d54a: [() => Promise.all([r.e(47027), r.e(43430), r.e(90134)]).then(r.bind(r, 41487)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 41487], aeaf35c2: [() => r.e(53345).then(r.bind(r, 1429)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 1429], af5d61d0: [() => r.e(96753).then(r.t.bind(r, 39402, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834.json', 39402], b0a486e7: [() => r.e(74602).then(r.t.bind(r, 69330, 19)), '~docs/default/category-en-community-category-design-open-hour-15e.json', 69330], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(47027), r.e(48595)]).then(r.bind(r, 66869)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 66869], b171e401: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(67398)]).then(r.bind(r, 57266)), '@site/docs/componenten/switch/index.mdx', 57266], b1e76af7: [() => Promise.all([r.e(40532), r.e(51755), r.e(64796)]).then(r.bind(r, 91916)), '@site/docs/richtlijnen/formulieren/when-which.mdx', 91916], b24d1ef2: [() => r.e(43753).then(r.bind(r, 21463)), '@site/docs/wcag/1.1.1.mdx', 21463], b2991567: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(36918)]).then(r.bind(r, 7337)), '@site/docs/componenten/invalid-form-alert/index.mdx', 7337], b3531ef4: [() => r.e(36118).then(r.t.bind(r, 43501, 19)), '~blog/default/en-blog-tags-werkgroepen-866-list.json', 43501], b4150b56: [() => Promise.all([r.e(40532), r.e(43430), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b46e901f: [() => r.e(23116).then(r.t.bind(r, 29579, 19)), '~docs/default/category-en-handboek-category-voor-developers-794.json', 29579], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(34492)]).then(r.bind(r, 65123)), '@site/docs/componenten/progress-bar/index.mdx', 65123], b50de158: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(12505)]).then(r.bind(r, 41697)), '@site/docs/componenten/side-navigation/index.mdx', 41697], b56159c8: [() => r.e(66360).then(r.bind(r, 78111)), '@site/docs/community/wie-doet-mee.mdx', 78111], b56ace87: [() => r.e(62736).then(r.bind(r, 50775)), '@site/docs/wcag/3.3.4.mdx', 50775], b68f03f7: [() => r.e(815).then(r.bind(r, 47585)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 47585], b70cd504: [() => r.e(36546).then(r.bind(r, 42316)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 42316], b729a1a1: [() => r.e(29386).then(r.bind(r, 2558)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 2558], b75db01c: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(46536)]).then(r.bind(r, 85099)), '@site/docs/componenten/modal-dialog/index.mdx', 85099], b83fe955: [() => Promise.all([r.e(40532), r.e(51755), r.e(78883)]).then(r.bind(r, 21429)), '@site/docs/richtlijnen/formulieren/errors.mdx', 21429], b8bffd88: [() => r.e(65391).then(r.bind(r, 8570)), '@site/docs/handboek/designer/README.md', 8570], ba4a9952: [() => r.e(2850).then(r.bind(r, 74819)), '@site/docs/community/events/developer-open-hour/developer-open-hour.mdx', 74819], bc199175: [() => r.e(96222).then(r.bind(r, 68198)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 68198], bc2d69ea: [() => r.e(85634).then(r.bind(r, 70966)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 70966], bf14fce1: [() => r.e(15470).then(r.bind(r, 17716)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 17716], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 45999)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 45999], bf8a7bac: [() => r.e(56596).then(r.bind(r, 4296)), '@site/docs/community/events/estafettemodeldag-success.mdx', 4296], c15f67bc: [() => r.e(39810).then(r.bind(r, 52218)), '@site/docs/community/events/design-open-dag-success.mdx', 52218], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 25153)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 25153], c20168b0: [() => r.e(68e3).then(r.t.bind(r, 62945, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3-list.json', 62945], c2b84a26: [() => r.e(53367).then(r.bind(r, 31300)), '@site/docs/wcag/3.2.2.mdx', 31300], c3dc88b7: [() => r.e(36194).then(r.bind(r, 81825)), '@site/docs/wcag/3.2.1.mdx', 81825], c51cb369: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(90258)]).then(r.bind(r, 47202)), '@site/docs/componenten/language-navigation/index.mdx', 47202], c651b2e8: [() => r.e(75386).then(r.bind(r, 3254)), '@site/docs/project/nieuwsbrief.mdx', 3254], c6b96a0f: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20911)]).then(r.bind(r, 47242)), '@site/docs/componenten/non-modal-dialog/index.mdx', 47242], c776d6ea: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(85)]).then(r.bind(r, 77283)), '@site/docs/componenten/heading-4/index.mdx', 77283], c8ac2561: [() => r.e(67586).then(r.bind(r, 71732)), '@site/docs/handboek/naamgeving.mdx', 71732], c8c68184: [() => Promise.all([r.e(40532), r.e(51755), r.e(48373)]).then(r.bind(r, 55213)), '@site/docs/richtlijnen/formulieren/help-the-user.mdx', 55213], c91a40d5: [() => Promise.all([r.e(47027), r.e(43430), r.e(11839)]).then(r.bind(r, 83545)), '@site/docs/community/events/developer-open-hour/aanmelden.mdx', 83545], c9609a68: [() => r.e(72822).then(r.bind(r, 72641)), '@site/blog/2024/20240701-meerdere-producten.md', 72641], c9bf1512: [() => r.e(6703).then(r.t.bind(r, 18003, 19)), '~blog/default/en-blog-tags-logius-6b8.json', 18003], ca36df4d: [() => r.e(60917).then(r.bind(r, 46167)), '@site/docs/CHANGELOG.md', 46167], ca82639c: [() => r.e(90266).then(r.t.bind(r, 24068, 19)), '~blog/default/en-blog-tags-developers-6ee.json', 24068], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 2881)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 2881], cc7e1584: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(36200)]).then(r.bind(r, 31603)), '@site/docs/componenten/strong/index.mdx', 31603], ccc49370: [() => Promise.all([r.e(40532), r.e(11009), r.e(46103)]).then(r.bind(r, 24910)), '@theme/BlogPostPage', 24910], cd3c7377: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(25425)]).then(r.bind(r, 69645)), '@site/docs/componenten/form-field-description/index.mdx', 69645], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 73222)), '@site/docs/community/events/design-systems-week-2022.mdx', 73222], ce7b85cb: [() => r.e(37498).then(r.bind(r, 78283)), '@site/docs/handboek/organisatie/meedoen.md', 78283], ced44f18: [() => Promise.all([r.e(47027), r.e(43430), r.e(81484)]).then(r.bind(r, 58308)), '@site/docs/community/events/design-open-dag.mdx', 58308], d0b753ca: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(47531)]).then(r.bind(r, 27857)), '@site/docs/componenten/radio-button/index.mdx', 27857], d19ee383: [() => r.e(95282).then(r.bind(r, 99510)), '@site/docs/wcag/2.4.6.mdx', 99510], d3c1b80a: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(58441)]).then(r.bind(r, 93891)), '@site/docs/componenten/avatar/index.mdx', 93891], d3deb5db: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(88021)]).then(r.bind(r, 31563)), '@site/docs/componenten/toggletip/index.mdx', 31563], d4552b9e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(15403)]).then(r.bind(r, 4248)), '@site/docs/componenten/form-field-error-message/index.mdx', 4248], d459b62b: [() => r.e(23668).then(r.t.bind(r, 73103, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-voor-stijl-652.json', 73103], d467e203: [() => r.e(76902).then(r.bind(r, 20793)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 20793], d5f36106: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(16833)]).then(r.bind(r, 53412)), '@site/docs/componenten/status-badge/index.mdx', 53412], d647d050: [() => r.e(26801).then(r.t.bind(r, 71148, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa.json', 71148], d9284525: [() => r.e(54836).then(r.bind(r, 5924)), '@site/docs/wcag/2.4.10.mdx', 5924], da2da55d: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(95102)]).then(r.bind(r, 3795)), '@site/docs/componenten/heading-group/index.mdx', 3795], da8aeb86: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(54472)]).then(r.bind(r, 94480)), '@site/docs/componenten/navigation-bar/index.mdx', 94480], db7926ce: [() => r.e(21177).then(r.t.bind(r, 35288, 19)), '~docs/default/category-en-handboek-category-handboek-bd8.json', 35288], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 72696)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 72696], dce08b4f: [() => r.e(37684).then(r.t.bind(r, 39096, 19)), '~blog/default/en-blog-tags-gebruikersonderzoeken-7e1.json', 39096], dd06f6af: [() => r.e(18148).then(r.bind(r, 68444)), '@site/docs/voorbeelden/README.md', 68444], dd706f12: [() => r.e(57874).then(r.t.bind(r, 81729, 19)), '~blog/default/en-blog-tags-update-b0c.json', 81729], ddf35722: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(68424)]).then(r.bind(r, 44132)), '@site/docs/componenten/form-field-label/index.mdx', 44132], df203c0f: [() => r.e(99924).then(r.bind(r, 80878)), '@theme/DocTagDocListPage', 80878], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 9226)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 9226], e07f5d94: [() => r.e(67833).then(r.bind(r, 35162)), '@site/docs/richtlijnen/stijl/ruimte.md', 35162], e12b15f5: [() => Promise.all([r.e(40532), r.e(77913), r.e(40125)]).then(r.bind(r, 92615)), '@site/docs/wcag/3.1.2.mdx', 92615], e21395b4: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(48239)]).then(r.bind(r, 38191)), '@site/docs/componenten/notification-banner/index.mdx', 38191], e3b51539: [() => r.e(69592).then(r.bind(r, 19317)), '@site/docs/handboek/developer/07-componenten-maken.md', 19317], e59d1036: [() => r.e(38934).then(r.bind(r, 20821)), '@site/docs/voorbeelden/onderzoek/README.md', 20821], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(41990)]).then(r.bind(r, 6818)), '@site/docs/componenten/separator/index.mdx', 6818], e73f9950: [() => r.e(58021).then(r.t.bind(r, 80905, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5-list.json', 80905], e756447e: [() => r.e(83516).then(r.bind(r, 81326)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 81326], e94ed988: [() => r.e(54171).then(r.bind(r, 18479)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 18479], e98c6ca0: [() => r.e(13538).then(r.bind(r, 96345)), '@site/docs/wcag/3.3.1.mdx', 96345], e9b2227f: [() => r.e(71639).then(r.bind(r, 64808)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 64808], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 18170)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 18170], ed74afc1: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(19552)]).then(r.bind(r, 81127)), '@site/docs/componenten/select/index.mdx', 81127], f15b6573: [() => r.e(74605).then(r.bind(r, 5569)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 5569], f1833817: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(43166)]).then(r.bind(r, 29943)), '@site/docs/componenten/table/index.mdx', 29943], f19e5f41: [() => r.e(95594).then(r.bind(r, 45005)), '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', 45005], f1c1d91e: [() => r.e(20550).then(r.bind(r, 19387)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 19387], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f36b0a83: [() => r.e(90281).then(r.bind(r, 92291)), '@site/docs/wcag/2.4.2.mdx', 92291], f42b87d8: [() => r.e(12263).then(r.t.bind(r, 27993, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-voor-formulieren-86c.json', 27993], f52fcd14: [() => Promise.all([r.e(40532), r.e(51755), r.e(28370)]).then(r.bind(r, 99849)), '@site/docs/richtlijnen/formulieren/multistep.mdx', 99849], f5daaf40: [() => r.e(47587).then(r.bind(r, 14095)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 14095], f5dc78b8: [() => r.e(98625).then(r.bind(r, 79969)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 79969], f5f3cece: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(32652)]).then(r.bind(r, 47095)), '@site/docs/componenten/spinner/index.mdx', 47095], f633a06a: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(85270)]).then(r.bind(r, 42438)), '@site/docs/componenten/link-list/index.mdx', 42438], f67ebaad: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(25507)]).then(r.bind(r, 30283)), '@site/docs/componenten/video/index.mdx', 30283], f6cbeee1: [() => r.e(12535).then(r.t.bind(r, 74641, 19)), '~blog/default/en-blog-archive-10f.json', 74641], fba6c282: [() => r.e(4364).then(r.t.bind(r, 99501, 19)), '~blog/default/en-blog-038.json', 99501], fbf7ea66: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(20322)]).then(r.bind(r, 22422)), '@site/docs/componenten/case-card/index.mdx', 22422], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(2930)]).then(r.bind(r, 73055)), '@site/docs/componenten/progress-list/index.mdx', 73055], fd2458ef: [() => r.e(39680).then(r.bind(r, 63150)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 63150], fd87590a: [() => r.e(44603).then(r.t.bind(r, 25697, 19)), '~blog/default/en-blog-tags-meta-594.json', 25697], fe9a39bd: [() => r.e(35959).then(r.bind(r, 92977)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 92977], ff07fdf2: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(75221)]).then(r.bind(r, 79489)), '@site/docs/componenten/unordered-list/index.mdx', 79489], ff0d970f: [() => r.e(99605).then(r.bind(r, 98431)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 98431], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 2073)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 2073], ffcf9766: [() => Promise.all([r.e(40532), r.e(47027), r.e(45016), r.e(58420), r.e(7869)]).then(r.bind(r, 47671)), '@site/docs/componenten/number-input/index.mdx', 47671] };
    var i = r(52676);
    function l(e) {
     let { error: t, retry: r, pastDelay: n } = e;
@@ -93,316 +93,316 @@
     );
    }
    const h = [
-    { path: '/bingo/', component: d('/bingo/', '32d'), exact: !0 },
-    { path: '/bingo/voorbeeld-met-fouten-1', component: d('/bingo/voorbeeld-met-fouten-1', '382'), exact: !0 },
-    { path: '/bingo/voorbeeld-met-fouten-2', component: d('/bingo/voorbeeld-met-fouten-2', '73d'), exact: !0 },
-    { path: '/blog', component: d('/blog', 'e28'), exact: !0 },
-    { path: '/blog/archive', component: d('/blog/archive', 'f70'), exact: !0 },
-    { path: '/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', '9ba'), exact: !0 },
-    { path: '/blog/community-blocks', component: d('/blog/community-blocks', '20f'), exact: !0 },
-    { path: '/blog/community-online-formulieren', component: d('/blog/community-online-formulieren', '2d3'), exact: !0 },
-    { path: '/blog/de-mijlpalen-van-2022', component: d('/blog/de-mijlpalen-van-2022', '802'), exact: !0 },
-    { path: '/blog/design-open-dag', component: d('/blog/design-open-dag', '18d'), exact: !0 },
-    { path: '/blog/design-systems-in-het-buitenland-6-lessen', component: d('/blog/design-systems-in-het-buitenland-6-lessen', 'b57'), exact: !0 },
-    { path: '/blog/design-systems-week-2023-komt-eraan', component: d('/blog/design-systems-week-2023-komt-eraan', 'a8c'), exact: !0 },
-    { path: '/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'b32'), exact: !0 },
-    { path: '/blog/een-design-system-meerdere-producten', component: d('/blog/een-design-system-meerdere-producten', '522'), exact: !0 },
-    { path: '/blog/een-overheid-practice-what-you-preach', component: d('/blog/een-overheid-practice-what-you-preach', 'aa1'), exact: !0 },
-    { path: '/blog/gebruikerstest-ondernemers-den-haag', component: d('/blog/gebruikerstest-ondernemers-den-haag', '654'), exact: !0 },
-    { path: '/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', '932'), exact: !0 },
-    { path: '/blog/innovatiebudget-voor-nl-design-system', component: d('/blog/innovatiebudget-voor-nl-design-system', '07b'), exact: !0 },
-    { path: '/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '25a'), exact: !0 },
-    { path: '/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/blog/kick-off-werkgroepen-van-het-nl-design-system', '222'), exact: !0 },
-    { path: '/blog/licentiekeuze-nl-design-system', component: d('/blog/licentiekeuze-nl-design-system', '36b'), exact: !0 },
-    { path: '/blog/meerdere-manieren-contact', component: d('/blog/meerdere-manieren-contact', '4ed'), exact: !0 },
-    { path: '/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'bd7'), exact: !0 },
-    { path: '/blog/nl-design-system-in-2021', component: d('/blog/nl-design-system-in-2021', 'b94'), exact: !0 },
-    { path: '/blog/nl-design-system-zelfstandig-verder', component: d('/blog/nl-design-system-zelfstandig-verder', '916'), exact: !0 },
-    { path: '/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/blog/over-figma-als-keuze-voor-het-nl-design-system', 'b7d'), exact: !0 },
-    { path: '/blog/spacing-tokens', component: d('/blog/spacing-tokens', '178'), exact: !0 },
-    { path: '/blog/tags', component: d('/blog/tags', 'f94'), exact: !0 },
-    { path: '/blog/tags/architectuur', component: d('/blog/tags/architectuur', '219'), exact: !0 },
-    { path: '/blog/tags/buitenland', component: d('/blog/tags/buitenland', '40f'), exact: !0 },
-    { path: '/blog/tags/componenten', component: d('/blog/tags/componenten', '1db'), exact: !0 },
-    { path: '/blog/tags/contentrichtlijnen', component: d('/blog/tags/contentrichtlijnen', '784'), exact: !0 },
-    { path: '/blog/tags/design-systems', component: d('/blog/tags/design-systems', '075'), exact: !0 },
-    { path: '/blog/tags/design-systems-week', component: d('/blog/tags/design-systems-week', 'e88'), exact: !0 },
-    { path: '/blog/tags/design-tokens', component: d('/blog/tags/design-tokens', '015'), exact: !0 },
-    { path: '/blog/tags/designers', component: d('/blog/tags/designers', 'c39'), exact: !0 },
-    { path: '/blog/tags/developers', component: d('/blog/tags/developers', 'c7b'), exact: !0 },
-    { path: '/blog/tags/een-overheid', component: d('/blog/tags/een-overheid', '3b2'), exact: !0 },
-    { path: '/blog/tags/estafettemodel', component: d('/blog/tags/estafettemodel', 'f65'), exact: !0 },
-    { path: '/blog/tags/figma', component: d('/blog/tags/figma', '7e0'), exact: !0 },
-    { path: '/blog/tags/formulieren', component: d('/blog/tags/formulieren', '891'), exact: !0 },
-    { path: '/blog/tags/gebruiker-centraal', component: d('/blog/tags/gebruiker-centraal', 'e1e'), exact: !0 },
-    { path: '/blog/tags/gebruikersonderzoeken', component: d('/blog/tags/gebruikersonderzoeken', '8d7'), exact: !0 },
-    { path: '/blog/tags/gebruikerstesten', component: d('/blog/tags/gebruikerstesten', '5ff'), exact: !0 },
-    { path: '/blog/tags/lettertype', component: d('/blog/tags/lettertype', 'e97'), exact: !0 },
-    { path: '/blog/tags/logius', component: d('/blog/tags/logius', 'ef0'), exact: !0 },
-    { path: '/blog/tags/meta', component: d('/blog/tags/meta', 'c3b'), exact: !0 },
-    { path: '/blog/tags/mijlpalen', component: d('/blog/tags/mijlpalen', '6cd'), exact: !0 },
-    { path: '/blog/tags/nl-design-system', component: d('/blog/tags/nl-design-system', 'd2e'), exact: !0 },
-    { path: '/blog/tags/richtlijnen', component: d('/blog/tags/richtlijnen', 'ea4'), exact: !0 },
-    { path: '/blog/tags/toegankelijkheid', component: d('/blog/tags/toegankelijkheid', '5d0'), exact: !0 },
-    { path: '/blog/tags/update', component: d('/blog/tags/update', 'e38'), exact: !0 },
-    { path: '/blog/tags/werkgroepen', component: d('/blog/tags/werkgroepen', '7fb'), exact: !0 },
-    { path: '/blog/tags/word-press', component: d('/blog/tags/word-press', 'c96'), exact: !0 },
-    { path: '/blog/toegankelijke-foutmeldingen-formulieren', component: d('/blog/toegankelijke-foutmeldingen-formulieren', 'dc6'), exact: !0 },
-    { path: '/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', 'ac9'), exact: !0 },
-    { path: '/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e3f'), exact: !0 },
-    { path: '/blog/update-nl-design-system', component: d('/blog/update-nl-design-system', 'd7c'), exact: !0 },
-    { path: '/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', '925'), exact: !0 },
-    { path: '/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '3b9'), exact: !0 },
-    { path: '/blog/wmebv-gebruikerstesten', component: d('/blog/wmebv-gebruikerstesten', '2ec'), exact: !0 },
-    { path: '/contrast/', component: d('/contrast/', '6e5'), exact: !0 },
-    { path: '/search', component: d('/search', 'c7a'), exact: !0 },
-    { path: '/', component: d('/', 'cab'), exact: !0 },
+    { path: '/en/bingo/', component: d('/en/bingo/', '4ac'), exact: !0 },
+    { path: '/en/bingo/voorbeeld-met-fouten-1', component: d('/en/bingo/voorbeeld-met-fouten-1', 'dab'), exact: !0 },
+    { path: '/en/bingo/voorbeeld-met-fouten-2', component: d('/en/bingo/voorbeeld-met-fouten-2', 'd09'), exact: !0 },
+    { path: '/en/blog', component: d('/en/blog', '607'), exact: !0 },
+    { path: '/en/blog/archive', component: d('/en/blog/archive', '170'), exact: !0 },
+    { path: '/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', 'eff'), exact: !0 },
+    { path: '/en/blog/community-blocks', component: d('/en/blog/community-blocks', 'd61'), exact: !0 },
+    { path: '/en/blog/community-online-formulieren', component: d('/en/blog/community-online-formulieren', 'c2a'), exact: !0 },
+    { path: '/en/blog/de-mijlpalen-van-2022', component: d('/en/blog/de-mijlpalen-van-2022', '8f1'), exact: !0 },
+    { path: '/en/blog/design-open-dag', component: d('/en/blog/design-open-dag', '16e'), exact: !0 },
+    { path: '/en/blog/design-systems-in-het-buitenland-6-lessen', component: d('/en/blog/design-systems-in-het-buitenland-6-lessen', '5c7'), exact: !0 },
+    { path: '/en/blog/design-systems-week-2023-komt-eraan', component: d('/en/blog/design-systems-week-2023-komt-eraan', '3af'), exact: !0 },
+    { path: '/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'd27'), exact: !0 },
+    { path: '/en/blog/een-design-system-meerdere-producten', component: d('/en/blog/een-design-system-meerdere-producten', '83a'), exact: !0 },
+    { path: '/en/blog/een-overheid-practice-what-you-preach', component: d('/en/blog/een-overheid-practice-what-you-preach', '298'), exact: !0 },
+    { path: '/en/blog/gebruikerstest-ondernemers-den-haag', component: d('/en/blog/gebruikerstest-ondernemers-den-haag', 'ed2'), exact: !0 },
+    { path: '/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', 'e52'), exact: !0 },
+    { path: '/en/blog/innovatiebudget-voor-nl-design-system', component: d('/en/blog/innovatiebudget-voor-nl-design-system', 'a92'), exact: !0 },
+    { path: '/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '5a9'), exact: !0 },
+    { path: '/en/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/en/blog/kick-off-werkgroepen-van-het-nl-design-system', '75e'), exact: !0 },
+    { path: '/en/blog/licentiekeuze-nl-design-system', component: d('/en/blog/licentiekeuze-nl-design-system', '322'), exact: !0 },
+    { path: '/en/blog/meerdere-manieren-contact', component: d('/en/blog/meerdere-manieren-contact', '7b8'), exact: !0 },
+    { path: '/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'b74'), exact: !0 },
+    { path: '/en/blog/nl-design-system-in-2021', component: d('/en/blog/nl-design-system-in-2021', 'bbc'), exact: !0 },
+    { path: '/en/blog/nl-design-system-zelfstandig-verder', component: d('/en/blog/nl-design-system-zelfstandig-verder', 'cf9'), exact: !0 },
+    { path: '/en/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/en/blog/over-figma-als-keuze-voor-het-nl-design-system', '750'), exact: !0 },
+    { path: '/en/blog/spacing-tokens', component: d('/en/blog/spacing-tokens', '11e'), exact: !0 },
+    { path: '/en/blog/tags', component: d('/en/blog/tags', '8bb'), exact: !0 },
+    { path: '/en/blog/tags/architectuur', component: d('/en/blog/tags/architectuur', '93f'), exact: !0 },
+    { path: '/en/blog/tags/buitenland', component: d('/en/blog/tags/buitenland', 'c08'), exact: !0 },
+    { path: '/en/blog/tags/componenten', component: d('/en/blog/tags/componenten', '39e'), exact: !0 },
+    { path: '/en/blog/tags/contentrichtlijnen', component: d('/en/blog/tags/contentrichtlijnen', '267'), exact: !0 },
+    { path: '/en/blog/tags/design-systems', component: d('/en/blog/tags/design-systems', 'acf'), exact: !0 },
+    { path: '/en/blog/tags/design-systems-week', component: d('/en/blog/tags/design-systems-week', '9a8'), exact: !0 },
+    { path: '/en/blog/tags/design-tokens', component: d('/en/blog/tags/design-tokens', 'c98'), exact: !0 },
+    { path: '/en/blog/tags/designers', component: d('/en/blog/tags/designers', '115'), exact: !0 },
+    { path: '/en/blog/tags/developers', component: d('/en/blog/tags/developers', '0b0'), exact: !0 },
+    { path: '/en/blog/tags/een-overheid', component: d('/en/blog/tags/een-overheid', '648'), exact: !0 },
+    { path: '/en/blog/tags/estafettemodel', component: d('/en/blog/tags/estafettemodel', 'a2f'), exact: !0 },
+    { path: '/en/blog/tags/figma', component: d('/en/blog/tags/figma', '407'), exact: !0 },
+    { path: '/en/blog/tags/formulieren', component: d('/en/blog/tags/formulieren', '011'), exact: !0 },
+    { path: '/en/blog/tags/gebruiker-centraal', component: d('/en/blog/tags/gebruiker-centraal', '6fa'), exact: !0 },
+    { path: '/en/blog/tags/gebruikersonderzoeken', component: d('/en/blog/tags/gebruikersonderzoeken', '92a'), exact: !0 },
+    { path: '/en/blog/tags/gebruikerstesten', component: d('/en/blog/tags/gebruikerstesten', 'fe0'), exact: !0 },
+    { path: '/en/blog/tags/lettertype', component: d('/en/blog/tags/lettertype', '982'), exact: !0 },
+    { path: '/en/blog/tags/logius', component: d('/en/blog/tags/logius', '31a'), exact: !0 },
+    { path: '/en/blog/tags/meta', component: d('/en/blog/tags/meta', '1b2'), exact: !0 },
+    { path: '/en/blog/tags/mijlpalen', component: d('/en/blog/tags/mijlpalen', '70a'), exact: !0 },
+    { path: '/en/blog/tags/nl-design-system', component: d('/en/blog/tags/nl-design-system', '684'), exact: !0 },
+    { path: '/en/blog/tags/richtlijnen', component: d('/en/blog/tags/richtlijnen', '3c7'), exact: !0 },
+    { path: '/en/blog/tags/toegankelijkheid', component: d('/en/blog/tags/toegankelijkheid', 'f80'), exact: !0 },
+    { path: '/en/blog/tags/update', component: d('/en/blog/tags/update', '651'), exact: !0 },
+    { path: '/en/blog/tags/werkgroepen', component: d('/en/blog/tags/werkgroepen', 'e31'), exact: !0 },
+    { path: '/en/blog/tags/word-press', component: d('/en/blog/tags/word-press', '87e'), exact: !0 },
+    { path: '/en/blog/toegankelijke-foutmeldingen-formulieren', component: d('/en/blog/toegankelijke-foutmeldingen-formulieren', '078'), exact: !0 },
+    { path: '/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', '3e3'), exact: !0 },
+    { path: '/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e9d'), exact: !0 },
+    { path: '/en/blog/update-nl-design-system', component: d('/en/blog/update-nl-design-system', 'fca'), exact: !0 },
+    { path: '/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', 'c4b'), exact: !0 },
+    { path: '/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '9ab'), exact: !0 },
+    { path: '/en/blog/wmebv-gebruikerstesten', component: d('/en/blog/wmebv-gebruikerstesten', '9d6'), exact: !0 },
+    { path: '/en/contrast/', component: d('/en/contrast/', 'dce'), exact: !0 },
+    { path: '/en/search', component: d('/en/search', '1e0'), exact: !0 },
+    { path: '/en/', component: d('/en/', 'b64'), exact: !0 },
     {
-     path: '/',
-     component: d('/', '214'),
+     path: '/en/',
+     component: d('/en/', 'dbb'),
      routes: [
       {
-       path: '/',
-       component: d('/', 'de6'),
+       path: '/en/',
+       component: d('/en/', '392'),
        routes: [
-        { path: '/tags', component: d('/tags', 'd7a'), exact: !0 },
-        { path: '/tags/community', component: d('/tags/community', 'e15'), exact: !0 },
+        { path: '/en/tags', component: d('/en/tags', '01c'), exact: !0 },
+        { path: '/en/tags/community', component: d('/en/tags/community', '1ff'), exact: !0 },
         {
-         path: '/',
-         component: d('/', '6b9'),
+         path: '/en/',
+         component: d('/en/', 'c66'),
          routes: [
-          { path: '/accordion', component: d('/accordion', 'a3b'), exact: !0, sidebar: 'componenten' },
-          { path: '/action-group', component: d('/action-group', 'e09'), exact: !0, sidebar: 'componenten' },
-          { path: '/alert', component: d('/alert', '16f'), exact: !0, sidebar: 'componenten' },
-          { path: '/alert-dialog', component: d('/alert-dialog', '9e5'), exact: !0, sidebar: 'componenten' },
-          { path: '/avatar', component: d('/avatar', 'ed9'), exact: !0, sidebar: 'componenten' },
-          { path: '/blockquote', component: d('/blockquote', '85f'), exact: !0, sidebar: 'componenten' },
-          { path: '/breadcrumb-navigation', component: d('/breadcrumb-navigation', 'd89'), exact: !0, sidebar: 'componenten' },
-          { path: '/button', component: d('/button', '7ed'), exact: !0, sidebar: 'componenten' },
-          { path: '/Calendar', component: d('/Calendar', '206'), exact: !0, sidebar: 'componenten' },
-          { path: '/card-as-link', component: d('/card-as-link', 'c7b'), exact: !0, sidebar: 'componenten' },
-          { path: '/case-card', component: d('/case-card', '92c'), exact: !0, sidebar: 'componenten' },
-          { path: '/CHANGELOG', component: d('/CHANGELOG', '756'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/checkbox', component: d('/checkbox', '8c2'), exact: !0, sidebar: 'componenten' },
-          { path: '/checkbox-group', component: d('/checkbox-group', 'a25'), exact: !0, sidebar: 'componenten' },
-          { path: '/coc', component: d('/coc', '1af'), exact: !0 },
-          { path: '/colofon', component: d('/colofon', 'ed3'), exact: !0 },
-          { path: '/community', component: d('/community', '42f'), exact: !0, sidebar: 'community' },
-          { path: '/community/design-open-dag/bedankt', component: d('/community/design-open-dag/bedankt', 'd56'), exact: !0 },
-          { path: '/community/estafettemodeldag/bedankt', component: d('/community/estafettemodeldag/bedankt', 'f60'), exact: !0 },
-          { path: '/community/events/estafettemodeldag', component: d('/community/events/estafettemodeldag', '5f2'), exact: !0, sidebar: 'community' },
-          { path: '/community/events/overzicht', component: d('/community/events/overzicht', 'acd'), exact: !0, sidebar: 'community' },
-          { path: '/community/sluit-je-aan', component: d('/community/sluit-je-aan', '00a'), exact: !0, sidebar: 'community' },
-          { path: '/community/sluit-je-aan/bedankt', component: d('/community/sluit-je-aan/bedankt', 'c5c'), exact: !0 },
-          { path: '/community/wie-doet-mee', component: d('/community/wie-doet-mee', 'd5c'), exact: !0, sidebar: 'community' },
-          { path: '/componenten/', component: d('/componenten/', '804'), exact: !0, sidebar: 'componenten' },
-          { path: '/data-badge', component: d('/data-badge', 'f88'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-input', component: d('/date-input', 'a49'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-input-group', component: d('/date-input-group', '428'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-picker', component: d('/date-picker', 'f04'), exact: !0, sidebar: 'componenten' },
-          { path: '/definition-list', component: d('/definition-list', 'fdd'), exact: !0, sidebar: 'componenten' },
-          { path: '/dot-badge', component: d('/dot-badge', 'f25'), exact: !0, sidebar: 'componenten' },
-          { path: '/drawer', component: d('/drawer', 'f81'), exact: !0, sidebar: 'componenten' },
-          { path: '/events/design-open-dag', component: d('/events/design-open-dag', 'c4d'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour', component: d('/events/design-open-hour', '08f'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour/aanmelden', component: d('/events/design-open-hour/aanmelden', 'a61'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour/aanmelden/bedankt', component: d('/events/design-open-hour/aanmelden/bedankt', '796'), exact: !0 },
-          { path: '/events/design-open-hour/overzicht', component: d('/events/design-open-hour/overzicht', '0f1'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week-2022', component: d('/events/design-systems-week-2022', '528'), exact: !0 },
-          { path: '/events/design-systems-week-2023', component: d('/events/design-systems-week-2023', '50d'), exact: !0 },
-          { path: '/events/design-systems-week-2023/en/program', component: d('/events/design-systems-week-2023/en/program', 'dc2'), exact: !0 },
-          { path: '/events/design-systems-week-2023/en/timetable', component: d('/events/design-systems-week-2023/en/timetable', '818'), exact: !0 },
-          { path: '/events/design-systems-week-2023/programma', component: d('/events/design-systems-week-2023/programma', 'b22'), exact: !0 },
-          { path: '/events/design-systems-week-2023/tijdschema', component: d('/events/design-systems-week-2023/tijdschema', '4c1'), exact: !0 },
-          { path: '/events/design-systems-week-2024', component: d('/events/design-systems-week-2024', '8f5'), exact: !0, sidebar: 'community' },
-          { path: '/events/developer-open-hour', component: d('/events/developer-open-hour', '572'), exact: !0, sidebar: 'community' },
-          { path: '/events/developer-open-hour/aanmelden', component: d('/events/developer-open-hour/aanmelden', '1f4'), exact: !0, sidebar: 'community' },
-          { path: '/events/developer-open-hour/aanmelden/bedankt', component: d('/events/developer-open-hour/aanmelden/bedankt', 'fb6'), exact: !0 },
-          { path: '/events/developer-open-hour/overzicht', component: d('/events/developer-open-hour/overzicht', '6d5'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat', component: d('/events/heartbeat', 'ee2'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/aanmelden', component: d('/events/heartbeat/aanmelden', 'ef9'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/aanmelden/bedankt', component: d('/events/heartbeat/aanmelden/bedankt', 'e99'), exact: !0 },
-          { path: '/events/heartbeat/overzicht', component: d('/events/heartbeat/overzicht', 'f94'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/videos', component: d('/events/heartbeat/videos', 'a37'), exact: !0, sidebar: 'community' },
-          { path: '/fieldset', component: d('/fieldset', 'a0d'), exact: !0, sidebar: 'componenten' },
-          { path: '/figure', component: d('/figure', '47b'), exact: !0, sidebar: 'componenten' },
-          { path: '/file-input', component: d('/file-input', 'e63'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field', component: d('/form-field', 'de8'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-checkbox-option', component: d('/form-field-checkbox-option', '53c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-description', component: d('/form-field-description', '1bd'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-error-message', component: d('/form-field-error-message', 'e1c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-label', component: d('/form-field-label', '31e'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-option-label', component: d('/form-field-option-label', '598'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-partial', component: d('/form-field-partial', '48c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-partial-label', component: d('/form-field-partial-label', '0e8'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-radio-option', component: d('/form-field-radio-option', '6ca'), exact: !0, sidebar: 'componenten' },
-          { path: '/handboek', component: d('/handboek', '198'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/candidate-stappenplan', component: d('/handboek/component-bijdragen/candidate-stappenplan', '0ad'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/community-stappenplan', component: d('/handboek/component-bijdragen/community-stappenplan', '83c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/definition-of-done', component: d('/handboek/component-bijdragen/definition-of-done', '690'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/handboek/component-bijdragen/hall-of-fame-stappenplan', '319'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/handboek/component-bijdragen/help-wanted-stappenplan', '7eb'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/overzicht', component: d('/handboek/component-bijdragen/overzicht', '6c2'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/design-tokens/', component: d('/handboek/design-tokens/', 'ba2'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/', component: d('/handboek/designer/', 'd2b'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/community', component: d('/handboek/designer/community', '3a0'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/figma-structuur', component: d('/handboek/designer/figma-structuur', 'b8d'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/overzicht', component: d('/handboek/designer/overzicht', '8b5'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/stappenplan', component: d('/handboek/designer/stappenplan', 'b2e'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/voorbeeld-thema', component: d('/handboek/designer/voorbeeld-thema', '531'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/zelf-componenten-maken', component: d('/handboek/designer/zelf-componenten-maken', '2ce'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/aan-de-slag', component: d('/handboek/developer/aan-de-slag', '45e'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/architectuur', component: d('/handboek/developer/architectuur', '270'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/component-inzetten', component: d('/handboek/developer/component-inzetten', 'b57'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/component-uitbreiden', component: d('/handboek/developer/component-uitbreiden', '3d3'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/componenten-maken', component: d('/handboek/developer/componenten-maken', '13b'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/herbruikbare-css', component: d('/handboek/developer/herbruikbare-css', '233'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/meewerken-als-developer', component: d('/handboek/developer/meewerken-als-developer', 'b38'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/overzicht', component: d('/handboek/developer/overzicht', '59c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/samenwerken-aan-componenten', component: d('/handboek/developer/samenwerken-aan-componenten', '5a3'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/thema-maken', component: d('/handboek/developer/thema-maken', 'e85'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/estafettemodel', component: d('/handboek/estafettemodel', '1f8'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/introductie', component: d('/handboek/introductie', 'f9a'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/leverancier/introductie', component: d('/handboek/leverancier/introductie', '4a5'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/manager/introductie', component: d('/handboek/manager/introductie', 'd4c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/naamgeving', component: d('/handboek/naamgeving', '7ee'), exact: !0 },
-          { path: '/handboek/organisatie/meedoen', component: d('/handboek/organisatie/meedoen', 'daa'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/organisatie/overzicht', component: d('/handboek/organisatie/overzicht', '6be'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/organisatie/vragen-over-aanbestedingen', component: d('/handboek/organisatie/vragen-over-aanbestedingen', 'd3e'), exact: !0, sidebar: 'handboek' },
-          { path: '/heading', component: d('/heading', '805'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-1', component: d('/heading-1', 'da6'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-2', component: d('/heading-2', 'aa5'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-3', component: d('/heading-3', 'd27'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-4', component: d('/heading-4', '238'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-5', component: d('/heading-5', '628'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-6', component: d('/heading-6', '314'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-group', component: d('/heading-group', '44c'), exact: !0, sidebar: 'componenten' },
-          { path: '/icon', component: d('/icon', '86d'), exact: !0, sidebar: 'componenten' },
-          { path: '/invalid-form-alert', component: d('/invalid-form-alert', 'ae2'), exact: !0, sidebar: 'componenten' },
-          { path: '/language-navigation', component: d('/language-navigation', '50a'), exact: !0, sidebar: 'componenten' },
-          { path: '/legend', component: d('/legend', '726'), exact: !0, sidebar: 'componenten' },
-          { path: '/link', component: d('/link', '028'), exact: !0, sidebar: 'componenten' },
-          { path: '/link-list', component: d('/link-list', '574'), exact: !0, sidebar: 'componenten' },
-          { path: '/modal-dialog', component: d('/modal-dialog', '03c'), exact: !0, sidebar: 'componenten' },
-          { path: '/navigation-bar', component: d('/navigation-bar', '219'), exact: !0, sidebar: 'componenten' },
-          { path: '/non-modal-dialog', component: d('/non-modal-dialog', '9e9'), exact: !0, sidebar: 'componenten' },
-          { path: '/notification-banner', component: d('/notification-banner', '087'), exact: !0, sidebar: 'componenten' },
-          { path: '/number-badge', component: d('/number-badge', '1ee'), exact: !0, sidebar: 'componenten' },
-          { path: '/number-input', component: d('/number-input', '0d1'), exact: !0, sidebar: 'componenten' },
-          { path: '/open-source/cc0', component: d('/open-source/cc0', '80b'), exact: !0 },
-          { path: '/open-source/eupl', component: d('/open-source/eupl', '097'), exact: !0 },
-          { path: '/ordered-list', component: d('/ordered-list', '4ec'), exact: !0, sidebar: 'componenten' },
-          { path: '/page-footer', component: d('/page-footer', '821'), exact: !0, sidebar: 'componenten' },
-          { path: '/page-header', component: d('/page-header', '697'), exact: !0, sidebar: 'componenten' },
-          { path: '/pagination', component: d('/pagination', 'aa9'), exact: !0, sidebar: 'componenten' },
-          { path: '/paragraph', component: d('/paragraph', 'e83'), exact: !0, sidebar: 'componenten' },
-          { path: '/password-input', component: d('/password-input', '93c'), exact: !0, sidebar: 'componenten' },
-          { path: '/pre-heading', component: d('/pre-heading', '87e'), exact: !0, sidebar: 'componenten' },
-          { path: '/privacyverklaring', component: d('/privacyverklaring', 'e5f'), exact: !0 },
-          { path: '/progress-bar', component: d('/progress-bar', 'db6'), exact: !0, sidebar: 'componenten' },
-          { path: '/progress-list', component: d('/progress-list', '5da'), exact: !0, sidebar: 'componenten' },
-          { path: '/project', component: d('/project', 'fa6'), exact: !0, sidebar: 'project' },
-          { path: '/project/blijf-op-de-hoogte', component: d('/project/blijf-op-de-hoogte', 'c41'), exact: !0, sidebar: 'project' },
-          { path: '/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '645'), exact: !0 },
-          { path: '/project/faq', component: d('/project/faq', 'e37'), exact: !0, sidebar: 'project' },
-          { path: '/project/kernteam', component: d('/project/kernteam', 'ae3'), exact: !0, sidebar: 'project' },
-          { path: '/project/links', component: d('/project/links', '342'), exact: !0, sidebar: 'project' },
-          { path: '/project/nieuwsbrief', component: d('/project/nieuwsbrief', 'de8'), exact: !0 },
-          { path: '/project/over-nl-design-system', component: d('/project/over-nl-design-system', '7b0'), exact: !0, sidebar: 'project' },
-          { path: '/radio-button', component: d('/radio-button', '63a'), exact: !0, sidebar: 'componenten' },
-          { path: '/radio-group', component: d('/radio-group', 'cce'), exact: !0, sidebar: 'componenten' },
-          { path: '/range', component: d('/range', '9a8'), exact: !0, sidebar: 'componenten' },
-          { path: '/rich-text-content', component: d('/rich-text-content', '73e'), exact: !0, sidebar: 'componenten' },
-          { path: '/richtlijnen', component: d('/richtlijnen', 'a7a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/', component: d('/richtlijnen/formulieren/', 'dbd'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/autocomplete', component: d('/richtlijnen/formulieren/autocomplete', '402'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina', component: d('/richtlijnen/formulieren/bevestigingspagina', 'c6a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons', component: d('/richtlijnen/formulieren/buttons', '683'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions', component: d('/richtlijnen/formulieren/descriptions', '910'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen', component: d('/richtlijnen/formulieren/foutmeldingen', '19d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels', component: d('/richtlijnen/formulieren/labels', 'f4e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/links', component: d('/richtlijnen/formulieren/links', '925'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen', component: d('/richtlijnen/formulieren/meerdere-stappen', '6c3'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/overzicht', component: d('/richtlijnen/formulieren/overzicht', '63e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders', component: d('/richtlijnen/formulieren/placeholders', 'cee'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/toetsenbord', component: d('/richtlijnen/formulieren/toetsenbord', '0c2'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp', component: d('/richtlijnen/formulieren/visueel-ontwerp', '323'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten', component: d('/richtlijnen/formulieren/voorkom-fouten', '2db'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen', component: d('/richtlijnen/formulieren/vragen', 'be7'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/wanneer-welk-form-element', component: d('/richtlijnen/formulieren/wanneer-welk-form-element', 'faf'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/introductie', component: d('/richtlijnen/introductie', '360'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/iconen', component: d('/richtlijnen/stijl/iconen', '5b9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/kleuren', component: d('/richtlijnen/stijl/kleuren', 'fa7'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/overzicht', component: d('/richtlijnen/stijl/overzicht', 'adf'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/ruimte', component: d('/richtlijnen/stijl/ruimte', '79f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/typografie', component: d('/richtlijnen/stijl/typografie', '483'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/select', component: d('/select', '5e7'), exact: !0, sidebar: 'componenten' },
-          { path: '/separator', component: d('/separator', '454'), exact: !0, sidebar: 'componenten' },
-          { path: '/side-navigation', component: d('/side-navigation', '600'), exact: !0, sidebar: 'componenten' },
-          { path: '/skip-link', component: d('/skip-link', 'd13'), exact: !0, sidebar: 'componenten' },
-          { path: '/spinner', component: d('/spinner', '70f'), exact: !0, sidebar: 'componenten' },
-          { path: '/status-badge', component: d('/status-badge', '6aa'), exact: !0, sidebar: 'componenten' },
-          { path: '/strong', component: d('/strong', '40f'), exact: !0, sidebar: 'componenten' },
-          { path: '/sub-heading', component: d('/sub-heading', 'b7e'), exact: !0, sidebar: 'componenten' },
-          { path: '/summary-list', component: d('/summary-list', '4fa'), exact: !0, sidebar: 'componenten' },
-          { path: '/switch', component: d('/switch', '5b4'), exact: !0, sidebar: 'componenten' },
-          { path: '/table', component: d('/table', 'b60'), exact: !0, sidebar: 'componenten' },
-          { path: '/tabs', component: d('/tabs', '963'), exact: !0, sidebar: 'componenten' },
-          { path: '/task-list', component: d('/task-list', '293'), exact: !0, sidebar: 'componenten' },
-          { path: '/text-input', component: d('/text-input', '54b'), exact: !0, sidebar: 'componenten' },
-          { path: '/text-input-group', component: d('/text-input-group', 'ed4'), exact: !0, sidebar: 'componenten' },
-          { path: '/textarea', component: d('/textarea', '5a3'), exact: !0, sidebar: 'componenten' },
-          { path: '/toegankelijkheidsverklaring', component: d('/toegankelijkheidsverklaring', 'e63'), exact: !0 },
-          { path: '/toegankelijkheidsverklaring/rapport-2023', component: d('/toegankelijkheidsverklaring/rapport-2023', 'feb'), exact: !0 },
-          { path: '/toggletip', component: d('/toggletip', '5b0'), exact: !0, sidebar: 'componenten' },
-          { path: '/unordered-list', component: d('/unordered-list', '525'), exact: !0, sidebar: 'componenten' },
-          { path: '/video', component: d('/video', '3ac'), exact: !0, sidebar: 'componenten' },
-          { path: '/voorbeelden', component: d('/voorbeelden', 'a40'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/', component: d('/voorbeelden/', 'fa9'), exact: !0 },
-          { path: '/voorbeelden/onderzoek/', component: d('/voorbeelden/onderzoek/', '62d'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen', component: d('/voorbeelden/patronen', 'c72'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren', component: d('/voorbeelden/patronen/formulieren', 'c44'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/voorbeelden/patronen/formulieren/bevestigingspagina', '5ca'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/controlepagina', component: d('/voorbeelden/patronen/formulieren/controlepagina', '50c'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/voorbeelden/patronen/formulieren/foutmeldingen', '4a9'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/funnel-header', component: d('/voorbeelden/patronen/formulieren/funnel-header', '4d8'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/inloggen', component: d('/voorbeelden/patronen/formulieren/inloggen', '651'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/intropagina', component: d('/voorbeelden/patronen/formulieren/intropagina', 'a29'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/voorbeelden/patronen/formulieren/meerstappenformulier', '96a'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/voorbeelden/patronen/formulieren/niet-verplichte-velden', '1e0'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '0b8'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/responsive-design', component: d('/voorbeelden/patronen/formulieren/responsive-design', 'a94'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'fe2'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/startpunt', component: d('/voorbeelden/patronen/formulieren/startpunt', '6a4'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/voorbeelden/patronen/formulieren/terug-navigeren', '567'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/uploaden', component: d('/voorbeelden/patronen/formulieren/uploaden', 'a29'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/visual-design', component: d('/voorbeelden/patronen/formulieren/visual-design', '2ad'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/volgende-stap', component: d('/voorbeelden/patronen/formulieren/volgende-stap', '977'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/voorbeelden/patronen/formulieren/voortgang-indicatie', '038'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/templates/', component: d('/voorbeelden/templates/', '2b1'), exact: !0 },
-          { path: '/wcag', component: d('/wcag', 'd32'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.1.1', component: d('/wcag/1.1.1', '616'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.1', component: d('/wcag/1.3.1', '07d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.5', component: d('/wcag/1.3.5', '070'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.1.1', component: d('/wcag/2.1.1', '2f9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.1', component: d('/wcag/2.4.1', 'bb1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.10', component: d('/wcag/2.4.10', 'a92'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.13', component: d('/wcag/2.4.13', 'bff'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.2', component: d('/wcag/2.4.2', 'c38'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.4', component: d('/wcag/2.4.4', 'ee6'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.6', component: d('/wcag/2.4.6', '1dd'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.7', component: d('/wcag/2.4.7', '73d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.1.1', component: d('/wcag/3.1.1', '665'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.1.2', component: d('/wcag/3.1.2', '44a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.1', component: d('/wcag/3.2.1', '7ed'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.2', component: d('/wcag/3.2.2', '78d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.1', component: d('/wcag/3.3.1', 'd9f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.3', component: d('/wcag/3.3.3', 'a8b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.4', component: d('/wcag/3.3.4', '881'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.1', component: d('/wcag/4.1.1', 'dc2'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.2', component: d('/wcag/4.1.2', 'a09'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.3', component: d('/wcag/4.1.3', 'a78'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/introduction', component: d('/wcag/introduction', 'f78'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/accordion', component: d('/en/accordion', 'b0f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/action-group', component: d('/en/action-group', '24c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/alert', component: d('/en/alert', '5e0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/alert-dialog', component: d('/en/alert-dialog', '9bd'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/avatar', component: d('/en/avatar', 'e85'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/blockquote', component: d('/en/blockquote', '57d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/breadcrumb-navigation', component: d('/en/breadcrumb-navigation', 'c6e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/button', component: d('/en/button', 'f7b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/Calendar', component: d('/en/Calendar', '310'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/card-as-link', component: d('/en/card-as-link', '121'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/case-card', component: d('/en/case-card', '991'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/CHANGELOG', component: d('/en/CHANGELOG', '818'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/checkbox', component: d('/en/checkbox', '860'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/checkbox-group', component: d('/en/checkbox-group', 'fb7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/coc', component: d('/en/coc', '4b6'), exact: !0 },
+          { path: '/en/colofon', component: d('/en/colofon', 'b43'), exact: !0 },
+          { path: '/en/community', component: d('/en/community', '2bb'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/design-open-dag/bedankt', component: d('/en/community/design-open-dag/bedankt', 'c89'), exact: !0 },
+          { path: '/en/community/estafettemodeldag/bedankt', component: d('/en/community/estafettemodeldag/bedankt', '716'), exact: !0 },
+          { path: '/en/community/events/estafettemodeldag', component: d('/en/community/events/estafettemodeldag', '791'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/events/overzicht', component: d('/en/community/events/overzicht', 'aa6'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/sluit-je-aan', component: d('/en/community/sluit-je-aan', '3d4'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/sluit-je-aan/bedankt', component: d('/en/community/sluit-je-aan/bedankt', '838'), exact: !0 },
+          { path: '/en/community/wie-doet-mee', component: d('/en/community/wie-doet-mee', '109'), exact: !0, sidebar: 'community' },
+          { path: '/en/componenten/', component: d('/en/componenten/', '040'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/data-badge', component: d('/en/data-badge', 'c07'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-input', component: d('/en/date-input', '6e0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-input-group', component: d('/en/date-input-group', '807'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-picker', component: d('/en/date-picker', '39a'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/description-list', component: d('/en/description-list', '8bc'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/dot-badge', component: d('/en/dot-badge', '3a9'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/drawer', component: d('/en/drawer', '204'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/events/design-open-dag', component: d('/en/events/design-open-dag', '5ba'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour', component: d('/en/events/design-open-hour', '6bd'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour/aanmelden', component: d('/en/events/design-open-hour/aanmelden', '3d7'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour/aanmelden/bedankt', component: d('/en/events/design-open-hour/aanmelden/bedankt', '283'), exact: !0 },
+          { path: '/en/events/design-open-hour/overzicht', component: d('/en/events/design-open-hour/overzicht', '16c'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week-2022', component: d('/en/events/design-systems-week-2022', 'f5c'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023', component: d('/en/events/design-systems-week-2023', 'bc7'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/en/program', component: d('/en/events/design-systems-week-2023/en/program', '22d'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/en/timetable', component: d('/en/events/design-systems-week-2023/en/timetable', 'eb9'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/programma', component: d('/en/events/design-systems-week-2023/programma', '5a2'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/tijdschema', component: d('/en/events/design-systems-week-2023/tijdschema', '83e'), exact: !0 },
+          { path: '/en/events/design-systems-week-2024', component: d('/en/events/design-systems-week-2024', '535'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/developer-open-hour', component: d('/en/events/developer-open-hour', 'bf8'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/developer-open-hour/aanmelden', component: d('/en/events/developer-open-hour/aanmelden', 'fa2'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/developer-open-hour/aanmelden/bedankt', component: d('/en/events/developer-open-hour/aanmelden/bedankt', 'd4e'), exact: !0 },
+          { path: '/en/events/developer-open-hour/overzicht', component: d('/en/events/developer-open-hour/overzicht', '5fe'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat', component: d('/en/events/heartbeat', 'b03'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/aanmelden', component: d('/en/events/heartbeat/aanmelden', 'd05'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/aanmelden/bedankt', component: d('/en/events/heartbeat/aanmelden/bedankt', '057'), exact: !0 },
+          { path: '/en/events/heartbeat/overzicht', component: d('/en/events/heartbeat/overzicht', 'cbb'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/videos', component: d('/en/events/heartbeat/videos', 'efc'), exact: !0, sidebar: 'community' },
+          { path: '/en/fieldset', component: d('/en/fieldset', '30f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/figure', component: d('/en/figure', '51c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/file-input', component: d('/en/file-input', '922'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field', component: d('/en/form-field', 'bea'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-checkbox-option', component: d('/en/form-field-checkbox-option', '9ea'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-description', component: d('/en/form-field-description', '574'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-error-message', component: d('/en/form-field-error-message', 'd71'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-label', component: d('/en/form-field-label', '96b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-option-label', component: d('/en/form-field-option-label', '867'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-partial', component: d('/en/form-field-partial', '218'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-partial-label', component: d('/en/form-field-partial-label', '90d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-radio-option', component: d('/en/form-field-radio-option', '082'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/handboek', component: d('/en/handboek', '934'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/candidate-stappenplan', component: d('/en/handboek/component-bijdragen/candidate-stappenplan', '4e4'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/community-stappenplan', component: d('/en/handboek/component-bijdragen/community-stappenplan', 'e53'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/definition-of-done', component: d('/en/handboek/component-bijdragen/definition-of-done', 'cc4'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/en/handboek/component-bijdragen/hall-of-fame-stappenplan', '32a'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/en/handboek/component-bijdragen/help-wanted-stappenplan', 'c04'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/overzicht', component: d('/en/handboek/component-bijdragen/overzicht', '9b2'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/design-tokens/', component: d('/en/handboek/design-tokens/', '955'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/', component: d('/en/handboek/designer/', '1aa'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/community', component: d('/en/handboek/designer/community', 'cf3'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/figma-structuur', component: d('/en/handboek/designer/figma-structuur', '31c'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/overzicht', component: d('/en/handboek/designer/overzicht', '07f'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/stappenplan', component: d('/en/handboek/designer/stappenplan', '4b1'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/voorbeeld-thema', component: d('/en/handboek/designer/voorbeeld-thema', '920'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/zelf-componenten-maken', component: d('/en/handboek/designer/zelf-componenten-maken', '875'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/aan-de-slag', component: d('/en/handboek/developer/aan-de-slag', '799'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/architectuur', component: d('/en/handboek/developer/architectuur', '814'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/component-inzetten', component: d('/en/handboek/developer/component-inzetten', '0e8'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/component-uitbreiden', component: d('/en/handboek/developer/component-uitbreiden', '940'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/componenten-maken', component: d('/en/handboek/developer/componenten-maken', 'd74'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/herbruikbare-css', component: d('/en/handboek/developer/herbruikbare-css', '9e2'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/meewerken-als-developer', component: d('/en/handboek/developer/meewerken-als-developer', '395'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/overzicht', component: d('/en/handboek/developer/overzicht', 'a06'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/samenwerken-aan-componenten', component: d('/en/handboek/developer/samenwerken-aan-componenten', '37c'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/thema-maken', component: d('/en/handboek/developer/thema-maken', '4ec'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/estafettemodel', component: d('/en/handboek/estafettemodel', '7d6'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/introductie', component: d('/en/handboek/introductie', '910'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/leverancier/introductie', component: d('/en/handboek/leverancier/introductie', '42a'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/manager/introductie', component: d('/en/handboek/manager/introductie', 'ce3'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/naamgeving', component: d('/en/handboek/naamgeving', '1d5'), exact: !0 },
+          { path: '/en/handboek/organisatie/meedoen', component: d('/en/handboek/organisatie/meedoen', 'f3e'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/organisatie/overzicht', component: d('/en/handboek/organisatie/overzicht', 'b60'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/organisatie/vragen-over-aanbestedingen', component: d('/en/handboek/organisatie/vragen-over-aanbestedingen', 'bdc'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/heading', component: d('/en/heading', 'd97'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-1', component: d('/en/heading-1', 'e3e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-2', component: d('/en/heading-2', '205'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-3', component: d('/en/heading-3', '160'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-4', component: d('/en/heading-4', 'b74'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-5', component: d('/en/heading-5', '632'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-6', component: d('/en/heading-6', 'd1e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-group', component: d('/en/heading-group', '06c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/icon', component: d('/en/icon', '540'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/invalid-form-alert', component: d('/en/invalid-form-alert', '953'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/language-navigation', component: d('/en/language-navigation', 'cf8'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/legend', component: d('/en/legend', 'c6f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/link', component: d('/en/link', '6a7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/link-list', component: d('/en/link-list', 'dfe'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/modal-dialog', component: d('/en/modal-dialog', '617'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/navigation-bar', component: d('/en/navigation-bar', '18d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/non-modal-dialog', component: d('/en/non-modal-dialog', 'da9'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/notification-banner', component: d('/en/notification-banner', '685'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/number-badge', component: d('/en/number-badge', '2f6'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/number-input', component: d('/en/number-input', 'c93'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/open-source/cc0', component: d('/en/open-source/cc0', 'efb'), exact: !0 },
+          { path: '/en/open-source/eupl', component: d('/en/open-source/eupl', 'faf'), exact: !0 },
+          { path: '/en/ordered-list', component: d('/en/ordered-list', '2f7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/page-footer', component: d('/en/page-footer', '750'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/page-header', component: d('/en/page-header', '40f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/pagination', component: d('/en/pagination', 'c17'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/paragraph', component: d('/en/paragraph', 'e05'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/password-input', component: d('/en/password-input', 'f65'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/pre-heading', component: d('/en/pre-heading', 'b30'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/privacyverklaring', component: d('/en/privacyverklaring', 'ff9'), exact: !0 },
+          { path: '/en/progress-bar', component: d('/en/progress-bar', '473'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/progress-list', component: d('/en/progress-list', '5cf'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/project', component: d('/en/project', '986'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/blijf-op-de-hoogte', component: d('/en/project/blijf-op-de-hoogte', '0f9'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '08d'), exact: !0 },
+          { path: '/en/project/faq', component: d('/en/project/faq', 'cea'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/kernteam', component: d('/en/project/kernteam', '87b'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/links', component: d('/en/project/links', '5cb'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/nieuwsbrief', component: d('/en/project/nieuwsbrief', 'ff4'), exact: !0 },
+          { path: '/en/project/over-nl-design-system', component: d('/en/project/over-nl-design-system', 'ddf'), exact: !0, sidebar: 'project' },
+          { path: '/en/radio-button', component: d('/en/radio-button', 'a20'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/radio-group', component: d('/en/radio-group', 'd27'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/range', component: d('/en/range', '4eb'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/rich-text-content', component: d('/en/rich-text-content', 'f5b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/richtlijnen', component: d('/en/richtlijnen', 'c7a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/', component: d('/en/richtlijnen/formulieren/', 'b5e'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/autocomplete', component: d('/en/richtlijnen/formulieren/autocomplete', '053'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina', component: d('/en/richtlijnen/formulieren/bevestigingspagina', '670'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons', component: d('/en/richtlijnen/formulieren/buttons', '9d1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions', component: d('/en/richtlijnen/formulieren/descriptions', '369'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen', component: d('/en/richtlijnen/formulieren/foutmeldingen', '74b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels', component: d('/en/richtlijnen/formulieren/labels', 'c6c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/links', component: d('/en/richtlijnen/formulieren/links', '392'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen', component: d('/en/richtlijnen/formulieren/meerdere-stappen', '65a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/overzicht', component: d('/en/richtlijnen/formulieren/overzicht', '3b5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders', component: d('/en/richtlijnen/formulieren/placeholders', '361'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/toetsenbord', component: d('/en/richtlijnen/formulieren/toetsenbord', 'f77'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp', component: d('/en/richtlijnen/formulieren/visueel-ontwerp', 'e3a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten', component: d('/en/richtlijnen/formulieren/voorkom-fouten', 'cc4'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen', component: d('/en/richtlijnen/formulieren/vragen', '997'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/wanneer-welk-form-element', component: d('/en/richtlijnen/formulieren/wanneer-welk-form-element', '8dc'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/introductie', component: d('/en/richtlijnen/introductie', 'dfe'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/iconen', component: d('/en/richtlijnen/stijl/iconen', 'e62'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/kleuren', component: d('/en/richtlijnen/stijl/kleuren', '0d9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/overzicht', component: d('/en/richtlijnen/stijl/overzicht', 'a44'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/ruimte', component: d('/en/richtlijnen/stijl/ruimte', '8c1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/typografie', component: d('/en/richtlijnen/stijl/typografie', 'c04'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/select', component: d('/en/select', '831'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/separator', component: d('/en/separator', '6d1'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/side-navigation', component: d('/en/side-navigation', '1a0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/skip-link', component: d('/en/skip-link', 'df2'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/spinner', component: d('/en/spinner', 'f5a'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/status-badge', component: d('/en/status-badge', '799'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/strong', component: d('/en/strong', '808'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/sub-heading', component: d('/en/sub-heading', 'd1f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/summary-list', component: d('/en/summary-list', 'f83'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/switch', component: d('/en/switch', '499'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/table', component: d('/en/table', 'a74'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/tabs', component: d('/en/tabs', '283'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/task-list', component: d('/en/task-list', '339'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/text-input', component: d('/en/text-input', '4a4'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/text-input-group', component: d('/en/text-input-group', 'd64'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/textarea', component: d('/en/textarea', '761'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/toegankelijkheidsverklaring', component: d('/en/toegankelijkheidsverklaring', 'cd8'), exact: !0 },
+          { path: '/en/toegankelijkheidsverklaring/rapport-2023', component: d('/en/toegankelijkheidsverklaring/rapport-2023', '98a'), exact: !0 },
+          { path: '/en/toggletip', component: d('/en/toggletip', 'e24'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/unordered-list', component: d('/en/unordered-list', '763'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/video', component: d('/en/video', 'ee8'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/voorbeelden', component: d('/en/voorbeelden', '6c2'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/', component: d('/en/voorbeelden/', 'dd5'), exact: !0 },
+          { path: '/en/voorbeelden/onderzoek/', component: d('/en/voorbeelden/onderzoek/', '525'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen', component: d('/en/voorbeelden/patronen', 'e59'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren', component: d('/en/voorbeelden/patronen/formulieren', '03c'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/en/voorbeelden/patronen/formulieren/bevestigingspagina', '852'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/controlepagina', component: d('/en/voorbeelden/patronen/formulieren/controlepagina', '5da'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/en/voorbeelden/patronen/formulieren/foutmeldingen', '6d7'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/funnel-header', component: d('/en/voorbeelden/patronen/formulieren/funnel-header', '33f'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/inloggen', component: d('/en/voorbeelden/patronen/formulieren/inloggen', '6ee'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/intropagina', component: d('/en/voorbeelden/patronen/formulieren/intropagina', 'dcb'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/en/voorbeelden/patronen/formulieren/meerstappenformulier', '539'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', 'dc4'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '92b'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/responsive-design', component: d('/en/voorbeelden/patronen/formulieren/responsive-design', '213'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'd0d'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/startpunt', component: d('/en/voorbeelden/patronen/formulieren/startpunt', '5dd'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/en/voorbeelden/patronen/formulieren/terug-navigeren', '7bb'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/uploaden', component: d('/en/voorbeelden/patronen/formulieren/uploaden', '52b'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/visual-design', component: d('/en/voorbeelden/patronen/formulieren/visual-design', '5c6'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/volgende-stap', component: d('/en/voorbeelden/patronen/formulieren/volgende-stap', 'ac3'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/en/voorbeelden/patronen/formulieren/voortgang-indicatie', '5ec'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/templates/', component: d('/en/voorbeelden/templates/', 'f01'), exact: !0 },
+          { path: '/en/wcag', component: d('/en/wcag', '51a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.1.1', component: d('/en/wcag/1.1.1', '46c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.1', component: d('/en/wcag/1.3.1', '210'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.5', component: d('/en/wcag/1.3.5', '3ca'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.1.1', component: d('/en/wcag/2.1.1', '2e5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.1', component: d('/en/wcag/2.4.1', '01a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.10', component: d('/en/wcag/2.4.10', '74f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.13', component: d('/en/wcag/2.4.13', '73a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.2', component: d('/en/wcag/2.4.2', '237'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.4', component: d('/en/wcag/2.4.4', '405'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.6', component: d('/en/wcag/2.4.6', '5a9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.7', component: d('/en/wcag/2.4.7', 'faa'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.1.1', component: d('/en/wcag/3.1.1', '828'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.1.2', component: d('/en/wcag/3.1.2', '3f6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.1', component: d('/en/wcag/3.2.1', '95b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.2', component: d('/en/wcag/3.2.2', '8ad'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.1', component: d('/en/wcag/3.3.1', '995'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.3', component: d('/en/wcag/3.3.3', '9b6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.4', component: d('/en/wcag/3.3.4', '386'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.1', component: d('/en/wcag/4.1.1', '4d7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.2', component: d('/en/wcag/4.1.2', '32f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.3', component: d('/en/wcag/4.1.3', '3ac'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/introduction', component: d('/en/wcag/introduction', 'f51'), exact: !0, sidebar: 'richtlijnen' },
          ],
         },
        ],
@@ -582,13 +582,13 @@
     }
    }
    const Z = A,
-    M = '__docusaurus-base-url-issue-banner-container',
-    I = '__docusaurus-base-url-issue-banner',
+    I = '__docusaurus-base-url-issue-banner-container',
+    M = '__docusaurus-base-url-issue-banner',
     F = '__docusaurus-base-url-issue-banner-suggestion-container';
    function B(e) {
-    return `\ndocument.addEventListener('DOMContentLoaded', function maybeInsertBanner() {\n  var shouldInsert = typeof window['docusaurus'] === 'undefined';\n  shouldInsert && insertBanner();\n});\n\nfunction insertBanner() {\n  var bannerContainer = document.createElement('div');\n  bannerContainer.id = '${M}';\n  var bannerHtml = ${JSON.stringify(
+    return `\ndocument.addEventListener('DOMContentLoaded', function maybeInsertBanner() {\n  var shouldInsert = typeof window['docusaurus'] === 'undefined';\n  shouldInsert && insertBanner();\n});\n\nfunction insertBanner() {\n  var bannerContainer = document.createElement('div');\n  bannerContainer.id = '${I}';\n  var bannerHtml = ${JSON.stringify(
      (function (e) {
-      return `\n<div id="${I}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${e}</span> ${'/' === e ? ' (default value)' : ''}</p>\n   <p>We suggest trying baseUrl = <span id="${F}" style="font-weight: bold; color: green;"></span></p>\n</div>\n`;
+      return `\n<div id="${M}" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">${e}</span> ${'/' === e ? ' (default value)' : ''}</p>\n   <p>We suggest trying baseUrl = <span id="${F}" style="font-weight: bold; color: green;"></span></p>\n</div>\n`;
      })(e),
     ).replace(/</g, '\\<')};\n  bannerContainer.innerHTML = bannerHtml;\n  document.body.prepend(bannerContainer);\n  var suggestionContainer = document.getElementById('${F}');\n  var actualHomePagePath = window.location.pathname;\n  var suggestedBaseUrl = actualHomePagePath.substr(-1) === '/'\n        ? actualHomePagePath\n        : actualHomePagePath + '/';\n  suggestionContainer.innerHTML = suggestedBaseUrl;\n}\n`;
    }
@@ -598,14 +598,14 @@
     } = (0, m.Z)();
     return (0, b.jsx)(b.Fragment, { children: !i.Z.canUseDOM && (0, b.jsx)(f.Z, { children: (0, b.jsx)('script', { children: B(e) }) }) });
    }
-   function U() {
+   function H() {
     const {
       siteConfig: { baseUrl: e, baseUrlIssueBanner: t },
      } = (0, m.Z)(),
      { pathname: r } = (0, s.TH)();
     return t && r === e ? (0, b.jsx)($, {}) : null;
    }
-   function H() {
+   function U() {
     const {
       siteConfig: { favicon: e, title: t, noIndex: r },
       i18n: { currentLocale: n, localeConfigs: o },
@@ -623,7 +623,7 @@
    function G() {
     const e = (0, d.H)(u.Z),
      t = (0, s.TH)();
-    return (0, b.jsx)(V.Z, { children: (0, b.jsx)(z.M, { children: (0, b.jsxs)(N.t, { children: [(0, b.jsxs)(p, { children: [(0, b.jsx)(H, {}), (0, b.jsx)(P, {}), (0, b.jsx)(U, {}), (0, b.jsx)(Z, { location: E(t), children: e })] }), (0, b.jsx)(W, {})] }) }) });
+    return (0, b.jsx)(V.Z, { children: (0, b.jsx)(z.M, { children: (0, b.jsxs)(N.t, { children: [(0, b.jsxs)(p, { children: [(0, b.jsx)(U, {}), (0, b.jsx)(P, {}), (0, b.jsx)(H, {}), (0, b.jsx)(Z, { location: E(t), children: e })] }), (0, b.jsx)(W, {})] }) }) });
    }
    var K = r(16887);
    const Y = (function (e) {
@@ -714,8 +714,8 @@
    r.d(t, { _: () => d, M: () => h });
    var n = r(75271),
     o = r(36809);
-   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/CHANGELOG","sidebar":"richtlijnen"},{"id":"community/events/design-open-dag","path":"/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-dag-success","path":"/community/design-open-dag/bedankt","unlisted":true},{"id":"community/events/design-open-hour/aanmelden","path":"/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024","path":"/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden","path":"/events/developer-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden-success","path":"/events/developer-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/developer-open-hour/developer-open-hour","path":"/events/developer-open-hour","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/estafettemodeldag-success","path":"/community/estafettemodeldag/bedankt","unlisted":true},{"id":"community/events/heartbeat/aanmelden","path":"/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/definition-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/range","sidebar":"componenten"},{"id":"componenten/README","path":"/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/video","sidebar":"componenten"},{"id":"footer/coc","path":"/coc","unlisted":true},{"id":"footer/colofon","path":"/colofon"},{"id":"footer/privacyverklaring","path":"/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/open-source/cc0"},{"id":"open-source/eupl","path":"/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/autocomplete","path":"/richtlijnen/formulieren/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/buttons","path":"/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation","path":"/richtlijnen/formulieren/bevestigingspagina","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/descriptions","path":"/richtlijnen/formulieren/descriptions","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/errors","path":"/richtlijnen/formulieren/foutmeldingen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help-the-user","path":"/richtlijnen/formulieren/voorkom-fouten","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour","path":"/richtlijnen/formulieren/toetsenbord","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/labels","path":"/richtlijnen/formulieren/labels","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/links","path":"/richtlijnen/formulieren/links","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep","path":"/richtlijnen/formulieren/meerdere-stappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholders","path":"/richtlijnen/formulieren/placeholders","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions","path":"/richtlijnen/formulieren/vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/richtlijnen/formulieren/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design","path":"/richtlijnen/formulieren/visueel-ontwerp","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which","path":"/richtlijnen/formulieren/wanneer-welk-form-element","sidebar":"richtlijnen"},{"id":"richtlijnen/introductie","path":"/richtlijnen/introductie","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/voorbeelden/templates/"},{"id":"wcag/1.1.1","path":"/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.1","path":"/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.5","path":"/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/2.1.1","path":"/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.1","path":"/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.4.2","path":"/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.4","path":"/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.6","path":"/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.7","path":"/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/3.1.1","path":"/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.2","path":"/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.1","path":"/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.2","path":"/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.1","path":"/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.3","path":"/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.4","path":"/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/4.1.1","path":"/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.2","path":"/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.3","path":"/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"richtlijnen","path":"/richtlijnen","sidebar":"richtlijnen"},{"id":"/richtlijnen/stijl/overzicht","path":"/richtlijnen/stijl/overzicht","sidebar":"richtlijnen"},{"id":"/richtlijnen/formulieren/overzicht","path":"/richtlijnen/formulieren/overzicht","sidebar":"richtlijnen"},{"id":"/wcag","path":"/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/events/design-open-hour/overzicht","sidebar":"community"},{"id":"/events/developer-open-hour/overzicht","path":"/events/developer-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/community","label":"Community"}},"project":{"link":{"path":"/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
-    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"nl","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
+   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/en/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/en/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/en/CHANGELOG","sidebar":"richtlijnen"},{"id":"community/events/design-open-dag","path":"/en/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-dag-success","path":"/en/community/design-open-dag/bedankt","unlisted":true},{"id":"community/events/design-open-hour/aanmelden","path":"/en/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/en/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/en/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/en/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/en/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/en/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/en/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/en/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/en/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024","path":"/en/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden","path":"/en/events/developer-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden-success","path":"/en/events/developer-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/developer-open-hour/developer-open-hour","path":"/en/events/developer-open-hour","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/en/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/estafettemodeldag-success","path":"/en/community/estafettemodeldag/bedankt","unlisted":true},{"id":"community/events/heartbeat/aanmelden","path":"/en/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/en/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/en/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/en/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/en/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/en/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/en/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/en/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/en/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/en/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/en/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/en/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/en/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/en/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/en/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/en/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/en/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/en/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/en/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/en/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/en/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/en/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/en/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/en/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/en/description-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/en/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/en/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/en/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/en/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/en/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/en/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/en/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/en/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/en/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/en/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/en/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/en/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/en/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/en/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/en/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/en/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/en/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/en/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/en/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/en/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/en/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/en/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/en/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/en/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/en/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/en/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/en/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/en/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/en/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/en/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/en/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/en/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/en/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/en/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/en/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/en/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/en/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/en/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/en/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/en/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/en/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/en/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/en/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/en/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/en/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/en/range","sidebar":"componenten"},{"id":"componenten/README","path":"/en/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/en/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/en/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/en/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/en/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/en/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/en/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/en/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/en/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/en/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/en/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/en/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/en/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/en/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/en/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/en/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/en/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/en/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/en/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/en/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/en/video","sidebar":"componenten"},{"id":"footer/coc","path":"/en/coc","unlisted":true},{"id":"footer/colofon","path":"/en/colofon"},{"id":"footer/privacyverklaring","path":"/en/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/en/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/en/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/en/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/en/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/en/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/en/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/en/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/en/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/en/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/en/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/en/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/en/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/en/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/en/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/en/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/en/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/en/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/en/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/en/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/en/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/en/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/en/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/en/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/en/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/en/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/en/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/en/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/en/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/en/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/en/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/en/open-source/cc0"},{"id":"open-source/eupl","path":"/en/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/en/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/en/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/en/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/en/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/en/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/en/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/autocomplete","path":"/en/richtlijnen/formulieren/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/buttons","path":"/en/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation","path":"/en/richtlijnen/formulieren/bevestigingspagina","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/descriptions","path":"/en/richtlijnen/formulieren/descriptions","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/errors","path":"/en/richtlijnen/formulieren/foutmeldingen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help-the-user","path":"/en/richtlijnen/formulieren/voorkom-fouten","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour","path":"/en/richtlijnen/formulieren/toetsenbord","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/labels","path":"/en/richtlijnen/formulieren/labels","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/links","path":"/en/richtlijnen/formulieren/links","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep","path":"/en/richtlijnen/formulieren/meerdere-stappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholders","path":"/en/richtlijnen/formulieren/placeholders","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions","path":"/en/richtlijnen/formulieren/vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/en/richtlijnen/formulieren/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design","path":"/en/richtlijnen/formulieren/visueel-ontwerp","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which","path":"/en/richtlijnen/formulieren/wanneer-welk-form-element","sidebar":"richtlijnen"},{"id":"richtlijnen/introductie","path":"/en/richtlijnen/introductie","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/en/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/en/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/en/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/en/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/en/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/en/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/en/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/en/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/en/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/en/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/en/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/en/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/en/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/en/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/en/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/en/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/en/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/en/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/en/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/en/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/en/voorbeelden/templates/"},{"id":"wcag/1.1.1","path":"/en/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.1","path":"/en/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.5","path":"/en/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/2.1.1","path":"/en/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.1","path":"/en/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/en/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/en/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.4.2","path":"/en/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.4","path":"/en/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.6","path":"/en/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.7","path":"/en/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/3.1.1","path":"/en/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.2","path":"/en/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.1","path":"/en/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.2","path":"/en/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.1","path":"/en/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.3","path":"/en/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.4","path":"/en/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/4.1.1","path":"/en/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.2","path":"/en/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.3","path":"/en/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/en/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/en/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/en/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/en/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/en/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/en/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"richtlijnen","path":"/en/richtlijnen","sidebar":"richtlijnen"},{"id":"/richtlijnen/stijl/overzicht","path":"/en/richtlijnen/stijl/overzicht","sidebar":"richtlijnen"},{"id":"/richtlijnen/formulieren/overzicht","path":"/en/richtlijnen/formulieren/overzicht","sidebar":"richtlijnen"},{"id":"/wcag","path":"/en/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/en/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/en/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/en/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/en/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/en/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/en/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/en/events/design-open-hour/overzicht","sidebar":"community"},{"id":"/events/developer-open-hour/overzicht","path":"/en/events/developer-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/en/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/en/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/en/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/en/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/en/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/en/community","label":"Community"}},"project":{"link":{"path":"/en/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
+    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"en","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
    var i = r(57529);
    const l = JSON.parse('{"docusaurusVersion":"3.1.0","siteVersion":"0.0.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.1.0"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.1.0"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.1.0"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.1.0"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.1.0"},"docusaurus-theme-search-algolia":{"type":"package","name":"@docusaurus/theme-search-algolia","version":"3.1.0"}}}');
    var u = r(52676);
@@ -1497,7 +1497,7 @@
     R = r(31373),
     A = r(11260);
    const Z = n.createContext(null);
-   function M(e) {
+   function I(e) {
     let { children: t } = e;
     const r = (function () {
      const e = (0, D.e)(),
@@ -1517,7 +1517,7 @@
     })();
     return (0, s.jsx)(Z.Provider, { value: r, children: t });
    }
-   function I(e) {
+   function M(e) {
     if (e.component) {
      const t = e.component;
      return (0, s.jsx)(t, { ...e.props });
@@ -1529,12 +1529,12 @@
     const [t, r] = e,
      o = (0, n.useCallback)(() => r(!1), [r]),
      a = (0, R.HY)();
-    return (0, n.useMemo)(() => ({ shown: t, hide: o, content: I(a) }), [o, a, t]);
+    return (0, n.useMemo)(() => ({ shown: t, hide: o, content: M(a) }), [o, a, t]);
    }
    const B = 'right';
    var $ = r(88594),
-    U = r(3319),
-    H = r(80796),
+    H = r(3319),
+    U = r(80796),
     V = r(11149),
     q = r(55924);
    const W = n.createContext(void 0),
@@ -1561,20 +1561,20 @@
    }
    function ne(e) {
     let { logo: t, alt: r, imageClassName: n } = e;
-    const o = { light: (0, U.Z)(t.src), dark: (0, U.Z)(t.srcDark || t.src) },
+    const o = { light: (0, H.Z)(t.src), dark: (0, H.Z)(t.srcDark || t.src) },
      a = (0, s.jsx)(re, { className: t.className, sources: o, height: t.height, width: t.width, alt: r, style: t.style });
     return n ? (0, s.jsx)('div', { className: n, children: a }) : a;
    }
    function oe(e) {
     const {
       siteConfig: { title: t },
-     } = (0, H.Z)(),
+     } = (0, U.Z)(),
      {
       navbar: { title: r, logo: n },
      } = (0, k.L)(),
      { shouldRender: o } = (0, D.e)(),
      { imageClassName: a, titleClassName: c, ...i } = e,
-     l = (0, U.Z)(n?.href || '/'),
+     l = (0, H.Z)(n?.href || '/'),
      u = r ? '' : t,
      d = n?.alt ?? u;
     return (0, s.jsxs)($.Z, { to: l, ...i, ...(n?.target && { target: n.target }), children: [n && !o && (0, s.jsx)(ne, { logo: n, alt: d, imageClassName: a }), r && (0, s.jsx)('b', { className: c, children: r })] });
@@ -1598,9 +1598,9 @@
     be = r(74331);
    function pe(e) {
     let { activeBasePath: t, activeBaseRegex: r, to: n, href: o, label: a, html: c, isDropdownLink: i, prependBaseUrlToHref: l, ...u } = e;
-    const d = (0, U.Z)(n),
-     h = (0, U.Z)(t),
-     b = (0, U.Z)(o, { forcePrependBaseUrl: !0 }),
+    const d = (0, H.Z)(n),
+     h = (0, H.Z)(t),
+     b = (0, H.Z)(o, { forcePrependBaseUrl: !0 }),
      p = a && o && !(0, de.Z)(o),
      f = c ? { dangerouslySetInnerHTML: { __html: c } } : { children: (0, s.jsxs)(s.Fragment, { children: [a, p && (0, s.jsx)(be.Z, { ...(i && { width: 12, height: 12 }) })] }) };
     return o ? (0, s.jsx)($.Z, { href: l ? b : o, ...u, ...f }) : (0, s.jsx)($.Z, { to: d, isNavLink: !0, ...((t || r) && { isActive: (e, t) => (r ? (0, he.F)(r, t.pathname) : t.pathname.startsWith(h)) }), ...u, ...f });
@@ -1666,7 +1666,7 @@
         },
         children: i.children ?? i.label,
        }),
-       (0, s.jsx)('ul', { className: 'dropdown__menu', children: t.map((e, t) => (0, n.createElement)(Ue, { isDropdownItem: !0, activeClassName: 'dropdown__link--active', ...e, key: t })) }),
+       (0, s.jsx)('ul', { className: 'dropdown__menu', children: t.map((e, t) => (0, n.createElement)(He, { isDropdownItem: !0, activeClassName: 'dropdown__link--active', ...e, key: t })) }),
       ],
      })
     );
@@ -1676,7 +1676,7 @@
     const u = (function () {
       const {
         siteConfig: { baseUrl: e },
-       } = (0, H.Z)(),
+       } = (0, U.Z)(),
        { pathname: t } = (0, i.TH)();
       return t.replace(e, '/');
      })(),
@@ -1698,7 +1698,7 @@
         },
         children: l.children ?? l.label,
        }),
-       (0, s.jsx)(xe.z, { lazy: !0, as: 'ul', className: 'menu__list', collapsed: h, children: t.map((e, t) => (0, n.createElement)(Ue, { mobile: !0, isDropdownItem: !0, onClick: c, activeClassName: 'menu__link--active', ...e, key: t })) }),
+       (0, s.jsx)(xe.z, { lazy: !0, as: 'ul', className: 'menu__list', collapsed: h, children: t.map((e, t) => (0, n.createElement)(He, { mobile: !0, isDropdownItem: !0, onClick: c, activeClassName: 'menu__link--active', ...e, key: t })) }),
       ],
      })
     );
@@ -1722,18 +1722,18 @@
    var Re = r(30967);
    const Ae = { button: { buttonText: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }), buttonAriaLabel: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }) }, modal: { searchBox: { resetButtonTitle: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), resetButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), cancelButtonText: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }), cancelButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }) }, startScreen: { recentSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.recentSearchesTitle', message: 'Recent', description: 'The title for recent searches' }), noRecentSearchesText: (0, l.I)({ id: 'theme.SearchModal.startScreen.noRecentSearchesText', message: 'No recent searches', description: 'The text when no recent searches' }), saveRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.saveRecentSearchButtonTitle', message: 'Save this search', description: 'The label for save recent search button' }), removeRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeRecentSearchButtonTitle', message: 'Remove this search from history', description: 'The label for remove recent search button' }), favoriteSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.favoriteSearchesTitle', message: 'Favorite', description: 'The title for favorite searches' }), removeFavoriteSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle', message: 'Remove this search from favorites', description: 'The label for remove favorite search button' }) }, errorScreen: { titleText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.titleText', message: 'Unable to fetch results', description: 'The title for error screen of search modal' }), helpText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.helpText', message: 'You might want to check your network connection.', description: 'The help text for error screen of search modal' }) }, footer: { selectText: (0, l.I)({ id: 'theme.SearchModal.footer.selectText', message: 'to select', description: 'The explanatory text of the action for the enter key' }), selectKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.selectKeyAriaLabel', message: 'Enter key', description: 'The ARIA label for the Enter key button that makes the selection' }), navigateText: (0, l.I)({ id: 'theme.SearchModal.footer.navigateText', message: 'to navigate', description: 'The explanatory text of the action for the Arrow up and Arrow down key' }), navigateUpKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateUpKeyAriaLabel', message: 'Arrow up', description: 'The ARIA label for the Arrow up key button that makes the navigation' }), navigateDownKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateDownKeyAriaLabel', message: 'Arrow down', description: 'The ARIA label for the Arrow down key button that makes the navigation' }), closeText: (0, l.I)({ id: 'theme.SearchModal.footer.closeText', message: 'to close', description: 'The explanatory text of the action for Escape key' }), closeKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.closeKeyAriaLabel', message: 'Escape key', description: 'The ARIA label for the Escape key button that close the modal' }), searchByText: (0, l.I)({ id: 'theme.SearchModal.footer.searchByText', message: 'Search by', description: 'The text explain that the search is making by Algolia' }) }, noResultsScreen: { noResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.noResultsText', message: 'No results for', description: 'The text explains that there are no results for the following search' }), suggestedQueryText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.suggestedQueryText', message: 'Try searching for', description: 'The text for the suggested query when no results are found for the following search' }), reportMissingResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsText', message: 'Believe this query should return results?', description: 'The text for the question where the user thinks there are missing results' }), reportMissingResultsLinkText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsLinkText', message: 'Let us know.', description: 'The text for the link to report missing results' }) } }, placeholder: (0, l.I)({ id: 'theme.SearchModal.placeholder', message: 'Search docs', description: 'The placeholder of the input of the DocSearch pop-up modal' }) };
    let Ze = null;
-   function Me(e) {
+   function Ie(e) {
     let { hit: t, children: r } = e;
     return (0, s.jsx)($.Z, { to: t.url, className: 'utrecht-link', children: r });
    }
-   function Ie(e) {
+   function Me(e) {
     let { state: t, onClose: r } = e;
     const n = (0, Le.M)();
     return (0, s.jsx)($.Z, { to: n(t.query), onClick: r, className: 'utrecht-link', children: (0, s.jsx)(l.Z, { id: 'theme.SearchBar.seeAll', values: { count: t.context.nbHits }, children: 'See all {count} results' }) });
    }
    function Fe(e) {
     let { contextualSearch: t, externalUrlRegex: o, ...a } = e;
-    const { siteMetadata: c } = (0, H.Z)(),
+    const { siteMetadata: c } = (0, U.Z)(),
      l = (0, Te.l)(),
      u = (function () {
       const { locale: e, tags: t } = (0, De._q)();
@@ -1785,7 +1785,7 @@
       },
      }).current,
      O = (0, n.useRef)((e) => (a.transformItems ? a.transformItems(e) : e.map((e) => ({ ...e, url: l(e.url) })))).current,
-     P = (0, n.useMemo)(() => (e) => (0, s.jsx)(Ie, { ...e, onClose: _ }), [_]),
+     P = (0, n.useMemo)(() => (e) => (0, s.jsx)(Me, { ...e, onClose: _ }), [_]),
      S = (0, n.useCallback)((e) => (e.addAlgoliaAgent('docusaurus', c.docusaurusVersion), e), [c.docusaurusVersion]);
     return (
      (function (e) {
@@ -1820,11 +1820,11 @@
        [t, r, o, a, c],
       );
      })({ isOpen: g, onOpen: w, onClose: _, onInput: C, searchButtonRef: m }),
-     (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(ze.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: m, translations: Ae.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Ze && f.current && (0, Re.createPortal)((0, s.jsx)(Ze, { onClose: _, initialScrollY: window.scrollY, initialQuery: y, navigator: j, transformItems: O, hitComponent: Me, transformSearchClient: S, ...(a.searchPagePath && { resultsFooterComponent: P }), ...a, searchParameters: b, placeholder: Ae.placeholder, translations: Ae.modal }), f.current)] })
+     (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(ze.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: m, translations: Ae.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Ze && f.current && (0, Re.createPortal)((0, s.jsx)(Ze, { onClose: _, initialScrollY: window.scrollY, initialQuery: y, navigator: j, transformItems: O, hitComponent: Ie, transformSearchClient: S, ...(a.searchPagePath && { resultsFooterComponent: P }), ...a, searchParameters: b, placeholder: Ae.placeholder, translations: Ae.modal }), f.current)] })
     );
    }
    function Be() {
-    const { siteConfig: e } = (0, H.Z)();
+    const { siteConfig: e } = (0, U.Z)();
     return (0, s.jsx)(Fe, { ...e.themeConfig.algolia });
    }
    const $e = {
@@ -1833,7 +1833,7 @@
      let { mobile: t, dropdownItemsBefore: r, dropdownItemsAfter: n, ...o } = e;
      const {
        i18n: { currentLocale: a, locales: c, localeConfigs: u },
-      } = (0, H.Z)(),
+      } = (0, U.Z)(),
       d = (0, Se.l)(),
       { search: h, hash: b } = (0, i.TH)(),
       p = [
@@ -1897,7 +1897,7 @@
      return f.length <= 1 ? (0, s.jsx)(ge, { ...c, mobile: t, label: g, to: v, isActive: n ? () => !1 : void 0 }) : (0, s.jsx)(Oe, { ...c, mobile: t, label: g, to: v, items: f, isActive: n ? () => !1 : void 0 });
     },
    };
-   function Ue(e) {
+   function He(e) {
     let { type: t, ...r } = e;
     const n = (function (e, t) {
       return e && 'default' !== e ? e : 'items' in t ? 'dropdown' : 'default';
@@ -1906,9 +1906,9 @@
     if (!o) throw new Error(`No NavbarItem component found for type "${t}".`);
     return (0, s.jsx)(o, { ...r });
    }
-   function He(e) {
+   function Ue(e) {
     let { items: t, position: r = 'block-start', positionChildren: n = 'block-end', showOnMobile: a, children: c } = e;
-    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(T, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(Ue, { ...e }) }, t)), ' ', 'block-end' === n && c] });
+    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(T, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(He, { ...e }) }, t)), ' ', 'block-end' === n && c] });
    }
    function Ve() {
     const e = (0, k.L)().navbar.items,
@@ -1920,7 +1920,7 @@
      })(e),
      n = (0, D.e)(),
      o = e.find((e) => 'search' === e.type);
-    return (0, s.jsxs)('div', { className: 'navbar__inner', children: [!n.disabled && (0, s.jsx)(le, {}), (0, s.jsx)(ce, {}), (0, s.jsx)(He, { position: 'block-start', items: t }), (0, s.jsx)(He, { position: 'block-end', items: r, showOnMobile: !0, children: !o && (0, s.jsx)(se, { children: (0, s.jsx)(Be, {}) }) })] });
+    return (0, s.jsxs)('div', { className: 'navbar__inner', children: [!n.disabled && (0, s.jsx)(le, {}), (0, s.jsx)(ce, {}), (0, s.jsx)(Ue, { position: 'block-start', items: t }), (0, s.jsx)(Ue, { position: 'block-end', items: r, showOnMobile: !0, children: !o && (0, s.jsx)(se, { children: (0, s.jsx)(Be, {}) }) })] });
    }
    var qe = r(768);
    var We = (0, r(16790).Z)('outline', 'x', 'IconX', [
@@ -1950,7 +1950,7 @@
    function tt() {
     const e = (0, D.e)(),
      t = (0, k.L)().navbar.items;
-    return (0, s.jsx)('ul', { className: 'menu__list', children: t.map((t, r) => (0, n.createElement)(Ue, { mobile: !0, ...t, onClick: () => e.toggle(), key: r })) });
+    return (0, s.jsx)('ul', { className: 'menu__list', children: t.map((t, r) => (0, n.createElement)(He, { mobile: !0, ...t, onClick: () => e.toggle(), key: r })) });
    }
    function rt() {
     const e = F();
@@ -2000,8 +2000,8 @@
    function st(e) {
     let { item: t } = e;
     const { to: r, href: n, label: a, prependBaseUrlToHref: c, ...i } = t,
-     l = (0, U.Z)(r),
-     u = (0, U.Z)(n, { forcePrependBaseUrl: !0 });
+     l = (0, H.Z)(r),
+     u = (0, H.Z)(n, { forcePrependBaseUrl: !0 });
     return (0, s.jsx)($.Z, { className: (0, o.Z)('utrecht-link'), href: c ? u : n, to: l, ...i, children: a });
    }
    function dt(e) {
@@ -2038,7 +2038,7 @@
    const vt = { footerLogoLink: 'footerLogoLink_DDai' };
    function yt(e) {
     let { logo: t } = e;
-    const { withBaseUrl: r } = (0, U.C)(),
+    const { withBaseUrl: r } = (0, H.C)(),
      n = { light: r(t.src), dark: r(t.srcDark ?? t.src) };
     return (0, s.jsx)(re, { className: (0, o.Z)('footer__logo', t.className), alt: t.alt, sources: n, width: t.width, height: t.height, style: t.style });
    }
@@ -2121,7 +2121,7 @@
     c.VC,
     function (e) {
      let { children: t } = e;
-     return (0, s.jsx)(R.n2, { children: (0, s.jsx)(D.M, { children: (0, s.jsx)(M, { children: t }) }) });
+     return (0, s.jsx)(R.n2, { children: (0, s.jsx)(D.M, { children: (0, s.jsx)(I, { children: t }) }) });
     },
    ]);
    function jt(e) {
@@ -3411,9 +3411,9 @@
     function Z(e) {
      r.go(e);
     }
-    var M = 0;
-    function I(e) {
-     1 === (M += e) && 1 === e ? (window.addEventListener(g, N), a && window.addEventListener(v, z)) : 0 === M && (window.removeEventListener(g, N), a && window.removeEventListener(v, z));
+    var I = 0;
+    function M(e) {
+     1 === (I += e) && 1 === e ? (window.addEventListener(g, N), a && window.addEventListener(v, z)) : 0 === I && (window.removeEventListener(g, N), a && window.removeEventListener(v, z));
     }
     var F = !1;
     var B = {
@@ -3469,18 +3469,18 @@
       void 0 === e && (e = !1);
       var t = S.setPrompt(e);
       return (
-       F || (I(1), (F = !0)),
+       F || (M(1), (F = !0)),
        function () {
-        return F && ((F = !1), I(-1)), t();
+        return F && ((F = !1), M(-1)), t();
        }
       );
      },
      listen: function (e) {
       var t = S.appendListener(e);
       return (
-       I(1),
+       M(1),
        function () {
-        I(-1), t();
+        M(-1), t();
        }
       );
      },
@@ -3576,10 +3576,10 @@
      t.go(e);
     }
     var Z = 0;
-    function M(e) {
+    function I(e) {
      1 === (Z += e) && 1 === e ? window.addEventListener(x, z) : 0 === Z && window.removeEventListener(x, z);
     }
-    var I = !1;
+    var M = !1;
     var F = {
      length: t.length,
      action: 'POP',
@@ -3632,18 +3632,18 @@
       void 0 === e && (e = !1);
       var t = P.setPrompt(e);
       return (
-       I || (M(1), (I = !0)),
+       M || (I(1), (M = !0)),
        function () {
-        return I && ((I = !1), M(-1)), t();
+        return M && ((M = !1), I(-1)), t();
        }
       );
      },
      listen: function (e) {
       var t = P.appendListener(e);
       return (
-       M(1),
+       I(1),
        function () {
-        M(-1), t();
+        I(-1), t();
        }
       );
      },
@@ -4639,7 +4639,7 @@
    }
    var A,
     Z = Object.assign;
-   function M(e) {
+   function I(e) {
     if (void 0 === A)
      try {
       throw Error();
@@ -4649,10 +4649,10 @@
      }
     return '\n' + A + e;
    }
-   var I = !1;
+   var M = !1;
    function F(e, t) {
-    if (!e || I) return '';
-    I = !0;
+    if (!e || M) return '';
+    M = !0;
     var r = Error.prepareStackTrace;
     Error.prepareStackTrace = void 0;
     try {
@@ -4706,20 +4706,20 @@
        }
      }
     } finally {
-     (I = !1), (Error.prepareStackTrace = r);
+     (M = !1), (Error.prepareStackTrace = r);
     }
-    return (e = e ? e.displayName || e.name : '') ? M(e) : '';
+    return (e = e ? e.displayName || e.name : '') ? I(e) : '';
    }
    function B(e) {
     switch (e.tag) {
      case 5:
-      return M(e.type);
+      return I(e.type);
      case 16:
-      return M('Lazy');
+      return I('Lazy');
      case 13:
-      return M('Suspense');
+      return I('Suspense');
      case 19:
-      return M('SuspenseList');
+      return I('SuspenseList');
      case 0:
      case 2:
      case 15:
@@ -4769,7 +4769,7 @@
      }
     return null;
    }
-   function U(e) {
+   function H(e) {
     var t = e.type;
     switch (e.tag) {
      case 24:
@@ -4819,7 +4819,7 @@
     }
     return null;
    }
-   function H(e) {
+   function U(e) {
     switch (typeof e) {
      case 'boolean':
      case 'number':
@@ -4893,18 +4893,18 @@
    function Y(e, t) {
     var r = null == t.defaultValue ? '' : t.defaultValue,
      n = null != t.checked ? t.checked : t.defaultChecked;
-    (r = H(null != t.value ? t.value : r)), (e._wrapperState = { initialChecked: n, initialValue: r, controlled: 'checkbox' === t.type || 'radio' === t.type ? null != t.checked : null != t.value });
+    (r = U(null != t.value ? t.value : r)), (e._wrapperState = { initialChecked: n, initialValue: r, controlled: 'checkbox' === t.type || 'radio' === t.type ? null != t.checked : null != t.value });
    }
    function Q(e, t) {
     null != (t = t.checked) && y(e, 'checked', t, !1);
    }
    function X(e, t) {
     Q(e, t);
-    var r = H(t.value),
+    var r = U(t.value),
      n = t.type;
     if (null != r) 'number' === n ? ((0 === r && '' === e.value) || e.value != r) && (e.value = '' + r) : e.value !== '' + r && (e.value = '' + r);
     else if ('submit' === n || 'reset' === n) return void e.removeAttribute('value');
-    t.hasOwnProperty('value') ? ee(e, t.type, r) : t.hasOwnProperty('defaultValue') && ee(e, t.type, H(t.defaultValue)), null == t.checked && null != t.defaultChecked && (e.defaultChecked = !!t.defaultChecked);
+    t.hasOwnProperty('value') ? ee(e, t.type, r) : t.hasOwnProperty('defaultValue') && ee(e, t.type, U(t.defaultValue)), null == t.checked && null != t.defaultChecked && (e.defaultChecked = !!t.defaultChecked);
    }
    function J(e, t, r) {
     if (t.hasOwnProperty('value') || t.hasOwnProperty('defaultValue')) {
@@ -4924,7 +4924,7 @@
      for (var o = 0; o < r.length; o++) t['$' + r[o]] = !0;
      for (r = 0; r < e.length; r++) (o = t.hasOwnProperty('$' + e[r].value)), e[r].selected !== o && (e[r].selected = o), o && n && (e[r].defaultSelected = !0);
     } else {
-     for (r = '' + H(r), t = null, o = 0; o < e.length; o++) {
+     for (r = '' + U(r), t = null, o = 0; o < e.length; o++) {
       if (e[o].value === r) return (e[o].selected = !0), void (n && (e[o].defaultSelected = !0));
       null !== t || e[o].disabled || (t = e[o]);
      }
@@ -4948,11 +4948,11 @@
      }
      null == t && (t = ''), (r = t);
     }
-    e._wrapperState = { initialValue: H(r) };
+    e._wrapperState = { initialValue: U(r) };
    }
    function ae(e, t) {
-    var r = H(t.value),
-     n = H(t.defaultValue);
+    var r = U(t.value),
+     n = U(t.defaultValue);
     null != r && ((r = '' + r) !== e.value && (e.value = r), null == t.defaultValue && e.defaultValue !== r && (e.defaultValue = r)), null != n && (e.defaultValue = '' + n);
    }
    function ce(e) {
@@ -5130,8 +5130,8 @@
    }
    var Ae = !1,
     Ze = null,
-    Me = !1,
-    Ie = null,
+    Ie = !1,
+    Me = null,
     Fe = {
      onError: function (e) {
       (Ae = !0), (Ze = e);
@@ -5152,14 +5152,14 @@
     }
     return 3 === t.tag ? r : null;
    }
-   function Ue(e) {
+   function He(e) {
     if (13 === e.tag) {
      var t = e.memoizedState;
      if ((null === t && null !== (e = e.alternate) && (t = e.memoizedState), null !== t)) return t.dehydrated;
     }
     return null;
    }
-   function He(e) {
+   function Ue(e) {
     if ($e(e) !== e) throw Error(a(188));
    }
    function Ve(e) {
@@ -5183,8 +5183,8 @@
        }
        if (o.child === c.child) {
         for (c = o.child; c; ) {
-         if (c === r) return He(o), e;
-         if (c === n) return He(o), t;
+         if (c === r) return Ue(o), e;
+         if (c === n) return Ue(o), t;
          c = c.sibling;
         }
         throw Error(a(188));
@@ -5423,7 +5423,7 @@
      var r = $e(t);
      if (null !== r)
       if (13 === (t = r.tag)) {
-       if (null !== (t = Ue(r)))
+       if (null !== (t = He(r)))
         return (
          (e.blockedOn = t),
          void jt(e.priority, function () {
@@ -5434,7 +5434,7 @@
     }
     e.blockedOn = null;
    }
-   function Mt(e) {
+   function It(e) {
     if (null !== e.blockedOn) return !1;
     for (var t = e.targetContainers; 0 < t.length; ) {
      var r = Kt(e.domEventName, e.eventSystemFlags, t[0], e.nativeEvent);
@@ -5444,11 +5444,11 @@
     }
     return !0;
    }
-   function It(e, t, r) {
-    Mt(e) && r.delete(t);
+   function Mt(e, t, r) {
+    It(e) && r.delete(t);
    }
    function Ft() {
-    (Ot = !1), null !== St && Mt(St) && (St = null), null !== Et && Mt(Et) && (Et = null), null !== Nt && Mt(Nt) && (Nt = null), zt.forEach(It), Lt.forEach(It);
+    (Ot = !1), null !== St && It(St) && (St = null), null !== Et && It(Et) && (Et = null), null !== Nt && It(Nt) && (Nt = null), zt.forEach(Mt), Lt.forEach(Mt);
    }
    function Bt(e, t) {
     e.blockedOn === t && ((e.blockedOn = null), Ot || ((Ot = !0), o.unstable_scheduleCallback(o.unstable_NormalPriority, Ft)));
@@ -5467,32 +5467,32 @@
     for (null !== St && Bt(St, e), null !== Et && Bt(Et, e), null !== Nt && Bt(Nt, e), zt.forEach(t), Lt.forEach(t), r = 0; r < Tt.length; r++) (n = Tt[r]).blockedOn === e && (n.blockedOn = null);
     for (; 0 < Tt.length && null === (r = Tt[0]).blockedOn; ) Zt(r), null === r.blockedOn && Tt.shift();
    }
-   var Ut = k.ReactCurrentBatchConfig,
-    Ht = !0;
+   var Ht = k.ReactCurrentBatchConfig,
+    Ut = !0;
    function Vt(e, t, r, n) {
     var o = yt,
-     a = Ut.transition;
-    Ut.transition = null;
+     a = Ht.transition;
+    Ht.transition = null;
     try {
      (yt = 1), Wt(e, t, r, n);
     } finally {
-     (yt = o), (Ut.transition = a);
+     (yt = o), (Ht.transition = a);
     }
    }
    function qt(e, t, r, n) {
     var o = yt,
-     a = Ut.transition;
-    Ut.transition = null;
+     a = Ht.transition;
+    Ht.transition = null;
     try {
      (yt = 4), Wt(e, t, r, n);
     } finally {
-     (yt = o), (Ut.transition = a);
+     (yt = o), (Ht.transition = a);
     }
    }
    function Wt(e, t, r, n) {
-    if (Ht) {
+    if (Ut) {
      var o = Kt(e, t, r, n);
-     if (null === o) Hn(e, t, n, Gt, r), Rt(e, n);
+     if (null === o) Un(e, t, n, Gt, r), Rt(e, n);
      else if (
       (function (e, t, r, n, o) {
        switch (t) {
@@ -5515,11 +5515,11 @@
      else if ((Rt(e, n), 4 & t && -1 < Dt.indexOf(e))) {
       for (; null !== o; ) {
        var a = ko(o);
-       if ((null !== a && xt(a), null === (a = Kt(e, t, r, n)) && Hn(e, t, n, Gt, r), a === o)) break;
+       if ((null !== a && xt(a), null === (a = Kt(e, t, r, n)) && Un(e, t, n, Gt, r), a === o)) break;
        o = a;
       }
       null !== o && n.stopPropagation();
-     } else Hn(e, t, n, null, r);
+     } else Un(e, t, n, null, r);
     }
    }
    var Gt = null;
@@ -5527,7 +5527,7 @@
     if (((Gt = null), null !== (e = yo((e = xe(n))))))
      if (null === (t = $e(e))) e = null;
      else if (13 === (r = t.tag)) {
-      if (null !== (e = Ue(t))) return e;
+      if (null !== (e = He(t))) return e;
       e = null;
      } else if (3 === r) {
       if (t.stateNode.current.memoizedState.isDehydrated) return 3 === t.tag ? t.stateNode.containerInfo : null;
@@ -5785,8 +5785,8 @@
    var Rr = s && 'TextEvent' in window && !Dr,
     Ar = s && (!Tr || (Dr && 8 < Dr && 11 >= Dr)),
     Zr = String.fromCharCode(32),
-    Mr = !1;
-   function Ir(e, t) {
+    Ir = !1;
+   function Mr(e, t) {
     switch (e) {
      case 'keyup':
       return -1 !== Lr.indexOf(t.keyCode);
@@ -5805,17 +5805,17 @@
    }
    var Br = !1;
    var $r = { color: !0, date: !0, datetime: !0, 'datetime-local': !0, email: !0, month: !0, number: !0, password: !0, range: !0, search: !0, tel: !0, text: !0, time: !0, url: !0, week: !0 };
-   function Ur(e) {
+   function Hr(e) {
     var t = e && e.nodeName && e.nodeName.toLowerCase();
     return 'input' === t ? !!$r[e.type] : 'textarea' === t;
    }
-   function Hr(e, t, r, n) {
+   function Ur(e, t, r, n) {
     Oe(n), 0 < (t = qn(t, 'onChange')).length && ((r = new ur('onChange', 'change', null, r, n)), e.push({ event: r, listeners: t }));
    }
    var Vr = null,
     qr = null;
    function Wr(e) {
-    Mn(e, 0);
+    In(e, 0);
    }
    function Gr(e) {
     if (W(xo(e))) return e;
@@ -5842,7 +5842,7 @@
    function tn(e) {
     if ('value' === e.propertyName && Gr(qr)) {
      var t = [];
-     Hr(t, qr, e, xe(e)), ze(Wr, t);
+     Ur(t, qr, e, xe(e)), ze(Wr, t);
     }
    }
    function rn(e, t, r) {
@@ -5986,12 +5986,12 @@
       if ((Be.apply(this, arguments), Ae)) {
        if (!Ae) throw Error(a(198));
        var s = Ze;
-       (Ae = !1), (Ze = null), Me || ((Me = !0), (Ie = s));
+       (Ae = !1), (Ze = null), Ie || ((Ie = !0), (Me = s));
       }
      })(n, t, void 0, e),
      (e.currentTarget = null);
    }
-   function Mn(e, t) {
+   function In(e, t) {
     t = 0 != (4 & t);
     for (var r = 0; r < e.length; r++) {
      var n = e[r],
@@ -6014,17 +6014,17 @@
        }
      }
     }
-    if (Me) throw ((e = Ie), (Me = !1), (Ie = null), e);
+    if (Ie) throw ((e = Me), (Ie = !1), (Me = null), e);
    }
-   function In(e, t) {
+   function Mn(e, t) {
     var r = t[mo];
     void 0 === r && (r = t[mo] = new Set());
     var n = e + '__bubble';
-    r.has(n) || (Un(t, e, 2, !1), r.add(n));
+    r.has(n) || (Hn(t, e, 2, !1), r.add(n));
    }
    function Fn(e, t, r) {
     var n = 0;
-    t && (n |= 4), Un(r, e, n, t);
+    t && (n |= 4), Hn(r, e, n, t);
    }
    var Bn = '_reactListening' + Math.random().toString(36).slice(2);
    function $n(e) {
@@ -6037,7 +6037,7 @@
      null === t || t[Bn] || ((t[Bn] = !0), Fn('selectionchange', !1, t));
     }
    }
-   function Un(e, t, r, n) {
+   function Hn(e, t, r, n) {
     switch (Yt(t)) {
      case 1:
       var o = Vt;
@@ -6050,7 +6050,7 @@
     }
     (r = o.bind(null, t, r, e)), (o = void 0), !Te || ('touchstart' !== t && 'touchmove' !== t && 'wheel' !== t) || (o = !0), n ? (void 0 !== o ? e.addEventListener(t, r, { capture: !0, passive: o }) : e.addEventListener(t, r, !0)) : void 0 !== o ? e.addEventListener(t, r, { passive: o }) : e.addEventListener(t, r, !1);
    }
-   function Hn(e, t, r, n, o) {
+   function Un(e, t, r, n, o) {
     var a = n;
     if (0 == (1 & t) && 0 == (2 & t) && null !== n)
      e: for (;;) {
@@ -6189,16 +6189,16 @@
        null !== l && Gn(c, i, l, s, !1), null !== u && null !== d && Gn(c, d, u, s, !0);
       }
       if ('select' === (l = (i = n ? xo(n) : window).nodeName && i.nodeName.toLowerCase()) || ('input' === l && 'file' === i.type)) var m = Kr;
-      else if (Ur(i))
+      else if (Hr(i))
        if (Yr) m = an;
        else {
         m = nn;
         var g = rn;
        }
       else (l = i.nodeName) && 'input' === l.toLowerCase() && ('checkbox' === i.type || 'radio' === i.type) && (m = on);
-      switch ((m && (m = m(e, n)) ? Hr(c, m, r, o) : (g && g(e, i, n), 'focusout' === e && (g = i._wrapperState) && g.controlled && 'number' === i.type && ee(i, 'number', i.value)), (g = n ? xo(n) : window), e)) {
+      switch ((m && (m = m(e, n)) ? Ur(c, m, r, o) : (g && g(e, i, n), 'focusout' === e && (g = i._wrapperState) && g.controlled && 'number' === i.type && ee(i, 'number', i.value)), (g = n ? xo(n) : window), e)) {
        case 'focusin':
-        (Ur(g) || 'true' === g.contentEditable) && ((mn = g), (gn = n), (vn = null));
+        (Hr(g) || 'true' === g.contentEditable) && ((mn = g), (gn = n), (vn = null));
         break;
        case 'focusout':
         vn = gn = mn = null;
@@ -6233,7 +6233,7 @@
         }
         y = void 0;
        }
-      else Br ? Ir(e, r) && (y = 'onCompositionEnd') : 'keydown' === e && 229 === r.keyCode && (y = 'onCompositionStart');
+      else Br ? Mr(e, r) && (y = 'onCompositionEnd') : 'keydown' === e && 229 === r.keyCode && (y = 'onCompositionStart');
       y && (Ar && 'ko' !== r.locale && (Br || 'onCompositionStart' !== y ? 'onCompositionEnd' === y && Br && (v = er()) : ((Xt = 'value' in (Qt = o) ? Qt.value : Qt.textContent), (Br = !0))), 0 < (g = qn(n, y)).length && ((y = new yr(y, e, null, r, o)), c.push({ event: y, listeners: g }), v ? (y.data = v) : null !== (v = Fr(r)) && (y.data = v))),
        (v = Rr
         ? (function (e, t) {
@@ -6241,15 +6241,15 @@
             case 'compositionend':
              return Fr(t);
             case 'keypress':
-             return 32 !== t.which ? null : ((Mr = !0), Zr);
+             return 32 !== t.which ? null : ((Ir = !0), Zr);
             case 'textInput':
-             return (e = t.data) === Zr && Mr ? null : e;
+             return (e = t.data) === Zr && Ir ? null : e;
             default:
              return null;
            }
           })(e, r)
         : (function (e, t) {
-           if (Br) return 'compositionend' === e || (!Tr && Ir(e, t)) ? ((e = er()), (Jt = Xt = Qt = null), (Br = !1), e) : null;
+           if (Br) return 'compositionend' === e || (!Tr && Mr(e, t)) ? ((e = er()), (Jt = Xt = Qt = null), (Br = !1), e) : null;
            switch (e) {
             case 'paste':
             default:
@@ -6267,7 +6267,7 @@
         0 < (n = qn(n, 'onBeforeInput')).length &&
         ((o = new yr('onBeforeInput', 'beforeinput', null, r, o)), c.push({ event: o, listeners: n }), (o.data = v));
      }
-     Mn(c, t);
+     In(c, t);
     });
    }
    function Vn(e, t, r) {
@@ -6438,46 +6438,46 @@
    function Ao(e, t, r) {
     var n = e.stateNode;
     if (((t = t.childContextTypes), 'function' != typeof n.getChildContext)) return r;
-    for (var o in (n = n.getChildContext())) if (!(o in t)) throw Error(a(108, U(e) || 'Unknown', o));
+    for (var o in (n = n.getChildContext())) if (!(o in t)) throw Error(a(108, H(e) || 'Unknown', o));
     return Z({}, r, n);
    }
    function Zo(e) {
     return (e = ((e = e.stateNode) && e.__reactInternalMemoizedMergedChildContext) || So), (zo = Eo.current), Po(Eo, e), Po(No, No.current), !0;
    }
-   function Mo(e, t, r) {
+   function Io(e, t, r) {
     var n = e.stateNode;
     if (!n) throw Error(a(169));
     r ? ((e = Ao(e, t, zo)), (n.__reactInternalMemoizedMergedChildContext = e), Oo(No), Oo(Eo), Po(Eo, e)) : Oo(No), Po(No, r);
    }
-   var Io = null,
+   var Mo = null,
     Fo = !1,
     Bo = !1;
    function $o(e) {
-    null === Io ? (Io = [e]) : Io.push(e);
+    null === Mo ? (Mo = [e]) : Mo.push(e);
    }
-   function Uo() {
-    if (!Bo && null !== Io) {
+   function Ho() {
+    if (!Bo && null !== Mo) {
      Bo = !0;
      var e = 0,
       t = yt;
      try {
-      var r = Io;
+      var r = Mo;
       for (yt = 1; e < r.length; e++) {
        var n = r[e];
        do {
         n = n(!0);
        } while (null !== n);
       }
-      (Io = null), (Fo = !1);
+      (Mo = null), (Fo = !1);
      } catch (o) {
-      throw (null !== Io && (Io = Io.slice(e + 1)), We(Je, Uo), o);
+      throw (null !== Mo && (Mo = Mo.slice(e + 1)), We(Je, Ho), o);
      } finally {
       (yt = t), (Bo = !1);
      }
     }
     return null;
    }
-   var Ho = [],
+   var Uo = [],
     Vo = 0,
     qo = null,
     Wo = 0,
@@ -6487,7 +6487,7 @@
     Qo = 1,
     Xo = '';
    function Jo(e, t) {
-    (Ho[Vo++] = Wo), (Ho[Vo++] = qo), (qo = e), (Wo = t);
+    (Uo[Vo++] = Wo), (Uo[Vo++] = qo), (qo = e), (Wo = t);
    }
    function ea(e, t, r) {
     (Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Yo = e);
@@ -6505,7 +6505,7 @@
     null !== e.return && (Jo(e, 1), ea(e, 1, 0));
    }
    function ra(e) {
-    for (; e === qo; ) (qo = Ho[--Vo]), (Ho[Vo] = null), (Wo = Ho[--Vo]), (Ho[Vo] = null);
+    for (; e === qo; ) (qo = Uo[--Vo]), (Uo[Vo] = null), (Wo = Uo[--Vo]), (Uo[Vo] = null);
     for (; e === Yo; ) (Yo = Go[--Ko]), (Go[Ko] = null), (Xo = Go[--Ko]), (Go[Ko] = null), (Qo = Go[--Ko]), (Go[Ko] = null);
    }
    var na = null,
@@ -6655,7 +6655,7 @@
      return a === _ ? d(e, t, r.props.children, n, r.key) : null !== t && (t.elementType === a || ('object' == typeof a && null !== a && a.$$typeof === L && ya(a) === t.type)) ? (((n = o(t, r.props)).ref = ga(e, t, r)), (n.return = e), n) : (((n = Du(r.type, r.key, r.props, null, e.mode, n)).ref = ga(e, t, r)), (n.return = e), n);
     }
     function s(e, t, r, n) {
-     return null === t || 4 !== t.tag || t.stateNode.containerInfo !== r.containerInfo || t.stateNode.implementation !== r.implementation ? (((t = Mu(r, e.mode, n)).return = e), t) : (((t = o(t, r.children || [])).return = e), t);
+     return null === t || 4 !== t.tag || t.stateNode.containerInfo !== r.containerInfo || t.stateNode.implementation !== r.implementation ? (((t = Iu(r, e.mode, n)).return = e), t) : (((t = o(t, r.children || [])).return = e), t);
     }
     function d(e, t, r, n, a) {
      return null === t || 7 !== t.tag ? (((t = Ru(r, e.mode, n, a)).return = e), t) : (((t = o(t, r)).return = e), t);
@@ -6667,7 +6667,7 @@
        case x:
         return ((r = Du(t.type, t.key, t.props, null, e.mode, r)).ref = ga(e, null, t)), (r.return = e), r;
        case w:
-        return ((t = Mu(t, e.mode, r)).return = e), t;
+        return ((t = Iu(t, e.mode, r)).return = e), t;
        case L:
         return h(e, (0, t._init)(t._payload), r);
       }
@@ -6799,7 +6799,7 @@
           }
           t(n, a), (a = a.sibling);
          }
-         ((a = Mu(c, n.mode, l)).return = n), (n = a);
+         ((a = Iu(c, n.mode, l)).return = n), (n = a);
         }
         return i(n);
        case L:
@@ -6862,10 +6862,10 @@
    function Za(e) {
     e.updateQueue = { baseState: e.memoizedState, firstBaseUpdate: null, lastBaseUpdate: null, shared: { pending: null, interleaved: null, lanes: 0 }, effects: null };
    }
-   function Ma(e, t) {
+   function Ia(e, t) {
     (e = e.updateQueue), t.updateQueue === e && (t.updateQueue = { baseState: e.baseState, firstBaseUpdate: e.firstBaseUpdate, lastBaseUpdate: e.lastBaseUpdate, shared: e.shared, effects: e.effects });
    }
-   function Ia(e, t) {
+   function Ma(e, t) {
     return { eventTime: e, lane: t, tag: 0, payload: null, callback: null, next: null };
    }
    function Fa(e, t, r) {
@@ -6900,7 +6900,7 @@
     }
     null === (e = r.lastBaseUpdate) ? (r.firstBaseUpdate = t) : (e.next = t), (r.lastBaseUpdate = t);
    }
-   function Ua(e, t, r, n) {
+   function Ha(e, t, r, n) {
     var o = e.updateQueue;
     Aa = !1;
     var a = o.firstBaseUpdate,
@@ -6958,7 +6958,7 @@
      (Al |= c), (e.lanes = c), (e.memoizedState = d);
     }
    }
-   function Ha(e, t, r) {
+   function Ua(e, t, r) {
     if (((e = t.effects), (t.effects = null), null !== e))
      for (t = 0; t < e.length; t++) {
       var n = e[t],
@@ -7206,10 +7206,10 @@
    function Zc(e, t) {
     return Dc(4, 2, e, t);
    }
-   function Mc(e, t) {
+   function Ic(e, t) {
     return Dc(4, 4, e, t);
    }
-   function Ic(e, t) {
+   function Mc(e, t) {
     return 'function' == typeof t
      ? ((e = e()),
        t(e),
@@ -7225,7 +7225,7 @@
        : void 0;
    }
    function Fc(e, t, r) {
-    return (r = null != r ? r.concat([e]) : null), Dc(4, 4, Ic.bind(null, t, e), r);
+    return (r = null != r ? r.concat([e]) : null), Dc(4, 4, Mc.bind(null, t, e), r);
    }
    function Bc() {}
    function $c(e, t) {
@@ -7234,13 +7234,13 @@
     var n = r.memoizedState;
     return null !== n && null !== t && fc(t, n[1]) ? n[0] : ((r.memoizedState = [e, t]), e);
    }
-   function Uc(e, t) {
+   function Hc(e, t) {
     var r = yc();
     t = void 0 === t ? null : t;
     var n = r.memoizedState;
     return null !== n && null !== t && fc(t, n[1]) ? n[0] : ((e = e()), (r.memoizedState = [e, t]), e);
    }
-   function Hc(e, t, r) {
+   function Uc(e, t, r) {
     return 0 == (21 & cc) ? (e.baseState && ((e.baseState = !1), (yi = !0)), (e.memoizedState = r)) : (cn(r, t) || ((r = ft()), (ic.lanes |= r), (Al |= r), (e.baseState = !0)), t);
    }
    function Vc(e, t) {
@@ -7306,7 +7306,7 @@
      useContext: za,
      useEffect: Rc,
      useImperativeHandle: function (e, t, r) {
-      return (r = null != r ? r.concat([e]) : null), Tc(4194308, 4, Ic.bind(null, t, e), r);
+      return (r = null != r ? r.concat([e]) : null), Tc(4194308, 4, Mc.bind(null, t, e), r);
      },
      useLayoutEffect: function (e, t) {
       return Tc(4194308, 4, e, t);
@@ -7368,8 +7368,8 @@
      useEffect: Ac,
      useImperativeHandle: Fc,
      useInsertionEffect: Zc,
-     useLayoutEffect: Mc,
-     useMemo: Uc,
+     useLayoutEffect: Ic,
+     useMemo: Hc,
      useReducer: xc,
      useRef: Lc,
      useState: function () {
@@ -7377,7 +7377,7 @@
      },
      useDebugValue: Bc,
      useDeferredValue: function (e) {
-      return Hc(yc(), lc.memoizedState, e);
+      return Uc(yc(), lc.memoizedState, e);
      },
      useTransition: function () {
       return [xc(kc)[0], yc().memoizedState];
@@ -7394,8 +7394,8 @@
      useEffect: Ac,
      useImperativeHandle: Fc,
      useInsertionEffect: Zc,
-     useLayoutEffect: Mc,
-     useMemo: Uc,
+     useLayoutEffect: Ic,
+     useMemo: Hc,
      useReducer: wc,
      useRef: Lc,
      useState: function () {
@@ -7404,7 +7404,7 @@
      useDebugValue: Bc,
      useDeferredValue: function (e) {
       var t = yc();
-      return null === lc ? (t.memoizedState = e) : Hc(t, lc.memoizedState, e);
+      return null === lc ? (t.memoizedState = e) : Uc(t, lc.memoizedState, e);
      },
      useTransition: function () {
       return [wc(kc)[0], yc().memoizedState];
@@ -7432,21 +7432,21 @@
      e = e._reactInternals;
      var n = eu(),
       o = tu(e),
-      a = Ia(n, o);
+      a = Ma(n, o);
      (a.payload = t), null != r && (a.callback = r), null !== (t = Fa(e, a, o)) && (ru(t, e, o, n), Ba(t, e, o));
     },
     enqueueReplaceState: function (e, t, r) {
      e = e._reactInternals;
      var n = eu(),
       o = tu(e),
-      a = Ia(n, o);
+      a = Ma(n, o);
      (a.tag = 1), (a.payload = t), null != r && (a.callback = r), null !== (t = Fa(e, a, o)) && (ru(t, e, o, n), Ba(t, e, o));
     },
     enqueueForceUpdate: function (e, t) {
      e = e._reactInternals;
      var r = eu(),
       n = tu(e),
-      o = Ia(r, n);
+      o = Ma(r, n);
      (o.tag = 2), null != t && (o.callback = t), null !== (t = Fa(e, o, n)) && (ru(t, e, n, r), Ba(t, e, n));
     },
    };
@@ -7466,7 +7466,7 @@
     var o = e.stateNode;
     (o.props = r), (o.state = e.memoizedState), (o.refs = {}), Za(e);
     var a = t.contextType;
-    'object' == typeof a && null !== a ? (o.context = za(a)) : ((a = To(t) ? zo : Eo.current), (o.context = Lo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), Ua(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
+    'object' == typeof a && null !== a ? (o.context = za(a)) : ((a = To(t) ? zo : Eo.current), (o.context = Lo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), Ha(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
    }
    function ui(e, t) {
     try {
@@ -7495,17 +7495,17 @@
    }
    var hi = 'function' == typeof WeakMap ? WeakMap : Map;
    function bi(e, t, r) {
-    ((r = Ia(-1, r)).tag = 3), (r.payload = { element: null });
+    ((r = Ma(-1, r)).tag = 3), (r.payload = { element: null });
     var n = t.value;
     return (
      (r.callback = function () {
-      Hl || ((Hl = !0), (Vl = n)), di(0, t);
+      Ul || ((Ul = !0), (Vl = n)), di(0, t);
      }),
      r
     );
    }
    function pi(e, t, r) {
-    (r = Ia(-1, r)).tag = 3;
+    (r = Ma(-1, r)).tag = 3;
     var n = e.type.getDerivedStateFromError;
     if ('function' == typeof n) {
      var o = t.value;
@@ -7546,7 +7546,7 @@
     return null;
    }
    function gi(e, t, r, n, o) {
-    return 0 == (1 & e.mode) ? (e === t ? (e.flags |= 65536) : ((e.flags |= 128), (r.flags |= 131072), (r.flags &= -52805), 1 === r.tag && (null === r.alternate ? (r.tag = 17) : (((t = Ia(-1, 1)).tag = 2), Fa(r, t, 1))), (r.lanes |= 1)), e) : ((e.flags |= 65536), (e.lanes = o), e);
+    return 0 == (1 & e.mode) ? (e === t ? (e.flags |= 65536) : ((e.flags |= 128), (r.flags |= 131072), (r.flags &= -52805), 1 === r.tag && (null === r.alternate ? (r.tag = 17) : (((t = Ma(-1, 1)).tag = 2), Fa(r, t, 1))), (r.lanes |= 1)), e) : ((e.flags |= 65536), (e.lanes = o), e);
    }
    var vi = k.ReactCurrentOwner,
     yi = !1;
@@ -7556,7 +7556,7 @@
    function xi(e, t, r, n, o) {
     r = r.render;
     var a = t.ref;
-    return Na(t, o), (n = mc(e, t, r, n, a, o)), (r = gc()), null === e || yi ? (aa && r && ta(t), (t.flags |= 1), ki(e, t, n, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
+    return Na(t, o), (n = mc(e, t, r, n, a, o)), (r = gc()), null === e || yi ? (aa && r && ta(t), (t.flags |= 1), ki(e, t, n, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Ui(e, t, o));
    }
    function wi(e, t, r, n, o) {
     if (null === e) {
@@ -7565,7 +7565,7 @@
     }
     if (((a = e.child), 0 == (e.lanes & o))) {
      var c = a.memoizedProps;
-     if ((r = null !== (r = r.compare) ? r : ln)(c, n) && e.ref === t.ref) return Hi(e, t, o);
+     if ((r = null !== (r = r.compare) ? r : ln)(c, n) && e.ref === t.ref) return Ui(e, t, o);
     }
     return (t.flags |= 1), ((e = Tu(a, n)).ref = t.ref), (e.return = t), (t.child = e);
    }
@@ -7573,7 +7573,7 @@
     if (null !== e) {
      var a = e.memoizedProps;
      if (ln(a, n) && e.ref === t.ref) {
-      if (((yi = !1), (t.pendingProps = n = a), 0 == (e.lanes & o))) return (t.lanes = e.lanes), Hi(e, t, o);
+      if (((yi = !1), (t.pendingProps = n = a), 0 == (e.lanes & o))) return (t.lanes = e.lanes), Ui(e, t, o);
       0 != (131072 & e.flags) && (yi = !0);
      }
     }
@@ -7598,14 +7598,14 @@
    }
    function Oi(e, t, r, n, o) {
     var a = To(r) ? zo : Eo.current;
-    return (a = Lo(t, a)), Na(t, o), (r = mc(e, t, r, n, a, o)), (n = gc()), null === e || yi ? (aa && n && ta(t), (t.flags |= 1), ki(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
+    return (a = Lo(t, a)), Na(t, o), (r = mc(e, t, r, n, a, o)), (n = gc()), null === e || yi ? (aa && n && ta(t), (t.flags |= 1), ki(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Ui(e, t, o));
    }
    function Pi(e, t, r, n, o) {
     if (To(r)) {
      var a = !0;
      Zo(t);
     } else a = !1;
-    if ((Na(t, o), null === t.stateNode)) Ui(e, t), ci(t, r, n), li(t, r, n, o), (n = !0);
+    if ((Na(t, o), null === t.stateNode)) Hi(e, t), ci(t, r, n), li(t, r, n, o), (n = !0);
     else if (null === e) {
      var c = t.stateNode,
       i = t.memoizedProps;
@@ -7617,11 +7617,11 @@
       d = 'function' == typeof s || 'function' == typeof c.getSnapshotBeforeUpdate;
      d || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== n || l !== u) && ii(t, c, n, u)), (Aa = !1);
      var h = t.memoizedState;
-     (c.state = h), Ua(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || No.current || Aa ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Aa || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
+     (c.state = h), Ha(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || No.current || Aa ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Aa || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
     } else {
-     (c = t.stateNode), Ma(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = za(l)) : (l = Lo(t, (l = To(r) ? zo : Eo.current)));
+     (c = t.stateNode), Ia(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = za(l)) : (l = Lo(t, (l = To(r) ? zo : Eo.current)));
      var b = r.getDerivedStateFromProps;
-     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Aa = !1), (h = t.memoizedState), (c.state = h), Ua(t, n, c, o);
+     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Aa = !1), (h = t.memoizedState), (c.state = h), Ha(t, n, c, o);
      var p = t.memoizedState;
      i !== d || h !== p || No.current || Aa ? ('function' == typeof b && (ni(t, r, b, n), (p = t.memoizedState)), (u = Aa || ai(t, r, u, n, h, p, l) || !1) ? (s || ('function' != typeof c.UNSAFE_componentWillUpdate && 'function' != typeof c.componentWillUpdate) || ('function' == typeof c.componentWillUpdate && c.componentWillUpdate(n, p, l), 'function' == typeof c.UNSAFE_componentWillUpdate && c.UNSAFE_componentWillUpdate(n, p, l)), 'function' == typeof c.componentDidUpdate && (t.flags |= 4), 'function' == typeof c.getSnapshotBeforeUpdate && (t.flags |= 1024)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (t.memoizedProps = n), (t.memoizedState = p)), (c.props = n), (c.state = p), (c.context = l), (n = u)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (n = !1));
     }
@@ -7630,10 +7630,10 @@
    function Si(e, t, r, n, o, a) {
     ji(e, t);
     var c = 0 != (128 & t.flags);
-    if (!n && !c) return o && Mo(t, r, !1), Hi(e, t, a);
+    if (!n && !c) return o && Io(t, r, !1), Ui(e, t, a);
     (n = t.stateNode), (vi.current = t);
     var i = c && 'function' != typeof r.getDerivedStateFromError ? null : n.render();
-    return (t.flags |= 1), null !== e && c ? ((t.child = xa(t, e.child, null, a)), (t.child = xa(t, null, i, a))) : ki(e, t, i, a), (t.memoizedState = n.state), o && Mo(t, r, !0), t.child;
+    return (t.flags |= 1), null !== e && c ? ((t.child = xa(t, e.child, null, a)), (t.child = xa(t, null, i, a))) : ki(e, t, i, a), (t.memoizedState = n.state), o && Io(t, r, !0), t.child;
    }
    function Ei(e) {
     var t = e.stateNode;
@@ -7656,14 +7656,14 @@
      c = ec.current,
      i = !1,
      l = 0 != (128 & t.flags);
-    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Po(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Au(l, o, 0, null)), (e = Ru(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ai(r)), (t.memoizedState = Ri), e) : Mi(t, l));
+    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Po(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Au(l, o, 0, null)), (e = Ru(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ai(r)), (t.memoizedState = Ri), e) : Ii(t, l));
     if (null !== (c = e.memoizedState) && null !== (n = c.dehydrated))
      return (function (e, t, r, n, o, c, i) {
-      if (r) return 256 & t.flags ? ((t.flags &= -257), Ii(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Au({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Ru(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ai(i)), (t.memoizedState = Ri), c);
-      if (0 == (1 & t.mode)) return Ii(e, t, i, null);
+      if (r) return 256 & t.flags ? ((t.flags &= -257), Mi(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Au({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Ru(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ai(i)), (t.memoizedState = Ri), c);
+      if (0 == (1 & t.mode)) return Mi(e, t, i, null);
       if ('$!' === o.data) {
        if ((n = o.nextSibling && o.nextSibling.dataset)) var l = n.dgst;
-       return (n = l), Ii(e, t, i, (n = si((c = Error(a(419))), n, void 0)));
+       return (n = l), Mi(e, t, i, (n = si((c = Error(a(419))), n, void 0)));
       }
       if (((l = 0 != (i & e.childLanes)), yi || l)) {
        if (null !== (n = El)) {
@@ -7705,9 +7705,9 @@
         }
         0 !== (o = 0 != (o & (n.suspendedLanes | i)) ? 0 : o) && o !== c.retryLane && ((c.retryLane = o), Ra(e, o), ru(n, e, o, -1));
        }
-       return fu(), Ii(e, t, i, (n = si(Error(a(421)))));
+       return fu(), Mi(e, t, i, (n = si(Error(a(421)))));
       }
-      return '$?' === o.data ? ((t.flags |= 128), (t.child = e.child), (t = Pu.bind(null, e)), (o._reactRetry = t), null) : ((e = c.treeContext), (oa = uo(o.nextSibling)), (na = t), (aa = !0), (ca = null), null !== e && ((Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Qo = e.id), (Xo = e.overflow), (Yo = t)), (t = Mi(t, n.children)), (t.flags |= 4096), t);
+      return '$?' === o.data ? ((t.flags |= 128), (t.child = e.child), (t = Pu.bind(null, e)), (o._reactRetry = t), null) : ((e = c.treeContext), (oa = uo(o.nextSibling)), (na = t), (aa = !0), (ca = null), null !== e && ((Go[Ko++] = Qo), (Go[Ko++] = Xo), (Go[Ko++] = Yo), (Qo = e.id), (Xo = e.overflow), (Yo = t)), (t = Ii(t, n.children)), (t.flags |= 4096), t);
      })(e, t, l, o, n, c, r);
     if (i) {
      (i = o.fallback), (l = t.mode), (n = (c = e.child).sibling);
@@ -7716,11 +7716,11 @@
     }
     return (e = (i = e.child).sibling), (o = Tu(i, { mode: 'visible', children: o.children })), 0 == (1 & t.mode) && (o.lanes = r), (o.return = t), (o.sibling = null), null !== e && (null === (r = t.deletions) ? ((t.deletions = [e]), (t.flags |= 16)) : r.push(e)), (t.child = o), (t.memoizedState = null), o;
    }
-   function Mi(e, t) {
+   function Ii(e, t) {
     return ((t = Au({ mode: 'visible', children: t }, e.mode, 0, null)).return = e), (e.child = t);
    }
-   function Ii(e, t, r, n) {
-    return null !== n && fa(n), xa(t, e.child, null, r), ((e = Mi(t, t.pendingProps.children)).flags |= 2), (t.memoizedState = null), e;
+   function Mi(e, t, r, n) {
+    return null !== n && fa(n), xa(t, e.child, null, r), ((e = Ii(t, t.pendingProps.children)).flags |= 2), (t.memoizedState = null), e;
    }
    function Fi(e, t, r) {
     e.lanes |= t;
@@ -7779,10 +7779,10 @@
      }
     return t.child;
    }
-   function Ui(e, t) {
+   function Hi(e, t) {
     0 == (1 & t.mode) && null !== e && ((e.alternate = null), (t.alternate = null), (t.flags |= 2));
    }
-   function Hi(e, t, r) {
+   function Ui(e, t, r) {
     if ((null !== e && (t.dependencies = e.dependencies), (Al |= t.lanes), 0 == (r & t.childLanes))) return null;
     if (null !== e && t.child !== e.child) throw Error(a(153));
     if (null !== t.child) {
@@ -7846,41 +7846,41 @@
         var c = t.memoizedProps;
         switch (((n[bo] = t), (n[po] = c), (e = 0 != (1 & t.mode)), r)) {
          case 'dialog':
-          In('cancel', n), In('close', n);
+          Mn('cancel', n), Mn('close', n);
           break;
          case 'iframe':
          case 'object':
          case 'embed':
-          In('load', n);
+          Mn('load', n);
           break;
          case 'video':
          case 'audio':
-          for (o = 0; o < Rn.length; o++) In(Rn[o], n);
+          for (o = 0; o < Rn.length; o++) Mn(Rn[o], n);
           break;
          case 'source':
-          In('error', n);
+          Mn('error', n);
           break;
          case 'img':
          case 'image':
          case 'link':
-          In('error', n), In('load', n);
+          Mn('error', n), Mn('load', n);
           break;
          case 'details':
-          In('toggle', n);
+          Mn('toggle', n);
           break;
          case 'input':
-          Y(n, c), In('invalid', n);
+          Y(n, c), Mn('invalid', n);
           break;
          case 'select':
-          (n._wrapperState = { wasMultiple: !!c.multiple }), In('invalid', n);
+          (n._wrapperState = { wasMultiple: !!c.multiple }), Mn('invalid', n);
           break;
          case 'textarea':
-          oe(n, c), In('invalid', n);
+          oe(n, c), Mn('invalid', n);
         }
         for (var l in (ve(r, c), (o = null), c))
          if (c.hasOwnProperty(l)) {
           var u = c[l];
-          'children' === l ? ('string' == typeof u ? n.textContent !== u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', u])) : 'number' == typeof u && n.textContent !== '' + u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', '' + u]))) : i.hasOwnProperty(l) && null != u && 'onScroll' === l && In('scroll', n);
+          'children' === l ? ('string' == typeof u ? n.textContent !== u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', u])) : 'number' == typeof u && n.textContent !== '' + u && (!0 !== c.suppressHydrationWarning && Xn(n.textContent, u, e), (o = ['children', '' + u]))) : i.hasOwnProperty(l) && null != u && 'onScroll' === l && Mn('scroll', n);
          }
         switch (r) {
          case 'input':
@@ -7901,46 +7901,46 @@
         e: {
          switch (((l = ye(r, n)), r)) {
           case 'dialog':
-           In('cancel', e), In('close', e), (o = n);
+           Mn('cancel', e), Mn('close', e), (o = n);
            break;
           case 'iframe':
           case 'object':
           case 'embed':
-           In('load', e), (o = n);
+           Mn('load', e), (o = n);
            break;
           case 'video':
           case 'audio':
-           for (o = 0; o < Rn.length; o++) In(Rn[o], e);
+           for (o = 0; o < Rn.length; o++) Mn(Rn[o], e);
            o = n;
            break;
           case 'source':
-           In('error', e), (o = n);
+           Mn('error', e), (o = n);
            break;
           case 'img':
           case 'image':
           case 'link':
-           In('error', e), In('load', e), (o = n);
+           Mn('error', e), Mn('load', e), (o = n);
            break;
           case 'details':
-           In('toggle', e), (o = n);
+           Mn('toggle', e), (o = n);
            break;
           case 'input':
-           Y(e, n), (o = K(e, n)), In('invalid', e);
+           Y(e, n), (o = K(e, n)), Mn('invalid', e);
            break;
           case 'option':
           default:
            o = n;
            break;
           case 'select':
-           (e._wrapperState = { wasMultiple: !!n.multiple }), (o = Z({}, n, { value: void 0 })), In('invalid', e);
+           (e._wrapperState = { wasMultiple: !!n.multiple }), (o = Z({}, n, { value: void 0 })), Mn('invalid', e);
            break;
           case 'textarea':
-           oe(e, n), (o = ne(e, n)), In('invalid', e);
+           oe(e, n), (o = ne(e, n)), Mn('invalid', e);
          }
          for (c in (ve(r, o), (u = o)))
           if (u.hasOwnProperty(c)) {
            var s = u[c];
-           'style' === c ? me(e, s) : 'dangerouslySetInnerHTML' === c ? null != (s = s ? s.__html : void 0) && de(e, s) : 'children' === c ? ('string' == typeof s ? ('textarea' !== r || '' !== s) && he(e, s) : 'number' == typeof s && he(e, '' + s)) : 'suppressContentEditableWarning' !== c && 'suppressHydrationWarning' !== c && 'autoFocus' !== c && (i.hasOwnProperty(c) ? null != s && 'onScroll' === c && In('scroll', e) : null != s && y(e, c, s, l));
+           'style' === c ? me(e, s) : 'dangerouslySetInnerHTML' === c ? null != (s = s ? s.__html : void 0) && de(e, s) : 'children' === c ? ('string' == typeof s ? ('textarea' !== r || '' !== s) && he(e, s) : 'number' == typeof s && he(e, '' + s)) : 'suppressContentEditableWarning' !== c && 'suppressHydrationWarning' !== c && 'autoFocus' !== c && (i.hasOwnProperty(c) ? null != s && 'onScroll' === c && Mn('scroll', e) : null != s && y(e, c, s, l));
           }
          switch (r) {
           case 'input':
@@ -7950,7 +7950,7 @@
            q(e), ce(e);
            break;
           case 'option':
-           null != n.value && e.setAttribute('value', '' + H(n.value));
+           null != n.value && e.setAttribute('value', '' + U(n.value));
            break;
           case 'select':
            (e.multiple = !!n.multiple), null != (c = n.value) ? re(e, !!n.multiple, c, !1) : null != n.defaultValue && re(e, !!n.multiple, n.defaultValue, !0);
@@ -8120,7 +8120,7 @@
           for (a in l) !l.hasOwnProperty(a) || (u && u.hasOwnProperty(a)) || (r || (r = {}), (r[a] = ''));
           for (a in u) u.hasOwnProperty(a) && l[a] !== u[a] && (r || (r = {}), (r[a] = u[a]));
          } else r || (c || (c = []), c.push(s, r)), (r = u);
-        else 'dangerouslySetInnerHTML' === s ? ((u = u ? u.__html : void 0), (l = l ? l.__html : void 0), null != u && l !== u && (c = c || []).push(s, u)) : 'children' === s ? ('string' != typeof u && 'number' != typeof u) || (c = c || []).push(s, '' + u) : 'suppressContentEditableWarning' !== s && 'suppressHydrationWarning' !== s && (i.hasOwnProperty(s) ? (null != u && 'onScroll' === s && In('scroll', e), c || l === u || (c = [])) : (c = c || []).push(s, u));
+        else 'dangerouslySetInnerHTML' === s ? ((u = u ? u.__html : void 0), (l = l ? l.__html : void 0), null != u && l !== u && (c = c || []).push(s, u)) : 'children' === s ? ('string' != typeof u && 'number' != typeof u) || (c = c || []).push(s, '' + u) : 'suppressContentEditableWarning' !== s && 'suppressHydrationWarning' !== s && (i.hasOwnProperty(s) ? (null != u && 'onScroll' === s && Mn('scroll', e), c || l === u || (c = [])) : (c = c || []).push(s, u));
       }
       r && (c = c || []).push('style', r);
       var s = c;
@@ -8558,7 +8558,7 @@
             n.componentDidUpdate(o, r.memoizedState, n.__reactInternalSnapshotBeforeUpdate);
            }
           var c = t.updateQueue;
-          null !== c && Ha(t, c, n);
+          null !== c && Ua(t, c, n);
           break;
          case 3:
           var i = t.updateQueue;
@@ -8569,7 +8569,7 @@
              case 1:
               r = t.child.stateNode;
             }
-           Ha(t, i, r);
+           Ua(t, i, r);
           }
           break;
          case 5:
@@ -8715,13 +8715,13 @@
     Rl = null,
     Al = 0,
     Zl = 0,
-    Ml = 0,
-    Il = null,
+    Il = 0,
+    Ml = null,
     Fl = null,
     Bl = 0,
     $l = 1 / 0,
-    Ul = null,
-    Hl = !1,
+    Hl = null,
+    Ul = !1,
     Vl = null,
     ql = null,
     Wl = !1,
@@ -8739,7 +8739,7 @@
    }
    function ru(e, t, r, n) {
     if (50 < Yl) throw ((Yl = 0), (Ql = null), Error(a(185)));
-    gt(e, r, n), (0 != (2 & Sl) && e === El) || (e === El && (0 == (2 & Sl) && (Zl |= r), 4 === Dl && iu(e, zl)), nu(e, n), 1 === r && 0 === Sl && 0 == (1 & t.mode) && (($l = Qe() + 500), Fo && Uo()));
+    gt(e, r, n), (0 != (2 & Sl) && e === El) || (e === El && (0 == (2 & Sl) && (Zl |= r), 4 === Dl && iu(e, zl)), nu(e, n), 1 === r && 0 === Sl && 0 == (1 & t.mode) && (($l = Qe() + 500), Fo && Ho()));
    }
    function nu(e, t) {
     var r = e.callbackNode;
@@ -8761,7 +8761,7 @@
          })(lu.bind(null, e))
        : $o(lu.bind(null, e)),
        co(function () {
-        0 == (6 & Sl) && Uo();
+        0 == (6 & Sl) && Ho();
        }),
        (r = null);
      else {
@@ -8796,7 +8796,7 @@
      var o = Sl;
      Sl |= 2;
      var c = pu();
-     for ((El === e && zl === t) || ((Ul = null), ($l = Qe() + 500), hu(e, t)); ; )
+     for ((El === e && zl === t) || ((Hl = null), ($l = Qe() + 500), hu(e, t)); ; )
       try {
        vu();
        break;
@@ -8849,7 +8849,7 @@
         throw Error(a(345));
        case 2:
        case 5:
-        xu(e, Fl, Ul);
+        xu(e, Fl, Hl);
         break;
        case 3:
         if ((iu(e, n), (130023424 & n) === n && 10 < (t = Bl + 500 - Qe()))) {
@@ -8858,10 +8858,10 @@
           eu(), (e.pingedLanes |= e.suspendedLanes & o);
           break;
          }
-         e.timeoutHandle = no(xu.bind(null, e, Fl, Ul), t);
+         e.timeoutHandle = no(xu.bind(null, e, Fl, Hl), t);
          break;
         }
-        xu(e, Fl, Ul);
+        xu(e, Fl, Hl);
         break;
        case 4:
         if ((iu(e, n), (4194240 & n) === n)) break;
@@ -8870,10 +8870,10 @@
          (c = 1 << i), (i = t[i]) > o && (o = i), (n &= ~c);
         }
         if (((n = o), 10 < (n = (120 > (n = Qe() - n) ? 120 : 480 > n ? 480 : 1080 > n ? 1080 : 1920 > n ? 1920 : 3e3 > n ? 3e3 : 4320 > n ? 4320 : 1960 * Cl(n / 1960)) - n))) {
-         e.timeoutHandle = no(xu.bind(null, e, Fl, Ul), n);
+         e.timeoutHandle = no(xu.bind(null, e, Fl, Hl), n);
          break;
         }
-        xu(e, Fl, Ul);
+        xu(e, Fl, Hl);
         break;
        default:
         throw Error(a(329));
@@ -8883,14 +8883,14 @@
     return nu(e, Qe()), e.callbackNode === r ? ou.bind(null, e) : null;
    }
    function au(e, t) {
-    var r = Il;
+    var r = Ml;
     return e.current.memoizedState.isDehydrated && (hu(e, t).flags |= 256), 2 !== (e = mu(e, t)) && ((t = Fl), (Fl = r), null !== t && cu(t)), e;
    }
    function cu(e) {
     null === Fl ? (Fl = e) : Fl.push.apply(Fl, e);
    }
    function iu(e, t) {
-    for (t &= ~Ml, t &= ~Zl, e.suspendedLanes |= t, e.pingedLanes &= ~t, e = e.expirationTimes; 0 < t; ) {
+    for (t &= ~Il, t &= ~Zl, e.suspendedLanes |= t, e.pingedLanes &= ~t, e = e.expirationTimes; 0 < t; ) {
      var r = 31 - ct(t),
       n = 1 << r;
      (e[r] = -1), (t &= ~n);
@@ -8908,7 +8908,7 @@
     }
     if (1 === r) throw ((r = Rl), hu(e, 0), iu(e, t), nu(e, Qe()), r);
     if (6 === r) throw Error(a(345));
-    return (e.finishedWork = e.current.alternate), (e.finishedLanes = t), xu(e, Fl, Ul), nu(e, Qe()), null;
+    return (e.finishedWork = e.current.alternate), (e.finishedLanes = t), xu(e, Fl, Hl), nu(e, Qe()), null;
    }
    function uu(e, t) {
     var r = Sl;
@@ -8916,7 +8916,7 @@
     try {
      return e(t);
     } finally {
-     0 === (Sl = r) && (($l = Qe() + 500), Fo && Uo());
+     0 === (Sl = r) && (($l = Qe() + 500), Fo && Ho());
     }
    }
    function su(e) {
@@ -8928,7 +8928,7 @@
     try {
      if (((Pl.transition = null), (yt = 1), e)) return e();
     } finally {
-     (yt = n), (Pl.transition = r), 0 == (6 & (Sl = t)) && Uo();
+     (yt = n), (Pl.transition = r), 0 == (6 & (Sl = t)) && Ho();
     }
    }
    function du() {
@@ -8966,7 +8966,7 @@
       }
       r = r.return;
      }
-    if (((El = e), (Nl = e = Tu(e.current, null)), (zl = Ll = t), (Dl = 0), (Rl = null), (Ml = Zl = Al = 0), (Fl = Il = null), null !== La)) {
+    if (((El = e), (Nl = e = Tu(e.current, null)), (zl = Ll = t), (Dl = 0), (Rl = null), (Il = Zl = Al = 0), (Fl = Ml = null), null !== La)) {
      for (t = 0; t < La.length; t++)
       if (null !== (n = (r = La[t]).interleaved)) {
        r.interleaved = null;
@@ -9032,7 +9032,7 @@
          break e;
         }
        }
-       (c = u = ui(u, l)), 4 !== Dl && (Dl = 2), null === Il ? (Il = [c]) : Il.push(c), (c = i);
+       (c = u = ui(u, l)), 4 !== Dl && (Dl = 2), null === Ml ? (Ml = [c]) : Ml.push(c), (c = i);
        do {
         switch (c.tag) {
          case 3:
@@ -9069,7 +9069,7 @@
     var r = Sl;
     Sl |= 2;
     var n = pu();
-    for ((El === e && zl === t) || ((Ul = null), hu(e, t)); ; )
+    for ((El === e && zl === t) || ((Hl = null), hu(e, t)); ; )
      try {
       gu();
       break;
@@ -9150,7 +9150,7 @@
         (Sl |= 4),
          (Ol.current = null),
          (function (e, t) {
-          if (((eo = Ht), bn((e = hn())))) {
+          if (((eo = Ut), bn((e = hn())))) {
            if ('selectionStart' in e) var r = { start: e.selectionStart, end: e.selectionEnd };
            else
             e: {
@@ -9187,7 +9187,7 @@
             }
            r = r || { start: 0, end: 0 };
           } else r = null;
-          for (to = { focusedElem: e, selectionRange: r }, Ht = !1, Xi = t; null !== Xi; )
+          for (to = { focusedElem: e, selectionRange: r }, Ut = !1, Xi = t; null !== Xi; )
            if (((e = (t = Xi).child), 0 != (1028 & t.subtreeFlags) && null !== e)) (e.return = t), (Xi = e);
            else
             for (; null !== Xi; ) {
@@ -9233,7 +9233,7 @@
          })(e, r),
          ml(r, e),
          pn(to),
-         (Ht = !!eo),
+         (Ut = !!eo),
          (to = eo = null),
          (e.current = r),
          vl(r, e, o),
@@ -9256,8 +9256,8 @@
         null !== t)
        )
         for (n = e.onRecoverableError, r = 0; r < t.length; r++) (o = t[r]), n(o.value, { componentStack: o.stack, digest: o.digest });
-       if (Hl) throw ((Hl = !1), (e = Vl), (Vl = null), e);
-       0 != (1 & Kl) && 0 !== e.tag && wu(), (c = e.pendingLanes), 0 != (1 & c) ? (e === Ql ? Yl++ : ((Yl = 0), (Ql = e))) : (Yl = 0), Uo();
+       if (Ul) throw ((Ul = !1), (e = Vl), (Vl = null), e);
+       0 != (1 & Kl) && 0 !== e.tag && wu(), (c = e.pendingLanes), 0 != (1 & c) ? (e === Ql ? Yl++ : ((Yl = 0), (Ql = e))) : (Yl = 0), Ho();
       })(e, t, r, n);
     } finally {
      (Pl.transition = o), (yt = n);
@@ -9369,7 +9369,7 @@
           Xi = l.return;
          }
        }
-       if (((Sl = o), Uo(), at && 'function' == typeof at.onPostCommitFiberRoot))
+       if (((Sl = o), Ho(), at && 'function' == typeof at.onPostCommitFiberRoot))
         try {
          at.onPostCommitFiberRoot(ot, e);
         } catch (w) {}
@@ -9405,7 +9405,7 @@
    }
    function ju(e, t, r) {
     var n = e.pingCache;
-    null !== n && n.delete(t), (t = eu()), (e.pingedLanes |= e.suspendedLanes & r), El === e && (zl & r) === r && (4 === Dl || (3 === Dl && (130023424 & zl) === zl && 500 > Qe() - Bl) ? hu(e, 0) : (Ml |= r)), nu(e, t);
+    null !== n && n.delete(t), (t = eu()), (e.pingedLanes |= e.suspendedLanes & r), El === e && (zl & r) === r && (4 === Dl || (3 === Dl && (130023424 & zl) === zl && 500 > Qe() - Bl) ? hu(e, 0) : (Il |= r)), nu(e, t);
    }
    function Ou(e, t) {
     0 === t && (0 == (1 & e.mode) ? (t = 1) : ((t = st), 0 == (130023424 & (st <<= 1)) && (st = 4194304)));
@@ -9500,14 +9500,14 @@
    function Zu(e, t, r) {
     return ((e = zu(6, e, null, t)).lanes = r), e;
    }
-   function Mu(e, t, r) {
+   function Iu(e, t, r) {
     return ((t = zu(4, null !== e.children ? e.children : [], e.key, t)).lanes = r), (t.stateNode = { containerInfo: e.containerInfo, pendingChildren: null, implementation: e.implementation }), t;
    }
-   function Iu(e, t, r, n, o) {
+   function Mu(e, t, r, n, o) {
     (this.tag = t), (this.containerInfo = e), (this.finishedWork = this.pingCache = this.current = this.pendingChildren = null), (this.timeoutHandle = -1), (this.callbackNode = this.pendingContext = this.context = null), (this.callbackPriority = 0), (this.eventTimes = mt(0)), (this.expirationTimes = mt(-1)), (this.entangledLanes = this.finishedLanes = this.mutableReadLanes = this.expiredLanes = this.pingedLanes = this.suspendedLanes = this.pendingLanes = 0), (this.entanglements = mt(0)), (this.identifierPrefix = n), (this.onRecoverableError = o), (this.mutableSourceEagerHydrationData = null);
    }
    function Fu(e, t, r, n, o, a, c, i, l) {
-    return (e = new Iu(e, t, r, i, l)), 1 === t ? ((t = 1), !0 === a && (t |= 8)) : (t = 0), (a = zu(3, null, null, t)), (e.current = a), (a.stateNode = e), (a.memoizedState = { element: n, isDehydrated: r, cache: null, transitions: null, pendingSuspenseBoundaries: null }), Za(a), e;
+    return (e = new Mu(e, t, r, i, l)), 1 === t ? ((t = 1), !0 === a && (t |= 8)) : (t = 0), (a = zu(3, null, null, t)), (e.current = a), (a.stateNode = e), (a.memoizedState = { element: n, isDehydrated: r, cache: null, transitions: null, pendingSuspenseBoundaries: null }), Za(a), e;
    }
    function Bu(e) {
     if (!e) return So;
@@ -9536,15 +9536,15 @@
     return t;
    }
    function $u(e, t, r, n, o, a, c, i, l) {
-    return ((e = Fu(r, n, !0, e, 0, a, 0, i, l)).context = Bu(null)), (r = e.current), ((a = Ia((n = eu()), (o = tu(r)))).callback = null != t ? t : null), Fa(r, a, o), (e.current.lanes = o), gt(e, o, n), nu(e, n), e;
+    return ((e = Fu(r, n, !0, e, 0, a, 0, i, l)).context = Bu(null)), (r = e.current), ((a = Ma((n = eu()), (o = tu(r)))).callback = null != t ? t : null), Fa(r, a, o), (e.current.lanes = o), gt(e, o, n), nu(e, n), e;
    }
-   function Uu(e, t, r, n) {
+   function Hu(e, t, r, n) {
     var o = t.current,
      a = eu(),
      c = tu(o);
-    return (r = Bu(r)), null === t.context ? (t.context = r) : (t.pendingContext = r), ((t = Ia(a, c)).payload = { element: e }), null !== (n = void 0 === n ? null : n) && (t.callback = n), null !== (e = Fa(o, t, c)) && (ru(e, o, c, a), Ba(e, o, c)), c;
+    return (r = Bu(r)), null === t.context ? (t.context = r) : (t.pendingContext = r), ((t = Ma(a, c)).payload = { element: e }), null !== (n = void 0 === n ? null : n) && (t.callback = n), null !== (e = Fa(o, t, c)) && (ru(e, o, c, a), Ba(e, o, c)), c;
    }
-   function Hu(e) {
+   function Uu(e) {
     return (e = e.current).child ? (e.child.tag, e.child.stateNode) : null;
    }
    function Vu(e, t) {
@@ -9583,7 +9583,7 @@
            Po(_a, n._currentValue), (n._currentValue = o);
            break;
           case 13:
-           if (null !== (n = t.memoizedState)) return null !== n.dehydrated ? (Po(ec, 1 & ec.current), (t.flags |= 128), null) : 0 != (r & t.child.childLanes) ? Zi(e, t, r) : (Po(ec, 1 & ec.current), null !== (e = Hi(e, t, r)) ? e.sibling : null);
+           if (null !== (n = t.memoizedState)) return null !== n.dehydrated ? (Po(ec, 1 & ec.current), (t.flags |= 128), null) : 0 != (r & t.child.childLanes) ? Zi(e, t, r) : (Po(ec, 1 & ec.current), null !== (e = Ui(e, t, r)) ? e.sibling : null);
            Po(ec, 1 & ec.current);
            break;
           case 19:
@@ -9597,7 +9597,7 @@
           case 23:
            return (t.lanes = 0), Ci(e, t, r);
          }
-         return Hi(e, t, r);
+         return Ui(e, t, r);
         })(e, t, r)
        );
       yi = 0 != (131072 & e.flags);
@@ -9606,7 +9606,7 @@
     switch (((t.lanes = 0), t.tag)) {
      case 2:
       var n = t.type;
-      Ui(e, t), (e = t.pendingProps);
+      Hi(e, t), (e = t.pendingProps);
       var o = Lo(t, Eo.current);
       Na(t, r), (o = mc(null, t, n, e, o, r));
       var c = gc();
@@ -9615,7 +9615,7 @@
       n = t.elementType;
       e: {
        switch (
-        (Ui(e, t),
+        (Hi(e, t),
         (e = t.pendingProps),
         (n = (o = n._init)(n._payload)),
         (t.type = n),
@@ -9654,7 +9654,7 @@
      case 3:
       e: {
        if ((Ei(t), null === e)) throw Error(a(387));
-       (n = t.pendingProps), (o = (c = t.memoizedState).element), Ma(e, t), Ua(t, n, null, r);
+       (n = t.pendingProps), (o = (c = t.memoizedState).element), Ia(e, t), Ha(t, n, null, r);
        var i = t.memoizedState;
        if (((n = i.element), c.isDehydrated)) {
         if (((c = { element: n, isDehydrated: !1, cache: i.cache, pendingSuspenseBoundaries: i.pendingSuspenseBoundaries, transitions: i.transitions }), (t.updateQueue.baseState = c), (t.memoizedState = c), 256 & t.flags)) {
@@ -9668,7 +9668,7 @@
         for (oa = uo(t.stateNode.containerInfo.firstChild), na = t, aa = !0, ca = null, r = wa(t, null, n, r), t.child = r; r; ) (r.flags = (-3 & r.flags) | 4096), (r = r.sibling);
        } else {
         if ((pa(), n === o)) {
-         t = Hi(e, t, r);
+         t = Ui(e, t, r);
          break e;
         }
         ki(e, t, n, r);
@@ -9696,7 +9696,7 @@
        if (((n = t.type._context), (o = t.pendingProps), (c = t.memoizedProps), (i = o.value), Po(_a, n._currentValue), (n._currentValue = i), null !== c))
         if (cn(c.value, i)) {
          if (c.children === o.children && !No.current) {
-          t = Hi(e, t, r);
+          t = Ui(e, t, r);
           break e;
          }
         } else
@@ -9707,7 +9707,7 @@
            for (var u = l.firstContext; null !== u; ) {
             if (u.context === n) {
              if (1 === c.tag) {
-              (u = Ia(-1, r & -r)).tag = 2;
+              (u = Ma(-1, r & -r)).tag = 2;
               var s = c.updateQueue;
               if (null !== s) {
                var d = (s = s.shared).pending;
@@ -9749,7 +9749,7 @@
      case 15:
       return _i(e, t, t.type, t.pendingProps, r);
      case 17:
-      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), Ui(e, t), (t.tag = 1), To(n) ? ((e = !0), Zo(t)) : (e = !1), Na(t, r), ci(t, n, o), li(t, n, o, r), Si(null, t, n, !0, e, r);
+      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), Hi(e, t), (t.tag = 1), To(n) ? ((e = !0), Zo(t)) : (e = !1), Na(t, r), ci(t, n, o), li(t, n, o, r), Si(null, t, n, !0, e, r);
      case 19:
       return $i(e, t, r);
      case 22:
@@ -9783,18 +9783,18 @@
      if ('function' == typeof o) {
       var i = o;
       o = function () {
-       var e = Hu(c);
+       var e = Uu(c);
        i.call(e);
       };
      }
-     Uu(t, c, e, o);
+     Hu(t, c, e, o);
     } else
      c = (function (e, t, r, n, o) {
       if (o) {
        if ('function' == typeof n) {
         var a = n;
         n = function () {
-         var e = Hu(c);
+         var e = Uu(c);
          a.call(e);
         };
        }
@@ -9805,7 +9805,7 @@
       if ('function' == typeof n) {
        var i = n;
        n = function () {
-        var e = Hu(l);
+        var e = Uu(l);
         i.call(e);
        };
       }
@@ -9815,18 +9815,18 @@
        (e[fo] = l.current),
        $n(8 === e.nodeType ? e.parentNode : e),
        su(function () {
-        Uu(t, l, r, n);
+        Hu(t, l, r, n);
        }),
        l
       );
      })(r, t, e, o, n);
-    return Hu(c);
+    return Uu(c);
    }
    (Ku.prototype.render = Gu.prototype.render =
     function (e) {
      var t = this._internalRoot;
      if (null === t) throw Error(a(409));
-     Uu(e, t, null, null);
+     Hu(e, t, null, null);
     }),
     (Ku.prototype.unmount = Gu.prototype.unmount =
      function () {
@@ -9835,7 +9835,7 @@
        this._internalRoot = null;
        var t = e.containerInfo;
        su(function () {
-        Uu(null, e, null, null);
+        Hu(null, e, null, null);
        }),
         (t[fo] = null);
       }
@@ -9854,7 +9854,7 @@
        var t = e.stateNode;
        if (t.current.memoizedState.isDehydrated) {
         var r = dt(t.pendingLanes);
-        0 !== r && (vt(t, 1 | r), nu(t, Qe()), 0 == (6 & Sl) && (($l = Qe() + 500), Uo()));
+        0 !== r && (vt(t, 1 | r), nu(t, Qe()), 0 == (6 & Sl) && (($l = Qe() + 500), Ho()));
        }
        break;
       case 13:
@@ -10295,7 +10295,7 @@
       );
      });
     },
-    M = function (e, t, r) {
+    I = function (e, t, r) {
      switch (e) {
       case m.TITLE:
        return {
@@ -10346,7 +10346,7 @@
        };
      }
     },
-    I = function (e) {
+    M = function (e) {
      var t = e.baseTag,
       r = e.bodyAttributes,
       n = e.encode,
@@ -10379,7 +10379,7 @@
           return [].concat(Z(m.META, o.priority), Z(m.LINK, a.priority), Z(m.SCRIPT, c.priority));
          },
          toString: function () {
-          return M(m.META, o.priority, n) + ' ' + M(m.LINK, a.priority, n) + ' ' + M(m.SCRIPT, c.priority, n);
+          return I(m.META, o.priority, n) + ' ' + I(m.LINK, a.priority, n) + ' ' + I(m.SCRIPT, c.priority, n);
          },
         },
         metaTags: o.default,
@@ -10389,7 +10389,7 @@
       })(e);
       (b = p.priorityMethods), (s = p.linkTags), (d = p.metaTags), (h = p.scriptTags);
      }
-     return { priority: b, base: M(m.BASE, t, n), bodyAttributes: M('bodyAttributes', r, n), htmlAttributes: M('htmlAttributes', o, n), link: M(m.LINK, s, n), meta: M(m.META, d, n), noscript: M(m.NOSCRIPT, a, n), script: M(m.SCRIPT, h, n), style: M(m.STYLE, c, n), title: M(m.TITLE, { title: l, titleAttributes: u }, n) };
+     return { priority: b, base: I(m.BASE, t, n), bodyAttributes: I('bodyAttributes', r, n), htmlAttributes: I('htmlAttributes', o, n), link: I(m.LINK, s, n), meta: I(m.META, d, n), noscript: I(m.NOSCRIPT, a, n), script: I(m.SCRIPT, h, n), style: I(m.STYLE, c, n), title: I(m.TITLE, { title: l, titleAttributes: u }, n) };
     },
     F = [],
     B = function (e, t) {
@@ -10415,11 +10415,11 @@
       }),
       (this.context = e),
       (this.canUseDOM = t),
-      t || (e.helmet = I({ baseTag: [], bodyAttributes: {}, encodeSpecialCharacters: !0, htmlAttributes: {}, linkTags: [], metaTags: [], noscriptTags: [], scriptTags: [], styleTags: [], title: '', titleAttributes: {} }));
+      t || (e.helmet = M({ baseTag: [], bodyAttributes: {}, encodeSpecialCharacters: !0, htmlAttributes: {}, linkTags: [], metaTags: [], noscriptTags: [], scriptTags: [], styleTags: [], title: '', titleAttributes: {} }));
     },
     $ = n.createContext({}),
-    U = a().shape({ setHelmet: a().func, helmetInstances: a().shape({ get: a().func, add: a().func, remove: a().func }) }),
-    H = 'undefined' != typeof document,
+    H = a().shape({ setHelmet: a().func, helmetInstances: a().shape({ get: a().func, add: a().func, remove: a().func }) }),
+    U = 'undefined' != typeof document,
     V = (function (e) {
      function t(r) {
       var n;
@@ -10433,7 +10433,7 @@
       t
      );
     })(n.Component);
-   (V.canUseDOM = H), (V.propTypes = { context: a().shape({ helmet: a().shape() }), children: a().node.isRequired }), (V.defaultProps = { context: {} }), (V.displayName = 'HelmetProvider');
+   (V.canUseDOM = U), (V.propTypes = { context: a().shape({ helmet: a().shape() }), children: a().node.isRequired }), (V.defaultProps = { context: {} }), (V.displayName = 'HelmetProvider');
    var q = function (e, t) {
      var r,
       n = document.head || document.querySelector(m.HEAD),
@@ -10544,7 +10544,7 @@
               });
              }))
            : (G(t), (K = null)))
-        : I && (o = I(a)),
+        : M && (o = M(a)),
         n(o);
       }),
       (r.init = function () {
@@ -10556,7 +10556,7 @@
       t
      );
     })(n.Component);
-   (Y.propTypes = { context: U.isRequired }), (Y.displayName = 'HelmetDispatcher');
+   (Y.propTypes = { context: H.isRequired }), (Y.displayName = 'HelmetDispatcher');
    var Q = ['children'],
     X = ['children'],
     J = (function (e) {
@@ -11857,7 +11857,7 @@
     title: 'NL Design System',
     tagline: 'E\xe9n design system voor alle huisstijlen',
     url: 'https://nldesignsystem.nl',
-    baseUrl: '/',
+    baseUrl: '/en/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -12149,7 +12149,7 @@
   },
   93706: (e, t, r) => {
    'use strict';
-   r.d(t, { AS: () => _a, B6: () => Re, BB: () => Ye, Cd: () => Cr, EK: () => Pe, EU: () => ao, Ee: () => Ur, GS: () => On, JH: () => Mn, JO: () => Rr, OX: () => Sr, Ou: () => qe, Pj: () => wn, QI: () => ya, Qu: () => ce, Qv: () => vt, RM: () => Fo, SC: () => la, Tg: () => Eo, Ux: () => Nn, Wi: () => St, X6: () => y, XJ: () => lr, XZ: () => _e, aC: () => hr, by: () => kr, dn: () => ze, fE: () => Ft, gx: () => ha, hE: () => pe, iA: () => Ao, j$: () => ut, k8: () => mr, lX: () => Ht, nL: () => or, nv: () => Gn, pg: () => pt, pj: () => Wo, pu: () => er, rU: () => Q, sc: () => le, ue: () => Lt, xD: () => ea, xs: () => oa, yY: () => ue, zx: () => f });
+   r.d(t, { AS: () => _a, B6: () => Re, BB: () => Ye, Cd: () => Cr, EK: () => Pe, EU: () => ao, Ee: () => Hr, GS: () => On, JH: () => In, JO: () => Rr, OX: () => Sr, Ou: () => qe, Pj: () => wn, QI: () => ya, Qu: () => ce, Qv: () => vt, RM: () => Fo, SC: () => la, Tg: () => Eo, Ux: () => Nn, Wi: () => St, X6: () => y, XJ: () => lr, XZ: () => _e, aC: () => hr, by: () => kr, dn: () => ze, fE: () => Ft, gx: () => ha, hE: () => pe, iA: () => Ao, j$: () => ut, k8: () => mr, lX: () => Ut, nL: () => or, nv: () => Gn, pg: () => pt, pj: () => Wo, pu: () => er, rU: () => Q, sc: () => le, ue: () => Lt, xD: () => ea, xs: () => oa, yY: () => ue, zx: () => f });
    var n = r(11130),
     o = r(25940),
     a = r(12177),
@@ -12588,7 +12588,7 @@
     }
     return r;
    }
-   function M(e) {
+   function I(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -12607,10 +12607,10 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, A);
-    return (0, i.jsx)('div', M(M({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-backdrop', n), children: r }));
+    return (0, i.jsx)('div', I(I({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-backdrop', n), children: r }));
    }).displayName = 'Backdrop';
    d('.utrecht-badge-counter{background-color:var(--utrecht-badge-counter-background-color,var(--utrecht-badge-background-color,#000));border-radius:var(--utrecht-badge-counter-border-radius,var(--utrecht-badge-border-radius,.5ch));color:var(--utrecht-badge-counter-color,var(--utrecht-badge-color,#fff));display:inline-block;font-family:var(--utrecht-badge-counter-font-family,var(--utrecht-badge-font-family,var(--utrecht-document-font-family,sans-serif)));font-size:var(--utrecht-badge-counter-font-size,var(--utrecht-badge-font-size));font-style:var(--utrecht-badge-counter-font-style,normal);font-weight:var(--utrecht-badge-counter-font-weight,var(--utrecht-badge-font-weight,bold));line-height:1;max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--utrecht-badge-counter-min-size,1em);min-inline-size:var(--utrecht-badge-counter-min-size,1em);padding-block-end:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-block-start:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-inline-end:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));padding-inline-start:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));text-align:center;text-decoration:none;white-space:nowrap}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-badge-counter{border:1px solid}}');
-   var I = ['children', 'className', 'value'];
+   var M = ['children', 'className', 'value'];
    function F(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -12642,13 +12642,13 @@
     var r = e.children,
      n = e.className,
      o = e.value,
-     c = (0, a.Z)(e, I),
+     c = (0, a.Z)(e, M),
      u = B({ children: r, className: (0, l.Z)('utrecht-badge-counter', n) }, c);
     return void 0 !== o ? (0, i.jsx)('data', B(B({}, u), {}, { value: o, ref: t })) : (0, i.jsx)('span', B(B({}, u), {}, { ref: t }));
    }).displayName = 'BadgeCounter';
    d('.utrecht-badge-list{display:flex;flex-wrap:wrap;gap:var(--utrecht-badge-list-item-margin-block) var(--utrecht-badge-list-item-margin-inline)}');
    var $ = ['children', 'className'];
-   function U(e, t) {
+   function H(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -12660,16 +12660,16 @@
     }
     return r;
    }
-   function H(e) {
+   function U(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? U(Object(r), !0).forEach(function (t) {
+      ? H(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : U(Object(r)).forEach(function (t) {
+        : H(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -12679,7 +12679,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, $);
-    return (0, i.jsx)('div', H(H({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-badge-list', n), children: r }));
+    return (0, i.jsx)('div', U(U({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-badge-list', n), children: r }));
    }).displayName = 'BadgeList';
    d('.utrecht-blockquote{background-color:var(--utrecht-blockquote-background-color);color:var(--utrecht-blockquote-color);font-family:var(--utrecht-document-font-family);font-size:var(--utrecht-blockquote-font-size);font-style:var(--utrecht-blockquote-font-style);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-blockquote-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-blockquote-margin-block-start, 0));margin-inline-end:var(--utrecht-blockquote-margin-inline-end);margin-inline-start:var(--utrecht-blockquote-margin-inline-start);padding-block-end:var(--utrecht-blockquote-padding-block-end);padding-block-start:var(--utrecht-blockquote-padding-block-start);padding-inline-end:var(--utrecht-blockquote-padding-inline-end);padding-inline-start:var(--utrecht-blockquote-padding-inline-start)}.utrecht-blockquote__attribution{color:var(--utrecht-blockquote-attribution-color,inherit);font-size:var(--utrecht-blockquote-attribution-font-size,inherit)}.utrecht-blockquote__content{--utrecht-document-color:var(--utrecht-blockquote-content-color,inherit);--utrecht-paragraph-font-size:var(--utrecht-blockquote-content-font-size,inherit);color:var(--utrecht-blockquote-content-color,inherit);font-size:var(--utrecht-blockquote-content-font-size,inherit)}.utrecht-blockquote--distanced{--utrecht-space-around:1}');
    var V = ['children', 'className', 'attribution'];
@@ -13105,7 +13105,7 @@
    d('.utrecht-combobox{inline-size:100%;max-inline-size:var(--utrecht-textbox-max-inline-size,var(--utrecht-form-control-max-inline-size));position:relative}.utrecht-combobox__popover{background-color:canvas;block-size:fit-content;border-width:0;color:canvastext;inline-size:fit-content;inset:0;overflow:auto;padding-block-end:0;padding-block-start:0;padding-inline-end:0;padding-inline-start:0;position:absolute;z-index:var(--utrecht-combobox-popover-z-index)}.utrecht-combobox__popover--block-end{inset-block-start:100%}.utrecht-combobox__popover--hidden{display:none!important}');
    var Ae = ['className'],
     Ze = ['className', 'position'];
-   function Me(e, t) {
+   function Ie(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13117,16 +13117,16 @@
     }
     return r;
    }
-   function Ie(e) {
+   function Me(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Me(Object(r), !0).forEach(function (t) {
+      ? Ie(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Me(Object(r)).forEach(function (t) {
+        : Ie(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13135,13 +13135,13 @@
    ((0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = (0, a.Z)(e, Ae);
-    return (0, i.jsx)('div', Ie(Ie({ className: (0, l.Z)('utrecht-combobox', r) }, n), {}, { ref: t }));
+    return (0, i.jsx)('div', Me(Me({ className: (0, l.Z)('utrecht-combobox', r) }, n), {}, { ref: t }));
    }).displayName = 'Combobox'),
     ((0, c.forwardRef)(function (e, t) {
      var r = e.className,
       n = e.position,
       o = (0, a.Z)(e, Ze);
-     return (0, i.jsx)('div', Ie(Ie({ className: (0, l.Z)('utrecht-combobox__popover', { 'utrecht-search-bar__popover--block-end': !n || 'block-end' === n }, r) }, o), {}, { ref: t }));
+     return (0, i.jsx)('div', Me(Me({ className: (0, l.Z)('utrecht-combobox__popover', { 'utrecht-search-bar__popover--block-end': !n || 'block-end' === n }, r) }, o), {}, { ref: t }));
     }).displayName = 'ComboboxPopover');
    d('.utrecht-currency-data{font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}');
    var Fe = ['children', 'currency', 'amount', 'locale', 'className'];
@@ -13192,8 +13192,8 @@
     return (0, i.jsx)('data', $e($e({}, h), {}, { ref: t, value: ''.concat(o, ' ').concat(c), className: (0, l.Z)('utrecht-currency-data', b < 0 && 'utrecht-currency-data--negative', b > 0 && 'utrecht-currency-data--positive', d), 'aria-label': p, children: r || f }));
    }).displayName = 'CurrencyData';
    d('.utrecht-badge-data{background-color:var(--utrecht-badge-background-color,#000);border-radius:var(--utrecht-badge-border-radius,.5ch);color:var(--utrecht-badge-color,#fff);display:inline-block;font-family:var(--utrecht-document-font-family,sans-serif);font-size:var(--utrecht-badge-font-size,inherit);font-style:var(--utrecht-badge-font-style,normal);font-weight:var(--utrecht-badge-font-weight,bold);letter-spacing:var(--utrecht-badge-data-letter-spacing,inherit);line-height:var(--utrecht-badge-line-height,1em);max-block-size:max-content;max-inline-size:max-content;min-block-size:1em;min-inline-size:1em;padding-block-end:var(--utrecht-badge-padding-block,.5ex);padding-block-start:var(--utrecht-badge-padding-block,.5ex);padding-inline-end:var(--utrecht-badge-padding-inline,.5ch);padding-inline-start:var(--utrecht-badge-padding-inline,.5ch);text-decoration:none;text-transform:var(--utrecht-badge-data-text-transform,inherit)}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-badge-data{border:1px solid}}');
-   var Ue = ['children', 'className', 'dateTime', 'value'];
-   function He(e, t) {
+   var He = ['children', 'className', 'dateTime', 'value'];
+   function Ue(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13209,12 +13209,12 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? He(Object(r), !0).forEach(function (t) {
+      ? Ue(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : He(Object(r)).forEach(function (t) {
+        : Ue(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13225,7 +13225,7 @@
      n = e.className,
      o = e.dateTime,
      c = e.value,
-     u = (0, a.Z)(e, Ue),
+     u = (0, a.Z)(e, He),
      s = Ve({ children: r, className: (0, l.Z)('utrecht-badge-data', n) }, u);
     return void 0 !== o ? (0, i.jsx)('time', Ve(Ve({}, s), {}, { dateTime: o, ref: t })) : void 0 !== c ? (0, i.jsx)('data', Ve(Ve({}, s), {}, { value: c, ref: t })) : (0, i.jsx)('span', Ve(Ve({}, s), {}, { ref: t }));
    });
@@ -13690,7 +13690,7 @@
    At.displayName = 'FormFieldErrorMessage';
    d('.utrecht-textbox{--_utrecht-textbox-value-char:0.667em + 0.334ch;--_utrecht-textbox-max-inline-size:calc(var(--utrecht-textbox-value-max-length)*var(--_utrecht-textbox-value-char) + var(--utrecht-textbox-padding-inline-end, var(--utrecht-form-control-padding-inline-end, 0)) + var(--utrecht-textbox-padding-inline-start, var(--utrecht-form-control-padding-inline-start, 0)) + var(--utrecht-textbox-border-width, var(--utrecht-form-control-border-width, 0)) + var(--utrecht-textbox-autocomplete-ui-size, 44px));background-color:var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color));block-size:auto;border-width:var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width));border-block-end-width:var(--utrecht-textbox-border-bottom-width,var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width)));border-color:var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color));border-radius:var(--utrecht-textbox-border-radius,var(--utrecht-form-control-border-radius,0));border-style:solid;box-sizing:border-box;color:var(--utrecht-textbox-color,var(--utrecht-form-control-color));font-family:var(--utrecht-textbox-font-family,var(--utrecht-form-control-font-family));font-size:var(--utrecht-textbox-font-size,var(--utrecht-form-control-font-size,inherit));font-weight:400;inline-size:100%;line-height:var(--utrecht-textbox-line-height,var(--utrecht-form-control-line-height,initial));max-inline-size:min(var(--_utrecht-textbox-max-inline-size,100%),var(--utrecht-textbox-max-inline-size,var(--utrecht-form-control-max-inline-size)));min-block-size:var(--utrecht-pointer-target-min-size,44px);min-inline-size:var(--utrecht-pointer-target-min-size,44px);padding-block-end:var(--utrecht-textbox-padding-block-end,var(--utrecht-form-control-padding-block-end,0));padding-block-start:var(--utrecht-textbox-padding-block-start,var(--utrecht-form-control-padding-block-start,0));padding-inline-end:var(--utrecht-textbox-padding-inline-end,var(--utrecht-form-control-padding-inline-end,initial));padding-inline-start:var(--utrecht-textbox-padding-inline-start,var(--utrecht-form-control-padding-inline-start,initial))}.utrecht-textbox--invalid{--_utrecht-textbox-border-width:var(\n    --utrecht-textbox-invalid-border-width,var(\n      --utrecht-form-control-invalid-border-width,var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width))\n    )\n  );background-color:var(--utrecht-textbox-invalid-background-color,var(--utrecht-form-control-invalid-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-width:var(--_utrecht-textbox-border-width);border-block-end-width:var(--utrecht-textbox-invalid-border-bottom-width,var(--utrecht-form-control-invalid-border-bottom-width,var(--utrecht-textbox-border-bottom-width,var(--utrecht-form-control-border-bottom-width,var(--_utrecht-textbox-border-width)))));border-color:var(--utrecht-textbox-invalid-border-color,var(--utrecht-form-control-invalid-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-invalid-color,var(--utrecht-form-control-invalid-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-textbox--disabled{background-color:var(--utrecht-textbox-disabled-background-color,var(--utrecht-form-control-disabled-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-disabled-border-color,var(--utrecht-form-control-disabled-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-disabled-color,var(--utrecht-form-control-disabled-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-textbox--focus{background-color:var(--utrecht-textbox-focus-background-color,var(--utrecht-form-control-focus-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-focus-border-color,var(--utrecht-form-control-focus-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-focus-color,var(--utrecht-form-control-focus-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-textbox--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-textbox--read-only{background-color:var(--utrecht-textbox-read-only-background-color,var(--utrecht-form-control-read-only-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-read-only-border-color,var(--utrecht-form-control-read-only-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-read-only-color,var(--utrecht-form-control-read-only-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-textbox__placeholder{color:var(--utrecht-textbox-placeholder-color,var(--utrecht-form-control-placeholder-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));font-style:var(--utrecht-form-control-placeholder-font-style);opacity:100%}.utrecht-textbox--numeric{-moz-appearance:textfield;font-variant-numeric:lining-nums tabular-nums}.utrecht-textbox--password{font-variant-ligatures:none;font-variant-numeric:slashed-zero}.utrecht-textbox--postal-code-nl-size{--utrecht-textbox-value-max-length:7}.utrecht-textbox--house-number-size{--utrecht-textbox-value-max-length:5}.utrecht-textbox--house-letter-size{--utrecht-textbox-value-max-length:1}.utrecht-textbox--house-addition-size{--utrecht-textbox-value-max-length:4}.utrecht-textbox--voorvoegsel-size{--utrecht-textbox-value-max-length:10}.utrecht-textbox--tel-size{--utrecht-textbox-value-max-length:19}.utrecht-textbox--tel-nl-size{--utrecht-textbox-value-max-length:13}.utrecht-textbox--iban-size{--utrecht-textbox-value-max-length:41}.utrecht-textbox--iban-nl-size{--utrecht-textbox-value-max-length:22}.utrecht-textbox--placeholder-ltr::placeholder,.utrecht-textbox--placeholder-ltr:placeholder-shown{direction:ltr}.utrecht-textbox--placeholder-rtl::placeholder,.utrecht-textbox--placeholder-rtl:placeholder-shown{direction:rtl}.utrecht-textbox--url{font-variant-ligatures:none}.utrecht-textbox--html-input:focus{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-textbox-focus-background-color,var(--utrecht-form-control-focus-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-focus-border-color,var(--utrecht-form-control-focus-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));box-shadow:var(--_utrecht-focus-ring-box-shadow);color:var(--utrecht-textbox-focus-color,var(--utrecht-form-control-focus-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-textbox--html-input:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-textbox--html-input:invalid,.utrecht-textbox--html-input[aria-invalid=true]{--_utrecht-textbox-border-width:var(\n    --utrecht-textbox-invalid-border-width,var(\n      --utrecht-form-control-invalid-border-width,var(--utrecht-textbox-border-width,var(--utrecht-form-control-border-width))\n    )\n  );background-color:var(--utrecht-textbox-invalid-background-color,var(--utrecht-form-control-invalid-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-width:var(--_utrecht-textbox-border-width);border-block-end-width:var(--utrecht-textbox-invalid-border-bottom-width,var(--utrecht-form-control-invalid-border-bottom-width,var(--utrecht-textbox-border-bottom-width,var(--utrecht-form-control-border-bottom-width,var(--_utrecht-textbox-border-width)))));border-color:var(--utrecht-textbox-invalid-border-color,var(--utrecht-form-control-invalid-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-invalid-color,var(--utrecht-form-control-invalid-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-textbox--html-input:read-only{background-color:var(--utrecht-textbox-read-only-background-color,var(--utrecht-form-control-read-only-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-read-only-border-color,var(--utrecht-form-control-read-only-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-read-only-color,var(--utrecht-form-control-read-only-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))))}.utrecht-textbox--html-input:disabled{background-color:var(--utrecht-textbox-disabled-background-color,var(--utrecht-form-control-disabled-background-color,var(--utrecht-textbox-background-color,var(--utrecht-form-control-background-color))));border-color:var(--utrecht-textbox-disabled-border-color,var(--utrecht-form-control-disabled-border-color,var(--utrecht-textbox-border-color,var(--utrecht-form-control-border-color))));color:var(--utrecht-textbox-disabled-color,var(--utrecht-form-control-disabled-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-textbox--html-input::placeholder{color:var(--utrecht-textbox-placeholder-color,var(--utrecht-form-control-placeholder-color,var(--utrecht-textbox-color,var(--utrecht-form-control-color))));font-style:var(--utrecht-form-control-placeholder-font-style);opacity:100%}.utrecht-textbox--html-input[type=password i]{font-variant-ligatures:none;font-variant-numeric:slashed-zero}.utrecht-textbox--html-input[inputMode=email i],.utrecht-textbox--html-input[inputMode=url i],.utrecht-textbox--html-input[type=email i],.utrecht-textbox--html-input[type=url i]{font-variant-ligatures:none}.utrecht-textbox--html-input[inputMode=decimal i],.utrecht-textbox--html-input[inputMode=numeric i],.utrecht-textbox--html-input[inputMode=tel i],.utrecht-textbox--html-input[pattern="[0-9]*"],.utrecht-textbox--html-input[pattern="\\\\d*"],.utrecht-textbox--html-input[type=number i],.utrecht-textbox--html-input[type=tel i]{-moz-appearance:textfield;font-variant-numeric:lining-nums tabular-nums}');
    var Zt = ['dir', 'disabled', 'invalid', 'readOnly', 'required', 'inputRequired', 'className', 'type', 'inputMode'];
-   function Mt(e, t) {
+   function It(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -13702,16 +13702,16 @@
     }
     return r;
    }
-   function It(e) {
+   function Mt(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Mt(Object(r), !0).forEach(function (t) {
+      ? It(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Mt(Object(r)).forEach(function (t) {
+        : It(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -13729,7 +13729,7 @@
      b = void 0 === h ? 'text' : h,
      p = e.inputMode,
      f = (0, a.Z)(e, Zt);
-    return (0, i.jsx)('input', It(It({}, f), {}, { ref: t, type: b, className: (0, l.Z)('utrecht-textbox', 'utrecht-textbox--html-input', n && 'utrecht-textbox--disabled', o && 'utrecht-textbox--invalid', c && 'utrecht-textbox--readonly', (u || s) && 'utrecht-textbox--required', d), dir: null != r ? r : 'auto', disabled: n, readOnly: c, 'aria-required': u || void 0, required: s, 'aria-invalid': o || void 0, inputMode: p || ('number' === b ? 'numeric' : void 0) }));
+    return (0, i.jsx)('input', Mt(Mt({}, f), {}, { ref: t, type: b, className: (0, l.Z)('utrecht-textbox', 'utrecht-textbox--html-input', n && 'utrecht-textbox--disabled', o && 'utrecht-textbox--invalid', c && 'utrecht-textbox--readonly', (u || s) && 'utrecht-textbox--required', d), dir: null != r ? r : 'auto', disabled: n, readOnly: c, 'aria-required': u || void 0, required: s, 'aria-invalid': o || void 0, inputMode: p || ('number' === b ? 'numeric' : void 0) }));
    });
    Ft.displayName = 'Textbox';
    var Bt = ['children', 'className', 'type', 'disabled', 'checked'];
@@ -13745,7 +13745,7 @@
     }
     return r;
    }
-   function Ut(e) {
+   function Ht(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -13760,16 +13760,16 @@
     }
     return e;
    }
-   var Ht = (0, c.forwardRef)(function (e, t) {
+   var Ut = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = e.type,
      c = e.disabled,
      u = e.checked,
      s = (0, a.Z)(e, Bt);
-    return (0, i.jsx)('label', Ut(Ut({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-label', o && 'utrecht-form-label--'.concat(o), c && 'utrecht-form-label--disabled', u && 'utrecht-form-label--checked', n), children: r }));
+    return (0, i.jsx)('label', Ht(Ht({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-label', o && 'utrecht-form-label--'.concat(o), c && 'utrecht-form-label--disabled', u && 'utrecht-form-label--checked', n), children: r }));
    });
-   Ht.displayName = 'FormLabel';
+   Ut.displayName = 'FormLabel';
    var Vt = ['name', 'invalid', 'disabled', 'label', 'errorMessage', 'description', 'readOnly', 'status', 'autoComplete', 'list', 'min', 'max', 'minLength', 'maxLength', 'step', 'placeholder', 'pattern', 'required', 'inputRequired', 'inputDir', 'type', 'value', 'onChange', 'onInput', 'onFocus', 'onBlur', 'defaultValue', 'size', 'children', 'inputRef'];
    function qt(e, t) {
     var r = Object.keys(e);
@@ -13830,11 +13830,11 @@
      R = e.children,
      A = e.inputRef,
      Z = (0, a.Z)(e, Vt),
-     M = (0, c.useId)(),
      I = (0, c.useId)(),
+     M = (0, c.useId)(),
      F = (0, c.useId)(),
      B = (0, c.useId)();
-    return (0, i.jsxs)(St, Wt(Wt({ invalid: n, ref: t }, Z), {}, { children: [(0, i.jsx)('div', { className: 'utrecht-form-field__label', children: (0, i.jsx)(Ht, { htmlFor: M, children: s }) }), h && (0, i.jsx)(Lt, { className: 'utrecht-form-field__description', id: I, children: h }), n && d && (0, i.jsx)(At, { className: 'utrecht-form-field__error-message', id: B, children: d }), (0, i.jsx)('div', { className: 'utrecht-form-field__input', children: (0, i.jsx)(Ft, { ref: A, id: M, name: r, type: P || 'text', autoComplete: f, 'aria-describedby': (0, l.Z)((0, o.Z)((0, o.Z)((0, o.Z)({}, I, h), B, n), F, p)) || void 0, invalid: n, dir: O || 'auto', disabled: u, min: g, max: v, minLength: y, maxLength: k, pattern: _, placeholder: w, readOnly: b, required: C, inputRequired: j, value: S, onFocus: z, onBlur: L, onInput: N, onChange: E, defaultValue: T, list: m, size: D, step: x }) }), p && (0, i.jsx)('div', { className: 'utrecht-form-field__status', id: F, children: p }), R] }));
+    return (0, i.jsxs)(St, Wt(Wt({ invalid: n, ref: t }, Z), {}, { children: [(0, i.jsx)('div', { className: 'utrecht-form-field__label', children: (0, i.jsx)(Ut, { htmlFor: I, children: s }) }), h && (0, i.jsx)(Lt, { className: 'utrecht-form-field__description', id: M, children: h }), n && d && (0, i.jsx)(At, { className: 'utrecht-form-field__error-message', id: B, children: d }), (0, i.jsx)('div', { className: 'utrecht-form-field__input', children: (0, i.jsx)(Ft, { ref: A, id: I, name: r, type: P || 'text', autoComplete: f, 'aria-describedby': (0, l.Z)((0, o.Z)((0, o.Z)((0, o.Z)({}, M, h), B, n), F, p)) || void 0, invalid: n, dir: O || 'auto', disabled: u, min: g, max: v, minLength: y, maxLength: k, pattern: _, placeholder: w, readOnly: b, required: C, inputRequired: j, value: S, onFocus: z, onBlur: L, onInput: N, onChange: E, defaultValue: T, list: m, size: D, step: x }) }), p && (0, i.jsx)('div', { className: 'utrecht-form-field__status', id: F, children: p }), R] }));
    }).displayName = 'FormFieldTextbox';
    d('.utrecht-form-label{color:var(--utrecht-form-label-color);font-size:var(--utrecht-form-label-font-size);font-weight:var(--utrecht-form-label-font-weight)}.utrecht-form-label--checkbox{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-checkbox-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--checked{font-weight:var(--utrecht-form-label-checked-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--disabled{color:var(--utrecht-form-label-disabled-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-disabled-cursor,revert)}.utrecht-form-label--radio{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-radio-font-weight,var(--utrecht-form-label-font-weight))}');
    d('.utrecht-form-toggle{align-items:center;block-size:var(--utrecht-form-toggle-height,2em);border-color:var(--utrecht-form-toggle-border-color,currentColor);border-radius:var(--utrecht-form-toggle-border-radius,999rem);border-style:var(--utrecht-form-toggle-border-style,solid);border-width:var(--utrecht-form-toggle-border-width,1px);color:var(--utrecht-form-toggle-color);cursor:var(--utrecht-action-activate-cursor,revert);display:flex;inline-size:var(--utrecht-form-toggle-width,6em);padding-block-end:var(--utrecht-form-toggle-padding-block-end);padding-block-start:var(--utrecht-form-toggle-padding-block-start);padding-inline-end:var(--utrecht-form-toggle-padding-inline-end);padding-inline-start:var(--utrecht-form-toggle-padding-inline-start);position:relative;-webkit-user-select:none;user-select:none}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-form-toggle{--utrecht-form-toggle-background-color:ButtonFace;--utrecht-form-toggle-border-color:buttonborder;--utrecht-form-toggle-border-width:1px;--utrecht-form-toggle-border-radius:var(--utrecht-form-toggle-track-border-radius);--utrecht-form-toggle-thumb-background-color:ButtonText;--utrecht-form-toggle-thumb-disabled-background-color:GrayText;border-color:var(--utrecht-form-toggle-track-disabled-border-color,var(--utrecht-form-toggle-track-border-color));border-width:min(var(--utrecht-form-toggle-border-width,1px),1px)}}.utrecht-form-toggle--focus-visible,.utrecht-form-toggle--html-div:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--hover{background-color:var(--utrecht-form-toggle-hover-background-color,var(--utrecht-form-toggle-background-color));color:var(--utrecht-form-toggle-hover-color,var(--utrecht-form-toggle-color))}.utrecht-form-toggle--disabled,.utrecht-form-toggle--html-div:disabled{border-color:var(--utrecht-form-toggle-disabled-border-color,var(--utrecht-form-toggle-border-color,currentColor));border-style:var(--utrecht-form-toggle-disabled-border-style,var(--utrecht-form-toggle-border-style,solid));border-width:var(--utrecht-form-toggle-disabled-border-width,var(--utrecht-form-toggle-border-width,1px));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-form-toggle__thumb{background-color:var(--utrecht-form-toggle-thumb-background-color,currentColor);border-radius:var(--utrecht-form-toggle-thumb-border-radius,50%);box-shadow:var(--utrecht-form-toggle-thumb-box-shadow);margin-inline-end:var(--utrecht-form-toggle-thumb-margin-inline-end,0);margin-inline-start:var(--utrecht-form-toggle-thumb-margin-inline-start,0);min-block-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);min-inline-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);z-index:20}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--checked{margin-inline-start:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:not(:checked)~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--not-checked{margin-inline-end:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--disabled{background-color:var(--utrecht-form-toggle-thumb-disabled-background-color,#aaa);box-shadow:var(--utrecht-form-toggle-thumb-disabled-box-shadow,0)}.utrecht-form-toggle__track{align-items:center;background-color:var(--utrecht-form-toggle-accent-color);block-size:100%;border-radius:var(--utrecht-form-toggle-track-border-radius,var(--utrecht-form-toggle-border-radius));display:flex;inline-size:100%}.utrecht-form-toggle__track--html-label{cursor:inherit}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track,.utrecht-form-toggle__track--checked{background-color:var(--utrecht-form-toggle-checked-accent-color,var(--utrecht-form-toggle-accent-color))}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track,.utrecht-form-toggle__track--disabled{background-color:var(--utrecht-form-toggle-background-disabled-background-color,#ddd);color:var(--utrecht-form-toggle-disabled-color,#000)}.utrecht-form-toggle__track--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox{clip:rect(1px,1px,1px,1px)!important;block-size:1px!important;border:0!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;inline-size:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:focus-visible~.utrecht-form-toggle__track{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}');
@@ -14255,7 +14255,7 @@
     }
     return r;
    }
-   function Mr(e) {
+   function Ir(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -14270,7 +14270,7 @@
     }
     return e;
    }
-   var Ir = (0, c.forwardRef)(function (e, t) {
+   var Mr = (0, c.forwardRef)(function (e, t) {
     var r = e.component,
      n = e.currentChar,
      o = e.characters,
@@ -14288,8 +14288,8 @@
            a = n === r;
           return (0, c.createElement)(
            f,
-           Mr(
-            Mr({}, d),
+           Ir(
+            Ir({}, d),
             {},
             {
              className: (0, l.Z)({ 'utrecht-index-char-nav__link--current': a }),
@@ -14314,8 +14314,8 @@
            b = (0, l.Z)('utrecht-button-link', 'utrecht-button-link--html-a', 'utrecht-index-char-nav__link', { 'utrecht-index-char-nav__link--current': c, 'utrecht-button-link--primary-action': c, 'utrecht-button-link--secondary-action': !c, 'utrecht-index-char-nav__link--disabled': o, 'utrecht-button-link--placeholder': o });
           return (0, i.jsx)(
            h,
-           Mr(
-            Mr(
+           Ir(
+            Ir(
              {
               ref: t,
               appearance: s ? void 0 : c ? 'primary-action-button' : 'secondary-action-button',
@@ -14339,7 +14339,7 @@
      (0, i.jsx)('div', { className: 'utrecht-index-char-nav', role: 'group', children: b })
     );
    });
-   Ir.displayName = 'IndexCharNav';
+   Mr.displayName = 'IndexCharNav';
    d('.utrecht-img{height:auto;width:auto}.utrecht-img--photo,.utrecht-img--scale-down{max-height:100%;max-width:100%}');
    var Fr = ['className', 'photo'];
    function Br(e, t) {
@@ -14369,16 +14369,16 @@
     }
     return e;
    }
-   var Ur = (0, c.forwardRef)(function (e, t) {
+   var Hr = (0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = e.photo,
      o = (0, a.Z)(e, Fr);
     return (0, i.jsx)('img', $r($r({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-img', { 'utrecht-img--photo': n }, r) }));
    });
-   Ur.displayName = 'Image';
+   Hr.displayName = 'Image';
    d('.utrecht-link{--utrecht-icon-size:var(--utrecht-link-icon-size,1em);color:var(--_utrecht-link-state-color,var(--utrecht-link-color,var(--_utrecht-link-forced-colors-color)))}.utrecht-link:any-link{--_utrecht-link-forced-colors-color:linktext;text-decoration-color:var(--_utrecht-link-state-text-decoration-color,var(--utrecht-link-text-decoration-color,currentColor));text-decoration-line:var(--_utrecht-link-state-text-decoration,var(--utrecht-link-text-decoration,underline));text-decoration-skip-ink:all;text-decoration-thickness:max(var(--_utrecht-link-state-text-decoration-thickness,var(--utrecht-link-text-decoration-thickness)),1px);text-underline-offset:var(--utrecht-link-text-underline-offset)}.utrecht-link--icon-left{background-image:var(--utrecht-link-icon-left-background-image,none);background-position:0 .25em;background-repeat:no-repeat;color:var(--utrecht-link-color,LinkText);font-weight:var(--utrecht-typography-weight-scale-bold-font-weight);padding-inline-start:var(--utrecht-space-block-md);text-decoration-line:none}.utrecht-link--visited{--_utrecht-link-forced-colors-color:visitedtext;--_utrecht-link-state-color:var(--utrecht-link-visited-color)}.utrecht-link--hover,.utrecht-link--html-a:any-link:hover{--_utrecht-link-forced-colors-color:linktext;--_utrecht-link-state-color:var(--utrecht-link-hover-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-hover-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-hover-text-decoration-thickness);text-decoration-skip:none;text-decoration-skip-ink:none}.utrecht-link--focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;background-color:var(--utrecht-link-focus-background-color,transparent);text-decoration-skip-ink:none}.utrecht-link--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link--html-a:any-link:focus,.utrecht-link--html-span:focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);background-color:var(--utrecht-link-focus-background-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);text-decoration-skip-ink:none;z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link--html-a:any-link:focus:not(:focus-visible),.utrecht-link--html-span:focus:not(:focus-visible){box-shadow:none;outline-style:revert}.utrecht-link--active,.utrecht-link--html-a:any-link:active,.utrecht-link--html-span:active{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link--telephone{white-space:nowrap}.utrecht-link--current{cursor:var(--utrecht-action-inert-cursor,normal);font-weight:var(--utrecht-link-current-font-weight)}.utrecht-link--box-content:any-link{color:unset;display:inline-block;text-decoration-line:unset;text-decoration-skip-ink:unset;text-decoration-thickness:unset;text-underline-offset:unset}.utrecht-link--placeholder{--_utrecht-link-forced-colors-color:GrayText;--_utrecht-link-state-color:var(--utrecht-link-placeholder-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed);font-weight:var(--utrecht-link-placeholder-font-weight);text-decoration-line:none}.utrecht-link--forced-colors{--utrecht-focus-outline-color:Highlight;--utrecht-focus-inverse-outline-color:HighlightText;--utrecht-link-color:linktext;--utrecht-link-hover-color:linktext;--utrecht-link-focus-color:linktext;--utrecht-link-active-color:activetext;--utrecht-link-visited-color:visitedtext;--utrecht-link-placeholder-color:GrayText}');
    d('.utrecht-link-button{--utrecht-icon-size:var(--utrecht-link-icon-size,1em);--_utrecht-link-forced-colors-color:linktext;--utrecht-icon-size:var(--utrecht-button-icon-size,1em);align-items:center;color:var(--_utrecht-link-state-color,var(--utrecht-link-color,var(--_utrecht-link-forced-colors-color)));cursor:pointer;display:inline-flex;font-family:var(--utrecht-button-font-family,var(--utrecht-document-font-family));font-size:var(--utrecht-button-font-size,var(--utrecht-document-font-family));font-weight:var(--utrecht-button-font-weight);gap:var(--utrecht-button-icon-gap);inline-size:var(--utrecht-button-inline-size,auto);justify-content:center;line-height:inherit;min-block-size:var(--utrecht-button-min-block-size,44px);min-inline-size:var(--utrecht-button-min-inline-size,44px);padding-block-end:var(--utrecht-button-padding-block-end);padding-block-start:var(--utrecht-button-padding-block-start);padding-inline-end:var(--utrecht-button-padding-inline-end);padding-inline-start:var(--utrecht-button-padding-inline-start);text-decoration-color:var(--_utrecht-link-state-text-decoration-color,var(--utrecht-link-text-decoration-color,currentColor));text-decoration-line:var(--_utrecht-link-state-text-decoration,var(--utrecht-link-text-decoration,underline));text-decoration-skip-ink:all;text-decoration-thickness:max(var(--_utrecht-link-state-text-decoration-thickness,var(--utrecht-link-text-decoration-thickness)),1px);text-transform:var(--utrecht-button-text-transform);text-underline-offset:var(--utrecht-link-text-underline-offset);-webkit-user-select:none;user-select:none}.utrecht-link-button--hover,.utrecht-link-button--html-button:not(:disabled):hover{--_utrecht-link-forced-colors-color:linktext;--_utrecht-link-state-color:var(--utrecht-link-hover-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-hover-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-hover-text-decoration-thickness);text-decoration-skip:none;text-decoration-skip-ink:none}.utrecht-link-button--disabled{--_utrecht-link-forced-colors-color:GrayText;--_utrecht-link-state-color:var(--utrecht-link-placeholder-color);cursor:var(--utrecht-action-disabled-cursor,not-allowed);font-weight:var(--utrecht-link-placeholder-font-weight);text-decoration-line:none}.utrecht-link-button--focus,.utrecht-link-button--html-button:not(:disabled):focus{--_utrecht-link-state-color:var(--utrecht-link-focus-color);--_utrecht-link-state-text-decoration:var(--utrecht-link-focus-text-decoration);--_utrecht-link-state-text-decoration-thickness:var(--utrecht-link-focus-text-decoration-thickness);text-decoration-skip:none;background-color:var(--utrecht-link-focus-background-color,transparent);text-decoration-skip-ink:none}.utrecht-link-button--focus-visible,.utrecht-link-button--html-button:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert);z-index:var(--utrecht-stack-focus-z-index,1)}.utrecht-link-button--active,.utrecht-link-button--html-button:not(:disabled):active{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link-button--inline{--utrecht-icon-inset-block-start:var(--utrecht-icon-baseline-inset-block-start);min-block-size:auto;min-inline-size:auto;padding-block-end:0;padding-block-start:0;padding-inline-end:0;padding-inline-start:0}.utrecht-link-button--pressed{--_utrecht-link-forced-colors-color:activetext;--_utrecht-link-state-color:var(--utrecht-link-active-color)}.utrecht-link-button--html-button{background-color:transparent;border-width:0}');
-   var Hr = ['children', 'disabled', 'inline', 'className', 'pressed', 'type'];
+   var Ur = ['children', 'disabled', 'inline', 'className', 'pressed', 'type'];
    function Vr(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -14413,7 +14413,7 @@
      c = e.className,
      u = e.pressed,
      s = e.type,
-     d = (0, a.Z)(e, Hr);
+     d = (0, a.Z)(e, Ur);
     return (0, i.jsx)('button', qr(qr({ ref: t, 'aria-pressed': 'boolean' == typeof u ? u : void 0, className: (0, l.Z)('utrecht-link-button', 'utrecht-link-button--html-button', { 'utrecht-link-button--disabled': n, 'utrecht-link-button--inline': o, 'utrecht-link-button--pressed': u }, c), disabled: n, type: s || 'button' }, d), {}, { children: r }));
    });
    Wr.displayName = 'LinkButton';
@@ -14883,13 +14883,13 @@
     }
     return e;
    }
-   var Mn = (0, c.forwardRef)(function (e, t) {
+   var In = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Dn);
     return (0, i.jsx)('div', Zn(Zn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-content', n), children: r }));
    });
-   (Mn.displayName = 'PageContent'),
+   (In.displayName = 'PageContent'),
     ((0, c.forwardRef)(function (e, t) {
      var r = e.children,
       n = e.className,
@@ -14897,7 +14897,7 @@
      return (0, i.jsx)('main', Zn(Zn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-content__main', n), children: r }));
     }).displayName = 'PageContentMain');
    d('.utrecht-page-footer{--utrecht-document-color:currentColor;--utrecht-heading-color:currentColor;--utrecht-link-color:currentColor;--utrecht-link-focus-color:currentColor;--utrecht-link-hover-color:currentColor;--utrecht-link-active-color:currentColor;--utrecht-link-visited-color:currentColor;background-color:var(--utrecht-page-footer-background-color);background-image:var(--utrecht-page-footer-background-image);color:var(--utrecht-page-footer-color);font-family:var(--utrecht-document-font-family);font-size:var(--utrecht-document-font-size);padding-block-end:var(--utrecht-page-footer-padding-block-end);padding-block-start:var(--utrecht-page-footer-padding-block-start);padding-inline-end:var(--utrecht-page-footer-padding-inline-end);padding-inline-start:var(--utrecht-page-footer-padding-inline-start)}.utrecht-page-footer__address--reset-address{font-style:inherit;margin-block-end:0;margin-block-start:0}');
-   var In = ['children', 'className'];
+   var Mn = ['children', 'className'];
    function Fn(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -14928,12 +14928,12 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, In);
+     o = (0, a.Z)(e, Mn);
     return (0, i.jsx)('footer', Bn(Bn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-footer', n), children: r }));
    }).displayName = 'PageFooter';
    d('.utrecht-page-header{background-color:var(--utrecht-page-header-background-color);color:var(--utrecht-page-header-color);grid-area:"utrecht-header";padding-block-end:var(--utrecht-page-header-padding-block-end);padding-block-start:var(--utrecht-page-header-padding-block-start);padding-inline-end:var(--utrecht-page-padding-inline-end);padding-inline-start:var(--utrecht-page-padding-inline-start)}.utrecht-page-header__content{max-inline-size:var(--utrecht-page-max-inline-size)}');
    var $n = ['children', 'className'];
-   function Un(e, t) {
+   function Hn(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -14945,16 +14945,16 @@
     }
     return r;
    }
-   function Hn(e) {
+   function Un(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Un(Object(r), !0).forEach(function (t) {
+      ? Hn(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Un(Object(r)).forEach(function (t) {
+        : Hn(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -14964,7 +14964,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, $n);
-    return (0, i.jsx)('header', Hn(Hn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-header', n), children: r }));
+    return (0, i.jsx)('header', Un(Un({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page-header', n), children: r }));
    }).displayName = 'PageHeader';
    d('.utrecht-paragraph{color:var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit));font-family:var(--utrecht-paragraph-font-family,var(--utrecht-document-font-family,inherit));font-size:var(--utrecht-paragraph-font-size,var(--utrecht-document-font-size,inherit));font-weight:var(--utrecht-paragraph-font-weight,inherit);line-height:var(--utrecht-paragraph-line-height,var(--utrecht-document-line-height,inherit));margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-paragraph-margin-block-start, 0))}.utrecht-paragraph--lead{color:var(--utrecht-paragraph-lead-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-lead-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-lead-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-lead-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-paragraph--small{color:var(--utrecht-paragraph-small-color,var(--utrecht-paragraph-color,var(--utrecht-document-color,inherit)));font-size:var(--utrecht-paragraph-small-font-size,var(--utrecht-paragraph-font-size,inherit));font-weight:var(--utrecht-paragraph-small-font-weight,var(--utrecht-paragraph-font-weight,inherit));line-height:var(--utrecht-paragraph-small-line-height,var(--utrecht-paragraph-line-height,inherit))}.utrecht-paragraph__small{font-size:inherit}.utrecht-paragraph__b{font-weight:inherit}.utrecht-paragraph--distanced{--utrecht-space-around:1}');
    var Vn = ['children', 'className', 'lead', 'small'];
@@ -15488,7 +15488,7 @@
    });
    Ao.displayName = 'Table';
    var Zo = ['children', 'className'];
-   function Mo(e, t) {
+   function Io(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -15500,16 +15500,16 @@
     }
     return r;
    }
-   function Io(e) {
+   function Mo(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Mo(Object(r), !0).forEach(function (t) {
+      ? Io(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Mo(Object(r)).forEach(function (t) {
+        : Io(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -15519,7 +15519,7 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Zo);
-    return (0, i.jsx)('tbody', Io(Io({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__body', n), children: r }));
+    return (0, i.jsx)('tbody', Mo(Mo({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__body', n), children: r }));
    });
    Fo.displayName = 'TableBody';
    var Bo = ['children', 'className'];
@@ -15535,7 +15535,7 @@
     }
     return r;
    }
-   function Uo(e) {
+   function Ho(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -15554,9 +15554,9 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Bo);
-    return (0, i.jsx)('caption', Uo(Uo({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__caption', n), children: r }));
+    return (0, i.jsx)('caption', Ho(Ho({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-table__caption', n), children: r }));
    }).displayName = 'TableCaption';
-   var Ho = ['children', 'className', 'numericColumn', 'selected'];
+   var Uo = ['children', 'className', 'numericColumn', 'selected'];
    function Vo(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -15589,7 +15589,7 @@
      n = e.className,
      o = e.numericColumn,
      c = e.selected,
-     u = (0, a.Z)(e, Ho);
+     u = (0, a.Z)(e, Uo);
     return (0, i.jsx)('td', qo(qo({ 'aria-selected': !!c || void 0 }, u), {}, { ref: t, className: (0, l.Z)('utrecht-table__cell', { 'utrecht-table__cell--selected': c, 'utrecht-table__cell--numeric-column': o }, n), children: r }));
    });
    Wo.displayName = 'TableCell';
@@ -16958,7 +16958,7 @@
     (P.languages.py = P.languages.python);
    ((e, t) => {
     for (var r in t) b(e, r, { get: t[r], enumerable: !0 });
-   })({}, { dracula: () => S, duotoneDark: () => E, duotoneLight: () => N, github: () => z, jettwaveDark: () => H, jettwaveLight: () => V, nightOwl: () => L, nightOwlLight: () => T, oceanicNext: () => A, okaidia: () => Z, oneDark: () => q, oneLight: () => W, palenight: () => M, shadesOfPurple: () => I, synthwave84: () => F, ultramin: () => B, vsDark: () => $, vsLight: () => U });
+   })({}, { dracula: () => S, duotoneDark: () => E, duotoneLight: () => N, github: () => z, jettwaveDark: () => U, jettwaveLight: () => V, nightOwl: () => L, nightOwlLight: () => T, oceanicNext: () => A, okaidia: () => Z, oneDark: () => q, oneLight: () => W, palenight: () => I, shadesOfPurple: () => M, synthwave84: () => F, ultramin: () => B, vsDark: () => $, vsLight: () => H });
    var S = {
      plain: { color: '#F8F8F2', backgroundColor: '#282A36' },
      styles: [
@@ -17106,7 +17106,7 @@
       { types: ['rule'], style: { color: '#e6db74' } },
      ],
     },
-    M = {
+    I = {
      plain: { color: '#bfc7d5', backgroundColor: '#292d3e' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(105, 112, 152)', fontStyle: 'italic' } },
@@ -17125,7 +17125,7 @@
       { types: ['url'], style: { color: 'rgb(221, 221, 221)' } },
      ],
     },
-    I = {
+    M = {
      plain: { color: '#9EFEFF', backgroundColor: '#2D2A55' },
      styles: [
       { types: ['changed'], style: { color: 'rgb(255, 238, 128)' } },
@@ -17192,7 +17192,7 @@
       { types: ['char'], style: { color: 'rgb(209, 105, 105)' } },
      ],
     },
-    U = {
+    H = {
      plain: { color: '#000000', backgroundColor: '#ffffff' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(0, 128, 0)' } },
@@ -17208,7 +17208,7 @@
       { types: ['class-name'], style: { color: 'rgb(38, 127, 153)' } },
      ],
     },
-    H = {
+    U = {
      plain: { color: '#f8fafc', backgroundColor: '#011627' },
      styles: [
       { types: ['prolog'], style: { color: '#000080' } },
@@ -17404,11 +17404,11 @@
   },
   57529: (e) => {
    'use strict';
-   e.exports = JSON.parse('{"theme.AnnouncementBar.closeButtonAriaLabel":"Sluiten","theme.BackToTopButton.buttonAriaLabel":"Scroll naar boven","theme.CodeBlock.copied":"Gekopieerd","theme.CodeBlock.copy":"Kopieer","theme.CodeBlock.copyButtonAriaLabel":"Kopieer code naar klembord","theme.CodeBlock.wordWrapToggle":"Tekstterugloop in-/uitschakelen","theme.DocSidebarItem.collapseCategoryAriaLabel":"Collapse sidebar category \'{label}\'","theme.DocSidebarItem.expandCategoryAriaLabel":"Expand sidebar category \'{label}\'","theme.ErrorPageContent.title":"Deze pagina is gecrasht.","theme.ErrorPageContent.tryAgain":"Probeer opnieuw","theme.NavBar.navAriaLabel":"Main","theme.NotFound.p1":"We kunnen niet vinden waar je naar op zoek bent.","theme.NotFound.p2":"Neem contact op met de eigenaar van de website die naar de originele URL heeft geleid en laat weten dat de link niet meer werkt.","theme.NotFound.title":"Pagina niet gevonden","theme.TOCCollapsible.toggleButtonLabel":"Op deze pagina","theme.admonition.caution":"pas op","theme.admonition.danger":"gevaar","theme.admonition.info":"info","theme.admonition.note":"notitie","theme.admonition.tip":"tip","theme.admonition.warning":"warning","theme.blog.archive.description":"Archief","theme.blog.archive.title":"Archief","theme.blog.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.paginator.newerEntries":"Nieuwere items","theme.blog.paginator.olderEntries":"Oudere items","theme.blog.post.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.post.paginator.newerPost":"Nieuwer bericht","theme.blog.post.paginator.olderPost":"Ouder bericht","theme.blog.post.plurals":"Een bericht|{count} berichten","theme.blog.post.readMore":"Lees meer","theme.blog.post.readMoreLabel":"Lees meer over {title}","theme.blog.post.readingTime.plurals":"Een minuut leestijd|{readingTime} minuten leestijd","theme.blog.sidebar.navAriaLabel":"Navigatie recente blogitems","theme.blog.tagTitle":"{nPosts} getagd met \\"{tagName}\\"","theme.colorToggle.ariaLabel":"Schakel tussen donkere en lichte modus (momenteel {mode})","theme.colorToggle.ariaLabel.mode.dark":"donkere modus","theme.colorToggle.ariaLabel.mode.light":"lichte modus","theme.common.editThisPage":"Bewerk deze pagina","theme.common.headingLinkTitle":"Direct link naar {heading}","theme.common.skipToMainContent":"Ga naar hoofdinhoud","theme.docs.DocCard.categoryDescription":"{count} artikelen","theme.docs.breadcrumbs.home":"Homepagina","theme.docs.breadcrumbs.navAriaLabel":"Broodkruimels","theme.docs.paginator.navAriaLabel":"Documentatie pagina","theme.docs.paginator.next":"Volgende","theme.docs.paginator.previous":"Vorige","theme.docs.sidebar.closeSidebarButtonAriaLabel":"Close navigation bar","theme.docs.sidebar.collapseButtonAriaLabel":"Zijbalk inklappen","theme.docs.sidebar.collapseButtonTitle":"Zijbalk inklappen","theme.docs.sidebar.expandButtonAriaLabel":"Zijbalk uitklappen","theme.docs.sidebar.expandButtonTitle":"Zijbalk uitklappen","theme.docs.sidebar.navAriaLabel":"Docs sidebar","theme.docs.sidebar.toggleSidebarButtonAriaLabel":"Toggle navigation bar","theme.docs.tagDocListPageTitle":"{nDocsTagged} met \\"{tagName}\\"","theme.docs.tagDocListPageTitle.nDocsTagged":"Een artikel getagd|{count} artikelen getagd","theme.docs.versionBadge.label":"Versie: {versionLabel}","theme.docs.versions.latestVersionLinkLabel":"laatste versie","theme.docs.versions.latestVersionSuggestionLabel":"Voor de huidige documentatie, zie de {latestVersionLink} ({versionLabel}).","theme.docs.versions.unmaintainedVersionLabel":"Dit is de documentatie voor {siteTitle} {versionLabel}, welke niet langer actief wordt onderhouden.","theme.docs.versions.unreleasedVersionLabel":"Dit is nog niet uitgegeven documentatie voor {siteTitle}, versie {versionLabel}","theme.lastUpdated.atDate":" op {date}","theme.lastUpdated.byUser":" door {user}","theme.lastUpdated.lastUpdatedAtBy":"Laatst bijgewerkt{atDate}{byUser}","theme.navbar.mobileLanguageDropdown.label":"Talen","theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel":"\u2190 Terug naar het hoofdmenu","theme.navbar.mobileVersionsDropdown.label":"Versies","theme.tags.tagsListLabel":"Tags:","theme.tags.tagsPageLink":"Laat alle tags zien","theme.tags.tagsPageTitle":"Tags","theme.unlistedContent.message":"This page is unlisted. Search engines will not index it, and only users having a direct link can access it.","theme.unlistedContent.title":"Unlisted page","theme.SearchBar.label":"Zoeken","theme.SearchBar.seeAll":"Laat alle {count} resultaten zien","theme.SearchModal.errorScreen.helpText":"Misschien wilt u uw netwerkverbinding controleren.","theme.SearchModal.errorScreen.titleText":"Niet in staat resultaten op te halen","theme.SearchModal.footer.closeKeyAriaLabel":"Escape-toets","theme.SearchModal.footer.closeText":"om te sluiten","theme.SearchModal.footer.navigateDownKeyAriaLabel":"Pijltoets naar beneden","theme.SearchModal.footer.navigateText":"om te navigeren","theme.SearchModal.footer.navigateUpKeyAriaLabel":"Pijltoets naar boven","theme.SearchModal.footer.searchByText":"Zoek op","theme.SearchModal.footer.selectKeyAriaLabel":"Enter-toets","theme.SearchModal.footer.selectText":"om te selecteren","theme.SearchModal.noResultsScreen.noResultsText":"Geen resultaten voor","theme.SearchModal.noResultsScreen.reportMissingResultsLinkText":"Laat het ons weten.","theme.SearchModal.noResultsScreen.reportMissingResultsText":"Zou deze zoekopdracht resultaten moeten opleveren?","theme.SearchModal.noResultsScreen.suggestedQueryText":"Probeer om te zoeken op","theme.SearchModal.placeholder":"Doorzoek de documentatie","theme.SearchModal.searchBox.cancelButtonText":"Annuleren","theme.SearchModal.searchBox.resetButtonTitle":"Maak de zoekopdracht leeg","theme.SearchModal.startScreen.favoriteSearchesTitle":"Favoriet","theme.SearchModal.startScreen.noRecentSearchesText":"Geen recente zoekopdrachten","theme.SearchModal.startScreen.recentSearchesTitle":"Recente zoekopdrachten","theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn favorieten","theme.SearchModal.startScreen.removeRecentSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn geschiedenis","theme.SearchModal.startScreen.saveRecentSearchButtonTitle":"Sla deze zoekopdracht op","theme.SearchPage.algoliaLabel":"Zoeken door Algolia","theme.SearchPage.documentsFound.plurals":"Een document gevonden|{count} documenten gevonden","theme.SearchPage.emptyResultsTitle":"Doorzoek de documentatie","theme.SearchPage.existingResultsTitle":"Zoekresultaten voor \\"{query}\\"","theme.SearchPage.fetchingNewResults":"Resultaten ophalen...","theme.SearchPage.inputLabel":"Zoeken","theme.SearchPage.inputPlaceholder":"Typ hier uw zoekopdracht","theme.SearchPage.noResultsText":"Geen resultaten gevonden"}');
+   e.exports = {};
   },
   16887: (e) => {
    'use strict';
-   e.exports = JSON.parse('{"/bingo/-32d":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-1-382":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-2-73d":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/blog-e28":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"b2b675dd"},"/blog/archive-f70":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"b2f554cd"},"/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-9ba":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/blog/community-blocks-20f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/blog/community-online-formulieren-2d3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/blog/de-mijlpalen-van-2022-802":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/blog/design-open-dag-18d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/blog/design-systems-in-het-buitenland-6-lessen-b57":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/blog/design-systems-week-2023-komt-eraan-a8c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-b32":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/blog/een-design-system-meerdere-producten-522":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"c9609a68"},"/blog/een-overheid-practice-what-you-preach-aa1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/blog/gebruikerstest-ondernemers-den-haag-654":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-932":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/blog/innovatiebudget-voor-nl-design-system-07b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-25a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/blog/kick-off-werkgroepen-van-het-nl-design-system-222":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/blog/licentiekeuze-nl-design-system-36b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/blog/meerdere-manieren-contact-4ed":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-bd7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/blog/nl-design-system-in-2021-b94":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/blog/nl-design-system-zelfstandig-verder-916":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/blog/over-figma-als-keuze-voor-het-nl-design-system-b7d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/blog/spacing-tokens-178":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/blog/tags-f94":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"a7023ddc"},"/blog/tags/architectuur-219":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"5b53ebf6","listMetadata":"64b13969"},"/blog/tags/buitenland-40f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"8b6c8a8c","listMetadata":"6c57e36f"},"/blog/tags/componenten-1db":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"81536b8a","listMetadata":"f9097464"},"/blog/tags/contentrichtlijnen-784":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"2f04c335","listMetadata":"7b7af99a"},"/blog/tags/design-systems-075":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"03606068","listMetadata":"61890307"},"/blog/tags/design-systems-week-e88":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"94b5e6fd","listMetadata":"a5d65f05"},"/blog/tags/design-tokens-015":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"016d3eb4","listMetadata":"a5657520"},"/blog/tags/designers-c39":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"c9c3106d","listMetadata":"6d8df171"},"/blog/tags/developers-c7b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"5a463406","listMetadata":"5919194a"},"/blog/tags/een-overheid-3b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"45f9a259","listMetadata":"18f72304"},"/blog/tags/estafettemodel-f65":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"d35b0244","listMetadata":"533b6d18"},"/blog/tags/figma-7e0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"839d3c4e","listMetadata":"e8c696cf"},"/blog/tags/formulieren-891":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"32660e7c","listMetadata":"b519f87e"},"/blog/tags/gebruiker-centraal-e1e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"36aae756","listMetadata":"dd7e6517"},"/blog/tags/gebruikersonderzoeken-8d7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"0a2d80a0","listMetadata":"8762f664"},"/blog/tags/gebruikerstesten-5ff":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"5ffa4053","listMetadata":"a65373b3"},"/blog/tags/lettertype-e97":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"bb678bf7","listMetadata":"044d2994"},"/blog/tags/logius-ef0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"17c216dc","listMetadata":"a89706a3"},"/blog/tags/meta-c3b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"d19a514d","listMetadata":"b0ef882f"},"/blog/tags/mijlpalen-6cd":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"292daa85","listMetadata":"9a9a4fab"},"/blog/tags/nl-design-system-d2e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"2efe344a","listMetadata":"2669888f"},"/blog/tags/richtlijnen-ea4":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"f20a3699","listMetadata":"d01ba261"},"/blog/tags/toegankelijkheid-5d0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"60213d5c","listMetadata":"9bf7fd7b"},"/blog/tags/update-e38":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"2ed736ae","listMetadata":"a8a015ed"},"/blog/tags/werkgroepen-7fb":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"73d20161","listMetadata":"2d685956"},"/blog/tags/word-press-c96":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"6b8ad28a","listMetadata":"abcc39c5"},"/blog/toegankelijke-foutmeldingen-formulieren-dc6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-ac9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e3f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/blog/update-nl-design-system-d7c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-925":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-3b9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/blog/wmebv-gebruikerstesten-2ec":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/contrast/-6e5":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/search-c7a":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/-cab":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/-214":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/-de6":{"__comp":"a7bd4aaa","version":"935f2afb"},"/tags-d7a":{"__comp":"3720c009","tags":"55960ee5"},"/tags/community-e15":{"__comp":"df203c0f","tag":"d5484ed9"},"/-6b9":{"__comp":"a94703ab"},"/accordion-a3b":{"__comp":"17896441","content":"a77e5ea3"},"/action-group-e09":{"__comp":"17896441","content":"381b9e37"},"/alert-16f":{"__comp":"17896441","content":"3d7707fa"},"/alert-dialog-9e5":{"__comp":"17896441","content":"7290f823"},"/avatar-ed9":{"__comp":"17896441","content":"d3c1b80a"},"/blockquote-85f":{"__comp":"17896441","content":"7b6dc98e"},"/breadcrumb-navigation-d89":{"__comp":"17896441","content":"a81e9677"},"/button-7ed":{"__comp":"17896441","content":"5110c353"},"/Calendar-206":{"__comp":"17896441","content":"ace6628c"},"/card-as-link-c7b":{"__comp":"17896441","content":"9186edf4"},"/case-card-92c":{"__comp":"17896441","content":"fbf7ea66"},"/CHANGELOG-756":{"__comp":"17896441","content":"ca36df4d"},"/checkbox-8c2":{"__comp":"17896441","content":"1c0b529b"},"/checkbox-group-a25":{"__comp":"17896441","content":"91c9e2b1"},"/coc-1af":{"__comp":"17896441","content":"1e45e22d"},"/colofon-ed3":{"__comp":"17896441","content":"6076374a"},"/community-42f":{"__comp":"14eb3368","categoryGeneratedIndex":"031b9593"},"/community/design-open-dag/bedankt-d56":{"__comp":"17896441","content":"c15f67bc"},"/community/estafettemodeldag/bedankt-f60":{"__comp":"17896441","content":"bf8a7bac"},"/community/events/estafettemodeldag-5f2":{"__comp":"17896441","content":"5293bf37"},"/community/events/overzicht-acd":{"__comp":"14eb3368","categoryGeneratedIndex":"72c446ac"},"/community/sluit-je-aan-00a":{"__comp":"17896441","content":"ad9d479a"},"/community/sluit-je-aan/bedankt-c5c":{"__comp":"17896441","content":"adb328b9"},"/community/wie-doet-mee-d5c":{"__comp":"17896441","content":"b56159c8"},"/componenten/-804":{"__comp":"17896441","content":"9f867b5d"},"/data-badge-f88":{"__comp":"17896441","content":"2e11687d"},"/date-input-a49":{"__comp":"17896441","content":"48c36009"},"/date-input-group-428":{"__comp":"17896441","content":"3d58a721"},"/date-picker-f04":{"__comp":"17896441","content":"4d3e1a9b"},"/definition-list-fdd":{"__comp":"17896441","content":"861e17e8"},"/dot-badge-f25":{"__comp":"17896441","content":"0cf410ab"},"/drawer-f81":{"__comp":"17896441","content":"5e41da51"},"/events/design-open-dag-c4d":{"__comp":"17896441","content":"ced44f18"},"/events/design-open-hour-08f":{"__comp":"17896441","content":"0eacf79f"},"/events/design-open-hour/aanmelden-a61":{"__comp":"17896441","content":"adc7d54a"},"/events/design-open-hour/aanmelden/bedankt-796":{"__comp":"17896441","content":"1bc7f6c3"},"/events/design-open-hour/overzicht-0f1":{"__comp":"14eb3368","categoryGeneratedIndex":"84a56bc3"},"/events/design-systems-week-2022-528":{"__comp":"17896441","content":"cd7f02d4"},"/events/design-systems-week-2023-50d":{"__comp":"17896441","content":"845a118e"},"/events/design-systems-week-2023/en/program-dc2":{"__comp":"17896441","content":"60ab2a10"},"/events/design-systems-week-2023/en/timetable-818":{"__comp":"17896441","content":"eae49527"},"/events/design-systems-week-2023/programma-b22":{"__comp":"17896441","content":"bf203e4a"},"/events/design-systems-week-2023/tijdschema-4c1":{"__comp":"17896441","content":"b0bf1aa3"},"/events/design-systems-week-2024-8f5":{"__comp":"17896441","content":"0088abd0"},"/events/developer-open-hour-572":{"__comp":"17896441","content":"ba4a9952"},"/events/developer-open-hour/aanmelden-1f4":{"__comp":"17896441","content":"c91a40d5"},"/events/developer-open-hour/aanmelden/bedankt-fb6":{"__comp":"17896441","content":"f19e5f41"},"/events/developer-open-hour/overzicht-6d5":{"__comp":"14eb3368","categoryGeneratedIndex":"48a6b01c"},"/events/heartbeat-ee2":{"__comp":"17896441","content":"235c86a2"},"/events/heartbeat/aanmelden-ef9":{"__comp":"17896441","content":"323b7945"},"/events/heartbeat/aanmelden/bedankt-e99":{"__comp":"17896441","content":"73bf6027"},"/events/heartbeat/overzicht-f94":{"__comp":"14eb3368","categoryGeneratedIndex":"bf13cd03"},"/events/heartbeat/videos-a37":{"__comp":"17896441","content":"125932a1"},"/fieldset-a0d":{"__comp":"17896441","content":"5a50c8e4"},"/figure-47b":{"__comp":"17896441","content":"32470cbe"},"/file-input-e63":{"__comp":"17896441","content":"8aa0ba1c"},"/form-field-de8":{"__comp":"17896441","content":"6a94b0c3"},"/form-field-checkbox-option-53c":{"__comp":"17896441","content":"2fd1f4fe"},"/form-field-description-1bd":{"__comp":"17896441","content":"cd3c7377"},"/form-field-error-message-e1c":{"__comp":"17896441","content":"d4552b9e"},"/form-field-label-31e":{"__comp":"17896441","content":"ddf35722"},"/form-field-option-label-598":{"__comp":"17896441","content":"a9493cdf"},"/form-field-partial-48c":{"__comp":"17896441","content":"6f323067"},"/form-field-partial-label-0e8":{"__comp":"17896441","content":"6ab13dac"},"/form-field-radio-option-6ca":{"__comp":"17896441","content":"52bdf594"},"/handboek-198":{"__comp":"14eb3368","categoryGeneratedIndex":"c45f29d0"},"/handboek/component-bijdragen/candidate-stappenplan-0ad":{"__comp":"17896441","content":"564db768"},"/handboek/component-bijdragen/community-stappenplan-83c":{"__comp":"17896441","content":"98a78e5e"},"/handboek/component-bijdragen/definition-of-done-690":{"__comp":"17896441","content":"124d4001"},"/handboek/component-bijdragen/hall-of-fame-stappenplan-319":{"__comp":"17896441","content":"28d3d582"},"/handboek/component-bijdragen/help-wanted-stappenplan-7eb":{"__comp":"17896441","content":"aeaf35c2"},"/handboek/component-bijdragen/overzicht-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"1b7e5f7c"},"/handboek/design-tokens/-ba2":{"__comp":"17896441","content":"6db74d90"},"/handboek/designer/-d2b":{"__comp":"17896441","content":"b8bffd88"},"/handboek/designer/community-3a0":{"__comp":"17896441","content":"1b445115"},"/handboek/designer/figma-structuur-b8d":{"__comp":"17896441","content":"19f8dbc7"},"/handboek/designer/overzicht-8b5":{"__comp":"14eb3368","categoryGeneratedIndex":"389658a5"},"/handboek/designer/stappenplan-b2e":{"__comp":"17896441","content":"2289dd67"},"/handboek/designer/voorbeeld-thema-531":{"__comp":"17896441","content":"77321757"},"/handboek/designer/zelf-componenten-maken-2ce":{"__comp":"17896441","content":"dfb098ef"},"/handboek/developer/aan-de-slag-45e":{"__comp":"17896441","content":"93a8441b"},"/handboek/developer/architectuur-270":{"__comp":"17896441","content":"9c1b7be2"},"/handboek/developer/component-inzetten-b57":{"__comp":"17896441","content":"dcd65422"},"/handboek/developer/component-uitbreiden-3d3":{"__comp":"17896441","content":"9b2e9553"},"/handboek/developer/componenten-maken-13b":{"__comp":"17896441","content":"e3b51539"},"/handboek/developer/herbruikbare-css-233":{"__comp":"17896441","content":"555de4b4"},"/handboek/developer/meewerken-als-developer-b38":{"__comp":"17896441","content":"bc2d69ea"},"/handboek/developer/overzicht-59c":{"__comp":"14eb3368","categoryGeneratedIndex":"af16d7d3"},"/handboek/developer/samenwerken-aan-componenten-5a3":{"__comp":"17896441","content":"e756447e"},"/handboek/developer/thema-maken-e85":{"__comp":"17896441","content":"751bfb55"},"/handboek/estafettemodel-1f8":{"__comp":"17896441","content":"43a0fbb9"},"/handboek/introductie-f9a":{"__comp":"17896441","content":"411e6d0c"},"/handboek/leverancier/introductie-4a5":{"__comp":"17896441","content":"20f2808f"},"/handboek/manager/introductie-d4c":{"__comp":"17896441","content":"26a7a4d1"},"/handboek/naamgeving-7ee":{"__comp":"17896441","content":"c8ac2561"},"/handboek/organisatie/meedoen-daa":{"__comp":"17896441","content":"ce7b85cb"},"/handboek/organisatie/overzicht-6be":{"__comp":"14eb3368","categoryGeneratedIndex":"facf449e"},"/handboek/organisatie/vragen-over-aanbestedingen-d3e":{"__comp":"17896441","content":"ac66737c"},"/heading-805":{"__comp":"17896441","content":"6fd5f6ab"},"/heading-1-da6":{"__comp":"17896441","content":"150707f3"},"/heading-2-aa5":{"__comp":"17896441","content":"16fd2d30"},"/heading-3-d27":{"__comp":"17896441","content":"8f6d3c26"},"/heading-4-238":{"__comp":"17896441","content":"c776d6ea"},"/heading-5-628":{"__comp":"17896441","content":"9ec6ce4c"},"/heading-6-314":{"__comp":"17896441","content":"91059c25"},"/heading-group-44c":{"__comp":"17896441","content":"da2da55d"},"/icon-86d":{"__comp":"17896441","content":"8baef6f7"},"/invalid-form-alert-ae2":{"__comp":"17896441","content":"b2991567"},"/language-navigation-50a":{"__comp":"17896441","content":"c51cb369"},"/legend-726":{"__comp":"17896441","content":"09d51e35"},"/link-028":{"__comp":"17896441","content":"25b93367"},"/link-list-574":{"__comp":"17896441","content":"f633a06a"},"/modal-dialog-03c":{"__comp":"17896441","content":"b75db01c"},"/navigation-bar-219":{"__comp":"17896441","content":"da8aeb86"},"/non-modal-dialog-9e9":{"__comp":"17896441","content":"c6b96a0f"},"/notification-banner-087":{"__comp":"17896441","content":"e21395b4"},"/number-badge-1ee":{"__comp":"17896441","content":"8ea6c2d1"},"/number-input-0d1":{"__comp":"17896441","content":"ffcf9766"},"/open-source/cc0-80b":{"__comp":"17896441","content":"72b0d195"},"/open-source/eupl-097":{"__comp":"17896441","content":"67d19623"},"/ordered-list-4ec":{"__comp":"17896441","content":"2c881fe2"},"/page-footer-821":{"__comp":"17896441","content":"3d377413"},"/page-header-697":{"__comp":"17896441","content":"3464a859"},"/pagination-aa9":{"__comp":"17896441","content":"3679878e"},"/paragraph-e83":{"__comp":"17896441","content":"68b96050"},"/password-input-93c":{"__comp":"17896441","content":"9228e550"},"/pre-heading-87e":{"__comp":"17896441","content":"3f3eb7e2"},"/privacyverklaring-e5f":{"__comp":"17896441","content":"2383fbae"},"/progress-bar-db6":{"__comp":"17896441","content":"b4f4fb7e"},"/progress-list-5da":{"__comp":"17896441","content":"fbfd5b4f"},"/project-fa6":{"__comp":"14eb3368","categoryGeneratedIndex":"de9ea4b2"},"/project/blijf-op-de-hoogte-c41":{"__comp":"17896441","content":"281e6f8e"},"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-645":{"__comp":"17896441","content":"32636356"},"/project/faq-e37":{"__comp":"17896441","content":"77bf2607"},"/project/kernteam-ae3":{"__comp":"17896441","content":"03722200"},"/project/links-342":{"__comp":"17896441","content":"465cea2f"},"/project/nieuwsbrief-de8":{"__comp":"17896441","content":"c651b2e8"},"/project/over-nl-design-system-7b0":{"__comp":"17896441","content":"5f7673a0"},"/radio-button-63a":{"__comp":"17896441","content":"d0b753ca"},"/radio-group-cce":{"__comp":"17896441","content":"7cc1f45d"},"/range-9a8":{"__comp":"17896441","content":"46500269"},"/rich-text-content-73e":{"__comp":"17896441","content":"08d81d65"},"/richtlijnen-a7a":{"__comp":"14eb3368","categoryGeneratedIndex":"44e0c4b7"},"/richtlijnen/formulieren/-dbd":{"__comp":"17896441","content":"54b1e9e3"},"/richtlijnen/formulieren/autocomplete-402":{"__comp":"17896441","content":"a7537d50"},"/richtlijnen/formulieren/bevestigingspagina-c6a":{"__comp":"17896441","content":"7af3a6ef"},"/richtlijnen/formulieren/buttons-683":{"__comp":"17896441","content":"aa8a543f"},"/richtlijnen/formulieren/descriptions-910":{"__comp":"17896441","content":"0556c22e"},"/richtlijnen/formulieren/foutmeldingen-19d":{"__comp":"17896441","content":"b83fe955"},"/richtlijnen/formulieren/labels-f4e":{"__comp":"17896441","content":"000024cb"},"/richtlijnen/formulieren/links-925":{"__comp":"17896441","content":"90f10f11"},"/richtlijnen/formulieren/meerdere-stappen-6c3":{"__comp":"17896441","content":"f52fcd14"},"/richtlijnen/formulieren/overzicht-63e":{"__comp":"14eb3368","categoryGeneratedIndex":"e83393d8"},"/richtlijnen/formulieren/placeholders-cee":{"__comp":"17896441","content":"0f134466"},"/richtlijnen/formulieren/toetsenbord-0c2":{"__comp":"17896441","content":"5aa1d05c"},"/richtlijnen/formulieren/visueel-ontwerp-323":{"__comp":"17896441","content":"95312783"},"/richtlijnen/formulieren/voorkom-fouten-2db":{"__comp":"17896441","content":"c8c68184"},"/richtlijnen/formulieren/vragen-be7":{"__comp":"17896441","content":"6ad1359b"},"/richtlijnen/formulieren/wanneer-welk-form-element-faf":{"__comp":"17896441","content":"b1e76af7"},"/richtlijnen/introductie-360":{"__comp":"17896441","content":"6b7d4ee0"},"/richtlijnen/stijl/iconen-5b9":{"__comp":"17896441","content":"707334e0"},"/richtlijnen/stijl/kleuren-fa7":{"__comp":"17896441","content":"13ecdb40"},"/richtlijnen/stijl/overzicht-adf":{"__comp":"14eb3368","categoryGeneratedIndex":"dd47c273"},"/richtlijnen/stijl/ruimte-79f":{"__comp":"17896441","content":"e07f5d94"},"/richtlijnen/stijl/typografie-483":{"__comp":"17896441","content":"3015a2b9"},"/select-5e7":{"__comp":"17896441","content":"ed74afc1"},"/separator-454":{"__comp":"17896441","content":"e5bc4a9e"},"/side-navigation-600":{"__comp":"17896441","content":"b50de158"},"/skip-link-d13":{"__comp":"17896441","content":"68ddddde"},"/spinner-70f":{"__comp":"17896441","content":"f5f3cece"},"/status-badge-6aa":{"__comp":"17896441","content":"d5f36106"},"/strong-40f":{"__comp":"17896441","content":"cc7e1584"},"/sub-heading-b7e":{"__comp":"17896441","content":"7c4f6831"},"/summary-list-4fa":{"__comp":"17896441","content":"4ecd84ac"},"/switch-5b4":{"__comp":"17896441","content":"b171e401"},"/table-b60":{"__comp":"17896441","content":"f1833817"},"/tabs-963":{"__comp":"17896441","content":"7e20bedc"},"/task-list-293":{"__comp":"17896441","content":"667b53b1"},"/text-input-54b":{"__comp":"17896441","content":"8165282b"},"/text-input-group-ed4":{"__comp":"17896441","content":"22ebae92"},"/textarea-5a3":{"__comp":"17896441","content":"70fe0045"},"/toegankelijkheidsverklaring-e63":{"__comp":"17896441","content":"2933852b"},"/toegankelijkheidsverklaring/rapport-2023-feb":{"__comp":"17896441","content":"452f106e"},"/toggletip-5b0":{"__comp":"17896441","content":"d3deb5db"},"/unordered-list-525":{"__comp":"17896441","content":"ff07fdf2"},"/video-3ac":{"__comp":"17896441","content":"f67ebaad"},"/voorbeelden-a40":{"__comp":"14eb3368","categoryGeneratedIndex":"b9e57eaa"},"/voorbeelden/-fa9":{"__comp":"17896441","content":"dd06f6af"},"/voorbeelden/onderzoek/-62d":{"__comp":"17896441","content":"e59d1036"},"/voorbeelden/patronen-c72":{"__comp":"14eb3368","categoryGeneratedIndex":"be0dd82d"},"/voorbeelden/patronen/formulieren-c44":{"__comp":"14eb3368","categoryGeneratedIndex":"002a89ff"},"/voorbeelden/patronen/formulieren/bevestigingspagina-5ca":{"__comp":"17896441","content":"311596ba"},"/voorbeelden/patronen/formulieren/controlepagina-50c":{"__comp":"17896441","content":"3e8bb961"},"/voorbeelden/patronen/formulieren/foutmeldingen-4a9":{"__comp":"17896441","content":"228952b2"},"/voorbeelden/patronen/formulieren/funnel-header-4d8":{"__comp":"17896441","content":"682b2c96"},"/voorbeelden/patronen/formulieren/inloggen-651":{"__comp":"17896441","content":"60f94907"},"/voorbeelden/patronen/formulieren/intropagina-a29":{"__comp":"17896441","content":"8eda713e"},"/voorbeelden/patronen/formulieren/meerstappenformulier-96a":{"__comp":"17896441","content":"51323ca8"},"/voorbeelden/patronen/formulieren/niet-verplichte-velden-1e0":{"__comp":"17896441","content":"9f3e56ab"},"/voorbeelden/patronen/formulieren/opslaan-of-stoppen-0b8":{"__comp":"17896441","content":"18328f1a"},"/voorbeelden/patronen/formulieren/responsive-design-a94":{"__comp":"17896441","content":"c1a8ab3a"},"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-fe2":{"__comp":"17896441","content":"bc199175"},"/voorbeelden/patronen/formulieren/startpunt-6a4":{"__comp":"17896441","content":"3b7bee57"},"/voorbeelden/patronen/formulieren/terug-navigeren-567":{"__comp":"17896441","content":"acbbc3fa"},"/voorbeelden/patronen/formulieren/uploaden-a29":{"__comp":"17896441","content":"65c3b531"},"/voorbeelden/patronen/formulieren/visual-design-2ad":{"__comp":"17896441","content":"9652d10b"},"/voorbeelden/patronen/formulieren/volgende-stap-977":{"__comp":"17896441","content":"ff61fdd4"},"/voorbeelden/patronen/formulieren/voortgang-indicatie-038":{"__comp":"17896441","content":"70f68e65"},"/voorbeelden/templates/-2b1":{"__comp":"17896441","content":"5f26db3b"},"/wcag-d32":{"__comp":"14eb3368","categoryGeneratedIndex":"ace5ddd0"},"/wcag/1.1.1-616":{"__comp":"17896441","content":"b24d1ef2"},"/wcag/1.3.1-07d":{"__comp":"17896441","content":"94c4067d"},"/wcag/1.3.5-070":{"__comp":"17896441","content":"a52685f4"},"/wcag/2.1.1-2f9":{"__comp":"17896441","content":"1fd620f1"},"/wcag/2.4.1-bb1":{"__comp":"17896441","content":"37c1945c"},"/wcag/2.4.10-a92":{"__comp":"17896441","content":"d9284525"},"/wcag/2.4.13-bff":{"__comp":"17896441","content":"210e540d"},"/wcag/2.4.2-c38":{"__comp":"17896441","content":"f36b0a83"},"/wcag/2.4.4-ee6":{"__comp":"17896441","content":"66227b34"},"/wcag/2.4.6-1dd":{"__comp":"17896441","content":"d19ee383"},"/wcag/2.4.7-73d":{"__comp":"17896441","content":"5ecc2432"},"/wcag/3.1.1-665":{"__comp":"17896441","content":"28e99dcb"},"/wcag/3.1.2-44a":{"__comp":"17896441","content":"e12b15f5"},"/wcag/3.2.1-7ed":{"__comp":"17896441","content":"c3dc88b7"},"/wcag/3.2.2-78d":{"__comp":"17896441","content":"c2b84a26"},"/wcag/3.3.1-d9f":{"__comp":"17896441","content":"e98c6ca0"},"/wcag/3.3.3-a8b":{"__comp":"17896441","content":"5b0260c8"},"/wcag/3.3.4-881":{"__comp":"17896441","content":"b56ace87"},"/wcag/4.1.1-dc2":{"__comp":"17896441","content":"6fdf8dbf"},"/wcag/4.1.2-a09":{"__comp":"17896441","content":"5e427ce0"},"/wcag/4.1.3-a78":{"__comp":"17896441","content":"121271ef"},"/wcag/introduction-f78":{"__comp":"17896441","content":"91ad73c4"}}');
+   e.exports = JSON.parse('{"/en/bingo/-4ac":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-1-dab":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-2-d09":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/blog-607":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"fba6c282"},"/en/blog/archive-170":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"f6cbeee1"},"/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-eff":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/en/blog/community-blocks-d61":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/en/blog/community-online-formulieren-c2a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/en/blog/de-mijlpalen-van-2022-8f1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/en/blog/design-open-dag-16e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/en/blog/design-systems-in-het-buitenland-6-lessen-5c7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/en/blog/design-systems-week-2023-komt-eraan-3af":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-d27":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/en/blog/een-design-system-meerdere-producten-83a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"c9609a68"},"/en/blog/een-overheid-practice-what-you-preach-298":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/en/blog/gebruikerstest-ondernemers-den-haag-ed2":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-e52":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/en/blog/innovatiebudget-voor-nl-design-system-a92":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-5a9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/en/blog/kick-off-werkgroepen-van-het-nl-design-system-75e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/en/blog/licentiekeuze-nl-design-system-322":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/en/blog/meerdere-manieren-contact-7b8":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-b74":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/en/blog/nl-design-system-in-2021-bbc":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/en/blog/nl-design-system-zelfstandig-verder-cf9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/en/blog/over-figma-als-keuze-voor-het-nl-design-system-750":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/en/blog/spacing-tokens-11e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/en/blog/tags-8bb":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"9bdd22eb"},"/en/blog/tags/architectuur-93f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"8df97ee5","listMetadata":"2da1f935"},"/en/blog/tags/buitenland-c08":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"232d0db4","listMetadata":"3ec61807"},"/en/blog/tags/componenten-39e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"57b28864","listMetadata":"893094ee"},"/en/blog/tags/contentrichtlijnen-267":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"d647d050","listMetadata":"164232d1"},"/en/blog/tags/design-systems-acf":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"a792b491","listMetadata":"6a2f4d46"},"/en/blog/tags/design-systems-week-9a8":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"4ecafe36","listMetadata":"e73f9950"},"/en/blog/tags/design-tokens-c98":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"0fd7eb6e","listMetadata":"520ccf84"},"/en/blog/tags/designers-115":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"6dba794c","listMetadata":"7bab27bf"},"/en/blog/tags/developers-0b0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"ca82639c","listMetadata":"a2bb2b83"},"/en/blog/tags/een-overheid-648":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"4a8999c7","listMetadata":"61e31d3f"},"/en/blog/tags/estafettemodel-a2f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"3ff65370","listMetadata":"463aafc7"},"/en/blog/tags/figma-407":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"80c19b87","listMetadata":"a2514f03"},"/en/blog/tags/formulieren-011":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"86c1b350","listMetadata":"2435a34f"},"/en/blog/tags/gebruiker-centraal-6fa":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"9b74bec5","listMetadata":"35677b07"},"/en/blog/tags/gebruikersonderzoeken-92a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"dce08b4f","listMetadata":"3e3ea08d"},"/en/blog/tags/gebruikerstesten-fe0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"af5d61d0","listMetadata":"02601132"},"/en/blog/tags/lettertype-982":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"6765bbe1","listMetadata":"68117824"},"/en/blog/tags/logius-31a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"c9bf1512","listMetadata":"5efd353f"},"/en/blog/tags/meta-1b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"fd87590a","listMetadata":"1aa77dba"},"/en/blog/tags/mijlpalen-70a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"39418f7b","listMetadata":"7faf29d7"},"/en/blog/tags/nl-design-system-684":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"257a732d","listMetadata":"3a63c8bb"},"/en/blog/tags/richtlijnen-3c7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"14a250a4","listMetadata":"c20168b0"},"/en/blog/tags/toegankelijkheid-f80":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"04087e03","listMetadata":"27ff9d14"},"/en/blog/tags/update-651":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"dd706f12","listMetadata":"7e0bd177"},"/en/blog/tags/werkgroepen-e31":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"7e11c81b","listMetadata":"b3531ef4"},"/en/blog/tags/word-press-87e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"9c510eeb","listMetadata":"8fc68f72"},"/en/blog/toegankelijke-foutmeldingen-formulieren-078":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-3e3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e9d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/en/blog/update-nl-design-system-fca":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-c4b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-9ab":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/en/blog/wmebv-gebruikerstesten-9d6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/en/contrast/-dce":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/search-1e0":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/en/-b64":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/-dbb":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/en/-392":{"__comp":"a7bd4aaa","version":"935f2afb"},"/en/tags-01c":{"__comp":"3720c009","tags":"55960ee5"},"/en/tags/community-1ff":{"__comp":"df203c0f","tag":"53ec08ea"},"/en/-c66":{"__comp":"a94703ab"},"/en/accordion-b0f":{"__comp":"17896441","content":"a77e5ea3"},"/en/action-group-24c":{"__comp":"17896441","content":"381b9e37"},"/en/alert-5e0":{"__comp":"17896441","content":"3d7707fa"},"/en/alert-dialog-9bd":{"__comp":"17896441","content":"7290f823"},"/en/avatar-e85":{"__comp":"17896441","content":"d3c1b80a"},"/en/blockquote-57d":{"__comp":"17896441","content":"7b6dc98e"},"/en/breadcrumb-navigation-c6e":{"__comp":"17896441","content":"a81e9677"},"/en/button-f7b":{"__comp":"17896441","content":"5110c353"},"/en/Calendar-310":{"__comp":"17896441","content":"ace6628c"},"/en/card-as-link-121":{"__comp":"17896441","content":"9186edf4"},"/en/case-card-991":{"__comp":"17896441","content":"fbf7ea66"},"/en/CHANGELOG-818":{"__comp":"17896441","content":"ca36df4d"},"/en/checkbox-860":{"__comp":"17896441","content":"1c0b529b"},"/en/checkbox-group-fb7":{"__comp":"17896441","content":"91c9e2b1"},"/en/coc-4b6":{"__comp":"17896441","content":"1e45e22d"},"/en/colofon-b43":{"__comp":"17896441","content":"6076374a"},"/en/community-2bb":{"__comp":"14eb3368","categoryGeneratedIndex":"7a777bcb"},"/en/community/design-open-dag/bedankt-c89":{"__comp":"17896441","content":"c15f67bc"},"/en/community/estafettemodeldag/bedankt-716":{"__comp":"17896441","content":"bf8a7bac"},"/en/community/events/estafettemodeldag-791":{"__comp":"17896441","content":"5293bf37"},"/en/community/events/overzicht-aa6":{"__comp":"14eb3368","categoryGeneratedIndex":"9f18257a"},"/en/community/sluit-je-aan-3d4":{"__comp":"17896441","content":"ad9d479a"},"/en/community/sluit-je-aan/bedankt-838":{"__comp":"17896441","content":"adb328b9"},"/en/community/wie-doet-mee-109":{"__comp":"17896441","content":"b56159c8"},"/en/componenten/-040":{"__comp":"17896441","content":"9f867b5d"},"/en/data-badge-c07":{"__comp":"17896441","content":"2e11687d"},"/en/date-input-6e0":{"__comp":"17896441","content":"48c36009"},"/en/date-input-group-807":{"__comp":"17896441","content":"3d58a721"},"/en/date-picker-39a":{"__comp":"17896441","content":"4d3e1a9b"},"/en/description-list-8bc":{"__comp":"17896441","content":"861e17e8"},"/en/dot-badge-3a9":{"__comp":"17896441","content":"0cf410ab"},"/en/drawer-204":{"__comp":"17896441","content":"5e41da51"},"/en/events/design-open-dag-5ba":{"__comp":"17896441","content":"ced44f18"},"/en/events/design-open-hour-6bd":{"__comp":"17896441","content":"0eacf79f"},"/en/events/design-open-hour/aanmelden-3d7":{"__comp":"17896441","content":"adc7d54a"},"/en/events/design-open-hour/aanmelden/bedankt-283":{"__comp":"17896441","content":"1bc7f6c3"},"/en/events/design-open-hour/overzicht-16c":{"__comp":"14eb3368","categoryGeneratedIndex":"b0a486e7"},"/en/events/design-systems-week-2022-f5c":{"__comp":"17896441","content":"cd7f02d4"},"/en/events/design-systems-week-2023-bc7":{"__comp":"17896441","content":"845a118e"},"/en/events/design-systems-week-2023/en/program-22d":{"__comp":"17896441","content":"60ab2a10"},"/en/events/design-systems-week-2023/en/timetable-eb9":{"__comp":"17896441","content":"eae49527"},"/en/events/design-systems-week-2023/programma-5a2":{"__comp":"17896441","content":"bf203e4a"},"/en/events/design-systems-week-2023/tijdschema-83e":{"__comp":"17896441","content":"b0bf1aa3"},"/en/events/design-systems-week-2024-535":{"__comp":"17896441","content":"0088abd0"},"/en/events/developer-open-hour-bf8":{"__comp":"17896441","content":"ba4a9952"},"/en/events/developer-open-hour/aanmelden-fa2":{"__comp":"17896441","content":"c91a40d5"},"/en/events/developer-open-hour/aanmelden/bedankt-d4e":{"__comp":"17896441","content":"f19e5f41"},"/en/events/developer-open-hour/overzicht-5fe":{"__comp":"14eb3368","categoryGeneratedIndex":"94dc40b0"},"/en/events/heartbeat-b03":{"__comp":"17896441","content":"235c86a2"},"/en/events/heartbeat/aanmelden-d05":{"__comp":"17896441","content":"323b7945"},"/en/events/heartbeat/aanmelden/bedankt-057":{"__comp":"17896441","content":"73bf6027"},"/en/events/heartbeat/overzicht-cbb":{"__comp":"14eb3368","categoryGeneratedIndex":"20a411f0"},"/en/events/heartbeat/videos-efc":{"__comp":"17896441","content":"125932a1"},"/en/fieldset-30f":{"__comp":"17896441","content":"5a50c8e4"},"/en/figure-51c":{"__comp":"17896441","content":"32470cbe"},"/en/file-input-922":{"__comp":"17896441","content":"8aa0ba1c"},"/en/form-field-bea":{"__comp":"17896441","content":"6a94b0c3"},"/en/form-field-checkbox-option-9ea":{"__comp":"17896441","content":"2fd1f4fe"},"/en/form-field-description-574":{"__comp":"17896441","content":"cd3c7377"},"/en/form-field-error-message-d71":{"__comp":"17896441","content":"d4552b9e"},"/en/form-field-label-96b":{"__comp":"17896441","content":"ddf35722"},"/en/form-field-option-label-867":{"__comp":"17896441","content":"a9493cdf"},"/en/form-field-partial-218":{"__comp":"17896441","content":"6f323067"},"/en/form-field-partial-label-90d":{"__comp":"17896441","content":"6ab13dac"},"/en/form-field-radio-option-082":{"__comp":"17896441","content":"52bdf594"},"/en/handboek-934":{"__comp":"14eb3368","categoryGeneratedIndex":"db7926ce"},"/en/handboek/component-bijdragen/candidate-stappenplan-4e4":{"__comp":"17896441","content":"564db768"},"/en/handboek/component-bijdragen/community-stappenplan-e53":{"__comp":"17896441","content":"98a78e5e"},"/en/handboek/component-bijdragen/definition-of-done-cc4":{"__comp":"17896441","content":"124d4001"},"/en/handboek/component-bijdragen/hall-of-fame-stappenplan-32a":{"__comp":"17896441","content":"28d3d582"},"/en/handboek/component-bijdragen/help-wanted-stappenplan-c04":{"__comp":"17896441","content":"aeaf35c2"},"/en/handboek/component-bijdragen/overzicht-9b2":{"__comp":"14eb3368","categoryGeneratedIndex":"95a20731"},"/en/handboek/design-tokens/-955":{"__comp":"17896441","content":"6db74d90"},"/en/handboek/designer/-1aa":{"__comp":"17896441","content":"b8bffd88"},"/en/handboek/designer/community-cf3":{"__comp":"17896441","content":"1b445115"},"/en/handboek/designer/figma-structuur-31c":{"__comp":"17896441","content":"19f8dbc7"},"/en/handboek/designer/overzicht-07f":{"__comp":"14eb3368","categoryGeneratedIndex":"4921393f"},"/en/handboek/designer/stappenplan-4b1":{"__comp":"17896441","content":"2289dd67"},"/en/handboek/designer/voorbeeld-thema-920":{"__comp":"17896441","content":"77321757"},"/en/handboek/designer/zelf-componenten-maken-875":{"__comp":"17896441","content":"dfb098ef"},"/en/handboek/developer/aan-de-slag-799":{"__comp":"17896441","content":"93a8441b"},"/en/handboek/developer/architectuur-814":{"__comp":"17896441","content":"9c1b7be2"},"/en/handboek/developer/component-inzetten-0e8":{"__comp":"17896441","content":"dcd65422"},"/en/handboek/developer/component-uitbreiden-940":{"__comp":"17896441","content":"9b2e9553"},"/en/handboek/developer/componenten-maken-d74":{"__comp":"17896441","content":"e3b51539"},"/en/handboek/developer/herbruikbare-css-9e2":{"__comp":"17896441","content":"555de4b4"},"/en/handboek/developer/meewerken-als-developer-395":{"__comp":"17896441","content":"bc2d69ea"},"/en/handboek/developer/overzicht-a06":{"__comp":"14eb3368","categoryGeneratedIndex":"b46e901f"},"/en/handboek/developer/samenwerken-aan-componenten-37c":{"__comp":"17896441","content":"e756447e"},"/en/handboek/developer/thema-maken-4ec":{"__comp":"17896441","content":"751bfb55"},"/en/handboek/estafettemodel-7d6":{"__comp":"17896441","content":"43a0fbb9"},"/en/handboek/introductie-910":{"__comp":"17896441","content":"411e6d0c"},"/en/handboek/leverancier/introductie-42a":{"__comp":"17896441","content":"20f2808f"},"/en/handboek/manager/introductie-ce3":{"__comp":"17896441","content":"26a7a4d1"},"/en/handboek/naamgeving-1d5":{"__comp":"17896441","content":"c8ac2561"},"/en/handboek/organisatie/meedoen-f3e":{"__comp":"17896441","content":"ce7b85cb"},"/en/handboek/organisatie/overzicht-b60":{"__comp":"14eb3368","categoryGeneratedIndex":"34a37bdc"},"/en/handboek/organisatie/vragen-over-aanbestedingen-bdc":{"__comp":"17896441","content":"ac66737c"},"/en/heading-d97":{"__comp":"17896441","content":"6fd5f6ab"},"/en/heading-1-e3e":{"__comp":"17896441","content":"150707f3"},"/en/heading-2-205":{"__comp":"17896441","content":"16fd2d30"},"/en/heading-3-160":{"__comp":"17896441","content":"8f6d3c26"},"/en/heading-4-b74":{"__comp":"17896441","content":"c776d6ea"},"/en/heading-5-632":{"__comp":"17896441","content":"9ec6ce4c"},"/en/heading-6-d1e":{"__comp":"17896441","content":"91059c25"},"/en/heading-group-06c":{"__comp":"17896441","content":"da2da55d"},"/en/icon-540":{"__comp":"17896441","content":"8baef6f7"},"/en/invalid-form-alert-953":{"__comp":"17896441","content":"b2991567"},"/en/language-navigation-cf8":{"__comp":"17896441","content":"c51cb369"},"/en/legend-c6f":{"__comp":"17896441","content":"09d51e35"},"/en/link-6a7":{"__comp":"17896441","content":"25b93367"},"/en/link-list-dfe":{"__comp":"17896441","content":"f633a06a"},"/en/modal-dialog-617":{"__comp":"17896441","content":"b75db01c"},"/en/navigation-bar-18d":{"__comp":"17896441","content":"da8aeb86"},"/en/non-modal-dialog-da9":{"__comp":"17896441","content":"c6b96a0f"},"/en/notification-banner-685":{"__comp":"17896441","content":"e21395b4"},"/en/number-badge-2f6":{"__comp":"17896441","content":"8ea6c2d1"},"/en/number-input-c93":{"__comp":"17896441","content":"ffcf9766"},"/en/open-source/cc0-efb":{"__comp":"17896441","content":"72b0d195"},"/en/open-source/eupl-faf":{"__comp":"17896441","content":"67d19623"},"/en/ordered-list-2f7":{"__comp":"17896441","content":"2c881fe2"},"/en/page-footer-750":{"__comp":"17896441","content":"3d377413"},"/en/page-header-40f":{"__comp":"17896441","content":"3464a859"},"/en/pagination-c17":{"__comp":"17896441","content":"3679878e"},"/en/paragraph-e05":{"__comp":"17896441","content":"68b96050"},"/en/password-input-f65":{"__comp":"17896441","content":"9228e550"},"/en/pre-heading-b30":{"__comp":"17896441","content":"3f3eb7e2"},"/en/privacyverklaring-ff9":{"__comp":"17896441","content":"2383fbae"},"/en/progress-bar-473":{"__comp":"17896441","content":"b4f4fb7e"},"/en/progress-list-5cf":{"__comp":"17896441","content":"fbfd5b4f"},"/en/project-986":{"__comp":"14eb3368","categoryGeneratedIndex":"9e2ab78b"},"/en/project/blijf-op-de-hoogte-0f9":{"__comp":"17896441","content":"281e6f8e"},"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-08d":{"__comp":"17896441","content":"32636356"},"/en/project/faq-cea":{"__comp":"17896441","content":"77bf2607"},"/en/project/kernteam-87b":{"__comp":"17896441","content":"03722200"},"/en/project/links-5cb":{"__comp":"17896441","content":"465cea2f"},"/en/project/nieuwsbrief-ff4":{"__comp":"17896441","content":"c651b2e8"},"/en/project/over-nl-design-system-ddf":{"__comp":"17896441","content":"5f7673a0"},"/en/radio-button-a20":{"__comp":"17896441","content":"d0b753ca"},"/en/radio-group-d27":{"__comp":"17896441","content":"7cc1f45d"},"/en/range-4eb":{"__comp":"17896441","content":"46500269"},"/en/rich-text-content-f5b":{"__comp":"17896441","content":"08d81d65"},"/en/richtlijnen-c7a":{"__comp":"14eb3368","categoryGeneratedIndex":"3060e3ce"},"/en/richtlijnen/formulieren/-b5e":{"__comp":"17896441","content":"54b1e9e3"},"/en/richtlijnen/formulieren/autocomplete-053":{"__comp":"17896441","content":"a7537d50"},"/en/richtlijnen/formulieren/bevestigingspagina-670":{"__comp":"17896441","content":"7af3a6ef"},"/en/richtlijnen/formulieren/buttons-9d1":{"__comp":"17896441","content":"aa8a543f"},"/en/richtlijnen/formulieren/descriptions-369":{"__comp":"17896441","content":"0556c22e"},"/en/richtlijnen/formulieren/foutmeldingen-74b":{"__comp":"17896441","content":"b83fe955"},"/en/richtlijnen/formulieren/labels-c6c":{"__comp":"17896441","content":"000024cb"},"/en/richtlijnen/formulieren/links-392":{"__comp":"17896441","content":"90f10f11"},"/en/richtlijnen/formulieren/meerdere-stappen-65a":{"__comp":"17896441","content":"f52fcd14"},"/en/richtlijnen/formulieren/overzicht-3b5":{"__comp":"14eb3368","categoryGeneratedIndex":"f42b87d8"},"/en/richtlijnen/formulieren/placeholders-361":{"__comp":"17896441","content":"0f134466"},"/en/richtlijnen/formulieren/toetsenbord-f77":{"__comp":"17896441","content":"5aa1d05c"},"/en/richtlijnen/formulieren/visueel-ontwerp-e3a":{"__comp":"17896441","content":"95312783"},"/en/richtlijnen/formulieren/voorkom-fouten-cc4":{"__comp":"17896441","content":"c8c68184"},"/en/richtlijnen/formulieren/vragen-997":{"__comp":"17896441","content":"6ad1359b"},"/en/richtlijnen/formulieren/wanneer-welk-form-element-8dc":{"__comp":"17896441","content":"b1e76af7"},"/en/richtlijnen/introductie-dfe":{"__comp":"17896441","content":"6b7d4ee0"},"/en/richtlijnen/stijl/iconen-e62":{"__comp":"17896441","content":"707334e0"},"/en/richtlijnen/stijl/kleuren-0d9":{"__comp":"17896441","content":"13ecdb40"},"/en/richtlijnen/stijl/overzicht-a44":{"__comp":"14eb3368","categoryGeneratedIndex":"d459b62b"},"/en/richtlijnen/stijl/ruimte-8c1":{"__comp":"17896441","content":"e07f5d94"},"/en/richtlijnen/stijl/typografie-c04":{"__comp":"17896441","content":"3015a2b9"},"/en/select-831":{"__comp":"17896441","content":"ed74afc1"},"/en/separator-6d1":{"__comp":"17896441","content":"e5bc4a9e"},"/en/side-navigation-1a0":{"__comp":"17896441","content":"b50de158"},"/en/skip-link-df2":{"__comp":"17896441","content":"68ddddde"},"/en/spinner-f5a":{"__comp":"17896441","content":"f5f3cece"},"/en/status-badge-799":{"__comp":"17896441","content":"d5f36106"},"/en/strong-808":{"__comp":"17896441","content":"cc7e1584"},"/en/sub-heading-d1f":{"__comp":"17896441","content":"7c4f6831"},"/en/summary-list-f83":{"__comp":"17896441","content":"4ecd84ac"},"/en/switch-499":{"__comp":"17896441","content":"b171e401"},"/en/table-a74":{"__comp":"17896441","content":"f1833817"},"/en/tabs-283":{"__comp":"17896441","content":"7e20bedc"},"/en/task-list-339":{"__comp":"17896441","content":"667b53b1"},"/en/text-input-4a4":{"__comp":"17896441","content":"8165282b"},"/en/text-input-group-d64":{"__comp":"17896441","content":"22ebae92"},"/en/textarea-761":{"__comp":"17896441","content":"70fe0045"},"/en/toegankelijkheidsverklaring-cd8":{"__comp":"17896441","content":"2933852b"},"/en/toegankelijkheidsverklaring/rapport-2023-98a":{"__comp":"17896441","content":"452f106e"},"/en/toggletip-e24":{"__comp":"17896441","content":"d3deb5db"},"/en/unordered-list-763":{"__comp":"17896441","content":"ff07fdf2"},"/en/video-ee8":{"__comp":"17896441","content":"f67ebaad"},"/en/voorbeelden-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"0abe0c91"},"/en/voorbeelden/-dd5":{"__comp":"17896441","content":"dd06f6af"},"/en/voorbeelden/onderzoek/-525":{"__comp":"17896441","content":"e59d1036"},"/en/voorbeelden/patronen-e59":{"__comp":"14eb3368","categoryGeneratedIndex":"1c4e5244"},"/en/voorbeelden/patronen/formulieren-03c":{"__comp":"14eb3368","categoryGeneratedIndex":"492f3cec"},"/en/voorbeelden/patronen/formulieren/bevestigingspagina-852":{"__comp":"17896441","content":"311596ba"},"/en/voorbeelden/patronen/formulieren/controlepagina-5da":{"__comp":"17896441","content":"3e8bb961"},"/en/voorbeelden/patronen/formulieren/foutmeldingen-6d7":{"__comp":"17896441","content":"228952b2"},"/en/voorbeelden/patronen/formulieren/funnel-header-33f":{"__comp":"17896441","content":"682b2c96"},"/en/voorbeelden/patronen/formulieren/inloggen-6ee":{"__comp":"17896441","content":"60f94907"},"/en/voorbeelden/patronen/formulieren/intropagina-dcb":{"__comp":"17896441","content":"8eda713e"},"/en/voorbeelden/patronen/formulieren/meerstappenformulier-539":{"__comp":"17896441","content":"51323ca8"},"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden-dc4":{"__comp":"17896441","content":"9f3e56ab"},"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen-92b":{"__comp":"17896441","content":"18328f1a"},"/en/voorbeelden/patronen/formulieren/responsive-design-213":{"__comp":"17896441","content":"c1a8ab3a"},"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-d0d":{"__comp":"17896441","content":"bc199175"},"/en/voorbeelden/patronen/formulieren/startpunt-5dd":{"__comp":"17896441","content":"3b7bee57"},"/en/voorbeelden/patronen/formulieren/terug-navigeren-7bb":{"__comp":"17896441","content":"acbbc3fa"},"/en/voorbeelden/patronen/formulieren/uploaden-52b":{"__comp":"17896441","content":"65c3b531"},"/en/voorbeelden/patronen/formulieren/visual-design-5c6":{"__comp":"17896441","content":"9652d10b"},"/en/voorbeelden/patronen/formulieren/volgende-stap-ac3":{"__comp":"17896441","content":"ff61fdd4"},"/en/voorbeelden/patronen/formulieren/voortgang-indicatie-5ec":{"__comp":"17896441","content":"70f68e65"},"/en/voorbeelden/templates/-f01":{"__comp":"17896441","content":"5f26db3b"},"/en/wcag-51a":{"__comp":"14eb3368","categoryGeneratedIndex":"0ca15ddc"},"/en/wcag/1.1.1-46c":{"__comp":"17896441","content":"b24d1ef2"},"/en/wcag/1.3.1-210":{"__comp":"17896441","content":"94c4067d"},"/en/wcag/1.3.5-3ca":{"__comp":"17896441","content":"a52685f4"},"/en/wcag/2.1.1-2e5":{"__comp":"17896441","content":"1fd620f1"},"/en/wcag/2.4.1-01a":{"__comp":"17896441","content":"37c1945c"},"/en/wcag/2.4.10-74f":{"__comp":"17896441","content":"d9284525"},"/en/wcag/2.4.13-73a":{"__comp":"17896441","content":"210e540d"},"/en/wcag/2.4.2-237":{"__comp":"17896441","content":"f36b0a83"},"/en/wcag/2.4.4-405":{"__comp":"17896441","content":"66227b34"},"/en/wcag/2.4.6-5a9":{"__comp":"17896441","content":"d19ee383"},"/en/wcag/2.4.7-faa":{"__comp":"17896441","content":"5ecc2432"},"/en/wcag/3.1.1-828":{"__comp":"17896441","content":"28e99dcb"},"/en/wcag/3.1.2-3f6":{"__comp":"17896441","content":"e12b15f5"},"/en/wcag/3.2.1-95b":{"__comp":"17896441","content":"c3dc88b7"},"/en/wcag/3.2.2-8ad":{"__comp":"17896441","content":"c2b84a26"},"/en/wcag/3.3.1-995":{"__comp":"17896441","content":"e98c6ca0"},"/en/wcag/3.3.3-9b6":{"__comp":"17896441","content":"5b0260c8"},"/en/wcag/3.3.4-386":{"__comp":"17896441","content":"b56ace87"},"/en/wcag/4.1.1-4d7":{"__comp":"17896441","content":"6fdf8dbf"},"/en/wcag/4.1.2-32f":{"__comp":"17896441","content":"5e427ce0"},"/en/wcag/4.1.3-3ac":{"__comp":"17896441","content":"121271ef"},"/en/wcag/introduction-f51":{"__comp":"17896441","content":"91ad73c4"}}');
   },
  },
  (e) => {

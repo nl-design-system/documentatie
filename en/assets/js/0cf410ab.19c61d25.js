@@ -10,7 +10,7 @@
     o = n(60851);
    const s = { title: 'Dot badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Dot badge', pagination_label: 'Dot badge', description: ' ', slug: '/dot-badge' },
     a = void 0,
-    u = { id: 'componenten/dot-badge/index', title: 'Dot badge', description: ' ', source: '@site/docs/componenten/dot-badge/index.mdx', sourceDirName: 'componenten/dot-badge', slug: '/dot-badge', permalink: '/en/dot-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/dot-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Dot badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Dot badge', pagination_label: 'Dot badge', description: ' ', slug: '/dot-badge' }, sidebar: 'componenten', previous: { title: 'Definition list', permalink: '/en/definition-list' }, next: { title: 'Drawer', permalink: '/en/drawer' } },
+    u = { id: 'componenten/dot-badge/index', title: 'Dot badge', description: ' ', source: '@site/docs/componenten/dot-badge/index.mdx', sourceDirName: 'componenten/dot-badge', slug: '/dot-badge', permalink: '/en/dot-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/dot-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Dot badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Dot badge', pagination_label: 'Dot badge', description: ' ', slug: '/dot-badge' }, sidebar: 'componenten', previous: { title: 'Description list', permalink: '/en/description-list' }, next: { title: 'Drawer', permalink: '/en/drawer' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -112,8 +112,8 @@
      let { children: t, level: n = 1, suffix: r } = e;
      return (0, l.jsxs)('hgroup', { className: (0, c.Z)(b['nlds-inline-heading-group'], `utrecht-heading-${n}`), children: [(0, l.jsx)('h1', { className: (0, c.Z)(b['nlds-inline-heading-group__heading']), children: t }), r && (0, l.jsxs)('p', { className: (0, c.Z)(b['nlds-inline-heading-group__suffix']), children: [r ? ' ' : '', r] })] });
     };
-   var f = n(93706),
-    k = n(49427);
+   var k = n(93706),
+    f = n(49427);
    const _ = 'task-list_hh8j',
     x = 'task-list-item_oypx',
     w = 'task-list-item__marker_Eefn',
@@ -125,7 +125,7 @@
     },
     z = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, c.Z)(x), children: [(0, l.jsxs)('div', { className: (0, c.Z)(w, { [N]: t }), children: [(0, l.jsx)('span', { className: D, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(f.aC, { role: 'presentation', children: n }), (0, l.jsx)(f.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, c.Z)(x), children: [(0, l.jsxs)('div', { className: (0, c.Z)(w, { [N]: t }), children: [(0, l.jsx)('span', { className: D, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(k.aC, { role: 'presentation', children: n }), (0, l.jsx)(k.nv, { children: r })] })] });
     };
    var S = n(14669);
    const T = (e) => {
