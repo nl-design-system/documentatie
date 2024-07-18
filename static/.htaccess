@@ -14,6 +14,7 @@ Redirect 301 "/handboek/candidate-stappenplan" "/handboek/component-bijdragen/ca
 Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen/hall-of-fame-stappenplan"
 Redirect 301 "/button-group" "/action-group"
 Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
+Redirect 301 "/definition-list" "/description-list"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
