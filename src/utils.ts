@@ -35,3 +35,5 @@ export const previousRelayStep = {
 };
 
 export const relayProjectIds = Object.keys(previousRelayStep);
+
+export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');
