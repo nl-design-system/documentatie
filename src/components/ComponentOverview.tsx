@@ -51,7 +51,12 @@ export const ComponentOverview = () => {
   const community = components.filter((c) => c.relayStep === 'COMMUNITY');
   const candidate = components.filter((c) => c.relayStep === 'CANDIDATE');
   const hallOfFame = components.filter((c) => c.relayStep === 'HALL_OF_FAME');
-  const implemented = components.filter((c) => c.projects?.filter((p) => !relayProjectIds.includes(p.id)).length);
+  const implemented = components.filter((c) =>
+    c.projects?.filter((p) => {
+      const results = !relayProjectIds.includes(p.id);
+      return results.length > 0;
+    }),
+  );
 
   return (
     <>
