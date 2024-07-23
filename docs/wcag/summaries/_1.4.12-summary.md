@@ -1,0 +1,12 @@
+<!-- @license CC0-1.0 -->
+
+Tekst kan op een aantal manieren aangepast worden, door mensen voor wie dat prettig is. Alles moet dan nog gewoon werken, en tekst mag dan niet buiten beeld vallen.
+
+Het gaat om:
+
+- De ruimte tussen tekstregels kan relatief groot ingesteld worden, zodat de ruimte tussen tekstregels anderhalf keer groter is dan de hoogte van een tekstregel zelf.
+- De ruimte tussen alinea's kan ingesteld worden op minimaal de twee keer de hoogte van een tekstregel.
+- De ruimte tussen letters kan 12% groter worden ingesteld dan normaal.
+- De ruimte tussen woorden kan 16% groter worden ingesteld dan normaal.
+
+Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier knoppen voor te maken in de website zelf.
