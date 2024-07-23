@@ -5,5 +5,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "skipLibCheck": true
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
+  "exclude": ["**/node_modules/*"]
 }

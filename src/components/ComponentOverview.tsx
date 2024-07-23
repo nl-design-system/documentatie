@@ -68,74 +68,86 @@ export const ComponentOverview = () => {
             expanded: false,
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
             body: (
-              <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-                {!!todo.length && (
-                  <FormField type="checkbox">
-                    <Checkbox defaultChecked={showTodo} id="TODO" onChange={() => setShowTodo((checked) => !checked)} />
-                    <FormLabel htmlFor="TODO">
-                      <EstafetteBadge state="Todo" />
-                    </FormLabel>
-                  </FormField>
-                )}
-                {!!helpWanted.length && (
-                  <FormField type="checkbox">
-                    <Checkbox
-                      defaultChecked={showHelpWanted}
-                      id="HELP_WANTED"
-                      onChange={() => setShowHelpWanted((checked) => !checked)}
-                    />
-                    <FormLabel htmlFor="HELP_WANTED">
-                      <EstafetteBadge state="Help Wanted" />
-                    </FormLabel>
-                  </FormField>
-                )}
-                {!!community.length && (
-                  <FormField type="checkbox">
-                    <Checkbox
-                      defaultChecked={showCommunity}
-                      id="COMMUNITY"
-                      onChange={() => setShowCommunity((checked) => !checked)}
-                    />
-                    <FormLabel htmlFor="COMMUNITY">
-                      <EstafetteBadge state="Community" />
-                    </FormLabel>
-                  </FormField>
-                )}
-                {!!candidate.length && (
-                  <FormField type="checkbox">
-                    <Checkbox
-                      defaultChecked={showCandidate}
-                      id="CANDIDATE"
-                      onChange={() => setShowCandidate((checked) => !checked)}
-                    />
-                    <FormLabel htmlFor="CANDIDATE">
-                      <EstafetteBadge state="Candidate" />
-                    </FormLabel>
-                  </FormField>
-                )}
-                {!!hallOfFame.length && (
-                  <FormField type="checkbox">
-                    <Checkbox
-                      defaultChecked={showHallOfFame}
-                      id="HALL_OF_FAME"
-                      onChange={() => setShowHallOfFame((checked) => !checked)}
-                    />
-                    <FormLabel htmlFor="HALL_OF_FAME">
-                      <EstafetteBadge state="Hall of Fame" />
-                    </FormLabel>
-                  </FormField>
-                )}
-                {!!implemented.length && (
-                  <FormField type="checkbox" className={style['utrecht-form-field--nlds-switch']}>
-                    <FormToggle
-                      defaultChecked={showImplemented}
-                      id="IMPLEMENTED"
-                      onChange={() => setShowImplemented((checked) => !checked)}
-                    />
-                    <FormLabel htmlFor="IMPLEMENTED">Toon alleen beschikbare componenten</FormLabel>
-                  </FormField>
-                )}
-              </Fieldset>
+              <>
+                <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
+                  {!!todo.length && (
+                    <FormField type="checkbox">
+                      <Checkbox
+                        defaultChecked={showTodo}
+                        id="TODO"
+                        onChange={() => setShowTodo((checked) => !checked)}
+                      />
+                      <FormLabel htmlFor="TODO">
+                        <EstafetteBadge state="Todo" />
+                      </FormLabel>
+                    </FormField>
+                  )}
+                  {!!helpWanted.length && (
+                    <FormField type="checkbox">
+                      <Checkbox
+                        defaultChecked={showHelpWanted}
+                        id="HELP_WANTED"
+                        onChange={() => setShowHelpWanted((checked) => !checked)}
+                      />
+                      <FormLabel htmlFor="HELP_WANTED">
+                        <EstafetteBadge state="Help Wanted" />
+                      </FormLabel>
+                    </FormField>
+                  )}
+                  {!!community.length && (
+                    <FormField type="checkbox">
+                      <Checkbox
+                        defaultChecked={showCommunity}
+                        id="COMMUNITY"
+                        onChange={() => setShowCommunity((checked) => !checked)}
+                      />
+                      <FormLabel htmlFor="COMMUNITY">
+                        <EstafetteBadge state="Community" />
+                      </FormLabel>
+                    </FormField>
+                  )}
+                  {!!candidate.length && (
+                    <FormField type="checkbox">
+                      <Checkbox
+                        defaultChecked={showCandidate}
+                        id="CANDIDATE"
+                        onChange={() => setShowCandidate((checked) => !checked)}
+                      />
+                      <FormLabel htmlFor="CANDIDATE">
+                        <EstafetteBadge state="Candidate" />
+                      </FormLabel>
+                    </FormField>
+                  )}
+                  {!!hallOfFame.length && (
+                    <FormField type="checkbox">
+                      <Checkbox
+                        defaultChecked={showHallOfFame}
+                        id="HALL_OF_FAME"
+                        onChange={() => setShowHallOfFame((checked) => !checked)}
+                      />
+                      <FormLabel htmlFor="HALL_OF_FAME">
+                        <EstafetteBadge state="Hall of Fame" />
+                      </FormLabel>
+                    </FormField>
+                  )}
+                  <Paragraph style={{ '--utrecht-paragraph-margin-block-end': '1rem' }}>
+                    <b>Tip</b>: Zien welke componenten je nu al kunt gebruiken? Kies dan onderstaande optie om alleen
+                    beschikbare componenten te tonen.
+                  </Paragraph>
+                  {!!implemented.length && (
+                    <>
+                      <FormField type="checkbox" className={style['utrecht-form-field--nlds-switch']}>
+                        <FormToggle
+                          defaultChecked={showImplemented}
+                          id="IMPLEMENTED"
+                          onChange={() => setShowImplemented((checked) => !checked)}
+                        />
+                        <FormLabel htmlFor="IMPLEMENTED">Toon alleen beschikbare componenten</FormLabel>
+                      </FormField>
+                    </>
+                  )}
+                </Fieldset>
+              </>
             ),
           },
         ]}
