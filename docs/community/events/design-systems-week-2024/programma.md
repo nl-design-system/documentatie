@@ -20,21 +20,20 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} organisation="US Web Design System">
 
-<Paragraph>Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their owns.</Paragraph>
+<Paragraph>Amy gaat ons laten zien hoe het US Web Design System toegankelijkheidstests in duidelijke taal heeft toegevoegd bij individuele componenten. In deze talk leer je hoe elk webteam – technisch of niet — deze tests kan gebruiken om een minimale baseline aan toegankelijkheidstests te doen, zoals tests met toetsenbord, screenreader, mobiele devices en vergrotingssoftware. Ze laat ook het iteratieve ontwerp- en bouwproces zien dat haar team heeft bij het maken van deze checklists.</Paragraph>
 
 </DSWSession>
 
 <DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway">
 
-<Paragraph>Join Geri, a seasoned design systems explorer with 8 years of adventures under her belt, as she navigates the uncharted territories of accessibility in a major product org. With no playbook in hand, Geri’s quest is one we can all relate to: figuring it out as we go along.</Paragraph>
+<Paragraph>Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het onbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht eentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn.</Paragraph>
 
-<Paragraph>In this ‘choose your own adventure’ session, you’ll discover how the principles of design systems can illuminate a path through any new challenge. Come prepared to laugh, learn, and maybe even get a little lost as we embark on a journey of getting teams onboard with digital accessibility.</Paragraph>
+<Paragraph>In deze ‘choose your own adventure’ sessie, ontdek je hoe de principes van design systems het pad naar een nieuwe uitdaging verlichten. Ben je klaar om te lachen, leren en misschien een beetje verdwalen? Ga mee op deze zoektocht naar de beste manier om teams mee te krijgen met digitale toegankelijkheid.</Paragraph>
 
 </DSWSession>
 
 <DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="GOV.UK">
 
-<Paragraph>Lessons from working on the GOV.‌UK Design System and other common platforms in UK government. How leaning on the principles that make the Web great can create more value for the public we serve.</Paragraph>
+<Paragraph>Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.‌UK Design System en andere platformen van het Verenigd Koninkrijk. Hij laat zien wat we kunnne leren van de principes die het web zo fantastisch maken, om meer waarde te creëren voor het publiek waar we het voor doen.</Paragraph>
 
 </DSWSession>
-

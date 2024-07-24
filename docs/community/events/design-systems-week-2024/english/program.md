@@ -22,11 +22,11 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 Some of the talks are in Dutch, others are in English. This page lists the talks that are in English.
 
-_All sessions can be joined online for free. Each talk will take about 30 minutes, including time for questions. [Sign up](/events/design-systems-week/sign-up) to receive updates and download [our calendar file](/dsweek-2024/dsweek-2024.ics) to add the week to your calendar._ 
+_All sessions can be joined online for free. Each talk will take about 30 minutes, including time for questions. [Sign up](/events/design-systems-week/sign-up) to receive updates and download [our calendar file](/dsweek-2024/dsweek-2024.ics) to add the week to your calendar._
 
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System">
 
-Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their owns.
+Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their own.
 
 </DSWSession>
 

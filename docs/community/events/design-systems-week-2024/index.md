@@ -36,7 +36,6 @@ Eerdere events die we organiseerden:
 - [Design Systems Week 2022](/events/design-systems-week-2022)
 - Onboarding Week 2021
 
-
 ## Toegankelijkheid
 
 We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
