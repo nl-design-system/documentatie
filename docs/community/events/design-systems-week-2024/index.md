@@ -14,7 +14,8 @@ NL Design System organiseert dit jaar voor de 4e keer een Design Systems Week. V
 
 Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten.
 
-- [Meld je aan](/events/design-systems-week/aanmelden) om op de hoogte te blijven en een kalenderbestandje te ontvangen.
+- [Download kalenderbestandje](/dsweek-2024/dsweek-2024.ics); zo heb je de dagen vast in je agenda.
+- [Meld je aan](/events/design-systems-week/aanmelden) en blijf op de hoogte.
 - [Bekijk het programma](/events/design-systems-week-2024/programma); de eerste sprekers zijn bekend.
 
 Eerdere events die we organiseerden:

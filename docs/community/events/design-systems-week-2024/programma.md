@@ -16,7 +16,7 @@ import { Link } from '@utrecht/component-library-react/dist/css-module';
 
 Tijdens Design Systems Week zijn er van **14 tot 17 oktober** dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 
-Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](/events/design-systems-week/aanmelden) om op de hoogte te blijven en een kalenderbestandje te ontvangen.
+Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](/events/design-systems-week/aanmelden) om op de hoogte te blijven en download vast het [kalender-bestand](/dsweek-2024/dsweek-2024.ics).
 
 ## Het programma
 
