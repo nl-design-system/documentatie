@@ -8,15 +8,13 @@ import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
 import style from './ComponentOverview.module.css';
 import { EstafetteBadge } from './EstafetteBadge';
-import { COMPONENT_STATES, relayProjectIds } from '../utils';
+import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
 
 export const ComponentOverview = () => {
   const category = useCurrentSidebarCategory();
 
   const getComponent = (item: any) =>
-    componentProgress.find(
-      ({ title }) => title.toLowerCase().replace(/(\s|-)+/, '') === item.title.toLowerCase().replace(/(\s|-)+/, ''),
-    );
+    componentProgress.find(({ title }) => normalizeName(title) === normalizeName(item.title));
 
   const components = category.items
     .filter((item: any) => item.docId !== 'componenten/README')
@@ -53,7 +51,12 @@ export const ComponentOverview = () => {
   const community = components.filter((c) => c.relayStep === 'COMMUNITY');
   const candidate = components.filter((c) => c.relayStep === 'CANDIDATE');
   const hallOfFame = components.filter((c) => c.relayStep === 'HALL_OF_FAME');
-  const implemented = components.filter((c) => c.projects?.filter((p) => !relayProjectIds.includes(p.id)).length);
+  const implemented = components.filter((c) =>
+    c.projects?.filter((p) => {
+      const results = !relayProjectIds.includes(p.id);
+      return results.length > 0;
+    }),
+  );
 
   return (
     <>
