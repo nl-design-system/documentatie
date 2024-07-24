@@ -1,0 +1,11 @@
+{
+  "label": "English only",
+  "collapsible": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Design Systems Week 2024",
+    "description": "From 14 to 17 October, NL Design System organises the 4th edition of Design Systems Week. Join us for short talks about the how and why of design systems, from managing design systems to user research and accessibility. This year there will be talks both in Dutch and English.",
+    "slug": "/events/design-systems-week-2024/en/overview"
+  }
+}
