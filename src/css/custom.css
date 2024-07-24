@@ -331,7 +331,15 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 /* Display internal link below sticky header */
 .theme-doc-markdown h2 {
-  scroll-margin-top: 4em;
+  scroll-margin-block-start: 4em;
+}
+
+.nlds-fragment-redirect {
+  --ifm-paragraph-margin-bottom: 0;
+}
+
+.nlds-fragment-redirect:target {
+  scroll-margin-block-start: 5em;
 }
 
 code,
