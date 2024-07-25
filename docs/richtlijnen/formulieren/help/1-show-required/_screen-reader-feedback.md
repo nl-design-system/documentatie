@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Screenreaderfeedback
 
 Vertel een gebruiker van hulptechnologieën (als screenreaders) dat een veld verplicht is met het ARIA-attribuut `aria-required="true"`.

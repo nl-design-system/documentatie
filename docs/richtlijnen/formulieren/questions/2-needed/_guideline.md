@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Check of informatie ècht nodig is
 
 Kortere formulieren kunnen sneller worden ingevuld. Ga dus per vraag na of deze informatie echt nodig is.

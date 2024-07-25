@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zorg voor een logische volgorde van de informatie
 
 De informatie in een formulier moet logisch zijn als de gebruiker van boven naar beneden leest.

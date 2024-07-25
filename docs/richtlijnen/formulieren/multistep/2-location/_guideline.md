@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Plaats de informatie over waar de gebruiker is in de stappen boven het formulier
 
 Plaats tekst en uitleg die hoort bij het formulier buiten het `<form>` element. Dus zet informatie over de stappen **boven** en niet **binnen** het `<form>` element. Dan is de kans dat screenreadergebruikers deze informatie missen het kleinst. Het waarom staat uitgelegd bij de [richtlijnen over descriptions](/richtlijnen/formulieren/alle-richtlijnen/descriptions).

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 ## Over deze richtlijnen
 
 Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in _beta_.

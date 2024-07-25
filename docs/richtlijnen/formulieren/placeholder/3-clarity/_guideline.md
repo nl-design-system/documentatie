@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Voorkom verwarring bij de gebruiker
 
 De placeholder kan ook voor verwarring zorgen bij gebruikers. Is een veld al ingevuld? De combinatie van een label met een [description](/richtlijnen/formulieren/descriptions) is een betere manier om de gebruiker te vertellen hoe een veld in te vullen. Herhaal nooit de labeltekst in de placeholder, dat geeft geen extra informatie en is dus zinloos.

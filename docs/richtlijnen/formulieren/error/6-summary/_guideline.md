@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zet een samenvatting van de foutmeldingen boven het formulier
 
 Een zeer gebruikersvriendelijke manier om fouten weer te geven is een combinatie van:

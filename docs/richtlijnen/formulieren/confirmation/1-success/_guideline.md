@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Vermeld dat het formulier succesvol is verzonden
 
 Geef de gebruiker de zekerheid dat het formulier en de inhoud ervan succesvol zijn verzonden. Dat voorkomt onzekerheid: heb ik het goed gedaan, is de informatie wel verstuurd?

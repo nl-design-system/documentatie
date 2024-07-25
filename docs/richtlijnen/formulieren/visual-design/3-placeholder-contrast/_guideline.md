@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Geef placeholders voldoende kleurcontrast
 
 Ook het kleurcontrast van de tekst van placeholders ten opzichte van de achtergrondkleur moet 4.5:1 of hoger zijn.

@@ -12,6 +12,8 @@ keywords:
   - documentatie
 ---
 
+<!-- @license CC0-1.0 -->
+
 # Richtlijnen
 
 Het NL Design System geeft richtlijnen voor het ontwikkelen van digitale diensten. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.

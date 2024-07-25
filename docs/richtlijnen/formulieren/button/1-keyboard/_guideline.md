@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Toetsenbordbediening van een button
 
 Veel gebruikers navigeren door een formulier met hun Tab-toets om van focusable element naar focusable element te springen (buttons, links, invoervelden, radio buttons, checkboxes etc).

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Vraag niet meerdere keren dezelfde informatie uit
 
 Voorkom herhaling: om zeker te weten dat iemand het juiste e-mailadres heeft ingevuld, wordt in sommige formulieren de vraag twee keer gesteld en dan vergeleken. Dit kan gebruiksvriendelijker!

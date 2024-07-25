@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Een placeholder is geen vervanger van een label
 
 De gebruiker moet altijd een zichtbare indicatie hebben over wat in te vullen. Ook tijdens het typen, wanneer de placeholder verdwijnt of als de informatie al automatisch is ingevuld.
