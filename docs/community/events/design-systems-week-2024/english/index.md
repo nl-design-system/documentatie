@@ -11,6 +11,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/ds
 
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
+<div lang="en">
+
 # Design Systems Week 2024
 
 <Paragraph lead>From 14 to 17 October 2024, NL Design System organises the 4th edition of Design Systems Week. Join us for short talks about the **how** and **why** of design systems, from managing design systems to user research and accessibility. This year there will be talks both in Dutch and English.</Paragraph>
@@ -44,3 +46,5 @@ We do our best to organise Design Systems Week accessibly. If you have specific 
 ## Code of Conduct
 
 All participants of Design Systems Week are expected to abide by our [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md). By signing up for one or more sessions you've agreed to these terms.
+
+</div>
