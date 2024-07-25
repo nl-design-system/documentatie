@@ -39,6 +39,12 @@ In this ‘choose your own adventure’ session, you’ll discover how the princ
 
 </DSWSession>
 
+<DSWSession title="Advantages to working in the open with government design systems" speakers={[speakers.MikeGifford]} organisation="Civic Actions" lang="en">
+
+For many governments, contributing to open source project is culturally a challenge. It often requires engagement with people in other departments and often outside of government. Design systems however provide a unique opportunity for governments to become more confident in their open source adoption. Mike has contributed to several government design systems. As a Drupal Core Accessibility Maintainer, he is often looking for best practices and comparing different approaches taken by governments around the world.
+
+</DSWSession>
+
 <DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="GOV.UK" lang="en">
 
 Lessons from working on the GOV.‌UK Design System and other common platforms in UK government. How leaning on the principles that make the Web great can create more value for the public we serve.

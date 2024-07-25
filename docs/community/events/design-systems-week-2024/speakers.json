@@ -38,6 +38,19 @@
     },
     "language": "en"
   },
+  "MikeGifford": {
+    "name": "Mike Gifford",
+    "organisation": "CivicActions",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-mike-gifford.png",
+      "alt": "Mike Gifford"
+    },
+    "description": {
+      "nl": "Mike werkt bij CivicActions als Open Standards & Practices Lead en deelt graag z'n kennis over open overheden, toegankelijkheid en duurzaamheid. Hij werkt onder andere met overheden in Noord-Amerika en Europa en is een internationale spreker. Hij is ook W3C Invited Expert en staat bekend als expert in de toegankelijkheid van authoring tools. Mike is ook al jaren kartrekker van toegankelijkheid bij het Drupal CMS.",
+      "en": "Mike is CivicActions’ Open Standards & Practices Lead and a thought leader on open government, as well as digital accessibility and sustainability. He has worked with governments in North America and Europe, and spoken internationally. He is also a W3C Invited Expert and recognized authoring tool accessibility expert. Mike has spearheaded accessibility improvements in Drupal since 2008, and has served as a Drupal Core Accessibility Maintainer in 2012."
+    },
+    "language": "en"
+  },
   "SteveMesser": {
     "name": "Steve Messer",
     "organisation": "Freelance",

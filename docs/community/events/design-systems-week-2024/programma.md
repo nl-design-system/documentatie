@@ -33,6 +33,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="De voordelen van open werken met design systems bij de overheid" speakers={[speakers.MikeGifford]} organisation="Civic Actions">
+
+<Paragraph>Voor veel overheden is bijdragen aan open source projecten een culturele uitdagingen. Er wordt vaak samengewerkt met mensen in andere delen van de overheid en daarbuiten. Design systems zijn een unieke kans voor overheden om met meer vertrouwen bij open source te omarmen. Mike heeft bijgedragen aan verschillende design systems van overheden en is altijd op zoek naar best practices en aanpakken van overheden over de hele wereld.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="GOV.UK">
 
 <Paragraph>Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.‌UK Design System en andere platformen van het Verenigd Koninkrijk. Hij laat zien wat we kunnne leren van de principes die het web zo fantastisch maken, om meer waarde te creëren voor het publiek waar we het voor doen.</Paragraph>
