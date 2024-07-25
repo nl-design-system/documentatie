@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Verplichte velden markeren
 
 Zijn de meeste velden in een formulier 'niet verplicht'? Of is het technisch niet mogelijk om de niet-verplichte velden te markeren? Geef dit dan aan door bij de verplichte velden de tekst '(verplicht)' in het label op te nemen.

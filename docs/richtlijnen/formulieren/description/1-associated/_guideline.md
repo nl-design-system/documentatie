@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Koppel een description aan het formulierveld
 
 Voor screenreadergebruikers is het belangrijk dat de description samen wordt voorgelezen met het formulierveld.

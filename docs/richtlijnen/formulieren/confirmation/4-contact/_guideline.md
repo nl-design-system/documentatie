@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zorg dat de gebruiker contact op kan nemen bij vragen
 
 Zorg dat de gebruiker contact op kan nemen bij vragen. Dit kan in de bevestiging, maar ook via een contactmogelijkheid op de website. Biedt dan niet alleen een telefoonnummer aan als wijze van contact opnemen.

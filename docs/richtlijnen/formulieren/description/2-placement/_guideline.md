@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Plaats descriptions tussen label en formulierveld
 
 Plaats alle descriptions op een consistente plek, liefst tussen het label en het formulierveld. Omdat de gebruiker van boven naar beneden leest, komt deze informatie na het label op een logisch moment in de leesvolgorde.

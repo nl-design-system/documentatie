@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Geef feedback aan screenreadergebruikers
 
 We geven je 3 extra manieren om feedback te geven over foutmeldingen voor screenreadergebruikers. Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Gebruik geen positieve tabindex
 
 Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) te geven met een waarde groter dan nul, bijvoorbeeld `tabindex="1"` of met gebruik van `autofocus`. De gebruiker is meteen klaar om het formulier in te gaan vullen.

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Houd het aanklikbare gedeelte groot genoeg
 
 Bij een goede koppeling tussen het label en het formulierveld, zijn beide elementen aanklikbaar. Dat maakt het aanklikbare gedeelte groot.

@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Geef duidelijk aan wanneer het formulier verzonden gaat worden
 
 Maak duidelijk aan de gebruiker wanneer het formulier echt gaat worden verzonden. Geef ook de gebruiker, als laatste stap, een samenvatting van wat is ingevuld met de mogelijkheid om te wijzigen.

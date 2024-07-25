@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Niet-verplichte velden markeren
 
 Uitgaande van het gegeven dat je in formulieren enkel het broodnodige uitvraagt zullen de meeste velden verplicht zijn. Hierdoor vormen de niet-verplichte velden een uitzondering. Geef dit aan door bij de niet-verplichte velden de tekst '(niet verplicht)' in het label op te nemen.
