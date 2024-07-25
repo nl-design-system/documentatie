@@ -6,6 +6,7 @@ hide_table_of_contents: true
 sidebar_label: Program
 pagination_label: Program
 slug: /events/design-systems-week-2024/en/program
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 ---
 
 import DSWSession from '../../../../../src/components/DSWSession'

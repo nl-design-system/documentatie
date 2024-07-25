@@ -6,6 +6,7 @@ sidebar_label: Over Design Systems Week
 pagination_label: Over
 sidebar_position: 1
 slug: /events/design-systems-week-2024
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png
 ---
 
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
