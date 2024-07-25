@@ -209,9 +209,15 @@ Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De re
 
 Deze stap kan enkel worden uitgevoerd door het kernteam.
 
-### Afbeelding maken
+- Voeg de component toe aan het `Communicatie & PR` project. Zo wordt hij meegenomen in de volgende Heartbeat, Nieuwsbrief en op LinkedIn
+- We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat het component pas na die statusaanpassing dan als “Community” op de website staat.
 
-Het kernteam maakt een afbeelding waarbij de component in twee thema's wordt getoond: één thema gebaseerd op een huisstijl uit de community en één keer met het Voorbeeld thema.
+**🚩 Checkpoint**: Promotie
+
+## Website geupdate met nieuwe status
+
+- [@nl-design-system/component-progress](https://www.npmjs.com/package/@nl-design-system/component-progress) updaten met [action](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml).
+- Maak een Pull Request in de documentatie repository met de geupdate index: `pnpm install --save-dev @nl-design-system/component-progress@latest`
 
 ### Slack
 
@@ -227,7 +233,17 @@ Help ons de component naar Candidate te brengen door ons in de [GitHub Discussio
 
 ### Communityleden selecteren voor credits
 
-Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer.
+Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer. Dat kan door activiteit in de Discussion te zien en naar commits te kijken in de code van het community component.
+
+### Nieuwe status bevestigen met credit
+
+Plaats na het selecteren een comment in het issue voor dit component. Meld dat het component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:
+
+```md
+Met dank aan {persoon/personen} van {organisatie} is {component} nu beschikbaar in de Community!
+
+[Bekijk {naam-component} op nldesignsystem.nl]({link-naar-component-op-nldesignsystem.nl})
+```
 
 ### Heartbeat, Nieuwsbrief en LinkedIn
 
@@ -240,7 +256,7 @@ Daarnaast plaatsen we een bericht in de nieuwsbrief en op LinkedIn. Daarin nemen
 - Credits.
 - Eventueel in combinatie met een kort interview.
 
-**🚩 Checkpoint**: Promotie
+De updates in de Heartbeat, nieuwsbrief en op LinkedIn kunnen worden gecombineerd als er meerdere componenten van status veranderen.
 
 ## 🏁 Finish
 
