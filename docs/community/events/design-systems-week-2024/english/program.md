@@ -1,6 +1,6 @@
 ---
 title: Program
-description: Program of all English talks for the Design Systems Week 2023
+description: Program of all talks that are in English for Design Systems Week 2024.
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Program
