@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.3c2ded21.css" />
-  <script src="/en/assets/js/runtime~main.f336a7e2.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.894f6548.js" defer="defer"></script>
   <script src="/en/assets/js/main.3810792f.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -318,8 +318,16 @@
               <h2 id="gebruik-van-component-uit-de-community-gepromoot" class="utrecht-heading-2">Gebruik van component uit de community gepromoot</h2>
               <p>Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.</p>
               <p>Deze stap kan enkel worden uitgevoerd door het kernteam.</p>
-              <h3 id="afbeelding-maken" class="utrecht-heading-3">Afbeelding maken</h3>
-              <p>Het kernteam maakt een afbeelding waarbij de component in twee thema&#x27;s wordt getoond: één thema gebaseerd op een huisstijl uit de community en één keer met het Voorbeeld thema.</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Voeg de component toe aan het <code class="utrecht-code">Communicatie &amp; PR</code> project. Zo wordt hij meegenomen in de volgende Heartbeat, Nieuwsbrief en op LinkedIn</li>
+               <li class="utrecht-unordered-list__item">We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat het component pas na die statusaanpassing dan als “Community” op de website staat.</li>
+              </ul>
+              <p><strong>🚩 Checkpoint</strong>: Promotie</p>
+              <h2 id="website-geupdate-met-nieuwe-status" class="utrecht-heading-2">Website geupdate met nieuwe status</h2>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">@nl-design-system/component-progress</a> updaten met <a href="https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml" class="utrecht-link utrecht-link--html-a">action</a>.</li>
+               <li class="utrecht-unordered-list__item">Maak een Pull Request in de documentatie repository met de geupdate index: <code class="utrecht-code">pnpm install --save-dev @nl-design-system/component-progress@latest</code></li>
+              </ul>
               <h3 id="slack" class="utrecht-heading-3">Slack</h3>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">Zeg het volgende in #nl-design-system.</li>
@@ -333,7 +341,14 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help ons de component naar Candidate te brengen door ons in de </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor het {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> te laten weten waar je het gebruikt.</span>
 </span></code></pre>
               <h3 id="communityleden-selecteren-voor-credits" class="utrecht-heading-3">Communityleden selecteren voor credits</h3>
-              <p>Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer.</p>
+              <p>Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer. Dat kan door activiteit in de Discussion te zien en naar commits te kijken in de code van het community component.</p>
+              <h3 id="nieuwe-status-bevestigen-met-credit" class="utrecht-heading-3">Nieuwe status bevestigen met credit</h3>
+              <p>Plaats na het selecteren een comment in het issue voor dit component. Meld dat het component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:</p>
+              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Met dank aan {persoon/personen} van {organisatie} is {component} nu beschikbaar in de Community!</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Bekijk {naam-component} op nldesignsystem.nl</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-component-op-nldesignsystem.nl}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span>
+</span></code></pre>
               <h3 id="heartbeat-nieuwsbrief-en-linkedin" class="utrecht-heading-3">Heartbeat, Nieuwsbrief en LinkedIn</h3>
               <p>Het kernteam benadert de organisatie die de component heeft ontwikkeld. We vragen of zij de component tijdens een Heartbeat willen presenteren. Mocht dit niet mogelijk zijn doen wij dit als kernteam zelf.</p>
               <p>Daarnaast plaatsen we een bericht in de nieuwsbrief en op LinkedIn. Daarin nemen we de volgende elementen in op:</p>
@@ -343,7 +358,7 @@
                <li class="utrecht-unordered-list__item">Credits.</li>
                <li class="utrecht-unordered-list__item">Eventueel in combinatie met een kort interview.</li>
               </ul>
-              <p><strong>🚩 Checkpoint</strong>: Promotie</p>
+              <p>De updates in de Heartbeat, nieuwsbrief en op LinkedIn kunnen worden gecombineerd als er meerdere componenten van status veranderen.</p>
               <h2 id="-finish" class="utrecht-heading-2">🏁 Finish</h2>
               <p>Zo wat een werk! Je hebt alle stappen genomen en je hebt alle checkpoints kunnen afvinken die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/29/views/1" class="utrecht-link utrecht-link--html-a">&#x27;Community&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. De component gaat nu door voor de &#x27;Candidate&#x27; status.</p>
              </div>
