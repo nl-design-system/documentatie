@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief
 
 Sommige formulierelementen werken (nog) niet goed of zijn complex om te bedienen met toetsenbord, screenreader of stembesturing.

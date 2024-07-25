@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zorg voor een consistente navigatie en benaming van links en buttons
 
 Geef op een consistente plek, met een consistente benaming, aan hoe de gebruiker navigeert binnen de stappen, bijvoorbeeld:

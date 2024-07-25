@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Controleer op het juiste moment op fouten
 
 Het is van belang _wanneer_ een veld op fouten wordt gecheckt.

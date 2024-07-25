@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Biedt verschillende manieren om contact op te nemen
 
 Vraag niet alleen om contact via een telefoonnummer.

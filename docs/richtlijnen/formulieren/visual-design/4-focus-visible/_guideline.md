@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Maak toetsenbord focus goed zichtbaar
 
 Voor gebruikers van een toetsenbord of van spraakherkenning moet duidelijk zijn welk formulierveld de focus heeft. Maak de focusstijl makkelijk te herkennen en geef het voldoende kleurcontrast. Dan kunnen ook slechtziende of kleurenblinde bezoekers het element met focus goed herkennen.

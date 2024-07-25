@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Kies voor het meest gebruiksvriendelijke formulierelement
 
 Deze richtlijn is tevens een opdracht; doe gebruikersonderzoek voor nieuwe formulieren of componenten. Gebruiksvriendelijkheid is afhankelijk van het specifieke doel en de doelgroep van een formulier.

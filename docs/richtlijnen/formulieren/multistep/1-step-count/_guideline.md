@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt
 
 Als een formulier meerdere stappen heeft, is het noodzakelijk dat een gebruiker weet in welke stap ze zich bevindt en hoeveel stappen er nog volgen. Dit geeft duidelijkheid en voorkomt onzekerheid bij de gebruiker.

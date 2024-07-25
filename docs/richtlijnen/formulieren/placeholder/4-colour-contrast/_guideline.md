@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Zorg voor een goed kleurcontrast van de placeholdertekst
 
 Kleurcontrast voor tekst ten opzichte van de achtergrond moet voldoen aan WCAG, dit geldt ook voor placeholders.

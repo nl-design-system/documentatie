@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Geef fouten weer met meer dan alleen kleur
 
 Gebruik van iconen en kleur bij foutmeldingen is goed voor de duidelijkheid, maar zorg ook altijd voor tekstuele foutmeldingen. Niet iedereen kan alle kleuren zien of begrijpt de icoontjes goed.

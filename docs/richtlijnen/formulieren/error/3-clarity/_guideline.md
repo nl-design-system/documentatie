@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Schrijf een duidelijke foutmelding
 
 "Dit veld is verplicht" geeft onvoldoende informatie. Een op maat geschreven foutmelding geeft de gebruiker veel meer houvast.

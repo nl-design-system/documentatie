@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Gebruik geen HTML-formuliervalidatie
 
 ![Voorbeeld van HTML-validatie, een ballonnetje boven het formulierveld met de tekst: vul dit veld in](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_html_validatie.png).
