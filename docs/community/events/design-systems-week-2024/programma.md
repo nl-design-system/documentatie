@@ -39,7 +39,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="Freelance">
+<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance">
 
 <Paragraph>Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.‌UK Design System en andere platformen van de Britse overheid. Hij laat zien wat we kunnen leren van de principes die het web zo fantastisch maken, om meer waarde te creëren voor het publiek waar we het voor doen.</Paragraph>
 

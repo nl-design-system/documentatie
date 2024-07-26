@@ -45,7 +45,7 @@ For many governments, contributing to open source project is culturally a challe
 
 </DSWSession>
 
-<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="Freelance" lang="en">
+<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" lang="en">
 
 Lessons from working on the GOV.‌UK Design System and other common platforms in UK government. How leaning on the principles that make the Web great can create more value for the public we serve.
 
