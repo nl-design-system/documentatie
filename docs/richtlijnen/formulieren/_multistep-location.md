@@ -4,4 +4,4 @@ Plaats tekst en uitleg die hoort bij het formulier buiten het `<form>` element. 
 
 Het voordeel van een formulier in meer stappen is, dat je makkelijker uitgebreide informatie per stap kunt toevoegen **boven** het formulier. Dat scheelt de complexiteit van eventueel gebruik van ARIA om tekst te laten voorlezen bij een formulierveld.
 
-Het aangeven van de hoeveelheid stappen boven het formulier is nodig om te voldoen aan het WCAG-succescriterium [1.3.2 Betekenisvolle volgorde](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html) (niveau A).
+Het aangeven van de hoeveelheid stappen boven het formulier is nodig om te voldoen aan het WCAG-succescriterium [1.3.2 Betekenisvolle volgorde](wcag/1.3.2) (niveau A).

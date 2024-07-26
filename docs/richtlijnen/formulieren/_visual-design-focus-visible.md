@@ -10,6 +10,6 @@ Zorg er ook voor dat de focusring heeft een kleurcontrast van ten minste 3:1 tus
 
 Goed zichtbare focusstijlen zijn nodig om te voldoen het aan de WCAG-succescriteria:
 
-- [1.4.11 Contrast van niet-tekstuele content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html) (niveau AA).
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11) (niveau AA).
 - [2.4.7 Focus zichtbaar](/wcag/2.4.7/) (niveau AA).
-- [2.4.13 Focusweergave](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html) (niveau AAA)
+- [2.4.13 Focusweergave](/wcag/2.4.13) (niveau AAA)

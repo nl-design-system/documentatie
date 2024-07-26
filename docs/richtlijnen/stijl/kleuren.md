@@ -112,11 +112,11 @@ Sommige mensen bekijken webpagina’s liever met meer of juist minder contrast. 
 
 ## Meer informatie
 
-### Gerelateerde WCAG Richtlijnen
+### Gerelateerde WCAG-succescriteria:
 
-- [1.4.1: Use of color](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-- [1.4.3: Contrast (minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-- [1.4.11: Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1)
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3)
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
 
 ### Links
 

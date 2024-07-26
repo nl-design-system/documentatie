@@ -286,10 +286,10 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 
 Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](../../project/kernteam.mdx) dan vullen we de lijst verder aan.
 
-### Gerelateerde WCAG Richtlijnen
+### Gerelateerde WCAG-succescriteria:
 
-- [1.4.4: Resize Text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-- [1.4.8: Visual Presentation](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
+- [1.4.4: Herschalen van tekst](/wcag/1.4.4)
+- [1.4.8: Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
 
 ### Links
 

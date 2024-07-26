@@ -18,5 +18,5 @@ Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: 
 
 Geen positieve tabindex of autofocus gebruiken is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
-- [2.4.3 Focusvolgorde](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) (niveau A).
-- [3.2.3 Consistente navigatie](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) (niveau AA).
+- [2.4.3 Focusvolgorde](/wcag/2.4.3) (niveau A).
+- [3.2.3 Consistente navigatie](/wcag/3.2.3) (niveau AA).
