@@ -2,7 +2,7 @@
 
 Voor gebruikers van een toetsenbord of van spraakherkenning moet duidelijk zijn welk formulierveld de focus heeft. Maak de focusstijl makkelijk te herkennen en geef het voldoende kleurcontrast. Dan kunnen ook slechtziende of kleurenblinde bezoekers het element met focus goed herkennen.
 
-Dit doe je door een minimale dikte van **2 CSS-pixels** en een **minimaal contrast van 3:1** ten opzichten van aangrenzende kleuren. En daarmee bedoelen we de kleur van de component dat focus heeft, maar ook de achtergrond waar de component ‘bovenop’ ligt.
+Dit doe je door een minimale dikte van **2 [CSS-pixels](https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel)CSS-pixels** en een **minimaal contrast van 3:1** ten opzichten van aangrenzende kleuren. En daarmee bedoelen we de kleur van de component dat focus heeft, maar ook de achtergrond waar de component ‘bovenop’ ligt.
 
 Een button of link komt namelijk misschien het meest voor op een witte achtergrond, maar houdt ook het scenario’s in gedachten waarbij de link of button op een getinte achtergrond staat zoals bijvoorbeeld een footer.
 
