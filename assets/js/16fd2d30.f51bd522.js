@@ -19,7 +19,7 @@
     ],
     h = 'Heading 2',
     j = 'Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.',
-    y = 158,
+    y = 258,
     g = c.find((e) => e.number === y);
    function m(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
