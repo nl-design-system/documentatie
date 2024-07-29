@@ -11,5 +11,5 @@ Soms wordt hiervan afgeweken om een knop minder visueel gewicht te geven. Kies d
 
 Een consistente weergave van links en buttons is nodig om te voldoen aan:
 
-- het WCAG-succescriterium [3.2.4 Consistente identificatie](/wcag/3.2.4);
+- het [WCAG-succescriterium 3.2.4 Consistente identificatie](/wcag/3.2.4);
 - de WCAG-richtlijn [3.2 Voorspelbaar](https://www.w3.org/WAI/WCAG22/Understanding/predictable.html): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
