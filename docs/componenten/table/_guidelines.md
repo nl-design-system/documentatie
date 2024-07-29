@@ -60,7 +60,7 @@ Je geeft met de volgende code aan in welke volgorde de informatie staat:
 
 ## _Responsive_ tabellen {#responsive-tabellen}
 
-Volgens het [WCAG-criterium 1.4.10 Reflow](/wcag/1.4.10) moeten pagina's leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:
+Volgens het [WCAG-succescriterium 1.4.10 Reflow](/wcag/1.4.10) moeten pagina's leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:
 
 Techniek 1: de bestaande `table`-HTML niet te tonen als tabel door met CSS een andere `display` te gebruiken voor `table`, `td` en alle andere tabel-elementen. _Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken._ Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.
 
