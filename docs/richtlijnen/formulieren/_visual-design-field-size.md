@@ -10,4 +10,4 @@ In [<span lang="en">Designing better target sizes</span>](https://ishadeed.com/a
 
 Google's Material Design kiest ook voor een groter aanklikgebied, ondersteund met gebruikersonderzoek. Dit wordt uitgelegd in de YouTube video [<span lang="en">Designing A11y with Material Design</span>](https://www.youtube.com/watch?v=nTNwZXVRGdY&t=163s).
 
-Zie ook het WCAG-succescriterium [Grootte aanwijsgebied (verbeterd)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html) (niveau AAA).
+Zie ook het [WCAG-succescriterium Grootte aanwijsgebied (verbeterd)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html) (niveau AAA).
