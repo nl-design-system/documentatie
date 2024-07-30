@@ -29,8 +29,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.883b80b0.css" />
-  <script src="/assets/js/runtime~main.79a11f8d.js" defer="defer"></script>
-  <script src="/assets/js/main.4534c279.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.e8b88c37.js" defer="defer"></script>
+  <script src="/assets/js/main.3aa8d196.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -286,13 +286,13 @@
                <li class="utrecht-unordered-list__item"><code class="utrecht-code">aria-sort=&quot;descending&quot;</code> voor &quot;aflopende volgorde&quot;, bijvoorbeeld namen van Z naar A, ontvangen berichten van nieuw naar oud, bedragen en aantallen van groot naar klein</li>
               </ul>
               <h3 id="responsive-tabellen" class="utrecht-heading-3"><em class="utrecht-emphasis utrecht-emphasis--stressed">Responsive</em> tabellen</h3>
-              <p>Volgens WCAG 1.4.10 moeten pagina&#x27;s leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:</p>
+              <p>Volgens het <a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.10 Reflow</a> moeten pagina&#x27;s leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:</p>
               <p>Techniek 1: de bestaande <code class="utrecht-code">table</code>-HTML niet te tonen als tabel door met CSS een andere <code class="utrecht-code">display</code> te gebruiken voor <code class="utrecht-code">table</code>, <code class="utrecht-code">td</code> en alle andere tabel-elementen. <em class="utrecht-emphasis utrecht-emphasis--stressed">Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken.</em> Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.</p>
               <p>Techniek 2: HTML aanbieden in twee varianten. Naast de HTML <code class="utrecht-code">&lt;table&gt;</code> element, ook de gegevens tonen met HTML elementen die niet zoveel ruimte nodig hebben in twee dimensies, zoals koppen met daaronder een datalijst. Afhankelijk van de situatie verberg je de éne of de andere variant.</p>
               <h3 id="hoe-het-niet-moet" class="utrecht-heading-3">Hoe het niet moet</h3>
               <h4 id="koppen-niet-gekoppeld" class="utrecht-heading-4">Koppen van tabel niet gekoppeld aan datacellen</h4>
               <p>Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveau&#x27;s van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.</p>
-              <p><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships" class="utrecht-link utrecht-link--html-a">WCAG 2.1, 1.3.1</a> zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.</p>
+              <p>Het <a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.3.1 Info en relaties</a> zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.</p>
               <h5 id="tabel-kop-niet-gekoppeld" class="utrecht-heading-5">Kop van de tabel niet gekoppeld</h5>
               <p>Niet:</p>
               <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Openingstijden</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
@@ -373,9 +373,9 @@
                 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-sort" class="utrecht-link utrecht-link--html-a">MDN: <code class="utrecht-code">aria-sort</code></a>
                </li>
               </ul>
-              <h4 id="relevante-wcag-regels" class="utrecht-heading-4">Relevante WCAG regels</h4>
+              <h4 id="relevante-wcag-regels" class="utrecht-heading-4">Relevante WCAG-succescriteria</h4>
               <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/TR/WCAG21/#reflow" class="utrecht-link utrecht-link--html-a">WCAG 1.4.10</a></li>
+               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></li>
               </ul>
               <h2 id="levende-backlog" class="utrecht-heading-2">Levende Backlog</h2>
              </div>
