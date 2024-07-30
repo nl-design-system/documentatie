@@ -6,9 +6,9 @@ De _paragraph_ component gebruik je voor een alinea met lopende tekst, instructi
 
 ## HTML {#html}
 
-Gebruik hiervoor altijd het `<p>` HTML-element, die heeft automatisch de goede [`paragraph` role](https://w3c.github.io/aria/#paragraph) in de accessibility tree (dat is nodig voor WCAG eis 1.3.1). Voor een _lead paragraph_ gebruik je `<p><b>…</b></p>`. Voor _small print_ gebruik je `<p><small>…</small></p>`.
+Gebruik hiervoor altijd het `<p>` HTML-element, die heeft automatisch de goede [`paragraph` role](https://w3c.github.io/aria/#paragraph) in de accessibility tree. Dat is nodig voor het WCAG-succescriterium [1.3.1 Info en relaties](/wcag/1..3.1). Voor een _lead paragraph_ gebruik je `<p><b>…</b></p>`. Voor _small print_ gebruik je `<p><small>…</small></p>`.
 
-Zelfs als geen CSS geladen kan worden, blijft de tekst duidelijk. Door het `<p>` element is er tussen alinea's duidelijke witruimte (WCAG 1.4.12). Door het `<b>` element is de _lead paragraph_ visueel herkenbaar. Door `<small>` is _small print_ visueel herkenbaar.
+Zelfs als geen CSS geladen kan worden, blijft de tekst duidelijk. Door het `<p>` element is er tussen alinea's duidelijke witruimte ([WCAG-succescriterium 1.4.12](/wcag/1.4.12)). Door het `<b>` element is de _lead paragraph_ visueel herkenbaar. Door `<small>` is _small print_ visueel herkenbaar.
 
 ### Lead Paragraph {#lead-paragraph}
 
@@ -30,7 +30,7 @@ Overweeg of een alinea met meer dan 7 zinnen of 140 woorden duidelijker is als j
 
 ### Lettergrootte {#lettergrootte}
 
-Kies de lettergrootte niet te klein, bijvoorbeeld `16px` of groter. Gebruik `rem` in CSS in plaats van `px`, zodat de font-size van de _paragraph_ ook verdubbelt wanneer gebruikers via hun besturingssysteem of _user stylesheet_ de standaard lettergroote 200% groter maken. ([WCAG eis 1.4.4](https://www.w3.org/TR/WCAG21/#resize-text)) Gebruikers moeten de lettergrootte vier keer groter kunnen maken met browser zoom. ([WCAG eis 1.4.10](https://www.w3.org/TR/WCAG21/#reflow)) Maak zoom niet kapot door gebruik van de `vw` of `vh` eenheden in CSS die niet altijd goed werken met zoom.
+Kies de lettergrootte niet te klein, bijvoorbeeld `16px` of groter. Gebruik `rem` in CSS in plaats van `px`, zodat de font-size van de _paragraph_ ook verdubbelt wanneer gebruikers via hun besturingssysteem of _user stylesheet_ de standaard lettergroote 200% groter maken. ([WCAG-succescriterium 1.4.4 Herschalen van tekst](/wcag/1.4.4)) Gebruikers moeten de lettergrootte vier keer groter kunnen maken met browser zoom, zie [WCAG-succescriterium 1.4.10](/wcag/1.4.10). Maak zoom niet kapot door gebruik van de `vw` of `vh` eenheden in CSS die niet altijd goed werken met zoom.
 
 Gebruik de design token `nl.paragraph.font-size` als je niet de standaard-grootte wilt van `nl.document.font-size`.
 
@@ -42,23 +42,28 @@ Stel de regelhoogte met `nl.paragraph.line-height` in voor voldoende afstand tus
 
 ### Afstand tussen alinea's {#afstand-tussen-alineas}
 
-Kies voldoende afstand tussen alinea's, in elk geval 50% groter dan afstand tussen tekstregels. (WCAG 1.4.8). Gebruik hiervoor de design tokens `nl.paragraph.margin-block-start` en `nl.paragraph.margin-block-end`.
+Kies voldoende afstand tussen alinea's, in elk geval 50% groter dan afstand tussen tekstregels. ([WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)). Gebruik hiervoor de design tokens `nl.paragraph.margin-block-start` en `nl.paragraph.margin-block-end`.
 
 ### Kleurgebruik {#kleurgebruik}
 
-`nl.paragraph.color`: kies voldoende contrast ten opzichte van de achtergrondkleur, van bijvoorbeeld `nl.document.background-color` of `nl.page.background-color`. Kies in plaats van zwart voor zeer donkergrijs, dat is beter leesbaar op beeldschermen. Een contrastverhouding van 7:1 is ideaal. (WCAG 1.4.3 en WCAG 1.4.6)
+`nl.paragraph.color`: kies voldoende contrast ten opzichte van de achtergrondkleur, van bijvoorbeeld `nl.document.background-color` of `nl.page.background-color`. Kies in plaats van zwart voor zeer donkergrijs, dat is beter leesbaar op beeldschermen. Een contrastverhouding van 7:1 is ideaal.
+
+Zie de WCAG-succescriteria:
+
+- [1.4.3: Contrast (minimum)](/wcag/1.4.3)
+- [1.4.6: Contrast (versterkt)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html)
 
 ### Regellengte {#regellengte}
 
 Zorg dat de lengte van de tekst niet te lang wordt, bijvoorbeeld door deze design token in te stellen: `nl.article.max-inline-size`. De ideale regellengte verschilt per schrift en taal, maar ergens tussen de 50 en 75 tekens voor Nederlands is prima. Je kunt in CSS bijvoorbeeld de `ch` eenheid gebruiken: `--nl-article-max-inline-size: 60ch`.
 
-Voor WCAG 1.4.8 is het nodig dat de regellengte beperkt kan worden tot maximaal 80 tekens (`80ch`), bijvoorbeeld door de viewport van de browser kleiner te maken.
+Voor het [WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html) is het nodig dat de regellengte beperkt kan worden tot maximaal 80 tekens (`80ch`), bijvoorbeeld door de viewport van de browser kleiner te maken.
 
 ### Tekstuitlijning {#tekstuitlijning}
 
 Tekst dient uitsluitend links uitgelijnd zijn, voor Nederlandse teksten. Gebruik daarvoor `text-align: start`.
 
-`text-align: justify` moet vermeden kunnen worden volgens WCAG 1.4.8, dus gebruik deze voor het gemak helemaal niet. Rechts uitlijnen en tekst centreren moet je ook niet gebruiken voor lopende tekst.
+`text-align: justify` moet vermeden kunnen worden volgens het [WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html), dus gebruik deze voor het gemak helemaal niet. Rechts uitlijnen en tekst centreren moet je ook niet gebruiken voor lopende tekst.
 
 ## Hoe het niet moet {#hoe-het-niet-moet}
 
@@ -147,12 +152,12 @@ Beter:
 - [HTML specification: The `<small>` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element). Bevat een voorbeeld van het `small` element voor _small print_.
 - [Hoe lang mag een alinea zijn? En waar hangt dat van af? - Taaladvies.net](https://taaladvies.net/lengte-van-alineas/)
 
-### Relevante WCAG regels {#relevante-wcag-regels}
+### Relevante WCAG-succescriteria {#relevante-wcag-regels}
 
-- [WCAG eis 1.3.1](https://www.w3.org/TR/WCAG21/#info-and-relationships)
-- [WCAG eis 1.4.3](https://www.w3.org/TR/WCAG21/#contrast-minimum)
-- [WCAG eis 1.4.4](https://www.w3.org/TR/WCAG21/#resize-text)
-- [WCAG eis 1.4.8](https://www.w3.org/TR/WCAG21/#visual-presentation)
-- [WCAG eis 1.4.10](https://www.w3.org/TR/WCAG21/#reflow)
-- [WCAG eis 1.4.12](https://www.w3.org/TR/WCAG21/#text-spacing)
-- [WCAG eis 3.1.2](https://www.w3.org/TR/WCAG21/#language-of-parts)
+- [WCAG-succescriterium 1.3.1](/wcag/1.3.1)
+- [WCAG-succescriterium 1.4.3](/wcag/1.4.3)
+- [WCAG-succescriterium 1.4.4](/wcag/1.4.4)
+- [WCAG-succescriterium 1.4.8](/wcag/1.4.8)
+- [WCAG-succescriterium 1.4.10](/wcag/1.4.10)
+- [WCAG-succescriterium 1.4.12](/wcag/1.4.12)
+- [WCAG-succescriterium 3.1.2](/wcag/3.1.2)

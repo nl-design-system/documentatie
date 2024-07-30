@@ -1,6 +1,6 @@
 ## Maak aanklikbare formuliervelden groot genoeg
 
-Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 pixels groot is. Dit is nodig om te voldoen aan het WCAG-succescriterium [2.5.8 Grootte aanwijsgebied (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) (niveau AA).
+Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 pixels groot is. Dit is nodig om te voldoen aan het [WCAG-succescriterium 2.5.8 Grootte aanwijsgebied (minimum)](/wcag/2.5.8) (niveau AA).
 
 Maar een aanklikbaar gebied van 44 bij 44 pixels, voor het aanklikbare deel, is veel gebruiksvriendelijker voor mensen met dikke vingers of een trillende hand. Houdt daarom een aanklikbaar gedeelte aan van tenminste 44 bij 44 pixels.
 
@@ -10,4 +10,4 @@ In [<span lang="en">Designing better target sizes</span>](https://ishadeed.com/a
 
 Google's Material Design kiest ook voor een groter aanklikgebied, ondersteund met gebruikersonderzoek. Dit wordt uitgelegd in de YouTube video [<span lang="en">Designing A11y with Material Design</span>](https://www.youtube.com/watch?v=nTNwZXVRGdY&t=163s).
 
-Zie ook het WCAG-succescriterium: [Grootte aanwijsgebied (verbeterd)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html) (niveau AAA).
+Zie ook het [WCAG-succescriterium Grootte aanwijsgebied (verbeterd)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html) (niveau AAA).

@@ -8,10 +8,10 @@ De ontwikkeling van browsers gaat snel en het gebruik van HTML geeft niet altijd
 
 Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nodig om te voldoen aan de volgende WCAG-succescriteria:
 
-- [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG22-nl/#info-en-relaties) (niveau A).
+- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2) (niveau A).
 - [2.1.1 Toetsenbord](/wcag/2.1.1) (niveau A).
 - [2.4.6 Koppen en labels](/wcag/2.4.6) (niveau AA).
-- [3.3.2 Labels of Instructies](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) (niveau A).
+- [3.3.2 Labels of Instructies](/wcag/3.3.2) (niveau A).
 - [4.1.2 Naam, rol, waarde](/wcag/4.1.2) (niveau A).
 
 ### Multiselect

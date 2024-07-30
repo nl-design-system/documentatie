@@ -243,7 +243,7 @@ Onderstreep tekst niet, bewaar onderstrepen voor links.
 
 Gebruik geen `font-smoothing`. Gebruikers hebben zeer uiteenlopende types beeldschermen, browsers en besturingssystemen. Hoe letters op jouw scherm worden getoond, is anders dan bij veel anderen. Wanneer `font-smoothing` goed werkt voor jouw beeldscherm, betekend het niet automatisch dat dat bij iedereen zo is.
 
-Gebruik `font-smoothing` ook niet om de dikte van de tekst te optimaliseren, vertrouw op de instellingen van de gebruiker en laat `font-smoothing: auto` het werk doen. Wanneer het nodig is om miniscule aanpassingen te doen aan, gebruik dan een modern lettertype dat als _variable font_ geleverd wordt.
+Gebruik `font-smoothing` ook niet om de dikte van de tekst te optimaliseren, vertrouw op de instellingen van de gebruiker en laat `font-smoothing: auto` het werk doen. Wanneer het nodig is om minuscule aanpassingen te doen aan, gebruik dan een modern lettertype dat als _variable font_ geleverd wordt.
 
 Alleen als je een _pixel font_ gebruikt mag je daar `font-smoothing: none` voor gebruiken.
 
@@ -286,10 +286,10 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 
 Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](../../project/kernteam.mdx) dan vullen we de lijst verder aan.
 
-### Gerelateerde WCAG Richtlijnen
+### Gerelateerde WCAG-succescriteria:
 
-- [1.4.4: Resize Text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-- [1.4.8: Visual Presentation](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4)
+- [1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
 
 ### Links
 
