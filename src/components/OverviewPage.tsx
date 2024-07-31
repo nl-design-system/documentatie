@@ -9,7 +9,7 @@ interface OverviewPageProps extends HTMLAttributes<HTMLDivElement> {
   className: string;
 }
 
-const filterRecursively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
+const excludeRecusively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
   items.reduce((items, item) => {
     if (item.type === 'link') {
       if (excludeDocIDs.includes(item.docId as string)) {
@@ -18,7 +18,7 @@ const filterRecursively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
       return [...items, item];
     }
     if (item.type === 'category') {
-      return [...items, { ...item, items: filterRecursively(item.items, excludeDocIDs) }];
+      return [...items, { ...item, items: excludeRecusively(item.items, excludeDocIDs) }];
     }
     return items;
   }, []);
@@ -28,7 +28,7 @@ export const OverviewPage = ({ excludeDocIDs = [], className, ...restProps }: Ov
 
   return (
     <div {...restProps} className={clsx('margin-top--lg', className)}>
-      <DocCardList items={filterRecursively(category.items, excludeDocIDs)} />
+      <DocCardList items={excludeRecusively(category.items, excludeDocIDs)} />
     </div>
   );
 };
