@@ -3,10 +3,8 @@ import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/p
 import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { Icon } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { PropsWithChildren, type ReactNode } from 'react';
-import { ArrowNarrowRight } from 'tabler-icons-react';
 import styles from './styles.module.css';
 
 function CardLayout({
@@ -14,30 +12,28 @@ function CardLayout({
   icon = '',
   title,
   description,
-  linkDescription,
   children,
 }: PropsWithChildren<{
   href?: string;
-  linkDescription?: string;
   icon?: ReactNode;
   title: string;
   description?: string;
 }>) {
   return (
     <div className={clsx('card', styles.card)}>
-      <h2 className={clsx(styles.cardTitle)}>
-        {icon} {title}
-      </h2>
+      {href ? (
+        <Link href={href} className={clsx(styles.cardLink, 'utrecht-link')}>
+          <h2 className={clsx(styles.cardTitle)}>
+            {icon} {title}
+          </h2>
+        </Link>
+      ) : (
+        <h2 className={clsx(styles.cardTitle)}>
+          {icon} {title}
+        </h2>
+      )}
       {description && <p className={clsx(styles.cardDescription)}>{description}</p>}
       {children}
-      {href && linkDescription && (
-        <Link href={href} className={clsx(styles.cardLink)}>
-          {linkDescription}{' '}
-          <Icon>
-            <ArrowNarrowRight />
-          </Icon>
-        </Link>
-      )}
     </div>
   );
 }
@@ -70,7 +66,7 @@ function CardLink({ item }: { item: PropSidebarItemLink }): React.Element {
   const doc = useDocById(item.docId);
   return (
     <CardLayout
-      linkDescription={doc?.title || item.label}
+      linkDescription={item.label}
       href={item.href}
       title={item.label}
       description={item.description ?? doc?.description}
