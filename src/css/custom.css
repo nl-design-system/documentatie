@@ -52,6 +52,8 @@
   --utrecht-form-toggle-thumb-background-color: white;
   --utrecht-form-toggle-track-border-radius: 2em;
   -moz-osx-font-smoothing: auto !important;
+  --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
+  --navbar-inner-min-height: 64px;
 }
 
 .utrecht-form-field--checkbox {
@@ -279,7 +281,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .navbar__inner {
   align-items: center;
   flex-wrap: nowrap;
-  min-height: 64px;
+  min-height: var(--navbar-inner-min-height);
 }
 .table-of-contents {
   font-size: 18px;
@@ -330,16 +332,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 /* Display internal link below sticky header */
-.theme-doc-markdown h2 {
-  scroll-margin-block-start: 4em;
+:target {
+  scroll-margin-block-start: calc(var(--navbar-inner-min-height));
 }
 
 .nlds-fragment-redirect {
   --ifm-paragraph-margin-bottom: 0;
-}
-
-.nlds-fragment-redirect:target {
-  scroll-margin-block-start: 5em;
 }
 
 code,
@@ -520,6 +518,10 @@ li a {
 }
 
 @media (width >= 997px) {
+  :root {
+    --navbar-inner-min-height: 80px;
+  }
+
   .navbar__items--left {
     max-width: 945px;
   }
@@ -527,7 +529,6 @@ li a {
   .navbar__inner {
     align-items: center;
     gap: 20px;
-    min-height: 80px;
     padding-inline-end: 16px;
     padding-inline-start: 16px;
   }
