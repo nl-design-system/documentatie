@@ -1,5 +1,5 @@
 {
-  "label": "Toegankelijke naam",
+  "label": "Zichtbare naam label",
   "link": {
     "type": "doc",
     "id": "README"
