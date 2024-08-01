@@ -116,7 +116,7 @@
     "react-hook-form": "7.52.1",
     "react-player": "2.16.0",
     "react-syntax-highlighter": "15.5.0",
-    "rimraf": "5.0.7",
+    "rimraf": "6.0.1",
     "stylelint": "16.6.1",
     "stylelint-config-standard-scss": "13.1.0",
     "stylelint-order": "6.0.4",
