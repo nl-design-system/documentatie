@@ -93,7 +93,7 @@
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
     "@playwright/test": "1.45.1",
     "@types/node": "20.14.9",
-    "@typescript-eslint/eslint-plugin": "7.15.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.15.0",
     "@utrecht/component-library-css": "4.0.0",
     "@utrecht/component-library-react": "4.0.0",
