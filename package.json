@@ -96,7 +96,7 @@
     "@typescript-eslint/eslint-plugin": "7.15.0",
     "@typescript-eslint/parser": "7.15.0",
     "@utrecht/component-library-css": "4.0.0",
-    "@utrecht/component-library-react": "4.0.0",
+    "@utrecht/component-library-react": "5.0.0",
     "@utrecht/web-component-library-react": "1.1.1",
     "@utrecht/web-component-library-stencil": "1.2.1",
     "cheerio": "1.0.0-rc.12",
