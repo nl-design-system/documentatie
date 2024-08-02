@@ -14,7 +14,7 @@ export const ComponentOverview = () => {
   const category = useCurrentSidebarCategory();
 
   const getComponent = (item: any) =>
-    componentProgress.find(({ title }) => normalizeName(title) === normalizeName(item.title));
+    item.title && componentProgress.find(({ title }) => title && normalizeName(title) === normalizeName(item.title));
 
   const components = category.items
     .filter((item: any) => item.docId !== 'componenten/README')
