@@ -34,6 +34,9 @@ module.exports = {
       ],
       files: ['*.mdx'],
       plugins: ['import'],
+      rules: {
+        'no-useless-escape': 'off',
+      },
       settings: {
         'mdx/code-blocks': true,
       },
