@@ -2,6 +2,9 @@
   "label": "Placeholders",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "richtlijnen/formulieren/placeholder/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
   }
 }

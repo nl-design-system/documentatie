@@ -2,6 +2,9 @@
   "label": "Buttons",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "richtlijnen/formulieren/button/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
   }
 }

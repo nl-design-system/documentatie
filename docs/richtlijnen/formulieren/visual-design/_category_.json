@@ -2,6 +2,9 @@
   "label": "Visueel ontwerp",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "richtlijnen/formulieren/visual-design/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
   }
 }
