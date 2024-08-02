@@ -2,6 +2,9 @@
   "label": "Toetsenbordnavigatie",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "richtlijnen/formulieren/keyboard-behaviour/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
   }
 }

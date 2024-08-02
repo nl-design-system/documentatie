@@ -2,6 +2,9 @@
   "label": "Bevestigingspagina",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "richtlijnen/formulieren/confirmation/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
   }
 }
