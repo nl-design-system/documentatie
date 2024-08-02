@@ -54,7 +54,7 @@ export const ComponentOverview = () => {
   const implemented = components.filter((c) =>
     c.projects?.filter((p) => {
       const results = !relayProjectIds.includes(p.id);
-      return results.length > 0;
+      return results;
     }),
   );
 
