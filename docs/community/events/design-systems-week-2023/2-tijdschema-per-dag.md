@@ -9,7 +9,7 @@ slug: /events/design-systems-week-2023/tijdschema
 
 import { Icon, Link, UnorderedList, UnorderedListItem } from "@utrecht/component-library-react";
 import { IconUser, IconUsers } from "@tabler/icons-react";
-import { SessionTable } from "../../../../src/components/SessionTable";
+import { SessionTable } from "@site/src/components/SessionTable";
 
 # Design Systems Week Tijdschema
 
