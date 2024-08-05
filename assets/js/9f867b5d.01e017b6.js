@@ -3,7 +3,7 @@
  [12487],
  {
   74065: (e, t, n) => {
-   n.r(t), n.d(t, { assets: () => D, contentTitle: () => v, default: () => T, frontMatter: () => N, metadata: () => S, toc: () => k });
+   n.r(t), n.d(t, { assets: () => S, contentTitle: () => v, default: () => T, frontMatter: () => N, metadata: () => k, toc: () => y });
    var a = n(52676),
     r = n(24785),
     s = n(8194),
@@ -23,11 +23,11 @@
     return (0, a.jsxs)(o.Bc, { children: [(0, a.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, m.Z)(g['component-illustration'], g[`component-illustration--${s}`]), fill: 'none', children: [(0, a.jsxs)('g', { fill: 'var(--component-illustration-background-color, white)', children: [(0, a.jsx)('rect', { width: '960', height: '540' }), (0, a.jsx)('rect', { width: '960', height: '540' })] }), (0, a.jsxs)('g', { fill: 'var(--component-illustration-grid-color, #eee)', children: [(0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, a.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, a.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, a.jsx)('use', { href: `/svg/componenten_overzicht_${(0, u.mA)(t)}.svg#component-illustration` })] }), (0, a.jsx)(o.QD, { className: g['component-illustration__caption'], children: r })] });
    };
    var x = n(42677);
-   const f = (e) => {
+   const j = (e) => {
      let { name: t, description: n, relayStep: r, headingLevel: s = 2, href: l } = e;
      return (0, a.jsxs)(d.Zb, { appearance: 'large', className: (0, m.Z)(p['component-card'], !r && p['component-card--suggestion']), component: 'section', children: [(0, a.jsx)(d.wu, { children: (0, a.jsx)(_, { relayStep: r, description: `Schets van de ${t} component`, name: t }) }), (0, a.jsxs)(d.aY, { children: [(0, a.jsxs)('div', { children: [(0, a.jsx)(i.X6, { level: s, className: (0, m.Z)(p['component-card__title']), children: t }), r && (0, a.jsx)('p', { children: (0, a.jsx)(x.y, { state: r }) }), n && (0, a.jsx)(i.nv, { children: n })] }), l && (0, a.jsx)(i.nv, { children: (0, a.jsxs)(h.Z, { className: 'utrecht-link', to: l, children: ['Bekijk ', (0, a.jsx)('span', { className: (0, m.Z)(p.w), children: t }), ' component'] }) })] })] });
     },
-    j = 'utrecht-accordion--nlds-subtle_d413',
+    f = 'utrecht-accordion--nlds-subtle_d413',
     b = 'utrecht-form-field--nlds-switch_p5bU',
     A = () => {
      const e = (0, s.jA)(),
@@ -46,21 +46,21 @@
       [m, p] = (0, c.useState)(!0),
       [g, _] = (0, c.useState)(!0),
       [A, N] = (0, c.useState)(!0),
-      [v, S] = (0, c.useState)(!0),
-      [D, k] = (0, c.useState)(!0),
-      [y, T] = (0, c.useState)(!1);
+      [v, k] = (0, c.useState)(!0),
+      [S, y] = (0, c.useState)(!0),
+      [D, T] = (0, c.useState)(!1);
      (0, c.useEffect)(() => {
-      h(() => n.filter((e) => (m && 'UNKNOWN' === e.relayStep) || (g && 'HELP_WANTED' === e.relayStep) || (A && 'COMMUNITY' === e.relayStep) || (v && 'CANDIDATE' === e.relayStep) || (D && 'HALL_OF_FAME' === e.relayStep)).filter((e) => !y || e.projects.filter((e) => !u.e9.includes(e.id)).length > 0));
-     }, [m, g, A, v, D, y]);
+      h(() => n.filter((e) => (m && 'UNKNOWN' === e.relayStep) || (g && 'HELP_WANTED' === e.relayStep) || (A && 'COMMUNITY' === e.relayStep) || (v && 'CANDIDATE' === e.relayStep) || (S && 'HALL_OF_FAME' === e.relayStep)).filter((e) => !D || e.projects.filter((e) => !u.e9.includes(e.id)).length > 0));
+     }, [m, g, A, v, S, D]);
      const w = n.filter((e) => 'UNKNOWN' === e.relayStep),
       C = n.filter((e) => 'HELP_WANTED' === e.relayStep),
       E = n.filter((e) => 'COMMUNITY' === e.relayStep),
       M = n.filter((e) => 'CANDIDATE' === e.relayStep),
       O = n.filter((e) => 'HALL_OF_FAME' === e.relayStep),
-      L = n.filter((e) => e.projects?.filter((e) => !u.e9.includes(e.id)));
+      F = n.filter((e) => e.projects?.filter((e) => !u.e9.includes(e.id)));
      return (0, a.jsxs)(a.Fragment, {
       children: [
-       (0, a.jsx)(o.a2, { sections: [{ className: j, headingLevel: 2, expanded: !1, label: (0, a.jsx)('span', { id: 'filter-results-label', children: 'Filter componenten' }), body: (0, a.jsxs)(o.pg, { 'aria-describedby': 'filter-results', 'aria-labelledby': 'filter-results-label', children: [!!w.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: m, id: 'TODO', onChange: () => p((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'TODO', children: (0, a.jsx)(x.y, { state: 'Todo' }) })] }), !!C.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: g, id: 'HELP_WANTED', onChange: () => _((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'HELP_WANTED', children: (0, a.jsx)(x.y, { state: 'Help Wanted' }) })] }), !!E.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: A, id: 'COMMUNITY', onChange: () => N((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'COMMUNITY', children: (0, a.jsx)(x.y, { state: 'Community' }) })] }), !!M.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: v, id: 'CANDIDATE', onChange: () => S((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'CANDIDATE', children: (0, a.jsx)(x.y, { state: 'Candidate' }) })] }), !!O.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: D, id: 'HALL_OF_FAME', onChange: () => k((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'HALL_OF_FAME', children: (0, a.jsx)(x.y, { state: 'Hall of Fame' }) })] }), !!L.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', className: b, children: [(0, a.jsx)(o.NI, { defaultChecked: y, id: 'IMPLEMENTED', onChange: () => T((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'IMPLEMENTED', children: 'Toon alleen beschikbare componenten' })] })] }) }] }),
+       (0, a.jsx)(o.a2, { sections: [{ className: f, headingLevel: 2, expanded: !1, label: (0, a.jsx)('span', { id: 'filter-results-label', children: 'Filter componenten' }), body: (0, a.jsx)(a.Fragment, { children: (0, a.jsxs)(o.pg, { 'aria-describedby': 'filter-results', 'aria-labelledby': 'filter-results-label', children: [!!w.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: m, id: 'TODO', onChange: () => p((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'TODO', children: (0, a.jsx)(x.y, { state: 'Todo' }) })] }), !!C.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: g, id: 'HELP_WANTED', onChange: () => _((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'HELP_WANTED', children: (0, a.jsx)(x.y, { state: 'Help Wanted' }) })] }), !!E.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: A, id: 'COMMUNITY', onChange: () => N((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'COMMUNITY', children: (0, a.jsx)(x.y, { state: 'Community' }) })] }), !!M.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: v, id: 'CANDIDATE', onChange: () => k((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'CANDIDATE', children: (0, a.jsx)(x.y, { state: 'Candidate' }) })] }), !!O.length && (0, a.jsxs)(i.Wi, { type: 'checkbox', children: [(0, a.jsx)(i.XZ, { defaultChecked: S, id: 'HALL_OF_FAME', onChange: () => y((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'HALL_OF_FAME', children: (0, a.jsx)(x.y, { state: 'Hall of Fame' }) })] }), (0, a.jsxs)(o.nv, { style: { '--utrecht-paragraph-margin-block-end': '1rem' }, children: [(0, a.jsx)('b', { children: 'Tip' }), ': Zien welke componenten je nu al kunt gebruiken? Kies dan onderstaande optie om alleen beschikbare componenten te tonen.'] }), !!F.length && (0, a.jsx)(a.Fragment, { children: (0, a.jsxs)(i.Wi, { type: 'checkbox', className: b, children: [(0, a.jsx)(o.NI, { defaultChecked: D, id: 'IMPLEMENTED', onChange: () => T((e) => !e) }), (0, a.jsx)(i.lX, { htmlFor: 'IMPLEMENTED', children: 'Toon alleen beschikbare componenten' })] }) })] }) }) }] }),
        (0, a.jsxs)(o.nv, { role: 'status', id: 'filter-results', children: [r.length, ' van ', n.length, ' componenten zichtbaar'] }),
        (0, a.jsx)(d.um, {
         appearance: 'large',
@@ -68,7 +68,7 @@
          let { title: t, id: n, href: r, customProps: s, description: o } = e;
          const i = l.find((e) => e.title === t),
           c = i && u.$3[i.relayStep];
-         return (0, a.jsx)(f, { illustration: s?.illustration, name: t, headingLevel: 2, href: r, description: o, relayStep: c }, n);
+         return (0, a.jsx)(j, { illustration: s?.illustration, name: t, headingLevel: 2, href: r, description: o, relayStep: c }, n);
         }),
        }),
       ],
@@ -76,16 +76,16 @@
     },
     N = { title: 'Componenten Overzicht', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Overzicht', sidebar_position: 1, pagination_label: 'Overzicht', description: 'Een overzicht van alle gedocumenteerde componenten uit NL Design System', keywords: ['componenten', 'design system', 'overzicht', 'utrecht', 'den haag'] },
     v = 'Componenten',
-    S = { id: 'componenten/README', title: 'Componenten Overzicht', description: 'Een overzicht van alle gedocumenteerde componenten uit NL Design System', source: '@site/docs/componenten/README.mdx', sourceDirName: 'componenten', slug: '/componenten/', permalink: '/en/componenten/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/README.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Componenten Overzicht', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Overzicht', sidebar_position: 1, pagination_label: 'Overzicht', description: 'Een overzicht van alle gedocumenteerde componenten uit NL Design System', keywords: ['componenten', 'design system', 'overzicht', 'utrecht', 'den haag'] }, sidebar: 'componenten', next: { title: 'Accordion', permalink: '/en/accordion' } },
-    D = {},
-    k = [];
-   function y(e) {
+    k = { id: 'componenten/README', title: 'Componenten Overzicht', description: 'Een overzicht van alle gedocumenteerde componenten uit NL Design System', source: '@site/docs/componenten/README.mdx', sourceDirName: 'componenten', slug: '/componenten/', permalink: '/componenten/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/README.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Componenten Overzicht', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Overzicht', sidebar_position: 1, pagination_label: 'Overzicht', description: 'Een overzicht van alle gedocumenteerde componenten uit NL Design System', keywords: ['componenten', 'design system', 'overzicht', 'utrecht', 'den haag'] }, sidebar: 'componenten', next: { title: 'Accordion', permalink: '/accordion' } },
+    S = {},
+    y = [];
+   function D(e) {
     const t = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(t.h1, { id: 'componenten', children: 'Componenten' }), '\n', (0, a.jsxs)(t.p, { children: ['De componenten van NL Design System worden met een ', (0, a.jsx)(t.a, { href: '/handboek/estafettemodel', children: 'estafette aanpak' }), ' gemaakt en kunnen dus verschillende statussen hebben.'] }), '\n', (0, a.jsx)(A, { headingLevel: 2 })] });
    }
    function T(e = {}) {
     const { wrapper: t } = { ...(0, r.a)(), ...e.components };
-    return t ? (0, a.jsx)(t, { ...e, children: (0, a.jsx)(y, { ...e }) }) : y(e);
+    return t ? (0, a.jsx)(t, { ...e, children: (0, a.jsx)(D, { ...e }) }) : D(e);
    }
   },
   95929: (e, t, n) => {

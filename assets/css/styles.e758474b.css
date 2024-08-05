@@ -7663,7 +7663,7 @@ svg.DocSearch-Hit-Select-Icon {
  --utrecht-button-padding-inline-start: 0;
  --utrecht-accordion-panel-border-color: #0000;
  --utrecht-accordion-panel-padding-inline-start: 1.5em;
- --utrecht-accordion-panel-padding-block-start: 1em;
+ --utrecht-accordion-panel-padding-block-start: 0;
 }
 .utrecht-form-field--nlds-switch_p5bU {
  --utrecht-checkbox-size: var(--utrecht-form-toggle-width);
