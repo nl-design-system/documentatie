@@ -46,7 +46,8 @@ export const DSWSession = ({
       <VideoPlayer videoId={videoId} width="100%" height="100%" className={clsx(style['dsw-session__video'])} />
     ) : (
       <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
-        {speakers.map((speaker) => speaker.name).join(' & ')} {lang === 'en' ? 'of' : 'van'} {organisation}
+        {speakers.map((speaker) => speaker.name).join(' & ')}
+        {', '} {organisation}
       </Paragraph>
     )}
     {children}

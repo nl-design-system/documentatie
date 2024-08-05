@@ -1,0 +1,67 @@
+{
+  "AmyCole": {
+    "name": "Amy Cole",
+    "organisation": "U.S. Web Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-amy-cole.png",
+      "alt": "Amy Cole"
+    },
+    "description": {
+      "nl": "Amy Cole is manager toegankelijkheid en contractor bij het USWDS kernteam. Ze is ook een ervaren manager toegankelijkheid met een lange staat van dienst, die graag digitale diensten verbetert en toegankelijker maakt. Ze werkt graag samen met anderen en probeert altijd bij te leren.",
+      "en": "Amy Cole is an accessibility manager and a contractor on the USWDS Core team. She is a seasoned Digital Accessibility Manager who has been making significant contributions to the field of digital media for many years, finding joy in exploring ways to enhance online spaces and making them more accessible. She values the opportunity to collaborate with other professionals in the field, always seeking to expand her knowledge and skills."
+    },
+    "language": "en"
+  },
+  "GeriReid": {
+    "name": "Geri Reid",
+    "organisation": "Just Eat / Takeaway.com",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-geri-reid.png",
+      "alt": "Geri Reid"
+    },
+    "description": {
+      "nl": "Geri is een design systems consultant uit Londen. Als design en toegankelijkheidslead bij design systems zoals die van News UK en Lloyds Banking Group, heeft ze gewerkt voor sommige van de grootste merken in het Verenigd Koninkrijk. Op dit moment werkt ze bij Just Eat Takeaway. Geri is toegankelijkheidsspecialist, amateurschrijver en een echte documentatie-nerd.",
+      "en": "Geri is a design systems consultant from London. As design and accessibility lead on design systems at News UK and Lloyds Banking Group, she helped some of the UK's largest media and banking brands to design at scale. She is currently Lead Accessibility Specialist at Just Eat Takeaway. Geri is a keen accessibility advocate, amateur writer and documentation nerd."
+    },
+    "language": "en"
+  },
+  "GertHengeveld": {
+    "name": "Gert Hengeveld",
+    "organisation": "Chromatic",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-gert-hengeveld.png",
+      "alt": "Gert Hengeveld"
+    },
+    "description": {
+      "nl": "Gert is een full stack software engineer bij Chromatic, het bedrijf achter Storybook. Hij werkt daar aan de toekomst van het bouwen en testen van UIs. Gert is een problem solver met een passie voor UX en web development, en is al meer dan 10 jaar betrokken bij open source software ontwikkeling.",
+      "en": "Gert is a full stack software engineer at Chromatic, the company behind Storybook. He works closely with the rest of the Storybook team to envision and build the future of UI development and testing. Gert is a problem solver who's passionate about UX and web development and has been involved in open source software development for over a decade."
+    },
+    "language": "en"
+  },
+  "MikeGifford": {
+    "name": "Mike Gifford",
+    "organisation": "CivicActions",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-mike-gifford.png",
+      "alt": "Mike Gifford"
+    },
+    "description": {
+      "nl": "Mike werkt bij CivicActions als Open Standards & Practices Lead en deelt graag z'n kennis over open overheden, toegankelijkheid en duurzaamheid. Hij werkt onder andere met overheden in Noord-Amerika en Europa en is een internationale spreker. Hij is ook W3C Invited Expert en staat bekend als expert in de toegankelijkheid van authoring tools. Mike is ook al jaren kartrekker van toegankelijkheid bij het Drupal CMS.",
+      "en": "Mike is CivicActions’ Open Standards & Practices Lead and a thought leader on open government, as well as digital accessibility and sustainability. He has worked with governments in North America and Europe, and spoken internationally. He is also a W3C Invited Expert and recognized authoring tool accessibility expert. Mike has spearheaded accessibility improvements in Drupal since 2008, and has served as a Drupal Core Accessibility Maintainer in 2012."
+    },
+    "language": "en"
+  },
+  "SteveMesser": {
+    "name": "Steve Messer",
+    "organisation": "Freelance",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-steve-messer.png",
+      "alt": "Steve Messer"
+    },
+    "description": {
+      "nl": "Steve is een product strategist, die op dit moment werkt aan planning.data.gov.uk, bij het Ministry of Housing, Communities & Local Government. Hij houdt zich graag bezig met innovatie in de publieke sector open, ethisch productontwerp. Hij heeft gewerkt bij startups, de Government Digital Service en NHS Digital, en heeft bij General Assembly les gegeven over product management.",
+      "en": "Steve is a freelance product strategist, working on planning.data.gov.uk at Ministry of Housing, Communities & Local Government currently. He’s passionate about innovation for the public good and open, ethical product design. He’s worked at startups, Government Digital Service and NHS Digital, and has taught product management to people from numerous companies through General Assembly."
+    },
+    "language": "en"
+  }
+}
