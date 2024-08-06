@@ -25,6 +25,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org">
+
+<Paragraph>Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds niet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan de hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway">
 
 <Paragraph>Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het onbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht eentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn.</Paragraph>
