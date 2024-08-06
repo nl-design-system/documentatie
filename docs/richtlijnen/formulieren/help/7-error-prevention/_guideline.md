@@ -26,7 +26,7 @@ Bijvoorbeeld:
 
 Controleer tijdens het invullen de gegevens op invoerfouten en geef de gebruiker de mogelijkheid de gegevens te verbeteren.
 
-Een goede foutafhandeling tijdens het invullen van een formulier helpt de gebruiker fouten te voorkomen en te corrigeren. Lees hiervoor ook de [richtlijnen over foutmeldingen](/richtlijnen/formulieren/foutmeldingen/).
+Een goede foutafhandeling tijdens het invullen van een formulier helpt de gebruiker fouten te voorkomen en te corrigeren. Lees hiervoor ook de [richtlijnen over foutmeldingen](/richtlijnen/formulieren/foutmeldingen/) en onze blogpost [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren).
 
 ## Bevestigd
 
@@ -34,7 +34,7 @@ Geef de gebruiker, voor inzending, de mogelijkheid om de ingevulde gegevens te l
 
 Bij een complex formulier en als er juridische, financiële of persoonlijke gegevens worden uitgevraagd, is het essentieel dat de gebruiker kan controleren of alles goed is ingevuld voor verzenden.
 
-Alles op een rij in de laatste stap van het formulier, met de mogelijkheid om nog correcties te maken. Dit staat uitgebreider beschreven in [Meerdere stappen in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen).
+Alles op een rij in de laatste stap van het formulier, met de mogelijkheid om nog correcties te maken. Dit staat uitgebreider beschreven in de richtlijn [Bied als laatste stap een opsomming aan van alle ingevoerde gegevens](/richtlijnen/formulieren/meerdere-stappen/samenvatting).
 
 Gebruikersonderzoek voor het [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/wmebv/vng-online-formulieren) laat goed zien hoe belangrijk deze laatste stap is.
 
@@ -46,4 +46,4 @@ Voorbeelden van patronen in het NL Design System:
 - [Controlepagina](https://nldesignsystem.nl/voorbeelden/patronen/formulieren/controlepagina)
 - [Foutmeldingen](https://nldesignsystem.nl/voorbeelden/patronen/formulieren/foutmeldingen)
 
-Omkeerbaarheid, controle of bevestiging bij een formulier waarin om juridische, financiële of persoonlijke gegevens wordt gevraagd, is nodig om te voldoen aan het WCAG-succescriterium [3.3.4 Foutpreventie (wettelijk, financieel, gegevens)](/wcag/3.3.4/) (niveau AA).
+Omkeerbaarheid, controle of bevestiging bij een formulier waarin om juridische, financiële of persoonlijke gegevens wordt gevraagd, is nodig om te voldoen aan het [WCAG-succescriterium 3.3.4 Foutpreventie (wettelijk, financieel, gegevens)](/wcag/3.3.4/) (niveau AA).

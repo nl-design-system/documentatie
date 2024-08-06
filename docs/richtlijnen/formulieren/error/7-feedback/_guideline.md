@@ -66,4 +66,4 @@ Of:
 </head>
 ```
 
-Het geven van een beschrijvend `<title>`-element is nodig om te voldoen aan het WCAG-succescriterium [2.4.2 Paginatitel](/wcag/2.4.2) (niveau A).
+Het geven van een beschrijvend `<title>`-element is nodig om te voldoen aan het [WCAG-succescriterium 2.4.2 Paginatitel](/wcag/2.4.2) (niveau A).

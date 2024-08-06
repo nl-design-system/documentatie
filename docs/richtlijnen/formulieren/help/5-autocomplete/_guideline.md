@@ -14,8 +14,8 @@ WCAG bevat een volledige [lijst van waarden voor autocomplete](https://www.w3.or
 
 Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie](https://www.200ok.nl/tips/autocomplete/) gemaakt.
 
-Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de [richtlijnen over labels](/richtlijnen/formulieren/labels).
+Belangrijk bij het gebruik van autocomplete is dat het label altijd zichtbaar moet blijven, de gebruiker moet weten of de juiste waarde in het juiste veld is ingevoerd. Zie hiervoor de richtlijn [Zorg ervoor dat het label altijd zichtbaar is](/richtlijnen/formulieren/labels/altijd-zichtbaar).
 
-Het gebruik van het juiste `autocomplete`-attribuut is nodig om te voldoen aan het WCAG-succescriterium [1.3.5 Identificeer het doel van de input](/wcag/1.3.5/) (niveau AA).
+Het gebruik van het juiste `autocomplete`-attribuut is nodig om te voldoen aan het [WCAG-succescriterium 1.3.5 Identificeer het doel van de input](/wcag/1.3.5/) (niveau AA).
 
 **Let op**: [aria-autocomplete](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-autocomplete) heeft een ander doel en ander gebruik dan autocomplete bij formuliervelden. `aria-autocomplete` wordt gebruikt in webcomponenten, bijvoorbeeld om aan te geven dat er suggesties zijn bij zoekresultaten.
