@@ -31,6 +31,12 @@ Amy will share plain-language accessibility tests the USWDS team has created for
 
 </DSWSession>
 
+<DSWSession title="Testing UI" speakers="{[speakers.GertHengeveld]}" organisation="Chromatic" lang="en">
+
+<Paragraph>Building a Design System is exciting. But once your system is out there being used to power production applications, rolling out updates becomes a risky endeavor. Testing is a critical aspect of design systems development and maintenance that helps manage those risks. In this talk, Gert explains tools and strategies that help you test your UI components and integrations, so your design system can continue to evolve.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en">
 
 Join Geri, a seasoned design systems explorer with 8 years of adventures under her belt, as she navigates the uncharted territories of accessibility in a major product org. With no playbook in hand, Geri’s quest is one we can all relate to: figuring it out as we go along.

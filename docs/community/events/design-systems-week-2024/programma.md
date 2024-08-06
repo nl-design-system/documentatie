@@ -25,6 +25,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Testing UI" speakers="{[speakers.GertHengeveld]}" organisation="Chromatic">
+
+<Paragraph>Het bouwen van een design system is heel interessant. Maar zodra je design system gebruikt wordt ingezet voor applicaties in productie, wordt het uitrollen van updates risivovoller. Testen is een essentieel onderdeel van het maken van design systems en onderhoud helpt om de risico's te managen. In deze sessie legt Gert tools en methoden uit die je kunnen helpen om je UI componenten en integraties te testen, zodat je design system zich kan blijven doorontwikkelen.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway">
 
 <Paragraph>Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het onbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht eentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn.</Paragraph>
