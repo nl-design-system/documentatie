@@ -12,6 +12,18 @@
     },
     "language": "en"
   },
+  "DariceDeCuba": {
+    "name": "Darice de Cuba",
+    "organisation": "darice.org",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-darice-de-cuba.png",
+      "alt": "Darice de Cuba"
+    },
+    "description": {
+      "nl": "Darice deelt graag haar ervaring en inzicht in toegankelijkheid. Ze heeft een unieke positie als UI Engineer met een focus op toegankelijkheid en haar eigen ervaringsdeskundigheid als iemand met een beperking. Daarnaast houdt ze zich graag bezig met straatfotografie, schrijven en het bijhouden van een persoonlijk food guide van Den Haag."
+    },
+    "language": "nl"
+  },
   "GeriReid": {
     "name": "Geri Reid",
     "organisation": "Just Eat / Takeaway.com",
