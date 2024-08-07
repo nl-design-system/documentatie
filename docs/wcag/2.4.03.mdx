@@ -8,6 +8,8 @@ description: Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte 
 slug: 2.4.3
 keywords:
   - WCAG
+  - Focus Order
+  - Niveau A
 ---
 
 {/* @license CC0-1.0 */}
@@ -31,12 +33,36 @@ import Summary from "./summaries/_2.4.3-summary.md";
 
 <Summary />
 
-## Opgelet
+Een voorspelbare focus volgorde is belangrijk voor toetsenbordgebruikers. Zij kunnen dan makkelijker binnen een pagina links of buttons ontdekken of een formulier invullen.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Zorg ervoor dat de natuurlijke tabvolgorde bij de verschillende resoluties, schermbreedtes en oriëntaties logisch blijft. Dit betekent ook dat er geen positieve tabindex op elementen mag staan die de volgorde beïnvloeden.
+
+Voor een Nederlandstalige website is leesvolgorde van links naar rechts en van boven naar beneden. Zorg er dan voor dat ook de tabvolgorde van links naar rechts en van boven naar beneden is. Voor bijvoorbeeld Hebreeuws of Arabisch kan deze volgorde anders zijn. Laat de tabvolgorde die van de taalinstelling en [leesrichting](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir) volgen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Toetsenbordnavigatie: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/).
+- Formulieren - Meerdere stappen: [Zorg voor een consistente navigatie en benaming van links en buttons](/richtlijnen/formulieren/meerdere-stappen/consistente-benaming).
+- Formulieren - Visueel ontwerp: [Maak toetsenbord focus goed zichtbaar](/visueel-ontwerp/focus-goed-zichtbaar).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Tab met het toetsenbord door de pagina en controleer of de tabvolgorde logisch en zoals verwacht is.
+De tabvolgorde moet voor elk type weergave logisch, zichtbaar en voorspelbaar zijn en niet alleen voor een breed scherm op hoge resolutie.
+
+Let vooral op als de volgorde voor een andere weergave wordt aangepast via CSS met grid of flexbox.
+
+Aanvullende testen:
+
+- Controleer of er geen positieve tabindex wordt gebruikt om de tabvolgorde te beïnvloeden.
+- Controleer modals en dialogs, zoals het responsive menu, krijgt dit de focus en is de tabvolgorde logisch. Keert bij het sluiten de focus terug naar de button om het modal/dialog te openen?
+- Test bij verschillende schermbreedtes en oriëntaties (landscape/portrait).
+- Zoom in tot 400%.
+- Controleer dynamisch toegevoegde inhoud, zoals extra formuliervelden bij het selecteren van optie of een uitklapmenu.
+- Tab ook terug met shift-tab, werkt dat ook voorspelbaar?
 
 <WCAGFooterInfo />
