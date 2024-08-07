@@ -14,7 +14,7 @@
     m = [];
    function u(e) {
     const s = { h1: 'h1', p: 'p', ...(0, t.a)(), ...e.components };
-    return (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(s.h1, { id: 'sign-up-for-design-systems-week', children: 'Sign up for Design Systems Week' }), '\n', (0, n.jsx)(s.p, { children: 'Design System Week 2024 will feature short talks about the how and why of design systems, from managing design systems to user research and accessibility.' }), '\n', (0, n.jsx)(s.p, { children: 'Leave your info to receive updates from us leading up to Design Systems Week.' }), '\n', (0, n.jsx)(a.Z, { listId: 'pcqhthkfma', emailFieldId: '9djAFMjpOP', firstNameFieldId: 'Z4algALizb', thanksPage: 'https://nldesignsystem.nl/events/design-system-week/sign-up/thanks', laPostaId: 'iyihtuzpiq', language: { id: 'pWGlUo870J', value: '2' } })] });
+    return (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(s.h1, { id: 'sign-up-for-design-systems-week', children: 'Sign up for Design Systems Week' }), '\n', (0, n.jsx)(s.p, { children: 'Design System Week 2024 will feature short talks about the how and why of design systems, from managing design systems to user research and accessibility.' }), '\n', (0, n.jsx)(s.p, { children: 'Leave your info to receive updates from us leading up to Design Systems Week.' }), '\n', (0, n.jsx)(a.Z, { listId: 'pcqhthkfma', emailFieldId: '9djAFMjpOP', firstNameFieldId: 'Z4algALizb', thanksPage: 'https://nldesignsystem.nl/events/design-systems-week/sign-up/thanks', laPostaId: 'iyihtuzpiq', language: { id: 'pWGlUo870J', value: '2' } })] });
    }
    function c(e = {}) {
     const { wrapper: s } = { ...(0, t.a)(), ...e.components };
