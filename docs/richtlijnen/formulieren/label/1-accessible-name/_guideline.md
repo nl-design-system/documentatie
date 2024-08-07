@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-# Geef een formulierveld toegankelijke naam met een label
+# Geef een formulierveld een toegankelijke naam met een label
 
 Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld met een `for`/`id` relatie. De labeltekst wordt dan de zogenaamde "toegankelijke naam" van het formulierveld.
 
