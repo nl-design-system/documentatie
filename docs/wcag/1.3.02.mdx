@@ -8,10 +8,13 @@ description: Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sne
 slug: 1.3.2
 keywords:
   - WCAG
+  - Meaningful sequence
+  - Niveau A
 ---
 
 {/* @license CC0-1.0 */}
 
+import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.2-summary.md";
@@ -29,12 +32,45 @@ import Summary from "./summaries/_1.3.2-summary.md";
 
 <Summary />
 
-## Opgelet
+### Demo betekenisvolle volgorde in de screenreader VoiceOver
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+<VideoPlayer videoId="OEe1wkRK2jg" />
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Meerdere stappen: [Plaats de informatie over waar de gebruiker is in de stappen boven het formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang).
+- Formulieren - Visueel ontwerp: [Zorg voor een logische volgorde van de informatie](https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+De enige manier om dit echt goed te testen is met een screenreader, zoals VoiceOver voor de Mac of NVDA voor Windows. Het uitschakelen van de CSS is geen betrouwbare test voor dit succescriterium. Via CSS kan de leesvolgorde aangepast worden, ook voor screenreaders. Denk hierbij aan flexbox of css-grid.
+
+Test:
+
+- Is de volgorde waarin de inhoud wordt voorgelezen begrijpelijk als je het scherm niet ziet?
+- Komt de voorgelezen betekenis van de inhoud overeen met die van de zichtbare inhoud?
+- Wordt alle inhoud die bij een kopje hoort ook ná het kopje voorgelezen?
+- Is het begrijpelijk welke metadata, zoals auteur, categorie of datum, bij welke inhoud hoort?
+
+Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?
+
+Besteed ook aandacht aan inhoud die is gepresenteerd in tabellen, waarbij een tabel alleen wordt gebruikt voor het weergeven van tekst (dit geldt niet van tabel-data). Is de rol van de tabel aangepast naar `role="presentation"` en is de leesvolgorde een logisch verhaal. Let wel: het gebruik van een tabel voor alleen het netjes weergeven van de layout wordt zeer sterk afgeraden.
+
+**Let op**: Dit succescriterium gaat niet over de volgorde van de toetsenbordfocus. Deze volgorde wordt getest bij het [WCAG-succescriterium 2.4.3 Focusvolgorde](/wcag/2.4.3).
+
+## Veelgemaakte fouten
+
+### Fout: de volgorde van de inhoud is niet meer logisch voor kleine schermgroottes
+
+De leesvolgorde is anders voor ingezoomde weergaves dan voor de desktopweergave. Controleer de leesvolgorde voor de verschillende breedtes en oriëntaties en zoom ook in tot 400%. Overleg dit ook met de designer.
+
+### Fout: er staat content boven een gerelateerd kopje
+
+Het visueel ontwerp houdt geen rekening met de leesvolgorde. Overleg dit met de designer.
+Het is mogelijk om de visuele volgorde met CSS-code aan te passen zodat de inhoud anders wordt voorgelezen van de visuele volgorde, maar pas hierbij op. De volgorde van de toetsenbordfocus moet wel precies overeenkomen met de visuele volgorde, zie het [WCAG-succescriterium 2.4.3 Focusvolgorde](/wcag/2.4.3).
 
 <WCAGFooterInfo />
