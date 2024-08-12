@@ -155,7 +155,7 @@ export default function DocSidebarItemCategory({
               'menu__link--sublist': collapsible,
               'menu__link--sublist-caret': !href && collapsible,
             })}
-            href={collapsible ? (hrefWithSSRFallback ?? '#') : hrefWithSSRFallback}
+            href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
             {...props}
           >
             {label}
