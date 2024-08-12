@@ -145,7 +145,7 @@ De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de r
 
 ![Screenshot van een artikel. Duidelijk is dat de witruimte boven kopteksten groter is dan onder de kopteksten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties-typografie.png)
 
-[WCAG richtlijn 1.4.8 ‘Visual Presentation’](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html) beschrijft dat de regelafstand van een alinea ten minste 1.5 zou moeten zijn. En dat de afstand tussen alinea’s ten minste 1,5 keer zo groot zou moeten zijn als de regelafstand.
+[WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8) beschrijft dat de regelafstand van een alinea ten minste 1.5 zou moeten zijn. En dat de afstand tussen alinea’s ten minste 1,5 keer zo groot zou moeten zijn als de regelafstand.
 
 ### Hiërarchie
 
@@ -179,8 +179,8 @@ Voor iemand met een bevende hand kan een website lastiger te gebruiken zijn als 
 
 ### Gerelateerde WCAG Richtlijnen
 
-- [1.4.8: Visual presentation](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
-- [Use White Spacing - Supplemental Guidance to WCAG 2](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p10-whitespace/)
+- [WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8).
+- [Use White Spacing - Supplemental Guidance to WCAG 2](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p10-whitespace/).
 
 ### Links
 

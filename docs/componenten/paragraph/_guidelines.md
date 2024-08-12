@@ -38,11 +38,11 @@ Voor de lead paragraph variant is het gebruikelijk de lettergrootte 10% á 20% g
 
 ### Regelhoogte {#regelhoogte}
 
-Stel de regelhoogte met `nl.paragraph.line-height` in voor voldoende afstand tussen tekstregels, dit verbetert de leesbaarheid. Standaard gebruiken browsers circa `1.2`, maar `1.5` is voor veel gebruikers beter leesbaar. Voor WCAG 1.4.8 is het ook belangrijk om `1.5` of groter aan te bieden.
+Stel de regelhoogte met `nl.paragraph.line-height` in voor voldoende afstand tussen tekstregels, dit verbetert de leesbaarheid. Standaard gebruiken browsers circa `1.2`, maar `1.5` is voor veel gebruikers beter leesbaar. Voor het [WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8) is het ook belangrijk om `1.5` of groter aan te bieden.
 
 ### Afstand tussen alinea's {#afstand-tussen-alineas}
 
-Kies voldoende afstand tussen alinea's, in elk geval 50% groter dan afstand tussen tekstregels. ([WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)). Gebruik hiervoor de design tokens `nl.paragraph.margin-block-start` en `nl.paragraph.margin-block-end`.
+Kies voldoende afstand tussen alinea's, in elk geval 50% groter dan afstand tussen tekstregels. Gebruik hiervoor de design tokens `nl.paragraph.margin-block-start` en `nl.paragraph.margin-block-end`.
 
 ### Kleurgebruik {#kleurgebruik}
 
@@ -57,13 +57,13 @@ Zie de WCAG-succescriteria:
 
 Zorg dat de lengte van de tekst niet te lang wordt, bijvoorbeeld door deze design token in te stellen: `nl.article.max-inline-size`. De ideale regellengte verschilt per schrift en taal, maar ergens tussen de 50 en 75 tekens voor Nederlands is prima. Je kunt in CSS bijvoorbeeld de `ch` eenheid gebruiken: `--nl-article-max-inline-size: 60ch`.
 
-Voor het [WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html) is het nodig dat de regellengte beperkt kan worden tot maximaal 80 tekens (`80ch`), bijvoorbeeld door de viewport van de browser kleiner te maken.
+Voor het [WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8) is het nodig dat de regellengte beperkt kan worden tot maximaal 80 tekens (`80ch`), bijvoorbeeld door de viewport van de browser kleiner te maken.
 
 ### Tekstuitlijning {#tekstuitlijning}
 
 Tekst dient uitsluitend links uitgelijnd zijn, voor Nederlandse teksten. Gebruik daarvoor `text-align: start`.
 
-`text-align: justify` moet vermeden kunnen worden volgens het [WCAG-succescriterium 1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html), dus gebruik deze voor het gemak helemaal niet. Rechts uitlijnen en tekst centreren moet je ook niet gebruiken voor lopende tekst.
+`text-align: justify` moet vermeden kunnen worden volgens het [WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8), dus gebruik deze voor het gemak helemaal niet. Rechts uitlijnen en tekst centreren moet je ook niet gebruiken voor lopende tekst.
 
 ## Hoe het niet moet {#hoe-het-niet-moet}
 
