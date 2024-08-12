@@ -26,4 +26,4 @@ Lees de [documentatie][1] op nldesignsystem.nl voor uitleg over de verschillende
 Geef bij breaking changes aan **wat** er veranderd is, **waarom** de verandering nodig was en **hoe** gebruikers van het
 package hun code moeten aanpassen.
 
-[1]: https://nldesignsystem.nl/handboek/design/overzicht
+[1]: https://nldesignsystem.nl/handboek/designer/overzicht
