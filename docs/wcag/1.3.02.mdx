@@ -32,6 +32,14 @@ import Summary from "./summaries/_1.3.2-summary.md";
 
 <Summary />
 
+Screenreadergebruikers lezen informatie op een webpagina van boven naar beneden. Dan is het belangrijk dat de informatie ook in deze leesvolgorde in de gegenereerde code, de [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), staat.
+
+Screenreadergebruikers kunnen een lijst met de kopjes oproepen en een kopje kiezen vanwaar te lezen op een pagina.
+Als er gerelateerde informatie boven een kopje staat, mist de screenreadergebruiker deze inhoud.
+
+Bijvoorbeeld:
+In een lijst met evenementen staat de categorie en de datum van het evenement boven het kopje. Alleen een visueel kader rondom de gegevens van het evenement, is duidelijk wat bij elkaar hoort. De screenreadergebruiker mist dan de juiste categorie en datum bij dat evenement als deze vanaf het kopje gaat lezen. Dit wordt gedemonstreerd met de screenreader VoiceOver in de onderstaande video.
+
 ### Demo betekenisvolle volgorde in de screenreader VoiceOver
 
 <VideoPlayer videoId="OEe1wkRK2jg" />
@@ -41,26 +49,31 @@ import Summary from "./summaries/_1.3.2-summary.md";
 - Formulieren - Meerdere stappen: [Plaats de informatie over waar de gebruiker is in de stappen boven het formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang).
 - Formulieren - Visueel ontwerp: [Zorg voor een logische volgorde van de informatie](https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
 
+## Bron
+
+[<span lang="en">Source Order Matters</span>](https://adrianroselli.com/2015/09/source-order-matters.html) van Adrian Roselli.
+
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
 ## Hoe te testen
 
-De enige manier om dit echt goed te testen is met een screenreader, zoals VoiceOver voor de Mac of NVDA voor Windows. Het uitschakelen van de CSS is geen betrouwbare test voor dit succescriterium. Via CSS kan de leesvolgorde aangepast worden, ook voor screenreaders. Denk hierbij aan flexbox of css-grid.
+De handigste manier om dit goed te testen is met een screenreader, zoals VoiceOver voor de Mac of NVDA voor Windows. Ook het controleren van de code van de DOM is belangrijk.
+
+Je kunt ook testen door CSS uit te schakelen, maar let daarbij goed op verschillen in leesvolgorde in de DOM en visuele volgorde. In CSS kan de leesvolgorde namelijk aangepast worden, ook voor screenreaders met [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) en [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox).
+
+**Let op**: dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het [WCAG-succescriterium Focus volgorde](/wcag/2.4.3).
 
 Test:
 
-- Is de volgorde waarin de inhoud wordt voorgelezen begrijpelijk als je het scherm niet ziet?
-- Komt de voorgelezen betekenis van de inhoud overeen met die van de zichtbare inhoud?
+- Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je het scherm niet ziet? Met andere woorden, is het begrip van de inhoud onafhankelijk van het visueel ontwerp?
 - Wordt alle inhoud die bij een kopje hoort ook ná het kopje voorgelezen?
 - Is het begrijpelijk welke metadata, zoals auteur, categorie of datum, bij welke inhoud hoort?
 
 Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?
 
 Besteed ook aandacht aan inhoud die is gepresenteerd in tabellen, waarbij een tabel alleen wordt gebruikt voor het weergeven van tekst (dit geldt niet van tabel-data). Is de rol van de tabel aangepast naar `role="presentation"` en is de leesvolgorde een logisch verhaal. Let wel: het gebruik van een tabel voor alleen het netjes weergeven van de layout wordt zeer sterk afgeraden.
-
-**Let op**: Dit succescriterium gaat niet over de volgorde van de toetsenbordfocus. Deze volgorde wordt getest bij het [WCAG-succescriterium 2.4.3 Focusvolgorde](/wcag/2.4.3).
 
 ## Veelgemaakte fouten
 
