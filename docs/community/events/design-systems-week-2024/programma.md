@@ -45,6 +45,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst">
+
+<Paragraph>Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun diensten, met als doel iedereen te kunnen bedienen, ongeacht hun beperkingen. Maar hoe bepaal je welke problemen na een WCAG-audit de hoogste prioriteit hebben, zodat ontwikkelteams snel de grootste impact voor gebruikers kunnen realiseren? En hoe voorkom je toekomstige toegankelijkheidsproblemen voor gebruikers? In deze sessie deelt Lotte Bijl hoe de Belastingdienst inclusief gebruikersonderzoek heeft ingezet om deze vragen te kunnen beantwoorden en vertelt ze over de inzichten en de uitdagingen die zij tegenkwamen bij het organiseren van deze onderzoeken.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="De voordelen van open werken met design systems bij de overheid" speakers={[speakers.MikeGifford]} organisation="Civic Actions">
 
 <Paragraph>Voor veel overheden is bijdragen aan open source projecten een culturele uitdagingen. Er wordt vaak samengewerkt met mensen in andere delen van de overheid en daarbuiten. Design systems zijn een unieke kans voor overheden om met meer vertrouwen bij open source te omarmen. Mike heeft bijgedragen aan verschillende design systems van overheden en is altijd op zoek naar best practices en aanpakken van overheden over de hele wereld.</Paragraph>
