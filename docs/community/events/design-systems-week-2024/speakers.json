@@ -50,6 +50,18 @@
     },
     "language": "en"
   },
+  "LotteBijl": {
+    "name": "Lotte Bijl",
+    "organisation": "Belastingdienst",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-lotte-bijl.png",
+      "alt": "Lotte Bijl"
+    },
+    "description": {
+      "nl": "Lotte Bijl is een Digitale Toegankelijkheid Expert bij de Belastingdienst, waar ze product teams ondersteunt bij het verbeteren van de digitale toegankelijkheid van overheidsdiensten. Met haar expertise in gebruikersonderzoek, UX en development zorgt Lotte ervoor dat digitale oplossingen niet alleen technisch voldoen, maar ook daadwerkelijk bijdragen aan een betere gebruikerservaring."
+    },
+    "language": "nl"
+  },
   "MikeGifford": {
     "name": "Mike Gifford",
     "organisation": "CivicActions",
