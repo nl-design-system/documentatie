@@ -740,17 +740,6 @@ abbr[title] {
   margin-top: auto;
 }
 
-/* CSS WCAG-pagina's*/
-.docs-doc-page .wcag-badge {
-  font-size: 18px;
-  line-height: 24px;
-  padding-block-end: 4px;
-  padding-block-start: 4px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
-  vertical-align: middle;
-}
-
 /* CSS Richtlijnen */
 .nlds-dont {
   border: 2px solid #c00;
