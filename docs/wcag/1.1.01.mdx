@@ -12,11 +12,14 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { InlineHeadingGroup } from "@site/src/components/InlineHeadingGroup";
+import { DataBadge } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.1.1-summary.md";
 
-# WCAG-succescriterium 1.1.1 Niet-tekstuele content
+{/* prettier-ignore */}
+<InlineHeadingGroup level={1} suffix={<DataBadge className={'wcag-badge'}>Niveau A</DataBadge>}>WCAG-succescriterium 1.1.1 Niet-tekstuele content</InlineHeadingGroup>
 
 ## W3C referenties
 
