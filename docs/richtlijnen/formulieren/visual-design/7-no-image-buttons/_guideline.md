@@ -6,4 +6,4 @@ Zorg ervoor dat tekst in buttons goed meeschaalt als de gebruiker inzoomt. Een g
 
 Gebruik daarom liever geen jpg-, gif- of png-bestanden voor buttontekst maar stijl tekst met CSS.
 
-Deze richtlijn is verder beschreven bij de richtlijnen over [Buttons](/richtlijnen/formulieren/buttons).
+Deze richtlijn is verder beschreven bij [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button).

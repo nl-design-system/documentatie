@@ -289,7 +289,7 @@ Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact
 ### Gerelateerde WCAG-succescriteria:
 
 - [1.4.4 Herschalen van tekst](/wcag/1.4.4)
-- [1.4.8 Visuele weergave](https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html)
+- [1.4.8 Visuele weergave](/wcag/1.4.8)
 
 ### Links
 
