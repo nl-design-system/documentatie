@@ -4,7 +4,7 @@ import { InlineHeadingGroup, type InlineHeadingGroupProps } from './InlineHeadin
 import style from './WcagHeadingGroup.module.css';
 
 export interface WcagHeadingGroupProps extends InlineHeadingGroupProps {
-  conformanceLevel?: 'A' | 'AA' | 'AAA';
+  conformanceLevel: string;
 }
 
 export const WcagHeadingGroup = ({
@@ -17,7 +17,7 @@ export const WcagHeadingGroup = ({
       className={style['nlds-inline-heading-group--wcag-heading-group']}
       suffix={
         conformanceLevel && (
-          <DataBadge className={style['nlds-inline-heading-group__badge']}>Niveau {conformanceLevel}</DataBadge>
+          <DataBadge className={style['nlds-inline-heading-group__badge']}>{conformanceLevel}</DataBadge>
         )
       }
       {...restProps}
