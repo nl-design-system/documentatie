@@ -1,0 +1,60 @@
+---
+title: Status in een formulier | Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Introductie status
+sidebar_position: 12
+pagination_label: Status in formulieren
+description: Richtlijnen voor het omgaan met status in formulieren.
+slug: /richtlijnen/formulieren/status/
+keywords:
+  - informatie
+  - status
+  - formulier
+  - design
+  - code
+---
+
+{/* @license CC0-1.0 */}
+
+import { OverviewPage } from "@site/src/components/OverviewPage";
+import FormFooterInfo from "../_form_footer_info.md";
+
+# Status in een formulier
+
+Het is belangrijk een gebruiker te informeren over veranderingen en updates. Is een formulier succesvol verzonden, zijn er fouten, hoeveel zoekresultaten zijn er, is de tijdslimiet bijna verstreken? Alle gebruikers moeten deze informatie krijgen. Ook gebruikers die het scherm of de verandering niet of niet goed zien.
+
+Je kunt updates over belangrijke informatie in een formulier met de gebruiker delen via een statusmelding. Als deze melding bij verschijnen geen toetsenbordfocus krijgt, zorg er dan voor dat gebruikers die de melding niet zien, deze informatie toch meekrijgen.
+
+## Wat is een statusbericht?
+
+Een [statusbericht](https://www.w3.org/Translations/WCAG22-nl/#dfn-status-messages) geeft een verandering in de content aan die geen verandering van context is, en die de gebruiker informatie geeft over het succes of de resultaten van een actie, over de wachtstatus van een applicatie, over de voortgang van een proces of over het bestaan van fouten.
+
+## Wat maakt een goed statusbericht?
+
+Iedereen moet een statusmelding meekrijgen. Ook mensen die het scherm niet zien of sterk zijn ingezoomd.
+
+Cruciaal is hierbij de term **verandering van content**. Wat is dat? En wat is het verschil tussen context en content?
+
+### Verandering van context
+
+Veranderingen van context zijn grote veranderingen in de content, zoals:
+
+- Het openen van een nieuwe pagina, inclusief wat er voor een gebruiker uitziet alsof hij naar een nieuwe pagina is gegaan.
+- Het verplaatsen van de focus naar een ander onderdeel op de pagina.
+- Content die de betekenis van de webpagina volledig verandert.
+
+### Verandering van content
+
+Een verandering van content betekent niet altijd een verandering van context. Veranderingen in de content kunnen zijn:
+
+- Dynamisch weergeven van filter- of zoekresultaten.
+- Het verhogen van het aantal producten aan het winkelmandje-icoontje.
+- Informatie over het al dan niet succesvol versturen van een formulier (zonder het herladen van de pagina).
+- Het weergeven van een teller over het nog maximaal in te voeren karakters in een invoerveld.
+
+Er zijn verschillende technieken om aan een screenreadergebruiker de statusmelding te laten voorlezen, of voor een ingezoomde gebruiker om toch de melding te kunnen lezen. Deze technieken staan bij de afzonderlijke richtlijnen over statusmeldingen beschreven.
+
+<OverviewPage excludeDocIDs={["richtlijnen/formulieren/status/README"]} />
+
+<FormFooterInfo />
