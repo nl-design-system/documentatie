@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.adea68d5.css" />
-  <script src="/assets/js/runtime~main.87abc4b0.js" defer="defer"></script>
-  <script src="/assets/js/main.ecdd4dce.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.74031a88.js" defer="defer"></script>
+  <script src="/assets/js/main.56765fa6.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -144,6 +144,7 @@
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.3">1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.4">1.2.4 Ondertitels voor doven en slechthorenden (live)</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.5">1.2.5 Audiodescriptie (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.6">1.2.6 Gebarentaal (vooraf opgenomen)</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.1">1.3.1 Info en relaties</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.2">1.3.2 Betekenisvolle volgorde</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.3">1.3.3 Zintuiglijke eigenschappen</a></li>
@@ -274,97 +275,9 @@
               <p>Alle gebruikers hebben hier baat bij. Zeker als gebruikers de pagina snel scannen om te zoeken wat ze willen weten. Duidelijke labels helpen een gebruiker een formulier makkelijker in te vullen.</p>
               <h3 id="koppen" class="utrecht-heading-3">Koppen</h3>
               <p>Koppen vormen de ruggengraat van de inhoud van een pagina. Aan de hand van koppen kan een gebruiker snel wegwijs worden in de inhoud van een webpagina.</p>
-              <p>Het onderwerp van een webpagina staat in het kopje met niveau 1 <code class="utrecht-code">&lt;h1&gt;</code>. Door één duidelijke h1 kan de gebruiker snel beslissen: is dit informatie die ik wil lezen, is dit waar ik naar op zoek ben. Verdeel de overige tekst met de koppen <code class="utrecht-code">&lt;h2&gt;</code> tot en met <code class="utrecht-code">&lt;h6&gt;</code>, afhankelijk van de structuur van de inhoud. Vaak zijn alleen koppen met niveau 1 tot en met 3 nodig.</p>
-              <p>Screenreadergebruikers kunnen een lijst van koppen oproepen en snel naar een kopje navigeren. Dan is het belangrijk dat een kopje de inhoud eronder goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png" alt="Screenshot web rotor VoiceOver van de voorpagina van deze website" class="utrecht-img" /></p>
-              <p>Gebruik een kopje daarom niet enkel en alleen om tekst groot en vet te maken. Maar beschrijf in de koppen de inhoud eronder, als kleine samenvatting. Dit helpt de scannende gebruikers om snel de informatie te vinden die ze zoeken.</p>
-              <p>Dit succescriterium gaat niet alleen over HTML-koppen, maar ook over andere koppen zoals in tabellen. De tabelkop <code class="utrecht-code">&lt;th&gt;</code> voor rijen en kolommen moeten ook duidelijk zijn.</p>
-              <p>
-               Hou de tekst ook kort, krachtig en <span lang="en"><em class="utrecht-emphasis utrecht-emphasis--stressed">to-the-point</em></span
-               >. Het is niet de bedoeling een hele paragraaf tekst als kopje aan te duiden.
-              </p>
-              <p><strong>Let op</strong>: Dit succescriterium gaat over de <strong>tekst</strong> van koppen.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">WCAG-succescriterium <a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a> gaat over correct gebruik van HTML om koppen aan te geven.</li>
-               <li class="utrecht-unordered-list__item">WCAG-succescriterium <a href="/wcag/1.3.2" class="utrecht-link utrecht-link--html-a">1.3.2 Betekenisvolle volgorde</a> legt uit dat alle inhoud die bij een kopje hoort, in de code onder het kopje moet staan.</li>
-               <li class="utrecht-unordered-list__item">WCAG-succescriterium <a href="/wcag/1.4.2" class="utrecht-link utrecht-link--html-a">2.4.2 Paginatitel</a> gaat over de paginatitel, in het element <code class="utrecht-code">&lt;title&gt;</code> in de <code class="utrecht-code">&lt;head&gt;</code> sectie van de HTML-code</li>
-               <li class="utrecht-unordered-list__item">Alleen <a href="/wcag/2.4.10" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.4.10 Paragraafkoppen</a> op niveau <strong>AAA</strong> vereist dat koppen gestructureerd zijn. Dit draagt in een belangrijke mate bij aan een goed begrip van de inhoud voor screenreadergebruikers en zoekmachines.</li>
-              </ul>
-              <h3 id="labels" class="utrecht-heading-3">Labels</h3>
-              <p>Duidelijke labels bij een invoerveld zijn voor alle gebruikers belangrijk. Wat moet je precies invullen? Is een veld verplicht of niet-verplicht in te vullen? Moet ik alleen mijn achternaam invullen of ook mijn voornaam?</p>
-              <p>De richtlijnen over <a href="/richtlijnen/formulieren/labels" class="utrecht-link utrecht-link--html-a">Labels</a> en <a href="/richtlijnen/formulieren/voorkom-fouten" class="utrecht-link utrecht-link--html-a">Voorkom fouten</a> gaan hier uitgebreid op in.</p>
-              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Formulieren: <a href="/richtlijnen/formulieren/labels" class="utrecht-link utrecht-link--html-a">Labels</a>.</li>
-               <li class="utrecht-unordered-list__item">Formulieren: <a href="/richtlijnen/formulieren/voorkom-fouten" class="utrecht-link utrecht-link--html-a">Voorkom fouten</a>.</li>
-              </ul>
-              <h2 id="bronnen" class="utrecht-heading-2">Bronnen</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/" class="utrecht-link utrecht-link--html-a"><span lang="en">Accessible heading structure</span></a> van Rian Rietveld voor the A11y Project.
-               </li>
-               <li class="utrecht-unordered-list__item"><a href="https://www.internetacademy.nl/ebooks/handboek-webcontent/headings-voor-betekenisvol-opmaken" class="utrecht-link utrecht-link--html-a">Headings voor betekenisvol opmaken</a> in het handboek &quot;Handboek webcontent: meer focus, minder content&quot; van de Internet Academy.</li>
-               <li class="utrecht-unordered-list__item">
-                <a href="https://hidde.blog/heading-structures-are-tables-of-contents/" class="utrecht-link utrecht-link--html-a"><span lang="en">Heading structures are tables of contents</span></a> van Hidde de Vries.
-               </li>
-              </ul>
-              <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
-              <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
-              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
-              <p>Of een kopje of label betekenisvol is, kun je alleen bepalen door de webpagina te lezen en zo te beoordelen of een kopje of label de lading dekt.</p>
-              <p>Controleer of teksten betekenisvol en duidelijk zijn voor:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Koppen.</li>
-               <li class="utrecht-unordered-list__item">Labels (inclusief de placeholder).</li>
-               <li class="utrecht-unordered-list__item">Kolomkoppen.</li>
-               <li class="utrecht-unordered-list__item">Alle andere content die eruit ziet als een kopje of een label.</li>
-              </ul>
-              <p>Beschrijft een kopje de inhoud die eronder valt?</p>
-              <p>Controleer ook koppen en labels die verborgen zijn voor het zicht, maar wel voorgelezen worden door screenreaders.</p>
-              <p>Zijn er geen labels of koppen op de webpagina, dan is dit succescriterium niet van toepassing.</p>
-              <p>Een goed hulpmiddel om een overzicht van de koppenstructuur te krijgen is de browseradd-on HeadingsMap:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Chrome</a>.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Firefox</a>.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Edge</a>.</li>
-              </ul>
-              <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
-              <p>Deze pagina&#x27;s over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a>.</p>
+              <p>Het onderwerp van een webpagina staat in het kopje met niveau 1 <code class="utrecht-code">&lt;h1&gt;</code>. Door é</p>
              </div>
-             <footer class="theme-doc-footer docusaurus-mt-lg">
-              <div class="theme-doc-footer-edit-meta-row row">
-               <div class="col">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.4.06.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
-                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_IuMr" aria-hidden="true">
-                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
-                 >Bewerk deze pagina</a
-                >
-               </div>
-               <div class="col lastUpdated_soA6"></div>
-              </div>
-             </footer>
             </article>
-            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
-             <a class="pagination-nav__link pagination-nav__link--prev" href="/wcag/2.4.5"
-              ><div class="pagination-nav__sublabel">Vorige</div>
-              <div class="pagination-nav__label">WCAG-succescriterium 2.4.5 Meerdere manieren</div></a
-             ><a class="pagination-nav__link pagination-nav__link--next" href="/wcag/2.4.7"
-              ><div class="pagination-nav__sublabel">Volgende</div>
-              <div class="pagination-nav__label">2.4.7 Focus zichtbaar</div></a
-             >
-            </nav>
-           </div>
-          </div>
-          <div class="col col--3">
-           <div class="tableOfContents_Hdbs thin-scrollbar theme-doc-toc-desktop">
-            <ul class="table-of-contents table-of-contents__left-border">
-             <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
-             <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
-             <li><a href="#bronnen" class="table-of-contents__link toc-highlight">Bronnen</a></li>
-             <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
-             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
-            </ul>
            </div>
           </div>
          </div>
@@ -373,25 +286,6 @@
       </div>
      </div>
     </div>
-    <footer class="footer footer--dark footer_VVap">
-     <div class="container--wide">
-      <div class="row footer__links">
-       <div class="col footer__col">
-        <div class="footer__title"></div>
-        <ul class="footer__items clean-list">
-         <li class="footer__item"><a class="utrecht-link" href="/blog">Blog</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/project/kernteam">Contact</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
-         <li class="footer__item"><a class="utrecht-link" href="/colofon">Colofon</a></li>
-         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
-         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
-         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
-        </ul>
-       </div>
-      </div>
-     </div>
-    </footer>
    </div>
   </div>
  </body>
