@@ -25,8 +25,8 @@ Bijvoorbeeld:
 </div>
 ```
 
-Het instellen van role="alert" is gelijk aan het instellen van [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
-Het onderbreekt de gebruiker bij wat ze aan het doen is en geeft de melding onmiddellijk door.
+Een element met role="alert" is een “assertive” live region, en functioneel gelijk aan het gebruiken van de combinatie [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
+Het onderbreekt de gebruiker bij wat die doet en geeft de melding onmiddellijk door.
 
 **Let op**: gebruik alert spaarzaam, alleen in situaties waarin de onmiddellijke aandacht van de gebruiker vereist is.
 
@@ -53,7 +53,7 @@ Deze `role="status"` onderbreekt de gebruiker niet, maar de melding wordt pas do
 
 Met andere woorden, 'status' wacht op zijn beurt, 'alert' dringt voor.
 
-Veel CMS'en en frameworks hebben iets ingebouwd om screenreaderfeedback makkelijker te maken: ze plaatsen onderaan de pagina een vaste live-regions, waaraan je als ontwikkelaar meldingen kan toevoegen die dan worden voorgelezen.
+Veel CMS'en en frameworks hebben iets ingebouwd om screenreaderfeedback makkelijker te maken: ze plaatsen onderaan de pagina een vaste live-region, waaraan je als ontwikkelaar meldingen kan toevoegen die dan worden voorgelezen.
 
 Voorbeelden van dit soort functionaliteit:
 
@@ -61,7 +61,7 @@ Voorbeelden van dit soort functionaliteit:
 - [drupal.accounce](https://www.drupal.org/node/1973218) voor Drupal.
 - [live-announcer](https://www.npmjs.com/package/@react-aria/live-announcer) voor react-aria.
 
-Het informeren van alle gebruikers over een statusbericht is nodig om te voldoen aan het WCAG-succescriterium [4.1.3 Statusberichten](https://nldesignsystem.nl/wcag/4.1.3) (niveau AA).
+Het informeren van alle gebruikers over een statusbericht is verplicht om te voldoen aan het WCAG-succescriterium [4.1.3 Statusberichten](https://nldesignsystem.nl/wcag/4.1.3) (niveau AA).
 
 Bronnen:
 
