@@ -2,11 +2,11 @@
 
 # Informeer gebruikers van screenreaders over het statusbericht
 
-Als de statusmelding dynamisch wordt gegenereerd en zichtbaar is, maar geen toetsenbordfocus krijgt, moet de melding worden voorgelezen aan een screenreadergebruiker.
+Als het statusbericht dynamisch wordt gegenereerd en zichtbaar is, maar geen toetsenbordfocus krijgt, moet de melding worden voorgelezen aan een screenreadergebruiker.
 
-Dit kan door van de statusmelding een live-region te maken.
+Dit kan door van het statusbericht een live-region te maken.
 
-Let op: de live-region moet al in de DOM (de gegenereerde HTML-code) aanwezig zijn, de browser geeft vaak alleen wijzigingen binnen deze (al bestaande) live-region door.
+Let op: de live-region moet al in de DOM (de door de browser verwerkte HTML-code) aanwezig zijn voor je er iets in zet. Vaak verwerkt de browser alleen wijzigingen in al bestaande live-regions.
 
 ## Live-region met `role="alert"`
 
