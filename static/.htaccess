@@ -47,3 +47,5 @@ RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
 Redirect 307 "/calendar" "/componenten"
 Redirect 307 "/character-count" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
+
+ErrorDocument 404 /404.html
