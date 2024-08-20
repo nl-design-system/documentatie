@@ -13,7 +13,7 @@ const config: Config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
   projectName: 'documentatie', // Usually your repo name.
   presets: [
