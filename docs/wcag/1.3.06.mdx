@@ -1,0 +1,53 @@
+---
+title: WCAG-succescriterium 1.3.6 Identificeer het doel
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1.3.6 Identificeer het doel
+pagination_label: WCAG-succescriterium 1.3.6 Identificeer het doel
+description: Zorg dat het doel van iconen en andere belangrijke componenten op een webpagina herkent kan worden door de software. Dan kan hulptechnologie aanvullende informatie geven of de vormgeving aanpassen.
+slug: 1.3.6
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.3.6-summary.md";
+
+{/* prettier-ignore */}
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AAA">WCAG-succescriterium 1.3.6 Identificeer het doel</WcagHeadingGroup>
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.6 Identify Purpose</span>](https://www.w3.org/TR/WCAG22/#identify-purpose).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.3.6 Identificeer het doel](https://www.w3.org/Translations/WCAG22-nl/#identificeer-het-doel).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.6 Identify Purpose</span>](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.6 Identify Purpose</span>](https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html).
+
+## Uitleg
+
+<Summary />
+
+Maar je kunt nu al informatie toevoegen die nuttig is voor mensen met een cognitieve beperking en hulpmiddelen.
+
+- Zet zichtbare tekst bij een icoontje. Dus niet alleen 3 streepjes laten zien, maar zet ook het woord 'Menu' erbij.
+- Geef landmarks die niet uniek zijn en ook sections een aria-label met de functie hiervan. Bijvoorbeeld `<aside aria-label="De laatste 3 nieuwsberichten">`,
+
+De [<span lang="en">Cognitive and Learning Disabilities Accessibility Task Force</span>](https://www.w3.org/TR/coga-usable/) van het W3C is bezig technieken te onderzoeken die hiervoor gebruikt kunnen worden. Eén project is [coga.personalisation](https://github.com/ayelet-seeman/coga.personalisation), die gebruik maakt van de ARIA-properties aria-function en aria-importance. Beide properties worden nog niet ondersteund in [ARIA-specificatie versie 1.2](https://www.w3.org/TR/wai-aria-1.2/).
+
+Het is een interessante ontwikkeling, die zeker de moeite waard is om te volgen.
+
+## Bronnen
+
+- [<span lang="en">Making Content Usable for People with Cognitive and Learning Disabilities</span>](https://www.w3.org/TR/coga-usable/).
+- [<span lang="en">WAI-Adapt Overview, enabling users to adapt content presentation</span>](https://www.w3.org/WAI/adapt/).
+- [<span lang="en">Personalization and User Preferences</span>](https://w3c.github.io/coga/issue-papers/#personalization-and-user-preferences).
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+<WCAGFooterInfo />
