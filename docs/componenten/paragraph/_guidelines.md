@@ -51,7 +51,7 @@ Kies voldoende afstand tussen alinea's, in elk geval 50% groter dan afstand tuss
 Zie de WCAG-succescriteria:
 
 - [1.4.3: Contrast (minimum)](/wcag/1.4.3)
-- [1.4.6: Contrast (versterkt)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html)
+- [1.4.6: Contrast (versterkt)](/wcag/1.4.6)
 
 ### Regellengte {#regellengte}
 
