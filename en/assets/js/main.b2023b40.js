@@ -1,4 +1,4 @@
-/*! For license information please see main.af0f0538.js.LICENSE.txt */
+/*! For license information please see main.b2023b40.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -283,7 +283,7 @@
     for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
     return n;
    }
-   function L(e, t) {
+   function z(e, t) {
     if (null == e) return {};
     var r,
      n,
@@ -302,7 +302,7 @@
     }
     return o;
    }
-   function z(e, t) {
+   function L(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -318,18 +318,18 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? z(Object(r), !0).forEach(function (t) {
-         T(e, t, r[t]);
+      ? L(Object(r), !0).forEach(function (t) {
+         R(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : z(Object(r)).forEach(function (t) {
+        : L(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
     return e;
    }
-   function T(e, t, r) {
+   function R(e, t, r) {
     return (
      (t = (function (e) {
       var t = (function (e, t) {
@@ -349,10 +349,10 @@
      e
     );
    }
-   function R(e) {
+   function T(e) {
     return e.map(function (e) {
      var t = e.items,
-      r = L(e, E);
+      r = z(e, E);
      return A(
       A({}, r),
       {},
@@ -435,11 +435,11 @@
      },
      clickedObjectIDsAfterSearch: function () {
       for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-      t.length > 0 && a('clickedObjectIDsAfterSearch', R(t), t[0].items);
+      t.length > 0 && a('clickedObjectIDsAfterSearch', T(t), t[0].items);
      },
      clickedObjectIDs: function () {
       for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-      t.length > 0 && a('clickedObjectIDs', R(t), t[0].items);
+      t.length > 0 && a('clickedObjectIDs', T(t), t[0].items);
      },
      clickedFilters: function () {
       for (var t = arguments.length, r = new Array(t), n = 0; n < t; n++) r[n] = arguments[n];
@@ -447,11 +447,11 @@
      },
      convertedObjectIDsAfterSearch: function () {
       for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-      t.length > 0 && a('convertedObjectIDsAfterSearch', R(t), t[0].items);
+      t.length > 0 && a('convertedObjectIDsAfterSearch', T(t), t[0].items);
      },
      convertedObjectIDs: function () {
       for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-      t.length > 0 && a('convertedObjectIDs', R(t), t[0].items);
+      t.length > 0 && a('convertedObjectIDs', T(t), t[0].items);
      },
      convertedFilters: function () {
       for (var t = arguments.length, r = new Array(t), n = 0; n < t; n++) r[n] = arguments[n];
@@ -463,7 +463,7 @@
        t
         .reduce(function (e, t) {
          var r = t.items,
-          n = L(t, P);
+          n = z(t, P);
          return [].concat(
           D(e),
           D(
@@ -1415,7 +1415,7 @@
     );
    }
    var Ne = ['event', 'nextState', 'props', 'query', 'refresh', 'store'];
-   function Le(e, t) {
+   function ze(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -1427,16 +1427,16 @@
     }
     return r;
    }
-   function ze(e) {
+   function Le(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Le(Object(r), !0).forEach(function (t) {
+      ? ze(Object(r), !0).forEach(function (t) {
          Ae(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Le(Object(r)).forEach(function (t) {
+        : ze(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -1462,18 +1462,18 @@
      e
     );
    }
-   var Te,
-    Re,
+   var Re,
+    Te,
     Ie,
     Me = null,
     Ze =
-     ((Te = -1),
-     (Re = -1),
+     ((Re = -1),
+     (Te = -1),
      (Ie = void 0),
      function (e) {
-      var t = ++Te;
+      var t = ++Re;
       return Promise.resolve(e).then(function (e) {
-       return Ie && t < Re ? Ie : ((Re = t), (Ie = e), e);
+       return Ie && t < Te ? Ie : ((Te = t), (Ie = e), e);
       });
      });
    function Fe(e) {
@@ -1512,7 +1512,7 @@
     if ((d(a), h(o.defaultActiveItemId), !a && !1 === o.openOnFocus)) {
      var p,
       m = i.getState().collections.map(function (e) {
-       return ze(ze({}, e), {}, { items: [] });
+       return Le(Le({}, e), {}, { items: [] });
       });
      b('idle'), u(m), s(null !== (p = n.isOpen) && void 0 !== p ? p : o.shouldPanelOpen({ state: i.getState() }));
      var f = Q(
@@ -1528,10 +1528,10 @@
      }, o.stallThreshold));
     var g = Q(
      Ze(
-      o.getSources(ze({ query: a, refresh: c, state: i.getState() }, l)).then(function (e) {
+      o.getSources(Le({ query: a, refresh: c, state: i.getState() }, l)).then(function (e) {
        return Promise.all(
         e.map(function (e) {
-         return Promise.resolve(e.getItems(ze({ query: a, refresh: c, state: i.getState() }, l))).then(function (t) {
+         return Promise.resolve(e.getItems(Le({ query: a, refresh: c, state: i.getState() }, l))).then(function (t) {
           return (function (e, t, r) {
            if (((o = e), Boolean(null == o ? void 0 : o.execute))) {
             var n =
@@ -1650,7 +1650,7 @@
         m = h.itemInputValue,
         f = h.itemUrl,
         g = h.source;
-       g.onActive(ze({ event: t, item: p, itemInputValue: m, itemUrl: f, refresh: c, source: g, state: i.getState() }, l));
+       g.onActive(Le({ event: t, item: p, itemInputValue: m, itemUrl: f, refresh: c, source: g, state: i.getState() }, l));
       }
      })
      .finally(function () {
@@ -2485,7 +2485,7 @@
      case 'lvl1':
       return n.createElement(St, null);
      case 'content':
-      return n.createElement(Lt, null);
+      return n.createElement(zt, null);
      default:
       return n.createElement(Nt, null);
     }
@@ -2493,19 +2493,19 @@
    function Nt() {
     return n.createElement('svg', { width: '20', height: '20', viewBox: '0 0 20 20' }, n.createElement('path', { d: 'M13 13h4-4V8H7v5h6v4-4H7V8H3h4V3v5h6V3v5h4-4v5zm-6 0v4-4H3h4z', stroke: 'currentColor', fill: 'none', fillRule: 'evenodd', strokeLinecap: 'round', strokeLinejoin: 'round' }));
    }
-   function Lt() {
+   function zt() {
     return n.createElement('svg', { width: '20', height: '20', viewBox: '0 0 20 20' }, n.createElement('path', { d: 'M17 5H3h14zm0 5H3h14zm0 5H3h14z', stroke: 'currentColor', fill: 'none', fillRule: 'evenodd', strokeLinejoin: 'round' }));
    }
-   function zt() {
+   function Lt() {
     return n.createElement('svg', { width: '20', height: '20', viewBox: '0 0 20 20' }, n.createElement('path', { d: 'M10 14.2L5 17l1-5.6-4-4 5.5-.7 2.5-5 2.5 5 5.6.8-4 4 .9 5.5z', stroke: 'currentColor', fill: 'none', fillRule: 'evenodd', strokeLinejoin: 'round' }));
    }
    function At() {
     return n.createElement('svg', { width: '40', height: '40', viewBox: '0 0 20 20', fill: 'none', fillRule: 'evenodd', stroke: 'currentColor', strokeLinecap: 'round', strokeLinejoin: 'round' }, n.createElement('path', { d: 'M19 4.8a16 16 0 00-2-1.2m-3.3-1.2A16 16 0 001.1 4.7M16.7 8a12 12 0 00-2.8-1.4M10 6a12 12 0 00-6.7 2M12.3 14.7a4 4 0 00-4.5 0M14.5 11.4A8 8 0 0010 10M3 16L18 2M10 18h0' }));
    }
-   function Tt() {
+   function Rt() {
     return n.createElement('svg', { width: '40', height: '40', viewBox: '0 0 20 20', fill: 'none', fillRule: 'evenodd', stroke: 'currentColor', strokeLinecap: 'round', strokeLinejoin: 'round' }, n.createElement('path', { d: 'M15.5 4.8c2 3 1.7 7-1 9.7h0l4.3 4.3-4.3-4.3a7.8 7.8 0 01-9.8 1m-2.2-2.2A7.8 7.8 0 0113.2 2.4M2 18L18 2' }));
    }
-   function Rt(e) {
+   function Tt(e) {
     var t = e.translations,
      r = void 0 === t ? {} : t,
      o = r.titleText,
@@ -2531,7 +2531,7 @@
     return n.createElement(
      'div',
      { className: 'DocSearch-NoResults' },
-     n.createElement('div', { className: 'DocSearch-Screen-Icon' }, n.createElement(Tt, null)),
+     n.createElement('div', { className: 'DocSearch-Screen-Icon' }, n.createElement(Rt, null)),
      n.createElement('p', { className: 'DocSearch-Title' }, c, ' "', n.createElement('strong', null, o.state.query), '"'),
      m &&
       m.length > 0 &&
@@ -2763,7 +2763,7 @@
                    });
                  },
                 },
-                n.createElement(zt, null),
+                n.createElement(Lt, null),
                ),
               ),
               n.createElement(
@@ -2796,7 +2796,7 @@
             title: f,
             collection: o.state.collections[1],
             renderIcon: function () {
-             return n.createElement('div', { className: 'DocSearch-Hit-icon' }, n.createElement(zt, null));
+             return n.createElement('div', { className: 'DocSearch-Hit-icon' }, n.createElement(Lt, null));
             },
             renderAction: function (e) {
              var t = e.item,
@@ -2832,7 +2832,7 @@
       var t = e.translations,
        r = void 0 === t ? {} : t,
        o = l(e, er);
-      if ('error' === o.state.status) return n.createElement(Rt, { translations: null == r ? void 0 : r.errorScreen });
+      if ('error' === o.state.status) return n.createElement(Tt, { translations: null == r ? void 0 : r.errorScreen });
       var a = o.state.collections.some(function (e) {
        return e.items.length > 0;
       });
@@ -3272,11 +3272,11 @@
        return Sr(e)(t.indexName, { methods: { searchForFacetValues: Ar } }).searchForFacetValues(n, o, { ...r, ...a });
       }),
      ),
-    Lr = (e) => (t, r, n) => e.transporter.read({ method: yr, path: dr('1/answers/%s/prediction', e.indexName), data: { query: t, queryLanguages: r }, cacheable: !0 }, n),
-    zr = (e) => (t, r) => e.transporter.read({ method: yr, path: dr('1/indexes/%s/query', e.indexName), data: { query: t }, cacheable: !0 }, r),
+    zr = (e) => (t, r, n) => e.transporter.read({ method: yr, path: dr('1/answers/%s/prediction', e.indexName), data: { query: t, queryLanguages: r }, cacheable: !0 }, n),
+    Lr = (e) => (t, r) => e.transporter.read({ method: yr, path: dr('1/indexes/%s/query', e.indexName), data: { query: t }, cacheable: !0 }, r),
     Ar = (e) => (t, r, n) => e.transporter.read({ method: yr, path: dr('1/indexes/%s/facets/%s/query', e.indexName, t), data: { facetQuery: r }, cacheable: !0 }, n),
-    Tr = 1,
-    Rr = 2,
+    Rr = 1,
+    Tr = 2,
     Ir = 3;
    function Mr(e, t, r) {
     const n = {
@@ -3306,7 +3306,7 @@
          r.send(e.data);
        }),
      },
-     logger: ((o = Ir), { debug: (e, t) => (Tr >= o && console.debug(e, t), Promise.resolve()), info: (e, t) => (Rr >= o && console.info(e, t), Promise.resolve()), error: (e, t) => (console.error(e, t), Promise.resolve()) }),
+     logger: ((o = Ir), { debug: (e, t) => (Rr >= o && console.debug(e, t), Promise.resolve()), info: (e, t) => (Tr >= o && console.info(e, t), Promise.resolve()), error: (e, t) => (console.error(e, t), Promise.resolve()) }),
      responsesCache: lr(),
      requestsCache: lr({ serializable: !1 }),
      hostsCache: ir({ caches: [cr({ key: `4.19.1-${e}` }), lr()] }),
@@ -3314,7 +3314,7 @@
      authMode: hr.WithinQueryParameters,
     };
     var o;
-    return Er({ ...n, ...r, methods: { search: Dr, searchForFacetValues: Nr, multipleQueries: Dr, multipleSearchForFacetValues: Nr, customRequest: Pr, initIndex: (e) => (t) => Sr(e)(t, { methods: { search: zr, searchForFacetValues: Ar, findAnswers: Lr } }) } });
+    return Er({ ...n, ...r, methods: { search: Dr, searchForFacetValues: Nr, multipleQueries: Dr, multipleSearchForFacetValues: Nr, customRequest: Pr, initIndex: (e) => (t) => Sr(e)(t, { methods: { search: Lr, searchForFacetValues: Ar, findAnswers: zr } }) } });
    }
    Mr.version = '4.19.1';
    var Zr = ['footer', 'searchBox'];
@@ -3350,11 +3350,11 @@
      S = void 0 === P ? '' : P,
      D = e.translations,
      N = void 0 === D ? {} : D,
-     L = e.getMissingResultsUrl,
-     z = e.insights,
-     A = void 0 !== z && z,
-     T = N.footer,
-     R = N.searchBox,
+     z = e.getMissingResultsUrl,
+     L = e.insights,
+     A = void 0 !== L && L,
+     R = N.footer,
+     T = N.searchBox,
      I = l(N, Zr),
      M = u(n.useState({ query: '', collections: [], completion: null, context: {}, isOpen: !1, activeItemId: null, status: 'idle' }), 2),
      Z = M[0],
@@ -3616,7 +3616,7 @@
       n.createElement(
        'div',
        { className: 'DocSearch-Modal', ref: B },
-       n.createElement('header', { className: 'DocSearch-SearchBar', ref: $ }, n.createElement(nr, i({}, ee, { state: Z, autoFocus: 0 === G.length, inputRef: U, isFromSelection: Boolean(G) && G === W, translations: R, onClose: p }))),
+       n.createElement('header', { className: 'DocSearch-SearchBar', ref: $ }, n.createElement(nr, i({}, ee, { state: Z, autoFocus: 0 === G.length, inputRef: U, isFromSelection: Boolean(G) && G === W, translations: T, onClose: p }))),
        n.createElement(
         'div',
         { className: 'DocSearch-Dropdown', ref: H },
@@ -3632,14 +3632,14 @@
           favoriteSearches: Q,
           inputRef: U,
           translations: I,
-          getMissingResultsUrl: L,
+          getMissingResultsUrl: z,
           onItemClick: function (e, t) {
            J(e), X(e), Vt(t) || p();
           },
          }),
         ),
        ),
-       n.createElement('footer', { className: 'DocSearch-Footer' }, n.createElement(_t, { translations: T })),
+       n.createElement('footer', { className: 'DocSearch-Footer' }, n.createElement(_t, { translations: R })),
       ),
      )
     );
@@ -3704,7 +3704,7 @@
    var n = r(86953),
     o = r.n(n),
     a = r(16887);
-   const c = { '002a89ff': [() => r.e(36303).then(r.t.bind(r, 67692, 19)), '~docs/default/category-voorbeelden-category-patronen-formulieren-5c0.json', 67692], '00d58dcc': [() => Promise.all([r.e(40532), r.e(69217)]).then(r.bind(r, 30950)), '@site/docs/wcag/2.4.03.mdx', 30950], '016d3eb4': [() => r.e(34380).then(r.t.bind(r, 83959, 19)), '~blog/default/blog-tags-design-tokens-0d0.json', 83959], '0190c584': [() => Promise.all([r.e(40532), r.e(87684)]).then(r.bind(r, 95365)), '@site/docs/wcag/4.1.02.mdx', 95365], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 40075)), '@theme/BlogTagsListPage', 40075], '031b9593': [() => r.e(96461).then(r.t.bind(r, 63826, 19)), '~docs/default/category-community-category-community-84d.json', 63826], '03606068': [() => r.e(11872).then(r.t.bind(r, 21833, 19)), '~blog/default/blog-tags-design-systems-719.json', 21833], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 24927)), '@site/docs/project/kernteam.mdx', 24927], '042f22aa': [() => Promise.all([r.e(40532), r.e(77198), r.e(64852)]).then(r.bind(r, 84847)), '@site/docs/richtlijnen/formulieren/questions/4-avoid-duplicate-work/README.mdx', 84847], '044d2994': [() => r.e(6526).then(r.t.bind(r, 48459, 19)), '~blog/default/blog-tags-lettertype-5b1-list.json', 48459], '04733036': [() => Promise.all([r.e(40532), r.e(77198), r.e(78311)]).then(r.bind(r, 51081)), '@site/docs/richtlijnen/formulieren/multistep/3-consistency/README.mdx', 51081], '06235a00': [() => Promise.all([r.e(40532), r.e(95617)]).then(r.bind(r, 41739)), '@site/docs/wcag/3.2.04.mdx', 41739], '08d81d65': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(67132)]).then(r.bind(r, 27110)), '@site/docs/componenten/rich-text-content/index.mdx', 27110], '099c664f': [() => Promise.all([r.e(40532), r.e(77410)]).then(r.bind(r, 42402)), '@site/docs/wcag/1.4.04.mdx', 42402], '09d51e35': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44014)]).then(r.bind(r, 26430)), '@site/docs/componenten/legend/index.mdx', 26430], '0a2d80a0': [() => r.e(48644).then(r.t.bind(r, 10028, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1.json', 10028], '0a6c776a': [() => r.e(90418).then(r.bind(r, 20367)), '@site/blog/2023/20231109-spacing-tokens.md', 20367], '0b4effa0': [() => Promise.all([r.e(40532), r.e(56150), r.e(49840)]).then(r.bind(r, 32488)), '@site/docs/richtlijnen/formulieren/confirmation/README.mdx', 32488], '0bf96c5c': [() => Promise.all([r.e(40532), r.e(77198), r.e(25561)]).then(r.bind(r, 49770)), '@site/docs/richtlijnen/formulieren/visual-design/5-field-size/README.mdx', 49770], '0cf410ab': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54496)]).then(r.bind(r, 95017)), '@site/docs/componenten/dot-badge/index.mdx', 95017], '0d484eed': [() => Promise.all([r.e(40532), r.e(66883)]).then(r.bind(r, 38373)), '@site/docs/wcag/1.1.01.mdx', 38373], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 17155)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 17155], '0e7e98ab': [() => r.e(15518).then(r.bind(r, 6617)), '@site/docs/richtlijnen/formulieren/description/5-target-size/README.mdx', 6617], '0eacf79f': [() => r.e(34193).then(r.bind(r, 26875)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 26875], '10a90e64': [() => Promise.all([r.e(40532), r.e(93527)]).then(r.bind(r, 7850)), '@site/docs/wcag/2.5.08.mdx', 7850], '10efe71c': [() => r.e(29430).then(r.bind(r, 13617)), '@site/docs/richtlijnen/formulieren/visual-design/7-no-image-buttons/README.mdx', 13617], '123b59fa': [() => Promise.all([r.e(40532), r.e(90316)]).then(r.bind(r, 49146)), '@site/docs/wcag/1.4.02.mdx', 49146], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 59983)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 59983], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 84760)), '@site/docs/community/events/heartbeat/videos.mdx', 84760], '13ecdb40': [() => r.e(75854).then(r.bind(r, 20473)), '@site/docs/richtlijnen/stijl/kleuren.md', 20473], 14785206: [() => Promise.all([r.e(40532), r.e(77198), r.e(15412)]).then(r.bind(r, 77543)), '@site/docs/richtlijnen/formulieren/when-which/1-compat/README.mdx', 77543], '14eb3368': [() => Promise.all([r.e(40532), r.e(56150), r.e(9817)]).then(r.bind(r, 13430)), '@theme/DocCategoryGeneratedIndexPage', 13430], '150707f3': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88230)]).then(r.bind(r, 45523)), '@site/docs/componenten/heading-1/index.mdx', 45523], '15a4ec34': [() => r.e(14418).then(r.bind(r, 54578)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 54578], '15c58fd4': [() => Promise.all([r.e(40532), r.e(22310)]).then(r.bind(r, 56796)), '@site/docs/wcag/3.3.03.mdx', 56796], '1689c421': [() => r.e(32942).then(r.bind(r, 34873)), '@site/docs/richtlijnen/formulieren/visual-design/8-order/README.mdx', 34873], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 61201)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 61201], '16fd2d30': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(33430)]).then(r.bind(r, 88889)), '@site/docs/componenten/heading-2/index.mdx', 88889], '1734d1a5': [() => r.e(17953).then(r.bind(r, 86467)), '@site/docs/richtlijnen/formulieren/button/4-text/README.mdx', 86467], '174c1360': [() => Promise.all([r.e(40532), r.e(77198), r.e(4206)]).then(r.bind(r, 83061)), '@site/docs/richtlijnen/formulieren/error/2-description/README.mdx', 83061], 17896441: [() => Promise.all([r.e(40532), r.e(38178), r.e(27918)]).then(r.bind(r, 28254)), '@theme/DocItem', 28254], '17c216dc': [() => r.e(95661).then(r.t.bind(r, 47408, 19)), '~blog/default/blog-tags-logius-aab.json', 47408], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 75974)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 75974], '18f72304': [() => r.e(76671).then(r.t.bind(r, 68362, 19)), '~blog/default/blog-tags-een-overheid-756-list.json', 68362], '1942deb4': [() => Promise.all([r.e(40532), r.e(4893)]).then(r.bind(r, 21037)), '@site/docs/wcag/4.1.01.mdx', 21037], '197c1d43': [() => Promise.all([r.e(40532), r.e(56150), r.e(5463)]).then(r.bind(r, 43028)), '@site/docs/richtlijnen/formulieren/button/README.mdx', 43028], '199bae63': [() => Promise.all([r.e(40532), r.e(56150), r.e(61383)]).then(r.bind(r, 55204)), '@site/docs/richtlijnen/formulieren/link/README.mdx', 55204], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 49403)), '@site/docs/handboek/designer/figma-structuur.mdx', 49403], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 13828)), '@theme/SearchPage', 13828], '1a680e36': [() => Promise.all([r.e(40532), r.e(56150), r.e(61442)]).then(r.bind(r, 3278)), '@site/docs/richtlijnen/formulieren/label/README.mdx', 3278], '1a6d1b6f': [() => Promise.all([r.e(40532), r.e(77198), r.e(37572)]).then(r.bind(r, 85677)), '@site/docs/richtlijnen/formulieren/visual-design/3-placeholder-contrast/README.mdx', 85677], '1b445115': [() => r.e(35432).then(r.bind(r, 420)), '@site/docs/handboek/designer/community.md', 420], '1b7e5f7c': [() => r.e(34728).then(r.t.bind(r, 40495, 19)), '~docs/default/category-handboek-category-componenten-bijdragen-2d3.json', 40495], '1bb6e844': [() => Promise.all([r.e(40532), r.e(35135)]).then(r.bind(r, 34610)), '@site/docs/wcag/2.5.07.mdx', 34610], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 28780)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 28780], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(34894)]).then(r.bind(r, 16400)), '@site/docs/componenten/checkbox/index.mdx', 16400], '1d0f5624': [() => Promise.all([r.e(40532), r.e(77198), r.e(33990)]).then(r.bind(r, 79759)), '@site/docs/richtlijnen/formulieren/description/2-placement/README.mdx', 79759], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 42844)), '@site/src/pages/index.tsx', 42844], '1e45e22d': [() => r.e(70591).then(r.bind(r, 51911)), '@site/docs/footer/coc.md', 51911], '1f7423d5': [() => Promise.all([r.e(40532), r.e(77198), r.e(64279)]).then(r.bind(r, 8396)), '@site/docs/richtlijnen/formulieren/label/3-above-field/README.mdx', 8396], '206effe8': [() => r.e(65093).then(r.bind(r, 44090)), '@site/docs/richtlijnen/formulieren/button/6-image-as-button/README.mdx', 44090], '20f2808f': [() => r.e(30761).then(r.bind(r, 40866)), '@site/docs/handboek/leverancier/introductie.md', 40866], '210e540d': [() => Promise.all([r.e(40532), r.e(2601)]).then(r.bind(r, 67035)), '@site/docs/wcag/2.4.13.mdx', 67035], '21bec7c2': [() => Promise.all([r.e(40532), r.e(20520)]).then(r.bind(r, 84357)), '@site/docs/wcag/2.4.05.mdx', 84357], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 59822)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 59822], '2289dd67': [() => r.e(16451).then(r.bind(r, 75151)), '@site/docs/handboek/designer/stappenplan.mdx', 75151], '22ebae92': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20858)]).then(r.bind(r, 74821)), '@site/docs/componenten/text-input-group/index.mdx', 74821], '235c86a2': [() => r.e(88979).then(r.bind(r, 73346)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 73346], '2383fbae': [() => r.e(90909).then(r.bind(r, 37866)), '@site/docs/footer/privacyverklaring.md', 37866], 24071437: [() => r.e(58687).then(r.bind(r, 68649)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 68649], '24603a8a': [() => Promise.all([r.e(40532), r.e(95635)]).then(r.bind(r, 81362)), '@site/docs/wcag/2.4.04.mdx', 81362], '25b93367': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(98634)]).then(r.bind(r, 41304)), '@site/docs/componenten/link/index.mdx', 41304], '2669888f': [() => r.e(30717).then(r.t.bind(r, 48231, 19)), '~blog/default/blog-tags-nl-design-system-5c1-list.json', 48231], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 36883)), '@site/docs/handboek/manager/introductie.md', 36883], '281e6f8e': [() => Promise.all([r.e(56150), r.e(55912), r.e(98218)]).then(r.bind(r, 66499)), '@site/docs/project/blijf-op-de-hoogte.mdx', 66499], '28d3d582': [() => r.e(96597).then(r.bind(r, 13540)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 13540], '292daa85': [() => r.e(56254).then(r.t.bind(r, 62532, 19)), '~blog/default/blog-tags-mijlpalen-1bf.json', 62532], '2933852b': [() => r.e(6752).then(r.bind(r, 9501)), '@site/docs/footer/toegankelijkheidsverklaring.md', 9501], '2add2724': [() => Promise.all([r.e(40532), r.e(88678)]).then(r.bind(r, 35027)), '@site/docs/wcag/3.2.06.mdx', 35027], '2aecc02f': [() => Promise.all([r.e(40532), r.e(77198), r.e(55372)]).then(r.bind(r, 33263)), '@site/docs/richtlijnen/formulieren/questions/3-contact/README.mdx', 33263], '2c881fe2': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(82200)]).then(r.bind(r, 30788)), '@site/docs/componenten/ordered-list/index.mdx', 30788], '2d21fce7': [() => r.e(94210).then(r.bind(r, 1214)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 1214], '2d685956': [() => r.e(49537).then(r.t.bind(r, 12542, 19)), '~blog/default/blog-tags-werkgroepen-ba6-list.json', 12542], '2d922d32': [() => Promise.all([r.e(40532), r.e(8794)]).then(r.bind(r, 53345)), '@site/docs/wcag/1.3.04.mdx', 53345], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2e11687d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(42112)]).then(r.bind(r, 21996)), '@site/docs/componenten/data-badge/index.mdx', 21996], '2e9298c1': [() => Promise.all([r.e(40532), r.e(77913), r.e(30059)]).then(r.bind(r, 54840)), '@site/docs/wcag/2.4.01.mdx', 54840], '2ed736ae': [() => r.e(41936).then(r.t.bind(r, 92614, 19)), '~blog/default/blog-tags-update-827.json', 92614], '2efe344a': [() => r.e(22644).then(r.t.bind(r, 40037, 19)), '~blog/default/blog-tags-nl-design-system-5c1.json', 40037], '2f04c335': [() => r.e(71992).then(r.t.bind(r, 37080, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced.json', 37080], '2f0980e2': [() => r.e(71752).then(r.bind(r, 19661)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 19661], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(81565)]).then(r.bind(r, 53095)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 53095], '2fe778e5': [() => r.e(32697).then(r.bind(r, 19603)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 19603], '3015a2b9': [() => r.e(78882).then(r.bind(r, 92267)), '@site/docs/richtlijnen/stijl/typografie.md', 92267], '306030dd': [() => r.e(20932).then(r.bind(r, 21791)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 21791], '309899da': [() => Promise.all([r.e(40532), r.e(28386)]).then(r.bind(r, 10993)), '@site/docs/wcag/1.4.08.mdx', 10993], '30d4a3a8': [() => Promise.all([r.e(40532), r.e(77198), r.e(59590)]).then(r.bind(r, 93229)), '@site/docs/richtlijnen/formulieren/placeholder/3-clarity/README.mdx', 93229], '30f42f58': [() => Promise.all([r.e(40532), r.e(98818)]).then(r.bind(r, 72801)), '@site/docs/wcag/3.1.01.mdx', 72801], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 11389)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 11389], '323b7945': [() => Promise.all([r.e(56150), r.e(55912), r.e(31875)]).then(r.bind(r, 141)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 141], '32470cbe': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(16406)]).then(r.bind(r, 22628)), '@site/docs/componenten/figure/index.mdx', 22628], 32636356: [() => r.e(52400).then(r.bind(r, 23869)), '@site/docs/project/newsletter-success.mdx', 23869], '32660e7c': [() => r.e(94932).then(r.t.bind(r, 29951, 19)), '~blog/default/blog-tags-formulieren-1bd.json', 29951], '3272fc23': [() => r.e(16562).then(r.bind(r, 69294)), '@site/docs/community/events/design-systems-week-2024/index.md', 69294], '333bf37f': [() => r.e(79479).then(r.bind(r, 47341)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 47341], '3464a859': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(41769)]).then(r.bind(r, 59853)), '@site/docs/componenten/page-header/index.mdx', 59853], '34b859b1': [() => r.e(97177).then(r.bind(r, 46101)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 46101], '3679878e': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(76318)]).then(r.bind(r, 83400)), '@site/docs/componenten/pagination/index.mdx', 83400], '36aae756': [() => r.e(76138).then(r.t.bind(r, 51313, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3.json', 51313], '36e18e19': [() => Promise.all([r.e(40532), r.e(64281)]).then(r.bind(r, 90053)), '@site/docs/wcag/2.1.02.mdx', 90053], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 56130)), '@theme/DocTagsListPage', 56130], '381b9e37': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(9910)]).then(r.bind(r, 35229)), '@site/docs/componenten/action-group/index.mdx', 35229], '38471ef1': [() => r.e(37377).then(r.bind(r, 57387)), '@site/blog/2023/20231214-community-online-formulieren.md', 57387], '389658a5': [() => r.e(74122).then(r.t.bind(r, 27114, 19)), '~docs/default/category-handboek-category-voor-designers-e56.json', 27114], '3b3b8523': [() => r.e(8742).then(r.bind(r, 99257)), '@site/docs/richtlijnen/formulieren/error/5-no-native-validation/README.mdx', 99257], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 53827)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 53827], '3b7e7225': [() => Promise.all([r.e(40532), r.e(74367)]).then(r.bind(r, 74361)), '@site/docs/wcag/1.4.03.mdx', 74361], '3bb8863e': [() => Promise.all([r.e(40532), r.e(55912), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 39813)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 39813], '3d377413': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(17903)]).then(r.bind(r, 64223)), '@site/docs/componenten/page-footer/index.mdx', 64223], '3d58a721': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(9591)]).then(r.bind(r, 30324)), '@site/docs/componenten/date-input-group/index.mdx', 30324], '3d7707fa': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(86423)]).then(r.bind(r, 57935)), '@site/docs/componenten/alert/index.mdx', 57935], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 36859)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 36859], '3eff441d': [() => Promise.all([r.e(40532), r.e(98416)]).then(r.bind(r, 78110)), '@site/docs/wcag/1.4.01.mdx', 78110], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 68169)), '@site/blog/2019/20190606-update-nl-design-system.md', 68169], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(506)]).then(r.bind(r, 18716)), '@site/docs/componenten/pre-heading/index.mdx', 18716], 40355699: [() => r.e(88567).then(r.bind(r, 33744)), '@site/blog/2024/20240522-community-blocks.md', 33744], '40a52653': [() => Promise.all([r.e(40532), r.e(44086)]).then(r.bind(r, 10565)), '@site/docs/wcag/1.4.10.mdx', 10565], '411e6d0c': [() => r.e(34104).then(r.bind(r, 54579)), '@site/docs/handboek/introductie.md', 54579], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 93488)), '@site/docs/handboek/estafettemodel.mdx', 93488], '44e82248': [() => Promise.all([r.e(40532), r.e(40334)]).then(r.bind(r, 46135)), '@site/docs/wcag/4.1.03.mdx', 46135], '452f106e': [() => r.e(10860).then(r.bind(r, 12529)), '@site/docs/footer/wcag-em-rapport-2023.md', 12529], '45431ea1': [() => r.e(54220).then(r.bind(r, 96275)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 96275], '45a413d9': [() => Promise.all([r.e(40532), r.e(55912), r.e(13026)]).then(r.bind(r, 63801)), '@site/src/pages/bingo/index.tsx', 63801], '45f9a259': [() => r.e(48202).then(r.t.bind(r, 89879, 19)), '~blog/default/blog-tags-een-overheid-756.json', 89879], 46500269: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15593)]).then(r.bind(r, 48971)), '@site/docs/componenten/range/index.mdx', 48971], '465cea2f': [() => r.e(16636).then(r.bind(r, 32937)), '@site/docs/project/links.mdx', 32937], '489d45c6': [() => r.e(3900).then(r.bind(r, 90876)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 90876], '48a6b01c': [() => r.e(4105).then(r.t.bind(r, 70368, 19)), '~docs/default/category-community-category-developer-open-hour-eab.json', 70368], '48c36009': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(78239)]).then(r.bind(r, 89590)), '@site/docs/componenten/date-input/index.mdx', 89590], '494d37a6': [() => r.e(11655).then(r.bind(r, 26171)), '@site/docs/richtlijnen/formulieren/questions/2-needed/README.mdx', 26171], '49d1ff28': [() => r.e(98477).then(r.bind(r, 78044)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 78044], '4a01bf9b': [() => Promise.all([r.e(40532), r.e(77198), r.e(13612)]).then(r.bind(r, 54280)), '@site/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', 54280], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(45119)]).then(r.bind(r, 21543)), '@site/docs/componenten/date-picker/index.mdx', 21543], '4ea98559': [() => r.e(97323).then(r.bind(r, 32834)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 32834], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54942)]).then(r.bind(r, 62978)), '@site/docs/componenten/summary-list/index.mdx', 62978], '4f8ca7d5': [() => Promise.all([r.e(40532), r.e(56150), r.e(56505)]).then(r.bind(r, 78680)), '@site/docs/richtlijnen/formulieren/help/README.mdx', 78680], '5110c353': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(40284)]).then(r.bind(r, 35030)), '@site/docs/componenten/button/index.mdx', 35030], '51323ca8': [() => r.e(86464).then(r.bind(r, 4547)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 4547], '51d8679a': [() => Promise.all([r.e(40532), r.e(56150), r.e(93063)]).then(r.bind(r, 67354)), '@site/docs/richtlijnen/formulieren/questions/README.mdx', 67354], '5293bf37': [() => Promise.all([r.e(56150), r.e(55912), r.e(66004)]).then(r.bind(r, 23664)), '@site/docs/community/events/estafettemodeldag.mdx', 23664], '52bdf594': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(94770)]).then(r.bind(r, 91982)), '@site/docs/componenten/form-field-radio-option/index.mdx', 91982], '533b6d18': [() => r.e(45118).then(r.t.bind(r, 79973, 19)), '~blog/default/blog-tags-estafettemodel-0cf-list.json', 79973], '54b1e9e3': [() => Promise.all([r.e(40532), r.e(56150), r.e(6981)]).then(r.bind(r, 82219)), '@site/docs/richtlijnen/formulieren/README.mdx', 82219], '555de4b4': [() => r.e(22281).then(r.bind(r, 78879)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 78879], '558da7c0': [() => r.e(13027).then(r.bind(r, 9272)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 9272], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '560af811': [() => Promise.all([r.e(56150), r.e(55912), r.e(10488)]).then(r.bind(r, 58082)), '@site/docs/community/events/design-systems-week/sign-up.mdx', 58082], '5647b938': [() => r.e(15504).then(r.bind(r, 86825)), '@site/docs/community/events/design-systems-week/sign-up-thanks.mdx', 86825], '564db768': [() => r.e(51244).then(r.bind(r, 8073)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 8073], '569c0776': [() => r.e(44307).then(r.bind(r, 28713)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 28713], '582c75ff': [() => r.e(94268).then(r.bind(r, 84846)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 84846], '5919194a': [() => r.e(14466).then(r.t.bind(r, 61571, 19)), '~blog/default/blog-tags-developers-a6f-list.json', 61571], '59b1f6d4': [() => Promise.all([r.e(40532), r.e(16882)]).then(r.bind(r, 68871)), '@site/docs/wcag/2.5.02.mdx', 68871], '5a463406': [() => r.e(19750).then(r.t.bind(r, 94703, 19)), '~blog/default/blog-tags-developers-a6f.json', 94703], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88094)]).then(r.bind(r, 98345)), '@site/docs/componenten/fieldset/index.mdx', 98345], '5b53ebf6': [() => r.e(83148).then(r.t.bind(r, 6643, 19)), '~blog/default/blog-tags-architectuur-22a.json', 6643], '5ca48129': [() => Promise.all([r.e(40532), r.e(77198), r.e(54344)]).then(r.bind(r, 6276)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour/1-tabindex/README.mdx', 6276], '5ceb3743': [() => Promise.all([r.e(40532), r.e(77198), r.e(41952)]).then(r.bind(r, 9697)), '@site/docs/richtlijnen/formulieren/error/3-clarity/README.mdx', 9697], '5e41da51': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(94960)]).then(r.bind(r, 4328)), '@site/docs/componenten/drawer/index.mdx', 4328], '5e810b1b': [() => Promise.all([r.e(40532), r.e(32288)]).then(r.bind(r, 29426)), '@site/docs/wcag/2.4.11.mdx', 29426], '5e95c892': [() => r.e(29661).then(r.bind(r, 79818)), '@theme/DocsRoot', 79818], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5f26db3b': [() => r.e(48074).then(r.bind(r, 24747)), '@site/docs/voorbeelden/templates/README.md', 24747], '5f7673a0': [() => r.e(4629).then(r.bind(r, 44583)), '@site/docs/project/over-nl-design-system.mdx', 44583], '5ffa4053': [() => r.e(16045).then(r.t.bind(r, 84729, 19)), '~blog/default/blog-tags-gebruikerstesten-eea.json', 84729], '60213d5c': [() => r.e(95394).then(r.t.bind(r, 16825, 19)), '~blog/default/blog-tags-toegankelijkheid-91e.json', 16825], '6062bcd6': [() => Promise.all([r.e(40532), r.e(77198), r.e(84609)]).then(r.bind(r, 84930)), '@site/docs/richtlijnen/formulieren/label/6-text/README.mdx', 84930], '606f1efc': [() => Promise.all([r.e(40532), r.e(77198), r.e(82190)]).then(r.bind(r, 31818)), '@site/docs/richtlijnen/formulieren/error/4-location/README.mdx', 31818], '6076374a': [() => r.e(70374).then(r.bind(r, 24246)), '@site/docs/footer/colofon.mdx', 24246], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 69807)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 69807], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 16550)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 16550], 61890307: [() => r.e(76686).then(r.t.bind(r, 3683, 19)), '~blog/default/blog-tags-design-systems-719-list.json', 3683], '620ace0e': [() => Promise.all([r.e(40532), r.e(49159)]).then(r.bind(r, 32936)), '@site/docs/wcag/1.3.05.mdx', 32936], '63095b4c': [() => Promise.all([r.e(40532), r.e(40667)]).then(r.bind(r, 53741)), '@site/docs/wcag/3.3.08.mdx', 53741], '633d45b8': [() => Promise.all([r.e(40532), r.e(77198), r.e(84756)]).then(r.bind(r, 32010)), '@site/docs/richtlijnen/formulieren/link/2-not-in-label/README.mdx', 32010], '640d0ff4': [() => Promise.all([r.e(40532), r.e(77198), r.e(51192)]).then(r.bind(r, 92324)), '@site/docs/richtlijnen/formulieren/placeholder/1-label/README.mdx', 92324], '64b13969': [() => r.e(86199).then(r.t.bind(r, 98408, 19)), '~blog/default/blog-tags-architectuur-22a-list.json', 98408], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 90217)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 90217], '667b53b1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(77936)]).then(r.bind(r, 7534)), '@site/docs/componenten/task-list/index.mdx', 7534], '670c19d0': [() => r.e(87335).then(r.bind(r, 51745)), '@site/docs/richtlijnen/formulieren/error/1-timing/README.mdx', 51745], '67d19623': [() => r.e(49451).then(r.bind(r, 39668)), '@site/docs/open-source/eupl.md', 39668], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 17170)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 17170], '684ef8a6': [() => Promise.all([r.e(40532), r.e(67208)]).then(r.bind(r, 3210)), '@site/docs/wcag/3.3.02.mdx', 3210], '6875c492': [() => Promise.all([r.e(40532), r.e(56150), r.e(48610)]).then(r.bind(r, 28266)), '@theme/BlogTagsPostsPage', 28266], '68b96050': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(23221)]).then(r.bind(r, 49046)), '@site/docs/componenten/paragraph/index.mdx', 49046], '68ddddde': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(5643)]).then(r.bind(r, 86793)), '@site/docs/componenten/skip-link/index.mdx', 86793], '6a4d9b8d': [() => Promise.all([r.e(40532), r.e(15104)]).then(r.bind(r, 49294)), '@site/docs/wcag/3.2.03.mdx', 49294], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(18181)]).then(r.bind(r, 75986)), '@site/docs/componenten/form-field/index.mdx', 75986], '6ab13dac': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(83760)]).then(r.bind(r, 90995)), '@site/docs/componenten/form-field-partial-label/index.mdx', 90995], '6ad9c912': [() => Promise.all([r.e(40532), r.e(77198), r.e(19359)]).then(r.bind(r, 8833)), '@site/docs/richtlijnen/formulieren/help/2-allow-copy-paste/README.mdx', 8833], '6aee0090': [() => Promise.all([r.e(40532), r.e(77198), r.e(44147)]).then(r.bind(r, 37896)), '@site/docs/richtlijnen/formulieren/questions/1-why/README.mdx', 37896], '6b6b32db': [() => r.e(53038).then(r.bind(r, 39309)), '@site/docs/richtlijnen/formulieren/error/7-feedback/README.mdx', 39309], '6b8ad28a': [() => r.e(24582).then(r.t.bind(r, 43403, 19)), '~blog/default/blog-tags-word-press-c72.json', 43403], '6bcc2158': [() => Promise.all([r.e(40532), r.e(77913), r.e(77009)]).then(r.bind(r, 75686)), '@site/docs/community/events/design-systems-week-2024/english/program.md', 75686], '6c269cf8': [() => Promise.all([r.e(40532), r.e(56150), r.e(77198), r.e(22305), r.e(12356)]).then(r.bind(r, 10550)), '@site/src/pages/contrast/index.tsx', 10550], '6c57e36f': [() => r.e(53020).then(r.t.bind(r, 59021, 19)), '~blog/default/blog-tags-buitenland-af0-list.json', 59021], '6d8df171': [() => r.e(89019).then(r.t.bind(r, 45255, 19)), '~blog/default/blog-tags-designers-24d-list.json', 45255], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 48003)), '@site/docs/handboek/design-tokens/README.mdx', 48003], '6e114b37': [() => r.e(31906).then(r.bind(r, 83107)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 83107], '6f323067': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(17768)]).then(r.bind(r, 96292)), '@site/docs/componenten/form-field-partial/index.mdx', 96292], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 95767)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 95767], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(72755)]).then(r.bind(r, 86786)), '@site/docs/componenten/heading/index.mdx', 86786], '6febb60f': [() => Promise.all([r.e(40532), r.e(27297)]).then(r.bind(r, 82630)), '@site/docs/wcag/1.3.01.mdx', 82630], '6ffc4a51': [() => r.e(67821).then(r.bind(r, 41002)), '@site/docs/richtlijnen/formulieren/help/3-approve/README.mdx', 41002], '707334e0': [() => r.e(44136).then(r.bind(r, 47028)), '@site/docs/richtlijnen/stijl/iconen.md', 47028], '7074c05a': [() => r.e(13471).then(r.bind(r, 52876)), '@site/docs/community/events/design-systems-week-2024/english/index.md', 52876], '70ebfaef': [() => r.e(33728).then(r.bind(r, 48723)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 48723], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 96344)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 96344], '70fe0045': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(97979)]).then(r.bind(r, 61678)), '@site/docs/componenten/textarea/index.mdx', 61678], '7290f823': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44275)]).then(r.bind(r, 24413)), '@site/docs/componenten/alert-dialog/index.mdx', 24413], '72af1482': [() => r.e(37923).then(r.bind(r, 69185)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 69185], '72b0d195': [() => r.e(29396).then(r.bind(r, 3022)), '@site/docs/open-source/cc0.md', 3022], '72c446ac': [() => r.e(78116).then(r.t.bind(r, 46951, 19)), '~docs/default/category-community-category-events-1ab.json', 46951], '73bf6027': [() => r.e(96103).then(r.bind(r, 37401)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 37401], '73d20161': [() => r.e(11047).then(r.t.bind(r, 43306, 19)), '~blog/default/blog-tags-werkgroepen-ba6.json', 43306], '75079ebc': [() => Promise.all([r.e(40532), r.e(34384)]).then(r.bind(r, 62007)), '@site/docs/wcag/3.3.07.mdx', 62007], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(67064)]).then(r.bind(r, 58249)), '@site/docs/handboek/developer/03-thema-maken.mdx', 58249], '753f1ae1': [() => Promise.all([r.e(40532), r.e(56150), r.e(55234)]).then(r.bind(r, 23878)), '@site/docs/richtlijnen/formulieren/description/README.mdx', 23878], '766d2ae6': [() => Promise.all([r.e(40532), r.e(77198), r.e(28360)]).then(r.bind(r, 58664)), '@site/docs/richtlijnen/formulieren/error/6-summary/README.mdx', 58664], 77321757: [() => r.e(70325).then(r.bind(r, 34400)), '@site/docs/handboek/designer/voorbeeld-thema.md', 34400], '77bf2607': [() => r.e(61472).then(r.bind(r, 83266)), '@site/docs/project/faq.mdx', 83266], '77d5d099': [() => Promise.all([r.e(40532), r.e(49e3)]).then(r.bind(r, 29202)), '@site/docs/wcag/1.4.11.mdx', 29202], '785a05e0': [() => r.e(70895).then(r.bind(r, 77420)), '@site/docs/richtlijnen/formulieren/when-which/2-usability/README.mdx', 77420], '789276a6': [() => r.e(43819).then(r.bind(r, 2608)), '@site/docs/richtlijnen/formulieren/button/7-disabled/README.mdx', 2608], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(3693)]).then(r.bind(r, 37511)), '@site/docs/componenten/blockquote/index.mdx', 37511], '7b7af99a': [() => r.e(13971).then(r.t.bind(r, 84122, 19)), '~blog/default/blog-tags-contentrichtlijnen-ced-list.json', 84122], '7ba8052a': [() => Promise.all([r.e(40532), r.e(42492)]).then(r.bind(r, 29328)), '@site/docs/wcag/1.2.06.mdx', 29328], '7c4f6831': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(71337)]).then(r.bind(r, 87710)), '@site/docs/componenten/sub-heading/index.mdx', 87710], '7ca6903f': [() => r.e(84373).then(r.bind(r, 9785)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 9785], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(24366)]).then(r.bind(r, 21311)), '@site/docs/componenten/radio-group/index.mdx', 21311], '7e047481': [() => r.e(46608).then(r.bind(r, 69582)), '@site/docs/richtlijnen/formulieren/confirmation/2-accessibility/README.mdx', 69582], '7e20bedc': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(39783)]).then(r.bind(r, 52010)), '@site/docs/componenten/tabs/index.mdx', 52010], '7edfa0ff': [() => Promise.all([r.e(40532), r.e(10748)]).then(r.bind(r, 90919)), '@site/docs/wcag/2.5.04.mdx', 90919], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 49743)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 49743], '80bad7c2': [() => r.e(41368).then(r.bind(r, 34864)), '@site/blog/2024/20240322-design-open-dag.md', 34864], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '81536b8a': [() => r.e(766).then(r.t.bind(r, 59199, 19)), '~blog/default/blog-tags-componenten-652.json', 59199], '8165282b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(49619)]).then(r.bind(r, 12270)), '@site/docs/componenten/text-input/index.mdx', 12270], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 3747)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 3747], '8314e380': [() => Promise.all([r.e(40532), r.e(17343)]).then(r.bind(r, 95766)), '@site/docs/wcag/1.2.05.mdx', 95766], '839d3c4e': [() => r.e(29636).then(r.t.bind(r, 4212, 19)), '~blog/default/blog-tags-figma-d77.json', 4212], '845a118e': [() => r.e(81213).then(r.bind(r, 61853)), '@site/docs/community/events/design-systems-week-2023/index.md', 61853], '84a56bc3': [() => r.e(21928).then(r.t.bind(r, 60517, 19)), '~docs/default/category-community-category-design-open-hour-4a0.json', 60517], '84b5c197': [() => Promise.all([r.e(40532), r.e(60864)]).then(r.bind(r, 50558)), '@site/docs/wcag/1.2.02.mdx', 50558], '861e17e8': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(43396)]).then(r.bind(r, 8486)), '@site/docs/componenten/definition-list/index.mdx', 8486], '86475ef8': [() => Promise.all([r.e(40532), r.e(36794)]).then(r.bind(r, 77236)), '@site/docs/wcag/3.3.04.mdx', 77236], '8762f664': [() => r.e(89300).then(r.t.bind(r, 75056, 19)), '~blog/default/blog-tags-gebruikersonderzoeken-7c1-list.json', 75056], '897f202a': [() => r.e(81700).then(r.bind(r, 98443)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 98443], '89a96570': [() => r.e(77754).then(r.bind(r, 23207)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 23207], '89d19ea8': [() => Promise.all([r.e(40532), r.e(77198), r.e(59088)]).then(r.bind(r, 23902)), '@site/docs/richtlijnen/formulieren/confirmation/3-next-steps/README.mdx', 23902], '8a86fb00': [() => Promise.all([r.e(40532), r.e(65647)]).then(r.bind(r, 84338)), '@site/docs/wcag/2.1.01.mdx', 84338], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(87034)]).then(r.bind(r, 38815)), '@site/docs/componenten/file-input/index.mdx', 38815], '8abfd807': [() => Promise.all([r.e(40532), r.e(77198), r.e(17713)]).then(r.bind(r, 77148)), '@site/docs/richtlijnen/formulieren/visual-design/1-field-contrast/README.mdx', 77148], '8b659173': [() => r.e(30217).then(r.bind(r, 77622)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 77622], '8b6c8a8c': [() => r.e(73566).then(r.t.bind(r, 44258, 19)), '~blog/default/blog-tags-buitenland-af0.json', 44258], '8baef6f7': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(21229)]).then(r.bind(r, 27193)), '@site/docs/componenten/icon/index.mdx', 27193], '8bb98256': [() => Promise.all([r.e(40532), r.e(77913), r.e(84152)]).then(r.bind(r, 7651)), '@site/docs/community/events/design-systems-week-2024/programma.md', 7651], '8de5412f': [() => r.e(8557).then(r.bind(r, 78078)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 78078], '8e0f3a07': [() => Promise.all([r.e(40532), r.e(77198), r.e(50718)]).then(r.bind(r, 75914)), '@site/docs/richtlijnen/formulieren/description/1-associated/README.mdx', 75914], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(79947)]).then(r.bind(r, 29298)), '@site/docs/componenten/number-badge/index.mdx', 29298], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 56939)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 56939], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(3578)]).then(r.bind(r, 23667)), '@site/docs/componenten/heading-3/index.mdx', 23667], '91059c25': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(61057)]).then(r.bind(r, 12425)), '@site/docs/componenten/heading-6/index.mdx', 12425], '9186edf4': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20994)]).then(r.bind(r, 92009)), '@site/docs/componenten/card-as-link/index.mdx', 92009], '91ad73c4': [() => r.e(94299).then(r.bind(r, 33489)), '@site/docs/wcag/0-introduction.mdx', 33489], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88016)]).then(r.bind(r, 82842)), '@site/docs/componenten/checkbox-group/index.mdx', 82842], '91e219d1': [() => r.e(35017).then(r.bind(r, 30800)), '@site/docs/richtlijnen/formulieren/help/7-error-prevention/README.mdx', 30800], '920ddf01': [() => r.e(82184).then(r.bind(r, 82419)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 82419], '9228e550': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54291)]).then(r.bind(r, 13606)), '@site/docs/componenten/password-input/index.mdx', 13606], '92e5e01e': [() => r.e(68536).then(r.bind(r, 39989)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 39989], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 78892)), '@site/docs/handboek/developer/01-aan-de-slag.md', 78892], '93b586d9': [() => Promise.all([r.e(40532), r.e(77198), r.e(10632)]).then(r.bind(r, 25063)), '@site/docs/richtlijnen/formulieren/placeholder/2-search/README.mdx', 25063], '94b5e6fd': [() => r.e(28808).then(r.t.bind(r, 43190, 19)), '~blog/default/blog-tags-design-systems-week-c33.json', 43190], '94b6170a': [() => r.e(95250).then(r.bind(r, 4179)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 4179], '94d55c70': [() => r.e(78508).then(r.bind(r, 10493)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 10493], 96105152: [() => Promise.all([r.e(40532), r.e(20933)]).then(r.bind(r, 22996)), '@site/docs/wcag/3.2.02.mdx', 22996], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 30449)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 30449], '968cae9d': [() => Promise.all([r.e(40532), r.e(77198), r.e(81733)]).then(r.bind(r, 55663)), '@site/docs/richtlijnen/formulieren/button/2-submit/README.mdx', 55663], '96f807b8': [() => Promise.all([r.e(40532), r.e(77198), r.e(84367)]).then(r.bind(r, 77571)), '@site/docs/richtlijnen/formulieren/label/4-always-visible/README.mdx', 77571], '9764e22e': [() => r.e(9336).then(r.bind(r, 33130)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 33130], '98a78e5e': [() => r.e(44455).then(r.bind(r, 52440)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 52440], '9998fe9c': [() => Promise.all([r.e(40532), r.e(77198), r.e(97366)]).then(r.bind(r, 87108)), '@site/docs/richtlijnen/formulieren/description/4-fieldset/README.mdx', 87108], '9a9a4fab': [() => r.e(51476).then(r.t.bind(r, 90222, 19)), '~blog/default/blog-tags-mijlpalen-1bf-list.json', 90222], '9adac8a6': [() => Promise.all([r.e(40532), r.e(77198), r.e(79871)]).then(r.bind(r, 30370)), '@site/docs/richtlijnen/formulieren/link/3-in-new-tab/README.mdx', 30370], '9b2e9553': [() => r.e(85063).then(r.bind(r, 42416)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 42416], '9b3824c7': [() => r.e(45671).then(r.bind(r, 86782)), '@site/docs/richtlijnen/formulieren/button/5-accessible-name/README.mdx', 86782], '9bf7fd7b': [() => r.e(23759).then(r.t.bind(r, 12142, 19)), '~blog/default/blog-tags-toegankelijkheid-91e-list.json', 12142], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 73869)), '@site/docs/handboek/developer/02-architectuur.md', 73869], '9cb16d46': [() => Promise.all([r.e(40532), r.e(77198), r.e(70605)]).then(r.bind(r, 4589)), '@site/docs/richtlijnen/formulieren/help/6-autofill/README.mdx', 4589], '9d99ac73': [() => Promise.all([r.e(40532), r.e(56150), r.e(3981)]).then(r.bind(r, 90763)), '@site/docs/richtlijnen/README.mdx', 90763], '9e4087bc': [() => r.e(53608).then(r.bind(r, 79820)), '@theme/BlogArchivePage', 79820], '9eaa3a83': [() => Promise.all([r.e(40532), r.e(77913), r.e(48457)]).then(r.bind(r, 44412)), '@site/docs/wcag/3.1.02.mdx', 44412], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15739)]).then(r.bind(r, 19423)), '@site/docs/componenten/heading-5/index.mdx', 19423], '9f1e13f9': [() => Promise.all([r.e(40532), r.e(77198), r.e(45010)]).then(r.bind(r, 48573)), '@site/docs/richtlijnen/formulieren/multistep/1-step-count/README.mdx', 48573], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 73767)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 73767], '9f867b5d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(12487)]).then(r.bind(r, 35494)), '@site/docs/componenten/README.mdx', 35494], a0f63bac: [() => Promise.all([r.e(40532), r.e(94684)]).then(r.bind(r, 70291)), '@site/docs/wcag/1.4.05.mdx', 70291], a111e786: [() => Promise.all([r.e(40532), r.e(63930)]).then(r.bind(r, 30621)), '@site/docs/wcag/1.2.01.mdx', 30621], a3332bc9: [() => r.e(85303).then(r.bind(r, 34502)), '@site/blog/2024/20240701-meerdere-producten.md?truncated=true', 34502], a55f7ab7: [() => r.e(82714).then(r.bind(r, 65706)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 65706], a5657520: [() => r.e(40128).then(r.t.bind(r, 6435, 19)), '~blog/default/blog-tags-design-tokens-0d0-list.json', 6435], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a5cbeebd: [() => r.e(66716).then(r.bind(r, 3910)), '@site/docs/richtlijnen/formulieren/visual-design/6-use-of-color/README.mdx', 3910], a5d65f05: [() => r.e(77827).then(r.t.bind(r, 37256, 19)), '~blog/default/blog-tags-design-systems-week-c33-list.json', 37256], a65373b3: [() => r.e(60250).then(r.t.bind(r, 32567, 19)), '~blog/default/blog-tags-gebruikerstesten-eea-list.json', 32567], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(56150), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a7023ddc: [() => r.e(11713).then(r.t.bind(r, 53457, 19)), '~blog/default/blog-tags-tags-4c2.json', 53457], a77e5ea3: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(76401)]).then(r.bind(r, 17395)), '@site/docs/componenten/accordion/index.mdx', 17395], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 99590)), '@theme/DocVersionRoot', 99590], a7f84bbe: [() => r.e(58803).then(r.bind(r, 64827)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 64827], a7fe68c7: [() => Promise.all([r.e(40532), r.e(8538)]).then(r.bind(r, 50741)), '@site/docs/wcag/2.2.01.mdx', 50741], a81e9677: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44921)]).then(r.bind(r, 60166)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 60166], a89706a3: [() => r.e(89138).then(r.t.bind(r, 39152, 19)), '~blog/default/blog-tags-logius-aab-list.json', 39152], a8a015ed: [() => r.e(58827).then(r.t.bind(r, 45811, 19)), '~blog/default/blog-tags-update-827-list.json', 45811], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 90529)), '@theme/DocRoot', 90529], a9493cdf: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(92532)]).then(r.bind(r, 41404)), '@site/docs/componenten/form-field-option-label/index.mdx', 41404], abcc39c5: [() => r.e(40399).then(r.t.bind(r, 65696, 19)), '~blog/default/blog-tags-word-press-c72-list.json', 65696], ac66737c: [() => r.e(34838).then(r.bind(r, 68724)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 68724], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 95082)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 95082], ace5ddd0: [() => r.e(86495).then(r.t.bind(r, 80827, 19)), '~docs/default/category-richtlijnen-category-wcag-succescriteria-uitgelegd-b99.json', 80827], ace6628c: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(83373)]).then(r.bind(r, 78405)), '@site/docs/componenten/calendar/index.mdx', 78405], ad9d479a: [() => Promise.all([r.e(56150), r.e(55912), r.e(22746)]).then(r.bind(r, 73546)), '@site/docs/community/sluit-je-aan.mdx', 73546], adb328b9: [() => r.e(91344).then(r.bind(r, 79652)), '@site/docs/community/sluit-je-aan-success.mdx', 79652], adc7d54a: [() => Promise.all([r.e(56150), r.e(55912), r.e(90134)]).then(r.bind(r, 23938)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 23938], aded4886: [() => Promise.all([r.e(40532), r.e(60447)]).then(r.bind(r, 39889)), '@site/docs/wcag/2.5.01.mdx', 39889], aeaf35c2: [() => r.e(53345).then(r.bind(r, 71906)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 71906], af16d7d3: [() => r.e(969).then(r.t.bind(r, 26338, 19)), '~docs/default/category-handboek-category-voor-developers-73b.json', 26338], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(56150), r.e(48595)]).then(r.bind(r, 44221)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 44221], b0ef882f: [() => r.e(69379).then(r.t.bind(r, 22346, 19)), '~blog/default/blog-tags-meta-401-list.json', 22346], b13a7419: [() => Promise.all([r.e(40532), r.e(77198), r.e(94730)]).then(r.bind(r, 40218)), '@site/docs/richtlijnen/formulieren/label/1-accessible-name/README.mdx', 40218], b14da3b2: [() => Promise.all([r.e(40532), r.e(91188)]).then(r.bind(r, 69085)), '@site/docs/wcag/1.4.12.mdx', 69085], b171e401: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(67398)]).then(r.bind(r, 15510)), '@site/docs/componenten/switch/index.mdx', 15510], b1df0b37: [() => Promise.all([r.e(40532), r.e(92060)]).then(r.bind(r, 30955)), '@site/docs/wcag/1.4.13.mdx', 30955], b23cdcda: [() => Promise.all([r.e(40532), r.e(77198), r.e(44617)]).then(r.bind(r, 99458)), '@site/docs/richtlijnen/formulieren/help/5-autocomplete/README.mdx', 99458], b2991567: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(36918)]).then(r.bind(r, 18903)), '@site/docs/componenten/invalid-form-alert/index.mdx', 18903], b2b675dd: [() => r.e(90533).then(r.t.bind(r, 28017, 19)), '~blog/default/blog-c06.json', 28017], b2f554cd: [() => r.e(11477).then(r.t.bind(r, 30010, 19)), '~blog/default/blog-archive-80c.json', 30010], b39bde9c: [() => Promise.all([r.e(40532), r.e(56150), r.e(4962)]).then(r.bind(r, 6306)), '@site/docs/richtlijnen/formulieren/placeholder/README.mdx', 6306], b4150b56: [() => Promise.all([r.e(40532), r.e(55912), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b48427de: [() => Promise.all([r.e(40532), r.e(2475)]).then(r.bind(r, 50816)), '@site/docs/wcag/3.3.01.mdx', 50816], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(34492)]).then(r.bind(r, 10199)), '@site/docs/componenten/progress-bar/index.mdx', 10199], b50de158: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(12505)]).then(r.bind(r, 22441)), '@site/docs/componenten/side-navigation/index.mdx', 22441], b519f87e: [() => r.e(84487).then(r.t.bind(r, 25603, 19)), '~blog/default/blog-tags-formulieren-1bd-list.json', 25603], b56159c8: [() => r.e(66360).then(r.bind(r, 26783)), '@site/docs/community/wie-doet-mee.mdx', 26783], b562a46f: [() => Promise.all([r.e(40532), r.e(77198), r.e(12274)]).then(r.bind(r, 19139)), '@site/docs/richtlijnen/formulieren/description/3-multiple/README.mdx', 19139], b686c44c: [() => Promise.all([r.e(40532), r.e(77198), r.e(31686)]).then(r.bind(r, 49553)), '@site/docs/richtlijnen/formulieren/button/1-keyboard/README.mdx', 49553], b68f03f7: [() => r.e(815).then(r.bind(r, 51047)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 51047], b70cd504: [() => r.e(36546).then(r.bind(r, 89212)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 89212], b729a1a1: [() => r.e(29386).then(r.bind(r, 14410)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 14410], b75db01c: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(46536)]).then(r.bind(r, 17412)), '@site/docs/componenten/modal-dialog/index.mdx', 17412], b86d5603: [() => r.e(56327).then(r.bind(r, 49388)), '@site/docs/community/events/design-systems-week/aanmelden-bedankt.mdx', 49388], b8bffd88: [() => r.e(65391).then(r.bind(r, 35238)), '@site/docs/handboek/designer/README.md', 35238], b9e57eaa: [() => r.e(82884).then(r.t.bind(r, 44234, 19)), '~docs/default/category-voorbeelden-category-voorbeelden-795.json', 44234], ba49b078: [() => Promise.all([r.e(40532), r.e(77198), r.e(20360)]).then(r.bind(r, 1528)), '@site/docs/richtlijnen/formulieren/visual-design/2-text-contrast/README.mdx', 1528], ba4a9952: [() => r.e(2850).then(r.bind(r, 71394)), '@site/docs/community/events/developer-open-hour/developer-open-hour.mdx', 71394], ba69917b: [() => Promise.all([r.e(56150), r.e(55912), r.e(63451)]).then(r.bind(r, 71018)), '@site/docs/community/events/design-systems-week/aanmelden.mdx', 71018], bad61bdd: [() => Promise.all([r.e(40532), r.e(28245)]).then(r.bind(r, 79213)), '@site/docs/wcag/1.3.03.mdx', 79213], bb678bf7: [() => r.e(58479).then(r.t.bind(r, 8263, 19)), '~blog/default/blog-tags-lettertype-5b1.json', 8263], bc199175: [() => r.e(96222).then(r.bind(r, 8965)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 8965], bc2d69ea: [() => r.e(85634).then(r.bind(r, 61947)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 61947], be0dd82d: [() => r.e(59288).then(r.t.bind(r, 76777, 19)), '~docs/default/category-voorbeelden-category-patronen-a5b.json', 76777], be371f74: [() => Promise.all([r.e(40532), r.e(4137)]).then(r.bind(r, 90505)), '@site/docs/wcag/2.4.07.mdx', 90505], bf13cd03: [() => r.e(75505).then(r.t.bind(r, 95446, 19)), '~docs/default/category-community-category-heartbeat-3a1.json', 95446], bf14fce1: [() => r.e(15470).then(r.bind(r, 2123)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 2123], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 20256)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 20256], bf8a7bac: [() => r.e(56596).then(r.bind(r, 38104)), '@site/docs/community/events/estafettemodeldag-success.mdx', 38104], c0270cae: [() => Promise.all([r.e(40532), r.e(81710)]).then(r.bind(r, 94307)), '@site/docs/wcag/2.5.05.mdx', 94307], c15f67bc: [() => r.e(39810).then(r.bind(r, 68733)), '@site/docs/community/events/design-open-dag-success.mdx', 68733], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 51067)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 51067], c45d5005: [() => Promise.all([r.e(40532), r.e(77198), r.e(53300)]).then(r.bind(r, 49205)), '@site/docs/richtlijnen/formulieren/label/5-only-text/README.mdx', 49205], c45f29d0: [() => r.e(91215).then(r.t.bind(r, 37463, 19)), '~docs/default/category-handboek-category-handboek-24f.json', 37463], c51cb369: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(90258)]).then(r.bind(r, 28505)), '@site/docs/componenten/language-navigation/index.mdx', 28505], c651b2e8: [() => r.e(75386).then(r.bind(r, 54988)), '@site/docs/project/nieuwsbrief.mdx', 54988], c6b96a0f: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20911)]).then(r.bind(r, 85263)), '@site/docs/componenten/non-modal-dialog/index.mdx', 85263], c776d6ea: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(85)]).then(r.bind(r, 79381)), '@site/docs/componenten/heading-4/index.mdx', 79381], c832a882: [() => Promise.all([r.e(40532), r.e(57683)]).then(r.bind(r, 48656)), '@site/docs/wcag/2.4.02.mdx', 48656], c8ac2561: [() => r.e(67586).then(r.bind(r, 10987)), '@site/docs/handboek/naamgeving.mdx', 10987], c91a40d5: [() => Promise.all([r.e(56150), r.e(55912), r.e(11839)]).then(r.bind(r, 88895)), '@site/docs/community/events/developer-open-hour/aanmelden.mdx', 88895], c9609a68: [() => r.e(72822).then(r.bind(r, 28229)), '@site/blog/2024/20240701-meerdere-producten.md', 28229], c9c3106d: [() => r.e(35048).then(r.t.bind(r, 37907, 19)), '~blog/default/blog-tags-designers-24d.json', 37907], ca36df4d: [() => r.e(60917).then(r.bind(r, 36752)), '@site/docs/CHANGELOG.md', 36752], ca6bcb72: [() => Promise.all([r.e(40532), r.e(56150), r.e(71854)]).then(r.bind(r, 87210)), '@site/docs/richtlijnen/formulieren/multistep/README.mdx', 87210], cbb88ed8: [() => Promise.all([r.e(40532), r.e(77198), r.e(79649)]).then(r.bind(r, 88354)), '@site/docs/richtlijnen/formulieren/label/2-visible-acccessible-name/README.mdx', 88354], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 38729)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 38729], cc7e1584: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(36200)]).then(r.bind(r, 48521)), '@site/docs/componenten/strong/index.mdx', 48521], cca02dd0: [() => r.e(45638).then(r.bind(r, 34019)), '@site/docs/richtlijnen/formulieren/confirmation/4-contact/README.mdx', 34019], ccc49370: [() => Promise.all([r.e(40532), r.e(38178), r.e(46103)]).then(r.bind(r, 58829)), '@theme/BlogPostPage', 58829], cd1565a5: [() => r.e(61041).then(r.bind(r, 48245)), '@site/docs/richtlijnen/formulieren/multistep/4-last-check/README.mdx', 48245], cd3c7377: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(25425)]).then(r.bind(r, 99766)), '@site/docs/componenten/form-field-description/index.mdx', 99766], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 51139)), '@site/docs/community/events/design-systems-week-2022.mdx', 51139], ce7b85cb: [() => r.e(37498).then(r.bind(r, 38564)), '@site/docs/handboek/organisatie/meedoen.md', 38564], cea83cfe: [() => r.e(62355).then(r.bind(r, 32690)), '@site/docs/richtlijnen/formulieren/confirmation/1-success/README.mdx', 32690], ced44f18: [() => Promise.all([r.e(56150), r.e(55912), r.e(81484)]).then(r.bind(r, 74906)), '@site/docs/community/events/design-open-dag.mdx', 74906], d01ba261: [() => r.e(6639).then(r.t.bind(r, 99706, 19)), '~blog/default/blog-tags-richtlijnen-d98-list.json', 99706], d0b753ca: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(47531)]).then(r.bind(r, 55111)), '@site/docs/componenten/radio-button/index.mdx', 55111], d19a514d: [() => r.e(20724).then(r.t.bind(r, 49372, 19)), '~blog/default/blog-tags-meta-401.json', 49372], d35b0244: [() => r.e(79951).then(r.t.bind(r, 57883, 19)), '~blog/default/blog-tags-estafettemodel-0cf.json', 57883], d3c1b80a: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(58441)]).then(r.bind(r, 15054)), '@site/docs/componenten/avatar/index.mdx', 15054], d3deb5db: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88021)]).then(r.bind(r, 35624)), '@site/docs/componenten/toggletip/index.mdx', 35624], d4552b9e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15403)]).then(r.bind(r, 61885)), '@site/docs/componenten/form-field-error-message/index.mdx', 61885], d467e203: [() => r.e(76902).then(r.bind(r, 51180)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 51180], d5484ed9: [() => r.e(59355).then(r.t.bind(r, 6827, 19)), '~docs/default/tag-tags-community-74e.json', 6827], d5f36106: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(16833)]).then(r.bind(r, 63799)), '@site/docs/componenten/status-badge/index.mdx', 63799], d68b2e5c: [() => Promise.all([r.e(40532), r.e(77198), r.e(52116)]).then(r.bind(r, 13307)), '@site/docs/richtlijnen/formulieren/multistep/2-location/README.mdx', 13307], d7c98f9c: [() => Promise.all([r.e(40532), r.e(56150), r.e(6236)]).then(r.bind(r, 87169)), '@site/docs/richtlijnen/formulieren/visual-design/README.mdx', 87169], d9284525: [() => Promise.all([r.e(40532), r.e(54836)]).then(r.bind(r, 68387)), '@site/docs/wcag/2.4.10.mdx', 68387], da2da55d: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(95102)]).then(r.bind(r, 38093)), '@site/docs/componenten/heading-group/index.mdx', 38093], da71daea: [() => r.e(45018).then(r.bind(r, 12498)), '@site/docs/richtlijnen/formulieren/description/6-length/README.mdx', 12498], da8aeb86: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54472)]).then(r.bind(r, 24378)), '@site/docs/componenten/navigation-bar/index.mdx', 24378], dab0abab: [() => Promise.all([r.e(40532), r.e(56150), r.e(2937)]).then(r.bind(r, 74135)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour/README.mdx', 74135], db5e1826: [() => Promise.all([r.e(40532), r.e(77198), r.e(16386)]).then(r.bind(r, 30958)), '@site/docs/richtlijnen/formulieren/help/1-show-required/README.mdx', 30958], dba96d72: [() => Promise.all([r.e(40532), r.e(77198), r.e(54862)]).then(r.bind(r, 94802)), '@site/docs/richtlijnen/formulieren/link/1-above-field/README.mdx', 94802], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 65584)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 65584], dd06f6af: [() => r.e(18148).then(r.bind(r, 59652)), '@site/docs/voorbeelden/README.md', 59652], dd47c273: [() => r.e(24012).then(r.t.bind(r, 39464, 19)), '~docs/default/category-richtlijnen-category-richtlijnen-voor-stijl-d34.json', 39464], dd7e6517: [() => r.e(88492).then(r.t.bind(r, 74857, 19)), '~blog/default/blog-tags-gebruiker-centraal-8e3-list.json', 74857], ddf35722: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(68424)]).then(r.bind(r, 76677)), '@site/docs/componenten/form-field-label/index.mdx', 76677], de9ea4b2: [() => r.e(69285).then(r.t.bind(r, 74212, 19)), '~docs/default/category-project-category-project-1ac.json', 74212], df203c0f: [() => r.e(99924).then(r.bind(r, 6358)), '@theme/DocTagDocListPage', 6358], df6d1168: [() => Promise.all([r.e(40532), r.e(77198), r.e(46756)]).then(r.bind(r, 65518)), '@site/docs/richtlijnen/formulieren/visual-design/4-focus-visible/README.mdx', 65518], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 73112)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 73112], e07f5d94: [() => r.e(67833).then(r.bind(r, 52231)), '@site/docs/richtlijnen/stijl/ruimte.md', 52231], e21395b4: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(48239)]).then(r.bind(r, 62627)), '@site/docs/componenten/notification-banner/index.mdx', 62627], e25baa48: [() => Promise.all([r.e(40532), r.e(77198), r.e(22619)]).then(r.bind(r, 99912)), '@site/docs/richtlijnen/formulieren/multistep/5-timing/README.mdx', 99912], e34d61f6: [() => Promise.all([r.e(40532), r.e(11767)]).then(r.bind(r, 59819)), '@site/docs/wcag/2.5.03.mdx', 59819], e3b51539: [() => r.e(69592).then(r.bind(r, 31557)), '@site/docs/handboek/developer/07-componenten-maken.md', 31557], e4188b52: [() => Promise.all([r.e(40532), r.e(13642)]).then(r.bind(r, 84682)), '@site/docs/wcag/2.1.04.mdx', 84682], e59d1036: [() => r.e(38934).then(r.bind(r, 64512)), '@site/docs/voorbeelden/onderzoek/README.md', 64512], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(41990)]).then(r.bind(r, 38090)), '@site/docs/componenten/separator/index.mdx', 38090], e5cbcecc: [() => Promise.all([r.e(40532), r.e(77198), r.e(98554)]).then(r.bind(r, 63861)), '@site/docs/richtlijnen/formulieren/help/4-show-values/README.mdx', 63861], e756447e: [() => r.e(83516).then(r.bind(r, 28973)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 28973], e8c696cf: [() => r.e(10775).then(r.t.bind(r, 57331, 19)), '~blog/default/blog-tags-figma-d77-list.json', 57331], e94ed988: [() => r.e(54171).then(r.bind(r, 87539)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 87539], e9b2227f: [() => r.e(71639).then(r.bind(r, 71323)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 71323], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 33150)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 33150], ed728b89: [() => Promise.all([r.e(40532), r.e(33781)]).then(r.bind(r, 37299)), '@site/docs/wcag/1.2.04.mdx', 37299], ed74afc1: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(19552)]).then(r.bind(r, 96930)), '@site/docs/componenten/select/index.mdx', 96930], ed882ce6: [() => r.e(27691).then(r.bind(r, 41928)), '@site/docs/richtlijnen/formulieren/button/3-placement/README.mdx', 41928], edd694e5: [() => Promise.all([r.e(40532), r.e(56150), r.e(85709)]).then(r.bind(r, 71973)), '@site/docs/richtlijnen/formulieren/when-which/README.mdx', 71973], edd78324: [() => Promise.all([r.e(40532), r.e(92040)]).then(r.bind(r, 23079)), '@site/docs/wcag/1.3.02.mdx', 23079], efb925bc: [() => Promise.all([r.e(40532), r.e(56150), r.e(87870)]).then(r.bind(r, 67876)), '@site/docs/richtlijnen/formulieren/error/README.mdx', 67876], efc435ec: [() => Promise.all([r.e(40532), r.e(76340)]).then(r.bind(r, 35137)), '@site/docs/wcag/1.2.03.mdx', 35137], f15b6573: [() => r.e(74605).then(r.bind(r, 74655)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 74655], f1833817: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(43166)]).then(r.bind(r, 10545)), '@site/docs/componenten/table/index.mdx', 10545], f19e5f41: [() => r.e(95594).then(r.bind(r, 88845)), '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', 88845], f1c1d91e: [() => r.e(20550).then(r.bind(r, 67062)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 67062], f20a3699: [() => r.e(80684).then(r.t.bind(r, 30203, 19)), '~blog/default/blog-tags-richtlijnen-d98.json', 30203], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f45121d1: [() => Promise.all([r.e(40532), r.e(94846)]).then(r.bind(r, 97199)), '@site/docs/wcag/2.3.01.mdx', 97199], f5daaf40: [() => r.e(47587).then(r.bind(r, 963)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 963], f5dc78b8: [() => r.e(98625).then(r.bind(r, 64486)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 64486], f5f3cece: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(32652)]).then(r.bind(r, 58057)), '@site/docs/componenten/spinner/index.mdx', 58057], f61609af: [() => r.e(8932).then(r.bind(r, 33544)), '@site/docs/handboek/component-bijdragen/community-stappenplan-voor-organisaties.mdx', 33544], f633a06a: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(85270)]).then(r.bind(r, 63176)), '@site/docs/componenten/link-list/index.mdx', 63176], f67ebaad: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(25507)]).then(r.bind(r, 78735)), '@site/docs/componenten/video/index.mdx', 78735], f9097464: [() => r.e(36315).then(r.t.bind(r, 55450, 19)), '~blog/default/blog-tags-componenten-652-list.json', 55450], f92c4e24: [() => Promise.all([r.e(40532), r.e(74160)]).then(r.bind(r, 60543)), '@site/docs/wcag/2.4.06.mdx', 60543], f941fe6d: [() => Promise.all([r.e(40532), r.e(16110)]).then(r.bind(r, 6898)), '@site/docs/wcag/3.2.01.mdx', 6898], facf449e: [() => r.e(64474).then(r.t.bind(r, 77040, 19)), '~docs/default/category-handboek-category-voor-organisaties-b2b.json', 77040], fbf7ea66: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20322)]).then(r.bind(r, 19111)), '@site/docs/componenten/case-card/index.mdx', 19111], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(2930)]).then(r.bind(r, 28497)), '@site/docs/componenten/progress-list/index.mdx', 28497], fc3df1dc: [() => Promise.all([r.e(40532), r.e(75960)]).then(r.bind(r, 20962)), '@site/docs/wcag/2.2.02.mdx', 20962], fd2458ef: [() => r.e(39680).then(r.bind(r, 12039)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 12039], fe7ba64e: [() => Promise.all([r.e(40532), r.e(77198), r.e(12421)]).then(r.bind(r, 96803)), '@site/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', 96803], fe9a39bd: [() => r.e(35959).then(r.bind(r, 43677)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 43677], ff07fdf2: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(75221)]).then(r.bind(r, 69131)), '@site/docs/componenten/unordered-list/index.mdx', 69131], ff0d970f: [() => r.e(99605).then(r.bind(r, 956)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 956], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 57911)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 57911], ffcf9766: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(7869)]).then(r.bind(r, 16641)), '@site/docs/componenten/number-input/index.mdx', 16641] };
+   const c = { '00d58dcc': [() => Promise.all([r.e(40532), r.e(69217)]).then(r.bind(r, 30950)), '@site/docs/wcag/2.4.03.mdx', 30950], '0190c584': [() => Promise.all([r.e(40532), r.e(87684)]).then(r.bind(r, 95365)), '@site/docs/wcag/4.1.02.mdx', 95365], '01a85c17': [() => Promise.all([r.e(40532), r.e(64013)]).then(r.bind(r, 40075)), '@theme/BlogTagsListPage', 40075], '02601132': [() => r.e(1384).then(r.t.bind(r, 86724, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834-list.json', 86724], '03722200': [() => Promise.all([r.e(40532), r.e(74075)]).then(r.bind(r, 24927)), '@site/docs/project/kernteam.mdx', 24927], '04087e03': [() => r.e(18670).then(r.t.bind(r, 87256, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431.json', 87256], '042f22aa': [() => Promise.all([r.e(40532), r.e(77198), r.e(64852)]).then(r.bind(r, 84847)), '@site/docs/richtlijnen/formulieren/questions/4-avoid-duplicate-work/README.mdx', 84847], '04733036': [() => Promise.all([r.e(40532), r.e(77198), r.e(78311)]).then(r.bind(r, 51081)), '@site/docs/richtlijnen/formulieren/multistep/3-consistency/README.mdx', 51081], '06235a00': [() => Promise.all([r.e(40532), r.e(95617)]).then(r.bind(r, 41739)), '@site/docs/wcag/3.2.04.mdx', 41739], '08d81d65': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(67132)]).then(r.bind(r, 27110)), '@site/docs/componenten/rich-text-content/index.mdx', 27110], '099c664f': [() => Promise.all([r.e(40532), r.e(77410)]).then(r.bind(r, 42402)), '@site/docs/wcag/1.4.04.mdx', 42402], '09d51e35': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44014)]).then(r.bind(r, 26430)), '@site/docs/componenten/legend/index.mdx', 26430], '0a6c776a': [() => r.e(90418).then(r.bind(r, 20367)), '@site/blog/2023/20231109-spacing-tokens.md', 20367], '0abe0c91': [() => r.e(18552).then(r.t.bind(r, 56007, 19)), '~docs/default/category-en-voorbeelden-category-voorbeelden-2d6.json', 56007], '0b4effa0': [() => Promise.all([r.e(40532), r.e(56150), r.e(49840)]).then(r.bind(r, 32488)), '@site/docs/richtlijnen/formulieren/confirmation/README.mdx', 32488], '0bf96c5c': [() => Promise.all([r.e(40532), r.e(77198), r.e(25561)]).then(r.bind(r, 49770)), '@site/docs/richtlijnen/formulieren/visual-design/5-field-size/README.mdx', 49770], '0ca15ddc': [() => r.e(75220).then(r.t.bind(r, 91370, 19)), '~docs/default/category-en-richtlijnen-category-wcag-succescriteria-uitgelegd-ae0.json', 91370], '0cf410ab': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54496)]).then(r.bind(r, 95017)), '@site/docs/componenten/dot-badge/index.mdx', 95017], '0d484eed': [() => Promise.all([r.e(40532), r.e(66883)]).then(r.bind(r, 38373)), '@site/docs/wcag/1.1.01.mdx', 38373], '0e6a87d4': [() => r.e(11585).then(r.bind(r, 17155)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md?truncated=true', 17155], '0e7e98ab': [() => r.e(15518).then(r.bind(r, 6617)), '@site/docs/richtlijnen/formulieren/description/5-target-size/README.mdx', 6617], '0eacf79f': [() => r.e(34193).then(r.bind(r, 26875)), '@site/docs/community/events/design-open-hour/design-open-hour.mdx', 26875], '0fd7eb6e': [() => r.e(65361).then(r.t.bind(r, 95896, 19)), '~blog/default/en-blog-tags-design-tokens-7be.json', 95896], '10a90e64': [() => Promise.all([r.e(40532), r.e(93527)]).then(r.bind(r, 7850)), '@site/docs/wcag/2.5.08.mdx', 7850], '10efe71c': [() => r.e(29430).then(r.bind(r, 13617)), '@site/docs/richtlijnen/formulieren/visual-design/7-no-image-buttons/README.mdx', 13617], '123b59fa': [() => Promise.all([r.e(40532), r.e(90316)]).then(r.bind(r, 49146)), '@site/docs/wcag/1.4.02.mdx', 49146], '124d4001': [() => Promise.all([r.e(40532), r.e(3151)]).then(r.bind(r, 59983)), '@site/docs/handboek/component-bijdragen/definition-of-done.mdx', 59983], '125932a1': [() => Promise.all([r.e(40532), r.e(77913), r.e(32986)]).then(r.bind(r, 84760)), '@site/docs/community/events/heartbeat/videos.mdx', 84760], '13ecdb40': [() => r.e(75854).then(r.bind(r, 20473)), '@site/docs/richtlijnen/stijl/kleuren.md', 20473], 14785206: [() => Promise.all([r.e(40532), r.e(77198), r.e(15412)]).then(r.bind(r, 77543)), '@site/docs/richtlijnen/formulieren/when-which/1-compat/README.mdx', 77543], '14a250a4': [() => r.e(86926).then(r.t.bind(r, 6262, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3.json', 6262], '14eb3368': [() => Promise.all([r.e(40532), r.e(56150), r.e(9817)]).then(r.bind(r, 13430)), '@theme/DocCategoryGeneratedIndexPage', 13430], '150707f3': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88230)]).then(r.bind(r, 45523)), '@site/docs/componenten/heading-1/index.mdx', 45523], '15a4ec34': [() => r.e(14418).then(r.bind(r, 54578)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md?truncated=true', 54578], '15c58fd4': [() => Promise.all([r.e(40532), r.e(22310)]).then(r.bind(r, 56796)), '@site/docs/wcag/3.3.03.mdx', 56796], '164232d1': [() => r.e(50607).then(r.t.bind(r, 13231, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa-list.json', 13231], '1689c421': [() => r.e(32942).then(r.bind(r, 34873)), '@site/docs/richtlijnen/formulieren/visual-design/8-order/README.mdx', 34873], '16e5a5c9': [() => r.e(99105).then(r.bind(r, 61201)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md?truncated=true', 61201], '16fd2d30': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(33430)]).then(r.bind(r, 88889)), '@site/docs/componenten/heading-2/index.mdx', 88889], '1734d1a5': [() => r.e(17953).then(r.bind(r, 86467)), '@site/docs/richtlijnen/formulieren/button/4-text/README.mdx', 86467], '174c1360': [() => Promise.all([r.e(40532), r.e(77198), r.e(4206)]).then(r.bind(r, 83061)), '@site/docs/richtlijnen/formulieren/error/2-description/README.mdx', 83061], 17896441: [() => Promise.all([r.e(40532), r.e(38178), r.e(27918)]).then(r.bind(r, 28254)), '@theme/DocItem', 28254], '18328f1a': [() => Promise.all([r.e(40532), r.e(77913), r.e(91862)]).then(r.bind(r, 75974)), '@site/docs/voorbeelden/patronen/formulieren/opslaan-of-stoppen.mdx', 75974], '1942deb4': [() => Promise.all([r.e(40532), r.e(4893)]).then(r.bind(r, 21037)), '@site/docs/wcag/4.1.01.mdx', 21037], '197c1d43': [() => Promise.all([r.e(40532), r.e(56150), r.e(5463)]).then(r.bind(r, 43028)), '@site/docs/richtlijnen/formulieren/button/README.mdx', 43028], '199bae63': [() => Promise.all([r.e(40532), r.e(56150), r.e(61383)]).then(r.bind(r, 55204)), '@site/docs/richtlijnen/formulieren/link/README.mdx', 55204], '19f8dbc7': [() => r.e(17755).then(r.bind(r, 49403)), '@site/docs/handboek/designer/figma-structuur.mdx', 49403], '1a4e3797': [() => Promise.all([r.e(40532), r.e(97920)]).then(r.bind(r, 13828)), '@theme/SearchPage', 13828], '1a680e36': [() => Promise.all([r.e(40532), r.e(56150), r.e(61442)]).then(r.bind(r, 3278)), '@site/docs/richtlijnen/formulieren/label/README.mdx', 3278], '1a6d1b6f': [() => Promise.all([r.e(40532), r.e(77198), r.e(37572)]).then(r.bind(r, 85677)), '@site/docs/richtlijnen/formulieren/visual-design/3-placeholder-contrast/README.mdx', 85677], '1aa77dba': [() => r.e(78849).then(r.t.bind(r, 52138, 19)), '~blog/default/en-blog-tags-meta-594-list.json', 52138], '1b445115': [() => r.e(35432).then(r.bind(r, 420)), '@site/docs/handboek/designer/community.md', 420], '1bb6e844': [() => Promise.all([r.e(40532), r.e(35135)]).then(r.bind(r, 34610)), '@site/docs/wcag/2.5.07.mdx', 34610], '1bc7f6c3': [() => r.e(51237).then(r.bind(r, 28780)), '@site/docs/community/events/design-open-hour/aanmelden-success.mdx', 28780], '1bfef857': [() => r.e(53981).then(r.t.bind(r, 7085, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-theme-search-algolia/default/plugin-route-context-module-100.json', 7085], '1c0b529b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(34894)]).then(r.bind(r, 16400)), '@site/docs/componenten/checkbox/index.mdx', 16400], '1c4e5244': [() => r.e(80637).then(r.t.bind(r, 33328, 19)), '~docs/default/category-en-voorbeelden-category-patronen-0d6.json', 33328], '1d0f5624': [() => Promise.all([r.e(40532), r.e(77198), r.e(33990)]).then(r.bind(r, 79759)), '@site/docs/richtlijnen/formulieren/description/2-placement/README.mdx', 79759], '1df93b7f': [() => Promise.all([r.e(40532), r.e(53237)]).then(r.bind(r, 42844)), '@site/src/pages/index.tsx', 42844], '1e45e22d': [() => r.e(70591).then(r.bind(r, 51911)), '@site/docs/footer/coc.md', 51911], '1f7423d5': [() => Promise.all([r.e(40532), r.e(77198), r.e(64279)]).then(r.bind(r, 8396)), '@site/docs/richtlijnen/formulieren/label/3-above-field/README.mdx', 8396], '206effe8': [() => r.e(65093).then(r.bind(r, 44090)), '@site/docs/richtlijnen/formulieren/button/6-image-as-button/README.mdx', 44090], '20a411f0': [() => r.e(2936).then(r.t.bind(r, 39916, 19)), '~docs/default/category-en-community-category-heartbeat-dff.json', 39916], '20f2808f': [() => r.e(30761).then(r.bind(r, 40866)), '@site/docs/handboek/leverancier/introductie.md', 40866], '210e540d': [() => Promise.all([r.e(40532), r.e(2601)]).then(r.bind(r, 67035)), '@site/docs/wcag/2.4.13.mdx', 67035], '21bec7c2': [() => Promise.all([r.e(40532), r.e(20520)]).then(r.bind(r, 84357)), '@site/docs/wcag/2.4.05.mdx', 84357], '228952b2': [() => Promise.all([r.e(40532), r.e(77913), r.e(27369)]).then(r.bind(r, 59822)), '@site/docs/voorbeelden/patronen/formulieren/foutmeldingen.mdx', 59822], '2289dd67': [() => r.e(16451).then(r.bind(r, 75151)), '@site/docs/handboek/designer/stappenplan.mdx', 75151], '22ebae92': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20858)]).then(r.bind(r, 74821)), '@site/docs/componenten/text-input-group/index.mdx', 74821], '232d0db4': [() => r.e(2716).then(r.t.bind(r, 23538, 19)), '~blog/default/en-blog-tags-buitenland-7d6.json', 23538], '235c86a2': [() => r.e(88979).then(r.bind(r, 73346)), '@site/docs/community/events/heartbeat/heartbeat.mdx', 73346], '2383fbae': [() => r.e(90909).then(r.bind(r, 37866)), '@site/docs/footer/privacyverklaring.md', 37866], 24071437: [() => r.e(58687).then(r.bind(r, 68649)), '@site/blog/2023/20231214-community-online-formulieren.md?truncated=true', 68649], '2435a34f': [() => r.e(10936).then(r.t.bind(r, 16413, 19)), '~blog/default/en-blog-tags-formulieren-89f-list.json', 16413], '24603a8a': [() => Promise.all([r.e(40532), r.e(95635)]).then(r.bind(r, 81362)), '@site/docs/wcag/2.4.04.mdx', 81362], '257a732d': [() => r.e(74937).then(r.t.bind(r, 91203, 19)), '~blog/default/en-blog-tags-nl-design-system-be8.json', 91203], '25b93367': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(98634)]).then(r.bind(r, 41304)), '@site/docs/componenten/link/index.mdx', 41304], '26a7a4d1': [() => r.e(88783).then(r.bind(r, 36883)), '@site/docs/handboek/manager/introductie.md', 36883], '27ff9d14': [() => r.e(22669).then(r.t.bind(r, 19665, 19)), '~blog/default/en-blog-tags-toegankelijkheid-431-list.json', 19665], '281e6f8e': [() => Promise.all([r.e(56150), r.e(55912), r.e(98218)]).then(r.bind(r, 66499)), '@site/docs/project/blijf-op-de-hoogte.mdx', 66499], '28d3d582': [() => r.e(96597).then(r.bind(r, 13540)), '@site/docs/handboek/component-bijdragen/hall-of-fame-stappenplan.mdx', 13540], '2933852b': [() => r.e(6752).then(r.bind(r, 9501)), '@site/docs/footer/toegankelijkheidsverklaring.md', 9501], '2add2724': [() => Promise.all([r.e(40532), r.e(88678)]).then(r.bind(r, 35027)), '@site/docs/wcag/3.2.06.mdx', 35027], '2aecc02f': [() => Promise.all([r.e(40532), r.e(77198), r.e(55372)]).then(r.bind(r, 33263)), '@site/docs/richtlijnen/formulieren/questions/3-contact/README.mdx', 33263], '2c881fe2': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(82200)]).then(r.bind(r, 30788)), '@site/docs/componenten/ordered-list/index.mdx', 30788], '2d21fce7': [() => r.e(94210).then(r.bind(r, 1214)), '@site/blog/2019/20190606-update-nl-design-system.md?truncated=true', 1214], '2d922d32': [() => Promise.all([r.e(40532), r.e(8794)]).then(r.bind(r, 53345)), '@site/docs/wcag/1.3.04.mdx', 53345], '2d941729': [() => r.e(78038).then(r.t.bind(r, 15745, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json', 15745], '2da1f935': [() => r.e(41724).then(r.t.bind(r, 77640, 19)), '~blog/default/en-blog-tags-architectuur-246-list.json', 77640], '2e11687d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(42112)]).then(r.bind(r, 21996)), '@site/docs/componenten/data-badge/index.mdx', 21996], '2e9298c1': [() => Promise.all([r.e(40532), r.e(77913), r.e(30059)]).then(r.bind(r, 54840)), '@site/docs/wcag/2.4.01.mdx', 54840], '2f0980e2': [() => r.e(71752).then(r.bind(r, 19661)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md', 19661], '2fd1f4fe': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(81565)]).then(r.bind(r, 53095)), '@site/docs/componenten/form-field-checkbox-option/index.mdx', 53095], '2fe778e5': [() => r.e(32697).then(r.bind(r, 19603)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md', 19603], '3015a2b9': [() => r.e(78882).then(r.bind(r, 92267)), '@site/docs/richtlijnen/stijl/typografie.md', 92267], '306030dd': [() => r.e(20932).then(r.bind(r, 21791)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md?truncated=true', 21791], '309899da': [() => Promise.all([r.e(40532), r.e(28386)]).then(r.bind(r, 10993)), '@site/docs/wcag/1.4.08.mdx', 10993], '30d4a3a8': [() => Promise.all([r.e(40532), r.e(77198), r.e(59590)]).then(r.bind(r, 93229)), '@site/docs/richtlijnen/formulieren/placeholder/3-clarity/README.mdx', 93229], '30f42f58': [() => Promise.all([r.e(40532), r.e(98818)]).then(r.bind(r, 72801)), '@site/docs/wcag/3.1.01.mdx', 72801], '311596ba': [() => Promise.all([r.e(40532), r.e(77913), r.e(89301)]).then(r.bind(r, 11389)), '@site/docs/voorbeelden/patronen/formulieren/bevestigingspagina.mdx', 11389], '323b7945': [() => Promise.all([r.e(56150), r.e(55912), r.e(31875)]).then(r.bind(r, 141)), '@site/docs/community/events/heartbeat/aanmelden.mdx', 141], '32470cbe': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(16406)]).then(r.bind(r, 22628)), '@site/docs/componenten/figure/index.mdx', 22628], 32636356: [() => r.e(52400).then(r.bind(r, 23869)), '@site/docs/project/newsletter-success.mdx', 23869], '3272fc23': [() => r.e(16562).then(r.bind(r, 69294)), '@site/docs/community/events/design-systems-week-2024/index.md', 69294], '333bf37f': [() => r.e(79479).then(r.bind(r, 47341)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md?truncated=true', 47341], '3464a859': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(41769)]).then(r.bind(r, 59853)), '@site/docs/componenten/page-header/index.mdx', 59853], '34a37bdc': [() => r.e(55856).then(r.t.bind(r, 34863, 19)), '~docs/default/category-en-handboek-category-voor-organisaties-bf9.json', 34863], '34b859b1': [() => r.e(97177).then(r.bind(r, 46101)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md?truncated=true', 46101], '35677b07': [() => r.e(15956).then(r.t.bind(r, 28433, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6-list.json', 28433], '3679878e': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(76318)]).then(r.bind(r, 83400)), '@site/docs/componenten/pagination/index.mdx', 83400], '36e18e19': [() => Promise.all([r.e(40532), r.e(64281)]).then(r.bind(r, 90053)), '@site/docs/wcag/2.1.02.mdx', 90053], '3720c009': [() => Promise.all([r.e(40532), r.e(13751)]).then(r.bind(r, 56130)), '@theme/DocTagsListPage', 56130], '381b9e37': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(9910)]).then(r.bind(r, 35229)), '@site/docs/componenten/action-group/index.mdx', 35229], '38471ef1': [() => r.e(37377).then(r.bind(r, 57387)), '@site/blog/2023/20231214-community-online-formulieren.md', 57387], '39418f7b': [() => r.e(28417).then(r.t.bind(r, 32258, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a.json', 32258], '3a63c8bb': [() => r.e(34866).then(r.t.bind(r, 59970, 19)), '~blog/default/en-blog-tags-nl-design-system-be8-list.json', 59970], '3b3b8523': [() => r.e(8742).then(r.bind(r, 99257)), '@site/docs/richtlijnen/formulieren/error/5-no-native-validation/README.mdx', 99257], '3b7bee57': [() => Promise.all([r.e(40532), r.e(77913), r.e(66482)]).then(r.bind(r, 53827)), '@site/docs/voorbeelden/patronen/formulieren/startpunt.mdx', 53827], '3b7e7225': [() => Promise.all([r.e(40532), r.e(74367)]).then(r.bind(r, 74361)), '@site/docs/wcag/1.4.03.mdx', 74361], '3bb8863e': [() => Promise.all([r.e(40532), r.e(55912), r.e(33292)]).then(r.bind(r, 28417)), '@site/src/pages/bingo/voorbeeld-met-fouten-2.tsx', 28417], '3c3d65f2': [() => r.e(11034).then(r.bind(r, 39813)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md?truncated=true', 39813], '3d377413': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(17903)]).then(r.bind(r, 64223)), '@site/docs/componenten/page-footer/index.mdx', 64223], '3d58a721': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(9591)]).then(r.bind(r, 30324)), '@site/docs/componenten/date-input-group/index.mdx', 30324], '3d7707fa': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(86423)]).then(r.bind(r, 57935)), '@site/docs/componenten/alert/index.mdx', 57935], '3e3ea08d': [() => r.e(22725).then(r.t.bind(r, 90453, 19)), '~blog/default/en-blog-tags-gebruikersonderzoeken-7e1-list.json', 90453], '3e8bb961': [() => Promise.all([r.e(40532), r.e(77913), r.e(10650)]).then(r.bind(r, 36859)), '@site/docs/voorbeelden/patronen/formulieren/controlepagina.mdx', 36859], '3ec61807': [() => r.e(71955).then(r.t.bind(r, 93261, 19)), '~blog/default/en-blog-tags-buitenland-7d6-list.json', 93261], '3eff441d': [() => Promise.all([r.e(40532), r.e(98416)]).then(r.bind(r, 78110)), '@site/docs/wcag/1.4.01.mdx', 78110], '3f0f2ad0': [() => r.e(23050).then(r.bind(r, 68169)), '@site/blog/2019/20190606-update-nl-design-system.md', 68169], '3f3eb7e2': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(506)]).then(r.bind(r, 18716)), '@site/docs/componenten/pre-heading/index.mdx', 18716], '3ff65370': [() => r.e(80852).then(r.t.bind(r, 79963, 19)), '~blog/default/en-blog-tags-estafettemodel-16f.json', 79963], 40355699: [() => r.e(88567).then(r.bind(r, 33744)), '@site/blog/2024/20240522-community-blocks.md', 33744], '40a52653': [() => Promise.all([r.e(40532), r.e(44086)]).then(r.bind(r, 10565)), '@site/docs/wcag/1.4.10.mdx', 10565], '411e6d0c': [() => r.e(34104).then(r.bind(r, 54579)), '@site/docs/handboek/introductie.md', 54579], '43a0fbb9': [() => Promise.all([r.e(40532), r.e(75183)]).then(r.bind(r, 93488)), '@site/docs/handboek/estafettemodel.mdx', 93488], '44e82248': [() => Promise.all([r.e(40532), r.e(40334)]).then(r.bind(r, 46135)), '@site/docs/wcag/4.1.03.mdx', 46135], '452f106e': [() => r.e(10860).then(r.bind(r, 12529)), '@site/docs/footer/wcag-em-rapport-2023.md', 12529], '45431ea1': [() => r.e(54220).then(r.bind(r, 96275)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md?truncated=true', 96275], '45a413d9': [() => Promise.all([r.e(40532), r.e(55912), r.e(13026)]).then(r.bind(r, 63801)), '@site/src/pages/bingo/index.tsx', 63801], '463aafc7': [() => r.e(99220).then(r.t.bind(r, 73190, 19)), '~blog/default/en-blog-tags-estafettemodel-16f-list.json', 73190], 46500269: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15593)]).then(r.bind(r, 48971)), '@site/docs/componenten/range/index.mdx', 48971], '465cea2f': [() => r.e(16636).then(r.bind(r, 32937)), '@site/docs/project/links.mdx', 32937], '47f6516a': [() => Promise.all([r.e(40532), r.e(75809)]).then(r.bind(r, 4205)), '@site/docs/wcag/1.2.08.mdx', 4205], '489d45c6': [() => r.e(3900).then(r.bind(r, 90876)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md', 90876], '48c36009': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(78239)]).then(r.bind(r, 89590)), '@site/docs/componenten/date-input/index.mdx', 89590], '4921393f': [() => r.e(17205).then(r.t.bind(r, 28363, 19)), '~docs/default/category-en-handboek-category-voor-designers-366.json', 28363], '492f3cec': [() => r.e(17979).then(r.t.bind(r, 92224, 19)), '~docs/default/category-en-voorbeelden-category-patronen-formulieren-208.json', 92224], '494d37a6': [() => r.e(11655).then(r.bind(r, 26171)), '@site/docs/richtlijnen/formulieren/questions/2-needed/README.mdx', 26171], '49d1ff28': [() => r.e(98477).then(r.bind(r, 78044)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md', 78044], '4a01bf9b': [() => Promise.all([r.e(40532), r.e(77198), r.e(13612)]).then(r.bind(r, 54280)), '@site/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', 54280], '4a8999c7': [() => r.e(17329).then(r.t.bind(r, 80560, 19)), '~blog/default/en-blog-tags-een-overheid-6d9.json', 80560], '4d3e1a9b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(45119)]).then(r.bind(r, 21543)), '@site/docs/componenten/date-picker/index.mdx', 21543], '4ea98559': [() => r.e(97323).then(r.bind(r, 32834)), '@site/blog/2020/20201216-waarom-nl-design-system-onmisbaar-is-voor-organisaties.md?truncated=true', 32834], '4ecafe36': [() => r.e(58279).then(r.t.bind(r, 72985, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5.json', 72985], '4ecd84ac': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54942)]).then(r.bind(r, 62978)), '@site/docs/componenten/summary-list/index.mdx', 62978], '4f8ca7d5': [() => Promise.all([r.e(40532), r.e(56150), r.e(56505)]).then(r.bind(r, 78680)), '@site/docs/richtlijnen/formulieren/help/README.mdx', 78680], '5110c353': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(40284)]).then(r.bind(r, 35030)), '@site/docs/componenten/button/index.mdx', 35030], '51323ca8': [() => r.e(86464).then(r.bind(r, 4547)), '@site/docs/voorbeelden/patronen/formulieren/meerstappenformulier.mdx', 4547], '51d8679a': [() => Promise.all([r.e(40532), r.e(56150), r.e(93063)]).then(r.bind(r, 67354)), '@site/docs/richtlijnen/formulieren/questions/README.mdx', 67354], '520ccf84': [() => r.e(32362).then(r.t.bind(r, 56877, 19)), '~blog/default/en-blog-tags-design-tokens-7be-list.json', 56877], '5293bf37': [() => Promise.all([r.e(56150), r.e(55912), r.e(66004)]).then(r.bind(r, 23664)), '@site/docs/community/events/estafettemodeldag.mdx', 23664], '52bdf594': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(94770)]).then(r.bind(r, 91982)), '@site/docs/componenten/form-field-radio-option/index.mdx', 91982], '53ec08ea': [() => r.e(47599).then(r.t.bind(r, 68298, 19)), '~docs/default/tag-en-tags-community-711.json', 68298], '54b1e9e3': [() => Promise.all([r.e(40532), r.e(56150), r.e(6981)]).then(r.bind(r, 82219)), '@site/docs/richtlijnen/formulieren/README.mdx', 82219], '555de4b4': [() => r.e(22281).then(r.bind(r, 78879)), '@site/docs/handboek/developer/10-herbruikbare-css.md', 78879], '558da7c0': [() => r.e(13027).then(r.bind(r, 9272)), '@site/blog/2024/20240209-licentiekeuze-nlds.md?truncated=true', 9272], '55960ee5': [() => r.e(74121).then(r.t.bind(r, 88070, 19)), '~docs/default/tags-list-current-prop-15a.json', 88070], '560af811': [() => Promise.all([r.e(56150), r.e(55912), r.e(10488)]).then(r.bind(r, 58082)), '@site/docs/community/events/design-systems-week/sign-up.mdx', 58082], '5647b938': [() => r.e(15504).then(r.bind(r, 86825)), '@site/docs/community/events/design-systems-week/sign-up-thanks.mdx', 86825], '564db768': [() => r.e(51244).then(r.bind(r, 8073)), '@site/docs/handboek/component-bijdragen/candidate-stappenplan.mdx', 8073], '569c0776': [() => r.e(44307).then(r.bind(r, 28713)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md?truncated=true', 28713], '57b28864': [() => r.e(2608).then(r.t.bind(r, 11097, 19)), '~blog/default/en-blog-tags-componenten-63a.json', 11097], '582c75ff': [() => r.e(94268).then(r.bind(r, 84846)), '@site/blog/2024/20240305-meerdere-manieren-contact.md', 84846], '59b1f6d4': [() => Promise.all([r.e(40532), r.e(16882)]).then(r.bind(r, 68871)), '@site/docs/wcag/2.5.02.mdx', 68871], '5a50c8e4': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88094)]).then(r.bind(r, 98345)), '@site/docs/componenten/fieldset/index.mdx', 98345], '5ca48129': [() => Promise.all([r.e(40532), r.e(77198), r.e(54344)]).then(r.bind(r, 6276)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour/1-tabindex/README.mdx', 6276], '5ceb3743': [() => Promise.all([r.e(40532), r.e(77198), r.e(41952)]).then(r.bind(r, 9697)), '@site/docs/richtlijnen/formulieren/error/3-clarity/README.mdx', 9697], '5e41da51': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(94960)]).then(r.bind(r, 4328)), '@site/docs/componenten/drawer/index.mdx', 4328], '5e810b1b': [() => Promise.all([r.e(40532), r.e(32288)]).then(r.bind(r, 29426)), '@site/docs/wcag/2.4.11.mdx', 29426], '5e95c892': [() => r.e(29661).then(r.bind(r, 79818)), '@theme/DocsRoot', 79818], '5e9f5e1a': [() => Promise.resolve().then(r.bind(r, 36809)), '@generated/docusaurus.config', 36809], '5efd353f': [() => r.e(24903).then(r.t.bind(r, 51484, 19)), '~blog/default/en-blog-tags-logius-6b8-list.json', 51484], '5f26db3b': [() => r.e(48074).then(r.bind(r, 24747)), '@site/docs/voorbeelden/templates/README.md', 24747], '5f7673a0': [() => r.e(4629).then(r.bind(r, 44583)), '@site/docs/project/over-nl-design-system.mdx', 44583], '6062bcd6': [() => Promise.all([r.e(40532), r.e(77198), r.e(84609)]).then(r.bind(r, 84930)), '@site/docs/richtlijnen/formulieren/label/6-text/README.mdx', 84930], '606f1efc': [() => Promise.all([r.e(40532), r.e(77198), r.e(82190)]).then(r.bind(r, 61571)), '@site/docs/richtlijnen/formulieren/error/4-location/README.mdx', 61571], '6076374a': [() => r.e(70374).then(r.bind(r, 24246)), '@site/docs/footer/colofon.mdx', 24246], '60ab2a10': [() => Promise.all([r.e(40532), r.e(77913), r.e(97362)]).then(r.bind(r, 69807)), '@site/docs/community/events/design-systems-week-2023/english/1-program.md', 69807], '60f94907': [() => Promise.all([r.e(40532), r.e(77913), r.e(87853)]).then(r.bind(r, 16550)), '@site/docs/voorbeelden/patronen/formulieren/inloggen.mdx', 16550], '61e31d3f': [() => r.e(88916).then(r.t.bind(r, 75298, 19)), '~blog/default/en-blog-tags-een-overheid-6d9-list.json', 75298], '620ace0e': [() => Promise.all([r.e(40532), r.e(49159)]).then(r.bind(r, 32936)), '@site/docs/wcag/1.3.05.mdx', 32936], '63095b4c': [() => Promise.all([r.e(40532), r.e(40667)]).then(r.bind(r, 53741)), '@site/docs/wcag/3.3.08.mdx', 53741], '633d45b8': [() => Promise.all([r.e(40532), r.e(77198), r.e(84756)]).then(r.bind(r, 32010)), '@site/docs/richtlijnen/formulieren/link/2-not-in-label/README.mdx', 32010], '640d0ff4': [() => Promise.all([r.e(40532), r.e(77198), r.e(51192)]).then(r.bind(r, 92324)), '@site/docs/richtlijnen/formulieren/placeholder/1-label/README.mdx', 92324], '65c3b531': [() => Promise.all([r.e(40532), r.e(77913), r.e(34048)]).then(r.bind(r, 90217)), '@site/docs/voorbeelden/patronen/formulieren/uploaden.mdx', 90217], '667b53b1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(77936)]).then(r.bind(r, 7534)), '@site/docs/componenten/task-list/index.mdx', 7534], '670c19d0': [() => r.e(87335).then(r.bind(r, 51745)), '@site/docs/richtlijnen/formulieren/error/1-timing/README.mdx', 51745], '6765bbe1': [() => r.e(62951).then(r.t.bind(r, 51116, 19)), '~blog/default/en-blog-tags-lettertype-b29.json', 51116], '67d19623': [() => r.e(49451).then(r.bind(r, 39668)), '@site/docs/open-source/eupl.md', 39668], 68117824: [() => r.e(73526).then(r.t.bind(r, 84245, 19)), '~blog/default/en-blog-tags-lettertype-b29-list.json', 84245], '682b2c96': [() => Promise.all([r.e(40532), r.e(77913), r.e(71114)]).then(r.bind(r, 17170)), '@site/docs/voorbeelden/patronen/formulieren/funnel-header.mdx', 17170], '684ef8a6': [() => Promise.all([r.e(40532), r.e(67208)]).then(r.bind(r, 3210)), '@site/docs/wcag/3.3.02.mdx', 3210], '6875c492': [() => Promise.all([r.e(40532), r.e(56150), r.e(48610)]).then(r.bind(r, 28266)), '@theme/BlogTagsPostsPage', 28266], '68b96050': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(23221)]).then(r.bind(r, 49046)), '@site/docs/componenten/paragraph/index.mdx', 49046], '68ddddde': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(5643)]).then(r.bind(r, 86793)), '@site/docs/componenten/skip-link/index.mdx', 86793], '6a2f4d46': [() => r.e(59794).then(r.t.bind(r, 59369, 19)), '~blog/default/en-blog-tags-design-systems-0c3-list.json', 59369], '6a4d9b8d': [() => Promise.all([r.e(40532), r.e(15104)]).then(r.bind(r, 49294)), '@site/docs/wcag/3.2.03.mdx', 49294], '6a94b0c3': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(18181)]).then(r.bind(r, 75986)), '@site/docs/componenten/form-field/index.mdx', 75986], '6ab13dac': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(83760)]).then(r.bind(r, 90995)), '@site/docs/componenten/form-field-partial-label/index.mdx', 90995], '6ad9c912': [() => Promise.all([r.e(40532), r.e(77198), r.e(19359)]).then(r.bind(r, 8833)), '@site/docs/richtlijnen/formulieren/help/2-allow-copy-paste/README.mdx', 8833], '6aee0090': [() => Promise.all([r.e(40532), r.e(77198), r.e(44147)]).then(r.bind(r, 37896)), '@site/docs/richtlijnen/formulieren/questions/1-why/README.mdx', 37896], '6b6b32db': [() => r.e(53038).then(r.bind(r, 39309)), '@site/docs/richtlijnen/formulieren/error/7-feedback/README.mdx', 39309], '6bcc2158': [() => Promise.all([r.e(40532), r.e(77913), r.e(77009)]).then(r.bind(r, 75686)), '@site/docs/community/events/design-systems-week-2024/english/program.md', 75686], '6c269cf8': [() => Promise.all([r.e(40532), r.e(56150), r.e(77198), r.e(22305), r.e(12356)]).then(r.bind(r, 10550)), '@site/src/pages/contrast/index.tsx', 10550], '6db74d90': [() => Promise.all([r.e(40532), r.e(77913), r.e(45142)]).then(r.bind(r, 48003)), '@site/docs/handboek/design-tokens/README.mdx', 48003], '6dba794c': [() => r.e(13961).then(r.t.bind(r, 57040, 19)), '~blog/default/en-blog-tags-designers-2a7.json', 57040], '6e114b37': [() => r.e(31906).then(r.bind(r, 83107)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md?truncated=true', 83107], '6f323067': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(17768)]).then(r.bind(r, 96292)), '@site/docs/componenten/form-field-partial/index.mdx', 96292], '6fa4fca2': [() => r.e(89557).then(r.bind(r, 95767)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md?truncated=true', 95767], '6fd5f6ab': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(72755)]).then(r.bind(r, 86786)), '@site/docs/componenten/heading/index.mdx', 86786], '6febb60f': [() => Promise.all([r.e(40532), r.e(27297)]).then(r.bind(r, 82630)), '@site/docs/wcag/1.3.01.mdx', 82630], '6ffc4a51': [() => r.e(67821).then(r.bind(r, 41002)), '@site/docs/richtlijnen/formulieren/help/3-approve/README.mdx', 41002], '707334e0': [() => r.e(44136).then(r.bind(r, 47028)), '@site/docs/richtlijnen/stijl/iconen.md', 47028], '7074c05a': [() => r.e(13471).then(r.bind(r, 52876)), '@site/docs/community/events/design-systems-week-2024/english/index.md', 52876], '70ebfaef': [() => r.e(33728).then(r.bind(r, 48723)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md?truncated=true', 48723], '70f68e65': [() => Promise.all([r.e(40532), r.e(77913), r.e(52281)]).then(r.bind(r, 96344)), '@site/docs/voorbeelden/patronen/formulieren/voortgang-indicatie.mdx', 96344], '70fe0045': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(97979)]).then(r.bind(r, 61678)), '@site/docs/componenten/textarea/index.mdx', 61678], '7290f823': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44275)]).then(r.bind(r, 24413)), '@site/docs/componenten/alert-dialog/index.mdx', 24413], '72af1482': [() => r.e(37923).then(r.bind(r, 69185)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md?truncated=true', 69185], '72b0d195': [() => r.e(29396).then(r.bind(r, 3022)), '@site/docs/open-source/cc0.md', 3022], '73bf6027': [() => r.e(96103).then(r.bind(r, 37401)), '@site/docs/community/events/heartbeat/aanmelden-success.mdx', 37401], '75079ebc': [() => Promise.all([r.e(40532), r.e(34384)]).then(r.bind(r, 62007)), '@site/docs/wcag/3.3.07.mdx', 62007], '751bfb55': [() => Promise.all([r.e(40532), r.e(77913), r.e(6526)]).then(r.bind(r, 58249)), '@site/docs/handboek/developer/03-thema-maken.mdx', 58249], '753f1ae1': [() => Promise.all([r.e(40532), r.e(56150), r.e(55234)]).then(r.bind(r, 23878)), '@site/docs/richtlijnen/formulieren/description/README.mdx', 23878], '766d2ae6': [() => Promise.all([r.e(40532), r.e(77198), r.e(28360)]).then(r.bind(r, 58664)), '@site/docs/richtlijnen/formulieren/error/6-summary/README.mdx', 58664], 77321757: [() => r.e(70325).then(r.bind(r, 34400)), '@site/docs/handboek/designer/voorbeeld-thema.md', 34400], '77bf2607': [() => r.e(61472).then(r.bind(r, 83266)), '@site/docs/project/faq.mdx', 83266], '77d5d099': [() => Promise.all([r.e(40532), r.e(49e3)]).then(r.bind(r, 29202)), '@site/docs/wcag/1.4.11.mdx', 29202], '785a05e0': [() => r.e(70895).then(r.bind(r, 77420)), '@site/docs/richtlijnen/formulieren/when-which/2-usability/README.mdx', 77420], '789276a6': [() => r.e(43819).then(r.bind(r, 2608)), '@site/docs/richtlijnen/formulieren/button/7-disabled/README.mdx', 2608], '7a777bcb': [() => r.e(87782).then(r.t.bind(r, 10958, 19)), '~docs/default/category-en-community-category-community-69b.json', 10958], '7b6dc98e': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(3693)]).then(r.bind(r, 37511)), '@site/docs/componenten/blockquote/index.mdx', 37511], '7ba8052a': [() => Promise.all([r.e(40532), r.e(42492)]).then(r.bind(r, 29328)), '@site/docs/wcag/1.2.06.mdx', 29328], '7bab27bf': [() => r.e(71853).then(r.t.bind(r, 72676, 19)), '~blog/default/en-blog-tags-designers-2a7-list.json', 72676], '7c4f6831': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(71337)]).then(r.bind(r, 87710)), '@site/docs/componenten/sub-heading/index.mdx', 87710], '7ca6903f': [() => r.e(84373).then(r.bind(r, 9785)), '@site/blog/2024/20240209-licentiekeuze-nlds.md', 9785], '7cc1f45d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(24366)]).then(r.bind(r, 21311)), '@site/docs/componenten/radio-group/index.mdx', 21311], '7e047481': [() => r.e(46608).then(r.bind(r, 69582)), '@site/docs/richtlijnen/formulieren/confirmation/2-accessibility/README.mdx', 69582], '7e0bd177': [() => r.e(2452).then(r.t.bind(r, 58378, 19)), '~blog/default/en-blog-tags-update-b0c-list.json', 58378], '7e11c81b': [() => r.e(56388).then(r.t.bind(r, 83299, 19)), '~blog/default/en-blog-tags-werkgroepen-866.json', 83299], '7e20bedc': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(39783)]).then(r.bind(r, 52010)), '@site/docs/componenten/tabs/index.mdx', 52010], '7edfa0ff': [() => Promise.all([r.e(40532), r.e(10748)]).then(r.bind(r, 90919)), '@site/docs/wcag/2.5.04.mdx', 90919], '7eedbcf7': [() => r.e(34251).then(r.bind(r, 49743)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md', 49743], '7faf29d7': [() => r.e(53200).then(r.t.bind(r, 44575, 19)), '~blog/default/en-blog-tags-mijlpalen-c2a-list.json', 44575], '80bad7c2': [() => r.e(41368).then(r.bind(r, 34864)), '@site/blog/2024/20240322-design-open-dag.md', 34864], '80c19b87': [() => r.e(9351).then(r.t.bind(r, 1702, 19)), '~blog/default/en-blog-tags-figma-431.json', 1702], '814f3328': [() => r.e(52535).then(r.t.bind(r, 45641, 19)), '~blog/default/blog-post-list-prop-default.json', 45641], '8165282b': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(49619)]).then(r.bind(r, 12270)), '@site/docs/componenten/text-input/index.mdx', 12270], '81f0ad3e': [() => r.e(85814).then(r.bind(r, 3747)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md?truncated=true', 3747], '8314e380': [() => Promise.all([r.e(40532), r.e(17343)]).then(r.bind(r, 95766)), '@site/docs/wcag/1.2.05.mdx', 95766], '845a118e': [() => r.e(81213).then(r.bind(r, 61853)), '@site/docs/community/events/design-systems-week-2023/index.md', 61853], '84b5c197': [() => Promise.all([r.e(40532), r.e(60864)]).then(r.bind(r, 50558)), '@site/docs/wcag/1.2.02.mdx', 50558], '861e17e8': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(43396)]).then(r.bind(r, 8486)), '@site/docs/componenten/definition-list/index.mdx', 8486], '86475ef8': [() => Promise.all([r.e(40532), r.e(36794)]).then(r.bind(r, 77236)), '@site/docs/wcag/3.3.04.mdx', 77236], '86c1b350': [() => r.e(88202).then(r.t.bind(r, 7862, 19)), '~blog/default/en-blog-tags-formulieren-89f.json', 7862], '893094ee': [() => r.e(17906).then(r.t.bind(r, 46988, 19)), '~blog/default/en-blog-tags-componenten-63a-list.json', 46988], '897f202a': [() => r.e(81700).then(r.bind(r, 98443)), '@site/blog/2019/20190325-een-overheid-practice-what-you-preach.md', 98443], '89a96570': [() => r.e(77754).then(r.bind(r, 23207)), '@site/blog/2021/20211223-nl-design-system-in-2021.md', 23207], '89d19ea8': [() => Promise.all([r.e(40532), r.e(77198), r.e(59088)]).then(r.bind(r, 23902)), '@site/docs/richtlijnen/formulieren/confirmation/3-next-steps/README.mdx', 23902], '8a86fb00': [() => Promise.all([r.e(40532), r.e(65647)]).then(r.bind(r, 84338)), '@site/docs/wcag/2.1.01.mdx', 84338], '8aa0ba1c': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(87034)]).then(r.bind(r, 38815)), '@site/docs/componenten/file-input/index.mdx', 38815], '8abfd807': [() => Promise.all([r.e(40532), r.e(77198), r.e(17713)]).then(r.bind(r, 77148)), '@site/docs/richtlijnen/formulieren/visual-design/1-field-contrast/README.mdx', 77148], '8b659173': [() => r.e(30217).then(r.bind(r, 77622)), '@site/blog/2021/20210729-innovatiebudget-voor-de-werkwijze-van-het-nl-design-system copy.md', 77622], '8baef6f7': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(21229)]).then(r.bind(r, 27193)), '@site/docs/componenten/icon/index.mdx', 27193], '8bb98256': [() => Promise.all([r.e(40532), r.e(77913), r.e(84152)]).then(r.bind(r, 7651)), '@site/docs/community/events/design-systems-week-2024/programma.md', 7651], '8de5412f': [() => r.e(8557).then(r.bind(r, 78078)), '@site/blog/2024/20240522-community-blocks.md?truncated=true', 78078], '8df97ee5': [() => r.e(52143).then(r.t.bind(r, 85280, 19)), '~blog/default/en-blog-tags-architectuur-246.json', 85280], '8e0f3a07': [() => Promise.all([r.e(40532), r.e(77198), r.e(50718)]).then(r.bind(r, 75914)), '@site/docs/richtlijnen/formulieren/description/1-associated/README.mdx', 75914], '8ea6c2d1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(79947)]).then(r.bind(r, 29298)), '@site/docs/componenten/number-badge/index.mdx', 29298], '8eda713e': [() => Promise.all([r.e(40532), r.e(77913), r.e(47475)]).then(r.bind(r, 56939)), '@site/docs/voorbeelden/patronen/formulieren/intropagina.mdx', 56939], '8f6d3c26': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(3578)]).then(r.bind(r, 23667)), '@site/docs/componenten/heading-3/index.mdx', 23667], '8fc68f72': [() => r.e(48549).then(r.t.bind(r, 49009, 19)), '~blog/default/en-blog-tags-word-press-ee5-list.json', 49009], '91059c25': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(61057)]).then(r.bind(r, 12425)), '@site/docs/componenten/heading-6/index.mdx', 12425], '9186edf4': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20994)]).then(r.bind(r, 92009)), '@site/docs/componenten/card-as-link/index.mdx', 92009], '91ad73c4': [() => r.e(94299).then(r.bind(r, 33489)), '@site/docs/wcag/0-introduction.mdx', 33489], '91c9e2b1': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88016)]).then(r.bind(r, 82842)), '@site/docs/componenten/checkbox-group/index.mdx', 82842], '91e219d1': [() => r.e(35017).then(r.bind(r, 30800)), '@site/docs/richtlijnen/formulieren/help/7-error-prevention/README.mdx', 30800], '920ddf01': [() => r.e(82184).then(r.bind(r, 82419)), '@site/blog/2024/20240122-nlds-zelfstandig.md?truncated=true', 82419], '9228e550': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54291)]).then(r.bind(r, 13606)), '@site/docs/componenten/password-input/index.mdx', 13606], '92e5e01e': [() => r.e(68536).then(r.bind(r, 39989)), '@site/blog/2023/20230411-nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype.md', 39989], '935f2afb': [() => r.e(80053).then(r.t.bind(r, 1109, 19)), '~docs/default/version-current-metadata-prop-751.json', 1109], '93a8441b': [() => r.e(59934).then(r.bind(r, 78892)), '@site/docs/handboek/developer/01-aan-de-slag.md', 78892], '93b586d9': [() => Promise.all([r.e(40532), r.e(77198), r.e(10632)]).then(r.bind(r, 25063)), '@site/docs/richtlijnen/formulieren/placeholder/2-search/README.mdx', 25063], '94b6170a': [() => r.e(95250).then(r.bind(r, 4179)), '@site/blog/2023/20230918-design-systems-week-2023-komt-eraan.md', 4179], '94d55c70': [() => r.e(78508).then(r.bind(r, 10493)), '@site/blog/2018/20180426-design-systems-in-het-buitenland.md', 10493], '94dc40b0': [() => r.e(42423).then(r.t.bind(r, 67139, 19)), '~docs/default/category-en-community-category-developer-open-hour-ece.json', 67139], '95a20731': [() => r.e(1607).then(r.t.bind(r, 20030, 19)), '~docs/default/category-en-handboek-category-componenten-bijdragen-ede.json', 20030], 96105152: [() => Promise.all([r.e(40532), r.e(20933)]).then(r.bind(r, 22996)), '@site/docs/wcag/3.2.02.mdx', 22996], '9652d10b': [() => Promise.all([r.e(40532), r.e(77913), r.e(97350)]).then(r.bind(r, 30449)), '@site/docs/voorbeelden/patronen/formulieren/visual-design.mdx', 30449], '968cae9d': [() => Promise.all([r.e(40532), r.e(77198), r.e(81733)]).then(r.bind(r, 55663)), '@site/docs/richtlijnen/formulieren/button/2-submit/README.mdx', 55663], '96f807b8': [() => Promise.all([r.e(40532), r.e(77198), r.e(84367)]).then(r.bind(r, 77571)), '@site/docs/richtlijnen/formulieren/label/4-always-visible/README.mdx', 77571], '9764e22e': [() => r.e(9336).then(r.bind(r, 33130)), '@site/blog/2022/20221222-de-mijlpalen-van-2022.md?truncated=true', 33130], '98a78e5e': [() => r.e(44455).then(r.bind(r, 52440)), '@site/docs/handboek/component-bijdragen/community-stappenplan.mdx', 52440], '9998fe9c': [() => Promise.all([r.e(40532), r.e(77198), r.e(97366)]).then(r.bind(r, 87108)), '@site/docs/richtlijnen/formulieren/description/4-fieldset/README.mdx', 87108], '9adac8a6': [() => Promise.all([r.e(40532), r.e(77198), r.e(79871)]).then(r.bind(r, 30370)), '@site/docs/richtlijnen/formulieren/link/3-in-new-tab/README.mdx', 30370], '9b2e9553': [() => r.e(85063).then(r.bind(r, 42416)), '@site/docs/handboek/developer/06-component-uitbreiden.md', 42416], '9b3824c7': [() => r.e(45671).then(r.bind(r, 86782)), '@site/docs/richtlijnen/formulieren/button/5-accessible-name/README.mdx', 86782], '9b74bec5': [() => r.e(88176).then(r.t.bind(r, 24652, 19)), '~blog/default/en-blog-tags-gebruiker-centraal-8b6.json', 24652], '9bdd22eb': [() => r.e(92253).then(r.t.bind(r, 55803, 19)), '~blog/default/en-blog-tags-tags-c25.json', 55803], '9c1b7be2': [() => r.e(19103).then(r.bind(r, 73869)), '@site/docs/handboek/developer/02-architectuur.md', 73869], '9c510eeb': [() => r.e(834).then(r.t.bind(r, 47452, 19)), '~blog/default/en-blog-tags-word-press-ee5.json', 47452], '9cb16d46': [() => Promise.all([r.e(40532), r.e(77198), r.e(70605)]).then(r.bind(r, 4589)), '@site/docs/richtlijnen/formulieren/help/6-autofill/README.mdx', 4589], '9d99ac73': [() => Promise.all([r.e(40532), r.e(56150), r.e(3981)]).then(r.bind(r, 90763)), '@site/docs/richtlijnen/README.mdx', 90763], '9e2ab78b': [() => r.e(2626).then(r.t.bind(r, 62988, 19)), '~docs/default/category-en-project-category-project-ce0.json', 62988], '9e4087bc': [() => r.e(53608).then(r.bind(r, 79820)), '@theme/BlogArchivePage', 79820], '9eaa3a83': [() => Promise.all([r.e(40532), r.e(77913), r.e(48457)]).then(r.bind(r, 44412)), '@site/docs/wcag/3.1.02.mdx', 44412], '9ec6ce4c': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15739)]).then(r.bind(r, 19423)), '@site/docs/componenten/heading-5/index.mdx', 19423], '9f18257a': [() => r.e(61408).then(r.t.bind(r, 36766, 19)), '~docs/default/category-en-community-category-events-42b.json', 36766], '9f1e13f9': [() => Promise.all([r.e(40532), r.e(77198), r.e(45010)]).then(r.bind(r, 48573)), '@site/docs/richtlijnen/formulieren/multistep/1-step-count/README.mdx', 48573], '9f3e56ab': [() => Promise.all([r.e(40532), r.e(77913), r.e(79395)]).then(r.bind(r, 73767)), '@site/docs/voorbeelden/patronen/formulieren/niet-verplichte-velden.mdx', 73767], '9f867b5d': [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(12487)]).then(r.bind(r, 35494)), '@site/docs/componenten/README.mdx', 35494], a0f63bac: [() => Promise.all([r.e(40532), r.e(94684)]).then(r.bind(r, 70291)), '@site/docs/wcag/1.4.05.mdx', 70291], a111e786: [() => Promise.all([r.e(40532), r.e(63930)]).then(r.bind(r, 30621)), '@site/docs/wcag/1.2.01.mdx', 30621], a2514f03: [() => r.e(51794).then(r.t.bind(r, 95669, 19)), '~blog/default/en-blog-tags-figma-431-list.json', 95669], a2bb2b83: [() => r.e(13575).then(r.t.bind(r, 36093, 19)), '~blog/default/en-blog-tags-developers-6ee-list.json', 36093], a3332bc9: [() => r.e(85303).then(r.bind(r, 34502)), '@site/blog/2024/20240701-meerdere-producten.md?truncated=true', 34502], a55f7ab7: [() => r.e(82714).then(r.bind(r, 65706)), '@site/blog/2022/20220620-bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system.md?truncated=true', 65706], a572c501: [() => r.e(21613).then(r.t.bind(r, 83769, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json', 83769], a5cbeebd: [() => r.e(66716).then(r.bind(r, 3910)), '@site/docs/richtlijnen/formulieren/visual-design/6-use-of-color/README.mdx', 3910], a6aa9e1f: [() => Promise.all([r.e(40532), r.e(56150), r.e(93089)]).then(r.bind(r, 62987)), '@theme/BlogListPage', 62987], a77e5ea3: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(76401)]).then(r.bind(r, 17395)), '@site/docs/componenten/accordion/index.mdx', 17395], a792b491: [() => r.e(90623).then(r.t.bind(r, 20675, 19)), '~blog/default/en-blog-tags-design-systems-0c3.json', 20675], a7bd4aaa: [() => r.e(18518).then(r.bind(r, 99590)), '@theme/DocVersionRoot', 99590], a7f84bbe: [() => r.e(58803).then(r.bind(r, 64827)), '@site/blog/2021/20211223-nl-design-system-in-2021.md?truncated=true', 64827], a7fe68c7: [() => Promise.all([r.e(40532), r.e(8538)]).then(r.bind(r, 50741)), '@site/docs/wcag/2.2.01.mdx', 50741], a81e9677: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(44921)]).then(r.bind(r, 60166)), '@site/docs/componenten/breadcrumb-navigation/index.mdx', 60166], a94703ab: [() => Promise.all([r.e(40532), r.e(94368)]).then(r.bind(r, 90529)), '@theme/DocRoot', 90529], a9493cdf: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(92532)]).then(r.bind(r, 41404)), '@site/docs/componenten/form-field-option-label/index.mdx', 41404], ac66737c: [() => r.e(34838).then(r.bind(r, 68724)), '@site/docs/handboek/organisatie/vragen-over-aanbestedingen.md', 68724], acbbc3fa: [() => Promise.all([r.e(40532), r.e(77913), r.e(26361)]).then(r.bind(r, 95082)), '@site/docs/voorbeelden/patronen/formulieren/terug-navigeren.mdx', 95082], ace6628c: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(83373)]).then(r.bind(r, 78405)), '@site/docs/componenten/calendar/index.mdx', 78405], ad9d479a: [() => Promise.all([r.e(56150), r.e(55912), r.e(22746)]).then(r.bind(r, 73546)), '@site/docs/community/sluit-je-aan.mdx', 73546], adb328b9: [() => r.e(91344).then(r.bind(r, 79652)), '@site/docs/community/sluit-je-aan-success.mdx', 79652], adc7d54a: [() => Promise.all([r.e(56150), r.e(55912), r.e(90134)]).then(r.bind(r, 23938)), '@site/docs/community/events/design-open-hour/aanmelden.mdx', 23938], aded4886: [() => Promise.all([r.e(40532), r.e(60447)]).then(r.bind(r, 39889)), '@site/docs/wcag/2.5.01.mdx', 39889], aeaf35c2: [() => r.e(53345).then(r.bind(r, 71906)), '@site/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx', 71906], af5d61d0: [() => r.e(96753).then(r.t.bind(r, 39402, 19)), '~blog/default/en-blog-tags-gebruikerstesten-834.json', 39402], b0a486e7: [() => r.e(74602).then(r.t.bind(r, 69330, 19)), '~docs/default/category-en-community-category-design-open-hour-15e.json', 69330], b0bf1aa3: [() => Promise.all([r.e(40532), r.e(56150), r.e(48595)]).then(r.bind(r, 44221)), '@site/docs/community/events/design-systems-week-2023/2-tijdschema-per-dag.md', 44221], b13a7419: [() => Promise.all([r.e(40532), r.e(77198), r.e(94730)]).then(r.bind(r, 40218)), '@site/docs/richtlijnen/formulieren/label/1-accessible-name/README.mdx', 40218], b14da3b2: [() => Promise.all([r.e(40532), r.e(91188)]).then(r.bind(r, 69085)), '@site/docs/wcag/1.4.12.mdx', 69085], b171e401: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(67398)]).then(r.bind(r, 15510)), '@site/docs/componenten/switch/index.mdx', 15510], b1df0b37: [() => Promise.all([r.e(40532), r.e(92060)]).then(r.bind(r, 30955)), '@site/docs/wcag/1.4.13.mdx', 30955], b23cdcda: [() => Promise.all([r.e(40532), r.e(77198), r.e(44617)]).then(r.bind(r, 99458)), '@site/docs/richtlijnen/formulieren/help/5-autocomplete/README.mdx', 99458], b2991567: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(36918)]).then(r.bind(r, 18903)), '@site/docs/componenten/invalid-form-alert/index.mdx', 18903], b3531ef4: [() => r.e(36118).then(r.t.bind(r, 43501, 19)), '~blog/default/en-blog-tags-werkgroepen-866-list.json', 43501], b39bde9c: [() => Promise.all([r.e(40532), r.e(56150), r.e(4962)]).then(r.bind(r, 6306)), '@site/docs/richtlijnen/formulieren/placeholder/README.mdx', 6306], b4150b56: [() => Promise.all([r.e(40532), r.e(55912), r.e(82241)]).then(r.bind(r, 82350)), '@site/src/pages/bingo/voorbeeld-met-fouten-1.tsx', 82350], b46e901f: [() => r.e(23116).then(r.t.bind(r, 29579, 19)), '~docs/default/category-en-handboek-category-voor-developers-794.json', 29579], b48427de: [() => Promise.all([r.e(40532), r.e(2475)]).then(r.bind(r, 50816)), '@site/docs/wcag/3.3.01.mdx', 50816], b4f4fb7e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(34492)]).then(r.bind(r, 10199)), '@site/docs/componenten/progress-bar/index.mdx', 10199], b50de158: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(12505)]).then(r.bind(r, 22441)), '@site/docs/componenten/side-navigation/index.mdx', 22441], b56159c8: [() => r.e(66360).then(r.bind(r, 26783)), '@site/docs/community/wie-doet-mee.mdx', 26783], b562a46f: [() => Promise.all([r.e(40532), r.e(77198), r.e(12274)]).then(r.bind(r, 19139)), '@site/docs/richtlijnen/formulieren/description/3-multiple/README.mdx', 19139], b686c44c: [() => Promise.all([r.e(40532), r.e(77198), r.e(31686)]).then(r.bind(r, 49553)), '@site/docs/richtlijnen/formulieren/button/1-keyboard/README.mdx', 49553], b68f03f7: [() => r.e(815).then(r.bind(r, 51047)), '@site/blog/2020/20201204-uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system.md', 51047], b70cd504: [() => r.e(36546).then(r.bind(r, 89212)), '@site/blog/2021/20210521-jouw-project-inrichten-op-de-nl-design-system-architectuur.md', 89212], b729a1a1: [() => r.e(29386).then(r.bind(r, 14410)), '@site/blog/2024/20240311-gebruikerstest-ondernemers.md', 14410], b75db01c: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(46536)]).then(r.bind(r, 17412)), '@site/docs/componenten/modal-dialog/index.mdx', 17412], b86d5603: [() => r.e(56327).then(r.bind(r, 49388)), '@site/docs/community/events/design-systems-week/aanmelden-bedankt.mdx', 49388], b8bffd88: [() => r.e(65391).then(r.bind(r, 35238)), '@site/docs/handboek/designer/README.md', 35238], ba49b078: [() => Promise.all([r.e(40532), r.e(77198), r.e(20360)]).then(r.bind(r, 1528)), '@site/docs/richtlijnen/formulieren/visual-design/2-text-contrast/README.mdx', 1528], ba4a9952: [() => r.e(2850).then(r.bind(r, 71394)), '@site/docs/community/events/developer-open-hour/developer-open-hour.mdx', 71394], ba69917b: [() => Promise.all([r.e(56150), r.e(55912), r.e(63451)]).then(r.bind(r, 71018)), '@site/docs/community/events/design-systems-week/aanmelden.mdx', 71018], bad61bdd: [() => Promise.all([r.e(40532), r.e(28245)]).then(r.bind(r, 79213)), '@site/docs/wcag/1.3.03.mdx', 79213], bc199175: [() => r.e(96222).then(r.bind(r, 8965)), '@site/docs/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen.mdx', 8965], bc2d69ea: [() => r.e(85634).then(r.bind(r, 61947)), '@site/docs/handboek/developer/08-meewerken-als-developer.md', 61947], be371f74: [() => Promise.all([r.e(40532), r.e(4137)]).then(r.bind(r, 90505)), '@site/docs/wcag/2.4.07.mdx', 90505], bf14fce1: [() => r.e(15470).then(r.bind(r, 2123)), '@site/blog/2024/20240122-nlds-zelfstandig.md', 2123], bf203e4a: [() => Promise.all([r.e(40532), r.e(77913), r.e(3307)]).then(r.bind(r, 20256)), '@site/docs/community/events/design-systems-week-2023/1-programma.md', 20256], bf8a7bac: [() => r.e(56596).then(r.bind(r, 38104)), '@site/docs/community/events/estafettemodeldag-success.mdx', 38104], c0270cae: [() => Promise.all([r.e(40532), r.e(81710)]).then(r.bind(r, 94307)), '@site/docs/wcag/2.5.05.mdx', 94307], c15f67bc: [() => r.e(39810).then(r.bind(r, 68733)), '@site/docs/community/events/design-open-dag-success.mdx', 68733], c1a8ab3a: [() => r.e(98822).then(r.bind(r, 51067)), '@site/docs/voorbeelden/patronen/formulieren/responsive-design.mdx', 51067], c20168b0: [() => r.e(68e3).then(r.t.bind(r, 62945, 19)), '~blog/default/en-blog-tags-richtlijnen-9c3-list.json', 62945], c28c8ac9: [() => Promise.all([r.e(40532), r.e(46564)]).then(r.bind(r, 37922)), '@site/docs/wcag/1.2.09.mdx', 37922], c45d5005: [() => Promise.all([r.e(40532), r.e(77198), r.e(53300)]).then(r.bind(r, 49205)), '@site/docs/richtlijnen/formulieren/label/5-only-text/README.mdx', 49205], c51cb369: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(90258)]).then(r.bind(r, 28505)), '@site/docs/componenten/language-navigation/index.mdx', 28505], c651b2e8: [() => r.e(75386).then(r.bind(r, 54988)), '@site/docs/project/nieuwsbrief.mdx', 54988], c6b96a0f: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20911)]).then(r.bind(r, 85263)), '@site/docs/componenten/non-modal-dialog/index.mdx', 85263], c776d6ea: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(85)]).then(r.bind(r, 79381)), '@site/docs/componenten/heading-4/index.mdx', 79381], c832a882: [() => Promise.all([r.e(40532), r.e(57683)]).then(r.bind(r, 48656)), '@site/docs/wcag/2.4.02.mdx', 48656], c8ac2561: [() => r.e(67586).then(r.bind(r, 10987)), '@site/docs/handboek/naamgeving.mdx', 10987], c91a40d5: [() => Promise.all([r.e(56150), r.e(55912), r.e(11839)]).then(r.bind(r, 88895)), '@site/docs/community/events/developer-open-hour/aanmelden.mdx', 88895], c9609a68: [() => r.e(72822).then(r.bind(r, 28229)), '@site/blog/2024/20240701-meerdere-producten.md', 28229], c9bf1512: [() => r.e(6703).then(r.t.bind(r, 18003, 19)), '~blog/default/en-blog-tags-logius-6b8.json', 18003], ca36df4d: [() => r.e(60917).then(r.bind(r, 36752)), '@site/docs/CHANGELOG.md', 36752], ca6bcb72: [() => Promise.all([r.e(40532), r.e(56150), r.e(71854)]).then(r.bind(r, 87210)), '@site/docs/richtlijnen/formulieren/multistep/README.mdx', 87210], ca82639c: [() => r.e(90266).then(r.t.bind(r, 24068, 19)), '~blog/default/en-blog-tags-developers-6ee.json', 24068], cbb88ed8: [() => Promise.all([r.e(40532), r.e(77198), r.e(79649)]).then(r.bind(r, 88354)), '@site/docs/richtlijnen/formulieren/label/2-visible-acccessible-name/README.mdx', 88354], cc0f0e4f: [() => r.e(18481).then(r.bind(r, 38729)), '@site/blog/2024/20240624-toegankelijke-foutmeldingen.md', 38729], cc7e1584: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(36200)]).then(r.bind(r, 48521)), '@site/docs/componenten/strong/index.mdx', 48521], cca02dd0: [() => r.e(45638).then(r.bind(r, 34019)), '@site/docs/richtlijnen/formulieren/confirmation/4-contact/README.mdx', 34019], ccc49370: [() => Promise.all([r.e(40532), r.e(38178), r.e(46103)]).then(r.bind(r, 58829)), '@theme/BlogPostPage', 58829], cd1565a5: [() => r.e(61041).then(r.bind(r, 48245)), '@site/docs/richtlijnen/formulieren/multistep/4-last-check/README.mdx', 48245], cd3c7377: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(25425)]).then(r.bind(r, 99766)), '@site/docs/componenten/form-field-description/index.mdx', 99766], cd7f02d4: [() => Promise.all([r.e(40532), r.e(77913), r.e(63067)]).then(r.bind(r, 51139)), '@site/docs/community/events/design-systems-week-2022.mdx', 51139], ce7b85cb: [() => r.e(37498).then(r.bind(r, 38564)), '@site/docs/handboek/organisatie/meedoen.md', 38564], cea83cfe: [() => r.e(62355).then(r.bind(r, 32690)), '@site/docs/richtlijnen/formulieren/confirmation/1-success/README.mdx', 32690], ced44f18: [() => Promise.all([r.e(56150), r.e(55912), r.e(81484)]).then(r.bind(r, 74906)), '@site/docs/community/events/design-open-dag.mdx', 74906], d0b753ca: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(47531)]).then(r.bind(r, 55111)), '@site/docs/componenten/radio-button/index.mdx', 55111], d3c1b80a: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(58441)]).then(r.bind(r, 15054)), '@site/docs/componenten/avatar/index.mdx', 15054], d3deb5db: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(88021)]).then(r.bind(r, 35624)), '@site/docs/componenten/toggletip/index.mdx', 35624], d4552b9e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(15403)]).then(r.bind(r, 61885)), '@site/docs/componenten/form-field-error-message/index.mdx', 61885], d459b62b: [() => r.e(23668).then(r.t.bind(r, 73103, 19)), '~docs/default/category-en-richtlijnen-category-richtlijnen-voor-stijl-652.json', 73103], d467e203: [() => r.e(76902).then(r.bind(r, 51180)), '@site/blog/2023/20231109-spacing-tokens.md?truncated=true', 51180], d5f36106: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(16833)]).then(r.bind(r, 63799)), '@site/docs/componenten/status-badge/index.mdx', 63799], d647d050: [() => r.e(26801).then(r.t.bind(r, 71148, 19)), '~blog/default/en-blog-tags-contentrichtlijnen-eaa.json', 71148], d68b2e5c: [() => Promise.all([r.e(40532), r.e(77198), r.e(52116)]).then(r.bind(r, 13307)), '@site/docs/richtlijnen/formulieren/multistep/2-location/README.mdx', 13307], d7c98f9c: [() => Promise.all([r.e(40532), r.e(56150), r.e(6236)]).then(r.bind(r, 87169)), '@site/docs/richtlijnen/formulieren/visual-design/README.mdx', 87169], d9284525: [() => Promise.all([r.e(40532), r.e(54836)]).then(r.bind(r, 68387)), '@site/docs/wcag/2.4.10.mdx', 68387], da2da55d: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(95102)]).then(r.bind(r, 38093)), '@site/docs/componenten/heading-group/index.mdx', 38093], da71daea: [() => r.e(45018).then(r.bind(r, 12498)), '@site/docs/richtlijnen/formulieren/description/6-length/README.mdx', 12498], da8aeb86: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(54472)]).then(r.bind(r, 24378)), '@site/docs/componenten/navigation-bar/index.mdx', 24378], dab0abab: [() => Promise.all([r.e(40532), r.e(56150), r.e(2937)]).then(r.bind(r, 74135)), '@site/docs/richtlijnen/formulieren/keyboard-behaviour/README.mdx', 74135], db5e1826: [() => Promise.all([r.e(40532), r.e(77198), r.e(16386)]).then(r.bind(r, 30958)), '@site/docs/richtlijnen/formulieren/help/1-show-required/README.mdx', 30958], db7926ce: [() => r.e(21177).then(r.t.bind(r, 35288, 19)), '~docs/default/category-en-handboek-category-handboek-bd8.json', 35288], dba96d72: [() => Promise.all([r.e(40532), r.e(77198), r.e(54862)]).then(r.bind(r, 94802)), '@site/docs/richtlijnen/formulieren/link/1-above-field/README.mdx', 94802], dcd65422: [() => Promise.all([r.e(40532), r.e(77913), r.e(84391)]).then(r.bind(r, 65584)), '@site/docs/handboek/developer/05-component-inzetten.mdx', 65584], dce08b4f: [() => r.e(37684).then(r.t.bind(r, 39096, 19)), '~blog/default/en-blog-tags-gebruikersonderzoeken-7e1.json', 39096], dd06f6af: [() => r.e(18148).then(r.bind(r, 59652)), '@site/docs/voorbeelden/README.md', 59652], dd706f12: [() => r.e(57874).then(r.t.bind(r, 81729, 19)), '~blog/default/en-blog-tags-update-b0c.json', 81729], ddf35722: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(68424)]).then(r.bind(r, 76677)), '@site/docs/componenten/form-field-label/index.mdx', 76677], df203c0f: [() => r.e(99924).then(r.bind(r, 6358)), '@theme/DocTagDocListPage', 6358], df6d1168: [() => Promise.all([r.e(40532), r.e(77198), r.e(46756)]).then(r.bind(r, 65518)), '@site/docs/richtlijnen/formulieren/visual-design/4-focus-visible/README.mdx', 65518], dfb098ef: [() => Promise.all([r.e(40532), r.e(77913), r.e(87780)]).then(r.bind(r, 73112)), '@site/docs/handboek/designer/zelf-componenten-maken.mdx', 73112], e07f5d94: [() => r.e(67833).then(r.bind(r, 52231)), '@site/docs/richtlijnen/stijl/ruimte.md', 52231], e21395b4: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(48239)]).then(r.bind(r, 62627)), '@site/docs/componenten/notification-banner/index.mdx', 62627], e25baa48: [() => Promise.all([r.e(40532), r.e(77198), r.e(22619)]).then(r.bind(r, 99912)), '@site/docs/richtlijnen/formulieren/multistep/5-timing/README.mdx', 99912], e34d61f6: [() => Promise.all([r.e(40532), r.e(11767)]).then(r.bind(r, 59819)), '@site/docs/wcag/2.5.03.mdx', 59819], e3b51539: [() => r.e(69592).then(r.bind(r, 31557)), '@site/docs/handboek/developer/07-componenten-maken.md', 31557], e4188b52: [() => Promise.all([r.e(40532), r.e(13642)]).then(r.bind(r, 84682)), '@site/docs/wcag/2.1.04.mdx', 84682], e59d1036: [() => r.e(38934).then(r.bind(r, 64512)), '@site/docs/voorbeelden/onderzoek/README.md', 64512], e5bc4a9e: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(41990)]).then(r.bind(r, 38090)), '@site/docs/componenten/separator/index.mdx', 38090], e5cbcecc: [() => Promise.all([r.e(40532), r.e(77198), r.e(98554)]).then(r.bind(r, 63861)), '@site/docs/richtlijnen/formulieren/help/4-show-values/README.mdx', 63861], e73f9950: [() => r.e(58021).then(r.t.bind(r, 80905, 19)), '~blog/default/en-blog-tags-design-systems-week-ac5-list.json', 80905], e756447e: [() => r.e(83516).then(r.bind(r, 28973)), '@site/docs/handboek/developer/04-samenwerken-aan-componenten.md', 28973], e94ed988: [() => r.e(54171).then(r.bind(r, 87539)), '@site/blog/2020/20200804-innovatiebudget-voor-nl-design-system.md', 87539], e9b2227f: [() => r.e(71639).then(r.bind(r, 71323)), '@site/blog/2023/20231121-wmebv-gebruikerstesten.md', 71323], eae49527: [() => Promise.all([r.e(40532), r.e(43510)]).then(r.bind(r, 33150)), '@site/docs/community/events/design-systems-week-2023/english/2-timetable.md', 33150], ed728b89: [() => Promise.all([r.e(40532), r.e(33781)]).then(r.bind(r, 37299)), '@site/docs/wcag/1.2.04.mdx', 37299], ed74afc1: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(19552)]).then(r.bind(r, 96930)), '@site/docs/componenten/select/index.mdx', 96930], ed882ce6: [() => r.e(27691).then(r.bind(r, 41928)), '@site/docs/richtlijnen/formulieren/button/3-placement/README.mdx', 41928], edd694e5: [() => Promise.all([r.e(40532), r.e(56150), r.e(85709)]).then(r.bind(r, 71973)), '@site/docs/richtlijnen/formulieren/when-which/README.mdx', 71973], edd78324: [() => Promise.all([r.e(40532), r.e(77913), r.e(92040)]).then(r.bind(r, 23079)), '@site/docs/wcag/1.3.02.mdx', 23079], efb925bc: [() => Promise.all([r.e(40532), r.e(56150), r.e(87870)]).then(r.bind(r, 67876)), '@site/docs/richtlijnen/formulieren/error/README.mdx', 67876], efc435ec: [() => Promise.all([r.e(40532), r.e(76340)]).then(r.bind(r, 35137)), '@site/docs/wcag/1.2.03.mdx', 35137], f15b6573: [() => r.e(74605).then(r.bind(r, 74655)), '@site/blog/2021/20211215-over-figma-als-keuze-voor-het-nl-design-system.md', 74655], f1833817: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(43166)]).then(r.bind(r, 10545)), '@site/docs/componenten/table/index.mdx', 10545], f19e5f41: [() => r.e(95594).then(r.bind(r, 88845)), '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', 88845], f1c1d91e: [() => r.e(20550).then(r.bind(r, 67062)), '@site/blog/2024/20240305-meerdere-manieren-contact.md?truncated=true', 67062], f32db19e: [() => r.e(37698).then(r.t.bind(r, 24469, 19)), '/home/runner/work/documentatie/documentatie/.docusaurus/docusaurus-plugin-content-blog/default/plugin-route-context-module-100.json', 24469], f45121d1: [() => Promise.all([r.e(40532), r.e(94846)]).then(r.bind(r, 97199)), '@site/docs/wcag/2.3.01.mdx', 97199], f5daaf40: [() => r.e(47587).then(r.bind(r, 963)), '@site/blog/2019/20190507-kick-off-werkgroepen-van-het-nl-design-system.md?truncated=true', 963], f5dc78b8: [() => r.e(98625).then(r.bind(r, 64486)), '@site/blog/2022/20220706-een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system.md?truncated=true', 64486], f5f3cece: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(32652)]).then(r.bind(r, 58057)), '@site/docs/componenten/spinner/index.mdx', 58057], f61609af: [() => r.e(8932).then(r.bind(r, 33544)), '@site/docs/handboek/component-bijdragen/community-stappenplan-voor-organisaties.mdx', 33544], f633a06a: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(85270)]).then(r.bind(r, 63176)), '@site/docs/componenten/link-list/index.mdx', 63176], f67ebaad: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(25507)]).then(r.bind(r, 78735)), '@site/docs/componenten/video/index.mdx', 78735], f6cbeee1: [() => r.e(12535).then(r.t.bind(r, 74641, 19)), '~blog/default/en-blog-archive-10f.json', 74641], f92c4e24: [() => Promise.all([r.e(40532), r.e(74160)]).then(r.bind(r, 60543)), '@site/docs/wcag/2.4.06.mdx', 60543], f941fe6d: [() => Promise.all([r.e(40532), r.e(16110)]).then(r.bind(r, 6898)), '@site/docs/wcag/3.2.01.mdx', 6898], fba6c282: [() => r.e(4364).then(r.t.bind(r, 99501, 19)), '~blog/default/en-blog-038.json', 99501], fbf7ea66: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(20322)]).then(r.bind(r, 19111)), '@site/docs/componenten/case-card/index.mdx', 19111], fbfd5b4f: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(2930)]).then(r.bind(r, 28497)), '@site/docs/componenten/progress-list/index.mdx', 28497], fc3df1dc: [() => Promise.all([r.e(40532), r.e(75960)]).then(r.bind(r, 20962)), '@site/docs/wcag/2.2.02.mdx', 20962], fd2458ef: [() => r.e(39680).then(r.bind(r, 12039)), '@site/blog/2024/20240322-design-open-dag.md?truncated=true', 12039], fd87590a: [() => r.e(44603).then(r.t.bind(r, 25697, 19)), '~blog/default/en-blog-tags-meta-594.json', 25697], fe7ba64e: [() => Promise.all([r.e(40532), r.e(77198), r.e(12421)]).then(r.bind(r, 96803)), '@site/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', 96803], fe9a39bd: [() => r.e(35959).then(r.bind(r, 43677)), '@site/blog/2020/20200122-top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system.md', 43677], ff07fdf2: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(75221)]).then(r.bind(r, 69131)), '@site/docs/componenten/unordered-list/index.mdx', 69131], ff0d970f: [() => r.e(99605).then(r.bind(r, 956)), '@site/blog/2019/20190125-van-start-een-gezamelijk-design-system-voor-de-overheid.md', 956], ff61fdd4: [() => Promise.all([r.e(40532), r.e(77913), r.e(97693)]).then(r.bind(r, 57911)), '@site/docs/voorbeelden/patronen/formulieren/volgende-stap.mdx', 57911], ffcf9766: [() => Promise.all([r.e(40532), r.e(56150), r.e(85318), r.e(18244), r.e(7869)]).then(r.bind(r, 16641)), '@site/docs/componenten/number-input/index.mdx', 16641] };
    var i = r(52676);
    function l(e) {
     let { error: t, retry: r, pastDelay: n } = e;
@@ -3768,426 +3768,428 @@
     );
    }
    const h = [
-    { path: '/bingo/', component: d('/bingo/', '32d'), exact: !0 },
-    { path: '/bingo/voorbeeld-met-fouten-1', component: d('/bingo/voorbeeld-met-fouten-1', '382'), exact: !0 },
-    { path: '/bingo/voorbeeld-met-fouten-2', component: d('/bingo/voorbeeld-met-fouten-2', '73d'), exact: !0 },
-    { path: '/blog', component: d('/blog', 'e28'), exact: !0 },
-    { path: '/blog/archive', component: d('/blog/archive', 'f70'), exact: !0 },
-    { path: '/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', '9ba'), exact: !0 },
-    { path: '/blog/community-blocks', component: d('/blog/community-blocks', '20f'), exact: !0 },
-    { path: '/blog/community-online-formulieren', component: d('/blog/community-online-formulieren', '2d3'), exact: !0 },
-    { path: '/blog/de-mijlpalen-van-2022', component: d('/blog/de-mijlpalen-van-2022', '802'), exact: !0 },
-    { path: '/blog/design-open-dag', component: d('/blog/design-open-dag', '18d'), exact: !0 },
-    { path: '/blog/design-systems-in-het-buitenland-6-lessen', component: d('/blog/design-systems-in-het-buitenland-6-lessen', 'b57'), exact: !0 },
-    { path: '/blog/design-systems-week-2023-komt-eraan', component: d('/blog/design-systems-week-2023-komt-eraan', 'a8c'), exact: !0 },
-    { path: '/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'b32'), exact: !0 },
-    { path: '/blog/een-design-system-meerdere-producten', component: d('/blog/een-design-system-meerdere-producten', '522'), exact: !0 },
-    { path: '/blog/een-overheid-practice-what-you-preach', component: d('/blog/een-overheid-practice-what-you-preach', 'aa1'), exact: !0 },
-    { path: '/blog/gebruikerstest-ondernemers-den-haag', component: d('/blog/gebruikerstest-ondernemers-den-haag', '654'), exact: !0 },
-    { path: '/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', '932'), exact: !0 },
-    { path: '/blog/innovatiebudget-voor-nl-design-system', component: d('/blog/innovatiebudget-voor-nl-design-system', '07b'), exact: !0 },
-    { path: '/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '25a'), exact: !0 },
-    { path: '/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/blog/kick-off-werkgroepen-van-het-nl-design-system', '222'), exact: !0 },
-    { path: '/blog/licentiekeuze-nl-design-system', component: d('/blog/licentiekeuze-nl-design-system', '36b'), exact: !0 },
-    { path: '/blog/meerdere-manieren-contact', component: d('/blog/meerdere-manieren-contact', '4ed'), exact: !0 },
-    { path: '/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'bd7'), exact: !0 },
-    { path: '/blog/nl-design-system-in-2021', component: d('/blog/nl-design-system-in-2021', 'b94'), exact: !0 },
-    { path: '/blog/nl-design-system-zelfstandig-verder', component: d('/blog/nl-design-system-zelfstandig-verder', '916'), exact: !0 },
-    { path: '/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/blog/over-figma-als-keuze-voor-het-nl-design-system', 'b7d'), exact: !0 },
-    { path: '/blog/spacing-tokens', component: d('/blog/spacing-tokens', '178'), exact: !0 },
-    { path: '/blog/tags', component: d('/blog/tags', 'f94'), exact: !0 },
-    { path: '/blog/tags/architectuur', component: d('/blog/tags/architectuur', '219'), exact: !0 },
-    { path: '/blog/tags/buitenland', component: d('/blog/tags/buitenland', '40f'), exact: !0 },
-    { path: '/blog/tags/componenten', component: d('/blog/tags/componenten', '1db'), exact: !0 },
-    { path: '/blog/tags/contentrichtlijnen', component: d('/blog/tags/contentrichtlijnen', '784'), exact: !0 },
-    { path: '/blog/tags/design-systems', component: d('/blog/tags/design-systems', '075'), exact: !0 },
-    { path: '/blog/tags/design-systems-week', component: d('/blog/tags/design-systems-week', 'e88'), exact: !0 },
-    { path: '/blog/tags/design-tokens', component: d('/blog/tags/design-tokens', '015'), exact: !0 },
-    { path: '/blog/tags/designers', component: d('/blog/tags/designers', 'c39'), exact: !0 },
-    { path: '/blog/tags/developers', component: d('/blog/tags/developers', 'c7b'), exact: !0 },
-    { path: '/blog/tags/een-overheid', component: d('/blog/tags/een-overheid', '3b2'), exact: !0 },
-    { path: '/blog/tags/estafettemodel', component: d('/blog/tags/estafettemodel', 'f65'), exact: !0 },
-    { path: '/blog/tags/figma', component: d('/blog/tags/figma', '7e0'), exact: !0 },
-    { path: '/blog/tags/formulieren', component: d('/blog/tags/formulieren', '891'), exact: !0 },
-    { path: '/blog/tags/gebruiker-centraal', component: d('/blog/tags/gebruiker-centraal', 'e1e'), exact: !0 },
-    { path: '/blog/tags/gebruikersonderzoeken', component: d('/blog/tags/gebruikersonderzoeken', '8d7'), exact: !0 },
-    { path: '/blog/tags/gebruikerstesten', component: d('/blog/tags/gebruikerstesten', '5ff'), exact: !0 },
-    { path: '/blog/tags/lettertype', component: d('/blog/tags/lettertype', 'e97'), exact: !0 },
-    { path: '/blog/tags/logius', component: d('/blog/tags/logius', 'ef0'), exact: !0 },
-    { path: '/blog/tags/meta', component: d('/blog/tags/meta', 'c3b'), exact: !0 },
-    { path: '/blog/tags/mijlpalen', component: d('/blog/tags/mijlpalen', '6cd'), exact: !0 },
-    { path: '/blog/tags/nl-design-system', component: d('/blog/tags/nl-design-system', 'd2e'), exact: !0 },
-    { path: '/blog/tags/richtlijnen', component: d('/blog/tags/richtlijnen', 'ea4'), exact: !0 },
-    { path: '/blog/tags/toegankelijkheid', component: d('/blog/tags/toegankelijkheid', '5d0'), exact: !0 },
-    { path: '/blog/tags/update', component: d('/blog/tags/update', 'e38'), exact: !0 },
-    { path: '/blog/tags/werkgroepen', component: d('/blog/tags/werkgroepen', '7fb'), exact: !0 },
-    { path: '/blog/tags/word-press', component: d('/blog/tags/word-press', 'c96'), exact: !0 },
-    { path: '/blog/toegankelijke-foutmeldingen-formulieren', component: d('/blog/toegankelijke-foutmeldingen-formulieren', 'dc6'), exact: !0 },
-    { path: '/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', 'ac9'), exact: !0 },
-    { path: '/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e3f'), exact: !0 },
-    { path: '/blog/update-nl-design-system', component: d('/blog/update-nl-design-system', 'd7c'), exact: !0 },
-    { path: '/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', '925'), exact: !0 },
-    { path: '/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '3b9'), exact: !0 },
-    { path: '/blog/wmebv-gebruikerstesten', component: d('/blog/wmebv-gebruikerstesten', '2ec'), exact: !0 },
-    { path: '/contrast/', component: d('/contrast/', '6e5'), exact: !0 },
-    { path: '/search', component: d('/search', 'c7a'), exact: !0 },
-    { path: '/', component: d('/', 'cab'), exact: !0 },
+    { path: '/en/bingo/', component: d('/en/bingo/', '4ac'), exact: !0 },
+    { path: '/en/bingo/voorbeeld-met-fouten-1', component: d('/en/bingo/voorbeeld-met-fouten-1', 'dab'), exact: !0 },
+    { path: '/en/bingo/voorbeeld-met-fouten-2', component: d('/en/bingo/voorbeeld-met-fouten-2', 'd09'), exact: !0 },
+    { path: '/en/blog', component: d('/en/blog', '607'), exact: !0 },
+    { path: '/en/blog/archive', component: d('/en/blog/archive', '170'), exact: !0 },
+    { path: '/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', component: d('/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system', 'eff'), exact: !0 },
+    { path: '/en/blog/community-blocks', component: d('/en/blog/community-blocks', 'd61'), exact: !0 },
+    { path: '/en/blog/community-online-formulieren', component: d('/en/blog/community-online-formulieren', 'c2a'), exact: !0 },
+    { path: '/en/blog/de-mijlpalen-van-2022', component: d('/en/blog/de-mijlpalen-van-2022', '8f1'), exact: !0 },
+    { path: '/en/blog/design-open-dag', component: d('/en/blog/design-open-dag', '16e'), exact: !0 },
+    { path: '/en/blog/design-systems-in-het-buitenland-6-lessen', component: d('/en/blog/design-systems-in-het-buitenland-6-lessen', '5c7'), exact: !0 },
+    { path: '/en/blog/design-systems-week-2023-komt-eraan', component: d('/en/blog/design-systems-week-2023-komt-eraan', '3af'), exact: !0 },
+    { path: '/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', component: d('/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system', 'd27'), exact: !0 },
+    { path: '/en/blog/een-design-system-meerdere-producten', component: d('/en/blog/een-design-system-meerdere-producten', '83a'), exact: !0 },
+    { path: '/en/blog/een-overheid-practice-what-you-preach', component: d('/en/blog/een-overheid-practice-what-you-preach', '298'), exact: !0 },
+    { path: '/en/blog/gebruikerstest-ondernemers-den-haag', component: d('/en/blog/gebruikerstest-ondernemers-den-haag', 'ed2'), exact: !0 },
+    { path: '/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', component: d('/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system', 'e52'), exact: !0 },
+    { path: '/en/blog/innovatiebudget-voor-nl-design-system', component: d('/en/blog/innovatiebudget-voor-nl-design-system', 'a92'), exact: !0 },
+    { path: '/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', component: d('/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur', '5a9'), exact: !0 },
+    { path: '/en/blog/kick-off-werkgroepen-van-het-nl-design-system', component: d('/en/blog/kick-off-werkgroepen-van-het-nl-design-system', '75e'), exact: !0 },
+    { path: '/en/blog/licentiekeuze-nl-design-system', component: d('/en/blog/licentiekeuze-nl-design-system', '322'), exact: !0 },
+    { path: '/en/blog/meerdere-manieren-contact', component: d('/en/blog/meerdere-manieren-contact', '7b8'), exact: !0 },
+    { path: '/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', component: d('/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype', 'b74'), exact: !0 },
+    { path: '/en/blog/nl-design-system-in-2021', component: d('/en/blog/nl-design-system-in-2021', 'bbc'), exact: !0 },
+    { path: '/en/blog/nl-design-system-zelfstandig-verder', component: d('/en/blog/nl-design-system-zelfstandig-verder', 'cf9'), exact: !0 },
+    { path: '/en/blog/over-figma-als-keuze-voor-het-nl-design-system', component: d('/en/blog/over-figma-als-keuze-voor-het-nl-design-system', '750'), exact: !0 },
+    { path: '/en/blog/spacing-tokens', component: d('/en/blog/spacing-tokens', '11e'), exact: !0 },
+    { path: '/en/blog/tags', component: d('/en/blog/tags', '8bb'), exact: !0 },
+    { path: '/en/blog/tags/architectuur', component: d('/en/blog/tags/architectuur', '93f'), exact: !0 },
+    { path: '/en/blog/tags/buitenland', component: d('/en/blog/tags/buitenland', 'c08'), exact: !0 },
+    { path: '/en/blog/tags/componenten', component: d('/en/blog/tags/componenten', '39e'), exact: !0 },
+    { path: '/en/blog/tags/contentrichtlijnen', component: d('/en/blog/tags/contentrichtlijnen', '267'), exact: !0 },
+    { path: '/en/blog/tags/design-systems', component: d('/en/blog/tags/design-systems', 'acf'), exact: !0 },
+    { path: '/en/blog/tags/design-systems-week', component: d('/en/blog/tags/design-systems-week', '9a8'), exact: !0 },
+    { path: '/en/blog/tags/design-tokens', component: d('/en/blog/tags/design-tokens', 'c98'), exact: !0 },
+    { path: '/en/blog/tags/designers', component: d('/en/blog/tags/designers', '115'), exact: !0 },
+    { path: '/en/blog/tags/developers', component: d('/en/blog/tags/developers', '0b0'), exact: !0 },
+    { path: '/en/blog/tags/een-overheid', component: d('/en/blog/tags/een-overheid', '648'), exact: !0 },
+    { path: '/en/blog/tags/estafettemodel', component: d('/en/blog/tags/estafettemodel', 'a2f'), exact: !0 },
+    { path: '/en/blog/tags/figma', component: d('/en/blog/tags/figma', '407'), exact: !0 },
+    { path: '/en/blog/tags/formulieren', component: d('/en/blog/tags/formulieren', '011'), exact: !0 },
+    { path: '/en/blog/tags/gebruiker-centraal', component: d('/en/blog/tags/gebruiker-centraal', '6fa'), exact: !0 },
+    { path: '/en/blog/tags/gebruikersonderzoeken', component: d('/en/blog/tags/gebruikersonderzoeken', '92a'), exact: !0 },
+    { path: '/en/blog/tags/gebruikerstesten', component: d('/en/blog/tags/gebruikerstesten', 'fe0'), exact: !0 },
+    { path: '/en/blog/tags/lettertype', component: d('/en/blog/tags/lettertype', '982'), exact: !0 },
+    { path: '/en/blog/tags/logius', component: d('/en/blog/tags/logius', '31a'), exact: !0 },
+    { path: '/en/blog/tags/meta', component: d('/en/blog/tags/meta', '1b2'), exact: !0 },
+    { path: '/en/blog/tags/mijlpalen', component: d('/en/blog/tags/mijlpalen', '70a'), exact: !0 },
+    { path: '/en/blog/tags/nl-design-system', component: d('/en/blog/tags/nl-design-system', '684'), exact: !0 },
+    { path: '/en/blog/tags/richtlijnen', component: d('/en/blog/tags/richtlijnen', '3c7'), exact: !0 },
+    { path: '/en/blog/tags/toegankelijkheid', component: d('/en/blog/tags/toegankelijkheid', 'f80'), exact: !0 },
+    { path: '/en/blog/tags/update', component: d('/en/blog/tags/update', '651'), exact: !0 },
+    { path: '/en/blog/tags/werkgroepen', component: d('/en/blog/tags/werkgroepen', 'e31'), exact: !0 },
+    { path: '/en/blog/tags/word-press', component: d('/en/blog/tags/word-press', '87e'), exact: !0 },
+    { path: '/en/blog/toegankelijke-foutmeldingen-formulieren', component: d('/en/blog/toegankelijke-foutmeldingen-formulieren', '078'), exact: !0 },
+    { path: '/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', component: d('/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system', '3e3'), exact: !0 },
+    { path: '/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', component: d('/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system', 'e9d'), exact: !0 },
+    { path: '/en/blog/update-nl-design-system', component: d('/en/blog/update-nl-design-system', 'fca'), exact: !0 },
+    { path: '/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', component: d('/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid', 'c4b'), exact: !0 },
+    { path: '/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', component: d('/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties', '9ab'), exact: !0 },
+    { path: '/en/blog/wmebv-gebruikerstesten', component: d('/en/blog/wmebv-gebruikerstesten', '9d6'), exact: !0 },
+    { path: '/en/contrast/', component: d('/en/contrast/', 'dce'), exact: !0 },
+    { path: '/en/search', component: d('/en/search', '1e0'), exact: !0 },
+    { path: '/en/', component: d('/en/', 'b64'), exact: !0 },
     {
-     path: '/',
-     component: d('/', '308'),
+     path: '/en/',
+     component: d('/en/', 'db6'),
      routes: [
       {
-       path: '/',
-       component: d('/', 'a92'),
+       path: '/en/',
+       component: d('/en/', 'c97'),
        routes: [
-        { path: '/tags', component: d('/tags', 'd7a'), exact: !0 },
-        { path: '/tags/community', component: d('/tags/community', 'e15'), exact: !0 },
+        { path: '/en/tags', component: d('/en/tags', '01c'), exact: !0 },
+        { path: '/en/tags/community', component: d('/en/tags/community', '1ff'), exact: !0 },
         {
-         path: '/',
-         component: d('/', '6fd'),
+         path: '/en/',
+         component: d('/en/', 'c7a'),
          routes: [
-          { path: '/accordion', component: d('/accordion', 'a3b'), exact: !0, sidebar: 'componenten' },
-          { path: '/action-group', component: d('/action-group', 'e09'), exact: !0, sidebar: 'componenten' },
-          { path: '/alert', component: d('/alert', '16f'), exact: !0, sidebar: 'componenten' },
-          { path: '/alert-dialog', component: d('/alert-dialog', '9e5'), exact: !0, sidebar: 'componenten' },
-          { path: '/avatar', component: d('/avatar', 'ed9'), exact: !0, sidebar: 'componenten' },
-          { path: '/blockquote', component: d('/blockquote', '85f'), exact: !0, sidebar: 'componenten' },
-          { path: '/breadcrumb-navigation', component: d('/breadcrumb-navigation', 'd89'), exact: !0, sidebar: 'componenten' },
-          { path: '/button', component: d('/button', '7ed'), exact: !0, sidebar: 'componenten' },
-          { path: '/Calendar', component: d('/Calendar', '206'), exact: !0, sidebar: 'componenten' },
-          { path: '/card-as-link', component: d('/card-as-link', 'c7b'), exact: !0, sidebar: 'componenten' },
-          { path: '/case-card', component: d('/case-card', '92c'), exact: !0, sidebar: 'componenten' },
-          { path: '/CHANGELOG', component: d('/CHANGELOG', '756'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/checkbox', component: d('/checkbox', '8c2'), exact: !0, sidebar: 'componenten' },
-          { path: '/checkbox-group', component: d('/checkbox-group', 'a25'), exact: !0, sidebar: 'componenten' },
-          { path: '/coc', component: d('/coc', '1af'), exact: !0 },
-          { path: '/colofon', component: d('/colofon', 'ed3'), exact: !0 },
-          { path: '/community', component: d('/community', '42f'), exact: !0, sidebar: 'community' },
-          { path: '/community/design-open-dag/bedankt', component: d('/community/design-open-dag/bedankt', 'd56'), exact: !0 },
-          { path: '/community/estafettemodeldag/bedankt', component: d('/community/estafettemodeldag/bedankt', 'f60'), exact: !0 },
-          { path: '/community/events/estafettemodeldag', component: d('/community/events/estafettemodeldag', '5f2'), exact: !0, sidebar: 'community' },
-          { path: '/community/events/overzicht', component: d('/community/events/overzicht', 'acd'), exact: !0, sidebar: 'community' },
-          { path: '/community/sluit-je-aan', component: d('/community/sluit-je-aan', '00a'), exact: !0, sidebar: 'community' },
-          { path: '/community/sluit-je-aan/bedankt', component: d('/community/sluit-je-aan/bedankt', 'c5c'), exact: !0 },
-          { path: '/community/wie-doet-mee', component: d('/community/wie-doet-mee', 'd5c'), exact: !0, sidebar: 'community' },
-          { path: '/componenten/', component: d('/componenten/', '804'), exact: !0, sidebar: 'componenten' },
-          { path: '/data-badge', component: d('/data-badge', 'f88'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-input', component: d('/date-input', 'a49'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-input-group', component: d('/date-input-group', '428'), exact: !0, sidebar: 'componenten' },
-          { path: '/date-picker', component: d('/date-picker', 'f04'), exact: !0, sidebar: 'componenten' },
-          { path: '/description-list', component: d('/description-list', '13a'), exact: !0, sidebar: 'componenten' },
-          { path: '/dot-badge', component: d('/dot-badge', 'f25'), exact: !0, sidebar: 'componenten' },
-          { path: '/drawer', component: d('/drawer', 'f81'), exact: !0, sidebar: 'componenten' },
-          { path: '/events/design-open-dag', component: d('/events/design-open-dag', 'c4d'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour', component: d('/events/design-open-hour', '08f'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour/aanmelden', component: d('/events/design-open-hour/aanmelden', 'a61'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-open-hour/aanmelden/bedankt', component: d('/events/design-open-hour/aanmelden/bedankt', '796'), exact: !0 },
-          { path: '/events/design-open-hour/overzicht', component: d('/events/design-open-hour/overzicht', '0f1'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week-2022', component: d('/events/design-systems-week-2022', '528'), exact: !0 },
-          { path: '/events/design-systems-week-2023', component: d('/events/design-systems-week-2023', '50d'), exact: !0 },
-          { path: '/events/design-systems-week-2023/en/program', component: d('/events/design-systems-week-2023/en/program', 'dc2'), exact: !0 },
-          { path: '/events/design-systems-week-2023/en/timetable', component: d('/events/design-systems-week-2023/en/timetable', '818'), exact: !0 },
-          { path: '/events/design-systems-week-2023/programma', component: d('/events/design-systems-week-2023/programma', 'b22'), exact: !0 },
-          { path: '/events/design-systems-week-2023/tijdschema', component: d('/events/design-systems-week-2023/tijdschema', '4c1'), exact: !0 },
-          { path: '/events/design-systems-week-2024', component: d('/events/design-systems-week-2024', 'fa3'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week-2024/en', component: d('/events/design-systems-week-2024/en', '423'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week-2024/en/program', component: d('/events/design-systems-week-2024/en/program', 'eac'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week-2024/programma', component: d('/events/design-systems-week-2024/programma', '213'), exact: !0, sidebar: 'community' },
-          { path: '/events/design-systems-week/aanmelden', component: d('/events/design-systems-week/aanmelden', 'af5'), exact: !0 },
-          { path: '/events/design-systems-week/aanmelden/bedankt', component: d('/events/design-systems-week/aanmelden/bedankt', '5be'), exact: !0 },
-          { path: '/events/design-systems-week/sign-up', component: d('/events/design-systems-week/sign-up', '5a4'), exact: !0 },
-          { path: '/events/design-systems-week/sign-up/thanks', component: d('/events/design-systems-week/sign-up/thanks', 'd35'), exact: !0 },
-          { path: '/events/developer-open-hour', component: d('/events/developer-open-hour', '572'), exact: !0, sidebar: 'community' },
-          { path: '/events/developer-open-hour/aanmelden', component: d('/events/developer-open-hour/aanmelden', '1f4'), exact: !0, sidebar: 'community' },
-          { path: '/events/developer-open-hour/aanmelden/bedankt', component: d('/events/developer-open-hour/aanmelden/bedankt', 'fb6'), exact: !0 },
-          { path: '/events/developer-open-hour/overzicht', component: d('/events/developer-open-hour/overzicht', '6d5'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat', component: d('/events/heartbeat', 'ee2'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/aanmelden', component: d('/events/heartbeat/aanmelden', 'ef9'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/aanmelden/bedankt', component: d('/events/heartbeat/aanmelden/bedankt', 'e99'), exact: !0 },
-          { path: '/events/heartbeat/overzicht', component: d('/events/heartbeat/overzicht', 'f94'), exact: !0, sidebar: 'community' },
-          { path: '/events/heartbeat/videos', component: d('/events/heartbeat/videos', 'a37'), exact: !0, sidebar: 'community' },
-          { path: '/fieldset', component: d('/fieldset', 'a0d'), exact: !0, sidebar: 'componenten' },
-          { path: '/figure', component: d('/figure', '47b'), exact: !0, sidebar: 'componenten' },
-          { path: '/file-input', component: d('/file-input', 'e63'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field', component: d('/form-field', 'de8'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-checkbox-option', component: d('/form-field-checkbox-option', '53c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-description', component: d('/form-field-description', '1bd'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-error-message', component: d('/form-field-error-message', 'e1c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-label', component: d('/form-field-label', '31e'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-option-label', component: d('/form-field-option-label', '598'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-partial', component: d('/form-field-partial', '48c'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-partial-label', component: d('/form-field-partial-label', '0e8'), exact: !0, sidebar: 'componenten' },
-          { path: '/form-field-radio-option', component: d('/form-field-radio-option', '6ca'), exact: !0, sidebar: 'componenten' },
-          { path: '/handboek', component: d('/handboek', '198'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/candidate-stappenplan', component: d('/handboek/component-bijdragen/candidate-stappenplan', '0ad'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/community-stappenplan', component: d('/handboek/component-bijdragen/community-stappenplan', '83c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/community-stappenplan-voor-organisaties', component: d('/handboek/component-bijdragen/community-stappenplan-voor-organisaties', '4a6'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/definition-of-done', component: d('/handboek/component-bijdragen/definition-of-done', '690'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/handboek/component-bijdragen/hall-of-fame-stappenplan', '319'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/handboek/component-bijdragen/help-wanted-stappenplan', '7eb'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/component-bijdragen/overzicht', component: d('/handboek/component-bijdragen/overzicht', '6c2'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/design-tokens/', component: d('/handboek/design-tokens/', 'ba2'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/', component: d('/handboek/designer/', 'd2b'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/community', component: d('/handboek/designer/community', '3a0'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/figma-structuur', component: d('/handboek/designer/figma-structuur', 'b8d'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/overzicht', component: d('/handboek/designer/overzicht', '8b5'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/stappenplan', component: d('/handboek/designer/stappenplan', 'b2e'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/voorbeeld-thema', component: d('/handboek/designer/voorbeeld-thema', '531'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/designer/zelf-componenten-maken', component: d('/handboek/designer/zelf-componenten-maken', '2ce'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/aan-de-slag', component: d('/handboek/developer/aan-de-slag', '45e'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/architectuur', component: d('/handboek/developer/architectuur', '270'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/component-inzetten', component: d('/handboek/developer/component-inzetten', 'b57'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/component-uitbreiden', component: d('/handboek/developer/component-uitbreiden', '3d3'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/componenten-maken', component: d('/handboek/developer/componenten-maken', '13b'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/herbruikbare-css', component: d('/handboek/developer/herbruikbare-css', '233'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/meewerken-als-developer', component: d('/handboek/developer/meewerken-als-developer', 'b38'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/overzicht', component: d('/handboek/developer/overzicht', '59c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/samenwerken-aan-componenten', component: d('/handboek/developer/samenwerken-aan-componenten', '5a3'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/developer/thema-maken', component: d('/handboek/developer/thema-maken', 'e85'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/estafettemodel', component: d('/handboek/estafettemodel', '1f8'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/introductie', component: d('/handboek/introductie', 'f9a'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/leverancier/introductie', component: d('/handboek/leverancier/introductie', '4a5'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/manager/introductie', component: d('/handboek/manager/introductie', 'd4c'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/naamgeving', component: d('/handboek/naamgeving', '7ee'), exact: !0 },
-          { path: '/handboek/organisatie/meedoen', component: d('/handboek/organisatie/meedoen', 'daa'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/organisatie/overzicht', component: d('/handboek/organisatie/overzicht', '6be'), exact: !0, sidebar: 'handboek' },
-          { path: '/handboek/organisatie/vragen-over-aanbestedingen', component: d('/handboek/organisatie/vragen-over-aanbestedingen', 'd3e'), exact: !0, sidebar: 'handboek' },
-          { path: '/heading', component: d('/heading', '805'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-1', component: d('/heading-1', 'da6'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-2', component: d('/heading-2', 'aa5'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-3', component: d('/heading-3', 'd27'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-4', component: d('/heading-4', '238'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-5', component: d('/heading-5', '628'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-6', component: d('/heading-6', '314'), exact: !0, sidebar: 'componenten' },
-          { path: '/heading-group', component: d('/heading-group', '44c'), exact: !0, sidebar: 'componenten' },
-          { path: '/icon', component: d('/icon', '86d'), exact: !0, sidebar: 'componenten' },
-          { path: '/invalid-form-alert', component: d('/invalid-form-alert', 'ae2'), exact: !0, sidebar: 'componenten' },
-          { path: '/language-navigation', component: d('/language-navigation', '50a'), exact: !0, sidebar: 'componenten' },
-          { path: '/legend', component: d('/legend', '726'), exact: !0, sidebar: 'componenten' },
-          { path: '/link', component: d('/link', '028'), exact: !0, sidebar: 'componenten' },
-          { path: '/link-list', component: d('/link-list', '574'), exact: !0, sidebar: 'componenten' },
-          { path: '/modal-dialog', component: d('/modal-dialog', '03c'), exact: !0, sidebar: 'componenten' },
-          { path: '/navigation-bar', component: d('/navigation-bar', '219'), exact: !0, sidebar: 'componenten' },
-          { path: '/non-modal-dialog', component: d('/non-modal-dialog', '9e9'), exact: !0, sidebar: 'componenten' },
-          { path: '/notification-banner', component: d('/notification-banner', '087'), exact: !0, sidebar: 'componenten' },
-          { path: '/number-badge', component: d('/number-badge', '1ee'), exact: !0, sidebar: 'componenten' },
-          { path: '/number-input', component: d('/number-input', '0d1'), exact: !0, sidebar: 'componenten' },
-          { path: '/open-source/cc0', component: d('/open-source/cc0', '80b'), exact: !0 },
-          { path: '/open-source/eupl', component: d('/open-source/eupl', '097'), exact: !0 },
-          { path: '/ordered-list', component: d('/ordered-list', '4ec'), exact: !0, sidebar: 'componenten' },
-          { path: '/page-footer', component: d('/page-footer', '821'), exact: !0, sidebar: 'componenten' },
-          { path: '/page-header', component: d('/page-header', '697'), exact: !0, sidebar: 'componenten' },
-          { path: '/pagination', component: d('/pagination', 'aa9'), exact: !0, sidebar: 'componenten' },
-          { path: '/paragraph', component: d('/paragraph', 'e83'), exact: !0, sidebar: 'componenten' },
-          { path: '/password-input', component: d('/password-input', '93c'), exact: !0, sidebar: 'componenten' },
-          { path: '/pre-heading', component: d('/pre-heading', '87e'), exact: !0, sidebar: 'componenten' },
-          { path: '/privacyverklaring', component: d('/privacyverklaring', 'e5f'), exact: !0 },
-          { path: '/progress-bar', component: d('/progress-bar', 'db6'), exact: !0, sidebar: 'componenten' },
-          { path: '/progress-list', component: d('/progress-list', '5da'), exact: !0, sidebar: 'componenten' },
-          { path: '/project', component: d('/project', 'fa6'), exact: !0, sidebar: 'project' },
-          { path: '/project/blijf-op-de-hoogte', component: d('/project/blijf-op-de-hoogte', 'c41'), exact: !0, sidebar: 'project' },
-          { path: '/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '645'), exact: !0 },
-          { path: '/project/faq', component: d('/project/faq', 'e37'), exact: !0, sidebar: 'project' },
-          { path: '/project/kernteam', component: d('/project/kernteam', 'ae3'), exact: !0, sidebar: 'project' },
-          { path: '/project/links', component: d('/project/links', '342'), exact: !0, sidebar: 'project' },
-          { path: '/project/nieuwsbrief', component: d('/project/nieuwsbrief', 'de8'), exact: !0 },
-          { path: '/project/over-nl-design-system', component: d('/project/over-nl-design-system', '7b0'), exact: !0, sidebar: 'project' },
-          { path: '/radio-button', component: d('/radio-button', '63a'), exact: !0, sidebar: 'componenten' },
-          { path: '/radio-group', component: d('/radio-group', 'cce'), exact: !0, sidebar: 'componenten' },
-          { path: '/range', component: d('/range', '9a8'), exact: !0, sidebar: 'componenten' },
-          { path: '/rich-text-content', component: d('/rich-text-content', '73e'), exact: !0, sidebar: 'componenten' },
-          { path: '/richtlijnen', component: d('/richtlijnen', 'b7b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren', component: d('/richtlijnen/formulieren', '1b2'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina/', component: d('/richtlijnen/formulieren/bevestigingspagina/', '90f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen', component: d('/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen', '3ef'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina/succesmelding', component: d('/richtlijnen/formulieren/bevestigingspagina/succesmelding', 'e6b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding', component: d('/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding', '2a9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/bevestigingspagina/vervolgstappen', component: d('/richtlijnen/formulieren/bevestigingspagina/vervolgstappen', '269'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons', component: d('/richtlijnen/formulieren/buttons', 'f7d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/afbeelding-als-button', component: d('/richtlijnen/formulieren/buttons/afbeelding-als-button', '0fb'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/disabled-submitbuttons', component: d('/richtlijnen/formulieren/buttons/disabled-submitbuttons', '35a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/duidelijk-buttontekst', component: d('/richtlijnen/formulieren/buttons/duidelijk-buttontekst', 'a29'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/niet-automatisch-versturen', component: d('/richtlijnen/formulieren/buttons/niet-automatisch-versturen', '727'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/plaatsing', component: d('/richtlijnen/formulieren/buttons/plaatsing', '0fb'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/toegankelijke-naam', component: d('/richtlijnen/formulieren/buttons/toegankelijke-naam', '868'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/buttons/toetsenbordbediening', component: d('/richtlijnen/formulieren/buttons/toetsenbordbediening', '057'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/', component: d('/richtlijnen/formulieren/descriptions/', 'a77'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', component: d('/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', 'ad1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/koppelen', component: d('/richtlijnen/formulieren/descriptions/koppelen', '97b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/lengte', component: d('/richtlijnen/formulieren/descriptions/lengte', 'eac'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', component: d('/richtlijnen/formulieren/descriptions/meerdere-koppelen', '186'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/plaatsing', component: d('/richtlijnen/formulieren/descriptions/plaatsing', '7ac'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', component: d('/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', '120'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/', component: d('/richtlijnen/formulieren/foutmeldingen/', '182'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/beschrijven', component: d('/richtlijnen/formulieren/foutmeldingen/beschrijven', 'ab8'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/controleren', component: d('/richtlijnen/formulieren/foutmeldingen/controleren', '18a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code', component: d('/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code', 'cfc'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie', component: d('/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie', '3e9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/plaatsing', component: d('/richtlijnen/formulieren/foutmeldingen/plaatsing', '765'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/samenvatting', component: d('/richtlijnen/formulieren/foutmeldingen/samenvatting', 'de1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback', component: d('/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback', 'fb1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/', component: d('/richtlijnen/formulieren/labels/', '9b2'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/alleen-tekst', component: d('/richtlijnen/formulieren/labels/alleen-tekst', '942'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/altijd-zichtbaar', component: d('/richtlijnen/formulieren/labels/altijd-zichtbaar', '4be'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/duidelijke-tekst', component: d('/richtlijnen/formulieren/labels/duidelijke-tekst', '5fd'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/plaatsing', component: d('/richtlijnen/formulieren/labels/plaatsing', '597'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/toegankelijke-naam', component: d('/richtlijnen/formulieren/labels/toegankelijke-naam', '038'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/labels/zichtbare-naam', component: d('/richtlijnen/formulieren/labels/zichtbare-naam', '76e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/links/', component: d('/richtlijnen/formulieren/links/', '103'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/links/niet-in-label', component: d('/richtlijnen/formulieren/links/niet-in-label', '22a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/links/nieuwe-tab', component: d('/richtlijnen/formulieren/links/nieuwe-tab', '041'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/links/plaatsing', component: d('/richtlijnen/formulieren/links/plaatsing', '8fd'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/', component: d('/richtlijnen/formulieren/meerdere-stappen/', '9b9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/consistente-benaming', component: d('/richtlijnen/formulieren/meerdere-stappen/consistente-benaming', 'e85'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', component: d('/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', '5cf'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/samenvatting', component: d('/richtlijnen/formulieren/meerdere-stappen/samenvatting', '7d1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven', component: d('/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven', '8ae'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen', component: d('/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen', 'ea5'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders/', component: d('/richtlijnen/formulieren/placeholders/', '6b2'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders/kleurcontrast', component: d('/richtlijnen/formulieren/placeholders/kleurcontrast', 'b9a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders/niet-als-label', component: d('/richtlijnen/formulieren/placeholders/niet-als-label', 'b48'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders/verwarring-voorkomen', component: d('/richtlijnen/formulieren/placeholders/verwarring-voorkomen', 'd2d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/placeholders/zoekfunctie', component: d('/richtlijnen/formulieren/placeholders/zoekfunctie', '81a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/toetsenbord/', component: d('/richtlijnen/formulieren/toetsenbord/', '438'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/toetsenbord/tabindex', component: d('/richtlijnen/formulieren/toetsenbord/tabindex', '945'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/', component: d('/richtlijnen/formulieren/visueel-ontwerp/', '0e9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', component: d('/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', '711'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur', component: d('/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur', '697'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons', component: d('/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons', '7a4'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar', component: d('/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar', 'c7c'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', component: d('/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', '4ba'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', component: d('/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', '4a4'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar', component: d('/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar', '33d'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar', component: d('/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar', '9d9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/', component: d('/richtlijnen/formulieren/voorkom-fouten/', '118'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/autocomplete', component: d('/richtlijnen/formulieren/voorkom-fouten/autocomplete', 'a93'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen', component: d('/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen', 'a7e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen', component: d('/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen', 'd51'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/geldige-waardes', component: d('/richtlijnen/formulieren/voorkom-fouten/geldige-waardes', '38c'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af', component: d('/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af', '904'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', component: d('/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', '045'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/', component: d('/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/', '402'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/', component: d('/richtlijnen/formulieren/vragen/', '0a0'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/check-noodzaak', component: d('/richtlijnen/formulieren/vragen/check-noodzaak', '36e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', component: d('/richtlijnen/formulieren/vragen/geen-min-max-lengte', 'a23'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/leg-uit-waarom', component: d('/richtlijnen/formulieren/vragen/leg-uit-waarom', 'b82'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/manieren-voor-contact', component: d('/richtlijnen/formulieren/vragen/manieren-voor-contact', '022'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/vragen/voorkom-dubbel-werk', component: d('/richtlijnen/formulieren/vragen/voorkom-dubbel-werk', '951'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/wanneer-welk-form-element/', component: d('/richtlijnen/formulieren/wanneer-welk-form-element/', 'a87'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen', component: d('/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen', '39b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid', component: d('/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid', '9fc'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl', component: d('/richtlijnen/stijl', '3c9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/iconen', component: d('/richtlijnen/stijl/iconen', '5b9'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/kleuren', component: d('/richtlijnen/stijl/kleuren', 'fa7'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/ruimte', component: d('/richtlijnen/stijl/ruimte', '79f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/richtlijnen/stijl/typografie', component: d('/richtlijnen/stijl/typografie', '483'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/select', component: d('/select', '5e7'), exact: !0, sidebar: 'componenten' },
-          { path: '/separator', component: d('/separator', '454'), exact: !0, sidebar: 'componenten' },
-          { path: '/side-navigation', component: d('/side-navigation', '600'), exact: !0, sidebar: 'componenten' },
-          { path: '/skip-link', component: d('/skip-link', 'd13'), exact: !0, sidebar: 'componenten' },
-          { path: '/spinner', component: d('/spinner', '70f'), exact: !0, sidebar: 'componenten' },
-          { path: '/status-badge', component: d('/status-badge', '6aa'), exact: !0, sidebar: 'componenten' },
-          { path: '/strong', component: d('/strong', '40f'), exact: !0, sidebar: 'componenten' },
-          { path: '/sub-heading', component: d('/sub-heading', 'b7e'), exact: !0, sidebar: 'componenten' },
-          { path: '/summary-list', component: d('/summary-list', '4fa'), exact: !0, sidebar: 'componenten' },
-          { path: '/switch', component: d('/switch', '5b4'), exact: !0, sidebar: 'componenten' },
-          { path: '/table', component: d('/table', 'b60'), exact: !0, sidebar: 'componenten' },
-          { path: '/tabs', component: d('/tabs', '963'), exact: !0, sidebar: 'componenten' },
-          { path: '/task-list', component: d('/task-list', '293'), exact: !0, sidebar: 'componenten' },
-          { path: '/text-input', component: d('/text-input', '54b'), exact: !0, sidebar: 'componenten' },
-          { path: '/text-input-group', component: d('/text-input-group', 'ed4'), exact: !0, sidebar: 'componenten' },
-          { path: '/textarea', component: d('/textarea', '5a3'), exact: !0, sidebar: 'componenten' },
-          { path: '/toegankelijkheidsverklaring', component: d('/toegankelijkheidsverklaring', 'e63'), exact: !0 },
-          { path: '/toegankelijkheidsverklaring/rapport-2023', component: d('/toegankelijkheidsverklaring/rapport-2023', 'feb'), exact: !0 },
-          { path: '/toggletip', component: d('/toggletip', '5b0'), exact: !0, sidebar: 'componenten' },
-          { path: '/unordered-list', component: d('/unordered-list', '525'), exact: !0, sidebar: 'componenten' },
-          { path: '/video', component: d('/video', '3ac'), exact: !0, sidebar: 'componenten' },
-          { path: '/voorbeelden', component: d('/voorbeelden', 'a40'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/', component: d('/voorbeelden/', 'fa9'), exact: !0 },
-          { path: '/voorbeelden/onderzoek/', component: d('/voorbeelden/onderzoek/', '62d'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen', component: d('/voorbeelden/patronen', 'c72'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren', component: d('/voorbeelden/patronen/formulieren', 'c44'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/voorbeelden/patronen/formulieren/bevestigingspagina', '5ca'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/controlepagina', component: d('/voorbeelden/patronen/formulieren/controlepagina', '50c'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/voorbeelden/patronen/formulieren/foutmeldingen', '4a9'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/funnel-header', component: d('/voorbeelden/patronen/formulieren/funnel-header', '4d8'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/inloggen', component: d('/voorbeelden/patronen/formulieren/inloggen', '651'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/intropagina', component: d('/voorbeelden/patronen/formulieren/intropagina', 'a29'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/voorbeelden/patronen/formulieren/meerstappenformulier', '96a'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/voorbeelden/patronen/formulieren/niet-verplichte-velden', '1e0'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '0b8'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/responsive-design', component: d('/voorbeelden/patronen/formulieren/responsive-design', 'a94'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'fe2'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/startpunt', component: d('/voorbeelden/patronen/formulieren/startpunt', '6a4'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/voorbeelden/patronen/formulieren/terug-navigeren', '567'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/uploaden', component: d('/voorbeelden/patronen/formulieren/uploaden', 'a29'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/visual-design', component: d('/voorbeelden/patronen/formulieren/visual-design', '2ad'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/volgende-stap', component: d('/voorbeelden/patronen/formulieren/volgende-stap', '977'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/voorbeelden/patronen/formulieren/voortgang-indicatie', '038'), exact: !0, sidebar: 'voorbeelden' },
-          { path: '/voorbeelden/templates/', component: d('/voorbeelden/templates/', '2b1'), exact: !0 },
-          { path: '/wcag', component: d('/wcag', 'd32'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.1.1', component: d('/wcag/1.1.1', '612'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.1', component: d('/wcag/1.2.1', '97b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.2', component: d('/wcag/1.2.2', 'da1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.3', component: d('/wcag/1.2.3', 'c6f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.4', component: d('/wcag/1.2.4', 'b6f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.5', component: d('/wcag/1.2.5', '7c1'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.2.6', component: d('/wcag/1.2.6', '0a7'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.1', component: d('/wcag/1.3.1', '285'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.2', component: d('/wcag/1.3.2', '5f5'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.3', component: d('/wcag/1.3.3', 'cc0'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.4', component: d('/wcag/1.3.4', '34f'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.3.5', component: d('/wcag/1.3.5', '5a6'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.1', component: d('/wcag/1.4.1', 'b16'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.10', component: d('/wcag/1.4.10', 'e38'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.11', component: d('/wcag/1.4.11', 'd96'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.12', component: d('/wcag/1.4.12', 'a06'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.13', component: d('/wcag/1.4.13', '966'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.2', component: d('/wcag/1.4.2', '59b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.3', component: d('/wcag/1.4.3', 'e78'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.4', component: d('/wcag/1.4.4', 'd4e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.5', component: d('/wcag/1.4.5', '414'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/1.4.8', component: d('/wcag/1.4.8', '79e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.1.1', component: d('/wcag/2.1.1', 'e2b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.1.2', component: d('/wcag/2.1.2', '9e6'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.1.4', component: d('/wcag/2.1.4', 'e34'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.2.1', component: d('/wcag/2.2.1', '45b'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.2.2', component: d('/wcag/2.2.2', '36e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.3.1', component: d('/wcag/2.3.1', '091'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.1', component: d('/wcag/2.4.1', 'c75'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.10', component: d('/wcag/2.4.10', 'a92'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.11', component: d('/wcag/2.4.11', '970'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.13', component: d('/wcag/2.4.13', 'bff'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.2', component: d('/wcag/2.4.2', '902'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.3', component: d('/wcag/2.4.3', 'aab'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.4', component: d('/wcag/2.4.4', '06a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.5', component: d('/wcag/2.4.5', '305'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.6', component: d('/wcag/2.4.6', '577'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.4.7', component: d('/wcag/2.4.7', '560'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.1', component: d('/wcag/2.5.1', '1be'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.2', component: d('/wcag/2.5.2', 'db4'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.3', component: d('/wcag/2.5.3', 'f32'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.4', component: d('/wcag/2.5.4', '962'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.5', component: d('/wcag/2.5.5', '423'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.7', component: d('/wcag/2.5.7', '115'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/2.5.8', component: d('/wcag/2.5.8', '068'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.1.1', component: d('/wcag/3.1.1', '353'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.1.2', component: d('/wcag/3.1.2', '092'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.1', component: d('/wcag/3.2.1', 'd4a'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.2', component: d('/wcag/3.2.2', '2be'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.3', component: d('/wcag/3.2.3', '8c8'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.4', component: d('/wcag/3.2.4', '552'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.2.6', component: d('/wcag/3.2.6', '487'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.1', component: d('/wcag/3.3.1', '609'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.2', component: d('/wcag/3.3.2', '9f3'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.3', component: d('/wcag/3.3.3', '2a3'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.4', component: d('/wcag/3.3.4', 'e80'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.7', component: d('/wcag/3.3.7', '91e'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/3.3.8', component: d('/wcag/3.3.8', 'f78'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.1', component: d('/wcag/4.1.1', '352'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.2', component: d('/wcag/4.1.2', 'cdd'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/4.1.3', component: d('/wcag/4.1.3', '3f8'), exact: !0, sidebar: 'richtlijnen' },
-          { path: '/wcag/introduction', component: d('/wcag/introduction', 'f78'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/accordion', component: d('/en/accordion', 'b0f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/action-group', component: d('/en/action-group', '24c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/alert', component: d('/en/alert', '5e0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/alert-dialog', component: d('/en/alert-dialog', '9bd'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/avatar', component: d('/en/avatar', 'e85'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/blockquote', component: d('/en/blockquote', '57d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/breadcrumb-navigation', component: d('/en/breadcrumb-navigation', 'c6e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/button', component: d('/en/button', 'f7b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/Calendar', component: d('/en/Calendar', '310'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/card-as-link', component: d('/en/card-as-link', '121'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/case-card', component: d('/en/case-card', '991'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/CHANGELOG', component: d('/en/CHANGELOG', '818'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/checkbox', component: d('/en/checkbox', '860'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/checkbox-group', component: d('/en/checkbox-group', 'fb7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/coc', component: d('/en/coc', '4b6'), exact: !0 },
+          { path: '/en/colofon', component: d('/en/colofon', 'b43'), exact: !0 },
+          { path: '/en/community', component: d('/en/community', '2bb'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/design-open-dag/bedankt', component: d('/en/community/design-open-dag/bedankt', 'c89'), exact: !0 },
+          { path: '/en/community/estafettemodeldag/bedankt', component: d('/en/community/estafettemodeldag/bedankt', '716'), exact: !0 },
+          { path: '/en/community/events/estafettemodeldag', component: d('/en/community/events/estafettemodeldag', '791'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/events/overzicht', component: d('/en/community/events/overzicht', 'aa6'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/sluit-je-aan', component: d('/en/community/sluit-je-aan', '3d4'), exact: !0, sidebar: 'community' },
+          { path: '/en/community/sluit-je-aan/bedankt', component: d('/en/community/sluit-je-aan/bedankt', '838'), exact: !0 },
+          { path: '/en/community/wie-doet-mee', component: d('/en/community/wie-doet-mee', '109'), exact: !0, sidebar: 'community' },
+          { path: '/en/componenten/', component: d('/en/componenten/', '040'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/data-badge', component: d('/en/data-badge', 'c07'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-input', component: d('/en/date-input', '6e0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-input-group', component: d('/en/date-input-group', '807'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/date-picker', component: d('/en/date-picker', '39a'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/description-list', component: d('/en/description-list', '8bc'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/dot-badge', component: d('/en/dot-badge', '3a9'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/drawer', component: d('/en/drawer', '204'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/events/design-open-dag', component: d('/en/events/design-open-dag', '5ba'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour', component: d('/en/events/design-open-hour', '6bd'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour/aanmelden', component: d('/en/events/design-open-hour/aanmelden', '3d7'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-open-hour/aanmelden/bedankt', component: d('/en/events/design-open-hour/aanmelden/bedankt', '283'), exact: !0 },
+          { path: '/en/events/design-open-hour/overzicht', component: d('/en/events/design-open-hour/overzicht', '16c'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week-2022', component: d('/en/events/design-systems-week-2022', 'f5c'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023', component: d('/en/events/design-systems-week-2023', 'bc7'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/en/program', component: d('/en/events/design-systems-week-2023/en/program', '22d'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/en/timetable', component: d('/en/events/design-systems-week-2023/en/timetable', 'eb9'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/programma', component: d('/en/events/design-systems-week-2023/programma', '5a2'), exact: !0 },
+          { path: '/en/events/design-systems-week-2023/tijdschema', component: d('/en/events/design-systems-week-2023/tijdschema', '83e'), exact: !0 },
+          { path: '/en/events/design-systems-week-2024', component: d('/en/events/design-systems-week-2024', '139'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week-2024/en', component: d('/en/events/design-systems-week-2024/en', 'ef3'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week-2024/en/program', component: d('/en/events/design-systems-week-2024/en/program', '92c'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week-2024/programma', component: d('/en/events/design-systems-week-2024/programma', '999'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/design-systems-week/aanmelden', component: d('/en/events/design-systems-week/aanmelden', '0d8'), exact: !0 },
+          { path: '/en/events/design-systems-week/aanmelden/bedankt', component: d('/en/events/design-systems-week/aanmelden/bedankt', '510'), exact: !0 },
+          { path: '/en/events/design-systems-week/sign-up', component: d('/en/events/design-systems-week/sign-up', '7c2'), exact: !0 },
+          { path: '/en/events/design-systems-week/sign-up/thanks', component: d('/en/events/design-systems-week/sign-up/thanks', '041'), exact: !0 },
+          { path: '/en/events/developer-open-hour', component: d('/en/events/developer-open-hour', 'bf8'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/developer-open-hour/aanmelden', component: d('/en/events/developer-open-hour/aanmelden', 'fa2'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/developer-open-hour/aanmelden/bedankt', component: d('/en/events/developer-open-hour/aanmelden/bedankt', 'd4e'), exact: !0 },
+          { path: '/en/events/developer-open-hour/overzicht', component: d('/en/events/developer-open-hour/overzicht', '5fe'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat', component: d('/en/events/heartbeat', 'b03'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/aanmelden', component: d('/en/events/heartbeat/aanmelden', 'd05'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/aanmelden/bedankt', component: d('/en/events/heartbeat/aanmelden/bedankt', '057'), exact: !0 },
+          { path: '/en/events/heartbeat/overzicht', component: d('/en/events/heartbeat/overzicht', 'cbb'), exact: !0, sidebar: 'community' },
+          { path: '/en/events/heartbeat/videos', component: d('/en/events/heartbeat/videos', 'efc'), exact: !0, sidebar: 'community' },
+          { path: '/en/fieldset', component: d('/en/fieldset', '30f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/figure', component: d('/en/figure', '51c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/file-input', component: d('/en/file-input', '922'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field', component: d('/en/form-field', 'bea'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-checkbox-option', component: d('/en/form-field-checkbox-option', '9ea'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-description', component: d('/en/form-field-description', '574'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-error-message', component: d('/en/form-field-error-message', 'd71'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-label', component: d('/en/form-field-label', '96b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-option-label', component: d('/en/form-field-option-label', '867'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-partial', component: d('/en/form-field-partial', '218'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-partial-label', component: d('/en/form-field-partial-label', '90d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/form-field-radio-option', component: d('/en/form-field-radio-option', '082'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/handboek', component: d('/en/handboek', '934'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/candidate-stappenplan', component: d('/en/handboek/component-bijdragen/candidate-stappenplan', '4e4'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/community-stappenplan', component: d('/en/handboek/component-bijdragen/community-stappenplan', 'e53'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/community-stappenplan-voor-organisaties', component: d('/en/handboek/component-bijdragen/community-stappenplan-voor-organisaties', '8fa'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/definition-of-done', component: d('/en/handboek/component-bijdragen/definition-of-done', 'cc4'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/hall-of-fame-stappenplan', component: d('/en/handboek/component-bijdragen/hall-of-fame-stappenplan', '32a'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/help-wanted-stappenplan', component: d('/en/handboek/component-bijdragen/help-wanted-stappenplan', 'c04'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/component-bijdragen/overzicht', component: d('/en/handboek/component-bijdragen/overzicht', '9b2'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/design-tokens/', component: d('/en/handboek/design-tokens/', '955'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/', component: d('/en/handboek/designer/', '1aa'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/community', component: d('/en/handboek/designer/community', 'cf3'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/figma-structuur', component: d('/en/handboek/designer/figma-structuur', '31c'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/overzicht', component: d('/en/handboek/designer/overzicht', '07f'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/stappenplan', component: d('/en/handboek/designer/stappenplan', '4b1'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/voorbeeld-thema', component: d('/en/handboek/designer/voorbeeld-thema', '920'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/designer/zelf-componenten-maken', component: d('/en/handboek/designer/zelf-componenten-maken', '875'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/aan-de-slag', component: d('/en/handboek/developer/aan-de-slag', '799'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/architectuur', component: d('/en/handboek/developer/architectuur', '814'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/component-inzetten', component: d('/en/handboek/developer/component-inzetten', '0e8'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/component-uitbreiden', component: d('/en/handboek/developer/component-uitbreiden', '940'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/componenten-maken', component: d('/en/handboek/developer/componenten-maken', 'd74'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/herbruikbare-css', component: d('/en/handboek/developer/herbruikbare-css', '9e2'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/meewerken-als-developer', component: d('/en/handboek/developer/meewerken-als-developer', '395'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/overzicht', component: d('/en/handboek/developer/overzicht', 'a06'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/samenwerken-aan-componenten', component: d('/en/handboek/developer/samenwerken-aan-componenten', '37c'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/developer/thema-maken', component: d('/en/handboek/developer/thema-maken', '4ec'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/estafettemodel', component: d('/en/handboek/estafettemodel', '7d6'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/introductie', component: d('/en/handboek/introductie', '910'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/leverancier/introductie', component: d('/en/handboek/leverancier/introductie', '42a'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/manager/introductie', component: d('/en/handboek/manager/introductie', 'ce3'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/naamgeving', component: d('/en/handboek/naamgeving', '1d5'), exact: !0 },
+          { path: '/en/handboek/organisatie/meedoen', component: d('/en/handboek/organisatie/meedoen', 'f3e'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/organisatie/overzicht', component: d('/en/handboek/organisatie/overzicht', 'b60'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/handboek/organisatie/vragen-over-aanbestedingen', component: d('/en/handboek/organisatie/vragen-over-aanbestedingen', 'bdc'), exact: !0, sidebar: 'handboek' },
+          { path: '/en/heading', component: d('/en/heading', 'd97'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-1', component: d('/en/heading-1', 'e3e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-2', component: d('/en/heading-2', '205'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-3', component: d('/en/heading-3', '160'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-4', component: d('/en/heading-4', 'b74'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-5', component: d('/en/heading-5', '632'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-6', component: d('/en/heading-6', 'd1e'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/heading-group', component: d('/en/heading-group', '06c'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/icon', component: d('/en/icon', '540'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/invalid-form-alert', component: d('/en/invalid-form-alert', '953'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/language-navigation', component: d('/en/language-navigation', 'cf8'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/legend', component: d('/en/legend', 'c6f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/link', component: d('/en/link', '6a7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/link-list', component: d('/en/link-list', 'dfe'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/modal-dialog', component: d('/en/modal-dialog', '617'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/navigation-bar', component: d('/en/navigation-bar', '18d'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/non-modal-dialog', component: d('/en/non-modal-dialog', 'da9'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/notification-banner', component: d('/en/notification-banner', '685'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/number-badge', component: d('/en/number-badge', '2f6'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/number-input', component: d('/en/number-input', 'c93'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/open-source/cc0', component: d('/en/open-source/cc0', 'efb'), exact: !0 },
+          { path: '/en/open-source/eupl', component: d('/en/open-source/eupl', 'faf'), exact: !0 },
+          { path: '/en/ordered-list', component: d('/en/ordered-list', '2f7'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/page-footer', component: d('/en/page-footer', '750'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/page-header', component: d('/en/page-header', '40f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/pagination', component: d('/en/pagination', 'c17'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/paragraph', component: d('/en/paragraph', 'e05'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/password-input', component: d('/en/password-input', 'f65'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/pre-heading', component: d('/en/pre-heading', 'b30'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/privacyverklaring', component: d('/en/privacyverklaring', 'ff9'), exact: !0 },
+          { path: '/en/progress-bar', component: d('/en/progress-bar', '473'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/progress-list', component: d('/en/progress-list', '5cf'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/project', component: d('/en/project', '986'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/blijf-op-de-hoogte', component: d('/en/project/blijf-op-de-hoogte', '0f9'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', component: d('/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt', '08d'), exact: !0 },
+          { path: '/en/project/faq', component: d('/en/project/faq', 'cea'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/kernteam', component: d('/en/project/kernteam', '87b'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/links', component: d('/en/project/links', '5cb'), exact: !0, sidebar: 'project' },
+          { path: '/en/project/nieuwsbrief', component: d('/en/project/nieuwsbrief', 'ff4'), exact: !0 },
+          { path: '/en/project/over-nl-design-system', component: d('/en/project/over-nl-design-system', 'ddf'), exact: !0, sidebar: 'project' },
+          { path: '/en/radio-button', component: d('/en/radio-button', 'a20'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/radio-group', component: d('/en/radio-group', 'd27'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/range', component: d('/en/range', '4eb'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/rich-text-content', component: d('/en/rich-text-content', 'f5b'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/richtlijnen', component: d('/en/richtlijnen', 'bd6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren', component: d('/en/richtlijnen/formulieren', 'f70'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina/', component: d('/en/richtlijnen/formulieren/bevestigingspagina/', 'cde'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen', component: d('/en/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen', 'f89'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina/succesmelding', component: d('/en/richtlijnen/formulieren/bevestigingspagina/succesmelding', '0f5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding', component: d('/en/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding', '387'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/bevestigingspagina/vervolgstappen', component: d('/en/richtlijnen/formulieren/bevestigingspagina/vervolgstappen', 'e99'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons', component: d('/en/richtlijnen/formulieren/buttons', '3ea'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/afbeelding-als-button', component: d('/en/richtlijnen/formulieren/buttons/afbeelding-als-button', '476'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/disabled-submitbuttons', component: d('/en/richtlijnen/formulieren/buttons/disabled-submitbuttons', '84a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/duidelijk-buttontekst', component: d('/en/richtlijnen/formulieren/buttons/duidelijk-buttontekst', '42d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/niet-automatisch-versturen', component: d('/en/richtlijnen/formulieren/buttons/niet-automatisch-versturen', '7d7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/plaatsing', component: d('/en/richtlijnen/formulieren/buttons/plaatsing', 'b5b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/toegankelijke-naam', component: d('/en/richtlijnen/formulieren/buttons/toegankelijke-naam', '887'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/buttons/toetsenbordbediening', component: d('/en/richtlijnen/formulieren/buttons/toetsenbordbediening', 'bb2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/', component: d('/en/richtlijnen/formulieren/descriptions/', '828'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', component: d('/en/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', '658'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/koppelen', component: d('/en/richtlijnen/formulieren/descriptions/koppelen', 'ce2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/lengte', component: d('/en/richtlijnen/formulieren/descriptions/lengte', '0db'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/meerdere-koppelen', component: d('/en/richtlijnen/formulieren/descriptions/meerdere-koppelen', '9a6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/plaatsing', component: d('/en/richtlijnen/formulieren/descriptions/plaatsing', 'abc'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', component: d('/en/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', '80d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/', component: d('/en/richtlijnen/formulieren/foutmeldingen/', '3e6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/beschrijven', component: d('/en/richtlijnen/formulieren/foutmeldingen/beschrijven', 'a0a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/controleren', component: d('/en/richtlijnen/formulieren/foutmeldingen/controleren', '7ef'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code', component: d('/en/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code', 'a18'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie', component: d('/en/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie', '73f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/plaatsing', component: d('/en/richtlijnen/formulieren/foutmeldingen/plaatsing', '688'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/samenvatting', component: d('/en/richtlijnen/formulieren/foutmeldingen/samenvatting', '65a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback', component: d('/en/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback', 'aa6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/', component: d('/en/richtlijnen/formulieren/labels/', '03a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/alleen-tekst', component: d('/en/richtlijnen/formulieren/labels/alleen-tekst', '56f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/altijd-zichtbaar', component: d('/en/richtlijnen/formulieren/labels/altijd-zichtbaar', '50d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/duidelijke-tekst', component: d('/en/richtlijnen/formulieren/labels/duidelijke-tekst', 'b9b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/plaatsing', component: d('/en/richtlijnen/formulieren/labels/plaatsing', '0bb'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/toegankelijke-naam', component: d('/en/richtlijnen/formulieren/labels/toegankelijke-naam', 'f8d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/labels/zichtbare-naam', component: d('/en/richtlijnen/formulieren/labels/zichtbare-naam', '1bd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/links/', component: d('/en/richtlijnen/formulieren/links/', 'a64'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/links/niet-in-label', component: d('/en/richtlijnen/formulieren/links/niet-in-label', '6b1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/links/nieuwe-tab', component: d('/en/richtlijnen/formulieren/links/nieuwe-tab', '4f6'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/links/plaatsing', component: d('/en/richtlijnen/formulieren/links/plaatsing', 'e65'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/', component: d('/en/richtlijnen/formulieren/meerdere-stappen/', 'b26'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/consistente-benaming', component: d('/en/richtlijnen/formulieren/meerdere-stappen/consistente-benaming', 'ab4'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', component: d('/en/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', '1dd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/samenvatting', component: d('/en/richtlijnen/formulieren/meerdere-stappen/samenvatting', 'f53'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven', component: d('/en/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven', '89d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen', component: d('/en/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen', 'cb3'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders/', component: d('/en/richtlijnen/formulieren/placeholders/', 'cfc'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders/kleurcontrast', component: d('/en/richtlijnen/formulieren/placeholders/kleurcontrast', '278'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders/niet-als-label', component: d('/en/richtlijnen/formulieren/placeholders/niet-als-label', '979'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen', component: d('/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen', 'ab3'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/placeholders/zoekfunctie', component: d('/en/richtlijnen/formulieren/placeholders/zoekfunctie', '615'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/toetsenbord/', component: d('/en/richtlijnen/formulieren/toetsenbord/', '887'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/toetsenbord/tabindex', component: d('/en/richtlijnen/formulieren/toetsenbord/tabindex', '554'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/', '6aa'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', '90c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur', '8fe'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons', '4af'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar', 'dda'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', 'e3e'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', 'f74'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar', 'ec1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar', component: d('/en/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar', '4fb'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/', component: d('/en/richtlijnen/formulieren/voorkom-fouten/', '41c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/autocomplete', component: d('/en/richtlijnen/formulieren/voorkom-fouten/autocomplete', '710'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen', component: d('/en/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen', '33d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen', component: d('/en/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen', '811'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/geldige-waardes', component: d('/en/richtlijnen/formulieren/voorkom-fouten/geldige-waardes', '1f0'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af', component: d('/en/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af', '878'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', component: d('/en/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', 'e78'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/', component: d('/en/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/', 'e71'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/', component: d('/en/richtlijnen/formulieren/vragen/', '9d4'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/check-noodzaak', component: d('/en/richtlijnen/formulieren/vragen/check-noodzaak', 'bb0'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/geen-min-max-lengte', component: d('/en/richtlijnen/formulieren/vragen/geen-min-max-lengte', '238'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/leg-uit-waarom', component: d('/en/richtlijnen/formulieren/vragen/leg-uit-waarom', 'c36'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/manieren-voor-contact', component: d('/en/richtlijnen/formulieren/vragen/manieren-voor-contact', '83c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/vragen/voorkom-dubbel-werk', component: d('/en/richtlijnen/formulieren/vragen/voorkom-dubbel-werk', 'fe1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/wanneer-welk-form-element/', component: d('/en/richtlijnen/formulieren/wanneer-welk-form-element/', 'ffc'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen', component: d('/en/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen', 'b48'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid', component: d('/en/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid', 'e06'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl', component: d('/en/richtlijnen/stijl', '330'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/iconen', component: d('/en/richtlijnen/stijl/iconen', 'e62'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/kleuren', component: d('/en/richtlijnen/stijl/kleuren', '0d9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/ruimte', component: d('/en/richtlijnen/stijl/ruimte', '8c1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/richtlijnen/stijl/typografie', component: d('/en/richtlijnen/stijl/typografie', 'c04'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/select', component: d('/en/select', '831'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/separator', component: d('/en/separator', '6d1'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/side-navigation', component: d('/en/side-navigation', '1a0'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/skip-link', component: d('/en/skip-link', 'df2'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/spinner', component: d('/en/spinner', 'f5a'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/status-badge', component: d('/en/status-badge', '799'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/strong', component: d('/en/strong', '808'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/sub-heading', component: d('/en/sub-heading', 'd1f'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/summary-list', component: d('/en/summary-list', 'f83'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/switch', component: d('/en/switch', '499'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/table', component: d('/en/table', 'a74'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/tabs', component: d('/en/tabs', '283'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/task-list', component: d('/en/task-list', '339'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/text-input', component: d('/en/text-input', '4a4'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/text-input-group', component: d('/en/text-input-group', 'd64'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/textarea', component: d('/en/textarea', '761'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/toegankelijkheidsverklaring', component: d('/en/toegankelijkheidsverklaring', 'cd8'), exact: !0 },
+          { path: '/en/toegankelijkheidsverklaring/rapport-2023', component: d('/en/toegankelijkheidsverklaring/rapport-2023', '98a'), exact: !0 },
+          { path: '/en/toggletip', component: d('/en/toggletip', 'e24'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/unordered-list', component: d('/en/unordered-list', '763'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/video', component: d('/en/video', 'ee8'), exact: !0, sidebar: 'componenten' },
+          { path: '/en/voorbeelden', component: d('/en/voorbeelden', '6c2'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/', component: d('/en/voorbeelden/', 'dd5'), exact: !0 },
+          { path: '/en/voorbeelden/onderzoek/', component: d('/en/voorbeelden/onderzoek/', '525'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen', component: d('/en/voorbeelden/patronen', 'e59'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren', component: d('/en/voorbeelden/patronen/formulieren', '03c'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/bevestigingspagina', component: d('/en/voorbeelden/patronen/formulieren/bevestigingspagina', '852'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/controlepagina', component: d('/en/voorbeelden/patronen/formulieren/controlepagina', '5da'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/foutmeldingen', component: d('/en/voorbeelden/patronen/formulieren/foutmeldingen', '6d7'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/funnel-header', component: d('/en/voorbeelden/patronen/formulieren/funnel-header', '33f'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/inloggen', component: d('/en/voorbeelden/patronen/formulieren/inloggen', '6ee'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/intropagina', component: d('/en/voorbeelden/patronen/formulieren/intropagina', 'dcb'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/meerstappenformulier', component: d('/en/voorbeelden/patronen/formulieren/meerstappenformulier', '539'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', component: d('/en/voorbeelden/patronen/formulieren/niet-verplichte-velden', 'dc4'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', component: d('/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen', '92b'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/responsive-design', component: d('/en/voorbeelden/patronen/formulieren/responsive-design', '213'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', component: d('/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen', 'd0d'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/startpunt', component: d('/en/voorbeelden/patronen/formulieren/startpunt', '5dd'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/terug-navigeren', component: d('/en/voorbeelden/patronen/formulieren/terug-navigeren', '7bb'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/uploaden', component: d('/en/voorbeelden/patronen/formulieren/uploaden', '52b'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/visual-design', component: d('/en/voorbeelden/patronen/formulieren/visual-design', '5c6'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/volgende-stap', component: d('/en/voorbeelden/patronen/formulieren/volgende-stap', 'ac3'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/patronen/formulieren/voortgang-indicatie', component: d('/en/voorbeelden/patronen/formulieren/voortgang-indicatie', '5ec'), exact: !0, sidebar: 'voorbeelden' },
+          { path: '/en/voorbeelden/templates/', component: d('/en/voorbeelden/templates/', 'f01'), exact: !0 },
+          { path: '/en/wcag', component: d('/en/wcag', '51a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.1.1', component: d('/en/wcag/1.1.1', 'bd1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.1', component: d('/en/wcag/1.2.1', '96d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.2', component: d('/en/wcag/1.2.2', 'e71'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.3', component: d('/en/wcag/1.2.3', '9dd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.4', component: d('/en/wcag/1.2.4', '928'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.5', component: d('/en/wcag/1.2.5', '04b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.6', component: d('/en/wcag/1.2.6', 'd1f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.8', component: d('/en/wcag/1.2.8', 'cb0'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.2.9', component: d('/en/wcag/1.2.9', '797'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.1', component: d('/en/wcag/1.3.1', '69f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.2', component: d('/en/wcag/1.3.2', 'f71'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.3', component: d('/en/wcag/1.3.3', 'af5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.4', component: d('/en/wcag/1.3.4', 'b71'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.3.5', component: d('/en/wcag/1.3.5', 'ee5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.1', component: d('/en/wcag/1.4.1', '8d4'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.10', component: d('/en/wcag/1.4.10', '7ff'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.11', component: d('/en/wcag/1.4.11', '6a1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.12', component: d('/en/wcag/1.4.12', '748'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.13', component: d('/en/wcag/1.4.13', '29e'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.2', component: d('/en/wcag/1.4.2', 'a0f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.3', component: d('/en/wcag/1.4.3', '38d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.4', component: d('/en/wcag/1.4.4', 'ea2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.5', component: d('/en/wcag/1.4.5', 'b09'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/1.4.8', component: d('/en/wcag/1.4.8', '780'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.1.1', component: d('/en/wcag/2.1.1', '291'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.1.2', component: d('/en/wcag/2.1.2', '5b0'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.1.4', component: d('/en/wcag/2.1.4', '565'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.2.1', component: d('/en/wcag/2.2.1', 'c9c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.2.2', component: d('/en/wcag/2.2.2', '480'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.3.1', component: d('/en/wcag/2.3.1', 'f00'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.1', component: d('/en/wcag/2.4.1', 'dac'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.10', component: d('/en/wcag/2.4.10', '74f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.11', component: d('/en/wcag/2.4.11', 'b33'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.13', component: d('/en/wcag/2.4.13', '73a'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.2', component: d('/en/wcag/2.4.2', 'f26'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.3', component: d('/en/wcag/2.4.3', '527'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.4', component: d('/en/wcag/2.4.4', 'fe5'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.5', component: d('/en/wcag/2.4.5', '3fd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.6', component: d('/en/wcag/2.4.6', '8dd'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.4.7', component: d('/en/wcag/2.4.7', '615'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.1', component: d('/en/wcag/2.5.1', '7b1'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.2', component: d('/en/wcag/2.5.2', '78c'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.3', component: d('/en/wcag/2.5.3', '3f7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.4', component: d('/en/wcag/2.5.4', 'f31'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.5', component: d('/en/wcag/2.5.5', '8ca'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.7', component: d('/en/wcag/2.5.7', '17d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/2.5.8', component: d('/en/wcag/2.5.8', '516'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.1.1', component: d('/en/wcag/3.1.1', '42b'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.1.2', component: d('/en/wcag/3.1.2', 'd5f'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.1', component: d('/en/wcag/3.2.1', 'b61'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.2', component: d('/en/wcag/3.2.2', '1c7'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.3', component: d('/en/wcag/3.2.3', '116'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.4', component: d('/en/wcag/3.2.4', '428'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.2.6', component: d('/en/wcag/3.2.6', '0d9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.1', component: d('/en/wcag/3.3.1', '805'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.2', component: d('/en/wcag/3.3.2', 'd8d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.3', component: d('/en/wcag/3.3.3', '5af'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.4', component: d('/en/wcag/3.3.4', 'a59'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.7', component: d('/en/wcag/3.3.7', '162'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/3.3.8', component: d('/en/wcag/3.3.8', '89d'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.1', component: d('/en/wcag/4.1.1', '0b2'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.2', component: d('/en/wcag/4.1.2', 'fc9'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/4.1.3', component: d('/en/wcag/4.1.3', '747'), exact: !0, sidebar: 'richtlijnen' },
+          { path: '/en/wcag/introduction', component: d('/en/wcag/introduction', 'f51'), exact: !0, sidebar: 'richtlijnen' },
          ],
         },
        ],
@@ -4299,8 +4301,8 @@
    }
    var D = r(74090),
     N = r(1620),
-    L = r(98487);
-   function z(e) {
+    z = r(98487);
+   function L(e) {
     for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
     const o = l.map((t) => {
      const n = t.default?.[e] ?? t[e];
@@ -4311,7 +4313,7 @@
    const A = function (e) {
     let { children: t, location: r, previousLocation: n } = e;
     return (
-     (0, L.Z)(() => {
+     (0, z.Z)(() => {
       n !== r &&
        (!(function (e) {
         let { location: t, previousLocation: r } = e;
@@ -4327,22 +4329,22 @@
          t?.scrollIntoView();
         } else window.scrollTo(0, 0);
        })({ location: r, previousLocation: n }),
-       z('onRouteDidUpdate', { previousLocation: n, location: r }));
+       L('onRouteDidUpdate', { previousLocation: n, location: r }));
      }, [n, r]),
      t
     );
    };
-   function T(e) {
+   function R(e) {
     const t = Array.from(new Set([e, decodeURI(e)]))
      .map((e) => (0, d.f)(u.Z, e))
      .flat();
     return Promise.all(t.map((e) => e.route.component.preload?.()));
    }
-   class R extends n.Component {
+   class T extends n.Component {
     previousLocation;
     routeUpdateCleanupCb;
     constructor(e) {
-     super(e), (this.previousLocation = null), (this.routeUpdateCleanupCb = i.Z.canUseDOM ? z('onRouteUpdate', { previousLocation: null, location: this.props.location }) : () => {}), (this.state = { nextRouteHasLoaded: !0 });
+     super(e), (this.previousLocation = null), (this.routeUpdateCleanupCb = i.Z.canUseDOM ? L('onRouteUpdate', { previousLocation: null, location: this.props.location }) : () => {}), (this.state = { nextRouteHasLoaded: !0 });
     }
     shouldComponentUpdate(e, t) {
      if (e.location === this.props.location) return t.nextRouteHasLoaded;
@@ -4350,8 +4352,8 @@
      return (
       (this.previousLocation = this.props.location),
       this.setState({ nextRouteHasLoaded: !1 }),
-      (this.routeUpdateCleanupCb = z('onRouteUpdate', { previousLocation: this.previousLocation, location: r })),
-      T(r.pathname)
+      (this.routeUpdateCleanupCb = L('onRouteUpdate', { previousLocation: this.previousLocation, location: r })),
+      R(r.pathname)
        .then(() => {
         this.routeUpdateCleanupCb(), this.setState({ nextRouteHasLoaded: !0 });
        })
@@ -4366,7 +4368,7 @@
      return (0, b.jsx)(A, { previousLocation: this.previousLocation, location: t, children: (0, b.jsx)(s.AW, { location: t, render: () => e }) });
     }
    }
-   const I = R,
+   const I = T,
     M = '__docusaurus-base-url-issue-banner-container',
     Z = '__docusaurus-base-url-issue-banner',
     F = '__docusaurus-base-url-issue-banner-suggestion-container';
@@ -4468,7 +4470,7 @@
        }),
       );
      },
-     preload: (e) => !!((e) => !ee() && !J.has(e))(e) && (J.add(e), T(e)),
+     preload: (e) => !!((e) => !ee() && !J.has(e))(e) && (J.add(e), R(e)),
     },
     re = Object.freeze(te),
     ne = Boolean(!0);
@@ -4491,7 +4493,7 @@
        });
       }
      };
-    T(window.location.pathname).then(i);
+    R(window.location.pathname).then(i);
    }
   },
   1620: (e, t, r) => {
@@ -4499,8 +4501,8 @@
    r.d(t, { _: () => d, M: () => h });
    var n = r(75271),
     o = r(36809);
-   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/CHANGELOG","sidebar":"richtlijnen"},{"id":"community/events/design-open-dag","path":"/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-dag-success","path":"/community/design-open-dag/bedankt","unlisted":true},{"id":"community/events/design-open-hour/aanmelden","path":"/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024/english/index","path":"/events/design-systems-week-2024/en","sidebar":"community"},{"id":"community/events/design-systems-week-2024/english/program","path":"/events/design-systems-week-2024/en/program","sidebar":"community"},{"id":"community/events/design-systems-week-2024/index","path":"/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/design-systems-week-2024/programma","path":"/events/design-systems-week-2024/programma","sidebar":"community"},{"id":"community/events/design-systems-week/aanmelden","path":"/events/design-systems-week/aanmelden"},{"id":"community/events/design-systems-week/aanmelden-bedankt","path":"/events/design-systems-week/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-systems-week/sign-up","path":"/events/design-systems-week/sign-up"},{"id":"community/events/design-systems-week/sign-up-thanks","path":"/events/design-systems-week/sign-up/thanks","unlisted":true},{"id":"community/events/developer-open-hour/aanmelden","path":"/events/developer-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden-success","path":"/events/developer-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/developer-open-hour/developer-open-hour","path":"/events/developer-open-hour","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/estafettemodeldag-success","path":"/community/estafettemodeldag/bedankt","unlisted":true},{"id":"community/events/heartbeat/aanmelden","path":"/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/description-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/range","sidebar":"componenten"},{"id":"componenten/README","path":"/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/video","sidebar":"componenten"},{"id":"footer/coc","path":"/coc","unlisted":true},{"id":"footer/colofon","path":"/colofon"},{"id":"footer/privacyverklaring","path":"/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan-voor-organisaties","path":"/handboek/component-bijdragen/community-stappenplan-voor-organisaties","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/open-source/cc0"},{"id":"open-source/eupl","path":"/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/button/accessible-name/README","path":"/richtlijnen/formulieren/buttons/toegankelijke-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/disabled/README","path":"/richtlijnen/formulieren/buttons/disabled-submitbuttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/image-as-button/README","path":"/richtlijnen/formulieren/buttons/afbeelding-als-button","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/keyboard/README","path":"/richtlijnen/formulieren/buttons/toetsenbordbediening","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/placement/README","path":"/richtlijnen/formulieren/buttons/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/README","path":"/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/submit/README","path":"/richtlijnen/formulieren/buttons/niet-automatisch-versturen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/text/README","path":"/richtlijnen/formulieren/buttons/duidelijk-buttontekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/accessibility/README","path":"/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/contact/README","path":"/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/next-steps/README","path":"/richtlijnen/formulieren/bevestigingspagina/vervolgstappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/README","path":"/richtlijnen/formulieren/bevestigingspagina/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/success/README","path":"/richtlijnen/formulieren/bevestigingspagina/succesmelding","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/associated/README","path":"/richtlijnen/formulieren/descriptions/koppelen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/fieldset/README","path":"/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/length/README","path":"/richtlijnen/formulieren/descriptions/lengte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/multiple/README","path":"/richtlijnen/formulieren/descriptions/meerdere-koppelen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/placement/README","path":"/richtlijnen/formulieren/descriptions/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/README","path":"/richtlijnen/formulieren/descriptions/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/target-size/README","path":"/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/clarity/README","path":"/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/description/README","path":"/richtlijnen/formulieren/foutmeldingen/beschrijven","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/feedback/README","path":"/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/location/README","path":"/richtlijnen/formulieren/foutmeldingen/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/no-native-validation/README","path":"/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/README","path":"/richtlijnen/formulieren/foutmeldingen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/summary/README","path":"/richtlijnen/formulieren/foutmeldingen/samenvatting","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/timing/README","path":"/richtlijnen/formulieren/foutmeldingen/controleren","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/allow-copy-paste/README","path":"/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/approve/README","path":"/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/autocomplete/README","path":"/richtlijnen/formulieren/voorkom-fouten/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/autofill/README","path":"/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/error-prevention/README","path":"/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/README","path":"/richtlijnen/formulieren/voorkom-fouten/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/show-required/README","path":"/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/show-values/README","path":"/richtlijnen/formulieren/voorkom-fouten/geldige-waardes","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour/README","path":"/richtlijnen/formulieren/toetsenbord/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour/tabindex/README","path":"/richtlijnen/formulieren/toetsenbord/tabindex","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/above-field/README","path":"/richtlijnen/formulieren/labels/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/accessible-name/README","path":"/richtlijnen/formulieren/labels/toegankelijke-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/always-visible/README","path":"/richtlijnen/formulieren/labels/altijd-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/only-text/README","path":"/richtlijnen/formulieren/labels/alleen-tekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/README","path":"/richtlijnen/formulieren/labels/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/text/README","path":"/richtlijnen/formulieren/labels/duidelijke-tekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/visible-acccessible-name/README","path":"/richtlijnen/formulieren/labels/zichtbare-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/above-field/README","path":"/richtlijnen/formulieren/links/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/in-new-tab/README","path":"/richtlijnen/formulieren/links/nieuwe-tab","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/not-in-label/README","path":"/richtlijnen/formulieren/links/niet-in-label","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/README","path":"/richtlijnen/formulieren/links/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/consistency/README","path":"/richtlijnen/formulieren/meerdere-stappen/consistente-benaming","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/last-check/README","path":"/richtlijnen/formulieren/meerdere-stappen/samenvatting","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/location/README","path":"/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/README","path":"/richtlijnen/formulieren/meerdere-stappen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/step-count/README","path":"/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/timing/README","path":"/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/clarity/README","path":"/richtlijnen/formulieren/placeholders/verwarring-voorkomen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/colour-contrast/README","path":"/richtlijnen/formulieren/placeholders/kleurcontrast","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/label/README","path":"/richtlijnen/formulieren/placeholders/niet-als-label","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/README","path":"/richtlijnen/formulieren/placeholders/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/search/README","path":"/richtlijnen/formulieren/placeholders/zoekfunctie","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/avoid-duplicate-work/README","path":"/richtlijnen/formulieren/vragen/voorkom-dubbel-werk","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/contact/README","path":"/richtlijnen/formulieren/vragen/manieren-voor-contact","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/min-max/README","path":"/richtlijnen/formulieren/vragen/geen-min-max-lengte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/needed/README","path":"/richtlijnen/formulieren/vragen/check-noodzaak","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/README","path":"/richtlijnen/formulieren/vragen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/why/README","path":"/richtlijnen/formulieren/vragen/leg-uit-waarom","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/richtlijnen/formulieren","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/field-contrast/README","path":"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/field-size/README","path":"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/focus-visible/README","path":"/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/no-image-buttons/README","path":"/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/order/README","path":"/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/placeholder-contrast/README","path":"/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/README","path":"/richtlijnen/formulieren/visueel-ontwerp/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/text-contrast/README","path":"/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/use-of-color/README","path":"/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/compat/README","path":"/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/README","path":"/richtlijnen/formulieren/wanneer-welk-form-element/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/usability/README","path":"/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid","sidebar":"richtlijnen"},{"id":"richtlijnen/README","path":"/richtlijnen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/voorbeelden/templates/"},{"id":"wcag/1.1.01","path":"/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.2.01","path":"/wcag/1.2.1","sidebar":"richtlijnen"},{"id":"wcag/1.2.02","path":"/wcag/1.2.2","sidebar":"richtlijnen"},{"id":"wcag/1.2.03","path":"/wcag/1.2.3","sidebar":"richtlijnen"},{"id":"wcag/1.2.04","path":"/wcag/1.2.4","sidebar":"richtlijnen"},{"id":"wcag/1.2.05","path":"/wcag/1.2.5","sidebar":"richtlijnen"},{"id":"wcag/1.2.06","path":"/wcag/1.2.6","sidebar":"richtlijnen"},{"id":"wcag/1.3.01","path":"/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.02","path":"/wcag/1.3.2","sidebar":"richtlijnen"},{"id":"wcag/1.3.03","path":"/wcag/1.3.3","sidebar":"richtlijnen"},{"id":"wcag/1.3.04","path":"/wcag/1.3.4","sidebar":"richtlijnen"},{"id":"wcag/1.3.05","path":"/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/1.4.01","path":"/wcag/1.4.1","sidebar":"richtlijnen"},{"id":"wcag/1.4.02","path":"/wcag/1.4.2","sidebar":"richtlijnen"},{"id":"wcag/1.4.03","path":"/wcag/1.4.3","sidebar":"richtlijnen"},{"id":"wcag/1.4.04","path":"/wcag/1.4.4","sidebar":"richtlijnen"},{"id":"wcag/1.4.05","path":"/wcag/1.4.5","sidebar":"richtlijnen"},{"id":"wcag/1.4.08","path":"/wcag/1.4.8","sidebar":"richtlijnen"},{"id":"wcag/1.4.10","path":"/wcag/1.4.10","sidebar":"richtlijnen"},{"id":"wcag/1.4.11","path":"/wcag/1.4.11","sidebar":"richtlijnen"},{"id":"wcag/1.4.12","path":"/wcag/1.4.12","sidebar":"richtlijnen"},{"id":"wcag/1.4.13","path":"/wcag/1.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.1.01","path":"/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.1.02","path":"/wcag/2.1.2","sidebar":"richtlijnen"},{"id":"wcag/2.1.04","path":"/wcag/2.1.4","sidebar":"richtlijnen"},{"id":"wcag/2.2.01","path":"/wcag/2.2.1","sidebar":"richtlijnen"},{"id":"wcag/2.2.02","path":"/wcag/2.2.2","sidebar":"richtlijnen"},{"id":"wcag/2.3.01","path":"/wcag/2.3.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.01","path":"/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.02","path":"/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.03","path":"/wcag/2.4.3","sidebar":"richtlijnen"},{"id":"wcag/2.4.04","path":"/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.05","path":"/wcag/2.4.5","sidebar":"richtlijnen"},{"id":"wcag/2.4.06","path":"/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.07","path":"/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.11","path":"/wcag/2.4.11","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.5.01","path":"/wcag/2.5.1","sidebar":"richtlijnen"},{"id":"wcag/2.5.02","path":"/wcag/2.5.2","sidebar":"richtlijnen"},{"id":"wcag/2.5.03","path":"/wcag/2.5.3","sidebar":"richtlijnen"},{"id":"wcag/2.5.04","path":"/wcag/2.5.4","sidebar":"richtlijnen"},{"id":"wcag/2.5.05","path":"/wcag/2.5.5","sidebar":"richtlijnen"},{"id":"wcag/2.5.07","path":"/wcag/2.5.7","sidebar":"richtlijnen"},{"id":"wcag/2.5.08","path":"/wcag/2.5.8","sidebar":"richtlijnen"},{"id":"wcag/3.1.01","path":"/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.02","path":"/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.01","path":"/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.02","path":"/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.03","path":"/wcag/3.2.3","sidebar":"richtlijnen"},{"id":"wcag/3.2.04","path":"/wcag/3.2.4","sidebar":"richtlijnen"},{"id":"wcag/3.2.06","path":"/wcag/3.2.6","sidebar":"richtlijnen"},{"id":"wcag/3.3.01","path":"/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.02","path":"/wcag/3.3.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.03","path":"/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.04","path":"/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/3.3.07","path":"/wcag/3.3.7","sidebar":"richtlijnen"},{"id":"wcag/3.3.08","path":"/wcag/3.3.8","sidebar":"richtlijnen"},{"id":"wcag/4.1.01","path":"/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.02","path":"/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.03","path":"/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"/richtlijnen/stijl","path":"/richtlijnen/stijl","sidebar":"richtlijnen"},{"id":"/wcag","path":"/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/events/design-open-hour/overzicht","sidebar":"community"},{"id":"/events/developer-open-hour/overzicht","path":"/events/developer-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/community","label":"Community"}},"project":{"link":{"path":"/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
-    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"nl","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
+   const a = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/en/","versions":[{"name":"current","label":"Next","isLast":true,"path":"/en/","mainDocId":"handboek/introductie","docs":[{"id":"CHANGELOG","path":"/en/CHANGELOG","sidebar":"richtlijnen"},{"id":"community/events/design-open-dag","path":"/en/events/design-open-dag","sidebar":"community"},{"id":"community/events/design-open-dag-success","path":"/en/community/design-open-dag/bedankt","unlisted":true},{"id":"community/events/design-open-hour/aanmelden","path":"/en/events/design-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/design-open-hour/aanmelden-success","path":"/en/events/design-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-open-hour/design-open-hour","path":"/en/events/design-open-hour","sidebar":"community"},{"id":"community/events/design-systems-week-2022","path":"/en/events/design-systems-week-2022"},{"id":"community/events/design-systems-week-2023/english/program","path":"/en/events/design-systems-week-2023/en/program"},{"id":"community/events/design-systems-week-2023/english/timetable","path":"/en/events/design-systems-week-2023/en/timetable"},{"id":"community/events/design-systems-week-2023/index","path":"/en/events/design-systems-week-2023"},{"id":"community/events/design-systems-week-2023/programma","path":"/en/events/design-systems-week-2023/programma"},{"id":"community/events/design-systems-week-2023/tijdschema-per-dag","path":"/en/events/design-systems-week-2023/tijdschema"},{"id":"community/events/design-systems-week-2024/english/index","path":"/en/events/design-systems-week-2024/en","sidebar":"community"},{"id":"community/events/design-systems-week-2024/english/program","path":"/en/events/design-systems-week-2024/en/program","sidebar":"community"},{"id":"community/events/design-systems-week-2024/index","path":"/en/events/design-systems-week-2024","sidebar":"community"},{"id":"community/events/design-systems-week-2024/programma","path":"/en/events/design-systems-week-2024/programma","sidebar":"community"},{"id":"community/events/design-systems-week/aanmelden","path":"/en/events/design-systems-week/aanmelden"},{"id":"community/events/design-systems-week/aanmelden-bedankt","path":"/en/events/design-systems-week/aanmelden/bedankt","unlisted":true},{"id":"community/events/design-systems-week/sign-up","path":"/en/events/design-systems-week/sign-up"},{"id":"community/events/design-systems-week/sign-up-thanks","path":"/en/events/design-systems-week/sign-up/thanks","unlisted":true},{"id":"community/events/developer-open-hour/aanmelden","path":"/en/events/developer-open-hour/aanmelden","sidebar":"community"},{"id":"community/events/developer-open-hour/aanmelden-success","path":"/en/events/developer-open-hour/aanmelden/bedankt","unlisted":true},{"id":"community/events/developer-open-hour/developer-open-hour","path":"/en/events/developer-open-hour","sidebar":"community"},{"id":"community/events/estafettemodeldag","path":"/en/community/events/estafettemodeldag","sidebar":"community"},{"id":"community/events/estafettemodeldag-success","path":"/en/community/estafettemodeldag/bedankt","unlisted":true},{"id":"community/events/heartbeat/aanmelden","path":"/en/events/heartbeat/aanmelden","sidebar":"community"},{"id":"community/events/heartbeat/aanmelden-success","path":"/en/events/heartbeat/aanmelden/bedankt","unlisted":true},{"id":"community/events/heartbeat/heartbeat","path":"/en/events/heartbeat","sidebar":"community"},{"id":"community/events/heartbeat/videos","path":"/en/events/heartbeat/videos","sidebar":"community"},{"id":"community/sluit-je-aan","path":"/en/community/sluit-je-aan","sidebar":"community"},{"id":"community/sluit-je-aan-success","path":"/en/community/sluit-je-aan/bedankt","unlisted":true},{"id":"community/wie-doet-mee","path":"/en/community/wie-doet-mee","sidebar":"community"},{"id":"componenten/accordion/index","path":"/en/accordion","sidebar":"componenten"},{"id":"componenten/action-group/index","path":"/en/action-group","sidebar":"componenten"},{"id":"componenten/alert-dialog/index","path":"/en/alert-dialog","sidebar":"componenten"},{"id":"componenten/alert/index","path":"/en/alert","sidebar":"componenten"},{"id":"componenten/avatar/index","path":"/en/avatar","sidebar":"componenten"},{"id":"componenten/blockquote/index","path":"/en/blockquote","sidebar":"componenten"},{"id":"componenten/breadcrumb-navigation/index","path":"/en/breadcrumb-navigation","sidebar":"componenten"},{"id":"componenten/button/index","path":"/en/button","sidebar":"componenten"},{"id":"componenten/calendar/index","path":"/en/Calendar","sidebar":"componenten"},{"id":"componenten/card-as-link/index","path":"/en/card-as-link","sidebar":"componenten"},{"id":"componenten/case-card/index","path":"/en/case-card","sidebar":"componenten"},{"id":"componenten/checkbox-group/index","path":"/en/checkbox-group","sidebar":"componenten"},{"id":"componenten/checkbox/index","path":"/en/checkbox","sidebar":"componenten"},{"id":"componenten/data-badge/index","path":"/en/data-badge","sidebar":"componenten"},{"id":"componenten/date-input-group/index","path":"/en/date-input-group","sidebar":"componenten"},{"id":"componenten/date-input/index","path":"/en/date-input","sidebar":"componenten"},{"id":"componenten/date-picker/index","path":"/en/date-picker","sidebar":"componenten"},{"id":"componenten/definition-list/index","path":"/en/description-list","sidebar":"componenten"},{"id":"componenten/dot-badge/index","path":"/en/dot-badge","sidebar":"componenten"},{"id":"componenten/drawer/index","path":"/en/drawer","sidebar":"componenten"},{"id":"componenten/fieldset/index","path":"/en/fieldset","sidebar":"componenten"},{"id":"componenten/figure/index","path":"/en/figure","sidebar":"componenten"},{"id":"componenten/file-input/index","path":"/en/file-input","sidebar":"componenten"},{"id":"componenten/form-field-checkbox-option/index","path":"/en/form-field-checkbox-option","sidebar":"componenten"},{"id":"componenten/form-field-description/index","path":"/en/form-field-description","sidebar":"componenten"},{"id":"componenten/form-field-error-message/index","path":"/en/form-field-error-message","sidebar":"componenten"},{"id":"componenten/form-field-label/index","path":"/en/form-field-label","sidebar":"componenten"},{"id":"componenten/form-field-option-label/index","path":"/en/form-field-option-label","sidebar":"componenten"},{"id":"componenten/form-field-partial-label/index","path":"/en/form-field-partial-label","sidebar":"componenten"},{"id":"componenten/form-field-partial/index","path":"/en/form-field-partial","sidebar":"componenten"},{"id":"componenten/form-field-radio-option/index","path":"/en/form-field-radio-option","sidebar":"componenten"},{"id":"componenten/form-field/index","path":"/en/form-field","sidebar":"componenten"},{"id":"componenten/heading-1/index","path":"/en/heading-1","sidebar":"componenten"},{"id":"componenten/heading-2/index","path":"/en/heading-2","sidebar":"componenten"},{"id":"componenten/heading-3/index","path":"/en/heading-3","sidebar":"componenten"},{"id":"componenten/heading-4/index","path":"/en/heading-4","sidebar":"componenten"},{"id":"componenten/heading-5/index","path":"/en/heading-5","sidebar":"componenten"},{"id":"componenten/heading-6/index","path":"/en/heading-6","sidebar":"componenten"},{"id":"componenten/heading-group/index","path":"/en/heading-group","sidebar":"componenten"},{"id":"componenten/heading/index","path":"/en/heading","sidebar":"componenten"},{"id":"componenten/icon/index","path":"/en/icon","sidebar":"componenten"},{"id":"componenten/invalid-form-alert/index","path":"/en/invalid-form-alert","sidebar":"componenten"},{"id":"componenten/language-navigation/index","path":"/en/language-navigation","sidebar":"componenten"},{"id":"componenten/legend/index","path":"/en/legend","sidebar":"componenten"},{"id":"componenten/link-list/index","path":"/en/link-list","sidebar":"componenten"},{"id":"componenten/link/index","path":"/en/link","sidebar":"componenten"},{"id":"componenten/modal-dialog/index","path":"/en/modal-dialog","sidebar":"componenten"},{"id":"componenten/navigation-bar/index","path":"/en/navigation-bar","sidebar":"componenten"},{"id":"componenten/non-modal-dialog/index","path":"/en/non-modal-dialog","sidebar":"componenten"},{"id":"componenten/notification-banner/index","path":"/en/notification-banner","sidebar":"componenten"},{"id":"componenten/number-badge/index","path":"/en/number-badge","sidebar":"componenten"},{"id":"componenten/number-input/index","path":"/en/number-input","sidebar":"componenten"},{"id":"componenten/ordered-list/index","path":"/en/ordered-list","sidebar":"componenten"},{"id":"componenten/page-footer/index","path":"/en/page-footer","sidebar":"componenten"},{"id":"componenten/page-header/index","path":"/en/page-header","sidebar":"componenten"},{"id":"componenten/pagination/index","path":"/en/pagination","sidebar":"componenten"},{"id":"componenten/paragraph/index","path":"/en/paragraph","sidebar":"componenten"},{"id":"componenten/password-input/index","path":"/en/password-input","sidebar":"componenten"},{"id":"componenten/pre-heading/index","path":"/en/pre-heading","sidebar":"componenten"},{"id":"componenten/progress-bar/index","path":"/en/progress-bar","sidebar":"componenten"},{"id":"componenten/progress-list/index","path":"/en/progress-list","sidebar":"componenten"},{"id":"componenten/radio-button/index","path":"/en/radio-button","sidebar":"componenten"},{"id":"componenten/radio-group/index","path":"/en/radio-group","sidebar":"componenten"},{"id":"componenten/range/index","path":"/en/range","sidebar":"componenten"},{"id":"componenten/README","path":"/en/componenten/","sidebar":"componenten"},{"id":"componenten/rich-text-content/index","path":"/en/rich-text-content","sidebar":"componenten"},{"id":"componenten/select/index","path":"/en/select","sidebar":"componenten"},{"id":"componenten/separator/index","path":"/en/separator","sidebar":"componenten"},{"id":"componenten/side-navigation/index","path":"/en/side-navigation","sidebar":"componenten"},{"id":"componenten/skip-link/index","path":"/en/skip-link","sidebar":"componenten"},{"id":"componenten/spinner/index","path":"/en/spinner","sidebar":"componenten"},{"id":"componenten/status-badge/index","path":"/en/status-badge","sidebar":"componenten"},{"id":"componenten/strong/index","path":"/en/strong","sidebar":"componenten"},{"id":"componenten/sub-heading/index","path":"/en/sub-heading","sidebar":"componenten"},{"id":"componenten/summary-list/index","path":"/en/summary-list","sidebar":"componenten"},{"id":"componenten/switch/index","path":"/en/switch","sidebar":"componenten"},{"id":"componenten/table/index","path":"/en/table","sidebar":"componenten"},{"id":"componenten/tabs/index","path":"/en/tabs","sidebar":"componenten"},{"id":"componenten/task-list/index","path":"/en/task-list","sidebar":"componenten"},{"id":"componenten/text-input-group/index","path":"/en/text-input-group","sidebar":"componenten"},{"id":"componenten/text-input/index","path":"/en/text-input","sidebar":"componenten"},{"id":"componenten/textarea/index","path":"/en/textarea","sidebar":"componenten"},{"id":"componenten/toggletip/index","path":"/en/toggletip","sidebar":"componenten"},{"id":"componenten/unordered-list/index","path":"/en/unordered-list","sidebar":"componenten"},{"id":"componenten/video/index","path":"/en/video","sidebar":"componenten"},{"id":"footer/coc","path":"/en/coc","unlisted":true},{"id":"footer/colofon","path":"/en/colofon"},{"id":"footer/privacyverklaring","path":"/en/privacyverklaring"},{"id":"footer/toegankelijkheidsverklaring","path":"/en/toegankelijkheidsverklaring"},{"id":"footer/wcag-em-rapport-2023","path":"/en/toegankelijkheidsverklaring/rapport-2023"},{"id":"handboek/component-bijdragen/candidate-stappenplan","path":"/en/handboek/component-bijdragen/candidate-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan","path":"/en/handboek/component-bijdragen/community-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/community-stappenplan-voor-organisaties","path":"/en/handboek/component-bijdragen/community-stappenplan-voor-organisaties","sidebar":"handboek"},{"id":"handboek/component-bijdragen/definition-of-done","path":"/en/handboek/component-bijdragen/definition-of-done","sidebar":"handboek"},{"id":"handboek/component-bijdragen/hall-of-fame-stappenplan","path":"/en/handboek/component-bijdragen/hall-of-fame-stappenplan","sidebar":"handboek"},{"id":"handboek/component-bijdragen/help-wanted-stappenplan","path":"/en/handboek/component-bijdragen/help-wanted-stappenplan","sidebar":"handboek"},{"id":"handboek/design-tokens/README","path":"/en/handboek/design-tokens/","sidebar":"handboek"},{"id":"handboek/designer/community","path":"/en/handboek/designer/community","sidebar":"handboek"},{"id":"handboek/designer/figma-structuur","path":"/en/handboek/designer/figma-structuur","sidebar":"handboek"},{"id":"handboek/designer/README","path":"/en/handboek/designer/","sidebar":"handboek"},{"id":"handboek/designer/stappenplan","path":"/en/handboek/designer/stappenplan","sidebar":"handboek"},{"id":"handboek/designer/voorbeeld-thema","path":"/en/handboek/designer/voorbeeld-thema","sidebar":"handboek"},{"id":"handboek/designer/zelf-componenten-maken","path":"/en/handboek/designer/zelf-componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/aan-de-slag","path":"/en/handboek/developer/aan-de-slag","sidebar":"handboek"},{"id":"handboek/developer/architectuur","path":"/en/handboek/developer/architectuur","sidebar":"handboek"},{"id":"handboek/developer/component-inzetten","path":"/en/handboek/developer/component-inzetten","sidebar":"handboek"},{"id":"handboek/developer/component-uitbreiden","path":"/en/handboek/developer/component-uitbreiden","sidebar":"handboek"},{"id":"handboek/developer/componenten-maken","path":"/en/handboek/developer/componenten-maken","sidebar":"handboek"},{"id":"handboek/developer/herbruikbare-css","path":"/en/handboek/developer/herbruikbare-css","sidebar":"handboek"},{"id":"handboek/developer/meewerken-als-developer","path":"/en/handboek/developer/meewerken-als-developer","sidebar":"handboek"},{"id":"handboek/developer/samenwerken-aan-componenten","path":"/en/handboek/developer/samenwerken-aan-componenten","sidebar":"handboek"},{"id":"handboek/developer/thema-maken","path":"/en/handboek/developer/thema-maken","sidebar":"handboek"},{"id":"handboek/estafettemodel","path":"/en/handboek/estafettemodel","sidebar":"handboek"},{"id":"handboek/introductie","path":"/en/handboek/introductie","sidebar":"handboek"},{"id":"handboek/leverancier/introductie","path":"/en/handboek/leverancier/introductie","sidebar":"handboek"},{"id":"handboek/manager/introductie","path":"/en/handboek/manager/introductie","sidebar":"handboek"},{"id":"handboek/naamgeving","path":"/en/handboek/naamgeving"},{"id":"handboek/organisatie/meedoen","path":"/en/handboek/organisatie/meedoen","sidebar":"handboek"},{"id":"handboek/organisatie/vragen-over-aanbestedingen","path":"/en/handboek/organisatie/vragen-over-aanbestedingen","sidebar":"handboek"},{"id":"open-source/cc0","path":"/en/open-source/cc0"},{"id":"open-source/eupl","path":"/en/open-source/eupl"},{"id":"project/blijf-op-de-hoogte","path":"/en/project/blijf-op-de-hoogte","sidebar":"project"},{"id":"project/faq","path":"/en/project/faq","sidebar":"project"},{"id":"project/kernteam","path":"/en/project/kernteam","sidebar":"project"},{"id":"project/links","path":"/en/project/links","sidebar":"project"},{"id":"project/newsletter-success","path":"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt","unlisted":true},{"id":"project/nieuwsbrief","path":"/en/project/nieuwsbrief"},{"id":"project/over-nl-design-system","path":"/en/project/over-nl-design-system","sidebar":"project"},{"id":"richtlijnen/formulieren/button/accessible-name/README","path":"/en/richtlijnen/formulieren/buttons/toegankelijke-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/disabled/README","path":"/en/richtlijnen/formulieren/buttons/disabled-submitbuttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/image-as-button/README","path":"/en/richtlijnen/formulieren/buttons/afbeelding-als-button","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/keyboard/README","path":"/en/richtlijnen/formulieren/buttons/toetsenbordbediening","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/placement/README","path":"/en/richtlijnen/formulieren/buttons/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/README","path":"/en/richtlijnen/formulieren/buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/submit/README","path":"/en/richtlijnen/formulieren/buttons/niet-automatisch-versturen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/button/text/README","path":"/en/richtlijnen/formulieren/buttons/duidelijk-buttontekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/accessibility/README","path":"/en/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/contact/README","path":"/en/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/next-steps/README","path":"/en/richtlijnen/formulieren/bevestigingspagina/vervolgstappen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/README","path":"/en/richtlijnen/formulieren/bevestigingspagina/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/confirmation/success/README","path":"/en/richtlijnen/formulieren/bevestigingspagina/succesmelding","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/associated/README","path":"/en/richtlijnen/formulieren/descriptions/koppelen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/fieldset/README","path":"/en/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/length/README","path":"/en/richtlijnen/formulieren/descriptions/lengte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/multiple/README","path":"/en/richtlijnen/formulieren/descriptions/meerdere-koppelen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/placement/README","path":"/en/richtlijnen/formulieren/descriptions/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/README","path":"/en/richtlijnen/formulieren/descriptions/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/description/target-size/README","path":"/en/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/clarity/README","path":"/en/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/description/README","path":"/en/richtlijnen/formulieren/foutmeldingen/beschrijven","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/feedback/README","path":"/en/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/location/README","path":"/en/richtlijnen/formulieren/foutmeldingen/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/no-native-validation/README","path":"/en/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/README","path":"/en/richtlijnen/formulieren/foutmeldingen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/summary/README","path":"/en/richtlijnen/formulieren/foutmeldingen/samenvatting","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/error/timing/README","path":"/en/richtlijnen/formulieren/foutmeldingen/controleren","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/allow-copy-paste/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/approve/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/autocomplete/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/autocomplete","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/autofill/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/error-prevention/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/show-required/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/help/show-values/README","path":"/en/richtlijnen/formulieren/voorkom-fouten/geldige-waardes","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour/README","path":"/en/richtlijnen/formulieren/toetsenbord/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/keyboard-behaviour/tabindex/README","path":"/en/richtlijnen/formulieren/toetsenbord/tabindex","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/above-field/README","path":"/en/richtlijnen/formulieren/labels/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/accessible-name/README","path":"/en/richtlijnen/formulieren/labels/toegankelijke-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/always-visible/README","path":"/en/richtlijnen/formulieren/labels/altijd-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/only-text/README","path":"/en/richtlijnen/formulieren/labels/alleen-tekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/README","path":"/en/richtlijnen/formulieren/labels/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/text/README","path":"/en/richtlijnen/formulieren/labels/duidelijke-tekst","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/label/visible-acccessible-name/README","path":"/en/richtlijnen/formulieren/labels/zichtbare-naam","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/above-field/README","path":"/en/richtlijnen/formulieren/links/plaatsing","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/in-new-tab/README","path":"/en/richtlijnen/formulieren/links/nieuwe-tab","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/not-in-label/README","path":"/en/richtlijnen/formulieren/links/niet-in-label","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/link/README","path":"/en/richtlijnen/formulieren/links/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/consistency/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/consistente-benaming","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/last-check/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/samenvatting","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/location/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/step-count/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/multistep/timing/README","path":"/en/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/clarity/README","path":"/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/colour-contrast/README","path":"/en/richtlijnen/formulieren/placeholders/kleurcontrast","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/label/README","path":"/en/richtlijnen/formulieren/placeholders/niet-als-label","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/README","path":"/en/richtlijnen/formulieren/placeholders/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/placeholder/search/README","path":"/en/richtlijnen/formulieren/placeholders/zoekfunctie","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/avoid-duplicate-work/README","path":"/en/richtlijnen/formulieren/vragen/voorkom-dubbel-werk","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/contact/README","path":"/en/richtlijnen/formulieren/vragen/manieren-voor-contact","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/min-max/README","path":"/en/richtlijnen/formulieren/vragen/geen-min-max-lengte","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/needed/README","path":"/en/richtlijnen/formulieren/vragen/check-noodzaak","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/README","path":"/en/richtlijnen/formulieren/vragen/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/questions/why/README","path":"/en/richtlijnen/formulieren/vragen/leg-uit-waarom","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/README","path":"/en/richtlijnen/formulieren","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/field-contrast/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/field-size/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/focus-visible/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/no-image-buttons/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/order/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/placeholder-contrast/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/text-contrast/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/visual-design/use-of-color/README","path":"/en/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/compat/README","path":"/en/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/README","path":"/en/richtlijnen/formulieren/wanneer-welk-form-element/","sidebar":"richtlijnen"},{"id":"richtlijnen/formulieren/when-which/usability/README","path":"/en/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid","sidebar":"richtlijnen"},{"id":"richtlijnen/README","path":"/en/richtlijnen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/iconen","path":"/en/richtlijnen/stijl/iconen","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/kleuren","path":"/en/richtlijnen/stijl/kleuren","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/ruimte","path":"/en/richtlijnen/stijl/ruimte","sidebar":"richtlijnen"},{"id":"richtlijnen/stijl/typografie","path":"/en/richtlijnen/stijl/typografie","sidebar":"richtlijnen"},{"id":"voorbeelden/onderzoek/README","path":"/en/voorbeelden/onderzoek/","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/bevestigingspagina","path":"/en/voorbeelden/patronen/formulieren/bevestigingspagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/controlepagina","path":"/en/voorbeelden/patronen/formulieren/controlepagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/foutmeldingen","path":"/en/voorbeelden/patronen/formulieren/foutmeldingen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/funnel-header","path":"/en/voorbeelden/patronen/formulieren/funnel-header","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/inloggen","path":"/en/voorbeelden/patronen/formulieren/inloggen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/intropagina","path":"/en/voorbeelden/patronen/formulieren/intropagina","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/meerstappenformulier","path":"/en/voorbeelden/patronen/formulieren/meerstappenformulier","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/niet-verplichte-velden","path":"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/opslaan-of-stoppen","path":"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/responsive-design","path":"/en/voorbeelden/patronen/formulieren/responsive-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","path":"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/startpunt","path":"/en/voorbeelden/patronen/formulieren/startpunt","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/terug-navigeren","path":"/en/voorbeelden/patronen/formulieren/terug-navigeren","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/uploaden","path":"/en/voorbeelden/patronen/formulieren/uploaden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/visual-design","path":"/en/voorbeelden/patronen/formulieren/visual-design","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/volgende-stap","path":"/en/voorbeelden/patronen/formulieren/volgende-stap","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren/voortgang-indicatie","path":"/en/voorbeelden/patronen/formulieren/voortgang-indicatie","sidebar":"voorbeelden"},{"id":"voorbeelden/README","path":"/en/voorbeelden/"},{"id":"voorbeelden/templates/README","path":"/en/voorbeelden/templates/"},{"id":"wcag/1.1.01","path":"/en/wcag/1.1.1","sidebar":"richtlijnen"},{"id":"wcag/1.2.01","path":"/en/wcag/1.2.1","sidebar":"richtlijnen"},{"id":"wcag/1.2.02","path":"/en/wcag/1.2.2","sidebar":"richtlijnen"},{"id":"wcag/1.2.03","path":"/en/wcag/1.2.3","sidebar":"richtlijnen"},{"id":"wcag/1.2.04","path":"/en/wcag/1.2.4","sidebar":"richtlijnen"},{"id":"wcag/1.2.05","path":"/en/wcag/1.2.5","sidebar":"richtlijnen"},{"id":"wcag/1.2.06","path":"/en/wcag/1.2.6","sidebar":"richtlijnen"},{"id":"wcag/1.2.08","path":"/en/wcag/1.2.8","sidebar":"richtlijnen"},{"id":"wcag/1.2.09","path":"/en/wcag/1.2.9","sidebar":"richtlijnen"},{"id":"wcag/1.3.01","path":"/en/wcag/1.3.1","sidebar":"richtlijnen"},{"id":"wcag/1.3.02","path":"/en/wcag/1.3.2","sidebar":"richtlijnen"},{"id":"wcag/1.3.03","path":"/en/wcag/1.3.3","sidebar":"richtlijnen"},{"id":"wcag/1.3.04","path":"/en/wcag/1.3.4","sidebar":"richtlijnen"},{"id":"wcag/1.3.05","path":"/en/wcag/1.3.5","sidebar":"richtlijnen"},{"id":"wcag/1.4.01","path":"/en/wcag/1.4.1","sidebar":"richtlijnen"},{"id":"wcag/1.4.02","path":"/en/wcag/1.4.2","sidebar":"richtlijnen"},{"id":"wcag/1.4.03","path":"/en/wcag/1.4.3","sidebar":"richtlijnen"},{"id":"wcag/1.4.04","path":"/en/wcag/1.4.4","sidebar":"richtlijnen"},{"id":"wcag/1.4.05","path":"/en/wcag/1.4.5","sidebar":"richtlijnen"},{"id":"wcag/1.4.08","path":"/en/wcag/1.4.8","sidebar":"richtlijnen"},{"id":"wcag/1.4.10","path":"/en/wcag/1.4.10","sidebar":"richtlijnen"},{"id":"wcag/1.4.11","path":"/en/wcag/1.4.11","sidebar":"richtlijnen"},{"id":"wcag/1.4.12","path":"/en/wcag/1.4.12","sidebar":"richtlijnen"},{"id":"wcag/1.4.13","path":"/en/wcag/1.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.1.01","path":"/en/wcag/2.1.1","sidebar":"richtlijnen"},{"id":"wcag/2.1.02","path":"/en/wcag/2.1.2","sidebar":"richtlijnen"},{"id":"wcag/2.1.04","path":"/en/wcag/2.1.4","sidebar":"richtlijnen"},{"id":"wcag/2.2.01","path":"/en/wcag/2.2.1","sidebar":"richtlijnen"},{"id":"wcag/2.2.02","path":"/en/wcag/2.2.2","sidebar":"richtlijnen"},{"id":"wcag/2.3.01","path":"/en/wcag/2.3.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.01","path":"/en/wcag/2.4.1","sidebar":"richtlijnen"},{"id":"wcag/2.4.02","path":"/en/wcag/2.4.2","sidebar":"richtlijnen"},{"id":"wcag/2.4.03","path":"/en/wcag/2.4.3","sidebar":"richtlijnen"},{"id":"wcag/2.4.04","path":"/en/wcag/2.4.4","sidebar":"richtlijnen"},{"id":"wcag/2.4.05","path":"/en/wcag/2.4.5","sidebar":"richtlijnen"},{"id":"wcag/2.4.06","path":"/en/wcag/2.4.6","sidebar":"richtlijnen"},{"id":"wcag/2.4.07","path":"/en/wcag/2.4.7","sidebar":"richtlijnen"},{"id":"wcag/2.4.10","path":"/en/wcag/2.4.10","sidebar":"richtlijnen"},{"id":"wcag/2.4.11","path":"/en/wcag/2.4.11","sidebar":"richtlijnen"},{"id":"wcag/2.4.13","path":"/en/wcag/2.4.13","sidebar":"richtlijnen"},{"id":"wcag/2.5.01","path":"/en/wcag/2.5.1","sidebar":"richtlijnen"},{"id":"wcag/2.5.02","path":"/en/wcag/2.5.2","sidebar":"richtlijnen"},{"id":"wcag/2.5.03","path":"/en/wcag/2.5.3","sidebar":"richtlijnen"},{"id":"wcag/2.5.04","path":"/en/wcag/2.5.4","sidebar":"richtlijnen"},{"id":"wcag/2.5.05","path":"/en/wcag/2.5.5","sidebar":"richtlijnen"},{"id":"wcag/2.5.07","path":"/en/wcag/2.5.7","sidebar":"richtlijnen"},{"id":"wcag/2.5.08","path":"/en/wcag/2.5.8","sidebar":"richtlijnen"},{"id":"wcag/3.1.01","path":"/en/wcag/3.1.1","sidebar":"richtlijnen"},{"id":"wcag/3.1.02","path":"/en/wcag/3.1.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.01","path":"/en/wcag/3.2.1","sidebar":"richtlijnen"},{"id":"wcag/3.2.02","path":"/en/wcag/3.2.2","sidebar":"richtlijnen"},{"id":"wcag/3.2.03","path":"/en/wcag/3.2.3","sidebar":"richtlijnen"},{"id":"wcag/3.2.04","path":"/en/wcag/3.2.4","sidebar":"richtlijnen"},{"id":"wcag/3.2.06","path":"/en/wcag/3.2.6","sidebar":"richtlijnen"},{"id":"wcag/3.3.01","path":"/en/wcag/3.3.1","sidebar":"richtlijnen"},{"id":"wcag/3.3.02","path":"/en/wcag/3.3.2","sidebar":"richtlijnen"},{"id":"wcag/3.3.03","path":"/en/wcag/3.3.3","sidebar":"richtlijnen"},{"id":"wcag/3.3.04","path":"/en/wcag/3.3.4","sidebar":"richtlijnen"},{"id":"wcag/3.3.07","path":"/en/wcag/3.3.7","sidebar":"richtlijnen"},{"id":"wcag/3.3.08","path":"/en/wcag/3.3.8","sidebar":"richtlijnen"},{"id":"wcag/4.1.01","path":"/en/wcag/4.1.1","sidebar":"richtlijnen"},{"id":"wcag/4.1.02","path":"/en/wcag/4.1.2","sidebar":"richtlijnen"},{"id":"wcag/4.1.03","path":"/en/wcag/4.1.3","sidebar":"richtlijnen"},{"id":"wcag/introduction","path":"/en/wcag/introduction","sidebar":"richtlijnen"},{"id":"handboek","path":"/en/handboek","sidebar":"handboek"},{"id":"/handboek/component-bijdragen/overzicht","path":"/en/handboek/component-bijdragen/overzicht","sidebar":"handboek"},{"id":"/handboek/designer/overzicht","path":"/en/handboek/designer/overzicht","sidebar":"handboek"},{"id":"/handboek/developer/overzicht","path":"/en/handboek/developer/overzicht","sidebar":"handboek"},{"id":"/handboek/organisatie/overzicht","path":"/en/handboek/organisatie/overzicht","sidebar":"handboek"},{"id":"/richtlijnen/stijl","path":"/en/richtlijnen/stijl","sidebar":"richtlijnen"},{"id":"/wcag","path":"/en/wcag","sidebar":"richtlijnen"},{"id":"voorbeelden","path":"/en/voorbeelden","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen","path":"/en/voorbeelden/patronen","sidebar":"voorbeelden"},{"id":"voorbeelden/patronen/formulieren","path":"/en/voorbeelden/patronen/formulieren","sidebar":"voorbeelden"},{"id":"community","path":"/en/community","sidebar":"community"},{"id":"/community/events/overzicht","path":"/en/community/events/overzicht","sidebar":"community"},{"id":"/events/heartbeat/overzicht","path":"/en/events/heartbeat/overzicht","sidebar":"community"},{"id":"/events/design-open-hour/overzicht","path":"/en/events/design-open-hour/overzicht","sidebar":"community"},{"id":"/events/developer-open-hour/overzicht","path":"/en/events/developer-open-hour/overzicht","sidebar":"community"},{"id":"project","path":"/en/project","sidebar":"project"}],"draftIds":[],"sidebars":{"handboek":{"link":{"path":"/en/handboek","label":"Handboek"}},"richtlijnen":{"link":{"path":"/en/richtlijnen","label":"Richtlijnen"}},"componenten":{"link":{"path":"/en/componenten/","label":"Overzicht"}},"voorbeelden":{"link":{"path":"/en/voorbeelden","label":"Voorbeelden"}},"community":{"link":{"path":"/en/community","label":"Community"}},"project":{"link":{"path":"/en/project","label":"Project"}}}}],"breadcrumbs":true}}}'),
+    c = JSON.parse('{"defaultLocale":"nl","locales":["nl","en"],"path":"i18n","currentLocale":"en","localeConfigs":{"nl":{"label":"Nederlands","direction":"ltr","htmlLang":"nl-NL","calendar":"gregory","path":"nl"},"en":{"label":"English","direction":"ltr","htmlLang":"en-EN","calendar":"gregory","path":"en"}}}');
    var i = r(57529);
    const l = JSON.parse('{"docusaurusVersion":"3.1.0","siteVersion":"0.0.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.1.0"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.1.0"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.1.0"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.1.0"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.1.0"},"docusaurus-theme-search-algolia":{"type":"package","name":"@docusaurus/theme-search-algolia","version":"3.1.0"}}}');
    var u = r(52676);
@@ -4600,40 +4602,40 @@
     const S = (0, n.useRef)(!1),
      D = r ? o.OL : o.rU,
      N = l.Z.canUseIntersectionObserver,
-     L = (0, n.useRef)(),
-     z = () => {
+     z = (0, n.useRef)(),
+     L = () => {
       S.current || null == E || (window.docusaurus.preload(E), (S.current = !0));
      };
     (0, n.useEffect)(
      () => (
       !N && C && null != E && window.docusaurus.prefetch(E),
       () => {
-       N && L.current && L.current.disconnect();
+       N && z.current && z.current.disconnect();
       }
      ),
-     [L, E, N, C],
+     [z, E, N, C],
     );
     const A = E?.startsWith('#') ?? !1,
-     T = !E || !C || A;
+     R = !E || !C || A;
     return (
-     T || f || w.collectLink(E),
-     T
+     R || f || w.collectLink(E),
+     R
       ? (0, d.jsx)('a', { ref: _, href: E, ...(j && !C && { target: '_blank', rel: 'noopener noreferrer' }), ...v })
       : (0, d.jsx)(D, {
          ...v,
-         onMouseEnter: z,
-         onTouchStart: z,
+         onMouseEnter: L,
+         onTouchStart: L,
          innerRef: (e) => {
           (_.current = e),
            N &&
             e &&
             C &&
-            ((L.current = new window.IntersectionObserver((t) => {
+            ((z.current = new window.IntersectionObserver((t) => {
              t.forEach((t) => {
-              e === t.target && (t.isIntersecting || t.intersectionRatio > 0) && (L.current.unobserve(e), L.current.disconnect(), null != E && window.docusaurus.prefetch(E));
+              e === t.target && (t.isIntersecting || t.intersectionRatio > 0) && (z.current.unobserve(e), z.current.disconnect(), null != E && window.docusaurus.prefetch(E));
              });
             })),
-            L.current.observe(e));
+            z.current.observe(e));
          },
          to: E,
          ...(r && { isActive: m, activeClassName: p }),
@@ -5263,14 +5265,14 @@
    function N(e) {
     return (0, s.jsx)('button', { type: 'button', ...e, children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.tryAgain', description: 'The label of the button to try again rendering when the React error boundary captures an error', children: 'Try again' }) });
    }
-   function L(e) {
+   function z(e) {
     let { error: t } = e;
     const r = (0, S.getErrorCausalChain)(t)
      .map((e) => e.message)
      .join('\n\nCause:\n');
     return (0, s.jsx)('p', { className: D.errorBoundaryError, children: r });
    }
-   class z extends n.Component {
+   class L extends n.Component {
     componentDidCatch(e, t) {
      throw this.props.onError(e, t);
     }
@@ -5279,17 +5281,17 @@
     }
    }
    var A = r(38991),
-    T = r(36288),
-    R = r(91878);
+    R = r(36288),
+    T = r(91878);
    const I = n.createContext(null);
    function M(e) {
     let { children: t } = e;
     const r = (function () {
      const e = (0, A.e)(),
-      t = (0, T.HY)(),
+      t = (0, R.HY)(),
       [r, o] = (0, n.useState)(!1),
       a = null !== t.component,
-      c = (0, R.D9)(a);
+      c = (0, T.D9)(a);
      return (
       (0, n.useEffect)(() => {
        a && !c && o(!0);
@@ -5310,10 +5312,10 @@
    }
    function F() {
     const e = (0, n.useContext)(I);
-    if (!e) throw new R.i6('NavbarSecondaryMenuDisplayProvider');
+    if (!e) throw new T.i6('NavbarSecondaryMenuDisplayProvider');
     const [t, r] = e,
      o = (0, n.useCallback)(() => r(!1), [r]),
-     a = (0, T.HY)();
+     a = (0, R.HY)();
     return (0, n.useMemo)(() => ({ shown: t, hide: o, content: Z(a) }), [o, a, t]);
    }
    const q = 'right';
@@ -5337,7 +5339,7 @@
     const t = (0, ee.Z)(),
      { colorMode: r } = (function () {
       const e = (0, n.useContext)(W);
-      if (null == e) throw new R.i6('ColorModeProvider', 'Please see https://docusaurus.io/docs/api/themes/configuration#use-color-mode.');
+      if (null == e) throw new T.i6('ColorModeProvider', 'Please see https://docusaurus.io/docs/api/themes/configuration#use-color-mode.');
       return e;
      })(),
      { sources: a, className: c, alt: i, ...l } = e,
@@ -5501,11 +5503,11 @@
    }
    const De = 'iconLanguage_DSK9';
    var Ne = r(59801),
-    Le = r(99477),
-    ze = r(46263),
+    ze = r(99477),
+    Le = r(46263),
     Ae = r(14052),
-    Te = r(48392);
-   var Re = r(30967);
+    Re = r(48392);
+   var Te = r(30967);
    const Ie = { button: { buttonText: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }), buttonAriaLabel: (0, l.I)({ id: 'theme.SearchBar.label', message: 'Search', description: 'The ARIA label and placeholder for search button' }) }, modal: { searchBox: { resetButtonTitle: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), resetButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.resetButtonTitle', message: 'Clear the query', description: 'The label and ARIA label for search box reset button' }), cancelButtonText: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }), cancelButtonAriaLabel: (0, l.I)({ id: 'theme.SearchModal.searchBox.cancelButtonText', message: 'Cancel', description: 'The label and ARIA label for search box cancel button' }) }, startScreen: { recentSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.recentSearchesTitle', message: 'Recent', description: 'The title for recent searches' }), noRecentSearchesText: (0, l.I)({ id: 'theme.SearchModal.startScreen.noRecentSearchesText', message: 'No recent searches', description: 'The text when no recent searches' }), saveRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.saveRecentSearchButtonTitle', message: 'Save this search', description: 'The label for save recent search button' }), removeRecentSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeRecentSearchButtonTitle', message: 'Remove this search from history', description: 'The label for remove recent search button' }), favoriteSearchesTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.favoriteSearchesTitle', message: 'Favorite', description: 'The title for favorite searches' }), removeFavoriteSearchButtonTitle: (0, l.I)({ id: 'theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle', message: 'Remove this search from favorites', description: 'The label for remove favorite search button' }) }, errorScreen: { titleText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.titleText', message: 'Unable to fetch results', description: 'The title for error screen of search modal' }), helpText: (0, l.I)({ id: 'theme.SearchModal.errorScreen.helpText', message: 'You might want to check your network connection.', description: 'The help text for error screen of search modal' }) }, footer: { selectText: (0, l.I)({ id: 'theme.SearchModal.footer.selectText', message: 'to select', description: 'The explanatory text of the action for the enter key' }), selectKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.selectKeyAriaLabel', message: 'Enter key', description: 'The ARIA label for the Enter key button that makes the selection' }), navigateText: (0, l.I)({ id: 'theme.SearchModal.footer.navigateText', message: 'to navigate', description: 'The explanatory text of the action for the Arrow up and Arrow down key' }), navigateUpKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateUpKeyAriaLabel', message: 'Arrow up', description: 'The ARIA label for the Arrow up key button that makes the navigation' }), navigateDownKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.navigateDownKeyAriaLabel', message: 'Arrow down', description: 'The ARIA label for the Arrow down key button that makes the navigation' }), closeText: (0, l.I)({ id: 'theme.SearchModal.footer.closeText', message: 'to close', description: 'The explanatory text of the action for Escape key' }), closeKeyAriaLabel: (0, l.I)({ id: 'theme.SearchModal.footer.closeKeyAriaLabel', message: 'Escape key', description: 'The ARIA label for the Escape key button that close the modal' }), searchByText: (0, l.I)({ id: 'theme.SearchModal.footer.searchByText', message: 'Search by', description: 'The text explain that the search is making by Algolia' }) }, noResultsScreen: { noResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.noResultsText', message: 'No results for', description: 'The text explains that there are no results for the following search' }), suggestedQueryText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.suggestedQueryText', message: 'Try searching for', description: 'The text for the suggested query when no results are found for the following search' }), reportMissingResultsText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsText', message: 'Believe this query should return results?', description: 'The text for the question where the user thinks there are missing results' }), reportMissingResultsLinkText: (0, l.I)({ id: 'theme.SearchModal.noResultsScreen.reportMissingResultsLinkText', message: 'Let us know.', description: 'The text for the link to report missing results' }) } }, placeholder: (0, l.I)({ id: 'theme.SearchModal.placeholder', message: 'Search docs', description: 'The placeholder of the input of the DocSearch pop-up modal' }) };
    let Me = null;
    function Ze(e) {
@@ -5514,7 +5516,7 @@
    }
    function Fe(e) {
     let { state: t, onClose: r } = e;
-    const n = (0, ze.M)();
+    const n = (0, Le.M)();
     return (0, s.jsx)(B.Z, { to: n(t.query), onClick: r, className: 'utrecht-link', children: (0, s.jsx)(l.Z, { id: 'theme.SearchBar.seeAll', values: { count: t.context.nbHits }, children: 'See all {count} results' }) });
    }
    function qe(e) {
@@ -5522,7 +5524,7 @@
     const { siteMetadata: c } = (0, H.Z)(),
      l = (0, Ae.l)(),
      u = (function () {
-      const { locale: e, tags: t } = (0, Te._q)();
+      const { locale: e, tags: t } = (0, Re._q)();
       return [`language:${e}`, t.map((e) => `docusaurus_tag:${e}`)];
      })(),
      d = a.searchParameters?.facetFilters ?? [],
@@ -5573,7 +5575,7 @@
      O = (0, n.useRef)((e) => (a.transformItems ? a.transformItems(e) : e.map((e) => ({ ...e, url: l(e.url) })))).current,
      E = (0, n.useMemo)(() => (e) => (0, s.jsx)(Fe, { ...e, onClose: _ }), [_]),
      P = (0, n.useCallback)((e) => (e.addAlgoliaAgent('docusaurus', c.docusaurusVersion), e), [c.docusaurusVersion]);
-    return (0, Ne.D4)({ isOpen: g, onOpen: w, onClose: _, onInput: j, searchButtonRef: f }), (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(Le.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: f, translations: Ie.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Me && m.current && (0, Re.createPortal)((0, s.jsx)(Me, { onClose: _, initialScrollY: window.scrollY, initialQuery: k, navigator: C, transformItems: O, hitComponent: Ze, transformSearchClient: P, ...(a.searchPagePath && { resultsFooterComponent: E }), ...a, searchParameters: b, placeholder: Ie.placeholder, translations: Ie.modal }), m.current)] });
+    return (0, Ne.D4)({ isOpen: g, onOpen: w, onClose: _, onInput: j, searchButtonRef: f }), (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(ze.Z, { children: (0, s.jsx)('link', { rel: 'preconnect', href: `https://${a.appId}-dsn.algolia.net`, crossOrigin: 'anonymous' }) }), (0, s.jsx)(ie.zx, { appearance: 'subtle-button', onTouchStart: x, onFocus: x, onMouseOver: x, onClick: w, ref: f, translations: Ie.button, 'aria-label': 'Start met zoeken', className: 'navbar__item navbar__item--show-on-mobile', children: (0, s.jsx)('svg', { width: '20', height: '20', viewBox: '0 0 20 20', fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg', children: (0, s.jsx)('path', { d: 'M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z' }) }) }), g && Me && m.current && (0, Te.createPortal)((0, s.jsx)(Me, { onClose: _, initialScrollY: window.scrollY, initialQuery: k, navigator: C, transformItems: O, hitComponent: Ze, transformSearchClient: P, ...(a.searchPagePath && { resultsFooterComponent: E }), ...a, searchParameters: b, placeholder: Ie.placeholder, translations: Ie.modal }), m.current)] });
    }
    function Be() {
     const { siteConfig: e } = (0, H.Z)();
@@ -5660,7 +5662,7 @@
    }
    function Ue(e) {
     let { items: t, position: r = 'block-start', positionChildren: n = 'block-end', showOnMobile: a, children: c } = e;
-    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(z, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(He, { ...e }) }, t)), ' ', 'block-end' === n && c] });
+    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar__items', 'block-end' === r ? 'navbar__items--right' : 'navbar__items--left', a && 'navbar__items--show-on-mobile'), children: ['block-start' === n && c, t.map((e, t) => (0, s.jsx)(L, { onError: () => new Error(`A theme navbar item failed to render.\nPlease double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:\n${JSON.stringify(e, null, 2)}`), children: (0, s.jsx)(He, { ...e }) }, t)), ' ', 'block-end' === n && c] });
    }
    function Ve() {
     const e = (0, y.L)().navbar.items,
@@ -5806,7 +5808,7 @@
    }
    const _t = n.memo(wt);
    var jt = r(27667);
-   const Ct = (0, R.Qc)([
+   const Ct = (0, T.Qc)([
     function (e) {
      let { children: t } = e;
      const r = (function () {
@@ -5873,7 +5875,7 @@
     c.VC,
     function (e) {
      let { children: t } = e;
-     return (0, s.jsx)(T.n2, { children: (0, s.jsx)(A.M, { children: (0, s.jsx)(M, { children: t }) }) });
+     return (0, s.jsx)(R.n2, { children: (0, s.jsx)(A.M, { children: (0, s.jsx)(M, { children: t }) }) });
     },
    ]);
    function Ot(e) {
@@ -5883,7 +5885,7 @@
    var Et = r(17765);
    function Pt(e) {
     let { error: t, tryAgain: r } = e;
-    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Et.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(N, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(L, { error: t }) })] }) }) });
+    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Et.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(N, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(z, { error: t }) })] }) }) });
    }
    const St = { mainWrapper: 'mainWrapper_kDYn' };
    function Dt(e) {
@@ -7113,33 +7115,33 @@
     function D(e) {
      (function (e) {
       return void 0 === e.state && -1 === navigator.userAgent.indexOf('CriOS');
-     })(e) || z(O(e.state));
+     })(e) || L(O(e.state));
     }
     function N() {
-     z(O(k()));
+     L(O(k()));
     }
-    var L = !1;
-    function z(e) {
-     if (L) (L = !1), S();
+    var z = !1;
+    function L(e) {
+     if (z) (z = !1), S();
      else {
       P.confirmTransitionTo(e, 'POP', w, function (t) {
        t
         ? S({ action: 'POP', location: e })
         : (function (e) {
            var t = q.location,
-            r = T.indexOf(t.key);
+            r = R.indexOf(t.key);
            -1 === r && (r = 0);
-           var n = T.indexOf(e.key);
+           var n = R.indexOf(e.key);
            -1 === n && (n = 0);
            var o = r - n;
-           o && ((L = !0), I(o));
+           o && ((z = !0), I(o));
           })(e);
       });
      }
     }
     var A = O(k()),
-     T = [A.key];
-    function R(e) {
+     R = [A.key];
+    function T(e) {
      return C + h(e);
     }
     function I(e) {
@@ -7154,21 +7156,21 @@
      length: r.length,
      action: 'POP',
      location: A,
-     createHref: R,
+     createHref: T,
      push: function (e, t) {
       var n = 'PUSH',
        a = b(e, t, E(), q.location);
       P.confirmTransitionTo(a, n, w, function (e) {
        if (e) {
-        var t = R(a),
+        var t = T(a),
          c = a.key,
          i = a.state;
         if (o)
          if ((r.pushState({ key: c, state: i }, null, t), y)) window.location.href = t;
          else {
-          var l = T.indexOf(q.location.key),
-           u = T.slice(0, l + 1);
-          u.push(a.key), (T = u), S({ action: n, location: a });
+          var l = R.indexOf(q.location.key),
+           u = R.slice(0, l + 1);
+          u.push(a.key), (R = u), S({ action: n, location: a });
          }
         else window.location.href = t;
        }
@@ -7179,14 +7181,14 @@
        a = b(e, t, E(), q.location);
       P.confirmTransitionTo(a, n, w, function (e) {
        if (e) {
-        var t = R(a),
+        var t = T(a),
          c = a.key,
          i = a.state;
         if (o)
          if ((r.replaceState({ key: c, state: i }, null, t), y)) window.location.replace(t);
          else {
-          var l = T.indexOf(q.location.key);
-          -1 !== l && (T[l] = a.key), S({ action: n, location: a });
+          var l = R.indexOf(q.location.key);
+          -1 !== l && (R[l] = a.key), S({ action: n, location: a });
          }
         else window.location.replace(t);
        }
@@ -7289,24 +7291,24 @@
            ? P({ action: t, location: e })
            : (function (e) {
               var t = F.location,
-               r = T.lastIndexOf(h(t));
+               r = R.lastIndexOf(h(t));
               -1 === r && (r = 0);
-              var n = T.lastIndexOf(h(e));
+              var n = R.lastIndexOf(h(e));
               -1 === n && (n = 0);
               var o = r - n;
-              o && ((S = !0), R(o));
+              o && ((S = !0), T(o));
              })(e);
          });
         }
        })(o);
      }
     }
-    var L = j(),
-     z = k(L);
-    L !== z && C(z);
+    var z = j(),
+     L = k(z);
+    z !== L && C(L);
     var A = O(),
-     T = [h(A)];
-    function R(e) {
+     R = [h(A)];
+    function T(e) {
      t.go(e);
     }
     var I = 0;
@@ -7335,9 +7337,9 @@
           (function (e) {
            window.location.hash = e;
           })(o);
-         var a = T.lastIndexOf(h(F.location)),
-          c = T.slice(0, a + 1);
-         c.push(t), (T = c), P({ action: r, location: n });
+         var a = R.lastIndexOf(h(F.location)),
+          c = R.slice(0, a + 1);
+         c.push(t), (R = c), P({ action: r, location: n });
         } else P();
        }
       });
@@ -7350,17 +7352,17 @@
         var t = h(n),
          o = k(g + t);
         j() !== o && ((D = t), C(o));
-        var a = T.indexOf(h(F.location));
-        -1 !== a && (T[a] = t), P({ action: r, location: n });
+        var a = R.indexOf(h(F.location));
+        -1 !== a && (R[a] = t), P({ action: r, location: n });
        }
       });
      },
-     go: R,
+     go: T,
      goBack: function () {
-      R(-1);
+      T(-1);
      },
      goForward: function () {
-      R(1);
+      T(1);
      },
      block: function (e) {
       void 0 === e && (e = !1);
@@ -8363,25 +8365,25 @@
     S = Symbol.for('react.suspense'),
     D = Symbol.for('react.suspense_list'),
     N = Symbol.for('react.memo'),
-    L = Symbol.for('react.lazy');
+    z = Symbol.for('react.lazy');
    Symbol.for('react.scope'), Symbol.for('react.debug_trace_mode');
-   var z = Symbol.for('react.offscreen');
+   var L = Symbol.for('react.offscreen');
    Symbol.for('react.legacy_hidden'), Symbol.for('react.cache'), Symbol.for('react.tracing_marker');
    var A = Symbol.iterator;
-   function T(e) {
+   function R(e) {
     return null === e || 'object' != typeof e ? null : 'function' == typeof (e = (A && e[A]) || e['@@iterator']) ? e : null;
    }
-   var R,
+   var T,
     I = Object.assign;
    function M(e) {
-    if (void 0 === R)
+    if (void 0 === T)
      try {
       throw Error();
      } catch (r) {
       var t = r.stack.trim().match(/\n( *(at )?)/);
-      R = (t && t[1]) || '';
+      T = (t && t[1]) || '';
      }
-    return '\n' + R + e;
+    return '\n' + T + e;
    }
    var Z = !1;
    function F(e, t) {
@@ -8495,7 +8497,7 @@
        return (e = e.displayName) || (e = '' !== (e = t.displayName || t.name || '') ? 'ForwardRef(' + e + ')' : 'ForwardRef'), e;
       case N:
        return null !== (t = e.displayName || null) ? t : B(e.type) || 'Memo';
-      case L:
+      case z:
        (t = e._payload), (e = e._init);
        try {
         return B(e(t));
@@ -8813,7 +8815,7 @@
      (De = !1), (null !== _e || null !== je) && (Se(), Ee());
     }
    }
-   function Le(e, t) {
+   function ze(e, t) {
     var r = e.stateNode;
     if (null === r) return null;
     var n = wo(r);
@@ -8840,21 +8842,21 @@
     if (r && 'function' != typeof r) throw Error(a(231, t, typeof r));
     return r;
    }
-   var ze = !1;
+   var Le = !1;
    if (s)
     try {
      var Ae = {};
      Object.defineProperty(Ae, 'passive', {
       get: function () {
-       ze = !0;
+       Le = !0;
       },
      }),
       window.addEventListener('test', Ae, Ae),
       window.removeEventListener('test', Ae, Ae);
     } catch (se) {
-     ze = !1;
+     Le = !1;
     }
-   function Te(e, t, r, n, o, a, c, i, l) {
+   function Re(e, t, r, n, o, a, c, i, l) {
     var u = Array.prototype.slice.call(arguments, 3);
     try {
      t.apply(r, u);
@@ -8862,17 +8864,17 @@
      this.onError(s);
     }
    }
-   var Re = !1,
+   var Te = !1,
     Ie = null,
     Me = !1,
     Ze = null,
     Fe = {
      onError: function (e) {
-      (Re = !0), (Ie = e);
+      (Te = !0), (Ie = e);
      },
     };
    function qe(e, t, r, n, o, a, c, i, l) {
-    (Re = !1), (Ie = null), Te.apply(Fe, arguments);
+    (Te = !1), (Ie = null), Re.apply(Fe, arguments);
    }
    function Be(e) {
     var t = e,
@@ -9122,10 +9124,10 @@
     St = null,
     Dt = null,
     Nt = new Map(),
-    Lt = new Map(),
-    zt = [],
+    zt = new Map(),
+    Lt = [],
     At = 'mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit'.split(' ');
-   function Tt(e, t) {
+   function Rt(e, t) {
     switch (e) {
      case 'focusin':
      case 'focusout':
@@ -9145,10 +9147,10 @@
       break;
      case 'gotpointercapture':
      case 'lostpointercapture':
-      Lt.delete(t.pointerId);
+      zt.delete(t.pointerId);
     }
    }
-   function Rt(e, t, r, n, o, a) {
+   function Tt(e, t, r, n, o, a) {
     return null === e || e.nativeEvent !== a ? ((e = { blockedOn: t, domEventName: r, eventSystemFlags: n, nativeEvent: a, targetContainers: [o] }), null !== t && null !== (t = yo(t)) && wt(t), e) : ((e.eventSystemFlags |= n), (t = e.targetContainers), null !== o && -1 === t.indexOf(o) && t.push(o), e);
    }
    function It(e) {
@@ -9182,7 +9184,7 @@
     Mt(e) && r.delete(t);
    }
    function Ft() {
-    (Ot = !1), null !== Pt && Mt(Pt) && (Pt = null), null !== St && Mt(St) && (St = null), null !== Dt && Mt(Dt) && (Dt = null), Nt.forEach(Zt), Lt.forEach(Zt);
+    (Ot = !1), null !== Pt && Mt(Pt) && (Pt = null), null !== St && Mt(St) && (St = null), null !== Dt && Mt(Dt) && (Dt = null), Nt.forEach(Zt), zt.forEach(Zt);
    }
    function qt(e, t) {
     e.blockedOn === t && ((e.blockedOn = null), Ot || ((Ot = !0), o.unstable_scheduleCallback(o.unstable_NormalPriority, Ft)));
@@ -9198,8 +9200,8 @@
       n.blockedOn === e && (n.blockedOn = null);
      }
     }
-    for (null !== Pt && qt(Pt, e), null !== St && qt(St, e), null !== Dt && qt(Dt, e), Nt.forEach(t), Lt.forEach(t), r = 0; r < zt.length; r++) (n = zt[r]).blockedOn === e && (n.blockedOn = null);
-    for (; 0 < zt.length && null === (r = zt[0]).blockedOn; ) It(r), null === r.blockedOn && zt.shift();
+    for (null !== Pt && qt(Pt, e), null !== St && qt(St, e), null !== Dt && qt(Dt, e), Nt.forEach(t), zt.forEach(t), r = 0; r < Lt.length; r++) (n = Lt[r]).blockedOn === e && (n.blockedOn = null);
+    for (; 0 < Lt.length && null === (r = Lt[0]).blockedOn; ) It(r), null === r.blockedOn && Lt.shift();
    }
    var $t = y.ReactCurrentBatchConfig,
     Ht = !0;
@@ -9226,27 +9228,27 @@
    function Wt(e, t, r, n) {
     if (Ht) {
      var o = Kt(e, t, r, n);
-     if (null === o) Hn(e, t, n, Gt, r), Tt(e, n);
+     if (null === o) Hn(e, t, n, Gt, r), Rt(e, n);
      else if (
       (function (e, t, r, n, o) {
        switch (t) {
         case 'focusin':
-         return (Pt = Rt(Pt, e, t, r, n, o)), !0;
+         return (Pt = Tt(Pt, e, t, r, n, o)), !0;
         case 'dragenter':
-         return (St = Rt(St, e, t, r, n, o)), !0;
+         return (St = Tt(St, e, t, r, n, o)), !0;
         case 'mouseover':
-         return (Dt = Rt(Dt, e, t, r, n, o)), !0;
+         return (Dt = Tt(Dt, e, t, r, n, o)), !0;
         case 'pointerover':
          var a = o.pointerId;
-         return Nt.set(a, Rt(Nt.get(a) || null, e, t, r, n, o)), !0;
+         return Nt.set(a, Tt(Nt.get(a) || null, e, t, r, n, o)), !0;
         case 'gotpointercapture':
-         return (a = o.pointerId), Lt.set(a, Rt(Lt.get(a) || null, e, t, r, n, o)), !0;
+         return (a = o.pointerId), zt.set(a, Tt(zt.get(a) || null, e, t, r, n, o)), !0;
        }
        return !1;
       })(o, e, t, r, n)
      )
       n.stopPropagation();
-     else if ((Tt(e, n), 4 & t && -1 < At.indexOf(e))) {
+     else if ((Rt(e, n), 4 & t && -1 < At.indexOf(e))) {
       for (; null !== o; ) {
        var a = yo(o);
        if ((null !== a && xt(a), null === (a = Kt(e, t, r, n)) && Hn(e, t, n, Gt, r), a === o)) break;
@@ -9512,18 +9514,18 @@
      deltaMode: 0,
     }),
     Nr = or(Dr),
-    Lr = [9, 13, 27, 32],
-    zr = s && 'CompositionEvent' in window,
+    zr = [9, 13, 27, 32],
+    Lr = s && 'CompositionEvent' in window,
     Ar = null;
    s && 'documentMode' in document && (Ar = document.documentMode);
-   var Tr = s && 'TextEvent' in window && !Ar,
-    Rr = s && (!zr || (Ar && 8 < Ar && 11 >= Ar)),
+   var Rr = s && 'TextEvent' in window && !Ar,
+    Tr = s && (!Lr || (Ar && 8 < Ar && 11 >= Ar)),
     Ir = String.fromCharCode(32),
     Mr = !1;
    function Zr(e, t) {
     switch (e) {
      case 'keyup':
-      return -1 !== Lr.indexOf(t.keyCode);
+      return -1 !== zr.indexOf(t.keyCode);
      case 'keydown':
       return 229 !== t.keyCode;
      case 'keypress':
@@ -9703,24 +9705,24 @@
     Sn = Cn('transitionend'),
     Dn = new Map(),
     Nn = 'abort auxClick cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel'.split(' ');
-   function Ln(e, t) {
+   function zn(e, t) {
     Dn.set(e, t), l(t, [e]);
    }
-   for (var zn = 0; zn < Nn.length; zn++) {
-    var An = Nn[zn];
-    Ln(An.toLowerCase(), 'on' + (An[0].toUpperCase() + An.slice(1)));
+   for (var Ln = 0; Ln < Nn.length; Ln++) {
+    var An = Nn[Ln];
+    zn(An.toLowerCase(), 'on' + (An[0].toUpperCase() + An.slice(1)));
    }
-   Ln(On, 'onAnimationEnd'), Ln(En, 'onAnimationIteration'), Ln(Pn, 'onAnimationStart'), Ln('dblclick', 'onDoubleClick'), Ln('focusin', 'onFocus'), Ln('focusout', 'onBlur'), Ln(Sn, 'onTransitionEnd'), u('onMouseEnter', ['mouseout', 'mouseover']), u('onMouseLeave', ['mouseout', 'mouseover']), u('onPointerEnter', ['pointerout', 'pointerover']), u('onPointerLeave', ['pointerout', 'pointerover']), l('onChange', 'change click focusin focusout input keydown keyup selectionchange'.split(' ')), l('onSelect', 'focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange'.split(' ')), l('onBeforeInput', ['compositionend', 'keypress', 'textInput', 'paste']), l('onCompositionEnd', 'compositionend focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionStart', 'compositionstart focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionUpdate', 'compositionupdate focusout keydown keypress keyup mousedown'.split(' '));
-   var Tn = 'abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting'.split(' '),
-    Rn = new Set('cancel close invalid load scroll toggle'.split(' ').concat(Tn));
+   zn(On, 'onAnimationEnd'), zn(En, 'onAnimationIteration'), zn(Pn, 'onAnimationStart'), zn('dblclick', 'onDoubleClick'), zn('focusin', 'onFocus'), zn('focusout', 'onBlur'), zn(Sn, 'onTransitionEnd'), u('onMouseEnter', ['mouseout', 'mouseover']), u('onMouseLeave', ['mouseout', 'mouseover']), u('onPointerEnter', ['pointerout', 'pointerover']), u('onPointerLeave', ['pointerout', 'pointerover']), l('onChange', 'change click focusin focusout input keydown keyup selectionchange'.split(' ')), l('onSelect', 'focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange'.split(' ')), l('onBeforeInput', ['compositionend', 'keypress', 'textInput', 'paste']), l('onCompositionEnd', 'compositionend focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionStart', 'compositionstart focusout keydown keypress keyup mousedown'.split(' ')), l('onCompositionUpdate', 'compositionupdate focusout keydown keypress keyup mousedown'.split(' '));
+   var Rn = 'abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting'.split(' '),
+    Tn = new Set('cancel close invalid load scroll toggle'.split(' ').concat(Rn));
    function In(e, t, r) {
     var n = e.type || 'unknown-event';
     (e.currentTarget = r),
      (function (e, t, r, n, o, c, i, l, u) {
-      if ((qe.apply(this, arguments), Re)) {
-       if (!Re) throw Error(a(198));
+      if ((qe.apply(this, arguments), Te)) {
+       if (!Te) throw Error(a(198));
        var s = Ie;
-       (Re = !1), (Ie = null), Me || ((Me = !0), (Ze = s));
+       (Te = !1), (Ie = null), Me || ((Me = !0), (Ze = s));
       }
      })(n, t, void 0, e),
      (e.currentTarget = null);
@@ -9765,7 +9767,7 @@
     if (!e[qn]) {
      (e[qn] = !0),
       c.forEach(function (t) {
-       'selectionchange' !== t && (Rn.has(t) || Fn(t, !1, e), Fn(t, !0, e));
+       'selectionchange' !== t && (Tn.has(t) || Fn(t, !1, e), Fn(t, !0, e));
       });
      var t = 9 === e.nodeType ? e : e.ownerDocument;
      null === t || t[qn] || ((t[qn] = !0), Fn('selectionchange', !1, t));
@@ -9782,7 +9784,7 @@
      default:
       o = Wt;
     }
-    (r = o.bind(null, t, r, e)), (o = void 0), !ze || ('touchstart' !== t && 'touchmove' !== t && 'wheel' !== t) || (o = !0), n ? (void 0 !== o ? e.addEventListener(t, r, { capture: !0, passive: o }) : e.addEventListener(t, r, !0)) : void 0 !== o ? e.addEventListener(t, r, { passive: o }) : e.addEventListener(t, r, !1);
+    (r = o.bind(null, t, r, e)), (o = void 0), !Le || ('touchstart' !== t && 'touchmove' !== t && 'wheel' !== t) || (o = !0), n ? (void 0 !== o ? e.addEventListener(t, r, { capture: !0, passive: o }) : e.addEventListener(t, r, !0)) : void 0 !== o ? e.addEventListener(t, r, { passive: o }) : e.addEventListener(t, r, !1);
    }
    function Hn(e, t, r, n, o) {
     var a = n;
@@ -9899,7 +9901,7 @@
        s = [];
        for (var b, p = n; null !== p; ) {
         var m = (b = p).stateNode;
-        if ((5 === b.tag && null !== m && ((b = m), null !== h && null != (m = Le(p, h)) && s.push(Un(p, m, b))), d)) break;
+        if ((5 === b.tag && null !== m && ((b = m), null !== h && null != (m = ze(p, h)) && s.push(Un(p, m, b))), d)) break;
         p = p.return;
        }
        0 < s.length && ((i = new l(i, u, null, r, o)), c.push({ event: i, listeners: s }));
@@ -9952,7 +9954,7 @@
         yn(c, r, o);
       }
       var v;
-      if (zr)
+      if (Lr)
        e: {
         switch (e) {
          case 'compositionstart':
@@ -9968,8 +9970,8 @@
         k = void 0;
        }
       else qr ? Zr(e, r) && (k = 'onCompositionEnd') : 'keydown' === e && 229 === r.keyCode && (k = 'onCompositionStart');
-      k && (Rr && 'ko' !== r.locale && (qr || 'onCompositionStart' !== k ? 'onCompositionEnd' === k && qr && (v = er()) : ((Xt = 'value' in (Yt = o) ? Yt.value : Yt.textContent), (qr = !0))), 0 < (g = Vn(n, k)).length && ((k = new kr(k, e, null, r, o)), c.push({ event: k, listeners: g }), v ? (k.data = v) : null !== (v = Fr(r)) && (k.data = v))),
-       (v = Tr
+      k && (Tr && 'ko' !== r.locale && (qr || 'onCompositionStart' !== k ? 'onCompositionEnd' === k && qr && (v = er()) : ((Xt = 'value' in (Yt = o) ? Yt.value : Yt.textContent), (qr = !0))), 0 < (g = Vn(n, k)).length && ((k = new kr(k, e, null, r, o)), c.push({ event: k, listeners: g }), v ? (k.data = v) : null !== (v = Fr(r)) && (k.data = v))),
+       (v = Rr
         ? (function (e, t) {
            switch (e) {
             case 'compositionend':
@@ -9983,7 +9985,7 @@
            }
           })(e, r)
         : (function (e, t) {
-           if (qr) return 'compositionend' === e || (!zr && Zr(e, t)) ? ((e = er()), (Jt = Xt = Yt = null), (qr = !1), e) : null;
+           if (qr) return 'compositionend' === e || (!Lr && Zr(e, t)) ? ((e = er()), (Jt = Xt = Yt = null), (qr = !1), e) : null;
            switch (e) {
             case 'paste':
             default:
@@ -9995,7 +9997,7 @@
              }
              return null;
             case 'compositionend':
-             return Rr && 'ko' !== t.locale ? null : t.data;
+             return Tr && 'ko' !== t.locale ? null : t.data;
            }
           })(e, r)) &&
         0 < (n = Vn(n, 'onBeforeInput')).length &&
@@ -10011,7 +10013,7 @@
     for (var r = t + 'Capture', n = []; null !== e; ) {
      var o = e,
       a = o.stateNode;
-     5 === o.tag && null !== a && ((o = a), null != (a = Le(e, r)) && n.unshift(Un(e, a, o)), null != (a = Le(e, t)) && n.push(Un(e, a, o))), (e = e.return);
+     5 === o.tag && null !== a && ((o = a), null != (a = ze(e, r)) && n.unshift(Un(e, a, o)), null != (a = ze(e, t)) && n.push(Un(e, a, o))), (e = e.return);
     }
     return n;
    }
@@ -10028,7 +10030,7 @@
       l = i.alternate,
       u = i.stateNode;
      if (null !== l && l === n) break;
-     5 === i.tag && null !== u && ((i = u), o ? null != (l = Le(r, a)) && c.unshift(Un(r, l, i)) : o || (null != (l = Le(r, a)) && c.push(Un(r, l, i)))), (r = r.return);
+     5 === i.tag && null !== u && ((i = u), o ? null != (l = ze(r, a)) && c.unshift(Un(r, l, i)) : o || (null != (l = ze(r, a)) && c.push(Un(r, l, i)))), (r = r.return);
     }
     0 !== c.length && e.push({ event: t, listeners: c });
    }
@@ -10149,7 +10151,7 @@
     So = Co(Po),
     Do = Co(!1),
     No = Po;
-   function Lo(e, t) {
+   function zo(e, t) {
     var r = e.type.contextTypes;
     if (!r) return Po;
     var n = e.stateNode;
@@ -10159,17 +10161,17 @@
     for (o in r) a[o] = t[o];
     return n && (((e = e.stateNode).__reactInternalMemoizedUnmaskedChildContext = t), (e.__reactInternalMemoizedMaskedChildContext = a)), a;
    }
-   function zo(e) {
+   function Lo(e) {
     return null != (e = e.childContextTypes);
    }
    function Ao() {
     Oo(Do), Oo(So);
    }
-   function To(e, t, r) {
+   function Ro(e, t, r) {
     if (So.current !== Po) throw Error(a(168));
     Eo(So, t), Eo(Do, r);
    }
-   function Ro(e, t, r) {
+   function To(e, t, r) {
     var n = e.stateNode;
     if (((t = t.childContextTypes), 'function' != typeof n.getChildContext)) return r;
     for (var o in (n = n.getChildContext())) if (!(o in t)) throw Error(a(108, $(e) || 'Unknown', o));
@@ -10181,7 +10183,7 @@
    function Mo(e, t, r) {
     var n = e.stateNode;
     if (!n) throw Error(a(169));
-    r ? ((e = Ro(e, t, No)), (n.__reactInternalMemoizedMergedChildContext = e), Oo(Do), Oo(So), Eo(So, e)) : Oo(Do), Eo(Do, r);
+    r ? ((e = To(e, t, No)), (n.__reactInternalMemoizedMergedChildContext = e), Oo(Do), Oo(So), Eo(So, e)) : Oo(Do), Eo(Do, r);
    }
    var Zo = null,
     Fo = !1,
@@ -10373,7 +10375,7 @@
      return e;
     }
     function o(e, t) {
-     return ((e = zu(e, t)).index = 0), (e.sibling = null), e;
+     return ((e = Lu(e, t)).index = 0), (e.sibling = null), e;
     }
     function c(t, r, n) {
      return (t.index = n), e ? (null !== (n = t.alternate) ? ((n = n.index) < r ? ((t.flags |= 2), r) : n) : ((t.flags |= 2), r)) : ((t.flags |= 1048576), r);
@@ -10386,13 +10388,13 @@
     }
     function u(e, t, r, n) {
      var a = r.type;
-     return a === _ ? d(e, t, r.props.children, n, r.key) : null !== t && (t.elementType === a || ('object' == typeof a && null !== a && a.$$typeof === L && ka(a) === t.type)) ? (((n = o(t, r.props)).ref = ga(e, t, r)), (n.return = e), n) : (((n = Au(r.type, r.key, r.props, null, e.mode, n)).ref = ga(e, t, r)), (n.return = e), n);
+     return a === _ ? d(e, t, r.props.children, n, r.key) : null !== t && (t.elementType === a || ('object' == typeof a && null !== a && a.$$typeof === z && ka(a) === t.type)) ? (((n = o(t, r.props)).ref = ga(e, t, r)), (n.return = e), n) : (((n = Au(r.type, r.key, r.props, null, e.mode, n)).ref = ga(e, t, r)), (n.return = e), n);
     }
     function s(e, t, r, n) {
      return null === t || 4 !== t.tag || t.stateNode.containerInfo !== r.containerInfo || t.stateNode.implementation !== r.implementation ? (((t = Mu(r, e.mode, n)).return = e), t) : (((t = o(t, r.children || [])).return = e), t);
     }
     function d(e, t, r, n, a) {
-     return null === t || 7 !== t.tag ? (((t = Tu(r, e.mode, n, a)).return = e), t) : (((t = o(t, r)).return = e), t);
+     return null === t || 7 !== t.tag ? (((t = Ru(r, e.mode, n, a)).return = e), t) : (((t = o(t, r)).return = e), t);
     }
     function h(e, t, r) {
      if (('string' == typeof t && '' !== t) || 'number' == typeof t) return ((t = Iu('' + t, e.mode, r)).return = e), t;
@@ -10402,10 +10404,10 @@
         return ((r = Au(t.type, t.key, t.props, null, e.mode, r)).ref = ga(e, null, t)), (r.return = e), r;
        case w:
         return ((t = Mu(t, e.mode, r)).return = e), t;
-       case L:
+       case z:
         return h(e, (0, t._init)(t._payload), r);
       }
-      if (te(t) || T(t)) return ((t = Tu(t, e.mode, r, null)).return = e), t;
+      if (te(t) || R(t)) return ((t = Ru(t, e.mode, r, null)).return = e), t;
       va(e, t);
      }
      return null;
@@ -10419,10 +10421,10 @@
         return r.key === o ? u(e, t, r, n) : null;
        case w:
         return r.key === o ? s(e, t, r, n) : null;
-       case L:
+       case z:
         return b(e, t, (o = r._init)(r._payload), n);
       }
-      if (te(r) || T(r)) return null !== o ? null : d(e, t, r, n, null);
+      if (te(r) || R(r)) return null !== o ? null : d(e, t, r, n, null);
       va(e, r);
      }
      return null;
@@ -10435,10 +10437,10 @@
         return u(t, (e = e.get(null === n.key ? r : n.key) || null), n, o);
        case w:
         return s(t, (e = e.get(null === n.key ? r : n.key) || null), n, o);
-       case L:
+       case z:
         return p(e, t, r, (0, n._init)(n._payload), o);
       }
-      if (te(n) || T(n)) return d(t, (e = e.get(r) || null), n, o, null);
+      if (te(n) || R(n)) return d(t, (e = e.get(r) || null), n, o, null);
       va(t, n);
      }
      return null;
@@ -10469,7 +10471,7 @@
      );
     }
     function f(o, i, l, u) {
-     var s = T(l);
+     var s = R(l);
      if ('function' != typeof s) throw Error(a(150));
      if (null == (l = s.call(l))) throw Error(a(151));
      for (var d = (s = null), m = i, f = (i = 0), g = null, v = l.next(); null !== m && !v.done; f++, v = l.next()) {
@@ -10508,7 +10510,7 @@
              r(n, s.sibling), ((a = o(s, c.props.children)).return = n), (n = a);
              break e;
             }
-           } else if (s.elementType === u || ('object' == typeof u && null !== u && u.$$typeof === L && ka(u) === s.type)) {
+           } else if (s.elementType === u || ('object' == typeof u && null !== u && u.$$typeof === z && ka(u) === s.type)) {
             r(n, s.sibling), ((a = o(s, c.props)).ref = ga(n, s, c)), (a.return = n), (n = a);
             break e;
            }
@@ -10517,7 +10519,7 @@
           }
           t(n, s), (s = s.sibling);
          }
-         c.type === _ ? (((a = Tu(c.props.children, n.mode, l, c.key)).return = n), (n = a)) : (((l = Au(c.type, c.key, c.props, null, n.mode, l)).ref = ga(n, a, c)), (l.return = n), (n = l));
+         c.type === _ ? (((a = Ru(c.props.children, n.mode, l, c.key)).return = n), (n = a)) : (((l = Au(c.type, c.key, c.props, null, n.mode, l)).ref = ga(n, a, c)), (l.return = n), (n = l));
         }
         return i(n);
        case w:
@@ -10536,11 +10538,11 @@
          ((a = Mu(c, n.mode, l)).return = n), (n = a);
         }
         return i(n);
-       case L:
+       case z:
         return e(n, a, (s = c._init)(c._payload), l);
       }
       if (te(c)) return m(n, a, c, l);
-      if (T(c)) return f(n, a, c, l);
+      if (R(c)) return f(n, a, c, l);
       va(n, c);
      }
      return ('string' == typeof c && '' !== c) || 'number' == typeof c ? ((c = '' + c), null !== a && 6 === a.tag ? (r(n, a.sibling), ((a = o(a, c)).return = n), (n = a)) : (r(n, a), ((a = Iu(c, n.mode, l)).return = n), (n = a)), i(n)) : r(n, a);
@@ -10578,21 +10580,21 @@
      } else Ca = Ca.next = e;
     return t;
    }
-   var La = null;
-   function za(e) {
-    null === La ? (La = [e]) : La.push(e);
+   var za = null;
+   function La(e) {
+    null === za ? (za = [e]) : za.push(e);
    }
    function Aa(e, t, r, n) {
     var o = t.interleaved;
-    return null === o ? ((r.next = r), za(t)) : ((r.next = o.next), (o.next = r)), (t.interleaved = r), Ta(e, n);
+    return null === o ? ((r.next = r), La(t)) : ((r.next = o.next), (o.next = r)), (t.interleaved = r), Ra(e, n);
    }
-   function Ta(e, t) {
+   function Ra(e, t) {
     e.lanes |= t;
     var r = e.alternate;
     for (null !== r && (r.lanes |= t), r = e, e = e.return; null !== e; ) (e.childLanes |= t), null !== (r = e.alternate) && (r.childLanes |= t), (r = e), (e = e.return);
     return 3 === r.tag ? r.stateNode : null;
    }
-   var Ra = !1;
+   var Ta = !1;
    function Ia(e) {
     e.updateQueue = { baseState: e.memoizedState, firstBaseUpdate: null, lastBaseUpdate: null, shared: { pending: null, interleaved: null, lanes: 0 }, effects: null };
    }
@@ -10607,9 +10609,9 @@
     if (null === n) return null;
     if (((n = n.shared), 0 != (2 & Pl))) {
      var o = n.pending;
-     return null === o ? (t.next = t) : ((t.next = o.next), (o.next = t)), (n.pending = t), Ta(e, r);
+     return null === o ? (t.next = t) : ((t.next = o.next), (o.next = t)), (n.pending = t), Ra(e, r);
     }
-    return null === (o = n.interleaved) ? ((t.next = t), za(n)) : ((t.next = o.next), (o.next = t)), (n.interleaved = t), Ta(e, r);
+    return null === (o = n.interleaved) ? ((t.next = t), La(n)) : ((t.next = o.next), (o.next = t)), (n.interleaved = t), Ra(e, r);
    }
    function qa(e, t, r) {
     if (null !== (t = t.updateQueue) && ((t = t.shared), 0 != (4194240 & r))) {
@@ -10636,7 +10638,7 @@
    }
    function $a(e, t, r, n) {
     var o = e.updateQueue;
-    Ra = !1;
+    Ta = !1;
     var a = o.firstBaseUpdate,
      c = o.lastBaseUpdate,
      i = o.shared.pending;
@@ -10673,7 +10675,7 @@
           d = I({}, d, h);
           break e;
          case 2:
-          Ra = !0;
+          Ta = !0;
         }
        }
        null !== i.callback && 0 !== i.lane && ((e.flags |= 64), null === (h = o.effects) ? (o.effects = [i]) : h.push(i));
@@ -10689,7 +10691,7 @@
        (c |= o.lane), (o = o.next);
       } while (o !== t);
      } else null === a && (o.shared.lanes = 0);
-     (Rl |= c), (e.lanes = c), (e.memoizedState = d);
+     (Tl |= c), (e.lanes = c), (e.memoizedState = d);
     }
    }
    function Ha(e, t, r) {
@@ -10838,7 +10840,7 @@
       if ((cc & d) === d) null !== u && (u = u.next = { lane: 0, action: s.action, hasEagerState: s.hasEagerState, eagerState: s.eagerState, next: null }), (n = s.hasEagerState ? s.eagerState : e(n, s.action));
       else {
        var h = { lane: d, action: s.action, hasEagerState: s.hasEagerState, eagerState: s.eagerState, next: null };
-       null === u ? ((l = u = h), (i = n)) : (u = u.next = h), (ic.lanes |= d), (Rl |= d);
+       null === u ? ((l = u = h), (i = n)) : (u = u.next = h), (ic.lanes |= d), (Tl |= d);
       }
       s = s.next;
      } while (null !== s && s !== c);
@@ -10847,7 +10849,7 @@
     if (null !== (e = r.interleaved)) {
      o = e;
      do {
-      (c = o.lane), (ic.lanes |= c), (Rl |= c), (o = o.next);
+      (c = o.lane), (ic.lanes |= c), (Tl |= c), (o = o.next);
      } while (o !== e);
     } else null === o && (r.lanes = 0);
     return [t.memoizedState, r.dispatch];
@@ -10876,7 +10878,7 @@
      n = kc(),
      o = t(),
      c = !cn(n.memoizedState, o);
-    if ((c && ((n.memoizedState = o), (ki = !0)), (n = n.queue), Rc(Ec.bind(null, r, n, e), [e]), n.getSnapshot !== t || c || (null !== uc && 1 & uc.memoizedState.tag))) {
+    if ((c && ((n.memoizedState = o), (ki = !0)), (n = n.queue), Tc(Ec.bind(null, r, n, e), [e]), n.getSnapshot !== t || c || (null !== uc && 1 & uc.memoizedState.tag))) {
      if (((r.flags |= 2048), Nc(9, Oc.bind(null, r, n, o, t), void 0, null), null === Sl)) throw Error(a(349));
      0 != (30 & cc) || Cc(r, t, o);
     }
@@ -10904,7 +10906,7 @@
     }
    }
    function Sc(e) {
-    var t = Ta(e, 1);
+    var t = Ra(e, 1);
     null !== t && ru(t, e, 1, -1);
    }
    function Dc(e) {
@@ -10914,10 +10916,10 @@
    function Nc(e, t, r, n) {
     return (e = { tag: e, create: t, destroy: r, deps: n, next: null }), null === (t = ic.updateQueue) ? ((t = { lastEffect: null, stores: null }), (ic.updateQueue = t), (t.lastEffect = e.next = e)) : null === (r = t.lastEffect) ? (t.lastEffect = e.next = e) : ((n = r.next), (r.next = e), (e.next = n), (t.lastEffect = e)), e;
    }
-   function Lc() {
+   function zc() {
     return kc().memoizedState;
    }
-   function zc(e, t, r, n) {
+   function Lc(e, t, r, n) {
     var o = vc();
     (ic.flags |= e), (o.memoizedState = Nc(1 | t, r, void 0, void 0 === n ? null : n));
    }
@@ -10931,10 +10933,10 @@
     }
     (ic.flags |= e), (o.memoizedState = Nc(1 | t, r, a, n));
    }
-   function Tc(e, t) {
-    return zc(8390656, 8, e, t);
-   }
    function Rc(e, t) {
+    return Lc(8390656, 8, e, t);
+   }
+   function Tc(e, t) {
     return Ac(2048, 8, e, t);
    }
    function Ic(e, t) {
@@ -10975,7 +10977,7 @@
     return null !== n && null !== t && mc(t, n[1]) ? n[0] : ((e = e()), (r.memoizedState = [e, t]), e);
    }
    function Hc(e, t, r) {
-    return 0 == (21 & cc) ? (e.baseState && ((e.baseState = !1), (ki = !0)), (e.memoizedState = r)) : (cn(r, t) || ((r = mt()), (ic.lanes |= r), (Rl |= r), (e.baseState = !0)), t);
+    return 0 == (21 & cc) ? (e.baseState && ((e.baseState = !1), (ki = !0)), (e.memoizedState = r)) : (cn(r, t) || ((r = mt()), (ic.lanes |= r), (Tl |= r), (e.baseState = !0)), t);
    }
    function Uc(e, t) {
     var r = kt;
@@ -11010,7 +11012,7 @@
         i = a(c, r);
        if (((o.hasEagerState = !0), (o.eagerState = i), cn(i, c))) {
         var l = t.interleaved;
-        return null === l ? ((o.next = o), za(t)) : ((o.next = l.next), (l.next = o)), void (t.interleaved = o);
+        return null === l ? ((o.next = o), La(t)) : ((o.next = l.next), (l.next = o)), void (t.interleaved = o);
        }
       } catch (u) {}
      null !== (r = Aa(e, t, o, n)) && (ru(r, e, n, (o = eu())), Yc(r, t, n));
@@ -11038,15 +11040,15 @@
       return (vc().memoizedState = [e, void 0 === t ? null : t]), e;
      },
      useContext: Na,
-     useEffect: Tc,
+     useEffect: Rc,
      useImperativeHandle: function (e, t, r) {
-      return (r = null != r ? r.concat([e]) : null), zc(4194308, 4, Zc.bind(null, t, e), r);
+      return (r = null != r ? r.concat([e]) : null), Lc(4194308, 4, Zc.bind(null, t, e), r);
      },
      useLayoutEffect: function (e, t) {
-      return zc(4194308, 4, e, t);
+      return Lc(4194308, 4, e, t);
      },
      useInsertionEffect: function (e, t) {
-      return zc(4, 2, e, t);
+      return Lc(4, 2, e, t);
      },
      useMemo: function (e, t) {
       var r = vc();
@@ -11082,7 +11084,7 @@
       }
       o.memoizedState = r;
       var c = { value: r, getSnapshot: t };
-      return (o.queue = c), Tc(Ec.bind(null, n, c, e), [e]), (n.flags |= 2048), Nc(9, Oc.bind(null, n, c, r, t), void 0, null), r;
+      return (o.queue = c), Rc(Ec.bind(null, n, c, e), [e]), (n.flags |= 2048), Nc(9, Oc.bind(null, n, c, r, t), void 0, null), r;
      },
      useId: function () {
       var e = vc(),
@@ -11099,13 +11101,13 @@
      readContext: Na,
      useCallback: Bc,
      useContext: Na,
-     useEffect: Rc,
+     useEffect: Tc,
      useImperativeHandle: Fc,
      useInsertionEffect: Ic,
      useLayoutEffect: Mc,
      useMemo: $c,
      useReducer: xc,
-     useRef: Lc,
+     useRef: zc,
      useState: function () {
       return xc(yc);
      },
@@ -11125,13 +11127,13 @@
      readContext: Na,
      useCallback: Bc,
      useContext: Na,
-     useEffect: Rc,
+     useEffect: Tc,
      useImperativeHandle: Fc,
      useInsertionEffect: Ic,
      useLayoutEffect: Mc,
      useMemo: $c,
      useReducer: wc,
-     useRef: Lc,
+     useRef: zc,
      useState: function () {
       return wc(yc);
      },
@@ -11191,7 +11193,7 @@
     var n = !1,
      o = Po,
      a = t.contextType;
-    return 'object' == typeof a && null !== a ? (a = Na(a)) : ((o = zo(t) ? No : So.current), (a = (n = null != (n = t.contextTypes)) ? Lo(e, o) : Po)), (t = new t(r, a)), (e.memoizedState = null !== t.state && void 0 !== t.state ? t.state : null), (t.updater = oi), (e.stateNode = t), (t._reactInternals = e), n && (((e = e.stateNode).__reactInternalMemoizedUnmaskedChildContext = o), (e.__reactInternalMemoizedMaskedChildContext = a)), t;
+    return 'object' == typeof a && null !== a ? (a = Na(a)) : ((o = Lo(t) ? No : So.current), (a = (n = null != (n = t.contextTypes)) ? zo(e, o) : Po)), (t = new t(r, a)), (e.memoizedState = null !== t.state && void 0 !== t.state ? t.state : null), (t.updater = oi), (e.stateNode = t), (t._reactInternals = e), n && (((e = e.stateNode).__reactInternalMemoizedUnmaskedChildContext = o), (e.__reactInternalMemoizedMaskedChildContext = a)), t;
    }
    function ii(e, t, r, n) {
     (e = t.state), 'function' == typeof t.componentWillReceiveProps && t.componentWillReceiveProps(r, n), 'function' == typeof t.UNSAFE_componentWillReceiveProps && t.UNSAFE_componentWillReceiveProps(r, n), t.state !== e && oi.enqueueReplaceState(t, t.state, null);
@@ -11200,7 +11202,7 @@
     var o = e.stateNode;
     (o.props = r), (o.state = e.memoizedState), (o.refs = {}), Ia(e);
     var a = t.contextType;
-    'object' == typeof a && null !== a ? (o.context = Na(a)) : ((a = zo(t) ? No : So.current), (o.context = Lo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), $a(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
+    'object' == typeof a && null !== a ? (o.context = Na(a)) : ((a = Lo(t) ? No : So.current), (o.context = zo(e, a))), (o.state = e.memoizedState), 'function' == typeof (a = t.getDerivedStateFromProps) && (ni(e, t, a, r), (o.state = e.memoizedState)), 'function' == typeof t.getDerivedStateFromProps || 'function' == typeof o.getSnapshotBeforeUpdate || ('function' != typeof o.UNSAFE_componentWillMount && 'function' != typeof o.componentWillMount) || ((t = o.state), 'function' == typeof o.componentWillMount && o.componentWillMount(), 'function' == typeof o.UNSAFE_componentWillMount && o.UNSAFE_componentWillMount(), t !== o.state && oi.enqueueReplaceState(o, o.state, null), $a(e, r, o, n), (o.state = e.memoizedState)), 'function' == typeof o.componentDidMount && (e.flags |= 4194308);
    }
    function ui(e, t) {
     try {
@@ -11295,13 +11297,13 @@
    function wi(e, t, r, n, o) {
     if (null === e) {
      var a = r.type;
-     return 'function' != typeof a || Lu(a) || void 0 !== a.defaultProps || null !== r.compare || void 0 !== r.defaultProps ? (((e = Au(r.type, null, n, t, t.mode, o)).ref = t.ref), (e.return = t), (t.child = e)) : ((t.tag = 15), (t.type = a), _i(e, t, a, n, o));
+     return 'function' != typeof a || zu(a) || void 0 !== a.defaultProps || null !== r.compare || void 0 !== r.defaultProps ? (((e = Au(r.type, null, n, t, t.mode, o)).ref = t.ref), (e.return = t), (t.child = e)) : ((t.tag = 15), (t.type = a), _i(e, t, a, n, o));
     }
     if (((a = e.child), 0 == (e.lanes & o))) {
      var c = a.memoizedProps;
      if ((r = null !== (r = r.compare) ? r : ln)(c, n) && e.ref === t.ref) return Hi(e, t, o);
     }
-    return (t.flags |= 1), ((e = zu(a, n)).ref = t.ref), (e.return = t), (t.child = e);
+    return (t.flags |= 1), ((e = Lu(a, n)).ref = t.ref), (e.return = t), (t.child = e);
    }
    function _i(e, t, r, n, o) {
     if (null !== e) {
@@ -11318,12 +11320,12 @@
      o = n.children,
      a = null !== e ? e.memoizedState : null;
     if ('hidden' === n.mode)
-     if (0 == (1 & t.mode)) (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), Eo(zl, Ll), (Ll |= r);
+     if (0 == (1 & t.mode)) (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), Eo(Ll, zl), (zl |= r);
      else {
-      if (0 == (1073741824 & r)) return (e = null !== a ? a.baseLanes | r : r), (t.lanes = t.childLanes = 1073741824), (t.memoizedState = { baseLanes: e, cachePool: null, transitions: null }), (t.updateQueue = null), Eo(zl, Ll), (Ll |= e), null;
-      (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), (n = null !== a ? a.baseLanes : r), Eo(zl, Ll), (Ll |= n);
+      if (0 == (1073741824 & r)) return (e = null !== a ? a.baseLanes | r : r), (t.lanes = t.childLanes = 1073741824), (t.memoizedState = { baseLanes: e, cachePool: null, transitions: null }), (t.updateQueue = null), Eo(Ll, zl), (zl |= e), null;
+      (t.memoizedState = { baseLanes: 0, cachePool: null, transitions: null }), (n = null !== a ? a.baseLanes : r), Eo(Ll, zl), (zl |= n);
      }
-    else null !== a ? ((n = a.baseLanes | r), (t.memoizedState = null)) : (n = r), Eo(zl, Ll), (Ll |= n);
+    else null !== a ? ((n = a.baseLanes | r), (t.memoizedState = null)) : (n = r), Eo(Ll, zl), (zl |= n);
     return yi(e, t, o, r), t.child;
    }
    function Ci(e, t) {
@@ -11331,11 +11333,11 @@
     ((null === e && null !== r) || (null !== e && e.ref !== r)) && ((t.flags |= 512), (t.flags |= 2097152));
    }
    function Oi(e, t, r, n, o) {
-    var a = zo(r) ? No : So.current;
-    return (a = Lo(t, a)), Da(t, o), (r = fc(e, t, r, n, a, o)), (n = gc()), null === e || ki ? (aa && n && ta(t), (t.flags |= 1), yi(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
+    var a = Lo(r) ? No : So.current;
+    return (a = zo(t, a)), Da(t, o), (r = fc(e, t, r, n, a, o)), (n = gc()), null === e || ki ? (aa && n && ta(t), (t.flags |= 1), yi(e, t, r, o), t.child) : ((t.updateQueue = e.updateQueue), (t.flags &= -2053), (e.lanes &= ~o), Hi(e, t, o));
    }
    function Ei(e, t, r, n, o) {
-    if (zo(r)) {
+    if (Lo(r)) {
      var a = !0;
      Io(t);
     } else a = !1;
@@ -11346,18 +11348,18 @@
      c.props = i;
      var l = c.context,
       u = r.contextType;
-     'object' == typeof u && null !== u ? (u = Na(u)) : (u = Lo(t, (u = zo(r) ? No : So.current)));
+     'object' == typeof u && null !== u ? (u = Na(u)) : (u = zo(t, (u = Lo(r) ? No : So.current)));
      var s = r.getDerivedStateFromProps,
       d = 'function' == typeof s || 'function' == typeof c.getSnapshotBeforeUpdate;
-     d || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== n || l !== u) && ii(t, c, n, u)), (Ra = !1);
+     d || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== n || l !== u) && ii(t, c, n, u)), (Ta = !1);
      var h = t.memoizedState;
-     (c.state = h), $a(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || Do.current || Ra ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Ra || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
+     (c.state = h), $a(t, n, c, o), (l = t.memoizedState), i !== n || h !== l || Do.current || Ta ? ('function' == typeof s && (ni(t, r, s, n), (l = t.memoizedState)), (i = Ta || ai(t, r, i, n, h, l, u)) ? (d || ('function' != typeof c.UNSAFE_componentWillMount && 'function' != typeof c.componentWillMount) || ('function' == typeof c.componentWillMount && c.componentWillMount(), 'function' == typeof c.UNSAFE_componentWillMount && c.UNSAFE_componentWillMount()), 'function' == typeof c.componentDidMount && (t.flags |= 4194308)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (t.memoizedProps = n), (t.memoizedState = l)), (c.props = n), (c.state = l), (c.context = u), (n = i)) : ('function' == typeof c.componentDidMount && (t.flags |= 4194308), (n = !1));
     } else {
-     (c = t.stateNode), Ma(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = Na(l)) : (l = Lo(t, (l = zo(r) ? No : So.current)));
+     (c = t.stateNode), Ma(e, t), (i = t.memoizedProps), (u = t.type === t.elementType ? i : ri(t.type, i)), (c.props = u), (d = t.pendingProps), (h = c.context), 'object' == typeof (l = r.contextType) && null !== l ? (l = Na(l)) : (l = zo(t, (l = Lo(r) ? No : So.current)));
      var b = r.getDerivedStateFromProps;
-     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Ra = !1), (h = t.memoizedState), (c.state = h), $a(t, n, c, o);
+     (s = 'function' == typeof b || 'function' == typeof c.getSnapshotBeforeUpdate) || ('function' != typeof c.UNSAFE_componentWillReceiveProps && 'function' != typeof c.componentWillReceiveProps) || ((i !== d || h !== l) && ii(t, c, n, l)), (Ta = !1), (h = t.memoizedState), (c.state = h), $a(t, n, c, o);
      var p = t.memoizedState;
-     i !== d || h !== p || Do.current || Ra ? ('function' == typeof b && (ni(t, r, b, n), (p = t.memoizedState)), (u = Ra || ai(t, r, u, n, h, p, l) || !1) ? (s || ('function' != typeof c.UNSAFE_componentWillUpdate && 'function' != typeof c.componentWillUpdate) || ('function' == typeof c.componentWillUpdate && c.componentWillUpdate(n, p, l), 'function' == typeof c.UNSAFE_componentWillUpdate && c.UNSAFE_componentWillUpdate(n, p, l)), 'function' == typeof c.componentDidUpdate && (t.flags |= 4), 'function' == typeof c.getSnapshotBeforeUpdate && (t.flags |= 1024)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (t.memoizedProps = n), (t.memoizedState = p)), (c.props = n), (c.state = p), (c.context = l), (n = u)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (n = !1));
+     i !== d || h !== p || Do.current || Ta ? ('function' == typeof b && (ni(t, r, b, n), (p = t.memoizedState)), (u = Ta || ai(t, r, u, n, h, p, l) || !1) ? (s || ('function' != typeof c.UNSAFE_componentWillUpdate && 'function' != typeof c.componentWillUpdate) || ('function' == typeof c.componentWillUpdate && c.componentWillUpdate(n, p, l), 'function' == typeof c.UNSAFE_componentWillUpdate && c.UNSAFE_componentWillUpdate(n, p, l)), 'function' == typeof c.componentDidUpdate && (t.flags |= 4), 'function' == typeof c.getSnapshotBeforeUpdate && (t.flags |= 1024)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (t.memoizedProps = n), (t.memoizedState = p)), (c.props = n), (c.state = p), (c.context = l), (n = u)) : ('function' != typeof c.componentDidUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 4), 'function' != typeof c.getSnapshotBeforeUpdate || (i === e.memoizedProps && h === e.memoizedState) || (t.flags |= 1024), (n = !1));
     }
     return Pi(e, t, r, n, a, o);
    }
@@ -11371,17 +11373,17 @@
    }
    function Si(e) {
     var t = e.stateNode;
-    t.pendingContext ? To(0, t.pendingContext, t.pendingContext !== t.context) : t.context && To(0, t.context, !1), Qa(e, t.containerInfo);
+    t.pendingContext ? Ro(0, t.pendingContext, t.pendingContext !== t.context) : t.context && Ro(0, t.context, !1), Qa(e, t.containerInfo);
    }
    function Di(e, t, r, n, o) {
     return pa(), ma(o), (t.flags |= 256), yi(e, t, r, n), t.child;
    }
    var Ni,
-    Li,
     zi,
+    Li,
     Ai,
-    Ti = { dehydrated: null, treeContext: null, retryLane: 0 };
-   function Ri(e) {
+    Ri = { dehydrated: null, treeContext: null, retryLane: 0 };
+   function Ti(e) {
     return { baseLanes: e, cachePool: null, transitions: null };
    }
    function Ii(e, t, r) {
@@ -11390,10 +11392,10 @@
      c = ec.current,
      i = !1,
      l = 0 != (128 & t.flags);
-    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Eo(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Ru(l, o, 0, null)), (e = Tu(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ri(r)), (t.memoizedState = Ti), e) : Mi(t, l));
+    if (((n = l) || (n = (null === e || null !== e.memoizedState) && 0 != (2 & c)), n ? ((i = !0), (t.flags &= -129)) : (null !== e && null === e.memoizedState) || (c |= 1), Eo(ec, 1 & c), null === e)) return sa(t), null !== (e = t.memoizedState) && null !== (e = e.dehydrated) ? (0 == (1 & t.mode) ? (t.lanes = 1) : '$!' === e.data ? (t.lanes = 8) : (t.lanes = 1073741824), null) : ((l = o.children), (e = o.fallback), i ? ((o = t.mode), (i = t.child), (l = { mode: 'hidden', children: l }), 0 == (1 & o) && null !== i ? ((i.childLanes = 0), (i.pendingProps = l)) : (i = Tu(l, o, 0, null)), (e = Ru(e, o, r, null)), (i.return = t), (e.return = t), (i.sibling = e), (t.child = i), (t.child.memoizedState = Ti(r)), (t.memoizedState = Ri), e) : Mi(t, l));
     if (null !== (c = e.memoizedState) && null !== (n = c.dehydrated))
      return (function (e, t, r, n, o, c, i) {
-      if (r) return 256 & t.flags ? ((t.flags &= -257), Zi(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Ru({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Tu(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ri(i)), (t.memoizedState = Ti), c);
+      if (r) return 256 & t.flags ? ((t.flags &= -257), Zi(e, t, i, (n = si(Error(a(422)))))) : null !== t.memoizedState ? ((t.child = e.child), (t.flags |= 128), null) : ((c = n.fallback), (o = t.mode), (n = Tu({ mode: 'visible', children: n.children }, o, 0, null)), ((c = Ru(c, o, i, null)).flags |= 2), (n.return = t), (c.return = t), (n.sibling = c), (t.child = n), 0 != (1 & t.mode) && xa(t, e.child, null, i), (t.child.memoizedState = Ti(i)), (t.memoizedState = Ri), c);
       if (0 == (1 & t.mode)) return Zi(e, t, i, null);
       if ('$!' === o.data) {
        if ((n = o.nextSibling && o.nextSibling.dataset)) var l = n.dgst;
@@ -11437,7 +11439,7 @@
          default:
           o = 0;
         }
-        0 !== (o = 0 != (o & (n.suspendedLanes | i)) ? 0 : o) && o !== c.retryLane && ((c.retryLane = o), Ta(e, o), ru(n, e, o, -1));
+        0 !== (o = 0 != (o & (n.suspendedLanes | i)) ? 0 : o) && o !== c.retryLane && ((c.retryLane = o), Ra(e, o), ru(n, e, o, -1));
        }
        return mu(), Zi(e, t, i, (n = si(Error(a(421)))));
       }
@@ -11446,12 +11448,12 @@
     if (i) {
      (i = o.fallback), (l = t.mode), (n = (c = e.child).sibling);
      var u = { mode: 'hidden', children: o.children };
-     return 0 == (1 & l) && t.child !== c ? (((o = t.child).childLanes = 0), (o.pendingProps = u), (t.deletions = null)) : ((o = zu(c, u)).subtreeFlags = 14680064 & c.subtreeFlags), null !== n ? (i = zu(n, i)) : ((i = Tu(i, l, r, null)).flags |= 2), (i.return = t), (o.return = t), (o.sibling = i), (t.child = o), (o = i), (i = t.child), (l = null === (l = e.child.memoizedState) ? Ri(r) : { baseLanes: l.baseLanes | r, cachePool: null, transitions: l.transitions }), (i.memoizedState = l), (i.childLanes = e.childLanes & ~r), (t.memoizedState = Ti), o;
+     return 0 == (1 & l) && t.child !== c ? (((o = t.child).childLanes = 0), (o.pendingProps = u), (t.deletions = null)) : ((o = Lu(c, u)).subtreeFlags = 14680064 & c.subtreeFlags), null !== n ? (i = Lu(n, i)) : ((i = Ru(i, l, r, null)).flags |= 2), (i.return = t), (o.return = t), (o.sibling = i), (t.child = o), (o = i), (i = t.child), (l = null === (l = e.child.memoizedState) ? Ti(r) : { baseLanes: l.baseLanes | r, cachePool: null, transitions: l.transitions }), (i.memoizedState = l), (i.childLanes = e.childLanes & ~r), (t.memoizedState = Ri), o;
     }
-    return (e = (i = e.child).sibling), (o = zu(i, { mode: 'visible', children: o.children })), 0 == (1 & t.mode) && (o.lanes = r), (o.return = t), (o.sibling = null), null !== e && (null === (r = t.deletions) ? ((t.deletions = [e]), (t.flags |= 16)) : r.push(e)), (t.child = o), (t.memoizedState = null), o;
+    return (e = (i = e.child).sibling), (o = Lu(i, { mode: 'visible', children: o.children })), 0 == (1 & t.mode) && (o.lanes = r), (o.return = t), (o.sibling = null), null !== e && (null === (r = t.deletions) ? ((t.deletions = [e]), (t.flags |= 16)) : r.push(e)), (t.child = o), (t.memoizedState = null), o;
    }
    function Mi(e, t) {
-    return ((t = Ru({ mode: 'visible', children: t }, e.mode, 0, null)).return = e), (e.child = t);
+    return ((t = Tu({ mode: 'visible', children: t }, e.mode, 0, null)).return = e), (e.child = t);
    }
    function Zi(e, t, r, n) {
     return null !== n && ma(n), xa(t, e.child, null, r), ((e = Mi(t, t.pendingProps.children)).flags |= 2), (t.memoizedState = null), e;
@@ -11517,10 +11519,10 @@
     0 == (1 & t.mode) && null !== e && ((e.alternate = null), (t.alternate = null), (t.flags |= 2));
    }
    function Hi(e, t, r) {
-    if ((null !== e && (t.dependencies = e.dependencies), (Rl |= t.lanes), 0 == (r & t.childLanes))) return null;
+    if ((null !== e && (t.dependencies = e.dependencies), (Tl |= t.lanes), 0 == (r & t.childLanes))) return null;
     if (null !== e && t.child !== e.child) throw Error(a(153));
     if (null !== t.child) {
-     for (r = zu((e = t.child), e.pendingProps), t.child = r, r.return = t; null !== e.sibling; ) (e = e.sibling), ((r = r.sibling = zu(e, e.pendingProps)).return = t);
+     for (r = Lu((e = t.child), e.pendingProps), t.child = r, r.return = t; null !== e.sibling; ) (e = e.sibling), ((r = r.sibling = Lu(e, e.pendingProps)).return = t);
      r.sibling = null;
     }
     return t.child;
@@ -11563,13 +11565,13 @@
       return Vi(t), null;
      case 1:
      case 17:
-      return zo(t.type) && Ao(), Vi(t), null;
+      return Lo(t.type) && Ao(), Vi(t), null;
      case 3:
-      return (n = t.stateNode), Ya(), Oo(Do), Oo(So), nc(), n.pendingContext && ((n.context = n.pendingContext), (n.pendingContext = null)), (null !== e && null !== e.child) || (ha(t) ? (t.flags |= 4) : null === e || (e.memoizedState.isDehydrated && 0 == (256 & t.flags)) || ((t.flags |= 1024), null !== ca && (cu(ca), (ca = null)))), Li(e, t), Vi(t), null;
+      return (n = t.stateNode), Ya(), Oo(Do), Oo(So), nc(), n.pendingContext && ((n.context = n.pendingContext), (n.pendingContext = null)), (null !== e && null !== e.child) || (ha(t) ? (t.flags |= 4) : null === e || (e.memoizedState.isDehydrated && 0 == (256 & t.flags)) || ((t.flags |= 1024), null !== ca && (cu(ca), (ca = null)))), zi(e, t), Vi(t), null;
      case 5:
       Ja(t);
       var o = Ka(Ga.current);
-      if (((r = t.type), null !== e && null != t.stateNode)) zi(e, t, r, n, o), e.ref !== t.ref && ((t.flags |= 512), (t.flags |= 2097152));
+      if (((r = t.type), null !== e && null != t.stateNode)) Li(e, t, r, n, o), e.ref !== t.ref && ((t.flags |= 512), (t.flags |= 2097152));
       else {
        if (!n) {
         if (null === t.stateNode) throw Error(a(166));
@@ -11589,7 +11591,7 @@
           break;
          case 'video':
          case 'audio':
-          for (o = 0; o < Tn.length; o++) Zn(Tn[o], n);
+          for (o = 0; o < Rn.length; o++) Zn(Rn[o], n);
           break;
          case 'source':
           Zn('error', n);
@@ -11644,7 +11646,7 @@
            break;
           case 'video':
           case 'audio':
-           for (o = 0; o < Tn.length; o++) Zn(Tn[o], e);
+           for (o = 0; o < Rn.length; o++) Zn(Rn[o], e);
            o = n;
            break;
           case 'source':
@@ -11743,7 +11745,7 @@
       }
       return 0 != (128 & t.flags) ? ((t.lanes = r), t) : ((n = null !== n) !== (null !== e && null !== e.memoizedState) && n && ((t.child.flags |= 8192), 0 != (1 & t.mode) && (null === e || 0 != (1 & ec.current) ? 0 === Al && (Al = 3) : mu())), null !== t.updateQueue && (t.flags |= 4), Vi(t), null);
      case 4:
-      return Ya(), Li(e, t), null === e && Bn(t.stateNode.containerInfo), Vi(t), null;
+      return Ya(), zi(e, t), null === e && Bn(t.stateNode.containerInfo), Vi(t), null;
      case 10:
       return Pa(t.type._context), Vi(t), null;
      case 19:
@@ -11771,7 +11773,7 @@
       return null !== c.tail ? ((t = c.tail), (c.rendering = t), (c.tail = t.sibling), (c.renderingStartTime = Ye()), (t.sibling = null), (r = ec.current), Eo(ec, n ? (1 & r) | 2 : 1 & r), t) : (Vi(t), null);
      case 22:
      case 23:
-      return du(), (n = null !== t.memoizedState), null !== e && (null !== e.memoizedState) !== n && (t.flags |= 8192), n && 0 != (1 & t.mode) ? 0 != (1073741824 & Ll) && (Vi(t), 6 & t.subtreeFlags && (t.flags |= 8192)) : Vi(t), null;
+      return du(), (n = null !== t.memoizedState), null !== e && (null !== e.memoizedState) !== n && (t.flags |= 8192), n && 0 != (1 & t.mode) ? 0 != (1073741824 & zl) && (Vi(t), 6 & t.subtreeFlags && (t.flags |= 8192)) : Vi(t), null;
      case 24:
      case 25:
       return null;
@@ -11781,7 +11783,7 @@
    function Gi(e, t) {
     switch ((ra(t), t.tag)) {
      case 1:
-      return zo(t.type) && Ao(), 65536 & (e = t.flags) ? ((t.flags = (-65537 & e) | 128), t) : null;
+      return Lo(t.type) && Ao(), 65536 & (e = t.flags) ? ((t.flags = (-65537 & e) | 128), t) : null;
      case 3:
       return Ya(), Oo(Do), Oo(So), nc(), 0 != (65536 & (e = t.flags)) && 0 == (128 & e) ? ((t.flags = (-65537 & e) | 128), t) : null;
      case 5:
@@ -11820,8 +11822,8 @@
      (r.sibling.return = r.return), (r = r.sibling);
     }
    }),
-    (Li = function () {}),
-    (zi = function (e, t, r, n) {
+    (zi = function () {}),
+    (Li = function (e, t, r, n) {
      var o = e.memoizedProps;
      if (o !== n) {
       (e = t.stateNode), Ka(Va.current);
@@ -12443,11 +12445,11 @@
     Sl = null,
     Dl = null,
     Nl = 0,
-    Ll = 0,
-    zl = Co(0),
+    zl = 0,
+    Ll = Co(0),
     Al = 0,
-    Tl = null,
-    Rl = 0,
+    Rl = null,
+    Tl = 0,
     Il = 0,
     Ml = 0,
     Zl = null,
@@ -12540,7 +12542,7 @@
      Ea(), (Cl.current = c), (Pl = o), null !== Dl ? (t = 0) : ((Sl = null), (Nl = 0), (t = Al));
     }
     if (0 !== t) {
-     if ((2 === t && 0 !== (o = pt(e)) && ((n = o), (t = au(e, o))), 1 === t)) throw ((r = Tl), hu(e, 0), iu(e, n), nu(e, Ye()), r);
+     if ((2 === t && 0 !== (o = pt(e)) && ((n = o), (t = au(e, o))), 1 === t)) throw ((r = Rl), hu(e, 0), iu(e, n), nu(e, Ye()), r);
      if (6 === t) iu(e, n);
      else {
       if (
@@ -12576,7 +12578,7 @@
         })(o) &&
         (2 === (t = fu(e, n)) && 0 !== (c = pt(e)) && ((n = c), (t = au(e, c))), 1 === t))
       )
-       throw ((r = Tl), hu(e, 0), iu(e, n), nu(e, Ye()), r);
+       throw ((r = Rl), hu(e, 0), iu(e, n), nu(e, Ye()), r);
       switch (((e.finishedWork = o), (e.finishedLanes = n), t)) {
        case 0:
        case 1:
@@ -12640,7 +12642,7 @@
      var n = pt(e);
      0 !== n && ((t = n), (r = au(e, n)));
     }
-    if (1 === r) throw ((r = Tl), hu(e, 0), iu(e, t), nu(e, Ye()), r);
+    if (1 === r) throw ((r = Rl), hu(e, 0), iu(e, t), nu(e, Ye()), r);
     if (6 === r) throw Error(a(345));
     return (e.finishedWork = e.current.alternate), (e.finishedLanes = t), xu(e, Fl, $l), nu(e, Ye()), null;
    }
@@ -12666,7 +12668,7 @@
     }
    }
    function du() {
-    (Ll = zl.current), Oo(zl);
+    (zl = Ll.current), Oo(Ll);
    }
    function hu(e, t) {
     (e.finishedWork = null), (e.finishedLanes = 0);
@@ -12700,9 +12702,9 @@
       }
       r = r.return;
      }
-    if (((Sl = e), (Dl = e = zu(e.current, null)), (Nl = Ll = t), (Al = 0), (Tl = null), (Ml = Il = Rl = 0), (Fl = Zl = null), null !== La)) {
-     for (t = 0; t < La.length; t++)
-      if (null !== (n = (r = La[t]).interleaved)) {
+    if (((Sl = e), (Dl = e = Lu(e.current, null)), (Nl = zl = t), (Al = 0), (Rl = null), (Ml = Il = Tl = 0), (Fl = Zl = null), null !== za)) {
+     for (t = 0; t < za.length; t++)
+      if (null !== (n = (r = za[t]).interleaved)) {
        r.interleaved = null;
        var o = n.next,
         a = r.pending;
@@ -12712,7 +12714,7 @@
        }
        r.pending = n;
       }
-     La = null;
+     za = null;
     }
     return e;
    }
@@ -12728,7 +12730,7 @@
        sc = !1;
       }
       if (((cc = 0), (uc = lc = ic = null), (dc = !1), (hc = 0), (Ol.current = null), null === r || null === r.return)) {
-       (Al = 1), (Tl = t), (Dl = null);
+       (Al = 1), (Rl = t), (Dl = null);
        break;
       }
       e: {
@@ -12797,7 +12799,7 @@
     return (Cl.current = Xc), null === e ? Xc : e;
    }
    function mu() {
-    (0 !== Al && 3 !== Al && 2 !== Al) || (Al = 4), null === Sl || (0 == (268435455 & Rl) && 0 == (268435455 & Il)) || iu(Sl, Nl);
+    (0 !== Al && 3 !== Al && 2 !== Al) || (Al = 4), null === Sl || (0 == (268435455 & Tl) && 0 == (268435455 & Il)) || iu(Sl, Nl);
    }
    function fu(e, t) {
     var r = Pl;
@@ -12820,7 +12822,7 @@
     for (; null !== Dl && !Ke(); ) ku(Dl);
    }
    function ku(e) {
-    var t = _l(e.alternate, e, Ll);
+    var t = _l(e.alternate, e, zl);
     (e.memoizedProps = e.pendingProps), null === t ? yu(e) : (Dl = t), (Ol.current = null);
    }
    function yu(e) {
@@ -12828,7 +12830,7 @@
     do {
      var r = t.alternate;
      if (((e = t.return), 0 == (32768 & t.flags))) {
-      if (null !== (r = Wi(r, t, Ll))) return void (Dl = r);
+      if (null !== (r = Wi(r, t, zl))) return void (Dl = r);
      } else {
       if (null !== (r = Gi(r, t))) return (r.flags &= 32767), void (Dl = r);
       if (null === e) return (Al = 6), void (Dl = null);
@@ -13144,7 +13146,7 @@
    function Ou(e, t) {
     0 === t && (0 == (1 & e.mode) ? (t = 1) : ((t = st), 0 == (130023424 & (st <<= 1)) && (st = 4194304)));
     var r = eu();
-    null !== (e = Ta(e, t)) && (gt(e, t, r), nu(e, r));
+    null !== (e = Ra(e, t)) && (gt(e, t, r), nu(e, r));
    }
    function Eu(e) {
     var t = e.memoizedState,
@@ -13176,21 +13178,21 @@
    function Nu(e, t, r, n) {
     return new Du(e, t, r, n);
    }
-   function Lu(e) {
+   function zu(e) {
     return !(!(e = e.prototype) || !e.isReactComponent);
    }
-   function zu(e, t) {
+   function Lu(e, t) {
     var r = e.alternate;
     return null === r ? (((r = Nu(e.tag, t, e.key, e.mode)).elementType = e.elementType), (r.type = e.type), (r.stateNode = e.stateNode), (r.alternate = e), (e.alternate = r)) : ((r.pendingProps = t), (r.type = e.type), (r.flags = 0), (r.subtreeFlags = 0), (r.deletions = null)), (r.flags = 14680064 & e.flags), (r.childLanes = e.childLanes), (r.lanes = e.lanes), (r.child = e.child), (r.memoizedProps = e.memoizedProps), (r.memoizedState = e.memoizedState), (r.updateQueue = e.updateQueue), (t = e.dependencies), (r.dependencies = null === t ? null : { lanes: t.lanes, firstContext: t.firstContext }), (r.sibling = e.sibling), (r.index = e.index), (r.ref = e.ref), r;
    }
    function Au(e, t, r, n, o, c) {
     var i = 2;
-    if (((n = e), 'function' == typeof e)) Lu(e) && (i = 1);
+    if (((n = e), 'function' == typeof e)) zu(e) && (i = 1);
     else if ('string' == typeof e) i = 5;
     else
      e: switch (e) {
       case _:
-       return Tu(r.children, o, c, t);
+       return Ru(r.children, o, c, t);
       case j:
        (i = 8), (o |= 8);
        break;
@@ -13200,8 +13202,8 @@
        return ((e = Nu(13, r, t, o)).elementType = S), (e.lanes = c), e;
       case D:
        return ((e = Nu(19, r, t, o)).elementType = D), (e.lanes = c), e;
-      case z:
-       return Ru(r, o, c, t);
+      case L:
+       return Tu(r, o, c, t);
       default:
        if ('object' == typeof e && null !== e)
         switch (e.$$typeof) {
@@ -13217,7 +13219,7 @@
          case N:
           i = 14;
           break e;
-         case L:
+         case z:
           (i = 16), (n = null);
           break e;
         }
@@ -13225,11 +13227,11 @@
      }
     return ((t = Nu(i, r, t, o)).elementType = e), (t.type = n), (t.lanes = c), t;
    }
-   function Tu(e, t, r, n) {
+   function Ru(e, t, r, n) {
     return ((e = Nu(7, e, n, t)).lanes = r), e;
    }
-   function Ru(e, t, r, n) {
-    return ((e = Nu(22, e, n, t)).elementType = z), (e.lanes = r), (e.stateNode = { isHidden: !1 }), e;
+   function Tu(e, t, r, n) {
+    return ((e = Nu(22, e, n, t)).elementType = L), (e.lanes = r), (e.stateNode = { isHidden: !1 }), e;
    }
    function Iu(e, t, r) {
     return ((e = Nu(6, e, null, t)).lanes = r), e;
@@ -13254,7 +13256,7 @@
         t = t.stateNode.context;
         break e;
        case 1:
-        if (zo(t.type)) {
+        if (Lo(t.type)) {
          t = t.stateNode.__reactInternalMemoizedMergedChildContext;
          break e;
         }
@@ -13265,7 +13267,7 @@
     }
     if (1 === e.tag) {
      var r = e.type;
-     if (zo(r)) return Ro(e, r, t);
+     if (Lo(r)) return To(e, r, t);
     }
     return t;
    }
@@ -13306,7 +13308,7 @@
            Xa(t);
            break;
           case 1:
-           zo(t.type) && Io(t);
+           Lo(t.type) && Io(t);
            break;
           case 4:
            Qa(t, t.stateNode.containerInfo);
@@ -13341,10 +13343,10 @@
      case 2:
       var n = t.type;
       $i(e, t), (e = t.pendingProps);
-      var o = Lo(t, So.current);
+      var o = zo(t, So.current);
       Da(t, r), (o = fc(null, t, n, e, o, r));
       var c = gc();
-      return (t.flags |= 1), 'object' == typeof o && null !== o && 'function' == typeof o.render && void 0 === o.$$typeof ? ((t.tag = 1), (t.memoizedState = null), (t.updateQueue = null), zo(n) ? ((c = !0), Io(t)) : (c = !1), (t.memoizedState = null !== o.state && void 0 !== o.state ? o.state : null), Ia(t), (o.updater = oi), (t.stateNode = o), (o._reactInternals = t), li(t, n, e, r), (t = Pi(null, t, n, !0, c, r))) : ((t.tag = 0), aa && c && ta(t), yi(null, t, o, r), (t = t.child)), t;
+      return (t.flags |= 1), 'object' == typeof o && null !== o && 'function' == typeof o.render && void 0 === o.$$typeof ? ((t.tag = 1), (t.memoizedState = null), (t.updateQueue = null), Lo(n) ? ((c = !0), Io(t)) : (c = !1), (t.memoizedState = null !== o.state && void 0 !== o.state ? o.state : null), Ia(t), (o.updater = oi), (t.stateNode = o), (o._reactInternals = t), li(t, n, e, r), (t = Pi(null, t, n, !0, c, r))) : ((t.tag = 0), aa && c && ta(t), yi(null, t, o, r), (t = t.child)), t;
      case 16:
       n = t.elementType;
       e: {
@@ -13355,7 +13357,7 @@
         (t.type = n),
         (o = t.tag =
          (function (e) {
-          if ('function' == typeof e) return Lu(e) ? 1 : 0;
+          if ('function' == typeof e) return zu(e) ? 1 : 0;
           if (null != e) {
            if ((e = e.$$typeof) === P) return 11;
            if (e === N) return 14;
@@ -13483,7 +13485,7 @@
      case 15:
       return _i(e, t, t.type, t.pendingProps, r);
      case 17:
-      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), $i(e, t), (t.tag = 1), zo(n) ? ((e = !0), Io(t)) : (e = !1), Da(t, r), ci(t, n, o), li(t, n, o, r), Pi(null, t, n, !0, e, r);
+      return (n = t.type), (o = t.pendingProps), (o = t.elementType === n ? o : ri(n, o)), $i(e, t), (t.tag = 1), Lo(n) ? ((e = !0), Io(t)) : (e = !1), Da(t, r), ci(t, n, o), li(t, n, o, r), Pi(null, t, n, !0, e, r);
      case 19:
       return Bi(e, t, r);
      case 22:
@@ -13578,8 +13580,8 @@
      if (e) {
       var t = jt();
       e = { blockedOn: null, target: e, priority: t };
-      for (var r = 0; r < zt.length && 0 !== t && t < zt[r].priority; r++);
-      zt.splice(r, 0, e), 0 === r && It(e);
+      for (var r = 0; r < Lt.length && 0 !== t && t < Lt[r].priority; r++);
+      Lt.splice(r, 0, e), 0 === r && It(e);
      }
     }),
     (xt = function (e) {
@@ -13593,7 +13595,7 @@
        break;
       case 13:
        su(function () {
-        var t = Ta(e, 1);
+        var t = Ra(e, 1);
         if (null !== t) {
          var r = eu();
          ru(t, e, 1, r);
@@ -13604,7 +13606,7 @@
     }),
     (wt = function (e) {
      if (13 === e.tag) {
-      var t = Ta(e, 134217728);
+      var t = Ra(e, 134217728);
       if (null !== t) ru(t, e, 134217728, eu());
       Vu(e, 134217728);
      }
@@ -13612,7 +13614,7 @@
     (_t = function (e) {
      if (13 === e.tag) {
       var t = tu(e),
-       r = Ta(e, t);
+       r = Ra(e, t);
       if (null !== r) ru(r, e, t, eu());
       Vu(e, t);
      }
@@ -13994,21 +13996,21 @@
         )
       : { default: e };
     },
-    L = function (e, t) {
+    z = function (e, t) {
      var r;
      return h({}, e, (((r = {})[t] = void 0), r));
     },
-    z = [f.NOSCRIPT, f.SCRIPT, f.STYLE],
+    L = [f.NOSCRIPT, f.SCRIPT, f.STYLE],
     A = function (e, t) {
      return void 0 === t && (t = !0), !1 === t ? String(e) : String(e).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
     },
-    T = function (e) {
+    R = function (e) {
      return Object.keys(e).reduce(function (t, r) {
       var n = void 0 !== e[r] ? r + '="' + e[r] + '"' : '' + r;
       return t ? t + ' ' + n : n;
      }, '');
     },
-    R = function (e, t) {
+    T = function (e, t) {
      return (
       void 0 === t && (t = {}),
       Object.keys(e).reduce(function (t, r) {
@@ -14034,12 +14036,12 @@
       case f.TITLE:
        return {
         toComponent: function () {
-         return (r = t.titleAttributes), ((o = { key: (e = t.title) })['data-rh'] = !0), (a = R(r, o)), [n.createElement(f.TITLE, a, e)];
+         return (r = t.titleAttributes), ((o = { key: (e = t.title) })['data-rh'] = !0), (a = T(r, o)), [n.createElement(f.TITLE, a, e)];
          var e, r, o, a;
         },
         toString: function () {
          return (function (e, t, r, n) {
-          var o = T(r),
+          var o = R(r),
            a = D(t);
           return o ? '<' + e + ' data-rh="true" ' + o + '>' + A(a, n) + '</' + e + '>' : '<' + e + ' data-rh="true">' + A(a, n) + '</' + e + '>';
          })(e, t.title, t.titleAttributes, r);
@@ -14049,10 +14051,10 @@
       case 'htmlAttributes':
        return {
         toComponent: function () {
-         return R(t);
+         return T(t);
         },
         toString: function () {
-         return T(t);
+         return R(t);
         },
        };
       default:
@@ -14072,7 +14074,7 @@
               return e ? e + ' ' + o : o;
              }, ''),
             a = n.innerHTML || n.cssText || '',
-            c = -1 === z.indexOf(e);
+            c = -1 === L.indexOf(e);
            return t + '<' + e + ' data-rh="true" ' + o + (c ? '/>' : '>' + a + '</' + e + '>');
           }, '');
          })(e, t, r);
@@ -14301,7 +14303,7 @@
      var r = t.prototype;
      return (
       (r.shouldComponentUpdate = function (e) {
-       return !i()(L(this.props, 'helmetData'), L(e, 'helmetData'));
+       return !i()(z(this.props, 'helmetData'), z(e, 'helmetData'));
       }),
       (r.mapNestedChildrenToProps = function (e, t) {
        if (!t) return null;
@@ -14698,14 +14700,14 @@
         .join(' ');
       })(D, s)),
       (N = (0, i.Z)({}, N, b)));
-     var L = (0, i.Z)({ 'aria-current': (S && o) || null, className: D, style: N, to: c }, O);
-     return g !== v ? (L.ref = t || C) : (L.innerRef = C), a.createElement(f, L);
+     var z = (0, i.Z)({ 'aria-current': (S && o) || null, className: D, style: N, to: c }, O);
+     return g !== v ? (z.ref = t || C) : (z.innerRef = C), a.createElement(f, z);
     });
    });
   },
   3225: (e, t, r) => {
    'use strict';
-   r.d(t, { AW: () => j, F0: () => k, LX: () => _, TH: () => z, k6: () => L, rs: () => D, s6: () => v });
+   r.d(t, { AW: () => j, F0: () => k, LX: () => _, TH: () => L, k6: () => z, rs: () => D, s6: () => v });
    var n = r(38156),
     o = r(75271),
     a = r(40507),
@@ -14988,10 +14990,10 @@
     );
    })(o.Component);
    var N = o.useContext;
-   function L() {
+   function z() {
     return N(g);
    }
-   function z() {
+   function L() {
     return N(v).location;
    }
   },
@@ -15170,10 +15172,10 @@
     if (1 === e._status) return e._result.default;
     throw e._result;
    }
-   var L = { current: null },
-    z = { transition: null },
-    A = { ReactCurrentDispatcher: L, ReactCurrentBatchConfig: z, ReactCurrentOwner: _ };
-   function T() {
+   var z = { current: null },
+    L = { transition: null },
+    A = { ReactCurrentDispatcher: z, ReactCurrentBatchConfig: L, ReactCurrentOwner: _ };
+   function R() {
     throw Error('act(...) is not supported in production builds of React.');
    }
    (t.Children = {
@@ -15215,7 +15217,7 @@
     (t.StrictMode = a),
     (t.Suspense = s),
     (t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A),
-    (t.act = T),
+    (t.act = R),
     (t.cloneElement = function (e, t, n) {
      if (null == e) throw Error('React.cloneElement(...): The argument must be a React element, but you passed ' + e + '.');
      var o = m({}, e.props),
@@ -15257,57 +15259,57 @@
      return { $$typeof: d, type: e, compare: void 0 === t ? null : t };
     }),
     (t.startTransition = function (e) {
-     var t = z.transition;
-     z.transition = {};
+     var t = L.transition;
+     L.transition = {};
      try {
       e();
      } finally {
-      z.transition = t;
+      L.transition = t;
      }
     }),
-    (t.unstable_act = T),
+    (t.unstable_act = R),
     (t.useCallback = function (e, t) {
-     return L.current.useCallback(e, t);
+     return z.current.useCallback(e, t);
     }),
     (t.useContext = function (e) {
-     return L.current.useContext(e);
+     return z.current.useContext(e);
     }),
     (t.useDebugValue = function () {}),
     (t.useDeferredValue = function (e) {
-     return L.current.useDeferredValue(e);
+     return z.current.useDeferredValue(e);
     }),
     (t.useEffect = function (e, t) {
-     return L.current.useEffect(e, t);
+     return z.current.useEffect(e, t);
     }),
     (t.useId = function () {
-     return L.current.useId();
+     return z.current.useId();
     }),
     (t.useImperativeHandle = function (e, t, r) {
-     return L.current.useImperativeHandle(e, t, r);
+     return z.current.useImperativeHandle(e, t, r);
     }),
     (t.useInsertionEffect = function (e, t) {
-     return L.current.useInsertionEffect(e, t);
+     return z.current.useInsertionEffect(e, t);
     }),
     (t.useLayoutEffect = function (e, t) {
-     return L.current.useLayoutEffect(e, t);
+     return z.current.useLayoutEffect(e, t);
     }),
     (t.useMemo = function (e, t) {
-     return L.current.useMemo(e, t);
+     return z.current.useMemo(e, t);
     }),
     (t.useReducer = function (e, t, r) {
-     return L.current.useReducer(e, t, r);
+     return z.current.useReducer(e, t, r);
     }),
     (t.useRef = function (e) {
-     return L.current.useRef(e);
+     return z.current.useRef(e);
     }),
     (t.useState = function (e) {
-     return L.current.useState(e);
+     return z.current.useState(e);
     }),
     (t.useSyncExternalStore = function (e, t, r) {
-     return L.current.useSyncExternalStore(e, t, r);
+     return z.current.useSyncExternalStore(e, t, r);
     }),
     (t.useTransition = function () {
-     return L.current.useTransition();
+     return z.current.useTransition();
     }),
     (t.version = '18.3.1');
   },
@@ -15393,7 +15395,7 @@
    }
    function x(e) {
     if (((f = !1), y(e), !m))
-     if (null !== n(u)) (m = !0), z(w);
+     if (null !== n(u)) (m = !0), L(w);
      else {
       var t = n(s);
       null !== t && A(x, t.startTime - e);
@@ -15450,16 +15452,16 @@
     };
    else if ('undefined' != typeof MessageChannel) {
     var N = new MessageChannel(),
-     L = N.port2;
+     z = N.port2;
     (N.port1.onmessage = D),
      (_ = function () {
-      L.postMessage(null);
+      z.postMessage(null);
      });
    } else
     _ = function () {
      g(D, 0);
     };
-   function z(e) {
+   function L(e) {
     (C = e), j || ((j = !0), _());
    }
    function A(e, r) {
@@ -15477,7 +15479,7 @@
      e.callback = null;
     }),
     (t.unstable_continueExecution = function () {
-     m || p || ((m = !0), z(w));
+     m || p || ((m = !0), L(w));
     }),
     (t.unstable_forceFrameRate = function (e) {
      0 > e || 125 < e ? console.error('forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported') : (E = 0 < e ? Math.floor(1e3 / e) : 5);
@@ -15545,7 +15547,7 @@
       default:
        i = 5e3;
      }
-     return (e = { id: d++, callback: o, priorityLevel: e, startTime: a, expirationTime: (i = a + i), sortIndex: -1 }), a > c ? ((e.sortIndex = a), r(s, e), null === n(u) && e === n(s) && (f ? (v(O), (O = -1)) : (f = !0), A(x, a - c))) : ((e.sortIndex = i), r(u, e), m || p || ((m = !0), z(w))), e;
+     return (e = { id: d++, callback: o, priorityLevel: e, startTime: a, expirationTime: (i = a + i), sortIndex: -1 }), a > c ? ((e.sortIndex = a), r(s, e), null === n(u) && e === n(s) && (f ? (v(O), (O = -1)) : (f = !0), A(x, a - c))) : ((e.sortIndex = i), r(u, e), m || p || ((m = !0), L(w))), e;
     }),
     (t.unstable_shouldYield = S),
     (t.unstable_wrapCallback = function (e) {
@@ -15591,7 +15593,7 @@
     title: 'NL Design System',
     tagline: 'E\xe9n design system voor alle huisstijlen',
     url: 'https://nldesignsystem.nl',
-    baseUrl: '/',
+    baseUrl: '/en/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'favicon.ico',
@@ -15899,7 +15901,7 @@
   },
   46506: (e, t, r) => {
    'use strict';
-   r.d(t, { AS: () => Da, B6: () => Ze, BB: () => et, Cd: () => Pr, EK: () => Ne, EU: () => uo, Ee: () => Wr, GS: () => Dn, JH: () => Bn, JO: () => Zr, OX: () => Lr, Ou: () => Qe, Pj: () => On, QI: () => Oa, Qu: () => se, Qv: () => wt, RM: () => Wo, SC: () => ma, Tg: () => Ro, Ux: () => An, Wi: () => Lt, X6: () => Y, XJ: () => hr, XZ: () => Ee, aC: () => fr, by: () => jr, dn: () => Te, fE: () => Ht, gx: () => ka, hE: () => ve, iA: () => $o, j$: () => bt, k8: () => yr, lX: () => Gt, nL: () => lr, nv: () => Xn, pg: () => vt, pj: () => ea, pu: () => or, rU: () => te, sc: () => he, ue: () => Rt, xD: () => ia, xs: () => da, yY: () => be, zx: () => m });
+   r.d(t, { AS: () => Da, B6: () => Ze, BB: () => et, Cd: () => Pr, EK: () => Ne, EU: () => uo, Ee: () => Wr, GS: () => Dn, JH: () => Bn, JO: () => Zr, OX: () => zr, Ou: () => Qe, Pj: () => On, QI: () => Oa, Qu: () => se, Qv: () => wt, RM: () => Wo, SC: () => ma, Tg: () => To, Ux: () => An, Wi: () => zt, X6: () => Y, XJ: () => hr, XZ: () => Ee, aC: () => fr, by: () => jr, dn: () => Re, fE: () => Ht, gx: () => ka, hE: () => ve, iA: () => $o, j$: () => bt, k8: () => yr, lX: () => Gt, nL: () => lr, nv: () => Xn, pg: () => vt, pj: () => ea, pu: () => or, rU: () => te, sc: () => he, ue: () => Tt, xD: () => ia, xs: () => da, yY: () => be, zx: () => m });
    var n = r(31015),
     o = r(96097),
     a = r(58424),
@@ -16049,9 +16051,9 @@
       D = O || (null === O ? null : (0, i.jsx)(j, {}));
      'utrecht' === E && (D = null);
      var N = 'utrecht-accordion',
-      L = r || (0, c.useId)(),
-      z = ''.concat(N).concat(L, '-button'),
-      A = ''.concat(N).concat(L, '-panel');
+      z = r || (0, c.useId)(),
+      L = ''.concat(N).concat(z, '-button'),
+      A = ''.concat(N).concat(z, '-panel');
      return (0, i.jsxs)(
       'div',
       _(
@@ -16068,7 +16070,7 @@
            'aria-expanded': !0 === b,
            'aria-controls': A,
            disabled: p,
-           id: z,
+           id: L,
            onClick: function () {
             return 'function' == typeof x && x(t);
            },
@@ -16082,7 +16084,7 @@
            children: [D && (0, i.jsx)('span', { className: 'utrecht-accordion__button-icon', children: D }), (0, i.jsx)('span', { className: 'utrecht-accordion__button-label', children: n })],
           }),
          }),
-         f ? (0, i.jsx)('section', _(_({ id: A, 'aria-labelledby': z }, S), {}, { children: g })) : (0, i.jsx)('div', _(_({ id: A }, S), {}, { children: g })),
+         f ? (0, i.jsx)('section', _(_({ id: A, 'aria-labelledby': L }, S), {}, { children: g })) : (0, i.jsx)('div', _(_({ id: A }, S), {}, { children: g })),
         ],
        },
       ),
@@ -16263,7 +16265,7 @@
     }
     return r;
    }
-   function L(e) {
+   function z(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -16284,10 +16286,10 @@
      o = e.icon,
      c = e.type,
      u = (0, a.Z)(e, D);
-    return (0, i.jsxs)('dialog', L(L({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-alert-dialog', { 'utrecht-alert-dialog--error': 'error' === c, 'utrecht-alert-dialog--info': 'info' === c, 'utrecht-alert-dialog--warning': 'warning' === c, className: n }), children: [o && (0, i.jsx)('div', { className: 'utrecht-alert-dialog__icon', children: o }), (0, i.jsx)('div', { className: 'utrecht-alert-dialog__message', children: r })] }));
+    return (0, i.jsxs)('dialog', z(z({}, u), {}, { ref: t, className: (0, l.Z)('utrecht-alert-dialog', { 'utrecht-alert-dialog--error': 'error' === c, 'utrecht-alert-dialog--info': 'info' === c, 'utrecht-alert-dialog--warning': 'warning' === c, className: n }), children: [o && (0, i.jsx)('div', { className: 'utrecht-alert-dialog__icon', children: o }), (0, i.jsx)('div', { className: 'utrecht-alert-dialog__message', children: r })] }));
    }).displayName = 'AlertDialog';
    d('.utrecht-article{max-inline-size:var(--utrecht-article-max-inline-size)}');
-   var z = ['children', 'className'];
+   var L = ['children', 'className'];
    function A(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -16300,7 +16302,7 @@
     }
     return r;
    }
-   function T(e) {
+   function R(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -16318,11 +16320,11 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, z);
-    return (0, i.jsx)('article', T(T({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-article', n), children: r }));
+     o = (0, a.Z)(e, L);
+    return (0, i.jsx)('article', R(R({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-article', n), children: r }));
    }).displayName = 'Article';
    d('.utrecht-backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-opacity);--_utrecht-backdrop-fade-in-animation-duration:var(--utrecht-backdrop-fade-in-animation-duration,0);animation-duration:min(var(--utrecht-motion-max-animation-duration,var(--_utrecht-backdrop-fade-in-animation-duration)),var(--_utrecht-backdrop-fade-in-animation-duration,0));animation-name:utrecht-backdrop-fade-in;animation-timing-function:ease-in-out;background-color:var(--utrecht-backdrop-background-color);color:var(--utrecht-backdrop-color);display:block;inset-block-end:0;inset-block-start:0;inset-inline-end:0;inset-inline-start:0;opacity:var(--_utrecht-backdrop-opacity);position:absolute;-webkit-user-select:none;user-select:none;z-index:var(--utrecht-backdrop-z-index)}@keyframes utrecht-backdrop-fade-in{0%{opacity:0}to{opacity:var(--_utrecht-backdrop-opacity)}}@media (prefers-reduced-motion:reduce){.utrecht-backdrop{--_utrecht-backdrop-fade-in-animation-duration:0}}@media (prefers-reduced-transparency:reduce){.utrecht-backdrop{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-reduced-transparency-opacity,100%)}}.utrecht-backdrop--reduced-motion{--_utrecht-backdrop-fade-in-animation-duration:0}.utrecht-backdrop--reduced-transparency{--_utrecht-backdrop-opacity:var(--utrecht-backdrop-reduced-transparency-opacity,100%)}.utrecht-backdrop--viewport{position:fixed}');
-   var R = ['children', 'className'];
+   var T = ['children', 'className'];
    function I(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -16353,7 +16355,7 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, R);
+     o = (0, a.Z)(e, T);
     return (0, i.jsx)('div', M(M({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-backdrop', n), children: r }));
    }).displayName = 'Backdrop';
    d('.utrecht-badge-counter{background-color:var(--utrecht-badge-counter-background-color,var(--utrecht-badge-background-color,#000));border-radius:var(--utrecht-badge-counter-border-radius,var(--utrecht-badge-border-radius,.5ch));color:var(--utrecht-badge-counter-color,var(--utrecht-badge-color,#fff));display:inline-block;font-family:var(--utrecht-badge-counter-font-family,var(--utrecht-badge-font-family,var(--utrecht-document-font-family,sans-serif)));font-size:var(--utrecht-badge-counter-font-size,var(--utrecht-badge-font-size));font-style:var(--utrecht-badge-counter-font-style,normal);font-weight:var(--utrecht-badge-counter-font-weight,var(--utrecht-badge-font-weight,bold));line-height:1;max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--utrecht-badge-counter-min-block-size,var(--utrecht-badge-counter-min-inline-size,var(--utrecht-badge-counter-min-size,1em)));min-inline-size:var(--utrecht-badge-counter-min-inline-size,var(--utrecht-badge-counter-min-size,1em));padding-block-end:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-block-start:var(--utrecht-badge-counter-padding-block,var(--utrecht-badge-padding-block,.5ex));padding-inline-end:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));padding-inline-start:var(--utrecht-badge-counter-padding-inline,var(--utrecht-badge-padding-inline,.5ch));text-align:center;text-decoration:none;white-space:nowrap}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-badge-counter{border:1px solid}}');
@@ -16808,8 +16810,8 @@
    });
    Ne.displayName = 'Code';
    d('.utrecht-code-block{--utrecht-code-color:var(--utrecht-code-block-color,inherit);--utrecht-code-background-color:var(--utrecht-code-block-background-color,inherit);--utrecht-code-font-weight:var(--utrecht-code-block-font-weight,inherit);--utrecht-code-font-size:var(--utrecht-code-block-font-size,inherit);--utrecht-code-font-family:var(--utrecht-code-block-font-family,monospace);background-color:var(--utrecht-code-background-color);background-color:var(--utrecht-code-block-background-color);color:var(--utrecht-code-color);display:block;font-family:var(--utrecht-code-font-family,monospace),monospace;font-size:var(--utrecht-code-font-size,inherit);font-size:var(--utrecht-code-block-font-size,var(--utrecht-code-font-size,inherit));font-variant-ligatures:none;line-height:var(--utrecht-code-line-height);line-height:var(--utrecht-code-block-line-height,var(--utrecht-code-line-height));margin-block-end:var(--utrecht-code-block-margin-block-end);margin-block-start:var(--utrecht-code-block-margin-block-start);margin-inline-end:var(--utrecht-code-block-margin-inline-end);margin-inline-start:var(--utrecht-code-block-margin-inline-start);padding-block-end:var(--utrecht-code-block-padding-block-end);padding-block-start:var(--utrecht-code-block-padding-block-start);padding-inline-end:var(--utrecht-code-block-padding-inline-end);padding-inline-start:var(--utrecht-code-block-padding-inline-start);white-space:pre}.utrecht-code-block__content{font-family:inherit;font-size:inherit}');
-   var Le = ['children', 'className'];
-   function ze(e, t) {
+   var ze = ['children', 'className'];
+   function Le(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -16825,26 +16827,26 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? ze(Object(r), !0).forEach(function (t) {
+      ? Le(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : ze(Object(r)).forEach(function (t) {
+        : Le(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
     return e;
    }
-   var Te = (0, c.forwardRef)(function (e, t) {
+   var Re = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, Le);
+     o = (0, a.Z)(e, ze);
     return (0, i.jsx)('pre', Ae(Ae({ ref: t, className: (0, l.Z)('utrecht-code-block', n) }, o), {}, { children: (0, i.jsx)('code', { className: 'utrecht-code-block__content', children: r }) }));
    });
-   Te.displayName = 'CodeBlock';
+   Re.displayName = 'CodeBlock';
    d('.utrecht-color-sample{background-color:var(--utrecht-color-sample-background-color,currentColor);block-size:var(--utrecht-color-sample-block-size,2em);border-color:var(--utrecht-color-sample-border-color,var(--utrecht-color-sample-default-border-color));border-radius:var(--utrecht-color-sample-border-radius,0);border-style:solid;border-width:var(--utrecht-color-sample-border-width,0);box-sizing:border-box;display:inline-block;inline-size:var(--utrecht-color-sample-inline-size,2em);-webkit-print-color-adjust:exact;print-color-adjust:exact}@media (forced-colors:active){.utrecht-color-sample{forced-color-adjust:none}}@media (forced-colors:active) and (prefers-color-scheme:dark){.utrecht-color-sample{--utrecht-color-sample-default-border-color:var(--utrecht-color-sample-dark-border-color,#000)}}@media (forced-colors:active) and (prefers-color-scheme:light){.utrecht-color-sample{--utrecht-color-sample-default-border-color:var(--utrecht-color-sample-light-border-color,#fff)}}');
-   var Re = ['children', 'className', 'color', 'style'];
+   var Te = ['children', 'className', 'color', 'style'];
    function Ie(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -16877,7 +16879,7 @@
      n = e.className,
      o = e.color,
      c = e.style,
-     u = (0, a.Z)(e, Re);
+     u = (0, a.Z)(e, Te);
     return (0, i.jsx)('data', Me(Me({ ref: t, className: (0, l.Z)('utrecht-color-sample', n), style: Me(Me({}, c), {}, { color: o }), value: o }, u), {}, { children: r }));
    });
    Ze.displayName = 'ColorSample';
@@ -17387,7 +17389,7 @@
     }
     return e;
    }
-   var Lt = (0, c.forwardRef)(function (e, t) {
+   var zt = (0, c.forwardRef)(function (e, t) {
     var r = e.className,
      n = e.children,
      o = e.description,
@@ -17398,9 +17400,9 @@
      h = (0, a.Z)(e, St);
     return (0, i.jsxs)('div', Nt(Nt({}, h), {}, { ref: t, className: (0, l.Z)('utrecht-form-field', { 'utrecht-form-field--invalid': u, 'utrecht-form-field--checkbox': 'checkbox' === d, 'utrecht-form-field--radio': 'radio' === d, 'utrecht-form-field--text': !d || 'text' === d }, r), children: [s && (0, i.jsx)('div', { className: 'utrecht-form-field__label', children: s }), c && (0, i.jsx)('div', { className: 'utrecht-form-field__input', children: c }), o && (0, i.jsx)('div', { className: 'utrecht-form-field__description', children: o }), n] }));
    });
-   Lt.displayName = 'FormField';
+   zt.displayName = 'FormField';
    d('.utrecht-form-field-description{--utrecht-document-color:currentColor;color:var(--utrecht-form-field-description-color);font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-form-field-description-font-size,inherit);font-style:var(--utrecht-form-field-description-font-style);line-height:var(--utrecht-form-field-description-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-description-margin-block-end, var(--utrecht-paragraph-margin-block-end, 0)));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-description-margin-block-start, var(--utrecht-paragraph-margin-block-start, 0)))}.utrecht-form-field-description--distanced,.utrecht-form-field-description>*{--utrecht-space-around:1}.utrecht-form-field-description--invalid{color:var(--utrecht-form-field-description-invalid-color,var(--utrecht-feedback-invalid-color,var(--utrecht-feedback-danger-color)))}.utrecht-form-field-description--valid{color:var(--utrecht-form-field-description-valid-color,var(--utrecht-feedback-valid-color,var(--utrecht-feedback-safe-color)))}.utrecht-form-field-description--warning{color:var(--utrecht-form-field-description-warning-color,var(--utrecht-feedback-warning-color))}');
-   var zt = ['invalid', 'valid', 'warning', 'className', 'children'];
+   var Lt = ['invalid', 'valid', 'warning', 'className', 'children'];
    function At(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -17413,7 +17415,7 @@
     }
     return r;
    }
-   function Tt(e) {
+   function Rt(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -17428,16 +17430,16 @@
     }
     return e;
    }
-   var Rt = (0, c.forwardRef)(function (e, t) {
+   var Tt = (0, c.forwardRef)(function (e, t) {
     var r = e.invalid,
      n = e.valid,
      o = e.warning,
      c = e.className,
      u = e.children,
-     s = (0, a.Z)(e, zt);
-    return (0, i.jsx)('div', Tt(Tt({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-field-description', r && 'utrecht-form-field-description--invalid', n && 'utrecht-form-field-description--valid', o && 'utrecht-form-field-description--warning', c), children: u }));
+     s = (0, a.Z)(e, Lt);
+    return (0, i.jsx)('div', Rt(Rt({}, s), {}, { ref: t, className: (0, l.Z)('utrecht-form-field-description', r && 'utrecht-form-field-description--invalid', n && 'utrecht-form-field-description--valid', o && 'utrecht-form-field-description--warning', c), children: u }));
    });
-   Rt.displayName = 'FormFieldDescription';
+   Tt.displayName = 'FormFieldDescription';
    d('.utrecht-form-field-error-message{--utrecht-document-color:currentColor;background-color:var(--utrecht-form-field-error-message-background-color);color:var(--utrecht-form-field-error-message-color);display:block;font-family:var(--utrecht-document-font-family,inherit);font-size:var(--utrecht-form-field-error-message-font-size,inherit);font-style:var(--utrecht-form-field-error-message-font-style);line-height:var(--utrecht-form-field-error-message-line-height);margin-block-end:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-error-message-margin-block-end, var(--utrecht-paragraph-margin-block-end, 0)));margin-block-start:calc(var(--utrecht-space-around, 0)*var(--utrecht-form-field-error-message-margin-block-start, var(--utrecht-paragraph-margin-block-start, 0)));padding-block-end:var(--utrecht-form-field-error-message-padding-block-end);padding-block-start:var(--utrecht-form-field-error-message-padding-block-start);padding-inline-end:var(--utrecht-form-field-error-message-padding-inline-end);padding-inline-start:var(--utrecht-form-field-error-message-padding-inline-start)}.utrecht-form-field-error-message>*{--utrecht-space-around:1}');
    var It = ['className', 'children'];
    function Mt(e, t) {
@@ -17610,17 +17612,17 @@
      S = e.onChange,
      D = e.onInput,
      N = e.onFocus,
-     L = e.onBlur,
-     z = e.defaultValue,
+     z = e.onBlur,
+     L = e.defaultValue,
      A = e.size,
-     T = e.children,
-     R = e.inputRef,
+     R = e.children,
+     T = e.inputRef,
      I = (0, a.Z)(e, Kt),
      M = (0, c.useId)(),
      Z = (0, c.useId)(),
      F = (0, c.useId)(),
      q = (0, c.useId)();
-    return (0, i.jsxs)(Lt, Yt(Yt({ invalid: n, ref: t }, I), {}, { children: [(0, i.jsx)('div', { className: 'utrecht-form-field__label', children: (0, i.jsx)(Gt, { htmlFor: M, children: s }) }), h && (0, i.jsx)(Rt, { className: 'utrecht-form-field__description', id: Z, children: h }), n && d && (0, i.jsx)(Ft, { className: 'utrecht-form-field__error-message', id: q, children: d }), (0, i.jsx)('div', { className: 'utrecht-form-field__input', children: (0, i.jsx)(Ht, { ref: R, id: M, name: r, type: E || 'text', autoComplete: m, 'aria-describedby': (0, l.Z)((0, o.Z)((0, o.Z)((0, o.Z)({}, Z, h), q, n), F, p)) || void 0, invalid: n, dir: O || 'auto', disabled: u, min: g, max: v, minLength: k, maxLength: y, pattern: _, placeholder: w, readOnly: b, required: j, inputRequired: C, value: P, onFocus: N, onBlur: L, onInput: D, onChange: S, defaultValue: z, list: f, size: A, step: x }) }), p && (0, i.jsx)('div', { className: 'utrecht-form-field__status', id: F, children: p }), T] }));
+    return (0, i.jsxs)(zt, Yt(Yt({ invalid: n, ref: t }, I), {}, { children: [(0, i.jsx)('div', { className: 'utrecht-form-field__label', children: (0, i.jsx)(Gt, { htmlFor: M, children: s }) }), h && (0, i.jsx)(Tt, { className: 'utrecht-form-field__description', id: Z, children: h }), n && d && (0, i.jsx)(Ft, { className: 'utrecht-form-field__error-message', id: q, children: d }), (0, i.jsx)('div', { className: 'utrecht-form-field__input', children: (0, i.jsx)(Ht, { ref: T, id: M, name: r, type: E || 'text', autoComplete: m, 'aria-describedby': (0, l.Z)((0, o.Z)((0, o.Z)((0, o.Z)({}, Z, h), q, n), F, p)) || void 0, invalid: n, dir: O || 'auto', disabled: u, min: g, max: v, minLength: k, maxLength: y, pattern: _, placeholder: w, readOnly: b, required: j, inputRequired: C, value: P, onFocus: N, onBlur: z, onInput: D, onChange: S, defaultValue: L, list: f, size: A, step: x }) }), p && (0, i.jsx)('div', { className: 'utrecht-form-field__status', id: F, children: p }), R] }));
    }).displayName = 'FormFieldTextbox';
    d('.utrecht-form-label{color:var(--utrecht-form-label-color);font-size:var(--utrecht-form-label-font-size);font-weight:var(--utrecht-form-label-font-weight)}.utrecht-form-label--checkbox{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-checkbox-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--checked{font-weight:var(--utrecht-form-label-checked-font-weight,var(--utrecht-form-label-font-weight))}.utrecht-form-label--disabled{color:var(--utrecht-form-label-disabled-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-disabled-cursor,revert)}.utrecht-form-label--radio{color:var(--utrecht-form-label-checkbox-color,var(--utrecht-form-label-color));cursor:var(--utrecht-action-activate-cursor,revert);font-weight:var(--utrecht-form-label-radio-font-weight,var(--utrecht-form-label-font-weight))}');
    d('.utrecht-form-toggle{align-items:center;block-size:var(--utrecht-form-toggle-height,2em);border-color:var(--utrecht-form-toggle-border-color,currentColor);border-radius:var(--utrecht-form-toggle-border-radius,999rem);border-style:var(--utrecht-form-toggle-border-style,solid);border-width:var(--utrecht-form-toggle-border-width,1px);color:var(--utrecht-form-toggle-color);cursor:var(--utrecht-action-activate-cursor,revert);display:flex;inline-size:var(--utrecht-form-toggle-width,6em);padding-block-end:var(--utrecht-form-toggle-padding-block-end);padding-block-start:var(--utrecht-form-toggle-padding-block-start);padding-inline-end:var(--utrecht-form-toggle-padding-inline-end);padding-inline-start:var(--utrecht-form-toggle-padding-inline-start);position:relative;-webkit-user-select:none;user-select:none}@media screen and (-ms-high-contrast:active),screen and (forced-colors:active){.utrecht-form-toggle{--utrecht-form-toggle-background-color:ButtonFace;--utrecht-form-toggle-border-color:buttonborder;--utrecht-form-toggle-border-width:1px;--utrecht-form-toggle-border-radius:var(--utrecht-form-toggle-track-border-radius);--utrecht-form-toggle-thumb-background-color:ButtonText;--utrecht-form-toggle-thumb-disabled-background-color:GrayText;border-color:var(--utrecht-form-toggle-track-disabled-border-color,var(--utrecht-form-toggle-track-border-color));border-width:min(var(--utrecht-form-toggle-border-width,1px),1px)}}.utrecht-form-toggle--focus-visible,.utrecht-form-toggle--html-div:focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--hover{background-color:var(--utrecht-form-toggle-hover-background-color,var(--utrecht-form-toggle-background-color));color:var(--utrecht-form-toggle-hover-color,var(--utrecht-form-toggle-color))}.utrecht-form-toggle--disabled,.utrecht-form-toggle--html-div:disabled{border-color:var(--utrecht-form-toggle-disabled-border-color,var(--utrecht-form-toggle-border-color,currentColor));border-style:var(--utrecht-form-toggle-disabled-border-style,var(--utrecht-form-toggle-border-style,solid));border-width:var(--utrecht-form-toggle-disabled-border-width,var(--utrecht-form-toggle-border-width,1px));cursor:var(--utrecht-action-disabled-cursor,not-allowed)}.utrecht-form-toggle__thumb{background-color:var(--utrecht-form-toggle-thumb-background-color,currentColor);border-radius:var(--utrecht-form-toggle-thumb-border-radius,50%);box-shadow:var(--utrecht-form-toggle-thumb-box-shadow);margin-inline-end:var(--utrecht-form-toggle-thumb-margin-inline-end,0);margin-inline-start:var(--utrecht-form-toggle-thumb-margin-inline-start,0);min-block-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);min-inline-size:var(--utrecht-form-toggle-thumb-min-inline-size,1.5em);z-index:20}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--checked{margin-inline-start:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:not(:checked)~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--not-checked{margin-inline-end:auto}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track .utrecht-form-toggle__thumb,.utrecht-form-toggle__thumb--disabled{background-color:var(--utrecht-form-toggle-thumb-disabled-background-color,#aaa);box-shadow:var(--utrecht-form-toggle-thumb-disabled-box-shadow,0)}.utrecht-form-toggle__track{align-items:center;background-color:var(--utrecht-form-toggle-accent-color);block-size:100%;border-radius:var(--utrecht-form-toggle-track-border-radius,var(--utrecht-form-toggle-border-radius));display:flex;inline-size:100%}.utrecht-form-toggle__track--html-label{cursor:inherit}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:checked~.utrecht-form-toggle__track,.utrecht-form-toggle__track--checked{background-color:var(--utrecht-form-toggle-checked-accent-color,var(--utrecht-form-toggle-accent-color))}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:disabled~.utrecht-form-toggle__track,.utrecht-form-toggle__track--disabled{background-color:var(--utrecht-form-toggle-background-disabled-background-color,#ddd);color:var(--utrecht-form-toggle-disabled-color,#000)}.utrecht-form-toggle__track--focus-visible{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox{clip:rect(1px,1px,1px,1px)!important;block-size:1px!important;border:0!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;inline-size:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important}.utrecht-form-toggle--html-checkbox .utrecht-form-toggle__checkbox:focus-visible~.utrecht-form-toggle__track{--_utrecht-focus-ring-box-shadow:0 0 0 var(--utrecht-focus-outline-width,0) var(--utrecht-focus-inverse-outline-color,transparent);box-shadow:var(--_utrecht-focus-ring-box-shadow);outline-color:var(--utrecht-focus-outline-color,revert);outline-offset:var(--utrecht-focus-outline-offset,revert);outline-style:var(--utrecht-focus-outline-style,revert);outline-width:var(--utrecht-focus-outline-width,revert)}');
@@ -17946,15 +17948,15 @@
     }
     return e;
    }
-   var Lr = (0, c.forwardRef)(function (e, t) {
+   var zr = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Sr);
     return (0, i.jsx)('hgroup', Nr(Nr({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-heading-group', n), children: r }));
    });
-   Lr.displayName = 'HeadingGroup';
+   zr.displayName = 'HeadingGroup';
    d('.utrecht-iban-data{font-variant-numeric:lining-nums slashed-zero tabular-nums;white-space:nowrap}');
-   var zr = ['children', 'value', 'className'];
+   var Lr = ['children', 'value', 'className'];
    function Ar(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -17967,7 +17969,7 @@
     }
     return r;
    }
-   function Tr(e) {
+   function Rr(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -17986,13 +17988,13 @@
     var r = e.children,
      n = e.value,
      o = e.className,
-     c = (0, a.Z)(e, zr),
+     c = (0, a.Z)(e, Lr),
      u = n.replace(/[\s+\W]+/g, '').toUpperCase(),
      s = u.replace(/(.{4})(?!$)/g, '$1 ');
-    return (0, i.jsx)('data', Tr(Tr({}, c), {}, { ref: t, value: u, className: (0, l.Z)('utrecht-iban-data', o), translate: 'no', children: r || s }));
+    return (0, i.jsx)('data', Rr(Rr({}, c), {}, { ref: t, value: u, className: (0, l.Z)('utrecht-iban-data', o), translate: 'no', children: r || s }));
    }).displayName = 'IBANData';
    d('.utrecht-icon{block-size:var(--utrecht-icon-size);color:var(--utrecht-icon-color);display:inline-block;font-size:var(--utrecht-icon-size);inline-size:var(--utrecht-icon-size);inset-block-start:var(--utrecht-icon-inset-block-start,0);position:relative}.utrecht-icon svg{height:100%;pointer-events:none;width:100%}');
-   var Rr = ['children', 'className'];
+   var Tr = ['children', 'className'];
    function Ir(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -18023,7 +18025,7 @@
    var Zr = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, Rr);
+     o = (0, a.Z)(e, Tr);
     return (0, i.jsx)('span', Mr(Mr({ 'aria-hidden': 'true', ref: t, className: (0, l.Z)('utrecht-icon', n) }, o), {}, { children: r }));
    });
    Zr.displayName = 'Icon';
@@ -18570,7 +18572,7 @@
    });
    Dn.displayName = 'OrderedList';
    var Nn = ['children', 'className'];
-   function Ln(e, t) {
+   function zn(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -18582,16 +18584,16 @@
     }
     return r;
    }
-   function zn(e) {
+   function Ln(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Ln(Object(r), !0).forEach(function (t) {
+      ? zn(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Ln(Object(r)).forEach(function (t) {
+        : zn(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -18601,12 +18603,12 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Nn);
-    return (0, i.jsx)('li', zn(zn({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-ordered-list__item', n), children: r }));
+    return (0, i.jsx)('li', Ln(Ln({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-ordered-list__item', n), children: r }));
    });
    An.displayName = 'OrderedListItem';
    d('.utrecht-page{margin-inline-end:auto;margin-inline-start:auto;max-inline-size:calc(var(--utrecht-page-max-inline-size) - var(--utrecht-page-margin-inline-start, 0px) - var(--utrecht-page-margin-inline-end, 0px));padding-inline-end:var(--utrecht-page-margin-inline-end);padding-inline-start:var(--utrecht-page-margin-inline-start)}.utrecht-page__content{background-color:var(--utrecht-page-background-color);color:var(--utrecht-page-color);max-inline-size:var(--utrecht-page-max-inline-size)}');
-   var Tn = ['children', 'className'];
-   function Rn(e, t) {
+   var Rn = ['children', 'className'];
+   function Tn(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var n = Object.getOwnPropertySymbols(e);
@@ -18622,12 +18624,12 @@
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? Rn(Object(r), !0).forEach(function (t) {
+      ? Tn(Object(r), !0).forEach(function (t) {
          (0, o.Z)(e, t, r[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-        : Rn(Object(r)).forEach(function (t) {
+        : Tn(Object(r)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t));
           });
     }
@@ -18636,7 +18638,7 @@
    (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, Tn);
+     o = (0, a.Z)(e, Rn);
     return (0, i.jsx)('div', In(In({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-page', n), children: r }));
    }).displayName = 'Page';
    d('.utrecht-page-content{padding-block-end:var(--utrecht-page-content-padding-block-end);padding-block-start:var(--utrecht-page-content-padding-block-start);padding-inline-end:var(--utrecht-page-padding-inline-end);padding-inline-start:var(--utrecht-page-padding-inline-start)}.utrecht-page-content__main{grid-area:main}.utrecht-page-content__aside{grid-area:aside}');
@@ -19179,7 +19181,7 @@
     }
     return r;
    }
-   function Lo(e) {
+   function zo(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -19198,10 +19200,10 @@
     var r = e.children,
      n = e.className,
      o = (0, a.Z)(e, Do);
-    return (0, i.jsx)('strong', Lo(Lo({ ref: t, className: (0, l.Z)('utrecht-emphasis', 'utrecht-emphasis--strong', n) }, o), {}, { children: r }));
+    return (0, i.jsx)('strong', zo(zo({ ref: t, className: (0, l.Z)('utrecht-emphasis', 'utrecht-emphasis--strong', n) }, o), {}, { children: r }));
    }).displayName = 'Strong';
    d('.utrecht-surface{background-color:var(--utrecht-surface-background-color,inherit);color:var(--utrecht-surface-color,inherit)}.utrecht-surface--html-body{margin-block-end:0;margin-block-start:0;margin-inline-end:0;margin-inline-start:0}');
-   var zo = ['children', 'className'];
+   var Lo = ['children', 'className'];
    function Ao(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -19214,7 +19216,7 @@
     }
     return r;
    }
-   function To(e) {
+   function Ro(e) {
     for (var t = 1; t < arguments.length; t++) {
      var r = null != arguments[t] ? arguments[t] : {};
      t % 2
@@ -19229,13 +19231,13 @@
     }
     return e;
    }
-   var Ro = (0, c.forwardRef)(function (e, t) {
+   var To = (0, c.forwardRef)(function (e, t) {
     var r = e.children,
      n = e.className,
-     o = (0, a.Z)(e, zo);
-    return (0, i.jsx)('div', To(To({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-surface', n), children: r }));
+     o = (0, a.Z)(e, Lo);
+    return (0, i.jsx)('div', Ro(Ro({}, o), {}, { ref: t, className: (0, l.Z)('utrecht-surface', n), children: r }));
    });
-   Ro.displayName = 'Surface';
+   To.displayName = 'Surface';
    var Io = ['overflowInline', 'children', 'className'];
    function Mo(e, t) {
     var r = Object.keys(e);
@@ -19952,14 +19954,14 @@
               } else if (!(C = a(x, 0, j, g))) continue;
               E = C.index;
               var N = C[0],
-               L = j.slice(0, E),
-               z = j.slice(E + N.length),
+               z = j.slice(0, E),
+               L = j.slice(E + N.length),
                A = _ + j.length;
               d && A > d.reach && (d.reach = A);
-              var T = w.prev;
-              if ((L && ((T = l(t, T, L)), (_ += L.length)), u(t, T, O), (w = l(t, T, new o(h, f ? n.tokenize(N, f) : N, k, N))), z && l(t, w, z), O > 1)) {
-               var R = { cause: h + ',' + p, reach: A };
-               c(e, t, r, w.prev, _, R), d && R.reach > d.reach && (d.reach = R.reach);
+              var R = w.prev;
+              if ((z && ((R = l(t, R, z)), (_ += z.length)), u(t, R, O), (w = l(t, R, new o(h, f ? n.tokenize(N, f) : N, k, N))), L && l(t, w, L), O > 1)) {
+               var T = { cause: h + ',' + p, reach: A };
+               c(e, t, r, w.prev, _, T), d && T.reach > d.reach && (d.reach = T.reach);
               }
              }
             }
@@ -20775,7 +20777,7 @@
     (x.languages.py = x.languages.python);
    ((e, t) => {
     for (var r in t) l(e, r, { get: t[r], enumerable: !0 });
-   })({}, { dracula: () => w, duotoneDark: () => _, duotoneLight: () => j, github: () => C, jettwaveDark: () => M, jettwaveLight: () => Z, nightOwl: () => O, nightOwlLight: () => E, oceanicNext: () => D, okaidia: () => N, oneDark: () => F, oneLight: () => q, palenight: () => L, shadesOfPurple: () => z, synthwave84: () => A, ultramin: () => T, vsDark: () => R, vsLight: () => I });
+   })({}, { dracula: () => w, duotoneDark: () => _, duotoneLight: () => j, github: () => C, jettwaveDark: () => M, jettwaveLight: () => Z, nightOwl: () => O, nightOwlLight: () => E, oceanicNext: () => D, okaidia: () => N, oneDark: () => F, oneLight: () => q, palenight: () => z, shadesOfPurple: () => L, synthwave84: () => A, ultramin: () => R, vsDark: () => T, vsLight: () => I });
    var w = {
      plain: { color: '#F8F8F2', backgroundColor: '#282A36' },
      styles: [
@@ -20923,7 +20925,7 @@
       { types: ['rule'], style: { color: '#e6db74' } },
      ],
     },
-    L = {
+    z = {
      plain: { color: '#bfc7d5', backgroundColor: '#292d3e' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(105, 112, 152)', fontStyle: 'italic' } },
@@ -20942,7 +20944,7 @@
       { types: ['url'], style: { color: 'rgb(221, 221, 221)' } },
      ],
     },
-    z = {
+    L = {
      plain: { color: '#9EFEFF', backgroundColor: '#2D2A55' },
      styles: [
       { types: ['changed'], style: { color: 'rgb(255, 238, 128)' } },
@@ -20981,7 +20983,7 @@
       { types: ['inserted'], style: { color: 'green' } },
      ],
     },
-    T = {
+    R = {
      plain: { color: '#282a2e', backgroundColor: '#ffffff' },
      styles: [
       { types: ['comment'], style: { color: 'rgb(197, 200, 198)' } },
@@ -20989,7 +20991,7 @@
       { types: ['class-name', 'function', 'tag', 'attr-name'], style: { color: 'rgb(40, 42, 46)' } },
      ],
     },
-    R = {
+    T = {
      plain: { color: '#9CDCFE', backgroundColor: '#1E1E1E' },
      styles: [
       { types: ['prolog'], style: { color: 'rgb(0, 0, 128)' } },
@@ -21203,7 +21205,7 @@
       })({ prism: o, language: i, code: r, grammar: o.languages[i] });
      return e({ tokens: d, className: `prism-code language-${i}`, style: null != l ? l.root : {}, getLineProps: u, getTokenProps: s });
     },
-    G = (e) => (0, a.createElement)(W, k(v({}, e), { prism: e.prism || x, theme: e.theme || R, code: e.code, language: e.language }));
+    G = (e) => (0, a.createElement)(W, k(v({}, e), { prism: e.prism || x, theme: e.theme || T, code: e.code, language: e.language }));
   },
   38624: (e, t, r) => {
    'use strict';
@@ -21221,11 +21223,11 @@
   },
   57529: (e) => {
    'use strict';
-   e.exports = JSON.parse('{"theme.AnnouncementBar.closeButtonAriaLabel":"Sluiten","theme.BackToTopButton.buttonAriaLabel":"Scroll naar boven","theme.CodeBlock.copied":"Gekopieerd","theme.CodeBlock.copy":"Kopieer","theme.CodeBlock.copyButtonAriaLabel":"Kopieer code naar klembord","theme.CodeBlock.wordWrapToggle":"Tekstterugloop in-/uitschakelen","theme.DocSidebarItem.collapseCategoryAriaLabel":"Collapse sidebar category \'{label}\'","theme.DocSidebarItem.expandCategoryAriaLabel":"Expand sidebar category \'{label}\'","theme.ErrorPageContent.title":"Deze pagina is gecrasht.","theme.ErrorPageContent.tryAgain":"Probeer opnieuw","theme.NavBar.navAriaLabel":"Main","theme.NotFound.p1":"We kunnen niet vinden waar je naar op zoek bent.","theme.NotFound.p2":"Neem contact op met de eigenaar van de website die naar de originele URL heeft geleid en laat weten dat de link niet meer werkt.","theme.NotFound.title":"Pagina niet gevonden","theme.TOCCollapsible.toggleButtonLabel":"Op deze pagina","theme.admonition.caution":"pas op","theme.admonition.danger":"gevaar","theme.admonition.info":"info","theme.admonition.note":"notitie","theme.admonition.tip":"tip","theme.admonition.warning":"warning","theme.blog.archive.description":"Archief","theme.blog.archive.title":"Archief","theme.blog.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.paginator.newerEntries":"Nieuwere items","theme.blog.paginator.olderEntries":"Oudere items","theme.blog.post.paginator.navAriaLabel":"Paginanavigatie blog","theme.blog.post.paginator.newerPost":"Nieuwer bericht","theme.blog.post.paginator.olderPost":"Ouder bericht","theme.blog.post.plurals":"Een bericht|{count} berichten","theme.blog.post.readMore":"Lees meer","theme.blog.post.readMoreLabel":"Lees meer over {title}","theme.blog.post.readingTime.plurals":"Een minuut leestijd|{readingTime} minuten leestijd","theme.blog.sidebar.navAriaLabel":"Navigatie recente blogitems","theme.blog.tagTitle":"{nPosts} getagd met \\"{tagName}\\"","theme.colorToggle.ariaLabel":"Schakel tussen donkere en lichte modus (momenteel {mode})","theme.colorToggle.ariaLabel.mode.dark":"donkere modus","theme.colorToggle.ariaLabel.mode.light":"lichte modus","theme.common.editThisPage":"Bewerk deze pagina","theme.common.headingLinkTitle":"Direct link naar {heading}","theme.common.skipToMainContent":"Ga naar hoofdinhoud","theme.docs.DocCard.categoryDescription":"{count} artikelen","theme.docs.breadcrumbs.home":"Homepagina","theme.docs.breadcrumbs.navAriaLabel":"Broodkruimels","theme.docs.paginator.navAriaLabel":"Documentatie pagina","theme.docs.paginator.next":"Volgende","theme.docs.paginator.previous":"Vorige","theme.docs.sidebar.closeSidebarButtonAriaLabel":"Close navigation bar","theme.docs.sidebar.collapseButtonAriaLabel":"Zijbalk inklappen","theme.docs.sidebar.collapseButtonTitle":"Zijbalk inklappen","theme.docs.sidebar.expandButtonAriaLabel":"Zijbalk uitklappen","theme.docs.sidebar.expandButtonTitle":"Zijbalk uitklappen","theme.docs.sidebar.navAriaLabel":"Docs sidebar","theme.docs.sidebar.toggleSidebarButtonAriaLabel":"Toggle navigation bar","theme.docs.tagDocListPageTitle":"{nDocsTagged} met \\"{tagName}\\"","theme.docs.tagDocListPageTitle.nDocsTagged":"Een artikel getagd|{count} artikelen getagd","theme.docs.versionBadge.label":"Versie: {versionLabel}","theme.docs.versions.latestVersionLinkLabel":"laatste versie","theme.docs.versions.latestVersionSuggestionLabel":"Voor de huidige documentatie, zie de {latestVersionLink} ({versionLabel}).","theme.docs.versions.unmaintainedVersionLabel":"Dit is de documentatie voor {siteTitle} {versionLabel}, welke niet langer actief wordt onderhouden.","theme.docs.versions.unreleasedVersionLabel":"Dit is nog niet uitgegeven documentatie voor {siteTitle}, versie {versionLabel}","theme.lastUpdated.atDate":" op {date}","theme.lastUpdated.byUser":" door {user}","theme.lastUpdated.lastUpdatedAtBy":"Laatst bijgewerkt{atDate}{byUser}","theme.navbar.mobileLanguageDropdown.label":"Talen","theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel":"\u2190 Terug naar het hoofdmenu","theme.navbar.mobileVersionsDropdown.label":"Versies","theme.tags.tagsListLabel":"Tags:","theme.tags.tagsPageLink":"Laat alle tags zien","theme.tags.tagsPageTitle":"Tags","theme.unlistedContent.message":"This page is unlisted. Search engines will not index it, and only users having a direct link can access it.","theme.unlistedContent.title":"Unlisted page","theme.SearchBar.label":"Zoeken","theme.SearchBar.seeAll":"Laat alle {count} resultaten zien","theme.SearchModal.errorScreen.helpText":"Misschien wilt u uw netwerkverbinding controleren.","theme.SearchModal.errorScreen.titleText":"Niet in staat resultaten op te halen","theme.SearchModal.footer.closeKeyAriaLabel":"Escape-toets","theme.SearchModal.footer.closeText":"om te sluiten","theme.SearchModal.footer.navigateDownKeyAriaLabel":"Pijltoets naar beneden","theme.SearchModal.footer.navigateText":"om te navigeren","theme.SearchModal.footer.navigateUpKeyAriaLabel":"Pijltoets naar boven","theme.SearchModal.footer.searchByText":"Zoek op","theme.SearchModal.footer.selectKeyAriaLabel":"Enter-toets","theme.SearchModal.footer.selectText":"om te selecteren","theme.SearchModal.noResultsScreen.noResultsText":"Geen resultaten voor","theme.SearchModal.noResultsScreen.reportMissingResultsLinkText":"Laat het ons weten.","theme.SearchModal.noResultsScreen.reportMissingResultsText":"Zou deze zoekopdracht resultaten moeten opleveren?","theme.SearchModal.noResultsScreen.suggestedQueryText":"Probeer om te zoeken op","theme.SearchModal.placeholder":"Doorzoek de documentatie","theme.SearchModal.searchBox.cancelButtonText":"Annuleren","theme.SearchModal.searchBox.resetButtonTitle":"Maak de zoekopdracht leeg","theme.SearchModal.startScreen.favoriteSearchesTitle":"Favoriet","theme.SearchModal.startScreen.noRecentSearchesText":"Geen recente zoekopdrachten","theme.SearchModal.startScreen.recentSearchesTitle":"Recente zoekopdrachten","theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn favorieten","theme.SearchModal.startScreen.removeRecentSearchButtonTitle":"Verwijder deze zoekopdracht uit mijn geschiedenis","theme.SearchModal.startScreen.saveRecentSearchButtonTitle":"Sla deze zoekopdracht op","theme.SearchPage.algoliaLabel":"Zoeken door Algolia","theme.SearchPage.documentsFound.plurals":"Een document gevonden|{count} documenten gevonden","theme.SearchPage.emptyResultsTitle":"Doorzoek de documentatie","theme.SearchPage.existingResultsTitle":"Zoekresultaten voor \\"{query}\\"","theme.SearchPage.fetchingNewResults":"Resultaten ophalen...","theme.SearchPage.inputLabel":"Zoeken","theme.SearchPage.inputPlaceholder":"Typ hier uw zoekopdracht","theme.SearchPage.noResultsText":"Geen resultaten gevonden"}');
+   e.exports = {};
   },
   16887: (e) => {
    'use strict';
-   e.exports = JSON.parse('{"/bingo/-32d":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-1-382":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/bingo/voorbeeld-met-fouten-2-73d":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/blog-e28":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"b2b675dd"},"/blog/archive-f70":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"b2f554cd"},"/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-9ba":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/blog/community-blocks-20f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/blog/community-online-formulieren-2d3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/blog/de-mijlpalen-van-2022-802":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/blog/design-open-dag-18d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/blog/design-systems-in-het-buitenland-6-lessen-b57":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/blog/design-systems-week-2023-komt-eraan-a8c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-b32":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/blog/een-design-system-meerdere-producten-522":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"c9609a68"},"/blog/een-overheid-practice-what-you-preach-aa1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/blog/gebruikerstest-ondernemers-den-haag-654":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-932":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/blog/innovatiebudget-voor-nl-design-system-07b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-25a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/blog/kick-off-werkgroepen-van-het-nl-design-system-222":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/blog/licentiekeuze-nl-design-system-36b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/blog/meerdere-manieren-contact-4ed":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-bd7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/blog/nl-design-system-in-2021-b94":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/blog/nl-design-system-zelfstandig-verder-916":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/blog/over-figma-als-keuze-voor-het-nl-design-system-b7d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/blog/spacing-tokens-178":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/blog/tags-f94":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"a7023ddc"},"/blog/tags/architectuur-219":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"5b53ebf6","listMetadata":"64b13969"},"/blog/tags/buitenland-40f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"8b6c8a8c","listMetadata":"6c57e36f"},"/blog/tags/componenten-1db":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"81536b8a","listMetadata":"f9097464"},"/blog/tags/contentrichtlijnen-784":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"2f04c335","listMetadata":"7b7af99a"},"/blog/tags/design-systems-075":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"03606068","listMetadata":"61890307"},"/blog/tags/design-systems-week-e88":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"94b5e6fd","listMetadata":"a5d65f05"},"/blog/tags/design-tokens-015":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"016d3eb4","listMetadata":"a5657520"},"/blog/tags/designers-c39":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"c9c3106d","listMetadata":"6d8df171"},"/blog/tags/developers-c7b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"5a463406","listMetadata":"5919194a"},"/blog/tags/een-overheid-3b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"45f9a259","listMetadata":"18f72304"},"/blog/tags/estafettemodel-f65":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"d35b0244","listMetadata":"533b6d18"},"/blog/tags/figma-7e0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"839d3c4e","listMetadata":"e8c696cf"},"/blog/tags/formulieren-891":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"32660e7c","listMetadata":"b519f87e"},"/blog/tags/gebruiker-centraal-e1e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"36aae756","listMetadata":"dd7e6517"},"/blog/tags/gebruikersonderzoeken-8d7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"0a2d80a0","listMetadata":"8762f664"},"/blog/tags/gebruikerstesten-5ff":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"5ffa4053","listMetadata":"a65373b3"},"/blog/tags/lettertype-e97":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"bb678bf7","listMetadata":"044d2994"},"/blog/tags/logius-ef0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"17c216dc","listMetadata":"a89706a3"},"/blog/tags/meta-c3b":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"d19a514d","listMetadata":"b0ef882f"},"/blog/tags/mijlpalen-6cd":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"292daa85","listMetadata":"9a9a4fab"},"/blog/tags/nl-design-system-d2e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"2efe344a","listMetadata":"2669888f"},"/blog/tags/richtlijnen-ea4":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"f20a3699","listMetadata":"d01ba261"},"/blog/tags/toegankelijkheid-5d0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"60213d5c","listMetadata":"9bf7fd7b"},"/blog/tags/update-e38":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"2ed736ae","listMetadata":"a8a015ed"},"/blog/tags/werkgroepen-7fb":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"73d20161","listMetadata":"2d685956"},"/blog/tags/word-press-c96":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"6b8ad28a","listMetadata":"abcc39c5"},"/blog/toegankelijke-foutmeldingen-formulieren-dc6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-ac9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e3f":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/blog/update-nl-design-system-d7c":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-925":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-3b9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/blog/wmebv-gebruikerstesten-2ec":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/contrast/-6e5":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/search-c7a":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/-cab":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/-308":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/-a92":{"__comp":"a7bd4aaa","version":"935f2afb"},"/tags-d7a":{"__comp":"3720c009","tags":"55960ee5"},"/tags/community-e15":{"__comp":"df203c0f","tag":"d5484ed9"},"/-6fd":{"__comp":"a94703ab"},"/accordion-a3b":{"__comp":"17896441","content":"a77e5ea3"},"/action-group-e09":{"__comp":"17896441","content":"381b9e37"},"/alert-16f":{"__comp":"17896441","content":"3d7707fa"},"/alert-dialog-9e5":{"__comp":"17896441","content":"7290f823"},"/avatar-ed9":{"__comp":"17896441","content":"d3c1b80a"},"/blockquote-85f":{"__comp":"17896441","content":"7b6dc98e"},"/breadcrumb-navigation-d89":{"__comp":"17896441","content":"a81e9677"},"/button-7ed":{"__comp":"17896441","content":"5110c353"},"/Calendar-206":{"__comp":"17896441","content":"ace6628c"},"/card-as-link-c7b":{"__comp":"17896441","content":"9186edf4"},"/case-card-92c":{"__comp":"17896441","content":"fbf7ea66"},"/CHANGELOG-756":{"__comp":"17896441","content":"ca36df4d"},"/checkbox-8c2":{"__comp":"17896441","content":"1c0b529b"},"/checkbox-group-a25":{"__comp":"17896441","content":"91c9e2b1"},"/coc-1af":{"__comp":"17896441","content":"1e45e22d"},"/colofon-ed3":{"__comp":"17896441","content":"6076374a"},"/community-42f":{"__comp":"14eb3368","categoryGeneratedIndex":"031b9593"},"/community/design-open-dag/bedankt-d56":{"__comp":"17896441","content":"c15f67bc"},"/community/estafettemodeldag/bedankt-f60":{"__comp":"17896441","content":"bf8a7bac"},"/community/events/estafettemodeldag-5f2":{"__comp":"17896441","content":"5293bf37"},"/community/events/overzicht-acd":{"__comp":"14eb3368","categoryGeneratedIndex":"72c446ac"},"/community/sluit-je-aan-00a":{"__comp":"17896441","content":"ad9d479a"},"/community/sluit-je-aan/bedankt-c5c":{"__comp":"17896441","content":"adb328b9"},"/community/wie-doet-mee-d5c":{"__comp":"17896441","content":"b56159c8"},"/componenten/-804":{"__comp":"17896441","content":"9f867b5d"},"/data-badge-f88":{"__comp":"17896441","content":"2e11687d"},"/date-input-a49":{"__comp":"17896441","content":"48c36009"},"/date-input-group-428":{"__comp":"17896441","content":"3d58a721"},"/date-picker-f04":{"__comp":"17896441","content":"4d3e1a9b"},"/description-list-13a":{"__comp":"17896441","content":"861e17e8"},"/dot-badge-f25":{"__comp":"17896441","content":"0cf410ab"},"/drawer-f81":{"__comp":"17896441","content":"5e41da51"},"/events/design-open-dag-c4d":{"__comp":"17896441","content":"ced44f18"},"/events/design-open-hour-08f":{"__comp":"17896441","content":"0eacf79f"},"/events/design-open-hour/aanmelden-a61":{"__comp":"17896441","content":"adc7d54a"},"/events/design-open-hour/aanmelden/bedankt-796":{"__comp":"17896441","content":"1bc7f6c3"},"/events/design-open-hour/overzicht-0f1":{"__comp":"14eb3368","categoryGeneratedIndex":"84a56bc3"},"/events/design-systems-week-2022-528":{"__comp":"17896441","content":"cd7f02d4"},"/events/design-systems-week-2023-50d":{"__comp":"17896441","content":"845a118e"},"/events/design-systems-week-2023/en/program-dc2":{"__comp":"17896441","content":"60ab2a10"},"/events/design-systems-week-2023/en/timetable-818":{"__comp":"17896441","content":"eae49527"},"/events/design-systems-week-2023/programma-b22":{"__comp":"17896441","content":"bf203e4a"},"/events/design-systems-week-2023/tijdschema-4c1":{"__comp":"17896441","content":"b0bf1aa3"},"/events/design-systems-week-2024-fa3":{"__comp":"17896441","content":"3272fc23"},"/events/design-systems-week-2024/en-423":{"__comp":"17896441","content":"7074c05a"},"/events/design-systems-week-2024/en/program-eac":{"__comp":"17896441","content":"6bcc2158"},"/events/design-systems-week-2024/programma-213":{"__comp":"17896441","content":"8bb98256"},"/events/design-systems-week/aanmelden-af5":{"__comp":"17896441","content":"ba69917b"},"/events/design-systems-week/aanmelden/bedankt-5be":{"__comp":"17896441","content":"b86d5603"},"/events/design-systems-week/sign-up-5a4":{"__comp":"17896441","content":"560af811"},"/events/design-systems-week/sign-up/thanks-d35":{"__comp":"17896441","content":"5647b938"},"/events/developer-open-hour-572":{"__comp":"17896441","content":"ba4a9952"},"/events/developer-open-hour/aanmelden-1f4":{"__comp":"17896441","content":"c91a40d5"},"/events/developer-open-hour/aanmelden/bedankt-fb6":{"__comp":"17896441","content":"f19e5f41"},"/events/developer-open-hour/overzicht-6d5":{"__comp":"14eb3368","categoryGeneratedIndex":"48a6b01c"},"/events/heartbeat-ee2":{"__comp":"17896441","content":"235c86a2"},"/events/heartbeat/aanmelden-ef9":{"__comp":"17896441","content":"323b7945"},"/events/heartbeat/aanmelden/bedankt-e99":{"__comp":"17896441","content":"73bf6027"},"/events/heartbeat/overzicht-f94":{"__comp":"14eb3368","categoryGeneratedIndex":"bf13cd03"},"/events/heartbeat/videos-a37":{"__comp":"17896441","content":"125932a1"},"/fieldset-a0d":{"__comp":"17896441","content":"5a50c8e4"},"/figure-47b":{"__comp":"17896441","content":"32470cbe"},"/file-input-e63":{"__comp":"17896441","content":"8aa0ba1c"},"/form-field-de8":{"__comp":"17896441","content":"6a94b0c3"},"/form-field-checkbox-option-53c":{"__comp":"17896441","content":"2fd1f4fe"},"/form-field-description-1bd":{"__comp":"17896441","content":"cd3c7377"},"/form-field-error-message-e1c":{"__comp":"17896441","content":"d4552b9e"},"/form-field-label-31e":{"__comp":"17896441","content":"ddf35722"},"/form-field-option-label-598":{"__comp":"17896441","content":"a9493cdf"},"/form-field-partial-48c":{"__comp":"17896441","content":"6f323067"},"/form-field-partial-label-0e8":{"__comp":"17896441","content":"6ab13dac"},"/form-field-radio-option-6ca":{"__comp":"17896441","content":"52bdf594"},"/handboek-198":{"__comp":"14eb3368","categoryGeneratedIndex":"c45f29d0"},"/handboek/component-bijdragen/candidate-stappenplan-0ad":{"__comp":"17896441","content":"564db768"},"/handboek/component-bijdragen/community-stappenplan-83c":{"__comp":"17896441","content":"98a78e5e"},"/handboek/component-bijdragen/community-stappenplan-voor-organisaties-4a6":{"__comp":"17896441","content":"f61609af"},"/handboek/component-bijdragen/definition-of-done-690":{"__comp":"17896441","content":"124d4001"},"/handboek/component-bijdragen/hall-of-fame-stappenplan-319":{"__comp":"17896441","content":"28d3d582"},"/handboek/component-bijdragen/help-wanted-stappenplan-7eb":{"__comp":"17896441","content":"aeaf35c2"},"/handboek/component-bijdragen/overzicht-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"1b7e5f7c"},"/handboek/design-tokens/-ba2":{"__comp":"17896441","content":"6db74d90"},"/handboek/designer/-d2b":{"__comp":"17896441","content":"b8bffd88"},"/handboek/designer/community-3a0":{"__comp":"17896441","content":"1b445115"},"/handboek/designer/figma-structuur-b8d":{"__comp":"17896441","content":"19f8dbc7"},"/handboek/designer/overzicht-8b5":{"__comp":"14eb3368","categoryGeneratedIndex":"389658a5"},"/handboek/designer/stappenplan-b2e":{"__comp":"17896441","content":"2289dd67"},"/handboek/designer/voorbeeld-thema-531":{"__comp":"17896441","content":"77321757"},"/handboek/designer/zelf-componenten-maken-2ce":{"__comp":"17896441","content":"dfb098ef"},"/handboek/developer/aan-de-slag-45e":{"__comp":"17896441","content":"93a8441b"},"/handboek/developer/architectuur-270":{"__comp":"17896441","content":"9c1b7be2"},"/handboek/developer/component-inzetten-b57":{"__comp":"17896441","content":"dcd65422"},"/handboek/developer/component-uitbreiden-3d3":{"__comp":"17896441","content":"9b2e9553"},"/handboek/developer/componenten-maken-13b":{"__comp":"17896441","content":"e3b51539"},"/handboek/developer/herbruikbare-css-233":{"__comp":"17896441","content":"555de4b4"},"/handboek/developer/meewerken-als-developer-b38":{"__comp":"17896441","content":"bc2d69ea"},"/handboek/developer/overzicht-59c":{"__comp":"14eb3368","categoryGeneratedIndex":"af16d7d3"},"/handboek/developer/samenwerken-aan-componenten-5a3":{"__comp":"17896441","content":"e756447e"},"/handboek/developer/thema-maken-e85":{"__comp":"17896441","content":"751bfb55"},"/handboek/estafettemodel-1f8":{"__comp":"17896441","content":"43a0fbb9"},"/handboek/introductie-f9a":{"__comp":"17896441","content":"411e6d0c"},"/handboek/leverancier/introductie-4a5":{"__comp":"17896441","content":"20f2808f"},"/handboek/manager/introductie-d4c":{"__comp":"17896441","content":"26a7a4d1"},"/handboek/naamgeving-7ee":{"__comp":"17896441","content":"c8ac2561"},"/handboek/organisatie/meedoen-daa":{"__comp":"17896441","content":"ce7b85cb"},"/handboek/organisatie/overzicht-6be":{"__comp":"14eb3368","categoryGeneratedIndex":"facf449e"},"/handboek/organisatie/vragen-over-aanbestedingen-d3e":{"__comp":"17896441","content":"ac66737c"},"/heading-805":{"__comp":"17896441","content":"6fd5f6ab"},"/heading-1-da6":{"__comp":"17896441","content":"150707f3"},"/heading-2-aa5":{"__comp":"17896441","content":"16fd2d30"},"/heading-3-d27":{"__comp":"17896441","content":"8f6d3c26"},"/heading-4-238":{"__comp":"17896441","content":"c776d6ea"},"/heading-5-628":{"__comp":"17896441","content":"9ec6ce4c"},"/heading-6-314":{"__comp":"17896441","content":"91059c25"},"/heading-group-44c":{"__comp":"17896441","content":"da2da55d"},"/icon-86d":{"__comp":"17896441","content":"8baef6f7"},"/invalid-form-alert-ae2":{"__comp":"17896441","content":"b2991567"},"/language-navigation-50a":{"__comp":"17896441","content":"c51cb369"},"/legend-726":{"__comp":"17896441","content":"09d51e35"},"/link-028":{"__comp":"17896441","content":"25b93367"},"/link-list-574":{"__comp":"17896441","content":"f633a06a"},"/modal-dialog-03c":{"__comp":"17896441","content":"b75db01c"},"/navigation-bar-219":{"__comp":"17896441","content":"da8aeb86"},"/non-modal-dialog-9e9":{"__comp":"17896441","content":"c6b96a0f"},"/notification-banner-087":{"__comp":"17896441","content":"e21395b4"},"/number-badge-1ee":{"__comp":"17896441","content":"8ea6c2d1"},"/number-input-0d1":{"__comp":"17896441","content":"ffcf9766"},"/open-source/cc0-80b":{"__comp":"17896441","content":"72b0d195"},"/open-source/eupl-097":{"__comp":"17896441","content":"67d19623"},"/ordered-list-4ec":{"__comp":"17896441","content":"2c881fe2"},"/page-footer-821":{"__comp":"17896441","content":"3d377413"},"/page-header-697":{"__comp":"17896441","content":"3464a859"},"/pagination-aa9":{"__comp":"17896441","content":"3679878e"},"/paragraph-e83":{"__comp":"17896441","content":"68b96050"},"/password-input-93c":{"__comp":"17896441","content":"9228e550"},"/pre-heading-87e":{"__comp":"17896441","content":"3f3eb7e2"},"/privacyverklaring-e5f":{"__comp":"17896441","content":"2383fbae"},"/progress-bar-db6":{"__comp":"17896441","content":"b4f4fb7e"},"/progress-list-5da":{"__comp":"17896441","content":"fbfd5b4f"},"/project-fa6":{"__comp":"14eb3368","categoryGeneratedIndex":"de9ea4b2"},"/project/blijf-op-de-hoogte-c41":{"__comp":"17896441","content":"281e6f8e"},"/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-645":{"__comp":"17896441","content":"32636356"},"/project/faq-e37":{"__comp":"17896441","content":"77bf2607"},"/project/kernteam-ae3":{"__comp":"17896441","content":"03722200"},"/project/links-342":{"__comp":"17896441","content":"465cea2f"},"/project/nieuwsbrief-de8":{"__comp":"17896441","content":"c651b2e8"},"/project/over-nl-design-system-7b0":{"__comp":"17896441","content":"5f7673a0"},"/radio-button-63a":{"__comp":"17896441","content":"d0b753ca"},"/radio-group-cce":{"__comp":"17896441","content":"7cc1f45d"},"/range-9a8":{"__comp":"17896441","content":"46500269"},"/rich-text-content-73e":{"__comp":"17896441","content":"08d81d65"},"/richtlijnen-b7b":{"__comp":"17896441","content":"9d99ac73"},"/richtlijnen/formulieren-1b2":{"__comp":"17896441","content":"54b1e9e3"},"/richtlijnen/formulieren/bevestigingspagina/-90f":{"__comp":"17896441","content":"0b4effa0"},"/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen-3ef":{"__comp":"17896441","content":"cca02dd0"},"/richtlijnen/formulieren/bevestigingspagina/succesmelding-e6b":{"__comp":"17896441","content":"cea83cfe"},"/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding-2a9":{"__comp":"17896441","content":"7e047481"},"/richtlijnen/formulieren/bevestigingspagina/vervolgstappen-269":{"__comp":"17896441","content":"89d19ea8"},"/richtlijnen/formulieren/buttons-f7d":{"__comp":"17896441","content":"197c1d43"},"/richtlijnen/formulieren/buttons/afbeelding-als-button-0fb":{"__comp":"17896441","content":"206effe8"},"/richtlijnen/formulieren/buttons/disabled-submitbuttons-35a":{"__comp":"17896441","content":"789276a6"},"/richtlijnen/formulieren/buttons/duidelijk-buttontekst-a29":{"__comp":"17896441","content":"1734d1a5"},"/richtlijnen/formulieren/buttons/niet-automatisch-versturen-727":{"__comp":"17896441","content":"968cae9d"},"/richtlijnen/formulieren/buttons/plaatsing-0fb":{"__comp":"17896441","content":"ed882ce6"},"/richtlijnen/formulieren/buttons/toegankelijke-naam-868":{"__comp":"17896441","content":"9b3824c7"},"/richtlijnen/formulieren/buttons/toetsenbordbediening-057":{"__comp":"17896441","content":"b686c44c"},"/richtlijnen/formulieren/descriptions/-a77":{"__comp":"17896441","content":"753f1ae1"},"/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte-ad1":{"__comp":"17896441","content":"0e7e98ab"},"/richtlijnen/formulieren/descriptions/koppelen-97b":{"__comp":"17896441","content":"8e0f3a07"},"/richtlijnen/formulieren/descriptions/lengte-eac":{"__comp":"17896441","content":"da71daea"},"/richtlijnen/formulieren/descriptions/meerdere-koppelen-186":{"__comp":"17896441","content":"b562a46f"},"/richtlijnen/formulieren/descriptions/plaatsing-7ac":{"__comp":"17896441","content":"1d0f5624"},"/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset-120":{"__comp":"17896441","content":"9998fe9c"},"/richtlijnen/formulieren/foutmeldingen/-182":{"__comp":"17896441","content":"efb925bc"},"/richtlijnen/formulieren/foutmeldingen/beschrijven-ab8":{"__comp":"17896441","content":"174c1360"},"/richtlijnen/formulieren/foutmeldingen/controleren-18a":{"__comp":"17896441","content":"670c19d0"},"/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code-cfc":{"__comp":"17896441","content":"5ceb3743"},"/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie-3e9":{"__comp":"17896441","content":"3b3b8523"},"/richtlijnen/formulieren/foutmeldingen/plaatsing-765":{"__comp":"17896441","content":"606f1efc"},"/richtlijnen/formulieren/foutmeldingen/samenvatting-de1":{"__comp":"17896441","content":"766d2ae6"},"/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback-fb1":{"__comp":"17896441","content":"6b6b32db"},"/richtlijnen/formulieren/labels/-9b2":{"__comp":"17896441","content":"1a680e36"},"/richtlijnen/formulieren/labels/alleen-tekst-942":{"__comp":"17896441","content":"c45d5005"},"/richtlijnen/formulieren/labels/altijd-zichtbaar-4be":{"__comp":"17896441","content":"96f807b8"},"/richtlijnen/formulieren/labels/duidelijke-tekst-5fd":{"__comp":"17896441","content":"6062bcd6"},"/richtlijnen/formulieren/labels/plaatsing-597":{"__comp":"17896441","content":"1f7423d5"},"/richtlijnen/formulieren/labels/toegankelijke-naam-038":{"__comp":"17896441","content":"b13a7419"},"/richtlijnen/formulieren/labels/zichtbare-naam-76e":{"__comp":"17896441","content":"cbb88ed8"},"/richtlijnen/formulieren/links/-103":{"__comp":"17896441","content":"199bae63"},"/richtlijnen/formulieren/links/niet-in-label-22a":{"__comp":"17896441","content":"633d45b8"},"/richtlijnen/formulieren/links/nieuwe-tab-041":{"__comp":"17896441","content":"9adac8a6"},"/richtlijnen/formulieren/links/plaatsing-8fd":{"__comp":"17896441","content":"dba96d72"},"/richtlijnen/formulieren/meerdere-stappen/-9b9":{"__comp":"17896441","content":"ca6bcb72"},"/richtlijnen/formulieren/meerdere-stappen/consistente-benaming-e85":{"__comp":"17896441","content":"04733036"},"/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang-5cf":{"__comp":"17896441","content":"d68b2e5c"},"/richtlijnen/formulieren/meerdere-stappen/samenvatting-7d1":{"__comp":"17896441","content":"cd1565a5"},"/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven-8ae":{"__comp":"17896441","content":"e25baa48"},"/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen-ea5":{"__comp":"17896441","content":"9f1e13f9"},"/richtlijnen/formulieren/placeholders/-6b2":{"__comp":"17896441","content":"b39bde9c"},"/richtlijnen/formulieren/placeholders/kleurcontrast-b9a":{"__comp":"17896441","content":"4a01bf9b"},"/richtlijnen/formulieren/placeholders/niet-als-label-b48":{"__comp":"17896441","content":"640d0ff4"},"/richtlijnen/formulieren/placeholders/verwarring-voorkomen-d2d":{"__comp":"17896441","content":"30d4a3a8"},"/richtlijnen/formulieren/placeholders/zoekfunctie-81a":{"__comp":"17896441","content":"93b586d9"},"/richtlijnen/formulieren/toetsenbord/-438":{"__comp":"17896441","content":"dab0abab"},"/richtlijnen/formulieren/toetsenbord/tabindex-945":{"__comp":"17896441","content":"5ca48129"},"/richtlijnen/formulieren/visueel-ontwerp/-0e9":{"__comp":"17896441","content":"d7c98f9c"},"/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar-711":{"__comp":"17896441","content":"df6d1168"},"/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur-697":{"__comp":"17896441","content":"a5cbeebd"},"/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons-7a4":{"__comp":"17896441","content":"10efe71c"},"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar-c7c":{"__comp":"17896441","content":"0bf96c5c"},"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar-4ba":{"__comp":"17896441","content":"8abfd807"},"/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde-4a4":{"__comp":"17896441","content":"1689c421"},"/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar-33d":{"__comp":"17896441","content":"1a6d1b6f"},"/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar-9d9":{"__comp":"17896441","content":"ba49b078"},"/richtlijnen/formulieren/voorkom-fouten/-118":{"__comp":"17896441","content":"4f8ca7d5"},"/richtlijnen/formulieren/voorkom-fouten/autocomplete-a93":{"__comp":"17896441","content":"b23cdcda"},"/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen-a7e":{"__comp":"17896441","content":"9cb16d46"},"/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen-d51":{"__comp":"17896441","content":"91e219d1"},"/richtlijnen/formulieren/voorkom-fouten/geldige-waardes-38c":{"__comp":"17896441","content":"e5cbcecc"},"/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af-904":{"__comp":"17896441","content":"6ffc4a51"},"/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/-045":{"__comp":"17896441","content":"db5e1826"},"/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/-402":{"__comp":"17896441","content":"6ad9c912"},"/richtlijnen/formulieren/vragen/-0a0":{"__comp":"17896441","content":"51d8679a"},"/richtlijnen/formulieren/vragen/check-noodzaak-36e":{"__comp":"17896441","content":"494d37a6"},"/richtlijnen/formulieren/vragen/geen-min-max-lengte-a23":{"__comp":"17896441","content":"fe7ba64e"},"/richtlijnen/formulieren/vragen/leg-uit-waarom-b82":{"__comp":"17896441","content":"6aee0090"},"/richtlijnen/formulieren/vragen/manieren-voor-contact-022":{"__comp":"17896441","content":"2aecc02f"},"/richtlijnen/formulieren/vragen/voorkom-dubbel-werk-951":{"__comp":"17896441","content":"042f22aa"},"/richtlijnen/formulieren/wanneer-welk-form-element/-a87":{"__comp":"17896441","content":"edd694e5"},"/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen-39b":{"__comp":"17896441","content":"14785206"},"/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid-9fc":{"__comp":"17896441","content":"785a05e0"},"/richtlijnen/stijl-3c9":{"__comp":"14eb3368","categoryGeneratedIndex":"dd47c273"},"/richtlijnen/stijl/iconen-5b9":{"__comp":"17896441","content":"707334e0"},"/richtlijnen/stijl/kleuren-fa7":{"__comp":"17896441","content":"13ecdb40"},"/richtlijnen/stijl/ruimte-79f":{"__comp":"17896441","content":"e07f5d94"},"/richtlijnen/stijl/typografie-483":{"__comp":"17896441","content":"3015a2b9"},"/select-5e7":{"__comp":"17896441","content":"ed74afc1"},"/separator-454":{"__comp":"17896441","content":"e5bc4a9e"},"/side-navigation-600":{"__comp":"17896441","content":"b50de158"},"/skip-link-d13":{"__comp":"17896441","content":"68ddddde"},"/spinner-70f":{"__comp":"17896441","content":"f5f3cece"},"/status-badge-6aa":{"__comp":"17896441","content":"d5f36106"},"/strong-40f":{"__comp":"17896441","content":"cc7e1584"},"/sub-heading-b7e":{"__comp":"17896441","content":"7c4f6831"},"/summary-list-4fa":{"__comp":"17896441","content":"4ecd84ac"},"/switch-5b4":{"__comp":"17896441","content":"b171e401"},"/table-b60":{"__comp":"17896441","content":"f1833817"},"/tabs-963":{"__comp":"17896441","content":"7e20bedc"},"/task-list-293":{"__comp":"17896441","content":"667b53b1"},"/text-input-54b":{"__comp":"17896441","content":"8165282b"},"/text-input-group-ed4":{"__comp":"17896441","content":"22ebae92"},"/textarea-5a3":{"__comp":"17896441","content":"70fe0045"},"/toegankelijkheidsverklaring-e63":{"__comp":"17896441","content":"2933852b"},"/toegankelijkheidsverklaring/rapport-2023-feb":{"__comp":"17896441","content":"452f106e"},"/toggletip-5b0":{"__comp":"17896441","content":"d3deb5db"},"/unordered-list-525":{"__comp":"17896441","content":"ff07fdf2"},"/video-3ac":{"__comp":"17896441","content":"f67ebaad"},"/voorbeelden-a40":{"__comp":"14eb3368","categoryGeneratedIndex":"b9e57eaa"},"/voorbeelden/-fa9":{"__comp":"17896441","content":"dd06f6af"},"/voorbeelden/onderzoek/-62d":{"__comp":"17896441","content":"e59d1036"},"/voorbeelden/patronen-c72":{"__comp":"14eb3368","categoryGeneratedIndex":"be0dd82d"},"/voorbeelden/patronen/formulieren-c44":{"__comp":"14eb3368","categoryGeneratedIndex":"002a89ff"},"/voorbeelden/patronen/formulieren/bevestigingspagina-5ca":{"__comp":"17896441","content":"311596ba"},"/voorbeelden/patronen/formulieren/controlepagina-50c":{"__comp":"17896441","content":"3e8bb961"},"/voorbeelden/patronen/formulieren/foutmeldingen-4a9":{"__comp":"17896441","content":"228952b2"},"/voorbeelden/patronen/formulieren/funnel-header-4d8":{"__comp":"17896441","content":"682b2c96"},"/voorbeelden/patronen/formulieren/inloggen-651":{"__comp":"17896441","content":"60f94907"},"/voorbeelden/patronen/formulieren/intropagina-a29":{"__comp":"17896441","content":"8eda713e"},"/voorbeelden/patronen/formulieren/meerstappenformulier-96a":{"__comp":"17896441","content":"51323ca8"},"/voorbeelden/patronen/formulieren/niet-verplichte-velden-1e0":{"__comp":"17896441","content":"9f3e56ab"},"/voorbeelden/patronen/formulieren/opslaan-of-stoppen-0b8":{"__comp":"17896441","content":"18328f1a"},"/voorbeelden/patronen/formulieren/responsive-design-a94":{"__comp":"17896441","content":"c1a8ab3a"},"/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-fe2":{"__comp":"17896441","content":"bc199175"},"/voorbeelden/patronen/formulieren/startpunt-6a4":{"__comp":"17896441","content":"3b7bee57"},"/voorbeelden/patronen/formulieren/terug-navigeren-567":{"__comp":"17896441","content":"acbbc3fa"},"/voorbeelden/patronen/formulieren/uploaden-a29":{"__comp":"17896441","content":"65c3b531"},"/voorbeelden/patronen/formulieren/visual-design-2ad":{"__comp":"17896441","content":"9652d10b"},"/voorbeelden/patronen/formulieren/volgende-stap-977":{"__comp":"17896441","content":"ff61fdd4"},"/voorbeelden/patronen/formulieren/voortgang-indicatie-038":{"__comp":"17896441","content":"70f68e65"},"/voorbeelden/templates/-2b1":{"__comp":"17896441","content":"5f26db3b"},"/wcag-d32":{"__comp":"14eb3368","categoryGeneratedIndex":"ace5ddd0"},"/wcag/1.1.1-612":{"__comp":"17896441","content":"0d484eed"},"/wcag/1.2.1-97b":{"__comp":"17896441","content":"a111e786"},"/wcag/1.2.2-da1":{"__comp":"17896441","content":"84b5c197"},"/wcag/1.2.3-c6f":{"__comp":"17896441","content":"efc435ec"},"/wcag/1.2.4-b6f":{"__comp":"17896441","content":"ed728b89"},"/wcag/1.2.5-7c1":{"__comp":"17896441","content":"8314e380"},"/wcag/1.2.6-0a7":{"__comp":"17896441","content":"7ba8052a"},"/wcag/1.3.1-285":{"__comp":"17896441","content":"6febb60f"},"/wcag/1.3.2-5f5":{"__comp":"17896441","content":"edd78324"},"/wcag/1.3.3-cc0":{"__comp":"17896441","content":"bad61bdd"},"/wcag/1.3.4-34f":{"__comp":"17896441","content":"2d922d32"},"/wcag/1.3.5-5a6":{"__comp":"17896441","content":"620ace0e"},"/wcag/1.4.1-b16":{"__comp":"17896441","content":"3eff441d"},"/wcag/1.4.10-e38":{"__comp":"17896441","content":"40a52653"},"/wcag/1.4.11-d96":{"__comp":"17896441","content":"77d5d099"},"/wcag/1.4.12-a06":{"__comp":"17896441","content":"b14da3b2"},"/wcag/1.4.13-966":{"__comp":"17896441","content":"b1df0b37"},"/wcag/1.4.2-59b":{"__comp":"17896441","content":"123b59fa"},"/wcag/1.4.3-e78":{"__comp":"17896441","content":"3b7e7225"},"/wcag/1.4.4-d4e":{"__comp":"17896441","content":"099c664f"},"/wcag/1.4.5-414":{"__comp":"17896441","content":"a0f63bac"},"/wcag/1.4.8-79e":{"__comp":"17896441","content":"309899da"},"/wcag/2.1.1-e2b":{"__comp":"17896441","content":"8a86fb00"},"/wcag/2.1.2-9e6":{"__comp":"17896441","content":"36e18e19"},"/wcag/2.1.4-e34":{"__comp":"17896441","content":"e4188b52"},"/wcag/2.2.1-45b":{"__comp":"17896441","content":"a7fe68c7"},"/wcag/2.2.2-36e":{"__comp":"17896441","content":"fc3df1dc"},"/wcag/2.3.1-091":{"__comp":"17896441","content":"f45121d1"},"/wcag/2.4.1-c75":{"__comp":"17896441","content":"2e9298c1"},"/wcag/2.4.10-a92":{"__comp":"17896441","content":"d9284525"},"/wcag/2.4.11-970":{"__comp":"17896441","content":"5e810b1b"},"/wcag/2.4.13-bff":{"__comp":"17896441","content":"210e540d"},"/wcag/2.4.2-902":{"__comp":"17896441","content":"c832a882"},"/wcag/2.4.3-aab":{"__comp":"17896441","content":"00d58dcc"},"/wcag/2.4.4-06a":{"__comp":"17896441","content":"24603a8a"},"/wcag/2.4.5-305":{"__comp":"17896441","content":"21bec7c2"},"/wcag/2.4.6-577":{"__comp":"17896441","content":"f92c4e24"},"/wcag/2.4.7-560":{"__comp":"17896441","content":"be371f74"},"/wcag/2.5.1-1be":{"__comp":"17896441","content":"aded4886"},"/wcag/2.5.2-db4":{"__comp":"17896441","content":"59b1f6d4"},"/wcag/2.5.3-f32":{"__comp":"17896441","content":"e34d61f6"},"/wcag/2.5.4-962":{"__comp":"17896441","content":"7edfa0ff"},"/wcag/2.5.5-423":{"__comp":"17896441","content":"c0270cae"},"/wcag/2.5.7-115":{"__comp":"17896441","content":"1bb6e844"},"/wcag/2.5.8-068":{"__comp":"17896441","content":"10a90e64"},"/wcag/3.1.1-353":{"__comp":"17896441","content":"30f42f58"},"/wcag/3.1.2-092":{"__comp":"17896441","content":"9eaa3a83"},"/wcag/3.2.1-d4a":{"__comp":"17896441","content":"f941fe6d"},"/wcag/3.2.2-2be":{"__comp":"17896441","content":"96105152"},"/wcag/3.2.3-8c8":{"__comp":"17896441","content":"6a4d9b8d"},"/wcag/3.2.4-552":{"__comp":"17896441","content":"06235a00"},"/wcag/3.2.6-487":{"__comp":"17896441","content":"2add2724"},"/wcag/3.3.1-609":{"__comp":"17896441","content":"b48427de"},"/wcag/3.3.2-9f3":{"__comp":"17896441","content":"684ef8a6"},"/wcag/3.3.3-2a3":{"__comp":"17896441","content":"15c58fd4"},"/wcag/3.3.4-e80":{"__comp":"17896441","content":"86475ef8"},"/wcag/3.3.7-91e":{"__comp":"17896441","content":"75079ebc"},"/wcag/3.3.8-f78":{"__comp":"17896441","content":"63095b4c"},"/wcag/4.1.1-352":{"__comp":"17896441","content":"1942deb4"},"/wcag/4.1.2-cdd":{"__comp":"17896441","content":"0190c584"},"/wcag/4.1.3-3f8":{"__comp":"17896441","content":"44e82248"},"/wcag/introduction-f78":{"__comp":"17896441","content":"91ad73c4"}}');
+   e.exports = JSON.parse('{"/en/bingo/-4ac":{"__comp":"45a413d9","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-1-dab":{"__comp":"b4150b56","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/bingo/voorbeeld-met-fouten-2-d09":{"__comp":"3bb8863e","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/blog-607":{"__comp":"a6aa9e1f","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"},{"content":"34b859b1"}],"metadata":"fba6c282"},"/en/blog/archive-170":{"__comp":"9e4087bc","__context":{"plugin":"f32db19e"},"archive":"f6cbeee1"},"/en/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system-eff":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2f0980e2"},"/en/blog/community-blocks-d61":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"40355699"},"/en/blog/community-online-formulieren-c2a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"38471ef1"},"/en/blog/de-mijlpalen-van-2022-8f1":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"489d45c6"},"/en/blog/design-open-dag-16e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"80bad7c2"},"/en/blog/design-systems-in-het-buitenland-6-lessen-5c7":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94d55c70"},"/en/blog/design-systems-week-2023-komt-eraan-3af":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"94b6170a"},"/en/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system-d27":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7eedbcf7"},"/en/blog/een-design-system-meerdere-producten-83a":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"c9609a68"},"/en/blog/een-overheid-practice-what-you-preach-298":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"ff0d970f"},"/en/blog/gebruikerstest-ondernemers-den-haag-ed2":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b729a1a1"},"/en/blog/innovatiebudget-voor-de-werkwijze-van-het-nl-design-system-e52":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"8b659173"},"/en/blog/innovatiebudget-voor-nl-design-system-a92":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e94ed988"},"/en/blog/jouw-project-inrichten-op-de-nl-design-system-architectuur-5a9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b70cd504"},"/en/blog/kick-off-werkgroepen-van-het-nl-design-system-75e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"49d1ff28"},"/en/blog/licentiekeuze-nl-design-system-322":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"7ca6903f"},"/en/blog/meerdere-manieren-contact-7b8":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"582c75ff"},"/en/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype-b74":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"92e5e01e"},"/en/blog/nl-design-system-in-2021-bbc":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"89a96570"},"/en/blog/nl-design-system-zelfstandig-verder-cf9":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"bf14fce1"},"/en/blog/over-figma-als-keuze-voor-het-nl-design-system-750":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"f15b6573"},"/en/blog/spacing-tokens-11e":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"0a6c776a"},"/en/blog/tags-8bb":{"__comp":"01a85c17","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","tags":"9bdd22eb"},"/en/blog/tags/architectuur-93f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"6e114b37"}],"tag":"8df97ee5","listMetadata":"2da1f935"},"/en/blog/tags/buitenland-c08":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"232d0db4","listMetadata":"3ec61807"},"/en/blog/tags/componenten-39e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"57b28864","listMetadata":"893094ee"},"/en/blog/tags/contentrichtlijnen-267":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"569c0776"},{"content":"4ea98559"},{"content":"306030dd"}],"tag":"d647d050","listMetadata":"164232d1"},"/en/blog/tags/design-systems-acf":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"34b859b1"}],"tag":"a792b491","listMetadata":"6a2f4d46"},"/en/blog/tags/design-systems-week-9a8":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"15a4ec34"}],"tag":"4ecafe36","listMetadata":"e73f9950"},"/en/blog/tags/design-tokens-c98":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"d467e203"}],"tag":"0fd7eb6e","listMetadata":"520ccf84"},"/en/blog/tags/designers-115":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"6dba794c","listMetadata":"7bab27bf"},"/en/blog/tags/developers-0b0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"ca82639c","listMetadata":"a2bb2b83"},"/en/blog/tags/een-overheid-648":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"16e5a5c9"}],"tag":"4a8999c7","listMetadata":"61e31d3f"},"/en/blog/tags/estafettemodel-a2f":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"}],"tag":"3ff65370","listMetadata":"463aafc7"},"/en/blog/tags/figma-407":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"}],"tag":"80c19b87","listMetadata":"a2514f03"},"/en/blog/tags/formulieren-011":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"24071437"},{"content":"0e6a87d4"}],"tag":"86c1b350","listMetadata":"2435a34f"},"/en/blog/tags/gebruiker-centraal-6fa":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"9b74bec5","listMetadata":"35677b07"},"/en/blog/tags/gebruikersonderzoeken-92a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"dce08b4f","listMetadata":"3e3ea08d"},"/en/blog/tags/gebruikerstesten-fe0":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"0e6a87d4"}],"tag":"af5d61d0","listMetadata":"02601132"},"/en/blog/tags/lettertype-982":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"3c3d65f2"}],"tag":"6765bbe1","listMetadata":"68117824"},"/en/blog/tags/logius-31a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"}],"tag":"c9bf1512","listMetadata":"5efd353f"},"/en/blog/tags/meta-1b2":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"558da7c0"},{"content":"920ddf01"}],"tag":"fd87590a","listMetadata":"1aa77dba"},"/en/blog/tags/mijlpalen-70a":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"9764e22e"}],"tag":"39418f7b","listMetadata":"7faf29d7"},"/en/blog/tags/nl-design-system-684":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"a3332bc9"},{"content":"70ebfaef"},{"content":"8de5412f"},{"content":"fd2458ef"},{"content":"45431ea1"},{"content":"f1c1d91e"},{"content":"558da7c0"},{"content":"920ddf01"},{"content":"24071437"},{"content":"0e6a87d4"},{"content":"d467e203"},{"content":"15a4ec34"},{"content":"3c3d65f2"},{"content":"9764e22e"},{"content":"f5dc78b8"},{"content":"a55f7ab7"},{"content":"a7f84bbe"},{"content":"333bf37f"},{"content":"569c0776"},{"content":"6e114b37"},{"content":"4ea98559"},{"content":"306030dd"},{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"},{"content":"f5daaf40"},{"content":"16e5a5c9"},{"content":"81f0ad3e"}],"tag":"257a732d","listMetadata":"3a63c8bb"},"/en/blog/tags/richtlijnen-3c7":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"}],"tag":"14a250a4","listMetadata":"c20168b0"},"/en/blog/tags/toegankelijkheid-f80":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"70ebfaef"},{"content":"f1c1d91e"}],"tag":"04087e03","listMetadata":"27ff9d14"},"/en/blog/tags/update-651":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"72af1482"},{"content":"6fa4fca2"},{"content":"2d21fce7"}],"tag":"dd706f12","listMetadata":"7e0bd177"},"/en/blog/tags/werkgroepen-e31":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"f5daaf40"}],"tag":"7e11c81b","listMetadata":"b3531ef4"},"/en/blog/tags/word-press-87e":{"__comp":"6875c492","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","items":[{"content":"8de5412f"}],"tag":"9c510eeb","listMetadata":"8fc68f72"},"/en/blog/toegankelijke-foutmeldingen-formulieren-078":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"cc0f0e4f"},"/en/blog/top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system-3e3":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"fe9a39bd"},"/en/blog/uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system-e9d":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"b68f03f7"},"/en/blog/update-nl-design-system-fca":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"3f0f2ad0"},"/en/blog/van-start-een-gezamelijk-design-system-voor-de-overheid-c4b":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"897f202a"},"/en/blog/waarom-nl-design-system-onmisbaar-is-voor-organisaties-9ab":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"2fe778e5"},"/en/blog/wmebv-gebruikerstesten-9d6":{"__comp":"ccc49370","__context":{"plugin":"f32db19e"},"sidebar":"814f3328","content":"e9b2227f"},"/en/contrast/-dce":{"__comp":"6c269cf8","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/search-1e0":{"__comp":"1a4e3797","__context":{"plugin":"1bfef857"}},"/en/-b64":{"__comp":"1df93b7f","__context":{"plugin":"2d941729"},"config":"5e9f5e1a"},"/en/-db6":{"__comp":"5e95c892","__context":{"plugin":"a572c501"}},"/en/-c97":{"__comp":"a7bd4aaa","version":"935f2afb"},"/en/tags-01c":{"__comp":"3720c009","tags":"55960ee5"},"/en/tags/community-1ff":{"__comp":"df203c0f","tag":"53ec08ea"},"/en/-c7a":{"__comp":"a94703ab"},"/en/accordion-b0f":{"__comp":"17896441","content":"a77e5ea3"},"/en/action-group-24c":{"__comp":"17896441","content":"381b9e37"},"/en/alert-5e0":{"__comp":"17896441","content":"3d7707fa"},"/en/alert-dialog-9bd":{"__comp":"17896441","content":"7290f823"},"/en/avatar-e85":{"__comp":"17896441","content":"d3c1b80a"},"/en/blockquote-57d":{"__comp":"17896441","content":"7b6dc98e"},"/en/breadcrumb-navigation-c6e":{"__comp":"17896441","content":"a81e9677"},"/en/button-f7b":{"__comp":"17896441","content":"5110c353"},"/en/Calendar-310":{"__comp":"17896441","content":"ace6628c"},"/en/card-as-link-121":{"__comp":"17896441","content":"9186edf4"},"/en/case-card-991":{"__comp":"17896441","content":"fbf7ea66"},"/en/CHANGELOG-818":{"__comp":"17896441","content":"ca36df4d"},"/en/checkbox-860":{"__comp":"17896441","content":"1c0b529b"},"/en/checkbox-group-fb7":{"__comp":"17896441","content":"91c9e2b1"},"/en/coc-4b6":{"__comp":"17896441","content":"1e45e22d"},"/en/colofon-b43":{"__comp":"17896441","content":"6076374a"},"/en/community-2bb":{"__comp":"14eb3368","categoryGeneratedIndex":"7a777bcb"},"/en/community/design-open-dag/bedankt-c89":{"__comp":"17896441","content":"c15f67bc"},"/en/community/estafettemodeldag/bedankt-716":{"__comp":"17896441","content":"bf8a7bac"},"/en/community/events/estafettemodeldag-791":{"__comp":"17896441","content":"5293bf37"},"/en/community/events/overzicht-aa6":{"__comp":"14eb3368","categoryGeneratedIndex":"9f18257a"},"/en/community/sluit-je-aan-3d4":{"__comp":"17896441","content":"ad9d479a"},"/en/community/sluit-je-aan/bedankt-838":{"__comp":"17896441","content":"adb328b9"},"/en/community/wie-doet-mee-109":{"__comp":"17896441","content":"b56159c8"},"/en/componenten/-040":{"__comp":"17896441","content":"9f867b5d"},"/en/data-badge-c07":{"__comp":"17896441","content":"2e11687d"},"/en/date-input-6e0":{"__comp":"17896441","content":"48c36009"},"/en/date-input-group-807":{"__comp":"17896441","content":"3d58a721"},"/en/date-picker-39a":{"__comp":"17896441","content":"4d3e1a9b"},"/en/description-list-8bc":{"__comp":"17896441","content":"861e17e8"},"/en/dot-badge-3a9":{"__comp":"17896441","content":"0cf410ab"},"/en/drawer-204":{"__comp":"17896441","content":"5e41da51"},"/en/events/design-open-dag-5ba":{"__comp":"17896441","content":"ced44f18"},"/en/events/design-open-hour-6bd":{"__comp":"17896441","content":"0eacf79f"},"/en/events/design-open-hour/aanmelden-3d7":{"__comp":"17896441","content":"adc7d54a"},"/en/events/design-open-hour/aanmelden/bedankt-283":{"__comp":"17896441","content":"1bc7f6c3"},"/en/events/design-open-hour/overzicht-16c":{"__comp":"14eb3368","categoryGeneratedIndex":"b0a486e7"},"/en/events/design-systems-week-2022-f5c":{"__comp":"17896441","content":"cd7f02d4"},"/en/events/design-systems-week-2023-bc7":{"__comp":"17896441","content":"845a118e"},"/en/events/design-systems-week-2023/en/program-22d":{"__comp":"17896441","content":"60ab2a10"},"/en/events/design-systems-week-2023/en/timetable-eb9":{"__comp":"17896441","content":"eae49527"},"/en/events/design-systems-week-2023/programma-5a2":{"__comp":"17896441","content":"bf203e4a"},"/en/events/design-systems-week-2023/tijdschema-83e":{"__comp":"17896441","content":"b0bf1aa3"},"/en/events/design-systems-week-2024-139":{"__comp":"17896441","content":"3272fc23"},"/en/events/design-systems-week-2024/en-ef3":{"__comp":"17896441","content":"7074c05a"},"/en/events/design-systems-week-2024/en/program-92c":{"__comp":"17896441","content":"6bcc2158"},"/en/events/design-systems-week-2024/programma-999":{"__comp":"17896441","content":"8bb98256"},"/en/events/design-systems-week/aanmelden-0d8":{"__comp":"17896441","content":"ba69917b"},"/en/events/design-systems-week/aanmelden/bedankt-510":{"__comp":"17896441","content":"b86d5603"},"/en/events/design-systems-week/sign-up-7c2":{"__comp":"17896441","content":"560af811"},"/en/events/design-systems-week/sign-up/thanks-041":{"__comp":"17896441","content":"5647b938"},"/en/events/developer-open-hour-bf8":{"__comp":"17896441","content":"ba4a9952"},"/en/events/developer-open-hour/aanmelden-fa2":{"__comp":"17896441","content":"c91a40d5"},"/en/events/developer-open-hour/aanmelden/bedankt-d4e":{"__comp":"17896441","content":"f19e5f41"},"/en/events/developer-open-hour/overzicht-5fe":{"__comp":"14eb3368","categoryGeneratedIndex":"94dc40b0"},"/en/events/heartbeat-b03":{"__comp":"17896441","content":"235c86a2"},"/en/events/heartbeat/aanmelden-d05":{"__comp":"17896441","content":"323b7945"},"/en/events/heartbeat/aanmelden/bedankt-057":{"__comp":"17896441","content":"73bf6027"},"/en/events/heartbeat/overzicht-cbb":{"__comp":"14eb3368","categoryGeneratedIndex":"20a411f0"},"/en/events/heartbeat/videos-efc":{"__comp":"17896441","content":"125932a1"},"/en/fieldset-30f":{"__comp":"17896441","content":"5a50c8e4"},"/en/figure-51c":{"__comp":"17896441","content":"32470cbe"},"/en/file-input-922":{"__comp":"17896441","content":"8aa0ba1c"},"/en/form-field-bea":{"__comp":"17896441","content":"6a94b0c3"},"/en/form-field-checkbox-option-9ea":{"__comp":"17896441","content":"2fd1f4fe"},"/en/form-field-description-574":{"__comp":"17896441","content":"cd3c7377"},"/en/form-field-error-message-d71":{"__comp":"17896441","content":"d4552b9e"},"/en/form-field-label-96b":{"__comp":"17896441","content":"ddf35722"},"/en/form-field-option-label-867":{"__comp":"17896441","content":"a9493cdf"},"/en/form-field-partial-218":{"__comp":"17896441","content":"6f323067"},"/en/form-field-partial-label-90d":{"__comp":"17896441","content":"6ab13dac"},"/en/form-field-radio-option-082":{"__comp":"17896441","content":"52bdf594"},"/en/handboek-934":{"__comp":"14eb3368","categoryGeneratedIndex":"db7926ce"},"/en/handboek/component-bijdragen/candidate-stappenplan-4e4":{"__comp":"17896441","content":"564db768"},"/en/handboek/component-bijdragen/community-stappenplan-e53":{"__comp":"17896441","content":"98a78e5e"},"/en/handboek/component-bijdragen/community-stappenplan-voor-organisaties-8fa":{"__comp":"17896441","content":"f61609af"},"/en/handboek/component-bijdragen/definition-of-done-cc4":{"__comp":"17896441","content":"124d4001"},"/en/handboek/component-bijdragen/hall-of-fame-stappenplan-32a":{"__comp":"17896441","content":"28d3d582"},"/en/handboek/component-bijdragen/help-wanted-stappenplan-c04":{"__comp":"17896441","content":"aeaf35c2"},"/en/handboek/component-bijdragen/overzicht-9b2":{"__comp":"14eb3368","categoryGeneratedIndex":"95a20731"},"/en/handboek/design-tokens/-955":{"__comp":"17896441","content":"6db74d90"},"/en/handboek/designer/-1aa":{"__comp":"17896441","content":"b8bffd88"},"/en/handboek/designer/community-cf3":{"__comp":"17896441","content":"1b445115"},"/en/handboek/designer/figma-structuur-31c":{"__comp":"17896441","content":"19f8dbc7"},"/en/handboek/designer/overzicht-07f":{"__comp":"14eb3368","categoryGeneratedIndex":"4921393f"},"/en/handboek/designer/stappenplan-4b1":{"__comp":"17896441","content":"2289dd67"},"/en/handboek/designer/voorbeeld-thema-920":{"__comp":"17896441","content":"77321757"},"/en/handboek/designer/zelf-componenten-maken-875":{"__comp":"17896441","content":"dfb098ef"},"/en/handboek/developer/aan-de-slag-799":{"__comp":"17896441","content":"93a8441b"},"/en/handboek/developer/architectuur-814":{"__comp":"17896441","content":"9c1b7be2"},"/en/handboek/developer/component-inzetten-0e8":{"__comp":"17896441","content":"dcd65422"},"/en/handboek/developer/component-uitbreiden-940":{"__comp":"17896441","content":"9b2e9553"},"/en/handboek/developer/componenten-maken-d74":{"__comp":"17896441","content":"e3b51539"},"/en/handboek/developer/herbruikbare-css-9e2":{"__comp":"17896441","content":"555de4b4"},"/en/handboek/developer/meewerken-als-developer-395":{"__comp":"17896441","content":"bc2d69ea"},"/en/handboek/developer/overzicht-a06":{"__comp":"14eb3368","categoryGeneratedIndex":"b46e901f"},"/en/handboek/developer/samenwerken-aan-componenten-37c":{"__comp":"17896441","content":"e756447e"},"/en/handboek/developer/thema-maken-4ec":{"__comp":"17896441","content":"751bfb55"},"/en/handboek/estafettemodel-7d6":{"__comp":"17896441","content":"43a0fbb9"},"/en/handboek/introductie-910":{"__comp":"17896441","content":"411e6d0c"},"/en/handboek/leverancier/introductie-42a":{"__comp":"17896441","content":"20f2808f"},"/en/handboek/manager/introductie-ce3":{"__comp":"17896441","content":"26a7a4d1"},"/en/handboek/naamgeving-1d5":{"__comp":"17896441","content":"c8ac2561"},"/en/handboek/organisatie/meedoen-f3e":{"__comp":"17896441","content":"ce7b85cb"},"/en/handboek/organisatie/overzicht-b60":{"__comp":"14eb3368","categoryGeneratedIndex":"34a37bdc"},"/en/handboek/organisatie/vragen-over-aanbestedingen-bdc":{"__comp":"17896441","content":"ac66737c"},"/en/heading-d97":{"__comp":"17896441","content":"6fd5f6ab"},"/en/heading-1-e3e":{"__comp":"17896441","content":"150707f3"},"/en/heading-2-205":{"__comp":"17896441","content":"16fd2d30"},"/en/heading-3-160":{"__comp":"17896441","content":"8f6d3c26"},"/en/heading-4-b74":{"__comp":"17896441","content":"c776d6ea"},"/en/heading-5-632":{"__comp":"17896441","content":"9ec6ce4c"},"/en/heading-6-d1e":{"__comp":"17896441","content":"91059c25"},"/en/heading-group-06c":{"__comp":"17896441","content":"da2da55d"},"/en/icon-540":{"__comp":"17896441","content":"8baef6f7"},"/en/invalid-form-alert-953":{"__comp":"17896441","content":"b2991567"},"/en/language-navigation-cf8":{"__comp":"17896441","content":"c51cb369"},"/en/legend-c6f":{"__comp":"17896441","content":"09d51e35"},"/en/link-6a7":{"__comp":"17896441","content":"25b93367"},"/en/link-list-dfe":{"__comp":"17896441","content":"f633a06a"},"/en/modal-dialog-617":{"__comp":"17896441","content":"b75db01c"},"/en/navigation-bar-18d":{"__comp":"17896441","content":"da8aeb86"},"/en/non-modal-dialog-da9":{"__comp":"17896441","content":"c6b96a0f"},"/en/notification-banner-685":{"__comp":"17896441","content":"e21395b4"},"/en/number-badge-2f6":{"__comp":"17896441","content":"8ea6c2d1"},"/en/number-input-c93":{"__comp":"17896441","content":"ffcf9766"},"/en/open-source/cc0-efb":{"__comp":"17896441","content":"72b0d195"},"/en/open-source/eupl-faf":{"__comp":"17896441","content":"67d19623"},"/en/ordered-list-2f7":{"__comp":"17896441","content":"2c881fe2"},"/en/page-footer-750":{"__comp":"17896441","content":"3d377413"},"/en/page-header-40f":{"__comp":"17896441","content":"3464a859"},"/en/pagination-c17":{"__comp":"17896441","content":"3679878e"},"/en/paragraph-e05":{"__comp":"17896441","content":"68b96050"},"/en/password-input-f65":{"__comp":"17896441","content":"9228e550"},"/en/pre-heading-b30":{"__comp":"17896441","content":"3f3eb7e2"},"/en/privacyverklaring-ff9":{"__comp":"17896441","content":"2383fbae"},"/en/progress-bar-473":{"__comp":"17896441","content":"b4f4fb7e"},"/en/progress-list-5cf":{"__comp":"17896441","content":"fbfd5b4f"},"/en/project-986":{"__comp":"14eb3368","categoryGeneratedIndex":"9e2ab78b"},"/en/project/blijf-op-de-hoogte-0f9":{"__comp":"17896441","content":"281e6f8e"},"/en/project/blijf-op-de-hoogte/nieuwsbrief/bedankt-08d":{"__comp":"17896441","content":"32636356"},"/en/project/faq-cea":{"__comp":"17896441","content":"77bf2607"},"/en/project/kernteam-87b":{"__comp":"17896441","content":"03722200"},"/en/project/links-5cb":{"__comp":"17896441","content":"465cea2f"},"/en/project/nieuwsbrief-ff4":{"__comp":"17896441","content":"c651b2e8"},"/en/project/over-nl-design-system-ddf":{"__comp":"17896441","content":"5f7673a0"},"/en/radio-button-a20":{"__comp":"17896441","content":"d0b753ca"},"/en/radio-group-d27":{"__comp":"17896441","content":"7cc1f45d"},"/en/range-4eb":{"__comp":"17896441","content":"46500269"},"/en/rich-text-content-f5b":{"__comp":"17896441","content":"08d81d65"},"/en/richtlijnen-bd6":{"__comp":"17896441","content":"9d99ac73"},"/en/richtlijnen/formulieren-f70":{"__comp":"17896441","content":"54b1e9e3"},"/en/richtlijnen/formulieren/bevestigingspagina/-cde":{"__comp":"17896441","content":"0b4effa0"},"/en/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen-f89":{"__comp":"17896441","content":"cca02dd0"},"/en/richtlijnen/formulieren/bevestigingspagina/succesmelding-0f5":{"__comp":"17896441","content":"cea83cfe"},"/en/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding-387":{"__comp":"17896441","content":"7e047481"},"/en/richtlijnen/formulieren/bevestigingspagina/vervolgstappen-e99":{"__comp":"17896441","content":"89d19ea8"},"/en/richtlijnen/formulieren/buttons-3ea":{"__comp":"17896441","content":"197c1d43"},"/en/richtlijnen/formulieren/buttons/afbeelding-als-button-476":{"__comp":"17896441","content":"206effe8"},"/en/richtlijnen/formulieren/buttons/disabled-submitbuttons-84a":{"__comp":"17896441","content":"789276a6"},"/en/richtlijnen/formulieren/buttons/duidelijk-buttontekst-42d":{"__comp":"17896441","content":"1734d1a5"},"/en/richtlijnen/formulieren/buttons/niet-automatisch-versturen-7d7":{"__comp":"17896441","content":"968cae9d"},"/en/richtlijnen/formulieren/buttons/plaatsing-b5b":{"__comp":"17896441","content":"ed882ce6"},"/en/richtlijnen/formulieren/buttons/toegankelijke-naam-887":{"__comp":"17896441","content":"9b3824c7"},"/en/richtlijnen/formulieren/buttons/toetsenbordbediening-bb2":{"__comp":"17896441","content":"b686c44c"},"/en/richtlijnen/formulieren/descriptions/-828":{"__comp":"17896441","content":"753f1ae1"},"/en/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte-658":{"__comp":"17896441","content":"0e7e98ab"},"/en/richtlijnen/formulieren/descriptions/koppelen-ce2":{"__comp":"17896441","content":"8e0f3a07"},"/en/richtlijnen/formulieren/descriptions/lengte-0db":{"__comp":"17896441","content":"da71daea"},"/en/richtlijnen/formulieren/descriptions/meerdere-koppelen-9a6":{"__comp":"17896441","content":"b562a46f"},"/en/richtlijnen/formulieren/descriptions/plaatsing-abc":{"__comp":"17896441","content":"1d0f5624"},"/en/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset-80d":{"__comp":"17896441","content":"9998fe9c"},"/en/richtlijnen/formulieren/foutmeldingen/-3e6":{"__comp":"17896441","content":"efb925bc"},"/en/richtlijnen/formulieren/foutmeldingen/beschrijven-a0a":{"__comp":"17896441","content":"174c1360"},"/en/richtlijnen/formulieren/foutmeldingen/controleren-7ef":{"__comp":"17896441","content":"670c19d0"},"/en/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code-a18":{"__comp":"17896441","content":"5ceb3743"},"/en/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie-73f":{"__comp":"17896441","content":"3b3b8523"},"/en/richtlijnen/formulieren/foutmeldingen/plaatsing-688":{"__comp":"17896441","content":"606f1efc"},"/en/richtlijnen/formulieren/foutmeldingen/samenvatting-65a":{"__comp":"17896441","content":"766d2ae6"},"/en/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback-aa6":{"__comp":"17896441","content":"6b6b32db"},"/en/richtlijnen/formulieren/labels/-03a":{"__comp":"17896441","content":"1a680e36"},"/en/richtlijnen/formulieren/labels/alleen-tekst-56f":{"__comp":"17896441","content":"c45d5005"},"/en/richtlijnen/formulieren/labels/altijd-zichtbaar-50d":{"__comp":"17896441","content":"96f807b8"},"/en/richtlijnen/formulieren/labels/duidelijke-tekst-b9b":{"__comp":"17896441","content":"6062bcd6"},"/en/richtlijnen/formulieren/labels/plaatsing-0bb":{"__comp":"17896441","content":"1f7423d5"},"/en/richtlijnen/formulieren/labels/toegankelijke-naam-f8d":{"__comp":"17896441","content":"b13a7419"},"/en/richtlijnen/formulieren/labels/zichtbare-naam-1bd":{"__comp":"17896441","content":"cbb88ed8"},"/en/richtlijnen/formulieren/links/-a64":{"__comp":"17896441","content":"199bae63"},"/en/richtlijnen/formulieren/links/niet-in-label-6b1":{"__comp":"17896441","content":"633d45b8"},"/en/richtlijnen/formulieren/links/nieuwe-tab-4f6":{"__comp":"17896441","content":"9adac8a6"},"/en/richtlijnen/formulieren/links/plaatsing-e65":{"__comp":"17896441","content":"dba96d72"},"/en/richtlijnen/formulieren/meerdere-stappen/-b26":{"__comp":"17896441","content":"ca6bcb72"},"/en/richtlijnen/formulieren/meerdere-stappen/consistente-benaming-ab4":{"__comp":"17896441","content":"04733036"},"/en/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang-1dd":{"__comp":"17896441","content":"d68b2e5c"},"/en/richtlijnen/formulieren/meerdere-stappen/samenvatting-f53":{"__comp":"17896441","content":"cd1565a5"},"/en/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven-89d":{"__comp":"17896441","content":"e25baa48"},"/en/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen-cb3":{"__comp":"17896441","content":"9f1e13f9"},"/en/richtlijnen/formulieren/placeholders/-cfc":{"__comp":"17896441","content":"b39bde9c"},"/en/richtlijnen/formulieren/placeholders/kleurcontrast-278":{"__comp":"17896441","content":"4a01bf9b"},"/en/richtlijnen/formulieren/placeholders/niet-als-label-979":{"__comp":"17896441","content":"640d0ff4"},"/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen-ab3":{"__comp":"17896441","content":"30d4a3a8"},"/en/richtlijnen/formulieren/placeholders/zoekfunctie-615":{"__comp":"17896441","content":"93b586d9"},"/en/richtlijnen/formulieren/toetsenbord/-887":{"__comp":"17896441","content":"dab0abab"},"/en/richtlijnen/formulieren/toetsenbord/tabindex-554":{"__comp":"17896441","content":"5ca48129"},"/en/richtlijnen/formulieren/visueel-ontwerp/-6aa":{"__comp":"17896441","content":"d7c98f9c"},"/en/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar-90c":{"__comp":"17896441","content":"df6d1168"},"/en/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur-8fe":{"__comp":"17896441","content":"a5cbeebd"},"/en/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons-4af":{"__comp":"17896441","content":"10efe71c"},"/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar-dda":{"__comp":"17896441","content":"0bf96c5c"},"/en/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar-e3e":{"__comp":"17896441","content":"8abfd807"},"/en/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde-f74":{"__comp":"17896441","content":"1689c421"},"/en/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar-ec1":{"__comp":"17896441","content":"1a6d1b6f"},"/en/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar-4fb":{"__comp":"17896441","content":"ba49b078"},"/en/richtlijnen/formulieren/voorkom-fouten/-41c":{"__comp":"17896441","content":"4f8ca7d5"},"/en/richtlijnen/formulieren/voorkom-fouten/autocomplete-710":{"__comp":"17896441","content":"b23cdcda"},"/en/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen-33d":{"__comp":"17896441","content":"9cb16d46"},"/en/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen-811":{"__comp":"17896441","content":"91e219d1"},"/en/richtlijnen/formulieren/voorkom-fouten/geldige-waardes-1f0":{"__comp":"17896441","content":"e5cbcecc"},"/en/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af-878":{"__comp":"17896441","content":"6ffc4a51"},"/en/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/-e78":{"__comp":"17896441","content":"db5e1826"},"/en/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken/-e71":{"__comp":"17896441","content":"6ad9c912"},"/en/richtlijnen/formulieren/vragen/-9d4":{"__comp":"17896441","content":"51d8679a"},"/en/richtlijnen/formulieren/vragen/check-noodzaak-bb0":{"__comp":"17896441","content":"494d37a6"},"/en/richtlijnen/formulieren/vragen/geen-min-max-lengte-238":{"__comp":"17896441","content":"fe7ba64e"},"/en/richtlijnen/formulieren/vragen/leg-uit-waarom-c36":{"__comp":"17896441","content":"6aee0090"},"/en/richtlijnen/formulieren/vragen/manieren-voor-contact-83c":{"__comp":"17896441","content":"2aecc02f"},"/en/richtlijnen/formulieren/vragen/voorkom-dubbel-werk-fe1":{"__comp":"17896441","content":"042f22aa"},"/en/richtlijnen/formulieren/wanneer-welk-form-element/-ffc":{"__comp":"17896441","content":"edd694e5"},"/en/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen-b48":{"__comp":"17896441","content":"14785206"},"/en/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid-e06":{"__comp":"17896441","content":"785a05e0"},"/en/richtlijnen/stijl-330":{"__comp":"14eb3368","categoryGeneratedIndex":"d459b62b"},"/en/richtlijnen/stijl/iconen-e62":{"__comp":"17896441","content":"707334e0"},"/en/richtlijnen/stijl/kleuren-0d9":{"__comp":"17896441","content":"13ecdb40"},"/en/richtlijnen/stijl/ruimte-8c1":{"__comp":"17896441","content":"e07f5d94"},"/en/richtlijnen/stijl/typografie-c04":{"__comp":"17896441","content":"3015a2b9"},"/en/select-831":{"__comp":"17896441","content":"ed74afc1"},"/en/separator-6d1":{"__comp":"17896441","content":"e5bc4a9e"},"/en/side-navigation-1a0":{"__comp":"17896441","content":"b50de158"},"/en/skip-link-df2":{"__comp":"17896441","content":"68ddddde"},"/en/spinner-f5a":{"__comp":"17896441","content":"f5f3cece"},"/en/status-badge-799":{"__comp":"17896441","content":"d5f36106"},"/en/strong-808":{"__comp":"17896441","content":"cc7e1584"},"/en/sub-heading-d1f":{"__comp":"17896441","content":"7c4f6831"},"/en/summary-list-f83":{"__comp":"17896441","content":"4ecd84ac"},"/en/switch-499":{"__comp":"17896441","content":"b171e401"},"/en/table-a74":{"__comp":"17896441","content":"f1833817"},"/en/tabs-283":{"__comp":"17896441","content":"7e20bedc"},"/en/task-list-339":{"__comp":"17896441","content":"667b53b1"},"/en/text-input-4a4":{"__comp":"17896441","content":"8165282b"},"/en/text-input-group-d64":{"__comp":"17896441","content":"22ebae92"},"/en/textarea-761":{"__comp":"17896441","content":"70fe0045"},"/en/toegankelijkheidsverklaring-cd8":{"__comp":"17896441","content":"2933852b"},"/en/toegankelijkheidsverklaring/rapport-2023-98a":{"__comp":"17896441","content":"452f106e"},"/en/toggletip-e24":{"__comp":"17896441","content":"d3deb5db"},"/en/unordered-list-763":{"__comp":"17896441","content":"ff07fdf2"},"/en/video-ee8":{"__comp":"17896441","content":"f67ebaad"},"/en/voorbeelden-6c2":{"__comp":"14eb3368","categoryGeneratedIndex":"0abe0c91"},"/en/voorbeelden/-dd5":{"__comp":"17896441","content":"dd06f6af"},"/en/voorbeelden/onderzoek/-525":{"__comp":"17896441","content":"e59d1036"},"/en/voorbeelden/patronen-e59":{"__comp":"14eb3368","categoryGeneratedIndex":"1c4e5244"},"/en/voorbeelden/patronen/formulieren-03c":{"__comp":"14eb3368","categoryGeneratedIndex":"492f3cec"},"/en/voorbeelden/patronen/formulieren/bevestigingspagina-852":{"__comp":"17896441","content":"311596ba"},"/en/voorbeelden/patronen/formulieren/controlepagina-5da":{"__comp":"17896441","content":"3e8bb961"},"/en/voorbeelden/patronen/formulieren/foutmeldingen-6d7":{"__comp":"17896441","content":"228952b2"},"/en/voorbeelden/patronen/formulieren/funnel-header-33f":{"__comp":"17896441","content":"682b2c96"},"/en/voorbeelden/patronen/formulieren/inloggen-6ee":{"__comp":"17896441","content":"60f94907"},"/en/voorbeelden/patronen/formulieren/intropagina-dcb":{"__comp":"17896441","content":"8eda713e"},"/en/voorbeelden/patronen/formulieren/meerstappenformulier-539":{"__comp":"17896441","content":"51323ca8"},"/en/voorbeelden/patronen/formulieren/niet-verplichte-velden-dc4":{"__comp":"17896441","content":"9f3e56ab"},"/en/voorbeelden/patronen/formulieren/opslaan-of-stoppen-92b":{"__comp":"17896441","content":"18328f1a"},"/en/voorbeelden/patronen/formulieren/responsive-design-213":{"__comp":"17896441","content":"c1a8ab3a"},"/en/voorbeelden/patronen/formulieren/stapelen-en-uitlijnen-d0d":{"__comp":"17896441","content":"bc199175"},"/en/voorbeelden/patronen/formulieren/startpunt-5dd":{"__comp":"17896441","content":"3b7bee57"},"/en/voorbeelden/patronen/formulieren/terug-navigeren-7bb":{"__comp":"17896441","content":"acbbc3fa"},"/en/voorbeelden/patronen/formulieren/uploaden-52b":{"__comp":"17896441","content":"65c3b531"},"/en/voorbeelden/patronen/formulieren/visual-design-5c6":{"__comp":"17896441","content":"9652d10b"},"/en/voorbeelden/patronen/formulieren/volgende-stap-ac3":{"__comp":"17896441","content":"ff61fdd4"},"/en/voorbeelden/patronen/formulieren/voortgang-indicatie-5ec":{"__comp":"17896441","content":"70f68e65"},"/en/voorbeelden/templates/-f01":{"__comp":"17896441","content":"5f26db3b"},"/en/wcag-51a":{"__comp":"14eb3368","categoryGeneratedIndex":"0ca15ddc"},"/en/wcag/1.1.1-bd1":{"__comp":"17896441","content":"0d484eed"},"/en/wcag/1.2.1-96d":{"__comp":"17896441","content":"a111e786"},"/en/wcag/1.2.2-e71":{"__comp":"17896441","content":"84b5c197"},"/en/wcag/1.2.3-9dd":{"__comp":"17896441","content":"efc435ec"},"/en/wcag/1.2.4-928":{"__comp":"17896441","content":"ed728b89"},"/en/wcag/1.2.5-04b":{"__comp":"17896441","content":"8314e380"},"/en/wcag/1.2.6-d1f":{"__comp":"17896441","content":"7ba8052a"},"/en/wcag/1.2.8-cb0":{"__comp":"17896441","content":"47f6516a"},"/en/wcag/1.2.9-797":{"__comp":"17896441","content":"c28c8ac9"},"/en/wcag/1.3.1-69f":{"__comp":"17896441","content":"6febb60f"},"/en/wcag/1.3.2-f71":{"__comp":"17896441","content":"edd78324"},"/en/wcag/1.3.3-af5":{"__comp":"17896441","content":"bad61bdd"},"/en/wcag/1.3.4-b71":{"__comp":"17896441","content":"2d922d32"},"/en/wcag/1.3.5-ee5":{"__comp":"17896441","content":"620ace0e"},"/en/wcag/1.4.1-8d4":{"__comp":"17896441","content":"3eff441d"},"/en/wcag/1.4.10-7ff":{"__comp":"17896441","content":"40a52653"},"/en/wcag/1.4.11-6a1":{"__comp":"17896441","content":"77d5d099"},"/en/wcag/1.4.12-748":{"__comp":"17896441","content":"b14da3b2"},"/en/wcag/1.4.13-29e":{"__comp":"17896441","content":"b1df0b37"},"/en/wcag/1.4.2-a0f":{"__comp":"17896441","content":"123b59fa"},"/en/wcag/1.4.3-38d":{"__comp":"17896441","content":"3b7e7225"},"/en/wcag/1.4.4-ea2":{"__comp":"17896441","content":"099c664f"},"/en/wcag/1.4.5-b09":{"__comp":"17896441","content":"a0f63bac"},"/en/wcag/1.4.8-780":{"__comp":"17896441","content":"309899da"},"/en/wcag/2.1.1-291":{"__comp":"17896441","content":"8a86fb00"},"/en/wcag/2.1.2-5b0":{"__comp":"17896441","content":"36e18e19"},"/en/wcag/2.1.4-565":{"__comp":"17896441","content":"e4188b52"},"/en/wcag/2.2.1-c9c":{"__comp":"17896441","content":"a7fe68c7"},"/en/wcag/2.2.2-480":{"__comp":"17896441","content":"fc3df1dc"},"/en/wcag/2.3.1-f00":{"__comp":"17896441","content":"f45121d1"},"/en/wcag/2.4.1-dac":{"__comp":"17896441","content":"2e9298c1"},"/en/wcag/2.4.10-74f":{"__comp":"17896441","content":"d9284525"},"/en/wcag/2.4.11-b33":{"__comp":"17896441","content":"5e810b1b"},"/en/wcag/2.4.13-73a":{"__comp":"17896441","content":"210e540d"},"/en/wcag/2.4.2-f26":{"__comp":"17896441","content":"c832a882"},"/en/wcag/2.4.3-527":{"__comp":"17896441","content":"00d58dcc"},"/en/wcag/2.4.4-fe5":{"__comp":"17896441","content":"24603a8a"},"/en/wcag/2.4.5-3fd":{"__comp":"17896441","content":"21bec7c2"},"/en/wcag/2.4.6-8dd":{"__comp":"17896441","content":"f92c4e24"},"/en/wcag/2.4.7-615":{"__comp":"17896441","content":"be371f74"},"/en/wcag/2.5.1-7b1":{"__comp":"17896441","content":"aded4886"},"/en/wcag/2.5.2-78c":{"__comp":"17896441","content":"59b1f6d4"},"/en/wcag/2.5.3-3f7":{"__comp":"17896441","content":"e34d61f6"},"/en/wcag/2.5.4-f31":{"__comp":"17896441","content":"7edfa0ff"},"/en/wcag/2.5.5-8ca":{"__comp":"17896441","content":"c0270cae"},"/en/wcag/2.5.7-17d":{"__comp":"17896441","content":"1bb6e844"},"/en/wcag/2.5.8-516":{"__comp":"17896441","content":"10a90e64"},"/en/wcag/3.1.1-42b":{"__comp":"17896441","content":"30f42f58"},"/en/wcag/3.1.2-d5f":{"__comp":"17896441","content":"9eaa3a83"},"/en/wcag/3.2.1-b61":{"__comp":"17896441","content":"f941fe6d"},"/en/wcag/3.2.2-1c7":{"__comp":"17896441","content":"96105152"},"/en/wcag/3.2.3-116":{"__comp":"17896441","content":"6a4d9b8d"},"/en/wcag/3.2.4-428":{"__comp":"17896441","content":"06235a00"},"/en/wcag/3.2.6-0d9":{"__comp":"17896441","content":"2add2724"},"/en/wcag/3.3.1-805":{"__comp":"17896441","content":"b48427de"},"/en/wcag/3.3.2-d8d":{"__comp":"17896441","content":"684ef8a6"},"/en/wcag/3.3.3-5af":{"__comp":"17896441","content":"15c58fd4"},"/en/wcag/3.3.4-a59":{"__comp":"17896441","content":"86475ef8"},"/en/wcag/3.3.7-162":{"__comp":"17896441","content":"75079ebc"},"/en/wcag/3.3.8-89d":{"__comp":"17896441","content":"63095b4c"},"/en/wcag/4.1.1-0b2":{"__comp":"17896441","content":"1942deb4"},"/en/wcag/4.1.2-fc9":{"__comp":"17896441","content":"0190c584"},"/en/wcag/4.1.3-747":{"__comp":"17896441","content":"44e82248"},"/en/wcag/introduction-f51":{"__comp":"17896441","content":"91ad73c4"}}');
   },
  },
  (e) => {
