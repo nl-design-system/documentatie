@@ -19,7 +19,7 @@ Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL 
 
 ### Bewijs
 
-- personen [schrijven zich in](/community/sluit-je-aan)) als lid van de community.
+- personen [schrijven zich in](/community/sluit-je-aan) als lid van de community.
 - personen zijn af en toe aanwezig bij de [NL Design System Heartbeat](/events/heartbeat).
 - designers zijn af en toe aanwezig bij de [Design Open Hour](/events/design-open-hour).
 - developers zijn af en toe aanwezig bij de Developer Open Hour.

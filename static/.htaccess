@@ -25,6 +25,14 @@ RedirectMatch 301 "^/meedoen/als-designer/(.*)$" "/handboek/designer$1"
 RedirectMatch 301 "^/meedoen(.*)$" "/handboek$1"
 
 RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.*)$" "/richtlijnen/formulieren/$1"
+Redirect 301 "/richtlijnen/formulieren/overzicht" "/richtlijnen/formulieren"
+Redirect 301 "/richtlijnen/formulieren/overzicht/" "/richtlijnen/formulieren"
+Redirect 301 "/richtlijnen/stijl/overzicht" "/richtlijnen/stijl"
+Redirect 301 "/richtlijnen/stijl/overzicht/" "/richtlijnen/stijl"
+Redirect 301 "/events/design-systems-week-2023/overzicht" "/events/design-systems-week-2023/"
+Redirect 301 "/events/design-systems-week-2023/overzicht/" "/events/design-systems-week-2023/"
+Redirect 301 "/events/design-systems-week-2023/en/overview" "/events/design-systems-week-2023/en/program/"
+Redirect 301 "/events/design-systems-week-2023/en/overview/" "/events/design-systems-week-2023/en/program/"
 
 RedirectMatch 301 "^/project/events(.*)$" "/community/events$1"
 Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
@@ -39,3 +47,5 @@ RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
 Redirect 307 "/calendar" "/componenten"
 Redirect 307 "/character-count" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
+
+ErrorDocument 404 /404.html
