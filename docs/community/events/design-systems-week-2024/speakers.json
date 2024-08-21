@@ -50,6 +50,18 @@
     },
     "language": "en"
   },
+  "JeroenDuChatinier": {
+    "name": "Jeroen du Chatinier",
+    "organisation": "Gemeente Utrecht",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-jeroen-du-chatinier.png",
+      "alt": "Jeroen du Chatinier"
+    },
+    "description": {
+      "nl": "Jeroen is UX Researcher bij de gemeente Utrecht, waar hij met zoveel mogelijk inwoners van de stad probeert te praten over allerlei verschillende onderwerpen. Van parkeren tot trouwen, van schulden tot verordeningen, het is allemaal interessant. En dan vooral om verrast te worden door wat mensen echt doen. Daarnaast is hij mede-onderhouder van gebruikersonderzoeken.nl, waar hij zoveel mogelijk onderzoek bij elkaar probeert te brengen zodat we van elkaar kunnen leren. In zijn vrije tijd houdt Jeroen zich bezig met improvisatie theater, houten meubilair maken van pallets en gewichten optillen om ze daarna maar weer neer te leggen."
+    },
+    "language": "nl"
+  },
   "LotteBijl": {
     "name": "Lotte Bijl",
     "organisation": "Belastingdienst",
