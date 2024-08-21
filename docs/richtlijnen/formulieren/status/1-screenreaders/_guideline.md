@@ -25,7 +25,7 @@ Bijvoorbeeld:
 </div>
 ```
 
-Een element met role="alert" is een “assertive” live region, en functioneel gelijk aan het gebruiken van de combinatie [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
+Een element met `role="alert"` is een ‘assertive’ live region, en functioneel gelijk aan het gebruiken van de combinatie [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
 Het onderbreekt de gebruiker bij wat die doet en geeft de melding onmiddellijk door.
 
 **Let op**: gebruik alert spaarzaam, alleen in situaties waarin de onmiddellijke aandacht van de gebruiker vereist is.
