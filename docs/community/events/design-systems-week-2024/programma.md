@@ -45,6 +45,16 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Je eerste gebruikersonderzoek doen, hoe doe je dat?" speakers={[speakers.JeroenDuChatinier]} organisation="Gemeente Utrecht">
+
+<Paragraph>Gebruikersonderzoeken doen is leuk. Je krijgt van de mensen voor wie je het echt doet, te horen wat je goed doet, en wat er niet lekker gaat. Daardoor kan je verbeteringen doorvoeren die er voor je gebruikers echt toe doen.</Paragraph>
+
+<Paragraph>Maar hoe begin je? Hoeveel mensen moet je spreken, en welke vragen stel je ze?</Paragraph>
+
+<Paragraph>In deze presentatie vertelt Jeroen je hoe je het simpel houdt voor jezelf, zodat je morgen al zou kunnen beginnen met onderzoeken. Of het nou een stuk tekst is of een app, het principe van gebruikersonderzoek blijft hetzelfde. Stap voor stap vertelt Jeroen wat je kan doen om het simpel voor jezelf te maken, zodat je onderzoek behapbaar en significant blijft. Aan het einde van het onderzoek kan je aan de slag met het stappenplan, de checklist en de templates die je in deze presentatie hebt doorgenomen.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst">
 
 <Paragraph>Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun diensten, met als doel iedereen te kunnen bedienen, ongeacht hun beperkingen. Maar hoe bepaal je welke problemen na een WCAG-audit de hoogste prioriteit hebben, zodat ontwikkelteams snel de grootste impact voor gebruikers kunnen realiseren? En hoe voorkom je toekomstige toegankelijkheidsproblemen voor gebruikers? In deze sessie deelt Lotte Bijl hoe de Belastingdienst inclusief gebruikersonderzoek heeft ingezet om deze vragen te kunnen beantwoorden en vertelt ze over de inzichten en de uitdagingen die zij tegenkwamen bij het organiseren van deze onderzoeken.</Paragraph>
