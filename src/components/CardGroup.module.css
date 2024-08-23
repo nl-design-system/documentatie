@@ -47,6 +47,8 @@
   --cardgroup-card-box-shadow: none;
   --cardgroup-card-min-height: 90px;
   --cardgroup-card-justify-content: center;
+  --card-illustration-margin-inline-end: 16px;
+  --card-illustration-margin-inline-start: 16px;
 }
 
 .cardgroup__card--medium {
@@ -71,6 +73,8 @@
   background-color: var(--card-illustration-background-color);
   display: flex;
   justify-content: center;
+  margin-inline-end: var(--card-illustration-margin-inline-end);
+  margin-inline-start: var(--card-illustration-margin-inline-start);
 }
 
 .card__illustration--background {

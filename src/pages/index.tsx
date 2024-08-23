@@ -49,7 +49,6 @@ export default function Home() {
         </HomepageHero>
         <div className="container" style={{ paddingBlockEnd: '40px' }}>
           <Heading2>Meedoen als...</Heading2>
-
           <CardGroup appearance="medium">
             <Card component="section" appearance="small">
               {/* <CardIllustration background>
@@ -124,7 +123,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </CardGroup>
-
           <Heading2>Wie doen er al mee?</Heading2>
           <CardGroup appearance="small">
             <Card appearance="small" href="https://github.com/nl-design-system/utrecht">
@@ -143,14 +141,6 @@ export default function Home() {
                 />
               </CardIllustration>
             </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/rvo">
-              <CardIllustration>
-                <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
-                  alt="RVO logo"
-                />
-              </CardIllustration>
-            </Card>
             <Card appearance="small" href="https://github.com/nl-design-system/amsterdam">
               <CardIllustration>
                 <Image
@@ -159,9 +149,53 @@ export default function Home() {
                 />
               </CardIllustration>
             </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rotterdam">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
+                  alt="Rotterdam logo"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/tilburg">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
+                  alt="Tilburg logo"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rvo">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
+                  alt="Rijksdienst voor Ondernemend Nederland logo"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/lux">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
+                  alt="Logius logo"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rijkshuisstijl-community">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
+                  alt="Rijkshuisstijl Community"
+                />
+              </CardIllustration>
+            </Card>
           </CardGroup>
           <Paragraph className="homepage__paragraph">
-            En ruim 30 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
+            Naast de organisaties die componenten bijdragen doen{' '}
+            <DocusaurusLink to="/community/wie-doet-mee" className="utrecht-link">
+              diverse andere organisaties
+            </DocusaurusLink>{' '}
+            mee in de community van NL Design System.
           </Paragraph>
         </div>
         <div className="container" style={{ paddingBlockStart: '40px', paddingBlockEnd: '40px' }}>
