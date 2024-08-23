@@ -51,10 +51,6 @@
   --card-illustration-margin-inline-start: 16px;
 }
 
-.cardgroup__card--medium {
-  --cardgroup-card-min-height: 286px;
-}
-
 .cardgroup__card--large {
   --cardgroup-card-flex-direction: row-reverse;
   --cardgroup-card-justify-content: space-between;
@@ -83,6 +79,7 @@
 
 .card__content {
   --utrecht-heading-2-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-start: 0;
   display: flex;
   flex-direction: column;
   height: 100%;

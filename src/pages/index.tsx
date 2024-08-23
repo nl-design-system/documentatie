@@ -50,13 +50,7 @@ export default function Home() {
         <div className="container" style={{ paddingBlockEnd: '40px' }}>
           <Heading2>Meedoen als...</Heading2>
           <CardGroup appearance="medium">
-            <Card component="section" appearance="small">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading3>Manager</Heading3>
@@ -69,12 +63,6 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Leverancier</Heading3>
@@ -87,12 +75,6 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Developer</Heading3>
@@ -105,12 +87,6 @@ export default function Home() {
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Designer</Heading3>
