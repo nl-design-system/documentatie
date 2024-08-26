@@ -1,0 +1,33 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline
+  appearance="do"
+  title="Geef updates over het winkelwagentje met role=status."
+  description={
+    <>
+      Wanneer een nieuw product in een winkelwagen is geplaatst of de winkelwagen geleegd is, verandert het
+      winkelwagen-icoon visueel. Een live region kan deze update ook overbrengen.
+    </>
+  }
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>todo: voorbeeld met winkelwagen-icoon + live region</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Gevonden zoekresultaten aangeven met role='alert'.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p role="alert">10 resultaten</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
