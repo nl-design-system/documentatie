@@ -16,7 +16,7 @@
    }
   },
   87169: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => u, contentTitle: () => c, default: () => p, frontMatter: () => a, metadata: () => d, toc: () => h });
+   i.r(n), i.d(n, { assets: () => u, contentTitle: () => c, default: () => f, frontMatter: () => a, metadata: () => d, toc: () => h });
    var r = i(52676),
     t = i(24785),
     l = i(2334),
@@ -24,14 +24,14 @@
     o = i(33984);
    const a = { title: 'Visueel ontwerp van een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Introductie visueel ontwerp', sidebar_position: 12, pagination_label: 'Visueel ontwerp van formulieren', description: 'Richtlijnen voor het visueel ontwerp van formulieren.', slug: '/richtlijnen/formulieren/visueel-ontwerp/', keywords: ['informatie', 'formulier', 'design', 'code'] },
     c = 'Visueel ontwerp van een formulier',
-    d = { id: 'richtlijnen/formulieren/visual-design/README', title: 'Visueel ontwerp van een formulier | Richtlijnen', description: 'Richtlijnen voor het visueel ontwerp van formulieren.', source: '@site/docs/richtlijnen/formulieren/visual-design/README.mdx', sourceDirName: 'richtlijnen/formulieren/visual-design', slug: '/richtlijnen/formulieren/visueel-ontwerp/', permalink: '/richtlijnen/formulieren/visueel-ontwerp/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/visual-design/README.mdx', tags: [], version: 'current', sidebarPosition: 12, frontMatter: { title: 'Visueel ontwerp van een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Introductie visueel ontwerp', sidebar_position: 12, pagination_label: 'Visueel ontwerp van formulieren', description: 'Richtlijnen voor het visueel ontwerp van formulieren.', slug: '/richtlijnen/formulieren/visueel-ontwerp/', keywords: ['informatie', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Geen vaste tekstlengte', permalink: '/richtlijnen/formulieren/vragen/geen-min-max-lengte' }, next: { title: 'Visueel ontwerp van formulieren', permalink: '/richtlijnen/formulieren/visueel-ontwerp/' } },
+    d = { id: 'richtlijnen/formulieren/visual-design/README', title: 'Visueel ontwerp van een formulier | Richtlijnen', description: 'Richtlijnen voor het visueel ontwerp van formulieren.', source: '@site/docs/richtlijnen/formulieren/visual-design/README.mdx', sourceDirName: 'richtlijnen/formulieren/visual-design', slug: '/richtlijnen/formulieren/visueel-ontwerp/', permalink: '/richtlijnen/formulieren/visueel-ontwerp/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/visual-design/README.mdx', tags: [], version: 'current', sidebarPosition: 12, frontMatter: { title: 'Visueel ontwerp van een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Introductie visueel ontwerp', sidebar_position: 12, pagination_label: 'Visueel ontwerp van formulieren', description: 'Richtlijnen voor het visueel ontwerp van formulieren.', slug: '/richtlijnen/formulieren/visueel-ontwerp/', keywords: ['informatie', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Geef gebruikers voldoende tijd', permalink: '/richtlijnen/formulieren/status/enough-time' }, next: { title: 'Visueel ontwerp van formulieren', permalink: '/richtlijnen/formulieren/visueel-ontwerp/' } },
     u = {},
     h = [{ value: 'Deze documentatie heeft nu een eigen pagina', id: 'deze-documentatie-heeft-nu-een-eigen-pagina', level: 2 }];
    function m(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', ...(0, t.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(n.h1, { id: 'visueel-ontwerp-van-een-formulier', children: 'Visueel ontwerp van een formulier' }), '\n', (0, r.jsx)(n.p, { children: 'Waarmee moet je als (UX-)designer rekening houden bij het ontwerpen van een toegankelijk en gebruikersvriendelijke formulier.' }), '\n', (0, r.jsx)(s.l, { excludeDocIDs: ['richtlijnen/formulieren/visual-design/README'] }), '\n', (0, r.jsx)(n.h2, { id: 'deze-documentatie-heeft-nu-een-eigen-pagina', children: 'Deze documentatie heeft nu een eigen pagina' }), '\n', (0, r.jsx)(l._, { id: 'geef-duidelijk-aan-waar-een-invoerveld-is', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', children: 'Geef duidelijk aan waar het invoerveld is' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'geef-tekst-voldoende-kleurcontrast', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar', children: 'Geef tekst voldoende kleurcontrast' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'geef-placeholders-voldoende-kleurcontrast', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar', children: 'Geef placeholders voldoende kleurcontrast' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'maak-toetsenbord-focus-goed-zichtbaar', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', children: 'Maak de toetsenbordfocus goed zichtbaar' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'maak-aanklikbare-formuliervelden-groot-genoeg', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar', children: 'Maak aanklikbare formuliervelden groot genoeg' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'geef-fouten-weer-met-meer-dan-alleen-kleur', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur', children: 'Geef fouten weer met meer dan alleen kleur' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'gebruik-geen-afbeelding-voor-knoppen-maar-stijl-tekst-met-css', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons', children: 'Gebruik geen afbeelding voor knoppen maar stijl tekst met\nCSS' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'zorg-voor-een-logische-volgorde-van-de-informatie', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', children: 'Zorg voor een logische volgorde van de informatie' }), '.'] }) }), '\n', (0, r.jsx)(o.ZP, {})] });
    }
-   function p(e = {}) {
+   function f(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
    }
@@ -59,7 +59,7 @@
     };
   },
   32074: (e, n, i) => {
-   i.d(n, { Z: () => p });
+   i.d(n, { Z: () => f });
    var r = i(62567),
     t = i(53450),
     l = i(56150),
@@ -94,9 +94,9 @@
    function m(e) {
     let { className: n } = e;
     const i = (0, r.jA)();
-    return (0, a.jsx)(p, { items: i.items, className: n });
+    return (0, a.jsx)(f, { items: i.items, className: n });
    }
-   function p(e) {
+   function f(e) {
     const { items: n, className: i } = e;
     if (!n) return (0, a.jsx)(m, { ...e });
     const t = (0, r.MN)(n);

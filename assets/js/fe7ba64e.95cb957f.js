@@ -40,7 +40,7 @@
    var m = l(33984);
    const u = { title: 'Geef invoervelden geen minimum/maximum tekstlengte | Uit te vragen informatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen vaste tekstlengte', pagination_label: 'Geen vaste tekstlengte', description: 'Richtlijnen om invoervelden geen minimum of maximum tekstlengte te geven.', slug: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', keywords: ['labels', 'formulier', 'design', 'code'] },
     p = void 0,
-    g = { id: 'richtlijnen/formulieren/questions/min-max/README', title: 'Geef invoervelden geen minimum/maximum tekstlengte | Uit te vragen informatie in een formulier | Richtlijnen', description: 'Richtlijnen om invoervelden geen minimum of maximum tekstlengte te geven.', source: '@site/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', sourceDirName: 'richtlijnen/formulieren/questions/5-min-max', slug: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', permalink: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Geef invoervelden geen minimum/maximum tekstlengte | Uit te vragen informatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen vaste tekstlengte', pagination_label: 'Geen vaste tekstlengte', description: 'Richtlijnen om invoervelden geen minimum of maximum tekstlengte te geven.', slug: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Stel een vraag \xe9\xe9n keer', permalink: '/richtlijnen/formulieren/vragen/voorkom-dubbel-werk' }, next: { title: 'Visueel ontwerp van formulieren', permalink: '/richtlijnen/formulieren/visueel-ontwerp/' } },
+    g = { id: 'richtlijnen/formulieren/questions/min-max/README', title: 'Geef invoervelden geen minimum/maximum tekstlengte | Uit te vragen informatie in een formulier | Richtlijnen', description: 'Richtlijnen om invoervelden geen minimum of maximum tekstlengte te geven.', source: '@site/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', sourceDirName: 'richtlijnen/formulieren/questions/5-min-max', slug: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', permalink: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/questions/5-min-max/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Geef invoervelden geen minimum/maximum tekstlengte | Uit te vragen informatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen vaste tekstlengte', pagination_label: 'Geen vaste tekstlengte', description: 'Richtlijnen om invoervelden geen minimum of maximum tekstlengte te geven.', slug: '/richtlijnen/formulieren/vragen/geen-min-max-lengte', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Stel een vraag \xe9\xe9n keer', permalink: '/richtlijnen/formulieren/vragen/voorkom-dubbel-werk' }, next: { title: 'Status in formulieren', permalink: '/richtlijnen/formulieren/status/' } },
     v = {},
     _ = [];
    function h(e) {
@@ -85,11 +85,11 @@
      w = 'function' == typeof y ? y() : y,
      N = 'function' == typeof n ? n() : (0, d.isValidElement)(n) ? n : void 0,
      Z = 'string' == typeof n ? n : m.uS(N || w),
-     [C, S] = (0, d.useState)(Z),
+     [S, C] = (0, d.useState)(Z),
      [z, E] = (0, d.useState)(x);
     (0, d.useEffect)(() => {
      (async () => {
-      (C = await c.ZP.format(Z, { parser: f, plugins: [s.Z, a.ZP, i.ZP, r.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), S(C);
+      (S = await c.ZP.format(Z, { parser: f, plugins: [s.Z, a.ZP, i.ZP, r.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), C(S);
      })();
     }, [Z]);
     const G = (0, d.useId)();
@@ -120,7 +120,7 @@
          id: G,
          hidden: !z,
          children: [
-          (0, g.jsx)(p.u, { syntax: f, textContent: C, trim: !0 }),
+          (0, g.jsx)(p.u, { syntax: f, textContent: S, trim: !0 }),
           l &&
            (0, g.jsx)('div', {
             className: (0, o.Z)(u['nlds-canvas__toolbar'], u['nlds-canvas__toolbar--copy']),
@@ -128,7 +128,7 @@
              className: (0, o.Z)(u['nlds-canvas__button'], u['nlds-canvas__copy-button']),
              appearance: 'subtle-button',
              onClick: () => {
-              navigator.clipboard.writeText(C).catch((e) => console.error('Copy code failed', e));
+              navigator.clipboard.writeText(S).catch((e) => console.error('Copy code failed', e));
              },
              children: 'Kopieer',
             }),
