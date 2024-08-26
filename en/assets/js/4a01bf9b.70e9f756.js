@@ -40,7 +40,7 @@
    var u = l(33984);
    const p = { title: 'Zorg voor een goed kleurcontrast van de placeholdertekst | Placeholders in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Placeholder kleurcontrast', pagination_label: 'Placeholder kleurcontrast', description: 'Richtlijnen voor voldoende kleurcontrast.', slug: '/richtlijnen/formulieren/placeholders/kleurcontrast', keywords: ['labels', 'formulier', 'design', 'code'] },
     h = void 0,
-    m = { id: 'richtlijnen/formulieren/placeholder/colour-contrast/README', title: 'Zorg voor een goed kleurcontrast van de placeholdertekst | Placeholders in een formulier | Richtlijnen', description: 'Richtlijnen voor voldoende kleurcontrast.', source: '@site/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', sourceDirName: 'richtlijnen/formulieren/placeholder/4-colour-contrast', slug: '/richtlijnen/formulieren/placeholders/kleurcontrast', permalink: '/en/richtlijnen/formulieren/placeholders/kleurcontrast', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Zorg voor een goed kleurcontrast van de placeholdertekst | Placeholders in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Placeholder kleurcontrast', pagination_label: 'Placeholder kleurcontrast', description: 'Richtlijnen voor voldoende kleurcontrast.', slug: '/richtlijnen/formulieren/placeholders/kleurcontrast', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Placeholder kan verwarren', permalink: '/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen' }, next: { title: 'Zorg dat het formulier werkt met een toetsenbord', permalink: '/en/richtlijnen/formulieren/toetsenbord/' } },
+    m = { id: 'richtlijnen/formulieren/placeholder/colour-contrast/README', title: 'Zorg voor een goed kleurcontrast van de placeholdertekst | Placeholders in een formulier | Richtlijnen', description: 'Richtlijnen voor voldoende kleurcontrast.', source: '@site/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', sourceDirName: 'richtlijnen/formulieren/placeholder/4-colour-contrast', slug: '/richtlijnen/formulieren/placeholders/kleurcontrast', permalink: '/en/richtlijnen/formulieren/placeholders/kleurcontrast', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/placeholder/4-colour-contrast/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Zorg voor een goed kleurcontrast van de placeholdertekst | Placeholders in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Placeholder kleurcontrast', pagination_label: 'Placeholder kleurcontrast', description: 'Richtlijnen voor voldoende kleurcontrast.', slug: '/richtlijnen/formulieren/placeholders/kleurcontrast', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Placeholder kan verwarren', permalink: '/en/richtlijnen/formulieren/placeholders/verwarring-voorkomen' }, next: { title: 'Toetsenbord', permalink: '/en/richtlijnen/formulieren/toetsenbord/' } },
     g = {},
     _ = [];
    function v(e) {
@@ -84,14 +84,14 @@
     let { code: n, copy: l = !0, defaultExpandedCode: y = !1, displayCode: b = !0, children: x, container: j = 'document', language: k, designTokens: f } = e,
      N = 'function' == typeof x ? x() : x,
      Z = 'function' == typeof n ? n() : (0, i.isValidElement)(n) ? n : void 0,
-     w = 'string' == typeof n ? n : u.uS(Z || N),
-     [S, C] = (0, i.useState)(w),
+     S = 'string' == typeof n ? n : u.uS(Z || N),
+     [w, C] = (0, i.useState)(S),
      [P, z] = (0, i.useState)(y);
     (0, i.useEffect)(() => {
      (async () => {
-      (S = await d.ZP.format(w, { parser: k, plugins: [s.Z, r.ZP, c.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), C(S);
+      (w = await d.ZP.format(S, { parser: k, plugins: [s.Z, r.ZP, c.ZP, a.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), C(w);
      })();
-    }, [w]);
+    }, [S]);
     const D = (0, i.useId)();
     let E = i.Fragment;
     return (
@@ -120,7 +120,7 @@
          id: D,
          hidden: !P,
          children: [
-          (0, m.jsx)(h.u, { syntax: k, textContent: S, trim: !0 }),
+          (0, m.jsx)(h.u, { syntax: k, textContent: w, trim: !0 }),
           l &&
            (0, m.jsx)('div', {
             className: (0, t.Z)(p['nlds-canvas__toolbar'], p['nlds-canvas__toolbar--copy']),
@@ -128,7 +128,7 @@
              className: (0, t.Z)(p['nlds-canvas__button'], p['nlds-canvas__copy-button']),
              appearance: 'subtle-button',
              onClick: () => {
-              navigator.clipboard.writeText(S).catch((e) => console.error('Copy code failed', e));
+              navigator.clipboard.writeText(w).catch((e) => console.error('Copy code failed', e));
              },
              children: 'Kopieer',
             }),

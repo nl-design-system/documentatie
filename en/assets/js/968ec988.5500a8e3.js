@@ -1,6 +1,6 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [54344],
+ [19207],
  {
   33984: (e, n, t) => {
    t.d(n, { ZP: () => s });
@@ -15,7 +15,7 @@
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(i, { ...e }) }) : i(e);
    }
   },
-  6276: (e, n, t) => {
+  45856: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => h, contentTitle: () => m, default: () => x, frontMatter: () => b, metadata: () => p, toc: () => v });
    var l = t(52676),
     o = t(24785),
@@ -40,7 +40,7 @@
    var u = t(33984);
    const b = { title: 'Gebruik geen positieve tabindex | Toetsenbordnavigatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen positieve tabindex', pagination_label: 'Geen positieve tabindex', description: 'Richtlijnen voor positieve tabindex in een formulier.', slug: '/richtlijnen/formulieren/toetsenbord/tabindex', keywords: ['labels', 'formulier', 'design', 'code'] },
     m = void 0,
-    p = { id: 'richtlijnen/formulieren/keyboard-behaviour/tabindex/README', title: 'Gebruik geen positieve tabindex | Toetsenbordnavigatie in een formulier | Richtlijnen', description: 'Richtlijnen voor positieve tabindex in een formulier.', source: '@site/docs/richtlijnen/formulieren/keyboard-behaviour/1-tabindex/README.mdx', sourceDirName: 'richtlijnen/formulieren/keyboard-behaviour/1-tabindex', slug: '/richtlijnen/formulieren/toetsenbord/tabindex', permalink: '/richtlijnen/formulieren/toetsenbord/tabindex', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/keyboard-behaviour/1-tabindex/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Gebruik geen positieve tabindex | Toetsenbordnavigatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen positieve tabindex', pagination_label: 'Geen positieve tabindex', description: 'Richtlijnen voor positieve tabindex in een formulier.', slug: '/richtlijnen/formulieren/toetsenbord/tabindex', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Zorg dat het formulier werkt met een toetsenbord', permalink: '/richtlijnen/formulieren/toetsenbord/' }, next: { title: 'Uit te vragen informatie in een formulier', permalink: '/richtlijnen/formulieren/vragen/' } },
+    p = { id: 'richtlijnen/formulieren/keyboard-behaviour/tabindex/README', title: 'Gebruik geen positieve tabindex | Toetsenbordnavigatie in een formulier | Richtlijnen', description: 'Richtlijnen voor positieve tabindex in een formulier.', source: '@site/docs/richtlijnen/formulieren/keyboard-behaviour/2-tabindex/README.mdx', sourceDirName: 'richtlijnen/formulieren/keyboard-behaviour/2-tabindex', slug: '/richtlijnen/formulieren/toetsenbord/tabindex', permalink: '/en/richtlijnen/formulieren/toetsenbord/tabindex', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/keyboard-behaviour/2-tabindex/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Gebruik geen positieve tabindex | Toetsenbordnavigatie in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Geen positieve tabindex', pagination_label: 'Geen positieve tabindex', description: 'Richtlijnen voor positieve tabindex in een formulier.', slug: '/richtlijnen/formulieren/toetsenbord/tabindex', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Zorg dat een formulier werkt met een toetsenbord', permalink: '/en/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie' }, next: { title: 'Uit te vragen informatie in een formulier', permalink: '/en/richtlijnen/formulieren/vragen/' } },
     h = {},
     v = [];
    function g(e) {
