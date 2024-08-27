@@ -229,10 +229,10 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
-                  <Heading2>Events</Heading2>
+                  <Heading2>Bijeenkomsten</Heading2>
                   <Paragraph>
-                    Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de
-                    aankondigingen en opnames hier.
+                    Benieuwd naar de bijeenkomsten van NL Design System? Of niet gelukt om bij de Heartbeat te zijn?
+                    Bekijk de aankondigingen en opnames hier.
                   </Paragraph>
                 </div>
                 <Paragraph>
