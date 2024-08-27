@@ -3,20 +3,20 @@
  [95594],
  {
   88845: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => l, contentTitle: () => r, default: () => u, frontMatter: () => s, metadata: () => i, toc: () => d });
+   t.r(n), t.d(n, { assets: () => l, contentTitle: () => r, default: () => u, frontMatter: () => a, metadata: () => i, toc: () => d });
    var o = t(52676),
-    a = t(24785);
-   const s = { title: 'Bedankt voor je aanmelding', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In het Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 },
+    s = t(24785);
+   const a = { title: 'Bedankt voor je aanmelding', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In het Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 },
     r = 'Bedankt!',
     i = { id: 'community/events/developer-open-hour/aanmelden-success', title: 'Bedankt voor je aanmelding', description: 'Je bent nu aangemeld voor onze wekelijkse Developer Open Hour.', source: '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', sourceDirName: 'community/events/developer-open-hour', slug: '/events/developer-open-hour/aanmelden/bedankt', permalink: '/en/events/developer-open-hour/aanmelden/bedankt', draft: !1, unlisted: !0, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/developer-open-hour/aanmelden-success.mdx', tags: [], version: 'current', frontMatter: { title: 'Bedankt voor je aanmelding', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In het Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 } },
     l = {},
     d = [];
    function c(e) {
-    const n = { a: 'a', h1: 'h1', li: 'li', p: 'p', ul: 'ul', ...(0, a.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'bedankt', children: 'Bedankt!' }), '\n', (0, o.jsx)(n.p, { children: 'Je bent nu aangemeld voor onze wekelijkse Developer Open Hour.' }), '\n', (0, o.jsx)(n.p, { children: 'We hebben aparte events voor even weken (11:00 uur) en oneven weken (13:00 uur):' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { target: '_blank', 'data-noBrokenLinkCheck': !0, href: t(48707).Z + '', children: 'Voeg even weken toe aan je kalender (.ics)' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { target: '_blank', 'data-noBrokenLinkCheck': !0, href: t(69324).Z + '', children: 'Voeg oneven weken toe aan je kalender (.ics)' }) }), '\n'] })] });
+    const n = { a: 'a', h1: 'h1', li: 'li', p: 'p', ul: 'ul', ...(0, s.a)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'bedankt', children: 'Bedankt!' }), '\n', (0, o.jsx)(n.p, { children: 'Je bent nu aangemeld voor onze wekelijkse Developer Open Hour.' }), '\n', (0, o.jsx)(n.p, { children: 'We hebben bijeenkomsten op verschillende tijden bij even weken (11:00 uur) en oneven weken (13:00 uur):' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { target: '_blank', 'data-noBrokenLinkCheck': !0, href: t(48707).Z + '', children: 'Voeg even weken toe aan je kalender (.ics)' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { target: '_blank', 'data-noBrokenLinkCheck': !0, href: t(69324).Z + '', children: 'Voeg oneven weken toe aan je kalender (.ics)' }) }), '\n'] })] });
    }
    function u(e = {}) {
-    const { wrapper: n } = { ...(0, a.a)(), ...e.components };
+    const { wrapper: n } = { ...(0, s.a)(), ...e.components };
     return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(c, { ...e }) }) : c(e);
    }
   },
@@ -31,10 +31,10 @@
   24785: (e, n, t) => {
    t.d(n, { Z: () => i, a: () => r });
    var o = t(75271);
-   const a = {},
-    s = o.createContext(a);
+   const s = {},
+    a = o.createContext(s);
    function r(e) {
-    const n = o.useContext(s);
+    const n = o.useContext(a);
     return o.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
@@ -44,7 +44,7 @@
    }
    function i(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : r(e.components)), o.createElement(s.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(s) : e.components || s) : r(e.components)), o.createElement(a.Provider, { value: n }, e.children);
    }
   },
  },
