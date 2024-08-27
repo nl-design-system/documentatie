@@ -234,13 +234,13 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'community/community-sprints' },
         {
           type: 'category',
-          label: 'Events',
+          label: 'Bijeenkomsten',
           description:
-            'NL Design System organiseert regelmatig events, online en offline, met als doel om samen te werken en kennis te delen.',
+            'NL Design System organiseert regelmatig bijeenkomsten, online en offline, met als doel om samen te werken en kennis te delen.',
           collapsible: true,
           link: {
             type: 'generated-index',
-            title: 'Events',
+            title: 'Bijeenkomsten',
             slug: '/community/events/overzicht',
           },
           items: [

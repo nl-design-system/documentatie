@@ -31,7 +31,7 @@ NL Design System is een project dat specialisten van verschillende overheidsorga
 
 ## Eerdere edities
 
-Eerdere events die we organiseerden:
+Eerdere edities die we organiseerden:
 
 - [Design Systems Week 2023](/events/design-systems-week-2023)
 - [Design Systems Week 2022](/events/design-systems-week-2022)
