@@ -1,0 +1,37 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline appearance="do" title="Geef in de description aan hoe een veld kan worden ingevoerd.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label for="postcode1">Je postcode</label>
+        <input type="text" id="postcode1" name="postcode" autocomplete="postal-code" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Gebruik het pattern-attribuut met het invoerpatroon en geef aan hoe een veld in te vullen met het value-attribuut."
+  description="Dit voorbeeld valideert de waarde niet met JavaScript en is alleen ter illustratie."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label for="postcode2">Je postcode</label>
+        <input
+          type="text"
+          placeholder="____ __"
+          id="postcode2"
+          name="postcode"
+          pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
+          autocomplete="postal-code"
+        />
+      </>
+    )}
+  </Canvas>
+</Guideline>
