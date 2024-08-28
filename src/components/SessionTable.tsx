@@ -23,7 +23,7 @@ interface Session {
   isoDateTime: string;
   speakers: Speaker[];
   subject: string;
-  sessionLink: string;
+  sessionLink?: string;
   icalLink?: string;
   language: { abbr: string; description: string };
 }
