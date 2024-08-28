@@ -32,7 +32,7 @@
    }
    function i(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', strong: 'strong', ...(0, t.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'geef-placeholders-voldoende-kleurcontrast', children: 'Geef placeholders voldoende kleurcontrast' }), '\n', (0, o.jsx)(n.p, { children: 'Ook het kleurcontrast van de tekst van placeholders ten opzichte van de achtergrondkleur moet 4.5:1 of hoger zijn.' }), '\n', (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: 'Let op' }), ': sommige browsers geven een placeholder lichter weer dan in de CSS is bepaald. Dit wordt verder uitgelegd bij de richtlijn ', (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/placeholders/kleurcontrast', children: 'Zorg voor een goed kleurcontrast van de placeholdertekst' }), '.'] })] });
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'geef-placeholders-voldoende-kleurcontrast', children: 'Geef placeholders voldoende kleurcontrast' }), '\n', (0, o.jsx)(n.p, { children: 'Ook het kleurcontrast van de tekst van placeholders ten opzichte van de achtergrondkleur moet 4,5:1 of hoger zijn.' }), '\n', (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: 'Let op' }), ': sommige browsers geven een placeholder lichter weer dan in de CSS is bepaald. Dit wordt verder uitgelegd bij de richtlijn ', (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/placeholders/kleurcontrast', children: 'Zorg voor een goed kleurcontrast van de placeholdertekst' }), '.'] })] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
