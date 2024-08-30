@@ -74,6 +74,18 @@ sessions={[
 isoDateTime: "2023-10-15T11:00:00.000Z",
 speakers: [
 {
+name: "Kim Denie",
+organisation: "",
+},
+],
+subject: "Tips voor toegankelijke diensten",
+icalLink: "/dsweek-2024/kim-denie.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-15T11:00:00.000Z",
+speakers: [
+{
 name: "Verschillende sprekers",
 organisation: "",
 },
