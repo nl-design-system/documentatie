@@ -79,8 +79,8 @@ importers:
         specifier: 5.0.20
         version: 5.0.20
       '@fontsource/open-sans':
-        specifier: 5.0.28
-        version: 5.0.28
+        specifier: 5.0.29
+        version: 5.0.29
       '@fontsource/source-sans-pro':
         specifier: 5.0.8
         version: 5.0.8
@@ -1289,8 +1289,8 @@ packages:
   '@fontsource/fira-sans@5.0.20':
     resolution: {integrity: sha512-inmUjoKPrgnO4uUaZTAgP0b6YdhDfA52axHXvdTwgLvwd2kn3ZgK52UZoxD0VnrvTOjLA/iE4oC0tNtz4nyb5g==}
 
-  '@fontsource/open-sans@5.0.28':
-    resolution: {integrity: sha512-hBvJHY76pJT/JynGUB5EXWhnzjYfLdcMn655J5p1v9lTT9HdQSy+keq2KPVXO2Htlg998BBa3p6u/jlrZ6w0kg==}
+  '@fontsource/open-sans@5.0.29':
+    resolution: {integrity: sha512-5ayVkmB5fY2NXm/YKF0UxtjWipLIqeXBxyhjtR46ab+z8xiJonolUBIVFYUfn5zH4FDf078zXbsIvmo82C0Aew==}
 
   '@fontsource/source-sans-pro@5.0.8':
     resolution: {integrity: sha512-5U2UvIYRkCMozZ388gCE73PEpa2MFgN/0t9O4a1FF7bGT/MIneQWSL1XpWZ8iMVYdh6ntxRf3iFA6slCIuFgkg==}
@@ -9395,7 +9395,7 @@ snapshots:
 
   '@fontsource/fira-sans@5.0.20': {}
 
-  '@fontsource/open-sans@5.0.28': {}
+  '@fontsource/open-sans@5.0.29': {}
 
   '@fontsource/source-sans-pro@5.0.8': {}
 
