@@ -94,7 +94,7 @@
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
     "@playwright/test": "1.46.0",
     "@types/node": "22.1.0",
-    "@typescript-eslint/eslint-plugin": "8.0.1",
+    "@typescript-eslint/eslint-plugin": "8.3.0",
     "@typescript-eslint/parser": "8.0.1",
     "@utrecht/component-library-css": "4.2.0",
     "@utrecht/component-library-react": "5.0.0",
