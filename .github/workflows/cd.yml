@@ -40,7 +40,7 @@ jobs:
         run: pnpm run --if-present test
 
       - name: "Retain build artifact: website"
-        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b # v4.3.4
+        uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
         with:
           name: website
           path: build/
@@ -89,7 +89,7 @@ jobs:
         run: pnpm run --if-present publish:argos
 
       - name: "Retain build artifact: test report"
-        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b # v4.3.4
+        uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
         with:
           name: playwright-report
           path: tmp/playwright-html-report/
@@ -97,7 +97,7 @@ jobs:
 
       - name: "Retain build artifact: screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
-        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b # v4.3.4
+        uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
         with:
           name: screenshots
           path: tmp/screenshots/
