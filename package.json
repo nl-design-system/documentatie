@@ -84,7 +84,7 @@
     "@docusaurus/theme-classic": "3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
     "@docusaurus/types": "3.1.0",
-    "@fontsource/fira-sans": "5.0.20",
+    "@fontsource/fira-sans": "5.0.21",
     "@fontsource/open-sans": "5.0.28",
     "@fontsource/source-sans-pro": "5.0.8",
     "@mdx-js/react": "3.0.1",

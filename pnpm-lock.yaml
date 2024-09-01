@@ -76,8 +76,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@fontsource/fira-sans':
-        specifier: 5.0.20
-        version: 5.0.20
+        specifier: 5.0.21
+        version: 5.0.21
       '@fontsource/open-sans':
         specifier: 5.0.28
         version: 5.0.28
@@ -213,8 +213,8 @@ importers:
   packages/nlds-design-tokens:
     dependencies:
       '@fontsource/fira-sans':
-        specifier: 5.0.20
-        version: 5.0.20
+        specifier: 5.0.21
+        version: 5.0.21
       '@fontsource/source-sans-pro':
         specifier: 5.0.8
         version: 5.0.8
@@ -1286,8 +1286,8 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@fontsource/fira-sans@5.0.20':
-    resolution: {integrity: sha512-inmUjoKPrgnO4uUaZTAgP0b6YdhDfA52axHXvdTwgLvwd2kn3ZgK52UZoxD0VnrvTOjLA/iE4oC0tNtz4nyb5g==}
+  '@fontsource/fira-sans@5.0.21':
+    resolution: {integrity: sha512-R4s5A+WF4rm45Us+3Gqp9Lijm83OflTSVyp7xccQLUAtjzp+Qmp7Y+adQ37vnjxaNfSoicJ6fTNYvlXck6KNUg==}
 
   '@fontsource/open-sans@5.0.28':
     resolution: {integrity: sha512-hBvJHY76pJT/JynGUB5EXWhnzjYfLdcMn655J5p1v9lTT9HdQSy+keq2KPVXO2Htlg998BBa3p6u/jlrZ6w0kg==}
@@ -9393,7 +9393,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@fontsource/fira-sans@5.0.20': {}
+  '@fontsource/fira-sans@5.0.21': {}
 
   '@fontsource/open-sans@5.0.28': {}
 
