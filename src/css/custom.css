@@ -981,3 +981,8 @@ pre {
 .pra-donutchart-legend {
   display: none !important;
 }
+
+/* Temporary fix for accordion spacing */
+.utrecht-accordion__header {
+  margin: 0;
+}
