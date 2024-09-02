@@ -65,7 +65,7 @@ Let wel; gebruik 'Spacing' design tokens enkel voor ruimte binnen en tussen comp
 
 Inline tussenruimte is de ruimte binnen componenten, voor of na tekst.
 
-Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creeeren voor of na tekst. In CSS kun je de volgende properties gebruiken:
+Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creëren voor of na tekst. In CSS kun je de volgende properties gebruiken:
 
 - margin-inline-start
 - margin-inline-end
@@ -78,7 +78,7 @@ Gebruik de ‘Inline’ spacing scale om binnen componenten ruimte te creeeren v
 
 Block tussenruimte is de ruimte binnen componenten, boven of onder tekst.
 
-Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creeeren boven of onder tekst. In CSS kun je de volgende properties gebruiken:
+Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creëren boven of onder tekst. In CSS kun je de volgende properties gebruiken:
 
 - margin-block-start
 - margin-block-end
@@ -91,7 +91,7 @@ Gebruik de ‘Block’ spacing scale om binnen componenten ruimte te creeeren bo
 
 Text tussenruimte is de ruimte binnen componenten, tussen tekst en iconen.
 
-Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creeeren tussen verschillende teksten of iconen.
+Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creëren tussen verschillende teksten of iconen.
 
 ![Spacing scale met verticaal 10 blokjes. In elk blokje staat een kalender icoon en de tekst 'label'. Tussen het icoon en de tekst staan groene vlakken. De vlakken worden per blokje breeder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_concept-text.png)
 
@@ -99,7 +99,7 @@ Gebruik de ‘Text’ spacing scale om binnen componenten ruimte te creeeren tus
 
 Column tussenruimte is de horizontale ruimte tussen componenten.
 
-Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:
+Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creëren tussen componenten. In CSS kun je de volgende properties gebruiken:
 
 - margin-inline-start
 - margin-inline-end
@@ -112,7 +112,7 @@ Gebruik de ‘Column’ spacing scale om horizontaal ruimte te creeeren tussen c
 
 Row tussenruimte is de verticale ruimte tussen componenten.
 
-Gebruik de ‘Row’ spacing scale om verticaal ruimte te creeeren tussen componenten. In CSS kun je de volgende properties gebruiken:
+Gebruik de ‘Row’ spacing scale om verticaal ruimte te creëren tussen componenten. In CSS kun je de volgende properties gebruiken:
 
 - margin-block-start
 - margin-block-end
