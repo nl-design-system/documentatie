@@ -1,16 +1,18 @@
 <!-- @license CC0-1.0 -->
 
-# Gebruik geen invoerpatroon op een formulierveld
+# Vermijd invoerpatroon op een formulierveld
 
 Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.
 
 Wanneer je een gebruiker dwingt om volgens een vast patroon bijvoorbeeld van telefoonnummer in te voeren, kan dit leiden tot verwarring als ze alleen een mobiel nummer heeft.
 
-Een pattern kan ook een blokkade zijn om een formulier in te vullen. Bijvoorbeeld:
+Een vast patroon kan ook een blokkade zijn om een formulier in te vullen. Bijvoorbeeld:
 
 - Het telefoonnummer past niet in het vereiste patroon: de gebruiker wil een buitenlands nummer invoeren, maar dat kan niet.
 - De gebruiker wil belangrijke informatie toevoegen zoals: 'alleen 's middags bellen' maar dat kan niet.
 - De gebruiker begrijpt niet wat er fout gaat omdat bijvoorbeeld letters niet kunnen worden ingevoerd en er geen goede feedback is over wat er fout gaat.
+
+**Let op**: Er zijn situaties waar het precies invullen van een formulierveld vereist is, zoals bijvoorbeeld bij het invoeren van een wachtwoord. Geef in dat geval altijd duidelijk in de description aan [hoe een veld in te vullen](/richtlijnen/formulieren/voorkom-fouten/geldige-waardes).
 
 ## Wat is een patroon op een invoerveld?
 
@@ -40,7 +42,7 @@ Dan heb je pech als je geen vaste telefoon meer hebt of een buitenlands nummer w
   id="telefoon"
   name="telefoon"
   pattern="[0-9]{3}-[0-9]{7}"
-  placeholder="010-4567890"
+  placeholder="___-_______"
   autocomplete="tel"
 />
 ```
@@ -50,12 +52,12 @@ Dan heb je pech als je geen vaste telefoon meer hebt of een buitenlands nummer w
 Adam Silver vat het goed samen in zijn artikel [<span lang="en">The problem with input masks and what to do instead</span>](https://adamsilver.io/blog/the-problem-with-input-masks-and-what-to-do-instead/).
 
 - Het patroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.
-- Patronen zijn verwarrend, de cursor verspringt automatisch naar een volgende positie en speciale tekens kunnen niet worden verwijderd.
+- Afgedwongen patronen zijn verwarrend, de cursor verspringt automatisch naar een volgende positie en speciale tekens zoals '-', '(' of ')' kunnen niet worden verwijderd.
 - De placeholder met het voorbeeld kan lijken op een al ingevuld veld.
 - De placeholder met het voorbeeld verdwijnt bij het invullen en je weet niet meer hoe de rest van de waarde in te vullen.
-- Omdat de er tekens worden verwijderd of overgeslagen lijkt het alsof er wat fout gaat zonder dat er een foutmelding verschijnt.
+- Omdat de er tekens worden verwijderd of overgeslagen lijkt het alsof er wat fout gaat zonder dat er een meteen foutmelding verschijnt.
 
-In het artikel van Giovani Camara [Accessible input masking](https://giovanicamara.com/blog/accessible-input-masking/) laat hij de YouTube video [Allow users to edit anywhere](https://www.youtube.com/watch?v=rTk3XNSXJXY) zien wat er fout kan gaan als een gebruiker een waarde wil wijzigen. De cursus kan vanzelf naar het einde van de waarde springen, terwijl je het eerste karakter wilt aanpassen. Dit is voor iedereen irritant en leidt tot fouten.
+In het artikel van Giovani Camara [<span lang="en">Accessible input masking</span>](https://giovanicamara.com/blog/accessible-input-masking/) laat hij de YouTube video [<span lang="en">Allow users to edit anywhere</span>](https://www.youtube.com/watch?v=rTk3XNSXJXY) zien wat er fout kan gaan als een gebruiker een waarde wil wijzigen. De cursus kan vanzelf naar het einde van de waarde springen, terwijl je het eerste karakter wilt aanpassen. Dit is voor iedereen irritant en leidt tot fouten.
 
 Het aangeven van invoerpatronen in de placeholder of in het value-attribute kan heel zijn onduidelijk voor screenreader gebruikers. Een opsomming van underscores is niet erg informatief. Kijk en luister naar de [demo op YouTube van Giovani Camara](https://www.youtube.com/watch?v=7WWQXGgRDLc) hiervan met VoiceOver.
 

@@ -7,8 +7,15 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="postcode1">Je postcode</label>
-        <input type="text" id="postcode1" name="postcode" autocomplete="postal-code" />
+        <label for="bevestigingcode">Je bevestigingcode</label>
+        <p id="description-bevestigingcode">Vul een nummer van 8 cijfers in.</p>
+        <input
+          type="text"
+          inputmode="numeric"
+          id="bevestigingcode"
+          name="bevestigingcode"
+          aria-describedby="description-bevestigingcode"
+        />
       </>
     )}
   </Canvas>
