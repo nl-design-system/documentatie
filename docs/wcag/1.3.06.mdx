@@ -35,7 +35,9 @@ Maar je kunt nu al informatie toevoegen die nuttig is voor mensen met een cognit
 
 - Zet zichtbare tekst bij een icoontje. Dus niet alleen 3 streepjes laten zien, maar zet ook het woord 'Menu' erbij.
 - Maak gebruik van landmarks om de inhoud van een webpagina te groeperen. Zoals `<header>`, `<main>`, `<aside>` en `<footer>`.
-- Geef landmarks die niet uniek zijn en ook sections een aria-label met de functie hiervan. Bijvoorbeeld `<aside aria-label="De laatste 3 nieuwsberichten">`,
+- Geef landmarks die niet uniek zijn en ook sections een aria-label met de functie hiervan.
+
+Bijvoorbeeld, als er meerdere aside landmarks op een pagina staan, voeg dan aan elke een aria-label toe om het onderscheid aan te geven, zoals `<aside aria-label="De laatste 3 nieuwsberichten">` en `<aside aria-label="Geef je op voor de nieuwsbrief">`.
 
 Extra informatie over het doel van de link kan software in staat stellen om standaard iconen te tonen bij links, bijvoorbeeld:
 
@@ -44,15 +46,11 @@ Extra informatie over het doel van de link kan software in staat stellen om stan
 - `<a href="url" rel="prev">` met een pijltje achteruit.
 - `<a href="url" rel="external">` met een herkenbaar icoon.
 
-De [<span lang="en">Cognitive and Learning Disabilities Accessibility Task Force</span>](https://www.w3.org/TR/coga-usable/) van het W3C is bezig technieken te onderzoeken die hiervoor gebruikt kunnen worden. Eén project is [coga.personalisation](https://github.com/ayelet-seeman/coga.personalisation), die gebruik maakt van de ARIA-properties aria-function en aria-importance. Beide properties worden nog niet ondersteund in [ARIA-specificatie versie 1.2](https://www.w3.org/TR/wai-aria-1.2/).
+Is een webpagina met tekst betekenisvol ingedeeld in landmarks en kopjes, dan kunnen browsers in de zogenaamde 'Reader mode' of in het Nederlands [Lezerweergave](https://kennisportaal.visio.org/nl-nl/documenten/internet-beter-leesbaar-maken-op-de-pc) de pagina simpeler weergeven en heeft de gebruiker ook de mogelijkheid om de weergave aan te passen. Wat fijn is voor gebruikers die snel zijn afgeleid door alle reclame en de tekst in voor hen duidelijker weergave te willen lezen.
 
 Het is een interessante ontwikkeling, die zeker de moeite waard is om te volgen.
 
-## Bronnen
-
-- [<span lang="en">Making Content Usable for People with Cognitive and Learning Disabilities</span>](https://www.w3.org/TR/coga-usable/).
-- [<span lang="en">WAI-Adapt Overview, enabling users to adapt content presentation</span>](https://www.w3.org/WAI/adapt/).
-- [<span lang="en">Personalization and User Preferences</span>](https://w3c.github.io/coga/issue-papers/#personalization-and-user-preferences).
+De [<span lang="en">Cognitive and Learning Disabilities Accessibility Task Force</span>](https://www.w3.org/WAI/about/groups/task-forces/coga/) van het W3C is bezig technieken te onderzoeken die hiervoor gebruikt kunnen worden.
 
 ## Gebruikersonderzoek
 
