@@ -31,7 +31,7 @@ We verzamelen dus meer dan alleen ontwerp. Al deze onderdelen hebben dit gedeeld
 
 ## Basisonderdelen voor de hele overheid
 
-Waar veel design systems een specifieke organisatie bedienen, werkt NL Design System met organisaties verspreid over de hele overheid: van gemeenten tot Rijk.
+Waar veel design system een specifieke organisatie bedienen, werkt NL Design System met organisaties verspreid over de hele overheid: van gemeenten tot Rijk.
 
 Juist overheidsorganisaties hebben baat bij één duidelijke set herbruikbare basisonderdelen. Hierdoor kunnen vele kleinere organisaties meeliften op het onderzoek en de ontwikkeling door anderen, en iedereen kan een steentje bijdragen door kleine verbeteringen aan te dragen.
 
