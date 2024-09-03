@@ -10,7 +10,7 @@
     o = n(63246);
    const s = { title: 'Language navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Language navigation', pagination_label: 'Language navigation', description: 'E\xe9n of meerdere links om de website te openen in een andere taal.', slug: '/language-navigation' },
     a = void 0,
-    u = { id: 'componenten/language-navigation/index', title: 'Language navigation', description: 'E\xe9n of meerdere links om de website te openen in een andere taal.', source: '@site/docs/componenten/language-navigation/index.mdx', sourceDirName: 'componenten/language-navigation', slug: '/language-navigation', permalink: '/language-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/language-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Language navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Language navigation', pagination_label: 'Language navigation', description: 'E\xe9n of meerdere links om de website te openen in een andere taal.', slug: '/language-navigation' }, sidebar: 'componenten', previous: { title: 'Invalid form alert', permalink: '/invalid-form-alert' }, next: { title: 'Legend', permalink: '/legend' } },
+    u = { id: 'componenten/language-navigation/index', title: 'Language navigation', description: 'E\xe9n of meerdere links om de website te openen in een andere taal.', source: '@site/docs/componenten/language-navigation/index.mdx', sourceDirName: 'componenten/language-navigation', slug: '/language-navigation', permalink: '/language-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/language-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Language navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Language navigation', pagination_label: 'Language navigation', description: 'E\xe9n of meerdere links om de website te openen in een andere taal.', slug: '/language-navigation' }, sidebar: 'componenten', previous: { title: 'Invalid form alert', permalink: '/invalid-form-alert' }, next: { title: 'Link', permalink: '/link' } },
     l = {},
     d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -109,19 +109,19 @@
    var p = n(80407),
     v = n(66120),
     b = n(46506),
-    f = n(25953);
-   const k = 'task-list_hh8j',
+    k = n(25953);
+   const f = 'task-list_hh8j',
     _ = 'task-list-item_oypx',
     x = 'task-list-item__marker_Eefn',
     w = 'task-list-item__marker--checked_y8Vc',
     N = 'task-list-item__marker-label_XAyi',
     A = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: k, children: t });
+     return (0, l.jsx)('ul', { className: f, children: t });
     },
     L = (e) => {
      let { checked: t, title: n, description: r } = e;
-     return (0, l.jsxs)('li', { className: (0, i.Z)(_), children: [(0, l.jsxs)('div', { className: (0, i.Z)(x, { [w]: t }), children: [(0, l.jsx)('span', { className: N, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(b.aC, { role: 'presentation', children: n }), (0, l.jsx)(b.nv, { children: r })] })] });
+     return (0, l.jsxs)('li', { className: (0, i.Z)(_), children: [(0, l.jsxs)('div', { className: (0, i.Z)(x, { [w]: t }), children: [(0, l.jsx)('span', { className: N, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(b.aC, { role: 'presentation', children: n }), (0, l.jsx)(b.nv, { children: r })] })] });
     };
    var z = n(14669);
    const S = (e) => {
