@@ -6,7 +6,7 @@ Er zijn eindeloos veel varianten van de tabel, daarom is het niet mogelijk op é
 
 ## Duidelijke koppen {#duidelijke-koppen}
 
-In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveau's koppen bevatten: kop van de tabel (_caption_), kop van de kolom (_column header_) en kop van de rij (_row header_). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:
+In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveaus koppen bevatten: kop van de tabel (_caption_), kop van de kolom (_column header_) en kop van de rij (_row header_). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:
 
 - `<caption>` voor de kop van de tabel
 - `<th scope="col">` voor de kop van de kolom
@@ -70,7 +70,7 @@ Techniek 2: HTML aanbieden in twee varianten. Naast de HTML `<table>` element, o
 
 ### Koppen van tabel niet gekoppeld aan datacellen {#koppen-niet-gekoppeld}
 
-Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveau's van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
+Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveaus van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
 
 Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.
 
