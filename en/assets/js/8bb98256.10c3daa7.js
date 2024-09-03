@@ -1,4 +1,4 @@
-/*! For license information please see 8bb98256.c56d26ee.js.LICENSE.txt */
+/*! For license information please see 8bb98256.10c3daa7.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [84152],
@@ -12,7 +12,7 @@
     o = t(46506);
    const d = { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', sidebar_position: 2, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png' },
     l = void 0,
-    g = { id: 'community/events/design-systems-week-2024/programma', title: 'Programma', description: 'Programma', source: '@site/docs/community/events/design-systems-week-2024/programma.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/programma', permalink: '/en/events/design-systems-week-2024/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/programma.md', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', sidebar_position: 2, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png' }, sidebar: 'community', previous: { title: 'Over', permalink: '/en/events/design-systems-week-2024' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
+    g = { id: 'community/events/design-systems-week-2024/programma', title: 'Programma', description: 'Programma', source: '@site/docs/community/events/design-systems-week-2024/programma.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/programma', permalink: '/en/events/design-systems-week-2024/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/programma.md', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', sidebar_position: 2, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png' }, sidebar: 'community', previous: { title: 'Over', permalink: '/en/events/design-systems-week-2024' }, next: { title: 'Tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema' } },
     m = {},
     c = [{ value: 'Programma', id: 'programma', level: 2 }];
    function h(e) {
