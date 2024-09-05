@@ -32,7 +32,7 @@
    }
    function d(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, t.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'geef-duidelijk-aan-waar-een-invoerveld-is', children: 'Geef duidelijk aan waar een invoerveld is' }), '\n', (0, o.jsx)(n.p, { children: 'Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of checkbox is.' }), '\n', (0, o.jsx)(n.p, { children: 'Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn.' }), '\n', (0, o.jsxs)(n.p, { children: ['Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het ', (0, o.jsx)(n.a, { href: '/wcag/1.1.1/', children: 'WCAG-succescriterium 1.1.1 Niet-tekstuele content' }), ' (niveau AA).'] })] });
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'geef-duidelijk-aan-waar-een-invoerveld-is', children: 'Geef duidelijk aan waar een invoerveld is' }), '\n', (0, o.jsx)(n.p, { children: 'Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of checkbox is.' }), '\n', (0, o.jsx)(n.p, { children: 'Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn.' }), '\n', (0, o.jsxs)(n.p, { children: ['Het duidelijk aangeven van een invoerveld is nodig om te voldoen aan het ', (0, o.jsx)(n.a, { href: '/wcag/1.4.11/', children: 'WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content' }), ' (niveau AA).'] })] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
