@@ -1,0 +1,59 @@
+---
+title: WCAG-succescriterium 1.3.6 Identificeer het doel
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1.3.6 Identificeer het doel
+pagination_label: WCAG-succescriterium 1.3.6 Identificeer het doel
+description: Maak ten volste gebruik van de mogelijkheden van bijvoorbeeld HTML en ARIA om het doel van onderdelen van een webpagina duidelijk te maken voor software.
+slug: 1.3.6
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.3.6-summary.md";
+
+{/* prettier-ignore */}
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AAA">WCAG-succescriterium 1.3.6 Identificeer het doel</WcagHeadingGroup>
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.6 Identify Purpose</span>](https://www.w3.org/TR/WCAG22/#identify-purpose).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.3.6 Identificeer het doel](https://www.w3.org/Translations/WCAG22-nl/#identificeer-het-doel).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.6 Identify Purpose</span>](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.6 Identify Purpose</span>](https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html).
+
+## Uitleg
+
+<Summary />
+
+Maar je kunt nu al informatie toevoegen die nuttig is voor mensen met een cognitieve beperking en hulpmiddelen.
+
+- Zet zichtbare tekst bij een icoontje. Dus niet alleen 3 streepjes laten zien, maar zet ook het woord 'Menu' erbij.
+- Maak gebruik van landmarks om de inhoud van een webpagina te groeperen. Zoals `<header>`, `<main>`, `<aside>` en `<footer>`.
+- Geef landmarks die niet uniek zijn en ook sections een aria-label met de functie hiervan.
+
+Bijvoorbeeld, als er meerdere aside landmarks op een pagina staan, voeg dan aan elke een aria-label toe om het onderscheid aan te geven, zoals `<aside aria-label="De laatste 3 nieuwsberichten">` en `<aside aria-label="Geef je op voor de nieuwsbrief">`.
+
+Extra informatie over het doel van de link kan software in staat stellen om standaard iconen te tonen bij links, bijvoorbeeld:
+
+- `<a href="/" rel="home">` met een huisje.
+- `<a href="url" rel="next">` met een pijltje vooruit.
+- `<a href="url" rel="prev">` met een pijltje achteruit.
+- `<a href="url" rel="external">` met een herkenbaar icoon.
+
+Het HTML-attribuut autocomplete is ook bedoeld om hierbij te kunnen helpen.
+
+Is een webpagina met tekst betekenisvol ingedeeld in landmarks en kopjes, dan kunnen browsers in de zogenaamde 'Reader mode' of in het Nederlands [Lezerweergave](https://kennisportaal.visio.org/nl-nl/documenten/internet-beter-leesbaar-maken-op-de-pc) de pagina simpeler weergeven en heeft de gebruiker ook de mogelijkheid om de weergave aan te passen. Wat fijn is voor gebruikers die snel zijn afgeleid door alle reclame en de tekst in voor hen duidelijker weergave te willen lezen.
+
+De [<span lang="en">Cognitive and Learning Disabilities Accessibility Task Force</span>](https://www.w3.org/WAI/about/groups/task-forces/coga/) van het W3C is bezig technieken te onderzoeken die hiervoor gebruikt kunnen worden.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+<WCAGFooterInfo />
