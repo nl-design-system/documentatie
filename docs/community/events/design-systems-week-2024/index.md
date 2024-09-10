@@ -13,7 +13,7 @@ import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
 # Design Systems Week 2024
 
-<Paragraph lead>NL Design System organiseert dit jaar voor de 4e keer de Design Systems Week. Van **14 tot 17 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems** te volgen.</Paragraph>
+<Paragraph lead>NL Design System organiseert dit jaar voor de 4e keer de Design Systems Week. Van **14 tot en met 17 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems** te volgen.</Paragraph>
 
 <Paragraph>Dus werk jij aan digitale diensten bij de overheid? Meld je dan aan en we houden je op de hoogte van alle sessies. Alle sessies zijn gratis (online) bij te wonen en duren ongeveer 30 minuten.</Paragraph>
 
