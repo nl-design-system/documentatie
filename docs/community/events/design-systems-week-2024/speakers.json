@@ -74,6 +74,18 @@
     },
     "language": "nl"
   },
+  "KimDenie": {
+    "name": "Kim Denie",
+    "organisation": "",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-kim-denie.png",
+      "alt": "Kim Denie"
+    },
+    "description": {
+      "nl": "Kim is adviseur, spreker en gemeenteraadslid. Tevens is zij student aan de UvA. Ze heeft een progressieve myopie. Dit zal uiteindelijk tot volledige blindheid leiden. Door haar behandeling is zij slechtziend geworden. Als ervaringsdeskundige zet zij zich in voor een toegankelijke (online) wereld."
+    },
+    "language": "nl"
+  },
   "JeroenDuChatinier": {
     "name": "Jeroen du Chatinier",
     "organisation": "Gemeente Utrecht",

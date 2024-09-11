@@ -79,6 +79,7 @@ organisation: "",
 },
 ],
 subject: "Tips voor toegankelijke diensten",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening"
 icalLink: "/dsweek-2024/kim-denie.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
@@ -142,7 +143,7 @@ icalLink: "/dsweek-2024/vlaanderen.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T11:00:00.000Z",
+isoDateTime: "2023-10-16T11:00:00.000Z",
 speakers: [
 {
 name: "Darice de Cuba",
@@ -155,7 +156,7 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2023-10-16T13:00:00.000Z",
 speakers: [
 {
 name: "Bart Veneman",
@@ -168,7 +169,7 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2023-10-16T13:00:00.000Z",
 speakers: [
 {
 name: "Amy Cole",

@@ -27,7 +27,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace">
 
-<Paragraph>(Beschrijving volgt nog)</Paragraph>
+<Paragraph>_Meer informatie volgt_</Paragraph>
 
 </DSWSession>
 
@@ -56,6 +56,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 <Paragraph>In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van een bibliotheek met web componenten naar een dienstverlening om van bij de start bouwers van e-loketten, toepassingen en websites te ondersteunen bij het ontwerpen en ontwikkelen, met als focus: een herkenbare en eengemaakte gebruikerservaring voor burgers.</Paragraph>
 
 <Paragraph>Ze vertellen ook over de de lessons learned uit deze voorbije tien jaar.</Paragraph>
+
+</DSWSession>
+
+<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="">
+
+<Paragraph>_Meer informatie volgt_</Paragraph>
 
 </DSWSession>
 
