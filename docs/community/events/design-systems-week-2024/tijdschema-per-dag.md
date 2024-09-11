@@ -86,8 +86,12 @@ language: { abbr: "NL", description: "Nederlands" },
 isoDateTime: "2023-10-15T11:00:00.000Z",
 speakers: [
 {
-name: "Verschillende sprekers",
-organisation: "",
+name: "Bryan de Jong",
+organisation: "VNG",
+},
+{
+name: "Marieke Brouwer",
+organisation: "Gemeente Groningen",
 },
 ],
 subject: "Heartbeat: Design Systems Week editie",
@@ -117,6 +121,27 @@ language: { abbr: "NL", description: "Nederlands" },
 lang="nl-NL"
 sessions={[
 {
+isoDateTime: "2023-10-15T09:00:00.000Z",
+speakers: [
+{
+name: "Gijs Veyfeyken",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+{
+name: "Vincent Sennesael",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+{
+name: "Warre Buysse",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+],
+subject: "Vlaams Design System: 10 jaar lessons learned",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#vlaams-design-system:-10-jaar-lessons-learned",
+icalLink: "/dsweek-2024/vlaanderen.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
 isoDateTime: "2023-10-15T11:00:00.000Z",
 speakers: [
 {
@@ -126,6 +151,19 @@ organisation: "",
 ],
 subject: "Unmeasurable Accessibility: Beyond conformance",
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance",
+icalLink: "/dsweek-2024/darice-de-cuba.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-15T13:00:00.000Z",
+speakers: [
+{
+name: "Bart Veneman",
+organisation: "",
+},
+],
+subject: "Wat je allemaal niet weet over je CSS",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css",
 icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
@@ -150,6 +188,18 @@ language: { abbr: "EN", description: "English" },
 <SessionTable
 lang="nl-NL"
 sessions={[
+{
+isoDateTime: "2023-10-15T09:00:00.000Z",
+speakers: [
+{
+name: "Robbert Broersma",
+organisation: "NL Design System",
+},
+],
+subject: "Live coden",
+icalLink: "/dsweek-2024/robbert-broersma.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
 {
 isoDateTime: "2023-10-15T13:00:00.000Z",
 speakers: [
