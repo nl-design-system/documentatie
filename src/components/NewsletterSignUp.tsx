@@ -1,3 +1,4 @@
+import { useLocation } from '@docusaurus/router';
 import {
   Button,
   ButtonGroup,
@@ -28,6 +29,7 @@ interface NewsletterSignUpProps {
   workAreasId: string;
   privacyPolicyId: string;
   language: object;
+  submitText: string;
 }
 
 export const NewsletterSignUp = ({
@@ -42,6 +44,7 @@ export const NewsletterSignUp = ({
   workAreasId = '',
   privacyPolicyId = '',
   language = {},
+  submitText = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -50,6 +53,10 @@ export const NewsletterSignUp = ({
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
   const IS_ENGLISH = language && language.value === '2';
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const prefillEmail = params.get('prefillEmail');
+  const prefillName = params.get('prefillName');
 
   return (
     <form
@@ -73,6 +80,7 @@ export const NewsletterSignUp = ({
             name={emailFieldId}
             type="email"
             autoComplete="email"
+            value={prefillEmail}
             aria-required="true"
             {...register(`${emailFieldId}`, {
               required: {
@@ -101,6 +109,7 @@ export const NewsletterSignUp = ({
             id={firstNameFieldId}
             name={firstNameFieldId}
             type="text"
+            value={prefillName}
             autoComplete="given-name"
             aria-required="true"
             {...register(`${firstNameFieldId}`, {
@@ -194,7 +203,7 @@ export const NewsletterSignUp = ({
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
-          {IS_ENGLISH ? 'Sign up' : 'Aanmelden'}
+          {submitText ? submitText : IS_ENGLISH ? 'Sign up' : 'Aanmelden'}
         </Button>
       </ButtonGroup>
 
