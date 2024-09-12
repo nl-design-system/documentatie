@@ -87,6 +87,10 @@ language: { abbr: "NL", description: "Nederlands" },
 isoDateTime: "2023-10-15T11:00:00.000Z",
 speakers: [
 {
+name: "Bryan de Jong",
+organisation: "VNG / Frameless",
+},
+{
 name: "Marieke Brouwer",
 organisation: "Gemeente Groningen",
 },
