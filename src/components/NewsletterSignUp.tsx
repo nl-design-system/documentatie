@@ -80,7 +80,7 @@ export const NewsletterSignUp = ({
             name={emailFieldId}
             type="email"
             autoComplete="email"
-            value={prefillEmail}
+            defaultValue={prefillEmail}
             aria-required="true"
             {...register(`${emailFieldId}`, {
               required: {
@@ -109,7 +109,7 @@ export const NewsletterSignUp = ({
             id={firstNameFieldId}
             name={firstNameFieldId}
             type="text"
-            value={prefillName}
+            defaultValue={prefillName}
             autoComplete="given-name"
             aria-required="true"
             {...register(`${firstNameFieldId}`, {
