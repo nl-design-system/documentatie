@@ -24,6 +24,18 @@
     },
     "language": "nl"
   },
+  "BryandeJong": {
+    "name": "Bryan de Jong",
+    "organisation": "VNG",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-bryan-de-jong.png",
+      "alt": "Bryan de Jong"
+    },
+    "description": {
+      "nl": "…"
+    },
+    "language": "nl"
+  },
   "DariceDeCuba": {
     "name": "Darice de Cuba",
     "organisation": "darice.org",
@@ -107,6 +119,18 @@
     },
     "description": {
       "nl": "Lotte Bijl is een Digitale Toegankelijkheid Expert bij de Belastingdienst, waar ze product teams ondersteunt bij het verbeteren van de digitale toegankelijkheid van overheidsdiensten. Met haar expertise in gebruikersonderzoek, UX en development zorgt Lotte ervoor dat digitale oplossingen niet alleen technisch voldoen, maar ook daadwerkelijk bijdragen aan een betere gebruikerservaring."
+    },
+    "language": "nl"
+  },
+  "MariekeBrouwer": {
+    "name": "Marieke Brouwer",
+    "organisation": "Gemeente Groningen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-marieke-brouwer.png",
+      "alt": "Marieke Brouwer"
+    },
+    "description": {
+      "nl": "Marieke is adviseur dienstverlening bij de gemeente Groningen."
     },
     "language": "nl"
   },

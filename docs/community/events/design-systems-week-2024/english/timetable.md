@@ -41,7 +41,7 @@ icalLink: "/dsweek-2024/gert-hengeveld.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T13:00:00.000Z",
+isoDateTime: "2023-10-14T11:00:00.000Z",
 speakers: [
 {
 name: "Geri Reid",
