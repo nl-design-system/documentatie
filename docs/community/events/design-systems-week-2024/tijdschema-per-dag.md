@@ -79,7 +79,7 @@ organisation: "",
 },
 ],
 subject: "Tips voor toegankelijke diensten",
-sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening"
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening",
 icalLink: "/dsweek-2024/kim-denie.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
@@ -169,7 +169,7 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-16T13:00:00.000Z",
+isoDateTime: "2023-10-16T15:30:00.000Z",
 speakers: [
 {
 name: "Amy Cole",
@@ -190,7 +190,7 @@ language: { abbr: "EN", description: "English" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T09:00:00.000Z",
+isoDateTime: "2023-10-17T09:00:00.000Z",
 speakers: [
 {
 name: "Robbert Broersma",
@@ -202,7 +202,7 @@ icalLink: "/dsweek-2024/robbert-broersma.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2023-10-17T13:00:00.000Z",
 speakers: [
 {
 name: "Lotte Bijl",
@@ -213,6 +213,19 @@ subject: "Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter 
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen",
 icalLink: "/dsweek-2024/lotte-bijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-17T15:30:00.000Z",
+speakers: [
+{
+name: "Steve Messer",
+organisation: "freelance",
+},
+],
+subject: "Common direction, boring magic",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic",
+icalLink: "/dsweek-2024/steve-messer.ics",
+language: { abbr: "EN", description: "Engels" },
 }
 ]}
 />

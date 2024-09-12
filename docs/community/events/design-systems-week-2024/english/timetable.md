@@ -89,4 +89,24 @@ language: { abbr: "EN", description: "English" },
 ]}
 />
 
+## Thursday 17 October
+
+<SessionTable
+sessions={[
+{
+isoDateTime: "2023-10-17T15:30:00.000Z",
+speakers: [
+{
+name: "Steve Messer",
+organisation: "freelance",
+},
+],
+subject: "Common direction, boring magic",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/en/[program#common-direction,-boring-magic",
+icalLink: "/dsweek-2024/steve-messer.ics",
+language: { abbr: "EN", description: "Engels" },
+}
+]}
+/>
+
 </div>

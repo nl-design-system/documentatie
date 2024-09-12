@@ -59,7 +59,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="">
+<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur">
 
 <Paragraph>_Meer informatie volgt_</Paragraph>
 
