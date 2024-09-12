@@ -59,13 +59,9 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong]} organisation="NL Design System community">
+<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[{"name": "Verschillende sprekers", "organisation": "", "image": { "src": "", "alt": "" }, "description": { "nl": "" }, "language": "nl" }]} organisation="NL Design System community">
 
-<Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn.</Paragraph>
-
-<Paragraph>In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
-
-<Paragraph>Marieke Brouwer van de Gemeente Groningen: “bij de gemeente zijn wij met een klein team actief bezig met het verbeteren van de gebruikerservaring voor onze inwoners en ondernemers. Een belangrijk onderdeel van mijn rol is de implementatie van het NL Design System. We gebruiken als een van de eerste gemeentes de voorbeeldbibliotheek als basis voor ons eigen design system. In mijn presentatie zal ik laten zien hoe wij de bibliotheek gebruiken (met de plugin van token studio) en wat we hiervan hebben geleerd.”</Paragraph>
+<Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
 
 </DSWSession>
 
