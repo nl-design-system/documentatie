@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.25e48301.js.LICENSE.txt */
+/*! For license information please see fd971f9b.e3db5d6a.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -37,7 +37,7 @@
        lang: 'nl-NL',
        sessions: [
         { isoDateTime: '2024-10-14T09:00:00.000Z', speakers: [{ name: 'Gert Hengeveld', organisation: 'Chromatic' }], subject: 'Testing UI', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui', icalLink: '/dsweek-2024/gert-hengeveld.ics', language: { abbr: 'EN', description: 'English' } },
-        { isoDateTime: '2023-10-14T13:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
+        { isoDateTime: '2023-10-14T11:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
         { isoDateTime: '2023-10-14T14:30:00.000Z', speakers: [{ name: 'Mike Gifford', organisation: 'CivicActions' }], subject: 'De voordelen van open werken met design systems bij de overheid', icalLink: '/dsweek-2024/mike-gifford.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
@@ -47,8 +47,8 @@
       (0, i.jsx)(t.L, {
        lang: 'nl-NL',
        sessions: [
-        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Kim Denie', organisation: '' }], subject: 'Tips voor toegankelijke diensten', icalLink: '/dsweek-2024/kim-denie.ics', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Verschillende sprekers', organisation: '' }], subject: 'Heartbeat: Design Systems Week editie', sessionLink: 'https://nldesignsystem.nl/events/heartbeat', icalLink: '/heartbeat/heartbeat.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Kim Denie', organisation: '' }], subject: 'Tips voor toegankelijke diensten', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening', icalLink: '/dsweek-2024/kim-denie.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Marieke Brouwer', organisation: 'Gemeente Groningen' }], subject: 'Heartbeat: Design Systems Week editie', sessionLink: 'https://nldesignsystem.nl/events/heartbeat', icalLink: '/heartbeat/heartbeat.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2023-10-15T13:00:00.000Z', speakers: [{ name: 'Jeroen du Chatinier', organisation: 'Gemeente Utrecht' }], subject: 'Je eerste gebruikersonderzoek doen, hoe doe je dat?', icalLink: '/dsweek-2024/jeroen-du-chatinier.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?', language: { abbr: 'NL', description: 'Nederlands' } },
        ],
       }),
@@ -58,14 +58,34 @@
       (0, i.jsx)(t.L, {
        lang: 'nl-NL',
        sessions: [
-        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Darice de Cuba', organisation: '' }], subject: 'Unmeasurable Accessibility: Beyond conformance', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance', icalLink: '/dsweek-2024/darice-de-cuba.ics', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2023-10-15T13:00:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } },
+        {
+         isoDateTime: '2023-10-15T09:00:00.000Z',
+         speakers: [
+          { name: 'Gijs Veyfeyken', organisation: 'Agentschap Digitaal Vlaanderen' },
+          { name: 'Vincent Sennesael', organisation: 'Agentschap Digitaal Vlaanderen' },
+          { name: 'Warre Buysse', organisation: 'Agentschap Digitaal Vlaanderen' },
+         ],
+         subject: 'Vlaams Design System: 10 jaar lessons learned',
+         sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#vlaams-design-system:-10-jaar-lessons-learned',
+         icalLink: '/dsweek-2024/vlaanderen.ics',
+         language: { abbr: 'NL', description: 'Nederlands' },
+        },
+        { isoDateTime: '2023-10-16T11:00:00.000Z', speakers: [{ name: 'Darice de Cuba', organisation: '' }], subject: 'Unmeasurable Accessibility: Beyond conformance', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance', icalLink: '/dsweek-2024/darice-de-cuba.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-16T13:00:00.000Z', speakers: [{ name: 'Bart Veneman', organisation: 'Project Wallace' }], subject: 'Wat je allemaal niet weet over je CSS', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css', icalLink: '/dsweek-2024/darice-de-cuba.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-16T15:30:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
       '\n',
       (0, i.jsx)(s.h2, { id: 'donderdag-17-oktober', children: 'Donderdag 17 oktober' }),
       '\n',
-      (0, i.jsx)(t.L, { lang: 'nl-NL', sessions: [{ isoDateTime: '2023-10-15T13:00:00.000Z', speakers: [{ name: 'Lotte Bijl', organisation: 'Belastingdienst' }], subject: 'Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen', icalLink: '/dsweek-2024/lotte-bijl.ics', language: { abbr: 'NL', description: 'Nederlands' } }] }),
+      (0, i.jsx)(t.L, {
+       lang: 'nl-NL',
+       sessions: [
+        { isoDateTime: '2023-10-17T09:00:00.000Z', speakers: [{ name: 'Robbert Broersma', organisation: 'NL Design System' }], subject: 'Live coden', icalLink: '/dsweek-2024/robbert-broersma.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-17T13:00:00.000Z', speakers: [{ name: 'Lotte Bijl', organisation: 'Belastingdienst' }], subject: 'Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen', icalLink: '/dsweek-2024/lotte-bijl.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-17T15:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } },
+       ],
+      }),
       '\n',
       (0, i.jsx)('hr', {}),
       '\n',
@@ -118,8 +138,8 @@
         (0, d.jsx)(t.xD, { children: (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Tijd' : 'Time' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Spreker' : 'Speaker' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Onderwerp' : 'Subject' }), 'nl-NL' === s && (0, d.jsx)(t.xs, { children: 'Taal' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Agenda' : 'Calendar' })] }) }),
         (0, d.jsx)(t.RM, {
          children: n.map((e, n) => {
-          let { isoDateTime: i, speakers: c, subject: m, icalLink: g, sessionLink: h, language: k } = e;
-          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: c.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: h ? (0, d.jsx)(t.rU, { href: h, children: m }) : m }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: k.description, children: k.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.rU, { href: g, download: g, children: [(0, d.jsx)(t.JO, { 'aria-label': 'Download uitnodiging', children: (0, d.jsx)(a, {}) }), ' ', 'iCal'] }) })] }, n);
+          let { isoDateTime: i, speakers: c, subject: m, icalLink: g, sessionLink: k, language: h } = e;
+          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: c.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: k ? (0, d.jsx)(t.rU, { href: k, children: m }) : m }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: h.description, children: h.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.rU, { href: g, download: g, children: [(0, d.jsx)(t.JO, { 'aria-label': 'Download uitnodiging', children: (0, d.jsx)(a, {}) }), ' ', 'iCal'] }) })] }, n);
          }),
         }),
        ],

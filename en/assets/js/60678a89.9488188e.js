@@ -1,4 +1,4 @@
-/*! For license information please see 60678a89.d420f6de.js.LICENSE.txt */
+/*! For license information please see 60678a89.9488188e.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [38579],
@@ -16,6 +16,7 @@
     m = [
      { value: 'Monday 14 October', id: 'monday-14-october', level: 2 },
      { value: 'Wednesday 16 October', id: 'wednesday-16-october', level: 2 },
+     { value: 'Thursday 17 October', id: 'thursday-17-october', level: 2 },
     ];
    function h(e) {
     const s = { h1: 'h1', h2: 'h2', p: 'p', ...(0, t.a)(), ...e.components };
@@ -30,12 +31,14 @@
       (0, i.jsx)(l.L, {
        sessions: [
         { isoDateTime: '2024-10-14T09:00:00.000Z', speakers: [{ name: 'Gert Hengeveld', organisation: 'Chromatic' }], subject: 'Testing UI', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#testing-ui', icalLink: '/dsweek-2024/gert-hengeveld.ics', language: { abbr: 'EN', description: 'English' } },
-        { isoDateTime: '2023-10-14T13:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
+        { isoDateTime: '2023-10-14T11:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
         { isoDateTime: '2023-10-14T14:30:00.000Z', speakers: [{ name: 'Mike Gifford', organisation: 'CivicActions' }], subject: 'Advantages to working in the open with government design systems', icalLink: '/dsweek-2024/mike-gifford.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#advantages-to-working-in-the-open-with-government-design-systems', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
       (0, i.jsx)(s.h2, { id: 'wednesday-16-october', children: 'Wednesday 16 October' }),
       (0, i.jsx)(l.L, { sessions: [{ isoDateTime: '2023-10-15T13:00:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } }] }),
+      (0, i.jsx)(s.h2, { id: 'thursday-17-october', children: 'Thursday 17 October' }),
+      (0, i.jsx)(l.L, { sessions: [{ isoDateTime: '2023-10-17T15:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/[program#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } }] }),
      ],
     });
    }
