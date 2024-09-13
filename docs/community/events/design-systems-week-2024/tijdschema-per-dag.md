@@ -37,7 +37,7 @@ icalLink: "/dsweek-2024/gert-hengeveld.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T13:00:00.000Z",
+isoDateTime: "2023-10-14T11:00:00.000Z",
 speakers: [
 {
 name: "Geri Reid",
@@ -79,6 +79,7 @@ organisation: "",
 },
 ],
 subject: "Tips voor toegankelijke diensten",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening",
 icalLink: "/dsweek-2024/kim-denie.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
@@ -86,8 +87,8 @@ language: { abbr: "NL", description: "Nederlands" },
 isoDateTime: "2023-10-15T11:00:00.000Z",
 speakers: [
 {
-name: "Verschillende sprekers",
-organisation: "",
+name: "Marieke Brouwer",
+organisation: "Gemeente Groningen",
 },
 ],
 subject: "Heartbeat: Design Systems Week editie",
@@ -117,7 +118,28 @@ language: { abbr: "NL", description: "Nederlands" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T11:00:00.000Z",
+isoDateTime: "2023-10-15T09:00:00.000Z",
+speakers: [
+{
+name: "Gijs Veyfeyken",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+{
+name: "Vincent Sennesael",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+{
+name: "Warre Buysse",
+organisation: "Agentschap Digitaal Vlaanderen",
+},
+],
+subject: "Vlaams Design System: 10 jaar lessons learned",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#vlaams-design-system:-10-jaar-lessons-learned",
+icalLink: "/dsweek-2024/vlaanderen.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-16T11:00:00.000Z",
 speakers: [
 {
 name: "Darice de Cuba",
@@ -130,7 +152,20 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2023-10-16T13:00:00.000Z",
+speakers: [
+{
+name: "Bart Veneman",
+organisation: "Project Wallace",
+},
+],
+subject: "Wat je allemaal niet weet over je CSS",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css",
+icalLink: "/dsweek-2024/darice-de-cuba.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-16T15:30:00.000Z",
 speakers: [
 {
 name: "Amy Cole",
@@ -151,7 +186,19 @@ language: { abbr: "EN", description: "English" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2023-10-17T09:00:00.000Z",
+speakers: [
+{
+name: "Robbert Broersma",
+organisation: "NL Design System",
+},
+],
+subject: "Live coden",
+icalLink: "/dsweek-2024/robbert-broersma.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-17T13:00:00.000Z",
 speakers: [
 {
 name: "Lotte Bijl",
@@ -162,6 +209,19 @@ subject: "Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter 
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen",
 icalLink: "/dsweek-2024/lotte-bijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
+},
+{
+isoDateTime: "2023-10-17T15:30:00.000Z",
+speakers: [
+{
+name: "Steve Messer",
+organisation: "freelance",
+},
+],
+subject: "Common direction, boring magic",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic",
+icalLink: "/dsweek-2024/steve-messer.ics",
+language: { abbr: "EN", description: "Engels" },
 }
 ]}
 />

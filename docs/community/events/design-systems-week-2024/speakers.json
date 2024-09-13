@@ -12,6 +12,30 @@
     },
     "language": "en"
   },
+  "BartVeneman": {
+    "name": "Bart Veneman",
+    "organisation": "Project Wallace",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-bart-veneman.png",
+      "alt": "Bart Veneman"
+    },
+    "description": {
+      "nl": "Bart Veneman is frontend architect bij Drukwerkdeal.nl. In zijn vrije tijd werkt hij aan Project Wallace, een project om informatie over de CSS in een website te verzamelen over een langere periode. Dit project is voor developers die de complexiteit van hun CSS in de gaten willen houden en voor designers die willen weten of de juiste kleuren en lettertypes zijn gebruikt."
+    },
+    "language": "nl"
+  },
+  "BryandeJong": {
+    "name": "Bryan de Jong",
+    "organisation": "VNG",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-bryan-de-jong.png",
+      "alt": "Bryan de Jong"
+    },
+    "description": {
+      "nl": "…"
+    },
+    "language": "nl"
+  },
   "DariceDeCuba": {
     "name": "Darice de Cuba",
     "organisation": "darice.org",
@@ -50,6 +74,30 @@
     },
     "language": "en"
   },
+  "GijsVeyfeyken": {
+    "name": "Gijs Veyfeyken",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-gijs-veyfeyken.png",
+      "alt": "Gijs Veyfeyken"
+    },
+    "description": {
+      "nl": "Gijs Veyfeyken is een specialist in webtoegankelijkheid bij Digitaal Vlaanderen waar hij helpt bij het testen en verbeteren van het design system, de componenten en alle afgeleide producten zoals het webplatform Vlaanderen.be en Mijn Burgerprofiel."
+    },
+    "language": "nl"
+  },
+  "KimDenie": {
+    "name": "Kim Denie",
+    "organisation": "",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-kim-denie.png",
+      "alt": "Kim Denie"
+    },
+    "description": {
+      "nl": "Kim is adviseur, spreker en gemeenteraadslid. Tevens is zij student aan de UvA. Ze heeft een progressieve myopie. Dit zal uiteindelijk tot volledige blindheid leiden. Door haar behandeling is zij slechtziend geworden. Als ervaringsdeskundige zet zij zich in voor een toegankelijke (online) wereld."
+    },
+    "language": "nl"
+  },
   "JeroenDuChatinier": {
     "name": "Jeroen du Chatinier",
     "organisation": "Gemeente Utrecht",
@@ -71,6 +119,18 @@
     },
     "description": {
       "nl": "Lotte Bijl is een Digitale Toegankelijkheid Expert bij de Belastingdienst, waar ze product teams ondersteunt bij het verbeteren van de digitale toegankelijkheid van overheidsdiensten. Met haar expertise in gebruikersonderzoek, UX en development zorgt Lotte ervoor dat digitale oplossingen niet alleen technisch voldoen, maar ook daadwerkelijk bijdragen aan een betere gebruikerservaring."
+    },
+    "language": "nl"
+  },
+  "MariekeBrouwer": {
+    "name": "Marieke Brouwer",
+    "organisation": "Gemeente Groningen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-marieke-brouwer.png",
+      "alt": "Marieke Brouwer"
+    },
+    "description": {
+      "nl": "Marieke is adviseur dienstverlening bij de gemeente Groningen."
     },
     "language": "nl"
   },
@@ -99,5 +159,29 @@
       "en": "Steve is a freelance product strategist, working on planning.data.gov.uk at Ministry of Housing, Communities & Local Government currently. He’s passionate about innovation for the public good and open, ethical product design. He’s worked at startups, Government Digital Service and NHS Digital, and has taught product management to people from numerous companies through General Assembly."
     },
     "language": "en"
+  },
+  "VincentSennesael": {
+    "name": "Vincent Sennesael",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-vincent-sennesael.png",
+      "alt": "Vincent Sennesael"
+    },
+    "description": {
+      "nl": "Vincent Sennesael, product owner van het Vlaams Design System, was ongeveer tien jaar geleden, samen met een team enthousiaste believers, een van de grondleggers. Het doel was om alle toepassingen, websites en e-loketten van de Vlaamse overheid te voorzien van een herkenbare en eengemaakte gebruikservaring. Vandaag is het Design System niet meer weg te denken binnen de Vlaamse overheid. Ongeveer 800 toepassingen maken er ondertussen gebruik van."
+    },
+    "language": "nl"
+  },
+  "WarreBuysse": {
+    "name": "Warre Buysse",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-warre-buysse.png",
+      "alt": "Warre Buysse"
+    },
+    "description": {
+      "nl": "Warre Buysse is een specialist in het bouwen, uitrollen en schaalbaar maken van enterprise design systemen in complexe organisaties en stond samen met Vincent aan de wieg van het bouwen van Vlaams Design System tien jaar geleden."
+    },
+    "language": "nl"
   }
 }

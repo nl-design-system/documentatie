@@ -41,7 +41,7 @@ icalLink: "/dsweek-2024/gert-hengeveld.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T13:00:00.000Z",
+isoDateTime: "2023-10-14T11:00:00.000Z",
 speakers: [
 {
 name: "Geri Reid",
@@ -86,6 +86,26 @@ icalLink: "/dsweek-2024/amy-cole.ics",
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/en/program#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams",
 language: { abbr: "EN", description: "English" },
 },
+]}
+/>
+
+## Thursday 17 October
+
+<SessionTable
+sessions={[
+{
+isoDateTime: "2023-10-17T15:30:00.000Z",
+speakers: [
+{
+name: "Steve Messer",
+organisation: "freelance",
+},
+],
+subject: "Common direction, boring magic",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/en/[program#common-direction,-boring-magic",
+icalLink: "/dsweek-2024/steve-messer.ics",
+language: { abbr: "EN", description: "Engels" },
+}
 ]}
 />
 

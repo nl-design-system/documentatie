@@ -25,6 +25,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace">
+
+<Paragraph>_Meer informatie volgt_</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org">
 
 <Paragraph>Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds niet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan de hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.</Paragraph>
@@ -42,6 +48,26 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 <Paragraph>Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het onbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht eentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn.</Paragraph>
 
 <Paragraph>In deze ‘choose your own adventure’ sessie, ontdek je hoe de principes van design systems het pad naar een nieuwe uitdaging verlichten. Ben je klaar om te lachen, leren en misschien een beetje verdwalen? Ga mee op deze zoektocht naar de beste manier om teams mee te krijgen met digitale toegankelijkheid.</Paragraph>
+
+</DSWSession>
+
+<DSWSession title="Vlaams Design System: 10 jaar lessons learned" speakers={[speakers.GijsVeyfeyken, speakers.VincentSennesael, speakers.WarreBuysse]} organisation="Agentschap Digitaal Vlaanderen">
+
+<Paragraph>In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van een bibliotheek met web componenten naar een dienstverlening om van bij de start bouwers van e-loketten, toepassingen en websites te ondersteunen bij het ontwerpen en ontwikkelen. Met als focus: een herkenbare en eengemaakte gebruikerservaring voor burgers.</Paragraph>
+
+<Paragraph>Ze vertellen ook over de de lessons learned uit deze voorbije tien jaar.</Paragraph>
+
+</DSWSession>
+
+<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[{"name": "Verschillende sprekers", "organisation": "", "image": { "src": "", "alt": "" }, "description": { "nl": "" }, "language": "nl" }]} organisation="NL Design System community">
+
+<Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
+
+</DSWSession>
+
+<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur">
+
+<Paragraph>_Meer informatie volgt_</Paragraph>
 
 </DSWSession>
 
