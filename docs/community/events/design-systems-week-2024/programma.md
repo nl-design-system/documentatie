@@ -67,7 +67,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur">
 
-<Paragraph>_Meer informatie volgt_</Paragraph>
+<Paragraph>Hoe is het om te leven met een visuele beperking? Wat zijn de problemen waar je geheel verwacht of onverwachts tegenaan loopt? In deze sessie zal Kim Denie haar eigen verhaal vertellen en vanuit haar ervaringsdeskundigheid toelichten hoe je bijvoorbeeld achter het loket, op de werkvloer en online zo toegankelijk en inclusief mogelijk kan zijn.</Paragraph>
 
 </DSWSession>
 
