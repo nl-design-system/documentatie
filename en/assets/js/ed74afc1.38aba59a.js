@@ -18,7 +18,7 @@
      { value: 'Levende Backlog', id: 'levende-backlog', level: 2 },
     ],
     h = 'Select',
-    j = 'Biedt de mogelijkheid om \xe9\xe9n optie te selecteren uit een opgeklapte lijst.',
+    j = 'Biedt de mogelijkheid om \xe9\xe9n optie te selecteren uit een opengeklapte lijst.',
     y = 34,
     g = i.find((e) => e.number === y);
    function m(e) {
