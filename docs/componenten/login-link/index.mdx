@@ -1,0 +1,39 @@
+---
+title: Login link
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Login link
+pagination_label: Login link
+description: Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.
+slug: /login-link
+keywords:
+  - button
+  - inloggen
+  - action
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { Backlog, DefinitionOfDone, Implementations, Introduction } from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Login link";
+export const description = "Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.";
+export const issueNumber = 268;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Levende Backlog
+
+<Backlog component={component} headingLevel={3} />
