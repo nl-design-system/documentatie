@@ -83,7 +83,7 @@
     "@docusaurus/plugin-content-docs": "3.1.0",
     "@docusaurus/theme-classic": "3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
-    "@docusaurus/types": "3.1.0",
+    "@docusaurus/types": "3.5.2",
     "@fontsource/fira-sans": "5.1.0",
     "@fontsource/open-sans": "5.1.0",
     "@fontsource/source-sans-pro": "5.1.0",
