@@ -71,7 +71,7 @@ language: { abbr: "EN", description: "English" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T11:00:00.000Z",
+isoDateTime: "2023-10-15T09:00:00.000Z",
 speakers: [
 {
 name: "Kim Denie",
