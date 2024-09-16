@@ -17,7 +17,7 @@
     "directory": "packages/nlds-design-tokens"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "5.0.20",
+    "@fontsource/fira-sans": "5.0.22",
     "@fontsource/source-sans-pro": "5.0.8",
     "firacode": "6.2.0"
   },
