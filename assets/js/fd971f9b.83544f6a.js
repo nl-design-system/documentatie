@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.5c5e4076.js.LICENSE.txt */
+/*! For license information please see fd971f9b.83544f6a.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -10,7 +10,7 @@
     t = n(31266);
    const r = { title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' },
     o = 'Tijdschema',
-    d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/en/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
+    d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/events/design-systems-week-2024/en' } },
     l = {},
     c = [
      { value: 'Maandag 14 oktober', id: 'maandag-14-oktober', level: 2 },
@@ -47,7 +47,7 @@
       (0, i.jsx)(t.L, {
        lang: 'nl-NL',
        sessions: [
-        { isoDateTime: '2023-10-15T11:00:00.000Z', speakers: [{ name: 'Kim Denie', organisation: '' }], subject: 'Tips voor toegankelijke diensten', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening', icalLink: '/dsweek-2024/kim-denie.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2023-10-15T09:00:00.000Z', speakers: [{ name: 'Kim Denie', organisation: '' }], subject: 'Tips voor toegankelijke diensten', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening', icalLink: '/dsweek-2024/kim-denie.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         {
          isoDateTime: '2023-10-15T11:00:00.000Z',
          speakers: [
