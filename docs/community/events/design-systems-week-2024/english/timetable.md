@@ -41,7 +41,7 @@ icalLink: "/dsweek-2024/gert-hengeveld.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T11:00:00.000Z",
+isoDateTime: "2024-10-14T11:00:00.000Z",
 speakers: [
 {
 name: "Geri Reid",
@@ -54,7 +54,7 @@ icalLink: "/dsweek-2024/geri-reid.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T14:30:00.000Z",
+isoDateTime: "2024-10-14T14:30:00.000Z",
 speakers: [
 {
 name: "Mike Gifford",
@@ -74,7 +74,7 @@ language: { abbr: "EN", description: "English" },
 <SessionTable
 sessions={[
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2024-10-15T13:00:00.000Z",
 speakers: [
 {
 name: "Amy Cole",
@@ -94,7 +94,20 @@ language: { abbr: "EN", description: "English" },
 <SessionTable
 sessions={[
 {
-isoDateTime: "2023-10-17T15:30:00.000Z",
+isoDateTime: "2024-10-17T11:00:00.000Z",
+speakers: [
+{
+name: "Ahmad Shadeed",
+organisation: "independent",
+},
+],
+subject: "RTL Styling in CSS",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/en/programma#rtl-styling-in-css",
+icalLink: "/dsweek-2024/ahmad-shadeed.ics",
+language: { abbr: "EN", description: "Engels" },
+},  
+{
+isoDateTime: "2024-10-17T15:30:00.000Z",
 speakers: [
 {
 name: "Steve Messer",
