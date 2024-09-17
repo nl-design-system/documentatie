@@ -69,7 +69,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
 
-<Paragraph>Bryan de Jong van VNG en Frameless: “we maken een aantal templates beschikbaar in de community, om het nog makkelijker te maken te maken om thema's te maken.”</Paragraph>
+<Paragraph>Bryan de Jong van VNG en Frameless: “We maken het makkelijker voor organisaties om aan de slag te gaan met NL Design System door het beschikbaar stellen van templates, documentatie en thema tooling binnen de community. Hiervoor gebruiken we community componenten en bestaande UX onderzoeken en designs.”</Paragraph>
 
 <Paragraph>Marieke Brouwer van de Gemeente Groningen: “bij de gemeente zijn wij met een klein team actief bezig met het verbeteren van de gebruikerservaring voor onze inwoners en ondernemers. Een belangrijk onderdeel van mijn rol is de implementatie van het NL Design System. We gebruiken als een van de eerste gemeentes de voorbeeldbibliotheek als basis voor ons eigen design system. In mijn presentatie zal ik laten zien hoe wij de bibliotheek gebruiken (met de plugin van token studio) en wat we hiervan hebben geleerd.”</Paragraph>
 
