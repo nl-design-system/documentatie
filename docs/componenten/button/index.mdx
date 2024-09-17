@@ -100,6 +100,7 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
   ].map(({ checked, name, description, link }, index) => (
     <TaskListItem
+      headingLevel={4}
       checked={checked}
       title={link ? <Link href={link}>{name}</Link> : name}
       key={index}
