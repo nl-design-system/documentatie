@@ -70,8 +70,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.2.55)(eslint@8.57.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
       '@docusaurus/tsconfig':
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.5.2
+        version: 3.5.2
       '@docusaurus/types':
         specifier: 3.1.0
         version: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1235,8 +1235,8 @@ packages:
     resolution: {integrity: sha512-DApE4AbDI+WBajihxB54L4scWQhVGNZAochlC9fkbciPuFAgdRBD3NREb0rgfbKexDC/rioppu/WJA0u8tS+yA==}
     engines: {node: '>=18.0'}
 
-  '@docusaurus/tsconfig@3.1.0':
-    resolution: {integrity: sha512-PE6fSuj5gJy5sNC1OO+bYAU1/xZH5YqddGjhrNu3/T7OAUroqkMZfVl13Tz70CjYB8no4OWcraqSkObAeNdIcQ==}
+  '@docusaurus/tsconfig@3.5.2':
+    resolution: {integrity: sha512-rQ7toURCFnWAIn8ubcquDs0ewhPwviMzxh6WpRjBW7sJVCXb6yzwUaY3HMNa0VXCFw+qkIbFywrMTf+Pb4uHWQ==}
 
   '@docusaurus/types@3.1.0':
     resolution: {integrity: sha512-VaczOZf7+re8aFBIWnex1XENomwHdsSTkrdX43zyor7G/FY4OIsP6X28Xc3o0jiY0YdNuvIDyA5TNwOtpgkCVw==}
@@ -9339,7 +9339,7 @@ snapshots:
       fs-extra: 11.2.0
       tslib: 2.6.2
 
-  '@docusaurus/tsconfig@3.1.0': {}
+  '@docusaurus/tsconfig@3.5.2': {}
 
   '@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
