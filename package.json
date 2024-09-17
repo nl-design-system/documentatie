@@ -60,7 +60,7 @@
     "test-update": "npm-run-all --sequential clean lint build"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.0",
+    "@docusaurus/core": "3.5.2",
     "@docusaurus/preset-classic": "3.1.0",
     "@docusaurus/theme-common": "3.1.0",
     "@docusaurus/theme-search-algolia": "3.1.0",
