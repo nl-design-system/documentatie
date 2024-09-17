@@ -1,4 +1,4 @@
-import { Heading3, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading, type HeadingProps, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
 import React, { PropsWithChildren } from 'react';
@@ -10,9 +10,10 @@ interface TaskListItemProps {
   title: string;
   description: string;
   checked: boolean;
+  headingLevel: HeadingProps['level'];
 }
 
-export const TaskListItem = ({ checked, title, description }: TaskListItemProps) => {
+export const TaskListItem = ({ checked, title, description, headingLevel = 3 }: TaskListItemProps) => {
   return (
     <li className={clsx(style['task-list-item'])}>
       <div
@@ -24,7 +25,9 @@ export const TaskListItem = ({ checked, title, description }: TaskListItemProps)
         {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
       </div>
       <div>
-        <Heading3 role="presentation">{title}</Heading3>
+        <Heading appearance="utrecht-heading-3" level={headingLevel}>
+          {title}
+        </Heading>
         <Paragraph>{description}</Paragraph>
       </div>
     </li>
