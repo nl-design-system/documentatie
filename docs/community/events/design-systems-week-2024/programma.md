@@ -25,13 +25,13 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace">
+<DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace" captioned>
 
 <Paragraph>_Meer informatie volgt_</Paragraph>
 
 </DSWSession>
 
-<DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org">
+<DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org" captioned>
 
 <Paragraph>Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds niet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan de hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.</Paragraph>
 
@@ -51,7 +51,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Vlaams Design System: 10 jaar lessons learned" speakers={[speakers.GijsVeyfeyken, speakers.VincentSennesael, speakers.WarreBuysse]} organisation="Agentschap Digitaal Vlaanderen">
+<DSWSession title="Vlaams Design System: 10 jaar lessons learned" speakers={[speakers.GijsVeyfeyken, speakers.VincentSennesael, speakers.WarreBuysse]} organisation="Agentschap Digitaal Vlaanderen" captioned>
 
 <Paragraph>In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van een bibliotheek met web componenten naar een dienstverlening om van bij de start bouwers van e-loketten, toepassingen en websites te ondersteunen bij het ontwerpen en ontwikkelen. Met als focus: een herkenbare en eengemaakte gebruikerservaring voor burgers.</Paragraph>
 
@@ -59,7 +59,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong]} organisation="NL Design System community">
+<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong]} organisation="NL Design System community" captioned>
 
 <Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
 
@@ -69,13 +69,13 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur">
+<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur" captioned>
 
 <Paragraph>Hoe is het om te leven met een visuele beperking? Wat zijn de problemen waar je geheel verwacht of onverwachts tegenaan loopt? In deze sessie zal Kim Denie haar eigen verhaal vertellen en vanuit haar ervaringsdeskundigheid toelichten hoe je bijvoorbeeld achter het loket, op de werkvloer en online zo toegankelijk en inclusief mogelijk kan zijn.</Paragraph>
 
 </DSWSession>
 
-<DSWSession title="Je eerste gebruikersonderzoek doen, hoe doe je dat?" speakers={[speakers.JeroenDuChatinier]} organisation="Gemeente Utrecht">
+<DSWSession title="Je eerste gebruikersonderzoek doen, hoe doe je dat?" speakers={[speakers.JeroenDuChatinier]} organisation="Gemeente Utrecht" captioned>
 
 <Paragraph>Gebruikersonderzoeken doen is leuk. Je krijgt van de mensen voor wie je het echt doet, te horen wat je goed doet, en wat er niet lekker gaat. Daardoor kan je verbeteringen doorvoeren die er voor je gebruikers echt toe doen.</Paragraph>
 
@@ -85,7 +85,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst">
+<DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst" captioned>
 
 <Paragraph>Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun diensten, met als doel iedereen te kunnen bedienen, ongeacht hun beperkingen. Maar hoe bepaal je welke problemen na een WCAG-audit de hoogste prioriteit hebben, zodat ontwikkelteams snel de grootste impact voor gebruikers kunnen realiseren? En hoe voorkom je toekomstige toegankelijkheidsproblemen voor gebruikers? In deze sessie deelt Lotte Bijl hoe de Belastingdienst inclusief gebruikersonderzoek heeft ingezet om deze vragen te kunnen beantwoorden en vertelt ze over de inzichten en de uitdagingen die zij tegenkwamen bij het organiseren van deze onderzoeken.</Paragraph>
 
