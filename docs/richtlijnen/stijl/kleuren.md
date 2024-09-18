@@ -67,14 +67,14 @@ Er zijn verschillende vormen van kleurenblindheid. Je kunt testen hoe jouw ontwe
 
 ### Gebruik kleur met een doel.
 
-Als je kleuren gebruikt doe je dat met een bepaald doel, hierdoor hebben ze een betekenis. Het is belangrijk dat die kleur consistent hoort bij die betekenis. Bijvoorbeeld: rood wordt gebruikt om risico aan te geven, of een blokkade door een foutmelding. Gebruik rood dan niet wanneer je juist wél ergens op moet klikken, zoals een link of een verzendknop.
+Als je kleuren gebruikt doe je dat met een bepaald doel, hierdoor hebben ze een betekenis. Het is belangrijk dat die kleur consistent hoort bij die betekenis. Bijvoorbeeld: rood wordt gebruikt om risico aan te geven, of een blokkade door een foutmelding. Gebruik rood dan niet wanneer je juist wél ergens op moet klikken, zoals een link of een verzendbutton.
 
 **Inzicht vanuit onderzoek.**
-Uit een onderzoek van Gemeente Utrecht blijkt dat de kleur rood mensen die laaggeletterd zijn afschrikt. Bijvoorbeeld als achtergrondkleur van een knop. De tekst wordt niet gelezen, de laaggeletterde acteert op kleur. Deze kleur wordt daarom niet langer als standaard interactie kleur toegepast.
+Uit een onderzoek van Gemeente Utrecht blijkt dat de kleur rood mensen die laaggeletterd zijn afschrikt. Bijvoorbeeld als achtergrondkleur van een button. De tekst wordt niet gelezen, de laaggeletterde acteert op kleur. Deze kleur wordt daarom niet langer als standaard interactie kleur toegepast.
 
 #### Signaalkleuren
 
-Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een belangrijke rol hebben. Gebruik rood dan niet als primaire kleur voor interactieve elementen zoals een link of button. Probeer deze 'stoplichtkleuren' op plekken te gebruiken waar ze je huisstijl ondersteunen maar geen verwarring veroorzaken voor gebruikers. Daarnaast zijn ze ook inzetbaar als signaalkleur voor bijvoorbeeld een fout- of succesmelding.
+Het kan zijn dat in je huisstijl de 'stoplichtkleuren' rood, amber of groen een belangrijke rol hebben. Gebruik rood dan niet als primaire kleur voor interactieve elementen zoals een link of button. Probeer deze 'stoplichtkleuren' op plekken te gebruiken waar ze je huisstijl ondersteunen, maar geen verwarring veroorzaken voor gebruikers. Daarnaast zijn ze ook inzetbaar als signaalkleur voor bijvoorbeeld een fout- of succesmelding.
 
 #### Interactie
 

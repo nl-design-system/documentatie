@@ -26,7 +26,7 @@ Taal in het NL Design System bestaat uit meerdere niveaus. Op een hoog niveau ge
 
 - Informerende tekst: Lopende artikel tekst, tabellen tekst.
 - Service-content, zoals een uitleg, veelgestelde vragen en contactgegevens.
-- Teksten in formulieren, zoals knoptekst, formulierlabels, feedbacktekst en contextuele uitleg.
+- Teksten in formulieren, zoals buttontekst, formulierlabels, feedbacktekst en contextuele uitleg.
 
 ### Voor wie schrijven we
 
