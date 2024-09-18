@@ -37,7 +37,7 @@ icalLink: "/dsweek-2024/gert-hengeveld.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T11:00:00.000Z",
+isoDateTime: "2024-10-14T11:00:00.000Z",
 speakers: [
 {
 name: "Geri Reid",
@@ -50,7 +50,7 @@ icalLink: "/dsweek-2024/geri-reid.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
-isoDateTime: "2023-10-14T14:30:00.000Z",
+isoDateTime: "2024-10-14T14:30:00.000Z",
 speakers: [
 {
 name: "Mike Gifford",
@@ -71,7 +71,7 @@ language: { abbr: "EN", description: "English" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T09:00:00.000Z",
+isoDateTime: "2024-10-15T09:00:00.000Z",
 speakers: [
 {
 name: "Kim Denie",
@@ -84,7 +84,7 @@ icalLink: "/dsweek-2024/kim-denie.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T11:00:00.000Z",
+isoDateTime: "2024-10-15T11:00:00.000Z",
 speakers: [
 {
 name: "Bryan de Jong",
@@ -101,7 +101,7 @@ icalLink: "/dsweek-2024/heartbeat.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-15T13:00:00.000Z",
+isoDateTime: "2024-10-15T13:00:00.000Z",
 speakers: [
 {
 name: "Jeroen du Chatinier",
@@ -122,7 +122,7 @@ language: { abbr: "NL", description: "Nederlands" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-15T09:00:00.000Z",
+isoDateTime: "2024-10-15T09:00:00.000Z",
 speakers: [
 {
 name: "Gijs Veyfeyken",
@@ -143,7 +143,7 @@ icalLink: "/dsweek-2024/vlaanderen.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-16T11:00:00.000Z",
+isoDateTime: "2024-10-16T11:00:00.000Z",
 speakers: [
 {
 name: "Darice de Cuba",
@@ -156,7 +156,7 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-16T13:00:00.000Z",
+isoDateTime: "2024-10-16T13:00:00.000Z",
 speakers: [
 {
 name: "Bart Veneman",
@@ -169,7 +169,7 @@ icalLink: "/dsweek-2024/darice-de-cuba.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-16T15:30:00.000Z",
+isoDateTime: "2024-10-16T15:30:00.000Z",
 speakers: [
 {
 name: "Amy Cole",
@@ -190,7 +190,7 @@ language: { abbr: "EN", description: "English" },
 lang="nl-NL"
 sessions={[
 {
-isoDateTime: "2023-10-17T09:00:00.000Z",
+isoDateTime: "2024-10-17T09:00:00.000Z",
 speakers: [
 {
 name: "Robbert Broersma",
@@ -202,7 +202,7 @@ icalLink: "/dsweek-2024/robbert-broersma.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-17T13:00:00.000Z",
+isoDateTime: "2024-10-17T13:00:00.000Z",
 speakers: [
 {
 name: "Lotte Bijl",
@@ -215,7 +215,20 @@ icalLink: "/dsweek-2024/lotte-bijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2023-10-17T15:30:00.000Z",
+isoDateTime: "2024-10-17T11:00:00.000Z",
+speakers: [
+{
+name: "Ahmad Shadeed",
+organisation: "independent",
+},
+],
+subject: "RTL Styling in CSS",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#rtl-styling-in-css",
+icalLink: "/dsweek-2024/ahmad-shadeed.ics",
+language: { abbr: "EN", description: "Engels" },
+},
+{
+isoDateTime: "2024-10-17T15:30:00.000Z",
 speakers: [
 {
 name: "Steve Messer",
