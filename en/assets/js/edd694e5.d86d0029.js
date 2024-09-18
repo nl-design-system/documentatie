@@ -16,7 +16,7 @@
    }
   },
   94150: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => f, frontMatter: () => a, metadata: () => d, toc: () => u });
+   i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => j, frontMatter: () => a, metadata: () => d, toc: () => u });
    var r = i(52676),
     t = i(24785),
     l = i(2334),
@@ -24,14 +24,14 @@
     s = i(23680);
    const a = { title: 'Wanneer gebruik je welk formulierelement? | Richtlijnen', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Introductie wanneer welk element?', sidebar_position: 14, pagination_label: 'Wanneer gebruik je welk formulierelement', description: 'Richtlijnen voor het kiezen van formulierelementen.', slug: '/richtlijnen/formulieren/wanneer-welk-form-element/', keywords: ['informatie', 'formulier', 'design', 'code'] },
     c = 'Wanneer gebruik je welk formulierelement',
-    d = { id: 'richtlijnen/formulieren/when-which/README', title: 'Wanneer gebruik je welk formulierelement? | Richtlijnen', description: 'Richtlijnen voor het kiezen van formulierelementen.', source: '@site/docs/richtlijnen/formulieren/when-which/README.mdx', sourceDirName: 'richtlijnen/formulieren/when-which', slug: '/richtlijnen/formulieren/wanneer-welk-form-element/', permalink: '/en/richtlijnen/formulieren/wanneer-welk-form-element/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/when-which/README.mdx', tags: [], version: 'current', sidebarPosition: 14, frontMatter: { title: 'Wanneer gebruik je welk formulierelement? | Richtlijnen', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Introductie wanneer welk element?', sidebar_position: 14, pagination_label: 'Wanneer gebruik je welk formulierelement', description: 'Richtlijnen voor het kiezen van formulierelementen.', slug: '/richtlijnen/formulieren/wanneer-welk-form-element/', keywords: ['informatie', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Controleren en aanpassen', permalink: '/en/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen' }, next: { title: 'Wanneer gebruik je welk formulierelement', permalink: '/en/richtlijnen/formulieren/wanneer-welk-form-element/' } },
+    d = { id: 'richtlijnen/formulieren/when-which/README', title: 'Wanneer gebruik je welk formulierelement? | Richtlijnen', description: 'Richtlijnen voor het kiezen van formulierelementen.', source: '@site/docs/richtlijnen/formulieren/when-which/README.mdx', sourceDirName: 'richtlijnen/formulieren/when-which', slug: '/richtlijnen/formulieren/wanneer-welk-form-element/', permalink: '/en/richtlijnen/formulieren/wanneer-welk-form-element/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/when-which/README.mdx', tags: [], version: 'current', sidebarPosition: 14, frontMatter: { title: 'Wanneer gebruik je welk formulierelement? | Richtlijnen', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Introductie wanneer welk element?', sidebar_position: 14, pagination_label: 'Wanneer gebruik je welk formulierelement', description: 'Richtlijnen voor het kiezen van formulierelementen.', slug: '/richtlijnen/formulieren/wanneer-welk-form-element/', keywords: ['informatie', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Vermijd invoerpatronen', permalink: '/en/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen' }, next: { title: 'Wanneer gebruik je welk formulierelement', permalink: '/en/richtlijnen/formulieren/wanneer-welk-form-element/' } },
     m = {},
     u = [{ value: 'Deze documentatie heeft nu een eigen pagina', id: 'deze-documentatie-heeft-nu-een-eigen-pagina', level: 2 }];
    function h(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', ...(0, t.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(n.h1, { id: 'wanneer-gebruik-je-welk-formulierelement', children: 'Wanneer gebruik je welk formulierelement' }), '\n', (0, r.jsx)(n.p, { children: 'Je wilt natuurlijk dat zoveel mogelijk mensen een formulier kunnen invullen op de makkelijkste manier. We geven twee richtlijnen die hierbij helpen.' }), '\n', (0, r.jsx)(o.l, { excludeDocIDs: ['richtlijnen/formulieren/when-which/README'] }), '\n', (0, r.jsx)(n.h2, { id: 'deze-documentatie-heeft-nu-een-eigen-pagina', children: 'Deze documentatie heeft nu een eigen pagina' }), '\n', (0, r.jsx)(l._, { id: 'zorg-dat-iedereen-een-formulierelement-kan-bedienen-of-geef-een-alternatief', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen', children: 'Zorg dat iedereen een formulierelement kan bedienen of geef een\nalternatief' }), '.'] }) }), '\n', (0, r.jsx)(l._, { id: 'kies-voor-het-meest-gebruiksvriendelijke-formulierelement', children: (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid', children: 'Kies voor het meest gebruiksvriendelijke\nformulierelement' }), '.'] }) }), '\n', (0, r.jsxs)(n.p, { children: ['Er is nog veel te onderzoeken over wat het beste formulierelement is voor wat je wilt uitvragen. Doe je gebruikersonderzoek? Deel dan alsjeblieft je bevindingen op ', (0, r.jsx)(n.a, { href: 'http://gebruikersonderzoeken.nl/', children: 'gebruikersonderzoeken.nl' }), ' zodat we hiervan allemaal kunnen leren.'] }), '\n', (0, r.jsx)(s.ZP, {})] });
    }
-   function f(e = {}) {
+   function j(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(h, { ...e }) }) : h(e);
    }
@@ -59,7 +59,7 @@
     };
   },
   20537: (e, n, i) => {
-   i.d(n, { Z: () => f });
+   i.d(n, { Z: () => j });
    var r = i(34221),
     t = i(90441),
     l = i(56150),
@@ -94,9 +94,9 @@
    function h(e) {
     let { className: n } = e;
     const i = (0, r.jA)();
-    return (0, a.jsx)(f, { items: i.items, className: n });
+    return (0, a.jsx)(j, { items: i.items, className: n });
    }
-   function f(e) {
+   function j(e) {
     const { items: n, className: i } = e;
     if (!n) return (0, a.jsx)(h, { ...e });
     const t = (0, r.MN)(n);
