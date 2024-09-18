@@ -16,6 +16,7 @@ interface DSWSessionProps {
   lang?: 'en' | 'nl';
   organisation: string;
   videoId?: string;
+  captioned?: boolean;
 }
 
 interface DSWSpeaker {
@@ -37,6 +38,7 @@ export const DSWSession = ({
   organisation,
   videoId,
   children,
+  captioned,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
@@ -54,6 +56,11 @@ export const DSWSession = ({
     {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (
       <Paragraph>
         <b>Goed te weten:</b> Deze sessie is in het Engels.
+      </Paragraph>
+    )}
+    {captioned && (
+      <Paragraph>
+        <b>Goed te weten:</b> Bij deze sessie is een schrijftolk aanwezig.
       </Paragraph>
     )}
     <aside className={clsx(style['dsw-session__speakers'])}>
