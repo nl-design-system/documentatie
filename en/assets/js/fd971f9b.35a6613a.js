@@ -1,10 +1,10 @@
-/*! For license information please see fd971f9b.64a18d03.js.LICENSE.txt */
+/*! For license information please see fd971f9b.35a6613a.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
  {
   81515: (e, s, n) => {
-   n.r(s), n.d(s, { assets: () => l, contentTitle: () => o, default: () => g, frontMatter: () => r, metadata: () => d, toc: () => m });
+   n.r(s), n.d(s, { assets: () => l, contentTitle: () => o, default: () => g, frontMatter: () => r, metadata: () => d, toc: () => c });
    var i = n(52676),
     a = n(24785),
     t = n(81564);
@@ -12,7 +12,7 @@
     o = 'Tijdschema',
     d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/en/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
     l = {},
-    m = [
+    c = [
      { value: 'Maandag 14 oktober', id: 'maandag-14-oktober', level: 2 },
      { value: 'Dinsdag 15 oktober', id: 'dinsdag-15-oktober', level: 2 },
      { value: 'Woensdag 16 oktober', id: 'woensdag-16-oktober', level: 2 },
@@ -21,7 +21,7 @@
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
      { value: 'Toegankelijkheid', id: 'toegankelijkheid', level: 2 },
     ];
-   function c(e) {
+   function m(e) {
     const s = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', strong: 'strong', ...(0, a.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, {
      children: [
@@ -38,6 +38,7 @@
        sessions: [
         { isoDateTime: '2024-10-14T09:00:00.000Z', speakers: [{ name: 'Gert Hengeveld', organisation: 'Chromatic' }], subject: 'Testing UI', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui', icalLink: '/dsweek-2024/gert-hengeveld.ics', language: { abbr: 'EN', description: 'English' } },
         { isoDateTime: '2024-10-14T11:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
+        { isoDateTime: '2024-10-14T13:00:00.000Z', speakers: [{ name: 'Thijs Louisse', organisation: 'ING' }], subject: '', icalLink: '/dsweek-2024/thijs-louisse.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2024-10-14T14:30:00.000Z', speakers: [{ name: 'Mike Gifford', organisation: 'CivicActions' }], subject: 'De voordelen van open werken met design systems bij de overheid', icalLink: '/dsweek-2024/mike-gifford.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
@@ -116,11 +117,11 @@
    }
    function g(e = {}) {
     const { wrapper: s } = { ...(0, a.a)(), ...e.components };
-    return s ? (0, i.jsx)(s, { ...e, children: (0, i.jsx)(c, { ...e }) }) : c(e);
+    return s ? (0, i.jsx)(s, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
    }
   },
   81564: (e, s, n) => {
-   n.d(s, { L: () => m });
+   n.d(s, { L: () => c });
    var i = n(4839),
     a = (0, n(69804).Z)('outline', 'calendar-check', 'IconCalendarCheck', [
      ['path', { d: 'M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6', key: 'svg-0' }],
@@ -138,19 +139,19 @@
      let { name: s, organisation: n } = e;
      return (0, d.jsxs)(t.nv, { className: (0, r.Z)(o['session-table__speaker'], o.speaker), children: [(0, d.jsx)(t.JO, { className: o.speaker__icon, children: (0, d.jsx)(i.Z, {}) }), (0, d.jsx)('span', { className: (0, r.Z)(o.speaker__name), children: s }), (0, d.jsx)('br', {}), (0, d.jsx)('span', { className: (0, r.Z)(o.speaker__organisation), children: n })] });
     },
-    m = (e) => {
-     let { lang: s, sessions: n, className: i, ...m } = e;
+    c = (e) => {
+     let { lang: s, sessions: n, className: i, ...c } = e;
      return (0, d.jsx)('div', {
       className: (0, r.Z)(o['session-table-container'], i),
       children: (0, d.jsxs)(t.iA, {
        className: (0, r.Z)(o['session-table'], i),
-       ...m,
+       ...c,
        children: [
         (0, d.jsx)(t.xD, { children: (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Tijd' : 'Time' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Spreker' : 'Speaker' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Onderwerp' : 'Subject' }), 'nl-NL' === s && (0, d.jsx)(t.xs, { children: 'Taal' }), (0, d.jsx)(t.xs, { children: 'nl-NL' === s ? 'Agenda' : 'Calendar' })] }) }),
         (0, d.jsx)(t.RM, {
          children: n.map((e, n) => {
-          let { isoDateTime: i, speakers: m, subject: c, icalLink: g, sessionLink: k, language: h } = e;
-          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: m.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: k ? (0, d.jsx)(t.rU, { href: k, children: c }) : c }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: h.description, children: h.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.rU, { href: g, download: g, children: [(0, d.jsx)(t.JO, { 'aria-label': 'Download uitnodiging', children: (0, d.jsx)(a, {}) }), ' ', 'iCal'] }) })] }, n);
+          let { isoDateTime: i, speakers: c, subject: m, icalLink: g, sessionLink: k, language: h } = e;
+          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: c.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: k ? (0, d.jsx)(t.rU, { href: k, children: m }) : m }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: h.description, children: h.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.rU, { href: g, download: g, children: [(0, d.jsx)(t.JO, { 'aria-label': 'Download uitnodiging', children: (0, d.jsx)(a, {}) }), ' ', 'iCal'] }) })] }, n);
          }),
         }),
        ],
