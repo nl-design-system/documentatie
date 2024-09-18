@@ -1,10 +1,10 @@
-/*! For license information please see 60ab2a10.fabb9e35.js.LICENSE.txt */
+/*! For license information please see 60ab2a10.a2da7b55.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [97362],
  {
   43242: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => h, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => g, toc: () => c });
+   i.r(n), i.d(n, { assets: () => c, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => g, toc: () => h });
    var s = i(52676),
     t = i(24785),
     a = i(63816),
@@ -12,9 +12,9 @@
     o = i(46506);
    const l = { title: 'Program', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' },
     d = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
-    h = {},
-    c = [
+    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/en/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
+    c = {},
+    h = [
      { value: 'Program', id: 'program', level: 2 },
      { value: 'Organisation', id: 'organisation', level: 2 },
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
@@ -39,22 +39,23 @@
    var l = i(73381),
     d = i(52676);
    const g = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: h, signupLink: c, organisation: m, videoId: p, children: u } = e;
+    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: c, signupLink: h, organisation: m, videoId: p, children: u, captioned: w } = e;
     return (0, d.jsxs)('article', {
      className: (0, r.Z)(o['dsw-session']),
      id: g.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, d.jsx)(a.X6, { level: i, className: (0, r.Z)(o['dsw-session__title']), children: g }),
-      p ? (0, d.jsx)(l.Y, { videoId: p, width: '100%', height: '100%', className: (0, r.Z)(o['dsw-session__video']) }) : (0, d.jsxs)(a.nv, { className: (0, r.Z)(o['dsw-session__subtitle']), lead: !0, children: [h.map((e) => e.name).join(' & '), ', ', ' ', m] }),
+      p ? (0, d.jsx)(l.Y, { videoId: p, width: '100%', height: '100%', className: (0, r.Z)(o['dsw-session__video']) }) : (0, d.jsxs)(a.nv, { className: (0, r.Z)(o['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), ', ', ' ', m] }),
       u,
       'nl' === n &&
-       h.find((e) => {
+       c.find((e) => {
         let { language: n } = e;
         return 'nl' !== n;
        }) &&
        (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      (0, d.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: h.map((e, i) => (0, d.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, d.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, d.jsx)(a.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
-      c && (0, d.jsx)(a.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, d.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: c, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, d.jsx)(t.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
+      w && (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      (0, d.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: c.map((e, i) => (0, d.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, d.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, d.jsx)(a.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
+      h && (0, d.jsx)(a.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, d.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: h, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, d.jsx)(t.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],
     });
    };

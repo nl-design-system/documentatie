@@ -1,4 +1,4 @@
-/*! For license information please see 6bcc2158.f4375817.js.LICENSE.txt */
+/*! For license information please see 6bcc2158.f34ed22d.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [77009],
@@ -12,7 +12,7 @@
     o = t(46506);
    const l = { title: 'Program', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' },
     d = 'Program',
-    g = { id: 'community/events/design-systems-week-2024/english/program', title: 'Program', description: 'Program of all talks that are in English for Design Systems Week 2024.', source: '@site/docs/community/events/design-systems-week-2024/english/program.md', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/program', permalink: '/en/events/design-systems-week-2024/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/program.md', tags: [], version: 'current', frontMatter: { title: 'Program', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' }, sidebar: 'community', previous: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' }, next: { title: 'Timetable', permalink: '/en/events/design-systems-week-2024/en/timetable' } },
+    g = { id: 'community/events/design-systems-week-2024/english/program', title: 'Program', description: 'Program of all talks that are in English for Design Systems Week 2024.', source: '@site/docs/community/events/design-systems-week-2024/english/program.md', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/program', permalink: '/events/design-systems-week-2024/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/program.md', tags: [], version: 'current', frontMatter: { title: 'Program', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' }, sidebar: 'community', previous: { title: 'About', permalink: '/events/design-systems-week-2024/en' }, next: { title: 'Timetable', permalink: '/events/design-systems-week-2024/en/timetable' } },
     c = {},
     m = [];
    function h(e) {
@@ -35,7 +35,7 @@
    var l = t(73381),
     d = t(52676);
    const g = (e) => {
-    let { lang: n = 'nl', headingLevel: t = 3, title: g, speakers: c, signupLink: m, organisation: h, videoId: u, children: p } = e;
+    let { lang: n = 'nl', headingLevel: t = 3, title: g, speakers: c, signupLink: m, organisation: h, videoId: u, children: p, captioned: k } = e;
     return (0, d.jsxs)('article', {
      className: (0, r.Z)(o['dsw-session']),
      id: g.toLowerCase().replace(/\s/gi, '-'),
@@ -49,6 +49,7 @@
         return 'nl' !== n;
        }) &&
        (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
+      k && (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
       (0, d.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: c.map((e, t) => (0, d.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, d.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, d.jsx)(a.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, t)) }),
       m && (0, d.jsx)(a.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, d.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: m, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, d.jsx)(i.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],

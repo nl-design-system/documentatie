@@ -1,4 +1,4 @@
-/*! For license information please see bf203e4a.b714d977.js.LICENSE.txt */
+/*! For license information please see bf203e4a.d7a499cb.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [3307],
@@ -12,7 +12,7 @@
     o = i(46506);
    const d = { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' },
     l = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/en/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
+    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
     m = {},
     h = [
      { value: 'Het programma', id: 'het-programma', level: 2 },
@@ -40,7 +40,7 @@
    var d = i(73381),
     l = i(52676);
    const g = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: m, signupLink: h, organisation: c, videoId: p, children: k } = e;
+    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: m, signupLink: h, organisation: c, videoId: p, children: k, captioned: v } = e;
     return (0, l.jsxs)('article', {
      className: (0, r.Z)(o['dsw-session']),
      id: g.toLowerCase().replace(/\s/gi, '-'),
@@ -54,6 +54,7 @@
         return 'nl' !== n;
        }) &&
        (0, l.jsxs)(t.nv, { children: [(0, l.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
+      v && (0, l.jsxs)(t.nv, { children: [(0, l.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
       (0, l.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: m.map((e, i) => (0, l.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, l.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, l.jsx)(t.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
       h && (0, l.jsx)(t.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, l.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: h, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, l.jsx)(a.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],

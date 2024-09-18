@@ -3,24 +3,24 @@
  [75960],
  {
   92773: (e, n, r) => {
-   r.r(n), r.d(n, { assets: () => g, contentTitle: () => u, default: () => f, frontMatter: () => c, metadata: () => p, toc: () => h });
+   r.r(n), r.d(n, { assets: () => p, contentTitle: () => u, default: () => f, frontMatter: () => c, metadata: () => g, toc: () => h });
    var i = r(52676),
     t = r(24785),
     s = r(71595),
     o = r(45054),
     a = r(78836);
-   function d(e) {
+   function l(e) {
     const n = { p: 'p', ...(0, t.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat gebruikers zich op de inhoud van de website kunnen concentreren en niet worden afgeleid voor animaties, automatisch scrollen, knipperende onderdelen of voortdurende automatische updates.' }), '\n', (0, i.jsx)(n.p, { children: 'Duurt een animatie of beweging langer dan 5 seconden, dan moet de gebruiker deze kunnen verbergen, stoppen of pauzeren.' })] });
    }
-   function l(e = {}) {
+   function d(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
    }
    const c = { title: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.2 Pauzeren, stoppen, verbergen', pagination_label: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', description: 'Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte samenvatting.', slug: '2.2.2', keywords: ['WCAG'] },
     u = void 0,
-    p = { id: 'wcag/2.2.02', title: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', description: 'Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte samenvatting.', source: '@site/docs/wcag/2.2.02.mdx', sourceDirName: 'wcag', slug: '/wcag/2.2.2', permalink: '/en/wcag/2.2.2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.2.02.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.2 Pauzeren, stoppen, verbergen', pagination_label: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', description: 'Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte samenvatting.', slug: '2.2.2', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.1 Timing aanpasbaar', permalink: '/en/wcag/2.2.1' }, next: { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', permalink: '/en/wcag/2.3.1' } },
-    g = {},
+    g = { id: 'wcag/2.2.02', title: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', description: 'Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte samenvatting.', source: '@site/docs/wcag/2.2.02.mdx', sourceDirName: 'wcag', slug: '/wcag/2.2.2', permalink: '/en/wcag/2.2.2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.2.02.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.2 Pauzeren, stoppen, verbergen', pagination_label: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen', description: 'Aan deze inhoud wordt gewerkt en bevat nu referenties en een korte samenvatting.', slug: '2.2.2', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.1 Timing aanpasbaar', permalink: '/en/wcag/2.2.1' }, next: { title: 'WCAG-succescriterium 2.2.3 Geen timing', permalink: '/en/wcag/2.2.3' } },
+    p = {},
     h = [
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Uitleg', id: 'uitleg', level: 2 },
@@ -29,7 +29,7 @@
     ];
    function m(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, t.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', (0, i.jsx)(s.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen' }), '\n', (0, i.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#pause-stop-hide', children: (0, i.jsx)('span', { lang: 'en', children: '2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#pauzeren-stoppen-verbergen', children: '2.2.2 Pauzeren, stoppen, verbergen' }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, i.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide', children: (0, i.jsx)('span', { lang: 'en', children: 'Quick Reference 2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html', children: (0, i.jsx)('span', { lang: 'en', children: 'Understanding SC 2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n'] }), '\n', (0, i.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, i.jsx)(l, {}), '\n', (0, i.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, i.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, i.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, i.jsx)(o.ZP, {}), '\n', (0, i.jsx)(a.ZP, {})] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', (0, i.jsx)(s.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen' }), '\n', (0, i.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#pause-stop-hide', children: (0, i.jsx)('span', { lang: 'en', children: '2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#pauzeren-stoppen-verbergen', children: '2.2.2 Pauzeren, stoppen, verbergen' }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, i.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide', children: (0, i.jsx)('span', { lang: 'en', children: 'Quick Reference 2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html', children: (0, i.jsx)('span', { lang: 'en', children: 'Understanding SC 2.2.2 Pause, Stop, Hide' }) }), '.'] }), '\n'] }), '\n', (0, i.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, i.jsx)(d, {}), '\n', (0, i.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, i.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, i.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, i.jsx)(o.ZP, {}), '\n', (0, i.jsx)(a.ZP, {})] });
    }
    function f(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -69,20 +69,20 @@
    const t = { 'nlds-inline-heading-group__heading': 'nlds-inline-heading-group__heading_bHAJ', 'nlds-inline-heading-group__suffix': 'nlds-inline-heading-group__suffix_ioH2' };
    var s = r(52676);
    const o = (e) => {
-    let { children: n, className: r, level: o = 1, suffix: a, ...d } = e;
-    return (0, s.jsxs)('hgroup', { className: (0, i.Z)(t['nlds-inline-heading-group'], `utrecht-heading-${o}`, r), ...d, children: [(0, s.jsx)('h1', { className: (0, i.Z)(t['nlds-inline-heading-group__heading']), children: n }), a && (0, s.jsxs)('p', { className: (0, i.Z)(t['nlds-inline-heading-group__suffix']), children: [a ? ' ' : '', a] })] });
+    let { children: n, className: r, level: o = 1, suffix: a, ...l } = e;
+    return (0, s.jsxs)('hgroup', { className: (0, i.Z)(t['nlds-inline-heading-group'], `utrecht-heading-${o}`, r), ...l, children: [(0, s.jsx)('h1', { className: (0, i.Z)(t['nlds-inline-heading-group__heading']), children: n }), a && (0, s.jsxs)('p', { className: (0, i.Z)(t['nlds-inline-heading-group__suffix']), children: [a ? ' ' : '', a] })] });
    };
   },
   71595: (e, n, r) => {
-   r.d(n, { j: () => d });
+   r.d(n, { j: () => l });
    var i = r(46506),
     t = (r(75271), r(72657));
    const s = 'nlds-inline-heading-group--wcag-heading-group_hVFN',
     o = 'nlds-inline-heading-group__badge_TgvT';
    var a = r(52676);
-   const d = (e) => {
-    let { children: n, conformanceLevel: r, ...d } = e;
-    return (0, a.jsx)(t.V, { className: s, suffix: r && (0, a.jsx)(i.Ou, { className: o, children: r }), ...d, children: n });
+   const l = (e) => {
+    let { children: n, conformanceLevel: r, ...l } = e;
+    return (0, a.jsx)(t.V, { className: s, suffix: r && (0, a.jsx)(i.Ou, { className: o, children: r }), ...l, children: n });
    };
   },
   24785: (e, n, r) => {
