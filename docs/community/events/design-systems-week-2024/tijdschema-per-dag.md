@@ -50,6 +50,18 @@ icalLink: "/dsweek-2024/geri-reid.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
+isoDateTime: "2024-10-14T13:00:00.000Z",
+speakers: [
+{
+name: "Thijs Louisse",
+organisation: "ING",
+},
+],
+subject: "",
+icalLink: "/dsweek-2024/thijs-louisse.ics",
+language: { abbr: "NL", description: "Nederlands" },
+},
+{
 isoDateTime: "2024-10-14T14:30:00.000Z",
 speakers: [
 {
