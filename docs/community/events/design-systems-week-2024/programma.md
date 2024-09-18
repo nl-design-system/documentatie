@@ -17,7 +17,12 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <Paragraph lead>Tijdens Design Systems Week kun je 4 dagen lang meerdere korte talks per dag volgen over het hoe en waarom van design systems. Online. Dit jaar bijvoorbeeld over het managen van design systems, toegankelijkheid, gebruikersonderzoek en code.</Paragraph>
 
-<Paragraph>_Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten, inclusief tijd voor vragen. [Meld je aan](/events/design-systems-week/aanmelden) om op de hoogte te blijven en download vast het [kalender-bestand](/dsweek-2024/dsweek-2024.ics)._</Paragraph>
+<Paragraph>_Kijk of luister je mee? [Meld je aan](/events/design-systems-week/aanmelden) om op de hoogte te blijven en download vast het [kalender-bestand](/dsweek-2024/dsweek-2024.ics)._</Paragraph>
+
+- Alle sessies zijn gratis online bij te wonen.
+- Sessies duren ongeveer 30 minuten, inclusief tijd voor vragen.
+- Bij Nederlandstalige sessies is een schrijftolk aanwezig.
+- Sommige sessies worden in het Engels gegeven, dit wordt per sessie aangegeven.
 
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} organisation="US Web Design System">
 
