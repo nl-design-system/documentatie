@@ -127,7 +127,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
-                {links.length && (
+                {links.length > 0 && (
                   <>
                     <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
                     <LinkList>
