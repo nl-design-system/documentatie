@@ -1,0 +1,44 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline appearance="do" title="Geef in de description aan hoe een veld kan worden ingevoerd.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label for="bevestigingcode">Je bevestigingcode</label>
+        <p id="description-bevestigingcode">Vul een nummer van 8 cijfers in.</p>
+        <input
+          type="text"
+          inputmode="numeric"
+          id="bevestigingcode"
+          name="bevestigingcode"
+          aria-describedby="description-bevestigingcode"
+        />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Gebruik het pattern-attribuut met het invoerpatroon en geef aan hoe een veld in te vullen met de placeholder."
+  description="Dit voorbeeld valideert de waarde niet met JavaScript en is alleen ter illustratie."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label for="postcode2">Je postcode</label>
+        <input
+          type="text"
+          placeholder="____ __"
+          id="postcode2"
+          name="postcode"
+          pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
+          autocomplete="postal-code"
+        />
+      </>
+    )}
+  </Canvas>
+</Guideline>
