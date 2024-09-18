@@ -25,7 +25,7 @@ Some of the talks are in Dutch, others are in English. This page lists the talks
 
 _All sessions can be joined online for free. Each talk will take about 30 minutes, including time for questions. [Sign up](/events/design-systems-week/sign-up) to receive updates and download [our calendar file](/dsweek-2024/dsweek-2024.ics) to add the week to your calendar._
 
-<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent">
+<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent" lang="en">
 
 <Paragraph>Building components in CSS isn't only about making them performant and responsive. We need to think about how they will work for multilingual websites. In this talk, Ahmad will show how to adapt an existing component and make it work with both left-to-right (LTR) and right-to-left (RTL), how to test, avoid common issues, and more.</Paragraph>
 
