@@ -6,7 +6,7 @@ Het is onhandig als je de ingevulde informatie van een formulier kwijt raakt als
 
 In de HTML kan dit met het attribuut `target="_blank"` in de link.
 
-Een link openen in een nieuwe tab is geen standaard browser gedrag. Maak duidelijk hoe deze speciale links in formulieren werken, zodat de gebruiker bijvoorbeeld weet waarom de terugbutton het niet doet. Voor screenreadergebruikers is dit extra belangrijk.
+Een link openen in een nieuwe tab is geen standaard browser gedrag. Maak duidelijk hoe deze speciale links in formulieren werken, zodat de gebruiker bijvoorbeeld weet waarom de terugknop het niet doet. Voor screenreadergebruikers is dit extra belangrijk.
 
 Daarnaast: alle gebruikers moeten dezelfde informatie krijgen, dus er moet ook een visuele indicatie zijn dat de link in een nieuwe tab opent.
 
