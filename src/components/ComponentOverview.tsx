@@ -1,3 +1,4 @@
+import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
@@ -11,7 +12,20 @@ import { EstafetteBadge } from './EstafetteBadge';
 import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
 
 export const ComponentOverview = () => {
+  const SEARCH_PARAM = 'filter';
+  const SEARCH_VALUES = {
+    TODO: 'todo',
+    HELP_WANTED: 'helpWanted',
+    COMMUNITY: 'community',
+    CANDIDATE: 'candidate',
+    HALL_OF_FAME: 'hallOfFame',
+    ONLY_IMPLEMENTED: 'geenImplementatie',
+  };
+
   const category = useCurrentSidebarCategory();
+  const { location, push } = useHistory();
+
+  const params = new URLSearchParams(location.search);
 
   const getComponent = (item: any) =>
     item.title && componentProgress.find(({ title }) => title && normalizeName(title) === normalizeName(item.title));
@@ -23,12 +37,14 @@ export const ComponentOverview = () => {
     .map((item: any) => ({ ...item, ...getComponent(item) }));
 
   const [filteredComponents, setFilteredComponents] = useState(components);
-  const [showTodo, setShowTodo] = useState(true);
-  const [showHelpWanted, setShowHelpWanted] = useState(true);
-  const [showCommunity, setShowCommunity] = useState(true);
-  const [showCandidate, setShowCandidate] = useState(true);
-  const [showHallOfFame, setShowHallOfFame] = useState(true);
-  const [showImplemented, setShowImplemented] = useState(false);
+  const [showTodo, setShowTodo] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.TODO));
+  const [showHelpWanted, setShowHelpWanted] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.HELP_WANTED));
+  const [showCommunity, setShowCommunity] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY));
+  const [showCandidate, setShowCandidate] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE));
+  const [showHallOfFame, setShowHallOfFame] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME));
+  const [showOnlyImplemented, setshowOnlyImplemented] = useState(
+    params.has(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED),
+  );
 
   useEffect(() => {
     setFilteredComponents(() =>
@@ -42,16 +58,56 @@ export const ComponentOverview = () => {
             (showHallOfFame && c.relayStep === 'HALL_OF_FAME')
           );
         })
-        .filter((c) => (showImplemented ? c.projects.filter((p) => !relayProjectIds.includes(p.id)).length > 0 : true)),
+        .filter((c) =>
+          showOnlyImplemented ? c.projects.filter((p) => !relayProjectIds.includes(p.id)).length > 0 : true,
+        ),
     );
-  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showImplemented]);
+
+    if (showTodo) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.TODO);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.TODO)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.TODO);
+    }
+
+    if (showHelpWanted) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.HELP_WANTED);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.HELP_WANTED)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.HELP_WANTED);
+    }
+
+    if (showCommunity) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY);
+    }
+
+    if (showCandidate) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE);
+    }
+
+    if (showHallOfFame) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME);
+    }
+
+    if (!showOnlyImplemented) {
+      params.delete(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
+    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED)) {
+      params.append(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
+    }
+
+    push({ ...location, search: params.toString() });
+  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showOnlyImplemented]);
 
   const todo = components.filter((c) => c.relayStep === 'UNKNOWN');
   const helpWanted = components.filter((c) => c.relayStep === 'HELP_WANTED');
   const community = components.filter((c) => c.relayStep === 'COMMUNITY');
   const candidate = components.filter((c) => c.relayStep === 'CANDIDATE');
   const hallOfFame = components.filter((c) => c.relayStep === 'HALL_OF_FAME');
-  const implemented = components.filter((c) =>
+  const onlyImplemented = components.filter((c) =>
     c.projects?.filter((p) => {
       const results = !relayProjectIds.includes(p.id);
       return results;
@@ -134,15 +190,15 @@ export const ComponentOverview = () => {
                     <b>Tip</b>: Zien welke componenten je nu al kunt gebruiken? Kies dan onderstaande optie om alleen
                     beschikbare componenten te tonen.
                   </Paragraph>
-                  {!!implemented.length && (
+                  {!!onlyImplemented.length && (
                     <>
                       <FormField type="checkbox" className={style['utrecht-form-field--nlds-switch']}>
                         <FormToggle
-                          defaultChecked={showImplemented}
-                          id="IMPLEMENTED"
-                          onChange={() => setShowImplemented((checked) => !checked)}
+                          defaultChecked={showOnlyImplemented}
+                          id="ONLY_IMPLEMENTED"
+                          onChange={() => setshowOnlyImplemented((checked) => !checked)}
                         />
-                        <FormLabel htmlFor="IMPLEMENTED">Toon alleen beschikbare componenten</FormLabel>
+                        <FormLabel htmlFor="ONLY_IMPLEMENTED">Toon alleen beschikbare componenten</FormLabel>
                       </FormField>
                     </>
                   )}
