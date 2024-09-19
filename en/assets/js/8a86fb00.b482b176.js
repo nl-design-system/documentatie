@@ -11,7 +11,7 @@
     l = i(78836);
    function a(e) {
     const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Alle functionaliteit is bedienbaar met een toetsenbord zonder dat afzonderlijke toetsaanslagen aan tijd gebonden zijn.' }), '\n', (0, t.jsx)(n.p, { children: 'Uitgezonderd zijn functies die niet met het toetsenbord zijn uit te voeren, zoals het invoeren van met de hand geschreven tekst.' })] });
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.' }), '\n', (0, t.jsx)(n.p, { children: 'Alle functionaliteit moet bedienbaar zijn met een toetsenbord zonder dat afzonderlijke toetsaanslagen aan tijd gebonden zijn.' }), '\n', (0, t.jsx)(n.p, { children: 'Uitgezonderd zijn functies die niet met het toetsenbord zijn uit te voeren, zoals het invoeren van met de hand geschreven tekst.' })] });
    }
    function d(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -19,7 +19,7 @@
    }
    const c = { title: 'WCAG-succescriterium 2.1.1 Toetsenbord', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.1 Toetsenbord', pagination_label: 'WCAG-succescriterium 2.1.1 Toetsenbord', description: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.', slug: '2.1.1', keywords: ['WCAG', 'Toetsenbord'] },
     h = void 0,
-    u = { id: 'wcag/2.1.01', title: 'WCAG-succescriterium 2.1.1 Toetsenbord', description: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.', source: '@site/docs/wcag/2.1.01.mdx', sourceDirName: 'wcag', slug: '/wcag/2.1.1', permalink: '/wcag/2.1.1', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.1.01.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.1.1 Toetsenbord', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.1 Toetsenbord', pagination_label: 'WCAG-succescriterium 2.1.1 Toetsenbord', description: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.', slug: '2.1.1', keywords: ['WCAG', 'Toetsenbord'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 1.4.13 Content bij hover of focus', permalink: '/wcag/1.4.13' }, next: { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', permalink: '/wcag/2.1.2' } },
+    u = { id: 'wcag/2.1.01', title: 'WCAG-succescriterium 2.1.1 Toetsenbord', description: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.', source: '@site/docs/wcag/2.1.01.mdx', sourceDirName: 'wcag', slug: '/wcag/2.1.1', permalink: '/en/wcag/2.1.1', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.1.01.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.1.1 Toetsenbord', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.1 Toetsenbord', pagination_label: 'WCAG-succescriterium 2.1.1 Toetsenbord', description: 'Zorg dat alle functionaliteit met een toetsenbord te bedienen is.', slug: '2.1.1', keywords: ['WCAG', 'Toetsenbord'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 1.4.13 Content bij hover of focus', permalink: '/en/wcag/1.4.13' }, next: { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', permalink: '/en/wcag/2.1.2' } },
     g = {},
     b = [
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
