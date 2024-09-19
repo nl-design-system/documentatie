@@ -11,7 +11,7 @@
     o = i(78836);
    function d(e) {
     const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Zorg ervoor dat een gebruiker het scherm niet fysiek hoeft te draaien om de inhoud van de webpagina te goed kunnen zien. Je moet een de website kunnen bekijken in zowel landschap-modus als in portret-modus.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld: iemand heeft een tablet bevestigd aan een rolstoel, zodat de tablet overal gebruikt kan worden. Het is dan niet makkelijk om de positie van de tablet aan te passen aan de getoonde website. De website moet in beide weergavestanden goed te gebruiken zijn.' }), '\n', (0, t.jsx)(n.p, { children: 'Uitgezonderd is als een specifieke weergavestand essentieel is of als het technisch onmogelijk is om de weergavestand aan te passen.' })] });
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Zorg ervoor dat een gebruiker het scherm niet fysiek hoeft te draaien om de inhoud van de webpagina goed te kunnen zien. Je moet de website kunnen bekijken in zowel landschap-modus als in portret-modus.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld: iemand heeft een tablet bevestigd aan een rolstoel, zodat de tablet overal gebruikt kan worden. Het is dan niet makkelijk om de positie van de tablet aan te passen aan de getoonde website. De website moet in beide weergavestanden goed te gebruiken zijn.' }), '\n', (0, t.jsx)(n.p, { children: 'Uitgezonderd is als een specifieke weergavestand essentieel is of als het technisch onmogelijk is om de weergavestand aan te passen.' })] });
    }
    function l(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
