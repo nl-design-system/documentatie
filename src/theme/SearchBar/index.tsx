@@ -1,5 +1,4 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
-import { useDocSearchKeyboardEvents } from '@docsearch/react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import { useHistory } from '@docusaurus/router';
@@ -10,6 +9,42 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { createPortal } from 'react-dom';
 import translations from '@theme/SearchTranslations';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
+
+function useDocSearchKeyboardEvents({
+  isOpen,
+  onOpen,
+  onClose,
+  onInput,
+  searchButtonRef,
+}: UseDocSearchKeyboardEventsProps) {
+  React.useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (
+        (event.keyCode === 27 && isOpen) ||
+        // The `Cmd+K` shortcut both opens and closes the modal.
+        // We need to check for `event.key` because it can be `undefined` with
+        // Chrome's autofill feature.
+        // See https://github.com/paperjs/paper.js/issues/1398
+        (event.key?.toLowerCase() === 'k' && (event.metaKey || event.ctrlKey))
+      ) {
+        event.preventDefault();
+
+        if (isOpen) {
+          onClose();
+        } else {
+          onOpen();
+        }
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isOpen, onOpen, onClose, onInput, searchButtonRef]);
+}
+
 let DocSearchModal = null;
 function Hit({ hit, children }) {
   return (
@@ -66,6 +101,9 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   }, []);
   const onOpen = useCallback(() => {
     importDocSearchModalIfNeeded().then(() => {
+      if (isOpen) {
+        return;
+      }
       searchContainer.current = document.createElement('div');
       document.body.insertBefore(searchContainer.current, document.body.firstChild);
       setIsOpen(true);
@@ -118,6 +156,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     },
     [siteMetadata.docusaurusVersion],
   );
+
   useDocSearchKeyboardEvents({
     isOpen,
     onOpen,
