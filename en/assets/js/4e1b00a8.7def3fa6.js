@@ -3,7 +3,7 @@
  [39309],
  {
   16940: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => h, contentTitle: () => u, default: () => m, frontMatter: () => c, metadata: () => g, toc: () => p });
+   i.r(n), i.d(n, { assets: () => h, contentTitle: () => u, default: () => k, frontMatter: () => c, metadata: () => g, toc: () => p });
    var r = i(52676),
     t = i(24785),
     s = i(71595),
@@ -17,9 +17,9 @@
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(d, { ...e }) }) : d(e);
    }
-   const c = { title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.3 Geen timing', pagination_label: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', slug: '2.2.4', keywords: ['WCAG'] },
+   const c = { title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.4 Onderbrekingen', pagination_label: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', slug: '2.2.4', keywords: ['WCAG'] },
     u = void 0,
-    g = { id: 'wcag/2.2.04', title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', source: '@site/docs/wcag/2.2.04.mdx', sourceDirName: 'wcag', slug: '/wcag/2.2.4', permalink: '/wcag/2.2.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.2.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.3 Geen timing', pagination_label: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', slug: '2.2.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.3 Geen timing', permalink: '/wcag/2.2.3' }, next: { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', permalink: '/wcag/2.3.1' } },
+    g = { id: 'wcag/2.2.04', title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', source: '@site/docs/wcag/2.2.04.mdx', sourceDirName: 'wcag', slug: '/wcag/2.2.4', permalink: '/en/wcag/2.2.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.2.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.2.4 Onderbrekingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.2.4 Onderbrekingen', pagination_label: 'WCAG-succescriterium 2.2.4 Onderbrekingen', description: 'Stel onderbrekingen uit of zorg ervoor dat de gebruiker onderbrekingen kan uitzetten, behalve in noodsituaties.', slug: '2.2.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.3 Geen timing', permalink: '/en/wcag/2.2.3' }, next: { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', permalink: '/en/wcag/2.3.1' } },
     h = {},
     p = [
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
@@ -31,7 +31,7 @@
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, t.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', (0, r.jsx)(s.j, { level: 1, conformanceLevel: 'Niveau AAA', children: 'WCAG-succescriterium 2.2.4 Onderbrekingen' }), '\n', (0, r.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#interruptions', children: (0, r.jsx)('span', { lang: 'en', children: '2.2.4 Interruptions' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#onderbrekingen', children: '2.2.4 Onderbrekingen' }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, r.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#interruptions', children: (0, r.jsx)('span', { lang: 'en', children: 'Quick Reference 2.2.4 Interruptions' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/interruptions.html', children: (0, r.jsx)('span', { lang: 'en', children: 'Understanding SC 2.2.4 Interruptions' }) }), '.'] }), '\n'] }), '\n', (0, r.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, r.jsx)(a, {}), '\n', (0, r.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, r.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, r.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, r.jsx)(o.ZP, {}), '\n', (0, r.jsx)(l.ZP, {})] });
    }
-   function m(e = {}) {
+   function k(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(b, { ...e }) }) : b(e);
    }
