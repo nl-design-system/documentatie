@@ -38,7 +38,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace" captioned>
 
-<Paragraph>_Meer informatie volgt_</Paragraph>
+<Paragraph>Met de komst van Sass, bundlers en frontend frameworks verdween een van de hoekstenen van het web development van vroeger. We hebben het over die style.css van duizend regels lang. Destijds had je nog een idee wat er allemaal in je CSS belandde, maar nu? Ga mee op expeditie door je CSS en we bekijken welke waardevolle informatie jouw CSS onthult over je Design System en je CSS kennis.</Paragraph>
 
 </DSWSession>
 
