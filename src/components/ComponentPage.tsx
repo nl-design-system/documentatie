@@ -1,4 +1,13 @@
-import { AccordionProvider, Heading, Link, LinkList, LinkListLink, Paragraph } from '@utrecht/component-library-react';
+import {
+  AccordionProvider,
+  Heading,
+  Link,
+  LinkList,
+  LinkListLink,
+  Paragraph,
+  UnorderedList,
+  UnorderedListItem,
+} from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import React from 'react';
 import { BrandIcon } from './BrandIcon';
@@ -154,14 +163,42 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
   );
 };
 
-export const Backlog = ({ component }: ComponentPageSectionProps) =>
-  component && (
-    <Paragraph>
-      De {component.title} component staat bij NL Design System in de{' '}
-      <Link href={component.backlog}>levende backlog</Link>, heb je een concrete eisen of wensen voor dit component?
-      Laat het ons dan daar weten!
-    </Paragraph>
+export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) => {
+  const DISCUSSION_URL_COLUMN_ID = 'PVTF_lADOBGdlVM4AdX8lzgcig7o';
+  const DiscussionUrl = component?.projects
+    .find((project) => project.id === 'HELP_WANTED')
+    .tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID).value;
+
+  return (
+    component && (
+      <>
+        <Paragraph>
+          We vinden het belangrijk dat {component.title} goed te gebruiken is door iedereen. Help je mee?
+        </Paragraph>
+        <UnorderedList>
+          {DiscussionUrl ? (
+            <UnorderedListItem>
+              Vul de <Link href={DiscussionUrl}>GitHub Discussion</Link> aan met de eisen en wensen voor jouw project of
+              organisatie.
+            </UnorderedListItem>
+          ) : (
+            <UnorderedListItem>
+              <Link href="https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions">
+                Start een GitHub Discussion voor {component.title}
+              </Link>{' '}
+              en voeg de eisen en wensen voor jouw project of organisatie toe.
+            </UnorderedListItem>
+          )}
+          <UnorderedListItem>
+            Draag bij aan de voortang van {component.title} door te zorgen dat deze aan meer checkpoints van de{' '}
+            <Link href="#definition-of-done">Definition of Done</Link> voldoet. Deze houden we bij in de projectborden
+            bij de <Link href={component.backlog}>publieke GitHub Backlog</Link>.{' '}
+          </UnorderedListItem>
+        </UnorderedList>
+      </>
+    )
   );
+};
 
 interface IntroductionProps extends ComponentPageSectionProps {
   description?: string;
