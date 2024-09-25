@@ -10,7 +10,7 @@ slug: /icon
 
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { Backlog, DefinitionOfDone, Implementations, Introduction } from "@site/src/components/ComponentPage";
+import { DefinitionOfDone, HelpImproveComponent, Implementations, Introduction } from "@site/src/components/ComponentPage";
 import { Markdown } from "@site/src/components/Markdown";
 import Guidelines from "./\_guidelines.md";
 
@@ -37,6 +37,6 @@ export const component = componentProgress.find((item) => item.number === issueN
   <Guidelines />
 </Markdown>
 
-## Levende Backlog
+## Help component verbeteren
 
-<Backlog component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={3} />
