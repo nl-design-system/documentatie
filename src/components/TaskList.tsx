@@ -1,26 +1,31 @@
-import { Heading, type HeadingProps, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading, type HeadingProps } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
+import React, { type PropsWithChildren, type ReactNode } from 'react';
 import style from './TaskList.module.css';
 
-export const TaskList = ({ children }: PropsWithChildren<{}>) => <ul className={style['task-list']}>{children}</ul>;
+export interface TaskListProps {}
+export const TaskList = ({ children }: PropsWithChildren<TaskListProps>) => (
+  <ul className={style['task-list']}>{children}</ul>
+);
 
-interface TaskListItemProps {
-  title: string;
+export interface TaskListItemProps {
+  title: ReactNode;
   description: string;
   checked: boolean;
   headingLevel: HeadingProps['level'];
 }
 
-export const TaskListItem = ({ checked, title, description, headingLevel = 3 }: TaskListItemProps) => {
+export const TaskListItem = ({
+  checked,
+  children,
+  title,
+  description,
+  headingLevel = 3,
+}: PropsWithChildren<TaskListItemProps>) => {
   return (
     <li className={clsx(style['task-list-item'])}>
-      <div
-        className={clsx(style['task-list-item__marker'], {
-          [style['task-list-item__marker--checked']]: checked,
-        })}
-      >
+      <div className={clsx(style['task-list-item__marker'], checked && style['task-list-item__marker--checked'])}>
         <span className={style['task-list-item__marker-label']}>{checked ? 'Afgevinkt. ' : 'Niet afgevinkt. '}</span>
         {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
       </div>
@@ -28,7 +33,8 @@ export const TaskListItem = ({ checked, title, description, headingLevel = 3 }: 
         <Heading appearance="utrecht-heading-3" level={headingLevel}>
           {title}
         </Heading>
-        <Paragraph>{description}</Paragraph>
+        {description}
+        {children}
       </div>
     </li>
   );
