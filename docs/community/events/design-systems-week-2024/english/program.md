@@ -25,25 +25,25 @@ Some of the talks are in Dutch, others are in English. This page lists the talks
 
 _All sessions can be joined online for free. Each talk will take about 30 minutes, including time for questions. [Sign up](/events/design-systems-week/sign-up) to receive updates and download [our calendar file](/dsweek-2024/dsweek-2024.ics) to add the week to your calendar._
 
-<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent" lang="en">
+<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent" lang="en" headingLevel={2}>
 
 <Paragraph>Building components in CSS isn't only about making them performant and responsive. We need to think about how they will work for multilingual websites. In this talk, Ahmad will show how to adapt an existing component and make it work with both left-to-right (LTR) and right-to-left (RTL), how to test, avoid common issues, and more.</Paragraph>
 
 </DSWSession>
 
-<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System">
+<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System" headingLevel={2}>
 
 Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their own.
 
 </DSWSession>
 
-<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" lang="en">
+<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" lang="en" headingLevel={2}>
 
 <Paragraph>Building a Design System is exciting. But once your system is out there being used to power production applications, rolling out updates becomes a risky endeavor. Testing is a critical aspect of design systems development and maintenance that helps manage those risks. In this talk, Gert explains tools and strategies that help you test your UI components and integrations, so your design system can continue to evolve.</Paragraph>
 
 </DSWSession>
 
-<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en">
+<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en" headingLevel={2}>
 
 Join Geri, a seasoned design systems explorer with 8 years of adventures under her belt, as she navigates the uncharted territories of accessibility in a major product org. With no playbook in hand, Geri’s quest is one we can all relate to: figuring it out as we go along.
 
@@ -51,13 +51,13 @@ In this ‘choose your own adventure’ session, you’ll discover how the princ
 
 </DSWSession>
 
-<DSWSession title="Advantages to working in the open with government design systems" speakers={[speakers.MikeGifford]} organisation="Civic Actions" lang="en">
+<DSWSession title="Advantages to working in the open with government design systems" speakers={[speakers.MikeGifford]} organisation="Civic Actions" lang="en" headingLevel={2}>
 
 For many governments, contributing to open source project is culturally a challenge. It often requires engagement with people in other departments and often outside of government. Design systems however provide a unique opportunity for governments to become more confident in their open source adoption. Mike has contributed to several government design systems. As a Drupal Core Accessibility Maintainer, he is often looking for best practices and comparing different approaches taken by governments around the world.
 
 </DSWSession>
 
-<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" lang="en">
+<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" lang="en" headingLevel={2}>
 
 Lessons from working on the GOV.‌UK Design System and other common platforms in UK government. How leaning on the principles that make the Web great can create more value for the public we serve.
 
