@@ -1,5 +1,5 @@
 ---
-title: Timetable
+title: Timetable • Design Systems Week 2023
 description: Timetable for all English talks of the Design Systems Week 2023
 hide_table_of_contents: true
 hide_title: true
@@ -13,7 +13,7 @@ import { SessionTable } from "@site/src/components/SessionTable";
 
 <div lang="en">
 
-# Design Systems Week Timetable
+# Timetable Design Systems Week 2023
 
 <Paragraph lead>
     From 2 to 5 October NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the how and why of design systems. This year there will be talks both in Dutch and English. For convenience we also have a <Link href="/events/design-systems-week-2023/en/program">program of all talks that will be in English</Link>.

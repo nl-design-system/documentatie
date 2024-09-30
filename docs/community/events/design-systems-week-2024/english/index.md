@@ -1,8 +1,8 @@
 ---
-title: About Design Systems Week
+title: Design Systems Week 2024
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: About Design Systems Week
+sidebar_label: About
 pagination_label: About
 sidebar_position: 1
 slug: /events/design-systems-week-2024/en

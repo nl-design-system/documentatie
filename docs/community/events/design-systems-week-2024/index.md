@@ -1,9 +1,9 @@
 ---
-title: Over Design Systems Week
+title: Design Systems Week 2024
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Over Design Systems Week
-pagination_label: Over
+pagination_label: Over Design Systems Week
 sidebar_position: 1
 slug: /events/design-systems-week-2024
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png
