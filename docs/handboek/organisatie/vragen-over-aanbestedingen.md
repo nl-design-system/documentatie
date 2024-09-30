@@ -1,5 +1,5 @@
 ---
-title: Vragen over aanbestedingen
+title: Vragen over aanbestedingen • Organisatie • Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Aanbestedingen
