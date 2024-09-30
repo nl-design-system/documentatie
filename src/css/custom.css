@@ -41,6 +41,7 @@
   --utrecht-accordion-panel-padding-block-start: 0;
   --utrecht-accordion-panel-padding-inline-end: 16px;
   --utrecht-accordion-panel-padding-inline-start: 16px;
+  --utrecht-button-secondary-action-border-width: 2px;
   --utrecht-accordion-button-gap: 16px;
   --utrecht-form-toggle-width: 2.5em;
   --utrecht-form-toggle-height: 1.5em;
@@ -54,6 +55,8 @@
   -moz-osx-font-smoothing: auto !important;
   --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
   --navbar-inner-min-height: 64px;
+  --utrecht-button-group-inline-gap: 1ch;
+  --utrecht-button-icon-gap: 1ch;
 }
 
 .utrecht-form-field--checkbox {
@@ -89,66 +92,14 @@
   position: relative;
 }
 
-.button.button--primary {
-  --ifm-button-background-color: #148839;
-  --ifm-button-color: #fff;
-
-  border-color: #148839;
-}
-
-.button--primary::after {
-  background-color: #0b732c;
-  background-image: url("../icons/arrow-right-white.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 10px 16px;
-  bottom: 0;
-  content: " ";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: background-color 0.2s;
-  width: var(--gc-button-icon-size);
-}
-
-.button.button--primary:hover {
-  background-color: #0b732c;
-}
-
-.button--primary:hover::after {
-  background-color: #055c21;
-}
-
-.button.button--secondary {
-  color: #004152;
-}
-
-.button--secondary::after {
-  background-color: #d1dfe3;
-  background-image: url("../icons/arrow-right-blue.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 10px 16px;
-  bottom: 0;
-  content: " ";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: background-color 0.2s;
-  width: 32px;
-}
-
-.button.button--secondary:hover {
-  background-color: #004152;
-  border-color: #004152;
-  color: white;
-}
-
-.button--secondary:hover::after {
-  background-color: #00303d;
-  background-image: url("../icons/arrow-right-white.svg");
+.utrecht-button-link:hover,
+.utrecht-button:hover {
+  --utrecht-button-primary-action-background-color: #0b732c;
+  --utrecht-button-primary-action-color: #fff;
+  --utrecht-button-secondary-action-border-color: #0b6728;
+  --utrecht-button-secondary-action-color: #0b6728;
+  --ifm-link-hover-color: var(--_utrecht-button-color);
+  --ifm-link-hover-decoration: none;
 }
 
 .utrecht-form-field--checkbox > p {
