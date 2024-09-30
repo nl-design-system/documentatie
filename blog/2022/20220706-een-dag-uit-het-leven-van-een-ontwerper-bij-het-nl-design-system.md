@@ -3,7 +3,7 @@ title: Een dag uit het leven van een ontwerper bij het NL Design System
 slug: een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system
 authors:
   - name: Renate Bruinenberg
-    title: Communicatieadviseur en Tekstschrijver ICTU | Gebruiker Centraal
+    title: Communicatieadviseur en Tekstschrijver ICTU • Gebruiker Centraal
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
 tags: [Figma, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2022/06/Bryan-de-Jong.jpeg
