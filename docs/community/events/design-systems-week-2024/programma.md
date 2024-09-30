@@ -42,6 +42,18 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
+<DSWSession title="Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming" speakers={[speakers.CharlottevanBijnen]} organisation="Valsplat" captioned>
+
+<Paragraph>Journeys worden vaak gezien als hét middel voor empathie, maar dat is te kort door de bocht. Het is slechts een tool. Hoe je het ontwerpt, wat je erin zet en wat je ermee doet, maakt het verschil. In deze presentatie laat Charlotte zien hoe een journey kan bijdragen aan het oplossen van complexe maatschappelijke vraagstukken, vooral binnen de overheid.</Paragraph>
+
+<Paragraph>Projecten rond jeugdcriminaliteit focussen vaak op het delict en de gedragsverandering van jongeren. Maar hoe zit het met het gedrag van de instanties waar zij mee te maken krijgen? De Raad voor de Kinderbescherming stelde zichzelf die vraag. Dit project focust op hoe er met jongeren wordt gecommuniceerd, wat de impact is en wat beter kan.</Paragraph>
+
+<Paragraph>Na aanhouding begeleidt de RvdK jaarlijks zo'n 8.000 jongeren tussen 12 en 23 jaar die terechtkomen in een systeem van instanties als politie, justitie, reclassering. De RvdK is hun constante factor. Maar hoe ervaren jongeren dat? Voelen zij zich beschermd? Hoe help je hen het beste tijdens een lang, moeilijk straftraject?</Paragraph>
+
+<Paragraph>Als researcher bij Valsplat sprak Charlotte met jongeren over hun ervaringen, de brieven die ze ontvangen en hun contactmomenten. Ze hield workshops met o.a. Raadsonderzoekers en Taakstraf Coördinatoren om ook hun perspectief te begrijpen. De journey maakte de complexiteit en emotionele impact van deze communicatie zichtbaar en toonde concreet waar verbetering mogelijk is.</Paragraph>
+
+</DSWSession>
+
 <DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org" captioned>
 
 <Paragraph>Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds niet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan de hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.</Paragraph>

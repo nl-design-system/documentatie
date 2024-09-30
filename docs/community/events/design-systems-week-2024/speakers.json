@@ -49,6 +49,18 @@
     },
     "language": "nl"
   },
+  "CharlottevanBijnen": {
+    "name": "Charlotte van Bijnen",
+    "organisation": "Valsplat",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-charlotte-van-bijnen.png",
+      "alt": "Charlotte van Bijnen"
+    },
+    "description": {
+      "nl": "Als Senior Design Researcher en Impact Lead bij Valsplat helpt Charlotte teams bij het ontwerpen van producten, diensten, strategieën en beleid. Charlotte is hun ogen, oren en adviseur. Ze combineert haar kennis van antropologie en business om inzichten van straatniveau om te zetten in strategische beslissingen. Hierdoor vindt ze oplossingen die laten (in)zien dat begrip van anderen de beste basis is voor positieve, impactvolle innovatie. Hoe? Door vragen te durven stellen en antwoorden te vinden waar anderen niet altijd zoeken."
+    },
+    "language": "nl"
+  },
   "DariceDeCuba": {
     "name": "Darice de Cuba",
     "organisation": "darice.org",
