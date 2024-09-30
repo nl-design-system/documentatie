@@ -1,5 +1,5 @@
 ---
-title: Programma
+title: Programma • Design Systems Week 2024
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Programma
@@ -13,7 +13,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 import speakers from "./speakers.json";
 import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
-## Programma
+## Programma Design Systems Week 2024
 
 <Paragraph lead>Tijdens Design Systems Week kun je 4 dagen lang meerdere korte talks per dag volgen over het hoe en waarom van design systems. Online. Dit jaar bijvoorbeeld over het managen van design systems, toegankelijkheid, gebruikersonderzoek en code.</Paragraph>
 

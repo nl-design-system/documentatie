@@ -1,5 +1,5 @@
 ---
-title: Program
+title: Program • Design Systems Week 2024
 description: Program of all talks that are in English for Design Systems Week 2024.
 hide_title: true
 hide_table_of_contents: true
@@ -15,7 +15,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <div lang="en">
 
-# Program
+# Program Design Systems Week 2024
 
 <Paragraph lead>
   Design Systems Week features a number of short talks about the how and why of design systems. All online. This year, we'll cover subjects like managing design systems, integrating accessibility, user research and code.
