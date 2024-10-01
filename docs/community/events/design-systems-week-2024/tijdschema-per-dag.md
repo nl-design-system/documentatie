@@ -177,7 +177,7 @@ organisation: "Project Wallace",
 ],
 subject: "Wat je allemaal niet weet over je CSS",
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css",
-icalLink: "/dsweek-2024/darice-de-cuba.ics",
+icalLink: "/dsweek-2024/bart-veneman.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
