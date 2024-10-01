@@ -166,9 +166,10 @@ Doel: Op nldesignsystem.nl zijn er verwijzingen beschikbaar naar de component me
 
 Het kernteam maakt de laatste informatie van de GitHub projectborden beschikbaar in het npm pakketje `@nl-design-system/component-progress`.
 
-- Draai het script in de `main` branch opnieuw te draaien met `Run Workflow` in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml)
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken op [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
 - Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
-- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in een nieuwe branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
+- Push je branch naar GitHub en maak er een pull request voor aan.
 
 **🚩 Checkpoint**: nldesignsystem.nl
 
@@ -178,7 +179,7 @@ Doel: Organisaties worden bij een onboarding snel naar de juiste component verwe
 
 Het kernteam voegt een 'Component sticker' toe aan het Figma bestand '[NL Design System Component assessment](https://www.figma.com/design/NLbNbckFo9manEihRFeJmR/NL-Design-System---Component-Assessment?m=auto&t=J0gWvRWoyCJhSqot-6)'. Deze sticker linkt naar de documentatiepagina van de component op nldesignsystem.nl.
 
-Door deze 'Component stickers' op screenshots te plakken, kan het kernteam geïnteresseerden organisaties inzicht bieden welke componenten beschikbaar zijn om hun website of applicatie mee op te bouwen.
+Door deze 'Component stickers' op screenshots te plakken, kan het kernteam geïnteresseerde organisaties inzicht bieden welke componenten beschikbaar zijn om hun website of applicatie mee op te bouwen.
 
 **🚩 Checkpoint**: Component assessment
 
