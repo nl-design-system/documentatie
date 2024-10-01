@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.1141f300.js.LICENSE.txt */
+/*! For license information please see fd971f9b.448b1fd9.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -61,6 +61,7 @@
          language: { abbr: 'NL', description: 'Nederlands' },
         },
         { isoDateTime: '2024-10-15T13:00:00.000Z', speakers: [{ name: 'Jeroen du Chatinier', organisation: 'Gemeente Utrecht' }], subject: 'Je eerste gebruikersonderzoek doen, hoe doe je dat?', icalLink: '/dsweek-2024/jeroen-du-chatinier.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2024-10-15T15:30:00.000Z', speakers: [{ name: 'Charlotte van Bijnen', organisation: 'Valsplat' }], subject: 'Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming', icalLink: '/dsweek-2024/charlotte-van-bijnen.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#jongeren-en-jeugdcriminaliteit:-een-journey-voor-(en-naar)-betere-communicatie-door-de-raad-van-de-kinderbescherming', language: { abbr: 'NL', description: 'Nederlands' } },
        ],
       }),
       '\n',
