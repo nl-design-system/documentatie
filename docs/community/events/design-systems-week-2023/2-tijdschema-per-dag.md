@@ -1,5 +1,5 @@
 ---
-title: Tijdschema
+title: Tijdschema • Design Systems Week 2023
 description: Tijdschema per dag voor de Design Systems Week 2023
 hide_table_of_contents: true
 sidebar_label: Tijdschema
@@ -11,7 +11,7 @@ import { Icon, Link, UnorderedList, UnorderedListItem } from "@utrecht/component
 import { IconUser, IconUsers } from "@tabler/icons-react";
 import { SessionTable } from "@site/src/components/SessionTable";
 
-# Design Systems Week Tijdschema
+# Tijdschema Design Systems Week 2023
 
 NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 

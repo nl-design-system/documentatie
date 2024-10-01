@@ -1,5 +1,5 @@
 ---
-title: Tijdschema
+title: Tijdschema • Design Systems Week 2024
 description: Tijdschema per dag voor de Design Systems Week 2024
 hide_table_of_contents: true
 sidebar_label: Tijdschema
@@ -12,7 +12,7 @@ import { Icon, Link, UnorderedList, UnorderedListItem } from "@utrecht/component
 import { IconUser, IconUsers } from "@tabler/icons-react";
 import { SessionTable } from "../../../../src/components/SessionTable";
 
-# Tijdschema
+# Tijdschema Design Systems Week 2024
 
 NL Design System organiseert dit jaar voor de 4e keer de Design Systems Week. Van **14 tot 17 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 
