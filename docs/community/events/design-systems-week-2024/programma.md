@@ -48,7 +48,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <Paragraph>Projecten rond jeugdcriminaliteit focussen vaak op het delict en de gedragsverandering van jongeren. Maar hoe zit het met het gedrag van de instanties waar zij mee te maken krijgen? De Raad voor de Kinderbescherming stelde zichzelf die vraag. Dit project focust op hoe er met jongeren wordt gecommuniceerd, wat de impact is en wat beter kan.</Paragraph>
 
-<Paragraph>Na aanhouding begeleidt de RvdK jaarlijks zo'n 8.000 jongeren tussen 12 en 23 jaar die terechtkomen in een systeem van instanties als politie, justitie, reclassering. De RvdK is hun constante factor. Maar hoe ervaren jongeren dat? Voelen zij zich beschermd? Hoe help je hen het beste tijdens een lang, moeilijk straftraject?</Paragraph>
+<Paragraph>Na aanhouding begeleidt de Raad voor de Kinderbescherming jaarlijks zo'n 8.000 jongeren tussen 12 en 23 jaar die terechtkomen in een systeem van instanties als politie, justitie, reclassering. De Raad voor de Kinderbescherming is hun constante factor. Maar hoe ervaren jongeren dat? Voelen zij zich beschermd? Hoe help je hen het beste tijdens een lang, moeilijk straftraject?</Paragraph>
 
 <Paragraph>Als researcher bij Valsplat sprak Charlotte met jongeren over hun ervaringen, de brieven die ze ontvangen en hun contactmomenten. Ze hield workshops met o.a. Raadsonderzoekers en Taakstraf Coördinatoren om ook hun perspectief te begrijpen. De journey maakte de complexiteit en emotionele impact van deze communicatie zichtbaar en toonde concreet waar verbetering mogelijk is.</Paragraph>
 
