@@ -125,6 +125,19 @@ icalLink: "/dsweek-2024/jeroen-du-chatinier.ics",
 sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?",
 language: { abbr: "NL", description: "Nederlands" },
 },
+{
+isoDateTime: "2024-10-15T15:30:00.000Z",
+speakers: [
+{
+name: "Charlotte van Bijnen",
+organisation: "Valsplat",
+},
+],
+subject: "Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming",
+icalLink: "/dsweek-2024/charlotte-van-bijnen.ics",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#jongeren-en-jeugdcriminaliteit:-een-journey-voor-(en-naar)-betere-communicatie-door-de-raad-van-de-kinderbescherming",
+language: { abbr: "NL", description: "Nederlands" },
+},
 ]}
 />
 
