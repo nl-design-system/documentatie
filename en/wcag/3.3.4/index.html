@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.72b2bf38.css" />
-  <script src="/en/assets/js/runtime~main.ad17499b.js" defer="defer"></script>
-  <script src="/en/assets/js/main.28ce4eea.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.2f61f1d7.js" defer="defer"></script>
+  <script src="/en/assets/js/main.436b7cdc.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -204,6 +204,7 @@
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/3.3.2">3.3.2 Labels of instructies</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/3.3.3">3.3.3 Foutsuggestie</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/en/wcag/3.3.4">3.3.4 Foutpreventie (wettelijk, financieel, gegevens)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/3.3.5">3.3.5 Hulp</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/3.3.7">3.3.7 Overbodige invoer</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/3.3.8">3.3.8 Toegankelijke authenticatie (minimum)</a></li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/en/wcag/4.1.1">4.1.1 Parsen</a></li>
@@ -287,9 +288,72 @@
                </li>
               </ul>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Wanneer een gebruiker een formulier invult met juridische, financi</p>
+              <p>Wanneer een gebruiker een formulier invult met juridische, financiële of persoonlijke gegevens, zorg er dan voor dat gebruiker de ingevulde gegevens kan controleren en corrigeren.</p>
+              <p>Bied ten minste één van de volgende opties aan:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><strong>Omkeerbaar</strong>: Geef de gebruiker de mogelijkheid om de inzending of transactie terug te draaien.</li>
+               <li class="utrecht-unordered-list__item"><strong>Gecontroleerd</strong>: Controleer tijdens het invullen de gegevens op invoerfouten en geef de gebruiker de mogelijkheid de gegevens te verbeteren.</li>
+               <li class="utrecht-unordered-list__item"><strong>Bevestigd</strong>: Geef de gebruiker, voor inzending, de mogelijkheid om de ingevulde gegevens te beoordelen, te bevestigen en te verbeteren.</li>
+              </ul>
+              <h2 id="gerelateerde-nl-design-system-richtlijn" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijn</h2>
+              <p>Foutmeldingen: <a href="/richtlijnen/formulieren/foutmeldingen" class="utrecht-link utrecht-link--html-a">Foutmeldingen</a>.</p>
+              <h2 id="bronnen" class="utrecht-heading-2">Bronnen</h2>
+              <p>Op GOV.UK:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">
+                <a href="https://design-system.service.gov.uk/patterns/check-answers/" class="utrecht-link utrecht-link--html-a"><span lang="en">Help users to Check answers</span></a
+                >.
+               </li>
+               <li class="utrecht-unordered-list__item">
+                <a href="https://github.com/alphagov/wcag-primer/wiki/3.3.4" class="utrecht-link utrecht-link--html-a"><span lang="en">Wiki 3.3.4 Error Prevention (Legal, Financial, Data)</span></a
+                >.
+               </li>
+              </ul>
+              <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item"><a href="https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/wmebv/vng-online-formulieren" class="utrecht-link utrecht-link--html-a">Contactformulier voor WMEBV</a>.</li>
+              </ul>
+              <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Controleer of de gebruiker de mogelijkheid heeft ingevoerde gegevens te bekijken en te wijzigen voordat deze het formulier verzendt.</p>
+              <p>Als deze optie niet beschikbaar is, controleer dan of het mogelijk is een inzending of transactie terug te draaien of te annuleren.</p>
+              <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
+              <p>Deze pagina&#x27;s over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a>.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.3.04.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_aJxh" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Edit this page</a
+                >
+               </div>
+               <div class="col lastUpdated_UpNN"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/en/wcag/3.3.3"
+              ><div class="pagination-nav__sublabel">Previous</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 3.3.3 Foutsuggestie</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/en/wcag/3.3.5"
+              ><div class="pagination-nav__sublabel">Next</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 3.3.5 Hulp</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_MGdY thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
+             <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijn" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijn</a></li>
+             <li><a href="#bronnen" class="table-of-contents__link toc-highlight">Bronnen</a></li>
+             <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -298,6 +362,25 @@
       </div>
      </div>
     </div>
+    <footer class="footer footer--dark footer_VVap">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link" href="/en/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>
