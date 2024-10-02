@@ -24,12 +24,6 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 - Bij Nederlandstalige sessies is een schrijftolk aanwezig.
 - Sommige sessies worden in het Engels gegeven, dit wordt per sessie aangegeven.
 
-<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent" headingLevel={2}>
-
-<Paragraph>Bij het bouwen van componenten met CSS gaat het er niet alleen om dat ze performant en responsive gebouwd zijn. We moeten er ook rekening mee houden hoe ze werken in meertalige websites. In zijn presentatie laat Ahmad zien hoe je een bestaand component kunt aanpassen zodat het werkt in zowel talen die van links naar rechts gelezen worden (LTR), als in talen die van rechts naar links gelezen worden (RTL). Hij laat ook zien hoe je veel voorkomende issues kunt testen en voorkomen.</Paragraph>
-
-</DSWSession>
-
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} organisation="US Web Design System" headingLevel={2}>
 
 <Paragraph>Amy gaat ons laten zien hoe het US Web Design System toegankelijkheidstests in duidelijke taal heeft toegevoegd bij individuele componenten. In deze talk leer je hoe elk webteam – technisch of niet — deze tests kan gebruiken om een minimale baseline aan toegankelijkheidstests te doen, zoals tests met toetsenbord, screenreader, mobiele devices en vergrotingssoftware. Ze laat ook het iteratieve ontwerp- en bouwproces zien dat haar team heeft bij het maken van deze checklists.</Paragraph>
