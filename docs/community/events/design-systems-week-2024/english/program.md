@@ -25,12 +25,6 @@ Some of the talks are in Dutch, others are in English. This page lists the talks
 
 _All sessions can be joined online for free. Each talk will take about 30 minutes, including time for questions. [Sign up](/events/design-systems-week/sign-up) to receive updates and download [our calendar file](/dsweek-2024/dsweek-2024.ics) to add the week to your calendar._
 
-<DSWSession title="RTL Styling in CSS" speakers={[speakers.AhmadShadeed]} organisation="Independent" lang="en" headingLevel={2}>
-
-<Paragraph>Building components in CSS isn't only about making them performant and responsive. We need to think about how they will work for multilingual websites. In this talk, Ahmad will show how to adapt an existing component and make it work with both left-to-right (LTR) and right-to-left (RTL), how to test, avoid common issues, and more.</Paragraph>
-
-</DSWSession>
-
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System" headingLevel={2}>
 
 Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their own.

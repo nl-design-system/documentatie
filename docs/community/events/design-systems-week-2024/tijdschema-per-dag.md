@@ -240,19 +240,6 @@ icalLink: "/dsweek-2024/lotte-bijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2024-10-17T11:00:00.000Z",
-speakers: [
-{
-name: "Ahmad Shadeed",
-organisation: "independent",
-},
-],
-subject: "RTL Styling in CSS",
-sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#rtl-styling-in-css",
-icalLink: "/dsweek-2024/ahmad-shadeed.ics",
-language: { abbr: "EN", description: "Engels" },
-},
-{
 isoDateTime: "2024-10-17T15:30:00.000Z",
 speakers: [
 {
