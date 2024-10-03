@@ -3,7 +3,7 @@
  [88678],
  {
   87174: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => p, contentTitle: () => u, default: () => f, frontMatter: () => c, metadata: () => h, toc: () => g });
+   i.r(n), i.d(n, { assets: () => h, contentTitle: () => u, default: () => f, frontMatter: () => c, metadata: () => p, toc: () => g });
    var t = i(52676),
     s = i(24785),
     r = i(71595),
@@ -19,8 +19,8 @@
    }
    const c = { title: 'WCAG-succescriterium 3.2.6 Consistente hulp', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.6 Consistente hulp', pagination_label: 'WCAG-succescriterium 3.2.6 Consistente hulp', description: 'Bied je hulp aan, of manieren om contact op te nemen op de website? Zorg er dan voor dat die informatie, of een link naar deze informatie, consistent op elke pagina binnen de website op dezelfde plek terugkomt.', slug: '3.2.6', keywords: ['WCAG'] },
     u = void 0,
-    h = { id: 'wcag/3.2.06', title: 'WCAG-succescriterium 3.2.6 Consistente hulp', description: 'Bied je hulp aan, of manieren om contact op te nemen op de website? Zorg er dan voor dat die informatie, of een link naar deze informatie, consistent op elke pagina binnen de website op dezelfde plek terugkomt.', source: '@site/docs/wcag/3.2.06.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.6', permalink: '/wcag/3.2.6', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.06.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.6 Consistente hulp', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.6 Consistente hulp', pagination_label: 'WCAG-succescriterium 3.2.6 Consistente hulp', description: 'Bied je hulp aan, of manieren om contact op te nemen op de website? Zorg er dan voor dat die informatie, of een link naar deze informatie, consistent op elke pagina binnen de website op dezelfde plek terugkomt.', slug: '3.2.6', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', permalink: '/wcag/3.2.4' }, next: { title: 'WCAG-succescriterium 3.3.1 Foutidentificatie', permalink: '/wcag/3.3.1' } },
-    p = {},
+    p = { id: 'wcag/3.2.06', title: 'WCAG-succescriterium 3.2.6 Consistente hulp', description: 'Bied je hulp aan, of manieren om contact op te nemen op de website? Zorg er dan voor dat die informatie, of een link naar deze informatie, consistent op elke pagina binnen de website op dezelfde plek terugkomt.', source: '@site/docs/wcag/3.2.06.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.6', permalink: '/en/wcag/3.2.6', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.06.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.6 Consistente hulp', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.6 Consistente hulp', pagination_label: 'WCAG-succescriterium 3.2.6 Consistente hulp', description: 'Bied je hulp aan, of manieren om contact op te nemen op de website? Zorg er dan voor dat die informatie, of een link naar deze informatie, consistent op elke pagina binnen de website op dezelfde plek terugkomt.', slug: '3.2.6', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.5 Verandering op verzoek', permalink: '/en/wcag/3.2.5' }, next: { title: 'WCAG-succescriterium 3.3.1 Foutidentificatie', permalink: '/en/wcag/3.3.1' } },
+    h = {},
     g = [
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Uitleg', id: 'uitleg', level: 2 },
