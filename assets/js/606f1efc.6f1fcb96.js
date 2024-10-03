@@ -16,7 +16,7 @@
    }
   },
   40220: (e, n, l) => {
-   l.r(n), l.d(n, { assets: () => h, contentTitle: () => p, default: () => v, frontMatter: () => m, metadata: () => g, toc: () => _ });
+   l.r(n), l.d(n, { assets: () => h, contentTitle: () => m, default: () => b, frontMatter: () => p, metadata: () => g, toc: () => _ });
    var o = l(52676),
     t = l(24785),
     s = l(98480),
@@ -38,21 +38,21 @@
     return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(c, { ...e }) }) : c(e);
    }
    var u = l(23680);
-   const m = { title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing foutmelding', pagination_label: 'Plaatsing foutmelding', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', keywords: ['labels', 'formulier', 'design', 'code'] },
-    p = void 0,
-    g = { id: 'richtlijnen/formulieren/error/location/README', title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', source: '@site/docs/richtlijnen/formulieren/error/4-location/README.mdx', sourceDirName: 'richtlijnen/formulieren/error/4-location', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', permalink: '/en/richtlijnen/formulieren/foutmeldingen/plaatsing', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/error/4-location/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing foutmelding', pagination_label: 'Plaatsing foutmelding', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Duidelijke foutmeldingen', permalink: '/en/richtlijnen/formulieren/foutmeldingen/duidelijk - labels - formulier - design - code' }, next: { title: 'HTML-formuliervalidatie', permalink: '/en/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie' } },
+   const p = { title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing foutmelding', pagination_label: 'Plaatsing foutmelding', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', keywords: ['labels', 'formulier', 'design', 'code'] },
+    m = void 0,
+    g = { id: 'richtlijnen/formulieren/error/location/README', title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', source: '@site/docs/richtlijnen/formulieren/error/4-location/README.mdx', sourceDirName: 'richtlijnen/formulieren/error/4-location', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', permalink: '/richtlijnen/formulieren/foutmeldingen/plaatsing', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/error/4-location/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Zet de foutmeldingen bij de betreffende formuliervelden | Foutmeldingen in een formulier | Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing foutmelding', pagination_label: 'Plaatsing foutmelding', description: 'Richtlijnen voor positie van foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/plaatsing', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Duidelijke foutmeldingen', permalink: '/richtlijnen/formulieren/foutmeldingen/duidelijk' }, next: { title: 'HTML-formuliervalidatie', permalink: '/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie' } },
     h = {},
     _ = [];
-   function b(e) {
+   function v(e) {
     return (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', (0, o.jsx)(a, {}), '\n', (0, o.jsx)(d, {}), '\n', (0, o.jsx)(u.ZP, {})] });
    }
-   function v(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(b, { ...e }) }) : b();
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(v, { ...e }) }) : v();
    }
   },
   98480: (e, n, l) => {
-   l.d(n, { X: () => v });
+   l.d(n, { X: () => b });
    var o = l(46506),
     t = l(4814),
     s = l(25585),
@@ -62,31 +62,31 @@
     c = l(6374),
     a = l(75271),
     u = l(60027);
-   const m = { 'nlds-canvas': 'nlds-canvas_h8Yz', 'nlds-canvas--distanced': 'nlds-canvas--distanced_BU4b', 'nlds-canvas__example': 'nlds-canvas__example_sS53', 'nlds-canvas__example-document': 'nlds-canvas__example-document_cR3e', 'nlds-canvas__code-block': 'nlds-canvas__code-block_eqxI', 'nlds-canvas__code-block--user-select-none': 'nlds-canvas__code-block--user-select-none_Jv1j', 'nlds-canvas__toolbar': 'nlds-canvas__toolbar_AMcV', 'nlds-canvas__toolbar--copy': 'nlds-canvas__toolbar--copy_HaYV', 'nlds-canvas__button': 'nlds-canvas__button_cHBw' };
-   var p = l(41179),
+   const p = { 'nlds-canvas': 'nlds-canvas_h8Yz', 'nlds-canvas--distanced': 'nlds-canvas--distanced_BU4b', 'nlds-canvas__example': 'nlds-canvas__example_sS53', 'nlds-canvas__example-document': 'nlds-canvas__example-document_cR3e', 'nlds-canvas__code-block': 'nlds-canvas__code-block_eqxI', 'nlds-canvas__code-block--user-select-none': 'nlds-canvas__code-block--user-select-none_Jv1j', 'nlds-canvas__toolbar': 'nlds-canvas__toolbar_AMcV', 'nlds-canvas__toolbar--copy': 'nlds-canvas__toolbar--copy_HaYV', 'nlds-canvas__button': 'nlds-canvas__button_cHBw' };
+   var m = l(41179),
     g = l(52676);
    const h = (e) => {
     let { children: n } = e;
-    return (0, g.jsx)(o.Tg, { className: m['nlds-canvas__example-surface'], children: (0, g.jsx)(o.BB, { className: (0, t.Z)('utrecht-document--surface', m['nlds-canvas__example-document']), children: (0, g.jsx)(o.nv, { className: m['nlds-canvas__example-paragraph'], children: n }) }) });
+    return (0, g.jsx)(o.Tg, { className: p['nlds-canvas__example-surface'], children: (0, g.jsx)(o.BB, { className: (0, t.Z)('utrecht-document--surface', p['nlds-canvas__example-document']), children: (0, g.jsx)(o.nv, { className: p['nlds-canvas__example-paragraph'], children: n }) }) });
    };
    h.displayName = 'ParagraphContainer';
    const _ = (e) => {
     let { children: n } = e;
-    return (0, g.jsx)(o.Tg, { className: m['nlds-canvas__example-surface'], children: (0, g.jsx)(o.BB, { className: (0, t.Z)('utrecht-document--surface', m['nlds-canvas__example-document']), children: n }) });
+    return (0, g.jsx)(o.Tg, { className: p['nlds-canvas__example-surface'], children: (0, g.jsx)(o.BB, { className: (0, t.Z)('utrecht-document--surface', p['nlds-canvas__example-document']), children: n }) });
    };
    _.displayName = 'DocumentContainer';
-   const b = (e) => {
-    let { children: n } = e;
-    return (0, g.jsx)(o.Tg, { className: m['nlds-canvas__example-surface'], children: n });
-   };
-   b.displayName = 'SurfaceContainer';
    const v = (e) => {
-    let { code: n, copy: l = !0, defaultExpandedCode: v = !1, displayCode: f = !0, children: y, container: j = 'document', language: x, designTokens: k } = e,
+    let { children: n } = e;
+    return (0, g.jsx)(o.Tg, { className: p['nlds-canvas__example-surface'], children: n });
+   };
+   v.displayName = 'SurfaceContainer';
+   const b = (e) => {
+    let { code: n, copy: l = !0, defaultExpandedCode: b = !1, displayCode: f = !0, children: y, container: j = 'document', language: x, designTokens: k } = e,
      w = 'function' == typeof y ? y() : y,
      N = 'function' == typeof n ? n() : (0, a.isValidElement)(n) ? n : void 0,
      Z = 'string' == typeof n ? n : u.uS(N || w),
      [C, P] = (0, a.useState)(Z),
-     [z, S] = (0, a.useState)(v);
+     [z, S] = (0, a.useState)(b);
     (0, a.useEffect)(() => {
      (async () => {
       (C = await c.ZP.format(Z, { parser: x, plugins: [s.Z, r.ZP, i.ZP, d.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), P(C);
@@ -95,16 +95,16 @@
     const F = (0, a.useId)();
     let D = a.Fragment;
     return (
-     'paragraph' === j ? (D = h) : 'document' === j ? (D = _) : 'surface' === j && (D = b),
+     'paragraph' === j ? (D = h) : 'document' === j ? (D = _) : 'surface' === j && (D = v),
      (0, g.jsxs)('div', {
-      className: (0, t.Z)(m['nlds-canvas']),
+      className: (0, t.Z)(p['nlds-canvas']),
       children: [
-       w && (0, g.jsx)('div', { className: (0, t.Z)(m['nlds-canvas__example']), children: (0, g.jsx)('div', { className: 'voorbeeld-theme', style: k, children: (0, g.jsx)(D, { children: (0, g.jsx)(o.pu, { children: w }) }) }) }),
+       w && (0, g.jsx)('div', { className: (0, t.Z)(p['nlds-canvas__example']), children: (0, g.jsx)('div', { className: 'voorbeeld-theme', style: k, children: (0, g.jsx)(D, { children: (0, g.jsx)(o.pu, { children: w }) }) }) }),
        f &&
         (0, g.jsx)('div', {
-         className: (0, t.Z)(m['nlds-canvas__toolbar']),
+         className: (0, t.Z)(p['nlds-canvas__toolbar']),
          children: (0, g.jsx)(o.zx, {
-          className: (0, t.Z)(m['nlds-canvas__button'], m['nlds-canvas__toggle-code-button']),
+          className: (0, t.Z)(p['nlds-canvas__button'], p['nlds-canvas__toggle-code-button']),
           appearance: 'subtle-button',
           onClick: () => {
            S(!z);
@@ -116,16 +116,16 @@
         }),
        f &&
         (0, g.jsxs)('div', {
-         className: (0, t.Z)(m['nlds-canvas__code-block'], !l && m['nlds-canvas__code-block--user-select-none']),
+         className: (0, t.Z)(p['nlds-canvas__code-block'], !l && p['nlds-canvas__code-block--user-select-none']),
          id: F,
          hidden: !z,
          children: [
-          (0, g.jsx)(p.u, { syntax: x, textContent: C, trim: !0 }),
+          (0, g.jsx)(m.u, { syntax: x, textContent: C, trim: !0 }),
           l &&
            (0, g.jsx)('div', {
-            className: (0, t.Z)(m['nlds-canvas__toolbar'], m['nlds-canvas__toolbar--copy']),
+            className: (0, t.Z)(p['nlds-canvas__toolbar'], p['nlds-canvas__toolbar--copy']),
             children: (0, g.jsx)(o.zx, {
-             className: (0, t.Z)(m['nlds-canvas__button'], m['nlds-canvas__copy-button']),
+             className: (0, t.Z)(p['nlds-canvas__button'], p['nlds-canvas__copy-button']),
              appearance: 'subtle-button',
              onClick: () => {
               navigator.clipboard.writeText(C).catch((e) => console.error('Copy code failed', e));
@@ -210,11 +210,11 @@
    var d = l(52676);
    const c = (e) => {
     let { title: n, appearance: l, description: c, children: a, figure: u } = e;
-    const m = 'Doen',
-     p = 'Niet doen',
+    const p = 'Doen',
+     m = 'Niet doen',
      g = u ? 'figure' : 'div',
      h = u ? 'figcaption' : 'div';
-    return (0, d.jsxs)(g, { className: (0, r.Z)(i['nlds-guideline'], i[`nlds-guideline--${l}`]), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, d.jsxs)(h, { className: (0, r.Z)(i['nlds-guideline__description']), children: ['dont' === l ? (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(s.nv, { className: (0, r.Z)(i['nlds-guideline__badge'], i[`nlds-guideline__badge--${l}`]), children: [(0, d.jsx)(o.Z, { className: i['nlds-guideline__icon'] }), (0, d.jsx)('span', { className: i['nlds-guideline__title'], children: p })] }), (0, d.jsx)(s.nv, { children: n })] }) : (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(s.nv, { className: (0, r.Z)(i['nlds-guideline__badge'], i[`nlds-guideline__badge--${l}`]), children: [(0, d.jsx)(t.Z, { className: i['nlds-guideline__icon'] }), (0, d.jsx)('span', { className: i['nlds-guideline__title'], children: m })] }), (0, d.jsx)(s.nv, { children: n })] }), c] }), (0, d.jsx)('div', { className: (0, r.Z)(i['nlds-guideline__example']), children: a })] });
+    return (0, d.jsxs)(g, { className: (0, r.Z)(i['nlds-guideline'], i[`nlds-guideline--${l}`]), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, d.jsxs)(h, { className: (0, r.Z)(i['nlds-guideline__description']), children: ['dont' === l ? (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(s.nv, { className: (0, r.Z)(i['nlds-guideline__badge'], i[`nlds-guideline__badge--${l}`]), children: [(0, d.jsx)(o.Z, { className: i['nlds-guideline__icon'] }), (0, d.jsx)('span', { className: i['nlds-guideline__title'], children: m })] }), (0, d.jsx)(s.nv, { children: n })] }) : (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(s.nv, { className: (0, r.Z)(i['nlds-guideline__badge'], i[`nlds-guideline__badge--${l}`]), children: [(0, d.jsx)(t.Z, { className: i['nlds-guideline__icon'] }), (0, d.jsx)('span', { className: i['nlds-guideline__title'], children: p })] }), (0, d.jsx)(s.nv, { children: n })] }), c] }), (0, d.jsx)('div', { className: (0, r.Z)(i['nlds-guideline__example']), children: a })] });
    };
   },
   24785: (e, n, l) => {
