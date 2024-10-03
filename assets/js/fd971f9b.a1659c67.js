@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.448b1fd9.js.LICENSE.txt */
+/*! For license information please see fd971f9b.a1659c67.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -95,7 +95,6 @@
        sessions: [
         { isoDateTime: '2024-10-17T09:00:00.000Z', speakers: [{ name: 'Robbert Broersma', organisation: 'NL Design System' }], subject: 'Live coden', icalLink: '/dsweek-2024/robbert-broersma.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2024-10-17T13:00:00.000Z', speakers: [{ name: 'Lotte Bijl', organisation: 'Belastingdienst' }], subject: 'Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen', icalLink: '/dsweek-2024/lotte-bijl.ics', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2024-10-17T11:00:00.000Z', speakers: [{ name: 'Ahmad Shadeed', organisation: 'independent' }], subject: 'RTL Styling in CSS', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#rtl-styling-in-css', icalLink: '/dsweek-2024/ahmad-shadeed.ics', language: { abbr: 'EN', description: 'Engels' } },
         { isoDateTime: '2024-10-17T15:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } },
        ],
       }),
