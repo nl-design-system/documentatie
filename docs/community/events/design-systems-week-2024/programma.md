@@ -84,6 +84,8 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <Paragraph>Marieke Brouwer van de Gemeente Groningen: “bij de gemeente zijn wij met een klein team actief bezig met het verbeteren van de gebruikerservaring voor onze inwoners en ondernemers. Een belangrijk onderdeel van mijn rol is de implementatie van het NL Design System. We gebruiken als een van de eerste gemeentes de voorbeeldbibliotheek als basis voor ons eigen design system. In mijn presentatie zal ik laten zien hoe wij de bibliotheek gebruiken (met de plugin van token studio) en wat we hiervan hebben geleerd.”</Paragraph>
 
+<Paragraph>Lars van de Cappelle van Design System Bold: “Bij Bold zijn we van een Single-brand naar Multi-brand Design System uitgebreid waar de Belastingdienst, Toeslagen en Douane gebruik van maakt. Hiervoor zijn we overgestapt op design tokens om ons Design System van deze organisatiethema's te kunnen voorzien. Hierbij hebben we ook Dark Mode meegenomen. Tijdens mijn demo zal ik laten zien hoe we dit hebben aangepakt in Figma en in de code.”</Paragraph>
+
 </DSWSession>
 
 <DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur" captioned headingLevel={2}>
