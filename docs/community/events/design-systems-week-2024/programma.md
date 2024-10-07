@@ -121,3 +121,11 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 <Paragraph>Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.‌UK Design System en andere platformen van de Britse overheid. Hij laat zien wat we kunnen leren van de principes die het web zo fantastisch maken, om meer waarde te creëren voor het publiek waar we het voor doen.</Paragraph>
 
 </DSWSession>
+
+<DSWSession title="Werken op schaal" speakers={[speakers.ThijsLouisse]} organisation="ING" headingLevel={2} captioned>
+
+<Paragraph>Het design system van ING wordt door bijna 2000 _consuming packages_ als _dependency_ gebruikt. Als een nieuwe versie van het design system wordt uitgebracht, is het vaak een uitdaging om te zorgen dat alle gebruikers upgraden. Maar om de beste gebruikerservaring, applicatiekwaliteit, snelheid en interoperabiliteit te bereiken, is het essentieel om packages up to date houden.</Paragraph>
+
+<Paragraph>In zijn presentatie laat Thijs verschillende strategieën zien om teams efficient up to date te krijgen met de laatste versie van het design system.</Paragraph>
+
+</DSWSession>
