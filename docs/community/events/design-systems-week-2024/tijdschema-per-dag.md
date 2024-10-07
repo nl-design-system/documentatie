@@ -57,8 +57,9 @@ name: "Thijs Louisse",
 organisation: "ING",
 },
 ],
-subject: "",
+subject: "Werken op schaal",
 icalLink: "/dsweek-2024/thijs-louisse.ics",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -126,7 +127,7 @@ sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programm
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2024-10-15T15:30:00.000Z",
+isoDateTime: "2024-10-15T14:30:00.000Z",
 speakers: [
 {
 name: "Charlotte van Bijnen",
@@ -194,7 +195,7 @@ icalLink: "/dsweek-2024/bart-veneman.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2024-10-16T15:30:00.000Z",
+isoDateTime: "2024-10-16T14:30:00.000Z",
 speakers: [
 {
 name: "Amy Cole",
@@ -240,7 +241,7 @@ icalLink: "/dsweek-2024/lotte-bijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
-isoDateTime: "2024-10-17T15:30:00.000Z",
+isoDateTime: "2024-10-17T14:30:00.000Z",
 speakers: [
 {
 name: "Steve Messer",
