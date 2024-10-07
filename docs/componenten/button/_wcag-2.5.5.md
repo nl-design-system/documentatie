@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De button is groot genoeg om gemakkelijk aan te klikken (44 bij 44 pixels). Kleinere buttons staan niet te dicht op een andere button.
+Zorg ervoor dat de button een minimale grootte heeft van 44 bij 44 CSS pixels. Definieer hoogte en de breedte niet in `px`, maar gebruik een relatieve waarde als em of rem. Anders kan de button niet goed meegroeien wanneer de gebruiker inzoomt.
 
 NL Design System richtlijnen:
 
