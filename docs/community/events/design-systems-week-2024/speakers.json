@@ -135,6 +135,18 @@
     },
     "language": "nl"
   },
+  "LarsvandeCappelle": {
+    "name": "Lars van de Cappelle",
+    "organisation": "Belastingdienst",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-lars-van-de-cappelle.png",
+      "alt": "Lars van de Cappelle"
+    },
+    "description": {
+      "nl": "Lars van de Cappelle is UX Designer bij de Belastingdienst."
+    },
+    "language": "nl"
+  },
   "LotteBijl": {
     "name": "Lotte Bijl",
     "organisation": "Belastingdienst",
