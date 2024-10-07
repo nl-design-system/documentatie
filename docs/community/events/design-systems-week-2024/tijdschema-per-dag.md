@@ -59,7 +59,7 @@ organisation: "ING",
 ],
 subject: "Werken op schaal",
 icalLink: "/dsweek-2024/thijs-louisse.ics",
-sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid",
+sessionLink: "https://nldesignsystem.nl/events/design-systems-week-2024/programma#werken-op-schaal",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
