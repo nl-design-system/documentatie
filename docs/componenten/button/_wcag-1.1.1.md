@@ -2,6 +2,10 @@
 
 Als het label van een button uit een afbeelding bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de button een naam heeft die duidelijk maakt waar de button voor dient.
 
+Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is. Een `img` kan dan een leeg `alt`-attribuut krijgen (`alt=""`).
+
+Is het toch gewenst om alleen een icoon te tonen, hou dan rekening met het volgende.
+
 ##### In de code
 Een `img` met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de naam van de button:
 
