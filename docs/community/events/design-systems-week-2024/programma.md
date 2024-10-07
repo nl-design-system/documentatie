@@ -76,7 +76,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong]} organisation="NL Design System community" captioned headingLevel={2}>
+<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong, speakers.LarsvandeCappelle]} organisation="NL Design System community" captioned headingLevel={2}>
 
 <Paragraph>De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL Design System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende organisaties in de community over hun ervaringen met NL Design System.</Paragraph>
 
