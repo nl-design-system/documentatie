@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.bfc02093.js.LICENSE.txt */
+/*! For license information please see fd971f9b.6a3f9d13.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -10,7 +10,7 @@
     t = n(81564);
    const r = { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' },
     o = 'Tijdschema Design Systems Week 2024',
-    d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/en/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
+    d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/events/design-systems-week-2024/en' } },
     l = {},
     m = [
      { value: 'Maandag 14 oktober', id: 'maandag-14-oktober', level: 2 },
@@ -38,7 +38,7 @@
        sessions: [
         { isoDateTime: '2024-10-14T09:00:00.000Z', speakers: [{ name: 'Gert Hengeveld', organisation: 'Chromatic' }], subject: 'Testing UI', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui', icalLink: '/dsweek-2024/gert-hengeveld.ics', language: { abbr: 'EN', description: 'English' } },
         { isoDateTime: '2024-10-14T11:00:00.000Z', speakers: [{ name: 'Geri Reid', organisation: 'Just Eat Takeaway' }], subject: 'Design Systems: Choose your own adventure', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure', icalLink: '/dsweek-2024/geri-reid.ics', language: { abbr: 'EN', description: 'English' } },
-        { isoDateTime: '2024-10-14T13:00:00.000Z', speakers: [{ name: 'Thijs Louisse', organisation: 'ING' }], subject: '', icalLink: '/dsweek-2024/thijs-louisse.ics', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2024-10-14T13:00:00.000Z', speakers: [{ name: 'Thijs Louisse', organisation: 'ING' }], subject: 'Werken op schaal', icalLink: '/dsweek-2024/thijs-louisse.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2024-10-14T14:30:00.000Z', speakers: [{ name: 'Mike Gifford', organisation: 'CivicActions' }], subject: 'De voordelen van open werken met design systems bij de overheid', icalLink: '/dsweek-2024/mike-gifford.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
@@ -61,7 +61,7 @@
          language: { abbr: 'NL', description: 'Nederlands' },
         },
         { isoDateTime: '2024-10-15T13:00:00.000Z', speakers: [{ name: 'Jeroen du Chatinier', organisation: 'Gemeente Utrecht' }], subject: 'Je eerste gebruikersonderzoek doen, hoe doe je dat?', icalLink: '/dsweek-2024/jeroen-du-chatinier.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2024-10-15T15:30:00.000Z', speakers: [{ name: 'Charlotte van Bijnen', organisation: 'Valsplat' }], subject: 'Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming', icalLink: '/dsweek-2024/charlotte-van-bijnen.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#jongeren-en-jeugdcriminaliteit:-een-journey-voor-(en-naar)-betere-communicatie-door-de-raad-van-de-kinderbescherming', language: { abbr: 'NL', description: 'Nederlands' } },
+        { isoDateTime: '2024-10-15T14:30:00.000Z', speakers: [{ name: 'Charlotte van Bijnen', organisation: 'Valsplat' }], subject: 'Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming', icalLink: '/dsweek-2024/charlotte-van-bijnen.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#jongeren-en-jeugdcriminaliteit:-een-journey-voor-(en-naar)-betere-communicatie-door-de-raad-van-de-kinderbescherming', language: { abbr: 'NL', description: 'Nederlands' } },
        ],
       }),
       '\n',
@@ -84,7 +84,7 @@
         },
         { isoDateTime: '2024-10-16T11:00:00.000Z', speakers: [{ name: 'Darice de Cuba', organisation: '' }], subject: 'Unmeasurable Accessibility: Beyond conformance', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance', icalLink: '/dsweek-2024/darice-de-cuba.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2024-10-16T13:00:00.000Z', speakers: [{ name: 'Bart Veneman', organisation: 'Project Wallace' }], subject: 'Wat je allemaal niet weet over je CSS', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css', icalLink: '/dsweek-2024/bart-veneman.ics', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2024-10-16T15:30:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } },
+        { isoDateTime: '2024-10-16T14:30:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } },
        ],
       }),
       '\n',
@@ -95,7 +95,7 @@
        sessions: [
         { isoDateTime: '2024-10-17T09:00:00.000Z', speakers: [{ name: 'Robbert Broersma', organisation: 'NL Design System' }], subject: 'Live coden', icalLink: '/dsweek-2024/robbert-broersma.ics', language: { abbr: 'NL', description: 'Nederlands' } },
         { isoDateTime: '2024-10-17T13:00:00.000Z', speakers: [{ name: 'Lotte Bijl', organisation: 'Belastingdienst' }], subject: 'Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen', icalLink: '/dsweek-2024/lotte-bijl.ics', language: { abbr: 'NL', description: 'Nederlands' } },
-        { isoDateTime: '2024-10-17T15:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } },
+        { isoDateTime: '2024-10-17T14:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } },
        ],
       }),
       '\n',
