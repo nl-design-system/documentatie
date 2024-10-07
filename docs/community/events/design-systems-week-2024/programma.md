@@ -122,7 +122,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Werken op schaal" speakers={[speakers.ThijsLouisse]} organisation="ING" headingLevel={2} captioned>
 
-<Paragraph>Het design system van ING wordt door meer dan 2000 _consuming packages_ als _dependency_ gebruikt. Als een nieuwe versie van het design system wordt uitgebracht, is het vaak een uitdaging om te zorgen dat alle gebruikers upgraden. Maar om de beste gebruikerservaring, applicatiekwaliteit, snelheid en interoperabiliteit te bereiken, is het essentieel om packages up tp date houden.</Paragraph>
+<Paragraph>Het design system van ING wordt door bijna 2000 _consuming packages_ als _dependency_ gebruikt. Als een nieuwe versie van het design system wordt uitgebracht, is het vaak een uitdaging om te zorgen dat alle gebruikers upgraden. Maar om de beste gebruikerservaring, applicatiekwaliteit, snelheid en interoperabiliteit te bereiken, is het essentieel om packages up to date houden.</Paragraph>
 
 <Paragraph>In zijn presentatie laat Thijs verschillende strategieën zien om teams efficient up to date te krijgen met de laatste versie van het design system.</Paragraph>
 
