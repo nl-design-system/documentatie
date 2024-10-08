@@ -112,8 +112,8 @@ importers:
         specifier: 8.5.0
         version: 8.5.0(eslint@8.57.1)(typescript@5.6.2)
       '@utrecht/component-library-css':
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 5.1.0
+        version: 5.1.0
       '@utrecht/component-library-react':
         specifier: 5.0.0
         version: 5.0.0(@babel/runtime@7.25.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2211,8 +2211,8 @@ packages:
   '@utrecht/component-library-css@3.0.1-alpha.18':
     resolution: {integrity: sha512-3njH4mb42sxQnuiWkKXSe+qgfQhfzg05eIBFwB05yTiW5Z1Af1dCTTKWMeo2Y+mzx9A1yb+lQBEIiPrfYc4e0w==}
 
-  '@utrecht/component-library-css@4.2.0':
-    resolution: {integrity: sha512-QvN0QEfVF9KJh8WD7gKJPhxMO1Eq8leB/x6h0JdkDrK7iRP+bceQtV74tn3JzkeP5LGZUsYulWXPhb6Hk6NKdw==}
+  '@utrecht/component-library-css@5.1.0':
+    resolution: {integrity: sha512-cePw2BPOh7SNCQ/Rpn8Ctz97sMrjl1XLsXs8tjSrsE3wrGBb8lJ1q3nKQoflmyex6gDuQoGr9aufQ3Ya6ZCnFQ==}
 
   '@utrecht/component-library-react@3.0.0':
     resolution: {integrity: sha512-7ftpjtQ6ygIMqlB+pWQZAT7psFo1oXkbBSlbVw/uMV5OABRDX5t3V2lN/UDTPjdMRtcj8ZBYl19zPcfkV+Gc5w==}
@@ -10588,7 +10588,7 @@ snapshots:
 
   '@utrecht/component-library-css@3.0.1-alpha.18': {}
 
-  '@utrecht/component-library-css@4.2.0': {}
+  '@utrecht/component-library-css@5.1.0': {}
 
   '@utrecht/component-library-react@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
