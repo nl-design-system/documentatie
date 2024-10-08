@@ -14,7 +14,9 @@ Je moet de afstand kunnen vergroten naar deze waardes:
 Dit is te testen met een [bookmarklet](https://html5accessibility.com/tests/tsbookmarklet.html) of door in de inspector van de browser de volgende code toe te voegen aan de `head` van de pagina:
 
 ```css
+
 <style>
+
 body * {
     line-height: 1.5 !important;
     letter-spacing: 0.12em !important;
@@ -24,5 +26,7 @@ body * {
 body p {
     margin-bottom: 2em !important;
 }
+
 </style>
+
 ```
