@@ -15,6 +15,7 @@ Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen
 Redirect 301 "/button-group" "/action-group"
 Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
 Redirect 301 "/definition-list" "/description-list"
+Redirect 301 "/summary-list" "/form-summary"
 
 RedirectMatch 301 "^/videos(.*)$" "/project/events$1"
 
