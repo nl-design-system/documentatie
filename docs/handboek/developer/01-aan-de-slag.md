@@ -1,5 +1,5 @@
 ---
-title: Developer getting started
+title: Aan de slag • Developer • Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Aan de slag

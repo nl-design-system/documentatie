@@ -1,5 +1,5 @@
 ---
-title: Voor leveranciers
+title: Voor leveranciers • Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voor leveranciers

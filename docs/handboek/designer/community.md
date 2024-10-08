@@ -1,5 +1,5 @@
 ---
-title: Community voor designers
+title: Community voor designers • Designer • Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Community
