@@ -91,8 +91,8 @@ importers:
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 1.0.0-alpha.151
-        version: 1.0.0-alpha.151
+        specifier: 2.0.0
+        version: 2.0.0
       '@nl-design-system/component-progress':
         specifier: 1.0.1-alpha.68
         version: 1.0.1-alpha.68
@@ -1706,8 +1706,8 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
-    resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@2.0.0':
+    resolution: {integrity: sha512-V3tE68Nju8jW+yNnTaoTzrr96QQT7w9eJlVOxi42OYtTMQfz2Le+LTd1Cwr9Hn66yZwedbCHAV9D3XE+EcxUmg==}
 
   '@nl-design-system/component-progress@1.0.1-alpha.68':
     resolution: {integrity: sha512-/Z6deczBuzGm7X+2RcIujAVsLvdnG6BWqA197Zd1A6a5J+iG2VsZGLPmRSto0itsMXIkQpnMCOG6THQkbD/A6Q==}
@@ -3628,6 +3628,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -10032,7 +10033,7 @@ snapshots:
       '@types/react': 18.2.55
       react: 18.3.1
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@2.0.0': {}
 
   '@nl-design-system/component-progress@1.0.1-alpha.68': {}
 
