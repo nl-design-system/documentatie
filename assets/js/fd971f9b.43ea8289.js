@@ -1,4 +1,4 @@
-/*! For license information please see fd971f9b.ee7d61ca.js.LICENSE.txt */
+/*! For license information please see fd971f9b.43ea8289.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4603],
@@ -54,6 +54,7 @@
          speakers: [
           { name: 'Bryan de Jong', organisation: 'VNG / Frameless' },
           { name: 'Marieke Brouwer', organisation: 'Gemeente Groningen' },
+          { name: 'Lars van de Cappelle', organisation: 'Belastingdienst' },
          ],
          subject: 'Heartbeat: Design Systems Week editie',
          sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#heartbeat:-de-design-systems-week-lightning-talks-editie',
