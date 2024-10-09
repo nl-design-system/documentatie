@@ -56,7 +56,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 <DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" headingLevel={2}>
 
-<Paragraph>Het bouwen van een design system is heel interessant. Maar zodra je design system wordt ingezet voor applicaties in productie, wordt het uitrollen van updates risivovoller. Testen is een essentieel onderdeel van het maken van design systems en onderhoud helpt om de risico's te managen. In deze sessie legt Gert tools en methoden uit die je kunnen helpen om je UI componenten en integraties te testen, zodat je design system zich kan blijven doorontwikkelen.</Paragraph>
+<Paragraph>Het bouwen van een design system is heel interessant. Maar zodra je design system wordt ingezet voor applicaties in productie, wordt het uitrollen van updates risicovoller. Testen is een essentieel onderdeel van het maken van design systems en onderhoud helpt om de risico's te managen. In deze sessie legt Gert tools en methoden uit die je kunnen helpen om je UI componenten en integraties te testen, zodat je design system zich kan blijven doorontwikkelen.</Paragraph>
 
 </DSWSession>
 
