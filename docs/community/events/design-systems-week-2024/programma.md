@@ -36,7 +36,7 @@ import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-modul
 
 </DSWSession>
 
-<DSWSession title="Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad van de Kinderbescherming" speakers={[speakers.CharlottevanBijnen]} organisation="Valsplat" captioned headingLevel={2}>
+<DSWSession title="Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad voor de Kinderbescherming" speakers={[speakers.CharlottevanBijnen]} organisation="Valsplat" captioned headingLevel={2}>
 
 <Paragraph>Journeys worden vaak gezien als hét middel voor empathie, maar dat is te kort door de bocht. Het is slechts een tool. Hoe je het ontwerpt, wat je erin zet en wat je ermee doet, maakt het verschil. In deze presentatie laat Charlotte zien hoe een journey kan bijdragen aan het oplossen van complexe maatschappelijke vraagstukken, vooral binnen de overheid.</Paragraph>
 
