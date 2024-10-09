@@ -3,7 +3,7 @@ title: De mijlpalen van 2022
 slug: de-mijlpalen-van-2022
 authors:
   - name: Laura van Swigchum
-    title: Communicatieadviseur en Tekstschrijver ICTU | Gebruiker Centraal
+    title: Communicatieadviseur en Tekstschrijver ICTU • Gebruiker Centraal
     url: https://www.linkedin.com/in/lauravanswigchum/
 tags: [mijlpalen, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2022/06/Bryan-de-Jong.jpeg
