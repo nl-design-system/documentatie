@@ -9,21 +9,42 @@ slug: /events/design-systems-week-2024/en
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 ---
 
-import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import DocusaurusLink from "@docusaurus/Link";
+import { IconCalendarPlus, IconChevronRight } from "@tabler/icons-react";
+import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
 <div lang="en">
 
 # Design Systems Week 2024
 
-<Paragraph lead>From 14 to 17 October 2024, NL Design System organises the 4th edition of Design Systems Week. Join us for short talks about the **how** and **why** of design systems, from managing design systems to user research and accessibility. This year there will be talks both in Dutch and English.</Paragraph>
+<Paragraph lead>
+  From 14 to 17 October 2024, NL Design System organises the 4th edition of Design Systems Week. Join us for short talks
+  about the **how** and **why** of design systems, from managing design systems to user research and accessibility. This
+  year there will be talks both in Dutch and English. Will you join us?
+</Paragraph>
 
-<Paragraph>Will you join us? All talks are online and free to attend. They are about 30 minutes each, including Q&A.</Paragraph>
+<Paragraph>All talks are online and free to attend. They are about 30 minutes each, including Q&A.</Paragraph>
 
-- [Download calendar invite](/dsweek-2024/dsweek-2024.ics); to have the days blocked in your calendar.
-- [Sign up](/events/design-systems-week/sign-up) to receive updates.
-- [View the program so far](/events/design-systems-week-2024/en/program); we've just announced the first speakers.
-
----
+<ActionGroup>
+  <DocusaurusLink
+    href="/events/design-systems-week/sign-up"
+    className="utrecht-button-link utrecht-button-link--primary-action"
+  >
+    {"Sign up"}
+    <IconChevronRight />
+  </DocusaurusLink>
+  <DocusaurusLink
+    href="/events/design-systems-week-2024/en/program"
+    className="utrecht-button-link utrecht-button-link--secondary-action"
+  >
+    {"View the program"}
+    <IconChevronRight />
+  </DocusaurusLink>
+  <ButtonLink href="/dsweek-2024/dsweek-2024.ics" appearance="secondary-action-button">
+    {"Add to your calendar"}
+    <IconCalendarPlus />
+  </ButtonLink>
+</ActionGroup>
 
 ## Organisation
 
