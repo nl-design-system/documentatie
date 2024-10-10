@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-wcag/2.3.03" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">WCAG-succescriterium 2.3.3 Animatie uit interacties | NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/wcag/2.3.3" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" property="og:locale:alternate" content="en_EN" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.3.3 Animatie uit interacties | NL Design System" />
+  <meta data-rh="true" name="description" content="Zorg ervoor dat een gebruiker toegevoegde extra beweging en animatie uit kan zetten op interactieve elementen" />
+  <meta data-rh="true" property="og:description" content="Zorg ervoor dat een gebruiker toegevoegde extra beweging en animatie uit kan zetten op interactieve elementen" />
+  <meta data-rh="true" name="keywords" content="WCAG" />
+  <link data-rh="true" rel="icon" href="/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.3.3" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/wcag/2.3.3" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/en/wcag/2.3.3" hreflang="en-EN" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/wcag/2.3.3" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.fe46c51d.css" />
+  <script src="/assets/js/runtime~main.6063e8db.js" defer="defer"></script>
+  <script src="/assets/js/main.b660ba56.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute('data-theme', t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem('theme');
+      } catch (t) {}
+     })();
+    t(null !== e ? e : 'light');
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_kH_B" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a class="navbar__item navbar__link utrecht-link" href="/handboek">Handboek</a><a aria-current="page" class="navbar__item navbar__link utrecht-link navbar__link--active" href="/richtlijnen">Richtlijnen</a><a class="navbar__item navbar__link utrecht-link" href="/componenten/">Componenten</a><a class="navbar__item navbar__link utrecht-link" href="/voorbeelden">Voorbeelden</a><a class="navbar__item navbar__link utrecht-link" href="/community">Community</a><a class="navbar__item navbar__link utrecht-link" href="/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div>
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" translations="[object Object]" aria-label="Start met zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+     <div role="presentation" class="navbar-sidebar__backdrop"></div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_g6Tv">
+     <div class="docsWrapper_GG9F">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_RZ_g" type="button"></button>
+      <div class="docRoot_uhSi">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_Kl_C">
+        <div class="sidebarViewport_Av1C">
+         <div class="sidebar_mhZE sidebarWithHideableNavbar__6UL">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button_CFx3" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/richtlijnen">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/stijl">Stijl</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Stijl&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/richtlijnen/formulieren">Formulieren</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Formulieren&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="menu__link utrecht-link menu__link--sublist" tabindex="0" href="/wcag">WCAG</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;WCAG&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/introduction">Introductie WCAG-pagina&#x27;s</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.1.1">1.1.1 Niet-tekstuele content</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.1">1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.2">1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.3">1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.4">1.2.4 Ondertitels voor doven en slechthorenden (live)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.5">1.2.5 Audiodescriptie (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.6">1.2.6 Gebarentaal (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.7">1.2.7 Verlengde audiodescriptie (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.8">1.2.8 Media-alternatief (vooraf opgenomen)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.2.9">1.2.9 Louter-geluid (live)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.1">1.3.1 Info en relaties</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.2">1.3.2 Betekenisvolle volgorde</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.3">1.3.3 Zintuiglijke eigenschappen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.4">1.3.4 Weergavestand</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.5">1.3.5 Identificeer het doel van de input</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.3.6">1.3.6 Identificeer het doel</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.1">1.4.1 Gebruik van kleur</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.2">1.4.2 Geluidsbediening</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.3">1.4.3 Contrast (minimum)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.4">1.4.4 Herschalen van tekst</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.5">1.4.5 Afbeeldingen van tekst</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.6">1.4.6 Contrast (versterkt)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.7">1.4.7 Weinig of geen achtergrondgeluid</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.8">1.4.8 Visuele presentatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.9">1.4.9 Afbeeldingen van tekst (geen uitzondering)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.10">1.4.10 Reflow</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.11">1.4.11 Contrast van niet-tekstuele content</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.12">1.4.12 Tekstafstand</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/1.4.13">1.4.13 Content bij hover of focus</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.1.1">2.1.1 Toetsenbord</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.1.2">2.1.2 Geen toetsenbordval</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.1.3">2.1.3 Toetsenbord (geen uitzondering)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.1.4">2.1.4 Enkel teken sneltoetsen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.1">2.2.1 Timing aanpasbaar</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.2">2.2.2 Pauzeren, stoppen, verbergen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.3">2.2.3 Geen timing</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.4">2.2.4 Onderbrekingen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.5">2.2.5 Herauthentisering</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.2.6">2.2.6 Time-outs</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.3.1">2.3.1 Drie flitsen of beneden drempelwaarde</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.3.2">2.3.2 Drie flitsen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/wcag/2.3.3">2.3.3 Animatie uit interacties</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.1">2.4.1 Blokken omzeilen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.2">2.4.2 Paginatitel</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.3">2.4.3 Focus volgorde</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.4">2.4.4 Linkdoel (in context)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.5">2.4.5 Meerdere manieren</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.6">2.4.6 Koppen en labels</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.7">2.4.7 Focus zichtbaar</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.8">2.4.8 Locatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.9">2.4.9 Linkdoel (alleen link)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.10">2.4.10 Paragraafkoppen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.11">2.4.11 Focus niet bedekt (minimum)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.12">2.4.12 Focus niet bedekt (uitgebreid)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.4.13">2.4.13 Focusweergave</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.1">2.5.1 Aanwijzergebaren</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.2">2.5.2 Aanwijzerannulering</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.3">2.5.3 Label in Naam</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.4">2.5.4 Bewegingsactivering</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.5">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.7">2.5.7 Sleepbewegingen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/2.5.8">2.5.8 Grootte van het aanwijsgebied (minimum)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.1.1">3.1.1 Taal van de pagina</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.1.2">3.1.2 Taal van onderdelen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.1">3.2.1 Bij focus</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.2">3.2.2 Bij input</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.3">3.2.3 Consistente navigatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.4">3.2.4 Consistente identificatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.5">3.2.5 Verandering op verzoek</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.2.6">3.2.6 Consistente hulp</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.1">3.3.1 Foutidentificatie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.2">3.3.2 Labels of instructies</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.3">3.3.3 Foutsuggestie</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.4">3.3.4 Foutpreventie (wettelijk, financieel, gegevens)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.5">3.3.5 Hulp</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.6">3.3.6 Foutpreventie (alle)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.7">3.3.7 Overbodige invoer</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.8">3.3.8 Toegankelijke authenticatie (minimum)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/3.3.9">3.3.9 Toegankelijke authenticatie (uitgebreid)</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/4.1.1">4.1.1 Parsen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/4.1.2">4.1.2 Naam, rol, waarde</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/wcag/4.1.3">4.1.3 Statusberichten</a></li>
+                </ul>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link utrecht-link" tabindex="0" href="/CHANGELOG">Changelog</a></li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_I8lA">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_q9UC">
+           <div class="docItemContainer_nQxQ">
+            <article>
+             <div class="breadcrumbs__73z breadcrumbs--desktop_v9Xv">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs">
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/richtlijnen" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/wcag/introduction" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">WCAG</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">2.3.3 Animatie uit interacties</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs__73z breadcrumbs--mobile_QwgF">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a" href="/wcag/introduction"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >WCAG</a
+               >
+              </p>
+             </div>
+             <div class="tocCollapsible_Uc9g theme-doc-toc-mobile tocMobile_N0TI"><button type="button" class="clean-btn tocCollapsibleButton_j42O">Op deze pagina</button></div>
+             <div class="theme-doc-markdown">
+              <!-- -->
+              <!-- -->
+              <!-- -->
+              <hgroup class="utrecht-heading-1 nlds-inline-heading-group--wcag-heading-group_hVFN">
+               <h1 class="nlds-inline-heading-group__heading_bHAJ">WCAG-succescriterium 2.3.3 Animatie uit interacties</h1>
+               <p class="nlds-inline-heading-group__suffix_ioH2"><span class="utrecht-badge-data nlds-inline-heading-group__badge_TgvT">Niveau AAA</span></p>
+              </hgroup>
+              <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">
+                Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/TR/WCAG22/#animation-from-interactions" class="utrecht-link utrecht-link--html-a"><span lang="en">2.3.3 Animation from Interactions</span></a
+                >.
+               </li>
+               <li class="utrecht-unordered-list__item">Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#animatie-uit-interacties" class="utrecht-link utrecht-link--html-a">2.3.3 Animatie uit interacties</a>.</li>
+               <li class="utrecht-unordered-list__item">
+                Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 2.3.3 Animation from Interactions</span></a
+                >.
+               </li>
+               <li class="utrecht-unordered-list__item">
+                Engelstalige toelichting: <a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Understanding SC 2.3.3 Animation from Interactions</span></a
+                >.
+               </li>
+              </ul>
+              <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
+              <p>Zorg ervoor dat de gebruiker beweging en animatie uit kan zetten. Dit gaat over beweging die de gebruiker zelf start door interactie met interactieve elementen, zoals bij een link, button of checkbox. Behalve als de animatie essentieel is voor de functionaliteit.</p>
+              <p>Dit is belangrijk voor gebruikers die snel afgeleid worden of er zelfs misselijk van worden.</p>
+              <p>Respecteer daarom de instellingen van de browser voor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" class="utrecht-link utrecht-link--html-a">&#x27;prefers-reduced-motion&#x27;</a> of voeg een optie op de pagina toe die deze beweging uitzet.</p>
+              <p>De beste oplossing: gebruik helemaal geen animatie op een interactief element.</p>
+              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
+              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
+              <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
+              <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
+              <p>Deze pagina&#x27;s over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a>.</p>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.3.03.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_aJxh" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_UpNN"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/wcag/2.3.2"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 2.3.2 Drie flitsen</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/wcag/2.4.1"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 2.4.1 Blokken omzeilen</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_MGdY thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
+             <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
+             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer_VVap">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
