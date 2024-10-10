@@ -1,7 +1,15 @@
 <!-- @license CC0-1.0 -->
 
-Om ruimte consistent toe te passen is het verstandig om te werken met een vaste set aan waardes die oplopen in grootte. Een zogenoemde _spacing scale_. Een spacing scale start met kleine waardes. Hiermee kun je relaties creëren op detailniveau. Vervolgens loopt de spacing scale, vaak met steeds grotere spongen, op naar waardes die ingezet kunnen worden voor een ruimere opzet.
+Gebruik kleine afstanden om elementen samen te groeperen en grotere afstanden om ze te scheiden. Elementen die dicht bij elkaar staan lijken meer met elkaar verbonden te zijn dan dingen die verder uit elkaar staan.
 
-![13 losse blokjes die steeds breeder worden. Onder elk blok staat een getal](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_spacing-scale.png)
+Dit is een van de [Gestalt principes](https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/) ookwel bekend als [Law of proximity](https://lawsofux.com/law-of-proximity/).
 
-Ook bij het Voorbeeld thema maken we gebruik van een spacing scale. Sterker nog, we hebben meerdere spacing scales. Één voor elk [spacing concept](/richtlijnen/stijl/ruimte/spacing-concepten).
+![36 stippen. Door een ruimte wordt er een groepje van 24 en 12 stippen gemaakt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties.png)
+
+## Relaties binnen typografie
+
+De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de ruimte tussen de koptekst en de eerste alinea na die koptekst.
+
+![Screenshot van een artikel. Duidelijk is dat de witruimte boven kopteksten groter is dan onder de kopteksten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties-typografie.png)
+
+[WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8) beschrijft dat de regelafstand van een alinea ten minste 1.5 zou moeten zijn. En dat de afstand tussen alinea’s ten minste 1,5 keer zo groot zou moeten zijn als de regelafstand.
