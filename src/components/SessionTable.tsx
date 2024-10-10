@@ -1,5 +1,6 @@
-import { IconCalendarCheck, IconUser } from '@tabler/icons-react';
+import { IconCalendarEvent, IconUser } from '@tabler/icons-react';
 import {
+  ButtonLink,
   Icon,
   Link,
   Paragraph,
@@ -89,12 +90,11 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
               )}
               <TableCell className={clsx(style['session-table__time'])}>
                 {icalLink && (
-                  <Link href={icalLink} download={icalLink}>
-                    <Icon aria-label="Download uitnodiging">
-                      <IconCalendarCheck />
+                  <ButtonLink href={icalLink} download={icalLink}>
+                    <Icon aria-label={`Download ${subject} iCal`}>
+                      <IconCalendarEvent />
                     </Icon>{' '}
-                    iCal
-                  </Link>
+                  </ButtonLink>
                 )}
               </TableCell>
             </TableRow>
