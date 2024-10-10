@@ -4,7 +4,7 @@ Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit ga
 
 Zorg ervoor dat de button mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.
 
-Je moet de afstand kunnen vergroten naar deze waardes:  
+Je moet de afstand kunnen vergroten naar deze waardes:
 
 - Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;
 - Afstand tussen alinea's naar ten minste 2 keer de lettergrootte;

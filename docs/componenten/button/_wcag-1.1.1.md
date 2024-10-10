@@ -7,6 +7,7 @@ Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Icon
 Is het toch gewenst om alleen een icoon te tonen, hou dan rekening met het volgende.
 
 ##### In de code
+
 Een `img` met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de naam van de button:
 
 ```
@@ -15,7 +16,7 @@ Een `img` met een alt-attribuut is een robuuste manier om een alternatieve tekst
 </button>
 ```
 
-Een andere manier is een svg in de button op te nemen, samen met een visueel verborgen tekst die de naam van de button vormt	:
+Een andere manier is een svg in de button op te nemen, samen met een visueel verborgen tekst die de naam van de button vormt :
 
 ```html
 <button>
