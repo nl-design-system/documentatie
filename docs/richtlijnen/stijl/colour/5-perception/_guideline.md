@@ -6,7 +6,7 @@ Vergeet niet dat mensen kleur op verschillende manieren kunnen waarnemen en erva
 
 ### Iets niet kunnen zien als er tussen twee tinten te weinig contrast is
 
-Lees meer over kleurcontrast op[Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst) en [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](http://localhost:3000/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content).
+Lees meer over kleurcontrast op[Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst) en [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content).
 
 ### Geen verschil kunnen zien tussen kleuren
 

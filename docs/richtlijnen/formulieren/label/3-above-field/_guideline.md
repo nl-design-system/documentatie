@@ -12,7 +12,7 @@ Deze plaatsing heeft meerdere voordelen:
 
 Waarom is dit belangrijk? Mensen lezen van boven naar beneden en verwachten dat de informatie in die volgorde staat.
 
-Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij [de richtlijnen over stijl: Ruimte](https://www.nldesignsystem.nl/richtlijnen/stijl/ruimte#ontwerpen-met-ruimte).
+Je brein verbindt automatisch wat er bij elkaar is geplaatst, dus zorg er ook voordat het label visueel dicht bij het formulierveld staat. Dan is duidelijk wat bij elkaar hoort. Lees hierover mee over bij [de richtlijnen over stijl: Ruimte](/richtlijnen/stijl/ruimte).
 
 Plaats labels buiten het formulierveld en niet daarbinnen. Op deze manier heeft het label altijd een vaste positie en kan het in een leesbare grootte worden getoond.
 
