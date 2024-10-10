@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.72b2bf38.css" />
-  <script src="/en/assets/js/runtime~main.2503e8ca.js" defer="defer"></script>
-  <script src="/en/assets/js/main.f3959f64.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.1c130cbb.js" defer="defer"></script>
+  <script src="/en/assets/js/main.bd66fd6b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -54,18 +54,30 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Skip to main content"><a class="skipToContent_kH_B" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
+    <div class="announcementBar_s0pr" style="background-color: #b8e6ff; color: #000" role="banner">
+     <div class="content_zf74 announcementBarContent_dpRF">Design Systems Week 2024 begint bijna: 14-17 oktober zijn er dagelijks korte, online talks. <a style="color: inherit" href="/events/design-systems-week-2024/programma">Bekijk het programma</a></div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/en/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
@@ -101,7 +113,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
@@ -218,9 +230,39 @@
               <h3 id="samenwerken-aan-een-herbruikbare-componentenbibliotheek" class="utrecht-heading-3">Samenwerken aan een herbruikbare componentenbibliotheek</h3>
               <p>De community rondom NL Design System bestaat uit 500+ specialisten van verschillende overheidsorganisaties en hun leveranciers. We willen niet steeds hetzelfde wiel uitvinden, maar elkaar ook niet vertragen bij de ontwikkeling van nieuwe applicaties.</p>
               <p>Om elkaar niet in de weg te zitten, werken we met het “<a href="/handboek/estafettemodel" class="utrecht-link utrecht-link--html-a">estafettemodel</a>”. Kortgezegd kunnen organisaties voor componenten die nog niet centraal beschikbaar een eigen versie maken. Deze versie wordt in grote lijnen gebouwd volgens de gedeelde architectuur, maar hoeft niet compleet te zijn.</p>
-              <p>Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet de component</p>
+              <p>Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet de component én is het op meerdere plekken getest en verbeterd.</p>
+              <p>Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De eisen voor componenten per fase vind je in de <a href="/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Definition of Done</a>. De organisaties en componenten die zij maken kun je vinden onder de <a href="http://github.com/nl-design-system" class="utrecht-link utrecht-link--html-a">NL Design System organisatie op GitHub</a>.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/introductie.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_aJxh" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Edit this page</a
+                >
+               </div>
+               <div class="col lastUpdated_UpNN"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/en/handboek"
+              ><div class="pagination-nav__sublabel">Previous</div>
+              <div class="pagination-nav__label">Handboek</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/en/handboek/estafettemodel"
+              ><div class="pagination-nav__sublabel">Next</div>
+              <div class="pagination-nav__label">Estafettemodel</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_MGdY thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#meer-dan-alleen-ontwerp" class="table-of-contents__link toc-highlight">Meer dan alleen ontwerp</a></li>
+             <li><a href="#basisonderdelen-voor-de-hele-overheid" class="table-of-contents__link toc-highlight">Basisonderdelen voor de hele overheid</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -229,6 +271,25 @@
       </div>
      </div>
     </div>
+    <footer class="footer footer--dark footer_VVap">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link" href="/en/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link" href="/en/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>
