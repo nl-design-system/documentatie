@@ -11,3 +11,6 @@ build/
 tmp/
 .docusaurus/
 generated/
+
+# Parsing error: docs/handboek/component-bijdragen/community-stappenplan-voor-organisaties.mdx/1_0.ts was not found by the project service. Consider either including it in the tsconfig.json or including it in allowDefaultProject
+docs/handboek/component-bijdragen/community-stappenplan/voor-organisaties.mdx
