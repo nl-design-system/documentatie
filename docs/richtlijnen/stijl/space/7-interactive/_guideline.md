@@ -1,7 +1,7 @@
 <!-- @license CC0-1.0 -->
 
-Om ruimte consistent toe te passen is het verstandig om te werken met een vaste set aan waardes die oplopen in grootte. Een zogenoemde _spacing scale_. Een spacing scale start met kleine waardes. Hiermee kun je relaties creëren op detailniveau. Vervolgens loopt de spacing scale, vaak met steeds grotere spongen, op naar waardes die ingezet kunnen worden voor een ruimere opzet.
+Hoewel WCAG wel een richtlijnen heeft voor de grootte van het aanwijsgebied (_target size_), wordt er niets vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.
 
-![13 losse blokjes die steeds breeder worden. Onder elk blok staat een getal](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_spacing-scale.png)
+Voor iemand met een bevende hand kan een website lastiger te gebruiken zijn als grote delen van het scherm interactief (button of link) zijn.
 
-Ook bij het Voorbeeld thema maken we gebruik van een spacing scale. Sterker nog, we hebben meerdere spacing scales. Één voor elk [spacing concept](/richtlijnen/stijl/ruimte/spacing-concepten).
+![Drie verticaal gestapelde vlakken met daarin het woord 'Interactie element'. Tussen deze vlakken bevindt zich een lege ruimte met de tekst 'witruimte'](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_interactieve-elementen.png)
