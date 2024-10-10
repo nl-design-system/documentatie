@@ -1,0 +1,10 @@
+{
+  "label": "Kleuren",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/stijl/colour/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

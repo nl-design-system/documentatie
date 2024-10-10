@@ -60,7 +60,7 @@ Op dit moment biedt Figma, net als alle andere ontwerpprogramma's, geen onderste
 
 Zoals aangegeven kan iedere organisatie zijn eigen huisstijl toepassen. En toch bieden we vanuit het NL Design System documentatie aan rondom stijl. Hier vind je richtlijnen en tips die je kunt meenemen bij het toepassen van je eigen huisstijl.
 
-[Bekijk de stijl documentatie](/richtlijnen/stijl/overzicht)
+[Bekijk de stijl documentatie](/richtlijnen/stijl)
 
 ### Voorbeeld thema
 

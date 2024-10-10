@@ -1,0 +1,10 @@
+{
+  "label": "Ruimte",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/stijl/space/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
