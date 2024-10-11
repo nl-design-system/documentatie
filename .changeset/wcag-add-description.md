@@ -2,4 +2,4 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-Betere descriptions toegevoegd voor de [WCAG-overzichtspagina](/wcag/).
+Betere descriptions toegevoegd voor de WCAG-succescriteria.
