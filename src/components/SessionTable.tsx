@@ -90,8 +90,8 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
               )}
               <TableCell className={clsx(style['session-table__time'])}>
                 {icalLink && (
-                  <ButtonLink href={icalLink} download={icalLink}>
-                    <Icon aria-label={`Download ${subject} iCal`}>
+                  <ButtonLink href={icalLink} download={icalLink} aria-label={`iCal file for ${subject} (download)`}>
+                    <Icon>
                       <IconCalendarEvent />
                     </Icon>{' '}
                   </ButtonLink>
