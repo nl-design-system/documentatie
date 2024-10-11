@@ -2640,8 +2640,8 @@ p a {
 .sr-only,
 .visually-hidden {
  height: 1px;
- position: absolute;
  width: 1px;
+ position: absolute;
  overflow: hidden;
 }
 .navbar__items {
@@ -6316,6 +6316,54 @@ code .namespace {
  flex-direction: column;
  min-height: 100%;
 }
+.dsw-session_O_Ah {
+ border-block-end: 4px dotted #ccc;
+ margin-block: 2em;
+ margin-block-end: 1em;
+ padding-block-end: 2.5em;
+}
+.dsw-session_O_Ah:first-of-type {
+ border-block-start: 4px dotted #ccc;
+}
+.dsw-session__title_pfT2 {
+ --utrecht-heading-2-margin-block-end: 0.1em;
+ font-size: 1.5em;
+ margin-top: inherit !important;
+}
+.dsw-session__speakers_cUju {
+ margin-block: 2em;
+}
+.dsw-speaker_gupO {
+ display: flex;
+ flex-direction: row;
+ font-style: italic;
+ gap: 1em;
+ margin: 0;
+ margin-block: 1em;
+}
+.dsw-session_O_Ah:nth-child(2n) .dsw-speaker_gupO {
+ flex-direction: row-reverse;
+}
+.dsw-speaker__image_dA9g {
+ height: 100%;
+ margin-block-start: 0.4em;
+ max-width: 5em;
+}
+.dsw-session__video_oz9q,
+.video-player__6fg {
+ aspect-ratio: 16/9;
+ margin-block-end: 32px;
+ margin-block-start: 24px;
+}
+.dsw-session__video_oz9q {
+ position: relative;
+}
+.dsw-session__video_oz9q > div {
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
 .core-team_E52r {
  align-items: baseline;
  align-items: center;
@@ -6649,54 +6697,6 @@ code .namespace {
 }
 .speaker__organisation_bGt9 {
  font-size: 16px;
-}
-.dsw-session_O_Ah {
- border-block-end: 4px dotted #ccc;
- margin-block: 2em;
- margin-block-end: 1em;
- padding-block-end: 2.5em;
-}
-.dsw-session_O_Ah:first-of-type {
- border-block-start: 4px dotted #ccc;
-}
-.dsw-session__title_pfT2 {
- --utrecht-heading-2-margin-block-end: 0.1em;
- font-size: 1.5em;
- margin-top: inherit !important;
-}
-.dsw-session__speakers_cUju {
- margin-block: 2em;
-}
-.dsw-speaker_gupO {
- display: flex;
- flex-direction: row;
- font-style: italic;
- gap: 1em;
- margin: 0;
- margin-block: 1em;
-}
-.dsw-session_O_Ah:nth-child(2n) .dsw-speaker_gupO {
- flex-direction: row-reverse;
-}
-.dsw-speaker__image_dA9g {
- height: 100%;
- margin-block-start: 0.4em;
- max-width: 5em;
-}
-.dsw-session__video_oz9q,
-.video-player__6fg {
- aspect-ratio: 16/9;
- margin-block-end: 32px;
- margin-block-start: 24px;
-}
-.dsw-session__video_oz9q {
- position: relative;
-}
-.dsw-session__video_oz9q > div {
- left: 0;
- position: absolute;
- right: 0;
- top: 0;
 }
 .contrast-ratio_qIvU {
  inline-size: 100%;

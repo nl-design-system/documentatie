@@ -1,18 +1,22 @@
-/*! For license information please see fd971f9b.18edb9df.js.LICENSE.txt */
+/*! For license information please see 47226ed2.0d73e2c2.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [4603],
+ [50359],
  {
-  81515: (e, s, n) => {
-   n.r(s), n.d(s, { assets: () => l, contentTitle: () => o, default: () => g, frontMatter: () => r, metadata: () => d, toc: () => m });
+  6930: (e, s, n) => {
+   n.r(s), n.d(s, { assets: () => k, contentTitle: () => c, default: () => p, frontMatter: () => m, metadata: () => g, toc: () => h });
    var i = n(52676),
     a = n(24785),
-    t = n(81564);
-   const r = { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' },
-    o = 'Tijdschema Design Systems Week 2024',
-    d = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.md', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/en/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
-    l = {},
-    m = [
+    t = n(90441),
+    r = n(81094),
+    o = n(10232),
+    d = n(56150),
+    l = n(85115);
+   const m = { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' },
+    c = 'Tijdschema Design Systems Week 2024',
+    g = { id: 'community/events/design-systems-week-2024/tijdschema-per-dag', title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', source: '@site/docs/community/events/design-systems-week-2024/tijdschema-per-dag.mdx', sourceDirName: 'community/events/design-systems-week-2024', slug: '/events/design-systems-week-2024/tijdschema', permalink: '/en/events/design-systems-week-2024/tijdschema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/tijdschema-per-dag.mdx', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \u2022 Design Systems Week 2024', description: 'Tijdschema per dag voor de Design Systems Week 2024', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2024/tijdschema' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/en/events/design-systems-week-2024/programma' }, next: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' } },
+    k = {},
+    h = [
      { value: 'Maandag 14 oktober', id: 'maandag-14-oktober', level: 2 },
      { value: 'Dinsdag 15 oktober', id: 'dinsdag-15-oktober', level: 2 },
      { value: 'Woensdag 16 oktober', id: 'woensdag-16-oktober', level: 2 },
@@ -21,7 +25,7 @@
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
      { value: 'Toegankelijkheid', id: 'toegankelijkheid', level: 2 },
     ];
-   function c(e) {
+   function b(e) {
     const s = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', strong: 'strong', ...(0, a.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, {
      children: [
@@ -31,9 +35,11 @@
       '\n',
       (0, i.jsx)(s.p, { children: "Dit jaar hebben we nationale \xe9n internationale sprekers. We richten ons op verschillende thema's: het managen van design systems, technische deep dives, toegankelijkheid en gebruikersvriendelijkheid." }),
       '\n',
+      (0, i.jsxs)(d.hE, { children: [(0, i.jsxs)(t.Z, { href: '/events/design-systems-week/aanmelden', className: 'utrecht-button-link utrecht-button-link--primary-action', children: ['Meld je aan', (0, i.jsx)(r.Z, {})] }), (0, i.jsxs)(d.ZP, { href: '/dsweek-2024/dsweek-2024.ics', appearance: 'secondary-action-button', children: ['Zet in je agenda', (0, i.jsx)(o.Z, {})] })] }),
+      '\n',
       (0, i.jsx)(s.h2, { id: 'maandag-14-oktober', children: 'Maandag 14 oktober' }),
       '\n',
-      (0, i.jsx)(t.L, {
+      (0, i.jsx)(l.L, {
        lang: 'nl-NL',
        sessions: [
         { isoDateTime: '2024-10-14T09:00:00.000Z', speakers: [{ name: 'Gert Hengeveld', organisation: 'Chromatic' }], subject: 'Testing UI', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui', icalLink: '/dsweek-2024/gert-hengeveld.ics', language: { abbr: 'EN', description: 'English' } },
@@ -45,7 +51,7 @@
       '\n',
       (0, i.jsx)(s.h2, { id: 'dinsdag-15-oktober', children: 'Dinsdag 15 oktober' }),
       '\n',
-      (0, i.jsx)(t.L, {
+      (0, i.jsx)(l.L, {
        lang: 'nl-NL',
        sessions: [
         { isoDateTime: '2024-10-15T09:00:00.000Z', speakers: [{ name: 'Kim Denie', organisation: '' }], subject: 'Tips voor toegankelijke diensten', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening', icalLink: '/dsweek-2024/kim-denie.ics', language: { abbr: 'NL', description: 'Nederlands' } },
@@ -68,7 +74,7 @@
       '\n',
       (0, i.jsx)(s.h2, { id: 'woensdag-16-oktober', children: 'Woensdag 16 oktober' }),
       '\n',
-      (0, i.jsx)(t.L, {
+      (0, i.jsx)(l.L, {
        lang: 'nl-NL',
        sessions: [
         {
@@ -91,7 +97,7 @@
       '\n',
       (0, i.jsx)(s.h2, { id: 'donderdag-17-oktober', children: 'Donderdag 17 oktober' }),
       '\n',
-      (0, i.jsx)(t.L, {
+      (0, i.jsx)(l.L, {
        lang: 'nl-NL',
        sessions: [
         { isoDateTime: '2024-10-17T09:00:00.000Z', speakers: [{ name: 'Robbert Broersma', organisation: 'NL Design System' }], subject: 'Live coden', icalLink: '/dsweek-2024/robbert-broersma.ics', language: { abbr: 'NL', description: 'Nederlands' } },
@@ -116,20 +122,20 @@
      ],
     });
    }
-   function g(e = {}) {
+   function p(e = {}) {
     const { wrapper: s } = { ...(0, a.a)(), ...e.components };
-    return s ? (0, i.jsx)(s, { ...e, children: (0, i.jsx)(c, { ...e }) }) : c(e);
+    return s ? (0, i.jsx)(s, { ...e, children: (0, i.jsx)(b, { ...e }) }) : b(e);
    }
   },
-  81564: (e, s, n) => {
+  85115: (e, s, n) => {
    n.d(s, { L: () => m });
    var i = n(4839),
-    a = (0, n(69804).Z)('outline', 'calendar-check', 'IconCalendarCheck', [
-     ['path', { d: 'M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6', key: 'svg-0' }],
-     ['path', { d: 'M16 3v4', key: 'svg-1' }],
-     ['path', { d: 'M8 3v4', key: 'svg-2' }],
-     ['path', { d: 'M4 11h16', key: 'svg-3' }],
-     ['path', { d: 'M15 19l2 2l4 -4', key: 'svg-4' }],
+    a = (0, n(69804).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
+     ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
+     ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
+     ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
+     ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
+     ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
     ]),
     t = n(46506),
     r = n(4814);
@@ -152,7 +158,7 @@
         (0, d.jsx)(t.RM, {
          children: n.map((e, n) => {
           let { isoDateTime: i, speakers: m, subject: c, icalLink: g, sessionLink: k, language: h } = e;
-          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: m.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: k ? (0, d.jsx)(t.rU, { href: k, children: c }) : c }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: h.description, children: h.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.rU, { href: g, download: g, children: [(0, d.jsx)(t.JO, { 'aria-label': 'Download uitnodiging', children: (0, d.jsx)(a, {}) }), ' ', 'iCal'] }) })] }, n);
+          return (0, d.jsxs)(t.SC, { className: (0, r.Z)(o['session-table__row']), children: [(0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: (0, d.jsx)(t.nv, { children: (0, d.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, d.jsx)(t.pj, { children: (0, d.jsx)('div', { className: (0, r.Z)(o['session-table__speakers']), children: m.map((e, s) => (0, d.jsx)(l, { ...e }, s)) }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__subject']), children: (0, d.jsx)(t.nv, { children: k ? (0, d.jsx)(t.rU, { href: k, children: c }) : c }) }), 'nl-NL' === s && (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__language']), children: (0, d.jsx)('abbr', { title: h.description, children: h.abbr }) }), (0, d.jsx)(t.pj, { className: (0, r.Z)(o['session-table__time']), children: g && (0, d.jsxs)(t.ZP, { href: g, download: g, 'aria-label': `iCal file for ${c} (download)`, children: [(0, d.jsx)(t.JO, { children: (0, d.jsx)(a, {}) }), ' '] }) })] }, n);
          }),
         }),
        ],
@@ -178,6 +184,21 @@
     let s;
     return (s = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : r(e.components)), i.createElement(t.Provider, { value: s }, e.children);
    }
+  },
+  10232: (e, s, n) => {
+   n.d(s, { Z: () => i });
+   var i = (0, n(69804).Z)('outline', 'calendar-plus', 'IconCalendarPlus', [
+    ['path', { d: 'M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5', key: 'svg-0' }],
+    ['path', { d: 'M16 3v4', key: 'svg-1' }],
+    ['path', { d: 'M8 3v4', key: 'svg-2' }],
+    ['path', { d: 'M4 11h16', key: 'svg-3' }],
+    ['path', { d: 'M16 19h6', key: 'svg-4' }],
+    ['path', { d: 'M19 16v6', key: 'svg-5' }],
+   ]);
+  },
+  81094: (e, s, n) => {
+   n.d(s, { Z: () => i });
+   var i = (0, n(69804).Z)('outline', 'chevron-right', 'IconChevronRight', [['path', { d: 'M9 6l6 6l-6 6', key: 'svg-0' }]]);
   },
   4839: (e, s, n) => {
    n.d(s, { Z: () => i });
