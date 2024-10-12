@@ -890,17 +890,19 @@ pre {
   --nlds-code-block-attr-name-font-style: italic;
   --nlds-code-block-inserted-color: rgb(173 219 103);
   --nlds-code-block-inserted-font-style: italic;
-  --nlds-code-block-string-color: rgb(173 219 103);
+  --nlds-code-block-string-color: rgb(111, 211, 206);
   --nlds-code-block-url-color: rgb(173 219 103);
   --nlds-code-block-entity-color: rgb(173 219 103);
   --nlds-code-block-css-token-color: rgb(173 219 103);
   --nlds-code-block-style-token-color: rgb(173 219 103);
-  --nlds-code-block-class-name-color: rgb(255 203 139);
-  --nlds-code-block-atrule-color: rgb(255 203 139);
+  --nlds-code-block-class-name-color: rgb(139, 214, 255);
+  --nlds-code-block-maybe-class-name-color: rgb(255, 139, 216);
+  --nlds-code-block-atrule-color: rgb(189, 139, 255);
   --nlds-code-block-attr-value-color: rgb(255 203 139);
   --nlds-code-block-regex-color: rgb(214 222 235);
   --nlds-code-block-important-color: rgb(214 222 235);
   --nlds-code-block-variable-color: rgb(214 222 235);
+  --nlds-code-block-keyword-color: rgb(214 222 235);
 }
 
 .theme-doc-sidebar-container {
