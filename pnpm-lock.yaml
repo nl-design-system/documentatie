@@ -24,8 +24,8 @@ importers:
         specifier: 3.17.0
         version: 3.17.0(react@18.3.1)
       '@utrecht/design-tokens':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 2.1.0
+        version: 2.1.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2269,8 +2269,8 @@ packages:
   '@utrecht/components@3.0.1-alpha.18':
     resolution: {integrity: sha512-K70QrVpP1lHGdpYNShnhy7FYM1Ce8S1BXW4ES3E+9YBbiA9WgDV+G9iAx2TI10NduOVkjt9KRy7YZ9I8/OUVug==}
 
-  '@utrecht/design-tokens@1.1.0':
-    resolution: {integrity: sha512-1P9aVSL5xlBx2sFEzm1v+obgAPvwiLj4dg0vAZnFxLF6ZLbPPu0kP+tQhW3Gj945DU3qkwL/tIuimObYulYVAg==}
+  '@utrecht/design-tokens@2.1.0':
+    resolution: {integrity: sha512-fdDkFjBkEWS1P2S84u8yhukyS18cEPSav868od9NkkSHvmbQg9WOsbjXIgfwYS8/CFA7CHTM2Xw4mYZWAslK1Q==}
 
   '@utrecht/web-component-library-react@1.3.0':
     resolution: {integrity: sha512-Ca5+2XPvB4EME/wtn4eMLIQyG6r5Zn/FR6Kj0q8AXF3gjF+qZVVEzfHUfU/8TfbSeVFE8UV9R0PdNmKVUd13dw==}
@@ -3628,6 +3628,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -10620,7 +10621,7 @@ snapshots:
     dependencies:
       clsx: 1.2.1
 
-  '@utrecht/design-tokens@1.1.0': {}
+  '@utrecht/design-tokens@2.1.0': {}
 
   '@utrecht/web-component-library-react@1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
