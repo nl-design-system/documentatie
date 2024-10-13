@@ -11,6 +11,12 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      patch-and-minor-dependencies:
+        applies-to: "version-updates"
+        update-types:
+          - "patch"
+          - "minor"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
