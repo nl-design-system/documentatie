@@ -83,7 +83,7 @@ const config: Config = {
     announcementBar: {
       id: 'dsw-24',
       content:
-        'Design Systems Week 2024 begint bijna: 14-17 oktober zijn er dagelijks korte, online talks. <a style="color: inherit" href="/events/design-systems-week-2024/programma">Bekijk het programma</a>',
+        'Het is eindelijk Design Systems Week 2024! Elke dag korte, online talks: <a style="color: inherit" href="/events/design-systems-week-2024/programma">bekijk het programma</a>.',
       backgroundColor: '#B8E6FF',
       textColor: '#000',
       isCloseable: false,
