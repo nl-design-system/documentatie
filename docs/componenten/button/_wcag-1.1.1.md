@@ -10,7 +10,7 @@ Is het toch gewenst om alleen een icoon te tonen, hou dan rekening met het volge
 
 Een `img` met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de naam van de button:
 
-```
+```html
 <button>
   <img src="trashcan.svg" alt="Delete">
 </button>
