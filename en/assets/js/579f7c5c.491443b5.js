@@ -1,4 +1,4 @@
-/*! For license information please see 579f7c5c.3d4eb7af.js.LICENSE.txt */
+/*! For license information please see 579f7c5c.491443b5.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [38129],
@@ -14,7 +14,7 @@
     d = n(49591);
    const c = { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' },
     m = 'Timetable Design Systems Week 2024',
-    h = { id: 'community/events/design-systems-week-2024/english/timetable', title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2024/english/timetable.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/timetable', permalink: '/events/design-systems-week-2024/en/timetable', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/timetable.mdx', tags: [], version: 'current', frontMatter: { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' }, sidebar: 'community', previous: { title: 'Program', permalink: '/events/design-systems-week-2024/en/program' } },
+    h = { id: 'community/events/design-systems-week-2024/english/timetable', title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2024/english/timetable.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/timetable', permalink: '/en/events/design-systems-week-2024/en/timetable', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/timetable.mdx', tags: [], version: 'current', frontMatter: { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' }, sidebar: 'community', previous: { title: 'Program', permalink: '/en/events/design-systems-week-2024/en/program' } },
     g = {},
     b = [
      { value: 'Monday 14 October', id: 'monday-14-october', level: 2 },
@@ -42,7 +42,7 @@
       (0, i.jsx)(s.h2, { id: 'wednesday-16-october', children: 'Wednesday 16 October' }),
       (0, i.jsx)(d.L, { sessions: [{ isoDateTime: '2024-10-15T13:00:00.000Z', speakers: [{ name: 'Amy Cole', organisation: 'US Web Design System' }], subject: 'Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams', icalLink: '/dsweek-2024/amy-cole.ics', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/program#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams', language: { abbr: 'EN', description: 'English' } }] }),
       (0, i.jsx)(s.h2, { id: 'thursday-17-october', children: 'Thursday 17 October' }),
-      (0, i.jsx)(d.L, { sessions: [{ isoDateTime: '2024-10-17T15:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/[program#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } }] }),
+      (0, i.jsx)(d.L, { sessions: [{ isoDateTime: '2024-10-17T14:30:00.000Z', speakers: [{ name: 'Steve Messer', organisation: 'freelance' }], subject: 'Common direction, boring magic', sessionLink: 'https://nldesignsystem.nl/events/design-systems-week-2024/en/[program#common-direction,-boring-magic', icalLink: '/dsweek-2024/steve-messer.ics', language: { abbr: 'EN', description: 'Engels' } }] }),
      ],
     });
    }
