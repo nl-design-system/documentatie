@@ -1,4 +1,4 @@
-/*! For license information please see bf203e4a.37100c45.js.LICENSE.txt */
+/*! For license information please see bf203e4a.0f51951d.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [3307],
@@ -12,7 +12,7 @@
     o = i(46506);
    const d = { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' },
     l = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma \u2022 Design Systems Week 2023', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
+    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma \u2022 Design Systems Week 2023', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/en/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
     m = {},
     h = [
      { value: 'Het programma', id: 'het-programma', level: 2 },
@@ -30,33 +30,35 @@
    }
   },
   63816: (e, n, i) => {
-   i.d(n, { Z: () => g });
+   i.d(n, { Z: () => m });
    var s = i(90441),
-    a = i(81094),
-    t = i(46506),
-    r = i(4814);
+    a = i(19143),
+    t = i(81094),
+    r = i(46506),
+    o = i(4814);
    i(75271);
-   const o = { 'dsw-session': 'dsw-session_O_Ah', 'dsw-session__title': 'dsw-session__title_pfT2', 'dsw-session__subtitle': 'dsw-session__subtitle_bOCn', 'dsw-session__speakers': 'dsw-session__speakers_cUju', 'dsw-speaker': 'dsw-speaker_gupO', 'dsw-speaker__image': 'dsw-speaker__image_dA9g', 'dsw-session__video': 'dsw-session__video_oz9q' };
-   var d = i(73381),
-    l = i(52676);
-   const g = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: m, signupLink: h, organisation: c, videoId: p, children: k, captioned: v } = e;
-    return (0, l.jsxs)('article', {
-     className: (0, r.Z)(o['dsw-session']),
-     id: g.toLowerCase().replace(/\s/gi, '-'),
+   const d = { 'dsw-session': 'dsw-session_O_Ah', 'dsw-session__title': 'dsw-session__title_pfT2', 'dsw-session__subtitle': 'dsw-session__subtitle_bOCn', 'dsw-session__speakers': 'dsw-session__speakers_cUju', 'dsw-speaker': 'dsw-speaker_gupO', 'dsw-speaker__image': 'dsw-speaker__image_dA9g', 'dsw-session__video': 'dsw-session__video_oz9q' };
+   var l = i(73381),
+    g = i(52676);
+   const m = (e) => {
+    let { lang: n = 'nl', headingLevel: i = 3, title: m, speakers: h, signupLink: c, organisation: p, videoId: k, children: v, captioned: u, session: j } = e;
+    return (0, g.jsxs)('article', {
+     className: (0, o.Z)(d['dsw-session']),
+     id: m.toLowerCase().replace(/\s/gi, '-'),
      children: [
-      (0, l.jsx)(t.X6, { level: i, className: (0, r.Z)(o['dsw-session__title']), children: g }),
-      p ? (0, l.jsx)(d.Y, { videoId: p, width: '100%', height: '100%', className: (0, r.Z)(o['dsw-session__video']) }) : (0, l.jsxs)(t.nv, { className: (0, r.Z)(o['dsw-session__subtitle']), lead: !0, children: [m.map((e) => e.name).join(' & '), ', ', ' ', c] }),
-      k,
+      (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(d['dsw-session__title']), children: m }),
+      k ? (0, g.jsx)(l.Y, { videoId: k, width: '100%', height: '100%', className: (0, o.Z)(d['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(d['dsw-session__subtitle']), lead: !0, children: [h.map((e) => e.name).join(' & '), ', ', ' ', p] }),
+      j && j.isoDateTime && j.icalLink && !k ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: j.icalLink, download: j.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: j.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(j.isoDateTime)) })] }) }) : null,
+      v,
       'nl' === n &&
-       m.find((e) => {
+       h.find((e) => {
         let { language: n } = e;
         return 'nl' !== n;
        }) &&
-       (0, l.jsxs)(t.nv, { children: [(0, l.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      v && (0, l.jsxs)(t.nv, { children: [(0, l.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
-      (0, l.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: m.map((e, i) => (0, l.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, l.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, l.jsx)(t.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
-      h && (0, l.jsx)(t.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, l.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: h, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, l.jsx)(a.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
+       (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
+      u && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      (0, g.jsx)('aside', { className: (0, o.Z)(d['dsw-session__speakers']), children: h.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(d['dsw-session__speaker'], d['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(d['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(d['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
+      c && (0, g.jsx)(r.nv, { className: (0, o.Z)(d['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', d['homepage-hero__call-to-action-link']), to: c, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', m, '\u201d', (0, g.jsx)(t.Z, { className: (0, o.Z)('utrecht-icon', d['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],
     });
    };
@@ -72,6 +74,16 @@
     let { videoId: n, className: i, ...a } = e;
     return (0, o.jsx)(t(), { url: `https://youtube.com/watch?v=${n}`, className: `${(0, s.Z)(r['video-player'])} ${i}`, width: '100%', height: '100%', controls: !0, ...a, config: { youtube: { playerVars: { disablekb: 1 } } } });
    };
+  },
+  19143: (e, n, i) => {
+   i.d(n, { Z: () => s });
+   var s = (0, i(69804).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
+    ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
+    ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
+    ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
+    ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
+    ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
+   ]);
   },
   81094: (e, n, i) => {
    i.d(n, { Z: () => s });

@@ -1,10 +1,10 @@
-/*! For license information please see 60ab2a10.3c9beab0.js.LICENSE.txt */
+/*! For license information please see 60ab2a10.2725d698.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [97362],
  {
   43242: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => c, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => g, toc: () => h });
+   i.r(n), i.d(n, { assets: () => h, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => g, toc: () => c });
    var s = i(52676),
     t = i(24785),
     a = i(63816),
@@ -12,9 +12,9 @@
     o = i(46506);
    const l = { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' },
     d = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/en/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
-    c = {},
-    h = [
+    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
+    h = {},
+    c = [
      { value: 'Program', id: 'program', level: 2 },
      { value: 'Organisation', id: 'organisation', level: 2 },
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
@@ -29,33 +29,35 @@
    }
   },
   63816: (e, n, i) => {
-   i.d(n, { Z: () => g });
+   i.d(n, { Z: () => h });
    var s = i(90441),
-    t = i(81094),
-    a = i(46506),
-    r = i(4814);
+    t = i(19143),
+    a = i(81094),
+    r = i(46506),
+    o = i(4814);
    i(75271);
-   const o = { 'dsw-session': 'dsw-session_O_Ah', 'dsw-session__title': 'dsw-session__title_pfT2', 'dsw-session__subtitle': 'dsw-session__subtitle_bOCn', 'dsw-session__speakers': 'dsw-session__speakers_cUju', 'dsw-speaker': 'dsw-speaker_gupO', 'dsw-speaker__image': 'dsw-speaker__image_dA9g', 'dsw-session__video': 'dsw-session__video_oz9q' };
-   var l = i(73381),
-    d = i(52676);
-   const g = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: g, speakers: c, signupLink: h, organisation: m, videoId: p, children: u, captioned: w } = e;
-    return (0, d.jsxs)('article', {
-     className: (0, r.Z)(o['dsw-session']),
-     id: g.toLowerCase().replace(/\s/gi, '-'),
+   const l = { 'dsw-session': 'dsw-session_O_Ah', 'dsw-session__title': 'dsw-session__title_pfT2', 'dsw-session__subtitle': 'dsw-session__subtitle_bOCn', 'dsw-session__speakers': 'dsw-session__speakers_cUju', 'dsw-speaker': 'dsw-speaker_gupO', 'dsw-speaker__image': 'dsw-speaker__image_dA9g', 'dsw-session__video': 'dsw-session__video_oz9q' };
+   var d = i(73381),
+    g = i(52676);
+   const h = (e) => {
+    let { lang: n = 'nl', headingLevel: i = 3, title: h, speakers: c, signupLink: m, organisation: p, videoId: u, children: w, captioned: k, session: v } = e;
+    return (0, g.jsxs)('article', {
+     className: (0, o.Z)(l['dsw-session']),
+     id: h.toLowerCase().replace(/\s/gi, '-'),
      children: [
-      (0, d.jsx)(a.X6, { level: i, className: (0, r.Z)(o['dsw-session__title']), children: g }),
-      p ? (0, d.jsx)(l.Y, { videoId: p, width: '100%', height: '100%', className: (0, r.Z)(o['dsw-session__video']) }) : (0, d.jsxs)(a.nv, { className: (0, r.Z)(o['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), ', ', ' ', m] }),
-      u,
+      (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(l['dsw-session__title']), children: h }),
+      u ? (0, g.jsx)(d.Y, { videoId: u, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), ', ', ' ', p] }),
+      v && v.isoDateTime && v.icalLink && !u ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: v.icalLink, download: v.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: v.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(v.isoDateTime)) })] }) }) : null,
+      w,
       'nl' === n &&
        c.find((e) => {
         let { language: n } = e;
         return 'nl' !== n;
        }) &&
-       (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      w && (0, d.jsxs)(a.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
-      (0, d.jsx)('aside', { className: (0, r.Z)(o['dsw-session__speakers']), children: c.map((e, i) => (0, d.jsxs)('div', { className: (0, r.Z)(o['dsw-session__speaker'], o['dsw-speaker']), children: [(0, d.jsx)('img', { className: (0, r.Z)(o['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, d.jsx)(a.nv, { className: (0, r.Z)(o['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
-      h && (0, d.jsx)(a.nv, { className: (0, r.Z)(o['homepage-hero__call-to-action']), children: (0, d.jsxs)(s.Z, { className: (0, r.Z)('utrecht-link', o['homepage-hero__call-to-action-link']), to: h, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, d.jsx)(t.Z, { className: (0, r.Z)('utrecht-icon', o['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
+       (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
+      k && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      (0, g.jsx)('aside', { className: (0, o.Z)(l['dsw-session__speakers']), children: c.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(l['dsw-session__speaker'], l['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(l['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(l['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
+      m && (0, g.jsx)(r.nv, { className: (0, o.Z)(l['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', l['homepage-hero__call-to-action-link']), to: m, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', h, '\u201d', (0, g.jsx)(a.Z, { className: (0, o.Z)('utrecht-icon', l['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],
     });
    };
@@ -71,6 +73,16 @@
     let { videoId: n, className: i, ...t } = e;
     return (0, o.jsx)(a(), { url: `https://youtube.com/watch?v=${n}`, className: `${(0, s.Z)(r['video-player'])} ${i}`, width: '100%', height: '100%', controls: !0, ...t, config: { youtube: { playerVars: { disablekb: 1 } } } });
    };
+  },
+  19143: (e, n, i) => {
+   i.d(n, { Z: () => s });
+   var s = (0, i(69804).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
+    ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
+    ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
+    ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
+    ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
+    ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
+   ]);
   },
   81094: (e, n, i) => {
    i.d(n, { Z: () => s });

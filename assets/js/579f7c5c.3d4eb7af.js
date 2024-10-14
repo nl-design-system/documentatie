@@ -1,4 +1,4 @@
-/*! For license information please see 579f7c5c.3493fa98.js.LICENSE.txt */
+/*! For license information please see 579f7c5c.3d4eb7af.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [38129],
@@ -11,10 +11,10 @@
     l = n(81094),
     r = n(10232),
     o = n(46506),
-    d = n(85115);
+    d = n(49591);
    const c = { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' },
     m = 'Timetable Design Systems Week 2024',
-    h = { id: 'community/events/design-systems-week-2024/english/timetable', title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2024/english/timetable.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/timetable', permalink: '/en/events/design-systems-week-2024/en/timetable', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/timetable.mdx', tags: [], version: 'current', frontMatter: { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' }, sidebar: 'community', previous: { title: 'Program', permalink: '/en/events/design-systems-week-2024/en/program' } },
+    h = { id: 'community/events/design-systems-week-2024/english/timetable', title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2024/english/timetable.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/timetable', permalink: '/events/design-systems-week-2024/en/timetable', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/timetable.mdx', tags: [], version: 'current', frontMatter: { title: 'Timetable \u2022 Design Systems Week 2024', description: 'Timetable for all English talks of the Design Systems Week 2023', hide_table_of_contents: !0, hide_title: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', slug: '/events/design-systems-week-2024/en/timetable' }, sidebar: 'community', previous: { title: 'Program', permalink: '/events/design-systems-week-2024/en/program' } },
     g = {},
     b = [
      { value: 'Monday 14 October', id: 'monday-14-october', level: 2 },
@@ -51,16 +51,10 @@
     return s ? (0, i.jsx)(s, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
    }
   },
-  85115: (e, s, n) => {
+  49591: (e, s, n) => {
    n.d(s, { L: () => c });
    var i = n(4839),
-    t = (0, n(69804).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
-     ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
-     ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
-     ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
-     ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
-     ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
-    ]),
+    t = n(19143),
     a = n(46506),
     l = n(4814);
    n(75271);
@@ -82,7 +76,7 @@
         (0, o.jsx)(a.RM, {
          children: n.map((e, n) => {
           let { isoDateTime: i, speakers: c, subject: m, icalLink: h, sessionLink: g, language: b } = e;
-          return (0, o.jsxs)(a.SC, { className: (0, l.Z)(r['session-table__row']), children: [(0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__time']), children: (0, o.jsx)(a.nv, { children: (0, o.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, o.jsx)(a.pj, { children: (0, o.jsx)('div', { className: (0, l.Z)(r['session-table__speakers']), children: c.map((e, s) => (0, o.jsx)(d, { ...e }, s)) }) }), (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__subject']), children: (0, o.jsx)(a.nv, { children: g ? (0, o.jsx)(a.rU, { href: g, children: m }) : m }) }), 'nl-NL' === s && (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__language']), children: (0, o.jsx)('abbr', { title: b.description, children: b.abbr }) }), (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__time']), children: h && (0, o.jsxs)(a.ZP, { href: h, download: h, 'aria-label': `iCal file for ${m} (download)`, children: [(0, o.jsx)(a.JO, { children: (0, o.jsx)(t, {}) }), ' '] }) })] }, n);
+          return (0, o.jsxs)(a.SC, { className: (0, l.Z)(r['session-table__row']), children: [(0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__time']), children: (0, o.jsx)(a.nv, { children: (0, o.jsx)('time', { dateTime: i, children: new Intl.DateTimeFormat(s, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== s ? 'short' : void 0 }).format(new Date(i)) }) }) }), (0, o.jsx)(a.pj, { children: (0, o.jsx)('div', { className: (0, l.Z)(r['session-table__speakers']), children: c.map((e, s) => (0, o.jsx)(d, { ...e }, s)) }) }), (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__subject']), children: (0, o.jsx)(a.nv, { children: g ? (0, o.jsx)(a.rU, { href: g, children: m }) : m }) }), 'nl-NL' === s && (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__language']), children: (0, o.jsx)('abbr', { title: b.description, children: b.abbr }) }), (0, o.jsx)(a.pj, { className: (0, l.Z)(r['session-table__time']), children: h && (0, o.jsxs)(a.ZP, { href: h, download: h, 'aria-label': `iCal file for ${m} (download)`, children: [(0, o.jsx)(a.JO, { children: (0, o.jsx)(t.Z, {}) }), ' '] }) })] }, n);
          }),
         }),
        ],
@@ -108,6 +102,16 @@
     let s;
     return (s = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : l(e.components)), i.createElement(a.Provider, { value: s }, e.children);
    }
+  },
+  19143: (e, s, n) => {
+   n.d(s, { Z: () => i });
+   var i = (0, n(69804).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
+    ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
+    ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
+    ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
+    ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
+    ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
+   ]);
   },
   10232: (e, s, n) => {
    n.d(s, { Z: () => i });
