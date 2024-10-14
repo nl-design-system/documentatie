@@ -1,4 +1,4 @@
-/*! For license information please see bf203e4a.0f51951d.js.LICENSE.txt */
+/*! For license information please see bf203e4a.46cd8d61.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [3307],
@@ -41,14 +41,14 @@
    var l = i(73381),
     g = i(52676);
    const m = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: m, speakers: h, signupLink: c, organisation: p, videoId: k, children: v, captioned: u, session: j } = e;
+    let { lang: n = 'nl', headingLevel: i = 3, title: m, speakers: h, signupLink: c, organisation: p, videoId: k, children: v, captioned: u, captionLink: j, session: w } = e;
     return (0, g.jsxs)('article', {
      className: (0, o.Z)(d['dsw-session']),
      id: m.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(d['dsw-session__title']), children: m }),
       k ? (0, g.jsx)(l.Y, { videoId: k, width: '100%', height: '100%', className: (0, o.Z)(d['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(d['dsw-session__subtitle']), lead: !0, children: [h.map((e) => e.name).join(' & '), ', ', ' ', p] }),
-      j && j.isoDateTime && j.icalLink && !k ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: j.icalLink, download: j.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: j.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(j.isoDateTime)) })] }) }) : null,
+      w && w.isoDateTime && w.icalLink && !k ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: w.icalLink, download: w.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: w.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(w.isoDateTime)) })] }) }) : null,
       v,
       'nl' === n &&
        h.find((e) => {
@@ -56,7 +56,7 @@
         return 'nl' !== n;
        }) &&
        (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      u && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      u && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', j && (0, g.jsxs)(g.Fragment, { children: [' ', '(', (0, g.jsxs)('a', { href: j, children: ['tolktekst', (0, g.jsxs)('span', { className: 'sr-only', children: [' bij ', m] })] }), ')'] }), '.'] }),
       (0, g.jsx)('aside', { className: (0, o.Z)(d['dsw-session__speakers']), children: h.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(d['dsw-session__speaker'], d['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(d['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(d['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
       c && (0, g.jsx)(r.nv, { className: (0, o.Z)(d['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', d['homepage-hero__call-to-action-link']), to: c, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', m, '\u201d', (0, g.jsx)(t.Z, { className: (0, o.Z)('utrecht-icon', d['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],

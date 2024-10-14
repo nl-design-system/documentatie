@@ -1,4 +1,4 @@
-/*! For license information please see 031a0302.69483195.js.LICENSE.txt */
+/*! For license information please see 031a0302.18363414.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [24918],
@@ -16,7 +16,7 @@
     c = s(3191);
    const m = { title: 'Program \u2022 Design Systems Week 2024', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' },
     h = 'Program Design Systems Week 2024',
-    u = { id: 'community/events/design-systems-week-2024/english/program', title: 'Program \u2022 Design Systems Week 2024', description: 'Program of all talks that are in English for Design Systems Week 2024.', source: '@site/docs/community/events/design-systems-week-2024/english/program.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/program', permalink: '/en/events/design-systems-week-2024/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/program.mdx', tags: [], version: 'current', frontMatter: { title: 'Program \u2022 Design Systems Week 2024', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' }, sidebar: 'community', previous: { title: 'About', permalink: '/en/events/design-systems-week-2024/en' }, next: { title: 'Timetable', permalink: '/en/events/design-systems-week-2024/en/timetable' } },
+    u = { id: 'community/events/design-systems-week-2024/english/program', title: 'Program \u2022 Design Systems Week 2024', description: 'Program of all talks that are in English for Design Systems Week 2024.', source: '@site/docs/community/events/design-systems-week-2024/english/program.mdx', sourceDirName: 'community/events/design-systems-week-2024/english', slug: '/events/design-systems-week-2024/en/program', permalink: '/events/design-systems-week-2024/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2024/english/program.mdx', tags: [], version: 'current', frontMatter: { title: 'Program \u2022 Design Systems Week 2024', description: 'Program of all talks that are in English for Design Systems Week 2024.', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2024/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png' }, sidebar: 'community', previous: { title: 'About', permalink: '/events/design-systems-week-2024/en' }, next: { title: 'Timetable', permalink: '/events/design-systems-week-2024/en/timetable' } },
     p = {},
     k = [];
    function v(e) {
@@ -40,14 +40,14 @@
    var d = s(73381),
     g = s(52676);
    const c = (e) => {
-    let { lang: n = 'nl', headingLevel: s = 3, title: c, speakers: m, signupLink: h, organisation: u, videoId: p, children: k, captioned: v, session: b } = e;
+    let { lang: n = 'nl', headingLevel: s = 3, title: c, speakers: m, signupLink: h, organisation: u, videoId: p, children: k, captioned: v, captionLink: b, session: w } = e;
     return (0, g.jsxs)('article', {
      className: (0, o.Z)(l['dsw-session']),
      id: c.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, g.jsx)(r.X6, { level: s, className: (0, o.Z)(l['dsw-session__title']), children: c }),
       p ? (0, g.jsx)(d.Y, { videoId: p, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [m.map((e) => e.name).join(' & '), ', ', ' ', u] }),
-      b && b.isoDateTime && b.icalLink && !p ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: b.icalLink, download: b.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: b.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(b.isoDateTime)) })] }) }) : null,
+      w && w.isoDateTime && w.icalLink && !p ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: w.icalLink, download: w.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: w.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(w.isoDateTime)) })] }) }) : null,
       k,
       'nl' === n &&
        m.find((e) => {
@@ -55,7 +55,7 @@
         return 'nl' !== n;
        }) &&
        (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      v && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      v && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', b && (0, g.jsxs)(g.Fragment, { children: [' ', '(', (0, g.jsxs)('a', { href: b, children: ['tolktekst', (0, g.jsxs)('span', { className: 'sr-only', children: [' bij ', c] })] }), ')'] }), '.'] }),
       (0, g.jsx)('aside', { className: (0, o.Z)(l['dsw-session__speakers']), children: m.map((e, s) => (0, g.jsxs)('div', { className: (0, o.Z)(l['dsw-session__speaker'], l['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(l['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(l['dsw-speaker__description']), children: e.description[n] })] }, s)) }),
       h && (0, g.jsx)(r.nv, { className: (0, o.Z)(l['homepage-hero__call-to-action']), children: (0, g.jsxs)(i.Z, { className: (0, o.Z)('utrecht-link', l['homepage-hero__call-to-action-link']), to: h, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', c, '\u201d', (0, g.jsx)(t.Z, { className: (0, o.Z)('utrecht-icon', l['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],

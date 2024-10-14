@@ -1,4 +1,4 @@
-/*! For license information please see 60ab2a10.2725d698.js.LICENSE.txt */
+/*! For license information please see 60ab2a10.d56c5f7d.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [97362],
@@ -12,7 +12,7 @@
     o = i(46506);
    const l = { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' },
     d = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
+    g = { id: 'community/events/design-systems-week-2023/english/program', title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week-2023/english/1-program.md', sourceDirName: 'community/events/design-systems-week-2023/english', slug: '/events/design-systems-week-2023/en/program', permalink: '/en/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/english/1-program.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Program \u2022 Design Systems Week 2023', description: 'Program of all English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Program', slug: '/events/design-systems-week-2023/en/program' } },
     h = {},
     c = [
      { value: 'Program', id: 'program', level: 2 },
@@ -40,14 +40,14 @@
    var d = i(73381),
     g = i(52676);
    const h = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: h, speakers: c, signupLink: m, organisation: p, videoId: u, children: w, captioned: k, session: v } = e;
+    let { lang: n = 'nl', headingLevel: i = 3, title: h, speakers: c, signupLink: m, organisation: p, videoId: u, children: w, captioned: k, captionLink: v, session: b } = e;
     return (0, g.jsxs)('article', {
      className: (0, o.Z)(l['dsw-session']),
      id: h.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(l['dsw-session__title']), children: h }),
       u ? (0, g.jsx)(d.Y, { videoId: u, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), ', ', ' ', p] }),
-      v && v.isoDateTime && v.icalLink && !u ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: v.icalLink, download: v.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: v.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(v.isoDateTime)) })] }) }) : null,
+      b && b.isoDateTime && b.icalLink && !u ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: b.icalLink, download: b.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: b.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(b.isoDateTime)) })] }) }) : null,
       w,
       'nl' === n &&
        c.find((e) => {
@@ -55,7 +55,7 @@
         return 'nl' !== n;
        }) &&
        (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      k && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig.'] }),
+      k && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', v && (0, g.jsxs)(g.Fragment, { children: [' ', '(', (0, g.jsxs)('a', { href: v, children: ['tolktekst', (0, g.jsxs)('span', { className: 'sr-only', children: [' bij ', h] })] }), ')'] }), '.'] }),
       (0, g.jsx)('aside', { className: (0, o.Z)(l['dsw-session__speakers']), children: c.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(l['dsw-session__speaker'], l['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(l['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(l['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
       m && (0, g.jsx)(r.nv, { className: (0, o.Z)(l['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', l['homepage-hero__call-to-action-link']), to: m, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', h, '\u201d', (0, g.jsx)(a.Z, { className: (0, o.Z)('utrecht-icon', l['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
      ],
