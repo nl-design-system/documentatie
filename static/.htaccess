@@ -53,7 +53,4 @@ Redirect 307 "/calendar" "/componenten"
 Redirect 307 "/character-count" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
 
-Redirect 301 "/miro" "https://miro.com/app/board/uXjVLUFFvD0=/"
-Redirect 301 "/tolk" "https://text-on-tap.live/index.html#e=k2TzZqdqZZ"
-
 ErrorDocument 404 /404.html
