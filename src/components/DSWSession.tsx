@@ -18,6 +18,7 @@ interface DSWSessionProps {
   organisation: string;
   videoId?: string;
   captioned?: boolean;
+  captionLink?: string;
   session?: Session;
 }
 
@@ -41,6 +42,7 @@ export const DSWSession = ({
   videoId,
   children,
   captioned,
+  captionLink,
   session,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
@@ -83,7 +85,18 @@ export const DSWSession = ({
     )}
     {captioned && (
       <Paragraph>
-        <b>Goed te weten:</b> Bij deze sessie is een schrijftolk aanwezig.
+        <b>Goed te weten:</b> Bij deze sessie is een schrijftolk aanwezig
+        {captionLink && (
+          <>
+            {' '}
+            (
+            <a href={captionLink}>
+              tolktekst<span className="sr-only"> bij {title}</span>
+            </a>
+            )
+          </>
+        )}
+        .
       </Paragraph>
     )}
     <aside className={clsx(style['dsw-session__speakers'])}>
