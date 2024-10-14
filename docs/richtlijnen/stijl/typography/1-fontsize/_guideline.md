@@ -7,8 +7,3 @@ Hoewel we `16px` aangeven als minimale `font-size` is het beter om géén gebrui
 Waarom? Browsers bieden de mogelijkheid om de standaard `font-size` aan te passen. Handig voor iemand die slechtziend is. Wanneer je relatieve waardes gebruikt schaalt alles netjes mee. Maar een pixel blijft een pixel en zodoende verandert er niks.
 
 Vanuit het NL Design System zelf kiezen we momenteel wél voor pixels. Dit komt omdat wij dezelfde design token waarde willen gebruiken in Figma en in code. Wij willen de CSS nog aanpassen om px automatisch om te zetten naar rem.
-
-## Bronnen
-
-- [<span lang="en">The Surprising Truth About Pixels and Accessibility</span>](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) van Josh WComeau.
-- [<span lang="en">How to Use Rem Units in CSS for Accessible Design</span>](https://www.a11y-collective.com/blog/what-is-rem-in-css/) van Florian Schroiff.
