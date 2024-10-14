@@ -1,9 +1,10 @@
 import Link from '@docusaurus/Link';
-import { IconChevronRight } from '@tabler/icons-react';
-import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { IconCalendarEvent, IconChevronRight } from '@tabler/icons-react';
+import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { PropsWithChildren } from 'react';
 import style from './DSWSession.module.css';
+import { Session } from './SessionTable';
 import { VideoPlayer } from './VideoPlayer';
 
 interface DSWSessionProps {
@@ -17,6 +18,7 @@ interface DSWSessionProps {
   organisation: string;
   videoId?: string;
   captioned?: boolean;
+  session?: Session;
 }
 
 interface DSWSpeaker {
@@ -39,6 +41,7 @@ export const DSWSession = ({
   videoId,
   children,
   captioned,
+  session,
 }: PropsWithChildren<DSWSessionProps>) => (
   <article className={clsx(style['dsw-session'])} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
@@ -52,6 +55,26 @@ export const DSWSession = ({
         {', '} {organisation}
       </Paragraph>
     )}
+    {session && session.isoDateTime && session.icalLink && !videoId ? (
+      <Paragraph>
+        <ButtonLink
+          href={session.icalLink}
+          download={session.icalLink}
+          style={{ paddingInlineStart: 0, paddingInlineEnd: 0 }}
+        >
+          <Icon>
+            <IconCalendarEvent />
+          </Icon>
+          <time dateTime={session.isoDateTime}>
+            {new Intl.DateTimeFormat(lang, {
+              dateStyle: 'full',
+              timeStyle: lang === 'nl' ? 'short' : 'full',
+              timeZone: 'Europe/Amsterdam',
+            }).format(new Date(session.isoDateTime))}
+          </time>
+        </ButtonLink>
+      </Paragraph>
+    ) : null}
     {children}
     {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (
       <Paragraph>
