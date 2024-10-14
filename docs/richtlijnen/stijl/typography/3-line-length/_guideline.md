@@ -8,4 +8,4 @@ Een waarde die binnen CSS vaak over het hoofd wordt gezien is `ch`. Door je para
 
 Om te checken of je regellengte tussen de 45 en 75 karakters valt, kun je de onderstaande Lorem ipsum tekst gebruiken. De eerste asterisk (\*) bevindt zich op positie 45 en de tweede op positie 75.
 
-Lorem ipsum dolor sit amet, consectetur adi _ isicing elit, sed do eiusmo _ tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adi \* isicing elit, sed do eiusmo \* tempor incididunt ut labore et dolore magna aliqua.
