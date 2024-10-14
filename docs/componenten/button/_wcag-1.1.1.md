@@ -12,7 +12,7 @@ Een `img` met een alt-attribuut is een robuuste manier om een alternatieve tekst
 
 ```html
 <button>
-  <img src="trashcan.svg" alt="Delete">
+  <img src="trashcan.svg" alt="Delete" />
 </button>
 ```
 
