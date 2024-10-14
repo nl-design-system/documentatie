@@ -20,7 +20,8 @@ interface Speaker {
   organisation: string;
 }
 
-interface Session {
+export interface Session {
+  uuid: string;
   isoDateTime: string;
   speakers: Speaker[];
   subject: string;

@@ -13,6 +13,7 @@ import DocusaurusLink from "@docusaurus/Link";
 import { IconCalendarPlus, IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import DSWSession from "../../../../../src/components/DSWSession";
+import sessions from "../sessions.json";
 import speakers from "../speakers.json";
 
 <div lang="en">
@@ -42,7 +43,7 @@ import speakers from "../speakers.json";
   </ButtonLink>
 </ActionGroup>
 
-<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System" headingLevel={2}>
+<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System" headingLevel={2} session={sessions.find((session)=> session.uuid === 'FE871D75-D5C2-4842-A100-71A8A7069FAD')}>
 
 Amy will share plain-language accessibility tests the USWDS team has created for checking the accessibility of individual components. Attendees will learn how any web team — technical or not — can use these tests to perform baseline manual accessibility testing (like keyboard, screen reader, mobile, and zoom magnification testing) on their own sites. She will also describe the team’s iterative design and development process for these checklists, and how other teams can develop their own.
 
@@ -59,7 +60,7 @@ Amy will share plain-language accessibility tests the USWDS team has created for
 
 </DSWSession>
 
-<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en" headingLevel={2}>
+<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en" headingLevel={2} session={sessions.find((session)=> session.uuid === 'C0639355-E372-422F-8EC9-B069C08CDEEA')}>
 
 Join Geri, a seasoned design systems explorer with 8 years of adventures under her belt, as she navigates the uncharted territories of accessibility in a major product org. With no playbook in hand, Geri’s quest is one we can all relate to: figuring it out as we go along.
 
@@ -67,13 +68,13 @@ In this ‘choose your own adventure’ session, you’ll discover how the princ
 
 </DSWSession>
 
-<DSWSession title="Advantages to working in the open with government design systems" speakers={[speakers.MikeGifford]} organisation="Civic Actions" lang="en" headingLevel={2}>
+<DSWSession title="Advantages to working in the open with government design systems" speakers={[speakers.MikeGifford]} organisation="Civic Actions" lang="en" headingLevel={2} session={sessions.find((session)=> session.uuid === 'CE68A449-D6B7-44C2-B114-017668D83998')}>
 
 For many governments, contributing to open source project is culturally a challenge. It often requires engagement with people in other departments and often outside of government. Design systems however provide a unique opportunity for governments to become more confident in their open source adoption. Mike has contributed to several government design systems. As a Drupal Core Accessibility Maintainer, he is often looking for best practices and comparing different approaches taken by governments around the world.
 
 </DSWSession>
 
-<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" lang="en" headingLevel={2}>
+<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" lang="en" headingLevel={2} session={sessions.find((session)=> session.uuid === '17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA')}>
 
 Lessons from working on the GOV.‌UK Design System and other common platforms in UK government. How leaning on the principles that make the Web great can create more value for the public we serve.
 

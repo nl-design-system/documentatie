@@ -12,6 +12,7 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/ds
 import DocusaurusLink from "@docusaurus/Link";
 import { IconCalendarPlus, IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import sessions from "./sessions.json";
 import speakers from "./speakers.json";
 import DSWSession from "../../../../src/components/DSWSession";
 
@@ -42,7 +43,7 @@ import DSWSession from "../../../../src/components/DSWSession";
   </ButtonLink>
 </ActionGroup>
 
-<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} organisation="US Web Design System" headingLevel={2}>
+<DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} organisation="US Web Design System" headingLevel={2} session={sessions.find((session)=> session.uuid === 'FE871D75-D5C2-4842-A100-71A8A7069FAD')}>
 
 <Paragraph>
   Amy gaat ons laten zien hoe het US Web Design System toegankelijkheidstests in duidelijke taal heeft toegevoegd bij
@@ -54,7 +55,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace" captioned headingLevel={2}>
+<DSWSession title="Wat je allemaal niet weet over je CSS" speakers={[speakers.BartVeneman]} organisation="Project Wallace" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === '50AFAB63-ACDE-4137-8BD5-57B5C34F8B50')}>
 
 <Paragraph>
   Met de komst van Sass, bundlers en frontend frameworks verdween een van de hoekstenen van het web development van
@@ -65,7 +66,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad voor de Kinderbescherming" speakers={[speakers.CharlottevanBijnen]} organisation="Valsplat" captioned headingLevel={2}>
+<DSWSession title="Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad voor de Kinderbescherming" speakers={[speakers.CharlottevanBijnen]} organisation="Valsplat" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === '268DE453-5636-468C-8721-EAB3134D02A4')}>
 
 <Paragraph>
   Journeys worden vaak gezien als hét middel voor empathie, maar dat is te kort door de bocht. Het is slechts een tool.
@@ -95,7 +96,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org" captioned headingLevel={2}>
+<DSWSession title="Unmeasurable Accessibility: Beyond conformance" speakers={[speakers.DariceDeCuba]} organisation="darice.org" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === '5C1C0DCD-33E3-4F57-90F8-4807A55F6200')}>
 
 <Paragraph>
   Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds
@@ -105,7 +106,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" headingLevel={2}>
+<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" headingLevel={2} session={sessions.find((session)=> session.uuid === 'C0639355-E372-422F-8EC9-B069C08CDEEA')}>
 
 <Paragraph>
   Het bouwen van een design system is heel interessant. Maar zodra je design system wordt ingezet voor applicaties in
@@ -116,7 +117,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" headingLevel={2}>
+<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" headingLevel={2} session={sessions.find((session)=> session.uuid === '3A80C3A1-4657-42F8-908D-F9B7565CAF69')}>
 
 <Paragraph>
   Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het
@@ -132,7 +133,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Vlaams Design System: 10 jaar lessons learned" speakers={[speakers.GijsVeyfeyken, speakers.VincentSennesael, speakers.WarreBuysse]} organisation="Agentschap Digitaal Vlaanderen" captioned headingLevel={2}>
+<DSWSession title="Vlaams Design System: 10 jaar lessons learned" speakers={[speakers.GijsVeyfeyken, speakers.VincentSennesael, speakers.WarreBuysse]} organisation="Agentschap Digitaal Vlaanderen" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === '0963CB03-7FBC-4EBD-AAF1-6534402F3A58')}>
 
 <Paragraph>
   In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van
@@ -145,7 +146,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong, speakers.LarsvandeCappelle]} organisation="NL Design System community" captioned headingLevel={2}>
+<DSWSession title="Heartbeat: de Design Systems Week lightning talks editie" speakers={[speakers.MariekeBrouwer, speakers.BryandeJong, speakers.LarsvandeCappelle]} organisation="NL Design System community" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === 'F07EEF22-EA9B-4967-B326-2B721E7F2DD2')}>
 
 <Paragraph>
   De [Heartbeat](/events/heartbeat) is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL
@@ -176,7 +177,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur" captioned headingLevel={2}>
+<DSWSession title="Tips voor toegankelijke dienstverlening" speakers={[speakers.KimDenie]} organisation="adviseur" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === 'E42373CE-E7D8-4996-B087-7DAB45D5AF96')}>
 
 <Paragraph>
   Hoe is het om te leven met een visuele beperking? Wat zijn de problemen waar je geheel verwacht of onverwachts
@@ -186,7 +187,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Je eerste gebruikersonderzoek doen, hoe doe je dat?" speakers={[speakers.JeroenDuChatinier]} organisation="Gemeente Utrecht" captioned headingLevel={2}>
+<DSWSession title="Je eerste gebruikersonderzoek doen, hoe doe je dat?" speakers={[speakers.JeroenDuChatinier]} organisation="Gemeente Utrecht" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === '7A2AC63A-0D82-4156-A187-C688BAD1BE47')}>
 
 <Paragraph>
   Gebruikersonderzoeken doen is leuk. Je krijgt van de mensen voor wie je het echt doet, te horen wat je goed doet, en
@@ -205,7 +206,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst" captioned headingLevel={2}>
+<DSWSession title="Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen" speakers={[speakers.LotteBijl]} organisation="Belastingdienst" captioned headingLevel={2} session={sessions.find((session)=> session.uuid === 'A778C5D1-743F-4C8E-93AF-56F8375C29AC')}>
 
 <Paragraph>
   Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun
@@ -218,7 +219,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="De voordelen van open werken met design systems bij de overheid" speakers={[speakers.MikeGifford]} organisation="Civic Actions" headingLevel={2}>
+<DSWSession title="De voordelen van open werken met design systems bij de overheid" speakers={[speakers.MikeGifford]} organisation="Civic Actions" headingLevel={2} session={sessions.find((session)=> session.uuid === 'CE68A449-D6B7-44C2-B114-017668D83998')}>
 
 <Paragraph>
   Voor veel overheden is bijdragen aan open source projecten een culturele uitdagingen. Er wordt vaak samengewerkt met
@@ -229,7 +230,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" headingLevel={2}>
+<DSWSession title="Common direction, boring magic" speakers={[speakers.SteveMesser]} organisation="freelance" headingLevel={2} session={sessions.find((session)=> session.uuid === '17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA')}>
 
 <Paragraph>
   Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.‌UK Design System en andere platformen van de Britse
@@ -239,7 +240,7 @@ import DSWSession from "../../../../src/components/DSWSession";
 
 </DSWSession>
 
-<DSWSession title="Werken op schaal" speakers={[speakers.ThijsLouisse]} organisation="ING" headingLevel={2} captioned>
+<DSWSession title="Werken op schaal" speakers={[speakers.ThijsLouisse]} organisation="ING" headingLevel={2} captioned session={sessions.find((session)=> session.uuid === '17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA')}>
 
 <Paragraph>
   Het design system van ING wordt door bijna 2000 _consuming packages_ als _dependency_ gebruikt. Als een nieuwe versie
