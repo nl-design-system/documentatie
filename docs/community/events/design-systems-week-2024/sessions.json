@@ -201,6 +201,20 @@
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
+    "uuid": "6024d4f3-c8fd-4bd5-a06c-36b69a687453",
+    "isoDateTime": "2024-10-17T11:00:00.000Z",
+    "speakers": [
+      {
+        "name": "Chen Hui Jing",
+        "organisation": ""
+      }
+    ],
+    "subject": "CSS for internationalisation",
+    "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#css-for-internationalisation",
+    "icalLink": "/dsweek-2024/chen-hui-jing.ics",
+    "language": { "abbr": "EN", "description": "Engels" }
+  },
+  {
     "uuid": "A778C5D1-743F-4C8E-93AF-56F8375C29AC",
     "isoDateTime": "2024-10-17T13:00:00.000Z",
     "speakers": [
@@ -226,20 +240,6 @@
     "subject": "Common direction, boring magic",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic",
     "icalLink": "/dsweek-2024/steve-messer.ics",
-    "language": { "abbr": "EN", "description": "Engels" }
-  },
-  {
-    "uuid": "6024d4f3-c8fd-4bd5-a06c-36b69a687453",
-    "isoDateTime": "2024-10-17T11:00:00.000Z",
-    "speakers": [
-      {
-        "name": "Chen Hui Jing",
-        "organisation": ""
-      }
-    ],
-    "subject": "CSS for internationalisation",
-    "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#css-for-internationalisation",
-    "icalLink": "/dsweek-2024/chen-hui-jing.ics",
     "language": { "abbr": "EN", "description": "Engels" }
   }
 ]
