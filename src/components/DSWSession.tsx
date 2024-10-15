@@ -54,7 +54,7 @@ export const DSWSession = ({
     ) : (
       <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
         {speakers.map((speaker) => speaker.name).join(' & ')}
-        {', '} {organisation}
+        {organisation ? ', ' + organisation : ''}
       </Paragraph>
     )}
     {session && session.isoDateTime && session.icalLink && !videoId ? (

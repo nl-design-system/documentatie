@@ -61,6 +61,19 @@
     },
     "language": "nl"
   },
+  "ChenHuiJing": {
+    "name": "Chen Hui Jing",
+    "organisation": "",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-chen-hui-jing.png",
+      "alt": "Chen Hui Jing"
+    },
+    "description": {
+      "nl": "Hui Jing is een self-taught ontwerper en ontwikkelaar die in Singapore woont, en meer van CSS houdt dan de gemiddelde ontwikkelaar. Ze werkt al meer dan 10 jaar aan websites, en haar belangrijkste focus is het maken van front-end interfaces die snel en responsive werken. En ja, Hui Jing is een Chinese voornaam die uit twee woorden bestaat. Ze is vaak te vinden in haar lokale klimhal.",
+      "en": "Hui Jing is a self-taught designer and developer living in Singapore, who loves CSS way more than the average web developer. With more than a decade of experience working on the web, her main focus is building performant and responsive frontend interfaces. And yes, Hui Jing is a two-word Chinese first name. She can often be found spanning routes in some local climbing gym."
+    },
+    "language": "en"
+  },
   "DariceDeCuba": {
     "name": "Darice de Cuba",
     "organisation": "darice.org",
