@@ -7,3 +7,4 @@ Zorg ervoor dat de button mee kan groeien met de tekst. Geef de breedte en de ho
 NL Design System richtlijnen:
 
 - [Let op voorkeursinstellingen voor typografie](/richtlijnen/stijl/typografie/voorkeur)
+- [Zorg ervoor dat letters groot genoeg zijn](/richtlijnen/stijl/typografie/lettergrootte)
