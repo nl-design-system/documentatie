@@ -11,3 +11,4 @@ Hogere verhoudingen mogen natuurlijk altijd. Met de [Contrast checker](/contrast
 ##### NL Design System richtlijnen:
 
 - [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst/)
+- [Geef tekst voldoende kleurcontrast](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/)
