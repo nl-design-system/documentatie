@@ -5,3 +5,4 @@ Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van te
 NL Design System richtlijnen:
 
 - [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
+- [Gebruik SVG voor iconen en geen font](/richtlijnen/stijl/iconen/gebruik-svg)
