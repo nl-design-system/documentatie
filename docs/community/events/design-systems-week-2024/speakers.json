@@ -184,6 +184,18 @@
     },
     "language": "en"
   },
+  "RaoulWittenberns": {
+    "name": "Raoul Wittenberns",
+    "organisation": "Logius",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-raoul-wittenberns.png",
+      "alt": "Raoul Wittenberns"
+    },
+    "description": {
+      "nl": "Raoul is software architect bij het LUX design system van Logius."
+    },
+    "language": "nl"
+  },
   "SteveMesser": {
     "name": "Steve Messer",
     "organisation": "Freelance",
