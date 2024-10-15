@@ -1,4 +1,4 @@
-/*! For license information please see 60ab2a10.54bcfa0a.js.LICENSE.txt */
+/*! For license information please see 60ab2a10.4b5d0ba2.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [97362],
@@ -46,7 +46,7 @@
      id: h.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(l['dsw-session__title']), children: h }),
-      u ? (0, g.jsx)(d.Y, { videoId: u, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), ', ', ' ', p] }),
+      u ? (0, g.jsx)(d.Y, { videoId: u, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), p ? ', ' + p : ''] }),
       b && b.isoDateTime && b.icalLink && !u ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: b.icalLink, download: b.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: b.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(b.isoDateTime)) })] }) }) : null,
       w,
       'nl' === n &&

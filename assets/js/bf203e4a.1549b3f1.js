@@ -1,4 +1,4 @@
-/*! For license information please see bf203e4a.46cd8d61.js.LICENSE.txt */
+/*! For license information please see bf203e4a.1549b3f1.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [3307],
@@ -12,7 +12,7 @@
     o = i(46506);
    const d = { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' },
     l = 'Design Systems Week 2023',
-    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma \u2022 Design Systems Week 2023', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/en/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
+    g = { id: 'community/events/design-systems-week-2023/programma', title: 'Programma \u2022 Design Systems Week 2023', description: 'NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van 2 tot 5 oktober zijn er dagelijks meerdere korte sessies van diverse organisaties over het hoe en waarom van design systems.', source: '@site/docs/community/events/design-systems-week-2023/1-programma.md', sourceDirName: 'community/events/design-systems-week-2023', slug: '/events/design-systems-week-2023/programma', permalink: '/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week-2023/1-programma.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Programma \u2022 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', slug: '/events/design-systems-week-2023/programma' } },
     m = {},
     h = [
      { value: 'Het programma', id: 'het-programma', level: 2 },
@@ -47,7 +47,7 @@
      id: m.toLowerCase().replace(/\s/gi, '-'),
      children: [
       (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(d['dsw-session__title']), children: m }),
-      k ? (0, g.jsx)(l.Y, { videoId: k, width: '100%', height: '100%', className: (0, o.Z)(d['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(d['dsw-session__subtitle']), lead: !0, children: [h.map((e) => e.name).join(' & '), ', ', ' ', p] }),
+      k ? (0, g.jsx)(l.Y, { videoId: k, width: '100%', height: '100%', className: (0, o.Z)(d['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(d['dsw-session__subtitle']), lead: !0, children: [h.map((e) => e.name).join(' & '), p ? ', ' + p : ''] }),
       w && w.isoDateTime && w.icalLink && !k ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: w.icalLink, download: w.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(a.Z, {}) }), (0, g.jsx)('time', { dateTime: w.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(w.isoDateTime)) })] }) }) : null,
       v,
       'nl' === n &&
