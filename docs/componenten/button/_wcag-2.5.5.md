@@ -5,3 +5,4 @@ Zorg ervoor dat de button een minimale grootte heeft van 44 bij 44 pixels. Defin
 NL Design System richtlijnen:
 
 - [Maak aanklikbare formuliervelden groot genoeg](/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/)
+- [Reserveer ruimte tussen interactieve elementen](/richtlijnen/stijl/ruimte/interactieve-elementen)
