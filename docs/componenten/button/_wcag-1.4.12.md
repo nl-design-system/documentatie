@@ -28,4 +28,4 @@ body p {
 
 NL Design System richtlijnen:
 
-* [Let op voorkeursinstellingen voor typografie](/richtlijnen/stijl/typografie/voorkeur)
+- [Let op voorkeursinstellingen voor typografie](/richtlijnen/stijl/typografie/voorkeur)
