@@ -31,4 +31,4 @@ Een andere manier is een svg in de button op te nemen, samen met een visueel ver
 
 - [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
 - [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam)
-- [Iconen toepassen in de code](https://www.nldesignsystem.nl/richtlijnen/stijl/iconen/#toepassen-in-code)
+- [Toepassen van een SVG in code](richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code)
