@@ -4,4 +4,4 @@ Als het label van de button niet uit tekst bestaat maar uit bijvoorbeeld een ico
 
 NL Design System richtlijnen:
 
-* [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content)
+- [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content)
