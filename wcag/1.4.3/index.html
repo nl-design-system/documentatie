@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.7af82a95.css" />
-  <script src="/assets/js/runtime~main.4b517b7c.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9e03959e.js" defer="defer"></script>
   <script src="/assets/js/main.5516723c.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -319,8 +319,44 @@
               </ul>
               <p>Tekst die over een afbeelding staat, moet ook voldoende contrast hebben met de kleuren in de afbeelding er omheen.</p>
               <p>Deze eis geldt niet voor tekst op een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Let er ook op dat bij inzoomen tot 400% en bij verschillende schermgroottes of schermoriëntaties, de tekst over andere delen van een afbeelding of stijlelement kan vallen dan je oorspronkelijk in gedachten had.</p>
+              <p>Bij vergroten van de tekst tot 200% kan de tekst uit het kader lopen. Het kan zijn dat de tekst dan onleesbaar wordt omdat de achtergrondkleur anders is dan die van het kader.</p>
+              <p>Overleg met de bouwer over goede en flexibele oplossingen voor het gebruik van teksten.</p>
+              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Stijl - Kleuren: <a href="/richtlijnen/stijl/kleuren/contrast-tekst" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+               <li class="utrecht-unordered-list__item">Formulieren - Buttons: <a href="/richtlijnen/formulieren/buttons/disabled-submitbuttons" class="utrecht-link utrecht-link--html-a">Disabled submitbuttons</a></li>
+               <li class="utrecht-unordered-list__item">Formulieren - Placeholders: <a href="/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar" class="utrecht-link utrecht-link--html-a">Zorg voor een goed kleurcontrast van de placeholdertekst</a></li>
+               <li class="utrecht-unordered-list__item">Formulieren - Visueel ontwerp: <a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+              </ul>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Een overzicht van goede bronnen en tools voor kleurcontrast staat bij <a href="/richtlijnen/stijl/kleuren/" class="utrecht-link utrecht-link--html-a">Richtlijnen NL Design System voor kleuren</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.figma.com/community/accessibility/contrast" class="utrecht-link utrecht-link--html-a">Figma contrast accessibility plugin tools</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="https://www.deque.com/axe/browser-extensions/" class="utrecht-link utrecht-link--html-a">axe DevTools browser add-on</a>.</li>
+               <li class="utrecht-unordered-list__item"><a href="https://wave.webaim.org/" class="utrecht-link utrecht-link--html-a">WAVE Web Accessibility Evaluation Tools</a>.</li>
+              </ul>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Bepaal het kleurcontrast van tekst ten opzichte van de achtergrond. Hoe je test is afhankelijk van het moment van testen.</p>
+              <p>Neem ook afbeeldingen waar tekst in staat mee, als deze tekst onderdeel is van de content. Hier is de <a href="https://www.tpgi.com/color-contrast-checker/" class="utrecht-link utrecht-link--html-a">Colour Contrast Analyser (CCA)</a> handig, omdat je daarmee een pipetje kan gebruiken als je de kleurcodes niet weet.</p>
+              <p><em class="utrecht-emphasis utrecht-emphasis--stressed">Let op</em>: Deze eis geldt niet voor tekst op een afbeelding van een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.</p>
+              <p>Het NL Design System biedt een makkelijke tool voor het bepalen van kleurcontrast aan. Door het invoeren van de hexadecimale code van de tekstkleur en achtergrondkleur kun je controleren of de tekst voldoet aan WCAG op: <a href="https://nldesignsystem.nl/contrast/?color=%23999999&amp;background-color=%23f8f5f1" class="utrecht-link utrecht-link--html-a">Contrast van kleuren</a>.</p>
+              <p>Voor ontwerpers is er voor Figma een aantal goede tools: <a href="https://www.figma.com/community/accessibility/contrast" class="utrecht-link utrecht-link--html-a">Figma contrast accessibility plugin tools</a>.</p>
+              <p>Voor developers: axe DevTools berekent het kleurcontrast ten opzichte van de tekst in de browser: <a href="https://www.deque.com/axe/browser-extensions/" class="utrecht-link utrecht-link--html-a">axe DevTools browser add-on</a>.</p>
+              <p><em class="utrecht-emphasis utrecht-emphasis--stressed">Let op</em>: Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.</p>
+              <p>Ben je geen designer of developer en test je het kleurcontrast in de browser, dan is WAVE handig: <a href="https://wave.webaim.org/" class="utrecht-link utrecht-link--html-a">WAVE Web Accessibility Evaluation Tools</a>.</p>
+              <p>Verder staan er tools bij de bronnen op <a href="/richtlijnen/stijl/kleuren/" class="utrecht-link utrecht-link--html-a">Richtlijnen NL Design System voor kleuren</a> en als je zoekt op &quot;Contrast Checker&quot; in de zoekmachines vind je vele andere, kies degene die het beste bij jouw manier van werken past.</p>
+              <p>Controleer in de volgende situaties of het kleurcontrast van de tekst voldoende blijft:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.</li>
+               <li class="utrecht-unordered-list__item">Verschillend oriëntaties: <em class="utrecht-emphasis utrecht-emphasis--stressed">portrait</em> en <em class="utrecht-emphasis utrecht-emphasis--stressed">landscape</em>.</li>
+               <li class="utrecht-unordered-list__item">Vergroot de tekst alleen tot 200%.</li>
+               <li class="utrecht-unordered-list__item">Zoom in tot 400%.</li>
+               <li class="utrecht-unordered-list__item">Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de tekst.</li>
+               <li class="utrecht-unordered-list__item">Controleer het kleurcontrast van placeholders.</li>
+               <li class="utrecht-unordered-list__item">Controleer de verschillende weergave van buttons en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, al eerder bezocht.</li>
+               <li class="utrecht-unordered-list__item">Vergeet ook de skiplinks niet.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="aanvullingen-of-opmerkingen" class="utrecht-heading-2">Aanvullingen of opmerkingen?</h2>
@@ -355,7 +391,9 @@
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
             </ul>
            </div>
