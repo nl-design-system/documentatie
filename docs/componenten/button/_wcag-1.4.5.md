@@ -4,4 +4,4 @@ Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van te
 
 NL Design System richtlijnen:
 
-- [Afbeeldingen als buttons](https://www.nldesignsystem.nl/richtlijnen/formulieren/buttons/afbeelding-als-button)
+- [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)

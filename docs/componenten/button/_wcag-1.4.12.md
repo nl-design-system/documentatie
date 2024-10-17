@@ -25,3 +25,9 @@ body p {
 }
 </style>
 ```
+
+NL Design System richtlijnen:
+
+- [Let op voorkeursinstellingen voor typografie](/richtlijnen/stijl/typografie/voorkeur)
+- [Zorg ervoor dat letters groot genoeg zijn](/richtlijnen/stijl/typografie/lettergrootte)
+- [Zorg voor een comfortabele regelafstand](/richtlijnen/stijl/typografie/regelafstand/)

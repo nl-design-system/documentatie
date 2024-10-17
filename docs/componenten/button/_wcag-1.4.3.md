@@ -8,6 +8,7 @@ De contrastverhouding van de tekstkleur in de button met de achtergrondkleur is 
 
 Hogere verhoudingen mogen natuurlijk altijd. Met de [Contrast checker](/contrast/) kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.
 
-##### NL Design System richtlijnen:
+NL Design System richtlijnen:
 
+- [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst/)
 - [Geef tekst voldoende kleurcontrast](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/)
