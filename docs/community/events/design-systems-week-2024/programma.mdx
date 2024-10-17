@@ -11,7 +11,12 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/ds
 
 import DocusaurusLink from "@docusaurus/Link";
 import { IconCalendarPlus, IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Link,
+  Paragraph,
+} from "@utrecht/component-library-react/dist/css-module";
 import sessions from "./sessions.json";
 import speakers from "./speakers.json";
 import DSWSession from "../../../../src/components/DSWSession";
@@ -268,6 +273,26 @@ Internationalisatie is meer dan alleen het vertalen van content op je website in
 <Paragraph>
   In zijn presentatie laat Thijs verschillende strategieën zien om teams efficient up to date te krijgen met de laatste
   versie van het design system.
+</Paragraph>
+
+</DSWSession>
+
+<DSWSession title="Live coden met Robbert" speakers={[speakers.RobbertBroersma]} organisation="NL Design System" headingLevel={2} captioned captionLink="https://text-on-tap.live/index.html#e=k2TzZqdqZZ" session={sessions.find((session)=> session.uuid === 'A980E371-ED8E-4EA4-A22C-CA1A212150F7')}>
+
+<Paragraph>
+  Bryan de Jong liet het al even zien in de Heartbeat, er zijn bij NL Design System al een heleboel componenten
+  beschikbaar om in meerdere huisstijlen te gebruiken. Maar hoe moeilijk is het eigenlijk om een nieuw project met NL
+  Design System te beginnen? Wat als je al een bestaand project hebt, kun je dan stap-voor-stap migreren met de
+  componenten die de community beschikbaar maakt?
+</Paragraph>
+
+<Paragraph>
+  In zijn presentatie laat Robbert live zien hoe je een pagina uit Figma overneemt in code, welke stappen neemt hij, hoe
+  ziet het er dan uit? Zelfs de{" "}
+  <Link href="https://nl-design-system.github.io/onboarding/" target="_new">
+    slides voor de presentatie
+  </Link>{" "}
+  heeft hij met NL Design System gemaakt!
 </Paragraph>
 
 </DSWSession>
