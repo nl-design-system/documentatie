@@ -1,5 +1,5 @@
 ---
-title: Bestaand of nieuw component gebruiken
+title: Bestaand of nieuw component gebruiken · Developer · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Component kiezen

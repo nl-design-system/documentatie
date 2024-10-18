@@ -8,6 +8,7 @@ import nldsPrismTheme from './nldsPrism';
 
 const config: Config = {
   title: 'NL Design System',
+  titleDelimiter: '·',
   tagline: 'Eén design system voor alle huisstijlen',
   url: 'https://nldesignsystem.nl',
   baseUrl: '/',

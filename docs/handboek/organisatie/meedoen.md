@@ -1,5 +1,5 @@
 ---
-title: Meedoen als organisatie
+title: Meedoen als organisatie · Organisatie · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Meedoen

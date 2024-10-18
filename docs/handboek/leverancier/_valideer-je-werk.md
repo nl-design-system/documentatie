@@ -1,5 +1,5 @@
 ---
-title: Werk je met NL Design System?
+title: Werk je met NL Design System? · Leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Valideren

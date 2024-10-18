@@ -1,5 +1,5 @@
 ---
-title: Meewerken aan NL Design System
+title: Meewerken aan NL Design System · Developer · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Meewerken

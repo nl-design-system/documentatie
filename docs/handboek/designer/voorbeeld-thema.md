@@ -1,5 +1,5 @@
 ---
-title: Voorbeeld thema
+title: Voorbeeld thema · Designer · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Voorbeeld thema
