@@ -1,5 +1,5 @@
 ---
-title: Component uitbreiden
+title: Component uitbreiden · Developer · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Component uitbreiden
@@ -10,4 +10,4 @@ keywords:
   - bijdragen
 ---
 
-# Hoe kun je een bestaand component uitbreiden
+# Hoe kun je een bestaande component uitbreiden

@@ -1,5 +1,5 @@
 ---
-title: Programma • Design Systems Week 2023
+title: Programma · Design Systems Week 2023
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Programma

@@ -1,5 +1,5 @@
 ---
-title: Tijdschema • Design Systems Week 2023
+title: Tijdschema · Design Systems Week 2023
 description: Tijdschema per dag voor de Design Systems Week 2023
 hide_table_of_contents: true
 sidebar_label: Tijdschema

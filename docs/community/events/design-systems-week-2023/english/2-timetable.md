@@ -1,5 +1,5 @@
 ---
-title: Timetable • Design Systems Week 2023
+title: Timetable · Design Systems Week 2023
 description: Timetable for all English talks of the Design Systems Week 2023
 hide_table_of_contents: true
 hide_title: true
