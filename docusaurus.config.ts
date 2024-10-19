@@ -81,14 +81,6 @@ const config: Config = {
     colorMode: {
       disableSwitch: true,
     },
-    announcementBar: {
-      id: 'dsw-24',
-      content:
-        'Het is eindelijk Design Systems Week 2024! Elke dag korte, online talks: <a style="color: inherit" href="/events/design-systems-week-2024/programma">bekijk het programma</a>.',
-      backgroundColor: '#B8E6FF',
-      textColor: '#000',
-      isCloseable: false,
-    },
     algolia: {
       // The application ID provided by Algolia
       appId: 'HS7BGF6EOX',
