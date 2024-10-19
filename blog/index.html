@@ -28,7 +28,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.7af82a95.css" />
   <script src="/assets/js/runtime~main.2d16aefb.js" defer="defer"></script>
-  <script src="/assets/js/main.ffadef7b.js" defer="defer"></script>
+  <script src="/assets/js/main.32fd55f0.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -51,30 +51,18 @@
    })(),
     (function () {
      try {
-      const a = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of a)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith('docusaurus-data-')) {
-        var n = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(n, e);
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     'data-announcement-bar-initially-dismissed',
-     (function () {
-      try {
-       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_kH_B" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
-    <div class="announcementBar_s0pr" style="background-color: #b8e6ff; color: #000" role="banner">
-     <div class="content_zf74 announcementBarContent_dpRF">Het is eindelijk Design Systems Week 2024! Elke dag korte, online talks: <a style="color: inherit" href="/events/design-systems-week-2024/programma">bekijk het programma</a>.</div>
-    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>

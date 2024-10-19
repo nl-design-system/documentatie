@@ -30,7 +30,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.aa295c71.css" />
   <script src="/en/assets/js/runtime~main.1cb10fa6.js" defer="defer"></script>
-  <script src="/en/assets/js/main.f341334d.js" defer="defer"></script>
+  <script src="/en/assets/js/main.d1ee36c5.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -53,30 +53,18 @@
    })(),
     (function () {
      try {
-      const a = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of a)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith('docusaurus-data-')) {
-        var n = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(n, e);
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     'data-announcement-bar-initially-dismissed',
-     (function () {
-      try {
-       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Skip to main content"><a class="skipToContent_kH_B" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div>
-    <div class="announcementBar_s0pr" style="background-color: #b8e6ff; color: #000" role="banner">
-     <div class="content_zf74 announcementBarContent_dpRF">Het is eindelijk Design Systems Week 2024! Elke dag korte, online talks: <a style="color: inherit" href="/events/design-systems-week-2024/programma">bekijk het programma</a>.</div>
-    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo_htHk" href="/en/"><b class="navbar__title navbar-logo__title_yhW8">NL Design System</b></a>
@@ -112,7 +100,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content_LJMP">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Community</div>
