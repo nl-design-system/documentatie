@@ -152,26 +152,16 @@ Doel: De component wordt beschikbaar in de [NL Design System Figma bibliotheek](
 
 [Neem contact op met het kernteam](/project/kernteam) om deze stap uit te voeren.
 
-Het kernteam neemt de component over uit de Figma omgeving van jouw organisatie, inclusief bijbehorende design tokens, en plaatst deze in de NL Design System Figma bibliotheek. Daarbij wordt de component voorzien van het Voorbeeld thema. Als er geen Figma component is, dan ontwikkelt het kernteam dit zelf.
+- Het kernteam neemt de component over uit de Figma omgeving van jouw organisatie, inclusief bijbehorende design tokens, en plaatst deze in de NL Design System Figma bibliotheek. Daarbij wordt de component voorzien van het Voorbeeld thema.
+- Heeft jouw organisatie geen Figma component? Dan ontwikkelt het kernteam deze zelf.
 
 Organisaties die de NL Design System Figma bibliotheek vanaf dat moment dupliceren, krijgen de component direct meegeleverd. Organisaties die de NL Design System Figma bibliotheek al hadden gedupliceerd, worden tijdens de volgende 'Bieb sync video' geïnformeerd over hoe ze dit component ook kunnen overnemen.
 
-Kopieer de URL van de component pagina door in Figma met rechtermuisknop op de component in de sidebar te klikken (Copy link to page). Kun je dat niet doen, vraag dan iemand met edit rechten om de URL.
+- Kopieer de URL van de component pagina door in Figma met rechtermuisknop op de component in de sidebar te klikken (Copy link to page).
+- Plak de URL in de kolom 'Figma URL' van het [Community projectbord](https://github.com/orgs/nl-design-system/projects/29/views/1).
+- Had de organisatie zelf geen Figma component? Plak de URL dan óók in het projectbord voor deze organisatie.
 
 **🚩 Checkpoint**: Figma URL
-
-## Informatie van de component beschikbaar op nldesignsystem.nl
-
-Doel: Op nldesignsystem.nl zijn er verwijzingen beschikbaar naar de component met het Voorbeeld thema.
-
-Het kernteam maakt de laatste informatie van de GitHub projectborden beschikbaar in het npm pakketje `@nl-design-system/component-progress`.
-
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken op [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
-- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in een nieuwe branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
-- Push je branch naar GitHub en maak er een pull request voor aan.
-
-**🚩 Checkpoint**: nldesignsystem.nl
 
 ## Beschikbaar in de NL Design System Component assessment (Figma)
 
@@ -204,6 +194,19 @@ Help je mee hem door de Candidate stappen te krijgen?
 
 **🚩 Checkpoint**: Status naar Community
 
+## Informatie van de component beschikbaar op nldesignsystem.nl
+
+Doel: Op nldesignsystem.nl zijn er verwijzingen beschikbaar naar de component.
+
+Het kernteam maakt de laatste informatie van de GitHub projectborden beschikbaar in het npm pakketje `@nl-design-system/component-progress`.
+
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken op [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in een nieuwe branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
+- Push je branch naar GitHub en maak er een pull request voor aan.
+
+**🚩 Checkpoint**: nldesignsystem.nl
+
 ## Gebruik van component uit de community gepromoot
 
 Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.
@@ -214,11 +217,6 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 - We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat het component pas na die statusaanpassing dan als “Community” op de website staat.
 
 **🚩 Checkpoint**: Promotie
-
-## Website geupdate met nieuwe status
-
-- [@nl-design-system/component-progress](https://www.npmjs.com/package/@nl-design-system/component-progress) updaten met [GitHub action](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml).
-- Maak een Pull Request in de documentatie repository met de geupdate index: `pnpm install --save-dev @nl-design-system/component-progress@latest`
 
 ### Slack
 
