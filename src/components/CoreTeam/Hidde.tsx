@@ -4,19 +4,14 @@ import { TeamMember } from './TeamMember';
 
 const Hidde: TeamMember = {
   name: 'Hidde de Vries',
-  role: 'Public Relations Lead & Toegankelijkheidsspecialist',
+  role: 'Developer Relations Developer',
   slack: { mention: '@Hidde', id: 'UA17NJHTR' },
   Description: () => (
     <>
       <Paragraph>
-        Hidde is als PR lead bij NL Design System verantwoordelijk voor de communicatiestrategie, bijeenkomsten als de
-        Heartbeat en Design Systems Week en de promotie van NL Design System bij organisaties en hun design system
-        teams.
-      </Paragraph>
-      <Paragraph>
-        Hij heeft zich de afgelopen jaren intensief beziggehouden met design systems en digitale toegankelijkheid, dat
-        laatste onder meer bij het W3C. In zijn rol van toegankelijkheidsspecialist helpt hij om NL Design System
-        componenten, documentatie en voorbeelden zo toegankelijk mogelijk te maken.
+        Hidde maakt als Developer Relations Developer het gebruik van NL Design System makkelijker via het verbeteren
+        van documentatie, voorbeelden en de website. Voorheen was hij als PR lead verantwoordelijk voor de
+        communicatiestrategie, bijeenkomsten en de promotie van NL Design System.
       </Paragraph>
       <Paragraph>
         Hij wordt blij van espresso tonics en van heldere, to-the-point uitleg die mensen duidelijkheid geeft. Maar wel
