@@ -1,0 +1,22 @@
+details h3 {
+  display: inline-block;
+}
+
+details div {
+  border: solid 1px #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+details dl {
+  display: grid;
+  grid-gap: 4px 16px;
+  grid-template-columns: max-content;
+}
+details dt {
+  font-weight: bold;
+}
+details dd {
+  margin: 0;
+  grid-column-start: 2;
+}
