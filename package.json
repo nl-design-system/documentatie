@@ -90,7 +90,7 @@
     "@mdx-js/react": "3.0.1",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.151",
-    "@nl-design-system/component-progress": "1.0.1-alpha.70",
+    "@nl-design-system/component-progress": "1.0.1-alpha.71",
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
     "@playwright/test": "1.47.1",
     "@types/node": "22.5.5",
