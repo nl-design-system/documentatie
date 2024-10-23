@@ -2,9 +2,9 @@
 
 Betekenisvolle opmaak (semantiek) zorgt ervoor dat de teksten consistent worden weergegeven en het doel begrijpelijk is voor screenreadergebruikers.
 
-## Kopjes
+## Koppen
 
-Gebruik kopjes ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat kopjes verschillen van body text door een combinatie van grootte, gewicht (bijvoorbeeld ‘vetgedrukt’), lettertype en/of kleur. Headings bieden de uitgelezen mogelijkheid om branding door te laten vloeien binnen een webpagina.
+Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat kopjes verschillen van body text door een combinatie van grootte, gewicht (bijvoorbeeld ‘vetgedrukt’), lettertype en/of kleur. Headings bieden de uitgelezen mogelijkheid om branding door te laten vloeien binnen een webpagina.
 
 ## ‘Justified’ tekst
 
