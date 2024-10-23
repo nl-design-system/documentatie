@@ -162,12 +162,14 @@ Beperk hoeveel lettertypes en lettertype variaties je gebruikt. Één of twee is
 
 Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 
+- [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
 - [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
 - [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif)
+- [Lexend](https://fonts.google.com/specimen/Lexend)
 - [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
 - [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif)
-- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
-- [Source Serif Pro](https://fonts.google.com/specimen/Source+Serif+Pro)
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
+- [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
 - [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
 Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](/project/kernteam) dan vullen we de lijst verder aan.
