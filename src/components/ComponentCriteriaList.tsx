@@ -1,6 +1,6 @@
 /**
  * ComponentCriteriaList generates a details/summary with acceptance criteria for a component.
- * The criteria are grouped by the kind of test, defines in testList.
+ * The criteria are grouped by the kind of test, defines in testCategory.
  * Version: beta.
  *
  * To-do:
@@ -37,12 +37,12 @@ export interface CriteriaListItemProps {
 /**
  * Defines the variables for the kind of test.
  *
- * testList: the kind of test to list in the details/summary, displayed as H3 for this list.
+ * testCategory: the kind of test to list in the details/summary, displayed as H3 for this list.
  * items: the test items.
  */
 export interface CriteriaListProps {
   headingLevel: HeadingProps['level'];
-  testList: string;
+  testCategory: string;
   items: CriteriaListItemProps[];
 }
 
@@ -64,8 +64,12 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
         <dd>
           <Link href={`/wcag/${sc}`}>{scTitle}</Link>
         </dd>
-        <dt>Status</dt>
-        <dd>{status}</dd>
+        {status && (
+          <>
+            <dt>Status</dt>
+            <dd>{status}</dd>
+          </>
+        )}
       </dl>
       {component}
     </div>
@@ -73,13 +77,13 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
 };
 
 /**
- * CriteriaList renders the details, summary for the testList.
+ * CriteriaList renders the details, summary for the testCategory.
  *
  */
-export const CriteriaList = ({ testList, items }: CriteriaListProps) => (
+export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
   <details className={style['task-list']}>
     <summary>
-      <h3>{testList}</h3>
+      <h3>{testCategory}</h3>
     </summary>
     {items.map((item, index) => (
       <CriteriaListItem key={index} {...item} />
