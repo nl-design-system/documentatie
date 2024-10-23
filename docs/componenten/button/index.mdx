@@ -40,13 +40,13 @@ keywords:
 
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { CriteriaList } from '@site/src/components/ComponentCriteriaList';
 import {
 DefinitionOfDone,
 HelpImproveComponent,
 Implementations,
 Introduction,
 } from "@site/src/components/ComponentPage";
-import { WcagList } from '@site/src/components/WcagList';
 import Wcag111 from './\_wcag-1.1.1.md';
 import Wcag1411 from './\_wcag-1.4.11.md';
 import Wcag1412 from './\_wcag-1.4.12.md';
@@ -83,90 +83,138 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 ## Acceptatiecriteria
 
-### WCAG 2 Succescriterium
+{/* headingLevel is the heading of the items, the list is hardcoded as an H3 for now. */}
 
-<WcagList
+<CriteriaList
   headingLevel={4}
+  testCategory="Toegankelijkheid algemeen"
   items={[
     {
-      sc: "1.1.1",
-      checked: true,
-      description: <Wcag111 />,
-    },
-    {
-      sc: "1.4.3",
-      checked: true,
-      description: <Wcag143 />,
-    },
-    {
-      sc: "1.4.4",
-      checked: true,
-      description: <Wcag144 />,
-    },
-    {
-      sc: "1.4.5",
-      checked: true,
-      description: <Wcag145 />,
-    },
-    {
-      sc: "1.4.11",
-      checked: true,
-      description: <Wcag1411 />,
-    },
-    {
-      sc: "1.4.12",
-      checked: true,
-      description: <Wcag1412 />,
-    },
-    {
-      sc: "2.1.1",
-      checked: true,
-      description: <Wcag211 />,
-    },
-    {
-      sc: "2.4.6",
-      checked: true,
-      description: <Wcag246 />,
-    },
-    {
-      sc: "2.4.7",
-      checked: true,
-      description: <Wcag247 />,
-    },
-    {
-      sc: "2.4.13",
-      checked: true,
-      description: <Wcag2413 />,
-    },
-    {
-      sc: "2.5.2",
-      checked: true,
-      description: <Wcag252 />,
-    },
-    {
+      title: "De zichtbare naam van de button is gelijk aan de toegankelijke naam",
       sc: "2.5.3",
-      checked: true,
-      description: <Wcag253 />,
+      status: "",
+      component: <Wcag253 />,
     },
     {
+      title: "De button heeft een minimale grootte van 44 bij 44 pixels",
       sc: "2.5.5",
-      checked: true,
-      description: <Wcag255 />,
+      status: "",
+      component: <Wcag255 />,
     },
     {
+      title:
+        "Als een buttontekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
       sc: "3.1.2",
-      checked: true,
-      description: <Wcag312 />,
+      status: "",
+      component: <Wcag312 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "De contrastverhouding van de tekstkleur in de button met de achtergrondkleur is hoog genoeg.",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
     },
     {
+      title:
+        "Als het zichtbare label van de button een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+    },
+    {
+      title: "Wanneer een button de toetsenbordfocus krijgt is de focus zichtbaar",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
+      title: "De button heeft een goed zichtbare focusindicator",
+      sc: "2.4.13",
+      status: "",
+      component: <Wcag2413 />,
+    },
+    {
+      title: "Buttons met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
       sc: "3.2.4",
-      checked: true,
-      description: <Wcag324 />,
+      status: "",
+      component: <Wcag324 />,
+    },
+  ]}
+/>
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
     },
     {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid toetsenbord"
+  items={[
+    {
+      title: "Je kunt de button focussen met de tabtoets en activeren met de spacebar en de entertoets",
+      sc: "2.1.1",
+      status: "",
+      component: <Wcag211 />,
+    },
+    {
+      title:
+        "Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken",
+      sc: "2.5.2",
+      status: "",
+      component: <Wcag252 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid screenreader"
+  items={[
+    {
+      title: "Als het label van een button uit een icoon bestaat, dan heeft deze een goed tekstalternatief",
+      sc: "1.1.1",
+      status: "",
+      component: <Wcag111 />,
+    },
+    {
+      title: "Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title: "Het label van de button maakt kort en bondig duidelijk waar de button voor dient",
+      sc: "2.4.6",
+      status: "",
+      component: <Wcag246 />,
+    },
+    {
+      title:
+        "De button heeft een rol van button en een toegankelijke naam die duidelijk maakt waar de button voor dient",
       sc: "4.1.2",
-      checked: true,
-      description: <Wcag412 />,
+      status: "",
+      component: <Wcag412 />,
     },
   ]}
 />
