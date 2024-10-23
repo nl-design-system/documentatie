@@ -1,26 +1,59 @@
+/**
+ * ComponentCriteriaList generates a details/summary with acceptance criteria for a component.
+ * The criteria are grouped by the kind of test, defines in testList.
+ * Version: beta.
+ *
+ * To-do:
+ *  Find a way to make it easier to add and change content for non developers like simplify the item arrays and the import of snippets.
+ *  Display the status (we still need to agree on how).
+ *  Store snippets in a more convenient directory structure for recycling.
+ *  Make rendering WCAG and status conditional in the <dl>.
+ *  Add an option to add more than one WCAG-success criteria.
+ *  Heading level CriteriaList is now hardcoded as an h3, should be a variable.
+ *  Heading level CriteriaListItem is now hardcoded as an h4, should be a variable.
+ */
+
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 import style from './ComponentCriteriaList.module.css';
 import { successCriteriaMap } from './wcag22';
 
+/**
+ * CriteriaListItemProps defines expected variables for the item to test.
+ *
+ * title: H4 heading: A test to perform on a component.
+ * sc: related succescriterium, not required.
+ * component: the snippet with the description of the test.
+ * status: passes/fails/conditional or any other string, not required.
+ */
 export interface CriteriaListItemProps {
-  title: string;
-  sc: string;
-  component?: string;
-  status: string;
   headingLevel: HeadingProps['level'];
+  title: string;
+  sc?: string;
+  component: string;
+  status?: string;
 }
 
+/**
+ * Defines the variables for the kind of test.
+ *
+ * testList: the kind of test to list in the details/summary, displayed as H3 for this list.
+ * items: the test items.
+ */
 export interface CriteriaListProps {
   headingLevel: HeadingProps['level'];
   testList: string;
   items: CriteriaListItemProps[];
 }
 
-export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 3 }: CriteriaListItemProps) => {
+/**
+ * CriteriaListItem generates the test item.
+ *
+ */
+export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 4 }: CriteriaListItemProps) => {
   const data = successCriteriaMap.get(sc);
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
-  // const description = require('./appelepap.mdx');
+
   return (
     <div>
       <Heading appearance="utrecht-heading-4" level={headingLevel}>
@@ -39,13 +72,17 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
   );
 };
 
-export const CriteriaList = ({ headingLevel, testList, items }: CriteriaListProps) => (
+/**
+ * CriteriaList renders the details, summary for the testList.
+ *
+ */
+export const CriteriaList = ({ testList, items }: CriteriaListProps) => (
   <details className={style['task-list']}>
     <summary>
       <h3>{testList}</h3>
     </summary>
     {items.map((item, index) => (
-      <CriteriaListItem key={index} headingLevel={headingLevel} {...item} />
+      <CriteriaListItem key={index} {...item} />
     ))}
   </details>
 );

@@ -83,6 +83,8 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 ## Acceptatiecriteria
 
+{/* headingLevel is the heading of the items, the list is hardcoded as an H3 for now. */}
+
 <CriteriaList
   headingLevel={4}
   testList="Toegankelijkheid algemeen"
@@ -90,128 +92,128 @@ export const component = componentProgress.find((item) => item.number === issueN
     {
       title: "De zichtbare naam van de button is gelijk aan de toegankelijke naam",
       sc: "2.5.3",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag253 />,
     },
     {
       title: "De button heeft een minimale grootte van 44 bij 44 pixels",
       sc: "2.5.5",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag255 />,
     },
     {
       title:
         "Als een buttontekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
       sc: "3.1.2",
-      status: "Conditioneel",
+      status: "",
       component: <Wcag312 />,
     },
   ]}
 />
 
 <CriteriaList
-  headingLevel={4}
+  headingLevel={3}
   testList="Toegankelijkheid visueel ontwerp"
   items={[
     {
       title: "De contrastverhouding van de tekstkleur in de button met de achtergrondkleur is hoog genoeg.",
       sc: "1.4.3",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag143 />,
     },
     {
       title:
         "Als het zichtbare label van de button een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.",
       sc: "1.4.11",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag1411 />,
     },
     {
       title: "Wanneer een button de toetsenbordfocus krijgt is de focus zichtbaar",
       sc: "2.4.7",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag247 />,
     },
     {
       title: "De button heeft een goed zichtbare focusindicator",
       sc: "2.4.13",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag2413 />,
     },
     {
       title: "Buttons met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
       sc: "3.2.4",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag324 />,
     },
   ]}
 />
 <CriteriaList
-  headingLevel={4}
+  headingLevel={3}
   testList="Toegankelijkheid zoom en herschalen"
   items={[
     {
       title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
       sc: "1.4.4",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag144 />,
     },
     {
       title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
       sc: "1.4.12",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag1412 />,
     },
   ]}
 />
 
 <CriteriaList
-  headingLevel={4}
+  headingLevel={3}
   testList="Toegankelijkheid toetsenbord"
   items={[
     {
       title: "Je kunt de button focussen met de tabtoets en activeren met de spacebar en de entertoets",
       sc: "2.1.1",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag211 />,
     },
     {
       title:
         "Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken",
       sc: "2.5.2",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag252 />,
     },
   ]}
 />
 
 <CriteriaList
-  headingLevel={4}
+  headingLevel={3}
   testList="Toegankelijkheid screenreader"
   items={[
     {
       title: "Als het label van een button uit een icoon bestaat, dan heeft deze een goed tekstalternatief",
       sc: "1.1.1",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag111 />,
     },
     {
       title: "Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst",
       sc: "1.4.5",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag145 />,
     },
     {
       title: "Het label van de button maakt kort en bondig duidelijk waar de button voor dient",
       sc: "2.4.6",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag246 />,
     },
     {
       title:
         "De button heeft een rol van button en een toegankelijke naam die duidelijk maakt waar de button voor dient",
       sc: "4.1.2",
-      status: "Nog te bepalen of we dit gaan gebruiken",
+      status: "",
       component: <Wcag412 />,
     },
   ]}
