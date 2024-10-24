@@ -24,7 +24,15 @@ Organisaties die een component bij willen dragen kunnen het [Stappenplan voor or
 Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.
 
 Er kunnen meerdere community implementaties zijn die volledig voldoen, maar voor dit bord kijken we naar een component die het meest ver is. De component heeft een Community status als er minimaal één implementatie beschikbaar is die aan alle checkpoints voldoet.
-Voordat je begint kies je het [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten) waar het component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar "tenminste één organisatie" mee te beoordelen.
+Voordat je begint kies je het [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten) waar de component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar "tenminste één organisatie" mee te beoordelen.
+
+## Welke organisatie
+
+Doel: Het wordt duidelijk naar welk community component is gekeken.
+
+Selecteer naar welk organisatiebord je hebt gekeken voor de Definition of Done van 'Community' status.
+
+**🚩 Checkpoint**: Welke bord
 
 ## Beschikbaar in CSS
 
@@ -52,13 +60,16 @@ De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.
 
 **🚩 Checkpoint**: Storybook (CSS)
 
-## Implementatie voldoet aan naam en doel uit de GitHub Discussion
+## Implementatie voldoet aan naam en beschrijving uit de GitHub Discussion
 
 Doel: De component is de component dat we als kernteam verwachten.
 
-In de GitHub Discussion van de component staan de naam en het doel genoteerd. Check of de implementatie van jouw organisatie hieraan voldoet. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+In de GitHub Discussion van de component staan de naam en de beschrijving genoteerd. Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de Storybook URL die in het Communitybord is ingevuld.
 
-Noteer de implementatie bijvoorbeeld `utrecht-paragraph` of `ams-paragraph` in de kolom voor 'Implementatie'.
+Vervolgens heb je twee opties:
+
+- Komt de naam van de component overeen met de naam uit de Github Discussion? Dan selecteer je 'Done'.
+- Komt de naam niet overeen maar voldoet de implementatie verder wel? Dan selecteer je 'Done met Alias'.
 
 **Tip!** Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
 
@@ -211,7 +222,7 @@ Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De re
 Deze stap kan enkel worden uitgevoerd door het kernteam.
 
 - Voeg de component toe aan het `Communicatie & PR` project. Zo wordt hij meegenomen in de volgende Heartbeat, Nieuwsbrief en op LinkedIn
-- We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat het component pas na die statusaanpassing dan als “Community” op de website staat.
+- We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat de component pas na die statusaanpassing dan als “Community” op de website staat.
 
 **🚩 Checkpoint**: Promotie
 
@@ -227,9 +238,9 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 ```md
 ✨ {naam-component} is nu Community ✨
 
-[Bekijk {naam-component}]({link-naar-component-op-nldesignsystem.nl}): {doel van het component}
+[Bekijk {naam-component}]({link-naar-component-op-nldesignsystem.nl}): {beschrijving van de component}
 
-Help ons de component naar Candidate te brengen door ons in de [GitHub Discussion voor het {naam-component} component]({link-naar-discussion}) te laten weten waar je het gebruikt.
+Help ons de component naar Candidate te brengen door ons in de [GitHub Discussion voor de {naam-component} component]({link-naar-discussion}) te laten weten waar je het gebruikt.
 ```
 
 ### Communityleden selecteren voor credits
@@ -238,7 +249,7 @@ Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoor
 
 ### Nieuwe status bevestigen met credit
 
-Plaats na het selecteren een comment in het issue voor dit component. Meld dat het component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:
+Plaats na het selecteren een comment in het issue voor dit component. Meld dat de component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:
 
 ```md
 Met dank aan {persoon/personen} van {organisatie} is {component} nu beschikbaar in de Community!
