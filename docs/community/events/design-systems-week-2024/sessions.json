@@ -11,7 +11,8 @@
     "subject": "Testing UI",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui",
     "icalLink": "/dsweek-2024/gert-hengeveld.ics",
-    "language": { "abbr": "EN", "description": "English" }
+    "language": { "abbr": "EN", "description": "English" },
+    "videoId": "0_Xq74LkMY4"
   },
   {
     "uuid": "3A80C3A1-4657-42F8-908D-F9B7565CAF69",
@@ -25,6 +26,7 @@
     "subject": "Design Systems: Choose your own adventure",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure",
     "icalLink": "/dsweek-2024/geri-reid.ics",
+    "videoId": "lAy-dOhw2bU",
     "language": { "abbr": "EN", "description": "English" }
   },
   {
@@ -38,6 +40,7 @@
     ],
     "subject": "Werken op schaal",
     "icalLink": "/dsweek-2024/thijs-louisse.ics",
+    "videoId": "5yThQMZ4cs0",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#werken-op-schaal",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
@@ -52,6 +55,7 @@
     ],
     "subject": "De voordelen van open werken met design systems bij de overheid",
     "icalLink": "/dsweek-2024/mike-gifford.ics",
+    "videoId": "lxLmK2NOFd4",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid",
     "language": { "abbr": "EN", "description": "English" }
   },
@@ -67,6 +71,7 @@
     "subject": "Tips voor toegankelijke diensten",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening",
     "icalLink": "/dsweek-2024/kim-denie.ics",
+    "videoId": "0k0C0pRFaP8",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -93,6 +98,7 @@
     "subject": "Heartbeat: Design Systems Week editie",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#heartbeat:-de-design-systems-week-lightning-talks-editie",
     "icalLink": "/dsweek-2024/heartbeat.ics",
+    "videoId": "jMMxxZxCB4o",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -106,6 +112,7 @@
     ],
     "subject": "Je eerste gebruikersonderzoek doen, hoe doe je dat?",
     "icalLink": "/dsweek-2024/jeroen-du-chatinier.ics",
+    "videoId": "m-qn8NQ1xh0",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
@@ -143,6 +150,7 @@
     "subject": "Vlaams Design System: 10 jaar lessons learned",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#vlaams-design-system:-10-jaar-lessons-learned",
     "icalLink": "/dsweek-2024/vlaanderen.ics",
+    "videoId": "RN7BDhoU8Dc",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -157,6 +165,7 @@
     "subject": "Unmeasurable Accessibility: Beyond conformance",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance",
     "icalLink": "/dsweek-2024/darice-de-cuba.ics",
+    "videoId": "LckUy3t7mUg",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -171,6 +180,7 @@
     "subject": "Wat je allemaal niet weet over je CSS",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css",
     "icalLink": "/dsweek-2024/bart-veneman.ics",
+    "videoId": "ySJjj9CISD4",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -185,6 +195,7 @@
     "subject": "Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams",
     "icalLink": "/dsweek-2024/amy-cole.ics",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams",
+    "videoId": "WYTKw_l3IXE",
     "language": { "abbr": "EN", "description": "English" }
   },
   {
@@ -196,8 +207,9 @@
         "organisation": "NL Design System"
       }
     ],
-    "subject": "Live coden",
+    "subject": "Aan de slag met NL Design System",
     "icalLink": "/dsweek-2024/robbert-broersma.ics",
+    "videoId": "ZozbnQpcBu8",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#live-coden-met-robbert",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
@@ -213,6 +225,7 @@
     "subject": "CSS for internationalisation",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#css-for-internationalisation",
     "icalLink": "/dsweek-2024/chen-hui-jing.ics",
+    "videoId": "wpypfDnrw78",
     "language": { "abbr": "EN", "description": "Engels" }
   },
   {
@@ -227,6 +240,7 @@
     "subject": "Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen",
     "icalLink": "/dsweek-2024/lotte-bijl.ics",
+    "videoId": "GMmDJOMBUx0",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -241,6 +255,7 @@
     "subject": "Common direction, boring magic",
     "sessionLink": "https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic",
     "icalLink": "/dsweek-2024/steve-messer.ics",
+    "videoId": "1xhZnqF6dc8",
     "language": { "abbr": "EN", "description": "Engels" }
   }
 ]

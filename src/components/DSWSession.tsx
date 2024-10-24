@@ -7,6 +7,9 @@ import style from './DSWSession.module.css';
 import { Session } from './SessionTable';
 import { VideoPlayer } from './VideoPlayer';
 
+const date = new Date();
+const dateNow = date.toISOString();
+
 interface DSWSessionProps {
   headingLevel: 2 | 3 | 4 | 5 | 6;
   title: string;
@@ -49,15 +52,20 @@ export const DSWSession = ({
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
       {title}
     </Heading>
-    {videoId ? (
-      <VideoPlayer videoId={videoId} width="100%" height="100%" className={clsx(style['dsw-session__video'])} />
+    {videoId || session?.videoId ? (
+      <VideoPlayer
+        videoId={videoId ? videoId : session?.videoId}
+        width="100%"
+        height="100%"
+        className={clsx(style['dsw-session__video'])}
+      />
     ) : (
       <Paragraph className={clsx(style['dsw-session__subtitle'])} lead>
         {speakers.map((speaker) => speaker.name).join(' & ')}
         {organisation ? ', ' + organisation : ''}
       </Paragraph>
     )}
-    {session && session.isoDateTime && session.icalLink && !videoId ? (
+    {session && session.isoDateTime && session.isoDateTime > dateNow && session.icalLink && !videoId ? (
       <Paragraph>
         <ButtonLink
           href={session.icalLink}
