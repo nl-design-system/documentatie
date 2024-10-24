@@ -52,9 +52,9 @@ export const DSWSession = ({
     <Heading level={headingLevel} className={clsx(style['dsw-session__title'])}>
       {title}
     </Heading>
-    {session.videoId || videoId ? (
+    {videoId || session?.videoId ? (
       <VideoPlayer
-        videoId={session.videoId || videoId}
+        videoId={videoId ? videoId : session?.videoId}
         width="100%"
         height="100%"
         className={clsx(style['dsw-session__video'])}
