@@ -16,9 +16,9 @@ x-hoogte is de hoogte van een kleine letter x voor een bepaald lettertype. Over 
 
 ## Lettercontrast
 
-Het lettercontrast, het verschil in lijndikte van een letter, zou niet te hoog of te laag moeten zijn. Te veel contrast leidt af en door te weinig contrast gaan lettervormen op elkaar lijken.
+Lettercontrast verwijst naar de verschillen in lijndikte van een letter. Hoog contrast trekt de aandacht, en kan goed werken voor koppen maar kan vermoeiend zijn voor langere teksten. Gemiddeld tot laag contrast zorgt voor een gelijkmatig leesritme en betere leesbaarheid. Dit bevordert vloeiend lezen, omdat letters minder afleiden. Te laag contrast kan echter de leesbaarheid verminderen omdat letters op elkaar gaan lijken. Uiteindelijk gaat het om een goede balans tussen contrast en leesbaarheid.
 
-![Afgebeeld is de letter 'o' met lettertypes Futura, Arial en Lao MN. Futura heeft een laag letter contrast, Arial heeft een gemiddeld letter contrast, Lao MN heeft een zeer hoog letter contrast. Bij het Lao MN voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-contrast.png)
+![Afgebeeld is de letter 'o' met lettertypes Helvetica, PT Serif en Bodoni Moda. Helvetica heeft een te laag letter contrast, PT Serif heeft een gemiddeld letter contrast, Bodoni Moda heeft te hoog letter contrast. Bij het Helvetica en Bodoni Moda voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-contrast.png)
 
 ## Lettervormen
 
@@ -162,12 +162,14 @@ Beperk hoeveel lettertypes en lettertype variaties je gebruikt. Één of twee is
 
 Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 
+- [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
 - [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
 - [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif)
+- [Lexend](https://fonts.google.com/specimen/Lexend)
 - [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
 - [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif)
-- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
-- [Source Serif Pro](https://fonts.google.com/specimen/Source+Serif+Pro)
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
+- [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
 - [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
 Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](/project/kernteam) dan vullen we de lijst verder aan.
