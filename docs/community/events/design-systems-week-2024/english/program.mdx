@@ -9,9 +9,7 @@ slug: /events/design-systems-week-2024/en/program
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 ---
 
-import DocusaurusLink from "@docusaurus/Link";
-import { IconCalendarPlus, IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import DSWSession from "../../../../../src/components/DSWSession";
 import sessions from "../sessions.json";
 import speakers from "../speakers.json";
@@ -21,27 +19,9 @@ import speakers from "../speakers.json";
 # Program Design Systems Week 2024
 
 <Paragraph lead>
-  Design Systems Week features a number of short talks about the how and why of design systems. All online. This year,
-  we'll cover subjects like managing design systems, integrating accessibility, user research and code.
+  Design Systems Week featured a number of short talks about the how and why of design systems. All online. In 2024,
+  we've covered subjects like managing design systems, integrating accessibility, user research and code.
 </Paragraph>
-
-- Some of the talks are in Dutch, others are in English. This page lists the talks that are in English.
-- All sessions can be joined online for free.
-- Each talk will take about 30 minutes, including time for questions.
-
-<ActionGroup>
-  <DocusaurusLink
-    href="/events/design-systems-week/sign-up"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
-    {"Sign up"}
-    <IconChevronRight />
-  </DocusaurusLink>
-  <ButtonLink href="/dsweek-2024/dsweek-2024.ics" appearance="secondary-action-button">
-    {"Add to your calendar"}
-    <IconCalendarPlus />
-  </ButtonLink>
-</ActionGroup>
 
 <DSWSession title="Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams" speakers={[speakers.AmyCole]} lang="en" organisation="US Web Design System" headingLevel={2} session={sessions.find((session)=> session.uuid === 'FE871D75-D5C2-4842-A100-71A8A7069FAD')}>
 
@@ -49,7 +29,7 @@ Amy will share plain-language accessibility tests the USWDS team has created for
 
 </DSWSession>
 
-<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} organisation="Chromatic" lang="en" headingLevel={2}>
+<DSWSession title="Testing UI" speakers={[speakers.GertHengeveld]} lang="en" headingLevel={2}  session={sessions.find((session)=> session.uuid === 'C0639355-E372-422F-8EC9-B069C08CDEEA')}>
 
 <Paragraph>
   Building a Design System is exciting. But once your system is out there being used to power production applications,
@@ -60,7 +40,7 @@ Amy will share plain-language accessibility tests the USWDS team has created for
 
 </DSWSession>
 
-<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en" headingLevel={2} session={sessions.find((session)=> session.uuid === 'C0639355-E372-422F-8EC9-B069C08CDEEA')}>
+<DSWSession title="Design Systems: Choose your own adventure" speakers={[speakers.GeriReid]} organisation="Just Eat Takeaway" lang="en" headingLevel={2} session={sessions.find((session)=> session.uuid === '3A80C3A1-4657-42F8-908D-F9B7565CAF69')}>
 
 Join Geri, a seasoned design systems explorer with 8 years of adventures under her belt, as she navigates the uncharted territories of accessibility in a major product org. With no playbook in hand, Geri’s quest is one we can all relate to: figuring it out as we go along.
 
