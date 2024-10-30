@@ -1,4 +1,4 @@
-/*! For license information please see 60ab2a10.59f55661.js.LICENSE.txt */
+/*! For license information please see 60ab2a10.8763f298.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [97362],
@@ -29,7 +29,7 @@
    }
   },
   63816: (e, n, i) => {
-   i.d(n, { Z: () => h });
+   i.d(n, { Z: () => c });
    var s = i(90441),
     t = i(19143),
     a = i(81094),
@@ -39,28 +39,29 @@
    const l = { 'dsw-session': 'dsw-session_O_Ah', 'dsw-session__title': 'dsw-session__title_pfT2', 'dsw-session__subtitle': 'dsw-session__subtitle_bOCn', 'dsw-session__speakers': 'dsw-session__speakers_cUju', 'dsw-speaker': 'dsw-speaker_gupO', 'dsw-speaker__image': 'dsw-speaker__image_dA9g', 'dsw-session__video': 'dsw-session__video_oz9q' };
    var d = i(73381),
     g = i(52676);
-   const h = (e) => {
-    let { lang: n = 'nl', headingLevel: i = 3, title: h, speakers: c, signupLink: m, organisation: p, videoId: u, children: w, captioned: k, captionLink: v, session: b } = e;
-    return (0, g.jsxs)('article', {
-     className: (0, o.Z)(l['dsw-session']),
-     id: h.toLowerCase().replace(/\s/gi, '-'),
-     children: [
-      (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(l['dsw-session__title']), children: h }),
-      u ? (0, g.jsx)(d.Y, { videoId: u, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [c.map((e) => e.name).join(' & '), p ? ', ' + p : ''] }),
-      b && b.isoDateTime && b.icalLink && !u ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: b.icalLink, download: b.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: b.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(b.isoDateTime)) })] }) }) : null,
-      w,
-      'nl' === n &&
-       c.find((e) => {
-        let { language: n } = e;
-        return 'nl' !== n;
-       }) &&
-       (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-      k && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', v && (0, g.jsxs)(g.Fragment, { children: [' ', '(', (0, g.jsxs)('a', { href: v, children: ['tolktekst', (0, g.jsxs)('span', { className: 'sr-only', children: [' bij ', h] })] }), ')'] }), '.'] }),
-      (0, g.jsx)('aside', { className: (0, o.Z)(l['dsw-session__speakers']), children: c.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(l['dsw-session__speaker'], l['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(l['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(l['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
-      m && (0, g.jsx)(r.nv, { className: (0, o.Z)(l['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', l['homepage-hero__call-to-action-link']), to: m, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', h, '\u201d', (0, g.jsx)(a.Z, { className: (0, o.Z)('utrecht-icon', l['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
-     ],
-    });
-   };
+   const h = new Date().toISOString(),
+    c = (e) => {
+     let { lang: n = 'nl', headingLevel: i = 3, title: c, speakers: m, signupLink: p, organisation: u, videoId: w, children: k, captioned: v, captionLink: b, session: y } = e;
+     return (0, g.jsxs)('article', {
+      className: (0, o.Z)(l['dsw-session']),
+      id: c.toLowerCase().replace(/\s/gi, '-'),
+      children: [
+       (0, g.jsx)(r.X6, { level: i, className: (0, o.Z)(l['dsw-session__title']), children: c }),
+       w || y?.videoId ? (0, g.jsx)(d.Y, { videoId: w || y?.videoId, width: '100%', height: '100%', className: (0, o.Z)(l['dsw-session__video']) }) : (0, g.jsxs)(r.nv, { className: (0, o.Z)(l['dsw-session__subtitle']), lead: !0, children: [m.map((e) => e.name).join(' & '), u ? ', ' + u : ''] }),
+       y && y.isoDateTime && y.isoDateTime > h && y.icalLink && !w ? (0, g.jsx)(r.nv, { children: (0, g.jsxs)(r.ZP, { href: y.icalLink, download: y.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, g.jsx)(r.JO, { children: (0, g.jsx)(t.Z, {}) }), (0, g.jsx)('time', { dateTime: y.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(y.isoDateTime)) })] }) }) : null,
+       k,
+       'nl' === n &&
+        m.find((e) => {
+         let { language: n } = e;
+         return 'nl' !== n;
+        }) &&
+        (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
+       v && (0, g.jsxs)(r.nv, { children: [(0, g.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', b && (0, g.jsxs)(g.Fragment, { children: [' ', '(', (0, g.jsxs)('a', { href: b, children: ['tolktekst', (0, g.jsxs)('span', { className: 'sr-only', children: [' bij ', c] })] }), ')'] }), '.'] }),
+       (0, g.jsx)('aside', { className: (0, o.Z)(l['dsw-session__speakers']), children: m.map((e, i) => (0, g.jsxs)('div', { className: (0, o.Z)(l['dsw-session__speaker'], l['dsw-speaker']), children: [(0, g.jsx)('img', { className: (0, o.Z)(l['dsw-speaker__image']), src: e.image.src, alt: e.image.alt }), (0, g.jsx)(r.nv, { className: (0, o.Z)(l['dsw-speaker__description']), children: e.description[n] })] }, i)) }),
+       p && (0, g.jsx)(r.nv, { className: (0, o.Z)(l['homepage-hero__call-to-action']), children: (0, g.jsxs)(s.Z, { className: (0, o.Z)('utrecht-link', l['homepage-hero__call-to-action-link']), to: p, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', c, '\u201d', (0, g.jsx)(a.Z, { className: (0, o.Z)('utrecht-icon', l['homepage-hero__call-to-action-icon']), style: { verticalAlign: 'middle' } })] }) }),
+      ],
+     });
+    };
   },
   73381: (e, n, i) => {
    i.d(n, { Y: () => l });
