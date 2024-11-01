@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import React from 'react';
 import Astrid from './Astrid';
 import style from './CoreTeam.module.css';
+import Emma from './Emma';
 import Hidde from './Hidde';
 import Jeffrey from './Jeffrey';
 import Renate from './Renate';
@@ -13,7 +14,7 @@ import Wart from './Wart';
 import Yolijn from './Yolijn';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart, Emma];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
