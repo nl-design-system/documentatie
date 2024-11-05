@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De contrastverhouding van de tekstkleur in de button met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:
+De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:
 
 - 4,5:1 contrast voor normale tekst.
 - 3:1 contrast voor grotere letters (vanaf 24 pixels).

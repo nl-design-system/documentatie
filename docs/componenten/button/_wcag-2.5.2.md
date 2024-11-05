@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.
+Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.
 
 Dat kan op meerdere manieren:
 
