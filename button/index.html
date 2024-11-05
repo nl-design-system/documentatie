@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.69e1bf9d.css" />
-  <script src="/assets/js/runtime~main.596b67c3.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.b0b5b594.js" defer="defer"></script>
   <script src="/assets/js/main.cad21a44.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -918,7 +918,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
                 </dl>
-                <p>Zorg ervoor dat de button een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan de button niet goed meegroeien wanneer de gebruiker inzoomt.</p>
+                <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
@@ -931,8 +931,8 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/3.1.2" class="utrecht-link utrecht-link--html-a">3.1.2 Taal van onderdelen</a></dd>
                 </dl>
-                <p>Als een buttontekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
-                <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites.</p>
+                <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
                </div>
               </details>
               <details>
@@ -943,7 +943,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
                 </dl>
-                <p>De contrastverhouding van de tekstkleur in de button met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item">4,5:1 contrast voor normale tekst.</li>
                  <li class="utrecht-unordered-list__item">3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
@@ -962,7 +962,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/1.4.11" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a></dd>
                 </dl>
-                <p>Als het label van de button niet uit tekst bestaat maar uit bijvoorbeeld een icoon (zoals bij een zoekknop met een vergrootglas), dan is het contrast tussen het icoon en de achtergrond minimaal 3:1. Dit is te controleren met de <a href="https://nldesignsystem.nl/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
+                <p>Als het label van het element niet uit tekst bestaat maar uit bijvoorbeeld een icoon (zoals bij een zoekknop met een vergrootglas), dan is het contrast tussen het icoon en de achtergrond minimaal 3:1. Dit is te controleren met de <a href="https://nldesignsystem.nl/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
@@ -974,7 +974,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/2.4.7" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
                 </dl>
-                <p>Wanneer een button de toetsenbordfocus krijgt is de focus zichtbaar.</p>
+                <p>Wanneer het element de toetsenbordfocus krijgt is de focus zichtbaar.</p>
                 <p>Verberg de standaard browserfocusstijl nooit met <code class="utrecht-code">outline:none</code> zonder er een goede focusstijl voor in de plaats te zetten die rekening houdt met goede zichtbaarheid. Maak de focusrand ten minste 2 pixels dik, met een contrast van minimaal 3:1, zie <a href="/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.4.13 Focusweergave</a>.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
@@ -989,7 +989,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a></dd>
                 </dl>
-                <p>Er is een goed zichtbare focusindicator. Dit doe je met een minimale dikte van 2 pixels en een minimaal contrast van 3:1 ten opzichte van aangrenzende kleuren. Hou ook rekening met het contrast met de verschillende achtergrondkleuren waarop de button gebruikt kan worden. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen.</p>
+                <p>Er is een goed zichtbare focusindicator. Dit doe je met een minimale dikte van 2 pixels en een minimaal contrast van 3:1 ten opzichte van aangrenzende kleuren. Hou ook rekening met het contrast met de verschillende achtergrondkleuren waarop een element gebruikt kan worden. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
@@ -1003,7 +1003,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/3.2.4" class="utrecht-link utrecht-link--html-a">3.2.4 Consistente identificatie</a></dd>
                 </dl>
-                <p>Buttons met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.</p>
+                <p>Elementen met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/iconen/respecteer-conventies" class="utrecht-link utrecht-link--html-a">Respecteer conventies</a></li>
@@ -1019,7 +1019,7 @@
                  <dd><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
                 </dl>
                 <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
-                <p>Zorg ervoor dat de button mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
@@ -1033,7 +1033,7 @@
                  <dd><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
                 </dl>
                 <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
-                <p>Zorg ervoor dat de button mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
                 <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item">Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
@@ -1069,7 +1069,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/2.1.1" class="utrecht-link utrecht-link--html-a">2.1.1 Toetsenbord</a></dd>
                 </dl>
-                <p>Je kunt de button focussen met de tabtoets en activeren met de spacebar en de entertoets.</p>
+                <p>Je kunt het element focussen met de tabtoets en activeren met de spacebar en de entertoets.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/buttons/toetsenbordbediening" class="utrecht-link utrecht-link--html-a">Toetsenbordbediening van een button</a></li>
@@ -1082,7 +1082,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
                 </dl>
-                <p>Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
+                <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
                 <p>Dat kan op meerdere manieren:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item">De actie gebeurt pas bij het <code class="utrecht-code">up</code>-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het <code class="utrecht-code">up</code>-event te voorkomen.</li>
@@ -1129,7 +1129,7 @@
                  <dt>WCAG</dt>
                  <dd><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
                 </dl>
-                <p>Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij om een logo gaat, zoals het DigiD-logo.</p>
+                <p>Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij om een logo gaat, zoals het DigiD-logo.</p>
                 <p>NL Design System richtlijnen:</p>
                 <ul role="list" class="utrecht-unordered-list">
                  <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
