@@ -15,12 +15,29 @@ keywords:
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import Wcag111 from "./_wcag-1.1.1.md"; // custom
+import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md"; // ac
+import Wcag144 from "/docs/componenten/ac/_wcag-1.4.4.md"; // ac
+import Wcag145 from "/docs/wcag/summaries/_1.4.5-summary.md"; // summary
+import Wcag1411 from "/docs/componenten/ac/_wcag-1.4.11.md"; // ac
+import Wcag1412 from "/docs/componenten/ac/_wcag-1.4.12.md"; // ac
+import Wcag211 from "/docs/componenten/ac/_wcag-2.1.1-link.md"; // ac
+import Wcag244 from "/docs/wcag/summaries/_2.4.4-summary.md"; // summary
+import Wcag247 from "/docs/componenten/ac/_wcag-2.4.7.md"; // ac
+import Wcag2413 from "/docs/componenten/ac/_wcag-2.4.13.md"; // ac
+import Wcag252 from "/docs/componenten/ac/_wcag-2.5.2.md"; // ac
+import Wcag253 from "/docs/componenten/ac/_wcag-2.5.3-link.md"; // ac
+import Wcag255 from "/docs/componenten/ac/_wcag-2.5.5.md"; // ac
+import Wcag312 from "/docs/componenten/ac/_wcag-3.1.2.md"; // ac
+import Wcag324 from "./_wcag-3.2.4.md"; // custom
+import Wcag412 from "/docs/componenten/ac/_wcag-4.1.2-link.md"; // ac
 
 {/* Add name and description for the component */}
 export const title = "Login Link";
@@ -38,6 +55,144 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+## Acceptatiecriteria
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid algemeen"
+  items={[
+    {
+      title: "Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title:
+        "De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
+      sc: "2.4.4",
+      status: "",
+      component: <Wcag244 />,
+    },
+    {
+      title: "De zichtbare naam van de Login Link komt voor in de toegankelijke naam",
+      sc: "2.5.3",
+      status: "",
+      component: <Wcag253 />,
+    },
+    {
+      title:
+        "Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+    },
+    {
+      title:
+        "Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+    },
+    {
+      title: "De Login Link heeft een goed zichtbare focusindicator",
+      sc: "2.4.13",
+      status: "",
+      component: <Wcag2413 />,
+    },
+    {
+      title: "De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels",
+      sc: "2.5.5",
+      status: "",
+      component: <Wcag255 />,
+    },
+    {
+      title: "Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
+      sc: "3.2.4",
+      status: "",
+      component: <Wcag324 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid toetsenbord"
+  items={[
+    {
+      title: "Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets",
+      sc: "2.1.1",
+      status: "",
+      component: <Wcag211 />,
+    },
+    {
+      title: "Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
+      title:
+        "Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken",
+      sc: "2.5.2",
+      status: "",
+      component: <Wcag252 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid screenreader"
+  items={[
+    {
+      title: "Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief",
+      sc: "1.1.1",
+      status: "",
+      component: <Wcag111 />,
+    },
+    {
+      title:
+        "De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient",
+      sc: "4.1.2",
+      status: "",
+      component: <Wcag412 />,
+    },
+  ]}
+/>
 
 ## Help component verbeteren
 
