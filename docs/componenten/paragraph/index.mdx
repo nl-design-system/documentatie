@@ -13,18 +13,24 @@ tags:
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import { Markdown } from "@site/src/components/Markdown";
-import Guidelines from "./_guidelines.md";
+import Wcag131 from "./_wcag-1.3.1.md";
+import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md";
+import Wcag144 from "/docs/componenten/ac/_wcag-1.4.4.md";
+import Wcag148 from "/docs/wcag/summaries/_1.4.8-summary.md";
+import Wcag1410 from "/docs/wcag/summaries/_1.4.10-summary.md";
+import Wcag1412 from "/docs/componenten/ac/_wcag-1.4.12.md";
+import Wcag312 from "/docs/componenten/ac/_wcag-3.1.2.md";
 
 {/* Add name and description for the component */}
 export const title = "Paragraph";
-export const description = "Toont een alinea aan tekst.";
+export const description = "De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.";
 export const issueNumber = 115;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
@@ -39,11 +45,71 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Richtlijnen
+## Acceptatiecriteria
 
-<Markdown omitH1 headingLevel={3}>
-  <Guidelines />
-</Markdown>
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid algemeen"
+  items={[
+    {
+      title: "Gebruik het p-element voor paragraaftekst",
+      sc: "1.3.1",
+      status: "",
+      component: <Wcag131 />,
+    },
+    {
+      title: "De weergave van de paragraaftekst kan worden aangepast door hulpsoftware",
+      sc: "1.4.8",
+      status: "",
+      component: <Wcag148 />,
+    },
+    {
+      title:
+        "Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar",
+      sc: "1.4.10",
+      status: "",
+      component: <Wcag1410 />,
+    },
+    {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+  ]}
+/>
 
 ## Help component verbeteren
 
