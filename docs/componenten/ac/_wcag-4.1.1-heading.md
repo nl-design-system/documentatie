@@ -4,13 +4,13 @@ Een voorbeeld is een button met een heading erin:
 
 ```html
 <h2>
-    <button>button in heading, wel toegestaan</button>
+  <button>button in heading, wel toegestaan</button>
 </h2>
 ```
 
 ```html
 <!-- dit niet doen -->
 <button>
-    <h2>heading in button, niet toegestaan</h2>
+  <h2>heading in button, niet toegestaan</h2>
 </button>
 ```
