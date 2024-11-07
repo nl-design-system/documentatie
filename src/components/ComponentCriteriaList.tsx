@@ -49,6 +49,8 @@ export interface CriteriaListProps {
 /**
  * CriteriaListItem generates the test item.
  *
+ * sc and status are optional.
+ *
  */
 export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 4 }: CriteriaListItemProps) => {
   const data = successCriteriaMap.get(sc);
@@ -59,18 +61,24 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
       <Heading appearance="utrecht-heading-4" level={headingLevel}>
         {title}
       </Heading>
-      <dl>
-        <dt>WCAG</dt>
-        <dd>
-          <Link href={`/wcag/${sc}`}>{scTitle}</Link>
-        </dd>
-        {status && (
-          <>
-            <dt>Status</dt>
-            <dd>{status}</dd>
-          </>
-        )}
-      </dl>
+      {(sc || status) && (
+        <dl>
+          {sc && (
+            <>
+              <dt>WCAG</dt>
+              <dd>
+                <Link href={`/wcag/${sc}`}>{scTitle}</Link>
+              </dd>
+            </>
+          )}
+          {status && (
+            <>
+              <dt>Status</dt>
+              <dd>{status}</dd>
+            </>
+          )}
+        </dl>
+      )}
       {component}
     </div>
   );
