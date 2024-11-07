@@ -52,13 +52,7 @@ export interface CriteriaListProps {
  * sc and status are optional.
  *
  */
-export const CriteriaListItem = ({
-  title,
-  sc = '',
-  status = '',
-  component,
-  headingLevel = 4,
-}: CriteriaListItemProps) => {
+export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 4 }: CriteriaListItemProps) => {
   const data = successCriteriaMap.get(sc);
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
