@@ -90,6 +90,18 @@ export const component = componentProgress.find((item) => item.number === issueN
   testCategory="Toegankelijkheid algemeen"
   items={[
     {
+      title: "Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title: "Het label van de button maakt kort en bondig duidelijk waar de button voor dient",
+      sc: "2.4.6",
+      status: "",
+      component: <Wcag246 />,
+    },
+    {
       title: "De zichtbare naam van de button is gelijk aan de toegankelijke naam",
       sc: "2.5.3",
       status: "",
@@ -196,18 +208,6 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "1.1.1",
       status: "",
       component: <Wcag111 />,
-    },
-    {
-      title: "Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-    },
-    {
-      title: "Het label van de button maakt kort en bondig duidelijk waar de button voor dient",
-      sc: "2.4.6",
-      status: "",
-      component: <Wcag246 />,
     },
     {
       title:
