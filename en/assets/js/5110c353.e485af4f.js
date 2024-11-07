@@ -436,7 +436,7 @@
      let { title: t, sc: n, status: i, component: o, headingLevel: s = 4 } = e;
      const c = a.get(n),
       d = c ? `${n} ${c.nl?.title}` : n;
-     return (0, l.jsxs)('div', { children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: s, children: t }), (0, l.jsxs)('dl', { children: [(0, l.jsx)('dt', { children: 'WCAG' }), (0, l.jsx)('dd', { children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) }), i && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'Status' }), (0, l.jsx)('dd', { children: i })] })] }), o] });
+     return (0, l.jsxs)('div', { children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: s, children: t }), (n || i) && (0, l.jsxs)('dl', { children: [n && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'WCAG' }), (0, l.jsx)('dd', { children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), i && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'Status' }), (0, l.jsx)('dd', { children: i })] })] }), o] });
     },
     u = (e) => {
      let { testCategory: t, items: n } = e;
