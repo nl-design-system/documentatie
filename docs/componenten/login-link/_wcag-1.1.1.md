@@ -20,7 +20,7 @@ Maar duidelijker is:
 <a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>
 ```
 
-Logius geeft opmaakrichtlijnen voor inlogmiddelknoppen in de [Stijlhandleiding aansluiten Toegang](https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang).
+Logius geeft voor het inloggen met DigiD, eHerkenning en European login "Opmaakrichtlijnen voor inlogmiddelknoppen" in de [Stijlhandleiding aansluiten Toegang](https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang).
 
 NL Design System richtlijnen:
 

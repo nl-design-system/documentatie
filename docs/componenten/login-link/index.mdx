@@ -63,6 +63,19 @@ export const component = componentProgress.find((item) => item.number === issueN
   testCategory="Toegankelijkheid algemeen"
   items={[
     {
+      title: "Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title:
+        "De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
+      sc: "2.4.4",
+      status: "",
+      component: <Wcag244 />,
+    },
+    {
       title: "De zichtbare naam van de Login Link komt voor in de toegankelijke naam",
       sc: "2.5.3",
       status: "",
@@ -94,12 +107,6 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "1.4.11",
       status: "",
       component: <Wcag1411 />,
-    },
-    {
-      title: "Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247 />,
     },
     {
       title: "De Login Link heeft een goed zichtbare focusindicator",
@@ -152,6 +159,12 @@ export const component = componentProgress.find((item) => item.number === issueN
       component: <Wcag211 />,
     },
     {
+      title: "Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
       title:
         "Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken",
       sc: "2.5.2",
@@ -170,19 +183,6 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "1.1.1",
       status: "",
       component: <Wcag111 />,
-    },
-    {
-      title: "Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-    },
-    {
-      title:
-        "De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
-      sc: "2.4.4",
-      status: "",
-      component: <Wcag244 />,
     },
     {
       title:
