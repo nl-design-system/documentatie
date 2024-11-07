@@ -29,8 +29,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.69e1bf9d.css" />
-  <script src="/assets/js/runtime~main.b0b5b594.js" defer="defer"></script>
-  <script src="/assets/js/main.cad21a44.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9f02db15.js" defer="defer"></script>
+  <script src="/assets/js/main.3ddb35a7.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -248,7 +248,7 @@
                <h1 class="nlds-inline-heading-group__heading_bHAJ">Paragraph</h1>
                <p class="nlds-inline-heading-group__suffix_ioH2"><span class="utrecht-badge-data estafette-badge_amWR estafette-badge--community_FJTQ">Community</span></p>
               </hgroup>
-              <p class="utrecht-paragraph utrecht-paragraph--lead"><b class="utrecht-paragraph__b">Toont een alinea aan tekst.</b></p>
+              <p class="utrecht-paragraph utrecht-paragraph--lead"><b class="utrecht-paragraph__b">De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.</b></p>
               <h2 id="definition-of-done" class="utrecht-heading-2">Definition of Done</h2>
               <div class="utrecht-accordion">
                <div class="utrecht-accordion__section definition-of-done_hA8T definition-of-done--help-wanted_eyW6" body="[object Object]">
@@ -841,120 +841,128 @@
                 </div>
                </div>
               </div>
-              <h2 id="richtlijnen" class="utrecht-heading-2">Richtlijnen</h2>
-              <!-- -->
-              <p>De <em class="utrecht-emphasis utrecht-emphasis--stressed">paragraph</em> component gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.</p>
-              <h3 id="html" class="utrecht-heading-3">HTML</h3>
-              <p>
-               Gebruik hiervoor altijd het <code class="utrecht-code">&lt;p&gt;</code> HTML-element, die heeft automatisch de goede <a href="https://w3c.github.io/aria/#paragraph" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">paragraph</code> role</a> in de accessibility tree. Dat is nodig voor het WCAG-succescriterium <a href="/wcag/1..3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a>. Voor een <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> gebruik je <code class="utrecht-code">&lt;p&gt;&lt;b&gt;…&lt;/b&gt;&lt;/p&gt;</code>. Voor <em class="utrecht-emphasis utrecht-emphasis--stressed">small print</em> gebruik je <code class="utrecht-code">&lt;p&gt;&lt;small&gt;…&lt;/small&gt;&lt;/p&gt;</code>.
-              </p>
-              <p>Zelfs als geen CSS geladen kan worden, blijft de tekst duidelijk. Door het <code class="utrecht-code">&lt;p&gt;</code> element is er tussen alinea&#x27;s duidelijke witruimte (<a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.12</a>). Door het <code class="utrecht-code">&lt;b&gt;</code> element is de <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> visueel herkenbaar. Door <code class="utrecht-code">&lt;small&gt;</code> is <em class="utrecht-emphasis utrecht-emphasis--stressed">small print</em> visueel herkenbaar.</p>
-              <h4 id="lead-paragraph" class="utrecht-heading-4">Lead Paragraph</h4>
-              <p>De <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> is een extra opvallende variant van de <em class="utrecht-emphasis utrecht-emphasis--stressed">paragraph</em>. Gebruik de <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> onder de <em class="utrecht-emphasis utrecht-emphasis--stressed">heading</em> van een <em class="utrecht-emphasis utrecht-emphasis--stressed">article</em> voor een introductietekst.</p>
-              <p>Schrijf in de eerste alinea kort en bondig waar de pagina over gaat, zodat de lezer kan besluiten om verder te lezen. Gebruik hiervoor de <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> variant zodat de tekst extra opvallend is.</p>
-              <p>Wanneer je meer dan circa 30 woorden of 200 tekens nodig hebt, gebruik dan niet de <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> variant zodat de tekst een leesbare lettergrootte heeft voor langere teksten.</p>
-              <p>Gebruik de <em class="utrecht-emphasis utrecht-emphasis--stressed">lead paragraph</em> niet wanneer je een <em class="utrecht-emphasis utrecht-emphasis--stressed">paragraph</em> voor een ander doel extra opvallend wil maken, ontwikkel dan een eigen variant.</p>
-              <h3 id="inhoud" class="utrecht-heading-3">Inhoud</h3>
-              <p>Groepeer zinnen die bij elkaar horen in een alinea. Begin een nieuwe alinea wanneer de tekst over een andere onderwerp gaat of een eigen doel heeft. Teksten met alinea&#x27;s die niet bovengemiddeld lang zijn makkelijker te begrijpen als je pauze neemt, en door het grouperen is informatie sneller terug te vinden.</p>
-              <p>Overweeg of een alinea met meer dan 7 zinnen of 140 woorden duidelijker is als je tekst indeelt in twee alinea&#x27;s.</p>
-              <h3 id="layout" class="utrecht-heading-3">Layout</h3>
-              <h4 id="lettergrootte" class="utrecht-heading-4">Lettergrootte</h4>
-              <p>Kies de lettergrootte niet te klein, bijvoorbeeld <code class="utrecht-code">16px</code> of groter. Gebruik <code class="utrecht-code">rem</code> in CSS in plaats van <code class="utrecht-code">px</code>, zodat de font-size van de <em class="utrecht-emphasis utrecht-emphasis--stressed">paragraph</em> ook verdubbelt wanneer gebruikers via hun besturingssysteem of <em class="utrecht-emphasis utrecht-emphasis--stressed">user stylesheet</em> de standaard lettergroote 200% groter maken. (<a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.4 Herschalen van tekst</a>) Gebruikers moeten de lettergrootte vier keer groter kunnen maken met browser zoom, zie <a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.10</a>. Maak zoom niet kapot door gebruik van de <code class="utrecht-code">vw</code> of <code class="utrecht-code">vh</code> eenheden in CSS die niet altijd goed werken met zoom.</p>
-              <p>Gebruik de design token <code class="utrecht-code">nl.paragraph.font-size</code> als je niet de standaard-grootte wilt van <code class="utrecht-code">nl.document.font-size</code>.</p>
-              <p>Voor de lead paragraph variant is het gebruikelijk de lettergrootte 10% á 20% groter te kiezen (<code class="utrecht-code">nl.paragraph.lead.font-size</code>).</p>
-              <h4 id="regelhoogte" class="utrecht-heading-4">Regelhoogte</h4>
-              <p>Stel de regelhoogte met <code class="utrecht-code">nl.paragraph.line-height</code> in voor voldoende afstand tussen tekstregels, dit verbetert de leesbaarheid. Standaard gebruiken browsers circa <code class="utrecht-code">1.2</code>, maar <code class="utrecht-code">1.5</code> is voor veel gebruikers beter leesbaar. Voor het <a href="/wcag/1.4.8" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.8 Visuele weergave</a> is het ook belangrijk om <code class="utrecht-code">1.5</code> of groter aan te bieden.</p>
-              <h4 id="afstand-tussen-alineas" class="utrecht-heading-4">Afstand tussen alinea&#x27;s</h4>
-              <p>Kies voldoende afstand tussen alinea&#x27;s, in elk geval 50% groter dan afstand tussen tekstregels. Gebruik hiervoor de design tokens <code class="utrecht-code">nl.paragraph.margin-block-start</code> en <code class="utrecht-code">nl.paragraph.margin-block-end</code>.</p>
-              <h4 id="kleurgebruik" class="utrecht-heading-4">Kleurgebruik</h4>
-              <p><code class="utrecht-code">nl.paragraph.color</code>: kies voldoende contrast ten opzichte van de achtergrondkleur, van bijvoorbeeld <code class="utrecht-code">nl.document.background-color</code> of <code class="utrecht-code">nl.page.background-color</code>. Kies in plaats van zwart voor zeer donkergrijs, dat is beter leesbaar op beeldschermen. Een contrastverhouding van 7:1 is ideaal.</p>
-              <p>Zie de WCAG-succescriteria:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3: Contrast (minimum)</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.6" class="utrecht-link utrecht-link--html-a">1.4.6: Contrast (versterkt)</a></li>
-              </ul>
-              <h4 id="regellengte" class="utrecht-heading-4">Regellengte</h4>
-              <p>Zorg dat de lengte van de tekst niet te lang wordt, bijvoorbeeld door deze design token in te stellen: <code class="utrecht-code">nl.article.max-inline-size</code>. De ideale regellengte verschilt per schrift en taal, maar ergens tussen de 50 en 75 tekens voor Nederlands is prima. Je kunt in CSS bijvoorbeeld de <code class="utrecht-code">ch</code> eenheid gebruiken: <code class="utrecht-code">--nl-article-max-inline-size: 60ch</code>.</p>
-              <p>Voor het <a href="/wcag/1.4.8" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.8 Visuele weergave</a> is het nodig dat de regellengte beperkt kan worden tot maximaal 80 tekens (<code class="utrecht-code">80ch</code>), bijvoorbeeld door de viewport van de browser kleiner te maken.</p>
-              <h4 id="tekstuitlijning" class="utrecht-heading-4">Tekstuitlijning</h4>
-              <p>Tekst dient uitsluitend links uitgelijnd zijn, voor Nederlandse teksten. Gebruik daarvoor <code class="utrecht-code">text-align: start</code>.</p>
-              <p><code class="utrecht-code">text-align: justify</code> moet vermeden kunnen worden volgens het <a href="/wcag/1.4.8" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.8 Visuele weergave</a>, dus gebruik deze voor het gemak helemaal niet. Rechts uitlijnen en tekst centreren moet je ook niet gebruiken voor lopende tekst.</p>
-              <h3 id="hoe-het-niet-moet" class="utrecht-heading-3">Hoe het niet moet</h3>
-              <h4 id="geen-opmaak" class="utrecht-heading-4">Geen opmaak</h4>
-              <p>Geen <code class="utrecht-code">p</code> gebruiken:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Interessante pagina</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  Deze eerste tekst ziet er misschien prima uit.</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Maar ook de eerste paragraaf hoort in een p-element te staan.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+              <h2 id="acceptatiecriteria" class="utrecht-heading-2">Acceptatiecriteria</h2>
+              <details>
+               <summary><h3>Toegankelijkheid algemeen</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">Gebruik het p-element voor paragraaftekst</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a></dd>
+                </dl>
+                <p>Zorg dat een alinea in een paragraaf-element staat. Gebruik geen <code class="utrecht-code">&lt;div&gt;</code> of <code class="utrecht-code">&lt;span&gt;</code> voor op zichzelf staande teksten. Zelfs als geen CSS geladen kan worden, blijft de tekst dan duidelijk weergegeven.</p>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">De weergave van de paragraaftekst kan worden aangepast door hulpsoftware</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.8" class="utrecht-link utrecht-link--html-a">1.4.8 Visuele weergave</a></dd>
+                </dl>
+                <p>Sommige gebruikers maken teksten die meerdere zinnen lang zijn beter leesbaar voor zichzelf. Dit kan door het zelf aanpassen van de computer- of browserinstellingen of met eigen hulpsoftware.</p>
+                <p>Zoals het aanpassen van:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item">de kleur van de tekst en de achtergrondkleur;</li>
+                 <li class="utrecht-unordered-list__item">de breedte van de tekst;</li>
+                 <li class="utrecht-unordered-list__item">de uitlijning van de tekst;</li>
+                 <li class="utrecht-unordered-list__item">de regelafstand;</li>
+                 <li class="utrecht-unordered-list__item">de mogelijkheid alleen tekst te vergroten.</li>
+                </ul>
+                <p>Hiervoor hoeven er geen opties of buttons op de website zelf beschikbaar te zijn. Wel mag het ontwerp en de HTML/CSS de aanpassingen door een gebruiker niet blokkeren.</p>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/3.1.2" class="utrecht-link utrecht-link--html-a">3.1.2 Taal van onderdelen</a></dd>
+                </dl>
+                <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
+               </div>
+              </details>
+              <details>
+               <summary><h3>Toegankelijkheid visueel ontwerp</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
+                </dl>
+                <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item">4,5:1 contrast voor normale tekst.</li>
+                 <li class="utrecht-unordered-list__item">3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
+                 <li class="utrecht-unordered-list__item">3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                </ul>
+                <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+                </ul>
+               </div>
+              </details>
+              <details>
+               <summary><h3>Toegankelijkheid zoom en herschalen</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
+                </dl>
+                <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
+                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                </ul>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></dd>
+                </dl>
+                <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
+                <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.</p>
+                <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 CSS).</p>
+                <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals bijvoorbeeld: tabellen, grafieken, video&#x27;s en landkaarten.</p>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
+                </dl>
+                <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
+                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item">Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
+                 <li class="utrecht-unordered-list__item">Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte;</li>
+                 <li class="utrecht-unordered-list__item">Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte;</li>
+                 <li class="utrecht-unordered-list__item">Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
+                </ul>
+                <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
+                <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">word-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.16</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body p</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">margin-bottom</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">2</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
 </span></code></pre>
-              <h4 id="geen-lege-paragraaf" class="utrecht-heading-4">Lege paragraaf</h4>
-              <p>Een lege <code class="utrecht-code">p</code> gebruiken, bijvoorbeeld om extra afstand te maken:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voorbeeld pagina</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Deze pagina ziet er op het oog misschien prima uit.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token entity named-entity" style="color:var(--nlds-code-block-entity-color)">&amp;nbsp;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Maar sommige screen readers zeggen dat er drie paragrafen zijn, dat is verwarrend.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <h4 id="geen-semantiek" class="utrecht-heading-4">Geen semantiek</h4>
-              <p>Een <code class="utrecht-code">div</code> gebruiken:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Interessante pagina</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Deze eerste tekst ziet er misschien prima uit, maar de paragraph role ontbreek in de accessibility tree.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">role</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">paragraph</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Gebruik gewoon een p-element in plaats van ARIA om de role te verkrijgen.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">section</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <p>Wanneer je tekstfragmenten na elkaar plaatst is het belangrijk dat je een element zoals paragraaf gebruikt (en niet een <code class="utrecht-code">inline</code> element zoals <code class="utrecht-code">span</code> of <code class="utrecht-code">label</code>), zodat de twee tekstfragmenten los van elkaar worden voorgelezen door screen readers. Wanneer de CSS niet geladen kan worden, dan heeft <code class="utrecht-code">p</code> wel marge en <code class="utrecht-code">div</code> niet, in veel situaties zonder CSS is <code class="utrecht-code">p</code> daarom leesbaarder dan <code class="utrecht-code">div</code>.</p>
-              <h4 id="geen-inline" class="utrecht-heading-4"><code class="utrecht-code">inline</code> in plaats van <code class="utrecht-code">block</code>-elementen</h4>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam is verplicht</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <p>Beter:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">name</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Voornaam is verplicht</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <h4 id="geen-overdreven-nadruk" class="utrecht-heading-4">Overdreven nadruk</h4>
-              <p>Benadruk niet een hele paragraaf, maar markeer het belangrijke gedeelte.</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">strong</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Tenzij anders vermeld is op de inhoud van deze website de Creative Commons zero verklaring (CC0) van toepassing.</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    Dit houdt in dat iedere vorm van hergebruik van de inhoud van deze site is toegestaan, tenzij bij of in een bepaald</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    onderdeel (bijvoorbeeld een logo of een foto) staat aangegeven dat op dat onderdeel een auteursrechtelijke</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    uitzondering van toepassing is.</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">strong</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <p>Beter:</p>
-              <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">em</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Tenzij anders vermeld</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">em</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"> is op de inhoud van deze website de Creative Commons zero verklaring (CC0) van</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  toepassing. Dit houdt in dat </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">strong</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">iedere vorm van hergebruik van de inhoud van deze site is toegestaan</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">strong</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">,</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  tenzij bij of in een bepaald onderdeel (bijvoorbeeld een logo of een foto) staat aangegeven dat op dat onderdeel een</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  auteursrechtelijke uitzondering van toepassing is.</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <h3 id="links" class="utrecht-heading-3">Links</h3>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" class="utrecht-link utrecht-link--html-a">MDN: <code class="utrecht-code">&lt;p&gt;</code>: The Paragraph element</a>
-               </li>
-               <li class="utrecht-unordered-list__item">
-                <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" class="utrecht-link utrecht-link--html-a">HTML specification: The <code class="utrecht-code">&lt;b&gt;</code> element</a>. Bevat een voorbeeld van het <code class="utrecht-code">b</code> element voor lead paragraphs.
-               </li>
-               <li class="utrecht-unordered-list__item">
-                <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element" class="utrecht-link utrecht-link--html-a">HTML specification: The <code class="utrecht-code">&lt;small&gt;</code> element</a>. Bevat een voorbeeld van het <code class="utrecht-code">small</code> element voor <em class="utrecht-emphasis utrecht-emphasis--stressed">small print</em>.
-               </li>
-               <li class="utrecht-unordered-list__item"><a href="https://taaladvies.net/lengte-van-alineas/" class="utrecht-link utrecht-link--html-a">Hoe lang mag een alinea zijn? En waar hangt dat van af? - Taaladvies.net</a></li>
-              </ul>
-              <h4 id="relevante-wcag-regels" class="utrecht-heading-4">Relevante WCAG-succescriteria</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.3.1</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.3</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.4</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.8" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.8</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.10</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.12</a></li>
-               <li class="utrecht-unordered-list__item"><a href="/wcag/3.1.2" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 3.1.2</a></li>
-              </ul>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
+                </ul>
+               </div>
+              </details>
               <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
               <p class="utrecht-paragraph">
                We vinden het belangrijk dat
@@ -1008,7 +1016,7 @@
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#definition-of-done" class="table-of-contents__link toc-highlight">Definition of Done</a></li>
              <li><a href="#implementaties" class="table-of-contents__link toc-highlight">Implementaties</a></li>
-             <li><a href="#richtlijnen" class="table-of-contents__link toc-highlight">Richtlijnen</a></li>
+             <li><a href="#acceptatiecriteria" class="table-of-contents__link toc-highlight">Acceptatiecriteria</a></li>
              <li><a href="#help-component-verbeteren" class="table-of-contents__link toc-highlight">Help component verbeteren</a></li>
             </ul>
            </div>
