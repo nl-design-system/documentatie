@@ -12,8 +12,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_4.1.2-summary.md";
 
@@ -255,4 +258,16 @@ Oplossing: zet de toggle `aria-expanded="true/false"` op de button, omdat deze s
 <div id="hamburger">[...]</div>
 ```
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

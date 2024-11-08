@@ -14,9 +14,12 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.2-summary.md";
 
@@ -98,4 +101,16 @@ Het is voor dit criterium van belang dat content die bij een kopje hoort zich on
 
 Het is mogelijk om de visuele volgorde met CSS-code aan te passen zodat de inhoud anders wordt voorgelezen van de visuele volgorde, maar pas hierbij op. De **visuele** volgorde van de toetsenbordfocus moet ook betekenisvol zijn, zie hiervoor het [WCAG-succescriterium 2.4.3 Focusvolgorde](/wcag/2.4.3).
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

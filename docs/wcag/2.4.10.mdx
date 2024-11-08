@@ -12,8 +12,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.4.10-summary.md";
 
@@ -159,4 +162,16 @@ Deze `h1` geeft geen goede informatie over de inhoud van de pagina als deze zo o
 Het gebruik van meerdere `h1`-koppen in de outline van de DOM-structuur wordt niet langer ondersteund in HTML.
 Lees hierover: [<span lang="en">Avoid using multiple `<h1>` elements on one page</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page) op MDN.
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

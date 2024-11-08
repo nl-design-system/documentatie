@@ -12,8 +12,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.1.1-summary.md";
 
@@ -77,4 +80,16 @@ Controleer voor afbeeldingen in links en buttons:
 - Video: is er essentiële informatie in beeld die niet wordt uitgesproken dan moet deze via audiodescriptie beschikbaar zijn.
 - Audio: is er gesproken tekst in de audio dan moet deze beschikbaar zijn via uitgeschreven tekst (transcriptie).
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

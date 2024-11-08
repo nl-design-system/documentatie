@@ -12,8 +12,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.2.1-summary.md";
 
@@ -49,4 +52,16 @@ Bepaal eerst of er interactieve elementen op de pagina zijn, zoals formulierveld
 - Klik met de muis interactieve elementen aan, ook aanwezige select-opties.
 - Test of er geen onverwachte dingen gebeuren zoals het verzenden van het formulier, het verplaatsen van de focus of het openen van een nieuw venster of tab.
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>
