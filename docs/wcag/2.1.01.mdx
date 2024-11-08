@@ -13,8 +13,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.1-summary.md";
 
@@ -83,4 +86,16 @@ Zorg dat de instellingen van de MacOS en browsers goed staan:
 - Controleer of de focus niet ineens verdwijnt (weer bovenaan de pagina staat) na het uitvoeren van een actie.
 - Wanneer de focus zich verplaatst naar een dialog die wordt geopend, kun je dan de dialog weer sluiten met het toetsenbord en met de Escape toets? Wanneer de dialog gesloten wordt, komt de focus weer terug op de "open dialog"-button?
 
-<WCAGFooterInfo />
+## Niet verplicht
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

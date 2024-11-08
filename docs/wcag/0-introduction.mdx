@@ -11,15 +11,20 @@ keywords:
   - succescriteria
 ---
 
-import FormFooterInfo from "./_wcag_footer_info.md";
+import { Markdown } from "@site/src/components/Markdown";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import Disclaimer from "./_wcag-disclaimer.md";
+import FooterInfo from "./_wcag_footer_info.md";
 
 # Introductie WCAG-pagina's
 
-In deze pagina's vind je [<span lang="en">Web Content Accessibility Guidelines</span>](https://www.w3.org/Translations/WCAG22-nl/) (WCAG) beschreven en uitgelegd.
+In deze pagina's vind je [<span lang="en">Web Content Accessibility Guidelines 2.2</span>](https://www.w3.org/Translations/WCAG22-nl/) (WCAG 2.2) beschreven en uitgelegd.
 
-Het doel is om WCAG begrijpelijk uit te leggen en daardoor makkelijker toepasbaar te maken. Daarnaast staat beschreven hoe je webpagina's voor de verschillende succescriteria kunt testen.
-
-**Let op**: Deze pagina's bevatten praktische uitleg, voorbeelden en interpretatie bij de Web Content Accessibility Guidelines (WCAG) voor de niveau's A, AA en AAA. De richtlijnen in NL Design System zijn niet verplicht en geen vervanging voor [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), de norm waarnaar in wetgeving wordt verwezen (zie [Wat is verplicht - DigiToegankelijk](https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht)).
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={2}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
 
 ## Opzet
 
@@ -135,4 +140,4 @@ Sommige succescriteria bevatten nu alleen nog links en een uitleg. Het doel is o
 - [4.1.2 Naam, rol, waarde](/wcag/4.1.2)
 - [4.1.3 Statusberichten](/wcag/4.1.3)
 
-<FormFooterInfo />
+<FooterInfo />
