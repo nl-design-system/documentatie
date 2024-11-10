@@ -30,7 +30,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/en/opensearch.xml" />
   <link rel="stylesheet" href="/en/assets/css/styles.f92f6763.css" />
-  <script src="/en/assets/js/runtime~main.f9015eae.js" defer="defer"></script>
+  <script src="/en/assets/js/runtime~main.552367dc.js" defer="defer"></script>
   <script src="/en/assets/js/main.e2b52113.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -223,7 +223,11 @@
               <h1 id="stappenplan-community-door-het-kernteam" class="utrecht-heading-1">Stappenplan: Community door het kernteam</h1>
               <p>Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/29" class="utrecht-link utrecht-link--html-a">&#x27;Community&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. Organisaties die een component bij willen dragen kunnen het <a href="/handboek/component-bijdragen/community-stappenplan-voor-organisaties" class="utrecht-link utrecht-link--html-a">Stappenplan voor organisaties</a> gebruiken.</p>
               <p>Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.</p>
-              <p>Er kunnen meerdere community implementaties zijn die volledig voldoen, maar voor dit bord kijken we naar een component die het meest ver is. De component heeft een Community status als er minimaal één implementatie beschikbaar is die aan alle checkpoints voldoet. Voordat je begint kies je het <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a> waar het component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar &quot;tenminste één organisatie&quot; mee te beoordelen.</p>
+              <p>Er kunnen meerdere community implementaties zijn die volledig voldoen, maar voor dit bord kijken we naar een component die het meest ver is. De component heeft een Community status als er minimaal één implementatie beschikbaar is die aan alle checkpoints voldoet. Voordat je begint kies je het <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a> waar de component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar &quot;tenminste één organisatie&quot; mee te beoordelen.</p>
+              <h2 id="welke-organisatie" class="utrecht-heading-2">Welke organisatie</h2>
+              <p>Doel: Het wordt duidelijk naar welk community component is gekeken.</p>
+              <p>Selecteer naar welk organisatiebord je hebt gekeken voor de Definition of Done van &#x27;Community&#x27; status.</p>
+              <p><strong>🚩 Checkpoint</strong>: Welke bord</p>
               <h2 id="beschikbaar-in-css" class="utrecht-heading-2">Beschikbaar in CSS</h2>
               <p>Doel: De component kan ingezet worden in een framework naar keuze.</p>
               <p>De component moet beschikbaar zijn in code. Minimaal als HTML/CSS.</p>
@@ -237,10 +241,14 @@
               <p>Tenminste één organisatie heeft zijn <code class="utrecht-code">Storybook URL (CSS)</code> ingevuld. Bekijk hiervoor de <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+community+components" class="utrecht-link utrecht-link--html-a">Communityborden</a>.</p>
               <p>De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.</p>
               <p><strong>🚩 Checkpoint</strong>: Storybook (CSS)</p>
-              <h2 id="implementatie-voldoet-aan-naam-en-doel-uit-de-github-discussion" class="utrecht-heading-2">Implementatie voldoet aan naam en doel uit de GitHub Discussion</h2>
+              <h2 id="implementatie-voldoet-aan-naam-en-beschrijving-uit-de-github-discussion" class="utrecht-heading-2">Implementatie voldoet aan naam en beschrijving uit de GitHub Discussion</h2>
               <p>Doel: De component is de component dat we als kernteam verwachten.</p>
-              <p>In de GitHub Discussion van de component staan de naam en het doel genoteerd. Check of de implementatie van jouw organisatie hieraan voldoet. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.</p>
-              <p>Noteer de implementatie bijvoorbeeld <code class="utrecht-code">utrecht-paragraph</code> of <code class="utrecht-code">ams-paragraph</code> in de kolom voor &#x27;Implementatie&#x27;.</p>
+              <p>In de GitHub Discussion van de component staan de naam en de beschrijving genoteerd. Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de Storybook URL die in het Communitybord is ingevuld.</p>
+              <p>Vervolgens heb je twee opties:</p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Komt de naam van de component overeen met de naam uit de Github Discussion? Dan selecteer je &#x27;Done&#x27;.</li>
+               <li class="utrecht-unordered-list__item">Komt de naam niet overeen maar voldoet de implementatie verder wel? Dan selecteer je &#x27;Done met Alias&#x27;.</li>
+              </ul>
               <p><strong>Tip!</strong> Met implementatie bedoelen we bijvoorbeeld <code class="utrecht-code">utrecht-button</code> of <code class="utrecht-code">ams-button</code>. Een specifiek type van een implementatie, bijvoorbeeld <code class="utrecht-code">zonnedael-sparkly-button</code>, noemen we een variant.</p>
               <p><strong>🚩 Checkpoint</strong>: Implementatie voldoet</p>
               <h2 id="implementatie-heeft-minimaal-kleur-en-typografie-beslissingen-met-design-tokens-geïmplementeerd" class="utrecht-heading-2">Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd</h2>
@@ -337,7 +345,7 @@
               <p>Deze stap kan enkel worden uitgevoerd door het kernteam.</p>
               <ul role="list" class="utrecht-unordered-list">
                <li class="utrecht-unordered-list__item">Voeg de component toe aan het <code class="utrecht-code">Communicatie &amp; PR</code> project. Zo wordt hij meegenomen in de volgende Heartbeat, Nieuwsbrief en op LinkedIn</li>
-               <li class="utrecht-unordered-list__item">We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat het component pas na die statusaanpassing dan als “Community” op de website staat.</li>
+               <li class="utrecht-unordered-list__item">We zetten het checkpoint op Done vóór de promotie echt is gedaan, omdat de component pas na die statusaanpassing dan als “Community” op de website staat.</li>
               </ul>
               <p><strong>🚩 Checkpoint</strong>: Promotie</p>
               <h2 id="website-geupdate-met-nieuwe-status" class="utrecht-heading-2">Website geupdate met nieuwe status</h2>
@@ -352,15 +360,15 @@
               <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✨ {naam-component} is nu Community ✨</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Bekijk {naam-component}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-component-op-nldesignsystem.nl}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain">: {doel van het component}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Bekijk {naam-component}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-component-op-nldesignsystem.nl}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain">: {beschrijving van de component}</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help ons de component naar Candidate te brengen door ons in de </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor het {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> te laten weten waar je het gebruikt.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help ons de component naar Candidate te brengen door ons in de </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{link-naar-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> te laten weten waar je het gebruikt.</span>
 </span></code></pre>
               <h3 id="communityleden-selecteren-voor-credits" class="utrecht-heading-3">Communityleden selecteren voor credits</h3>
               <p>Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer. Dat kan door activiteit in de Discussion te zien en naar commits te kijken in de code van het community component.</p>
               <h3 id="nieuwe-status-bevestigen-met-credit" class="utrecht-heading-3">Nieuwe status bevestigen met credit</h3>
-              <p>Plaats na het selecteren een comment in het issue voor dit component. Meld dat het component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:</p>
+              <p>Plaats na het selecteren een comment in het issue voor dit component. Meld dat de component nu Community status heeft en bedank de betrokkenen, bijvoorbeeld:</p>
               <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Met dank aan {persoon/personen} van {organisatie} is {component} nu beschikbaar in de Community!</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
