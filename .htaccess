@@ -1,0 +1,59 @@
+DirectoryIndex index.html
+
+Redirect 301 "/footer/toegankelijkheidsverklaring" "/toegankelijkheidsverklaring"
+Redirect 301 "/footer/colofon" "/colofon"
+Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022"
+Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/leverancier/introductie"
+Redirect 301 "/counter-badge" "/number-badge"
+Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
+Redirect 301 "/blog/nlds-zelfstandig" "/blog/nl-design-system-zelfstandig-verder"
+Redirect 301 "/componenten/definition-of-done" "/handboek/component-bijdragen/definition-of-done"
+Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/component-bijdragen/help-wanted-stappenplan"
+Redirect 301 "/handboek/community-stappenplan" "/handboek/component-bijdragen/community-stappenplan"
+Redirect 301 "/handboek/candidate-stappenplan" "/handboek/component-bijdragen/candidate-stappenplan"
+Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen/hall-of-fame-stappenplan"
+Redirect 301 "/handboek/component-bijdragen/community-stappenplan-voor-organisaties" "/handboek/component-bijdragen/community-stappenplan/voor-organisaties"
+Redirect 301 "/button-group" "/action-group"
+Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
+Redirect 301 "/definition-list" "/description-list"
+Redirect 301 "/summary-list" "/form-summary"
+Redirect 301 "/wcag/introduction" "/wcag"
+Redirect 301 "/textarea" "/text-area"
+
+RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
+
+RedirectMatch 301 "^/meedoen/als-organisatie/(._)$" "/handboek/organisatie$1"
+RedirectMatch 301 "^/meedoen/als-leverancier/(._)$" "/handboek/leverancier$1"
+RedirectMatch 301 "^/meedoen/als-developer/(.*)$" "/handboek/developer$1"
+RedirectMatch 301 "^/meedoen/als-designer/(.*)$" "/handboek/designer$1"
+RedirectMatch 301 "^/meedoen(.*)$" "/handboek$1"
+
+RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.\*)$" "/richtlijnen/formulieren/$1"
+Redirect 301 "/richtlijnen/formulieren/overzicht" "/richtlijnen/formulieren"
+Redirect 301 "/richtlijnen/formulieren/overzicht/" "/richtlijnen/formulieren"
+Redirect 301 "/richtlijnen/stijl/overzicht" "/richtlijnen/stijl"
+Redirect 301 "/richtlijnen/stijl/overzicht/" "/richtlijnen/stijl"
+Redirect 301 "/events/design-systems-week-2023/overzicht" "/events/design-systems-week-2023/"
+Redirect 301 "/events/design-systems-week-2023/overzicht/" "/events/design-systems-week-2023/"
+Redirect 301 "/events/design-systems-week-2023/en/overview" "/events/design-systems-week-2023/en/program/"
+Redirect 301 "/events/design-systems-week-2023/en/overview/" "/events/design-systems-week-2023/en/program/"
+
+RedirectMatch 301 "^/project/events(.\*)$" "/community/events$1"
+Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
+
+Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
+RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
+
+# until we have multiple factsheets and turn /factsheets into an overview page
+
+RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
+
+# until the component is part of help-wanted board
+
+Redirect 307 "/calendar" "/componenten"
+Redirect 307 "/character-count" "/componenten"
+Redirect 307 "/form-field-radio-option" "/componenten"
+Redirect 307 "/form-field-checkbox-option" "/componenten"
+Redirect 307 "/tooltip" "/componenten"
+
+ErrorDocument 404 /404.html
