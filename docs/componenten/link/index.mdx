@@ -13,27 +13,27 @@ slug: /link
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
 import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
 import {
-DefinitionOfDone,
-HelpImproveComponent,
-Implementations,
-Introduction,
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
 } from "@site/src/components/ComponentPage";
-import Wcag111 from "./\_wcag-1.1.1.md"; // custom
-import Wcag143 from "/docs/componenten/ac/\_wcag-1.4.3.md"; // ac
-import Wcag144 from "/docs/componenten/ac/\_wcag-1.4.4.md"; // ac
-import Wcag145 from "/docs/wcag/summaries/\_1.4.5-summary.md"; // summary
-import Wcag1411 from "/docs/componenten/ac/\_wcag-1.4.11.md"; // ac
-import Wcag1412 from "/docs/componenten/ac/\_wcag-1.4.12.md"; // ac
-import Wcag211 from "/docs/componenten/ac/\_wcag-2.1.1-link.md"; // ac
-import Wcag244 from "/docs/wcag/summaries/\_2.4.4-summary.md"; // summary
-import Wcag247 from "/docs/componenten/ac/\_wcag-2.4.7.md"; // ac
-import Wcag2413 from "/docs/componenten/ac/\_wcag-2.4.13.md"; // ac
-import Wcag252 from "/docs/componenten/ac/\_wcag-2.5.2.md"; // ac
-import Wcag253 from "/docs/componenten/ac/\_wcag-2.5.3-link.md"; // ac
-import Wcag255 from "/docs/componenten/ac/\_wcag-2.5.5.md"; // ac
-import Wcag312 from "/docs/componenten/ac/\_wcag-3.1.2.md"; // ac
-import Wcag324 from "./\_wcag-3.2.4.md"; // custom
-import Wcag412 from "/docs/componenten/ac/\_wcag-4.1.2-link.md"; // ac
+import Wcag111 from "./_wcag-1.1.1.md"; // custom
+import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md"; // ac
+import Wcag144 from "/docs/componenten/ac/_wcag-1.4.4.md"; // ac
+import Wcag145 from "/docs/wcag/summaries/_1.4.5-summary.md"; // summary
+import Wcag1411 from "/docs/componenten/ac/_wcag-1.4.11.md"; // ac
+import Wcag1412 from "/docs/componenten/ac/_wcag-1.4.12.md"; // ac
+import Wcag211 from "/docs/componenten/ac/_wcag-2.1.1-link.md"; // ac
+import Wcag244 from "/docs/wcag/summaries/_2.4.4-summary.md"; // summary
+import Wcag247 from "/docs/componenten/ac/_wcag-2.4.7.md"; // ac
+import Wcag2413 from "/docs/componenten/ac/_wcag-2.4.13.md"; // ac
+import Wcag252 from "/docs/componenten/ac/_wcag-2.5.2.md"; // ac
+import Wcag253 from "/docs/componenten/ac/_wcag-2.5.3-link.md"; // ac
+import Wcag255 from "/docs/componenten/ac/_wcag-2.5.5.md"; // ac
+import Wcag312 from "/docs/componenten/ac/_wcag-3.1.2.md"; // ac
+import Wcag324 from "./_wcag-3.2.4.md"; // custom
+import Wcag412 from "/docs/componenten/ac/_wcag-4.1.2-link.md"; // ac
 
 {/* Add name and description for the component */}
 export const title = "Link";
@@ -65,8 +65,7 @@ export const component = componentProgress.find((item) => item.number === issueN
       component: <Wcag145 />,
     },
     {
-      title:
-        "De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
+      title: "De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
       sc: "2.4.4",
       status: "",
       component: <Wcag244 />,
@@ -181,8 +180,7 @@ export const component = componentProgress.find((item) => item.number === issueN
       component: <Wcag111 />,
     },
     {
-      title:
-        "De Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Link voor dient",
+      title: "De Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Link voor dient",
       sc: "4.1.2",
       status: "",
       component: <Wcag412 />,

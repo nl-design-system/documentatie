@@ -19,6 +19,7 @@ Maar duidelijker is:
 ```html
 <a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>
 ```
+
 NL Design System richtlijnen:
 
 - [Gebruik SVG voor iconen en geen font](/richtlijnen/stijl/iconen/gebruik-svg)
