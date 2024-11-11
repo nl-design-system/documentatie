@@ -32,7 +32,7 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
   return (
     <>
       <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--desktop'])}>
-        <UtrechtBreadcrumbNav {...restProps}>
+        <UtrechtBreadcrumbNav {...restProps} label="breadcrumb">
           {links.map(({ label, href, rel }, index, { length }) => (
             <Fragment key={index}>
               <BreadcrumbNavLink
