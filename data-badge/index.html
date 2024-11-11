@@ -30,8 +30,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.59a59857.css" />
-  <script src="/assets/js/runtime~main.0d99e0c8.js" defer="defer"></script>
-  <script src="/assets/js/main.9ee0d6bd.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.c6b0c5ca.js" defer="defer"></script>
+  <script src="/assets/js/main.ff8ff149.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -800,6 +800,90 @@
                 </div>
                </div>
               </div>
+              <h2 id="acceptatiecriteria" class="utrecht-heading-2">Acceptatiecriteria</h2>
+              <!-- -->
+              <details>
+               <summary><h3>Toegankelijkheid algemeen</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">Gebruik geen afbeeldingen van tekst voor de Data Badge</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
+                </dl>
+                <p>Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij om een logo gaat, zoals het DigiD-logo.</p>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
+                </ul>
+               </div>
+              </details>
+              <details>
+               <summary><h3>Toegankelijkheid visueel ontwerp</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.1" class="utrecht-link utrecht-link--html-a">1.4.1 Gebruik van kleur</a></dd>
+                </dl>
+                <p>Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.</p>
+                <p>Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst &#x27;fout&#x27;, en een groene Data Badge met de tekst &#x27;gelukt&#x27;.</p>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/kleuren/doel" class="utrecht-link utrecht-link--html-a">Gebruik kleur met een doel</a></li>
+                </ul>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
+                </dl>
+                <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item">4,5:1 contrast voor normale tekst.</li>
+                 <li class="utrecht-unordered-list__item">3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
+                 <li class="utrecht-unordered-list__item">3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                </ul>
+                <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+                </ul>
+               </div>
+              </details>
+              <details>
+               <summary><h3>Toegankelijkheid screenreader</h3></summary>
+               <div>
+                <h4 class="utrecht-heading-4">Als er in de Data Badge een informatief icoon staat, is er een goed tekstalternatief</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.1.1" class="utrecht-link utrecht-link--html-a">1.1.1 Niet-tekstuele content</a></dd>
+                </dl>
+                <p>Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.</p>
+                <p>Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een <code class="utrecht-code">img</code> kan dan een leeg <code class="utrecht-code">alt</code>-attribuut krijgen (<code class="utrecht-code">alt=&quot;&quot;</code>).</p>
+                <p>Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.</p>
+                <p>Een <code class="utrecht-code">img</code> met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.</p>
+                <pre class="utrecht-code-block" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">klok.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">tijd</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token plain">12.45</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                <p>NL Design System richtlijnen:</p>
+                <ul role="list" class="utrecht-unordered-list">
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/iconen/gebruik-svg" class="utrecht-link utrecht-link--html-a">Gebruik SVG voor iconen en geen font</a></li>
+                 <li class="utrecht-unordered-list__item"><a href="/richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code" class="utrecht-link utrecht-link--html-a">Toepassen van een SVG in code</a></li>
+                </ul>
+               </div>
+               <div>
+                <h4 class="utrecht-heading-4">Gebruik zoveel mogelijk semantische HTML voor de Data Badge</h4>
+                <dl>
+                 <dt>WCAG</dt>
+                 <dd><a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a></dd>
+                </dl>
+                <p>
+                 Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het <a href="%5Burl%5D(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">time</code>-element</a> als het om een datum of een tijd gaat.
+                </p>
+                <p>De toevoeging van de Data Badge mag niet verwarrend zijn voor screenreadergebruikers. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.</p>
+               </div>
+              </details>
               <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
               <p class="utrecht-paragraph">
                We vinden het belangrijk dat
@@ -845,6 +929,7 @@
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#definition-of-done" class="table-of-contents__link toc-highlight">Definition of Done</a></li>
              <li><a href="#implementaties" class="table-of-contents__link toc-highlight">Implementaties</a></li>
+             <li><a href="#acceptatiecriteria" class="table-of-contents__link toc-highlight">Acceptatiecriteria</a></li>
              <li><a href="#help-component-verbeteren" class="table-of-contents__link toc-highlight">Help component verbeteren</a></li>
             </ul>
            </div>
