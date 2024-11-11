@@ -6,6 +6,6 @@ Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:
 <a href="/inbox">
   Inbox
   <data class="utrecht-number-badge" value="4">4</data>
-  <span class="screenreader-only">nieuwe berichten</span
+  <span class="screenreader-only">nieuwe berichten</span>
 </a>
 ```
