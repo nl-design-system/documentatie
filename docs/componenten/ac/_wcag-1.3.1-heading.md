@@ -1,4 +1,4 @@
-In HTML zijn de juiste elementen `h1` tot en met `h6`.
+In HTML zijn de juiste elementen voor koppen `h1` tot en met `h6`.
 
 Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.
 
