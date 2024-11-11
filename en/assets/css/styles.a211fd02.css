@@ -6575,6 +6575,20 @@ code .namespace {
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
 }
+details div {
+ border: 1px solid #ccc;
+ margin-bottom: 1em;
+ padding: 1em;
+}
+details dl {
+ grid-gap: 4px 16px;
+ display: grid;
+ grid-template-columns: max-content;
+}
+details dd {
+ grid-column-start: 2;
+ margin: 0;
+}
 .example-form_t2kS {
  --utrecht-space-around: 1;
  --number-inline-size: calc(0.667ch + 0.332em);
@@ -6709,20 +6723,6 @@ code .namespace {
 }
 .speaker__organisation_bGt9 {
  font-size: 16px;
-}
-details div {
- border: 1px solid #ccc;
- margin-bottom: 1em;
- padding: 1em;
-}
-details dl {
- grid-gap: 4px 16px;
- display: grid;
- grid-template-columns: max-content;
-}
-details dd {
- grid-column-start: 2;
- margin: 0;
 }
 .contrast-ratio_qIvU {
  inline-size: 100%;
