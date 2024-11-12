@@ -6328,6 +6328,20 @@ code .namespace {
  flex-direction: column;
  min-height: 100%;
 }
+details div {
+ border: 1px solid #ccc;
+ margin-bottom: 1em;
+ padding: 1em;
+}
+details dl {
+ grid-gap: 4px 16px;
+ display: grid;
+ grid-template-columns: max-content;
+}
+details dd {
+ grid-column-start: 2;
+ margin: 0;
+}
 .dsw-session_O_Ah {
  border-block-end: 4px dotted #ccc;
  margin-block: 2em;
@@ -6574,20 +6588,6 @@ code .namespace {
  background: #ffd78e40;
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
-}
-details div {
- border: 1px solid #ccc;
- margin-bottom: 1em;
- padding: 1em;
-}
-details dl {
- grid-gap: 4px 16px;
- display: grid;
- grid-template-columns: max-content;
-}
-details dd {
- grid-column-start: 2;
- margin: 0;
 }
 .example-form_t2kS {
  --utrecht-space-around: 1;
