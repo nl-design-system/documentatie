@@ -1,6 +1,20 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [42112],
+ [79947],
  {
+  76126: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => s });
+   var r = n(52676),
+    i = n(24785);
+   function o(e) {
+    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden." }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'Je moet de afstand kunnen vergroten naar deze waardes:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte;" }), '\n', (0, r.jsx)(t.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Dit is te testen met een ', (0, r.jsx)(t.a, { href: 'https://html5accessibility.com/tests/tsbookmarklet.html', children: 'bookmarklet' }), ' of door in de inspector van de browser de volgende code toe te voegen aan de ', (0, r.jsx)(t.code, { children: 'head' }), ' van de pagina:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-css', children: '<style>\nbody * {\n    line-height: 1.5 !important;\n    letter-spacing: 0.12em !important;\n    word-spacing: 0.16em !important;\n}\nbody p {\n    margin-bottom: 2em !important;\n}\n</style>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+   }
+  },
   51217: (e, t, n) => {
    'use strict';
    n.d(t, { ZP: () => s });
@@ -9,6 +23,20 @@
    function o(e) {
     const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: '4,5:1 contrast voor normale tekst.' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor grotere letters (vanaf 24 pixels).' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Hogere verhoudingen mogen natuurlijk altijd. Met de ', (0, r.jsx)(t.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.'] }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+   }
+  },
+  60945: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => s });
+   var r = n(52676),
+    i = n(24785);
+   function o(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.' }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
    }
    function s(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -29,55 +57,41 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
    }
   },
-  15850: (e, t, n) => {
+  77590: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => f, component: () => x, contentTitle: () => w, default: () => T, description: () => b, frontMatter: () => j, issueNumber: () => k, metadata: () => y, title: () => v, toc: () => A });
+   n.r(t), n.d(t, { assets: () => w, component: () => b, contentTitle: () => p, default: () => x, description: () => A, frontMatter: () => m, issueNumber: () => v, metadata: () => j, title: () => f, toc: () => y });
    var r = n(52676),
     i = n(24785),
     o = n(76037),
     s = n(34434),
     c = n(23952);
    function a(e) {
-    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.' }), '\n', (0, r.jsxs)(t.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een ', (0, r.jsx)(t.code, { children: 'img' }), ' kan dan een leeg ', (0, r.jsx)(t.code, { children: 'alt' }), '-attribuut krijgen (', (0, r.jsx)(t.code, { children: 'alt=""' }), ').'] }), '\n', (0, r.jsx)(t.p, { children: 'Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.' }), '\n', (0, r.jsxs)(t.p, { children: ['Een ', (0, r.jsx)(t.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<span><img src="klok.svg" alt="tijd" />12.45</span>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n'] })] });
+    const t = { code: 'code', p: 'p', pre: 'pre', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: "Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor screenreadergebruikers. Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat." }), '\n', (0, r.jsx)(t.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
    }
    function l(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
    }
-   function d(e) {
-    const t = { a: 'a', code: 'code', p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het ', (0, r.jsxs)(t.a, { href: '%5Burl%5D(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)', children: [(0, r.jsx)(t.code, { children: 'time' }), '-element'] }), ' als het om een datum of een tijd gaat.'] }), '\n', (0, r.jsx)(t.p, { children: 'De toevoeging van de Data Badge mag niet verwarrend zijn voor screenreadergebruikers. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.' })] });
-   }
-   function u(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(d, { ...e }) }) : d(e);
-   }
-   function h(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.' }), '\n', (0, r.jsx)(t.p, { children: "Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst 'fout', en een groene Data Badge met de tekst 'gelukt'." }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/doel', children: 'Gebruik kleur met een doel' }) }), '\n'] })] });
-   }
-   function g(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(h, { ...e }) }) : h(e);
-   }
-   var m = n(51217),
-    p = n(58458);
-   const j = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] },
-    w = void 0,
-    y = { id: 'componenten/data-badge/index', title: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] }, sidebar: 'componenten', previous: { title: 'Color Sample', permalink: '/color-sample' }, next: { title: 'Date Input', permalink: '/date-input' } },
-    f = {},
-    A = [
+   var d = n(51217),
+    u = n(60945),
+    h = n(58458),
+    g = n(76126);
+   const m = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' },
+    p = void 0,
+    j = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
+    w = {},
+    y = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    v = 'Data Badge',
-    b = 'Label met extra informatie, zoals een categorie of een eigenschap.',
-    k = 94,
-    x = o.find((e) => e.number === k);
-   function C(e) {
+    f = 'Number Badge',
+    A = 'Klein label dat de aandacht trekt informeert over een aantal.',
+    v = 7,
+    b = o.find((e) => e.number === v);
+   function k(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -87,48 +101,43 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(c.Rv, { component: x, headingLevel: 1, description: b }),
+      (0, r.jsx)(c.Rv, { component: b, headingLevel: 1, description: A }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(c.cN, { component: x, headingLevel: 3 }),
+      (0, r.jsx)(c.cN, { component: b, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(c.W, { component: x, headingLevel: 3 }),
+      (0, r.jsx)(c.W, { component: b, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
       '\n',
-      (0, r.jsx)(s.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'Gebruik geen afbeeldingen van tekst voor de Data Badge', sc: '1.4.5', status: '', component: (0, r.jsx)(p.ZP, {}) }] }),
+      (0, r.jsx)(s.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge', sc: '1.4.5', status: '', component: (0, r.jsx)(h.ZP, {}) }] }),
+      '\n',
+      (0, r.jsx)(s.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, r.jsx)(d.ZP, {}) }] }),
       '\n',
       (0, r.jsx)(s.t, {
        headingLevel: 4,
-       testCategory: 'Toegankelijkheid visueel ontwerp',
+       testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken', sc: '1.4.1', status: '', component: (0, r.jsx)(g, {}) },
-        { title: 'De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, r.jsx)(m.ZP, {}) },
+        { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(u.ZP, {}) },
+        { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(g.ZP, {}) },
        ],
       }),
       '\n',
-      (0, r.jsx)(s.t, {
-       headingLevel: 3,
-       testCategory: 'Toegankelijkheid screenreader',
-       items: [
-        { title: 'Als er in de Data Badge een informatief icoon staat, is er een goed tekstalternatief', sc: '1.1.1', status: '', component: (0, r.jsx)(l, {}) },
-        { title: 'Gebruik zoveel mogelijk semantische HTML voor de Data Badge', sc: '1.3.1', status: '', component: (0, r.jsx)(u, {}) },
-       ],
-      }),
+      (0, r.jsx)(s.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, r.jsx)(l, {}) }] }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(c.vM, { component: x, headingLevel: 3 }),
+      (0, r.jsx)(c.vM, { component: b, headingLevel: 3 }),
      ],
     });
    }
-   function T(e = {}) {
+   function x(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(C, { ...e }) }) : C(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(k, { ...e }) }) : k(e);
    }
   },
   98507: (e, t, n) => {
@@ -277,7 +286,7 @@
   },
   23952: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => W, vM: () => D, W: () => R, Rv: () => z });
+   n.d(t, { cN: () => W, vM: () => N, W: () => R, Rv: () => z });
    var r = n(56150),
     i = n(4814),
     o = (n(75271), n(39854)),
@@ -420,7 +429,7 @@
         })
       : (0, d.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    D = (e) => {
+    N = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id).tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(r.nv, { children: ['We vinden het belangrijk dat ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, d.jsxs)(r.QI, { children: [n ? (0, d.jsxs)(r.AS, { children: ['Vul de ', (0, d.jsx)(r.rU, { href: n, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, d.jsxs)(r.AS, { children: [(0, d.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, d.jsxs)(r.AS, { children: ['Draag bij aan de voortang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, d.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, d.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
