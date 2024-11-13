@@ -1,6 +1,6 @@
 De gemarkeerde tekst is ook herkenbaar voor hulpapparatuur zoals screenreaders en brailleleesregels. Daarvoor kun je het beste semantische HTML gebruiken.
 
-In het geval van het Mark component is dat het HTML-element `mark`.
+In het geval van de component Mark is dat het HTML-element `mark`.
 
 Dus niet zo:
 
