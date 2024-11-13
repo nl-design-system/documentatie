@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Code
 pagination_label: Code
-description: Markeert tekst dat code vertegenwoordigt.
+description: Markeert korte tekst die code vertegenwoordigt.
 slug: /code
 keywords:
   - code block
@@ -13,21 +13,30 @@ keywords:
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import Wcag131 from "./_wcag-1.3.1.md"; // custom
+import Wcag141 from "/docs/wcag/summaries/_1.4.1-summary.md"; // summary
+import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md"; // ac
+import Wcag144 from "/docs/componenten/ac/_wcag-1.4.4.md"; // ac
+import Wcag1411 from "./_wcag-1.4.11.md"; // custom
+import Wcag1412 from "/docs/componenten/ac/_wcag-1.4.12.md"; // ac
 
 {/* Add name and description for the component */}
 export const title = "Code";
-export const description = "Markeert tekst dat code vertegenwoordigt.";
+export const description = "Markeert korte tekst die code vertegenwoordigt.";
 export const issueNumber = 326;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+Let op: Gebruik de component [Code Block](/code-block) als de code meerdere regels beslaat.
 
 ## Definition of Done
 
@@ -36,6 +45,68 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+## Acceptatiecriteria
+
+{/* headingLevel is the heading of the items, the list is hardcoded as an H3 for now. */}
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "De tekst, gemarkeerd als code, is niet alleen herkenbaar aan een andere achtergrondkleur",
+      sc: "1.4.1",
+      status: "",
+      component: <Wcag141 />,
+    },
+    {
+      title: "De tekst, gemarkeerd als code, heeft voldoende contrast met de achtergrondkleur",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+    },
+    {
+      title:
+        "De achtergrondkleur van de Code component heeft een contrast van minimaal 3:1 met de achtergrondkleur van de pagina",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Als je inzoomt naar 200% blijft alle tekst leesbaar",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid screenreader"
+  items={[
+    {
+      title: "Gebruik het juiste HTML-element voor de Code component",
+      sc: "1.3.1",
+      status: "",
+      component: <Wcag131 />,
+    },
+  ]}
+/>
 
 ## Help component verbeteren
 
