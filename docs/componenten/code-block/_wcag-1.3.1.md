@@ -32,4 +32,4 @@ Maar zo:
 </pre>
 ```
 
-**Let op**: Het element `<code>` wordt op het moment van schrijven (2024) nog niet ondersteund door hulpsoftware. Wellicht in de toekomst wel, dan is het goed om nu alvast het juiste element te gebruiken.
+**Let op**: Het element `<code>` wordt op het moment van schrijven (2024) nog niet ondersteund door alle hulpsoftware. Wellicht in de toekomst wel, dan is het goed om nu alvast het juiste element te gebruiken.
