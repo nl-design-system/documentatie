@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Gebruik voor tekst gemarkeerd als code semantische HTML gebruiken. In het geval van de component Code is dat het HTML-element `code`.
+Gebruik voor tekst gemarkeerd als code semantische HTML. In het geval van de component Code is dat het HTML-element `code`.
 
 Dus niet zo:
 
