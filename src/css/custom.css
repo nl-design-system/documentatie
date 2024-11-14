@@ -57,6 +57,8 @@
   --navbar-inner-min-height: 64px;
   --utrecht-button-group-inline-gap: 1ch;
   --utrecht-button-icon-gap: 1ch;
+  --docsearch-muted-color: #757575 !important;
+  --docsearch-modal-width: 50em !important;
 }
 
 .utrecht-form-field--checkbox {
@@ -943,4 +945,9 @@ pre {
 /* Temporary fix for accordion spacing */
 .utrecht-accordion__header {
   margin: 0;
+}
+
+.DocSearch-Label {
+  font-size: 0.9em !important;
+  line-height: 1 !important;
 }
