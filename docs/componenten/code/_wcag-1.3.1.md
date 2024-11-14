@@ -1,8 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De tekst gemarkeerd als code is ook herkenbaar voor hulpapparatuur zoals screenreaders en brailleleesregels. Daarvoor kun je het beste semantische HTML gebruiken.
-
-In het geval van de component Code is dat het HTML-element `code`.
+Gebruik voor tekst gemarkeerd als code semantische HTML gebruiken. In het geval van de component Code is dat het HTML-element `code`.
 
 Dus niet zo:
 
