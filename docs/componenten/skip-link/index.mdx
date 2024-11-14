@@ -63,6 +63,185 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 {/* headingLevel is the heading of the items, the list is hardcoded as an H3 for now. */}
 
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid algemeen"
+  items={[
+    {
+      title: "",
+      sc: "1.4.1",
+      status: "",
+      component: <Wcag143 />,
+    },
+    {
+      title: "",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title: "",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+    {
+      title: "",
+      sc: "2.4.1",
+      status: "",
+      component: <Wcag241 />,
+    },
+    {
+      title: "",
+      sc: "2.4.4",
+      status: "",
+      component: <Wcag244 />,
+    },
+    {
+      title: "",
+      sc: "2.5.2",
+      status: "",
+      component: <Wcag252 />,
+    },
+    {
+      title: "",
+      sc: "2.5.3",
+      status: "",
+      component: <Wcag253 />,
+    },
+    {
+      title: "",
+      sc: "2.5.5",
+      status: "",
+      component: <Wcag255 />,
+    },
+    {
+      title: "",
+      sc: "3.2.1",
+      status: "",
+      component: <Wcag321 />,
+    },
+    {
+      title: "",
+      sc: "3.2.3",
+      status: "",
+      component: <Wcag323 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+    },
+    {
+      title: "",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
+      title: "",
+      sc: "2.4.13",
+      status: "",
+      component: <Wcag2413 />,
+    },
+    {
+      title: "",
+      sc: "2.5.5",
+      status: "",
+      component: <Wcag255 />,
+    },
+    {
+      title: "",
+      sc: "3.2.4",
+      status: "",
+      component: <Wcag324 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "",
+      sc: "1.4.10",
+      status: "",
+      component: <Wcag1410 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={4}
+  testCategory="Toegankelijkheid toetsenbord"
+  items={[
+    {
+      title: "",
+      sc: "2.1.1",
+      status: "",
+      component: <Wcag211 />,
+    },
+    {
+      title: "",
+      sc: "2.1.2",
+      status: "",
+      component: <Wcag212 />,
+    },
+    {
+      title: "",
+      sc: "2.4.3",
+      status: "",
+      component: <Wcag243 />,
+    },
+    {
+      title: "",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
+      title: "",
+      sc: "2.4.11",
+      status: "",
+      component: <Wcag2411 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid screenreader"
+  items={[
+    {
+      title: "",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag 312 />,
+    },
+    {
+      title: "",
+      sc: "4.1.2",
+      status: "",
+      component: <Wcag 412 />,
+    },
+  ]}
+/>
+
 ## Help component verbeteren
 
 <HelpImproveComponent component={component} headingLevel={3} />
