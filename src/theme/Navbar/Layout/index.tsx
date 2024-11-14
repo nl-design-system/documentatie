@@ -4,11 +4,7 @@ import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-com
 import type { Props } from '@theme/Navbar/Layout';
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
 import clsx from 'clsx';
-import React, { type ComponentProps } from 'react';
-
-function NavbarBackdrop(props: ComponentProps<'div'>) {
-  return <div role="presentation" {...props} className={clsx('navbar-sidebar__backdrop', props.className)} />;
-}
+import React from 'react';
 
 export default function NavbarLayout({ children }: Props): React.Element {
   const {
@@ -32,7 +28,6 @@ export default function NavbarLayout({ children }: Props): React.Element {
       })}
     >
       {children}
-      <NavbarBackdrop onClick={mobileSidebar.toggle} />
       <NavbarMobileSidebar />
     </nav>
   );

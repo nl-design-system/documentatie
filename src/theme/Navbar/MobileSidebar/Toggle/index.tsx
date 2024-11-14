@@ -4,6 +4,7 @@ import React from 'react';
 
 export default function MobileSidebarToggle(): React.Element {
   const { toggle, shown } = useNavbarMobileSidebar();
+
   return (
     <Button
       appearance="subtle-button"
