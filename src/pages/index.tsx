@@ -161,7 +161,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
-                  alt="Logo Rijkshuisstijl Community, naar Rijkshuisstijl Community op GitHub"
+                  alt="Rijkshuisstijl Community logo, naar Rijkshuisstijl Community op GitHub"
                 />
               </CardIllustration>
             </Card>
