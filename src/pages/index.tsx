@@ -105,7 +105,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg"
-                  alt="Utrecht logo"
+                  alt="Gemeente Utrecht logo, naar Gemeente Utrecht op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -113,7 +113,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg"
-                  alt="Den Haag logo"
+                  alt="Gemeente Den Haag logo, naar Gemeente Den Haag op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -121,7 +121,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg"
-                  alt="Amsterdam logo"
+                  alt="Gemeente Amsterdam logo, naar Gemeente Amsterdam op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -129,7 +129,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
-                  alt="Rotterdam logo"
+                  alt="Gemeente Rotterdam logo, naar Gemeente Rotterdam op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -137,7 +137,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
-                  alt="Tilburg logo"
+                  alt="Gemeente Tilburg logo, naar Gemeente Tilburg op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -145,7 +145,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
-                  alt="Rijksdienst voor Ondernemend Nederland logo"
+                  alt="Rijksdienst voor Ondernemend Nederland logo, naar RVO op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -153,7 +153,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
-                  alt="Logius logo"
+                  alt="Logius logo, naar LUX op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -161,7 +161,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
-                  alt="Rijkshuisstijl Community"
+                  alt="Logo Rijkshuisstijl Community, naar Rijkshuisstijl Community op GitHub"
                 />
               </CardIllustration>
             </Card>
