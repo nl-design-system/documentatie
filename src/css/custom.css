@@ -944,3 +944,15 @@ pre {
 .utrecht-accordion__header {
   margin: 0;
 }
+
+.DocSearch {
+  --docsearch-muted-color: #757575;
+  --docsearch-modal-width: 50em;
+}
+.DocSearch .DocSearch-Label {
+  font-size: 0.9em;
+  line-height: 1;
+}
+.docs-doc-page ul {
+  margin: auto 0;
+}
