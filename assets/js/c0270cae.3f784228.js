@@ -3,7 +3,7 @@
  [81710],
  {
   34119: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => m, contentTitle: () => p, default: () => k, frontMatter: () => u, metadata: () => j, toc: () => v });
+   i.r(n), i.d(n, { assets: () => m, contentTitle: () => p, default: () => w, frontMatter: () => u, metadata: () => j, toc: () => v });
    var t = i(52676),
     r = i(24785),
     s = i(57716),
@@ -13,8 +13,8 @@
     d = i(52057),
     c = i(78836);
    function h(e) {
-    const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Maak het aanwijsgebied van buttons, links en formuliervelden groot genoeg, zodat het makkelijker is om deze te selecteren.\nHoud hiervoor een grootte aan van tenminste 44 bij 44 pixels.' }), '\n', (0, t.jsx)(n.p, { children: 'Dit zorgt ervoor dat de website makkelijker te navigeren is en dat formulieren makkelijker in te vullen zijn. Dit geldt speciaal voor mensen met dikke vingers op aanraakschermen en muisgebruikers met trillende handen door bijvoorbeeld Parkinson.' })] });
+    const n = { p: 'p', strong: 'strong', ...(0, r.a)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Maak het aanwijsgebied van buttons, links en formuliervelden groot genoeg, zodat het makkelijker is om deze te selecteren.\nHoud hiervoor een grootte aan van tenminste 44 bij 44 pixels.' }), '\n', (0, t.jsx)(n.p, { children: 'Dit zorgt ervoor dat de website makkelijker te navigeren is en dat formulieren makkelijker in te vullen zijn. Dit geldt speciaal voor mensen met dikke vingers op aanraakschermen en muisgebruikers met trillende handen door bijvoorbeeld Parkinson.' }), '\n', (0, t.jsxs)(n.p, { children: [(0, t.jsx)(n.strong, { children: 'Let op' }), ': Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.'] })] });
    }
    function g(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -31,13 +31,13 @@
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function w(e) {
+   function k(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(a.j, { level: 1, conformanceLevel: 'Niveau AAA', children: 'WCAG-succescriterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid)' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(g, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(l.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#target-size-enhanced', children: (0, t.jsx)('span', { lang: 'en', children: '2.5.5 Target Size (Enhanced)' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#grootte-van-het-aanwijsgebied', children: '2.5.5 Grootte van het aanwijsgebied (uitgebreid)' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 2.5.5 Target Size (Enhanced)' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 2.5.5 Target Size (Enhanced)' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(o.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) })] });
    }
-   function k(e = {}) {
+   function w(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(w, { ...e }) }) : w(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(k, { ...e }) }) : k(e);
    }
   },
   45054: (e, n, i) => {
