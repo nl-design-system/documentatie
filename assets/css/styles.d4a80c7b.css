@@ -2839,9 +2839,6 @@ details dt {
 .docs-doc-page input[type="text"] {
  display: block;
 }
-.docs-doc-page ul {
- margin-bottom: 20px;
-}
 .docs-doc-page div.button {
  border: 1px solid #223c61;
  border-radius: 8px;
@@ -2944,6 +2941,17 @@ code .namespace {
 }
 .pra-donutchart-legend {
  display: none !important;
+}
+.DocSearch {
+ --docsearch-muted-color: #757575;
+ --docsearch-modal-width: 50em;
+}
+.DocSearch .DocSearch-Label {
+ font-size: 0.9em;
+ line-height: 1;
+}
+.docs-doc-page ul {
+ margin: auto 0;
 }
 @font-face {
  font-display: swap;
