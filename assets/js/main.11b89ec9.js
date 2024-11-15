@@ -1,4 +1,4 @@
-/*! For license information please see main.6092cabb.js.LICENSE.txt */
+/*! For license information please see main.11b89ec9.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -1589,7 +1589,7 @@
   },
   38889: (e, t, r) => {
    'use strict';
-   r.d(t, { Z: () => St });
+   r.d(t, { Z: () => Pt });
    var n = r(75271),
     o = r(4814),
     a = r(499),
@@ -2106,9 +2106,29 @@
    }
    const Je = { 'navbar-sidebar': 'navbar-sidebar_T4mg' };
    function et(e) {
-    let { header: t, primaryMenu: r, secondaryMenu: n } = e;
-    const { shown: a } = F();
-    return (0, s.jsxs)('div', { className: (0, o.Z)('navbar-sidebar', Je['navbar-sidebar']), children: [t, (0, s.jsxs)('div', { className: (0, o.Z)('navbar-sidebar__items', { 'navbar-sidebar__items--show-secondary': a }), children: [(0, s.jsx)('div', { className: 'navbar-sidebar__item menu', children: r }), (0, s.jsx)('div', { className: 'navbar-sidebar__item menu', children: n })] })] });
+    let { header: t, primaryMenu: r, secondaryMenu: a } = e;
+    const { shown: c } = F(),
+     i = (0, n.useRef)(null),
+     { shown: l, toggle: u } = (0, R.e)();
+    return (
+     (0, n.useEffect)(() => {
+      const e = i.current;
+      l ? e.showModal() : e.close();
+     }),
+     (0, n.useEffect)(() => {
+      const e = i.current;
+      function t(e) {
+       'Escape' === e.key && l && u();
+      }
+      return (
+       e.addEventListener('keydown', t),
+       () => {
+        e.removeEventListener('keydown', t);
+       }
+      );
+     }, [l]),
+     (0, s.jsxs)('dialog', { className: (0, o.Z)('navbar-sidebar', Je['navbar-sidebar']), ref: i, children: [t, (0, s.jsxs)('div', { className: (0, o.Z)('navbar-sidebar__items', { 'navbar-sidebar__items--show-secondary': c }), children: [(0, s.jsx)('div', { className: 'navbar-sidebar__item menu', children: r }), (0, s.jsx)('div', { className: 'navbar-sidebar__item menu', children: a })] })] })
+    );
    }
    function tt() {
     const e = (0, R.e)(),
@@ -2137,87 +2157,84 @@
     );
    }
    function ot(e) {
-    return (0, s.jsx)('div', { role: 'presentation', ...e, className: (0, o.Z)('navbar-sidebar__backdrop', e.className) });
-   }
-   function at(e) {
     let { children: t } = e;
     const {
       navbar: { hideOnScroll: r, style: n },
      } = (0, y.L)(),
      a = (0, R.e)(),
      { navbarRef: c } = (0, Ve.c)(r);
-    return (0, s.jsxs)('nav', { ref: c, 'aria-label': (0, l.I)({ id: 'theme.NavBar.navAriaLabel', message: 'Main', description: 'The ARIA label for the main navigation' }), className: (0, o.Z)('navbar', 'navbar--fixed-top', { 'navbar--dark': 'dark' === n, 'navbar--primary': 'primary' === n, 'navbar-sidebar--show': a.shown }), children: [t, (0, s.jsx)(ot, { onClick: a.toggle }), (0, s.jsx)(nt, {})] });
+    return (0, s.jsxs)('nav', { ref: c, 'aria-label': (0, l.I)({ id: 'theme.NavBar.navAriaLabel', message: 'Main', description: 'The ARIA label for the main navigation' }), className: (0, o.Z)('navbar', 'navbar--fixed-top', { 'navbar--dark': 'dark' === n, 'navbar--primary': 'primary' === n, 'navbar-sidebar--show': a.shown }), children: [t, (0, s.jsx)(nt, {})] });
    }
-   function ct() {
-    return (0, s.jsx)(at, { children: (0, s.jsx)(Ue, {}) });
+   function at() {
+    return (0, s.jsx)(ot, { children: (0, s.jsx)(Ue, {}) });
    }
-   function it(e) {
+   function ct(e) {
     let { copyright: t } = e;
     return (0, s.jsx)('div', { className: 'footer__copyright', dangerouslySetInnerHTML: { __html: t } });
    }
-   const lt = { footer: 'footer_VVap' };
-   function ut(e) {
+   const it = { footer: 'footer_VVap' };
+   function lt(e) {
     let { style: t, links: r, logo: n, copyright: a } = e;
-    return (0, s.jsx)('footer', { className: (0, o.Z)('footer', { 'footer--dark': 'dark' === t }, lt.footer), children: (0, s.jsxs)('div', { className: 'container--wide', children: [r, (n || a) && (0, s.jsxs)('div', { className: 'footer__bottom text--center', children: [n && (0, s.jsx)('div', { className: 'margin-bottom--sm', children: n }), a] })] }) });
+    return (0, s.jsx)('footer', { className: (0, o.Z)('footer', { 'footer--dark': 'dark' === t }, it.footer), children: (0, s.jsxs)('div', { className: 'container--wide', children: [r, (n || a) && (0, s.jsxs)('div', { className: 'footer__bottom text--center', children: [n && (0, s.jsx)('div', { className: 'margin-bottom--sm', children: n }), a] })] }) });
    }
-   function st(e) {
+   function ut(e) {
     let { item: t } = e;
     const { to: r, href: n, label: a, prependBaseUrlToHref: c, ...i } = t,
      l = (0, $.Z)(r),
      u = (0, $.Z)(n, { forcePrependBaseUrl: !0 });
     return (0, s.jsx)(q.Z, { className: (0, o.Z)('utrecht-link'), href: c ? u : n, to: l, ...i, children: a });
    }
-   function dt(e) {
+   function st(e) {
     let { item: t } = e;
-    return t.html ? (0, s.jsx)('li', { className: 'footer__item', dangerouslySetInnerHTML: { __html: t.html } }) : (0, s.jsx)('li', { className: 'footer__item', children: (0, s.jsx)(st, { item: t }) }, t.href ?? t.to);
+    return t.html ? (0, s.jsx)('li', { className: 'footer__item', dangerouslySetInnerHTML: { __html: t.html } }) : (0, s.jsx)('li', { className: 'footer__item', children: (0, s.jsx)(ut, { item: t }) }, t.href ?? t.to);
+   }
+   function dt(e) {
+    let { column: t } = e;
+    return (0, s.jsxs)('div', { className: 'col footer__col', children: [(0, s.jsx)('div', { className: 'footer__title', children: t.title }), (0, s.jsx)('ul', { className: 'footer__items clean-list', children: t.items.map((e, t) => (0, s.jsx)(st, { item: e }, t)) })] });
    }
    function ht(e) {
-    let { column: t } = e;
-    return (0, s.jsxs)('div', { className: 'col footer__col', children: [(0, s.jsx)('div', { className: 'footer__title', children: t.title }), (0, s.jsx)('ul', { className: 'footer__items clean-list', children: t.items.map((e, t) => (0, s.jsx)(dt, { item: e }, t)) })] });
-   }
-   function bt(e) {
     let { columns: t } = e;
-    return (0, s.jsx)('div', { className: 'row footer__links', children: t.map((e, t) => (0, s.jsx)(ht, { column: e }, t)) });
+    return (0, s.jsx)('div', { className: 'row footer__links', children: t.map((e, t) => (0, s.jsx)(dt, { column: e }, t)) });
    }
-   function pt() {
+   function bt() {
     return (0, s.jsx)('span', { className: 'footer__link-separator', children: '\xb7' });
    }
-   function mt(e) {
+   function pt(e) {
     let { item: t } = e;
-    return t.html ? (0, s.jsx)('span', { className: 'footer__link-item', dangerouslySetInnerHTML: { __html: t.html } }) : (0, s.jsx)(st, { item: t });
+    return t.html ? (0, s.jsx)('span', { className: 'footer__link-item', dangerouslySetInnerHTML: { __html: t.html } }) : (0, s.jsx)(ut, { item: t });
+   }
+   function mt(e) {
+    let { links: t } = e;
+    return (0, s.jsx)('div', { className: 'footer__links text--center', children: (0, s.jsx)('div', { className: 'footer__links', children: t.map((e, r) => (0, s.jsxs)(n.Fragment, { children: [(0, s.jsx)(pt, { item: e }), t.length !== r + 1 && (0, s.jsx)(bt, {})] }, r)) }) });
    }
    function gt(e) {
-    let { links: t } = e;
-    return (0, s.jsx)('div', { className: 'footer__links text--center', children: (0, s.jsx)('div', { className: 'footer__links', children: t.map((e, r) => (0, s.jsxs)(n.Fragment, { children: [(0, s.jsx)(mt, { item: e }), t.length !== r + 1 && (0, s.jsx)(pt, {})] }, r)) }) });
-   }
-   function ft(e) {
     let { links: t } = e;
     return (function (e) {
      return 'title' in e[0];
     })(t)
-     ? (0, s.jsx)(bt, { columns: t })
-     : (0, s.jsx)(gt, { links: t });
+     ? (0, s.jsx)(ht, { columns: t })
+     : (0, s.jsx)(mt, { links: t });
    }
-   const vt = { footerLogoLink: 'footerLogoLink_DDai' };
-   function kt(e) {
+   const ft = { footerLogoLink: 'footerLogoLink_DDai' };
+   function vt(e) {
     let { logo: t } = e;
     const { withBaseUrl: r } = (0, $.C)(),
      n = { light: r(t.src), dark: r(t.srcDark ?? t.src) };
     return (0, s.jsx)(re, { className: (0, o.Z)('footer__logo', t.className), alt: t.alt, sources: n, width: t.width, height: t.height, style: t.style });
    }
-   function yt(e) {
+   function kt(e) {
     let { logo: t } = e;
-    return t.href ? (0, s.jsx)(q.Z, { href: t.href, className: vt.footerLogoLink, target: t.target, children: (0, s.jsx)(kt, { logo: t }) }) : (0, s.jsx)(kt, { logo: t });
+    return t.href ? (0, s.jsx)(q.Z, { href: t.href, className: ft.footerLogoLink, target: t.target, children: (0, s.jsx)(vt, { logo: t }) }) : (0, s.jsx)(vt, { logo: t });
    }
-   function xt() {
+   function yt() {
     const { footer: e } = (0, y.L)();
     if (!e) return null;
     const { copyright: t, links: r, logo: n, style: o } = e;
-    return (0, s.jsx)(ut, { style: o, links: r && r.length > 0 && (0, s.jsx)(ft, { links: r }), logo: n && (0, s.jsx)(yt, { logo: n }), copyright: t && (0, s.jsx)(it, { copyright: t }) });
+    return (0, s.jsx)(lt, { style: o, links: r && r.length > 0 && (0, s.jsx)(gt, { links: r }), logo: n && (0, s.jsx)(kt, { logo: n }), copyright: t && (0, s.jsx)(ct, { copyright: t }) });
    }
-   const wt = n.memo(xt);
-   var _t = r(47637);
-   const jt = (0, T.Qc)([
+   const xt = n.memo(yt);
+   var wt = r(47637);
+   const _t = (0, T.Qc)([
     function (e) {
      let { children: t } = e;
      const r = (function () {
@@ -2279,7 +2296,7 @@
      return (0, s.jsx)(W.Provider, { value: r, children: t });
     },
     x.pl,
-    _t.OC,
+    wt.OC,
     ye.L5,
     c.VC,
     function (e) {
@@ -2287,19 +2304,19 @@
      return (0, s.jsx)(A.n2, { children: (0, s.jsx)(R.M, { children: (0, s.jsx)(Z, { children: t }) }) });
     },
    ]);
-   function Ct(e) {
+   function jt(e) {
     let { children: t } = e;
-    return (0, s.jsx)(jt, { children: t });
+    return (0, s.jsx)(_t, { children: t });
    }
-   var Ot = r(91725);
-   function Et(e) {
+   var Ct = r(91725);
+   function Ot(e) {
     let { error: t, tryAgain: r } = e;
-    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Ot.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(D, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(N, { error: t }) })] }) }) });
+    return (0, s.jsx)('main', { className: 'container margin-vert--xl', children: (0, s.jsx)('div', { className: 'row', children: (0, s.jsxs)('div', { className: 'col col--6 col--offset-3', children: [(0, s.jsx)(Ct.Z, { as: 'h1', className: 'hero__title', children: (0, s.jsx)(l.Z, { id: 'theme.ErrorPageContent.title', description: 'The title of the fallback page when the page crashed', children: 'This page crashed.' }) }), (0, s.jsx)('div', { className: 'margin-vert--lg', children: (0, s.jsx)(D, { onClick: r, className: 'button button--primary shadow--lw' }) }), (0, s.jsx)('hr', {}), (0, s.jsx)('div', { className: 'margin-vert--md', children: (0, s.jsx)(N, { error: t }) })] }) }) });
    }
-   const Pt = { mainWrapper: 'mainWrapper_g6Tv' };
-   function St(e) {
+   const Et = { mainWrapper: 'mainWrapper_g6Tv' };
+   function Pt(e) {
     const { children: t, noFooter: r, wrapperClassName: n, title: i, description: l } = e;
-    return (0, f.t)(), (0, s.jsxs)(Ct, { children: [(0, s.jsx)(c.d, { title: i, description: l }), (0, s.jsx)(k, {}), (0, s.jsx)(P, {}), (0, s.jsx)(ct, {}), (0, s.jsx)('div', { id: d, className: (0, o.Z)(g.k.wrapper.main, Pt.mainWrapper, n), children: (0, s.jsx)(a.Z, { fallback: (e) => (0, s.jsx)(Et, { ...e }), children: t }) }), !r && (0, s.jsx)(wt, {})] });
+    return (0, f.t)(), (0, s.jsxs)(jt, { children: [(0, s.jsx)(c.d, { title: i, description: l }), (0, s.jsx)(k, {}), (0, s.jsx)(P, {}), (0, s.jsx)(at, {}), (0, s.jsx)('div', { id: d, className: (0, o.Z)(g.k.wrapper.main, Et.mainWrapper, n), children: (0, s.jsx)(a.Z, { fallback: (e) => (0, s.jsx)(Ot, { ...e }), children: t }) }), !r && (0, s.jsx)(xt, {})] });
    }
   },
   68734: (e, t, r) => {

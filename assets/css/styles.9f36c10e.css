@@ -1749,10 +1749,10 @@ abbr[title] {
 }
 .navbar-sidebar,
 .navbar-sidebar__backdrop {
- bottom: 0;
  opacity: 0;
  transition-duration: var(--ifm-transition-fast);
  transition-timing-function: ease-in-out;
+ bottom: 0;
  left: 0;
  top: 0;
  visibility: hidden;
@@ -6287,6 +6287,17 @@ code .namespace {
 }
 .navbar-sidebar_T4mg {
  background-color: var(--nlds-mobile-sidebar-background-color);
+ border: 0;
+ inset: 0;
+ bottom: 0;
+ color: #fff;
+ height: 100%;
+ margin: 0;
+ max-height: 100%;
+ padding: 0;
+}
+.navbar-sidebar_T4mg::backdrop {
+ background-color: #0009;
 }
 .footer_VVap {
  --utrecht-link-color: #fff;
