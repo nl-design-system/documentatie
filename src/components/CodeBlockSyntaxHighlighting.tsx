@@ -25,7 +25,7 @@ export function CodeBlockSyntaxHighlighting({
   return (
     <Highlight theme={nldsPrismTheme} code={code} language={syntax || ''}>
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <CodeBlock style={style}>
+        <CodeBlock tabIndex={0} style={style}>
           {tokens.map((line, i) => (
             <span key={i} {...getLineProps({ line })}>
               {lineNumber && <span>{i + 1}</span>}
