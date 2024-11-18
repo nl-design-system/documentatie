@@ -27,7 +27,7 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         {appearance === 'dont' ? (
           <>
             <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-              <IconMoodSad className={style['nlds-guideline__icon']} />
+              <IconMoodSad aria-hidden="true" role="presentation" className={style['nlds-guideline__icon']} />
               <span className={style['nlds-guideline__title']}>{guidelineLabel['dont']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
@@ -35,7 +35,7 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         ) : (
           <>
             <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-              <IconMoodHappy className={style['nlds-guideline__icon']} />
+              <IconMoodHappy aria-hidden="true" role="presentation" className={style['nlds-guideline__icon']} />
               <span className={style['nlds-guideline__title']}>{guidelineLabel['do']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
