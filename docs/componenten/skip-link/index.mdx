@@ -66,12 +66,6 @@ export const component = componentProgress.find((item) => item.number === issueN
   testCategory="Toegankelijkheid algemeen"
   items={[
     {
-      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-    },
-    {
       title: "Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
       sc: "1.4.5",
       status: "",
@@ -134,6 +128,12 @@ export const component = componentProgress.find((item) => item.number === issueN
   headingLevel={4}
   testCategory="Toegankelijkheid visueel ontwerp"
   items={[
+    {
+      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+    },
     {
       title: "Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar",
       sc: "2.4.7",
