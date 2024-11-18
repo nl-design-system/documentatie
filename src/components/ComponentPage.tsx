@@ -173,7 +173,7 @@ export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) =
     component && (
       <>
         <Paragraph>
-          We vinden het belangrijk dat {component.title} goed te gebruiken is door iedereen. Help je mee?
+          We vinden het belangrijk dat de component {component.title} goed te gebruiken is door iedereen. Help je mee?
         </Paragraph>
         <UnorderedList>
           {DiscussionUrl ? (
