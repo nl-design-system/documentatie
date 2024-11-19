@@ -2,8 +2,8 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [64281],
  {
-  83831: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => b, contentTitle: () => p, default: () => k, frontMatter: () => u, metadata: () => j, toc: () => v });
+  50829: (e, n, t) => {
+   t.r(n), t.d(n, { assets: () => j, contentTitle: () => u, default: () => m, frontMatter: () => g, metadata: () => p, toc: () => b });
    var r = t(52676),
     i = t(24785),
     s = t(57716),
@@ -11,33 +11,26 @@
     a = t(46506),
     l = t(45054),
     d = t(52057),
-    c = t(78836);
-   function h(e) {
-    const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.' })] });
-   }
-   function g(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(h, { ...e }) }) : h(e);
-   }
-   const u = { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.2 Geen toetsenbordval', pagination_label: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', slug: '2.1.2', keywords: ['WCAG'] },
-    p = void 0,
-    j = { id: 'wcag/2.1.02', title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', source: '@site/docs/wcag/2.1.02.mdx', sourceDirName: 'wcag', slug: '/wcag/2.1.2', permalink: '/wcag/2.1.2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.1.02.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.2 Geen toetsenbordval', pagination_label: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', slug: '2.1.2', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.1.1 Toetsenbord', permalink: '/wcag/2.1.1' }, next: { title: 'WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)', permalink: '/wcag/2.1.3' } },
-    b = {},
-    v = [
+    c = t(78836),
+    h = t(94687);
+   const g = { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.2 Geen toetsenbordval', pagination_label: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', slug: '2.1.2', keywords: ['WCAG'] },
+    u = void 0,
+    p = { id: 'wcag/2.1.02', title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', source: '@site/docs/wcag/2.1.02.mdx', sourceDirName: 'wcag', slug: '/wcag/2.1.2', permalink: '/wcag/2.1.2', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.1.02.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.1.2 Geen toetsenbordval', pagination_label: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval', description: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.', slug: '2.1.2', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.1.1 Toetsenbord', permalink: '/wcag/2.1.1' }, next: { title: 'WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)', permalink: '/wcag/2.1.3' } },
+    j = {},
+    b = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Opgelet', id: 'opgelet', level: 2 },
      { value: 'Gebruikersonderzoek', id: 'gebruikersonderzoek', level: 2 },
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function m(e) {
+   function v(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval' }), '\n', (0, r.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, r.jsx)(g, {}), '\n', (0, r.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, r.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, r.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, r.jsx)(l.ZP, {}), '\n', (0, r.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus', children: (0, r.jsx)('span', { lang: 'en', children: '2.1.2 No Keyboard Trap' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#geen-toetsenbordval', children: '2.1.2 Geen toetsenbordval' }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, r.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus', children: (0, r.jsx)('span', { lang: 'en', children: 'Quick Reference 2.1.2 No Keyboard Trap' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html', children: (0, r.jsx)('span', { lang: 'en', children: 'Understanding SC 2.1.2 No Keyboard Trap' }) }), '.'] }), '\n'] }), '\n', (0, r.jsx)(a.CY, { children: (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(d.ZP, {}) }) }), '\n', (0, r.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(c.ZP, {}) })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.1.2 Geen toetsenbordval' }), '\n', (0, r.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, r.jsx)(h.ZP, {}), '\n', (0, r.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, r.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, r.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, r.jsx)(l.ZP, {}), '\n', (0, r.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus', children: (0, r.jsx)('span', { lang: 'en', children: '2.1.2 No Keyboard Trap' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#geen-toetsenbordval', children: '2.1.2 Geen toetsenbordval' }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, r.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus', children: (0, r.jsx)('span', { lang: 'en', children: 'Quick Reference 2.1.2 No Keyboard Trap' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html', children: (0, r.jsx)('span', { lang: 'en', children: 'Understanding SC 2.1.2 No Keyboard Trap' }) }), '.'] }), '\n'] }), '\n', (0, r.jsx)(a.CY, { children: (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(d.ZP, {}) }) }), '\n', (0, r.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(c.ZP, {}) })] });
    }
-   function k(e = {}) {
+   function m(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(v, { ...e }) }) : v(e);
    }
   },
   45054: (e, n, t) => {
@@ -73,6 +66,19 @@
    function s(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }), '\n', (0, r.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, r.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  94687: (e, n, t) => {
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(24785);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.' })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };

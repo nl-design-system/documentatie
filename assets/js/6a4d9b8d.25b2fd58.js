@@ -2,8 +2,8 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [15104],
  {
-  22024: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => m, contentTitle: () => u, default: () => k, frontMatter: () => p, metadata: () => v, toc: () => j });
+  45604: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => v, contentTitle: () => p, default: () => f, frontMatter: () => g, metadata: () => u, toc: () => m });
    var t = i(52676),
     r = i(24785),
     s = i(57716),
@@ -11,33 +11,26 @@
     o = i(46506),
     l = i(45054),
     d = i(52057),
-    c = i(78836);
-   function h(e) {
-    const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde." }), '\n', (0, t.jsx)(n.p, { children: 'Denk hierbij aan de skiplink, het hoofdmenu, de zoekoptie en de links in de footer. Dit maakt de structuur van de website makkelijker te begrijpen en hierdoor kan de gebruiker sneller navigeren.' })] });
-   }
-   function g(e = {}) {
-    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
-   }
-   const p = { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.3 Consistente navigatie', pagination_label: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", slug: '3.2.3', keywords: ['WCAG'] },
-    u = void 0,
-    v = { id: 'wcag/3.2.03', title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", source: '@site/docs/wcag/3.2.03.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.3', permalink: '/wcag/3.2.3', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.03.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.3 Consistente navigatie', pagination_label: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", slug: '3.2.3', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.2 Bij input', permalink: '/wcag/3.2.2' }, next: { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', permalink: '/wcag/3.2.4' } },
-    m = {},
-    j = [
+    c = i(78836),
+    h = i(43271);
+   const g = { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.3 Consistente navigatie', pagination_label: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", slug: '3.2.3', keywords: ['WCAG'] },
+    p = void 0,
+    u = { id: 'wcag/3.2.03', title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", source: '@site/docs/wcag/3.2.03.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.3', permalink: '/wcag/3.2.3', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.03.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.3 Consistente navigatie', pagination_label: 'WCAG-succescriterium 3.2.3 Consistente navigatie', description: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.", slug: '3.2.3', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.2 Bij input', permalink: '/wcag/3.2.2' }, next: { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', permalink: '/wcag/3.2.4' } },
+    v = {},
+    m = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Opgelet', id: 'opgelet', level: 2 },
      { value: 'Gebruikersonderzoek', id: 'gebruikersonderzoek', level: 2 },
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function f(e) {
+   function j(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(a.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 3.2.3 Consistente navigatie' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(g, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(l.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#consistent-navigation', children: (0, t.jsx)('span', { lang: 'en', children: '3.2.3 Consistent Navigation' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#consistente-navigatie', children: '3.2.3 Consistente navigatie' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 3.2.3 Consistent Navigation' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 3.2.3 Consistent Navigation' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(o.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) })] });
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(a.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 3.2.3 Consistente navigatie' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(h.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(l.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#consistent-navigation', children: (0, t.jsx)('span', { lang: 'en', children: '3.2.3 Consistent Navigation' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#consistente-navigatie', children: '3.2.3 Consistente navigatie' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 3.2.3 Consistent Navigation' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 3.2.3 Consistent Navigation' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(o.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) })] });
    }
-   function k(e = {}) {
+   function f(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(f, { ...e }) }) : f(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(j, { ...e }) }) : j(e);
    }
   },
   45054: (e, n, i) => {
@@ -73,6 +66,19 @@
    function s(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }), '\n', (0, t.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, t.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  43271: (e, n, i) => {
+   i.d(n, { ZP: () => a });
+   var t = i(52676),
+    r = i(24785);
+   function s(e) {
+    const n = { p: 'p', ...(0, r.a)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde." }), '\n', (0, t.jsx)(n.p, { children: 'Denk hierbij aan de skiplink, het hoofdmenu, de zoekoptie en de links in de footer. Dit maakt de structuur van de website makkelijker te begrijpen en hierdoor kan de gebruiker sneller navigeren.' })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
