@@ -55,6 +55,7 @@ import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md";
 import Wcag144 from "/docs/componenten/ac/_wcag-1.4.4.md";
 import Wcag145 from "/docs/componenten/ac/_wcag-1.4.5.md";
 import Wcag1412 from "/docs/componenten/ac/_wcag-1.4.12.md";
+import Wcag312 from "/docs/componenten/ac/_wcag-3.1.2.md";
 
 {/* Add name and description for the component */}
 export const title = "Data Badge";
@@ -86,6 +87,13 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "1.4.5",
       status: "",
       component: <Wcag145 />,
+    },
+    {
+      title:
+        "Als een tekst in de Data Badge in een andere taal is dan de taal van de pagina, dan heeft de Data Badge een lang-attribuut met de juiste taalcode",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
     },
   ]}
 />
