@@ -5,9 +5,10 @@ import nldsPrismTheme from '../../nldsPrism';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
   lineNumber?: boolean;
-  textContent: string;
   syntax?: string;
+  textContent: string;
   trim?: boolean;
+  codeBlockLabel?: string;
 }
 
 export function CodeBlockSyntaxHighlighting({
@@ -15,6 +16,7 @@ export function CodeBlockSyntaxHighlighting({
   syntax,
   textContent,
   trim,
+  codeBlockLabel,
 }: PropsWithChildren<CodeBlockSyntaxHighlightingProps>): Element {
   let code = textContent;
 
@@ -25,7 +27,7 @@ export function CodeBlockSyntaxHighlighting({
   return (
     <Highlight theme={nldsPrismTheme} code={code} language={syntax || ''}>
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <CodeBlock tabIndex={0} style={style}>
+        <CodeBlock tabIndex={0} role={codeBlockLabel ? 'region' : undefined} aria-label={codeBlockLabel} style={style}>
           {tokens.map((line, i) => (
             <span key={i} {...getLineProps({ line })}>
               {lineNumber && <span>{i + 1}</span>}

@@ -145,7 +145,12 @@ export const Canvas = ({
           id={codeBlockId}
           hidden={!expandedSourceCode}
         >
-          <CodeBlockSyntaxHighlighting syntax={language} textContent={exampleSourceCode} trim />
+          <CodeBlockSyntaxHighlighting
+            codeBlockLabel={'Codevoorbeeld'}
+            syntax={language}
+            textContent={exampleSourceCode}
+            trim
+          />
           {copy && (
             <div className={clsx(style['nlds-canvas__toolbar'], style['nlds-canvas__toolbar--copy'])}>
               <Button
