@@ -185,7 +185,7 @@
   },
   24424: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => G, component: () => D, contentTitle: () => T, default: () => P, description: () => R, frontMatter: () => C, issueNumber: () => L, metadata: () => z, title: () => W, toc: () => _ });
+   t.r(n), t.d(n, { assets: () => _, component: () => N, contentTitle: () => z, default: () => S, description: () => L, frontMatter: () => T, issueNumber: () => D, metadata: () => G, title: () => R, toc: () => W });
    var r = t(52676),
     i = t(24785),
     o = t(50460),
@@ -205,30 +205,31 @@
     g = t(88608),
     m = t(76126),
     j = t(67921),
-    p = t(88782),
-    w = t(33907),
-    f = t(27948),
-    k = t(27047),
-    v = t(71505),
+    p = t(94687),
+    w = t(88782),
+    f = t(33907),
+    k = t(27948),
+    v = t(27047),
+    b = t(71505),
     y = t(61398),
-    b = t(27626),
-    x = t(37694),
-    A = t(40001);
-   const C = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' },
-    T = void 0,
-    z = { id: 'componenten/link/index', title: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', source: '@site/docs/componenten/link/index.mdx', sourceDirName: 'componenten/link', slug: '/link', permalink: '/link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' }, sidebar: 'componenten', previous: { title: 'Language Navigation', permalink: '/language-navigation' }, next: { title: 'Link List', permalink: '/link-list' } },
-    G = {},
-    _ = [
+    x = t(27626),
+    A = t(37694),
+    C = t(40001);
+   const T = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' },
+    z = void 0,
+    G = { id: 'componenten/link/index', title: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', source: '@site/docs/componenten/link/index.mdx', sourceDirName: 'componenten/link', slug: '/link', permalink: '/link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' }, sidebar: 'componenten', previous: { title: 'Language Navigation', permalink: '/language-navigation' }, next: { title: 'Link List', permalink: '/link-list' } },
+    _ = {},
+    W = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    W = 'Link',
-    R = 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
-    L = 118,
-    D = o.find((e) => e.number === L);
-   function N(e) {
+    R = 'Link',
+    L = 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
+    D = 118,
+    N = o.find((e) => e.number === D);
+   function P(e) {
     const n = { h2: 'h2', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -238,15 +239,15 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(a.Rv, { component: D, headingLevel: 1, description: R }),
+      (0, r.jsx)(a.Rv, { component: N, headingLevel: 1, description: L }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(a.cN, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(a.cN, { component: N, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(a.W, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(a.W, { component: N, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
@@ -255,9 +256,9 @@
        testCategory: 'Toegankelijkheid algemeen',
        items: [
         { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, r.jsx)(h.ZP, {}) },
-        { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, r.jsx)(p.ZP, {}) },
-        { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, r.jsx)(v.ZP, {}) },
-        { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(b.ZP, {}) },
+        { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, r.jsx)(w.ZP, {}) },
+        { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, r.jsx)(b.ZP, {}) },
+        { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(x.ZP, {}) },
        ],
       }),
       '\n',
@@ -267,9 +268,9 @@
        items: [
         { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg', sc: '1.4.3', status: '', component: (0, r.jsx)(d.ZP, {}) },
         { title: 'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1', sc: '1.4.11', status: '', component: (0, r.jsx)(g.ZP, {}) },
-        { title: 'De Link heeft een goed zichtbare focusindicator', sc: '2.4.13', status: '', component: (0, r.jsx)(f.ZP, {}) },
+        { title: 'De Link heeft een goed zichtbare focusindicator', sc: '2.4.13', status: '', component: (0, r.jsx)(k.ZP, {}) },
         { title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, r.jsx)(y.ZP, {}) },
-        { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, r.jsx)(x.ZP, {}) },
+        { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, r.jsx)(A.ZP, {}) },
        ],
       }),
       '\n',
@@ -287,8 +288,9 @@
        testCategory: 'Toegankelijkheid toetsenbord',
        items: [
         { title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: (0, r.jsx)(j.ZP, {}) },
-        { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(w.ZP, {}) },
-        { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, r.jsx)(k.ZP, {}) },
+        { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval', sc: '2.1.2', status: '', component: (0, r.jsx)(p.ZP, {}) },
+        { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(f.ZP, {}) },
+        { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, r.jsx)(v.ZP, {}) },
        ],
       }),
       '\n',
@@ -297,19 +299,19 @@
        testCategory: 'Toegankelijkheid screenreader',
        items: [
         { title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief', sc: '1.1.1', status: '', component: (0, r.jsx)(l, {}) },
-        { title: 'De Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Link voor dient', sc: '4.1.2', status: '', component: (0, r.jsx)(A.ZP, {}) },
+        { title: 'De Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Link voor dient', sc: '4.1.2', status: '', component: (0, r.jsx)(C.ZP, {}) },
        ],
       }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(a.vM, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(a.vM, { component: N, headingLevel: 3 }),
      ],
     });
    }
-   function P(e = {}) {
+   function S(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(N, { ...e }) }) : N(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(P, { ...e }) }) : P(e);
    }
   },
   89345: (e, n, t) => {
@@ -320,6 +322,20 @@
    function o(e) {
     const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak.' }), '\n', (0, r.jsx)(n.p, { children: 'Wanneer het technisch niet mogelijk is om een tekst er uit te laten zien zoals bedoeld, dan zijn er twee uitzondering om een afbeelding te gebruiken.' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'De tekst in een logo, die hoort bij het beeldmerk.' }), '\n', (0, r.jsx)(n.li, { children: 'De gebruiker kan weergave van de afbeelding wijzigen, zoals font, kleur en tekstgrootte.' }), '\n'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+   }
+  },
+  94687: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => s });
+   var r = t(52676),
+    i = t(24785);
+   function o(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.' })] });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -526,18 +542,18 @@
     f = t(72657),
     k = t(46506),
     v = t(25953);
-   const y = 'task-list_hh8j',
-    b = 'task-list-item_oypx',
+   const b = 'task-list_hh8j',
+    y = 'task-list-item_oypx',
     x = 'task-list-item__marker_Eefn',
     A = 'task-list-item__marker--checked_y8Vc',
     C = 'task-list-item__marker-label_XAyi',
     T = (e) => {
      let { children: n } = e;
-     return (0, d.jsx)('ul', { className: y, children: n });
+     return (0, d.jsx)('ul', { className: b, children: n });
     },
     z = (e) => {
      let { checked: n, children: t, title: r, description: o, headingLevel: s = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)(b), children: [(0, d.jsxs)('div', { className: (0, i.Z)(x, n && A), children: [(0, d.jsx)('span', { className: C, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(k.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)(y), children: [(0, d.jsxs)('div', { className: (0, i.Z)(x, n && A), children: [(0, d.jsx)('span', { className: C, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(k.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
     };
    var G = t(14669);
    const _ = (e) => {
