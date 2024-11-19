@@ -40,13 +40,12 @@ export default function NavbarMobileSidebarLayout({ header, primaryMenu, seconda
   return (
     <dialog className={clsx('navbar-sidebar', styles['navbar-sidebar'])} ref={navbarModalDialog}>
       {header}
-      <div
-        className={clsx('navbar-sidebar__items', {
-          'navbar-sidebar__items--show-secondary': secondaryMenuShown,
-        })}
-      >
-        <div className="navbar-sidebar__item menu">{primaryMenu}</div>
-        <div className="navbar-sidebar__item menu">{secondaryMenu}</div>
+      <div className={clsx('navbar-sidebar__items')}>
+        {secondaryMenuShown ? (
+          <div className="navbar-sidebar__item menu">{secondaryMenu}</div>
+        ) : (
+          <div className="navbar-sidebar__item menu these-no-need-when">{primaryMenu}</div>
+        )}
       </div>
     </dialog>
   );
