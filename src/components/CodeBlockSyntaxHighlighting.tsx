@@ -1,7 +1,6 @@
 import { CodeBlock, CodeBlockProps } from '@utrecht/component-library-react/dist/css-module';
 import { Highlight } from 'prism-react-renderer';
-import React, { Element, PropsWithChildren, useContext } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import React, { Element, PropsWithChildren, useContext, useId } from 'react';
 import { CodeExampleContext } from './Guideline';
 import nldsPrismTheme from '../../nldsPrism';
 
@@ -21,7 +20,7 @@ export function CodeBlockSyntaxHighlighting({
 }: PropsWithChildren<CodeBlockSyntaxHighlightingProps>): Element {
   let code = textContent;
   const { title, type: codeExampleType } = useContext(CodeExampleContext);
-  const titleId = uuidv4();
+  const titleId = useId();
 
   if (trim) {
     code = code.trim();
