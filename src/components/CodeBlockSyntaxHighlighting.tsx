@@ -1,6 +1,8 @@
 import { CodeBlock, CodeBlockProps } from '@utrecht/component-library-react/dist/css-module';
 import { Highlight } from 'prism-react-renderer';
-import React, { Element, PropsWithChildren } from 'react';
+import React, { Element, PropsWithChildren, useContext } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { CodeExampleContext } from './Guideline';
 import nldsPrismTheme from '../../nldsPrism';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
@@ -16,9 +18,10 @@ export function CodeBlockSyntaxHighlighting({
   syntax,
   textContent,
   trim,
-  codeBlockLabel,
 }: PropsWithChildren<CodeBlockSyntaxHighlightingProps>): Element {
   let code = textContent;
+  const { title, type: codeExampleType } = useContext(CodeExampleContext);
+  const titleId = uuidv4();
 
   if (trim) {
     code = code.trim();
@@ -27,17 +30,23 @@ export function CodeBlockSyntaxHighlighting({
   return (
     <Highlight theme={nldsPrismTheme} code={code} language={syntax || ''}>
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <CodeBlock tabIndex={0} role={codeBlockLabel ? 'region' : undefined} aria-label={codeBlockLabel} style={style}>
-          {tokens.map((line, i) => (
-            <span key={i} {...getLineProps({ line })}>
-              {lineNumber && <span>{i + 1}</span>}
-              {line.map((token, key) => (
-                <span key={key} {...getTokenProps({ token })} />
-              ))}
-              {'\n'}
-            </span>
-          ))}
-        </CodeBlock>
+        <>
+          <span hidden id={titleId}>
+            codevoorbeeld {codeExampleType ? `“${codeExampleType}”` : ''} {title ? ': ' : ' '}
+            {title}
+          </span>
+          <CodeBlock tabIndex={0} role={title ? 'region' : undefined} aria-labelledby={titleId} style={style}>
+            {tokens.map((line, i) => (
+              <span key={i} {...getLineProps({ line })}>
+                {lineNumber && <span>{i + 1}</span>}
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token })} />
+                ))}
+                {'\n'}
+              </span>
+            ))}
+          </CodeBlock>
+        </>
       )}
     </Highlight>
   );

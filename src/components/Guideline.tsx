@@ -1,7 +1,7 @@
 import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import React, { createContext, HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import style from './Guideline.module.css';
 interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -9,6 +9,8 @@ interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
   appearance: 'do' | 'dont';
   figure?: boolean;
 }
+
+export const CodeExampleContext = createContext({});
 
 export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
@@ -43,7 +45,11 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         )}
         {description}
       </CaptionElement>
-      <div className={clsx(style['nlds-guideline__example'])}>{children}</div>
+      <div className={clsx(style['nlds-guideline__example'])}>
+        <CodeExampleContext.Provider value={{ title: title, type: guidelineLabel[appearance] }}>
+          {children}
+        </CodeExampleContext.Provider>
+      </div>
     </ContainerElement>
   );
 };
