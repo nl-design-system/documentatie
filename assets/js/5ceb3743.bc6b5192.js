@@ -1,0 +1,244 @@
+'use strict';
+(self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
+ [41952],
+ {
+  55400: (e, n, l) => {
+   l.d(n, { ZP: () => s });
+   var i = l(52676),
+    o = l(24785);
+   function t(e) {
+    const n = { a: 'a', em: 'em', h2: 'h2', p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, i.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in ', (0, i.jsx)(n.em, { children: 'beta' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, o.a)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(t, { ...e }) }) : t(e);
+   }
+  },
+  43129: (e, n, l) => {
+   l.r(n), l.d(n, { assets: () => h, contentTitle: () => m, default: () => b, frontMatter: () => p, metadata: () => g, toc: () => v });
+   var i = l(52676),
+    o = l(24785),
+    t = l(98480),
+    s = l(91050);
+   function r(e) {
+    const n = { input: 'input', label: 'label', p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(s.X, { appearance: 'do', title: 'Leg uit waarom een datum wordt afgekeurd.', children: (0, i.jsx)(t.X, { language: 'html', children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: 'passport-validity', children: 'Geldig tot' }), (0, i.jsx)(n.p, { id: 'description-passport-validity', children: 'Invoerfout: De geldigheidsdatum van uw paspoort moet in de toekomst liggen.' }), (0, i.jsx)(n.input, { id: 'passport-validity', type: 'text', name: 'passport-validity', 'aria-describedby': 'description-passport-validity' })] }) }) }), '\n', (0, i.jsx)(s.X, { appearance: 'do', title: 'Geef een voorbeeld van wat er verwacht wordt.', children: (0, i.jsx)(t.X, { language: 'html', children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: 'email', children: 'E-mail' }), (0, i.jsx)(n.p, { id: 'description-email', children: 'Invoerfout: Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.' }), (0, i.jsx)(n.input, { id: 'email', type: 'email', name: 'email', 'aria-describedby': 'description-email' })] }) }) }), '\n', (0, i.jsx)(s.X, { appearance: 'dont', title: 'Alleen beschrijven dat het veld verplicht is, zonder toelichting dat er informatie mist of aan welke voorwaarde niet is voldaan.', children: (0, i.jsx)(t.X, { language: 'html', children: () => (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.label, { for: 'passport-validity-2', children: 'Geldig tot' }), (0, i.jsx)(n.p, { id: 'description-passport-validity-2', children: 'Invoerfout: Dit veld is verplicht.' }), (0, i.jsx)(n.input, { id: 'passport-validity-2', 'aria-invalid': 'false', type: 'text', name: 'passport-validity-2', 'aria-describedby': 'description-passport-validity-2' })] }) }) })] });
+   }
+   function d(e = {}) {
+    const { wrapper: n } = { ...(0, o.a)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+   function a(e) {
+    const n = { a: 'a', h1: 'h1', li: 'li', p: 'p', ul: 'ul', ...(0, o.a)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h1, { id: 'schrijf-een-duidelijke-foutmelding', children: 'Schrijf een duidelijke foutmelding' }), '\n', (0, i.jsx)(n.p, { children: '"Dit veld is verplicht" geeft onvoldoende informatie. Een op maat geschreven foutmelding geeft de gebruiker veel meer houvast.' }), '\n', (0, i.jsx)(n.p, { children: 'Geef de gebruiker ook nooit de schuld. De meeste mensen worstelen met alle informatie en functionaliteit op het web. Help gebruikers zo goed mogelijk om het formulier te versturen.' }), '\n', (0, i.jsx)(n.p, { children: 'Maak foutmeldingen daarom zo veel mogelijk beschrijvend en op maat. Schrijf in plaats van "Ongeldige invoer" of "Dit veld is verplicht" bijvoorbeeld:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['Vul een geldig e-mailadres in, bijvoorbeeld ', (0, i.jsx)(n.a, { href: 'mailto:naam@voorbeeld.nl', children: 'naam@voorbeeld.nl' }), '.'] }), '\n', (0, i.jsx)(n.li, { children: 'De geldigheidsdatum van uw paspoort moet in de toekomst zijn.' }), '\n', (0, i.jsx)(n.li, { children: 'Vul het huisnummer in zodat wij je bestelling kunnen opsturen.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'Gebruik een punt aan het eind van de foutmelding (of andere melding). Dan stopt de screenreader even en is het duidelijker dat de foutmelding apart een zin is.' }), '\n', (0, i.jsxs)(n.p, { children: ['Het design system van GOV.UK geeft duidelijke (Engelstalige) informatie over de tekst van foutmeldingen ', (0, i.jsx)(n.a, { href: 'https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise', children: (0, i.jsx)('span', { lang: 'en', children: 'Be clear and concise' }) }), '. In de video ', (0, i.jsx)(n.a, { href: 'https://www.nngroup.com/videos/usability-heuristic-recognize-errors/', children: (0, i.jsx)('span', { lang: 'en', children: 'Help Users Recognize, Diagnose, and Recover from Errors' }) }), ' geeft de Nielsen Norman Group tips voor goede hulp aan gebruikers voor het verhelpen van fouten.'] }), '\n', (0, i.jsx)(n.p, { children: 'Het schrijven van foutmeldingen en een duidelijke toelichting op wat er mis gaat, is nodig om te voldoen de volgende WCAG-succescriteria:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: '/wcag/3.3.1', children: '3.3.1 Foutidentificatie' }), ' (niveau A).'] }), '\n', (0, i.jsxs)(n.li, { children: [(0, i.jsx)(n.a, { href: '/wcag/3.3.3', children: '3.3.3 Foutsuggestie' }), ' (niveau AA).'] }), '\n'] })] });
+   }
+   function c(e = {}) {
+    const { wrapper: n } = { ...(0, o.a)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
+   }
+   var u = l(55400);
+   const p = { title: 'Schrijf een duidelijke foutmelding \xb7 Foutmeldingen in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Duidelijke foutmeldingen', pagination_label: 'Duidelijke foutmeldingen', description: 'Richtlijnen voor duidelijke foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/duidelijk', keywords: ['labels', 'formulier', 'design', 'code'] },
+    m = void 0,
+    g = { id: 'richtlijnen/formulieren/error/clarity/README', title: 'Schrijf een duidelijke foutmelding \xb7 Foutmeldingen in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor duidelijke foutmeldingen in een formulier.', source: '@site/docs/richtlijnen/formulieren/error/3-clarity/README.mdx', sourceDirName: 'richtlijnen/formulieren/error/3-clarity', slug: '/richtlijnen/formulieren/foutmeldingen/duidelijk', permalink: '/richtlijnen/formulieren/foutmeldingen/duidelijk', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/error/3-clarity/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Schrijf een duidelijke foutmelding \xb7 Foutmeldingen in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Duidelijke foutmeldingen', pagination_label: 'Duidelijke foutmeldingen', description: 'Richtlijnen voor duidelijke foutmeldingen in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/duidelijk', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Fouten beschrijven', permalink: '/richtlijnen/formulieren/foutmeldingen/beschrijven' }, next: { title: 'Plaatsing foutmelding', permalink: '/richtlijnen/formulieren/foutmeldingen/plaatsing' } },
+    h = {},
+    v = [];
+   function j(e) {
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', (0, i.jsx)(c, {}), '\n', (0, i.jsx)(d, {}), '\n', (0, i.jsx)(u.ZP, {})] });
+   }
+   function b(e = {}) {
+    const { wrapper: n } = { ...(0, o.a)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(j, { ...e }) }) : j();
+   }
+  },
+  98480: (e, n, l) => {
+   l.d(n, { X: () => b });
+   var i = l(46506),
+    o = l(4814),
+    t = l(25585),
+    s = l(40282),
+    r = l(40678),
+    d = l(85722),
+    a = l(6374),
+    c = l(75271),
+    u = l(60027);
+   const p = { 'nlds-canvas': 'nlds-canvas_h8Yz', 'nlds-canvas--distanced': 'nlds-canvas--distanced_BU4b', 'nlds-canvas__example': 'nlds-canvas__example_sS53', 'nlds-canvas__example-document': 'nlds-canvas__example-document_cR3e', 'nlds-canvas__code-block': 'nlds-canvas__code-block_eqxI', 'nlds-canvas__code-block--user-select-none': 'nlds-canvas__code-block--user-select-none_Jv1j', 'nlds-canvas__toolbar': 'nlds-canvas__toolbar_AMcV', 'nlds-canvas__toolbar--copy': 'nlds-canvas__toolbar--copy_HaYV', 'nlds-canvas__button': 'nlds-canvas__button_cHBw' };
+   var m = l(41179),
+    g = l(52676);
+   const h = (e) => {
+    let { children: n } = e;
+    return (0, g.jsx)(i.Tg, { className: p['nlds-canvas__example-surface'], children: (0, g.jsx)(i.BB, { className: (0, o.Z)('utrecht-document--surface', p['nlds-canvas__example-document']), children: (0, g.jsx)(i.nv, { className: p['nlds-canvas__example-paragraph'], children: n }) }) });
+   };
+   h.displayName = 'ParagraphContainer';
+   const v = (e) => {
+    let { children: n } = e;
+    return (0, g.jsx)(i.Tg, { className: p['nlds-canvas__example-surface'], children: (0, g.jsx)(i.BB, { className: (0, o.Z)('utrecht-document--surface', p['nlds-canvas__example-document']), children: n }) });
+   };
+   v.displayName = 'DocumentContainer';
+   const j = (e) => {
+    let { children: n } = e;
+    return (0, g.jsx)(i.Tg, { className: p['nlds-canvas__example-surface'], children: n });
+   };
+   j.displayName = 'SurfaceContainer';
+   const b = (e) => {
+    let { code: n, copy: l = !0, defaultExpandedCode: b = !1, displayCode: _ = !0, children: y, container: f = 'document', language: x, designTokens: k } = e,
+     w = 'function' == typeof y ? y() : y,
+     N = 'function' == typeof n ? n() : (0, c.isValidElement)(n) ? n : void 0,
+     Z = 'string' == typeof n ? n : u.uS(N || w),
+     [C, D] = (0, c.useState)(Z),
+     [S, z] = (0, c.useState)(b);
+    (0, c.useEffect)(() => {
+     (async () => {
+      (C = await a.ZP.format(Z, { parser: x, plugins: [t.Z, s.ZP, r.ZP, d.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })), D(C);
+     })();
+    }, [Z]);
+    const F = (0, c.useId)();
+    let E = c.Fragment;
+    return (
+     'paragraph' === f ? (E = h) : 'document' === f ? (E = v) : 'surface' === f && (E = j),
+     (0, g.jsxs)('div', {
+      className: (0, o.Z)(p['nlds-canvas']),
+      children: [
+       w && (0, g.jsx)('div', { className: (0, o.Z)(p['nlds-canvas__example']), children: (0, g.jsx)('div', { className: 'voorbeeld-theme', style: k, children: (0, g.jsx)(E, { children: (0, g.jsx)(i.pu, { children: w }) }) }) }),
+       _ &&
+        (0, g.jsx)('div', {
+         className: (0, o.Z)(p['nlds-canvas__toolbar']),
+         children: (0, g.jsx)(i.zx, {
+          className: (0, o.Z)(p['nlds-canvas__button'], p['nlds-canvas__toggle-code-button']),
+          appearance: 'subtle-button',
+          onClick: () => {
+           z(!S);
+          },
+          'aria-expanded': S,
+          'aria-controls': F,
+          children: S ? 'Verberg code' : 'Bekijk code',
+         }),
+        }),
+       _ &&
+        (0, g.jsxs)('div', {
+         className: (0, o.Z)(p['nlds-canvas__code-block'], !l && p['nlds-canvas__code-block--user-select-none']),
+         id: F,
+         hidden: !S,
+         children: [
+          (0, g.jsx)(m.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: C, trim: !0 }),
+          l &&
+           (0, g.jsx)('div', {
+            className: (0, o.Z)(p['nlds-canvas__toolbar'], p['nlds-canvas__toolbar--copy']),
+            children: (0, g.jsx)(i.zx, {
+             className: (0, o.Z)(p['nlds-canvas__button'], p['nlds-canvas__copy-button']),
+             appearance: 'subtle-button',
+             onClick: () => {
+              navigator.clipboard.writeText(C).catch((e) => console.error('Copy code failed', e));
+             },
+             children: 'Kopieer',
+            }),
+           }),
+         ],
+        }),
+      ],
+     })
+    );
+   };
+  },
+  41179: (e, n, l) => {
+   l.d(n, { u: () => a });
+   var i = l(46506),
+    o = l(70739),
+    t = l(75271),
+    s = l(91050);
+   const r = {
+    plain: { color: 'var(--nlds-code-block-color)', backgroundColor: 'var(--nlds-code-block-background-color)' },
+    styles: [
+     { types: ['maybe-class-name'], style: { color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))' } },
+     { types: ['comment'], style: { color: 'var(--nlds-code-block-comment-color)', fontStyle: 'italic' } },
+     { types: ['prolog'], style: { color: 'var(--nlds-code-block-prolog-color)', fontStyle: 'italic' } },
+     { types: ['cdata'], style: { color: 'var(--nlds-code-block-cdata-color)', fontStyle: 'italic' } },
+     { types: ['punctuation'], style: { color: 'var(--nlds-code-block-punctuation-color)' } },
+     { types: ['deleted'], style: { color: 'var(--nlds-code-block-deleted-color)', fontStyle: 'italic' } },
+     { types: ['symbol'], style: { color: 'var(--nlds-code-block-symbol-color)' } },
+     { types: ['property'], style: { color: 'var(--nlds-code-block-property-color)' } },
+     { types: ['tag'], style: { color: 'var(--nlds-code-block-tag-color)' } },
+     { types: ['operator'], style: { color: 'var(--nlds-code-block-operator-color)' } },
+     { types: ['keyword'], style: { color: 'var(--nlds-code-block-keyword-color)' } },
+     { types: ['boolean'], style: { color: 'var(--nlds-code-block-boolean-color)' } },
+     { types: ['number'], style: { color: 'var(--nlds-code-block-number-color)' } },
+     { types: ['constant'], style: { color: 'var(--nlds-code-block-constant-color)' } },
+     { types: ['function'], style: { color: 'var(--nlds-code-block-function-color)' } },
+     { types: ['builtin'], style: { color: 'var(--nlds-code-block-builtin-color)' } },
+     { types: ['char'], style: { color: 'var(--nlds-code-block-char-color)' } },
+     { types: ['selector'], style: { color: 'var(--nlds-code-block-selector-color)', fontStyle: 'italic' } },
+     { types: ['doctype'], style: { color: 'var(--nlds-code-block-doctype-color)', fontStyle: 'italic' } },
+     { types: ['attr-name'], style: { color: 'var(--nlds-code-block-attr-name-color)', fontStyle: 'italic' } },
+     { types: ['inserted'], style: { color: 'var(--nlds-code-block-inserted-color)', fontStyle: 'italic' } },
+     { types: ['string'], style: { color: 'var(--nlds-code-block-string-color)' } },
+     { types: ['url'], style: { color: 'var(--nlds-code-block-url-color)' } },
+     { types: ['entity'], style: { color: 'var(--nlds-code-block-entity-color)' } },
+     { types: ['class-name'], style: { color: 'var(--nlds-code-block-class-name-color)' } },
+     { types: ['atrule'], style: { color: 'var(--nlds-code-block-atrule-color)' } },
+     { types: ['attr-value'], style: { color: 'var(--nlds-code-block-attr-value-color)' } },
+     { types: ['regex'], style: { color: 'var(--nlds-code-block-regex-color)' } },
+     { types: ['important'], style: { color: 'var(--nlds-code-block-important-color)', fontWeight: 'bold' } },
+     { types: ['variable'], style: { color: 'var(--nlds-code-block-variable-color)' } },
+     { types: ['bold'], style: { fontWeight: 'bold' } },
+     { types: ['italic'], style: { fontStyle: 'italic' } },
+    ],
+   };
+   var d = l(52676);
+   function a(e) {
+    let { lineNumber: n, syntax: l, textContent: a, trim: c } = e,
+     u = a;
+    const { title: p, type: m } = (0, t.useContext)(s.n),
+     g = (0, t.useId)();
+    return (
+     c && (u = u.trim()),
+     (0, d.jsx)(o.y$, {
+      theme: r,
+      code: u,
+      language: l || '',
+      children: (e) => {
+       let { style: l, tokens: o, getLineProps: t, getTokenProps: s } = e;
+       return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)('span', { hidden: !0, id: g, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, d.jsx)(i.dn, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': g, style: l, children: o.map((e, l) => (0, d.jsxs)('span', { ...t({ line: e }), children: [n && (0, d.jsx)('span', { children: l + 1 }), e.map((e, n) => (0, d.jsx)('span', { ...s({ token: e }) }, n)), '\n'] }, l)) })] });
+      },
+     })
+    );
+   }
+  },
+  91050: (e, n, l) => {
+   l.d(n, { n: () => c, X: () => u });
+   var i = l(77355),
+    o = l(67663),
+    t = l(46506),
+    s = l(4814),
+    r = l(75271);
+   const d = { 'nlds-guideline': 'nlds-guideline_tEmj', 'nlds-guideline__description': 'nlds-guideline__description_Rmd2', 'nlds-guideline__example': 'nlds-guideline__example_Npzh', 'nlds-guideline__icon': 'nlds-guideline__icon_CMAh', 'nlds-guideline__title': 'nlds-guideline__title_Kp8d', 'nlds-guideline__badge': 'nlds-guideline__badge_cDbY', 'nlds-guideline__badge--dont': 'nlds-guideline__badge--dont_w4Jz', 'nlds-guideline__badge--do': 'nlds-guideline__badge--do_wylG', 'nlds-guideline--dont': 'nlds-guideline--dont_NsYw' };
+   var a = l(52676);
+   const c = (0, r.createContext)({}),
+    u = (e) => {
+     let { title: n, appearance: l, description: r, children: u, figure: p } = e;
+     const m = { do: 'Doen', dont: 'Niet doen' },
+      g = p ? 'figure' : 'div',
+      h = p ? 'figcaption' : 'div';
+     return (0, a.jsxs)(g, { className: (0, s.Z)(d['nlds-guideline'], d[`nlds-guideline--${l}`]), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, a.jsxs)(h, { className: (0, s.Z)(d['nlds-guideline__description']), children: ['dont' === l ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, s.Z)(d['nlds-guideline__badge'], d[`nlds-guideline__badge--${l}`]), children: [(0, a.jsx)(i.Z, { 'aria-hidden': 'true', role: 'presentation', className: d['nlds-guideline__icon'] }), (0, a.jsx)('span', { className: d['nlds-guideline__title'], children: m.dont })] }), (0, a.jsx)(t.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(t.nv, { className: (0, s.Z)(d['nlds-guideline__badge'], d[`nlds-guideline__badge--${l}`]), children: [(0, a.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: d['nlds-guideline__icon'] }), (0, a.jsx)('span', { className: d['nlds-guideline__title'], children: m.do })] }), (0, a.jsx)(t.nv, { children: n })] }), r] }), (0, a.jsx)('div', { className: (0, s.Z)(d['nlds-guideline__example']), children: (0, a.jsx)(c.Provider, { value: { title: n, type: m[l] }, children: u }) })] });
+    };
+  },
+  24785: (e, n, l) => {
+   l.d(n, { Z: () => r, a: () => s });
+   var i = l(75271);
+   const o = {},
+    t = i.createContext(o);
+   function s(e) {
+    const n = i.useContext(t);
+    return i.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function r(e) {
+    let n;
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : s(e.components)), i.createElement(t.Provider, { value: n }, e.children);
+   }
+  },
+ },
+]);
