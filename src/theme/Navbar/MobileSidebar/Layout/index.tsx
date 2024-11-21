@@ -6,12 +6,13 @@ import styles from './Layout.module.css';
 
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): React.Element {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
-  const navbarModalDialog = useRef(null);
+  const navbarModalDialog = useRef<HTMLDialogElement>();
   const { shown, toggle } = useNavbarMobileSidebar();
 
   useEffect(() => {
-    const dialogEl = navbarModalDialog.current;
+    const { current: dialogEl } = navbarModalDialog;
 
+    if (!dialogEl) return;
     if (shown) {
       dialogEl.showModal();
     } else {
