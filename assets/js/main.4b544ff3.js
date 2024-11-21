@@ -1,4 +1,4 @@
-/*! For license information please see main.c8e7690f.js.LICENSE.txt */
+/*! For license information please see main.4b544ff3.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -2108,12 +2108,12 @@
    function et(e) {
     let { header: t, primaryMenu: r, secondaryMenu: a } = e;
     const { shown: c } = F(),
-     i = (0, n.useRef)(null),
+     i = (0, n.useRef)(),
      { shown: l, toggle: u } = (0, R.e)();
     return (
      (0, n.useEffect)(() => {
-      const e = i.current;
-      l ? e.showModal() : e.close();
+      const { current: e } = i;
+      e && (l ? e.showModal() : e.close());
      }),
      (0, n.useEffect)(() => {
       const e = i.current;
