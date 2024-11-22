@@ -8,7 +8,7 @@
     o = n(24785);
    function i(e) {
     const t = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Als je het ', (0, r.jsx)(t.code, { children: 'code' }), '-element gebruikt en met CSS een eigen kleur definieert voor ', (0, r.jsx)(t.code, { children: 'background-color' }), ', dan moet deze achtergrondkleur een contrastverhouding hebben van minimaal 3:1 met de achtergrondkleur van de pagina.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dit geldt niet als je de achtergrondkleur niet zelf definieert, maar overlaat aan de browser. Daarvoor bestaat namelijk een uitzondering in het WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Als je het ', (0, r.jsx)(t.code, { children: 'code' }), '-element gebruikt en met CSS een eigen kleur definieert voor ', (0, r.jsx)(t.code, { children: 'background-color' }), ', dan moet deze achtergrondkleur een contrastverhouding hebben van minimaal 3:1 met de achtergrondkleur van de pagina.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dit geldt niet als je de achtergrondkleur niet zelf definieert, maar overlaat aan de browser. Daarvoor bestaat namelijk een uitzondering in het WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content.' }), '\n', (0, r.jsxs)(t.p, { children: ['Dit geldt ook niet als het lettertype of de weergave van de code duidelijke te onderscheiden is als code, door bijvoorbeeld het kiezen van een ', (0, r.jsx)(t.a, { href: 'https://en.wikipedia.org/wiki/List_of_monospaced_typefaces', children: 'monospace lettertype' }), '.'] }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
    function s(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
@@ -356,21 +356,21 @@
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: v, children: t });
     },
-    G = (e) => {
+    _ = (e) => {
      let { checked: t, children: n, title: r, description: i, headingLevel: s = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, o.Z)(k), children: [(0, d.jsxs)('div', { className: (0, o.Z)(b, t && x), children: [(0, d.jsx)('span', { className: C, children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(A.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(f.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), i, n] })] });
     };
-   var _ = n(14669);
+   var G = n(14669);
    const W = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => _.e9.includes(e.id)),
-      s = i && _.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
+     const i = t && t.projects.filter((e) => G.e9.includes(e.id)),
+      s = i && G.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: s.map((e) => ({
-        className: (0, o.Z)(m['definition-of-done'], e && m[`definition-of-done--${(0, _.mA)(e.title)}`]),
+        className: (0, o.Z)(m['definition-of-done'], e && m[`definition-of-done--${(0, G.mA)(e.title)}`]),
         headingLevel: n,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -381,7 +381,7 @@
            (0, d.jsx)(T, {
             children: e.tasks.map((e) => {
              let { checked: t, name: n, id: r } = e;
-             return (0, d.jsx)(G, { checked: t, title: n, description: (0, _.Q6)(r) }, r);
+             return (0, d.jsx)(_, { checked: t, title: n, description: (0, G.Q6)(r) }, r);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -393,7 +393,7 @@
     },
     R = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !_.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !G.e9.includes(e.id));
      return t && i.length
       ? (0, d.jsx)(g.um, {
          appearance: 'large',
@@ -457,7 +457,7 @@
     },
     N = (e) => {
      let { component: t, headingLevel: n, description: o } = e;
-     const i = t && _.$3[t.relayStep];
+     const i = t && G.$3[t.relayStep];
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(y.V, { level: n, suffix: i && (0, d.jsx)(w.y, { state: i }), children: t.title }), (0, d.jsx)(r.nv, { lead: !0, children: o })] });
     };
   },
