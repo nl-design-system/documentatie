@@ -128,7 +128,7 @@ export const NewsletterSignUp = ({
       {orgId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={orgId}>Organisatie</FormLabel>
+            <FormLabel htmlFor={orgId}>Organisatie (niet verplicht)</FormLabel>
           </Paragraph>
           {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
