@@ -11,5 +11,3 @@ Dit is een van de [Gestalt principes](https://www.smashingmagazine.com/2014/03/d
 De ruimte tussen een voorgaande sectie en een koptekst moet groter zijn dan de ruimte tussen de koptekst en de eerste alinea na die koptekst.
 
 ![Screenshot van een artikel. Duidelijk is dat de witruimte boven kopteksten groter is dan onder de kopteksten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_relaties-typografie.png)
-
-[WCAG-succescriterium 1.4.8 Visuele weergave](/wcag/1.4.8) beschrijft dat de regelafstand van een alinea ten minste 1.5 zou moeten zijn. En dat de afstand tussen alinea’s ten minste 1,5 keer zo groot zou moeten zijn als de regelafstand.
