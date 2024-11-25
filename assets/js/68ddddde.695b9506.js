@@ -1,6 +1,20 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [5643],
  {
+  92183: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => s });
+   var r = t(52676),
+    i = t(24785);
+   function o(e) {
+    const n = { a: 'a', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsxs)(n.p, { children: ['Als je implementatie voldoet aan de acceptatiecriteria voor dit component, kun je er vanuit gaan dat je gebruik van dit component voldoet aan WCAG, niveau A en AA, en voor twee succescriteria aan niveau AAA (', (0, r.jsx)(n.a, { href: 'https://nldesignsystem.nl/wcag/2.4.13', children: '2.4.13 Focusweergave' }), ' en ', (0, r.jsx)(n.a, { href: 'https://nldesignsystem.nl/wcag/2.5.5', children: '2.5.5 Grootte van het aanwijsgebied uitgebreid' }), ').'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+   }
+  },
   76126: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => s });
@@ -143,62 +157,63 @@
   },
   98008: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => D, component: () => M, contentTitle: () => R, default: () => H, description: () => Z, frontMatter: () => L, issueNumber: () => F, metadata: () => S, title: () => N, toc: () => P });
+   t.r(n), t.d(n, { assets: () => P, component: () => V, contentTitle: () => S, default: () => O, description: () => F, frontMatter: () => R, issueNumber: () => M, metadata: () => D, title: () => Z, toc: () => N });
    var r = t(52676),
     i = t(24785),
     o = t(50460),
     s = t(34434),
     a = t(23952),
-    c = t(51217),
-    l = t(60945),
-    d = t(89345),
-    u = t(31340),
-    h = t(76126),
-    g = t(67921),
-    m = t(94687),
-    p = t(87234),
-    j = t(97281),
-    k = t(88782);
-   function w(e) {
+    c = t(92183),
+    l = t(51217),
+    d = t(60945),
+    u = t(89345),
+    h = t(31340),
+    g = t(76126),
+    m = t(67921),
+    p = t(94687),
+    j = t(87234),
+    k = t(97281),
+    w = t(88782);
+   function f(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.' }), '\n', (0, r.jsxs)(n.p, { children: ['Verberg de Skip Link nooit met ', (0, r.jsx)(n.code, { children: 'display:none' }), '. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/', children: 'Maak toetsenbord focus goed zichtbaar' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/voorkeuren', children: 'Let op voorkeursinstellingen voor kleur' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
-   function f(e = {}) {
+   function v(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(w, { ...e }) }) : w(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(f, { ...e }) }) : f(e);
    }
-   var v = t(80062),
-    b = t(27948),
+   var b = t(80062),
+    x = t(27948),
     y = t(27047),
-    x = t(71505),
-    A = t(61398),
-    z = t(27626),
-    C = t(34234),
-    T = t(43271);
-   function G(e) {
+    A = t(71505),
+    z = t(61398),
+    C = t(27626),
+    T = t(34234),
+    G = t(43271);
+   function _(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies', children: 'Respecteer conventies' }) }), '\n'] })] });
    }
-   function _(e = {}) {
+   function W(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(G, { ...e }) }) : G(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(_, { ...e }) }) : _(e);
    }
-   var W = t(40001);
-   const L = { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link' },
-    R = void 0,
-    S = { id: 'componenten/skip-link/index', title: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', source: '@site/docs/componenten/skip-link/index.mdx', sourceDirName: 'componenten/skip-link', slug: '/skip-link', permalink: '/skip-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/skip-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link' }, sidebar: 'componenten', previous: { title: 'Side Navigation', permalink: '/side-navigation' }, next: { title: 'Spinner', permalink: '/spinner' } },
-    D = {},
-    P = [
+   var L = t(40001);
+   const R = { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link' },
+    S = void 0,
+    D = { id: 'componenten/skip-link/index', title: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', source: '@site/docs/componenten/skip-link/index.mdx', sourceDirName: 'componenten/skip-link', slug: '/skip-link', permalink: '/skip-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/skip-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link' }, sidebar: 'componenten', previous: { title: 'Side Navigation', permalink: '/side-navigation' }, next: { title: 'Spinner', permalink: '/spinner' } },
+    P = {},
+    N = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    N = 'Skip Link',
-    Z = 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.',
-    F = 74,
-    M = o.find((e) => e.number === F);
-   function V(e) {
+    Z = 'Skip Link',
+    F = 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.',
+    M = 74,
+    V = o.find((e) => e.number === M);
+   function H(e) {
     const n = { h2: 'h2', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -208,30 +223,31 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(a.Rv, { component: M, headingLevel: 1, description: Z }),
+      (0, r.jsx)(a.Rv, { component: V, headingLevel: 1, description: F }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(a.cN, { component: M, headingLevel: 3 }),
+      (0, r.jsx)(a.cN, { component: V, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(a.W, { component: M, headingLevel: 3 }),
+      (0, r.jsx)(a.W, { component: V, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
+      (0, r.jsx)(c.ZP, {}),
       '\n',
       (0, r.jsx)(s.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
-        { title: 'Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, r.jsx)(d.ZP, {}) },
-        { title: 'De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)', sc: '2.4.4', status: '', component: (0, r.jsx)(k.ZP, {}) },
+        { title: 'Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, r.jsx)(u.ZP, {}) },
+        { title: 'De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)', sc: '2.4.4', status: '', component: (0, r.jsx)(w.ZP, {}) },
         { title: 'Als de gebruiker de Skip Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, r.jsx)(y.ZP, {}) },
-        { title: 'De zichtbare naam van de Skip Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, r.jsx)(x.ZP, {}) },
-        { title: 'De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, r.jsx)(A.ZP, {}) },
-        { title: 'Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats', sc: '3.2.1', status: '', component: (0, r.jsx)(C.ZP, {}) },
-        { title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde", sc: '3.2.3', status: '', component: (0, r.jsx)(T.ZP, {}) },
+        { title: 'De zichtbare naam van de Skip Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, r.jsx)(A.ZP, {}) },
+        { title: 'De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, r.jsx)(z.ZP, {}) },
+        { title: 'Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats', sc: '3.2.1', status: '', component: (0, r.jsx)(T.ZP, {}) },
+        { title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde", sc: '3.2.3', status: '', component: (0, r.jsx)(G.ZP, {}) },
        ],
       }),
       '\n',
@@ -239,12 +255,12 @@
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: (0, r.jsx)(c.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(h.ZP, {}) },
-        { title: 'Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(f, {}) },
-        { title: 'De Skip Link heeft een goed zichtbare focusindicator', sc: '2.4.13', status: '', component: (0, r.jsx)(b.ZP, {}) },
-        { title: 'De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, r.jsx)(A.ZP, {}) },
-        { title: 'Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, r.jsx)(_, {}) },
+        { title: 'De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: (0, r.jsx)(l.ZP, {}) },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(g.ZP, {}) },
+        { title: 'Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(v, {}) },
+        { title: 'De Skip Link heeft een goed zichtbare focusindicator', sc: '2.4.13', status: '', component: (0, r.jsx)(x.ZP, {}) },
+        { title: 'De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, r.jsx)(z.ZP, {}) },
+        { title: 'Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, r.jsx)(W, {}) },
        ],
       }),
       '\n',
@@ -252,8 +268,8 @@
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(l.ZP, {}) },
-        { title: 'Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar', sc: '1.4.10', status: '', component: (0, r.jsx)(u.ZP, {}) },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(d.ZP, {}) },
+        { title: 'Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar', sc: '1.4.10', status: '', component: (0, r.jsx)(h.ZP, {}) },
        ],
       }),
       '\n',
@@ -261,12 +277,12 @@
        headingLevel: 4,
        testCategory: 'Toegankelijkheid toetsenbord',
        items: [
-        { title: 'Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: (0, r.jsx)(g.ZP, {}) },
-        { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord', sc: '2.1.2', status: '', component: (0, r.jsx)(m.ZP, {}) },
-        { title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt", sc: '2.4.1', status: '', component: (0, r.jsx)(p.ZP, {}) },
-        { title: 'De Skip Link staat op een logische plek in de focusvolgorde', sc: '2.4.3', status: '', component: (0, r.jsx)(j.ZP, {}) },
-        { title: 'Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(f, {}) },
-        { title: 'De Skip Link wordt niet bedekt door een ander element op de pagina', sc: '2.4.11', status: '', component: (0, r.jsx)(v.ZP, {}) },
+        { title: 'Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: (0, r.jsx)(m.ZP, {}) },
+        { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord', sc: '2.1.2', status: '', component: (0, r.jsx)(p.ZP, {}) },
+        { title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt", sc: '2.4.1', status: '', component: (0, r.jsx)(j.ZP, {}) },
+        { title: 'De Skip Link staat op een logische plek in de focusvolgorde', sc: '2.4.3', status: '', component: (0, r.jsx)(k.ZP, {}) },
+        { title: 'Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, r.jsx)(v, {}) },
+        { title: 'De Skip Link wordt niet bedekt door een ander element op de pagina', sc: '2.4.11', status: '', component: (0, r.jsx)(b.ZP, {}) },
        ],
       }),
       '\n',
@@ -274,20 +290,20 @@
        headingLevel: 3,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
-        { title: 'Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(z.ZP, {}) },
-        { title: 'De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient', sc: '4.1.2', status: '', component: (0, r.jsx)(W.ZP, {}) },
+        { title: 'Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(C.ZP, {}) },
+        { title: 'De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient', sc: '4.1.2', status: '', component: (0, r.jsx)(L.ZP, {}) },
        ],
       }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(a.vM, { component: M, headingLevel: 3 }),
+      (0, r.jsx)(a.vM, { component: V, headingLevel: 3 }),
      ],
     });
    }
-   function H(e = {}) {
+   function O(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(V, { ...e }) }) : V(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(H, { ...e }) }) : H(e);
    }
   },
   31340: (e, n, t) => {
@@ -603,8 +619,8 @@
     f = t(46506),
     v = t(25953);
    const b = 'task-list_hh8j',
-    y = 'task-list-item_oypx',
-    x = 'task-list-item__marker_Eefn',
+    x = 'task-list-item_oypx',
+    y = 'task-list-item__marker_Eefn',
     A = 'task-list-item__marker--checked_y8Vc',
     z = 'task-list-item__marker-label_XAyi',
     C = (e) => {
@@ -613,7 +629,7 @@
     },
     T = (e) => {
      let { checked: n, children: t, title: r, description: o, headingLevel: s = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)(y), children: [(0, d.jsxs)('div', { className: (0, i.Z)(x, n && A), children: [(0, d.jsx)('span', { className: z, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(f.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)(x), children: [(0, d.jsxs)('div', { className: (0, i.Z)(y, n && A), children: [(0, d.jsx)('span', { className: z, children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(f.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
     };
    var G = t(14669);
    const _ = (e) => {
