@@ -20,6 +20,7 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import AcIntro from "/docs/componenten/ac/_ac_intro.md";
 import Wcag131 from "/docs/componenten/ac/_wcag-1.3.1-code-block.md";
 import Wcag141 from "/docs/wcag/summaries/_1.4.1-summary.md";
 import Wcag143 from "/docs/componenten/ac/_wcag-1.4.3.md";
@@ -46,7 +47,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 ## Acceptatiecriteria
 
-{/* headingLevel is the heading of the items, the list is hardcoded as an H3 for now. */}
+<AcIntro />
 
 <CriteriaList
   headingLevel={4}
