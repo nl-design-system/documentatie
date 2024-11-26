@@ -94,8 +94,8 @@ importers:
         specifier: 1.0.0-alpha.151
         version: 1.0.0-alpha.151
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.76
-        version: 1.0.1-alpha.76
+        specifier: 1.0.1-alpha.77
+        version: 1.0.1-alpha.77
       '@persoonlijke-regelingen-assistent/components-react':
         specifier: 1.0.0-alpha.152
         version: 1.0.0-alpha.152(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1709,8 +1709,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
     resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.76':
-    resolution: {integrity: sha512-+x4/Nc3FCIK7JI35MX1UGllD6h/Jr2U2QuDQcpmF3JDMO5ecY5SEWT/0LRBiOtzcgbsJqQxk+rV917Rq6UnecA==}
+  '@nl-design-system/component-progress@1.0.1-alpha.77':
+    resolution: {integrity: sha512-Jca8xyzll88JTRFjuhJjGfMqs/Kg8mKN7fNm6mRK4vdWBELtYaILClDXYZcoupzlFoQWJDl+AACmfKK3028jig==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -10035,7 +10035,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.76': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.77': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
