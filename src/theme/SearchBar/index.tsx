@@ -111,6 +111,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   }, [importDocSearchModalIfNeeded, setIsOpen]);
   const onClose = useCallback(() => {
     setIsOpen(false);
+    searchButtonRef.current?.focus();
     searchContainer.current?.remove();
   }, [setIsOpen]);
   const onInput = useCallback(
