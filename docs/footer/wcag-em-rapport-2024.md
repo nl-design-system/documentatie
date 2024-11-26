@@ -1,9 +1,9 @@
 ---
-title: Audit toegankelijkheid NLDesignSystem.nl versie 1.0
+title: Audit toegankelijkheid NLDesignSystem.nl versie 2.0
 hide_title: false
 hide_table_of_contents: false
 pagination_label: Toegankelijkheid
-slug: /toegankelijkheidsverklaring/rapport-2023
+slug: /toegankelijkheidsverklaring/rapport-2024
 ---
 
 Dit is het [WCAG EM Auditrapport](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/) van NLDesignSystem.nl.
@@ -19,18 +19,14 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     <dt>Evaluatie opdrachtgever</dt>
     <dd>NL Design System</dd>
     <dt>Evaluatiedatum</dt>
-    <dd>20 november 2023</dd>
+    <dd>Origineel: 20 november 2023; bijgewerkt: 26 september 2024</dd>
   </dl>
 
   <h2>Managementsamenvatting</h2>
 
-  <p>
-    Het menu in desktop en mobiele weergave heeft problemen met de
-    toetsenbordnavigatie, resize en reflow. Dit is de meest ingrijpende
-    aanpassing die moet gebeuren. Daarnaast moet er een goede responsive
-    weergave voor tabellen komen. De overige afkeuringen zijn makkelijker op te
-    lossen.
-  </p>
+  <p>Dit rapport is een hertest van [v1](/toegankelijkheidsverklaring/rapport-2023).</p>
+
+  <p>De problemen uit rapport v1 zijn inmiddels verholpen, met uitzondering van het ontbreken van ondertiteling (1.2.1, 1.2.2). Video's van voor 2023 zijn nog niet ondertiteld.</p>
 
   <h2>Scope van de evaluatie</h2>
 
@@ -63,8 +59,8 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
   <p>Gerapporteerd over 50 van 50 WCAG 2.1 AA Success Criteria.</p>
 
   <ul>
-    <li><span>24</span> <span>Voldoende</span></li>
-    <li><span>11</span> <span>Onvoldoende</span></li>
+    <li><span>33</span> <span>Voldoende</span></li>
+    <li><span>2</span> <span>Onvoldoende</span></li>
     <li><span>0</span> <span>Onbekend</span></li>
     <li><span>15</span> <span>Niet van toepassing</span></li>
     <li><span>0</span> <span>Niet getoetst</span></li>
@@ -72,7 +68,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
   <h3>Alle resultaten</h3>
   <h4>1 Waarneembaar</h4>
   <h5 id="guideline-11">1.1 Tekstalternatieven</h5>
-  <table aria-labelledby="guideline-11">
+  <table aria-labelledby="guideline-11" width="100%">
     <tbody>
       <tr>
         <th scope="col">Success Criterium</th>
@@ -81,23 +77,8 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
       </tr>
       <tr>
         <th scope="row" id="criterion-111">1.1.1: Niet-tekstuele content</th>
-        <td>
-          <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
-        </td>
-        <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>
-            Pagina:
-            <a href="https://nldesignsystem.nl/project/kernteam"
-              >https://nldesignsystem.nl/project/kernteam</a>
-          </p>
-          <p>
-            De SVG’s met de afbeeldingen van de teamleden hebben geen
-            alternatief.
-          </p>
-        </td>
+        <td>Voldoende</td>
+        <td>Geen</td>
       </tr>
     </tbody>
   </table>
@@ -125,7 +106,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
             <a href="https://nldesignsystem.nl/events/heartbeat"
               >https://nldesignsystem.nl/events/heartbeat</a>
           </p>
-          <p>Vimeo video's hebben geen ondertiteling.</p>
+          <p>YouTube video's van voor 2023 hebben geen ondertiteling.</p>
         </td>
       </tr>
       <tr>
@@ -144,7 +125,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
             <a href="https://nldesignsystem.nl/events/heartbeat"
               >https://nldesignsystem.nl/events/heartbeat</a>
           </p>
-          <p>Vimeo video's hebben geen ondertiteling.</p>
+          <p>YouTube video's van voor 2023 hebben geen ondertiteling.</p>
         </td>
       </tr>
       <tr>
@@ -261,29 +242,18 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-143">1.4.3: Contrast (minimum)</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>Zoekoptie in de menubalk.</p>
-          <p>
-            De tekst en de placeholder in het zoek-modal hebben te weinig
-            contrast.
-          </p>
         </td>
       </tr>
       <tr>
         <th scope="row" id="criterion-144">1.4.4: Herschalen van tekst</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>In het menu op alle pagina’s.</p>
-          <p>Het menu hakt af bij schalen naar 200% alleen tekst.</p>
         </td>
       </tr>
       <tr>
@@ -298,28 +268,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-1410">1.4.10: Reflow</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>
-            Pagina
-            <a
-              href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/"
-              >https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
-          </p>
-          <p>
-            Tabellen op Tijdschema · NL Design System hakken af bij een kleiner
-            scherm. En er is geen horizontale scrollbar (zou kunnen bij tabel).
-          </p>
-          <p>
-            Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2022"
-              >https://nldesignsystem.nl/events/design-systems-week-2022</a>
-            Op Design Systems Week 2022 valt het submenu links over de tekst bij
-            een kleiner beeldscherm.
-          </p>
         </td>
       </tr>
       <tr>
@@ -381,20 +332,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-214">2.1.4: Enkel teken sneltoetsen</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>
-            Pagina:
-            <a href="https://nldesignsystem.nl/events/heartbeat"
-              >https://nldesignsystem.nl/events/heartbeat</a>
-          </p>
-          <p>
-            Keyboard shortcuts zijn niet disabled voor de Vimeo player (Disable
-            shortcuts voor vimeo video, keyboard="false").
-          </p>
         </td>
       </tr>
     </tbody>
@@ -475,32 +415,18 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-243">2.4.3: Focus volgorde</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>In het menu op alle pagina’s.</p>
-          <p>
-            De toetsenbordfocus komt op onzichtbare items bij het mobiele menu
-            waardoor de volgorde anders is dan de zichtbare volgorde.
-          </p>
         </td>
       </tr>
       <tr>
         <th scope="row" id="criterion-244">2.4.4: Linkdoel (in context)</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>In het logo in de header op alle pagina’s.</p>
-          <p>
-            De linktekst op het logo is onduidelijk en verwijst niet naar de
-            voorpagina.
-          </p>
         </td>
       </tr>
       <tr>
@@ -523,16 +449,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-247">2.4.7: Focus zichtbaar</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>In het menu op alle pagina’s.</p>
-          <p>
-            Wanneer navigatie kleine schermen “open” staat is focus soms
-            onzichtbaar (want mogelijk om buiten navigatie te tabben).
-          </p>
         </td>
       </tr>
     </tbody>
@@ -565,15 +484,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         <th scope="row" id="criterion-253">2.5.3: Label in naam</th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>In het menu op alle pagina’s.</p>
-          <p>
-            Het label van de menuknop komt niet overeen met de visuele tekst.
-          </p>
         </td>
       </tr>
       <tr>
