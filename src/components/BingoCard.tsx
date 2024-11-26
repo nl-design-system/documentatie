@@ -1,31 +1,22 @@
-import { useHistory } from '@docusaurus/router';
-import { Alert, Button, Heading1, Icon, Paragraph } from '@utrecht/component-library-react';
+import { Alert, Heading1, Icon, Paragraph } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React, { CSSProperties, useEffect } from 'react';
+import React, { CSSProperties } from 'react';
 import { useForm } from 'react-hook-form';
-import { issues } from './_issues';
-import style from './bingo.module.css';
+import style from './BingoCard.module.css';
 
-const shuffleArray = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-};
+interface Issue {
+  number: number;
+  label: string;
+}
 
 interface BingoCardProps {
-  issues: typeof issues;
+  issues: Issue[];
   columns: number;
   freeCellsIds: number[];
 }
 
-const BingoCard = ({ issues, columns, freeCellsIds }: BingoCardProps) => {
+export const BingoCard = ({ issues, columns, freeCellsIds }: BingoCardProps) => {
   const { register, formState } = useForm();
-
-  useEffect(() => {
-    sessionStorage.setItem('bingo-card', JSON.stringify(issues));
-  }, [formState]);
 
   return (
     <>
@@ -71,30 +62,3 @@ const BingoCard = ({ issues, columns, freeCellsIds }: BingoCardProps) => {
     </>
   );
 };
-
-export const Game = () => {
-  const { location } = useHistory();
-  const params = new URLSearchParams(location.search);
-
-  const columns = parseInt(params.get('columns'), 10) || 3;
-  const freeCellsIds = [5];
-  const cardIssues =
-    JSON.parse(sessionStorage.getItem('bingo-card')) || shuffleArray([...issues]).splice(0, columns * columns);
-
-  return (
-    <div id="results">
-      <BingoCard issues={cardIssues} columns={columns} freeCellsIds={freeCellsIds} />
-      <Button
-        appearance="secondary-action-button"
-        onClick={() => {
-          sessionStorage.removeItem('bingo-card');
-          window.location.reload();
-        }}
-      >
-        Start opnieuw
-      </Button>
-    </div>
-  );
-};
-
-export default Game;
