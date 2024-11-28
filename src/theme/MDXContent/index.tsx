@@ -16,8 +16,8 @@ import {
   Heading6,
   Image,
   Link,
+  OrderedList,
   UnorderedList,
-  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
 
@@ -31,8 +31,12 @@ export default function MDXContent({ children }: Props): React.Element {
         em: Emphasis,
         pre: MDXPre,
         details: MDXDetails,
-        ul: UnorderedList,
-        li: UnorderedListItem,
+        ul: ({ children }) => {
+          return <UnorderedList className="utrecht-unordered-list--html-content">{children}</UnorderedList>;
+        },
+        ol: ({ children }) => {
+          return <OrderedList className="utrecht-ordered-list--html-content">{children}</OrderedList>;
+        },
         img: Image,
         h1: Heading1,
         h2: Heading2,
