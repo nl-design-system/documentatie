@@ -47,8 +47,6 @@ HelpImproveComponent,
 Implementations,
 Introduction,
 } from "@site/src/components/ComponentPage";
-import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
-import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import AcIntro from "/docs/componenten/ac/\_ac_intro.md";
 import Wcag111 from '/docs/componenten/ac/\_wcag-1.1.1-button.md';
 import Wcag1411 from '/docs/componenten/ac/\_wcag-1.4.11-button.md';
@@ -77,12 +75,6 @@ export const issueNumber = 38;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentAliases name="code-block" />
-
-## Anatomie
-
-<ComponentAnatomy name="code-block" />
 
 ## Definition of Done
 

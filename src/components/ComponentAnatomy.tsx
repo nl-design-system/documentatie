@@ -1,17 +1,20 @@
 import { Markdown } from '@site/src/components/Markdown';
 import clsx from 'clsx';
 import React, { PropsWithChildren, Suspense } from 'react';
+import { toKebabCase } from '../utils';
 import style from './ComponentAnatomy.module.css';
 
 interface ComponentAnatomyProps {
-  name?: string;
+  component?: object;
 }
 
-export const ComponentAnatomy = ({ name }: PropsWithChildren<ComponentAnatomyProps>) => {
-  let AnatomyLegend =
-    React.lazy(() => import(`@nl-design-system-candidate/${name}-docs/docs/anatomy/anatomy.md`)) || null;
-  let AnatomyIllustration =
-    React.lazy(() => import(`@nl-design-system-candidate/code-block-docs/docs/anatomy/anatomy.svg`)) || null;
+export const ComponentAnatomy = ({ component }: PropsWithChildren<ComponentAnatomyProps>) => {
+  const { title } = component;
+  const slug = toKebabCase(title);
+  let AnatomyLegend = React.lazy(() => import(`@nl-design-system-candidate/${slug}-docs/docs/anatomy/anatomy.md`));
+  let AnatomyIllustration = React.lazy(
+    () => import(`@nl-design-system-candidate/code-block-docs/docs/anatomy/anatomy.svg`),
+  );
 
   return (
     <Suspense>
