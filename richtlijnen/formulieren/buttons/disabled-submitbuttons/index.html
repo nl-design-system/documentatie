@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -343,37 +343,37 @@
               <h1 id="disabled-submitbuttons" class="utrecht-heading-1">Disabled submitbuttons</h1>
               <p>In de praktijk worden disabled submitbuttons vaak gebruikt om te verhinderen dat een gebruiker het formulier verzendt als nog niet alle waarden goed zijn ingevuld.</p>
               <p>Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?</li>
-               <li class="utrecht-unordered-list__item">Meestal is een disabled button grijs met grijze tekst. Dit is voor veel gebruikers slecht zichtbaar.</li>
-               <li class="utrecht-unordered-list__item">Toetsenbord- en screenreadergebruikers kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik.</li>
-               <li class="utrecht-unordered-list__item">Gebruikers kunnen verandering van disabled in enabled soms niet opmerken als deze uit beeld is en blijven zoeken naar wat er mis is.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?</li>
+               <li>Meestal is een disabled button grijs met grijze tekst. Dit is voor veel gebruikers slecht zichtbaar.</li>
+               <li>Toetsenbord- en screenreadergebruikers kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik.</li>
+               <li>Gebruikers kunnen verandering van disabled in enabled soms niet opmerken als deze uit beeld is en blijven zoeken naar wat er mis is.</li>
               </ul>
               <p>Een goede oplossing en vervanging voor een disabled button: schrijf goede labelteksten, descriptions en foutmeldingen. Zodat de gebruiker weet wat er mis is en niet hoeft te puzzelen.</p>
               <p>Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
                 <a href="https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/" class="utrecht-link utrecht-link--html-a"><span lang="en">The problem with disabled buttons and what to do instead</span></a
                 >, Adam Silver.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://gomakethings.com/dont-disable-buttons/" class="utrecht-link utrecht-link--html-a"><span lang="en">Don&#x27;t disable buttons</span></a
                 >, Chris Ferdinandi in Go Make Things.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" class="utrecht-link utrecht-link--html-a"><span lang="en">Usability Pitfalls of Disabled Buttons, and How To Avoid Them</span></a
                 >, Vitaly Friedman in Smashing Magazine.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://axesslab.com/disabled-buttons-suck/" class="utrecht-link utrecht-link--html-a"><span lang="en">Disabled buttons suck</span></a
                 >.
                </li>
               </ul>
               <p>Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: <code class="utrecht-code">#767676</code> tegen een witte achtergrond.</li>
-               <li class="utrecht-unordered-list__item">Gebruik <code class="utrecht-code">tabindex=&quot;0&quot;</code> zodat de button wel ontdekt kan worden door screenreadergebruikers.</li>
-               <li class="utrecht-unordered-list__item">Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met <code class="utrecht-code">aria-describedby</code> aan de button.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: <code class="utrecht-code">#767676</code> tegen een witte achtergrond.</li>
+               <li>Gebruik <code class="utrecht-code">tabindex=&quot;0&quot;</code> zodat de button wel ontdekt kan worden door screenreadergebruikers.</li>
+               <li>Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met <code class="utrecht-code">aria-describedby</code> aan de button.</li>
               </ul>
               <!-- -->
               <h2 id="over-deze-richtlijnen" class="utrecht-heading-2">Over deze richtlijnen</h2>

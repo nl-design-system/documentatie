@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -284,16 +284,16 @@
               <p>Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt.</p>
               <p>Een optie is het geven van een outline (focusring). Dit kan via de CSS-properties <code class="utrecht-code">outline</code> of <code class="utrecht-code">border</code>.</p>
               <p>Geef de outline:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">een dikte van minimaal 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel" class="utrecht-link utrecht-link--html-a">CSS-pixels</a>;</li>
-               <li class="utrecht-unordered-list__item">een kleurcontrast van ten minste 3:1 ten opzichte van de aangrenzende kleuren;</li>
-               <li class="utrecht-unordered-list__item">een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>een dikte van minimaal 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel" class="utrecht-link utrecht-link--html-a">CSS-pixels</a>;</li>
+               <li>een kleurcontrast van ten minste 3:1 ten opzichte van de aangrenzende kleuren;</li>
+               <li>een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat.</li>
               </ul>
               <p>Een andere optie is geen outline toepassen, maar het hele element van kleur te laten veranderen. Bijvoorbeeld een button die van kleur verandert bij toetsenbordfocus. Ook hier geldt een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat.</p>
               <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Formulieren - Visueel ontwerp: <a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar" class="utrecht-link utrecht-link--html-a">Maak de toetsenbordfocus goed zichtbaar</a>.</li>
-               <li class="utrecht-unordered-list__item">Formulieren- Toetsenbord: <a href="/richtlijnen/formulieren/toetsenbord" class="utrecht-link utrecht-link--html-a">Zorg dat het formulier werkt met een toetsenbord</a>.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Formulieren - Visueel ontwerp: <a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar" class="utrecht-link utrecht-link--html-a">Maak de toetsenbordfocus goed zichtbaar</a>.</li>
+               <li>Formulieren- Toetsenbord: <a href="/richtlijnen/formulieren/toetsenbord" class="utrecht-link utrecht-link--html-a">Zorg dat het formulier werkt met een toetsenbord</a>.</li>
               </ul>
               <h2 id="bronnen" class="utrecht-heading-2">Bronnen</h2>
               <p><a href="https://www.sarasoueidan.com/blog/focus-indicators/" class="utrecht-link utrecht-link--html-a">A guide to designing accessible, WCAG-conformant focus indicators</a> van Sara Soueidan.</p>
@@ -304,41 +304,41 @@
               <p>Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik de tab-toets om te controleren of links, buttons, invoervelden en checkboxes duidelijk zichtbaar de focus aangeven. Controleer de focus van radiobuttons en tabs met de pijltjestoetsen.</p>
               <p>Als in de CSS de outline is verwijderd door de CSS <code class="utrecht-code">outline: none;</code>, moet er een alternatief zijn die de toetsenbordfocus visueel duidelijk aangeeft. Bijvoorbeeld door het definiëren van een border als een element focus krijgt.</p>
               <p>Controleer of de breedte van de outline tenminste 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel" class="utrecht-link utrecht-link--html-a">CSS-pixels</a> breed is. Inspecteer in de gegenereerde HTML-code van de webpagina de elementen die de toetsenbordfocus kunnen krijgen, bijvoorbeeld met een <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" class="utrecht-link utrecht-link--html-a">browser inspector</a>.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Zorg dat het element wat je wilt inspecteren de focus heeft.</li>
-               <li class="utrecht-unordered-list__item">In de CSS-properties moet gedefinieerd staan dat de <code class="utrecht-code">outline-width</code> of <code class="utrecht-code">border-width</code> ten minste 2 pixels is.</li>
-               <li class="utrecht-unordered-list__item">Controleer of het kleurcontrast van de outline ten minste 3:1 is ten opzichte van de aangrenzende kleuren, dus de binnen- en buitenkant van de lijn.</li>
-               <li class="utrecht-unordered-list__item">Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de gefocuste en niet-gefocuste staat.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Zorg dat het element wat je wilt inspecteren de focus heeft.</li>
+               <li>In de CSS-properties moet gedefinieerd staan dat de <code class="utrecht-code">outline-width</code> of <code class="utrecht-code">border-width</code> ten minste 2 pixels is.</li>
+               <li>Controleer of het kleurcontrast van de outline ten minste 3:1 is ten opzichte van de aangrenzende kleuren, dus de binnen- en buitenkant van de lijn.</li>
+               <li>Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de gefocuste en niet-gefocuste staat.</li>
               </ul>
               <p>Is er geen outline, maar verandert de kleur van het hele element?</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat. Bijvoorbeeld voor een button die van kleur verandert bij toetsenbordfocus.</li>
-               <li class="utrecht-unordered-list__item">Controleer of de tekst in dit element aan de <a href="https://www.w3.org/Translations/WCAG22-nl/#contrast-minimum" class="utrecht-link utrecht-link--html-a">richtlijnen voor contrast</a> voldoet in gefocuste en niet-gefocuste staat.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer dan of er een kleurcontrast is van ten minste 3:1 tussen dezelfde pixels in de <strong>gefocuste</strong> en <strong>niet-gefocuste</strong> staat. Bijvoorbeeld voor een button die van kleur verandert bij toetsenbordfocus.</li>
+               <li>Controleer of de tekst in dit element aan de <a href="https://www.w3.org/Translations/WCAG22-nl/#contrast-minimum" class="utrecht-link utrecht-link--html-a">richtlijnen voor contrast</a> voldoet in gefocuste en niet-gefocuste staat.</li>
               </ul>
               <p>Mooie tools om het kleurcontrast te testen en zo nodig een alternatief te kiezen zijn:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast van kleuren</a></li>
-               <li class="utrecht-unordered-list__item"><a href="https://accessiblepalette.com/" class="utrecht-link utrecht-link--html-a">Accessible Palette</a></li>
-               <li class="utrecht-unordered-list__item"><a href="https://color.review/" class="utrecht-link utrecht-link--html-a">Color Review</a></li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast van kleuren</a></li>
+               <li><a href="https://accessiblepalette.com/" class="utrecht-link utrecht-link--html-a">Accessible Palette</a></li>
+               <li><a href="https://color.review/" class="utrecht-link utrecht-link--html-a">Color Review</a></li>
               </ul>
               <p>Additionele testen:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">de <a href="/wcag/2.4.1" class="utrecht-link utrecht-link--html-a">skip link</a> wordt zichtbaar als deze toetsenbord krijgt.</li>
-               <li class="utrecht-unordered-list__item">de outline (of het alternatief) is goed zichtbaar bij componenten met verschillende achtergrondkleuren, zoals bij een Page-header of footer.</li>
-               <li class="utrecht-unordered-list__item">de outline (of het alternatief) is goed zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>de <a href="/wcag/2.4.1" class="utrecht-link utrecht-link--html-a">skip link</a> wordt zichtbaar als deze toetsenbord krijgt.</li>
+               <li>de outline (of het alternatief) is goed zichtbaar bij componenten met verschillende achtergrondkleuren, zoals bij een Page-header of footer.</li>
+               <li>de outline (of het alternatief) is goed zichtbaar in dark- en light-mode, als deze optie aangeboden wordt op de webpagina.</li>
               </ul>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
                 Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Success Criterion 2.4.13 Focus Appearance</span></a
                 >.
                </li>
-               <li class="utrecht-unordered-list__item">De Nederlandse vertaling van het WCAG-succescriterium 2.4.13 Focusweergave verschijnt binnenkort.</li>
-               <li class="utrecht-unordered-list__item">
+               <li>De Nederlandse vertaling van het WCAG-succescriterium 2.4.13 Focusweergave verschijnt binnenkort.</li>
+               <li>
                 Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 2.4.13 Focus Appearance</span></a
                 >.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 Engelstalige toelichting: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Understanding SC 2.4.13: Focus Appearance</span></a
                 >.
                </li>

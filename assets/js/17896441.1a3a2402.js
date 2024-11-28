@@ -366,7 +366,34 @@
     m = l(46506);
    function b(e) {
     let { children: t } = e;
-    return (0, d.jsx)(s.Z, { components: { head: c, code: m.EK, a: m.rU, em: m.j$, pre: p, details: r, ul: m.QI, li: m.AS, img: m.Ee, h1: m.nL, h2: m.XJ, h3: m.aC, h4: m.k8, h5: m.by, h6: m.Cd, admonition: n.Z, mermaid: h.Z }, children: t });
+    return (0, d.jsx)(s.Z, {
+     components: {
+      head: c,
+      code: m.EK,
+      a: m.rU,
+      em: m.j$,
+      pre: p,
+      details: r,
+      ul: (e) => {
+       let { children: t } = e;
+       return (0, d.jsx)(m.QI, { className: 'utrecht-unordered-list--html-content', children: t });
+      },
+      ol: (e) => {
+       let { children: t } = e;
+       return (0, d.jsx)(m.GS, { className: 'utrecht-ordered-list--html-content', children: t });
+      },
+      img: m.Ee,
+      h1: m.nL,
+      h2: m.XJ,
+      h3: m.aC,
+      h4: m.k8,
+      h5: m.by,
+      h6: m.Cd,
+      admonition: n.Z,
+      mermaid: h.Z,
+     },
+     children: t,
+    });
    }
   },
   12970: (e, t, l) => {

@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -343,10 +343,10 @@
               <h2 id="live-region-met-rolealert" class="utrecht-heading-2">Live-region met <code class="utrecht-code">role=&quot;alert&quot;</code></h2>
               <p>Gebruik <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role" class="utrecht-link utrecht-link--html-a">role=&quot;alert&quot;</a> om belangrijke en/of tijdgevoelige berichten aan gebruikers van hulptechnologie direct over te brengen.</p>
               <p>Bijvoorbeeld:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Je inlogsessie loopt bijna af.</li>
-               <li class="utrecht-unordered-list__item">De verbinding met de server is verbroken, lokale wijzigingen worden nu niet opgeslagen.</li>
-               <li class="utrecht-unordered-list__item">Je hebt nog 20 seconden om het formulier te verzenden.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je inlogsessie loopt bijna af.</li>
+               <li>De verbinding met de server is verbroken, lokale wijzigingen worden nu niet opgeslagen.</li>
+               <li>Je hebt nog 20 seconden om het formulier te verzenden.</li>
               </ul>
               <span hidden="" id=":R12ihralaqh:"
                >codevoorbeeld
@@ -366,10 +366,10 @@
               <h2 id="live-region-met-rolestatus" class="utrecht-heading-2">Live-region met <code class="utrecht-code">role=&quot;status&quot;</code></h2>
               <p>Een live-region met de <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/status_role" class="utrecht-link utrecht-link--html-a">role=&quot;status&quot;</a> geeft de gebruiker informatie die niet belangrijk genoeg is om een &#x27;alert&#x27; te zijn.</p>
               <p>Bijvoorbeeld:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Het aanmeldformulier is succesvol verzonden.</li>
-               <li class="utrecht-unordered-list__item">Je hebt nu 3 producten in je winkelmandje.</li>
-               <li class="utrecht-unordered-list__item">Er zijn 5 zoekresultaten gevonden voor &#x27;eikenprocessierups&#x27;.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het aanmeldformulier is succesvol verzonden.</li>
+               <li>Je hebt nu 3 producten in je winkelmandje.</li>
+               <li>Er zijn 5 zoekresultaten gevonden voor &#x27;eikenprocessierups&#x27;.</li>
               </ul>
               <span hidden="" id=":R1uihralaqh:"
                >codevoorbeeld
@@ -386,18 +386,18 @@
               <p>Met andere woorden, &#x27;status&#x27; wacht op zijn beurt, &#x27;alert&#x27; dringt voor.</p>
               <p>Veel CMS&#x27;en en frameworks hebben iets ingebouwd om screenreaderfeedback makkelijker te maken: ze plaatsen onderaan de pagina een vaste live-region, waaraan je als ontwikkelaar meldingen kan toevoegen die dan worden voorgelezen.</p>
               <p>Voorbeelden van dit soort functionaliteit:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://make.wordpress.org/accessibility/handbook/markup/wp-a11y-speak/" class="utrecht-link utrecht-link--html-a">wp-a11y-speak()</a> voor WordPress.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://www.drupal.org/node/1973218" class="utrecht-link utrecht-link--html-a">drupal.accounce</a> voor Drupal.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://www.npmjs.com/package/@react-aria/live-announcer" class="utrecht-link utrecht-link--html-a">live-announcer</a> voor react-aria.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://make.wordpress.org/accessibility/handbook/markup/wp-a11y-speak/" class="utrecht-link utrecht-link--html-a">wp-a11y-speak()</a> voor WordPress.</li>
+               <li><a href="https://www.drupal.org/node/1973218" class="utrecht-link utrecht-link--html-a">drupal.accounce</a> voor Drupal.</li>
+               <li><a href="https://www.npmjs.com/package/@react-aria/live-announcer" class="utrecht-link utrecht-link--html-a">live-announcer</a> voor react-aria.</li>
               </ul>
               <p>Het informeren van alle gebruikers over een statusbericht is verplicht om te voldoen aan het WCAG-succescriterium <a href="https://nldesignsystem.nl/wcag/4.1.3" class="utrecht-link utrecht-link--html-a">4.1.3 Statusberichten</a> (niveau AA).</p>
               <p>Bronnen:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
                 <a href="https://adrianroselli.com/2020/01/defining-toast-messages.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Defining toast messages</span></a> van Adrian Roselli.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working/" class="utrecht-link utrecht-link--html-a"><span lang="en">Patrick H. Lauke</span></a> van Patrick H. Lauke.
                </li>
               </ul>

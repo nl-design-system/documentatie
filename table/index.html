@@ -27,7 +27,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -250,10 +250,10 @@
               <p>Er zijn eindeloos veel varianten van de tabel, daarom is het niet mogelijk op één pagina een volledig overzicht te hebben met tips. Op deze pagina zullen we algemene tips geven. In de toekomst willen we losse pagina&#x27;s aanbieden voor speciale soorten tabellen.</p>
               <h3 id="duidelijke-koppen" class="utrecht-heading-3">Duidelijke koppen</h3>
               <p>In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveaus koppen bevatten: kop van de tabel (<em class="utrecht-emphasis utrecht-emphasis--stressed">caption</em>), kop van de kolom (<em class="utrecht-emphasis utrecht-emphasis--stressed">column header</em>) en kop van de rij (<em class="utrecht-emphasis utrecht-emphasis--stressed">row header</em>). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;caption&gt;</code> voor de kop van de tabel</li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;th scope=&quot;col&quot;&gt;</code> voor de kop van de kolom</li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;th scope=&quot;row&quot;&gt;</code> voor de kop van de rij</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">&lt;caption&gt;</code> voor de kop van de tabel</li>
+               <li><code class="utrecht-code">&lt;th scope=&quot;col&quot;&gt;</code> voor de kop van de kolom</li>
+               <li><code class="utrecht-code">&lt;th scope=&quot;row&quot;&gt;</code> voor de kop van de rij</li>
               </ul>
               <h3 id="sorteer-de-tabelrijen" class="utrecht-heading-3">Sorteer de tabelrijen</h3>
               <p>Voor screen reader gebruikers is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met één druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.</p>
@@ -289,9 +289,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">table</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
               <p>Je geeft met de volgende code aan in welke volgorde de informatie staat:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">aria-sort=&quot;ascending&quot;</code> voor &quot;oplopende volgorde&quot;, bijvoorbeeld namen van A tot Z (namen), van bedragen en aantallen van klein naar groot, geplande activiteiten van eerdere naar latere datums</li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">aria-sort=&quot;descending&quot;</code> voor &quot;aflopende volgorde&quot;, bijvoorbeeld namen van Z naar A, ontvangen berichten van nieuw naar oud, bedragen en aantallen van groot naar klein</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">aria-sort=&quot;ascending&quot;</code> voor &quot;oplopende volgorde&quot;, bijvoorbeeld namen van A tot Z (namen), van bedragen en aantallen van klein naar groot, geplande activiteiten van eerdere naar latere datums</li>
+               <li><code class="utrecht-code">aria-sort=&quot;descending&quot;</code> voor &quot;aflopende volgorde&quot;, bijvoorbeeld namen van Z naar A, ontvangen berichten van nieuw naar oud, bedragen en aantallen van groot naar klein</li>
               </ul>
               <h3 id="responsive-tabellen" class="utrecht-heading-3"><em class="utrecht-emphasis utrecht-emphasis--stressed">Responsive</em> tabellen</h3>
               <p>Volgens het <a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.10 Reflow</a> moeten pagina&#x27;s leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:</p>
@@ -391,29 +391,29 @@
               <p>Screen readers maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screen readers uit de code begrijpen wat de <em class="utrecht-emphasis utrecht-emphasis--stressed">column header</em> is en wat de <em class="utrecht-emphasis utrecht-emphasis--stressed">row header</em> is.</p>
               <p>Wanneer je met CSS <code class="utrecht-code">display</code> aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> en maak je de relatie tussen de <em class="utrecht-emphasis utrecht-emphasis--stressed">data cell</em> en de <em class="utrecht-emphasis utrecht-emphasis--stressed">header cell</em> kapot. Tabellen waarvan de <code class="utrecht-code">display</code> wordt aangepast werken daarom niet meer in screen readers, tenzij de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> door extra code wordt hersteld.</p>
               <p>Je kunt voorkomen dat de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> anders wordt opgebouwd. Je moet dan op élk element van de tabel expliciet zeggen welke <code class="utrecht-code">role</code> het heeft. Omdat deze techniek veel extra werk geeft en foutgevoelig is, raden wij aan om alternatieven te kiezen zoals niet <code class="utrecht-code">display</code> aanpassen of twee varianten maken.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;caption id=&quot;unique-id-here&quot;&gt;</code> samen met <code class="utrecht-code">&lt;table aria-labelledby=&quot;unique-id-here&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;table role=&quot;table&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;tbody role=&quot;table-row-group&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;td role=&quot;cell&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;tfoot role=&quot;table-row-group&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;th scope=&quot;col&quot; role=&quot;columnheader&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;th scope=&quot;row&quot; role=&quot;rowheader&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;thead role=&quot;table-row-group&quot;&gt;</code></li>
-               <li class="utrecht-unordered-list__item"><code class="utrecht-code">&lt;tr role=&quot;table-row&quot;&gt;</code></li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">&lt;caption id=&quot;unique-id-here&quot;&gt;</code> samen met <code class="utrecht-code">&lt;table aria-labelledby=&quot;unique-id-here&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;table role=&quot;table&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;tbody role=&quot;table-row-group&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;td role=&quot;cell&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;tfoot role=&quot;table-row-group&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;th scope=&quot;col&quot; role=&quot;columnheader&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;th scope=&quot;row&quot; role=&quot;rowheader&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;thead role=&quot;table-row-group&quot;&gt;</code></li>
+               <li><code class="utrecht-code">&lt;tr role=&quot;table-row&quot;&gt;</code></li>
               </ul>
               <h3 id="links" class="utrecht-heading-3">Links</h3>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" class="utrecht-link utrecht-link--html-a">MDN: <code class="utrecht-code">&lt;table&gt;</code>: The Table element</a>
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-sort" class="utrecht-link utrecht-link--html-a">MDN: <code class="utrecht-code">aria-sort</code></a>
                </li>
               </ul>
               <h4 id="relevante-wcag-regels" class="utrecht-heading-4">Relevante WCAG-succescriteria</h4>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></li>
               </ul>
               <h2 id="help-title-verbeteren" class="utrecht-heading-2">
                Help

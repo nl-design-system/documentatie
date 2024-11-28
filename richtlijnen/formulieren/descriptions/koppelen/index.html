@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -343,16 +343,16 @@
               <p>Voor screenreadergebruikers is het belangrijk dat de description samen wordt voorgelezen met het formulierveld.</p>
               <p>Waarom? Screenreaders, zoals JAWS, schakelen over naar de “formulierenmodus” wanneer ze inhoud binnen een <code class="utrecht-code">&lt;form&gt;</code> element verwerken. In deze modus lezen screenreaders alleen de formuliervelden voor, inclusief de daaraan gekoppelde informatie (met bijvoorbeeld <code class="utrecht-code">aria-describedby</code>). De niet-gekoppelde informatie wordt dan niet voorgelezen, tenzij de gebruiker er zelf naar zoekt.</p>
               <p>Meer informatie over de formulierenmodus:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://www.w3.org/WAI/tutorials/forms/instructions/" class="utrecht-link utrecht-link--html-a">Form Instructions</a>, Web Accessibility Initiative.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes" class="utrecht-link utrecht-link--html-a">Browse and focus modes</a>, Accessibility Developer Guide.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://www.w3.org/WAI/tutorials/forms/instructions/" class="utrecht-link utrecht-link--html-a">Form Instructions</a>, Web Accessibility Initiative.</li>
+               <li><a href="https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes" class="utrecht-link utrecht-link--html-a">Browse and focus modes</a>, Accessibility Developer Guide.</li>
               </ul>
               <p>Door de description aan het formulierveld te koppelen via &#x27;aria&#x27;-describedby&#x27;, wordt het label en de description samen voorgelezen wanneer een screenreadergebruiker het formulierveld focus geeft.</p>
               <p><strong>Let op:</strong> De gebruikte ID’s moeten uniek zijn voor de pagina, anders worden de verkeerde descriptions bij de velden voorgelezen.</p>
               <p>Opzet in de HTML:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Geef description een ID: <code class="utrecht-code">id=&quot;description-name&quot;</code>.</li>
-               <li class="utrecht-unordered-list__item">Verwijs in het formulierveld naar dat ID: <code class="utrecht-code">aria-describedby=&quot;description-name&quot;</code>.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Geef description een ID: <code class="utrecht-code">id=&quot;description-name&quot;</code>.</li>
+               <li>Verwijs in het formulierveld naar dat ID: <code class="utrecht-code">aria-describedby=&quot;description-name&quot;</code>.</li>
               </ul>
               <span hidden="" id=":R16ihralaqh:"
                >codevoorbeeld

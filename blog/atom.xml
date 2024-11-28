@@ -54,16 +54,16 @@
         <content type="html"><![CDATA[<p>Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.</p>
 <p>In dit artikel ga ik stap voor stap in op het voorkomen, aanduiden en het geven van hulp bij foutmeldingen in een formulier voor verschillende soorten gebruikers.</p>
 <p>Stel jezelf de volgende vragen:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Wat wil ik echt weten?</li>
-<li class="utrecht-unordered-list__item">Hoe ga ik deze informatie uitvragen?</li>
-<li class="utrecht-unordered-list__item">Welke informatie kan ik vooraf geven om de gebruiker te helpen?</li>
-<li class="utrecht-unordered-list__item">Hoe geef ik aan welke velden verplicht zijn?</li>
-<li class="utrecht-unordered-list__item">Wanneer controleer ik op fouten?</li>
-<li class="utrecht-unordered-list__item">Hoe geef ik aan of een vraag niet of niet goed is ingevuld?</li>
-<li class="utrecht-unordered-list__item">Wat zijn goede teksten voor foutmeldingen?</li>
-<li class="utrecht-unordered-list__item">Hoe geef ik aan of een formulier succesvol is verzonden?</li>
-<li class="utrecht-unordered-list__item">Hoe bied ik hulp als een gebruiker er niet uitkomt?</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Wat wil ik echt weten?</li>
+<li>Hoe ga ik deze informatie uitvragen?</li>
+<li>Welke informatie kan ik vooraf geven om de gebruiker te helpen?</li>
+<li>Hoe geef ik aan welke velden verplicht zijn?</li>
+<li>Wanneer controleer ik op fouten?</li>
+<li>Hoe geef ik aan of een vraag niet of niet goed is ingevuld?</li>
+<li>Wat zijn goede teksten voor foutmeldingen?</li>
+<li>Hoe geef ik aan of een formulier succesvol is verzonden?</li>
+<li>Hoe bied ik hulp als een gebruiker er niet uitkomt?</li>
 </ul>
 <p>We geven per stap referenties naar de verschillende <a href="https://nldesignsystem.nl/richtlijnen/formulieren/" class="utrecht-link utrecht-link--html-a">richtlijnen voor formulieren</a> van het NL Design System die dieper ingaan op de verschillende onderwerpen.</p>
 <p>Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een screenreader.</p>
@@ -110,10 +110,10 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <p>De richtlijn <a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#gebruik-geen-html-formuliervalidatie" class="utrecht-link utrecht-link--html-a">Gebruik geen HTML-formuliervalidatie</a> legt uit dat foutafhandeling door de browser onvoldoende informatie geeft. 'Dit veld is verplicht' is te vaag en wordt ook niet door alle screenreaders goed voorgelezen.</p>
 <p>Dan blijven er twee opties over: na het verlaten van het veld of na het verzenden van het formulier. Het een hoeft het ander niet uit te sluiten. Voor sommige velden kan het handig zijn om meteen te checken, zoals een datum die in de toekomst moet zijn. Maar een check na verzenden moet natuurlijk altijd gebeuren.</p>
 <p>De volgende richtlijnen leggen uit hoe dit op te zetten:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Controleer op het juiste moment op fouten</a>.</li>
-<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/blog/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Schrijf een duidelijke foutmelding</a>.</li>
-<li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-link utrecht-link--html-a">Zet een samenvatting van de foutmeldingen boven het formulier</a>.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Controleer op het juiste moment op fouten</a>.</li>
+<li><a href="https://nldesignsystem.nl/blog/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding" class="utrecht-link utrecht-link--html-a">Schrijf een duidelijke foutmelding</a>.</li>
+<li><a href="https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier" class="utrecht-link utrecht-link--html-a">Zet een samenvatting van de foutmeldingen boven het formulier</a>.</li>
 </ul>
 <h2 id="hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld" class="utrecht-heading-2">Hoe geef ik aan of een vraag niet of niet goed is ingevuld?</h2>
 <p>Geef fouten aan met meer dan alleen een kleur. De kans is groot dat een gebruiker, die slechtziend of kleurenblind is, een rood randje om een formulierveld mist.</p>
@@ -213,12 +213,12 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
         <content type="html"><![CDATA[<p>Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.</p>
 <p>In december 2023 nam het team Innovatie en Dienstverlening van de gemeente Den Haag gebruikerstesten af met ondernemers uit de Haagse regio. Ananta maakte een nieuw prototype van een formulier om een horecavergunning aan te vragen. Vervolgens testten ze dit formulier met de deelnemers. Ananta vertelt: “Het nieuwe formulier is gefocust op het begeleiden van ondernemers bij het correct opstellen en indienen van documenten. Daarnaast wilden we het belang van het aanleveren van de juiste documenten benadrukken.”</p>
 <p>De volgende onderzoeksvragen stonden centraal:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">In hoeverre geeft dit ontwerp voldoende ondersteuning om de benodigde documenten op te kunnen stellen?</li>
-<li class="utrecht-unordered-list__item">In hoeverre stimuleert dit ontwerp ondernemers om de aanvraag volledig in te vullen én in te dienen?</li>
-<li class="utrecht-unordered-list__item">In hoeverre hebben ondernemers het vertrouwen dat ze aan de hand van dit ontwerp zelf een correcte aanvraag kunnen indienen?</li>
-<li class="utrecht-unordered-list__item">Hoe ervaren ondernemers de navigatie door het aanvraagproces?</li>
-<li class="utrecht-unordered-list__item">Is de informatie volledig en duidelijk?</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>In hoeverre geeft dit ontwerp voldoende ondersteuning om de benodigde documenten op te kunnen stellen?</li>
+<li>In hoeverre stimuleert dit ontwerp ondernemers om de aanvraag volledig in te vullen én in te dienen?</li>
+<li>In hoeverre hebben ondernemers het vertrouwen dat ze aan de hand van dit ontwerp zelf een correcte aanvraag kunnen indienen?</li>
+<li>Hoe ervaren ondernemers de navigatie door het aanvraagproces?</li>
+<li>Is de informatie volledig en duidelijk?</li>
 </ul>
 <h2 id="alle-aanvragen-worden-behandeld-ook-als-ze-foutief-of-onvolledig-zijn" class="utrecht-heading-2">Alle aanvragen worden behandeld, ook als ze foutief of onvolledig zijn</h2>
 <p>Ananta en Margo vertellen dat er nog te veel aanvragen via online formulieren fout gaan. Denk aan het foutief invullen of onvolledige aanvragen waarbij bijlagen missen. Ananta: “Het is goed om te realiseren dat alle aanvragen die binnenkomen worden behandeld. Ook als ze foutief of onvolledig zijn. Dit kost de behandelaars extra tijd én zorgt uiteindelijk voor irritatie bij de aanvrager. Want het moet opnieuw of er moeten aanvullende stukken worden verstuurd. Dit proberen we nu te voorkomen door aan het begin van het proces aan te geven welke formulieren nodig zijn voor de betreffende aanvraag.”</p>
@@ -249,11 +249,11 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <h2 id="maak-contact-opnemen-niet-het-probleem-van-je-bezoeker" class="utrecht-heading-2">Maak contact opnemen niet het probleem van je bezoeker</h2>
 <p>Stel: de bezoeker van je website wil een vraag stellen. De enige manier om dit te doen is een berichtje sturen via WhatsApp. Voor jou handig, 1 plek om alles bij te houden en snel te reageren. En je reageert als het jou uitkomt.</p>
 <p>Maar er zijn meer voorbeelden, zoals:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Je vermeldt alleen het telefoonnummer van de helpdesk. Want het is fijn om alles op een centrale plek op dezelfde wijze bij elkaar te hebben. Past mooi in de workflow.</li>
-<li class="utrecht-unordered-list__item">Je biedt alleen een chatfunctie aan, met een robot waarvan je hoopt dat die de vraag alvast kan beantwoorden. Zo niet, dan verwijs je naar de "veelgestelde vragen”. Scheelt jou weer tijd!</li>
-<li class="utrecht-unordered-list__item">Je verplicht een inwoner altijd om naar het gemeentehuis te komen voor identificatie bij het verlengen van een identiteitsbewijs. Hoef je niemand de deur uit te sturen.</li>
-<li class="utrecht-unordered-list__item">Je biedt een ontoegankelijk of ingewikkeld formulier aan voor het melden van een klacht, omdat dat toevallig in je klantinformatiesysteem zit ingebouwd.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Je vermeldt alleen het telefoonnummer van de helpdesk. Want het is fijn om alles op een centrale plek op dezelfde wijze bij elkaar te hebben. Past mooi in de workflow.</li>
+<li>Je biedt alleen een chatfunctie aan, met een robot waarvan je hoopt dat die de vraag alvast kan beantwoorden. Zo niet, dan verwijs je naar de "veelgestelde vragen”. Scheelt jou weer tijd!</li>
+<li>Je verplicht een inwoner altijd om naar het gemeentehuis te komen voor identificatie bij het verlengen van een identiteitsbewijs. Hoef je niemand de deur uit te sturen.</li>
+<li>Je biedt een ontoegankelijk of ingewikkeld formulier aan voor het melden van een klacht, omdat dat toevallig in je klantinformatiesysteem zit ingebouwd.</li>
 </ul>
 <p>Op deze manier dwing je jouw bezoekers om zich aan te passen aan jouw manier van werken. Toch is het goed om je te realiseren dat die bezoekers er misschien helemaal geen gebruik van kunnen maken. Maar welke opties zijn er dan allemaal? En wat zijn de voor- en nadelen?</p>
 <h2 id="opties-voor-contact-opnemen" class="utrecht-heading-2">Opties voor contact opnemen</h2>
@@ -374,11 +374,11 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <h2 id="e-formulieren-maken-in-samenwerking-met-het-nl-design-system" class="utrecht-heading-2">E-formulieren maken in samenwerking met het NL Design System</h2>
 <p>Francesca legt uit dat zij vanuit <a href="https://vng.nl/projecten/duidelijke-overheidscommunicatie" class="utrecht-link utrecht-link--html-a">de VNG</a> samenwerkt met het NL Design System kernteam en stagiairs van <a href="http://frameless.io/" class="utrecht-link utrecht-link--html-a">Frameless</a> om een generiek formulier te maken dat voldoet aan alle eisen van de Wmebv. De opdracht: maak het, laat het testen en documenteer het.</p>
 <p>Hierbij gingen ze uit van het volgende stappenplan:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Ontwerp een generiek e-formulier</li>
-<li class="utrecht-unordered-list__item">De ontwikkeling van het generieke e-formulier</li>
-<li class="utrecht-unordered-list__item">Gebruikerstesten uitvoeren</li>
-<li class="utrecht-unordered-list__item">Resultaten delen van de gebruikerstesten</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Ontwerp een generiek e-formulier</li>
+<li>De ontwikkeling van het generieke e-formulier</li>
+<li>Gebruikerstesten uitvoeren</li>
+<li>Resultaten delen van de gebruikerstesten</li>
 </ul>
 <p>Eerder deelden we de <a href="https://nldesignsystem.nl/blog/wmebv-gebruikerstesten/" class="utrecht-link utrecht-link--html-a">eerste (en belangrijkste) lessen vanuit het testen met de Wmebv-formulieren</a>.</p>
 <h2 id="jij-bent-niet-je-gebruiker" class="utrecht-heading-2">‘Jij bent niet je gebruiker’</h2>
@@ -386,13 +386,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <p>Op dit moment zijn er al verschillende richtlijnen te vinden. Denk aan richtlijnen voor labels, beschrijvingen, links, buttons, placeholders en op te vragen informatie. Zie: <a href="https://nldesignsystem.nl/richtlijnen/formulieren/overzicht" class="utrecht-link utrecht-link--html-a">Richtlijnen voor formulieren</a>.</p>
 <h2 id="richtlijnen-voor-labels-uitgelicht" class="utrecht-heading-2">Richtlijnen voor labels uitgelicht</h2>
 <p>Rian gaat dieper in op de richtlijnen voor labels. Een label geeft aan welke gegevens de gebruiker bij een formulierveld in kan vullen. Hierbij is het belangrijk dat een label toegankelijk moet zijn voor iedere gebruiker. Daarbij zijn een aantal punten belangrijk, zoals:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Geef een formulierveld een toegankelijke naam met een label.</li>
-<li class="utrecht-unordered-list__item">De zichtbare naam moet overeenkomen met de toegankelijke naam.</li>
-<li class="utrecht-unordered-list__item">Zet het label boven het formulierveld.</li>
-<li class="utrecht-unordered-list__item">Zorg ervoor dat het label altijd zichtbaar is.</li>
-<li class="utrecht-unordered-list__item">Zet alleen tekst in het label.</li>
-<li class="utrecht-unordered-list__item">Gebruik duidelijke labelteksten.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Geef een formulierveld een toegankelijke naam met een label.</li>
+<li>De zichtbare naam moet overeenkomen met de toegankelijke naam.</li>
+<li>Zet het label boven het formulierveld.</li>
+<li>Zorg ervoor dat het label altijd zichtbaar is.</li>
+<li>Zet alleen tekst in het label.</li>
+<li>Gebruik duidelijke labelteksten.</li>
 </ul>
 <p>In de <a href="https://nldesignsystem.nl/richtlijnen/formulieren/alle-richtlijnen/labels" class="utrecht-link utrecht-link--html-a">richtlijn Labels</a> vind je voorbeelden hoe het wél moet, maar ook vooral hoe het niet moet. Rian: “Houd altijd in gedachten dat een beschrijving én uitleg bij formulieren heel belangrijk is. Mensen snappen beter waarom ze iets moeten invullen als je toelicht waarom. Maar ook waarvoor het vervolgens wordt gebruikt. Zo zorg je er niet alleen voor dat het toegankelijk is, maar ook nog eens gebruiksvriendelijk.”</p>
 <h2 id="geef-je-feedback-op-onze-nieuwe-richtlijnen" class="utrecht-heading-2">Geef je feedback op onze nieuwe richtlijnen</h2>
@@ -422,13 +422,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <h2 id="eerste-lessen" class="utrecht-heading-2">Eerste lessen</h2>
 <p>Gebruikerstesten blijken altijd weer ontzettend leerzaam te zijn. De ene gebruiker is de ander niet, en er is veel verschil tussen hoe mensen hun computers willen en kunnen gebruiken. Dat bleek ook vorige week weer.</p>
 <p>We zijn de punten nog uitgebreid aan het verwerken, maar hier zijn vast zes punten die ons opvielen:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Voor ons was het formulier min of meer een gegeven, maar eigenlijk iedereen gaf aan liever te bellen met de vraag.</li>
-<li class="utrecht-unordered-list__item">De participanten waren vaak wel bekend met DigiD, maar waren er ook huiverig voor.</li>
-<li class="utrecht-unordered-list__item">Taalgebruik was vaak een barrière, uitdrukkingen als “melding openbare ruimte” leidden tot verwarring.</li>
-<li class="utrecht-unordered-list__item">De foutmeldingen werden heel goed begrepen.</li>
-<li class="utrecht-unordered-list__item">Meerdere participanten zeiden normaliter liever een telefoon of tablet te gebruiken dan de testlaptop (dit kunnen we in vervolgtesten beter faciliteren).</li>
-<li class="utrecht-unordered-list__item">De snelheid waarmee participanten door een formulier gingen verschilde enorm, en op de “5 minuten” die op de eerste pagina werden aangekondigd werd verschillend gereageerd (van “wat lang!“ tot “wat kort!”).</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Voor ons was het formulier min of meer een gegeven, maar eigenlijk iedereen gaf aan liever te bellen met de vraag.</li>
+<li>De participanten waren vaak wel bekend met DigiD, maar waren er ook huiverig voor.</li>
+<li>Taalgebruik was vaak een barrière, uitdrukkingen als “melding openbare ruimte” leidden tot verwarring.</li>
+<li>De foutmeldingen werden heel goed begrepen.</li>
+<li>Meerdere participanten zeiden normaliter liever een telefoon of tablet te gebruiken dan de testlaptop (dit kunnen we in vervolgtesten beter faciliteren).</li>
+<li>De snelheid waarmee participanten door een formulier gingen verschilde enorm, en op de “5 minuten” die op de eerste pagina werden aangekondigd werd verschillend gereageerd (van “wat lang!“ tot “wat kort!”).</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/postits.png" alt="mirobord vol met postits in heel veel kleuren" class="utrecht-img"></p>
 <p><em class="utrecht-emphasis utrecht-emphasis--stressed">Er was veel feedback. Met post-it's op Miro verzamelden we wat ons opviel.</em></p>
@@ -451,9 +451,9 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
         <content type="html"><![CDATA[<p>Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour.</p>
 <p>De belangrijkste reden voor deze samenkomst: op dit moment zijn er nog geen afspraken over de verticale ruimte tussen componenten. Dat zit gebruikersvriendelijkheid in de weg, doordat er onvoldoende relatie en hiërarchie tussen componenten bestaat.</p>
 <p>De designers + enkele leden uit het kernteam (Rozerin, René, Martijn, Jeroen, Jeffrey, Yolijn en Robbert) kwamen bij elkaar om samen te werken aan twee doelen:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">een systeem voor verticale paddings en/of margins dat intuïtief en logisch is (met design tokens voor implementatie en documentatie)</li>
-<li class="utrecht-unordered-list__item">richtlijnen voor het gebruik van paddings en margins (waarin redeneringen en werking worden uitgelegd)</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>een systeem voor verticale paddings en/of margins dat intuïtief en logisch is (met design tokens voor implementatie en documentatie)</li>
+<li>richtlijnen voor het gebruik van paddings en margins (waarin redeneringen en werking worden uitgelegd)</li>
 </ul>
 <h2 id="relaties-versus-afstanden" class="utrecht-heading-2">Relaties versus afstanden</h2>
 <p>Tijdens de workshop werden verschillende relaties tussen componenten bedacht: “vrienden” staan dicht bij elkaar, “besties” heel dicht en “kennissen” nemen wat meer afstand. Elk van deze relaties krijgt een bepaalde waarde, bijvoorbeeld:</p>
@@ -467,12 +467,12 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <h2 id="open-vragen" class="utrecht-heading-2">Open vragen</h2>
 <p>In deze eerste sessie is al veel denkwerk verricht, liet Jeroen zien. In een spreadsheet had de groep al relaties uitgewerkt tussen een groot aantal componenten.</p>
 <p>Er zijn ook nog wel wat open vragen:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Hoeveel relaties zijn voldoende om de meeste scenario's af te dekken? Is er nog een relatie nodig na 'Onbekenden'?</li>
-<li class="utrecht-unordered-list__item">Hoe kan dit worden uitgewerkt in de front-end? (Er waren al wat eerste ideeën, door aanwezigheid van developers Yolijn en Robbert)</li>
-<li class="utrecht-unordered-list__item">Hoe zit het met verticale ruimte binnen componenten?</li>
-<li class="utrecht-unordered-list__item">Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?</li>
-<li class="utrecht-unordered-list__item">Hoe zou je deze spacing als designer willen toepassen in een ontwerptool als Figma? Als “spacer-blokje”? Met behulp van variabele? Wil je dit überhaupt wel allemaal in Figma doorvoeren?</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Hoeveel relaties zijn voldoende om de meeste scenario's af te dekken? Is er nog een relatie nodig na 'Onbekenden'?</li>
+<li>Hoe kan dit worden uitgewerkt in de front-end? (Er waren al wat eerste ideeën, door aanwezigheid van developers Yolijn en Robbert)</li>
+<li>Hoe zit het met verticale ruimte binnen componenten?</li>
+<li>Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?</li>
+<li>Hoe zou je deze spacing als designer willen toepassen in een ontwerptool als Figma? Als “spacer-blokje”? Met behulp van variabele? Wil je dit überhaupt wel allemaal in Figma doorvoeren?</li>
 </ul>
 <p>Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het <code class="utrecht-code">#nl-design-system-designers</code>-kanaal in de <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Code for NL Slack community</a>.</p>
 <h2 id="vervolg" class="utrecht-heading-2">Vervolg</h2>
@@ -497,10 +497,10 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <p>Qua onderwerpen is er voor elk wat wils: van hoe design systems politiek werken tot een technische sessie over real-life ervaringen met Web Components. <a href="https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking" class="utrecht-link utrecht-link--html-a">Meld je aan</a> of lees in dit bericht meer over wat we voor je in petto hebben.</p>
 <h2 id="overheden-verenigd-koninkrijk-taiwan-en-estland" class="utrecht-heading-2">Overheden: Verenigd Koninkrijk, Taiwan en Estland</h2>
 <p>Ten eerste hebben we maar liefst drie overheden te gast:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Bij GOV.UK hebben ze al een hoop front-endcomponenten. Maar componenten zijn pas waardevol als je ze samen op 1 pagina zet, dus hebben ze een manier gemaakt waarop ontwikkelaars makkelijk voorbeelden kunnen maken van pagina’s en realistische prototypes: <a href="https://prototype-kit.service.gov.uk/docs/" class="utrecht-link utrecht-link--html-a">de GOV.UK Prototype Kit</a>. We hebben hun ontwerper <a href="https://joelanman.com/" class="utrecht-link utrecht-link--html-a">Joe Lanman</a> gevraagd om daar eens iets meer over te vertellen.</li>
-<li class="utrecht-unordered-list__item">In Taiwan is het bouwen van een design system onderdeel van een groter project rondom digital resilience. Hoe werkt dat, en hoe denken ze in Taiwan over het bouwen van digitale diensten? Head of design systems Mu-An Chiou vertelt erover in <a href="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure/" class="utrecht-link utrecht-link--html-a">Design Systems as Public Infrastructure</a>.</li>
-<li class="utrecht-unordered-list__item">Estland noemt zich met trots de eerste digitale samenleving. Hun design system wordt al door een aantal overheidsorganisaties gebruikt. Van UI Development Lead Aleksandr Beliaev krijgen we <a href="https://www.gebruikercentraal.nl/agenda/estland-design-system/" class="utrecht-link utrecht-link--html-a">een kijkje in de keuken</a>.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Bij GOV.UK hebben ze al een hoop front-endcomponenten. Maar componenten zijn pas waardevol als je ze samen op 1 pagina zet, dus hebben ze een manier gemaakt waarop ontwikkelaars makkelijk voorbeelden kunnen maken van pagina’s en realistische prototypes: <a href="https://prototype-kit.service.gov.uk/docs/" class="utrecht-link utrecht-link--html-a">de GOV.UK Prototype Kit</a>. We hebben hun ontwerper <a href="https://joelanman.com/" class="utrecht-link utrecht-link--html-a">Joe Lanman</a> gevraagd om daar eens iets meer over te vertellen.</li>
+<li>In Taiwan is het bouwen van een design system onderdeel van een groter project rondom digital resilience. Hoe werkt dat, en hoe denken ze in Taiwan over het bouwen van digitale diensten? Head of design systems Mu-An Chiou vertelt erover in <a href="https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure/" class="utrecht-link utrecht-link--html-a">Design Systems as Public Infrastructure</a>.</li>
+<li>Estland noemt zich met trots de eerste digitale samenleving. Hun design system wordt al door een aantal overheidsorganisaties gebruikt. Van UI Development Lead Aleksandr Beliaev krijgen we <a href="https://www.gebruikercentraal.nl/agenda/estland-design-system/" class="utrecht-link utrecht-link--html-a">een kijkje in de keuken</a>.</li>
 </ul>
 <h2 id="designops" class="utrecht-heading-2">DesignOps</h2>
 <p>Hoe kunnen ontwerpers het best samenwerken met elkaar en anderen, zoals ontwikkelaars, om te zorgen dat de kwaliteit van ontwerp in brede zin beter wordt? Die vraag wordt beantwoord door wat Design Operations (Design Ops) wordt genoemd. <a href="https://yaili.com/" class="utrecht-link utrecht-link--html-a">Inayaili León</a> van GitHub gaat in haar sessie in op hoe DesignOps de ontwerpdiscipline beter in de organisatie verankert, en specifiek hoe GitHub het aanpakt, in haar presentatie <a href="https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/" class="utrecht-link utrecht-link--html-a">DesignOps: designing the API of design teams</a>.</p>
@@ -757,10 +757,10 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content>
 <p>2 teams bij verschillende organisaties werken deze periode voor hun eigen doeleinden aan NL Design System-componenten. De ontwikkelingen zijn ver genoeg gevorderd dat ze de komende 2 weken gebruik gaan maken van elkaars componenten. Binnenkort sluiten meer teams aan. Daarna komen de componenten 1 voor 1 beschikbaar voor Rijkshuisstijl en voor projecten voor Gemeente Amsterdam. Hoe kunnen ze zo succesvol samenwerken, terwijl ze technisch andere eisen hebben? Hoe kunnen projecten samenwerken en ook een helemaal eigen visueel ontwerp realiseren?</p>
 <p>De NL Design System-architectuur is bedacht om organisaties die op het eerste gezicht weinig raakvlakken hebben, mogelijkheid te bieden samen te werken aan uitdagingen die om veel tijd en expertise vragen, zoals toegankelijke websites maken en teams binnen 1 organisatie laten werken met hun framework naar keuze.</p>
 <p>Wij vroegen organisaties die al aan hun eigen design system werken of ze hun websites willen en kunnen bouwen met open source componenten die al door andere overheden worden gedeeld. De meeste organisaties hadden wensen waar het bestaande aanbod nog niet goed in voorzag.</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item"><strong>Hergebruik in uiteenlopende technieken</strong>: Het eerste struikelblok is dat er qua techniek vaak geen gemene deler is: de organisatie zelf ontwikkelt bijvoorbeeld in het framework Angular, terwijl de open source teams werken met React en styled-components waardoor geen aansluiting mogelijk is.</li>
-<li class="utrecht-unordered-list__item"><strong>Doorlooptijd voor nieuwe componenten</strong>: Een tweede bezwaar dat genoemd wordt: op het moment dat je voor je project een nieuw onderdeel wil toevoegen dat een intern team gauw nodig heeft, dan is het proces om de hele community daarbij te betrekken een te grote vertraging. Je wilt nog wel werk gedaan krijgen en niet alleen moeten overleggen met andere teams.</li>
-<li class="utrecht-unordered-list__item"><strong>Hergebruik voor andere huisstijlen</strong>: Zonder ingrijpende wijzigingen van een open source component heb je bovendien nog een drempel: als je een component van bijvoorbeeld Gemeente Amsterdam gebruikt, dan ziet jouw website er automatisch een beetje uit zoals de website van Amsterdam. Om jouw eigen huisstijl te realiseren op basis van een component van een ander, moet je vaak een kopie maken en zelf naar eigen smaak doorontwikkelen.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li><strong>Hergebruik in uiteenlopende technieken</strong>: Het eerste struikelblok is dat er qua techniek vaak geen gemene deler is: de organisatie zelf ontwikkelt bijvoorbeeld in het framework Angular, terwijl de open source teams werken met React en styled-components waardoor geen aansluiting mogelijk is.</li>
+<li><strong>Doorlooptijd voor nieuwe componenten</strong>: Een tweede bezwaar dat genoemd wordt: op het moment dat je voor je project een nieuw onderdeel wil toevoegen dat een intern team gauw nodig heeft, dan is het proces om de hele community daarbij te betrekken een te grote vertraging. Je wilt nog wel werk gedaan krijgen en niet alleen moeten overleggen met andere teams.</li>
+<li><strong>Hergebruik voor andere huisstijlen</strong>: Zonder ingrijpende wijzigingen van een open source component heb je bovendien nog een drempel: als je een component van bijvoorbeeld Gemeente Amsterdam gebruikt, dan ziet jouw website er automatisch een beetje uit zoals de website van Amsterdam. Om jouw eigen huisstijl te realiseren op basis van een component van een ander, moet je vaak een kopie maken en zelf naar eigen smaak doorontwikkelen.</li>
 </ul>
 <p>Het veelgehoorde argument om een open source project te gebruiken vanwege de ‘grote community’ zodat je toegang hebt tot veel kennis en support op internet, gaat niet meer op wanneer je een kopie moet maken. Die kopie is al gauw achterhaald ten opzichte van de ontwikkelingen van een groot open source project. Je wilt juist werken met een centraal open source project waar je een verbetering aan kan toevoegen wanneer je die zelf nodig hebt, waar vervolgens de hele community van kan profiteren. Maar daarna gaan de ontwikkelingen gewoon door, en jouw verbetering blijft doorleven in het project.</p>
 <p>We vroegen deze organisaties ook of ze hun eigen design system werk uit Git als open source op internet wilden zetten. Veelgenoemd bezwaar was: onze componenten zijn niet ‘algemeen’ genoeg, daar hebben anderen toch niets aan! Ook: wij hebben helemaal geen tijd om allemaal bijdragen van vrijwilligers te beoordelen in ons project. En wat als ze bugs veroorzaken?!</p>
@@ -841,16 +841,16 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content>
 <p>De backlog is ook de centrale plek waar je kunt ontdekken welke organisaties eigen varianten van een component hebben, waar jouw organisatie mogelijk op door kan bouwen.</p>
 <h2 id="meewerken-aan-nl-design-system" class="utrecht-heading-2">Meewerken aan NL Design System</h2>
 <p>Wil je een nieuw project starten met NL Design System? Dan vragen we je te letten op de volgende punten:</p>
-<ul role="list" class="utrecht-unordered-list">
-<li class="utrecht-unordered-list__item">Deel je code als open source met de <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" class="utrecht-link utrecht-link--html-a">EUPL-1.2 licentie</a>.</li>
-<li class="utrecht-unordered-list__item">Vermijd huisstijl-specifieke code in je CSS, gebruik in plaats daarvan CSS-variabelen voor design tokens NL Design System die ingevuld kunnen worden met de huisstijl van anderen.</li>
-<li class="utrecht-unordered-list__item">Deel de styling van componenten in een .css bestand met alleen BEM class names, en zonder ‘side effects’: geen code voor <code class="utrecht-code">body</code> , <code class="utrecht-code">p</code> of <code class="utrecht-code">:root</code>.</li>
-<li class="utrecht-unordered-list__item">Begin namen in je code met een prefix voor jouw organisatie, zoals in BEM class names, CSS-variabelen en Custom Elements. Wij gebruiken <code class="utrecht-code">nl-</code>, jij kiest iets anders.</li>
-<li class="utrecht-unordered-list__item">Baseer de namen in je code waar mogelijk op bestaande termen uit HTML, CSS, SVG en ARIA; deze hebben de voorkeur boven namen uit populaire frameworks en boven namen die je zelf bedenkt.</li>
-<li class="utrecht-unordered-list__item">Publiceer een overzicht van je componenten in een Storybook website, met HTML voorbeeldcode van de componenten.</li>
-<li class="utrecht-unordered-list__item">Wanneer je aan een component werkt, deel een link naar jouw werk in de backlog van NL Design System op GitHub.</li>
-<li class="utrecht-unordered-list__item">In plaats alle componenten zelf te schrijven, probeer eerst in de backlog te vinden of iemand anders aan die component werkt, en begin met de code van een andere contributor.</li>
-<li class="utrecht-unordered-list__item">Wanneer componenten van anderen niet aan al je wensen voldoen, deel dan je bevindingen in de backlog en kijk of er samenwerking mogelijk is wanneer je een eigen variant wilt ontwikkelen.</li>
+<ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+<li>Deel je code als open source met de <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" class="utrecht-link utrecht-link--html-a">EUPL-1.2 licentie</a>.</li>
+<li>Vermijd huisstijl-specifieke code in je CSS, gebruik in plaats daarvan CSS-variabelen voor design tokens NL Design System die ingevuld kunnen worden met de huisstijl van anderen.</li>
+<li>Deel de styling van componenten in een .css bestand met alleen BEM class names, en zonder ‘side effects’: geen code voor <code class="utrecht-code">body</code> , <code class="utrecht-code">p</code> of <code class="utrecht-code">:root</code>.</li>
+<li>Begin namen in je code met een prefix voor jouw organisatie, zoals in BEM class names, CSS-variabelen en Custom Elements. Wij gebruiken <code class="utrecht-code">nl-</code>, jij kiest iets anders.</li>
+<li>Baseer de namen in je code waar mogelijk op bestaande termen uit HTML, CSS, SVG en ARIA; deze hebben de voorkeur boven namen uit populaire frameworks en boven namen die je zelf bedenkt.</li>
+<li>Publiceer een overzicht van je componenten in een Storybook website, met HTML voorbeeldcode van de componenten.</li>
+<li>Wanneer je aan een component werkt, deel een link naar jouw werk in de backlog van NL Design System op GitHub.</li>
+<li>In plaats alle componenten zelf te schrijven, probeer eerst in de backlog te vinden of iemand anders aan die component werkt, en begin met de code van een andere contributor.</li>
+<li>Wanneer componenten van anderen niet aan al je wensen voldoen, deel dan je bevindingen in de backlog en kijk of er samenwerking mogelijk is wanneer je een eigen variant wilt ontwikkelen.</li>
 </ul>
 <p>Op deze manier zijn wij een samenwerking begonnen met meerdere teams, en willen we dit jaar bewijzen dat ondanks alle verschillen er toch heel veel mogelijkheden zijn voor samenwerken.</p>
 <p>Samen willen we een gebruiksvriendelijke online overheid nastreven door kennis en inzichten over toegankelijkheid en gebruiksvriendelijkheid te delen. We kunnen enorme impact hebben wanneer we inzichten uit gebruikersonderzoek en toegankelijkheidsonderzoek uit heel het land delen op de backlog van NL Design System.</p>

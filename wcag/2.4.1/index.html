@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -286,9 +286,9 @@
               <p>Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Plaats deze link binnen de header-landmark. Als eerste focusable element, bovenaan de pagina, op een vaste plek.</p>
               <p>Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.</p>
               <p>Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Een skiplink naar het zoekformulier kan zinvol zijn.</li>
-               <li class="utrecht-unordered-list__item">Je kunt binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Een skiplink naar het zoekformulier kan zinvol zijn.</li>
+               <li>Je kunt binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.</li>
               </ul>
               <h3 id="demo-skiplink-op-de-website-van-de-gemeente-den-haag" class="utrecht-heading-3">Demo skiplink op de website van de gemeente Den Haag</h3>
               <p>Deze video laat zien hoe een skiplink werkt op de website van de <a href="https://www.denhaag.nl/nl/" class="utrecht-link utrecht-link--html-a">gemeente Den Haag</a>.</p>
@@ -349,17 +349,17 @@
 </span></code></pre>
               <p>Tip: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start" class="utrecht-link utrecht-link--html-a">inset-inline-start</a> zorgt ervoor dat de skiplink zich aanpast aan de leesrichting <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#dir" class="utrecht-link utrecht-link--html-a">dir</a> van een pagina. Voor <code class="utrecht-code">&lt;html lang=&quot;nl&quot; dir=&quot;rtl&quot;&gt;</code> staat de skiplink dan aan de rechterkant in plaats van de linkerkant.</p>
               <h2 id="bronnen" class="utrecht-heading-2">Bronnen</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie" class="utrecht-link utrecht-link--html-a">Zo zet je skiplinks in voor een optimale navigatie</a> van Stichting Accessibility.</li>
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie" class="utrecht-link utrecht-link--html-a">Zo zet je skiplinks in voor een optimale navigatie</a> van Stichting Accessibility.</li>
+               <li>
                 <a href="https://tatiana-fokina-blog.ru/en/articles/understanding-a-skip-link/" class="utrecht-link utrecht-link--html-a"><span lang="en">Understanding skip link</span></a> van Tatiana Fokina.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 <a href="https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/" class="utrecht-link utrecht-link--html-a"><span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span></a> van Andrew Nevins.
                </li>
-               <li class="utrecht-unordered-list__item"><a href="https://design-system.service.gov.uk/components/skip-link/" class="utrecht-link utrecht-link--html-a">Skip link component op Gov.UK</a>.</li>
-               <li class="utrecht-unordered-list__item"><a href="https://designsystem.cibg.nl/componenten/skiplink/" class="utrecht-link utrecht-link--html-a">Skip link component van het CIBG</a>.</li>
-               <li class="utrecht-unordered-list__item">
+               <li><a href="https://design-system.service.gov.uk/components/skip-link/" class="utrecht-link utrecht-link--html-a">Skip link component op Gov.UK</a>.</li>
+               <li><a href="https://designsystem.cibg.nl/componenten/skiplink/" class="utrecht-link utrecht-link--html-a">Skip link component van het CIBG</a>.</li>
+               <li>
                 <a href="https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/" class="utrecht-link utrecht-link--html-a"><span lang="en">The CSS class screen-reader-text</span></a> in het Make WordPress Accessible Handbook.
                </li>
               </ul>
@@ -373,11 +373,11 @@
               <p>Bepaal eerst of er een skiplink nodig is. Als er bijvoorbeeld geen navigatieblokken bovenaan de webpagina staan en de pagina meteen met de hoofdinhoud begint is een skiplink zinloos.</p>
               <p>Dit succescriteria gaat specifiek over blokken content die op elke pagina worden herhaald. Bevat de website maar één pagina, dan is dit succescriterium niet van toepassing. Wat niet wegneemt dat gebruik van een skiplink ook in dat geval gebruikersvriendelijk kan zijn.</p>
               <p>Als een skiplink van toepassing is voor een webpagina:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Controleer of een skiplink niet verborgen wordt met de CSS <code class="utrecht-code">display: none;</code> De skiplink moet voor screenreadergebruikers ook zonder focus te herkennen zijn in de lijst met links.</li>
-               <li class="utrecht-unordered-list__item">Controleer of een verborgen skiplink zichtbaar wordt op toetsenbordfocus.</li>
-               <li class="utrecht-unordered-list__item">Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.</li>
-               <li class="utrecht-unordered-list__item">Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer of een skiplink niet verborgen wordt met de CSS <code class="utrecht-code">display: none;</code> De skiplink moet voor screenreadergebruikers ook zonder focus te herkennen zijn in de lijst met links.</li>
+               <li>Controleer of een verborgen skiplink zichtbaar wordt op toetsenbordfocus.</li>
+               <li>Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.</li>
+               <li>Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.</li>
               </ul>
               <p>Het plaatsen van een skiplink binnen de header-landmark is <em class="utrecht-emphasis utrecht-emphasis--stressed">best practice</em>. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit <strong>geen</strong> overtreding van dit WCAG-succescriterium.</p>
               <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
@@ -414,17 +414,17 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">main</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">site-content</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">tabindex</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">-1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">[...]</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">main</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
                 Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/TR/WCAG22/#bypass-blocks" class="utrecht-link utrecht-link--html-a"><span lang="en">2.4.1 Bypass Blocks</span></a
                 >.
                </li>
-               <li class="utrecht-unordered-list__item">Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#blokken-omzeilen" class="utrecht-link utrecht-link--html-a">2.4.1 Blokken omzeilen</a>.</li>
-               <li class="utrecht-unordered-list__item">
+               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#blokken-omzeilen" class="utrecht-link utrecht-link--html-a">2.4.1 Blokken omzeilen</a>.</li>
+               <li>
                 Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 2.4.1 Bypass Blocks</span></a
                 >.
                </li>
-               <li class="utrecht-unordered-list__item">
+               <li>
                 Engelstalige toelichting: <a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Understanding SC 2.4.1 Bypass Blocks</span></a
                 >.
                </li>

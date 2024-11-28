@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -345,10 +345,10 @@
               <p>Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.</p>
               <p>Wanneer je een gebruiker dwingt om volgens een vast patroon bijvoorbeeld van telefoonnummer in te voeren, kan dit leiden tot verwarring als ze alleen een mobiel nummer heeft.</p>
               <p>Een vast patroon kan ook een blokkade zijn om een formulier in te vullen. Bijvoorbeeld:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Het telefoonnummer past niet in het vereiste patroon: de gebruiker wil een buitenlands nummer invoeren, maar dat kan niet.</li>
-               <li class="utrecht-unordered-list__item">De gebruiker wil belangrijke informatie toevoegen zoals: &#x27;alleen &#x27;s middags bellen&#x27; maar dat kan niet.</li>
-               <li class="utrecht-unordered-list__item">De gebruiker begrijpt niet wat er fout gaat omdat bijvoorbeeld letters niet kunnen worden ingevoerd en er geen goede feedback is over wat er fout gaat.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het telefoonnummer past niet in het vereiste patroon: de gebruiker wil een buitenlands nummer invoeren, maar dat kan niet.</li>
+               <li>De gebruiker wil belangrijke informatie toevoegen zoals: &#x27;alleen &#x27;s middags bellen&#x27; maar dat kan niet.</li>
+               <li>De gebruiker begrijpt niet wat er fout gaat omdat bijvoorbeeld letters niet kunnen worden ingevoerd en er geen goede feedback is over wat er fout gaat.</li>
               </ul>
               <p><strong>Let op</strong>: Er zijn situaties waar het precies invullen van een formulierveld vereist is, zoals bijvoorbeeld bij het invoeren van een wachtwoord. Geef in dat geval altijd duidelijk in de description aan <a href="/richtlijnen/formulieren/voorkom-fouten/geldige-waardes" class="utrecht-link utrecht-link--html-a">hoe een veld in te vullen</a>.</p>
               <h2 id="wat-is-een-patroon-op-een-invoerveld" class="utrecht-heading-2">Wat is een patroon op een invoerveld?</h2>
@@ -389,12 +389,12 @@
                Adam Silver vat het goed samen in zijn artikel <a href="https://adamsilver.io/blog/the-problem-with-input-masks-and-what-to-do-instead/" class="utrecht-link utrecht-link--html-a"><span lang="en">The problem with input masks and what to do instead</span></a
                >.
               </p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Het patroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.</li>
-               <li class="utrecht-unordered-list__item">Afgedwongen patronen zijn verwarrend, de cursor verspringt automatisch naar een volgende positie en speciale tekens zoals &#x27;-&#x27;, &#x27;(&#x27; of &#x27;)&#x27; kunnen niet worden verwijderd.</li>
-               <li class="utrecht-unordered-list__item">De placeholder met het voorbeeld kan lijken op een al ingevuld veld.</li>
-               <li class="utrecht-unordered-list__item">De placeholder met het voorbeeld verdwijnt bij het invullen en je weet niet meer hoe de rest van de waarde in te vullen.</li>
-               <li class="utrecht-unordered-list__item">Omdat de er tekens worden verwijderd of overgeslagen lijkt het alsof er wat fout gaat zonder dat er een meteen foutmelding verschijnt.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het patroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.</li>
+               <li>Afgedwongen patronen zijn verwarrend, de cursor verspringt automatisch naar een volgende positie en speciale tekens zoals &#x27;-&#x27;, &#x27;(&#x27; of &#x27;)&#x27; kunnen niet worden verwijderd.</li>
+               <li>De placeholder met het voorbeeld kan lijken op een al ingevuld veld.</li>
+               <li>De placeholder met het voorbeeld verdwijnt bij het invullen en je weet niet meer hoe de rest van de waarde in te vullen.</li>
+               <li>Omdat de er tekens worden verwijderd of overgeslagen lijkt het alsof er wat fout gaat zonder dat er een meteen foutmelding verschijnt.</li>
               </ul>
               <p>
                In het artikel van Giovani Camara <a href="https://giovanicamara.com/blog/accessible-input-masking/" class="utrecht-link utrecht-link--html-a"><span lang="en">Accessible input masking</span></a> laat hij de YouTube video <a href="https://www.youtube.com/watch?v=rTk3XNSXJXY" class="utrecht-link utrecht-link--html-a"><span lang="en">Allow users to edit anywhere</span></a> zien wat er fout kan gaan als een gebruiker een waarde wil wijzigen. De cursus kan vanzelf naar het einde van de waarde springen, terwijl je het eerste karakter wilt aanpassen. Dit is voor iedereen irritant en leidt tot fouten.
@@ -403,9 +403,9 @@
               <p>Is een exacte invoer nodig, bijvoorbeeld bij een geboortedatum, biedt dan een optie aan die iedereen makkelijk kan invullen. De richtlijn <a href="https://nldesignsystem.nl/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen" class="utrecht-link utrecht-link--html-a">Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief</a> gaat hier uitgebreid op in.</p>
               <p>Daarnaast zijn een goede description en duidelijke foutmeldingen belangrijk. Help de gebruiker en laat deze niet puzzelen over hoe precies een veld in te vullen en wat er nu weer fout gaat.</p>
               <p>Het geven van goede feedback over het juist invoeren van gegevens in formuliervelden is nodig om te voldoen aan de WCAG-succescriteria:</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/wcag/3.3.1" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</li>
-               <li class="utrecht-unordered-list__item"><a href="https://nldesignsystem.nl/wcag/3.3.3" class="utrecht-link utrecht-link--html-a">3.3.3 Foutsuggestie</a> (niveau AA).</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://nldesignsystem.nl/wcag/3.3.1" class="utrecht-link utrecht-link--html-a">3.3.1 Foutidentificatie</a> (niveau A).</li>
+               <li><a href="https://nldesignsystem.nl/wcag/3.3.3" class="utrecht-link utrecht-link--html-a">3.3.3 Foutsuggestie</a> (niveau AA).</li>
               </ul>
               <!-- -->
               <!-- -->

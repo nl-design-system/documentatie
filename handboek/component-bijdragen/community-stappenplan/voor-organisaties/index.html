@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b1e88e41.css" />
-  <script src="/assets/js/runtime~main.4de5d3f5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.9cd3c345.js" defer="defer"></script>
   <script src="/assets/js/main.1e55e55a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -222,13 +222,13 @@
               <p>Als je als organisatie een component wilt bijdragen aan NL Design System kun je dit stappenplan volgen. Heb je nog geen eigen <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a>? Vraag dan aan het kernteam om er een aan te maken.</p>
               <h2 id="voeg-de-component-toe-aan-de-componenten-bord" class="utrecht-heading-2">Voeg de component toe aan de componenten bord</h2>
               <p>Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebruik door andere teams. Door de status van de component en de documentatie beschikbaar te maken kunnen organisaties de component op nldesignsystem.nl vinden en kan het kernteam de component de Community status geven.</p>
-              <ol>
-               <li class="utrecht-unordered-list__item">Open het community bord via <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a></li>
-               <li class="utrecht-unordered-list__item">Klik op de + icoon links onderaan de pagina om een component toe te voegen</li>
-               <li class="utrecht-unordered-list__item">Kies <code class="utrecht-code">Add item from repository</code></li>
-               <li class="utrecht-unordered-list__item">Selecteer <code class="utrecht-code">backlog</code> en zoek op de component naam</li>
-               <li class="utrecht-unordered-list__item">Selecteer de component</li>
-               <li class="utrecht-unordered-list__item">Kies rechts onderin <code class="utrecht-code">Add selected items</code></li>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Open het community bord via <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a></li>
+               <li>Klik op de + icoon links onderaan de pagina om een component toe te voegen</li>
+               <li>Kies <code class="utrecht-code">Add item from repository</code></li>
+               <li>Selecteer <code class="utrecht-code">backlog</code> en zoek op de component naam</li>
+               <li>Selecteer de component</li>
+               <li>Kies rechts onderin <code class="utrecht-code">Add selected items</code></li>
               </ol>
               <p><strong>🚩 Checkpoint</strong>: Title</p>
               <h2 id="prefix-van-de-verantwoordelijke-organisatie" class="utrecht-heading-2">Prefix van de verantwoordelijke organisatie</h2>
@@ -254,11 +254,11 @@
               <p>Doel: De component mag door andere organisaties gebruikt worden. Producten die ermee gemaakt worden hoeven niet per se open source te zijn.</p>
               <p>Binnen het NL Design System werken we voor componenten met de <a href="https://nldesignsystem.nl/open-source/eupl/" class="utrecht-link utrecht-link--html-a">Openbare Licentie van de Europese Unie (EUPL-1.2)</a>.</p>
               <p>Zorg ervoor dat de organisatie naar de EUPL-1.2 licentie verwijst op de onderstaande posities. Of controleer de organisaties die aan de GitHub Discussion van de component zijn toegevoegd.</p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item"><strong>GitHub repository</strong>: Als één van de repository details onder &#x27;About&#x27; in de sidebar.</li>
-               <li class="utrecht-unordered-list__item"><strong>Package in npm</strong>: Onder &#x27;License&#x27; in de sidebar.</li>
-               <li class="utrecht-unordered-list__item"><strong>Storybook</strong>: Als een aparte pagina binnen de sidebar, of binnen de introductiepagina danwel README.</li>
-               <li class="utrecht-unordered-list__item"><strong>Figma</strong> (optioneel): Op de cover of direct naast de cover van de Figma bibliotheek.</li>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><strong>GitHub repository</strong>: Als één van de repository details onder &#x27;About&#x27; in de sidebar.</li>
+               <li><strong>Package in npm</strong>: Onder &#x27;License&#x27; in de sidebar.</li>
+               <li><strong>Storybook</strong>: Als een aparte pagina binnen de sidebar, of binnen de introductiepagina danwel README.</li>
+               <li><strong>Figma</strong> (optioneel): Op de cover of direct naast de cover van de Figma bibliotheek.</li>
               </ul>
               <p><strong>🚩 Checkpoint</strong>: Licentie component</p>
               <h2 id="documentatie-heeft-de-creative-commons-0-licentie-cc0" class="utrecht-heading-2">Documentatie heeft de Creative Commons 0 licentie (CC0)</h2>
@@ -283,20 +283,20 @@
               <p><strong>🚩 Checkpoint</strong>: Storybook URL (CSS)</p>
               <h2 id="component-beschikbaar-voor-visuele-regressietests" class="utrecht-heading-2">Component beschikbaar voor visuele regressietests</h2>
               <p>Doel: Organisaties die de component gebruiken kunnen zien of de huisstijl uit een eigen thema goed wordt toegepast. Nu, maar ook bij nieuwe versies van de component bibliotheek.</p>
-              <ol>
-               <li class="utrecht-unordered-list__item">Clone de <a href="http://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">http://github.com/nl-design-system/themes</a> repository</li>
-               <li class="utrecht-unordered-list__item">Zorg dat je <a href="https://pnpm.io" class="utrecht-link utrecht-link--html-a">pnpm</a> hebt geinstalleerd</li>
-               <li class="utrecht-unordered-list__item">Installeer de dependencies van de repository met <code class="utrecht-code">pnpm install</code></li>
-               <li class="utrecht-unordered-list__item">Zorg dat de design tokens beschikbaar zijn voor Storybook met <code class="utrecht-code">pnpm run build</code></li>
-               <li class="utrecht-unordered-list__item">Draai Storybook met <code class="utrecht-code">pnpm run storybook</code></li>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Clone de <a href="http://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">http://github.com/nl-design-system/themes</a> repository</li>
+               <li>Zorg dat je <a href="https://pnpm.io" class="utrecht-link utrecht-link--html-a">pnpm</a> hebt geinstalleerd</li>
+               <li>Installeer de dependencies van de repository met <code class="utrecht-code">pnpm install</code></li>
+               <li>Zorg dat de design tokens beschikbaar zijn voor Storybook met <code class="utrecht-code">pnpm run build</code></li>
+               <li>Draai Storybook met <code class="utrecht-code">pnpm run storybook</code></li>
               </ol>
               <h3 id="voeg-de-story-toe-aan-de-components-sectie-in-storybook" class="utrecht-heading-3">Voeg de story toe aan de <code class="utrecht-code">Components</code> sectie in Storybook</h3>
               <p>Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.</p>
               <h4 id="maak-een-story-bestand-aan" class="utrecht-heading-4">Maak een story bestand aan</h4>
-              <ol>
-               <li class="utrecht-unordered-list__item">Ga naar <code class="utrecht-code">packages/storybook/voorbeeld-design-tokens</code></li>
-               <li class="utrecht-unordered-list__item">Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen</li>
-               <li class="utrecht-unordered-list__item">Maak een nieuw bestand <code class="utrecht-code">{organisatie-prefix}-{component-naam}.stories.tsx</code></li>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Ga naar <code class="utrecht-code">packages/storybook/voorbeeld-design-tokens</code></li>
+               <li>Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen</li>
+               <li>Maak een nieuw bestand <code class="utrecht-code">{organisatie-prefix}-{component-naam}.stories.tsx</code></li>
               </ol>
               <h4 id="voeg-de-component-toe-aan-de-story" class="utrecht-heading-4">Voeg de component toe aan de story</h4>
               <span hidden="" id=":Rf2hralaqh:"
@@ -391,14 +391,14 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">]</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
 </span></code></pre>
               <h4 id="voeg-de-component-toe-aan-een-config-toe" class="utrecht-heading-4">Voeg de component toe aan een config toe</h4>
-              <ol>
-               <li class="utrecht-unordered-list__item">Open de config.json van het thema van de organisatie</li>
-               <li class="utrecht-unordered-list__item">Voeg de id van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code></li>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Open de config.json van het thema van de organisatie</li>
+               <li>Voeg de id van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code></li>
               </ol>
               <p>Optioneel: voeg het component ook toe aan het voorbeeld thema</p>
-              <ol>
-               <li class="utrecht-unordered-list__item">Open de config.json van het Voorbeeld thema <code class="utrecht-code">packages/voorbeeld-design-tokens/src/config.json</code></li>
-               <li class="utrecht-unordered-list__item">Voeg de id van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code></li>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Open de config.json van het Voorbeeld thema <code class="utrecht-code">packages/voorbeeld-design-tokens/src/config.json</code></li>
+               <li>Voeg de id van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code></li>
               </ol>
               <h3 id="maak-een-pull-request" class="utrecht-heading-3">Maak een Pull Request</h3>
               <p>Zorg dat de component beschikbaar komt met een Pull Request op GitHub en vraag het kernteam in <a href="https://codefornl.slack.com/archives/C01DAT4TRPF" class="utrecht-link utrecht-link--html-a">#nl-design-system-developers</a> om een review.</p>
