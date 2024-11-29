@@ -941,7 +941,7 @@ pre {
 }
 
 .utrecht-paragraph--lead + p {
-  margin-top: var(--utrecht-paragraph-margin-block-start);
+  margin-block-start: var(--utrecht-paragraph-margin-block-start);
 }
 
 /* Temporary fix for accordion spacing */
