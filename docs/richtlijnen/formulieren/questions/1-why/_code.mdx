@@ -7,9 +7,9 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="email">E-mailadres</label>
+        <label htmlFor="email">E-mailadres</label>
         <p id="email-description">We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.</p>
-        <input aria-describedby="email-description" autocomplete="email" id="email" type="email" />
+        <input aria-describedby="email-description" autoComplete="email" id="email" type="email" />
       </>
     )}
   </Canvas>
@@ -19,7 +19,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="bsn">Burgerservicenummer</label>
+        <label htmlFor="bsn">Burgerservicenummer</label>
         <input id="bsn" type="text" />
       </>
     )}
