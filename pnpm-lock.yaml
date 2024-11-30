@@ -87,6 +87,9 @@ importers:
       '@mdx-js/react':
         specifier: 3.0.1
         version: 3.0.1(@types/react@18.2.55)(react@18.3.1)
+      '@nl-design-system-unstable/documentation':
+        specifier: workspace:*
+        version: link:docs
       '@nl-design-system-unstable/nlds-design-tokens':
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
