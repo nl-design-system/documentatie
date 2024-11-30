@@ -124,8 +124,11 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
             ({ name, value }) => urlMap.has(name) && URL.canParse(value) && new URL(value).protocol === 'https:',
           );
 
+          const slugify = (arg: string): string => arg.replace(/[^a-z0-9-]+/g, '');
+          const slug = slugify(alias);
+
           return (
-            <Card key={project.title} className={clsx(style['implementation-card'])}>
+            <Card key={project.title} className={clsx(style['implementation-card'])} id={slug}>
               <CardContent>
                 <Heading level={headingLevel}>{project.title}</Heading>
                 <Paragraph>

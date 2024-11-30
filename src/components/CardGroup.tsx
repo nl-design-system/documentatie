@@ -34,7 +34,14 @@ interface CardProps {
   component?: 'article' | 'section' | 'div';
 }
 
-export const Card = ({ href, appearance, className, component = 'div', children }: PropsWithChildren<CardProps>) => {
+export const Card = ({
+  href,
+  appearance,
+  className,
+  component = 'div',
+  children,
+  ...restProps
+}: PropsWithChildren<CardProps>) => {
   const Wrapper = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => {
     if (component === 'article') return <article {...props} />;
     if (component === 'section') return <section {...props} />;
@@ -42,7 +49,10 @@ export const Card = ({ href, appearance, className, component = 'div', children 
   };
 
   const card = (
-    <Wrapper className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
+    <Wrapper
+      className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}
+      {...restProps}
+    >
       {children}
     </Wrapper>
   );
