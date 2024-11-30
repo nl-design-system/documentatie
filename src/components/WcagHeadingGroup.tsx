@@ -1,7 +1,7 @@
 import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import React, { type PropsWithChildren } from 'react';
 import { InlineHeadingGroup, type InlineHeadingGroupProps } from './InlineHeadingGroup';
-import style from './WcagHeadingGroup.module.css';
+import './WcagHeadingGroup.css';
 
 export interface WcagHeadingGroupProps extends InlineHeadingGroupProps {
   conformanceLevel: string;
@@ -14,11 +14,9 @@ export const WcagHeadingGroup = ({
 }: PropsWithChildren<WcagHeadingGroupProps>) => {
   return (
     <InlineHeadingGroup
-      className={style['nlds-inline-heading-group--wcag-heading-group']}
+      className="nlds-inline-heading-group--wcag-heading-group"
       suffix={
-        conformanceLevel && (
-          <DataBadge className={style['nlds-inline-heading-group__badge']}>{conformanceLevel}</DataBadge>
-        )
+        conformanceLevel && <DataBadge className="nlds-inline-heading-group__badge">{conformanceLevel}</DataBadge>
       }
       {...restProps}
     >

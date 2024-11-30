@@ -5,7 +5,7 @@ import type { Props } from '@theme/DocPage/Layout/Sidebar';
 import DocSidebar from '@theme/DocSidebar';
 import clsx from 'clsx';
 import React, { type ReactNode, useCallback, useState } from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 // Reset sidebar state when sidebar changes
 // Use React key to unmount/remount the children
@@ -29,7 +29,7 @@ export default function DocPageLayoutSidebar({
 
   return (
     <aside
-      className={clsx(ThemeClassNames.docs.docSidebarContainer, styles.docSidebarContainer)}
+      className={clsx(ThemeClassNames.docs.docSidebarContainer, 'docSidebarContainer')}
       onTransitionEnd={(_evt) => {
         if (hiddenSidebarContainer) {
           setHiddenSidebar(true);
@@ -37,7 +37,7 @@ export default function DocPageLayoutSidebar({
       }}
     >
       <ResetOnSidebarChange>
-        <div className={clsx(styles.sidebarViewport, hiddenSidebar && styles.sidebarViewportHidden)}>
+        <div className={clsx('sidebarViewport', hiddenSidebar && 'sidebarViewportHidden')}>
           <DocSidebar sidebar={sidebar} path={pathname} onCollapse={toggleSidebar} isHidden={hiddenSidebar} />
         </div>
       </ResetOnSidebarChange>

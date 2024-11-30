@@ -11,7 +11,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { Fragment } from 'react';
-import styles from './Breadcrumbs.module.css';
+import './Breadcrumbs.css';
 
 export interface BreadcrumbNavProps {
   breadcrumbs: {
@@ -31,7 +31,7 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
 
   return (
     <>
-      <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--desktop'])}>
+      <div className={clsx('breadcrumbs', 'breadcrumbs--desktop')}>
         <UtrechtBreadcrumbNav {...restProps} label="breadcrumb">
           {links.map(({ label, href, rel }, index, { length }) => (
             <Fragment key={index}>
@@ -49,7 +49,7 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
         </UtrechtBreadcrumbNav>
       </div>
       {up && (
-        <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--mobile'])}>
+        <div className={clsx('breadcrumbs', 'breadcrumbs--mobile')}>
           <ButtonGroup>
             <Link href={up.href} rel={up.rel} className="utrecht-link utrecht-link--html-a">
               <Icon>

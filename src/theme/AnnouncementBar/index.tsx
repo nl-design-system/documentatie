@@ -3,7 +3,7 @@ import { useAnnouncementBar } from '@docusaurus/theme-common/internal';
 import AnnouncementBarCloseButton from '@theme/AnnouncementBar/CloseButton';
 import AnnouncementBarContent from '@theme/AnnouncementBar/Content';
 import React from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 export default function AnnouncementBar(): React.Element | null {
   const { announcementBar } = useThemeConfig();
@@ -13,10 +13,10 @@ export default function AnnouncementBar(): React.Element | null {
   }
   const { backgroundColor, textColor, isCloseable } = announcementBar!;
   return (
-    <div className={styles.announcementBar} style={{ backgroundColor, color: textColor }} role="banner">
-      {isCloseable && <div className={styles.announcementBarPlaceholder} />}
-      <AnnouncementBarContent className={styles.announcementBarContent} />
-      {isCloseable && <AnnouncementBarCloseButton onClick={close} className={styles.announcementBarClose} />}
+    <div className="announcementBar" style={{ backgroundColor, color: textColor }} role="banner">
+      {isCloseable && <div className="announcementBarPlaceholder" />}
+      <AnnouncementBarContent className="announcementBarContent" />
+      {isCloseable && <AnnouncementBarCloseButton onClick={close} className="announcementBarClose" />}
     </div>
   );
 }

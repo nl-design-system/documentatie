@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { type HTMLAttributes, type PropsWithChildren, type ReactNode } from 'react';
-import style from './InlineHeadingGroup.module.css';
+import './InlineHeadingGroup.css';
 
 export interface InlineHeadingGroupProps extends HTMLAttributes<HTMLElement> {
   level?: number;
@@ -14,12 +14,12 @@ export const InlineHeadingGroup = ({
   suffix,
   ...restProps
 }: PropsWithChildren<InlineHeadingGroupProps>) => {
-  // TODO: When SCSS is supported, use style[`nlds-inline-heading-group--level-${level}`]
+  // TODO: When SCSS is supported, use `nlds-inline-heading-group--level-${level}`
   return (
-    <hgroup className={clsx(style['nlds-inline-heading-group'], `utrecht-heading-${level}`, className)} {...restProps}>
-      <h1 className={clsx(style['nlds-inline-heading-group__heading'])}>{children}</h1>
+    <hgroup className={clsx('nlds-inline-heading-group', `utrecht-heading-${level}`, className)} {...restProps}>
+      <h1 className="nlds-inline-heading-group__heading">{children}</h1>
       {suffix && (
-        <p className={clsx(style['nlds-inline-heading-group__suffix'])}>
+        <p className="nlds-inline-heading-group__suffix">
           {suffix ? ' ' : ''}
           {suffix}
         </p>

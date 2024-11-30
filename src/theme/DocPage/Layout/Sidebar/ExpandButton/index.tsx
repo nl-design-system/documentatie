@@ -3,12 +3,12 @@ import { IconArrowBarToRight } from '@tabler/icons-react';
 import type { Props } from '@theme/DocPage/Layout/Sidebar/ExpandButton';
 import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
 import React from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): React.Element {
   return (
     <LinkButton
-      className={styles.expandButton}
+      className="expandButton"
       title={translate({
         id: 'theme.docs.sidebar.expandButtonTitle',
         message: 'Expand sidebar',
@@ -24,7 +24,7 @@ export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Prop
       onKeyDown={toggleSidebar}
       onClick={toggleSidebar}
     >
-      <IconArrowBarToRight className={styles.expandButtonIcon} />
+      <IconArrowBarToRight className="expandButtonIcon" />
     </LinkButton>
   );
 }

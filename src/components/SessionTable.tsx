@@ -13,7 +13,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { HTMLTableAttributes } from 'react';
-import style from './SessionTable.module.css';
+import './SessionTable.css';
 
 interface Speaker {
   name: string;
@@ -36,22 +36,22 @@ interface SessionTableProps extends HTMLTableAttributes<HTMLTableElement> {
 }
 
 const SpeakerData = ({ name, organisation }: Speaker) => (
-  <Paragraph className={clsx(style['session-table__speaker'], style['speaker'])}>
-    <Icon className={style['speaker__icon']}>
+  <Paragraph className={clsx('session-table__speaker', 'speaker')}>
+    <Icon className="speaker__icon">
       <IconUser />
     </Icon>
-    <span className={clsx(style['speaker__name'])}>{name}</span>
+    <span className="speaker__name">{name}</span>
     <br />
-    <span className={clsx(style['speaker__organisation'])}>{organisation}</span>
+    <span className="speaker__organisation">{organisation}</span>
   </Paragraph>
 );
 
 export const SessionTable = ({ lang, sessions, className, ...props }: SessionTableProps) => {
   return (
-    <div className={clsx(style['session-table-container'], className)}>
-      <Table className={clsx(style['session-table'], className)} {...props}>
+    <div className={clsx('session-table-container', className)}>
+      <Table className={clsx('session-table', className)} {...props}>
         <TableHeader>
-          <TableRow className={clsx(style['session-table__row'])}>
+          <TableRow className="session-table__row">
             <TableHeaderCell>{lang === 'nl-NL' ? 'Tijd' : 'Time'}</TableHeaderCell>
             <TableHeaderCell>{lang === 'nl-NL' ? 'Spreker' : 'Speaker'}</TableHeaderCell>
             <TableHeaderCell>{lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}</TableHeaderCell>
@@ -61,8 +61,8 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
         </TableHeader>
         <TableBody>
           {sessions.map(({ isoDateTime, speakers, subject, icalLink, sessionLink, language }, index) => (
-            <TableRow className={clsx(style['session-table__row'])} key={index}>
-              <TableCell className={clsx(style['session-table__time'])}>
+            <TableRow className="session-table__row" key={index}>
+              <TableCell className="session-table__time">
                 <Paragraph>
                   <time dateTime={isoDateTime}>
                     {new Intl.DateTimeFormat(lang, {
@@ -75,21 +75,21 @@ export const SessionTable = ({ lang, sessions, className, ...props }: SessionTab
                 </Paragraph>
               </TableCell>
               <TableCell>
-                <div className={clsx(style['session-table__speakers'])}>
+                <div className="session-table__speakers">
                   {speakers.map((speaker, index) => (
                     <SpeakerData key={index} {...speaker} />
                   ))}
                 </div>
               </TableCell>
-              <TableCell className={clsx(style['session-table__subject'])}>
+              <TableCell className="session-table__subject">
                 <Paragraph>{sessionLink ? <Link href={sessionLink}>{subject}</Link> : subject}</Paragraph>
               </TableCell>
               {lang === 'nl-NL' && (
-                <TableCell className={clsx(style['session-table__language'])}>
+                <TableCell className="session-table__language">
                   <abbr title={language.description}>{language.abbr}</abbr>
                 </TableCell>
               )}
-              <TableCell className={clsx(style['session-table__time'])}>
+              <TableCell className="session-table__time">
                 {icalLink && (
                   <ButtonLink href={icalLink} download={icalLink} aria-label={`iCal file for ${subject} (download)`}>
                     <Icon>

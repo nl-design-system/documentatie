@@ -7,7 +7,7 @@ import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react
 import React, { useEffect, useState } from 'react';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
-import style from './ComponentOverview.module.css';
+import './ComponentOverview.css';
 import { EstafetteBadge } from './EstafetteBadge';
 import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
 
@@ -119,7 +119,7 @@ export const ComponentOverview = () => {
       <AccordionProvider
         sections={[
           {
-            className: style['utrecht-accordion--nlds-subtle'],
+            className: 'utrecht-accordion--nlds-subtle',
             headingLevel: 2,
             expanded: false,
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
@@ -192,7 +192,7 @@ export const ComponentOverview = () => {
                   </Paragraph>
                   {!!onlyImplemented.length && (
                     <>
-                      <FormField type="checkbox" className={style['utrecht-form-field--nlds-switch']}>
+                      <FormField type="checkbox" className="utrecht-form-field--nlds-switch">
                         <FormToggle
                           defaultChecked={showOnlyImplemented}
                           id="ONLY_IMPLEMENTED"

@@ -1,5 +1,6 @@
 import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
 import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
+import { CodeBlockSyntaxHighlighting } from '/src/components/CodeBlockSyntaxHighlighting';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';
@@ -17,15 +18,14 @@ import React, {
   useState,
 } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-import style from './Canvas.module.css';
-import { CodeBlockSyntaxHighlighting } from '/src/components/CodeBlockSyntaxHighlighting';
+import './Canvas.css';
 
 export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
 
 const ParagraphContainer = ({ children }: PropsWithChildren<{}>) => (
-  <Surface className={style['nlds-canvas__example-surface']}>
-    <Document className={clsx('utrecht-document--surface', style['nlds-canvas__example-document'])}>
-      <Paragraph className={style['nlds-canvas__example-paragraph']}>{children}</Paragraph>
+  <Surface className="nlds-canvas__example-surface">
+    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>
+      <Paragraph className="nlds-canvas__example-paragraph">{children}</Paragraph>
     </Document>
   </Surface>
 );
@@ -33,16 +33,14 @@ const ParagraphContainer = ({ children }: PropsWithChildren<{}>) => (
 ParagraphContainer.displayName = 'ParagraphContainer';
 
 const DocumentContainer = ({ children }: PropsWithChildren<{}>) => (
-  <Surface className={style['nlds-canvas__example-surface']}>
-    <Document className={clsx('utrecht-document--surface', style['nlds-canvas__example-document'])}>
-      {children}
-    </Document>
+  <Surface className="nlds-canvas__example-surface">
+    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>{children}</Document>
   </Surface>
 );
 DocumentContainer.displayName = 'DocumentContainer';
 
 const SurfaceContainer = ({ children }: PropsWithChildren<{}>) => (
-  <Surface className={style['nlds-canvas__example-surface']}>{children}</Surface>
+  <Surface className="nlds-canvas__example-surface">{children}</Surface>
 );
 
 SurfaceContainer.displayName = 'SurfaceContainer';
@@ -113,9 +111,9 @@ export const Canvas = ({
   }
 
   return (
-    <div className={clsx(style['nlds-canvas'])}>
+    <div className={clsx('nlds-canvas')}>
       {jsxTree && (
-        <div className={clsx(style['nlds-canvas__example'])}>
+        <div className={clsx('nlds-canvas__example')}>
           <div className="voorbeeld-theme" style={designTokens}>
             <Container>
               <HTMLContent>{jsxTree}</HTMLContent>
@@ -124,9 +122,9 @@ export const Canvas = ({
         </div>
       )}
       {displayCode && (
-        <div className={clsx(style['nlds-canvas__toolbar'])}>
+        <div className={clsx('nlds-canvas__toolbar')}>
           <Button
-            className={clsx(style['nlds-canvas__button'], style['nlds-canvas__toggle-code-button'])}
+            className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
             appearance="subtle-button"
             onClick={toggleExpanded}
             aria-expanded={expandedSourceCode}
@@ -138,10 +136,7 @@ export const Canvas = ({
       )}
       {displayCode && (
         <div
-          className={clsx(
-            style['nlds-canvas__code-block'],
-            !copy && style['nlds-canvas__code-block--user-select-none'],
-          )}
+          className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
           id={codeBlockId}
           hidden={!expandedSourceCode}
         >
@@ -152,9 +147,9 @@ export const Canvas = ({
             trim
           />
           {copy && (
-            <div className={clsx(style['nlds-canvas__toolbar'], style['nlds-canvas__toolbar--copy'])}>
+            <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
               <Button
-                className={clsx(style['nlds-canvas__button'], style['nlds-canvas__copy-button'])}
+                className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
                 appearance="subtle-button"
                 onClick={copyCode}
               >

@@ -6,7 +6,7 @@ import Content from '@theme/DocSidebar/Desktop/Content';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { useId } from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden }: Props) {
   const {
@@ -18,16 +18,16 @@ function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden 
   return (
     <div
       className={clsx(
-        styles.sidebar,
-        hideOnScroll && styles.sidebarWithHideableNavbar,
-        isHidden && styles.sidebarHidden,
-        isNavbarVisible && styles.sidebarWithNavbar,
+        'sidebar',
+        hideOnScroll && 'sidebarWithHideableNavbar',
+        isHidden && 'sidebarHidden',
+        isNavbarVisible && 'sidebarWithNavbar',
       )}
     >
       <Button
         appearance="subtle-button"
         onClick={toggleSidebar}
-        className={clsx(styles['sidebar__toggle-button'], isHidden && styles['sidebar__toggle-button--icon-only'])}
+        className={clsx('sidebar__toggle-button', isHidden && 'sidebar__toggle-button--icon-only')}
         aria-controls={sidebarId}
         aria-label={isHidden ? 'Toon sidebar' : 'Verberg sidebar'}
         aria-expanded={!isHidden}
@@ -46,7 +46,7 @@ function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden 
       <div
         id={sidebarId}
         aria-expanded={!isHidden}
-        className={clsx(styles['sidebar__content'], isHidden && styles['sidebar__content--hidden'])}
+        className={clsx('sidebar__content', isHidden && 'sidebar__content--hidden')}
       >
         <Content path={path} sidebar={sidebar} />
       </div>

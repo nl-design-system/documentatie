@@ -1,7 +1,7 @@
 import Logo from '@theme/Logo';
 import clsx from 'clsx';
 import React from 'react';
-import styles from './Logo.module.css';
+import './Logo.css';
 
 export default function NavbarLogo(): React.Element {
   return (
@@ -11,10 +11,10 @@ export default function NavbarLogo(): React.Element {
         'utrecht-link--html-a',
         'navbar__item',
         'navbar__item--show-on-mobile',
-        styles['navbar-logo'],
+        'navbar-logo',
       )}
-      imageClassName={clsx('navbar__logo', styles['navbar-logo__icon'])}
-      titleClassName={clsx('navbar__title', styles['navbar-logo__title'])}
+      imageClassName={clsx('navbar__logo', 'navbar-logo__icon')}
+      titleClassName={clsx('navbar__title', 'navbar-logo__title')}
     />
   );
 }
