@@ -20,7 +20,7 @@ import {
 import clsx from 'clsx';
 import React, { PropsWithChildren, ReactNode, useId } from 'react';
 import { useForm } from 'react-hook-form';
-import style from './GraffitiForm.module.css';
+import './GraffitiForm.css';
 
 interface VoorbeeldMetFoutenProps {
   noAutoComplete?: string[] | true;
@@ -116,11 +116,11 @@ export const GraffitiForm = ({
 
   return (
     <Layout>
-      <PageContent className={clsx('voorbeeld-theme', style['voorbeeld-theme--extensions'])}>
+      <PageContent className={clsx('voorbeeld-theme', 'voorbeeld-theme--extensions')}>
         {' '}
         <main>
           <Heading1>Voorbeeld formulier met fouten</Heading1>
-          <form onSubmit={handleSubmit(onSubmit)} aria-labelledby={formHeadingId} className={style['example-form']}>
+          <form onSubmit={handleSubmit(onSubmit)} aria-labelledby={formHeadingId} className="example-form">
             <Heading2 id={formHeadingId}>Graffiti-schoonmaakregeling aanvragen</Heading2>
             <Paragraph>
               Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
@@ -153,7 +153,7 @@ export const GraffitiForm = ({
                 }
                 invalid={!!errors['straatnaam']}
                 aria-describedby={`${straatnaamId}-description`}
-                className={style['utrecht-textbox--example-street-name']}
+                className="utrecht-textbox--example-street-name"
               />
             </FormField>
             <FormField type="text">
@@ -178,7 +178,7 @@ export const GraffitiForm = ({
                   id={huisnummerId}
                   aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
-                  className={style['utrecht-textbox--example-house-number']}
+                  className="utrecht-textbox--example-house-number"
                 />
               ) : (
                 <Textbox
@@ -188,7 +188,7 @@ export const GraffitiForm = ({
                   inputMode="numeric"
                   aria-describedby={`${huisnummerId}-description`}
                   invalid={!!errors['huisnummer']}
-                  className={style['utrecht-textbox--example-house-number']}
+                  className="utrecht-textbox--example-house-number"
                 />
               )}
             </FormField>
@@ -212,7 +212,7 @@ export const GraffitiForm = ({
                 type="text"
                 id={huisnummerToevoegingId}
                 aria-describedby={`${huisnummerToevoegingId}-description`}
-                className={style['utrecht-textbox--example-house-number-addition']}
+                className="utrecht-textbox--example-house-number-addition"
               />
             </FormField>
             <FormField type="text">
@@ -248,7 +248,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${postcodeId}-description`}
                 invalid={!!errors['postcode']}
-                className={style['utrecht-textbox--example-postal-code-nl']}
+                className="utrecht-textbox--example-postal-code-nl"
               />
             </FormField>
             <FormField type="text">
@@ -275,7 +275,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${woonplaatsId}-description`}
                 invalid={!!errors['woonplaats']}
-                className={style['utrecht-textbox--example-woonplaats']}
+                className="utrecht-textbox--example-woonplaats"
               />
             </FormField>
             <FormField>
@@ -391,7 +391,7 @@ export const GraffitiForm = ({
                 }
                 invalid={!!errors['achternaam']}
                 aria-describedby={`${achternaamId}-description`}
-                className={style['utrecht-textbox--example-family-name']}
+                className="utrecht-textbox--example-family-name"
               />
             </FormField>
             <FormField type="text">
@@ -421,7 +421,7 @@ export const GraffitiForm = ({
                 }
                 aria-describedby={`${tussenvoegselsId}-description`}
                 invalid={!!errors['tussenvoegsels']}
-                className={style['utrecht-textbox--example-voorvoegsel']}
+                className="utrecht-textbox--example-voorvoegsel"
               />
             </FormField>
             <FormField type="text">
@@ -448,7 +448,7 @@ export const GraffitiForm = ({
                 id={voorlettersId}
                 invalid={!!errors['voorletters']}
                 aria-describedby={`${voorlettersId}-description`}
-                className={style['utrecht-textbox--example-voorletters']}
+                className="utrecht-textbox--example-voorletters"
               />
             </FormField>
             {unnecessaryQuestions === true ||
@@ -529,7 +529,7 @@ export const GraffitiForm = ({
                 autoComplete={noAutoComplete === true || noAutoComplete.includes('email') ? undefined : 'email'}
                 invalid={!!errors['email']}
                 aria-describedby={`${emailId}-description`}
-                className={style['utrecht-textbox--example-mail']}
+                className="utrecht-textbox--example-mail"
               />
             </FormField>
             <FormField type="text">
@@ -561,9 +561,7 @@ export const GraffitiForm = ({
                 }
                 invalid={!!errors['telefoonnummer']}
                 aria-describedby={`${phoneId}-description`}
-                className={
-                  telNational ? style['utrecht-textbox--example-tel-national'] : style['utrecht-textbox--example-tel']
-                }
+                className={telNational ? 'utrecht-textbox--example-tel-national' : 'utrecht-textbox--example-tel'}
               />
             </FormField>
             <ButtonGroup>

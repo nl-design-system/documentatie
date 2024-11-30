@@ -12,12 +12,12 @@ import clsx from 'clsx';
 import React from 'react';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
-import style from './ComponentPage.module.css';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
 import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
+import './ComponentPage.css';
 
 type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
 type PROJECT_ID =
@@ -69,10 +69,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
       <AccordionProvider
         appearance=""
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx(
-            style['definition-of-done'],
-            project && style[`definition-of-done--${toKebabCase(project.title)}`],
-          ),
+          className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
           headingLevel: headingLevel,
           expanded: false,
           label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
@@ -99,7 +96,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
 export const Implementations = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const implementations = component && component.projects.filter((project) => !relayProjectIds.includes(project.id));
   return component && implementations.length ? (
-    <CardGroup appearance="large" className={clsx(style['implementation-card-group'])}>
+    <CardGroup appearance="large" className="implementation-card-group">
       {implementations
         .sort((a, b) => {
           const aTodo = a.progress.max - a.progress.value;
@@ -125,7 +122,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           );
 
           return (
-            <Card key={project.title} className={clsx(style['implementation-card'])}>
+            <Card key={project.title} className="implementation-card">
               <CardContent>
                 <Heading level={headingLevel}>{project.title}</Heading>
                 <Paragraph>

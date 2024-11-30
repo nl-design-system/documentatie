@@ -5,7 +5,7 @@ import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import React, { PropsWithChildren, type ReactNode } from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 function CardLayout({
   href,
@@ -20,19 +20,19 @@ function CardLayout({
   description?: string;
 }>) {
   return (
-    <div className={clsx('card', styles.card)}>
+    <div className="card">
       {href ? (
-        <Link href={href} className={clsx(styles.cardLink, 'utrecht-link')}>
-          <h2 className={clsx(styles.cardTitle)}>
+        <Link href={href} className={clsx('cardLink', 'utrecht-link')}>
+          <h2 className="cardTitle">
             {icon} {title}
           </h2>
         </Link>
       ) : (
-        <h2 className={clsx(styles.cardTitle)}>
+        <h2 className="cardTitle">
           {icon} {title}
         </h2>
       )}
-      {description && <p className={clsx(styles.cardDescription)}>{description}</p>}
+      {description && <p className="cardDescription">{description}</p>}
       {children}
     </div>
   );

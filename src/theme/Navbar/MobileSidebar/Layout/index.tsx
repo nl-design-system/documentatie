@@ -2,7 +2,7 @@ import { useNavbarMobileSidebar, useNavbarSecondaryMenu } from '@docusaurus/them
 import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
 import clsx from 'clsx';
 import { React, useEffect, useRef } from 'react';
-import styles from './Layout.module.css';
+import './Layout.css';
 
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): React.Element {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
@@ -39,7 +39,7 @@ export default function NavbarMobileSidebarLayout({ header, primaryMenu, seconda
   }, [shown]);
 
   return (
-    <dialog className={clsx('navbar-sidebar', styles['navbar-sidebar'])} ref={navbarModalDialog}>
+    <dialog className={clsx('navbar-sidebar', 'navbar-sidebar')} ref={navbarModalDialog}>
       {header}
       <div className={clsx('navbar-sidebar__items')}>
         {secondaryMenuShown ? (

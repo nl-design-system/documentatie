@@ -6,7 +6,7 @@ import type { Props } from '@theme/BlogPostItems';
 import { BadgeList, DataBadge, Heading2, Icon } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import React from 'react';
-import style from './styles.module.css';
+import './styles.css';
 
 export default function BlogPostItems({ items }: Props): React.Element {
   return (
@@ -14,30 +14,24 @@ export default function BlogPostItems({ items }: Props): React.Element {
       {items.map(({ content }) => {
         return (
           <BlogPostProvider key={content.metadata.permalink} content={content}>
-            <Card appearance="large" className={style['blog-card']}>
+            <Card appearance="large" className="blog-card">
               <CardContent>
                 <Heading2>
-                  <Link
-                    to={content.metadata.permalink}
-                    className={clsx('utrecht-link', style['blog-card__header-link'])}
-                  >
+                  <Link to={content.metadata.permalink} className={clsx('utrecht-link', 'blog-card__header-link')}>
                     {content.metadata.title}
                   </Link>
                 </Heading2>
                 <div>{content.metadata.description}</div>
                 <BadgeList>
                   {content.metadata.authors.map((author) => (
-                    <DataBadge
-                      key={author.name}
-                      className={clsx(style['blog-card__badge'], style['blog-card__badge--author'])}
-                    >
+                    <DataBadge key={author.name} className={clsx('blog-card__badge', 'blog-card__badge--author')}>
                       <Icon>
                         <IconUser />
                       </Icon>
                       <span className="visually-hidden">auteur:</span> {author.name}
                     </DataBadge>
                   ))}
-                  <DataBadge className={clsx(style['blog-card__badge'], style['blog-card__badge--date'])}>
+                  <DataBadge className={clsx('blog-card__badge', 'blog-card__badge--date')}>
                     <Icon>
                       <IconCalendar />
                     </Icon>

@@ -17,7 +17,7 @@ import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 import { FormFieldTextbox } from '/src/components/FormFieldTextbox';
 import Color from 'color';
 import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import style from './index.module.css';
+import './index.css';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -60,7 +60,7 @@ const ExampleRendering = ({
   label,
   ...props
 }: PropsWithChildren<{ label: string } & HTMLAttributes<HTMLDivElement>>) => (
-  <div role="img" aria-label={label} className={style['nlds-example-rendering']} {...props}>
+  <div role="img" aria-label={label} className="nlds-example-rendering" {...props}>
     {children}
   </div>
 );
@@ -204,7 +204,7 @@ const ContrastPage = () => {
           Vul de CSS-kleurcodes in van twee kleuren. Controleer dan voor welke toepassingen je de combinatie kunt
           gebruiken.
         </Paragraph>
-        <form method="get" action="./" className={style['nlds-form']}>
+        <form method="get" action="./" className="nlds-form">
           <FormFieldTextbox
             name="background-color"
             label={<Code>background-color</Code>}

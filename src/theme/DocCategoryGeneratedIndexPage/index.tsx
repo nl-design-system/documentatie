@@ -8,7 +8,7 @@ import DocVersionBadge from '@theme/DocVersionBadge';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import Heading from '@theme/Heading';
 import React from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): React.Element {
   return (
@@ -25,18 +25,18 @@ function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props
 function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): React.Element {
   const category = useCurrentSidebarCategory();
   return (
-    <div className={styles.generatedIndexPage}>
+    <div className="generatedIndexPage">
       <DocVersionBanner />
       <DocBreadcrumbs />
       <DocVersionBadge />
       <header>
-        <Heading as="h1" className={styles.title}>
+        <Heading as="h1" className="title">
           {categoryGeneratedIndex.title}
         </Heading>
         {categoryGeneratedIndex.description && <p>{categoryGeneratedIndex.description}</p>}
       </header>
       <article className="margin-top--lg">
-        <DocCardList items={category.items} className={styles.list} />
+        <DocCardList items={category.items} className="list" />
       </article>
       <footer className="margin-top--lg">
         <DocPaginator

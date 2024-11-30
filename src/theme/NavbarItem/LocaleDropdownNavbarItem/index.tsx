@@ -7,7 +7,7 @@ import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import React from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 export default function LocaleDropdownNavbarItem({
   mobile,
@@ -63,7 +63,7 @@ export default function LocaleDropdownNavbarItem({
       mobile={mobile}
       label={
         <>
-          <IconLanguage className={styles.iconLanguage} />
+          <IconLanguage className="iconLanguage" />
           {dropdownLabel}
         </>
       }
