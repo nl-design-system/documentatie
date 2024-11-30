@@ -24,7 +24,7 @@
     "docusaurus": "docusaurus",
     "start": "npm-run-all --sequential start:docusaurus",
     "start:docusaurus": "docusaurus start",
-    "build": "npm-run-all --sequential build:workspaces build:docusaurus build:optimize-view-source",
+    "build": "npm-run-all --sequential build:workspaces build:docusaurus build:optimize-view-source build:website-v3 vercel-website-v3",
     "build:component-pages": "docusaurus build",
     "build:docusaurus": "docusaurus build",
     "build:workspaces": "pnpm run --recursive build",
