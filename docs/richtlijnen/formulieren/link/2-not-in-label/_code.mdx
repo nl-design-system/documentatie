@@ -12,7 +12,7 @@ import { Guideline } from "@site/src/components/Guideline";
           {"."}
         </p>
         <input id="pb" type="checkbox" name="privacybeleid" />
-        <label for="pb">Ik ga akkoord met het privacybeleid</label>
+        <label htmlFor="pb">Ik ga akkoord met het privacybeleid</label>
       </>
     )}
   </Canvas>
@@ -36,7 +36,7 @@ import { Guideline } from "@site/src/components/Guideline";
           {"."}
         </p>
         <input type="checkbox" aria-describedby="desc" id="pvs" />
-        <label for="pvs">Ik ga akkoord met het privacybeleid</label>
+        <label htmlFor="pvs">Ik ga akkoord met het privacybeleid</label>
       </fieldset>
     )}
   </Canvas>
@@ -47,7 +47,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
-        <label for="privacybeleid">
+        <label htmlFor="privacybeleid">
           {"Ik ga akkoord met het "}
           <a href="#">privacybeleid</a>
         </label>
@@ -59,7 +59,7 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="dont" title="Link samen met het invoerveld in een impliciet label plaatsen.">
   <Canvas language="html">
     {() => (
-      <label for="tac">
+      <label htmlFor="tac">
         <input id="tac" type="checkbox" name="terms-and-conditions" />
         Ik ga akkoord met het <a href="#">privacybeleid</a>
       </label>

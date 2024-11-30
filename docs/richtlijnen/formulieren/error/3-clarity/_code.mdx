@@ -5,7 +5,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="passport-validity">Geldig tot</label>
+        <label htmlFor="passport-validity">Geldig tot</label>
         <p id="description-passport-validity">
           Invoerfout: De geldigheidsdatum van uw paspoort moet in de toekomst liggen.
         </p>
@@ -24,7 +24,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="email">E-mail</label>
+        <label htmlFor="email">E-mail</label>
         <p id="description-email">Invoerfout: Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
         <input id="email" type="email" name="email" aria-describedby="description-email" />
       </>
@@ -39,7 +39,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="passport-validity-2">Geldig tot</label>
+        <label htmlFor="passport-validity-2">Geldig tot</label>
         <p id="description-passport-validity-2">Invoerfout: Dit veld is verplicht.</p>
         <input
           id="passport-validity-2"

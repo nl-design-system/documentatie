@@ -10,10 +10,10 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="first-name">Voornaam (een of meerdere)</label>
+        <label htmlFor="first-name">Voornaam (een of meerdere)</label>
         <p id="first-name-description">Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
         <input
-          autocomplete="given-name"
+          autoComplete="given-name"
           type="text"
           name="first_name"
           id="first-name"
@@ -28,8 +28,8 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label for="first-name2">Voornaam(en)</label>
-        <input autocomplete="given-name" type="text" name="first_name" id="first-name2" />
+        <label htmlFor="first-name2">Voornaam(en)</label>
+        <input autoComplete="given-name" type="text" name="first_name" id="first-name2" />
       </>
     )}
   </Canvas>
