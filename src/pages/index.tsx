@@ -1,4 +1,4 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {
   Heading2,
@@ -14,7 +14,8 @@ import HomepageUpdates from '../components/HomepageUpdates';
 import { Link } from '../components/Link';
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  // const { siteConfig } = useDocusaurusContext();
+  const siteConfig = { title: '' };
 
   return (
     <Layout
