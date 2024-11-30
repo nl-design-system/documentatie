@@ -1,0 +1,67 @@
+{
+  "version": "0.0.0",
+  "author": "Community for NL Design System",
+  "description": "Website for the documentation of NL Design System",
+  "license": "EUPL-1.2",
+  "name": "@nl-design-system-unstable/website-v3",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/website-v3"
+  },
+  "dependencies": {
+    "@fontsource/fira-sans": "5.1.0",
+    "firacode": "6.2.0"
+  },
+  "devDependencies": {
+    "@fontsource/source-sans-pro": "5.1.0",
+    "@mdx-js/mdx": "3.1.0",
+    "@mdx-js/node-loader": "3.1.0",
+    "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
+    "@nl-design-system/website": "workspace:*",
+    "@types/lodash-es": "4.17.12",
+    "@types/node": "20.14.14",
+    "@utrecht/body-css": "1.1.0",
+    "@utrecht/body-react": "0.0.3",
+    "@utrecht/component-library-css": "7.0.0",
+    "@utrecht/component-library-react": "7.3.8",
+    "@utrecht/nav-bar-react": "1.0.3",
+    "@utrecht/page-body-css": "0.1.0",
+    "@utrecht/page-body-react": "1.0.3",
+    "@utrecht/page-footer-css": "2.1.0",
+    "@utrecht/page-footer-react": "1.0.3",
+    "@utrecht/page-header-react": "1.0.3",
+    "@utrecht/page-layout-css": "1.1.0",
+    "@utrecht/page-layout-react": "1.0.3",
+    "@utrecht/root-css": "1.1.0",
+    "@utrecht/root-react": "1.0.3",
+    "http-server": "14.1.1",
+    "lodash-es": "4.17.21",
+    "npm-run-all": "4.1.5",
+    "precompress": "12.0.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remark-frontmatter": "5.0.0",
+    "remark-mdx-frontmatter": "5.0.0",
+    "rimraf": "6.0.1",
+    "tsx": "4.19.2",
+    "typescript": "5.6.2"
+  },
+  "scripts": {
+    "build-after-docusaurus": "pnpm run clean && pnpm run build:website && pnpm run build:assets && pnpm run build:prettier && pnpm run build:precompress",
+    "build:website": "tsx --import packages/website-v3/src/register-loader.mjs src/build.tsx",
+    "build:assets": "sh ./build-assets.sh",
+    "build:precompress": "precompress --exclude *.br,*.gz,*.ttf,*.woff,*.woff2 --types br dist/ --verbose",
+    "build:prettier": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write dist/*.html dist/**/*.html",
+    "clean": "rimraf dist/ tmp/",
+    "start": "http-server dist/ --brotli"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../../",
+    "rootDir": "../../",
+    "jsx": "react-jsx",
+    "paths": {
+      "@docusaurus/*": ["./src/docusaurus-alternative/*"],
+      "@docusaurus/useDocusaurusContext": ["./src/docusaurus-alternative/useDocusaurusContext"],
+      "@site/*": ["./*"],
+      "/src/*": ["./src/*"],
+      "@/docs/*": ["./docs/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "**/*.md", "*.ts"],
+  "exclude": ["**/node_modules/*"]
+}

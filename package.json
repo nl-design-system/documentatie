@@ -29,6 +29,8 @@
     "build:docusaurus": "docusaurus build",
     "build:workspaces": "pnpm run --recursive build",
     "build:optimize-view-source": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write build/",
+    "build:website-v3": "pnpm run --filter @nl-design-system-unstable/website-v3 build-after-docusaurus",
+    "vercel-website-v3": "rm -rf build/ && cp -R packages/website-v3/dist build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clean": "npm-run-all clean:**",

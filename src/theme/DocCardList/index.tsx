@@ -1,5 +1,5 @@
-import { filterDocCardListItems, useCurrentSidebarCategory } from '@docusaurus/theme-common';
-import DocCard from '@theme/DocCard';
+// import { filterDocCardListItems, useCurrentSidebarCategory } from '@docusaurus/theme-common';
+// import DocCard from '@theme/DocCard';
 import type { Props } from '@theme/DocCardList';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
@@ -10,6 +10,7 @@ function DocCardListForCurrentSidebarCategory({ className }: Props) {
 }
 
 export default function DocCardList(props: Props): ReactElement {
+  return null;
   const { items, className } = props;
 
   if (!items) {
