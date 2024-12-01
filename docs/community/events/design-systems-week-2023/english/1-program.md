@@ -8,7 +8,7 @@ pagination_label: Program
 slug: /events/design-systems-week-2023/en/program
 ---
 
-import DSWSession from '@site/src/components/DSWSession'
+import { DSWSession } from '@site/src/components/DSWSession'
 import speakers from '../speakers.json'
 import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
