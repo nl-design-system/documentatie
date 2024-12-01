@@ -18,5 +18,6 @@ export default function NavbarItem({ type, ...props }: Props): ReactElement {
     throw new Error(`No NavbarItem component found for type "${type}".`);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return <NavbarItemComponent {...(props as any)} />;
 }
