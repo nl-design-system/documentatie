@@ -28,7 +28,7 @@
     "build:component-pages": "docusaurus build",
     "build:docusaurus": "docusaurus build",
     "build:workspaces": "pnpm run --recursive build",
-    "build:optimize-view-source": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write build/",
+    "build:optimize-view-source": "prettier --print-width=1048576 --tab-width=1 --ignore-path=build.prettierignore --write build/",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clean": "npm-run-all clean:**",
