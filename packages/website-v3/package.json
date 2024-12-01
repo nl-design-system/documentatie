@@ -46,6 +46,7 @@
     "http-server": "14.1.1",
     "lodash-es": "4.17.21",
     "npm-run-all": "4.1.5",
+    "p-limit": "6.1.0",
     "precompress": "12.0.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -61,6 +62,7 @@
     "build:assets": "sh ./build-assets.sh",
     "build:precompress": "precompress --exclude *.br,*.gz,*.ttf,*.woff,*.woff2 --types br dist/ --verbose",
     "build:prettier": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write dist/*.html dist/**/*.html",
+    "lint:typescript": "tsc --noEmit --project tsconfig.json",
     "clean": "rimraf dist/ tmp/",
     "start": "http-server dist/ --brotli"
   }

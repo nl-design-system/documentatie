@@ -6,9 +6,9 @@ import { PageHeader } from '@utrecht/page-header-react/dist/index.mjs';
 import { PageLayout } from '@utrecht/page-layout-react/dist/index.mjs';
 import { Root } from '@utrecht/root-react/dist/index.mjs';
 import type { PropsWithChildren, ReactNode } from 'react';
-import React from 'react';
+import type { PageConfig } from './PageConfig';
 import { resolveUrl } from './resolve-url';
-import { SiteConfig } from './site-config';
+import type { SiteConfig } from './site-config';
 
 const ogLocaleFormat = (lang: string): string => lang.trim().replace(/\W+/, '_');
 
@@ -28,14 +28,7 @@ export interface DocumentationPageProps {
   locale: {
     titleSeparator: string;
   };
-  pageConfig: {
-    lang: string;
-    dir: string;
-    description?: string;
-    pageTitle: string;
-    author?: string;
-    canonicalUrl?: string;
-  };
+  pageConfig: PageConfig;
   siteConfig: SiteConfig;
 }
 
@@ -50,7 +43,7 @@ export const DocumentationPage =
     siteConfig,
     children,
   }: PropsWithChildren<DocumentationPageProps>) => {
-    const PageTitle = ({ children, parts }: PropsWithChildren<{ parts?: string[] }>) => {
+    const PageTitle = ({ children, parts }: PropsWithChildren<{ parts?: string[]; children?: string }>) => {
       const title = Array.isArray(parts) ? parts.join(locale.titleSeparator) : children;
       return (
         <>

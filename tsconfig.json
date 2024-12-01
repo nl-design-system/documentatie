@@ -9,10 +9,11 @@
     "paths": {
       "@docs/*": ["./docs/*"],
       "@site/*": ["./*"],
-      "@theme/*": ["./src/theme/*"]
+      "@theme/*": ["./src/theme/*"],
+      "@docusaurus/*": ["./src/docusaurus-alternative/*"],
+      "@docusaurus/useDocusaurusContext": ["./src/docusaurus-alternative/useDocusaurusContext"]
     }
   },
-  "files": [".docusaurus/registry.mjs", ".docusaurus/routes.js"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
   "exclude": ["**/node_modules/*", ".docusaurus/", "build/", "dist/", "packages/"]
 }
