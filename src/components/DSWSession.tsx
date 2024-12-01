@@ -128,5 +128,3 @@ export const DSWSession = ({
     )}
   </article>
 );
-
-export default DSWSession;

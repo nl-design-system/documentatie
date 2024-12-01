@@ -224,5 +224,3 @@ export const NewsletterSignUp = ({
     </form>
   );
 };
-
-export default NewsletterSignUp;
