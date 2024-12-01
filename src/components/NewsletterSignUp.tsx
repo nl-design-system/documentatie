@@ -1,4 +1,4 @@
-import { useLocation } from '@docusaurus/router';
+// import { useLocation } from '@docusaurus/router';
 import {
   Button,
   ButtonGroup,
@@ -53,10 +53,12 @@ export const NewsletterSignUp = ({
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
   const IS_ENGLISH = language && language.value === '2';
-  const { search } = useLocation();
-  const params = new URLSearchParams(search);
-  const prefillEmail = params.get('prefillEmail');
-  const prefillName = params.get('prefillName');
+  // const { search } = useLocation();
+  // const params = new URLSearchParams(search);
+  // const prefillEmail = params.get('prefillEmail');
+  // const prefillName = params.get('prefillName');
+  const prefillEmail = '';
+  const prefillName = '';
 
   return (
     <form

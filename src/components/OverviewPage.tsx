@@ -1,3 +1,4 @@
+/*
 import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
 // import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import clsx from 'clsx';
@@ -24,12 +25,17 @@ const excludeRecusively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
   }, []);
 
 export const OverviewPage = ({ excludeDocIDs = [], className, ...restProps }: OverviewPageProps) => {
-  return null;
-  const category = useCurrentSidebarCategory();
+  // const category = useCurrentSidebarCategory();
+  const category = { items: [] };
 
   return (
     <div {...restProps} className={clsx('margin-top--lg', className)}>
       <DocCardList items={excludeRecusively(category.items, excludeDocIDs)} />
     </div>
   );
+};
+*/
+
+export const OverviewPage = () => {
+  return <div></div>;
 };
