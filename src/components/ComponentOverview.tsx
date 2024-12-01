@@ -129,6 +129,8 @@ export const ComponentOverview = () => {
             headingLevel: 2,
             expanded: false,
 
+            // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
             body: (
               <>

@@ -49,6 +49,7 @@ export const parseColor = (colorString: string) => {
   // Parse colors such as `hsl(0deg 0% 20%)`
   try {
     color = Color(query);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   } catch (e) {
     color = null;
   }
