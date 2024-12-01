@@ -6,7 +6,6 @@ import DocSidebarItems from '@theme/DocSidebarItems';
 import clsx from 'clsx';
 import { useState } from 'react';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 function useShowAnnouncementBar() {
   const { isActive } = useAnnouncementBar();

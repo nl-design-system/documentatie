@@ -10,7 +10,6 @@ import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
 import { EstafetteBadge } from './EstafetteBadge';
 import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
-import './ComponentOverview.css';
 
 export const ComponentOverview = () => {
   const SEARCH_PARAM = 'filter';

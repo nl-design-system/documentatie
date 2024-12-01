@@ -18,7 +18,6 @@ import {
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import './index.css';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>

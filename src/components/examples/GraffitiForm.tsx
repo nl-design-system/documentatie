@@ -21,7 +21,6 @@ import clsx from 'clsx';
 import { useId } from 'react';
 import type { PropsWithChildren, ReactNode } from 'react';
 import { useForm } from 'react-hook-form';
-import './GraffitiForm.css';
 
 interface VoorbeeldMetFoutenProps {
   noAutoComplete?: string[] | true;

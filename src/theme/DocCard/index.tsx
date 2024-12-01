@@ -5,7 +5,6 @@ import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { PropsWithChildren, ReactElement, ReactNode } from 'react';
-import './styles.css';
 
 function CardLayout({
   href,

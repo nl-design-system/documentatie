@@ -6,7 +6,6 @@ import type { Props } from '@theme/DocSidebarItem/Link';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 export default function DocSidebarItemLink({
   item,

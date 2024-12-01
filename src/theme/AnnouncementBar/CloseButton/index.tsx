@@ -3,7 +3,6 @@ import type { Props } from '@theme/AnnouncementBar/CloseButton';
 import IconClose from '@theme/Icon/Close';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 export default function AnnouncementBarCloseButton(props: Props): ReactElement | null {
   return (

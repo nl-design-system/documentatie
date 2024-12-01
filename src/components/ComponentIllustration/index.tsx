@@ -2,7 +2,6 @@ import { Figure, FigureCaption } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import { toKebabCase } from '../../utils';
-import './ComponentIllustration.css';
 
 interface ComponentIllustrationProps extends HTMLAttributes<HTMLElement> {
   relayStep: string;

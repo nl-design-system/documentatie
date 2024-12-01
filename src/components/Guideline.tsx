@@ -3,7 +3,7 @@ import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import { createContext } from 'react';
-import './Guideline.css';
+
 interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   title?: ReactNode;
   description?: ReactNode;

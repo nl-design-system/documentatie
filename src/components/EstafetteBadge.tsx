@@ -1,7 +1,6 @@
 import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import { toKebabCase } from '../utils';
-import './EstafetteBadge.css';
 
 interface EstafetteBadgeProps {
   state: string;

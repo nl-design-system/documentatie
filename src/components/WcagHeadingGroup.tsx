@@ -1,7 +1,6 @@
 import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import type { PropsWithChildren } from 'react';
 import { InlineHeadingGroup, type InlineHeadingGroupProps } from './InlineHeadingGroup';
-import './WcagHeadingGroup.css';
 
 export interface WcagHeadingGroupProps extends InlineHeadingGroupProps {
   conformanceLevel: string;

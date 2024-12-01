@@ -8,7 +8,6 @@ import DocVersionBadge from '@theme/DocVersionBadge';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import Heading from '@theme/Heading';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): ReactElement {
   return (

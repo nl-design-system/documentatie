@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import ReactPlayer, { type ReactPlayerProps } from 'react-player';
-import './VideoPlayer.css';
 
 export const VideoPlayer = ({
   videoId,

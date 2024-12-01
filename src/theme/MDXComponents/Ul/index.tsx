@@ -1,7 +1,6 @@
 import type { Props } from '@theme/MDXComponents/Ul';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 function transformUlClassName(className?: string): string {
   return clsx(

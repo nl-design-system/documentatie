@@ -7,7 +7,6 @@ import type { ButtonProps } from '@utrecht/component-library-react/dist/Button';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './Header.css';
 
 function CloseButton() {
   const mobileSidebar = useNavbarMobileSidebar();

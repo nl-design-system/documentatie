@@ -15,7 +15,6 @@
 
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import { successCriteriaMap } from './wcag22';
-import './ComponentCriteriaList.css';
 
 /**
  * CriteriaListItemProps defines expected variables for the item to test.

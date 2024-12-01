@@ -5,7 +5,6 @@ import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
 import { ComponentIllustration } from './ComponentIllustration';
 import { EstafetteBadge } from './EstafetteBadge';
-import './ComponentCard.css';
 
 interface ComponentCardProps {
   illustration?: string;

@@ -6,7 +6,6 @@ import type { Props } from '@theme/BlogPostItems';
 import { BadgeList, DataBadge, Heading2, Icon } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 export default function BlogPostItems({ items }: Props): ReactElement {
   return (

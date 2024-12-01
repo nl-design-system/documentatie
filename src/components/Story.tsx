@@ -1,5 +1,4 @@
 import IframeResizer from '@iframe-resizer/react';
-import './Story.css';
 
 export interface StoryProps {
   href: string;

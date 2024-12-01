@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { ArrowDown } from './Icons';
-import './StatusVisual.css';
 
 export const StatusVisual = () => {
   return (

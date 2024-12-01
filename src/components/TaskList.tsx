@@ -2,7 +2,6 @@ import { Heading, type HeadingProps } from '@utrecht/component-library-react/dis
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
 import type { PropsWithChildren, ReactNode } from 'react';
-import './TaskList.css';
 
 export type TaskListProps = object;
 export const TaskList = ({ children }: PropsWithChildren<TaskListProps>) => <ul className="task-list">{children}</ul>;

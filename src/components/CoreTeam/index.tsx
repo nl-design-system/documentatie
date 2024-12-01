@@ -11,7 +11,6 @@ import Rozerin from './Rozerin';
 import Wart from './Wart';
 import Yolijn from './Yolijn';
 import { Card, CardContent, CardGroup } from '../CardGroup';
-import './CoreTeam.css';
 
 const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart, Emma];
 

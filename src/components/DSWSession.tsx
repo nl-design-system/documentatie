@@ -5,7 +5,6 @@ import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import type { Session } from './SessionTable';
 import { VideoPlayer } from './VideoPlayer';
-import './DSWSession.css';
 
 const date = new Date();
 const dateNow = date.toISOString();

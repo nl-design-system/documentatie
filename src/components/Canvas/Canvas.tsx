@@ -11,7 +11,6 @@ import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'r
 import { isValidElement, useEffect, useId, useState } from 'react';
 import { Fragment } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-import './Canvas.css';
 
 export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
 

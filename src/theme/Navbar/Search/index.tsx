@@ -1,7 +1,6 @@
 import type { Props } from '@theme/Navbar/Search';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './Search.css';
 
 export default function NavbarSearch({ children, className, ...props }: Props): ReactElement {
   return (

@@ -13,7 +13,6 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
-import './SessionTable.css';
 
 interface Speaker {
   name: string;

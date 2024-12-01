@@ -3,7 +3,6 @@ import useIsBrowser from '@docusaurus/useIsBrowser';
 import type { Props } from '@theme/ThemedImage';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 export default function ThemedImage(props: Props): ReactElement {
   const isBrowser = useIsBrowser();

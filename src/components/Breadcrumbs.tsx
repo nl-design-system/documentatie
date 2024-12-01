@@ -6,7 +6,6 @@ import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import type { HTMLAttributes } from 'react';
-import './Breadcrumbs.css';
 
 interface BreadcrumbItem {
   label: string;

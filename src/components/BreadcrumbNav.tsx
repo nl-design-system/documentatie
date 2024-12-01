@@ -12,7 +12,6 @@ import {
 import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import { Fragment } from 'react';
-import './Breadcrumbs.css';
 
 export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
   breadcrumbs: {

@@ -2,7 +2,6 @@ import Head from '@docusaurus/Head';
 import { OrderedList, OrderedListItem } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
-import './Bingo.css';
 
 interface BingoProps {
   items: [

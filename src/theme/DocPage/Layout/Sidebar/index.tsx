@@ -5,7 +5,6 @@ import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 import { default as DefaultDocPageLayoutSidebar } from '@theme/DocRoot/Layout/Sidebar';
 import clsx from 'clsx';
 import React, { type ReactNode, useCallback, useState } from 'react';
-import './styles.css';
 
 // Reset sidebar state when sidebar changes
 // Use React key to unmount/remount the children

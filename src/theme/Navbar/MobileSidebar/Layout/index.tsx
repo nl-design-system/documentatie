@@ -3,7 +3,6 @@ import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
 import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 import type { ReactElement } from 'react';
-import './Layout.css';
 
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): ReactElement {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();

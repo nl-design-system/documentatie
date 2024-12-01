@@ -2,7 +2,6 @@ import { translate } from '@docusaurus/Translate';
 import { IconArrowBarToRight } from '@tabler/icons-react';
 import { default as DefaultDocRootLayoutSidebarExpandButton } from '@theme/DocRoot/Layout/Sidebar/ExpandButton';
 import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
-import './styles.css';
 
 type Fn = typeof DefaultDocRootLayoutSidebarExpandButton;
 

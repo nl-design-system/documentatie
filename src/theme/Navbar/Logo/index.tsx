@@ -1,7 +1,6 @@
 import Logo from '@theme/Logo';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './Logo.css';
 
 export default function NavbarLogo(): ReactElement {
   return (

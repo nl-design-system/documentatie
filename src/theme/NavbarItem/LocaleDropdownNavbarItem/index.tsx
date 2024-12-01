@@ -7,7 +7,6 @@ import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 export default function LocaleDropdownNavbarItem({
   mobile,

@@ -1,6 +1,5 @@
 import { Code, ColorSample, NumberData } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import './ContrastRatio.css';
 
 export interface ContrastRatioProps {
   backgroundColor: string;

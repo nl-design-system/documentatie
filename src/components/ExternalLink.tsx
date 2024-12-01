@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import type { AnchorHTMLAttributes } from 'react';
-import './ExternalLink.css';
 
 export const ExternalLink = ({ children, href, className }: AnchorHTMLAttributes<HTMLAnchorElement>) => (
   <a href={href} className={clsx('external-link', className)} target="_blank" rel="noreferrer">

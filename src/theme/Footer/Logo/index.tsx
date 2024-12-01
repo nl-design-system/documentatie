@@ -4,7 +4,6 @@ import type { Props } from '@theme/Footer/Logo';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
-import './styles.css';
 
 function LogoImage({ logo }: Props) {
   const { withBaseUrl } = useBaseUrlUtils();

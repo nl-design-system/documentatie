@@ -16,7 +16,6 @@ import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
 import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
-import './ComponentPage.css';
 
 type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
 type PROJECT_ID =

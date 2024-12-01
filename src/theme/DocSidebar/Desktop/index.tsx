@@ -6,7 +6,6 @@ import Content from '@theme/DocSidebar/Desktop/Content';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { useId } from 'react';
-import './styles.css';
 
 function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden }: Props) {
   const {
