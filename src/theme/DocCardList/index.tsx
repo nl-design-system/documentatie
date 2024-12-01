@@ -2,14 +2,14 @@ import { filterDocCardListItems, useCurrentSidebarCategory } from '@docusaurus/t
 import DocCard from '@theme/DocCard';
 import type { Props } from '@theme/DocCardList';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 function DocCardListForCurrentSidebarCategory({ className }: Props) {
   const category = useCurrentSidebarCategory();
   return <DocCardList items={category.items} className={className} />;
 }
 
-export default function DocCardList(props: Props): React.Element {
+export default function DocCardList(props: Props): ReactElement {
   const { items, className } = props;
 
   if (!items) {

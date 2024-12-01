@@ -1,6 +1,6 @@
 import type { NavbarItemType, Props } from '@theme/NavbarItem';
 import ComponentTypes from '@theme/NavbarItem/ComponentTypes';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 function normalizeComponentType(type: NavbarItemType, props: object) {
   // Backward compatibility: navbar item with no type set
@@ -11,11 +11,12 @@ function normalizeComponentType(type: NavbarItemType, props: object) {
   return type;
 }
 
-export default function NavbarItem({ type, ...props }: Props): React.Element {
+export default function NavbarItem({ type, ...props }: Props): ReactElement {
   const componentType = normalizeComponentType(type, props);
   const NavbarItemComponent = ComponentTypes[componentType];
   if (!NavbarItemComponent) {
     throw new Error(`No NavbarItem component found for type "${type}".`);
   }
+
   return <NavbarItemComponent {...(props as any)} />;
 }

@@ -7,10 +7,10 @@ import DocPaginator from '@theme/DocPaginator';
 import DocVersionBadge from '@theme/DocVersionBadge';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import Heading from '@theme/Heading';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
-function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): React.Element {
+function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): ReactElement {
   return (
     <PageMetadata
       title={categoryGeneratedIndex.title}
@@ -22,7 +22,7 @@ function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props
   );
 }
 
-function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): React.Element {
+function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): ReactElement {
   const category = useCurrentSidebarCategory();
   return (
     <div className="generatedIndexPage">
@@ -48,7 +48,7 @@ function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props)
   );
 }
 
-export default function DocCategoryGeneratedIndexPage(props: Props): React.Element {
+export default function DocCategoryGeneratedIndexPage(props: Props): ReactElement {
   return (
     <>
       <DocCategoryGeneratedIndexPageMetadata {...props} />

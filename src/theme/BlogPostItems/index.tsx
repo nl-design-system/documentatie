@@ -5,10 +5,10 @@ import { IconCalendar, IconUser } from '@tabler/icons-react';
 import type { Props } from '@theme/BlogPostItems';
 import { BadgeList, DataBadge, Heading2, Icon } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
-export default function BlogPostItems({ items }: Props): React.Element {
+export default function BlogPostItems({ items }: Props): ReactElement {
   return (
     <CardGroup appearance="large">
       {items.map(({ content }) => {

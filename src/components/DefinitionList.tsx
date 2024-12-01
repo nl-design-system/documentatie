@@ -1,6 +1,5 @@
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
-import { PropsWithChildren } from 'react';
+import type { HTMLAttributes, PropsWithChildren } from 'react';
 import './DefinitionList.css';
 
 export const DefinitionList = ({ children, className }: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (

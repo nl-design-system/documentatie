@@ -4,7 +4,7 @@ import type { Props } from '@theme/DocItem/Content';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 /**
  Title can be declared inside md content or declared through
@@ -25,7 +25,7 @@ function useSyntheticTitle(): string | null {
   return metadata.title;
 }
 
-export default function DocItemContent({ children }: Props): React.Element {
+export default function DocItemContent({ children }: Props): ReactElement {
   const syntheticTitle = useSyntheticTitle();
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown)}>

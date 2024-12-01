@@ -1,10 +1,10 @@
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import type { Props } from '@theme/DocSidebarItem/Html';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
-export default function DocSidebarItemHtml({ item, level, index }: Props): React.Element {
+export default function DocSidebarItemHtml({ item, level, index }: Props): ReactElement {
   const { value, defaultStyle, className } = item;
   return (
     <li

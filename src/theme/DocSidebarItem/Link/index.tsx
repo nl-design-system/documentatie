@@ -5,7 +5,7 @@ import { isActiveSidebarItem } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocSidebarItem/Link';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
 export default function DocSidebarItemLink({
@@ -15,7 +15,7 @@ export default function DocSidebarItemLink({
   level,
   index: _,
   ...props
-}: Props): React.Element {
+}: Props): ReactElement {
   const { href, label, className, autoAddBaseUrl } = item;
   const isActive = isActiveSidebarItem(item, activePath);
   const isInternalLink = isInternalUrl(href);

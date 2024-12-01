@@ -4,7 +4,8 @@ import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 import clsx from 'clsx';
-import React, { Fragment, HTMLAttributes } from 'react';
+import { Fragment } from 'react';
+import type { HTMLAttributes } from 'react';
 import './Breadcrumbs.css';
 
 interface BreadcrumbItem {

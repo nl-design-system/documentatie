@@ -1,6 +1,6 @@
 import { Link } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLAttributes, PropsWithChildren } from 'react';
+import type { HTMLAttributes, PropsWithChildren } from 'react';
 import './CardGroup.css';
 
 type Appearance = 'small' | 'medium' | 'large' | 'background';

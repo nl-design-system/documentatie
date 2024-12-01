@@ -1,6 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
-import { AnchorHTMLAttributes } from 'react';
+import type { AnchorHTMLAttributes } from 'react';
 import './ExternalLink.css';
 
 export const ExternalLink = ({ children, href, className }: AnchorHTMLAttributes<HTMLAnchorElement>) => (

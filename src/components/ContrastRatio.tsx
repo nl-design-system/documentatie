@@ -1,6 +1,5 @@
 import { Code, ColorSample, NumberData } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
 import './ContrastRatio.css';
 
 export interface ContrastRatioProps {
@@ -15,8 +14,10 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
       <dt className="contrast-ratio__result-key">Contrast ratio:</dt>
       <dd className="contrast-ratio__result-value">
         <NumberData>
-          {new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' }).format(contrastRatio)} ÷
-          1
+          {new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' } as unknown).format(
+            contrastRatio,
+          )}
+          {' ÷ 1'}
         </NumberData>
       </dd>
     </div>

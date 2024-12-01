@@ -9,6 +9,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { createPortal } from 'react-dom';
 import translations from '@theme/SearchTranslations';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
+import type { UseDocSearchKeyboardEventsProps } from '@docsearch/react';
 
 function useDocSearchKeyboardEvents({
   isOpen,
@@ -67,7 +68,7 @@ function mergeFacetFilters(f1, f2) {
   const normalize = (f) => (typeof f === 'string' ? [f] : f);
   return [...normalize(f1), ...normalize(f2)];
 }
-function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
+function DocSearch({ contextualSearch, externalUrlRegex, ...props }: DocSearchProps) {
   const { siteMetadata } = useDocusaurusContext();
   const processSearchResultUrl = useSearchResultUrlProcessor();
   const contextualSearchFacetFilters = useAlgoliaContextualFacetFilters();
@@ -145,9 +146,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         })),
   ).current;
   const resultsFooterComponent = useMemo(
-    () =>
-      // eslint-disable-next-line react/no-unstable-nested-components
-      (footerProps) => <ResultsFooter {...footerProps} onClose={onClose} />,
+    () => (footerProps) => <ResultsFooter {...footerProps} onClose={onClose} />,
     [onClose],
   );
   const transformSearchClient = useCallback(
@@ -181,8 +180,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
         onMouseOver={importDocSearchModalIfNeeded}
         onClick={onOpen}
         ref={searchButtonRef}
-        translations={translations.button}
-        aria-label="Start met zoeken"
+        aria-label={translations.button.buttonAriaLabel}
         className="navbar__item navbar__item--show-on-mobile"
       >
         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +213,16 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
     </>
   );
 }
+
+interface DocSearchProps {
+  [index: string]: any;
+  contextualSearch: any;
+  externalUrlRegex: any;
+}
+
+const isAlgoliaConfig = (arg: unknown): arg is DocSearchProps => !!arg && typeof arg === 'object';
+
 export default function SearchBar() {
   const { siteConfig } = useDocusaurusContext();
-  return <DocSearch {...siteConfig.themeConfig.algolia} />;
+  return isAlgoliaConfig(siteConfig.themeConfig.algolia) ? <DocSearch {...siteConfig.themeConfig.algolia} /> : null;
 }

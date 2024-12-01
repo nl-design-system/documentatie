@@ -10,7 +10,6 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();

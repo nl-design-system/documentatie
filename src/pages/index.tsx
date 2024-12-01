@@ -10,7 +10,6 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
 import HomepageHero from '../components/HomepageHero';
 import HomepageUpdates from '../components/HomepageUpdates';

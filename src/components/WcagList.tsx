@@ -1,7 +1,6 @@
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
-import React from 'react';
 import { successCriteriaMap } from './wcag22';
 import './TaskList.css';
 

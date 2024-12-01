@@ -3,7 +3,7 @@ import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import type { Props } from '@theme/Footer/Logo';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
 function LogoImage({ logo }: Props) {
@@ -24,7 +24,7 @@ function LogoImage({ logo }: Props) {
   );
 }
 
-export default function FooterLogo({ logo }: Props): React.Element {
+export default function FooterLogo({ logo }: Props): ReactElement {
   return logo.href ? (
     <Link href={logo.href} className="footerLogoLink" target={logo.target}>
       <LogoImage logo={logo} />

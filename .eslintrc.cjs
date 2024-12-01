@@ -61,6 +61,9 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       plugins: ['@typescript-eslint', 'import'],
+      rules: {
+        'no-undef': 'off',
+      },
     },
   ],
 };

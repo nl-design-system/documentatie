@@ -3,10 +3,10 @@ import { useThemeConfig } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
 import { IconChevronLeft, IconX } from '@tabler/icons-react';
-import { ButtonProps } from '@utrecht/component-library-react/dist/Button';
+import type { ButtonProps } from '@utrecht/component-library-react/dist/Button';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './Header.css';
 
 function CloseButton() {
@@ -35,7 +35,7 @@ function SecondaryMenuBackButton(props: ButtonProps) {
   );
 }
 
-export default function NavbarMobileSidebarHeader(): React.Element {
+export default function NavbarMobileSidebarHeader(): ReactElement {
   const isPrimaryMenuEmpty = useThemeConfig().navbar.items.length === 0;
   const { hide, shown } = useNavbarSecondaryMenu();
 
