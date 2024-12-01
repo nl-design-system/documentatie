@@ -18,7 +18,8 @@ import {
   Textbox,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { PropsWithChildren, ReactNode, useId } from 'react';
+import { useId } from 'react';
+import type { PropsWithChildren, ReactNode } from 'react';
 import { useForm } from 'react-hook-form';
 import './GraffitiForm.css';
 

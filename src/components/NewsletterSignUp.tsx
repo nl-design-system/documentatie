@@ -13,7 +13,7 @@ import {
   Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -28,7 +28,7 @@ interface NewsletterSignUpProps {
   thanksPage: string;
   workAreasId: string;
   privacyPolicyId: string;
-  language: object;
+  language?: { value: string; id: string };
   submitText: string;
 }
 
@@ -43,7 +43,7 @@ export const NewsletterSignUp = ({
   interests = [],
   workAreasId = '',
   privacyPolicyId = '',
-  language = {},
+  language,
   submitText = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {

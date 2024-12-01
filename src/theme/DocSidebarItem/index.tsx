@@ -2,9 +2,9 @@ import type { Props } from '@theme/DocSidebarItem';
 import DocSidebarItemCategory from '@theme/DocSidebarItem/Category';
 import DocSidebarItemHtml from '@theme/DocSidebarItem/Html';
 import DocSidebarItemLink from '@theme/DocSidebarItem/Link';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-export default function DocSidebarItem({ item, ...props }: Props): React.Element | null {
+export default function DocSidebarItem({ item, ...props }: Props): ReactElement | null {
   switch (item.type) {
     case 'category':
       return <DocSidebarItemCategory item={item} {...props} />;

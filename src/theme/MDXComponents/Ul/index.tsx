@@ -1,6 +1,6 @@
 import type { Props } from '@theme/MDXComponents/Ul';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
 function transformUlClassName(className?: string): string {
@@ -13,6 +13,6 @@ function transformUlClassName(className?: string): string {
   );
 }
 
-export default function MDXUl(props: Props): React.Element {
+export default function MDXUl(props: Props): ReactElement {
   return <ul {...props} className={transformUlClassName(props.className)} />;
 }

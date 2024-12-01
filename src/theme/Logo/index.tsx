@@ -5,7 +5,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import type { Props } from '@theme/Logo';
 import ThemedImage from '@theme/ThemedImage';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt: string; imageClassName?: string }) {
   const sources = {
@@ -28,7 +28,7 @@ function LogoThemedImage({ logo, alt, imageClassName }: { logo: NavbarLogo; alt:
   return imageClassName ? <div className={imageClassName}>{themedImage}</div> : themedImage;
 }
 
-export default function Logo(props: Props): React.Element {
+export default function Logo(props: Props): ReactElement {
   const {
     siteConfig: { title },
   } = useDocusaurusContext();

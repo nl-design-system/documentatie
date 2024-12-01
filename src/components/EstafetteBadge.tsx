@@ -1,6 +1,5 @@
 import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
 import { toKebabCase } from '../utils';
 import './EstafetteBadge.css';
 

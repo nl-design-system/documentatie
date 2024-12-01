@@ -4,7 +4,7 @@ import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React, { PropsWithChildren, type ReactNode } from 'react';
+import type { PropsWithChildren, ReactElement, ReactNode } from 'react';
 import './styles.css';
 
 function CardLayout({
@@ -38,7 +38,7 @@ function CardLayout({
   );
 }
 
-function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Element | null {
+function CardCategory({ item }: { item: PropSidebarItemCategory }): ReactElement | null {
   return (
     <CardLayout title={item.label} description={item.description}>
       <UnorderedList>
@@ -62,19 +62,12 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Elemen
   );
 }
 
-function CardLink({ item }: { item: PropSidebarItemLink }): React.Element {
+function CardLink({ item }: { item: PropSidebarItemLink }): ReactElement {
   const doc = useDocById(item.docId);
-  return (
-    <CardLayout
-      linkDescription={item.label}
-      href={item.href}
-      title={item.label}
-      description={item.description ?? doc?.description}
-    />
-  );
+  return <CardLayout href={item.href} title={item.label} description={item.description ?? doc?.description} />;
 }
 
-export default function DocCard({ item }: Props): React.Element {
+export default function DocCard({ item }: Props): ReactElement {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;

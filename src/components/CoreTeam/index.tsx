@@ -1,6 +1,5 @@
 import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
 import Astrid from './Astrid';
 import Emma from './Emma';
 import Hidde from './Hidde';

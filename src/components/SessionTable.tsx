@@ -12,7 +12,7 @@ import {
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLTableAttributes } from 'react';
+import type { HTMLAttributes } from 'react';
 import './SessionTable.css';
 
 interface Speaker {
@@ -28,9 +28,10 @@ export interface Session {
   sessionLink?: string;
   icalLink?: string;
   language: { abbr: string; description: string };
+  videoId?: string;
 }
 
-interface SessionTableProps extends HTMLTableAttributes<HTMLTableElement> {
+interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
   lang?: string;
   sessions: Session[];
 }

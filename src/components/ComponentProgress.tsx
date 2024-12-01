@@ -1,5 +1,4 @@
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import React from 'react';
 
 interface ComponentProgressProps {
   checked: number;

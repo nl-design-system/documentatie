@@ -6,7 +6,7 @@ import IconLanguage from '@theme/Icon/Language';
 import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
-import React from 'react';
+import type { ReactElement } from 'react';
 import './styles.css';
 
 export default function LocaleDropdownNavbarItem({
@@ -14,7 +14,7 @@ export default function LocaleDropdownNavbarItem({
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): React.Element {
+}: Props): ReactElement {
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
@@ -29,8 +29,8 @@ export default function LocaleDropdownNavbarItem({
     // preserve ?search#hash suffix on locale switches
     const to = `${baseTo}${search}${hash}`;
     return {
-      label: localeConfigs[locale]!.label,
-      lang: localeConfigs[locale]!.htmlLang,
+      label: localeConfigs[locale].label,
+      lang: localeConfigs[locale].htmlLang,
       to,
       target: '_self',
       autoAddBaseUrl: false,
@@ -55,7 +55,7 @@ export default function LocaleDropdownNavbarItem({
         id: 'theme.navbar.mobileLanguageDropdown.label',
         description: 'The label for the mobile language switcher dropdown',
       })
-    : localeConfigs[currentLocale]!.label;
+    : localeConfigs[currentLocale].label;
 
   return (
     <DropdownNavbarItem

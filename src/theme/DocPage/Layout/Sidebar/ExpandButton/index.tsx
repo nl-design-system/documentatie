@@ -1,11 +1,12 @@
 import { translate } from '@docusaurus/Translate';
 import { IconArrowBarToRight } from '@tabler/icons-react';
-import type { Props } from '@theme/DocPage/Layout/Sidebar/ExpandButton';
+import { default as DefaultDocRootLayoutSidebarExpandButton } from '@theme/DocRoot/Layout/Sidebar/ExpandButton';
 import { LinkButton } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 import './styles.css';
 
-export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Props): React.Element {
+type Fn = typeof DefaultDocRootLayoutSidebarExpandButton;
+
+const DocPageLayoutSidebarExpandButton: Fn = function DocPageLayoutSidebarExpandButton({ toggleSidebar }) {
   return (
     <LinkButton
       className="expandButton"
@@ -27,4 +28,6 @@ export default function DocPageLayoutSidebarExpandButton({ toggleSidebar }: Prop
       <IconArrowBarToRight className="expandButtonIcon" />
     </LinkButton>
   );
-}
+};
+
+export default DocPageLayoutSidebarExpandButton;

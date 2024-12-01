@@ -9,11 +9,12 @@ import {
   Icon,
   BreadcrumbNav as UtrechtBreadcrumbNav,
 } from '@utrecht/component-library-react/dist/css-module';
+import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import './Breadcrumbs.css';
 
-export interface BreadcrumbNavProps {
+export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
   breadcrumbs: {
     label: string;
     href: string;

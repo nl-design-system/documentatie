@@ -1,7 +1,9 @@
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { Canvas, CanvasContainerType } from '@site/src/components/Canvas/Canvas';
+import { Canvas } from '@site/src/components/Canvas/Canvas';
+import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
 import { ContrastRatio } from '@site/src/components/ContrastRatio';
+import { FormFieldTextbox } from '@site/src/components/FormFieldTextbox';
 import { Guideline } from '@site/src/components/Guideline';
 import Layout from '@theme/Layout';
 import {
@@ -14,9 +16,8 @@ import {
   Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import { FormFieldTextbox } from '/src/components/FormFieldTextbox';
 import Color from 'color';
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './index.css';
 
 const ExampleIcon = () => (
@@ -239,13 +240,7 @@ const ContrastPage = () => {
                 <Paragraph>Gebruik deze kleuren voor bijvoorbeeld:</Paragraph>
                 <div>
                   {dos.map(({ container, content, example, positive }, index) => (
-                    <Guideline
-                      key={index}
-                      appearance={positive ? 'do' : 'dont'}
-                      title={content}
-                      displayCode={false}
-                      figure
-                    >
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
                       <Canvas
                         language="html"
                         code={null}
@@ -278,7 +273,7 @@ const ContrastPage = () => {
                 </Paragraph>{' '}
                 <div>
                   {donts.map(({ container, content, example, positive }, index) => (
-                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} displayCode={false}>
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
                       <Canvas
                         language="html"
                         code={null}

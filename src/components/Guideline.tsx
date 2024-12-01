@@ -1,16 +1,21 @@
 import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { createContext, HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import { createContext } from 'react';
 import './Guideline.css';
-interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
-  title?: string;
+interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
+  title?: ReactNode;
   description?: ReactNode;
   appearance: 'do' | 'dont';
   figure?: boolean;
 }
+interface CodeExampleContextType {
+  title?: ReactNode;
+  type?: string;
+}
 
-export const CodeExampleContext = createContext({});
+export const CodeExampleContext = createContext<CodeExampleContextType>({});
 
 export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {

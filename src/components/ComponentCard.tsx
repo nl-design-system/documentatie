@@ -1,7 +1,7 @@
 import Link from '@docusaurus/Link';
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
 import { ComponentIllustration } from './ComponentIllustration';
 import { EstafetteBadge } from './EstafetteBadge';

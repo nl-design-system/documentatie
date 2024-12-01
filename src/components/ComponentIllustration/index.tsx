@@ -1,6 +1,6 @@
 import { Figure, FigureCaption } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
+import type { HTMLAttributes } from 'react';
 import { toKebabCase } from '../../utils';
 import './ComponentIllustration.css';
 

@@ -9,7 +9,6 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React from 'react';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
 import { ComponentProgress } from './ComponentProgress';
@@ -77,7 +76,13 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
             <>
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
-                  <TaskListItem checked={checked} title={name} key={id} description={getRelayBoardDescription(id)} />
+                  <TaskListItem
+                    headingLevel={headingLevel + 1}
+                    checked={checked}
+                    title={name}
+                    key={id}
+                    description={getRelayBoardDescription(id)}
+                  />
                 ))}
               </TaskList>
               <Paragraph>

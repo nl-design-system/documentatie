@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link';
 import { IconChevronRight } from '@tabler/icons-react';
 import { Heading1, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import './HomepageHero.css';
 
 interface HomepageHeroProps {

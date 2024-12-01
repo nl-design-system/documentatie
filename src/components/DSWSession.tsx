@@ -2,8 +2,8 @@ import Link from '@docusaurus/Link';
 import { IconCalendarEvent, IconChevronRight } from '@tabler/icons-react';
 import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
-import { Session } from './SessionTable';
+import type { PropsWithChildren } from 'react';
+import type { Session } from './SessionTable';
 import { VideoPlayer } from './VideoPlayer';
 import './DSWSession.css';
 

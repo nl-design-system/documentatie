@@ -1,8 +1,8 @@
 import { useLocation } from '@docusaurus/router';
+import DocSidebar from '@docusaurus/theme-classic/src/theme/DocSidebar';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useDocsSidebar } from '@docusaurus/theme-common/internal';
-import type { Props } from '@theme/DocPage/Layout/Sidebar';
-import DocSidebar from '@theme/DocSidebar';
+import { default as DefaultDocPageLayoutSidebar } from '@theme/DocRoot/Layout/Sidebar';
 import clsx from 'clsx';
 import React, { type ReactNode, useCallback, useState } from 'react';
 import './styles.css';
@@ -15,11 +15,13 @@ function ResetOnSidebarChange({ children }: { children: ReactNode }) {
   return <React.Fragment key={sidebar?.name ?? 'noSidebar'}>{children}</React.Fragment>;
 }
 
-export default function DocPageLayoutSidebar({
+type Fn = typeof DefaultDocPageLayoutSidebar;
+
+const DocPageLayoutSidebar: Fn = function DocPageLayoutSidebar({
   sidebar,
   hiddenSidebarContainer,
   setHiddenSidebarContainer,
-}: Props): React.Element {
+}) {
   const { pathname } = useLocation();
 
   const [hiddenSidebar, setHiddenSidebar] = useState(false);
@@ -43,4 +45,6 @@ export default function DocPageLayoutSidebar({
       </ResetOnSidebarChange>
     </aside>
   );
-}
+};
+
+export default DocPageLayoutSidebar;

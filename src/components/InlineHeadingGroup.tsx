@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { type HTMLAttributes, type PropsWithChildren, type ReactNode } from 'react';
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './InlineHeadingGroup.css';
 
 export interface InlineHeadingGroupProps extends HTMLAttributes<HTMLElement> {
