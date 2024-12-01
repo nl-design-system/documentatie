@@ -1,5 +1,5 @@
 import { Link } from '@site/src/components/Link';
-import { BlogPostProvider } from '@docusaurus/theme-common/internal';
+import { BlogPostProvider } from '@docusaurus/plugin-content-blog/client';
 import { Card, CardContent, CardGroup } from '@site/src/components/CardGroup';
 import { IconCalendar, IconUser } from '@tabler/icons-react';
 import type { Props } from '@theme/BlogPostItems';

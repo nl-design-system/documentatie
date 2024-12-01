@@ -1,5 +1,5 @@
 import { PageMetadata } from '@docusaurus/theme-common';
-import { useBlogPost } from '@docusaurus/theme-common/internal';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import type { ReactElement } from 'react';
 
 export default function BlogPostPageMetadata(): ReactElement {

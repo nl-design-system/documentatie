@@ -1,4 +1,4 @@
-import { DocSidebarItemsExpandedStateProvider } from '@docusaurus/theme-common/internal';
+import { DocSidebarItemsExpandedStateProvider } from '@docusaurus/plugin-content-docs/client';
 import DocSidebarItem from '@theme/DocSidebarItem';
 import type { Props } from '@theme/DocSidebarItems';
 import { memo } from 'react';

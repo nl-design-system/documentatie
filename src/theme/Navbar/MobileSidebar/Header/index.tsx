@@ -1,7 +1,6 @@
 import { translate } from '@docusaurus/Translate';
 import { useThemeConfig } from '@docusaurus/theme-common';
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
-import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
+import { useNavbarMobileSidebar, useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
 import { IconChevronLeft, IconX } from '@tabler/icons-react';
 import type { ButtonProps } from '@utrecht/component-library-react/dist/Button';
 import { Button } from '@utrecht/component-library-react/dist/css-module';

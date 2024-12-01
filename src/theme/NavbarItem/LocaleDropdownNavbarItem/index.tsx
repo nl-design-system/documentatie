@@ -1,6 +1,6 @@
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
-import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
+import { useAlternatePageUtils } from '@docusaurus/plugin-content-docs/client';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import IconLanguage from '@theme/Icon/Language';
 import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';

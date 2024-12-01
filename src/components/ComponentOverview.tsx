@@ -1,7 +1,7 @@
 import type { PropSidebarItem, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
-import { useDocById } from '@docusaurus/theme-common/internal';
+import { useDocById } from '@docusaurus/plugin-content-docs/client';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { AccordionProvider, Fieldset, FormToggle, Paragraph } from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';

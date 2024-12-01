@@ -3,7 +3,7 @@ import { useActiveDocContext, useVersions } from '@docusaurus/plugin-content-doc
 import type { GlobalVersion } from '@docusaurus/plugin-content-docs/client';
 import { useLocation } from '@docusaurus/router';
 import { useDocsPreferredVersion } from '@docusaurus/theme-common';
-import { useDocsVersionCandidates } from '@docusaurus/theme-common/internal';
+import { useDocsVersionCandidates } from '@docusaurus/plugin-content-docs/client';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
 import type { Props } from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
