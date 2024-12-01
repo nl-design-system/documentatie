@@ -57,7 +57,7 @@
   },
   "scripts": {
     "build-after-docusaurus": "pnpm run clean && pnpm run build:website && pnpm run build:assets && pnpm run build:prettier && pnpm run build:precompress",
-    "build:website": "tsx --import packages/website-v3/src/register-loader.mjs src/build.tsx",
+    "build:website": "node --import ./src/register-loader.mjs src/build.tsx",
     "build:assets": "sh ./build-assets.sh",
     "build:precompress": "precompress --exclude *.br,*.gz,*.ttf,*.woff,*.woff2 --types br dist/ --verbose",
     "build:prettier": "prettier --print-width=1048576 --tab-width=1 --ignore-path=/dev/null --write dist/*.html dist/**/*.html",

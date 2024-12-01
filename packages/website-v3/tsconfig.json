@@ -1,17 +1,18 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "../../",
     "rootDir": "../../",
-    "jsx": "react-jsx",
-    "paths": {
-      "@docusaurus/*": ["./src/docusaurus-alternative/*"],
-      "@docusaurus/useDocusaurusContext": ["./src/docusaurus-alternative/useDocusaurusContext"],
-      "@site/*": ["./*"],
-      "/src/*": ["./src/*"],
-      "@/docs/*": ["./docs/*"]
-    }
+    "jsx": "react-jsx"
+    // "paths": {
+    //   "@docusaurus/*": ["./src/docusaurus-alternative/*"],
+    //   "@docusaurus/useDocusaurusContext": ["./src/docusaurus-alternative/useDocusaurusContext"],
+    //   "@docusaurus/ComponentCreator": ["./src/docusaurus-alternative/ComponentCreator"],
+    //   "@site/*": ["./*"],
+    //   "/src/*": ["./src/*"],
+    //   "@/docs/*": ["./docs/*"]
+    // }
   },
+  "references": [{ "path": "../../tsconfig.build.json" }],
   "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "**/*.md", "*.ts"],
   "exclude": ["**/node_modules/*"]
 }

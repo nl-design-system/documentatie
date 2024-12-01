@@ -12,6 +12,7 @@
       "@theme/*": ["./src/theme/*"]
     }
   },
+  "files": [".docusaurus/registry.mjs", ".docusaurus/routes.js"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
-  "exclude": ["**/node_modules/*"]
+  "exclude": ["**/node_modules/*", ".docusaurus/", "build/", "dist/", "packages/"]
 }

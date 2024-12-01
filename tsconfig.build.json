@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist/"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
+  "exclude": ["**/node_modules/*", ".docusaurus/", "build/", "dist/", "packages/"]
+}
