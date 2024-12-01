@@ -5,7 +5,7 @@ import {
   findFirstSidebarItemLink,
   isActiveSidebarItem,
   useDocSidebarItemsExpandedState,
-} from '@docusaurus/theme-common/internal';
+} from '@docusaurus/plugin-content-docs/client';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import type { Props } from '@theme/DocSidebarItem/Category';

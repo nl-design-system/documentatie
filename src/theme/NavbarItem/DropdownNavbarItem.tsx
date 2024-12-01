@@ -1,5 +1,5 @@
 import { Collapsible, isRegexpStringMatch, useCollapsible } from '@docusaurus/theme-common';
-import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal';
+import { isSamePath, useLocalPathname } from '@docusaurus/plugin-content-docs/client';
 import NavbarItem, { type LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DropdownNavbarItem';
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';

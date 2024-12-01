@@ -1,7 +1,7 @@
 import { Link } from '@site/src/components/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { ThemeClassNames } from '@docusaurus/theme-common';
-import { isActiveSidebarItem } from '@docusaurus/theme-common/internal';
+import { isActiveSidebarItem } from '@docusaurus/plugin-content-docs/client';
 import type { Props } from '@theme/DocSidebarItem/Link';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import clsx from 'clsx';

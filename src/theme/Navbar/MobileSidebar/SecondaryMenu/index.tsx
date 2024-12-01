@@ -1,4 +1,4 @@
-import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
+import { useNavbarSecondaryMenu } from '@docusaurus/plugin-content-docs/client';
 import type { ReactElement } from 'react';
 
 // The secondary menu slides from the right and shows contextual information

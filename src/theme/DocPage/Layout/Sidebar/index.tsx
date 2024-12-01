@@ -1,7 +1,7 @@
 import { useLocation } from '@docusaurus/router';
 import DocSidebar from '@docusaurus/theme-classic/src/theme/DocSidebar';
 import { ThemeClassNames } from '@docusaurus/theme-common';
-import { useDocsSidebar } from '@docusaurus/theme-common/internal';
+import { useDocsSidebar } from '@docusaurus/plugin-content-docs/client';
 import { default as DefaultDocPageLayoutSidebar } from '@theme/DocRoot/Layout/Sidebar';
 import clsx from 'clsx';
 import React, { type ReactNode, useCallback, useState } from 'react';

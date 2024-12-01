@@ -1,6 +1,6 @@
 import type { BlogSidebar } from '@docusaurus/plugin-content-blog';
 import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
-import { BlogPostProvider, useBlogPost } from '@docusaurus/theme-common/internal';
+import { BlogPostProvider, useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import BlogPostItem from '@theme/BlogPostItem';
 import type { Props } from '@theme/BlogPostPage';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
