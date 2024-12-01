@@ -8,7 +8,7 @@ description: Wat is de Heartbeat?
 slug: /events/heartbeat
 ---
 
-import DocusaurusLink from "@docusaurus/Link";
+import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
 
@@ -19,17 +19,14 @@ In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de
 Deze sessies zijn publiek toegankelijk.
 
 <ActionGroup>
-  <DocusaurusLink
-    href="/events/heartbeat/aanmelden"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
+  <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action">
     {"Meld je aan"}
     <IconChevronRight />
-  </DocusaurusLink>
-  <DocusaurusLink href="/events/heartbeat/videos" className="utrecht-button-link utrecht-button-link--secondary-action">
+  </ButtonLink>
+  <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action">
     {"Kijk de Heartbeat terug"}
     <IconChevronRight />
-  </DocusaurusLink>
+  </ButtonLink>
 </ActionGroup>
 
 ## Planning

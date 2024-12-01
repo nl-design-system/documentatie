@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';

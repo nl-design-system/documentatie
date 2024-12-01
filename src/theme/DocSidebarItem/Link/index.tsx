@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { isActiveSidebarItem } from '@docusaurus/theme-common/internal';

@@ -8,7 +8,7 @@ description: Wat is Design Open Hour?
 slug: /events/design-open-hour
 ---
 
-import DocusaurusLink from "@docusaurus/Link";
+import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
 
@@ -25,13 +25,10 @@ In principe is er vooraf geen agenda. Deze stellen we aan het begin gezamenlijk 
 Voel je niet verplicht om elke keer aan te sluiten. Kan je er een keer niet bij zijn? Geen probleem. Design Open Hours worden echter, in tegenstelling tot de [Heartbeat](../heartbeat/heartbeat), niet opgenomen dus terugkijken met een bak popcorn zit er niet in.
 
 <ActionGroup>
-  <DocusaurusLink
-    href="/events/design-open-hour/aanmelden"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
+  <ButtonLink href="/events/design-open-hour/aanmelden" appearance="primary-action">
     {"Meld je aan"}
     <IconChevronRight />
-  </DocusaurusLink>
+  </ButtonLink>
 </ActionGroup>
 
 ## Ervaringen
@@ -59,20 +56,14 @@ De Design Open Hour vindt plaats in het [#nl-design-system-designers](https://co
 Door je aan te melden kunnen wij je op de hoogte houden van Design Open Hours. Je ontvangt dan ook direct een kalenderbestandje, zodat je de Design Open Hour makkelijk aan je agenda kan toevoegen.
 
 <ActionGroup>
-  <DocusaurusLink
-    href="/events/design-open-hour/aanmelden"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
+  <ButtonLink href="/events/design-open-hour/aanmelden" appearance="primary-action">
     {"Meld je aan"}
     <IconChevronRight />
-  </DocusaurusLink>
-  <DocusaurusLink
-    href="https://praatmee.codefor.nl/"
-    className="utrecht-button-link utrecht-button-link--secondary-action"
-  >
+  </ButtonLink>
+  <ButtonLink href="https://praatmee.codefor.nl/" appearance="secondary-action">
     {"Doe mee op Slack"}
     <IconChevronRight />
-  </DocusaurusLink>
+  </ButtonLink>
 </ActionGroup>
 
 ## Vragen of ideeën

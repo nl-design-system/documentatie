@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Bingo } from '@site/src/components/Bingo';
 import Layout from '@theme/Layout';
