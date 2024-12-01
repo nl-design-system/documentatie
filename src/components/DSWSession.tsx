@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { IconCalendarEvent, IconChevronRight } from '@tabler/icons-react';
 import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';

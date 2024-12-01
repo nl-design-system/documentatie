@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { translate } from '@docusaurus/Translate';
 import { Collapsible, ThemeClassNames, useCollapsible, usePrevious, useThemeConfig } from '@docusaurus/theme-common';
 import {

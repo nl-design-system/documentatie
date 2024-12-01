@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';

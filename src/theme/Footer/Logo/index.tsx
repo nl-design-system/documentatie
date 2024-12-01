@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import type { Props } from '@theme/Footer/Logo';
 import ThemedImage from '@theme/ThemedImage';

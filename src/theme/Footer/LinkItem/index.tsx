@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import type { Props } from '@theme/Footer/LinkItem';
 import clsx from 'clsx';

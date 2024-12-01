@@ -9,7 +9,7 @@ slug: /events/design-systems-week-2024/en
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 ---
 
-import DocusaurusLink from "@docusaurus/Link";
+import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
@@ -24,13 +24,10 @@ import { ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-librar
 </Paragraph>
 
 <ActionGroup>
-  <DocusaurusLink
-    href="/events/design-systems-week-2024/en/program"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
+  <ButtonLink href="/events/design-systems-week-2024/en/program" appearance="primary-action">
     {"Watch the videos"}
     <IconChevronRight />
-  </DocusaurusLink>
+  </ButtonLink>
 </ActionGroup>
 
 ---

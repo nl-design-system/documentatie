@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { type NavbarLogo, useThemeConfig } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import Head from '@docusaurus/Head';
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { useHistory } from '@docusaurus/router';
 import { isRegexpStringMatch, useSearchLinkCreator } from '@docusaurus/theme-common';
 import { useAlgoliaContextualFacetFilters, useSearchResultUrlProcessor } from '@docusaurus/theme-search-algolia/client';

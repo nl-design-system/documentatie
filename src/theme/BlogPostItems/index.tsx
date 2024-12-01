@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { BlogPostProvider } from '@docusaurus/theme-common/internal';
 import { Card, CardContent, CardGroup } from '@site/src/components/CardGroup';
 import { IconCalendar, IconUser } from '@tabler/icons-react';
