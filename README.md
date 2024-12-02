@@ -117,7 +117,7 @@ import MyMarkdownPartial from "@nl-design-system-unstable/documentation/wcag/_my
 
 ### Blog posts toevoegen
 
-Je moet de juiste metadata toevoegen bij een blog post, om het goed te laten werken. Een nieuwe blogpost maken kun je waarschijnlijk het makkelijst doen door een kopie te maken van de nieuwste blog post, en die aan te passen.
+Je moet de juiste metadata toevoegen bij een blog post, om het goed te laten werken. Een nieuwe blogpost maken kun je waarschijnlijk het makkelijkst doen door een kopie te maken van de nieuwste blog post, en die aan te passen.
 
 ### HTML gebruiken in Markdown
 
