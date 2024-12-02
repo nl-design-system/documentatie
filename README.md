@@ -75,3 +75,83 @@ Gebaseerd op de blog post van Docusaurus [Upgrading frontend dependencies with c
 Voeg het label `visual regression test` toe aan je pull request om Argos CI aan het werk te zetten. We hebben 5,000 screenshots per maand, verspil geen screenshots als je pull request nog niet klaar is.
 
 [![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/nl-design-system-ci/nldesignsystem.nl/reference)
+
+## Documentatie toevoegen
+
+We schrijven documentatie waar mogelijk in herbruikbare Markdown-bestanden. Voor pagina's waar we meerdere Markdown-bestanden samenvoegen, of gebruik maken van HTML-structuren gebruiken we MDX-formaat, een combinatie tussen JavaScript met React-componenten en Markdown. Een heel beperkt aantal pagina's, die niet bedoeld zijn om herbruikbaar te zijn, maken we de pagina met TypeScript en React.
+
+De documentatie kun je vinden in deze drie mappen:
+
+- `docs/`: deze informatie is publiek beschikbaar in een npm package. Je die naam van deze npm-package gebruiken om te importeren, vanuit `@nl-design-system-unstable/documentation`. Als je een `.md` of `.mdx` bestand maakt, dan wordt die automatisch opgenomen in de website, tenzij je de filename begint met een underscore. Dat noemen we intern "Markdown partials": `_my-markdown-partial.md`.
+- `blog/`: deze blog posts. Deze Markdown files worden automatisch herkend door een Docusaurus plugin. Je vindt documentatie bij: [plugin-content-blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+- `src/pages/`: hier staan bijzondere pagina's, zoals de homepage en de contrast ratio checker.
+
+### Documentatie-pagina toevoegen
+
+Als je een nieuwe pagina wilt toevoegen dan kun je een Markdown of MDX-bestand aanmaken in `docs/`. In principe is de URL-structuur van de website hetzelfde als de URL-structuur. Bijvoorbeeld, een pagina op `https://nldesignsystem.nl/wcag/` staat in `docs/wcag/`.
+
+Je kunt de automatische URL aanpassen naar een zelf gekozen URL, via de Markdown frontmatter. Bijvoorbeeld, met de volgende code komt `docs/components/button/index.mdx` terecht op `https://nldesignsystem.nl/button`:
+
+```mdx
+---
+title: Button
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Button
+pagination_label: Button
+description: Biedt de mogelijkheid om een actie uit te voeren.
+slug: /button
+---
+
+# Button
+```
+
+### Documentatie hergebruiken
+
+Je kunt Markdown partials uit `docs/` importeren zoals hieronder:
+
+```mdx
+import MyMarkdownPartial from "@nl-design-system-unstable/documentation/wcag/_my-markdown-partial.md";
+
+# Documentatie pagina
+
+...tekst over een specifiek onderwerp...
+
+<MyMarkdownPartial />
+```
+
+### Blog posts toevoegen
+
+Je moet de juiste metadata toevoegen bij een blog post, om het goed te laten werken. Een nieuwe blogpost maken kun je waarschijnlijk het makkelijst doen door een kopie te maken van de nieuwste blog post, en die aan te passen.
+
+### HTML gebruiken in Markdown
+
+Als je in MDX-bestanden HTML combineert met tekst, dan combineer je Markdown met HTML, en dat leidt regelmatig tot ongewenste situaties. Bijvoorbeeld: Markdown tekst die op een eigen regel staat, wordt in een `<p>...</p>` element gezet. Dat leidt tot ongewenste HTML:
+
+```mdx
+...meld daarom aan voor de nieuwsbrief!
+
+<Button>My button text</Button>
+```
+
+Bovenstaande code heeft ongewenste HTML als resultaat:
+
+```html
+<p>...meld daarom aan voor de nieuwsbrief!</p>
+
+<button class="example-button">
+  <p>My button text</p>
+</button>
+```
+
+Je kunt dit op meerdere manieren voorkomen. Optie 1: gebruik JSX voor tekst:
+
+```mdx
+<Button>{"My button text"}</Button>
+```
+
+Optie 2: markeer het hele blok als JSX:
+
+```mdx
+{<Button>My button text</Button>}
+```
