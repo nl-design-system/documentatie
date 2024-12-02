@@ -78,13 +78,13 @@ Voeg het label `visual regression test` toe aan je pull request om Argos CI aan 
 
 ## Documentatie toevoegen
 
-We schrijven documentatie waar mogelijk in herbruikbare Markdown-bestanden. Voor pagina's waar we meerdere Markdown-bestanden samenvoegen, of gebruik maken van HTML-structuren gebruiken we MDX-formaat, een combinatie tussen JavaScript met React-componenten en Markdown. Een heel beperkt aantal pagina's, die niet bedoeld zijn om herbruikbaar te zijn, maken we de pagina met TypeScript en React.
+We schrijven documentatie waar mogelijk in herbruikbare Markdown-bestanden (`.md`). Voor pagina's waar we meerdere Markdown-bestanden samenvoegen of afwisselend tekst en HTML nodig hebben, gebruiken we MDX. [MDX](https://mdxjs.com) is een combinatie tussen JavaScript met React-componenten en Markdown. Een heel beperkt aantal pagina's maken we met TypeScript en React, als ze complex zijn en niet herbruikbaar hoeven te zijn.
 
 De documentatie kun je vinden in deze drie mappen:
 
 - `docs/`: deze informatie is publiek beschikbaar in een npm package. Je die naam van deze npm-package gebruiken om te importeren, vanuit `@nl-design-system-unstable/documentation`. Als je een `.md` of `.mdx` bestand maakt, dan wordt die automatisch opgenomen in de website, tenzij je de filename begint met een underscore. Dat noemen we intern "Markdown partials": `_my-markdown-partial.md`.
-- `blog/`: deze blog posts. Deze Markdown files worden automatisch herkend door een Docusaurus plugin. Je vindt documentatie bij: [plugin-content-blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
-- `src/pages/`: hier staan bijzondere pagina's, zoals de homepage en de contrast ratio checker.
+- `blog/`: deze directory bevat alle blog posts. Deze Markdown files worden automatisch herkend door een Docusaurus plugin. Je vindt documentatie bij: [plugin-content-blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+- `src/pages/`: hier staan bijzondere pagina's, zoals de homepage en de [contrast ratio checker](http://nldesignsystem.nl/contrast/).
 
 ### Documentatie-pagina toevoegen
 
@@ -95,11 +95,6 @@ Je kunt de automatische URL aanpassen naar een zelf gekozen URL, via de Markdown
 ```mdx
 ---
 title: Button
-hide_title: true
-hide_table_of_contents: false
-sidebar_label: Button
-pagination_label: Button
-description: Biedt de mogelijkheid om een actie uit te voeren.
 slug: /button
 ---
 
@@ -128,10 +123,14 @@ Je moet de juiste metadata toevoegen bij een blog post, om het goed te laten wer
 
 Als je in MDX-bestanden HTML combineert met tekst, dan combineer je Markdown met HTML, en dat leidt regelmatig tot ongewenste situaties. Bijvoorbeeld: Markdown tekst die op een eigen regel staat, wordt in een `<p>...</p>` element gezet. Dat leidt tot ongewenste HTML:
 
-```mdx
+<!-- use `text` to avoid Prettier formatting -->
+
+```text
 ...meld daarom aan voor de nieuwsbrief!
 
-<Button>My button text</Button>
+<Button>
+   My button text
+</Button>
 ```
 
 Bovenstaande code heeft ongewenste HTML als resultaat:
@@ -144,7 +143,7 @@ Bovenstaande code heeft ongewenste HTML als resultaat:
 </button>
 ```
 
-Je kunt dit op meerdere manieren voorkomen. Optie 1: gebruik JSX voor tekst:
+Je kunt de ongewenste HTML op meerdere manieren voorkomen. Optie 1: gebruik JSX voor tekst:
 
 ```mdx
 <Button>{"My button text"}</Button>
