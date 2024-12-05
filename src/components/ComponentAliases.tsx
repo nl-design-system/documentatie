@@ -1,9 +1,10 @@
 import { Markdown } from '@site/src/components/Markdown';
 import React, { type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
+import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
 
 interface ComponentAliasesProps {
-  component?: object;
+  component?: ComponentProgressObject;
 }
 
 export const ComponentAliases = ({ component }: PropsWithChildren<ComponentAliasesProps>) => {

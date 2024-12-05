@@ -3,9 +3,10 @@ import clsx from 'clsx';
 import React, { type Component, type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 import './ComponentAnatomy.css';
+import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
 
 interface ComponentAnatomyProps {
-  component?: object;
+  component?: ComponentProgressObject;
   illustration?: React.ComponentType<Component>;
 }
 

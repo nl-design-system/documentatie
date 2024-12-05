@@ -20,6 +20,9 @@ importers:
       '@docusaurus/theme-search-algolia':
         specifier: 3.1.0
         version: 3.1.0(@algolia/client-search@4.22.1)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.12)(eslint@9.16.0(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.6.2)
+      '@iframe-resizer/react':
+        specifier: 5.3.2
+        version: 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nl-design-system-candidate/code-block-docs':
         specifier: 1.0.0
         version: 1.0.0
@@ -32,9 +35,6 @@ importers:
       '@nl-design-system-candidate/data-badge-docs':
         specifier: 1.0.0
         version: 1.0.0
-      '@iframe-resizer/react':
-        specifier: 5.3.2
-        version: 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tabler/icons-react':
         specifier: 3.17.0
         version: 3.17.0(react@18.3.1)
@@ -115,8 +115,8 @@ importers:
         specifier: 1.0.0-alpha.151
         version: 1.0.0-alpha.151
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.79
-        version: 1.0.1-alpha.79
+        specifier: 1.0.1-alpha.82
+        version: 1.0.1-alpha.82
       '@nl-design-system/eslint-config':
         specifier: 0.0.1
         version: 0.0.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.6.2)
@@ -1788,8 +1788,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
     resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.79':
-    resolution: {integrity: sha512-zovBsj0DPCgO81ACvju3psytbD90jshhYbqX1FQfeEoxVYxnbVBATnosBv5cFB4pPoKCEJxY/RPqb7OZg7qpbw==}
+  '@nl-design-system/component-progress@1.0.1-alpha.82':
+    resolution: {integrity: sha512-9QmyZHcK4VD41KsdqLpxgNmEL8SwLL1JbB0cVF6Q/Mw7tQBXoxuCA2ihODXKAC16MHTodz89vsTVLFsTTs6PBw==}
 
   '@nl-design-system/eslint-config@0.0.1':
     resolution: {integrity: sha512-zgKEBk0S88bkRX4zRihhoOidQtekpvOHWOOPl0aJhTy5aF2hyFzbzDTGjPgpseo0lDbwZjd7LUwLJevOj83WYg==}
@@ -10040,7 +10040,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.79': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.82': {}
 
   '@nl-design-system/eslint-config@0.0.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.6.2)':
     dependencies:
