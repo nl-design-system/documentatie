@@ -1,13 +1,18 @@
 import { Markdown } from '@site/src/components/Markdown';
 import clsx from 'clsx';
-import React, { type Component, type PropsWithChildren, Suspense } from 'react';
+import React, { type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 import './ComponentAnatomy.css';
 import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
 
+interface IllustrationProps {
+  className?: string;
+  height?: boolean;
+}
+
 interface ComponentAnatomyProps {
   component?: ComponentProgressObject;
-  illustration?: React.ComponentType<Component>;
+  illustration?: React.ComponentType<IllustrationProps>;
 }
 
 export const ComponentAnatomy = ({
@@ -26,7 +31,7 @@ export const ComponentAnatomy = ({
     <Suspense fallback={null}>
       <figure className={clsx('component-anatomy')}>
         {AnatomyIllustration && (
-          <AnatomyIllustration heightnpm={null} className={clsx('component-anatomy__illustration')} />
+          <AnatomyIllustration height={null} className={clsx('component-anatomy__illustration')} />
         )}
         {AnatomyIllustration && AnatomyLegend && (
           <figcaption>
