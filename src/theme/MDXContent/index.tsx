@@ -30,8 +30,12 @@ export default function MDXContent({ children }: Props): ReactElement {
         pre: MDXPre,
         details: MDXDetails,
         img: Image,
-        ol: OrderedList,
-        ul: UnorderedList,
+        ul: ({ children }) => {
+          return <UnorderedList className="utrecht-unordered-list--html-content">{children}</UnorderedList>;
+        },
+        ol: ({ children }) => {
+          return <OrderedList className="utrecht-ordered-list--html-content">{children}</OrderedList>;
+        },
         h1: Heading1,
         h2: Heading2,
         h3: Heading3,
