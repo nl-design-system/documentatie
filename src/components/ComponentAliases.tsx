@@ -1,5 +1,5 @@
 import { Markdown } from '@site/src/components/Markdown';
-import React, { PropsWithChildren, Suspense } from 'react';
+import React, { type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 
 interface ComponentAliasesProps {

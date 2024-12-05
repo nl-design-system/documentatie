@@ -1,12 +1,12 @@
 import { Markdown } from '@site/src/components/Markdown';
 import clsx from 'clsx';
-import React, { PropsWithChildren, Suspense } from 'react';
+import React, { type Component, type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 import style from './ComponentAnatomy.module.css';
 
 interface ComponentAnatomyProps {
   component?: object;
-  illustration?: React.ComponentType<any>;
+  illustration?: React.ComponentType<Component>;
 }
 
 export const ComponentAnatomy = ({
@@ -22,19 +22,15 @@ export const ComponentAnatomy = ({
   );
 
   return (
-    <>
-      {
-        <Suspense fallback={null}>
-          {AnatomyIllustration && (
-            <AnatomyIllustration height={null} className={clsx(style['component-anatomy__illustration'])} />
-          )}
-          {AnatomyIllustration && AnatomyLegend && (
-            <Markdown omitH1 headingLevel={1}>
-              <AnatomyLegend />
-            </Markdown>
-          )}
-        </Suspense>
-      }
-    </>
+    <Suspense fallback={null}>
+      {AnatomyIllustration && (
+        <AnatomyIllustration height={null} className={clsx(style['component-anatomy__illustration'])} />
+      )}
+      {AnatomyIllustration && AnatomyLegend && (
+        <Markdown omitH1 headingLevel={1}>
+          <AnatomyLegend />
+        </Markdown>
+      )}
+    </Suspense>
   );
 };
