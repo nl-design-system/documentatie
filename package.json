@@ -68,6 +68,7 @@
     "@nl-design-system-candidate/code-block-docs": "1.0.0",
     "@nl-design-system-candidate/code-docs": "1.0.0",
     "@nl-design-system-candidate/color-sample-docs": "1.0.0",
+    "@nl-design-system-candidate/data-badge-docs": "1.0.0",
     "@tabler/icons-react": "3.17.0",
     "@utrecht/design-tokens": "1.1.0",
     "clsx": "2.1.1",
