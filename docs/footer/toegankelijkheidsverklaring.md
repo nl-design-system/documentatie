@@ -38,6 +38,12 @@ Neem dan [contact](https://nldesignsystem.nl/project/kernteam) met ons op.
 
 ### Huidige status
 
+Bekende issues:
+
+- 1.2.2: video's van vóór 2023 zijn niet ondertiteld. Mocht je een video van voor 2023 willen kijken en ondertiteling willen gebruiken, laat het ons weten.
+
+Een overzicht van alle issues die in onze website zijn geconstateerd, inclusief issues die geen WCAG-overtredingen zijn, is terug te vinden op onze [projectbord voor toegankelijkheidsissues](https://github.com/orgs/nl-design-system/projects/17/views/1).
+
 <p>
 <a href="https://www.toegankelijkheidsverklaring.nl/register/12250">
   <img src="https://www.toegankelijkheidsverklaring.nl/files/verklaring/label/c35c932f9287cfbe2ced503c9d3fa04d.12250.svg?1700559665" alt="Status toegankelijkheidslabel van NL Design System. Volg de link voor de volledige toegankelijkheidsverklaring." width="692" height="251" />

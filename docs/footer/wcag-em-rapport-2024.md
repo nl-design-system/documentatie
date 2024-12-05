@@ -96,17 +96,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         </th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Onvoldoende</p>
+          <p><span>Uitkomst:</span> Niet van toepassing</p>
         </td>
         <td>
-          <h6>Hele sample</h6>
-          <p>Bevindingen:</p>
-          <p>
-            Pagina:
-            <a href="https://nldesignsystem.nl/events/heartbeat"
-              >https://nldesignsystem.nl/events/heartbeat</a>
-          </p>
-          <p>YouTube video's van voor 2023 hebben geen ondertiteling.</p>
         </td>
       </tr>
       <tr>
@@ -134,7 +126,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         </th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Niet van toepassing</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td></td>
       </tr>
@@ -154,7 +146,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
         </th>
         <td>
           <h6>Hele sample</h6>
-          <p><span>Uitkomst:</span> Niet van toepassing</p>
+          <p><span>Uitkomst:</span> Voldoende</p>
         </td>
         <td></td>
       </tr>
