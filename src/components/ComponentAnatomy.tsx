@@ -15,7 +15,7 @@ export const ComponentAnatomy = ({
 }: PropsWithChildren<ComponentAnatomyProps>) => {
   const { title } = component;
   const slug = toKebabCase(title);
-  let AnatomyLegend = React.lazy(() =>
+  const AnatomyLegend = React.lazy(() =>
     import(`@nl-design-system-candidate/${slug}-docs/docs/anatomy/anatomy.md`).catch(() => {
       return { default: () => null };
     }),
@@ -24,7 +24,7 @@ export const ComponentAnatomy = ({
   return (
     <>
       {
-        <Suspense fallback={''}>
+        <Suspense fallback={null}>
           {AnatomyIllustration && (
             <AnatomyIllustration height={null} className={clsx(style['component-anatomy__illustration'])} />
           )}
