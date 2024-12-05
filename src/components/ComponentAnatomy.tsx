@@ -24,12 +24,18 @@ export const ComponentAnatomy = ({
 
   return (
     <Suspense fallback={null}>
-      {AnatomyIllustration && <AnatomyIllustration height={null} className={clsx('component-anatomy__illustration')} />}
-      {AnatomyIllustration && AnatomyLegend && (
-        <Markdown omitH1 headingLevel={1}>
-          <AnatomyLegend />
-        </Markdown>
-      )}
+      <figure className={clsx('component-anatomy')}>
+        {AnatomyIllustration && (
+          <AnatomyIllustration heightnpm={null} className={clsx('component-anatomy__illustration')} />
+        )}
+        {AnatomyIllustration && AnatomyLegend && (
+          <figcaption>
+            <Markdown omitH1 headingLevel={1}>
+              <AnatomyLegend />
+            </Markdown>
+          </figcaption>
+        )}
+      </figure>
     </Suspense>
   );
 };
