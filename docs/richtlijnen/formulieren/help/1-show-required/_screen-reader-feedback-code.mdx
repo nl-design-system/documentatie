@@ -8,7 +8,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <form>
-          <label for="kleur8">Wat is je lievelingskleur (verplicht)</label>
+          <label htmlFor="kleur8">Wat is je lievelingskleur (verplicht)</label>
           <input type="text" id="kleur8" name="lievelingskleur" aria-required="true" aria-invalid="false" />
           <button>Verstuur</button>
         </form>
@@ -24,8 +24,8 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <form novalidate>
-          <label for="kleur9">Wat is je lievelingskleur (verplicht)</label>
+        <form noValidate>
+          <label htmlFor="kleur9">Wat is je lievelingskleur (verplicht)</label>
           <input type="text" id="kleur9" name="lievelingskleur" required aria-invalid="false" />
           <button>Verstuur</button>
         </form>
@@ -42,7 +42,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <form>
-          <label for="kleur10">Wat is je lievelingskleur</label>
+          <label htmlFor="kleur10">Wat is je lievelingskleur</label>
           <p id="fout10">Invoerfout: Vul de naam van een kleur in.</p>
           <input type="text" id="kleur10" aria-describedby="fout10" name="lievelingskleur" />
           <button>Verstuur</button>

@@ -1,9 +1,9 @@
 import type { Props } from '@theme/Footer/Layout';
 import clsx from 'clsx';
-import React from 'react';
-import styles from './Layout.module.css';
+import type { ReactElement } from 'react';
+import './Layout.css';
 
-export default function FooterLayout({ style, links, logo, copyright }: Props): React.Element {
+export default function FooterLayout({ style, links, logo, copyright }: Props): ReactElement {
   return (
     <footer
       className={clsx(
@@ -11,7 +11,7 @@ export default function FooterLayout({ style, links, logo, copyright }: Props): 
         {
           'footer--dark': style === 'dark',
         },
-        styles['footer'],
+        'footer',
       )}
     >
       <div className="container--wide">

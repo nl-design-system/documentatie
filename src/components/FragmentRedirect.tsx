@@ -1,6 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
-import { HTMLAttributes, PropsWithChildren } from 'react';
+import type { HTMLAttributes, PropsWithChildren } from 'react';
 
 interface FragmentRedirectProps extends HTMLAttributes<HTMLDivElement> {
   id: string;

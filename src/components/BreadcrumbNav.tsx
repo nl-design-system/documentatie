@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft } from '@tabler/icons-react';
@@ -9,11 +9,12 @@ import {
   Icon,
   BreadcrumbNav as UtrechtBreadcrumbNav,
 } from '@utrecht/component-library-react/dist/css-module';
+import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { Fragment } from 'react';
-import styles from './Breadcrumbs.module.css';
+import { Fragment } from 'react';
+import './Breadcrumbs.css';
 
-export interface BreadcrumbNavProps {
+export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
   breadcrumbs: {
     label: string;
     href: string;
@@ -31,7 +32,7 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
 
   return (
     <>
-      <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--desktop'])}>
+      <div className={clsx('breadcrumbs', 'breadcrumbs--desktop')}>
         <UtrechtBreadcrumbNav {...restProps} label="breadcrumb">
           {links.map(({ label, href, rel }, index, { length }) => (
             <Fragment key={index}>
@@ -49,7 +50,7 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
         </UtrechtBreadcrumbNav>
       </div>
       {up && (
-        <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--mobile'])}>
+        <div className={clsx('breadcrumbs', 'breadcrumbs--mobile')}>
           <ButtonGroup>
             <Link href={up.href} rel={up.rel} className="utrecht-link utrecht-link--html-a">
               <Icon>

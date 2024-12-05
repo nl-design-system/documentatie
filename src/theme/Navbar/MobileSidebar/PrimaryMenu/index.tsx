@@ -1,7 +1,7 @@
 import { useThemeConfig } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem, { type Props as NavbarItemConfig } from '@theme/NavbarItem';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -9,7 +9,7 @@ function useNavbarItems() {
 }
 
 // The primary menu displays the navbar items
-export default function NavbarMobilePrimaryMenu(): React.Element {
+export default function NavbarMobilePrimaryMenu(): ReactElement {
   const mobileSidebar = useNavbarMobileSidebar();
 
   // TODO how can the order be defined for mobile?

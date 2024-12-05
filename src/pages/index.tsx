@@ -1,19 +1,17 @@
-import DocusaurusLink from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {
   Heading2,
   Heading3,
   Image,
-  Link,
   Paragraph,
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
 import HomepageHero from '../components/HomepageHero';
 import HomepageUpdates from '../components/HomepageUpdates';
+import { Link } from '../components/Link';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -32,9 +30,8 @@ export default function Home() {
         >
           <Paragraph lead>
             Met een actieve community van specialisten verzamelt het kernteam de beste{' '}
-            <DocusaurusLink to="/richtlijnen">richtlijnen</DocusaurusLink>,{' '}
-            <DocusaurusLink to="/componenten">componenten</DocusaurusLink> en voorbeelden om robuuste websites en
-            webapplicaties voor de digitale overheid te bouwen.
+            <Link to="/richtlijnen">richtlijnen</Link>, <Link to="/componenten">componenten</Link> en voorbeelden om
+            robuuste websites en webapplicaties voor de digitale overheid te bouwen.
           </Paragraph>
 
           <Paragraph>
@@ -56,9 +53,7 @@ export default function Home() {
                   <Heading3>Manager</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/manager/introductie" className="utrecht-link">
-                    Meer informatie voor managers
-                  </DocusaurusLink>
+                  <Link to="/handboek/manager/introductie">Meer informatie voor managers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -68,9 +63,7 @@ export default function Home() {
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/leverancier/introductie" className="utrecht-link">
-                    Meer informatie voor leveranciers
-                  </DocusaurusLink>
+                  <Link to="/handboek/leverancier/introductie">Meer informatie voor leveranciers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -80,9 +73,7 @@ export default function Home() {
                   <Heading3>Developer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/developer/overzicht" className="utrecht-link">
-                    Meer informatie voor developers
-                  </DocusaurusLink>
+                  <Link to="/handboek/developer/overzicht">Meer informatie voor developers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -92,9 +83,7 @@ export default function Home() {
                   <Heading3>Designer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/designer/overzicht" className="utrecht-link">
-                    Meer informatie voor designers
-                  </DocusaurusLink>
+                  <Link to="/handboek/designer/overzicht">Meer informatie voor designers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -168,10 +157,8 @@ export default function Home() {
           </CardGroup>
           <Paragraph className="homepage__paragraph">
             Naast de organisaties die componenten bijdragen doen{' '}
-            <DocusaurusLink to="/community/wie-doet-mee" className="utrecht-link">
-              diverse andere organisaties
-            </DocusaurusLink>{' '}
-            mee in de community van NL Design System.
+            <Link to="/community/wie-doet-mee">diverse andere organisaties</Link> mee in de community van NL Design
+            System.
           </Paragraph>
         </div>
         <div className="container" style={{ paddingBlockStart: '40px', paddingBlockEnd: '40px' }}>
@@ -185,9 +172,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
-                    Bekijk de richtlijnen
-                  </DocusaurusLink>
+                  <Link to="/richtlijnen">Bekijk de richtlijnen</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -202,9 +187,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/componenten" className="utrecht-link">
-                    Bekijk de componenten
-                  </DocusaurusLink>
+                  <Link to="/componenten">Bekijk de componenten</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -219,9 +202,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/voorbeelden" className="utrecht-link">
-                    Bekijk de voorbeelden
-                  </DocusaurusLink>
+                  <Link to="/voorbeelden">Bekijk de voorbeelden</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -236,9 +217,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
-                    Bekijk de events
-                  </DocusaurusLink>
+                  <Link to="/community/events/overzicht">Bekijk de events</Link>
                 </Paragraph>
               </CardContent>
             </Card>

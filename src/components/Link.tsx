@@ -1,6 +1,9 @@
 import DocusaurusLink from '@docusaurus/Link';
-import React, { PropsWithChildren } from 'react';
+import type { Props } from '@docusaurus/Link';
+import { clsx } from 'clsx';
 
-export const Link = ({ children }: PropsWithChildren<{}>) => (
-  <DocusaurusLink className="utrecht-link utrecht-link--html-a">{children}</DocusaurusLink>
+import type { PropsWithChildren } from 'react';
+
+export const Link = ({ className, ...props }: PropsWithChildren<Props>) => (
+  <DocusaurusLink className={clsx('utrecht-link', 'utrecht-link--html-a', className)} {...props} />
 );

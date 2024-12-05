@@ -1,7 +1,6 @@
 import { MDXProvider } from '@mdx-js/react';
 import { Heading2, Heading3, Heading4, Heading5, Heading6 } from '@utrecht/component-library-react/dist/css-module';
-import { PropsWithChildren } from 'react';
-import React from 'react';
+import type { PropsWithChildren } from 'react';
 
 const resolveUrl = (from, to) => {
   const resolvedUrl = new URL(to, new URL(from, 'resolve://pathname/'));

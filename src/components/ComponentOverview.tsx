@@ -1,15 +1,16 @@
+import type { PropSidebarItem, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { AccordionProvider, Fieldset, FormToggle, Paragraph } from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
-import style from './ComponentOverview.module.css';
 import { EstafetteBadge } from './EstafetteBadge';
 import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
+import './ComponentOverview.css';
 
 export const ComponentOverview = () => {
   const SEARCH_PARAM = 'filter';
@@ -27,14 +28,19 @@ export const ComponentOverview = () => {
 
   const params = new URLSearchParams(location.search);
 
-  const getComponent = (item: any) =>
-    item.title && componentProgress.find(({ title }) => title && normalizeName(title) === normalizeName(item.title));
+  const getComponent = (item: PropSidebarItemLink) =>
+    item['title'] &&
+    componentProgress.find(({ title }) => title && normalizeName(title) === normalizeName(item['title']));
+
+  const isPropSidebarItemLink = (item: PropSidebarItem): item is PropSidebarItemLink =>
+    !!item && typeof item['docId'] === 'string';
 
   const components = category.items
-    .filter((item: any) => item.docId !== 'componenten/README')
-    .map((item: any) => ({ ...item, ...useDocById(item.docId) }))
+    .filter(isPropSidebarItemLink)
+    .filter((item) => item.docId !== 'componenten/README')
+    .map((item) => ({ ...item, ...useDocById(item.docId) }))
     .filter(getComponent)
-    .map((item: any) => ({ ...item, ...getComponent(item) }));
+    .map((item) => ({ ...item, ...getComponent(item) }));
 
   const [filteredComponents, setFilteredComponents] = useState(components);
   const [showTodo, setShowTodo] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.TODO));
@@ -119,9 +125,12 @@ export const ComponentOverview = () => {
       <AccordionProvider
         sections={[
           {
-            className: style['utrecht-accordion--nlds-subtle'],
+            className: 'utrecht-accordion--nlds-subtle',
             headingLevel: 2,
             expanded: false,
+
+            // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
             body: (
               <>
@@ -192,7 +201,7 @@ export const ComponentOverview = () => {
                   </Paragraph>
                   {!!onlyImplemented.length && (
                     <>
-                      <FormField type="checkbox" className={style['utrecht-form-field--nlds-switch']}>
+                      <FormField type="checkbox" className="utrecht-form-field--nlds-switch">
                         <FormToggle
                           defaultChecked={showOnlyImplemented}
                           id="ONLY_IMPLEMENTED"
@@ -212,7 +221,7 @@ export const ComponentOverview = () => {
         {filteredComponents.length} van {components.length} componenten zichtbaar
       </Paragraph>
       <CardGroup appearance="large">
-        {filteredComponents.map(({ title, id, href, customProps, description }) => {
+        {filteredComponents.map(({ title, id, href, description }) => {
           const component = componentProgress.find((item) => {
             return item.title === title;
           });
@@ -221,7 +230,6 @@ export const ComponentOverview = () => {
 
           return (
             <ComponentCard
-              illustration={customProps?.illustration}
               name={title}
               headingLevel={2}
               href={href}

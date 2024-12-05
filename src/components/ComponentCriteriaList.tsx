@@ -14,9 +14,8 @@
  */
 
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
-import style from './ComponentCriteriaList.module.css';
 import { successCriteriaMap } from './wcag22';
+import './ComponentCriteriaList.css';
 
 /**
  * CriteriaListItemProps defines expected variables for the item to test.
@@ -89,7 +88,7 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
  *
  */
 export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
-  <details className={style['task-list']}>
+  <details className="task-list">
     <summary>
       <h3>{testCategory}</h3>
     </summary>

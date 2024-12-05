@@ -1,7 +1,9 @@
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { Canvas, CanvasContainerType } from '@site/src/components/Canvas/Canvas';
+import { Canvas } from '@site/src/components/Canvas/Canvas';
+import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
 import { ContrastRatio } from '@site/src/components/ContrastRatio';
+import { FormFieldTextbox } from '@site/src/components/FormFieldTextbox';
 import { Guideline } from '@site/src/components/Guideline';
 import Layout from '@theme/Layout';
 import {
@@ -14,10 +16,9 @@ import {
   Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import { FormFieldTextbox } from '/src/components/FormFieldTextbox';
 import Color from 'color';
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import style from './index.module.css';
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import './index.css';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -48,6 +49,7 @@ export const parseColor = (colorString: string) => {
   // Parse colors such as `hsl(0deg 0% 20%)`
   try {
     color = Color(query);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   } catch (e) {
     color = null;
   }
@@ -60,7 +62,7 @@ const ExampleRendering = ({
   label,
   ...props
 }: PropsWithChildren<{ label: string } & HTMLAttributes<HTMLDivElement>>) => (
-  <div role="img" aria-label={label} className={style['nlds-example-rendering']} {...props}>
+  <div role="img" aria-label={label} className="nlds-example-rendering" {...props}>
     {children}
   </div>
 );
@@ -204,7 +206,7 @@ const ContrastPage = () => {
           Vul de CSS-kleurcodes in van twee kleuren. Controleer dan voor welke toepassingen je de combinatie kunt
           gebruiken.
         </Paragraph>
-        <form method="get" action="./" className={style['nlds-form']}>
+        <form method="get" action="./" className="nlds-form">
           <FormFieldTextbox
             name="background-color"
             label={<Code>background-color</Code>}
@@ -239,13 +241,7 @@ const ContrastPage = () => {
                 <Paragraph>Gebruik deze kleuren voor bijvoorbeeld:</Paragraph>
                 <div>
                   {dos.map(({ container, content, example, positive }, index) => (
-                    <Guideline
-                      key={index}
-                      appearance={positive ? 'do' : 'dont'}
-                      title={content}
-                      displayCode={false}
-                      figure
-                    >
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
                       <Canvas
                         language="html"
                         code={null}
@@ -278,7 +274,7 @@ const ContrastPage = () => {
                 </Paragraph>{' '}
                 <div>
                   {donts.map(({ container, content, example, positive }, index) => (
-                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} displayCode={false}>
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
                       <Canvas
                         language="html"
                         code={null}

@@ -4,9 +4,9 @@ import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-com
 import type { Props } from '@theme/Navbar/Layout';
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-export default function NavbarLayout({ children }: Props): React.Element {
+export default function NavbarLayout({ children }: Props): ReactElement {
   const {
     navbar: { hideOnScroll, style },
   } = useThemeConfig();

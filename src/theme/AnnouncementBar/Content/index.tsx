@@ -1,19 +1,19 @@
 import { useThemeConfig } from '@docusaurus/theme-common';
 import type { Props } from '@theme/AnnouncementBar/Content';
 import clsx from 'clsx';
-import React from 'react';
-import styles from './styles.module.css';
+import type { ReactElement } from 'react';
+import './styles.css';
 
-export default function AnnouncementBarContent(props: Props): React.Element | null {
+export default function AnnouncementBarContent(props: Props): ReactElement | null {
   const { announcementBar } = useThemeConfig();
-  const { content } = announcementBar!;
-  return (
+
+  return announcementBar?.content ? (
     <div
       {...props}
-      className={clsx(styles.content, props.className)}
+      className={clsx('content', props.className)}
       // Developer provided the HTML, so assume it's safe.
 
-      dangerouslySetInnerHTML={{ __html: content }}
+      dangerouslySetInnerHTML={{ __html: announcementBar.content }}
     />
-  );
+  ) : null;
 }

@@ -6,7 +6,7 @@ import NavbarSearch from '@theme/Navbar/Search';
 import NavbarItem, { type Props as NavbarItemConfig } from '@theme/NavbarItem';
 import SearchBar from '@theme/SearchBar';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren, ReactElement } from 'react';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -26,7 +26,7 @@ function NavbarItems({
   positionChildren = 'block-end',
   showOnMobile,
   children,
-}: PropsWithChildren<NavbarItemsProps>): React.Element {
+}: PropsWithChildren<NavbarItemsProps>): ReactElement {
   return (
     <div
       className={clsx(
@@ -55,7 +55,7 @@ ${JSON.stringify(item, null, 2)}`,
   );
 }
 
-export default function NavbarContent(): React.Element {
+export default function NavbarContent(): ReactElement {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const mobileSidebar = useNavbarMobileSidebar();

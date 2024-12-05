@@ -4,7 +4,8 @@ import NavbarItem, { type LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DropdownNavbarItem';
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
 import clsx from 'clsx';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import type { ReactElement } from 'react';
 
 function isItemActive(item: LinkLikeNavbarItemProps, localPathname: string): boolean {
   if (isSamePath(item.to, localPathname)) {
@@ -140,7 +141,7 @@ function DropdownNavbarItemMobile({
   );
 }
 
-export default function DropdownNavbarItem({ mobile = false, ...props }: Props): React.Element {
+export default function DropdownNavbarItem({ mobile = false, ...props }: Props): ReactElement {
   const Comp = mobile ? DropdownNavbarItemMobile : DropdownNavbarItemDesktop;
   return <Comp {...props} />;
 }

@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Developer Open Hour
 pagination_label: In het Developer Open Hour wisselen developers informatie, inzichten en tips met elkaar uit.
-description: Wat is Developer Open Hour?
+description: Tijdens Developer Open Hour kun je laagdrempelig vragen over development in de NL Design System community bespreken. Hier meld je je aan en zie je de planning.
 slug: /events/developer-open-hour
 ---
 
-import DocusaurusLink from "@docusaurus/Link";
+import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
 
@@ -36,20 +36,14 @@ Het Developer Open Hour vindt plaats in het [#nl-design-system-developers](https
 Door je aan te melden kunnen wij je op de hoogte houden van Developer Open Hours. Je ontvangt dan ook direct een kalenderbestandje, zodat je de Developer Open Hour makkelijk aan je agenda kan toevoegen.
 
 <ActionGroup>
-  <DocusaurusLink
-    href="/events/developer-open-hour/aanmelden"
-    className="utrecht-button-link utrecht-button-link--primary-action"
-  >
+  <ButtonLink href="/events/developer-open-hour/aanmelden" appearance="primary-action">
     {"Meld je aan"}
     <IconChevronRight />
-  </DocusaurusLink>
-  <DocusaurusLink
-    href="https://praatmee.codefor.nl/"
-    className="utrecht-button-link utrecht-button-link--secondary-action"
-  >
+  </ButtonLink>
+  <ButtonLink href="https://praatmee.codefor.nl/" appearance="secondary-action">
     {"Doe mee op Slack"}
     <IconChevronRight />
-  </DocusaurusLink>
+  </ButtonLink>
 </ActionGroup>
 
 ## Vragen of ideeën

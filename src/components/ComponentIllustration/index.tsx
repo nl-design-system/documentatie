@@ -1,8 +1,8 @@
 import { Figure, FigureCaption } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
-import style from './ComponentIllustration.module.css';
+import type { HTMLAttributes } from 'react';
 import { toKebabCase } from '../../utils';
+import './ComponentIllustration.css';
 
 interface ComponentIllustrationProps extends HTMLAttributes<HTMLElement> {
   relayStep: string;
@@ -19,7 +19,7 @@ export const ComponentIllustration = ({ name, relayStep, description }: Componen
         height="540"
         viewBox="0 0 960 540"
         xmlns="http://www.w3.org/2000/svg"
-        className={clsx(style['component-illustration'], style[`component-illustration--${stateModifier}`])}
+        className={clsx('component-illustration', `component-illustration--${stateModifier}`)}
         fill="none"
       >
         <g fill="var(--component-illustration-background-color, white)">
@@ -47,7 +47,7 @@ export const ComponentIllustration = ({ name, relayStep, description }: Componen
         </g>
         <use href={`/svg/componenten_overzicht_${toKebabCase(name)}.svg#component-illustration`} />
       </svg>
-      <FigureCaption className={style['component-illustration__caption']}>{description}</FigureCaption>
+      <FigureCaption className="component-illustration__caption">{description}</FigureCaption>
     </Figure>
   );
 };

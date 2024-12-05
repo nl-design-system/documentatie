@@ -1,11 +1,11 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React, { PropsWithChildren, type ReactNode } from 'react';
-import styles from './styles.module.css';
+import type { PropsWithChildren, ReactElement, ReactNode } from 'react';
+import './styles.css';
 
 function CardLayout({
   href,
@@ -20,25 +20,25 @@ function CardLayout({
   description?: string;
 }>) {
   return (
-    <div className={clsx('card', styles.card)}>
+    <div className="card">
       {href ? (
-        <Link href={href} className={clsx(styles.cardLink, 'utrecht-link')}>
-          <h2 className={clsx(styles.cardTitle)}>
+        <Link href={href} className={clsx('cardLink', 'utrecht-link')}>
+          <h2 className="cardTitle">
             {icon} {title}
           </h2>
         </Link>
       ) : (
-        <h2 className={clsx(styles.cardTitle)}>
+        <h2 className="cardTitle">
           {icon} {title}
         </h2>
       )}
-      {description && <p className={clsx(styles.cardDescription)}>{description}</p>}
+      {description && <p className="cardDescription">{description}</p>}
       {children}
     </div>
   );
 }
 
-function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Element | null {
+function CardCategory({ item }: { item: PropSidebarItemCategory }): ReactElement | null {
   return (
     <CardLayout title={item.label} description={item.description}>
       <UnorderedList>
@@ -62,19 +62,12 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): React.Elemen
   );
 }
 
-function CardLink({ item }: { item: PropSidebarItemLink }): React.Element {
+function CardLink({ item }: { item: PropSidebarItemLink }): ReactElement {
   const doc = useDocById(item.docId);
-  return (
-    <CardLayout
-      linkDescription={item.label}
-      href={item.href}
-      title={item.label}
-      description={item.description ?? doc?.description}
-    />
-  );
+  return <CardLayout href={item.href} title={item.label} description={item.description ?? doc?.description} />;
 }
 
-export default function DocCard({ item }: Props): React.Element {
+export default function DocCard({ item }: Props): ReactElement {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;

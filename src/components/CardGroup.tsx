@@ -1,7 +1,7 @@
 import { Link } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLAttributes, PropsWithChildren } from 'react';
-import style from './CardGroup.module.css';
+import type { HTMLAttributes, PropsWithChildren } from 'react';
+import './CardGroup.css';
 
 type Appearance = 'small' | 'medium' | 'large' | 'background';
 
@@ -15,16 +15,13 @@ export const CardIllustration = ({
   className,
   ...props
 }: PropsWithChildren<CardIllustrationProps>) => (
-  <div
-    className={clsx(style['card__illustration'], background && style['card__illustration--background'], className)}
-    {...props}
-  >
+  <div className={clsx('card__illustration', background && 'card__illustration--background', className)} {...props}>
     {children}
   </div>
 );
 
 export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
-  <div className={clsx(style['card__content'])} {...props} />
+  <div className="card__content" {...props} />
 );
 
 interface CardProps {
@@ -42,13 +39,11 @@ export const Card = ({ href, appearance, className, component = 'div', children 
   };
 
   const card = (
-    <Wrapper className={clsx(style['cardgroup__card'], style[`cardgroup__card--${appearance}`], className)}>
-      {children}
-    </Wrapper>
+    <Wrapper className={clsx('cardgroup__card', `cardgroup__card--${appearance}`, className)}>{children}</Wrapper>
   );
 
   return href ? (
-    <Link href={href} boxContent className={style['cardgroup__link']}>
+    <Link href={href} boxContent className="cardgroup__link">
       {card}
     </Link>
   ) : (
@@ -61,5 +56,5 @@ interface CardGroupProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const CardGroup = ({ appearance = 'medium', children, className }: PropsWithChildren<CardGroupProps>) => (
-  <div className={clsx(style['cardgroup'], style[`cardgroup--${appearance}`], className)}>{children}</div>
+  <div className={clsx('cardgroup', `cardgroup--${appearance}`, className)}>{children}</div>
 );

@@ -1,8 +1,8 @@
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-export default function MobileSidebarToggle(): React.Element {
+export default function MobileSidebarToggle(): ReactElement {
   const { toggle, shown } = useNavbarMobileSidebar();
 
   return (

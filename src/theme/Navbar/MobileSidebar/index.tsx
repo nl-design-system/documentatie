@@ -3,9 +3,9 @@ import NavbarMobileSidebarHeader from '@theme/Navbar/MobileSidebar/Header';
 import NavbarMobileSidebarLayout from '@theme/Navbar/MobileSidebar/Layout';
 import NavbarMobileSidebarPrimaryMenu from '@theme/Navbar/MobileSidebar/PrimaryMenu';
 import NavbarMobileSidebarSecondaryMenu from '@theme/Navbar/MobileSidebar/SecondaryMenu';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-export default function NavbarMobileSidebar(): React.Element | null {
+export default function NavbarMobileSidebar(): ReactElement | null {
   const mobileSidebar = useNavbarMobileSidebar();
   useLockBodyScroll(mobileSidebar.shown);
 

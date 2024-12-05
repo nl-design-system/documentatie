@@ -1,9 +1,8 @@
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
-import React from 'react';
-import style from './TaskList.module.css';
 import { successCriteriaMap } from './wcag22';
+import './TaskList.css';
 
 export interface WcagListItemProps {
   sc: string;
@@ -21,9 +20,9 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
   const data = successCriteriaMap.get(sc);
   const title = data ? `${sc} ${data.nl?.title}` : sc;
   return (
-    <li className={clsx(style['task-list-item'])}>
-      <div className={clsx(style['task-list-item__marker'], checked && style['task-list-item__marker--checked'])}>
-        <span className={style['task-list-item__marker-label']}>{checked ? 'Afgevinkt. ' : 'Niet afgevinkt. '}</span>
+    <li className={clsx('task-list-item')}>
+      <div className={clsx('task-list-item__marker', checked && 'task-list-item__marker--checked')}>
+        <span className="task-list-item__marker-label">{checked ? 'Afgevinkt. ' : 'Niet afgevinkt. '}</span>
         {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
       </div>
       <div>
@@ -37,7 +36,7 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
 };
 
 export const WcagList = ({ headingLevel, items }: WcagListProps) => (
-  <ul className={style['task-list']}>
+  <ul className="task-list">
     {items.map((item, index) => (
       <WcagListItem key={index} headingLevel={headingLevel} {...item} />
     ))}

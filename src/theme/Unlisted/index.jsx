@@ -1,5 +1,4 @@
 import { UnlistedMetadata } from '@docusaurus/theme-common';
-import React from 'react';
 
 export default function Unlisted() {
   return (
