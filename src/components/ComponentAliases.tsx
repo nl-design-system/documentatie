@@ -9,17 +9,23 @@ interface ComponentAliasesProps {
 export const ComponentAliases = ({ component }: PropsWithChildren<ComponentAliasesProps>) => {
   const { title } = component;
   const slug = toKebabCase(title);
-  let Aliases = React.lazy(() => import(`@nl-design-system-candidate/${slug}-docs/docs/aliases.md`));
+  let Aliases = React.lazy(() =>
+    import(`@nl-design-system-candidate/${slug}-docs/docs/aliases.md`).catch(() => {
+      return { default: () => null };
+    }),
+  );
 
   return (
     <>
-      <Suspense>
-        {Aliases && (
-          <Markdown omitH1 headingLevel={1}>
-            <Aliases />
-          </Markdown>
-        )}
-      </Suspense>
+      {Aliases && (
+        <Suspense>
+          {Aliases && (
+            <Markdown omitH1 headingLevel={1}>
+              <Aliases />
+            </Markdown>
+          )}
+        </Suspense>
+      )}
     </>
   );
 };

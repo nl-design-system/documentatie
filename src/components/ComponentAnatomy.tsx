@@ -6,24 +6,35 @@ import style from './ComponentAnatomy.module.css';
 
 interface ComponentAnatomyProps {
   component?: object;
+  illustration?: React.ComponentType<any>;
 }
 
-export const ComponentAnatomy = ({ component }: PropsWithChildren<ComponentAnatomyProps>) => {
+export const ComponentAnatomy = ({
+  component,
+  illustration: AnatomyIllustration,
+}: PropsWithChildren<ComponentAnatomyProps>) => {
   const { title } = component;
   const slug = toKebabCase(title);
-  let AnatomyLegend = React.lazy(() => import(`@nl-design-system-candidate/${slug}-docs/docs/anatomy/anatomy.md`));
-  let AnatomyIllustration = React.lazy(
-    () => import(`@nl-design-system-candidate/code-block-docs/docs/anatomy/anatomy.svg`),
+  let AnatomyLegend = React.lazy(() =>
+    import(`@nl-design-system-candidate/${slug}-docs/docs/anatomy/anatomy.md`).catch(() => {
+      return { default: () => null };
+    }),
   );
 
   return (
-    <Suspense>
-      <AnatomyIllustration height={null} className={clsx(style['component-anatomy__illustration'])} />
-      {AnatomyLegend && (
-        <Markdown omitH1 headingLevel={1}>
-          <AnatomyLegend />
-        </Markdown>
-      )}
-    </Suspense>
+    <>
+      {
+        <Suspense fallback={''}>
+          {AnatomyIllustration && (
+            <AnatomyIllustration height={null} className={clsx(style['component-anatomy__illustration'])} />
+          )}
+          {AnatomyIllustration && AnatomyLegend && (
+            <Markdown omitH1 headingLevel={1}>
+              <AnatomyLegend />
+            </Markdown>
+          )}
+        </Suspense>
+      }
+    </>
   );
 };
