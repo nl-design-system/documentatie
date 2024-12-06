@@ -940,10 +940,6 @@ pre {
   display: none !important;
 }
 
-.utrecht-paragraph--lead + p {
-  margin-block-start: var(--utrecht-paragraph-margin-block-start);
-}
-
 /* Temporary fix for accordion spacing */
 .utrecht-accordion__header {
   margin: 0;

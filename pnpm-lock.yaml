@@ -23,18 +23,6 @@ importers:
       '@iframe-resizer/react':
         specifier: 5.3.2
         version: 5.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@nl-design-system-candidate/code-block-docs':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@nl-design-system-candidate/code-docs':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@nl-design-system-candidate/color-sample-docs':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@nl-design-system-candidate/data-badge-docs':
-        specifier: 1.0.0
-        version: 1.0.0
       '@tabler/icons-react':
         specifier: 3.17.0
         version: 3.17.0(react@18.3.1)
@@ -115,8 +103,8 @@ importers:
         specifier: 1.0.0-alpha.151
         version: 1.0.0-alpha.151
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.82
-        version: 1.0.1-alpha.82
+        specifier: 1.0.1-alpha.80
+        version: 1.0.1-alpha.80
       '@nl-design-system/eslint-config':
         specifier: 0.0.1
         version: 0.0.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.6.2)
@@ -1773,23 +1761,11 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
-  '@nl-design-system-candidate/code-block-docs@1.0.0':
-    resolution: {integrity: sha512-q/CkCZ6yRMOz0bk8KLbf84/B0v4YGR7pAHtPASuWwiNlfZMGAfUx3DrA8dV4hhpwnU0DwPHn66ZH/nVLhtBWqQ==}
-
-  '@nl-design-system-candidate/code-docs@1.0.0':
-    resolution: {integrity: sha512-W2/nT/7IBtjevimcDjdVEsAVahn+fxjsfIMOV2gsRMvfRqqdkt7gbm93+Ft57gBV7IjmQwEM+kve0evBKs1BiQ==}
-
-  '@nl-design-system-candidate/color-sample-docs@1.0.0':
-    resolution: {integrity: sha512-86THgXAlKVTibK02yS9GNcfCcTI9oqRVfAxAh2KALw8GwtLwkqzMDyZYN+bjXJCB2lIumuGEtpuwmeab8WZibQ==}
-
-  '@nl-design-system-candidate/data-badge-docs@1.0.0':
-    resolution: {integrity: sha512-dIyFVgn00Yf/WYXwOdAiTim2izKuswPDJt3ajzAJ59pWLqs0lig7OoTvRmaNp79iee9oE/nuoa1liKqs2HXQhA==}
-
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
     resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.82':
-    resolution: {integrity: sha512-9QmyZHcK4VD41KsdqLpxgNmEL8SwLL1JbB0cVF6Q/Mw7tQBXoxuCA2ihODXKAC16MHTodz89vsTVLFsTTs6PBw==}
+  '@nl-design-system/component-progress@1.0.1-alpha.80':
+    resolution: {integrity: sha512-PJT8gbuMCFOys1OM6FzB7w+CO87rFQbN023CPbgbdGMhxodtbW5yhkEg9i2ooVVuYxtkXR/ospqFpdAAnNbPJg==}
 
   '@nl-design-system/eslint-config@0.0.1':
     resolution: {integrity: sha512-zgKEBk0S88bkRX4zRihhoOidQtekpvOHWOOPl0aJhTy5aF2hyFzbzDTGjPgpseo0lDbwZjd7LUwLJevOj83WYg==}
@@ -10030,17 +10006,9 @@ snapshots:
       '@types/react': 18.3.12
       react: 18.3.1
 
-  '@nl-design-system-candidate/code-block-docs@1.0.0': {}
-
-  '@nl-design-system-candidate/code-docs@1.0.0': {}
-
-  '@nl-design-system-candidate/color-sample-docs@1.0.0': {}
-
-  '@nl-design-system-candidate/data-badge-docs@1.0.0': {}
-
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.82': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.80': {}
 
   '@nl-design-system/eslint-config@0.0.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.6.2)':
     dependencies:
