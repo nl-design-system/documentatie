@@ -19,6 +19,7 @@ import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './index.css';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -107,8 +108,13 @@ const ContrastPage = () => {
   const { search } = useLocation();
 
   const params = new URLSearchParams(search);
-  const backgroundColor = params.get('background-color');
-  const color = params.get('color');
+  let backgroundColor = params.get('background-color');
+  let color = params.get('color');
+
+  if (!backgroundColor && !color) {
+    backgroundColor = 'white';
+    color = '#000000';
+  }
 
   const parsedBackgroundColor = parseColor(backgroundColor);
   const parsedColor = parseColor(color);
@@ -203,13 +209,25 @@ const ContrastPage = () => {
       >
         <Heading1>Contrast van kleuren</Heading1>
         <Paragraph lead>
-          Vul de CSS-kleurcodes in van twee kleuren. Controleer dan voor welke toepassingen je de combinatie kunt
-          gebruiken.
+          Vul de voorgrondkleur en achtergrondkleur in als CSS-waarden. Controleer dan voor welke toepassingen je de
+          combinatie kunt gebruiken. Bijvoorbeeld:
         </Paragraph>
+        <UnorderedList>
+          <UnorderedListItem>
+            hex-kleuren <Code>#F00</Code>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            rgb-kleuren: <Code>rgb(255 0 0)</Code>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            kleurnamen: <Code>red</Code>
+          </UnorderedListItem>
+        </UnorderedList>
+
         <form method="get" action="./" className="nlds-form">
           <FormFieldTextbox
             name="background-color"
-            label={<Code>background-color</Code>}
+            label="Achtergrondkleur"
             defaultValue={backgroundColor}
             style={{
               '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)',
@@ -218,7 +236,7 @@ const ContrastPage = () => {
           <FormFieldTextbox
             name="color"
             defaultValue={color}
-            label={<Code>color</Code>}
+            label="Voorgrondkleur"
             style={{
               '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)',
             }}
