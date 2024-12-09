@@ -35,6 +35,21 @@ importers:
       '@nl-design-system-candidate/data-badge-docs':
         specifier: 1.0.0
         version: 1.0.0
+      '@nl-design-system-candidate/heading-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/link-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/mark-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/paragraph-docs':
+        specifier: 1.0.1
+        version: 1.0.1
+      '@nl-design-system-candidate/skip-link-docs':
+        specifier: 1.0.0
+        version: 1.0.0
       '@tabler/icons-react':
         specifier: 3.17.0
         version: 3.17.0(react@18.3.1)
@@ -1784,6 +1799,21 @@ packages:
 
   '@nl-design-system-candidate/data-badge-docs@1.0.0':
     resolution: {integrity: sha512-dIyFVgn00Yf/WYXwOdAiTim2izKuswPDJt3ajzAJ59pWLqs0lig7OoTvRmaNp79iee9oE/nuoa1liKqs2HXQhA==}
+
+  '@nl-design-system-candidate/heading-docs@1.0.0':
+    resolution: {integrity: sha512-mXlHAXXiD+oY9tXd4DDs/O4GWpYF6joxIhA7FzMSyFPOLpAXDLulaQa4h7QwVr4rg2Gp3C8VLAwA+SIOBwIyjw==}
+
+  '@nl-design-system-candidate/link-docs@1.0.0':
+    resolution: {integrity: sha512-vEbv0ddikP6BbXIxiqnHpmxC3YqLUA34R/GvH7iy2mWc7QARBSZ0P7nrbtDXfrdieQ6rlewkCD2OvQkz45Aamw==}
+
+  '@nl-design-system-candidate/mark-docs@1.0.0':
+    resolution: {integrity: sha512-mB0TUM/Yb+DTkzABNkXfJ8pZnE+mh07BRd1MXl8hsdh3AXVDtbOb9SfQMon0w/62fIe3JBYWmHDHA9nCsc5s5Q==}
+
+  '@nl-design-system-candidate/paragraph-docs@1.0.1':
+    resolution: {integrity: sha512-uyQZJ6YvAo2P87n2/KQqHPotD4TOkU4rwDkix1N+IZfgS/2Wk5JcmuwsXz1elCyzuXepcQ9Q2/1HVYD3An7HRw==}
+
+  '@nl-design-system-candidate/skip-link-docs@1.0.0':
+    resolution: {integrity: sha512-M+XE6EtpNExWpXpiw3HKR+enRkA4M0HcuNlDV9m/HimMiKDf7cfGn0xprQHSNU+AFrBg9bIlPFnGTuKOVx6yEw==}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
     resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
@@ -10037,6 +10067,16 @@ snapshots:
   '@nl-design-system-candidate/color-sample-docs@1.0.0': {}
 
   '@nl-design-system-candidate/data-badge-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/link-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/mark-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/paragraph-docs@1.0.1': {}
+
+  '@nl-design-system-candidate/skip-link-docs@1.0.0': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
 
