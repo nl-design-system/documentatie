@@ -59,8 +59,8 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
   <p>Gerapporteerd over 50 van 50 WCAG 2.1 AA Success Criteria.</p>
 
   <ul>
-    <li><span>33</span> <span>Voldoende</span></li>
-    <li><span>2</span> <span>Onvoldoende</span></li>
+    <li><span>34</span> <span>Voldoende</span></li>
+    <li><span>1</span> <span>Onvoldoende</span></li>
     <li><span>0</span> <span>Onbekend</span></li>
     <li><span>15</span> <span>Niet van toepassing</span></li>
     <li><span>0</span> <span>Niet getoetst</span></li>
