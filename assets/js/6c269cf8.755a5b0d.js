@@ -1,4 +1,4 @@
-/*! For license information please see 6c269cf8.202daf7c.js.LICENSE.txt */
+/*! For license information please see 6c269cf8.755a5b0d.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [12356],
@@ -224,27 +224,28 @@
     f = () => {
      const { siteConfig: e } = (0, l.Z)(),
       { search: L } = (0, o.TH)(),
-      t = new URLSearchParams(L),
-      s = t.get('background-color'),
-      i = t.get('color'),
-      d = g(s),
-      h = g(i),
-      x = `https://nldesignsystem.nl/contrast/?${new URLSearchParams({ 'background-color': s, color: i }).toString()}`,
-      y = d && h ? d.contrast(h) : null,
-      f = [
-       { positive: !0, result: y >= 4.5, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor alle tekst, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: b },
-       { positive: !0, result: y >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren voor iconen gebruiken, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: v },
-       { positive: !0, result: y >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor tekst groter dan 24px, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: k },
-       { positive: !0, result: y >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor vette tekst groter dan 18.5px, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: j },
-       { positive: !1, result: y >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet voor iconen gebruiken, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: v },
-       { positive: !1, result: y >= 4.5, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet gebruiken voor tekst, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: b },
-       { positive: !1, result: y >= 7, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet gebruiken voor tekst, als je wilt voldoen aan WCAG 2.2 AAA niveau.' }), container: 'document', example: b },
+      t = new URLSearchParams(L);
+     let s = t.get('background-color'),
+      d = t.get('color');
+     s || d || ((s = 'white'), (d = '#000000'));
+     const h = g(s),
+      x = g(d),
+      y = `https://nldesignsystem.nl/contrast/?${new URLSearchParams({ 'background-color': s, color: d }).toString()}`,
+      f = h && x ? h.contrast(x) : null,
+      _ = [
+       { positive: !0, result: f >= 4.5, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor alle tekst, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: b },
+       { positive: !0, result: f >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren voor iconen gebruiken, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: v },
+       { positive: !0, result: f >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor tekst groter dan 24px, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: k },
+       { positive: !0, result: f >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren gebruiken voor vette tekst groter dan 18.5px, als je wilt voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: j },
+       { positive: !1, result: f >= 3, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet voor iconen gebruiken, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: v },
+       { positive: !1, result: f >= 4.5, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet gebruiken voor tekst, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.' }), container: 'document', example: b },
+       { positive: !1, result: f >= 7, content: (0, a.jsx)(a.Fragment, { children: 'Je mag de kleuren niet gebruiken voor tekst, als je wilt voldoen aan WCAG 2.2 AAA niveau.' }), container: 'document', example: b },
       ],
-      _ = f.filter((e) => {
+      C = _.filter((e) => {
        let { result: L, positive: t } = e;
        return t && L === t;
       }),
-      C = f.filter((e) => {
+      N = _.filter((e) => {
        let { result: L, positive: t } = e;
        return !t && L === t;
       });
@@ -254,36 +255,37 @@
        style: { '--utrecht-space-around': 1, maxInlineSize: '600px', marginInlineEnd: 'auto', marginInlineStart: 'auto' },
        children: [
         (0, a.jsx)(n.nL, { children: 'Contrast van kleuren' }),
-        (0, a.jsx)(n.nv, { lead: !0, children: 'Vul de CSS-kleurcodes in van twee kleuren. Controleer dan voor welke toepassingen je de combinatie kunt gebruiken.' }),
-        (0, a.jsxs)('form', { method: 'get', action: './', className: 'nlds-form', children: [(0, a.jsx)(u, { name: 'background-color', label: (0, a.jsx)(n.EK, { children: 'background-color' }), defaultValue: s, style: { '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)' } }), (0, a.jsx)(u, { name: 'color', defaultValue: i, label: (0, a.jsx)(n.EK, { children: 'color' }), style: { '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)' } }), (0, a.jsx)(n.zx, { type: 'submit', appearance: 'primary-action-button', children: 'Contrast berekenen' })] }),
-        'number' == typeof y &&
+        (0, a.jsx)(n.nv, { lead: !0, children: 'Vul de voorgrondkleur en achtergrondkleur in als CSS-waarden. Controleer dan voor welke toepassingen je de combinatie kunt gebruiken. Bijvoorbeeld:' }),
+        (0, a.jsxs)(i.QI, { children: [(0, a.jsxs)(i.AS, { children: ['hex-kleuren ', (0, a.jsx)(n.EK, { children: '#F00' })] }), (0, a.jsxs)(i.AS, { children: ['rgb-kleuren: ', (0, a.jsx)(n.EK, { children: 'rgb(255 0 0)' })] }), (0, a.jsxs)(i.AS, { children: ['kleurnamen: ', (0, a.jsx)(n.EK, { children: 'red' })] })] }),
+        (0, a.jsxs)('form', { method: 'get', action: './', className: 'nlds-form', children: [(0, a.jsx)(u, { name: 'background-color', label: 'Achtergrondkleur', defaultValue: s, style: { '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)' } }), (0, a.jsx)(u, { name: 'color', defaultValue: d, label: 'Voorgrondkleur', style: { '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)' } }), (0, a.jsx)(n.zx, { type: 'submit', appearance: 'primary-action-button', children: 'Contrast berekenen' })] }),
+        'number' == typeof f &&
          (0, a.jsxs)('div', {
           children: [
            (0, a.jsx)(n.XJ, { id: 'output', children: 'Resultaat' }),
-           (0, a.jsx)(c, { backgroundColor: s, color: i, contrastRatio: y }),
-           (0, a.jsx)(n.hE, { style: { display: 'none' }, children: (0, a.jsx)(n.zx, { appearance: 'secondary-action-button', onClick: () => navigator.clipboard.writeText(x), children: 'Link kopi\xebren' }) }),
-           _.length > 0 &&
+           (0, a.jsx)(c, { backgroundColor: s, color: d, contrastRatio: f }),
+           (0, a.jsx)(n.hE, { style: { display: 'none' }, children: (0, a.jsx)(n.zx, { appearance: 'secondary-action-button', onClick: () => navigator.clipboard.writeText(y), children: 'Link kopi\xebren' }) }),
+           C.length > 0 &&
             (0, a.jsxs)(a.Fragment, {
              children: [
               (0, a.jsx)(n.nv, { children: 'Gebruik deze kleuren voor bijvoorbeeld:' }),
               (0, a.jsx)('div', {
-               children: _.map((e, L) => {
+               children: C.map((e, L) => {
                 let { container: t, content: o, example: l, positive: n } = e;
-                return (0, a.jsx)(p.X, { appearance: n ? 'do' : 'dont', title: o, figure: !0, children: (0, a.jsx)(r.X, { language: 'html', code: null, displayCode: !1, container: t, designTokens: { backgroundColor: s, color: i, forcedColorAdjust: 'none', '--utrecht-surface-background-color': s, '--utrecht-surface-color': i, '--utrecht-document-background-color': s, '--utrecht-document-color': i, '--utrecht-icon-color': 'currentColor', '--utrecht-paragraph-color': 'currentColor' }, children: l }) }, L);
+                return (0, a.jsx)(p.X, { appearance: n ? 'do' : 'dont', title: o, figure: !0, children: (0, a.jsx)(r.X, { language: 'html', code: null, displayCode: !1, container: t, designTokens: { backgroundColor: s, color: d, forcedColorAdjust: 'none', '--utrecht-surface-background-color': s, '--utrecht-surface-color': d, '--utrecht-document-background-color': s, '--utrecht-document-color': d, '--utrecht-icon-color': 'currentColor', '--utrecht-paragraph-color': 'currentColor' }, children: l }) }, L);
                }),
               }),
              ],
             }),
-           C.length > 0 &&
+           N.length > 0 &&
             (0, a.jsxs)(a.Fragment, {
              children: [
               (0, a.jsx)(n.XJ, { children: 'Niet doen' }),
               (0, a.jsxs)(n.nv, { children: ['Deze kleuren moet je ', (0, a.jsx)('strong', { children: 'niet gebruiken' }), ' voor:'] }),
               ' ',
               (0, a.jsx)('div', {
-               children: C.map((e, L) => {
+               children: N.map((e, L) => {
                 let { container: t, content: o, example: l, positive: n } = e;
-                return (0, a.jsx)(p.X, { appearance: n ? 'do' : 'dont', title: o, children: (0, a.jsx)(r.X, { language: 'html', code: null, displayCode: !1, container: t, designTokens: { backgroundColor: s, color: i, forcedColorAdjust: 'none', '--utrecht-surface-background-color': s, '--utrecht-surface-color': i, '--utrecht-document-background-color': s, '--utrecht-document-color': i, '--utrecht-icon-color': 'currentColor', '--utrecht-paragraph-color': 'currentColor' }, children: l }) }, L);
+                return (0, a.jsx)(p.X, { appearance: n ? 'do' : 'dont', title: o, children: (0, a.jsx)(r.X, { language: 'html', code: null, displayCode: !1, container: t, designTokens: { backgroundColor: s, color: d, forcedColorAdjust: 'none', '--utrecht-surface-background-color': s, '--utrecht-surface-color': d, '--utrecht-document-background-color': s, '--utrecht-document-color': d, '--utrecht-icon-color': 'currentColor', '--utrecht-paragraph-color': 'currentColor' }, children: l }) }, L);
                }),
               }),
              ],
