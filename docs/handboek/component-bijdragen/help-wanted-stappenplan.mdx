@@ -394,11 +394,50 @@ Doel: Hierdoor kan de component worden opgepakt door de community.
 
 Deze stap kan enkel worden uitgevoerd door het kernteam.
 
-- Schematische afbeelding gemaakt in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
-- Component progress geupdate zodat de laatste status van de component wordt meegenomen.
-  - [Pakketje](https://www.npmjs.com/package/@nl-design-system/component-progress) updaten met [action](https://github.com/nl-design-system/index/actions/workflows/continuous-deployment.yml).
-  - In de documentatie repository `pnpm install --save-dev @nl-design-system/component-progress@latest`
+### Schematische afbeelding maken
+
+- Maak een schematische afbeelding in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
+- Gebruik als naam voor het frame 'componenten_overzicht_{naam-van-component}.
+- Exporteer de afbeelding als svg bestand.
+
+Doorloop de volgende stappen om de schematische afbeelding mee te laten kleuren met statussen van het Estafettemodel.
+
+Tip voor als je deze stap voor het eerst doorloopt. Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
+
+1. Open VS code.
+2. Ga binnen de [documentatie repository](https://github.com/nl-design-system/documentatie) naar de (folder 'svg')[https://github.com/nl-design-system/documentatie/tree/main/static/svg].
+3. Sleep het svg bestand in deze folder.
+Stop de svg daar in door het bestand daar naartoe te slepen
+Open een svg bestand
+Kies View in de hoofd navigatie en open Command Pallete
+Typ svg
+Kies preview SVG
+Verander alle fill kleuren en stroke kleuren naar design-tokens + fallback
+#F9F6F3 wordt var(--component-illustration-background-color, white)
+#E4EBED wordt var(--component-illustration-grid-color, #EEE)
+#004152 wordt var(--component-illustration-color, Design voor theme validator #666)
+white wordt var(--component-illustration-background-color, white)
+Voeg een symbol toe zodat de code het svg dynamisch kan inladen inclusief design tokens.
+Op regel 2 na de svg start tag: zet
+Op de 1-na laatste regel voor zet
+Nu zie je geen preview meer. Voeg dus ook toe. Nu ben je klaar!
+Maak een branch feat/add-{component}-illustration
+Maak een commit feat: add {component} illustration
+Push naar GitHub
+Maak en PR
+Laat het reviewen
+✨ Merge!
+
+### Documentatie pagina toevoegen
+
 - Component toegevoegd aan de [documentatie repository](https://github.com/nl-design-system/documentatie/tree/main/docs/componenten) met behulp van [de component template](https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx).
+
+### Component progress bijwerken
+
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken op [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in een nieuwe branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
+- Push je branch naar GitHub en maak er een pull request voor aan.
 
 **🚩 Checkpoint**: nldesignsystem.nl
 
