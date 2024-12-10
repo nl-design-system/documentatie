@@ -1,0 +1,53 @@
+---
+title: VUL_NAAM_IN
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: VUL_NAAM_IN
+pagination_label: VUL_NAAM_IN
+description: VUL_BESCHRIJVING_IN
+slug: /VUL_NAAM_ALS_KEBABJE_IN
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import XYZIllustration from "@nl-design-system-candidate/xyz-docs/docs/anatomy/anatomy.svg"; /* importeer de illustratie van de anatomie voor dit component; vervang XYZ in de variabelenaam en xyz in het geïmporteerde pad met de naam van het component */
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
+import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
+
+{/* Add name and description for the component */}
+export const title = ""; //Vul naam in
+export const description = ""; //Vul component beschrijving in
+export const issueNumber = 0; //Vul GitHub Issue nummer in
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentAliases component={component} />
+
+## Anatomie
+
+<ComponentAnatomy component={component} illustration={XYZIllustration} /> {/* Vervang “XYZIllustration” met de naam van de variabele waarin je de illustratie van dit component hebt opgeslagen */}
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Help component verbeteren
+
+<HelpImproveComponent component={component} headingLevel={3} />
