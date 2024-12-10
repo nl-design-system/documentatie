@@ -19,6 +19,7 @@ Redirect 301 "/definition-list" "/description-list"
 Redirect 301 "/summary-list" "/form-summary"
 Redirect 301 "/wcag/introduction" "/wcag"
 Redirect 301 "/textarea" "/text-area"
+Redirect 301 "/contrast" "/tools/contrast"
 
 RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
 
