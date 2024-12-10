@@ -69,10 +69,13 @@ Doel: Een plek om input te verzamelen.
 
 We gebruiken [GitHub 'Discussions' van NL Design System](https://github.com/orgs/nl-design-system/discussions) om input te verzamelen.
 
-- Start een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/new?category=component-suggestions) voor de component.
-- Vul als titel in: `{naam-component}`.
-- Vul als beschrijving onderstaande template in en start de GitHub Discussion.
+Start een [GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/new?category=component-suggestions) voor de component. Gebruik hierbij de volgende opzet:
 
+**Title**
+```
+{naam-component}
+```
+**Description**
 ```md
 ## Naam
 
@@ -111,10 +114,14 @@ Doel: Zichtbaarheid en overzicht creëren zodat componenten niet dubbel worden t
 
 We gebruiken 'Issues' in de [GitHub 'Backlog' repository van NL Design System](https://github.com/nl-design-system/backlog/issues) om onze backlog te beheren.
 
-- Maak een ['Issue](https://github.com/nl-design-system/backlog/issues/new) voor de component.
-- Vul als titel in: `{naam-component}`.
-- Vul als beschrijving onderstaande template in en maak het issue aan.
+Maak een ['Issue](https://github.com/nl-design-system/backlog/issues/new) voor de component. Gebruik hierbij de volgende opzet:
 
+**Title**
+```
+{naam-component}
+```
+
+**Description**
 ```md
 ## Naam
 
@@ -123,8 +130,11 @@ We gebruiken 'Issues' in de [GitHub 'Backlog' repository van NL Design System](h
 [Link naar GitHub Discussion]({link-github-discussion})
 ```
 
-Selecteer bij 'Labels' het label: Component.
-Selecteer bij 'Projects' het project: Components - 1 - Help Wanted.
+- Selecteer bij 'Labels' het label: Component.
+- Selecteer bij 'Projects' het project: Components - 1 - Help Wanted.
+
+**Tip!**
+Het selecteren van labels en projects kan alleen door het kernteam worden gedaan. Vraag ons gerust even om hulp, kleine moeite.
 
 **🚩 Checkpoint**: Backlog
 
@@ -395,17 +405,15 @@ Doel: iedereen kan zien dat de component nu richting Community wil.
 
 Deze stap kan enkel worden uitgevoerd door het kernteam.
 
-1. Voeg het 'Help Wanted' label toe aan de GitHub Discussion.
-2. Voeg het 'Help Wanted' label toe aan het backlog issue.
-3. Selecteer bij ‘Projects’ de volgende extra projecten:
-
-- Components - 2 - Community
-- Components - 3 - Candidate
-- Components - 4 - Hall of Fame
-
-4. Filter het [Community bord](https://github.com/orgs/nl-design-system/projects/29/views/1) op de component door op `{naam-component}` te zoeken.
-5. Kopieer de url na het filteren.
-6. Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
+- Voeg het 'Help Wanted' label toe aan de GitHub Discussion.
+- Voeg het 'Help Wanted' label toe aan het backlog issue.
+- Selecteer bij ‘Projects’ de volgende extra projecten:
+  - Components - 2 - Community
+  - Components - 3 - Candidate
+  - Components - 4 - Hall of Fame
+- Filter het [Community bord](https://github.com/orgs/nl-design-system/projects/29/views/1) op de component door op `{naam-component}` te zoeken.
+- Kopieer de url na het filteren.
+- Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
 
 ```md
 ## ✨ Dit component is nu Help Wanted ✨
@@ -493,9 +501,24 @@ feat: add documentation page for {naam-component}
 build: update component progress
 ```
 
-### Branch pushen
+### Branch publiceren
 
-- Push je branch naar GitHub en maak een pull request (PR) aan.
+- Publiceer je branch naar GitHub om een pull request (PR) aan te maken.
+- Ga naar GitHub en gebruik de volgende opzet voor je PR:
+
+**Title**
+```
+docs: add {naam-component} to documentation site
+```
+
+**Description**
+```
+- add illustration for {naam-component}.
+- add documentation page for {naam-component}.
+- update component progress.
+```
+
+- Klik op 'Create Pull Request'
 - Geef een developer uit het kernteam via Slack een seintje dat de PR klaar staat.
 
 **🚩 Checkpoint**: nldesignsystem.nl
