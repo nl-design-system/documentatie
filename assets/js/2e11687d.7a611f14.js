@@ -1,5 +1,5 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [72837],
+ [42112],
  {
   78187: (e, t, n) => {
    'use strict';
@@ -29,6 +29,20 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
+  53590: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => o });
+   var r = n(52676),
+    i = n(87118);
+   function s(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: '4,5:1 contrast voor normale tekst.' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor grotere letters (vanaf 24 pixels).' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Hogere verhoudingen mogen natuurlijk altijd. Met de ', (0, r.jsx)(t.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.'] }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   82959: (e, t, n) => {
    'use strict';
    n.d(t, { ZP: () => o });
@@ -43,16 +57,44 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  18467: (e, t, n) => {
+  43486: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => P, component: () => H, contentTitle: () => _, default: () => Z, description: () => E, frontMatter: () => D, issueNumber: () => U, metadata: () => F, title: () => O, toc: () => M });
+   n.d(t, { ZP: () => o });
+   var r = n(52676),
+    i = n(87118);
+   function s(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij het om een logo gaat, zoals een DigiD-logo.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button', children: 'Afbeeldingen als buttons' }) }), '\n'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  64154: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => o });
+   var r = n(52676),
+    i = n(87118);
+   function s(e) {
+    const t = { code: 'code', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een ', (0, r.jsx)(t.code, { children: 'lang' }), '-attribuut met de juiste taalcode.'] }), '\n', (0, r.jsx)(t.p, { children: 'Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.' })] });
+   }
+   function o(e = {}) {
+    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  23074: (e, t, n) => {
+   'use strict';
+   n.r(t), n.d(t, { assets: () => S, component: () => O, contentTitle: () => N, default: () => Z, description: () => M, frontMatter: () => L, issueNumber: () => B, metadata: () => _, title: () => P, toc: () => F });
    var r,
     i,
     s,
     o,
+    a,
     c,
     l,
-    a,
     d = n(52676),
     u = n(87118),
     h = n(81862),
@@ -73,72 +115,58 @@
    }
    const p = (e) => {
     let { title: t, titleId: n, ...d } = e;
-    return g.createElement('svg', m({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-labelledby': n }, d), t ? g.createElement('title', { id: n }, t) : null, r || (r = g.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = g.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = g.createElement('path', { fill: '#5315F6', d: 'M463.5 253.5h33v33h-33z' })), o || (o = g.createElement('path', { stroke: '#E4E7EC', d: 'M463.5 253.5h33v33h-33z' })), c || (c = g.createElement('rect', { x: 384, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), l || (l = g.createElement('path', { d: 'M402.502 264.368V276.5H400v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), a || (a = g.createElement('path', { d: 'M416 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+    return g.createElement('svg', m({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-labelledby': n }, d), t ? g.createElement('title', { id: n }, t) : null, r || (r = g.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = g.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = g.createElement('rect', { x: 456, y: 258, width: 48, height: 24, rx: 4, fill: '#F5F2FF' })), o || (o = g.createElement('path', { d: 'M463.664 263.912v9.008h4.32l-.272 2.08h-6.672v-11.088h2.624Zm12.127 8.624c0 .32.043.555.128.704a.868.868 0 0 0 .448.336l-.528 1.648c-.523-.043-.949-.155-1.28-.336-.331-.192-.587-.491-.768-.896-.555.853-1.408 1.28-2.56 1.28-.843 0-1.515-.245-2.016-.736-.501-.491-.752-1.131-.752-1.92 0-.928.341-1.637 1.024-2.128.683-.491 1.669-.736 2.96-.736h.864v-.368c0-.501-.107-.843-.32-1.024-.213-.192-.587-.288-1.12-.288-.277 0-.613.043-1.008.128-.395.075-.8.181-1.216.32l-.576-1.664a9.774 9.774 0 0 1 1.632-.464 8.466 8.466 0 0 1 1.568-.16c1.216 0 2.107.251 2.672.752s.848 1.253.848 2.256v3.296Zm-3.824.928c.576 0 1.024-.272 1.344-.816v-1.504h-.624c-.576 0-1.008.101-1.296.304-.277.203-.416.517-.416.944 0 .341.085.608.256.8.181.181.427.272.736.272Zm10.654-7.232c1.013 0 1.792.4 2.336 1.2.544.789.816 1.899.816 3.328 0 .875-.139 1.653-.416 2.336-.267.683-.656 1.216-1.168 1.6-.502.384-1.099.576-1.792.576-.459 0-.88-.096-1.264-.288a2.87 2.87 0 0 1-.96-.8l-.128.816h-2.24v-11.872l2.528-.272v4.512c.256-.352.581-.629.976-.832a2.886 2.886 0 0 1 1.312-.304Zm-.96 7.2c.992 0 1.488-.891 1.488-2.672 0-1.013-.118-1.712-.352-2.096a1.13 1.13 0 0 0-1.024-.576c-.566 0-1.046.331-1.44.992v3.536c.16.256.352.459.576.608.234.139.485.208.752.208Zm13.098-2.848c0 .352-.016.656-.048.912h-5.264c.086.715.288 1.216.608 1.504.32.288.763.432 1.328.432.342 0 .672-.059.992-.176a5.45 5.45 0 0 0 1.04-.576l1.04 1.408c-.992.789-2.096 1.184-3.312 1.184-1.376 0-2.432-.405-3.168-1.216-.736-.811-1.104-1.899-1.104-3.264 0-.864.155-1.637.464-2.32a3.734 3.734 0 0 1 1.36-1.632c.598-.405 1.312-.608 2.144-.608 1.227 0 2.187.384 2.88 1.152.694.768 1.04 1.835 1.04 3.2Zm-2.48-.72c-.021-1.301-.48-1.952-1.376-1.952-.437 0-.778.16-1.024.48-.234.32-.378.848-.432 1.584h2.832v-.112Zm6.157 5.408c-.736 0-1.312-.208-1.728-.624-.406-.427-.608-1.029-.608-1.808v-9.712l2.528-.272v9.888c0 .352.144.528.432.528.149 0 .288-.027.416-.08l.496 1.792a3.944 3.944 0 0 1-1.536.288Z', fill: '#0A2750' })), a || (a = g.createElement('rect', { x: 376, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), c || (c = g.createElement('path', { d: 'M394.502 264.368V276.5H392v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), l || (l = g.createElement('path', { d: 'M408 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
    };
    var j = n(78187);
    function w(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam van de kleur, de hex-code of de hsl-waarde, de transparantie, het doel van de kleur, de CSS-class.' }), '\n', (0, d.jsx)(t.p, { children: 'Dan is het voor screenreadergebruikers en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.' }), '\n', (0, d.jsx)(t.p, { children: 'Gerelateerde NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/niet-kleur-alleen', children: 'Vertrouw niet op kleur alleen' }) }), '\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/waarneming', children: 'Let op verschillen in waarneming van kleur' }) }), '\n'] })] });
+    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.' }), '\n', (0, d.jsxs)(t.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een ', (0, d.jsx)(t.code, { children: 'img' }), ' kan dan een leeg ', (0, d.jsx)(t.code, { children: 'alt' }), '-attribuut krijgen (', (0, d.jsx)(t.code, { children: 'alt=""' }), ').'] }), '\n', (0, d.jsx)(t.p, { children: 'Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.' }), '\n', (0, d.jsxs)(t.p, { children: ['Een ', (0, d.jsx)(t.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.'] }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<span><img src="klok.svg" alt="tijd" />12.45</span>\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n'] })] });
    }
    function y(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
    }
-   function v(e) {
-    const t = { code: 'code', p: 'p', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Een screenreadergebruiker kan herkennen welk kleurvlak bij welke eigenschappen hoort.\nDit is niet alleen via de visuele informatie beschikbaar, maar ook vanuit de semantiek van de HTML-code.' }), '\n', (0, d.jsxs)(t.p, { children: ['Dit kan bijvoorbeeld door het weergeven van het kleurvlak en de data in een tabel ', (0, d.jsx)(t.code, { children: '<table>' }), ', een description list ', (0, d.jsx)(t.code, { children: '<dl>' }), ' of in een ongenummerde lijst ', (0, d.jsx)(t.code, { children: '<ul>' }), '.'] })] });
+   function f(e) {
+    const t = { a: 'a', code: 'code', p: 'p', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het ', (0, d.jsxs)(t.a, { href: '%5Burl%5D(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)', children: [(0, d.jsx)(t.code, { children: 'time' }), '-element'] }), ' als het om een datum of een tijd gaat.'] }), '\n', (0, d.jsx)(t.p, { children: 'De toevoeging van de Data Badge mag niet verwarrend zijn voor screenreadergebruikers. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.' })] });
    }
-   function f(e = {}) {
+   function v(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(v, { ...e }) }) : v(e);
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(f, { ...e }) }) : f(e);
    }
    function A(e) {
     const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Een screenreadergebruiker kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest.\nDe connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de ', (0, d.jsx)(t.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model', children: 'DOM' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Gerelateerde NL Design System richtlijnen' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', children: 'Zorg voor een logische volgorde van de informatie' }) }), '\n'] })] });
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.' }), '\n', (0, d.jsx)(t.p, { children: "Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst 'fout', en een groene Data Badge met de tekst 'gelukt'." }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/doel', children: 'Gebruik kleur met een doel' }) }), '\n'] })] });
    }
-   function k(e = {}) {
+   function b(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(A, { ...e }) }) : A(e);
    }
-   function b(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de ', (0, d.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
-   }
-   function x(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(b, { ...e }) }) : b(e);
-   }
-   var C = n(31573),
-    T = n(82959);
-   function G(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maar gebruik hiervoor tekst. Dan schaalt de tekst goed mee als de gebruiker inzoomt en blijft deze leesbaar.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button', children: 'Afbeeldingen als buttons' }) }), '\n'] })] });
-   }
-   function W(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(G, { ...e }) }) : G(e);
-   }
-   var R = n(98388),
-    z = n(97520),
-    L = n(30449),
-    N = n(55240),
-    S = n(8657);
-   const D = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] },
-    _ = void 0,
-    F = { id: 'componenten/color-sample/index', title: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', source: '@site/docs/componenten/color-sample/index.mdx', sourceDirName: 'componenten/color-sample', slug: '/color-sample', permalink: '/color-sample', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/color-sample/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] }, sidebar: 'componenten', previous: { title: 'Code Block', permalink: '/code-block' }, next: { title: 'Data Badge', permalink: '/data-badge' } },
-    P = {},
-    M = [
+   var k = n(31573),
+    x = n(53590),
+    C = n(82959),
+    T = n(43486),
+    G = n(64154),
+    W = n(97520),
+    R = n(30449),
+    D = n(55240),
+    z = n(8657);
+   const L = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] },
+    N = void 0,
+    _ = { id: 'componenten/data-badge/index', title: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] }, sidebar: 'componenten', previous: { title: 'Color Sample', permalink: '/color-sample' }, next: { title: 'Data Summary', permalink: '/data-summary' } },
+    S = {},
+    F = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    O = 'Color Sample',
-    E = 'Toont een voorbeeld van een kleur.',
-    U = 325,
-    H = h.find((e) => e.number === U);
-   function V(e) {
+    P = 'Data Badge',
+    M = 'Label met extra informatie, zoals een categorie of een eigenschap.',
+    B = 94,
+    O = h.find((e) => e.number === B);
+   function E(e) {
     const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
      children: [
@@ -148,79 +176,71 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(S.Rv, { component: H, headingLevel: 1, description: E }),
+      (0, d.jsx)(z.Rv, { component: O, headingLevel: 1, description: M }),
       '\n',
-      (0, d.jsx)(z.I, { component: H }),
+      (0, d.jsx)(W.I, { component: O }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, d.jsx)(L.B, { component: H, illustration: p }),
+      (0, d.jsx)(R.B, { component: O, illustration: p }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, d.jsx)(S.cN, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(z.cN, { component: O, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, d.jsx)(S.W, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(z.W, { component: O, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
       (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, d.jsx)(N.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'De eigenschappen van de Color Sample staan in tekst', sc: '1.4.5', status: '', component: (0, d.jsx)(W, {}) }] }),
+      (0, d.jsx)(D.t, {
+       headingLevel: 4,
+       testCategory: 'Toegankelijkheid algemeen',
+       items: [
+        { title: 'Gebruik geen afbeeldingen van tekst voor de Data Badge', sc: '1.4.5', status: '', component: (0, d.jsx)(T.ZP, {}) },
+        { title: 'Als een tekst in de Data Badge in een andere taal is dan de taal van de pagina, dan heeft de Data Badge een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, d.jsx)(G.ZP, {}) },
+       ],
+      }),
       '\n',
-      (0, d.jsx)(N.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende', sc: '1.4.3', status: '', component: (0, d.jsx)(R.ZP, {}) },
-        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond', sc: '1.4.11', status: '', component: (0, d.jsx)(x, {}) },
+        { title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken', sc: '1.4.1', status: '', component: (0, d.jsx)(b, {}) },
+        { title: 'De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, d.jsx)(x.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(N.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(T.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(C.ZP, {}) },
+        { title: 'Als je de tekst van de Data Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(C.ZP, {}) },
+        { title: 'Als je de tekstafstand van de Data Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(k.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(N.t, {
-       headingLevel: 4,
+      (0, d.jsx)(D.t, {
+       headingLevel: 3,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
-        { title: 'De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven', sc: '1.1.1', status: '', component: (0, d.jsx)(y, {}) },
-        { title: 'Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar', sc: '1.3.1', status: '', component: (0, d.jsx)(f, {}) },
-        { title: 'Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort', sc: '1.3.2', status: '', component: (0, d.jsx)(k, {}) },
+        { title: 'Als er in de Data Badge een informatief icoon staat, is er een goed tekstalternatief', sc: '1.1.1', status: '', component: (0, d.jsx)(y, {}) },
+        { title: 'Gebruik zoveel mogelijk semantische HTML voor de Data Badge', sc: '1.3.1', status: '', component: (0, d.jsx)(v, {}) },
        ],
       }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, d.jsx)(S.vM, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(z.vM, { component: O, headingLevel: 3 }),
      ],
     });
    }
    function Z(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(V, { ...e }) }) : V(e);
-   }
-  },
-  98388: (e, t, n) => {
-   'use strict';
-   n.d(t, { ZP: () => o });
-   var r = n(52676),
-    i = n(87118);
-   function s(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.' }), '\n', (0, r.jsx)(t.p, { children: 'De criteria voor kleurcontrast zijn:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsxs)(t.li, { children: [(0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/?background-color=white&color=%23767676', children: '4,5:1 contrast' }), ' voor normale tekst.'] }), '\n', (0, r.jsxs)(t.li, { children: [(0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/?background-color=white&color=%23949494', children: '3:1 contrast' }), ' voor grotere letters (vanaf 24 pixels).'] }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsx)(t.p, { children: 'Tekst die over een afbeelding staat, moet ook voldoende contrast hebben met de kleuren in de afbeelding er omheen.' }), '\n', (0, r.jsx)(t.p, { children: 'Deze eis geldt niet voor tekst op een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.' })] });
-   }
-   function o(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(E, { ...e }) }) : E(e);
    }
   },
   98507: (e, t, n) => {
@@ -239,7 +259,7 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => l, aY: () => c, um: () => a, wu: () => o });
+   n.d(t, { Zb: () => c, aY: () => a, um: () => l, wu: () => o });
    var r = n(31916),
     i = n(4814),
     s = n(52676);
@@ -247,47 +267,47 @@
      let { background: t, children: n, className: r, ...o } = e;
      return (0, s.jsx)('div', { className: (0, i.Z)('card__illustration', t && 'card__illustration--background', r), ...o, children: n });
     },
-    c = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
-    l = (e) => {
-     let { href: t, appearance: n, className: o, component: c = 'div', children: l } = e;
-     const a = (e) => ('article' === c ? (0, s.jsx)('article', { ...e }) : 'section' === c ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
-      d = (0, s.jsx)(a, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, o), children: l });
+    a = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
+    c = (e) => {
+     let { href: t, appearance: n, className: o, component: a = 'div', children: c } = e;
+     const l = (e) => ('article' === a ? (0, s.jsx)('article', { ...e }) : 'section' === a ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
+      d = (0, s.jsx)(l, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, o), children: c });
      return t ? (0, s.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
-    a = (e) => {
+    l = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, s.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
   },
   97520: (e, t, n) => {
    'use strict';
-   n.d(t, { I: () => c });
+   n.d(t, { I: () => a });
    var r = n(57716),
     i = n(75271),
     s = n(14669),
     o = n(52676);
-   const c = (e) => {
+   const a = (e) => {
     let { component: t } = e;
-    const { title: c } = t,
-     l = (0, s.mA)(c),
-     a = i.lazy(() => n(42767)(`./${l}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
-    return (0, o.jsx)(i.Suspense, { fallback: null, children: (0, o.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, o.jsx)(a, {}) }) });
+    const { title: a } = t,
+     c = (0, s.mA)(a),
+     l = i.lazy(() => n(42767)(`./${c}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, o.jsx)(i.Suspense, { fallback: null, children: (0, o.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, o.jsx)(l, {}) }) });
    };
   },
   30449: (e, t, n) => {
    'use strict';
-   n.d(t, { B: () => l });
+   n.d(t, { B: () => c });
    var r = n(57716),
     i = n(4814),
     s = n(75271),
     o = n(14669),
-    c = n(52676);
-   const l = (e) => {
-    let { component: t, illustration: l } = e;
-    const { title: a } = t,
-     d = (0, o.mA)(a),
+    a = n(52676);
+   const c = (e) => {
+    let { component: t, illustration: c } = e;
+    const { title: l } = t,
+     d = (0, o.mA)(l),
      u = s.lazy(() => n(22930)(`./${d}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-    return (0, c.jsx)(s.Suspense, { fallback: null, children: (0, c.jsxs)('figure', { className: (0, i.Z)('component-anatomy'), children: [l && (0, c.jsx)(l, { height: null, className: (0, i.Z)('component-anatomy__illustration') }), l && u && (0, c.jsx)('figcaption', { children: (0, c.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, c.jsx)(u, {}) }) })] }) });
+    return (0, a.jsx)(s.Suspense, { fallback: null, children: (0, a.jsxs)('figure', { className: (0, i.Z)('component-anatomy'), children: [c && (0, a.jsx)(c, { height: null, className: (0, i.Z)('component-anatomy__illustration') }), c && u && (0, a.jsx)('figcaption', { children: (0, a.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, a.jsx)(u, {}) }) })] }) });
    };
   },
   55240: (e, t, n) => {
@@ -381,34 +401,34 @@
       let { sc: t } = e;
       return !s.find((e) => e.sc === t);
      }),
-    c = new Map(o.map((e) => [e.sc, e]));
-   var l = n(52676);
-   const a = (e) => {
+    a = new Map(o.map((e) => [e.sc, e]));
+   var c = n(52676);
+   const l = (e) => {
      let { title: t, sc: n, status: i, component: s, headingLevel: o = 4 } = e;
-     const a = c.get(n),
-      d = a ? `${n} ${a.nl?.title}` : n;
-     return (0, l.jsxs)('div', { children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: o, children: t }), (n || i) && (0, l.jsxs)('dl', { children: [n && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'WCAG' }), (0, l.jsx)('dd', { children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), i && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'Status' }), (0, l.jsx)('dd', { children: i })] })] }), s] });
+     const l = a.get(n),
+      d = l ? `${n} ${l.nl?.title}` : n;
+     return (0, c.jsxs)('div', { children: [(0, c.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: o, children: t }), (n || i) && (0, c.jsxs)('dl', { children: [n && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)('dt', { children: 'WCAG' }), (0, c.jsx)('dd', { children: (0, c.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), i && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)('dt', { children: 'Status' }), (0, c.jsx)('dd', { children: i })] })] }), s] });
     },
     d = (e) => {
      let { testCategory: t, items: n } = e;
-     return (0, l.jsxs)('details', { className: 'task-list', children: [(0, l.jsx)('summary', { children: (0, l.jsx)('h3', { children: t }) }), n.map((e, t) => (0, l.jsx)(a, { ...e }, t))] });
+     return (0, c.jsxs)('details', { className: 'task-list', children: [(0, c.jsx)('summary', { children: (0, c.jsx)('h3', { children: t }) }), n.map((e, t) => (0, c.jsx)(l, { ...e }, t))] });
     };
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => b, vM: () => C, W: () => x, Rv: () => T });
+   n.d(t, { cN: () => k, vM: () => C, W: () => x, Rv: () => T });
    var r = n(95674),
     i = n(4814),
     s = n(39854),
     o = n(7522),
-    c = n(62559),
-    l = n(79734),
-    a = n(32636),
+    a = n(62559),
+    c = n(79734),
+    l = n(32636),
     d = n(52676);
-   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(l.Z, {}) },
+   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(a.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
     h = (e) => {
      let { brand: t } = e;
-     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(a.Z, {}) });
+     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(l.Z, {}) });
     };
    var g = n(35038),
     m = n(76193);
@@ -434,26 +454,26 @@
    var j = n(23355),
     w = n(41757),
     y = n(31916),
-    v = n(25953);
-   const f = (e) => {
+    f = n(25953);
+   const v = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
     A = (e) => {
      let { checked: t, children: n, title: r, description: s, headingLevel: o = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, n] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, n] })] });
     };
-   var k = n(14669);
-   const b = (e) => {
+   var b = n(14669);
+   const k = (e) => {
      let { component: t, headingLevel: n } = e;
-     const s = t && t.projects.filter((e) => k.e9.includes(e.id)),
-      o = s && k.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
+     const s = t && t.projects.filter((e) => b.e9.includes(e.id)),
+      o = s && b.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, k.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -461,10 +481,10 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(f, {
+           (0, d.jsx)(v, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(i) }, i);
+             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, b.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -476,7 +496,7 @@
     },
     x = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !k.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !b.e9.includes(e.id));
      return t && i.length
       ? (0, d.jsx)(g.um, {
          appearance: 'large',
@@ -540,18 +560,18 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
-     const s = t && k.$3[t.relayStep];
+     const s = t && b.$3[t.relayStep];
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(w.V, { level: n, suffix: s && (0, d.jsx)(j.y, { state: s }), children: t.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
    'use strict';
-   n.d(t, { y: () => c });
+   n.d(t, { y: () => a });
    var r = n(31916),
     i = n(4814),
     s = n(14669),
     o = n(52676);
-   const c = (e) => {
+   const a = (e) => {
     let { state: t } = e;
     const n = (0, s.mA)(t);
     return (0, o.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', n && `estafette-badge--${n}`), children: t });
@@ -563,8 +583,8 @@
    var r = n(4814),
     i = n(52676);
    const s = (e) => {
-    let { children: t, className: n, level: s = 1, suffix: o, ...c } = e;
-    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, n), ...c, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
+    let { children: t, className: n, level: s = 1, suffix: o, ...a } = e;
+    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, n), ...a, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
    };
   },
   57716: (e, t, n) => {
@@ -581,36 +601,36 @@
      }
      return n.toString();
     },
-    c = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
-    l = (e) => ({
+    a = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
+    c = (e) => ({
      img: (t) => {
       let { src: n, ...r } = t;
       return (0, s.jsx)('img', { ...r, src: o(e, n), className: 'utrecht-img utrecht-img--fit' });
      },
     }),
-    a = (e, t) => {
+    l = (e, t) => {
      if (e) {
-      const e = { ...c[t - 1] };
+      const e = { ...a[t - 1] };
       return (e.h1 = () => null), e;
      }
-     return c[t];
+     return a[t];
     },
     d = (e) => {
      let { children: t, omitH1: n = !1, headingLevel: i = 1, baseUrl: o = '' } = e;
-     return (0, s.jsx)(r.Z, { components: { ...a(n, i), ...l(o) }, children: t });
+     return (0, s.jsx)(r.Z, { components: { ...l(n, i), ...c(o) }, children: t });
     };
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, BA: () => c, Q6: () => s, e9: () => o, mA: () => i });
+   n.d(t, { $3: () => r, BA: () => a, Q6: () => s, e9: () => o, mA: () => i });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    c = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+    a = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
   },
   42767: (e, t, n) => {
-   var r = { './code-block-docs/docs/aliases.md': [55659, 55659], './code-docs/docs/aliases.md': [93159, 93159], './color-sample-docs/docs/aliases.md': [81924, 81924], './data-badge-docs/docs/aliases.md': [5070, 5070] };
+   var r = { './code-block-docs/docs/aliases.md': [55659, 55659], './code-docs/docs/aliases.md': [93159, 93159], './color-sample-docs/docs/aliases.md': [81924, 81924], './data-badge-docs/docs/aliases.md': [5070, 5070], './heading-1-docs/docs/aliases.md': [59243, 59243], './heading-2-docs/docs/aliases.md': [50444, 50444], './heading-3-docs/docs/aliases.md': [53078, 53078], './heading-4-docs/docs/aliases.md': [77489, 77489], './number-badge-docs/docs/aliases.md': [97049, 97049], './paragraph-docs/docs/aliases.md': [90135, 90135] };
    function i(e) {
     if (!n.o(r, e))
      return Promise.resolve().then(() => {
@@ -624,7 +644,7 @@
    (i.keys = () => Object.keys(r)), (i.id = 42767), (e.exports = i);
   },
   22930: (e, t, n) => {
-   var r = { './code-block-docs/docs/anatomy/anatomy.md': [10404, 10404], './code-docs/docs/anatomy/anatomy.md': [23559, 23559], './color-sample-docs/docs/anatomy/anatomy.md': [19242, 19242], './data-badge-docs/docs/anatomy/anatomy.md': [85295, 85295] };
+   var r = { './code-block-docs/docs/anatomy/anatomy.md': [10404, 10404], './code-docs/docs/anatomy/anatomy.md': [23559, 23559], './color-sample-docs/docs/anatomy/anatomy.md': [19242, 19242], './data-badge-docs/docs/anatomy/anatomy.md': [85295, 85295], './heading-1-docs/docs/anatomy/anatomy.md': [25193, 25193], './heading-2-docs/docs/anatomy/anatomy.md': [14555, 14555], './heading-3-docs/docs/anatomy/anatomy.md': [44027, 44027], './heading-4-docs/docs/anatomy/anatomy.md': [91093, 91093], './heading-5-docs/docs/anatomy/anatomy.md': [19677, 19677], './heading-6-docs/docs/anatomy/anatomy.md': [63293, 63293], './number-badge-docs/docs/anatomy/anatomy.md': [41709, 41709], './paragraph-docs/docs/anatomy/anatomy.md': [87276, 87276] };
    function i(e) {
     if (!n.o(r, e))
      return Promise.resolve().then(() => {

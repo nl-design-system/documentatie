@@ -85,45 +85,74 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  76053: (e, t, n) => {
+  14561: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => A, component: () => x, contentTitle: () => w, default: () => T, description: () => b, frontMatter: () => j, issueNumber: () => k, metadata: () => y, title: () => v, toc: () => f });
-   var r = n(52676),
-    i = n(87118),
-    s = n(81862),
-    o = n(78187);
-   function c(e) {
-    const t = { code: 'code', p: 'p', pre: 'pre', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: "Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor screenreadergebruikers. Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat." }), '\n', (0, r.jsx)(t.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
+   n.r(t), n.d(t, { assets: () => z, component: () => S, contentTitle: () => R, default: () => M, description: () => D, frontMatter: () => W, issueNumber: () => P, metadata: () => N, title: () => _, toc: () => L });
+   var r,
+    i,
+    s,
+    o,
+    c,
+    a,
+    l,
+    d = n(52676),
+    u = n(87118),
+    h = n(81862),
+    g = n(78187),
+    m = n(75271);
+   function p() {
+    return (
+     (p = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+         for (var t = 1; t < arguments.length; t++) {
+          var n = arguments[t];
+          for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+         }
+         return e;
+        }),
+     p.apply(this, arguments)
+    );
    }
-   function a(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(c, { ...e }) }) : c(e);
+   const j = (e) => {
+    let { title: t, titleId: n, ...d } = e;
+    return m.createElement('svg', p({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-labelledby': n }, d), t ? m.createElement('title', { id: n }, t) : null, r || (r = m.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = m.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = m.createElement('rect', { x: 468, y: 258, width: 24, height: 24, rx: 12, fill: '#F5F2FF' })), o || (o = m.createElement('path', { d: 'M479.961 264.84c1.139 0 2.011.336 2.618 1.008.607.663.91 1.549.91 2.66 0 1.279-.21 2.338-.63 3.178-.411.84-1.045 1.517-1.904 2.03-.859.504-1.979.896-3.36 1.176l-.448-1.54c1.223-.299 2.142-.672 2.758-1.12.616-.457 1.017-1.097 1.204-1.918-.495.607-1.148.91-1.96.91-.495 0-.947-.126-1.358-.378-.411-.252-.737-.616-.98-1.092-.243-.476-.364-1.027-.364-1.652 0-.644.154-1.213.462-1.708a3.12 3.12 0 0 1 1.26-1.148 3.946 3.946 0 0 1 1.792-.406Zm-.126 4.83c.271 0 .523-.07.756-.21.243-.149.457-.359.644-.63.009-.877-.084-1.498-.28-1.862-.196-.364-.527-.546-.994-.546-.401 0-.719.14-.952.42-.224.271-.336.667-.336 1.19 0 .579.103.999.308 1.26.215.252.499.378.854.378Z', fill: '#0A2750' })), c || (c = m.createElement('rect', { x: 376, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), a || (a = m.createElement('path', { d: 'M394.502 264.368V276.5H392v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), l || (l = m.createElement('path', { d: 'M408 270h60', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+   };
+   function w(e) {
+    const t = { code: 'code', p: 'p', pre: 'pre', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: "Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor screenreadergebruikers. Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat." }), '\n', (0, d.jsx)(t.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
    }
-   var l = n(31573),
-    d = n(53590),
-    u = n(82959),
-    h = n(43486),
-    g = n(64154),
-    m = n(55240),
-    p = n(8657);
-   const j = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' },
-    w = void 0,
-    y = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
-    A = {},
-    f = [
+   function y(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
+   }
+   var A = n(31573),
+    f = n(53590),
+    v = n(82959),
+    b = n(43486),
+    k = n(64154),
+    x = n(97520),
+    C = n(30449),
+    T = n(55240),
+    G = n(8657);
+   const W = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' },
+    R = void 0,
+    N = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
+    z = {},
+    L = [
+     { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    v = 'Number Badge',
-    b = 'Klein label dat de aandacht trekt informeert over een aantal.',
-    k = 7,
-    x = s.find((e) => e.number === k);
-   function C(e) {
-    const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, {
+    _ = 'Number Badge',
+    D = 'Klein label dat de aandacht trekt informeert over een aantal.',
+    P = 7,
+    S = h.find((e) => e.number === P);
+   function F(e) {
+    const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, {
      children: [
       '\n',
       '\n',
@@ -131,51 +160,57 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(p.Rv, { component: x, headingLevel: 1, description: b }),
+      (0, d.jsx)(G.Rv, { component: S, headingLevel: 1, description: D }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
+      (0, d.jsx)(x.I, { component: S }),
       '\n',
-      (0, r.jsx)(p.cN, { component: x, headingLevel: 3 }),
+      (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
+      (0, d.jsx)(C.B, { component: S, illustration: j }),
       '\n',
-      (0, r.jsx)(p.W, { component: x, headingLevel: 3 }),
+      (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
+      (0, d.jsx)(G.cN, { component: S, headingLevel: 3 }),
       '\n',
-      (0, r.jsx)(o.ZP, {}),
+      (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(m.t, {
+      (0, d.jsx)(G.W, { component: S, headingLevel: 3 }),
+      '\n',
+      (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
+      '\n',
+      (0, d.jsx)(g.ZP, {}),
+      '\n',
+      (0, d.jsx)(T.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
-        { title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge', sc: '1.4.5', status: '', component: (0, r.jsx)(h.ZP, {}) },
-        { title: 'Als een tekst en/of het aria-label in de Number Badge in een andere taal is dan de taal van de pagina, dan heeft de Number Badge een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(g.ZP, {}) },
+        { title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge', sc: '1.4.5', status: '', component: (0, d.jsx)(b.ZP, {}) },
+        { title: 'Als een tekst en/of het aria-label in de Number Badge in een andere taal is dan de taal van de pagina, dan heeft de Number Badge een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, d.jsx)(k.ZP, {}) },
        ],
       }),
       '\n',
-      (0, r.jsx)(m.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, r.jsx)(d.ZP, {}) }] }),
+      (0, d.jsx)(T.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, d.jsx)(f.ZP, {}) }] }),
       '\n',
-      (0, r.jsx)(m.t, {
+      (0, d.jsx)(T.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(u.ZP, {}) },
-        { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(l.ZP, {}) },
+        { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(v.ZP, {}) },
+        { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(A.ZP, {}) },
        ],
       }),
       '\n',
-      (0, r.jsx)(m.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, r.jsx)(a, {}) }] }),
+      (0, d.jsx)(T.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, d.jsx)(y, {}) }] }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
+      (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(p.vM, { component: x, headingLevel: 3 }),
+      (0, d.jsx)(G.vM, { component: S, headingLevel: 3 }),
      ],
     });
    }
-   function T(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(C, { ...e }) }) : C(e);
+   function M(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(F, { ...e }) }) : F(e);
    }
   },
   98507: (e, t, n) => {
@@ -213,6 +248,37 @@
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, s.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
+  },
+  97520: (e, t, n) => {
+   'use strict';
+   n.d(t, { I: () => c });
+   var r = n(57716),
+    i = n(75271),
+    s = n(14669),
+    o = n(52676);
+   const c = (e) => {
+    let { component: t } = e;
+    const { title: c } = t,
+     a = (0, s.mA)(c),
+     l = i.lazy(() => n(42767)(`./${a}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, o.jsx)(i.Suspense, { fallback: null, children: (0, o.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, o.jsx)(l, {}) }) });
+   };
+  },
+  30449: (e, t, n) => {
+   'use strict';
+   n.d(t, { B: () => a });
+   var r = n(57716),
+    i = n(4814),
+    s = n(75271),
+    o = n(14669),
+    c = n(52676);
+   const a = (e) => {
+    let { component: t, illustration: a } = e;
+    const { title: l } = t,
+     d = (0, o.mA)(l),
+     u = s.lazy(() => n(22930)(`./${d}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
+    return (0, c.jsx)(s.Suspense, { fallback: null, children: (0, c.jsxs)('figure', { className: (0, i.Z)('component-anatomy'), children: [a && (0, c.jsx)(a, { height: null, className: (0, i.Z)('component-anatomy__illustration') }), a && u && (0, c.jsx)('figcaption', { children: (0, c.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, c.jsx)(u, {}) }) })] }) });
+   };
   },
   55240: (e, t, n) => {
    'use strict';
@@ -491,6 +557,39 @@
     return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, n), ...c, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
    };
   },
+  57716: (e, t, n) => {
+   'use strict';
+   n.d(t, { U: () => d });
+   var r = n(87118),
+    i = n(31916),
+    s = n(52676);
+   const o = (e, t) => {
+     const n = new URL(t, new URL(e, 'resolve://pathname/'));
+     if ('resolve:' === n.protocol) {
+      const { pathname: n, search: r, hash: i } = new URL(t, new URL(e, 'http://example.com/'));
+      return n + r + i;
+     }
+     return n.toString();
+    },
+    c = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
+    a = (e) => ({
+     img: (t) => {
+      let { src: n, ...r } = t;
+      return (0, s.jsx)('img', { ...r, src: o(e, n), className: 'utrecht-img utrecht-img--fit' });
+     },
+    }),
+    l = (e, t) => {
+     if (e) {
+      const e = { ...c[t - 1] };
+      return (e.h1 = () => null), e;
+     }
+     return c[t];
+    },
+    d = (e) => {
+     let { children: t, omitH1: n = !1, headingLevel: i = 1, baseUrl: o = '' } = e;
+     return (0, s.jsx)(r.Z, { components: { ...l(n, i), ...a(o) }, children: t });
+    };
+  },
   14669: (e, t, n) => {
    'use strict';
    n.d(t, { $3: () => r, BA: () => c, Q6: () => s, e9: () => o, mA: () => i });
@@ -499,6 +598,34 @@
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
     c = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+  },
+  42767: (e, t, n) => {
+   var r = { './code-block-docs/docs/aliases.md': [55659, 55659], './code-docs/docs/aliases.md': [93159, 93159], './color-sample-docs/docs/aliases.md': [81924, 81924], './data-badge-docs/docs/aliases.md': [5070, 5070], './heading-1-docs/docs/aliases.md': [59243, 59243], './heading-2-docs/docs/aliases.md': [50444, 50444], './heading-3-docs/docs/aliases.md': [53078, 53078], './heading-4-docs/docs/aliases.md': [77489, 77489], './number-badge-docs/docs/aliases.md': [97049, 97049], './paragraph-docs/docs/aliases.md': [90135, 90135] };
+   function i(e) {
+    if (!n.o(r, e))
+     return Promise.resolve().then(() => {
+      var t = new Error("Cannot find module '" + e + "'");
+      throw ((t.code = 'MODULE_NOT_FOUND'), t);
+     });
+    var t = r[e],
+     i = t[0];
+    return n.e(t[1]).then(() => n(i));
+   }
+   (i.keys = () => Object.keys(r)), (i.id = 42767), (e.exports = i);
+  },
+  22930: (e, t, n) => {
+   var r = { './code-block-docs/docs/anatomy/anatomy.md': [10404, 10404], './code-docs/docs/anatomy/anatomy.md': [23559, 23559], './color-sample-docs/docs/anatomy/anatomy.md': [19242, 19242], './data-badge-docs/docs/anatomy/anatomy.md': [85295, 85295], './heading-1-docs/docs/anatomy/anatomy.md': [25193, 25193], './heading-2-docs/docs/anatomy/anatomy.md': [14555, 14555], './heading-3-docs/docs/anatomy/anatomy.md': [44027, 44027], './heading-4-docs/docs/anatomy/anatomy.md': [91093, 91093], './heading-5-docs/docs/anatomy/anatomy.md': [19677, 19677], './heading-6-docs/docs/anatomy/anatomy.md': [63293, 63293], './number-badge-docs/docs/anatomy/anatomy.md': [41709, 41709], './paragraph-docs/docs/anatomy/anatomy.md': [87276, 87276] };
+   function i(e) {
+    if (!n.o(r, e))
+     return Promise.resolve().then(() => {
+      var t = new Error("Cannot find module '" + e + "'");
+      throw ((t.code = 'MODULE_NOT_FOUND'), t);
+     });
+    var t = r[e],
+     i = t[0];
+    return n.e(t[1]).then(() => n(i));
+   }
+   (i.keys = () => Object.keys(r)), (i.id = 22930), (e.exports = i);
   },
  },
 ]);
