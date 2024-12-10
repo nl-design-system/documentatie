@@ -26,10 +26,11 @@ Begin met het bepalen van een naam.
 
 Baseer de naam van de component indien mogelijk, op herkenbare termen uit webstandaarden. Liever termen uit HTML, CSS, SVG en WAI-ARIA dan uit 'UI frameworks' die op het moment populair zijn. We schrijven componenten over het algemeen als enkelvoud en met kapitalen. Bijvoorbeeld 'Accordion' of 'Text Input'.
 
-Kijk voor inspiratie bij:
+Kijk voor inspiratie bijvoorbeeld bij:
 
 - [Component gallery](https://component.gallery)
 - [UI guideline](https://www.uiguideline.com/components)
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web)
 - [NL Design System componenten](https://www.nldesignsystem.nl/componenten/)
 
 Zijn er meerdere namen voor de component? Kies de meest gangbare. De andere namen kun je later toevoegen aan de documentatie.
@@ -81,11 +82,11 @@ We gebruiken [Github 'Discussions' van NL Design System](https://github.com/orgs
 
 {beschrijving-component}
 
-## Ook bekend als (niet verplicht)
+## Ook bekend als
 
-{andere namen die je bent tegengekomen toen je de naam bepaalde}
+{andere namen die je bent tegengekomen toen je de naam bepaalde, niet verplicht}
 
-## Gerelateerde componenten (niet verplicht)
+## Gerelateerde componenten
 
 {zie hieronder}
 
@@ -119,7 +120,7 @@ We gebruiken 'Issues' in de [Github 'Backlog' repository van NL Design System](h
 
 {naam-component}
 
-[Link naar GitHub Discussion]({link-naar-github-discussion})
+[Link naar GitHub Discussion]({link-github-discussion})
 ```
 
 Selecteer bij 'Labels' het label: Component.
@@ -156,7 +157,7 @@ Deel hieronder een link naar Figma, Storybook, Github of screenshots. Met deze i
 
 Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!
 
-[Link naar bericht in Slack]({link-naar-Slack-bericht})
+[Link naar bericht in Slack]({link-slack-bericht})
 
 ---
 ```
@@ -174,7 +175,7 @@ Hey community 👋
 
 We willen graag meer leren over de {naam-component} component. In welke vorm, of vormen, wordt deze momenteel ingezet en toegepast binnen jouw organisatie?
 
-Deel een link naar Figma, Storybook, Github of screenshots in de [GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion}), of in een thread onder dit bericht. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.
+Deel een link naar Figma, Storybook, Github of screenshots in de [GitHub Discussion voor de {naam-component} component]({link-github-discussion}), of in een thread onder dit bericht. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.
 
 Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!
 ```
@@ -250,14 +251,14 @@ Gebruik in Patternlab het linkadres van de `h2` of `h3` om naar een specifiek on
 Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik onderstaande tekst als basis.
 
 ```md
-## {Naam-organisatie}
+## {naam-organisatie}
 
 <!-- Links naar component implementatie (niet verplicht) -->
 
-- [Documentatie website]({link-naar-component-in-documentatie-website})
-- [Storybook]({link-naar-component-in-storybook})
-- [Figma]({link-naar-component-in-figma})
-- [Github]({link-naar-component-in-github})
+- [Documentatie website]({link-documentatie-website})
+- [Storybook]({link-storybook})
+- [Figma]({link-figma})
+- [Github]({link-github})
 
 ---
 
@@ -265,7 +266,7 @@ Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik ond
 
 **{Omgeving}**
 
-{Naam variant}
+{naam-variant}
 {Rationale variant}
 {Screenshot}
 
@@ -350,10 +351,10 @@ Hiep hoi!
 
 Het is zover, de volgende component is helemaal klaar voor een Help Wanted stempel.
 
-Naam: {naam-component}
-Beschrijving: {beschrijving-component}
+Naam: **{naam-component}**
+Beschrijving: **{beschrijving-component}**
 
-[GitHub Discussion voor de {naam-component} component]({link-naar-github-discussion})
+[GitHub Discussion voor de {naam-component} component]({link-github-discussion})
 
 Er is nog 1 stap over, namelijk: verwachten we dat deze in de Hall of Fame zou kunnen komen? Laat het weten via een emoticon.
 
@@ -368,11 +369,11 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 
 Iedereen mag wat vinden, maar de verschillende specialismes uit het kernteam moeten wat vinden. Dus post een linkje naar het 'Hiep hoi' bericht in het #nl-design-system-kernteam kanaal. Je kan `@here` gebruiken om iedereen even wakker te schudden.
 
-Het kernteam bespreekt de component aan het eind van de eerstvolgende weekly. Eventueel benodigde acties worden ter plekke doorgevoerd of voor een volgende sprint vastgelegd.
+Het kernteam bespreekt de component aan het eind van de eerstvolgende 'Weekly'. Eventueel benodigde acties worden ter plekke doorgevoerd of voor een volgende sprint vastgelegd.
 
 #### Akkoord?
 
-Ga verder bij [Status naar Help Wanted](#status-naar-help-wanted).
+Ga verder bij [Status naar Help Wanted](#status-bijgewerkt-naar-help-wanted).
 
 **🚩 Checkpoint**: Kernteam = 'Done'
 
@@ -397,36 +398,47 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 ### Schematische afbeelding maken
 
 - Maak een schematische afbeelding in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
-- Gebruik als naam voor het frame 'componenten_overzicht_{naam-van-component}.
+- Gebruik als naam voor het frame 'componenten_overzicht_{naam-component}.
 - Exporteer de afbeelding als svg bestand.
 
-Doorloop de volgende stappen om de schematische afbeelding mee te laten kleuren met statussen van het Estafettemodel.
+Doorloop de volgende stappen om de schematische afbeelding mee te laten kleuren met de statussen van het Estafettemodel.
 
-Tip voor als je deze stap voor het eerst doorloopt. Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
+**Tip!**
+Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
 
-1. Open VS code.
-2. Ga binnen de [documentatie repository](https://github.com/nl-design-system/documentatie) naar de (folder 'svg')[https://github.com/nl-design-system/documentatie/tree/main/static/svg].
-3. Sleep het svg bestand in deze folder.
-Stop de svg daar in door het bestand daar naartoe te slepen
-Open een svg bestand
-Kies View in de hoofd navigatie en open Command Pallete
-Typ svg
-Kies preview SVG
-Verander alle fill kleuren en stroke kleuren naar design-tokens + fallback
-#F9F6F3 wordt var(--component-illustration-background-color, white)
-#E4EBED wordt var(--component-illustration-grid-color, #EEE)
-#004152 wordt var(--component-illustration-color, Design voor theme validator #666)
-white wordt var(--component-illustration-background-color, white)
-Voeg een symbol toe zodat de code het svg dynamisch kan inladen inclusief design tokens.
-Op regel 2 na de svg start tag: zet
-Op de 1-na laatste regel voor zet
-Nu zie je geen preview meer. Voeg dus ook toe. Nu ben je klaar!
-Maak een branch feat/add-{component}-illustration
-Maak een commit feat: add {component} illustration
-Push naar GitHub
-Maak en PR
-Laat het reviewen
-✨ Merge!
+1. Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
+2. Ga naar de [folder 'svg'](https://github.com/nl-design-system/documentatie/tree/main/static/svg).
+3. Sleep het svg bestand in deze folder. De code van het svg bestand wordt direct zichtbaar.
+4. Kies 'View' in de hoofd navigatie van Visual Studio Code en open 'Command Pallete...'.
+5. Type 'svg' en kies voor 'Preview SVG'.
+6. Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.
+
+**Tip!**
+Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je binnen een bestand stukjes code selecteren die overeen komen met je huidige selectie.
+
+- `#F9F6F3` wordt `var(--component-illustration-background-color, white)`.
+- `#E4EBED` wordt `var(--component-illustration-grid-color, #EEE)`.
+- `#004152` wordt `var(--component-illustration-color, #666)`.
+- `white` wordt `var(--component-illustration-background-color, white)`.
+
+7. Voeg de volgende extra code toe zodat het svg bestand dynamisch kan worden ingeladen inclusief design tokens.
+
+- Op de 2e regel, direct na de `<svg...` start tag, plak je `<symbol id="component-illustration">`.
+- Op de voorlaatste regel, vlak voor `</svg>`, plak je `</symbol>`.
+- Direct daaronder, ook weer vlak voor `</svg>`, plak je `<use href="#component-illustration"/>`.
+
+8. Maak de PR aan gebruik hierbij de volgende opzet:
+
+**Commit Message**
+```
+feat: add illustration for {naam-component}
+```
+**Branch**
+```
+feat/add-illustration-for-{naam-component}
+```
+
+9. Geef een developer uit het kernteam via Slack een seintje dat de PR klaar staat.
 
 ### Documentatie pagina toevoegen
 
@@ -443,7 +455,7 @@ Laat het reviewen
 
 ## Status bijgewerkt naar Help Wanted
 
-Doel: iedereen kan zien dat de component nu richting Candidate wil.
+Doel: iedereen kan zien dat de component nu richting Community wil.
 
 Deze stap kan enkel worden uitgevoerd door het kernteam.
 
