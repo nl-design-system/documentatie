@@ -91,31 +91,47 @@ Dit component is opgenomen in de `@nl-design-system-unstable` organisatie. Het k
 De component moet mogelijk nog extra goed getest en stabiel gemaakt worden.
 Omdat de component door het kernteam onderhouden wordt voldoet het, naast de meeste Community DoD eisen, al wel aan veel meer criteria voor stabiel hergebruik.
 
-- Ingezet door 2 of meer organisaties met verschillende huisstijlen.
-- De NL Design System Figma bibliotheek komt overeen met de implementatie van de component in code wat betreft varianten, states, design tokens en naamgeving.
+#### 1. Start
+
 - Aliassen van alternatieve namen voor de component zijn vastgelegd in documentatie.
+- Ingezet door 2 of meer organisaties met verschillende huisstijlen.
+
+#### 2. Component beschrijven
+
 - Anatomie van de component is vastgelegd.
 - Component is, waar nodig, versimpeld of opgesplitst. Zodat er één of meerdere componenten over blijven met een duidelijke use case en documentatie.
 - Geen organisatie specifieke API's meer, alle API's zijn gebaseerd op een gemeenschappelijke use case.
 - API volgt conventies en is geprefixed met 'nl'.
+- Accessibility en inclusie documentatie beschikbaar voor de overwegingen die van toepassing zijn.
+- Alle design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
+
+#### 3. Component bouwen
+
 - Design tokens volgen conventies en zijn geprefixed met 'nl'.
 - Hergebruik van logische common tokens is geïmplementeerd om theming makkelijk te houden.
-- Alle design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
-- Beschikbaar in de NL Design System Storybook.
-- Beschikbaar in de NL Design System Figma bibliotheek.
-- Component heeft dezelfde documentatie op de website en Storybook over gebruik.
-- Figma verwijst naar de documentatie op de website.
+- De NL Design System Figma bibliotheek komt overeen met de implementatie van de component in code wat betreft varianten, states, design tokens en naamgeving.
 - Storybook stories, Figma voorbeelden en unit tests hebben coverage van alle features.
-- Verwijzing beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
-- Accessibility en inclusie documentatie beschikbaar voor de overwegingen die van toepassing zijn.
+
 - Semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.
-- Implementatie en documentatie is op toegankelijkheid getest door leden van het kernteam.
-- Getest op geschiktheid voor internationalisatie.
-- Component kan omgaan met verschillende soorten content: bijvoorbeeld korte tekst, veel woorden, lange woorden, of juist ontbrekende content.
 - Codebase gebruikt linting en automatische code-formatting met Prettier volgens NL Design System configuraties.
 - Gepubliceerd op NPM in de scope: `@nl-design-system-unstable`.
 - Changelog wordt gepubliceerd bij nieuwe versies.
+
+- Beschikbaar in de NL Design System Figma bibliotheek.
+- Beschikbaar in de NL Design System Storybook.
+
+#### 4. Component testen
+
+- Implementatie en documentatie is op toegankelijkheid getest door leden van het kernteam.
+- Getest op geschiktheid voor internationalisatie.
+- Component kan omgaan met verschillende soorten content: bijvoorbeeld korte tekst, veel woorden, lange woorden, of juist ontbrekende content.
 - Documentatie is getest bij de doelgroepen en goed bevonden.
+
+#### 5. Component op website
+
+- Figma verwijst naar de documentatie op de website.
+- Component heeft dezelfde documentatie op de website en Storybook over gebruik.
+- Verwijzing beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
 - Status bijgewerkt naar naar Candidate.
 
 Bekijk de status op [het projectbord voor de Candidate componenten](https://github.com/orgs/nl-design-system/projects/32).
@@ -125,7 +141,7 @@ Bekijk de status op [het projectbord voor de Candidate componenten](https://gith
 Een component met deze status is bewezen door gebruikname in productie bij ten minste twee verschillende organisaties. De component is daarmee in gebruik getest, zowel door developers en designers als door eindgebruikers en heeft een toegankelijkheids audit succesvol doorlopen.
 Het gebruiksvriendelijk en toegankelijk gebruik van de component in context is goed gedocumenteerd, zodat developers en designers in staat zijn de component op de juiste manier in te zetten binnen hun eigen project. Ook kan je ervan uitgaan dat de API's van de component, zoals design tokens en naamgeving stabiel blijven. Daarnaast worden updates vanaf nu voorzien van duidelijke changelogs en semantische versies die `breaking changes` goed communiceren.
 
-- Do's en don'ts als documentatie beschikbaar.
+- _Do and Don'ts_ als documentatie beschikbaar.
 - Meegenomen in gebruikersonderzoek door de community of kernteam en inzichten beschikbaar.
 - Als HTML/CSS component beschikbaar.
 - Als Webcomponent beschikbaar.
