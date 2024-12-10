@@ -76,7 +76,7 @@
     "@nl-design-system-candidate/heading-5-docs": "1.0.0",
     "@nl-design-system-candidate/heading-6-docs": "1.0.0",
     "@nl-design-system-candidate/number-badge-docs": "1.0.0",
-    "@nl-design-system-candidate/paragraph-docs": "1.0.1",
+    "@nl-design-system-candidate/paragraph-docs": "1.0.2",
     "@tabler/icons-react": "3.17.0",
     "@utrecht/design-tokens": "1.1.0",
     "clsx": "2.1.1",
