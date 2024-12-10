@@ -35,6 +35,30 @@ importers:
       '@nl-design-system-candidate/data-badge-docs':
         specifier: 1.0.0
         version: 1.0.0
+      '@nl-design-system-candidate/heading-1-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/heading-2-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/heading-3-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/heading-4-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/heading-5-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/heading-6-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/number-badge-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/paragraph-docs':
+        specifier: 1.0.1
+        version: 1.0.1
       '@tabler/icons-react':
         specifier: 3.17.0
         version: 3.17.0(react@18.3.1)
@@ -1784,6 +1808,30 @@ packages:
 
   '@nl-design-system-candidate/data-badge-docs@1.0.0':
     resolution: {integrity: sha512-dIyFVgn00Yf/WYXwOdAiTim2izKuswPDJt3ajzAJ59pWLqs0lig7OoTvRmaNp79iee9oE/nuoa1liKqs2HXQhA==}
+
+  '@nl-design-system-candidate/heading-1-docs@1.0.0':
+    resolution: {integrity: sha512-+sw4Nz37S8k/12psstsqNjFaEvO1rlaN94DQtO98aJLttRkUiSebiLwBGJmpJG/0m1lYE1hk0aFDDkv0rIpj7w==}
+
+  '@nl-design-system-candidate/heading-2-docs@1.0.0':
+    resolution: {integrity: sha512-qOibNNobeOLHV8Bw5czhDoFsEWImjY0ChrW/1neGO31BWc9Jpu7nspoc+b6KKMR6VXAUf1QTxC3DjAqpwPIMYw==}
+
+  '@nl-design-system-candidate/heading-3-docs@1.0.0':
+    resolution: {integrity: sha512-YzJmwh8Aep/Uv6kiWgQGYi0iHIm6QzXXHY8bw6hBLJeWH24gkvUk+7BsXbtpaBWh0eisLV1AslzfQPevK5MMJA==}
+
+  '@nl-design-system-candidate/heading-4-docs@1.0.0':
+    resolution: {integrity: sha512-oxg4WZgkMCUKgj2qXKF2dY+LfaX2Z47hNNHxzp7a+9ARAPvYLFvCLb+NKqf9R5t7x6MfSMWxiSATR8UJRTQr+w==}
+
+  '@nl-design-system-candidate/heading-5-docs@1.0.0':
+    resolution: {integrity: sha512-HianayXMwvGOU6MuVdsRquWxSGe8wknFX3WggpcI7HCHX3uW06YRqunSui+kzCb5/slriy1yfv9sZyKFTu7k0w==}
+
+  '@nl-design-system-candidate/heading-6-docs@1.0.0':
+    resolution: {integrity: sha512-3XbTWweTWvKagsOuoptqKXOIqM17YNg1rz9GBh10KZMaIX3yozjVFrAg/sOBIQhZv+Ke33Yn08E8d31Hu1vlww==}
+
+  '@nl-design-system-candidate/number-badge-docs@1.0.0':
+    resolution: {integrity: sha512-p138hLApBzl8un0AaNcNKWRQwdnUS7d9lasps80TLDdt4eXjxgnnuqqBcItRFTcYuSao6kaKPEPJ5EkFsPSCxQ==}
+
+  '@nl-design-system-candidate/paragraph-docs@1.0.1':
+    resolution: {integrity: sha512-uyQZJ6YvAo2P87n2/KQqHPotD4TOkU4rwDkix1N+IZfgS/2Wk5JcmuwsXz1elCyzuXepcQ9Q2/1HVYD3An7HRw==}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151':
     resolution: {integrity: sha512-KrrBCiDdR1zGI3/7rqPkknHBMnOG8GO0BgEimyVKesEa591OooP6SXjS28sBlbPBhYeMQSmyu/u2STOCZqAAJg==}
@@ -10037,6 +10085,22 @@ snapshots:
   '@nl-design-system-candidate/color-sample-docs@1.0.0': {}
 
   '@nl-design-system-candidate/data-badge-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-1-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-2-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-3-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-4-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-5-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/heading-6-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/number-badge-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/paragraph-docs@1.0.1': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@1.0.0-alpha.151': {}
 

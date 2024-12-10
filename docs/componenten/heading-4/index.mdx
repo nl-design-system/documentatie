@@ -11,6 +11,9 @@ slug: /heading-4
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import Heading4Illustration from "@nl-design-system-candidate/heading-4-docs/docs/anatomy/anatomy.svg";
+import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -26,6 +29,12 @@ export const issueNumber = 260;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentAliases component={component} />
+
+## Anatomie
+
+<ComponentAnatomy component={component} illustration={Heading4Illustration} />
 
 ## Definition of Done
 
