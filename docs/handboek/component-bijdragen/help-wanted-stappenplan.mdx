@@ -434,11 +434,11 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 
 - Maak een schematische afbeelding in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
 - Gebruik als naam voor het frame 'componenten_overzicht_{naam-component}.
-- Exporteer de afbeelding als svg bestand.
+- Exporteer de afbeelding als SVG-bestand.
 
 ### Branch klaar zetten
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
-- Maak een nieuwe branch aan gebruik hiervoor de volgende naam:
+- Maak een nieuwe branch aan. Gebruik hiervoor de volgende naam:
 
 **Branch**
 ```
@@ -453,9 +453,9 @@ Doorloop de volgende stappen om de schematische afbeelding mee te laten kleuren 
 Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
 
 - Ga naar de [folder 'static/svg'](https://github.com/nl-design-system/documentatie/tree/main/static/svg).
-- Sleep het svg bestand in deze folder. De code van het svg bestand wordt zichtbaar.
-- Kies 'View' in de hoofd navigatie van Visual Studio Code en open 'Command Pallete...'.
-- Type 'svg' en kies voor 'Preview SVG'. De visuele weergave van het svg bestand wordt zichtbaar.
+- Sleep het SVG-bestand in deze folder. De code van het SVG-bestand wordt zichtbaar.
+- Kies 'View' in de hoofdnavigatie van Visual Studio Code en open 'Command Palette...'.
+- Typ 'svg' en kies voor 'Preview SVG'. De visuele weergave van het SVG-bestand wordt vervolgens zichtbaar.
 - Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.
   - `#F9F6F3` wordt `var(--component-illustration-background-color, white)`.
   - `#E4EBED` wordt `var(--component-illustration-grid-color, #EEE)`.
@@ -463,9 +463,9 @@ Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
   - `white` wordt `var(--component-illustration-background-color, white)`.
 
 **Tip!**
-Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je stukjes code selecteren die overeen komen met je huidige selectie.
+Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je stukjes code selecteren die overeenkomen met je huidige selectie.
 
-- Voeg de volgende stukjes code toe zodat het svg bestand dynamisch kan worden ingeladen.
+- Voeg de volgende stukjes code toe om het SVG-bestand dynamisch in te laden.
   - Op de 2e regel, direct na `<svg...`, plak je `<symbol id="component-illustration">`.
   - Op de voorlaatste regel, vlak voor `</svg>`, plak je `</symbol>`.
   - Direct daaronder, ook weer vlak voor `</svg>`, plak je `<use href="#component-illustration"/>`.
@@ -479,9 +479,9 @@ feat: add illustration for {naam-component}
 ### Documentatie pagina toevoegen
 
 - Ga naar de [folder 'docs/componenten'](https://github.com/nl-design-system/documentatie/tree/main/docs/componenten).
-- Voeg een nieuwe folder toe voor de component, gebruik hiervoor kebab-case als schrijfwijze.
-- Voeg een nieuw bestand toe en noem deze 'index.mdx'.
-- Vul het bestand op basis van [de component template](https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx).
+- Voeg een nieuwe folder toe voor de component en gebruik hiervoor kebab-case als schrijfwijze.
+- Maak een nieuw bestand aan en noem het 'index.mdx'.
+- Vul het bestand in volgens [de component template](https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx).
 - Maak een commit en gebruik hierbij het volgende bericht:
 
 **Commit Message**
@@ -491,8 +491,8 @@ feat: add documentation page for {naam-component}
 
 ### Component progress bijwerken
 
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken op [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Dat zie je door naar `Last publish` te kijken.
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een commit en gebruik hierbij het volgende bericht:
 
@@ -518,14 +518,14 @@ docs: add {naam-component} to documentation site
 - update component progress.
 ```
 
-- Klik op 'Create Pull Request'
+- Klik op 'Create Pull Request'.
 - Geef een developer uit het kernteam via Slack een seintje dat de PR klaar staat.
 
 **🚩 Checkpoint**: nldesignsystem.nl
 
 ## 🏁 Finish
 
-Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de ['Help Wanted' status](https://github.com/orgs/nl-design-system/projects/27/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done). De component gaat nu door voor de 'Community' status. Goed om dit ook mede te delen aan de rest van de community.
+Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de ['Help Wanted' status](https://github.com/orgs/nl-design-system/projects/27/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done). De component gaat nu door voor de 'Community' status. Het is goed om dit ook met de rest van de community te delen.
 
 Plaats deze tekst in de 'thread' van het 'Hiep hoi' bericht, vul aan waar nodig.
 
