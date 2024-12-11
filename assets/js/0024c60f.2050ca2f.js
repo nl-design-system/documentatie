@@ -1,5 +1,5 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [85781],
+ [72837],
  {
   78187: (e, t, n) => {
    'use strict';
@@ -9,20 +9,6 @@
    function s(e) {
     const t = { a: 'a', p: 'p', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsxs)(t.p, { children: ['Als je implementatie voldoet aan de acceptatiecriteria voor dit component, kun je er vanuit gaan dat je gebruik van dit component voldoet aan WCAG, niveau A en AA, en voor twee succescriteria aan niveau AAA (', (0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/wcag/2.4.13', children: '2.4.13 Focusweergave' }), ' en ', (0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/wcag/2.5.5', children: '2.5.5 Grootte van het aanwijsgebied uitgebreid' }), ').'] })] });
-   }
-   function i(e = {}) {
-    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
-  9599: (e, t, n) => {
-   'use strict';
-   n.d(t, { ZP: () => i });
-   var r = n(52676),
-    o = n(87118);
-   function s(e) {
-    const t = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Als je het ', (0, r.jsx)(t.code, { children: 'code' }), '-element gebruikt en met CSS een eigen kleur definieert voor ', (0, r.jsx)(t.code, { children: 'background-color' }), ', dan moet deze achtergrondkleur een contrastverhouding hebben van minimaal 3:1 met de achtergrondkleur van de pagina.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dit geldt niet als je de achtergrondkleur niet zelf definieert, maar overlaat aan de browser. Daarvoor bestaat namelijk een uitzondering in het WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content.' }), '\n', (0, r.jsxs)(t.p, { children: ['Dit geldt ook niet als het lettertype of de weergave van de code duidelijke te onderscheiden is als code, door bijvoorbeeld het kiezen van een ', (0, r.jsx)(t.a, { href: 'https://en.wikipedia.org/wiki/List_of_monospaced_typefaces', children: 'monospace lettertype' }), '.'] }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
    function i(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
@@ -43,20 +29,6 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  53590: (e, t, n) => {
-   'use strict';
-   n.d(t, { ZP: () => i });
-   var r = n(52676),
-    o = n(87118);
-   function s(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: '4,5:1 contrast voor normale tekst.' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor grotere letters (vanaf 24 pixels).' }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Hogere verhoudingen mogen natuurlijk altijd. Met de ', (0, r.jsx)(t.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.'] }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n'] })] });
-   }
-   function i(e = {}) {
-    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
   82959: (e, t, n) => {
    'use strict';
    n.d(t, { ZP: () => i });
@@ -71,49 +43,104 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  27123: (e, t, n) => {
+  79197: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => k, component: () => G, contentTitle: () => v, default: () => R, description: () => C, frontMatter: () => A, issueNumber: () => T, metadata: () => f, title: () => x, toc: () => b });
-   var r = n(52676),
-    o = n(87118),
-    s = n(81862),
-    i = n(19031),
-    c = n(78187);
-   function a(e) {
-    const t = { code: 'code', p: 'p', pre: 'pre', strong: 'strong', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Gebruik voor tekst gemarkeerd als opgemaakte code semantische HTML. In het geval van de component Code Block is dat het HTML-element ', (0, r.jsx)(t.code, { children: 'code' }), '\nin combinatie met ', (0, r.jsx)(t.code, { children: 'pre' }), '.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dus niet zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '\x3c!-- dit niet doen --\x3e\n<pre>\n  <div class="code-block">\n    @use "./mixin";\n    \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </div>\n</pre>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Maar zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<pre>\n  <code class="code-block">\n    @use "./mixin";\n  \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </code>\n</pre>\n' }) }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsx)(t.strong, { children: 'Let op' }), ': Het element ', (0, r.jsx)(t.code, { children: '<code>' }), ' wordt op het moment van schrijven (2024) nog niet ondersteund door alle hulpsoftware. Wellicht in de toekomst wel, dan is het goed om nu alvast het juiste element te gebruiken.'] })] });
+   n.r(t), n.d(t, { assets: () => P, component: () => H, contentTitle: () => _, default: () => Z, description: () => E, frontMatter: () => D, issueNumber: () => U, metadata: () => F, title: () => O, toc: () => M });
+   var r,
+    o,
+    s,
+    i,
+    c,
+    l,
+    a,
+    d = n(52676),
+    u = n(87118),
+    h = n(81862),
+    m = n(75271);
+   function g() {
+    return (
+     (g = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+         for (var t = 1; t < arguments.length; t++) {
+          var n = arguments[t];
+          for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+         }
+         return e;
+        }),
+     g.apply(this, arguments)
+    );
    }
-   function l(e = {}) {
-    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
+   const p = (e) => {
+    let { title: t, titleId: n, ...d } = e;
+    return m.createElement('svg', g({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een gekleurd vierkantje, aangeduid met het cijfer 1.', 'aria-labelledby': n }, d), t ? m.createElement('title', { id: n }, t) : null, r || (r = m.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), o || (o = m.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = m.createElement('path', { fill: '#5315F6', d: 'M463.5 253.5h33v33h-33z' })), i || (i = m.createElement('path', { stroke: '#E4E7EC', d: 'M463.5 253.5h33v33h-33z' })), c || (c = m.createElement('rect', { x: 384, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), l || (l = m.createElement('path', { d: 'M402.502 264.368V276.5H400v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), a || (a = m.createElement('path', { d: 'M416 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+   };
+   var j = n(78187);
+   function w(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam van de kleur, de hex-code of de hsl-waarde, de transparantie, het doel van de kleur, de CSS-class.' }), '\n', (0, d.jsx)(t.p, { children: 'Dan is het voor screenreadergebruikers en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.' }), '\n', (0, d.jsx)(t.p, { children: 'Gerelateerde NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/niet-kleur-alleen', children: 'Vertrouw niet op kleur alleen' }) }), '\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/waarneming', children: 'Let op verschillen in waarneming van kleur' }) }), '\n'] })] });
    }
-   var d = n(9599),
-    u = n(31573),
-    h = n(53590),
-    m = n(82959),
-    g = n(54042),
-    p = n(97520),
-    j = n(30449),
-    w = n(55240),
-    y = n(8657);
-   const A = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', slug: '/code-block', keywords: ['code'] },
-    v = void 0,
-    f = { id: 'componenten/code-block/index', title: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', source: '@site/docs/componenten/code-block/index.mdx', sourceDirName: 'componenten/code-block', slug: '/code-block', permalink: '/code-block', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', slug: '/code-block', keywords: ['code'] }, sidebar: 'componenten', previous: { title: 'Code', permalink: '/code' }, next: { title: 'Color Sample', permalink: '/color-sample' } },
-    k = {},
-    b = [
+   function y(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
+   }
+   function v(e) {
+    const t = { code: 'code', p: 'p', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Een screenreadergebruiker kan herkennen welk kleurvlak bij welke eigenschappen hoort.\nDit is niet alleen via de visuele informatie beschikbaar, maar ook vanuit de semantiek van de HTML-code.' }), '\n', (0, d.jsxs)(t.p, { children: ['Dit kan bijvoorbeeld door het weergeven van het kleurvlak en de data in een tabel ', (0, d.jsx)(t.code, { children: '<table>' }), ', een description list ', (0, d.jsx)(t.code, { children: '<dl>' }), ' of in een ongenummerde lijst ', (0, d.jsx)(t.code, { children: '<ul>' }), '.'] })] });
+   }
+   function f(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(v, { ...e }) }) : v(e);
+   }
+   function A(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Een screenreadergebruiker kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest.\nDe connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de ', (0, d.jsx)(t.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model', children: 'DOM' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Gerelateerde NL Design System richtlijnen' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde', children: 'Zorg voor een logische volgorde van de informatie' }) }), '\n'] })] });
+   }
+   function k(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(A, { ...e }) }) : A(e);
+   }
+   function b(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de ', (0, d.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+   }
+   function x(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(b, { ...e }) }) : b(e);
+   }
+   var C = n(31573),
+    T = n(82959);
+   function G(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maar gebruik hiervoor tekst. Dan schaalt de tekst goed mee als de gebruiker inzoomt en blijft deze leesbaar.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button', children: 'Afbeeldingen als buttons' }) }), '\n'] })] });
+   }
+   function W(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(G, { ...e }) }) : G(e);
+   }
+   var R = n(98388),
+    z = n(97520),
+    L = n(30449),
+    N = n(55240),
+    S = n(8657);
+   const D = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] },
+    _ = void 0,
+    F = { id: 'componenten/color-sample/index', title: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', source: '@site/docs/componenten/color-sample/index.mdx', sourceDirName: 'componenten/color-sample', slug: '/color-sample', permalink: '/color-sample', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/color-sample/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] }, sidebar: 'componenten', previous: { title: 'Code Block', permalink: '/code-block' }, next: { title: 'Data Badge', permalink: '/data-badge' } },
+    P = {},
+    M = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    x = 'Code Block',
-    C = 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.',
-    T = 329,
-    G = s.find((e) => e.number === T);
-   function W(e) {
-    const t = { h2: 'h2', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, {
+    O = 'Color Sample',
+    E = 'Toont een voorbeeld van een kleur.',
+    U = 325,
+    H = h.find((e) => e.number === U);
+   function V(e) {
+    const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, {
      children: [
       '\n',
       '\n',
@@ -121,66 +148,75 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(y.Rv, { component: G, headingLevel: 1, description: C }),
+      (0, d.jsx)(S.Rv, { component: H, headingLevel: 1, description: E }),
       '\n',
-      (0, r.jsx)(p.I, { component: G }),
+      (0, d.jsx)(z.I, { component: H }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
+      (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(j.B, { component: G, illustration: i.Z }),
+      (0, d.jsx)(L.B, { component: H, illustration: p }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
+      (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(y.cN, { component: G, headingLevel: 3 }),
+      (0, d.jsx)(S.cN, { component: H, headingLevel: 3 }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
+      (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(y.W, { component: G, headingLevel: 3 }),
+      (0, d.jsx)(S.W, { component: H, headingLevel: 3 }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
+      (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
-      (0, r.jsx)(c.ZP, {}),
+      (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, r.jsx)(w.t, {
+      (0, d.jsx)(N.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'De eigenschappen van de Color Sample staan in tekst', sc: '1.4.5', status: '', component: (0, d.jsx)(W, {}) }] }),
+      '\n',
+      (0, d.jsx)(N.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'De tekst, gemarkeerd als code, is niet alleen herkenbaar aan een andere achtergrondkleur', sc: '1.4.1', status: '', component: (0, r.jsx)(g.ZP, {}) },
-        { title: 'De tekst, gemarkeerd als code, heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: (0, r.jsx)(h.ZP, {}) },
-        { title: 'Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina', sc: '1.4.11', status: '', component: (0, r.jsx)(d.ZP, {}) },
+        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende', sc: '1.4.3', status: '', component: (0, d.jsx)(R.ZP, {}) },
+        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond', sc: '1.4.11', status: '', component: (0, d.jsx)(x, {}) },
        ],
       }),
       '\n',
-      (0, r.jsx)(w.t, {
+      (0, d.jsx)(N.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(m.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(u.ZP, {}) },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(T.ZP, {}) },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(C.ZP, {}) },
        ],
       }),
       '\n',
-      (0, r.jsx)(w.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'De juiste HTML-elementen voor de Code Block component zijn toegepast', sc: '1.3.1', status: '', component: (0, r.jsx)(l, {}) }] }),
+      (0, d.jsx)(N.t, {
+       headingLevel: 4,
+       testCategory: 'Toegankelijkheid screenreader',
+       items: [
+        { title: 'De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven', sc: '1.1.1', status: '', component: (0, d.jsx)(y, {}) },
+        { title: 'Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar', sc: '1.3.1', status: '', component: (0, d.jsx)(f, {}) },
+        { title: 'Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort', sc: '1.3.2', status: '', component: (0, d.jsx)(k, {}) },
+       ],
+      }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
+      (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(y.vM, { component: G, headingLevel: 3 }),
+      (0, d.jsx)(S.vM, { component: H, headingLevel: 3 }),
      ],
     });
    }
-   function R(e = {}) {
-    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(W, { ...e }) }) : W(e);
+   function Z(e = {}) {
+    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(V, { ...e }) }) : V(e);
    }
   },
-  54042: (e, t, n) => {
+  98388: (e, t, n) => {
    'use strict';
    n.d(t, { ZP: () => i });
    var r = n(52676),
     o = n(87118);
    function s(e) {
-    const t = { p: 'p', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, r.jsx)(t.p, { children: 'Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.' })] });
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.' }), '\n', (0, r.jsx)(t.p, { children: 'De criteria voor kleurcontrast zijn:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsxs)(t.li, { children: [(0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/?background-color=white&color=%23767676', children: '4,5:1 contrast' }), ' voor normale tekst.'] }), '\n', (0, r.jsxs)(t.li, { children: [(0, r.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/?background-color=white&color=%23949494', children: '3:1 contrast' }), ' voor grotere letters (vanaf 24 pixels).'] }), '\n', (0, r.jsx)(t.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsx)(t.p, { children: 'Tekst die over een afbeelding staat, moet ook voldoende contrast hebben met de kleuren in de afbeelding er omheen.' }), '\n', (0, r.jsx)(t.p, { children: 'Deze eis geldt niet voor tekst op een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.' })] });
    }
    function i(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
@@ -203,7 +239,7 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => c, um: () => l, wu: () => i });
+   n.d(t, { Zb: () => l, aY: () => c, um: () => a, wu: () => i });
    var r = n(31916),
     o = n(4814),
     s = n(52676);
@@ -212,13 +248,13 @@
      return (0, s.jsx)('div', { className: (0, o.Z)('card__illustration', t && 'card__illustration--background', r), ...i, children: n });
     },
     c = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
-    a = (e) => {
-     let { href: t, appearance: n, className: i, component: c = 'div', children: a } = e;
-     const l = (e) => ('article' === c ? (0, s.jsx)('article', { ...e }) : 'section' === c ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
-      d = (0, s.jsx)(l, { className: (0, o.Z)('cardgroup__card', `cardgroup__card--${n}`, i), children: a });
+    l = (e) => {
+     let { href: t, appearance: n, className: i, component: c = 'div', children: l } = e;
+     const a = (e) => ('article' === c ? (0, s.jsx)('article', { ...e }) : 'section' === c ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
+      d = (0, s.jsx)(a, { className: (0, o.Z)('cardgroup__card', `cardgroup__card--${n}`, i), children: l });
      return t ? (0, s.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
-    l = (e) => {
+    a = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, s.jsx)('div', { className: (0, o.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
@@ -233,25 +269,25 @@
    const c = (e) => {
     let { component: t } = e;
     const { title: c } = t,
-     a = (0, s.mA)(c),
-     l = o.lazy(() => n(42767)(`./${a}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
-    return (0, i.jsx)(o.Suspense, { fallback: null, children: (0, i.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, i.jsx)(l, {}) }) });
+     l = (0, s.mA)(c),
+     a = o.lazy(() => n(42767)(`./${l}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, i.jsx)(o.Suspense, { fallback: null, children: (0, i.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, i.jsx)(a, {}) }) });
    };
   },
   30449: (e, t, n) => {
    'use strict';
-   n.d(t, { B: () => a });
+   n.d(t, { B: () => l });
    var r = n(57716),
     o = n(4814),
     s = n(75271),
     i = n(14669),
     c = n(52676);
-   const a = (e) => {
-    let { component: t, illustration: a } = e;
-    const { title: l } = t,
-     d = (0, i.mA)(l),
+   const l = (e) => {
+    let { component: t, illustration: l } = e;
+    const { title: a } = t,
+     d = (0, i.mA)(a),
      u = s.lazy(() => n(22930)(`./${d}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-    return (0, c.jsx)(s.Suspense, { fallback: null, children: (0, c.jsxs)('figure', { className: (0, o.Z)('component-anatomy'), children: [a && (0, c.jsx)(a, { height: null, className: (0, o.Z)('component-anatomy__illustration') }), a && u && (0, c.jsx)('figcaption', { children: (0, c.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, c.jsx)(u, {}) }) })] }) });
+    return (0, c.jsx)(s.Suspense, { fallback: null, children: (0, c.jsxs)('figure', { className: (0, o.Z)('component-anatomy'), children: [l && (0, c.jsx)(l, { role: 'img', height: null, className: (0, o.Z)('component-anatomy__illustration') }), l && u && (0, c.jsx)('figcaption', { children: (0, c.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, c.jsx)(u, {}) }) })] }) });
    };
   },
   55240: (e, t, n) => {
@@ -346,16 +382,16 @@
       return !s.find((e) => e.sc === t);
      }),
     c = new Map(i.map((e) => [e.sc, e]));
-   var a = n(52676);
-   const l = (e) => {
+   var l = n(52676);
+   const a = (e) => {
      let { title: t, sc: n, status: o, component: s, headingLevel: i = 4 } = e;
-     const l = c.get(n),
-      d = l ? `${n} ${l.nl?.title}` : n;
-     return (0, a.jsxs)('div', { children: [(0, a.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: i, children: t }), (n || o) && (0, a.jsxs)('dl', { children: [n && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)('dt', { children: 'WCAG' }), (0, a.jsx)('dd', { children: (0, a.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), o && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)('dt', { children: 'Status' }), (0, a.jsx)('dd', { children: o })] })] }), s] });
+     const a = c.get(n),
+      d = a ? `${n} ${a.nl?.title}` : n;
+     return (0, l.jsxs)('div', { children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: i, children: t }), (n || o) && (0, l.jsxs)('dl', { children: [n && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'WCAG' }), (0, l.jsx)('dd', { children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), o && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { children: 'Status' }), (0, l.jsx)('dd', { children: o })] })] }), s] });
     },
     d = (e) => {
      let { testCategory: t, items: n } = e;
-     return (0, a.jsxs)('details', { className: 'task-list', children: [(0, a.jsx)('summary', { children: (0, a.jsx)('h3', { children: t }) }), n.map((e, t) => (0, a.jsx)(l, { ...e }, t))] });
+     return (0, l.jsxs)('details', { className: 'task-list', children: [(0, l.jsx)('summary', { children: (0, l.jsx)('h3', { children: t }) }), n.map((e, t) => (0, l.jsx)(a, { ...e }, t))] });
     };
   },
   8657: (e, t, n) => {
@@ -366,13 +402,13 @@
     s = n(39854),
     i = n(7522),
     c = n(62559),
-    a = n(79734),
-    l = n(32636),
+    l = n(79734),
+    a = n(32636),
     d = n(52676);
-   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(i.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(a.Z, {}) },
+   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(i.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(l.Z, {}) },
     h = (e) => {
      let { brand: t } = e;
-     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(l.Z, {}) });
+     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(a.Z, {}) });
     };
    var m = n(35038),
     g = n(76193);
@@ -398,14 +434,14 @@
    var j = n(23355),
     w = n(41757),
     y = n(31916),
-    A = n(25953);
-   const v = (e) => {
+    v = n(25953);
+   const f = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
-    f = (e) => {
+    A = (e) => {
      let { checked: t, children: n, title: r, description: s, headingLevel: i = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, o.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, o.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(A.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: i, children: r }), s, n] })] });
+     return (0, d.jsxs)('li', { className: (0, o.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, o.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: i, children: r }), s, n] })] });
     };
    var k = n(14669);
    const b = (e) => {
@@ -425,10 +461,10 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(v, {
+           (0, d.jsx)(f, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: o } = e;
-             return (0, d.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(o) }, o);
+             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(o) }, o);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -546,13 +582,13 @@
      return n.toString();
     },
     c = { 1: {}, 2: { h1: o.XJ, h2: o.aC, h3: o.k8, h4: o.by, h5: o.Cd }, 3: { h1: o.aC, h2: o.k8, h3: o.by, h4: o.Cd, h5: o.Cd }, 4: { h1: o.k8, h2: o.by, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 5: { h1: o.by, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 6: { h1: o.Cd, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd } },
-    a = (e) => ({
+    l = (e) => ({
      img: (t) => {
       let { src: n, ...r } = t;
       return (0, s.jsx)('img', { ...r, src: i(e, n), className: 'utrecht-img utrecht-img--fit' });
      },
     }),
-    l = (e, t) => {
+    a = (e, t) => {
      if (e) {
       const e = { ...c[t - 1] };
       return (e.h1 = () => null), e;
@@ -561,7 +597,7 @@
     },
     d = (e) => {
      let { children: t, omitH1: n = !1, headingLevel: o = 1, baseUrl: i = '' } = e;
-     return (0, s.jsx)(r.Z, { components: { ...l(n, o), ...a(i) }, children: t });
+     return (0, s.jsx)(r.Z, { components: { ...a(n, o), ...l(i) }, children: t });
     };
   },
   14669: (e, t, n) => {

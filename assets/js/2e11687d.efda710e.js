@@ -307,7 +307,7 @@
     const { title: l } = t,
      d = (0, o.mA)(l),
      u = s.lazy(() => n(22930)(`./${d}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-    return (0, a.jsx)(s.Suspense, { fallback: null, children: (0, a.jsxs)('figure', { className: (0, i.Z)('component-anatomy'), children: [c && (0, a.jsx)(c, { height: null, className: (0, i.Z)('component-anatomy__illustration') }), c && u && (0, a.jsx)('figcaption', { children: (0, a.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, a.jsx)(u, {}) }) })] }) });
+    return (0, a.jsx)(s.Suspense, { fallback: null, children: (0, a.jsxs)('figure', { className: (0, i.Z)('component-anatomy'), children: [c && (0, a.jsx)(c, { role: 'img', height: null, className: (0, i.Z)('component-anatomy__illustration') }), c && u && (0, a.jsx)('figcaption', { children: (0, a.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, a.jsx)(u, {}) }) })] }) });
    };
   },
   55240: (e, t, n) => {
