@@ -15,9 +15,10 @@ keywords:
 ---
 
 import { ComponentOverview } from "@site/src/components/ComponentOverview";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 # Componenten
 
 De componenten van NL Design System worden met een [estafette aanpak](/handboek/estafettemodel) gemaakt en kunnen dus verschillende statussen hebben.
 
-<ComponentOverview headingLevel={2} />
+<BrowserOnly>{() => <ComponentOverview headingLevel={2} />}</BrowserOnly>
