@@ -1,5 +1,4 @@
 import type { PropSidebarItem, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
-import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
@@ -24,8 +23,7 @@ export const ComponentOverview = () => {
   };
 
   const category = useCurrentSidebarCategory();
-  const { location, push } = useHistory();
-
+  const { location } = window;
   const params = new URLSearchParams(location.search);
 
   const getComponent = (item: PropSidebarItemLink) =>
@@ -105,7 +103,13 @@ export const ComponentOverview = () => {
       params.append(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
     }
 
-    push({ ...location, search: params.toString() });
+    if (params.size > 0) {
+      history.pushState({}, '', `?${params.toString()}`);
+    } else {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('filter');
+      history.pushState({}, '', url);
+    }
   }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showOnlyImplemented]);
 
   const todo = components.filter((c) => c.relayStep === 'UNKNOWN');
