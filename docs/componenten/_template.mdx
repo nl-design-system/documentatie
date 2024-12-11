@@ -1,11 +1,11 @@
 ---
-title: VUL_NAAM_IN
+title: {naam-component}
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: VUL_NAAM_IN
-pagination_label: VUL_NAAM_IN
-description: VUL_BESCHRIJVING_IN
-slug: /VUL_NAAM_ALS_KEBABJE_IN
+sidebar_label: {naam-component}
+pagination_label: {naam-component}
+description: {beschrijving-component}
+slug: /{naam-component-kebab-case}
 ---
 
 {/* @license CC0-1.0 */}
@@ -19,9 +19,9 @@ import {
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
-export const title = ""; //Vul naam in
-export const description = ""; //Vul component beschrijving in
-export const issueNumber = 0; //Vul GitHub Issue nummer in
+export const title = "{naam-component}";
+export const description = "{beschrijving-component}";
+export const issueNumber = {github-issue-nummer};
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
