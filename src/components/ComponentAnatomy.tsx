@@ -8,6 +8,7 @@ import type { CleanComponentProgress as ComponentProgressObject } from '@nl-desi
 interface IllustrationProps {
   className?: string;
   height?: boolean;
+  role?: string;
 }
 
 interface ComponentAnatomyProps {
@@ -31,7 +32,7 @@ export const ComponentAnatomy = ({
     <Suspense fallback={null}>
       <figure className={clsx('component-anatomy')}>
         {AnatomyIllustration && (
-          <AnatomyIllustration height={null} className={clsx('component-anatomy__illustration')} />
+          <AnatomyIllustration role="img" height={null} className={clsx('component-anatomy__illustration')} />
         )}
         {AnatomyIllustration && AnatomyLegend && (
           <figcaption>
