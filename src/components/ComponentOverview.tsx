@@ -131,7 +131,7 @@ export const ComponentOverview = () => {
           {
             className: 'utrecht-accordion--nlds-subtle',
             headingLevel: 2,
-            expanded: false,
+            expanded: params.size > 0,
 
             // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
