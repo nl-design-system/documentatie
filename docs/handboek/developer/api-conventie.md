@@ -24,6 +24,38 @@ Algemene conventies, die gelden voor meerdere technieken:
 - Bestanden die in je npm package gedeeld worden, via `"exports":` of via `"files":` zijn onderdeel van de API, wijzigingen in de bestanden kunnen daarom leiden tot een nieuwe major release.
 - Gebruik `"type": "module"`.
 
+## Breaking changes voorkomen
+
+Als je een breaking change doet voor je API, dan moeten teams controleren of ze een migratie moeten doen naar de nieuwe API. Dat levert werk op, en dat is op zich al handig om te voorkomen.
+
+Als je een variant maakt van een component, bied die dan niet aan als "boolean attribute". Dan heb je geen mogelijkheid om nog een extra variant toe te voegen zonder een breaking change te doen.
+
+Bijvoorbeeld in React:
+
+```jsx
+<Button danger>Verwijderen</Button>
+```
+
+Nu is het niet makkelijk om `completion` toe te voegen, op een manier die niet met `danger` gecombineerd kan worden:
+
+```jsx
+<Button completion>Verwijderen</Button>
+```
+
+Want nu is ook dit mogelijk, met onduidelijk resultaat:
+
+```jsx
+<Button completion danger>
+  Verwijderen
+</Button>
+```
+
+Het daarom tactischer om gelijk te beginnnen met een enumaration attribute, ook al is er nu nog maar 1 optie.
+
+```jsx
+<Button effect="danger">Verwijderen</Button>
+```
+
 ## Componenten voor HTML
 
 [Globale HTML-attributen](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) moeten hun normale gedrag behouden. Dat betekent dat je sommige properties in bijvoorbeeld React, Angular en Web Components niet voor eigen andere doeleinden moet gebruiken. Denk daarbij aan bijvoorbeeld:
