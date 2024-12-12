@@ -1,6 +1,6 @@
 import { MDXProvider } from '@mdx-js/react';
 import { Heading2, Heading3, Heading4, Heading5, Heading6 } from '@utrecht/component-library-react/dist/css-module';
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren, ReactNode } from 'react';
 
 const resolveUrl = (from, to) => {
   const resolvedUrl = new URL(to, new URL(from, 'resolve://pathname/'));
@@ -44,6 +44,7 @@ export interface MarkdownProps {
   baseUrl?: string;
   headingLevel?: number;
   omitH1?: boolean;
+  components?: { [index: string]: (_props: PropsWithChildren<object>) => ReactNode };
 }
 
 export const Markdown = ({
@@ -51,6 +52,9 @@ export const Markdown = ({
   omitH1 = false,
   headingLevel = 1,
   baseUrl = '',
+  components = {},
 }: PropsWithChildren<MarkdownProps>) => (
-  <MDXProvider components={{ ...setHeadings(omitH1, headingLevel), ...addBaseUrl(baseUrl) }}>{children}</MDXProvider>
+  <MDXProvider components={{ ...setHeadings(omitH1, headingLevel), ...addBaseUrl(baseUrl), ...components }}>
+    {children}
+  </MDXProvider>
 );
