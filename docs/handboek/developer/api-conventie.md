@@ -26,7 +26,7 @@ Algemene conventies, die gelden voor meerdere technieken:
 
 ## Componenten voor HTML
 
-[Globale HTML-attributen](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) moeten hun normale gedrag behouden. Dat betekent dat sommige properties gereserveerd zijn in bijvoorbeeld React, Angular en Web Components. Bijvoorbeeld:
+[Globale HTML-attributen](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) moeten hun normale gedrag behouden. Dat betekent dat je sommige properties in bijvoorbeeld React, Angular en Web Components niet voor eigen andere doeleinden moet gebruiken. Denk daarbij aan bijvoorbeeld:
 
 - `data-*`
 - `dir`
@@ -39,6 +39,8 @@ Algemene conventies, die gelden voor meerdere technieken:
 - `style`
 - `title`
 - `translate`
+
+In de React versie van een component zorgen we ervoor dat deze properties terechtkomen (meestal door `..restProps` te spreaden) op het uiteindelijke HTML element.
 
 ## CSS
 
