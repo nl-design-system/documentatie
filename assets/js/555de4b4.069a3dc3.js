@@ -3,12 +3,12 @@
  [22281],
  {
   23715: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => t, contentTitle: () => o, default: () => h, frontMatter: () => a, metadata: () => d, toc: () => l });
+   i.r(n), i.d(n, { assets: () => t, contentTitle: () => a, default: () => h, frontMatter: () => o, metadata: () => d, toc: () => l });
    var s = i(52676),
     r = i(87118);
-   const a = { title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Herbruikbare CSS schrijven', pagination_label: 'Herbruikbare CSS schrijven', description: 'Als developer CSS schrijven aan NL Design System', keywords: ['developer', 'CSS', 'componenten'] },
-    o = 'Herbruikbare CSS schrijven voor NL Design System',
-    d = { id: 'handboek/developer/herbruikbare-css', title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', description: 'Als developer CSS schrijven aan NL Design System', source: '@site/docs/handboek/developer/10-herbruikbare-css.md', sourceDirName: 'handboek/developer', slug: '/handboek/developer/herbruikbare-css', permalink: '/handboek/developer/herbruikbare-css', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/10-herbruikbare-css.md', tags: [], version: 'current', sidebarPosition: 10, frontMatter: { title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Herbruikbare CSS schrijven', pagination_label: 'Herbruikbare CSS schrijven', description: 'Als developer CSS schrijven aan NL Design System', keywords: ['developer', 'CSS', 'componenten'] }, sidebar: 'handboek', previous: { title: 'Meewerken', permalink: '/handboek/developer/meewerken-als-developer' }, next: { title: 'Voor organisaties', permalink: '/handboek/organisatie/overzicht' } },
+   const o = { title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Herbruikbare CSS schrijven', pagination_label: 'Herbruikbare CSS schrijven', description: 'Als developer CSS schrijven aan NL Design System', keywords: ['developer', 'CSS', 'componenten'] },
+    a = 'Herbruikbare CSS schrijven voor NL Design System',
+    d = { id: 'handboek/developer/herbruikbare-css', title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', description: 'Als developer CSS schrijven aan NL Design System', source: '@site/docs/handboek/developer/10-herbruikbare-css.md', sourceDirName: 'handboek/developer', slug: '/handboek/developer/herbruikbare-css', permalink: '/handboek/developer/herbruikbare-css', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/10-herbruikbare-css.md', tags: [], version: 'current', sidebarPosition: 10, frontMatter: { title: 'Herbruikbare CSS schrijven \xb7 Developer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Herbruikbare CSS schrijven', pagination_label: 'Herbruikbare CSS schrijven', description: 'Als developer CSS schrijven aan NL Design System', keywords: ['developer', 'CSS', 'componenten'] }, sidebar: 'handboek', previous: { title: 'Meewerken', permalink: '/handboek/developer/meewerken-als-developer' }, next: { title: 'Design Token conventie', permalink: '/handboek/developer/design-token-conventie' } },
     t = {},
     l = [
      { value: 'Schrijf CSS die ook werkt voor anderen', id: 'schrijf-css-die-ook-werkt-voor-anderen', level: 2 },
@@ -29,12 +29,12 @@
    }
   },
   87118: (e, n, i) => {
-   i.d(n, { Z: () => d, a: () => o });
+   i.d(n, { Z: () => d, a: () => a });
    var s = i(75271);
    const r = {},
-    a = s.createContext(r);
-   function o(e) {
-    const n = s.useContext(a);
+    o = s.createContext(r);
+   function a(e) {
+    const n = s.useContext(o);
     return s.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
@@ -44,7 +44,7 @@
    }
    function d(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : o(e.components)), s.createElement(a.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : a(e.components)), s.createElement(o.Provider, { value: n }, e.children);
    }
   },
  },

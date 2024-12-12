@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/developer/design-token-conventie" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">Design Token conventie · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/developer/design-token-conventie" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Design Token conventie · NL Design System" />
+  <meta data-rh="true" name="description" content="Conventies voor het maken van Design Tokens" />
+  <meta data-rh="true" property="og:description" content="Conventies voor het maken van Design Tokens" />
+  <meta data-rh="true" name="keywords" content="api,design token" />
+  <link data-rh="true" rel="icon" href="/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/developer/design-token-conventie" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/design-token-conventie" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/design-token-conventie" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.83b806aa.css" />
+  <script src="/assets/js/runtime~main.b6a8a753.js" defer="defer"></script>
+  <script src="/assets/js/main.d6baa07f.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute('data-theme', t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem('theme');
+      } catch (t) {}
+     })();
+    t(null !== e ? e : 'light');
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_MK4h" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a aria-current="page" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link navbar__link--active" href="/handboek">Handboek</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/richtlijnen">Richtlijnen</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/componenten/">Componenten</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/voorbeelden/">Voorbeelden</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/community">Community</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div class="nav-search-bar">
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" aria-label="Zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_Y1YS">
+     <div class="docsWrapper_Sitb">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_fuSd" type="button"></button>
+      <div class="docRoot_ZQ8x">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_UTTr">
+        <div class="sidebarViewport_h2ZS">
+         <div class="sidebar sidebarWithHideableNavbar sidebarWithNavbar">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" aria-expanded="true" class="sidebar__content">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/introductie">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel">Estafettemodel</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/design-tokens/">Design Tokens</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/component-bijdragen/overzicht">Componenten bijdragen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Componenten bijdragen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/designer/overzicht">Voor designers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor designers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/developer/overzicht">Voor developers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor developers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/aan-de-slag">Aan de slag</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/architectuur">Architectuur</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/thema-maken">Thema maken</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/samenwerken-aan-componenten">Component kiezen</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/component-inzetten">Component inzetten</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/component-uitbreiden">Component uitbreiden</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/componenten-maken">Componenten maken</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/meewerken-als-developer">Meewerken</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/developer/herbruikbare-css">Herbruikbare CSS schrijven</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/handboek/developer/design-token-conventie">Design Token conventie</a></li>
+                </ul>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht">Voor organisaties</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor organisaties&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/leverancier/introductie">Voor leveranciers</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/manager/introductie">Voor managers</a></li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_ogxn">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_MbwE">
+           <div class="docItemContainer_jzuL">
+            <article>
+             <div class="breadcrumbs breadcrumbs--desktop">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs" aria-labelledby=":R15ralaqh:">
+               <h2 class="utrecht-heading-2 utrecht-breadcrumb-nav__heading" id=":R15ralaqh:" aria-hidden="true">breadcrumb</h2>
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Handboek</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/developer/aan-de-slag" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Voor developers</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Design Token conventie</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs breadcrumbs--mobile">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/handboek/developer/aan-de-slag"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Voor developers</a
+               >
+              </p>
+             </div>
+             <div class="tocCollapsible_B2bh theme-doc-toc-mobile tocMobile__2c9"><button type="button" class="clean-btn tocCollapsibleButton_FwaH">Op deze pagina</button></div>
+             <div class="theme-doc-markdown">
+              <h1 id="design-token-conventies" class="utrecht-heading-1">Design Token conventies</h1>
+              <p>We gebruiken het <a href="https://tr.designtokens.org/format/" class="utrecht-link utrecht-link--html-a">Design Tokens formaat</a> dat nog actief wordt ontwikkeld door de <a href="https://www.w3.org/groups/cg/design-tokens/" class="utrecht-link utrecht-link--html-a">Design Tokens Community Group</a> bij het W3C. Dat is een eenvoudig JSON-formaat om design keuzes uit te wisselen tussen systemen. De structuur die we gebruiken is als volgt voor componenten:</p>
+              <span hidden="" id=":Rmhralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;prefix&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;component&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;color&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;$value&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;#007DAD&quot;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <h2 id="de-structuur-van-design-tokens" class="utrecht-heading-2">De structuur van design tokens</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Gebruik voor de naam van tokens de conventies van CSS property namen: alleen kleine letters en koppelstreepjes.</li>
+               <li>Gebruik een prefix voor componenten, zodat nooit twee teams dezelfde token maken. Net als een &quot;vendor prefix&quot; in CSS.</li>
+               <li>Begin namen van tokens altijd met een letter, gebruik nooit met een cijfer als eerste teken. Bijvoorbeeld: gebruik <code class="utrecht-code">level-1</code> in plaats van <code class="utrecht-code">1</code>.</li>
+               <li>De token eindigt wanneer mogelijk op een bestaande CSS property-naam, zodat hieruit automatisch het datatype afgeleid kan worden.</li>
+              </ul>
+              <h3 id="onderdelen-van-een-component" class="utrecht-heading-3">Onderdelen van een component</h3>
+              <p>Gebruik de namen die overeenkomen met de anatomie van de component. De namen komen vaak overeen met de structuur van <a href="https://getbem.com" class="utrecht-link utrecht-link--html-a">BEM class names</a> in CSS.</p>
+              <p>Heeft een component een onderdeel (een &quot;Element&quot; in BEM), dan kun je dat gebruiken als onderdeel van de naam. Bijvoorbeeld <code class="utrecht-code">placeholder</code> in <code class="utrecht-code">example.text-input.placeholder.color</code>.</p>
+              <p>Heeft een component een variant, dan kun je die gebruiken als onderdeel van de naam. Bijvoorbeeld: <code class="utrecht-code">lead</code> in <code class="utrecht-code">example.paragraph.lead.font-size</code>.</p>
+              <p>Heeft een component een state, dan kun je die gebruiken als onderdeel van de naam. Bijvoorbeeld: <code class="utrecht-code">disabled</code> in <code class="utrecht-code">example.button.disabled.cursor</code>.</p>
+              <h3 id="property-namen" class="utrecht-heading-3">Property namen</h3>
+              <p>CSS property namen die we al gebruiken als design tokens:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">background-color</code></li>
+               <li><code class="utrecht-code">block-size</code>, <code class="utrecht-code">min-block-size</code> en <code class="utrecht-code">max-block-size</code>.</li>
+               <li><code class="utrecht-code">border-color</code></li>
+               <li><code class="utrecht-code">border-radius</code></li>
+               <li><code class="utrecht-code">border-style</code></li>
+               <li><code class="utrecht-code">border-width</code></li>
+               <li><code class="utrecht-code">outline-width</code></li>
+               <li><code class="utrecht-code">outline-color</code></li>
+               <li><code class="utrecht-code">color</code></li>
+               <li><code class="utrecht-code">cursor</code></li>
+               <li><code class="utrecht-code">font-family</code></li>
+               <li><code class="utrecht-code">font-size</code></li>
+               <li><code class="utrecht-code">font-weight</code></li>
+               <li><code class="utrecht-code">gap</code>, <code class="utrecht-code">column-gap</code> en <code class="utrecht-code">row-gap</code></li>
+               <li><code class="utrecht-code">inline-size</code>, <code class="utrecht-code">min-inline-size</code> en <code class="utrecht-code">max-inline-size</code></li>
+               <li><code class="utrecht-code">line-height</code></li>
+               <li><code class="utrecht-code">margin-inline</code> en <code class="utrecht-code">padding-inline</code></li>
+               <li><code class="utrecht-code">margin-block</code> en <code class="utrecht-code">padding-block</code></li>
+              </ul>
+              <p>Gebruik <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values" class="utrecht-link utrecht-link--html-a">CSS logical properties</a> waar mogelijk, zodat de component voor internationalisatie voldoet aan de Definition of Done.</p>
+              <p>Gebruik de volgende CSS properties in principe <strong>niet</strong>. Dit zijn geen CSS logical properties.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">height</code>, <code class="utrecht-code">min-height</code> en <code class="utrecht-code">max-height</code></li>
+               <li><code class="utrecht-code">margin-bottom</code></li>
+               <li><code class="utrecht-code">margin-left</code></li>
+               <li><code class="utrecht-code">margin-right</code></li>
+               <li><code class="utrecht-code">margin-top</code></li>
+               <li><code class="utrecht-code">padding-bottom</code></li>
+               <li><code class="utrecht-code">padding-left</code></li>
+               <li><code class="utrecht-code">padding-right</code></li>
+               <li><code class="utrecht-code">padding-top</code></li>
+               <li><code class="utrecht-code">width</code>, <code class="utrecht-code">min-width</code> en <code class="utrecht-code">max-width</code></li>
+              </ul>
+              <p>We gebruiken de volgende namen voor states, die uit CSS, HTML en ARIA komen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">hover</code></li>
+               <li><code class="utrecht-code">active</code></li>
+               <li><code class="utrecht-code">disabled</code></li>
+               <li><code class="utrecht-code">current</code></li>
+               <li><code class="utrecht-code">focus</code> (die vervangen we tegenwoordig vaak door <code class="utrecht-code">focus-visible</code>)</li>
+               <li><code class="utrecht-code">focus-visible</code></li>
+               <li><code class="utrecht-code">pressed</code></li>
+               <li><code class="utrecht-code">busy</code></li>
+               <li><code class="utrecht-code">disabled</code></li>
+              </ul>
+              <h3 id="platformonafhankelijke-tokens" class="utrecht-heading-3">Platformonafhankelijke tokens</h3>
+              <p>Gebruik design tokens met name voor designkeuzes die je op een implementatie- en platformonafhankelijke manier kunt uitdrukken. Waarden zoals kleuren en lengtes. Goede platform-onafhankelijk waarden zijn bijvoorbeeld:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">24px</code></li>
+               <li><code class="utrecht-code">#FF0000</code></li>
+              </ul>
+              <p>Dit soort waarden hebben de voorkeur boven waarden die alleen in CSS worden ondersteund, en bijvoorbeeld niet in Android en Figma:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">1ch</code></li>
+               <li><code class="utrecht-code">2em</code></li>
+               <li><code class="utrecht-code">cornflowerblue</code></li>
+              </ul>
+              <p>Als je een component wilt maken met twee varianten, dan moet je dat niet altijd met design tokens oplossen. Gebruik bijvoorbeeld de volgende CSS properties niet voor design tokens:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">display</code> met waardes zoals <code class="utrecht-code">none</code></li>
+               <li><code class="utrecht-code">flex-direction</code> met waardes zoals <code class="utrecht-code">column</code></li>
+               <li><code class="utrecht-code">overflow</code> met waardes zoals <code class="utrecht-code">auto</code></li>
+               <li><code class="utrecht-code">position</code> met waardes zoals <code class="utrecht-code">sticky</code></li>
+              </ul>
+              <p>Je mag natuurlijk wel voor intern gebruik CSS variables gebruiken voor deze CSS properties.</p>
+              <h2 id="essentiële-tokens-voor-white-label-componenten" class="utrecht-heading-2">Essentiële tokens voor white-label componenten</h2>
+              <p>Bied voldoende tokens aan om jouw white-label component aanpasbaar te maken voor de huisstijl van andere teams. Bekijk de screenshots die verzameld worden van componenten in de GitHub Discussions, en kijk welke designkeuzes verschillen bij de verschillende implementaties. Probeer circa 80% van de toegankelijke designs te ondersteunen.</p>
+              <p>We maken onderscheid tussen een aantal soorten componenten:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>&quot;inline componenten&quot;: tekst-componenten die in onderdeel zijn van lopende tekst. Bijvoorbeeld: Mark, Link, Emphasis.</li>
+               <li>&quot;inline block componenten&quot;: componenten die in de lopende tekst voorkomen. Bijvoorbeeld: Data Badge.</li>
+               <li>&quot;block componenten&quot;. componenten die tekst bevatten. Bijvoorbeeld: Table, Unordered List, Heading, Paragraph.</li>
+               <li>&quot;layout block componenten&quot;: componenten die block componenten bevatten. Bijvoorbeeld: Card, Alert.</li>
+               <li>&quot;layout componenten&quot;. Bijvoorbeeld: Page Header, Page Footer, Drawer, Dialog.</li>
+               <li>&quot;media componenten&quot;. Bijvoorbeeld: Image en Video.</li>
+              </ul>
+              <p>In het algemeen geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Wees terughoudend met design tokens toevoegen. Voeg pas design tokens toe als je ziet dat de design token vaak genoeg nodig is, of wanneer jij zelf iets bijzonders nodig hebt maar de rest van de wereld niet.</li>
+               <li>Voeg <code class="utrecht-code">color</code> en <code class="utrecht-code">background-color</code> toe als combinatie, zodat gebruikers een combinatie kunnen maken met voldoende contrast.</li>
+               <li>Voeg <code class="utrecht-code">font-size</code> en <code class="utrecht-code">line-height</code> toe als combinatie.</li>
+               <li>Vaak is zijn <code class="utrecht-code">min-inline-size</code>, <code class="utrecht-code">min-block-size</code>, <code class="utrecht-code">max-inline-size</code> en <code class="utrecht-code">max-block-size</code> handiger om te hebben dan <code class="utrecht-code">block-size</code> en <code class="utrecht-code">inline-size</code>. Flexibiliteit is vaak handig voor responsive layouts, toegankelijkheid bij inzoomen, en om ruimte te bieden aan uitzonderlijk lange teksten.</li>
+              </ul>
+              <p>Voor inline componenten geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je mag <code class="utrecht-code">color</code> toevoegen zonder <code class="utrecht-code">background-color</code> (een uitzondering), als je in de documentatie uitleg geeft met welke achtergrondkleuren je moet testen.</li>
+               <li>Het is vrijwel nooit nodig om <code class="utrecht-code">font-size</code> te hebben. Uitzonderingen zijn bijvoorbeeld: Superscript en Subscript.</li>
+               <li>Je hoeft nooit <code class="utrecht-code">line-height</code> te hebben.</li>
+              </ul>
+              <p>Voor inline block componenten geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je hoeft geen <code class="utrecht-code">line-height</code> te gebruiken wanneer de component gegarandeerd op 1 regel staat.</li>
+              </ul>
+              <p>Voor block componenten geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het is vaak handig om <code class="utrecht-code">font-size</code> en <code class="utrecht-code">line-height</code> te hebben.</li>
+               <li>Het is vaak handig om <code class="utrecht-code">font-family</code> te hebben.</li>
+              </ul>
+              <p>Voor layout componenten geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het is niet nodig om font-gerelateerde tokens te hebben.</li>
+              </ul>
+              <p>Voor media componenten geldt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Hier is het soms nodig om <code class="utrecht-code">width</code> en <code class="utrecht-code">height</code> te gebruiken in plaats van de <code class="utrecht-code">inline-size</code> en <code class="utrecht-code">block-size</code> CSS properties. Media moet vaak op dezelfde manier georieënteerd zijn, onafhankelijk van de tekstrichting.</li>
+              </ul>
+              <h2 id="de-value-van-design-tokens" class="utrecht-heading-2">De <code class="utrecht-code">$value</code> van design tokens</h2>
+              <p>Gebruik design tokens met name voor designkeuzes die je op een implementatie- en platformonafhankelijke manier kunt uitdrukken. Waarden zoals kleuren en lengtes. Goede platform-onafhankelijk waarden zijn bijvoorbeeld:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">24px</code></li>
+               <li><code class="utrecht-code">#FF0000</code></li>
+              </ul>
+              <p>Dit soort waarden hebben de voorkeur boven waarden die alleen in CSS worden ondersteund, en bijvoorbeeld niet in Android en Figma:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">1ch</code></li>
+               <li><code class="utrecht-code">2em</code></li>
+               <li><code class="utrecht-code">cornflowerblue</code></li>
+              </ul>
+              <p>Vermijd CSS keywords als design token waarde, want die zijn al helemaal niet platformonafhankelijk. Bijvoorbeeld:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">auto</code></li>
+               <li><code class="utrecht-code">currentColor</code></li>
+               <li><code class="utrecht-code">flex-end</code></li>
+               <li><code class="utrecht-code">inherit</code></li>
+               <li><code class="utrecht-code">monospace</code></li>
+              </ul>
+              <h2 id="publiceer-een-json-bestand-met-alleen-metadata" class="utrecht-heading-2">Publiceer een JSON bestand met alleen metadata</h2>
+              <p>Om documentatie van design tokens makkelijk te maken, publiceren we een <code class="utrecht-code">tokens.json</code> bestand met metadata op <a href="https://www.npmjs.com" class="utrecht-link utrecht-link--html-a">npm</a>. Dit bestand heeft geen enkele <code class="utrecht-code">$value</code>, alleen <code class="utrecht-code">$extensions</code> en <code class="utrecht-code">$type</code>.</p>
+              <p>Het voordeel van deze metadata los beheren, is dat het makkelijk is om metadata op één plek te hebben in plaats van in een heleboel themes.</p>
+              <p>Naast <code class="utrecht-code">$extensions</code> bevat het bestand ook <code class="utrecht-code">$type</code>, op basis van de <a href="https://tr.designtokens.org/format/#types" class="utrecht-link utrecht-link--html-a">types van de Design Tokens format</a>.</p>
+              <p>Bijvoorbeeld, je wilt een <code class="utrecht-code">tokens.json</code> maken bij de volgende CSS:</p>
+              <span hidden="" id=":Rdmhralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-button</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">font-size</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-button-font-size</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>Dan kun je de volgende <code class="utrecht-code">tokens.json</code> meeleveren:</p>
+              <span hidden="" id=":Re6hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Re6hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;example&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;button&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;background-color&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;$extensions&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">          </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;nl.nldesignsystem.css-property-syntax&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;&lt;color&gt;&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">          </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;nl.nldesignsystem.figma-implementation&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token boolean" style="color:var(--nlds-code-block-boolean-color)">true</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;$type&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;color&quot;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;font-size&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;$extensions&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">          </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;nl.nldesignsystem.css-property-syntax&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">[</span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;&lt;length&gt;&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;&lt;percentage&gt;&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">]</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">          </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;nl.nldesignsystem.figma-implementation&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token boolean" style="color:var(--nlds-code-block-boolean-color)">true</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;$type&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;fontSizes&quot;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>We gebruiken op dit moment de volgende extensions:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <code class="utrecht-code">nl.nldesignsystem.css-property-syntax</code>: een string of array met <a href="https://developer.mozilla.org/en-US/docs/Web/.CSS/@property/syntax" class="utrecht-link utrecht-link--html-a">CSS syntax descriptors</a>. We gebruiken deze waarde om een handige design token editor te genereren, en om <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">@property</code> definities</a> te genereren voor CSS.
+               </li>
+               <li><code class="utrecht-code">nl.nldesignsystem.figma-implementation</code>: een handmatige check die we doen om te kijken of de design token ook in Figma werkt. Voor sommige CSS properties is het niet mogelijk om in CSS een werkende implementatie te maken.</li>
+              </ul>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/design-token-conventie.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_VMcO" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_CdPQ"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/developer/herbruikbare-css"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Herbruikbare CSS schrijven</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/organisatie/overzicht"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Voor organisaties</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_oNug thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#de-structuur-van-design-tokens" class="table-of-contents__link toc-highlight">De structuur van design tokens</a></li>
+             <li><a href="#essentiële-tokens-voor-white-label-componenten" class="table-of-contents__link toc-highlight">Essentiële tokens voor white-label componenten</a></li>
+             <li>
+              <a href="#de-value-van-design-tokens" class="table-of-contents__link toc-highlight">De <code>$value</code> van design tokens</a>
+             </li>
+             <li><a href="#publiceer-een-json-bestand-met-alleen-metadata" class="table-of-contents__link toc-highlight">Publiceer een JSON bestand met alleen metadata</a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
