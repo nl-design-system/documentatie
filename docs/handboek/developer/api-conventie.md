@@ -70,7 +70,7 @@ Gebruik het BEM class name formaat ook voor mixins. Bijvoorbeeld:
 }
 ```
 
-Gebruik de prefix van jouw organisatie voor je de volgende dingen in SCSS:
+Gebruik de prefix van jouw organisatie voor de volgende dingen in SCSS:
 
 - SCSS variables. Bijvoorbeeld: `$example-button-color`.
 - SCSS mixins. Bijvoorbeeld: `@mixin example-button`
