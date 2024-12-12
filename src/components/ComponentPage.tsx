@@ -167,9 +167,8 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
 
 export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) => {
   const DISCUSSION_URL_COLUMN_ID = 'PVTF_lADOBGdlVM4AdX8lzgcig7o';
-  const DiscussionUrl = component?.projects
-    .find((project) => project.id === 'HELP_WANTED')
-    .tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID).value;
+  const project = component?.projects.find((project) => project.id === 'HELP_WANTED');
+  const DiscussionUrl = project?.tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID).value;
 
   return (
     component && (
