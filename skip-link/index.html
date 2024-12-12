@@ -26,8 +26,8 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.82e76864.css" />
-  <script src="/assets/js/runtime~main.ae304b3a.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.30b1da01.css" />
+  <script src="/assets/js/runtime~main.84acb513.js" defer="defer"></script>
   <script src="/assets/js/main.0ad67f31.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -858,154 +858,180 @@
               <h2 id="acceptatiecriteria" class="utrecht-heading-2">Acceptatiecriteria</h2>
               <p>Gebruik jij één van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.</p>
               <p>Als je implementatie voldoet aan de acceptatiecriteria voor dit component, kun je er vanuit gaan dat je gebruik van dit component voldoet aan WCAG, niveau A en AA, en voor twee succescriteria aan niveau AAA (<a href="https://nldesignsystem.nl/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a> en <a href="https://nldesignsystem.nl/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied uitgebreid</a>).</p>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid algemeen</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
-                </dl>
-                <p>Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak.</p>
-                <p>Wanneer het technisch niet mogelijk is om een tekst er uit te laten zien zoals bedoeld, dan zijn er twee uitzondering om een afbeelding te gebruiken.</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>De tekst in een logo, die hoort bij het beeldmerk.</li>
-                 <li>De gebruiker kan weergave van de afbeelding wijzigen, zoals font, kleur en tekstgrootte.</li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.4" class="utrecht-link utrecht-link--html-a">2.4.4 Linkdoel (in context)</a></dd>
-                </dl>
-                <p>De linktekst vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).</p>
-                <p>Wat is een <strong>linktekst</strong>? Het is de tekst die zichtbaar is, maar ook de tekst die aan een gebruiker van hulpsoftware wordt voorgelezen.</p>
-                <p>Wat is het <strong>linkdoel</strong>? De locatie waar de link naartoe gaat. Bijvoorbeeld de contactpagina, een nieuwsbericht, een andere website of een download van een document.</p>
-                <p>Wat betekent <strong>In context</strong>? Het doel van de link kan ook door omringende content worden aangegeven. Dit moet dan wel ook voor gebruikers van hulpmiddelen duidelijk zijn, bijvoorbeeld door aanvullende tekst of een afbeelding naast de link. Dit laatste is onderwerp van veel discussie. Het beste is om altijd goed in de linktekst zelf te vertellen want het doel is.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als de gebruiker de Skip Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
-                </dl>
-                <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
-                <p>Dat kan op meerdere manieren:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>De actie gebeurt pas bij het <code class="utrecht-code">up</code>-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het <code class="utrecht-code">up</code>-event te voorkomen.</li>
-                 <li>De actie gebeurt bij het <code class="utrecht-code">down</code>-event, maar bij het <code class="utrecht-code">up</code>-event wordt het effect weer ongedaan gemaakt.</li>
-                 <li>Je kunt het effect achteraf weer ongedaan maken.</li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De zichtbare naam van de Skip Link komt voor in de toegankelijke naam</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.5.3" class="utrecht-link utrecht-link--html-a">2.5.3 Label in naam</a></dd>
-                </dl>
-                <p>De zichtbare naam van de link is gelijk aan, of begint met de <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a>.</p>
-                <p>Dit is het eenvoudigst te realiseren door een <code class="utrecht-code">a</code>-element te gebruiken met daarin tekst.</p>
-                <p>Pas op met het gebruik van <code class="utrecht-code">aria-label</code> om een naam te geven aan een link. Een <code class="utrecht-code">aria-label</code> overschrijft de tekstinhoud van een link. Zodoende kan een link een toegankelijke naam krijgen die anders is dan de zichtbare naam, waardoor mensen die hulpsoftware gebruiken moeilijkheden kunnen krijgen met het bedienen van de link. Als je echt een <code class="utrecht-code">aria-label</code> nodig hebt, zorg dan dat de waarde van het <code class="utrecht-code">aria-label</code> begint met de exacte tekst die zichtbaar is in de link.</p>
-                <p>Dus niet:</p>
-                <span hidden="" id=":R9sjehralaqh:"
-                 >codevoorbeeld
-                 <!-- -->
-                 <!-- -->
-                </span>
-                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9sjehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Dit is een fout voorbeeld, niet kopiëren --&gt;</span><span class="token plain"></span>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3behralaqh:-panel" id="utrecht-accordion:R3behralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid algemeen</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3behralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
+                  </dl>
+                  <p>Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak.</p>
+                  <p>Wanneer het technisch niet mogelijk is om een tekst er uit te laten zien zoals bedoeld, dan zijn er twee uitzondering om een afbeelding te gebruiken.</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>De tekst in een logo, die hoort bij het beeldmerk.</li>
+                   <li>De gebruiker kan weergave van de afbeelding wijzigen, zoals font, kleur en tekstgrootte.</li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.4" class="utrecht-link utrecht-link--html-a">2.4.4 Linkdoel (in context)</a></dd>
+                  </dl>
+                  <p>De linktekst vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).</p>
+                  <p>Wat is een <strong>linktekst</strong>? Het is de tekst die zichtbaar is, maar ook de tekst die aan een gebruiker van hulpsoftware wordt voorgelezen.</p>
+                  <p>Wat is het <strong>linkdoel</strong>? De locatie waar de link naartoe gaat. Bijvoorbeeld de contactpagina, een nieuwsbericht, een andere website of een download van een document.</p>
+                  <p>Wat betekent <strong>In context</strong>? Het doel van de link kan ook door omringende content worden aangegeven. Dit moet dan wel ook voor gebruikers van hulpmiddelen duidelijk zijn, bijvoorbeeld door aanvullende tekst of een afbeelding naast de link. Dit laatste is onderwerp van veel discussie. Het beste is om altijd goed in de linktekst zelf te vertellen want het doel is.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de gebruiker de Skip Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
+                  </dl>
+                  <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
+                  <p>Dat kan op meerdere manieren:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>De actie gebeurt pas bij het <code class="utrecht-code">up</code>-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het <code class="utrecht-code">up</code>-event te voorkomen.</li>
+                   <li>De actie gebeurt bij het <code class="utrecht-code">down</code>-event, maar bij het <code class="utrecht-code">up</code>-event wordt het effect weer ongedaan gemaakt.</li>
+                   <li>Je kunt het effect achteraf weer ongedaan maken.</li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De zichtbare naam van de Skip Link komt voor in de toegankelijke naam</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.3" class="utrecht-link utrecht-link--html-a">2.5.3 Label in naam</a></dd>
+                  </dl>
+                  <p>De zichtbare naam van de link is gelijk aan, of begint met de <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a>.</p>
+                  <p>Dit is het eenvoudigst te realiseren door een <code class="utrecht-code">a</code>-element te gebruiken met daarin tekst.</p>
+                  <p>Pas op met het gebruik van <code class="utrecht-code">aria-label</code> om een naam te geven aan een link. Een <code class="utrecht-code">aria-label</code> overschrijft de tekstinhoud van een link. Zodoende kan een link een toegankelijke naam krijgen die anders is dan de zichtbare naam, waardoor mensen die hulpsoftware gebruiken moeilijkheden kunnen krijgen met het bedienen van de link. Als je echt een <code class="utrecht-code">aria-label</code> nodig hebt, zorg dan dat de waarde van het <code class="utrecht-code">aria-label</code> begint met de exacte tekst die zichtbaar is in de link.</p>
+                  <p>Dus niet:</p>
+                  <span hidden="" id=":R9snbehralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9snbehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Dit is een fout voorbeeld, niet kopiëren --&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Klik hier om in te loggen</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
-                <p>Maar:</p>
-                <span hidden="" id=":Rdsjehralaqh:"
-                 >codevoorbeeld
-                 <!-- -->
-                 <!-- -->
-                </span>
-                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdsjehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+                  <p>Maar:</p>
+                  <span hidden="" id=":Rdsnbehralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdsnbehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/labels/zichtbare-naam/" class="utrecht-link utrecht-link--html-a">De zichtbare naam moet overeenkomen met de toegankelijke naam</a></li>
-                </ul>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/labels/zichtbare-naam/" class="utrecht-link utrecht-link--html-a">De zichtbare naam moet overeenkomen met de toegankelijke naam</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
+                  <p><strong>Let op</strong>: Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
+                   <li><a href="/richtlijnen/stijl/ruimte/interactieve-elementen" class="utrecht-link utrecht-link--html-a">Reserveer ruimte tussen interactieve elementen</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.2.1" class="utrecht-link utrecht-link--html-a">3.2.1 Bij focus</a></dd>
+                  </dl>
+                  <p>Verras een gebruiker niet als die een interactief element focus geeft. Maak functionaliteit voorspelbaar en daardoor goed te begrijpen.</p>
+                  <p>Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.</p>
+                  <p>Bij een contextwijziging verandert onverwacht de indeling, informatie, toetsenbordfocus of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Skip Links die op meerdere pagina&#x27;s voorkomen staan in dezelfde relatieve volgorde</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.2.3" class="utrecht-link utrecht-link--html-a">3.2.3 Consistente navigatie</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina&#x27;s overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.</p>
+                  <p>Denk hierbij aan de skiplink, het hoofdmenu, de zoekoptie en de links in de footer. Dit maakt de structuur van de website makkelijker te begrijpen en hierdoor kan de gebruiker sneller navigeren.</p>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
-                </dl>
-                <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
-                <p><strong>Let op</strong>: Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
-                 <li><a href="/richtlijnen/stijl/ruimte/interactieve-elementen" class="utrecht-link utrecht-link--html-a">Reserveer ruimte tussen interactieve elementen</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/3.2.1" class="utrecht-link utrecht-link--html-a">3.2.1 Bij focus</a></dd>
-                </dl>
-                <p>Verras een gebruiker niet als die een interactief element focus geeft. Maak functionaliteit voorspelbaar en daardoor goed te begrijpen.</p>
-                <p>Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.</p>
-                <p>Bij een contextwijziging verandert onverwacht de indeling, informatie, toetsenbordfocus of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Skip Links die op meerdere pagina&#x27;s voorkomen staan in dezelfde relatieve volgorde</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/3.2.3" class="utrecht-link utrecht-link--html-a">3.2.3 Consistente navigatie</a></dd>
-                </dl>
-                <p>Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina&#x27;s overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde.</p>
-                <p>Denk hierbij aan de skiplink, het hoofdmenu, de zoekoptie en de links in de footer. Dit maakt de structuur van de website makkelijker te begrijpen en hierdoor kan de gebruiker sneller navigeren.</p>
-               </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid visueel ontwerp</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
-                </dl>
-                <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>4,5:1 contrast voor normale tekst.</li>
-                 <li>3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
-                 <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
-                </ul>
-                <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
-                </dl>
-                <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
-                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
-                 <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte;</li>
-                 <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte;</li>
-                 <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
-                </ul>
-                <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
-                <span hidden="" id=":Rbqjmhralaqh:"
-                 >codevoorbeeld
-                 <!-- -->
-                 <!-- -->
-                </span>
-                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbqjmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3bmhralaqh:-panel" id="utrecht-accordion:R3bmhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid visueel ontwerp</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3bmhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
+                  </dl>
+                  <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>4,5:1 contrast voor normale tekst.</li>
+                   <li>3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
+                   <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                  </ul>
+                  <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
+                  </dl>
+                  <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
+                  <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
+                   <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte;</li>
+                   <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte;</li>
+                   <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
+                  </ul>
+                  <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
+                  <span hidden="" id=":Rbqnbmhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbqnbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
@@ -1016,188 +1042,232 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
 </span></code></pre>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
-                </ul>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.7" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
+                  </dl>
+                  <p>Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.</p>
+                  <p>Verberg de Skip Link nooit met <code class="utrecht-code">display:none</code>. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
+                   <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link heeft een goed zichtbare focusindicator</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a></dd>
+                  </dl>
+                  <p>Er is een goed zichtbare focusindicator. Dit doe je met een minimale dikte van 2 pixels en een minimaal contrast van 3:1 ten opzichte van aangrenzende kleuren. Hou ook rekening met het contrast met de verschillende achtergrondkleuren waarop een element gebruikt kan worden. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
+                   <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
+                  <p><strong>Let op</strong>: Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
+                   <li><a href="/richtlijnen/stijl/ruimte/interactieve-elementen" class="utrecht-link utrecht-link--html-a">Reserveer ruimte tussen interactieve elementen</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.2.4" class="utrecht-link utrecht-link--html-a">3.2.4 Consistente identificatie</a></dd>
+                  </dl>
+                  <p>Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/iconen/respecteer-conventies" class="utrecht-link utrecht-link--html-a">Respecteer conventies</a></li>
+                  </ul>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.7" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
-                </dl>
-                <p>Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.</p>
-                <p>Verberg de Skip Link nooit met <code class="utrecht-code">display:none</code>. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
-                 <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
-                </ul>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3buhralaqh:-panel" id="utrecht-accordion:R3buhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid zoom en herschalen</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3buhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
+                  </dl>
+                  <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
+                  <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></dd>
+                  </dl>
+                  <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
+                  <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.</p>
+                  <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 CSS).</p>
+                  <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals bijvoorbeeld: tabellen, grafieken, video&#x27;s en landkaarten.</p>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link heeft een goed zichtbare focusindicator</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a></dd>
-                </dl>
-                <p>Er is een goed zichtbare focusindicator. Dit doe je met een minimale dikte van 2 pixels en een minimaal contrast van 3:1 ten opzichte van aangrenzende kleuren. Hou ook rekening met het contrast met de verschillende achtergrondkleuren waarop een element gebruikt kan worden. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
-                 <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
-                </ul>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3c6hralaqh:-panel" id="utrecht-accordion:R3c6hralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid toetsenbord</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3c6hralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.1.1" class="utrecht-link utrecht-link--html-a">2.1.1 Toetsenbord</a></dd>
+                  </dl>
+                  <p>Je kunt de link focussen met de tabtoets en activeren met de entertoets.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.1.2" class="utrecht-link utrecht-link--html-a">2.1.2 Geen toetsenbordval</a></dd>
+                  </dl>
+                  <p>Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.</p>
+                  <p>Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link slaat een contentblok over dat op meerdere pagina&#x27;s voorkomt</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.1" class="utrecht-link utrecht-link--html-a">2.4.1 Blokken omzeilen</a></dd>
+                  </dl>
+                  <p>Geef gebruikers van hulpmiddelen de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.</p>
+                  <p>Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.</p>
+                  <p>Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link staat op een logische plek in de focusvolgorde</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.3" class="utrecht-link utrecht-link--html-a">2.4.3 Focus volgorde</a></dd>
+                  </dl>
+                  <p>Wanneer een toetsenbordgebruiker binnen de webpagina navigeert, bijvoorbeeld met de Tab-toets, moet de tabvolgorde logisch en voorspelbaar zijn.</p>
+                  <p>De <strong>visuele</strong> focusvolgorde moet betekenisvol zijn.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.7" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
+                  </dl>
+                  <p>Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.</p>
+                  <p>Verberg de Skip Link nooit met <code class="utrecht-code">display:none</code>. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
+                   <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link wordt niet bedekt door een ander element op de pagina</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.11" class="utrecht-link utrecht-link--html-a">2.4.11 Focus niet bedekt (minimum)</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.</p>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
-                </dl>
-                <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
-                <p><strong>Let op</strong>: Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
-                 <li><a href="/richtlijnen/stijl/ruimte/interactieve-elementen" class="utrecht-link utrecht-link--html-a">Reserveer ruimte tussen interactieve elementen</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/3.2.4" class="utrecht-link utrecht-link--html-a">3.2.4 Consistente identificatie</a></dd>
-                </dl>
-                <p>Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/iconen/respecteer-conventies" class="utrecht-link utrecht-link--html-a">Respecteer conventies</a></li>
-                </ul>
-               </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid zoom en herschalen</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
-                </dl>
-                <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
-                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.10" class="utrecht-link utrecht-link--html-a">1.4.10 Reflow</a></dd>
-                </dl>
-                <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
-                <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.</p>
-                <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 CSS).</p>
-                <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals bijvoorbeeld: tabellen, grafieken, video&#x27;s en landkaarten.</p>
-               </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid toetsenbord</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.1.1" class="utrecht-link utrecht-link--html-a">2.1.1 Toetsenbord</a></dd>
-                </dl>
-                <p>Je kunt de link focussen met de tabtoets en activeren met de entertoets.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.1.2" class="utrecht-link utrecht-link--html-a">2.1.2 Geen toetsenbordval</a></dd>
-                </dl>
-                <p>Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.</p>
-                <p>Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link slaat een contentblok over dat op meerdere pagina&#x27;s voorkomt</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.1" class="utrecht-link utrecht-link--html-a">2.4.1 Blokken omzeilen</a></dd>
-                </dl>
-                <p>Geef gebruikers van hulpmiddelen de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.</p>
-                <p>Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.</p>
-                <p>Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link staat op een logische plek in de focusvolgorde</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.3" class="utrecht-link utrecht-link--html-a">2.4.3 Focus volgorde</a></dd>
-                </dl>
-                <p>Wanneer een toetsenbordgebruiker binnen de webpagina navigeert, bijvoorbeeld met de Tab-toets, moet de tabvolgorde logisch en voorspelbaar zijn.</p>
-                <p>De <strong>visuele</strong> focusvolgorde moet betekenisvol zijn.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.7" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
-                </dl>
-                <p>Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.</p>
-                <p>Verberg de Skip Link nooit met <code class="utrecht-code">display:none</code>. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbord focus goed zichtbaar</a></li>
-                 <li><a href="/richtlijnen/stijl/kleuren/voorkeuren" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link wordt niet bedekt door een ander element op de pagina</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/2.4.11" class="utrecht-link utrecht-link--html-a">2.4.11 Focus niet bedekt (minimum)</a></dd>
-                </dl>
-                <p>Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.</p>
-               </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid screenreader</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/3.1.2" class="utrecht-link utrecht-link--html-a">3.1.2 Taal van onderdelen</a></dd>
-                </dl>
-                <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
-                <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/4.1.2" class="utrecht-link utrecht-link--html-a">4.1.2 Naam, rol, waarde</a></dd>
-                </dl>
-                <p>De link heeft een rol van <code class="utrecht-code">link</code> en een <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a> die duidelijk maakt waar de link voor dient.</p>
-                <p>HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een <code class="utrecht-code">a</code>-element als je een link nodig hebt:</p>
-                <span hidden="" id=":R2ukehralaqh:"
-                 >codevoorbeeld
-                 <!-- -->
-                 <!-- -->
-                </span>
-                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2ukehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Contact</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3cehralaqh:-panel" id="utrecht-accordion:R3cehralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid screenreader</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3cehralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.1.2" class="utrecht-link utrecht-link--html-a">3.1.2 Taal van onderdelen</a></dd>
+                  </dl>
+                  <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                  <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/4.1.2" class="utrecht-link utrecht-link--html-a">4.1.2 Naam, rol, waarde</a></dd>
+                  </dl>
+                  <p>De link heeft een rol van <code class="utrecht-code">link</code> en een <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a> die duidelijk maakt waar de link voor dient.</p>
+                  <p>HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een <code class="utrecht-code">a</code>-element als je een link nodig hebt:</p>
+                  <span hidden="" id=":R2uncehralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2uncehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Contact</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
-                <p>Het is mogelijk om met ARIA een <code class="utrecht-code">role=&quot;link&quot;</code> toe te voegen aan een ander element dan een <code class="utrecht-code">a</code>, maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.</p>
+                  <p>Het is mogelijk om met ARIA een <code class="utrecht-code">role=&quot;link&quot;</code> toe te voegen aan een ander element dan een <code class="utrecht-code">a</code>, maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.</p>
+                 </div>
+                </div>
                </div>
-              </details>
+              </div>
               <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
               <p class="utrecht-paragraph">
                We vinden het belangrijk dat de component

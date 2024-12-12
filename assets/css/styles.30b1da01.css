@@ -2774,11 +2774,11 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .dsw-signup:hover {
  text-decoration: inherit;
 }
+.component-criteria-section__dt,
 .docs-doc-page .utrecht-html label,
 .docs-doc-page .utrecht-html legend,
 .dsw-signup-main,
-.wcag-em dt,
-details dt {
+.wcag-em dt {
  font-weight: 700;
 }
 .dsw-signup-sup {
@@ -6323,10 +6323,6 @@ code .namespace {
  max-height: 100%;
  padding: 0;
 }
-.dsw-session,
-.dsw-session__speakers {
- margin-block: 2em;
-}
 .navbar-sidebar::backdrop {
  background-color: #0009;
 }
@@ -6410,22 +6406,26 @@ code .namespace {
  min-inline-size: 32px;
  vertical-align: middle;
 }
-details h3 {
+.component-criteria-section__heading {
  display: inline-block;
 }
-details div {
+.component-criteria-section {
  border: 1px solid #ccc;
  margin-bottom: 1em;
  padding: 1em;
 }
-details dl {
+.component-criteria-section__dl {
  grid-gap: 4px 16px;
  display: grid;
  grid-template-columns: max-content;
 }
-details dd {
+.component-criteria-section__dd {
  grid-column-start: 2;
  margin: 0;
+}
+.dsw-session,
+.dsw-session__speakers {
+ margin-block: 2em;
 }
 .video-player {
  aspect-ratio: 16/9;

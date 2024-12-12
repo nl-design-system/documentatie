@@ -27,8 +27,8 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.82e76864.css" />
-  <script src="/assets/js/runtime~main.ae304b3a.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.30b1da01.css" />
+  <script src="/assets/js/runtime~main.84acb513.js" defer="defer"></script>
   <script src="/assets/js/main.0ad67f31.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -766,91 +766,131 @@
               <h2 id="acceptatiecriteria" class="utrecht-heading-2">Acceptatiecriteria</h2>
               <p>Gebruik jij één van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.</p>
               <p>Als je implementatie voldoet aan de acceptatiecriteria voor dit component, kun je er vanuit gaan dat je gebruik van dit component voldoet aan WCAG, niveau A en AA, en voor twee succescriteria aan niveau AAA (<a href="https://nldesignsystem.nl/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">2.4.13 Focusweergave</a> en <a href="https://nldesignsystem.nl/wcag/2.5.5" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied uitgebreid</a>).</p>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid algemeen</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">De eigenschappen van de Color Sample staan in tekst</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
-                </dl>
-                <p>Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maar gebruik hiervoor tekst. Dan schaalt de tekst goed mee als de gebruiker inzoomt en blijft deze leesbaar.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
-                </ul>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3behralaqh:-panel" id="utrecht-accordion:R3behralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid algemeen</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3behralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De eigenschappen van de Color Sample staan in tekst</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.5" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
+                  </dl>
+                  <p>Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maar gebruik hiervoor tekst. Dan schaalt de tekst goed mee als de gebruiker inzoomt en blijft deze leesbaar.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
+                  </ul>
+                 </div>
+                </div>
                </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid visueel ontwerp</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
-                </dl>
-                <p>Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.</p>
-                <p>De criteria voor kleurcontrast zijn:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="https://nldesignsystem.nl/contrast/?background-color=white&amp;color=%23767676" class="utrecht-link utrecht-link--html-a">4,5:1 contrast</a> voor normale tekst.</li>
-                 <li><a href="https://nldesignsystem.nl/contrast/?background-color=white&amp;color=%23949494" class="utrecht-link utrecht-link--html-a">3:1 contrast</a> voor grotere letters (vanaf 24 pixels).</li>
-                 <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
-                </ul>
-                <p>Tekst die over een afbeelding staat, moet ook voldoende contrast hebben met de kleuren in de afbeelding er omheen.</p>
-                <p>Deze eis geldt niet voor tekst op een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.</p>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3bmhralaqh:-panel" id="utrecht-accordion:R3bmhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid visueel ontwerp</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3bmhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
+                  </dl>
+                  <p>Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.</p>
+                  <p>De criteria voor kleurcontrast zijn:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="https://nldesignsystem.nl/contrast/?background-color=white&amp;color=%23767676" class="utrecht-link utrecht-link--html-a">4,5:1 contrast</a> voor normale tekst.</li>
+                   <li><a href="https://nldesignsystem.nl/contrast/?background-color=white&amp;color=%23949494" class="utrecht-link utrecht-link--html-a">3:1 contrast</a> voor grotere letters (vanaf 24 pixels).</li>
+                   <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                  </ul>
+                  <p>Tekst die over een afbeelding staat, moet ook voldoende contrast hebben met de kleuren in de afbeelding er omheen.</p>
+                  <p>Deze eis geldt niet voor tekst op een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.11" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a></dd>
+                  </dl>
+                  <p>Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de <a href="https://nldesignsystem.nl/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
+                  <p>Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.11" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a></dd>
-                </dl>
-                <p>Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de <a href="https://nldesignsystem.nl/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
-                <p>Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
-                </ul>
-               </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid zoom en herschalen</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
-                </dl>
-                <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
-                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                </ul>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
-                </dl>
-                <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
-                <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
-                 <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte;</li>
-                 <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte;</li>
-                 <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
-                </ul>
-                <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
-                <span hidden="" id=":R5ujuhralaqh:"
-                 >codevoorbeeld
-                 <!-- -->
-                 <!-- -->
-                </span>
-                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5ujuhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3buhralaqh:-panel" id="utrecht-accordion:R3buhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid zoom en herschalen</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3buhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.4" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
+                  </dl>
+                  <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
+                  <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.12" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
+                  </dl>
+                  <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
+                  <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
+                   <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte;</li>
+                   <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte;</li>
+                   <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
+                  </ul>
+                  <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
+                  <span hidden="" id=":R5unbuhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5unbuhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
@@ -861,52 +901,68 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
 </span></code></pre>
-                <p>NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                 <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
-                </ul>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
+                  </ul>
+                 </div>
+                </div>
                </div>
-              </details>
-              <details class="task-list">
-               <summary><h3>Toegankelijkheid screenreader</h3></summary>
-               <div>
-                <h4 class="utrecht-heading-4">De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.1.1" class="utrecht-link utrecht-link--html-a">1.1.1 Niet-tekstuele content</a></dd>
-                </dl>
-                <p>Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam van de kleur, de hex-code of de hsl-waarde, de transparantie, het doel van de kleur, de CSS-class.</p>
-                <p>Dan is het voor screenreadergebruikers en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.</p>
-                <p>Gerelateerde NL Design System richtlijnen:</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/stijl/kleuren/niet-kleur-alleen" class="utrecht-link utrecht-link--html-a">Vertrouw niet op kleur alleen</a></li>
-                 <li><a href="/richtlijnen/stijl/kleuren/waarneming" class="utrecht-link utrecht-link--html-a">Let op verschillen in waarneming van kleur</a></li>
-                </ul>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object]">
+                <h2 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3c6hralaqh:-panel" id="utrecht-accordion:R3c6hralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid screenreader</span></span>
+                 </button>
+                </h2>
+                <div id="utrecht-accordion:R3c6hralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.1.1" class="utrecht-link utrecht-link--html-a">1.1.1 Niet-tekstuele content</a></dd>
+                  </dl>
+                  <p>Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam van de kleur, de hex-code of de hsl-waarde, de transparantie, het doel van de kleur, de CSS-class.</p>
+                  <p>Dan is het voor screenreadergebruikers en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.</p>
+                  <p>Gerelateerde NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/kleuren/niet-kleur-alleen" class="utrecht-link utrecht-link--html-a">Vertrouw niet op kleur alleen</a></li>
+                   <li><a href="/richtlijnen/stijl/kleuren/waarneming" class="utrecht-link utrecht-link--html-a">Let op verschillen in waarneming van kleur</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a></dd>
+                  </dl>
+                  <p>Een screenreadergebruiker kan herkennen welk kleurvlak bij welke eigenschappen hoort. Dit is niet alleen via de visuele informatie beschikbaar, maar ook vanuit de semantiek van de HTML-code.</p>
+                  <p>Dit kan bijvoorbeeld door het weergeven van het kleurvlak en de data in een tabel <code class="utrecht-code">&lt;table&gt;</code>, een description list <code class="utrecht-code">&lt;dl&gt;</code> of in een ongenummerde lijst <code class="utrecht-code">&lt;ul&gt;</code>.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.3.2" class="utrecht-link utrecht-link--html-a">1.3.2 Betekenisvolle volgorde</a></dd>
+                  </dl>
+                  <p>Een screenreadergebruiker kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest. De connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" class="utrecht-link utrecht-link--html-a">DOM</a>.</p>
+                  <p>Gerelateerde NL Design System richtlijnen</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde" class="utrecht-link utrecht-link--html-a">Zorg voor een logische volgorde van de informatie</a></li>
+                  </ul>
+                 </div>
+                </div>
                </div>
-               <div>
-                <h4 class="utrecht-heading-4">Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.3.1" class="utrecht-link utrecht-link--html-a">1.3.1 Info en relaties</a></dd>
-                </dl>
-                <p>Een screenreadergebruiker kan herkennen welk kleurvlak bij welke eigenschappen hoort. Dit is niet alleen via de visuele informatie beschikbaar, maar ook vanuit de semantiek van de HTML-code.</p>
-                <p>Dit kan bijvoorbeeld door het weergeven van het kleurvlak en de data in een tabel <code class="utrecht-code">&lt;table&gt;</code>, een description list <code class="utrecht-code">&lt;dl&gt;</code> of in een ongenummerde lijst <code class="utrecht-code">&lt;ul&gt;</code>.</p>
-               </div>
-               <div>
-                <h4 class="utrecht-heading-4">Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort</h4>
-                <dl>
-                 <dt>WCAG</dt>
-                 <dd><a href="/wcag/1.3.2" class="utrecht-link utrecht-link--html-a">1.3.2 Betekenisvolle volgorde</a></dd>
-                </dl>
-                <p>Een screenreadergebruiker kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest. De connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" class="utrecht-link utrecht-link--html-a">DOM</a>.</p>
-                <p>Gerelateerde NL Design System richtlijnen</p>
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><a href="/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde" class="utrecht-link utrecht-link--html-a">Zorg voor een logische volgorde van de informatie</a></li>
-                </ul>
-               </div>
-              </details>
+              </div>
               <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
               <p class="utrecht-paragraph">
                We vinden het belangrijk dat de component
