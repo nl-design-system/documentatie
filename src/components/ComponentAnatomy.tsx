@@ -4,6 +4,7 @@ import React, { type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 import './ComponentAnatomy.css';
 import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
+import { AnatomyList, AnatomyListItem } from './AnatomyList';
 
 interface IllustrationProps {
   className?: string;
@@ -36,7 +37,14 @@ export const ComponentAnatomy = ({
         )}
         {AnatomyIllustration && AnatomyLegend && (
           <figcaption>
-            <Markdown omitH1 headingLevel={1}>
+            <Markdown
+              omitH1
+              headingLevel={1}
+              components={{
+                ol: ({ children }) => <AnatomyList>{children}</AnatomyList>,
+                li: ({ children }) => <AnatomyListItem>{children}</AnatomyListItem>,
+              }}
+            >
               <AnatomyLegend />
             </Markdown>
           </figcaption>
