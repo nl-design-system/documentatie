@@ -36,7 +36,7 @@ Bijvoorbeeld in React:
 <Button danger>Verwijderen</Button>
 ```
 
-Nu is het niet makkelijk om `completion` toe te voegen, op een manier dat die niet met `danger` gecombineerd kan worden:
+Nu is het niet makkelijk om `completion` toe te voegen, op een manier die niet met `danger` gecombineerd kan worden:
 
 ```jsx
 <Button completion>Verwijderen</Button>
