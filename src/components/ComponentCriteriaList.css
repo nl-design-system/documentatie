@@ -1,22 +1,22 @@
-details h3 {
+.component-criteria-section__heading {
   display: inline-block;
 }
 
-details div {
+.component-criteria-section {
   border: solid 1px #ccc;
   padding: 1em;
   margin-bottom: 1em;
 }
 
-details dl {
+.component-criteria-section__dl {
   display: grid;
   grid-gap: 4px 16px;
   grid-template-columns: max-content;
 }
-details dt {
+.component-criteria-section__dt {
   font-weight: bold;
 }
-details dd {
+.component-criteria-section__dd {
   margin: 0;
   grid-column-start: 2;
 }
