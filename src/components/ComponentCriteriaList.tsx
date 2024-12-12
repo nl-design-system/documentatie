@@ -15,6 +15,7 @@
 
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import { successCriteriaMap } from './wcag22';
+import { AccordionProvider } from '@utrecht/component-library-react';
 import './ComponentCriteriaList.css';
 
 /**
@@ -56,24 +57,24 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
   return (
-    <div>
-      <Heading appearance="utrecht-heading-4" level={headingLevel}>
+    <div className="component-criteria-section">
+      <Heading appearance="utrecht-heading-4" level={headingLevel} className="component-criteria-section__heading">
         {title}
       </Heading>
       {(sc || status) && (
-        <dl>
+        <dl className="component-criteria-section__dl">
           {sc && (
             <>
-              <dt>WCAG</dt>
-              <dd>
+              <dt className="component-criteria-section__dt">WCAG</dt>
+              <dd className="component-criteria-section__dd">
                 <Link href={`/wcag/${sc}`}>{scTitle}</Link>
               </dd>
             </>
           )}
           {status && (
             <>
-              <dt>Status</dt>
-              <dd>{status}</dd>
+              <dt className="component-criteria-section__dt">Status</dt>
+              <dd className="component-criteria-section__dl">{status}</dd>
             </>
           )}
         </dl>
@@ -88,12 +89,17 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
  *
  */
 export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
-  <details className="task-list">
-    <summary>
-      <h3>{testCategory}</h3>
-    </summary>
-    {items.map((item, index) => (
-      <CriteriaListItem key={index} {...item} />
-    ))}
-  </details>
+  <AccordionProvider
+    sections={[
+      {
+        className: 'utrecht-accordion--nlds-subtle',
+        headingLevel: 2,
+        expanded: false,
+        // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        label: (<span>{testCategory}</span>) as any,
+        body: items.map((item, index) => <CriteriaListItem key={index} {...item} />),
+      },
+    ]}
+  />
 );
