@@ -83,7 +83,7 @@ Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je
 
 **Tip!** Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--denhaag-button-primary-action-background-color` of `--ams-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
 
-**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan een design tokens voor font-family bij de componenten Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
 
 **🚩 Checkpoint**: Minimale design tokens
 
@@ -93,7 +93,7 @@ Doel: Organisaties kunnen componenten naast elkaar gebruiken zonder dat deze met
 
 Om componenten van elkaar te kunnen gebruiken is het toevoegen van een prefix zoals bijvoorbeeld `utrecht-` of `ams-` verplicht.
 
-Check of de prefix van de gekozen organisatie is toegevoegd aan onderstaande onderdelen:
+Check of de prefix van de gekozen organisatie is toegevoegd aan de onderstaande onderdelen:
 
 - CSS class selectors.
 - CSS variables.
@@ -142,7 +142,7 @@ Check of de gekozen organisatie de CC0 licentie benoemt in het README.md bestand
 
 Doel: De component wordt beter vindbaar voor andere organisaties en kan makkelijk worden voorzien van een eigen thema.
 
-Als kernteam maken we de component beschikbaar in de ['Themes' repository](https://github.com/nl-design-system/themes), waardoor deze terug te vinden is in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/). Andere organisaties kunnen de component vervolgens gaan gebruiken.
+Als kernteam maken we de component beschikbaar in de ['Themes' repository](https://github.com/nl-design-system/themes), zodat deze terug te vinden is in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/). Andere organisaties kunnen de component vervolgens gebruiken.
 
 **🚩 Checkpoint**: Storybook thema's
 
@@ -159,12 +159,12 @@ Doel: De component wordt voorzien van het Voorbeeld thema, en organisaties worde
 
 Doel: De component wordt beschikbaar in de [NL Design System Figma bibliotheek](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=450-4121&t=AKzhgDPYAKNI1gaT-1). Designers van andere organisaties kunnen de component overnemen en gaan gebruiken.
 
-- Als kernteam nemen we de component over uit de Figma omgeving van de gekozen organisatie. Inclusief bijbehorende design tokens. We plaatsen de component in de NL Design System Figma bibliotheek. Daarbij wordt de component voorzien van het Voorbeeld thema.
+- Als kernteam nemen we de component over uit de Figma omgeving van de gekozen organisatie, inclusief de bijbehorende design tokens. We plaatsen de component in de NL Design System Figma bibliotheek en voorzien deze van het Voorbeeld thema.
 - Heeft de gekozen organisatie geen Figma component? Dan ontwikkelen we deze als kernteam zelf.
 
 Organisaties die de NL Design System Figma bibliotheek vanaf dat moment dupliceren, krijgen de component direct meegeleverd. Organisaties die de NL Design System Figma bibliotheek al hadden gedupliceerd, worden tijdens de volgende 'Bieb sync video' geïnformeerd over hoe ze dit component ook kunnen overnemen.
 
-- Kopieer de URL van de component pagina door in Figma met rechtermuisknop op de component in de sidebar te klikken (Copy link to page).
+- Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de component in de sidebar te klikken en 'Copy link to page' te selecteren.
 - Plak de URL in de kolom 'Figma URL' van het [Community projectbord](https://github.com/orgs/nl-design-system/projects/29/views/1).
 - Had de gekozen organisatie zelf geen Figma component? Plak de URL dan óók in het projectbord voor deze organisatie.
 
@@ -184,9 +184,9 @@ Door deze 'Component stickers' op screenshots te plakken, kunnen we geïnteresse
 
 Doel: iedereen kan zien dat de component nu richting Candidate wil.
 
-- Verander het 'Community' label van het backlog issue naar 'Candidate'.
-- Verander het 'Community' label van de GitHub Discussion naar 'Candidate'.
-- Filter het [Candidate bord](https://github.com/orgs/nl-design-system/projects/32) op de component door op `{naam-component}` te zoeken.
+- Verander het label 'Community' van het backlog issue naar 'Candidate'.
+- Verander het label 'Community' van de GitHub Discussion naar 'Candidate'.
+- Filter het [Candidate bord](https://github.com/orgs/nl-design-system/projects/32) op de component door te zoeken op `{naam-component}`.
 - Kopieer de URL na het filteren.
 - Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
 
@@ -201,7 +201,7 @@ Help je mee hem door de Candidate stappen te krijgen?
 
 ## Over promotie
 
-Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaats gevonden. Dit doen we omdat de de status 'Community' alleen zichtbaar is nadat alle checkpoint zijn behaald.
+Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaatsgevonden. Dit doen we omdat de status 'Community' pas zichtbaar wordt nadat alle checkpoint zijn behaald.
 
 **🚩 Checkpoint**: Promotie
 
@@ -210,7 +210,7 @@ Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaats gevonden
 Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component beschikbaar.
 
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
-- Maak een nieuwe branch aan gebruik hiervoor de volgende naam:
+- Maak een nieuwe branch aan en gebruik de volgende naam:
 
 **Branch**
 
@@ -253,21 +253,21 @@ This PR will update the component progress to version {versienummer}.
 
 Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.
 
-- Voeg het '📣 Promotion' label toe aan het backlog issue.
+- Voeg het label '📣 Promotion' toe aan het backlog issue.
 - Selecteer bij ‘Projects’ het project 'Communicatie & PR'.
 
 ### Communityleden selecteren voor credits
 
-Het kernteam selecteert communityleden om credits aan uit te delen. Denk bijvoorbeeld aan de maintainer van Storybook en de betrokken designer. Dat kan door activiteit in de Discussion te zien of naar commits te kijken in de code van het community component.
+Het kernteam selecteert communityleden om credits toe te kennen. Dit kan bijvoorbeeld de maintainer van Storybook zijn of de betrokken designer. Activiteit in de Discussion of commits in de code van het community component kunnen hierbij als basis dienen.
 
 ### Slack
 
-Plaats dit bericht in #nl-design-system, vul aan waar nodig.
+Plaats dit bericht in #nl-design-system en vul het aan waar nodig.
 
 ```md
 ✨ {naam-component} is nu Community ✨
 
-Met dank aan {persoon/personen} van {organisatie} is {naam-component} beschikbaar in de Community!
+Met dank aan {persoon/personen} van {organisatie} is {naam-component} nu beschikbaar in de Community!
 
 [Bekijk {naam-component}]({url-nldesignsystem.nl}): {beschrijving-component}
 
@@ -276,7 +276,7 @@ Help je mee {naam-component} naar Candidate te brengen? Dat doe je bijvoorbeeld 
 
 ### Heartbeat, Nieuwsbrief en LinkedIn
 
-Vanuit het kernteam benaderen we de organisatie die de component heeft ontwikkeld. We vragen of zij de component tijdens een Heartbeat willen presenteren. Mocht dit niet mogelijk zijn doen wij dit als kernteam zelf.
+Vanuit het kernteam benaderen we de organisatie die de component heeft ontwikkeld. We vragen of zij de component tijdens een Heartbeat willen presenteren. Als dit niet mogelijk is, nemen wij als kernteam deze taak op ons.
 
 Daarnaast plaatsen we een bericht in de nieuwsbrief en op LinkedIn.
 
@@ -286,9 +286,9 @@ Promoties hoeven niet altijd dezelfde vorm aan te houden. Gebruik onderstaande p
 - Beschrijving van de component.
 - URL van de component op nldesignsystem.nl
 - URL van de GitHub Discussion.
-- Credits: persoon/personen van organisatie, eventueel in combinatie met een kort interview.
+- Credits: persoon/personen van organisatie, eventueel gecombineerd met een kort interview.
 
-Promoties kunnen gecombineerd worden als er meerdere componenten van status veranderen.
+Promoties kunnen ook gecombineerd worden wanneer meerdere componenten van status veranderen.
 
 ## 🏁 Finish
 
