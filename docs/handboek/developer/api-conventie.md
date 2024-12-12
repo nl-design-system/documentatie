@@ -85,7 +85,7 @@ Gebruik zoveel mogelijk ES Modules in `.mjs` bestanden. Probeer geen of steeds m
 
 ## TypeScript
 
-Lever TypeScript definitities (bestanden die eindigen op `.d.ts` en `d.mts`) bij je JavaScript files in npm pacakges.
+Lever TypeScript definities (bestanden die eindigen op `.d.ts` en `d.mts`) bij je JavaScript files in npm packages.
 
 ## React met TypeScript
 
