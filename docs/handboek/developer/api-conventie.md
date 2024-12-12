@@ -103,7 +103,7 @@ Maak het mogelijk dat mensen extra HTML properties kunnen toevoegen aan je compo
 const ExampleButton = ({ children, ...restProps }) => <p {...restProps}>{children}</p>;
 ```
 
-Maak het mogelijk dat mensen extra clss name kunnen toevoegen aan je component, die samen met je eigen class names gebruikt kunenn worden. Bijvoorbeeld:
+Maak het mogelijk dat mensen extra class names kunnen toevoegen aan je component, die samen met je eigen class names gebruikt kunnen worden. Bijvoorbeeld:
 
 ```js
 import { clsx } from "clsx";
