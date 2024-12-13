@@ -207,6 +207,56 @@ De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Paragrap
   ]}
 />
 
+## Toegankelijkheid
+
+Wij letten op de volgende WCAG 2.2 succescriteria, als wij de toegankelijkheid van de Candidate Paragraph component testen:
+
+- [WCAG-successcriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+- [WCAG-successcriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)
+- [WCAG-successcriterium 1.4.4 Herschalen van tekst](https://nldesignsystem.nl/wcag/1.4.4)
+- [WCAG-successcriterium 1.4.10 Reflow](/wcag/1.4.10)
+- [WCAG-successcriterium 1.4.12 Tekstafstand](/wcag/1.4.12)
+- [WCAG-successcriterium 3.1.2 Taal van onderdelen](/wcag/3.1.2)
+
+De Candidate Paragraph component is onderdeel van een verzameling test-webpagina's, die is getoetst op deze successcriteria. Onze test-webpagina's voldoen aan deze succescriteria.
+
+Wanneer je de Candidate Paragraph component ook toegankelijk wil toepassen in jouw webpagina's, doe dan het volgende:
+
+- Stel het contrast van de design tokens in op [voldoende contrast](/contrast/) tussen `nl.paragraph.color` en de achtergrondkleur van de webpagina.
+- Pas de lettergrootte aan naar een groot lettertype, wanneer je een kleur wilt gebruiken met een lager contrast dan 4,5 ÷ 1.
+- Gebruik de Paragraph component alleen in combinatie met CSS voor woordafbreking. Bijvoorbeeld:
+
+  ```css
+  :root {
+    hyphens: auto;
+    word-break: break-word;
+  }
+  ```
+
+- Verminder niet het contrast door de gebruikersvoorkeuren voor anti-aliasing aan te passen in CSS, of maak de wijzigingen ongedaan met:
+
+  ```css
+  * {
+    -webkit-font-smoothing: auto !important;
+    -moz-osx-font-smoothing: auto !important;
+  }
+  ```
+
+- Maak een overzicht van alle achtergrondkleuren waarop de Paragraph component voorkomt. Stel voor elke situatie de volgende design token in op een kleur met voldoende contrast: `nl.paragraph.color`.
+- Geef de redactie van de webpagina's de mogelijkheid om de taal en tekstrichting van de component in te stellen. Dit kan bijvoorbeeld in een CMS.
+
+  Maak het ook makkelijk om te herkennen bij welke Paragraph component een alternatieve taal is ingesteld, zodat het opvallend is waar de taal nog niet is ingesteld.
+
+- Geef de redactie van de webpagina's de mogelijkheid om de taal en tekstrichting van delen van de tekst in te stellen. Dit kan bijvoorbeeld in de Rich Text Editor van een CMS.
+- Geef de redactie van de webpagina's de instructie om de taal van alinea's in te stellen, wanneer die anders is dan de taal van de webpagina.
+- Geef de redactie van de webpagina's de instructie om de taal van delen van de tekst in te stellen, wanneer die anders is dan de taal van de webpagina.
+- Stel de `font-size` van een Paragraph in met een relatieve CSS units. Bijvoorbeeld: bij voorkeur `rem`, of eventueel `em`, `%`. Gebruik geen `px` of `pt`.
+- Stel de `line-height` van een Paragraph in met een relatieve CSS units. Bijvoorbeeld: bij voorkeur een unitless line-height (bijvoorbeeld: `1.5`), of eventueel `%`, `rem`, of `em`. Gebruik geen `px` of `pt`.
+
+De Paragraph component is in de volgende webpagina's gebruikt die op deze successcriteria voldoen aan WCAG 2.2 Niveau AA:
+
+- [Laat het weten](project/kernteam) als jouw site hier vermeld kan worden, en stuur ons de link van je toegankelijkheidsverklaring!
+
 ## Help component verbeteren
 
 <HelpImproveComponent component={component} headingLevel={3} />
