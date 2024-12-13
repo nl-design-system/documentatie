@@ -9,7 +9,6 @@ import { AnatomyList, AnatomyListItem } from './AnatomyList';
 interface IllustrationProps {
   className?: string;
   height?: boolean;
-  role?: string;
 }
 
 interface ComponentAnatomyProps {
@@ -33,7 +32,7 @@ export const ComponentAnatomy = ({
     <Suspense fallback={null}>
       <figure className={clsx('component-anatomy')}>
         {AnatomyIllustration && (
-          <AnatomyIllustration role="img" height={null} className={clsx('component-anatomy__illustration')} />
+          <AnatomyIllustration height={null} className={clsx('component-anatomy__illustration')} />
         )}
         {AnatomyIllustration && AnatomyLegend && (
           <figcaption>
