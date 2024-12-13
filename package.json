@@ -106,6 +106,7 @@
     "@fontsource/open-sans": "5.1.0",
     "@fontsource/source-sans-pro": "5.1.0",
     "@mdx-js/react": "3.0.1",
+    "@nl-design-system-candidate/paragraph-react": "2.0.0",
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "1.0.0-alpha.151",

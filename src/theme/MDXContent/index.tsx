@@ -18,6 +18,7 @@ import {
   OrderedList,
   UnorderedList,
 } from '@utrecht/component-library-react/dist/css-module';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import type { ReactElement } from 'react';
 
 export default function MDXContent({ children }: Props): ReactElement {
@@ -44,6 +45,7 @@ export default function MDXContent({ children }: Props): ReactElement {
         h6: Heading6,
         admonition: Admonition,
         mermaid: Mermaid,
+        p: Paragraph,
       }}
     >
       {children}

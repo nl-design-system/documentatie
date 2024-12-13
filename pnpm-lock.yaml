@@ -141,6 +141,9 @@ importers:
       '@mdx-js/react':
         specifier: 3.0.1
         version: 3.0.1(@types/react@18.3.12)(react@18.3.1)
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.0.0
+        version: 2.0.0(@babel/runtime@7.26.0)(react@18.3.1)
       '@nl-design-system-unstable/documentation':
         specifier: workspace:*
         version: link:docs
@@ -1853,6 +1856,12 @@ packages:
 
   '@nl-design-system-candidate/paragraph-docs@1.0.3':
     resolution: {integrity: sha512-nggC1Sag8roS45P1gvhhPokYBxXRxrkIBuGIRQG92xWxRTFOAkxEnl6D5lnbiUNboJDTJ3eqcc48u2QCJyvAXw==}
+
+  '@nl-design-system-candidate/paragraph-react@2.0.0':
+    resolution: {integrity: sha512-OLaJCNRrqxyTmZkso9kyOktlYXfJt0IgiChriANoBt6jOrnUCvOkuHi3wkUYlrP+T3xL0GxIqt9uI/Na8GRlEg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-candidate/skip-link-docs@1.0.1':
     resolution: {integrity: sha512-leZEVBcmHA5FQGrXI35wOX51IoJV/iPhrak76WwkO82/TNeyWt/DsoPJjds7auUJcpuCYvu7zvNDLxrwUD897g==}
@@ -10131,6 +10140,12 @@ snapshots:
   '@nl-design-system-candidate/number-badge-docs@1.0.1': {}
 
   '@nl-design-system-candidate/paragraph-docs@1.0.3': {}
+
+  '@nl-design-system-candidate/paragraph-react@2.0.0(@babel/runtime@7.26.0)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.0
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/skip-link-docs@1.0.1': {}
 
