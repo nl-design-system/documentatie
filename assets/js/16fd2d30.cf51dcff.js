@@ -111,7 +111,7 @@
       children: (0, o.jsxs)('figure', {
        className: (0, c.Z)('component-anatomy'),
        children: [
-        l && (0, o.jsx)(l, { role: 'img', height: null, className: (0, c.Z)('component-anatomy__illustration') }),
+        l && (0, o.jsx)(l, { height: null, className: (0, c.Z)('component-anatomy__illustration') }),
         l &&
          j &&
          (0, o.jsx)('figcaption', {
