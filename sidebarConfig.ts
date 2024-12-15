@@ -98,6 +98,7 @@ const sidebars: SidebarsConfig = {
         // },
         { type: 'doc', id: 'handboek/leverancier/introductie' },
         { type: 'doc', id: 'handboek/manager/introductie' },
+        { type: 'doc', id: 'handboek/baseline' },
       ],
     },
   ],
