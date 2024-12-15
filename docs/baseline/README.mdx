@@ -6,7 +6,6 @@ sidebar_label: Baseline
 sidebar_position: 5
 pagination_label: Baseline
 description: In de NL Design System Baseline wordt beschreven welke besturingssytemen, browsers en hulpapparatuur worden ondersteund.
-slug: /baseline
 keywords:
   - Accessibility Support Baseline
   - Baseline
@@ -16,7 +15,7 @@ keywords:
   - WCAG
 ---
 
-import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 
 {/* @license CC0-1.0 */}
 
@@ -61,10 +60,6 @@ De volgende combinaties van software moet je mee testen voor functionaliteit en 
 
 Als bepaalde functionaliteit niet blijkt te werken in oudere softwareversies die minder oud zijn dan 30 maanden, overweeg dan wel om het probleem op te lossen en te testen in specifieke oudere softwareversies.
 
-Bekijk welke softwareversies relevant waren:
-
-- [december 2024](/baseline/2024-12)
-
 ## Testen voor toegankelijkheid
 
 Om vast te kunnen stellen of iets toegankelijk is en voldoet volgens WCAG, mag je zelf kiezen welke technologie je ondersteunt: de [Accessibility Support Baseline](https://www.w3.org/TR/WCAG-EM/#step1c). Voor NL Design System is dat vastgelegd op deze pagina.
@@ -72,3 +67,21 @@ Om vast te kunnen stellen of iets toegankelijk is en voldoet volgens WCAG, mag j
 Het toegankelijkheidsdoel van NL Design System is WCAG 2.2 Niveau AA. Daarmee voldoen we aan de wettelijke eis voor WCAG 2.1, plus enkele nieuwe successcriteria.
 
 Als je een [WCAG-EM toegankelijkheidsonderzoek doet](https://www.w3.org/TR/WCAG-EM/), test dan met elke combinatie van software in lijst.
+
+<SpotlightSection appearance="info">
+  
+## Voor wie is de Baseline bedoeld?
+
+De Baseline is in eerste instantie bedoeld voor ontwikkelingen waarin het kernteam een rol speelt:
+
+- Candidate en Hall of Fame componenten
+- Voorbeeld-webpagina's
+- Toegankelijkheidsonderzoeken naar de NL Design System website en voorbeeld-webpagina's
+
+### Community
+
+De baseline is **niet verplicht** voor Community componenten en als je met NL Design System werkt.
+
+Organisaties kunnen natuurlijk wel vrijwillig de NL Design System Baseline vereisen bij het aanbesteden van nieuwe ontwikkelingen en bij toegankelijkheidsonderzoeken, als ze een op zoek zijn naar een goede Accessibility Support Baseline.
+
+</SpotlightSection>
