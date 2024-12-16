@@ -30,17 +30,15 @@ Met deze Baseline stellen we vast welke technologieën we ondersteunen. Deze geb
 
 Als je een developer of tester bent, dan kun je de NL Design System Baseline gebruiken om vooraf te beslissen welke techonologie je gebruikt, en achteraf gebruiken om een testplan mee uit te voeren.
 
-Uiteindelijk kun je de NL Design System Baseline noemen bij je onderzoeksrapport onder "basisniveau van toegankelijkheidsondersteuning".
-
 ## Technologie met brede ondersteuning
 
-De populaire website [Can I Use](https://www.caniuse.com/) biedt een gebruiksvriendelijk overzicht of de browserondersteuning voldoende is. Als een feature de Data Badge "Baseline" heeft voor "<span lang="en">Widely available across major browsers</span>", dan kun mag je de feature gebruiken.
+De populaire website [Can I Use](https://www.caniuse.com/) biedt een gebruiksvriendelijk overzicht of de browserondersteuning voldoende is. Als een feature de Data Badge heeft met "<span lang="en">Widely available across major browsers</span>", dan kun mag je de feature gebruiken.
 
-Features met de badge "<span lang="en">Newly available across major browsers</span>" moet je alleen gebruiken als je ook een goed werkend alternatief biedt met Baseline ondersteuning.
+Features met de Data Badge "<span lang="en">Newly available across major browsers</span>" moet je alleen gebruiken als je ook een goed werkend alternatief biedt met Baseline ondersteuning.
 
 We gebruiken Can I Use omdat ze een goed systeem hebben. Op basis van [statistieken in de RUM Archive](https://rumarchive.com/insights/#ua-marketshare) wordt bepaald welke browserversies wereldwijd veel gebruikt worden. Per technologie is bekend in welke browserversie de ondersteuning begint. Met de gecombineerde informatie kun je weten of browserondersteuning voldoende in browsersversies die tussen 30 maanden geleden en nu zijn gepubliceerd. Dit is wat Can I Use doet.
 
-Bijvoorbeeld: [CSS Grid Layout](https://caniuse.com/css-grid) wordt bijvoorbeeld goed ondersteund en daarom gebruiken we `display: grid`. Maar [CSS Subgrid](https://caniuse.com/css-subgrid) is eind 2024 nog gemarkeerd als "Baseline 2023" (<span lang="en">Newly available across major browsers</span>") en daarom gebruiken we CSS Subgrid nog niet.
+Bijvoorbeeld: [CSS Grid Layout](https://caniuse.com/css-grid) wordt goed ondersteund en daarom gebruiken we `display: grid`. Maar [CSS Subgrid](https://caniuse.com/css-subgrid) is eind 2024 nog gemarkeerd als "<span lang="en">Newly available across major browsers</span>" en daarom gebruiken we CSS Subgrid nog niet.
 
 ## Software om mee te testen
 
@@ -68,15 +66,32 @@ Het toegankelijkheidsdoel van NL Design System is WCAG 2.2 Niveau AA. Daarmee vo
 
 Als je een [WCAG-EM toegankelijkheidsonderzoek doet](https://www.w3.org/TR/WCAG-EM/), test dan met elke combinatie van software in lijst.
 
+Je kunt de NL Design System Baseline noemen bij je onderzoeksrapport onder "basisniveau van toegankelijkheidsondersteuning". Je kunt verwijzen naar de Baseline momentopname onder ["bij het onderzoek gebruikte browsers en softwareprogramma's"](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/controle).
+
+## Momentopname
+
+Technologie verandert elke maand, dus de preciese betekenis van de Baseline verandert. Op de NL Design System website publiceren we periodiek een momentopname van welke softwareversies op dat moment worden bedoeld met de Baseline. De eerste in de serie is de [Baseline december 2024](/baseline/2024-12).
+
+Maak duidelijke afspraken welke versie van de Baseline je kiest als doel. Er zijn heel veel opties denkbaar, bijvoorbeeld:
+
+- Spreek voor een toegankelijkheidsonderzoek af dat de meest recente versies van alle software wordt gebruikt.
+- Spreek bij het aanbesteden van software af dat de meest recente Baseline momentname geldt die beschikbaar is bij aanvang van de werkzaamheden.
+
 <SpotlightSection appearance="info">
   
 ## Voor wie is de Baseline bedoeld?
 
 De Baseline is in eerste instantie bedoeld voor ontwikkelingen waarin het kernteam een rol speelt:
 
-- Candidate en Hall of Fame componenten
+- Candidate componenten
 - Voorbeeld-webpagina's
 - Toegankelijkheidsonderzoeken naar de NL Design System website en voorbeeld-webpagina's
+
+## Hall of Fame
+
+Voor Hall of Fame componenten vragen we nog feedback aan stakeholders zoals belangenorganisaties, testers en ontwikkelaars in de Community. Welke software en welke softwareversies zijn belangrijk om op te nemen in de Baseline?
+
+[Deel je inzichten met het kernteam](/colofon), dat waarderen wij enorm!
 
 ### Community
 
