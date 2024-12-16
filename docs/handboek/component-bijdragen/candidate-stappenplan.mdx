@@ -14,6 +14,292 @@ keywords:
   - candidate
 ---
 
+{/* @license CC0-1.0 */}
+
 # Stappenplan: Candidate
 
-Dit stappenplan is nog in ontwikkeling.
+Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Candidate' status](https://github.com/orgs/nl-design-system/projects/32) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
+
+## 1. Start
+
+### Alternatieve namen zijn vastgelegd in documentatie.
+
+Criteria: Aliassen van alternatieve namen voor de component zijn vastgelegd in documentatie.
+
+Om de juiste aliassen voor een component te verzamelen, beginnen we met een inventarisatie via Mentimeter en vragen we input van designers en developers uit de community. De meest voorkomende namen geïdentificeerd en gesorteerd op frequentie. De top 3 tot 5 meest genoemde namen worden dan officieel vastgelegd als aliassen.
+
+Deze aliassen worden gedocumenteerd in het '\_aliassen.md' bestand.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: >2 thema’s
+
+### Ingezet voor verschillende huisstijlen.
+
+Criteria: Ingezet door 2 of meer organisaties met verschillende huisstijlen.
+
+Het kernteam maakt een mapping van design tokens tussen verschillende huisstijlen en de gemeenschappelijke nl-tokens. Vervolgens voegen we de Candidate-component toe aan de Themes Storybook, samen met de belangrijkste stakeholders: organisaties die de Community-componenten al in productie gebruiken.
+
+Dit betekent dat er naast Amsterdam en Utrecht een Candidate-sectie komt met minimaal twee themes.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/2-themas.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: >2 thema’s
+
+## 2. Component beschrijven
+
+### Anatomie van de component is vastgelegd.
+
+Criteria: Anatomie van de component is vastgelegd.
+
+Om de anatomie van een component vast te leggen, beginnen we met het API Alignment proces. Hiervoor gebruiken we een FigJam-board waar we voorbeelden van de component en het anatomie-voorstel verzamelen. Deze voorstellen worden vervolgens besproken met de community en het kernteam tijdens een API Alignment sessie.
+
+Het resultaat word gepubliceerd op de website als een afbeelding voorzien van duidelijke annotaties. Deze annotaties helpen bij het uitleggen van de verschillende onderdelen van de component.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/anatomie-vastleggen.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Documentatie anatomie
+
+### Vereenvoudigen tot één of meer componenten met heldere use cases.
+
+Criteria: Component is, waar nodig, versimpeld of opgesplitst zodat er één of meerdere componenten over blijven met een duidelijke use case en documentatie.
+
+Om een component te vereenvoudigen of op te splitsen, bekijkt het kernteam deze componenten kritisch en identificeert mogelijke verbeteringen of opsplitsingen die de bruikbaarheid kunnen vergroten.
+
+Deze voorstellen worden vervolgens tijdens de Estafettemodeldag voorgelegd aan de community. Hier wordt besproken of een component beter functioneert als één vereenvoudigde versie of als meerdere gespecialiseerde componenten. De uiteindelijke beslissing en de onderbouwing hiervan worden vastgelegd in de betreffende GitHub Discussie.
+
+Als er wordt besloten om een component op te splitsen, maakt het kernteam nieuwe GitHub issues aan in de backlog repository voor elk afgesplitst component. Daarnaast wordt er een nieuwe help-wanted discussie gestart op GitHub om de community te betrekken bij de ontwikkeling van deze nieuwe componenten.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Versimpeld of gesplitst
+
+### API's zijn gebaseerd op gemeenschappelijke use cases
+
+Criteria: Geen organisatie specifieke API's meer, alle API's zijn gebaseerd op een gemeenschappelijke use case.
+
+Tijdens een API Alignment sessie op de Estafettemodeldag bespreken we het voorstel van het kernteam met designers en developers uit de community. De feedback wordt gedocumenteerd en verwerkt in een definitief API-voorstel. De gekozen API-structuur en onderbouwing worden vastgelegd in een GitHub issue.
+
+We gebruiken het API-conventiedocument en vergelijkbare componenten als referentie voor het bepalen van consistente naamgeving.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: API gemeenschappelijk
+
+### API volgt conventies en is geprefixed met 'nl'.
+
+Criteria: API volgt conventies en is geprefixed met 'nl'.
+
+Alle properties moeten consistent zijn met de bestaande NLDS naming conventions. Alle gebruikte prefixes moeten beginnen met 'nl-'.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: API conventie
+
+### Accessibility en inclusie documentatie zijn beschikbaar
+
+Criteria: Accessibility en inclusie documentatie beschikbaar voor de overwegingen die van toepassing zijn.
+
+Het kernteam documenteert de toegankelijkheids- en inclusie-overwegingen voor de component. Dit omvat het identificeren en documenteren van relevante WCAG-richtlijnen, uitleg over hoe de component hieraan voldoet, en beschrijvingen van gebruik met verschillende input-methoden en hulptechnologieën. Deze documentatie wordt aangevuld met concrete voorbeelden en code samples die best practices demonstreren voor toegankelijke en inclusieve implementatie.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Documentatie A11Y
+
+### Alle design tokens zijn algemeen nuttig voor verschillende thema's
+
+Criteria: Alle design tokens zijn algemeen nuttig voor de thema's van bestaande publieke organisaties.
+
+Om ervoor te zorgen dat design tokens algemeen nuttig zijn voor verschillende thema's, analyseert het kernteam eerst de bestaande tokens in community componenten. We maken een lijst van alle gebruikte tokens en markeren welke algemeen bruikbaar zijn en welke mogelijk organisatie-specifiek zijn. Tokens die specifiek zijn voor één organisatie worden gedocumenteerd, zoals bijvoorbeeld Amsterdam's inverse color tokens.
+
+Tijdens de API Alignment op de Estafettemodeldag bespreken we welke visuele eigenschappen mogelijk nieuwe tokens nodig hebben. We verzamelen voorstellen voor nieuwe algemeen bruikbare tokens en bepalen criteria wanneer organisatie-specifieke tokens algemeen bruikbaar kunnen worden.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Design tokens nuttig
+
+## 3. Component bouwen
+
+### Design tokens volgen conventies en zijn geprefixed met 'nl’.
+
+Criteria: Design tokens volgen conventies en zijn geprefixed met 'nl’.
+
+Het kernteam controleert of alle design tokens voldoen aan de naamgevingsconventies en beginnen met de 'nl-' prefix. We valideren dat tokens gebaseerd zijn op de gedefinieerde properties en anatomie van de component.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/design-tokens-conventie.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Design token conventie
+
+### Hergebruik van logische common tokens is geïmplementeerd.
+
+Criteria: Hergebruik van logische common tokens is geïmplementeerd om theming makkelijk te houden.
+
+Het kernteam identificeert eerst de gemeenschappelijke visuele eigenschappen tussen componenten en stelt een overzicht op van veelgebruikte common tokens. Vervolgens bepalen we waar component-specifieke tokens vervangen kunnen worden door common tokens.
+
+Voor flexibele theming creëren we een structuur waarbij organisatie-specifieke tokens kunnen overerven van common tokens. Hierdoor kunnen organisaties hun eigen alias tokens koppelen en tegelijkertijd profiteren van de gemeenschappelijke basis.
+
+**🚩 Checkpoint**: Common tokens
+
+### Figma component komt overeen met implementatie van de code
+
+Criteria: De NL Design System Figma bibliotheek komt overeen met de implementatie van de component in code wat betreft varianten, states, design tokens en naamgeving.
+
+Het kernteam zorgt ervoor dat de Figma-component exact overeenkomt met de code-implementatie. Dit betekent dat we de component opbouwen in de NLDS Voorbeeld Bibliotheek volgens de specificaties uit de Candidate Storybook of het API Alignment resultaat. We maken de juiste tokens aan in Token Studio, passen deze toe op de component, en zorgen voor consistente naamgeving en structuur.
+
+Alle varianten voor interactie- en responsief gedrag worden geïmplementeerd met de juiste properties, en we voegen waar nodig prototyping-interacties toe. De documentatie wordt bijgewerkt met Token Studio, en het geheel wordt afgesloten met een Estafettemodel Badge op Candidate-niveau.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/figma-in-lijn.md)
+
+**🚩 Checkpoint**: Figma in lijn
+
+### Semantiek is goedgekeurd door het kernteam.
+
+Criteria: Semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.
+
+Het kernteam beoordeelt de semantische structuur van de component om te zorgen voor optimale toegankelijkheid. We controleren of de juiste ARIA-rollen, namen en states worden gebruikt en documenteren de onderbouwing van deze keuzes. Daarnaast testen we de component in verschillende browsers om compatibiliteit te waarborgen. De bevindingen en semantische keuzes worden vastgelegd in de documentatie.
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Semantiek goedgekeurd
+
+### Gebruik van linting en automatische code-formatting volgens NL Design System configuraties.
+
+Criteria: Codebase gebruikt linting en automatische code-formatting met Prettier volgens NL Design System configuraties.
+
+Het kernteam implementeert de linting- en formatteringsstandaarden van het NL Design System in de codebase. We stellen ESLint in voor consistente code-kwaliteit en Prettier voor gestandaardiseerde opmaak. Deze tools worden toegevoegd aan de CI/CD pipeline voor automatische controles.
+
+Vervolgens controleren we of alle configuraties juist zijn ingesteld en of de codebase probleemloos door de linting- en formatteringscontroles komt. We documenteren eventuele aanpassingen en delen deze met de community via de repository.
+
+**🚩 Checkpoint**: Linting en formatting
+
+### Gepubliceerd op NPM
+
+Criteria: Gepubliceerd op NPM in de scope: `@nl-design-system-unstable`.
+
+Het kernteam zorgt voor de publicatie van de component als npm package. We configureren eerst de package.json met de juiste scope en versienummer. Na publicatie controleren we of de package beschikbaar is op [npmjs.com](http://npmjs.com) en testen we de werking in een demo-project om te verzekeren dat alles correct functioneert.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/npm-candidate.md)
+
+**🚩 Checkpoint**: NPM (unstable)
+
+### Changelog wordt gepubliceerd bij nieuwe versies.
+
+Criteria: Changelog wordt gepubliceerd bij nieuwe versies.
+
+Het kernteam zorgt voor een gestructureerde documentatie van alle wijzigingen in de component door een [changelog.md](http://changelog.md) bestand bij te houden volgens de Keep a Changelog standaard.
+
+De changelog wordt bijgewerkt voordat een nieuwe versie wordt gepubliceerd, zodat gebruikers altijd een compleet overzicht hebben van de wijzigingen. Dit helpt ontwikkelaars bij het plannen van updates en het begrijpen van de impact van nieuwe versies op hun implementaties.
+
+**🚩 Checkpoint**: Changelog
+
+### Beschikbaar in de NL Design System Figma bibliotheek.
+
+Criteria: Beschikbaar in de NL Design System Figma bibliotheek.
+
+Het kernteam zorgt ervoor dat de component beschikbaar wordt gesteld in de NL Design System Figma bibliotheek. Dit proces omvat het toevoegen van de component aan de 'Component collage', het publiceren van de wijzigingen, en het valideren van de correcte weergave in gerelateerde bestanden.
+
+**🚩 Checkpoint**: Figma NLDS
+
+### Beschikbaar in de NL Design System Storybook.
+
+Criteria: Beschikbaar in de NL Design System Storybook.
+
+Het kernteam zorgt ervoor dat de component wordt toegevoegd aan de NL Design System Storybook. Dit omvat het maken van stories voor de basis variant, alle mogelijke varianten en states, en een demonstratie van alle properties.
+
+**🚩 Checkpoint**: Storybook NLDS
+
+## 4. Component testen
+
+### Implementatie en documentatie is op toegankelijkheid getest.
+
+Criteria: Implementatie en documentatie is op toegankelijkheid getest door leden van het kernteam.
+
+Het kernteam voert toegankelijkheidstests uit volgens de NL Design System richtlijnen. We testen de component met diverse hulpmiddelen, waaronder screenreaders, toetsenbordnavigatie en zoom-tools. Ook controleren we kleurcontrasten, semantische markup en ARIA-attributen.
+
+De testresultaten worden vastgelegd in een review format met specifieke bevindingen per acceptatiecriterium. Voor geconstateerde tekortkomingen maken we concrete verbetervoorstellen die rechtstreeks gekoppeld zijn aan de WCAG-richtlijnen.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/a11y-getest.md)
+
+**🚩 Checkpoint**: A11Y getest
+
+### Getest op geschiktheid voor internationalisatie.
+
+Criteria: Getest op geschiktheid voor internationalisatie.
+
+Het kernteam test de internationale bruikbaarheid van de component door het implementeren van Duitse en Italiaanse vertalingen, het valideren van verschillende tekstlengtes, en het testen van right-to-left ondersteuning met Arabische tekst. We testen ook verschillende locales (nl-NL, nl-BE, de-DE) en valutaweergave waar nodig.
+
+Daarnaast controleren we de compatibiliteit met Google Translate, met speciale aandacht voor welke content wel of niet vertaald moet worden.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/i18n-getest.md)
+
+**🚩 Checkpoint**: [i18n getest](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/i18n-getest.md)
+
+### Component kan omgaan met verschillende soorten content
+
+Criteria: Component kan omgaan met verschillende soorten content: bijvoorbeeld korte tekst, veel woorden, lange woorden, of juist ontbrekende content.
+
+Het kernteam test de component uitgebreid met verschillende content-scenarios, waaronder korte en lange teksten en ontbrekende content. We documenteren de resultaten en stellen duidelijke gebruiksrichtlijnen op.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/content-flexibel.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Content flexibel
+
+### Documentatie is getest bij de doelgroepen en goed bevonden.
+
+Criteria: Documentatie is getest bij de doelgroepen en goed bevonden.
+
+Het kernteam laat de documentatie reviewen door verschillende doelgroepen: Frontend developers (technische aspecten), designers (design principes en tokens), en content specialisten (leesbaarheid en structuur).
+
+Feedback wordt verwerkt en opnieuw gevalideerd om optimale bruikbaarheid te garanderen.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/documentatie-getest.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Documentatie getest
+
+## 5. Component op website
+
+### Component is volledige gedocumenteerd
+
+Criteria: Component is volledige gedocumenteerd
+
+Het kernteam ontwikkelt uitgebreide documentatie die het doel, de technische implementatie en praktische voorbeelden beschrijft.
+
+Voor designers en contentspecialisten maken we specifieke richtlijnen over visuele aspecten, typografie en content best practices, compleet met Figma-documentatie.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/documentatie-op-website.md)
+
+**🚩 Checkpoint**: Documentatie op website
+
+### Verwijzing beschikbaar naar extern gebruikersonderzoek
+
+Criteria: Verwijzing beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.
+
+Het kernteam verzamelt relevante gebruikersonderzoeken uit GitHub Discussies om de ontwerpkeuzes van de component te onderbouwen met empirisch bewijs.
+
+[link naar template](https://github.com/nl-design-system/candidate/blob/main/.github/ISSUE_TEMPLATE/documentatie-onderzoek.md)
+
+**🤝 Community Collaboration**
+
+**🚩 Checkpoint**: Content flexibel
+
+### Status bijgewerkt naar naar Candidate.
+
+Criteria: Status bijgewerkt naar naar Candidate.
+
+Het kernteam werkt de status bij naar Candidate.
+
+In #nl-design-system op Slack delen we het nieuws over de Candidate status, met een link naar de component en toelichting over het bereiken van deze mijlpaal door meerdere implementaties.
+
+Tot slot communiceren we de nieuwe status via de Heartbeat, nieuwsbrief en LinkedIn, waarbij we de component highlighten en credits geven aan alle betrokkenen.
+
+**🚩 Checkpoint**: Status
