@@ -3,18 +3,18 @@
  [77410],
  {
   74157: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => j, contentTitle: () => p, default: () => x, frontMatter: () => u, metadata: () => m, toc: () => v });
+   t.r(n), t.d(n, { assets: () => m, contentTitle: () => p, default: () => x, frontMatter: () => u, metadata: () => j, toc: () => v });
    var r = t(52676),
     i = t(87118),
     s = t(57716),
     l = t(46364),
-    a = t(31916),
-    o = t(57705),
+    o = t(31916),
+    a = t(57705),
     c = t(7140),
     d = t(39745);
    function h(e) {
     const n = { p: 'p', strong: 'strong', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij ', (0, r.jsx)(n.strong, { children: 'alleen om het vergroten van tekst' }), ' en niet om bijvoorbeeld afbeeldingen of de layout.'] }), '\n', (0, r.jsx)(n.p, { children: 'Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, r.jsx)(n.p, { children: "Maak indien nodig een uitzondering voor de tekstgrootte instellen van tekst in afbeeldingen en van ondertitels in video's." })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij ', (0, r.jsx)(n.strong, { children: 'alleen om het vergroten van tekst' }), ' en niet om bijvoorbeeld afbeeldingen of de layout.'] }), '\n', (0, r.jsx)(n.p, { children: 'Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, r.jsx)(n.p, { children: "Maak indien nodig een uitzondering voor de tekstgrootte instellen van tekst in afbeeldingen en van ondertitels in video's." }), '\n', (0, r.jsx)(n.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.' })] });
    }
    function g(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -22,8 +22,8 @@
    }
    const u = { title: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '1.4.4 Herschalen van tekst', pagination_label: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', description: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.', slug: '1.4.4', keywords: ['WCAG'] },
     p = void 0,
-    m = { id: 'wcag/1.4.04', title: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', description: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.', source: '@site/docs/wcag/1.4.04.mdx', sourceDirName: 'wcag', slug: '/wcag/1.4.4', permalink: '/wcag/1.4.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.4.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '1.4.4 Herschalen van tekst', pagination_label: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', description: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.', slug: '1.4.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 1.4.3 Contrast (minimum)', permalink: '/wcag/1.4.3' }, next: { title: 'WCAG-succescriterium 1.4.5 Afbeeldingen van tekst', permalink: '/wcag/1.4.5' } },
-    j = {},
+    j = { id: 'wcag/1.4.04', title: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', description: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.', source: '@site/docs/wcag/1.4.04.mdx', sourceDirName: 'wcag', slug: '/wcag/1.4.4', permalink: '/wcag/1.4.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/1.4.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '1.4.4 Herschalen van tekst', pagination_label: 'WCAG-succescriterium 1.4.4 Herschalen van tekst', description: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.', slug: '1.4.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 1.4.3 Contrast (minimum)', permalink: '/wcag/1.4.3' }, next: { title: 'WCAG-succescriterium 1.4.5 Afbeeldingen van tekst', permalink: '/wcag/1.4.5' } },
+    m = {},
     v = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Opgelet', id: 'opgelet', level: 2 },
@@ -33,7 +33,7 @@
     ];
    function k(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(l.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 1.4.4 Herschalen van tekst' }), '\n', (0, r.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, r.jsx)(g, {}), '\n', (0, r.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, r.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, r.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, r.jsx)(o.ZP, {}), '\n', (0, r.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#resize-text', children: (0, r.jsx)('span', { lang: 'en', children: '1.4.4. Resize Text' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#herschalen-van-tekst', children: '1.4.4 Herschalen van tekst' }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, r.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#resize-text', children: (0, r.jsx)('span', { lang: 'en', children: 'Quick Reference 1.4.4. Resize Text' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html', children: (0, r.jsx)('span', { lang: 'en', children: 'Understanding SC 1.4.4. Resize Text' }) }), '.'] }), '\n'] }), '\n', (0, r.jsx)(a.CY, { children: (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(c.ZP, {}) }) }), '\n', (0, r.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(d.ZP, {}) })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', (0, r.jsx)(l.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 1.4.4 Herschalen van tekst' }), '\n', (0, r.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, r.jsx)(g, {}), '\n', (0, r.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, r.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, r.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, r.jsx)(a.ZP, {}), '\n', (0, r.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#resize-text', children: (0, r.jsx)('span', { lang: 'en', children: '1.4.4. Resize Text' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#herschalen-van-tekst', children: '1.4.4 Herschalen van tekst' }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, r.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#resize-text', children: (0, r.jsx)('span', { lang: 'en', children: 'Quick Reference 1.4.4. Resize Text' }) }), '.'] }), '\n', (0, r.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, r.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html', children: (0, r.jsx)('span', { lang: 'en', children: 'Understanding SC 1.4.4. Resize Text' }) }), '.'] }), '\n'] }), '\n', (0, r.jsx)(o.CY, { children: (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(c.ZP, {}) }) }), '\n', (0, r.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, r.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(d.ZP, {}) })] });
    }
    function x(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -84,8 +84,8 @@
    var r = t(4814),
     i = t(52676);
    const s = (e) => {
-    let { children: n, className: t, level: s = 1, suffix: l, ...a } = e;
-    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...a, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), l && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [l ? ' ' : '', l] })] });
+    let { children: n, className: t, level: s = 1, suffix: l, ...o } = e;
+    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...o, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), l && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [l ? ' ' : '', l] })] });
    };
   },
   57716: (e, n, t) => {
@@ -101,8 +101,8 @@
      }
      return t.toString();
     },
-    a = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
-    o = (e) => ({
+    o = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
+    a = (e) => ({
      img: (n) => {
       let { src: t, ...r } = n;
       return (0, s.jsx)('img', { ...r, src: l(e, t), className: 'utrecht-img utrecht-img--fit' });
@@ -110,14 +110,14 @@
     }),
     c = (e, n) => {
      if (e) {
-      const e = { ...a[n - 1] };
+      const e = { ...o[n - 1] };
       return (e.h1 = () => null), e;
      }
-     return a[n];
+     return o[n];
     },
     d = (e) => {
-     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: l = '', components: a = {} } = e;
-     return (0, s.jsx)(r.Z, { components: { ...c(t, i), ...o(l), ...a }, children: n });
+     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: l = '', components: o = {} } = e;
+     return (0, s.jsx)(r.Z, { components: { ...c(t, i), ...a(l), ...o }, children: n });
     };
   },
   46364: (e, n, t) => {
@@ -131,7 +131,7 @@
    };
   },
   87118: (e, n, t) => {
-   t.d(n, { Z: () => a, a: () => l });
+   t.d(n, { Z: () => o, a: () => l });
    var r = t(75271);
    const i = {},
     s = r.createContext(i);
@@ -144,7 +144,7 @@
      [n, e],
     );
    }
-   function a(e) {
+   function o(e) {
     let n;
     return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : l(e.components)), r.createElement(s.Provider, { value: n }, e.children);
    }

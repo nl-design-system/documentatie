@@ -1,5 +1,5 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [79947],
+ [72755],
  {
   78187: (e, t, n) => {
    'use strict';
@@ -22,7 +22,7 @@
     i = n(87118);
    function s(e) {
     const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden." }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'Je moet de afstand kunnen vergroten naar deze waardes:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte;" }), '\n', (0, r.jsx)(t.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Dit is te testen met een ', (0, r.jsx)(t.a, { href: 'https://html5accessibility.com/tests/tsbookmarklet.html', children: 'bookmarklet' }), ' of door in de inspector van de browser de volgende code toe te voegen aan de ', (0, r.jsx)(t.code, { children: 'head' }), ' van de pagina:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-css', children: '<style>\nbody * {\n    line-height: 1.5 !important;\n    letter-spacing: 0.12em !important;\n    word-spacing: 0.16em !important;\n}\nbody p {\n    margin-bottom: 2em !important;\n}\n</style>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden." }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.' }), '\n', (0, r.jsx)(t.p, { children: 'Je moet de afstand kunnen vergroten naar deze waardes:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte;" }), '\n', (0, r.jsx)(t.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte;' }), '\n', (0, r.jsx)(t.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, r.jsxs)(t.p, { children: ['Dit is te testen met een ', (0, r.jsx)(t.a, { href: 'https://html5accessibility.com/tests/tsbookmarklet.html', children: 'bookmarklet' }), ' of door in de inspector van de browser de volgende code toe te voegen aan de ', (0, r.jsx)(t.code, { children: 'head' }), ' van de pagina:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-css', children: '<style>\nbody * {\n    line-height: 1.5 !important;\n    letter-spacing: 0.12em !important;\n    word-spacing: 0.16em !important;\n}\nbody p {\n    margin-bottom: 2em !important;\n}\n</style>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -50,21 +50,7 @@
     i = n(87118);
    function s(e) {
     const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.' }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
-   }
-   function o(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
-  43486: (e, t, n) => {
-   'use strict';
-   n.d(t, { ZP: () => o });
-   var r = n(52676),
-    i = n(87118);
-   function s(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij het om een logo gaat, zoals een DigiD-logo.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button', children: 'Afbeeldingen als buttons' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.' }), '\n', (0, r.jsx)(t.p, { children: 'Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, r.jsx)(t.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.' }), '\n', (0, r.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(t.ul, { children: ['\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/voorkeur', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, r.jsx)(t.li, { children: (0, r.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/lettergrootte', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -85,9 +71,9 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  75131: (e, t, n) => {
+  42204: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => _, component: () => S, contentTitle: () => R, default: () => M, description: () => D, frontMatter: () => W, issueNumber: () => P, metadata: () => N, title: () => L, toc: () => z });
+   n.r(t), n.d(t, { assets: () => _, component: () => F, contentTitle: () => L, default: () => O, description: () => M, frontMatter: () => z, issueNumber: () => P, metadata: () => Z, title: () => S, toc: () => D });
    var r,
     i,
     s,
@@ -96,13 +82,12 @@
     a,
     l,
     d = n(52676),
-    u = n(87118),
-    h = n(54939),
-    m = n(78187),
-    g = n(75271);
-   function p() {
+    h = n(87118),
+    u = n(54939),
+    m = n(75271);
+   function g() {
     return (
-     (p = Object.assign
+     (g = Object.assign
       ? Object.assign.bind()
       : function (e) {
          for (var t = 1; t < arguments.length; t++) {
@@ -111,47 +96,63 @@
          }
          return e;
         }),
-     p.apply(this, arguments)
+     g.apply(this, arguments)
     );
    }
-   const j = (e) => {
+   const p = (e) => {
     let { title: t, titleId: n, ...d } = e;
-    return g.createElement('svg', p({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Het cijfer \\u201C9\\u201D in een bolletje. Het bolletje is aangeduid met het cijfer 1.', role: 'img', 'aria-labelledby': n }, d), t ? g.createElement('title', { id: n }, t) : null, r || (r = g.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = g.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = g.createElement('rect', { x: 468, y: 258, width: 24, height: 24, rx: 12, fill: '#F5F2FF' })), o || (o = g.createElement('path', { d: 'M479.961 264.84c1.139 0 2.011.336 2.618 1.008.607.663.91 1.549.91 2.66 0 1.279-.21 2.338-.63 3.178-.411.84-1.045 1.517-1.904 2.03-.859.504-1.979.896-3.36 1.176l-.448-1.54c1.223-.299 2.142-.672 2.758-1.12.616-.457 1.017-1.097 1.204-1.918-.495.607-1.148.91-1.96.91-.495 0-.947-.126-1.358-.378-.411-.252-.737-.616-.98-1.092-.243-.476-.364-1.027-.364-1.652 0-.644.154-1.213.462-1.708a3.12 3.12 0 0 1 1.26-1.148 3.946 3.946 0 0 1 1.792-.406Zm-.126 4.83c.271 0 .523-.07.756-.21.243-.149.457-.359.644-.63.009-.877-.084-1.498-.28-1.862-.196-.364-.527-.546-.994-.546-.401 0-.719.14-.952.42-.224.271-.336.667-.336 1.19 0 .579.103.999.308 1.26.215.252.499.378.854.378Z', fill: '#0A2750' })), c || (c = g.createElement('rect', { x: 376, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), a || (a = g.createElement('path', { d: 'M394.502 264.368V276.5H392v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), l || (l = g.createElement('path', { d: 'M408 270h60', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+    return m.createElement('svg', g({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een tekst die groter is dan gebruikelijk, in bold. De hele tekst is aangeduid met het cijfer 1. De tekst: \\u201CDit is een voorbeeld van een heading.\\u201D.', role: 'img', 'aria-labelledby': n }, d), t ? m.createElement('title', { id: n }, t) : null, r || (r = m.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = m.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = m.createElement('path', { d: 'M307.762 195v150', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square' })), o || (o = m.createElement('path', { d: 'M268 270h39', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })), c || (c = m.createElement('rect', { x: 236, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), a || (a = m.createElement('path', { d: 'M254.502 264.368V276.5H252v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), l || (l = m.createElement('path', { d: 'M327.12 219.44v5.16l.08 5.08h1.32c2.293 0 4.093-.933 5.4-2.8 1.333-1.893 2-4.573 2-8.04 0-3.52-.667-6.2-2-8.04-1.307-1.84-3.093-2.76-5.36-2.76h-1.36l-.08 5v6.4Zm-9.8-11.56v-2.16h11.88c2.853 0 5.293.533 7.32 1.6 2.027 1.04 3.587 2.533 4.68 4.48 1.093 1.947 1.64 4.28 1.64 7 0 2.773-.587 5.147-1.76 7.12-1.173 1.973-2.84 3.48-5 4.52-2.133 1.04-4.667 1.56-7.6 1.56h-11.16v-2.16l3-.32c.053-1.627.08-3.28.08-4.96v-11.4c0-1.68-.027-3.333-.08-4.96l-3-.32ZM345.403 232v-1.88l2.16-.48c.027-.96.04-2 .04-3.12v-4.84c0-1.093-.013-2-.04-2.72 0-.747-.027-1.52-.08-2.32l-2.48-.36v-1.56l8.4-2.68.68.44-.12 5.8V226.56c0 1.12.013 2.173.04 3.16l2 .4V232h-10.6Zm5.32-22.92c-.933 0-1.733-.293-2.4-.88a2.971 2.971 0 0 1-1-2.28c0-.933.333-1.693 1-2.28.667-.613 1.467-.92 2.4-.92.933 0 1.733.307 2.4.92.667.587 1 1.347 1 2.28 0 .907-.333 1.667-1 2.28-.667.587-1.467.88-2.4.88Zm14.856 23.52c-1.786 0-3.186-.427-4.2-1.28-1.013-.88-1.52-2.307-1.52-4.28v-1.92c.027-.613.04-1.307.04-2.08v-7.64h-2.6v-2.36l2.96-.4 2-5.6h4.08l-.08 5.64h4.2v2.72h-4.2v11.2c0 .933.187 1.627.56 2.08.4.427.894.64 1.48.64.694 0 1.414-.293 2.16-.88l1 .96a5.794 5.794 0 0 1-2.24 2.36c-.933.56-2.146.84-3.64.84Zm15.371-.6v-1.88l2.16-.48c.027-.96.04-2 .04-3.12v-4.84c0-1.093-.013-2-.04-2.72 0-.747-.027-1.52-.08-2.32l-2.48-.36v-1.56l8.4-2.68.68.44-.12 5.8V226.56c0 1.12.013 2.173.04 3.16l2 .4V232h-10.6Zm5.32-22.92c-.933 0-1.733-.293-2.4-.88a2.971 2.971 0 0 1-1-2.28c0-.933.333-1.693 1-2.28.667-.613 1.467-.92 2.4-.92.933 0 1.733.307 2.4.92.667.587 1 1.347 1 2.28 0 .907-.333 1.667-1 2.28-.667.587-1.467.88-2.4.88Zm14.296 23.52c-2.533 0-4.853-.613-6.96-1.84l.12-4.88h3.2l.68 3.96c.48.187.96.333 1.44.44.48.08 1 .12 1.56.12 1.147 0 2.027-.187 2.64-.56.614-.4.92-1 .92-1.8 0-.613-.226-1.147-.68-1.6-.453-.453-1.346-.867-2.68-1.24l-2.16-.64c-1.546-.453-2.746-1.187-3.6-2.2-.826-1.013-1.24-2.267-1.24-3.76 0-1.84.72-3.387 2.16-4.64 1.44-1.28 3.507-1.92 6.2-1.92 1.174 0 2.254.147 3.24.44a15.31 15.31 0 0 1 3.08 1.2l-.28 4.36h-3.2l-.8-3.44c-.56-.213-1.293-.32-2.2-.32-.906 0-1.64.187-2.2.56-.533.373-.8.933-.8 1.68 0 .533.214 1.013.64 1.44.427.4 1.334.813 2.72 1.24l1.96.56c1.894.56 3.254 1.36 4.08 2.4.827 1.04 1.24 2.307 1.24 3.8 0 2.107-.813 3.747-2.44 4.92-1.6 1.147-3.813 1.72-6.64 1.72Zm29.638-18.48c-.747 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.267-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.947 0-3.667-.4-5.16-1.2-1.493-.827-2.667-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.493-4.12 1.48-5.64 1.013-1.547 2.307-2.707 3.88-3.48 1.573-.8 3.213-1.2 4.92-1.2 1.76 0 3.253.373 4.48 1.12a7.259 7.259 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.133 2.107.707 3.667 1.72 4.68 1.04.987 2.253 1.48 3.64 1.48 1.093 0 2.027-.2 2.8-.6a8.48 8.48 0 0 0 2.04-1.56l1.4 1.28c-.827 1.573-1.947 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm20.779-18.48c-.746 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.266-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.946 0-3.666-.4-5.16-1.2-1.493-.827-2.666-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.494-4.12 1.48-5.64 1.014-1.547 2.307-2.707 3.88-3.48 1.574-.8 3.214-1.2 4.92-1.2 1.76 0 3.254.373 4.48 1.12a7.252 7.252 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.134 2.107.707 3.667 1.72 4.68 1.04.987 2.254 1.48 3.64 1.48 1.094 0 2.027-.2 2.8-.6a8.44 8.44 0 0 0 2.04-1.56l1.4 1.28c-.826 1.573-1.946 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm10.86-.6v-1.88l2.16-.48c.026-.96.04-2 .04-3.12v-5.24c0-1.093-.014-1.933-.04-2.52 0-.613-.027-1.32-.08-2.12l-2.44-.36v-1.56l7.88-2.68.72.44.24 2.88c1.04-1.227 2.066-2.08 3.08-2.56a7.476 7.476 0 0 1 3.32-.76c1.733 0 3.12.573 4.16 1.72 1.066 1.147 1.6 2.867 1.6 5.16v7.68c0 1.093.013 2.133.04 3.12l2 .4V232h-10.56v-1.88l2.08-.44c.026-.987.04-2.027.04-3.12v-7.16c0-1.28-.174-2.173-.52-2.68-.347-.533-.907-.8-1.68-.8-1.04 0-2.187.48-3.44 1.44v9.2c0 1.12.013 2.173.04 3.16l1.88.4V232h-10.52ZM329.28 264.44v-1.76h7.56v1.76l-2.32.44-6.6 17.2h-3.04l-7.2-17.24-1.96-.4v-1.76h11.36v1.76l-2.52.52 3.76 10.24 3.48-10.28-2.52-.48Zm18.04 18.16c-2.08 0-3.88-.427-5.4-1.28a9.066 9.066 0 0 1-3.52-3.64c-.827-1.573-1.24-3.387-1.24-5.44 0-2.053.44-3.84 1.32-5.36a9.627 9.627 0 0 1 3.68-3.56c1.547-.853 3.267-1.28 5.16-1.28 1.893 0 3.6.413 5.12 1.24 1.547.827 2.773 2.013 3.68 3.56.907 1.52 1.36 3.32 1.36 5.4 0 2.08-.413 3.893-1.24 5.44a9.066 9.066 0 0 1-3.52 3.64c-1.52.853-3.32 1.28-5.4 1.28Zm0-2.08c1.12 0 1.96-.653 2.52-1.96s.84-3.373.84-6.2c0-2.853-.28-4.933-.84-6.24-.56-1.307-1.4-1.96-2.52-1.96-1.147 0-2 .653-2.56 1.96s-.84 3.387-.84 6.24c0 2.827.28 4.893.84 6.2.56 1.307 1.413 1.96 2.56 1.96Zm22.891 2.08c-2.08 0-3.88-.427-5.4-1.28a9.06 9.06 0 0 1-3.52-3.64c-.827-1.573-1.24-3.387-1.24-5.44 0-2.053.44-3.84 1.32-5.36a9.62 9.62 0 0 1 3.68-3.56c1.546-.853 3.266-1.28 5.16-1.28 1.893 0 3.6.413 5.12 1.24 1.546.827 2.773 2.013 3.68 3.56.906 1.52 1.36 3.32 1.36 5.4 0 2.08-.414 3.893-1.24 5.44a9.066 9.066 0 0 1-3.52 3.64c-1.52.853-3.32 1.28-5.4 1.28Zm0-2.08c1.12 0 1.96-.653 2.52-1.96s.84-3.373.84-6.2c0-2.853-.28-4.933-.84-6.24-.56-1.307-1.4-1.96-2.52-1.96-1.147 0-2 .653-2.56 1.96s-.84 3.387-.84 6.24c0 2.827.28 4.893.84 6.2.56 1.307 1.413 1.96 2.56 1.96Zm12.377 1.48v-1.88l2.2-.44c.026-.987.04-2.04.04-3.16V271.24c0-.747-.014-1.36-.04-1.84 0-.48-.014-.92-.04-1.32 0-.427-.014-.907-.04-1.44l-2.44-.36v-1.56l7.88-2.68.72.44.36 4.72c.56-1.707 1.346-2.987 2.36-3.84 1.013-.88 2.013-1.32 3-1.32.88 0 1.64.253 2.28.76.64.48 1.04 1.213 1.2 2.2-.027 1.04-.307 1.853-.84 2.44-.534.56-1.2.84-2 .84-1.12 0-2.147-.627-3.08-1.88l-.24-.32c-.587.56-1.134 1.267-1.64 2.12a9.966 9.966 0 0 0-1.04 2.68V276.44c0 1.067.013 2.067.04 3l3.16.68V282h-11.84Zm17.697.04v-1.88l2.12-.44c.027-.96.04-2 .04-3.12v-19.84l-2.48-.32v-1.68l8.28-1.8.64.4-.16 5.6v5.64c1.68-1.707 3.613-2.56 5.8-2.56 1.467 0 2.787.387 3.96 1.16 1.173.747 2.107 1.88 2.8 3.4.72 1.493 1.08 3.347 1.08 5.56 0 2.16-.4 4.027-1.2 5.6-.8 1.547-1.853 2.747-3.16 3.6a7.585 7.585 0 0 1-4.2 1.24c-2.187 0-3.947-.787-5.28-2.36l-.68 2.32-7.56-.52Zm11.32-16.52c-.507 0-.987.107-1.44.32a6.445 6.445 0 0 0-1.32.84v11.44c.827.747 1.733 1.12 2.72 1.12 1.173 0 2.133-.573 2.88-1.72.773-1.147 1.16-2.893 1.16-5.24 0-2.373-.373-4.093-1.12-5.16-.72-1.067-1.68-1.6-2.88-1.6Zm23.248-1.4c-.747 0-1.44.467-2.08 1.4-.614.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.346-.4.52-1.053.52-1.96 0-1.333-.267-2.32-.8-2.96-.534-.64-1.174-.96-1.92-.96Zm.08 18.48c-1.947 0-3.667-.4-5.16-1.2-1.494-.827-2.667-2-3.52-3.52-.854-1.547-1.28-3.387-1.28-5.52 0-2.24.493-4.12 1.479-5.64 1.014-1.547 2.307-2.707 3.881-3.48 1.573-.8 3.213-1.2 4.92-1.2 1.76 0 3.253.373 4.48 1.12a7.259 7.259 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.133 2.107.706 3.667 1.72 4.68 1.04.987 2.253 1.48 3.64 1.48 1.093 0 2.026-.2 2.8-.6a8.48 8.48 0 0 0 2.04-1.56l1.4 1.28c-.827 1.573-1.947 2.747-3.36 3.52-1.414.773-3.094 1.16-5.04 1.16Zm20.779-18.48c-.747 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.267-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.947 0-3.667-.4-5.16-1.2-1.493-.827-2.667-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.493-4.12 1.48-5.64 1.013-1.547 2.307-2.707 3.88-3.48 1.573-.8 3.213-1.2 4.92-1.2 1.76 0 3.253.373 4.48 1.12a7.259 7.259 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.133 2.107.707 3.667 1.72 4.68 1.04.987 2.253 1.48 3.64 1.48 1.093 0 2.027-.2 2.8-.6a8.48 8.48 0 0 0 2.04-1.56l1.4 1.28c-.827 1.573-1.947 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm10.115-.6v-1.88l2.2-.48c.027-1.013.04-2.027.04-3.04.027-1.013.04-2.013.04-3v-16.76l-2.48-.4v-1.68l8.4-1.8.64.4-.16 5.6v17.68l.08 3.04 2.2.44V282h-10.96Zm19.81-9.56c0 2.187.387 3.853 1.16 5 .773 1.12 1.773 1.68 3 1.68.907 0 1.733-.307 2.48-.92v-11.92c-.72-.56-1.507-.84-2.36-.84-1.227 0-2.253.573-3.08 1.72-.8 1.147-1.2 2.907-1.2 5.28Zm7.16 10-.32-2.28c-1.547 1.627-3.427 2.44-5.64 2.44-1.493 0-2.853-.387-4.08-1.16-1.2-.773-2.147-1.907-2.84-3.4-.693-1.52-1.04-3.36-1.04-5.52 0-2.187.413-4.053 1.24-5.6.853-1.573 1.947-2.773 3.28-3.6 1.36-.853 2.787-1.28 4.28-1.28 1.04 0 1.947.187 2.72.56.773.347 1.48.867 2.12 1.56v-7.32l-2.8-.4v-1.68l8.44-1.8.64.4-.16 5.6v20.76l1.96.4V282l-7.8.44Zm30.505-18v-1.76h7.56v1.76l-2.32.44-6.6 17.2h-3.04l-7.2-17.24-1.96-.4v-1.76h11.36v1.76l-2.52.52 3.76 10.24 3.48-10.28-2.52-.48Zm23.359 18.12c-2.32 0-3.787-.96-4.4-2.88-.854.907-1.68 1.627-2.48 2.16-.774.507-1.854.76-3.24.76-1.547 0-2.814-.44-3.8-1.32-.96-.88-1.44-2.147-1.44-3.8 0-.96.213-1.827.64-2.6.426-.773 1.2-1.493 2.32-2.16 1.12-.667 2.706-1.293 4.76-1.88.4-.133.866-.267 1.4-.4.533-.133 1.08-.267 1.64-.4v-1.32c0-1.787-.227-3-.68-3.64-.427-.64-1.28-.96-2.56-.96h-.52c-.16 0-.347.013-.56.04l-.2 1.76c-.027 1.307-.334 2.253-.92 2.84-.56.587-1.227.88-2 .88-1.467 0-2.36-.667-2.68-2 .106-1.653.946-3 2.52-4.04 1.573-1.04 3.8-1.56 6.68-1.56 2.56 0 4.386.587 5.48 1.76 1.12 1.173 1.68 3.107 1.68 5.8v8.96c0 .773.293 1.16.88 1.16.213 0 .413-.053.6-.16.186-.133.386-.373.6-.72l1.08.72c-.48 1.067-1.107 1.84-1.88 2.32-.747.453-1.72.68-2.92.68Zm-9.44-6.12c0 .987.226 1.72.68 2.2a2.347 2.347 0 0 0 2.64.52c.32-.133.826-.44 1.52-.92v-6.48a16.22 16.22 0 0 0-1.04.36c-.32.107-.6.213-.84.32-.907.373-1.627.907-2.16 1.6-.534.667-.8 1.467-.8 2.4Zm15.21 5.56v-1.88l2.16-.48c.026-.96.04-2 .04-3.12v-5.24c0-1.093-.014-1.933-.04-2.52 0-.613-.027-1.32-.08-2.12l-2.44-.36v-1.56l7.88-2.68.72.44.24 2.88c1.04-1.227 2.066-2.08 3.08-2.56a7.476 7.476 0 0 1 3.32-.76c1.733 0 3.12.573 4.16 1.72 1.066 1.147 1.6 2.867 1.6 5.16v7.68c0 1.093.013 2.133.04 3.12l2 .4V282h-10.56v-1.88l2.08-.44c.026-.987.04-2.027.04-3.12v-7.16c0-1.28-.174-2.173-.52-2.68-.347-.533-.907-.8-1.68-.8-1.04 0-2.187.48-3.44 1.44v9.2c0 1.12.013 2.173.04 3.16l1.88.4V282h-10.52ZM327.04 314.12c-.747 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.267-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.947 0-3.667-.4-5.16-1.2-1.493-.827-2.667-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.493-4.12 1.48-5.64 1.013-1.547 2.307-2.707 3.88-3.48 1.573-.8 3.213-1.2 4.92-1.2 1.76 0 3.253.373 4.48 1.12a7.259 7.259 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.133 2.107.707 3.667 1.72 4.68 1.04.987 2.253 1.48 3.64 1.48 1.093 0 2.027-.2 2.8-.6a8.48 8.48 0 0 0 2.04-1.56l1.4 1.28c-.827 1.573-1.947 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm20.779-18.48c-.746 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.266-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.946 0-3.666-.4-5.16-1.2-1.493-.827-2.666-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.494-4.12 1.48-5.64 1.014-1.547 2.307-2.707 3.88-3.48 1.574-.8 3.214-1.2 4.92-1.2 1.76 0 3.254.373 4.48 1.12a7.252 7.252 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.134 2.107.707 3.667 1.72 4.68 1.04.987 2.254 1.48 3.64 1.48 1.094 0 2.027-.2 2.8-.6a8.44 8.44 0 0 0 2.04-1.56l1.4 1.28c-.826 1.573-1.946 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm10.86-.6v-1.88l2.16-.48c.026-.96.04-2 .04-3.12v-5.24c0-1.093-.014-1.933-.04-2.52 0-.613-.027-1.32-.08-2.12l-2.44-.36v-1.56l7.88-2.68.72.44.24 2.88c1.04-1.227 2.066-2.08 3.08-2.56a7.476 7.476 0 0 1 3.32-.76c1.733 0 3.12.573 4.16 1.72 1.066 1.147 1.6 2.867 1.6 5.16v7.68c0 1.093.013 2.133.04 3.12l2 .4V332h-10.56v-1.88l2.08-.44c.026-.987.04-2.027.04-3.12v-7.16c0-1.28-.174-2.173-.52-2.68-.347-.533-.907-.8-1.68-.8-1.04 0-2.187.48-3.44 1.44v9.2c0 1.12.013 2.173.04 3.16l1.88.4V332h-10.52Zm33.203 0v-1.88l2.16-.48c.027-.96.04-2 .04-3.12v-19.68l-2.48-.4v-1.68l8.28-1.8.64.4-.16 5.6v6.44c1.067-1.253 2.093-2.12 3.08-2.6a7.228 7.228 0 0 1 3.28-.76c1.76 0 3.173.573 4.24 1.72 1.067 1.147 1.6 2.867 1.6 5.16v7.68c0 1.093.013 2.133.04 3.12l2 .4V332h-10.52v-1.88l2.08-.44c.027-.987.04-2.027.04-3.12v-7.16c0-1.307-.16-2.213-.48-2.72-.293-.507-.853-.76-1.68-.76-.533 0-1.107.16-1.72.48-.613.32-1.227.773-1.84 1.36v8.8c0 1.12.013 2.173.04 3.16l1.88.4V332h-10.52Zm34.607-17.88c-.746 0-1.44.467-2.08 1.4-.613.907-.96 2.587-1.04 5.04h3.4c.96 0 1.6-.187 1.92-.56.347-.4.52-1.053.52-1.96 0-1.333-.266-2.32-.8-2.96-.533-.64-1.173-.96-1.92-.96Zm.08 18.48c-1.946 0-3.666-.4-5.16-1.2-1.493-.827-2.666-2-3.52-3.52-.853-1.547-1.28-3.387-1.28-5.52 0-2.24.494-4.12 1.48-5.64 1.014-1.547 2.307-2.707 3.88-3.48 1.574-.8 3.214-1.2 4.92-1.2 1.76 0 3.254.373 4.48 1.12a7.252 7.252 0 0 1 2.84 3.04c.64 1.253.96 2.693.96 4.32 0 .773-.08 1.48-.24 2.12h-11.56c.134 2.107.707 3.667 1.72 4.68 1.04.987 2.254 1.48 3.64 1.48 1.094 0 2.027-.2 2.8-.6a8.44 8.44 0 0 0 2.04-1.56l1.4 1.28c-.826 1.573-1.946 2.747-3.36 3.52-1.413.773-3.093 1.16-5.04 1.16Zm26.223-.04c-2.32 0-3.787-.96-4.4-2.88-.854.907-1.68 1.627-2.48 2.16-.774.507-1.854.76-3.24.76-1.547 0-2.814-.44-3.8-1.32-.96-.88-1.44-2.147-1.44-3.8 0-.96.213-1.827.64-2.6.426-.773 1.2-1.493 2.32-2.16 1.12-.667 2.706-1.293 4.76-1.88.4-.133.866-.267 1.4-.4.533-.133 1.08-.267 1.64-.4v-1.32c0-1.787-.227-3-.68-3.64-.427-.64-1.28-.96-2.56-.96h-.52c-.16 0-.347.013-.56.04l-.2 1.76c-.027 1.307-.334 2.253-.92 2.84-.56.587-1.227.88-2 .88-1.467 0-2.36-.667-2.68-2 .106-1.653.946-3 2.52-4.04 1.573-1.04 3.8-1.56 6.68-1.56 2.56 0 4.386.587 5.48 1.76 1.12 1.173 1.68 3.107 1.68 5.8v8.96c0 .773.293 1.16.88 1.16.213 0 .413-.053.6-.16.186-.133.386-.373.6-.72l1.08.72c-.48 1.067-1.107 1.84-1.88 2.32-.747.453-1.72.68-2.92.68Zm-9.44-6.12c0 .987.226 1.72.68 2.2a2.347 2.347 0 0 0 2.64.52c.32-.133.826-.44 1.52-.92v-6.48a16.22 16.22 0 0 0-1.04.36c-.32.107-.6.213-.84.32-.907.373-1.627.907-2.16 1.6-.534.667-.8 1.467-.8 2.4Zm22.01-4c0 2.187.386 3.853 1.16 5 .773 1.12 1.773 1.68 3 1.68.906 0 1.733-.307 2.48-.92v-11.92c-.72-.56-1.507-.84-2.36-.84-1.227 0-2.254.573-3.08 1.72-.8 1.147-1.2 2.907-1.2 5.28Zm7.16 10-.32-2.28c-1.547 1.627-3.427 2.44-5.64 2.44-1.494 0-2.854-.387-4.08-1.16-1.2-.773-2.147-1.907-2.84-3.4-.694-1.52-1.04-3.36-1.04-5.52 0-2.187.413-4.053 1.24-5.6.853-1.573 1.946-2.773 3.28-3.6 1.36-.853 2.786-1.28 4.28-1.28 1.04 0 1.946.187 2.72.56.773.347 1.48.867 2.12 1.56v-7.32l-2.8-.4v-1.68l8.44-1.8.64.4-.16 5.6v20.76l1.96.4V332l-7.8.44Zm9.87-.44v-1.88l2.16-.48c.026-.96.04-2 .04-3.12v-4.84c0-1.093-.014-2-.04-2.72 0-.747-.027-1.52-.08-2.32l-2.48-.36v-1.56l8.4-2.68.68.44-.12 5.8V326.56c0 1.12.013 2.173.04 3.16l2 .4V332h-10.6Zm5.32-22.92c-.934 0-1.734-.293-2.4-.88a2.971 2.971 0 0 1-1-2.28c0-.933.333-1.693 1-2.28.666-.613 1.466-.92 2.4-.92.933 0 1.733.307 2.4.92.666.587 1 1.347 1 2.28 0 .907-.334 1.667-1 2.28-.667.587-1.467.88-2.4.88Zm7.256 22.92v-1.88l2.16-.48c.026-.96.04-2 .04-3.12v-5.24c0-1.093-.014-1.933-.04-2.52 0-.613-.027-1.32-.08-2.12l-2.44-.36v-1.56l7.88-2.68.72.44.24 2.88c1.04-1.227 2.066-2.08 3.08-2.56a7.476 7.476 0 0 1 3.32-.76c1.733 0 3.12.573 4.16 1.72 1.066 1.147 1.6 2.867 1.6 5.16v7.68c0 1.093.013 2.133.04 3.12l2 .4V332h-10.56v-1.88l2.08-.44c.026-.987.04-2.027.04-3.12v-7.16c0-1.28-.174-2.173-.52-2.68-.347-.533-.907-.8-1.68-.8-1.04 0-2.187.48-3.44 1.44v9.2c0 1.12.013 2.173.04 3.16l1.88.4V332h-10.52Zm33.328-8.96c.934 0 1.627-.413 2.08-1.24.48-.827.72-1.947.72-3.36 0-1.413-.24-2.507-.72-3.28-.453-.8-1.12-1.2-2-1.2-.906 0-1.586.4-2.04 1.2-.453.8-.68 1.907-.68 3.32 0 1.413.214 2.533.64 3.36.427.8 1.094 1.2 2 1.2Zm-5.32 12.28c0 1.173.44 2.027 1.32 2.56.88.56 2.227.84 4.04.84 2 0 3.507-.293 4.52-.88 1.014-.587 1.52-1.32 1.52-2.2 0-.587-.213-1.12-.64-1.6-.426-.453-1.186-.68-2.28-.68h-4.2c-1.466 0-2.68-.12-3.64-.36a5.401 5.401 0 0 0-.48 1.08c-.106.347-.16.76-.16 1.24Zm5.36-10.4c-1.386 0-2.6-.16-3.64-.48-.32.56-.48 1.173-.48 1.84 0 .453.174.827.52 1.12.347.267.947.4 1.8.4h4.68c2.027 0 3.64.253 4.84.76 1.2.48 2.054 1.16 2.56 2.04.534.853.8 1.867.8 3.04 0 1.333-.44 2.56-1.32 3.68-.88 1.147-2.2 2.053-3.96 2.72-1.733.693-3.88 1.04-6.44 1.04-2.213 0-3.946-.227-5.2-.68-1.253-.427-2.133-1-2.64-1.72-.506-.72-.76-1.48-.76-2.28 0-1.707 1.107-3.08 3.32-4.12-.826-.347-1.426-.8-1.8-1.36a3.434 3.434 0 0 1-.52-1.84c0-.933.267-1.813.8-2.64.56-.853 1.334-1.707 2.32-2.56-1.093-.56-1.906-1.307-2.44-2.24-.533-.933-.8-1.973-.8-3.12 0-1.867.68-3.413 2.04-4.64 1.387-1.227 3.494-1.84 6.32-1.84 1.44 0 2.694.16 3.76.48 1.067.32 1.934.773 2.6 1.36l4.48-1.92.64.4v3.08h-3.8c.48.88.72 1.907.72 3.08 0 1.787-.693 3.307-2.08 4.56-1.36 1.227-3.466 1.84-6.32 1.84Z', fill: '#0A2750' })));
    };
+   var j = n(78187);
    function w(e) {
-    const t = { code: 'code', p: 'p', pre: 'pre', ...(0, u.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: "Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor screenreadergebruikers. Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat." }), '\n', (0, d.jsx)(t.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
+    const t = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, d.jsx)(t.code, { children: 'h1' }), ' tot en met ', (0, d.jsx)(t.code, { children: 'h6' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.' }), '\n', (0, d.jsxs)(t.p, { children: ['Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een ', (0, d.jsx)(t.code, { children: 'span' }), '- of een ', (0, d.jsx)(t.code, { children: 'p' }), '-element, geen heading-element.'] }), '\n', (0, d.jsxs)(t.p, { children: ['Sla geen kopniveaus over, dus bijvoorbeeld een ', (0, d.jsx)(t.code, { children: 'h3' }), ' na een ', (0, d.jsx)(t.code, { children: 'h1' }), '. Screenreadergebruikers kunnen dan het idee krijgen dat ze informatie missen.'] }), '\n', (0, d.jsxs)(t.p, { children: ['Let erop dat je per pagina 1 ', (0, d.jsx)(t.code, { children: 'h1' }), ' gebruikt en dat deze aan het begin van de ', (0, d.jsx)(t.code, { children: 'main' }), '-content staat. Door niet meer dan 1 ', (0, d.jsx)(t.code, { children: 'h1' }), ' te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.'] }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/typografie/opmaak/#kopjes', children: 'Gebruik betekenisvolle opmaak voor tekst, Kopjes' }) }), '\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/ruimte/relaties#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
    }
-   function y(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+   function v(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
    }
-   var A = n(31573),
+   var y = n(31573),
     f = n(53590),
-    v = n(82959),
-    b = n(43486),
-    k = n(64154),
-    x = n(97520),
-    C = n(76233),
-    T = n(55240),
-    G = n(8657);
-   const W = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' },
-    R = void 0,
-    N = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
+    A = n(82959);
+   function k(e) {
+    const t = { p: 'p', ...(0, h.a)(), ...e.components };
+    return (0, d.jsx)(t.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' });
+   }
+   function b(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(k, { ...e }) }) : k(e);
+   }
+   var x = n(64154);
+   function C(e) {
+    const t = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Zorg ervoor dat je een heading op de juiste manier nest als je hem wilt gebruiken in combinatie een ander element, zoals een button of een link. Denk erom dat de elementen dan correct worden genest in de HTML. Check je code daarom met een ', (0, d.jsx)(t.a, { href: 'https://validator.w3.org/', children: 'HTML-validator' }), ' of ', (0, d.jsx)(t.a, { href: 'https://github.com/caramelomartins/awesome-linters?tab=readme-ov-file#html', children: 'HTML-linter' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Een voorbeeld is een button met een heading erin:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<h2>\n  <button>button in heading, wel toegestaan</button>\n</h2>\n' }) }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '\x3c!-- dit niet doen --\x3e\n<button>\n  <h2>heading in button, niet toegestaan</h2>\n</button>\n' }) })] });
+   }
+   function T(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(C, { ...e }) }) : C(e);
+   }
+   var G = n(97520),
+    W = n(76233),
+    R = n(55240),
+    N = n(8657);
+   const z = { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading' },
+    L = void 0,
+    Z = { id: 'componenten/heading/index', title: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', source: '@site/docs/componenten/heading/index.mdx', sourceDirName: 'componenten/heading', slug: '/heading', permalink: '/heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading' }, sidebar: 'componenten', previous: { title: 'Form Summary', permalink: '/form-summary' }, next: { title: 'Heading 1', permalink: '/heading-1' } },
     _ = {},
-    z = [
+    D = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    L = 'Number Badge',
-    D = 'Klein label dat de aandacht trekt informeert over een aantal.',
-    P = 7,
-    S = h.find((e) => e.number === P);
-   function F(e) {
-    const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
+    S = 'Heading',
+    M = 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.',
+    P = 114,
+    F = u.find((e) => e.number === P);
+   function V(e) {
+    const t = { h2: 'h2', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
      children: [
       '\n',
@@ -160,57 +161,64 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(G.Rv, { component: S, headingLevel: 1, description: D }),
+      (0, d.jsx)(N.Rv, { component: F, headingLevel: 1, description: M }),
       '\n',
-      (0, d.jsx)(x.I, { component: S }),
+      (0, d.jsx)(G.I, { component: F }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, d.jsx)(C.B, { component: S, illustration: j }),
+      (0, d.jsx)(W.B, { component: F, illustration: p }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, d.jsx)(G.cN, { component: S, headingLevel: 3 }),
+      (0, d.jsx)(N.cN, { component: F, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, d.jsx)(G.W, { component: S, headingLevel: 3 }),
+      (0, d.jsx)(N.W, { component: F, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
-      (0, d.jsx)(m.ZP, {}),
+      (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, d.jsx)(T.t, {
+      (0, d.jsx)(R.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
-        { title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge', sc: '1.4.5', status: '', component: (0, d.jsx)(b.ZP, {}) },
-        { title: 'Als een tekst en/of het aria-label in de Number Badge in een andere taal is dan de taal van de pagina, dan heeft de Number Badge een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, d.jsx)(k.ZP, {}) },
+        { title: 'De koptekst maakt duidelijk waar de sectie over gaat', sc: '2.4.6', status: '', component: (0, d.jsx)(b, {}) },
+        { title: 'Elementen moeten genest zijn volgens de HTML-specificatie', sc: '4.1.1', status: '', component: (0, d.jsx)(T, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(T.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, d.jsx)(f.ZP, {}) }] }),
+      (0, d.jsx)(R.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg', sc: '1.4.3', status: '', component: (0, d.jsx)(f.ZP, {}) }] }),
       '\n',
-      (0, d.jsx)(T.t, {
+      (0, d.jsx)(R.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(v.ZP, {}) },
-        { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(A.ZP, {}) },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(A.ZP, {}) },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(y.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(T.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, d.jsx)(y, {}) }] }),
+      (0, d.jsx)(R.t, {
+       headingLevel: 3,
+       testCategory: 'Toegankelijkheid screenreader',
+       items: [
+        { title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn en geen vet gemaakte tekst', sc: '1.3.1', status: '', component: (0, d.jsx)(v, {}) },
+        { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode', sc: '3.1.2', status: '', component: (0, d.jsx)(x.ZP, {}) },
+       ],
+      }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, d.jsx)(G.vM, { component: S, headingLevel: 3 }),
+      (0, d.jsx)(N.vM, { component: F, headingLevel: 3 }),
      ],
     });
    }
-   function M(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(F, { ...e }) }) : F(e);
+   function O(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(V, { ...e }) }) : V(e);
    }
   },
   98507: (e, t, n) => {
@@ -282,9 +290,9 @@
     },
     d = (e) => {
      let { component: t, illustration: d } = e;
-     const { title: u } = t,
-      h = (0, o.mA)(u),
-      m = s.lazy(() => n(22930)(`./${h}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
+     const { title: h } = t,
+      u = (0, o.mA)(h),
+      m = s.lazy(() => n(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
      return (0, c.jsx)(s.Suspense, {
       fallback: null,
       children: (0, c.jsxs)('figure', {
@@ -317,7 +325,7 @@
   },
   55240: (e, t, n) => {
    'use strict';
-   n.d(t, { t: () => u });
+   n.d(t, { t: () => h });
    var r = n(31916);
    const i = [
      { sc: '1.1.1', title: 'Non-text Content', url: 'https://www.w3.org/TR/WCAG21/#non-text-content', conformance: 'A', nldesignsystem: !0, nl: { title: 'Niet-tekstuele content' } },
@@ -415,14 +423,14 @@
       d = a ? `${n} ${a.nl?.title}` : n;
      return (0, l.jsxs)('div', { className: 'component-criteria-section', children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: o, className: 'component-criteria-section__heading', children: t }), (n || i) && (0, l.jsxs)('dl', { className: 'component-criteria-section__dl', children: [n && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, l.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), i && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, l.jsx)('dd', { className: 'component-criteria-section__dl', children: i })] })] }), s] });
     },
-    u = (e) => {
+    h = (e) => {
      let { testCategory: t, items: n } = e;
      return (0, l.jsx)(a.a2, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 2, expanded: !1, label: (0, l.jsx)('span', { children: t }), body: n.map((e, t) => (0, l.jsx)(d, { ...e }, t)) }] });
     };
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => k, vM: () => C, W: () => x, Rv: () => T });
+   n.d(t, { cN: () => b, vM: () => C, W: () => x, Rv: () => T });
    var r = n(95674),
     i = n(4814),
     s = n(39854),
@@ -431,10 +439,10 @@
     a = n(79734),
     l = n(32636),
     d = n(52676);
-   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(a.Z, {}) },
-    h = (e) => {
+   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(a.Z, {}) },
+    u = (e) => {
      let { brand: t } = e;
-     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(l.Z, {}) });
+     return (0, d.jsx)(r.JO, { children: h[t] || (0, d.jsx)(l.Z, {}) });
     };
    var m = n(35038),
     g = n(76193);
@@ -459,27 +467,27 @@
    };
    var j = n(23355),
     w = n(41757),
-    y = n(31916),
-    A = n(25953);
+    v = n(31916),
+    y = n(25953);
    const f = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
-    v = (e) => {
+    A = (e) => {
      let { checked: t, children: n, title: r, description: s, headingLevel: o = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(A.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, n] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(y.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, n] })] });
     };
-   var b = n(14669);
-   const k = (e) => {
+   var k = n(14669);
+   const b = (e) => {
      let { component: t, headingLevel: n } = e;
-     const s = t && t.projects.filter((e) => b.e9.includes(e.id)),
-      o = s && b.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
+     const s = t && t.projects.filter((e) => k.e9.includes(e.id)),
+      o = s && k.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, k.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -490,7 +498,7 @@
            (0, d.jsx)(f, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, d.jsx)(v, { headingLevel: n + 1, checked: t, title: r, description: (0, b.Q6)(i) }, i);
+             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -502,7 +510,7 @@
     },
     x = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !b.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !k.e9.includes(e.id));
      return t && i.length
       ? (0, d.jsx)(m.um, {
          appearance: 'large',
@@ -545,7 +553,7 @@
                   (0, d.jsx)(r.Mc, {
                    children: o.map((e) => {
                     const t = s.get(e.name);
-                    return t ? (0, d.jsxs)(r.k7, { href: e.value, children: [(0, d.jsx)(h, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, d.jsx)(d.Fragment, {});
+                    return t ? (0, d.jsxs)(r.k7, { href: e.value, children: [(0, d.jsx)(u, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, d.jsx)(d.Fragment, {});
                    }),
                   }),
                  ],
@@ -567,7 +575,7 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
-     const s = t && b.$3[t.relayStep];
+     const s = t && k.$3[t.relayStep];
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(w.V, { level: n, suffix: s && (0, d.jsx)(j.y, { state: s }), children: t.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },

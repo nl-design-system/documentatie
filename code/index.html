@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.30b1da01.css" />
-  <script src="/assets/js/runtime~main.03bdf0bd.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.8633b709.js" defer="defer"></script>
   <script src="/assets/js/main.b6f97c89.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -849,6 +849,7 @@
                   </dl>
                   <p>Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.</p>
                   <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.</p>
                   <p>NL Design System richtlijnen:</p>
                   <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                    <li><a href="/richtlijnen/stijl/typografie/voorkeur" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
@@ -863,6 +864,7 @@
                   </dl>
                   <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden.</p>
                   <p>Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.</p>
                   <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
                   <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                    <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;</li>
@@ -871,12 +873,12 @@
                    <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
                   </ul>
                   <p>Dit is te testen met een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
-                  <span hidden="" id=":R5unbuhralaqh:"
+                  <span hidden="" id=":R6unbuhralaqh:"
                    >codevoorbeeld
                    <!-- -->
                    <!-- -->
                   </span>
-                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5unbuhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6unbuhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
