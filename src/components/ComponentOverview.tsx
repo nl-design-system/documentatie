@@ -24,7 +24,7 @@ export const ComponentOverview = () => {
   };
 
   const category = useCurrentSidebarCategory();
-  const { location, push } = useHistory();
+  const { location, replace } = useHistory();
 
   const params = new URLSearchParams(location.search);
 
@@ -105,7 +105,7 @@ export const ComponentOverview = () => {
       params.append(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
     }
 
-    push({ ...location, search: params.toString() });
+    replace({ ...location, search: params.toString() });
   }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showOnlyImplemented]);
 
   const todo = components.filter((c) => c.relayStep === 'UNKNOWN');
