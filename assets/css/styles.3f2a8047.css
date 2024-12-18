@@ -2848,6 +2848,9 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .docs-doc-page input[type="text"] {
  display: block;
 }
+.docs-doc-page ul {
+ margin-bottom: 20px;
+}
 .docs-doc-page div.button {
  border: 1px solid #223c61;
  border-radius: 8px;
@@ -2962,7 +2965,7 @@ code .namespace {
  font-size: 0.9em;
  line-height: 1;
 }
-.docs-doc-page ul {
+.DocSearch ul {
  margin: auto 0;
 }
 @font-face {
