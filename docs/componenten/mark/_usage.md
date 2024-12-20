@@ -55,15 +55,11 @@ Je kunt de React component zo gebruiken:
 ```jsx
 import { Mark } from "@nl-design-system-candidate/mark-react";
 
-export const MyPage = () => {
+export const MyComponent = () => {
   return (
-    <html>
-      <body>
-        <p>
-          <Mark href="https://example.com">example.com</Mark>
-        </p>
-      </body>
-    </html>
+    <p>
+      <Mark href="https://example.com">example.com</Mark>
+    </p>
   );
 };
 ```
