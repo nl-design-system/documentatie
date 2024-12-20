@@ -12,18 +12,8 @@ Gebruik de `nl-code-block` class name op een `pre` element met de `nl-code-block
 ```html
 <pre dir="ltr" translate="no" class="nl-code-block">
   <code class="nl-code-block__code">
-    import '@nl-design-system-candidate/code-block-react';
-
-    export const MyPage = () => {
-      return (
-        <html>
-          <body>
-            <CodeBlock>
-              import {CodeBlock} from '@nl-design-system-candidate/code-block-react'
-            <CodeBlock>
-          </body>
-        </html>
-      );
+    function addNumbers(a, b) {
+      return a + b;
     }
   </code>
 </pre>
@@ -47,7 +37,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
 
 ```html
-<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-block-css@1/dist/code-block.css" />
+<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-block-css/dist/code-block.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:

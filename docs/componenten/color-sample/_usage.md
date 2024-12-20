@@ -15,14 +15,14 @@ Gebruik de `nl-color-sample` class name op een `svg` element:
 </svg>
 ```
 
-Zorg dat je een duidelijke beschrijving naast de Color Sample hebt en gebruik wanneer de Color Sample en beschrijving niet direct bij elkaar staan een `id` op de beschrijving die je met `aria-labelledby` koppelt aan de `svg`:
+Zorg dat je een duidelijke beschrijving naast de Color Sample hebt en gebruik wanneer de Color Sample en beschrijving niet direct bij elkaar staan dat je ze goed aan elkaar linkt. Bijvoorbeeld door er een `figure` omheen te zetten:
 
 ```html
-<svg role="img" xmlns="http://www.w3.org/2000/svg" class="nl-color-sample" style="color: deeppink;">
-  <path d="M0 0H32V32H0Z" fill="currentcolor" aria-labelledby="roze-trui" />
-</svg>
-
-<p>Een goede vriend van mij draagt altijd een <span id="roze-trui">roze</span> trui</p>
+<h1>Huisstijlkleuren</h1>
+<figure>
+  <ColorSample value="deeppink" aria-labelledby="kleur-1" />
+  <figcaption id="kleur-1">Roze</figcaption>
+</figure>
 ```
 
 Je kunt de CSS zo in je project installeren:
