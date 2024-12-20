@@ -61,7 +61,7 @@ export const MyPage = () => {
       <body>
         <Code>
           import { Code } from '@nl-design-system-candidate/code-react';
-        <Code>
+        </Code>
       </body>
     </html>
   );
