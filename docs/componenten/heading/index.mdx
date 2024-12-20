@@ -28,6 +28,8 @@ HelpImproveComponent,
 Implementations,
 Introduction,
 } from "@site/src/components/ComponentPage";
+import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./\_usage.md";
 
 {/* Add name and description for the component */}
 export const title = "Heading";
@@ -43,6 +45,12 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Anatomie
 
 <ComponentAnatomy component={component} illustration={HeadingIllustration} />
+
+## Gebruik deze component
+
+<Markdown omitH1 headingLevel={3}>
+  <Usage />
+</Markdown>
 
 ## Definition of Done
 
