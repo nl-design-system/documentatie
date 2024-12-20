@@ -31,7 +31,7 @@ Als je CSS imports gebruikt vanuit JavaScript:
 import "@nl-design-system-candidate/heading-css/heading.css";
 ```
 
-### H1
+### Heading level 1
 
 Gebruik voor een hoofdkop van een pagina de `nl-heading` en `nl-heading--level-1` class name op een `h1`, element:
 
@@ -39,7 +39,7 @@ Gebruik voor een hoofdkop van een pagina de `nl-heading` en `nl-heading--level-1
 <h1 class="nl-heading nl-heading--level-1">Hoofdkop van de pagina</h1>
 ```
 
-### H2
+### Heading level 2
 
 Gebruik voor een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat de `nl-heading` en `nl-heading--level-2` class name op een `h2`, element:
 
@@ -49,7 +49,7 @@ Gebruik voor een koptekst die volgt na de hoofdkop en in de koppenstructuur op h
 </h2>
 ```
 
-### H3
+### Heading level 3
 
 Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de `nl-heading` en `nl-heading--level-3` class name op een `h3`, element:
 
@@ -57,7 +57,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de
 <h3 class="nl-heading nl-heading--level-3">Een koptekst die in de koppenstructuur op het derde niveau staat</h3>
 ```
 
-### H4
+### Heading 4
 
 Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat de `nl-heading` en `nl-heading--level-4` class name op een `h4`, element:
 
@@ -65,7 +65,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat d
 <h4 class="nl-heading nl-heading--level-4">Een koptekst die in de koppenstructuur op het vierde niveau staat</h4>
 ```
 
-### H5
+### Heading 5
 
 Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat de `nl-heading` en `nl-heading--level-5` class name op een `h5`, element:
 
@@ -73,7 +73,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat d
 <h5 class="nl-heading nl-heading--level-5">Een koptekst die in de koppenstructuur op het vijfde niveau staat</h5>
 ```
 
-### H6
+### Heading 6
 
 Gebruik voor een koptekst die in de koppenstructuur op het zesde niveau staat de `nl-heading` en `nl-heading--level-5` class name op een `h6`, element:
 
