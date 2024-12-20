@@ -58,7 +58,7 @@ Je kunt de React component zo gebruiken:
 ```jsx
 import { SkipLink } from "@nl-design-system-candidate/skip-link-react";
 
-export const MyComponent = () => <SkipLink href="#inhoud">Naar de inhoud</SkipLink>;
+export const MyComponent = () => <SkipLink href="#inhoud">Direct naar de hoofdinhoud</SkipLink>;
 ```
 
 ## Figma
