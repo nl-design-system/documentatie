@@ -85,9 +85,9 @@
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  23785: (e, t, n) => {
+  40383: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => S, component: () => O, contentTitle: () => L, default: () => Z, description: () => B, frontMatter: () => N, issueNumber: () => M, metadata: () => _, title: () => P, toc: () => F });
+   n.r(t), n.d(t, { assets: () => B, component: () => H, contentTitle: () => F, default: () => V, description: () => Z, frontMatter: () => _, issueNumber: () => E, metadata: () => P, title: () => O, toc: () => M });
    var r,
     i,
     s,
@@ -96,8 +96,8 @@
     c,
     l,
     d = n(52676),
-    u = n(87118),
-    h = n(85731),
+    h = n(87118),
+    u = n(85731),
     g = n(75271);
    function m() {
     return (
@@ -119,55 +119,65 @@
    };
    var j = n(78187);
    function w(e) {
-    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, u.a)(), ...e.components };
+    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.' }), '\n', (0, d.jsxs)(t.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een ', (0, d.jsx)(t.code, { children: 'img' }), ' kan dan een leeg ', (0, d.jsx)(t.code, { children: 'alt' }), '-attribuut krijgen (', (0, d.jsx)(t.code, { children: 'alt=""' }), ').'] }), '\n', (0, d.jsx)(t.p, { children: 'Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.' }), '\n', (0, d.jsxs)(t.p, { children: ['Een ', (0, d.jsx)(t.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.'] }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<span><img src="klok.svg" alt="tijd" />12.45</span>\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n'] })] });
    }
    function y(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
    }
    function f(e) {
-    const t = { a: 'a', code: 'code', p: 'p', ...(0, u.a)(), ...e.components };
+    const t = { a: 'a', code: 'code', p: 'p', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het ', (0, d.jsxs)(t.a, { href: '%5Burl%5D(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)', children: [(0, d.jsx)(t.code, { children: 'time' }), '-element'] }), ' als het om een datum of een tijd gaat.'] }), '\n', (0, d.jsx)(t.p, { children: 'De toevoeging van de Data Badge mag niet verwarrend zijn voor screenreadergebruikers. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.' })] });
    }
    function v(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(f, { ...e }) }) : f(e);
    }
    function A(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.' }), '\n', (0, d.jsx)(t.p, { children: "Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst 'fout', en een groene Data Badge met de tekst 'gelukt'." }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/doel', children: 'Gebruik kleur met een doel' }) }), '\n'] })] });
    }
-   function k(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
+   function b(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(A, { ...e }) }) : A(e);
    }
-   var b = n(31573),
+   var k = n(31573),
     x = n(53590),
     C = n(82959),
     T = n(43486),
     G = n(64154),
     W = n(97520),
     R = n(76233),
-    z = n(55240),
-    D = n(8657);
-   const N = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] },
-    L = void 0,
-    _ = { id: 'componenten/data-badge/index', title: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] }, sidebar: 'componenten', previous: { title: 'Color Sample', permalink: '/color-sample' }, next: { title: 'Data Summary', permalink: '/data-summary' } },
-    S = {},
-    F = [
+    D = n(55240),
+    z = n(8657);
+   function N(e) {
+    const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.h1, { id: 'gebruik-data-badge', children: 'Gebruik Data Badge' }), '\n', (0, d.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, d.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, d.jsxs)(t.p, { children: [(0, d.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css', children: [(0, d.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fdata-badge-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/data-badge-css'] }), '\nversie 1.'] }), '\n', (0, d.jsxs)(t.p, { children: ['Gebruik de ', (0, d.jsx)(t.code, { children: 'nl-data-badge' }), ' class name op een ', (0, d.jsx)(t.code, { children: 'span' }), ' element:'] }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<span class="nl-data-badge">42</span>\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-css\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/data-badge-css@1/dist/data-badge.css"\n/>\n' }) }), '\n', (0, d.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, d.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/data-badge-css/dist/data-badge.css" />\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/data-badge-css/data-badge.css";\n' }) }), '\n', (0, d.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, d.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, d.jsxs)(t.p, { children: [(0, d.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react', children: [(0, d.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fdata-badge-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/data-badge-react'] }), '\nversie 1.'] }), '\n', (0, d.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-react\n' }) }), '\n', (0, d.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-jsx', children: 'import { DataBadge } from "@nl-design-system-candidate/data-badge-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <DataBadge>42</DataBadge>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, d.jsx)(t.h2, { id: 'figma', children: 'Figma' }), '\n', (0, d.jsxs)(t.p, { children: ['De Figma component staat in ', (0, d.jsx)(t.a, { href: 'https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=16013-20496&t=btcSpHPZOXM2P8BA-4', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Data Badge' }), '.'] })] });
+   }
+   function L(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(N, { ...e }) }) : N(e);
+   }
+   var S = n(57716);
+   const _ = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] },
+    F = void 0,
+    P = { id: 'componenten/data-badge/index', title: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', source: '@site/docs/componenten/data-badge/index.mdx', sourceDirName: 'componenten/data-badge', slug: '/data-badge', permalink: '/data-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'categoriseren', 'categorize', 'category', 'characteristic', 'chip', 'data', 'data badge', 'eigenschap', 'etiket', 'etiquette', 'filter tag', 'index', 'index term', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagged', 'tagging', 'term'] }, sidebar: 'componenten', previous: { title: 'Color Sample', permalink: '/color-sample' }, next: { title: 'Data Summary', permalink: '/data-summary' } },
+    B = {},
+    M = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
+     { value: 'Gebruik deze component', id: 'gebruik-deze-component', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    P = 'Data Badge',
-    B = 'Label met extra informatie, zoals een categorie of een eigenschap.',
-    M = 94,
-    O = h.find((e) => e.number === M);
-   function E(e) {
-    const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
+    O = 'Data Badge',
+    Z = 'Label met extra informatie, zoals een categorie of een eigenschap.',
+    E = 94,
+    H = u.find((e) => e.number === E);
+   function U(e) {
+    const t = { h2: 'h2', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
      children: [
       '\n',
@@ -176,27 +186,31 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(D.Rv, { component: O, headingLevel: 1, description: B }),
+      (0, d.jsx)(z.Rv, { component: H, headingLevel: 1, description: Z }),
       '\n',
-      (0, d.jsx)(W.I, { component: O }),
+      (0, d.jsx)(W.I, { component: H }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, d.jsx)(R.B, { component: O, illustration: p }),
+      (0, d.jsx)(R.B, { component: H, illustration: p }),
+      '\n',
+      (0, d.jsx)(t.h2, { id: 'gebruik-deze-component', children: 'Gebruik deze component' }),
+      '\n',
+      (0, d.jsx)(S.U, { omitH1: !0, headingLevel: 3, children: (0, d.jsx)(L, {}) }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, d.jsx)(D.cN, { component: O, headingLevel: 3 }),
+      (0, d.jsx)(z.cN, { component: H, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, d.jsx)(D.W, { component: O, headingLevel: 3 }),
+      (0, d.jsx)(z.W, { component: H, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
       (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, d.jsx)(z.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
@@ -205,25 +219,25 @@
        ],
       }),
       '\n',
-      (0, d.jsx)(z.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken', sc: '1.4.1', status: '', component: (0, d.jsx)(k, {}) },
+        { title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken', sc: '1.4.1', status: '', component: (0, d.jsx)(b, {}) },
         { title: 'De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond', sc: '1.4.3', status: '', component: (0, d.jsx)(x.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(z.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
         { title: 'Als je de tekst van de Data Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(C.ZP, {}) },
-        { title: 'Als je de tekstafstand van de Data Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(b.ZP, {}) },
+        { title: 'Als je de tekstafstand van de Data Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(k.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(z.t, {
+      (0, d.jsx)(D.t, {
        headingLevel: 3,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
@@ -234,13 +248,13 @@
       '\n',
       (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, d.jsx)(D.vM, { component: O, headingLevel: 3 }),
+      (0, d.jsx)(z.vM, { component: H, headingLevel: 3 }),
      ],
     });
    }
-   function Z(e = {}) {
-    const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(E, { ...e }) }) : E(e);
+   function V(e = {}) {
+    const { wrapper: t } = { ...(0, h.a)(), ...e.components };
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(U, { ...e }) }) : U(e);
    }
   },
   98507: (e, t, n) => {
@@ -312,9 +326,9 @@
     },
     d = (e) => {
      let { component: t, illustration: d } = e;
-     const { title: u } = t,
-      h = (0, o.mA)(u),
-      g = s.lazy(() => n(22930)(`./${h}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
+     const { title: h } = t,
+      u = (0, o.mA)(h),
+      g = s.lazy(() => n(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
      return (0, a.jsx)(s.Suspense, {
       fallback: null,
       children: (0, a.jsxs)('figure', {
@@ -347,7 +361,7 @@
   },
   55240: (e, t, n) => {
    'use strict';
-   n.d(t, { t: () => u });
+   n.d(t, { t: () => h });
    var r = n(31916);
    const i = [
      { sc: '1.1.1', title: 'Non-text Content', url: 'https://www.w3.org/TR/WCAG21/#non-text-content', conformance: 'A', nldesignsystem: !0, nl: { title: 'Niet-tekstuele content' } },
@@ -445,14 +459,14 @@
       d = c ? `${n} ${c.nl?.title}` : n;
      return (0, l.jsxs)('div', { className: 'component-criteria-section', children: [(0, l.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: o, className: 'component-criteria-section__heading', children: t }), (n || i) && (0, l.jsxs)('dl', { className: 'component-criteria-section__dl', children: [n && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, l.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, l.jsx)(r.rU, { href: `/wcag/${n}`, children: d }) })] }), i && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, l.jsx)('dd', { className: 'component-criteria-section__dl', children: i })] })] }), s] });
     },
-    u = (e) => {
+    h = (e) => {
      let { testCategory: t, items: n } = e;
      return (0, l.jsx)(c.a2, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 2, expanded: !1, label: (0, l.jsx)('span', { children: t }), body: n.map((e, t) => (0, l.jsx)(d, { ...e }, t)) }] });
     };
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => b, vM: () => C, W: () => x, Rv: () => T });
+   n.d(t, { cN: () => k, vM: () => C, W: () => x, Rv: () => T });
    var r = n(95674),
     i = n(4814),
     s = n(39854),
@@ -461,10 +475,10 @@
     c = n(79734),
     l = n(32636),
     d = n(52676);
-   const u = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(a.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
-    h = (e) => {
+   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(a.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
+    u = (e) => {
      let { brand: t } = e;
-     return (0, d.jsx)(r.JO, { children: u[t] || (0, d.jsx)(l.Z, {}) });
+     return (0, d.jsx)(r.JO, { children: h[t] || (0, d.jsx)(l.Z, {}) });
     };
    var g = n(35038),
     m = n(76193);
@@ -499,17 +513,17 @@
      let { checked: t, children: n, title: r, description: s, headingLevel: o = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, n] })] });
     };
-   var k = n(14669);
-   const b = (e) => {
+   var b = n(14669);
+   const k = (e) => {
      let { component: t, headingLevel: n } = e;
-     const s = t && t.projects.filter((e) => k.e9.includes(e.id)),
-      o = s && k.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
+     const s = t && t.projects.filter((e) => b.e9.includes(e.id)),
+      o = s && b.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, k.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -520,7 +534,7 @@
            (0, d.jsx)(v, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(i) }, i);
+             return (0, d.jsx)(A, { headingLevel: n + 1, checked: t, title: r, description: (0, b.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -532,7 +546,7 @@
     },
     x = (e) => {
      let { component: t, headingLevel: n } = e;
-     const i = t && t.projects.filter((e) => !k.e9.includes(e.id));
+     const i = t && t.projects.filter((e) => !b.e9.includes(e.id));
      return t && i.length
       ? (0, d.jsx)(g.um, {
          appearance: 'large',
@@ -575,7 +589,7 @@
                   (0, d.jsx)(r.Mc, {
                    children: o.map((e) => {
                     const t = s.get(e.name);
-                    return t ? (0, d.jsxs)(r.k7, { href: e.value, children: [(0, d.jsx)(h, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, d.jsx)(d.Fragment, {});
+                    return t ? (0, d.jsxs)(r.k7, { href: e.value, children: [(0, d.jsx)(u, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, d.jsx)(d.Fragment, {});
                    }),
                   }),
                  ],
@@ -597,7 +611,7 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
-     const s = t && k.$3[t.relayStep];
+     const s = t && b.$3[t.relayStep];
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(w.V, { level: n, suffix: s && (0, d.jsx)(j.y, { state: s }), children: t.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
