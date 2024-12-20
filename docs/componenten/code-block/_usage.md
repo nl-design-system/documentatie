@@ -79,7 +79,7 @@ export const MyPage = () => {
     <html>
       <body>
         <CodeBlock>
-          import {CodeBlock} from '@nl-design-system-candidate/code-block-react'
+          import { CodeBlock } from '@nl-design-system-candidate/code-block-react'
         <CodeBlock>
       </body>
     </html>
