@@ -22,13 +22,13 @@ npm install --save-dev @nl-design-system-candidate/mark-css
 Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 
 ```html
-<mark rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/mark-css@1/dist/mark.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/mark-css@1/dist/mark.css" />
 ```
 
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
 
 ```html
-<mark rel="stylesheet" href="node_modules/@nl-design-system-candidate/mark-css/dist/mark.css" />
+<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/mark-css/dist/mark.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:
