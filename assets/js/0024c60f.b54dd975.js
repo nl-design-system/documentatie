@@ -45,7 +45,7 @@
   },
   79197: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => P, component: () => H, contentTitle: () => D, default: () => Z, description: () => E, frontMatter: () => S, issueNumber: () => U, metadata: () => F, title: () => O, toc: () => M });
+   n.r(t), n.d(t, { assets: () => M, component: () => H, contentTitle: () => P, default: () => B, description: () => U, frontMatter: () => D, issueNumber: () => Z, metadata: () => F, title: () => E, toc: () => O });
    var r,
     o,
     i,
@@ -100,44 +100,45 @@
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(A, { ...e }) }) : A(e);
    }
-   function b(e) {
+   var b = n(54042);
+   function x(e) {
     const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de ', (0, d.jsx)(t.a, { href: 'https://nldesignsystem.nl/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, d.jsx)(t.p, { children: 'Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
-   function x(e = {}) {
+   function C(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(b, { ...e }) }) : b(e);
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(x, { ...e }) }) : x(e);
    }
-   var C = n(31573),
-    T = n(82959);
-   function G(e) {
+   var T = n(31573),
+    G = n(82959);
+   function W(e) {
     const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, u.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.p, { children: 'Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maar gebruik hiervoor tekst. Dan schaalt de tekst goed mee als de gebruiker inzoomt en blijft deze leesbaar.' }), '\n', (0, d.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(t.ul, { children: ['\n', (0, d.jsx)(t.li, { children: (0, d.jsx)(t.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button', children: 'Afbeeldingen als buttons' }) }), '\n'] })] });
    }
-   function W(e = {}) {
+   function R(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(G, { ...e }) }) : G(e);
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(W, { ...e }) }) : W(e);
    }
-   var R = n(98388),
-    z = n(97520),
-    N = n(76233),
-    _ = n(55240),
-    L = n(8657);
-   const S = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] },
-    D = void 0,
+   var z = n(98388),
+    N = n(97520),
+    _ = n(76233),
+    L = n(55240),
+    S = n(8657);
+   const D = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] },
+    P = void 0,
     F = { id: 'componenten/color-sample/index', title: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', source: '@site/docs/componenten/color-sample/index.mdx', sourceDirName: 'componenten/color-sample', slug: '/color-sample', permalink: '/color-sample', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/color-sample/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['colour', 'kleur', 'voorbeeld', 'color swatch'] }, sidebar: 'componenten', previous: { title: 'Code Block', permalink: '/code-block' }, next: { title: 'Data Badge', permalink: '/data-badge' } },
-    P = {},
-    M = [
+    M = {},
+    O = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    O = 'Color Sample',
-    E = 'Toont een voorbeeld van een kleur.',
-    U = 325,
-    H = h.find((e) => e.number === U);
+    E = 'Color Sample',
+    U = 'Toont een voorbeeld van een kleur.',
+    Z = 325,
+    H = h.find((e) => e.number === Z);
    function V(e) {
     const t = { h2: 'h2', ...(0, u.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
@@ -148,47 +149,48 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(L.Rv, { component: H, headingLevel: 1, description: E }),
+      (0, d.jsx)(S.Rv, { component: H, headingLevel: 1, description: U }),
       '\n',
-      (0, d.jsx)(z.I, { component: H }),
+      (0, d.jsx)(N.I, { component: H }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, d.jsx)(N.B, { component: H, illustration: p }),
+      (0, d.jsx)(_.B, { component: H, illustration: p }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, d.jsx)(L.cN, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(S.cN, { component: H, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, d.jsx)(L.W, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(S.W, { component: H, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
       (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, d.jsx)(_.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'De eigenschappen van de Color Sample staan in tekst', sc: '1.4.5', status: '', component: (0, d.jsx)(W, {}) }] }),
+      (0, d.jsx)(L.t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', items: [{ title: 'De eigenschappen van de Color Sample staan in tekst', sc: '1.4.5', status: '', component: (0, d.jsx)(R, {}) }] }),
       '\n',
-      (0, d.jsx)(_.t, {
+      (0, d.jsx)(L.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende', sc: '1.4.3', status: '', component: (0, d.jsx)(R.ZP, {}) },
-        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond', sc: '1.4.11', status: '', component: (0, d.jsx)(x, {}) },
+        { title: 'Kleur is niet de enige manier waarop de informatie over de Color Sample beschikbaar is', sc: '1.4.1', status: '', component: (0, d.jsx)(b.ZP, {}) },
+        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende', sc: '1.4.3', status: '', component: (0, d.jsx)(z.ZP, {}) },
+        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond', sc: '1.4.11', status: '', component: (0, d.jsx)(C, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(_.t, {
+      (0, d.jsx)(L.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(T.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(C.ZP, {}) },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(G.ZP, {}) },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(T.ZP, {}) },
        ],
       }),
       '\n',
-      (0, d.jsx)(_.t, {
+      (0, d.jsx)(L.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
@@ -200,13 +202,27 @@
       '\n',
       (0, d.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, d.jsx)(L.vM, { component: H, headingLevel: 3 }),
+      (0, d.jsx)(S.vM, { component: H, headingLevel: 3 }),
      ],
     });
    }
-   function Z(e = {}) {
+   function B(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(V, { ...e }) }) : V(e);
+   }
+  },
+  54042: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => s });
+   var r = n(52676),
+    o = n(87118);
+   function i(e) {
+    const t = { p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, r.jsx)(t.p, { children: 'Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.' })] });
+   }
+   function s(e = {}) {
+    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(i, { ...e }) }) : i(e);
    }
   },
   98388: (e, t, n) => {
