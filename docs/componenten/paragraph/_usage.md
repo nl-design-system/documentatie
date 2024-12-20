@@ -39,7 +39,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
 
 ```html
-<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css" />
+<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:
