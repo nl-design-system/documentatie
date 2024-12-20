@@ -53,15 +53,13 @@ npm install --save-dev @nl-design-system-candidate/code-react
 Je kunt de React component zo gebruiken:
 
 ```jsx
-import { Code } from '@nl-design-system-candidate/code-react';
+import { Code } from "@nl-design-system-candidate/code-react";
 
 export const MyPage = () => {
   return (
     <html>
       <body>
-        <Code>
-          import { Code } from '@nl-design-system-candidate/code-react';
-        </Code>
+        <Code>import {Code} from '@nl-design-system-candidate/code-react';</Code>
       </body>
     </html>
   );

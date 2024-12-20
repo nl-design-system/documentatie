@@ -62,15 +62,15 @@ npm install --save-dev @nl-design-system-candidate/code-block-react
 Je kunt de React component zo gebruiken:
 
 ```jsx
-import { CodeBlock } from '@nl-design-system-candidate/code-block-react';
+import { CodeBlock } from "@nl-design-system-candidate/code-block-react";
 
 export const MyPage = () => {
   return (
     <html>
       <body>
-        <CodeBlock>
-          import { CodeBlock } from '@nl-design-system-candidate/code-block-react'
-        </CodeBlock>
+        function addNumbers(a, b) {
+          return a + b;
+        }
       </body>
     </html>
   );

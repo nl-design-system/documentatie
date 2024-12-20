@@ -88,10 +88,11 @@ export const MyPage = () => {
   return (
     <html>
       <body>
-        <ColorSample value="deeppink" aria-labelledby="roze-trui" />
-        <p>
-          Een goede vriend van mij draagt altijd een <span id="roze-trui">roze</span> trui
-        </p>
+        <figure>
+          <ColorSample value="deeppink"/>
+          <figcaption>
+            Roze
+          </figcaption>
       </body>
     </html>
   );
