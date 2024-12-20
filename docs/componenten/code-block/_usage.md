@@ -11,11 +11,9 @@ Gebruik de `nl-code-block` class name op een `pre` element met de `nl-code-block
 
 ```html
 <pre dir="ltr" translate="no" class="nl-code-block">
-  <code class="nl-code-block__code">
-    function addNumbers(a, b) {
-      return a + b;
-    }
-  </code>
+  <code class="nl-code-block__code">function addNumbers(a, b) {
+  return a + b;
+}</code>
 </pre>
 ```
 
