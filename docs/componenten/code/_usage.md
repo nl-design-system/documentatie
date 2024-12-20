@@ -5,7 +5,7 @@
 De CSS van deze component is gepubliceerd in een npm package:
 
 [<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-css](https://www.npmjs.com/package/@nl-design-system-candidate/code-css)
-versie 2.
+versie 1.
 
 Gebruik de `nl-code` class name op een `code` element:
 
