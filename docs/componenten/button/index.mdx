@@ -149,12 +149,15 @@ export const component = componentProgress.find((item) => item.number === issueN
       status: "",
       component: <Wcag247 />,
     },
-    {
-      title: "De button heeft een goed zichtbare focusindicator",
-      sc: "2.4.13",
-      status: "",
-      component: <Wcag2413 />,
-    },
+    /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
+    /*
+{
+  title: "De button heeft een goed zichtbare focusindicator",
+  sc: "2.4.13",
+  status: "",
+  component: <Wcag2413 />,
+},
+ */
     {
       title: "Buttons met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
       sc: "3.2.4",

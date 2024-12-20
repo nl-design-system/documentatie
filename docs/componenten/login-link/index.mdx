@@ -113,12 +113,15 @@ export const component = componentProgress.find((item) => item.number === issueN
       status: "",
       component: <Wcag1411 />,
     },
-    {
-      title: "De Login Link heeft een goed zichtbare focusindicator",
-      sc: "2.4.13",
-      status: "",
-      component: <Wcag2413 />,
-    },
+    /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
+    /*
+{
+  title: "De Login Link heeft een goed zichtbare focusindicator",
+  sc: "2.4.13",
+  status: "",
+  component: <Wcag2413 />,
+},
+ */
     {
       title: "De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels",
       sc: "2.5.5",
