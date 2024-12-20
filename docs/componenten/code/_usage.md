@@ -42,7 +42,7 @@ import "@nl-design-system-candidate/code-css/code.css";
 De React component is gepubliceerd in een npm package:
 
 [<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-react](https://www.npmjs.com/package/@nl-design-system-candidate/code-react)
-versie 2.
+versie 1.
 
 Je kunt de npm package zo installeren:
 
