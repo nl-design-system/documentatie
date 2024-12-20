@@ -80,7 +80,7 @@ export const MyPage = () => {
       <body>
         <CodeBlock>
           import { CodeBlock } from '@nl-design-system-candidate/code-block-react'
-        <CodeBlock>
+        </CodeBlock>
       </body>
     </html>
   );
