@@ -57,7 +57,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de
 <h3 class="nl-heading nl-heading--level-3">Een koptekst die in de koppenstructuur op het derde niveau staat</h3>
 ```
 
-### Heading 4
+### Heading level 4
 
 Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat de `nl-heading` en `nl-heading--level-4` class name op een `h4`, element:
 
@@ -65,7 +65,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat d
 <h4 class="nl-heading nl-heading--level-4">Een koptekst die in de koppenstructuur op het vierde niveau staat</h4>
 ```
 
-### Heading 5
+### Heading level 5
 
 Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat de `nl-heading` en `nl-heading--level-5` class name op een `h5`, element:
 
@@ -73,7 +73,7 @@ Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat d
 <h5 class="nl-heading nl-heading--level-5">Een koptekst die in de koppenstructuur op het vijfde niveau staat</h5>
 ```
 
-### Heading 6
+### Heading level 6
 
 Gebruik voor een koptekst die in de koppenstructuur op het zesde niveau staat de `nl-heading` en `nl-heading--level-5` class name op een `h6`, element:
 
@@ -109,13 +109,25 @@ Je kunt de React component zo gebruiken:
 ```jsx
 import { Heading } from "@nl-design-system-candidate/heading-react";
 
-export const MyPage = () => {
+export const MyComponent = () => {
   return (
-    <html>
-      <body>
-        <Heading level="2" appearance="level-4"></Heading>
-      </body>
-    </html>
+    <div>
+      <Heading level={2} appearance="level-4"></Heading>
+    </div>
+  );
+};
+```
+
+Of inclusief CSS:
+
+```jsx
+import { Heading } from "@nl-design-system-candidate/heading-react/css";
+
+export const MyComponent = () => {
+  return (
+    <div>
+      <Heading level={2} appearance="level-4"></Heading>
+    </div>
   );
 };
 ```
