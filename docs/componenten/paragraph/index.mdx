@@ -16,11 +16,11 @@ import componentProgress from "@nl-design-system/component-progress/dist/index.j
 import AcIntro from "@nl-design-system-unstable/documentation/componenten/ac/_ac_intro.md";
 import ParagraphIllustration from "@nl-design-system-candidate/paragraph-docs/docs/anatomy/anatomy.svg";
 import Wcag131 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-paragraph.md";
+import Wcag1410 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.10-summary.md";
 import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
 import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
 import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
 import Wcag312 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md";
-import Wcag1410 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.10-summary.md";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
 import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
@@ -30,6 +30,8 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
 
 {/* Add name and description for the component */}
 export const title = "Paragraph";
@@ -48,94 +50,9 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 ## Gebruik deze component
 
-### CSS
-
-De CSS van deze component is gepubliceerd in een npm package:
-
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/paragraph-css](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css)
-versie 2.
-
-Gebruik de `nl-paragraph` class name op een `p` element:
-
-```html
-<p class="nl-paragraph">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</p>
-```
-
-Voor de Lead Paragraph gebruik je de extra class name `nl-paragraph--lead`:
-
-```html
-<p class="nl-paragraph nl-paragraph--lead">
-  Op brute wĳze ving de schooljuf de quasi-kalme lynx. Je gelooft nooit wat er toen gebeurde!
-</p>
-```
-
-Je kunt de CSS zo in je project installeren:
-
-```sh
-npm install --save-dev @nl-design-system-candidate/paragraph-css
-```
-
-Als je een CDN gebruikt, dan kun je de CSS zo importeren:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css"
-/>
-```
-
-Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
-
-```html
-<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css" />
-```
-
-Als je CSS imports gebruikt vanuit JavaScript:
-
-```js
-import "@nl-design-system-candidate/paragraph-css/paragraph.css";
-```
-
-### React
-
-De React component is gepubliceerd in een npm package:
-
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/paragraph-react](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react)
-versie 2.
-
-Je kunt de npm package zo installeren:
-
-```sh
-npm install --save-dev @nl-design-system-candidate/paragraph-react
-```
-
-Je kunt de React component zo gebruiken:
-
-```jsx
-import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
-
-export const MyPage = () => {
-  return (
-    <html>
-      <body>
-        <Paragraph>Op brute wĳze ving de schooljuf de quasi-kalme lynx.</Paragraph>
-      </body>
-    </html>
-  );
-};
-```
-
-De Lead Paragraph werkt zo:
-
-Je kunt de React component zo gebruiken:
-
-```jsx
-<Paragraph purpose="lead">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</Paragraph>
-```
-
-### Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Paragraph](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=150-734&node-type=canvas&t=SxsN8cwA5f9cXqQx-0).
+<Markdown omitH1 headingLevel={3}>
+  <Usage />
+</Markdown>
 
 ## Definition of Done
 
