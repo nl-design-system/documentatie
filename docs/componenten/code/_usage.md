@@ -60,7 +60,7 @@ export const MyPage = () => {
     <html>
       <body>
         <Code>
-          import {Code} from '@nl-design-system-candidate/code-react'
+          import { Code } from '@nl-design-system-candidate/code-react';
         <Code>
       </body>
     </html>
