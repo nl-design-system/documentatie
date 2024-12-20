@@ -54,7 +54,7 @@ Om te zorgen dat de betekenis van een number badge duidelijk is wanneer de pagin
 
 ```html
 <data value="42" class="nl-number-badge">
-  <span hidden="" aria-hidden="true" class="nl-number-badge__visible-label"> 42 </span>
+  <span hidden aria-hidden="true" class="nl-number-badge__visible-label">42</span>
   <span class="nl-number-badge__hidden-label">42 ongelezen berichten</span>
 </data>
 ```
