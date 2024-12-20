@@ -43,7 +43,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
 
 ```html
-<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/color-sample-css@1/dist/color-sample.css" />
+<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/color-sample-css/dist/color-sample.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:
