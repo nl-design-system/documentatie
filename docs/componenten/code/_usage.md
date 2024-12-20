@@ -28,7 +28,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
 
 ```html
-<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-css@2/dist/code.css" />
+<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-css/dist/code.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:
