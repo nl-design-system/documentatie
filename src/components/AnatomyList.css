@@ -1,29 +1,34 @@
 .nlds-anatomy-list {
-  padding-inline: 0;
+  column-gap: 2rem;
+  counter-reset: count 0;
   display: flex;
   flex-direction: column;
-  column-gap: 2rem;
+  padding-inline: 0;
   row-gap: 0.5rem;
-  counter-reset: count 0;
 }
 
 .nlds-anatomy-list__item {
   list-style: none;
+  padding-inline-start: calc(
+    var(--nl-anatomy-marker-min-inline-size, 2rem) + (4 * var(--nl-anatomy-marker-padding-inline, 0.125rem))
+  );
+  position: relative;
 }
 
 .nlds-anatomy-marker,
 .nlds-anatomy-list__item::before {
-  counter-increment: count 1;
-
   border-width: var(--nl-number-badge-border-width, 1px);
   box-sizing: border-box;
   color: var(--nl-number-badge-color);
+  counter-increment: count 1;
   display: inline-flex;
   font-family: var(--nl-number-badge-font-family);
   font-size: max(var(--nl-number-badge-font-size), 1rem);
   font-style: normal;
   font-variant-numeric: lining-nums tabular-nums;
   font-weight: var(--nl-number-badge-font-weight, bold);
+  inset-block-start: calc(-1 * var(--nl-anatomy-marker-padding-inline, 0.125rem));
+  inset-inline-start: 0;
   justify-content: center;
   max-block-size: max-content;
   max-inline-size: max-content;
@@ -31,17 +36,18 @@
   min-inline-size: var(--nl-anatomy-marker-min-inline-size, 2rem);
   padding-block: var(--nl-anatomy-marker-padding-block, 0.125rem);
   padding-inline: var(--nl-anatomy-marker-padding-inline, 0.125rem);
+  position: absolute;
 }
 
 .nlds-anatomy-list__item::before {
-  content: counter(count);
   background-color: #de00a4;
-  color: white;
   border-radius: 100%;
-  min-inline-size: 32px;
-  min-block-size: 32px;
-  vertical-align: middle;
+  color: white;
+  content: counter(count);
   margin-inline-end: 1ch;
+  min-block-size: 32px;
+  min-inline-size: 32px;
+  vertical-align: middle;
 }
 
 @media screen and (forced-colors: active) {
