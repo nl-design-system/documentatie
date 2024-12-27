@@ -10,7 +10,7 @@
 .nlds-anatomy-list__item {
   list-style: none;
   padding-inline-start: calc(
-    var(--nlds-anatomy-marker-min-inline-size, 2rem) + (2 * var(--nlds-anatomy-marker-padding-inline, 0.125rem)) +
+    var(--nlds-anatomy-marker-min-size, 2rem) + (2 * var(--nlds-anatomy-marker-padding-inline, 0.125rem)) +
       var(--nlds-anatomy-marker-gap, 0.5ch)
   );
   position: relative;
@@ -33,20 +33,20 @@
   justify-content: center;
   max-block-size: max-content;
   max-inline-size: max-content;
-  min-block-size: var(--nlds-anatomy-marker-min-block-size, 2rem);
-  min-inline-size: var(--nlds-anatomy-marker-min-inline-size, 2rem);
+  min-block-size: var(--nlds-anatomy-marker-min-size, 2rem);
+  min-inline-size: var(--nlds-anatomy-marker-min-size, 2rem);
   padding-block: var(--nlds-anatomy-marker-padding-block, 0.125rem);
   padding-inline: var(--nlds-anatomy-marker-padding-inline, 0.125rem);
   position: absolute;
 }
 
 .nlds-anatomy-list__item::before {
+  align-items: center;
   background-color: #de00a4;
   border-radius: 100%;
   color: white;
   content: counter(count);
-  min-block-size: var(--nlds-anatomy-marker-min-block-size, 32px);
-  min-inline-size: var(--nlds-anatomy-marker-min-inline-size, 32px);
+  display: flex;
 }
 
 @media screen and (forced-colors: active) {
