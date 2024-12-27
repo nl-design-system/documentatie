@@ -47,7 +47,6 @@
   content: counter(count);
   min-block-size: 32px;
   min-inline-size: 32px;
-  vertical-align: middle;
 }
 
 @media screen and (forced-colors: active) {
