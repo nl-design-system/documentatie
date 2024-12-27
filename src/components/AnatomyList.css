@@ -45,8 +45,8 @@
   border-radius: 100%;
   color: white;
   content: counter(count);
-  min-block-size: 32px;
-  min-inline-size: 32px;
+  min-block-size: var(--nlds-anatomy-marker-min-block-size, 32px);
+  min-inline-size: var(--nlds-anatomy-marker-min-inline-size, 32px);
 }
 
 @media screen and (forced-colors: active) {
