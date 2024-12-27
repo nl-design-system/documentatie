@@ -28,7 +28,7 @@
   font-style: normal;
   font-variant-numeric: lining-nums tabular-nums;
   font-weight: var(--nl-number-badge-font-weight, bold);
-  inset-block-start: calc(-1 * var(--nlds-anatomy-marker-padding-inline, 0.125rem));
+  inset-block-start: calc(-1 * var(--nlds-anatomy-marker-padding-block, 0.125rem));
   inset-inline-start: 0;
   justify-content: center;
   max-block-size: max-content;
