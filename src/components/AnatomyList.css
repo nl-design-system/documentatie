@@ -10,7 +10,8 @@
 .nlds-anatomy-list__item {
   list-style: none;
   padding-inline-start: calc(
-    var(--nl-anatomy-marker-min-inline-size, 2rem) + (4 * var(--nl-anatomy-marker-padding-inline, 0.125rem))
+    var(--nlds-anatomy-marker-min-inline-size, 2rem) + (2 * var(--nlds-anatomy-marker-padding-inline, 0.125rem)) +
+      var(--nlds-anatomy-marker-gap, 0.5ch)
   );
   position: relative;
 }
@@ -44,7 +45,6 @@
   border-radius: 100%;
   color: white;
   content: counter(count);
-  margin-inline-end: 1ch;
   min-block-size: 32px;
   min-inline-size: 32px;
   vertical-align: middle;
