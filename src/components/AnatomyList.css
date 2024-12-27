@@ -27,15 +27,15 @@
   font-style: normal;
   font-variant-numeric: lining-nums tabular-nums;
   font-weight: var(--nl-number-badge-font-weight, bold);
-  inset-block-start: calc(-1 * var(--nl-anatomy-marker-padding-inline, 0.125rem));
+  inset-block-start: calc(-1 * var(--nlds-anatomy-marker-padding-inline, 0.125rem));
   inset-inline-start: 0;
   justify-content: center;
   max-block-size: max-content;
   max-inline-size: max-content;
-  min-block-size: var(--nl-anatomy-marker-min-block-size, 2rem);
-  min-inline-size: var(--nl-anatomy-marker-min-inline-size, 2rem);
-  padding-block: var(--nl-anatomy-marker-padding-block, 0.125rem);
-  padding-inline: var(--nl-anatomy-marker-padding-inline, 0.125rem);
+  min-block-size: var(--nlds-anatomy-marker-min-block-size, 2rem);
+  min-inline-size: var(--nlds-anatomy-marker-min-inline-size, 2rem);
+  padding-block: var(--nlds-anatomy-marker-padding-block, 0.125rem);
+  padding-inline: var(--nlds-anatomy-marker-padding-inline, 0.125rem);
   position: absolute;
 }
 
