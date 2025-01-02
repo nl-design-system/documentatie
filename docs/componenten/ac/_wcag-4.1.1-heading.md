@@ -11,7 +11,7 @@ Een voorbeeld is een button met een heading erin:
 ```
 
 ```html
-<!-- dit niet doen -->
+<!-- Foute code, niet gebruiken -->
 <button>
   <h2>heading in button, niet toegestaan</h2>
 </button>
