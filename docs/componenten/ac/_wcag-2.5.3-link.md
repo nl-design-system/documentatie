@@ -9,7 +9,7 @@ Pas op met het gebruik van `aria-label` om een naam te geven aan een link. Een `
 Dus niet:
 
 ```html
-<!-- Dit is een fout voorbeeld, niet kopiëren -->
+<!-- Foute code, niet gebruiken -->
 <a href="login-url" aria-label="Klik hier om in te loggen">Log in met DigiD</a>
 ```
 
