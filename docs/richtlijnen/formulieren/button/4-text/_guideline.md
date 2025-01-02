@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-# Duidelijk buttontekst die beschrijft wat de button doet
+# Duidelijke buttontekst die beschrijft wat de button doet
 
 Geef buttons een duidelijke tekst, die beschrijft wat er gaat gebeuren.
 
