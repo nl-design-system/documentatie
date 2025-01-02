@@ -6,6 +6,6 @@ Verberg de standaard browserfocusstijl nooit met `outline:none` zonder er een go
 
 NL Design System richtlijnen:
 
-- [Maak toetsenbord focus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/)
+- [Maak toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/)
 - [Let op voorkeursinstellingen voor kleur](/richtlijnen/stijl/kleuren/voorkeuren)
 - [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/typografie/voorkeur)
