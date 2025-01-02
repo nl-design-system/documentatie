@@ -7,7 +7,7 @@ In het geval van de component Mark is dat het HTML-element `mark`.
 Dus niet zo:
 
 ```html
-<!-- dit niet doen -->
+<!-- Foute code, niet gebruiken -->
 Een zin met <span class="mark">een stuk gemarkeerde tekst</span> met een achtergrondkleur in CSS
 ```
 
