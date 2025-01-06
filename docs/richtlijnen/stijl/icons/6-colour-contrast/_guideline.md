@@ -31,4 +31,4 @@ Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan 
 ## Gerelateerde WCAG Richtlijnen
 
 - [1.1.1 Niet-tekstuele content](/wcag/1.1.1/)
-- [1.4.11 Non text contrast](/wcag/1.4.11)
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
