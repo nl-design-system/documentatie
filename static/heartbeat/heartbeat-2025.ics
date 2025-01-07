@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME:Heartbeat NL Design System 2025
+METHOD:PUBLISH
+PRODID:-//Apple Inc.//macOS 15.1.1//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Astrid Brantjes";CUTYPE=INDIVIDUAL;EMAIL="astrid.brantjes@i
+ ctu.nl";ROLE=OPT-PARTICIPANT:mailto:astrid.brantjes@ictu.nl
+ATTENDEE;CN="Emma Koole";CUTYPE=INDIVIDUAL;EMAIL="emma.koole@ictu.nl";RO
+ LE=OPT-PARTICIPANT:mailto:emma.koole@ictu.nl
+ATTENDEE;CN="Jeffrey Lauwers";CUTYPE=INDIVIDUAL;EMAIL="Jeffrey.Lauwers@i
+ ctu.nl";ROLE=OPT-PARTICIPANT:mailto:Jeffrey.Lauwers@ictu.nl
+ATTENDEE;CN="Marjon Bakker";CUTYPE=INDIVIDUAL;EMAIL="marjon.bakker@ictu.
+ nl";ROLE=OPT-PARTICIPANT:mailto:marjon.bakker@ictu.nl
+ATTENDEE;CN="Matijs Brinkhuis";CUTYPE=INDIVIDUAL;EMAIL="matijs.brinkhuis
+ @ictu.nl";ROLE=OPT-PARTICIPANT:mailto:matijs.brinkhuis@ictu.nl
+ATTENDEE;CN="NL Design System - Kernteam";CUTYPE=INDIVIDUAL;EMAIL="NLDes
+ ignSystem-Kernteam@ictubeheer.onmicrosoft.com";ROLE=CHAIR:mailto:NLDesig
+ nSystem-Kernteam@ictubeheer.onmicrosoft.com
+ATTENDEE;CN="NL Design System kernteam";CUTYPE=INDIVIDUAL;EMAIL="kerntea
+ m@nldesignsystem.nl";ROLE=OPT-PARTICIPANT:mailto:kernteam@nldesignsystem
+ .nl
+ATTENDEE;CN="Rian Rietveld";CUTYPE=INDIVIDUAL;EMAIL="rian.rietveld@ictu.
+ nl";ROLE=OPT-PARTICIPANT:mailto:rian.rietveld@ictu.nl
+ATTENDEE;CN="Robbert Broersma";CUTYPE=INDIVIDUAL;EMAIL="Robbert.Broersma
+ @ictu.nl";ROLE=OPT-PARTICIPANT:mailto:Robbert.Broersma@ictu.nl
+ATTENDEE;CN="Rozerin Ayerdem";CUTYPE=INDIVIDUAL;EMAIL="rozerin.ayerdem@i
+ ctu.nl";ROLE=OPT-PARTICIPANT:mailto:rozerin.ayerdem@ictu.nl
+ATTENDEE;CN="Yolijn van der Kolk";CUTYPE=INDIVIDUAL;EMAIL="Yolijn.vander
+ Kolk@ictu.nl";PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:mailto:Yolijn.vande
+ rKolk@ictu.nl
+DTEND;TZID=Europe/Berlin:20250107T140000
+TRANSP:OPAQUE
+ORGANIZER;CN="NL Design System - Kernteam";EMAIL="NLDesignSystem-Kerntea
+ m@ictubeheer.onmicrosoft.com":mailto:NLDesignSystem-Kernteam@ictubeheer.
+ onmicrosoft.com
+LOCATION:Microsoft Teams Meeting
+DTSTAMP:20250107T112042Z
+UID:2D9546B3-6C8A-4964-8D04-25FC7AD92F9C
+DESCRIPTION:\n\n\n______________________________________________________
+ __________________________\nMicrosoft Teams Need help?<https://eur03.saf
+ elinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FJoinTeamsMeeti
+ ng%3Fomkt%3Den-GB&data=05%7C02%7CYolijn.vanderKolk%40ictu.nl%7C265f95098
+ 6f14e44eb0908dd2f0aef67%7C6b1d3da237514e3db3c9e6784c8bad70%7C0%7C0%7C638
+ 718446188702000%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIw
+ LjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7
+ C&sdata=wicwz7bO1w6A%2B%2FgFHaom7mVeUiBfmQ4bDGgbsADK%2F4I%3D&reserved=0>
+ \nJoin the meeting now<https://eur03.safelinks.protection.outlook.com/ap
+ /t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F1
+ 9%253a64bdf9c755324c0d80e3ef8778d62b2f%2540thread.tacv2%2F1736247814664%
+ 3Fcontext%3D%257b%2522Tid%2522%253a%25226b1d3da2-3751-4e3d-b3c9-e6784c8b
+ ad70%2522%252c%2522Oid%2522%253a%25223e0eaaef-de00-4d5f-a843-94041f62ecc
+ 9%2522%257d&data=05%7C02%7CYolijn.vanderKolk%40ictu.nl%7C265f950986f14e4
+ 4eb0908dd2f0aef67%7C6b1d3da237514e3db3c9e6784c8bad70%7C0%7C0%7C638718446
+ 188725663%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMD
+ AwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdat
+ a=lUAObYv7eDvTRyGViBC6KbVpOUsMUi0wdWhlUqsLL2k%3D&reserved=0>\nMeeting ID
+ : 378 724 376 237\nPasscode: eA9gx3ZN\n________________________________\
+ nFor organisers: Meeting options<https://eur03.safelinks.protection.outl
+ ook.com/?url=https%3A%2F%2Fteams.microsoft.com%2FmeetingOptions%2F%3Forg
+ anizerId%3D3e0eaaef-de00-4d5f-a843-94041f62ecc9%26tenantId%3D6b1d3da2-37
+ 51-4e3d-b3c9-e6784c8bad70%26threadId%3D19_64bdf9c755324c0d80e3ef8778d62b
+ 2f%40thread.tacv2%26messageId%3D1736247814664%26language%3Den-GB&data=05
+ %7C02%7CYolijn.vanderKolk%40ictu.nl%7C265f950986f14e44eb0908dd2f0aef67%7
+ C6b1d3da237514e3db3c9e6784c8bad70%7C0%7C0%7C638718446188741445%7CUnknown
+ %7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zM
+ iIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=algtBnH%2BhFW9LGK
+ ODN9RBAS1fokVF%2FFB8IbRb%2F73hbU%3D&reserved=0>\nWees terughoudend met v
+ ertrouwelijke en/of privacygevoelige informatie\, zowel gesproken als ge
+ schreven.\n_____________________________________________________________
+ ___________________\n
+X-APPLE-CREATOR-IDENTITY:com.apple.exchangesync.exchangesyncd
+SEQUENCE:2
+SUMMARY:Heartbeat NL Design System 2025
+DTSTART;TZID=Europe/Berlin:20250107T130000
+LAST-MODIFIED:20250107T110342Z
+CREATED:20250107T110342Z
+RRULE:FREQ=WEEKLY;INTERVAL=2;UNTIL=20251216T225959Z;BYDAY=TU
+BEGIN:VALARM
+UID:8DCB4206-36C6-4FE0-B0D1-BD5CD32510F9
+X-WR-ALARMUID:8DCB4206-36C6-4FE0-B0D1-BD5CD32510F9
+TRIGGER:-PT15M
+DESCRIPTION:Reminder
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
