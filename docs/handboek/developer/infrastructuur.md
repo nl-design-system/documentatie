@@ -153,7 +153,7 @@ Instructies voor de upgrade naar Node 22:
   2. `nvm use`
   3. `corepack enable`
 - Upgrade npm dependencies van `@types/node` aan naar de meest recente 22.x versie, met het command: `pnpm exec npm-check-updates --filter @types/node --install always --upgrade`
-- Pas `"engines"` van de `/package.json` aan naar `"node": "^22"`.
+- Pas `"engines"` van de `package.json` in de root van je repository aan naar `"node": "^22"`.
 - GitHub Actions kun je instellen dat ze de Node-versie gebruiken die in `.nvmrc` staat, dus je hoeft voor GitHub Actions niets te doen als je dat gebruikt.
 - Als je Vercel gebruikt: pas in de General Settings van je Project aan dat je [Node 22.x wilt gebruiken voor Vercel](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions). Helaas lijkt het niet mogelijk dit via Terraform te configureren.
 
