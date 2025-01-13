@@ -43,11 +43,7 @@ function DocSidebarDesktop({ path, sidebar, onCollapse: toggleSidebar, isHidden 
         )}
       </Button>
 
-      <div
-        id={sidebarId}
-        aria-expanded={!isHidden}
-        className={clsx('sidebar__content', isHidden && 'sidebar__content--hidden')}
-      >
+      <div id={sidebarId} className={clsx('sidebar__content', isHidden && 'sidebar__content--hidden')}>
         <Content path={path} sidebar={sidebar} />
       </div>
     </div>
