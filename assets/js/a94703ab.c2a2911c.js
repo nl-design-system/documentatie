@@ -185,7 +185,7 @@
      } = (0, j.L)(),
      { isNavbarVisible: l } = (0, v.c)(r),
      c = (0, a.useId)();
-    return (0, m.jsxs)('div', { className: (0, i.Z)('sidebar', r && 'sidebarWithHideableNavbar', s && 'sidebarHidden', l && 'sidebarWithNavbar'), children: [(0, m.jsx)(L.zx, { appearance: 'subtle-button', onClick: o, className: (0, i.Z)('sidebar__toggle-button', s && 'sidebar__toggle-button--icon-only'), 'aria-controls': c, 'aria-label': s ? 'Toon sidebar' : 'Verberg sidebar', 'aria-expanded': !s, children: s ? (0, m.jsx)(m.Fragment, { children: (0, m.jsx)(f, {}) }) : (0, m.jsxs)(m.Fragment, { children: [(0, m.jsx)(_, {}), ' Verberg'] }) }), (0, m.jsx)('div', { id: c, 'aria-expanded': !s, className: (0, i.Z)('sidebar__content', s && 'sidebar__content--hidden'), children: (0, m.jsx)(U, { path: t, sidebar: n }) })] });
+    return (0, m.jsxs)('div', { className: (0, i.Z)('sidebar', r && 'sidebarWithHideableNavbar', s && 'sidebarHidden', l && 'sidebarWithNavbar'), children: [(0, m.jsx)(L.zx, { appearance: 'subtle-button', onClick: o, className: (0, i.Z)('sidebar__toggle-button', s && 'sidebar__toggle-button--icon-only'), 'aria-controls': c, 'aria-label': s ? 'Toon sidebar' : 'Verberg sidebar', 'aria-expanded': !s, children: s ? (0, m.jsx)(m.Fragment, { children: (0, m.jsx)(f, {}) }) : (0, m.jsxs)(m.Fragment, { children: [(0, m.jsx)(_, {}), ' Verberg'] }) }), (0, m.jsx)('div', { id: c, className: (0, i.Z)('sidebar__content', s && 'sidebar__content--hidden'), children: (0, m.jsx)(U, { path: t, sidebar: n }) })] });
    }
    const Y = a.memo(z);
    var G = n(773),
