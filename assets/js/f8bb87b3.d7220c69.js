@@ -1,23 +1,23 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [76318],
+ [16186],
  {
-  40975: (e, t, n) => {
+  62479: (e, t, n) => {
    'use strict';
    n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(87118),
     c = n(7055),
     s = n(8657);
-   const o = { title: 'Pagination', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pagination', pagination_label: 'Pagination', description: ' ', slug: '/pagination' },
+   const o = { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: ' ', slug: '/page-number-navigation' },
     a = void 0,
-    u = { id: 'componenten/pagination/index', title: 'Pagination', description: ' ', source: '@site/docs/componenten/pagination/index.mdx', sourceDirName: 'componenten/pagination', slug: '/pagination', permalink: '/pagination', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/pagination/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Pagination', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Pagination', pagination_label: 'Pagination', description: ' ', slug: '/pagination' }, sidebar: 'componenten', previous: { title: 'Page Header', permalink: '/page-header' }, next: { title: 'Paragraph', permalink: '/paragraph' } },
+    u = { id: 'componenten/page-number-navigation/index', title: 'Page Number Navigation', description: ' ', source: '@site/docs/componenten/page-number-navigation/index.mdx', sourceDirName: 'componenten/page-number-navigation', slug: '/page-number-navigation', permalink: '/page-number-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-number-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: ' ', slug: '/page-number-navigation' }, sidebar: 'componenten', previous: { title: 'Page Header', permalink: '/page-header' }, next: { title: 'Paragraph', permalink: '/paragraph' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Pagination',
+    d = 'Page Number Navigation',
     j = '',
     y = 106,
     g = c.find((e) => e.number === y);
@@ -68,7 +68,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => _, vM: () => N, W: () => w, Rv: () => A });
+   n.d(t, { cN: () => N, vM: () => w, W: () => _, Rv: () => A });
    var r = n(95674),
     i = n(4814),
     c = n(39854),
@@ -116,7 +116,7 @@
      return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var x = n(14669);
-   const _ = (e) => {
+   const N = (e) => {
      let { component: t, headingLevel: n } = e;
      const c = t && t.projects.filter((e) => x.e9.includes(e.id)),
       s = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
@@ -146,7 +146,7 @@
       })
      );
     },
-    w = (e) => {
+    _ = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && i.length
@@ -205,7 +205,7 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    N = (e) => {
+    w = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;

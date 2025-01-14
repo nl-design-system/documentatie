@@ -3,15 +3,15 @@
  {
   39480: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => l, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(87118),
     c = n(7055),
     s = n(8657);
    const o = { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', slug: '/page-header' },
     a = void 0,
-    l = { id: 'componenten/page-header/index', title: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', source: '@site/docs/componenten/page-header/index.mdx', sourceDirName: 'componenten/page-header', slug: '/page-header', permalink: '/page-header', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-header/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', slug: '/page-header' }, sidebar: 'componenten', previous: { title: 'Page Footer', permalink: '/page-footer' }, next: { title: 'Pagination', permalink: '/pagination' } },
-    u = {},
+    u = { id: 'componenten/page-header/index', title: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', source: '@site/docs/componenten/page-header/index.mdx', sourceDirName: 'componenten/page-header', slug: '/page-header', permalink: '/page-header', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-header/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', slug: '/page-header' }, sidebar: 'componenten', previous: { title: 'Page Footer', permalink: '/page-footer' }, next: { title: 'Page Number Navigation', permalink: '/page-number-navigation' } },
+    l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
@@ -46,7 +46,7 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => o, um: () => l, wu: () => s });
+   n.d(t, { Zb: () => a, aY: () => o, um: () => u, wu: () => s });
    var r = n(31916),
     i = n(4814),
     c = n(52676);
@@ -57,40 +57,40 @@
     o = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
     a = (e) => {
      let { href: t, appearance: n, className: s, component: o = 'div', children: a } = e;
-     const l = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
-      u = (0, c.jsx)(l, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, s), children: a });
-     return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: u }) : u;
+     const u = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
+      l = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, s), children: a });
+     return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: l }) : l;
     },
-    l = (e) => {
+    u = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, c.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => _, vM: () => N, W: () => w, Rv: () => A });
+   n.d(t, { cN: () => _, vM: () => w, W: () => N, Rv: () => A });
    var r = n(95674),
     i = n(4814),
     c = n(39854),
     s = n(7522),
     o = n(62559),
     a = n(79734),
-    l = n(32636),
-    u = n(52676);
-   const h = { figma: (0, u.jsx)(c.Z, {}), github: (0, u.jsx)(s.Z, {}), npm: (0, u.jsx)(o.Z, {}), storybook: (0, u.jsx)(a.Z, {}) },
+    u = n(32636),
+    l = n(52676);
+   const h = { figma: (0, l.jsx)(c.Z, {}), github: (0, l.jsx)(s.Z, {}), npm: (0, l.jsx)(o.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
     d = (e) => {
      let { brand: t } = e;
-     return (0, u.jsx)(r.JO, { children: h[t] || (0, u.jsx)(l.Z, {}) });
+     return (0, l.jsx)(r.JO, { children: h[t] || (0, l.jsx)(u.Z, {}) });
     };
    var j = n(35038),
     y = n(76193);
    const g = (e) => {
     let { checked: t, unchecked: r } = e;
-    return (0, u.jsx)(y.Z, {
-     fallback: (0, u.jsx)(u.Fragment, {}),
+    return (0, l.jsx)(y.Z, {
+     fallback: (0, l.jsx)(l.Fragment, {}),
      children: () => {
       const e = n(79333).YE;
-      return (0, u.jsx)(e, {
+      return (0, l.jsx)(e, {
        radius: 20,
        arcWidth: 4,
        data: [
@@ -106,14 +106,14 @@
    var m = n(23355),
     p = n(41757),
     v = n(31916),
-    k = n(25953);
-   const b = (e) => {
+    b = n(25953);
+   const k = (e) => {
      let { children: t } = e;
-     return (0, u.jsx)('ul', { className: 'task-list', children: t });
+     return (0, l.jsx)('ul', { className: 'task-list', children: t });
     },
     f = (e) => {
      let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, u.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, u.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, u.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var x = n(14669);
    const _ = (e) => {
@@ -122,7 +122,7 @@
       s = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
-      (0, u.jsx)(r.a2, {
+      (0, l.jsx)(r.a2, {
        appearance: '',
        sections: s.map((e) => ({
         className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
@@ -131,26 +131,26 @@
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
         body:
          e &&
-         (0, u.jsxs)(u.Fragment, {
+         (0, l.jsxs)(l.Fragment, {
           children: [
-           (0, u.jsx)(b, {
+           (0, l.jsx)(k, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, u.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
+             return (0, l.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
-           (0, u.jsx)(r.nv, { children: (0, u.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
+           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
           ],
          }),
        })),
       })
      );
     },
-    w = (e) => {
+    N = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && i.length
-      ? (0, u.jsx)(j.um, {
+      ? (0, l.jsx)(j.um, {
          appearance: 'large',
          className: 'implementation-card-group',
          children: i
@@ -176,22 +176,22 @@
              let { name: t, value: n } = e;
              return c.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
-           return (0, u.jsx)(
+           return (0, l.jsx)(
             j.Zb,
             {
              className: 'implementation-card',
-             children: (0, u.jsxs)(j.aY, {
+             children: (0, l.jsxs)(j.aY, {
               children: [
-               (0, u.jsx)(r.X6, { level: n, children: e.title }),
-               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, l.jsx)(r.X6, { level: n, children: e.title }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                s.length > 0 &&
-                (0, u.jsxs)(u.Fragment, {
+                (0, l.jsxs)(l.Fragment, {
                  children: [
-                  (0, u.jsx)(r.X6, { level: n + 1, children: 'Component gebruiken?' }),
-                  (0, u.jsx)(r.Mc, {
+                  (0, l.jsx)(r.X6, { level: n + 1, children: 'Component gebruiken?' }),
+                  (0, l.jsx)(r.Mc, {
                    children: s.map((e) => {
                     const t = c.get(e.name);
-                    return t ? (0, u.jsxs)(r.k7, { href: e.value, children: [(0, u.jsx)(d, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, u.jsx)(u.Fragment, {});
+                    return t ? (0, l.jsxs)(r.k7, { href: e.value, children: [(0, l.jsx)(d, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, l.jsx)(l.Fragment, {});
                    }),
                   }),
                  ],
@@ -203,18 +203,18 @@
            );
           }),
         })
-      : (0, u.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
+      : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    N = (e) => {
+    w = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, u.jsxs)(r.QI, { children: [i ? (0, u.jsxs)(r.AS, { children: ['Vul de ', (0, u.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, u.jsxs)(r.AS, { children: [(0, u.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, u.jsxs)(r.AS, { children: ['Draag bij aan de voortang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, u.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, u.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.QI, { children: [i ? (0, l.jsxs)(r.AS, { children: ['Vul de ', (0, l.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.AS, { children: [(0, l.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.AS, { children: ['Draag bij aan de voortang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
     A = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(m.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(p.V, { level: n, suffix: c && (0, l.jsx)(m.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
