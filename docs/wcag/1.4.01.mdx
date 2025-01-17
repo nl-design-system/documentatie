@@ -28,9 +28,64 @@ import Summary from "./summaries/_1.4.1-summary.md";
 
 <Summary />
 
-## Opgelet
+<h2>Gerelateerde NL Design System-richtlijnen</h2>
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Stijl - Kleuren: [Vertrouw niet alleen op kleur](l/richtlijnen/stijl/kleuren/niet-kleur-alleen)
+- Formulieren - Foutmeldingen: [Schrijf een foutmelding uit in tekst](/richtlijnen/formulieren/foutmeldingen/duidelijk/)
+- Formulieren -Visueel ontwerp: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur)
+
+## Hoe te testen
+
+Bekijk de pagina en controleer of er betekenis aan kleur is gegeven.
+
+Let bijvoorbeeld op:
+
+- het aangeven van foutmeldingen bij formulieren, alleen een rood randje is niet voldoende;
+- de weergave van data in grafieken;
+- de weergave van links in de tekst, deze moet liefst onderstreept zijn;
+- het aangeven van een status (succes, waarschuwing, fout) in een statusmelding, alleen een groene, gele of rode achtergrond is onvoldoende, er moet ook in tekst saat wat de status is;
+- verwijzingen naar kleur in de tekst, bijvoorbeeld 'druk op de groene knop om door te gaan' is voor blinde en kleurenblinde bezoekers een probleem.
+
+Het is voldoende als de informatie ergens anders op de pagina makkelijk vindbaar is en goed wordt uitgelegd, of als de betekenis volgt uit het gebruik of plek van een element. Een link in een menu hoeft bijvoorbeeld niet onderstreept te zijn.
+
+Het kan helpen met testen om de pagina met een grijsfilter te bekijken, zodat alle kleur verdwijnt. Is de inhoud dan nog steeds te begrijpen?
+
+Grijsfilters:
+
+- [Grayscale bookmarklet](https://pauljadam.com/bookmarklets/) van Paul J. Adams
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), app voor iOS en Mac
+- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter), website waar je door het invoeren van een url de pagina kunt testen.
+
+Ook via de browser kun je de kleur uit een pagina verwijderen:
+
+- Voor Firefox: Open de inspector, kies de "Accessibility"-tab en selecteer bij Simulate Achromatopsia.
+- Voor Chrome: Open de inspector, selecteer de console, klik op de drie puntjes aan de linkerkant, kies Rendering en selecteer helemaal onderaan bij Emulate vision deficiencies "Achromatopsia".
+
+## Veelgemaakte fouten
+
+### Aangeven van een fout met alleen een rood randje
+
+Een rood randje rondom een formulierveld dat verplicht is, maar niet is ingevuld, geeft onvoldoende informatie.
+Gebruikers die kleurenblind zijn kunnen deze informatie missen.
+Schrijf daarom ook altijd een duidelijke foutmelding uit in tekst bij een formulierveld.
+
+Meer informatie over foutmeldingen aangeven in onze blogpost over Toegankelijke foutmeldingen in formulieren [Hoe geef ik aan of een vraag niet of niet goed is ingevuld](/blog/toegankelijke-foutmeldingen-formulieren/#hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld).
+
+### Weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken
+
+Een veelgemaakte fout is het weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken.
+Iemand die slechtziend is of kleurenblind, weet dan niet welk lijntje bij welke data hoort.
+
+In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De grafiek links laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De weergave rechts is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
+
+![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
+
+Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld stippeltjes of streepjes.
+
+In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn.
+![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde maar verschillend gestreepte lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
+
+De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
 
 ## Gebruikersonderzoek
 
