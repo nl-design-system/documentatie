@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.3f2a8047.css" />
-  <script src="/assets/js/runtime~main.db07ca55.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.7c0fd97c.js" defer="defer"></script>
   <script src="/assets/js/main.bc22c0ce.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -281,8 +281,46 @@
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
               <p>Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.</p>
               <p>Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2>Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Stijl - Kleuren: <a href="l/richtlijnen/stijl/kleuren/niet-kleur-alleen" class="utrecht-link utrecht-link--html-a">Vertrouw niet alleen op kleur</a></li>
+               <li>Formulieren - Foutmeldingen: <a href="/richtlijnen/formulieren/foutmeldingen/duidelijk/" class="utrecht-link utrecht-link--html-a">Schrijf een foutmelding uit in tekst</a></li>
+               <li>Formulieren -Visueel ontwerp: <a href="/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur" class="utrecht-link utrecht-link--html-a">Geef fouten weer met meer dan alleen kleur</a></li>
+              </ul>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Bekijk de pagina en controleer of er betekenis aan kleur is gegeven.</p>
+              <p>Let bijvoorbeeld op:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>het aangeven van foutmeldingen bij formulieren, alleen een rood randje is niet voldoende;</li>
+               <li>de weergave van data in grafieken;</li>
+               <li>de weergave van links in de tekst, deze moet liefst onderstreept zijn;</li>
+               <li>het aangeven van een status (succes, waarschuwing, fout) in een statusmelding, alleen een groene, gele of rode achtergrond is onvoldoende, er moet ook in tekst saat wat de status is;</li>
+               <li>verwijzingen naar kleur in de tekst, bijvoorbeeld &#x27;druk op de groene knop om door te gaan&#x27; is voor blinde en kleurenblinde bezoekers een probleem.</li>
+              </ul>
+              <p>Het is voldoende als de informatie ergens anders op de pagina makkelijk vindbaar is en goed wordt uitgelegd, of als de betekenis volgt uit het gebruik of plek van een element. Een link in een menu hoeft bijvoorbeeld niet onderstreept te zijn.</p>
+              <p>Het kan helpen met testen om de pagina met een grijsfilter te bekijken, zodat alle kleur verdwijnt. Is de inhoud dan nog steeds te begrijpen?</p>
+              <p>Grijsfilters:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://pauljadam.com/bookmarklets/" class="utrecht-link utrecht-link--html-a">Grayscale bookmarklet</a> van Paul J. Adams</li>
+               <li><a href="https://michelf.ca/projects/sim-daltonism/" class="utrecht-link utrecht-link--html-a">Sim Daltonism</a>, app voor iOS en Mac</li>
+               <li><a href="https://www.toptal.com/designers/colorfilter" class="utrecht-link utrecht-link--html-a">Colorblind Web Page Filter</a>, website waar je door het invoeren van een url de pagina kunt testen.</li>
+              </ul>
+              <p>Ook via de browser kun je de kleur uit een pagina verwijderen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voor Firefox: Open de inspector, kies de &quot;Accessibility&quot;-tab en selecteer bij Simulate Achromatopsia.</li>
+               <li>Voor Chrome: Open de inspector, selecteer de console, klik op de drie puntjes aan de linkerkant, kies Rendering en selecteer helemaal onderaan bij Emulate vision deficiencies &quot;Achromatopsia&quot;.</li>
+              </ul>
+              <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
+              <h3 id="aangeven-van-een-fout-met-alleen-een-rood-randje" class="utrecht-heading-3">Aangeven van een fout met alleen een rood randje</h3>
+              <p>Een rood randje rondom een formulierveld dat verplicht is, maar niet is ingevuld, geeft onvoldoende informatie. Gebruikers die kleurenblind zijn kunnen deze informatie missen. Schrijf daarom ook altijd een duidelijke foutmelding uit in tekst bij een formulierveld.</p>
+              <p>Meer informatie over foutmeldingen aangeven in onze blogpost over Toegankelijke foutmeldingen in formulieren <a href="/blog/toegankelijke-foutmeldingen-formulieren/#hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld" class="utrecht-link utrecht-link--html-a">Hoe geef ik aan of een vraag niet of niet goed is ingevuld</a>.</p>
+              <h3 id="weergeven-van-data-in-een-grafiek-door-alleen-een-verschil-in-kleur-te-gebruiken" class="utrecht-heading-3">Weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken</h3>
+              <p>Een veelgemaakte fout is het weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken. Iemand die slechtziend is of kleurenblind, weet dan niet welk lijntje bij welke data hoort.</p>
+              <p>In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De grafiek links laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De weergave rechts is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png" alt="Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten." class="utrecht-img" /></p>
+              <p>Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld stippeltjes of streepjes.</p>
+              <p>In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn. <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png" alt="Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde maar verschillend gestreepte lijntjes en daarnaast dezelfde grafiek in grijstinten." class="utrecht-img" /></p>
+              <p>De data browsergebruik komt van <a href="https://gs.statcounter.com/browser-market-share#monthly-200901-202412" class="utrecht-link utrecht-link--html-a">statcounter.com</a>.</p>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -339,7 +377,8 @@
            <div class="tableOfContents_oNug thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#veelgemaakte-fouten" class="table-of-contents__link toc-highlight">Veelgemaakte fouten</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
