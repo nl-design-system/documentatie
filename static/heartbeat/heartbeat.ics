@@ -27,10 +27,10 @@ DTEND;TZID=Europe/Amsterdam:20240903T134500
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
 UID:118927B0-0190-4AB1-821F-BC1F62C63241
 DTSTAMP:20240710T075509Z
-LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU3Njcx
- YzAtY2M0NS00NmNjLWJkM2MtNDBiZTQ0MDRlNjZk%40thread.v2/0?context=%7b%22Tid
- %22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%2237fcbe
- 4b-14ba-4ec9-94f2-c012acb70020%22%7d
+LOCATION:https://teams.microsoft.com/l/meetup-join/19:64bdf9c755324c0d80
+ e3ef8778d62b2f@thread.tacv2/1736247814664?context=%7B%22Tid%22:%226b1d3d
+ a2-3751-4e3d-b3c9-e6784c8bad70%22,%22Oid%22:%223e0eaaef-de00-4d5f-a843-9
+ 4041f62ecc9%22%7D
 DESCRIPTION:In de Heartbeat vertelt het kernteam van NL Design System el
  ke twee weken wat de laatste stand van zaken is. Daarnaast laten we orga
  nisaties aan het woord die met/aan het NL Design System werken.\n\nDe ve
@@ -39,15 +39,14 @@ DESCRIPTION:In de Heartbeat vertelt het kernteam van NL Design System el
  sessie dezelfde\, vaste\, vergaderlink:\n_______________________________
  _________________________________________________\nMicrosoft Teams-verga
  dering\nNeem deel via uw computer of mobiele app\nKlik hier om aan de ve
- rgadering deel te nemen https://teams.microsoft.com/l/meetup-join/19%3am
- eeting_ZTU3NjcxYzAtY2M0NS00NmNjLWJkM2MtNDBiZTQ0MDRlNjZk%40thread.v2/0?co
- ntext=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid
- %22%3a%2237fcbe4b-14ba-4ec9-94f2-c012acb70020%22%7d\n\n
-X-APPLE-CREATOR-IDENTITY:com.apple.calendar
+ rgadering deel te nemen https://teams.microsoft.com/l/meetup-join/19:64b
+ df9c755324c0d80e3ef8778d62b2f@thread.tacv2/1736247814664?context=%7B%22T
+ id%22:%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22,%22Oid%22:%223e0eaaef-d
+ e00-4d5f-a843-94041f62ecc9%22%7D\n\n
 SEQUENCE:5
 SUMMARY:Heartbeat - NL Design System
 DTSTART;TZID=Europe/Amsterdam:20240903T130000
-LAST-MODIFIED:20240710T075507Z
+LAST-MODIFIED:20250121T075507Z
 CREATED:20240709T143910Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU
 BEGIN:VALARM
