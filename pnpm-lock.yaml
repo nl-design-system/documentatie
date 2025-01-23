@@ -270,6 +270,8 @@ importers:
 
   docs: {}
 
+  packages/archimate: {}
+
   packages/nlds-design-tokens:
     dependencies:
       '@fontsource/fira-sans':
