@@ -16,15 +16,15 @@
    }
   },
   50872: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => g, contentTitle: () => m, default: () => y, frontMatter: () => u, metadata: () => h, toc: () => v });
+   t.r(n), t.d(n, { assets: () => g, contentTitle: () => u, default: () => j, frontMatter: () => m, metadata: () => h, toc: () => v });
    var o = t(52676),
     r = t(87118),
     l = t(49824),
     s = t(43599),
     a = t(40761);
    function i(e) {
-    const n = { form: 'form', h2: 'h2', h3: 'h3', p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Info boven het form element.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: 'Uw gegevens' }), (0, o.jsx)(n.p, { children: 'Stap 2 van 3' }), (0, o.jsx)(n.form, { children: '[... inhoud formulier \u2026]' })] }) }) }), '\n', (0, o.jsx)(a.X, { appearance: 'dont', title: 'Info binnen het formulier.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: 'Uw gegevens' }), (0, o.jsxs)(n.form, { children: [(0, o.jsx)(n.h3, { children: 'Stap 2 van 3' }), '[... inhoud formulier \u2026]'] })] }) }) })] });
+    const n = { form: 'form', h2: 'h2', h3: 'h3', p: 'p', span: 'span', ...(0, r.a)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Info boven het form element.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: 'Uw gegevens' }), (0, o.jsx)(n.p, { children: 'Stap 2 van 3' }), (0, o.jsx)(n.form, { children: '[... inhoud formulier \u2026]' })] }) }) }), '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'De tekst van de stap opnemen in het kopje, boven het formulier.', description: 'En deze tekst visueel op een andere regel plaatsen. ', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.h2, { children: [(0, o.jsx)(n.span, { class: 'progress-indicator', children: 'Stap 2 van 3' }), 'Uw gegevens'] }), (0, o.jsx)(n.form, { children: '[... inhoud formulier \u2026]' })] }) }) }), '\n', (0, o.jsx)(a.X, { appearance: 'dont', title: 'Info binnen het formulier.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: 'Uw gegevens' }), (0, o.jsxs)(n.form, { children: [(0, o.jsx)(n.h3, { children: 'Stap 2 van 3' }), '[... inhoud formulier \u2026]'] })] }) }) })] });
    }
    function c(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
@@ -38,15 +38,15 @@
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
     return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(d, { ...e }) }) : d(e);
    }
-   const u = { title: 'Plaats de informatie over waar de gebruiker is in de stappen boven het formulier \xb7 Meerdere stappen in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing voortgang stappen', pagination_label: 'Plaatsing voortgang stappen', description: 'Richtlijnen over positie van de formulier voortgang.', slug: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', keywords: ['labels', 'formulier', 'design', 'code'] },
-    m = void 0,
+   const m = { title: 'Plaats de informatie over waar de gebruiker is in de stappen boven het formulier \xb7 Meerdere stappen in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing voortgang stappen', pagination_label: 'Plaatsing voortgang stappen', description: 'Richtlijnen over positie van de formulier voortgang.', slug: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', keywords: ['labels', 'formulier', 'design', 'code'] },
+    u = void 0,
     h = { id: 'richtlijnen/formulieren/multistep/location/README', title: 'Plaats de informatie over waar de gebruiker is in de stappen boven het formulier \xb7 Meerdere stappen in een formulier \xb7 Richtlijnen', description: 'Richtlijnen over positie van de formulier voortgang.', source: '@site/docs/richtlijnen/formulieren/multistep/2-location/README.mdx', sourceDirName: 'richtlijnen/formulieren/multistep/2-location', slug: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', permalink: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/multistep/2-location/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Plaats de informatie over waar de gebruiker is in de stappen boven het formulier \xb7 Meerdere stappen in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Plaatsing voortgang stappen', pagination_label: 'Plaatsing voortgang stappen', description: 'Richtlijnen over positie van de formulier voortgang.', slug: '/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Voortgang stappen tonen', permalink: '/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen' }, next: { title: 'Consistente navigatie', permalink: '/richtlijnen/formulieren/meerdere-stappen/consistente-benaming' } },
     g = {},
     v = [];
    function b(e) {
     return (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', (0, o.jsx)(p, {}), '\n', (0, o.jsx)(c, {}), '\n', (0, o.jsx)(l.ZP, {})] });
    }
-   function y(e = {}) {
+   function j(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
     return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(b, { ...e }) }) : b();
    }
@@ -62,28 +62,28 @@
     c = t(85722),
     d = t(6374),
     p = t(75271),
-    u = t(60027),
-    m = t(52676);
+    m = t(60027),
+    u = t(52676);
    const h = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(r.BB, { className: (0, l.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, m.jsx)(r.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
+    return (0, u.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(r.BB, { className: (0, l.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, u.jsx)(r.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
    h.displayName = 'ParagraphContainer';
    const g = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(r.BB, { className: (0, l.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
+    return (0, u.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(r.BB, { className: (0, l.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
    g.displayName = 'DocumentContainer';
    const v = (e) => {
     let { children: n } = e;
-    return (0, m.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: n });
+    return (0, u.jsx)(r.Tg, { className: 'nlds-canvas__example-surface', children: n });
    };
    v.displayName = 'SurfaceContainer';
    const b = (e) => {
-    let { code: n, copy: t = !0, defaultExpandedCode: b = !1, displayCode: y = !0, children: f, container: j = 'document', language: x, designTokens: k } = e;
-    const _ = 'function' == typeof f ? f() : f,
+    let { code: n, copy: t = !0, defaultExpandedCode: b = !1, displayCode: j = !0, children: y, container: f = 'document', language: x, designTokens: k } = e;
+    const _ = 'function' == typeof y ? y() : y,
      N = 'function' == typeof n ? n() : (0, p.isValidElement)(n) ? n : void 0,
-     w = 'string' == typeof n ? n : u.uS(N || _),
+     w = 'string' == typeof n ? n : m.uS(N || _),
      [C, P] = (0, p.useState)(w),
      [Z, S] = (0, p.useState)(b);
     (0, p.useEffect)(() => {
@@ -95,15 +95,15 @@
     const z = (0, p.useId)();
     let D = p.Fragment;
     return (
-     'paragraph' === j ? (D = h) : 'document' === j ? (D = g) : 'surface' === j && (D = v),
-     (0, m.jsxs)('div', {
+     'paragraph' === f ? (D = h) : 'document' === f ? (D = g) : 'surface' === f && (D = v),
+     (0, u.jsxs)('div', {
       className: (0, l.Z)('nlds-canvas'),
       children: [
-       _ && (0, m.jsx)('div', { className: (0, l.Z)('nlds-canvas__example'), children: (0, m.jsx)('div', { className: 'voorbeeld-theme', style: k, children: (0, m.jsx)(D, { children: (0, m.jsx)(r.pu, { children: _ }) }) }) }),
-       y &&
-        (0, m.jsx)('div', {
+       _ && (0, u.jsx)('div', { className: (0, l.Z)('nlds-canvas__example'), children: (0, u.jsx)('div', { className: 'voorbeeld-theme', style: k, children: (0, u.jsx)(D, { children: (0, u.jsx)(r.pu, { children: _ }) }) }) }),
+       j &&
+        (0, u.jsx)('div', {
          className: (0, l.Z)('nlds-canvas__toolbar'),
-         children: (0, m.jsx)(r.zx, {
+         children: (0, u.jsx)(r.zx, {
           className: (0, l.Z)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
@@ -114,17 +114,17 @@
           children: Z ? 'Verberg code' : 'Bekijk code',
          }),
         }),
-       y &&
-        (0, m.jsxs)('div', {
+       j &&
+        (0, u.jsxs)('div', {
          className: (0, l.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
          id: z,
          hidden: !Z,
          children: [
-          (0, m.jsx)(o.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: C, trim: !0 }),
+          (0, u.jsx)(o.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: C, trim: !0 }),
           t &&
-           (0, m.jsx)('div', {
+           (0, u.jsx)('div', {
             className: (0, l.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, m.jsx)(r.zx, {
+            children: (0, u.jsx)(r.zx, {
              className: (0, l.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -187,7 +187,7 @@
    function c(e) {
     let { lineNumber: n, syntax: t, textContent: c, trim: d } = e,
      p = c;
-    const { title: u, type: m } = (0, l.useContext)(s.n),
+    const { title: m, type: u } = (0, l.useContext)(s.n),
      h = (0, l.useId)();
     return (
      d && (p = p.trim()),
@@ -197,7 +197,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: r, getLineProps: l, getTokenProps: s } = e;
-       return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, i.jsx)(o.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': h, style: t, children: r.map((e, t) => (0, i.jsxs)('span', { ...l({ line: e }), children: [n && (0, i.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, i.jsx)('span', { ...s({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', m ? ': ' : ' ', m] }), (0, i.jsx)(o.dn, { tabIndex: 0, role: m ? 'region' : void 0, 'aria-labelledby': h, style: t, children: r.map((e, t) => (0, i.jsxs)('span', { ...l({ line: e }), children: [n && (0, i.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, i.jsx)('span', { ...s({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -214,10 +214,10 @@
    const c = (0, a.createContext)({}),
     d = (e) => {
      let { title: n, appearance: t, description: a, children: d, figure: p } = e;
-     const u = { do: 'Doen', dont: 'Niet doen' },
-      m = p ? 'figure' : 'div',
+     const m = { do: 'Doen', dont: 'Niet doen' },
+      u = p ? 'figure' : 'div',
       h = p ? 'figcaption' : 'div';
-     return (0, i.jsxs)(m, { className: (0, s.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, i.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(l.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, i.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, i.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, i.jsx)(l.nv, { children: n })] }) : (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(l.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, i.jsx)(r.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, i.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, i.jsx)(l.nv, { children: n })] }), a] }), (0, i.jsx)('div', { className: 'nlds-guideline__example', children: (0, i.jsx)(c.Provider, { value: { title: n, type: u[t] }, children: d }) })] });
+     return (0, i.jsxs)(u, { className: (0, s.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, i.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(l.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, i.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, i.jsx)('span', { className: 'nlds-guideline__title', children: m.dont })] }), (0, i.jsx)(l.nv, { children: n })] }) : (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(l.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, i.jsx)(r.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, i.jsx)('span', { className: 'nlds-guideline__title', children: m.do })] }), (0, i.jsx)(l.nv, { children: n })] }), a] }), (0, i.jsx)('div', { className: 'nlds-guideline__example', children: (0, i.jsx)(c.Provider, { value: { title: n, type: m[t] }, children: d }) })] });
     };
   },
   87118: (e, n, t) => {
