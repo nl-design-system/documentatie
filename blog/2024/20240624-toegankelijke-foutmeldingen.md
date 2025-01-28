@@ -96,7 +96,7 @@ Een keuze kan zijn: zijn de meeste velden verplicht, markeer dan de niet-verplic
 
 Wat je ook kiest, wees consequent binnen het formulier en ook binnen alle formulieren van de website en laat de gebruiker altijd boven het formulier weten hoe al dan niet verplichte velden zijn aangemerkt.
 
-Bijvoorbeeld met de tekst 'Vul alle velden in. Als een veld niet verplicht is, staat dit erbij.'
+Bijvoorbeeld met de tekst 'Vul alles in. Als iets niet verplicht is, staat dat erbij.'
 
 Lees hierover de richtlijn [Vermeld duidelijk of een veld wel of niet verplicht is
 ](/richtlijnen/formulieren/voorkom-fouten#vermeld-duidelijk-of-een-veld-verplicht-is).
