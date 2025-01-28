@@ -54,6 +54,12 @@ p + .nlds-guideline {
   margin-block-end: 16px;
 }
 
+.nlds-guideline span.progress-indicator {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 .nlds-guideline__badge--dont {
   --utrecht-paragraph-color: var(--nlds-invalid-color);
 }
