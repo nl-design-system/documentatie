@@ -741,6 +741,10 @@ abbr[title] {
   margin: 16px 0;
 }
 
+.nlds-guideline .utrecht-html p {
+  width: 25rem;
+}
+
 .docs-doc-page .utrecht-html input[type="text" i]:invalid {
   border-color: #7a8aa0;
   border-width: 1px;
