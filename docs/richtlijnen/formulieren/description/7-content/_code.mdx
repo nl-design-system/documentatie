@@ -16,7 +16,13 @@ import { Guideline } from "@site/src/components/Guideline";
             <li>Een cijfer</li>
           </ul>
         </div>
-        <input id="wachtwoord" type="password" name="nieuw-wachtwoord" aria-describedby="wachtwoord" />
+        <input
+          id="wachtwoord"
+          type="password"
+          name="nieuw-wachtwoord"
+          autocomplete="new-password"
+          aria-describedby="description-wachtwoord"
+        />
       </>
     )}
   </Canvas>
@@ -30,7 +36,13 @@ import { Guideline } from "@site/src/components/Guideline";
         <p id="description-wachtwoord">
           Je wachtwoord moet de volgende elementen bevatten: minimaal 9 karakters, een hoofdletter en een cijfer.
         </p>
-        <input id="wachtwoord" type="password" name="nieuw-wachtwoord" aria-describedby="wachtwoord" />
+        <input
+          id="wachtwoord"
+          type="password"
+          name="nieuw-wachtwoord"
+          autocomplete="new-password"
+          aria-describedby="description-wachtwoord"
+        />
       </>
     )}
   </Canvas>
