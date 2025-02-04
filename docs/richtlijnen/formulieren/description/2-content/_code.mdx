@@ -3,6 +3,8 @@
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 
+## Voorbeelden
+
 <Guideline appearance="dont" title="Een opsomming in een description.">
   <Canvas language="html">
     {() => (
@@ -45,5 +47,28 @@ import { Guideline } from "@site/src/components/Guideline";
         />
       </>
     )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Zet informatie in rich tekst boven het formulier en onder het bijbehorende kopje.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h3>Open een spaarrekening</h3>
+        <p>
+          Om een spaarrekening te openen hebben we de volgende gegevens nodig:</p>
+          <ul>
+            <li>Het nummer van je paspoort of identiteitskaart.</li>
+            <li>Je Burgerservicenummer (BSN), dit kun je vinden op je paspoort of identiteitskaart.</li>
+            <li>Je adresgegevens.</li>
+            <li>Je e-mailadres.</li>
+          </ul>
+
+        <form>
+          [het formulier]
+        </form>
+      </>
+    )}
+
   </Canvas>
 </Guideline>
