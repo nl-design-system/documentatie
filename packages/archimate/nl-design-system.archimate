@@ -15,6 +15,7 @@
     <element xsi:type="archimate:BusinessProcess" name="beheren en onderhouden van de generieke instrumenten en standaarden op het gebied van ICT" id="id-0b8c5d4750674d55971793f079edf967"/>
     <element xsi:type="archimate:BusinessObject" name="Huisstijl vastgelegd in Design Tokens JSON" id="id-a4959bd3bf934332970f7c3dcf396524"/>
     <element xsi:type="archimate:BusinessObject" name="Design Tokens definitie van component tokens" id="id-3e7f512288744fee963485c5ef7e40c2"/>
+    <element xsi:type="archimate:BusinessObject" name="Verzameling van overheidswebsites" id="id-641b52715f914f099d1aac279ddb7df6"/>
   </folder>
   <folder name="Application" id="id-c1d2e75ff7da47ffbdc91d18d42cdcc3" type="application"/>
   <folder name="Technology &amp; Physical" id="id-23c6eec27f8c49dd8fb253613904f943" type="technology">
@@ -171,6 +172,9 @@ woord.</documentation>
       <documentation>https://www.noraonline.nl/wiki/Verwijs_naar_de_bron</documentation>
     </element>
     <element xsi:type="archimate:Assessment" name="Design Tokens JSON bevat veel formaten om conversies te voorkomen die outdated raken, zodat verwijzen naar de bron kan" id="id-c0de1be96d9d45679e46f0e3cd612d37"/>
+    <element xsi:type="archimate:Principle" name="Bevorder hergebruik van gegevens" id="id-44b990bd98274b32b1d01cd5af954d6c">
+      <documentation>https://www.noraonline.nl/wiki/Bevorder_hergebruik_van_gegevens</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-ff2cee76af514379ad024733fec480d3" type="implementation_migration">
     <element xsi:type="archimate:WorkPackage" name="Project om thema te maken voor alle decentrale overheden" id="id-9e1d78e84fe14eea87d25d818dbdd8d4"/>
@@ -352,7 +356,7 @@ woord.</documentation>
           <bounds x="276" y="72" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-83d2bf08531c49a3bea6bf4a4a2a7509" targetConnections="id-3ee043faf7f2462ca45aa1086261c565" archimateElement="id-a5f5d1ca3f7f4d0f8e2430673b9aa239">
-          <bounds x="276" y="192" width="120" height="55"/>
+          <bounds x="276" y="192" width="157" height="61"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-89095f5b064445608c04cbde8bd9e9dc" targetConnections="id-19fc7c3cf67746a2af3a67628f590189" archimateElement="id-6721f0fc41e54f4187b83b2bba5d376f">
           <bounds x="276" y="264" width="157" height="73"/>
@@ -882,7 +886,7 @@ woord.</documentation>
         <sourceConnection xsi:type="archimate:Connection" id="id-04f5bbce0ac74905b128b120d4d1a27c" source="id-5253ddd848f94c5d9958e56d1f70e8bc" target="id-df34e39f08c147ddba84de1e34f759c3" archimateRelationship="id-ff7b21afa06240b5a4f89c65f2cd8a76"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-82825f60e4dd4c898173bacb8b04efa5" archimateElement="id-810ae427e0b54c7b85a83233cd507212">
-        <bounds x="516" y="552" width="120" height="55"/>
+        <bounds x="492" y="540" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-5b77bf3a74924df4a7e5f82752768125" source="id-82825f60e4dd4c898173bacb8b04efa5" target="id-88bc525b00cf42ff809e6812aa6bf728" archimateRelationship="id-1a2c72873b89472ca93a0e2eeeebce9f"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-5e185609cc3f469db2fd536be8e2e9d6" archimateElement="id-aa812b0a99ad46fb87ddc01295a0dc08">
@@ -941,6 +945,12 @@ woord.</documentation>
         <bounds x="457" y="12" width="192" height="97"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-38c282def627417ba4bb05529da7fd04" source="id-3adb1b31c1cd4666aad140b8f7892f3f" target="id-0eb0bc5a75184dc193b0a5fde8cfc28a" archimateRelationship="id-a10d0e091ed84badb1cfa8b5455f43a6"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-83c85491d4764f17939f282f7f87fffe" source="id-3adb1b31c1cd4666aad140b8f7892f3f" target="id-04586da79a4947219aae5cbda61bfc8d" archimateRelationship="id-43c6c17c626b4a2f9b7a54d8741a66b3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f90b3217d1614752bea4021695f8f5df" archimateElement="id-641b52715f914f099d1aac279ddb7df6">
+        <bounds x="372" y="462" width="145" height="67"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5d8caf9e8d8843359148bfcb1b45f1d1" archimateElement="id-44b990bd98274b32b1d01cd5af954d6c">
+        <bounds x="122" y="517" width="120" height="55"/>
       </child>
     </element>
   </folder>
