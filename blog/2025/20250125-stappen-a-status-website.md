@@ -7,10 +7,10 @@ authors:
     url: https://www.linkedin.com/in/rianrietveld/
 tags: [A status, toegankelijkheid, toegankelijkheidsverklaring]
 hide_table_of_contents: false
-date: 2025-01-15
+date: 2025-02-09
 ---
 
-Stappenplan voor de ontwikkeling van een toegankelijk webproject met het NL Design System. We nemen je aan de hand mee in het hele proces van begin tot eind, en vertellen je hoe het NL Design Systeem in combinatie met de richtlijnen voor toegankelijkheid je hierbij kan helpen.
+Stappenplan voor de ontwikkeling van een toegankelijk webproject met het NL Design System. We nemen je aan de hand mee in het hele proces van begin tot eind, en vertellen je hoe het NL Design System in combinatie met de richtlijnen voor toegankelijkheid je hierbij kan helpen.
 
 <!-- truncate -->
 
@@ -34,7 +34,7 @@ Heeft de organisatie een wettelijke verplichting om een toegankelijke website te
 
 ### WCAG en NL Design System richtlijnen
 
-Met de [Web Content Accessibility Guidelines](https://nldesignsystem.nl/wcag) (WCAG) meten we de toegankelijkheid van een website voor bezoekers met een beperking. Leg van te voren vast dat je wilt gaan voldoen aan WCAG, versie 2.2, niveau AA. Dan ben je voor de komende jaren verzekerd dat het project voldoet aan de meest recente richtlijnen voor toegankelijkheid.
+Met de [Web Content Accessibility Guidelines](https://nldesignsystem.nl/wcag) (WCAG) meten we de toegankelijkheid van een website voor mensen met een beperking. Leg van tevoren vast dat je wilt gaan voldoen aan WCAG, versie 2.2, niveau AA. Dan ben je voor de komende jaren verzekerd dat het project voldoet aan de meest recente richtlijnen voor toegankelijkheid.
 
 Zijn er uitzonderingen op deze richtlijnen, zoals het gebruik van een navigatiekaart? Leg dit ook van tevoren vast en denk alvast na over toegankelijke alternatieven.
 
@@ -50,7 +50,7 @@ Huur je een extern webbureau in, onderzoek dan of ze voldoende kennis en ervarin
 
 ### Train je team
 
-Zorg voor goede training van het hele team, inclusief de ontwerpers, programmeurs, contentmanagers en de tekstschrijvers. Ook als eenmaal de website online staat is het belangrijk het team getraind te houden. Contentmanagers komen en gaan. Garandeer dat mensen die content op de website plaatsen vooraf een goede training krijgt.
+Zorg voor goede training van het hele team, inclusief de ontwerpers, programmeurs, contentmanagers en de tekstschrijvers. Ook als eenmaal de website online staat is het belangrijk het team getraind te houden. Contentmanagers komen en gaan. Garandeer dat iedereen die content op de website plaatst vooraf een goede training krijgt.
 
 We geven je hier een aantal gerenommeerde opleiders: [The Internet Academy](https://www.internetacademy.nl/), [The A11Y Collective](https://www.a11y-collective.com/courses-overview/), [Swink](https://swink.nl/), [Stichting Accessibility](https://www.accessibility.nl/) en [Deque University](https://dequeuniversity.com/).
 
@@ -80,7 +80,7 @@ Voor training van het team, als vraagbaak en voor tussentijdse beoordeling van h
 
 Wat is het doel van je website? Wees hierin heel concreet. Wat is essentieel, wat zou leuk zijn maar is niet echt nodig. En zet je ego en persoonlijke voorkeur opzij, denk puur vanuit de gebruiker.
 
-Bezoek komt op je website met een doel en niet om zich te verbazen over de prachtige animaties en sliders. Hou altijd het doel op de eerste plaats en je hoeft niets steeds het wiel opnieuw uit te vinden.
+Mensen komen op je website met een doel en niet om zich te verbazen over de prachtige animaties en sliders. Hou altijd het doel op de eerste plaats en je hoeft niets steeds het wiel opnieuw uit te vinden.
 
 Onderzoek welke functionaliteit je nodig hebt en wat je wilt maken. Ook mensen met een beperking moeten je website kunnen gebruiken. Less is more. Als het heel moeilijk te gebruiken is voor mensen met een beperking, is het waarschijnlijk voor iedereen te moeilijk.
 
@@ -101,17 +101,17 @@ Daarnaast kunnen teamleden ook 'los' van elkaar e.e.a. uitzoeken. Bijvoorbeeld: 
 
 Heb je wat je wilt gaan maken goed op een rij? Dan kun je starten met het interactie-ontwerp. Hoe zorg je ervoor dat de benodigde functionaliteit uit stap 2 samenkomt in een bruikbare website?
 
-In het interactie ontwerp hebben we het nog niet over huisstijlelementen zoals kleur, typografie of fotografie maar puur over de functionaliteit.
+In het interactie-ontwerp hebben we het nog niet over huisstijlelementen zoals kleur, typografie of fotografie, maar puur over de functionaliteit.
 
-Werk nauw samen met de visueel ontwerper, de programmeur en de expert toegankelijkheid. Zijn plannen goed en ook toegankelijk te realiseren? Of kunnen er beter andere keuzes worden gemaakt? Goed overleg scheelt in het latere proces heel veel tijd.
+Werk nauw samen met de visueel ontwerper, de programmeur en de specialist toegankelijkheid. Zijn plannen goed en ook toegankelijk te realiseren? Of kunnen er beter andere keuzes worden gemaakt? Goed overleg scheelt in het latere proces heel veel tijd.
 
-In het interactie-ontwerp neem je op hoe een bezoeker door de website kan navigeren, wanneer je bepaalde informatie aanbiedt en hoe men met jouw organisatie kan communiceren'. Wat komt er in de hoofd- of zijnavigatie? Zijn er verschillende manieren om inhoud te vinden, bijvoorbeeld via de hoofdnavigatie en de zoekoptie? Hoe zijn de tekstpagina's opgebouwd? Hoe zijn de formulieren samengesteld?
+In het interactie-ontwerp neem je op hoe gebruikers door de website kunnen navigeren, wanneer je bepaalde informatie aanbiedt en hoe men met jouw organisatie kan communiceren'. Wat komt er in de hoofd- of subnavigatie? Zijn er verschillende manieren om inhoud te vinden, bijvoorbeeld via de hoofdnavigatie en de zoekfunctionaliteit? Hoe zijn de tekstpagina's opgebouwd? Hoe zijn de formulieren samengesteld?
 
 Bij onze [richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren) is al veel uitgewerkt. Bijvoorbeeld over de plaatsing van labels, invoervelden en knoppen. Hoe je een [meerstappenformulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen/) op kan zetten en hoe [feedback te geven op fouten](https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/).
 
 Denk na over alternatieven voor ontoegankelijke functionaliteit. Hoe vergroot je een kaart of versleep je een element? Moet je een mobiel schudden voor een refresh? Niet iedereen heeft twee vingers of kan een hand gebruiken.
 
-Onze [WCAG-pagina's](https://nldesignsystem.nl/wcag) beschrijven wat van belang is bij het interactie ontwerp, zoals onder andere:
+Onze [WCAG-pagina's](https://nldesignsystem.nl/wcag) beschrijven wat van belang is bij het interactie-ontwerp, zoals onder andere:
 
 - Maak de inhoud een logisch verhaal als je [van boven naar beneden leest](https://nldesignsystem.nl/wcag/1.3.2).
 - Zet de [navigatie op dezelfde plek](https://nldesignsystem.nl/wcag/3.2.3) op elke pagina, en de onderdelen in dezelfde volgorde.
@@ -123,7 +123,7 @@ Onze [WCAG-pagina's](https://nldesignsystem.nl/wcag) beschrijven wat van belang 
 - Reserveer plek voor [foutmeldingen](https://nldesignsystem.nl/wcag/3.3.1) en [descriptions](https://nldesignsystem.nl/wcag/3.3.3) en [statusberichten.](https://nldesignsystem.nl/wcag/4.1.3)
 - Denk na over [tijdslimieten](https://nldesignsystem.nl/wcag/2.2.3) bij het invullen van formulieren, hoe geef je die aan.
 - Voorkom [onverwacht gedrag](https://nldesignsystem.nl/wcag/3.2.1/), bijvoorbeeld bij filters of formulieren.
-- Zorg voor [meerdere manieren](https://nldesignsystem.nl/wcag/2.4.5) om content te vinden, bijvoorbeeld via een hoofdmenu, de zoekfunctie, informatie en links in de footer, een broodkruimelpad of een sitemap.
+- Zorg voor [meerdere manieren](https://nldesignsystem.nl/wcag/2.4.5) om content te vinden, bijvoorbeeld via een hoofdnavigatie, de zoekfunctionaliteit, informatie en links in de footer, een broodkruimelpad of een sitemap.
 - Help de gebruiker zo goed als het kan de taak te vervullen op je website. Zorg ervoor dat ze [gemakkelijk om hulp kunnen vragen](https://nldesignsystem.nl/wcag/3.3.5) als ze er niet uitkomen.
 - Maak het [makkelijk om veilig in te loggen](https://nldesignsystem.nl/wcag/3.3.8). Voorkom captcha's en rekensommen. Sta copy/paste van een wachtwoord toe, zodat een gebruiker een wachtwoordmanager kan gebruiken.
 
@@ -147,7 +147,7 @@ Belangrijk om in het visueel ontwerp aan WCAG te voldoen is onder andere:
 
 - Zorg voor een voldoende [kleurcontrast tussen tekst en achtergrond](https://nldesignsystem.nl/wcag/1.4.3) zodat je ook je bezoek ouder dan 50 jaar de tekst kan lezen.
 - Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visuele betekenis hebben. Zoals [formulierelementen en iconen](https://nldesignsystem.nl/wcag/1.4.11).
-- Geef [geen betekenis aan kleur](https://nldesignsystem.nl/wcag/1.4.1), blinde en kleurenblinde bezoekers kunnen deze betekenis missen.
+- Zorg ervoor dat [kleur niet het enige visuele middel is om informatie over te brengen], blinde en kleurenblinde mensen kunnen deze betekenis missen.
 - Ontwerp naast een stijl voor hover ook een [stijl voor de toetsenbordfocus](https://nldesignsystem.nl/wcag/2.4.13).
 - Zorg ervoor dat ook mensen [met dikke vingers een knop kunnen aanklikken](https://nldesignsystem.nl/wcag/2.5.8).
 
@@ -187,13 +187,13 @@ Programmeurs en ontwerpers kunnen gebruikmaken van het NL Design System om een w
 
 De documentatie bij de [componenten van het NL Design System](https://nldesignsystem.nl/componenten/) beschrijft hoe een component is opgebouwd en aan welke acceptatiecriteria deze moet voldoen. Kijk bijvoorbeeld bij de [component "button](https://nldesignsystem.nl/button)".
 
-Veel van onze componenten zijn nu (2024) nog in volop ontwikkeling, maar je kunt al meekijken in de keuken.. Samen met [onze community](https://nldesignsystem.nl/community) ontwikkelen we componenten die herbruikbaar, functioneel en toegankelijk zijn en ondersteund worden door gebruikersonderzoek.
+Veel van onze componenten zijn nu (2025) nog in volop ontwikkeling, maar je kunt al meekijken in de keuken. Samen met [onze community](https://nldesignsystem.nl/community) ontwikkelen we componenten die herbruikbaar, functioneel en toegankelijk zijn en ondersteund worden door gebruikersonderzoek.
 
-Het doel is om alle componenten volgens het [estafettemodel](https://nldesignsystem.nl/handboek/estafettemodel) stap voor stap in de "Hall of Fame" te krijgen, waarna ze voor iedereen te gebruiken zijn. Zodat jouw team het wiel niet opnieuw hoeft uit te vinden.
+Het doel is om alle componenten volgens het [estafettemodel](https://nldesignsystem.nl/handboek/estafettemodel) stap voor stap in de 'Hall of Fame' te krijgen, waarna ze voor iedereen te gebruiken zijn. Zodat jouw team het wiel niet opnieuw hoeft uit te vinden.
 
 ## Stap 6: Inhoud vullen
 
-Zorg ervoor dat de contentmanagers en webschrijvers een goede training hebben gehad, en dat elke nieuwkomer een training krijgt voordat deze aan de slag gaat. Een website kan volledig goed ontworpen en gebouwd zijn, toegankelijke content is zeker net zo belangrijk
+Zorg ervoor dat de contentmanagers en webschrijvers een goede training hebben gehad, en dat elke nieuwkomer een training krijgt voordat deze aan de slag gaat. Een website kan volledig goed ontworpen en gebouwd zijn, toegankelijke content is zeker net zo belangrijk.
 
 De contentmanagers moeten het mandaat hebben om plaatsing van ontoegankelijke digitale documenten te weigeren. Ook al staat de burgemeester er persoonlijk op. Alles wat op de website komt, moet toegankelijk zijn.
 
@@ -201,37 +201,41 @@ WCAG-succescriteria voor de content zijn bijvoorbeeld:
 
 - Beschrijf met koppen de inhoud die eronder staat, maak de [koppenstructuur betekenisvol](https://nldesignsystem.nl/wcag/2.4.10). Gebruik kopen niet alleen om tekst vet en groot te maken.
 - Geef afbeeldingen een [goede alternatieve tekst.](https://nldesignsystem.nl/wcag/1.1.1)
-- Voeg je video? Zorg dan voor [ondertiteling](https://nldesignsystem.nl/wcag/1.2.2) zodat dove bezoekers de inhoud ook kunnen volgen
-- Schrijf duidelijk, betekenisvolle [linkteksten](https://nldesignsystem.nl/wcag/2.4.4) en vermijdt "klik hier".
+- Voeg je video toe? Zorg dan voor [ondertiteling](https://nldesignsystem.nl/wcag/1.2.2) zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen,
+- Schrijf duidelijk, betekenisvolle [linkteksten](https://nldesignsystem.nl/wcag/2.4.4) en vermijdt 'klik hier'.
 
 ## Stap 7: Eindtest met gebruikers
 
-Test je website na de bouw en het vullen van de inhoud met gebruikers, ook met gebruikers met een beperking.
+Is je website gebouwd en gevuld met inhoud? Test dan nogmaals met gebruikers. Betrek mensen met en zonder beperking
 
-Het is een misverstand dat testen met gebruikers met een beperking hetzelfde is als testen op toegankelijkheid. Je kunt pas testen met deze gebruikers als de site helemaal toegankelijk is en voldoet aan de WCAG richtlijnen. Een blind persoon ziet niet wat ze mist. Een beperking komt niet met een handleiding. Ook deze gebruikers worstelen, net zoals gebruikers zonder beperking, met het web.
+Het is een misverstand dat testen met gebruikers met een beperking hetzelfde is als testen op toegankelijkheid. Je kunt pas testen met deze gebruikers als de site helemaal toegankelijk is en voldoet aan de WCAG-richtlijnen. Een blind persoon ziet niet wat ze mist. Een beperking komt niet met een handleiding. Ook deze mensen worstelen, net als iedereen, met het web.
 
-In deze fase testen we of gebruikers met een beperking een opdracht succesvol kunnen afronden van begin tot einde. Zoals een telefoonnummer opzoeken, een melding doen, een klacht indienen of een zwarte wollen trui in de maat M bestellen en afrekenen.
+In deze fase testen we of men een opdracht van begin tot eind succesvol kan afronden. Denk daarbij aan het opzoeken van een telefoonnummer, een melding doen, een klacht indienen of een zwarte wollen trui in de maat M bestellen én afrekenen.
 
 Pas de website aan naar aanleiding van je bevindingen.
 
-Heb je gebruikersonderzoek gedaan en wil je dat delen? Overweeg de resultaten te plaatsen gebruikersonderzoeken.nl
+Heb je gebruikersonderzoek gedaan en wil je dat delen? Overweeg de resultaten te plaatsen op [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/)
 
 ## Stap 8: Toegankelijkheidsverklaring
 
 Alles af? Gebruikerstesten verwerkt? Inhoud helemaal gevuld. Alle formulieren werken?
-Laat dan een officiële [WCAG-EM audit](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/onderzoek) doen. Liefst door een onafhankelijke partij en niet door je eigen specialist toegankelijkheid. Dit voorkomt het "[Wij van WC-eend](https://nl.wikipedia.org/wiki/Wij_van_Wc-eend_adviseren_Wc-eend)" effect. Deze audit is 3 jaar geldig.
+Laat dan een officiële [WCAG-EM audit](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/onderzoek) doen. Liefst door een onafhankelijke partij en niet door je eigen specialist toegankelijkheid. Dit voorkomt het '[Wij van WC-eend](https://nl.wikipedia.org/wiki/Wij_van_Wc-eend_adviseren_Wc-eend)' effect.
+
+Deze audit is maximaal 3 jaar geldig. Als er grote functionele veranderingen zijn is het aan te raden om eerder een nieuwe audit te laten doen.
 
 In Nederland is er een aantal onderzoeksbureaus die officiële audits verzorgen. Verwerk eventuele punten die nog uit de audit komen.
 
 Overheidsinstellingen kunnen een toegankelijkheidsverklaring aanmaken op het [Register van toegankelijkheidsverklaringen](https://www.toegankelijkheidsverklaring.nl/register).
 
-Als je dan een mooie toegankelijke website hebt opgeleverd wil je dat natuurlijk aan alle bezoekers vertellen. Dit kan op een speciale pagina op je website "Toegankelijkheid".
+Als je dan een mooie toegankelijke website hebt opgeleverd wil je dat natuurlijk aan iedereen vertellen. Dit kan op een speciale pagina op je website 'Toegankelijkheid'.
 
-Vermeld hierin :
+Vermeld hierin:
 
 - Hoe de website getest is, met een verwijzing naar het WCAG-EM rapport of met een link naar het Register van toegankelijkheidsverklaringen.
 - Welke problemen er eventueel nog zijn en wanneer die worden opgelost.
 - Hoe bezoekers contact kunnen opnemen als ze een probleem hebben bij het gebruik van de website.
+
+**Let op**: Zorg ervoor dat de klantenservice (of andere ontvanger van de klacht) ook weet wat te doen als er een melding over de toegankelijkheid van de website binnenkomt.
 
 ## Stap 9: Onderhoud
 
@@ -243,4 +247,4 @@ Laat regelmatig, bijvoorbeeld één keer per jaar, een controle uitvoeren door e
 
 Iedereen is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.
 
-We maken een website niet voor onszelf maar voor de gebruiker. Als alle gebruikers goed met je website overweg kunnen, dan pas is je doel bereikt.
+We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kunnen, dan pas is je doel bereikt.
