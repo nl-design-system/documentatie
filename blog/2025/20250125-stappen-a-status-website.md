@@ -1,13 +1,14 @@
 ---
-title: Haal in één keer de A-status voor je website in 9 stappen
-slug: 9-stappen-A-status-website
+title: Tips om in 9 stappen je A-status te halen
+slug: tips-9-stappen-A-status-website
 authors:
   - name: Rian Rietveld
-    title: Specialist webtoegankelijkheid NL Design System
+    title: Specialist webtoegankelijkheid
     url: https://www.linkedin.com/in/rianrietveld/
 tags: [A status, toegankelijkheid, toegankelijkheidsverklaring]
+image: https://github.com/nl-design-system/documentatie/blob/assets/blog-9-stappen.png
 hide_table_of_contents: false
-date: 2025-02-09
+date: 2025-02-10
 ---
 
 Stappenplan voor de ontwikkeling van een toegankelijk webproject met het NL Design System. We nemen je aan de hand mee in het hele proces van begin tot eind, en vertellen je hoe het NL Design System in combinatie met de richtlijnen voor toegankelijkheid je hierbij kan helpen.
