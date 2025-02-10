@@ -3,7 +3,7 @@
  [95394],
  {
   16825: (e) => {
-   e.exports = JSON.parse('{"label":"toegankelijkheid","permalink":"/blog/tags/toegankelijkheid","allTagsPath":"/blog/tags","count":2,"unlisted":false}');
+   e.exports = JSON.parse('{"label":"toegankelijkheid","permalink":"/blog/tags/toegankelijkheid","allTagsPath":"/blog/tags","count":3,"unlisted":false}');
   },
  },
 ]);
