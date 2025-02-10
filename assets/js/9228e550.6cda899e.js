@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [36200],
+ [54291],
  {
-  22383: (e, t, n) => {
+  16561: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => g, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     c = n(87118),
     i = n(17223),
     s = n(8657);
-   const o = { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: 'Korte belangrijke tekst die vetgedrukt wordt weergegeven.', slug: '/strong' },
+   const o = { title: 'Password Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password Input', pagination_label: 'Password Input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', slug: '/password-input' },
     a = void 0,
-    u = { id: 'componenten/strong/index', title: 'Strong', description: 'Korte belangrijke tekst die vetgedrukt wordt weergegeven.', source: '@site/docs/componenten/strong/index.mdx', sourceDirName: 'componenten/strong', slug: '/strong', permalink: '/strong', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/strong/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Strong', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Strong', pagination_label: 'Strong', description: 'Korte belangrijke tekst die vetgedrukt wordt weergegeven.', slug: '/strong' }, sidebar: 'componenten', previous: { title: 'Status Badge', permalink: '/status-badge' }, next: { title: 'Sub Heading', permalink: '/sub-heading' } },
+    u = { id: 'componenten/password-input/index', title: 'Password Input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', source: '@site/docs/componenten/password-input/index.mdx', sourceDirName: 'componenten/password-input', slug: '/password-input', permalink: '/password-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/password-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Password Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Password Input', pagination_label: 'Password Input', description: 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.', slug: '/password-input' }, sidebar: 'componenten', previous: { title: 'Paragraph', permalink: '/paragraph' }, next: { title: 'Progress Bar', permalink: '/progress-bar' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Strong',
-    j = 'Korte belangrijke tekst die vetgedrukt wordt weergegeven.',
-    y = 138,
-    g = i.find((e) => e.number === y);
-   function m(e) {
+    d = 'Password Input',
+    j = 'Afgeschermd invoerveld om een geheime tekst in te vullen, zoals een wachtwoord.',
+    y = 133,
+    m = i.find((e) => e.number === y);
+   function p(e) {
     const t = { h2: 'h2', ...(0, c.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
    }
-   function p(e = {}) {
+   function g(e = {}) {
     const { wrapper: t } = { ...(0, c.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
   },
   98507: (e, t, n) => {
@@ -68,7 +68,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => _, vM: () => N, W: () => w, Rv: () => S });
+   n.d(t, { cN: () => w, vM: () => A, W: () => _, Rv: () => N });
    var r = n(95674),
     c = n(4814),
     i = n(39854),
@@ -84,7 +84,7 @@
     };
    var j = n(35038),
     y = n(76193);
-   const g = (e) => {
+   const m = (e) => {
     let { checked: t, unchecked: r } = e;
     return (0, l.jsx)(y.Z, {
      fallback: (0, l.jsx)(l.Fragment, {}),
@@ -103,8 +103,8 @@
      },
     });
    };
-   var m = n(23355),
-    p = n(41757),
+   var p = n(23355),
+    g = n(41757),
     v = n(31916),
     b = n(25953);
    const k = (e) => {
@@ -116,7 +116,7 @@
      return (0, l.jsxs)('li', { className: (0, c.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, c.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), i, n] })] });
     };
    var x = n(14669);
-   const _ = (e) => {
+   const w = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => x.e9.includes(e.id)),
       s = i && x.e9.map((e) => i.find((t) => t.id === e)).filter(Boolean);
@@ -146,7 +146,7 @@
       })
      );
     },
-    w = (e) => {
+    _ = (e) => {
      let { component: t, headingLevel: n } = e;
      const c = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && c.length
@@ -183,7 +183,7 @@
              children: (0, l.jsxs)(j.aY, {
               children: [
                (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                s.length > 0 &&
                 (0, l.jsxs)(l.Fragment, {
                  children: [
@@ -205,16 +205,16 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    N = (e) => {
+    A = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       c = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.QI, { children: [c ? (0, l.jsxs)(r.AS, { children: ['Vul de ', (0, l.jsx)(r.rU, { href: c, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.AS, { children: [(0, l.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.AS, { children: ['Draag bij aan de voortang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    S = (e) => {
+    N = (e) => {
      let { component: t, headingLevel: n, description: c } = e;
      const i = t && x.$3[t.relayStep];
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(p.V, { level: n, suffix: i && (0, l.jsx)(m.y, { state: i }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(g.V, { level: n, suffix: i && (0, l.jsx)(p.y, { state: i }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: c })] });
     };
   },
   23355: (e, t, n) => {
