@@ -249,7 +249,7 @@ Gebruik bij een opsomming opsommingstekens. De onderdelen van de opsomming hebbe
 
 Als de opsomming uit delen van zinnen bestaat, begint elke deel met een kleine letter en eindigt met puntkomma. Het laatste deel van de opsomming krijgt een punt. Als de opsomming uit hele zinnen bestaat, begint elk deel met een hoofdletter en eindigt de opsomming met een punt of vraagteken.
 
-#### Voorbeelden
+## Voorbeelden
 
 Op school heb ik geleerd:
 
