@@ -1,6 +1,6 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [97366],
+ [5479],
  {
   49824: (e, n, l) => {
    l.d(n, { ZP: () => i });
@@ -15,8 +15,8 @@
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(o, { ...e }) }) : o(e);
    }
   },
-  87800: (e, n, l) => {
-   l.r(n), l.d(n, { assets: () => h, contentTitle: () => m, default: () => j, frontMatter: () => u, metadata: () => g, toc: () => b });
+  72512: (e, n, l) => {
+   l.r(n), l.d(n, { assets: () => g, contentTitle: () => m, default: () => j, frontMatter: () => u, metadata: () => h, toc: () => b });
    var s = l(52676),
     t = l(87118),
     o = l(49824),
@@ -24,15 +24,15 @@
     r = l(40761);
    function c(e) {
     const n = { div: 'div', fieldset: 'fieldset', h2: 'h2', input: 'input', label: 'label', legend: 'legend', p: 'p', ...(0, t.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', (0, s.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, s.jsx)(r.X, { appearance: 'do', title: 'Koppel een description aan de legend van de fieldset, met aria-describedby.', children: (0, s.jsx)(i.X, { language: 'html', children: () => (0, s.jsxs)(n.fieldset, { 'aria-describedby': 'description-inloggen', children: [(0, s.jsx)(n.legend, { children: 'Wilt u inloggen?' }), (0, s.jsx)(n.p, { id: 'description-inloggen', children: 'Als u inlogt worden uw gegevens al ingevuld en kunnen we u makkelijker helpen.' }), (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.input, { id: 'inloggen-ja', type: 'radio', name: 'inloggen', value: 'ja' }), (0, s.jsx)(n.label, { htmlFor: 'inloggen-ja', children: ' Ja' })] }), (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.input, { id: 'inloggen-nee', type: 'radio', name: 'inloggen', value: 'nee' }), (0, s.jsx)(n.label, { htmlFor: 'inloggen-nee', children: ' Nee' })] })] }) }) })] });
+    return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', (0, s.jsx)(n.h2, { id: 'voorbeeld', children: 'Voorbeeld' }), '\n', (0, s.jsx)(r.X, { appearance: 'do', title: 'Koppel een description aan het fieldset-element, met aria-describedby.', children: (0, s.jsx)(i.X, { language: 'html', children: () => (0, s.jsxs)(n.fieldset, { 'aria-describedby': 'description-inloggen', children: [(0, s.jsx)(n.legend, { children: 'Wilt u inloggen?' }), (0, s.jsx)(n.p, { id: 'description-inloggen', children: 'Als u inlogt worden uw gegevens al ingevuld en kunnen we u makkelijker helpen.' }), (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.input, { id: 'inloggen-ja', type: 'radio', name: 'inloggen', value: 'ja' }), (0, s.jsx)(n.label, { htmlFor: 'inloggen-ja', children: ' Ja' })] }), (0, s.jsxs)(n.div, { children: [(0, s.jsx)(n.input, { id: 'inloggen-nee', type: 'radio', name: 'inloggen', value: 'nee' }), (0, s.jsx)(n.label, { htmlFor: 'inloggen-nee', children: ' Nee' })] })] }) }) })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(c, { ...e }) }) : c(e);
    }
    function d(e) {
-    const n = { h1: 'h1', p: 'p', ...(0, t.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'fieldset-plaats-descriptions-tussen-legend-en-eerste-item', children: 'Fieldset: Plaats descriptions tussen legend en eerste item' }), '\n', (0, s.jsx)(n.p, { children: 'Radiobuttons en checkboxes worden gegroepeerd in een fieldset. De "vraag" staat in de legend. Plaats de description dan onder de legend vlak boven het eerste label/formulierveld. De description kan aan de fieldset worden gekoppeld.' })] });
+    const n = { code: 'code', h1: 'h1', p: 'p', ...(0, t.a)(), ...e.components };
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'plaats-descriptions-van-een-fieldset-tussen-de-legend-en-eerste-item', children: 'Plaats descriptions van een fieldset tussen de legend en eerste item' }), '\n', (0, s.jsxs)(n.p, { children: ['Radiobuttons, checkboxes en bijvoorbeeld adresgegevens kunnen worden gegroepeerd in een fieldset. De vraag of het onderwerp staat dan in de legend. Plaats de description onder de legend vlak boven het eerste label/formulierveld. De description wordt aan het ', (0, s.jsx)(n.code, { children: 'fieldset' }), '-element gekoppeld met ', (0, s.jsx)(n.code, { children: 'aria-describedby' }), '.'] })] });
    }
    function p(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
@@ -40,8 +40,8 @@
    }
    const u = { title: 'Plaats descriptions bij een fieldset tussen legend en eerste item \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Description bij fieldsets', pagination_label: 'Description bij fieldsets', description: 'Richtlijnen voor plaatsing van een descriptions bij een fieldset.', slug: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', keywords: ['labels', 'formulier', 'design', 'code'] },
     m = void 0,
-    g = { id: 'richtlijnen/formulieren/description/fieldset/README', title: 'Plaats descriptions bij een fieldset tussen legend en eerste item \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor plaatsing van een descriptions bij een fieldset.', source: '@site/docs/richtlijnen/formulieren/description/4-fieldset/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/4-fieldset', slug: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/4-fieldset/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Plaats descriptions bij een fieldset tussen legend en eerste item \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Description bij fieldsets', pagination_label: 'Description bij fieldsets', description: 'Richtlijnen voor plaatsing van een descriptions bij een fieldset.', slug: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Meerdere descriptions', permalink: '/richtlijnen/formulieren/descriptions/meerdere-koppelen' }, next: { title: 'Grootte aanklikbaar gedeelte', permalink: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte' } },
-    h = {},
+    h = { id: 'richtlijnen/formulieren/description/fieldset/README', title: 'Plaats descriptions bij een fieldset tussen legend en eerste item \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor plaatsing van een descriptions bij een fieldset.', source: '@site/docs/richtlijnen/formulieren/description/5-fieldset/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/5-fieldset', slug: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/5-fieldset/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Plaats descriptions bij een fieldset tussen legend en eerste item \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Description bij fieldsets', pagination_label: 'Description bij fieldsets', description: 'Richtlijnen voor plaatsing van een descriptions bij een fieldset.', slug: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Meerdere descriptions', permalink: '/richtlijnen/formulieren/descriptions/meerdere-koppelen' }, next: { title: 'Grootte aanklikbaar gedeelte', permalink: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte' } },
+    g = {},
     b = [];
    function y(e) {
     return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', (0, s.jsx)(p, {}), '\n', (0, s.jsx)(a, {}), '\n', (0, s.jsx)(o.ZP, {})] });
@@ -64,16 +64,16 @@
     p = l(75271),
     u = l(60027),
     m = l(52676);
-   const g = (e) => {
+   const h = (e) => {
     let { children: n } = e;
     return (0, m.jsx)(t.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(t.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, m.jsx)(t.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   g.displayName = 'ParagraphContainer';
-   const h = (e) => {
+   h.displayName = 'ParagraphContainer';
+   const g = (e) => {
     let { children: n } = e;
     return (0, m.jsx)(t.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(t.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
-   h.displayName = 'DocumentContainer';
+   g.displayName = 'DocumentContainer';
    const b = (e) => {
     let { children: n } = e;
     return (0, m.jsx)(t.Tg, { className: 'nlds-canvas__example-surface', children: n });
@@ -95,7 +95,7 @@
     const S = (0, p.useId)();
     let F = p.Fragment;
     return (
-     'paragraph' === f ? (F = g) : 'document' === f ? (F = h) : 'surface' === f && (F = b),
+     'paragraph' === f ? (F = h) : 'document' === f ? (F = g) : 'surface' === f && (F = b),
      (0, m.jsxs)('div', {
       className: (0, o.Z)('nlds-canvas'),
       children: [
@@ -188,7 +188,7 @@
     let { lineNumber: n, syntax: l, textContent: a, trim: d } = e,
      p = a;
     const { title: u, type: m } = (0, o.useContext)(i.n),
-     g = (0, o.useId)();
+     h = (0, o.useId)();
     return (
      d && (p = p.trim()),
      (0, c.jsx)(t.y$, {
@@ -197,7 +197,7 @@
       language: l || '',
       children: (e) => {
        let { style: l, tokens: t, getLineProps: o, getTokenProps: i } = e;
-       return (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: g, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, c.jsx)(s.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': g, style: l, children: t.map((e, l) => (0, c.jsxs)('span', { ...o({ line: e }), children: [n && (0, c.jsx)('span', { children: l + 1 }), e.map((e, n) => (0, c.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, l)) })] });
+       return (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, c.jsx)(s.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': h, style: l, children: t.map((e, l) => (0, c.jsxs)('span', { ...o({ line: e }), children: [n && (0, c.jsx)('span', { children: l + 1 }), e.map((e, n) => (0, c.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, l)) })] });
       },
      })
     );
@@ -216,8 +216,8 @@
      let { title: n, appearance: l, description: r, children: d, figure: p } = e;
      const u = { do: 'Doen', dont: 'Niet doen' },
       m = p ? 'figure' : 'div',
-      g = p ? 'figcaption' : 'div';
-     return (0, c.jsxs)(m, { className: (0, i.Z)('nlds-guideline', `nlds-guideline--${l}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(g, { className: 'nlds-guideline__description', children: ['dont' === l ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${l}`), children: [(0, c.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(o.nv, { children: n })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${l}`), children: [(0, c.jsx)(t.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(o.nv, { children: n })] }), r] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(a.Provider, { value: { title: n, type: u[l] }, children: d }) })] });
+      h = p ? 'figcaption' : 'div';
+     return (0, c.jsxs)(m, { className: (0, i.Z)('nlds-guideline', `nlds-guideline--${l}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === l ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${l}`), children: [(0, c.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(o.nv, { children: n })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${l}`), children: [(0, c.jsx)(t.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(o.nv, { children: n })] }), r] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(a.Provider, { value: { title: n, type: u[l] }, children: d }) })] });
     };
   },
   87118: (e, n, l) => {

@@ -1,6 +1,6 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [12274],
+ [2816],
  {
   49824: (e, n, o) => {
    o.d(n, { ZP: () => t });
@@ -15,7 +15,7 @@
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  19422: (e, n, o) => {
+  19481: (e, n, o) => {
    o.r(n), o.d(n, { assets: () => y, contentTitle: () => m, default: () => g, frontMatter: () => u, metadata: () => h, toc: () => v });
    var l = o(52676),
     r = o(87118),
@@ -40,7 +40,7 @@
    }
    const u = { title: 'Meerdere descriptions koppelen \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Meerdere descriptions', pagination_label: 'Meerdere descriptions', description: 'Richtlijnen voor koppelen van meerdere descriptions aan een formulierveld.', slug: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', keywords: ['labels', 'formulier', 'design', 'code'] },
     m = void 0,
-    h = { id: 'richtlijnen/formulieren/description/multiple/README', title: 'Meerdere descriptions koppelen \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor koppelen van meerdere descriptions aan een formulierveld.', source: '@site/docs/richtlijnen/formulieren/description/3-multiple/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/3-multiple', slug: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', permalink: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/3-multiple/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Meerdere descriptions koppelen \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Meerdere descriptions', pagination_label: 'Meerdere descriptions', description: 'Richtlijnen voor koppelen van meerdere descriptions aan een formulierveld.', slug: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Plaatsing description', permalink: '/richtlijnen/formulieren/descriptions/plaatsing' }, next: { title: 'Description bij fieldsets', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset' } },
+    h = { id: 'richtlijnen/formulieren/description/multiple/README', title: 'Meerdere descriptions koppelen \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor koppelen van meerdere descriptions aan een formulierveld.', source: '@site/docs/richtlijnen/formulieren/description/4-multiple/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/4-multiple', slug: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', permalink: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/4-multiple/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Meerdere descriptions koppelen \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Meerdere descriptions', pagination_label: 'Meerdere descriptions', description: 'Richtlijnen voor koppelen van meerdere descriptions aan een formulierveld.', slug: '/richtlijnen/formulieren/descriptions/meerdere-koppelen', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Plaatsing description', permalink: '/richtlijnen/formulieren/descriptions/plaatsing' }, next: { title: 'Description bij fieldsets', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset' } },
     y = {},
     v = [];
    function b(e) {

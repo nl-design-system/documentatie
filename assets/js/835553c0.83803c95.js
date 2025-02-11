@@ -1,6 +1,6 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [15518],
+ [75921],
  {
   49824: (e, n, t) => {
    t.d(n, { ZP: () => a });
@@ -15,7 +15,7 @@
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(o, { ...e }) }) : o(e);
    }
   },
-  76537: (e, n, t) => {
+  40588: (e, n, t) => {
    t.r(n), t.d(n, { assets: () => u, contentTitle: () => g, default: () => j, frontMatter: () => c, metadata: () => m, toc: () => h });
    var i = t(52676),
     r = t(87118),
@@ -37,7 +37,7 @@
    }
    const c = { title: 'Houd het aanklikbare gedeelte groot genoeg \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Grootte aanklikbaar gedeelte', pagination_label: 'Grootte aanklikbaar gedeelte', description: 'Richtlijnen voor formaat aanklikbaar gedeelte van beschrijvingen in een formulier.', slug: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', keywords: ['labels', 'formulier', 'design', 'code'] },
     g = void 0,
-    m = { id: 'richtlijnen/formulieren/description/target-size/README', title: 'Houd het aanklikbare gedeelte groot genoeg \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor formaat aanklikbaar gedeelte van beschrijvingen in een formulier.', source: '@site/docs/richtlijnen/formulieren/description/5-target-size/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/5-target-size', slug: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', permalink: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/5-target-size/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Houd het aanklikbare gedeelte groot genoeg \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Grootte aanklikbaar gedeelte', pagination_label: 'Grootte aanklikbaar gedeelte', description: 'Richtlijnen voor formaat aanklikbaar gedeelte van beschrijvingen in een formulier.', slug: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Description bij fieldsets', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset' }, next: { title: 'Lengte description', permalink: '/richtlijnen/formulieren/descriptions/lengte' } },
+    m = { id: 'richtlijnen/formulieren/description/target-size/README', title: 'Houd het aanklikbare gedeelte groot genoeg \xb7 Descriptions in een formulier \xb7 Richtlijnen', description: 'Richtlijnen voor formaat aanklikbaar gedeelte van beschrijvingen in een formulier.', source: '@site/docs/richtlijnen/formulieren/description/6-target-size/README.mdx', sourceDirName: 'richtlijnen/formulieren/description/6-target-size', slug: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', permalink: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/6-target-size/README.mdx', tags: [], version: 'current', frontMatter: { title: 'Houd het aanklikbare gedeelte groot genoeg \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Grootte aanklikbaar gedeelte', pagination_label: 'Grootte aanklikbaar gedeelte', description: 'Richtlijnen voor formaat aanklikbaar gedeelte van beschrijvingen in een formulier.', slug: '/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte', keywords: ['labels', 'formulier', 'design', 'code'] }, sidebar: 'richtlijnen', previous: { title: 'Description bij fieldsets', permalink: '/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset' }, next: { title: 'Lengte description', permalink: '/richtlijnen/formulieren/descriptions/lengte' } },
     u = {},
     h = [];
    function p(e) {

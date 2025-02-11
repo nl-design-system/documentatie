@@ -2658,8 +2658,8 @@ p a {
 .visually-hidden {
  height: 1px;
  overflow: hidden;
- width: 1px;
  position: absolute;
+ width: 1px;
 }
 .navbar__items {
  gap: 16px;
@@ -2865,6 +2865,9 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 }
 .docs-doc-page .utrecht-html button {
  margin: 16px 0;
+}
+.nlds-guideline .utrecht-html p {
+ width: 25rem;
 }
 .docs-doc-page .utrecht-html input[type="text" i]:invalid {
  border-color: #7a8aa0;
@@ -6426,59 +6429,6 @@ code .namespace {
  grid-column-start: 2;
  margin: 0;
 }
-.dsw-session,
-.dsw-session__speakers {
- margin-block: 2em;
-}
-.video-player {
- aspect-ratio: 16/9;
- margin-block-end: 32px;
- margin-block-start: 24px;
-}
-.dsw-session {
- border-block-end: 4px dotted #ccc;
- margin-block-end: 1em;
- padding-block-end: 2.5em;
-}
-.dsw-session:first-of-type {
- border-block-start: 4px dotted #ccc;
-}
-.dsw-session__title {
- --utrecht-heading-2-margin-block-end: 0.1em;
- font-size: 1.5em;
- margin-top: inherit !important;
-}
-.dsw-speaker {
- display: flex;
- flex-direction: row;
- font-style: italic;
- gap: 1em;
- margin: 0;
- margin-block: 1em;
-}
-.dsw-session:nth-child(2n) .dsw-speaker {
- flex-direction: row-reverse;
-}
-.dsw-speaker__image {
- height: 100%;
- margin-block-start: 0.4em;
- max-width: 5em;
-}
-.dsw-session__video {
- aspect-ratio: 16/9;
- margin-block-end: 32px;
- margin-block-start: 24px;
- position: relative;
-}
-.dsw-session__video > div {
- left: 0;
- position: absolute;
- right: 0;
- top: 0;
-}
-.dsw-session__video iframe {
- max-width: 100%;
-}
 .status-visual__status {
  align-items: center;
  border-bottom: 2px solid var(--nlds-status-border-color);
@@ -7481,6 +7431,28 @@ svg.DocSearch-Hit-Select-Icon {
  --nlds-estafette-badge-background-color: var(--nlds-status-stable-background-color);
  --nlds-estafette-badge-color: var(--nlds-status-stable-color);
 }
+.component-card {
+ --cardgroup-card-mobile-max-width: 300px;
+ --cardgroup-card-padding-block-start: 36px;
+ --cardgroup-card-padding-block-end: 36px;
+ --card-content-padding-block-end: 0;
+ --card-content-padding-block-start: 0;
+ --component-illustration-svg-max-height: 185px;
+ --component-illustration-padding-inline: 24px;
+ --card-content-inline-size: 60%;
+}
+.component-card--suggestion {
+ --utrecht-heading-color: #333;
+}
+.utrecht-accordion--nlds-subtle {
+ --utrecht-button-padding-inline-start: 0;
+ --utrecht-accordion-panel-border-color: #0000;
+ --utrecht-accordion-panel-padding-inline-start: 1.5em;
+ --utrecht-accordion-panel-padding-block-start: 0;
+}
+.utrecht-form-field--nlds-switch {
+ --utrecht-checkbox-size: var(--utrecht-form-toggle-width);
+}
 .nlds-inline-heading-group__heading,
 .nlds-inline-heading-group__suffix,
 .tags_VNcE {
@@ -7548,6 +7520,10 @@ svg.DocSearch-Hit-Select-Icon {
  position: absolute;
  width: 1px;
 }
+.dsw-session,
+.dsw-session__speakers {
+ margin-block: 2em;
+}
 .task-list-item__marker--checked {
  background-color: var(--nlds-task-list-item-marker-checked-background-color);
 }
@@ -7584,28 +7560,6 @@ svg.DocSearch-Hit-Select-Icon {
 }
 .nlds-inline-heading-group--wcag-heading-group {
  --utrecht-badge-font-size: max(var(--utrecht-paragraph-font-size), calc(var(--utrecht-heading-1-font-size) * 0.42));
-}
-.component-card {
- --cardgroup-card-mobile-max-width: 300px;
- --cardgroup-card-padding-block-start: 36px;
- --cardgroup-card-padding-block-end: 36px;
- --card-content-padding-block-end: 0;
- --card-content-padding-block-start: 0;
- --component-illustration-svg-max-height: 185px;
- --component-illustration-padding-inline: 24px;
- --card-content-inline-size: 60%;
-}
-.component-card--suggestion {
- --utrecht-heading-color: #333;
-}
-.utrecht-accordion--nlds-subtle {
- --utrecht-button-padding-inline-start: 0;
- --utrecht-accordion-panel-border-color: #0000;
- --utrecht-accordion-panel-padding-inline-start: 1.5em;
- --utrecht-accordion-panel-padding-block-start: 0;
-}
-.utrecht-form-field--nlds-switch {
- --utrecht-checkbox-size: var(--utrecht-form-toggle-width);
 }
 .card {
  --ifm-link-color: var(--nlds-interaction-color);
@@ -7648,6 +7602,55 @@ svg.DocSearch-Hit-Select-Icon {
  display: flex;
  gap: 4px;
  margin-block-start: 24px;
+}
+.video-player {
+ aspect-ratio: 16/9;
+ margin-block-end: 32px;
+ margin-block-start: 24px;
+}
+.dsw-session {
+ border-block-end: 4px dotted #ccc;
+ margin-block-end: 1em;
+ padding-block-end: 2.5em;
+}
+.dsw-session:first-of-type {
+ border-block-start: 4px dotted #ccc;
+}
+.dsw-session__title {
+ --utrecht-heading-2-margin-block-end: 0.1em;
+ font-size: 1.5em;
+ margin-top: inherit !important;
+}
+.dsw-speaker {
+ display: flex;
+ flex-direction: row;
+ font-style: italic;
+ gap: 1em;
+ margin: 0;
+ margin-block: 1em;
+}
+.dsw-session:nth-child(2n) .dsw-speaker {
+ flex-direction: row-reverse;
+}
+.dsw-speaker__image {
+ height: 100%;
+ margin-block-start: 0.4em;
+ max-width: 5em;
+}
+.dsw-session__video {
+ aspect-ratio: 16/9;
+ margin-block-end: 32px;
+ margin-block-start: 24px;
+ position: relative;
+}
+.dsw-session__video > div {
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+.dsw-session__video iframe {
+ max-width: 100%;
 }
 .iconEdit_VMcO {
  margin-right: 0.3em;
