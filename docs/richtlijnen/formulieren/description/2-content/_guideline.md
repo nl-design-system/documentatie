@@ -8,7 +8,7 @@ De inhoud van de description kan alleen zogenaamde 'platte tekst' bevatten. Plat
 
 Dit komt omdat voor een description het HTML-attribuut [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby) wordt gebruikt, dat alleen tekst kan bevatten en geen opmaak.
 
-Zet dus geen opsommingen, buttons, kopjes, tabellen of links in een description. Opgemaakte tekst noemen we ['rich tekst'](https://github.com/orgs/nl-design-system/discussions/289).
+Zet dus geen opsommingen, buttons, kopjes, tabellen of links in een description. Opgemaakte tekst noemen we ['rich text'](https://github.com/orgs/nl-design-system/discussions/289).
 Screenreaders geven deze informatie niet goed door of slaan het zelfs helemaal over in een description.
 
 **Let op**: het NL Design System adviseert ook geen tooltip te gebruiken voor het verbergen van **essentiële informatie**. Zie de discussie over [Toggletip](https://github.com/orgs/nl-design-system/discussions/298) op GitHub.
@@ -24,19 +24,32 @@ In de demo-video kun je zien en horen dat VoiceOver de opsomming uit de descript
 Wat zijn de opties om informatie en uitleg toe te voegen aan een formulier en de invoervelden?
 Volg de beslisboom.
 
-### Vraag 1: Heeft de informatie betrekking op alle formuliervelden?
+### Vraag 1: Gaat de informatie over alle formuliervelden?
 
-- **Ja**: plaats de informatie vlak boven het formulier en onder het bijbehorende kopje, hierbij kun je rich tekst gebruiken.
-- **Nee**: naar vraag 2.
+- **Ja:** Plaats de informatie vlak boven het formulier en onder het bijbehorende kopje. Je kunt hierbij rich text gebruiken.
+- **Nee:** Ga naar vraag 2.
 
-### Vraag 2: Heeft de informatie betrekking op een groep velden, gegroepeerd in een fieldset?
+### Vraag 2: Gaat de informatie over een enkel veld of een groep velden, gegroepeerd in een fieldset?
 
-- **Ja**: bevat de informatie alleen platte tekst?
-  - **Ja**: plaats de informatie in een description gekoppelt aan de [`<fieldset>`](https://nldesignsystem.nl/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset).
-  - **Nee**: naar vraag 3.
-- **Nee**: naar vraag 3.
+- **Een enkel veld:** Ga naar vraag 3a.
+- **Een groep velden:** Ga naar vraag 4a.
 
-### Vraag 3: Is het echt noodzakelijk dat de informatie bij het formulierveld of de gegroepeerde velden 'rich' tekst bevat?
+### Vraag 3a: Is de informatie bij het formulierveld platte tekst?
 
-- **Ja**: overweeg een [meerstappenformulier](http://localhost:3000/richtlijnen/formulieren/meerdere-stappen/), waar bij de informatie vlak boven het formulier van de betreffende stap staat.
-- Nee: herschrijf de tekst van de description, zodat deze alleen 'platte' tekst bevat.
+- **Ja:** Plaats de informatie in een description.
+- **Nee:** Ga naar vraag 3b.
+
+### Vraag 3b: Is het noodzakelijk dat de informatie bij het formulierveld rich text bevat?
+
+- **Ja**: Overweeg een [meerstappenformulier](/richtlijnen/formulieren/meerdere-stappen/), waarbij de informatie vlak boven boven het formulier en onder het bijbehorende kopje van de betreffende stap staat.
+- **Nee**: Herschrijf de tekst van de description, zodat deze alleen platte tekst bevat.
+
+### Vraag 4a: Is de informatie bij de gegroepeerde velden platte tekst?
+
+- **Ja:** Plaats de informatie in een description gekoppelt aan de [`<fieldset>`](/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset).
+- **Nee:** Ga naar vraag 4b.
+
+### Vraag 4b: Is het noodzakelijk dat de informatie bij de gegroepeerde velden rich text bevat?
+
+- **Ja**: Overweeg een [meerstappenformulier](/richtlijnen/formulieren/meerdere-stappen/), waarbij de informatie vlak boven het formulier van de betreffende stap staat.
+- **Nee**: Herschrijf de tekst van de description, zodat deze toch alleen platte tekst bevat. Dan ben je er zeker van dat álle gebruikers de informatie kunnen lezen.
