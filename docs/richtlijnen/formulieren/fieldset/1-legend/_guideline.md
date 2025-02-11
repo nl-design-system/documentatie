@@ -17,7 +17,7 @@ VoiceOver leest de legend twee keer voor bij het eerste veld van een groep, dit 
 
 ## Koppen in een legend
 
-Een fieldset kan ook een kopje bevatten. Zorg er wel voor dat het niveau van deze kopjes klopt het de <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/">hiërarchische koppenstructuur</a> van de hele pagina.
+Een fieldset kan ook een kopje bevatten. Zorg er wel voor dat het niveau van deze kopjes klopt in de <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/">hiërarchische koppenstructuur</a> van de hele pagina.
 
 ```html
 <fieldset>

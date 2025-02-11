@@ -12,4 +12,4 @@ Plaats de description onder de legend vlak boven het eerste label/formulierveld.
 </fieldset>
 ```
 
-Dit is ook beschreven in bij de [richtlijnen voor descriptions](/richtlijnen/formulieren/descriptions/).
+Dit is ook beschreven in de [richtlijnen voor descriptions](/richtlijnen/formulieren/descriptions/).
