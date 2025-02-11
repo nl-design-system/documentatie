@@ -93,7 +93,7 @@ export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
     sections={[
       {
         className: 'utrecht-accordion--nlds-subtle',
-        headingLevel: 2,
+        headingLevel: 3,
         expanded: false,
         // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
