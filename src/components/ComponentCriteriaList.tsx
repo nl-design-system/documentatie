@@ -52,13 +52,13 @@ export interface CriteriaListProps {
  * sc and status are optional.
  *
  */
-export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 4 }: CriteriaListItemProps) => {
+export const CriteriaListItem = ({ title, sc, status, component }: CriteriaListItemProps) => {
   const data = successCriteriaMap.get(sc);
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
   return (
     <div className="component-criteria-section">
-      <Heading appearance="utrecht-heading-4" level={headingLevel} className="component-criteria-section__heading">
+      <Heading appearance="utrecht-heading-4" level={4} className="component-criteria-section__heading">
         {title}
       </Heading>
       {(sc || status) && (
@@ -93,7 +93,7 @@ export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
     sections={[
       {
         className: 'utrecht-accordion--nlds-subtle',
-        headingLevel: 2,
+        headingLevel: 3,
         expanded: false,
         // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
