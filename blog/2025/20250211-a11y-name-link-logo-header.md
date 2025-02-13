@@ -14,10 +14,9 @@ Hoe geef je een link op een logo in de header een goede toegankelijke naam? We g
 
 <!-- truncate -->
 
-Een link op een logo in de header, hoe geef je deze een goede toegankelijke naam?
-De toegankelijke naam wordt voorgelezen door screenreaders zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.
-
 Het is een veelvoorkomend patroon om een logo in de header te gebruiken als een link naar de homepage. Maar wat moet de toegankelijke naam van de link zijn? "Gemeente Voorbeeld", "homepage" of "Logo gemeente Voorbeeld"? Maakt het überhaupt uit?
+
+De toegankelijke naam wordt voorgelezen door screenreaders zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.
 
 Het probleem met het linken van een logo is dat het **twee doelen** dient:
 
@@ -47,8 +46,10 @@ Gegenereerde HTML:
 <img alt="NL Design System logo, naar de homepage" src="https://raw.githubusercontent.com/nl-design-system/documentatie/9e5331b623e1bbd5bea950c934a20459e13b64bf/logo.svg" width="315" height="129" />
 </a>
 
-VoiceOver in Safari leest voor:
-"Link, afbeelding, NL Design System logo, naar de homepage".
+Hoe lezen screenreaders dit voor?
+
+- VoiceOver in Safari: 'Link, afbeelding, NL Design System logo, naar de homepage'.
+- NVDA in Firefox : 'NL Design System logo, naar de homepage, afbeelding, link'.
 
 Alle informatie is aanwezig.
 
@@ -65,7 +66,7 @@ Het krijgt daarom een `role="img"` mee en `aria-label="Leidschendam-Voorburg log
 In de code (vereenvoudigd):
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NL Design System logo">[...}</svg>
+<svg aria-label="NL Design System logo" role="img">[...]</svg>
 ```
 
 Het voordeel van een aria-label bij de SVG gebruiken in plaats van [`<title>` en `aria-labelledby`](https://www.tpgi.com/using-aria-enhance-svg-accessibility/), is dat er geen tooltip verschijnt als je over het logo hovert met de muis.
@@ -75,8 +76,8 @@ Wanneer de toegankelijke naam met een `aria-label` bij het `<a>`-element staat, 
 In de code (vereenvoudigd):
 
 ```html
-<a href="https://nldesignsystem.nl/" aria-label="NL Design System logo, naar de homepage">
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NL Design System logo">[...]</svg>
+<a aria-label="NL Design System logo, naar de homepage" href="https://nldesignsystem.nl/">
+  <svg xmlns="http://www.w3.org/2000/svg" aria-label="NL Design System logo" role="img">[...]</svg>
 </a>
 ```
 
@@ -119,8 +120,10 @@ Gegenereerde HTML:
 </svg>
 </a>
 
-VoiceOver in Safari leest voor:
-"Link, afbeelding, NL Design System logo, naar de homepage".
+Hoe lezen screenreaders dit voor?
+
+- VoiceOver in Safari: 'Link, afbeelding, NL Design System logo, naar de homepage'.
+- NVDA in Firefox : 'NL Design System logo, naar de homepage, link'.
 
 ## Discussie
 
@@ -128,18 +131,23 @@ VoiceOver in Safari leest voor:
 
 Ja, in dit geval geeft het feit dat dit een logo is belangrijke informatie.
 
-Niet alleen voor blinde gebruikers, maar voor alle screenreadergebruikers. Als je visueel beperkt bent, maar niet volledig blind, kun je de afbeelding vaag zien. Door het woord 'logo' toe te voegen, weet je ook wat de afbeelding is.
+Niet alleen voor blinde gebruikers, maar voor alle screenreadergebruikers. Als je visueel beperkt bent, maar niet volledig blind, kun je de afbeelding vaag zien. Door het woord 'logo' toe te voegen, weet je ook wat de afbeelding is. Een logo is een beeldmerk, en dat voegt legitimiteit toe aan een site.
 
 De naam van de site is vereist, maar het woord logo biedt extra context.
 
-### Is dit geen overtreding van 2.5.3 Label in Name?
+### Is dit geen overtreding van 2.5.3 Label in naam?
 
-Nee, de zichtbare naam staat in de alt-tekst of in het aria-label, die de toegankelijke naam van de link wordt. Het toevoegen van extra context aan de link is gebruikelijk.
+Het [WCAG-succescriterium 2.5.3 Label in naam](/wcag/2.5.3) stelt: Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.
+
+Dus nee, deze constructie is geen overtreding. De zichtbare naam staat in de alt-tekst of in het aria-label, die de toegankelijke naam van de link wordt. Het toevoegen van extra context aan de link is gebruikelijk.
 
 Vergelijk dit met de beruchte "Lees meer"-link. Een veelvoorkomend patroon is om een sr-only CSS-class (of gelijkwaardig) te gebruiken met extra tekst:
 
 ```html
-<a href="url"> Lees meer<span class="sr-only"> over de eikenprocessierups</span> </a>.
+<a href="url">
+  Lees meer
+  <span class="sr-only"> over de eikenprocessierups</span> </a
+>.
 ```
 
 - Je ziet "Lees meer".
