@@ -114,19 +114,19 @@ Denk na over alternatieven voor ontoegankelijke functionaliteit. Hoe vergroot je
 
 Onze [WCAG-pagina's](https://nldesignsystem.nl/wcag) beschrijven wat van belang is bij het interactie-ontwerp, zoals onder andere:
 
-- Maak de inhoud een logisch verhaal als je [van boven naar beneden leest](https://nldesignsystem.nl/wcag/1.3.2).
-- Zet de [navigatie op dezelfde plek](https://nldesignsystem.nl/wcag/3.2.3) op elke pagina, en de onderdelen in dezelfde volgorde.
-- Zorg ervoor dat componenten die dezelfde functie hebben binnen een website in naamgeving [consistent zijn](https://nldesignsystem.nl/wcag/3.2.4), er hetzelfde uitzien en ook hetzelfde werken.
-- Denk na hoe het ontwerp er in [verschillende weergaven](https://nldesignsystem.nl/wcag/1.4.10) en op verschillende apparaten eruitziet.
-- De webpagina moet in [landscape- en in portrait weergave](https://nldesignsystem.nl/wcag/1.3.4) goed leesbaar zijn.
-- Voorkom vaste groottes van een tekstkader, zorg ervoor dat de [tekst makkelijk vergroot](https://nldesignsystem.nl/wcag/1.4.4) kan worden.
-- Besteed zorg aan het [voorkomen](https://nldesignsystem.nl/wcag/3.3.4) en [aanduiden van fouten](https://nldesignsystem.nl/wcag/3.3.3) bij formulieren.
-- Reserveer plek voor [foutmeldingen](https://nldesignsystem.nl/wcag/3.3.1) en [descriptions](https://nldesignsystem.nl/wcag/3.3.3) en [statusberichten.](https://nldesignsystem.nl/wcag/4.1.3)
-- Denk na over [tijdslimieten](https://nldesignsystem.nl/wcag/2.2.3) bij het invullen van formulieren, hoe geef je die aan.
-- Voorkom [onverwacht gedrag](https://nldesignsystem.nl/wcag/3.2.1/), bijvoorbeeld bij filters of formulieren.
-- Zorg voor [meerdere manieren](https://nldesignsystem.nl/wcag/2.4.5) om content te vinden, bijvoorbeeld via een hoofdnavigatie, de zoekfunctionaliteit, informatie en links in de footer, een broodkruimelpad of een sitemap.
-- Help de gebruiker zo goed als het kan de taak te vervullen op je website. Zorg ervoor dat ze [gemakkelijk om hulp kunnen vragen](https://nldesignsystem.nl/wcag/3.3.5) als ze er niet uitkomen.
-- Maak het [makkelijk om veilig in te loggen](https://nldesignsystem.nl/wcag/3.3.8). Voorkom captcha's en rekensommen. Sta copy/paste van een wachtwoord toe, zodat een gebruiker een wachtwoordmanager kan gebruiken.
+- Maak de inhoud een logisch verhaal als je [van boven naar beneden leest](/wcag/1.3.2).
+- Zet de [navigatie op dezelfde plek](/wcag/3.2.3) op elke pagina, en de onderdelen in dezelfde volgorde.
+- Zorg ervoor dat componenten die dezelfde functie hebben binnen een website in naamgeving [consistent zijn](/wcag/3.2.4), er hetzelfde uitzien en ook hetzelfde werken.
+- Denk na hoe het ontwerp er in [verschillende weergaven](/wcag/1.4.10) en op verschillende apparaten eruitziet.
+- De webpagina moet in [landscape- en in portrait weergave](/wcag/1.3.4) goed leesbaar zijn.
+- Voorkom vaste groottes van een tekstkader, zorg ervoor dat de [tekst makkelijk vergroot](/wcag/1.4.4) kan worden.
+- Besteed zorg aan het [voorkomen](/wcag/3.3.4) en [aanduiden van fouten](/wcag/3.3.3) bij formulieren.
+- Reserveer plek voor [foutmeldingen](/wcag/3.3.1) en [descriptions](/wcag/3.3.3) en [statusberichten.](/wcag/4.1.3)
+- Denk na over [tijdslimieten](/wcag/2.2.3) bij het invullen van formulieren, hoe geef je die aan.
+- Voorkom [onverwacht gedrag](/wcag/3.2.1/), bijvoorbeeld bij filters of formulieren.
+- Zorg voor [meerdere manieren](/wcag/2.4.5) om content te vinden, bijvoorbeeld via een hoofdnavigatie, de zoekfunctionaliteit, informatie en links in de footer, een broodkruimelpad of een sitemap.
+- Help de gebruiker zo goed als het kan de taak te vervullen op je website. Zorg ervoor dat ze [gemakkelijk om hulp kunnen vragen](/wcag/3.3.5) als ze er niet uitkomen.
+- Maak het [makkelijk om veilig in te loggen](/wcag/3.3.8). Voorkom captcha's en rekensommen. Sta copy/paste van een wachtwoord toe, zodat een gebruiker een wachtwoordmanager kan gebruiken.
 
 De programmeurs kunnen met dit ontwerp eigenlijk al aan de slag, het geeft de grote lijnen aan van de opbouw en functionaliteit van de website. Het NL Design System biedt hiervoor herbruikbare componenten, bij [onze componenten](https://nldesignsystem.nl/componenten/) is al veel functionaliteit uitgewerkt.
 
@@ -142,15 +142,15 @@ Geef gebruikers een gerichte taak. Bijvoorbeeld: "Er zit een stoeptegel los bij 
 
 Nu gaat de visueel ontwerper aan de slag en werkt het interactie-ontwerp uit tot een mooie visuele weergave van de website. Dit is de fase waar huisstijlelementen zoals kleur, typografie of fotografie worden bepaald. De look-and-feel, de uitstraling. Toegankelijke websites hoeven zeker niet lelijk en saai te zijn.
 
-Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](https://nldesignsystem.nl/richtlijnen/stijl/typografie/), [kleuren](https://nldesignsystem.nl/richtlijnen/stijl/kleuren/), [ruimte](https://nldesignsystem.nl/richtlijnen/stijl/ruimte/) en [iconen](https://nldesignsystem.nl/richtlijnen/stijl/iconen/) uitgewerkt.
+Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](l/richtlijnen/stijl/typografie/), [kleuren](/richtlijnen/stijl/kleuren/), [ruimte](/richtlijnen/stijl/ruimte/) en [iconen](/richtlijnen/stijl/iconen/) uitgewerkt.
 
 Belangrijk om in het visueel ontwerp aan WCAG te voldoen is onder andere:
 
-- Zorg voor een voldoende [kleurcontrast tussen tekst en achtergrond](https://nldesignsystem.nl/wcag/1.4.3) zodat je ook je bezoek ouder dan 50 jaar de tekst kan lezen.
-- Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visuele betekenis hebben. Zoals [formulierelementen en iconen](https://nldesignsystem.nl/wcag/1.4.11).
-- Zorg ervoor dat [kleur niet het enige visuele middel is om informatie over te brengen], blinde en kleurenblinde mensen kunnen deze betekenis missen.
-- Ontwerp naast een stijl voor hover ook een [stijl voor de toetsenbordfocus](https://nldesignsystem.nl/wcag/2.4.13).
-- Zorg ervoor dat ook mensen [met dikke vingers een knop kunnen aanklikken](https://nldesignsystem.nl/wcag/2.5.8).
+- Zorg voor een voldoende [kleurcontrast tussen tekst en achtergrond](/wcag/1.4.3) zodat je ook je bezoek ouder dan 50 jaar de tekst kan lezen.
+- Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visuele betekenis hebben. Zoals [formulierelementen en iconen](/wcag/1.4.11).
+- Zorg ervoor dat [kleur niet het enige visuele middel is om informatie over te brengen](/wcag/1.4.1), blinde en kleurenblinde mensen kunnen deze betekenis missen.
+- Ontwerp naast een stijl voor hover ook een [stijl voor de toetsenbordfocus](/wcag/2.4.13).
+- Zorg ervoor dat ook mensen [met dikke vingers een knop kunnen aanklikken](/wcag/2.5.8).
 
 ## Stap 5: Bouw
 
@@ -166,17 +166,17 @@ Zo kunnen mensen met een beperking een website gebruiken met:
 
 Voor al deze hulpmiddelen geldt: de website moet te bedienen zijn met het toetsenbord. En dat is door het gebruik van goede HTML goed mogelijk. Daarnaast is het belangrijk dat een screenreadergebruiker de informatie goed voorgelezen krijgt.
 
-Bij de [richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren) en bij de [WCAG-pagina's](https://nldesignsystem.nl/wcag) staan codevoorbeelden over wat belangrijk is en hoe je wel en niet moet bouwen.
+Bij de [richtlijnen voor formulieren](/richtlijnen/formulieren) en bij de [WCAG-pagina's](https://nldesignsystem.nl/wcag) staan codevoorbeelden over wat belangrijk is en hoe je wel en niet moet bouwen.
 
 WCAG-succescriteria voor toetsenbordbediening zijn onder andere:
 
-- Zorg dat alle functionaliteit met een [toetsenbord te bedienen](https://nldesignsystem.nl/wcag/2.1.1) is.
-- Pas op voor een [toetsenbordval](https://nldesignsystem.nl/wcag/2.1.2).
-- Maak geen extra [sneltoetsen](https://nldesignsystem.nl/wcag/2.1.4) aan die bestaan uit één letter.
-- Zorg voor [een skiplink](https://nldesignsystem.nl/wcag/2.4.1), die het menu overslaat
-- Maak de [tabvolgorde logisch](https://nldesignsystem.nl/wcag/2.4.3) en voorspelbaar.
-- Zorg ervoor dat een element dat de toetsenbordfocus heeft [niet volledig bedekt is](https://nldesignsystem.nl/wcag/2.4.11) door andere inhoud.
-- Zorg dat het goed [zichtbaar is welk element de toetsenbordfocus](https://nldesignsystem.nl/wcag/2.4.13) heeft.
+- Zorg dat alle functionaliteit met een [toetsenbord te bedienen](/wcag/2.1.1) is.
+- Pas op voor een [toetsenbordval](/wcag/2.1.2).
+- Maak geen extra [sneltoetsen](/wcag/2.1.4) aan die bestaan uit één letter.
+- Zorg voor [een skiplink](/wcag/2.4.1), die het menu overslaat
+- Maak de [tabvolgorde logisch](/wcag/2.4.3) en voorspelbaar.
+- Zorg ervoor dat een element dat de toetsenbordfocus heeft [niet volledig bedekt is](/wcag/2.4.11) door andere inhoud.
+- Zorg dat het goed [zichtbaar is welk element de toetsenbordfocus](/wcag/2.4.13) heeft.
 
 Er zijn meer WCAG-succescriteria die op de code betrekking hebben. We leggen bij elk WCAG-succescriterium wat belangrijk is en uit hoe hiervoor te testen. En bij de componenten staan acceptatiecriteria waaraan een component moet voldoen om toegankelijk te zijn.
 
@@ -200,10 +200,10 @@ De contentmanagers moeten het mandaat hebben om plaatsing van ontoegankelijke di
 
 WCAG-succescriteria voor de content zijn bijvoorbeeld:
 
-- Beschrijf met koppen de inhoud die eronder staat, maak de [koppenstructuur betekenisvol](https://nldesignsystem.nl/wcag/2.4.10). Gebruik kopen niet alleen om tekst vet en groot te maken.
-- Geef afbeeldingen een [goede alternatieve tekst.](https://nldesignsystem.nl/wcag/1.1.1)
-- Voeg je video toe? Zorg dan voor [ondertiteling](https://nldesignsystem.nl/wcag/1.2.2) zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen,
-- Schrijf duidelijk, betekenisvolle [linkteksten](https://nldesignsystem.nl/wcag/2.4.4) en vermijdt 'klik hier'.
+- Beschrijf met koppen de inhoud die eronder staat, maak de [koppenstructuur betekenisvol](/wcag/2.4.10). Gebruik kopen niet alleen om tekst vet en groot te maken.
+- Geef afbeeldingen een [goede alternatieve tekst.](/wcag/1.1.1)
+- Voeg je video toe? Zorg dan voor [ondertiteling](/wcag/1.2.2) zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen.
+- Schrijf duidelijk, betekenisvolle [linkteksten](/wcag/2.4.4) en vermijdt 'klik hier'.
 
 ## Stap 7: Eindtest met gebruikers
 
@@ -246,6 +246,6 @@ Laat regelmatig, bijvoorbeeld één keer per jaar, een controle uitvoeren door e
 
 ## Tot slot
 
-Iedereen is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.
+Iedereen van het team is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.
 
-We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kunnen, dan pas is je doel bereikt.
+We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kan, dan pas is je doel bereikt.
