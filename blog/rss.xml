@@ -94,12 +94,12 @@
 <p>Geef gebruikers een gerichte taak. Bijvoorbeeld: "Er zit een stoeptegel los bij jou in de straat, ga het melden bij je gemeente", "Bestel 6 flessen bronwater, kies een bezorgadres en reken af met iDEAL". Observeer dan welk pad ze nemen, wat lukt en waar ze tegenaan lopen.</p>
 <h2 id="stap-4-visueel-ontwerp" class="utrecht-heading-2">Stap 4: Visueel ontwerp</h2>
 <p>Nu gaat de visueel ontwerper aan de slag en werkt het interactie-ontwerp uit tot een mooie visuele weergave van de website. Dit is de fase waar huisstijlelementen zoals kleur, typografie of fotografie worden bepaald. De look-and-feel, de uitstraling. Toegankelijke websites hoeven zeker niet lelijk en saai te zijn.</p>
-<p>Bij onze richtlijnen voor stijl zijn de onderwerpen <a href="https://nldesignsystem.nl/richtlijnen/stijl/typografie/" class="utrecht-link utrecht-link--html-a">typografie</a>, <a href="https://nldesignsystem.nl/richtlijnen/stijl/kleuren/" class="utrecht-link utrecht-link--html-a">kleuren</a>, <a href="https://nldesignsystem.nl/richtlijnen/stijl/ruimte/" class="utrecht-link utrecht-link--html-a">ruimte</a> en <a href="https://nldesignsystem.nl/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">iconen</a> uitgewerkt.</p>
+<p>Bij onze richtlijnen voor stijl zijn de onderwerpen <a href="https://nldesignsystem.nl/blog/l/richtlijnen/stijl/typografie/" class="utrecht-link utrecht-link--html-a">typografie</a>, <a href="https://nldesignsystem.nl/richtlijnen/stijl/kleuren/" class="utrecht-link utrecht-link--html-a">kleuren</a>, <a href="https://nldesignsystem.nl/richtlijnen/stijl/ruimte/" class="utrecht-link utrecht-link--html-a">ruimte</a> en <a href="https://nldesignsystem.nl/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">iconen</a> uitgewerkt.</p>
 <p>Belangrijk om in het visueel ontwerp aan WCAG te voldoen is onder andere:</p>
 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
 <li>Zorg voor een voldoende <a href="https://nldesignsystem.nl/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">kleurcontrast tussen tekst en achtergrond</a> zodat je ook je bezoek ouder dan 50 jaar de tekst kan lezen.</li>
 <li>Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visuele betekenis hebben. Zoals <a href="https://nldesignsystem.nl/wcag/1.4.11" class="utrecht-link utrecht-link--html-a">formulierelementen en iconen</a>.</li>
-<li>Zorg ervoor dat [kleur niet het enige visuele middel is om informatie over te brengen], blinde en kleurenblinde mensen kunnen deze betekenis missen.</li>
+<li>Zorg ervoor dat <a href="https://nldesignsystem.nl/wcag/1.4.1" class="utrecht-link utrecht-link--html-a">kleur niet het enige visuele middel is om informatie over te brengen</a>, blinde en kleurenblinde mensen kunnen deze betekenis missen.</li>
 <li>Ontwerp naast een stijl voor hover ook een <a href="https://nldesignsystem.nl/wcag/2.4.13" class="utrecht-link utrecht-link--html-a">stijl voor de toetsenbordfocus</a>.</li>
 <li>Zorg ervoor dat ook mensen <a href="https://nldesignsystem.nl/wcag/2.5.8" class="utrecht-link utrecht-link--html-a">met dikke vingers een knop kunnen aanklikken</a>.</li>
 </ul>
@@ -139,7 +139,7 @@
 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
 <li>Beschrijf met koppen de inhoud die eronder staat, maak de <a href="https://nldesignsystem.nl/wcag/2.4.10" class="utrecht-link utrecht-link--html-a">koppenstructuur betekenisvol</a>. Gebruik kopen niet alleen om tekst vet en groot te maken.</li>
 <li>Geef afbeeldingen een <a href="https://nldesignsystem.nl/wcag/1.1.1" class="utrecht-link utrecht-link--html-a">goede alternatieve tekst.</a></li>
-<li>Voeg je video toe? Zorg dan voor <a href="https://nldesignsystem.nl/wcag/1.2.2" class="utrecht-link utrecht-link--html-a">ondertiteling</a> zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen,</li>
+<li>Voeg je video toe? Zorg dan voor <a href="https://nldesignsystem.nl/wcag/1.2.2" class="utrecht-link utrecht-link--html-a">ondertiteling</a> zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen.</li>
 <li>Schrijf duidelijk, betekenisvolle <a href="https://nldesignsystem.nl/wcag/2.4.4" class="utrecht-link utrecht-link--html-a">linkteksten</a> en vermijdt 'klik hier'.</li>
 </ul>
 <h2 id="stap-7-eindtest-met-gebruikers" class="utrecht-heading-2">Stap 7: Eindtest met gebruikers</h2>
@@ -166,8 +166,8 @@ Laat dan een officiële <a href="https://www.digitoegankelijk.nl/toegankelijkhei
 <p>Een website is nooit af en verandert voortdurend, dit betreft in ieder geval de webteksten. Blijf de toegankelijkheid bewaken. Zorg ervoor dat de contentmanagers en webschrijvers getraind blijven. Want plaatjes zonder alternatieve tekst, onduidelijke links of een verkeerde koppenstructuur sluipen er zo in. Leg een procedure voor onboarding vast, ook op het gebied van toegankelijkheid.</p>
 <p>Laat regelmatig, bijvoorbeeld één keer per jaar, een controle uitvoeren door een specialist webtoegankelijkheid. Is de website nog in orde, is het team nog steeds goed getraind? Is er nieuwe functionaliteit bij gekomen en is deze ook toegankelijk?</p>
 <h2 id="tot-slot" class="utrecht-heading-2">Tot slot</h2>
-<p>Iedereen is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.</p>
-<p>We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kunnen, dan pas is je doel bereikt.</p>]]></content:encoded>
+<p>Iedereen van het team is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.</p>
+<p>We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kan, dan pas is je doel bereikt.</p>]]></content:encoded>
             <category>A status</category>
             <category>toegankelijkheid</category>
             <category>toegankelijkheidsverklaring</category>
