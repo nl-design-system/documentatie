@@ -1,6 +1,5 @@
 {
   "name": "@nl-design-system/website",
-  "version": "0.0.0",
   "author": "Community for NL Design System",
   "description": "Design Tokens for the documentation of NL Design System",
   "keywords": [
@@ -10,8 +9,8 @@
   "license": "EUPL-1.2",
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "engines": {
-    "//": "Update @types/node when updating the node version here",
-    "node": "^22",
+    "//": "Update @types/node to match the highest node version here",
+    "node": ">=20 <=22",
     "pnpm": "^9"
   },
   "repository": {
