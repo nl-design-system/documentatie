@@ -10,7 +10,7 @@ hide_table_of_contents: false
 date: 2025-02-11
 ---
 
-Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het **alt-attribuut** van een afbeelding of via een **aria-label** op de link. Welke optie je kiest is afhankelijk van het framework, CSM, of Design System dat je gebruikt.
+Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het **alt-attribuut** van een afbeelding of via een **aria-label** op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.
 
 <!-- truncate -->
 
