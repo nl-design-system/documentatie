@@ -24,6 +24,7 @@
      authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }],
      frontMatter: { title: 'Tips om in 9 stappen je A-status te halen', slug: 'tips-9-stappen-A-status-website', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['A status', 'toegankelijkheid', 'toegankelijkheidsverklaring'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/blog-9-stappen.png', hide_table_of_contents: !1, date: '2025-02-10T00:00:00.000Z' },
      unlisted: !1,
+     prevItem: { title: 'De toegankelijke naam van een link op een logo in de header', permalink: '/blog/toegankelijke-naam-link-logo-header' },
      nextItem: { title: 'Design systems bij Logius: hoe \xe9\xe9n design system meerdere producten ondersteunt', permalink: '/blog/een-design-system-meerdere-producten' },
     },
     l = { authorsImageUrls: [void 0] },

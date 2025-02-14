@@ -3,7 +3,7 @@
  [90533],
  {
   28017: (e) => {
-   e.exports = JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":30,"totalPages":1,"totalCount":30,"blogDescription":"Blog","blogTitle":"Blog"}');
+   e.exports = JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":31,"totalPages":1,"totalCount":31,"blogDescription":"Blog","blogTitle":"Blog"}');
   },
  },
 ]);
