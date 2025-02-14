@@ -12,7 +12,7 @@
      permalink: '/blog/toegankelijke-naam-link-logo-header',
      source: '@site/blog/2025/20250211-a11y-name-link-logo-header.md',
      title: 'De toegankelijke naam van een link op een logo in de header',
-     description: 'Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het alt-attribuut van een afbeelding of via een aria-label op de link. Welke optie je kiest is afhankelijk van het framework, CSM, of Design System dat je gebruikt.',
+     description: 'Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het alt-attribuut van een afbeelding of via een aria-label op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.',
      date: '2025-02-11T00:00:00.000Z',
      formattedDate: '11 februari 2025',
      tags: [
@@ -30,7 +30,7 @@
     k = [];
    function g(e) {
     const n = { p: 'p', strong: 'strong', ...(0, i.a)(), ...e.components };
-    return (0, a.jsxs)(n.p, { children: ['Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het ', (0, a.jsx)(n.strong, { children: 'alt-attribuut' }), ' van een afbeelding of via een ', (0, a.jsx)(n.strong, { children: 'aria-label' }), ' op de link. Welke optie je kiest is afhankelijk van het framework, CSM, of Design System dat je gebruikt.'] });
+    return (0, a.jsxs)(n.p, { children: ['Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het ', (0, a.jsx)(n.strong, { children: 'alt-attribuut' }), ' van een afbeelding of via een ', (0, a.jsx)(n.strong, { children: 'aria-label' }), ' op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.'] });
    }
    function d(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
