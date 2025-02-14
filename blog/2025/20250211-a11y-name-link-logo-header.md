@@ -54,13 +54,13 @@ Hoe lezen screenreaders dit voor?
 
 Alle informatie is aanwezig.
 
-Er is een voordeel van het gebruik van de alt-attribuut in plaats van een aria-label oplossing. Wanneer de verbinding traag is, zal de alt-tekst al verschijnen voordat de afbeelding wordt geladen en informeert het alle gebruikers al over de naam van de site en het linkdoel. Het is behoorlijk robuust.
+Er is een voordeel van het gebruik van het alt-attribuut in plaats van een aria-label oplossing. Wanneer de verbinding traag is, zal de alt-tekst al verschijnen voordat de afbeelding wordt geladen en informeert het alle gebruikers al over de naam van de site en het linkdoel. Het is behoorlijk robuust.
 
 ## Optie 2: De toegankelijke naam in een aria-label bij de link.
 
 ### Bij een afbeelding
 
-Wanneer de toegankelijke naam met een `aria-label` bij het `<a>`-element staat, overschrijft dit alle inhoud binnen de link, dus de inhoud van het alt-attribuut van de afbeelding wordt ook niet voorgelezen. Geef de afbeelding zelf wel een goede alt-tekst mee, zeker als je de afbeelding vaak in hergebruikt op de website.
+Wanneer de toegankelijke naam met een `aria-label` in het `<a>`-element staat, overschrijft dit alle inhoud binnen de link, dus de inhoud van het alt-attribuut van de afbeelding wordt ook niet voorgelezen. Geef de afbeelding zelf wel een goede alt-tekst mee, zeker als je de afbeelding vaak hergebruikt op de website.
 
 In de code (vereenvoudigd):
 
