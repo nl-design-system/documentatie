@@ -10,7 +10,7 @@ hide_table_of_contents: false
 date: 2025-02-11
 ---
 
-Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties, voor een logo als afbeelding en voor een logo als inline SVG.
+Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het **alt-attribuut** van een afbeelding of via een **aria-label** op de link. Welke optie je kiest is afhankelijk van het framework, CSM, of Design System dat je gebruikt.
 
 <!-- truncate -->
 
@@ -23,13 +23,14 @@ Het probleem met het linken van een logo is dat het **twee doelen** dient:
 - een logo, dat aangeeft welke site je bezoekt;
 - een link, die naar de homepage leidt.
 
-## Een afbeelding als logo
-
-Gebruik je een afbeelding zoals een .gif, .png, .jpg of .svg, dan kun je de alt-tekst gebruiken om de link een toegankelijke naam te geven. De alt-tekst van een afbeelding binnen een link wordt toegevoegd aan de linktekst.
-
 Leg dus uit dat dit een logo is en waar de link naartoe leidt: "Sitenaam logo, naar de homepage."
+Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.
 
-**Let op**: Begin de alt-tekst altijd met de zichtbare tekst, zodat de link gemakkelijker te selecteren is voor mensen die spraakherkenningssoftware gebruiken.
+**Let op**: Begin de toegankelijke naam altijd met de zichtbare tekst, zodat de link gemakkelijker te selecteren is voor mensen die spraakherkenningssoftware gebruiken.
+
+## Optie 1: De toegankelijke naam in het alt-attribuut van een afbeelding
+
+Gebruik je een afbeelding zoals een .gif, .png, .jpg of .svg, dan kun je het alt-attribuut gebruiken om de link een toegankelijke naam te geven. De inhoud van het alt-attribuut, de alt-tekst van een afbeelding binnen een link, wordt dan toegevoegd aan de linktekst.
 
 Laten we NL Design System als voorbeeld nemen.
 
@@ -53,31 +54,33 @@ Hoe lezen screenreaders dit voor?
 
 Alle informatie is aanwezig.
 
-Er is een voordeel van het gebruik van de alt-tekst in plaats van een aria-label oplossing. Wanneer de verbinding traag is, zal de alt-tekst al verschijnen voordat de afbeelding wordt geladen en informeert het alle gebruikers al over de naam van de site en het linkdoel. Het is behoorlijk robuust.
+Er is een voordeel van het gebruik van de alt-attribuut in plaats van een aria-label oplossing. Wanneer de verbinding traag is, zal de alt-tekst al verschijnen voordat de afbeelding wordt geladen en informeert het alle gebruikers al over de naam van de site en het linkdoel. Het is behoorlijk robuust.
 
-## Een afbeelding als inline SVG
+## Optie 2: De toegankelijke naam in een aria-label bij de link.
 
-Een SVG heeft geen alt-attribuut en wordt ook vaak in verschillende contexten herbruikt.
-Dan is het beter om de link zelf een `aria-label` mee te geven. Dit `aria-label` wordt dan de toegankelijke naam van de SVG.
+### Bij een afbeelding
 
-Allereerst: het logo moet wel op zichzelf kunnen staan als het herbruikbaar is.
-Het krijgt daarom een `role="img"` mee en `aria-label="Leidschendam-Voorburg logo"` als toegankelijke naam. Begin hier weer met de zichtbare tekst.
-
-In de code (vereenvoudigd):
-
-```html
-<svg aria-label="NL Design System logo" role="img">[...]</svg>
-```
-
-Het voordeel van een aria-label bij de SVG gebruiken in plaats van [`<title>` en `aria-labelledby`](https://www.tpgi.com/using-aria-enhance-svg-accessibility/), is dat er geen tooltip verschijnt als je over het logo hovert met de muis.
-
-Wanneer de toegankelijke naam met een `aria-label` bij het `<a>`-element staat, overschrijft dit alle inhoud binnen de link, dus de `title` van de afbeelding wordt ook niet voorgelezen.
+Wanneer de toegankelijke naam met een `aria-label` bij het `<a>`-element staat, overschrijft dit alle inhoud binnen de link, dus de inhoud van het alt-attribuut van de afbeelding wordt ook niet voorgelezen. Geef de afbeelding zelf wel een goede alt-tekst mee, zeker als je de afbeelding vaak in hergebruikt op de website.
 
 In de code (vereenvoudigd):
 
 ```html
 <a aria-label="NL Design System logo, naar de homepage" href="https://nldesignsystem.nl/">
-  <svg xmlns="http://www.w3.org/2000/svg" aria-label="NL Design System logo" role="img">[...]</svg>
+  <img alt="NL Design System logo" src="logo-nlds.svg" />
+</a>
+```
+
+### Bij een inline SVG
+
+Het voordeel van een `aria-label` bij de SVG gebruiken in plaats van [`<title>` en `aria-labelledby`](https://www.tpgi.com/using-aria-enhance-svg-accessibility/), is dat er geen tooltip verschijnt als je over het logo hovert met de muis.
+
+Ook hier: logo moet op zichzelf kunnen staan als het herbruikbaar is en krijgt daarom een `role="img"` mee en `aria-label="NL Design System logo"` als toegankelijke naam. Begin hier weer met de zichtbare tekst.
+
+In de code (vereenvoudigd):
+
+```html
+<a aria-label="NL Design System logo, naar de homepage" href="https://nldesignsystem.nl/">
+  <svg aria-label="NL Design System logo" role="img">[...]</svg>
 </a>
 ```
 
@@ -126,6 +129,8 @@ Hoe lezen screenreaders dit voor?
 - NVDA in Firefox : 'NL Design System logo, naar de homepage, link'.
 
 ## Discussie
+
+**Disclaimer**: Dit artikel gaat alleen over het **toekennen van de toegankelijke naam**. Bij de implementatie op een website komt meer kijken, zoals het kleurcontrast van het logo, de weergave van de focus-stijl, de exacte locatie en het toekennen van `aria-current="page"` of het verwijderen van de link op de voorpagina.
 
 ### Heb ik het woord 'logo' nodig? Is dat niet overbodig, zoals het woord 'afbeelding' of 'foto'?
 
