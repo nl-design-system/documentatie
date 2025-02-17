@@ -1,0 +1,61 @@
+---
+title: Opzet en beoordeling · Acceptatiecriteria · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Opzet criteria voor toegankelijkheid
+sidebar_position: 1
+pagination_label: Opzet en beoordeling acceptatiecriteria voor toegankelijkheid
+description: Opzet en beoordeling acceptatiecriteria voor toegankelijkheid. In de Candidate fase worden de acceptatiecriteria van de componenten opgeschreven en de componenten worden hiervoor getest en beoordeeld.
+keywords:
+  - componenten
+  - candidate
+  - toegankelijkheid
+  - WCAG
+---
+
+# Opzet en beoordeling acceptatiecriteria voor toegankelijkheid van een component
+
+In de [Candidate fase](https://nldesignsystem.nl/handboek/estafettemodel#candidate) worden de acceptatiecriteria van de componenten opgeschreven en de componenten worden hiervoor getest.
+
+Zo waarborgen we de toegankelijkheid van onze componenten.
+
+## Opzet acceptatiecriteria voor toegankelijkheid
+
+Voor de pagina van een component schrijft specialist webtoegankelijkheid van NL Design System de acceptatiecriteria voor toegankelijkheid: aan [WCAG-succescriteria](/wcag) en welke [richtlijnen van het NL Design System](/richtlijnen) moet een component voldoen.
+
+De criteria zijn in vijf onderwerpen in accordeons verdeeld.
+
+- Toegankelijkheid algemeen
+- Toegankelijkheid visueel ontwerp
+- Toegankelijkheid zoom en herschalen
+- Toegankelijkheid toetsenbord
+- Toegankelijkheid screenreader
+
+Het kan zijn dat een acceptatiecriterium bij meerdere onderwerpen genoemd wordt.
+
+Per acceptatiecriterium staat waaraan een component moet voldoen, met daaronder een korte uitleg, en verwijzingen naar WCAG-succescriteria en NL Design System richtlijnen die hierop betrekking hebben en die meer uitleg geven.
+
+Bijvoorbeeld voor de component Button, bij 'Toegankelijkheid algemeen':
+
+- **Acceptatiecriterium**: Het label van de button bestaat uit gewone tekst, niet uit een afbeelding van tekst.
+- **Uitleg**: Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij het om een logo gaat, zoals een DigiD-logo.
+- **WCAG-succescriterium**: [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5_)
+- **NL Design System richtlijn**: [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
+
+## Beoordeling van de stories op toegankelijkheid
+
+Per component wordt een aantal 'stories' geschreven, dit zijn verschillende versies en toepassingen van deze component. De stories staan in het [Candidate Test Storybook](https://candidate-storybook-test.vercel.app/) van het NL Design System.
+
+De specialist webtoegankelijkheid van NL Design System test deze stories tegen de opgestelde acceptatiecriteria toegankelijkheid.
+
+In de [GitHub repository candate](https://github.com/nl-design-system/candidate) komt hiervoor een issue met als titel 'Componentnaam - Candidate NLDS - A11y getest', met het label accessibility. Bijvoorbeeld de audit van de component Link: [Link - Candidate NLDS - A11y getest](https://github.com/nl-design-system/candidate/issues/210).
+
+Beoordeling per story voor de component:
+
+- **Voldoet**: De story voldoet aan het acceptatiecriterium.
+- **Voldoet niet**: De story voldoet niet aan het acceptatiecriterium.
+- **Niet van toepassing**: Het acceptatiecriterium is niet van toepassing, omdat de in het criterium beschreven situatie niet geldt voor de onderzochte story van de component.
+- **Niet te beoordelen, contextafhankelijk**: De component is niet op zichzelf staand te beoordelen op dit criterium voor deze story. Let bij gebruik van de component in een context (bijvoorbeeld een alinea of een pagina) goed op dat er geen fouten ontstaan. Dit doe je door het criterium in de context zelf te testen.
+
+De developer pas zo nodig een story aan in overleg met de specialist toegankelijkheid.
+Een component is pas klaar als er geen 'Voldoet niet' in de audit staat.

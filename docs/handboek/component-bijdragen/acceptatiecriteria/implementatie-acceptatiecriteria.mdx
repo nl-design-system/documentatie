@@ -1,0 +1,169 @@
+---
+title: Implementatie acceptatiecriteria webtoegankelijkheid · Acceptatiecriteria · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Implementatie criteria toegankelijkheid
+sidebar_position: 2
+pagination_label: Implementatie acceptatiecriteria voor toegankelijkheid
+description: Technische implementatie acceptatiecriteria voor toegankelijkheid. Hoe voeg je deze acceptatiecriteria toe bij een component op de website.
+keywords:
+  - componenten
+  - candidate
+  - toegankelijkheid
+  - WCAG
+---
+
+# Technische implementatie acceptatiecriteria voor toegankelijkheid van de componenten
+
+De website van het NL Design System is gebouwd in [Docusaurus](https://docusaurus.io/) en gebruikt [Markdown](https://www.markdownguide.org/cheat-sheet/) en React voor het genereren van de inhoud.
+
+Op de pagina van een component komt na 'Implementaties' een nieuw H2-kopje 'Acceptatiecriteria', met daaronder een korte uitleg en onderverdeeld in 5 onderwerpen de verschillende acceptatiecriteria voor de toegankelijkheid van een component.
+
+Bijvoorbeeld de [Acceptatiecriteria voor de Button component](https://nldesignsystem.nl/button#acceptatiecriteria).
+
+Lees ook: [Opzet acceptatiecriteria voor toegankelijkheid](/handboek/component-bijdragen/acceptatiecriteria/opzet-acceptatiecriteria#opzet-acceptatiecriteria-voor-toegankelijkheid).
+
+Het toevoegen van de uitleg gaat zo veel mogelijk op basis van hergebruik van snippets. Soms is het nodig om een eigen snippet te schrijven en toe te voegen.
+
+## Werkvolgorde
+
+### Schrijf of hergebruik de teksten
+
+Bepaal eerst welke acceptatiecriteria je wilt toevoegen aan een component.
+Schrijf een acceptatiecriterium zodanig dat je er ja of nee op kunt antwoorden. Dit is later nuttig bij het [testen van een component](/handboek/component-bijdragen/acceptatiecriteria/opzet-acceptatiecriteria#beoordeling-van-de-stories-op-toegankelijkheid).
+
+Bijvoorbeeld:
+'De button heeft een rol van button en een toegankelijke naam die duidelijk maakt waar de button voor dient'.
+
+Hierbij hoort:
+
+- één WCAG-succescriterium,
+- een korte uitleg,
+- indien beschikbaar een of meer NL Design System richtlijnen.
+
+Zoek op of er voor dit acceptatiecriterium al een goede uitleg als snippet beschikbaar is.  
+Kijk hiervoor in de mappen [wcag/summaries](https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/summaries) en [componenten/ac](https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/ac).
+
+Kun je geen snippet vinden dat goed bij je uitleg past, schrijf dan een nieuwe snippet met de bestandsnaam: '\_wcag-x.x.x-componentnaam.md', waarbij 'x.x.x' staat voor het nummer van het WCAG-succescriterium. Bijvoorbeeld [\_wcag-1.1.1-button.md](https://github.com/nl-design-system/documentatie/blob/main/docs/wcag/summaries/_1.1.1-summary.md?plain=1).
+
+**Let op**: Links naar richtlijnen voeg je toe aan de tekst van de uitleg. Het WCAG-succescriterium wordt apart in de react-component toegevoegd.
+
+Bepaal onder welk onderwerp of welke onderwerpen het acceptatiecriterium valt.
+In het [Canvas Organisatie Acceptatiecriteria componenten](https://codefornl.slack.com/docs/T68FXPFQV/F08D1R5H8F7) staat een lijst waarbij we bijhouden onder welk onderwerp een succescriteria valt. Log in bij de [Code for NL SLack](https://praatmee.codefor.nl/) om dit overzicht te kunnen inzien.
+
+Maak een lijstje van de in te voegen bestanden per onderwerp met:
+
+- de titel
+- het bestand van de uitleg, inclusief gerelateerde richtlijnen in de tekst
+- het nummer van de gerelateerde WCAG-succescriteria
+
+Je hebt nu alle inhoud bij elkaar. Nu gaan we bestanden toevoegen en aanpassen.
+
+### Voeg de inhoud toe aan de website
+
+Allereerst:
+
+- Maak een Pull Request (PR) aan in Git of GitHub.
+- Noem de PR 'docs/ac-acceptatiecriteria-componentnaam'.
+- Zet snippets met nieuw geschreven uitleg in de map 'componenten/ac'.
+
+Dan ga je het 'index.mdx'-bestand van de component aanpassen.
+
+Je kunt het [index.mdx-bestand voor een button](https://github.com/nl-design-system/documentatie/blob/main/docs/componenten/button/index.mdx?plain=1) als voorbeeld gebruiken.
+
+#### Includes
+
+Voeg de includes toe, vlak onder.
+
+```
+{/* @license CC0-1.0 */}
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+```
+
+Includes zijn verwijzingen naar de snippets en react-componenten die we later nodig hebben
+
+Voeg eerst de introductietekst toe:  
+`import AcIntro from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_intro.md";`
+
+Voeg de acceptatiecriteria toe met een nieuw geschreven uitleg:  
+`import Wcagxxx from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-x.x.x-componentnaam.md';`  
+**Let op!** De naam van de import is zonder puntjes tussen het nummer van de acceptatiecriteria.
+
+Bijvoorbeeld:  
+`import Wcag111 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.1.1-button.md';`
+
+Voeg de acceptatiecriteria met een hergebruikte WCAG-summary toe:  
+`import Wcagxxx from '@nl-design-system-unstable/documentation/wcag/summaries/\_x.x.x-summary.md';`
+
+Bijvoorbeeld:  
+`import Wcag212 from '@nl-design-system-unstable/documentation/wcag/summaries/\_2.1.2-summary.md';`
+
+Doe dit voor alle acceptatiecriteria.
+
+Eindig met het toevoegen van de react-component om de accordeons met de onderwerpen:  
+`import { CriteriaList } from '@site/src/components/ComponentCriteriaList';`
+
+#### Voeg acceptatiecriteria toe per onderwerp
+
+Voeg de acceptatiecriteria toe onder de de informatie over Implementatie, dus onder de volgende code:
+
+```markdown
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+```
+
+Voeg allereerst het H2-kopje en de introductietekst toe:
+
+```markdown
+## Acceptatiecriteria
+
+<AcIntro />
+```
+
+Voeg dan, per onderwerp de acceptatiecriteria toe, door de info aan de react-component [CriteriaList](https://github.com/nl-design-system/documentatie/blob/main/src/components/ComponentCriteriaList.tsx) mee te geven.
+
+- headingsLevel: is altijd 4.
+- testCategory: is een van de 5 onderwerpen, bijvoorbeeld "Toegankelijkheid algemeen"
+- dan komen de items:
+  - title: het de tekst van het acceptatiecriterium zelf.
+  - sc: is het nummer (met puntjes) van het bijbehorende WCAG-succescriterium. De link en de titel hiervan worden automatisch ingevuld.
+  - status: is altijd leeg, hiervoor komt misschien later nog een toepassing.
+  - component: de include van de snippet, zoals je die hierboven hebt gedefinieerd.
+
+**Let op**: sluit een item altijd af met een komma, ook het laatste.
+
+Bijvoorbeeld:
+
+```
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+  ]}
+/>
+```
+
+## Publiceer de PR op GitHub
+
+Als alles in orde is qua inhoud kun je de PR publiceren.
+Geef als titel mee: 'docs: Acceptatiecriteria bij component componentnaam'
+Schrijf een korte omschrijving en verwijs ook naar het nummer van bijbehorende GitHub-issue.
+
+Vraag om een review van een expert toegankelijkheid binnen het NL Design System-project.
+
+## Tot slot
+
+De maier van implementeren van acceptatiecriteria is complex en lastig te onderhouden. Ben je react-developer en denk je dat dit eenvoudiger kan, zeker voor niet-developers? Maak [een issue in onze documentatie repository](https://github.com/nl-design-system/documentatie/issues) aan met je voorstel.
