@@ -57,7 +57,7 @@ Door met [design tokens](/handboek/design-tokens/) te werken zorgen we ervoor da
 
 Zorg ervoor dat de component gebruik maakt van de minimale design tokens.
 
-**Tip!** Om te controleren of er design tokens zijn toegepast, kun je  de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
+**Tip!** Om te controleren of er design tokens zijn toegepast, kun je de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
 
 **Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
 
@@ -146,7 +146,7 @@ Doel: makkelijk maken voor developers om de component te vinden in de themes Sto
 
 1. Ga naar `packages/storybook/voorbeeld-design-tokens`.
 2. Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen.
-3. Maak een nieuw bestand aan met de naam  `{prefix-organisatie}-{naam-component}.stories.tsx`.
+3. Maak een nieuw bestand aan met de naam `{prefix-organisatie}-{naam-component}.stories.tsx`.
 
 #### Voeg de component toe aan de story
 
@@ -198,7 +198,7 @@ import { ComponentName } from "{react-component-library-package}";
 
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   {
-    // De id die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
+    // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
     storyId: "react-{prefix-organisatie}-{component}--default",
     component: "{prefix-organisatie}-{naam-component}",
     // Optioneel: Kies een van de opties van STORY_GROUPS
@@ -220,7 +220,7 @@ In de array van stories kun je stories toevoegen voor de component. In ieder gev
 // De lijst van stories voor alle componenten
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   ...{
-    // De id die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
+    // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
     storyId:
       "{type component, nu alleen nog react}-{organisatie prefix}-{component naam}--{story naam, bijvoorbeel default, naam-van-de-variant of naam-van-de-state}",
     component: "{prefix-organisatie}-{naam-component}",
@@ -235,12 +235,12 @@ export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
 #### Voeg de component toe aan een config toe
 
 1. Open de config.json van het thema van de organisatie.
-2. Voeg de id van de story of stories toe aan `"stories": []`.
+2. Voeg de ID van de story of stories toe aan `"stories": []`.
 
 Optioneel: voeg het component ook toe aan het voorbeeld thema
 
 1. Open de config.json van het Voorbeeld thema `packages/voorbeeld-design-tokens/src/config.json`.
-2. Voeg de id van de story of stories toe aan `"stories": []`.
+2. Voeg de ID van de story of stories toe aan `"stories": []`.
 
 ### Maak een Pull Request
 
