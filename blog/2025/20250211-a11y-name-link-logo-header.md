@@ -130,7 +130,7 @@ Hoe lezen screenreaders dit voor?
 
 ## Discussie
 
-**Disclaimer**: Dit artikel gaat alleen over het **toekennen van de toegankelijke naam**. Bij de implementatie op een website komt meer kijken, zoals het kleurcontrast van het logo, de weergave van de focus-stijl, de exacte locatie en het toekennen van `aria-current="page"` of het verwijderen van de link op de voorpagina.
+**Disclaimer**: Dit artikel gaat alleen over het **toekennen van de toegankelijke naam**. Bij de implementatie op een website komt meer kijken, zoals de weergave van de focus-stijl, de exacte locatie en het toekennen van `aria-current="page"` of het verwijderen van de link op de voorpagina.
 
 ### Heb ik het woord 'logo' nodig? Is dat niet overbodig, zoals het woord 'afbeelding' of 'foto'?
 
