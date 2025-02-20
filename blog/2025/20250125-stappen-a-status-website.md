@@ -200,7 +200,7 @@ De contentmanagers moeten het mandaat hebben om plaatsing van ontoegankelijke di
 
 WCAG-succescriteria voor de content zijn bijvoorbeeld:
 
-- Beschrijf met koppen de inhoud die eronder staat, maak de [koppenstructuur betekenisvol](/wcag/2.4.10). Gebruik kopen niet alleen om tekst vet en groot te maken.
+- Beschrijf met koppen de inhoud die eronder staat, maak de [koppenstructuur betekenisvol](/wcag/2.4.10). Gebruik koppen niet alleen om tekst vet en groot te maken.
 - Geef afbeeldingen een [goede alternatieve tekst.](/wcag/1.1.1)
 - Voeg je video toe? Zorg dan voor [ondertiteling](/wcag/1.2.2) zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen.
 - Schrijf duidelijk, betekenisvolle [linkteksten](/wcag/2.4.4) en vermijdt 'klik hier'.
