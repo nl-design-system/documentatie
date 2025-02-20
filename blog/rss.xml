@@ -66,7 +66,7 @@ Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.</p>
 <li>NVDA in Firefox : 'NL Design System logo, naar de homepage, link'.</li>
 </ul>
 <h2 id="discussie" class="utrecht-heading-2">Discussie</h2>
-<p><strong>Disclaimer</strong>: Dit artikel gaat alleen over het <strong>toekennen van de toegankelijke naam</strong>. Bij de implementatie op een website komt meer kijken, zoals het kleurcontrast van het logo, de weergave van de focus-stijl, de exacte locatie en het toekennen van <code class="utrecht-code">aria-current="page"</code> of het verwijderen van de link op de voorpagina.</p>
+<p><strong>Disclaimer</strong>: Dit artikel gaat alleen over het <strong>toekennen van de toegankelijke naam</strong>. Bij de implementatie op een website komt meer kijken, zoals de weergave van de focus-stijl, de exacte locatie en het toekennen van <code class="utrecht-code">aria-current="page"</code> of het verwijderen van de link op de voorpagina.</p>
 <h3 id="heb-ik-het-woord-logo-nodig-is-dat-niet-overbodig-zoals-het-woord-afbeelding-of-foto" class="utrecht-heading-3">Heb ik het woord 'logo' nodig? Is dat niet overbodig, zoals het woord 'afbeelding' of 'foto'?</h3>
 <p>Ja, in dit geval geeft het feit dat dit een logo is belangrijke informatie.</p>
 <p>Niet alleen voor blinde gebruikers, maar voor alle screenreadergebruikers. Als je visueel beperkt bent, maar niet volledig blind, kun je de afbeelding vaag zien. Door het woord 'logo' toe te voegen, weet je ook wat de afbeelding is. Een logo is een beeldmerk, en dat voegt legitimiteit toe aan een site.</p>
@@ -225,7 +225,7 @@ Deze blogpost bevat een groot deel van de inhoud van het Engelstalige artikel <a
 <p>De contentmanagers moeten het mandaat hebben om plaatsing van ontoegankelijke digitale documenten te weigeren. Ook al staat de burgemeester er persoonlijk op. Alles wat op de website komt, moet toegankelijk zijn.</p>
 <p>WCAG-succescriteria voor de content zijn bijvoorbeeld:</p>
 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-<li>Beschrijf met koppen de inhoud die eronder staat, maak de <a href="https://nldesignsystem.nl/wcag/2.4.10" class="utrecht-link utrecht-link--html-a">koppenstructuur betekenisvol</a>. Gebruik kopen niet alleen om tekst vet en groot te maken.</li>
+<li>Beschrijf met koppen de inhoud die eronder staat, maak de <a href="https://nldesignsystem.nl/wcag/2.4.10" class="utrecht-link utrecht-link--html-a">koppenstructuur betekenisvol</a>. Gebruik koppen niet alleen om tekst vet en groot te maken.</li>
 <li>Geef afbeeldingen een <a href="https://nldesignsystem.nl/wcag/1.1.1" class="utrecht-link utrecht-link--html-a">goede alternatieve tekst.</a></li>
 <li>Voeg je video toe? Zorg dan voor <a href="https://nldesignsystem.nl/wcag/1.2.2" class="utrecht-link utrecht-link--html-a">ondertiteling</a> zodat dove en slechthorende bezoekers de inhoud ook kunnen volgen.</li>
 <li>Schrijf duidelijk, betekenisvolle <a href="https://nldesignsystem.nl/wcag/2.4.4" class="utrecht-link utrecht-link--html-a">linkteksten</a> en vermijdt 'klik hier'.</li>
