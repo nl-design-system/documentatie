@@ -234,9 +234,12 @@ https://www.200ok.nl/tips/speciale-tekens-en-screenreaders/</documentation>
     <element xsi:type="archimate:Product" name="Documentatie: als je linkt naar een pagina die voldoet aan &quot;Page Titled&quot;, dan is de paginatitel een goede tekst voor het linkdoel" id="id-33fc19313b124ea1bfc93cb10c940091"/>
     <element xsi:type="archimate:BusinessProcess" name="In rich text editor de doelpagina downloaden om page title te suggereren als linktekst" id="id-c5a94a7adeef47afa21cc3c880be20a0"/>
     <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-68720c5bab704b5aa53c370d3b56d582"/>
+    <element xsi:type="archimate:BusinessProcess" name="CMS Validatie dat page title niet leeg mag zijn " id="id-d7d44d07304a4070a7115e308b6b4fb2"/>
+    <element xsi:type="archimate:Product" name="Instructie bij uploaden PDF dat paginatitel" id="id-31799a6a9d67403aa81621f86fb5b6dc"/>
   </folder>
   <folder name="Application" id="id-c1d2e75ff7da47ffbdc91d18d42cdcc3" type="application">
     <element xsi:type="archimate:DataObject" name="HTML van die website some-website.nl" id="id-8f5cb9ebd12c4edd9f3bc0becc330e25"/>
+    <element xsi:type="archimate:ApplicationComponent" name="CMS plugin" id="id-015cf07c8cd148a0b2c127289ab76e01"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-23c6eec27f8c49dd8fb253613904f943" type="technology">
     <element xsi:type="archimate:Equipment" name="NL Design System swag" id="id-d257433250a74dd2937d9beafc18af86"/>
@@ -1934,6 +1937,8 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
     <element xsi:type="archimate:AssociationRelationship" id="id-00f2d0e8f5064922b8b67edac71124b4" source="id-567955a6684046efbca014970793ccb1" target="id-7862081d6a5c4ad9a51ea8c470c79c89"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-7cbcc9493cdc4a68bbf0d231b563746c" source="id-01372f5e3b024889b9ed4b79337e6ded" target="id-a0a57190a5464d17ac63113c18595e09"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ebd18a9b15ec49a7b4699e5f0da3b8d2" source="id-64bdb25f04964352b0f0f4b2a0d03e24" target="id-16390418dd3046ad827d09901f7cb68f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-abc260a0e1df44128a4fe19c57e8a173" source="id-e55bd88e686b48b6b76de5481ee8e1b0" target="id-d7d44d07304a4070a7115e308b6b4fb2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1d598a12417b42539b24f1c71e057bfb" source="id-d7d44d07304a4070a7115e308b6b4fb2" target="id-015cf07c8cd148a0b2c127289ab76e01"/>
   </folder>
   <folder name="Views" id="id-87385d693b4947ebaebd4ab3c673100f" type="diagrams">
     <folder name="Estafettemodel" id="id-a5c1ec6ea1ae4a478987080a1cfd0422">
@@ -2814,6 +2819,7 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           <sourceConnection xsi:type="archimate:Connection" id="id-a07e8919d89c4a8fa45f2ad4c9c98ba7" source="id-d48da96960ed44c19893fa1562971ff6" target="id-0012b9157a2a4adc9546e24dc31b7b8e" archimateRelationship="id-5be3284e926d4a83b6dda7a714a298d8"/>
           <child xsi:type="archimate:DiagramObject" id="id-0012b9157a2a4adc9546e24dc31b7b8e" targetConnections="id-a07e8919d89c4a8fa45f2ad4c9c98ba7" archimateElement="id-e55bd88e686b48b6b76de5481ee8e1b0">
             <bounds x="12" y="48" width="147" height="59"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e5bdd58050574248a8aa8d94986e5943" source="id-0012b9157a2a4adc9546e24dc31b7b8e" target="id-efca48ff1909451db51ac3a7f073460b" archimateRelationship="id-abc260a0e1df44128a4fe19c57e8a173"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f489b577d3094fc4beb9ddf6fb9b12b7" targetConnections="id-02607fc47fd841ebb83342852bfc7b5e" archimateElement="id-51b27361983240978be0072a98ecfcb8">
             <bounds x="12" y="120" width="147" height="59"/>
@@ -2826,7 +2832,7 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-fcfb8281e84b452087cceee72134d336" archimateElement="id-75cb4ecaad314179b7f96c3bdb859e7b">
-          <bounds x="696" y="279" width="169" height="82"/>
+          <bounds x="720" y="360" width="169" height="82"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-f2563ab0d9294c958ac959553a199e15" source="id-fcfb8281e84b452087cceee72134d336" target="id-d48da96960ed44c19893fa1562971ff6" archimateRelationship="id-a52a4f654adc452ab2cacc047b379d80"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-9dd8cad1175f4d0dba64e0951ca2bf05" archimateElement="id-c595d0597c604838a9b739476305de67">
@@ -2838,6 +2844,16 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-4cdab4d5dddf436c8d151c9433d72e66" targetConnections="id-2f82921489bc49c6bb5603cc9351352a" archimateElement="id-056c39ee173f4fb183284a9b05046474">
           <bounds x="804" y="621" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-efca48ff1909451db51ac3a7f073460b" targetConnections="id-e5bdd58050574248a8aa8d94986e5943" archimateElement="id-d7d44d07304a4070a7115e308b6b4fb2">
+          <bounds x="672" y="174" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c71d82608efb449581c76f451e24c6cc" source="id-efca48ff1909451db51ac3a7f073460b" target="id-1c0788d5edb54b24822f6cceb3212906" archimateRelationship="id-1d598a12417b42539b24f1c71e057bfb"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1c0788d5edb54b24822f6cceb3212906" targetConnections="id-c71d82608efb449581c76f451e24c6cc" archimateElement="id-015cf07c8cd148a0b2c127289ab76e01">
+          <bounds x="922" y="174" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1f3df84678634ffc85be1f57ac729c07" archimateElement="id-31799a6a9d67403aa81621f86fb5b6dc">
+          <bounds x="696" y="252" width="145" height="61"/>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Root" id="id-0e29db7aa5fa443897be4427d704e5ee">
