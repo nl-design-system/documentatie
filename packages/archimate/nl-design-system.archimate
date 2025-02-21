@@ -1203,6 +1203,29 @@ Of een bepaald speciaal teken duidelijk is, is mogelijk in sommige gevallen afha
   Optie 1
 &lt;/label></documentation>
     </element>
+    <element xsi:type="archimate:Outcome" name="Tabs voldoet niet aan WCAG SC 2.4.3 Focus volgorde" id="id-b46c3817e2404b7aaa6c50c97971dfe3"/>
+    <element xsi:type="archimate:Outcome" name="Fout volgens sommigen: focus moet niet van Tab naar Tab gaan, maar van Tab naar Tab Panel naar Tab" id="id-829d4b5992db41b2b7e275d81369f916"/>
+    <element xsi:type="archimate:Outcome" name="aria-expanded=&quot;true&quot; is op het verkeerde element gezet" id="id-7862081d6a5c4ad9a51ea8c470c79c89">
+      <documentation>Bijvoorbeeld:
+
+&lt;div aria-expanded=&quot;true&quot;>
+  &lt;button>Open&lt;/button>
+  &lt;div class=&quot;dropdown-menu&quot;>...&lt;/div>
+&lt;/div>
+
+Of:
+
+&lt;div>
+  &lt;button>Open&lt;/button>
+  &lt;div class=&quot;dropdown-menu&quot; aria-expanded=&quot;true&quot;>...&lt;/div>
+&lt;/div></documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Fout: Video is focusbaar zonder logische reden" id="id-a0a57190a5464d17ac63113c18595e09">
+      <documentation>&lt;video tabindex=&quot;0&quot;>
+https://www.toegankelijkheidsverklaring.nl/register/1596</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Page Number Navigation voldoet niet aan WCAG SC 2.4.3 Focusvolgorde" id="id-64bdb25f04964352b0f0f4b2a0d03e24"/>
+    <element xsi:type="archimate:Outcome" name="Fout: Button voor &quot;Page 1&quot; / &quot;Vorige pagina&quot; / &quot;Volgende pagina&quot; verplaatst focus niet naar zoekresultaten" id="id-16390418dd3046ad827d09901f7cb68f"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-ff2cee76af514379ad024733fec480d3" type="implementation_migration">
     <element xsi:type="archimate:WorkPackage" name="Project om thema te maken voor alle decentrale overheden" id="id-9e1d78e84fe14eea87d25d818dbdd8d4"/>
@@ -1907,6 +1930,10 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
     <element xsi:type="archimate:CompositionRelationship" id="id-30ee32e1dafa44b88ccdd386cc78efbe" source="id-f444ae713afa4d4f87f89ac85c52ae67" target="id-fc71228366884b5e9b48223b357ed9fd"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-220d5f749dff40728682d1f4bd965989" source="id-f444ae713afa4d4f87f89ac85c52ae67" target="id-a971c7ebe16a460185479073d6d1c0ad"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-1fe9aebb98324a6a903ea85671213a4a" source="id-f3cbc39fe4db4708abad6364cf8fd233" target="id-f4b8aaddee0c42a8817ae4b16194e878"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-afda6211f0b74dbaab433045e3e9415c" source="id-b46c3817e2404b7aaa6c50c97971dfe3" target="id-829d4b5992db41b2b7e275d81369f916"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-00f2d0e8f5064922b8b67edac71124b4" source="id-567955a6684046efbca014970793ccb1" target="id-7862081d6a5c4ad9a51ea8c470c79c89"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7cbcc9493cdc4a68bbf0d231b563746c" source="id-01372f5e3b024889b9ed4b79337e6ded" target="id-a0a57190a5464d17ac63113c18595e09"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ebd18a9b15ec49a7b4699e5f0da3b8d2" source="id-64bdb25f04964352b0f0f4b2a0d03e24" target="id-16390418dd3046ad827d09901f7cb68f"/>
   </folder>
   <folder name="Views" id="id-87385d693b4947ebaebd4ab3c673100f" type="diagrams">
     <folder name="Estafettemodel" id="id-a5c1ec6ea1ae4a478987080a1cfd0422">
@@ -3011,6 +3038,7 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           <sourceConnection xsi:type="archimate:Connection" id="id-7a4ad1fefaac4e4e82f4e022b47d9c97" source="id-b7b613b459ba443caed1590a70b08083" target="id-3531e668521c49b88e272e2ebbebc93d" archimateRelationship="id-fb802fa46a96400cb53d25f9289e3cd1"/>
           <child xsi:type="archimate:DiagramObject" id="id-3531e668521c49b88e272e2ebbebc93d" targetConnections="id-b0c0736551734071ad8a46c631cbdac4 id-7a4ad1fefaac4e4e82f4e022b47d9c97" archimateElement="id-567955a6684046efbca014970793ccb1">
             <bounds x="12" y="48" width="193" height="97"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-38292dc5b4ab415383b972edbd419e13" source="id-3531e668521c49b88e272e2ebbebc93d" target="id-cf68584095ec4071bd226eea7301fcfe" archimateRelationship="id-00f2d0e8f5064922b8b67edac71124b4"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-d2d943cc938b4118a3789709603ada1b" archimateElement="id-0a5a2463000e489f8cd373a48e1faae5">
@@ -3061,7 +3089,7 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
             <bounds x="12" y="48" width="193" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f86532a5753944d1bfd3df7ac58dead9" targetConnections="id-60df64eb62ea436280c227110b8c4fca" archimateElement="id-fc71228366884b5e9b48223b357ed9fd">
-            <bounds y="132" width="222" height="137"/>
+            <bounds x="16" y="132" width="222" height="137"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-e1171df8f3684ba3955ac7a00b0af326" targetConnections="id-48457e98abdc4067a8d0e52b662e2684" archimateElement="id-a971c7ebe16a460185479073d6d1c0ad">
             <bounds x="12" y="288" width="229" height="109"/>
@@ -3069,6 +3097,9 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-47ba3ea6a72c417a8a61fc8d0a164ebf" archimateElement="id-6d096e809b3a473fa20775f785828fd2">
           <bounds x="467" y="1212" width="194" height="97"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cf68584095ec4071bd226eea7301fcfe" targetConnections="id-38292dc5b4ab415383b972edbd419e13" archimateElement="id-7862081d6a5c4ad9a51ea8c470c79c89">
+          <bounds x="345" y="78" width="160" height="79"/>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Calendar" id="id-5fe773292127465384e90095c193e4bb">
@@ -3102,6 +3133,13 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           <sourceConnection xsi:type="archimate:Connection" id="id-0fc71270a257422c83580fd907ba8ad9" source="id-d728af6216e54b07a8befced1c2f88de" target="id-a7e5c48bd14a4b358850bb5d25b0829f" archimateRelationship="id-ded75f5c4ba548e18d16a8f232508258"/>
           <child xsi:type="archimate:DiagramObject" id="id-a7e5c48bd14a4b358850bb5d25b0829f" targetConnections="id-0fc71270a257422c83580fd907ba8ad9" archimateElement="id-620c79c3a9944555b3fa5e87db3094ad">
             <bounds x="12" y="48" width="207" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e214b0bb19bc47c4bcdada853c69f1da" archimateElement="id-b46c3817e2404b7aaa6c50c97971dfe3">
+          <bounds x="120" y="338" width="313" height="203"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3982298ace78415d8518b04ce34d75f8" source="id-e214b0bb19bc47c4bcdada853c69f1da" target="id-066836a009824adfb95b0504d9206ff1" archimateRelationship="id-afda6211f0b74dbaab433045e3e9415c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-066836a009824adfb95b0504d9206ff1" targetConnections="id-3982298ace78415d8518b04ce34d75f8" archimateElement="id-829d4b5992db41b2b7e275d81369f916">
+            <bounds x="24" y="48" width="193" height="97"/>
           </child>
         </child>
       </element>
@@ -3386,7 +3424,7 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="Video" id="id-ff630a54979f4aa5bed2dbfad9b24c9e">
         <child xsi:type="archimate:DiagramObject" id="id-6bbf3634ce254763bbc67b6066839c51" archimateElement="id-2d1835fc84814ff2990a5ddfcf7e6549">
-          <bounds x="153" y="276" width="347" height="332"/>
+          <bounds x="146" y="439" width="347" height="332"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-076b1131f0414934a72d9cefc6688cd0" source="id-6bbf3634ce254763bbc67b6066839c51" target="id-3d832a42f7df47c88309441d13739217" archimateRelationship="id-dcf345aa1735470ba0fbdc99a136cf6b"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-317c8f1488514606ac0784fb55bf2a6c" source="id-6bbf3634ce254763bbc67b6066839c51" target="id-47253d13936b4904bab57eac44da0686" archimateRelationship="id-60864c3c1cbd4240afb709e4b0fd8c89"/>
           <child xsi:type="archimate:DiagramObject" id="id-3d832a42f7df47c88309441d13739217" targetConnections="id-076b1131f0414934a72d9cefc6688cd0" archimateElement="id-d42b409a7541458896fc3975df3fb915">
@@ -3403,10 +3441,14 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           <bounds x="581" y="439" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-52b11227d90d461298aedc8ce3402b32" archimateElement="id-01372f5e3b024889b9ed4b79337e6ded">
-          <bounds x="160" y="61" width="333" height="168"/>
+          <bounds x="160" y="61" width="333" height="312"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7daaaea3492a427cba4d52f301f3b8e0" source="id-52b11227d90d461298aedc8ce3402b32" target="id-81087245957a45fbab9f14dc10943a20" archimateRelationship="id-c76799a01dd047f08c654242d34a8538"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7dcf712e783e4191ab86940b5236b2f8" source="id-52b11227d90d461298aedc8ce3402b32" target="id-2dd66746f2be47c3b991d5c04a72206b" archimateRelationship="id-7cbcc9493cdc4a68bbf0d231b563746c"/>
           <child xsi:type="archimate:DiagramObject" id="id-81087245957a45fbab9f14dc10943a20" targetConnections="id-7daaaea3492a427cba4d52f301f3b8e0" archimateElement="id-9c9c6286fe7e48eb9b2901258684056b">
             <bounds x="36" y="36" width="224" height="104"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2dd66746f2be47c3b991d5c04a72206b" targetConnections="id-7dcf712e783e4191ab86940b5236b2f8" archimateElement="id-a0a57190a5464d17ac63113c18595e09">
+            <bounds x="24" y="156" width="229" height="61"/>
           </child>
         </child>
       </element>
@@ -3438,6 +3480,13 @@ https://nldesignsystem.nl/wcag/2.4.4/</documentation>
           <bounds x="96" y="684" width="282" height="172"/>
           <child xsi:type="archimate:DiagramObject" id="id-0d6bd63b1a7a4706b3a26c44152dd111" archimateElement="id-a4a723faf451497a9eaf0da5f0859154">
             <bounds x="12" y="60" width="217" height="73"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-981995839fac4c1e8b57749117fe6e8d" archimateElement="id-64bdb25f04964352b0f0f4b2a0d03e24">
+          <bounds x="468" y="648" width="265" height="208"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fc815a076d394435a8d2387402c3166e" source="id-981995839fac4c1e8b57749117fe6e8d" target="id-139e114d728c4a109928228a6eba2a24" archimateRelationship="id-ebd18a9b15ec49a7b4699e5f0da3b8d2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-139e114d728c4a109928228a6eba2a24" targetConnections="id-fc815a076d394435a8d2387402c3166e" archimateElement="id-16390418dd3046ad827d09901f7cb68f">
+            <bounds x="12" y="60" width="229" height="85"/>
           </child>
         </child>
       </element>
