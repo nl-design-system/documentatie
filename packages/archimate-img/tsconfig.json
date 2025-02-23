@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "lib": ["dom"],
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "target": "es2022"
+  },
+  "extends": "@nl-design-system/tsconfig",
+  "include": ["src"]
+}

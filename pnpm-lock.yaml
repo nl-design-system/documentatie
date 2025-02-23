@@ -272,6 +272,15 @@ importers:
 
   packages/archimate: {}
 
+  packages/archimate-img:
+    devDependencies:
+      '@nl-design-system/tsconfig':
+        specifier: 1.0.1
+        version: 1.0.1(typescript@5.6.2)
+      typescript:
+        specifier: 5.6.2
+        version: 5.6.2
+
   packages/nlds-design-tokens:
     dependencies:
       '@fontsource/fira-sans':
@@ -1869,6 +1878,11 @@ packages:
     resolution: {integrity: sha512-zgKEBk0S88bkRX4zRihhoOidQtekpvOHWOOPl0aJhTy5aF2hyFzbzDTGjPgpseo0lDbwZjd7LUwLJevOj83WYg==}
     peerDependencies:
       eslint: ^9
+
+  '@nl-design-system/tsconfig@1.0.1':
+    resolution: {integrity: sha512-5yzXUNG/VKurTRwYqY8L+WrMS+cQimLCCbowkpuG+9z9NldjL8lg7RJIjqGlIRg4yA0NDydAPisKvsZaBny6OQ==}
+    peerDependencies:
+      typescript: ^5.4
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -10151,6 +10165,10 @@ snapshots:
       - svelte-eslint-parser
       - typescript
       - vue-eslint-parser
+
+  '@nl-design-system/tsconfig@1.0.1(typescript@5.6.2)':
+    dependencies:
+      typescript: 5.6.2
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
