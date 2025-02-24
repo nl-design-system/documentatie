@@ -128,6 +128,184 @@ const iconMap: { [index: string]: string } = {
   'archimate:ValueStream': 'value-stream-icon.svg',
   'archimate:WorkPackage': 'work-package-icon.svg',
 };
+
+//https://stackoverflow.com/a/55001358
+const cartesian = <T>(arr: T[][]): T[][] => {
+  return arr.reduce(
+    (a, b) => {
+      return a
+        .map((x) => {
+          return b.map((y) => {
+            return x.concat(y);
+          });
+        })
+        .reduce((c, d) => c.concat(d), []);
+    },
+    [[]] as T[][],
+  );
+};
+interface RectCoords {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+interface AnchorCoords {
+  x: number;
+  y: number;
+  priority: number;
+}
+
+const getAnchorCoordinates = ({ x, y, width, height }: RectCoords): AnchorCoords[] => {
+  return [
+    // top left
+    { x, y, priority: 0.8 },
+    // top center
+    { x: x + width / 2, y, priority: 0.9 },
+    // top right
+    { x: x + width, y, priority: 0.8 },
+    // right center
+    { x: x + width, y: y + height / 2, priority: 1 },
+    // right bottom
+    { x: x + width, y: y + height, priority: 0.8 },
+    // bottom center
+    { x: x + width / 2, y: y + height, priority: 0.9 },
+    // left bottom
+    { x, y: y + height, priority: 0.8 },
+    // left center
+    { x, y: y + height / 2, priority: 1 },
+  ];
+};
+
+const getClosestAnchors = (anchor1: RectCoords, anchor2: RectCoords) => {
+  const lines = cartesian([getAnchorCoordinates(anchor1), getAnchorCoordinates(anchor2)]);
+
+  const measuredLines = lines
+    .map(([from, to]): [AnchorCoords, AnchorCoords, number] => {
+      const distance = Math.sqrt(Math.pow(from.x - to.x, 2) + Math.pow(from.y - to.y, 2));
+      return [from, to, distance / from.priority / to.priority];
+    })
+    .sort(([, , distanceA], [, , distanceB]) => distanceA - distanceB);
+
+  const shortestLine = measuredLines[0];
+  return [shortestLine[0], shortestLine[1]];
+};
+
+const isElement = (node: Node): node is Element => node.nodeType === 1;
+
+const getChildElementsByName = (node: Node, localName: string): Element[] => {
+  let child = node.firstChild;
+  const nodes = [];
+
+  for (; child; child = child.nextSibling) {
+    if (isElement(child) && child.localName === localName) {
+      nodes.push(child as Element);
+    }
+  }
+
+  return nodes;
+};
+
+const testRequiredAttribute = (elementName: string, attributeName: string, value: unknown): value is string => {
+  if (typeof value !== 'string') {
+    throw new Error(`Missing "${attributeName}" attribute on element "${elementName}".`);
+  }
+  return true;
+};
+
+interface ChildData extends RectCoords {
+  id: string;
+  text: string;
+  type: string;
+}
+
+const parseChild = (doc: Document, child: Element): ChildData | null => {
+  const bounds = child.querySelector('bounds');
+
+  if (!bounds) {
+    throw new Error('Element "child" is missing child element "bounds".');
+  }
+
+  const x = bounds.getAttribute('x');
+  const y = bounds.getAttribute('y');
+  const width = bounds.getAttribute('width');
+  const height = bounds.getAttribute('height');
+
+  if (
+    !testRequiredAttribute('child', 'x', x) ||
+    !testRequiredAttribute('child', 'y', y) ||
+    !testRequiredAttribute('child', 'height', height) ||
+    !testRequiredAttribute('child', 'width', width)
+  ) {
+    return null;
+  }
+
+  const boundsData = bounds
+    ? {
+        x: parseInt(x, 10),
+        y: parseInt(y, 10),
+        width: parseInt(width, 10),
+        height: parseInt(height, 10),
+      }
+    : {
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0,
+      };
+
+  const targetId = child.getAttribute('archimateElement');
+  const targetEl = targetId ? doc.getElementById(targetId) : null;
+
+  const targetData = targetEl
+    ? {
+        text: targetEl.getAttribute('name') || '',
+        type: targetEl.getAttribute('xsi:type') || '',
+      }
+    : {
+        text: '',
+        type: '',
+      };
+
+  const id = child.getAttribute('id');
+
+  if (!testRequiredAttribute('child', 'id', id)) {
+    return null;
+  }
+
+  return {
+    id,
+    ...targetData,
+    ...boundsData,
+  };
+};
+
+const createChildSet = (array: ChildData[]): Map<string, ChildData> =>
+  array.reduce((map, vakje) => {
+    map.set(vakje.id, vakje);
+    return map;
+  }, new Map());
+
+interface Bounds {
+  xMin: number;
+  yMin: number;
+  yMax: number;
+  xMax: number;
+}
+
+const getRectBounds = (rects: RectCoords[]): Bounds =>
+  rects.reduce(
+    (acc, { x, y, width, height }) => {
+      if (!acc.xMin || x < acc.xMin) acc.xMin = x;
+      if (!acc.xMax || x + width > acc.xMax) acc.xMax = x + width;
+      if (!acc.yMin || y < acc.yMin) acc.yMin = y;
+      if (!acc.yMax || y + height > acc.yMax) acc.yMax = y + height;
+      return acc;
+    },
+    { xMin: 0, yMin: 0, xMax: 0, yMax: 0 },
+  );
+
 class ArchimateImgElement extends HTMLElement {
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'closed' });
@@ -228,44 +406,120 @@ class ArchimateImgElement extends HTMLElement {
       response.text().then((svg) => {
         const doc = new DOMParser().parseFromString(svg, 'application/xml');
         const x = doc.getElementById(idRef);
-        const vakjes = Array.from(x?.querySelectorAll('child') || []).map((child) => {
-          const bounds = child.querySelector('bounds');
-          const boundsData = bounds
-            ? {
-                x: parseInt(bounds.getAttribute('x') || '', 10),
-                y: parseInt(bounds.getAttribute('y') || '', 10),
-                width: parseInt(bounds.getAttribute('width') || '', 10),
-                height: parseInt(bounds.getAttribute('height') || '', 10),
-              }
-            : {
-                x: 0,
-                y: 0,
-                width: 0,
-                height: 0,
-              };
 
-          const targetId = child.getAttribute('archimateElement');
-          const targetEl = targetId ? doc.getElementById(targetId) : null;
+        let allVakjes: ChildData[] = (x ? Array.from(x.querySelectorAll('child')) : [])
+          .map((x) => parseChild(doc, x))
+          .filter(<ChildData>(x: ChildData | null): x is ChildData => x !== null);
 
-          const targetData = targetEl
-            ? {
-                text: targetEl.getAttribute('name'),
-                type: targetEl.getAttribute('xsi:type'),
-              }
-            : {
-                text: '',
-                type: '',
-              };
+        const { xMin, xMax, yMin, yMax } = getRectBounds(allVakjes);
 
-          return {
-            ...targetData,
-            ...boundsData,
-          };
-        });
+        allVakjes = allVakjes.map((vakje) => ({
+          ...vakje,
+          x: vakje.x - xMin,
+          y: vakje.y - yMin,
+        }));
+
+        const allVakjesMap = createChildSet(allVakjes);
+
+        let vakjes: ChildData[] = (x ? getChildElementsByName(x, 'child') : [])
+          .map((x) => parseChild(doc, x))
+          .filter(<ChildData>(x: ChildData | null): x is ChildData => x !== null);
+
+        vakjes = vakjes.map((vakje) => ({
+          ...vakje,
+          x: vakje.x - xMin,
+          y: vakje.y - yMin,
+        }));
+
+        // const vakjesMap = createChildSet(vakjes);
+
+        type Connection = { x1: number; y1: number; x2: number; y2: number };
+
+        const connections: Connection[] = (x ? getChildElementsByName(x, 'child') : [])
+          .map((child) => {
+            return (child ? getChildElementsByName(child, 'sourceConnection') : [])
+              .filter((sourceConnectionEl) => {
+                const type = sourceConnectionEl.getAttribute('xsi:type');
+                return type === 'archimate:Connection';
+              })
+              .map((sourceConnectionEl) => {
+                const source = sourceConnectionEl.getAttribute('source');
+                const target = sourceConnectionEl.getAttribute('target');
+
+                if (
+                  !testRequiredAttribute('sourceConnection', 'source', source) ||
+                  !testRequiredAttribute('sourceConnection', 'target', target)
+                ) {
+                  return null;
+                }
+
+                const sourceVakje = allVakjesMap.get(source);
+                const targetVakje = allVakjesMap.get(target);
+
+                if (!sourceVakje) {
+                  throw new Error(
+                    `Cannot find element with ID "${source}", as defined in "sourceConnection" "source".`,
+                  );
+                }
+
+                if (!targetVakje) {
+                  throw new Error(
+                    `Cannot find element with ID "${target}", as defined in "sourceConnection" "target".`,
+                  );
+                }
+
+                const [sourceAnchor, targetAnchor] = getClosestAnchors(sourceVakje, targetVakje);
+                console.log(sourceAnchor, targetAnchor);
+                return {
+                  x1: sourceAnchor.x,
+                  y1: sourceAnchor.y,
+                  x2: targetAnchor.x,
+                  y2: targetAnchor.y,
+                };
+              })
+              .filter(<Connection>(x: Connection | null): x is Connection => x !== null);
+          })
+          .reduce((a, b) => [...a, ...b], []);
+
         const container = shadowRoot.appendChild(document.createElement('div'));
-        container.style.cssText = `position: relative;`;
+        container.style.cssText = `position: relative; width: ${xMax}px; height: ${yMax}px;`;
         container.setAttribute('role', 'img');
+
+        const svgEl = container.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'svg'));
+        svgEl.setAttribute('viewBox', `0 0 ${xMax} ${yMax}`);
+
+        const svgDefs = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'defs'));
+        const svgMarker = svgDefs.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'marker'));
+        svgMarker.setAttribute('id', 'arrow');
+        svgMarker.setAttribute('viewBox', '0 0 10 10');
+        svgMarker.setAttribute('refX', '5');
+        svgMarker.setAttribute('refY', '5');
+        svgMarker.setAttribute('markerWidth', '6');
+        svgMarker.setAttribute('markerHeight', '6');
+        svgMarker.setAttribute('orient', 'auto-start-reverse');
+        svgMarker.setAttribute('fill', 'currentColor');
+
+        const svgMarkerPath = svgMarker.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'path'));
+        svgMarkerPath.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
+
+        connections.forEach((connection) => {
+          const svgLineEl = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'line'));
+          svgLineEl.setAttribute('x1', String(connection.x1));
+          svgLineEl.setAttribute('y1', String(connection.y1));
+          svgLineEl.setAttribute('x2', String(connection.x2));
+          svgLineEl.setAttribute('y2', String(connection.y2));
+          svgLineEl.setAttribute('stroke', 'currentColor');
+          svgLineEl.setAttribute('marker-end', 'url(#arrow)');
+        });
+
         vakjes.forEach(({ text, x, y, width, height, type }) => {
+          const svgRect = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'rect'));
+          svgRect.setAttribute('x', String(x));
+          svgRect.setAttribute('y', String(y));
+          svgRect.setAttribute('width', String(width));
+          svgRect.setAttribute('height', String(height));
+          svgRect.setAttribute('fill', 'red');
+
           const vakje = container.appendChild(document.createElement('div'));
           const label = container.appendChild(document.createElement('div'));
           label.classList.add('archimate-vakje__label');
@@ -279,7 +533,7 @@ class ArchimateImgElement extends HTMLElement {
           vakje.style.cssText = `top: ${y}px; left: ${x}px; width: ${width}px; height: ${height}px;`;
 
           const iconUrl = iconMap[type || ''] ?? '';
-          console.log(type, iconUrl);
+
           if (iconUrl) {
             const icon = vakje.appendChild(document.createElement('img'));
             icon.classList.add('archimate-vakje__icon');

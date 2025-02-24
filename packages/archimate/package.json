@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/archimate.git",
+    "url": "git@github.com:nl-design-system/documentation.git",
     "directory": "packages/archimate"
   },
   "scripts": {}
