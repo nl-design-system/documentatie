@@ -29,7 +29,7 @@ Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL 
 
 ## Niveau 2. Richtlijnen gebruiken
 
-Onder [Richtlijnen](/richtlijnen/introductie) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
+Onder [Richtlijnen](/richtlijnen) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
 
 ### Bewijs
 
