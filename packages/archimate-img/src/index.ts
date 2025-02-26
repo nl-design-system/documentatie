@@ -192,7 +192,7 @@ const getClosestAnchors = (anchor1: RectCoords, anchor2: RectCoords) => {
   return [shortestLine[0], shortestLine[1]];
 };
 
-const isElement = (node: Node): node is Element => node.nodeType === 1;
+const isElement = (node: Node | null): node is Element => !!node && node.nodeType === 1;
 
 const getChildElementsByName = (node: Node, localName: string): Element[] => {
   let child = node.firstChild;
@@ -218,6 +218,7 @@ interface ChildData extends RectCoords {
   id: string;
   text: string;
   type: string;
+  children: ChildData[];
 }
 
 const parseChild = (doc: Document, child: Element): ChildData | null => {
@@ -276,12 +277,13 @@ const parseChild = (doc: Document, child: Element): ChildData | null => {
 
   return {
     id,
+    children: parseChildElements(doc, child),
     ...targetData,
     ...boundsData,
   };
 };
 
-const createChildSet = (array: ChildData[]): Map<string, ChildData> =>
+const createChildMap = (array: ChildData[]): Map<string, ChildData> =>
   array.reduce((map, vakje) => {
     map.set(vakje.id, vakje);
     return map;
@@ -306,91 +308,166 @@ const getRectBounds = (rects: RectCoords[]): Bounds =>
     { xMin: 0, yMin: 0, xMax: 0, yMax: 0 },
   );
 
+const parseChildElements = (doc: Document, parent: Element): ChildData[] =>
+  (parent ? Array.from(parent.querySelectorAll('child')) : [])
+    .map((x) => parseChild(doc, x))
+    .filter(<ChildData>(x: ChildData | null): x is ChildData => x !== null);
+
+interface ElementData {
+  id: string;
+  type: string;
+  name: string;
+}
+
+const parseElement = (element: Element): ElementData | null => {
+  const id = element.getAttribute('id');
+  const type = element.getAttribute('xsi:type');
+  const name = element.getAttribute('name');
+
+  if (!testRequiredAttribute('element', 'id', id) || !testRequiredAttribute('element', 'type', type)) {
+    return null;
+  }
+
+  return {
+    id,
+    name: name || '',
+    type,
+  };
+};
+
+const parseElements = (parent: Element | Document): ElementData[] =>
+  (parent ? Array.from(parent.querySelectorAll('element')) : [])
+    .map((x) => parseElement(x))
+    .filter(<ElementData>(x: ElementData | null): x is ElementData => x !== null);
+
+const createElementMap = (array: ElementData[]): Map<string, ElementData> =>
+  array.reduce((map, vakje) => {
+    map.set(vakje.id, vakje);
+    return map;
+  }, new Map());
+
+interface Connection {
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  type?: string;
+}
+
+const slugify = (str: string) =>
+  str
+    .toLowerCase()
+    .replace(/^[^\w]+|[^\w]+$/g, '')
+    .replace(/[^\w]+/g, '-');
+
+const css = `
+:host {
+  display: block;
+}
+
+[role="img"] {
+  --archi-white: rgb(255 255 255);
+  --archi-yellow: rgb(255 255 189);
+  --archi-red: rgb(250 225 225);
+  --archi-blue: rgb(204 204 251);
+  --archi-green: rgb(207 230 188);
+  --archi-aqua: rgb(197 253 254);
+  --archi-purple: rgb(216 193 209);
+  --archi-orange: rgb(242 223 176);
+  --archi-grey: rgb(211 215 215);
+  --location-background-color: var(--archi-purple);
+  --resource-background-color: var(--archi-orange);
+  --business-background-color: var(--archi-yellow);
+  --application-background-color: var(--archi-aqua);
+  --technology-background-color: var(--archi-green);
+  --physical-background-color: var(--archi-green);
+  --motivation-background-color: var(--archi-blue);
+  --note-background-color: var(--archi-white);
+  --group-background-color: var(--archi-grey);
+  --implementation-background-color: var(--archi-red);
+  --strategy-background-color: var(--archi-orange);
+}
+
+.archimate-img__svg {
+  color: currentColor;
+  pointer-events: none;
+  width: var(--my-icon-size, auto);
+  height: var(--my-icon-size, auto);
+}
+
+
+.archimate-img__element {
+  border: 1px solid black;
+  box-sizing: border-box;
+  column-gap: 1ch;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  hyphens: auto;
+  overflow: hidden;
+  padding-block: 0.25em;
+  padding-inline: 0.5em;
+  position: absolute;
+  word-break: break-word;
+  justify-content: space-between;
+  text-wrap-style: pretty;
+}
+
+.archimate-img__element--location {
+  background-color: var(--location-background-color);
+}
+
+.archimate-img__element--business {
+  background-color: var(--business-background-color);
+}
+
+.archimate-img__element--resource {
+  background-color: var(--resource-background-color);
+}
+
+.archimate-img__element--application {
+  background-color: var(--application-background-color);
+}
+
+.archimate-img__element--technology {
+  background-color: var(--technology-background-color);
+}
+
+.archimate-img__element--implementation {
+  background-color: var(--implementation-background-color);
+}
+
+.archimate-img__element--strategy {
+  background-color: var(--strategy-background-color);
+}
+
+.archimate-img__element--physical {
+  background-color: var(--physical-background-color);
+}
+
+.archimate-img__element--motivation {
+  background-color: var(--motivation-background-color);
+}
+
+.archimate-img__element--note {
+  background-color: var(--note-background-color);
+}
+
+.archimate-img__element--group {
+  background-color: var(--group-background-color);
+}
+
+.archimate-img__connection--flowrelationship {
+  stroke-dasharray: 0.2em;
+}
+`;
+
 class ArchimateImgElement extends HTMLElement {
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'closed' });
 
     const style = this.ownerDocument.createElement('style');
-    style.textContent = `
-        svg {
-            color: currentColor;
-            pointer-events: none;
-            width: var(--my-icon-size, auto);
-            height: var(--my-icon-size, auto);
-        }
-        * {
-        --archi-white: rgb(255 255 255);
-        --archi-yellow: rgb(255 255 189);
-        --archi-red: rgb(250 225 225);
-        --archi-blue: rgb(204 204 251);
-        --archi-green: rgb(207 230 188);
-        --archi-aqua: rgb(197 253 254);
-        --archi-purple: rgb(216 193 209);
-        --archi-orange: rgb(242 223 176);
-        --archi-grey: rgb(211 215 215);
-        --location-background-color: var(--archi-purple);
-        --resource-background-color: var(--archi-orange);
-        --business-background-color: var(--archi-yellow);
-        --application-background-color: var(--archi-aqua);
-        --technology-background-color: var(--archi-green);
-        --physical-background-color: var(--archi-green);
-        --motivation-background-color: var(--archi-blue);
-        --note-background-color: var(--archi-white);
-        --group-background-color: var(--archi-grey);
-        --implementation-background-color: var(--archi-red);
-        --strategy-background-color: var(--archi-orange);
-  }
-        .archimate-vakje {
-          border: 1px solid black;
-          box-sizing: border-box;
-          column-gap: 1ch;
-          display: flex;
-          flex-direction: row;
-          font-size: 12px;
-          hyphens: auto;
-          overflow: hidden;
-          padding-block: 0.25em;
-          padding-inline: 0.5em;
-          position: absolute;
-          word-break: break-word;
-          justify-content: space-between;
-          text-wrap-style: pretty;
-        }
-        .archimate-vakje--location {
-          background-color: var(--location-background-color);
-        }
-          .archimate-vakje--business {
-          background-color: var(--business-background-color);
-        }
-          .archimate-vakje--resource {
-          background-color: var(--resource-background-color);
-        }
-          .archimate-vakje--application {
-          background-color: var(--application-background-color);
-        }
-          .archimate-vakje--technology {
-          background-color: var(--technology-background-color);
-        }
-          .archimate-vakje--implementation {
-          background-color: var(--implementation-background-color);
-        }
-          .archimate-vakje--strategy {
-          background-color: var(--strategy-background-color);
-        }
-
-        .archimate-vakje--physical {
-          background-color: var(--physical-background-color);
-        }
-          .archimate-vakje--motivation {
-          background-color: var(--motivation-background-color);
-        }
-          .archimate-vakje--note {
-          background-color: var(--note-background-color);
-        }
-          .archimate-vakje--group {
-          background-color: var(--group-background-color);
-        }
-      `;
+    style.textContent = css;
     shadowRoot.appendChild(style);
 
     const src = this.getAttribute('src');
@@ -407,9 +484,14 @@ class ArchimateImgElement extends HTMLElement {
         const doc = new DOMParser().parseFromString(svg, 'application/xml');
         const x = doc.getElementById(idRef);
 
-        let allVakjes: ChildData[] = (x ? Array.from(x.querySelectorAll('child')) : [])
-          .map((x) => parseChild(doc, x))
-          .filter(<ChildData>(x: ChildData | null): x is ChildData => x !== null);
+        if (!isElement(x)) {
+          return;
+        }
+
+        let allVakjes: ChildData[] = parseChildElements(doc, x);
+
+        const allElements = parseElements(doc);
+        const allElementsMap = createElementMap(allElements);
 
         const { xMin, xMax, yMin, yMax } = getRectBounds(allVakjes);
 
@@ -419,7 +501,7 @@ class ArchimateImgElement extends HTMLElement {
           y: vakje.y - yMin,
         }));
 
-        const allVakjesMap = createChildSet(allVakjes);
+        const allVakjesMap = createChildMap(allVakjes);
 
         let vakjes: ChildData[] = (x ? getChildElementsByName(x, 'child') : [])
           .map((x) => parseChild(doc, x))
@@ -431,9 +513,7 @@ class ArchimateImgElement extends HTMLElement {
           y: vakje.y - yMin,
         }));
 
-        // const vakjesMap = createChildSet(vakjes);
-
-        type Connection = { x1: number; y1: number; x2: number; y2: number };
+        // const vakjesMap = createChildMap(vakjes);
 
         const connections: Connection[] = (x ? getChildElementsByName(x, 'child') : [])
           .map((child) => {
@@ -442,19 +522,22 @@ class ArchimateImgElement extends HTMLElement {
                 const type = sourceConnectionEl.getAttribute('xsi:type');
                 return type === 'archimate:Connection';
               })
-              .map((sourceConnectionEl) => {
+              .map((sourceConnectionEl): Connection | null => {
                 const source = sourceConnectionEl.getAttribute('source');
                 const target = sourceConnectionEl.getAttribute('target');
+                const archimateRelationship = sourceConnectionEl.getAttribute('archimateRelationship');
 
                 if (
                   !testRequiredAttribute('sourceConnection', 'source', source) ||
-                  !testRequiredAttribute('sourceConnection', 'target', target)
+                  !testRequiredAttribute('sourceConnection', 'target', target) ||
+                  !testRequiredAttribute('sourceConnection', 'archimateRelationship', archimateRelationship)
                 ) {
                   return null;
                 }
 
                 const sourceVakje = allVakjesMap.get(source);
                 const targetVakje = allVakjesMap.get(target);
+                const relationship = allElementsMap.get(archimateRelationship);
 
                 if (!sourceVakje) {
                   throw new Error(
@@ -468,13 +551,20 @@ class ArchimateImgElement extends HTMLElement {
                   );
                 }
 
+                if (!relationship) {
+                  throw new Error(
+                    `Cannot find element with ID "${archimateRelationship}", as defined in "sourceConnection" "archimateRelationship".`,
+                  );
+                }
+
                 const [sourceAnchor, targetAnchor] = getClosestAnchors(sourceVakje, targetVakje);
-                console.log(sourceAnchor, targetAnchor);
+
                 return {
                   x1: sourceAnchor.x,
                   y1: sourceAnchor.y,
                   x2: targetAnchor.x,
                   y2: targetAnchor.y,
+                  type: relationship.type,
                 };
               })
               .filter(<Connection>(x: Connection | null): x is Connection => x !== null);
@@ -487,10 +577,11 @@ class ArchimateImgElement extends HTMLElement {
 
         const svgEl = container.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'svg'));
         svgEl.setAttribute('viewBox', `0 0 ${xMax} ${yMax}`);
+        svgEl.classList.add('archimate-img__svg');
 
         const svgDefs = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'defs'));
         const svgMarker = svgDefs.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'marker'));
-        svgMarker.setAttribute('id', 'arrow');
+        svgMarker.setAttribute('id', 'archimate-arrow');
         svgMarker.setAttribute('viewBox', '0 0 10 10');
         svgMarker.setAttribute('refX', '5');
         svgMarker.setAttribute('refY', '5');
@@ -502,50 +593,78 @@ class ArchimateImgElement extends HTMLElement {
         const svgMarkerPath = svgMarker.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'path'));
         svgMarkerPath.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
 
-        connections.forEach((connection) => {
-          const svgLineEl = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'line'));
-          svgLineEl.setAttribute('x1', String(connection.x1));
-          svgLineEl.setAttribute('y1', String(connection.y1));
-          svgLineEl.setAttribute('x2', String(connection.x2));
-          svgLineEl.setAttribute('y2', String(connection.y2));
-          svgLineEl.setAttribute('stroke', 'currentColor');
-          svgLineEl.setAttribute('marker-end', 'url(#arrow)');
-        });
+        connections
+          .filter(
+            (connection) =>
+              // TODO: Only exclude `CompositionRelationship` when the `target` visually contains the `source`
+              connection.type !== 'archimate:CompositionRelationship',
+          )
+          .forEach((connection) => {
+            const svgLineEl = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'line'));
+            svgLineEl.setAttribute('x1', String(connection.x1));
+            svgLineEl.setAttribute('y1', String(connection.y1));
+            svgLineEl.setAttribute('x2', String(connection.x2));
+            svgLineEl.setAttribute('y2', String(connection.y2));
+            svgLineEl.setAttribute('stroke', 'currentColor');
+            svgLineEl.setAttribute('marker-end', 'url(#archimate-arrow)');
 
-        vakjes.forEach(({ text, x, y, width, height, type }) => {
-          const svgRect = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'rect'));
-          svgRect.setAttribute('x', String(x));
-          svgRect.setAttribute('y', String(y));
-          svgRect.setAttribute('width', String(width));
-          svgRect.setAttribute('height', String(height));
-          svgRect.setAttribute('fill', 'red');
+            if (connection.type) {
+              svgLineEl.classList.add('archimate-img__connection');
+              svgLineEl.classList.add(
+                `archimate-img__connection--${slugify(connection.type.replace(/^archimate:/, ''))}`,
+              );
+            }
+          });
 
-          const vakje = container.appendChild(document.createElement('div'));
-          const label = container.appendChild(document.createElement('div'));
-          label.classList.add('archimate-vakje__label');
-          label.textContent = text;
-          vakje.appendChild(label);
+        const renderChildren = (vakjes: ChildData[], zIndex = 1) => {
+          vakjes.forEach(({ text, x, y, width, height, type, children }) => {
+            const [category] = Object.entries(categories).find(([, value]) => value.includes(type || '')) || ['', []];
 
-          const [category] = Object.entries(categories).find(([, value]) => value.includes(type || '')) || ['', []];
-          vakje.classList.add('archimate-vakje');
-          vakje.classList.add(`archimate-vakje--${category}`);
-          // vakje.classList.add('archimate-vakje--resource');
-          vakje.style.cssText = `top: ${y}px; left: ${x}px; width: ${width}px; height: ${height}px;`;
+            const svgRect = svgEl.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'rect'));
+            svgRect.setAttribute('x', String(x));
+            svgRect.setAttribute('y', String(y));
+            svgRect.setAttribute('width', String(width));
+            svgRect.setAttribute('height', String(height));
+            svgRect.setAttribute('fill', 'red');
+            svgRect.classList.add('archimate-img__element-shape');
+            svgRect.classList.toggle(`archimate-img__element-shape--${category}`, !!category);
 
-          const iconUrl = iconMap[type || ''] ?? '';
+            const vakje = container.appendChild(document.createElement('div'));
+            const label = container.appendChild(document.createElement('div'));
+            label.classList.add('archimate-img__element-label');
+            label.textContent = text;
+            vakje.appendChild(label);
 
-          if (iconUrl) {
-            const icon = vakje.appendChild(document.createElement('img'));
-            icon.classList.add('archimate-vakje__icon');
-            icon.setAttribute('src', `../../archimate-icons/${iconUrl}`);
-            icon.setAttribute('width', '16');
-            icon.setAttribute('height', '16');
-            vakje.appendChild(icon);
-          }
-        });
-        // const span = this.ownerDocument.createElement('span');
-        // span.insertAdjacentHTML('beforeend', svg);
-        // shadowRoot.appendChild(span);
+            vakje.classList.add('archimate-img__element');
+            vakje.classList.toggle(`archimate-img__element--${category}`, !!category);
+            // vakje.classList.add('archimate-img__element--resource');
+            vakje.style.cssText = `top: ${y}px; left: ${x}px; width: ${width}px; height: ${height}px;`;
+            vakje.style.zIndex = String(zIndex);
+
+            const iconUrl = iconMap[type || ''] ?? '';
+
+            if (iconUrl) {
+              const icon = vakje.appendChild(document.createElement('img'));
+              icon.classList.add('archimate-img__element-icon');
+              icon.setAttribute('src', `../../archimate-icons/${iconUrl}`);
+              icon.setAttribute('width', '16');
+              icon.setAttribute('height', '16');
+              vakje.appendChild(icon);
+            }
+
+            // Recursive rendering
+            renderChildren(
+              children.map((vakje) => ({
+                ...vakje,
+                x: vakje.x + x,
+                y: vakje.y + y,
+              })),
+              zIndex + 1,
+            );
+          });
+        };
+
+        renderChildren(vakjes);
       });
     });
   }
