@@ -129,6 +129,95 @@ const iconMap: { [index: string]: string } = {
   'archimate:WorkPackage': 'work-package-icon.svg',
 };
 
+const iconSvg: { [index: string]: string } = {
+  'actor-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="133 366 10 19"><circle cx="138" cy="370" r="3" fill="none" stroke="currentColor" clip-path="url(#clipPath15)"/><path stroke="currentColor" d="M138 373v6m0 0-4 5m4-5 4 5m-8-8h8"/></svg>',
+  'artifact-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="485 972.5 14 17.5"><path fill="none" stroke="currentColor" d="M486 974h7l5 5v10h-12v-15.5m7 .5v5h5" clip-path="url(#clipPath83)"/></svg>',
+  'assessment-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="290 1103 13 14"><circle cx="298" cy="1108" r="4" fill="none" stroke="currentColor" clip-path="url(#clipPath97)"/><path fill="none" stroke="currentColor" d="m296 1111-5 5" clip-path="url(#clipPath97)"/></svg>',
+  'capability-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="304 286 14 14"><path fill="none" stroke="currentColor" d="M313 287h4v4h-4zm-4 4h4v4h-4zm4 0h4v4h-4zm-8 4h4v4h-4zm4 0h4v4h-4zm4 0h4v4h-4z" clip-path="url(#clipPath9)"/></svg>',
+  'collaboration-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="464 371 16 12"><circle cx="470" cy="377" r="5" fill="none" stroke="currentColor" clip-path="url(#clipPath19)"/><circle cx="474" cy="377" r="5" fill="none" stroke="currentColor" clip-path="url(#clipPath19)"/></svg>',
+  'communication-network-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="126 894 17 15"><path fill="none" stroke="currentColor" d="M132 905.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm2-8a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm8 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm-2 8a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm-10-2.5 1-3m7 3 1-3m-7 5.5h3m-1-8h3" clip-path="url(#clipPath71)"/></svg>',
+  'component-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="295 594 15 15"><path fill="none" stroke="currentColor" d="M299 608v-4m0-2v-2m0-3v-2h10v13h-10.5m-2.5-11h6v2.5h-6Zm0 5h6v2.5h-6Z" clip-path="url(#clipPath41)"/></svg>',
+  'constraint-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="283 1179 18 11"><path fill="none" stroke="currentColor" d="M288 1180h12l-4 9h-12zm4 0-4 9" clip-path="url(#clipPath105)"/></svg>',
+  'contract-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="466 530 15 12"><path fill="none" stroke="currentColor" d="M467 531h13v10h-13zm0 3h13m-13 4h13" clip-path="url(#clipPath35)"/></svg>',
+  'course-of-action-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="630.576 291 22.424 18.132"><path fill-rule="evenodd" d="m633.6 301 6 1-3 5.2" clip-path="url(#clipPath13)"/><path fill="none" stroke="currentColor" stroke-width="2" d="M636.5 304a5 5 0 0 0-4.924 4.132" clip-path="url(#clipPath13)"/><path fill="none" stroke="currentColor" stroke-width="1.2" d="M652 298.5a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Zm-2.5 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-2.5 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Zm0 0" clip-path="url(#clipPath13)"/></svg>',
+  'deliverable-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="282.5 1247 16.5 11.786"><path fill="none" stroke="currentColor" d="M284 1248v7.5q3 4 8 1 3-2.5 6 0v-8.5h-14.5" clip-path="url(#clipPath113)"/></svg>',
+  'device-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="639 755 15 14"><rect width="11" height="8" x="641" y="756" fill="none" stroke="currentColor" clip-path="url(#clipPath61)" rx="1.5" ry="1.5"/><path fill="none" stroke="currentColor" d="m640 768 3-4h7l3 4z" clip-path="url(#clipPath61)"/></svg>',
+  'distribution-network-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="292 1040 19 12"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M295 1044h13m-13 4h13m-10-7-5 5 5 5m7-10 5 5-5 5" clip-path="url(#clipPath89)"/></svg>',
+  'driver-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="126 1101 19 19"><path fill="none" stroke="currentColor" stroke-width="1.2" d="M142 1110.5a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Zm-5 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Zm0 0" clip-path="url(#clipPath95)"/><path fill="none" stroke="currentColor" d="M127 1110.5h17m-8.5-8.5v17m-6-14.5 12 12m-12 0 12-12" clip-path="url(#clipPath95)"/></svg>',
+  'equipment-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="641 975 20 26"><path fill="none" stroke="currentColor" d="M656 993h2v-2h-2l-1-2 1-2-1-1-2 1-2-1v-2h-2v2l-2 1-2-1-1 1 1 2-1 2h-2v2h2l1 2-1 2 1 1 2-1 2 1v2h2v-2l2-1 2 1 1-1-1-2z" clip-path="url(#clipPath85)"/><path fill="none" stroke="currentColor" d="M653 992a3 3 0 1 0-6 0 3 3 0 0 0 6 0Zm6-10h1v-2h-1l-1-2v-1l-1-1-1 1h-2l-1-1-1 1v1l-1 2h-1v2h1l1 2v1l1 1 1-1h2l1 1 1-1v-1z" clip-path="url(#clipPath85)"/><path fill="none" stroke="currentColor" d="M657 981a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm0 0" clip-path="url(#clipPath85)"/></svg>',
+  'event-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="638 453 18 11"><path fill="none" stroke="currentColor" d="M639 463c2.21 0 4-2.015 4-4.5s-1.79-4.5-4-4.5m12 9c2.21 0 4-2.015 4-4.5s-1.79-4.5-4-4.5m-12 0h12m-12 9h12" clip-path="url(#clipPath29)"/></svg>',
+  'facility-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="125 1030 17 14"><path fill="none" stroke="currentColor" stroke-width="1.2" d="M126 1043h15v-6l-4 3v-3l-4 3v-3l-4 3v-9h-3z" clip-path="url(#clipPath87)"/></svg>',
+  'function-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="297 452 14 16"><path fill="none" stroke="currentColor" d="M298 467v-9l6-5 6 5v9l-6-6z" clip-path="url(#clipPath25)"/></svg>',
+  'gap-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="129 1308 19 15"><circle cx="138.5" cy="1315.5" r="6.5" fill="none" stroke="currentColor" clip-path="url(#clipPath119)"/><path fill="none" stroke="currentColor" d="M130 1314h17m-17 3h17" clip-path="url(#clipPath119)"/></svg>',
+  'goal-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="478 1108 15 15"><path fill="none" stroke="currentColor" stroke-width="1.2" d="M492 1115.5a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Zm-2.5 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-2.5 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Zm0 0" clip-path="url(#clipPath99)"/></svg>',
+  'interaction-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="465 452.5 15 15"><path fill="none" stroke="currentColor" d="M471 454c-2.761 0-5 2.686-5 6s2.239 6 5 6v-12.5m3 12.5c2.761 0 5-2.686 5-6s-2.239-6-5-6v12.5" clip-path="url(#clipPath27)"/></svg>',
+  'interface-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="633 371 19 12"><circle cx="646" cy="377" r="5" fill="none" stroke="currentColor" clip-path="url(#clipPath21)"/><path fill="none" stroke="currentColor" d="M641 377h-7" clip-path="url(#clipPath21)"/></svg>',
+  'location-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="115 13.999 12.001 17.001"><path fill="none" stroke="currentColor" d="M125.699 21.71a5 5 0 1 0-9.397 0L121 30Zm0 0" clip-path="url(#clipPath1)"/></svg>',
+  'material-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="479 1041 18 16"><path fill="none" stroke="currentColor" stroke-width="1.2" d="M492 1042h-8l-4 7 3 7h9l4-7zm-6 2-3.3 5.5m1.6 4h6.7m2-4-3-5.5" clip-path="url(#clipPath91)"/></svg>',
+  'meaning-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="472.5 1185.5 12 9"><path fill="none" stroke="#000" d="M479 1186.402c-1.913-.829-4.36-.337-5.464 1.098-.702.912-.715 2.033-.034 2.955" clip-path="url(#clipPath107)"/><path fill="none" stroke="#000" d="M483.152 1190.847c1.36-1.306 1.052-3.191-.69-4.211-1.264-.741-2.997-.843-4.401-.26m.203 6.764c-1.087 1.042-2.982 1.153-4.232.247-1.114-.807-1.358-2.169-.576-3.212" clip-path="url(#clipPath107)"/><path fill="none" stroke="#000" d="M482.978 1190.634a3 3 0 0 1-4.866 2.697" clip-path="url(#clipPath107)"/></svg>',
+  'node-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="478.8 749 16.5 16"><path fill="none" stroke="currentColor" d="M480 753h11v11h-11Zm-.2 0 3.4-3m7.8 3 3-3m-2.8 14 3-3M483 750.2h11.3m-.3-.2v11.2" clip-path="url(#clipPath59)"/></svg>',
+  'object-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="296 525 15 12"><path fill="none" stroke="currentColor" d="M297 526h13v10h-13zm0 3h13" clip-path="url(#clipPath33)"/></svg>',
+  'outcome-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="778 1114 20 20"><path fill="none" stroke="currentColor" stroke-width="1.2" d="M792 1126.5a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Zm-2.5 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-2.5 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Zm0 0" clip-path="url(#clipPath121)"/><path fill="none" stroke="currentColor" d="m785 1127 9.5-9.5m-2.5 2.5 1-5m-1 5 5-1" clip-path="url(#clipPath121)"/></svg>',
+  'path-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="638 833 19 12"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M642.5 839h2m2 0h2m2 0h2m-8.5-5-5 5 5 5m7-10 5 5-5 5" clip-path="url(#clipPath69)"/></svg>',
+  'plateau-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="631 1255 18 8"><path fill="none" stroke="currentColor" stroke-width="2" d="M632 1262h12m-10-3h12m-10-3h12" clip-path="url(#clipPath117)"/></svg>',
+  'principle-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="644 1116 14 16"><rect width="12" height="14" x="645" y="1117" fill="none" stroke="currentColor" clip-path="url(#clipPath101)" rx="2" ry="2"/><path fill="none" stroke="currentColor" d="M650.5 1119v7m1-7v7m-1 1.5v2m1-2v2" clip-path="url(#clipPath101)"/></svg>',
+  'process-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="128 454 16 12"><path fill="none" stroke="currentColor" d="M129 458h8v-3l6 5-6 5v-3h-8z" clip-path="url(#clipPath23)"/></svg>',
+  'product-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="131.5 584.5 14 11"><path fill="none" stroke="currentColor" d="M132 585h13v10h-13z" clip-path="url(#clipPath39)"/><path fill="none" stroke="currentColor" d="M132 585h6v3h-6z" clip-path="url(#clipPath39)"/></svg>',
+  'representation-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="643 530.5 15.5 10.786"><path fill="none" stroke="currentColor" d="M644 531v7.5q3 4 8 1 3-2.5 6 0V531h-14.5m.5 3h14" clip-path="url(#clipPath37)"/></svg>',
+  'requirement-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="124.5 1170.5 17 10"><path fill="none" stroke="currentColor" d="M129 1171h12l-4 9h-12z" clip-path="url(#clipPath103)"/></svg>',
+  'resource-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="129.5 283.5 18 11"><rect width="15" height="10" x="130" y="284" fill="none" stroke="currentColor" clip-path="url(#clipPath7)" rx="1.5" ry="1.5"/><rect width="2" height="4" x="145" y="287" fill="none" stroke="currentColor" clip-path="url(#clipPath7)" rx=".5" ry=".5"/><path fill="none" stroke="currentColor" d="M133 286v6m3-6v6m3-6v6" clip-path="url(#clipPath7)"/></svg>',
+  'role-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="295.5 374.5 16 9"><path fill="none" stroke="currentColor" d="M298.5 375c-1.38 0-2.5 1.79-2.5 4s1.12 4 2.5 4h9.5m-10-8h10" clip-path="url(#clipPath17)"/><ellipse cx="308.5" cy="379" fill="none" stroke="currentColor" clip-path="url(#clipPath17)" rx="2.5" ry="4"/></svg>',
+  'service-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="125.5 518.5 17 10"><rect width="16" height="9" x="126" y="519" fill="none" stroke="currentColor" clip-path="url(#clipPath31)" rx="4" ry="4"/></svg>',
+  'stakeholder-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="647.5 1052.5 16 8"><path fill="none" stroke="currentColor" d="M652 1053c-2.21 0-4 1.567-4 3.5s1.79 3.5 4 3.5h7m-7.5-7h7.5" clip-path="url(#clipPath93)"/><circle cx="659.5" cy="1056.5" r="3.5" fill="none" stroke="currentColor" clip-path="url(#clipPath93)"/></svg>',
+  'system-software-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="128.5 822.499 14.001 14.001"><path fill="none" stroke="currentColor" d="M134.5 825a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm4.75 8.263a5.5 5.5 0 1 0-7.513-7.513" clip-path="url(#clipPath63)"/></svg>',
+  'value-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="633.5 1189.5 15 10"><ellipse cx="641" cy="1194.5" fill="none" stroke="currentColor" clip-path="url(#clipPath109)" rx="7" ry="4.5"/></svg>',
+  'value-stream-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="463.5 290.5 16 11"><path fill="none" stroke="currentColor" d="M464 291h10l5 5-5 5h-10l5-5z" clip-path="url(#clipPath11)"/></svg>',
+  'work-package-icon.svg':
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="131.499 1242.499 16.001 13.001"><path fill="none" stroke="currentColor" d="M140.729 1249.04a4.5 4.5 0 1 0-3.837 2.943m-.392.017h6.5" clip-path="url(#clipPath111)"/><path fill-rule="evenodd" d="m143 1249 4 3-4 3Zm0 0" clip-path="url(#clipPath111)"/></svg>',
+};
+
 //https://stackoverflow.com/a/55001358
 const cartesian = <T>(arr: T[][]): T[][] => {
   return arr.reduce(
@@ -413,6 +502,19 @@ const css = `
   text-wrap-style: pretty;
 }
 
+.archimate-img__element-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.archimate-img__element-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 .archimate-img__element--location {
   background-color: var(--location-background-color);
 }
@@ -462,13 +564,15 @@ const css = `
 }
 `;
 
+const sheet = new CSSStyleSheet();
+// Apply a rule to the sheet
+sheet.replaceSync(css);
+
 class ArchimateImgElement extends HTMLElement {
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'closed' });
 
-    const style = this.ownerDocument.createElement('style');
-    style.textContent = css;
-    shadowRoot.appendChild(style);
+    shadowRoot.adoptedStyleSheets = [sheet];
 
     const src = this.getAttribute('src');
 
@@ -644,11 +748,13 @@ class ArchimateImgElement extends HTMLElement {
             const iconUrl = iconMap[type || ''] ?? '';
 
             if (iconUrl) {
-              const icon = vakje.appendChild(document.createElement('img'));
+              // const icon = vakje.appendChild(document.createElement('img'));
+              const icon = vakje.appendChild(document.createElement('span'));
+              icon.innerHTML = iconSvg[iconUrl] || '';
               icon.classList.add('archimate-img__element-icon');
-              icon.setAttribute('src', `../../archimate-icons/${iconUrl}`);
-              icon.setAttribute('width', '16');
-              icon.setAttribute('height', '16');
+              // icon.setAttribute('src', `../../archimate-icons/${iconUrl}`);
+              // icon.setAttribute('width', '16');
+              // icon.setAttribute('height', '16');
               vakje.appendChild(icon);
             }
 
