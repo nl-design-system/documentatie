@@ -31,6 +31,32 @@ keywords:
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import AcIntro from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_intro.md";
+import Wcag131 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.3.1-accordion.md";
+import Wcag141 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.1-accordion.md";
+import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.3-accordion.md";
+import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.4-accordion.md";
+import Wcag145 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.5-accordion.md";
+import Wcag1411 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.11-accordion.md";
+import Wcag1413 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.13-accordion.md";
+import Wcag211 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.1.1-accordion.md";
+import Wcag243 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.4.3-accordion.md";
+import Wcag246 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.4.6-accordion.md";
+import Wcag252 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.5.2-accordion.md";
+import Wcag253 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.5.3-accordion.md";
+import Wcag255 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.5.5-accordion.md";
+import Wcag322 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-3.2.2-accordion.md";
+import Wcag412 from "@nl-design-system-unstable/documentation/componenten/ac/\_wcag-4.1.2-accordion.md";
+import Wcag1410 from "@nl-design-system-unstable/documentation/wcag/summaries/\_1.4.10-summary.md";
+import Wcag1412 from "@nl-design-system-unstable/documentation/wcag/summaries/\_1.4.12-summary.md";
+import Wcag212 from "@nl-design-system-unstable/documentation/wcag/summaries/\_2.1.2-summary.md";
+import Wcag247 from "@nl-design-system-unstable/documentation/wcag/summaries/\_2.4.7-summary.md";
+import Wcag2411 from "@nl-design-system-unstable/documentation/wcag/summaries/\_2.4.11-summary.md";
+import Wcag2413 from "@nl-design-system-unstable/documentation/wcag/summaries/\_2.4.13-summary.md";
+import Wcag312 from "@nl-design-system-unstable/documentation/wcag/summaries/\_3.1.2-summary.md";
+import Wcag321 from "@nl-design-system-unstable/documentation/wcag/summaries/\_3.2.1-summary.md";
+import Wcag324 from "@nl-design-system-unstable/documentation/wcag/summaries/\_3.2.4-summary.md";
+import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -54,6 +80,204 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+## Acceptatiecriteria
+
+<AcIntro />
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid algemeen"
+  items={[
+    {
+      title: "De informatie in de accordeon bestaat uit tekst, niet uit tekst in een afbeelding",
+      sc: "1.4.5",
+      status: "",
+      component: <Wcag145 />,
+    },
+    {
+      title: "Het is duidelijk welke content in de accordion aanwezig is",
+      sc: "2.4.6",
+      status: "",
+      component: <Wcag246 />,
+    },
+    {
+      title: "De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion",
+      sc: "2.5.3",
+      status: "",
+      component: <Wcag253 />,
+    },
+    {
+      title: "Het aanwijsgebied van de accordion is groot genoeg",
+      sc: "2.5.5",
+      status: "",
+      component: <Wcag255 />,
+    },
+    {
+      title:
+        "Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
+    },
+    {
+      title: "Het gedrag van de accordion is voorspelbaar",
+      sc: "3.2.1",
+      status: "",
+      component: <Wcag321 />,
+    },
+    {
+      title: "Het openen of sluiten van de accordion verplaatst de focus niet",
+      sc: "3.2.2",
+      status: "",
+      component: <Wcag322 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid visueel ontwerp"
+  items={[
+    {
+      title: "Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur",
+      sc: "1.4.1",
+      status: "",
+      component: <Wcag141 />,
+    },
+    {
+      title: "De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+    },
+    {
+      title: "Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+    },
+    {
+      title: "Interactieve elementen in de accordion hebben een zichtbare focusstyling",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247 />,
+    },
+    {
+      title:
+        "Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit",
+      sc: "3.2.4",
+      status: "",
+      component: <Wcag324 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid zoom en herschalen"
+  items={[
+    {
+      title: "Tekst in de accordion kan 200% vergroot worden zonder verlies van functionaliteit of informatie",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+    },
+    {
+      title: "De bezoeker kan de accordeon tot 400% vergroten zonder verlies van functionaliteit of informatie",
+      sc: "1.4.10",
+      status: "",
+      component: <Wcag1410 />,
+    },
+    {
+      title: "De tekstopmaak in de accordion kan aangepast worden zonder verlies van functionaliteit of informatie",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+    },
+    {
+      title: "De accordion opent niet bij hover of focus.",
+      sc: "1.4.13",
+      status: "",
+      component: <Wcag1413 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid toetsenbord"
+  items={[
+    {
+      title: "De accordion is bedienbaar met het toetsenbord",
+      sc: "2.1.1",
+      status: "",
+      component: <Wcag211 />,
+    },
+    {
+      title: "De accordion zorgt niet voor een toetsenbordval",
+      sc: "2.1.2",
+      status: "",
+      component: <Wcag212 />,
+    },
+    {
+      title: "De focusvolgorde rondom en in de accordion is logisch",
+      sc: "2.4.3",
+      status: "",
+      component: <Wcag243 />,
+    },
+    {
+      title: "Interactieve elementen in de accordion hebben een zichtbare focusstyling",
+      sc: "2.4.6",
+      status: "",
+      component: <Wcag246 />,
+    },
+    {
+      title: "De accordion wordt niet bedekt door andere content",
+      sc: "2.4.11",
+      status: "",
+      component: <Wcag2411 />,
+    },
+    {
+      title: "De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren",
+      sc: "2.5.2",
+      status: "",
+      component: <Wcag252 />,
+    },
+  ]}
+/>
+
+<CriteriaList
+  headingLevel={3}
+  testCategory="Toegankelijkheid screenreader"
+  items={[
+    {
+      title: "De staat van de accordion is beschikbaar voor hulpsoftware",
+      sc: "1.3.1",
+      status: "",
+      component: <Wcag131 />,
+    },
+    {
+      title: "Het is duidelijk welke content in de accordion aanwezig is",
+      sc: "2.4.6",
+      status: "",
+      component: <Wcag246 />,
+    },
+    {
+      title:
+        "Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
+    },
+    {
+      title: "De accordion heeft een toegankelijke naam, rol en status",
+      sc: "4.1.2",
+      status: "",
+      component: <Wcag412 />,
+    },
+  ]}
+/>
 
 ## Help component verbeteren
 
