@@ -2,8 +2,8 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [4137],
  {
-  50210: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => p, contentTitle: () => j, default: () => f, frontMatter: () => g, metadata: () => b, toc: () => m });
+  7574: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => b, contentTitle: () => g, default: () => v, frontMatter: () => u, metadata: () => j, toc: () => p });
    var t = i(52676),
     r = i(40139),
     s = i(57716),
@@ -11,20 +11,13 @@
     l = i(16167),
     a = i(60256),
     d = i(99042),
-    c = i(91114);
-   function h(e) {
-    const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsx)(n.p, { children: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).' });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
-   }
-   const g = { title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.4.7 Focus zichtbaar', pagination_label: '2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', slug: '2.4.7', keywords: ['WCAG', 'Toetsenbord'] },
-    j = void 0,
-    b = { id: 'wcag/2.4.07', title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', source: '@site/docs/wcag/2.4.07.mdx', sourceDirName: 'wcag', slug: '/wcag/2.4.7', permalink: '/wcag/2.4.7', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.4.07.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.4.7 Focus zichtbaar', pagination_label: '2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', slug: '2.4.7', keywords: ['WCAG', 'Toetsenbord'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.4.6 Koppen en labels', permalink: '/wcag/2.4.6' }, next: { title: '2.4.8 Locatie', permalink: '/wcag/2.4.8' } },
-    p = {},
-    m = [
+    c = i(91114),
+    h = i(23051);
+   const u = { title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.4.7 Focus zichtbaar', pagination_label: '2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', slug: '2.4.7', keywords: ['WCAG', 'Toetsenbord'] },
+    g = void 0,
+    j = { id: 'wcag/2.4.07', title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', source: '@site/docs/wcag/2.4.07.mdx', sourceDirName: 'wcag', slug: '/wcag/2.4.7', permalink: '/wcag/2.4.7', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.4.07.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.4.7 Focus zichtbaar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.4.7 Focus zichtbaar', pagination_label: '2.4.7 Focus zichtbaar', description: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).', slug: '2.4.7', keywords: ['WCAG', 'Toetsenbord'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.4.6 Koppen en labels', permalink: '/wcag/2.4.6' }, next: { title: '2.4.8 Locatie', permalink: '/wcag/2.4.8' } },
+    b = {},
+    p = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Gerelateerde NL Design System-richtlijn', id: 'gerelateerde-nl-design-system-richtlijn', level: 2 },
      { value: 'Bronnen', id: 'bronnen', level: 2 },
@@ -33,13 +26,13 @@
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function v(e) {
+   function m(e) {
     const n = { a: 'a', code: 'code', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 2.4.7 Focus zichtbaar' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(u, {}), '\n', (0, t.jsx)(n.h2, { id: 'gerelateerde-nl-design-system-richtlijn', children: 'Gerelateerde NL Design System-richtlijn' }), '\n', (0, t.jsxs)(n.p, { children: ['Formulieren - Visueel Ontwerp: ', (0, t.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', children: 'Maak de toetsenbordfocus goed zichtbaar' }), '.'] }), '\n', (0, t.jsx)(n.h2, { id: 'bronnen', children: 'Bronnen' }), '\n', (0, t.jsxs)(n.p, { children: [(0, t.jsx)(n.a, { href: 'https://www.sarasoueidan.com/blog/focus-indicators/#wcag-2.1-and-wcag-2.2-focus-indicator-accessibility-requirements', children: (0, t.jsx)('span', { lang: 'en', children: 'A guide to designing accessible, WCAG-conformant focus indicators' }) }), ' van Sara Soueidan.'] }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(a.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, t.jsx)(n.p, { children: 'Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik de tab-toets om te controleren of links, buttons, invoervelden en checkboxes duidelijk zichtbaar de focus aangeven. Controleer de focus van radiobuttons en tabs met de pijltjestoetsen.' }), '\n', (0, t.jsxs)(n.p, { children: ['Als in de CSS de outline is verwijderd (', (0, t.jsx)(n.code, { children: 'outline: none;' }), '), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft, bijvoorbeeld door het toevoegen een CSS-border.'] }), '\n', (0, t.jsx)(n.p, { children: 'Additionele testen:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['de ', (0, t.jsx)(n.a, { href: '/wcag/2.4.1', children: 'skip link' }), ' wordt zichtbaar als deze toetsenbord krijgt.'] }), '\n', (0, t.jsx)(n.li, { children: 'de outline (of het alternatief) is goed zichtbaar in dark- en in light-mode, als deze optie aangeboden wordt op de webpagina.' }), '\n'] }), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#focus-visible', children: (0, t.jsx)('span', { lang: 'en', children: '2.4.7 Focus Visible' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#focus-zichtbaar', children: '2.4.7 Focus zichtbaar' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-visible', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 2.4.7 Focus Visible' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 2.4.7 Focus Visible' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) })] });
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 2.4.7 Focus zichtbaar' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(h.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'gerelateerde-nl-design-system-richtlijn', children: 'Gerelateerde NL Design System-richtlijn' }), '\n', (0, t.jsxs)(n.p, { children: ['Formulieren - Visueel Ontwerp: ', (0, t.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar', children: 'Maak de toetsenbordfocus goed zichtbaar' }), '.'] }), '\n', (0, t.jsx)(n.h2, { id: 'bronnen', children: 'Bronnen' }), '\n', (0, t.jsxs)(n.p, { children: [(0, t.jsx)(n.a, { href: 'https://www.sarasoueidan.com/blog/focus-indicators/#wcag-2.1-and-wcag-2.2-focus-indicator-accessibility-requirements', children: (0, t.jsx)('span', { lang: 'en', children: 'A guide to designing accessible, WCAG-conformant focus indicators' }) }), ' van Sara Soueidan.'] }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(a.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, t.jsx)(n.p, { children: 'Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik de tab-toets om te controleren of links, buttons, invoervelden en checkboxes duidelijk zichtbaar de focus aangeven. Controleer de focus van radiobuttons en tabs met de pijltjestoetsen.' }), '\n', (0, t.jsxs)(n.p, { children: ['Als in de CSS de outline is verwijderd (', (0, t.jsx)(n.code, { children: 'outline: none;' }), '), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft, bijvoorbeeld door het toevoegen een CSS-border.'] }), '\n', (0, t.jsx)(n.p, { children: 'Additionele testen:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['de ', (0, t.jsx)(n.a, { href: '/wcag/2.4.1', children: 'skip link' }), ' wordt zichtbaar als deze toetsenbord krijgt.'] }), '\n', (0, t.jsx)(n.li, { children: 'de outline (of het alternatief) is goed zichtbaar in dark- en in light-mode, als deze optie aangeboden wordt op de webpagina.' }), '\n'] }), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#focus-visible', children: (0, t.jsx)('span', { lang: 'en', children: '2.4.7 Focus Visible' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#focus-zichtbaar', children: '2.4.7 Focus zichtbaar' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-visible', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 2.4.7 Focus Visible' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 2.4.7 Focus Visible' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) })] });
    }
-   function f(e = {}) {
+   function v(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(v, { ...e }) }) : v(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(m, { ...e }) }) : m(e);
    }
   },
   60256: (e, n, i) => {
@@ -75,6 +68,19 @@
    function s(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }), '\n', (0, t.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, t.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  23051: (e, n, i) => {
+   i.d(n, { ZP: () => o });
+   var t = i(52676),
+    r = i(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, r.a)(), ...e.components };
+    return (0, t.jsx)(n.p, { children: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).' });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };

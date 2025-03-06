@@ -2,8 +2,8 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [95617],
  {
-  13968: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => f, contentTitle: () => p, default: () => w, frontMatter: () => g, metadata: () => j, toc: () => m });
+  98649: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => j, contentTitle: () => g, default: () => b, frontMatter: () => u, metadata: () => p, toc: () => f });
    var t = i(52676),
     r = i(40139),
     s = i(57716),
@@ -11,33 +11,26 @@
     l = i(16167),
     c = i(60256),
     d = i(99042),
-    a = i(91114);
-   function h(e) {
-    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.' }), '\n', (0, t.jsx)(n.p, { children: 'Denk hierbij aan links, accordeons, iconen en linkteksten of labels en buttons in formulieren. Wees consistent, dan begrijpt de gebruiker beter wat de betekenis is.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: "Gebruik dezelfde tekst voor een verzendbutton bij de formulieren in een website. Niet in het ene formulier 'Verzenden' en in een ander formulier 'Versturen'." }), '\n', (0, t.jsx)(n.li, { children: 'Gebruik hetzelfde icoon voor een button om invoer te verwijderen. Niet eerst een prullenbak icoon, terwijl een andere button een kruis als icoon heeft.' }), '\n', (0, t.jsx)(n.li, { children: "Noem de link naar de voorpagina altijd hetzelfde binnen de website. Niet eerst 'Home', dan 'Voorpagina' en dan 'Start'." }), '\n'] })] });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
-   }
-   const g = { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.4 Consistente identificatie', pagination_label: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', slug: '3.2.4', keywords: ['WCAG'] },
-    p = void 0,
-    j = { id: 'wcag/3.2.04', title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', source: '@site/docs/wcag/3.2.04.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.4', permalink: '/wcag/3.2.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.4 Consistente identificatie', pagination_label: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', slug: '3.2.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', permalink: '/wcag/3.2.3' }, next: { title: 'WCAG-succescriterium 3.2.5 Verandering op verzoek', permalink: '/wcag/3.2.5' } },
-    f = {},
-    m = [
+    a = i(91114),
+    h = i(18574);
+   const u = { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.4 Consistente identificatie', pagination_label: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', slug: '3.2.4', keywords: ['WCAG'] },
+    g = void 0,
+    p = { id: 'wcag/3.2.04', title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', source: '@site/docs/wcag/3.2.04.mdx', sourceDirName: 'wcag', slug: '/wcag/3.2.4', permalink: '/wcag/3.2.4', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/3.2.04.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 3.2.4 Consistente identificatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '3.2.4 Consistente identificatie', pagination_label: 'WCAG-succescriterium 3.2.4 Consistente identificatie', description: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.', slug: '3.2.4', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 3.2.3 Consistente navigatie', permalink: '/wcag/3.2.3' }, next: { title: 'WCAG-succescriterium 3.2.5 Verandering op verzoek', permalink: '/wcag/3.2.5' } },
+    j = {},
+    f = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Opgelet', id: 'opgelet', level: 2 },
      { value: 'Gebruikersonderzoek', id: 'gebruikersonderzoek', level: 2 },
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function b(e) {
+   function m(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 3.2.4 Consistente identificatie' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(u, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(c.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#consistent-identification', children: (0, t.jsx)('span', { lang: 'en', children: '3.2.4 Consistent Identification' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#-identificatie', children: '3.2.4 Consistente identificatie' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 3.2.4 Consistent Identification' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 3.2.4 Consistent Identification' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(a.ZP, {}) })] });
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(o.j, { level: 1, conformanceLevel: 'Niveau AA', children: 'WCAG-succescriterium 3.2.4 Consistente identificatie' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(h.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(c.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#consistent-identification', children: (0, t.jsx)('span', { lang: 'en', children: '3.2.4 Consistent Identification' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#-identificatie', children: '3.2.4 Consistente identificatie' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 3.2.4 Consistent Identification' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 3.2.4 Consistent Identification' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(s.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(a.ZP, {}) })] });
    }
-   function w(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(b, { ...e }) }) : b(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(m, { ...e }) }) : m(e);
    }
   },
   60256: (e, n, i) => {
@@ -73,6 +66,19 @@
    function s(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }), '\n', (0, t.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, t.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  18574: (e, n, i) => {
+   i.d(n, { ZP: () => o });
+   var t = i(52676),
+    r = i(40139);
+   function s(e) {
+    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.' }), '\n', (0, t.jsx)(n.p, { children: 'Denk hierbij aan links, accordeons, iconen en linkteksten of labels en buttons in formulieren. Wees consistent, dan begrijpt de gebruiker beter wat de betekenis is.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: "Gebruik dezelfde tekst voor een verzendbutton bij de formulieren in een website. Niet in het ene formulier 'Verzenden' en in een ander formulier 'Versturen'." }), '\n', (0, t.jsx)(n.li, { children: 'Gebruik hetzelfde icoon voor een button om invoer te verwijderen. Niet eerst een prullenbak icoon, terwijl een andere button een kruis als icoon heeft.' }), '\n', (0, t.jsx)(n.li, { children: "Noem de link naar de voorpagina altijd hetzelfde binnen de website. Niet eerst 'Home', dan 'Voorpagina' en dan 'Start'." }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
