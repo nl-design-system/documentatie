@@ -142,18 +142,38 @@ Doel: Organisaties die de component gebruiken kunnen zien of de huisstijl uit ee
 
 Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.
 
+#### Importeer de design tokens
+
+Tip: Worden de design tokens van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+
+Importeer de design tokens van de organisatie in `/packages/storybook/config/preview.ts`:
+
+```tsx
+import "@example/organisatie-design-tokens/dist/index.css";
+```
+
+#### Importeer het custom font
+
+Tip: Heeft de organisatie geen custom font of word het custom font van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie. Ga dan door naar de volgende sectie.
+
+Importeer het custom font van de organisatie in `/packages/storybook/config/preview.ts`:
+
+```tsx
+import "@example/organisatie-design-tokens/src/font";
+```
+
 #### Maak een story bestand aan
 
-1. Ga naar `packages/storybook/voorbeeld-design-tokens`.
+1. Ga naar `packages/voorbeeld-design-tokens/documentation`.
 2. Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen.
 3. Maak een nieuw bestand aan met de naam `{prefix-organisatie}-{naam-component}.stories.tsx`.
 
 #### Voeg de component toe aan de story
 
 ```tsx
-// packages/storybook/voorbeeld-design-tokens/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx
+// packages/voorbeeld-design-tokens/documentation/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
-import { ComponentNaam } from "organisatie-package";
+import { ComponentNaam } from "@example";
 
 const meta = {
   id: "{prefix-organisatie}-{naam-component}",
@@ -231,16 +251,6 @@ export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   },
 ];
 ```
-
-#### Voeg de component toe aan een config toe
-
-1. Open de config.json van het thema van de organisatie.
-2. Voeg de ID van de story of stories toe aan `"stories": []`.
-
-Optioneel: voeg het component ook toe aan het voorbeeld thema
-
-1. Open de config.json van het Voorbeeld thema `packages/voorbeeld-design-tokens/src/config.json`.
-2. Voeg de ID van de story of stories toe aan `"stories": []`.
 
 ### Maak een Pull Request
 
