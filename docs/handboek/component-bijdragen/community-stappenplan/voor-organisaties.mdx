@@ -149,7 +149,7 @@ Tip: Worden de design tokens van de organisatie al geimporteerd in `/packages/st
 Importeer de design tokens van de organisatie in `/packages/storybook/config/preview.ts`:
 
 ```tsx
-import "organisatie-package/design-tokens/dist/index.css";
+import "@example/organisatie-design-tokens/dist/index.css";
 ```
 
 #### Maak een story bestand aan
@@ -163,7 +163,7 @@ import "organisatie-package/design-tokens/dist/index.css";
 ```tsx
 // packages/voorbeeld-design-tokens/documentation/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
-import { ComponentNaam } from "organisatie-package";
+import { ComponentNaam } from "@example";
 
 const meta = {
   id: "{prefix-organisatie}-{naam-component}",
