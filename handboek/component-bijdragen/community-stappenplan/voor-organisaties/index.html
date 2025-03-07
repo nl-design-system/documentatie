@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.43f226b5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.a1f3ad22.js" defer="defer"></script>
   <script src="/assets/js/main.c432fd35.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -293,21 +293,41 @@
               </ol>
               <h3 id="voeg-de-story-toe-aan-de-components-sectie-in-storybook" class="utrecht-heading-3">Voeg de story toe aan de <code class="utrecht-code">Components</code> sectie in Storybook</h3>
               <p>Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.</p>
-              <h4 id="maak-een-story-bestand-aan" class="utrecht-heading-4">Maak een story bestand aan</h4>
-              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
-               <li>Ga naar <code class="utrecht-code">packages/storybook/voorbeeld-design-tokens</code>.</li>
-               <li>Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen.</li>
-               <li>Maak een nieuw bestand aan met de naam <code class="utrecht-code">{prefix-organisatie}-{naam-component}.stories.tsx</code>.</li>
-              </ol>
-              <h4 id="voeg-de-component-toe-aan-de-story" class="utrecht-heading-4">Voeg de component toe aan de story</h4>
+              <h4 id="importeer-de-design-tokens" class="utrecht-heading-4">Importeer de design tokens</h4>
+              <p>Tip: Worden de design tokens van de organisatie al geimporteerd in <code class="utrecht-code">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie.</p>
+              <p>Importeer de design tokens van de organisatie in <code class="utrecht-code">/packages/storybook/config/preview.ts</code>:</p>
               <span hidden="" id=":Rfahralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rfahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/storybook/voorbeeld-design-tokens/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rfahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example/organisatie-design-tokens/dist/index.css&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
+</span></code></pre>
+              <h4 id="importeer-het-custom-font" class="utrecht-heading-4">Importeer het custom font</h4>
+              <p>Tip: Heeft de organisatie geen custom font of word het custom font van de organisatie al geimporteerd in <code class="utrecht-code">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie. Ga dan door naar de volgende sectie.</p>
+              <p>Importeer het custom font van de organisatie in <code class="utrecht-code">/packages/storybook/config/preview.ts</code>:</p>
+              <span hidden="" id=":Rgahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rgahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example/organisatie-design-tokens/src/font&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
+</span></code></pre>
+              <h4 id="maak-een-story-bestand-aan" class="utrecht-heading-4">Maak een story bestand aan</h4>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Ga naar <code class="utrecht-code">packages/voorbeeld-design-tokens/documentation</code>.</li>
+               <li>Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen.</li>
+               <li>Maak een nieuw bestand aan met de naam <code class="utrecht-code">{prefix-organisatie}-{naam-component}.stories.tsx</code>.</li>
+              </ol>
+              <h4 id="voeg-de-component-toe-aan-de-story" class="utrecht-heading-4">Voeg de component toe aan de story</h4>
+              <span hidden="" id=":Rhahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rhahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/voorbeeld-design-tokens/documentation/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">type</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"> </span><span class="token maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">Meta</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"> </span><span class="token maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">StoryObj</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@storybook/react&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token imports"> </span><span class="token imports maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">ComponentNaam</span><span class="token imports"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;organisatie-package&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token imports"> </span><span class="token imports maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">ComponentNaam</span><span class="token imports"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">const</span><span class="token plain"> meta </span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
@@ -344,12 +364,12 @@
               <p>Doel: makkelijk maken voor organisaties die de component hergebruiken om huisstijl keuzes te zien en automatisch op visuele regressies te testen bij nieuwe versies van de componenten bibliotheek.</p>
               <h4 id="voeg-organisatie-toe-aan-de-theme-toolkit" class="utrecht-heading-4">Voeg organisatie toe aan de theme-toolkit</h4>
               <p><strong>Tip!</strong> Is er al een bestand genaamd <code class="utrecht-code">packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</code> aanwezig? Ga in dat geval direct verder met de volgende sectie: &quot;Voeg een component toe&quot;.</p>
-              <span hidden="" id=":Rgihralaqh:"
+              <span hidden="" id=":Riihralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rgihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Riihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"> </span><span class="token constant" style="color:var(--nlds-code-block-constant-color)">STORY_GROUPS</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;./component-stories-util&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token imports"> </span><span class="token imports maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">ComponentName</span><span class="token imports"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;{react-component-library-package}&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
@@ -369,12 +389,12 @@
 </span></code></pre>
               <h4 id="voeg-een-component-toe-aan-de-organisatie-in-de-theme-toolkit" class="utrecht-heading-4">Voeg een component toe aan de organisatie in de theme-toolkit</h4>
               <p>In de array van stories kun je stories toevoegen voor de component. In ieder geval een <code class="utrecht-code">default</code> story, maar mogelijk ook stories voor de diverse states of varianten van de component waar losse design beslissingen over genomen kunnen worden.</p>
-              <span hidden="" id=":Rhahralaqh:"
+              <span hidden="" id=":Rjahralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rhahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rjahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">// De lijst van stories voor alle componenten</span><span class="token plain"></span>
@@ -391,16 +411,6 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">]</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
 </span></code></pre>
-              <h4 id="voeg-de-component-toe-aan-een-config-toe" class="utrecht-heading-4">Voeg de component toe aan een config toe</h4>
-              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
-               <li>Open de config.json van het thema van de organisatie.</li>
-               <li>Voeg de ID van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code>.</li>
-              </ol>
-              <p>Optioneel: voeg het component ook toe aan het voorbeeld thema</p>
-              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
-               <li>Open de config.json van het Voorbeeld thema <code class="utrecht-code">packages/voorbeeld-design-tokens/src/config.json</code>.</li>
-               <li>Voeg de ID van de story of stories toe aan <code class="utrecht-code">&quot;stories&quot;: []</code>.</li>
-              </ol>
               <h3 id="maak-een-pull-request" class="utrecht-heading-3">Maak een Pull Request</h3>
               <p>Zorg dat de component beschikbaar komt met een Pull Request op GitHub en vraag het kernteam in <a href="https://codefornl.slack.com/archives/C01DAT4TRPF" class="utrecht-link utrecht-link--html-a">#nl-design-system-developers</a> om een review.</p>
               <p><strong>🚩 Checkpoint</strong>: Theme Storybook URL</p>
@@ -415,23 +425,23 @@
               <p>Doel: alle teams kunnen nu zien dat de component beschikbaar is voor hergebruik door andere organsaties.</p>
               <p>Zet checkpoint &#x27;Status&#x27; op &#x27;Available&#x27;.</p>
               <p>Breng de community en het kernteam op de hoogte via Slack. De component kan daarna door het kernteam of tijdens een volgende Estafettemodeldag &#x27;Candidate&#x27; worden gemaakt.</p>
-              <span hidden="" id=":Rlahralaqh:"
+              <span hidden="" id=":Rmahralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rlahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rmahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">📣 Kernteam: Helpen jullie mee de component Community te maken?</span>
 </span></code></pre>
               <p>Heeft de component al de status &#x27;Community&#x27;? Plaats dan het volgende bericht:</p>
-              <span hidden="" id=":Rlqhralaqh:"
+              <span hidden="" id=":Rmqhralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rlqhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rmqhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Wat is er nieuw? {beschrijf hier wat er anders is aan deze implementatie ten opzichte van andere community componenten}</span>
