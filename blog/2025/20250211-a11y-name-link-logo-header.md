@@ -6,6 +6,7 @@ authors:
     title: Specialist webtoegankelijkheid
     url: https://www.linkedin.com/in/rianrietveld/
 tags: [link, logo, toegankelijke naam]
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog-toegankelijke-naam-link-logo.png
 hide_table_of_contents: false
 date: 2025-02-11
 ---
