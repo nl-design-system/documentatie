@@ -6,7 +6,7 @@
    t.r(n), t.d(n, { assets: () => r, contentTitle: () => l, default: () => d, frontMatter: () => o, metadata: () => s, toc: () => k });
    var a = t(52676),
     i = t(40139);
-   const o = { title: 'De toegankelijke naam van een link op een logo in de header', slug: 'toegankelijke-naam-link-logo-header', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['link', 'logo', 'toegankelijke naam'], hide_table_of_contents: !1, date: new Date('2025-02-11T00:00:00.000Z') },
+   const o = { title: 'De toegankelijke naam van een link op een logo in de header', slug: 'toegankelijke-naam-link-logo-header', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['link', 'logo', 'toegankelijke naam'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog-toegankelijke-naam-link-logo.png', hide_table_of_contents: !1, date: new Date('2025-02-11T00:00:00.000Z') },
     l = void 0,
     s = {
      permalink: '/blog/toegankelijke-naam-link-logo-header',
@@ -22,7 +22,7 @@
      ],
      hasTruncateMarker: !0,
      authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }],
-     frontMatter: { title: 'De toegankelijke naam van een link op een logo in de header', slug: 'toegankelijke-naam-link-logo-header', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['link', 'logo', 'toegankelijke naam'], hide_table_of_contents: !1, date: '2025-02-11T00:00:00.000Z' },
+     frontMatter: { title: 'De toegankelijke naam van een link op een logo in de header', slug: 'toegankelijke-naam-link-logo-header', authors: [{ name: 'Rian Rietveld', title: 'Specialist webtoegankelijkheid', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['link', 'logo', 'toegankelijke naam'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog-toegankelijke-naam-link-logo.png', hide_table_of_contents: !1, date: '2025-02-11T00:00:00.000Z' },
      unlisted: !1,
      nextItem: { title: 'Tips om in 9 stappen je A-status te halen', permalink: '/blog/tips-9-stappen-A-status-website' },
     },
