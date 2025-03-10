@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Het onderdeel van de userinterface waarmee een bezoeker de accordion opent, heeft de rol `button`.
+Het onderdeel van de gebruikersinterface waarmee een bezoeker de accordion opent, heeft de rol `button`.
 
 Opties:
 
