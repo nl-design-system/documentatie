@@ -66,17 +66,17 @@
     const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben.\nBijvoorbeeld:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'Een icoon dat betekenis heeft, zoals het icoon dat aangeeft dat een accordion in- of uitgeklapt kan worden.' }), '\n', (0, r.jsx)(n.li, { children: 'De omranding van accordion, om aan te geven waar de gebruiker kan klikken met de muis of touch.' }), '\n'] }), '\n', (0, r.jsx)(n.p, { children: 'Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn.' })] });
    }
-   function v(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(w, { ...e }) }) : w(e);
    }
-   function b(e) {
+   function v(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Het plaatsen van toetsenbordfocus of hover op de accordion, zorgt er niet voor dat de accordion opent.' });
    }
    function f(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(b, { ...e }) }) : b(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(v, { ...e }) }) : v(e);
    }
    function k(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
@@ -104,7 +104,7 @@
    }
    function T(e) {
     const n = { code: 'code', p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.' }), '\n', (0, r.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, r.jsxs)(n.p, { children: ['Met een zowel een ', (0, r.jsx)(n.code, { children: 'button' }), ' element als met een ', (0, r.jsx)(n.code, { children: 'details' }), ' en ', (0, r.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Met een div-element waarop ', (0, r.jsx)(n.code, { children: 'role= "button"' }), ' is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het ', (0, r.jsx)(n.code, { children: 'click' }), 'event, omdat dit apparaatonafhankelijk is.'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.' }), '\n', (0, r.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, r.jsxs)(n.p, { children: ['Met een zowel een ', (0, r.jsx)(n.code, { children: 'button' }), ' element als met een ', (0, r.jsx)(n.code, { children: 'details' }), ' en ', (0, r.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Met een div-element waarop ', (0, r.jsx)(n.code, { children: 'role= "button"' }), ' is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het ', (0, r.jsx)(n.code, { children: 'click' }), ' event, omdat dit apparaatonafhankelijk is.'] })] });
    }
    function G(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -136,7 +136,7 @@
    }
    function L(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Het onderdeel van de userinterface waarmee een bezoeker de accordion opent, heeft de rol ', (0, r.jsx)(n.code, { children: 'button' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Opties:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['\n', (0, r.jsx)(n.p, { children: 'Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.' }), '\n'] }), '\n', (0, r.jsxs)(n.li, { children: ['\n', (0, r.jsxs)(n.p, { children: ['Een HTML ', (0, r.jsx)(n.code, { children: 'button' }), ' heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een ', (0, r.jsx)(n.code, { children: 'role=button' }), ' toe te voegen aan een ander element dan een ', (0, r.jsx)(n.code, { children: 'button' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.'] }), '\n'] }), '\n'] }), '\n', (0, r.jsx)(n.p, { children: 'De staat van de accordion (open of dicht) moet ook beschikbaar zijn voor hulpsoftware.' }), '\n', (0, r.jsx)(n.p, { children: 'Opties:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['\n', (0, r.jsx)(n.p, { children: 'Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.' }), '\n'] }), '\n', (0, r.jsxs)(n.li, { children: ['\n', (0, r.jsx)(n.p, { children: 'Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.' }), '\n'] }), '\n'] }), '\n', (0, r.jsxs)(n.p, { children: ['Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat ', (0, r.jsx)(n.code, { children: 'aria-expanded' }), ' de waarde ', (0, r.jsx)(n.code, { children: 'false' }), ' krijgt wanneer het menu weer is ingeklapt.'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<button aria-expanded="true">Menu</button>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat ', (0, r.jsx)(n.code, { children: 'aria-expanded' }), ' de waarde ', (0, r.jsx)(n.code, { children: 'false' }), ' krijgt wanneer het menu weer is ingeklapt.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Het onderdeel van de gebruikersinterface waarmee een bezoeker de accordion opent, heeft de rol ', (0, r.jsx)(n.code, { children: 'button' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Opties:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.' }), '\n', (0, r.jsxs)(n.li, { children: ['Een HTML ', (0, r.jsx)(n.code, { children: 'button' }), ' heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een ', (0, r.jsx)(n.code, { children: 'role=button' }), ' toe te voegen aan een ander element dan een ', (0, r.jsx)(n.code, { children: 'button' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.'] }), '\n'] }), '\n', (0, r.jsx)(n.p, { children: 'De staat van de accordion (open of dicht) moet ook beschikbaar zijn voor hulpsoftware.' }), '\n', (0, r.jsx)(n.p, { children: 'Opties:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.' }), '\n', (0, r.jsx)(n.li, { children: 'Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.' }), '\n'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<button aria-expanded="true">Menu</button>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat ', (0, r.jsx)(n.code, { children: 'aria-expanded' }), ' de waarde ', (0, r.jsx)(n.code, { children: 'false' }), ' krijgt wanneer het menu weer is ingeklapt.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
    }
    function P(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -210,7 +210,7 @@
        items: [
         { title: 'Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur', sc: '1.4.1', status: '', component: (0, r.jsx)(d, {}) },
         { title: 'De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg', sc: '1.4.3', status: '', component: (0, r.jsx)(h, {}) },
-        { title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond', sc: '1.4.11', status: '', component: (0, r.jsx)(v, {}) },
+        { title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond', sc: '1.4.11', status: '', component: (0, r.jsx)(b, {}) },
         { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.7', status: '', component: (0, r.jsx)(H.ZP, {}) },
         { title: 'Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit', sc: '3.2.4', status: '', component: (0, r.jsx)(B.ZP, {}) },
        ],
@@ -568,15 +568,15 @@
    };
    var j = t(23355),
     w = t(41757),
-    v = t(16167),
-    b = t(55476);
+    b = t(16167),
+    v = t(55476);
    const f = (e) => {
      let { children: n } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: n });
     },
     k = (e) => {
      let { checked: n, children: t, title: r, description: o, headingLevel: s = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(b.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), o, t] })] });
     };
    var x = t(14669);
    const y = (e) => {

@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.8bb4553d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.47544d03.js" defer="defer"></script>
   <script src="/assets/js/main.c432fd35.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -1202,7 +1202,7 @@
                   </dl>
                   <p>Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
                   <p>Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.</p>
-                  <p>Met een zowel een <code class="utrecht-code">button</code> element als met een <code class="utrecht-code">details</code> en <code class="utrecht-code">summary</code> combinatie gaat dit automatisch goed. Met een div-element waarop <code class="utrecht-code">role= &quot;button&quot;</code> is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het <code class="utrecht-code">click</code>event, omdat dit apparaatonafhankelijk is.</p>
+                  <p>Met een zowel een <code class="utrecht-code">button</code> element als met een <code class="utrecht-code">details</code> en <code class="utrecht-code">summary</code> combinatie gaat dit automatisch goed. Met een div-element waarop <code class="utrecht-code">role= &quot;button&quot;</code> is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het <code class="utrecht-code">click</code> event, omdat dit apparaatonafhankelijk is.</p>
                  </div>
                 </div>
                </div>
@@ -1261,33 +1261,24 @@
                    <dt class="component-criteria-section__dt">WCAG</dt>
                    <dd class="component-criteria-section__dd"><a href="/wcag/4.1.2" class="utrecht-link utrecht-link--html-a">4.1.2 Naam, rol, waarde</a></dd>
                   </dl>
-                  <p>Het onderdeel van de userinterface waarmee een bezoeker de accordion opent, heeft de rol <code class="utrecht-code">button</code>.</p>
+                  <p>Het onderdeel van de gebruikersinterface waarmee een bezoeker de accordion opent, heeft de rol <code class="utrecht-code">button</code>.</p>
                   <p>Opties:</p>
                   <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                   <li>
-                    <p>Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.</p>
-                   </li>
-                   <li>
-                    <p>Een HTML <code class="utrecht-code">button</code> heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een <code class="utrecht-code">role=button</code> toe te voegen aan een ander element dan een <code class="utrecht-code">button</code>, maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.</p>
-                   </li>
+                   <li>Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.</li>
+                   <li>Een HTML <code class="utrecht-code">button</code> heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een <code class="utrecht-code">role=button</code> toe te voegen aan een ander element dan een <code class="utrecht-code">button</code>, maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.</li>
                   </ul>
                   <p>De staat van de accordion (open of dicht) moet ook beschikbaar zijn voor hulpsoftware.</p>
                   <p>Opties:</p>
                   <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                   <li>
-                    <p>Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.</p>
-                   </li>
-                   <li>
-                    <p>Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.</p>
-                   </li>
+                   <li>Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.</li>
+                   <li>Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.</li>
                   </ul>
-                  <p>Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat <code class="utrecht-code">aria-expanded</code> de waarde <code class="utrecht-code">false</code> krijgt wanneer het menu weer is ingeklapt.</p>
-                  <span hidden="" id=":Rfsnbmhralaqh:"
+                  <span hidden="" id=":Rdsnbmhralaqh:"
                    >codevoorbeeld
                    <!-- -->
                    <!-- -->
                   </span>
-                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rfsnbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-expanded</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">true</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Menu</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdsnbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-expanded</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">true</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Menu</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                   <p>Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat <code class="utrecht-code">aria-expanded</code> de waarde <code class="utrecht-code">false</code> krijgt wanneer het menu weer is ingeklapt.</p>
                   <p>NL Design System richtlijnen:</p>
