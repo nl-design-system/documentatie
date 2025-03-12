@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.82ec530d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.12ed6a7c.js" defer="defer"></script>
   <script src="/assets/js/main.fbb7a4c6.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -626,7 +626,7 @@
               <h3 id="schematische-afbeelding-maken" class="utrecht-heading-3">Schematische afbeelding maken</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Maak een schematische afbeelding in het <a href="https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&amp;node-id=606-943&amp;mode=design" class="utrecht-link utrecht-link--html-a">&#x27;Doc website - Afbeeldingen&#x27; Figma bestand</a>.</li>
-               <li>Gebruik als naam voor het frame <code class="utrecht-code">componenten*overzicht*{naam-component}</code>.</li>
+               <li>Gebruik als naam voor het frame <code class="utrecht-code">componenten_overzicht_{naam-component}</code>.</li>
                <li>Exporteer de afbeelding als SVG-bestand.</li>
               </ul>
               <h3 id="branch-klaar-zetten" class="utrecht-heading-3">Branch klaar zetten</h3>
@@ -653,14 +653,14 @@
                <li>
                 Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.<!-- -->
                 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li><code class="utrecht-code">#F9F6F3</code> wordt <code class="utrecht-code">var(--component-illustration-background-color, white)</code>.</li>
-                 <li><code class="utrecht-code">#E4EBED</code> wordt <code class="utrecht-code">var(--component-illustration-grid-color, #EEE)</code>.</li>
-                 <li><code class="utrecht-code">#004152</code> wordt <code class="utrecht-code">var(--component-illustration-color, #666)</code>.</li>
+                 <li><code class="utrecht-code">#FFF3EA</code> wordt <code class="utrecht-code">var(--component-illustration-background-color, white)</code>.</li>
+                 <li><code class="utrecht-code">#FAD6BA</code> wordt <code class="utrecht-code">var(--component-illustration-grid-color, #EEE)</code>.</li>
+                 <li><code class="utrecht-code">#46280D</code> wordt <code class="utrecht-code">var(--component-illustration-color, #666)</code>.</li>
                  <li><code class="utrecht-code">white</code> wordt <code class="utrecht-code">var(--component-illustration-background-color, white)</code>.</li>
                 </ul>
                </li>
               </ul>
-              <p><strong>Tip!</strong> Met de toetscombinatie <code class="utrecht-code">Cmd+D</code> (of <code class="utrecht-code">Ctrl+D</code>) kun je stukjes code selecteren die overeenkomen met je huidige selectie.</p>
+              <p><strong>Tip!</strong> Met de toetscombinatie <code class="utrecht-code">Cmd+D</code> (of <code class="utrecht-code">Ctrl+D</code>) kun je stukjes code selecteren die overeenkomen met je huidige selectie. Let wel op met het selecteren van <code class="utrecht-code">white</code>. Die term komt ook voor als fallback in de eerste token.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>
                 Voeg de volgende stukjes code toe om het SVG-bestand dynamisch in te laden.<!-- -->
@@ -697,6 +697,7 @@
               <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R14ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">feat: add documentation page for {naam-component}</span>
 </span></code></pre>
               <h3 id="component-progress-bijwerken" class="utrecht-heading-3">Component progress bijwerken</h3>
+              <p><strong>Tip!</strong> Voordat je de component progress gaat bijwerken is het handig om te controleren of alle checkpoints op het <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">Help Wanted bord</a> op groen staan. Checkpoint &#x27;nldesignsystem.nl&#x27; mag je nu ook alvast op &#x27;Done&#x27; zetten.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package door op <code class="utrecht-code">Run Workflow</code> te klikken in <a href="https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml" class="utrecht-link utrecht-link--html-a">GitHub Actions van de Index repository</a>. Kies hierbij voor de <code class="utrecht-code">main</code> branch.</li>
                <li>Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">component-progress op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.</li>
@@ -704,12 +705,12 @@
                <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
               </ul>
               <p><strong>Commit Message</strong></p>
-              <span hidden="" id=":R15ahralaqh:"
+              <span hidden="" id=":R15ihralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R15ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build: update component progress</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R15ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build: update component progress</span>
 </span></code></pre>
               <h3 id="branch-publiceren" class="utrecht-heading-3">Branch publiceren</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
@@ -717,20 +718,20 @@
                <li>Ga naar GitHub en gebruik de volgende opzet voor je PR:</li>
               </ul>
               <p><strong>Title</strong></p>
-              <span hidden="" id=":R16ahralaqh:"
+              <span hidden="" id=":R16ihralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R16ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">docs: add {naam-component} to documentation site</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R16ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">docs: add {naam-component} to documentation site</span>
 </span></code></pre>
               <p><strong>Description</strong></p>
-              <span hidden="" id=":R16qhralaqh:"
+              <span hidden="" id=":R172hralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R16qhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- add illustration for {naam-component}.</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R172hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- add illustration for {naam-component}.</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- add documentation page for {naam-component}.</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- update component progress.</span>
 </span></code></pre>
@@ -742,12 +743,12 @@
               <h2 id="-finish" class="utrecht-heading-2">🏁 Finish</h2>
               <p>Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">&#x27;Help Wanted&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. De component gaat nu door voor de &#x27;Community&#x27; status. Het is goed om dit ook met de rest van de community te delen.</p>
               <p>Plaats deze tekst in de &#x27;thread&#x27; van het &#x27;Hiep hoi&#x27; bericht, vul aan waar nodig.</p>
-              <span hidden="" id=":R18ahralaqh:"
+              <span hidden="" id=":R18ihralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R18ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✅ Het kernteam heeft besloten dat de naam en beschrijving van dit component duidelijk zijn en de component algemeen nuttig is voor meerdere organisaties.</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R18ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✅ Het kernteam heeft besloten dat de naam en beschrijving van dit component duidelijk zijn en de component algemeen nuttig is voor meerdere organisaties.</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✨ </span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token bold content" style="font-weight:bold">Dit component is nu Help Wanted</span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token plain"> ✨</span>
