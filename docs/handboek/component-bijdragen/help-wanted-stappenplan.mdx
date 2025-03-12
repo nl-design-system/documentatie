@@ -438,7 +438,7 @@ Deze stap kan enkel worden uitgevoerd door het kernteam.
 ### Schematische afbeelding maken
 
 - Maak een schematische afbeelding in het ['Doc website - Afbeeldingen' Figma bestand](https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&node-id=606-943&mode=design).
-- Gebruik als naam voor het frame `componenten*overzicht*{naam-component}`.
+- Gebruik als naam voor het frame `componenten_overzicht_{naam-component}`.
 - Exporteer de afbeelding als SVG-bestand.
 
 ### Branch klaar zetten
@@ -464,13 +464,13 @@ Installeer in Visual Studio Code de extentie 'SVG' ontwikkeld door Jock.
 - Kies 'View' in de hoofdnavigatie van Visual Studio Code en open 'Command Palette...'.
 - Typ 'svg' en kies voor 'Preview SVG'. De visuele weergave van het SVG-bestand wordt vervolgens zichtbaar.
 - Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.
-  - `#F9F6F3` wordt `var(--component-illustration-background-color, white)`.
-  - `#E4EBED` wordt `var(--component-illustration-grid-color, #EEE)`.
-  - `#004152` wordt `var(--component-illustration-color, #666)`.
+  - `#FFF3EA` wordt `var(--component-illustration-background-color, white)`.
+  - `#FAD6BA` wordt `var(--component-illustration-grid-color, #EEE)`.
+  - `#46280D` wordt `var(--component-illustration-color, #666)`.
   - `white` wordt `var(--component-illustration-background-color, white)`.
 
 **Tip!**
-Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je stukjes code selecteren die overeenkomen met je huidige selectie.
+Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je stukjes code selecteren die overeenkomen met je huidige selectie. Let wel op met het selecteren van `white`. Die term komt ook voor als fallback in de eerste token.
 
 - Voeg de volgende stukjes code toe om het SVG-bestand dynamisch in te laden.
   - Op de 2e regel, direct na `<svg...`, plak je `<symbol id="component-illustration">`.
@@ -499,6 +499,9 @@ feat: add documentation page for {naam-component}
 ```
 
 ### Component progress bijwerken
+
+**Tip!**
+Voordat je de component progress gaat bijwerken is het handig om te controleren of alle checkpoints op het [Help Wanted bord](https://github.com/orgs/nl-design-system/projects/27/views/1) op groen staan. Checkpoint 'nldesignsystem.nl' mag je nu ook alvast op 'Done' zetten.
 
 - Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
 - Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
