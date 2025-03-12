@@ -1,0 +1,40 @@
+---
+title: { naam-component }
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: { naam-component }
+pagination_label: { naam-component }
+description: { beschrijving-component }
+slug: /{naam-component-kebab-case}
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "{naam-component}";
+export const description = "{beschrijving-component}";
+export const issueNumber = {github-issue-nummer};
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Help component verbeteren
+
+<HelpImproveComponent component={component} headingLevel={3} />
