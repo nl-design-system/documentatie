@@ -3,10 +3,10 @@
  [29386],
  {
   69531: (e, n, a) => {
-   a.r(n), a.d(n, { assets: () => l, contentTitle: () => o, default: () => m, frontMatter: () => i, metadata: () => d, toc: () => s });
+   a.r(n), a.d(n, { assets: () => s, contentTitle: () => o, default: () => m, frontMatter: () => i, metadata: () => d, toc: () => l });
    var t = a(52676),
     r = a(40139);
-   const i = { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', slug: 'gebruikerstest-ondernemers-den-haag', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['meta', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/lessen-gebruikerstest.png?raw=true', hide_table_of_contents: !1, date: new Date('2024-03-11T00:00:00.000Z') },
+   const i = { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', slug: 'gebruikerstest-ondernemers-den-haag', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['meta', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/lessen-gebruikerstest.png', hide_table_of_contents: !1, date: new Date('2024-03-11T00:00:00.000Z') },
     o = void 0,
     d = {
      permalink: '/blog/gebruikerstest-ondernemers-den-haag',
@@ -21,13 +21,13 @@
      ],
      hasTruncateMarker: !0,
      authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }],
-     frontMatter: { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', slug: 'gebruikerstest-ondernemers-den-haag', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['meta', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/lessen-gebruikerstest.png?raw=true', hide_table_of_contents: !1, date: '2024-03-11T00:00:00.000Z' },
+     frontMatter: { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', slug: 'gebruikerstest-ondernemers-den-haag', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['meta', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/lessen-gebruikerstest.png', hide_table_of_contents: !1, date: '2024-03-11T00:00:00.000Z' },
      unlisted: !1,
      prevItem: { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', permalink: '/blog/design-open-dag' },
      nextItem: { title: 'Ik wil je wat vragen, maar ik heb geen WhatsApp!', permalink: '/blog/meerdere-manieren-contact' },
     },
-    l = { authorsImageUrls: [void 0] },
-    s = [
+    s = { authorsImageUrls: [void 0] },
+    l = [
      { value: 'Alle aanvragen worden behandeld, ook als ze foutief of onvolledig zijn', id: 'alle-aanvragen-worden-behandeld-ook-als-ze-foutief-of-onvolledig-zijn', level: 2 },
      { value: 'Gebruikerstest met ondernemers uit Den Haag en omstreken', id: 'gebruikerstest-met-ondernemers-uit-den-haag-en-omstreken', level: 2 },
      { value: 'Doel: alle formulieren overzetten naar het nieuwe ontwerp', id: 'doel-alle-formulieren-overzetten-naar-het-nieuwe-ontwerp', level: 2 },

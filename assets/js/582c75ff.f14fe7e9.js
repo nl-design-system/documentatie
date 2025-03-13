@@ -6,7 +6,7 @@
    t.r(n), t.d(n, { assets: () => s, contentTitle: () => o, default: () => m, frontMatter: () => r, metadata: () => l, toc: () => d });
    var a = t(52676),
     i = t(40139);
-   const r = { title: 'Ik wil je wat vragen, maar ik heb geen WhatsApp!', slug: 'meerdere-manieren-contact', authors: [{ name: 'Rian Rietveld', title: 'Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['toegankelijkheid', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/meerdere-manieren.png?raw=true', hide_table_of_contents: !1, date: new Date('2024-03-05T00:00:00.000Z') },
+   const r = { title: 'Ik wil je wat vragen, maar ik heb geen WhatsApp!', slug: 'meerdere-manieren-contact', authors: [{ name: 'Rian Rietveld', title: 'Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['toegankelijkheid', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/meerdere-manieren.png', hide_table_of_contents: !1, date: new Date('2024-03-05T00:00:00.000Z') },
     o = void 0,
     l = {
      permalink: '/blog/meerdere-manieren-contact',
@@ -21,7 +21,7 @@
      ],
      hasTruncateMarker: !0,
      authors: [{ name: 'Rian Rietveld', title: 'Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }],
-     frontMatter: { title: 'Ik wil je wat vragen, maar ik heb geen WhatsApp!', slug: 'meerdere-manieren-contact', authors: [{ name: 'Rian Rietveld', title: 'Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['toegankelijkheid', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/meerdere-manieren.png?raw=true', hide_table_of_contents: !1, date: '2024-03-05T00:00:00.000Z' },
+     frontMatter: { title: 'Ik wil je wat vragen, maar ik heb geen WhatsApp!', slug: 'meerdere-manieren-contact', authors: [{ name: 'Rian Rietveld', title: 'Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/rianrietveld/' }], tags: ['toegankelijkheid', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/meerdere-manieren.png', hide_table_of_contents: !1, date: '2024-03-05T00:00:00.000Z' },
      unlisted: !1,
      prevItem: { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', permalink: '/blog/gebruikerstest-ondernemers-den-haag' },
      nextItem: { title: 'Over de licentiekeuze van NL Design System', permalink: '/blog/licentiekeuze-nl-design-system' },

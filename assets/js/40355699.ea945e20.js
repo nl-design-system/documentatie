@@ -1,14 +1,14 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [8557],
+ [88567],
  {
-  6925: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => d, contentTitle: () => i, default: () => g, frontMatter: () => s, metadata: () => r, toc: () => m });
+  95330: (e, n, t) => {
+   t.r(n), t.d(n, { assets: () => d, contentTitle: () => r, default: () => g, frontMatter: () => s, metadata: () => i, toc: () => m });
    var o = t(52676),
     a = t(40139);
-   const s = { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', slug: 'community-blocks', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['WordPress', 'developers', 'NL Design System'], hide_table_of_contents: !1, image: 'https://github.com/nl-design-system/documentatie/blob/assets/community-blocks.png?raw=true', date: new Date('2024-05-22T00:00:00.000Z') },
-    i = void 0,
-    r = {
+   const s = { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', slug: 'community-blocks', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['WordPress', 'developers', 'NL Design System'], hide_table_of_contents: !1, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/community-blocks.png', date: new Date('2024-05-22T00:00:00.000Z') },
+    r = void 0,
+    i = {
      permalink: '/blog/community-blocks',
      source: '@site/blog/2024/20240522-community-blocks.md',
      title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress',
@@ -22,7 +22,7 @@
      ],
      hasTruncateMarker: !1,
      authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }],
-     frontMatter: { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', slug: 'community-blocks', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['WordPress', 'developers', 'NL Design System'], hide_table_of_contents: !1, image: 'https://github.com/nl-design-system/documentatie/blob/assets/community-blocks.png?raw=true', date: '2024-05-22T00:00:00.000Z' },
+     frontMatter: { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', slug: 'community-blocks', authors: [{ name: 'Renate Bruinenberg', title: 'Communicatieadviseur NL Design System', url: 'https://www.linkedin.com/in/renate-bruinenberg-886019163/' }], tags: ['WordPress', 'developers', 'NL Design System'], hide_table_of_contents: !1, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/community-blocks.png', date: '2024-05-22T00:00:00.000Z' },
      unlisted: !1,
      prevItem: { title: 'Toegankelijke foutmeldingen in formulieren', permalink: '/blog/toegankelijke-foutmeldingen-formulieren' },
      nextItem: { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', permalink: '/blog/design-open-dag' },
@@ -44,11 +44,11 @@
    }
   },
   40139: (e, n, t) => {
-   t.d(n, { Z: () => r, a: () => i });
+   t.d(n, { Z: () => i, a: () => r });
    var o = t(75271);
    const a = {},
     s = o.createContext(a);
-   function i(e) {
+   function r(e) {
     const n = o.useContext(s);
     return o.useMemo(
      function () {
@@ -57,9 +57,9 @@
      [n, e],
     );
    }
-   function r(e) {
+   function i(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : i(e.components)), o.createElement(s.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : r(e.components)), o.createElement(s.Provider, { value: n }, e.children);
    }
   },
  },

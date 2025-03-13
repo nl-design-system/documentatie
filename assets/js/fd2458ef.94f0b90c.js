@@ -6,7 +6,7 @@
    t.r(n), t.d(n, { assets: () => d, contentTitle: () => i, default: () => c, frontMatter: () => s, metadata: () => r, toc: () => l });
    var a = t(52676),
     o = t(40139);
-   const s = { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', slug: 'design-open-dag', authors: [{ name: 'Hidde de Vries', title: 'Public relations lead & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }], tags: ['meta', 'estafettemodel', 'designers', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/samen-aan-de-slag.png?raw=true', hide_table_of_contents: !1, date: new Date('2024-03-22T00:00:00.000Z') },
+   const s = { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', slug: 'design-open-dag', authors: [{ name: 'Hidde de Vries', title: 'Public relations lead & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }], tags: ['meta', 'estafettemodel', 'designers', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/samen-aan-de-slag.png', hide_table_of_contents: !1, date: new Date('2024-03-22T00:00:00.000Z') },
     i = void 0,
     r = {
      permalink: '/blog/design-open-dag',
@@ -23,7 +23,7 @@
      ],
      hasTruncateMarker: !1,
      authors: [{ name: 'Hidde de Vries', title: 'Public relations lead & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }],
-     frontMatter: { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', slug: 'design-open-dag', authors: [{ name: 'Hidde de Vries', title: 'Public relations lead & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }], tags: ['meta', 'estafettemodel', 'designers', 'NL Design System'], image: 'https://github.com/nl-design-system/documentatie/blob/assets/samen-aan-de-slag.png?raw=true', hide_table_of_contents: !1, date: '2024-03-22T00:00:00.000Z' },
+     frontMatter: { title: 'Samen aan de slag met het esta\xadfette\xad\xadmo\xaddel', slug: 'design-open-dag', authors: [{ name: 'Hidde de Vries', title: 'Public relations lead & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }], tags: ['meta', 'estafettemodel', 'designers', 'NL Design System'], image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/samen-aan-de-slag.png', hide_table_of_contents: !1, date: '2024-03-22T00:00:00.000Z' },
      unlisted: !1,
      prevItem: { title: 'Van eigen componenten naar open source \u201cblocks\u201d voor WordPress', permalink: '/blog/community-blocks' },
      nextItem: { title: 'Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers', permalink: '/blog/gebruikerstest-ondernemers-den-haag' },
