@@ -7,10 +7,11 @@ import Rian from './Rian';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Yolijn from './Yolijn';
+import Menno from './Menno';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rian, Rozerin, Emma];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rian, Rozerin, Emma, Menno];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
