@@ -3,14 +3,20 @@ import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
-import { AccordionProvider, Fieldset, FormToggle, Paragraph } from '@utrecht/component-library-react';
+import {
+  AccordionProvider,
+  Fieldset,
+  FormToggle,
+  Paragraph,
+  PrimaryActionButton,
+} from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
 import { useEffect, useState } from 'react';
+import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
-import { EstafetteBadge } from './EstafetteBadge';
-import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
 import './ComponentOverview.css';
+import { EstafetteBadge } from './EstafetteBadge';
 
 export const ComponentOverview = () => {
   const SEARCH_PARAM = 'filter';
@@ -51,6 +57,11 @@ export const ComponentOverview = () => {
   const [showOnlyImplemented, setshowOnlyImplemented] = useState(
     params.has(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED),
   );
+
+  const showAllComponents = () => {
+    // Reset the filter and reload the page to show all components
+    window.location.search = '';
+  };
 
   useEffect(() => {
     setFilteredComponents(() =>
@@ -108,11 +119,6 @@ export const ComponentOverview = () => {
     replace({ ...location, search: params.toString() });
   }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showOnlyImplemented]);
 
-  const todo = components.filter((c) => c.relayStep === 'UNKNOWN');
-  const helpWanted = components.filter((c) => c.relayStep === 'HELP_WANTED');
-  const community = components.filter((c) => c.relayStep === 'COMMUNITY');
-  const candidate = components.filter((c) => c.relayStep === 'CANDIDATE');
-  const hallOfFame = components.filter((c) => c.relayStep === 'HALL_OF_FAME');
   const onlyImplemented = components.filter((c) =>
     c.projects?.filter((p) => {
       const results = !relayProjectIds.includes(p.id);
@@ -135,66 +141,52 @@ export const ComponentOverview = () => {
             body: (
               <>
                 <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-                  {!!todo.length && (
-                    <FormField type="checkbox">
-                      <Checkbox
-                        defaultChecked={showTodo}
-                        id="TODO"
-                        onChange={() => setShowTodo((checked) => !checked)}
-                      />
-                      <FormLabel htmlFor="TODO">
-                        <EstafetteBadge state="Todo" />
-                      </FormLabel>
-                    </FormField>
-                  )}
-                  {!!helpWanted.length && (
-                    <FormField type="checkbox">
-                      <Checkbox
-                        defaultChecked={showHelpWanted}
-                        id="HELP_WANTED"
-                        onChange={() => setShowHelpWanted((checked) => !checked)}
-                      />
-                      <FormLabel htmlFor="HELP_WANTED">
-                        <EstafetteBadge state="Help Wanted" />
-                      </FormLabel>
-                    </FormField>
-                  )}
-                  {!!community.length && (
-                    <FormField type="checkbox">
-                      <Checkbox
-                        defaultChecked={showCommunity}
-                        id="COMMUNITY"
-                        onChange={() => setShowCommunity((checked) => !checked)}
-                      />
-                      <FormLabel htmlFor="COMMUNITY">
-                        <EstafetteBadge state="Community" />
-                      </FormLabel>
-                    </FormField>
-                  )}
-                  {!!candidate.length && (
-                    <FormField type="checkbox">
-                      <Checkbox
-                        defaultChecked={showCandidate}
-                        id="CANDIDATE"
-                        onChange={() => setShowCandidate((checked) => !checked)}
-                      />
-                      <FormLabel htmlFor="CANDIDATE">
-                        <EstafetteBadge state="Candidate" />
-                      </FormLabel>
-                    </FormField>
-                  )}
-                  {!!hallOfFame.length && (
-                    <FormField type="checkbox">
-                      <Checkbox
-                        defaultChecked={showHallOfFame}
-                        id="HALL_OF_FAME"
-                        onChange={() => setShowHallOfFame((checked) => !checked)}
-                      />
-                      <FormLabel htmlFor="HALL_OF_FAME">
-                        <EstafetteBadge state="Hall of Fame" />
-                      </FormLabel>
-                    </FormField>
-                  )}
+                  <FormField type="checkbox">
+                    <Checkbox defaultChecked={showTodo} id="TODO" onChange={() => setShowTodo((checked) => !checked)} />
+                    <FormLabel htmlFor="TODO">
+                      <EstafetteBadge state="Todo" />
+                    </FormLabel>
+                  </FormField>
+                  <FormField type="checkbox">
+                    <Checkbox
+                      defaultChecked={showHelpWanted}
+                      id="HELP_WANTED"
+                      onChange={() => setShowHelpWanted((checked) => !checked)}
+                    />
+                    <FormLabel htmlFor="HELP_WANTED">
+                      <EstafetteBadge state="Help Wanted" />
+                    </FormLabel>
+                  </FormField>
+                  <FormField type="checkbox">
+                    <Checkbox
+                      defaultChecked={showCommunity}
+                      id="COMMUNITY"
+                      onChange={() => setShowCommunity((checked) => !checked)}
+                    />
+                    <FormLabel htmlFor="COMMUNITY">
+                      <EstafetteBadge state="Community" />
+                    </FormLabel>
+                  </FormField>
+                  <FormField type="checkbox">
+                    <Checkbox
+                      defaultChecked={showCandidate}
+                      id="CANDIDATE"
+                      onChange={() => setShowCandidate((checked) => !checked)}
+                    />
+                    <FormLabel htmlFor="CANDIDATE">
+                      <EstafetteBadge state="Candidate" />
+                    </FormLabel>
+                  </FormField>
+                  <FormField type="checkbox">
+                    <Checkbox
+                      defaultChecked={showHallOfFame}
+                      id="HALL_OF_FAME"
+                      onChange={() => setShowHallOfFame((checked) => !checked)}
+                    />
+                    <FormLabel htmlFor="HALL_OF_FAME">
+                      <EstafetteBadge state="Hall of Fame" />
+                    </FormLabel>
+                  </FormField>
                   <Paragraph style={{ '--utrecht-paragraph-margin-block-end': '1rem' }}>
                     <b>Tip</b>: Zien welke componenten je nu al kunt gebruiken? Kies dan onderstaande optie om alleen
                     beschikbare componenten te tonen.
@@ -220,6 +212,13 @@ export const ComponentOverview = () => {
       <Paragraph role="status" id="filter-results">
         {filteredComponents.length} van {components.length} componenten zichtbaar
       </Paragraph>
+
+      {filteredComponents.length === 0 && (
+        <Paragraph>
+          <PrimaryActionButton onClick={() => showAllComponents()}>Toon alle componenten</PrimaryActionButton>
+        </Paragraph>
+      )}
+
       <CardGroup appearance="large">
         {filteredComponents.map(({ title, id, href, description }) => {
           const component = componentProgress.find((item) => {
