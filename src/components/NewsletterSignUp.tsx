@@ -52,7 +52,7 @@ export const NewsletterSignUp = ({
     formState: { errors },
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
-  const IS_ENGLISH = language && language.value === '2';
+  const IS_ENGLISH = language?.value === '2';
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
@@ -210,7 +210,7 @@ export const NewsletterSignUp = ({
         </FormField>
       )}
 
-      {language && language.id && <input type="hidden" name={language.id} value={language.value} />}
+      {language?.id && <input type="hidden" name={language.id} value={language.value} />}
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
