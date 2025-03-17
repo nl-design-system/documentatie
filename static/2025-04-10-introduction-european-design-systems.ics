@@ -72,15 +72,8 @@ SEQUENCE:0
 SUMMARY:Introduction into European Design Systems
 DTSTART;TZID=Europe/Berlin:20250410T130000
 CREATED:20250317T075638Z
-ATTENDEE;CN="Astrid Brantjes";CUTYPE=INDIVIDUAL;EMAIL="astrid.brantjes@i
- ctu.nl";PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:mailto:astrid.brantjes@ic
- tu.nl
 ATTENDEE;CN="NL Design System";CUTYPE=INDIVIDUAL;EMAIL="info@nldesignsys
  tem.nl";ROLE=CHAIR:mailto:info@nldesignsystem.nl
-ATTENDEE;CN="Robbert Broersma";CUTYPE=INDIVIDUAL;EMAIL="Robbert.Broersma
- @ictu.nl";ROLE=REQ-PARTICIPANT:mailto:Robbert.Broersma@ictu.nl
-ATTENDEE;CN="Yolijn van der Kolk";CUTYPE=INDIVIDUAL;EMAIL="Yolijn.vander
- Kolk@ictu.nl";ROLE=REQ-PARTICIPANT:mailto:Yolijn.vanderKolk@ictu.nl
 BEGIN:VALARM
 UID:ED9E6026-A38B-4D62-8AB3-2AC8727EF09B
 X-WR-ALARMUID:ED9E6026-A38B-4D62-8AB3-2AC8727EF09B
