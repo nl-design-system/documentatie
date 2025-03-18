@@ -1,10 +1,10 @@
 ---
-title: Versionering
+title: "Versionering: Hoe beheer je pakketversies?"
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Versionering
-pagination_label: Versionering
-description: Versionering
+sidebar_label: Versionering beheren
+pagination_label: Versionering beheren
+description: Inzicht in versiebeheer en hoe je semantische versionering (SemVer) toepast voor stabiele releases.
 keywords:
   - developer
   - aan de slag
@@ -14,7 +14,7 @@ keywords:
   - changesets
 ---
 
-# Versionering
+# Versionering: Hoe beheer je pakketversies?
 
 Als je als developer een pull request maakt voor een verbetering of een bugfix, wil je dat de nieuwe versie ergens gebruikt kan worden. Bij NL Design System kun je met één druk op de knop een nieuwe versie uitbrengen. Maar voordat dit automatisch kan gebeuren, moet je eerst een changelog toevoegen aan je pull request.
 
