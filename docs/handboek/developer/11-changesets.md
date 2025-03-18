@@ -75,7 +75,7 @@ In het onderstaande voorbeeld is er alleen nieuwe functionaliteit toegevoegd en 
 
 In het voorbeeld hierboven is een changeset met een willekeurige naam `itchy-kangaroos-grab.md` toegevoegd aan de `.changset` folder in de root van de repository. Deze file moet toegevoegd worden aan de pull request die voor deze wijziging gemaakt wordt.
 
-> Note: Als je tijdens het maken van een changeset een fout maakt kun je het process afbreken met <kbd>Ctrl-C</kbd> en gewoon opnieuw beginnen.
+> Tip: Als je tijdens het maken van een changeset een fout maakt kun je het process afbreken met <kbd>Ctrl-C</kbd> en gewoon opnieuw beginnen.
 
 Als deze pull request gemerged is zal er automatisch een pull request aangemaakt worden voor het publiceren van nieuwe versies.
 
