@@ -3,15 +3,15 @@ import clsx from 'clsx';
 import Astrid from './Astrid';
 import Emma from './Emma';
 import Jeffrey from './Jeffrey';
-import Rian from './Rian';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Yolijn from './Yolijn';
 import Menno from './Menno';
+import Erik from './Erik';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rian, Rozerin, Emma, Menno];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Emma, Menno, Erik];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
