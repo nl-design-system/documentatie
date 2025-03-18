@@ -1,4 +1,20 @@
-# Markeren als verouderd (deprecation)
+---
+title: Versies en packages markeren als verouderd (deprecation)
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Verouderde versies (deprecation)
+pagination_label: Verouderde versies (deprecation)
+description: Hoe en waarom je een package of specifieke versie als verouderd (deprecated) markeert op NPM, zonder deze te verwijderen.
+keywords:
+  - developer
+  - aan de slag
+  - componenten
+  - versionering
+  - semver
+  - deprecation
+---
+
+# Een package markeren als verouderd (deprecation)
 
 Het kan voorkomen dat een package of een specifieke versie van een package overbodig is geworden. Het package zal in dat geval als verouderd gemarkeerd moeten worden bij NPM.
 
