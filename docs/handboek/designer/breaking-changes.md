@@ -49,7 +49,7 @@ De eenvoudigste soort breaking change van een design token ontstaat als je een d
 Een ander soort breaking change die hier op lijkt is als je de naam van een design token verandert. Dit lijkt misschien een minder grote verandering dan het verwijderen van een design token maar in feite komt het neer op:
 
 1. Het verwijderen van een design token.
-1. Het toevoegen van een nieuw design token.
+1. Het toevoegen van een nieuwe design token.
 
 **Voorbeeld 2**: Het hernoemen van de design token `example.button.icon.space` naar `example.button.column-gap` zorgt ervoor dat de design token `example.button.icon.space` niet meer bestaat. Net als in het vorige voorbeeld gaat de button door deze verandering kapot als een afnemer van het package gebruik maakt van de verwijderde design token.
 
