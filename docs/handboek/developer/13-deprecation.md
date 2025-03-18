@@ -20,10 +20,15 @@ Het kan voorkomen dat een package of een specifieke versie van een package overb
 
 Het markeren als verouderd heeft als voordeel dat het package gewoon beschikbaar blijft voor mensen die het willen blijven gebruiken. Het alternatief zou zijn om het package helemaal van NPM te verwijderen maar dit is vanwege bovenstaande reden onwenselijk.
 
+Dit is ook relevant als je een npm package hernoemt. Bijvoorbeeld: `@example/counter-badge` naar `@example/number-badge`.
+
+Deprecation kan dan helpen met mensen wijzen op de nieuwe naam van de package. Anders weten mensen niet dat er een nieuwe package is: dan lijkt het alsof er nooit meer updates uitkomen.
+
 ## Markeren van alle versies van een package
 
 ### Via de npm website
 
+1. Maak een bericht voor gebruikers van de deprecated package. Is de package hernoemd, dan kun je een template tekst aanbieden die verwijst naar de nieuwe naam.
 1. Login bij [npm][1].
 1. Navigeer naar het package dat je als verouderd wilt markeren (`https://www.npmjs.com/package/<package-naam>`).
 1. Klik op "Settings".
