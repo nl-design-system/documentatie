@@ -16,36 +16,34 @@ keywords:
 
 # Versionering
 
-Elke developer die een pull request maakt voor een verbetering of een bugfix, die wil dat de nieuwe versie ergens gebruikt zal worden. Bij NL Design System gaat een nieuwe versie uitbrengen met een druk op de knop. Maar om automatisch het goede versienummer te kiezen moet je wel eerst changelog-documentatie toevoegen aan je pull request.
+Als je als developer een pull request maakt voor een verbetering of een bugfix, wil je dat de nieuwe versie ergens gebruikt kan worden. Bij NL Design System kun je met één druk op de knop een nieuwe versie uitbrengen. Maar voordat dit automatisch kan gebeuren, moet je eerst een changelog toevoegen aan je pull request.
 
-We maken gebruik van [semver][1].
+We gebruiken [semver][1] om betekenis te geven aan wijzigingen en [changesets][2] om versies aan te passen.
 
-Voor het aanpassen van versies gebruiken we [changesets][2].
-
-## Strategie
+## Onze aanpak
 
 Al onze code leeft in mono repositories, waarbij packages onderling van elkaar afhankelijk kunnen zijn.
 
 Je zult dus goed moeten nagaan wat een breaking change in een package betekent voor een afhankelijk package en hoe dit zich vertaalt naar versieverhogingen. Changesets helpen hierbij door automatisch de impact op versienummers te bepalen en inzichtelijk te maken welke wijzigingen een nieuwe release vereisen.
 
-- **Houd pull requests klein en pas zo min mogelijk code aan.** Kleine pull requests maken het eenvoudiger om wijzigingen te begrijpen, te reviewen en te testen. Dit verkleint de kans op onvoorziene breaking changes en maakt het eenvoudiger om de juiste changesets toe te voegen.
-- **Voeg een changeset toe om de impact van wijzigingen vast te leggen.** Dit mag in dezelfde commit of in een nieuwe commit.
+- **Maak kleine pull requests.** Kleine wijzigingen zijn makkelijker te begrijpen, te reviewen en te testen. Dit verkleint de kans op onvoorziene breaking changes en maakt het eenvoudiger om de juiste changesets toe te voegen.
+- **Voeg een changeset toe om de impact van wijzigingen vast te leggen.** Dit kan in dezelfde commit of in een nieuwe commit.
 
 ## Wanneer heb je een changeset nodig?
 
-Een changeset is nodig voor elke wijziging die wordt gepubliceerd in een package, zoals:
+Je hebt een changeset nodig bij elke wijziging die wordt gepubliceerd in een package, zoals:
 
 - Bugfixes
-- Nieuwe features
+- Nieuwe functionaliteiten
 - Breaking changes
 
-Er is **geen changeset nodig** voor wijzigingen die niet worden gepubliceerd, zoals documentatie-updates of aanpassingen in de build-configuratie.
+Je hebt **geen changeset nodig** voor wijzigingen die niet worden gepubliceerd, zoals updates in documentatie of aanpassingen in de build-configuratie.
 
-Changesets genereren changelogs, die ontwikkelaars helpen te begrijpen welke wijzigingen zijn doorgevoerd. Houd dit einddoel in gedachten bij het schrijven van een changeset.
+Changesets zorgen voor changelogs. Deze helpen andere ontwikkelaars om te begrijpen welke wijzigingen zijn doorgevoerd. Houd dit einddoel in gedachten bij het schrijven van een changeset.
 
-## Naamgeving van een changeset
+## Naam van een changeset
 
-De naamgeving van een changeset maakt niet uit en kan automatisch worden gegenereerd. Let er echter op dat de gegenereerde naam niet ongepast is.
+De naam van een changeset maakt niet uit en wordt automatisch gegenereerd. Let er echter op dat deze niet ongepast is.
 
 ## Kies een semantische versie
 
@@ -54,38 +52,36 @@ Bij NL Design System gaat het versienummer kiezen geheel automatisch, volgens de
 Gebruik de volgende richtlijnen bij het kiezen van een versie:
 
 - **`patch`** → Voor bugfixes
-- **`minor`** → Voor nieuwe features
+- **`minor`** → Voor nieuwe functionaliteiten
 - **`major`** → Voor breaking changes
 
 Voor meer informatie over het kiezen van de juiste versie, zie [SemVer: Major, Minor of Patch?](./12-changes.md).
 
 ## Schrijf een changelog
 
-Bij elke belangrijke wijziging moet je een stukje documentatie schrijven over de wijziging: dat is een "changeset". In die changeset schrijf je voor de gebruikers wat de verandering is, en welke onderdelen zo'n patch/minor/major verandering hebben.
-
-De changelog schrijf je zodat gebruikers van het design system weten wat ze moeten doen met de nieuwe versie:
+Bij elke belangrijke wijziging schrijf je een korte uitleg voor gebruikers: dat is een "changeset". Dit helpt hen om te bepalen wat ze met de nieuwe versie moeten doen:
 
 - "Kan ik veilig de update installeren, en verder niets doen?"
 - "Zijn er interessante nieuwe mogelijkheden waar ik meer over wil leren?"
 - "Moet ik mijn website aanpassen, voordat ik de nieuwe versie kan gebruiken?"
 
-Daarom is de changelog opgedeeld in drie groepen:
+De changelog is verdeeld in drie categorieën:
 
 - **`patch`**: een versie met updates die je veilig kan installeren.
 - **`minor`**: een versie die nieuwe mogelijkheden heeft, die je later misschien wil gebruiken.
 - **`major`**: een versie waar je zelf ook wijzigingen voor moet doen, als jij het onderdeel gebruikt dat is aangepast.
 
-Omschrijf de volgende punten in het geval van een major change:
+Bij een major update beschrijf je:
 
-- Leg uit **wat** er is veranderd
-- Motiveer **waarom** de wijziging nodig was
-- Geef aan **hoe** gebruikers hun code moeten aanpassen
+- Leg uit **wat** er is veranderd.
+- Motiveer **waarom** de wijziging nodig was.
+- Geef aan **hoe** gebruikers hun code moeten aanpassen.
 
 ## Lege changesets
 
 Soms is een lege changeset nodig, bijvoorbeeld om een release af te dwingen zonder daadwerkelijke wijzigingen in de code.
 
-## Genereer een changeset via een script
+## Maak een changeset met een script
 
 In `package.json` staat een script om changesets toe te voegen:
 
@@ -142,16 +138,16 @@ Een **lege changeset** maak je met:
 pnpm run changeset --empty
 ```
 
-## Voeg handmatig een changeset toe
+## Handmatig een changeset toevoegen
 
-Maak een nieuw Markdown-bestand in de `.changeset`-map en plak het volgende sjabloon:
+Maak een nieuw Markdown-bestand in de map `.changeset` met deze inhoud:
 
 ```markdown
 ---
-'@<organisation>/<package-name>': major
+"@<organisatie>/<package-name>": major
 ---
 
-Beschrijving
+Beschrijving van de wijziging
 ```
 
 - Voeg alle relevante packages toe tussen de eerste set `---`, elk op een nieuwe regel, tussen dubbele aanhalingstekens.
@@ -164,19 +160,13 @@ Voor een **lege changeset** gebruik je alleen:
 ---
 ```
 
----
-
 ## Changesets publiceren
 
-Na het mergen van je pull request zal er automatisch een pull request aangemaakt worden voor het publiceren van nieuwe versies.
-
-Merge de pull request met de changelog wanneer je direct een nieuwe versie wil uitbrengen. Of wacht tot andere pull requests ook gemerged zijn, en publiceer meerdere wijzigingen in een keer, als 1 nieuwe versie. De pull request voor publicatie zal na het mergen van verdere wijzigen steeds automatisch worden bijgewerkt.
-
-Zodra deze pull request gemerged wordt zullen alle gewijzigde packages automatisch naar het npm registry gepubliceerd worden.
+Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. De publicatie-pull request zal na het mergen van verdere wijzigen steeds automatisch worden bijgewerkt. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd op npm.
 
 ## Voorbeeld changeset
 
-In het onderstaande voorbeeld is er alleen nieuwe functionaliteit toegevoegd en gaat het dus om een minor versie ophoging.
+Hieronder een voorbeeld waarin een nieuwe functionaliteit is toegevoegd. Dit is een minor update:
 
 ```bash
 🦋  Which packages would you like to include? · @scope/een-package
@@ -201,12 +191,12 @@ In het onderstaande voorbeeld is er alleen nieuwe functionaliteit toegevoegd en 
 
 In het voorbeeld hierboven is een changeset met een willekeurige naam `itchy-kangaroos-grab.md` toegevoegd aan de `.changeset` folder in de root van de repository. Deze file moet toegevoegd worden aan de pull request die voor deze wijziging gemaakt wordt.
 
-## Changeset best practices
+## Best practices voor changesets
 
-- Maak er een gewoonte van om na elke wijziging in code die je doet de wijziging in een changeset te beschrijven
-- Zorg ervoor dat elke pull request met wijzigingen in code een changeset bevat, dat mag in een aparte commit of je kunt het aan de commit met wijzigingen toevoegen
-- Je kunt ook meerdere changesets
-- Wacht niet te lang met het publiceren van changes, de pull request voor publicatie wordt anders erg groot
+- Maak er een gewoonte van om elke codewijziging te beschrijven in een changeset.
+- Zorg dat elke pull request met wijzigingen in een package een changeset bevat. Dit kan in dezelfde commit of in een nieuwe commit.
+- Je kunt meerdere changesets toevoegen.
+- Wacht niet te lang met het publiceren van changes, de pull request voor publicatie wordt anders erg groot.
 
 [1]: https://semver.org
 [2]: https://github.com/changesets
