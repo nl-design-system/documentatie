@@ -105,7 +105,7 @@ Ga naar de lijst met [pull requests](https://github.com/nl-design-system/themes/
 1. Klik rechtsboven op ‘Commit changes…’.
 1. Geef een commit message op, bijvoorbeeld ‘Changeset toegevoegd’.
 1. Kies onderaan voor ‘Commit directly to the `{naam-van-je-branch}`’ branch.
-1. Klik op ‘Commit changes’. Als je hier een foutmelding krijgt dat het bestand al bestaat kies je een andere willekeurige naam.
+1. Klik op ‘Commit changes’. Als je een foutmelding krijgt dat het bestand al bestaat, kies dan een andere willekeurige naam.
 
 Hieronder een voorbeeld van de inhoud van het bestand met de beschrijving van een verandering met breaking changes voor de ‘voorbeeld’ organisatie.
 
