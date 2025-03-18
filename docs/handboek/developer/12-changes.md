@@ -17,9 +17,9 @@ keywords:
 
 We maken bij [semver][1] onderscheid tussen drie verschillende niveau's van changes:
 
-- **Major** versie ophogingen zijn voor API veranderingen die incompatibel (breaking) zijn
-- **Minor** versie ophogingen voegen functionaliteit toe die backwards-compatibele zijn
-- **Patch** versie ophogingen zijn bug fixes die backwards-compatibele zijn
+- **Major** versie ophogingen zijn voor API veranderingen die incompatibel (breaking) zijn.
+- **Minor** versie ophogingen voegen functionaliteit toe die backwards-compatibele zijn.
+- **Patch** versie ophogingen zijn bug fixes die backwards-compatibele zijn.
 
 Het ophogen van een major versie nummer als een vorm van marketing bijvoorbeeld om iets te verkopen [is niet de bedoeling][2]. Major versies zijn ook geen versies die maar eenmaal per jaar plaatsvinden.
 
@@ -29,49 +29,49 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 ## Breaking changes in design tokens
 
-1. Je hebt een design token verwijderd
-1. Je hebt een design token van naam veranderd. Dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt het een breaking change
-1. Je hebt een spelfout in een design token gecorrigeerd. Dit lijkt omdat het zo'n kleine wijziging is misschien een patch versie ophoging. Ook dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt ook dit een breaking change
+1. Je hebt een design token verwijderd.
+1. Je hebt een design token van naam veranderd. Dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt het een breaking change.
+1. Je hebt een spelfout in een design token gecorrigeerd. Dit lijkt omdat het zo'n kleine wijziging is misschien een patch versie ophoging. Ook dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt ook dit een breaking change.
 
 ## Minor changes in design tokens
 
-1. Je hebt een design token toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel
+1. Je hebt een design token toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
 ## Patch niveau (??) changes in design tokens
 
-1. Je hebt de _waarde_ van een design token aangepast. Bijvoorbeeld de kleurwaarde van een design token is aangepast waardoor het contrast met een ander design token waarmee dit design token gecombineerd wordt wel voldoet aan een bepaalde drempel
+1. Je hebt de _waarde_ van een design token aangepast. Bijvoorbeeld de kleurwaarde van een design token is aangepast waardoor het contrast met een ander design token waarmee dit design token gecombineerd wordt wel voldoet aan een bepaalde drempel.
 
 <!-- @todo dit is lastig uit te leggen -->
 
 ## Breaking changes in CSS
 
-1. Je hebt een class name verwijderd
-1. Je hebt een class name of mixin van naam veranderd. Dit is hetzelfde als het verwijderen van de class name of mixin gevolgd door het toevoegen van een nieuwe. Dat maakt dit een breaking change
-1. Je hebt een spelfout in een class name of mixin gecorrigeerd. Dit lijkt misschien op een patch versie ophoging, maar het is hetzelfde als het verwijderen van de oude name gevolgd door het toevoegen van een nieuwe name. Het is een breaking change omdat de oude name niet meer bestaat
+1. Je hebt een class name verwijderd.
+1. Je hebt een class name of mixin van naam veranderd. Dit is hetzelfde als het verwijderen van de class name of mixin gevolgd door het toevoegen van een nieuwe. Dat maakt dit een breaking change.
+1. Je hebt een spelfout in een class name of mixin gecorrigeerd. Dit lijkt misschien op een patch versie ophoging, maar het is hetzelfde als het verwijderen van de oude name gevolgd door het toevoegen van een nieuwe name. Het is een breaking change omdat de oude name niet meer bestaat.
 
 ## Minor changes in CSS
 
-1. Je hebt een class name of mixin toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel
+1. Je hebt een class name of mixin toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
 ## Patch niveau changers in CSS
 
-1. Je hebt de waarde van een CSS property aangepast. Bijvoorbeeld `color: white` is aangepast naar `color: var(--something-white)`
+1. Je hebt de waarde van een CSS property aangepast. Bijvoorbeeld `color: white` is aangepast naar `color: var(--something-white)`.
 1. Je hebt de spelling van een CSS property gecorrigeerd. Bijvoorbeeld `colour` is aangepast naar `color`. <!-- @todo is dit altijd een patch wijziging of zien we dit juist als major -->
 
 ## Breaking changes in JavaScript/TypeScript
 
-1. Je hebt een export weggehaald
-1. Je hebt de naam van een export veranderd. Dit is hetzelfde als het verwijderen van de export en het toevoegen van een nieuwe. Dat maakt dit een breaking change
-1. Je hebt een type signature veranderd naar een kleinere signature waardoor er functionaliteit verdwenen is
+1. Je hebt een export weggehaald.
+1. Je hebt de naam van een export veranderd. Dit is hetzelfde als het verwijderen van de export en het toevoegen van een nieuwe. Dat maakt dit een breaking change.
+1. Je hebt een type signature veranderd naar een kleinere signature waardoor er functionaliteit verdwenen is.
 
 ## Minor changes in JavaScript/TypeScript
 
-1. Je hebt een export toegevoegd, er is functionaliteit toegevoegd die backwards-compatibel is
-1. Je hebt een type signature veranderd naar een grotere signature op een backwards-compatibele manier
+1. Je hebt een export toegevoegd, er is functionaliteit toegevoegd die backwards-compatibel is.
+1. Je hebt een type signature veranderd naar een grotere signature op een backwards-compatibele manier.
 
 ## Patch niveau changes in JavaScript/TypeScript
 
-1. Je hebt een bug opgelost
+1. Je hebt een bug opgelost.
 
 ## Wat betekent het voor ontwikkelaars van een package?
 

@@ -33,9 +33,9 @@ Je zult dus goed moeten nagaan wat een breaking change in een package betekent v
 
 Je hebt een changeset nodig bij elke wijziging die wordt gepubliceerd in een package, zoals:
 
-- Bugfixes
-- Nieuwe functionaliteiten
-- Breaking changes
+- Bugfixes.
+- Nieuwe functionaliteiten.
+- Breaking changes.
 
 Je hebt **geen changeset nodig** voor wijzigingen die niet worden gepubliceerd, zoals updates in documentatie of aanpassingen in de build-configuratie.
 
@@ -51,9 +51,9 @@ Bij NL Design System gaat het versienummer kiezen geheel automatisch, volgens de
 
 Gebruik de volgende richtlijnen bij het kiezen van een versie:
 
-- **`patch`** → Voor bugfixes
-- **`minor`** → Voor nieuwe functionaliteiten
-- **`major`** → Voor breaking changes
+- **`patch`** → Voor bugfixes.
+- **`minor`** → Voor nieuwe functionaliteiten.
+- **`major`** → Voor breaking changes.
 
 Voor meer informatie over het kiezen van de juiste versie, zie [SemVer: Major, Minor of Patch?](./12-changes.md).
 
