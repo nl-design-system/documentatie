@@ -1,4 +1,19 @@
-# Changes
+---
+title: "SemVer: Major, Minor of Patch?"
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: "SemVer: Major, Minor of Patch?"
+pagination_label: "SemVer: Major, Minor of Patch?"
+description: "Richtlijnen voor versiebeheer volgens SemVer: wanneer kies je voor een major, minor of patch release?"
+keywords:
+  - developer
+  - aan de slag
+  - versionering
+  - semver
+  - changesets
+---
+
+# SemVer: Major, Minor of Patch?
 
 We maken bij [semver][1] onderscheid tussen drie verschillende niveau's van changes:
 
