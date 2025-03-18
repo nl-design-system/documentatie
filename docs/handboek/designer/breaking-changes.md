@@ -55,7 +55,7 @@ Een ander soort breaking change die hier op lijkt is als je de naam van een desi
 
 **Voorbeeld 3**: Zelfs het aanpassen van slechts één karakter in de naam van een design token, bijvoorbeeld het corrigeren van een typfout `colour` naar `color`, is een breaking change.
 
-Breaking changes zijn, ondanks dat hun naam het doet vermoeden, niet per se erg. Het is alleen heel belangrijk om er duidelijk over te communiceren. Daarover later meer.
+Breaking changes zijn, ondanks hun naam, niet per se problematisch. Het is echter van groot belang om hier duidelijk over te communiceren. Daarover meer informatie later.
 
 ### Nieuwe features
 
