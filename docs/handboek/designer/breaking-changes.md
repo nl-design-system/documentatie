@@ -8,7 +8,7 @@ Design tokens komen uiteindelijk terecht in een package. Een package is een pakk
 
 Deze packages worden geüpload naar een package registry. Een package registry is een database van alle packages die ooit zijn geüpload.
 
-Alle packages in een registry hebben een versienummer. Als er een nieuwe versie van een package wordt geüpload, wordt het versienummer van het package opgehoogd.
+Alle packages in een registry hebben een versienummer. Als er een nieuwe versie van een package wordt geüpload, wordt het versienummer van dat package opgehoogd.
 
 ## Semantic versioning in een notendop
 
@@ -140,4 +140,4 @@ Ga naar de lijst met pull requests en zoek je eigen pull request op.
 
 ## Hoe verder?
 
-Nadat je pull request met veranderingen is goedgekeurd, zal er op GitHub een nieuwe pull request worden aangemaakt die ervoor zorgt dat je veranderingen gepublicieerd worden naar de registry.
+Nadat je pull request met veranderingen is goedgekeurd, wordt er op GitHub een nieuwe pull request aangemaakt die ervoor zorgt dat je veranderingen worden gepubliceerd naar het registry.
