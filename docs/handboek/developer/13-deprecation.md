@@ -25,10 +25,10 @@ Het markeren als verouderd heeft als voordeel dat het package gewoon beschikbaar
 ### Via de npm website
 
 1. Login bij [npm][1].
-1. Navigeer naar het package dat je als verouderd wilt markeren (`https://www.npmjs.com/package/<package-naam>`)
-1. Klik op "Settings"
-1. Klik op de knop "Deprecate package" bijna onderaan de pagina
-1. Bevestig dat je alle versies van het package wilt markeren als verouderd door de naam van het package over te typen en op de knop "Deprecate package" te klikken
+1. Navigeer naar het package dat je als verouderd wilt markeren (`https://www.npmjs.com/package/<package-naam>`).
+1. Klik op "Settings".
+1. Klik op de knop "Deprecate package" bijna onderaan de pagina.
+1. Bevestig dat je alle versies van het package wilt markeren als verouderd door de naam van het package over te typen en op de knop "Deprecate package" te klikken.
 
 ### Via de command line
 
