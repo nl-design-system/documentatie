@@ -52,10 +52,10 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 ## Minor changes in CSS
 
 1. Je hebt een class name of mixin toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
+1. Je hebt de waarde van een CSS property toegevoegd. Bijvoorbeeld `color: blue` is aangepast naar `color: var(--link-color)`.
 
 ## Patch niveau changers in CSS
 
-1. Je hebt de waarde van een CSS property aangepast. Bijvoorbeeld `color: white` is aangepast naar `color: var(--something-white)`.
 1. Je hebt de spelling van een CSS property gecorrigeerd. Bijvoorbeeld `colour` is aangepast naar `color`. <!-- @todo is dit altijd een patch wijziging of zien we dit juist als major -->
 
 ## Breaking changes in JavaScript/TypeScript
