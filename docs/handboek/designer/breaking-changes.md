@@ -125,8 +125,8 @@ Ga naar de lijst met pull requests en zoek je eigen pull request op.
 
 <!-- screenshot pull requests -->
 
-1. Klik boven in de pagina op de lichtblauwe naam van de branch die je in hebt opgegeven.
-1. Navigeer de volgende pagina naar de folder `.changesets`.
+1. Klik boven in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
+1. Navigeer op de volgende pagina naar de folder `.changesets`.
 1. Kopieer het sjabloon uit het `README.md` bestand op deze pagina naar je klembord.
 1. Klik rechtsboven op ‘Add a file’ en kies voor ‘Create new file’.
 1. Geef je bestand een willekeurige naam en de extensie `.md`, bijvoorbeeld `aap-noot-mies.md`.
@@ -136,7 +136,7 @@ Ga naar de lijst met pull requests en zoek je eigen pull request op.
 1. Klik rechtsboven op ‘Commit changes…’.
 1. Geef een commit message op, bijvoorbeeld ‘Changeset toegevoegd’.
 1. Kies onderaan voor ‘Commit directly to the `{naam-van-je-branch}`’ branch.
-1. Klik op ‘Commit changes’. Als je hier een foutmelding krijgt dat het bestand al bestaat kies je een andere willekeurige naam.
+1. Klik op ‘Commit changes’. Als je een foutmelding krijgt dat het bestand al bestaat, kies dan een andere willekeurige naam.
 
 ## Hoe verder?
 
