@@ -93,7 +93,7 @@ Ga naar de lijst met [pull requests](https://github.com/nl-design-system/themes/
 
 <!-- screenshot pull requests -->
 
-1. Klik boven in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
+1. Klik bovenaan in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
 1. Navigeer op de volgende pagina naar de folder `.changesets`.
 1. Kopieer het sjabloon uit het `README.md` bestand op deze pagina naar je klembord.
 1. Klik rechtsboven op ‘Add a file’ en kies voor ‘Create new file’.
