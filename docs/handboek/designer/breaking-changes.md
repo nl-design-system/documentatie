@@ -77,7 +77,7 @@ Om te voorkomen dat een wijziging meteen een breaking change is kun je ervoor ki
 1. Verander de waarde van de oude design token `example.button.icon.space` naar de naam van de nieuwe design token: `{example.button.column-gap}`.
 1. Markeer de oude design token `example.button.icon.space` als ‘deprecated’ door `[deprecated]` aan de beschrijving van de token toe te voegen.
 
-Doordat je de oude token niet verwijdert maar markeert als ‘deprecated’ informeer je afnemers dat ze voor nieuwe code de design token niet meer moeten gebruiken. Ze weten ook dat te op termijn bestaande code zullen moeten aanpassen. Hoe code moet worden aangepast geef je aan in een changelog. Meer daarover hieronder.
+Door de oude token niet te verwijderen maar te markeren als ‘deprecated’, informeer je afnemers dat ze deze design token niet meer moeten gebruiken. Ze weten ook dat ze op termijn bestaande code zullen moeten aanpassen. Hoe de code moet worden aangepast, geef je aan in een changelog. Meer daarover hieronder.
 
 ## Communiceer over je veranderingen
 
