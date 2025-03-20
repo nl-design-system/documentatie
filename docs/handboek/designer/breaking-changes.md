@@ -87,7 +87,7 @@ Als je een [pull request hebt aangemaakt](/handboek/designer/stappenplan/#verstu
 
 ### Situatie A: in het NL Design System “themes” repository
 
-Werk je vanuit de NL Design System “themes” repository? Volg dan onderstaande stappen.
+Werk je vanuit de NL Design System 'themes' repository? Volg dan onderstaande stappen.
 
 Ga naar de lijst met [pull requests](https://github.com/nl-design-system/themes/pulls) en zoek je eigen pull request op.
 
