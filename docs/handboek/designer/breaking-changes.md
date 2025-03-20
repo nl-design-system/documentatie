@@ -59,7 +59,7 @@ Breaking changes zijn, ondanks hun naam, niet per se problematisch. Het is echte
 
 ### Nieuwe features
 
-Nieuwe features, bijvoorbeeld nieuwe design tokens of een nieuwe property ‘dismissable‘, zijn veranderingen die ervoor zorgen dat het **minor** deel van het versienummer opgehoogd moet worden.
+Nieuwe features, zoals nieuwe design tokens of een nieuwe eigenschap ‘dismissable‘, zijn veranderingen die ervoor zorgen dat het **minor** deel van het versienummer moet worden opgehoogd.
 
 **Voorbeeld**: Je maakt een nieuw design token `example.button.box-shadow` aan dat gebruikt kan worden een button een drop shadow te geven.
 
