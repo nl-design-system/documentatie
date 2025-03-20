@@ -676,7 +676,7 @@ class ArchimateImgElement extends HTMLElement {
           .reduce((a, b) => [...a, ...b], []);
 
         const container = shadowRoot.appendChild(document.createElement('div'));
-        container.style.cssText = `position: relative; width: ${xMax}px; height: ${yMax}px;`;
+        container.style.cssText = `position: relative; width: ${xMax}px; height: ${yMax}px; content-visibility: auto; contain: size; contain-intrinsic-height: ${yMax}px; contain-intrinsic-width: ${xMax}px;`;
         container.setAttribute('role', 'img');
 
         const svgEl = container.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'svg'));
