@@ -65,7 +65,7 @@ Nieuwe features, zoals nieuwe design tokens of een nieuwe eigenschap ‘dismissa
 
 ### Bug fixes
 
-In Tokens Studio kun je aan design tokens beschrijvingen toevoegen. Als je in de beschrijving van een design token een spelfout corrigeert heeft dat geen gevolgen voor afnemers van de design token. Deze veranderingen lijken nog het meest op een bug fix maar zullen waarschijnlijk in de praktijk weinig voorkomen.
+In Tokens Studio kun je beschrijvingen aan design tokens toevoegen. Het corrigeren van een spelfout in de beschrijving van een design token heeft geen gevolgen voor de afnemers. Deze veranderingen lijken het meest op een bug fix, maar zullen in de praktijk waarschijnlijk weinig voorkomen.
 
 ## Breaking changes uitstellen
 
