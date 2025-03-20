@@ -85,7 +85,7 @@ Je weet zelf het best wat je veranderd hebt. De afnemer van de design tokens wee
 
 Als je een [pull request hebt aangemaakt](/handboek/designer/stappenplan/#verstuur-aanpassingen-naar-github) geef je daar met een extra commit aan wat je precies veranderd hebt. De beschrijving die je hierbij opgeeft komt terecht in de changelog van het package.
 
-### Situatie A: in het NL Design System “themes” repository
+### Situatie A: in het NL Design System 'themes' repository
 
 Werk je vanuit de NL Design System 'themes' repository? Volg dan onderstaande stappen.
 
