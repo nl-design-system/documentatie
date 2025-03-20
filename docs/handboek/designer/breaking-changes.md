@@ -69,7 +69,7 @@ In Tokens Studio kun je beschrijvingen aan design tokens toevoegen. Het corriger
 
 ## Breaking changes uitstellen
 
-Om te voorkomen dat een wijziging meteen een breaking change is kun je ervoor kiezen om een nieuw design token naast een te verwijderen design te laten bestaan. Hierbij wordt het te verwijderen token eerst gemarkeerd als ‘deprecated’ (in het Nederlands ‘achterhaald’) en niet direct verwijderd.
+Om te voorkomen dat een wijziging meteen een breaking change is kun je ervoor kiezen om een nieuwe design token naast een te verwijderen design token te laten bestaan. Hierbij wordt de te verwijderen design token eerst gemarkeerd als ‘deprecated’ (in het Nederlands ‘achterhaald’) en niet direct verwijderd.
 
 **Voorbeeld**: De naam van de design token `example.button.icon.space` moet veranderen in `example.button.column-gap`.
 
