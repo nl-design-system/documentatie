@@ -83,7 +83,7 @@ Door de oude token niet te verwijderen maar te markeren als ‘deprecated’, in
 
 Je weet zelf het best wat je veranderd hebt. De afnemer van de design tokens weet dit niet. Het is daarom wel zo netjes om afnemers te informeren over de veranderingen. We leggen uit hoe je dat precies kunt doen.
 
-Als je een [pull request hebt aangemaakt](/handboek/designer/stappenplan/#verstuur-aanpassingen-naar-github) geef je daar met een extra commit aan wat je precies veranderd hebt. De beschrijving die je hierbij opgeeft komt terecht in de changelog van het package.
+Wanneer je een [pull request hebt aangemaakt](/handboek/designer/stappenplan/#verstuur-aanpassingen-naar-github), geef je met een extra commit aan wat je precies hebt veranderd. De beschrijving die je hierbij opgeeft, wordt opgenomen in de changelog van het package.
 
 ### Situatie A: in het NL Design System 'themes' repository
 
