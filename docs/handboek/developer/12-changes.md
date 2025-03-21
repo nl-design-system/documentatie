@@ -37,7 +37,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 1. Je hebt een design token toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
-## Patch niveau (??) changes in design tokens
+## Patch changes in design tokens
 
 1. Je hebt de _waarde_ van een design token aangepast. Bijvoorbeeld de kleurwaarde van een design token is aangepast waardoor het contrast met een ander design token waarmee dit design token gecombineerd wordt wel voldoet aan een bepaalde drempel.
 
@@ -55,7 +55,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 1. Je hebt een class name of mixin toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
-## Patch niveau changers in CSS
+## Patch changers in CSS
 
 In een design system dat door meerdere organisaties wordt gebruikt, kunnen zelfs kleine wijzigingen een grote impact hebben. Wat in een eigen project een eenvoudige patch voor verkeerde spacing zou zijn, kan in een design system een minor of zelfs breaking change betekenen. Daarom is het belangrijk om altijd rekening te houden met de impact van jouw wijziging op alle gebruikers.
 
@@ -70,7 +70,7 @@ In een design system dat door meerdere organisaties wordt gebruikt, kunnen zelfs
 1. Je hebt een export toegevoegd, er is functionaliteit toegevoegd die backwards-compatibel is.
 1. Je hebt een type signature veranderd naar een grotere signature op een backwards-compatibele manier.
 
-## Patch niveau changes in JavaScript/TypeScript
+## Patch changes in JavaScript/TypeScript
 
 1. Je hebt een bug opgelost.
 
