@@ -10,7 +10,6 @@ keywords:
   - bijdragen
   - componenten
   - publiceren
-  - semver
 ---
 
 # Als developer meewerken aan NL Design System
