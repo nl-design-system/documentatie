@@ -89,8 +89,6 @@ Werk je vanuit de NL Design System 'themes' repository? Volg dan onderstaande st
 
 Ga naar de lijst met [pull requests](https://github.com/nl-design-system/themes/pulls) en zoek je eigen pull request op.
 
-<!-- screenshot pull requests -->
-
 1. Klik bovenaan in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
 1. Navigeer op de volgende pagina naar de folder `.changesets`.
 1. Kopieer het sjabloon uit het `README.md` bestand op deze pagina naar je klembord.
@@ -120,8 +118,6 @@ Deprecated design token example.button.icon.spacing verwijderd
 Werk je vanuit een eigen repository? Volg dan onderstaande stappen.
 
 Ga naar de lijst met pull requests en zoek je eigen pull request op.
-
-<!-- screenshot pull requests -->
 
 1. Klik boven in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
 1. Navigeer op de volgende pagina naar de folder `.changesets`.
