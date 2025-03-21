@@ -10,7 +10,7 @@ Alle packages in een registry hebben een versienummer. Als er een nieuwe versie 
 
 ## Semantic versioning in een notendop
 
-Bij NL Design System maken we voor het ophogen van versienummers gebruik van ‘semantic versioning’ ook wel bekend als semver. Binnen semver bestaat een versienummer uit drie delen: `major.minor.patch` (bijvoorbeeld `1.3.2`).
+Bij NL Design System maken we voor het ophogen van versienummers gebruik van ‘semantic versioning’, ook wel bekend als semver. Binnen semver bestaat een versienummer uit drie delen: `major.minor.patch` (bijvoorbeeld `1.3.2`).
 
 ### Major
 
