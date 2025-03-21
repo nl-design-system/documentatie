@@ -40,8 +40,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 ## Patch changes in design tokens
 
 1. Je hebt de _waarde_ van een design token aangepast. Bijvoorbeeld de kleurwaarde van een design token is aangepast waardoor het contrast met een ander design token waarmee dit design token gecombineerd wordt wel voldoet aan een bepaalde drempel.
-
-<!-- @todo dit is lastig uit te leggen -->
+1. Je hebt een spelfout in de _beschrijving_ van een design token aangepast. In Tokens Studio kun je beschrijvingen aan design tokens toevoegen. Het corrigeren van een spelfout in de beschrijving van een design token heeft geen gevolgen voor de afnemers. Deze veranderingen lijken het meest op een bug fix, maar zullen in de praktijk waarschijnlijk weinig voorkomen.
 
 ## Breaking changes in CSS
 
