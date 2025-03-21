@@ -49,6 +49,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 1. Je hebt een class name of mixin van naam veranderd. Dit is hetzelfde als het verwijderen van de class name of mixin gevolgd door het toevoegen van een nieuwe. Dat maakt dit een breaking change.
 1. Je hebt een spelfout in een class name of mixin gecorrigeerd. Dit lijkt misschien op een patch versie ophoging, maar het is hetzelfde als het verwijderen van de oude name gevolgd door het toevoegen van een nieuwe name. Het is een breaking change omdat de oude name niet meer bestaat.
 1. Je hebt de waarde van een CSS property toegevoegd. Bijvoorbeeld `color: blue` is aangepast naar `color: var(--example-link-color, blue)`.
+1. Je hebt de spelling van een CSS property gecorrigeerd. Bijvoorbeeld `colour` is aangepast naar `color`.
 
 ## Minor changes in CSS
 
@@ -56,7 +57,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 ## Patch niveau changers in CSS
 
-1. Je hebt de spelling van een CSS property gecorrigeerd. Bijvoorbeeld `colour` is aangepast naar `color`. <!-- @todo is dit altijd een patch wijziging of zien we dit juist als major -->
+In een design system dat door meerdere organisaties wordt gebruikt, kunnen zelfs kleine wijzigingen een grote impact hebben. Wat in een eigen project een eenvoudige patch voor verkeerde spacing zou zijn, kan in een design system een minor of zelfs breaking change betekenen. Daarom is het belangrijk om altijd rekening te houden met de impact van jouw wijziging op alle gebruikers.
 
 ## Breaking changes in JavaScript/TypeScript
 
