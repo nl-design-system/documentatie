@@ -162,7 +162,7 @@ Voor een **lege changeset** gebruik je alleen:
 
 ## Changesets publiceren
 
-Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. De publicatie-pull request zal na het mergen van verdere wijzigen steeds automatisch worden bijgewerkt. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd op npm.
+Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. Als de publicatie-pull request niet meteen gemerged wordt zal hij automatisch worden bijgewerkt zo lang dat nodig is. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd naar de npm Registry.
 
 ## Voorbeeld changeset
 
