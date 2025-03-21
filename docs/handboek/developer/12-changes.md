@@ -48,7 +48,7 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 1. Je hebt een class name verwijderd.
 1. Je hebt een class name of mixin van naam veranderd. Dit is hetzelfde als het verwijderen van de class name of mixin gevolgd door het toevoegen van een nieuwe. Dat maakt dit een breaking change.
 1. Je hebt een spelfout in een class name of mixin gecorrigeerd. Dit lijkt misschien op een patch versie ophoging, maar het is hetzelfde als het verwijderen van de oude name gevolgd door het toevoegen van een nieuwe name. Het is een breaking change omdat de oude name niet meer bestaat.
-1. Je hebt de waarde van een CSS property toegevoegd. Bijvoorbeeld `color: blue` is aangepast naar `color: var(--link-color, blue)`.
+1. Je hebt de waarde van een CSS property toegevoegd. Bijvoorbeeld `color: blue` is aangepast naar `color: var(--example-link-color, blue)`.
 
 ## Minor changes in CSS
 
