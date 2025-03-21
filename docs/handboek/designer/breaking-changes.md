@@ -42,7 +42,7 @@ Breaking changes zijn zoals [hierboven uitgelegd](#major), veranderingen die erv
 
 De eenvoudigste soort breaking change van een design token ontstaat als je een design token verwijdert. Afnemers die dit verwijderde design token in hun code gebruiken zien bij het gebruik van een nieuwe versie dat hun code niet meer werkt zoals voorheen.
 
-**Voorbeeld 1**: Het verwijderen van de design token `example.button.icon.space` zou ervoor zorgen dat de ruimte tussen het icoon en de tekst van een button komt te vervallen. De button gaat door deze verandering kapot.
+**Voorbeeld 1**: Het verwijderen van de design token `example.button.icon.space` zou ervoor zorgen dat de ruimte tussen het icoon en de tekst van een knop komt te vervallen. De knop gaat door deze verandering kapot.
 
 Een ander soort breaking change die hier op lijkt is als je de naam van een design token verandert. Dit lijkt misschien een minder grote verandering dan het verwijderen van een design token maar in feite komt het neer op:
 
@@ -59,7 +59,7 @@ Breaking changes zijn, ondanks hun naam, niet per se problematisch. Het is echte
 
 Nieuwe features, zoals nieuwe design tokens of een nieuwe eigenschap ‘dismissable‘, zijn veranderingen die ervoor zorgen dat het **minor** deel van het versienummer moet worden opgehoogd.
 
-**Voorbeeld**: Je maakt een nieuw design token `example.button.box-shadow` aan dat gebruikt kan worden een button een drop shadow te geven.
+**Voorbeeld**: Je maakt een nieuw design token `example.button.box-shadow` aan dat gebruikt kan worden een knop een drop shadow te geven.
 
 ### Bug fixes
 
