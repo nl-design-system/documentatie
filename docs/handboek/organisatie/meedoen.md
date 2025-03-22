@@ -81,13 +81,3 @@ Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat b
 Daarnaast is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland. Bij componenten die waarschijnlijk niet bruikbaar zijn voor de rest van Nederland, maar wel binnen eigen websites en apps, kiezen organisaties soms om ze alleen in hun eigen design system op te nemen, als zogenaamde ‘snowflake’.
 
 **Ideale optie**: De component is ook in Figma beschikbaar volgens de Figma architectuur.
-
-## Niveau 7. Design System beschikbaar maken voor de community en documenteren met Storybook
-
-### Bewijs
-
-Er is een Storybook website waarin de component, inclusief varianten, is gedocumenteerd.
-
-**Ideale optie**: De leverancier heeft een Storybook-omgeving opgeleverd, waarin naast componenten ook de benodigde pagina's zijn gedocumenteerd op een manier die anderen kunnen overnemen. Een goed voorbeeld zijn de [MijnZaken pagina’s van Den Haag](https://nl-design-system.github.io/denhaag/?path=/story/templates-overview--overview), die naast de componentendocumentatie beschikbaar zijn gemaakt.
-
-**Ideale optie voor organisaties met meerdere ontwikkelteams**: In de eigen Storybook zijn NL Design System “Community”, “Candidate” en “Hall of Fame” componenten die in de organisatie gebruikt worden gedocumenteerd.
