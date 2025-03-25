@@ -4,7 +4,7 @@ Kopieer en plak het onderstaande sjabloon. Je kunt hiervoor de kopieer knop link
 
 ```markdown
 ---
-"@nl-design-system-unstable/nlds-design-tokens": major
+"@nl-design-system-unstable/documentation": major
 ---
 
 Beschrijving
@@ -15,9 +15,9 @@ dubbele aanhalingstekens op een nieuwe regel.
 
 Gebruik:
 
-- `"@nl-design-system-unstable/nlds-design-tokens": major` voor breaking changes
-- `"@nl-design-system-unstable/nlds-design-tokens": minor` voor nieuwe features
-- `"@nl-design-system-unstable/nlds-design-tokens": patch` voor bug fixes
+- `"@nl-design-system-unstable/documentation": major` voor breaking changes
+- `"@nl-design-system-unstable/documentation": minor` voor nieuwe features
+- `"@nl-design-system-unstable/documentation": patch` voor bug fixes
 
 Beschrijf na de tweede set `---` welke veranderingen je hebt doorgevoerd.
 
