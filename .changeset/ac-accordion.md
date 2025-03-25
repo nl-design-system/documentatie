@@ -1,5 +1,5 @@
 ---
-"@nl-design-system-unstable/nlds-design-tokens": minor
+"@nl-design-system-unstable/documentation": minor
 ---
 
 Acceptatiecriteria aangepast voor component Accordion.

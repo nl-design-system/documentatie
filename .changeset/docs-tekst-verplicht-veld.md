@@ -1,5 +1,5 @@
 ---
-"@nl-design-system-unstable/nlds-design-tokens": minor
+"@nl-design-system-unstable/documentation": minor
 ---
 
 Richtlijnen voor teksten om verplichte velden aan te geven vereenvoudigd.
