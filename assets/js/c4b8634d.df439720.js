@@ -7,8 +7,8 @@
    var r = t(52676),
     i = t(40139);
    function o(e) {
-    const n = { a: 'a', p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsxs)(n.p, { children: ['Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA, en voor ', (0, r.jsx)(n.a, { href: 'https://nldesignsystem.nl/wcag/2.5.5', children: '2.5.5 Grootte van het aanwijsgebied uitgebreid' }), ') AAA.'] })] });
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsx)(n.p, { children: 'Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.' })] });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -175,7 +175,7 @@
   },
   93581: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => R, component: () => S, contentTitle: () => L, default: () => Z, description: () => P, frontMatter: () => z, issueNumber: () => _, metadata: () => W, title: () => N, toc: () => D });
+   t.r(n), t.d(n, { assets: () => R, component: () => S, contentTitle: () => L, default: () => Z, description: () => P, frontMatter: () => G, issueNumber: () => _, metadata: () => W, title: () => N, toc: () => D });
    var r = t(52676),
     i = t(40139),
     o = t(37635),
@@ -212,8 +212,8 @@
     x = t(97183),
     C = t(15953),
     T = t(55240),
-    G = t(8657);
-   const z = { title: 'Login Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Login Link', pagination_label: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', slug: '/login-link', keywords: ['button', 'inloggen', 'action'] },
+    z = t(8657);
+   const G = { title: 'Login Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Login Link', pagination_label: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', slug: '/login-link', keywords: ['button', 'inloggen', 'action'] },
     L = void 0,
     W = { id: 'componenten/login-link/index', title: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', source: '@site/docs/componenten/login-link/index.mdx', sourceDirName: 'componenten/login-link', slug: '/login-link', permalink: '/login-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/login-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Login Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Login Link', pagination_label: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', slug: '/login-link', keywords: ['button', 'inloggen', 'action'] }, sidebar: 'componenten', previous: { title: 'Link List', permalink: '/link-list' }, next: { title: 'Logo', permalink: '/logo' } },
     R = {},
@@ -237,15 +237,15 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(G.Rv, { component: S, headingLevel: 1, description: P }),
+      (0, r.jsx)(z.Rv, { component: S, headingLevel: 1, description: P }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(G.cN, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(z.cN, { component: S, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(G.W, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(z.W, { component: S, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
@@ -305,7 +305,7 @@
       '\n',
       (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(G.vM, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(z.vM, { component: S, headingLevel: 3 }),
      ],
     });
    }
