@@ -8,10 +8,11 @@ import Rozerin from './Rozerin';
 import Yolijn from './Yolijn';
 import Menno from './Menno';
 import Erik from './Erik';
+import Renate from './Renate';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Emma, Menno, Erik];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Emma, Menno, Erik, Renate];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
