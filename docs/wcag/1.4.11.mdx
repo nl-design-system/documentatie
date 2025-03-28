@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.11 Contrast van niet-tekstuele content
 pagination_label: WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content
-description: Het contrast van essentiele onderdelen van componenten  en de directe omgeving moet sterk genoeg zijn, zodat de onderdelen herkenbaar zijn.
+description: Het contrast van essentiele onderdelen van componenten en de directe omgeving moet sterk genoeg zijn, zodat de onderdelen herkenbaar zijn.
 slug: 1.4.11
 keywords:
   - WCAG
@@ -46,11 +46,11 @@ import Summary from "./summaries/_1.4.11-summary.md";
 
 Naast tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) moet ook andere essentiele content goed zichtbaar zijn.
 
-Dit kan bijvoorbeeld gaan om grafische objecten (zoals iconen en delen van complexe diagrammen). Het contrast van het (deel van het) icoon dat nodig is voor begrip, moet een contrast van 3.0:1 hebben met de directe omgeving.
+Dit kan bijvoorbeeld gaan om grafische objecten, zoals iconen en delen van complexe diagrammen. Het contrast van het (deel van het) icoon dat nodig is voor begrip, moet een contrast van 3.0:1 hebben met de directe omgeving.
 
-Het kan ook gaan om een component van de gebruikersinterface (zoals een link, een knop of een formulier element). Dan moet de visuele informatie die nodig is om het component (of de status ervan) te identificeren een contrast van 3.0:1 hebben met de directe omgeving.
+Het kan ook gaan om een component van de gebruikersinterface, zoals een link, een knop of een formulier element). Dan moet de visuele informatie die nodig is om het component (of de status ervan) te identificeren een contrast van 3.0:1 hebben met de directe omgeving.
 
-_Let op_: Als een knop een goede "call to action" heeft, dan moet deze tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) voldoen aan de contrasteisen van tekst, en mag de knop onopvallend zijn. Is er geen "call to action" identificatie? Dan moet de knop zelf contrastrijk genoeg zijn.
+_Let op_: Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) voldoen aan de contrasteisen van tekst, en mag de knop onopvallend zijn. Als deze een afbeelding bevat, dan is successcriterium 1.4.11 van toepassing op de afbeelding. Bevat het component niks dat het component identificeert? Dan moet het component zelf contrastrijk genoeg zijn.
 
 _Let op_: Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
 
@@ -59,7 +59,7 @@ Controleer in de volgende situaties of het kleurcontrast van de componenten vold
 - Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.
 - Verschillend oriëntaties: _portrait_ en _landscape_.
 - Vergroot de tekst alleen tot 200%.
-- Zoom in tot 400%.
+- Zoom in tot 400% vanaf schermbreedte van 1280px (of zet de schermbreedte op 320px).
 - Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de componenten.
 - Controleer de verschillende weergaves en statussen van buttons, menus en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, en al eerder bezocht.
 - Vergeet ook de skiplinks niet.
