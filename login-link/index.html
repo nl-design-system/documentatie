@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.2701d89d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.49dd6bdd.js" defer="defer"></script>
   <script src="/assets/js/main.7b21855b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -730,7 +730,7 @@
               <p>Gebruik jij één van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.</p>
               <p>Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.</p>
               <div class="utrecht-accordion">
-               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object]">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object]">
                 <h3 class="utrecht-accordion__header">
                  <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3amhralaqh:-panel" id="utrecht-accordion:R3amhralaqh:-button">
                   <span class="utrecht-accordion__button-icon"
@@ -768,6 +768,15 @@
                   <p>Wat betekent <strong>In context</strong>? Het doel van de link kan ook door omringende content worden aangegeven. Dit moet dan wel ook voor gebruikers van hulpmiddelen duidelijk zijn, bijvoorbeeld door aanvullende tekst of een afbeelding naast de link. Dit laatste is onderwerp van veel discussie. Het beste is om altijd goed in de linktekst zelf te vertellen want het doel is.</p>
                  </div>
                  <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
+                  </dl>
+                  <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.</p>
+                  <p>Een manier om dit in te stellen, is dat de actie niet activeert als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. Zo kan de bezoeker de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken. Gebruik hiervoor bij voorkeur het <code class="utrecht-code">click</code>-event, omdat dit apparaatonafhankelijk is.</p>
+                 </div>
+                 <div class="component-criteria-section">
                   <h4 class="utrecht-heading-4 component-criteria-section__heading">De zichtbare naam van de Login Link komt voor in de toegankelijke naam</h4>
                   <dl class="component-criteria-section__dl">
                    <dt class="component-criteria-section__dt">WCAG</dt>
@@ -777,21 +786,21 @@
                   <p>Dit is het eenvoudigst te realiseren door een <code class="utrecht-code">a</code>-element te gebruiken met daarin tekst.</p>
                   <p>Pas op met het gebruik van <code class="utrecht-code">aria-label</code> om een naam te geven aan een link. Een <code class="utrecht-code">aria-label</code> overschrijft de tekstinhoud van een link. Zodoende kan een link een toegankelijke naam krijgen die anders is dan de zichtbare naam, waardoor mensen die hulpsoftware gebruiken moeilijkheden kunnen krijgen met het bedienen van de link. Als je echt een <code class="utrecht-code">aria-label</code> nodig hebt, zorg dan dat de waarde van het <code class="utrecht-code">aria-label</code> begint met de exacte tekst die zichtbaar is in de link.</p>
                   <p>Dus niet:</p>
-                  <span hidden="" id=":R9rnamhralaqh:"
+                  <span hidden="" id=":R9snamhralaqh:"
                    >codevoorbeeld
                    <!-- -->
                    <!-- -->
                   </span>
-                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9rnamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Foute code, niet gebruiken --&gt;</span><span class="token plain"></span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9snamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Foute code, niet gebruiken --&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Klik hier om in te loggen</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                   <p>Maar:</p>
-                  <span hidden="" id=":Rdrnamhralaqh:"
+                  <span hidden="" id=":Rdsnamhralaqh:"
                    >codevoorbeeld
                    <!-- -->
                    <!-- -->
                   </span>
-                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdrnamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdsnamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                   <p>NL Design System richtlijnen:</p>
                   <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
@@ -958,7 +967,7 @@
                </div>
               </div>
               <div class="utrecht-accordion">
-               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object]">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object]">
                 <h3 class="utrecht-accordion__header">
                  <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3behralaqh:-panel" id="utrecht-accordion:R3behralaqh:-button">
                   <span class="utrecht-accordion__button-icon"
@@ -1010,20 +1019,6 @@
                    <dd class="component-criteria-section__dd"><a href="/wcag/2.4.11" class="utrecht-link utrecht-link--html-a">2.4.11 Focus niet bedekt (minimum)</a></dd>
                   </dl>
                   <p>Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.</p>
-                 </div>
-                 <div class="component-criteria-section">
-                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken</h4>
-                  <dl class="component-criteria-section__dl">
-                   <dt class="component-criteria-section__dt">WCAG</dt>
-                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
-                  </dl>
-                  <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.</p>
-                  <p>Dat kan op meerdere manieren:</p>
-                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                   <li>De actie gebeurt pas bij het <code class="utrecht-code">up</code>-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het <code class="utrecht-code">up</code>-event te voorkomen.</li>
-                   <li>De actie gebeurt bij het <code class="utrecht-code">down</code>-event, maar bij het <code class="utrecht-code">up</code>-event wordt het effect weer ongedaan gemaakt.</li>
-                   <li>Je kunt het effect achteraf weer ongedaan maken.</li>
-                  </ul>
                  </div>
                 </div>
                </div>

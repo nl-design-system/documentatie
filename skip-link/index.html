@@ -27,7 +27,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.2701d89d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.49dd6bdd.js" defer="defer"></script>
   <script src="/assets/js/main.7b21855b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -972,12 +972,7 @@
                    <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
                   </dl>
                   <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.</p>
-                  <p>Dat kan op meerdere manieren:</p>
-                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                   <li>De actie gebeurt pas bij het <code class="utrecht-code">up</code>-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het <code class="utrecht-code">up</code>-event te voorkomen.</li>
-                   <li>De actie gebeurt bij het <code class="utrecht-code">down</code>-event, maar bij het <code class="utrecht-code">up</code>-event wordt het effect weer ongedaan gemaakt.</li>
-                   <li>Je kunt het effect achteraf weer ongedaan maken.</li>
-                  </ul>
+                  <p>Een manier om dit in te stellen, is dat de actie niet activeert als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. Zo kan de bezoeker de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken. Gebruik hiervoor bij voorkeur het <code class="utrecht-code">click</code>-event, omdat dit apparaatonafhankelijk is.</p>
                  </div>
                  <div class="component-criteria-section">
                   <h4 class="utrecht-heading-4 component-criteria-section__heading">De zichtbare naam van de Skip Link komt voor in de toegankelijke naam</h4>

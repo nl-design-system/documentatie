@@ -105,8 +105,8 @@
    var r = t(52676),
     i = t(40139);
    function s(e) {
-    const n = { code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, r.jsx)(n.p, { children: 'Dat kan op meerdere manieren:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['De actie gebeurt pas bij het ', (0, r.jsx)(n.code, { children: 'up' }), '-event, en de gebruiker kan nog de aanwijzer verplaatsen naar buiten het element om het ', (0, r.jsx)(n.code, { children: 'up' }), '-event te voorkomen.'] }), '\n', (0, r.jsxs)(n.li, { children: ['De actie gebeurt bij het ', (0, r.jsx)(n.code, { children: 'down' }), '-event, maar bij het ', (0, r.jsx)(n.code, { children: 'up' }), '-event wordt het effect weer ongedaan gemaakt.'] }), '\n', (0, r.jsx)(n.li, { children: 'Je kunt het effect achteraf weer ongedaan maken.' }), '\n'] })] });
+    const n = { code: 'code', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, r.jsxs)(n.p, { children: ['Een manier om dit in te stellen, is dat de actie niet activeert als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. Zo kan de bezoeker de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken. Gebruik hiervoor bij voorkeur het ', (0, r.jsx)(n.code, { children: 'click' }), '-event, omdat dit apparaatonafhankelijk is.'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -227,8 +227,8 @@
     return n ? (0, u.jsx)(n, { ...e, children: (0, u.jsx)(w, { ...e }) }) : w(e);
    }
    var y = t(47901),
-    x = t(47913),
-    b = t(68934),
+    b = t(47913),
+    x = t(68934),
     A = t(50553),
     C = t(96620),
     z = t(77293),
@@ -238,8 +238,8 @@
     Z = t(56050),
     W = t(23930),
     R = t(71811),
-    D = t(1459),
-    N = t(4607),
+    N = t(1459),
+    D = t(4607),
     S = t(97183),
     _ = t(15953),
     P = t(97520),
@@ -309,8 +309,9 @@
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
-        { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, u.jsx)(D.ZP, {}) },
+        { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, u.jsx)(N.ZP, {}) },
         { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, u.jsx)(_.ZP, {}) },
+        { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, u.jsx)(T.ZP, {}) },
         { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, u.jsx)(G.ZP, {}) },
         { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, u.jsx)(Z.ZP, {}) },
        ],
@@ -320,7 +321,7 @@
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
-        { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg', sc: '1.4.3', status: '', component: (0, u.jsx)(b.ZP, {}) },
+        { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg', sc: '1.4.3', status: '', component: (0, u.jsx)(x.ZP, {}) },
         { title: 'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1', sc: '1.4.11', status: '', component: (0, u.jsx)(y.ZP, {}) },
         { title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, u.jsx)(L.ZP, {}) },
         { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, u.jsx)(W.ZP, {}) },
@@ -332,7 +333,7 @@
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, u.jsx)(A.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, u.jsx)(x.ZP, {}) },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, u.jsx)(b.ZP, {}) },
        ],
       }),
       '\n',
@@ -341,10 +342,9 @@
        testCategory: 'Toegankelijkheid toetsenbord',
        items: [
         { title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: (0, u.jsx)(C.ZP, {}) },
-        { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval', sc: '2.1.2', status: '', component: (0, u.jsx)(N.ZP, {}) },
+        { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval', sc: '2.1.2', status: '', component: (0, u.jsx)(D.ZP, {}) },
         { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, u.jsx)(z.ZP, {}) },
         { title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: (0, u.jsx)(S.ZP, {}) },
-        { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, u.jsx)(T.ZP, {}) },
        ],
       }),
       '\n',
@@ -633,7 +633,7 @@
   },
   8657: (e, n, t) => {
    'use strict';
-   t.d(n, { cN: () => b, vM: () => C, W: () => A, Rv: () => z });
+   t.d(n, { cN: () => x, vM: () => C, W: () => A, Rv: () => z });
    var r = t(41115),
     i = t(4814),
     s = t(39854),
@@ -680,17 +680,17 @@
      let { checked: n, children: t, title: r, description: s, headingLevel: o = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(w.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
     };
-   var x = t(14669);
-   const b = (e) => {
+   var b = t(14669);
+   const x = (e) => {
      let { component: n, headingLevel: t } = e;
-     const s = n && n.projects.filter((e) => x.e9.includes(e.id)),
-      o = s && x.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
+     const s = n && n.projects.filter((e) => b.e9.includes(e.id)),
+      o = s && b.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
      return (
       n &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
         headingLevel: t,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -701,7 +701,7 @@
            (0, d.jsx)(f, {
             children: e.tasks.map((e) => {
              let { checked: n, name: r, id: i } = e;
-             return (0, d.jsx)(y, { headingLevel: t + 1, checked: n, title: r, description: (0, x.Q6)(i) }, i);
+             return (0, d.jsx)(y, { headingLevel: t + 1, checked: n, title: r, description: (0, b.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${n.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -713,7 +713,7 @@
     },
     A = (e) => {
      let { component: n, headingLevel: t } = e;
-     const i = n && n.projects.filter((e) => !x.e9.includes(e.id));
+     const i = n && n.projects.filter((e) => !b.e9.includes(e.id));
      return n && i.length
       ? (0, d.jsx)(m.um, {
          appearance: 'large',
@@ -778,7 +778,7 @@
     },
     z = (e) => {
      let { component: n, headingLevel: t, description: i } = e;
-     const s = n && x.$3[n.relayStep];
+     const s = n && b.$3[n.relayStep];
      return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(k.V, { level: t, suffix: s && (0, d.jsx)(p.y, { state: s }), children: n.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },

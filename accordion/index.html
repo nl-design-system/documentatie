@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.2701d89d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.49dd6bdd.js" defer="defer"></script>
   <script src="/assets/js/main.7b21855b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -884,7 +884,7 @@
               <p>Gebruik jij één van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.</p>
               <p>Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.</p>
               <div class="utrecht-accordion">
-               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
                 <h3 class="utrecht-accordion__header">
                  <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3amhralaqh:-panel" id="utrecht-accordion:R3amhralaqh:-button">
                   <span class="utrecht-accordion__button-icon"
@@ -921,6 +921,16 @@
                    <li><a href="/richtlijnen/formulieren/buttons/duidelijk-buttontekst/" class="utrecht-link utrecht-link--html-a">Duidelijke buttontekst die beschrijft wat de button doet</a></li>
                    <li><a href="/richtlijnen/formulieren/buttons/toegankelijke-naam/" class="utrecht-link utrecht-link--html-a">De toegankelijke naam van een button</a></li>
                   </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
+                  <p>Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.</p>
+                  <p>Met zowel een <code class="utrecht-code">button</code> element als met een <code class="utrecht-code">details</code> en <code class="utrecht-code">summary</code> combinatie gaat dit automatisch goed. Met een div-element waarop <code class="utrecht-code">role= &quot;button&quot;</code> is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het <code class="utrecht-code">click</code>-event, omdat dit apparaatonafhankelijk is.</p>
                  </div>
                  <div class="component-criteria-section">
                   <h4 class="utrecht-heading-4 component-criteria-section__heading">De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion</h4>
@@ -1132,7 +1142,7 @@
                </div>
               </div>
               <div class="utrecht-accordion">
-               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object]">
                 <h3 class="utrecht-accordion__header">
                  <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3behralaqh:-panel" id="utrecht-accordion:R3behralaqh:-button">
                   <span class="utrecht-accordion__button-icon"
@@ -1195,16 +1205,6 @@
                    <dd class="component-criteria-section__dd"><a href="/wcag/2.4.11" class="utrecht-link utrecht-link--html-a">2.4.11 Focus niet bedekt (minimum)</a></dd>
                   </dl>
                   <p>Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.</p>
-                 </div>
-                 <div class="component-criteria-section">
-                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren</h4>
-                  <dl class="component-criteria-section__dl">
-                   <dt class="component-criteria-section__dt">WCAG</dt>
-                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
-                  </dl>
-                  <p>Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.</p>
-                  <p>Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.</p>
-                  <p>Met een zowel een <code class="utrecht-code">button</code> element als met een <code class="utrecht-code">details</code> en <code class="utrecht-code">summary</code> combinatie gaat dit automatisch goed. Met een div-element waarop <code class="utrecht-code">role= &quot;button&quot;</code> is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het <code class="utrecht-code">click</code> event, omdat dit apparaatonafhankelijk is.</p>
                  </div>
                 </div>
                </div>
