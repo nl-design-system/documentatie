@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/archimate
 
+## 1.0.1
+
+### Patch Changes
+
+- 67153e3: Add provenance
+
 ## 1.0.0
 
 ### Major Changes
