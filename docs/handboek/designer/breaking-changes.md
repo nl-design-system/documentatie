@@ -134,4 +134,14 @@ Ga naar de lijst met pull requests en zoek je eigen pull request op.
 
 ## Hoe verder?
 
-Nadat je pull request met veranderingen is goedgekeurd, wordt er op GitHub een nieuwe pull request aangemaakt die ervoor zorgt dat je veranderingen worden gepubliceerd naar het registry.
+Ben je er klaar voor om je pull request te mergen, komen er geen wijzigingen meer aan?
+
+Voor de volgende stappen heb je een developer nodig.
+
+1. Vraag een developer om je pull request te reviewen.
+1. Is je pull request goedgekeurd? Dan mag je deze mergen met de optie ‘Squash and merge’.
+1. Na het mergen wordt automatisch een nieuwe pull request aangemaakt door een bot om de versie te publiceren.
+1. Bepaal of je deze publicatie-pull request direct wilt mergen of wilt wachten op meer wijzigingen.
+1. De publicatie-pull request wordt automatisch bijgewerkt zodra nieuwe wijzigingen naar main worden gemerged.
+1. Klaar om de publicatie-pull request te mergen? Vraag een developer om dit te doen.
+1. Zodra de publicatie-pull request is gemerged, worden de pakketten automatisch gepubliceerd op npm.
