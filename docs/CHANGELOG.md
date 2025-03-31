@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/documentation
 
+## 1.3.1
+
+### Patch Changes
+
+- 67153e3: Add provenance
+
 ## 1.3.0
 
 ### Minor Changes
