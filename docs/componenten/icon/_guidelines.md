@@ -18,6 +18,8 @@ Combineer waar mogelijk een icoon met tekst.
 
 Het kan zijn dat een bezoeker een icoon niet helemaal goed begrijpt. Het gebruik van tekst (label) is ook een belangrijke factor in de navigatie. Een eenvoudig en duidelijk icoon met een goed omschreven label is superieur aan iconen of labels alleen.
 
+Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien, een leeg `alt=""` attribuut is dan voldoende. Een <img> met een alt="" hetzelfde als aria-hidden="true". De afbeelding wordt dan uit de “accessibility tree” gehaald, en compleet genegeerd.
+
 ## Niet te veel iconen op een pagina {#hoeveelheid-iconen}
 
 Te veel iconen gebruiken op een pagina kan een soort blindheid veroorzaken.
