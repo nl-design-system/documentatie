@@ -1,0 +1,10 @@
+{
+  "label": "Descriptions",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/description/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

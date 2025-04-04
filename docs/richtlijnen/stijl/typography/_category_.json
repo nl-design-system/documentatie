@@ -1,0 +1,10 @@
+{
+  "label": "Typografie",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/stijl/typography/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

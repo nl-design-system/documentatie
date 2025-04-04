@@ -1,0 +1,28 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Geen placeholder gebruiken als het label duidelijk genoeg is.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="voornaam1">Je voornaam</label>
+        <input autoComplete="given-name" id="voornaam1" name="voornaam" type="text" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="De labeltekst herhalen in de placeholder.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="voornaam2">Voornaam</label>
+        <input autoComplete="given-name" id="voornaam2" name="voornaam" placeholder="Voornaam" type="text" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

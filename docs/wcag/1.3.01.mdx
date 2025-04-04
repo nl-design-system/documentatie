@@ -1,0 +1,89 @@
+---
+title: WCAG-succescriterium 1.3.1 Info en relaties
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1.3.1 Info en relaties
+pagination_label: WCAG-succescriterium 1.3.1 Info en relaties
+description: Alle gebruikers moeten over dezelfde informatie kunnen beschikken.
+slug: 1.3.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.3.1-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 1.3.1 Info en relaties"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+Bijvoorbeeld:
+
+- Als tekst er uitziet als een kopje, moet dit ook in de HTML een kopje (heading) zijn en geen vet gemaakte tekst. Het kopjesniveau wordt voorgelezen door screenreaders.
+- Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor screenreadersgebruikers, door het gebruik van table headings (th’s). De table heading wordt voorgelezen bij de waarde van een bijbehorende table cell.
+- In een formulier moeten invoervelden en labels aan elkaar gekoppeld zijn met een [for/id-relatie](/richtlijnen/formulieren/labels/toegankelijke-naam). Dan wordt het label voorgelezen als het invoerveld de focus krijgt.
+- Staan gegevens in een lijst, gebruik dan ook in de HTML een lijst (ul) en niet alleen streepjes voor de items. Een screenreader leest dan voor dat het een lijst is, hoeveel items er zijn in de lijst en bij welk item de lezer zich op dat moment bevindt.
+- Gebruik je een afbeelding om informatie te geven, zorg er dan voor dat de alternatieve tekst van de afbeelding de juiste informatie bevat, of voeg de informatie vlakbij de afbeelding in tekst toe.
+
+Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relaties, visuele informatie en opmaak, dan begrijpen gebruikers van hulpmiddelen deze informatie ook.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Buttons: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
+- Formulieren - Labels: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels/toegankelijke-naam).
+- Formulieren - Foutmeldingen: [Schrijf een foutmelding uit in tekst](/richtlijnen/formulieren/foutmeldingen/beschrijven).
+- Formulieren - Bevestigingspagina: [Maak de succesmelding toegankelijk voor alle gebruikers](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding).
+
+## Gebruikersonderzoek
+
+De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede informatie voor screenreadergebruikers aan: [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces).
+
+> Het is voor de blinden niet duidelijk dat er een verplicht invulveld zit in de kaart om het adres in te vullen. Ze vullen het niet in en gaan door in het formulier. Dit, gecombineerd met een onduidelijke foutmelding zorgt er voor dat ze vast komen te zitten en uit het proces vallen.
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+De pagina doorlezen met een screenreader is een goede manier om dit succescriterium te testen. Wordt de informatie die je ziet ook goed voorgelezen.
+
+Controleer of de HTML semantisch is opgemaakt, zoals bijvoorbeeld:
+
+- **Kopjes** (headings): ziet tekst eruit als een kopje, is deze opgemaakt als HTML-kopje (h1, h2, h3 etc)? En andersom: worden kopjes niet gebruikt om tekst alleen groot te maken?
+- **Lijsten**: is tekst opgemaakt als een genummerde of ongenummerde lijst, is deze in de HTML dan ook opgemaakt als een genummerde (`<ol>`) of ongenummerde lijst (`<ul>`)?
+- **Tabellen** voor het weergeven van data: is het duidelijk welke data precies wordt weergegeven? Bijvoorbeeld door het gebruik van table headings (th’s) en scope.
+
+Test voor formuliervelden:
+
+- Is het label en de description gekoppeld aan het invoerveld?
+- Weet een screenreadergebruiker ook dat een veld verplicht is?
+- Worden fout- en succesmeldingen voorgelezen door een screenreader?
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.1 Info and Relationships</span>](https://www.w3.org/TR/WCAG22/#info-and-relationships).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.3.1 Info en relaties](https://www.w3.org/Translations/WCAG22-nl/#info-en-relaties).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

@@ -4,26 +4,69 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Checkbox
 pagination_label: Checkbox
-description: " "
+description: 'Invoerveld voor het kiezen van een optie uit een groep van opties, of om te kiezen tussen "wel" of "niet".'
 slug: /checkbox
-sidebar_custom_props:
-  illustration: CheckboxSketch
+keywords:
+  - aankruisen
+  - aankruisvakje
+  - aanvinken
+  - afvinken
+  - aria-checked
+  - aria-disabled
+  - aria-invalid
+  - aria-required
+  - check
+  - check box
+  - checkbox
+  - checkbox button
+  - checkboxes
+  - checked
+  - form
+  - form control
+  - formulier
+  - indeterminate
+  - invoerveld
+  - kruis
+  - kruisje
+  - meerkeuze
+  - niet
+  - optie
+  - option
+  - option box
+  - optional
+  - optioneel
+  - required
+  - select
+  - selecteren
+  - selectievakje
+  - selection box
+  - uncheck
+  - unchecked
+  - verplicht
+  - vink
+  - vinkje
+  - wel
+  - X mark
 ---
 
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "Checkbox";
-export const description = "";
-export const illustration = "CheckboxSketch";
+export const description = 'Invoerveld voor het kiezen van een optie uit een groep van opties, of om te kiezen tussen "wel" of "niet".';
 export const issueNumber = 64;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
@@ -33,6 +76,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Levende Backlog
+## Help component verbeteren
 
-<Backlog component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={3} />

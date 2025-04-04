@@ -1,0 +1,73 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+ <!-- This ensures the component can be found in the ComponentIllustration component -->
+  <symbol id="component-illustration">
+    
+    <!-- Use variables to set backgroundcolors so they can change with the status of the component without modififying this file --> -->
+        <rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+        <rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+
+        <rect width="2" height="540" transform="translate(69)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(151)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(233)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(315)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(397)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(479)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(561)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(643)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(725)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(807)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="2" height="540" transform="translate(889)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 64)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 146)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 228)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 310)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 392)" fill="var(--component-illustration-grid-color, #eee)"/>
+        <rect width="960" height="2" transform="translate(0 474)" fill="var(--component-illustration-grid-color, #eee)"/>
+
+        <rect x="317" y="116" width="326" height="308" stroke="var(--component-illustration-color, #666)" stroke-width="4" fill="var(--component-illustration-background-color, white)"/>
+        <circle cx="519" cy="250" r="22" stroke="var(--component-illustration-color, #666)" stroke-width="4" fill="none"/>
+        <rect x="355" y="162" width="16" height="16" fill="var(--component-illustration-background-color, white)"/>
+        <rect x="394" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="550" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="589" y="162" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="355" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="394" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="550" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="589" y="202" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="355" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="394" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="550" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="589" y="242" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="355" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="394" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="550" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="589" y="282" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="355" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="394" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="550" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="589" y="322" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="355" y="362" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="394" y="362" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="433" y="362" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="472" y="362" width="16" height="16" fill="var(--component-illustration-color, #666)"/>
+        <rect x="511" y="362" width="16" height="16" fill="var(--component-illustration-background-color, white)"/>
+        <rect x="550" y="362" width="16" height="16" fill="var(--component-illustration-background-color, white)"/>
+        <rect x="589" y="362" width="16" height="16" fill="var(--component-illustration-background-color, white)"/>
+    </symbol>
+    <use href="#component-illustration"/>
+</svg>

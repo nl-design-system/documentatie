@@ -1,0 +1,40 @@
+---
+title: Form Summary
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Form Summary
+pagination_label: Form Summary
+description: " "
+slug: /form-summary
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Form Summary";
+export const description = "";
+export const issueNumber = 185;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Help component verbeteren
+
+<HelpImproveComponent component={component} headingLevel={3} />

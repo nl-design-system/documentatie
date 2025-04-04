@@ -1,5 +1,4 @@
 import Head, { type Props as HeadProps } from '@docusaurus/Head';
-import type { Props } from '@theme/MDXComponents/Head';
 import React, { type ReactElement } from 'react';
 
 // MDX elements are wrapped through the MDX pragma. In some cases (notably usage
@@ -12,7 +11,7 @@ function unwrapMDXElement(element: ReactElement<{ mdxType?: string; originalType
   return element;
 }
 
-export default function MDXHead(props: Props): React.Element {
+export default function MDXHead(props: HeadProps): ReactElement {
   const unwrappedChildren = React.Children.map(props.children, (child) =>
     React.isValidElement(child) ? unwrapMDXElement(child) : child,
   );

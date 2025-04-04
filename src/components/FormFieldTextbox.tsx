@@ -6,14 +6,14 @@ import {
   FormField,
   FormFieldDescription,
   FormFieldErrorMessage,
-  FormFieldProps,
   FormLabel,
   Textbox,
 } from '@utrecht/component-library-react';
-import { TextboxTypes } from '@utrecht/component-library-react/dist/Textbox';
+import type { FormFieldProps } from '@utrecht/component-library-react';
+import type { TextboxTypes } from '@utrecht/component-library-react/dist/Textbox';
 import clsx from 'clsx';
-import React from 'react';
-import { ForwardedRef, forwardRef, ReactNode, useId } from 'react';
+import { forwardRef, useId } from 'react';
+import type { ForwardedRef, ReactNode } from 'react';
 
 export interface FormFieldTextboxProps extends FormFieldProps {
   autoComplete?: string;
@@ -26,10 +26,10 @@ export interface FormFieldTextboxProps extends FormFieldProps {
   max?: number | string;
   min?: number | string;
   name?: string;
-  onBlur?: any;
-  onChange?: any;
-  onFocus?: any;
-  onInput?: any;
+  onBlur?: FormFieldProps['onBlur'];
+  onChange?: FormFieldProps['onChange'];
+  onFocus?: FormFieldProps['onFocus'];
+  onInput?: FormFieldProps['onInput'];
   pattern?: string;
   placeholder?: string;
   readOnly?: boolean;

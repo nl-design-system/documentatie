@@ -1,0 +1,48 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Leg uit hoe een veld in te vullen." description="Bijvoorbeeld in de description.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="ww">Nieuw wachtwoord</label>
+        <p id="ww_description">Minimaal 8 karakters, waarvan 2 cijfers en 1 hoofdletter.</p>
+        <input type="password" id="ww" name="wachtwoord" aria-describedby="ww_description" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Wijze van invullen weglaten."
+  description="Laat de gebruiker niet raden of pas bij de foutmeldingen ontdekken wat er mis is."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="ww2">Nieuw wachtwoord</label>
+        <input type="password" id="ww2" name="wachtwoord" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Wijze van invullen alleen in de placeholder zetten."
+  description="Zeker als de wijze van invullen precies goed moet zijn."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="geboortedatum2">Geboortedatum</label>
+        <input type="text" id="geboortedatum2" name="geboortedatum" placeholder="dd/mm/jjjj" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

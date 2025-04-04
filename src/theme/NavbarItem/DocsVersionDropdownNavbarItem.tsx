@@ -7,9 +7,9 @@ import { useDocsVersionCandidates } from '@docusaurus/theme-common/internal';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
 import type { Props } from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-const getVersionMainDoc = (version: GlobalVersion) => version.docs.find((doc) => doc.id === version.mainDocId)!;
+const getVersionMainDoc = (version: GlobalVersion) => version.docs.find((doc) => doc.id === version.mainDocId);
 
 export default function DocsVersionDropdownNavbarItem({
   mobile,
@@ -18,7 +18,7 @@ export default function DocsVersionDropdownNavbarItem({
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): React.Element {
+}: Props): ReactElement {
   const { search, hash } = useLocation();
   const activeDocContext = useActiveDocContext(docsPluginId);
   const versions = useVersions(docsPluginId);

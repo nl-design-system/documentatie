@@ -7,10 +7,10 @@ import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import TOC from '@theme/TOC';
 import clsx from 'clsx';
-import React, { type ReactNode } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 import BlogLayout from '../BlogLayout';
 
-function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; children: ReactNode }): React.Element {
+function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; children: ReactNode }): ReactElement {
   const { metadata, toc } = useBlogPost();
   const { nextItem, prevItem, frontMatter } = metadata;
   const {
@@ -20,7 +20,10 @@ function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; chil
   } = frontMatter;
   return (
     <BlogLayout
-      breadcrumbs={[{ label: 'Blog', href: '/blog' }, { label: metadata.title }]}
+      breadcrumbs={[
+        { label: 'Blog', href: '/blog' },
+        { label: metadata.title, href: '#' },
+      ]}
       sidebar={sidebar}
       toc={
         !hideTableOfContents && toc.length > 0 ? (
@@ -35,7 +38,7 @@ function BlogPostPageContent({ sidebar, children }: { sidebar: BlogSidebar; chil
   );
 }
 
-export default function BlogPostPage(props: Props): React.Element {
+export default function BlogPostPage(props: Props): ReactElement {
   const BlogPostContent = props.content;
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>

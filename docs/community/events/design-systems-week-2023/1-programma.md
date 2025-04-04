@@ -1,5 +1,5 @@
 ---
-title: Programma
+title: Programma · Design Systems Week 2023
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Programma
@@ -7,7 +7,7 @@ pagination_label: Programma
 slug: /events/design-systems-week-2023/programma
 ---
 
-import DSWSession from "../../../../src/components/DSWSession";
+import { DSWSession } from "@site/src/components/DSWSession";
 import speakers from "./speakers.json";
 import { Link } from '@utrecht/component-library-react/dist/css-module';
 

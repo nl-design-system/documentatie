@@ -1,7 +1,9 @@
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { Canvas, CanvasContainerType } from '@site/src/components/Canvas/Canvas';
+import { Canvas } from '@site/src/components/Canvas/Canvas';
+import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
 import { ContrastRatio } from '@site/src/components/ContrastRatio';
+import { FormFieldTextbox } from '@site/src/components/FormFieldTextbox';
 import { Guideline } from '@site/src/components/Guideline';
 import Layout from '@theme/Layout';
 import {
@@ -14,10 +16,10 @@ import {
   Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import { FormFieldTextbox } from '/src/components/FormFieldTextbox';
 import Color from 'color';
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import style from './index.module.css';
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import './index.css';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -48,6 +50,7 @@ export const parseColor = (colorString: string) => {
   // Parse colors such as `hsl(0deg 0% 20%)`
   try {
     color = Color(query);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   } catch (e) {
     color = null;
   }
@@ -60,7 +63,7 @@ const ExampleRendering = ({
   label,
   ...props
 }: PropsWithChildren<{ label: string } & HTMLAttributes<HTMLDivElement>>) => (
-  <div role="img" aria-label={label} className={style['nlds-example-rendering']} {...props}>
+  <div role="img" aria-label={label} className="nlds-example-rendering" {...props}>
     {children}
   </div>
 );
@@ -105,8 +108,13 @@ const ContrastPage = () => {
   const { search } = useLocation();
 
   const params = new URLSearchParams(search);
-  const backgroundColor = params.get('background-color');
-  const color = params.get('color');
+  let backgroundColor = params.get('background-color');
+  let color = params.get('color');
+
+  if (!backgroundColor && !color) {
+    backgroundColor = 'white';
+    color = '#000000';
+  }
 
   const parsedBackgroundColor = parseColor(backgroundColor);
   const parsedColor = parseColor(color);
@@ -201,13 +209,25 @@ const ContrastPage = () => {
       >
         <Heading1>Contrast van kleuren</Heading1>
         <Paragraph lead>
-          Vul de CSS-kleurcodes in van twee kleuren. Controleer dan voor welke toepassingen je de combinatie kunt
-          gebruiken.
+          Vul de voorgrondkleur en achtergrondkleur in als CSS-waarden. Controleer dan voor welke toepassingen je de
+          combinatie kunt gebruiken. Bijvoorbeeld:
         </Paragraph>
-        <form method="get" action="./" className={style['nlds-form']}>
+        <UnorderedList>
+          <UnorderedListItem>
+            hex-kleuren <Code>#F00</Code>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            rgb-kleuren: <Code>rgb(255 0 0)</Code>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            kleurnamen: <Code>red</Code>
+          </UnorderedListItem>
+        </UnorderedList>
+
+        <form method="get" action="./" className="nlds-form">
           <FormFieldTextbox
             name="background-color"
-            label={<Code>background-color</Code>}
+            label="Achtergrondkleur"
             defaultValue={backgroundColor}
             style={{
               '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)',
@@ -216,7 +236,7 @@ const ContrastPage = () => {
           <FormFieldTextbox
             name="color"
             defaultValue={color}
-            label={<Code>color</Code>}
+            label="Voorgrondkleur"
             style={{
               '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)',
             }}
@@ -239,13 +259,7 @@ const ContrastPage = () => {
                 <Paragraph>Gebruik deze kleuren voor bijvoorbeeld:</Paragraph>
                 <div>
                   {dos.map(({ container, content, example, positive }, index) => (
-                    <Guideline
-                      key={index}
-                      appearance={positive ? 'do' : 'dont'}
-                      title={content}
-                      displayCode={false}
-                      figure
-                    >
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
                       <Canvas
                         language="html"
                         code={null}
@@ -278,7 +292,7 @@ const ContrastPage = () => {
                 </Paragraph>{' '}
                 <div>
                   {donts.map(({ container, content, example, positive }, index) => (
-                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} displayCode={false}>
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
                       <Canvas
                         language="html"
                         code={null}

@@ -1,0 +1,100 @@
+---
+title: WCAG-succescriterium 3.1.1 Taal van de pagina
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 3.1.1 Taal van de pagina
+pagination_label: WCAG-succescriterium 3.1.1 Taal van de pagina
+description: Geef de menselijke taal waarin de tekst van een webpagina is geschreven aan. Dit kan door in het html-element het attribuut ‘lang’ mee te geven.
+slug: 3.1.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_3.1.1-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 3.1.1 Taal van de pagina"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+Deze waarde is als volgt samengesteld: Twee (kleine) letters voor de taalgroep uit de [ISO 639-1 standaard](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) en, optioneel, een koppelteken, met daarna twee of drie letters voor de variatie of regio van de taal in hoofdletters.
+
+De code voor taalgroep is verplicht, de regio-code is optioneel.
+
+Een uitgebreid overzicht staat op [HTML lang attribute / ISO language code reference / Culture names](https://gist.github.com/JamieMason/3748498) van Jamie Mason.
+
+Voor Nederlands:
+
+- `<html lang="nl">` voor algemeen Nederlands.
+- `<html lang="nl-NL">` voor Nederlands.
+- `<html lang="nl-BE">` voor Vlaams.
+
+Het Fries is geen variatie van het Nederlands maar een eigen taal en heeft daarom een eigen ISO 639-1 code: `<html lang="fy">`.
+
+Voor Engels bijvoorbeeld:
+
+- `<html lang="en">` voor algemeen Engels.
+- `<html lang="en-GB">` voor Brits.
+- `<html lang="en-US">` voor Amerikaans.
+
+De gebruiker kan verschillende talen (stemmen) downloaden en ervoor kiezen bijvoorbeeld alleen Brits-Engels te gebruiken. Een Amerikaans gelabelde website wordt dan toch in het Brits voorgelezen.
+
+**Let op**: dit succescriterium betreft de taal van de hele pagina. Wil je alleen een deel in een andere taal publiceren, gebruik dan het `lang`-attribuut op elementen in de andere taal binnen de pagina. Hoe dit te doen staat bij het WCAG-succescriterium [3.1.2 Taal van onderdelen](/wcag/3.1.2).
+
+## Bronnen
+
+- [<span lang="en">The lang attribute: browsers telling lies, telling sweet little lies</span>](https://www.matuzo.at/blog/lang-attribute) van Manuel Matuzović over de problemen met het automatisch vertalen met Google Translate.
+- [<span lang="en">Language subtag lookup</span>](https://r12a.github.io/app-subtags/)
+- [<span lang="en">`lang`-attribuut op MDN</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
+- [<span lang="en">Language tags in HTML and XML</span>](https://www.w3.org/International/articles/language-tags/index.en) van de W3C.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Inspecteer de gegenereerde HTML-code van de webpagina, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+Heeft het `html`-element een `lang`-attribuut en is dit een geldige waarde?
+
+Staat er op een website een taalkeuze? Controleer bij de verschillende talen of ook de waarde van het lang-attribuut is aangepast.
+
+**Let op**: alleen de tekst (de content) wordt in een andere taal voorgelezen. Dus alle ander informatie die een screenreader voorleest blijft in de taal van de computer. Dit is informatie over bijvoorbeeld formulierelementen, het niveau van een kopje, of een element een button of een link is, etc. Dit is gewenst gedrag.
+
+## Veelgemaakte fouten
+
+### Fout: Ontbrekend lang-attribuut
+
+Jaarlijks meet WebAIM de toegankelijkheid van 1 miljoen voorpagina's van websites. Volgens het onderzoek [WebAIM Million uit 2024](https://webaim.org/projects/million/) mist bij 17% van de gemeten websites het `lang`-attribuut. Het hoort hierbij tot de top 5 van meest gemaakte fouten.
+
+Het controleren van de taal is dus geen overbodige luxe. Een goed CMS zet zelf het `lang`-attribuut in de code. Maar check dan ook of dat de juiste waarde is voor de tekst van de website.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.1.1 Language of Page</span>](https://www.w3.org/TR/WCAG22/#language-of-page).
+- Nederlandse vertaling van het WCAG-succescriterium: [3.1.1 Taal van de pagina](https://www.w3.org/Translations/WCAG22-nl/#taal-van-de-pagina).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.1.1 Language of Page</span>](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 3.1.1: Language of Page</span>](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

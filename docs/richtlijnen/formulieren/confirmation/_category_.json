@@ -1,0 +1,10 @@
+{
+  "label": "Bevestigingspagina",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/confirmation/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

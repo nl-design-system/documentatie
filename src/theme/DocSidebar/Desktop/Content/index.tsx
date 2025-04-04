@@ -4,8 +4,9 @@ import { useAnnouncementBar, useScrollPosition } from '@docusaurus/theme-common/
 import type { Props } from '@theme/DocSidebar/Desktop/Content';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import clsx from 'clsx';
-import React, { useState } from 'react';
-import styles from './styles.module.css';
+import { useState } from 'react';
+import type { ReactElement } from 'react';
+import './styles.css';
 
 function useShowAnnouncementBar() {
   const { isActive } = useAnnouncementBar();
@@ -22,7 +23,7 @@ function useShowAnnouncementBar() {
   return isActive && showAnnouncementBar;
 }
 
-export default function DocSidebarDesktopContent({ path, sidebar, className }: Props): React.Element {
+export default function DocSidebarDesktopContent({ path, sidebar, className }: Props): ReactElement {
   const showAnnouncementBar = useShowAnnouncementBar();
 
   return (
@@ -32,12 +33,7 @@ export default function DocSidebarDesktopContent({ path, sidebar, className }: P
         message: 'Docs sidebar',
         description: 'The ARIA label for the sidebar navigation',
       })}
-      className={clsx(
-        'menu thin-scrollbar',
-        styles.menu,
-        showAnnouncementBar && styles.menuWithAnnouncementBar,
-        className,
-      )}
+      className={clsx('menu thin-scrollbar', 'menu', showAnnouncementBar && 'menuWithAnnouncementBar', className)}
     >
       <ul className={clsx(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>
         <DocSidebarItems items={sidebar} activePath={path} level={1} />

@@ -1,0 +1,23 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="dont" title="Het label inconsequent plaatsen in een formulier (visueel en in code).">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="lievelingskleur">Wat is je lievelingskleur?</label>
+        <select name="lievelingskleur" id="lievelingskleur">
+          <option>Rood</option>
+          <option>Blauw</option>
+          <option>Wit</option>
+        </select>
+        <input type="text" id="dier" name="lievelingsdier" />
+        <label htmlFor="dier">Wat is je lievelingsdier?</label>
+      </>
+    )}
+  </Canvas>
+</Guideline>

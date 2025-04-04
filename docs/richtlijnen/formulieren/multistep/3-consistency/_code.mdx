@@ -1,0 +1,42 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Benoem de stappen consistent.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          <a href="./stap-1">Vorige stap</a>
+        </p>
+        [...]
+        <div>
+          <button>Volgende stap</button>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Verschillen tussen hoe de vorige en volgende stap worden benoemd."
+  description="Gebruik ofwel ‘terug’/‘verder’ ofwel ‘Vorige stap’/‘Volgende stap’."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          <a href="./stap-1">Terug</a>
+        </p>
+        [...]
+        <div>
+          <button>Volgende stap</button>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>

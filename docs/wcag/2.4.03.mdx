@@ -1,0 +1,83 @@
+---
+title: WCAG-succescriterium 2.4.3 Focus volgorde
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 2.4.3 Focus volgorde
+pagination_label: WCAG-succescriterium 2.4.3 Focus volgorde
+description: Wanneer een toetsenbordgebruiker binnen de webpagina navigeert, bijvoorbeeld met de Tab-toets, moet de tabvolgorde logisch en voorspelbaar zijn.
+slug: 2.4.3
+keywords:
+  - WCAG
+  - Focus Order
+  - Niveau A
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_2.4.3-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 2.4.3 Focus volgorde"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+Een voorspelbare focus volgorde is belangrijk voor toetsenbordgebruikers. Zij kunnen dan bijvoorbeeld makkelijker binnen een pagina links of buttons ontdekken of een formulier invullen.
+
+Zorg ervoor dat de natuurlijke tabvolgorde bij de verschillende resoluties, schermbreedtes en oriëntaties logisch blijft.
+
+Met het tabindex attribuut kan de volgorde ook specifiek worden ingesteld per element, maar dat raden we af, omdat je dan voor elk element op de pagina zo'n tabindex zou moeten zetten, en het is bijna onmogelijk dat goed te doen, zeker bij verschillende resoluties, schermbreedtes en oriëntaties.
+
+Voor een Nederlandstalige website is leesvolgorde van links naar rechts en van boven naar beneden. Zorg er dan voor dat ook de tabvolgorde van links naar rechts en van boven naar beneden is. Voor bijvoorbeeld Hebreeuws of Arabisch kan deze volgorde anders zijn. Laat de tabvolgorde die van de taalinstelling en [leesrichting](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir) volgen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Toetsenbordnavigatie: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/).
+- Formulieren - Meerdere stappen: [Zorg voor een consistente navigatie en benaming van links en buttons](/richtlijnen/formulieren/meerdere-stappen/consistente-benaming).
+- Formulieren - Visueel ontwerp: [Maak toetsenbordfocus goed zichtbaar](/visueel-ontwerp/focus-goed-zichtbaar).
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Tab met het toetsenbord door de pagina en controleer of de tabvolgorde logisch en zoals verwacht is.
+De tabvolgorde moet voor elk type weergave logisch, zichtbaar en voorspelbaar zijn en niet alleen voor een breed scherm op hoge resolutie.
+
+Let vooral op als de volgorde voor een andere weergave wordt aangepast via CSS met grid of flexbox.
+
+Aanvullende testen:
+
+- Tab ook terug met shift-tab, werkt dat ook voorspelbaar?
+- Controleer dialogs zoals het responsive menu. Is de tabvolgorde logisch. Keert bij het sluiten de focus terug naar de button om het dialog te openen?
+- Test bij verschillende schermbreedtes en oriëntaties (landscape/portrait).
+- Zoom in tot 400% en check de tabvolgorde.
+- Controleer dynamisch toegevoegde inhoud, zoals extra formuliervelden bij het selecteren van optie of een uitklapmenu.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.3 Focus Order</span>](https://www.w3.org/TR/WCAG22/#focus-order).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.3 Focus volgorde](https://www.w3.org/Translations/WCAG22-nl/#focus-volgorde).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.3 Focus Order</span>](https://www.w3.org/WAI/WCAG22/quickref/#focus-order).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.3 Focus Order</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>
