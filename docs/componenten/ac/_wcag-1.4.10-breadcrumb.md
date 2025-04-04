@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.
+De gebruiker moet de webpagina bij een schermgrootte van 1280 bij 124 pixels tot 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.
 
 Alle functies moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.
 
