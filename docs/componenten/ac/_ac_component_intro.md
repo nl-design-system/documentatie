@@ -1,0 +1,1 @@
+De componenten van NL Design System zijn met oog op toegankelijkheid ontwikkeld. Hier beschrijven we aan welke WCAG 2.2 succescriteria de component voldoet. Daarnaast zijn er verschillende dingen waar je als designer, developer en contentmaker zelf op moeten letten als je de component in gebruik neemt. Dat beschrijven we onder 'Toegankelijkheid bij gebruik'.

@@ -1,0 +1,1 @@
+De toegankelijkheid van een component op een pagina is voor een groot deel afhankelijk van de context op de pagina of zelfs tussen meerdere pagina's. Er zijn dus een aantal dingen waar je als designer, developer en contentmaker op moet letten als je de component in gebruik neemt. Hier beschrijven aan welke succescriteria je zelf nog moet voldoen.
