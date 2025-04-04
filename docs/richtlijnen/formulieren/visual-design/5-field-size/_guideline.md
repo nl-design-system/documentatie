@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-# Maak aanklikbare formuliervelden groot genoeg
+# Maak interactieve elementen groot genoeg
 
 Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 pixels groot is. Dit is nodig om te voldoen aan het [WCAG-succescriterium 2.5.8 Grootte aanwijsgebied (minimum)](/wcag/2.5.8) (niveau AA).
 

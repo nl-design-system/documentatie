@@ -2,18 +2,17 @@ import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-libra
 import clsx from 'clsx';
 import Astrid from './Astrid';
 import Emma from './Emma';
-import Hidde from './Hidde';
 import Jeffrey from './Jeffrey';
-import Renate from './Renate';
-import Rian from './Rian';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
-import Wart from './Wart';
 import Yolijn from './Yolijn';
+import Menno from './Menno';
+import Erik from './Erik';
+import Renate from './Renate';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart, Emma];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Emma, Menno, Erik, Renate];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (

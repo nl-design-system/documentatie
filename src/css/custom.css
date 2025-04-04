@@ -741,6 +741,10 @@ abbr[title] {
   margin: 16px 0;
 }
 
+.nlds-guideline .utrecht-html p {
+  width: 25rem;
+}
+
 .docs-doc-page .utrecht-html input[type="text" i]:invalid {
   border-color: #7a8aa0;
   border-width: 1px;
@@ -957,6 +961,6 @@ pre {
   font-size: 0.9em;
   line-height: 1;
 }
-.docs-doc-page ul {
+.DocSearch ul {
   margin: auto 0;
 }

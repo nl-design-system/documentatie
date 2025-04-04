@@ -3,11 +3,13 @@
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 
+## Voorbeelden
+
 <Guideline appearance="do" title="Geef boven het formulier aan hoe verplichte velden worden aangegeven.">
   <Canvas language="html">
     {() => (
       <>
-        <p>Als een veld verplicht is, staat dit erbij.</p>
+        <p>Als iets verplicht is, staat dit erbij.</p>
         <form>
           <label htmlFor="kleur3">Wat is je lievelingskleur (verplicht)</label>
           <input type="text" id="kleur3" name="lievelingskleur" aria-required="true" aria-invalid="false" />
@@ -27,7 +29,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>Als een veld verplicht is, staat er een * bij.</p>
+        <p>Als iets verplicht is, staat er een * bij.</p>
         <form>
           <label htmlFor="kleur4">Wat is je lievelingskleur *</label>
           <input type="text" id="kleur24" name="lievelingskleur" aria-required="true" aria-invalid="false" />

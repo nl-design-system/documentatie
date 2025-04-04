@@ -6,7 +6,7 @@ authors:
     title: Toegankelijkheidsspecialist NL Design System
     url: https://www.linkedin.com/in/rianrietveld/
 tags: [toegankelijkheid, NL Design System]
-image: https://github.com/nl-design-system/documentatie/blob/assets/meerdere-manieren.png?raw=true
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/meerdere-manieren.png
 hide_table_of_contents: false
 date: 2024-03-05
 ---

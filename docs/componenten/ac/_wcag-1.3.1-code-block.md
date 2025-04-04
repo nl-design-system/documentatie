@@ -6,7 +6,7 @@ in combinatie met `pre`.
 Dus niet zo:
 
 ```html
-<!-- dit niet doen -->
+<!-- Foute code, niet gebruiken -->
 <pre>
   <div class="code-block">
     @use "./mixin";

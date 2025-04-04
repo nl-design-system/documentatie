@@ -1,0 +1,24 @@
+{
+  "version": "1.0.1",
+  "author": "Community for NL Design System",
+  "description": "Architecture of NL Design System",
+  "license": "EUPL-1.2",
+  "name": "@nl-design-system-unstable/archimate",
+  "keywords": [
+    "nl-design-system",
+    "archimate",
+    "architecture",
+    "xml"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/archimate"
+  },
+  "scripts": {}
+}

@@ -6,7 +6,7 @@ authors:
     title: Communicatieadviseur NL Design System
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
 tags: [meta, NL Design System]
-image: https://github.com/nl-design-system/documentatie/blob/assets/lessen-gebruikerstest.png?raw=true
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/lessen-gebruikerstest.png
 hide_table_of_contents: false
 date: 2024-03-11
 ---

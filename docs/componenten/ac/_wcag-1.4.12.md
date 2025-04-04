@@ -4,6 +4,8 @@ Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit ga
 
 Zorg ervoor dat het element mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.
 
+Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.
+
 Je moet de afstand kunnen vergroten naar deze waardes:
 
 - Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte;

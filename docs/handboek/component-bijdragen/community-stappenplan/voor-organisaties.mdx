@@ -22,14 +22,14 @@ Als je als organisatie een component wilt bijdragen aan NL Design System kun je 
 
 ## Voeg de component toe aan de componenten bord
 
-Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebruik door andere teams. Door de status van de component en de documentatie beschikbaar te maken kunnen organisaties de component op nldesignsystem.nl vinden en kan het kernteam de component de Community status geven.
+Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebruik door andere teams. Door de status van de component en de bijbehorende documentatie beschikbaar te stellen, kunnen andere organisaties de component vinden op nldesignsystem.nl. Het kernteam kan de component dan de 'Community' status geven.
 
-1. Open het community bord via [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)
-2. Klik op de + icoon links onderaan de pagina om een component toe te voegen
-3. Kies `Add item from repository`
-4. Selecteer `backlog` en zoek op de component naam
-5. Selecteer de component
-6. Kies rechts onderin `Add selected items`
+1. Open het Communitybord via [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten).
+2. Klik op de + icoon links onderaan de pagina om een component toe te voegen.
+3. Kies `Add item from repository`.
+4. Selecteer `backlog` en zoek op de naam van de component.
+5. Selecteer de component.
+6. Kies rechts onderin `Add selected items`.
 
 **🚩 Checkpoint**: Title
 
@@ -37,7 +37,7 @@ Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebru
 
 Doel: Om een component de status Community te geven is het belangrijk dat API's zoals design tokens de prefix van de verantwoordelijke organisatie hebben. Deze kolom is dus voor iedere component van de organisatie hetzelfde.
 
-Vul de prefix van de organisatie in
+Vul de prefix van de organisatie in, bijvoorbeeld `utrecht` of `ams`.
 
 **🚩 Checkpoint**: Organisatie prefix
 
@@ -45,7 +45,7 @@ Vul de prefix van de organisatie in
 
 Doel: Bij implementaties van de component op nldesignsystem.nl/componenten willen we de naam van de component in de component bibliotheek laten zien zodat developers en designers hem makkelijk kunnen vinden.
 
-Vul de naam van het css component in, dus bijvoorbeeld `{organisatie-prefix}-{component-naam}`
+Vul de naam van het CSS component in, bijvoorbeeld `{prefix-organisatie}-{naam-component}`.
 
 **🚩 Checkpoint**: Naam
 
@@ -55,9 +55,11 @@ Doel: Meerdere organisaties kunnen de component naar hun huisstijl omzetten.
 
 Door met [design tokens](/handboek/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.
 
-Zorg ervoor dat de component van jouw organisatie gebruik maakt van design tokens. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+Zorg ervoor dat de component gebruik maakt van de minimale design tokens.
 
-**Tip!** Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--{organisatie-prefix}-button-primary-action-background-color` of `--{organisatie-prefix}-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
+**Tip!** Om te controleren of er design tokens zijn toegepast, kun je de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
+
+**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
 
 **🚩 Checkpoint**: Minimale design tokens
 
@@ -67,7 +69,7 @@ Doel: Een voorspelbare naamgeving van design tokens.
 
 Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. De beschikbare design tokens van een component moeten voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
 
-Zorg ervoor dat de design tokens van de component van jouw organisatie voldoen aan de naamgeving conventie. Of controleer de implementaties van organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+Zorg ervoor dat de design tokens voldoen aan de naamgevingsconventie.
 
 **🚩 Checkpoint**: Naamgeving design tokens
 
@@ -77,7 +79,7 @@ Doel: De component mag door andere organisaties gebruikt worden. Producten die e
 
 Binnen het NL Design System werken we voor componenten met de [Openbare Licentie van de Europese Unie (EUPL-1.2)](https://nldesignsystem.nl/open-source/eupl/).
 
-Zorg ervoor dat de organisatie naar de EUPL-1.2 licentie verwijst op de onderstaande posities. Of controleer de organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+Zorg ervoor dat de organisatie naar de EUPL-1.2 licentie verwijst op de onderstaande posities:
 
 - **GitHub repository**: Als één van de repository details onder 'About' in de sidebar.
 - **Package in npm**: Onder 'License' in de sidebar.
@@ -92,7 +94,7 @@ Doel: De documentatie van een component mag door andere organisaties hergebruikt
 
 Binnen het NL Design System werken we voor de documentatie met de [Creative Commons 0 licentie (CC0)](https://nldesignsystem.nl/open-source/cc0).
 
-Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub. Of controleer de organisaties die aan de GitHub Discussion van de component zijn toegevoegd.
+Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub.
 
 **Tip!** Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
 
@@ -102,7 +104,7 @@ Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand 
 
 Doel: Designers van andere organisaties kunnen de component overnemen en gaan gebruiken. De URL wordt zichtbaar op nldesignsystem.nl bij de documentatie van de component.
 
-Kopieer de URL van de component pagina door in Figma met rechtermuisknop op de component in de sidebar te klikken (Copy link to page). Kun je dat niet doen, vraag dan iemand met edit rechten om de URL.
+Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de component in de sidebar te klikken en 'Copy link to page' te selecteren.
 
 **🚩 Checkpoint**: Figma URL
 
@@ -112,7 +114,7 @@ Doel: Developers kunnen de component installeren. De URL wordt zichtbaar op nlde
 
 Vul de https://www.npmjs.com URL van het css component in. Is er geen losse package voor de component en is deze onderdeel van een css bibliotheek? Vul dan de url van de bibliotheek in.
 
-Note: Is de component alleen beschikbaar in React? Dan kan deze stap helaas niet worden gechecked.
+**Let op!** Is de component alleen beschikbaar in React? Dan kan deze stap helaas niet worden gechecked.
 
 **🚩 Checkpoint**: NPM URL (CSS)
 
@@ -130,31 +132,51 @@ Is er alleen een React Storybook? Zorg dan dat een codevoorbeeld van CSS beschik
 
 Doel: Organisaties die de component gebruiken kunnen zien of de huisstijl uit een eigen thema goed wordt toegepast. Nu, maar ook bij nieuwe versies van de component bibliotheek.
 
-1. Clone de http://github.com/nl-design-system/themes repository
-2. Zorg dat je [pnpm](https://pnpm.io) hebt geinstalleerd
-3. Installeer de dependencies van de repository met `pnpm install`
-4. Zorg dat de design tokens beschikbaar zijn voor Storybook met `pnpm run build`
-5. Draai Storybook met `pnpm run storybook`
+1. Clone de http://github.com/nl-design-system/themes repository.
+2. Zorg dat je [pnpm](https://pnpm.io) hebt geinstalleerd.
+3. Installeer de dependencies van de repository met het commando: `pnpm install`.
+4. Maak de design tokens beschikbaar voor Storybook door `pnpm run build` uit te voeren.
+5. Draai Storybook met: `pnpm run storybook`.
 
 ### Voeg de story toe aan de `Components` sectie in Storybook
 
 Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.
 
+#### Importeer de design tokens
+
+Tip: Worden de design tokens van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+
+Importeer de design tokens van de organisatie in `/packages/storybook/config/preview.ts`:
+
+```tsx
+import "@example/organisatie-design-tokens/dist/index.css";
+```
+
+#### Importeer het custom font
+
+Tip: Heeft de organisatie geen custom font of word het custom font van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie. Ga dan door naar de volgende sectie.
+
+Importeer het custom font van de organisatie in `/packages/storybook/config/preview.ts`:
+
+```tsx
+import "@example/organisatie-design-tokens/src/font";
+```
+
 #### Maak een story bestand aan
 
-1. Ga naar `packages/storybook/voorbeeld-design-tokens`
-2. Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen
-3. Maak een nieuw bestand `{organisatie-prefix}-{component-naam}.stories.tsx`
+1. Ga naar `packages/voorbeeld-design-tokens/documentation`.
+2. Maak een mapje aan voor de component met de naam zoals beschreven bij NL Design System, of open het bestaande mapje om een component van een extra organisatie toe te voegen.
+3. Maak een nieuw bestand aan met de naam `{prefix-organisatie}-{naam-component}.stories.tsx`.
 
 #### Voeg de component toe aan de story
 
 ```tsx
-// packages/storybook/voorbeeld-design-tokens/{component-naam}/{organisatie-prefix}-{component-naam}.stories.tsx
+// packages/voorbeeld-design-tokens/documentation/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
-import { ComponentNaam } from "organisatie-package";
+import { ComponentNaam } from "@example";
 
 const meta = {
-  id: "{organisatie-prefix}-{component-naam}",
+  id: "{prefix-organisatie}-{naam-component}",
   title: "Components/{Component Naam}/{Organisatie Naam}",
   component: ComponentNaam,
   parameters: { actions: { disable: true } },
@@ -176,7 +198,7 @@ export const VoorbeeldTheme: Story = {
 // Een story met het thema van de organisatie die de component bijdraagt
 export const OrganisatieNaamTheme: Story = {
   name: "{Organisatie naam} theme",
-  parameters: { theme: "{organisatie-prefix}-theme" },
+  parameters: { theme: "{prefix-organisatie}-theme" },
 };
 ```
 
@@ -186,18 +208,19 @@ Doel: makkelijk maken voor organisaties die de component hergebruiken om huissti
 
 #### Voeg organisatie toe aan de theme-toolkit
 
-Tip: Is er al een bestand `packages/theme-toolkit/src/component-stories-{organisatie-prefix}.tsx`? Ga dan door naar de volgende sectie "Voeg een component toe"
+**Tip!**
+Is er al een bestand genaamd `packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx` aanwezig? Ga in dat geval direct verder met de volgende sectie: "Voeg een component toe".
 
 ```tsx
-// packages/theme-toolkit/src/component-stories-{organisatie-prefix}.tsx
+// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx
 import { STORY_GROUPS } from "./component-stories-util";
 import { ComponentName } from "{react-component-library-package}";
 
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   {
-    // De id die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
-    storyId: "react-{organisatie-prefix}-{component}--default",
-    component: "{organisatie-prefix}-{component-naam}",
+    // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
+    storyId: "react-{prefix-organisatie}-{component}--default",
+    component: "{prefix-organisatie}-{naam-component}",
     // Optioneel: Kies een van de opties van STORY_GROUPS
     group: STORY_GROUPS[],
     name: "{Naam van de organisatie} {Naam van de component}",
@@ -212,15 +235,15 @@ export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
 In de array van stories kun je stories toevoegen voor de component. In ieder geval een `default` story, maar mogelijk ook stories voor de diverse states of varianten van de component waar losse design beslissingen over genomen kunnen worden.
 
 ```tsx
-// packages/theme-toolkit/src/component-stories-{organisatie-prefix}.tsx
+// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx
 
 // De lijst van stories voor alle componenten
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   ...{
-    // De id die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
+    // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
     storyId:
       "{type component, nu alleen nog react}-{organisatie prefix}-{component naam}--{story naam, bijvoorbeel default, naam-van-de-variant of naam-van-de-state}",
-    component: "{organisatie-prefix}-{component-naam}",
+    component: "{prefix-organisatie}-{naam-component}",
     group: "Optioneel, gebruik hier een van de opties uit STORY_GROUPS",
     name: "{Naam van de organisatie} {Naam van de component}",
     // De render functie om de component als story te renderen met properties en children zoals nodig als voorbeeld.
@@ -228,16 +251,6 @@ export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   },
 ];
 ```
-
-#### Voeg de component toe aan een config toe
-
-1. Open de config.json van het thema van de organisatie
-2. Voeg de id van de story of stories toe aan `"stories": []`
-
-Optioneel: voeg het component ook toe aan het voorbeeld thema
-
-1. Open de config.json van het Voorbeeld thema `packages/voorbeeld-design-tokens/src/config.json`
-2. Voeg de id van de story of stories toe aan `"stories": []`
 
 ### Maak een Pull Request
 
@@ -249,8 +262,8 @@ Zorg dat de component beschikbaar komt met een Pull Request op GitHub en vraag h
 
 Doel: Developers kunnen de code zien en suggesties doen voor verbeteringen. Dit helpt het samenwerken aan toegankelijke en gebruiksvriendelijke componenten die voor iedereen bruikbaar zijn.
 
-Ga in GitHub naar de CSS van de component toe en kopieer de URL.
-Vul deze URL in.
+- Ga in GitHub naar de CSS van de component toe en kopieer de URL.
+- Plak deze URL in het juiste veld.
 
 **🚩 Checkpoint**: GitHub URL (CSS)
 
@@ -258,15 +271,25 @@ Vul deze URL in.
 
 Doel: alle teams kunnen nu zien dat de component beschikbaar is voor hergebruik door andere organsaties.
 
-Is de component nog geen Candidate? Breng de community en het kernteam dan op de hoogte via Slack. De component kan dan door het kernteam of op een volgende Estafettemodeldag Candidate worden gemaakt.
+Zet checkpoint 'Status' op 'Available'.
+
+Breng de community en het kernteam op de hoogte via Slack. De component kan daarna door het kernteam of tijdens een volgende Estafettemodeldag 'Candidate' worden gemaakt.
 
 ```md
-## 🎉 {Component naam} is nu beschikbaar bij {Naam Organisatie} 🎉
+## 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉
 
 📣 Kernteam: Helpen jullie mee de component Community te maken?
 ```
 
-**🚩 Checkpoint**: Status naar Available
+Heeft de component al de status 'Community'? Plaats dan het volgende bericht:
+
+```md
+## 🎉 {naam-component} is nu beschikbaar bij {organisatie} 🎉
+
+Wat is er nieuw? {beschrijf hier wat er anders is aan deze implementatie ten opzichte van andere community componenten}
+```
+
+**🚩 Checkpoint**: Status
 
 ## Heb je een vraag?
 

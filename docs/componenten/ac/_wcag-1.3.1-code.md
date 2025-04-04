@@ -5,7 +5,7 @@ Gebruik voor tekst gemarkeerd als code semantische HTML. In het geval van de com
 Dus niet zo:
 
 ```html
-<!-- dit niet doen -->
+<!-- Foute code, niet gebruiken -->
 Een zin over het element <span class="code">button</span> met een achtergrondkleur in CSS.
 ```
 

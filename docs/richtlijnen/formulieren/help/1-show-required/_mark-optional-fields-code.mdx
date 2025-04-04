@@ -3,11 +3,13 @@
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 
+## Voorbeelden
+
 <Guideline appearance="do" title="Geef boven het formulier aan hoe niet-verplichte velden worden aangegeven.">
   <Canvas language="html">
     {() => (
       <>
-        <p>Vul alle velden in. Als een veld niet verplicht is, staat dit erbij.</p>
+        <p>Vul alles in. Als iets niet verplicht is, staat dat erbij.</p>
         <form>
           <label htmlFor="kleur1">Wat is je lievelingskleur</label>
           <input type="text" id="kleur1" name="lievelingskleur" aria-required="true" aria-invalid="false" />

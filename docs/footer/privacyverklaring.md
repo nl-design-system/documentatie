@@ -28,9 +28,7 @@ Gegevens die je invult bij aanmelding voor de nieuwsbrief gebruiken we alleen om
 
 De activiteiten die we organiseren zijn bedoeld om samenwerken tussen leden van de community te stimuleren. De gegevens die je invult bij een inschrijving, gebruiken we om met je te communiceren over dat evenement en je na het evenement te attenderen op vergelijkbare evenementen. Voor de logistiek van het evenement zullen we de aanmeldgegevens gebruiken, bijvoorbeeld om uitnodigingen te sturen.
 
-Voor uitnodigingen gebruiken wij Outlook, waarin het niet mogelijk is om mensen aan de uitnodiging toe te voegen zonder dat anderen dat kunnen zien.
-
-Voor digitale evenementen zullen we je daarom een uitnodiging sturen als bijlage, hierin staan geen e-mailadressen van deelnemers en deze uitnodiging wordt niet geüpdatet.
+Voor digitale evenementen zullen we je een uitnodiging sturen als bijlage, hierin staan geen e-mailadressen van deelnemers en deze uitnodiging wordt niet geüpdatet.
 
 Voor fysieke evenementen willen we je graag weten of je komt. Daarnaast willen we je makkelijk kunnen laten weten of een locatie veranderd of het evenement onverhoopt niet doorgaat. Daarom vinden wij het belangrijk dat we voor dit soort evenementen een uitnodiging sturen die we kunnen updaten. In deze uitnodigingen zullen de e-mailadressen van alle genodigden zichtbaar zijn.
 

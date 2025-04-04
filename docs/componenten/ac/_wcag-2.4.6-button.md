@@ -7,5 +7,5 @@ NL Design System richtlijnen:
 - [Duidelijke buttontekst die beschrijft wat de button doet](/richtlijnen/formulieren/buttons/duidelijk-buttontekst/)
 - [Respecteer conventies](/richtlijnen/stijl/iconen/respecteer-conventies)
 - [Gebruik SVG voor iconen en geen font](/richtlijnen/stijl/iconen/respecteer-conventies)
-- [Zorg voor een consistente navigatie en benaming van links en buttons](/formulieren/meerdere-stappen/consistente-benaming/)
+- [Zorg voor een consistente navigatie en benaming van links en buttons](/richtlijnen/formulieren/meerdere-stappen/consistente-benaming/)
 - [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam/)

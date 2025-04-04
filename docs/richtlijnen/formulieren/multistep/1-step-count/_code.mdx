@@ -3,6 +3,8 @@
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 
+## Voorbeelden
+
 <Guideline
   appearance="do"
   title="Beschrijf in de titel in welke stap van welk formulier de gebruiker is. "
@@ -40,10 +42,8 @@ import { Guideline } from "@site/src/components/Guideline";
       <>
         <h2>Uw gegevens</h2>
         <p>Stap 2 van 3</p>
-
       </>
     )}
-
   </Canvas>
 </Guideline>
 
@@ -52,23 +52,37 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <hgroup>
-          <h1>Uw gegevens</h1>
+          <h2>Uw gegevens</h2>
           <p>Stap 2 van 3</p>
         </hgroup>
-
       </>
     )}
 
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Stap boven het kopje van het formulier.">
+<Guideline appearance="do" title="De tekst van de stap opnemen in het kopje." description="En deze visueel op een andere regel plaatsen.">
   <Canvas language="html">
     {() => (
       <>
-<p>Stap 2 van 3</p>
-<h2>Uw gegevens</h2>
+        <h2>
+          <span class="progress-indicator">
+            Stap 2 van 3
+          </span>
+          Titel van de stap
+        </h2>
+      </>
+    )}
 
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="In de HTML-code de stap boven het kopje van het formulier plaatsen.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>Stap 2 van 3</p>
+        <h2>Uw gegevens</h2>
       </>
     )}
 
