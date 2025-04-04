@@ -1,5 +1,4 @@
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import React from 'react';
 
 interface ComponentProgressProps {
   checked: number;
@@ -9,6 +8,7 @@ interface ComponentProgressProps {
 export const ComponentProgress = ({ checked, unchecked }: ComponentProgressProps) => (
   <BrowserOnly fallback={<></>}>
     {() => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const DonutChart = require('@persoonlijke-regelingen-assistent/components-react').DonutChart;
       return (
         <DonutChart

@@ -1,0 +1,39 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Geef boven het formulier aan hoe niet-verplichte velden worden aangegeven.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>Vul alles in. Als iets niet verplicht is, staat dat erbij.</p>
+        <form>
+          <label htmlFor="kleur1">Wat is je lievelingskleur</label>
+          <input type="text" id="kleur1" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier1">Wat is je lievelingsdier (niet verplicht)</label>
+          <input type="text" id="dier1" name="lievelingsdier" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="De gebruiker laten raden wat er al dan niet verplicht is.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <form>
+          <label htmlFor="kleur2">Wat is je lievelingskleur</label>
+          <input type="text" id="kleur2" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier2">Wat is je lievelingsdier</label>
+          <input type="text" id="dier2" name="lievelingsdier" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>

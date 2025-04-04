@@ -1,0 +1,29 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Geef duidelijk aan dat een formulier verzonden gaat worden.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <button>Versturen</button>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Gebruik hetzelfde label voor verzenden als voor de navigatie in een meerstappenformulier."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <button type="submit">Volgende</button>
+      </>
+    )}
+  </Canvas>
+</Guideline>

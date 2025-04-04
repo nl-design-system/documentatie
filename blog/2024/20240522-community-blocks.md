@@ -7,7 +7,7 @@ authors:
     url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
 tags: [WordPress, developers, NL Design System]
 hide_table_of_contents: false
-image: https://github.com/nl-design-system/documentatie/blob/assets/community-blocks.png?raw=true
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/community-blocks.png
 date: 2024-05-22
 ---
 

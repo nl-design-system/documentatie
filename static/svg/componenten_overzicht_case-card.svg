@@ -1,0 +1,37 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="component-illustration">
+        <g fill="var(--component-illustration-background-color, white)">
+            <rect width="960" height="540"/>
+            <rect width="960" height="540"/>
+        </g>
+        <g fill="var(--component-illustration-grid-color, #eee)">
+            <rect width="2" height="540" transform="translate(69)"/>
+            <rect width="2" height="540" transform="translate(151)"/>
+            <rect width="2" height="540" transform="translate(233)"/>
+            <rect width="2" height="540" transform="translate(315)"/>
+            <rect width="2" height="540" transform="translate(397)"/>
+            <rect width="2" height="540" transform="translate(479)"/>
+            <rect width="2" height="540" transform="translate(561)"/>
+            <rect width="2" height="540" transform="translate(643)"/>
+            <rect width="2" height="540" transform="translate(725)"/>
+            <rect width="2" height="540" transform="translate(807)"/>
+            <rect width="2" height="540" transform="translate(889)"/>
+            <rect width="960" height="2" transform="translate(0 64)"/>
+            <rect width="960" height="2" transform="translate(0 146)"/>
+            <rect width="960" height="2" transform="translate(0 228)"/>
+            <rect width="960" height="2" transform="translate(0 310)"/>
+            <rect width="960" height="2" transform="translate(0 392)"/>
+            <rect width="960" height="2" transform="translate(0 474)"/>
+        </g>
+        <rect x="237" y="150" width="488" height="242" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+        <g fill="var(--component-illustration-color, #666)">
+            <rect x="275" y="188" width="206" height="24" rx="12"/>
+            <rect x="275" y="338" width="122" height="16" rx="8"/>
+            <rect x="275" y="238" width="368" height="16" rx="8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M679.586 332.586C680.367 331.805 681.633 331.805 682.414 332.586L694.414 344.586C695.195 345.367 695.195 346.633 694.414 347.414L682.414 359.414C681.633 360.195 680.367 360.195 679.586 359.414C678.805 358.633 678.805 357.367 679.586 356.586L688.172 348H665C663.895 348 663 347.105 663 346C663 344.895 663.895 344 665 344H688.172L679.586 335.414C678.805 334.633 678.805 333.367 679.586 332.586Z"/>
+            <rect x="519" y="325" width="124" height="42"/>
+        </g>
+        <rect x="535" y="340" width="92" height="12" rx="6" fill="var(--component-illustration-background-color, white)"/>
+    </symbol>
+    <use href="#component-illustration"/>
+</svg>

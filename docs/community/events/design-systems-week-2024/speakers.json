@@ -1,0 +1,273 @@
+{
+  "AhmadShadeed": {
+    "name": "Ahmad Shadeed",
+    "organisation": "Independent",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-ahmad-shadeed.png",
+      "alt": "Ahmad Shadeed"
+    },
+    "description": {
+      "en": "Ahmad Shadeed is a UX designer and front-end developer from Palestine. He enjoys working on challenging design and front-end development projects. He wrote a book on debugging CSS, writes extensively on CSS, Accessibility, RTL (right to left) text styling, and defensivecss.dev.",
+      "nl": "Ahmad Shadeed is een UX designer en front-end developer uit Palestina. Hij werkt graag aan uitdagende ontwerp- en ontwikkelprojecten. Hij heeft ook een boek geschreven over het debuggen van CSS, en schrijft regelmatig over CSS, toegankelijkheid en RTL (“right to left”)  styling."
+    },
+    "language": "en"
+  },
+  "AmyCole": {
+    "name": "Amy Cole",
+    "organisation": "U.S. Web Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-amy-cole.png",
+      "alt": "Amy Cole"
+    },
+    "description": {
+      "nl": "Amy Cole is manager toegankelijkheid en contractor bij het USWDS kernteam. Ze is ook een ervaren manager toegankelijkheid met een lange staat van dienst, die graag digitale diensten verbetert en toegankelijker maakt. Ze werkt graag samen met anderen en probeert altijd bij te leren.",
+      "en": "Amy Cole is an accessibility manager and a contractor on the USWDS Core team. She is a seasoned Digital Accessibility Manager who has been making significant contributions to the field of digital media for many years, finding joy in exploring ways to enhance online spaces and making them more accessible. She values the opportunity to collaborate with other professionals in the field, always seeking to expand her knowledge and skills."
+    },
+    "language": "en"
+  },
+  "BartVeneman": {
+    "name": "Bart Veneman",
+    "organisation": "Project Wallace",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-bart-veneman.png",
+      "alt": "Bart Veneman"
+    },
+    "description": {
+      "nl": "Bart Veneman is frontend architect bij Drukwerkdeal.nl. In zijn vrije tijd werkt hij aan Project Wallace, een project om informatie over de CSS in een website te verzamelen over een langere periode. Dit project is voor developers die de complexiteit van hun CSS in de gaten willen houden en voor designers die willen weten of de juiste kleuren en lettertypes zijn gebruikt."
+    },
+    "language": "nl"
+  },
+  "BryandeJong": {
+    "name": "Bryan de Jong",
+    "organisation": "VNG",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-bryan-de-jong.png",
+      "alt": "Bryan de Jong"
+    },
+    "description": {
+      "nl": "Bryan de Jong is freelance developer en werkt via Frameless voor de VNG."
+    },
+    "language": "nl"
+  },
+  "CharlottevanBijnen": {
+    "name": "Charlotte van Bijnen",
+    "organisation": "Valsplat",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-charlotte-van-bijnen.png",
+      "alt": "Charlotte van Bijnen"
+    },
+    "description": {
+      "nl": "Als Senior Design Researcher en Impact Lead bij Valsplat helpt Charlotte teams bij het ontwerpen van producten, diensten, strategieën en beleid. Charlotte is hun ogen, oren en adviseur. Ze combineert haar kennis van antropologie en business om inzichten van straatniveau om te zetten in strategische beslissingen. Hierdoor vindt ze oplossingen die laten (in)zien dat begrip van anderen de beste basis is voor positieve, impactvolle innovatie. Hoe? Door vragen te durven stellen en antwoorden te vinden waar anderen niet altijd zoeken."
+    },
+    "language": "nl"
+  },
+  "ChenHuiJing": {
+    "name": "Chen Hui Jing",
+    "organisation": "",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-chen-hui-jing.png",
+      "alt": "Chen Hui Jing"
+    },
+    "description": {
+      "nl": "Hui Jing is een self-taught ontwerper en ontwikkelaar die in Singapore woont, en meer van CSS houdt dan de gemiddelde ontwikkelaar. Ze werkt al meer dan 10 jaar aan websites, en haar belangrijkste focus is het maken van front-end interfaces die snel en responsive werken. En ja, Hui Jing is een Chinese voornaam die uit twee woorden bestaat. Ze is vaak te vinden in haar lokale klimhal.",
+      "en": "Hui Jing is a self-taught designer and developer living in Singapore, who loves CSS way more than the average web developer. With more than a decade of experience working on the web, her main focus is building performant and responsive frontend interfaces. And yes, Hui Jing is a two-word Chinese first name. She can often be found spanning routes in some local climbing gym."
+    },
+    "language": "en"
+  },
+  "DariceDeCuba": {
+    "name": "Darice de Cuba",
+    "organisation": "darice.org",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-darice-de-cuba.png",
+      "alt": "Darice de Cuba"
+    },
+    "description": {
+      "nl": "Darice deelt graag haar ervaring en inzicht in toegankelijkheid. Ze heeft een unieke positie als UI Engineer met een focus op toegankelijkheid en haar eigen ervaringsdeskundigheid als iemand met een beperking. Daarnaast houdt ze zich graag bezig met straatfotografie, schrijven en het bijhouden van een persoonlijk food guide van Den Haag."
+    },
+    "language": "nl"
+  },
+  "GeriReid": {
+    "name": "Geri Reid",
+    "organisation": "Just Eat / Takeaway.com",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-geri-reid.png",
+      "alt": "Geri Reid"
+    },
+    "description": {
+      "nl": "Geri is een design systems consultant uit Londen. Als design en toegankelijkheidslead bij design systems zoals die van News UK en Lloyds Banking Group, heeft ze gewerkt voor sommige van de grootste merken in het Verenigd Koninkrijk. Op dit moment werkt ze bij Just Eat Takeaway. Geri is toegankelijkheidsspecialist, amateurschrijver en een echte documentatie-nerd.",
+      "en": "Geri is a design systems consultant from London. As design and accessibility lead on design systems at News UK and Lloyds Banking Group, she helped some of the UK's largest media and banking brands to design at scale. She is currently Lead Accessibility Specialist at Just Eat Takeaway. Geri is a keen accessibility advocate, amateur writer and documentation nerd."
+    },
+    "language": "en"
+  },
+  "GertHengeveld": {
+    "name": "Gert Hengeveld",
+    "organisation": "Chromatic",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-gert-hengeveld.png",
+      "alt": "Gert Hengeveld"
+    },
+    "description": {
+      "nl": "Gert is een full stack software engineer bij Chromatic, het bedrijf achter Storybook. Hij werkt daar aan de toekomst van het bouwen en testen van UIs. Gert is een problem solver met een passie voor UX en web development, en is al meer dan 10 jaar betrokken bij open source software ontwikkeling. Vaak is hij van designers zowel hun grootste criticus als hun belangrijkste bondgenoot.",
+      "en": "Gert Hengeveld is a staff software engineer at Chromatic, the company behind Storybook. He works with the rest of the Storybook team to envision and build the future of UI development and testing. Gert is a problem solver who's passionate about UX and has been involved in open source software development for over a decade. He's often a designer's biggest critic as well as their greatest ally."
+    },
+    "language": "en"
+  },
+  "GijsVeyfeyken": {
+    "name": "Gijs Veyfeyken",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-gijs-veyfeyken.png",
+      "alt": "Gijs Veyfeyken"
+    },
+    "description": {
+      "nl": "Gijs Veyfeyken is een specialist in webtoegankelijkheid bij Digitaal Vlaanderen waar hij helpt bij het testen en verbeteren van het design system, de componenten en alle afgeleide producten zoals het webplatform Vlaanderen.be en Mijn Burgerprofiel."
+    },
+    "language": "nl"
+  },
+  "KimDenie": {
+    "name": "Kim Denie",
+    "organisation": "",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-kim-denie.png",
+      "alt": "Kim Denie"
+    },
+    "description": {
+      "nl": "Kim is adviseur, spreker en gemeenteraadslid. Tevens is zij student aan de UvA. Ze heeft een progressieve myopie. Dit zal uiteindelijk tot volledige blindheid leiden. Door haar behandeling is zij slechtziend geworden. Als ervaringsdeskundige zet zij zich in voor een toegankelijke (online) wereld."
+    },
+    "language": "nl"
+  },
+  "JeroenDuChatinier": {
+    "name": "Jeroen du Chatinier",
+    "organisation": "Gemeente Utrecht",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-jeroen-du-chatinier.png",
+      "alt": "Jeroen du Chatinier"
+    },
+    "description": {
+      "nl": "Jeroen is UX Researcher bij de gemeente Utrecht, waar hij met zoveel mogelijk inwoners van de stad probeert te praten over allerlei verschillende onderwerpen. Van parkeren tot trouwen, van schulden tot verordeningen, het is allemaal interessant. En dan vooral om verrast te worden door wat mensen echt doen. Daarnaast is hij mede-onderhouder van gebruikersonderzoeken.nl, waar hij zoveel mogelijk onderzoek bij elkaar probeert te brengen zodat we van elkaar kunnen leren. In zijn vrije tijd houdt Jeroen zich bezig met improvisatie theater, houten meubilair maken van pallets en gewichten optillen om ze daarna maar weer neer te leggen."
+    },
+    "language": "nl"
+  },
+  "LarsvandeCappelle": {
+    "name": "Lars van de Cappelle",
+    "organisation": "Belastingdienst",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-lars-van-de-cappelle.png",
+      "alt": "Lars van de Cappelle"
+    },
+    "description": {
+      "nl": "Lars van de Cappelle is UX Designer bij de Belastingdienst."
+    },
+    "language": "nl"
+  },
+  "LotteBijl": {
+    "name": "Lotte Bijl",
+    "organisation": "Belastingdienst",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-lotte-bijl.png",
+      "alt": "Lotte Bijl"
+    },
+    "description": {
+      "nl": "Lotte Bijl is een Digitale Toegankelijkheid Expert bij de Belastingdienst, waar ze product teams ondersteunt bij het verbeteren van de digitale toegankelijkheid van overheidsdiensten. Met haar expertise in gebruikersonderzoek, UX en development zorgt Lotte ervoor dat digitale oplossingen niet alleen technisch voldoen, maar ook daadwerkelijk bijdragen aan een betere gebruikerservaring."
+    },
+    "language": "nl"
+  },
+  "MariekeBrouwer": {
+    "name": "Marieke Brouwer",
+    "organisation": "Gemeente Groningen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-marieke-brouwer.png",
+      "alt": "Marieke Brouwer"
+    },
+    "description": {
+      "nl": "Marieke is adviseur dienstverlening bij de gemeente Groningen."
+    },
+    "language": "nl"
+  },
+  "MikeGifford": {
+    "name": "Mike Gifford",
+    "organisation": "CivicActions",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-mike-gifford.png",
+      "alt": "Mike Gifford"
+    },
+    "description": {
+      "nl": "Mike werkt bij CivicActions als Open Standards & Practices Lead en deelt graag z'n kennis over open overheden, toegankelijkheid en duurzaamheid. Hij werkt onder andere met overheden in Noord-Amerika en Europa en is een internationale spreker. Hij is ook W3C Invited Expert en staat bekend als expert in de toegankelijkheid van authoring tools. Mike is ook al jaren kartrekker van toegankelijkheid bij het Drupal CMS.",
+      "en": "Mike is CivicActions’ Open Standards & Practices Lead and a thought leader on open government, as well as digital accessibility and sustainability. He has worked with governments in North America and Europe, and spoken internationally. He is also a W3C Invited Expert and recognized authoring tool accessibility expert. Mike has spearheaded accessibility improvements in Drupal since 2008, and has served as a Drupal Core Accessibility Maintainer in 2012."
+    },
+    "language": "en"
+  },
+  "RaoulWittenberns": {
+    "name": "Raoul Wittenberns",
+    "organisation": "Logius",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-raoul-wittenberns.png",
+      "alt": "Raoul Wittenberns"
+    },
+    "description": {
+      "nl": "Raoul is software architect bij het LUX design system van Logius."
+    },
+    "language": "nl"
+  },
+  "RobbertBroersma": {
+    "name": "Robbert Broersma",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-robbert-broersma.png",
+      "alt": "Robbert Broersma"
+    },
+    "description": {
+      "nl": "Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten. In de rol van developer relations werkt hij graag online samen met developers van verschillende organisaties om dit community gedragen design system neer te zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS met een haakje? Dan kun je het waarschijnlijk op zijn achtergrond vinden."
+    },
+    "language": "nl"
+  },
+  "SteveMesser": {
+    "name": "Steve Messer",
+    "organisation": "Freelance",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-steve-messer.png",
+      "alt": "Steve Messer"
+    },
+    "description": {
+      "nl": "Steve is een product strategist, die op dit moment werkt aan planning.data.gov.uk, bij het Ministry of Housing, Communities & Local Government. Hij houdt zich graag bezig met innovatie in de publieke sector open, ethisch productontwerp. Hij heeft gewerkt bij startups, de Government Digital Service en NHS Digital, en heeft bij General Assembly les gegeven over product management.",
+      "en": "Steve is a freelance product strategist, working on planning.data.gov.uk at Ministry of Housing, Communities & Local Government currently. He’s passionate about innovation for the public good and open, ethical product design. He’s worked at startups, Government Digital Service and NHS Digital, and has taught product management to people from numerous companies through General Assembly."
+    },
+    "language": "en"
+  },
+  "ThijsLouisse": {
+    "name": "Thijs Louisse",
+    "organisation": "ING",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-thijs-louisse.png",
+      "alt": "Thijs Louisse"
+    },
+    "description": {
+      "nl": "Thijs is een gepassioneerde software engineer die graag werkt in een omgeving waar design en code bij elkaar komen. Hij heeft een achtergrond in de Informatiekunde. In zijn huidige rol binnen ING ontwikkelt hij robuuste, flexibele en interoperable oplossingen die een lange tijd mee kunnen. Hij gebruikt daarvoor web components en de nieuwste webstandaarden, iets dat hem met de huidige ontwikkelingen niet snel verveelt. Als hij geen specificaties bestudeert, spendeert hij tijd met zijn pasgeboren zoon."
+    },
+    "language": "nl"
+  },
+  "VincentSennesael": {
+    "name": "Vincent Sennesael",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-vincent-sennesael.png",
+      "alt": "Vincent Sennesael"
+    },
+    "description": {
+      "nl": "Vincent Sennesael, product owner van het Vlaams Design System, was ongeveer tien jaar geleden, samen met een team enthousiaste believers, een van de grondleggers. Het doel was om alle toepassingen, websites en e-loketten van de Vlaamse overheid te voorzien van een herkenbare en eengemaakte gebruikservaring. Vandaag is het Design System niet meer weg te denken binnen de Vlaamse overheid. Ongeveer 800 toepassingen maken er ondertussen gebruik van."
+    },
+    "language": "nl"
+  },
+  "WarreBuysse": {
+    "name": "Warre Buysse",
+    "organisation": "Agentschap Digitaal Vlaanderen",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-warre-buysse.png",
+      "alt": "Warre Buysse"
+    },
+    "description": {
+      "nl": "Warre Buysse is een specialist in het bouwen, uitrollen en schaalbaar maken van enterprise design systemen in complexe organisaties en stond samen met Vincent aan de wieg van het bouwen van Vlaams Design System tien jaar geleden."
+    },
+    "language": "nl"
+  }
+}

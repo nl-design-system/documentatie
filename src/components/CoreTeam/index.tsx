@@ -1,33 +1,33 @@
 import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
-import style from './CoreTeam.module.css';
-import Hidde from './Hidde';
+import Astrid from './Astrid';
+import Emma from './Emma';
 import Jeffrey from './Jeffrey';
-import Renate from './Renate';
-import Rian from './Rian';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
-import Wart from './Wart';
 import Yolijn from './Yolijn';
+import Menno from './Menno';
+import Erik from './Erik';
+import Renate from './Renate';
 import { Card, CardContent, CardGroup } from '../CardGroup';
+import './CoreTeam.css';
 
-const coreteam = [Yolijn, Robbert, Jeffrey, Hidde, Rian, Renate, Rozerin, Wart];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Emma, Menno, Erik, Renate];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
     <CardGroup appearance="large">
       {coreteam.map(({ name, role, Description, slack }) => {
         return (
-          <Card appearance="large" className={clsx(style['core-team__card'])} component="section" key={name}>
-            <CardContent className={clsx(style['core-team__content'])}>
-              <HeadingGroup className={clsx(style['core-team__heading'])}>
-                <Heading level={headingLevel} className={clsx(style['core-team__heading-title'])}>
+          <Card appearance="large" className={clsx('core-team__card')} component="section" key={name}>
+            <CardContent className={clsx('core-team__content')}>
+              <HeadingGroup className={clsx('core-team__heading')}>
+                <Heading level={headingLevel} className={clsx('core-team__heading-title')}>
                   {name}
                 </Heading>
-                <Paragraph className={clsx(style['core-team__heading-subtitle'])}>{role}</Paragraph>
+                <Paragraph className={clsx('core-team__heading-subtitle')}>{role}</Paragraph>
               </HeadingGroup>
-              <div className={clsx(style['core-team__description'])}>
+              <div className={clsx('core-team__description')}>
                 <Description />
               </div>
 

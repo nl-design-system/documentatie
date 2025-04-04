@@ -1,5 +1,5 @@
 ---
-title: Voorbeeld thema
+title: Voorbeeld thema · Designer · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Voorbeeld thema
@@ -26,7 +26,7 @@ Hieronder leggen we uit welke keuzes we gemaakt hebben voor het Voorbeeld thema.
 
 ![Visuale weergave van het lettertypes Source Serif Pro en Fira Sans.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_typografie.png)
 
-In het Voorbeeld thema maken we gebruik van de lettertypes ‘Source Serif Pro’ en ‘Fira Sans’. Beide lettertypes zijn Open Source te gebruiken en voldoen aan de richtlijnen die we voor [Typografie](../../richtlijnen/stijl/typografie.md) hebben beschreven. Daarnaast zijn beide lettertypes standaard onderdeel van Figma. Hierdoor hoef je ze niet apart te installeren om te starten met de NL Design System bibliotheek.
+In het Voorbeeld thema maken we gebruik van de lettertypes ‘Source Serif Pro’ en ‘Fira Sans’. Beide lettertypes zijn Open Source te gebruiken en voldoen aan de richtlijnen die we voor [Typografie](/richtlijnen/stijl/typografie) hebben beschreven. Daarnaast zijn beide lettertypes standaard onderdeel van Figma. Hierdoor hoef je ze niet apart te installeren om te starten met de NL Design System bibliotheek.
 
 ## Kleuren
 
@@ -44,7 +44,7 @@ Voor functionele iconen maken we gebruik van een selectie uit de [Tabler iconens
 
 Vanuit het NL Design System onderhouden we deze iconenset niet. Het gebruik ervan is daarom je eigen verantwoordelijkheid. Mis je een icoon? Dan kun je deze zelf toevoegen.
 
-**Let op!** De iconen van de Tablet iconenset zijn opgebouwd uit lijnen (stroke) met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Zoals aangegeven in de [richtlijnen rondom iconen](../../richtlijnen/stijl/iconen.md) is dit niet het gewenste gedrag. Daarom hebben we de iconen in het Voorbeeld thema omgezet van lijn naar vorm (outline stroke).
+**Let op!** De iconen van de Tablet iconenset zijn opgebouwd uit lijnen (stroke) met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Zoals aangegeven in de [richtlijnen rondom iconen](/richtlijnen/stijl/iconen) is dit niet het gewenste gedrag. Daarom hebben we de iconen in het Voorbeeld thema omgezet van lijn naar vorm (outline stroke).
 
 De Tabler iconenset is ontworpen op een 24×24 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat de waarde van common token `nl.icon.functional.size` 24×24 betreft.
 

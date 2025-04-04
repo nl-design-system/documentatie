@@ -1,0 +1,90 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline
+  appearance="do"
+  title="Beschrijf in de titel in welke stap van welk formulier de gebruiker is. "
+  description="Met de titel bedoelen we hier het title-element. Bekijk de code voor een voorbeeld in HTML."
+>
+  <Canvas
+    language="html"
+    code={<title>Stap 2 van 3, uw gegevens - Gemeente voorbeeld</title>}
+    defaultCollapsed={false}
+  ></Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Voor elke (volgende) stap / dezelfde titel."
+  description="Met de titel bedoelen we hier het title-element. Bekijk de code voor een voorbeeld in HTML."
+>
+<Canvas language="html" code={<title>Contact opnemen - Gemeente voorbeeld</title>} defaultCollapsed={false}></Canvas>
+
+</Guideline>
+
+<Guideline appearance="do" title="Stap in het kopje van het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Stap 2 van 3, uw gegevens</h2>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Stap onder het kopje van het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Uw gegevens</h2>
+        <p>Stap 2 van 3</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Stap onder het kopje van het formulier." description="Gebruik hgroup om het kopje en de stappen semantisch aan elkaar te koppelen.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <hgroup>
+          <h2>Uw gegevens</h2>
+          <p>Stap 2 van 3</p>
+        </hgroup>
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="De tekst van de stap opnemen in het kopje." description="En deze visueel op een andere regel plaatsen.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>
+          <span class="progress-indicator">
+            Stap 2 van 3
+          </span>
+          Titel van de stap
+        </h2>
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="In de HTML-code de stap boven het kopje van het formulier plaatsen.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>Stap 2 van 3</p>
+        <h2>Uw gegevens</h2>
+      </>
+    )}
+
+  </Canvas>
+</Guideline>

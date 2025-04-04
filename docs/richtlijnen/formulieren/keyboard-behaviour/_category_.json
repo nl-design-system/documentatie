@@ -1,0 +1,10 @@
+{
+  "label": "Toetsenbord",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/keyboard-behaviour/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

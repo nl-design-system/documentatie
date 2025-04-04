@@ -1,5 +1,5 @@
 ---
-title: Tijdschema
+title: Tijdschema · Design Systems Week 2023
 description: Tijdschema per dag voor de Design Systems Week 2023
 hide_table_of_contents: true
 sidebar_label: Tijdschema
@@ -9,9 +9,9 @@ slug: /events/design-systems-week-2023/tijdschema
 
 import { Icon, Link, UnorderedList, UnorderedListItem } from "@utrecht/component-library-react";
 import { IconUser, IconUsers } from "@tabler/icons-react";
-import { SessionTable } from "../../../../src/components/SessionTable";
+import { SessionTable } from "@site/src/components/SessionTable";
 
-# Design Systems Week Tijdschema
+# Tijdschema Design Systems Week 2023
 
 NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
 
@@ -33,7 +33,7 @@ organisation: "NL Design System",
 },
 ],
 subject: "Toegankelijkheid verzekeren met NL Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/toegankelijkheid-verzekeren-met-nl-design-system/",
+icalLink: "/dsweek-2023/toegankelijkheid-verzekeren-met-nl-design-system.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -45,7 +45,7 @@ organisation: "OpenGemeenten",
 },
 ],
 subject: "Waarom wij als leverancier werken met NL Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/waarom-wij-als-leverancier-werken-met-nl-design-system/",
+icalLink: "/dsweek-2023/waarom-wij-als-leverancier-werken-met-nl-design-system.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -57,7 +57,7 @@ organisation: "NL Design System",
 },
 ],
 subject: "Design Tokens - onze componenten jouw huisstijl",
-singupLink: "https://www.gebruikercentraal.nl/agenda/onze-componenten-jouw-huisstijl-over-design-tokens/",
+icalLink: "/dsweek-2023/onze-componenten-jouw-huisstijl.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -73,7 +73,7 @@ organisation: "GitHub",
 },
 ],
 subject: "The future of design decisions",
-singupLink: "https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/",
+icalLink: "/dsweek-2023/the-future-of-design-decisions.ics",
 language: { abbr: "EN", description: "English" },
 },
 ]}
@@ -93,7 +93,7 @@ organisation: "PostNL",
 },
 ],
 subject: "Design system laten meegroeien met je organisatie",
-singupLink: "https://www.gebruikercentraal.nl/agenda/design-system-laten-meegroeien-met-je-organisatie/",
+icalLink: "/dsweek-2023/design-system-laten-meegroeien.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -105,7 +105,6 @@ organisation: "NL Design System",
 },
 ],
 subject: "Heartbeat NL Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/update-heartbeat-van-het-nl-design-system-3/",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -121,7 +120,7 @@ organisation: "Kamer van Koophandel",
 },
 ],
 subject: "Trinity: het design system van KvK",
-singupLink: "https://www.gebruikercentraal.nl/agenda/trinity-het-design-system-van-de-kvk/",
+icalLink: "/dsweek-2023/trinity-het-design-system-van-kvk.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -137,7 +136,7 @@ organisation: "NL Design System",
 },
 ],
 subject: "Toegankelijke formulieren met NL Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/toegankelijke-formulieren-met-nl-design-system/",
+icalLink: "/dsweek-2023/toegan­kelijke-formulieren-met-nlds.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 ]}
@@ -157,7 +156,7 @@ organisation: "Taiwan Design System",
 },
 ],
 subject: "Design systems as public infrastructure",
-singupLink: "https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure",
+icalLink: "/dsweek-2023/design-systems-as-public-infrastructure.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -169,7 +168,7 @@ organisation: "GOV.UK ",
 },
 ],
 subject: "GOV.UK Prototype Kit",
-singupLink: "https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/",
+icalLink: "/dsweek-2023/the-gov-uk-prototype-kit.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -181,7 +180,7 @@ organisation: "Estland Design System",
 },
 ],
 subject: "Estonia Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/estland-design-system/",
+icalLink: "/dsweek-2023/estonia-design-system.ics",
 language: { abbr: "EN", description: "English" },
 },
 ]}
@@ -201,7 +200,7 @@ organisation: "Sanoma Learning",
 },
 ],
 subject: "Betere toegankelijkheid met een design system",
-singupLink: "https://www.gebruikercentraal.nl/agenda/betere-toegankelijkheid-met-een-design-system/",
+icalLink: "/dsweek-2023/betere-toegankelijkheid-met-een-design-system.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 {
@@ -213,7 +212,7 @@ organisation: "Nord Health ",
 },
 ],
 subject: "Design Systems & Web Components: what works & what doesn’t",
-singupLink: "https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/",
+icalLink: "/dsweek-2023/design-systems-and-web-components.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -225,7 +224,7 @@ organisation: "GitHub",
 },
 ],
 subject: "DesignOps: designing the API of design teams",
-singupLink: "https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/",
+icalLink: "/dsweek-2023/designing-the-api-of-design-teams.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -245,8 +244,7 @@ organisation: "NL Design System",
 },
 ],
 subject: "Management-panel: ervaringen met NL Design System uit de praktijk",
-singupLink:
-"https://www.gebruikercentraal.nl/agenda/management-panel-ervaringen-met-nl-design-system-uit-de-praktijk/",
+icalLink: "/dsweek-2023/management-panel.ics",
 language: { abbr: "NL", description: "Nederlands" },
 },
 ]}

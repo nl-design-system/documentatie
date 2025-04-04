@@ -1,0 +1,66 @@
+---
+title: WCAG-succescriterium 3.2.1 Bij focus
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 3.2.1 Bij focus
+pagination_label: WCAG-succescriterium 3.2.1 Bij focus
+description: Maak functionaliteit voorspelbaar en daardoor goed te begrijpen. Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.
+slug: 3.2.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_3.2.1-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 3.2.1 Bij focus"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+**Let op**: Als er onverwacht een dialog opent met bijvoorbeeld een advertentie of oproep om je aan te melden voor de nieuwsbrief, valt dit niet onder dit succescriterium. Dit omdat het openen niet het gevolg is van een actie van de gebruiker, maar door de website zelf wordt gestart.
+
+Ook een onverwachte actie wanneer een gebruiker met de muis over een element gaat, valt niet onder dit succescriterium. Bijvoorbeeld door het openen van een modal als een gebruiker alleen over een button hovert en het geen focus geeft.
+
+Onverwacht gedrag door de website zelf of muisbeweging valt strict genomen niet onder dit WCAG-succescriterium. We raden wel aan om ook in die gevallen onverwacht gedrag te vermijden, in lijn met de intentie van WCAG-richtlijn 3.2 Voorspelbaar: 'Maak het uiterlijk en de bediening van webpagina's voorspelbaar'.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Bepaal eerst of er interactieve elementen op de pagina zijn, zoals formuliervelden, buttons of links. En dan:
+
+- Tab met het toetsenbord door elk interactief element, geef ook aanwezige radiobuttons en select-opties toetsenbordfocus.
+- Klik met de muis interactieve elementen aan, ook aanwezige select-opties.
+- Test of er geen onverwachte dingen gebeuren zoals het verzenden van het formulier, het verplaatsen van de focus of het openen van een nieuw venster of tab.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.2.1 On focus</span>](https://www.w3.org/TR/WCAG22/#on-focus)
+- Nederlandse vertaling van het WCAG-succescriterium: [3.2.2 Bij focus](https://www.w3.org/Translations/WCAG22-nl/#bij-focus).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.1 On Focus</span>](https://www.w3.org/WAI/WCAG22/quickref/#on-focus).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.1: On Focus</span>](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

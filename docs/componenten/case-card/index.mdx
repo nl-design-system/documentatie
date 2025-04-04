@@ -1,29 +1,73 @@
 ---
-title: Case card
+title: Case Card
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Case card
-pagination_label: Case card
+sidebar_label: Case Card
+pagination_label: Case Card
 description: Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.
 slug: /case-card
-sidebar_custom_props:
-  illustration: CaseCardSketch
+keywords:
+  - aanvraag
+  - afgehandeld
+  - afgerond
+  - archief
+  - archive
+  - archived
+  - bericht
+  - beroep
+  - bezwaar
+  - card
+  - case
+  - case card
+  - complaint
+  - data
+  - dossier
+  - file
+  - gearchiveerd
+  - in behandeling
+  - kenmerk
+  - klacht
+  - lopende zaak
+  - melding
+  - Mijn Services
+  - MijnOmgeving
+  - MijnZaken
+  - navigate
+  - navigatie
+  - navigation
+  - navigeren
+  - permit
+  - procedure
+  - record
+  - request
+  - response
+  - terugkoppeling
+  - tile
+  - vergunning
+  - zaak
+  - zaak informatie
+  - zaaknummer
+  - zaaksysteem
 ---
 
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
-export const title = "Case card";
+export const title = "Case Card";
 export const description = "Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.";
-export const illustration = "CaseCardSketch";
 export const issueNumber = 253;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
@@ -33,6 +77,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Levende Backlog
+## Help component verbeteren
 
-<Backlog component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={3} />

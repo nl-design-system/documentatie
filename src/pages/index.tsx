@@ -1,19 +1,17 @@
-import DocusaurusLink from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {
   Heading2,
   Heading3,
   Image,
-  Link,
   Paragraph,
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
 import HomepageHero from '../components/HomepageHero';
 import HomepageUpdates from '../components/HomepageUpdates';
+import { Link } from '../components/Link';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -32,13 +30,12 @@ export default function Home() {
         >
           <Paragraph lead>
             Met een actieve community van specialisten verzamelt het kernteam de beste{' '}
-            <DocusaurusLink to="/richtlijnen">richtlijnen</DocusaurusLink>,{' '}
-            <DocusaurusLink to="/componenten">componenten</DocusaurusLink> en voorbeelden om robuuste websites en
-            webapplicaties voor de digitale overheid te bouwen.
+            <Link to="/richtlijnen">richtlijnen</Link>, <Link to="/componenten">componenten</Link> en voorbeelden om
+            robuuste websites en webapplicaties voor de digitale overheid te bouwen.
           </Paragraph>
 
           <Paragraph>
-            NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk te maken.{' '}
+            NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk te maken.
           </Paragraph>
 
           <UnorderedList>
@@ -49,89 +46,55 @@ export default function Home() {
         </HomepageHero>
         <div className="container" style={{ paddingBlockEnd: '40px' }}>
           <Heading2>Meedoen als...</Heading2>
-
           <CardGroup appearance="medium">
-            <Card component="section" appearance="small">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
+            <Card component="section" appearance="medium">
               <CardContent>
                 <div>
                   <Heading3>Manager</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/manager/introductie" className="utrecht-link">
-                    Meer informatie voor managers
-                  </DocusaurusLink>
+                  <Link to="/handboek/manager/introductie">Meer informatie voor managers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Leverancier</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/leverancier/introductie" className="utrecht-link">
-                    Meer informatie voor leveranciers
-                  </DocusaurusLink>
+                  <Link to="/handboek/leverancier/introductie">Meer informatie voor leveranciers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Developer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/developer/overzicht" className="utrecht-link">
-                    Meer informatie voor developers
-                  </DocusaurusLink>
+                  <Link to="/handboek/developer/overzicht">Meer informatie voor developers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
             <Card component="section" appearance="medium">
-              {/* <CardIllustration background>
-                <Image
-                  src="..."
-                  alt="..."
-                />
-              </CardIllustration> */}
               <CardContent>
                 <div>
                   <Heading3>Designer</Heading3>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/handboek/designer/overzicht" className="utrecht-link">
-                    Meer informatie voor designers
-                  </DocusaurusLink>
+                  <Link to="/handboek/designer/overzicht">Meer informatie voor designers</Link>
                 </Paragraph>
               </CardContent>
             </Card>
           </CardGroup>
-
           <Heading2>Wie doen er al mee?</Heading2>
           <CardGroup appearance="small">
             <Card appearance="small" href="https://github.com/nl-design-system/utrecht">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg"
-                  alt="Utrecht logo"
+                  alt="Gemeente Utrecht logo, naar Gemeente Utrecht op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -139,15 +102,7 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg"
-                  alt="Den Haag logo"
-                />
-              </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/rvo">
-              <CardIllustration>
-                <Image
-                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
-                  alt="RVO logo"
+                  alt="Gemeente Den Haag logo, naar Gemeente Den Haag op GitHub"
                 />
               </CardIllustration>
             </Card>
@@ -155,13 +110,55 @@ export default function Home() {
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg"
-                  alt="Amsterdam logo"
+                  alt="Gemeente Amsterdam logo, naar Gemeente Amsterdam op GitHub"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rotterdam">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
+                  alt="Gemeente Rotterdam logo, naar Gemeente Rotterdam op GitHub"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/tilburg">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
+                  alt="Gemeente Tilburg logo, naar Gemeente Tilburg op GitHub"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rvo">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
+                  alt="Rijksdienst voor Ondernemend Nederland logo, naar RVO op GitHub"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/lux">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
+                  alt="Logius logo, naar LUX op GitHub"
+                />
+              </CardIllustration>
+            </Card>
+            <Card appearance="small" href="https://github.com/nl-design-system/rijkshuisstijl-community">
+              <CardIllustration>
+                <Image
+                  src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
+                  alt="Rijkshuisstijl Community logo, naar Rijkshuisstijl Community op GitHub"
                 />
               </CardIllustration>
             </Card>
           </CardGroup>
           <Paragraph className="homepage__paragraph">
-            En ruim 30 <Link href="https://github.com/nl-design-system/themes">organisaties met een eigen thema</Link>
+            Naast de organisaties die componenten bijdragen doen{' '}
+            <Link to="/community/wie-doet-mee">diverse andere organisaties</Link> mee in de community van NL Design
+            System.
           </Paragraph>
         </div>
         <div className="container" style={{ paddingBlockStart: '40px', paddingBlockEnd: '40px' }}>
@@ -175,9 +172,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/richtlijnen" className="utrecht-link">
-                    Bekijk de richtlijnen
-                  </DocusaurusLink>
+                  <Link to="/richtlijnen">Bekijk de richtlijnen</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -192,9 +187,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/componenten" className="utrecht-link">
-                    Bekijk de componenten
-                  </DocusaurusLink>
+                  <Link to="/componenten">Bekijk de componenten</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -209,9 +202,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/voorbeelden" className="utrecht-link">
-                    Bekijk de voorbeelden
-                  </DocusaurusLink>
+                  <Link to="/voorbeelden">Bekijk de voorbeelden</Link>
                 </Paragraph>
               </CardContent>
             </Card>
@@ -219,16 +210,14 @@ export default function Home() {
             <Card component="section" appearance="medium">
               <CardContent>
                 <div>
-                  <Heading2>Events</Heading2>
+                  <Heading2>Bijeenkomsten</Heading2>
                   <Paragraph>
-                    Benieuwd naar de events van NL Design System? Of niet gelukt om bij de heartbeat te zijn? Bekijk de
-                    aankondigingen en opnames hier.
+                    Benieuwd naar de bijeenkomsten van NL Design System? Of niet gelukt om bij de Heartbeat te zijn?
+                    Bekijk de aankondigingen en opnames hier.
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <DocusaurusLink to="/community/events/overzicht" className="utrecht-link">
-                    Bekijk de events
-                  </DocusaurusLink>
+                  <Link to="/community/events/overzicht">Bekijk de events</Link>
                 </Paragraph>
               </CardContent>
             </Card>

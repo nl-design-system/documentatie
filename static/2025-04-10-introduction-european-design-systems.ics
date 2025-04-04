@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME:Introduction into European Design Systems
+METHOD:PUBLISH
+PRODID:-//Apple Inc.//macOS 15.3.1//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Berlin:20250410T144500
+ORGANIZER;CN="NL Design System";EMAIL="info@nldesignsystem.nl":mailto:in
+ fo@nldesignsystem.nl
+UID:8241838D-801C-49D2-971B-55B0DB1BBF85
+DTSTAMP:20250317T075653Z
+X-APPLE-CREATOR-IDENTITY:com.apple.exchangesync.exchangesyncd
+DESCRIPTION:This April\, the User Needs First International Conference w
+ ill take place in Amsterdam\, and we are excited to share that NL Design
+  System<https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%
+ 2Fnldesignsystem.nl%2F&data=05%7C02%7CYolijn.vanderKolk%40ictu.nl%7C4983
+ 120a803b43c64fe908dd6528ab27%7C6b1d3da237514e3db3c9e6784c8bad70%7C0%7C0%
+ 7C638777947529360890%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlY
+ iOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C
+ %7C%7C&sdata=ymMzM3x%2B6jwktNBtTMqPI3hF2QqqskwT3%2Bbft7Yan6s%3D&reserved
+ =0> will be contributing to the program. We are eager to take this initi
+ ative to initiate a dialogue with the multitude of design systems operat
+ ing across Europe. Our aim is to identify areas where we can support and
+  learn from one another\, fostering a stronger and more connected commun
+ ity.\n\nWe will hear from 5 European Design Systems: Denmark\, Greece\, 
+ Italy\, Portugal and The Netherlands.\n\nTo join the session digitally y
+ ou can sign up here and add the Teams invite to your calendar.\n\n  *   
+ 📆 When: April 10th from 13:30 to 14:45 CEST.\n  *   🌍 Where: In Amster
+ dam as part of the User Needs First International Conference 2025<https:
+ //eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Finternationa
+ l.gebruikercentraal.nl%2Fconference2025%2F&data=05%7C02%7CYolijn.vanderK
+ olk%40ictu.nl%7C4983120a803b43c64fe908dd6528ab27%7C6b1d3da237514e3db3c9e
+ 6784c8bad70%7C0%7C0%7C638777947529378495%7CUnknown%7CTWFpbGZsb3d8eyJFbXB
+ 0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld
+ UIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=28GSrHkm%2Bq3ew2nhCD7k8P0hBSc5RamlxOGUM
+ fxAOaw%3D&reserved=0> and online via Microsoft Teams<https://eur03.safel
+ inks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.micro
+ soft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MzA1YzZhODItODZlNy00MjJlLWJj
+ N2UtZjdkNDcyYTNlYzA5%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%25
+ 3a%25226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%2522%252c%2522Oid%2522%253a%
+ 25223e0eaaef-de00-4d5f-a843-94041f62ecc9%2522%257d&data=05%7C02%7CYolijn
+ .vanderKolk%40ictu.nl%7C4983120a803b43c64fe908dd6528ab27%7C6b1d3da237514
+ e3db3c9e6784c8bad70%7C0%7C0%7C638777947529390967%7CUnknown%7CTWFpbGZsb3d
+ 8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWF
+ pbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=6Iqf3h1Rooowwrkm7Dnaw5%2FY5ca1y
+ HErfkgC3E%2BJPIo%3D&reserved=0>.\n  *   🫵 For you?: No prior knowledge 
+ on design systems is needed. However some introductions might go into te
+ chnical detail that might be easier to understand for people with prior 
+ knowledge of what is involved in creating digital products such as desig
+ ners and developers.\n
+X-APPLE-NEEDS-REPLY:TRUE
+SEQUENCE:0
+SUMMARY:Introduction into European Design Systems
+DTSTART;TZID=Europe/Berlin:20250410T130000
+CREATED:20250317T075638Z
+ATTENDEE;CN="NL Design System";CUTYPE=INDIVIDUAL;EMAIL="info@nldesignsys
+ tem.nl";ROLE=CHAIR:mailto:info@nldesignsystem.nl
+BEGIN:VALARM
+UID:ED9E6026-A38B-4D62-8AB3-2AC8727EF09B
+X-WR-ALARMUID:ED9E6026-A38B-4D62-8AB3-2AC8727EF09B
+TRIGGER:-PT15M
+DESCRIPTION:Reminder
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

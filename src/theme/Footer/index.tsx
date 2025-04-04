@@ -3,9 +3,10 @@ import FooterCopyright from '@theme/Footer/Copyright';
 import FooterLayout from '@theme/Footer/Layout';
 import FooterLinks from '@theme/Footer/Links';
 import FooterLogo from '@theme/Footer/Logo';
-import React from 'react';
+import type { ReactElement } from 'react';
+import { memo } from 'react';
 
-function Footer(): React.Element | null {
+function Footer(): ReactElement | null {
   const { footer } = useThemeConfig();
   if (!footer) {
     return null;
@@ -22,4 +23,4 @@ function Footer(): React.Element | null {
   );
 }
 
-export default React.memo(Footer);
+export default memo(Footer);

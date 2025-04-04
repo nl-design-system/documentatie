@@ -1,0 +1,10 @@
+{
+  "label": "Voorkom fouten",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/help/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

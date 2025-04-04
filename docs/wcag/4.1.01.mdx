@@ -1,0 +1,117 @@
+---
+title: WCAG-succescriterium 4.1.1 Parsen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 4.1.1 Parsen
+pagination_label: WCAG-succescriterium 4.1.1 Parsen
+description: Zorg dat er geen fouten in de HTML-code zijn.
+slug: 4.1.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_4.1.1-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Vervallen">
+  {"WCAG-succescriterium 4.1.1 Parsen"}
+</WcagHeadingGroup>
+
+**Let op**: De werkgroep die WCAG maakt heeft 4.1.1 de afgelopen jaren besproken en vastgesteld dat dit criterium tegenwoordig niet meer relevant is, omdat browsers en hulptechnologieën intussen zijn verbeterd (zie de [WCAG FAQ](https://www.w3.org/WAI/standards-guidelines/wcag/faq/#parsing411)). Het criterium is misschien in jouw situatie niet meer van toepassing. In WCAG-versie 2.2 is het helemaal verwijderd. In versie 2.1 is een [opmerking](https://www.w3.org/TR/WCAG21/#h-note-26) toegevoegd dat content in HTML of XML automatisch aan het criterium voldoet. Zie ook: [Wat is verplicht?](https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht#welkeeisen).
+
+## Uitleg
+
+<Summary />
+
+Er zijn 4 voorwaarden gedefinieerd.
+
+### 1. Elementen zijn volgens hun specificaties afgesloten
+
+Denk hier bijvoorbeeld aan headings, divs, spans en andere elementen die een sluittag vereisen.
+Een `<div>` moet afsluiten met een `</div>`.
+
+### 2. Elementen zijn genest volgens hun specificaties
+
+Verkeerd nesten van elementen kan voorkomen bij interactieve elementen: een button die een tweede button bevat.
+Of bij het verkeerd combineren van elementen: een label die een link bevat.
+Daarnaast moeten bijvoorbeeld lists en definition lists goed opgebouwd zijn.
+
+Silvestar Bistrović beschrijft een aantal [<span lang="en">Common nesting issues in HTML</span>](https://www.htmhell.dev/adventcalendar/2022/20/).
+
+### 3. Elementen bevatten geen dubbele attributen
+
+Gebruik een attribuut maximaal één keer.
+Vermijd bijvoorbeeld meerdere `class`-attributen:
+
+```html
+<!-- Foute code, niet gebruiken -->
+<h1 class="heading" class="x-large">Contact</h1>
+```
+
+In het geval van het class-attribuut scheid je meerdere waarden met een spatie:
+
+```html
+<h1 class="heading x-large">Contact</h1>
+```
+
+### 4. Alle ID's zijn uniek, behalve waar de specificatie deze eigenschappen toelaat
+
+Dit is voor formulieren belangrijk. Labels en formuliervelden zijn via een ID aan elkaar gekoppeld. Komt een ID meerdere keren voor op een pagina, dan kan het verkeerde label bij een formulierveld worden voorgelezen.
+
+In code:
+
+```html
+<label for="kleur">Wat is je lievelingskleur?</label> <input type="text" id="kleur" name="lievelingskleur" />
+```
+
+Bij de richtlijnen over labels staat hoe deze [for/id relatie](/richtlijnen/formulieren/labels/de-forid-relatie) werkt.
+
+Een ander probleem is het toevoegen van twee keer hetzelfde formulier met hetzelfde formulier-ID, de foutafhandeling staat dan misschien bij het verkeerde formulier.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+- Controleer de webpagina op de [Markup Validation Service](https://validator.w3.org/).
+- [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert enkele (maar niet alle) parse-fouten in de HTML.
+
+Voor developers:
+
+- Gebruik een [HTML-linter](https://github.com/caramelomartins/awesome-linters?tab=readme-ov-file#html), of een linter naar keuze die ook voor correcte HTML test.
+- Bij twijfel: check de '<span lang="en">Permitted content</span>' bij de '<span lang="en">Technical Summary</span>' van een HTML-element op de MDN-website. Bijvoorbeeld [de technische samenvatting voor een link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#technical_summary).
+
+## Veelgemaakte fouten
+
+### Fout: dubbele ID's doordat een formulier meerdere keren wordt gebruikt.
+
+Met sommige formulierenplugins kun je hetzelfde formulier meerdere keren toevoegen op een pagina. Let in dit geval op dat de plugin wel unieke ID's toevoegt aan de velden en het formulier. Dat kan er, naast problemen bij de `for/id` relaties, ook voor zorgen dat validatiescripts op de verkeerde plek worden uitgevoerd.
+
+Een formulier dat vaak twee keer wordt toegevoegd, is een aanmeldformulier voor de nieuwsbrief. Wil je toch hetzelfde formulier meerdere keren op een pagina, maak dan verschillende formulieren aan.
+
+## W3C referenties WCAG-versie 2.1
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">4.1.1 Parsing</span>](https://www.w3.org/TR/WCAG21/#parsing).
+- Nederlandse vertaling van het WCAG-succescriterium: [4.1.1 Parsen](https://www.w3.org/Translations/WCAG21-nl/#parsen).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#parsing).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

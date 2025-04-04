@@ -1,0 +1,21 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline
+  appearance="do"
+  title="De placeholder samen met tekst van de submitbutton gebruiken zichtbaar label in een kort zoekformulier."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label className="sr-only" htmlFor="header-search">
+          Zoek
+        </label>
+        <input id="header-search" placeholder="Zoek" type="search" />
+        <button>Zoek</button>
+      </>
+    )}
+  </Canvas>
+</Guideline>

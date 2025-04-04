@@ -1,0 +1,55 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Gebruik aria-required om aan te geven of een veld verplicht is.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <form>
+          <label htmlFor="kleur8">Wat is je lievelingskleur (verplicht)</label>
+          <input type="text" id="kleur8" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Gebruik required om aan te geven of een veld verplicht is, in combinatie met novalidate."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <form noValidate>
+          <label htmlFor="kleur9">Wat is je lievelingskleur (verplicht)</label>
+          <input type="text" id="kleur9" name="lievelingskleur" required aria-invalid="false" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Geef helemaal niet aan of een veld verplicht is, en laat de gebruiker dit pas weten bij de foutmeldingen."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <form>
+          <label htmlFor="kleur10">Wat is je lievelingskleur</label>
+          <p id="fout10">Invoerfout: Vul de naam van een kleur in.</p>
+          <input type="text" id="kleur10" aria-describedby="fout10" name="lievelingskleur" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>

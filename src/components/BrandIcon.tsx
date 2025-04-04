@@ -1,5 +1,4 @@
 import { Icon } from '@utrecht/component-library-react';
-import React from 'react';
 import { BrandFigma, BrandGithub, BrandNpm, BrandStorybook, ExternalLink } from 'tabler-icons-react';
 
 const brandMap = {

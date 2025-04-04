@@ -7,10 +7,10 @@ import DocPaginator from '@theme/DocPaginator';
 import DocVersionBadge from '@theme/DocVersionBadge';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import Heading from '@theme/Heading';
-import React from 'react';
-import styles from './styles.module.css';
+import type { ReactElement } from 'react';
+import './styles.css';
 
-function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): React.Element {
+function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props): ReactElement {
   return (
     <PageMetadata
       title={categoryGeneratedIndex.title}
@@ -22,21 +22,21 @@ function DocCategoryGeneratedIndexPageMetadata({ categoryGeneratedIndex }: Props
   );
 }
 
-function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): React.Element {
+function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props): ReactElement {
   const category = useCurrentSidebarCategory();
   return (
-    <div className={styles.generatedIndexPage}>
+    <div className="generatedIndexPage">
       <DocVersionBanner />
       <DocBreadcrumbs />
       <DocVersionBadge />
       <header>
-        <Heading as="h1" className={styles.title}>
+        <Heading as="h1" className="title">
           {categoryGeneratedIndex.title}
         </Heading>
         {categoryGeneratedIndex.description && <p>{categoryGeneratedIndex.description}</p>}
       </header>
       <article className="margin-top--lg">
-        <DocCardList items={category.items} className={styles.list} />
+        <DocCardList items={category.items} className="list" />
       </article>
       <footer className="margin-top--lg">
         <DocPaginator
@@ -48,7 +48,7 @@ function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }: Props)
   );
 }
 
-export default function DocCategoryGeneratedIndexPage(props: Props): React.Element {
+export default function DocCategoryGeneratedIndexPage(props: Props): ReactElement {
   return (
     <>
       <DocCategoryGeneratedIndexPageMetadata {...props} />

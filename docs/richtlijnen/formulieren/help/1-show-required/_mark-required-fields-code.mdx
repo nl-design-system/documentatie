@@ -1,0 +1,59 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Geef boven het formulier aan hoe verplichte velden worden aangegeven.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>Als iets verplicht is, staat dit erbij.</p>
+        <form>
+          <label htmlFor="kleur3">Wat is je lievelingskleur (verplicht)</label>
+          <input type="text" id="kleur3" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier3">Wat is je lievelingsdier</label>
+          <input type="text" id="dier3" name="lievelingsdier" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Geef boven het formulier aan hoe verplichte velden worden aangegeven en leg uit wat asterisk betekent."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>Als iets verplicht is, staat er een * bij.</p>
+        <form>
+          <label htmlFor="kleur4">Wat is je lievelingskleur *</label>
+          <input type="text" id="kleur24" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier4">Wat is je lievelingsdier</label>
+          <input type="text" id="dier4" name="lievelingsdier" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Bij alle velden aangeven of het al dan niet verplicht is.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <form>
+          <label htmlFor="kleur5">Wat is je lievelingskleur (verplicht)</label>
+          <input type="text" id="kleur5" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier5">Wat is je lievelingsdier (niet verplicht)</label>
+          <input type="text" id="dier5" name="lievelingsdier" />
+          <button>Verstuur</button>
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>

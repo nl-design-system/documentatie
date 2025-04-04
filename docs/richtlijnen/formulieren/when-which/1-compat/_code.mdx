@@ -1,0 +1,133 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Uitvragen geboortedatum met een tekstveld.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="date0">Geboortedatum</label>
+        <p id="description-date0">Bijvoorbeeld 31 december 1970.</p>
+        <input id="date0" type="text" autoComplete="bday" aria-describedby="description-date0" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="Uitvragen geboortedatum met een datumveld."
+  description="De meeste browsers voegen zelf een datumkiezer toe."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="date1">Geboortedatum</label>
+        <p id="description-date1">Bijvoorbeeld 31/12/1970.</p>
+        <input id="date1" type="date" aria-describedby="description-date1" autoComplete="bday" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Uitvragen geboortedatum met een inputmode=numeric.">
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-textbox-max-inline-size": "20ch",
+    }}
+  >
+    {() => (
+      <>
+        <fieldset>
+          <legend>Geboortedatum</legend>
+          <div>
+            <label htmlFor="day2">Dag</label>
+            <div id="description-day2">Bijvoorbeeld 31.</div>
+            <input
+              id="day2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-day2"
+              autoComplete="bday-day"
+              maxLength="2"
+            />
+          </div>
+          <div>
+            <label htmlFor="month2">Maand</label>
+            <div id="description-month2">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-month2"
+              autoComplete="bday-month"
+              maxLength="2"
+            />
+          </div>
+          <div>
+            <label htmlFor="year2">Jaar</label>
+            <div id="description-year2">Bijvoorbeeld 1970.</div>
+            <input
+              id="c2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-year2"
+              autoComplete="bday-year"
+              maxLength="4"
+            />
+          </div>
+        </fieldset>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Uitvragen geboortedatum met een nummerveld (type=number).">
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-textbox-max-inline-size": "20ch",
+    }}
+  >
+    {() => (
+      <>
+        <fieldset>
+          <legend>Geboortedatum</legend>
+          <div>
+            <label htmlFor="day3">Dag</label>
+            <div id="description-day3">Bijvoorbeeld 31.</div>
+            <input
+              id="day3"
+              type="number"
+              aria-describedby="description-day3"
+              autoComplete="bday-day"
+              min="1"
+              max="31"
+            />
+          </div>
+          <div>
+            <label htmlFor="month3">Maand</label>
+            <div id="description-month3">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month3"
+              type="number"
+              aria-describedby="description-month3"
+              autoComplete="bday-month"
+              min="1"
+              max="12"
+            />
+          </div>
+          <div>
+            <label htmlFor="year3">Jaar</label>
+            <div id="description-year3">Bijvoorbeeld 1970.</div>
+            <input id="year3" type="number" aria-describedby="description-year3" autoComplete="bday-year" />
+          </div>
+        </fieldset>
+      </>
+    )}
+  </Canvas>
+</Guideline>
