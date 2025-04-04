@@ -1,11 +1,12 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
 import clsx from 'clsx';
-import React, { Fragment, HTMLAttributes } from 'react';
-import styles from './Breadcrumbs.module.css';
+import { Fragment } from 'react';
+import type { HTMLAttributes } from 'react';
+import './Breadcrumbs.css';
 
 interface BreadcrumbItem {
   label: string;
@@ -27,7 +28,7 @@ export const Breadcrumbs = ({ breadcrumbs = [], className }: BreadcrumbsProps) =
 
   return (
     <nav
-      className={clsx(className, styles.breadcrumbsContainer)}
+      className={clsx(className, 'breadcrumbsContainer')}
       aria-label={translate({
         id: 'theme.docs.breadcrumbs.navAriaLabel',
         message: 'Breadcrumbs',
@@ -35,7 +36,7 @@ export const Breadcrumbs = ({ breadcrumbs = [], className }: BreadcrumbsProps) =
       })}
     >
       <ul
-        className={clsx(styles['breadcrumbs'], styles['breadcrumbs--desktop'])}
+        className={clsx('breadcrumbs', 'breadcrumbs--desktop')}
         itemScope
         itemType="https://schema.org/BreadcrumbList"
       >
@@ -43,23 +44,23 @@ export const Breadcrumbs = ({ breadcrumbs = [], className }: BreadcrumbsProps) =
           const isLast = all.length - 1 === i;
           return (
             <Fragment key={label}>
-              <li className={clsx(styles['breadcrumbs__item'], isLast && styles['breadcrumbs__item--last'])}>
+              <li className={clsx('breadcrumbs__item', isLast && 'breadcrumbs__item--last')}>
                 {isLast ? (
                   label
                 ) : (
-                  <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={href}>
+                  <Link className={clsx('breadcrumbs__link', 'utrecht-link')} href={href}>
                     {label}
                   </Link>
                 )}
               </li>
-              {!isLast && <IconSlash className={clsx(styles['breadcrumbs__separator'])} />}
+              {!isLast && <IconSlash className={clsx('breadcrumbs__separator')} />}
             </Fragment>
           );
         })}
       </ul>
-      <div className={clsx(styles['breadcrumbs'], styles['breadcrumbs--mobile'])}>
+      <div className={clsx('breadcrumbs', 'breadcrumbs--mobile')}>
         <IconChevronLeft />
-        <Link className={clsx(styles['breadcrumbs__link'], 'utrecht-link')} href={mobileCrumb.href}>
+        <Link className={clsx('breadcrumbs__link', 'utrecht-link')} href={mobileCrumb.href}>
           {mobileCrumb.label}
         </Link>
       </div>

@@ -1,0 +1,40 @@
+---
+title: Logo
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Logo
+pagination_label: Logo
+description: Afbeelding met het beeldmerk of woordmerk van een organisatie.
+slug: /logo
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Logo";
+export const description = "Afbeelding met het beeldmerk of woordmerk van een organisatie.";
+export const issueNumber = 339;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Help component verbeteren
+
+<HelpImproveComponent component={component} headingLevel={3} />

@@ -1,0 +1,10 @@
+{
+  "label": "Wanneer welk element?",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/when-which/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

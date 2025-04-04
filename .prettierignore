@@ -1,6 +1,7 @@
 # Ignore 3rd party files
 node_modules/
 vendor/
+.husky/
 
 # Ignore generated files
 .docusaurus/

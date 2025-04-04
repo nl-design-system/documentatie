@@ -1,5 +1,5 @@
 ---
-title: Program
+title: Program · Design Systems Week 2023
 description: Program of all English talks for the Design Systems Week 2023
 hide_title: true
 hide_table_of_contents: true
@@ -8,7 +8,7 @@ pagination_label: Program
 slug: /events/design-systems-week-2023/en/program
 ---
 
-import DSWSession from '../../../../../src/components/DSWSession'
+import { DSWSession } from '@site/src/components/DSWSession'
 import speakers from '../speakers.json'
 import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 

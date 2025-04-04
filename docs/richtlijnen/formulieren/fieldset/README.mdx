@@ -1,0 +1,45 @@
+---
+title: Fieldsets in een formulier · Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Introductie fieldsets
+sidebar_position: 5
+pagination_label: Fieldsets
+description: Groepeer formuliervelden die bij elkaar horen in een fieldset met een beschrijvende legend.
+slug: /richtlijnen/formulieren/fieldsets/
+keywords:
+  - informatie
+  - formulier
+  - design
+  - code
+---
+
+{/* @license CC0-1.0 */}
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
+import { OverviewPage } from "@site/src/components/OverviewPage";
+
+# Richtlijnen NL Design System voor fieldsets in een formulier
+
+Groepeer formuliervelden die bij elkaar horen in een `<fieldset>` met een beschrijvende `<legend>`.
+Het voordeel hiervan is dat je zo de velden visueel, maar ook in de code aan elkaar koppelt.
+
+De legend dient als de naam van de groep.
+
+```html
+<fieldset>
+  <legend>Kies je maat</legend>
+  <input id="size-s" name="size" type="radio" value="small" />
+  <label for="size-s">Small</label>
+  <input id="size-m" name="size" type="radio" value="medium" />
+  <label for="size-m">Medium</label>
+  <input id="size-l" name="size" type="radio" value="large" />
+  <label for="size-l">Large</label>
+</fieldset>
+```
+
+## Overzicht richtlijnen
+
+<OverviewPage excludeDocIDs={["richtlijnen/formulieren/fieldset/README"]} />
+
+<FooterInfo />

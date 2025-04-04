@@ -1,0 +1,14 @@
+{
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "De pagina die je wilt bezoeken bestaat niet, of niet meer. Maar we hebben wat tips voor je om alsnog te vinden wat je zoekt: start bij de voorpagina, gebruik het menu, of gebruik de zoekoptie in de menubalk.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Denk je dat het een fout in de website is? Meld ons de gebroken link alsjeblieft door een e-mail te sturen naar: kernteam@nldesignsystem.nl",
+    "description": "The 2nd paragraph of the 404 page"
+  }
+}

@@ -12,30 +12,29 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import AAAMessage from "./_wcag-aaa-message.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_2.4.10-summary.md";
 
-# WCAG-succescriterium 2.4.10 Paragraafkoppen
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AAA">
+  {"WCAG-succescriterium 2.4.10 Paragraafkoppen"}
+</WcagHeadingGroup>
 
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.10
-  Section Headings</span>](https://www.w3.org/TR/WCAG22/#section-headings).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.4.10 Paragraafkoppen](https://www.w3.org/Translations/WCAG22-nl/#paragraafkoppen).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.10
-  Section Headings</span>](https://www.w3.org/WAI/WCAG22/quickref/#section-headings).
-- Engelstalige toelichting: [<span lang="en">Understanding SC: 2.4.10
-  Section Headings</span>](https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html).
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <AAAMessage />
+  </Markdown>
+</SpotlightSection>
 
 ## Uitleg
 
-Gebruik koppen om de content te structureren. Aan de hand van de koppenstructuur geef je een goede indruk van de inhoud. Het is dan niet nodig de hele tekst te lezen om te vinden wat je zoekt.
+<Summary />
 
-Een paragraaf is gedefinieerd als een 'op zichzelf staand gedeelte van geschreven content die gaat over één of meer gerelateerde onderwerpen of ideeën'. Dit succescriterium gaat alleen over de indeling en aanduiding de inhoud. Dit kan tekst zijn maar ook een tabel, lijst of bijvoorbeeld een grafiek.
-
-De naam is ‘paragraaf’ in dit succescriterium is een vertaling van het Engelse ‘section’, het woord paragraaf slaat in deze context dus niet op het HTML-element `<p>` alleen.
-
-De gebruikelijke manier om een paragraafkop aan te geven is met een HTML-kopje, van `h1` tot en met `h6`.
 HTML-koppen vormen de ruggengraat van de inhoud van een pagina. Een goede koppenstructuur is nuttig voor verschillende soorten gebruikers:
 
 - Ziende lezers kunnen 'koppensnellen' om snel informatie te vinden, de pagina via visueel duidelijk onderscheidbare koppen scannen op de gezochte informatie.
@@ -88,8 +87,8 @@ In het artikel [<span lang="en">Accessible heading structure</span>](https://www
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Formulieren - Foutmeldingen: [Zet een samenvatting van de foutmeldingen boven het formulier](https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier).
-- Formulieren - Meer stappen: [Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen#geef-aan-hoeveel-stappen-er-zijn-en-in-welke-stap-de-gebruiker-zich-bevindt).
+- Formulieren - Foutmeldingen: [Zet een samenvatting van de foutmeldingen boven het formulier](/richtlijnen/formulieren/foutmeldingen/samenvatting).
+- Formulieren - Meer stappen: [Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt](/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen).
 
 ## Bronnen
 
@@ -109,7 +108,7 @@ Jaarlijks vraagt WebAIM aan screenreadergebruikers (onder andere) hoe zij een we
 - Controleer of koppen alleen worden gebruikt om onderliggende inhoud te beschrijven
 - Alle tekst die bij een kopje hoort, moet in de code, in de [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), onder het kopje staan. Visueel kan dit afwijken, afhankelijk van het ontwerp, maar voor een screenreadergebruiker moet het duidelijk zijn welke inhoud bij welk kopje hoort.
 - Is er een `h1`-kopje, dat de inhoud van de pagina beschrijft? Controleer ook of deze `h1` niet dezelfde inhoud heeft voor alle pagina's binnen de website.
-- Controleer of de structuur van de inhoud logisch wordt weergegeven via de koppenstructuur en er geen niveau's worden overgeslagen.
+- Controleer of de structuur van de inhoud logisch wordt weergegeven via de koppenstructuur en er geen niveaus worden overgeslagen.
 
 De browserextensie HeadingsMap geeft de koppenstructuur van een webpagina overzichtelijk weer:
 
@@ -164,4 +163,21 @@ Deze `h1` geeft geen goede informatie over de inhoud van de pagina als deze zo o
 Het gebruik van meerdere `h1`-koppen in de outline van de DOM-structuur wordt niet langer ondersteund in HTML.
 Lees hierover: [<span lang="en">Avoid using multiple `<h1>` elements on one page</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page) op MDN.
 
-<WCAGFooterInfo />
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.10 Section Headings</span>](https://www.w3.org/TR/WCAG22/#section-headings).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.10 Paragraafkoppen](https://www.w3.org/Translations/WCAG22-nl/#paragraafkoppen).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.10 Section Headings</span>](https://www.w3.org/WAI/WCAG22/quickref/#section-headings).
+- Engelstalige toelichting: [<span lang="en">Understanding SC: 2.4.10 Section Headings</span>](https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

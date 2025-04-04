@@ -1,5 +1,5 @@
 ---
-title: Timetable
+title: Timetable · Design Systems Week 2023
 description: Timetable for all English talks of the Design Systems Week 2023
 hide_table_of_contents: true
 hide_title: true
@@ -9,11 +9,11 @@ slug: /events/design-systems-week-2023/en/timetable
 ---
 
 import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
-import { SessionTable } from "../../../../../src/components/SessionTable";
+import { SessionTable } from "@site/src/components/SessionTable";
 
 <div lang="en">
 
-# Design Systems Week Timetable
+# Timetable Design Systems Week 2023
 
 <Paragraph lead>
     From 2 to 5 October NL Design System organises the third edition of Design Systems Week. Speakers from various organisations will join us for short talks about the how and why of design systems. This year there will be talks both in Dutch and English. For convenience we also have a <Link href="/events/design-systems-week-2023/en/program">program of all talks that will be in English</Link>.
@@ -40,7 +40,7 @@ name: "Jan Six",
 organisation: "GitHub",
 }],
 subject: "The future of design decisions",
-singupLink: "https://www.gebruikercentraal.nl/agenda/the-future-of-design-decisions/",
+icalLink: "/dsweek-2023/the-future-of-design-decisions.ics",
 language: { abbr: "EN", description: "English" },
 },
 ]}
@@ -60,7 +60,7 @@ organisation: "Taiwan Design System",
 },
 ],
 subject: "Design systems as public infrastructure",
-singupLink: "https://www.gebruikercentraal.nl/agenda/design-systems-as-public-infrastructure",
+icalLink: "/dsweek-2023/design-systems-as-public-infrastructure.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -72,7 +72,7 @@ organisation: "GOV.UK ",
 },
 ],
 subject: "GOV.UK Prototype Kit",
-singupLink: "https://www.gebruikercentraal.nl/agenda/the-gov-uk-prototype-kit/",
+icalLink: "/dsweek-2023/the-gov-uk-prototype-kit.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -84,7 +84,7 @@ organisation: "Estland Design System",
 },
 ],
 subject: "Estonia Design System",
-singupLink: "https://www.gebruikercentraal.nl/agenda/estland-design-system/",
+icalLink: "/dsweek-2023/estonia-design-system.ics",
 language: { abbr: "EN", description: "English" },
 },
 ]}
@@ -104,7 +104,7 @@ organisation: "Nord Health ",
 },
 ],
 subject: "Design Systems & Web Components: what works & what doesn’t",
-singupLink: "https://www.gebruikercentraal.nl/agenda/design-systems-web-components-what-works-what-doesnt/",
+icalLink: "/dsweek-2023/design-systems-and-web-components.ics",
 language: { abbr: "EN", description: "English" },
 },
 {
@@ -116,7 +116,7 @@ organisation: "GitHub",
 },
 ],
 subject: "DesignOps: designing the API of design teams",
-singupLink: "https://www.gebruikercentraal.nl/agenda/designops-designing-the-api-of-design-teams/",
+icalLink: "/dsweek-2023/designing-the-api-of-design-teams.ics",
 language: { abbr: "EN", description: "English" },
 },
 ]}

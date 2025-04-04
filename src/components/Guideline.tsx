@@ -1,14 +1,21 @@
 import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import style from './Guideline.module.css';
-interface GuidelineProps extends HTMLAttributes<HTMLDivElement> {
-  title?: string;
+import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import { createContext } from 'react';
+import './Guideline.css';
+interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
+  title?: ReactNode;
   description?: ReactNode;
   appearance: 'do' | 'dont';
   figure?: boolean;
 }
+interface CodeExampleContextType {
+  title?: ReactNode;
+  type?: string;
+}
+
+export const CodeExampleContext = createContext<CodeExampleContextType>({});
 
 export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
@@ -20,30 +27,34 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
 
   return (
     <ContainerElement
-      className={clsx(style['nlds-guideline'], style[`nlds-guideline--${appearance}`])}
+      className={clsx('nlds-guideline', `nlds-guideline--${appearance}`)}
       id={typeof title === 'string' ? title?.toLowerCase().replace(/\s/g, '-') : undefined}
     >
-      <CaptionElement className={clsx(style['nlds-guideline__description'])}>
+      <CaptionElement className="nlds-guideline__description">
         {appearance === 'dont' ? (
           <>
-            <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-              <IconMoodSad className={style['nlds-guideline__icon']} />
-              <span className={style['nlds-guideline__title']}>{guidelineLabel['dont']}</span>
+            <Paragraph className={clsx('nlds-guideline__badge', `nlds-guideline__badge--${appearance}`)}>
+              <IconMoodSad aria-hidden="true" role="presentation" className="nlds-guideline__icon" />
+              <span className="nlds-guideline__title">{guidelineLabel['dont']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
           </>
         ) : (
           <>
-            <Paragraph className={clsx(style['nlds-guideline__badge'], style[`nlds-guideline__badge--${appearance}`])}>
-              <IconMoodHappy className={style['nlds-guideline__icon']} />
-              <span className={style['nlds-guideline__title']}>{guidelineLabel['do']}</span>
+            <Paragraph className={clsx('nlds-guideline__badge', `nlds-guideline__badge--${appearance}`)}>
+              <IconMoodHappy aria-hidden="true" role="presentation" className="nlds-guideline__icon" />
+              <span className="nlds-guideline__title">{guidelineLabel['do']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
           </>
         )}
         {description}
       </CaptionElement>
-      <div className={clsx(style['nlds-guideline__example'])}>{children}</div>
+      <div className="nlds-guideline__example">
+        <CodeExampleContext.Provider value={{ title: title, type: guidelineLabel[appearance] }}>
+          {children}
+        </CodeExampleContext.Provider>
+      </div>
     </ContainerElement>
   );
 };

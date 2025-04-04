@@ -1,7 +1,7 @@
 import type { DesktopOrMobileNavBarItemProps, Props } from '@theme/NavbarItem/DefaultNavbarItem';
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 function DefaultNavbarItemDesktop({ className, isDropdownItem = false, ...props }: DesktopOrMobileNavBarItemProps) {
   const element = (
@@ -31,7 +31,7 @@ export default function DefaultNavbarItem({
   mobile = false,
   position: _, // Need to destructure position from props so that it doesn't get passed on.
   ...props
-}: Props): React.Element {
+}: Props): ReactElement {
   const Comp = mobile ? DefaultNavbarItemMobile : DefaultNavbarItemDesktop;
   return (
     <Comp

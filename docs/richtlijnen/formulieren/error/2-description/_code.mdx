@@ -1,0 +1,39 @@
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline
+  appearance="do"
+  title="Naast een visuele indicatie ook een foutmelding in tekst tonen."
+  description="In dit voorbeeld staat er een rood randje om het invoerveld heen, plus de foutmelding in tekst."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="passport-validity-1">Geldig tot</label>
+        <p id="passport-validity-date-1">Invoerfout: Vul een geldige datum in (bijvoorbeeld 6 januari 2030).</p>
+        <input
+          id="passport-validity-1"
+          aria-invalid="true"
+          type="text"
+          name="passport-validity-1"
+          aria-describedby="description-passport-validity-1"
+        />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Alleen een visuele indicatie geven dat er iets fout is gegaan."
+  description="In dit voorbeeld staat er alleen een rood randje om het invoerveld heen."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="passport-validity-2">Geldig tot</label>
+        <input id="passport-validity-2" aria-invalid="true" type="text" name="passport-validity-2" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

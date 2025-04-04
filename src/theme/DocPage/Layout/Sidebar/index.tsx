@@ -1,11 +1,11 @@
 import { useLocation } from '@docusaurus/router';
+import DocSidebar from '@docusaurus/theme-classic/src/theme/DocSidebar';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useDocsSidebar } from '@docusaurus/theme-common/internal';
-import type { Props } from '@theme/DocPage/Layout/Sidebar';
-import DocSidebar from '@theme/DocSidebar';
+import { default as DefaultDocPageLayoutSidebar } from '@theme/DocRoot/Layout/Sidebar';
 import clsx from 'clsx';
 import React, { type ReactNode, useCallback, useState } from 'react';
-import styles from './styles.module.css';
+import './styles.css';
 
 // Reset sidebar state when sidebar changes
 // Use React key to unmount/remount the children
@@ -15,11 +15,13 @@ function ResetOnSidebarChange({ children }: { children: ReactNode }) {
   return <React.Fragment key={sidebar?.name ?? 'noSidebar'}>{children}</React.Fragment>;
 }
 
-export default function DocPageLayoutSidebar({
+type Fn = typeof DefaultDocPageLayoutSidebar;
+
+const DocPageLayoutSidebar: Fn = function DocPageLayoutSidebar({
   sidebar,
   hiddenSidebarContainer,
   setHiddenSidebarContainer,
-}: Props): React.Element {
+}) {
   const { pathname } = useLocation();
 
   const [hiddenSidebar, setHiddenSidebar] = useState(false);
@@ -29,7 +31,7 @@ export default function DocPageLayoutSidebar({
 
   return (
     <aside
-      className={clsx(ThemeClassNames.docs.docSidebarContainer, styles.docSidebarContainer)}
+      className={clsx(ThemeClassNames.docs.docSidebarContainer, 'docSidebarContainer')}
       onTransitionEnd={(_evt) => {
         if (hiddenSidebarContainer) {
           setHiddenSidebar(true);
@@ -37,10 +39,12 @@ export default function DocPageLayoutSidebar({
       }}
     >
       <ResetOnSidebarChange>
-        <div className={clsx(styles.sidebarViewport, hiddenSidebar && styles.sidebarViewportHidden)}>
+        <div className={clsx('sidebarViewport', hiddenSidebar && 'sidebarViewportHidden')}>
           <DocSidebar sidebar={sidebar} path={pathname} onCollapse={toggleSidebar} isHidden={hiddenSidebar} />
         </div>
       </ResetOnSidebarChange>
     </aside>
   );
-}
+};
+
+export default DocPageLayoutSidebar;

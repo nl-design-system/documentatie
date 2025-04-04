@@ -1,0 +1,44 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Het zichtbare label is de toegankelijke naam.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="hond">Hoe heet je hond</label>
+        <input type="text" id="hond" name="hond" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Alleen een placeholder gebruiken om te laten zien wat de gebruiker moet invullen,"
+  description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
+>
+  <Canvas language="html">
+    {() => (
+      <input type="text" name="lievelingskleur" aria-label="Vul een kleur in" placeholder="Wat is je lievelingskleur" />
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Alleen losse tekst gebruiken om te laten zien wat de gebruiker moet invullen,"
+  description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <div>Zoek</div>
+        <input type="search" name="trefwoord" aria-label="Trefwoord" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

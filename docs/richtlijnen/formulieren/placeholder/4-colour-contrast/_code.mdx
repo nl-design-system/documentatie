@@ -1,0 +1,17 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="De placeholder opacity: 1 meegeven in de CSS.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="auto">Welk auto rij je?</label>
+        <input className="nlds-opacity" id="auto" name="merk" type="text" placeholder="Vul een merknaam in" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

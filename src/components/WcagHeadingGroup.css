@@ -1,0 +1,7 @@
+.nlds-inline-heading-group--wcag-heading-group {
+  --utrecht-badge-font-size: max(var(--utrecht-paragraph-font-size), calc(0.42 * var(--utrecht-heading-1-font-size)));
+}
+
+.nlds-inline-heading-group__badge {
+  vertical-align: middle;
+}

@@ -1,0 +1,50 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Info boven het form element.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Uw gegevens</h2>
+        <p>Stap 2 van 3</p>
+        <form>[... inhoud formulier …]</form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="do"
+  title="De tekst van de stap opnemen in het kopje, boven het formulier."
+  description="En deze tekst visueel op een andere regel plaatsen. "
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>
+          <span class="progress-indicator">Stap 2 van 3</span>
+          Uw gegevens
+        </h2>
+        <form>[... inhoud formulier …]</form>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Info binnen het formulier.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h2>Uw gegevens</h2>
+        <form>
+          <h3>Stap 2 van 3</h3>
+          [... inhoud formulier …]
+        </form>
+      </>
+    )}
+  </Canvas>
+</Guideline>

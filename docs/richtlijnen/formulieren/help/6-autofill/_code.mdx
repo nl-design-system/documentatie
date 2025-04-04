@@ -1,0 +1,36 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+## Voorbeelden
+
+<Guideline appearance="do" title="Voeg autocomplete waarden toe aan adresgegevens.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="adres1">Straat en huisnummer</label>
+        <input type="text" id="adres1" autoComplete="street-address" name="adres" />
+        <label htmlFor="postcode1">Postcode</label>
+        <input type="text" id="postcode1" autoComplete="postal-code" name="postcode" />
+        <label htmlFor="woonplaats1">Woonplaats</label>
+        <input type="text" id="woonplaats1" autoComplete="address-level2" name="woonplaats" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Laat autocomplete waarden weg bij adresgegevens.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="adres2">Straat en huisnummer</label>
+        <input type="text" id="adres2" name="adres" />
+        <label htmlFor="postcode2">Postcode</label>
+        <input type="text" id="postcode2" name="postcode" />
+        <label htmlFor="woonplaats2">Woonplaats</label>
+        <input type="text" id="woonplaats2" name="woonplaats" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

@@ -1,0 +1,10 @@
+{
+  "label": "Uit te vragen informatie",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/questions/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

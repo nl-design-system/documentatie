@@ -1,14 +1,14 @@
+import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
 import type { Props as MDXPreProps } from '@theme/MDXComponents/Pre';
-import React, { isValidElement } from 'react';
-import { CodeBlockSyntaxHighlighting } from '/src/components/CodeBlockSyntaxHighlighting';
-import { Element, Props } from 'react';
+import { isValidElement } from 'react';
+import type { ReactElement } from 'react';
 
-export default function MDXPre(props: MDXPreProps): React.Element {
+export default function MDXPre(props: MDXPreProps): ReactElement {
   let syntax;
   let textContent = '';
 
   if (isValidElement(props.children)) {
-    const elementProps = (props.children as Element).props as Props;
+    const elementProps = (props.children as ReactElement).props;
     const match =
       typeof elementProps.className === 'string'
         ? elementProps.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/)

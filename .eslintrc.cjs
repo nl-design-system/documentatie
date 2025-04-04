@@ -34,6 +34,9 @@ module.exports = {
       ],
       files: ['*.mdx'],
       plugins: ['import'],
+      rules: {
+        'no-useless-escape': 'off',
+      },
       settings: {
         'mdx/code-blocks': true,
       },
@@ -54,10 +57,13 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: ['tsconfig.json'],
+        projectService: true,
         tsconfigRootDir: __dirname,
       },
       plugins: ['@typescript-eslint', 'import'],
+      rules: {
+        'no-undef': 'off',
+      },
     },
   ],
 };

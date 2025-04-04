@@ -1,22 +1,54 @@
-import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
+import { useNavbarMobileSidebar, useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
 import clsx from 'clsx';
-import React from 'react';
-import styles from './Layout.module.css';
+import { useEffect, useRef } from 'react';
+import type { ReactElement } from 'react';
+import './Layout.css';
 
-export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): React.Element {
+export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): ReactElement {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
+  const navbarModalDialog = useRef<HTMLDialogElement>();
+  const { shown, toggle } = useNavbarMobileSidebar();
+
+  useEffect(() => {
+    const { current: dialogEl } = navbarModalDialog;
+
+    if (!dialogEl) return;
+    if (shown) {
+      dialogEl.showModal();
+    } else {
+      dialogEl.close();
+    }
+  });
+
+  useEffect(() => {
+    const dialogEl = navbarModalDialog.current;
+
+    function toggleOnEscape(e) {
+      if (e.key === 'Escape') {
+        if (shown) {
+          toggle();
+        }
+      }
+    }
+
+    dialogEl.addEventListener('keydown', toggleOnEscape);
+
+    return () => {
+      dialogEl.removeEventListener('keydown', toggleOnEscape);
+    };
+  }, [shown]);
+
   return (
-    <div className={clsx('navbar-sidebar', styles['navbar-sidebar'])}>
+    <dialog className={clsx('navbar-sidebar', 'navbar-sidebar')} ref={navbarModalDialog}>
       {header}
-      <div
-        className={clsx('navbar-sidebar__items', {
-          'navbar-sidebar__items--show-secondary': secondaryMenuShown,
-        })}
-      >
-        <div className="navbar-sidebar__item menu">{primaryMenu}</div>
-        <div className="navbar-sidebar__item menu">{secondaryMenu}</div>
+      <div className={clsx('navbar-sidebar__items')}>
+        {secondaryMenuShown ? (
+          <div className="navbar-sidebar__item menu">{secondaryMenu}</div>
+        ) : (
+          <div className="navbar-sidebar__item menu these-no-need-when">{primaryMenu}</div>
+        )}
       </div>
-    </div>
+    </dialog>
   );
 }

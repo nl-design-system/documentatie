@@ -1,5 +1,5 @@
 ---
-title: Tekst en taalgebruik
+title: Tekst en taalgebruik · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tekst en taalgebruik
@@ -26,7 +26,7 @@ Taal in het NL Design System bestaat uit meerdere niveaus. Op een hoog niveau ge
 
 - Informerende tekst: Lopende artikel tekst, tabellen tekst.
 - Service-content, zoals een uitleg, veelgestelde vragen en contactgegevens.
-- Teksten in formulieren, zoals knoptekst, formulierlabels, feedbacktekst en contextuele uitleg.
+- Teksten in formulieren, zoals buttontekst, formulierlabels, feedbacktekst en contextuele uitleg.
 
 ### Voor wie schrijven we
 
@@ -249,7 +249,7 @@ Gebruik bij een opsomming opsommingstekens. De onderdelen van de opsomming hebbe
 
 Als de opsomming uit delen van zinnen bestaat, begint elke deel met een kleine letter en eindigt met puntkomma. Het laatste deel van de opsomming krijgt een punt. Als de opsomming uit hele zinnen bestaat, begint elk deel met een hoofdletter en eindigt de opsomming met een punt of vraagteken.
 
-#### Voorbeelden
+## Voorbeelden
 
 Op school heb ik geleerd:
 

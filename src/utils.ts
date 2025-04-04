@@ -26,3 +26,14 @@ export const getRelayBoardDescription = (id: string): string => {
 
   return descriptions[id];
 };
+
+export const previousRelayStep = {
+  HELP_WANTED: 'UNKNOWN',
+  COMMUNITY: 'HELP_WANTED',
+  CANDIDATE: 'COMMUNITY',
+  HALL_OF_FAME: 'CANDIDATE',
+};
+
+export const relayProjectIds = Object.keys(previousRelayStep);
+
+export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');

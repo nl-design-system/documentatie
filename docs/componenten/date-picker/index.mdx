@@ -1,29 +1,31 @@
 ---
-title: Date picker
+title: Date Picker
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Date picker
-pagination_label: Date picker
-description: " "
+sidebar_label: Date Picker
+pagination_label: Date Picker
+description: Biedt de mogelijkheid om een beschikbare datum te kiezen uit een op maat gemaakte kalender.
 slug: /date-picker
-sidebar_custom_props:
-  illustration: DatePickerSketch
 ---
 
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
-export const title = "Date picker";
-export const description = "";
-export const illustration = "DatePickerSketch";
+export const title = "Date Picker";
+export const description = "Biedt de mogelijkheid om een beschikbare datum te kiezen uit een op maat gemaakte kalender.";
 export const issueNumber = 35;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
@@ -33,6 +35,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Levende Backlog
+## Help component verbeteren
 
-<Backlog component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={3} />

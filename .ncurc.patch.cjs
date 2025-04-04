@@ -1,6 +1,7 @@
 module.exports = {
   dep: ['dev', 'prod'],
   install: 'always',
+  packageManager: 'pnpm',
   reject: [
     ...Object.keys({
       // Defer upgrading to Docusaurus 3.1.1 because of _a lot_ of warnings,

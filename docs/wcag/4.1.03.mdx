@@ -1,0 +1,63 @@
+---
+title: WCAG-succescriterium 4.1.3 Statusberichten
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 4.1.3 Statusberichten
+pagination_label: WCAG-succescriterium 4.1.3 Statusberichten
+description: Je kunt updates met belangrijke informatie met de gebruiker delen via een statusbericht. Zorg er dan voor dat gebruikers die de melding niet zien, deze informatie toch meekrijgen.
+slug: 4.1.3
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_4.1.3-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
+  {"WCAG-succescriterium 4.1.3 Statusberichten"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+## Bronnen
+
+Op [<span lang="en">Understanding SC 4.1.3: Status Messages</span>](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) staat goed beschreven wanneer dit succescriterium van toepassing is. Deze pagina bevat ook een aantal links naar wanneer en hoe ARIA-roles hiervoor te gebruiken. Zoals `role="status"`, `role="log"` en `aria-live`.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Test elk statusbericht dat dynamisch aan de content wordt toegevoegd en geen toetsenbordfocus krijgt.
+Wordt de tekst van de melding goed voorgelezen door een screenreader?
+
+**Let op**: dit geldt alleen voor statusberichten die worden getoond zonder dat de pagina opnieuw geladen wordt.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">4.1.3 Status Messages</span>](https://www.w3.org/TR/WCAG22/#status-messages).
+- Nederlandse vertaling van het WCAG-succescriterium: [4.1.3 Statusberichten](https://www.w3.org/Translations/WCAG22-nl/#statusberichten).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.3 Status Messages</span>](https://www.w3.org/WAI/WCAG22/quickref/#status-messages).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.3: Status Messages</span>](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>
