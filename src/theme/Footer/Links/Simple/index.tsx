@@ -1,6 +1,7 @@
 import LinkItem from '@theme/Footer/LinkItem';
 import type { Props } from '@theme/Footer/Links/Simple';
-import React from 'react';
+import type { ReactElement } from 'react';
+import { Fragment } from 'react';
 
 function Separator() {
   return <span className="footer__link-separator">·</span>;
@@ -19,15 +20,15 @@ function SimpleLinkItem({ item }: { item: Props['links'][number] }) {
   );
 }
 
-export default function FooterLinksSimple({ links }: Props): React.Element {
+export default function FooterLinksSimple({ links }: Props): ReactElement {
   return (
     <div className="footer__links text--center">
       <div className="footer__links">
         {links.map((item, i) => (
-          <React.Fragment key={i}>
+          <Fragment key={i}>
             <SimpleLinkItem item={item} />
             {links.length !== i + 1 && <Separator />}
-          </React.Fragment>
+          </Fragment>
         ))}
       </div>
     </div>

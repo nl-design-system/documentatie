@@ -1,0 +1,52 @@
+---
+title: Vermeld duidelijk of een veld wel of niet verplicht is · Voorkom fouten in een formulier · Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Optioneel of verplicht
+pagination_label: Optioneel of verplicht
+description: Richtlijnen om duidelijk aan te geven welke velden een gebruiker kan overslaan in een formulier.
+slug: /richtlijnen/formulieren/voorkom-fouten/verplichte-velden/
+keywords:
+  - labels
+  - formulier
+  - design
+  - code
+---
+
+{/* @license CC0-1.0 */}
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
+import { Markdown } from "@site/src/components/Markdown";
+import Guideline from "./_guideline.md";
+import MarkOptionalCode from "./_mark-optional-fields-code.mdx";
+import MarkOptional from "./_mark-optional-fields.md";
+import MarkRequiredCode from "./_mark-required-fields-code.mdx";
+import MarkRequired from "./_mark-required-fields.md";
+import ScreenReaderFeedbackCode from "./_screen-reader-feedback-code.mdx";
+import ScreenReaderFeedback from "./_screen-reader-feedback.md";
+
+<Guideline />
+
+## Optie 1: 'niet-verplichte' velden markeren
+
+<Markdown omitH1 headinglevel={3}>
+  <MarkOptional />
+</Markdown>
+
+<MarkOptionalCode />
+
+## Optie 2: 'verplichte' velden markeren
+
+<Markdown omitH1 headinglevel={3}>
+  <MarkRequired />
+</Markdown>
+
+<MarkRequiredCode />
+
+<Markdown headinglevel={2}>
+  <ScreenReaderFeedback />
+</Markdown>
+
+<ScreenReaderFeedbackCode />
+
+<FooterInfo />

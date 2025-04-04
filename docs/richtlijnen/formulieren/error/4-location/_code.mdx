@@ -1,0 +1,41 @@
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+<Guideline
+  appearance="do"
+  title="Plaats alle descriptions, ook de foutmeldingen, op een consistente plek, liefst tussen het label en het formulierveld."
+>
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="wachtwoord2">Nieuw wachtwoord</label>
+        <p id="description-wachtwoord2">Kies een wachtwoord van minimaal 8 karakters lang.</p>
+        <p id="error-wachtwoord2">Invoerfout: Je gekozen wachtwoord is te kort.</p>
+        <input
+          id="wachtwoord2"
+          type="password"
+          name="nieuw-wachtwoord"
+          aria-describedby="description-wachtwoord2 error-wachtwoord2"
+        />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Description boven het formulierveld en foutmelding eronder plaatsen.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="wachtwoord4">Nieuw wachtwoord</label>
+        <p id="description-wachtwoord4">Kies een wachtwoord van minimaal 8 karakters lang.</p>
+        <input
+          id="wachtwoord4"
+          type="password"
+          name="nieuw-wachtwoord"
+          aria-describedby="description-wachtwoord4 error-wachtwoord4"
+        />
+        <p id="error-wachtwoord4">Invoerfout: Je gekozen wachtwoord is te kort.</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>

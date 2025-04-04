@@ -1,0 +1,67 @@
+---
+title: Buttons in een formulier · Richtlijnen
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Introductie Buttons
+sidebar_position: 1
+pagination_label: Buttons in een formulier
+description: Richtlijnen voor het ontwerp en de code van buttons (knoppen) in een formulier.
+slug: /richtlijnen/formulieren/buttons
+keywords:
+  - labels
+  - formulier
+  - design
+  - code
+---
+
+{/* @license CC0-1.0 */}
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
+import { FragmentRedirect } from "@site/src/components/FragmentRedirect";
+import { OverviewPage } from "@site/src/components/OverviewPage";
+
+# Richtlijnen NL Design System voor buttons in een formulier
+
+Via een button verzend je een formulier of voer je aan andere actie uit, zoals het uploaden van een bestand.
+In deze documentatie gebruiken we de Engelse benaming voor het Nederlandse woord knop: 'button'. Omdat `<button>` het HTML-element is waar deze richtlijnen over gaan.
+
+Binnen een formulier bestaan er drie soorten buttons:
+
+- `<button type="submit">`, om het formulier mee te verzenden (dit is de default waarde binnen een formulier);
+- `<button type="button">`, dit zijn buttons die een andere functie hebben binnen een formulier, zoals het uploaden van documenten of openen van een modal;
+- `<button type="reset">`, om alle ingevulde informatie binnen een formulier te wissen.
+
+De hier beschreven richtlijnen gelden voor al deze buttons.
+
+Voor de toegankelijkheid en goede code van het formulier zijn de volgende punten belangrijk voor een button:
+
+## Overzicht richtlijnen
+
+<OverviewPage excludeDocIDs={["richtlijnen/formulieren/button/README"]} />
+
+## Deze documentatie heeft nu een eigen pagina
+
+<FragmentRedirect id="toetsenbordbediening-van-een-button">
+  [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
+</FragmentRedirect>
+<FragmentRedirect id="verstuur-een-formulier-niet-automatisch-na-het-wijzigen-of-invullen-van-een-formulierveld">
+  [Verstuur een formulier niet automatisch na het wijzigen of invullen van een
+  formulierveld](/richtlijnen/formulieren/buttons/niet-automatisch-versturen).
+</FragmentRedirect>
+<FragmentRedirect id="plaatsing-van-een-button-binnen-een-formulier">
+  [Plaatsing van een button binnen een formulier](/richtlijnen/formulieren/buttons/plaatsing).
+</FragmentRedirect>
+<FragmentRedirect id="duidelijk-buttontekst-die-beschrijft-wat-de-button-doet">
+  [Duidelijk buttontekst die beschrijft wat de button doet](/richtlijnen/formulieren/buttons/duidelijk-buttontekst).
+</FragmentRedirect>
+<FragmentRedirect id="de-toegankelijke-naam-van-een-button">
+  [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
+</FragmentRedirect>
+<FragmentRedirect id="afbeeldingen-als-buttons">
+  [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button).
+</FragmentRedirect>
+<FragmentRedirect id="disabled-submitbuttons">
+  [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
+</FragmentRedirect>
+
+<FooterInfo />

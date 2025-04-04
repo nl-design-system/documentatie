@@ -1,0 +1,55 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import { Link } from "@utrecht/component-library-react/dist/css-module";
+
+<Guideline
+  appearance="do"
+  title="Maak het label goed leesbaar door voldoende contrast."
+  description={
+    <>
+      Dit voorbeeld heeft{" "}
+      <Link href="/contrast/?color=%23006FA1&background-color=%23ffffff">een contrast van 5.54:1</Link>.
+    </>
+  }
+>
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-form-label-color": "#006FA1",
+    }}
+  >
+    {() => (
+      <>
+        <label htmlFor="naam1">Uw naam</label>
+        <input type="text" id="naam1" autoComplete="name" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance="dont"
+  title="Maak het label slecht leesbaar door onvoldoende contrast."
+  description={
+    <>
+      Dit voorbeeld heeft{" "}
+      <Link href="/contrast/?color=%23999999&background-color=%23f8f5f1">een contrast van 2.62:1</Link>.
+    </>
+  }
+>
+  <Canvas
+    language="html"
+    designTokens={{
+      "--utrecht-form-label-color": "#999999",
+    }}
+  >
+    {() => (
+      <>
+        <label htmlFor="naam2">Uw naam</label>
+        <input type="text" id="naam2" autoComplete="name" />
+      </>
+    )}
+  </Canvas>
+</Guideline>

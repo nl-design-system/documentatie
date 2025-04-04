@@ -1,0 +1,72 @@
+---
+title: WCAG-succescriterium 2.4.7 Focus zichtbaar
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 2.4.7 Focus zichtbaar
+pagination_label: 2.4.7 Focus zichtbaar
+description: Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Dit kan bijvoorbeeld door het gebruik van een focusring (outline).
+slug: 2.4.7
+keywords:
+  - WCAG
+  - Toetsenbord
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_2.4.7-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
+  {"WCAG-succescriterium 2.4.7 Focus zichtbaar"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+## Gerelateerde NL Design System-richtlijn
+
+Formulieren - Visueel Ontwerp: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar).
+
+## Bronnen
+
+[<span lang="en">A guide to designing accessible, WCAG-conformant focus indicators</span>](https://www.sarasoueidan.com/blog/focus-indicators/#wcag-2.1-and-wcag-2.2-focus-indicator-accessibility-requirements) van Sara Soueidan.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik de tab-toets om te controleren of links, buttons, invoervelden en checkboxes duidelijk zichtbaar de focus aangeven. Controleer de focus van radiobuttons en tabs met de pijltjestoetsen.
+
+Als in de CSS de outline is verwijderd (`outline: none;`), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft, bijvoorbeeld door het toevoegen een CSS-border.
+
+Additionele testen:
+
+- de [skip link](/wcag/2.4.1) wordt zichtbaar als deze toetsenbord krijgt.
+- de outline (of het alternatief) is goed zichtbaar in dark- en in light-mode, als deze optie aangeboden wordt op de webpagina.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.7 Focus Visible</span>](https://www.w3.org/TR/WCAG22/#focus-visible).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.7 Focus zichtbaar](https://www.w3.org/Translations/WCAG22-nl/#focus-zichtbaar).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.7 Focus Visible</span>](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.7 Focus Visible</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

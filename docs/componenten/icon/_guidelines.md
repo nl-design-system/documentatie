@@ -44,7 +44,7 @@ Probeer zoveel mogelijk iconen van een tekstlabel te voorzien. Wanneer een (inte
 
 ### Contrast {#contrast}
 
-Zorg voor functionele iconen dat deze voldoende contrast hebben met de achtergrond en omliggende kleuren. Zie hiervoor [WCAG techniek G207](https://www.w3.org/WAI/WCAG21/Techniques/general/G207) en [succescriterium 1.4.11, contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#contrast-van-niet-tekstuele-content). Er dient een minimale contrastverhouding van 3:1 ten opzichte van onderliggende en aangrenzende kleuren te zijn.
+Zorg voor functionele iconen dat deze voldoende contrast hebben met de achtergrond en omliggende kleuren. Zie hiervoor [WCAG techniek G207](https://www.w3.org/WAI/WCAG21/Techniques/general/G207) en het [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11). Er dient een minimale contrastverhouding van 3:1 ten opzichte van onderliggende en aangrenzende kleuren te zijn.
 
 Puur decoratieve iconen hoeven niet aan deze eis te voldoen.
 

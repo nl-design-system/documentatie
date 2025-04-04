@@ -1,13 +1,13 @@
 import type { Props } from '@theme/NavbarItem/HtmlNavbarItem';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 
 export default function HtmlNavbarItem({
   value,
   className,
   mobile = false,
   isDropdownItem = false,
-}: Props): React.Element {
+}: Props): ReactElement {
   const Comp = isDropdownItem ? 'li' : 'div';
   return (
     <Comp

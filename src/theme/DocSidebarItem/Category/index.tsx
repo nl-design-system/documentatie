@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { translate } from '@docusaurus/Translate';
 import { Collapsible, ThemeClassNames, useCollapsible, usePrevious, useThemeConfig } from '@docusaurus/theme-common';
 import {
@@ -12,7 +12,8 @@ import type { Props } from '@theme/DocSidebarItem/Category';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import { Button, Icon } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { type ComponentProps, useEffect, useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import type { ComponentProps, ReactElement } from 'react';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -93,7 +94,7 @@ export default function DocSidebarItemCategory({
   level,
   index,
   ...props
-}: Props): React.Element {
+}: Props): ReactElement {
   const { items, label, collapsible, className, href } = item;
   const isMainCategory = className === 'sidebar__main-category';
   const {
@@ -155,7 +156,7 @@ export default function DocSidebarItemCategory({
               'menu__link--sublist': collapsible,
               'menu__link--sublist-caret': !href && collapsible,
             })}
-            href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
+            href={collapsible ? (hrefWithSSRFallback ?? '#') : hrefWithSSRFallback}
             {...props}
           >
             {label}

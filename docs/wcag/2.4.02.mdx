@@ -1,0 +1,89 @@
+---
+title: WCAG-succescriterium 2.4.2 Paginatitel
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 2.4.2 Paginatitel
+pagination_label: WCAG-succescriterium 2.4.2 Paginatitel
+description: Webpagina's hebben titels die het onderwerp of doel beschrijven.
+slug: 2.4.2
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_2.4.2-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 2.4.2 Paginatitel"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+Deze titels staan in de `<head>` sectie van de HTML-code, in het element `<title>`.
+
+Maak deze tekst eenduidig en beschrijvend, zodat je weet welke pagina van welke website je bezoekt. Ook informatie over foutmeldingen en zoekresultaten hoort in de titel thuis.
+
+Deze tekst staat in de browser-tab, waardoor je makkelijk kunt herkennen welke website er onder welke tab staat. Begin daarom niet met de sitenaam, maar met het onderwerp. Anders lijken alle titels op elkaar wanneer je maar een deel van de tekst ziet in de tab.
+
+Voorbeelden van goede titels:
+
+- 'Gemeente Voorbeeld', voor de voorpagina.
+- 'Contact - Gemeente Voorbeeld', voor de contactpagina.
+- '12 zoekresultaten voor rijbewijs - Gemeente Voorbeeld', voor de zoekpagina.
+- 'Stap 2 van 3: Uw gegevens - Rijbewijs verlengen - Gemeente Voorbeeld', voor een meerstappenformulier.
+- '2 foutmeldingen - Uw vraag - Gemeente Voorbeeld', voor een formulier met foutmeldingen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Meerdere stappen: [Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt](/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen).
+- Formulieren - Foutmeldingen: [Geef feedback aan screenreadergebruikers](/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback).
+- Formulieren - Bevestigingspagina: [Maak de succesmelding toegankelijk voor alle gebruikers](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding).
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+- Controleer of er een `title`-element in de `head` aanwezig is en deze tekst bevat.
+- Controleer de taal van de titel, is deze hetzelfde als die van de pagina?
+- Controleer of de titel de pagina beschrijft, met eenduidige liefst unieke tekst binnen de website.
+- Zijn er iframes op de pagina? Controleer of deze ook een goede titel bevatten.
+
+## Veelgemaakte fouten
+
+### Fout: de titels van alle pagina's zijn hetzelfde
+
+Als alle `title`-elementen op een website dezelfde tekst bevatten (bijvoorbeeld de sitenaam) geeft dit geen goede informatie over op welke pagina je je bevindt.
+
+### Fout: de tekst van een titel wordt niet vertaald door een plugin
+
+Als de titel wordt gegenereerd door een plugin, kan het voorkomen dat de plugin de taal van de website niet volledig ondersteund. Of het kan zijn dat de taal niet goed is ingesteld. Controleer altijd de settings van een plugin en ook de uitvoer: zijn alle gegenereerde teksten, dus ook de titel, in de taal van de website.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.2 Page Titled</span>](https://www.w3.org/TR/WCAG22/#page-titled).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG22-nl/#paginatitel).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.2 Page Titled</span>](https://www.w3.org/WAI/WCAG22/quickref/#page-titled).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.2 Page Titled</span>](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

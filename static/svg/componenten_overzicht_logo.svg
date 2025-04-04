@@ -1,0 +1,45 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="component-illustration">
+<g clip-path="url(#clip0_1606_2760)">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+<g clip-path="url(#clip1_1606_2760)">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+<rect width="2" height="540" transform="translate(69)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(151)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(233)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(315)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(397)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(479)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(561)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(643)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(725)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(807)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(889)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 64)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 146)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 228)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 310)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 392)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 474)" fill="var(--component-illustration-grid-color, #EEE)"/>
+</g>
+<g clip-path="url(#clip2_1606_2760)">
+<line x1="2" y1="-2" x2="231.287" y2="-2" transform="matrix(0.713689 0.700463 -0.297665 0.95467 233 190.591)" stroke="var(--component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
+<line x1="2" y1="-2" x2="231.287" y2="-2" transform="matrix(0.713689 -0.700463 0.297665 0.95467 233.508 354)" stroke="var(--component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
+</g>
+<path d="M237 189H396C397.105 189 398 189.895 398 191V352H235V191C235 189.895 235.895 189 237 189Z" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<rect x="442" y="250" width="240" height="40" rx="20" fill="var(--component-illustration-color, #666)"/>
+</g>
+<defs>
+<clipPath id="clip0_1606_2760">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+<clipPath id="clip1_1606_2760">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+<clipPath id="clip2_1606_2760">
+<path d="M233 191C233 188.791 234.791 187 237 187H396C398.209 187 400 188.791 400 191V354H233V191Z" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+</defs>
+</symbol>
+<use href="#component-illustration"/>
+</svg>

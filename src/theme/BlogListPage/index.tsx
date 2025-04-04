@@ -6,10 +6,10 @@ import BlogPostItems from '@theme/BlogPostItems';
 import SearchMetadata from '@theme/SearchMetadata';
 import { Heading1 } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React from 'react';
+import type { ReactElement } from 'react';
 import BlogLayout from '../BlogLayout';
 
-function BlogListPageMetadata(props: Props): React.Element {
+function BlogListPageMetadata(props: Props): ReactElement {
   const { metadata } = props;
   const {
     siteConfig: { title: siteTitle },
@@ -25,13 +25,14 @@ function BlogListPageMetadata(props: Props): React.Element {
   );
 }
 
-function BlogListPageContent(props: Props): React.Element {
+function BlogListPageContent(props: Props): ReactElement {
   const { metadata, items, sidebar } = props;
   return (
     <BlogLayout
       sidebar={sidebar}
       breadcrumbs={[
         {
+          href: '#',
           label: metadata.blogTitle,
         },
       ]}
@@ -43,7 +44,7 @@ function BlogListPageContent(props: Props): React.Element {
   );
 }
 
-export default function BlogListPage(props: Props): React.Element {
+export default function BlogListPage(props: Props): ReactElement {
   return (
     <HtmlClassNameProvider className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogListPage)}>
       <BlogListPageMetadata {...props} />

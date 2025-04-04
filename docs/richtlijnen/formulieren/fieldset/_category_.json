@@ -1,0 +1,10 @@
+{
+  "label": "Fieldsets",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/fieldset/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

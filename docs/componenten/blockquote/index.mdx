@@ -6,24 +6,39 @@ sidebar_label: Blockquote
 pagination_label: Blockquote
 description: Toont een citaat dat afwijkt van de hoofdtekst.
 slug: /blockquote
-sidebar_custom_props:
-  illustration: BlockquoteSketch
+keywords:
+  - blockquote
+  - citaat
+  - cite
+  - citeren
+  - excerpt
+  - extract
+  - fragment
+  - quotation
+  - quote
+  - snippet
+  - tekstfragment
+  - uitspraak
 ---
 
 {/* @license CC0-1.0 */}
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { Backlog, DefinitionOfDone, Implementations, Introduction } from "../../../src/components/ComponentPage";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "Blockquote";
 export const description = "Toont een citaat dat afwijkt van de hoofdtekst.";
-export const illustration = "BlockquoteSketch";
 export const issueNumber = 73;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
-<Introduction component={component} headingLevel={1} description={description} illustration={illustration} />
+<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
@@ -33,6 +48,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Levende Backlog
+## Help component verbeteren
 
-<Backlog component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={3} />

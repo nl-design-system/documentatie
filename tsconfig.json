@@ -2,8 +2,16 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "baseUrl": ".",
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "@docs/*": ["./docs/*"],
+      "@site/*": ["./*"],
+      "@theme/*": ["./src/theme/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
+  "exclude": ["**/node_modules/*"]
 }

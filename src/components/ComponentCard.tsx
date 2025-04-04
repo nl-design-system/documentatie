@@ -1,11 +1,11 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
-import style from './ComponentCard.module.css';
 import { ComponentIllustration } from './ComponentIllustration';
 import { EstafetteBadge } from './EstafetteBadge';
+import './ComponentCard.css';
 
 interface ComponentCardProps {
   illustration?: string;
@@ -17,7 +17,6 @@ interface ComponentCardProps {
 }
 
 export const ComponentCard = ({
-  illustration = 'TodoSketch',
   name,
   description,
   relayStep,
@@ -27,19 +26,15 @@ export const ComponentCard = ({
   return (
     <Card
       appearance="large"
-      className={clsx(style['component-card'], !relayStep && style['component-card--suggestion'])}
+      className={clsx('component-card', !relayStep && 'component-card--suggestion')}
       component="section"
     >
       <CardIllustration>
-        <ComponentIllustration
-          component={illustration}
-          relayStep={relayStep}
-          description={`Schets van de ${name} component met de ${relayStep} kleur`}
-        />
+        <ComponentIllustration relayStep={relayStep} description={`Schets van de ${name} component`} name={name} />
       </CardIllustration>
       <CardContent>
         <div>
-          <Heading level={headingLevel} className={clsx(style['component-card__title'])}>
+          <Heading level={headingLevel} className="component-card__title">
             {name}
           </Heading>
           {relayStep && (
@@ -52,7 +47,7 @@ export const ComponentCard = ({
         {href && (
           <Paragraph>
             <Link className="utrecht-link" to={href}>
-              Bekijk <span className={clsx(style['w'])}>{name}</span> component
+              Bekijk <span className="w">{name}</span> component
             </Link>
           </Paragraph>
         )}

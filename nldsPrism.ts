@@ -7,6 +7,12 @@ const nldsPrismTheme: PrismTheme = {
   },
   styles: [
     {
+      types: ['maybe-class-name'],
+      style: {
+        color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))',
+      },
+    },
+    {
       types: ['comment'],
       style: {
         color: 'var(--nlds-code-block-comment-color)',

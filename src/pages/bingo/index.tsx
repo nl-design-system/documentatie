@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link';
+import { Link } from '@site/src/components/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Bingo } from '@site/src/components/Bingo';
 import Layout from '@theme/Layout';
@@ -10,7 +10,6 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();

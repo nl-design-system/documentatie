@@ -1,0 +1,10 @@
+{
+  "label": "Foutmeldingen",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/error/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

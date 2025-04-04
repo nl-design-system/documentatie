@@ -1,3 +1,4 @@
+import { useLocation } from '@docusaurus/router';
 import {
   Button,
   ButtonGroup,
@@ -12,7 +13,7 @@ import {
   Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -26,6 +27,9 @@ interface NewsletterSignUpProps {
   interests: Array<string>;
   thanksPage: string;
   workAreasId: string;
+  privacyPolicyId: string;
+  language?: { value: string; id: string };
+  submitText: string;
 }
 
 export const NewsletterSignUp = ({
@@ -38,6 +42,9 @@ export const NewsletterSignUp = ({
   interestsId = '',
   interests = [],
   workAreasId = '',
+  privacyPolicyId = '',
+  language,
+  submitText = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -45,6 +52,11 @@ export const NewsletterSignUp = ({
     formState: { errors },
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
+  const IS_ENGLISH = language?.value === '2';
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const prefillEmail = params.get('prefillEmail');
+  const prefillName = params.get('prefillName');
 
   return (
     <form
@@ -59,7 +71,7 @@ export const NewsletterSignUp = ({
     >
       <FormField type="email">
         <Paragraph>
-          <FormLabel htmlFor={`id-${emailFieldId}`}>E-mailadres</FormLabel>
+          <FormLabel htmlFor={`id-${emailFieldId}`}>{IS_ENGLISH ? 'Email address ' : 'E-mailadres'}</FormLabel>
         </Paragraph>
         {errors[emailFieldId] && <FormFieldErrorMessage>{errors[emailFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
@@ -68,15 +80,18 @@ export const NewsletterSignUp = ({
             name={emailFieldId}
             type="email"
             autoComplete="email"
+            defaultValue={prefillEmail}
             aria-required="true"
             {...register(`${emailFieldId}`, {
               required: {
                 value: true,
-                message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+                message: IS_ENGLISH
+                  ? 'This field is required, but it was left empty.'
+                  : 'Dit veld is verplicht, maar het is niet ingevuld.',
               },
               pattern: {
                 value: /\S+@\S+\.\S+/,
-                message: 'Dit is geen correct emailadres.',
+                message: IS_ENGLISH ? 'This is not a valid email address.' : 'Dit is geen correct emailadres.',
               },
             })}
             invalid={!!errors[emailFieldId]}
@@ -86,7 +101,7 @@ export const NewsletterSignUp = ({
 
       <FormField type="text">
         <Paragraph>
-          <FormLabel htmlFor={firstNameFieldId}>Naam</FormLabel>
+          <FormLabel htmlFor={firstNameFieldId}>{IS_ENGLISH ? 'Name' : 'Naam'}</FormLabel>
         </Paragraph>
         {errors[firstNameFieldId] && <FormFieldErrorMessage>{errors[firstNameFieldId].message}</FormFieldErrorMessage>}
         <Paragraph>
@@ -94,12 +109,15 @@ export const NewsletterSignUp = ({
             id={firstNameFieldId}
             name={firstNameFieldId}
             type="text"
+            defaultValue={prefillName}
             autoComplete="given-name"
             aria-required="true"
             {...register(`${firstNameFieldId}`, {
               required: {
                 value: true,
-                message: 'Dit veld is verplicht, maar het is niet ingevuld.',
+                message: IS_ENGLISH
+                  ? 'This field is required, but it was left empty.'
+                  : 'Dit veld is verplicht, maar het is niet ingevuld.',
               },
             })}
             invalid={!!errors[firstNameFieldId]}
@@ -110,23 +128,13 @@ export const NewsletterSignUp = ({
       {orgId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={orgId}>Organisatie</FormLabel>
+            <FormLabel htmlFor={orgId}>
+              {IS_ENGLISH ? 'Organisation (not required)' : 'Organisatie (niet verplicht)'}
+            </FormLabel>
           </Paragraph>
           {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
-            <Textbox
-              id={orgId}
-              name={orgId}
-              type="text"
-              aria-required="true"
-              {...register(`${orgId}`, {
-                required: {
-                  value: true,
-                  message: 'Dit veld is verplicht, maar het is niet ingevuld.',
-                },
-              })}
-              invalid={!!errors[orgId]}
-            />
+            <Textbox id={orgId} name={orgId} type="text" />
           </Paragraph>
         </FormField>
       )}
@@ -162,9 +170,51 @@ export const NewsletterSignUp = ({
         </FormField>
       )}
 
+      {privacyPolicyId && (
+        <FormField type="text">
+          <FormFieldDescription id={`${privacyPolicyId}-description`}>
+            {IS_ENGLISH ? (
+              <p>
+                The <a href="/privacy-policy">privacy policy</a> of NL Design System applies to our activities.
+              </p>
+            ) : (
+              <p>
+                Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
+                toepassing.
+              </p>
+            )}
+          </FormFieldDescription>
+          <FormField type="checkbox">
+            <Checkbox
+              value="1"
+              id={`${privacyPolicyId}-1`}
+              aria-describedby={`${privacyPolicyId}-description`}
+              aria-required="true"
+              {...register(`${privacyPolicyId}[]`, {
+                required: {
+                  value: true,
+                  message: IS_ENGLISH
+                    ? 'You can only register if you agree with the privacy policy.'
+                    : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
+                },
+              })}
+              invalid={!!errors[`${privacyPolicyId}[]`]}
+            />
+            <FormLabel htmlFor={`${privacyPolicyId}-1`}>
+              {IS_ENGLISH
+                ? 'I agree to the use of my data in accordance with the privacy policy'
+                : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring'}
+            </FormLabel>
+          </FormField>
+          {errors[privacyPolicyId] && <FormFieldErrorMessage>{errors[privacyPolicyId].message}</FormFieldErrorMessage>}
+        </FormField>
+      )}
+
+      {language?.id && <input type="hidden" name={language.id} value={language.value} />}
+
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">
-          Aanmelden
+          {submitText ? submitText : IS_ENGLISH ? 'Sign up' : 'Aanmelden'}
         </Button>
       </ButtonGroup>
 
@@ -185,5 +235,3 @@ export const NewsletterSignUp = ({
     </form>
   );
 };
-
-export default NewsletterSignUp;

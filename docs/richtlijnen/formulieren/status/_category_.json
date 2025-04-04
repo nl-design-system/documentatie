@@ -1,0 +1,10 @@
+{
+  "label": "Status",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/formulieren/status/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

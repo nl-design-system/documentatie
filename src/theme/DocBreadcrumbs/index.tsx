@@ -1,9 +1,9 @@
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import { useSidebarBreadcrumbs } from '@docusaurus/theme-common/internal';
 import { BreadcrumbNav } from '@site/src/components/BreadcrumbNav';
-import React from 'react';
+import type { ReactElement } from 'react';
 
-export default function DocBreadcrumbs(): React.Element | null {
+export default function DocBreadcrumbs(): ReactElement | null {
   const sidebarBreadcrumbs =
     useSidebarBreadcrumbs()?.map((item) => {
       if (item.type === 'category') {

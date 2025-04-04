@@ -1,0 +1,115 @@
+---
+title: WCAG-succescriterium 2.4.6 Koppen en labels
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 2.4.6 Koppen en labels
+pagination_label: WCAG-succescriterium 2.4.6 Koppen en labels
+description: Koppen en labels beschrijven het onderwerp of het doel.
+slug: 2.4.6
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_2.4.6-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
+  {"WCAG-succescriterium 2.4.6 Koppen en labels"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+### Koppen
+
+Koppen vormen de ruggengraat van de inhoud van een pagina. Aan de hand van koppen kan een gebruiker snel wegwijs worden in de inhoud van een webpagina.
+
+Het onderwerp van een webpagina staat in het kopje met niveau 1 `<h1>`. Door één duidelijke h1 kan de gebruiker snel beslissen: is dit informatie die ik wil lezen, is dit waar ik naar op zoek ben. Verdeel de overige tekst met de koppen `<h2>` tot en met `<h6>`, afhankelijk van de structuur van de inhoud. Vaak zijn alleen koppen met niveau 1 tot en met 3 nodig.
+
+Screenreadergebruikers kunnen een lijst van koppen oproepen en snel naar een kopje navigeren. Dan is het belangrijk dat een kopje de inhoud eronder goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina.
+
+![Screenshot web rotor VoiceOver van de voorpagina van deze website](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png)
+
+Gebruik een kopje daarom niet enkel en alleen om tekst groot en vet te maken. Maar beschrijf in de koppen de inhoud eronder, als kleine samenvatting. Dit helpt de scannende gebruikers om snel de informatie te vinden die ze zoeken.
+
+Dit succescriterium gaat niet alleen over HTML-koppen, maar ook over andere koppen zoals in tabellen. De tabelkop `<th>` voor rijen en kolommen moeten ook duidelijk zijn.
+
+Hou de tekst ook kort, krachtig en <span lang="en">_to-the-point_</span>. Het is niet de bedoeling een hele paragraaf tekst als kopje aan te duiden.
+
+**Let op**: Dit succescriterium gaat over de **tekst** van koppen.
+
+- WCAG-succescriterium [1.3.1 Info en relaties](/wcag/1.3.1) gaat over correct gebruik van HTML om koppen aan te geven.
+- WCAG-succescriterium [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2) legt uit dat alle inhoud die bij een kopje hoort, in de code onder het kopje moet staan.
+- WCAG-succescriterium [2.4.2 Paginatitel](/wcag/1.4.2) gaat over de paginatitel, in het element `<title>` in de `<head>` sectie van de HTML-code
+- Alleen [WCAG-succescriterium 2.4.10 Paragraafkoppen](/wcag/2.4.10) op niveau **AAA** vereist dat koppen gestructureerd zijn. Dit draagt in een belangrijke mate bij aan een goed begrip van de inhoud voor screenreadergebruikers en zoekmachines.
+
+### Labels
+
+Duidelijke labels bij een invoerveld zijn voor alle gebruikers belangrijk. Wat moet je precies invullen? Is een veld verplicht of niet-verplicht in te vullen? Moet ik alleen mijn achternaam invullen of ook mijn voornaam?
+
+De richtlijnen over [Labels](/richtlijnen/formulieren/labels) en [Voorkom fouten](/richtlijnen/formulieren/voorkom-fouten) gaan hier uitgebreid op in.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren: [Labels](/richtlijnen/formulieren/labels).
+- Formulieren: [Voorkom fouten](/richtlijnen/formulieren/voorkom-fouten).
+
+## Bronnen
+
+- [<span lang="en">Accessible heading structure</span>](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) van Rian Rietveld voor the A11y Project.
+- [Headings voor betekenisvol opmaken](https://www.internetacademy.nl/ebooks/handboek-webcontent/headings-voor-betekenisvol-opmaken) in het handboek "Handboek webcontent: meer focus, minder content" van de Internet Academy.
+- [<span lang="en">Heading structures are tables of contents</span>](https://hidde.blog/heading-structures-are-tables-of-contents/) van Hidde de Vries.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+Of een kopje of label betekenisvol is, kun je alleen bepalen door de webpagina te lezen en zo te beoordelen of een kopje of label de lading dekt.
+
+Controleer of teksten betekenisvol en duidelijk zijn voor:
+
+- Koppen.
+- Labels (inclusief de placeholder).
+- Kolomkoppen.
+- Alle andere content die eruit ziet als een kopje of een label.
+
+Beschrijft een kopje de inhoud die eronder valt?
+
+Controleer ook koppen en labels die verborgen zijn voor het zicht, maar wel voorgelezen worden door screenreaders.
+
+Zijn er geen labels of koppen op de webpagina, dan is dit succescriterium niet van toepassing.
+
+Een goed hulpmiddel om een overzicht van de koppenstructuur te krijgen is de browseradd-on HeadingsMap:
+
+- [HeadingsMap voor Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi).
+- [HeadingsMap voor Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/).
+- [HeadingsMap voor Edge](https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo).
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.6 Headings and Labels</span>](https://www.w3.org/TR/WCAG22/#headings-and-labels).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG22-nl/#koppen-en-labels).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.6 Headings and Labels</span>](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.6 Headings and Labels</span>](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

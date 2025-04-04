@@ -13,7 +13,7 @@ Wanneer een component zich gedraagt als zichzelf.
 - Button
 - Link
 - Avatar: Niet interactief
-- Card: Card als geheel niet iteractief, de card kan wel meerdere interactieve elementen bevatten.
+- Card: Card als geheel niet interactief, de card kan wel meerdere interactieve elementen bevatten.
 - Tabs
 
 **Component as button**

@@ -1,13 +1,22 @@
-import { AccordionProvider, Heading, Link, LinkList, LinkListLink, Paragraph } from '@utrecht/component-library-react';
+import {
+  AccordionProvider,
+  Heading,
+  Link,
+  LinkList,
+  LinkListLink,
+  Paragraph,
+  UnorderedList,
+  UnorderedListItem,
+} from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import React from 'react';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
-import style from './ComponentPage.module.css';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
+import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
-import { COMPONENT_STATES, getRelayBoardDescription, toKebabCase } from '../utils';
+import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
+import './ComponentPage.css';
 
 type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
 type PROJECT_ID =
@@ -44,15 +53,6 @@ interface Component {
   }[];
 }
 
-const previousRelayStep = {
-  HELP_WANTED: 'UNKNOWN',
-  COMMUNITY: 'HELP_WANTED',
-  CANDIDATE: 'COMMUNITY',
-  HALL_OF_FAME: 'CANDIDATE',
-};
-
-const relayProjectIds = Object.keys(previousRelayStep);
-
 interface ComponentPageSectionProps {
   component: Component;
   headingLevel: number;
@@ -68,15 +68,21 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
       <AccordionProvider
         appearance=""
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx(style['definition-of-done'], style[`definition-of-done--${toKebabCase(project.title)}`]),
+          className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
           headingLevel: headingLevel,
           expanded: false,
-          label: `${project.title} - ${project.progress.value} van ${project.progress.max}`,
-          body: (
+          label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
+          body: project && (
             <>
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
-                  <TaskListItem checked={checked} title={name} key={id} description={getRelayBoardDescription(id)} />
+                  <TaskListItem
+                    headingLevel={headingLevel + 1}
+                    checked={checked}
+                    title={name}
+                    key={id}
+                    description={getRelayBoardDescription(id)}
+                  />
                 ))}
               </TaskList>
               <Paragraph>
@@ -95,7 +101,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
 export const Implementations = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const implementations = component && component.projects.filter((project) => !relayProjectIds.includes(project.id));
   return component && implementations.length ? (
-    <CardGroup appearance="large" className={clsx(style['implementation-card-group'])}>
+    <CardGroup appearance="large" className="implementation-card-group">
       {implementations
         .sort((a, b) => {
           const aTodo = a.progress.max - a.progress.value;
@@ -104,7 +110,9 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           return aTodo === bTodo ? a.title.localeCompare(b.title) : aTodo - bTodo;
         })
         .map((project) => {
-          const { value: alias } = project.tasks.find(({ name }) => name === 'Naam');
+          const task = project.tasks.find(({ name }) => name === 'Naam');
+
+          const alias = task?.value;
 
           const urlMap = new Map([
             ['Figma URL', { brand: 'figma', desciption: `${alias} in Figma` }],
@@ -119,7 +127,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           );
 
           return (
-            <Card key={project.title} className={clsx(style['implementation-card'])}>
+            <Card key={project.title} className="implementation-card">
               <CardContent>
                 <Heading level={headingLevel}>{project.title}</Heading>
                 <Paragraph>
@@ -130,16 +138,18 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
-                {links.length && (
+                {links.length > 0 && (
                   <>
                     <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
                     <LinkList>
                       {links.map((item) => {
-                        const { brand, desciption } = urlMap.get(item.name);
-                        return (
+                        const url = urlMap.get(item.name);
+                        return url ? (
                           <LinkListLink key={item.id} href={item.value}>
-                            <BrandIcon brand={brand} /> {desciption}
+                            <BrandIcon brand={url.brand} /> {url.desciption}
                           </LinkListLink>
+                        ) : (
+                          <></>
                         );
                       })}
                     </LinkList>
@@ -155,14 +165,41 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
   );
 };
 
-export const Backlog = ({ component }: ComponentPageSectionProps) =>
-  component && (
-    <Paragraph>
-      De {component.title} component staat bij NL Design System in de{' '}
-      <Link href={component.backlog}>levende backlog</Link>, heb je een concrete eisen of wensen voor dit component?
-      Laat het ons dan daar weten!
-    </Paragraph>
+export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) => {
+  const DISCUSSION_URL_COLUMN_ID = 'PVTF_lADOBGdlVM4AdX8lzgcig7o';
+  const project = component?.projects.find((project) => project.id === 'HELP_WANTED');
+  const DiscussionUrl = project?.tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID).value;
+
+  return (
+    component && (
+      <>
+        <Paragraph>
+          We vinden het belangrijk dat de component {component.title} goed te gebruiken is door iedereen. Help je mee?
+        </Paragraph>
+        <UnorderedList>
+          {DiscussionUrl ? (
+            <UnorderedListItem>
+              Vul de <Link href={DiscussionUrl}>GitHub Discussion</Link> aan met de eisen en wensen voor jouw project of
+              organisatie.
+            </UnorderedListItem>
+          ) : (
+            <UnorderedListItem>
+              <Link href="https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions">
+                Start een GitHub Discussion voor {component.title}
+              </Link>{' '}
+              en voeg de eisen en wensen voor jouw project of organisatie toe.
+            </UnorderedListItem>
+          )}
+          <UnorderedListItem>
+            Draag bij aan de voortang van {component.title} door te zorgen dat deze aan meer checkpoints van de{' '}
+            <Link href="#definition-of-done">Definition of Done</Link> voldoet. Deze houden we bij in de projectborden
+            bij de <Link href={component.backlog}>publieke GitHub Backlog</Link>.{' '}
+          </UnorderedListItem>
+        </UnorderedList>
+      </>
+    )
   );
+};
 
 interface IntroductionProps extends ComponentPageSectionProps {
   description?: string;
@@ -175,9 +212,9 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
   return (
     component && (
       <>
-        <Heading level={headingLevel}>
-          {component.title} {relayStep && <EstafetteBadge state={relayStep} />}
-        </Heading>
+        <InlineHeadingGroup level={headingLevel} suffix={relayStep && <EstafetteBadge state={relayStep} />}>
+          {component.title}
+        </InlineHeadingGroup>
         <Paragraph lead>{description}</Paragraph>
       </>
     )

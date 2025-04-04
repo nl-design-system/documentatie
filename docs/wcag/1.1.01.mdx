@@ -1,0 +1,109 @@
+---
+title: WCAG-succescriterium 1.1.1 Niet-tekstuele content
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1.1.1 Niet-tekstuele content
+pagination_label: WCAG-succescriterium 1.1.1 Niet-tekstuele content
+description: Zorg bij niet-tekstuele content voor een tekstalternatief.
+slug: 1.1.1
+keywords:
+  - WCAG
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.1.1-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
+  {"WCAG-succescriterium 1.1.1 Niet-tekstuele content"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl: [Iconen](/richtlijnen/stijl/iconen).
+- Formulieren - Buttons: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
+
+## Bronnen
+
+- De [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/) van 200 OK: wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## Hoe te testen
+
+### Alternatieve teksten op afbeeldingen
+
+Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+
+Check voor afbeeldingen:
+
+- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn:
+  ```html
+  <img src="img-url" alt="" />
+  ```
+  of met een alt-tekst
+  ```html
+  <img src="img-url" alt="wit konijn" />
+  ```
+- als een afbeelding betekenisvol is, moet de alt-tekst het doel ervan beschrijven.
+- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`. Een alt-tekst toevoegen voor een afbeelding die decoratief is leidt niet tot afkeuring, een afbeelding kan naast tekst ook emotie overdragen. Lees hierover, de post van [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) van Léonie Watson en het bericht van [Eric Eggert op Mastodon](https://yatil.social/@yatil/111974572979919177).
+- het alt-attribuut kan leeg zijn als de betekenis van de afbeelding vlak bij de afbeelding in tekst staat.
+- bevat een afbeelding tekst, die informatie toevoegt aan de content, dan moet deze tekst opgenomen zijn in de alt-tekst.
+
+Controleer voor afbeeldingen in links en buttons:
+
+- de alt-tekst van een afbeelding in een link moet het **doel van de link** beschrijven.
+- de alt-tekst van een afbeelding in een button moet **de actie** beschrijven.
+- als zowel de inhoud van de afbeelding als het doel of de actie even belangrijk zijn, moet de alternatieve tekst **beide** beschrijven. Bijvoorbeeld bij een link op een logo.
+- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`, maar de toegankelijke naam van een link of button moet volledig betekenisvol zijn. Bijvoorbeeld:
+
+```html
+<a href="url">
+  Meer informatie over de intocht van Sinterklaas
+  <img src="pijltje-rechts.svg" alt="" />
+</a>
+```
+
+Niet doen:
+
+```html
+<!-- Foute code, niet gebruiken -->
+<a href="url">
+  <img src="iDEAL.svg" alt="" />
+</a>
+```
+
+### Benoem waar een video of audio over gaat
+
+Geef tekstalternatief voor een video of audio zodat de bezoeker weet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen. Dit door bijvoorbeeld een `title`-attribuut te geven aan de iframe-embed. Of door het onderwerp te beschrijven in de begeleidende tekst of een kopje erboven.
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.1.1 Non-text Content</span>](https://www.w3.org/TR/WCAG22/#non-text-content).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.1.1 Niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#tekstalternatieven).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.1.1 Non-text Content</span>](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.1.1: Non-text Content</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

@@ -6,7 +6,7 @@ Er zijn eindeloos veel varianten van de tabel, daarom is het niet mogelijk op é
 
 ## Duidelijke koppen {#duidelijke-koppen}
 
-In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveau's koppen bevatten: kop van de tabel (_caption_), kop van de kolom (_column header_) en kop van de rij (_row header_). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:
+In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveaus koppen bevatten: kop van de tabel (_caption_), kop van de kolom (_column header_) en kop van de rij (_row header_). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:
 
 - `<caption>` voor de kop van de tabel
 - `<th scope="col">` voor de kop van de kolom
@@ -60,7 +60,7 @@ Je geeft met de volgende code aan in welke volgorde de informatie staat:
 
 ## _Responsive_ tabellen {#responsive-tabellen}
 
-Volgens WCAG 1.4.10 moeten pagina's leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:
+Volgens het [WCAG-succescriterium 1.4.10 Reflow](/wcag/1.4.10) moeten pagina's leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:
 
 Techniek 1: de bestaande `table`-HTML niet te tonen als tabel door met CSS een andere `display` te gebruiken voor `table`, `td` en alle andere tabel-elementen. _Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken._ Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.
 
@@ -70,9 +70,9 @@ Techniek 2: HTML aanbieden in twee varianten. Naast de HTML `<table>` element, o
 
 ### Koppen van tabel niet gekoppeld aan datacellen {#koppen-niet-gekoppeld}
 
-Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveau's van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
+Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveaus van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
 
-[WCAG 2.1, 1.3.1](https://www.w3.org/TR/WCAG21/#info-and-relationships) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.
+Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.
 
 #### Kop van de tabel niet gekoppeld {#tabel-kop-niet-gekoppeld}
 
@@ -185,6 +185,6 @@ Je kunt voorkomen dat de _accessibility tree_ anders wordt opgebouwd. Je moet da
 - [MDN: `<table>`: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 - [MDN: `aria-sort`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-sort)
 
-### Relevante WCAG regels {#relevante-wcag-regels}
+### Relevante WCAG-succescriteria {#relevante-wcag-regels}
 
-- [WCAG 1.4.10](https://www.w3.org/TR/WCAG21/#reflow)
+- [1.4.10 Reflow](/wcag/1.4.10)

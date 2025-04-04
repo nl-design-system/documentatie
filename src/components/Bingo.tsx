@@ -1,9 +1,8 @@
 import Head from '@docusaurus/Head';
 import { OrderedList, OrderedListItem } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React from 'react';
 import { useForm } from 'react-hook-form';
-import style from './Bingo.module.css';
+import './Bingo.css';
 
 interface BingoProps {
   items: [
@@ -47,34 +46,34 @@ export const Bingo = ({ items }: BingoProps) => {
   const { register } = useForm();
 
   return (
-    <div className={style['bingo']}>
+    <div className="bingo">
       <Head>
         <meta name="argos" content="false" />
       </Head>
-      <div className={style['bingo__form']}>
+      <div className="bingo__form">
         {bingoNumbers.map((bingoNumber) => (
-          <div className={style['bingo__number']} key={bingoNumber}>
+          <div className="bingo__number" key={bingoNumber}>
             <input
               {...register(`number-${bingoNumber}`)}
               type="checkbox"
-              className={style['bingo__input']}
+              className="bingo__input"
               id={`number-${bingoNumber}`}
               defaultChecked={bingoNumber === 'Free'}
               disabled={bingoNumber === 'Free'}
             />
-            <label htmlFor={`number-${bingoNumber}`} className={style['bingo__label']}>
+            <label htmlFor={`number-${bingoNumber}`} className="bingo__label">
               {bingoNumber}
             </label>
           </div>
         ))}
       </div>
-      <div className={style['bingo_items']}>
+      <div className="bingo_items">
         <OrderedList>
           {items.map((item) => {
             return (
               <OrderedListItem
                 key={`item-${item}`}
-                className={clsx(style['bingo-item'], item === 'Free' && style['bingo-item--checked'])}
+                className={clsx('bingo-item', item === 'Free' && 'bingo-item--checked')}
               >
                 {item}
               </OrderedListItem>

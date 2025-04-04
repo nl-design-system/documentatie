@@ -1,5 +1,5 @@
 ---
-title: Community voor designers
+title: Community voor designers · Designer · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Community
@@ -37,6 +37,7 @@ Neem eens een kijkje in de keuken bij andere teams:
 - [Rijksdienst voor Ondernemend Nederland (RVO) in Figma](<https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&node-id=282%3A5324&mode=design&t=8GzXgFckRTFr0OX6-1>)
 - [Rotterdam Design System in Figma](https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/)
 - [Utrecht Design System in Figma](https://www.figma.com/file/UXIHcIurAD8hyoBWx4hDBV/NLDS---Gemeente-Utrecht---Bibliotheek?type=design&node-id=197%3A664&mode=design&t=QPCkq0xOt8SFquC4-1)
+- [Core Design System in Figma](https://www.figma.com/design/eYIhKsqhuY5Q8xm3UH7MXn/Core-library) van [Justitiële ICT Organisatie](https://www.justitieleictorganisatie.nl)
 
 De volgende Figma projecten zijn nog niet openbaar. Neem contact met de auteurs als je toegang nodig hebt.
 
