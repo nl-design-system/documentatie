@@ -73,7 +73,7 @@
   },
   36186: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => C, component: () => z, contentTitle: () => b, default: () => _, description: () => W, frontMatter: () => A, issueNumber: () => R, metadata: () => x, title: () => G, toc: () => T });
+   n.r(t), n.d(t, { assets: () => C, component: () => N, contentTitle: () => b, default: () => _, description: () => W, frontMatter: () => A, issueNumber: () => R, metadata: () => x, title: () => G, toc: () => T });
    var r = n(52676),
     o = n(40139),
     s = n(37635),
@@ -100,14 +100,14 @@
     const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.h1, { id: 'gebruik-code-block', children: 'Gebruik Code Block' }), '\n', (0, r.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-block-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-block-css'] }), '\nversie 1.'] }), '\n', (0, r.jsxs)(t.p, { children: ['Gebruik de ', (0, r.jsx)(t.code, { children: 'nl-code-block' }), ' class name op een ', (0, r.jsx)(t.code, { children: 'pre' }), ' element met de ', (0, r.jsx)(t.code, { children: 'nl-code-block__code' }), ' class name op een ', (0, r.jsx)(t.code, { children: 'code' }), ' element:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<pre dir="ltr" translate="no" class="nl-code-block">\n  <code class="nl-code-block__code">function addNumbers(a, b) {\n  return a + b;\n}</code>\n</pre>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-css\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-block-css@1/dist/code-block.css"\n/>\n' }) }), '\n', (0, r.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-block-css/dist/code-block.css" />\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-block-css/code-block.css";\n' }) }), '\n', (0, r.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-block-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-block-react'] }), '\nversie 1.'] }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-react\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-jsx', children: 'import { CodeBlock } from "@nl-design-system-candidate/code-block-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        function addNumbers(a, b) {\n          return a + b;\n        }\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, r.jsx)(t.h2, { id: 'figma', children: 'Figma' }), '\n', (0, r.jsxs)(t.p, { children: ['De Figma component staat in ', (0, r.jsx)(t.a, { href: 'https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=16013-20518&t=VLuBXH3mk0TIqsiJ-4', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Code Block' }), '.'] })] });
    }
-   function v(e = {}) {
+   function f(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
     return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(k, { ...e }) }) : k(e);
    }
-   var f = n(57716);
-   const A = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', slug: '/code-block', keywords: ['code'] },
+   var v = n(57716);
+   const A = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', slug: '/code-block', keywords: ['code'] },
     b = void 0,
-    x = { id: 'componenten/code-block/index', title: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', source: '@site/docs/componenten/code-block/index.mdx', sourceDirName: 'componenten/code-block', slug: '/code-block', permalink: '/code-block', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.', slug: '/code-block', keywords: ['code'] }, sidebar: 'componenten', previous: { title: 'Code', permalink: '/code' }, next: { title: 'Color Sample', permalink: '/color-sample' } },
+    x = { id: 'componenten/code-block/index', title: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', source: '@site/docs/componenten/code-block/index.mdx', sourceDirName: 'componenten/code-block', slug: '/code-block', permalink: '/code-block', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', slug: '/code-block', keywords: ['code'] }, sidebar: 'componenten', previous: { title: 'Code', permalink: '/code' }, next: { title: 'Color Sample', permalink: '/color-sample' } },
     C = {},
     T = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
@@ -118,10 +118,10 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     G = 'Code Block',
-    W = 'Toont \xe9\xe9n of meerdere regels computercode en behoudt de opmaak van deze code.',
+    W = 'Blok met \xe9\xe9n of meerdere regels computercode.',
     R = 329,
-    z = s.find((e) => e.number === R);
-   function N(e) {
+    N = s.find((e) => e.number === R);
+   function z(e) {
     const t = { h2: 'h2', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -131,25 +131,25 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(y.Rv, { component: z, headingLevel: 1, description: W }),
+      (0, r.jsx)(y.Rv, { component: N, headingLevel: 1, description: W }),
       '\n',
-      (0, r.jsx)(p.I, { component: z }),
+      (0, r.jsx)(p.I, { component: N }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(j.B, { component: z, illustration: i.Z }),
+      (0, r.jsx)(j.B, { component: N, illustration: i.Z }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'gebruik-deze-component', children: 'Gebruik deze component' }),
       '\n',
-      (0, r.jsx)(f.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(v, {}) }),
+      (0, r.jsx)(v.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(f, {}) }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(y.cN, { component: z, headingLevel: 3 }),
+      (0, r.jsx)(y.cN, { component: N, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }),
       '\n',
-      (0, r.jsx)(y.W, { component: z, headingLevel: 3 }),
+      (0, r.jsx)(y.W, { component: N, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
       '\n',
@@ -178,13 +178,13 @@
       '\n',
       (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(y.vM, { component: z, headingLevel: 3 }),
+      (0, r.jsx)(y.vM, { component: N, headingLevel: 3 }),
      ],
     });
    }
    function _(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(N, { ...e }) }) : N(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(z, { ...e }) }) : z(e);
    }
   },
   27794: (e, t, n) => {
@@ -449,11 +449,11 @@
     w = n(41757),
     y = n(16167),
     k = n(55476);
-   const v = (e) => {
+   const f = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
-    f = (e) => {
+    v = (e) => {
      let { checked: t, children: n, title: r, description: s, headingLevel: i = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, o.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, o.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: i, children: r }), s, n] })] });
     };
@@ -475,10 +475,10 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(v, {
+           (0, d.jsx)(f, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: o } = e;
-             return (0, d.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, A.Q6)(o) }, o);
+             return (0, d.jsx)(v, { headingLevel: n + 1, checked: t, title: r, description: (0, A.Q6)(o) }, o);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),

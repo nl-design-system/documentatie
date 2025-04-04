@@ -1,25 +1,25 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [88021],
+ [16406],
  {
-  19896: (e, t, n) => {
+  98189: (e, t, n) => {
    'use strict';
    n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
     s = n(8657);
-   const o = { title: 'Toggletip', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toggletip', pagination_label: 'Toggletip', description: 'Een button die tijdelijke informatie toont en deze automatisch verbergt wanneer iets anders dan de button wordt gebruikt.', slug: '/toggletip' },
+   const o = { title: 'Figure', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Figure', pagination_label: 'Figure', description: 'Zelfstandige inhoud, zoals een afbeelding, met mogelijk een verklarende tekst.', slug: '/figure' },
     a = void 0,
-    u = { id: 'componenten/toggletip/index', title: 'Toggletip', description: 'Een button die tijdelijke informatie toont en deze automatisch verbergt wanneer iets anders dan de button wordt gebruikt.', source: '@site/docs/componenten/toggletip/index.mdx', sourceDirName: 'componenten/toggletip', slug: '/toggletip', permalink: '/toggletip', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/toggletip/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Toggletip', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toggletip', pagination_label: 'Toggletip', description: 'Een button die tijdelijke informatie toont en deze automatisch verbergt wanneer iets anders dan de button wordt gebruikt.', slug: '/toggletip' }, sidebar: 'componenten', previous: { title: 'Text Area', permalink: '/text-area' }, next: { title: 'Unordered List', permalink: '/unordered-list' } },
+    u = { id: 'componenten/figure/index', title: 'Figure', description: 'Zelfstandige inhoud, zoals een afbeelding, met mogelijk een verklarende tekst.', source: '@site/docs/componenten/figure/index.mdx', sourceDirName: 'componenten/figure', slug: '/figure', permalink: '/figure', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/figure/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Figure', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Figure', pagination_label: 'Figure', description: 'Zelfstandige inhoud, zoals een afbeelding, met mogelijk een verklarende tekst.', slug: '/figure' }, sidebar: 'componenten', previous: { title: 'Fieldset', permalink: '/fieldset' }, next: { title: 'File Input', permalink: '/file-input' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Toggletip',
-    j = 'Een button die tijdelijke informatie toont en deze automatisch verbergt wanneer iets anders dan de button wordt gebruikt.',
-    y = 170,
+    d = 'Figure',
+    j = 'Zelfstandige inhoud, zoals een afbeelding, met mogelijk een verklarende tekst.',
+    y = 70,
     g = c.find((e) => e.number === y);
    function m(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };

@@ -17,9 +17,9 @@
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
    }
-   const d = { title: 'Icon', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Icon', pagination_label: 'Icon', description: ' ', slug: '/icon' },
+   const d = { title: 'Icon', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Icon', pagination_label: 'Icon', description: 'Grafisch symbool dat visueel informatie geeft over een actie, onderwerp of status.', slug: '/icon' },
     h = void 0,
-    u = { id: 'componenten/icon/index', title: 'Icon', description: ' ', source: '@site/docs/componenten/icon/index.mdx', sourceDirName: 'componenten/icon', slug: '/icon', permalink: '/icon', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/icon/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Icon', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Icon', pagination_label: 'Icon', description: ' ', slug: '/icon' }, sidebar: 'componenten', previous: { title: 'Heading Group', permalink: '/heading-group' }, next: { title: 'Image', permalink: '/image' } },
+    u = { id: 'componenten/icon/index', title: 'Icon', description: 'Grafisch symbool dat visueel informatie geeft over een actie, onderwerp of status.', source: '@site/docs/componenten/icon/index.mdx', sourceDirName: 'componenten/icon', slug: '/icon', permalink: '/icon', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/icon/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Icon', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Icon', pagination_label: 'Icon', description: 'Grafisch symbool dat visueel informatie geeft over een actie, onderwerp of status.', slug: '/icon' }, sidebar: 'componenten', previous: { title: 'Heading Group', permalink: '/heading-group' }, next: { title: 'Image', permalink: '/image' } },
     j = {},
     g = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -28,7 +28,7 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     m = 'Icon',
-    p = ' ',
+    p = 'Grafisch symbool dat visueel informatie geeft over een actie, onderwerp of status.',
     v = 275,
     k = o.find((e) => e.number === v);
    function y(e) {
@@ -121,21 +121,21 @@
      let { children: n } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: n });
     },
-    x = (e) => {
+    f = (e) => {
      let { checked: n, children: t, title: r, description: o, headingLevel: c = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(y.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(k.X6, { appearance: 'utrecht-heading-3', level: c, children: r }), o, t] })] });
     };
-   var f = t(14669);
+   var x = t(14669);
    const w = (e) => {
      let { component: n, headingLevel: t } = e;
-     const o = n && n.projects.filter((e) => f.e9.includes(e.id)),
-      c = o && f.e9.map((e) => o.find((n) => n.id === e)).filter(Boolean);
+     const o = n && n.projects.filter((e) => x.e9.includes(e.id)),
+      c = o && x.e9.map((e) => o.find((n) => n.id === e)).filter(Boolean);
      return (
       n &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: c.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, f.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: t,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -146,7 +146,7 @@
            (0, d.jsx)(b, {
             children: e.tasks.map((e) => {
              let { checked: n, name: r, id: i } = e;
-             return (0, d.jsx)(x, { headingLevel: t + 1, checked: n, title: r, description: (0, f.Q6)(i) }, i);
+             return (0, d.jsx)(f, { headingLevel: t + 1, checked: n, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${n.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -158,7 +158,7 @@
     },
     z = (e) => {
      let { component: n, headingLevel: t } = e;
-     const i = n && n.projects.filter((e) => !f.e9.includes(e.id));
+     const i = n && n.projects.filter((e) => !x.e9.includes(e.id));
      return n && i.length
       ? (0, d.jsx)(j.um, {
          appearance: 'large',
@@ -223,7 +223,7 @@
     },
     A = (e) => {
      let { component: n, headingLevel: t, description: i } = e;
-     const o = n && f.$3[n.relayStep];
+     const o = n && x.$3[n.relayStep];
      return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(v.V, { level: t, suffix: o && (0, d.jsx)(p.y, { state: o }), children: n.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },

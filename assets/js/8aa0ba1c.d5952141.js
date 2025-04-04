@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [16406],
+ [87034],
  {
-  98189: (e, t, n) => {
+  55328: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => g, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
     s = n(8657);
-   const o = { title: 'Figure', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Figure', pagination_label: 'Figure', description: 'Groepeert content zoals bijvoorbeeld een afbeelding, eventueel aangevuld met een bijschrift.', slug: '/figure' },
+   const o = { title: 'File Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'File Input', pagination_label: 'File Input', description: 'Knop om \xe9\xe9n of meerdere bestanden te kiezen en te uploaden.', slug: '/file-input' },
     a = void 0,
-    u = { id: 'componenten/figure/index', title: 'Figure', description: 'Groepeert content zoals bijvoorbeeld een afbeelding, eventueel aangevuld met een bijschrift.', source: '@site/docs/componenten/figure/index.mdx', sourceDirName: 'componenten/figure', slug: '/figure', permalink: '/figure', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/figure/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Figure', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Figure', pagination_label: 'Figure', description: 'Groepeert content zoals bijvoorbeeld een afbeelding, eventueel aangevuld met een bijschrift.', slug: '/figure' }, sidebar: 'componenten', previous: { title: 'Fieldset', permalink: '/fieldset' }, next: { title: 'File Input', permalink: '/file-input' } },
+    u = { id: 'componenten/file-input/index', title: 'File Input', description: 'Knop om \xe9\xe9n of meerdere bestanden te kiezen en te uploaden.', source: '@site/docs/componenten/file-input/index.mdx', sourceDirName: 'componenten/file-input', slug: '/file-input', permalink: '/file-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/file-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'File Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'File Input', pagination_label: 'File Input', description: 'Knop om \xe9\xe9n of meerdere bestanden te kiezen en te uploaden.', slug: '/file-input' }, sidebar: 'componenten', previous: { title: 'Figure', permalink: '/figure' }, next: { title: 'Form Field', permalink: '/form-field' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Figure',
-    j = 'Groepeert content zoals bijvoorbeeld een afbeelding, eventueel aangevuld met een bijschrift.',
-    y = 70,
-    g = c.find((e) => e.number === y);
-   function m(e) {
+    d = 'File Input',
+    j = 'Knop om \xe9\xe9n of meerdere bestanden te kiezen en te uploaden.',
+    y = 72,
+    m = c.find((e) => e.number === y);
+   function p(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
    }
-   function p(e = {}) {
+   function g(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
   },
   54907: (e, t, n) => {
@@ -84,7 +84,7 @@
     };
    var j = n(35038),
     y = n(40598);
-   const g = (e) => {
+   const m = (e) => {
     let { checked: t, unchecked: r } = e;
     return (0, l.jsx)(y.Z, {
      fallback: (0, l.jsx)(l.Fragment, {}),
@@ -103,8 +103,8 @@
      },
     });
    };
-   var m = n(23355),
-    p = n(41757),
+   var p = n(23355),
+    g = n(41757),
     v = n(16167),
     b = n(55476);
    const k = (e) => {
@@ -183,7 +183,7 @@
              children: (0, l.jsxs)(j.aY, {
               children: [
                (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                s.length > 0 &&
                 (0, l.jsxs)(l.Fragment, {
                  children: [
@@ -214,7 +214,7 @@
     A = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(p.V, { level: n, suffix: c && (0, l.jsx)(m.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(g.V, { level: n, suffix: c && (0, l.jsx)(p.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {

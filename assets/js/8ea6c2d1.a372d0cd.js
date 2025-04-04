@@ -144,9 +144,9 @@
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(N, { ...e }) }) : N(e);
    }
    var R = n(57716);
-   const z = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' },
+   const z = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Toont een klein label dat de aandacht trekt en informeert over een aantal.', slug: '/number-badge' },
     _ = void 0,
-    L = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Klein label dat de aandacht trekt informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
+    L = { id: 'componenten/number-badge/index', title: 'Number Badge', description: 'Toont een klein label dat de aandacht trekt en informeert over een aantal.', source: '@site/docs/componenten/number-badge/index.mdx', sourceDirName: 'componenten/number-badge', slug: '/number-badge', permalink: '/number-badge', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Toont een klein label dat de aandacht trekt en informeert over een aantal.', slug: '/number-badge' }, sidebar: 'componenten', previous: { title: 'Notification Banner', permalink: '/notification-banner' }, next: { title: 'Number Input', permalink: '/number-input' } },
     S = {},
     D = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
@@ -157,7 +157,7 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     F = 'Number Badge',
-    P = 'Klein label dat de aandacht trekt informeert over een aantal.',
+    P = 'Toont een klein label dat de aandacht trekt en informeert over een aantal.',
     M = 7,
     B = h.find((e) => e.number === M);
    function O(e) {

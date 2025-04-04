@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [41769],
+ [82345],
  {
-  87607: (e, t, n) => {
+  39084: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => g, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
     s = n(8657);
-   const o = { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', slug: '/page-header' },
+   const o = { title: 'Input Group', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Input Group', pagination_label: 'Input Group', description: 'Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.', slug: '/input-group' },
     a = void 0,
-    u = { id: 'componenten/page-header/index', title: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', source: '@site/docs/componenten/page-header/index.mdx', sourceDirName: 'componenten/page-header', slug: '/page-header', permalink: '/page-header', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-header/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.', slug: '/page-header' }, sidebar: 'componenten', previous: { title: 'Page Footer', permalink: '/page-footer' }, next: { title: 'Page Number Navigation', permalink: '/page-number-navigation' } },
+    u = { id: 'componenten/input-group/index', title: 'Input Group', description: 'Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.', source: '@site/docs/componenten/input-group/index.mdx', sourceDirName: 'componenten/input-group', slug: '/input-group', permalink: '/input-group', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/input-group/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Input Group', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Input Group', pagination_label: 'Input Group', description: 'Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.', slug: '/input-group' }, sidebar: 'componenten', previous: { title: 'Image', permalink: '/image' }, next: { title: 'Invalid Form Alert', permalink: '/invalid-form-alert' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Page Header',
-    j = 'Een plek bovenaan elke pagina voor een logo, navigatie en zoeken.',
-    y = 55,
-    g = c.find((e) => e.number === y);
-   function m(e) {
+    d = 'Input Group',
+    j = 'Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.',
+    y = 178,
+    m = c.find((e) => e.number === y);
+   function p(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
    }
-   function p(e = {}) {
+   function g(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
   },
   54907: (e, t, n) => {
@@ -68,7 +68,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => _, vM: () => w, W: () => N, Rv: () => A });
+   n.d(t, { cN: () => w, vM: () => N, W: () => _, Rv: () => A });
    var r = n(41115),
     i = n(4814),
     c = n(39854),
@@ -84,7 +84,7 @@
     };
    var j = n(35038),
     y = n(40598);
-   const g = (e) => {
+   const m = (e) => {
     let { checked: t, unchecked: r } = e;
     return (0, l.jsx)(y.Z, {
      fallback: (0, l.jsx)(l.Fragment, {}),
@@ -103,8 +103,8 @@
      },
     });
    };
-   var m = n(23355),
-    p = n(41757),
+   var p = n(23355),
+    g = n(41757),
     v = n(16167),
     b = n(55476);
    const k = (e) => {
@@ -116,7 +116,7 @@
      return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var x = n(14669);
-   const _ = (e) => {
+   const w = (e) => {
      let { component: t, headingLevel: n } = e;
      const c = t && t.projects.filter((e) => x.e9.includes(e.id)),
       s = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
@@ -146,7 +146,7 @@
       })
      );
     },
-    N = (e) => {
+    _ = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && i.length
@@ -183,7 +183,7 @@
              children: (0, l.jsxs)(j.aY, {
               children: [
                (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                s.length > 0 &&
                 (0, l.jsxs)(l.Fragment, {
                  children: [
@@ -205,7 +205,7 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    w = (e) => {
+    N = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
@@ -214,7 +214,7 @@
     A = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(p.V, { level: n, suffix: c && (0, l.jsx)(m.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(g.V, { level: n, suffix: c && (0, l.jsx)(p.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {

@@ -1,25 +1,25 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [15593],
+ [41769],
  {
-  49994: (e, t, n) => {
+  87607: (e, t, n) => {
    'use strict';
    n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
     s = n(8657);
-   const o = { title: 'Range', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Range', pagination_label: 'Range', description: 'Toont een visuele indicatie van aanpasbare inhoud en biedt de mogelijkheid om een waarde binnen een vooraf ingesteld bereik te kiezen.', slug: '/range' },
+   const o = { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Consistente plek bovenaan elke pagina, vaak met een logo, navigatie en zoekfunctie.', slug: '/page-header' },
     a = void 0,
-    u = { id: 'componenten/range/index', title: 'Range', description: 'Toont een visuele indicatie van aanpasbare inhoud en biedt de mogelijkheid om een waarde binnen een vooraf ingesteld bereik te kiezen.', source: '@site/docs/componenten/range/index.mdx', sourceDirName: 'componenten/range', slug: '/range', permalink: '/range', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/range/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Range', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Range', pagination_label: 'Range', description: 'Toont een visuele indicatie van aanpasbare inhoud en biedt de mogelijkheid om een waarde binnen een vooraf ingesteld bereik te kiezen.', slug: '/range' }, sidebar: 'componenten', previous: { title: 'Radio Group', permalink: '/radio-group' }, next: { title: 'Rich Text Content', permalink: '/rich-text-content' } },
+    u = { id: 'componenten/page-header/index', title: 'Page Header', description: 'Consistente plek bovenaan elke pagina, vaak met een logo, navigatie en zoekfunctie.', source: '@site/docs/componenten/page-header/index.mdx', sourceDirName: 'componenten/page-header', slug: '/page-header', permalink: '/page-header', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-header/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Header', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Header', pagination_label: 'Page Header', description: 'Consistente plek bovenaan elke pagina, vaak met een logo, navigatie en zoekfunctie.', slug: '/page-header' }, sidebar: 'componenten', previous: { title: 'Page Footer', permalink: '/page-footer' }, next: { title: 'Page Number Navigation', permalink: '/page-number-navigation' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Range',
-    j = 'Toont een visuele indicatie van aanpasbare inhoud en biedt de mogelijkheid om een waarde binnen een vooraf ingesteld bereik te kiezen.',
-    y = 36,
+    d = 'Page Header',
+    j = 'Consistente plek bovenaan elke pagina, vaak met een logo, navigatie en zoekfunctie.',
+    y = 55,
     g = c.find((e) => e.number === y);
    function m(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
@@ -68,7 +68,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => _, vM: () => N, W: () => w, Rv: () => A });
+   n.d(t, { cN: () => _, vM: () => w, W: () => N, Rv: () => A });
    var r = n(41115),
     i = n(4814),
     c = n(39854),
@@ -106,14 +106,14 @@
    var m = n(23355),
     p = n(41757),
     v = n(16167),
-    b = n(55476);
-   const k = (e) => {
+    k = n(55476);
+   const b = (e) => {
      let { children: t } = e;
      return (0, l.jsx)('ul', { className: 'task-list', children: t });
     },
     f = (e) => {
      let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var x = n(14669);
    const _ = (e) => {
@@ -133,7 +133,7 @@
          e &&
          (0, l.jsxs)(l.Fragment, {
           children: [
-           (0, l.jsx)(k, {
+           (0, l.jsx)(b, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
              return (0, l.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
@@ -146,7 +146,7 @@
       })
      );
     },
-    w = (e) => {
+    N = (e) => {
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && i.length
@@ -205,7 +205,7 @@
         })
       : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    N = (e) => {
+    w = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;

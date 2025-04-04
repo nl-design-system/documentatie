@@ -73,7 +73,7 @@
   },
   99781: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => S, component: () => V, contentTitle: () => L, default: () => E, description: () => P, frontMatter: () => Z, issueNumber: () => F, metadata: () => _, title: () => M, toc: () => D });
+   n.r(t), n.d(t, { assets: () => S, component: () => V, contentTitle: () => L, default: () => E, description: () => F, frontMatter: () => Z, issueNumber: () => M, metadata: () => _, title: () => P, toc: () => D });
    var r,
     s,
     o,
@@ -131,9 +131,9 @@
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, h.jsx)(t, { ...e, children: (0, h.jsx)(z, { ...e }) }) : z(e);
    }
-   const Z = { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Markeert korte tekst die code vertegenwoordigt.', slug: '/code', keywords: ['code block'] },
+   const Z = { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['code block'] },
     L = void 0,
-    _ = { id: 'componenten/code/index', title: 'Code', description: 'Markeert korte tekst die code vertegenwoordigt.', source: '@site/docs/componenten/code/index.mdx', sourceDirName: 'componenten/code', slug: '/code', permalink: '/code', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Markeert korte tekst die code vertegenwoordigt.', slug: '/code', keywords: ['code block'] }, sidebar: 'componenten', previous: { title: 'Checkbox Group', permalink: '/checkbox-group' }, next: { title: 'Code Block', permalink: '/code-block' } },
+    _ = { id: 'componenten/code/index', title: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', source: '@site/docs/componenten/code/index.mdx', sourceDirName: 'componenten/code', slug: '/code', permalink: '/code', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['code block'] }, sidebar: 'componenten', previous: { title: 'Checkbox Group', permalink: '/checkbox-group' }, next: { title: 'Code Block', permalink: '/code-block' } },
     S = {},
     D = [
      { value: 'Gebruik deze component', id: 'gebruik-deze-component', level: 2 },
@@ -143,10 +143,10 @@
      { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    M = 'Code',
-    P = 'Markeert korte tekst die code vertegenwoordigt.',
-    F = 326,
-    V = m.find((e) => e.number === F);
+    P = 'Code',
+    F = 'Computercode die onderdeel is van lopende tekst.',
+    M = 326,
+    V = m.find((e) => e.number === M);
    function O(e) {
     const t = { a: 'a', h2: 'h2', p: 'p', ...(0, u.a)(), ...e.components };
     return (0, h.jsxs)(h.Fragment, {
@@ -157,7 +157,7 @@
       '\n',
       '\n',
       '\n',
-      (0, h.jsx)(W.Rv, { component: V, headingLevel: 1, description: P }),
+      (0, h.jsx)(W.Rv, { component: V, headingLevel: 1, description: F }),
       '\n',
       (0, h.jsx)(C.I, { component: V }),
       '\n',
