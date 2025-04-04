@@ -1,5 +1,32 @@
 # @nl-design-system-unstable/documentation
 
+## 1.4.0
+
+### Minor Changes
+
+- 5170863: Add description of notification banner component.
+- 5b8f12e: Add description of invalid form alert component.
+- 1d751bb: Add description of non modal dialog component.
+- f376b89: Rewrite code description.
+  Rewrite code-block description.
+  Rewrite date-picker description.
+  Add dot-badge description.
+  Rewrite figure description.
+  Rewrite file-input description.
+  Add form-summary description.
+  Rewrite heading-group description.
+  Add icon description.
+  Add page-footer description.
+  Rewrite page-header description.
+  Rewrite range description.
+  Rewrite separator description.
+  Rewrite side-navigation description.
+  Add status-badge description.
+  Rewrite switch description.
+  Add input-group description.
+  Rewrite toggletip description.
+  Rewrite number-badge description.
+
 ## 1.3.1
 
 ### Patch Changes
