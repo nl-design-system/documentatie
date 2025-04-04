@@ -3,14 +3,14 @@
  {
   21207: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => s, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
-    s = n(8657);
-   const o = { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: ' ', slug: '/notification-banner' },
+    o = n(8657);
+   const s = { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', slug: '/notification-banner' },
     a = void 0,
-    u = { id: 'componenten/notification-banner/index', title: 'Notification Banner', description: ' ', source: '@site/docs/componenten/notification-banner/index.mdx', sourceDirName: 'componenten/notification-banner', slug: '/notification-banner', permalink: '/notification-banner', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/notification-banner/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: ' ', slug: '/notification-banner' }, sidebar: 'componenten', previous: { title: 'Non Modal Dialog', permalink: '/non-modal-dialog' }, next: { title: 'Number Badge', permalink: '/number-badge' } },
+    u = { id: 'componenten/notification-banner/index', title: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', source: '@site/docs/componenten/notification-banner/index.mdx', sourceDirName: 'componenten/notification-banner', slug: '/notification-banner', permalink: '/notification-banner', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/notification-banner/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', slug: '/notification-banner' }, sidebar: 'componenten', previous: { title: 'Non Modal Dialog', permalink: '/non-modal-dialog' }, next: { title: 'Number Badge', permalink: '/number-badge' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,12 +18,12 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     d = 'Notification Banner',
-    j = '',
+    j = 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.',
     y = 169,
     m = c.find((e) => e.number === y);
    function g(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(o.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(o.vM, { component: m, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -46,19 +46,19 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => o, um: () => u, wu: () => s });
+   n.d(t, { Zb: () => a, aY: () => s, um: () => u, wu: () => o });
    var r = n(16167),
     i = n(4814),
     c = n(52676);
-   const s = (e) => {
-     let { background: t, children: n, className: r, ...s } = e;
-     return (0, c.jsx)('div', { className: (0, i.Z)('card__illustration', t && 'card__illustration--background', r), ...s, children: n });
+   const o = (e) => {
+     let { background: t, children: n, className: r, ...o } = e;
+     return (0, c.jsx)('div', { className: (0, i.Z)('card__illustration', t && 'card__illustration--background', r), ...o, children: n });
     },
-    o = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
+    s = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
     a = (e) => {
-     let { href: t, appearance: n, className: s, component: o = 'div', children: a } = e;
-     const u = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
-      l = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, s), children: a });
+     let { href: t, appearance: n, className: o, component: s = 'div', children: a } = e;
+     const u = (e) => ('article' === s ? (0, c.jsx)('article', { ...e }) : 'section' === s ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
+      l = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, o), children: a });
      return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: l }) : l;
     },
     u = (e) => {
@@ -72,12 +72,12 @@
    var r = n(41115),
     i = n(4814),
     c = n(39854),
-    s = n(7522),
-    o = n(62559),
+    o = n(7522),
+    s = n(62559),
     a = n(79734),
     u = n(32636),
     l = n(52676);
-   const h = { figma: (0, l.jsx)(c.Z, {}), github: (0, l.jsx)(s.Z, {}), npm: (0, l.jsx)(o.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
+   const h = { figma: (0, l.jsx)(c.Z, {}), github: (0, l.jsx)(o.Z, {}), npm: (0, l.jsx)(s.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
     d = (e) => {
      let { brand: t } = e;
      return (0, l.jsx)(r.JO, { children: h[t] || (0, l.jsx)(u.Z, {}) });
@@ -112,19 +112,19 @@
      return (0, l.jsx)('ul', { className: 'task-list', children: t });
     },
     f = (e) => {
-     let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+     let { checked: t, children: n, title: r, description: c, headingLevel: o = 3 } = e;
+     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), c, n] })] });
     };
    var x = n(14669);
    const _ = (e) => {
      let { component: t, headingLevel: n } = e;
      const c = t && t.projects.filter((e) => x.e9.includes(e.id)),
-      s = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
+      o = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, l.jsx)(r.a2, {
        appearance: '',
-       sections: s.map((e) => ({
+       sections: o.map((e) => ({
         className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
@@ -172,7 +172,7 @@
              ['Storybook URL (CSS)', { brand: 'storybook', desciption: `${i} in Storybook van ${e.title}` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            s = e.tasks.filter((e) => {
+            o = e.tasks.filter((e) => {
              let { name: t, value: n } = e;
              return c.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
@@ -184,12 +184,12 @@
               children: [
                (0, l.jsx)(r.X6, { level: n, children: e.title }),
                (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               s.length > 0 &&
+               o.length > 0 &&
                 (0, l.jsxs)(l.Fragment, {
                  children: [
                   (0, l.jsx)(r.X6, { level: n + 1, children: 'Component gebruiken?' }),
                   (0, l.jsx)(r.Mc, {
-                   children: s.map((e) => {
+                   children: o.map((e) => {
                     const t = c.get(e.name);
                     return t ? (0, l.jsxs)(r.k7, { href: e.value, children: [(0, l.jsx)(d, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, l.jsx)(l.Fragment, {});
                    }),
@@ -219,15 +219,15 @@
   },
   23355: (e, t, n) => {
    'use strict';
-   n.d(t, { y: () => o });
+   n.d(t, { y: () => s });
    var r = n(16167),
     i = n(4814),
     c = n(14669),
-    s = n(52676);
-   const o = (e) => {
+    o = n(52676);
+   const s = (e) => {
     let { state: t } = e;
     const n = (0, c.mA)(t);
-    return (0, s.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', n && `estafette-badge--${n}`), children: t });
+    return (0, o.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', n && `estafette-badge--${n}`), children: t });
    };
   },
   41757: (e, t, n) => {
@@ -236,18 +236,18 @@
    var r = n(4814),
     i = n(52676);
    const c = (e) => {
-    let { children: t, className: n, level: c = 1, suffix: s, ...o } = e;
-    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${c}`, n), ...o, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), s && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [s ? ' ' : '', s] })] });
+    let { children: t, className: n, level: c = 1, suffix: o, ...s } = e;
+    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${c}`, n), ...s, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
    };
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, BA: () => o, Q6: () => c, e9: () => s, mA: () => i });
+   n.d(t, { $3: () => r, BA: () => s, Q6: () => c, e9: () => o, mA: () => i });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     c = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    s = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    o = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    s = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
   },
  },
 ]);
