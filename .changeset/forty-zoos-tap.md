@@ -2,4 +2,4 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-Add description of non modal dialog component.
+Add description of notification banner component.
