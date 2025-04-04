@@ -33,6 +33,8 @@ Bij goed gebruik van je tekstverwerker word je dikgedrukte of schuingedrukt teks
 Gebruik dikgedrukte tekst en strong-elementen om een deel van de zin extra belangrijk te maken. Bijvoorbeeld: **Pas op!** Dit is **erg gevaarlijk**.
 Gebruik schuingedrukte tekst en het em-element om de betekenis van de zin aan te passen. Bijvoorbeeld: _Moet_ ik dit nu doen? of Moet _ik_ dit nu doen?
 
-## Gerelateerde WCAG-succescriteria:
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
