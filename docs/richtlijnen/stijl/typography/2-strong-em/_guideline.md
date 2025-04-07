@@ -27,6 +27,8 @@ Beperk het gebruik van schuingedrukte tekst. Schuingedrukte tekst maakt de tekst
 
 Informeer gebruikers van het CMS over het [juiste gebruik van de dik- en schuingedrukt optie](/richtlijnen/content/bold-and-italic-text).
 
-## Gerelateerde WCAG-succescriteria
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
