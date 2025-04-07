@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Opsommingen
 pagination_label: Opsommingen
 description: Opsommingen in NL Design System
+slug: /richtlijnen/content/betekenisvolle-tekstopmaak/opsommingen
 keywords:
   - copywriter
   - taalgebruik
@@ -28,4 +29,4 @@ Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verw
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
-- [Succescriterium 1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1)
+- [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)

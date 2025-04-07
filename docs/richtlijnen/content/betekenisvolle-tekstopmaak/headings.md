@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Koppen
 pagination_label: Koppen
 description: Koppen in NL Design System
+slug: /richtlijnen/content/betekenisvolle-tekstopmaak/koppen
 keywords:
   - copywriter
   - taalgebruik
