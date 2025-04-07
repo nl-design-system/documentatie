@@ -4,8 +4,7 @@ Op deze pagina vind je een overzicht van alle wijzigingen in onze Figma biblioth
 
 Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoerd, zodat je ze waar nodig ook kunt doorvoeren in jouw eigen bibliotheek. Zo blijf je up-to-date met de laatste versie van de bibliotheek.
 
-<!--
-Hieronder vind je 2 templates die je kunt gebruiken om de changelog te schrijven:
+<!-- Hieronder vind je 2 templates die je kunt gebruiken om de changelog te schrijven:
 
 1. Template voor het publiceren van een nieuwe versie op de changelogpagina
 2. Template voor het schrijven van een changelog, gebaseerd op het type wijziging
@@ -179,9 +178,7 @@ Schrijfwijze:
 
 Voorbeelden:
 - Waardes zijn omgezet van `px` naar `re`m in Token Studio.
-- Tokens in Tokens Studio zijn opnieuw gelinkt aan token documentatie in Figma.
-
--->
+- Tokens in Tokens Studio zijn opnieuw gelinkt aan token documentatie in Figma. -->
 
 ## 0.1.0
 
