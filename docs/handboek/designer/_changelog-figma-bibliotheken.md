@@ -1,6 +1,8 @@
 # Changelog Figma Bibliotheken
 
-Op deze pagina vind je een overzicht van alle wijzigingen in onze Figma Bibliotheken. Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoerd, zodat je ze waar nodig ook kunt doorvoeren in jouw eigen Bibliotheek. Zo blijf je up-to-date met de laatste versie van de Bibliotheek.
+Op deze pagina vind je een overzicht van alle wijzigingen in onze Figma Bibliotheken.
+
+Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoerd, zodat je ze waar nodig ook kunt doorvoeren in jouw eigen Bibliotheek. Zo blijf je up-to-date met de laatste versie van de Bibliotheek.
 
 ## 0.1.0
 7 april 2025
