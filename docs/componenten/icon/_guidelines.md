@@ -18,7 +18,8 @@ Combineer waar mogelijk een icoon met tekst.
 
 Het kan zijn dat een bezoeker een icoon niet helemaal goed begrijpt. Het gebruik van tekst (label) is ook een belangrijke factor in de navigatie. Een eenvoudig en duidelijk icoon met een goed omschreven label is superieur aan iconen of labels alleen.
 
-Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien, een leeg `alt=""` attribuut is dan voldoende. Een <img> met een alt="" hetzelfde als aria-hidden="true". De afbeelding wordt dan uit de “accessibility tree” gehaald, en compleet genegeerd.
+Als iconen gecombineerd worden met een zichtbare tekst, dan fungeert deze tekst als alt-tekst. Een alt-tekst is dan niet meer nodig. Een `<img>` met een leeg alt-attribuut (`alt=""`) is dan voldoende.
+`<img>` met `alt=""` doet hetzelfde als `aria-hidden="true"`. De afbeelding wordt dan uit de “accessibility tree” gehaald, en compleet genegeerd.
 
 ## Niet te veel iconen op een pagina {#hoeveelheid-iconen}
 
@@ -49,8 +50,6 @@ Probeer zoveel mogelijk iconen van een tekstlabel te voorzien. Wanneer een (inte
 Zorg voor functionele iconen dat deze voldoende contrast hebben met de achtergrond en omliggende kleuren. Zie hiervoor [WCAG techniek G207](https://www.w3.org/WAI/WCAG21/Techniques/general/G207) en het [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11). Er dient een minimale contrastverhouding van 3:1 ten opzichte van onderliggende en aangrenzende kleuren te zijn.
 
 Puur decoratieve iconen hoeven niet aan deze eis te voldoen.
-
-Als iconen ondersteund worden door tekst is het niet noodzakelijk deze van een `alt` tekst te voorzien, een leeg `alt=""` attribuut is dan voldoende.
 
 ### Interactieve iconen {#interactieve-iconen}
 
