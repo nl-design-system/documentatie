@@ -27,7 +27,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.4ad44678.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.0c79c8cd.js" defer="defer"></script>
   <script src="/assets/js/main.1d5e6bb4.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -257,6 +257,7 @@
                <li>Markeer de oude design token <code class="utrecht-code">example.button.icon.space</code> als ‘deprecated’ door <code class="utrecht-code">[deprecated]</code> aan de beschrijving van de token toe te voegen.</li>
               </ol>
               <p>Door de oude token niet te verwijderen maar te markeren als ‘deprecated’, informeer je afnemers dat ze deze design token niet meer moeten gebruiken. Ze weten ook dat ze op termijn bestaande code zullen moeten aanpassen. Hoe de code moet worden aangepast, geef je aan in een changelog. Meer daarover hieronder.</p>
+              <p>Als een token wordt gemarkeerd als ‘deprecated’ maar nog niet wordt verwijderd, wordt dit beschouwd als een patch wijziging. Als een token wordt toegevoegd dat als vervanging gaat dienen, wordt dit beschouwd als een minor wijziging.</p>
               <h2 id="communiceer-over-je-veranderingen" class="utrecht-heading-2">Communiceer over je veranderingen</h2>
               <p>Je weet zelf het best wat je veranderd hebt. De afnemer van de design tokens weet dit niet. Het is daarom wel zo netjes om afnemers te informeren over de veranderingen. We leggen uit hoe je dat precies kunt doen.</p>
               <p>Wanneer je een <a href="/handboek/designer/stappenplan/#verstuur-aanpassingen-naar-github" class="utrecht-link utrecht-link--html-a">pull request hebt aangemaakt</a>, geef je met een extra commit aan wat je precies hebt veranderd. De beschrijving die je hierbij opgeeft, wordt opgenomen in de changelog van het package.</p>
@@ -279,12 +280,12 @@
                <li>Klik op ‘Commit changes’. Als je een foutmelding krijgt dat het bestand al bestaat, kies dan een andere willekeurige naam.</li>
               </ol>
               <p>Hieronder een voorbeeld van de inhoud van het bestand met de beschrijving van een verandering met breaking changes voor de ‘voorbeeld’ organisatie.</p>
-              <span hidden="" id=":Rb6hralaqh:"
+              <span hidden="" id=":Rbehralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rb6hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token front-matter-block"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token front-matter-block"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:var(--nlds-code-block-atrule-color)">&quot;@nl-design-system-unstable/voorbeeld-design-tokens&quot;</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> major</span><span class="token front-matter-block"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
