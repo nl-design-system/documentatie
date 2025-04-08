@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content · NL Design System" />
-  <meta data-rh="true" name="description" content="Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben." />
-  <meta data-rh="true" property="og:description" content="Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben." />
+  <meta data-rh="true" name="description" content="Het contrast van essentiele onderdelen van componenten en de directe omgeving moet sterk genoeg zijn, zodat de onderdelen herkenbaar zijn." />
+  <meta data-rh="true" property="og:description" content="Het contrast van essentiele onderdelen van componenten en de directe omgeving moet sterk genoeg zijn, zodat de onderdelen herkenbaar zijn." />
   <meta data-rh="true" name="keywords" content="WCAG" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/1.4.11" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.0c79c8cd.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d6900d66.js" defer="defer"></script>
   <script src="/assets/js/main.1d5e6bb4.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -279,17 +279,44 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau AA</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben.</p>
+              <p>Zorg voor voldoende kleurcontrast tussen de kleur van componenten die visueel betekenis hebben en hun directe omgeving.</p>
               <p>Bijvoorbeeld:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Een icoon dat betekenis heeft, zoals de 3 streepjes voor een menu of een pijltje naar rechts voor de volgende pagina.</li>
                <li>Een icoon dat de status aangeeft van een bericht zoals een oranje driehoek voor een waarschuwing en een groen vinkje voor succes.</li>
                <li>Een rode rand die aangeeft dat een invoerveld fouten bevat (als aanvulling op de foutmelding in tekst).</li>
               </ul>
-              <p>Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn.</p>
-              <p>Er is een uitzondering voor inactieve componenten, zoals uitgeschakelde buttons, invoervelden, aankruisvakjes en keuzerondjes. En voor het kleurcontrast voor componenten die door de browser worden bepaald en niet niet kunnen worden veranderd.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Het gemeten kleurcontrast tussen het element en de omgeving moet minstens 3:1 zijn.</p>
+              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Stijl: <a href="/richtlijnen/stijl/iconen" class="utrecht-link utrecht-link--html-a">Kleuren</a>.</li>
+               <li>Formulieren: <a href="/richtlijnen/formulieren/visueel-ontwerp" class="utrecht-link utrecht-link--html-a">Visueel ontwerp</a>.</li>
+              </ul>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Een overzicht van goede bronnen en tools voor kleurcontrast staat bij <a href="/richtlijnen/stijl/kleuren/" class="utrecht-link utrecht-link--html-a">Richtlijnen NL Design System voor kleuren</a>.</li>
+               <li><a href="https://www.figma.com/community/accessibility/contrast" class="utrecht-link utrecht-link--html-a">Figma contrast accessibility plugin tools</a>.</li>
+               <li><a href="https://www.deque.com/axe/browser-extensions/" class="utrecht-link utrecht-link--html-a">axe DevTools browser add-on</a>.</li>
+               <li><a href="https://wave.webaim.org/" class="utrecht-link utrecht-link--html-a">WAVE Web Accessibility Evaluation Tools</a>.</li>
+               <li><a href="https://www.tpgi.com/color-contrast-checker/" class="utrecht-link utrecht-link--html-a">Colour Contrast Analyser (CCA)</a>.</li>
+               <li><a href="https://nldesignsystem.nl/contrast/" class="utrecht-link utrecht-link--html-a">Contrast van kleuren - NL Design System</a>.</li>
+              </ul>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Naast tekst (<a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.3 Contrast (minimum)</a>) moet ook andere essentiele content goed zichtbaar zijn.</p>
+              <p>Dit kan bijvoorbeeld gaan om grafische objecten, zoals iconen en delen van complexe diagrammen. Het contrast van het (deel van het) icoon dat nodig is voor begrip, moet een contrast van 3.0:1 hebben met de directe omgeving.</p>
+              <p>Het kan ook gaan om een component van de gebruikersinterface, zoals een link, een knop of een formulier element). Dan moet de visuele informatie die nodig is om het component (of de status ervan) te identificeren een contrast van 3.0:1 hebben met de directe omgeving.</p>
+              <p><em class="utrecht-emphasis utrecht-emphasis--stressed">Let op</em>: Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst (<a href="/wcag/1.4.3" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.3 Contrast (minimum)</a>) voldoen aan de contrasteisen van tekst, en mag de knop onopvallend zijn. Als deze een afbeelding bevat, dan is successcriterium 1.4.11 van toepassing op de afbeelding. Bevat het component niks dat het component identificeert? Dan moet het component zelf contrastrijk genoeg zijn.</p>
+              <p><em class="utrecht-emphasis utrecht-emphasis--stressed">Let op</em>: Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.</p>
+              <p>Controleer in de volgende situaties of het kleurcontrast van de componenten voldoende blijft:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.</li>
+               <li>Verschillend oriëntaties: <em class="utrecht-emphasis utrecht-emphasis--stressed">portrait</em> en <em class="utrecht-emphasis utrecht-emphasis--stressed">landscape</em>.</li>
+               <li>Vergroot de tekst alleen tot 200%.</li>
+               <li>Zoom in tot 400% vanaf schermbreedte van 1280px (of zet de schermbreedte op 320px).</li>
+               <li>Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de componenten.</li>
+               <li>Controleer de verschillende weergaves en statussen van buttons, menus en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, en al eerder bezocht.</li>
+               <li>Vergeet ook de skiplinks niet.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -298,7 +325,7 @@
                 Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/TR/WCAG22/#non-text-contrast" class="utrecht-link utrecht-link--html-a"><span lang="en">1.4.11 Non-text Contrast</span></a
                 >.
                </li>
-               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#contrast-van-niet-tekstuele-content" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a>.</li>
+               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#non-text-contrast" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a>.</li>
                <li>
                 Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 1.4.11 Non-text Contrast</span></a
                 >.
@@ -346,7 +373,9 @@
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
