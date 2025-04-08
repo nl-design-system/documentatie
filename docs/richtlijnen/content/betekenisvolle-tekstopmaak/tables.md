@@ -18,11 +18,11 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 ## Eisen vanuit WGAG
 
 - Markeer koppen als rijkoppen of kolomkoppen. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan. Hulptechnologieën geven met deze informatie extra uitleg aan gebruikers.
-- Gebruik niet alleen kleur om informatie te geven. Denk aan groene tekst die aangeeft dat een datum nog beschikbaar is en rode tekst voor data die niet meer beschikbaar zijn. Geef de beschikbaarheid ook op een andere manier aan, bijvoorbeeld met tekst.
+- [Gebruik niet alleen kleur om informatie te geven](/wcag/1.4.1). Denk aan groene tekst voor een positief getal en rode tekst voor een negatief getal. Geef dit ook op een andere manier aan, zoals in dit geval met een min-teken.
 - Vermijd het verwijzen naar kleur, bijvoorbeeld “in de grijze rijen staat (…)”.
 - Gebruik geen tussenkopjes in de tabel die niet als koppen zijn aangegeven.
-- Als je informatieve afbeeldingen in je tabel gebruikt, geef ze dan een goede alternatieve tekst.
-- Zorg voor voldoende kleurcontrast tussen de tekst en achtergrond.
+- [Als je informatieve afbeeldingen in je tabel gebruikt, geef ze dan een goede alternatieve tekst](/wcag/1.1.1).
+- [Zorg voor voldoende kleurcontrast tussen de tekst en achtergrond](/wcag/1.4.1).
 
 ## Doe dit ook voor goede toegankelijkheid
 
@@ -36,5 +36,3 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
-- [Succescriterium 1.4.1 Gebruik van kleur](/wcag/1.4.1)
-- [Succescriterium 1.1.1 Niet tekstuele content](/wcag/1.1.1)
