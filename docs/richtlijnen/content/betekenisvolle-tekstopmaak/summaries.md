@@ -17,7 +17,7 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
 
 ## Lijst-elementen
 
-Stel een lijst in als lijst-element via de contenteditor op de website. Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. Lees meer over het belang van HTML-elementen. **(pagina is in de maak)**
+Stel een lijst in als lijst-element via de contenteditor op de website. Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. Lees meer over [het belang van HTML-elementen](/richtlijnen/formulieren/wanneer-welk-form-element/betekenisvolle-html-elementen).
 
 Type niet zelf sterretjes, streepjes of nummers om een lijst te maken.
 

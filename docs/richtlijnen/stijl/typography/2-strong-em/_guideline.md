@@ -17,7 +17,7 @@ Gebruik `<strong>` om een deel van de zin extra belangrijk te maken. Gebruik `<e
 
 Gebruik strong en em-elementen alleen om nadruk op een woord of zinsdeel te leggen. Wil je een alinea er anders uit laten zien en bijvoorbeeld dikgedrukt weergeven? Dat kan. Gebruik dan niet `<strong>`, maar CSS. Bijvoorbeeld `font-weight: bold;`. Zo verander je alleen de weergave en niet de betekenis van de tekst.
 
-Lees meer over het belang van HTML-elementen. **(pagina is in de maak)**
+Lees meer over [het belang van HTML-elementen](/richtlijnen/formulieren/wanneer-welk-form-element/betekenisvolle-html-elementen).
 
 ## Het nadeel van schuingedrukte tekst
 
