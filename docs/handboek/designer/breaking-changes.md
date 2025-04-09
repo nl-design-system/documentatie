@@ -77,6 +77,8 @@ Om te voorkomen dat een wijziging meteen een breaking change is kun je ervoor ki
 
 Door de oude token niet te verwijderen maar te markeren als ‘deprecated’, informeer je afnemers dat ze deze design token niet meer moeten gebruiken. Ze weten ook dat ze op termijn bestaande code zullen moeten aanpassen. Hoe de code moet worden aangepast, geef je aan in een changelog. Meer daarover hieronder.
 
+Als een token wordt gemarkeerd als ‘deprecated’ maar nog niet wordt verwijderd, wordt dit beschouwd als een patch wijziging. Als een token wordt toegevoegd dat als vervanging gaat dienen, wordt dit beschouwd als een minor wijziging.
+
 ## Communiceer over je veranderingen
 
 Je weet zelf het best wat je veranderd hebt. De afnemer van de design tokens weet dit niet. Het is daarom wel zo netjes om afnemers te informeren over de veranderingen. We leggen uit hoe je dat precies kunt doen.
