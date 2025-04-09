@@ -1,0 +1,28 @@
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import "@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css";
+
+<Canvas language="typescript"
+        excludeDefaultStyle
+        code={`// Include the CSS separately
+// Or inject it directly by importing '@nl-design-system-candidate/code-react/css' instead
+import {Code} from '@nl-design-system-candidate/code-react';
+import "@nl-design-system-candidate/code-css/code.css";
+
+// Make sure your theme is included
+import "@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css";
+
+// And use the Code component however you please.
+export const ReactCodeExample = () => <p>Dit is een voorbeeld van een <Code>code</Code> component</p>
+`}>
+{() => (
+
+<p>
+  Dit is een voorbeeld van een{" "}
+  <code dir="ltr" translate="no" class="nl-code">
+    code
+  </code>{" "}
+  component
+</p>
+)}
+
+</Canvas>

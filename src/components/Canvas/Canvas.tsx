@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';
 import prettierHTML from 'prettier/plugins/html.mjs';
+import prettierTypescript from 'prettier/plugins/typescript.mjs';
 import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
 import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
@@ -47,6 +48,7 @@ interface CanvasProps {
   copy?: boolean;
   container?: string | CanvasContainerType;
   designTokens?: CSSProperties;
+  excludeDefaultStyle?: boolean;
 }
 
 export const Canvas = ({
@@ -58,6 +60,7 @@ export const Canvas = ({
   container = 'document',
   language,
   designTokens,
+  excludeDefaultStyle,
 }: CanvasProps) => {
   // By default the `children` argument is converted to code.
   const jsxTree = typeof children === 'function' ? children() : children;
@@ -76,7 +79,7 @@ export const Canvas = ({
     const formatWithPrettier = async () => {
       const exampleSourceCode = await prettier.format(unformattedCode, {
         parser: language,
-        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
+        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierTypescript, prettierPostcss],
         semi: false,
         singleAttributePerLine: true,
         embeddedLanguageFormatting: 'off',
@@ -108,9 +111,7 @@ export const Canvas = ({
       {jsxTree && (
         <div className={clsx('nlds-canvas__example')}>
           <div className="voorbeeld-theme" style={designTokens}>
-            <Container>
-              <HTMLContent>{jsxTree}</HTMLContent>
-            </Container>
+            <Container>{excludeDefaultStyle ? jsxTree : <HTMLContent>{jsxTree}</HTMLContent>}</Container>
           </div>
         </div>
       )}

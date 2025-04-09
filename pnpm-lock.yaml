@@ -29,6 +29,9 @@ importers:
       '@nl-design-system-candidate/code-docs':
         specifier: 1.0.1
         version: 1.0.1
+      '@nl-design-system-candidate/code-tokens':
+        specifier: 2.0.1
+        version: 2.0.1
       '@nl-design-system-candidate/color-sample-docs':
         specifier: 1.0.1
         version: 1.0.1
@@ -141,6 +144,9 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@nl-design-system-candidate/code-css':
+        specifier: 2.0.1
+        version: 2.0.1
       '@nl-design-system-unstable/documentation':
         specifier: workspace:*
         version: link:docs
@@ -1851,8 +1857,14 @@ packages:
   '@nl-design-system-candidate/code-block-docs@1.0.1':
     resolution: {integrity: sha512-IrcmL9IypRATsWiYJnq1W9K4RizLtwm+2pQ8ssC3YEb9Palz3YnANgpL/aFrI2FJ+0vkirWxW9wnO7+A4y2osQ==}
 
+  '@nl-design-system-candidate/code-css@2.0.1':
+    resolution: {integrity: sha512-LRkSbcoTWLQ0UxlLZoC/DDmcWn+dQtOOP7X60jz6xQlKI1g3nlVwAvytkQ7z6+98O9KzRKbd2vgdDRsSfHRRag==}
+
   '@nl-design-system-candidate/code-docs@1.0.1':
     resolution: {integrity: sha512-EzZs5GZ2ZTu6OtzfDdzDynwBhmnqHMhsKKZa6142luZOOLvaNrmvrUJOuhr115or52yCVkxXuT5NZ/Tthqa3zA==}
+
+  '@nl-design-system-candidate/code-tokens@2.0.1':
+    resolution: {integrity: sha512-lK8+CmyT7HjkBK2sCc6cUx2jiy/XR6l6olSRtj/ZKBGuStwUw4I1q8ab4wIkIF5HhS/XPRQyJK4HwpVffIh+9g==}
 
   '@nl-design-system-candidate/color-sample-docs@1.0.1':
     resolution: {integrity: sha512-LuskAUduBpXp9GSU6+rTS39poWHRaMcB8KXRvUBRHrsMHnp+5S2syq7Od5UaeiTWzv0K88BSTgWNVfp3ky1u5g==}
@@ -10537,7 +10549,11 @@ snapshots:
 
   '@nl-design-system-candidate/code-block-docs@1.0.1': {}
 
+  '@nl-design-system-candidate/code-css@2.0.1': {}
+
   '@nl-design-system-candidate/code-docs@1.0.1': {}
+
+  '@nl-design-system-candidate/code-tokens@2.0.1': {}
 
   '@nl-design-system-candidate/color-sample-docs@1.0.1': {}
 

@@ -293,13 +293,13 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 code,
 pre {
-  font-family: "Fira Code VF" !important;
+  font-family: "Fira Code VF";
   font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
   font-size: 16px;
   vertical-align: 1%;
 }
 code {
-  background-color: transparent !important;
+  background-color: transparent;
   border-inline-end: 0;
   border-inline-start: 0;
   border-width: 0;

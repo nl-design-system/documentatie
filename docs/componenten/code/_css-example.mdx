@@ -1,0 +1,28 @@
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import "@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css";
+
+<Canvas language="html"
+        excludeDefaultStyle
+        code={`<!doctype html>
+<html>
+<head>
+  <title>CSS Code example</title>
+  <!-- Include Component CSS -->
+  <!-- Tip: Use a CDN for prototyping, and use one of the options below for production -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-css/dist/code.css" />
+  
+  <!-- Include your theme CSS -->
+  <!-- Tip: Use a CDN for prototyping, and use one of the options below for production -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css" />
+</head>
+
+<!-- Set the class name to include your theme and use the <code/> component with the 'nl-code' class name -->
+
+<body class="voorbeeld-theme">
+  <p>Dit is een voorbeeld van een <code dir="ltr" translate="no" class="nl-code">code</code> component</p>
+</body>
+</html>`}>
+    {() => (
+        <p>Dit is een voorbeeld van een <code dir="ltr" translate="no" class="nl-code">code</code> component</p>
+    )}
+</Canvas>

@@ -31,7 +31,18 @@ import {
   Introduction,
 } from "@site/src/components/ComponentPage";
 import { Markdown } from "@site/src/components/Markdown";
-import Usage from "./_usage.md";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+import TokensJSON from "@nl-design-system-candidate/code-tokens";
+
+import CSS from "./_css.md";
+import CSSCode from "./_css-example.mdx";
+import React from "./_react.md";
+import ReactCode from "./_react-example.mdx";
+import Figma from "./_figma.md";
+
+import "@nl-design-system-candidate/code-css/code.css";
 
 {/* Add name and description for the component */}
 export const title = "Code";
@@ -44,21 +55,54 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <ComponentAliases component={component} />
 
-## Gebruik deze component
+Alternatieven: Gebruik de component [Code Block](/code-block) als de code meerdere regels beslaat.
 
-Let op: Gebruik de component [Code Block](/code-block) als de code meerdere regels beslaat.
+## Definition of Done
 
-<Markdown omitH1 headingLevel={3}>
-  <Usage />
-</Markdown>
+<DefinitionOfDone component={component} headingLevel={3} />
 
 ## Anatomie
 
 <ComponentAnatomy component={component} illustration={CodeIllustration} />
 
-## Definition of Done
+## Gebruiken
 
-<DefinitionOfDone component={component} headingLevel={3} />
+<Tabs>
+  <TabItem value="css" label="CSS" default>
+
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-css](https://www.npmjs.com/package/@nl-design-system-candidate/code-css)
+
+### Voorbeeld
+
+    <CSSCode />
+    <Markdown omitH1 headingLevel={3}>
+      <CSS />
+    </Markdown>
+
+  </TabItem>
+  <TabItem value="react" label="React">
+  [<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-react](https://www.npmjs.com/package/@nl-design-system-candidate/code-react)
+  
+  ### Voorbeeld
+
+    <ReactCode />
+
+    <Markdown omitH1 headingLevel={3}>
+      <React />
+    </Markdown>
+
+  </TabItem>
+  <TabItem value="figma" label="Figma">
+    <Markdown omitH1 headingLevel={3}>
+      <Figma />
+    </Markdown>
+  </TabItem>
+
+  <TabItem value="design tokens" label="Design Tokens">
+    {JSON.stringify(Object.keys(TokensJSON.nl['code']))}
+    {JSON.stringify(TokensJSON)}
+  </TabItem>
+</Tabs>
 
 ## Community Implementaties
 
