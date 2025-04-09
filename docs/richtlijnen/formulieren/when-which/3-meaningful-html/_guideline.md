@@ -12,10 +12,10 @@ HTML-elementen geven naast de vormgeving ook betekenis aan tekst of aan de struc
 
 Een selectie van veelgebruikte HTML-elementen en hun betekenis:
 
-Markeer gebieden of landmarks. Bijvoorbeeld met: `<header>`, `<main>`, `<footer>` en `<nav>`.
-Geef teksten structuur met koppen. Gebruik hiervoor het h-element. Bijvoorbeeld: `<h1>` of `<h4>`.
-Maak onderscheid tussen knoppen en links met `<button>` en `<a>`.
-Som gegevens op via lijsten door gebruik van `<ul>`, `<ol>` of `<dl>`.
+- Markeer gebieden of landmarks. Bijvoorbeeld met: `<header>`, `<main>`, `<footer>` en `<nav>`.
+- Geef teksten structuur met koppen. Gebruik hiervoor het h-element. Bijvoorbeeld: `<h1>` of `<h4>`.
+- Maak onderscheid tussen knoppen en links met `<button>` en `<a>`.
+- Som gegevens op via lijsten door gebruik van `<ul>`, `<ol>` of `<dl>`.
 
 ## Standaard HTML of zelfgebouwde interactieve elementen
 
