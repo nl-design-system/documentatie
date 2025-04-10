@@ -11,6 +11,46 @@ import { VideoPlayer } from "@site/src/components/VideoPlayer";
 
 # NL Design System thema maken
 
+Op deze pagina wordt uitgelegd wat een thema precies is, hoe thema's werken binnen NL Design System en hoe je er zelf één kunt maken voor jouw organisatie.
+
+## Wat is een NL Design System thema?
+
+Thema's zijn gestructureerde collecties van _design tokens_. Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
+
+Deze collectie kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit het basisthema. Het basisthema definieert defaultwaardes voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
+
+Een nieuw thema bestaat uit drie lagen:
+
+1. **De brand-laag**. Hierin staan alle waardes over de gehele huisstijl die gebruikt mogen worden. Dit zijn bijvoorbeeld het complete palet aan kleuren, alle mogelijke diktes van borders en alle toegestane lettergroottes.
+1. **De common-laag**. Hierin:
+   - worden de kleuren uit de **brand** laag gekoppeld aan design tokens uit het basisthema en
+   - worden algemene tokens gedefinieerd voor componenten met veel overlap zoals bijvoorbeeld formulierelementen die dezelfde achtergrondkleur hebben en headings die hetzelfde lettertype gebruiken.
+1. **De componenten-laag**. Hierin staan tokens voor alle gebruikte componenten die niet onder common vallen en afwijken van de waardes uit het basisthema.
+
+De design tokens zijn gestructureerd in een JSON-bestand volgens het [Design Tokens Format](https://tr.designtokens.org/format/). Met behulp van [Style Dictionary](https://amzn.github.io/style-dictionary/) kan dit JSON-bestand worden omgezet in CSS. Met de plugin van [Token Studio](https://tokens.studio/plugin) kan dit bestand direct worden gebruikt om onze componenten te stylen in Figma.
+
+## Hoe weet ik of ik een nieuw thema moet maken?
+
+Diverse gemeentes en andere organisaties hebben al een thema gepubliceerd. Alle beschikbare themas voor NL Design System staan in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Als er in de map [proprietary](https://github.com/nl-design-system/themes/tree/main/proprietary) een map staat voor jouw organisatie kun je dat thema gebruiken. Op de pagina **TODO** kun je lezen hoe dat werkt. Als er geen map staat voor jouw organisatie, dan kun je zelf een thema maken.
+
+## Welke stappen moet ik volgen om een nieuw thema te maken?
+
+**TODO**
+
+## Hoe vul ik het thema met de juiste waardes voor onze huisstijl?
+
+**TODO**
+
+## Hoe publiceer ik mijn thema voor anderen?
+
+**TODO**
+
+---
+
+---
+
+---
+
 Zoals beschreven in [Ontwikkel een thema voor jouw organisatie](/handboek/developer/aan-de-slag#ontwikkel-een-thema-voor-jouw-organisatie): thema's zijn technisch JSON-bestanden waarin design tokens zijn gedefinieerd. Met tooling maken we ze beschikbaar als custom properties in CSS.
 
 ## Design tokens vastleggen
