@@ -3,14 +3,14 @@
  {
   54944: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => y, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => g, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(37635),
     s = n(8657);
-   const o = { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: ' ', slug: '/page-number-navigation' },
+   const o = { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: "Navigatie naar andere pagina's wanneer een grote hoeveelheid informatie is verdeeld over genummerde pagina's.", slug: '/page-number-navigation' },
     a = void 0,
-    u = { id: 'componenten/page-number-navigation/index', title: 'Page Number Navigation', description: ' ', source: '@site/docs/componenten/page-number-navigation/index.mdx', sourceDirName: 'componenten/page-number-navigation', slug: '/page-number-navigation', permalink: '/page-number-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-number-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: ' ', slug: '/page-number-navigation' }, sidebar: 'componenten', previous: { title: 'Page Header', permalink: '/page-header' }, next: { title: 'Paragraph', permalink: '/paragraph' } },
+    u = { id: 'componenten/page-number-navigation/index', title: 'Page Number Navigation', description: "Navigatie naar andere pagina's wanneer een grote hoeveelheid informatie is verdeeld over genummerde pagina's.", source: '@site/docs/componenten/page-number-navigation/index.mdx', sourceDirName: 'componenten/page-number-navigation', slug: '/page-number-navigation', permalink: '/page-number-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/page-number-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Page Number Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Page Number Navigation', pagination_label: 'Page Number Navigation', description: "Navigatie naar andere pagina's wanneer een grote hoeveelheid informatie is verdeeld over genummerde pagina's.", slug: '/page-number-navigation' }, sidebar: 'componenten', previous: { title: 'Page Header', permalink: '/page-header' }, next: { title: 'Paragraph', permalink: '/paragraph' } },
     l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
@@ -18,12 +18,12 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     d = 'Page Number Navigation',
-    j = '',
-    y = 106,
-    g = c.find((e) => e.number === y);
+    j = "Navigatie naar andere pagina's wanneer een grote hoeveelheid informatie is verdeeld over genummerde pagina's.",
+    g = 106,
+    y = c.find((e) => e.number === g);
    function m(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: y, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: y, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -83,10 +83,10 @@
      return (0, l.jsx)(r.JO, { children: h[t] || (0, l.jsx)(u.Z, {}) });
     };
    var j = n(35038),
-    y = n(40598);
-   const g = (e) => {
+    g = n(40598);
+   const y = (e) => {
     let { checked: t, unchecked: r } = e;
-    return (0, l.jsx)(y.Z, {
+    return (0, l.jsx)(g.Z, {
      fallback: (0, l.jsx)(l.Fragment, {}),
      children: () => {
       const e = n(79333).YE;
@@ -183,7 +183,7 @@
              children: (0, l.jsxs)(j.aY, {
               children: [
                (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(y, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                s.length > 0 &&
                 (0, l.jsxs)(l.Fragment, {
                  children: [
