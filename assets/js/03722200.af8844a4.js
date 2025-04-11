@@ -3,7 +3,7 @@
  [74075],
  {
   54712: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => w, contentTitle: () => x, default: () => _, frontMatter: () => b, metadata: () => f, toc: () => D });
+   t.r(n), t.d(n, { assets: () => D, contentTitle: () => x, default: () => z, frontMatter: () => b, metadata: () => f, toc: () => y });
    var a = t(52676),
     r = t(40139),
     i = t(16167),
@@ -15,7 +15,7 @@
     m = { name: 'Rozerin Ayerdem', role: 'Designer', slack: { mention: '@Rozerin', id: 'D038ABXNAG3' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als ontwerper is Rozerin bezig met het verzamelen, toevoegen en documenteren van interactiepatronen, componenten en richtlijnen. Ze werkte vanuit haar eerdere rol bij de gemeente Den Haag al samen met het kernteam van NL Design System.' }), (0, a.jsx)(i.nv, { children: 'Naast haar werk is Rozerin gepassioneerd door reizen, natuur, fotografie en architectuur.' })] }) },
     g = { name: 'Yolijn van der Kolk', role: 'Productmanager & Developer Relations', slack: { mention: '@Yolijn', id: 'U01B7T1F24S' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als productmanager is Yolijn graag de schakel tussen de verschillende stakeholders en het kernteam van NL Design System. Ze combineert graag het uitwerken van een lange termijn visie met het opknippen van grote mijlpalen naar kleine, toetsbare onderdelen.' }), (0, a.jsx)(i.nv, { children: 'Bij eerdere projecten bleek al dat ze graag de schakel is tussen de makers van een component en de verscheidenheid aan organisaties die het white-label design system afnemen en aanpassen naar hun eigen Design Tokens. In de rol van Developer Relations ontdekt ze graag na een lekker kopje koffie wat de gemene deler is tussen componenten en stijlen bij verschillende applicaties.' })] }) },
     h = { name: 'Menno van Slooten', role: 'Developer Relations Engineer', slack: { mention: '@Menno van Slooten', id: 'U08FUAASWUE' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als Developer Relations Engineer zorgt Menno ervoor dat nieuwe developers snel aan de slag kunnen met NL Design system en dat eventuele vragen snel beantwoord worden.' }), (0, a.jsx)(i.nv, { children: 'In zijn vrije tijd speelt hij graag gitaar en perfectioneert hij zijn recept voor saucijzenbroodjes.' })] }) },
-    j = { name: 'Erik Kroes', role: 'Specialist webtoegankelijkheid', slack: { mention: '@Erik Kroes', id: 'U07A578KX8D' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als (ervarings)deskundige ondersteunt Erik het NL Design System en al haar gebruikers op het gebied van digitale toegankelijkheid. Samen zorgen we ervoor de we de beste bouwblokken hebben, en die kunnen gebruiken om digitale ervaringen te bouwen voor iedereen.' }), (0, a.jsx)(i.nv, { children: 'Digitale toegankelijkheid en design systems zijn ware passies voor Erik, vooral binnen grote organisaties. Vraag hem wat je wilt, want hij geeft overal antwoord op en deelt graag. Hij deelt zowel binnen NL Design System als via blogs, meetups en welk kanaal je maar kan bedenken.' }), (0, a.jsx)(i.nv, { children: 'Nog belangrijker dan dat alles vind ik mijn gezin. Ik doe graag dingen samen! Als het kan in de tuin of in het bos. En als er dan nog tijd en energie over is? Een beetje Lego bouwen is altijd fijn!' })] }) },
+    j = { name: 'Erik Kroes', role: 'Specialist webtoegankelijkheid', slack: { mention: '@Erik Kroes', id: 'U07A578KX8D' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als (ervarings)deskundige ondersteunt Erik het NL Design System en al haar gebruikers op het gebied van digitale toegankelijkheid. Samen zorgen we ervoor de we de beste bouwblokken hebben, en die kunnen gebruiken om digitale ervaringen te bouwen voor iedereen.' }), (0, a.jsx)(i.nv, { children: 'Digitale toegankelijkheid en design systems zijn ware passies voor Erik, vooral binnen grote organisaties. Hij deelt zowel binnen NL Design System als via blogs, meetups en andere kanalen.' }), (0, a.jsx)(i.nv, { children: 'Nog belangrijker dan dat alles vind ik mijn gezin. Ik doe graag dingen samen! Als het kan in de tuin of in het bos. En als er dan nog tijd en energie over is? Een beetje Lego bouwen is altijd fijn!' })] }) },
     v = { name: 'Renate Roke', role: 'Specialist webtoegankelijkheid', slack: { mention: '@Renate Roke', id: 'U08BJAEAEUU' }, Description: () => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(i.nv, { children: 'Als Specialist Webtoegankelijkheid beschrijft Renate onder andere acceptatiecriteria voor componenten in het NL Design System en helpt ze de community op weg met tips over toegankelijkheid. Hiervoor gebruikt ze haar jarenlange kennis in toegankelijkheidsonderzoeken en haar passie om kennis over te dragen. Ze denkt vooral graag mee over wat er w\xe9l kan.' }), (0, a.jsx)(i.nv, { children: 'In haar vrije tijd is Renate graag buiten: aan het wandelen, aan het kamperen of op het terras. Daarnaast leest ze heel veel boeken en heeft ze veel creatieve hobbies.' })] }) };
    var p = t(35038);
    const k = [o, g, c, d, m, l, h, j, v],
@@ -32,15 +32,15 @@
     b = { title: 'Kernteam \xb7 Project', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Kernteam', pagination_label: 'Kernteam', description: 'Contact met NL Design System Kernteam', keywords: ['kernteam', 'over ons', 'nl design system', 'contact'] },
     x = 'Kernteam',
     f = { id: 'project/kernteam', title: 'Kernteam \xb7 Project', description: 'Contact met NL Design System Kernteam', source: '@site/docs/project/kernteam.mdx', sourceDirName: 'project', slug: '/project/kernteam', permalink: '/project/kernteam', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/project/kernteam.mdx', tags: [], version: 'current', frontMatter: { title: 'Kernteam \xb7 Project', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Kernteam', pagination_label: 'Kernteam', description: 'Contact met NL Design System Kernteam', keywords: ['kernteam', 'over ons', 'nl design system', 'contact'] }, sidebar: 'project', previous: { title: 'Veelgestelde vragen', permalink: '/project/faq' }, next: { title: 'Op de hoogte blijven', permalink: '/project/blijf-op-de-hoogte' } },
-    w = {},
-    D = [];
-   function y(e) {
+    D = {},
+    y = [];
+   function _(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.h1, { id: 'kernteam', children: 'Kernteam' }), '\n', (0, a.jsxs)(n.p, { children: ['Naast de community is er een enthousiast kernteam dat zich dagelijks inzet voor het NL Design System. Kennismaken met het kernteam? Neem contact op door een e-mail te sturen naar ', (0, a.jsx)(n.a, { href: 'mailto:kernteam@nldesignsystem.nl', children: 'kernteam@nldesignsystem.nl' })] }), '\n', (0, a.jsx)(u, { headingLevel: 2 })] });
    }
-   function _(e = {}) {
+   function z(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(y, { ...e }) }) : y(e);
+    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(_, { ...e }) }) : _(e);
    }
   },
   35038: (e, n, t) => {
