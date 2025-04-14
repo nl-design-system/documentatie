@@ -2,8 +2,8 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [11767],
  {
-  93801: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => j, contentTitle: () => u, default: () => v, frontMatter: () => m, metadata: () => p, toc: () => b });
+  30540: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => p, contentTitle: () => m, default: () => k, frontMatter: () => g, metadata: () => u, toc: () => j });
    var t = i(52676),
     r = i(40139),
     a = i(57716),
@@ -11,33 +11,26 @@
     l = i(16167),
     o = i(60256),
     c = i(99042),
-    d = i(91114);
-   function h(e) {
-    const n = { p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld: de toegankelijk naam van een link is de linktekst, of alternatieve tekst van een gelinkte afbeelding of een aria-label dat de inhoud van de linktekst overschrijft. De alt-tekst en het aria-label moeten overeenkomen of beginnen met de zichtbare tekst.' }), '\n', (0, t.jsx)(n.p, { children: 'Een verschil in naam geeft problemen voor mensen die spraakbediening gebruiken. Als je zegt: "Klik Contact", dan zoekt de spraaksoftware naar een link met de toegankelijke naam "Contact". Hierdoor kan een gebruiker van spraakbediening makkelijker door een website navigeren.' })] });
-   }
-   function g(e = {}) {
-    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
-   }
-   const m = { title: 'WCAG-succescriterium 2.5.3 Label in Naam', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.5.3 Label in Naam', pagination_label: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', slug: '2.5.3', keywords: ['WCAG'] },
-    u = void 0,
-    p = { id: 'wcag/2.5.03', title: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', source: '@site/docs/wcag/2.5.03.mdx', sourceDirName: 'wcag', slug: '/wcag/2.5.3', permalink: '/wcag/2.5.3', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.5.03.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.5.3 Label in Naam', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.5.3 Label in Naam', pagination_label: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', slug: '2.5.3', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.5.2 Aanwijzerannulering', permalink: '/wcag/2.5.2' }, next: { title: 'WCAG-succescriterium 2.5.4 Bewegingsactivering', permalink: '/wcag/2.5.4' } },
-    j = {},
-    b = [
+    d = i(91114),
+    h = i(77027);
+   const g = { title: 'WCAG-succescriterium 2.5.3 Label in Naam', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.5.3 Label in Naam', pagination_label: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', slug: '2.5.3', keywords: ['WCAG'] },
+    m = void 0,
+    u = { id: 'wcag/2.5.03', title: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', source: '@site/docs/wcag/2.5.03.mdx', sourceDirName: 'wcag', slug: '/wcag/2.5.3', permalink: '/wcag/2.5.3', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.5.03.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.5.3 Label in Naam', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.5.3 Label in Naam', pagination_label: 'WCAG-succescriterium 2.5.3 Label in Naam', description: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.', slug: '2.5.3', keywords: ['WCAG'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.5.2 Aanwijzerannulering', permalink: '/wcag/2.5.2' }, next: { title: 'WCAG-succescriterium 2.5.4 Bewegingsactivering', permalink: '/wcag/2.5.4' } },
+    p = {},
+    j = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Opgelet', id: 'opgelet', level: 2 },
      { value: 'Gebruikersonderzoek', id: 'gebruikersonderzoek', level: 2 },
      { value: 'W3C referenties', id: 'w3c-referenties', level: 2 },
      { value: 'Help richtlijn verbeteren', id: 'help-richtlijn-verbeteren', level: 2 },
     ];
-   function k(e) {
+   function b(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.a)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(s.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.5.3 Label in Naam' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(g, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(o.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#label-in-name', children: (0, t.jsx)('span', { lang: 'en', children: '2.5.3 Label in Name' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#label-in-naam', children: '2.5.3 Label in Naam' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#label-in-name', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 2.5.3 Label in Name' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 2.5.3 Label in Name' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(a.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(a.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) })] });
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', '\n', (0, t.jsx)(s.j, { level: 1, conformanceLevel: 'Niveau A', children: 'WCAG-succescriterium 2.5.3 Label in Naam' }), '\n', (0, t.jsx)(n.h2, { id: 'uitleg', children: 'Uitleg' }), '\n', (0, t.jsx)(h.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'opgelet', children: 'Opgelet' }), '\n', (0, t.jsx)(n.p, { children: 'Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.' }), '\n', (0, t.jsx)(n.h2, { id: 'gebruikersonderzoek', children: 'Gebruikersonderzoek' }), '\n', (0, t.jsx)(o.ZP, {}), '\n', (0, t.jsx)(n.h2, { id: 'w3c-referenties', children: 'W3C referenties' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Engelse tekst van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/#label-in-name', children: (0, t.jsx)('span', { lang: 'en', children: '2.5.3 Label in Name' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Nederlandse vertaling van het WCAG-succescriterium: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/Translations/WCAG22-nl/#label-in-naam', children: '2.5.3 Label in Naam' }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige informatie op ', (0, t.jsx)('span', { lang: 'en', children: 'How to Meet WCAG' }), ': ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/quickref/#label-in-name', children: (0, t.jsx)('span', { lang: 'en', children: 'Quick Reference 2.5.3 Label in Name' }) }), '.'] }), '\n', (0, t.jsxs)(n.li, { children: ['Engelstalige toelichting: ', (0, t.jsx)(n.a, { href: 'https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Understanding SC 2.5.3 Label in Name' }) }), '.'] }), '\n'] }), '\n', (0, t.jsx)(l.CY, { children: (0, t.jsx)(a.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(c.ZP, {}) }) }), '\n', (0, t.jsx)(n.h2, { id: 'help-richtlijn-verbeteren', children: 'Help richtlijn verbeteren' }), '\n', (0, t.jsx)(a.U, { omitH1: !0, headinglevel: 3, children: (0, t.jsx)(d.ZP, {}) })] });
    }
-   function v(e = {}) {
+   function k(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(k, { ...e }) }) : k(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(b, { ...e }) }) : b(e);
    }
   },
   60256: (e, n, i) => {
@@ -73,6 +66,19 @@
    function a(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }), '\n', (0, t.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door het NL Design System. Heb je aanvullingen of opmerkingen? ", (0, t.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, r.a)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(a, { ...e }) }) : a(e);
+   }
+  },
+  77027: (e, n, i) => {
+   i.d(n, { ZP: () => s });
+   var t = i(52676),
+    r = i(40139);
+   function a(e) {
+    const n = { p: 'p', ...(0, r.a)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.' }), '\n', (0, t.jsx)(n.p, { children: 'Bijvoorbeeld: de toegankelijk naam van een link is de linktekst, of alternatieve tekst van een gelinkte afbeelding of een aria-label dat de inhoud van de linktekst overschrijft. De alt-tekst en het aria-label moeten overeenkomen of beginnen met de zichtbare tekst.' }), '\n', (0, t.jsx)(n.p, { children: 'Een verschil in naam geeft problemen voor mensen die spraakbediening gebruiken. Als je zegt: "Klik Contact", dan zoekt de spraaksoftware naar een link met de toegankelijke naam "Contact". Hierdoor kan een gebruiker van spraakbediening makkelijker door een website navigeren.' })] });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };
