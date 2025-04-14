@@ -52,7 +52,7 @@ export const NewsletterSignUp = ({
     formState: { errors },
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
-  const IS_ENGLISH = language && language.value === '2';
+  const IS_ENGLISH = language?.value === '2';
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
@@ -128,7 +128,9 @@ export const NewsletterSignUp = ({
       {orgId && (
         <FormField type="text">
           <Paragraph>
-            <FormLabel htmlFor={orgId}>Organisatie (niet verplicht)</FormLabel>
+            <FormLabel htmlFor={orgId}>
+              {IS_ENGLISH ? 'Organisation (not required)' : 'Organisatie (niet verplicht)'}
+            </FormLabel>
           </Paragraph>
           {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
@@ -171,10 +173,16 @@ export const NewsletterSignUp = ({
       {privacyPolicyId && (
         <FormField type="text">
           <FormFieldDescription id={`${privacyPolicyId}-description`}>
-            <p>
-              Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
-              toepassing.
-            </p>
+            {IS_ENGLISH ? (
+              <p>
+                The <a href="/privacy-policy">privacy policy</a> of NL Design System applies to our activities.
+              </p>
+            ) : (
+              <p>
+                Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
+                toepassing.
+              </p>
+            )}
           </FormFieldDescription>
           <FormField type="checkbox">
             <Checkbox
@@ -185,21 +193,24 @@ export const NewsletterSignUp = ({
               {...register(`${privacyPolicyId}[]`, {
                 required: {
                   value: true,
-                  message: 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
+                  message: IS_ENGLISH
+                    ? 'You can only register if you agree with the privacy policy.'
+                    : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
                 },
               })}
               invalid={!!errors[`${privacyPolicyId}[]`]}
             />
             <FormLabel htmlFor={`${privacyPolicyId}-1`}>
-              {' '}
-              Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring
+              {IS_ENGLISH
+                ? 'I agree to the use of my data in accordance with the privacy policy'
+                : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring'}
             </FormLabel>
           </FormField>
           {errors[privacyPolicyId] && <FormFieldErrorMessage>{errors[privacyPolicyId].message}</FormFieldErrorMessage>}
         </FormField>
       )}
 
-      {language && <input type="hidden" name={language.id} value={language.value} />}
+      {language?.id && <input type="hidden" name={language.id} value={language.value} />}
 
       <ButtonGroup>
         <Button type="submit" appearance="primary-action-button">

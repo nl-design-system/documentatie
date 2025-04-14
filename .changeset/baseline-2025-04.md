@@ -2,4 +2,4 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-Acceptatiecriteria voor component Login Link.
+Updated baseline: 2025-04

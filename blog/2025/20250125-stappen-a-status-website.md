@@ -6,7 +6,7 @@ authors:
     title: Specialist webtoegankelijkheid
     url: https://www.linkedin.com/in/rianrietveld/
 tags: [A status, toegankelijkheid, toegankelijkheidsverklaring]
-image: https://github.com/nl-design-system/documentatie/blob/assets/blog-9-stappen.png
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/blog-9-stappen.png
 hide_table_of_contents: false
 date: 2025-02-10
 ---

@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.3 Contrast (minimum)
 pagination_label: WCAG-succescriterium 1.4.3 Contrast (minimum)
-description: Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.
+description: Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet sterk genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.
 slug: 1.4.3
 keywords:
   - WCAG
@@ -36,10 +36,10 @@ Overleg met de bouwer over goede en flexibele oplossingen voor het gebruik van t
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Stijl - Kleuren: [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst)
-- Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons)
-- Formulieren - Placeholders: [Zorg voor een goed kleurcontrast van de placeholdertekst](/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar)
-- Formulieren - Visueel ontwerp: [Geef tekst voldoende kleurcontrast](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar)
+- Stijl - Kleuren: [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst).
+- Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
+- Formulieren - Placeholders: [Zorg voor een goed kleurcontrast van de placeholdertekst](/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar).
+- Formulieren - Visueel ontwerp: [Geef tekst voldoende kleurcontrast](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar).
 
 ## Bronnen en tools
 
@@ -54,15 +54,15 @@ Bepaal het kleurcontrast van tekst ten opzichte van de achtergrond. Hoe je test 
 
 Neem ook afbeeldingen waar tekst in staat mee, als deze tekst onderdeel is van de content. Hier is de [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/) handig, omdat je daarmee een pipetje kan gebruiken als je de kleurcodes niet weet.
 
-_Let op_: Deze eis geldt niet voor tekst op een afbeelding van een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.
+**Let op:** Deze eis geldt niet voor tekst op een afbeelding van een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.
 
-Het NL Design System biedt een makkelijke tool voor het bepalen van kleurcontrast aan. Door het invoeren van de hexadecimale code van de tekstkleur en achtergrondkleur kun je controleren of de tekst voldoet aan WCAG op: [Contrast van kleuren](https://nldesignsystem.nl/contrast/?color=%23999999&background-color=%23f8f5f1).
+Het NL Design System biedt een makkelijke tool voor het bepalen van kleurcontrast aan. Door het invoeren van de hexadecimale code van de tekstkleur en achtergrondkleur kun je controleren of de tekst voldoet aan WCAG op: [Contrast van kleuren](https://nldesignsystem.nl/contrast/).
 
 Voor ontwerpers is er voor Figma een aantal goede tools: [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast).
 
 Voor developers: axe DevTools berekent het kleurcontrast ten opzichte van de tekst in de browser: [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/).
 
-_Let op_: Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
+**Let op:** Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
 
 Ben je geen designer of developer en test je het kleurcontrast in de browser, dan is WAVE handig: [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/).
 
@@ -71,9 +71,9 @@ Verder staan er tools bij de bronnen op [Richtlijnen NL Design System voor kleur
 Controleer in de volgende situaties of het kleurcontrast van de tekst voldoende blijft:
 
 - Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.
-- Verschillend oriëntaties: _portrait_ en _landscape_.
+- Verschillend oriëntaties: 'portrait' en 'landscape'.
 - Vergroot de tekst alleen tot 200%.
-- Zoom in tot 400%.
+- Zoom in tot 400% vanaf schermbreedte van 1280 pixels (of zet de schermbreedte op 320 pixels).
 - Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de tekst.
 - Controleer het kleurcontrast van placeholders.
 - Controleer de verschillende weergave van buttons en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, al eerder bezocht.
