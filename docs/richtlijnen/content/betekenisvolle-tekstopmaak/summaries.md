@@ -13,7 +13,7 @@ keywords:
 
 # Opsommingen
 
-Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoe groot een lijst is en maakt het mogelijk een opsomming over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te ‘scannen’.
+Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoeveel items een lijst heeft en maakt het mogelijk om 'm over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te ‘scannen’.
 
 ## Lijst-elementen
 
