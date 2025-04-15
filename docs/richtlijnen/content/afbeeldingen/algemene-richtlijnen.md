@@ -7,8 +7,19 @@ pagination_label: Algemene richtlijnen
 description: Algemene richtlijnen voor afbeeldingen in NL Design System.
 slug: /richtlijnen/content/afbeeldingen/algemene-richtlijnen
 keywords:
-  - copywriter
-  - taalgebruik
+  - afbeeldingen
+  - alternatieve tekst
+  - alt tekst
+  - beeldbeschrijving
+  - alt attribuut
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - toegankelijke afbeeldingen
+  - alt in cms
+  - mediabibliotheek
 ---
 
 # Algemene richtlijnen
@@ -42,9 +53,8 @@ Controleer of je een goed tekstalternatief hebt geschreven door na te gaan of je
 - Is de alt-tekst in de juiste taal geschreven?
 - Krijgt de bezoeker alleen relevante informatie die met de afbeelding gegeven wordt?
 
-## Meer informatie
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
-- [W3C - Beslisboom voor afbeeldingen (Engels)](https://www.w3.org/WAI/tutorials/images/decision-tree/)
-- [W3C - Richtlijn tekstalternatieven (Engels)][https://www.w3.org/WAI/WCAG22/Understanding/text-alternatives]
-- [Nielsen Norman Group - Alt-text (Engels)](https://www.nngroup.com/articles/write-alt-text/)
-- [Deque - Introductie alternatieve teksten](https://www.deque.com/blog/great-alt-text-introduction/)
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)

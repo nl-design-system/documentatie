@@ -7,8 +7,17 @@ pagination_label: Functionele afbeeldingen
 description: Functionele afbeeldingen in NL Design System.
 slug: /richtlijnen/content/afbeeldingen/functionele-afbeeldingen
 keywords:
-  - copywriter
-  - taalgebruik
+  - afbeeldingen
+  - alternatieve tekst
+  - alt tekst
+  - beeldbeschrijving
+  - alt attribuut
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - toegankelijke afbeeldingen
 ---
 
 # Functionele afbeeldingen
@@ -36,3 +45,9 @@ Een voorbeeld van een beschrijvende alternatieve tekst is dan: 'Logo NL Design S
 ### Waar stel je de alternatieve tekst van het logo als link naar de homepage in?
 
 Het verschilt per contentmanagementsysteem (CMS) waar je dit aan kunt passen en of je dit als contentmaker zelf kunt doen. Meestal zit deze optie in de thema-instellingen van het CMS. Het kan daarom zijn dat je geen rechten hebt om de alternatieve tekst van het logo bovenaan iedere pagina zelf aan te passen. Vraag dit dan aan de beheerder of leverancier van je website.
+
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)

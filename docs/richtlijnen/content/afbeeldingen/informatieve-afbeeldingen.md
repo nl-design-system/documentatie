@@ -7,8 +7,20 @@ pagination_label: Informatieve afbeeldingen
 description: Informatieve afbeeldingen in NL Design System.
 slug: /richtlijnen/content/afbeeldingen/informatieve-afbeeldingen
 keywords:
-  - copywriter
-  - taalgebruik
+  - afbeeldingen
+  - alternatieve tekst
+  - alt tekst
+  - beeldbeschrijving
+  - alt attribuut
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - toegankelijke afbeeldingen
+  - informatieve afbeelding
+  - informatieve afbeeldingen
+  - informatief
 ---
 
 # Informatieve afbeeldingen
