@@ -7,8 +7,14 @@ pagination_label: Opsommingen
 description: Opsommingen in NL Design System
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/opsommingen
 keywords:
-  - copywriter
-  - taalgebruik
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+  - opsommingen
+  - geordende
+  - ongeordende
+  - lijst
 ---
 
 # Opsommingen
