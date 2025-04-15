@@ -7,8 +7,16 @@ pagination_label: Dik- of schuingedrukte tekst
 description: Dik- of schuingedrukte tekst in NL Design System
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/dik-en-of-schuingedrukte-tekst
 keywords:
-  - copywriter
-  - taalgebruik
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+  - dikgedrukt
+  - schuingedrukt
+  - strong
+  - em
+  - bold
+  - italic
 ---
 
 # Dik- of schuingedrukte tekst

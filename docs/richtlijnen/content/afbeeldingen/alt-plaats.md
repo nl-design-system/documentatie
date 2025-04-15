@@ -7,8 +7,19 @@ pagination_label: Waar moet een alternatieve tekst staan?
 description: Richtlijnen over de plaats van een alternatieve tekst voor afbeeldingen in NL Design System.
 slug: /richtlijnen/content/afbeeldingen/alt-plaats
 keywords:
-  - copywriter
-  - taalgebruik
+  - afbeeldingen
+  - alternatieve tekst
+  - alt tekst
+  - beeldbeschrijving
+  - alt attribuut
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - toegankelijke afbeeldingen
+  - caption
+  - accordion
 ---
 
 # Waar moet een alternatieve tekst staan?
@@ -38,3 +49,9 @@ Een voorbeeld van de tekst in het alt-attribuut kan dan zijn:
 alt="Infographic migratie Nederland, zie voor een uitgebreide beschrijving de tekst direct onder deze afbeelding"
 
 Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit de infographic. Vergeet niet een kopje toe te voegen boven deze tekst, zodat gebruikers van hulpsoftware de tekst snel kunnen vinden. Als jouw CMS de optie biedt, kun je ervoor kiezen de tekst in een Accordion (uitklapper) te plaatsen. Bezoekers die de tekst willen lezen kunnen daar dan zelf voor kiezen en bezoekers die de tekst niet willen lezen kunnen de tekst overslaan.
+
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)

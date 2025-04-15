@@ -27,7 +27,7 @@ Bezoekers die slechtziend of kleurenblind zijn hebben ook moeite met tekst in ee
 
 ## Op een toegankelijke manier tekst in een afbeelding gebruiken
 
-Als je een afbeelding van tekst wilt of moet gebruiken, kies er dan ook altijd voor om de informatie uit de afbeelding ook als tekst op de pagina te plaatsen. Bijvoorbeeld in een uitleg onder een infographic, of een samenvatting of tabel onder een grafiek. Zie ook [Waar moet een alternatieve tekst staan?](/richtlijnen/content/afbeeldingen/alt-plaats).
+Als je een afbeelding van tekst wilt of moet gebruiken, kies er dan ook altijd voor om de informatie uit de afbeelding ook als tekst op de pagina te plaatsen. Bijvoorbeeld in een uitleg onder een infographic, of een samenvatting of tabel onder een grafiek. Zie ook [Waar moet een alternatieve tekst staan?](/richtlijnen/content/afbeeldingen/alt-plaats). Voeg daarnaast ook altijd een alternatieve tekst toe en beschrijf daarin waar de bezoeker op de pagina een uitgebreidere uitleg kan lezen.
 
 ## Afbeeldingen met alléén tekst
 
@@ -42,3 +42,10 @@ Een paar soorten afbeeldingen van tekst hoeven niet te voldoen aan de toegankeli
 - Afbeeldingen van tekst, waar de bezoeker zélf invloed heeft op hoe de tekst eruit ziet
 
 In de praktijk komt het tweede eigenlijk nooit voor, dus wees altijd voorzichtig met afbeeldingen van tekst.
+
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+- [Succescriterium 1.4.5 Afbeeldingen van tekst](/wcag/1.4.5)

@@ -7,8 +7,16 @@ pagination_label: Tabellen
 description: Tabellen in NL Design System
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/tabellen
 keywords:
-  - copywriter
-  - taalgebruik
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+  - tabel
+  - tabellen
+  - tabelopmaak
+  - tabelkop
+  - tabelbeschrijving
+  - tabelstructuur
 ---
 
 # Tabellen

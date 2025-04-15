@@ -7,8 +7,17 @@ pagination_label: Koppen
 description: Koppen in NL Design System
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/koppen
 keywords:
-  - copywriter
-  - taalgebruik
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+  - koppen
+  - koppenstructuur
+  - kopjes
+  - dikgedrukt
+  - kopopmaak
+  - bold
+  - strong
 ---
 
 # Koppen

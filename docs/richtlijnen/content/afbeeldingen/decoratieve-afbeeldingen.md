@@ -7,8 +7,20 @@ pagination_label: Decoratieve afbeeldingen
 description: Decoratieve afbeeldingen in NL Design System.
 slug: /richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen
 keywords:
-  - copywriter
-  - taalgebruik
+  - afbeeldingen
+  - alternatieve tekst
+  - alt tekst
+  - beeldbeschrijving
+  - alt attribuut
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - toegankelijke afbeeldingen
+  - decoratieve afbeelding
+  - decoratieve afbeeldingen
+  - decoratief
 ---
 
 # Decoratieve afbeeldingen
@@ -50,3 +62,9 @@ Mogelijke kenmerken:
 - Wat er op de achtergrond te zien is en of het voor ziende bezoekers duidelijk is, of moet zijn, wat er te zien is. Benoem je 'de Eiffeltoren' of 'Een hoge metalen constructie die taps toeloopt, met een antenne er op.'?
 
 Of iets relevant is om te benoemen ligt aan de context: het doel van de pagina en bijvoorbeeld de kern- en merkwaarden van je organisatie.
+
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
