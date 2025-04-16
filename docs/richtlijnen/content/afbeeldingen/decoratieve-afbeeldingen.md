@@ -23,6 +23,10 @@ keywords:
   - decoratief
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Decoratieve afbeeldingen
 
 Sommige afbeeldingen op een pagina geven je bezoeker niet méér informatie dan de informatie die ook al in de tekst staat. Dit noemen we decoratieve afbeeldingen.
