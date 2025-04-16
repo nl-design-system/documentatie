@@ -20,6 +20,8 @@ keywords:
   - strong
 ---
 
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Koppen
 
 Zorg voor een duidelijke structuur van de tekst op een pagina of scherm. Het structeren van de tekst op de pagina door gebruik te maken van koppen is heel belangrijk. Zo begrijpen bezoekers de inhoud en opbouw van de tekst. Daarnaast maakt het het navigeren op pagina's makkelijker.
@@ -58,3 +60,5 @@ Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakt
 - [Succescriterium 1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1)
 - [Succescriterium 2.4.6 Koppen en labels](https://nldesignsystem.nl/wcag/2.4.6)
 - [Succescriterium 2.4.10 Paragraafkoppen](https://nldesignsystem.nl/wcag/2.4.10)
+
+<FooterInfo />
