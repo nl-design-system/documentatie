@@ -24,7 +24,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Koppen
 
-Zorg voor een duidelijke structuur van de tekst op een pagina of scherm. Het structeren van de tekst op de pagina door gebruik te maken van koppen is heel belangrijk. Zo begrijpen bezoekers de inhoud en opbouw van de tekst. Daarnaast maakt het het navigeren op pagina's makkelijker.
+Zorg voor een duidelijke structuur van de tekst. Het structeren van de tekst op de pagina door gebruik te maken van koppen is heel belangrijk. Zo begrijpen bezoekers de inhoud en opbouw van de tekst. Daarnaast maakt het het navigeren op pagina's makkelijker.
 
 ## Voor wie zijn toegankelijke koppen belangrijk?
 
@@ -44,14 +44,13 @@ Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorl
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
-Gebruik de niveaus in de juiste volgorde:
+Gebruik de niveaus in de deze volgorde:
 
 - Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. De H1 geeft aan waar de hele pagina over gaat.
-- Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elke H2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal onder het hoofdonderwerp gaan.
+- Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elke H2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
 - Als je in een tekst onder een H2 nog wat meer detail wilt aanbrengen, gebruik je een kop van niveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
 - Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
-
-Sla ook geen kopniveaus over.
+- Sla geen niveaus over, door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

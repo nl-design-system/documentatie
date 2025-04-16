@@ -41,8 +41,8 @@ Bij goed gebruik van je tekstverwerker word je dikgedrukte of schuingedrukt teks
 
 ## Het verschil tussen dik- en schuingedrukt
 
-- Gebruik dikgedrukte tekst en strong-elementen om een deel van de zin extra belangrijk te maken. Bijvoorbeeld: **Pas op!** Dit is **erg gevaarlijk**.
-- Gebruik schuingedrukte tekst en het em-element om de betekenis van de zin aan te passen. Bijvoorbeeld: _Moet_ ik dit nu doen? of Moet _ik_ dit nu doen?
+- Je kunt dikgedrukte tekst (het strong-element) gebruiken om een deel van de zin extra belangrijk te maken. Bijvoorbeeld: **Pas op!** Dit is **erg gevaarlijk**.
+- Je kunt geschuingedrukte tekst (het em-element) gebruiken om de betekenis van de zin aan te passen. Bijvoorbeeld: _Moet_ ik dit nu doen? of Moet _ik_ dit nu doen?
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
