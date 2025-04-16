@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen
 pagination_label: Tabellen
-description: Tabellen in NL Design System
+description: Gebruik tabellen om gegevens te laten zien, niet alleen voor een mooiere opmaak.
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/tabellen
 keywords:
   - semantiek

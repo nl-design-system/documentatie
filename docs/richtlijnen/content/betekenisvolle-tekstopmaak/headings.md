@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Koppen
 pagination_label: Koppen
-description: Koppen in NL Design System
+description: Gebruik koppen voor een duidelijke structuur van de tekst op een pagina of scherm.
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/koppen
 keywords:
   - semantiek
