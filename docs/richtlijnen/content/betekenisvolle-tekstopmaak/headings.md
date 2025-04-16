@@ -20,6 +20,8 @@ keywords:
   - strong
 ---
 
+<!-- @license CC0-1.0 -->
+
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Koppen

@@ -11,6 +11,10 @@ keywords:
   - taalgebruik
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Tekst in een afbeelding
 
 Tekst in een afbeelding wordt niet voorgelezen door een schermlezer. Deze teksten zijn ook niet aan te passen voor de verschillende behoeften van de bezoeker, zoals bijvoorbeeld tekst vergroten of het verbeteren van het contrast. Bied daarom ook een alternatief aan in tekst.

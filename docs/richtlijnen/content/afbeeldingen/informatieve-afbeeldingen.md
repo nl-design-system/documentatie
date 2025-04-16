@@ -23,6 +23,10 @@ keywords:
   - informatief
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Informatieve afbeeldingen
 
 Mist iemand die de afbeelding niet ziet informatie als je de afbeelding weglaat? Dan is het waarschijnlijk een informatieve afbeelding. Informatieve afbeeldingen helpen de content op de pagina duidelijker te maken, of geven aanvullende informatie.
