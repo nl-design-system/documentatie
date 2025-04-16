@@ -51,3 +51,5 @@ Het verschilt per contentmanagementsysteem (CMS) waar je dit aan kunt passen en 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+
+<FooterInfo />

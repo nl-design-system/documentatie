@@ -39,10 +39,11 @@ Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:
 
 - Waarom wil ik deze afbeelding plaatsen?
 - Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?
+- Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?
 
 ## Alternatieve teksten verbergen voor hulpsoftware
 
-Gaat er geen belangrijke informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet wát er op de afbeelding staat, maar zelfs niet dát er een afbeelding staat. Sommige bezoekers die gebruik maken van hulpsoftware vinden dit fijn, zij slaan overbodige informatie dan automatisch over. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.
+Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet wát er op de afbeelding staat, maar zelfs niet dát er een afbeelding staat. Bezoekers die gebruik maken van bijvoorbeeld een schermlezer hoeven dan niet onnodig naar de beschrijving te luisteren. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.
 
 ## Sfeerbeelden
 
@@ -68,3 +69,5 @@ Of iets relevant is om te benoemen ligt aan de context: het doel van de pagina e
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+
+<FooterInfo />
