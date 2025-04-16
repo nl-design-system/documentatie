@@ -19,6 +19,8 @@ keywords:
   - italic
 ---
 
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Dik- of schuingedrukte tekst
 
 Leg nadruk op woorden of zinsdelen door ze dikgedrukt (bold) of schuingedrukt (italic) te maken. Gebruik hiervoor de knoppen van de content-editor op je website of in je tekstverwerker. Dit geeft de tekst niet alleen vorm, maar ook een betekenis mee.
@@ -39,11 +41,13 @@ Bij goed gebruik van je tekstverwerker word je dikgedrukte of schuingedrukt teks
 
 ## Het verschil tussen dik- en schuingedrukt
 
-Gebruik dikgedrukte tekst en strong-elementen om een deel van de zin extra belangrijk te maken. Bijvoorbeeld: **Pas op!** Dit is **erg gevaarlijk**.
-Gebruik schuingedrukte tekst en het em-element om de betekenis van de zin aan te passen. Bijvoorbeeld: _Moet_ ik dit nu doen? of Moet _ik_ dit nu doen?
+- Gebruik dikgedrukte tekst en strong-elementen om een deel van de zin extra belangrijk te maken. Bijvoorbeeld: **Pas op!** Dit is **erg gevaarlijk**.
+- Gebruik schuingedrukte tekst en het em-element om de betekenis van de zin aan te passen. Bijvoorbeeld: _Moet_ ik dit nu doen? of Moet _ik_ dit nu doen?
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+
+<FooterInfo />

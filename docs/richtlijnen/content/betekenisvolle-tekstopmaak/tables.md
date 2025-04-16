@@ -19,6 +19,8 @@ keywords:
   - tabelstructuur
 ---
 
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Tabellen
 
 Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk. Gebruik rijkoppen of kolomkoppen. De inhoud is dan ook begrijpelijk voor mensen die een schermlezer gebruiken. Gebruik tabellen niet alleen voor een mooiere opmaak. Plaats bijvoorbeeld geen afbeelding naast een tekst met de hulp van een tabel.
@@ -44,3 +46,5 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+
+<FooterInfo />

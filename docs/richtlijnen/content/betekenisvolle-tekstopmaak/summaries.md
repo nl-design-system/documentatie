@@ -17,6 +17,8 @@ keywords:
   - lijst
 ---
 
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Opsommingen
 
 Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoeveel items een lijst heeft en maakt het mogelijk om 'm over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te ‘scannen’.
@@ -36,3 +38,5 @@ Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verw
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+
+<FooterInfo />
