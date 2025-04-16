@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Opsommingen
 pagination_label: Opsommingen
-description: Opsommingen in NL Design System
+description: Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een schermlezer gebruiken.
 slug: /richtlijnen/content/betekenisvolle-tekstopmaak/opsommingen
 keywords:
   - semantiek
