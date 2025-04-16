@@ -1,0 +1,154 @@
+---
+title: Kleuren · Basisthema · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Kleuren
+pagination_label: Kleuren
+description: Het NL Design System basisthema
+---
+
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { RadixColorTable } from "@site/src/components/BasisThema/RadixColorTable";
+import { CommonColors } from "@site/src/components/BasisThema/CommonColorTable";
+import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
+import {
+  CommonDesignTokensTable,
+  TypographyDesignTokensTable,
+} from "@site/src/components/BasisThema/DesignTokenTables";
+
+# Kleurtokens in het basisthema
+
+<Paragraph lead>
+  Deze tokens definieren het "palet" aan typografische stijlen die gebruikt worden in het basisthema.
+</Paragraph>
+
+In het basisthema worden kleuren gedefinieerd in twee lagen:
+
+- De **radix-laag**: hier worden alle kleurtokens gedefinieerd die gebruikt kunnen worden in het basisthema. Deze tokens hebben een naam die de kleur _visueel_ beschrijft. De token `radix.color.orange.orange12` zal bijvoorbeeld een donker-oranje kleur bevatten.
+- De **common-laag**: hier worden alle kleurtokens gedefinieerd die kunnen worden gebruikt of overschreven in een eigen thema. Deze tokens hebben een naam die de kleur _functioneel_ beschrijft en een indicatie geven van waar de token voor gebruikt kan worden. De kleur in het token `basis.color.primary.text-1` kan bijvoorbeeld gebruikt worden voor tekst in een primary button. In het basisthema krijgen deze een waarde uit de radix laag maar in jouw thema kun je deze tokens overschrijven met je eigen kleurwaardes om op die manier je eigen huisstijl te maken.
+
+## De radix-kleuren
+
+De radix-laag bevat 31 kleurnamen, elk met 12 variaties van licht (1) naar donker (12) voor een totaal van 372 kleuren.
+
+:::danger
+
+TODO: 1-12 radix schaal;
+
+:::
+
+Zie voor een compleet overzicht [alle Radix kleuren](#alle-radix-kleuren).
+
+## De common-kleuren
+
+Common-kleur krijgen een tokennaam die twee hints geeft waar de kleur voor bedoeld is. De tokennaam `basis.color.disabled.bg-1` geeft bijvoorbeeld een **achtergrondkleur** (`bg-1`) voor UI-elementen die **uitgeschakeld** (disabled) zijn.
+
+Deze tokens zijn opgedeeld in de volgende categorieen:
+
+- `text`: voor algemene elementen die voornamelijk tekst bevatten (paragrafen, lijsten, etc.)
+- `disabled`: voor elementen die disabled zijn
+- `primary`: voor buttons en links in de _primary_ stijl (bijvoorbeeld de submit-button van een formulier)
+- `secondary`: voor buttons en links in de _secondary_ stijl (bijvoorbeeld de opslaan-button van een formulier)
+- `warning`: voor elementen die een waarschuwing tonen
+- `error`: voor elementen die een foutmelding tonen
+- `info`: voor elementen die extra informatie tonen
+- `success`: voor elementen die een succesbericht tonen
+- `highlight`: voor elementen die extra aandacht moeten krijgen
+- `selected`: voor elementen die geselecteerd of actief zijn in een lijst (menu-items, dropdown-opties, etc.)
+- `mark`: voor elementen die gemarkeerd/uitgelicht zijn
+
+Elk van deze categorieen heeft ook een inverse variatie voor lichte tekst op een donkere achtergrond: `text-inverse`, `disabled-inverse`, etc.
+
+Binnen elke categorie wordt de volgende lijst kleuren gedefinieerd:
+
+- `bg-1`: standaard achtergrondkleur
+- `bg-2`: subtiele achtergrondkleur
+- `interactive-1`: standaard achtergrondkleur voor interactieve elementen
+- `interactive-2`: achtergrondkleur voor interactieve elementen in een "hover" state
+- `interactive-3`: achtergrondkleur voor interactieve elementen in een "pressed" of "selected" state
+- `border-1`: borderkleur voor niet-interactieve elementen
+- `border-2`: subtiele borderkleur voor interactieve elementen
+- `border-3`: standaard borderkleur voor interactieve elementen
+- `fill-1`: extra felle achtergrondkleur
+- `fill-2`: extra felle achtergrondkleur voor elementen in een "hover" state
+- `text-1`: laag-contrast tekstkleur
+- `text-2`: hoog-contrast tekstkleur
+
+Als je de tokennaam `basis.color.primary.interactive-3` ziet kun je dus al raden dat deze kleur gebruikt kan worden als achtergrond voor een ingedrukte primary button.
+
+De kleuren binnen elke categorie zijn zo gekozen dat ze altijd voldoen aan de [richtlijnen voor toegankelijkheid](/richtlijnen/stijl/kleuren/). Je kunt dus bijvoorbeeld veilig een `bg-1` combineren met een `text-1` zolang ze maar uit dezelfde categorie komen.
+
+:::danger
+
+TODO: min- en max-contrastregels uitleggen
+
+:::
+
+:::warning
+
+Als je de kleuren uit de common-laag overschrijft in je eigen thema moet je er zelf voor zorgen dat ze nog steeds voldoen aan bovenstaande richtlijnen.
+
+:::
+
+Zie voor een compleet overzicht [alle common kleuren](#alle-common-kleuren)
+
+## Overzicht van alle radix-kleuren {#alle-radix-kleuren}
+
+:::warning
+
+Deze kleuren dienen alleen als referentie in het basisthema. Het is niet de bedoeling dat ze ergens anders overschreven of gebruikt worden.
+
+:::
+
+<RadixColorTable />
+
+## Overzicht van alle common-kleuren {#alle-common-kleuren}
+
+### Text
+
+<CommonDesignTokensTable type="color" item="text" />
+
+### Disabled
+
+<CommonDesignTokensTable type="color" item="disabled" />
+
+### Primary
+
+<CommonDesignTokensTable type="color" item="primary" />
+
+### Secondary
+
+<CommonDesignTokensTable type="color" item="secondary" />
+
+### Warning
+
+<CommonDesignTokensTable type="color" item="warning" />
+
+### Error
+
+<CommonDesignTokensTable type="color" item="error" />
+
+### Info
+
+<CommonDesignTokensTable type="color" item="info" />
+
+### Succes
+
+<CommonDesignTokensTable type="color" item="success" />
+
+### Highlight
+
+<CommonDesignTokensTable type="color" item="highlight" />
+
+### Selected
+
+<CommonDesignTokensTable type="color" item="selected" />
+
+### Mark
+
+<CommonDesignTokensTable type="color" item="mark" />
+
+## Waar worden deze tokens gebruikt?
+
+<TokenUses tokenType="color" />
+{/* <CommonColors /> */}

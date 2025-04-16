@@ -71,6 +71,12 @@ importers:
       '@nl-design-system-candidate/skip-link-docs':
         specifier: 1.0.1
         version: 1.0.1
+      '@nl-design-system-unstable/basis-design-tokens':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@nl-design-system-unstable/design-tokens-table-react':
+        specifier: 1.0.0
+        version: 1.0.0(@babel/runtime@7.26.7)(react@18.3.1)
       '@tabler/icons-react':
         specifier: 3.30.0
         version: 3.30.0(react@18.3.1)
@@ -1895,6 +1901,15 @@ packages:
 
   '@nl-design-system-candidate/skip-link-docs@1.0.1':
     resolution: {integrity: sha512-leZEVBcmHA5FQGrXI35wOX51IoJV/iPhrak76WwkO82/TNeyWt/DsoPJjds7auUJcpuCYvu7zvNDLxrwUD897g==}
+
+  '@nl-design-system-unstable/basis-design-tokens@3.0.0':
+    resolution: {integrity: sha512-BzQ+S4s3/V10OOYo8F3K+8DeGh17PPafAsTpIfLzUrN3Ygxjl4In7+grBOMR7Ht2xgYIkmFCa1uT4iImQjNuig==}
+
+  '@nl-design-system-unstable/design-tokens-table-react@1.0.0':
+    resolution: {integrity: sha512-WBc4wkfGvR42Iw0GwcdXLAv5Y21fUM8rPJ1eAID6ymM1rx8VrN3ZnmTqtsQtKdkCCvHGvl2Zl4WJngG+bmJIlQ==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4':
     resolution: {integrity: sha512-POlUBxviNooS6NpzyH6v3MJ+WwQEqMYj3VcJcX4oDRdRsxoYgsq4GDm3C55IhJ12nPKnd/F5DD+RBomviSkgxg==}
@@ -10566,6 +10581,14 @@ snapshots:
   '@nl-design-system-candidate/paragraph-docs@1.0.3': {}
 
   '@nl-design-system-candidate/skip-link-docs@1.0.1': {}
+
+  '@nl-design-system-unstable/basis-design-tokens@3.0.0': {}
+
+  '@nl-design-system-unstable/design-tokens-table-react@1.0.0(@babel/runtime@7.26.7)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4': {}
 

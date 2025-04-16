@@ -1,0 +1,32 @@
+---
+title: Borders · Basisthema · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Borders
+pagination_label: Borders
+description: Het NL Design System basisthema
+---
+
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { RadixColorTable } from "@site/src/components/BasisThema/RadixColorTable";
+import { CommonColors } from "@site/src/components/BasisThema/CommonColorTable";
+import {
+  CommonDesignTokensTable,
+  TypographyDesignTokensTable,
+} from "@site/src/components/BasisThema/DesignTokenTables";
+
+# Border tokens in het basisthema
+
+<Paragraph lead>Deze tokens definieren het "palet" aan border-stijlen die gebruikt worden in het basisthema.</Paragraph>
+
+## Border-width tokens
+
+<CommonDesignTokensTable type="border-width" maxPathLength={3} />
+
+## Border-radius tokens
+
+<CommonDesignTokensTable type="border-radius" maxPathLength={3} />
+
+## Border-color tokens
+
+Er zijn geen aparte tokens voor border-color want alle beschikbare kleuren zijn verwerkt in de [algemene kleurtokens](kleuren). Afhankelijk van het element of component waar de border op komt kun je een kleurcategorie kiezen (text, disabled, primary, etc) en daar dan een van de border tokens uit pakken (border-1, border-2 of border-3).
