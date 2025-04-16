@@ -24,7 +24,7 @@ keywords:
 
 # Waar moet een alternatieve tekst staan?
 
-Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om op verschillende manieren tekstalternatieven toe te voegen. Vraag om deze functionaliteit bij de ontwikkelaar als je deze niet hebt.
+Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om op verschillende manieren tekstalternatieven toe te voegen.
 
 ## Het alt-attribuut van een afbeelding
 
@@ -34,13 +34,15 @@ Als je een decoratieve afbeelding hebt die je géén alternatieve tekst wilt gev
 
 Soms kun je naast de alternatieve tekst ook een titel (title) invoeren. Dit is de tekst die verschijnt als je met je muis over de afbeelding beweegt. Deze titel wordt niet altijd voorgelezen door voorleessoftware. Daarom is het niet voldoende om hier je alternatieve tekst te plaatsen. Als je zowel de titel als het alt-attribuut invult, kan voorleessoftware beide teksten voorlezen, wat storend is voor bezoekers. Laat de titel daarom bij voorkeur leeg.
 
+Vraag om deze functionaliteit bij de beheerder of leverancier van je website als je deze optie niet hebt.
+
 ## Onderschrift (caption)
 
-Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een onderschrift. Dit kan een goede plek zijn om een wat uitgebreidere beschrijving te geven. Als je van deze optie gebruik wilt maken, voeg je altijd eerst een korte beschrijving voor het alt-attribuut toe. Uitgebreidere informatie plaats je daarna in het onderschrift. Het voordeel van een onderschrift is dat het voor iedereen zichtbaar is, niet alleen voor mensen die hulpsoftware gebruiken. Het is niet alleen beschikbaar voor mensen die hulpsoftware gebruiken.
+Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een onderschrift. Dit kan een goede plek zijn om een wat uitgebreidere beschrijving te geven. Als je van deze optie gebruik wilt maken, voeg je altijd eerst een korte beschrijving in het alt-attribuut toe. Uitgebreidere informatie plaats je daarna in het onderschrift. Het voordeel van een onderschrift is dat het voor iedereen zichtbaar is, niet alleen voor mensen die hulpsoftware gebruiken.
 
 ## Een tekst in de buurt van de afbeelding
 
-Soms biedt een alt-attribuut of een onderschrift niet voldoende ruimte voor een complete beschrijving van een afbeelding. In dat geval kun je in de beschrijving voor het alt-attribuut een korte beschrijving toevoegen en daarin de plek op de pagina waar een uitgebreidere beschrijving staat te beschrijven.
+Soms biedt een alt-attribuut of een onderschrift niet voldoende ruimte voor een complete beschrijving van een afbeelding. In dat geval kun je in de beschrijving in het alt-attribuut een korte beschrijving toevoegen en daarin de plek op de pagina beschrijven waar een uitgebreidere beschrijving staat.
 
 Dit is handig bij bijvoorbeeld uitgebreide grafieken waarin veel informatie is opgenomen. Of bij een infographic.
 
@@ -55,3 +57,5 @@ Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+
+<FooterInfo />

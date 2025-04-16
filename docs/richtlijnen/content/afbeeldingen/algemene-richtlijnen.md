@@ -41,20 +41,20 @@ Wanneer je die afbeelding dan vervolgens op een pagina gebruikt, krijgt de afbee
 
 Artificial Intelligence (AI) kan enorm behulpzaam zijn voor blinden en slechtzienden. Er zijn apps en andere hulpmiddelen die een afbeelding kunnen scannen en een feitelijke beschrijving kunnen geven van de afbeelding. Daarmee worden veel mensen een stuk zelfstandiger, omdat ze niemand nodig hebben die even meekijkt.
 
-Ben je contentspecialist? Wees dan voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is nog lang niet zo slim als je zou willen. Er kunnen fouten staan in een tekstalternatief dat door AI is gegenereerd. Maar de tekst kan ook erg feitelijk en onpersoonlijk zijn. Er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. Of de beschrijving is niet relevant in de context waarvoor jij de afbeelding had gekozen.
-
-Gebruik je AI om alternatieve teksten te maken? Lees de tekst dan altijd kritisch na en pas de tekst aan waar nodig.
+Wees wel voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is op dit moment nog niet zo slim als je zou willen. Er kunnen daardoor fouten staan in een tekstalternatief dat door AI is gegenereerd. Of er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. En soms is de beschrijving niet relevant in de context waarvoor jij de afbeelding had gekozen. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
 
 ## Test het zelf
 
 Controleer of je een goed tekstalternatief hebt geschreven door na te gaan of je deze vragen met 'Ja' kunt beantwoorden:
 
 - Geeft de alt-tekst dezelfde informatie als de afbeelding?
-- Is de alt-tekst in de juiste taal geschreven?
-- Krijgt de bezoeker alleen relevante informatie die met de afbeelding gegeven wordt?
+- Is de alt-tekst in [de juiste taal](/wcag/3.1.2) geschreven?
+- Is de alternatieve tekst relevant in de context van waarom de afbeelding op de pagina staat?
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+
+<FooterInfo />

@@ -46,3 +46,5 @@ Vragen die je jezelf kunt stellen als je een informatieve afbeelding plaatst:
 - Gaat er informatie verloren als ik de afbeelding niet kan zien?
 
 Per afbeelding die je plaatst is de beschrijving die je meegeeft anders, omdat het antwoord op deze vragen anders is. Zorg er in ieder geval voor dat de informatie in de afbeelding ook voorkomt in de alternatieve tekst.
+
+<FooterInfo />

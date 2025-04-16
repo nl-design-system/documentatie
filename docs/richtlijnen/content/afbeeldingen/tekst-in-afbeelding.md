@@ -49,3 +49,5 @@ Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakt
 
 - [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
 - [Succescriterium 1.4.5 Afbeeldingen van tekst](/wcag/1.4.5)
+
+<FooterInfo />
