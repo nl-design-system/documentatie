@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Dik- of schuingedrukte tekst
 pagination_label: Dik- of schuingedrukte tekst
 description: Leg nadruk op woorden of zinsdelen door ze dikgedrukt (bold) of schuingedrukt (italic) te maken.
-slug: /richtlijnen/content/betekenisvolle-tekstopmaak/dik-en-of-schuingedrukte-tekst
+slug: /richtlijnen/content/tekstopmaak/dik-en-of-schuingedrukte-tekst
 keywords:
   - semantiek
   - tekstopmaak

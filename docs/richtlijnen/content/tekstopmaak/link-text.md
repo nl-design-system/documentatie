@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Toegankelijke linkteksten
 pagination_label: Toegankelijke linkteksten
 description: Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.
-slug: /richtlijnen/content/betekenisvolle-tekstopmaak/linkteksten
+slug: /richtlijnen/content/tekstopmaak/linkteksten
 keywords:
   - semantiek
   - tekstopmaak

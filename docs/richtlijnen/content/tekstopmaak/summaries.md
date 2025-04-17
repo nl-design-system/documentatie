@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Opsommingen
 pagination_label: Opsommingen
 description: Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een schermlezer gebruiken.
-slug: /richtlijnen/content/betekenisvolle-tekstopmaak/opsommingen
+slug: /richtlijnen/content/tekstopmaak/opsommingen
 keywords:
   - semantiek
   - tekstopmaak
@@ -27,7 +27,7 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
 
 ## Lijst-elementen
 
-Type niet zelf sterretjes, streepjes of nummers om een lijst te maken, hulpsoftware herkent die opmaak namelijk niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. Lees meer over [het belang van HTML-elementen](/richtlijnen/formulieren/wanneer-welk-form-element/betekenisvolle-html-elementen).
+Type niet zelf sterretjes, streepjes of nummers om een lijst te maken, hulpsoftware herkent die opmaak namelijk niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. Lees meer over [het belang van HTML-elementen](/richtlijnen/code/betekenisvolle-html-elementen).
 
 ## Genummerde en ongenummerde lijsten
 

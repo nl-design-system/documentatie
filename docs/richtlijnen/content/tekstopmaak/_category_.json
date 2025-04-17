@@ -1,0 +1,10 @@
+{
+  "label": "Tekstopmaak",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/content/tekstopmaak/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
