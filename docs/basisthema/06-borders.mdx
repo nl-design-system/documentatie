@@ -14,6 +14,7 @@ import {
   CommonDesignTokensTable,
   TypographyDesignTokensTable,
 } from "@site/src/components/BasisThema/DesignTokenTables";
+import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
 
 # Border tokens in het basisthema
 
@@ -30,3 +31,8 @@ import {
 ## Border-color tokens
 
 Er zijn geen aparte tokens voor border-color want alle beschikbare kleuren zijn verwerkt in de [algemene kleurtokens](kleuren). Afhankelijk van het element of component waar de border op komt kun je een kleurcategorie kiezen (text, disabled, primary, etc) en daar dan een van de border tokens uit pakken (border-1, border-2 of border-3).
+
+## Waar worden deze tokens gebruikt?
+
+<TokenUses tokenType="border-width" />
+<TokenUses tokenType="border-radius" />

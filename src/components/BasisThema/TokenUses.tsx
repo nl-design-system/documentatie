@@ -10,9 +10,8 @@ export const TokenUses = ({ tokenType }) => {
 
   const tokenUses = {};
   for (const tokenName of tokenNames) {
-    const uses = findUses(tokenName, tokens);
+    const uses = Array.from(findUses(tokenName, tokens));
     if (uses.length) {
-      console.log(tokenName, uses.length);
       tokenUses[tokenName] = uses;
     }
   }
@@ -32,16 +31,15 @@ export const TokenUses = ({ tokenType }) => {
 };
 
 const findUses = (tokenName, obj, path = [], result = []) => {
-  if (typeof obj !== 'object') {
+  if (Array.isArray(obj) || typeof obj !== 'object') {
     return result;
   }
 
   for (const key of Object.keys(obj)) {
     const deeperPath = path.concat(key);
 
-    if (obj.$value === `{${tokenName}}`) {
-      //   console.log('FOUND', tokenName, path);
-      result.push(path.join('.'));
+    if (key === '$value' && obj.$value === `{${tokenName}}`) {
+      result.push(path.slice(1).join('.'));
     } else {
       findUses(tokenName, obj[key], deeperPath, result);
     }

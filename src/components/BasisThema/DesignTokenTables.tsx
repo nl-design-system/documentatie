@@ -13,7 +13,6 @@ export const CommonDesignTokensTable = ({ type, item, subitem, maxPathLength = I
       (subitem === undefined || token.attributes.subitem === subitem) &&
       token.path.length <= maxPathLength,
   );
-  console.log({ type, item, maxPathLength, tokens });
 
   return (
     <>
