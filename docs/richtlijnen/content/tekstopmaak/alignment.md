@@ -1,10 +1,25 @@
+---
+title: Uitlijning van tekst · Content · Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Uitlijning van tekst
+pagination_label: Uitlijning van tekst
+description: Over uitlijning van tekst
+slug: /richtlijnen/content/tekstopmaak/uitlijning-tekst
+keywords:
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+---
+
 <!-- @license CC0-1.0 -->
 
-Betekenisvolle opmaak (semantiek) zorgt ervoor dat de teksten consistent worden weergegeven en het doel begrijpelijk is voor screenreadergebruikers.
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-## Koppen
+# Uitlijning van tekst
 
-Gebruik koppen ofwel 'Headings' om hiërarchie te communiceren. Zorg ervoor dat kopjes verschillen van body text door een combinatie van grootte, gewicht (bijvoorbeeld ‘vetgedrukt’), lettertype en/of kleur. Headings bieden de uitgelezen mogelijkheid om branding door te laten vloeien binnen een webpagina.
+...
 
 ## ‘Justified’ tekst
 
@@ -25,3 +40,5 @@ Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet 
 ## Onderstreepte tekst
 
 Onderstreep tekst niet, bewaar onderstrepen voor links.
+
+<FooterInfo/>
