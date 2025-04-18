@@ -22,6 +22,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Koppen
@@ -34,11 +36,29 @@ Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is voor
 
 Een duidelijke koppenstructuur is heel belangrijk. Blinde mensen maken gebruik van voorleessoftware. Voorleessoftware kan een overzicht van alle koppen op een pagina laten zien. Dit helpt mensen om snel de informatie te vinden die ze zoeken. Ze kunnen ook makkelijk van de ene kop naar de andere gaan, door gebruik te maken van sneltoetsen.
 
-Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat [koppen van verschillende niveaus er anders uit zien](https://nldesignsystem.nl/richtlijnen/stijl/typografie/opmaak), is het snel duidelijk hoe de informatie op de pagina gestructureerd is.
+Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat koppen van verschillende niveaus er anders uit zien, is het snel duidelijk hoe de informatie op de pagina gestructureerd is.
 
 ## Opmaak van koppen
 
 Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die het contentmanagementsysteem waarin je werkt je biedt. Vaak kun je in een uitklapbaar lijstje kiezen welke opmaak je tekst moet krijgen, bijvoorbeeld een paragraaf of kop van niveau 1 of 2.
+
+<Guideline appearance="dont" title="Tekst dikgedrukt en groter maken en een andere kleur geven zodat het op een kop lijkt.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <strong style={{ color: 'purple', fontSize: '200%' }}>
+            Dit is geen kop
+          </strong>
+          <p>
+            Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van
+            tekst op deze plek.
+          </p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
 
@@ -46,13 +66,54 @@ Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorl
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
-Gebruik de niveaus in de deze volgorde:
+<Guideline appearance="do" title="Gebruik de niveaus in de de goede volgorde.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <h1>Kop met niveau 1</h1>
+          <p>
+            Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. De H1 geeft aan waar de hele pagina over gaat.
+          </p>
+          <h2>Kop met niveau 2</h2>
+          <p>
+            Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elke H2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
+          </p>
+          <h3>Kop met niveau 3</h3>
+          <p>
+            Als je in een tekst onder een H2 nog wat meer detail wilt aanbrengen, gebruik je een kop van niveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
+          </p>
+          <h4>Kop met niveau 4</h4>
+          <p>
+            Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
+          </p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-- Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. De H1 geeft aan waar de hele pagina over gaat.
-- Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elke H2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
-- Als je in een tekst onder een H2 nog wat meer detail wilt aanbrengen, gebruik je een kop van niveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
-- Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
-- Sla geen niveaus over, door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.
+<Guideline appearance="dont" title="Een niveau overslaan, door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <h1>Dit is een kop met niveau 1</h1>
+          <p>
+            Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van
+            tekst op deze plek. Wat u hier leest is een voorbeeldtekst. 
+          </p>
+          <h3>Dit is een kop met niveau 3</h3>
+          <p>
+            De neptekst is dus een tekst die eigenlijk
+            nergens over gaat. Het grappige is, dat mensen deze toch vaak lezen. Zelfs als men weet dat het om een
+            neptekst gaat, lezen ze toch door.
+          </p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

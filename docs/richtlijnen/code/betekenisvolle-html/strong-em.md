@@ -1,3 +1,21 @@
+---
+title: Goed gebruik van strong en em-elementen · Code · Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Goed gebruik van strong en em-elementen
+pagination_label: Goed gebruik van strong en em-elementen
+description: Gebruik het strong of em-element om nadruk op een woord of zinsdeel te leggen. Gebruik deze elementen niet om een tekst op te maken.
+slug: /richtlijnen/code/strong-en-em-elementen
+keywords:
+  - lettergrootte
+---
+
+{/_ @license CC0-1.0 _/}
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
+# Goed gebruik van strong en em-elementen
+
 <!-- @license CC0-1.0 -->
 
 Gebruik het strong of em-element om nadruk op een woord of zinsdeel te leggen. Zo is de nadruk zichtbaar voor bezoekers die kunnen zien en waarneembaar voor bezoekers met hulptechnologie. Gebruik deze elementen niet om een tekst op te maken. Bijvoorbeeld om een hele alinea dikgedrukt te maken.
@@ -32,3 +50,5 @@ Informeer gebruikers van het CMS over het [juiste gebruik van de dik- en schuing
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+
+<FooterInfo />
