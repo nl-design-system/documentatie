@@ -83,7 +83,7 @@ Tekst 'Text input' is gewijzigd naar 'Text Input' in Documentatie frame.
 
 ### Token hernoemd
 
-Soort wijziging: `patch`
+Soort wijziging: `major`
 
 #### 1 token hernoemd
 
@@ -119,7 +119,7 @@ De volgende tokens zijn hernoemd in Accordion component:
 
 ### Token toegevoegd
 
-Soort wijziging: `patch`
+Soort wijziging: `minor`
 
 #### 1 token toegevoegd
 
@@ -155,7 +155,7 @@ De volgende tokens zijn toegevoegd aan Heading component:
 
 ### Token verwijderd
 
-Soort wijziging: `patch`
+Soort wijziging: `major`
 
 #### 1 token verwijderd
 
@@ -191,7 +191,7 @@ De volgende tokens zijn verwijderd uit Heading component:
 
 ### Tokenwaarde gewijzigd
 
-Soort wijziging: `patch`
+De wijziging kan `major`, `minor` of `patch` zijn. Ga na wat de impact zou kunnen zijn van deze wijziging bij afnemers. Bij twijfel kies voor het hoogste type.
 
 #### 1 tokenwaarde gewijzigd
 
