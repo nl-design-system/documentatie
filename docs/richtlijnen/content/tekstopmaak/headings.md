@@ -66,7 +66,7 @@ Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorl
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
-<Guideline appearance="do" title="Gebruik de niveaus in de de goede volgorde.">
+<Guideline appearance="do" title="Gebruik kopniveaus in de de goede volgorde.">
   <Canvas language="html">
     {() => (
       <>

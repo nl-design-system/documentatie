@@ -10,13 +10,11 @@ keywords:
   - lettergrootte
 ---
 
-{/_ @license CC0-1.0 _/}
+<!-- @license CC0-1.0 -->
 
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Goed gebruik van strong en em-elementen
-
-<!-- @license CC0-1.0 -->
 
 Gebruik het strong of em-element om nadruk op een woord of zinsdeel te leggen. Zo is de nadruk zichtbaar voor bezoekers die kunnen zien en waarneembaar voor bezoekers met hulptechnologie. Gebruik deze elementen niet om een tekst op te maken. Bijvoorbeeld om een hele alinea dikgedrukt te maken.
 

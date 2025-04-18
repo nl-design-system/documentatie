@@ -19,6 +19,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Opsommingen
@@ -27,11 +29,49 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
 
 ## Lijst-elementen
 
-Type niet zelf sterretjes, streepjes of nummers om een lijst te maken, hulpsoftware herkent die opmaak namelijk niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. Lees meer over [het belang van HTML-elementen](/richtlijnen/code/betekenisvolle-html-elementen).
+<Guideline appearance="dont" title="Zelf sterretjes, streepjes of nummers typen om een lijst te maken.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          - Dit is geen lijst<br/>
+          - Dit is geen lijst<br/>
+          - Dit is geen lijst<br/>
+          - Dit is geen lijst<br/><br/>
+
+          1. Dit is óók geen lijst<br/>
+          2. Dit is óók geen lijst<br/>
+          3. Dit is óók geen lijst<br/>
+          4. Dit is óók geen lijst
+        </paragraph>
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
+
+Type niet zelf sterretjes, streepjes of nummers om een lijst te maken, hulpsoftware herkent die opmaak namelijk niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee.
 
 ## Genummerde en ongenummerde lijsten
 
-Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.
+<Guideline appearance="do" title="Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. ">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <ol>
+            <li>Pak een emmer</li>
+            <li>Zet de emmer onder de kraan</li>
+            <li>Draai de kraan open</li>
+            <li>Draai de kraan weer dicht voordat het waterniveau de rand van de emmer bereikt.</li>
+            <li>Gooi de emmer leeg in het zwembad</li>
+            <li>Herhaal deze stappen tot het zwembad vol is</li>
+          </ol>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
