@@ -37,8 +37,4 @@ Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse 
 
 Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!
 
-## Onderstreepte tekst
-
-Onderstreep tekst niet, bewaar onderstrepen voor links.
-
 <FooterInfo/>
