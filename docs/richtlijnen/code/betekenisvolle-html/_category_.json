@@ -1,0 +1,10 @@
+{
+  "label": "Betekenisvolle HTML-elementen",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/code/betekenisvolle-html/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

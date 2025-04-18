@@ -1,0 +1,10 @@
+{
+  "label": "Afbeeldingen",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/content/afbeeldingen/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
