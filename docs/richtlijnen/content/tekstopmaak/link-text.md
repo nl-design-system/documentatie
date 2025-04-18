@@ -16,6 +16,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Toegankelijke linkteksten
@@ -28,13 +30,23 @@ Duidelijke linkteksten zijn prettig voor iedereen en belangrijk voor verschillen
 
 Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
 
-## Voorbeeld
+## Voorbeelden
 
-Een aantal voorbeeld links met goede toegankelijke linkteksten:
-
-- Voorbeeld 1: Meer informatie staat op de pagina [Rechten van mensen met een beperking](https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link)
-- Voorbeeld 2: [Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)](https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link).
-- Voorbeeld 3: Stuur een mail naar [test@test.nl](https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link).
+<Guideline appearance="do" title="Schrijf links met goede toegankelijke linkteksten">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <ul>
+            <li>Meer informatie staat op de pagina <a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Rechten van mensen met een beperking</a></li>
+            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)</a></li>
+            <li>Stuur een mail naar <a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">test@test.nl</a></li>
+          </ul>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
