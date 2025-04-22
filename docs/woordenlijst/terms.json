@@ -1,0 +1,18 @@
+[
+  {
+    "term": "Tekstalternatief",
+    "synonym": "Alternatieve tekst",
+    "synonym": "Alt-tekst",
+    "definition": [
+      {
+        "paragraph": "Een tekst die het alternatief kan zijn als niet-tekstuele content niet gezien kan worden."
+      }
+    ],
+    "sources": [
+      {
+        "name": "WCAG-succescriterium 1.1.1 Niet-tekstuele content",
+        "url": "https://nldesignsystem.nl/wcag/1.1.1/"
+      }
+    ]
+  }
+]
