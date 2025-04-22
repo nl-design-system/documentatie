@@ -24,6 +24,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Algemene richtlijnen
@@ -32,8 +34,21 @@ Ongeacht voor welke afbeelding je een alternatieve tekst gaat schrijven, zijn er
 
 - Zet de belangrijkste informatie vooraan. Zo weet een bezoeker meteen of de rest van de beschrijving nodig is.
 - Hou de beschrijving kort, maar wel volledig. Bij voorkeur is een alternatieve tekst maximaal 150 tekens lang, maar het is het belangrijkst dat de beschrijving klopt.
-- Gebruik altijd interpunctie. Voorleessoftware maakt ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig je alternatieve tekst ook altijd met een punt. Zo pauzeert voorleessoftware voordat de rest van de pagina wordt voorgelezen.
+- Gebruik altijd interpunctie. Voorleessoftware maakt ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig langere alternateve teksten met een punt. Zo pauzeert voorleessoftware voordat de rest van de pagina wordt voorgelezen.
 - Benoem niet dát het een afbeelding is, bijvoorbeeld 'afbeelding van een eikenboom' of 'foto van Linda de Vries'. Benoem het alleen als het echt relevant is. Een voorbeeld van wanneer het wel relevant is om te benoemen dat het om een foto gaat, is een foto van een belangrijke historische gebeurtenis. Als de afbeelding een foto is, kan dat aangeven dat het een authentieke, historische opname is. Maar als het een illustratie is, kan dat betekenen dat het een interpretatie of reconstructie is.
+
+<Guideline appearance="dont" title="Geen interpunctie gebruiken">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+         <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen_Paspoort-id-rijbewijs-illustratie.jpg" alt="Paspoort  identiteitskaart en rijbewijs illustratie."/>
+         <p>Alternatieve tekst: Paspoort identiteitskaart en rijbewijs illustratie</p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Als jouw CMS gebruik maakt van een mediabibliotheek
 
