@@ -65,6 +65,7 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 {() => (
 <>
 <paragraph>
+
 <table>
 <tr>
 <th>Datum</th>
@@ -109,8 +110,8 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Plaats bijvoorbeeld geen a
         <paragraph>
           <table>
             <tr>
-              <td style={{width:'50%'}}><img src="/svg/componenten_overzicht_alert-dialog.svg#component-illustration"/></td>
-              <td>Voorbeeld van een alert dialog</td>
+              <td style={{width:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"/></td>
+              <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
             </tr>
           </table>
         </paragraph>
