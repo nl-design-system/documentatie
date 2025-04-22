@@ -36,7 +36,35 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
   </Canvas>
 </Guideline>
 
-<Guideline appearance="do" title="Voor korte quotes in een zin of alinea het HTML-element <q> gebruiken">
+Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met een knop een quote toe te voegen.
+
+<Guideline appearance="dont" title="Een kop gebruiken om een quote op te maken.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard."</h2>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een quote opmaken met de specifiek daarvoor bedoelde mogelijkheid in het CMS.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <blockquote>
+          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
+          </blockquote>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<!--Guideline appearance="do" title="Voor korte quotes in een zin of alinea het HTML-element <q> gebruiken">
   <Canvas language="html">
     {() => (
       <>
@@ -62,9 +90,7 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
       </>
     )}
   </Canvas>
-</Guideline>
-
-Lees meer over [het belang van HTML-elementen](/richtlijnen/formulieren/wanneer-welk-form-element/betekenisvolle-html-elementen).
+</Guideline-->
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
