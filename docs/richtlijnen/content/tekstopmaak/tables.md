@@ -50,7 +50,7 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
             <tr>
               <td>10 juli 2025</td>
               <td>Beatles</td>
-              <td>Goffert Park, Nijmegen</td>
+              <td>Goffertpark, Nijmegen</td>
             </tr>
           </table>
         </paragraph>
@@ -72,7 +72,7 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 <th>Evenement</th>
 <th>Locatie</th>
 </tr>
-<tr><td colspan='3'><strong>concerten in het voorjaar</strong></td></tr>
+<tr><td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
 <tr>
 <td>6 mei 2025</td>
 <td>Rolling Stones</td>
@@ -83,16 +83,16 @@ Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk.
 <td>Rolling Stones</td>
 <td>Westerpark, Amsterdam</td>
 </tr>
-<tr><td colspan='3'><strong>concerten in het najaar</strong></td></tr>
+<tr><td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
 <tr>
 <td>10 oktober 2025</td>
 <td>Beatles</td>
-<td>Goffert Park, Nijmegen</td>
+<td>Goffertpark, Nijmegen</td>
 </tr>
 <tr>
 <td>11 oktober 2025</td>
 <td>Beatles</td>
-<td>Goffert Park, Nijmegen</td>
+<td>Goffertpark, Nijmegen</td>
 </tr>
 </table>
 </paragraph>
