@@ -42,15 +42,14 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
           1. Dit is óók geen lijst<br/>
           2. Dit is óók geen lijst<br/>
           3. Dit is óók geen lijst<br/>
-          4. Dit is óók geen lijst
+          4. Dit is óók geen lijst<br/><br/>
+          <p>Hulpsoftware herkent deze opmaak niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee.</p>
         </paragraph>
       </>
     )}
 
   </Canvas>
 </Guideline>
-
-Type niet zelf sterretjes, streepjes of nummers om een lijst te maken, hulpsoftware herkent die opmaak namelijk niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee.
 
 ## Genummerde en ongenummerde lijsten
 
