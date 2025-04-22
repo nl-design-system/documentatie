@@ -24,6 +24,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Waar moet een alternatieve tekst staan?
@@ -43,6 +45,21 @@ Vraag om deze functionaliteit bij de beheerder of leverancier van je website als
 ## Onderschrift (caption)
 
 Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een onderschrift. Dit kan een goede plek zijn om een wat uitgebreidere beschrijving te geven. Als je van deze optie gebruik wilt maken, voeg je altijd eerst een korte beschrijving in het alt-attribuut toe. Uitgebreidere informatie plaats je daarna in het onderschrift. Het voordeel van een onderschrift is dat het voor iedereen zichtbaar is, niet alleen voor mensen die hulpsoftware gebruiken.
+
+<Guideline appearance="do" title="Een onderschrift gebruiken voor een langere beschrijving">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+        <figure>
+         <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Amersfoortse-Dierentuin.jpg" alt="Twee mensen op een terras." />
+         <figcaption>1963 - Op het terras van het café van de Amersfoortse dierentuin krijgen twee bezoekers een kopje koffie geserveerd. Dat is in eerste instantie niet heel bijzonder, maar het feit dat zij allebei een Afrikaans jachtluipaard aan hun voeten hebben liggen waarvan zij zelf de riem vasthouden wel!</figcaption>
+        </figure>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Een tekst in de buurt van de afbeelding
 

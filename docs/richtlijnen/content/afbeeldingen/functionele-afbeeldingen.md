@@ -22,6 +22,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Functionele afbeeldingen
@@ -44,7 +46,21 @@ Hier beschrijf je niet wat op de afbeelding staat, maar wat de bezoeker ermee ka
 ## Logo als link naar de homepage
 
 Veel websites hebben een logo dat ook een link is naar de homepage. Dit logo staat dan bovenaan iedere pagina, meestal naast het navigatiemenu. Hier is het belangrijk om zowel te benoemen dat het een logo is, als waar de link naar de naartoe gaat. In die zin is een logo zowel een informatieve als een functionele afbeelding.
-Een voorbeeld van een beschrijvende alternatieve tekst is dan: 'Logo NL Design System - Ga naar de homepage' in plaats van 'Logo NL Design System', bij het logo in de header van iedere pagina.
+
+<Guideline appearance="do" title="Benoem de organisatie, dat het om een logo gaat en waar de link naar verwijst">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+        <img alt="NL Design System logo, naar de homepage" src="https://raw.githubusercontent.com/nl-design-system/documentatie/9e5331b623e1bbd5bea950c934a20459e13b64bf/logo.svg" />
+         <p>Alternatieve tekst: NL Design System logo, ga naar de homepage</p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+Lees ook onze [blog "De toegankelijke naam van een link op een logo in de header"](/blog/toegankelijke-naam-link-logo-header).
 
 ### Waar stel je de alternatieve tekst van het logo als link naar de homepage in?
 
