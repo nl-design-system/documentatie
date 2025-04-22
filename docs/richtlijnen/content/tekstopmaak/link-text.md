@@ -26,13 +26,28 @@ Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link t
 
 ## Voor wie is het nodig
 
-Duidelijke linkteksten zijn prettig voor iedereen en belangrijk voor verschillende mensen met een functiebeperking. Zoals mensen met vergrotingssoftware, dyslexie of een kort werkgeheugen. Ook help je bezoekers die blind zijn en in een schermlezer een lijst met links opvragen. Zij zien de links buiten de context. Onduidelijke links en dezelfde linkteksten kunnen dan heel verwarrend zijn. Bijvoorbeeld als je ‘Klik hier’ of ‘Lees meer’ als linktekst gebruikt.
+Duidelijke linkteksten zijn prettig voor iedereen en belangrijk voor verschillende mensen met een functiebeperking. Zoals mensen met vergrotingssoftware, dyslexie of een kort werkgeheugen. Ook help je bezoekers die blind zijn en in een schermlezer een lijst met links opvragen. Zij zien de links buiten de context. Onduidelijke links en dezelfde linkteksten kunnen dan heel verwarrend zijn.
 
 Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
 
 ## Voorbeelden
 
-<Guideline appearance="do" title="Schrijf links met goede toegankelijke linkteksten">
+<Guideline appearance="dont" title="Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+          <ul>
+            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
+            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Lees meer</a> over  digitale toegankelijkheid</li>
+          </ul>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Schrijf goede toegankelijke linkteksten waaruit blijkt wat er gebeurt als je erop klikt.">
   <Canvas language="html">
     {() => (
       <>

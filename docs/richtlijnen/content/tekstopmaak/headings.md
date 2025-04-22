@@ -51,16 +51,13 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
             Dit is geen kop
           </strong>
           <p>
-            Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van
-            tekst op deze plek.
+            Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
           </p>
         </paragraph>
       </>
     )}
   </Canvas>
 </Guideline>
-
-Tekst dikgedrukt en groter maken en een andere kleur geven is niet genoeg. Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
 
 ## Kopniveaus
 
@@ -93,21 +90,18 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Een niveau overslaan, door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.">
+<Guideline appearance="dont" title="Een kopniveau overslaan.">
   <Canvas language="html">
     {() => (
       <>
         <paragraph>
           <h1>Dit is een kop met niveau 1</h1>
           <p>
-            Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van
-            tekst op deze plek. Wat u hier leest is een voorbeeldtekst. 
+            Sla geen niveaus over door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. 
           </p>
           <h3>Dit is een kop met niveau 3</h3>
           <p>
-            De neptekst is dus een tekst die eigenlijk
-            nergens over gaat. Het grappige is, dat mensen deze toch vaak lezen. Zelfs als men weet dat het om een
-            neptekst gaat, lezen ze toch door.
+            Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.
           </p>
         </paragraph>
       </>
