@@ -1,0 +1,9 @@
+[
+  {
+    "woord": "Tekstalternatief",
+    "synoniem": "Alternatieve tekst",
+    "synoniem": "Alt-tekst",
+    "definitie": ["Een tekst die het alternatief kan zijn als niet-tekstuele content niet gezien kan worden."],
+    "bronnen": ["https://nldesignsystem.nl/wcag/1.1.1/"]
+  }
+]
