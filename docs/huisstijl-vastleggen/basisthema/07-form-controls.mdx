@@ -1,10 +1,10 @@
 ---
-title: Form controls · Basisthema · Handboek
+title: Form controls · Basisthema · Huisstijl vastleggen · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Form controls
 pagination_label: Form controls
-description: Het NL Design System basisthema
+description: Welke design tokens bevat het basisthema voor form controls?
 ---
 
 import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -16,13 +16,14 @@ import {
 } from "@site/src/components/BasisThema/DesignTokenTables";
 import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
 
-# Form control tokens in het basisthema
+# Form-control tokens in het basisthema
 
-:::danger
-
-<Paragraph lead>TODO: intro</Paragraph>
-
-:::
+<Paragraph lead>
+  Binnen de meeste thema's hebben formulierelementen zoals invoervelden, checkboxes en dropdowns veel overlap qua stijl.
+  Ze gebruiken vaak dezelfde kleuren, borders en typografie voor dezelfde status (bv. focus, hover, invalid, etc.).
+  Daarom defineert het basisthema een aantal design tokens die gedeeld worden door de verschillende form-componenten. Op
+  deze pagina staan al deze gedeelde tokens en waar ze voor gebruikt worden.
+</Paragraph>
 
 ## Algemene form control tokens
 
@@ -57,5 +58,7 @@ import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
 <CommonDesignTokensTable type="form-control" item="read-only" />
 
 ## Waar worden deze tokens gebruikt?
+
+Als je één van deze tokens aanpast kun je hieronder zien op welke tokens uit het basisthema dit allemaal effect heeft.
 
 <TokenUses tokenType="form-control" />

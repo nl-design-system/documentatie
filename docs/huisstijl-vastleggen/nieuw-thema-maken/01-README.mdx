@@ -1,0 +1,109 @@
+---
+title: Nieuw thema maken · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Nieuw thema maken
+pagination_label: Nieuw thema maken
+description: Een nieuw thema maken op basis van het NL Design System basisthema
+---
+
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+
+# Een nieuw NL Design System thema maken
+
+<Paragraph lead>
+  Op deze pagina wordt uitgelegd wat een thema precies is, hoe thema's werken binnen NL Design System en hoe je er zelf
+  één kunt maken voor jouw organisatie.
+</Paragraph>
+
+## Wat is een NL Design System thema?
+
+NL Design System is een verzameling van [_white label_](https://en.wikipedia.org/wiki/White-label_product) componenten dat gestyled kan worden met thema's.
+Thema's zijn gestructureerde collecties van _design tokens_. Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
+
+Deze collectie kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit het basisthema. Het basisthema definieert defaultwaardes voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
+
+Een nieuw thema bestaat uit drie lagen:
+
+1. **De brand-laag**. Hierin staan alle waardes over de gehele huisstijl die gebruikt mogen worden. Dit zijn bijvoorbeeld het complete palet aan kleuren, alle mogelijke diktes van borders en alle toegestane lettergroottes.
+1. **De common-laag**. Hierin:
+   - worden de kleuren uit de **brand** laag gekoppeld aan design tokens uit het basisthema en
+   - worden algemene tokens gedefinieerd voor componenten met veel overlap zoals bijvoorbeeld formulierelementen die dezelfde achtergrondkleur hebben en headings die hetzelfde lettertype gebruiken.
+1. **De componenten-laag**. Hierin staan tokens voor alle gebruikte componenten die niet onder common vallen en afwijken van de waardes uit het basisthema.
+
+De design tokens zijn gestructureerd in een JSON-bestand volgens het [Design Tokens Format](https://tr.designtokens.org/format/). Met behulp van [Style Dictionary](https://amzn.github.io/style-dictionary/) kan dit JSON-bestand worden omgezet in CSS. Met de plugin van [Token Studio](https://tokens.studio/plugin) kan dit bestand direct worden gebruikt om onze componenten te stylen in Figma. Kijk voor meer informatie over Token Studio bij het [stappenplan voor designers](/handboek/designer/stappenplan).
+
+## Hoe weet ik of ik een nieuw thema moet maken?
+
+Diverse gemeentes en andere organisaties hebben al een thema gepubliceerd. Alle beschikbare themas voor NL Design System staan in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Als er in de map [proprietary](https://github.com/nl-design-system/themes/tree/main/proprietary) een map staat voor jouw organisatie kun je dat thema gebruiken. Op de pagina **TODO** kun je lezen hoe dat werkt. Als er geen map staat voor jouw organisatie, dan kun je zelf een thema maken.
+
+## Welke stappen moet ik volgen om een nieuw thema te maken?
+
+:::tip
+
+**Vereisten:** Om deze stappen te doorlopen moeten de volgende cli-tools werken in je terminal:
+
+- [nvm](https://github.com/nvm-sh/nvm)
+- [pnpm](https://pnpm.io/)
+
+We hebben ook git nodig om met de repository te werken. Je kunt zelf kiezen welke tool je hier het liefst voor gebruikt.
+
+:::
+
+### Stap 1: De themes repository clonen
+
+Een nieuw thema kun je maken door eerst de [themes repository](https://github.com/nl-design-system/themes) te clonen in een terminal of met jouw favoriete git-programma.
+
+```sh
+git clone git@github.com:nl-design-system/themes.git
+```
+
+### Stap 2: De lokale ontwikkelomgeving klaarmaken
+
+Vervolgens installeren we de juiste versie van node met `nvm` en de dependencies met `pnpm`.
+
+```sh
+cd themes
+nvm use
+pnpm install
+```
+
+### Stap 3: De eerste build
+
+Om te kijken of alles werkt kunnen we nu de eerste build draaien en alle beschikbare thema's in Storybook bekijken:
+
+```sh
+pnpm run build
+pnpm run watch:storybook
+```
+
+Als alles goed werkt zou je nu Storybook moeten kunnen bekijken door naar http://localhost:6006/ te gaan in je browser.
+
+### Stap 4: Het voorbeeldthema kopiëren en aanpassen
+
+Je hoeft het nieuwe thema niet van de grond af aan zelf te schrijven, we kunnen beginnen met het kopiëren van het voorbeeldthema nadat je een **prefix** hebt gekozen voor je thema.
+
+#### Een prefix kiezen
+
+Om de thema's uit elkaar te kunnen houden hebben alle thema's hun eigen prefix. Vaak is de prefix de lowercase naam van de organisatie waar het thema voor is maar dat hoeft niet. Zolang het alleen letters en/of cijfers bevat en niet al bestaat is het goed. De prefix wordt ook gebruikt in de naam van de map waar je het voorbeeldthema naartoe kopiëert. Voordat je dat kunt doen moet je dus eerst een prefix kiezen.
+
+We gaan er bij de volgende stappen even vanuit dat je als prefix `myorg` hebt gekozen.
+
+```sh
+cd proprietary
+cp
+```
+
+## Hoe vul ik het thema met de juiste waardes voor onze huisstijl?
+
+**TODO**
+
+## Hoe publiceer ik mijn thema voor anderen?
+
+**TODO**
+
+---
+
+---
+
+---

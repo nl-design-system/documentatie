@@ -1,0 +1,107 @@
+---
+title: Spacing · Basisthema · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Spacing
+pagination_label: Spacing
+description: Welke design tokens bevat het basisthema voor spacing?
+---
+
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { RadixColorTable } from "@site/src/components/BasisThema/RadixColorTable";
+import { CommonColors } from "@site/src/components/BasisThema/CommonColorTable";
+import {
+  CommonDesignTokensTable,
+  TypographyDesignTokensTable,
+} from "@site/src/components/BasisThema/DesignTokenTables";
+import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
+
+# Spacing tokens in het basisthema
+
+<Paragraph lead>
+  Het basisthema bevat verschillende soorten tokens om aan te geven hoeveel ruimte (horizontaal en verticaal) er tussen
+  (margin) of binnen (padding) elementen bewaard moet worden. Op deze pagina staat waar elke soort gebruikt voor wordt
+  en welke tokens daarin zitten.
+</Paragraph>
+
+## Block Spacing tokens
+
+Block spacing tokens worden gebruikt om de verticale ruimte tussen en binnen elementen te specificeren.
+
+<CommonDesignTokensTable type="space" item="block" maxPathLength={4} />
+
+{/* TODO: Moeten deze erin blijven als ze niet gebruikt worden? */}
+
+{/* ### Min Block Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="block" subitem="min" /> */}
+
+{/* ### Max Block Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="block" subitem="max" /> */}
+
+## Inline Spacing tokens
+
+Inline spacing tokens worden gebruikt om de horizontale ruimte tussen en binnen elementen te specificeren.
+
+<CommonDesignTokensTable type="space" item="inline" maxPathLength={4} />
+
+{/* TODO: Moeten deze erin blijven als ze niet gebruikt worden? */}
+
+{/* ### Min Inline Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="inline" subitem="min" /> */}
+
+{/* ### Max Inline Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="inline" subitem="max" /> */}
+
+## Column Spacing tokens
+
+Column spacing tokens worden gebruikt om de horizontale ruimte tussen kolommen te specificeren.
+
+<CommonDesignTokensTable type="space" item="column" maxPathLength={4} />
+
+{/* TODO: Moeten deze erin blijven als ze niet gebruikt worden? */}
+
+{/* ### Min Column Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="column" subitem="min" /> */}
+
+{/* ### Max Column Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="column" subitem="max" /> */}
+
+## Row Spacing tokens
+
+Row spacing tokens worden gebruikt om de verticale ruimte tussen rijen te specificeren.
+
+<CommonDesignTokensTable type="space" item="row" maxPathLength={4} />
+
+{/* TODO: Moeten deze erin blijven als ze niet gebruikt worden? */}
+
+{/* ### Min Row Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="row" subitem="min" /> */}
+
+{/* ### Max Row Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="row" subitem="max" /> */}
+
+## Text Spacing tokens
+
+Text spacing tokens worden gebruikt om de horizontale ruimte tussen tekstuele elementen te specificeren.
+
+<CommonDesignTokensTable type="space" item="text" />
+
+{/* TODO: Moeten deze erin blijven als ze niet gebruikt worden? */}
+
+{/* ## Relation Spacing tokens */}
+
+{/* <CommonDesignTokensTable type="space" item="relation" /> */}
+
+## Waar worden deze tokens gebruikt?
+
+Als je één van deze tokens aanpast kun je hieronder zien op welke tokens uit het basisthema dit allemaal effect heeft.
+
+<TokenUses tokenType="space" />

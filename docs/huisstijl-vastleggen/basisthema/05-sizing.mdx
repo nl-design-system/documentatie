@@ -1,10 +1,10 @@
 ---
-title: Sizing · Basisthema · Handboek
+title: Sizing · Basisthema · Huisstijl vastleggen · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Sizing
 pagination_label: Sizing
-description: Het NL Design System basisthema
+description: Welke design tokens bevat het basisthema voor sizing?
 ---
 
 import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -18,7 +18,11 @@ import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
 
 # Sizing-tokens in het basisthema
 
-<Paragraph lead>Deze tokens definieren het "palet" aan sizing-waardes die gebruikt worden in het basisthema.</Paragraph>
+<Paragraph lead>
+  Het basisthema bevat een aantal tokens die gebruikt kunnen worden als elementen een vaste grootte moeten krijgen en
+  niet mee moeten groeien of krimpen met de inhoud. Op deze pagina staat waar elk van deze tokens in het basisthema voor
+  gebruikt wordt.
+</Paragraph>
 
 ## Algemene sizing-tokens
 
@@ -26,8 +30,10 @@ import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
 
 ## Icon Sizing-tokens
 
-<CommonDesignTokensTable type="icon" subitem="size" />
+<CommonDesignTokensTable type="size" item="icon" />
 
 ## Waar worden deze tokens gebruikt?
+
+Als je één van deze tokens aanpast kun je hieronder zien op welke tokens uit het basisthema dit allemaal effect heeft.
 
 <TokenUses tokenType="size" />
