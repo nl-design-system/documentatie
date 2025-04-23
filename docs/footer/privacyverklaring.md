@@ -34,10 +34,10 @@ Voor fysieke evenementen willen we je graag weten of je komt. Daarnaast willen w
 
 Wij vinden het belangrijk om zorgvuldig met jouw persoonsgegevens om te gaan. Daarom vragen we je om toestemming om jouw e-mailadres te gebruiken voor deze uitnodigingen.
 
-Goed om te weten: uiteraard mag je jezelf op ieder moment afmelden. Dit kan je doen door een e-mail te sturen naar [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
+Goed om te weten: uiteraard mag je jezelf op ieder moment afmelden. Dit kan je doen door een e-mail te sturen naar [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
 
 ## Meer informatie
 
-Mocht je vragen hebben over bescherming van je privacy in relatie tot de website nldesignsystem.nl, dan kun je contact opnemen met het kernteam via [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
+Mocht je vragen hebben over bescherming van je privacy in relatie tot de website nldesignsystem.nl, dan kun je contact opnemen met het kernteam via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
 
-Degene van wie persoonsgegevens worden verwerkt heeft het recht zich tot NL Design System te richten met een verzoek om deze persoonsgegevens in te zien, te corrigeren of te (laten) verwijderen. Ook hiervoor kun je contact opnemen met het kernteam via [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
+Degene van wie persoonsgegevens worden verwerkt heeft het recht zich tot NL Design System te richten met een verzoek om deze persoonsgegevens in te zien, te corrigeren of te (laten) verwijderen. Ook hiervoor kun je contact opnemen met het kernteam via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).

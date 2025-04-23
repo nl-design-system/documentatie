@@ -1,6 +1,21 @@
 ---
 title: Versiebeheer voor design tokens
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Versiebeheer voor design tokens
+sidebar_position: 1
+pagination_label: Versiebeheer voor design tokens
+description: Informatie over wat semver inhoudt en hoe we het toepassen op de packages met design tokens.
+keywords:
+  - versiebeheer
+  - changelog
+  - semantic versioning
+  - major
+  - minor
+  - patch
 ---
+
+# Versiebeheer voor design tokens
 
 Design tokens komen uiteindelijk terecht in een package. Een package is een pakketje van code dat gebruikt kan worden door ontwikkelaars. Denk daarbij aan CSS variabelen.
 
