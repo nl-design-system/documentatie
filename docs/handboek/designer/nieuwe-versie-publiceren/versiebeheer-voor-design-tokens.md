@@ -15,6 +15,8 @@ keywords:
   - patch
 ---
 
+# Versiebeheer voor design tokens
+
 Design tokens komen uiteindelijk terecht in een package. Een package is een pakketje van code dat gebruikt kan worden door ontwikkelaars. Denk daarbij aan CSS variabelen.
 
 Deze packages worden geüpload naar een package registry. Een package registry is een database van alle packages die ooit zijn geüpload.
