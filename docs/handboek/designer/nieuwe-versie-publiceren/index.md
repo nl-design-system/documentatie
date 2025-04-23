@@ -21,21 +21,17 @@ De Figma bibliotheken en het JSON bestand met de design tokens zijn voortdurend 
 
 Onder deze pagina vind je drie soorten documentatie.
 
-## Versiebeheer van design tokens
+## Versiebeheer voor design tokens
 
 We gebruiken semantic versioning, ofwel semver, om aan te geven wat voor soort wijziging er is doorgevoerd: een patch, minor of major. Deze pagina legt uit wat semver inhoudt en hoe we het toepassen op de packages met design tokens.
 
-<!--
-[Lees meer over versiebeheer van design tokens](https://nldesignsystem.nl/)
--->
+[Lees meer over versiebeheer voor design tokens](https://nldesignsystem.nl/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens)
 
 ## Werken met changelog voor Figma
 
 Voor designers die werken met een duplicaat van onze Figma bibliotheken, beschrijven we hoe de changelog werkt: wat je erin kunt vinden, hoe je het leest en wat je ermee kunt doen.
 
-<!--
-[Bekijk hoe de changelog werkt](https://nldesignsystem.nl/)
--->
+[Bekijk hoe de changelog werkt](https://nldesignsystem.nl/handboek/designer/nieuwe-versie-publiceren/werken-met-changelog-voor-figma)
 
 ## Changelog Figma
 
