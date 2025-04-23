@@ -48,4 +48,4 @@ Yolijn: 06-19991566
 
 Hidde: 06-41226294
 
-Niet urgent? Je kunt ook melding maken via [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl)
+Niet urgent? Je kunt ook melding maken via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl)

@@ -50,4 +50,4 @@ In de [richtlijn Labels](https://nldesignsystem.nl/richtlijnen/formulieren/alle-
 
 ## Geef je feedback op onze nieuwe richtlijnen
 
-We willen dat onze richtlijnen, net als de componenten, breed kunnen worden gedragen. Heb je gebruikersonderzoek gedaan en verschillen je inzichten van de huidige richtlijnen? Je feedback is van harte welkom, zowel vanuit overheid of daarbuiten. [Open een issue op GitHub](https://github.com/nl-design-system/documentatie/issues/new) of mail ons op [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl).
+We willen dat onze richtlijnen, net als de componenten, breed kunnen worden gedragen. Heb je gebruikersonderzoek gedaan en verschillen je inzichten van de huidige richtlijnen? Je feedback is van harte welkom, zowel vanuit overheid of daarbuiten. [Open een issue op GitHub](https://github.com/nl-design-system/documentatie/issues/new) of mail ons op [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
