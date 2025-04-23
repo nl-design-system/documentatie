@@ -14,6 +14,7 @@ Redirect 301 "/handboek/community-stappenplan" "/handboek/component-bijdragen/co
 Redirect 301 "/handboek/candidate-stappenplan" "/handboek/component-bijdragen/candidate-stappenplan"
 Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/component-bijdragen/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/community-stappenplan-voor-organisaties" "/handboek/component-bijdragen/community-stappenplan/voor-organisaties"
+Redirect 301 "/handboek/designer/breaking-changes" "/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens"
 Redirect 301 "/button-group" "/action-group"
 Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
 Redirect 301 "/definition-list" "/description-list"
