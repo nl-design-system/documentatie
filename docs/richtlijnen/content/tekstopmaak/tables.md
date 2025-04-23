@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen
 pagination_label: Tabellen
-description: Gebruik tabellen om gegevens te laten zien, niet alleen voor een mooiere opmaak.
+description: Gebruik tabellen om gegevens te laten zien, niet voor een mooiere opmaak.
 slug: /richtlijnen/content/tekstopmaak/tabellen
 keywords:
   - semantiek
