@@ -8,7 +8,7 @@
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Denk je dat het een fout in de website is? Meld ons de gebroken link alsjeblieft door een e-mail te sturen naar: kernteam@nldesignsystem.nl",
+    "message": "Denk je dat het een fout in de website is? Meld ons de gebroken link alsjeblieft door een e-mail te sturen naar: info@nldesignsystem.nl",
     "description": "The 2nd paragraph of the 404 page"
   }
 }
