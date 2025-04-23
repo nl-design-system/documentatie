@@ -16,7 +16,7 @@ keywords:
   - figma bibliotheek
 ---
 
-# Changelog voor Figma bibliotheken
+# Werken met changelog voor Figma
 
 De changelog is bedoeld voor designers die werken met een eigen duplicaat van de Figma bibliotheken. In de changelog zie je welke onderdelen zijn aangepast, toegevoegd of verbeterd. Zo weet je snel of je iets moet bijwerken in de bibliotheken van jouw organisatie. Op deze manier blijf je up-to-date met de laatste versie van het NL Design System.
 
