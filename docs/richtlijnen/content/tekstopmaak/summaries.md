@@ -53,18 +53,31 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
 
 ## Genummerde en ongenummerde lijsten
 
-<Guideline appearance="do" title="Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. ">
+<Guideline appearance="do" title="Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.">
   <Canvas language="html">
     {() => (
       <>
         <paragraph>
+          <h2>Burrata salade</h2>
+          <p>Een lekkere salade met burrata en tomaten.</p>
+          <h3>Ingrediënten</h3>
+          <ul>
+            <li>250 gr (snoep)tomaten</li>
+            <li>1 bol burrata</li>
+            <li>verse basilicum</li>
+            <li>1 el pesto</li>
+            <li>scheutje olijfolie</li>
+            <li>handje rucola</li>
+            <li>crema di balsamico</li>
+            <li>zwarte peper</li>
+          </ul>
+          <h3>Bereiding</h3>
           <ol>
-            <li>Pak een emmer</li>
-            <li>Zet de emmer onder de kraan</li>
-            <li>Draai de kraan open</li>
-            <li>Draai de kraan weer dicht voordat het waterniveau de rand van de emmer bereikt.</li>
-            <li>Gooi de emmer leeg in het zwembad</li>
-            <li>Herhaal deze stappen tot het zwembad vol is</li>
+            <li>Snijd de tomaten in stukjes.</li>
+            <li>Verdeel de rucola over een bord, en voeg ook de tomaten toe.</li>
+            <li>Leg de bol burrata in het midden van de salade.</li>
+            <li>Verdeel wat peper, olijfolie en crema di balsamico over de salade.</li>
+            <li>Maak af met een schepje pesto en wat verse basilicum.</li>
           </ol>
         </paragraph>
       </>
