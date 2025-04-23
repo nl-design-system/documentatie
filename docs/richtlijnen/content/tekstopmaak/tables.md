@@ -27,7 +27,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tabellen
 
-Je gebruikt tabellen om gegevens te laten zien. Maak een tabel ook toegankelijk. Gebruik bijvoorbeeld rijkoppen of kolomkoppen. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan. Hulptechnologieën geven met deze informatie extra uitleg aan gebruikers. De inhoud is daarmee ook begrijpelijk voor mensen die een schermlezer gebruiken.
+Met tabellen kun je data presenteren. Een tabel maak je toegankelijk zodat mensen die een schermlezer gebruiken bij elke cel kunnen achterhalen wat de bijbehorende koppen zijn. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan.
 
 ## Toegankelijke tabellen maken
 
