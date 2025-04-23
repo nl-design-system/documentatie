@@ -1,15 +1,15 @@
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [80070],
+ [35761],
  {
-  2004: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => s, contentTitle: () => d, default: () => c, frontMatter: () => o, metadata: () => t, toc: () => l });
+  52420: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => d, contentTitle: () => s, default: () => c, frontMatter: () => o, metadata: () => t, toc: () => l });
    var r = i(52676),
     a = i(40139);
-   const o = { title: 'Versiebeheer voor design tokens' },
-    d = void 0,
-    t = { id: 'handboek/designer/breaking-changes', title: 'Versiebeheer voor design tokens', description: 'Design tokens komen uiteindelijk terecht in een package. Een package is een pakketje van code dat gebruikt kan worden door ontwikkelaars. Denk daarbij aan CSS variabelen.', source: '@site/docs/handboek/designer/breaking-changes.md', sourceDirName: 'handboek/designer', slug: '/handboek/designer/breaking-changes', permalink: '/handboek/designer/breaking-changes', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/breaking-changes.md', tags: [], version: 'current', frontMatter: { title: 'Versiebeheer voor design tokens' }, sidebar: 'handboek', previous: { title: 'Voorbeeld thema', permalink: '/handboek/designer/community' }, next: { title: 'Voor developers', permalink: '/handboek/developer/overzicht' } },
-    s = {},
+   const o = { title: 'Versiebeheer voor design tokens', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Versiebeheer voor design tokens', sidebar_position: 1, pagination_label: 'Versiebeheer voor design tokens', description: 'Informatie over wat semver inhoudt en hoe we het toepassen op de packages met design tokens.', keywords: ['versiebeheer', 'changelog', 'semantic versioning', 'major', 'minor', 'patch'] },
+    s = void 0,
+    t = { id: 'handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens', title: 'Versiebeheer voor design tokens', description: 'Informatie over wat semver inhoudt en hoe we het toepassen op de packages met design tokens.', source: '@site/docs/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens.md', sourceDirName: 'handboek/designer/nieuwe-versie-publiceren', slug: '/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens', permalink: '/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens.md', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Versiebeheer voor design tokens', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Versiebeheer voor design tokens', sidebar_position: 1, pagination_label: 'Versiebeheer voor design tokens', description: 'Informatie over wat semver inhoudt en hoe we het toepassen op de packages met design tokens.', keywords: ['versiebeheer', 'changelog', 'semantic versioning', 'major', 'minor', 'patch'] }, sidebar: 'handboek', previous: { title: 'Nieuwe versie publiceren', permalink: '/handboek/designer/nieuwe-versie-publiceren/' }, next: { title: 'Voor developers', permalink: '/handboek/developer/overzicht' } },
+    d = {},
     l = [
      { value: 'Semantic versioning in een notendop', id: 'semantic-versioning-in-een-notendop', level: 2 },
      { value: 'Major', id: 'major', level: 3 },
@@ -37,11 +37,11 @@
    }
   },
   40139: (e, n, i) => {
-   i.d(n, { Z: () => t, a: () => d });
+   i.d(n, { Z: () => t, a: () => s });
    var r = i(75271);
    const a = {},
     o = r.createContext(a);
-   function d(e) {
+   function s(e) {
     const n = r.useContext(o);
     return r.useMemo(
      function () {
@@ -52,7 +52,7 @@
    }
    function t(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : d(e.components)), r.createElement(o.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : s(e.components)), r.createElement(o.Provider, { value: n }, e.children);
    }
   },
  },
