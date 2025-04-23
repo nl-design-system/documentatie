@@ -3,7 +3,7 @@ title: Nieuwe versie publiceren · Designer · Handboek
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Nieuwe versie publiceren
-sidebar_position: 3
+sidebar_position: 7
 pagination_label: Nieuwe versie publiceren
 description: Informatie over het bijhouden van wijzigingen in design tokens en Figma bibliotheken voor designers.
 keywords:
