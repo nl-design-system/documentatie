@@ -36,7 +36,7 @@
     y = [];
    function _(e) {
     const n = { a: 'a', h1: 'h1', p: 'p', ...(0, r.a)(), ...e.components };
-    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.h1, { id: 'kernteam', children: 'Kernteam' }), '\n', (0, a.jsxs)(n.p, { children: ['Naast de community is er een enthousiast kernteam dat zich dagelijks inzet voor het NL Design System. Kennismaken met het kernteam? Neem contact op door een e-mail te sturen naar ', (0, a.jsx)(n.a, { href: 'mailto:kernteam@nldesignsystem.nl', children: 'kernteam@nldesignsystem.nl' })] }), '\n', (0, a.jsx)(u, { headingLevel: 2 })] });
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.h1, { id: 'kernteam', children: 'Kernteam' }), '\n', (0, a.jsxs)(n.p, { children: ['Naast de community is er een enthousiast kernteam dat zich dagelijks inzet voor het NL Design System. Kennismaken met het kernteam? Neem contact op door een e-mail te sturen naar ', (0, a.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' })] }), '\n', (0, a.jsx)(u, { headingLevel: 2 })] });
    }
    function z(e = {}) {
     const { wrapper: n } = { ...(0, r.a)(), ...e.components };

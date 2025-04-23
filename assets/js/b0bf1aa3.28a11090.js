@@ -1,4 +1,4 @@
-/*! For license information please see b0bf1aa3.70d4b239.js.LICENSE.txt */
+/*! For license information please see b0bf1aa3.28a11090.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [48595],
@@ -128,7 +128,7 @@
       '\n',
       (0, i.jsx)(s.h2, { id: 'toegankelijkheid', children: 'Toegankelijkheid' }),
       '\n',
-      (0, i.jsxs)(s.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, i.jsx)(s.a, { href: 'mailto:kernteam@nldesignsystem.nl', children: 'kernteam@nldesignsystem.nl' }), '.'] }),
+      (0, i.jsxs)(s.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, i.jsx)(s.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] }),
      ],
     });
    }
