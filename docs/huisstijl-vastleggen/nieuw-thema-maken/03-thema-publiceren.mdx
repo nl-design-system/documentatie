@@ -1,0 +1,44 @@
+---
+title: Thema publiceren · Nieuw thema maken · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Thema publiceren
+pagination_label: Thema publiceren
+description: Hoe publiceer je een nieuw thema voor anderen?
+---
+
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+
+# Een thema publiceren
+
+<Paragraph lead>
+  Op deze pagina staat hoe je een nieuw gemaakt thema kunt publiceren zodat deze gebruikt kan worden in projecten.
+</Paragraph>
+
+## Hoe werkt een thema publiceren?
+
+Alle gepubliceerde thema's voor NL Design System staan verzameld in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Het build script voor deze repository bouwt en publiceert automatisch alle thema's die erin staan naar [npm](https://www.npmjs.com/). Het [thema van Purmerend](https://github.com/nl-design-system/themes/tree/main/proprietary/purmerend-design-tokens) wordt bijvoorbeeld gepubliceerd naar [dit npm package](https://www.npmjs.com/package/@nl-design-system-community/purmerend-design-tokens). Om jouw thema te publiceren moet je dus zorgen dat jouw thema onderdeel wordt van onze repository.
+
+:::tip
+
+Om een thema te publiceren heb je git nodig. Hieronder gebruiken we de git command line maar je kunt hier ook je eigen favoriete tool voor gebruiken. Je hebt ook een account nodig voor [GitHub](https://github.com) om commits en pull requests te kunnen maken. Zorg ervoor dat jouw git tool hetzelfde account gebruikt.
+
+:::
+
+Als [je nieuwe thema](./README) lokaal in Storybook naar tevredenheid werkt kun je een _pull request_ maken zodat deze in onze repository wordt opgenomen. Zorg er allereerst voor dat jouw aanpassingen lokaal in een nieuwe branch staan. Vervang `prefix` hieronder weer steeds met de prefix die jij gekozen hebt voor je organisatie.
+
+```sh
+# Ga naar je lokale repository
+cd themes
+
+# Maak zo nodig een nieuwe branch en commit je aanpassingen
+git checkout -b feat/prefix-new-theme
+git commit -am "feat: add prefix theme"
+
+# Push je branch naar GitHub
+git push
+```
+
+Als dit is gelukt zou je de branch terug moeten kunnen zien in het overzicht op https://github.com/nl-design-system/themes/branches. Maak dan een pull request aan voor je branch door op de 3 puntjes rechts van jouw branch te klikken en "New pull request" te kiezen.
+
+Als de pull request gepubliceerd is zal het NL Design System kernteam er naar kijken en als alles in orde is ook mergen met de main branch. Dit zorgt ervoor dat jouw thema automatisch gepubliceerd wordt op npm.

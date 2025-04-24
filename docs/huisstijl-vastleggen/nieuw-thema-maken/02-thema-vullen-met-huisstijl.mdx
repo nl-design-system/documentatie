@@ -1,0 +1,109 @@
+---
+title: Thema vullen met huisstijl · Nieuw thema maken · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Thema vullen met huisstijl
+pagination_label: Thema vullen met huisstijl
+description: Hoe vul je een nieuw thema met de juiste waardes uit je huisstijl
+---
+
+import { VideoPlayer } from "@site/src/components/VideoPlayer";
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+
+# Een thema vullen met je huisstijl
+
+<Paragraph lead>
+  Op deze pagina laten we zien hoe je een nieuw gemaakt thema kunt vullen met de waardes uit je huisstijl en hoe je
+  achter deze waardes kunt komen als je die nog niet hebt.
+</Paragraph>
+
+## Wat heb je allemaal nodig?
+
+:::tip
+
+**Vereisten:** Om het nieuwe thema te kunnen vullen moeten de [stappen om een nieuw thema te maken](./README#welke-stappen-moet-ik-volgen-om-een-nieuw-thema-te-maken) succesvol zijn afgerond.
+
+:::
+
+### Algemeen
+
+Meestal begint een inventarisatie bij de kleuren. Bij een bestaande site kan dat bijvoorbeeld door individuele kleuren met de developer tools te inspecteren. Met een tool als [Project Wallace](https://www.projectwallace.com/) kun je in één keer de kleuren (en meer) uit een pagina in een overzicht krijgen.
+
+Dat hoeft niet altijd één op één. Soms valt dan op dat sommige kleuren wel erg dicht bij elkaar liggen, dan kan bijvoorbeeld de meest voorkomende gekozen worden en de rest afgerond worden, de afwijking is dan vast eerder een foutje dan een keuze.
+
+Het kan ook zijn dat er duidelijk meerdere varianten zijn van één kleur, bijvoorbeeld drie tinten rood. Je kunt tokens noemen hoe je wilt, het is vaak handig om er iets van een systeem in aan te brengen. Soms kan dat uit een huisstijlgids worden overgenomen. Als er geen bestaand systeem is in de namen, kun je ook de kleurwaarde naar [HSL](https://hslpicker.com) converteren en dan de lightness gebruiken (de “L” uit “HSL”), zodat je bv met `rood-30`, `rood-50` en `rood-70`. Rond gerust af op hele getallen.
+
+De kleuren zetten we uiteindelijk in een JSON-bestand (in het [Design Tokens Format](https://tr.designtokens.org/format/)):
+
+```json title="colors.tokens.json"
+{
+  "organisatie": {
+    "color": {
+      "red": {
+        "30": { "value": "#911808" },
+        "50": { "value": "#f2280d" },
+        "70": { "value": "#f77e6e" }
+      }
+    }
+  }
+}
+```
+
+Dat bestand kan bijvoorbeeld zo in de filestructuur staan:
+
+```txt
+├─ src
+  ├─ brand
+    ├─ organisatie
+      ├─ colors.tokens.json
+```
+
+Binnen NL Design System gebruiken we ook design tokens voor andere designkeuzes, waaronder:
+
+- typografie (lettertypes, groottes en gewichten)
+- spacing
+- focus styles
+
+### Componenten en variabelen
+
+Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. In het volgende voorbeeld wordt bijvoorbeeld in de tokens voor de `link` component van `organisatie` verwezen naar een kleur rood van `andereOrganisatie`, met de verwijzing in curly brackets:
+
+```json title="link.tokens.json"
+{
+  "organisatie": {
+    "link": {
+      "color": { "value": "{andereOrganisatie.color.red.45}" }
+    }
+  }
+}
+```
+
+### Meer over design tokens vastleggen
+
+<VideoPlayer videoId="jSvjnU7oY5Y" />
+
+## Design tokens inzetten
+
+Zoals genoemd kunnen deze JSON-bestanden in allerlei toepassingen worden gebruikt. Bij NL Design System zorgt [Style Dictionary](https://amzn.github.io/style-dictionary) dat de tokens bruikbaar worden in CSS, door een `design-tokens.css` te genereren. Die output kan er bijvoorbeeld zo uit zien:
+
+```css title="dist/design-tokens.css"
+/**
+  * Do not edit directly
+  * Generated at […]
+  */
+.organisatie-theme {
+  --organisatie-color-red-30: #911808;
+  --organisatie-color-red-50: #f2280d;
+  --organisatie-color-red-70: #f77e6e;
+}
+```
+
+In dit bestand worden alle tokens die in het theme van deze organisatie bestaan vanuit verschillende plekken bij elkaar gezet, als custom properties. Nu kunnen ze in de CSS van deze organisatie worden gebruikt, op pagina's waar de `organisatie-theme` classname op de body staat. Er is ook een output setting waar de variabelen op `:root` worden geplaatst, voor als de HTML niet makkelijk aanpasbaar is.
+
+[Referencing/aliasing](https://github.com/amzn/style-dictionary/tree/main/examples/advanced/referencing_aliasing) is de feature in Style Dictionary die zorgt dat tokens als variabele kunnen worden ingezet, zoals we in het vorige voorbeeld deden met tokens uit een andere organisatie. In de NL Design System configuratie worden alle tokenbestanden meegenomen (met `**/*`). Ook worden de gebruikte verwijzingen opgenomen als verwijzingen naar CSS, wat extra handig is in het geval van updates.
+
+### Werken met design tokens
+
+Meer weten over werken met design tokens? In onderstaande video vertelt Yolijn meer over uitbreiden van bestaande design tokens met jouw designkeuzes.
+
+<VideoPlayer videoId="-guAi7Lvl6g" />

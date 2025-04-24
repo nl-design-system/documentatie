@@ -19,9 +19,9 @@ import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/di
 ## Wat is een NL Design System thema?
 
 NL Design System is een verzameling van [_white label_](https://en.wikipedia.org/wiki/White-label_product) componenten dat gestyled kan worden met thema's.
-Thema's zijn gestructureerde collecties van _design tokens_. Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
+Thema's zijn gestructureerde collecties van [design tokens](/handboek/design-tokens). Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
 
-Deze collectie kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit het basisthema. Het basisthema definieert defaultwaardes voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
+Deze collectie kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit [het basisthema](../basisthema/README). Het basisthema definieert defaultwaardes voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
 
 Een nieuw thema bestaat uit drie lagen:
 
@@ -81,29 +81,35 @@ Als alles goed werkt zou je nu Storybook moeten kunnen bekijken door naar http:/
 
 ### Stap 4: Het voorbeeldthema kopiëren en aanpassen
 
-Je hoeft het nieuwe thema niet van de grond af aan zelf te schrijven, we kunnen beginnen met het kopiëren van het voorbeeldthema nadat je een **prefix** hebt gekozen voor je thema.
+Je hoeft het nieuwe thema niet van de grond af aan zelf te schrijven, we kunnen beginnen met het kopiëren van [het voorbeeldthema](https://github.com/nl-design-system/themes/tree/main/proprietary/example-design-tokens) nadat je een **prefix** hebt gekozen voor je thema.
 
 #### Een prefix kiezen
 
-Om de thema's uit elkaar te kunnen houden hebben alle thema's hun eigen prefix. Vaak is de prefix de lowercase naam van de organisatie waar het thema voor is maar dat hoeft niet. Zolang het alleen letters en/of cijfers bevat en niet al bestaat is het goed. De prefix wordt ook gebruikt in de naam van de map waar je het voorbeeldthema naartoe kopiëert. Voordat je dat kunt doen moet je dus eerst een prefix kiezen.
+Om de thema's en alle design tokens erin uit elkaar te kunnen houden hebben alle thema's hun eigen prefix. Vaak is de prefix de lowercase naam van de organisatie waar het thema voor is maar dat hoeft niet. Zolang de prefix niet al bestaat en alleen letters en/of cijfers bevat is het goed. De prefix wordt ook gebruikt in de naam van de map waar je het voorbeeldthema naartoe kopiëert. Voordat je dat kunt doen moet je dus eerst een prefix kiezen.
 
-We gaan er bij de volgende stappen even vanuit dat je als prefix `myorg` hebt gekozen.
+Als je een prefix gekozen hebt voor jouw organisatie kun je de stappen volgen in [de README van het voorbeeldthema](https://github.com/nl-design-system/themes/blob/main/proprietary/example-design-tokens/README.md) om je eigen thema aan te maken.
 
-```sh
-cd proprietary
-cp
+Volg de stappen t/m de stap: "Bewerk `packages/storybook/config/preview.ts`" en voeg daarna het volgende toe in `proprietary/prefix-design-tokens/src/tokens.json` (waarbij je "prefix" steeds vervangt met de prefix die je gekozen hebt):
+
+```json
+{
+  "brand": {
+    "prefix": {
+      "color": {}
+    }
+  }
+}
 ```
 
-## Hoe vul ik het thema met de juiste waardes voor onze huisstijl?
+### Stap 5: Controleren of alles werkt
 
-**TODO**
+Als je bovenstaande stappen en de stappen uit de voorbeeldthema-README hebt afgerond kun je controlen of alles werkt door eerst weer Storybook te starten:
 
-## Hoe publiceer ik mijn thema voor anderen?
+```sh
+pnpm run build
+pnpm run watch:storybook
+```
 
-**TODO**
+Als alles goed werkt zou je nu Storybook moeten kunnen openen met http://localhost:6006/ en staat er in het menu aan de linkerkant een link voor het thema van jouw organisatie.
 
----
-
----
-
----
+Hierna kun je beginnen met [het thema vullen met je huisstijl](./thema-vullen-met-huisstijl).
