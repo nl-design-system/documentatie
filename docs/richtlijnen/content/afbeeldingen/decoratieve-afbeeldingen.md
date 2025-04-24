@@ -1,5 +1,5 @@
 ---
-title: Decoratieve afbeeldingen · Content · Richtlijnen
+title: Decoratieve afbeeldingen · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Decoratieve afbeeldingen

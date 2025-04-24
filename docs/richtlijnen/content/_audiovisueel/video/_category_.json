@@ -1,0 +1,10 @@
+{
+  "label": "Video",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/content/audiovisueel/video/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
