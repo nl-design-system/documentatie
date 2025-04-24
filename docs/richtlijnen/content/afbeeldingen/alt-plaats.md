@@ -1,5 +1,5 @@
 ---
-title: Waar moet een alternatieve tekst staan? · Content · Richtlijnen
+title: Waar moet een alternatieve tekst staan? · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Waar moet een alternatieve tekst staan?

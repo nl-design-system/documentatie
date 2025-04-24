@@ -1,5 +1,5 @@
 ---
-title: Informatieve afbeeldingen · Content · Richtlijnen
+title: Informatieve afbeeldingen · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Informatieve afbeeldingen
