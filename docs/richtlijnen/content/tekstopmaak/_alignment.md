@@ -11,6 +11,8 @@ keywords:
   - tekstopmaak
   - structuur
   - tekststructuur
+  - uitlijnen
+  - uitlijning
 ---
 
 <!-- @license CC0-1.0 -->

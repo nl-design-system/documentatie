@@ -27,7 +27,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tekst benadrukken
 
-Leg nadruk op woorden of zinsdelen door ze vet of schuingedrukt te maken. Onderstreep tekst niet, bewaar onderstrepen voor links.
+Leg nadruk op woorden of zinsdelen door ze vet of schuingedrukt te maken. Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
 
 Bij goed gebruik van een CMS wordt de vette of schuingedrukte tekst in [`strong` en `em` elementen](/richtlijnen/code/strong-en-em-elementen) geplaatst. Met deze elementen in de code is de nadruk ook duidelijk voor gebruikers van hulptechnologie.
 
@@ -78,12 +78,12 @@ Door deze knoppen in een CMS te gebruiken, verander je de visuele opmaak én de 
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Onderstreep tekst niet, bewaar onderstrepen voor links.">
+<Guideline appearance="dont" title="Tekst onderstrepen">
   <Canvas language="html">
     {() => (
       <>
         <paragraph>
-          Gebruik geen <u>underline</u> omdat dit verwarrend kan zijn in combinatie met een <a href="">link</a>.
+          Gebruik geen <u>underline</u>. Bezoekers verwachten dat onderstreepte tekst een <a href="">link</a> is.
         </paragraph>
       </>
     )}

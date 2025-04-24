@@ -34,7 +34,7 @@ Zorg voor een duidelijke structuur van de tekst. Het structeren van de tekst op 
 
 Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is vooral handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben.
 
-Een duidelijke koppenstructuur is heel belangrijk. Blinde mensen maken gebruik van voorleessoftware. Voorleessoftware kan een overzicht van alle koppen op een pagina laten zien. Dit helpt mensen om snel de informatie te vinden die ze zoeken. Ze kunnen ook makkelijk van de ene kop naar de andere gaan, door gebruik te maken van sneltoetsen.
+Een duidelijke koppenstructuur is heel belangrijk. Blinde mensen maken gebruik van schermlezers. Schermlezers kunnen een overzicht van alle koppen op een pagina laten zien. Dit helpt mensen om snel de informatie te vinden die ze zoeken. Ze kunnen ook makkelijk van de ene kop naar de andere gaan, door gebruik te maken van sneltoetsen.
 
 Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat koppen van verschillende niveaus er anders uit zien, is het snel duidelijk hoe de informatie op de pagina gestructureerd is.
 
