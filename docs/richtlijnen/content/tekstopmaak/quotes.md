@@ -27,9 +27,7 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
     {() => (
       <>
         <paragraph>
-          <p>
           De voorzitter vroeg: “Was dat het antwoord op uw vraag?”
-          </p>
         </paragraph>
       </>
     )}
