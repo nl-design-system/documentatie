@@ -25,6 +25,8 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # Informatieve afbeeldingen
@@ -50,5 +52,18 @@ Vragen die je jezelf kunt stellen als je een informatieve afbeelding plaatst:
 - Gaat er informatie verloren als ik de afbeelding niet kan zien?
 
 Per afbeelding die je plaatst is de beschrijving die je meegeeft anders, omdat het antwoord op deze vragen anders is. Zorg er in ieder geval voor dat de informatie in de afbeelding ook voorkomt in de alternatieve tekst.
+
+<Guideline appearance="do" title="Informatieve afbeeldingen een beschrijvende alternatieve tekst geven">
+  <Canvas language="html">
+    {() => (
+      <>
+        <paragraph>
+        <img alt="De fieldset component groepeert gerelateerde invoervelden. De component bevat een optionele rand. De beschrijving van de groep staat boven de invoervelden, binnen de optionele rand." src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen_Fieldset.png" />
+         <p>Alternatieve tekst: De fieldset component groepeert gerelateerde invoervelden. De component bevat een optionele rand. De beschrijving van de groep staat boven de invoervelden, binnen de optionele rand.</p>
+        </paragraph>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 <FooterInfo />
