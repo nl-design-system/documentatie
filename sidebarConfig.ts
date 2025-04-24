@@ -326,6 +326,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'project/kernteam' },
         { type: 'doc', id: 'project/blijf-op-de-hoogte' },
         { type: 'doc', id: 'project/links' },
+        { type: 'doc', id: 'project/global-design-system' },
       ],
     },
   ],
