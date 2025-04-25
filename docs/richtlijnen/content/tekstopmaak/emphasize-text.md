@@ -29,7 +29,8 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Leg nadruk op woorden of zinsdelen door ze vet of schuingedrukt te maken. Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
 
-Bij goed gebruik van een CMS wordt de vette of schuingedrukte tekst in `strong` en `em` elementen geplaatst. Met deze elementen in de code is de nadruk ook duidelijk voor gebruikers van hulptechnologie.
+Bij goed gebruik van een CMS wordt de vette of schuingedrukte tekst in [`strong`](/strong) en `em` elementen geplaatst. Met deze elementen in de code is de nadruk ook duidelijk voor gebruikers van hulptechnologie.
+
 
 Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met knoppen vette of schuingedrukte tekst toe te voegen. Vaak hebben de knoppen voor vette tekst of schuingedrukte tekst de letter B (bold) of I (italic).
 
