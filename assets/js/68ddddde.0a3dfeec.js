@@ -227,8 +227,8 @@
     E = t(16771),
     O = t(23166),
     H = t(97520),
-    U = t(76233),
-    V = t(55240),
+    V = t(76233),
+    U = t(55240),
     B = t(8657);
    function I(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, g.a)(), ...e.components };
@@ -271,7 +271,7 @@
       '\n',
       (0, m.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, m.jsx)(U.B, { component: re, illustration: v }),
+      (0, m.jsx)(V.B, { component: re, illustration: v }),
       '\n',
       (0, m.jsx)(n.h2, { id: 'gebruik-deze-component', children: 'Gebruik deze component' }),
       '\n',
@@ -289,7 +289,7 @@
       '\n',
       (0, m.jsx)(j.ZP, {}),
       '\n',
-      (0, m.jsx)(V.t, {
+      (0, m.jsx)(U.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
@@ -303,7 +303,7 @@
        ],
       }),
       '\n',
-      (0, m.jsx)(V.t, {
+      (0, m.jsx)(U.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
@@ -315,7 +315,7 @@
        ],
       }),
       '\n',
-      (0, m.jsx)(V.t, {
+      (0, m.jsx)(U.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
@@ -324,7 +324,7 @@
        ],
       }),
       '\n',
-      (0, m.jsx)(V.t, {
+      (0, m.jsx)(U.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid toetsenbord',
        items: [
@@ -337,7 +337,7 @@
        ],
       }),
       '\n',
-      (0, m.jsx)(V.t, {
+      (0, m.jsx)(U.t, {
        headingLevel: 3,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
@@ -364,7 +364,7 @@
     i = t(40139);
    function s(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, r.jsx)(n.p, { children: 'Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.' }), '\n', (0, r.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 CSS).' }), '\n', (0, r.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals bijvoorbeeld: tabellen, grafieken, video's en landkaarten." }), '\n', (0, r.jsx)(n.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.' })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, r.jsx)(n.p, { children: 'Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.' }), '\n', (0, r.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, r.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, r.jsx)(n.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en door te laten lopen op de volgende regel. Voorkom zo een horizontale scrollbar en onleesbare tekst.' })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
