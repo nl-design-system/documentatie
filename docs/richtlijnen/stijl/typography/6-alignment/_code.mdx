@@ -26,7 +26,7 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="dont" title="Vermijd het gebruik van uitgevulde tekst (justified).">
   <Canvas language="html">
     {() => (
-      <p style={{ textAlign: "justify" }}>
+      <p style={{ textAlign: "justify", hyphens: "none" }}>
         Wanneer je uitgelijnde tekst gebruikt in de browser, krijg je moeilijk te lezen teksten met onduidelijke
         witruimtes. Het is gewoon niet mogelijk om woordafbreking net zo mooi te doen als in print met een vaste breedte
         mogelijk is. Jammer genoeg is het dan zo dat er een hoop grote witruimtes ontstaan. Zeker met het gebruik van
