@@ -1,0 +1,56 @@
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
+# Voorbeelden voor uitlijning
+
+<Guideline appearance="do" title="Gebruik uitlijning aan het begin van de regel.">
+  <Canvas language="html">
+    {() => (
+      <div style={{ textAlign: "start" }}>
+        <p>
+          Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst
+          op deze plek. Wat u hier leest is een voorbeeldtekst. Deze wordt later vervangen door de uiteindelijke tekst,
+          die nu nog niet bekend is.
+        </p>
+        <p>
+          De neptekst is dus een tekst die eigenlijk nergens over gaat. Het grappige is, dat mensen deze toch vaak
+          lezen. Zelfs als men weet dat het om een neptekst gaat, lezen ze toch door.
+        </p>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Vermijd het gebruik van uitgevulde tekst (justified).">
+  <Canvas language="html">
+    {() => (
+      <p style={{ textAlign: "justify" }}>
+        Wanneer je uitgelijnde tekst gebruikt in de browser, krijg je moeilijk te lezen teksten met onduidelijke
+        witruimtes. Het is gewoon niet mogelijk om woordafbreking net zo mooi te doen als in print met een vaste breedte
+        mogelijk is. Jammer genoeg is het dan zo dat er een hoop grote witruimtes ontstaan. Zeker met het gebruik van
+        lange woorden zoals het langste woord: kindercarnavalsoptochtvoorbereidingswerkzaamheden.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Beperk het gebruik van gecentreerde tekst.">
+  <Canvas language="html">
+    {() => (
+      <div style={{ textAlign: "center" }}>
+        <p>
+          Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst
+          op deze plek. Wat u hier leest is een voorbeeldtekst. Deze wordt later vervangen door de uiteindelijke tekst,
+          die nu nog niet bekend is.
+        </p>
+        <p>
+          De neptekst is dus een tekst die eigenlijk nergens over gaat. Het grappige is, dat mensen deze toch vaak
+          lezen. Zelfs als men weet dat het om een neptekst gaat, lezen ze toch door.
+        </p>
+      </div>
+    )}
+
+  </Canvas>
+</Guideline>
