@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum) · NL Design System" />
-  <meta data-rh="true" name="description" content="Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger. Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is." />
-  <meta data-rh="true" property="og:description" content="Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger. Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is." />
+  <meta data-rh="true" name="description" content="Zorg ervoor dat de aanwijsbare elementen op een pagina groot genoeg zijn om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Hierbij geldt dat het aan te wijzen gebied ten minste 24 bij 24 pixels groot is." />
+  <meta data-rh="true" property="og:description" content="Zorg ervoor dat de aanwijsbare elementen op een pagina groot genoeg zijn om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Hierbij geldt dat het aan te wijzen gebied ten minste 24 bij 24 pixels groot is." />
   <meta data-rh="true" name="keywords" content="WCAG" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.5.8" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f56de892.css" />
-  <script src="/assets/js/runtime~main.6d498dd7.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.2ca1cca2.js" defer="defer"></script>
   <script src="/assets/js/main.1122a173.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -279,18 +279,26 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau AA</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger.</p>
-              <p>Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is.</p>
+              <p>Aanwijsbare elementen op een pagina zijn groot genoeg om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Het aan te wijzen gebied is ten minste 24 bij 24 pixels groot.</p>
               <p>Behalve in de volgende gevallen:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Het aanklikbare element en de ruimte om het element samen zijn tenminste 24 bij 24 pixels.</li>
-               <li>Er is op de pagina een alternatief voor dit element wat wel groot genoeg is.</li>
-               <li>Het aanklikbare element, bijvoorbeeld een link, is onderdeel van tekst.</li>
+               <li>Het gebied is te klein, maar een cirkel met een diameter van 24 pixels, gecentreerd op het aanwijsbare element overlapt niet met andere (denkbeeldige) cirkels.</li>
+               <li>Er is op de pagina een alternatief voor dit element dat wel groot genoeg is.</li>
+               <li>Het aanwijsbare element, bijvoorbeeld een link, is onderdeel van een zin.</li>
                <li>De browser bepaalt de grootte van het element en dit kan niet gewijzigd worden.</li>
                <li>De kleine weergave is essentieel of wettelijk verplicht.</li>
               </ul>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html" class="utrecht-link utrecht-link--html-a">De bookmarklet van Adrian Roselli</a></li>
+              </ul>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Voor elk aanwijsbaar element op de pagina, test het volgende:</p>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Het aanwijsbare gebied moet minimaal 24 bij 24 pixels zijn.</li>
+               <li>Als het niet 24 bij 24 pixels is, teken dan een cirkel in het midden van het element met een diameter van 24 pixels. Dit mag niet overlappen met het gebied (of een cirkel) van een ander element.</li>
+               <li>Als het alsnog niet voldoet, beoordeel dan de andere uitzonderingen.</li>
+              </ol>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -347,7 +355,8 @@
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
