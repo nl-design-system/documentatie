@@ -29,6 +29,14 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Met tabellen kun je data presenteren. Een tabel maak je toegankelijk zodat mensen die een schermlezer gebruiken bij elke cel kunnen achterhalen wat de bijbehorende koppen zijn. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan.
 
+## Begrijpelijke tabellen maken
+
+Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar een tabel kan ook snel erg complex worden. Probeer daarom altijd om tabellen overzichtelijk en begrijpelijk te maken, voor iedereen.
+
+- Gebruik een goede logische tabelstructuur.
+- Maak tabellen niet te ingewikkeld, dit maakt het moeilijker om tabellen toegankelijk te maken.
+- Bedenk goed hoe data zo eenvoudig mogelijk weergegeven kan worden. Splits bijvoorbeeld ingewikkelde tabellen op in eenvoudige tabellen.
+
 ## Toegankelijke tabellen maken
 
 <Guideline appearance="do" title="Markeer koppen als rijkoppen of kolomkoppen">
@@ -101,9 +109,67 @@ Met tabellen kun je data presenteren. Een tabel maak je toegankelijk zodat mense
 </Canvas>
 </Guideline>
 
-Gebruik tabellen niet alleen voor een mooiere opmaak. Plaats bijvoorbeeld geen afbeelding naast een tekst met de hulp van een tabel.
+<Guideline appearance="do" title="Complexere tabellen opsplitsen">
+<Canvas language="html">
+{() => (
+<>
+<paragraph>
 
-<Guideline appearance="dont" title="Tabel gebruiken voor mooiere opmaak.">
+<table>
+<caption>Concerten in het voorjaar</caption>
+<thead>
+<tr>
+<th>Datum</th>
+<th>Evenement</th>
+<th>Locatie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6 mei 2025</td>
+<td>Rolling Stones</td>
+<td>Westerpark, Amsterdam</td>
+</tr>
+<tr>
+<td>7 mei 2025</td>
+<td>Rolling Stones</td>
+<td>Westerpark, Amsterdam</td>
+</tr>
+</tbody>
+</table>
+
+<br/>
+<table>
+<caption>Concerten in het najaar</caption>
+<thead>
+<tr>
+<th>Datum</th>
+<th>Evenement</th>
+<th>Locatie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 oktober 2025</td>
+<td>Beatles</td>
+<td>Goffertpark, Nijmegen</td>
+</tr>
+<tr>
+<td>11 oktober 2025</td>
+<td>Beatles</td>
+<td>Goffertpark, Nijmegen</td>
+</tr>
+</tbody>
+</table>
+</paragraph>
+</>
+)}
+</Canvas>
+</Guideline>
+
+Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je namelijk een relatie aan tussen tabelcellen. Iemand die een schermlezer gebruikt, krijgt namelijk te horen dat er een tabel aanwezig is. En ook voor iedere cel in welke rij en in welke kolom de cel staat. Als er geen relatie is, is het gebruik van een tabel verwarrend.
+
+<Guideline appearance="dont" title="Een tabel gebruiken voor mooiere opmaak">
   <Canvas language="html">
     {() => (
       <>
@@ -119,14 +185,6 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Plaats bijvoorbeeld geen a
     )}
   </Canvas>
 </Guideline>
-
-## Begrijpelijke tabellen maken
-
-Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar een tabel kan ook snel erg complex worden. Probeer daarom altijd om tabellen overzichtelijk en begrijpelijk te maken, voor iedereen.
-
-- Gebruik een goede logische tabelstructuur.
-- Maak tabellen niet te ingewikkeld, dit maakt het moeilijker om tabellen toegankelijk te maken.
-- Bedenk goed hoe data zo eenvoudig mogelijk weergegeven kan worden. Splits bijvoorbeeld ingewikkelde tabellen op in eenvoudige tabellen.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
