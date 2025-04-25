@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.8 Grootte van het aanwijsgebied (minimum)
 pagination_label: WCAG-succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum)
-description: Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger. Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is.
+description: Zorg ervoor dat de aanwijsbare elementen op een pagina groot genoeg zijn om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Hierbij geldt dat het aan te wijzen gebied ten minste 24 bij 24 pixels groot is.
 slug: 2.5.8
 keywords:
   - WCAG
@@ -28,9 +28,25 @@ import Summary from "./summaries/_2.5.8-summary.md";
 
 <Summary />
 
-## Opgelet
+Behalve in de volgende gevallen:
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Het gebied is te klein, maar een cirkel met een diameter van 24 pixels, gecentreerd op het aanwijsbare element overlapt niet met andere (denkbeeldige) cirkels.
+- Er is op de pagina een alternatief voor dit element dat wel groot genoeg is.
+- Het aanwijsbare element, bijvoorbeeld een link, is onderdeel van een zin.
+- De browser bepaalt de grootte van het element en dit kan niet gewijzigd worden.
+- De kleine weergave is essentieel of wettelijk verplicht.
+
+## Bronnen en tools
+
+- [De bookmarklet van Adrian Roselli](https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html)
+
+## Hoe te testen
+
+Voor elk aanwijsbaar element op de pagina, test het volgende:
+
+1. Het aanwijsbare gebied moet minimaal 24 bij 24 pixels zijn.
+2. Als het niet 24 bij 24 pixels is, teken dan een cirkel in het midden van het element met een diameter van 24 pixels. Dit mag niet overlappen met het gebied (of een cirkel) van een ander element.
+3. Als het alsnog niet voldoet, beoordeel dan de andere uitzonderingen.
 
 ## Gebruikersonderzoek
 
