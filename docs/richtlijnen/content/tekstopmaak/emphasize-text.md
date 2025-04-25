@@ -27,14 +27,29 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tekst benadrukken
 
-Leg nadruk op woorden of zinsdelen door ze vet of schuingedrukt te maken. Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
+Het kan heel goed zijn om tekst te benadrukken. Doe dat dan wel op een toegankelijke manier, zodat alle bezoekers er baat bij hebben.
+
+## Dikgedrukt en schuingedrukt
+
+Je kunt woorden of zinsdelen benadrukken door ze vet of schuingedrukt te maken.
 
 Bij goed gebruik van een CMS wordt de vette of schuingedrukte tekst in [`strong`](/strong) en `em` elementen geplaatst. Met deze elementen in de code is de nadruk ook duidelijk voor gebruikers van hulptechnologie.
-
 
 Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met knoppen vette of schuingedrukte tekst toe te voegen. Vaak hebben de knoppen voor vette tekst of schuingedrukte tekst de letter B (bold) of I (italic).
 
 Door deze knoppen in een CMS te gebruiken, verander je de visuele opmaak én de onderliggende code.
+
+## ALL CAPS-tekst
+
+Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
+
+Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij VOORNAAM of NIEUWS wordt dat wel heel vreemd.
+
+Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!
+
+## Onderstrepen
+
+Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
 
 ## Voorbeelden
 
