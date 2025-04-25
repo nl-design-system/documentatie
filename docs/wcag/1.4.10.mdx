@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.10 Reflow
 pagination_label: WCAG-succescriterium 1.4.10 Reflow
-description: De gebruiker moet de webpagina 400% kunnen vergroten in de browser en inhoud nog steeds kunnen lezen en de website goed kunnen gebruiken.
+description: De gebruiker moet de webpagina tot 400% kunnen vergroten in de browser. Dezelfde inhoud moet aanwezig zijn, en alles moet nog op eenzelfde manier werken.
 slug: 1.4.10
 keywords:
   - WCAG
@@ -28,9 +28,20 @@ import Summary from "./summaries/_1.4.10-summary.md";
 
 <Summary />
 
-## Opgelet
+## Hoe te testen
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Er zijn minimaal 2 manieren om tot 400% te vergroten en dit criterium te testen.
+
+1. Stel de schermbreedte van de browser op 1280 pixels breedte. Dit kan vaak via de developer tools. Zoom vervolgens in in de browser naar een percentage van 400%.
+2. Stel de schermbreedte van de browser in op 320 pixels breedte. Dit komt overeen met 1280 pixels en 4 maal vergroten.
+
+Als de browser op 1 van deze 2 manieren ingesteld is, controleer dan het volgende:
+
+- Er mogen geen horizontale scrollbars zijn.
+- Alle content moet bereikbaar en leesbaar zijn. Het hoeft niet meteen zichtbaar te zijn. Dit mag ook in accordions of andere uitklapbare delen zijn.
+- Alle functionaliteit moet ook bereikbaar en bruikbaar zijn. Een ingeklapt menu is een voldoende alternatief voor een zichtbaar menu.
+
+Er is een uitzondering voor content die voor het gebruik of de betekenis een tweedimensionale lay-out vereist. Denk hierbij aan bepaalde tabellen, kaarten en datavisualizaties die niet gesplitst en gescheiden kunnen worden. In die gevallen kunnen er lokaal scrollbars aanwezig zijn.
 
 ## Gebruikersonderzoek
 
