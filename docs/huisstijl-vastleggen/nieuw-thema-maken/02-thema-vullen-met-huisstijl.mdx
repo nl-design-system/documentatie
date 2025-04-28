@@ -35,27 +35,27 @@ Het kan ook zijn dat er duidelijk meerdere varianten zijn van één kleur, bijvo
 
 De kleuren zetten we uiteindelijk in een JSON-bestand (in het [Design Tokens Format](https://tr.designtokens.org/format/)):
 
-```json title="colors.tokens.json"
+```json title="tokens.json"
 {
-  "organisatie": {
-    "color": {
-      "red": {
-        "30": { "value": "#911808" },
-        "50": { "value": "#f2280d" },
-        "70": { "value": "#f77e6e" }
+  "brand": {
+    "prefix": {
+      "color": {
+        "red-30": { "$value": "#911808" },
+        "red-50": { "$value": "#f2280d" },
+        "red-70": { "$value": "#f77e6e" }
       }
     }
   }
 }
 ```
 
-Dat bestand kan bijvoorbeeld zo in de filestructuur staan:
+Als je de [stappen om een nieuw thema te maken](./README#welke-stappen-moet-ik-volgen-om-een-nieuw-thema-te-maken) gevolgd hebt kun je `tokens.json` hier vinden:
 
 ```txt
-├─ src
-  ├─ brand
-    ├─ organisatie
-      ├─ colors.tokens.json
+├─ proprietary
+  ├─ prefix-design-tokens
+    ├─ src
+      ├─ tokens.json
 ```
 
 Binnen NL Design System gebruiken we ook design tokens voor andere designkeuzes, waaronder:
@@ -66,9 +66,9 @@ Binnen NL Design System gebruiken we ook design tokens voor andere designkeuzes,
 
 ### Componenten en variabelen
 
-Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. In het volgende voorbeeld wordt bijvoorbeeld in de tokens voor de `link` component van `organisatie` verwezen naar een kleur rood van `andereOrganisatie`, met de verwijzing in curly brackets:
+Als de algemene tokens zijn gemaakt, kan er ook per component een object met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. In het volgende voorbeeld wordt bijvoorbeeld in de tokens voor de `link` component van `organisatie` verwezen naar een kleur rood van `andereOrganisatie`, met de verwijzing in curly brackets:
 
-```json title="link.tokens.json"
+```json title="tokens.json"
 {
   "organisatie": {
     "link": {
