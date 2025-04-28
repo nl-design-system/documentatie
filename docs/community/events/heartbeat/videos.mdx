@@ -8,6 +8,18 @@ slug: /events/heartbeat/videos
 ---
 
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
+import HeartbeatJSON from "./heartbeats.json";
+
+export const HeartbeatEpisode = ({id}) => {
+  const episode = HeartbeatJSON.find((h) => h.id === id);
+
+return episode ? (
+
+<>
+  {episode.description}
+  <VideoPlayer videoId={episode.youtubeId} />
+</>
+) : "Geen video gevonden" };
 
 # Heartbeat terugkijken
 
@@ -15,65 +27,39 @@ Heartbeat terugkijken? Op deze pagina vind je de opnames.
 
 ## 15 april 2025
 
-{/* Heartbeat #99 */}
-
-Francesca en Rozerin vertellen over de Mijn, Mijn, Mijn workshop rondom het samenwerken aan 1 uitstraling voor Mijn omgevingen. Jeffrey laat zien hoe je in Figma design tokens kunt documenteren met Automator en Token Studio. En hoe hij experimenteerde om design tokens uit een JSON bestand te ordenen.
-
-<VideoPlayer videoId="JutGVOM2s7I" />
+<HeartbeatEpisode id="100" />
 
 ## 1 april 2025
 
-{/* Heartbeat #98 */}
-
-Toegankelijkheidsspecialist Erik stelt zich voor als nieuw lid van het kernteam. Bryan de Jong vertelt over fase 2 van het Overheidsbrede Portalenproject waar ze werken aan standaardtemplates voor Mijn-omgevingen. Robbert kondigt aan dat er een opdracht uitstaat voor een nieuwe developer die gaat werken aan [nldesignsystem.nl](https://nldesignsystem.nl) en [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl).
-
-<VideoPlayer videoId="-duccvorUOw" />
+<HeartbeatEpisode id="99" />
 
 ## 18 maart 2025
 
-{/* Heartbeat #97 */}
-
-Fiemke Griffioen-Both heeft samen met Frameless en het Frontend Quality Team van Gemeente Rotterdam gewerkt aan een Proof of Concept om NL Design System met Mendix te combineren. Ze verteld over hoe ze dat hebben aangepakt en wat ze ervan hebben geleerd. Ook introduceren wij twee nieuwe kernteam leden!
-
-<VideoPlayer videoId="iGhzBV-1X9U" />
+<HeartbeatEpisode id="98" />
 
 ## 4 maart 2025
 
-{/* Heartbeat #96 */}
-
-Charlotte stelt zich voor als nieuw kernteam lid. Jeffrey bespreekt de Suffix component voor gebruik in formulieren en
-Sjimmie laat een proof of concept zien waarbij websites met toegankelijkheids issues op toegankelijke wijze zijn
-nagebouwd met gebruik van Rijkshuisstijl componenten.
-
-<VideoPlayer videoId="IkJC_lvTmYE" />
+<HeartbeatEpisode id="97" />
 
 ## 18 februari 2025
 
-{/* Heartbeat #95 */}
-
-Rian bespreekt twee blogposts. De eerste over het behalen van de A-status voor je website in negen stappen en een tweede
-over hoe je een header logo een toegankelijke naam geeft. Tot slot vertelt Tessa over haar ervaring met het doorlopen
-van de Help Wanted stappen in de praktijk.
-
-<VideoPlayer videoId="Hs3G8ZHwQLU" />
+<HeartbeatEpisode id="96" />
 
 ## 4 februari 2025
 
-{/* Heartbeat #94 */}
+<HeartbeatEpisode id="95" />
 
-Deze week vertellen Yasmin van gemeente Rotterdam, Jeroen en René van de gemeente Utrecht en Jeffrey over de samenwerking rondom een 2e ronde gebruikersonderzoek van het klachtenformulier.
+## 21 januari 2025
 
-<VideoPlayer videoId="zzsKvrlt5Lc" />
+<HeartbeatEpisode id="94" />
 
 ## 7 januari 2025
 
-{/* Heartbeat #93 */}
+<HeartbeatEpisode id="93" />
 
-Deze week vertelt Robbert Broersma over de Candidate componenten, vertelt Jeffrey Lauwers over de Help Wanted componenten en geeft Roy Honders een update over de Rijkshuisstijl Community.
+## 2024
 
-<VideoPlayer videoId="5_HtpUtDMRE" />
-
-## 10 december 2024
+### 10 december 2024
 
 {/* Heartbeat #92 */}
 
@@ -81,7 +67,7 @@ Francesca en Bryan geven een update vanuit de VNG over de Overheidsbrede Portale
 
 <VideoPlayer videoId="fH4ROPceMOI" />
 
-## 26 november 2024
+### 26 november 2024
 
 {/* Heartbeat #91 */}
 
@@ -90,7 +76,7 @@ Van Wart Burggraaf hoor je wat je 27 november 2024 kunt verwachten bij de 6e Est
 
 <VideoPlayer videoId="zplo-vhmC_Q" />
 
-## 12 november 2024
+### 12 november 2024
 
 {/* Heartbeat #90 */}
 
@@ -98,7 +84,7 @@ In deze Heartbeat delen Roy en Bryan updates vanuit de Rijkshuisstijl Community 
 
 <VideoPlayer videoId="-zUf7PxApSU" />
 
-## 29 oktober 2024
+### 29 oktober 2024
 
 {/* Heartbeat #89 */}
 
@@ -106,7 +92,7 @@ In deze Heartbeat vertelt Wart over de Candidate-stappen en de API-alignement ti
 
 <VideoPlayer videoId="B3bpTTBDreY" />
 
-## 15 oktober 2024
+### 15 oktober 2024
 
 {/* Heartbeat #88 */}
 
@@ -120,7 +106,7 @@ Raoul Wittenberns van het LUX design system bij Logius: “Logius heeft verschil
 
 <VideoPlayer videoId="jMMxxZxCB4o" />
 
-## 1 oktober 2024
+### 1 oktober 2024
 
 {/* Heartbeat #87 */}
 
@@ -128,7 +114,7 @@ In deze Heartbeat vertelt Yasmin Hoekstra van de gemeente Rotterdam over het geb
 
 <VideoPlayer videoId="4a310TouM3c" />
 
-## 17 september 2024
+### 17 september 2024
 
 {/* Heartbeat #86 */}
 
@@ -136,7 +122,7 @@ In deze Heartbeat vertelt Hidde over de eerstvolgende [communitybijeenkomst op v
 
 <VideoPlayer videoId="a6jXXcNSFBQ" />
 
-## 3 september 2024
+### 3 september 2024
 
 {/* Heartbeat #85 */}
 
@@ -144,7 +130,7 @@ In deze Heartbeat delen we updates uit de Rijkshuisstijl Community, componenten-
 
 <VideoPlayer videoId="J_AT7nGs2E0" />
 
-## 9 juli 2024
+### 9 juli 2024
 
 Vandaag laat Yolijn zien hoe de componentenpagina's een mooie update hebben gekregen: bij elk component is nu te zien welke checks zijn gedaan, en welke organisaties het component hebben geclaimd. Dit alles op basis van GitHub-borden, die organisaties voor hun eigen componenten ook kunnen bijhouden.
 
@@ -152,7 +138,7 @@ Vandaag laat Yolijn zien hoe de componentenpagina's een mooie update hebben gekr
 
 <VideoPlayer videoId="cP18eTpyB0g" />
 
-## 25 juni 2024
+### 25 juni 2024
 
 {/* Heartbeat #83 */}
 
@@ -162,7 +148,7 @@ Leuk weetje: er zijn maar liefst 14 componenten vanuit het NL Design System gebr
 
 <VideoPlayer videoId="pL5ohCSnWJs" />
 
-## 11 juni 2024
+### 11 juni 2024
 
 {/* Heartbeat #82 */}
 
@@ -170,7 +156,7 @@ Vandaag een update na de Estafettemodeldag op 31 mei: daar hebben 15 mensen uit 
 
 <VideoPlayer videoId="e32n3E2sZ98" />
 
-## 28 mei 2024
+### 28 mei 2024
 
 {/* Heartbeat #81 */}
 
@@ -178,7 +164,7 @@ Vandaag staat in het teken van het Estafettemodel. Hidde vertelt over de estafet
 
 <VideoPlayer videoId="VgijJ0qGFQ4" />
 
-## 14 mei 2024
+### 14 mei 2024
 
 {/* Heartbeat #80 */}
 
@@ -186,7 +172,7 @@ Nieuwe kernteamleden Rozerin en Wart stellen zich voor. Nico Druif vertrekt bij 
 
 <VideoPlayer videoId="rl90L5mk0v8" />
 
-## 30 april 2024
+### 30 april 2024
 
 {/* Heartbeat #79 */}
 
@@ -194,7 +180,7 @@ Michaëla Tan vertelt over samenwerking KWIF en NL Design System, Rian geeft upd
 
 <VideoPlayer videoId="eCAG-chIx2M" />
 
-## 16 april 2024
+### 16 april 2024
 
 {/* Heartbeat #78 */}
 
@@ -204,7 +190,7 @@ Ook laat kernteamlid Jeffrey zien hoe we omgaan met plaatsing van informatie ove
 
 <VideoPlayer videoId="jboo_sWSqPo" />
 
-## 2 april 2024
+### 2 april 2024
 
 {/* Heartbeat #76 */}
 
@@ -212,7 +198,7 @@ Tom Dekker van Acato vertelt over de NL Design System Community Blocks die ze he
 
 <VideoPlayer videoId="-obWqUeocYM" />
 
-## 19 maart 2024
+### 19 maart 2024
 
 {/* Heartbeat #75 */}
 
@@ -220,7 +206,7 @@ Begin maart sprak Yolijn op Patterns Day in Brighton, een internationale design 
 
 <VideoPlayer videoId="kjmAMBtsfTw" />
 
-## 5 maart 2024
+### 5 maart 2024
 
 {/* Heartbeat #74 */}
 
@@ -228,7 +214,7 @@ Jeroen du Chatinier van de Gemeente Utrecht vertelt over hun eerste website die 
 
 <VideoPlayer videoId="TV46qyvRmQ4" />
 
-## 20 februari 2024
+### 20 februari 2024
 
 {/* Heartbeat #73 */}
 
@@ -236,7 +222,7 @@ Kernteam update. Onderzoek naar een theme-builder, wanneer is een component help
 
 <VideoPlayer videoId="qjNVj7wYG3k" />
 
-## 6 februari 2024
+### 6 februari 2024
 
 {/* Heartbeat #72 */}
 
@@ -244,7 +230,7 @@ Sander de Gans van de gemeente Rotterdam vertelt over het opzetten van een desig
 
 <VideoPlayer videoId="gvY8dmRHl6E" />
 
-## 23 januari 2024
+### 23 januari 2024
 
 {/* Heartbeat #71 */}
 
@@ -252,7 +238,7 @@ Ananta Mulyono en Margo Welling van de Gemeente Den Haag delen een presentatie o
 
 <VideoPlayer videoId="CQE3DZ2Gx9E" />
 
-## 9 januari 2024
+### 9 januari 2024
 
 {/* Heartbeat #70 */}
 
@@ -260,7 +246,9 @@ Remy Parzinski van Logius vertelde ons over naming conventions. Robbert lichtte 
 
 <VideoPlayer videoId="KAyBUrXbbFM" />
 
-## 12 december 2023
+## 2023
+
+### 12 december 2023
 
 {/* Heartbeat #69 */}
 
@@ -268,7 +256,7 @@ In deze laatste Heartbeat van het jaar kijkt Yolijn terug op de highlights van N
 
 <VideoPlayer videoId="hU63CVVfl6s" />
 
-## 28 november 2023
+### 28 november 2023
 
 {/* Heartbeat #68 */}
 
@@ -276,7 +264,7 @@ Vandaag vertelde Jeffrey over de user test die vorige week is gedaan met WMEBV-s
 
 <VideoPlayer videoId="S6PVNr5-Trs" />
 
-## 14 november 2023
+### 14 november 2023
 
 {/* Heartbeat #67 */}
 
@@ -284,7 +272,7 @@ Rian van het kernteam vertelt over de uitbreiding van de formulierrichtlijnen wa
 
 <VideoPlayer videoId="kcfdkSZfrf4" />
 
-## 31 oktober 2023
+### 31 oktober 2023
 
 {/* Heartbeat #66 */}
 
@@ -292,7 +280,7 @@ Francesca van VNG vertelt over de WMEBV-formulieren die worden ontwikkeld in Fig
 
 <VideoPlayer videoId="lcG9DFG4NgQ" />
 
-## 17 oktober 2023
+### 17 oktober 2023
 
 {/* Heartbeat #65 */}
 
@@ -300,7 +288,7 @@ Mark Meijerink presenteert over de Persoonlijke Regelingen Assistent (PRA), een 
 
 <VideoPlayer videoId="t87tquj-vbU" />
 
-## 3 oktober 2023
+### 3 oktober 2023
 
 {/* Heartbeat #64 */}
 
@@ -308,7 +296,7 @@ De heartbeat Design Systems Week special waar Rozerin van gemeente Den Haag en R
 
 <VideoPlayer videoId="7_P4Xgl_lmw" />
 
-## 19 september 2023
+### 19 september 2023
 
 {/* Heartbeat #63 */}
 
@@ -316,7 +304,7 @@ Vincent van gemeente Amsterdam laat zien wat Amsterdam design system voor mooie 
 
 <VideoPlayer videoId="Asd3RhL0nQY" />
 
-## 5 september 2023
+### 5 september 2023
 
 {/* Heartbeat #62 */}
 
@@ -324,7 +312,7 @@ Waar Jeffrey laat zien hoe een custom onboarding kan werken door een huisstijlen
 
 <VideoPlayer videoId="xiL66AiC7_E" />
 
-## 22 augustus 2023
+### 22 augustus 2023
 
 {/* Heartbeat #61 */}
 
@@ -332,7 +320,7 @@ Jeffrey laat zien hoe een custom onboarding kan werken door een huisstijlen met 
 
 <VideoPlayer videoId="iPXM5L3B6G8" />
 
-## 11 juli 2023
+### 11 juli 2023
 
 {/* Heartbeat #60 */}
 
@@ -340,7 +328,7 @@ Jeroen du Chatinier vertelt over hoe je gebruikersondezoek kunt delen met de com
 
 <VideoPlayer videoId="ISEaZPPWenk" />
 
-## 27 juni 2023
+### 27 juni 2023
 
 {/* Heartbeat #59 */}
 
@@ -350,7 +338,7 @@ Rida el Mazouji vertelt over zijn stageopdracht bij Frameless, waarin hij met ee
 
 <VideoPlayer videoId="XVTj2oIKtbk" />
 
-## 13 juni 2023
+### 13 juni 2023
 
 {/* Heartbeat #58 */}
 
@@ -358,7 +346,7 @@ Robbert vertelt kort over de duizend-en-één soorten tabellen die we in het wil
 
 <VideoPlayer videoId="IeJr8nS-O2U" />
 
-## 16 mei 2023
+### 16 mei 2023
 
 {/* Heartbeat #57 */}
 
@@ -368,7 +356,7 @@ Vincent Smedinga, Inge de Bondt en Tanja van der Heide vertellen hoe de gemeente
 
 <VideoPlayer videoId="i4Cb3shiSKs" />
 
-## 18 april 2023
+### 18 april 2023
 
 {/* Heartbeat #56 */}
 
@@ -376,7 +364,7 @@ Het kernteam wil een handleiding maken over een kleurenpalet die helpt met toega
 
 <VideoPlayer videoId="C9KZSeEWd5U" />
 
-## 4 april 2023
+### 4 april 2023
 
 {/* Heartbeat #55 */}
 
@@ -386,7 +374,7 @@ Jeffrey laat zien hoe het kernteam white-label Figma componenten maakt, voor com
 
 <VideoPlayer videoId="qH9QR1zEI7I" />
 
-## 21 maart 2023
+### 21 maart 2023
 
 {/* Heartbeat #54 */}
 
@@ -394,7 +382,7 @@ Jeffrey vertelt over waarom we de eerste zijn die het nieuwe Gebruiker Centraal-
 
 <VideoPlayer videoId="w-hYTRE2mrw" />
 
-## 7 maart 2023
+### 7 maart 2023
 
 {/* Heartbeat #53 */}
 
@@ -402,7 +390,7 @@ Rozerin Ayerdem is UX-designer bij de gemeente Den Haag. Voor de nieuwe designs 
 
 <VideoPlayer videoId="hdYLI_tnLq8" />
 
-## 7 februari 2023
+### 7 februari 2023
 
 {/* Heartbeat #52 */}
 
@@ -410,7 +398,7 @@ De gemeente Amsterdam gaat meedoen met NL Design System, en Vincent Smedinga ver
 
 <VideoPlayer videoId="jFPrIPfWxO4" />
 
-## 24 januari 2023
+### 24 januari 2023
 
 {/* Heartbeat #51 */}
 
@@ -418,7 +406,7 @@ Kleine updates uit de community, waaronder de gemeente Utrecht die werkt aan dar
 
 <VideoPlayer videoId="OYAC0xAtsZQ" />
 
-## 10 januari 2023
+### 10 januari 2023
 
 {/* Heartbeat #50 */}
 
@@ -426,7 +414,9 @@ Eerste heartbeat van het jaar met kleine updates van het kernteam over het onder
 
 <VideoPlayer videoId="QWgJ7dztwyY" />
 
-## 13 december 2022
+## 2022
+
+### 13 december 2022
 
 {/* Heartbeat #49 */}
 
@@ -435,7 +425,7 @@ Daarnaast blikt Yolijn terug op de plannen die we voor 2022 hadden en wat daarva
 
 <VideoPlayer videoId="Ux1LO7rcqYc" />
 
-## 15 november 2022
+### 15 november 2022
 
 {/* Heartbeat #48 */}
 
@@ -445,7 +435,7 @@ Yolijn laat de Playroom zien die is toegevoegd aan [Themes Storybook](https://nl
 
 <VideoPlayer videoId="qHEmFbfKQu4" />
 
-## 18 oktober 2022
+### 18 oktober 2022
 
 {/* Heartbeat #47 */}
 
@@ -454,7 +444,7 @@ Daarna geeft Yolijn een korte demo van ons resultaat om NL Design System te inte
 
 <VideoPlayer videoId="9Gibkuoh1uQ" />
 
-## Geen video
+### Geen video
 
 Van de eerste 46 Heartbeats is helaas geen video:
 

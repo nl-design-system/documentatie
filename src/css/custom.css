@@ -316,12 +316,6 @@ li a {
   text-underline-offset: 0.2em;
 }
 
-[class^="homepage-hero__description"] p a {
-  /* Dirty hack to target link in hero banner text */
-  color: white;
-  text-decoration: underline;
-}
-
 .theme-edit-this-page {
   /* Temporarily disable Edit this page link since not every page can be editted by the community */
   display: none;
