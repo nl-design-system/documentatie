@@ -404,7 +404,7 @@ export default function Home() {
           </Paragraph>
           <Paragraph>
             Of bekijk de 50+ eerdere opnames via het{' '}
-            <Link to="/community/events/heartbeat/videos">overzicht van alle Heartbeats</Link>.
+            <Link to="/events/heartbeat/videos">overzicht van alle Heartbeats</Link>.
           </Paragraph>
           <VideoPlayer videoId={HEARTBEAT.youtubeId} />
         </div>
