@@ -78,7 +78,6 @@
   margin-inline-end: var(--card-illustration-margin-inline-end);
   margin-inline-start: var(--card-illustration-margin-inline-start);
   padding-block: var(--card-illustration-padding-block, 12px);
-  max-height: 96px;
 }
 
 .card__illustration--light-orange {

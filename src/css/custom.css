@@ -131,7 +131,7 @@
 }
 
 .footer--dark {
-  --ifm-footer-background-color: #0d1f2a;
+  --ifm-footer-background-color: #30003c;
   --ifm-footer-color: white;
   --ifm-footer-link-hover-color: white;
 }
@@ -196,10 +196,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 /* Overwrite docusaurus styling but use the classname to enable lookup for content position by docusaurus */
 .navbar {
   --ifm-link-hover-decoration: none;
-
+  box-shadow: none;
+  border-bottom: 2px solid #cfd5dd;
   display: unset;
   height: auto;
   padding: 0;
+  color: #30003c;
 }
 
 .navbar__link {
@@ -225,8 +227,9 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .navbar--dark {
   --ifm-navbar-background-color: var(--nlds-page-header-background-color);
-  --ifm-navbar-link-hover-color: white;
-  --ifm-menu-color-active: white;
+  --ifm-navbar-link-hover-color: #710788;
+  --ifm-menu-color-active: #710788;
+  --nlds-navbar-link-active-border-color: #f1b5ff;
 }
 
 .navbar__inner {
