@@ -1,7 +1,6 @@
 import { LinkList, LinkListLink, Paragraph } from '@utrecht/component-library-react/dist/css-module';
-// import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
-import './SessionTable.css';
+import './TermsList.css';
 
 interface Definition {
   paragraph: string;
@@ -35,17 +34,21 @@ export const TermsList = ({ terms }: TermsListProps) => {
         {terms.map(({ term, definitions, sources }, index) => (
           <div className="term-list_item" key={index}>
             <dt>{term}</dt>
-            <dl>
+            <dd>
               {definitions.map((definition, index) => (
                 <DefinitionData key={index} {...definition} />
               ))}
-              Further reading
-              <LinkList>
-                {sources.map((source, index) => (
-                  <SourceData key={index} {...source} />
-                ))}
-              </LinkList>
-            </dl>
+              {sources && sources.length && (
+                <>
+                  Verder lezen
+                  <LinkList>
+                    {sources.map((source, index) => (
+                      <SourceData key={index} {...source} />
+                    ))}
+                  </LinkList>
+                </>
+              )}
+            </dd>
           </div>
         ))}
       </dl>
