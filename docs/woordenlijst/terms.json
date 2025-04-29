@@ -25,7 +25,9 @@
     "sources": [
       {
         "name": "Engelstalige WCAG definitie",
-        "url": "https://www.w3.org/TR/WCAG22/#dfn-processes",
+        "url": "https://www.w3.org/TR/WCAG22/#dfn-processes"
+      },
+      {
         "name": "Nederlandstalige WCAG definitie",
         "url": "https://www.w3.org/Translations/WCAG22-nl/#dfn-processes"
       }
