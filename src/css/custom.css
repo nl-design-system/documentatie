@@ -964,3 +964,19 @@ pre {
 .DocSearch ul {
   margin: auto 0;
 }
+
+.dl__item {
+  margin-bottom: 20px;
+}
+
+.dl__term {
+  font-weight: bold;
+}
+
+.dl__definition {
+  margin-left: 0;
+}
+
+.definition__meta {
+  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
+}
