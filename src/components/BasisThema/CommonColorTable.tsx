@@ -1,11 +1,9 @@
 import { ColorSample } from '@utrecht/component-library-react';
 
-// TODO: Include from themes package
-import tokens from './_basis.token.json';
-// import tokens from '@nl-design-system-unstable/basis-design-tokens/dist/tokens.json';
+import tokens from '@nl-design-system-unstable/basis-design-tokens/dist/tokens.json';
 
 export const CommonColors = () => {
-  const colorCategories = Object.entries(tokens.common.basis.color).filter(
+  const colorCategories = Object.entries(tokens.basis.color).filter(
     (colorCategory) => colorCategory[0] !== 'transparent',
   );
   return (
@@ -67,13 +65,13 @@ const getTokenName = (tokenCode) => {
 };
 
 const getCommonSourceTokenName = (colorCategoryName, colorTypeName) => {
-  const sourceTokenCode = tokens.common.basis.color[colorCategoryName][colorTypeName].$value;
+  const sourceTokenCode = tokens.basis.color[colorCategoryName][colorTypeName].original.$value;
   return getTokenName(sourceTokenCode);
 };
 
 const getCommonSourceTokenValue = (colorCategoryName, colorTypeName) => {
   const sourceTokenName = getCommonSourceTokenName(colorCategoryName, colorTypeName);
   const tokenPath = sourceTokenName.split('.');
-  const colorValue = tokens.brand[tokenPath[0]][tokenPath[1]][tokenPath[2]][tokenPath[3]].$value;
+  const colorValue = tokens[tokenPath[0]][tokenPath[1]][tokenPath[2]][tokenPath[3]].$value;
   return colorValue;
 };

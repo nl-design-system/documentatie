@@ -119,7 +119,7 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: 'category',
-              label: 'Basisthema',
+              label: 'Het basisthema',
               link: {
                 type: 'doc',
                 id: 'huisstijl-vastleggen/basisthema/README',

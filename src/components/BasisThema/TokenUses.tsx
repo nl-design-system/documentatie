@@ -1,6 +1,5 @@
-// TODO: Include from themes package
-import tokens from './_basis.token.json';
-import tokenList from './_list.json';
+import tokens from '@nl-design-system-unstable/basis-design-tokens/dist/tokens.json';
+import tokenList from '@nl-design-system-unstable/basis-design-tokens/dist/list.json';
 
 export const TokenUses = ({ tokenType }) => {
   const tokenNames = tokenList

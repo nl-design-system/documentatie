@@ -1,8 +1,5 @@
 import { DesignTokensTable } from '@nl-design-system-unstable/design-tokens-table-react/css';
-
-// TODO: Include from themes package
-import tokenList from './_list.json';
-// import tokenList from '@nl-design-system-unstable/basis-design-tokens/dist/list.json';
+import tokenList from '@nl-design-system-unstable/basis-design-tokens/dist/list.json';
 
 export const CommonDesignTokensTable = ({ type, item, subitem, maxPathLength = Infinity }) => {
   const tokens = tokenList.filter(

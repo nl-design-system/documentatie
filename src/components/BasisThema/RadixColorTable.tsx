@@ -1,9 +1,7 @@
-// TODO: Include from themes package
-import tokens from './_basis.token.json';
-// import tokens from '@nl-design-system-unstable/basis-design-tokens/dist/tokens.json';
+import tokens from '@nl-design-system-unstable/basis-design-tokens/dist/tokens.json';
 
 export const RadixColorTable = () => {
-  const colorNames = Object.keys(tokens.brand.radix.color);
+  const colorNames = Object.keys(tokens.radix.color);
   return (
     <>
       <table className="utrecht-table sb-unstyled voorbeeld-theme">
@@ -60,13 +58,13 @@ export const RadixColorTable = () => {
 };
 
 const RadixColorRow = ({ colorName }) => {
-  const colorVariations = Object.entries(tokens.brand.radix.color[colorName]).map(([key, value], index) => ({
+  const colorVariations = Object.entries(tokens.radix.color[colorName]).map(([key, value], index) => ({
     colorVariation: key,
     color: value['$value'],
     complementaryColor:
       index >= 10
-        ? tokens.brand.radix.color[colorName][colorName + '1']['$value']
-        : tokens.brand.radix.color[colorName][colorName + '12']['$value'],
+        ? tokens.radix.color[colorName][colorName + '1']['$value']
+        : tokens.radix.color[colorName][colorName + '12']['$value'],
   }));
 
   return (
