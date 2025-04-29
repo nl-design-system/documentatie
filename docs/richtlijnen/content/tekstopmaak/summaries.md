@@ -33,7 +33,7 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           - Dit is geen lijst<br/>
           - Dit is geen lijst<br/>
           - Dit is geen lijst<br/>
@@ -45,7 +45,7 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
           4. Dit is óók geen lijst<br/><br/>
 
           Hulpsoftware herkent deze opmaak niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee.
-        </paragraph>
+        </p>
       </>
     )}
 
@@ -58,7 +58,6 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <h2>Burrata salade</h2>
           <p>Een lekkere salade met burrata en tomaten.</p>
           <h3>Ingrediënten</h3>
@@ -80,7 +79,6 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
             <li>Verdeel wat peper, olijfolie en crema di balsamico over de salade.</li>
             <li>Maak af met een schepje pesto en wat verse basilicum.</li>
           </ol>
-        </paragraph>
       </>
     )}
   </Canvas>

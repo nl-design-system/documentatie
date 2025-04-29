@@ -46,14 +46,12 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <strong style={{ color: 'purple', fontSize: '200%' }}>
             Dit is geen kop
           </strong>
           <p>
             Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
           </p>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -67,7 +65,6 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <h1>Kop met niveau 1</h1>
           <p>
             Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. De H1 geeft aan waar de hele pagina over gaat.
@@ -84,7 +81,6 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
           <p>
             Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
           </p>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -94,7 +90,6 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <h1>Dit is een kop met niveau 1</h1>
           <p>
             Sla geen niveaus over door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. 
@@ -103,7 +98,6 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
           <p>
             Dit is verwarrend voor bezoekers die gebruik maken van hulpsoftware.
           </p>
-        </paragraph>
       </>
     )}
   </Canvas>
