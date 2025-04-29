@@ -13,5 +13,22 @@
         "url": "https://nldesignsystem.nl/wcag/1.1.1/"
       }
     ]
+  },
+  {
+    "term": "Proces",
+    "slug": "proces",
+    "definitions": [
+      {
+        "paragraph": "serie handelingen van de gebruiker waarbij elke handeling vereist is om een activiteit te voltooien "
+      }
+    ],
+    "sources": [
+      {
+        "name": "Engelstalige WCAG definitie",
+        "url": "https://www.w3.org/TR/WCAG22/#dfn-processes",
+        "name": "Nederlandstalige WCAG definitie",
+        "url": "https://www.w3.org/Translations/WCAG22-nl/#dfn-processes"
+      }
+    ]
   }
 ]
