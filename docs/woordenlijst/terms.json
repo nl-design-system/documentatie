@@ -1,9 +1,8 @@
 [
   {
     "term": "Tekstalternatief",
-    "synonym": "Alternatieve tekst",
-    "synonym": "Alt-tekst",
-    "definition": [
+    "slug": "tekstalternatief",
+    "definitions": [
       {
         "paragraph": "Een tekst die het alternatief kan zijn als niet-tekstuele content niet gezien kan worden."
       }

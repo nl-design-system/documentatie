@@ -1,4 +1,4 @@
-import { LinkList, LinkListLink, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 
@@ -13,6 +13,7 @@ interface Source {
 
 export interface Term {
   term: string;
+  slug: string;
   definitions: Definition[];
   sources?: Source[];
 }
@@ -22,30 +23,40 @@ interface TermsListProps extends HTMLAttributes<HTMLTableElement> {
 }
 
 const DefinitionData = ({ paragraph }: Definition) => (
-  <Paragraph className="term-table__definition">{paragraph}</Paragraph>
+  <Paragraph className="definition__paragraph">{paragraph}</Paragraph>
 );
 
-const SourceData = ({ name, url }: Source) => <LinkListLink href={url}>{name}</LinkListLink>;
+const SourceData = ({ name, url }: Source) => (
+  <li className="definition__source">
+    <a href={url} className="definition__link">
+      {name}
+    </a>
+  </li>
+);
 
 export const TermsList = ({ terms }: TermsListProps) => {
   return (
     <div className="terms-list-container">
-      <dl>
-        {terms.map(({ term, definitions, sources }, index) => (
-          <div className="term-list_item" key={index}>
-            <dt>{term}</dt>
-            <dd>
+      <dl className="terms-list">
+        {terms.map(({ term, slug, definitions, sources }, index) => (
+          <div className="terms-list__item" key={index}>
+            <dt id={slug}>
+              <h3>{term}</h3>
+            </dt>
+            <dd className="terms-list__definition">
               {definitions.map((definition, index) => (
                 <DefinitionData key={index} {...definition} />
               ))}
               {sources && sources.length && (
                 <>
-                  Verder lezen
-                  <LinkList>
-                    {sources.map((source, index) => (
-                      <SourceData key={index} {...source} />
-                    ))}
-                  </LinkList>
+                  <div className="definition__sources">
+                    <span>Verder lezen</span>
+                    <ul role="list">
+                      {sources.map((source, index) => (
+                        <SourceData key={index} {...source} />
+                      ))}
+                    </ul>
+                  </div>
                 </>
               )}
             </dd>

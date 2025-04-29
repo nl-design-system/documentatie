@@ -1,42 +1,11 @@
-.session-table-container {
-  max-width: 90vw;
-  overflow-x: auto;
+.terms-list__item {
+  margin-bottom: 32px;
 }
 
-.session-table {
-  --utrecht-paragraph-margin-block-start: 0;
-  --utrecht-icon-size: 1em;
-  --utrecht-icon-inset-block-start: 0.1em;
-
-  display: table;
-  table-layout: auto;
-  width: 100%;
+.terms-list__definition {
+  margin-left: 0;
 }
 
-.session-table__row {
-}
-
-.session-table__time {
-}
-
-.session-table__speakers {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.session-table__speaker {
-  --utrecht-icon-margin-inline-end: 4px;
-
-  padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
-  width: max-content;
-}
-
-.speaker__icon {
-  margin-inline-end: var(--utrecht-icon-margin-inline-end);
-  margin-inline-start: calc(-1 * (var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end)));
-}
-
-.speaker__organisation {
-  font-size: 16px;
+.definition__sources {
+  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
