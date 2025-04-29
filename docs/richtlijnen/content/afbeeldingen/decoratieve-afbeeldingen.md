@@ -55,9 +55,7 @@ Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodi
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <>
-        <paragraph>
          <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg" alt="" />
-        </paragraph>
       </>
     )}
 

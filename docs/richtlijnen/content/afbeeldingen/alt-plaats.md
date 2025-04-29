@@ -50,12 +50,10 @@ Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een ondersc
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
         <figure>
          <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Amersfoortse-Dierentuin.jpg" alt="Twee mensen op een terras." />
          <figcaption>1963 - Op het terras van het café van de Amersfoortse dierentuin krijgen twee bezoekers een kopje koffie geserveerd. Dat is in eerste instantie niet heel bijzonder, maar het feit dat zij allebei een Afrikaans jachtluipaard aan hun voeten hebben liggen waarvan zij zelf de riem vasthouden wel!</figcaption>
         </figure>
-        </paragraph>
       </>
     )}
   </Canvas>

@@ -57,10 +57,8 @@ Per afbeelding die je plaatst is de beschrijving die je meegeeft anders, omdat h
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
         <img alt="De fieldset component groepeert gerelateerde invoervelden. De component bevat een optionele rand. De beschrijving van de groep staat boven de invoervelden, binnen de optionele rand." src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen_Fieldset.png" />
          <p>Alternatieve tekst: De fieldset component groepeert gerelateerde invoervelden. De component bevat een optionele rand. De beschrijving van de groep staat boven de invoervelden, binnen de optionele rand.</p>
-        </paragraph>
       </>
     )}
   </Canvas>

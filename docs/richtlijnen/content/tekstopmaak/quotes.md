@@ -26,9 +26,9 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           De voorzitter vroeg: “Was dat het antwoord op uw vraag?”
-        </paragraph>
+        </p>
       </>
     )}
   </Canvas>
@@ -40,9 +40,7 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard."</h2>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -52,11 +50,9 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <blockquote>
           Een vat vol geleerdheid is nog geen druppel wijsheid waard.
           </blockquote>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -66,11 +62,9 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <p>
           Op de voorpagina van de website staat: <q>NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk te maken.</q> Het kernteam maakt dit mogelijk.
           </p>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -80,11 +74,9 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <blockquote>
           Een vat vol geleerdheid is nog geen druppel wijsheid waard.
           </blockquote>
-        </paragraph>
       </>
     )}
   </Canvas>

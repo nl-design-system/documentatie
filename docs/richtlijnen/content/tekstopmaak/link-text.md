@@ -36,12 +36,10 @@ Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <ul>
             <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
             <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Lees meer</a> over  digitale toegankelijkheid</li>
           </ul>
-        </paragraph>
       </>
     )}
   </Canvas>
@@ -51,13 +49,11 @@ Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
           <ul>
             <li>Meer informatie staat op de pagina <a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Rechten van mensen met een beperking</a></li>
             <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)</a></li>
             <li>Stuur een mail naar <a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">test@test.nl</a></li>
           </ul>
-        </paragraph>
       </>
     )}
   </Canvas>

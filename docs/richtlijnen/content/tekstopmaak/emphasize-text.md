@@ -57,9 +57,9 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           Je kunt op eigen gelegenheid oversteken. <strong>Pas op!</strong> Dit is <strong>erg gevaarlijk</strong>
-        </paragraph>
+        </p>
       </>
     )}
   </Canvas>
@@ -69,9 +69,9 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           <em>Moet</em> ik dit nu doen? of Moet <em>ik</em> dit nu doen?
-        </paragraph>
+        </p>
       </>
     )}
   </Canvas>
@@ -81,14 +81,14 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           <strong>
             Dit is een neptekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van
             tekst op deze plek. Wat u hier leest is een voorbeeldtekst. De neptekst is dus een tekst die eigenlijk
             nergens over gaat. Het grappige is, dat mensen deze toch vaak lezen. Zelfs als men weet dat het om een
             neptekst gaat, lezen ze toch door.
           </strong>
-        </paragraph>
+        </p>
       </>
     )}
   </Canvas>
@@ -98,9 +98,9 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
+        <p>
           Gebruik geen <u>underline</u>. Bezoekers verwachten dat onderstreepte tekst een <a href="">link</a> is.
-        </paragraph>
+        </p>
       </>
     )}
   </Canvas>
