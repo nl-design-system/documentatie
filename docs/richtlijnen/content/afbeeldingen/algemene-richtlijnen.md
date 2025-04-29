@@ -41,10 +41,8 @@ Ongeacht voor welke afbeelding je een alternatieve tekst gaat schrijven, zijn er
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
-         <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen_Paspoort-id-rijbewijs-illustratie.jpg" alt="Paspoort  identiteitskaart en rijbewijs illustratie."/>
+         <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen_Paspoort-id-rijbewijs-illustratie.jpg" alt="Paspoort identiteitskaart en rijbewijs illustratie."/>
          <p>Alternatieve tekst: Paspoort identiteitskaart en rijbewijs illustratie</p>
-        </paragraph>
       </>
     )}
   </Canvas>

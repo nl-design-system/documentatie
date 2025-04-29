@@ -51,10 +51,8 @@ Veel websites hebben een logo dat ook een link is naar de homepage. Dit logo sta
   <Canvas language="html">
     {() => (
       <>
-        <paragraph>
         <img alt="NL Design System logo, naar de homepage" src="https://raw.githubusercontent.com/nl-design-system/documentatie/9e5331b623e1bbd5bea950c934a20459e13b64bf/logo.svg" />
          <p>Alternatieve tekst: NL Design System logo, naar de homepage</p>
-        </paragraph>
       </>
     )}
   </Canvas>
