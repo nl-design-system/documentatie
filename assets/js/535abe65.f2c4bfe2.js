@@ -16,7 +16,7 @@
    }
   },
   40432: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => g, contentTitle: () => c, default: () => h, frontMatter: () => r, metadata: () => d, toc: () => p });
+   t.r(n), t.d(n, { assets: () => g, contentTitle: () => c, default: () => b, frontMatter: () => r, metadata: () => d, toc: () => u });
    var l = t(52676),
     a = t(40139),
     o = t(43599),
@@ -26,19 +26,19 @@
     c = 'Functionele afbeeldingen',
     d = { id: 'richtlijnen/content/afbeeldingen/functionele-afbeeldingen', title: 'Functionele afbeeldingen \xb7 Afbeeldingen \xb7 Content \xb7 Richtlijnen', description: 'Functionele afbeeldingen in NL Design System.', source: '@site/docs/richtlijnen/content/afbeeldingen/functionele-afbeeldingen.md', sourceDirName: 'richtlijnen/content/afbeeldingen', slug: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen', permalink: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/afbeeldingen/functionele-afbeeldingen.md', tags: [], version: 'current', frontMatter: { title: 'Functionele afbeeldingen \xb7 Afbeeldingen \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Functionele afbeeldingen', pagination_label: 'Functionele afbeeldingen', description: 'Functionele afbeeldingen in NL Design System.', slug: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen', keywords: ['afbeeldingen', 'alternatieve tekst', 'alt tekst', 'beeldbeschrijving', 'alt attribuut', 'tekstalternatief', 'tekstalternatieven', 'tekst alternatief', 'tekstueel alternatief', 'tekst alternatieven', 'toegankelijke afbeeldingen'] }, sidebar: 'richtlijnen', previous: { title: 'Decoratieve afbeeldingen', permalink: '/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen' }, next: { title: 'Informatieve afbeeldingen', permalink: '/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen' } },
     g = {},
-    p = [
+    u = [
      { value: 'Overwegingen', id: 'overwegingen', level: 2 },
      { value: 'Logo als link naar de homepage', id: 'logo-als-link-naar-de-homepage', level: 2 },
      { value: 'Waar stel je de alternatieve tekst van het logo als link naar de homepage in?', id: 'waar-stel-je-de-alternatieve-tekst-van-het-logo-als-link-naar-de-homepage-in', level: 3 },
      { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 },
     ];
-   function u(e) {
-    const n = { a: 'a', h1: 'h1', h2: 'h2', h3: 'h3', img: 'img', li: 'li', p: 'p', paragraph: 'paragraph', ul: 'ul', ...(0, a.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: 'functionele-afbeeldingen', children: 'Functionele afbeeldingen' }), '\n', (0, l.jsx)(n.p, { children: 'Afbeeldingen hebben soms een functie. Bijvoorbeeld:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Een afbeelding waar je op kan klikken om naar een andere pagina te gaan. De afbeelding is dan een link geworden.' }), '\n', (0, l.jsx)(n.li, { children: 'De afbeelding opent in het groot in een dialoogvenster op de pagina. De afbeelding is dan een knop geworden.' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'overwegingen', children: 'Overwegingen' }), '\n', (0, l.jsx)(n.p, { children: 'Vragen die je jezelf kunt stellen als je een functionele afbeelding plaatst:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Waarom wil ik deze afbeelding plaatsen?' }), '\n', (0, l.jsx)(n.li, { children: 'Wat is het doel van de afbeelding?' }), '\n', (0, l.jsx)(n.li, { children: 'Wat gebeurt er als een bezoeker op de afbeelding klikt?' }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: 'Hier beschrijf je niet wat op de afbeelding staat, maar wat de bezoeker ermee kan doen. De bezoeker weet anders niet wat er gaat gebeuren na het klikken op de link of knop.' }), '\n', (0, l.jsx)(n.h2, { id: 'logo-als-link-naar-de-homepage', children: 'Logo als link naar de homepage' }), '\n', (0, l.jsx)(n.p, { children: 'Veel websites hebben een logo dat ook een link is naar de homepage. Dit logo staat dan bovenaan iedere pagina, meestal naast het navigatiemenu. Hier is het belangrijk om zowel te benoemen dat het een logo is, als waar de link naar de naartoe gaat. In die zin is een logo zowel een informatieve als een functionele afbeelding.' }), '\n', (0, l.jsx)(i.X, { appearance: 'do', title: 'Benoem de organisatie, dat het om een logo gaat en waar de link naar verwijst', children: (0, l.jsx)(o.X, { language: 'html', children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.paragraph, { children: [(0, l.jsx)(n.img, { alt: 'NL Design System logo, naar de homepage', src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/9e5331b623e1bbd5bea950c934a20459e13b64bf/logo.svg' }), (0, l.jsx)(n.p, { children: 'Alternatieve tekst: NL Design System logo, naar de homepage' })] }) }) }) }), '\n', (0, l.jsxs)(n.p, { children: ['Lees ook onze ', (0, l.jsx)(n.a, { href: '/blog/toegankelijke-naam-link-logo-header', children: 'blog "De toegankelijke naam van een link op een logo in de header"' }), '.'] }), '\n', (0, l.jsx)(n.h3, { id: 'waar-stel-je-de-alternatieve-tekst-van-het-logo-als-link-naar-de-homepage-in', children: 'Waar stel je de alternatieve tekst van het logo als link naar de homepage in?' }), '\n', (0, l.jsx)(n.p, { children: 'Het verschilt per contentmanagementsysteem (CMS) waar je dit aan kunt passen en of je dit als contentmaker zelf kunt doen. Meestal zit deze optie in de thema-instellingen van het CMS. Het kan daarom zijn dat je geen rechten hebt om de alternatieve tekst van het logo bovenaan iedere pagina zelf aan te passen. Vraag dit dan aan de beheerder of leverancier van je website.' }), '\n', (0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.1.1', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.4', children: 'Succescriterium 2.4.4 Linkdoel (in context)' }) }), '\n'] }), '\n', (0, l.jsx)(s.ZP, {})] });
+   function p(e) {
+    const n = { a: 'a', h1: 'h1', h2: 'h2', h3: 'h3', img: 'img', li: 'li', p: 'p', ul: 'ul', ...(0, a.a)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: 'functionele-afbeeldingen', children: 'Functionele afbeeldingen' }), '\n', (0, l.jsx)(n.p, { children: 'Afbeeldingen hebben soms een functie. Bijvoorbeeld:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Een afbeelding waar je op kan klikken om naar een andere pagina te gaan. De afbeelding is dan een link geworden.' }), '\n', (0, l.jsx)(n.li, { children: 'De afbeelding opent in het groot in een dialoogvenster op de pagina. De afbeelding is dan een knop geworden.' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'overwegingen', children: 'Overwegingen' }), '\n', (0, l.jsx)(n.p, { children: 'Vragen die je jezelf kunt stellen als je een functionele afbeelding plaatst:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Waarom wil ik deze afbeelding plaatsen?' }), '\n', (0, l.jsx)(n.li, { children: 'Wat is het doel van de afbeelding?' }), '\n', (0, l.jsx)(n.li, { children: 'Wat gebeurt er als een bezoeker op de afbeelding klikt?' }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: 'Hier beschrijf je niet wat op de afbeelding staat, maar wat de bezoeker ermee kan doen. De bezoeker weet anders niet wat er gaat gebeuren na het klikken op de link of knop.' }), '\n', (0, l.jsx)(n.h2, { id: 'logo-als-link-naar-de-homepage', children: 'Logo als link naar de homepage' }), '\n', (0, l.jsx)(n.p, { children: 'Veel websites hebben een logo dat ook een link is naar de homepage. Dit logo staat dan bovenaan iedere pagina, meestal naast het navigatiemenu. Hier is het belangrijk om zowel te benoemen dat het een logo is, als waar de link naar de naartoe gaat. In die zin is een logo zowel een informatieve als een functionele afbeelding.' }), '\n', (0, l.jsx)(i.X, { appearance: 'do', title: 'Benoem de organisatie, dat het om een logo gaat en waar de link naar verwijst', children: (0, l.jsx)(o.X, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.img, { alt: 'NL Design System logo, naar de homepage', src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/9e5331b623e1bbd5bea950c934a20459e13b64bf/logo.svg' }), (0, l.jsx)(n.p, { children: 'Alternatieve tekst: NL Design System logo, naar de homepage' })] }) }) }), '\n', (0, l.jsxs)(n.p, { children: ['Lees ook onze ', (0, l.jsx)(n.a, { href: '/blog/toegankelijke-naam-link-logo-header', children: 'blog "De toegankelijke naam van een link op een logo in de header"' }), '.'] }), '\n', (0, l.jsx)(n.h3, { id: 'waar-stel-je-de-alternatieve-tekst-van-het-logo-als-link-naar-de-homepage-in', children: 'Waar stel je de alternatieve tekst van het logo als link naar de homepage in?' }), '\n', (0, l.jsx)(n.p, { children: 'Het verschilt per contentmanagementsysteem (CMS) waar je dit aan kunt passen en of je dit als contentmaker zelf kunt doen. Meestal zit deze optie in de thema-instellingen van het CMS. Het kan daarom zijn dat je geen rechten hebt om de alternatieve tekst van het logo bovenaan iedere pagina zelf aan te passen. Vraag dit dan aan de beheerder of leverancier van je website.' }), '\n', (0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.1.1', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.4', children: 'Succescriterium 2.4.4 Linkdoel (in context)' }) }), '\n'] }), '\n', (0, l.jsx)(s.ZP, {})] });
    }
-   function h(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, a.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(u, { ...e }) }) : u(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
    }
   },
   43599: (e, n, t) => {
@@ -52,48 +52,48 @@
     c = t(48231),
     d = t(75119),
     g = t(75271),
-    p = t(60027),
-    u = t(52676);
-   const h = (e) => {
-    let { children: n } = e;
-    return (0, u.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(a.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, u.jsx)(a.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
-   };
-   h.displayName = 'ParagraphContainer';
+    u = t(60027),
+    p = t(52676);
    const b = (e) => {
     let { children: n } = e;
-    return (0, u.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(a.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
+    return (0, p.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: (0, p.jsx)(a.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, p.jsx)(a.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   b.displayName = 'DocumentContainer';
+   b.displayName = 'ParagraphContainer';
+   const h = (e) => {
+    let { children: n } = e;
+    return (0, p.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: (0, p.jsx)(a.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
+   };
+   h.displayName = 'DocumentContainer';
    const m = (e) => {
     let { children: n } = e;
-    return (0, u.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: n });
+    return (0, p.jsx)(a.Tg, { className: 'nlds-canvas__example-surface', children: n });
    };
    m.displayName = 'SurfaceContainer';
    const v = (e) => {
-    let { code: n, copy: t = !0, defaultExpandedCode: v = !1, displayCode: f = !0, children: j, container: k = 'document', language: y, designTokens: x } = e;
-    const _ = 'function' == typeof j ? j() : j,
+    let { code: n, copy: t = !0, defaultExpandedCode: v = !1, displayCode: f = !0, children: k, container: y = 'document', language: j, designTokens: x } = e;
+    const _ = 'function' == typeof k ? k() : k,
      w = 'function' == typeof n ? n() : (0, g.isValidElement)(n) ? n : void 0,
-     N = 'string' == typeof n ? n : p.uS(w || _),
+     N = 'string' == typeof n ? n : u.uS(w || _),
      [C, z] = (0, g.useState)(N),
      [S, Z] = (0, g.useState)(v);
     (0, g.useEffect)(() => {
      (async () => {
-      const e = await d.ZP.format(N, { parser: y, plugins: [i.Z, s.ZP, r.ZP, c.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+      const e = await d.ZP.format(N, { parser: j, plugins: [i.Z, s.ZP, r.ZP, c.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
       z(e);
      })();
     }, [N]);
     const F = (0, g.useId)();
     let D = g.Fragment;
     return (
-     'paragraph' === k ? (D = h) : 'document' === k ? (D = b) : 'surface' === k && (D = m),
-     (0, u.jsxs)('div', {
+     'paragraph' === y ? (D = b) : 'document' === y ? (D = h) : 'surface' === y && (D = m),
+     (0, p.jsxs)('div', {
       className: (0, o.Z)('nlds-canvas'),
       children: [
-       _ && (0, u.jsx)('div', { className: (0, o.Z)('nlds-canvas__example'), children: (0, u.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, u.jsx)(D, { children: (0, u.jsx)(a.pu, { children: _ }) }) }) }),
+       _ && (0, p.jsx)('div', { className: (0, o.Z)('nlds-canvas__example'), children: (0, p.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, p.jsx)(D, { children: (0, p.jsx)(a.pu, { children: _ }) }) }) }),
        f &&
-        (0, u.jsx)('div', {
+        (0, p.jsx)('div', {
          className: (0, o.Z)('nlds-canvas__toolbar'),
-         children: (0, u.jsx)(a.zx, {
+         children: (0, p.jsx)(a.zx, {
           className: (0, o.Z)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
@@ -105,16 +105,16 @@
          }),
         }),
        f &&
-        (0, u.jsxs)('div', {
+        (0, p.jsxs)('div', {
          className: (0, o.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
          id: F,
          hidden: !S,
          children: [
-          (0, u.jsx)(l.u, { codeBlockLabel: 'Codevoorbeeld', syntax: y, textContent: C, trim: !0 }),
+          (0, p.jsx)(l.u, { codeBlockLabel: 'Codevoorbeeld', syntax: j, textContent: C, trim: !0 }),
           t &&
-           (0, u.jsx)('div', {
+           (0, p.jsx)('div', {
             className: (0, o.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, u.jsx)(a.zx, {
+            children: (0, p.jsx)(a.zx, {
              className: (0, o.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -177,8 +177,8 @@
    function c(e) {
     let { lineNumber: n, syntax: t, textContent: c, trim: d } = e,
      g = c;
-    const { title: p, type: u } = (0, o.useContext)(i.n),
-     h = (0, o.useId)();
+    const { title: u, type: p } = (0, o.useContext)(i.n),
+     b = (0, o.useId)();
     return (
      d && (g = g.trim()),
      (0, r.jsx)(a.y$, {
@@ -187,7 +187,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: a, getLineProps: o, getTokenProps: i } = e;
-       return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, r.jsx)(l.dn, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': h, style: t, children: a.map((e, t) => (0, r.jsxs)('span', { ...o({ line: e }), children: [n && (0, r.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, r.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)('span', { hidden: !0, id: b, children: ['codevoorbeeld ', p ? `\u201c${p}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, r.jsx)(l.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': b, style: t, children: a.map((e, t) => (0, r.jsxs)('span', { ...o({ line: e }), children: [n && (0, r.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, r.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -204,10 +204,10 @@
    const c = (0, s.createContext)({}),
     d = (e) => {
      let { title: n, appearance: t, description: s, children: d, figure: g } = e;
-     const p = { do: 'Doen', dont: 'Niet doen' },
-      u = g ? 'figure' : 'div',
-      h = g ? 'figcaption' : 'div';
-     return (0, r.jsxs)(u, { className: (0, i.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, r.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, r.jsx)(o.nv, { children: n })] }) : (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(a.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, r.jsx)(o.nv, { children: n })] }), s] }), (0, r.jsx)('div', { className: 'nlds-guideline__example', children: (0, r.jsx)(c.Provider, { value: { title: n, type: p[t] }, children: d }) })] });
+     const u = { do: 'Doen', dont: 'Niet doen' },
+      p = g ? 'figure' : 'div',
+      b = g ? 'figcaption' : 'div';
+     return (0, r.jsxs)(p, { className: (0, i.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, r.jsxs)(b, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, r.jsx)(o.nv, { children: n })] }) : (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(o.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(a.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, r.jsx)(o.nv, { children: n })] }), s] }), (0, r.jsx)('div', { className: 'nlds-guideline__example', children: (0, r.jsx)(c.Provider, { value: { title: n, type: u[t] }, children: d }) })] });
     };
   },
   40139: (e, n, t) => {

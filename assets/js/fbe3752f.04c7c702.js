@@ -16,7 +16,7 @@
    }
   },
   59882: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => p, contentTitle: () => i, default: () => m, frontMatter: () => c, metadata: () => d, toc: () => u });
+   t.r(n), t.d(n, { assets: () => p, contentTitle: () => i, default: () => h, frontMatter: () => c, metadata: () => d, toc: () => u });
    var o = t(52676),
     l = t(40139),
     s = t(43599),
@@ -30,13 +30,13 @@
      { value: 'Voorbeelden', id: 'voorbeelden', level: 2 },
      { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 },
     ];
-   function h(e) {
-    const n = { a: 'a', blockquote: 'blockquote', h1: 'h1', h2: 'h2', li: 'li', p: 'p', paragraph: 'paragraph', ul: 'ul', ...(0, l.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'citaten-op-een-webpagina', children: 'Citaten op een webpagina' }), '\n', (0, o.jsx)(n.p, { children: 'Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken zetten. Je kunt tekst ook markeren als citaat binnen het systeem waarmee je webpagina\u2019s publiceert. Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.' }), '\n', (0, o.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Plaats dubbele of enkele aanhalingstekens om een quote aan te geven.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.paragraph, { children: 'De voorzitter vroeg: \u201cWas dat het antwoord op uw vraag?\u201d' }) }) }) }), '\n', (0, o.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met een knop een quote toe te voegen." }), '\n', (0, o.jsx)(a.X, { appearance: 'dont', title: 'Een kop gebruiken om een quote op te maken.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.paragraph, { children: (0, o.jsx)(n.h2, { children: '"Een vat vol geleerdheid is nog geen druppel wijsheid waard."' }) }) }) }) }), '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Een quote opmaken met de specifiek daarvoor bedoelde mogelijkheid in het CMS.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.paragraph, { children: (0, o.jsx)(n.blockquote, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }) }) }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(r.ZP, {})] });
+   function m(e) {
+    const n = { a: 'a', blockquote: 'blockquote', h1: 'h1', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, l.a)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'citaten-op-een-webpagina', children: 'Citaten op een webpagina' }), '\n', (0, o.jsx)(n.p, { children: 'Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken zetten. Je kunt tekst ook markeren als citaat binnen het systeem waarmee je webpagina\u2019s publiceert. Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.' }), '\n', (0, o.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Plaats dubbele of enkele aanhalingstekens om een quote aan te geven.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.p, { children: 'De voorzitter vroeg: \u201cWas dat het antwoord op uw vraag?\u201d' }) }) }) }), '\n', (0, o.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met een knop een quote toe te voegen." }), '\n', (0, o.jsx)(a.X, { appearance: 'dont', title: 'Een kop gebruiken om een quote op te maken.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.h2, { children: '"Een vat vol geleerdheid is nog geen druppel wijsheid waard."' }) }) }) }), '\n', (0, o.jsx)(a.X, { appearance: 'do', title: 'Een quote opmaken met de specifiek daarvoor bedoelde mogelijkheid in het CMS.', children: (0, o.jsx)(s.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.blockquote, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }) }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(r.ZP, {})] });
    }
-   function m(e = {}) {
+   function h(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(h, { ...e }) }) : h(e);
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(m, { ...e }) }) : m(e);
    }
   },
   43599: (e, n, t) => {
@@ -51,20 +51,20 @@
     d = t(75119),
     p = t(75271),
     u = t(60027),
-    h = t(52676);
-   const m = (e) => {
+    m = t(52676);
+   const h = (e) => {
     let { children: n } = e;
-    return (0, h.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(l.BB, { className: (0, s.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, h.jsx)(l.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
+    return (0, m.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(l.BB, { className: (0, s.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, m.jsx)(l.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   m.displayName = 'ParagraphContainer';
+   h.displayName = 'ParagraphContainer';
    const g = (e) => {
     let { children: n } = e;
-    return (0, h.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(l.BB, { className: (0, s.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
+    return (0, m.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, m.jsx)(l.BB, { className: (0, s.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
    g.displayName = 'DocumentContainer';
    const b = (e) => {
     let { children: n } = e;
-    return (0, h.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: n });
+    return (0, m.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: n });
    };
    b.displayName = 'SurfaceContainer';
    const y = (e) => {
@@ -83,15 +83,15 @@
     const P = (0, p.useId)();
     let M = p.Fragment;
     return (
-     'paragraph' === j ? (M = m) : 'document' === j ? (M = g) : 'surface' === j && (M = b),
-     (0, h.jsxs)('div', {
+     'paragraph' === j ? (M = h) : 'document' === j ? (M = g) : 'surface' === j && (M = b),
+     (0, m.jsxs)('div', {
       className: (0, s.Z)('nlds-canvas'),
       children: [
-       f && (0, h.jsx)('div', { className: (0, s.Z)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: _, children: (0, h.jsx)(M, { children: (0, h.jsx)(l.pu, { children: f }) }) }) }),
+       f && (0, m.jsx)('div', { className: (0, s.Z)('nlds-canvas__example'), children: (0, m.jsx)('div', { className: 'voorbeeld-theme', style: _, children: (0, m.jsx)(M, { children: (0, m.jsx)(l.pu, { children: f }) }) }) }),
        v &&
-        (0, h.jsx)('div', {
+        (0, m.jsx)('div', {
          className: (0, s.Z)('nlds-canvas__toolbar'),
-         children: (0, h.jsx)(l.zx, {
+         children: (0, m.jsx)(l.zx, {
           className: (0, s.Z)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
@@ -103,16 +103,16 @@
          }),
         }),
        v &&
-        (0, h.jsxs)('div', {
+        (0, m.jsxs)('div', {
          className: (0, s.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
          id: P,
          hidden: !Z,
          children: [
-          (0, h.jsx)(o.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: N, trim: !0 }),
+          (0, m.jsx)(o.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: N, trim: !0 }),
           t &&
-           (0, h.jsx)('div', {
+           (0, m.jsx)('div', {
             className: (0, s.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, h.jsx)(l.zx, {
+            children: (0, m.jsx)(l.zx, {
              className: (0, s.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -175,8 +175,8 @@
    function i(e) {
     let { lineNumber: n, syntax: t, textContent: i, trim: d } = e,
      p = i;
-    const { title: u, type: h } = (0, s.useContext)(a.n),
-     m = (0, s.useId)();
+    const { title: u, type: m } = (0, s.useContext)(a.n),
+     h = (0, s.useId)();
     return (
      d && (p = p.trim()),
      (0, c.jsx)(l.y$, {
@@ -185,7 +185,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: l, getLineProps: s, getTokenProps: a } = e;
-       return (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: m, children: ['codevoorbeeld ', h ? `\u201c${h}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, c.jsx)(o.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': m, style: t, children: l.map((e, t) => (0, c.jsxs)('span', { ...s({ line: e }), children: [n && (0, c.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, c.jsx)('span', { ...a({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, c.jsx)(o.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': h, style: t, children: l.map((e, t) => (0, c.jsxs)('span', { ...s({ line: e }), children: [n && (0, c.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, c.jsx)('span', { ...a({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -203,9 +203,9 @@
     d = (e) => {
      let { title: n, appearance: t, description: r, children: d, figure: p } = e;
      const u = { do: 'Doen', dont: 'Niet doen' },
-      h = p ? 'figure' : 'div',
-      m = p ? 'figcaption' : 'div';
-     return (0, c.jsxs)(h, { className: (0, a.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(m, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.nv, { className: (0, a.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, c.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(s.nv, { children: n })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.nv, { className: (0, a.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, c.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(s.nv, { children: n })] }), r] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(i.Provider, { value: { title: n, type: u[t] }, children: d }) })] });
+      m = p ? 'figure' : 'div',
+      h = p ? 'figcaption' : 'div';
+     return (0, c.jsxs)(m, { className: (0, a.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.nv, { className: (0, a.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, c.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(s.nv, { children: n })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.nv, { className: (0, a.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, c.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(s.nv, { children: n })] }), r] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(i.Provider, { value: { title: n, type: u[t] }, children: d }) })] });
     };
   },
   40139: (e, n, t) => {
