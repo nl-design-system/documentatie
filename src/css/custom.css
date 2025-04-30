@@ -200,8 +200,13 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   border-bottom: 2px solid #cfd5dd;
   display: unset;
   height: auto;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 16px;
   color: #30003c;
+}
+
+.navbar__logo {
+  height: 3rem;
 }
 
 .navbar__link {

@@ -6,13 +6,9 @@ import './Layout.css';
 export default function FooterLayout({ style, links, logo, copyright }: Props): ReactElement {
   return (
     <footer
-      className={clsx(
-        'footer',
-        {
-          'footer--dark': style === 'dark',
-        },
-        'footer',
-      )}
+      className={clsx('footer', {
+        'footer--dark': style === 'dark',
+      })}
     >
       <div className="container--wide">
         {links}
