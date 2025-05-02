@@ -128,3 +128,5 @@ Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakt
 
 - [Succescriterium 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](/wcag/1.2.2)
 - [Succescriterium 1.2.4 Ondertitels voor doven en slechthorenden (live)](/wcag/1.2.4)
+
+<FooterInfo />
