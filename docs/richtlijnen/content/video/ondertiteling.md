@@ -30,7 +30,7 @@ We maken onderscheid tussen ondertiteling als vertaling (subtitles) en ondertite
 
 ## Ondertiteling als vertaling
 
-Ondertiteling als vertaling kom je bijvoorbeeld tegen als de audio in de video Engelstalig is en de ondertiteling Nederlands. Dit zorgt ervoor dat mensen die de taal waarin de video is opgenomen niet begrijpen, de informatie met behulp van de ondertiteling alsnog kunnen begrijpen.
+Ondertiteling als vertaling kom je bijvoorbeeld tegen als de audio in de video Engelstalig is en de ondertiteling Nederlands. Dit zorgt ervoor dat mensen die de taal waarin de audio is opgenomen niet begrijpen, de informatie met behulp van de ondertiteling alsnog kunnen begrijpen.
 
 De Engelse term voor deze vorm van ondertiteling is 'subtitles' en bevat over het algemeen alleen de vertaling van gesproken woord in een video.
 
@@ -42,11 +42,11 @@ De Engelse term voor deze vorm van ondertiteling is 'captions'. Dit is de ondert
 
 ### Voorbeelden
 
-Welke informatie moet je in ondertiteling benoemen? Dat ligt er aan welke geluiden belangrijk zijn voor wat je wilt overbrengen in de video. Onthoudt dat geluid, volume en toon vaak een belangrijke verhalende rol hebben. Denk aan:
+Welke informatie moet je in ondertiteling benoemen? Dat ligt er aan welke geluiden belangrijk zijn voor wat je wilt overbrengen in de video. Onthoud dat geluid, volume en toon vaak een belangrijke verhalende rol hebben. Denk aan:
 
 - De gesproken tekst. Dit voeg je altijd toe aan je ondertiteling.
 - Belangrijke geluiden zoals lachen, een dichtslaande deur, omgevingsgeluid of muziek.
-- Volume of intonatie. Schreeuwt iemand, of fluistert diegene juist? Zegt iemand iets op een hele sarcastische toon of zelfs spottend?
+- Volume of intonatie. Schreeuwt iemand, of fluistert diegene juist? Zegt iemand iets op een sarcastische manier of zelfs spottend?
 - De naam of beschrijving van degene die iets zegt. Soms is de spreker niet in beeld maar wel te horen, voeg dan toe om wie het gaat.
 
 Om onderscheid te maken tussen gesproken tekst en de beschrijving van de geluiden, plaats je de beschrijvingen van geluiden tussen vierkante haakjes (bijvoorbeeld [spannende muziek]). De naam van de spreker plaats je boven of aan het begin van een zin, tussen ronde haakjes of gevolgd door een dubbele punt.
@@ -68,7 +68,7 @@ Hoé je ondertiteling aanbiedt kan ook invloed hebben op hoe gebruiksvriendelijk
 
 ### Gesloten ondertiteling - Closed Captions
 
-Gesloten ondertiteling (Closed Captions) is ondertiteling die de bezoeker zelf aan of uit kan zetten. Meestal staat deze vorm van ondertiteling standaard uit - oftewel 'gesloten'. Je biedt het aan als een los bestand, zoals een [vtt bestand (Engels)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API) of een [srt bestand](https://nl.wikipedia.org/wiki/SubRip#SubRip-formaat). In veel videospelers kun je deze vorm van ondertiteling aan- of uitzetten met de “CC’’ knop, de afkorting voor Closed Captions.
+Gesloten ondertiteling (Closed Captions) is ondertiteling die de bezoeker zelf aan of uit kan zetten. Meestal staat deze vorm van ondertiteling standaard uit - oftewel 'gesloten'. Je biedt het aan als een los bestand, zoals een [vtt bestand (Engels)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API) of een [srt bestand](https://nl.wikipedia.org/wiki/SubRip#SubRip-formaat). In veel videospelers kun je deze vorm van ondertiteling aan- of uitzetten met de "CC" knop, de afkorting voor Closed Captions.
 
 #### Voordelen
 
@@ -96,16 +96,16 @@ Het gebruik van open ondertiteling wordt vaak bestempeld als ontoegankelijk, maa
 Omdat de bezoeker zelf geen invloed heeft op hoe de tekst van de ondertiteling eruit ziet, is het belangrijk dat je daar zelf op let:
 
 - Zorg er voor dat het [contrast tussen de tekstkleur en de achtergrond hoog genoeg is](https://nldesignsystem.nl/contrast/).
-- Maak de tekst groot genoeg. Hier is geen standaard grootte voor, omdat dit afhangt van de grootte van het scherm waar je video voor maakt. Met een klein scherm en een relatief grootte kijkafstand, zoals op een mobiele telefoon, moet de ondertiteling een groter deel van het scherm in beslag nemen dan op desktop monitor of op een bioscoopscherm.
+- Maak de tekst groot genoeg. Hier is geen standaard grootte voor, omdat dit afhangt van de grootte van het scherm waar je video voor maakt. Met een klein scherm en een relatief grote kijkafstand, zoals op een mobiele telefoon, moet de ondertiteling een groter deel van het scherm in beslag nemen dan op een desktop monitor of op een bioscoopscherm.
 - Kies een goed [leesbaar lettertype](https://nldesignsystem.nl/richtlijnen/stijl/typografie/lettertype).
 
 ## Toegankelijke ondertiteling in meerdere talen
 
-De ondertiteling waar we het over hebben als we het hebben over toegankelijkheid en specifieker over WCAG, is de ondertiteling voor doven en slechthorenden. Maar het aanbieden van ondertiteling is meerdere talen is natuurlijk net zo goed een vorm van toegankelijkheid. Je kunt er voor kiezen om voor iedere taal twee verschillende ondertitelingen aan te bieden, eentje zónder beschrijvingen en eentje mét. Zo kunnen je bezoekers zelf kiezen wat het beste bij hen past.
+De ondertiteling waar we het over hebben als we het hebben over toegankelijkheid en specifieker over WCAG, is de ondertiteling voor doven en slechthorenden. Maar het aanbieden van ondertiteling in meerdere talen is natuurlijk net zo goed een vorm van toegankelijkheid. Je kunt er voor kiezen om voor iedere taal twee verschillende ondertitelingen aan te bieden, eentje zónder beschrijvingen en eentje mét. Zo kunnen je bezoekers zelf kiezen wat het beste bij hen past.
 
 ## Ondertiteling bij live video
 
-Biedt je ook live video aan, zoals webinars of andere livestreams? Ondertiteling bij live video’s is in Nederland niet wettelijk verplicht. Maar het is voor veel mensen prettig als je het wel toevoegt.
+Bied je ook live video aan, zoals webinars of andere livestreams? Ondertiteling bij live video’s is in Nederland niet wettelijk verplicht. Maar het is voor veel mensen prettig als je het wel toevoegt.
 
 Tegenwoordig zijn hier verschillende opties voor, zoals een schrijftolk, een ondertitelfunctie in software voor online meetings en software die gebruik maakt van AI. Als je vaker live video aanbiedt, vraag dan regelmatig feedback aan je kijkers, zodat je de optie kiest die het beste bij je publiek past.
 
