@@ -2,11 +2,11 @@ import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 
-interface Definition {
+interface DefinitionProps {
   paragraph: string;
 }
 
-interface Source {
+interface SourceProps {
   name: string;
   url: string;
 }
@@ -14,19 +14,19 @@ interface Source {
 export interface Term {
   term: string;
   slug: string;
-  definitions: Definition[];
-  sources?: Source[];
+  definitions: DefinitionProps[];
+  sources?: SourceProps[];
 }
 
 interface TermsListProps extends HTMLAttributes<HTMLTableElement> {
   terms: Term[];
 }
 
-const DefinitionData = ({ paragraph }: Definition) => (
+const Definition = ({ paragraph }: DefinitionProps) => (
   <Paragraph className="definition__paragraph">{paragraph}</Paragraph>
 );
 
-const SourceData = ({ name, url }: Source) => (
+const Source = ({ name, url }: SourceProps) => (
   <li className="definition__source">
     <a href={url} className="definition__link">
       {name}
@@ -45,7 +45,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
             </dt>
             <dd className="terms-list__definition">
               {definitions.map((definition, index) => (
-                <DefinitionData key={index} {...definition} />
+                <Definition key={index} {...definition} />
               ))}
               {sources && sources.length && (
                 <>
@@ -53,7 +53,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
                     <span>Verder lezen</span>
                     <ul role="list">
                       {sources.map((source, index) => (
-                        <SourceData key={index} {...source} />
+                        <Source key={index} {...source} />
                       ))}
                     </ul>
                   </div>
