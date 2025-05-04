@@ -964,3 +964,7 @@ pre {
 .DocSearch ul {
   margin: auto 0;
 }
+
+.utrecht-code {
+  font-size-adjust: 0.5;
+}
