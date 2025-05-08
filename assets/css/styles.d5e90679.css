@@ -2781,6 +2781,7 @@ body:not(.navigation-with-keyboard) :not(input):focus {
  text-decoration: inherit;
 }
 .component-criteria-section__dt,
+.dl__term,
 .docs-doc-page .utrecht-html label,
 .docs-doc-page .utrecht-html legend,
 .dsw-signup-main,
@@ -2854,6 +2855,7 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .docs-doc-page input[type="text"] {
  display: block;
 }
+.dl__item,
 .docs-doc-page ul {
  margin-bottom: 20px;
 }
@@ -2976,6 +2978,12 @@ code .namespace {
 }
 .DocSearch ul {
  margin: auto 0;
+}
+.dl__definition {
+ margin-left: 0;
+}
+.definition__meta {
+ margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
 @font-face {
  font-display: swap;
