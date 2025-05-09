@@ -27,17 +27,11 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tabellen
 
-Met tabellen kun je data presenteren. Een tabel maak je toegankelijk zodat mensen die een schermlezer gebruiken bij elke cel kunnen achterhalen wat de bijbehorende koppen zijn. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan.
-
-## Begrijpelijke tabellen maken
-
-Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar een tabel kan ook snel erg complex worden. Probeer daarom altijd om tabellen overzichtelijk en begrijpelijk te maken, voor iedereen.
-
-- Gebruik een goede logische tabelstructuur.
-- Maak tabellen niet te ingewikkeld, dit maakt het moeilijker om tabellen toegankelijk te maken.
-- Bedenk goed hoe data zo eenvoudig mogelijk weergegeven kan worden. Splits bijvoorbeeld ingewikkelde tabellen op in eenvoudige tabellen.
+Met tabellen kun je data presenteren op een overzichtelijke manier. Een tabel maak je toegankelijk zodat mensen die een schermlezer gebruiken bij elke cel kunnen achterhalen wat de bijbehorende koppen zijn. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan.
 
 ## Toegankelijke tabellen maken
+
+Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor schermlezergebruikers. Dat doe je door het gebruik van kolomkoppen of rijkoppen. De kolom- of rijkoppen worden door een schermlezer voorgelezen bij de waarde van een bijbehorende tabelcel.
 
 <Guideline appearance="do" title="Markeer koppen als rijkoppen of kolomkoppen">
   <Canvas language="html">
@@ -70,7 +64,6 @@ Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar ee
 <Canvas language="html">
 {() => (
 <>
-
 <table>
 <tr>
 <th>Datum</th>
@@ -105,61 +98,69 @@ Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar ee
 </Canvas>
 </Guideline>
 
+## Begrijpelijke tabellen maken
+
+Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar een tabel kan ook snel erg complex worden. Probeer daarom altijd om tabellen overzichtelijk en begrijpelijk te maken, voor iedereen.
+
+- Gebruik een goede logische tabelstructuur.
+- Maak tabellen niet te ingewikkeld, dit maakt het moeilijker om tabellen toegankelijk te maken.
+- Bedenk goed hoe data zo eenvoudig mogelijk weergegeven kan worden. Splits bijvoorbeeld ingewikkelde tabellen op in eenvoudige tabellen.
+
 <Guideline appearance="do" title="Complexere tabellen opsplitsen">
-<Canvas language="html">
-{() => (
-<>
-
-<table>
-<caption>Concerten in het voorjaar</caption>
-<thead>
-<tr>
-<th>Datum</th>
-<th>Evenement</th>
-<th>Locatie</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6 mei 2025</td>
-<td>Rolling Stones</td>
-<td>Westerpark, Amsterdam</td>
-</tr>
-<tr>
-<td>7 mei 2025</td>
-<td>Rolling Stones</td>
-<td>Westerpark, Amsterdam</td>
-</tr>
-</tbody>
-</table>
-
-<br/>
-<table>
-<caption>Concerten in het najaar</caption>
-<thead>
-<tr>
-<th>Datum</th>
-<th>Evenement</th>
-<th>Locatie</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10 oktober 2025</td>
-<td>Beatles</td>
-<td>Goffertpark, Nijmegen</td>
-</tr>
-<tr>
-<td>11 oktober 2025</td>
-<td>Beatles</td>
-<td>Goffertpark, Nijmegen</td>
-</tr>
-</tbody>
-</table>
-</>
-)}
-</Canvas>
+  <Canvas language="html">
+    {() => (
+      <>
+        <table>
+          <caption>Concerten in het voorjaar</caption>
+          <thead>
+          <tr>
+          <th>Datum</th>
+          <th>Evenement</th>
+          <th>Locatie</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>6 mei 2025</td>
+          <td>Rolling Stones</td>
+          <td>Westerpark, Amsterdam</td>
+          </tr>
+          <tr>
+          <td>7 mei 2025</td>
+          <td>Rolling Stones</td>
+          <td>Westerpark, Amsterdam</td>
+          </tr>
+          </tbody>
+          </table>
+          <br/>
+          <table>
+          <caption>Concerten in het najaar</caption>
+          <thead>
+          <tr>
+          <th>Datum</th>
+          <th>Evenement</th>
+          <th>Locatie</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>10 oktober 2025</td>
+          <td>Beatles</td>
+          <td>Goffertpark, Nijmegen</td>
+          </tr>
+          <tr>
+          <td>11 oktober 2025</td>
+          <td>Beatles</td>
+          <td>Goffertpark, Nijmegen</td>
+          </tr>
+          </tbody>
+        </table>
+      </>
+    )}
+  </Canvas>
 </Guideline>
+
+## Doel van de tabel
 
 Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je namelijk een relatie aan tussen tabelcellen. Iemand die een schermlezer gebruikt, krijgt namelijk te horen dat er een tabel aanwezig is. En ook voor iedere cel in welke rij en in welke kolom de cel staat. Als er geen relatie is, is het gebruik van een tabel verwarrend.
 
@@ -178,10 +179,67 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
   </Canvas>
 </Guideline>
 
+## Inhoud van de tabel
+
+Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is voor een gebruiker met een schermlezer. De schermlezer leest een tabel voor per rij en van links naar rechts.
+
+<Guideline appearance="dont" title="Gerelateerde informatie in verschillende rijen plaatsen">
+  <Canvas language="html">
+    {() => (
+      <>
+          <table>
+            <tr>
+              <th>Naam</th>
+              <td>Jan</td>
+              <td>Piet</td>
+              <td>Kees</td>
+            </tr>
+            <tr>
+              <th>Functie</th>
+              <td>Docent Natuurkunde</td>
+              <td>Netwerkbeheerder</td>
+              <td>Amenuensis</td>
+            </tr>
+          </table>
+          <p>Een schermlezer zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Gerelateerde informatie in kolommen plaatsen">
+  <Canvas language="html">
+    {() => (
+      <>
+          <table>
+            <tr>
+              <th>Naam</th>
+               <th>Functie</th>
+            </tr>
+            <tr>
+              <td>Jan</td>
+               <td>Docent Natuurkunde</td>
+            </tr>
+             <tr>
+              <td>Piet</td>
+               <td>Netwerkbeheerder</td>
+            </tr>
+             <tr>
+              <td>Kees</td>
+               <td>Amenuensis</td>
+            </tr>
+          </table>
+          <p>Een schermlezer zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
+- [Succescriterium 1.3.2 Betekenisvolle volgorde](/wcag/1.3.2)
 
 <FooterInfo />

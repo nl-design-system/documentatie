@@ -32,8 +32,6 @@ Zorg voor een duidelijke structuur van de tekst. Het structeren van de tekst op 
 
 ## Voor wie zijn toegankelijke koppen belangrijk?
 
-Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is vooral handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben.
-
 Een duidelijke koppenstructuur is heel belangrijk. Blinde mensen maken gebruik van schermlezers. Schermlezers kunnen een overzicht van alle koppen op een pagina laten zien. Dit helpt mensen om snel de informatie te vinden die ze zoeken. Ze kunnen ook makkelijk van de ene kop naar de andere gaan, door gebruik te maken van sneltoetsen.
 
 Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat koppen van verschillende niveaus er anders uit zien, is het snel duidelijk hoe de informatie op de pagina gestructureerd is.
@@ -52,6 +50,24 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
           <p>
             Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
           </p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+## Inhoud van koppen
+
+Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is vooral handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben.
+
+<Guideline appearance="dont" title="Koppen leeg laten">
+  <Canvas language="html">
+    {() => (
+      <>
+          <p>
+            Voorzie een kop altijd van een beschrijvende tekst. Zorg ervoor dat koppen niet leeg zijn. Bijvoorbeeld om extra witruimte te creëren.
+          </p>
+          <h2>&nbsp;</h2>
+          <p>Zo'n lege kop wordt namelijk wel herkend door hulpsoftware. Maar de gebruiker kan er vervolgens helemaal niks mee. Het schept met name verwarring.</p>
       </>
     )}
   </Canvas>

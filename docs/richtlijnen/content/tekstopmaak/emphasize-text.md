@@ -39,20 +39,6 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
 
 Door deze knoppen in een CMS te gebruiken, verander je de visuele opmaak én de onderliggende code.
 
-## ALL CAPS-tekst
-
-Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
-
-Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij VOORNAAM of NIEUWS wordt dat wel heel vreemd.
-
-Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!
-
-## Onderstrepen
-
-Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
-
-## Voorbeelden
-
 <Guideline appearance="do" title="vette tekst gebruiken om een deel van de zin extra belangrijk te maken.">
   <Canvas language="html">
     {() => (
@@ -93,6 +79,27 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
     )}
   </Canvas>
 </Guideline>
+
+## ALL CAPS-tekst
+
+Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
+
+<Guideline appearance="do" title="Beperkt gebruik maken van all caps">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          Als je in de HTML all caps gebruikt lezen screenreaders dit vaak voor als losse letters. Geen probleem bij bijvoorbeeld FBI of NBA maar bij VOORNAAM of NIEUWS wordt dat wel heel vreemd.
+        </p>
+        <p>Daarnaast geeft het ook een gevoel van ‘schreeuwen’. Over het algemeen niet het gevoel dat je wilt overbrengen op de lezer toch… TOCH?!</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+## Onderstrepen
+
+Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.
 
 <Guideline appearance="dont" title="Tekst onderstrepen">
   <Canvas language="html">
