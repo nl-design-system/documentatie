@@ -278,6 +278,7 @@ const sidebars: SidebarsConfig = {
                 { type: 'doc', id: 'community/events/heartbeat/heartbeat' },
                 { type: 'doc', id: 'community/events/heartbeat/videos' },
                 { type: 'doc', id: 'community/events/heartbeat/aanmelden' },
+                { type: 'doc', id: 'community/events/heartbeat/zelf-iets-vertellen' },
               ],
             },
             {
