@@ -1,0 +1,42 @@
+---
+title: Borders · Basisthema · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Borders
+pagination_label: Borders
+description: Welke design tokens bevat het basisthema voor borders?
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { RadixColorTable } from "@site/src/components/BasisThema/RadixColorTable";
+import { CommonColors } from "@site/src/components/BasisThema/CommonColorTable";
+import {
+  CommonDesignTokensTable,
+  TypographyDesignTokensTable,
+} from "@site/src/components/BasisThema/DesignTokenTables";
+import { TokenUses } from "@site/src/components/BasisThema/TokenUses";
+
+# Border tokens in het basisthema
+
+<Paragraph lead>
+  De tokens op deze pagina definieren het palet aan border-stijlen die gebruikt worden in het basisthema.
+</Paragraph>
+
+## Border-width tokens
+
+<CommonDesignTokensTable type="border-width" maxPathLength={3} />
+
+## Border-radius tokens
+
+<CommonDesignTokensTable type="border-radius" maxPathLength={3} />
+
+## Border-color tokens
+
+Alle beschikbare kleuren zijn verwerkt in de [algemene kleurtokens](kleuren) dus er zijn geen aparte tokens voor border-color. Als je een kleur wil kiezen voor een border bepaal je eerst in welke kleurcategorie (bv. text, disabled, primary, etc) het element waar de border op komt het beste past. Als je een categorie gekozen hebt kun je daar een van de border tokens uit pakken (border-1, border-2 of border-3).
+
+## Waar worden deze tokens gebruikt?
+
+Als je één van deze tokens aanpast kun je hieronder zien op welke tokens uit het basisthema dit allemaal effect heeft.
+
+<TokenUses tokenType="border-width" />
+<TokenUses tokenType="border-radius" />
