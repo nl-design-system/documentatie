@@ -22,22 +22,18 @@ interface TermsListProps extends HTMLAttributes<HTMLTableElement> {
   terms: Term[];
 }
 
-const Definition = ({ paragraph }: DefinitionProps) => (
-  <Paragraph className="definition__paragraph">{paragraph}</Paragraph>
-);
+const Definition = ({ paragraph }: DefinitionProps) => <Paragraph>{paragraph}</Paragraph>;
 
 const Source = ({ name, url }: SourceProps) => (
-  <li className="definition__source">
-    <a href={url} className="definition__link">
-      {name}
-    </a>
+  <li>
+    <a href={url}>{name}</a>
   </li>
 );
 
 export const TermsList = ({ terms }: TermsListProps) => {
   return (
-    <div className="terms-list-container">
-      <dl className="terms-list">
+    <div>
+      <dl>
         {terms.map(({ term, slug, definitions, sources }, index) => (
           <div className="terms-list__item" key={index}>
             <dt id={slug}>
@@ -49,7 +45,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
               ))}
               {sources && sources.length && (
                 <>
-                  <div className="definition__sources">
+                  <div className="terms-list__definition__sources">
                     <span>Verder lezen</span>
                     <ul role="list">
                       {sources.map((source, index) => (

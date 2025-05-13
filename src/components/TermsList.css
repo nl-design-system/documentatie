@@ -6,6 +6,6 @@
   margin-left: 0;
 }
 
-.definition__sources {
+.terms-list__definition__sources {
   margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
