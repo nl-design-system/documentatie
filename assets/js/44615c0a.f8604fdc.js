@@ -3,12 +3,12 @@
  [47004],
  {
   46256: (e, s, n) => {
-   n.r(s), n.d(s, { assets: () => l, contentTitle: () => t, default: () => p, frontMatter: () => o, metadata: () => a, toc: () => d });
+   n.r(s), n.d(s, { assets: () => l, contentTitle: () => o, default: () => p, frontMatter: () => t, metadata: () => a, toc: () => d });
    var r = n(52676),
     i = n(40139);
-   const o = { title: 'Baseline april 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline april 2025', pagination_label: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-04', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
-    t = 'NL Design System Baseline: april 2025',
-    a = { id: 'baseline/2025-04', title: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', source: '@site/docs/baseline/2025-04.mdx', sourceDirName: 'baseline', slug: '/baseline/2025-04', permalink: '/baseline/2025-04', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/2025-04.mdx', tags: [], version: 'current', frontMatter: { title: 'Baseline april 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline april 2025', pagination_label: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-04', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] }, sidebar: 'handboek', previous: { title: 'Baseline december 2024', permalink: '/baseline/2024-12' } },
+   const t = { title: 'Baseline april 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline april 2025', pagination_label: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-04', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
+    o = 'NL Design System Baseline: april 2025',
+    a = { id: 'baseline/2025-04', title: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', source: '@site/docs/baseline/2025-04.mdx', sourceDirName: 'baseline', slug: '/baseline/2025-04', permalink: '/baseline/2025-04', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/2025-04.mdx', tags: [], version: 'current', frontMatter: { title: 'Baseline april 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline april 2025', pagination_label: 'Baseline april 2025', description: 'De softwareversies waarmee we in april 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-04', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] }, sidebar: 'handboek', previous: { title: 'Baseline december 2024', permalink: '/baseline/2024-12' }, next: { title: 'Woordenlijst', permalink: '/woordenlijst' } },
     l = {},
     d = [{ value: 'Software om mee te testen', id: 'software-om-mee-te-testen', level: 2 }];
    function c(e) {
@@ -21,12 +21,12 @@
    }
   },
   40139: (e, s, n) => {
-   n.d(s, { Z: () => a, a: () => t });
+   n.d(s, { Z: () => a, a: () => o });
    var r = n(75271);
    const i = {},
-    o = r.createContext(i);
-   function t(e) {
-    const s = r.useContext(o);
+    t = r.createContext(i);
+   function o(e) {
+    const s = r.useContext(t);
     return r.useMemo(
      function () {
       return 'function' == typeof e ? e(s) : { ...s, ...e };
@@ -36,7 +36,7 @@
    }
    function a(e) {
     let s;
-    return (s = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : t(e.components)), r.createElement(o.Provider, { value: s }, e.children);
+    return (s = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), r.createElement(t.Provider, { value: s }, e.children);
    }
   },
  },

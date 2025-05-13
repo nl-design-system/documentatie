@@ -2979,7 +2979,8 @@ code .namespace {
 .DocSearch ul {
  margin: auto 0;
 }
-.dl__definition {
+.dl__definition,
+.terms-list__definition {
  margin-left: 0;
 }
 .definition__meta {
@@ -6993,6 +6994,12 @@ code .namespace {
  background: #ffd78e40;
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
+}
+.terms-list__item {
+ margin-bottom: 32px;
+}
+.terms-list__definition__sources {
+ margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
 .example-form {
  --utrecht-space-around: 1;
