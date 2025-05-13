@@ -2,4 +2,4 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-Woordenlijst gestart
+Pagina transcript bij video toegevoegd.

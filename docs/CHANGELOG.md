@@ -1,5 +1,57 @@
 # @nl-design-system-unstable/documentation
 
+## 1.4.0
+
+### Minor Changes
+
+- 3b4257d: Acceptatiecriteria voor component Breadcrumb navigation.
+- 93363b1: Updated baseline: 2025-04
+- 5446ebc: Overzichtspagina video aangevuld met introductie en verwijzingen naar succescriteria.
+- 430e86f: Basis structuur contentrichtlijnen voor Video + pagina Ondertiteling.
+- 5170863: Add description of notification banner component.
+- c6e617d: Heartbeat video van 15 april toegevoegd.
+- c3a1563: Kennisbank Content toegevoegd, met daarin secties voor afbeeldingen en tekstopmaak
+- 5b8f12e: Add description of invalid form alert component.
+- 1d751bb: Add description of non modal dialog component.
+- f376b89: Rewrite code description.
+  Rewrite code-block description.
+  Rewrite date-picker description.
+  Add dot-badge description.
+  Rewrite figure description.
+  Rewrite file-input description.
+  Add form-summary description.
+  Rewrite heading-group description.
+  Add icon description.
+  Add page-footer description.
+  Rewrite page-header description.
+  Rewrite range description.
+  Rewrite separator description.
+  Rewrite side-navigation description.
+  Add status-badge description.
+  Rewrite switch description.
+  Add input-group description.
+  Rewrite toggletip description.
+  Rewrite number-badge description.
+- 697f7cb: Add description of page number navigation component.
+- adee307: Tekst [WCAG-pagina 1.4.10](/wcag/1.4.10) volledig afgemaakt.
+- cdb5926: Tekst [WCAG-pagina 2.5.8](/wcag/2.5.8) volledig afgemaakt.
+- cbe01ac: Tekst [WCAG-pagina 3.2.0](/wcag/3.2.0) volledig afgemaakt.
+- ecbae75: Tekst [WCAG-pagina 3.3.7](/wcag/3.3.7) volledig afgemaakt.
+- 5f56822: Tekst [WCAG-pagina 3.3.8](/wcag/3.3.8) volledig afgemaakt.
+- 7a74ebd: Woordenlijst gestart
+
+### Patch Changes
+
+- 0472f4f: - Punten aan het eind bij opsommingstekst.
+  - Bold in plaats van cursief bij 'Let op'.
+  - Enkele aanhalingstekens in plaats van cursief bij oriëntatie.
+- b364f80: - Schrijfwijze contrastwaarde gelijk met andere documentatie.
+  - Haakje was eenzaam.
+  - Bold in plaats van cursief bij 'Let op'.
+- 0d6f2f3: Verbeter typo in "Nerderlandse" naar "Nederlandse" op Wie Doet Mee pagina.
+- e94cd23: Tekst [WCAG-pagina 1.4.11](/wcag/1.4.11) volledig afgemaakt.
+- 7563929: keywords toegevoegd aan richtlijnen
+
 ## 1.3.1
 
 ### Patch Changes
