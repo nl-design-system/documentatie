@@ -1,0 +1,32 @@
+---
+title: Woordenlijst
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Woordenlijst
+sidebar_position: 5
+pagination_label: Woordenlijst
+description: NL Design System Woordenlijst
+slug: /woordenlijst
+keywords:
+  - termenlijst
+  - glossary
+  - glossarium
+  - uitleg
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import terms from "./terms.json";
+import { TermsList } from "@site/src/components/TermsList";
+
+{/* @license CC0-1.0 */}
+
+# NL Design System Woordenlijst
+
+<Paragraph lead>
+  NL Design System streeft naar een vriendelijke gebruikerservaring. Hier en daar kunnen er toch lastige woorden en
+  termen tussen zitten. De woordenlijst legt deze woorden uit en verwijst door naar bronnen waar dat handig is.
+</Paragraph>
+
+## Woorden
+
+<TermsList terms={terms} />

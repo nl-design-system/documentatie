@@ -1,0 +1,11 @@
+.terms-list__item {
+  margin-bottom: 32px;
+}
+
+.terms-list__definition {
+  margin-left: 0;
+}
+
+.terms-list__definition__sources {
+  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
+}
