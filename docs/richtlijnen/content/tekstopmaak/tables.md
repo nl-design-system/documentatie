@@ -70,7 +70,8 @@ Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor sche
 <th>Evenement</th>
 <th>Locatie</th>
 </tr>
-<tr><td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
+<tr>
+<td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
 <tr>
 <td>6 mei 2025</td>
 <td>Rolling Stones</td>
@@ -81,7 +82,8 @@ Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor sche
 <td>Rolling Stones</td>
 <td>Westerpark, Amsterdam</td>
 </tr>
-<tr><td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
+<tr>
+<td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
 <tr>
 <td>10 oktober 2025</td>
 <td>Beatles</td>
@@ -113,46 +115,46 @@ Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar ee
         <table>
           <caption>Concerten in het voorjaar</caption>
           <thead>
-          <tr>
-          <th>Datum</th>
-          <th>Evenement</th>
-          <th>Locatie</th>
-          </tr>
+            <tr>
+              <th>Datum</th>
+              <th>Evenement</th>
+              <th>Locatie</th>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-          <td>6 mei 2025</td>
-          <td>Rolling Stones</td>
-          <td>Westerpark, Amsterdam</td>
-          </tr>
-          <tr>
-          <td>7 mei 2025</td>
-          <td>Rolling Stones</td>
-          <td>Westerpark, Amsterdam</td>
-          </tr>
+            <tr>
+              <td>6 mei 2025</td>
+              <td>Rolling Stones</td>
+              <td>Westerpark, Amsterdam</td>
+            </tr>
+            <tr>
+              <td>7 mei 2025</td>
+              <td>Rolling Stones</td>
+              <td>Westerpark, Amsterdam</td>
+            </tr>
           </tbody>
-          </table>
-          <br/>
-          <table>
+        </table>
+        <br/>
+        <table>
           <caption>Concerten in het najaar</caption>
           <thead>
-          <tr>
-          <th>Datum</th>
-          <th>Evenement</th>
-          <th>Locatie</th>
-          </tr>
+            <tr>
+              <th>Datum</th>
+              <th>Evenement</th>
+              <th>Locatie</th>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-          <td>10 oktober 2025</td>
-          <td>Beatles</td>
-          <td>Goffertpark, Nijmegen</td>
-          </tr>
-          <tr>
-          <td>11 oktober 2025</td>
-          <td>Beatles</td>
-          <td>Goffertpark, Nijmegen</td>
-          </tr>
+            <tr>
+              <td>10 oktober 2025</td>
+              <td>Beatles</td>
+              <td>Goffertpark, Nijmegen</td>
+            </tr>
+            <tr>
+              <td>11 oktober 2025</td>
+              <td>Beatles</td>
+              <td>Goffertpark, Nijmegen</td>
+            </tr>
           </tbody>
         </table>
       </>
@@ -168,12 +170,12 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
   <Canvas language="html">
     {() => (
       <>
-          <table>
-            <tr>
-              <td style={{width:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"/></td>
-              <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
-            </tr>
-          </table>
+        <table>
+          <tr>
+            <td style={{width:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"/></td>
+            <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
+          </tr>
+        </table>
       </>
     )}
   </Canvas>
@@ -187,21 +189,21 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
   <Canvas language="html">
     {() => (
       <>
-          <table>
-            <tr>
-              <th>Naam</th>
-              <td>Jan</td>
-              <td>Piet</td>
-              <td>Kees</td>
-            </tr>
-            <tr>
-              <th>Functie</th>
-              <td>Docent Natuurkunde</td>
-              <td>Netwerkbeheerder</td>
-              <td>Amenuensis</td>
-            </tr>
-          </table>
-          <p>Een schermlezer zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
+        <table>
+          <tr>
+            <th>Naam</th>
+            <td>Jan</td>
+            <td>Piet</td>
+            <td>Kees</td>
+          </tr>
+          <tr>
+            <th>Functie</th>
+            <td>Docent Natuurkunde</td>
+            <td>Netwerkbeheerder</td>
+            <td>Amenuensis</td>
+          </tr>
+        </table>
+        <p>Een schermlezer zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
       </>
     )}
   </Canvas>
@@ -211,25 +213,25 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
   <Canvas language="html">
     {() => (
       <>
-          <table>
+        <table>
+          <tr>
+            <th>Naam</th>
+              <th>Functie</th>
+          </tr>
+          <tr>
+            <td>Jan</td>
+              <td>Docent Natuurkunde</td>
+          </tr>
             <tr>
-              <th>Naam</th>
-               <th>Functie</th>
-            </tr>
+            <td>Piet</td>
+              <td>Netwerkbeheerder</td>
+          </tr>
             <tr>
-              <td>Jan</td>
-               <td>Docent Natuurkunde</td>
-            </tr>
-             <tr>
-              <td>Piet</td>
-               <td>Netwerkbeheerder</td>
-            </tr>
-             <tr>
-              <td>Kees</td>
-               <td>Amenuensis</td>
-            </tr>
-          </table>
-          <p>Een schermlezer zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
+            <td>Kees</td>
+              <td>Amenuensis</td>
+          </tr>
+        </table>
+        <p>Een schermlezer zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
       </>
     )}
   </Canvas>
