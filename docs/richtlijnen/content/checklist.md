@@ -21,7 +21,7 @@ Deze kennisbank bevat een hoop informatie. Maar waar moet je beginnen als conten
 
 Met koppen breng je structuur aan in je tekst. Waarmee je het voor iedereen begrijpelijker maakt. Daarom is het belangrijk dat ze op de juiste manier worden gebruikt. Check je koppen op de volgende punten:
 
-- [Is H1 t/m H6 gebruikt?](/richtlijnen/content/tekstopmaak/koppen/#opmaak-van-koppen)
+- [Heb je de juiste kopniveaus gebruikt?](/richtlijnen/content/tekstopmaak/koppen/#opmaak-van-koppen)
 - [Klopt de volgorde?](/richtlijnen/content/tekstopmaak/koppen#kopniveaus)
 - [Hebben alle koppen een beschrijvende inhoud?](/richtlijnen/content/tekstopmaak/koppen#inhoud-van-koppen)
 
@@ -59,13 +59,14 @@ Het kan heel goed zijn om tekst te benadrukken. Doe dat dan wel op een toegankel
 
 ## Citaten
 
-Wil je een citaat toevoegen kies dan voor de juiste manier om dat te doen zodat deze ook goed leesbaar en begrijpbaar is voor gebruikers van hulptechnologie.
+Wil je een citaat toevoegen? Kies dan voor de juiste manier om dit te doen. Zo zijn je citaten ook leesbaar en begrijpbaar voor gebruikers van hulptechnologie.
 
-- [Juiste weergave voor een citaat gekozen?](/richtlijnen/content/citaten)
+- [Is de juiste weergave voor een citaat gekozen?](/richtlijnen/content/citaten)
 
 ## Video
 
-Bij video is het vooral belangrijk dat wat er in beeld gebreurt ook begrijpelijk is voor mensen met visuele beperkin. zij zijn echter niet de enigen die hier baat bij hebben.
+Je wil dat je video's ook toegankelijk zijn voor bezoekers die het beeld niet kunnen zien en bezoekers die de audio niet kunnen horen. Ook voor andere groepen bezoekers is het prettig om de informatie in je video op meerdere manieren aan te bieden.
 
 - [Is de video ondertiteld?](/richtlijnen/content/video/ondertiteling)
 - Is de audio in de video beschreven?
+- Is er een transcript aanwezig?
