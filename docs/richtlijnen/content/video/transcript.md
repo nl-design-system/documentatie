@@ -11,6 +11,9 @@ keywords:
   - youtube
   - vimeo
   - transcript
+  - transcriptie
+  - transcriberen
+  - ondertiteling
 ---
 
 <!-- @license CC0-1.0 -->
@@ -41,9 +44,10 @@ Benoem in een transcript bij een video met beeld en geluid:
 - Belangrijke geluiden zoals lachen, een dichtslaande deur of rinkelend glas.
 - Informatie over achtergrondmuziek, als dat in de video een verhalende rol heeft.
 - Wie er aan het woord is.
-- Het volume of de intonatie van de gesproken teksten, of bijvoorbeeld dat iemand stottert.
+- Het volume of de intonatie van de gesproken teksten.
+- Bijzondere spraakkenmerken, zoals een accent of dat iemand stottert. Benoem dit daarna alleen nog een keer als het verandert.
 - Teksten die in beeld komen, zoals de naam en functie van een spreker. Maar ook titelschermen, hoofdstuknamen en links.
-- Beschrijvingen van belangrijke afbeeldingen die in beeld komen, zoals het logo van de organisatie.
+- [Beschrijvingen van belangrijke afbeeldingen](/richtlijnen/content/afbeeldingen) die in beeld komen, zoals het logo van de organisatie.
 - Beschrijvingen van belangrijke gebeurtenissen die in beeld komen, bijvoorbeeld informatie over wat mensen aan het doen zijn.
 - Gezichtsuitdrukkingen en lichaamstaal, als dat relevant is.
 
@@ -59,8 +63,8 @@ Het is belangrijk om structuur aan te brengen in tekstbestanden om ze toegankeli
 
 Maak daarom ook in een transcript gebruik van [kopjes, paragrafen, leestekens en interpunctie](/richtlijnen/content/tekstopmaak). Voeg bij een lange video eventueel tijdmarkeringen toe.
 
-- Maak onderscheid tussen beschrijvingen en gesproken tekst. Bijvoorbeeld door beschrijvingen tussen ronde haakjes te plaatsen of door te benoemen waar de beschrijving over gaat. Bijvoorbeeld: (de kat krabt de krullen van de trap) of In beeld: De kat krabt de krullen van de trap. Gebruik hiervoor geen dikgedrukte of schuingedrukte tekst, tenzij je dat in jouw contentmanagementsysteem kunt doen zonder het `strong`, `em`, `i` of `b` element te gebruiken. Het gaat hier namelijk niet om het [benadrukken van tekst](/richtlijnen/content/tekstopmaak/tekst-benadrukken) maar alleen om een visueel verschil.
-- Als de spreker een woord _wel_ benadrukt, gebruik dan juist **wel** tekstopmaak om tekst te benadrukken. Gebruik schuingedrukte teks voor nadruk in uitspraak en dikgedrukte tekst om te benadrukken dat een woord heel belangrijk is.
+- Maak onderscheid tussen beschrijvingen en gesproken tekst. Plaats beschrijvingen tussen ronde haakjes te plaatsen of benoem waar de beschrijving over gaat. Bijvoorbeeld: (de kat krabt de krullen van de trap) of In beeld: De kat krabt de krullen van de trap.
+- Als de spreker een woord benadrukt, gebruik dan [tekstopmaak om tekst te benadrukken](<(/richtlijnen/content/tekstopmaak/tekst-benadrukken)>). Gebruik _schuingedrukte tekst_ voor nadruk in uitspraak en **dikgedrukte tekst** om te benadrukken dat een woord heel belangrijk is.
 - Plaats de naam van de spreker met daarna een dubbele punt vóór de uitgeschreven gesproken tekst. Bijvoorbeeld: Jeffrey: "Goedemiddag allemaal, welkom bij de Heartbeat van 15 april."
 
 <Guideline appearance="do" title="Breng structuur aan in je transcript en maak onderscheid tussen gesproken dialoog en beschrijvingen">
@@ -68,7 +72,7 @@ Maak daarom ook in een transcript gebruik van [kopjes, paragrafen, leestekens en
     {() => (
       <>
      <h1>Je verhuizing doorgeven</h1>
-     <p>(Logo van de gemeente Luilekkerland verschijnt in beeld, met een groene heuvel, zonnetje en molen die langzaam draait.)</p>
+     <p>(Logo van de gemeente Luilekkerland verschijnt in beeld, met op de achtergrond een groene heuvel, zonnetje en molen die langzaam draait.)</p>
      <p>(Vrolijk fluitmuziekje, in middeleeuwse stijl.)</p>
      <p>Voice over Pieter Bruegel (opgewekt): "Welkom, goede nieuwe burgers van Luilekkerland! Verhuist gij binnenkort? Dan dient gij dit te <strong>melden</strong> bij de gemeente!"</p>
      <h2>Je verhuizing doorgeven via het internet</h2>
