@@ -29,7 +29,7 @@ Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opg
 
 ## Lijst-elementen
 
-Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. De meeste CMS-en bieden hier een aparte optie voor aan. Maak niet zelf een lijst door het gebruik van bijvoorbeeld leestekens Hulpsoftware herkent deze opmaak namelijk niet als een lijst.
+Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. De meeste CMS-en bieden hier een aparte optie voor aan. Maak niet zelf een lijst door het gebruik van bijvoorbeeld leestekens. Hulpsoftware herkent deze opmaak namelijk niet als een lijst.
 
 <Guideline appearance="dont" title="Zelf sterretjes, streepjes of nummers typen om een lijst te maken.">
   <Canvas language="html">
