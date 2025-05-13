@@ -59,45 +59,44 @@ Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor sche
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Tussenkopjes gebruiken in de tabel die niet als koppen zijn aangegeven.
-">
-<Canvas language="html">
-{() => (
-<>
-<table>
-<tr>
-<th>Datum</th>
-<th>Evenement</th>
-<th>Locatie</th>
-</tr>
-<tr>
-<td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
-<tr>
-<td>6 mei 2025</td>
-<td>Rolling Stones</td>
-<td>Westerpark, Amsterdam</td>
-</tr>
-<tr>
-<td>7 mei 2025</td>
-<td>Rolling Stones</td>
-<td>Westerpark, Amsterdam</td>
-</tr>
-<tr>
-<td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
-<tr>
-<td>10 oktober 2025</td>
-<td>Beatles</td>
-<td>Goffertpark, Nijmegen</td>
-</tr>
-<tr>
-<td>11 oktober 2025</td>
-<td>Beatles</td>
-<td>Goffertpark, Nijmegen</td>
-</tr>
-</table>
-</>
-)}
-</Canvas>
+<Guideline appearance="dont" title="Tussenkopjes gebruiken in de tabel die niet als koppen zijn aangegeven.">
+  <Canvas language="html">
+    {() => (
+      <>
+          <table>
+            <tr>
+              <th>Datum</th>
+              <th>Evenement</th>
+              <th>Locatie</th>
+            </tr>
+            <tr>
+              <td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
+            <tr>
+              <td>6 mei 2025</td>
+              <td>Rolling Stones</td>
+              <td>Westerpark, Amsterdam</td>
+            </tr>
+            <tr>
+              <td>7 mei 2025</td>
+              <td>Rolling Stones</td>
+              <td>Westerpark, Amsterdam</td>
+            </tr>
+            <tr>
+              <td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
+            <tr>
+              <td>10 oktober 2025</td>
+              <td>Beatles</td>
+              <td>Goffertpark, Nijmegen</td>
+            </tr>
+            <tr>
+              <td>11 oktober 2025</td>
+              <td>Beatles</td>
+              <td>Goffertpark, Nijmegen</td>
+            </tr>
+          </table>
+      </>
+    )}
+  </Canvas>
 </Guideline>
 
 ## Begrijpelijke tabellen maken
@@ -200,7 +199,7 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
             <th>Functie</th>
             <td>Docent Natuurkunde</td>
             <td>Netwerkbeheerder</td>
-            <td>Amenuensis</td>
+            <td>Docent Nederlands</td>
           </tr>
         </table>
         <p>Een schermlezer zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
@@ -228,7 +227,7 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
           </tr>
             <tr>
             <td>Kees</td>
-              <td>Amenuensis</td>
+              <td>Docent Nederlands</td>
           </tr>
         </table>
         <p>Een schermlezer zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
