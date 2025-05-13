@@ -30,14 +30,14 @@ Met koppen breng je structuur aan in je tekst. Waarmee je het voor iedereen begr
 Niet iedereen kan afbeeldingen zien. Daarom is het belangrijk om alternatieve teksten toe te voegen aan de afbeeldingen op jouw website. Zo heeft iedereen, met of zonder beperking, toegang tot dezelfde informatie.
 
 - [Hebben alle niet-decoratieve afbeeldingen een alt-tekst?](richtlijnen/content/afbeeldingen/algemene-richtlijnen)
-- [Wanneer mag de alt-tekst worden leeg gelaten?](/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen)
+- [Mag de alt-tekst worden leeg gelaten?](/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen)
 
 ## Tabellen
 
 Met tabellen kun je gegevens presenteren op een overzichtelijke manier. De manier waarop je een tabel inzet en de opmaak van de tabel bepalen of deze toegankelijk is en ook gebruikt kan worden door mensen met een schermlezer.
 
 - [Worden kolom- en rijkoppen gebruikt?](/richtlijnen/content/tekstopmaak/tabellen#toegankelijke-tabellen-maken)
-- [Zijn tabellen niet te ingewikkeld?](/richtlijnen/content/tekstopmaak/tabellen#begrijpelijke-tabellen-maken)
+- [Is de tabel niet te ingewikkeld?](/richtlijnen/content/tekstopmaak/tabellen#begrijpelijke-tabellen-maken)
 - [Wordt de tabel niet gebruikt voor opmaak?](/richtlijnen/content/tekstopmaak/tabellen#doel-van-de-tabel)
 - [Staat de inhoud van de tabel in de juiste volgorde?](/richtlijnen/content/tekstopmaak/tabellen#inhoud-van-de-tabel)
 
