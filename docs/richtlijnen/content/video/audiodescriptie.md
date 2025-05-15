@@ -1,16 +1,15 @@
 ---
-title: Ondertiteling · Content · Richtlijnen
+title: Audiodescriptie · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Ondertiteling
-pagination_label: Ondertiteling
-description: Richtlijnen voor ondertiteling binnen NL Design System
-slug: /richtlijnen/content/video/ondertiteling
+sidebar_label: Audiodescriptie
+pagination_label: Audiodescriptie
+description: Richtlijnen voor Audiodescriptie binnen NL Design System
+slug: /richtlijnen/content/video/audiodescriptie
 keywords:
   - video
   - youtube
   - vimeo
-  - transcript
   - audiodescriptie
   - audiodescription
   - audio
