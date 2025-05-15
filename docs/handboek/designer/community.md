@@ -45,7 +45,11 @@ De volgende Figma projecten zijn nog niet openbaar. Neem contact met de auteurs 
 
 ## Rijkshuisstijl in Figma
 
-We krijgen vaak de vraag of [Rijkshuisstijl](https://www.rijkshuisstijl.nl) ook een Figma-bibliotheek heeft. Momenteel is deze er nog niet. We willen het wel mogelijk maken dat de [NL Design System Figma bibliotheek](figma-structuur.mdx#nl-design-system-bibliotheek) gebruikt kan worden met design tokens van Rijkshuisstijl. Maar daar heeft het kernteam op dit moment nog geen tijd voor. Wil je helpen om dit mogelijk te maken, [neem contact op met het kernteam](../../project/kernteam.mdx).
+We krijgen regelmatig de vraag of er een Figma-bibliotheek beschikbaar is voor de [Rijkshuisstijl](https://www.rijkshuisstijl.nl). Op dit moment is die er nog niet.
+
+De Rijkshuisstijl Community werkt eraan om het mogelijk te maken de [NL Design System Figma bibliotheek](figma-structuur.mdx#nl-design-system-bibliotheek) te gebruiken met design tokens van Rijkshuisstijl.
+
+Heb je interesse? Lees meer over de [Rijkshuisstijl Community](/community/community-sprints/rijkshuisstijl-community) of [neem contact op met het kernteam](../../project/kernteam.mdx).
 
 ---
 
