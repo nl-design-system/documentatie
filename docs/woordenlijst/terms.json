@@ -1,5 +1,20 @@
 [
   {
+    "term": "Audiodescriptie",
+    "slug": "Audiodescriptie",
+    "definitions": [
+      {
+        "paragraph": "Een hoorbare, gesproken beschrijving van belangrijke visuele informatie die niet voorkomt in de audio van de video."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Richtlijnen voor audiodescriptie bij een video",
+        "url": "https://nldesignsystem.nl/richtlijnen/content/video/audiodescriptie"
+      }
+    ]
+  },
+  {
     "term": "Tekstalternatief",
     "slug": "tekstalternatief",
     "definitions": [
