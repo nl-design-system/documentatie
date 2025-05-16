@@ -1,5 +1,18 @@
 # @nl-design-system-unstable/documentation
 
+## 1.5.0
+
+### Minor Changes
+
+- 548a472: Uitbreiden informatie en praktische tips voor sprekers Heartbeat.
+- 47214a9: Heartbeat video van 13 mei 2025 toegevoegd.
+- c4927e3: Pagina transcript bij video toegevoegd.
+
+### Patch Changes
+
+- 1a14369: baseline 2025 05
+- 6fc8baf: - Agenda datum bijgewerkt naar juni
+
 ## 1.4.0
 
 ### Minor Changes
