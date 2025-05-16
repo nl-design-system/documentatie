@@ -87,7 +87,7 @@ Het kan lastig zijn om audiodescriptie toe te voegen aan een video, zeker als he
 Ga of laat je een nieuwe video maken? Door vooraf rekening te houden met audiodescriptie maak je de audiodescriptie een natuurlijk onderdeel van de video. Als je in het script rekening houdt met welke informatie er in het audiospoor moet voorkomen, hoef je daarna vaak minder of geen extra audiodescriptie toe te voegen. Bijvoorbeeld:
 
 - Laat de presentator zichzelf en de spreker met naam en functie voorstellen.
-- Laat de sprekers elkaar bij naam noemen, bij het stellen van een vraag.
+- Laat de sprekers elkaar bij naam noemen bij het stellen van een vraag.
 - Laat sprekers benoemen welke acties ze uitvoeren, als dat op een natuurlijke manier kan.
 - Laat de presentator of spreker belangrijke kenmerken van de omgeving benoemen.
 - Laat de spreker de tekst in beeld benoemen, bijvoorbeeld in een opname van een webinar waar de spreker gebruikt maakt van tekstslides.
