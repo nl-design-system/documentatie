@@ -26,7 +26,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 ## Audiodescriptie bij video
 
-Een audiodescriptie bij een video is een hoorbare gesproken beschrijving van belangrijke visuele informatie die niet voorkomt in de audio van de video. Het bevat:
+Audiodescriptie bij een video is een hoorbare, gesproken beschrijving van belangrijke informatie die je ziet in een video, maar niet hoort. Voorbeelden hiervan zijn:
 
 - Informatie over tekst in beeld (zoals de namen en functies van sprekers, slogans en links).
 - Belangrijke visuele informatie in video, zoals de acties en kenmerken van personages, gebeurtenissen en scènewisselingen.
