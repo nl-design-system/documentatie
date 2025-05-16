@@ -118,7 +118,7 @@ Als je niet over de bestanden beschikt die gemaakt zijn om de video te maken, zi
 Als je over de oorspronkelijke bestanden beschikt, kun je vrij makkelijk ruimte creëren door de overgangen in de video te verlengen. Bijvoorbeeld door:
 
 - Titelschermen toe te voegen, bijvoorbeeld tussen de hoofdstukken in een video. Ook aan het begin en einde van de video kun je hierdoor makkelijk secondes toevoegen aan je video.
-- Overgangseffecten tussen de scènes toe te voegen, bijvoorbeeld door twee stilstaande beelden in elkaar over te laten vloeien, of door het beeld naar zwart te laten vervagen voor de volgende scène begint.
+- Overgangseffecten tussen de scènes toe te voegen, bijvoorbeeld door twee stilstaande beelden in elkaar over te laten vloeien, of door het beeld naar zwart te laten vervagen voordat de volgende scène begint.
 - Extra beeldmateriaal - die je eerder uit de video zou hebben gesneden - nog enkele tellen door te laten lopen.
 
 Wil je muziek toevoegen aan de overgangen? Let er dan wel op dat het volume laag genoeg is om de audiodescriptie duidelijk te kunnen horen.
