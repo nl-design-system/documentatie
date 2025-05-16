@@ -33,24 +33,24 @@ Audiodescriptie bij een video is een hoorbare, gesproken beschrijving van belang
 
 ## Voordelen
 
-Het aanbieden van een audiodescriptie bij een video is vooral belangrijk voor blinde en slechtziende bezoekers - zij kunnen de video niet of niet goed zien en missen belangrijke informatie als er geen audiodescriptie aanwezig is.
+Het aanbieden van audiodescriptie bij een video is vooral belangrijk voor blinde en slechtziende bezoekers - zij kunnen de video niet of niet goed zien en missen belangrijke informatie als er geen audiodescriptie aanwezig is.
 
 Daarnaast hebben ook andere doelgroepen, zoals mensen met een cognitieve beperking, baat bij audiodescriptie. Bijvoorbeeld omdat zij audio makkelijker kunnen verwerken dan visuele informatie, of omdat zij moeite hebben met het interpreteren van bijvoorbeeld gezichtsuitdrukkingen.
 
 ## Is audiodescriptie altijd nodig?
 
-Je voegt audiodescriptie toe wanneer iemand zonder de informatie die wel in beeld is, maar niet hoorbaar is, de video niet volledig kan begrijpen. Dat is niet bij iedere video het geval, bijvoorbeeld:
+Je voegt audiodescriptie toe wanneer iemand zonder de informatie die wel in beeld is, maar niet in het audiospoor voorkomt, de video niet volledig kan begrijpen. Dat is niet bij iedere video het geval, bijvoorbeeld:
 
 - Wanneer de informatie in de audio al overeenkomt met de informatie in beeld.
-- Wanneer de informatie in beeld gedurende de video niet verandert. Bijvoorbeeld: Er is maar één spreker en de spreker kijkt en spreekt gedurende de video rechtstreeks in de camera (een zogenaamde 'talking head video').
+- Wanneer de informatie in beeld gedurende de video niet verandert. Bijvoorbeeld: rr is maar één spreker en de spreker kijkt en spreekt gedurende de video rechtstreeks in de camera (een zogenaamde 'talking head-video').
 
-Als er hiernaast andere informatie voorkomt in de video, zoals tekst die in beeld komt, is een audiodescriptie natuurlijk alsnog wél nodig.
+Als er daarnaast andere informatie voorkomt in de video, zoals tekst die in beeld komt, is audiodescriptie natuurlijk alsnog wél nodig.
 
 ### Video als alternatief voor tekst
 
-In de [WCAG-richtlijnen](/wcag) is een uitzondering opgenomen voor video als alternatief voor tekst, als er duidelijk wordt aangegeven dát de video een alternatief is voor tekst. (**Let op**: Dit geldt dus niet andersom, een tekstalternatief voor video - zoals een transcript - is nooit een toegankelijk alternatief voor een video). De informatie in tekst en in de video moeten dan wel overeenkomen - je mag geen nieuwe of afwijkende informatie toevoegen.
+In de [WCAG-richtlijnen](/wcag) is een uitzondering opgenomen voor video als alternatief voor tekst, als er duidelijk wordt aangegeven dát de video een alternatief is voor tekst. (**Let op**: dit geldt dus niet andersom - een tekstalternatief voor video, zoals een transcript, is nooit een toegankelijk alternatief voor een video). De informatie in tekst en in de video moeten dan wel overeenkomen - je mag geen nieuwe of afwijkende informatie toevoegen.
 
-Het is bij deze video's gebruiksvriendelijker om toch een audiodescriptie toe te voegen. Video's worden vaak los van de content op de pagina waar ze staan gedeeld. Bijvoorbeeld omdat ze ook op een videoplatform zoals YouTube of Vimeo staan, of omdat ze gedeeld worden op social media.
+Het is bij deze video's gebruiksvriendelijker om toch audiodescriptie toe te voegen. Video's worden vaak los van de content op de pagina waar ze staan gedeeld. Bijvoorbeeld omdat ze ook op een videoplatform zoals YouTube of Vimeo staan, of omdat ze gedeeld worden op social media.
 
 ## Audiodescriptie als onderdeel van de video of als los bestand
 
@@ -62,9 +62,9 @@ Daarnaast kun je de audiodescriptie integreren in de video. Dit houdt dan wel in
 
 Als je de audiodescriptie als los bestand aanbiedt, heb je twee opties: de audiodescriptie aanbieden als tekst-naar-spraak of als audio.
 
-Als de videospeler tekst-naar-spraak bestanden ondersteunt, is dit meestal met een [WebVTT bestand](https://en.wikipedia.org/wiki/WebVTT). Dit is een tekstbestand met tijdstempels, waardoor de audiodescriptie op het juiste moment wordt voorgelezen. Dit is een relatief makkelijke en snelle manier om audiodescriptie te maken, maar de kwaliteit van de voorleesstem is afhankelijk van de videospeler.
+Als de videospeler tekst-naar-spraak bestanden ondersteunt, is dit meestal met een [WebVTT-bestand](https://en.wikipedia.org/wiki/WebVTT). Dit is een tekstbestand met tijdstempels, waardoor de audiodescriptie op het juiste moment wordt voorgelezen. Dit is een relatief makkelijke en snelle manier om audiodescriptie te maken, maar de kwaliteit van de voorleesstem is afhankelijk van de videospeler.
 
-Je kunt de audiodescriptie ook toevoegen als audiobestand. Je neemt dan een extra audiobestand op met een eigen voorlezer. Deze methode vraagt meer tijd en is mogelijk ook duurder, maar je hebt de kwaliteit dan wel volledig zelf in de hand. Je levert het audiobestand aan in een formaat dat ondersteund wordt door je videospeler, zoals een [MP3](https://nl.wikipedia.org/wiki/MP3) of [WAV](https://nl.wikipedia.org/wiki/WAV) bestand.
+Je kunt de audiodescriptie ook toevoegen als audiobestand. Je neemt dan een extra audiobestand op met een eigen voorlezer. Deze methode vraagt meer tijd en is mogelijk ook duurder, maar je hebt de kwaliteit dan wel volledig zelf in de hand. Je levert het audiobestand aan in een formaat dat ondersteund wordt door je videospeler, zoals een [MP3]-(https://nl.wikipedia.org/wiki/MP3) of [WAV](https://nl.wikipedia.org/wiki/WAV)-bestand.
 
 ## Wat plaats je in de audiodescriptie van een video?
 
@@ -95,7 +95,7 @@ Ga of laat je een nieuwe video maken? Door vooraf rekening te houden met audiode
 Daarnaast kun je in het script rekening houden met audiodescriptie door te zorgen voor voldoende natuurlijke pauzes:
 
 - Laat de spreker niet direct praten aan het begin van de opname, maar pas na een paar seconden.
-- Stop niet direct met filmen als de spreker dienst tekst heeft afgerond, maar film nog een paar seconden door.
+- Stop niet direct met filmen als de spreker klaar is met spreken, maar film nog een paar seconden door.
 - Maak opvullers, door bijvoorbeeld de omgeving te filmen.
 - Maak notities over waar nog meer audiodescriptie toegevoegd moet worden, zoals bij titelschermen, zodat de editor hier rekening mee kan houden.
 
@@ -125,7 +125,7 @@ Wil je muziek toevoegen aan de overgangen? Let er dan wel op dat het volume laag
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
-Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+Op de WCAG-succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen)](/wcag/1.2.1)
 - [Succescriterium 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3)
