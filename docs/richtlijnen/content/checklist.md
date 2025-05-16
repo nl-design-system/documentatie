@@ -24,6 +24,7 @@ Met koppen breng je structuur aan in je tekst. Waarmee je het voor iedereen begr
 - [Heb je de juiste kopniveaus gebruikt?](/richtlijnen/content/tekstopmaak/koppen/#opmaak-van-koppen)
 - [Klopt de volgorde?](/richtlijnen/content/tekstopmaak/koppen#kopniveaus)
 - [Hebben alle koppen een beschrijvende inhoud?](/richtlijnen/content/tekstopmaak/koppen#inhoud-van-koppen)
+- [Zijn er geen koppen leeg gelaten?](/richtlijnen/content/tekstopmaak/koppen#voor-wie-zijn-toegankelijke-koppen-belangrijk)
 
 ## Afbeeldingen
 
