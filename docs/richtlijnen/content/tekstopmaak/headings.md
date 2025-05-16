@@ -119,6 +119,21 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+De browserextensie HeadingsMap geeft de koppenstructuur van een webpagina overzichtelijk weer:
+
+- [HeadingsMap voor Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi).
+- [HeadingsMap voor Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/).
+- [HeadingsMap voor Edge](https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo).
+
+Hiermee kun je eenvoudig controleren of koppen in de juiste volgorde zijn geplaatst.
+
+Op de volgende pagina's staan meer methodes om te testen of jouw koppen wel toegankelijk zijn:
+
+- [Controleer of koppen betekenisvol en duidelijk zijn](/wcag/2.4.6/#hoe-te-testen)
+- [Controleer of koppen alleen worden gebruikt om onderliggende inhoud te beschrijven](/wcag/2.4.10/#hoe-te-testen)
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.

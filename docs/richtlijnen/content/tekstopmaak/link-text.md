@@ -59,6 +59,10 @@ Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+- [Controleer de linkteksten](/wcag/2.4.4#hoe-te-testen)
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
