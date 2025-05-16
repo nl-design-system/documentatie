@@ -1,0 +1,68 @@
+:root {
+  --utrecht-badge-list-item-margin-inline: 0.5em;
+  --utrecht-badge-list-item-margin-block: 0.25em;
+}
+
+.new-checklist {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-areas: "checkbox content" ". badge-list";
+}
+
+.new-checklist__checkbox {
+  grid-area: checkbox;
+}
+.new-checklist__badge-list {
+  grid-area: badge-list;
+  grid-column: 2;
+}
+.new-checklist__actions {
+  grid-area: actions;
+}
+
+.utrecht-button--contents {
+  --utrecht-button-padding-inline-start: 0;
+  --utrecht-button-padding-inline-end: 0;
+  --utrecht-button-padding-block-start: 0;
+  --utrecht-button-padding-block-end: 0;
+}
+
+.ma-badge-toggle-button-group {
+  /* inverse colors */
+  --utrecht-button-pressed-background-color: var(--utrecht-button-color);
+  --utrecht-button-pressed-color: var(--utrecht-button-background-color);
+  --utrecht-button-pressed-border-color: var(--utrecht-button-color);
+}
+
+.ma-badge-toggle-button-group .utrecht-button[aria-pressed] .utrecht-badge-data {
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  outline: 2px solid red;
+  outline-offset: 4px;
+}
+
+.ma-badge-toggle-button-group .utrecht-button[aria-pressed="true"] .utrecht-badge-data {
+  --utrecht-badge-background-color: var(--utrecht-button-pressed-background-color);
+  --utrecht-badge-color: var(--utrecht-button-pressed-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--utrecht-button-pressed-border-color);
+}
+
+.ma-badge-toggle-button-group .utrecht-button[aria-pressed="false"] .utrecht-badge-data {
+  --utrecht-badge-background-color: var(--utrecht-button-background-color);
+  --utrecht-badge-color: var(--utrecht-button-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--utrecht-button-border-color);
+}
+
+.new-checklist-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--basis-space-block-md, 1em);
+}
