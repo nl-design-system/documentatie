@@ -45,6 +45,7 @@ import {
 } from "@site/src/components/ComponentPage";
 import Usage from "./_usage.md";
 import { Markdown } from "@site/src/components/Markdown";
+import { NewChecklist } from "./NewChecklist";
 
 {/* Add name and description for the component */}
 export const title = "Skip Link";
@@ -79,15 +80,14 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <AcIntro />
 
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid algemeen"
+<NewChecklist
   items={[
     {
       title: "Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
       sc: "1.4.5",
       status: "",
       component: <Wcag145 />,
+      tags: ["generic"],
     },
     {
       title:
@@ -95,6 +95,7 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "2.4.4",
       status: "",
       component: <Wcag244 />,
+      tags: ["generic"],
     },
     {
       title:
@@ -102,55 +103,56 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "2.5.2",
       status: "",
       component: <Wcag252 />,
+      tags: ["generic"],
     },
     {
       title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam",
       sc: "2.5.3",
       status: "",
       component: <Wcag253 />,
+      tags: ["generic"],
     },
     {
       title: "De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels",
       sc: "2.5.5",
       status: "",
       component: <Wcag255 />,
+      tags: ["generic"],
     },
     {
       title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats",
       sc: "3.2.1",
       status: "",
       component: <Wcag321 />,
+      tags: ["generic"],
     },
     {
       title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde",
       sc: "3.2.3",
       status: "",
       component: <Wcag323 />,
+      tags: ["generic"],
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid visueel ontwerp"
-  items={[
     {
       title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur",
       sc: "1.4.3",
       status: "",
       component: <Wcag143 />,
+      tags: ["visual-design"],
     },
     {
       title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
       sc: "1.4.12",
       status: "",
       component: <Wcag1412 />,
+      tags: ["visual-design"],
     },
     {
       title: "Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar",
       sc: "2.4.7",
       status: "",
       component: <Wcag247 />,
+      tags: ["visual-design"],
     },
     /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
     /*
@@ -159,6 +161,7 @@ export const component = componentProgress.find((item) => item.number === issueN
   sc: "2.4.13",
   status: "",
   component: <Wcag2413 />,
+  tags: ['visual-design']
 },
  */
     {
@@ -166,25 +169,21 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "2.5.5",
       status: "",
       component: <Wcag255 />,
+      tags: ["visual-design", "designer"],
     },
     {
       title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
       sc: "3.2.4",
       status: "",
       component: <Wcag324 />,
+      tags: ["visual-design"],
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid zoom en herschalen"
-  items={[
     {
       title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
       sc: "1.4.4",
       status: "",
       component: <Wcag144 />,
+      tags: ["resize"],
     },
     {
       title:
@@ -192,19 +191,14 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "1.4.10",
       status: "",
       component: <Wcag1410 />,
+      tags: ["resize"],
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid toetsenbord"
-  items={[
     {
       title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets",
       sc: "2.1.1",
       status: "",
       component: <Wcag211 />,
+      tags: ["keyboard"],
     },
     {
       title:
@@ -212,44 +206,43 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "2.1.2",
       status: "",
       component: <Wcag212 />,
+      tags: ["keyboard"],
     },
     {
       title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt",
       sc: "2.4.1",
       status: "",
       component: <Wcag241 />,
+      tags: ["keyboard"],
     },
     {
       title: "De Skip Link staat op een logische plek in de focusvolgorde",
       sc: "2.4.3",
       status: "",
       component: <Wcag243 />,
+      tags: ["keyboard", "developer"],
     },
     {
       title: "Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar",
       sc: "2.4.7",
       status: "",
       component: <Wcag247 />,
+      tags: ["keyboard"],
     },
     {
       title: "De Skip Link wordt niet bedekt door een ander element op de pagina",
       sc: "2.4.11",
       status: "",
       component: <Wcag2411 />,
+      tags: ["keyboard"],
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={3}
-  testCategory="Toegankelijkheid screenreader"
-  items={[
     {
       title:
         "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
       sc: "3.1.2",
       status: "",
       component: <Wcag312 />,
+      tags: ["screenreader"],
     },
     {
       title:
@@ -257,6 +250,7 @@ export const component = componentProgress.find((item) => item.number === issueN
       sc: "4.1.2",
       status: "",
       component: <Wcag412 />,
+      tags: ["screenreader", "content", "developer"],
     },
   ]}
 />
