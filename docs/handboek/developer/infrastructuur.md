@@ -84,7 +84,6 @@ Stel de Git repository in:
 - Gebruik de `main` branch als default branch.
 - Stel de `main` branch in als protected branch:
   - de `main` branch mag niet verwijderd worden.
-  - Vereis een
 - Stel in dat een succesvolle GitHub Action verplicht is voor de volgende npm scripts, als die bestaan: `build`, `lint-build` en `test-build`, `lint` en `test`.
 
 Als je GitHub gebruikt:
