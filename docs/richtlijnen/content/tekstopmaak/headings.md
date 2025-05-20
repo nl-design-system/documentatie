@@ -37,7 +37,7 @@ Schermlezergebruikers kunnen een lijst van koppen oproepen en daarmee snel naar 
 Bezoekers die gebruik maken van een schermlezer kunnen ook met sneltoetsen snel door de koppen op een pagina navigeren. Laat koppen daarom ook niet leeg. Ook lege koppen worden herkend door schermlezers. Maar omdat ze geen beschrijvende tekst bevatten scheppen ze vooral verwarring in plaats van verduidelijking.
 
 <Guideline appearance="dont" title="Koppen leeg laten">
-  <Canvas language="html">
+  <Canvas language="html" defaultExpandedCode>
     {() => (
       <>
           <p>
