@@ -26,7 +26,11 @@ Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link t
 
 ## Voor wie is het nodig
 
-Duidelijke linkteksten zijn prettig voor iedereen en belangrijk voor verschillende mensen met een functiebeperking. Zoals mensen met vergrotingssoftware, dyslexie of een kort werkgeheugen. Ook help je bezoekers die blind zijn en in een schermlezer een lijst met links opvragen. Zij zien de links buiten de context. Onduidelijke links en dezelfde linkteksten kunnen dan heel verwarrend zijn.
+Linkteksten zijn pas echt bruikbaar als ze duidelijk maken waar de link naartoe gaat. Dat is niet alleen prettig voor iedereen die snel wil scannen, maar ook essentieel voor mensen die een schermlezer gebruiken of de pagina op een andere manier navigeren.
+
+Veel gebruikers horen of zien links los van hun context — bijvoorbeeld in een lijst met alle links op de pagina. Vage teksten als ‘klik hier’ of ‘lees meer’ geven dan geen enkele informatie.
+
+Zorg daarom dat de linktekst zelfstandig duidelijk is: beschrijf wat de gebruiker kan verwachten als ze erop klikken. Een goede linktekst helpt gebruikers sneller, met minder twijfel, en maakt je content direct toegankelijker.
 
 Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
 
@@ -58,6 +62,15 @@ Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
     )}
   </Canvas>
 </Guideline>
+
+## Hoe te testen
+
+Lees de pagina door en controleer alle linkteksten. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of de linktekst duidelijk maakt waar de link naartoe leidt.
+  Vermijd vage teksten zoals ‘klik hier’ of ‘lees meer’. De linktekst moet zelfstandig begrijpelijk zijn, zodat gebruikers weten wat ze kunnen verwachten.
+- Controleer of links naar verschillende bestemmingen unieke en beschrijvende linkteksten hebben.
+  Dit voorkomt verwarring, vooral voor gebruikers van screenreaders die een lijst van links opvragen.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

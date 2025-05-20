@@ -82,6 +82,15 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   </Canvas>
 </Guideline-->
 
+## Hoe te testen
+
+Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of het citaat is opgemaakt met de citaatfunctie van het CMS (bijvoorbeeld als blokcitaat).
+  Een citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met `<blockquote>`). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl. ￼
+- Kijk of er kopstijlen (zoals H2 of H3) zijn gebruikt om een citaat visueel te laten opvallen.
+  Als dat zo is, pas dit aan. Koppen zijn bedoeld voor structuur, niet voor vormgeving.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.

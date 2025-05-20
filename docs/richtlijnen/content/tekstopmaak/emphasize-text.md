@@ -113,6 +113,17 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+Lees de pagina door en bekijk alle teksten die visueel opvallen. Bepaal per geval of de nadruk functioneel is en correct is toegepast. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of vet of cursief is gebruikt via het CMS, en niet handmatig opgemaakt (bijvoorbeeld met spaties, hoofdletters of stijlen).
+  Alleen dan wordt de nadruk correct doorgegeven aan hulptechnologie zoals screenreaders.
+- Loop alle teksten in hoofdletters na. Vraag jezelf bij elk geval af: is dit echt nodig?
+  Gebruik hoofdletters alleen als ze functioneel zijn (bijvoorbeeld bij afkortingen). Controleer ook of screenreaders de tekst niet per letter voorlezen.
+- Bekijk of er ergens onderstreepte tekst staat die geen link is.
+  Onderstreping suggereert een hyperlink. Als de tekst geen link is, haal de onderstreping weg.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.

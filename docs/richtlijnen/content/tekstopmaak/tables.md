@@ -236,6 +236,19 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+Lees de pagina door en controleer alle tabellen. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of de tabel is opgemaakt met de tabeloptie van het CMS.
+  Gebruik de ingebouwde tabelopties van je contentmanagementsysteem om tabellen correct te markeren. Vermijd het gebruik van tabellen voor puur visuele opmaak, zoals het positioneren van tekst of afbeeldingen.
+- Controleer of de koppen correct zijn gemarkeerd als kolomkoppen en/of rijkoppen.
+  Zorg ervoor dat de eerste rij en/of kolom van de tabel is gemarkeerd als kop, zodat hulptechnologieën de structuur van de tabel correct kunnen interpreteren. ￼
+- Controleer of de tabel niet te complex is.
+  Vermijd het gebruik van samengevoegde cellen of geneste tabellen, omdat deze de toegankelijkheid kunnen verminderen. Overweeg om complexe tabellen op te splitsen in meerdere eenvoudige tabellen. ￼
+- Controleer of de tabel niet wordt gebruikt voor opmaakdoeleinden.
+  Gebruik tabellen alleen voor het presenteren van gestructureerde gegevens, niet voor het creëren van lay-outs of het positioneren van elementen op de pagina.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.

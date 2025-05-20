@@ -84,6 +84,15 @@ Stel een lijst in als lijst-element via de contenteditor in je contentmanagement
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+Lees de pagina door en controleer alle opsommingen. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of de opsomming is opgemaakt met de lijstfunctie van het CMS.
+  Gebruik hiervoor de ingebouwde opsomknoppen in je CMS. Maak geen lijsten door zelf streepjes of andere tekens te typen, want die worden niet als lijst herkend door hulptechnologie.
+- Controleer of je een genummerde of ongenummerde lijst hebt gekozen die past bij de inhoud.
+  Gebruik een genummerde lijst als de volgorde belangrijk is (zoals bij stappen). Gebruik een ongenummerde lijst als de volgorde geen rol speelt.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
