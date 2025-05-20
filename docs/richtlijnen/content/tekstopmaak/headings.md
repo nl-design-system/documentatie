@@ -28,19 +28,33 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Koppen
 
-Zorg voor een duidelijke structuur van de tekst. Het structeren van de tekst op de pagina door gebruik te maken van koppen is heel belangrijk. Zo begrijpen bezoekers de inhoud en opbouw van de tekst. Daarnaast maakt het het navigeren op pagina's makkelijker.
+Koppen vormen de ruggengraat van de inhoud van een pagina. Aan de hand van koppen kan een gebruiker snel wegwijs worden in de inhoud van een webpagina. Zorg voor een duidelijke structuur van de tekst door gebruik te maken van koppen. Dit is heel belangrijk. Want zo begrijpen bezoekers de inhoud en opbouw van de tekst. Daarnaast maakt het het navigeren op pagina's makkelijker.
 
 ## Voor wie zijn toegankelijke koppen belangrijk?
 
-Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is vooral handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben.
+Schermlezergebruikers kunnen een lijst van koppen oproepen en daarmee snel naar een kopje navigeren. Ook ziende bezoekers scannen de inhoud van een pagina aan de hand van koppen. Daarom is het belangrijk dat een kopje de inhoud onder de kop goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina. Dit helpt mensen om snel de informatie te vinden die ze zoeken.
 
-Een duidelijke koppenstructuur is heel belangrijk. Blinde mensen maken gebruik van schermlezers. Schermlezers kunnen een overzicht van alle koppen op een pagina laten zien. Dit helpt mensen om snel de informatie te vinden die ze zoeken. Ze kunnen ook makkelijk van de ene kop naar de andere gaan, door gebruik te maken van sneltoetsen.
+Bezoekers die gebruik maken van een schermlezer kunnen ook met sneltoetsen snel door de koppen op een pagina navigeren. Laat koppen daarom ook niet leeg. Ook lege koppen worden herkend door schermlezers. Maar omdat ze geen beschrijvende tekst bevatten scheppen ze vooral verwarring in plaats van verduidelijking.
+
+<Guideline appearance="dont" title="Koppen leeg laten">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+          <p>
+            Voorzie een kop altijd van een beschrijvende tekst. Zorg ervoor dat koppen niet leeg zijn. Bijvoorbeeld om extra witruimte te creëren.
+          </p>
+          <h2>&nbsp;</h2>
+          <p>Zo'n lege kop wordt namelijk wel herkend door hulpsoftware. Maar de gebruiker kan er vervolgens helemaal niks mee. Het schept met name verwarring.</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat koppen van verschillende niveaus er anders uit zien, is het snel duidelijk hoe de informatie op de pagina gestructureerd is.
 
 ## Opmaak van koppen
 
-Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die het contentmanagementsysteem waarin je werkt je biedt. Vaak kun je in een uitklapbaar lijstje kiezen welke opmaak je tekst moet krijgen, bijvoorbeeld een paragraaf of kop van niveau 1 of 2.
+Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die het contentmanagementsysteem waarin je werkt je biedt. Vaak kun je in een uitklapbaar lijstje kiezen welke opmaak je tekst moet krijgen, bijvoorbeeld een paragraaf of kop van niveau 1 of 2. Gebruik een kop niet enkel en alleen om tekst groot en vet te maken.
 
 <Guideline appearance="dont" title="Tekst dikgedrukt en groter maken en een andere kleur geven zodat het op een kop lijkt.">
   <Canvas language="html">
@@ -56,6 +70,10 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
     )}
   </Canvas>
 </Guideline>
+
+## Inhoud van koppen
+
+Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duidelijke kop beschrijft de inhoud eronder, als kleine samenvatting. Dit is handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben, en het helpt de scannende gebruikers om snel de informatie te vinden die ze zoeken.
 
 ## Kopniveaus
 
