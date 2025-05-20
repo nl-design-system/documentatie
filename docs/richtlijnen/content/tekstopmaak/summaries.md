@@ -25,7 +25,11 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Opsommingen
 
-Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoeveel items een lijst heeft en maakt het mogelijk om de lijst over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te ‘scannen’.
+Met een opsomming maak je informatie overzichtelijk. Dat is handig voor iedereen die snel wil scannen, maar ook belangrijk voor mensen die gebruikmaken van een schermlezer of een vergroot scherm.
+
+Alleen: niet elke lijst is automatisch toegankelijk. Dat hangt af van de manier waarop je de opsomming opmaakt. Een visuele lijst met streepjes of icoontjes wordt niet altijd herkend door hulptechnologie. Ook het type lijst — genummerd of ongenummerd — moet passen bij de inhoud.
+
+Op deze pagina lees je hoe je opsommingen toegankelijk maakt en welke opmaak je het beste kunt gebruiken.
 
 ## Lijst-elementen
 

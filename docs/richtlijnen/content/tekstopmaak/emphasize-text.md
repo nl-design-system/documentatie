@@ -27,7 +27,11 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tekst benadrukken
 
-Het kan heel goed zijn om tekst te benadrukken. Doe dat dan wel op een toegankelijke manier, zodat alle bezoekers er baat bij hebben.
+Soms wil je iets extra laten opvallen in je tekst. Bijvoorbeeld een kernwoord, een belangrijke waarschuwing of een tussenkopje in lopende tekst. Dat kan, zolang je het op een toegankelijke manier doet.
+
+Niet alle manieren om nadruk te geven werken voor iedereen. Hoofdletters, onderstreping of kleur kunnen verwarrend zijn of juist het tegenovergestelde bereiken van wat je bedoelt. Door te kiezen voor herkenbare en toegankelijke opmaak, zorg je dat je boodschap bij iedereen overkomt — ook bij mensen die gebruikmaken van een schermlezer of een aangepaste weergave.
+
+Op deze pagina lees je hoe je tekst op een toegankelijke manier benadrukt, en wat je beter kunt vermijden.
 
 ## Dikgedrukt en schuingedrukt
 
@@ -82,7 +86,7 @@ Door deze knoppen in een CMS te gebruiken, verander je de visuele opmaak én de 
 
 ## ALL CAPS-tekst
 
-Probeer het gebruik van ‘ALL CAPS’, oftewel alléén hoofdletters, tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
+Probeer het gebruik van ‘ALL CAPS’, wat hetzelfde betekent als alléén hoofdletters, tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
 
 <Guideline appearance="do" title="Beperkt gebruik maken van all caps">
   <Canvas language="html">
