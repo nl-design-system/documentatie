@@ -16,7 +16,7 @@
    }
   },
   66359: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => m, contentTitle: () => c, default: () => g, frontMatter: () => a, metadata: () => d, toc: () => p });
+   t.r(n), t.d(n, { assets: () => m, contentTitle: () => c, default: () => j, frontMatter: () => a, metadata: () => d, toc: () => p });
    var s = t(52676),
     l = t(40139),
     o = t(43599),
@@ -33,9 +33,9 @@
     ];
    function u(e) {
     const n = { a: 'a', br: 'br', h1: 'h1', h2: 'h2', h3: 'h3', li: 'li', ol: 'ol', p: 'p', ul: 'ul', ...(0, l.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'opsommingen', children: 'Opsommingen' }), '\n', (0, s.jsx)(n.p, { children: 'Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoeveel items een lijst heeft en maakt het mogelijk om de lijst over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te \u2018scannen\u2019.' }), '\n', (0, s.jsx)(n.h2, { id: 'lijst-elementen', children: 'Lijst-elementen' }), '\n', (0, s.jsx)(r.X, { appearance: 'dont', title: 'Zelf sterretjes, streepjes of nummers typen om een lijst te maken.', children: (0, s.jsx)(o.X, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)(n.p, { children: ['- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), (0, s.jsx)(n.br, {}), '1. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '2. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '3. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '4. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), (0, s.jsx)(n.br, {}), 'Hulpsoftware herkent deze opmaak niet als een lijst. Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee.'] }) }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'genummerde-en-ongenummerde-lijsten', children: 'Genummerde en ongenummerde lijsten' }), '\n', (0, s.jsx)(r.X, { appearance: 'do', title: 'Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.', children: (0, s.jsx)(o.X, { language: 'html', children: () => (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { children: 'Burrata salade' }), (0, s.jsx)(n.p, { children: 'Een lekkere salade met burrata en tomaten.' }), (0, s.jsx)(n.h3, { children: 'Ingredi\xebnten' }), (0, s.jsxs)(n.ul, { children: [(0, s.jsx)(n.li, { children: '250 gr (snoep)tomaten' }), (0, s.jsx)(n.li, { children: '1 bol burrata' }), (0, s.jsx)(n.li, { children: 'verse basilicum' }), (0, s.jsx)(n.li, { children: '1 el pesto' }), (0, s.jsx)(n.li, { children: 'scheutje olijfolie' }), (0, s.jsx)(n.li, { children: 'handje rucola' }), (0, s.jsx)(n.li, { children: 'crema di balsamico' }), (0, s.jsx)(n.li, { children: 'zwarte peper' })] }), (0, s.jsx)(n.h3, { children: 'Bereiding' }), (0, s.jsxs)(n.ol, { children: [(0, s.jsx)(n.li, { children: 'Snijd de tomaten in stukjes.' }), (0, s.jsx)(n.li, { children: 'Verdeel de rucola over een bord, en voeg ook de tomaten toe.' }), (0, s.jsx)(n.li, { children: 'Leg de bol burrata in het midden van de salade.' }), (0, s.jsx)(n.li, { children: 'Verdeel wat peper, olijfolie en crema di balsamico over de salade.' }), (0, s.jsx)(n.li, { children: 'Maak af met een schepje pesto en wat verse basilicum.' })] })] }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, s.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, s.jsx)(i.ZP, {})] });
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'opsommingen', children: 'Opsommingen' }), '\n', (0, s.jsx)(n.p, { children: 'Met opsommingen of lijsten kun je informatie ordenen. Als een opsomming goed opgemaakt is, dan is de opsomming beter bruikbaar voor bijvoorbeeld blinde mensen die een schermlezer gebruiken. Een schermlezer kan aangeven hoeveel items een lijst heeft en maakt het mogelijk om de lijst over te slaan. Ook voor andere mensen zijn opsommingen overzichtelijk en is informatie makkelijker te \u2018scannen\u2019.' }), '\n', (0, s.jsx)(n.h2, { id: 'lijst-elementen', children: 'Lijst-elementen' }), '\n', (0, s.jsx)(n.p, { children: 'Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. De meeste CMS-en bieden hier een aparte optie voor aan. Maak niet zelf een lijst door het gebruik van bijvoorbeeld leestekens. Hulpsoftware herkent deze opmaak namelijk niet als een lijst.' }), '\n', (0, s.jsx)(r.X, { appearance: 'dont', title: 'Zelf sterretjes, streepjes of nummers typen om een lijst te maken.', children: (0, s.jsx)(o.X, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)(n.p, { children: ['- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), '- Dit is geen lijst', (0, s.jsx)(n.br, {}), (0, s.jsx)(n.br, {}), '1. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '2. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '3. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), '4. Dit is \xf3\xf3k geen lijst', (0, s.jsx)(n.br, {}), (0, s.jsx)(n.br, {})] }) }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'genummerde-en-ongenummerde-lijsten', children: 'Genummerde en ongenummerde lijsten' }), '\n', (0, s.jsx)(r.X, { appearance: 'do', title: 'Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.', children: (0, s.jsx)(o.X, { language: 'html', children: () => (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h2, { children: 'Burrata salade' }), (0, s.jsx)(n.p, { children: 'Een lekkere salade met burrata en tomaten.' }), (0, s.jsx)(n.h3, { children: 'Ingredi\xebnten' }), (0, s.jsxs)(n.ul, { children: [(0, s.jsx)(n.li, { children: '250 gr (snoep)tomaten' }), (0, s.jsx)(n.li, { children: '1 bol burrata' }), (0, s.jsx)(n.li, { children: 'verse basilicum' }), (0, s.jsx)(n.li, { children: '1 el pesto' }), (0, s.jsx)(n.li, { children: 'scheutje olijfolie' }), (0, s.jsx)(n.li, { children: 'handje rucola' }), (0, s.jsx)(n.li, { children: 'crema di balsamico' }), (0, s.jsx)(n.li, { children: 'zwarte peper' })] }), (0, s.jsx)(n.h3, { children: 'Bereiding' }), (0, s.jsxs)(n.ol, { children: [(0, s.jsx)(n.li, { children: 'Snijd de tomaten in stukjes.' }), (0, s.jsx)(n.li, { children: 'Verdeel de rucola over een bord, en voeg ook de tomaten toe.' }), (0, s.jsx)(n.li, { children: 'Leg de bol burrata in het midden van de salade.' }), (0, s.jsx)(n.li, { children: 'Verdeel wat peper, olijfolie en crema di balsamico over de salade.' }), (0, s.jsx)(n.li, { children: 'Maak af met een schepje pesto en wat verse basilicum.' })] })] }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, s.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, s.jsx)(i.ZP, {})] });
    }
-   function g(e = {}) {
+   function j(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(u, { ...e }) }) : u(e);
    }
@@ -53,16 +53,16 @@
     m = t(75271),
     p = t(60027),
     u = t(52676);
-   const g = (e) => {
+   const j = (e) => {
     let { children: n } = e;
     return (0, u.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(l.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, u.jsx)(l.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   g.displayName = 'ParagraphContainer';
-   const j = (e) => {
+   j.displayName = 'ParagraphContainer';
+   const g = (e) => {
     let { children: n } = e;
     return (0, u.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, u.jsx)(l.BB, { className: (0, o.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
-   j.displayName = 'DocumentContainer';
+   g.displayName = 'DocumentContainer';
    const h = (e) => {
     let { children: n } = e;
     return (0, u.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: n });
@@ -73,18 +73,18 @@
     const _ = 'function' == typeof k ? k() : k,
      N = 'function' == typeof n ? n() : (0, m.isValidElement)(n) ? n : void 0,
      z = 'string' == typeof n ? n : p.uS(N || _),
-     [w, C] = (0, m.useState)(z),
+     [C, w] = (0, m.useState)(z),
      [Z, S] = (0, m.useState)(b);
     (0, m.useEffect)(() => {
      (async () => {
       const e = await d.ZP.format(z, { parser: x, plugins: [r.Z, i.ZP, a.ZP, c.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
-      C(e);
+      w(e);
      })();
     }, [z]);
     const D = (0, m.useId)();
     let O = m.Fragment;
     return (
-     'paragraph' === y ? (O = g) : 'document' === y ? (O = j) : 'surface' === y && (O = h),
+     'paragraph' === y ? (O = j) : 'document' === y ? (O = g) : 'surface' === y && (O = h),
      (0, u.jsxs)('div', {
       className: (0, o.Z)('nlds-canvas'),
       children: [
@@ -109,7 +109,7 @@
          id: D,
          hidden: !Z,
          children: [
-          (0, u.jsx)(s.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: w, trim: !0 }),
+          (0, u.jsx)(s.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: C, trim: !0 }),
           t &&
            (0, u.jsx)('div', {
             className: (0, o.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
@@ -117,7 +117,7 @@
              className: (0, o.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
-              navigator.clipboard.writeText(w).catch((e) => console.error('Copy code failed', e));
+              navigator.clipboard.writeText(C).catch((e) => console.error('Copy code failed', e));
              },
              children: 'Kopieer',
             }),
@@ -177,7 +177,7 @@
     let { lineNumber: n, syntax: t, textContent: c, trim: d } = e,
      m = c;
     const { title: p, type: u } = (0, o.useContext)(r.n),
-     g = (0, o.useId)();
+     j = (0, o.useId)();
     return (
      d && (m = m.trim()),
      (0, a.jsx)(l.y$, {
@@ -186,7 +186,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: l, getLineProps: o, getTokenProps: r } = e;
-       return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)('span', { hidden: !0, id: g, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, a.jsx)(s.dn, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': g, style: t, children: l.map((e, t) => (0, a.jsxs)('span', { ...o({ line: e }), children: [n && (0, a.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, a.jsx)('span', { ...r({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)('span', { hidden: !0, id: j, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, a.jsx)(s.dn, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': j, style: t, children: l.map((e, t) => (0, a.jsxs)('span', { ...o({ line: e }), children: [n && (0, a.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, a.jsx)('span', { ...r({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -205,8 +205,8 @@
      let { title: n, appearance: t, description: i, children: d, figure: m } = e;
      const p = { do: 'Doen', dont: 'Niet doen' },
       u = m ? 'figure' : 'div',
-      g = m ? 'figcaption' : 'div';
-     return (0, a.jsxs)(u, { className: (0, r.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, a.jsxs)(g, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(o.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, a.jsx)(o.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(o.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, a.jsx)(o.nv, { children: n })] }), i] }), (0, a.jsx)('div', { className: 'nlds-guideline__example', children: (0, a.jsx)(c.Provider, { value: { title: n, type: p[t] }, children: d }) })] });
+      j = m ? 'figcaption' : 'div';
+     return (0, a.jsxs)(u, { className: (0, r.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, a.jsxs)(j, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(o.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, a.jsx)(o.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(o.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, a.jsx)(o.nv, { children: n })] }), i] }), (0, a.jsx)('div', { className: 'nlds-guideline__example', children: (0, a.jsx)(c.Provider, { value: { title: n, type: p[t] }, children: d }) })] });
     };
   },
   40139: (e, n, t) => {
