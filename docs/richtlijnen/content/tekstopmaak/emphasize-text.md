@@ -82,7 +82,7 @@ Door deze knoppen in een CMS te gebruiken, verander je de visuele opmaak én de 
 
 ## ALL CAPS-tekst
 
-Probeer het gebruik van ‘ALL CAPS’ tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
+Probeer het gebruik van ‘ALL CAPS’, oftewel alléén hoofdletters, tot een minimum te beperken. We herkennen letters aan hun vorm en dan met name de bovenkant van een letter. Eigenlijk maakt je oog steeds sprongetjes aan de bovenkant van een woord. Bij all caps is het onderscheid in lettervorm minder duidelijk, dit vertraagt het lezen.
 
 <Guideline appearance="do" title="Beperkt gebruik maken van all caps">
   <Canvas language="html">
