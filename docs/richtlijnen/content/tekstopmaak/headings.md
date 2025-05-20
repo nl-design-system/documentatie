@@ -32,7 +32,7 @@ Koppen vormen de ruggengraat van de inhoud van een pagina. Aan de hand van koppe
 
 ## Voor wie zijn toegankelijke koppen belangrijk?
 
-Schermlezergebruikers kunnen een lijst van koppen oproepen en daarmee snel naar een kopje navigeren. Ook ziende bezoekers scannen de inhoud van een pagina aan de hand van koppen. Daarom is het belangrijk dat een kopje de inhoud onder de kop goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina. Dit helpt mensen om snel de informatie te vinden die ze zoeken. 
+Schermlezergebruikers kunnen een lijst van koppen oproepen en daarmee snel naar een kopje navigeren. Ook ziende bezoekers scannen de inhoud van een pagina aan de hand van koppen. Daarom is het belangrijk dat een kopje de inhoud onder de kop goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina. Dit helpt mensen om snel de informatie te vinden die ze zoeken.
 
 Bezoekers die gebruik maken van een schermlezer kunnen ook met sneltoetsen snel door de koppen op een pagina navigeren. Laat koppen daarom ook niet leeg. Ook lege koppen worden herkend door schermlezers. Maar omdat ze geen beschrijvende tekst bevatten scheppen ze vooral verwarring in plaats van verduidelijking.
 
@@ -54,7 +54,7 @@ Ook ziende bezoekers maken gebruik van de koppenstructuur op een pagina. Doordat
 
 ## Opmaak van koppen
 
-Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die het contentmanagementsysteem waarin je werkt je biedt. Vaak kun je in een uitklapbaar lijstje kiezen welke opmaak je tekst moet krijgen, bijvoorbeeld een paragraaf of kop van niveau 1 of 2.
+Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die het contentmanagementsysteem waarin je werkt je biedt. Vaak kun je in een uitklapbaar lijstje kiezen welke opmaak je tekst moet krijgen, bijvoorbeeld een paragraaf of kop van niveau 1 of 2. Gebruik een kop niet enkel en alleen om tekst groot en vet te maken.
 
 <Guideline appearance="dont" title="Tekst dikgedrukt en groter maken en een andere kleur geven zodat het op een kop lijkt.">
   <Canvas language="html">
@@ -73,7 +73,7 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
 
 ## Inhoud van koppen
 
-Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Dit is vooral handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben. Gebruik een kopje daarom niet enkel en alleen om tekst groot en vet te maken. Maar beschrijf in de koppen de inhoud eronder, als kleine samenvatting. Dit helpt de scannende gebruikers om snel de informatie te vinden die ze zoeken.
+Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duidelijke kop beschrijft de inhoud eronder, als kleine samenvatting. Dit is handig voor mensen die blind of slechtziend zijn, dyslectisch zijn of een cognitieve beperking hebben, en het helpt de scannende gebruikers om snel de informatie te vinden die ze zoeken.
 
 ## Kopniveaus
 

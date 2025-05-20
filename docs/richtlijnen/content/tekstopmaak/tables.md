@@ -27,11 +27,11 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tabellen
 
-Met tabellen kun je data presenteren op een overzichtelijke manier. Een tabel maak je toegankelijk zodat mensen die een schermlezer gebruiken bij elke cel kunnen achterhalen wat de bijbehorende koppen zijn. In het systeem waarmee je informatie op een site publiceert, kun je vaak aangeven of er alleen rijkoppen, alleen kolomkoppen of rijkoppen en kolomkoppen zijn. Dit geeft de relatie tussen kopcellen en gegevenscellen aan.
+Met tabellen kun je data op een overzichtelijke manier presenteren. Ze zijn vooral geschikt om gestructureerde informatie te tonen, zoals cijferreeksen of vergelijkingen. Een toegankelijke tabel helpt ook mensen die een schermlezer gebruiken: zij moeten bij elke cel kunnen achterhalen wat de bijbehorende kolom- en/of rijkoppen zijn.
 
 ## Toegankelijke tabellen maken
 
-Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor schermlezergebruikers. Dat doe je door het gebruik van kolomkoppen of rijkoppen. De kolom- of rijkoppen worden door een schermlezer voorgelezen bij de waarde van een bijbehorende tabelcel.
+Zorg ervoor dat je in het systeem waarmee je publiceert aangeeft welke cellen kopcellen zijn. Vaak kun je instellen of er kolomkoppen, rijkoppen of beide aanwezig zijn. Schermlezers gebruiken deze informatie om bij elke cel de juiste kop voor te lezen, zodat de structuur en betekenis van de gegevens duidelijk blijven.
 
 <Guideline appearance="do" title="Markeer koppen als rijkoppen of kolomkoppen">
   <Canvas language="html">
