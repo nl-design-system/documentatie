@@ -26,15 +26,13 @@ Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal 
 
 Mensen die een schermlezer gebruiken of een automatische vertaalfunctie inschakelen, zijn afhankelijk van deze instellingen. Als de taal niet goed is opgegeven, worden woorden verkeerd uitgesproken of fout vertaald.
 
-## Wat kun je doen als contentmaker?
-
-### 1. Controleer of de juiste paginataal is ingesteld
+## Stel de juiste paginataal in
 
 Elke webpagina heeft een hoofdtal. Die moet overeenkomen met de taal waarin de tekst op die pagina is geschreven.
 
 In sommige systemen kun je dit als redacteur zelf instellen — bijvoorbeeld via de pagina-instellingen. In andere gevallen doet het CMS dat automatisch of is het al voor je ingesteld. Twijfel je? Vraag het aan een collega of beheerder.
 
-### 2. Geef aan als een stukje tekst in een andere taal is geschreven
+## Geef aan als een stukje tekst in een andere taal is geschreven
 
 Gebruik je bijvoorbeeld een Engelse term (call to action), een Frans citaat of een Duitstalige naam van een organisatie? Geef dan aan dat dit stukje in een andere taal is geschreven.
 
