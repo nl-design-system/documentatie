@@ -64,7 +64,6 @@ Softwareversies:
 ## Visuele regressietests
 
 - Gebruik een tool voor visuele regressietests, om het resultaat van front-end code te controleren door te vergelijken met referentie-screenshots.
-- Als je Chromatic.
 - Gebruik een GitHub Action om screenshots naar Chromatic te uploaden, als je Chromatic gebruikt.
   - Stel een `CHROMATIC_PROJECT_TOKEN` environment variable in, zodat je screenshots kan uploaden.
   - Op dit moment gebruikt het NL Design System kernteam [Chromatic](https://www.chromatic.com), een commerciële software-as-a-service. NL Design System projecten kunnen daar ook gebruik van maken volgens een "fair use policy".

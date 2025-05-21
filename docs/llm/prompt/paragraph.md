@@ -9,7 +9,7 @@ Use the paragraph component for each paragraph of text in a block of rich text c
 When you develop a paragraph component with HTML and CSS, use the following requirements:
 
 - Use the appropriate semantic HTML element: `p`.
-- The paragraph button must support the following variants:
+- The paragraph must support the following variants:
   - Lead paragraph
 
 ## Lead Paragraph variant
