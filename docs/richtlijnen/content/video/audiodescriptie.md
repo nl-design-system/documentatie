@@ -8,8 +8,8 @@ description: Richtlijnen voor Audiodescriptie binnen NL Design System
 slug: /richtlijnen/content/video/audiodescriptie
 keywords:
   - video
-  - youtube
-  - vimeo
+  - YouTube
+  - Vimeo
   - audiodescriptie
   - audiodescription
   - audio
@@ -39,16 +39,18 @@ Daarnaast hebben ook andere doelgroepen, zoals mensen met een cognitieve beperki
 
 ## Is audiodescriptie altijd nodig?
 
-Je voegt audiodescriptie toe wanneer iemand zonder de informatie die wel in beeld is, maar niet in het audiospoor voorkomt, de video niet volledig kan begrijpen. Dat is niet bij iedere video het geval, bijvoorbeeld:
+Je voegt audiodescriptie toe aan een video als er informatie zichtbaar is die niet hoorbaar is. Bezoekers die de video niet (goed) kunnen zien missen dan informatie. Dat is niet bij iedere video het geval, bijvoorbeeld:
 
 - Wanneer de informatie in de audio al overeenkomt met de informatie in beeld.
-- Wanneer de informatie in beeld gedurende de video niet verandert. Bijvoorbeeld: rr is maar één spreker en de spreker kijkt en spreekt gedurende de video rechtstreeks in de camera (een zogenaamde 'talking head-video').
+- Wanneer de informatie in beeld tijdens de video niet verandert. Bijvoorbeeld: er is maar één spreker en de spreker kijkt en spreekt gedurende de video rechtstreeks in de camera (een zogenaamde 'talking head-video').
 
 Als er daarnaast andere informatie voorkomt in de video, zoals tekst die in beeld komt, is audiodescriptie natuurlijk alsnog wél nodig.
 
 ### Video als alternatief voor tekst
 
-In de [WCAG-richtlijnen](/wcag) is een uitzondering opgenomen voor video als alternatief voor tekst, als er duidelijk wordt aangegeven dát de video een alternatief is voor tekst. (**Let op**: dit geldt dus niet andersom - een tekstalternatief voor video, zoals een transcript, is nooit een toegankelijk alternatief voor een video). De informatie in tekst en in de video moeten dan wel overeenkomen - je mag geen nieuwe of afwijkende informatie toevoegen.
+In de [WCAG-richtlijnen](/wcag) is een uitzondering opgenomen voor video's die een alternatief zijn voor tekst op een pagina. Je moet dan wel duidelijk aangeven dát de video een alternatief is voor de tekst. De informatie in de tekst en in de video moeten dan wel overeenkomen - je mag geen nieuwe of afwijkende informatie toevoegen.
+
+**Let op**: dit geldt dus niet andersom - een tekstalternatief voor video, zoals een transcript, is nooit een toegankelijk alternatief voor een video.
 
 Het is bij deze video's gebruiksvriendelijker om toch audiodescriptie toe te voegen. Video's worden vaak los van de content op de pagina waar ze staan gedeeld. Bijvoorbeeld omdat ze ook op een videoplatform zoals YouTube of Vimeo staan, of omdat ze gedeeld worden op social media.
 
@@ -90,13 +92,13 @@ Ga of laat je een nieuwe video maken? Door vooraf rekening te houden met audiode
 - Laat de sprekers elkaar bij naam noemen bij het stellen van een vraag.
 - Laat sprekers benoemen welke acties ze uitvoeren, als dat op een natuurlijke manier kan.
 - Laat de presentator of spreker belangrijke kenmerken van de omgeving benoemen.
-- Laat de spreker de tekst in beeld benoemen, bijvoorbeeld in een opname van een webinar waar de spreker gebruikt maakt van tekstslides.
+- Laat de spreker de tekst in beeld benoemen, bijvoorbeeld in een opname van een webinar waar de spreker gebruikt maakt van slides met tekst.
 
 Daarnaast kun je in het script rekening houden met audiodescriptie door te zorgen voor voldoende natuurlijke pauzes:
 
 - Laat de spreker niet direct praten aan het begin van de opname, maar pas na een paar seconden.
 - Stop niet direct met filmen als de spreker klaar is met spreken, maar film nog een paar seconden door.
-- Maak opvullers, door bijvoorbeeld de omgeving te filmen.
+- Maak opvul beeld, door bijvoorbeeld de omgeving te filmen.
 - Maak notities over waar nog meer audiodescriptie toegevoegd moet worden, zoals bij titelschermen, zodat de editor hier rekening mee kan houden.
 
 <Guideline appearance="do" title="Laat de sprekers in de video zichzelf en anderen voorstellen">
