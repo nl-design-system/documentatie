@@ -26,13 +26,13 @@
     l = { id: 'richtlijnen/content/tekstopmaak/README', title: 'Introductie richtlijnen voor tekstopmaak', description: 'Introductie van de richtlijnen voor tekstopmaak van het NL Design System.', source: '@site/docs/richtlijnen/content/tekstopmaak/README.mdx', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/tekstopmaak', permalink: '/richtlijnen/content/tekstopmaak', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/README.mdx', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Introductie richtlijnen voor tekstopmaak', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Introductie tekstopmaak', sidebar_position: 2, pagination_label: 'Content', description: 'Introductie van de richtlijnen voor tekstopmaak van het NL Design System.', slug: '/richtlijnen/content/tekstopmaak', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'koppen', 'dikgedrukt', 'schuingedrukt', 'strong', 'em', 'bold', 'italic', 'opsommingen', 'geordende', 'ongeordende', 'lijst', 'links', 'tabel', 'tabellen', 'tabelopmaak'] }, sidebar: 'richtlijnen', previous: { title: 'Tekst in een afbeelding', permalink: '/richtlijnen/content/afbeeldingen/tekst-in-afbeelding' }, next: { title: 'Content', permalink: '/richtlijnen/content/tekstopmaak' } },
     d = {},
     m = [];
-   function u(e) {
+   function k(e) {
     const t = { h1: 'h1', p: 'p', ...(0, s.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', (0, i.jsx)(t.h1, { id: 'introductie-richtlijnen-nl-design-system-voor-tekstopmaak', children: 'Introductie richtlijnen NL Design System voor tekstopmaak' }), '\n', (0, i.jsx)(t.p, { children: 'Het NL Design System geeft richtlijnen voor betekenisvolle tekstopmaak. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.' }), '\n', (0, i.jsx)(t.p, { children: 'Deze richtlijnen staan gesorteerd op onderwerp.' }), '\n', (0, i.jsx)(o.l, { excludeDocIDs: ['richtlijnen/content/tekstopmaak/README'] }), '\n', (0, i.jsx)(r.ZP, {})] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', (0, i.jsx)(t.h1, { id: 'introductie-richtlijnen-nl-design-system-voor-tekstopmaak', children: 'Introductie richtlijnen NL Design System voor tekstopmaak' }), '\n', (0, i.jsx)(t.p, { children: 'Tekst is de basis van vrijwel alle digitale content. Maar niet iedereen leest of ervaart tekst op dezelfde manier. Sommige mensen gebruiken een schermlezer die tekst voorleest, anderen lezen met vergroting of hebben moeite met grote lappen tekst. Juist daarom is het belangrijk om tekst goed en duidelijk op te maken.' }), '\n', (0, i.jsx)(t.p, { children: 'Met toegankelijke tekstopmaak zorg je dat jouw informatie voor zoveel mogelijk mensen leesbaar en bruikbaar is \u2014 ongeacht beperking, apparaat of situatie. Denk aan duidelijke koppen, goed opgemaakte lijsten, toegankelijke tabellen en begrijpelijke linkteksten.' }), '\n', (0, i.jsx)(t.p, { children: 'Het NL Design System helpt je om teksten toegankelijk en consistent op te maken. De richtlijnen zijn gebaseerd op toegankelijkheidsnormen, gebruikersonderzoek en best practices. Zo weet je zeker dat je tekst werkt voor een brede groep gebruikers.' }), '\n', (0, i.jsx)(t.p, { children: 'De richtlijnen hieronder zijn ingedeeld per onderwerp, zodat je snel vindt wat je nodig hebt.' }), '\n', (0, i.jsx)(o.l, { excludeDocIDs: ['richtlijnen/content/tekstopmaak/README'] }), '\n', (0, i.jsx)(r.ZP, {})] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, s.a)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
+    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
    }
   },
   21004: (e, t, n) => {
@@ -79,14 +79,14 @@
       throw new Error(`unknown item type ${JSON.stringify(t)}`);
     }
    }
-   function u(e) {
+   function k(e) {
     let { className: t } = e;
     const n = (0, i.jA)();
     return (0, a.jsx)(p, { items: n.items, className: t });
    }
    function p(e) {
     const { items: t, className: n } = e;
-    if (!t) return (0, a.jsx)(u, { ...e });
+    if (!t) return (0, a.jsx)(k, { ...e });
     const s = (0, i.MN)(t);
     return (0, a.jsx)('section', { className: (0, o.Z)('row', n), children: s.map((e, t) => (0, a.jsx)('article', { className: 'col col--12 margin-bottom--lg doc-card-list', children: (0, a.jsx)(m, { item: e }) }, t)) });
    }
