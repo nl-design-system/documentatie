@@ -28,9 +28,13 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Gebarentaal
 
-Een gebarentaal is een visueel-manuele taal. Dat betekent dat mensen met elkaar communiceren door gebaren te maken met hun handen. Daarbij maken ze ook gebruik van hun lichaamshouding- en beweging en gezichtsuitdrukking (mimiek).
+Een gebarentaal is een visueel-manuele taal. Dat betekent dat mensen met elkaar communiceren door gebaren te maken met hun handen. Daarnaast maken ze ook gebruik van hun lichaamshouding en gezichtsuitdrukking (mimiek).
 
 Net zoals ieder land één of meerdere gesproken talen heeft, geldt dat ook voor gebarentalen. Zelfs binnen de landen zijn er weer regionale verschillen, net zoals gesproken talen regionale verschillen kennen.
+
+De officiële gebarentaal in Nederland is Nederlandse Gebarentaal. Daarnaast is er ook een vorm van gebarentaal waarbij een sprekend persoon gebaren toevoegt, zodat diegene makkelijker te begrijpen is voor mensen die gebarentaal gebruiken. Deze vorm van gebarentaal noemen we in Nederland "Nederlands ondersteund met gebaren (NmG)".
+
+In deze richtlijnen hebben we het alleen over gebarentaal als officieel erkende taal.
 
 ## Voordelen
 
@@ -41,7 +45,7 @@ Gebarentaal wordt voornamelijk gebruikt door dove en slechthorende mensen. Voor 
 Het toevoegen van gebarentaal aan web-video's is in Nederland in de meeste gevallen (op dit moment) niet verplicht. Toch is het belangrijk om na te gaan of gebarentaal een essentiële toevoeging is aan de video die je aanbiedt. Bijvoorbeeld wanneer je video's maakt over onderwerpen waarbij het heel belangrijk is dat iedereen de informatie kan begrijpen, zoals:
 
 - Informatie over het voldoen aan wettelijke verplichtingen, zoals het op tijd doorgeven van een verhuizing of het doorgeven van een geboorte of overlijden.
-- Informatie over steun aanvragen, zoals subsidies en toeslagen en hulp bij huiselijk geweld, verslaving of schulden.
+- Informatie over steun aanvragen, zoals subsidies, toeslagen en hulp bij huiselijk geweld, verslaving of schulden.
 - Informatie over persoonlijke belangrijke onderwerpen, zoals opvoeding, onderwijs en mentale gezondheid.
 
 ### Wet erkenning Nederlandse Gebarentaal
@@ -58,17 +62,34 @@ In de wet is ook opgenomen dat de overheid het gebruik van NGT in de samenleving
 
 Je kunt een gekwalificeerde gebarentolk vinden via een register, zoals het [Register beëdigde tolken en vertalers](https://zoekeentolkvertaler.bureauwbtv.nl/) en het [Openbaar register van gekwalificeerde tolken gebarentaal en schrijftolken](https://www.stichtingrtgs.nl/Tolken?page2746=1&size2746=50).
 
-## Gebarentaal toevoegen aan je video
+## Gebarentaal opnemen voor je video
 
-Je maakt vervolgens een opname van de tolk die je in of bij de video plaatst. Let daarbij op:
+Je maakt vervolgens een video-opname van de tolk, die je in of bij de video plaatst. Let daarbij op:
 
-- Dat het beeld met de gebarentolk niet overlapt met belangrijke informatie in beeld, als je de opname in de video plaatst.
-- Dat het beeld met de gebarentolk groot genoeg is, als je de opname in de video plaatst.
 - Dat de gebarentolk constant volledig in beeld is.
-- Dat de gebarentolk goed zichtbaar is, bijvoorbeeld door te zorgen voor een rustige achtergrond met voldoende contrast.
-- Dat de gebaren relatief synchroon lopen met de gesproken audio in de video.
+- Dat de gebaren, mimiek en lichaamshouding goed zichtbaar zijn. Let daarbij op:
+  - Goede verlichting.
+  - Een rustige achtergrond in één kleur, met voldoende contrast tussen de achtergrond en de tolk.
+    Je kunt ook een green screen gebruiken. Let er in dat geval op dat de tolk altijd goed zichtbaar is op de achtergrond van de video.
+  - Kleding zonder patronen, die goed contrasteert met de huidskleur van de tolk.
+
+Laat de gebarentaal die je voor je video maakt of laat maken altijd controleren door één of meerdere mensen die gebarentaal gebruiken, zodat de gebarentaal-opname zo min mogelijk fouten bevat.
+
+### Gebarentaal met A.I.
+
+Artificiële intelligentie, oftewel A.I., biedt veel kansen op het gebied van digitale toegankelijkheid. Het is dan ook niet ondenkbaar dat A.I. in de nabije toekomst ook gebarentaal kan toevoegen aan video's. Het blijft daarbij altijd belangrijk om de gebarentaal die gegenereerd wordt altijd te blijven controleren met echte gebruikers van gebarentaal.
+
+Zoals je weet heeft ieder land één of meerdere gebarentalen en zijn er zelfs regionale verschillen. Let er dus altijd op dat de aanbieder ook echt thuis is in de gebarentaal van het land waar je de video voor maakt.
 
 ## Gebarentaal toevoegen in de videospeler
+
+De meeste videospelers bieden geen ruimte voor een apart video-bestand voor gebarentaal. In de meeste gevallen zul je de video-opname dan ook video-in-video moeten monteren. Let daarbij op:
+
+- Dat het beeld met de gebarentolk niet overlapt met belangrijke informatie in beeld.
+- Dat het beeld met de gebarentolk groot genoeg is om de gebaren, mimiek en lichaamshouding goed te kunnen interpreteren.
+- Dat de gebaren synchroon lopen met de gesproken audio in de video.
+
+Als de videospeler die je gebruikt wel de optie biedt voor een apart bestand kun je daar natuurlijk gebruik van maken. Lees de handleiding van de videospeler dan goed door voor de benodigde specificaties.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
