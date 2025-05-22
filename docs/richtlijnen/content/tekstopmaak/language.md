@@ -30,13 +30,15 @@ Mensen die een schermlezer gebruiken of een automatische vertaalfunctie inschake
 
 Elke webpagina heeft een hoofdtaal. Die moet overeenkomen met de taal waarin de tekst op die pagina is geschreven.
 
-In sommige systemen kun je dit als redacteur zelf instellen — bijvoorbeeld via de pagina-instellingen. In andere gevallen doet het CMS dat automatisch of is het al voor je ingesteld. Twijfel je? Vraag het aan een collega of beheerder.
+In sommige systemen kun je de paginataal zelf instellen — bijvoorbeeld via de pagina-instellingen of bij het aanmaken van een nieuwe pagina. In andere gevallen is dit vooraf ingesteld of wordt het automatisch geregeld.
 
-## Een stukje tekjst in een andere taal
+## Een stukje tekst in een andere taal
 
 Spreek je een stukje tekst anders uit dan de rest? Dan is het meestal goed om de taal ook apart aan te geven. Gebruik je bijvoorbeeld een Engelse term (call to action), een Frans citaat of een Duitstalige naam van een organisatie? Geef dan aan dat dit stukje in een andere taal is geschreven.
 
-In sommige CMS’en kan dat via een opmaakoptie of een taalinstelling bij een tekstblok. Soms moet dit in code worden aangepast en kun je dit niet zelf oplossen. Maar als je CMS deze mogelijkheid biedt, gebruik die dan.
+In sommige CMS’en kan dat via een opmaakoptie of een taalinstelling bij een tekstblok. Soms is deze functionaliteit niet beschikbaar of niet zichtbaar voor redacteuren.
+
+Kun je de taalinstelling voor een pagina of tekstblok niet vinden? Dan is het goed om na te gaan of dit in jullie CMS geregeld is. Is dat niet zo, dan kun je overwegen dit te laten aanpassen of bespreekbaar te maken bij de partij die het CMS beheert of levert.
 
 ## Hoe te testen
 
