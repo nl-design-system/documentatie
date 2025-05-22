@@ -119,7 +119,7 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
 
 ## Hoe te testen
 
-Lees de pagina door en bekijk alle teksten die visueel opvallen. Bepaal per geval of de nadruk functioneel is en correct is toegepast. Gebruik de onderstaande stappen als checklist:
+Lees de pagina goed door en kijk naar alle teksten die opvallen door hun uiterlijk. Bepaal of de nadruk daar écht nodig is en of de teksten met nadruk op de goede manier opgemaakt zijn. Gebruik de onderstaande stappen als checklist:
 
 - Controleer of vet of cursief is gebruikt via het CMS, en niet handmatig opgemaakt (bijvoorbeeld met spaties, hoofdletters of stijlen).
   Alleen dan wordt de nadruk correct doorgegeven aan hulptechnologie zoals screenreaders.
