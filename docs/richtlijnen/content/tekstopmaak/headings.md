@@ -131,14 +131,12 @@ Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagi
   Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend — gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
 - Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
   De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
-- Staat de inhoud van een kop logisch onder de kop?
-  Voor screenreadergebruikers moet alle inhoud die bij een kop hoort ook in de code (de DOM) onder die kop staan. Visueel kan dat afwijken, maar logisch moet het kloppen.
 - Is er één H1 die de inhoud van de pagina beschrijft?
   Deze H1 moet uniek zijn per pagina. Een H1 als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
 - Zijn er geen lege of nietszeggende koppen?
   Een kop als ‘Overzicht’ of ‘Klik hier’ zegt weinig over de inhoud. Zorg dat elke kop betekenisvol is.
-- Controleer ook ‘verborgen’ koppen
-  Sommige koppen of labels zijn niet zichtbaar, maar worden wel voorgelezen door screenreaders. Vraag je af: zou dit tekstje voldoende uitleg geven aan iemand die de visuele context niet ziet?
+- Controleer op lege koppen.
+  Let in de preview op opvallende witruimte of lege plekken: dat kan duiden op een kop zonder inhoud. Die wordt wel voorgelezen door screenreaders, maar zegt niets. Vul de kop aan of verwijder ‘m als hij overbodig is.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

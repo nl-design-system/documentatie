@@ -121,10 +121,10 @@ Onderstreep tekst niet. Bezoekers verwachten dat onderstreepte woorden in een zi
 
 Lees de pagina goed door en kijk naar alle teksten die opvallen door hun uiterlijk. Bepaal of de nadruk daar écht nodig is en of de teksten met nadruk op de goede manier opgemaakt zijn. Gebruik de onderstaande stappen als checklist:
 
-- Controleer of vet of cursief is gebruikt via het CMS, en niet handmatig opgemaakt (bijvoorbeeld met spaties, hoofdletters of stijlen).
+- Controleer of nadruk is aangebracht via de opmaakknoppen in het CMS (zoals “vet” of “cursief”), en niet door zelf iets op te maken met bijvoorbeeld hoofdletters of kleur.
   Alleen dan wordt de nadruk correct doorgegeven aan hulptechnologie zoals screenreaders.
 - Loop alle teksten in hoofdletters na. Vraag jezelf bij elk geval af: is dit echt nodig?
-  Gebruik hoofdletters alleen als ze functioneel zijn (bijvoorbeeld bij afkortingen). Controleer ook of screenreaders de tekst niet per letter voorlezen.
+  Gebruik hoofdletters alleen als ze functioneel zijn (bijvoorbeeld bij afkortingen).
 - Bekijk of er ergens onderstreepte tekst staat die geen link is.
   Onderstreping suggereert een hyperlink. Als de tekst geen link is, haal de onderstreping weg.
 

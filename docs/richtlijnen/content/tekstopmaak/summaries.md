@@ -92,8 +92,7 @@ Stel een lijst in als lijst-element via de contenteditor in je contentmanagement
 
 Lees de pagina door en controleer alle opsommingen. Gebruik de onderstaande stappen als checklist:
 
-- Controleer of de opsomming is opgemaakt met de lijstfunctie van het CMS.
-  Gebruik hiervoor de ingebouwde opsomknoppen in je CMS. Maak geen lijsten door zelf streepjes of andere tekens te typen, want die worden niet als lijst herkend door hulptechnologie.
+- Bekijk of de tekst is opgemaakt via de opsomknoppen in je CMS, en niet met zelfgetypte streepjes of andere tekens want die worden niet als lijst herkend door hulptechnologie.
 - Controleer of je een genummerde of ongenummerde lijst hebt gekozen die past bij de inhoud.
   Gebruik een genummerde lijst als de volgorde belangrijk is (zoals bij stappen). Gebruik een ongenummerde lijst als de volgorde geen rol speelt.
 
