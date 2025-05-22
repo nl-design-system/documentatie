@@ -22,28 +22,15 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Toegankelijke linkteksten
 
-Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.
+Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. Een link als ‘klik hier’ of ‘lees meer’ zegt dan niets. Zorg daarom dat de linktekst op zichzelf duidelijk is. Dat maakt je content toegankelijker én beter vindbaar in zoekmachines.
 
-## Voor wie is het nodig
+Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen — bijvoorbeeld omdat ze een schermlezer gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.
 
-Duidelijke linkteksten zijn prettig voor iedereen en belangrijk voor verschillende mensen met een functiebeperking. Zoals mensen met vergrotingssoftware, dyslexie of een kort werkgeheugen. Ook help je bezoekers die blind zijn en in een schermlezer een lijst met links opvragen. Zij zien de links buiten de context. Onduidelijke links en dezelfde linkteksten kunnen dan heel verwarrend zijn.
+Op deze pagina lees je hoe je goede linkteksten schrijft — en welke fouten je beter kunt vermijden.
 
-Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
+Hieronder zie je voorbeelden van wat wel werkt — en wat je beter kunt laten.
 
-## Voorbeelden
-
-<Guideline appearance="dont" title="Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.">
-  <Canvas language="html">
-    {() => (
-      <>
-          <ul>
-            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
-            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Lees meer</a> over  digitale toegankelijkheid</li>
-          </ul>
-      </>
-    )}
-  </Canvas>
-</Guideline>
+## Wat werkt wel (en wat niet)?
 
 <Guideline appearance="do" title="Schrijf goede toegankelijke linkteksten waaruit blijkt wat er gebeurt als je erop klikt.">
   <Canvas language="html">
@@ -58,6 +45,28 @@ Als je links beschrijvend zijn, dan worden je links ook zoekmachinevriendelijk.
     )}
   </Canvas>
 </Guideline>
+
+<Guideline appearance="dont" title="Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.">
+  <Canvas language="html">
+    {() => (
+      <>
+          <ul>
+            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
+            <li><a href="https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link">Lees meer</a> over  digitale toegankelijkheid</li>
+          </ul>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+## Hoe te testen
+
+Lees de pagina door en controleer alle linkteksten. Gebruik de onderstaande stappen als checklist:
+
+- Controleer of de linktekst duidelijk maakt waar de link naartoe leidt.
+  Vermijd vage teksten zoals ‘klik hier’ of ‘lees meer’. De linktekst moet zelfstandig begrijpelijk zijn, zodat gebruikers weten wat ze kunnen verwachten.
+- Controleer of links naar verschillende bestemmingen unieke en beschrijvende linkteksten hebben.
+  Dit voorkomt verwarring, vooral voor gebruikers van screenreaders die een lijst van links opvragen.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

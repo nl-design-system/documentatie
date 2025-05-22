@@ -121,6 +121,23 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   </Canvas>
 </Guideline>
 
+## Hoe te testen
+
+Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagina te lezen en logisch na te denken over structuur en betekenis. Gebruik onderstaande punten als leidraad:
+
+- Beschrijft elke kop de inhoud die eronder valt?
+  De tekst van een kop moet duidelijk maken waar het volgende stukje content over gaat.
+- Worden koppen alleen gebruikt om structuur aan te brengen?
+  Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend — gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
+- Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
+  De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
+- Is er één H1 die de inhoud van de pagina beschrijft?
+  Deze H1 moet uniek zijn per pagina. Een H1 als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
+- Zijn er geen lege of nietszeggende koppen?
+  Een kop als ‘Overzicht’ of ‘Klik hier’ zegt weinig over de inhoud. Zorg dat elke kop betekenisvol is.
+- Controleer op lege koppen.
+  Let in de preview op opvallende witruimte of lege plekken: dat kan duiden op een kop zonder inhoud. Die wordt wel voorgelezen door screenreaders, maar zegt niets. Vul de kop aan of verwijder ‘m als hij overbodig is.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
