@@ -141,6 +141,12 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@nl-design-system-candidate/data-badge-css':
+        specifier: 1.0.2
+        version: 1.0.2
+      '@nl-design-system-candidate/data-badge-react':
+        specifier: 1.1.2
+        version: 1.1.2(@babel/runtime@7.26.7)(react@18.3.1)
       '@nl-design-system-unstable/documentation':
         specifier: workspace:*
         version: link:docs
@@ -1863,8 +1869,17 @@ packages:
   '@nl-design-system-candidate/color-sample-docs@1.0.1':
     resolution: {integrity: sha512-LuskAUduBpXp9GSU6+rTS39poWHRaMcB8KXRvUBRHrsMHnp+5S2syq7Od5UaeiTWzv0K88BSTgWNVfp3ky1u5g==}
 
+  '@nl-design-system-candidate/data-badge-css@1.0.2':
+    resolution: {integrity: sha512-504WE8ZS/9fYpTa8b9KqMwO7Is1DfZVydZVnfQDBTji85TJ6jpVy9R+sXIJz+kAce6gcUACBRFjaFJusKd+Dvg==}
+
   '@nl-design-system-candidate/data-badge-docs@1.0.1':
     resolution: {integrity: sha512-7YcSK0wbeJ8C3DTcnlygGKsSNgKQR6U+DP5JFBq70W0HcKj9Tp+RkAWz0DGOrzUsA10t5V1PyxjE4NG9OKrCyQ==}
+
+  '@nl-design-system-candidate/data-badge-react@1.1.2':
+    resolution: {integrity: sha512-eu3D8sxmr2h+unxzT9eYvKlaXHMKsmQCClLIf53l0WzntMDkUJXHNvBOonJjLjxS2mHTj4zkbzA1ebb9bJFv1w==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2':
     resolution: {integrity: sha512-r6N8WYLey3REimgVtvTUxtjVC/nwsjc1Vh66qziuq5F6XQ3YqvptmogUaip4Kx59hE+n98IkI2DpEuCVQYoVhA==}
@@ -10624,7 +10639,15 @@ snapshots:
 
   '@nl-design-system-candidate/color-sample-docs@1.0.1': {}
 
+  '@nl-design-system-candidate/data-badge-css@1.0.2': {}
+
   '@nl-design-system-candidate/data-badge-docs@1.0.1': {}
+
+  '@nl-design-system-candidate/data-badge-react@1.1.2(@babel/runtime@7.26.7)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2': {}
 

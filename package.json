@@ -108,6 +108,8 @@
     "@fontsource/open-sans": "5.1.1",
     "@fontsource/source-sans-pro": "5.1.0",
     "@mdx-js/react": "3.1.0",
+    "@nl-design-system-candidate/data-badge-css": "1.0.2",
+    "@nl-design-system-candidate/data-badge-react": "1.1.2",
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "3.3.4",
