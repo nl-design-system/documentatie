@@ -4,13 +4,15 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.2 Labels of instructies
 pagination_label: WCAG-succescriterium 3.3.2 Labels of instructies
-description: Toon een label voor alle invoervelden, en geef aanvullende instructies wanneer het label niet voldoende helpt om een veld goed in te vullen.
+description: Geef een label of uitleg als er invoer nodig is.
 slug: 3.3.2
 keywords:
   - WCAG
   - A
   - begrijpelijk
   - assistentie bij invoer
+  - invoer
+  - uitleg
   - understandable
   - input assistance
   - labels or instructions
@@ -30,13 +32,57 @@ import Summary from "./summaries/_3.3.2-summary.md";
   {"WCAG-succescriterium 3.3.2 Labels of instructies"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Gebruikers weten wat ze in moeten voeren.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Geef een label of uitleg bij invoer.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Iedereen, vooral mensen met cognitieve beperkingen, weet waar men aan toe is.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Als er ergens invoer nodig is, is het voor iedereen prettig om te weten wat er verwacht wordt. Labels en uitleg kunnen hierbij helpen. Labels zijn vaak ook een manier om een naam te geven aan een invoerveld. Denk hierbij aan termen als:
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Voornaam
+- Plaatsnaam
+- Wachtwoord
+
+Instructies vertellen meer over wat er verwacht wordt van de invoer, zoals de manier van spellen of schrijven. Zo kunnen er voor de invoer van een nieuwe wachtwoord eisen zijn, of is er voor een datum een bepaalde manier van invoeren.
+
+## Gerelateerde NL Design System-richtlijnen
+
+Dit succescriterium past bij bijna alle richtlijnen rond formulieren.
+
+- [Formulieren](https://nldesignsystem.nl/richtlijnen/formulieren)
+- Formulieren - [Labels](https://nldesignsystem.nl/richtlijnen/formulieren/labels/)
+
+## Hoe te testen
+
+- Zoek de invoervelden en formulieren.
+- Controleer van elk veld of er labels of uitleg bij is.
+
+##Tips
+
+- Het behalen van dit criterium kan onder andere ook helpen bij [2.4.6 Koppen en labels](/wcag/2.4.6) en [4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+- Zorg voor zowel labels als uitleg om fouten te voorkomen.
+
+## Veelgemaakte fouten
+
+### Fout: Labels en/of uitleg zijn niet verbonden aan de invoer.
+
+Voor [1.3.1 Info en relaties](/wcag/1.3.1) is het belangrijk dat labels en uitleg niet alleen aanwezig zijn, maar ook in de code verbonden aan elkaar. De relatie die je ziet moet ook in de code aanwezig zijn. Dit kan met het `<label>`-element, maar ook met `aria-labelledby` en `aria-describedby`. Ook foutmelding moet je op deze manier verbinden!
 
 ## Gebruikersonderzoek
 
