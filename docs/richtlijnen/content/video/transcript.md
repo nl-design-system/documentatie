@@ -55,7 +55,7 @@ Een transcript moet dezelfde informatie bevatten als de video. Pas daarom de zin
 
 ### Ondertiteling en audiodescriptie combineren
 
-Als je al [ondertiteling](/richtlijnen/content/video/ondertiteling) en een script voor audiodescriptie hebt geschreven, kun je deze teksten combineren en gebruiken als basis van je transcript. Structureer de informatie per scène en controleer of je geen belangrijke informatie hebt gemist.
+Als je al [ondertiteling](/richtlijnen/content/video/ondertiteling) en een script voor [audiodescriptie](/richtlijnen/content/video/audiodescriptie) hebt geschreven, kun je deze teksten combineren en gebruiken als basis van je transcript. Structureer de informatie per scène en controleer of je geen belangrijke informatie hebt gemist.
 
 ## De opmaak van een transcript
 
