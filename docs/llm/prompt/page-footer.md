@@ -1,6 +1,6 @@
 # Page Footer component
 
-# Usage
+## Usage
 
 Use the Page Footer component once at the end of the page, for a content that is repeated on multiple web pages.
 

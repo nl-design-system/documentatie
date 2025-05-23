@@ -1,6 +1,6 @@
 # Page Header component
 
-# Usage
+## Usage
 
 Use the Page Header component once at the start of the page, for a content that is repeated on multiple web pages.
 
