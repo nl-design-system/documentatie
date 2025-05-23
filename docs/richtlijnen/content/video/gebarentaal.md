@@ -34,11 +34,11 @@ Net zoals ieder land één of meerdere gesproken talen heeft, geldt dat ook voor
 
 De officiële gebarentaal in Nederland is Nederlandse Gebarentaal. Daarnaast is er ook een vorm van gebarentaal waarbij een sprekend persoon gebaren toevoegt, zodat diegene makkelijker te begrijpen is voor mensen die gebarentaal gebruiken. Deze vorm van gebarentaal noemen we in Nederland "Nederlands ondersteund met gebaren (NmG)".
 
-In deze richtlijnen hebben we het alleen over gebarentaal als officieel erkende taal.
+In deze richtlijnen hebben we het alleen over gebarentaal als volledige visueel-manuele taal.
 
 ## Voordelen
 
-Gebarentaal wordt voornamelijk gebruikt door dove en slechthorende mensen. Voor veel van hen is gebarentaal hun moedertaal. Een geschreven taal, zoals [ondertiteling](/wcag/1.2.6) bij een video, is voor sommigen daarom moeilijker te volgen. Vanwege de snelheid, of vanwege het taalbegrip. Het toevoegen van gebarentaal aan je video helpt doven en slechthorenden de informatie in de video makkelijker te begrijpen.
+Gebarentaal wordt voornamelijk gebruikt door dove en slechthorende mensen. Voor veel van hen is gebarentaal hun moedertaal. Geschreven content, zoals [ondertiteling](/wcag/1.2.6) bij een video, is voor sommigen daarom moeilijker te volgen. Vanwege de snelheid, of vanwege het taalbegrip. Het toevoegen van gebarentaal aan je video helpt doven en slechthorenden de informatie in de video makkelijker te begrijpen.
 
 ## Wanneer voeg je gebarentaal toe aan een video?
 
@@ -77,9 +77,11 @@ Laat de gebarentaal die je voor je video maakt of laat maken altijd controleren 
 
 ### Gebarentaal met A.I.
 
-Artificiële intelligentie, oftewel A.I., biedt veel kansen op het gebied van digitale toegankelijkheid. Het is dan ook niet ondenkbaar dat A.I. in de nabije toekomst ook gebarentaal kan toevoegen aan video's. Het blijft daarbij altijd belangrijk om de gebarentaal die gegenereerd wordt altijd te blijven controleren met echte gebruikers van gebarentaal.
+Artificiële intelligentie, oftewel A.I., biedt veel kansen op het gebied van digitale toegankelijkheid. Het is dan ook niet ondenkbaar dat A.I. in de nabije toekomst ook gebarentaal kan toevoegen aan video's.
 
-Zoals je weet heeft ieder land één of meerdere gebarentalen en zijn er zelfs regionale verschillen. Let er dus altijd op dat de aanbieder ook echt thuis is in de gebarentaal van het land waar je de video voor maakt.
+Zoals je weet heeft ieder land één of meerdere gebarentalen en zijn er zelfs regionale verschillen. Let er dus altijd op dat de aanbieder ook echt thuis is in de gebarentaal van het land waar je de video voor maakt. Daarnaast moet ook de mimiek en de lichaamshouding kloppend zijn bij de gebaren die worden gemaakt.
+
+Het blijft daarom altijd belangrijk om de gebarentaal die gegenereerd wordt altijd te blijven controleren met echte gebruikers van gebarentaal.
 
 ## Gebarentaal toevoegen in de videospeler
 
