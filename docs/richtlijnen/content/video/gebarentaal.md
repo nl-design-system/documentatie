@@ -26,24 +26,25 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Gebarentaal
+# Video met gebarentaal
 
-Een gebarentaal is een visueel-manuele taal. Dat betekent dat mensen met elkaar communiceren door gebaren te maken met hun handen. Daarnaast maken ze ook gebruik van hun lichaamshouding en gezichtsuitdrukking (mimiek).
+Een gebarentaal is een taal waarbij mensen met elkaar communiceren door gebaren te maken met hun handen, lichaamshouding en gezichtsuitdrukking (mimiek).
 
-Net zoals ieder land één of meerdere gesproken talen heeft, geldt dat ook voor gebarentalen. Zelfs binnen de landen zijn er weer regionale verschillen, net zoals gesproken talen regionale verschillen kennen.
+Net zoals ieder land één of meerdere gesproken talen heeft, geldt dat ook voor gebarentalen. Zelfs binnen de landen zijn er weer regionale verschillen, net zoals gesproken talen regionale verschillen kennen. De officiële gebarentaal in Nederland is Nederlandse Gebarentaal.
 
-De officiële gebarentaal in Nederland is Nederlandse Gebarentaal. Daarnaast is er ook een vorm van gebarentaal waarbij een sprekend persoon tijdens het praten af en toe gebaren toevoegt om woorden te benadrukken. Zo is diegene iets makkelijker te begrijpen voor mensen die gebarentaal gebruiken. Deze vorm van gebarentaal noemen we in Nederland "Nederlands ondersteund met gebaren (NmG)".
+Daarnaast is er ook een vorm van gebarentaal waarbij een sprekend persoon tijdens het praten af en toe gebaren toevoegt om woorden te benadrukken. Zo is diegene iets makkelijker te begrijpen voor mensen die gebarentaal gebruiken. Deze vorm van gebarentaal noemen we in Nederland "Nederlands ondersteund met gebaren (NmG)".
 
-Omdat NmG geen volledige en officiële taal is, hebben we het in deze richtlijnen alleen over (Nederlandse) gebarentaal als volledige visueel-manuele taal.
+Omdat gesproken talen met ondersteuning van gebaren geen volledige en officiële talen zijn, hebben we het in deze richtlijnen alleen over (Nederlandse) gebarentaal.
 
 ## Voordelen
 
-Gebarentaal wordt voornamelijk gebruikt door dove en slechthorende mensen. Voor veel van hen is gebarentaal hun moedertaal. Geschreven content, zoals [ondertiteling](/wcag/1.2.6) bij een video, is voor sommigen daarom moeilijker te volgen. Vanwege de snelheid, of vanwege het taalbegrip. Het toevoegen van gebarentaal aan je video helpt doven en slechthorenden de informatie in de video makkelijker te begrijpen.
+Het toevoegen van gebarentaal aan je video helpt doven en slechthorenden de informatie in de video makkelijker te begrijpen. Voor veel dove en slechthorende mensen is gebarentaal hun moedertaal en het gesproken Nederlands (of een andere gesproken taal) een tweede taal. Gebarentaal heeft ook geen geschreven vorm. Geschreven content, zoals [ondertiteling](/wcag/1.2.6) bij een video, is daarom moeilijker te volgen.
 
 ## Wanneer voeg je gebarentaal toe aan een video?
 
-Het toevoegen van gebarentaal aan web-video's is in Nederland in de meeste gevallen (op dit moment) niet verplicht. Toch is het belangrijk om na te gaan of gebarentaal een essentiële toevoeging is aan de video die je aanbiedt. Bijvoorbeeld wanneer je video's maakt over onderwerpen waarbij het heel belangrijk is dat iedereen de informatie kan begrijpen, zoals:
+Het toevoegen van gebarentaal aan web-video's is in Nederland in de meeste gevallen niet verplicht. Toch is het belangrijk om na te gaan of gebarentaal een essentiële toevoeging is aan de video die je aanbiedt. Bijvoorbeeld wanneer je video's maakt over onderwerpen waarbij het heel belangrijk is dat iedereen de informatie kan begrijpen, zoals:
 
+- Informatie rondom crisis- en noodsituaties. De overheid is verplicht deze informatie ook (zoveel mogelijk) aan te bieden in NGT. Dit staat in de [Wet Erkenning Nederlandse Gebarentaal](https://www.rijksoverheid.nl/onderwerpen/erkende-talen/de-nederlandse-gebarentaal-ngt). Heeft jouw organisatie deze verantwoordelijkheid? Zorg er dan voor dat jullie hier een plan voor hebben klaarliggen.
 - Informatie over het voldoen aan wettelijke verplichtingen, zoals het op tijd doorgeven van een verhuizing of het doorgeven van een geboorte of overlijden.
 - Informatie over steun aanvragen, zoals subsidies, toeslagen en hulp bij huiselijk geweld, verslaving of schulden.
 - Informatie over persoonlijke belangrijke onderwerpen, zoals opvoeding, onderwijs en mentale gezondheid.
@@ -75,23 +76,13 @@ De meeste videospelers bieden geen ruimte voor een apart video-bestand voor geba
 
 Als de videospeler die je gebruikt wel de optie biedt voor een apart bestand kun je daar natuurlijk gebruik van maken. Lees de handleiding van de videospeler dan goed door voor de benodigde specificaties.
 
-## Gebarentaal met A.I.
+## Automatisch gegenereerde gebarentaal
 
-Artificiële intelligentie, oftewel A.I., biedt veel kansen op het gebied van digitale toegankelijkheid. Het is dan ook niet ondenkbaar dat A.I. in de nabije toekomst ook gebarentaal kan toevoegen aan video's.
+Net zoals je ondertiteling voor een video automatisch kunt laten genereren, wordt ook automatisch gegenereerde gebarentaal steeds realistischer.
 
-Zoals je weet heeft ieder land één of meerdere gebarentalen en zijn er zelfs regionale verschillen. Let er dus altijd op dat de aanbieder ook echt thuis is in de gebarentaal van het land waar je de video voor maakt. Daarnaast moet ook de mimiek en de lichaamshouding kloppend zijn bij de gebaren die worden gemaakt.
+Gebarentaal verschilt per land — en soms zelfs per regio. Zorg dus dat de aanbieder expert is in de specifieke gebarentaal van jouw doelgroep. Waar je bij ondertiteling vooral moet controleren of de tekst juist is en interpunctie bevat, is het bij gebarentaal belangrijk dat zowel de handen, de mimiek en de lichaamshouding kloppen. Anders kan je boodschap totaal verkeerd overkomen.
 
-Het blijft daarom altijd belangrijk om de gebarentaal die gegenereerd wordt altijd te blijven controleren met echte gebruikers van gebarentaal.
-
-## Wet erkenning Nederlandse Gebarentaal
-
-In Nederland is de Nederlandse Gebarentaal (NGT) sinds 1 juli 2021 een officiële taal. Dit is opgenomen in Wet erkenning Nederlandse Gebarentaal. Daarnaast legt de wet de overheid een aantal verplichtingen op:
-
-- De overheid moet zoveel mogelijk informatie rondom crisis- en noodsituaties aanbieden in NGT.
-- NGT mag gebruikt worden in rechtszaken.
-- NGT mag gebruikt worden om een eed, belofte of bevestiging af te leggen.
-
-In de wet is ook opgenomen dat de overheid het gebruik van NGT in de samenleving moet bevorderen, maar dat specifieke onderdeel is momenteel nog niet van kracht. De overheid krijgt hiervoor advies van het Adviescollege Nederlandse Gebarentaal. Het is nog niet bekend welk beleid hieruit volgt en vanaf wanneer dat beleid geldig is.
+Gebruik automatisch gegenereerde gebarentaal pas als uit gebruikersonderzoek blijkt dat het ook daadwerkelijk werkt voor dove en slechthorende mensen. Laat de kwaliteit altijd toetsen door mensen die de taal dagelijks gebruiken. Want alleen dan weet je zeker dat je iedereen echt bereikt.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
