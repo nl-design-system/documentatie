@@ -42,7 +42,7 @@ export interface NewChecklistProps {
 export const NewChecklistItem = ({ title, sc, component, tags }: NewChecklistItemProps) => {
   const labelId = useId();
 
-  const badgeTags = [tags];
+  const badgeTags = [...tags];
 
   if (sc) {
     badgeTags.push(sc);
