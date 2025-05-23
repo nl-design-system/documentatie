@@ -30,7 +30,7 @@ Mensen die een schermlezer gebruiken of een automatische vertaalfunctie inschake
 
 Elke webpagina heeft een hoofdtaal. Die moet overeenkomen met de taal waarin de tekst op die pagina is geschreven.
 
-In sommige systemen kun je de paginataal zelf instellen — bijvoorbeeld via de pagina-instellingen of bij het aanmaken van een nieuwe pagina. In andere gevallen is dit vooraf ingesteld of wordt het automatisch geregeld.
+In sommige systemen kun je de paginataal zelf instellen, bijvoorbeeld via de pagina-instellingen of bij het aanmaken van een nieuwe pagina. In andere gevallen is dit vooraf ingesteld of wordt het automatisch geregeld.
 
 ## Een stukje tekst in een andere taal
 
