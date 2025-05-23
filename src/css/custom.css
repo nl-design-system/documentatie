@@ -57,6 +57,59 @@
   --navbar-inner-min-height: 64px;
   --utrecht-button-group-inline-gap: 1ch;
   --utrecht-button-icon-gap: 1ch;
+  --basis-space-row-6xl: 160px;
+  --basis-space-row-5xl: 64px;
+  --basis-space-row-4xl: 32px;
+  --basis-space-row-3xl: 24px;
+  --basis-space-row-2xl: 20px;
+  --basis-space-row-xl: 16px;
+  --basis-space-row-lg: 12px;
+  --basis-space-row-md: 8px;
+  --basis-space-row-sm: 4px;
+  --basis-space-row-xs: 2px;
+  --basis-space-row-2xs: 1px;
+  --basis-space-column-6xl: 160px;
+  --basis-space-column-5xl: 64px;
+  --basis-space-column-4xl: 32px;
+  --basis-space-column-3xl: 24px;
+  --basis-space-column-2xl: 20px;
+  --basis-space-column-xl: 16px;
+  --basis-space-column-lg: 12px;
+  --basis-space-column-md: 8px;
+  --basis-space-column-sm: 4px;
+  --basis-space-column-xs: 2px;
+  --basis-space-column-2xs: 1px;
+  --basis-space-text-3xl: 24px; /* 3ch */
+  --basis-space-text-2xl: 16px; /* 2ch */
+  --basis-space-text-xl: 14px; /* 1.75ch */
+  --basis-space-text-lg: 12px; /* 1.5ch */
+  --basis-space-text-md: 8px; /* 1ch */
+  --basis-space-text-sm: 6px; /* 0.75ch */
+  --basis-space-text-xs: 4px; /* 0.5ch */
+  --basis-space-text-2xs: 2px; /* 0.25ch */
+  --basis-space-text-3xs: 1px; /* 0.125ch */
+  --basis-space-block-6xl: 64px;
+  --basis-space-block-5xl: 48px;
+  --basis-space-block-4xl: 32px;
+  --basis-space-block-3xl: 24px;
+  --basis-space-block-2xl: 20px;
+  --basis-space-block-xl: 16px;
+  --basis-space-block-lg: 12px;
+  --basis-space-block-md: 8px;
+  --basis-space-block-sm: 4px;
+  --basis-space-block-xs: 2px;
+  --basis-space-block-2xs: 1px;
+  --basis-space-inline-6xl: 64px;
+  --basis-space-inline-5xl: 48px;
+  --basis-space-inline-4xl: 32px;
+  --basis-space-inline-3xl: 24px;
+  --basis-space-inline-2xl: 20px;
+  --basis-space-inline-xl: 16px;
+  --basis-space-inline-lg: 12px;
+  --basis-space-inline-md: 8px;
+  --basis-space-inline-sm: 4px;
+  --basis-space-inline-xs: 2px;
+  --basis-space-inline-2xs: 1px;
 }
 
 .utrecht-form-field--checkbox {
