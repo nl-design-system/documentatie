@@ -307,6 +307,24 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
+              label: 'Rijkshuisstijl Community Open Hour',
+              description:
+                'Tijdens de (online) Rijkshuisstijl Community Open Hour delen designers en developers van verschillende organisaties kennis.',
+              link: {
+                type: 'generated-index',
+                title: 'Rijkshuisstijl Community Open Hour',
+                slug: '/events/rijkshuisstijl-community-open-hour/overzicht',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'community/events/rijkshuisstijl-community-open-hour/rijkshuisstijl-community-open-hour',
+                },
+                // { type: 'doc', id: 'community/events/rijkshuisstijl-community-open-hour/aanmelden' }, // TODO: Binnenkort maken we een aanmeldpagina
+              ],
+            },
+            {
+              type: 'category',
               label: 'Developer Open Hour',
               description:
                 'Tijdens de (online) Developer Open Hour delen developers van verschillende organisaties kennis.',
