@@ -250,7 +250,7 @@ export default function Home() {
                   </Paragraph>
                 </div>
                 <Paragraph>
-                  <Link href="/events/design-open-hour/aanmelden">Meld je aan voor het Design Open Hour</Link>
+                  <Link href="/events/design-open-hour/aanmelden">Meld je aan voor de Design Open Hour</Link>
                 </Paragraph>
               </CardContent>
             </Card>

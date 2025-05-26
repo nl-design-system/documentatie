@@ -294,7 +294,7 @@ const sidebars: SidebarsConfig = {
               type: 'category',
               label: 'Design Open Hour',
               description:
-                'Tijdens het (online) Design Open Hour delen designers van verschillende organisaties kennis.',
+                'Tijdens de (online) Design Open Hour delen designers van verschillende organisaties kennis.',
               link: {
                 type: 'generated-index',
                 title: 'Design Open Hour',
@@ -309,7 +309,7 @@ const sidebars: SidebarsConfig = {
               type: 'category',
               label: 'Developer Open Hour',
               description:
-                'Tijdens het (online) Developer Open Hour delen developers van verschillende organisaties kennis.',
+                'Tijdens de (online) Developer Open Hour delen developers van verschillende organisaties kennis.',
               link: {
                 type: 'generated-index',
                 title: 'Developer Open Hour',
