@@ -16,29 +16,45 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
-import { Canvas } from "@site/src/components/Canvas/Canvas";
-import { Guideline } from "@site/src/components/Guideline";
+import { VideoPlayer } from "@site/src/components/VideoPlayer";
+
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
 # De juiste taal instellen
 
 Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én voor losse woorden of zinnen in een andere taal.
 
-Mensen die een schermlezer gebruiken of een automatische vertaalfunctie inschakelen, zijn afhankelijk van deze instellingen. Als de taal niet goed is opgegeven, worden woorden verkeerd uitgesproken of fout vertaald.
+Het instellen van de juiste taal is belangrijk omdat hulptechnologieën, zoals schermlezers of vertaalhulpmiddelen, afhankelijk zijn van die informatie.
+
+Als de taal niet goed is ingesteld:
+
+- spreekt een schermlezer woorden verkeerd uit;
+- worden automatische vertalingen onduidelijk of fout;
+- is de inhoud minder toegankelijk voor mensen die de taal niet vloeiend beheersen.
+
+Door de taal goed aan te geven, help je dus mensen die je content anders niet goed kunnen gebruiken of begrijpen.
+
+### Voorbeeld van taalwisseling met een schermlezer
+
+In deze video hoor je hoe de schermlezer VoiceOver wisselt van stem en taal voor teksten waarvan de taal is ingesteld.
+
+<VideoPlayer videoId="2UAjJ_5nxqw" />
 
 ## Taal van de pagina
 
 Elke webpagina heeft een hoofdtaal. Die moet overeenkomen met de taal waarin de tekst op die pagina is geschreven.
 
-In sommige systemen kun je de paginataal zelf instellen, bijvoorbeeld via de pagina-instellingen of bij het aanmaken van een nieuwe pagina. In andere gevallen is dit vooraf ingesteld of wordt het automatisch geregeld.
+In sommige CMS’en kun je de paginataal zelf instellen — bijvoorbeeld via de pagina-instellingen of bij het aanmaken van een nieuwe pagina. In andere gevallen is die vooraf ingesteld of wordt automatisch bepaald.
 
 ## Een stukje tekst in een andere taal
 
-Spreek je een stukje tekst anders uit dan de rest? Dan is het meestal goed om de taal ook apart aan te geven. Gebruik je bijvoorbeeld een Engelse term (call to action), een Frans citaat of een Duitstalige naam van een organisatie? Geef dan aan dat dit stukje in een andere taal is geschreven.
+Gebruik je in je tekst een woord of zin in een andere taal dan de rest van de pagina? Geef dan aan dat dat stukje tekst een andere taal heeft. Denk aan een Engelse term (call to action), een Frans citaat of een Duitstalige naam.
 
-In sommige CMS’en kan dat via een opmaakoptie of een taalinstelling bij een tekstblok. Soms is deze functionaliteit niet beschikbaar of niet zichtbaar voor redacteuren.
+Soms kun je dit in het CMS instellen via een opmaakoptie of tekstblokinstelling.
 
-Kun je de taalinstelling voor een pagina of tekstblok niet vinden? Dan is het goed om na te gaan of dit in jullie CMS geregeld is. Is dat niet zo, dan kun je overwegen dit te laten aanpassen of bespreekbaar te maken bij de partij die het CMS beheert of levert.
+## Als je het niet kunt instellen
+
+Kun je de paginataal of de taal van een tekstblok niet vinden in je CMS? Ga dan na of je CMS deze mogelijkheid biedt. Is dat niet zo, of kun je het niet zelf aanpassen? Dan kun je uitzoeken wie dat wél kan of dit aankaarten bij de partij die het CMS beheert of levert.
 
 ## Hoe te testen
 
