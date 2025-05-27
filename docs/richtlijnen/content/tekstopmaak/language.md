@@ -22,7 +22,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # De juiste taal instellen
 
-Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én stukken tekst in een andere taal. Stel ook een taalwissel in voor anderstalige woorden die niet ingeburgerd zijn in de hoofdtaal van de pagina. Voor woorden die wel onderdeel zijn geworden van de hoofdtaal (denk bijvoorbeeld aan überhaupt, Facebook en management) hoef je geen taalwissel in te stellen.
+Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én stukken tekst in een andere taal.
 
 Het instellen van de juiste taal is belangrijk omdat hulptechnologieën, zoals schermlezers of vertaalhulpmiddelen, afhankelijk zijn van die informatie.
 
@@ -48,9 +48,11 @@ In sommige CMS’en kun je de paginataal zelf instellen — bijvoorbeeld via de 
 
 ## Een stukje tekst in een andere taal
 
-Gebruik je in je tekst een woord of zin in een andere taal dan de rest van de pagina? Geef dan aan dat dat stukje tekst een andere taal heeft. Denk aan een Engelse term (call to action), een Frans citaat of een Duitstalige naam.
+Gebruik je in je tekst een woord of zin in een andere taal dan de rest van de pagina? Geef dan aan dat dit stukje tekst in een andere taal is geschreven. Bijvoorbeeld bij Engelse termen (call to action), Franse citaten of Duitstalige namen.
 
-Soms kun je dit in het CMS instellen via een opmaakoptie of tekstblokinstelling.
+Stel alleen een taalwissel in als het woord nog niet is ingeburgerd in de hoofdtaal. Voor woorden die wel onderdeel zijn geworden van de hoofdtaal (denk bijvoorbeeld aan überhaupt, Facebook en management) hoef je geen taalwissel in te stellen.
+
+In sommige CMS’en kun je dit instellen via een opmaakoptie of een taalkeuze bij een tekstblok.
 
 ## Als je het niet kunt instellen
 
