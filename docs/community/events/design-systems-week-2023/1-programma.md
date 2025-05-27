@@ -39,7 +39,7 @@ Tijd om nu ook de meerwaarde ervan te laten zien aan managers, beslissers en adv
 
 Heeft het NL Design System toegevoegde waarde voor leveranciers van overheden? En zijn er al leerzame voorbeelden van bijdragen van leveranciers die gebruikmaken van het NL Design System? Het antwoord op beide vragen: jazeker!
 
-Martijn Rietveld van OpenGemeenten laat je zien wat de samenwerking met NL Design System voor hem als designer en voor OpenGemeenten als leverancier betekent. Zodat jij als designer, developer, product owner, leverancier of andere geïnteresseerde voortaan óók aanhaakt bij NL Design System-meetings, zoals het Design Open Hour en de heartbeats.
+Martijn Rietveld van OpenGemeenten laat je zien wat de samenwerking met NL Design System voor hem als designer en voor OpenGemeenten als leverancier betekent. Zodat jij als designer, developer, product owner, leverancier of andere geïnteresseerde voortaan óók aanhaakt bij NL Design System-meetings, zoals de Design Open Hour en de heartbeats.
 
 </DSWSession>
 
