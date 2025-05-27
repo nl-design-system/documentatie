@@ -24,7 +24,7 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-## Audiodescriptie bij video
+# Audiodescriptie bij video
 
 Audiodescriptie bij een video is een hoorbare, gesproken beschrijving van belangrijke informatie die je ziet in een video, maar niet hoort. Voorbeelden hiervan zijn:
 
