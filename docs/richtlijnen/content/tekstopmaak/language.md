@@ -22,7 +22,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # De juiste taal instellen
 
-Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én voor losse woorden of zinnen in een andere taal.
+Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én stukken tekst in een andere taal. Stel ook een taalwissel in voor anderstalige woorden die niet ingeburgerd zijn in de hoofdtaal van de pagina. Voor woorden die wel onderdeel zijn geworden van de hoofdtaal (denk bijvoorbeeld aan überhaupt, Facebook en management) hoef je geen taalwissel in te stellen.
 
 Het instellen van de juiste taal is belangrijk omdat hulptechnologieën, zoals schermlezers of vertaalhulpmiddelen, afhankelijk zijn van die informatie.
 
