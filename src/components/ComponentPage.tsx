@@ -191,7 +191,7 @@ export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) =
             </UnorderedListItem>
           )}
           <UnorderedListItem>
-            Draag bij aan de voortang van {component.title} door te zorgen dat deze aan meer checkpoints van de{' '}
+            Draag bij aan de voortgang van {component.title} door te zorgen dat deze aan meer checkpoints van de{' '}
             <Link href="#definition-of-done">Definition of Done</Link> voldoet. Deze houden we bij in de projectborden
             bij de <Link href={component.backlog}>publieke GitHub Backlog</Link>.{' '}
           </UnorderedListItem>
