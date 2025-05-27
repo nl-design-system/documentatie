@@ -23,10 +23,53 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Flitsen in video
 
+Een flits is een kort moment van licht dat plotseling verschijnt en weer verdwijnt. Flitsen kunnen fysieke klachten veroorzaken bij mensen die daar gevoelig voor zijn. Voorkom daarom zo veel mogelijk dat er flitsen voorkomen in je video.
+
+## Wie heeft last van flitsen?
+
+Wanneer er in een hele korte tijd meerdere flitsen voorkomen in een video, kan dit een epileptische aanval uitlokken bij mensen die daar gevoelig voor zijn. Daarnaast kunnen mensen door flitsen hoofdpijn of migraine krijgen en er misselijk van worden.
+
+## Voorbeelden
+
+Een flits ontstaat doordat er een plotselinge overgang is van donker (lage helderheid) naar licht (hoge helderheid) en weer terug naar donker. Voorbeelden hiervan die in een video kunnen voorkomen zijn onder andere:
+
+- Stroboscopisch licht, bijvoorbeeld tijdens concerten of voor dramatisch effect in een film.
+- Camera-flitsen.
+- Explosies.
+- Vuurwerk.
+- Knipperende teksten.
+- Reflecties en schitteringen, bijvoorbeeld in een spiegel of door de zon op stilstaand water.
+- Snel wisselende overgangen van scenes met een groot kleurcontrast.
+
+## Flitsen voorkomen
+
+De makkelijkste manier om flitsen in een video te voorkomen is natuurlijk door geen opnames te maken waar flitsen in voorkomen. Maar het is niet altijd te voorspellen of iets op beeld een flits veroorzaakt.
+
+Er zijn wel een aantal dingen die je zelf kunt doen om er voor te zorgen dat je video geen overgangen van donker naar licht (of andersom) bevat die schadelijk kunnen zijn voor mensen die daar gevoelig voor zijn.
+
+### Voor en tijdens het opnemen van de video
+
+Let voorafgaand en tijdens het opnemen van je video op:
+
+- Knipperende en flitsende lichtbronnen, zoals de eerder genoemde voorbeelden.
+- Led-, neon- en TL-verlichting. Afhankelijk van je camera kan deze verlichting knippereffecten in de opname veroorzaken.
+- Kleur en licht. Gebruik waar mogelijk rustige achtergronden en vermijd fel licht.
+
+### Bij en na het monteren van de video
+
+Ook tijdens en na het monteren kun je een aantal stappen nemen om flitsende content te voorkomen:
+
+- Maak gebruik van rustige overgangen tussen scènes die sterk van kleur verschillen, bijvoorbeeld wanneer je van een zwart scherm naar een beeld met veel licht schakelt.
+- Laat beeld met mogelijke flitsen niet het hele beeld in beslag nemen. Hoe minder ruimte de flits in beslag neemt, hoe kleiner de kans dat de flits fysieke problemen veroorzaakt.
+- Controleer je video met de [PEAT analyse-tool](https://trace.umd.edu/peat/). Dit is gratis software die flitsen boven een bepaalde schadelijke grenswaarde detecteert.
+- Controleer je video in de grootst mogelijke aangeboden weergave. Kan de bezoeker je video in fullscreen modus bekijken? Dan controleer je de video ook in die modus
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG-succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde](/wcag/2.3.1)
+- [Succescriterium 2.3.2 Drie flitsen](/wcag/2.3.2)
+- [Succescriterium 2.3.3 Animatie uit interacties](/wcag/2.3.3)
 
 <FooterInfo />
