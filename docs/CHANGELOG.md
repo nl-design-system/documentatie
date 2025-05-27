@@ -1,5 +1,26 @@
 # @nl-design-system-unstable/documentation
 
+## 1.6.0
+
+### Minor Changes
+
+- be94459: De Rijkshuisstijl Community Open Hour pagina toegevoegd.
+- fe712bc: Toevoegingen aan richtlijnenpagina's over tekstopmaak:
+
+  - Oplossingen en voorbeelden veel gemaakte toegankelijkheidsfouten.
+  - Introductiepagina gewijzigd, checklist voor contentmakers.
+  - Secties ‘hoe te testen’.
+  - Pagina 'De juiste taal instellen'.
+
+- d5f4971: De Community Sprints overzicht pagina aangevuld.
+  Losse Community Sprint pagina's aangemaakt per Community Sprint, met informatie vanuit de community.
+- 7893547: Pagina audiodescriptie bij video toegevoegd.
+- 5653d20: Stappenplan voor het prioriteren van de toegankelijk te maken video's.
+
+### Patch Changes
+
+- 3b1ca6b: Kop Audiodescriptie aangepast van h2 naar h1.
+
 ## 1.5.0
 
 ### Minor Changes
