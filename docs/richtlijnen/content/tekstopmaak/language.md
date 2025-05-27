@@ -50,7 +50,7 @@ In sommige CMS’en kun je de paginataal zelf instellen — bijvoorbeeld via de 
 
 Gebruik je in je tekst een woord of zin in een andere taal dan de rest van de pagina? Geef dan aan dat dit stukje tekst in een andere taal is geschreven. Bijvoorbeeld bij Engelse termen (call to action), Franse citaten of Duitstalige namen.
 
-Stel alleen een taalwissel in als het woord nog niet is ingeburgerd in de hoofdtaal. Voor woorden die wel onderdeel zijn geworden van de hoofdtaal (denk bijvoorbeeld aan überhaupt, Facebook en management) hoef je geen taalwissel in te stellen.
+Stel alleen een taalwissel in als het woord nog niet is ingeburgerd in de hoofdtaal. Voor woorden die wel onderdeel zijn geworden van de hoofdtaal (denk bijvoorbeeld aan überhaupt, enfin en management) hoef je geen taalwissel in te stellen.
 
 In sommige CMS’en kun je dit instellen via een opmaakoptie of een taalkeuze bij een tekstblok.
 
