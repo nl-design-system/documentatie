@@ -58,30 +58,6 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   </Canvas>
 </Guideline>
 
-<!--Guideline appearance="do" title="Voor korte quotes in een zin of alinea het HTML-element <q> gebruiken">
-  <Canvas language="html">
-    {() => (
-      <>
-          <p>
-          Op de voorpagina van de website staat: <q>NL Design System helpt om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk te maken.</q> Het kernteam maakt dit mogelijk.
-          </p>
-      </>
-    )}
-  </Canvas>
-</Guideline>
-
-<Guideline appearance="do" title="Voor langere quotes die los staan buiten een zin of alinea het HTML-element <blockquote> gebruiken">
-  <Canvas language="html">
-    {() => (
-      <>
-          <blockquote>
-          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
-          </blockquote>
-      </>
-    )}
-  </Canvas>
-</Guideline-->
-
 ## Hoe te testen
 
 Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:

@@ -128,7 +128,7 @@ Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagi
 - Beschrijft elke kop de inhoud die eronder valt?
   De tekst van een kop moet duidelijk maken waar het volgende stukje content over gaat.
 - Worden koppen alleen gebruikt om structuur aan te brengen?
-  Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend — gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
+  Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend. Gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
 - Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
   De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
 - Is er één H1 die de inhoud van de pagina beschrijft?

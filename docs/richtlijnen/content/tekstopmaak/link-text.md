@@ -26,9 +26,9 @@ Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. 
 
 Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen — bijvoorbeeld omdat ze een schermlezer gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.
 
-Op deze pagina lees je hoe je goede linkteksten schrijft — en welke fouten je beter kunt vermijden.
+Op deze pagina lees je hoe je goede linkteksten schrijft en welke fouten je beter kunt vermijden.
 
-Hieronder zie je voorbeelden van wat wel werkt — en wat je beter kunt laten.
+Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.
 
 ## Wat werkt wel (en wat niet)?
 
