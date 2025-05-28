@@ -1,13 +1,14 @@
 ---
-title: Kleurcontrast · Content · Richtlijnen
+title: Kleurgebruik · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Kleurcontrast
-pagination_label: Kleurcontrast
+sidebar_label: Kleurgebruik
+pagination_label: Kleurgebruik
 description: Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.
-slug: /richtlijnen/content/tekstopmaak/kleurcontrast
+slug: /richtlijnen/content/tekstopmaak/kleurgebruik
 keywords:
   - tekstopmaak
+  - kleurgebruik
   - kleurcontrast
 ---
 
@@ -17,7 +18,7 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Kleur, contrast en toegankelijkheid
+# Kleurgebruik
 
 Kleurgebruik speelt een grote rol in hoe mensen content waarnemen. Niet iedereen ziet kleuren op dezelfde manier. Daarom is het belangrijk dat je informatie nooit alleen met kleur overbrengt, en dat tekst altijd goed leesbaar blijft tegen de achtergrond.
 
@@ -42,7 +43,7 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
 
 <!-- Dit omzetten naar Do's en Dont's -->
 
-<Guideline appearance="do" title="vette tekst gebruiken om tekst nadruk te geven">
+<Guideline appearance="do" title="Vette tekst gebruiken om tekst nadruk te geven">
   <Canvas language="html">
     {() => (
       <>
@@ -52,7 +53,7 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="kleur gebruiken om tekst nadruk te geven">
+<Guideline appearance="dont" title="Kleur gebruiken om tekst nadruk te geven">
   <Canvas language="html">
     {() => (
       <>
@@ -62,7 +63,35 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
   </Canvas>
 </Guideline>
 
-## Grafieken en afbeeldingen
+## Tekst op afbeeldingen
+
+Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is dat toch nodig? Controleer dan extra goed of de tekst nog leesbaar is.
+
+<Guideline appearance="dont" title="Tekst over een complexe afbeelding of achtergrond plaatsen">
+  <Canvas language="html">
+    {() => (
+      <>
+        <div style={{ background:'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")' }}>
+          <h2 style={{ padding: '50px', color: 'white' }}>Kaarten van Nederland</h2>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Tekst plaatsen op een achtergrond met een goed contrast">
+  <Canvas language="html">
+    {() => (
+      <>
+        <div style={{ background:'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")' }}>
+          <h2 style={{ padding: '50px', color: 'white', backgroundColor: 'rgba(0,0,0,0.5)' }}>Kaarten van Nederland</h2>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+## Grafieken
 
 In grafieken wordt vaak met kleur gewerkt om onderdelen te onderscheiden. Maar dat werkt niet voor iedereen.
 
@@ -81,7 +110,5 @@ Dus **let op:** als je een grafiek gebruikt:
 
 - Is er ook tekst of patroon toegevoegd om kleuren te ondersteunen?
 - Is tekst in de afbeelding zelf goed leesbaar?
-
-Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is dat toch nodig? Controleer dan extra goed of de tekst nog leesbaar is.
 
 <FooterInfo />
