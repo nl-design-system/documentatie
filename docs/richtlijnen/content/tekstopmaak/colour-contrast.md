@@ -79,7 +79,7 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   </Canvas>
 </Guideline>
 
-<Guideline appearance="do" title="Tekst plaatsen op een achtergrond met een goed contrast">
+<Guideline appearance="do" title="Kies een achtergrond die voldoende contrast biedt met de tekst">
   <Canvas language="html">
     {() => (
       <>
@@ -95,12 +95,25 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
 
 Soms is het lastig om op het oog te beoordelen of tekst voldoende afsteekt tegen de achtergrond. In dat geval kun je een contrastchecker gebruiken. Daarmee controleer je of het kleurcontrast voldoet aan de toegankelijkheidsrichtlijnen.
 
-Een eenvoudige tool is de [contrastchecker op deze website](/contrast).
+Een eenvoudige tool is [de contrastchecker op deze website](/contrast).
 Je vult daar de kleur van je tekst en de achtergrond in, en je ziet meteen of het contrast voldoende is.
 
 ## Grafieken
 
-In grafieken wordt vaak met kleur gewerkt om onderdelen te onderscheiden. Maar dat werkt niet voor iedereen.
+Gebruik je een grafiek als afbeelding in je content? Let er dan op dat de informatie in de grafiek voor iedereen begrijpelijk is. Dus ook voor mensen die kleuren niet goed kunnen onderscheiden.
+
+Veel grafieken gebruiken kleur om verschil te laten zien tussen lijnen of balken. Maar als iemand kleurenblind is of de pagina in zwart-wit bekijkt, valt dat verschil weg.
+
+Waar let je op als contentmaker?
+
+- Is de grafiek ook te begrijpen zonder kleur?
+  Bijvoorbeeld omdat er labels bij staan, of omdat lijnen verschillende streepjes of patronen hebben.
+- Is er een korte uitleg in de tekst?
+  Omschrijf in je tekst wat de grafiek laat zien. Zo voorkom je dat mensen de informatie missen als de grafiek niet duidelijk is.
+- Is de tekst in de grafiek goed leesbaar?
+  Vermijd kleine of vage letters. Als je de grafiek niet zelf maakt: vraag om een versie met duidelijke tekst.
+
+### Voorbeeld van kleurgebruik in een grafiek
 
 In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De grafiek links laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De weergave rechts is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
 
@@ -113,24 +126,30 @@ In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinte
 
 De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
 
-Dus **let op:** als je een grafiek gebruikt:
-
-- Is er ook tekst of patroon toegevoegd om kleuren te ondersteunen?
-- Is tekst in de afbeelding zelf goed leesbaar?
-
 ## Hoe te testen
 
 Je hoeft niet altijd een expert te zijn om te beoordelen of het kleurcontrast in je content goed is. Gebruik je ogen, gezond verstand én zo nodig een contrastchecker.
 
-**Let op het volgende:**
+**Belangrijkste vuistregel bij gebruik van kleur:**
 
-- Lees de tekst op een mobiel scherm in fel licht.
+- Gebruik nooit alleen kleur om verschil te maken.  
+  Gebruik je kleur om iets te benadrukken, zoals belangrijke woorden of het verschil tussen een goed en fout antwoord? Maak belangrijke tekst bijvoorbeeld vet en zorg dat je ook een ander signaal toevoegt zoals een label.
+
+**Zo beoordeel je het contrast:**
+
+- Lees de tekst op een mobiel scherm in fel licht.  
   Kun je alles nog goed lezen? Lichte tekst op een lichte achtergrond valt in zulke situaties vaak weg.
-- Controleer of tekst leesbaar is op afbeeldingen.
+- Controleer of tekst leesbaar is op afbeeldingen.  
   Staat er tekst over een afbeelding of kleurvlak? Kijk dan of er genoeg contrast is, en of de tekst niet wegvalt.
-- Gebruik een contrastchecker.
+- Gebruik een contrastchecker.  
   Twijfel je of het kleurcontrast voldoet aan de richtlijnen? Test het dan met een [contrastchecker](/contrast).
-- Vermijd kleur als enige onderscheid.
-  Gebruik je kleur om iets aan te duiden, zoals foutmeldingen of grafieklijnen? Zorg dat er ook een ander signaal is: een label, patroon of symbool.
+
+## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
+
+Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1)
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3)
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
 
 <FooterInfo />
