@@ -37,6 +37,13 @@ Let op het volgende:
 Gebruik kleur altijd bewust. Kleur kan informatie verduidelijken, maar mag nooit de enige manier zijn om iets uit te leggen.
 Wil je kleur inzetten in je ontwerp of content? Lees dan meer over [kleurgebruik met een doel](/richtlijnen/stijl/kleuren/doel) en [voldoende contrast volgens de richtlijnen](/wcag/1.4.3).
 
+## Gebruik een contrastchecker
+
+Het is vaak lastig om op het oog te beoordelen of tekst voldoende afsteekt tegen de achtergrond. Je kunt hiervoor een contrastchecker gebruiken. Daarmee controleer je of het kleurcontrast voldoet aan de toegankelijkheidsrichtlijnen.
+
+Een eenvoudige tool is [de contrastchecker op deze website](/contrast).
+Je vult daar de kleur van je tekst en de achtergrond in, en je ziet meteen of het contrast voldoende is.
+
 ## Tekstkleur in het CMS
 
 Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebruik die optie alleen als het echt nodig is. Kies dan voor een kleur met voldoende contrast ten opzichte van de achtergrond. Gebruik nooit kleur als enige manier om nadruk te geven.
@@ -91,13 +98,6 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   </Canvas>
 </Guideline>
 
-## Twijfel je over het contrast? Gebruik een contrastchecker
-
-Soms is het lastig om op het oog te beoordelen of tekst voldoende afsteekt tegen de achtergrond. In dat geval kun je een contrastchecker gebruiken. Daarmee controleer je of het kleurcontrast voldoet aan de toegankelijkheidsrichtlijnen.
-
-Een eenvoudige tool is [de contrastchecker op deze website](/contrast).
-Je vult daar de kleur van je tekst en de achtergrond in, en je ziet meteen of het contrast voldoende is.
-
 ## Grafieken
 
 Gebruik je een grafiek als afbeelding in je content? Let er dan op dat de informatie in de grafiek voor iedereen begrijpelijk is. Dus ook voor mensen die kleuren niet goed kunnen onderscheiden.
@@ -128,9 +128,7 @@ De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/bro
 
 ## Hoe te testen
 
-Je hoeft niet altijd een expert te zijn om te beoordelen of het kleurcontrast in je content goed is. Gebruik je ogen, gezond verstand én zo nodig een contrastchecker.
-
-**Belangrijkste vuistregel bij gebruik van kleur:**
+**De belangrijkste vuistregel bij gebruik van kleur:**
 
 - Gebruik nooit alleen kleur om verschil te maken.  
   Gebruik je kleur om iets te benadrukken, zoals belangrijke woorden of het verschil tussen een goed en fout antwoord? Maak belangrijke tekst bijvoorbeeld vet en zorg dat je ook een ander signaal toevoegt zoals een label.
@@ -139,10 +137,10 @@ Je hoeft niet altijd een expert te zijn om te beoordelen of het kleurcontrast in
 
 - Lees de tekst op een mobiel scherm in fel licht.  
   Kun je alles nog goed lezen? Lichte tekst op een lichte achtergrond valt in zulke situaties vaak weg.
+- Gebruik een contrastchecker.  
+  Met een [contrastchecker](/contrast) kun je exact bepalen of kleuren voldoende onderscheidend zijn ten opzichte van elkaar.
 - Controleer of tekst leesbaar is op afbeeldingen.  
   Staat er tekst over een afbeelding of kleurvlak? Kijk dan of er genoeg contrast is, en of de tekst niet wegvalt.
-- Gebruik een contrastchecker.  
-  Twijfel je of het kleurcontrast voldoet aan de richtlijnen? Test het dan met een [contrastchecker](/contrast).
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
