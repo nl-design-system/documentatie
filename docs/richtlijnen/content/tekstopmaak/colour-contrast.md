@@ -91,6 +91,13 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   </Canvas>
 </Guideline>
 
+## Twijfel je over het contrast? Gebruik een contrastchecker
+
+Soms is het lastig om op het oog te beoordelen of tekst voldoende afsteekt tegen de achtergrond. In dat geval kun je een contrastchecker gebruiken. Daarmee controleer je of het kleurcontrast voldoet aan de toegankelijkheidsrichtlijnen.
+
+Een eenvoudige tool is de [contrastchecker op deze website](/contrast).
+Je vult daar de kleur van je tekst en de achtergrond in, en je ziet meteen of het contrast voldoende is.
+
 ## Grafieken
 
 In grafieken wordt vaak met kleur gewerkt om onderdelen te onderscheiden. Maar dat werkt niet voor iedereen.
@@ -110,5 +117,20 @@ Dus **let op:** als je een grafiek gebruikt:
 
 - Is er ook tekst of patroon toegevoegd om kleuren te ondersteunen?
 - Is tekst in de afbeelding zelf goed leesbaar?
+
+## Hoe te testen
+
+Je hoeft niet altijd een expert te zijn om te beoordelen of het kleurcontrast in je content goed is. Gebruik je ogen, gezond verstand én zo nodig een contrastchecker.
+
+**Let op het volgende:**
+
+- Lees de tekst op een mobiel scherm in fel licht.
+  Kun je alles nog goed lezen? Lichte tekst op een lichte achtergrond valt in zulke situaties vaak weg.
+- Controleer of tekst leesbaar is op afbeeldingen.
+  Staat er tekst over een afbeelding of kleurvlak? Kijk dan of er genoeg contrast is, en of de tekst niet wegvalt.
+- Gebruik een contrastchecker.
+  Twijfel je of het kleurcontrast voldoet aan de richtlijnen? Test het dan met een [contrastchecker](/contrast).
+- Vermijd kleur als enige onderscheid.
+  Gebruik je kleur om iets aan te duiden, zoals foutmeldingen of grafieklijnen? Zorg dat er ook een ander signaal is: een label, patroon of symbool.
 
 <FooterInfo />
