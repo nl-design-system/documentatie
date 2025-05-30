@@ -6,7 +6,7 @@ Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigati
 
 Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een `span`- of een `p`-element, geen heading-element.
 
-Sla geen kopniveaus over, dus bijvoorbeeld een `h3` na een `h1`. Screenreadergebruikers kunnen dan het idee krijgen dat ze informatie missen.
+Sla geen kopniveaus over, dus bijvoorbeeld een `h3` na een `h1`. Gebruikers van [screenreaders](/woordenlijst/#screenreader) kunnen dan het idee krijgen dat ze informatie missen.
 
 Let erop dat je per pagina 1 `h1` gebruikt en dat deze aan het begin van de `main`-content staat. Door niet meer dan 1 `h1` te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.
 

@@ -17,7 +17,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tekst in een afbeelding
 
-Tekst in een afbeelding wordt niet voorgelezen door een schermlezer. Deze teksten zijn ook niet aan te passen voor de verschillende behoeften van de bezoeker, zoals bijvoorbeeld tekst vergroten of het verbeteren van het contrast. Bied daarom ook een alternatief aan in tekst.
+Tekst in een afbeelding wordt niet voorgelezen door een [screenreader](/woordenlijst/#screenreader). Deze teksten zijn ook niet aan te passen voor de verschillende behoeften van de bezoeker, zoals bijvoorbeeld tekst vergroten of het verbeteren van het contrast. Bied daarom ook een alternatief aan in tekst.
 
 Voorbeelden van afbeeldingen van tekst zijn:
 
