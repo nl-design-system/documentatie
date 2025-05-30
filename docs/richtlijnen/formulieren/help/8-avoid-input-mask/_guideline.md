@@ -59,7 +59,7 @@ Adam Silver vat het goed samen in zijn artikel [<span lang="en">The problem with
 
 In het artikel van Giovani Camara [<span lang="en">Accessible input masking</span>](https://giovanicamara.com/blog/accessible-input-masking/) laat hij de YouTube video [<span lang="en">Allow users to edit anywhere</span>](https://www.youtube.com/watch?v=rTk3XNSXJXY) zien wat er fout kan gaan als een gebruiker een waarde wil wijzigen. De cursus kan vanzelf naar het einde van de waarde springen, terwijl je het eerste karakter wilt aanpassen. Dit is voor iedereen irritant en leidt tot fouten.
 
-Het aangeven van invoerpatronen in de placeholder of in het value-attribute kan heel zijn onduidelijk voor screenreader gebruikers. Een opsomming van underscores is niet erg informatief. Kijk en luister naar de [demo op YouTube van Giovani Camara](https://www.youtube.com/watch?v=7WWQXGgRDLc) hiervan met VoiceOver.
+Het aangeven van invoerpatronen in de placeholder of in het value-attribute kan heel zijn onduidelijk voor gebruikers van [screenreaders](/woordenlijst/#screenreader). Een opsomming van underscores is niet erg informatief. Kijk en luister naar de [demo op YouTube van Giovani Camara](https://www.youtube.com/watch?v=7WWQXGgRDLc) hiervan met VoiceOver.
 
 Is een exacte invoer nodig, bijvoorbeeld bij een geboortedatum, biedt dan een optie aan die iedereen makkelijk kan invullen. De richtlijn [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](https://nldesignsystem.nl/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen) gaat hier uitgebreid op in.
 

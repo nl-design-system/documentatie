@@ -7,7 +7,7 @@ Een link in een label wordt vaak gebruikt bij het accepteren van bijvoorbeeld he
 Dit is om twee redenen geen goede constructie:
 
 - Een label kan [geen links of buttons elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns) bevatten. Lees hierover meer in de richtlijn [Zet alleen tekst in het label](/richtlijnen/formulieren/labels/alleen-tekst).
-- Screenreaders kunnen struikelen over de combinatie "label en link" en lezen daardoor het label niet goed voor.
+- [Screenreaders](/woordenlijst/#screenreader) kunnen struikelen over de combinatie "label en link" en lezen daardoor het label niet goed voor.
 
 Bijvoorbeeld:
 Een checkbox met in het label "Ik ga akkoord met het privacybeleid", en de tekst privacybeleid is ook een link.

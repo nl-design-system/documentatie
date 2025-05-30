@@ -159,7 +159,7 @@ Goede betekenisvolle HTML-code is essentieel voor toegankelijkheid. Alleen dan w
 Zo kunnen mensen met een beperking een website gebruiken met:
 
 - alleen een toetsenbord;
-- een toetsenbord met een screenreader;
+- een toetsenbord met een [screenreader](/woordenlijst/#screenreader);
 - een toetsenbord met een screenreader en een brailleregel;
 - spraakbesturing;
 - een aanwijsstok.

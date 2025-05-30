@@ -2,7 +2,7 @@
 
 # Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief
 
-Sommige formulierelementen werken (nog) niet goed of zijn complex om te bedienen met toetsenbord, screenreader of stembesturing.
+Sommige formulierelementen werken (nog) niet goed of zijn complex om te bedienen met toetsenbord, [screenreaders](/woordenlijst/#screenreader) of stembesturing.
 
 Op [HTML5 Accessibility](https://html5accessibility.com/) houdt Steve Faulkner de ondersteuning bij van HTML-elementen, in de verschillende browsers en voor de diverse hulpmiddelen.
 
