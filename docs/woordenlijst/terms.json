@@ -1,5 +1,20 @@
 [
   {
+    "term": "Aanwijzer",
+    "slug": "aanwijzer",
+    "definitions": [
+      {
+        "paragraph": "Een vorm van invoer waarbij men iets aanwijst op het scherm. Voorbeelden hiervan zijn de muis, de touchpad, een trackball, aanraking of bediening met een pen. "
+      }
+    ],
+    "sources": [
+      {
+        "name": "De definitie van <em>enkele aanwijzer</em> in de Nederlandse vertaling van WCAG.",
+        "url": "https://www.w3.org/Translations/WCAG22-nl/#dfn-single-pointer"
+      }
+    ]
+  },
+  {
     "term": "Audiodescriptie",
     "slug": "Audiodescriptie",
     "definitions": [
