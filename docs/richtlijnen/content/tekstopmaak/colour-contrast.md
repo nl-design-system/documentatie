@@ -115,7 +115,7 @@ Waar let je op als contentmaker?
 
 ### Voorbeeld van kleurgebruik in een grafiek
 
-In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De grafiek links laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De weergave rechts is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
+In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers. De eerste grafiek laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De tweede grafiek is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
 
 ![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
 
