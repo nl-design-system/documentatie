@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.4 Consistente identificatie
 pagination_label: WCAG-succescriterium 3.2.4 Consistente identificatie
-description: Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.
+description: Onderdelen die hetzelfde doen moeten ook hetzelfde te herkennen zijn.
 slug: 3.2.4
 keywords:
   - WCAG
@@ -30,13 +30,53 @@ import Summary from "./summaries/_3.2.4-summary.md";
   {"WCAG-succescriterium 3.2.4 Consistente identificatie"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Acties zijn meer voorspelbaar.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Zorg dat functies die herhalen hetzelfde te herkennen zijn.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Herhaalde herkenning is extra belangrijk voor mensen met een beperking.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Er zijn verschillende manieren om functies te herkennen. Dit kan door middel van de tekst die je ziet, de naam van het element (die je mogelijk niet ziet), maar ook door kenmerken die geen tekst zijn zoals iconen, kleur of vormgeving.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Voorbeelden van onderdelen met functies zijn links, buttons, accordions en iconen maar ook labels en buttons in formulieren.
+
+Praktisch betekent dit:
+
+- Gebruik dezelfde tekst voor een verzendbutton bij de formulieren in een website. Niet in het ene formulier 'Verzenden' en in een ander formulier 'Versturen'.
+- Gebruik hetzelfde icoon voor een button om invoer te verwijderen. Niet eerst een prullenbak icoon, terwijl een andere button een kruis als icoon heeft.
+- Noem de link naar de voorpagina altijd hetzelfde binnen de website. Niet eerst 'Home', dan 'Voorpagina' en dan 'Start'.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl - Tekstopmaak: [Toegankelijke linkteksten](/richtlijnen/content/tekstopmaak/linkteksten/)
+- Formulieren - Meerdere stappen: [Duidelijk aangeven verzend](/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven/)
+- Formulieren - Buttons: [Duidelijke buttontekst](/richtlijnen/formulieren/buttons/duidelijk-buttontekst/)
+
+## Hoe te testen
+
+- Ga door een website en identificeer herhalende onderdelen.
+- Controleer of onderdelen die hetzelfde doen, ook hetzelfde herkenbaar zijn. Controleer daarbij zowel de tekst die je ziet, wat in de code staat en visuele kenmerken zoals iconen, kleur en vormgeving.
+
+## Tips
+
+- Deze richtlijn kan ook omgedraaid worden. Zorg ervoor dat onderdelen die hetzelfde te herkennen zijn ook zo veel mogelijk dezelfde functie hebben!
+- Namen hoeven niet letterlijk gekopieerd te worden. Soms is het belangrijk dat het patroon herhaald wordt. Pagina 1 heeft misschien een link genaamd "Lees pagina 2". Pagina 2 hoeft niet letterlijk diezelfde link te hebben, maar een link terug naar pagina 1 moet dan wel hetzelfde patroon volgen: "Lees pagina 1". Zo wil je bijvoorbeeld ook overal kiezen voor het werkwoord printen of afdrukken. Dit is beter dan deze werkwoorden door elkaar heen gebruiken.
+- Laat de naam die je ziet overeenkomen met de naam in de code. Dat maakt controleren niet alleen makkelijker, maar is ook praktisch voor [2.5.3 Label in Naam](/wcag/2.5.3/)
 
 ## Gebruikersonderzoek
 
