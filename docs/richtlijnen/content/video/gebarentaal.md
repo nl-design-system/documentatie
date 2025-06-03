@@ -78,7 +78,7 @@ Als de videospeler die je gebruikt wel de optie biedt voor een apart bestand kun
 
 ## Automatisch gegenereerde gebarentaal
 
-Net zoals je ondertiteling voor een video automatisch kunt laten genereren, wordt ook automatisch gegenereerde gebarentaal steeds realistischer.
+Je kunt de ondertiteling van je video al automatisch laten maken. Voor gebarentaal komt deze mogelijkheid ook steeds vaker voor.
 
 Gebarentaal verschilt per land — en soms zelfs per regio. Zorg dus dat de aanbieder expert is in de specifieke gebarentaal van jouw doelgroep. Waar je bij ondertiteling vooral moet controleren of de tekst juist is en interpunctie bevat, is het bij gebarentaal belangrijk dat zowel de handen, de mimiek en de lichaamshouding kloppen. Anders kan je boodschap totaal verkeerd overkomen.
 
