@@ -68,6 +68,10 @@ Controleer of je een goed tekstalternatief hebt geschreven door na te gaan of je
 - Is de alt-tekst in [de juiste taal](/wcag/3.1.2) geschreven?
 - Is de alternatieve tekst relevant in de context van waarom de afbeelding op de pagina staat?
 
+**Tip:** Lees de alt-tekst hardop.
+
+Begrijp je als lezer (zonder de afbeelding te zien) wat je moet weten? Dan is de alt-tekst duidelijk en functioneel. Bevat de alt-tekst alleen bestandsnamen, omschrijvingen als “afbeelding”, of overbodige details? Dan moet je ‘m verbeteren.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.

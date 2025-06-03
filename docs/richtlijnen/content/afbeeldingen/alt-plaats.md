@@ -73,6 +73,11 @@ Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit 
 
 ## Hoe te testen
 
+- Heb je de alt-tekst ingevuld op de juiste plek in het CMS?
+- Gebruik je ook een bijschrift? Vertelt het bijschrift dan iets extra’s, is het geen herhaling van de alt-tekst?
+- Bevat de afbeelding complexe informatie, zoals een grafiek of schema? Is extra uitleg toegevoegd in de omliggende tekst of onder de afbeelding?
+- Heb je in de alt-tekst verwezen naar die toelichting? Zet in de alt-tekst of het bijschrift bijvoorbeeld: “Toelichting staat onder de afbeelding.”
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
