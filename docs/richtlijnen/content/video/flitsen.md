@@ -43,7 +43,7 @@ Een flits ontstaat doordat er een plotselinge overgang is van donker (lage helde
 
 ## Flitsen voorkomen
 
-De makkelijkste manier om flitsen in een video te voorkomen is natuurlijk door geen opnames te maken waar flitsen in voorkomen. Maar het is niet altijd te voorspellen of iets op beeld een flits veroorzaakt.
+De makkelijkste manier om flitsen in een video te voorkomen is natuurlijk door geen opnames te maken waar flitsen in voor komen. Maar het is niet altijd te voorspellen of iets op beeld een flits veroorzaakt.
 
 Er zijn wel een aantal dingen die je zelf kunt doen om er voor te zorgen dat je video geen overgangen van donker naar licht (of andersom) bevat die schadelijk kunnen zijn voor mensen die daar gevoelig voor zijn.
 
@@ -52,17 +52,21 @@ Er zijn wel een aantal dingen die je zelf kunt doen om er voor te zorgen dat je 
 Let voorafgaand en tijdens het opnemen van je video op:
 
 - Knipperende en flitsende lichtbronnen, zoals de eerder genoemde voorbeelden.
-- Led-, neon- en TL-verlichting. Afhankelijk van je camera kan deze verlichting knippereffecten in de opname veroorzaken.
+- Led-, neon- en TL-verlichting. Afhankelijk van je camera kan deze verlichting knipper-effecten in de opname veroorzaken.
 - Kleur en licht. Gebruik waar mogelijk rustige achtergronden en vermijd fel licht.
 
 ### Bij en na het monteren van de video
 
-Ook tijdens en na het monteren kun je een aantal stappen nemen om flitsende content te voorkomen:
+Ook tijdens en na het monteren kun je een aantal stappen nemen om flitsen te voorkomen:
 
 - Maak gebruik van rustige overgangen tussen scènes die sterk van kleur verschillen, bijvoorbeeld wanneer je van een zwart scherm naar een beeld met veel licht schakelt.
 - Laat beeld met mogelijke flitsen niet het hele beeld in beslag nemen. Hoe minder ruimte de flits in beslag neemt, hoe kleiner de kans dat de flits fysieke problemen veroorzaakt.
 - Controleer je video met de [PEAT analyse-tool](https://trace.umd.edu/peat/). Dit is gratis software die flitsen boven een bepaalde schadelijke grenswaarde detecteert.
-- Controleer je video in de grootst mogelijke aangeboden weergave. Kan de bezoeker je video in fullscreen modus bekijken? Dan controleer je de video ook in die modus
+- Controleer je video in de grootst mogelijke aangeboden weergave. Kan de bezoeker de video in fullscreen modus bekijken? Dan controleer je de video in die modus.
+
+Is het helemaal niet mogelijk om een mogelijke flits te voorkomen? Voeg dan een waarschuwing toe, zodat bezoekers ervoor kunnen kiezen om de video niet verder te kijken.
+
+Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Het toevoegen van een waarschuwing is niet voldoende om te voldoen aan [succescriterium 2.3.1 Drie flitsen beneden drempelwaarde](/wcag/2.3.1).
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
