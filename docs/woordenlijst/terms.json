@@ -47,7 +47,7 @@
         "url": "https://nldesignsystem.nl/richtlijnen/formulieren/labels/zichtbare-naam"
       },
       {
-        "name": "<span lang='en'>Accessible Name and Description Computation</span>",
+        "name": "&lt;span lang=&#39;en&#39;&gt;Accessible Name and Description Computation&lt;/span&gt;",
         "url": "https://www.w3.org/TR/accname/"
       }
     ]
