@@ -73,7 +73,7 @@
   },
   20151: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => $, component: () => Q, contentTitle: () => I, default: () => ee, description: () => q, frontMatter: () => O, issueNumber: () => Y, metadata: () => U, title: () => K, toc: () => X });
+   t.r(n), t.d(n, { assets: () => $, component: () => Q, contentTitle: () => I, default: () => ee, description: () => q, frontMatter: () => V, issueNumber: () => Y, metadata: () => U, title: () => K, toc: () => X });
    var r = t(52676),
     i = t(40139),
     o = t(43282),
@@ -179,9 +179,9 @@
     Z = t(13361),
     M = t(16771),
     B = t(18574),
-    V = t(55240),
+    O = t(55240),
     E = t(8657);
-   const O = { title: 'Breadcrumb Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Breadcrumb Navigation', pagination_label: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', slug: '/breadcrumb-navigation', keywords: ['back', 'back link', 'breadcrumb navigation', 'breadcrumb trail', 'breadcrumbs', 'broodkruimelpad', 'broodkruimels', 'hi\xebrarchie', 'hierarchy', 'home', 'home', 'homepage', 'kruimelpad', 'links', 'nav', 'navigatie', 'navigation', 'navigeren', 'trail', 'up'] },
+   const V = { title: 'Breadcrumb Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Breadcrumb Navigation', pagination_label: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', slug: '/breadcrumb-navigation', keywords: ['back', 'back link', 'breadcrumb navigation', 'breadcrumb trail', 'breadcrumbs', 'broodkruimelpad', 'broodkruimels', 'hi\xebrarchie', 'hierarchy', 'home', 'home', 'homepage', 'kruimelpad', 'links', 'nav', 'navigatie', 'navigation', 'navigeren', 'trail', 'up'] },
     I = void 0,
     U = { id: 'componenten/breadcrumb-navigation/index', title: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', source: '@site/docs/componenten/breadcrumb-navigation/index.mdx', sourceDirName: 'componenten/breadcrumb-navigation', slug: '/breadcrumb-navigation', permalink: '/breadcrumb-navigation', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/breadcrumb-navigation/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Breadcrumb Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Breadcrumb Navigation', pagination_label: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', slug: '/breadcrumb-navigation', keywords: ['back', 'back link', 'breadcrumb navigation', 'breadcrumb trail', 'breadcrumbs', 'broodkruimelpad', 'broodkruimels', 'hi\xebrarchie', 'hierarchy', 'home', 'home', 'homepage', 'kruimelpad', 'links', 'nav', 'navigatie', 'navigation', 'navigeren', 'trail', 'up'] }, sidebar: 'componenten', previous: { title: 'Blockquote', permalink: '/blockquote' }, next: { title: 'Button', permalink: '/button' } },
     $ = {},
@@ -219,7 +219,7 @@
       '\n',
       (0, r.jsx)(s.ZP, {}),
       '\n',
-      (0, r.jsx)(V.t, {
+      (0, r.jsx)(O.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid algemeen',
        items: [
@@ -233,7 +233,7 @@
        ],
       }),
       '\n',
-      (0, r.jsx)(V.t, {
+      (0, r.jsx)(O.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid visueel ontwerp',
        items: [
@@ -247,7 +247,7 @@
        ],
       }),
       '\n',
-      (0, r.jsx)(V.t, {
+      (0, r.jsx)(O.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
@@ -257,7 +257,7 @@
        ],
       }),
       '\n',
-      (0, r.jsx)(V.t, {
+      (0, r.jsx)(O.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid toetsenbord',
        items: [
@@ -270,7 +270,7 @@
        ],
       }),
       '\n',
-      (0, r.jsx)(V.t, {
+      (0, r.jsx)(O.t, {
        headingLevel: 4,
        testCategory: 'Toegankelijkheid screenreader',
        items: [
@@ -411,8 +411,8 @@
    var r = t(52676),
     i = t(40139);
    function o(e) {
-    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat componenten die dezelfde functie hebben binnen een website, er hetzelfde uitzien en ook hetzelfde werken.' }), '\n', (0, r.jsx)(n.p, { children: 'Denk hierbij aan links, accordeons, iconen en linkteksten of labels en buttons in formulieren. Wees consistent, dan begrijpt de gebruiker beter wat de betekenis is.' }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: "Gebruik dezelfde tekst voor een verzendbutton bij de formulieren in een website. Niet in het ene formulier 'Verzenden' en in een ander formulier 'Versturen'." }), '\n', (0, r.jsx)(n.li, { children: 'Gebruik hetzelfde icoon voor een button om invoer te verwijderen. Niet eerst een prullenbak icoon, terwijl een andere button een kruis als icoon heeft.' }), '\n', (0, r.jsx)(n.li, { children: "Noem de link naar de voorpagina altijd hetzelfde binnen de website. Niet eerst 'Home', dan 'Voorpagina' en dan 'Start'." }), '\n'] })] });
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Onderdelen die hetzelfde doen moeten ook hetzelfde te herkennen zijn.' });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
