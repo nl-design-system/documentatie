@@ -30,6 +30,29 @@
     ]
   },
   {
+    "term": "Toegankelijke naam",
+    "slug": "toegankelijke-naam",
+    "definitions": [
+      {
+        "paragraph": "De toegankelijke naam is de werkelijke naam van een component. Dit is vaak (maar niet altijd) hetzelfde als de zichtbare naam."
+      }
+    ],
+    "sources": [
+      {
+        "name": "WCAG-succescriterium 2.5.3 Label in naam",
+        "url": "https://nldesignsystem.nl/wcag/1.1.1/"
+      },
+      {
+        "name": "Formulieren - Labels - Zichtbare naam label",
+        "url": "https://nldesignsystem.nl/richtlijnen/formulieren/labels/zichtbare-naam"
+      },
+      {
+        "name": "<span lang='en'>Accessible Name and Description Computation</span>",
+        "url": "https://www.w3.org/TR/accname/"
+      }
+    ]
+  },
+  {
     "term": "Proces",
     "slug": "proces",
     "definitions": [
