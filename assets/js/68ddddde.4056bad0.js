@@ -216,8 +216,8 @@
     const { wrapper: n } = { ...(0, g.a)(), ...e.components };
     return n ? (0, m.jsx)(n, { ...e, children: (0, m.jsx)(S, { ...e }) }) : S(e);
    }
-   var D = t(71811),
-    R = t(18833),
+   var R = t(71811),
+    D = t(18833),
     N = t(1459),
     P = t(4607),
     _ = t(21511),
@@ -320,7 +320,7 @@
        testCategory: 'Toegankelijkheid zoom en herschalen',
        items: [
         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, m.jsx)(y.ZP, {}) },
-        { title: 'Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar', sc: '1.4.10', status: '', component: (0, m.jsx)(R.ZP, {}) },
+        { title: 'Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar', sc: '1.4.10', status: '', component: (0, m.jsx)(D.ZP, {}) },
        ],
       }),
       '\n',
@@ -342,7 +342,7 @@
        testCategory: 'Toegankelijkheid screenreader',
        items: [
         { title: 'Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, m.jsx)(L.ZP, {}) },
-        { title: 'De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient', sc: '4.1.2', status: '', component: (0, m.jsx)(D.ZP, {}) },
+        { title: 'De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient', sc: '4.1.2', status: '', component: (0, m.jsx)(R.ZP, {}) },
        ],
       }),
       '\n',
@@ -476,7 +476,7 @@
     i = t(40139);
    function s(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: "Zorg ervoor dat navigatie-componenten die voorkomen op meerdere pagina's overal op dezelfde manier werken. De navigatie staat op dezelfde plek op elke pagina, en de onderdelen staan in dezelfde volgorde." }), '\n', (0, r.jsx)(n.p, { children: 'Denk hierbij aan de skiplink, het hoofdmenu, de zoekoptie en de links in de footer. Dit maakt de structuur van de website makkelijker te begrijpen en hierdoor kan de gebruiker sneller navigeren.' })] });
+    return (0, r.jsx)(n.p, { children: 'Delen van de navigatie staan overal in dezelfde volgorde.' });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
