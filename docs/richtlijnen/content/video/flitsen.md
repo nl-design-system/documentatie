@@ -66,7 +66,7 @@ Ook tijdens en na het monteren kun je een aantal stappen nemen om flitsen te voo
 
 Is het helemaal niet mogelijk om een mogelijke flits te voorkomen? Voeg dan een waarschuwing toe, zodat bezoekers ervoor kunnen kiezen om de video niet verder te kijken.
 
-Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Het toevoegen van een waarschuwing is niet voldoende om te voldoen aan [succescriterium 2.3.1 Drie flitsen beneden drempelwaarde](/wcag/2.3.1).
+Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Dan is het toevoegen van een waarschuwing niet voldoende om te voldoen aan [succescriterium 2.3.1 Drie flitsen beneden drempelwaarde](/wcag/2.3.1).
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
