@@ -31,7 +31,7 @@ Wanneer er in een hele korte tijd meerdere flitsen voorkomen in een video, kan d
 
 ## Voorbeelden
 
-Een flits ontstaat doordat er een plotselinge overgang is van donker (lage helderheid) naar licht (hoge helderheid) en weer terug naar donker. Voorbeelden hiervan die in een video kunnen voorkomen zijn onder andere:
+Een flits ontstaat door een plotselinge overgang van donker (lage helderheid) naar licht (hoge helderheid), of andersom. Voorbeelden hiervan die in een video kunnen voorkomen zijn onder andere:
 
 - Stroboscopisch licht, bijvoorbeeld tijdens concerten of voor dramatisch effect in een film.
 - Camera-flitsen.
