@@ -131,7 +131,7 @@ De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.co
 **De belangrijkste vuistregel bij gebruik van kleur:**
 
 - Gebruik nooit alleen kleur om verschil te maken.  
-  Gebruik je kleur om iets te benadrukken, zoals belangrijke woorden of het verschil tussen een goed en fout antwoord? Maak belangrijke tekst bijvoorbeeld vet en zorg dat je ook een ander signaal toevoegt zoals een label.
+  Gebruik je kleur om iets te benadrukken, zoals belangrijke woorden of het verschil tussen een goed en fout antwoord? Maak belangrijke tekst bijvoorbeeld vet en zorg dat je ook een ander signaal (zoals een icoon met alternatieve tekst, of een tekst) toevoegt.
 
 **Zo beoordeel je het contrast:**
 
