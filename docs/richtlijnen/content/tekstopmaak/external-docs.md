@@ -1,11 +1,11 @@
 ---
-title: Linken naar documenten · Content · Richtlijnen
+title: Links naar externe documenten · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Linken naar documenten
-pagination_label: Linken naar documenten
+sidebar_label: Links naar externe documenten
+pagination_label: Links naar externe documenten
 description: ...
-slug: /richtlijnen/content/linken-naar-documenten
+slug: /richtlijnen/content/links-naar-externe-documenten
 keywords:
   - links
   - documenten
@@ -17,7 +17,7 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Linken naar documenten (zoals PDF)
+# Links naar externe documenten
 
 Soms link je naar een document buiten de webpagina — bijvoorbeeld een PDF of Word-bestand. Maar zulke documenten zijn niet altijd goed toegankelijk. Waarschijnlijk maak je deze documenten niet zelf, maar publiceer je ze wél. Daarom is het belangrijk dat je alert bent op de toegankelijkheid ervan.
 
@@ -51,8 +51,8 @@ Documenten die je op de website zet of waar je naar verwijst, zoals pdf’s of W
 
 Ook documenten zoals pdf’s vallen onder dezelfde toegankelijkheidsprincipes als webpagina’s. Veel verschillende WCAG-richtlijnen kunnen daarom van toepassing zijn. Hieronder staan een paar succescriteria waarop het het vaakst misgaat in documenten:
 
-[Successcriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
-[Successcriterium1.3.1 Info en relaties](/wcag/1.3.1)
-[Successcriterium2.4.2 Paginatitel](/wcag/2.4.2)
+- [Successcriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
+- [Successcriterium1.3.1 Info en relaties](/wcag/1.3.1)
+- [Successcriterium2.4.2 Paginatitel](/wcag/2.4.2)
 
 <FooterInfo />
