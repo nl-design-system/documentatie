@@ -105,6 +105,17 @@ Verwijs je bezoekers naar een andere website om je video te bekijken? Plaats dan
 
 Soms is het niet handig om een transcript op de pagina zelf te plaatsen, bijvoorbeeld als je een overzichtspagina hebt met links naar meerdere video's. In dat geval kun je er ook voor kiezen om het transcript op een aparte pagina te plaatsen en in het overzicht een link naar je transcript toe te voegen.
 
+## Hoe te testen
+
+Bepaal voor iedere video:
+
+- Is er een transcript aanwezig?
+- Staat het transcript op een logische, goed bereikbare plek? Of wordt er op een logische plek naar het transcript verwezen?
+- Komt alle dialoog in het transcript voor en is het duidelijk wie er spreekt?
+- Komt alle belangrijke visuele informatie voor in het transcript?
+- Komt alle belangrijke informatie uit de audio voor in het transcript?
+- Heeft het transcript de juiste opmaak en structuur?
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
