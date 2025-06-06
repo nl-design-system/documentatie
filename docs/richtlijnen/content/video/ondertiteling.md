@@ -122,6 +122,15 @@ Besteed extra aandacht aan:
 - Interpunctie. Automatisch gegenereerde ondertiteling bevat vaak geen of slechte interpunctie. Interpunctie is heel belangrijk voor de leesbaarheid van ondertiteling.
 - Geluiden, toon en volume. Deze beschrijvingen komen meestal niet voor in automatisch gegenereerde ondertiteling en zul je zelf nog moeten toevoegen.
 
+## Hoe te testen
+
+Bepaal voor iedere video:
+
+- Heeft de video ondertiteling?
+- Komt alle dialoog voor in de video en is het duidelijk wie er spreekt, als diegene niet in beeld is?
+- Komt andere belangrijke informatie uit de audio voor in de ondertiteling?
+- Heeft de ondertiteling de juiste opmaak?
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
