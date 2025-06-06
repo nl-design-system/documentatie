@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.5.2 Aanwijzerannulering · NL Design System" />
-  <meta data-rh="true" name="description" content="Zorg ervoor dat, als de gebruiker bijvoorbeeld een link of button indrukt met een aanwijzer zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken." />
-  <meta data-rh="true" property="og:description" content="Zorg ervoor dat, als de gebruiker bijvoorbeeld een link of button indrukt met een aanwijzer zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken." />
+  <meta data-rh="true" name="description" content="Het annuleren van acties die je met een aanwijzer uitvoert is voorspelbaar." />
+  <meta data-rh="true" property="og:description" content="Het annuleren van acties die je met een aanwijzer uitvoert is voorspelbaar." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,input modaliteiten,operable,input modalities,pointer cancellation" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.5.2" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b5556ab9.css" />
-  <script src="/assets/js/runtime~main.64c5be84.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.40aa32df.js" defer="defer"></script>
   <script src="/assets/js/main.65744ff6.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -288,18 +288,40 @@
                <h1 class="nlds-inline-heading-group__heading">WCAG-succescriterium 2.5.2 Aanwijzerannulering</h1>
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
+              <h2 id="in-het-kort" class="utrecht-heading-2">In het kort</h2>
+              <dl>
+               <div class="dl__item">
+                <dt class="dl__term">Doel</dt>
+                <dd class="dl__definition">Verminder acties die per ongeluk zijn.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Wat te doen</dt>
+                <dd class="dl__definition">Maak het annuleren van acties voorspelbaar en consistent.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Waarom het belangrijk is</dt>
+                <dd class="dl__definition"><p>Maakt het voor iedereen gemakkelijker om een actie die per ongeluk was ongedaan te maken.</p></dd>
+               </div>
+              </dl>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Zorg ervoor dat, als de gebruiker bijvoorbeeld een link of button indrukt met een aanwijzer zoals een muis of vinger, er de mogelijkheid is om de actie te voorkomen of ongedaan te maken.</p>
-              <p>Dit voorkomt het per ongeluk aanraken en activeren van functies, waarvan het niet de bedoeling was.</p>
-              <p>Dat kan op meerdere manieren:</p>
+              <p>Het annuleren van acties die je met een aanwijzer uitvoert is voorspelbaar.</p>
+              <p>Voor alle acties die je kunt uitvoeren met een <a href="/woordenlijst/#aanwijzer" class="utrecht-link utrecht-link--html-a">aanwijzer</a>, moet één van de volgende dingen kloppen:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>De gebruiker kan de aanwijzer nog verplaatsen naar buiten het element om het activeren van de actie te voorkomen. Gebruik hier bij voorkeur het <code class="utrecht-code">click</code>-event voor, omdat dit apparaatonafhankelijk is.</li>
-               <li>De actie gebeurt bij het <code class="utrecht-code">down</code>-event, maar bij het <code class="utrecht-code">up</code>-event wordt het effect weer ongedaan gemaakt.</li>
-               <li>Je kunt het effect achteraf weer ongedaan maken.</li>
+               <li>De actie wordt niet uitgevoerd door de start van de activering. Bijvoorbeeld: alleen de muisknop indrukken of het scherm aanraken mag nog geen actie uitvoeren.</li>
+               <li>De actie wordt pas uitgevoerd bij het afmaken van de activering. Daarnaast kan de actie afgebroken worden voor het afmaken, of erna ongedaan gemaakt worden. Bijvoorbeeld: je kunt iets verslepen, maar door het item weer los te laten buiten het doelgebied, verschuift het item weer naar zijn oorspronkelijke plek. Een andere optie om iets weer ongedaan te maken, is door bevestiging te vragen (&#x27;Weet u zeker dat...?&#x27;) of door een knop toe te voegen waarmee de actie weer ongedaan gemaakt kan worden.</li>
+               <li>Het afmaken van de activering annuleert de actie aan de start. Bijvoorbeeld: als er iets verschijnt zodra een muisknop ingedrukt wordt, maar dit verdwijnt als de knop losgelaten wordt.</li>
               </ul>
-              <p>Er is een uitzondering voor acties waarbij het essentieel is dat ze bij het <code class="utrecht-code">down</code>-event gebeuren.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Voor alle acties die met een aanwijzer uit te voeren zijn, test of een van de volgende dingen klopt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>De actie wordt niet uitgevoerd aan de start van de activering.</li>
+               <li>De actie wordt pas gedaan bij het afmaken van de activering en kan afgebroken worden.</li>
+               <li>De actie wordt pas gedaan bij het afmaken van de activering en kan erna ongedaan gemaakt worden.</li>
+               <li>De actie wordt uitgevoerd bij de start van de activering, maar het einde annuleert deze weer.</li>
+              </ul>
+              <p>Bij acties kun je aan veel interactieve onderdelen denken. Deze kunnen relatief simpel zijn, zoals links en buttons, maar ook ingewikkelder zoals sliders en patronen voor drag-and-drop.</p>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <p>Gebruik het <code class="utrecht-code">click</code>-event. Dit is apparaatonafhankelijk.</p>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -308,7 +330,7 @@
                 Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/TR/WCAG22/#pointer-cancellation" class="utrecht-link utrecht-link--html-a"><span lang="en">2.5.2 Pointer Cancellation</span></a
                 >.
                </li>
-               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#aanwijzerannulering" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a>.</li>
+               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#pointer-cancellation" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a>.</li>
                <li>
                 Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#pointer-cancellation" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 2.5.2 Pointer Cancellation</span></a
                 >.
@@ -355,8 +377,10 @@
           <div class="col col--3">
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#in-het-kort" class="table-of-contents__link toc-highlight">In het kort</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
