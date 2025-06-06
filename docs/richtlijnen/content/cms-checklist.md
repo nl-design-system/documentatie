@@ -53,12 +53,17 @@ Gebruik deze checklist om te beoordelen of een CMS contentmakers helpt om toegan
 - Zijn de kopniveaus instelbaar en beperkt tot logische keuzes?
 - Waarschuwt het CMS bij lege koppen of overgeslagen niveaus?
 
+Lees meer: [Zo gebruik je koppen toegankelijk](/richtlijnen/content/tekstopmaak/koppen)
+
 ### Afbeeldingen
 
 - Kun je bij elke afbeelding een alt-tekst toevoegen via een apart veld?
 - Waarschuwt het CMS als een betekenisvolle afbeelding geen beschrijving heeft?
 - Kun je aangeven dat een afbeelding geen beschrijving nodig heeft?
 - Is er een aparte mogelijkheid om een uitgebreide beschrijving bij een afbeelding toe te voegen (voor complexe afbeeldingen, zoals grafieken en infographics)?
+
+Lees meer: Zo voeg je alt-teksten toe
+Lees ook: Waar plaats je de alt-tekst?
 
 ### Tabellen
 
