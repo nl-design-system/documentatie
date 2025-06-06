@@ -125,6 +125,18 @@ Als je over de oorspronkelijke bestanden beschikt, kun je vrij makkelijk ruimte 
 
 Wil je muziek toevoegen aan de overgangen? Let er dan wel op dat het volume laag genoeg is om de audiodescriptie duidelijk te kunnen horen.
 
+## Hoe te testen
+
+Bepaal voor iedere video:
+
+- Is er audiodescriptie aanwezig?
+- Is het duidelijk wie er aan het woord is?
+- Komt belangrijke visuele informatie voor in de audiodescriptie? Denk aan:
+  - Teksten die in beeld komen.
+  - Afbeeldingen/logo's die in beeld komen.
+  - Beschrijvingen van gebeurtenissen.
+  - Beschrijvingen van gezichtsuitdrukkingen en lichaamstaal.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG-succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
