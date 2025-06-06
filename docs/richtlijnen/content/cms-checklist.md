@@ -16,44 +16,124 @@ keywords:
 
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Checklist: ondersteunt je CMS toegankelijk contentbeheer?
+# Helpt je CMS bij het maken van toegankelijke content?
 
-Wil je dat je nieuwe CMS contentmakers helpt om direct toegankelijke content te maken? Dan is het belangrijk om te letten op functionaliteiten die fouten voorkomen, toegankelijk gedrag stimuleren en redactieprocessen ondersteunen. Deze checklist helpt je beoordelen of een CMS in de praktijk bijdraagt aan toegankelijkheid. Óók als je geen technische kennis hebt.
+Een goed CMS doet meer dan alleen de mogelijkheid bieden om toegankelijke content te maken. Het helpt contentmakers om direct de juiste keuzes te maken, voorkomt veelgemaakte fouten en maakt toegankelijkheid onderdeel van het hele publicatieproces.
 
-## Voldoen aan de basis
+## Wat mag je verwachten van een toegankelijk CMS?
 
-Een toegankelijk CMS begint bij de juiste mogelijkheden om content goed op te maken.
+### In de basis
 
-- Kun je in de editor makkelijk kiezen uit verschillende kopniveaus (zoals ‘Kop 1’, ‘Kop 2’, enzovoort)?
-- Kun je lijsten maken met opsommingstekens of nummers zonder zelf opmaak toe te voegen?
-- Kun je tabellen invoegen en instellen welke cellen koppen zijn (zoals ‘bovenste rij is kop’)?
-- Kun je bij elke afbeelding een aparte tekst toevoegen die uitlegt wat er te zien is (alt-tekst)?
-- Geeft het CMS een melding als je vergeet een beschrijving toe te voegen?
-- Kun je in het CMS de taal van de pagina instellen bij het aanmaken of bewerken?
-- Kun je voor een los woord of zin in een andere taal aangeven dat het geen Nederlands is?
+Een toegankelijk CMS:
 
-## Actief ondersteunen bij toegankelijk publiceren
+- biedt semantische opmaak zonder dat je HTML hoeft te gebruiken (zoals koppen, lijsten, tabellen en citaten);
+- maakt het mogelijk om alternatieve informatie toe te voegen, zoals alt-teksten, transcripties en documentlabels;
+- laat je de taal instellen voor de pagina én voor losse tekstfragmenten;
+- maakt toegankelijke keuzes vanzelfsprekend, zonder technische kennis.
 
-Goede systemen helpen je fouten te voorkomen. Ze herkennen risico’s en maken bewustwording onderdeel van het redactiewerk.
+### Extra ondersteuning helpt fouten voorkomen
 
-- Waarschuwt het CMS je als je een kop zonder tekst maakt, of een afbeelding zonder beschrijving toevoegt?
-- Kun je zien of de tekst goed leesbaar is op een afbeelding of een gekleurd vlak?
-- Kun je bij het uploaden van een video velden invullen voor ondertiteling of transcript?
-- Kun je bij een link naar een document aangeven dat het bijvoorbeeld een pdf is?
+Een goed CMS helpt contentmakers fouten voorkomen door:
 
-## Toegankelijkheid ingebakken in het proces
+- waarschuwingen bij veelgemaakte fouten (zoals ontbrekende alt-teksten of onlogische kopstructuren);
+- slimme beperkingen of richtlijnen in de editor (zoals kleurgebruik of onderstreping);
+- controles vóór publicatie (bijvoorbeeld op ontbrekende beschrijvingen of instellingen).
 
-In een volwassen redactieproces is toegankelijkheid geen losse stap, maar een geïntegreerd onderdeel. Deze functies helpen je die borging vorm te geven.
+## Checklist: ondersteunt het CMS toegankelijk publiceren?
 
-- Kun je vóór publicatie controleren of alle noodzakelijke informatie is ingevuld (zoals koppen, alt-teksten, taalinstellingen)?
-- Kun je fouten of waarschuwingen over toegankelijkheid ergens terugzien of opvolgen?
-- Zijn er gebruikersrollen zodat bijvoorbeeld een eindredacteur content kan controleren op toegankelijkheid?
-- Wordt er ergens bijgehouden hoeveel content (nog) toegankelijkheidsproblemen bevat?
+Gebruik deze checklist om te beoordelen of een CMS contentmakers helpt om toegankelijke content te maken. De structuur volgt de onderdelen uit de richtlijnen voor content op NL Design System. Per onderdeel kun je nagaan of het CMS:
 
-## Tot slot
+- de juiste structuur en opmaak ondersteunt;
+- fouten helpt voorkomen;
+- toegankelijk gedrag stimuleert.
 
-Toegankelijke content vraagt om bewuste keuzes van redacteuren én om een CMS dat die keuzes ondersteunt. Laat je bij de aanschaf van een nieuw CMS dus niet alleen leiden door technische eisen of visuele mogelijkheden, maar kijk ook kritisch naar de redactieomgeving. Hoeveel fouten worden er voorkomen? Hoeveel toegankelijk gedrag wordt er gestimuleerd?
+### Koppen
 
-Deze checklist helpt je om die vragen concreet te maken. Zo leg je een stevige basis voor een website die écht werkt voor iedereen.
+- Kan een contentmaker koppen toevoegen via een duidelijke knop (zonder handmatige opmaak)?
+- Zijn de kopniveaus instelbaar en beperkt tot logische keuzes?
+- Waarschuwt het CMS bij lege koppen of overgeslagen niveaus?
+
+### Afbeeldingen
+
+- Kun je bij elke afbeelding een alt-tekst toevoegen via een apart veld?
+- Waarschuwt het CMS als een betekenisvolle afbeelding geen beschrijving heeft?
+- Kun je aangeven dat een afbeelding geen beschrijving nodig heeft?
+- Is er een aparte mogelijkheid om een uitgebreide beschrijving bij een afbeelding toe te voegen (voor complexe afbeeldingen, zoals grafieken en infographics)?
+
+### Tabellen
+
+- Kun je tabellen invoegen zonder HTML?
+- Kun je kopcellen markeren voor rijen en kolommen?
+- Waarschuwt het CMS bij tabellen die onlogisch of complex zijn?
+- Wordt de leesvolgorde gecontroleerd?
+
+### Opsommingen
+
+- Kun je kiezen tussen genummerde en ongenummerde lijsten?
+- Wordt standaard semantische HTML-opmaak gebruikt (ul/ol)?
+- Zijn de lijstknoppen duidelijk gelabeld?
+
+### Tekst benadrukken
+
+- Kun je vet of cursief toepassen via een knop in de editor?
+- Wordt het gebruik van onderstreping of alleen hoofdletters afgeraden?
+- Is handmatige styling (bijv. via inline CSS) beperkt of uitgesloten?
+
+### Citaten
+
+- Is er een aparte functie voor citaten (zoals blockquote)?
+- Kun je korte én lange citaten correct opmaken?
+
+### Linkteksten
+
+- Stimuleert het CMS het schrijven van duidelijke, betekenisvolle linkteksten?
+- Herkent of waarschuwt het systeem bij teksten als ‘klik hier’?
+- Kun je aangeven dat het om een download of externe link gaat?
+
+### Video
+
+- Kun je een transcript, ondertiteling of audiodescriptie toevoegen?
+- Kun je aangeven of gebarentaal aanwezig is?
+- Waarschuwt het CMS als belangrijke informatie ontbreekt?
+
+### Kleurgebruik en contrast
+
+- Kun je alleen kleuren kiezen die voldoende contrast bieden?
+- Waarschuwt het CMS bij slechte leesbaarheid?
+- Is tekst op vlakken of afbeeldingen altijd leesbaar?
+
+### Externe documenten
+
+- Kun je aangeven wat voor bestandstype een link opent (zoals pdf)?
+- Kun je metadata invullen, zoals titel, taal of beschrijving?
+- Wordt het toevoegen van ontoegankelijke documenten ontmoedigd?
+
+## Extra ondersteuning voor een nog betere borging van toegankelijkheid
+
+Een CMS met slimme extra functies helpt contentmakers om toegankelijkheid nog beter te borgen — ook zonder specialistische kennis. Zulke functies maken het makkelijker om fouten te voorkomen en helpen je scherp te blijven in situaties met tijdsdruk, beperkte kennis of veel verschillende soorten content.
+
+Voorbeelden van extra ondersteuning:
+
+- Visueel verborgen koppen toevoegen  
+  Kun je koppen toevoegen die niet zichtbaar zijn op de pagina, maar wel worden voorgelezen door screenreaders?
+- Automatische controle op toegankelijkheidsproblemen vóór publicatie  
+  Geeft het CMS bij het opslaan of publiceren feedback over fouten zoals ontbrekende alt-teksten?
+- Zijn er standaardinstellingen die zorgen voor toegankelijke keuzes?  
+  Denk aan voldoende kleurcontrast, verplichte alt-teksten of het automatisch goed opmaken van koppen, lijsten en citaten.
+- Toegankelijkheid in herbruikbare componenten  
+  Zijn er kant-en-klare blokken (zoals call-to-actions of tabellen) die standaard toegankelijk zijn?
+- Inline previews of simulaties  
+  Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
+
+## Tot slot: hoe gebruik je dit hulpmiddel?
+
+Gebruik dit overzicht bij:
+
+- het oriënteren of aanbesteden van een nieuw CMS;
+- het opstellen van functionele eisen voor leveranciers;
+- de evaluatie van een bestaand CMS;
+- het verbeteren van de CMS-omgeving en werkprocessen.
+
+Het helpt je om de juiste vragen te stellen, ook zonder technische kennis, en zo een CMS te kiezen dat toegankelijk publiceren mogelijk én makkelijker maakt.
 
 <FooterInfo />
