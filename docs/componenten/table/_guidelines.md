@@ -15,7 +15,7 @@ In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om sne
 <!--
 ### Heading versus caption {#heading-versus-caption}
 
-Voor screenreader gebruikers is het voordeel van het `<caption>` element dat die zowel context geeft wanneer je bij de tabel komt en je de pagina van begin tot einde leest, als wanneer je van verderop weer terug gaat naar een eerdere tabel. Een heading die een tabel beschrijft (`h1`-`h6` element) wordt alleen aangekondigd wanneer je van begin naar het einde leest; je mist dus context als je terug gaat.
+Voor gebruikers van screenreaders is het voordeel van het `<caption>` element dat die zowel context geeft wanneer je bij de tabel komt en je de pagina van begin tot einde leest, als wanneer je van verderop weer terug gaat naar een eerdere tabel. Een heading die een tabel beschrijft (`h1`-`h6` element) wordt alleen aangekondigd wanneer je van begin naar het einde leest; je mist dus context als je terug gaat.
 -->
 
 ## Sorteer de tabelrijen {#sorteer-de-tabelrijen}
