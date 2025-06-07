@@ -4,7 +4,7 @@ import { VideoPlayer } from "@site/src/components/VideoPlayer";
 
 # Legends bij een fieldset
 
-Een `<legend>` dient als de naam van de groep. Screenreaders lezen deze legend voor bij elk invoerveld in de fieldset (groep), zodat deze koppeling ook duidelijk is zonder de visuele informatie.
+Een `<legend>` dient als de naam van de groep. [Screenreaders](/woordenlijst/#screenreader) lezen deze legend voor bij elk invoerveld in de fieldset (groep), zodat deze koppeling ook duidelijk is zonder de visuele informatie.
 
 `<legend>Uw adresgegevens</legend>`
 

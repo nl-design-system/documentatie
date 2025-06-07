@@ -8,7 +8,7 @@ Er is een aantal toegankelijkheidsproblemen met het gebruik van disabled buttons
 
 - De gebuiker moet zoeken wat er mis is, waarom kan het formulier niet worden verzonden?
 - Meestal is een disabled button grijs met grijze tekst. Dit is voor veel gebruikers slecht zichtbaar.
-- Toetsenbord- en screenreadergebruikers kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik.
+- Gebruikers van [screenreaders](/woordenlijst/#screenreader) en toetsenborden kunnen de disabled button geen focus geven en dat is verwarrend en onverwacht in het gebruik.
 - Gebruikers kunnen verandering van disabled in enabled soms niet opmerken als deze uit beeld is en blijven zoeken naar wat er mis is.
 
 Een goede oplossing en vervanging voor een disabled button: schrijf goede labelteksten, descriptions en foutmeldingen. Zodat de gebruiker weet wat er mis is en niet hoeft te puzzelen.

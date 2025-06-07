@@ -2,7 +2,7 @@
 
 Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam van de kleur, de hex-code of de hsl-waarde, de transparantie, het doel van de kleur, de CSS-class.
 
-Dan is het voor screenreadergebruikers en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.
+Dan is het voor gebruikers van [screenreaders](/woordenlijst/#screenreader) en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.
 
 Gerelateerde NL Design System richtlijnen:
 

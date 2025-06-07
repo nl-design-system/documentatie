@@ -13,6 +13,6 @@ Plaats de uitleg over wel of niet verplichte velden altijd boven het formulier, 
 
 Maak de markering ook onderdeel van de labeltekst.
 
-Screenreadergebruikers krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.
+Gebruikers van [screenreaders](/woordenlijst/#screenreader) krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.
 
 Door te helpen fouten te voorkomen voldoe van aan [WCAG-succescriterium 3.3.2 Labels of instructies](/wcag/3.3.2) (niveau A).

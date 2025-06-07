@@ -8,4 +8,5 @@ Een populaire manier om verplichte velden aan te duiden is door in het label een
 
 Gebruik je deze constructie toch omdat je CMS of plug-in alleen deze mogelijkheid biedt, leg dan boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende, niet iedereen bezit deze voorkennis.
 
-Uit onderzoek van Elevenways blijkt dat de asterisk goed wordt voorgelezen door screenreaders: [Hoe screenreaders speciale tekens lezen: een update](https://elevenways.be/nl/artikels/hoe-screen-readers-speciale-tekens-lezen).
+Uit onderzoek van Elevenways blijkt dat de asterisk goed wordt voorgelezen door [screenreaders](/woordenlijst/#screenreader): [Hoe screenreaders speciale tekens lezen: een update](https://elevenways.be/nl/artikels/hoe-screen-readers-speciale-tekens-lezen).
+Dit is wel afhankelijk van hoe de asterisk geïmplementeerd is. De test baseert zich op platte tekst, en niet op afbeeldingen, iconen of tekst die door middel van CSS toegevoegd is.

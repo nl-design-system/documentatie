@@ -49,7 +49,7 @@ Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:
 
 ## Alternatieve teksten verbergen voor hulpsoftware
 
-Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet wát er op de afbeelding staat, maar zelfs niet dát er een afbeelding staat. Bezoekers die gebruik maken van bijvoorbeeld een schermlezer hoeven dan niet onnodig naar de beschrijving te luisteren. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.
+Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet wát er op de afbeelding staat, maar zelfs niet dát er een afbeelding staat. Bezoekers die gebruik maken van bijvoorbeeld een [screenreader](/woordenlijst/#screenreader) hoeven dan niet onnodig naar de beschrijving te luisteren. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.
 
 <Guideline appearance="dont" title="Informatieve afbeeldingen verbergen voor hulpsoftware door het alt-attribuut leeg te laten.">
   <Canvas language="html" defaultExpandedCode>
