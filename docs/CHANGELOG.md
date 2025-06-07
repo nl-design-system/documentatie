@@ -1,5 +1,21 @@
 # @nl-design-system-unstable/documentation
 
+## 1.7.0
+
+### Minor Changes
+
+- bdd0da6: Sectie Hoe te testen toegevoegd aan richtlijnen - video - audiodescriptie.
+- 7b019fa: Pagina gebarentaal voor video aan de content-richtlijnen toegevoegd.
+- f13bb3d: Pagina Flitsen bij video bij Video richtlijnen toegevoegd.
+- 8a5cfb3: Hoe te testen sectie toegevoegd aan richtlijnen - video - ondertiteling.
+- 25cc4cc: Frequentie van Rijkshuisstijl Community Open Hour gewijzigd van incorrecte wekelijks naar correcte tweewekelijks.
+- 5c40336: Hoe te testen sectie toegevoegd aan richtlijnen - video - transcript.
+- f531ac9: Pagina over kleurgebruik voor contentmakers toegevoegd.
+- e68a7c2: Tekst [WCAG-pagina 2.5.2](/wcag/2.5.2) volledig afgemaakt.
+- 7b5a8ce: Tekst [WCAG-pagina 2.5.7](/wcag/2.5.7) volledig afgemaakt.
+- ba43b39: Tekst [WCAG-pagina 3.2.3](/wcag/3.2.3) volledig afgemaakt
+- eb27bf9: Tekst [WCAG-pagina 3.2.4](/wcag/3.2.4) volledig afgemaakt.
+
 ## 1.6.0
 
 ### Minor Changes
