@@ -1,20 +1,24 @@
 ---
-title: Overzicht · Voorbeelden
+title: Introductie · Voorbeelden
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Overzicht
+sidebar_label: Introductie
 sidebar_position: 1
-pagination_label: Overzicht
-description: Voorbeelden Overzicht
+pagination_label: Introductie
+description: Introductie voorbeelden NL Design System
+slug: /richtlijnen
 keywords:
-  - index
   - voorbeelden
+  - design system
+  - documentatie
 ---
 
 # Voorbeelden
 
-Hier tonen we voorbeelden van veelvoorkomende pagina's en klantreizen, gemaakt met richtlijnen en componenten uit het NL Design System. Deze voorbeelden zijn door diverse organisaties gemaakt op basis van documentatie, patronen en componenten van het NL Design System.
+Het NL Design System verzamelt hier voorbeelden van veelvoorkomende patronen en templates voor digitale diensten. Deze voorbeelden zijn ontwikkeld door verschillende organisaties op basis van de richtlijnen en componenten van het NL Design System.
 
-Op dit moment werken we hard om voorbeelden te delen. Hou deze pagina in de gaten!
+[Bekijk de patronen en templates](patronen-en-templates)
 
-<!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NL Design System -->
+De uitgangspunten zijn toegankelijkheid, gebruiksvriendelijkheid en consistentie. Deze worden onderbouwd met gebruikersonderzoek.
+
+[Lees meer over gebruikersonderzoek](onderzoek)
