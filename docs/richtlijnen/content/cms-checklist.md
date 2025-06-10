@@ -135,8 +135,6 @@ Een CMS met slimme extra functies helpt contentmakers om toegankelijkheid nog be
 
 Voorbeelden van extra ondersteuning:
 
-- Visueel verborgen koppen toevoegen  
-  Kun je koppen toevoegen die niet zichtbaar zijn op de pagina, maar wel worden voorgelezen door screenreaders?
 - Automatische controle op toegankelijkheidsproblemen vóór publicatie  
   Geeft het CMS bij het opslaan of publiceren feedback over fouten zoals ontbrekende alt-teksten?
 - Zijn er standaardinstellingen die zorgen voor toegankelijke keuzes?  
@@ -144,7 +142,9 @@ Voorbeelden van extra ondersteuning:
 - Toegankelijkheid in herbruikbare componenten  
   Zijn er kant-en-klare blokken (zoals call-to-actions of tabellen) die standaard toegankelijk zijn?
 - Inline previews of simulaties  
-  Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
+ Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
+<!-- - Visueel verborgen koppen toevoegen
+  Kun je koppen toevoegen die niet zichtbaar zijn op de pagina, maar wel worden voorgelezen door screenreaders? -->
 
 ## Tot slot: hoe gebruik je dit hulpmiddel?
 
