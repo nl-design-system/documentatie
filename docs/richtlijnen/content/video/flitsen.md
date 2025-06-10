@@ -68,6 +68,13 @@ Is het helemaal niet mogelijk om een mogelijke flits te voorkomen? Voeg dan een 
 
 Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Dan is het toevoegen van een waarschuwing niet voldoende om te voldoen aan [succescriterium 2.3.1 Drie flitsen beneden drempelwaarde](/wcag/2.3.1).
 
+## Hoe te testen
+
+Controleer voor iedere video:
+
+- Bekijk de video in de grootst mogelijke aangeboden weergave. Bevat de video mogelijke flitsen?
+- Zo ja, controleer de video dan met een analyse tool.
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG-succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
