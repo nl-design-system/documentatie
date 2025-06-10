@@ -30,7 +30,13 @@ Documenten die je op de website zet of waar je naar verwijst, zoals pdf’s of W
 - Is het echt nodig om een document te gebruiken?  
   Kun je de inhoud ook gewoon als webpagina aanbieden? Dat is bijna altijd gebruiksvriendelijker én beter toegankelijk.
 - Is het document goed opgemaakt?  
-  Vraag na of de maker het document toegankelijk heeft gemaakt (met koppenstructuur, leesvolgorde, alternatieve teksten, enz.). Of gebruik een toegankelijkheidschecker in Acrobat of Word, als je daar bekend mee bent.
+  Vraag na of de maker het document toegankelijk heeft gemaakt. Denk aan:
+
+  - Tagging. Dit is de code die hulpsoftware nodig heeft om het bestand te lezen.
+  - Een kloppende koppenstructuur.
+  - Alternatieve teksten voor afbeeldingen.
+
+ Je kunt ook zelf een ingebouwde toegankelijkheidschecker gebruiken, bijvoorbeeld in Acrobat of Word. Hou er rekening mee dat deze checks niet alles controleren, maar het geeft je wel snel een beeld van de toegankelijkheid van het document.
 - Heb je een duidelijke linktekst gebruikt?  
   Vermeld wat voor document het is (zoals ‘pdf’ of ‘Word’) en geef aan waar het over gaat. Bijvoorbeeld:
   Jaarverslag 2024 (pdf) of Aanvraagformulier (Word)
