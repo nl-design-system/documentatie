@@ -320,7 +320,7 @@ const sidebars: SidebarsConfig = {
                   type: 'doc',
                   id: 'community/events/rijkshuisstijl-community-open-hour/rijkshuisstijl-community-open-hour',
                 },
-                // { type: 'doc', id: 'community/events/rijkshuisstijl-community-open-hour/aanmelden' }, // TODO: Binnenkort maken we een aanmeldpagina
+                { type: 'doc', id: 'community/events/rijkshuisstijl-community-open-hour/aanmelden' },
               ],
             },
             {
