@@ -142,9 +142,7 @@ Voorbeelden van extra ondersteuning:
 - Toegankelijkheid in herbruikbare componenten  
   Zijn er kant-en-klare blokken (zoals call-to-actions of tabellen) die standaard toegankelijk zijn?
 - Inline previews of simulaties  
- Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
-<!-- - Visueel verborgen koppen toevoegen
-  Kun je koppen toevoegen die niet zichtbaar zijn op de pagina, maar wel worden voorgelezen door screenreaders? -->
+  Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
 
 ## Tot slot: hoe gebruik je dit hulpmiddel?
 
