@@ -36,7 +36,8 @@ Documenten die je op de website zet of waar je naar verwijst, zoals pdf’s of W
   - Een kloppende koppenstructuur.
   - Alternatieve teksten voor afbeeldingen.
 
- Je kunt ook zelf een ingebouwde toegankelijkheidschecker gebruiken, bijvoorbeeld in Acrobat of Word. Hou er rekening mee dat deze checks niet alles controleren, maar het geeft je wel snel een beeld van de toegankelijkheid van het document.
+Je kunt ook zelf een ingebouwde toegankelijkheidschecker gebruiken, bijvoorbeeld in Acrobat of Word. Hou er rekening mee dat deze checks niet alles controleren, maar het geeft je wel snel een beeld van de toegankelijkheid van het document.
+
 - Heb je een duidelijke linktekst gebruikt?  
   Vermeld wat voor document het is (zoals ‘pdf’ of ‘Word’) en geef aan waar het over gaat. Bijvoorbeeld:
   Jaarverslag 2024 (pdf) of Aanvraagformulier (Word)
