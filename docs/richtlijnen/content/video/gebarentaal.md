@@ -84,6 +84,17 @@ Gebarentaal verschilt per land — en soms zelfs per regio. Zorg dus dat de aanb
 
 Gebruik automatisch gegenereerde gebarentaal pas als uit gebruikersonderzoek blijkt dat het ook daadwerkelijk werkt voor dove en slechthorende mensen. Laat de kwaliteit altijd toetsen door mensen die de taal dagelijks gebruiken. Want alleen dan weet je zeker dat je iedereen echt bereikt.
 
+## Hoe te testen
+
+Controleer voor iedere video met gebarentaal:
+
+- Is de tolk volledig in beeld?
+- Zijn de gebaren, mimiek en lichaamshouding goed zichtbaar?
+- Overlapt de tolk niet met belangrijke informatie in beeld?
+- Is het beeld met de tolk groot genoeg?
+- Lopen de gebaren synchroon met de audio?
+- Kloppen de gebaren?
+
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
 Op de WCAG-succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
