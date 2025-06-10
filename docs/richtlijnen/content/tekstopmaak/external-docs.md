@@ -35,7 +35,7 @@ Documenten die je op de website zet of waar je naar verwijst, zoals pdf’s of W
   Vermeld wat voor document het is (zoals ‘pdf’ of ‘Word’) en geef aan waar het over gaat. Bijvoorbeeld:
   Jaarverslag 2024 (pdf) of Aanvraagformulier (Word)
 - Bied je alternatieven aan?  
-  Kan iemand die het document niet kan openen, de informatie op een andere manier krijgen? Bijvoorbeeld door contact op te nemen, of door de inhoud ook op de website te publiceren.
+  Kan iemand die het document niet kan openen, de informatie op een andere manier krijgen? Biedt de inhoud bijvoorbeeld ook als een webpagina aan, of biedt contactgegevens aan waarmee bezoekers de informatie kunnen opvragen.
 
 <Guideline appearance="do" title="In de linktekst vermelden om wat voor document het gaat">
   <Canvas language="html">
