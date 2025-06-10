@@ -104,13 +104,19 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
   </Canvas>
 </Guideline>
 
-<Guideline appearance="dont" title="Een kopniveau overslaan.">
+### Sla geen kopniveaus over
+
+Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
+
+Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een Kop 4 weer een nieuwe sectie te beginnen met een Kop 2.
+
+<Guideline appearance="dont" title="Van boven naar beneden een kopniveau overslaan.">
   <Canvas language="html">
     {() => (
       <>
           <h1>Dit is een kop met niveau 1</h1>
           <p>
-            Sla geen niveaus over door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. 
+            Sla, van boven naar beneden, geen niveaus over door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. 
           </p>
           <h3>Dit is een kop met niveau 3</h3>
           <p>
