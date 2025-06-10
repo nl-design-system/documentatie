@@ -22,7 +22,7 @@
   },
   43916: (e, n, t) => {
    t.d(n, { Z: () => s });
-   const s = t.p + 'assets/files/design-open-hour-c558860df9b9c023aab6c7193073cb31.ics';
+   const s = t.p + 'assets/files/design-open-hour-51094cb693e927e39726c5650572743c.ics';
   },
   40139: (e, n, t) => {
    t.d(n, { Z: () => r, a: () => a });

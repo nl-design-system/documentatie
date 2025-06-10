@@ -6,9 +6,9 @@
    t.r(n), t.d(n, { assets: () => l, contentTitle: () => i, default: () => u, frontMatter: () => a, metadata: () => r, toc: () => d });
    var o = t(52676),
     s = t(40139);
-   const a = { title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In het Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 },
+   const a = { title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In de Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 },
     i = 'Bedankt!',
-    r = { id: 'community/events/developer-open-hour/aanmelden-success', title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', description: 'Je bent nu aangemeld voor onze wekelijkse Developer Open Hour.', source: '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', sourceDirName: 'community/events/developer-open-hour', slug: '/events/developer-open-hour/aanmelden/bedankt', permalink: '/events/developer-open-hour/aanmelden/bedankt', draft: !1, unlisted: !0, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/developer-open-hour/aanmelden-success.mdx', tags: [], version: 'current', frontMatter: { title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In het Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 } },
+    r = { id: 'community/events/developer-open-hour/aanmelden-success', title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', description: 'Je bent nu aangemeld voor onze wekelijkse Developer Open Hour.', source: '@site/docs/community/events/developer-open-hour/aanmelden-success.mdx', sourceDirName: 'community/events/developer-open-hour', slug: '/events/developer-open-hour/aanmelden/bedankt', permalink: '/events/developer-open-hour/aanmelden/bedankt', draft: !1, unlisted: !0, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/developer-open-hour/aanmelden-success.mdx', tags: [], version: 'current', frontMatter: { title: 'Bedankt voor je aanmelding \xb7 Design Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aanmelden', pagination_label: 'In de Developer Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', slug: '/events/developer-open-hour/aanmelden/bedankt', unlisted: !0 } },
     l = {},
     d = [];
    function c(e) {
@@ -22,11 +22,11 @@
   },
   48707: (e, n, t) => {
    t.d(n, { Z: () => o });
-   const o = t.p + 'assets/files/developer-open-hour-even-98adc3afa1de917e34ffae486438d6a0.ics';
+   const o = t.p + 'assets/files/developer-open-hour-even-d9ba27a3557437eef96f200febd4a1b7.ics';
   },
   69324: (e, n, t) => {
    t.d(n, { Z: () => o });
-   const o = t.p + 'assets/files/developer-open-hour-oneven-6cfa924bf3b6c34eb196baa0cfb54ee3.ics';
+   const o = t.p + 'assets/files/developer-open-hour-oneven-d27edd61ab5b5f8a02237f1137cb5082.ics';
   },
   40139: (e, n, t) => {
    t.d(n, { Z: () => r, a: () => i });

@@ -2,17 +2,17 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [76902],
  {
-  77376: (e, t, n) => {
-   n.r(t), n.d(t, { assets: () => l, contentTitle: () => o, default: () => c, frontMatter: () => r, metadata: () => a, toc: () => d });
-   var s = n(52676),
-    i = n(40139);
+  77376: (e, n, t) => {
+   t.r(n), t.d(n, { assets: () => l, contentTitle: () => o, default: () => c, frontMatter: () => r, metadata: () => a, toc: () => d });
+   var s = t(52676),
+    i = t(40139);
    const r = { title: 'Spacing tokens als systeem voor verticale ruimte', slug: 'spacing-tokens', authors: [{ name: 'Hidde de Vries', title: 'Public relations & Toegankelijkheidsspecialist NL Design System', url: 'https://www.linkedin.com/in/hiddedevries/' }], tags: ['NL Design System', 'design tokens'], hide_table_of_contents: !1, date: new Date('2023-11-09T00:00:00.000Z') },
     o = void 0,
     a = {
      permalink: '/blog/spacing-tokens',
      source: '@site/blog/2023/20231109-spacing-tokens.md',
      title: 'Spacing tokens als systeem voor verticale ruimte',
-     description: 'Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour.',
+     description: 'Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in de Design Open Hour.',
      date: '2023-11-09T00:00:00.000Z',
      formattedDate: '9 november 2023',
      tags: [
@@ -29,31 +29,31 @@
     l = { authorsImageUrls: [void 0] },
     d = [];
    function m(e) {
-    const t = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, s.jsx)(t.p, { children: 'Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in het Design Open Hour.' });
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, s.jsx)(n.p, { children: 'Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in de Design Open Hour.' });
    }
    function c(e = {}) {
-    const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, s.jsx)(t, { ...e, children: (0, s.jsx)(m, { ...e }) }) : m(e);
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(m, { ...e }) }) : m(e);
    }
   },
-  40139: (e, t, n) => {
-   n.d(t, { Z: () => a, a: () => o });
-   var s = n(75271);
+  40139: (e, n, t) => {
+   t.d(n, { Z: () => a, a: () => o });
+   var s = t(75271);
    const i = {},
     r = s.createContext(i);
    function o(e) {
-    const t = s.useContext(r);
+    const n = s.useContext(r);
     return s.useMemo(
      function () {
-      return 'function' == typeof e ? e(t) : { ...t, ...e };
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
      },
-     [t, e],
+     [n, e],
     );
    }
    function a(e) {
-    let t;
-    return (t = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), s.createElement(r.Provider, { value: t }, e.children);
+    let n;
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), s.createElement(r.Provider, { value: n }, e.children);
    }
   },
  },
