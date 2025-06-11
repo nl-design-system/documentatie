@@ -108,7 +108,7 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
            <h2>Kop met niveau 2</h2>
           <p>
             Als je in een tekst weer een nieuw hoofdstuk wilt beginnen dan mag je hier weer H2 gebruiken.
-            Terug omhoog mag je namelijk wel kopniveaus overslaan.
+            Terug omhoog mag je wel kopniveaus overslaan.
           </p>
       </>
     )}
