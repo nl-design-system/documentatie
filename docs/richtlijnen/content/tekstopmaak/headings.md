@@ -79,6 +79,12 @@ Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duideli
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
+### Sla geen kopniveaus over
+
+Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
+
+Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een Kop 4 weer een nieuwe sectie te beginnen met een Kop 2.
+
 <Guideline appearance="do" title="Gebruik kopniveaus in de de goede volgorde.">
   <Canvas language="html">
     {() => (
@@ -99,16 +105,15 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
           <p>
             Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
           </p>
+           <h2>Kop met niveau 2</h2>
+          <p>
+            Als je in een tekst weer een nieuw hoofdstuk wilt beginnen dan mag je hier weer H2 gebruiken.
+            Terug omhoog mag je namelijk wel kopniveaus overslaan.
+          </p>
       </>
     )}
   </Canvas>
 </Guideline>
-
-### Sla geen kopniveaus over
-
-Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
-
-Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een Kop 4 weer een nieuwe sectie te beginnen met een Kop 2.
 
 <Guideline appearance="dont" title="Van boven naar beneden een kopniveau overslaan.">
   <Canvas language="html">
