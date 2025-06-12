@@ -66,6 +66,6 @@ Per afbeelding die je plaatst is de beschrijving die je meegeeft anders, omdat h
 
 ## Gebruik je een grafiek of diagram?
 
-Bekijk dan ook [de richtlijnen voor kleurgebruik in grafieken](/richtlijnen/content/afbeeldingen/kleurgebruik-grafieken). Daar lees je hoe je ervoor zorgt dat de informatie ook zonder kleur goed te begrijpen is.
+Bekijk dan ook de [richtlijnen voor grafieken](/richtlijnen/content/afbeeldingen/grafieken). Daar lees je hoe je ervoor zorgt dat de informatie ook zonder kleur goed te begrijpen is.
 
 <FooterInfo />

@@ -1,11 +1,11 @@
 ---
-title: Kleurgebruik in grafieken · Afbeeldingen · Content · Richtlijnen
+title: Grafieken · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Kleurgebruik in grafieken
-pagination_label: Kleurgebruik in grafieken
-description: Richtlijnen voor kleurgebruik in grafieken.
-slug: /richtlijnen/content/afbeeldingen/kleurgebruik-grafieken
+sidebar_label: Grafieken
+pagination_label: Grafieken
+description: Richtlijnen voor grafieken.
+slug: /richtlijnen/content/afbeeldingen/grafieken
 keywords:
   - afbeeldingen
   - toegankelijke afbeeldingen
@@ -21,7 +21,7 @@ keywords:
 
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Kleurgebruik in grafieken
+# Grafieken
 
 In grafieken wordt vaak kleur gebruikt om onderdelen van de data van elkaar te onderscheiden. Maar niet iedereen ziet kleur op dezelfde manier. Daarom mag kleur nooit de enige manier zijn om informatie over te brengen.
 
@@ -64,6 +64,10 @@ De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.co
 - Zorg dat er genoeg ruimte zit tussen grafiekelementen zodat alles goed zichtbaar blijft.
 
 [Lees ook de richtlijnen voor kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik/)
+
+## Alternatieve tekst bij grafieken
+
+Denk er ook aan dat een grafiek een afbeelding is. Geef dus altijd een goede alternatieve tekst of beschrijving. Meer daarover lees je bij de [richtlijnen voor informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen).
 
 ## Hoe te testen
 

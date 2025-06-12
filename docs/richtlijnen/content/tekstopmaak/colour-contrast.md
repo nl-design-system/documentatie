@@ -98,9 +98,9 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   </Canvas>
 </Guideline>
 
-## Meer over kleurgebruik in afbeeldingen
+## Meer over kleurgebruik in grafieken
 
-Kleur speelt ook een belangrijke rol in grafieken en andere informatieve afbeeldingen. Hoe je die toegankelijk maakt, lees je in de [richtlijnen voor kleurgebruik in grafieken](/richtlijnen/content/afbeeldingen/kleurgebruik-grafieken).
+Kleur speelt ook een belangrijke rol in grafieken en andere informatieve afbeeldingen. Hoe je die toegankelijk maakt, lees je in de [richtlijnen voor grafieken](/richtlijnen/content/afbeeldingen/grafieken).
 
 ## Hoe te testen
 
