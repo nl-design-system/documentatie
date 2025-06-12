@@ -29,7 +29,7 @@ Let op:
 
 - Kleur alleen is niet genoeg om informatie over te brengen.
 - Tekst in of bij een grafiek moet goed leesbaar zijn.
-- De boodschap van de grafiek moet ook zonder beeld duidelijk zijn.
+- De boodschap van de grafiek moet ook zonder afbeelding duidelijk zijn.
 
 Op deze pagina lees je waar je op kunt letten om grafieken beter leesbaar en begrijpelijk te maken voor een brede groep gebruikers.
 
@@ -84,29 +84,32 @@ De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.co
 
 In het volgende staafdiagram is goed rekening gehouden met toegankelijkheid: de verschillende staven zijn niet alleen van elkaar te onderscheiden met kleur, maar ook met patronen. Er is voldoende ruimte tussen de elementen, een duidelijke legenda maakt de gegevens leesbaar en de informatie is ook beschikbaar in tabelvorm. De afbeelding is afkomstig van het [dashboard digitoegankelijk](https://dashboard.digitoegankelijk.nl/).
 
-![Afbeelding van een staafdiagram op het dashboard van DigiToegankelijk waarin rekening is gehouden met de voorgaande tips](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
+![Voorbeeld van een toegankelijk staafdiagram met patronen goede leesbaarheid en toelichting in tekst en tabel](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
 
 ## Alternatieve tekst bij grafieken
 
-Denk er ook aan dat een grafiek een afbeelding is. Geef dus altijd een goede alternatieve tekst of beschrijving. Meer daarover lees je bij de [richtlijnen voor informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen).
+Een grafiek is meestal een afbeelding. Geef dus altijd een goede alternatieve tekst (alt-tekst) die de boodschap kort samenvat. Is de grafiek ingewikkeld? Verwijs dan in de alt-tekst naar de toelichting in tekst of een tabel.
+
+Meer weten? Bekijk de [richtlijnen voor informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen).
 
 ## Hoe te testen
 
 Ook zonder technische kennis kun je controleren of een grafiek voor iedereen begrijpelijk is:
 
-- Is de informatie ook zonder kleur te begrijpen?  
-  Kijk of je het verschil tussen onderdelen van de grafiek nog kunt zien als je geen kleuren kunt onderscheiden. Je kunt dit zelf testen door de grafiek in zwart-wit te bekijken of door een kleurenblindheidssimulator te gebruiken. Op [de pagina over gebruik van kleur](/wcag/1.4.1#hoe-te-testen) lees je hoe je dit doet, inclusief handige tools.
-- Zijn de verschillende onderdelen gemarkeerd met labels, patronen of tekst?  
-  Controleer of er naast kleur ook andere manieren zijn om onderscheid te maken, zoals tekstlabels of verschillende lijnstijlen.
-- Is de tekst in en rond de grafiek goed leesbaar?  
-  Let op voldoende contrast tussen tekst en achtergrond, en controleer of de tekst niet over visuele elementen heen valt. Gebruik hiervoor, bijvoorbeeld, [de contrastchecker op deze website](/contrast).
-- Wordt de grafiek ondersteund door een toelichting in de lopende tekst of een alternatief?  
-  Zorg dat de boodschap van de grafiek ook in woorden beschikbaar is.
+- Is de grafiek ook zonder kleur te begrijpen?
+  Bekijk de grafiek in grijstinten of gebruik een kleurenblindheidssimulator. Op de [pagina over gebruik van kleur](/wcag/1.4.1#hoe-te-testen) staan handige tools.
+- Zijn onderdelen te onderscheiden met labels, patronen of tekst?
+  Kijk of er meer is dan alleen kleur om onderdelen te herkennen.
+- Is tekst in of bij de grafiek goed leesbaar?
+  Controleer het contrast. Gebruik zo nodig de contrastchecker.
+- Staat de informatie ook in tekst of een tabel?
+  Zorg dat de boodschap niet alleen in beeld staat, maar ook in woorden beschikbaar is.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
-Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
+De volgende richtlijnen zijn het meest relevant voor het toegankelijk maken van grafieken:
 
+- [1.1.1 Niet-tekstuele content](/wcag/1.1.1)
 - [1.4.1 Gebruik van kleur](/wcag/1.4.1)
 - [1.4.3 Contrast (minimum)](/wcag/1.4.3)
 - [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
