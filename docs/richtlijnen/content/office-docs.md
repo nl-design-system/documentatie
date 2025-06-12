@@ -53,6 +53,6 @@ Ook kantoorbestanden zoals pdf’s vallen onder dezelfde toegankelijkheidsprinci
 
 - [Successcriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
 - [Successcriterium 1.3.1 Info en relaties](/wcag/1.3.1)
-- [Successcriterium2.4.2 Paginatitel](/wcag/2.4.2)
+- [Successcriterium 2.4.2 Paginatitel](/wcag/2.4.2)
 
 <FooterInfo />
