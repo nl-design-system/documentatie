@@ -69,9 +69,9 @@ De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.co
 
 ### Voorbeeld van een toegankelijk staafdiagram
 
-In de volgende staafdiagram is goed rekening gehouden met toegankelijkheid: de verschillende staven zijn niet alleen van elkaar te onderscheiden met kleur, maar ook met patronen. Er is voldoende ruimte tussen de elementen, een duidelijke legenda maakt de gegevens leesbaar en de informatie is ook beschikbaar in tabelvorm. De afbeelding is afkomstig van het [dashboard digitoegankelijk](https://dashboard.digitoegankelijk.nl/).
+In het volgende staafdiagram is goed rekening gehouden met toegankelijkheid: de verschillende staven zijn niet alleen van elkaar te onderscheiden met kleur, maar ook met patronen. Er is voldoende ruimte tussen de elementen, een duidelijke legenda maakt de gegevens leesbaar en de informatie is ook beschikbaar in tabelvorm. De afbeelding is afkomstig van het [dashboard digitoegankelijk](https://dashboard.digitoegankelijk.nl/).
 
-![Voorbeeld van een toegankelijk staafdiagram met een weergave van het aantal verklaringen van de Nederlandse overheid per kwartaal en status](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
+![Afbeelding van een staafdiagram op het dashboard van DigiToegankelijk waarin rekening is gehouden met de voorgaande tips](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
 
 ## Alternatieve tekst bij grafieken
 
