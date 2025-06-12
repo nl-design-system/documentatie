@@ -30,7 +30,7 @@ Documenten die je op de website zet of waar je naar verwijst, zoals pdf’s of W
 - Is het echt nodig om een document te gebruiken?  
   Kun je de inhoud ook gewoon als webpagina aanbieden? Dat is bijna altijd gebruiksvriendelijker én beter toegankelijk.
 - Is het document goed opgemaakt?  
-  Vraag na of de maker het document toegankelijk heeft gemaakt. Denk aan:
+  Vraag na of de maker het document toegankelijk heeft gemaakt. Gebruik hierbij [de documentatie over kantoorbestanden van DigiToegankelijk](https://www.digitoegankelijk.nl/aan-de-slag/tips/kantoorbestanden).```
 
   - Tagging. Dit is de code die hulpsoftware nodig heeft om het bestand te lezen.
   - Een kloppende koppenstructuur.
