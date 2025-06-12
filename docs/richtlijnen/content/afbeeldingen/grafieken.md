@@ -23,26 +23,39 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Grafieken
 
-In grafieken wordt vaak kleur gebruikt om onderdelen van de data van elkaar te onderscheiden. Maar niet iedereen ziet kleur op dezelfde manier. Daarom mag kleur nooit de enige manier zijn om informatie over te brengen.
+Grafieken maken informatie visueel. Maar niet iedereen ziet of begrijpt die informatie op dezelfde manier. Als contentmaker bepaal je vaak wél hoe een grafiek op de pagina wordt geplaatst, toegelicht of ondersteund. Juist daarin kun je het verschil maken.
+
+Let op:
+
+- Kleur alleen is niet genoeg om informatie over te brengen.
+- Tekst in of bij een grafiek moet goed leesbaar zijn.
+- De boodschap van de grafiek moet ook zonder beeld duidelijk zijn.
+
+Op deze pagina lees je waar je op kunt letten om grafieken beter leesbaar en begrijpelijk te maken voor een brede groep gebruikers.
 
 ## Wat kan er misgaan?
 
-Een veelvoorkomend probleem is dat verschillende onderdelen alleen worden onderscheiden door kleur. Denk aan:
+Een grafiek is meestal een afbeelding, en dus niet vanzelfsprekend voor iedereen toegankelijk. Problemen ontstaan vooral als de informatie alleen visueel wordt overgebracht. Denk bijvoorbeeld aan:
 
-- lijnen in een lijngrafiek waarbij elke lijn alleen een andere kleur heeft;
-- staven in een staafdiagram zonder labels of visuele verschillen;
-- segmenten in een cirkeldiagram zonder beschrijvingen in of bij de afbeelding.
+- gebruik van alleen kleur om verschil aan te geven tussen lijnen, staven of vlakken;
+- ontbreken van tekstlabels of toelichting bij de grafiek;
+- interactieve grafieken waarbij de uitleg alleen zichtbaar is als je eroverheen beweegt met een muis (tooltips);
+- grafieken die niet goed werken met hulptechnologie, zoals schermlezers.
 
-Voor mensen met kleurenblindheid of bij het afdrukken in zwart-wit is de informatie dan lastig of niet te begrijpen.
+Als contentmaker bepaal je vaak niet hoe de grafiek is ontworpen. Maar je kunt wel signaleren of belangrijke informatie ontbreekt, en zorgen voor aanvulling in tekst of toelichting.
 
 ## Wat kun je doen?
 
-Zorg dat kleurgebruik altijd wordt ondersteund door extra visuele of tekstuele informatie:
+Ook als je zelf geen grafieken maakt, kun je bijdragen aan de toegankelijkheid. Let op het volgende:
 
-- gebruik verschillende lijnstijlen zoals stippels of streepjes;
-- voeg labels toe bij de onderdelen van de grafiek, niet alleen in de legenda;
-- gebruik symbolen of patronen om visuele verschillen te versterken;
-- controleer of alle tekst goed leesbaar is, met voldoende contrast en zonder overlap.
+- Vat de boodschap samen in tekst. Geef in de lopende tekst aan wat de grafiek laat zien. Zo is de informatie ook beschikbaar voor mensen die de grafiek niet goed kunnen waarnemen.
+- Controleer of de grafiek zonder kleur te begrijpen is. Kun je de verschillende onderdelen nog onderscheiden als je de kleuren niet ziet? Zo niet, geef dat dan door aan degene die de grafiek maakt.
+- Let op de leesbaarheid van tekst in of bij de grafiek. Controleer of tekst goed zichtbaar is tegen de achtergrond. Vraag om aanpassing als het contrast te laag is.
+- Zorg dat belangrijke informatie niet alleen in een tooltip staat. Tooltip-only informatie is niet toegankelijk voor iedereen. Vraag om een vaste weergave of een extra toelichting in de tekst.
+- Bied een alternatief aan, zoals een tabel. Een tabel maakt de informatie toegankelijker voor lezers en gebruikers van hulptechnologie.
+- Wees kritisch. Ziet de grafiek er onduidelijk uit of twijfel je over de toegankelijkheid? Vraag na of het anders kan. Ook als je niet verantwoordelijk bent voor de grafiek, kun je wel signaleren wat beter kan.
+
+De voorbeelden hierna laten zien wat er mis kan gaan bij het gebruik van kleur in grafieken, maar vooral hoe het beter kan. Zo zie je waar je als contentmaker op kunt letten of naar kunt vragen.
 
 ### Voorbeelden van kleurgebruik in een grafiek
 
