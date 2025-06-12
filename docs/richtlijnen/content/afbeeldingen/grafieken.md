@@ -60,10 +60,18 @@ De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.co
 ### Tips voor staafdiagrammen en cirkeldiagrammen
 
 - Geef uitleg in of bij de grafiek, niet alleen in de legenda.
-- Let op voldoende kleurcontrast tussen onderdelen.
-- Zorg dat er genoeg ruimte zit tussen grafiekelementen zodat alles goed zichtbaar blijft.
+- Zorg voor voldoende contrast tussen kleuren, zodat onderdelen goed te onderscheiden zijn.
+- Gebruik naast kleur ook andere visuele kenmerken, zoals patronen of arceringen, voor extra herkenbaarheid.
+- Laat genoeg ruimte tussen de grafiekelementen zodat alles goed zichtbaar blijft.
+- Bied een alternatief aan, zoals een tabel met dezelfde informatie, voor mensen die de grafiek niet goed kunnen zien of begrijpen.
 
 [Lees ook de richtlijnen voor kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik/)
+
+### Voorbeeld van een toegankelijk staafdiagram
+
+In de volgende staafdiagram is goed rekening gehouden met toegankelijkheid: de verschillende staven zijn niet alleen van elkaar te onderscheiden met kleur, maar ook met patronen. Er is voldoende ruimte tussen de elementen, een duidelijke legenda maakt de gegevens leesbaar en de informatie is ook beschikbaar in tabelvorm. De afbeelding is afkomstig van het [dashboard digitoegankelijk](https://dashboard.digitoegankelijk.nl/).
+
+![Voorbeeld van een toegankelijk staafdiagram met een weergave van het aantal verklaringen van de Nederlandse overheid per kwartaal en status](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
 
 ## Alternatieve tekst bij grafieken
 
