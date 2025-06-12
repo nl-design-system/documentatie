@@ -25,11 +25,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Grafieken maken informatie visueel. Maar niet iedereen ziet of begrijpt die informatie op dezelfde manier. Als contentmaker bepaal je vaak wél hoe een grafiek op de pagina wordt geplaatst, toegelicht of ondersteund. Juist daarin kun je het verschil maken.
 
-Let op:
-
-- Kleur alleen is niet genoeg om informatie over te brengen.
-- Tekst in of bij een grafiek moet goed leesbaar zijn.
-- De boodschap van de grafiek moet ook zonder afbeelding duidelijk zijn.
+Zorg dat kleur niet de enige manier is om informatie over te brengen. Let op de leesbaarheid van tekst in en rond de grafiek. En bied de boodschap ook aan in tekst, zodat deze toegankelijk is voor iedereen. Ook als de afbeelding niet wordt gezien of begrepen.
 
 Op deze pagina lees je waar je op kunt letten om grafieken beter leesbaar en begrijpelijk te maken voor een brede groep gebruikers.
 
