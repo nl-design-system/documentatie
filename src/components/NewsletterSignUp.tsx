@@ -25,13 +25,35 @@ interface NewsletterSignUpProps {
   orgId: string;
   interestsId: string;
   interestsLegend?: string;
-  interests: Array<string>;
+  interests: string[];
+  disallowedInterestIds: number[];
   thanksPage: string;
   workAreasId: string;
   privacyPolicyId: string;
   language?: { value: string; id: string };
   submitText: string;
 }
+
+/**
+ * Generates unique, incrementing numeric IDs for a list of interests,
+ * skipping any disallowed IDs. This is neccessary due to a bug in La Posta,
+ * previously found in https://github.com/nl-design-system/documentatie/pull/949
+ * and https://github.com/nl-design-system/documentatie/pull/2435.
+ */
+const generateInterestIds = (interests: string[], disallowedIds: number[]): number[] => {
+  const ids: number[] = [];
+  let currentId = 1;
+
+  for (let i = 0; i < interests.length; i++) {
+    while (disallowedIds.includes(currentId)) {
+      currentId++;
+    }
+    ids.push(currentId);
+    currentId++;
+  }
+
+  return ids;
+};
 
 export const NewsletterSignUp = ({
   listId = '',
@@ -43,6 +65,7 @@ export const NewsletterSignUp = ({
   interestsId = '',
   interestsLegend = 'Waar wil je NL Design System voor gebruiken?',
   interests = [],
+  disallowedInterestIds = [],
   workAreasId = '',
   privacyPolicyId = '',
   language,
@@ -59,6 +82,8 @@ export const NewsletterSignUp = ({
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
+  const interestIds: number[] | false =
+    interestsId && interests.length > 0 ? generateInterestIds(interests, disallowedInterestIds) : false;
 
   return (
     <form
@@ -150,10 +175,10 @@ export const NewsletterSignUp = ({
               <Paragraph>
                 <Checkbox
                   name={`${interestsId}[]`}
-                  value={index >= 6 ? index + 2 : index + 1}
-                  id={`${interestsId}-${index + 1}`}
+                  value={interestIds[index]}
+                  id={`${interestsId}-${interestIds[index]}`}
                 />
-                <FormLabel htmlFor={`${interestsId}-${index + 1}`}>{interest}</FormLabel>
+                <FormLabel htmlFor={`${interestsId}-${interestIds[index]}`}>{interest}</FormLabel>
               </Paragraph>
             </FormField>
           ))}
