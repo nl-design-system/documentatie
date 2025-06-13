@@ -93,7 +93,7 @@ Controleer voor iedere video met gebarentaal:
 - Overlapt de tolk niet met belangrijke informatie in beeld?
 - Is het beeld met de tolk groot genoeg?
 - Lopen de gebaren synchroon met de audio?
-- Kloppen de gebaren?
+- Kloppen de gebaren? Laat dit controleren door één of meerdere mensen die gebarentaal gebruiken.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
