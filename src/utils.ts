@@ -176,3 +176,44 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
     };
   });
 };
+export type TokenNode = { [key: string]: TokenNode } | { $type: unknown };
+export type TokenPath = string[];
+
+export const tokenPathToDottedTokenPath = (tokenPath: TokenPath): string => tokenPath.join('.');
+export const tokenPathToCSSCustomProperty = (tokenPath: TokenPath): string => '--' + tokenPath.join('-');
+export const tokenAtPath = (obj: TokenNode, path: TokenPath): TokenNode => path.reduce((acc, key) => acc?.[key], obj);
+
+export function getTokenPaths(obj: TokenNode, partialTokenPath: TokenPath = []): TokenPath[] {
+  if (Object.hasOwn(obj, '$type')) return [partialTokenPath];
+
+  return Object.keys(obj).flatMap((key) =>
+    typeof obj[key] === 'object' && obj[key] !== null ? getTokenPaths(obj[key], [...partialTokenPath, key]) : [],
+  );
+}
+
+export function sortTokenPaths(tokenPaths: TokenPath[]): TokenPath[] {
+  const memo = new Map<TokenPath, string>();
+
+  function getKey(tokenPath: TokenPath): string {
+    if (!memo.has(tokenPath)) {
+      memo.set(tokenPath, tokenPathToDottedTokenPath(tokenPath));
+    }
+    return memo.get(tokenPath);
+  }
+
+  return tokenPaths.sort((a, b) => a.length - b.length || getKey(a).localeCompare(getKey(b)));
+}
+
+export function tokenPathsToEmptyTokenTree(tokenPaths: TokenPath[]): TokenNode {
+  const root = {};
+  for (const tokenPath of tokenPaths) {
+    let node = root;
+    for (const key of tokenPath) {
+      if (!node[key]) {
+        node[key] = {};
+      }
+      node = node[key];
+    }
+  }
+  return root;
+}

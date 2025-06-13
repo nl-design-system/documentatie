@@ -61,8 +61,10 @@ HelpImproveComponent,
 Implementations,
 Introduction,
 } from "@site/src/components/ComponentPage";
+import { DesignTokens } from '@site/src/components/DesignTokens';
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./\_usage.md";
+import tokens from '@nl-design-system-candidate/heading-tokens';
 
 {/* Add name and description for the component */}
 export const title = "Heading";
@@ -80,6 +82,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={HeadingIllustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

@@ -54,8 +54,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/code-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Code";
@@ -71,6 +73,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Gebruik deze component
 
 Let op: Gebruik de component [Code Block](/code-block) als de code meerdere regels beslaat.
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />
