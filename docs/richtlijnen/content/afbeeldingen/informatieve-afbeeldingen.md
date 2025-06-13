@@ -64,4 +64,8 @@ Per afbeelding die je plaatst is de beschrijving die je meegeeft anders, omdat h
   </Canvas>
 </Guideline>
 
+## Gebruik je een grafiek of diagram?
+
+Bekijk dan ook de [richtlijnen voor grafieken](/richtlijnen/content/afbeeldingen/grafieken). Daar lees je hoe je ervoor zorgt dat de informatie ook zonder kleur goed te begrijpen is.
+
 <FooterInfo />
