@@ -60,13 +60,17 @@ Artificial Intelligence (AI) kan enorm behulpzaam zijn voor blinden en slechtzie
 
 Wees wel voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is op dit moment nog niet zo slim als je zou willen. Er kunnen daardoor fouten staan in een tekstalternatief dat door AI is gegenereerd. Of er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. En soms is de beschrijving niet relevant in de context waarvoor jij de afbeelding had gekozen. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
 
-## Test het zelf
+## Hoe te testen
 
 Controleer of je een goed tekstalternatief hebt geschreven door na te gaan of je deze vragen met 'Ja' kunt beantwoorden:
 
 - Geeft de alt-tekst dezelfde informatie als de afbeelding?
 - Is de alt-tekst in [de juiste taal](/wcag/3.1.2) geschreven?
 - Is de alternatieve tekst relevant in de context van waarom de afbeelding op de pagina staat?
+
+**Tip:** Lees de alt-tekst hardop.
+
+Begrijp je als lezer (zonder de afbeelding te zien) wat je moet weten? Dan is de alt-tekst duidelijk en functioneel. Bevat de alt-tekst alleen bestandsnamen, omschrijvingen als “afbeelding”, of overbodige details? Dan moet je ‘m verbeteren.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
