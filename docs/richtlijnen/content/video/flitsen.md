@@ -70,7 +70,7 @@ Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Dan is het t
 
 ## Hoe te testen
 
-Controleer voor iedere video:
+Controleer iedere video. Gebruik hierbij de onderstaande stappen als checklist:
 
 - Bekijk de video in de grootst mogelijke aangeboden weergave. Bevat de video mogelijke flitsen?
 - Zo ja, controleer de video dan met een analyse tool.
