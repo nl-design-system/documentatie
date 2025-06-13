@@ -26,7 +26,7 @@ interface NewsletterSignUpProps {
   interestsId: string;
   interestsLegend?: string;
   interests: string[];
-  disallowedInterestIds: number[];
+  disallowedInterestValues: number[];
   thanksPage: string;
   workAreasId: string;
   privacyPolicyId: string;
@@ -65,7 +65,7 @@ export const NewsletterSignUp = ({
   interestsId = '',
   interestsLegend = 'Waar wil je NL Design System voor gebruiken?',
   interests = [],
-  disallowedInterestIds = [],
+  disallowedInterestValues = [],
   workAreasId = '',
   privacyPolicyId = '',
   language,
@@ -83,7 +83,7 @@ export const NewsletterSignUp = ({
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
   const interestIds: number[] | false =
-    interestsId && interests.length > 0 ? generateInterestIds(interests, disallowedInterestIds) : false;
+    interestsId && interests.length > 0 ? generateInterestIds(interests, disallowedInterestValues) : false;
 
   return (
     <form
