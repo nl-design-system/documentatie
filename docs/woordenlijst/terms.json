@@ -62,5 +62,31 @@
         "url": "https://www.w3.org/Translations/WCAG22-nl/#dfn-processes"
       }
     ]
+  },
+  {
+    "term": "Screenreader",
+    "slug": "screenreader",
+    "synonyms": [
+      {
+        "term": "screen reader"
+      },
+      {
+        "term": "schermlezer"
+      },
+      {
+        "term": "voorleessoftware"
+      }
+    ],
+    "definitions": [
+      {
+        "paragraph": "Zogenaamde hulpsoftware die meldt wat er op het scherm staat. De software gebruikt hiervoor de informatie die in de code aanwezig is. Dit kan voorgelezen worden, maar ook op een brailleleesregel getoond worden. De software maakt een apparaat ook te bedienen zonder het te zien."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NL Design System Baseline",
+        "url": "https://nldesignsystem.nl/baseline/"
+      }
+    ]
   }
 ]

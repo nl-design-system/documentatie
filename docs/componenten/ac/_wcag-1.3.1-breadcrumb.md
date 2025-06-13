@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De relatie tussen de links in het broodkruimelpad moet niet alleen visueel, maar ook voor bezoekers die gebruik maken van voorleessoftware duidelijk zijn.
+De relatie tussen de links in het broodkruimelpad moet niet alleen visueel, maar ook voor bezoekers die gebruik maken van een [screenreader](/woordenlijst/#screenreader) duidelijk zijn.
 
 Het broodkruimelpad is herkenbaar als navigatiemenu door het `nav` element te gebruiken, of door `role="navigation"` te gebruiken. Gebruik bij voorkeur altijd HTML elementen, tenzij het echt niet anders kan.
 

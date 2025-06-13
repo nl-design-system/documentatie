@@ -2,7 +2,7 @@
 
 # Informeer gebruikers van screenreaders over het statusbericht
 
-Als het statusbericht dynamisch wordt gegenereerd en zichtbaar is, maar geen toetsenbordfocus krijgt, moet de melding worden voorgelezen aan een screenreadergebruiker.
+Als het statusbericht dynamisch wordt gegenereerd en zichtbaar is, maar geen toetsenbordfocus krijgt, moet de melding worden voorgelezen aan een gebruiker van een [screenreader](/woordenlijst/#screenreader).
 
 Dit kan door van het statusbericht een live-region te maken.
 

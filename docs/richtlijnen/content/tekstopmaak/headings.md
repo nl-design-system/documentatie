@@ -32,9 +32,9 @@ Koppen vormen de ruggengraat van de inhoud van een pagina. Aan de hand van koppe
 
 ## Voor wie zijn toegankelijke koppen belangrijk?
 
-Schermlezergebruikers kunnen een lijst van koppen oproepen en daarmee snel naar een kopje navigeren. Ook ziende bezoekers scannen de inhoud van een pagina aan de hand van koppen. Daarom is het belangrijk dat een kopje de inhoud onder de kop goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina. Dit helpt mensen om snel de informatie te vinden die ze zoeken.
+Gebruikers van [screenreaders](/woordenlijst/#screenreader) kunnen een lijst van koppen oproepen en daarmee snel naar een kopje navigeren. Ook ziende bezoekers scannen de inhoud van een pagina aan de hand van koppen. Daarom is het belangrijk dat een kopje de inhoud onder de kop goed beschrijft. De koppen zijn daarmee een soort inhoudsopgave van de webpagina. Dit helpt mensen om snel de informatie te vinden die ze zoeken.
 
-Bezoekers die gebruik maken van een schermlezer kunnen ook met sneltoetsen snel door de koppen op een pagina navigeren. Laat koppen daarom ook niet leeg. Ook lege koppen worden herkend door schermlezers. Maar omdat ze geen beschrijvende tekst bevatten scheppen ze vooral verwarring in plaats van verduidelijking.
+Bezoekers die gebruik maken van een screenreader kunnen ook met sneltoetsen snel door de koppen op een pagina navigeren. Laat koppen daarom ook niet leeg. Ook lege koppen worden herkend door screenreaders. Maar omdat ze geen beschrijvende tekst bevatten scheppen ze vooral verwarring in plaats van verduidelijking.
 
 <Guideline appearance="dont" title="Koppen leeg laten">
   <Canvas language="html" defaultExpandedCode>
@@ -64,7 +64,7 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
             Dit is geen kop
           </strong>
           <p>
-            Voorleessoftware herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
+            Een [screenreader](/woordenlijst/#screenreader) herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
           </p>
       </>
     )}

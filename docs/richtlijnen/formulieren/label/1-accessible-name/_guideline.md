@@ -6,7 +6,7 @@ Elk formulierveld heeft een label nodig dat gekoppeld is aan het formulierveld m
 
 Waarom is dit belangrijk?
 
-- Screenreader (schermlezer) gebruikers krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt.
+- Gebruikers van [sscreenreader](/woordenlijst/#screenreader) krijgen die naam voorgelezen als het veld toetsenbordfocus krijgt.
 - Voice recognition (stembediening) gebruikers kunnen het veld focus geven door die naam uit te spreken.
 - Muis- en touchscreen gebruikers kunnen het label aanklikken om het formulierveld focus te geven.
 

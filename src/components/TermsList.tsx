@@ -2,6 +2,10 @@ import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 
+interface SynonymProps {
+  term: string;
+}
+
 interface DefinitionProps {
   paragraph: string;
 }
@@ -14,6 +18,7 @@ interface SourceProps {
 export interface Term {
   term: string;
   slug: string;
+  synonyms?: SynonymProps[];
   definitions: DefinitionProps[];
   sources?: SourceProps[];
 }
@@ -21,6 +26,8 @@ export interface Term {
 interface TermsListProps extends HTMLAttributes<HTMLTableElement> {
   terms: Term[];
 }
+
+const Synonym = ({ term }: SynonymProps) => <dt>{term}</dt>;
 
 const Definition = ({ paragraph }: DefinitionProps) => <Paragraph>{paragraph}</Paragraph>;
 
@@ -34,11 +41,19 @@ export const TermsList = ({ terms }: TermsListProps) => {
   return (
     <div>
       <dl>
-        {terms.map(({ term, slug, definitions, sources }, index) => (
+        {terms.map(({ term, slug, synonyms, definitions, sources }, index) => (
           <div className="terms-list__item" key={index}>
             <dt id={slug}>
               <h3>{term}</h3>
             </dt>
+            {synonyms && synonyms.length && (
+              <>
+                {synonyms.map((synonym, index) => (
+                  <Synonym key={index} {...synonym} />
+                ))}
+              </>
+            )}
+
             <dd className="terms-list__definition">
               {definitions.map((definition, index) => (
                 <Definition key={index} {...definition} />
@@ -46,7 +61,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
               {sources && sources.length && (
                 <>
                   <div className="terms-list__definition__sources">
-                    <span>Verder lezen</span>
+                    <span>Verder lezen:</span>
                     <ul role="list">
                       {sources.map((source, index) => (
                         <Source key={index} {...source} />
