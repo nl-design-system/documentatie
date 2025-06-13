@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.1 Toetsenbord
 pagination_label: WCAG-succescriterium 2.1.1 Toetsenbord
-description: Zorg dat alle functionaliteit met een toetsenbord te bedienen is.
+description: Elke actie is uit te voeren met een toetsenbord.
 slug: 2.1.1
 keywords:
   - WCAG
@@ -30,9 +30,36 @@ import Summary from "./summaries/_2.1.1-summary.md";
   {"WCAG-succescriterium 2.1.1 Toetsenbord"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Elke actie is uit te voeren met een toetsenbord.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">
+      Acties die je kunt uitvoeren met een [aanwijzer](/woordenlijst/#aanwijzer) kunnen ook met een toetsenbord.
+    </dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">
+      Veel mensen zijn afhankelijk van bediening met het toetsenbord, onder andere mensen die blind zijn of een beperkte
+      mobiliteit hebben.
+    </dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
+
+Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Daarnaast zijn er tal van apparaten die zich gedragen als een toetsenbord en daarmee ook baat hebben bij dit criterium. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
+
+Bediening met het toetsenbord is ook relatief makkelijk te testen; een computer met toetsenbord volstaat. Dit zorgt ervoor dat velen een bijdrage kunnen leveren aan het voldoen aan dit criterium.
+Door deze lage drempel en de brede impact is testen met het toetsenbord heel geschikt voor bewustzijn rond toegankelijkheid. Zo bestaat er de [<span lang="en">#NoMouse Challenge</span>](https://nomouse.org/) om mensen te motiveren.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -40,15 +67,17 @@ import Summary from "./summaries/_2.1.1-summary.md";
 - Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
 - Formulieren - Buttons: [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
 - Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
-- Formulieren - Foutmeldingen: [Zet een samenvatting van de foutmeldingen boven het formulier](/richtlijnen/formulieren/foutmeldingen/samenvatting).
 - Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
 ## Bronnen
 
 - [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) by Cristian Díaz in Smashing Magazine.
-- [<span lang="en">The problem with automatically focusing the first input and what to do instead</span>](https://adamsilver.io/blog/the-problem-with-automatically-focusing-the-first-input-and-what-to-do-instead/) van Adam Silver.
 - [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
 - [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
+
+## Hoe te testen
+
+De interactieve elementen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en <kbd>shift+tab</kbd>. De ene navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). De andere doet hetzelfde maar in omgekeerde volgorde. Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Het uitvoeren van acties doe je vervolgens met de <kbd>spatiebalk</kbd> of <kbd>return/enter</kbd>.
 
 ## Gebruikersonderzoek
 
