@@ -60,8 +60,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import Usage from "./_usage.md";
+import { DesignTokensList } from "@site/src/components/DesignTokensList";
 import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/data-badge-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Data Badge";
@@ -71,6 +73,8 @@ export const issueNumber = 94;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<DesignTokensList tokens={tokens} />
 
 <ComponentAliases component={component} />
 

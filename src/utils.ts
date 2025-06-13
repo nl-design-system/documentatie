@@ -37,3 +37,16 @@ export const previousRelayStep = {
 export const relayProjectIds = Object.keys(previousRelayStep);
 
 export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');
+
+export type TokenNode = { [key: string]: TokenNode } | { $type: unknown };
+export type TokenPath = string[];
+
+export function extractTokenPaths(obj: TokenNode, partialTokenPath: TokenPath = []) {
+  if (Object.hasOwn(obj, '$type')) return [partialTokenPath];
+
+  return Object.keys(obj).flatMap((key) =>
+    typeof obj[key] === 'object' && obj[key] !== null ? extractTokenPaths(obj[key], [...partialTokenPath, key]) : [],
+  );
+}
+
+export const tokenPathToCSSCustomProperty = (tokenPath: TokenPath) => '--' + tokenPath.join('-');
