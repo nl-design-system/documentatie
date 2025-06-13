@@ -24,6 +24,7 @@ interface NewsletterSignUpProps {
   firstNameFieldId: string;
   orgId: string;
   interestsId: string;
+  interestsLegend?: string;
   interests: Array<string>;
   thanksPage: string;
   workAreasId: string;
@@ -40,6 +41,7 @@ export const NewsletterSignUp = ({
   firstNameFieldId = '',
   orgId = '',
   interestsId = '',
+  interestsLegend = 'Waar wil je NL Design System voor gebruiken?',
   interests = [],
   workAreasId = '',
   privacyPolicyId = '',
@@ -141,7 +143,7 @@ export const NewsletterSignUp = ({
 
       {interestsId && (
         <Fieldset>
-          <FieldsetLegend>Waar wil je NL Design System voor gebruiken? (niet verplicht)</FieldsetLegend>
+          <FieldsetLegend>{interestsLegend} (niet verplicht)</FieldsetLegend>
           <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
