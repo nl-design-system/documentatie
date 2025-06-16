@@ -40,19 +40,19 @@ interface NewsletterSignUpProps {
  * previously found in https://github.com/nl-design-system/documentatie/pull/949
  * and https://github.com/nl-design-system/documentatie/pull/2435.
  */
-const generateInterestIds = (interests: string[], disallowedIds: number[]): number[] => {
-  const ids: number[] = [];
-  let currentId = 1;
+const generateInterestsValues = (interests: string[], disallowedValues: number[]): number[] => {
+  const values: number[] = [];
+  let currentValue = 1;
 
   for (let i = 0; i < interests.length; i++) {
-    while (disallowedIds.includes(currentId)) {
-      currentId++;
+    while (disallowedValues.includes(currentValue)) {
+      currentValue++;
     }
-    ids.push(currentId);
-    currentId++;
+    values.push(currentValue);
+    currentValue++;
   }
 
-  return ids;
+  return values;
 };
 
 export const NewsletterSignUp = ({
@@ -82,8 +82,8 @@ export const NewsletterSignUp = ({
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
-  const interestIds: number[] | false =
-    interestsId && interests.length > 0 ? generateInterestIds(interests, disallowedInterestValues) : false;
+  const interestsValues: number[] | false =
+    interestsId && interests.length > 0 ? generateInterestsValues(interests, disallowedInterestValues) : false;
 
   return (
     <form
@@ -175,10 +175,10 @@ export const NewsletterSignUp = ({
               <Paragraph>
                 <Checkbox
                   name={`${interestsId}[]`}
-                  value={interestIds[index]}
-                  id={`${interestsId}-${interestIds[index]}`}
+                  value={interestsValues[index]}
+                  id={`${interestsId}-${interestsValues[index]}`}
                 />
-                <FormLabel htmlFor={`${interestsId}-${interestIds[index]}`}>{interest}</FormLabel>
+                <FormLabel htmlFor={`${interestsId}-${interestsValues[index]}`}>{interest}</FormLabel>
               </Paragraph>
             </FormField>
           ))}
