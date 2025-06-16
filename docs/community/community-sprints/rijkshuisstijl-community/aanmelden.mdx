@@ -1,0 +1,45 @@
+---
+title: Meld je aan voor de Rijkshuisstijl Community · Rijkshuisstijl Community · Community Sprints
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: Aanmelden
+pagination_label: Aanmelden
+slug: /community/community-sprints/rijkshuisstijl-community/aanmelden
+keywords:
+  - nl design system
+  - community sprint
+  - rijkshuisstijl community
+  - rijkshuisstijl community sprint
+  - rijkshuisstijl community open hour
+---
+
+import { NewsletterSignUp } from "@site/src/components/NewsletterSignUp";
+
+# Meld je aan voor de Rijkshuisstijl Community
+
+We gebruiken je e-mailadres om je af en toe te mailen of uit te nodigen voor bijeenkomsten. De andere gegevens geven ons een beeld van de Rijkshuisstijl Community.
+
+{/* ids map to ids of fields in La Posta; 'interests' is an array of field names that exist in La Posta. The content of these strings doesn't matter as far as La Posta is concerned, but the order should match the one of La Posta */}
+
+<NewsletterSignUp
+  listId="9juqorlygr"
+  emailFieldId="6GzLKrnrdz"
+  firstNameFieldId="Raz0sxxI9o"
+  orgId="iFqikI2eB8"
+  privacyPolicyId="HkEf7W8t0X"
+  interestsId="vDVCyKrl67"
+  interestsLegend="Waar liggen jouw interesses binnen de Rijkshuisstijl Community?"
+  interests={[
+    "Kennisdeling",
+    "Design",
+    "Development",
+    "Richtlijnen",
+    "Componenten",
+    "Toegankelijkheid",
+    "Gebruikersonderzoek",
+  ]}
+  disallowedInterestValues={[3, 7, 8]}
+  workAreasId="AVqwHVpU3H"
+  thanksPage="https://nldesignsystem.nl/community/community-sprints/rijkshuisstijl-community/aanmelden/bedankt"
+  laPostaId="iyihtuzpiq"
+/>
