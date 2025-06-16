@@ -34,28 +34,39 @@
     r = i(25282),
     d = i(52676);
    const l = (e) => {
-    let { listId: n = '', laPostaId: i = '', thanksPage: l = '', emailFieldId: o = '', firstNameFieldId: g = '', orgId: c = '', interestsId: m = '', interests: p = [], workAreasId: h = '', privacyPolicyId: u = '', language: j, submitText: v = '' } = e;
+    let { listId: n = '', laPostaId: i = '', thanksPage: l = '', emailFieldId: o = '', firstNameFieldId: g = '', orgId: c = '', interestsId: m = '', interestsLegend: p = 'Waar wil je NL Design System voor gebruiken?', interests: h = [], disallowedInterestValues: u = [], workAreasId: j = '', privacyPolicyId: v = '', language: k, submitText: x = '' } = e;
     const {
-      register: k,
-      handleSubmit: x,
-      formState: { errors: f },
+      register: f,
+      handleSubmit: b,
+      formState: { errors: D },
      } = (0, r.cI)(),
-     b = (0, s.useRef)(null),
-     D = '2' === j?.value,
-     { search: y } = (0, a.TH)(),
-     w = new URLSearchParams(y),
-     O = w.get('prefillEmail'),
-     z = w.get('prefillName');
+     y = (0, s.useRef)(null),
+     w = '2' === k?.value,
+     { search: O } = (0, a.TH)(),
+     I = new URLSearchParams(O),
+     z = I.get('prefillEmail'),
+     S = I.get('prefillName'),
+     _ =
+      !!(m && h.length > 0) &&
+      ((e, n) => {
+       const i = [];
+       let a = 1;
+       for (let t = 0; t < e.length; t++) {
+        for (; n.includes(a); ) a++;
+        i.push(a), a++;
+       }
+       return i;
+      })(h, u);
     return (0, d.jsxs)('form', {
      method: 'post',
      action: 'https://nl-design-system.email-provider.eu/subscribe/post/index.php',
      noValidate: !0,
      acceptCharset: 'utf-8',
-     ref: b,
-     onSubmit: x(() => {
-      b.current.submit();
+     ref: y,
+     onSubmit: b(() => {
+      y.current.submit();
      }),
-     children: [(0, d.jsxs)(t.Wi, { type: 'email', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: `id-${o}`, children: D ? 'Email address ' : 'E-mailadres' }) }), f[o] && (0, d.jsx)(t.w7, { children: f[o].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: `id-${o}`, name: o, type: 'email', autoComplete: 'email', defaultValue: O, 'aria-required': 'true', ...k(`${o}`, { required: { value: !0, message: D ? 'This field is required, but it was left empty.' : 'Dit veld is verplicht, maar het is niet ingevuld.' }, pattern: { value: /\S+@\S+\.\S+/, message: D ? 'This is not a valid email address.' : 'Dit is geen correct emailadres.' } }), invalid: !!f[o] }) })] }), (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: g, children: D ? 'Name' : 'Naam' }) }), f[g] && (0, d.jsx)(t.w7, { children: f[g].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: g, name: g, type: 'text', defaultValue: z, autoComplete: 'given-name', 'aria-required': 'true', ...k(`${g}`, { required: { value: !0, message: D ? 'This field is required, but it was left empty.' : 'Dit veld is verplicht, maar het is niet ingevuld.' } }), invalid: !!f[g] }) })] }), c && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: c, children: D ? 'Organisation (not required)' : 'Organisatie (niet verplicht)' }) }), f[c] && (0, d.jsx)(t.w7, { children: f[c].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: c, name: c, type: 'text' }) })] }), m && (0, d.jsxs)(t.pg, { children: [(0, d.jsx)(t.Qv, { children: 'Waar wil je NL Design System voor gebruiken? (niet verplicht)' }), (0, d.jsx)(t.ue, { children: 'Meerdere antwoorden mogelijk.' }), p.map((e, n) => (0, d.jsx)(t.Wi, { type: 'checkbox', children: (0, d.jsxs)(t.nv, { children: [(0, d.jsx)(t.XZ, { name: `${m}[]`, value: n >= 6 ? n + 2 : n + 1, id: `${m}-${n + 1}` }), (0, d.jsx)(t.lX, { htmlFor: `${m}-${n + 1}`, children: e })] }) }, e))] }), h && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsxs)(t.nv, { children: [(0, d.jsx)(t.lX, { htmlFor: h, children: 'Aan wat voor projecten werk je? (niet verplicht)' }), (0, d.jsx)(t.ue, { children: 'Denk aan mijn-omgevingen, formulieren en/of kaarten.' })] }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.gx, { id: h, name: h }) })] }), u && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.ue, { id: `${u}-description`, children: D ? (0, d.jsxs)('p', { children: ['The ', (0, d.jsx)('a', { href: '/privacy-policy', children: 'privacy policy' }), ' of NL Design System applies to our activities.'] }) : (0, d.jsxs)('p', { children: ['Op onze activiteiten is de ', (0, d.jsx)('a', { href: '/privacyverklaring', children: 'privacyverklaring van NL Design System' }), ' van toepassing.'] }) }), (0, d.jsxs)(t.Wi, { type: 'checkbox', children: [(0, d.jsx)(t.XZ, { value: '1', id: `${u}-1`, 'aria-describedby': `${u}-description`, 'aria-required': 'true', ...k(`${u}[]`, { required: { value: !0, message: D ? 'You can only register if you agree with the privacy policy.' : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.' } }), invalid: !!f[`${u}[]`] }), (0, d.jsx)(t.lX, { htmlFor: `${u}-1`, children: D ? 'I agree to the use of my data in accordance with the privacy policy' : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring' })] }), f[u] && (0, d.jsx)(t.w7, { children: f[u].message })] }), j?.id && (0, d.jsx)('input', { type: 'hidden', name: j.id, value: j.value }), (0, d.jsx)(t.hE, { children: (0, d.jsx)(t.zx, { type: 'submit', appearance: 'primary-action-button', children: v || (D ? 'Sign up' : 'Aanmelden') }) }), (0, d.jsx)('input', { type: 'hidden', name: 'next', value: l }), (0, d.jsx)('input', { type: 'hidden', name: 'a', value: i }), (0, d.jsx)('input', { type: 'hidden', name: 'l', value: n }), (0, d.jsx)('input', { name: 'osnD9cWRI3', autoComplete: 'on', id: 'id-osnD9cWRI3', type: 'hidden', value: 'NLDS website' }), (0, d.jsx)('input', { autoComplete: 'new-password', type: 'email', id: 'email', name: 'email', placeholder: 'Your e-mail here', className: 'sr-only', 'aria-hidden': 'true' })],
+     children: [(0, d.jsxs)(t.Wi, { type: 'email', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: `id-${o}`, children: w ? 'Email address ' : 'E-mailadres' }) }), D[o] && (0, d.jsx)(t.w7, { children: D[o].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: `id-${o}`, name: o, type: 'email', autoComplete: 'email', defaultValue: z, 'aria-required': 'true', ...f(`${o}`, { required: { value: !0, message: w ? 'This field is required, but it was left empty.' : 'Dit veld is verplicht, maar het is niet ingevuld.' }, pattern: { value: /\S+@\S+\.\S+/, message: w ? 'This is not a valid email address.' : 'Dit is geen correct emailadres.' } }), invalid: !!D[o] }) })] }), (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: g, children: w ? 'Name' : 'Naam' }) }), D[g] && (0, d.jsx)(t.w7, { children: D[g].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: g, name: g, type: 'text', defaultValue: S, autoComplete: 'given-name', 'aria-required': 'true', ...f(`${g}`, { required: { value: !0, message: w ? 'This field is required, but it was left empty.' : 'Dit veld is verplicht, maar het is niet ingevuld.' } }), invalid: !!D[g] }) })] }), c && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.nv, { children: (0, d.jsx)(t.lX, { htmlFor: c, children: w ? 'Organisation (not required)' : 'Organisatie (niet verplicht)' }) }), D[c] && (0, d.jsx)(t.w7, { children: D[c].message }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.fE, { id: c, name: c, type: 'text' }) })] }), m && (0, d.jsxs)(t.pg, { children: [(0, d.jsxs)(t.Qv, { children: [p, ' (niet verplicht)'] }), (0, d.jsx)(t.ue, { children: 'Meerdere antwoorden mogelijk.' }), h.map((e, n) => (0, d.jsx)(t.Wi, { type: 'checkbox', children: (0, d.jsxs)(t.nv, { children: [(0, d.jsx)(t.XZ, { name: `${m}[]`, value: _[n], id: `${m}-${_[n]}` }), (0, d.jsx)(t.lX, { htmlFor: `${m}-${_[n]}`, children: e })] }) }, e))] }), j && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsxs)(t.nv, { children: [(0, d.jsx)(t.lX, { htmlFor: j, children: 'Aan wat voor projecten werk je? (niet verplicht)' }), (0, d.jsx)(t.ue, { children: 'Denk aan mijn-omgevingen, formulieren en/of kaarten.' })] }), (0, d.jsx)(t.nv, { children: (0, d.jsx)(t.gx, { id: j, name: j }) })] }), v && (0, d.jsxs)(t.Wi, { type: 'text', children: [(0, d.jsx)(t.ue, { id: `${v}-description`, children: w ? (0, d.jsxs)('p', { children: ['The ', (0, d.jsx)('a', { href: '/privacy-policy', children: 'privacy policy' }), ' of NL Design System applies to our activities.'] }) : (0, d.jsxs)('p', { children: ['Op onze activiteiten is de ', (0, d.jsx)('a', { href: '/privacyverklaring', children: 'privacyverklaring van NL Design System' }), ' van toepassing.'] }) }), (0, d.jsxs)(t.Wi, { type: 'checkbox', children: [(0, d.jsx)(t.XZ, { value: '1', id: `${v}-1`, 'aria-describedby': `${v}-description`, 'aria-required': 'true', ...f(`${v}[]`, { required: { value: !0, message: w ? 'You can only register if you agree with the privacy policy.' : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.' } }), invalid: !!D[`${v}[]`] }), (0, d.jsx)(t.lX, { htmlFor: `${v}-1`, children: w ? 'I agree to the use of my data in accordance with the privacy policy' : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring' })] }), D[v] && (0, d.jsx)(t.w7, { children: D[v].message })] }), k?.id && (0, d.jsx)('input', { type: 'hidden', name: k.id, value: k.value }), (0, d.jsx)(t.hE, { children: (0, d.jsx)(t.zx, { type: 'submit', appearance: 'primary-action-button', children: x || (w ? 'Sign up' : 'Aanmelden') }) }), (0, d.jsx)('input', { type: 'hidden', name: 'next', value: l }), (0, d.jsx)('input', { type: 'hidden', name: 'a', value: i }), (0, d.jsx)('input', { type: 'hidden', name: 'l', value: n }), (0, d.jsx)('input', { name: 'osnD9cWRI3', autoComplete: 'on', id: 'id-osnD9cWRI3', type: 'hidden', value: 'NLDS website' }), (0, d.jsx)('input', { autoComplete: 'new-password', type: 'email', id: 'email', name: 'email', placeholder: 'Your e-mail here', className: 'sr-only', 'aria-hidden': 'true' })],
     });
    };
   },
