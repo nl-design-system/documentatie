@@ -103,7 +103,7 @@ Ook zonder technische kennis kun je controleren of een grafiek voor iedereen beg
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
-De volgende richtlijnen zijn het meest relevant voor het toegankelijk maken van grafieken:
+De volgende succescriteria zijn het meest relevant voor het toegankelijk maken van grafieken:
 
 - [1.1.1 Niet-tekstuele content](/wcag/1.1.1)
 - [1.4.1 Gebruik van kleur](/wcag/1.4.1)
