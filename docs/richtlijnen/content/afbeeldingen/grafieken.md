@@ -36,7 +36,7 @@ Een grafiek is meestal een afbeelding, en dus niet vanzelfsprekend voor iedereen
 - gebruik van alleen kleur om verschil aan te geven tussen lijnen, staven of vlakken;
 - ontbreken van tekstlabels of toelichting bij de grafiek;
 - interactieve grafieken waarbij de uitleg alleen zichtbaar is als je eroverheen beweegt met een muis (tooltips);
-- grafieken die niet goed werken met hulptechnologie, zoals schermlezers.
+- grafieken die niet goed werken met hulptechnologie, zoals screenreaders.
 
 Als contentmaker bepaal je vaak niet hoe de grafiek is ontworpen. Maar je kunt wel signaleren of belangrijke informatie ontbreekt, en zorgen voor aanvulling in tekst of toelichting.
 
