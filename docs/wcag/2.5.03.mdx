@@ -69,13 +69,13 @@ Ook als veel onderdelen op de pagina hetzelfde heten kan dit een probleem zijn. 
 
 - Controleer voor elk interactief onderdeel wat de zichtbare naam is.
 - Gebruik een tool zoals de "accessibility pane" in Chrome of een screenreader om de toegankelijke naam te vinden.
-- Controleer of de zichtbare naam onderdeel is van de toegankelijke naam.
+- Zorg dat de zichtbare naam onderdeel is van de toegankelijke naam.
 
 ## Tips
 
 - Gebruik geen `placeholder`-attributen. Deze kunnen een toegankelijk naam geven, maar verdwijnen zodra de gebruiker ze het meest nodig heeft. Daarnaast zijn ze een bron van problemen met contrast en zorgen ze voor verwarring.
-- Gebruik geen `title`-attributen. Dit attribuut is een soort laatste redmiddel om iets een toegankelijke naam te geven. Het is de laatste in een rij met opties en geeft vaak verkeerde en onverwachte resultaten.
-- Wees spaarzaam met het gebruik van `aria-labelledby` en `aria-label`. De eerste regel van ARIA-gebruik stuurt op zo min mogelijk ARIA-gebruik. Ze zijn ook verreweg de makkelijkste manier om te falen voor dit succescriterium. Daarnaast worden deze attributen vaak slecht meegenomen door tools die vertalen.
+- Gebruik zo weinig mogelijk `title`-attributen. Dit attribuut is een soort laatste redmiddel om iets een toegankelijke naam te geven. Het is de laatste in een rij met opties en geeft vaak verkeerde en onverwachte resultaten. Frames een naam geven is de uitzondering op deze regel.
+- Wees spaarzaam met het gebruik van `aria-labelledby` en `aria-label`. De eerste regel van ARIA-gebruik stuurt op zo min mogelijk ARIA-gebruik. HTML wordt beter ondersteund dan ARIA. Deze attributen zijn ook verreweg de makkelijkste manier om te falen voor dit succescriterium. Daarnaast worden deze attributen vaak slecht meegenomen bij veranderingen van code en door tools (en mensen) die vertalen.
 - Zorg voor unieke toegankelijke namen op een pagina. Dit maakt het gebruik van spraakbediening makkelijker.
 - Voor dit succescriterium is het ook belangrijk om tekst in afbeeldingen in het tekstalternatief te gebruiken. Zo kan de afbeelding als zichtbare naam gebruikt worden.
 
