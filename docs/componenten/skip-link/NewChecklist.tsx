@@ -135,7 +135,7 @@ export const NewChecklist = ({ items }: NewChecklistProps) => {
   return (
     <div>
       <div className="ma-filter-block">
-        <span id={badgeListLabelId}>Kies welke onderwerpen je wilt zien: </span>
+        <span id={badgeListLabelId}>Ik ben: </span>
         <BadgeList role="group" aria-labelledby={badgeListLabelId} className="ma-badge-toggle-button-group">
           {Array.from(allTags.values()).map((tag, index) => (
             <Button
@@ -154,7 +154,7 @@ export const NewChecklist = ({ items }: NewChecklistProps) => {
             <>
               <p role="status">Er wordt op {selectedTags.length} onderwerpen gefilterd.</p>
               <p>
-                {hiddenItemCount} van de {items.length} acceptatiecriteria zijn nu niet zichtbaar.
+                {hiddenItemCount} van de {items.length} items zijn nu niet zichtbaar.
               </p>
               <Button
                 appearance="secondary-action-button"
