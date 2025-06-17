@@ -11,7 +11,7 @@ Het geven van feedback aan screenreadergebuikers over foutmeldingen is nodig om 
 
 ## Gebruik ARIA voor feedback
 
-Gebruik ARIA om aanvullende informatie en feedback te geven aan gebruikers van screenreadergebruikers. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
+Gebruik ARIA om aanvullende informatie en feedback te geven aan gebruikers van screenreaders. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
 
 Twee ARIA-attributen zijn belangrijk voor screenreaderfeedback:
 
