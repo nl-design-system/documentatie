@@ -16,7 +16,7 @@
    }
   },
   65304: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => v, contentTitle: () => d, default: () => p, frontMatter: () => s, metadata: () => c, toc: () => u });
+   t.r(n), t.d(n, { assets: () => g, contentTitle: () => d, default: () => h, frontMatter: () => s, metadata: () => c, toc: () => v });
    var a = t(52676),
     l = t(40139),
     i = t(43599),
@@ -25,20 +25,21 @@
    const s = { title: 'Waar moet een alternatieve tekst staan? \xb7 Afbeeldingen \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Waar moet een alternatieve tekst staan?', pagination_label: 'Waar moet een alternatieve tekst staan?', description: 'Richtlijnen over de plaats van een alternatieve tekst voor afbeeldingen in NL Design System.', slug: '/richtlijnen/content/afbeeldingen/alt-plaats', keywords: ['afbeeldingen', 'alternatieve tekst', 'alt tekst', 'beeldbeschrijving', 'alt attribuut', 'tekstalternatief', 'tekstalternatieven', 'tekst alternatief', 'tekstueel alternatief', 'tekst alternatieven', 'toegankelijke afbeeldingen', 'caption', 'accordion'] },
     d = 'Waar moet een alternatieve tekst staan?',
     c = { id: 'richtlijnen/content/afbeeldingen/alt-plaats', title: 'Waar moet een alternatieve tekst staan? \xb7 Afbeeldingen \xb7 Content \xb7 Richtlijnen', description: 'Richtlijnen over de plaats van een alternatieve tekst voor afbeeldingen in NL Design System.', source: '@site/docs/richtlijnen/content/afbeeldingen/alt-plaats.md', sourceDirName: 'richtlijnen/content/afbeeldingen', slug: '/richtlijnen/content/afbeeldingen/alt-plaats', permalink: '/richtlijnen/content/afbeeldingen/alt-plaats', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/afbeeldingen/alt-plaats.md', tags: [], version: 'current', frontMatter: { title: 'Waar moet een alternatieve tekst staan? \xb7 Afbeeldingen \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Waar moet een alternatieve tekst staan?', pagination_label: 'Waar moet een alternatieve tekst staan?', description: 'Richtlijnen over de plaats van een alternatieve tekst voor afbeeldingen in NL Design System.', slug: '/richtlijnen/content/afbeeldingen/alt-plaats', keywords: ['afbeeldingen', 'alternatieve tekst', 'alt tekst', 'beeldbeschrijving', 'alt attribuut', 'tekstalternatief', 'tekstalternatieven', 'tekst alternatief', 'tekstueel alternatief', 'tekst alternatieven', 'toegankelijke afbeeldingen', 'caption', 'accordion'] }, sidebar: 'richtlijnen', previous: { title: 'Algemene richtlijnen', permalink: '/richtlijnen/content/afbeeldingen/algemene-richtlijnen' }, next: { title: 'Decoratieve afbeeldingen', permalink: '/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen' } },
-    v = {},
-    u = [
+    g = {},
+    v = [
      { value: 'Het alt-attribuut van een afbeelding', id: 'het-alt-attribuut-van-een-afbeelding', level: 2 },
      { value: 'Onderschrift (caption)', id: 'onderschrift-caption', level: 2 },
      { value: 'Een tekst in de buurt van de afbeelding', id: 'een-tekst-in-de-buurt-van-de-afbeelding', level: 2 },
+     { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 },
      { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 },
     ];
-   function g(e) {
+   function b(e) {
     const n = { a: 'a', figcaption: 'figcaption', figure: 'figure', h1: 'h1', h2: 'h2', img: 'img', li: 'li', p: 'p', ul: 'ul', ...(0, l.a)(), ...e.components };
-    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.h1, { id: 'waar-moet-een-alternatieve-tekst-staan', children: 'Waar moet een alternatieve tekst staan?' }), '\n', (0, a.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om op verschillende manieren tekstalternatieven toe te voegen." }), '\n', (0, a.jsx)(n.h2, { id: 'het-alt-attribuut-van-een-afbeelding', children: 'Het alt-attribuut van een afbeelding' }), '\n', (0, a.jsx)(n.p, { children: 'Bij het invoegen van een afbeelding in je content krijg je meestal de optie om een alternatieve tekst in te vullen. Die wordt dan geplaatst als alt-attribuut bij de afbeelding (in het img -element). Dit is ook de tekst die bezoekers te zien krijgen als de afbeelding niet geladen wordt. Deze tekst is verder niet zichtbaar en zit in de code gekoppeld aan je afbeelding. Daardoor wordt deze tekst bijvoorbeeld door een schermlezer voorgelezen.' }), '\n', (0, a.jsx)(n.p, { children: "Als je een decoratieve afbeelding hebt die je g\xe9\xe9n alternatieve tekst wilt geven, bieden de meeste CMS'en daar ook een optie voor. Dan staat er bijvoorbeeld onder of boven het veld waar je de alternatieve tekst kunt invoeren: 'of laat leeg om als decoratief te markeren'. Soms is het is een optie je aan kunt vinken." }), '\n', (0, a.jsx)(n.p, { children: 'Soms kun je naast de alternatieve tekst ook een titel (title) invoeren. Dit is de tekst die verschijnt als je met je muis over de afbeelding beweegt. Deze titel wordt niet altijd voorgelezen door voorleessoftware. Daarom is het niet voldoende om hier je alternatieve tekst te plaatsen. Als je zowel de titel als het alt-attribuut invult, kan voorleessoftware beide teksten voorlezen, wat storend is voor bezoekers. Laat de titel daarom bij voorkeur leeg.' }), '\n', (0, a.jsx)(n.p, { children: 'Vraag om deze functionaliteit bij de beheerder of leverancier van je website als je deze optie niet hebt.' }), '\n', (0, a.jsx)(n.h2, { id: 'onderschrift-caption', children: 'Onderschrift (caption)' }), '\n', (0, a.jsx)(n.p, { children: 'Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een onderschrift. Dit kan een goede plek zijn om een wat uitgebreidere beschrijving te geven. Als je van deze optie gebruik wilt maken, voeg je altijd eerst een korte beschrijving in het alt-attribuut toe. Uitgebreidere informatie plaats je daarna in het onderschrift. Het voordeel van een onderschrift is dat het voor iedereen zichtbaar is, niet alleen voor mensen die hulpsoftware gebruiken.' }), '\n', (0, a.jsx)(o.X, { appearance: 'do', title: 'Een onderschrift gebruiken voor een langere beschrijving', children: (0, a.jsx)(i.X, { language: 'html', children: () => (0, a.jsx)(a.Fragment, { children: (0, a.jsxs)(n.figure, { children: [(0, a.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Amersfoortse-Dierentuin.jpg', alt: 'Twee mensen op een terras.' }), (0, a.jsx)(n.figcaption, { children: '1963 - Op het terras van het caf\xe9 van de Amersfoortse dierentuin krijgen twee bezoekers een kopje koffie geserveerd. Dat is in eerste instantie niet heel bijzonder, maar het feit dat zij allebei een Afrikaans jachtluipaard aan hun voeten hebben liggen waarvan zij zelf de riem vasthouden wel!' })] }) }) }) }), '\n', (0, a.jsx)(n.h2, { id: 'een-tekst-in-de-buurt-van-de-afbeelding', children: 'Een tekst in de buurt van de afbeelding' }), '\n', (0, a.jsx)(n.p, { children: 'Soms biedt een alt-attribuut of een onderschrift niet voldoende ruimte voor een complete beschrijving van een afbeelding. In dat geval kun je in de beschrijving in het alt-attribuut een korte beschrijving toevoegen en daarin de plek op de pagina beschrijven waar een uitgebreidere beschrijving staat.' }), '\n', (0, a.jsx)(n.p, { children: 'Dit is handig bij bijvoorbeeld uitgebreide grafieken waarin veel informatie is opgenomen. Of bij een infographic.' }), '\n', (0, a.jsx)(n.p, { children: 'Een voorbeeld van de tekst in het alt-attribuut kan dan zijn:' }), '\n', (0, a.jsx)(n.p, { children: 'alt="Infographic migratie Nederland, zie voor een uitgebreide beschrijving de tekst direct onder deze afbeelding"' }), '\n', (0, a.jsx)(n.p, { children: 'Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit de infographic. Vergeet niet een kopje toe te voegen boven deze tekst, zodat gebruikers van hulpsoftware de tekst snel kunnen vinden. Als jouw CMS de optie biedt, kun je ervoor kiezen de tekst in een Accordion (uitklapper) te plaatsen. Bezoekers die de tekst willen lezen kunnen daar dan zelf voor kiezen en bezoekers die de tekst niet willen lezen kunnen de tekst overslaan.' }), '\n', (0, a.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, a.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/wcag/1.1.1', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n'] }), '\n', (0, a.jsx)(r.ZP, {})] });
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.h1, { id: 'waar-moet-een-alternatieve-tekst-staan', children: 'Waar moet een alternatieve tekst staan?' }), '\n', (0, a.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om op verschillende manieren tekstalternatieven toe te voegen." }), '\n', (0, a.jsx)(n.h2, { id: 'het-alt-attribuut-van-een-afbeelding', children: 'Het alt-attribuut van een afbeelding' }), '\n', (0, a.jsx)(n.p, { children: 'Bij het invoegen van een afbeelding in je content krijg je meestal de optie om een alternatieve tekst in te vullen. Die wordt dan geplaatst als alt-attribuut bij de afbeelding (in het img -element). Dit is ook de tekst die bezoekers te zien krijgen als de afbeelding niet geladen wordt. Deze tekst is verder niet zichtbaar en zit in de code gekoppeld aan je afbeelding. Daardoor wordt deze tekst bijvoorbeeld door een schermlezer voorgelezen.' }), '\n', (0, a.jsx)(n.p, { children: "Als je een decoratieve afbeelding hebt die je g\xe9\xe9n alternatieve tekst wilt geven, bieden de meeste CMS'en daar ook een optie voor. Dan staat er bijvoorbeeld onder of boven het veld waar je de alternatieve tekst kunt invoeren: 'of laat leeg om als decoratief te markeren'. Soms is het is een optie die je aan kunt vinken." }), '\n', (0, a.jsx)(n.p, { children: 'Soms kun je naast de alternatieve tekst ook een titel (title) invoeren. Dit is de tekst die verschijnt als je met je muis over de afbeelding beweegt. Deze titel wordt niet altijd voorgelezen door voorleessoftware. Daarom is het niet voldoende om hier je alternatieve tekst te plaatsen. Als je zowel de titel als het alt-attribuut invult, kan voorleessoftware beide teksten voorlezen, wat storend is voor bezoekers. Laat de titel daarom bij voorkeur leeg.' }), '\n', (0, a.jsx)(n.p, { children: 'Vraag om deze functionaliteit bij de beheerder of leverancier van je website als je deze optie niet hebt.' }), '\n', (0, a.jsx)(n.h2, { id: 'onderschrift-caption', children: 'Onderschrift (caption)' }), '\n', (0, a.jsx)(n.p, { children: 'Een andere mogelijkheid die een CMS kan hebben, is het toevoegen van een onderschrift. Dit kan een goede plek zijn om een wat uitgebreidere beschrijving te geven. Als je van deze optie gebruik wilt maken, voeg je altijd eerst een korte beschrijving in het alt-attribuut toe. Uitgebreidere informatie plaats je daarna in het onderschrift. Het voordeel van een onderschrift is dat het voor iedereen zichtbaar is, niet alleen voor mensen die hulpsoftware gebruiken.' }), '\n', (0, a.jsx)(o.X, { appearance: 'do', title: 'Een onderschrift gebruiken voor een langere beschrijving', children: (0, a.jsx)(i.X, { language: 'html', children: () => (0, a.jsx)(a.Fragment, { children: (0, a.jsxs)(n.figure, { children: [(0, a.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Amersfoortse-Dierentuin.jpg', alt: 'Twee mensen op een terras.' }), (0, a.jsx)(n.figcaption, { children: '1963 - Op het terras van het caf\xe9 van de Amersfoortse dierentuin krijgen twee bezoekers een kopje koffie geserveerd. Dat is in eerste instantie niet heel bijzonder, maar het feit dat zij allebei een Afrikaans jachtluipaard aan hun voeten hebben liggen waarvan zij zelf de riem vasthouden wel!' })] }) }) }) }), '\n', (0, a.jsx)(n.h2, { id: 'een-tekst-in-de-buurt-van-de-afbeelding', children: 'Een tekst in de buurt van de afbeelding' }), '\n', (0, a.jsx)(n.p, { children: 'Soms biedt een alt-attribuut of een onderschrift niet voldoende ruimte voor een complete beschrijving van een afbeelding. In dat geval kun je in de beschrijving in het alt-attribuut een korte beschrijving toevoegen en daarin de plek op de pagina beschrijven waar een uitgebreidere beschrijving staat.' }), '\n', (0, a.jsx)(n.p, { children: 'Dit is handig bij bijvoorbeeld uitgebreide grafieken waarin veel informatie is opgenomen. Of bij een infographic.' }), '\n', (0, a.jsx)(n.p, { children: 'Een voorbeeld van de tekst in het alt-attribuut kan dan zijn:' }), '\n', (0, a.jsx)(n.p, { children: 'alt="Infographic migratie Nederland, zie voor een uitgebreide beschrijving de tekst direct onder deze afbeelding"' }), '\n', (0, a.jsx)(n.p, { children: 'Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit de infographic. Vergeet niet een kopje toe te voegen boven deze tekst, zodat gebruikers van hulpsoftware de tekst snel kunnen vinden. Als jouw CMS de optie biedt, kun je ervoor kiezen de tekst in een Accordion (uitklapper) te plaatsen. Bezoekers die de tekst willen lezen kunnen daar dan zelf voor kiezen en bezoekers die de tekst niet willen lezen kunnen de tekst overslaan.' }), '\n', (0, a.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, a.jsx)(n.p, { children: 'Stel jezelf, bij elke afbeelding die je hebt geplaatst, de volgende vragen:' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsxs)(n.li, { children: ['Heb je de alt-tekst ingevuld op de juiste plek in het CMS? \xd2f bewust leeg gelaten omdat het een ', (0, a.jsx)(n.a, { href: 'l/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen', children: 'decoratieve afbeelding' }), ' is?'] }), '\n', (0, a.jsx)(n.li, { children: 'Gebruik je ook een bijschrift? Vertelt het bijschrift dan iets extra\u2019s, is het geen herhaling van de alt-tekst?' }), '\n', (0, a.jsx)(n.li, { children: 'Bevat de afbeelding complexe informatie, zoals een grafiek of schema? Is extra uitleg toegevoegd in de omliggende tekst of onder de afbeelding?' }), '\n', (0, a.jsx)(n.li, { children: 'Heb je in de alt-tekst verwezen naar die toelichting? Zet in de alt-tekst bijvoorbeeld: \u201cToelichting staat onder de afbeelding.\u201d' }), '\n'] }), '\n', (0, a.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, a.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/wcag/1.1.1', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n'] }), '\n', (0, a.jsx)(r.ZP, {})] });
    }
-   function p(e = {}) {
+   function h(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
-    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(g, { ...e }) }) : g(e);
+    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(b, { ...e }) }) : b(e);
    }
   },
   43599: (e, n, t) => {
@@ -51,49 +52,49 @@
     s = t(86017),
     d = t(48231),
     c = t(75119),
-    v = t(75271),
-    u = t(60027),
-    g = t(52676);
-   const p = (e) => {
-    let { children: n } = e;
-    return (0, g.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, g.jsx)(l.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, g.jsx)(l.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
-   };
-   p.displayName = 'ParagraphContainer';
-   const b = (e) => {
-    let { children: n } = e;
-    return (0, g.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, g.jsx)(l.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
-   };
-   b.displayName = 'DocumentContainer';
+    g = t(75271),
+    v = t(60027),
+    b = t(52676);
    const h = (e) => {
     let { children: n } = e;
-    return (0, g.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: n });
+    return (0, b.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, b.jsx)(l.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, b.jsx)(l.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   h.displayName = 'SurfaceContainer';
+   h.displayName = 'ParagraphContainer';
+   const u = (e) => {
+    let { children: n } = e;
+    return (0, b.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: (0, b.jsx)(l.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
+   };
+   u.displayName = 'DocumentContainer';
+   const p = (e) => {
+    let { children: n } = e;
+    return (0, b.jsx)(l.Tg, { className: 'nlds-canvas__example-surface', children: n });
+   };
+   p.displayName = 'SurfaceContainer';
    const m = (e) => {
     let { code: n, copy: t = !0, defaultExpandedCode: m = !1, displayCode: j = !0, children: k, container: f = 'document', language: y, designTokens: x } = e;
     const _ = 'function' == typeof k ? k() : k,
-     w = 'function' == typeof n ? n() : (0, v.isValidElement)(n) ? n : void 0,
-     z = 'string' == typeof n ? n : u.uS(w || _),
-     [N, C] = (0, v.useState)(z),
-     [S, D] = (0, v.useState)(m);
-    (0, v.useEffect)(() => {
+     w = 'function' == typeof n ? n() : (0, g.isValidElement)(n) ? n : void 0,
+     z = 'string' == typeof n ? n : v.uS(w || _),
+     [N, C] = (0, g.useState)(z),
+     [S, D] = (0, g.useState)(m);
+    (0, g.useEffect)(() => {
      (async () => {
       const e = await c.ZP.format(z, { parser: y, plugins: [o.Z, r.ZP, s.ZP, d.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
       C(e);
      })();
     }, [z]);
-    const Z = (0, v.useId)();
-    let A = v.Fragment;
+    const Z = (0, g.useId)();
+    let A = g.Fragment;
     return (
-     'paragraph' === f ? (A = p) : 'document' === f ? (A = b) : 'surface' === f && (A = h),
-     (0, g.jsxs)('div', {
+     'paragraph' === f ? (A = h) : 'document' === f ? (A = u) : 'surface' === f && (A = p),
+     (0, b.jsxs)('div', {
       className: (0, i.Z)('nlds-canvas'),
       children: [
-       _ && (0, g.jsx)('div', { className: (0, i.Z)('nlds-canvas__example'), children: (0, g.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, g.jsx)(A, { children: (0, g.jsx)(l.pu, { children: _ }) }) }) }),
+       _ && (0, b.jsx)('div', { className: (0, i.Z)('nlds-canvas__example'), children: (0, b.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, b.jsx)(A, { children: (0, b.jsx)(l.pu, { children: _ }) }) }) }),
        j &&
-        (0, g.jsx)('div', {
+        (0, b.jsx)('div', {
          className: (0, i.Z)('nlds-canvas__toolbar'),
-         children: (0, g.jsx)(l.zx, {
+         children: (0, b.jsx)(l.zx, {
           className: (0, i.Z)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
@@ -105,16 +106,16 @@
          }),
         }),
        j &&
-        (0, g.jsxs)('div', {
+        (0, b.jsxs)('div', {
          className: (0, i.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
          id: Z,
          hidden: !S,
          children: [
-          (0, g.jsx)(a.u, { codeBlockLabel: 'Codevoorbeeld', syntax: y, textContent: N, trim: !0 }),
+          (0, b.jsx)(a.u, { codeBlockLabel: 'Codevoorbeeld', syntax: y, textContent: N, trim: !0 }),
           t &&
-           (0, g.jsx)('div', {
+           (0, b.jsx)('div', {
             className: (0, i.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, g.jsx)(l.zx, {
+            children: (0, b.jsx)(l.zx, {
              className: (0, i.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -176,18 +177,18 @@
    var s = t(52676);
    function d(e) {
     let { lineNumber: n, syntax: t, textContent: d, trim: c } = e,
-     v = d;
-    const { title: u, type: g } = (0, i.useContext)(o.n),
-     p = (0, i.useId)();
+     g = d;
+    const { title: v, type: b } = (0, i.useContext)(o.n),
+     h = (0, i.useId)();
     return (
-     c && (v = v.trim()),
+     c && (g = g.trim()),
      (0, s.jsx)(l.y$, {
       theme: r,
-      code: v,
+      code: g,
       language: t || '',
       children: (e) => {
        let { style: t, tokens: l, getLineProps: i, getTokenProps: o } = e;
-       return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: p, children: ['codevoorbeeld ', g ? `\u201c${g}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, s.jsx)(a.dn, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': p, style: t, children: l.map((e, t) => (0, s.jsxs)('span', { ...i({ line: e }), children: [n && (0, s.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, s.jsx)('span', { ...o({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', b ? `\u201c${b}\u201d` : '', ' ', v ? ': ' : ' ', v] }), (0, s.jsx)(a.dn, { tabIndex: 0, role: v ? 'region' : void 0, 'aria-labelledby': h, style: t, children: l.map((e, t) => (0, s.jsxs)('span', { ...i({ line: e }), children: [n && (0, s.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, s.jsx)('span', { ...o({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -203,11 +204,11 @@
     s = t(52676);
    const d = (0, r.createContext)({}),
     c = (e) => {
-     let { title: n, appearance: t, description: r, children: c, figure: v } = e;
-     const u = { do: 'Doen', dont: 'Niet doen' },
-      g = v ? 'figure' : 'div',
-      p = v ? 'figcaption' : 'div';
-     return (0, s.jsxs)(g, { className: (0, o.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, s.jsxs)(p, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(a.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, s.jsx)(i.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, s.jsx)(i.nv, { children: n })] }), r] }), (0, s.jsx)('div', { className: 'nlds-guideline__example', children: (0, s.jsx)(d.Provider, { value: { title: n, type: u[t] }, children: c }) })] });
+     let { title: n, appearance: t, description: r, children: c, figure: g } = e;
+     const v = { do: 'Doen', dont: 'Niet doen' },
+      b = g ? 'figure' : 'div',
+      h = g ? 'figcaption' : 'div';
+     return (0, s.jsxs)(b, { className: (0, o.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, s.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(a.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: v.dont })] }), (0, s.jsx)(i.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: v.do })] }), (0, s.jsx)(i.nv, { children: n })] }), r] }), (0, s.jsx)('div', { className: 'nlds-guideline__example', children: (0, s.jsx)(d.Provider, { value: { title: n, type: v[t] }, children: c }) })] });
     };
   },
   40139: (e, n, t) => {
