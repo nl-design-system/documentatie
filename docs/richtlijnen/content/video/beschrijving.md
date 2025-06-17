@@ -45,7 +45,7 @@ Beschrijf bóven de videospeler op de pagina waar de video over gaat. Dit kan bi
 
 ## Een beschrijving in de videospeler
 
-Voor bezoekers die gebruik maken van een screenreader is het belangrijk dat de videospeler ook een beschrijving heeft. Een goede beschrijving van de videospeler is de titel van je video. Zo weet je als bezoeker wat je kunt verwachten.
+Voor bezoekers die gebruik maken van een [screenreader](/woordenlijst/#screenreader) is het belangrijk dat de videospeler ook een beschrijving heeft. Een goede beschrijving van de videospeler is de titel van je video. Zo weet je als bezoeker wat je kunt verwachten.
 
 Video's die je vanaf YouTube en Vimeo op je pagina plaatst, worden meestal in een `iFrame` op de pagina geplaatst. Het is niet altijd nodig om zelf de beschrijving van het `iFrame` of een videospeler aan te passen. Vraag bij de beheerder van je contentmanagementsysteem (CMS) na of video's automatisch een beschrijving krijgen. Wordt er niet automatisch een beschrijving meegegeven? Vraag dan na wat de beste manier is om dit in jullie CMS te doen.
 
