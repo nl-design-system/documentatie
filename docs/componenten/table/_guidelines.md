@@ -72,7 +72,7 @@ Techniek 2: HTML aanbieden in twee varianten. Naast de HTML `<table>` element, o
 
 Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveaus van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
 
-Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screenreaders ook weten welke koppen bij de cel hoort.
+Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screenreaders ook weten welke koppen bij de cel horen.
 
 #### Kop van de tabel niet gekoppeld {#tabel-kop-niet-gekoppeld}
 
