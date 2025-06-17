@@ -40,7 +40,7 @@ Functionele iconen communiceren belangrijke functionaliteit. Hierdoor dienen dez
 
 ### Tekstlabels {#tekstlabels}
 
-Probeer zoveel mogelijk iconen van een tekstlabel te voorzien. Wanneer een (interactief) icoon zonder tekstlabel aangeboden wordt, zorg dan een een tekstverduidelijking wel aan screenreaders aangeboden wordt.
+Probeer zoveel mogelijk iconen van een tekstlabel te voorzien. Wanneer een (interactief) icoon zonder tekstlabel aangeboden wordt, zorg dan dat een tekstverduidelijking wel aan screenreaders aangeboden wordt.
 
 ### Contrast {#contrast}
 
