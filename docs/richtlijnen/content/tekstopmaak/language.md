@@ -24,19 +24,19 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Voor de toegankelijkheid van je content is het belangrijk dat de gebruikte taal goed is ingesteld. Dat geldt voor de hele pagina én stukken tekst in een andere taal.
 
-Het instellen van de juiste taal is belangrijk omdat hulptechnologieën, zoals schermlezers of vertaalhulpmiddelen, afhankelijk zijn van die informatie.
+Het instellen van de juiste taal is belangrijk omdat hulptechnologieën, zoals [screenreaders](/woordenlijst/#screenreader) of vertaalhulpmiddelen, afhankelijk zijn van die informatie.
 
 Als de taal niet goed is ingesteld:
 
-- spreekt een schermlezer woorden verkeerd uit;
+- spreekt een screenreader woorden verkeerd uit;
 - worden automatische vertalingen onduidelijk of fout;
 - is de inhoud minder toegankelijk voor mensen die de taal niet vloeiend beheersen.
 
 Door de taal goed aan te geven, help je dus mensen die je content anders niet goed kunnen gebruiken of begrijpen.
 
-### Voorbeeld van taalwisseling met een schermlezer
+### Voorbeeld van taalwisseling met een screenreader
 
-In deze video hoor je hoe de schermlezer VoiceOver wisselt van stem en taal voor teksten waarvan de taal is ingesteld.
+In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten waarvan de taal is ingesteld.
 
 <VideoPlayer videoId="2UAjJ_5nxqw" />
 

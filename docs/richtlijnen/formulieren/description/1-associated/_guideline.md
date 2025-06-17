@@ -2,7 +2,7 @@
 
 # Koppel een description aan het formulierveld
 
-Voor screenreadergebruikers is het belangrijk dat de description samen wordt voorgelezen met het formulierveld.
+Voor gebruikers van [screenreaders](/woordenlijst/#screenreader) is het belangrijk dat de description samen wordt voorgelezen met het formulierveld.
 
 Waarom? Screenreaders, zoals JAWS, schakelen over naar de “formulierenmodus” wanneer ze inhoud binnen een `<form>` element verwerken. In deze modus lezen screenreaders alleen de formuliervelden voor, inclusief de daaraan gekoppelde informatie (met bijvoorbeeld `aria-describedby`). De niet-gekoppelde informatie wordt dan niet voorgelezen, tenzij de gebruiker er zelf naar zoekt.
 

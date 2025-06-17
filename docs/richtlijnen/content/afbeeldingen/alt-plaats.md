@@ -34,11 +34,11 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
 
 ## Het alt-attribuut van een afbeelding
 
-Bij het invoegen van een afbeelding in je content krijg je meestal de optie om een alternatieve tekst in te vullen. Die wordt dan geplaatst als alt-attribuut bij de afbeelding (in het img -element). Dit is ook de tekst die bezoekers te zien krijgen als de afbeelding niet geladen wordt. Deze tekst is verder niet zichtbaar en zit in de code gekoppeld aan je afbeelding. Daardoor wordt deze tekst bijvoorbeeld door een schermlezer voorgelezen.
+Bij het invoegen van een afbeelding in je content krijg je meestal de optie om een alternatieve tekst in te vullen. Die wordt dan geplaatst als alt-attribuut bij de afbeelding (in het img -element). Dit is ook de tekst die bezoekers te zien krijgen als de afbeelding niet geladen wordt. Deze tekst is verder niet zichtbaar en zit in de code gekoppeld aan je afbeelding. Daardoor wordt deze tekst bijvoorbeeld door een [screenreader](/woordenlijst/#screenreader) voorgelezen.
 
 Als je een decoratieve afbeelding hebt die je géén alternatieve tekst wilt geven, bieden de meeste CMS'en daar ook een optie voor. Dan staat er bijvoorbeeld onder of boven het veld waar je de alternatieve tekst kunt invoeren: 'of laat leeg om als decoratief te markeren'. Soms is het is een optie die je aan kunt vinken.
 
-Soms kun je naast de alternatieve tekst ook een titel (title) invoeren. Dit is de tekst die verschijnt als je met je muis over de afbeelding beweegt. Deze titel wordt niet altijd voorgelezen door voorleessoftware. Daarom is het niet voldoende om hier je alternatieve tekst te plaatsen. Als je zowel de titel als het alt-attribuut invult, kan voorleessoftware beide teksten voorlezen, wat storend is voor bezoekers. Laat de titel daarom bij voorkeur leeg.
+Soms kun je naast de alternatieve tekst ook een titel (title) invoeren. Dit is de tekst die verschijnt als je met je muis over de afbeelding beweegt. Deze titel wordt niet altijd voorgelezen door screenreaders. Daarom is het niet voldoende om hier je alternatieve tekst te plaatsen. Als je zowel de titel als het alt-attribuut invult, kan een screenreader beide teksten voorlezen, wat storend is voor bezoekers. Laat de titel daarom bij voorkeur leeg.
 
 Vraag om deze functionaliteit bij de beheerder of leverancier van je website als je deze optie niet hebt.
 

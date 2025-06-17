@@ -29,7 +29,7 @@ Stel jezelf de volgende vragen:
 
 We geven per stap referenties naar de verschillende [richtlijnen voor formulieren](/richtlijnen/formulieren/) van het NL Design System die dieper ingaan op de verschillende onderwerpen.
 
-Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een screenreader.
+Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een [screenreader](/woordenlijst/#screenreader).
 
 Niemand vult een formulier graag in en alle hulp is nuttig, hou dat doel voor ogen. Jij wilt wat weten van je gebruiker of je gebruiker wil jou wat vertellen. Maak dit proces zo makkelijk mogelijk.
 

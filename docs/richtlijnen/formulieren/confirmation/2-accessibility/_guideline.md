@@ -4,7 +4,7 @@
 
 Net zoals bij de foutmeldingen is het belangrijk dat de gebruiker de succesmelding ziet en/of hoort. Dit kan met dezelfde technieken die zijn beschrijven bij de richtlijnen voor [foutmeldingen](/richtlijnen/formulieren/foutmeldingen) zoals:
 
-- Screenreaderfeedback en focusmanagement na submit.
+- Feedback van [screenreaders](/woordenlijst/#screenreader) en focusmanagement na submit.
 - Update van de `<title>` in het `<head>`-element.
 
 De succesmelding toegankelijk te maken voor alle gebruikers is nodig om te voldoen aan de WCAG-succescriteria:

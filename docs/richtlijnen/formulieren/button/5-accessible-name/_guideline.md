@@ -2,7 +2,7 @@
 
 # De toegankelijke naam van een button
 
-Maak de buttontekst voor iedereen beschikbaar, zorg dus voor een toegankelijke naam. Dan kunnen screenreadergebruikers deze tekst ook lezen en weten ze wat er gaat gebeuren als ze op de button klikken.
+Maak de buttontekst voor iedereen beschikbaar, zorg dus voor een toegankelijke naam. Dan kunnen gebruikers van [screenreaders](/woordenlijst/#screenreader) deze tekst ook lezen en weten ze wat er gaat gebeuren als ze op de button klikken.
 
 We beschrijven hieronder een aantal technieken om een button een toegankelijke naam te geven.
 
@@ -29,7 +29,7 @@ Dit is de eenvoudigste en meest robuuste manier om een button een naam te geven.
 </button>
 ```
 
-**Optie 2**: Een decoratief icoon als SVG-bestand samen met tekst. De afbeelding heeft een `alt` attribuut met een lege waarde, waardoor het wordt overgeslagen door schermlezers. De toegankelijke naam is de buttontekst.
+**Optie 2**: Een decoratief icoon als SVG-bestand samen met tekst. De afbeelding heeft een `alt` attribuut met een lege waarde, waardoor het wordt overgeslagen door screenreaders. De toegankelijke naam is de buttontekst.
 
 ```html
 <button type="button">
@@ -38,7 +38,7 @@ Dit is de eenvoudigste en meest robuuste manier om een button een naam te geven.
 </button>
 ```
 
-**Optie 3**: Een decoratief icoon als SVG-code samen met de tekst. Voeg hiervoor `aria-hidden="true"` toe aan de SVG, waardoor het wordt overgeslagen door hulptechnologieën zoals schermlezers. De toegankelijke naam is de buttontekst.
+**Optie 3**: Een decoratief icoon als SVG-code samen met de tekst. Voeg hiervoor `aria-hidden="true"` toe aan de SVG, waardoor het wordt overgeslagen door hulptechnologieën zoals screenreaders. De toegankelijke naam is de buttontekst.
 Deze optie heeft de voorkeur omdat nu `currentColor` kan worden gebruikt in de CSS waardoor forced colors kunnen worden overgenomen.
 
 ```html

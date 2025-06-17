@@ -15,12 +15,12 @@ In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om sne
 <!--
 ### Heading versus caption {#heading-versus-caption}
 
-Voor screen reader gebruikers is het voordeel van het `<caption>` element dat die zowel context geeft wanneer je bij de tabel komt en je de pagina van begin tot einde leest, als wanneer je van verderop weer terug gaat naar een eerdere tabel. Een heading die een tabel beschrijft (`h1`-`h6` element) wordt alleen aangekondigd wanneer je van begin naar het einde leest; je mist dus context als je terug gaat.
+Voor gebruikers van screenreaders is het voordeel van het `<caption>` element dat die zowel context geeft wanneer je bij de tabel komt en je de pagina van begin tot einde leest, als wanneer je van verderop weer terug gaat naar een eerdere tabel. Een heading die een tabel beschrijft (`h1`-`h6` element) wordt alleen aangekondigd wanneer je van begin naar het einde leest; je mist dus context als je terug gaat.
 -->
 
 ## Sorteer de tabelrijen {#sorteer-de-tabelrijen}
 
-Voor screen reader gebruikers is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met één druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.
+Voor gebruikers van [screenreaders](/woordenlijst/#screenreader) is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met één druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.
 
 Als je de informatie niet kan vinden bij de datum die je verwacht, dan is het belangrijk om te weten dat op datum is gesorteerd: alleen dan kun weet je zeker dat de informatie helemaal niet in de tabel staat.
 
@@ -72,7 +72,7 @@ Techniek 2: HTML aanbieden in twee varianten. Naast de HTML `<table>` element, o
 
 Tabellen bevatten vaak veel informatie, daarom kan het gebruikers heel veel tijd kosten om de relevante informatie te vinden als je niet de goede HTML gebruikt voor de 3 niveaus van koppen. Gebruikers die de tabel visueel kunnen waarnemen hebben het voordeel dat je kan zien dat er een kop is bovenaan de kolom, of aan het begin van de regel, en kunnen de kop herkennen omdat die bijvoorbeeld vetgedrukt is.
 
-Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screen readers ook weten welke koppen bij de cel hoort.
+Het [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) zegt dat het belangrijk is om voor gebruikers die niet die relaties kunnen zien zoals de twee-dimensionale opmaak of vetgedrukte tekst, code te gebruiken waardoor bijvoorbeeld screenreaders ook weten welke koppen bij de cel horen.
 
 #### Kop van de tabel niet gekoppeld {#tabel-kop-niet-gekoppeld}
 
@@ -164,9 +164,9 @@ Voorkom teveel lege ruimte: gebruik bijvoorbeeld niet `width: 100%` voor een tab
 
 ### Tabel niet toegankelijk door eigen CSS `display` {#geen-eigen-css-display}
 
-Screen readers maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screen readers uit de code begrijpen wat de _column header_ is en wat de _row header_ is.
+Screenreaders maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screenreaders uit de code begrijpen wat de _column header_ is en wat de _row header_ is.
 
-Wanneer je met CSS `display` aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de _accessibility tree_ en maak je de relatie tussen de _data cell_ en de _header cell_ kapot. Tabellen waarvan de `display` wordt aangepast werken daarom niet meer in screen readers, tenzij de _accessibility tree_ door extra code wordt hersteld.
+Wanneer je met CSS `display` aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de _accessibility tree_ en maak je de relatie tussen de _data cell_ en de _header cell_ kapot. Tabellen waarvan de `display` wordt aangepast werken daarom niet meer in screenreaders, tenzij de _accessibility tree_ door extra code wordt hersteld.
 
 Je kunt voorkomen dat de _accessibility tree_ anders wordt opgebouwd. Je moet dan op élk element van de tabel expliciet zeggen welke `role` het heeft. Omdat deze techniek veel extra werk geeft en foutgevoelig is, raden wij aan om alternatieven te kiezen zoals niet `display` aanpassen of twee varianten maken.
 

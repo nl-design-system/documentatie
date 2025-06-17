@@ -17,7 +17,7 @@ Hoe geef je een link op een logo in de header een goede toegankelijke naam? We g
 
 Het is een veelvoorkomend patroon om een logo in de header te gebruiken als een link naar de homepage. Maar wat moet de toegankelijke naam van de link zijn? "Gemeente Voorbeeld", "homepage" of "Logo gemeente Voorbeeld"? Maakt het überhaupt uit?
 
-De toegankelijke naam wordt voorgelezen door screenreaders zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.
+De toegankelijke naam wordt voorgelezen door [screenreaders](/woordenlijst/#screenreader) zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.
 
 Het probleem met het linken van een logo is dat het **twee doelen** dient:
 
