@@ -29,11 +29,27 @@ Geef iedere video een duidelijke beschrijving, zodat bezoekers weten wat ze kunn
 
 Beschrijf bóven de videospeler op de pagina waar de video over gaat. Dit kan bijvoorbeeld in een beschrijvende paragraaf, of met een kopje. Zo begrijpen alle bezoekers wat zij kunnen verwachten van de video en bepalen of ze de video willen bekijken.
 
+<Guideline appearance="do" title="Video's op de pagina een beschrijving geven">
+  <Canvas language="html">
+    {() => (
+      <>
+        <h1>Heartbeat terugkijken</h1>
+        <p>Heartbeat terugkijken? Op deze pagina vind je de opnames.</p>
+        <h2>10 juni 2025</h2>
+        <p>Renate vertelt over de nieuwe richtlijnen voor tekstopmaak en waar je allemaal rekening mee moet houden.</p>
+      </>
+    )}
+
+  </Canvas>
+</Guideline>
+
 ## Een beschrijving in de videospeler
 
-Voor bezoekers die gebruik maken van een screenreader is het belangrijk dat de videospeler ook een beschrijving heeft. Video's die je vanaf YouTube en Vimeo op je pagina plaatst, worden meestal in een `iFrame` op de pagina geplaatst. Gebruikt jouw organisatie een eigen videospeler? Een goede beschrijving van de videospeler is de titel van je video. Het hangt af van welke videospeler jouw organisatie gebruikt, hoe je dat doet.
+Voor bezoekers die gebruik maken van een screenreader is het belangrijk dat de videospeler ook een beschrijving heeft. Een goede beschrijving van de videospeler is de titel van je video. Zo weet je als bezoeker wat je kunt verwachten.
 
-Het is niet altijd nodig om zelf de beschrijving van het `iFrame` of een videospeler aan te passen. Vraag bij de beheerder van je contentmanagementsysteem (CMS) na of video's automatisch een beschrijving krijgen. Wordt er niet automatisch een beschrijving meegegeven? Vraag dan na wat de beste manier is om dit in jullie CMS te doen.
+Video's die je vanaf YouTube en Vimeo op je pagina plaatst, worden meestal in een `iFrame` op de pagina geplaatst. Het is niet altijd nodig om zelf de beschrijving van het `iFrame` of een videospeler aan te passen. Vraag bij de beheerder van je contentmanagementsysteem (CMS) na of video's automatisch een beschrijving krijgen. Wordt er niet automatisch een beschrijving meegegeven? Vraag dan na wat de beste manier is om dit in jullie CMS te doen.
+
+Gebruikt jouw organisatie een eigen videospeler? Het hangt af van welke videospeler jouw organisatie gebruikt of je zelf een beschrijving moet toevoegen en hoe je dat doet. Vraag dit na bij de beheerder van je CMS.
 
 ## Hoe te testen
 
