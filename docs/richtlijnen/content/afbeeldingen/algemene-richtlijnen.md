@@ -34,7 +34,7 @@ Ongeacht voor welke afbeelding je een alternatieve tekst gaat schrijven, zijn er
 
 - Zet de belangrijkste informatie vooraan. Zo weet een bezoeker meteen of de rest van de beschrijving nodig is.
 - Hou de beschrijving kort, maar wel volledig. Bij voorkeur is een alternatieve tekst maximaal 150 tekens lang, maar het is het belangrijkst dat de beschrijving klopt.
-- Gebruik altijd interpunctie. [Screenreaders](/woordenlijst/#screenreader) maakt ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig langere alternateve teksten met een punt. Zo pauzeert een screenreader voordat de rest van de pagina wordt voorgelezen.
+- Gebruik altijd interpunctie. [Screenreaders](/woordenlijst/#screenreader) maken ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig langere alternateve teksten met een punt. Zo pauzeert een screenreader voordat de rest van de pagina wordt voorgelezen.
 - Benoem niet dát het een afbeelding is, bijvoorbeeld 'afbeelding van een eikenboom' of 'foto van Linda de Vries'. Benoem het alleen als het echt relevant is. Een voorbeeld van wanneer het wel relevant is om te benoemen dat het om een foto gaat, is een foto van een belangrijke historische gebeurtenis. Als de afbeelding een foto is, kan dat aangeven dat het een authentieke, historische opname is. Maar als het een illustratie is, kan dat betekenen dat het een interpretatie of reconstructie is.
 
 <Guideline appearance="dont" title="Geen interpunctie gebruiken">
