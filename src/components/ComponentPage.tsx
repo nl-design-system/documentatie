@@ -58,6 +58,19 @@ interface ComponentPageSectionProps {
   headingLevel: number;
 }
 
+interface FrameworkTask {
+  name: string;
+  id: string;
+  description: string;
+  brand?: string;
+  value: string;
+}
+
+interface FrameworkInfo {
+  frameworkName: string;
+  tasks: FrameworkTask[];
+}
+
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
   const relayOrderedProjects =
@@ -114,11 +127,49 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
 
           const alias = task?.value;
 
+          // Get the tasks (GitHub, NPM, etc) grouped by framework (CSS, HTML, React, etc)
+          // [
+          //   { frameworkName: 'CSS', tasks: [ ... ] },
+          //   { frameworkName: 'HTML', tasks: [ ... ] },
+          //   ...
+          // ]
+          // First get the unique frameworks this community component has links for
+          const frameworkRx = / URL \((\w+)\)/;
+          const frameworkNames = Array.from(
+            new Set<string>(
+              project.tasks
+                .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
+                .map(({ name }) => frameworkRx.exec(name)?.[1]),
+            ),
+          );
+
+          // Then group the tasks for each framework
+          // { brand:'github', name: 'GitHub URL (CSS)', id: '...', value: '...', description: '...' }
+          const frameworks: FrameworkInfo[] = frameworkNames.map((frameworkName) => {
+            const tasks = project.tasks
+              .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
+              .map(({ name, id, value }) => {
+                const brand = name.split(' ')[0];
+                const description =
+                  brand === 'Storybook'
+                    ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
+                    : `${alias} (${frameworkName}) op ${brand}`;
+                return {
+                  brand: brand.toLowerCase(),
+                  name,
+                  id,
+                  value,
+                  description,
+                };
+              });
+            return {
+              frameworkName,
+              tasks,
+            };
+          });
+
           const urlMap = new Map([
             ['Figma URL', { brand: 'figma', desciption: `${alias} in Figma` }],
-            ['NPM URL (CSS)', { brand: 'npm', desciption: `${alias} op NPM` }],
-            ['GitHub URL (CSS)', { brand: 'github', desciption: `${alias} op GitHub` }],
-            ['Storybook URL (CSS)', { brand: 'storybook', desciption: `${alias} in Storybook van ${project.title}` }],
             ['Theme Storybook URL', { brand: 'storybook', desciption: `${alias} voor visuele regressie tests` }],
           ]);
 
@@ -138,9 +189,11 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
+                {(links.length > 0 || frameworks.length > 0) && (
+                  <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
+                )}
                 {links.length > 0 && (
                   <>
-                    <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
                     <LinkList>
                       {links.map((item) => {
                         const url = urlMap.get(item.name);
@@ -153,6 +206,24 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         );
                       })}
                     </LinkList>
+                  </>
+                )}
+                {frameworks.length > 0 && (
+                  <>
+                    {frameworks.map(({ frameworkName, tasks }) => (
+                      <>
+                        <Heading level={headingLevel + 2}>
+                          {alias} in {frameworkName}
+                        </Heading>
+                        <LinkList>
+                          {tasks.map((frameworkTask) => (
+                            <LinkListLink key={frameworkTask.id} href={frameworkTask.value}>
+                              <BrandIcon brand={frameworkTask.brand} /> {frameworkTask.description}
+                            </LinkListLink>
+                          ))}
+                        </LinkList>
+                      </>
+                    ))}
                   </>
                 )}
               </CardContent>
