@@ -3,7 +3,7 @@
  [67877],
  {
   63922: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => h, contentTitle: () => u, default: () => p, frontMatter: () => c, metadata: () => m, toc: () => j });
+   i.r(n), i.d(n, { assets: () => j, contentTitle: () => u, default: () => p, frontMatter: () => c, metadata: () => m, toc: () => h });
    var t = i(52676),
     s = i(40139),
     r = i(16167);
@@ -29,9 +29,9 @@
     },
     c = { title: 'Woordenlijst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Woordenlijst', sidebar_position: 5, pagination_label: 'Woordenlijst', description: 'NL Design System Woordenlijst', slug: '/woordenlijst', keywords: ['termenlijst', 'glossary', 'glossarium', 'uitleg'] },
     u = 'NL Design System Woordenlijst',
-    m = { id: 'woordenlijst/README', title: 'Woordenlijst', description: 'NL Design System Woordenlijst', source: '@site/docs/woordenlijst/README.mdx', sourceDirName: 'woordenlijst', slug: '/woordenlijst', permalink: '/woordenlijst', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/woordenlijst/README.mdx', tags: [], version: 'current', sidebarPosition: 5, frontMatter: { title: 'Woordenlijst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Woordenlijst', sidebar_position: 5, pagination_label: 'Woordenlijst', description: 'NL Design System Woordenlijst', slug: '/woordenlijst', keywords: ['termenlijst', 'glossary', 'glossarium', 'uitleg'] }, sidebar: 'handboek', previous: { title: 'Baseline mei 2025', permalink: '/baseline/2025-05' } },
-    h = {},
-    j = [{ value: 'Woorden', id: 'woorden', level: 2 }];
+    m = { id: 'woordenlijst/README', title: 'Woordenlijst', description: 'NL Design System Woordenlijst', source: '@site/docs/woordenlijst/README.mdx', sourceDirName: 'woordenlijst', slug: '/woordenlijst', permalink: '/woordenlijst', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/woordenlijst/README.mdx', tags: [], version: 'current', sidebarPosition: 5, frontMatter: { title: 'Woordenlijst', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Woordenlijst', sidebar_position: 5, pagination_label: 'Woordenlijst', description: 'NL Design System Woordenlijst', slug: '/woordenlijst', keywords: ['termenlijst', 'glossary', 'glossarium', 'uitleg'] }, sidebar: 'handboek', previous: { title: 'Baseline juni 2025', permalink: '/baseline/2025-06' } },
+    j = {},
+    h = [{ value: 'Woorden', id: 'woorden', level: 2 }];
    function g(e) {
     const n = { h1: 'h1', h2: 'h2', p: 'p', ...(0, s.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: ['\n', (0, t.jsx)(n.h1, { id: 'nl-design-system-woordenlijst', children: 'NL Design System Woordenlijst' }), '\n', (0, t.jsx)(r.nv, { lead: !0, children: (0, t.jsx)(n.p, { children: 'NL Design System streeft naar een vriendelijke gebruikerservaring. Hier en daar kunnen er toch lastige woorden en\ntermen tussen zitten. De woordenlijst legt deze woorden uit en verwijst door naar bronnen waar dat handig is.' }) }), '\n', (0, t.jsx)(n.h2, { id: 'woorden', children: 'Woorden' }), '\n', (0, t.jsx)(d, { terms: o })] });
