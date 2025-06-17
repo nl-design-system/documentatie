@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b5556ab9.css" />
-  <script src="/assets/js/runtime~main.e7b69449.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.02998a0b.js" defer="defer"></script>
   <script src="/assets/js/main.60cc69a3.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -371,7 +371,7 @@
               <p>Op basis van gebruikersonderzoek zouden wij de eerste optie aanbevelen.</p>
               <p>Plaats de uitleg over wel of niet verplichte velden altijd boven het formulier, zodat de gebruiker weet wat te verwachten bij het invullen.</p>
               <p>Maak de markering ook onderdeel van de labeltekst.</p>
-              <p>Screenreadergebruikers krijgen deze informatie daarnaast ook voorgelezen door <code class="utrecht-code">aria-required</code> of <code class="utrecht-code">required</code> in de code op te nemen bij de verplichte velden.</p>
+              <p>Gebruikers van <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> krijgen deze informatie daarnaast ook voorgelezen door <code class="utrecht-code">aria-required</code> of <code class="utrecht-code">required</code> in de code op te nemen bij de verplichte velden.</p>
               <p>Door te helpen fouten te voorkomen voldoe van aan <a href="/wcag/3.3.2" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 3.3.2 Labels of instructies</a> (niveau A).</p>
               <h2 id="optie-1-niet-verplichte-velden-markeren" class="utrecht-heading-2">Optie 1: &#x27;niet-verplichte&#x27; velden markeren</h2>
               <!-- -->
@@ -479,7 +479,7 @@
               <p>Zijn de meeste velden in een formulier &#x27;niet verplicht&#x27;? Of is het technisch niet mogelijk om de niet-verplichte velden te markeren? Geef dit dan aan door bij de verplichte velden de tekst &#x27;(verplicht)&#x27; in het label op te nemen.</p>
               <p>Een populaire manier om verplichte velden aan te duiden is door in het label een asterisk &#x27;*&#x27; op te nemen. Dit heeft niet de voorkeur omdat dit een extra denkstap voor de gebruikers vergt, zoals blijkt uit bovenstaand gebruikersonderzoek.</p>
               <p>Gebruik je deze constructie toch omdat je CMS of plug-in alleen deze mogelijkheid biedt, leg dan boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende, niet iedereen bezit deze voorkennis.</p>
-              <p>Uit onderzoek van Elevenways blijkt dat de asterisk goed wordt voorgelezen door screenreaders: <a href="https://elevenways.be/nl/artikels/hoe-screen-readers-speciale-tekens-lezen" class="utrecht-link utrecht-link--html-a">Hoe screenreaders speciale tekens lezen: een update</a>.</p>
+              <p>Uit onderzoek van Elevenways blijkt dat de asterisk goed wordt voorgelezen door <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>: <a href="https://elevenways.be/nl/artikels/hoe-screen-readers-speciale-tekens-lezen" class="utrecht-link utrecht-link--html-a">Hoe screenreaders speciale tekens lezen: een update</a>. Dit is wel afhankelijk van hoe de asterisk geïmplementeerd is. De test baseert zich op platte tekst, en niet op afbeeldingen, iconen of tekst die door middel van CSS toegevoegd is.</p>
               <!-- -->
               <!-- -->
               <!-- -->
@@ -607,7 +607,7 @@
                </div>
               </div>
               <h1 id="screenreaderfeedback" class="utrecht-heading-1">Screenreaderfeedback</h1>
-              <p>Vertel een gebruiker van hulptechnologieën (als screenreaders) dat een veld verplicht is met het ARIA-attribuut <code class="utrecht-code">aria-required=&quot;true&quot;</code>.</p>
+              <p>Vertel een gebruiker van hulptechnologieën (zoals <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>) dat een veld verplicht is met het ARIA-attribuut <code class="utrecht-code">aria-required=&quot;true&quot;</code>.</p>
               <p>Je kunt ook het HTML-attribuut <code class="utrecht-code">required</code> gebruiken in plaats van <code class="utrecht-code">aria-required</code>, maar dit vereist ook het attribuut <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate" class="utrecht-link utrecht-link--html-a">novalidate</a> in het <code class="utrecht-code">&lt;form&gt;</code> element. Novalidate voorkomt dat de formuliervalidatie van de browser in werking treedt. Voor aria-required=&quot;true&quot; hoeft dit niet. Alhoewel het gebruik van required in plaats van aria-required niet fout is, geven we daarom de voorkeur aan aria-required.</p>
               <!-- -->
               <!-- -->

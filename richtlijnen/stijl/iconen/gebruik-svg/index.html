@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b5556ab9.css" />
-  <script src="/assets/js/runtime~main.e7b69449.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.02998a0b.js" defer="defer"></script>
   <script src="/assets/js/main.60cc69a3.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -263,7 +263,7 @@
               </ul>
               <h2 id="gebruik-geen-font-voor-iconen" class="utrecht-heading-2">Gebruik geen font voor iconen.</h2>
               <p>In tegenstelling tot SVG worden iconen van een font toegewezen aan Unicode-punten en geïnterpreteerd als tekst. Dit kan tot toegankelijkheidsproblemen leiden. Zo kan iemand een eigen lettertype hebben geïnstalleerd. Mensen met dyslexie stellen soms hun eigen lettertypen in voor een betere leesbaarheid. In dat geval worden de iconen vervangen door &#x27;ontbrekende tekens&#x27;-symbolen. Dat gebeurt trouwens ook als het font niet geladen wordt.</p>
-              <p>Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een &#x27;A&#x27;. Wanneer men een ander font gebruikt of als het font met de iconen niet wordt geladen staat er simpelweg een &#x27;A&#x27;. Daarnaast wordt dit icoon door schermlezers ook uitgesproken als &#x27;A&#x27;.</p>
+              <p>Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een &#x27;A&#x27;. Wanneer men een ander font gebruikt of als het font met de iconen niet wordt geladen staat er simpelweg een &#x27;A&#x27;. Daarnaast wordt dit icoon door <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> ook uitgesproken als &#x27;A&#x27;.</p>
               <h2 id="toepassen-van-een-svg-in-code" class="utrecht-heading-2">Toepassen van een SVG in code</h2>
               <p>Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tekstlabel.</p>
               <p>Het icoon zelf moet het attribuut <code class="utrecht-code">focusable=&quot;false&quot;</code> hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.</p>
@@ -281,7 +281,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">button</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
               <p>Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeken) of een kruis (voor sluiten), zou je kunnen gebruiken zonder aanvullende visuele tekst. In deze gevallen wordt een visueel verborgen <code class="utrecht-code">&lt;span&gt;</code> aanbevolen.</p>
-              <p>Verberg in deze gevallen de <code class="utrecht-code">&lt;span&gt;</code> met behulp van de class <code class="utrecht-code">visually-hidden</code> of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.</p>
+              <p>Verberg in deze gevallen de <code class="utrecht-code">&lt;span&gt;</code> met behulp van de class <code class="utrecht-code">visually-hidden</code> of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Screenreaders zullen de tekst nog steeds voorlezen.</p>
               <p>
                Ook <code class="utrecht-code">aria-label</code> kan dit voor elkaar krijgen maar <a href="https://heydonworks.com/article/aria-label-is-a-xenophobe" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">aria-label</code> kan voor vertaalproblemen zorgen</a>.
               </p>

@@ -16,7 +16,7 @@
             <description><![CDATA[Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het alt-attribuut van een afbeelding of via een aria-label op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.]]></description>
             <content:encoded><![CDATA[<p>Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het <strong>alt-attribuut</strong> van een afbeelding of via een <strong>aria-label</strong> op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.</p>
 <p>Het is een veelvoorkomend patroon om een logo in de header te gebruiken als een link naar de homepage. Maar wat moet de toegankelijke naam van de link zijn? "Gemeente Voorbeeld", "homepage" of "Logo gemeente Voorbeeld"? Maakt het überhaupt uit?</p>
-<p>De toegankelijke naam wordt voorgelezen door screenreaders zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.</p>
+<p>De toegankelijke naam wordt voorgelezen door <a href="https://nldesignsystem.nl/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> zodat blinde en slechtziende bezoekers ook weten waar de link naartoe gaat.</p>
 <p>Het probleem met het linken van een logo is dat het <strong>twee doelen</strong> dient:</p>
 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
 <li>een logo, dat aangeeft welke site je bezoekt;</li>
@@ -196,7 +196,7 @@ Deze blogpost bevat een groot deel van de inhoud van het Engelstalige artikel <a
 <p>Zo kunnen mensen met een beperking een website gebruiken met:</p>
 <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
 <li>alleen een toetsenbord;</li>
-<li>een toetsenbord met een screenreader;</li>
+<li>een toetsenbord met een <a href="https://nldesignsystem.nl/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>;</li>
 <li>een toetsenbord met een screenreader en een brailleregel;</li>
 <li>spraakbesturing;</li>
 <li>een aanwijsstok.</li>
@@ -315,7 +315,7 @@ Laat dan een officiële <a href="https://www.digitoegankelijk.nl/toegankelijkhei
 <li>Hoe bied ik hulp als een gebruiker er niet uitkomt?</li>
 </ul>
 <p>We geven per stap referenties naar de verschillende <a href="https://nldesignsystem.nl/richtlijnen/formulieren/" class="utrecht-link utrecht-link--html-a">richtlijnen voor formulieren</a> van het NL Design System die dieper ingaan op de verschillende onderwerpen.</p>
-<p>Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een screenreader.</p>
+<p>Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een <a href="https://nldesignsystem.nl/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>.</p>
 <p>Niemand vult een formulier graag in en alle hulp is nuttig, hou dat doel voor ogen. Jij wilt wat weten van je gebruiker of je gebruiker wil jou wat vertellen. Maak dit proces zo makkelijk mogelijk.</p>
 <h2 id="wat-wil-ik-echt-weten" class="utrecht-heading-2">Wat wil ik echt weten?</h2>
 <p>Een goede foutafhandeling begint eigenlijk al bij de vragen die je wilt stellen. Sommige vragen zijn lastig te beantwoorden. Is het echt belangrijk of je weet of iemand man of vrouw is? Wil je alleen contact opnemen via de telefoon? Misschien wil de gebruiker wat anders invullen, kan geen keuze maken en stopt met invullen.</p>
