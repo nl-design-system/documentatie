@@ -255,9 +255,9 @@
     return n ? (0, u.jsx)(n, { ...e, children: (0, u.jsx)(E, { ...e }) }) : E(e);
    }
    var H = t(57716);
-   const U = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' },
+   const U = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' },
     I = void 0,
-    B = { id: 'componenten/link/index', title: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', source: '@site/docs/componenten/link/index.mdx', sourceDirName: 'componenten/link', slug: '/link', permalink: '/link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' }, sidebar: 'componenten', previous: { title: 'Language Navigation', permalink: '/language-navigation' }, next: { title: 'Link List', permalink: '/link-list' } },
+    B = { id: 'componenten/link/index', title: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', source: '@site/docs/componenten/link/index.mdx', sourceDirName: 'componenten/link', slug: '/link', permalink: '/link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link' }, sidebar: 'componenten', previous: { title: 'Language Navigation', permalink: '/language-navigation' }, next: { title: 'Link List', permalink: '/link-list' } },
     $ = {},
     X = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
@@ -268,7 +268,7 @@
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
     J = 'Link',
-    K = 'Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
+    K = 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
     q = 118,
     Q = g.find((e) => e.number === q);
    function Y(e) {
