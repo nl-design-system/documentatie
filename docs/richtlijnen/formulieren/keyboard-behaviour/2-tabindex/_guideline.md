@@ -4,7 +4,7 @@
 
 Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) te geven met een waarde groter dan nul, bijvoorbeeld `tabindex="1"` of met gebruik van `autofocus`. De gebruiker is meteen klaar om het formulier in te gaan vullen.
 
-Maar dit levert voor problemen op voor gebruikers van [screenreaders](/woordenlijst/#screenreader) en toetsenborden. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren.
+Maar dit levert problemen op voor gebruikers van [screenreaders](/woordenlijst/#screenreader) en toetsenborden. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren.
 
 Een screenreadergebruiker kan zo tekst missen die boven het formulier staat. Misschien staan daar wel instructies of aanvullende informatie over hoe het formulier goed in te vullen.
 
