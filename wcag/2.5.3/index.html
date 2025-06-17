@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.5.3 Label in Naam · NL Design System" />
-  <meta data-rh="true" name="description" content="Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam." />
-  <meta data-rh="true" property="og:description" content="Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam." />
+  <meta data-rh="true" name="description" content="De zichtbare naam van een onderdeel moet terugkomen in de toegankelijke naam." />
+  <meta data-rh="true" property="og:description" content="De zichtbare naam van een onderdeel moet terugkomen in de toegankelijke naam." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,input modaliteiten,operable,input modalities,label in name" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.5.3" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b5556ab9.css" />
-  <script src="/assets/js/runtime~main.02998a0b.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.c8d1d7f2.js" defer="defer"></script>
   <script src="/assets/js/main.60cc69a3.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -288,16 +288,59 @@
                <h1 class="nlds-inline-heading-group__heading">WCAG-succescriterium 2.5.3 Label in Naam</h1>
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
+              <h2 id="in-het-kort" class="utrecht-heading-2">In het kort</h2>
+              <dl>
+               <div class="dl__item">
+                <dt class="dl__term">Doel</dt>
+                <dd class="dl__definition">De zichtbare naam kan gebruikt worden voor spraakbediening.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Wat te doen</dt>
+                <dd class="dl__definition">Laat de zichtbare naam overeenkomen met de toegankelijke naam.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Waarom het belangrijk is</dt>
+                <dd class="dl__definition">Mensen met spraakbediening gebruiken de zichtbare naam voor bediening.</dd>
+               </div>
+              </dl>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.</p>
-              <p>Bijvoorbeeld: de toegankelijk naam van een link is de linktekst, of alternatieve tekst van een gelinkte afbeelding of een aria-label dat de inhoud van de linktekst overschrijft. De alt-tekst en het aria-label moeten overeenkomen of beginnen met de zichtbare tekst.</p>
-              <p>Een verschil in naam geeft problemen voor mensen die spraakbediening gebruiken. Als je zegt: &quot;Klik Contact&quot;, dan zoekt de spraaksoftware naar een link met de toegankelijke naam &quot;Contact&quot;. Hierdoor kan een gebruiker van spraakbediening makkelijker door een website navigeren.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>De zichtbare naam van een onderdeel moet terugkomen in de toegankelijke naam.</p>
+              <p>De zichtbare naam is wat veel gebruikers zien als ze een website gebruiken. Denk hierbij aan labels bij invoervelden, linkteksten of de inhoud van een knop.</p>
+              <p>Iemand die spraakbediening gebruikt zal deze naam gebruiken bij het uitspreken van commando&#x27;s. &quot;Klik contact&quot; zorgt ervoor dat het onderdeel dat &quot;contact&quot; heet geactiveerd wordt. De software voor spraakbediening gebruikt hiervoor de <a href="/woordenlijst/#toegankelijke-naam" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a>. Als die niet overeenkomt met de zichtbare naam, dan kan de software het commando niet uitvoeren. Ook als veel onderdelen op de pagina hetzelfde heten kan dit een probleem zijn. Denk hierbij aan linkteksten als &quot;lees meer&quot; of &quot;hier&quot;.</p>
               <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Content - Tekstopmaak: <a href="/richtlijnen/content/tekstopmaak/linkteksten" class="utrecht-link utrecht-link--html-a">Toegankelijke linkteksten</a>.</li>
+               <li>Formulieren - Labels: <a href="https://nldesignsystem.nl/richtlijnen/formulieren/labels/zichtbare-naam" class="utrecht-link utrecht-link--html-a">Zichtbare naam label</a></li>
               </ul>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://developer.chrome.com/docs/devtools/accessibility/reference" class="utrecht-link utrecht-link--html-a">Chrome Accessibility Pane</a></li>
+              </ul>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer voor elk interactief onderdeel wat de zichtbare naam is.</li>
+               <li>Gebruik een tool zoals de &quot;accessibility pane&quot; in Chrome of een screenreader om de toegankelijke naam te vinden.</li>
+               <li>Zorg dat de zichtbare naam onderdeel is van de toegankelijke naam.</li>
+              </ul>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Gebruik geen <code class="utrecht-code">placeholder</code>-attributen. Deze kunnen een toegankelijk naam geven, maar verdwijnen zodra de gebruiker ze het meest nodig heeft. Daarnaast zijn ze een bron van problemen met contrast en zorgen ze voor verwarring.</li>
+               <li>Gebruik zo weinig mogelijk <code class="utrecht-code">title</code>-attributen. Dit attribuut is een soort laatste redmiddel om iets een toegankelijke naam te geven. Het is de laatste in een rij met opties en geeft vaak verkeerde en onverwachte resultaten. Frames een naam geven is de uitzondering op deze regel.</li>
+               <li>Wees spaarzaam met het gebruik van <code class="utrecht-code">aria-labelledby</code> en <code class="utrecht-code">aria-label</code>. De eerste regel van ARIA-gebruik stuurt op zo min mogelijk ARIA-gebruik. HTML wordt beter ondersteund dan ARIA. Deze attributen zijn ook verreweg de makkelijkste manier om te falen voor dit succescriterium. Daarnaast worden deze attributen vaak slecht meegenomen bij veranderingen van code en door tools (en mensen) die vertalen.</li>
+               <li>Zorg voor unieke toegankelijke namen op een pagina. Dit maakt het gebruik van spraakbediening makkelijker.</li>
+               <li>Voor dit succescriterium is het ook belangrijk om tekst in afbeeldingen in het tekstalternatief te gebruiken. Zo kan de afbeelding als zichtbare naam gebruikt worden.</li>
+              </ul>
+              <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
+              <h3 id="fout-aria-label-overschrijft-de-zichtbare-naam" class="utrecht-heading-3">Fout: <code class="utrecht-code">aria-label</code> overschrijft de zichtbare naam</h3>
+              <p>Het <code class="utrecht-code">aria-label</code>-attribuut overschrijft de zichtbare naam bij het bepalen van de toegankelijke naam. Waar men denkt de zichtbare naam aan te vullen, daar gaat deze juist verloren.</p>
+              <span hidden="" id=":R52hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R52hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;!-- Foute code, niet gebruiken  -&gt;</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;a href=&quot;#&quot; aria-label=&quot;, opent externe website&quot;&gt;Geef uw melding door&lt;/a&gt;</span>
+</span></code></pre>
+              <p>In dit voorbeeld wordt de toegankelijke naam &quot;, opent externe website&quot; in plaats van &quot;Geef uw melding door, opent externe website&quot;.</p>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -353,9 +396,13 @@
           <div class="col col--3">
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#in-het-kort" class="table-of-contents__link toc-highlight">In het kort</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
              <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
+             <li><a href="#veelgemaakte-fouten" class="table-of-contents__link toc-highlight">Veelgemaakte fouten</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>

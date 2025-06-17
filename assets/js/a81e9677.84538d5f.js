@@ -370,7 +370,7 @@
     i = t(40139);
    function o(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.' }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld: de toegankelijk naam van een link is de linktekst, of alternatieve tekst van een gelinkte afbeelding of een aria-label dat de inhoud van de linktekst overschrijft. De alt-tekst en het aria-label moeten overeenkomen of beginnen met de zichtbare tekst.' }), '\n', (0, r.jsx)(n.p, { children: 'Een verschil in naam geeft problemen voor mensen die spraakbediening gebruiken. Als je zegt: "Klik Contact", dan zoekt de spraaksoftware naar een link met de toegankelijke naam "Contact". Hierdoor kan een gebruiker van spraakbediening makkelijker door een website navigeren.' })] });
+    return (0, r.jsx)(n.p, { children: 'De zichtbare naam van een onderdeel moet terugkomen in de toegankelijke naam.' });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
