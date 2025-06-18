@@ -16,7 +16,7 @@ keywords:
 
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Helpt je CMS bij het maken van toegankelijke content?
+# Toegankelijke content begint in het CMS
 
 Een goed content management systeem (CMS) doet meer dan alleen de mogelijkheid bieden om toegankelijke content te maken. Het helpt contentmakers om direct de juiste keuzes te maken, voorkomt veelgemaakte fouten en maakt toegankelijkheid onderdeel van het hele publicatieproces.
 
