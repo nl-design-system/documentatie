@@ -76,7 +76,7 @@ Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken]
 ### Opsommingen
 
 - Kun je via knoppen kiezen tussen genummerde opsommingen (1, 2, 3) en ongenummerde opsommingen?
-- Worden lijsten automatisch goed opgemaakt, zonder dat je zelf streepjes of cijfers hoeft te typen?
+- Worden opsommingen automatisch goed opgemaakt, zonder dat je zelf streepjes of cijfers hoeft te typen?
 - Voorkomt het CMS dat je per ongeluk een ‘neplijst’ maakt met alleen visuele opmaak?
 
 Lees waarom juiste lijstopmaak belangrijk is: [Toegankelijke opsommingen](/richtlijnen/content/tekstopmaak/opsommingen)
