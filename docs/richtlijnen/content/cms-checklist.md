@@ -27,7 +27,7 @@ Een goed CMS doet meer dan alleen de mogelijkheid bieden om toegankelijke conten
 Een toegankelijk CMS:
 
 - biedt semantische opmaak zonder dat je HTML hoeft te gebruiken (zoals koppen, lijsten, tabellen en citaten);
-- maakt het mogelijk om alternatieve informatie toe te voegen, zoals alt-teksten bij afbeeldingen, transcripties bij video’s en duidelijke omschrijvingen bij documenten;
+- maakt het mogelijk om alternatieve informatie toe te voegen, zoals alt-teksten bij afbeeldingen en transcripties bij video’s;
 - laat je de taal instellen voor de pagina én voor losse stukjes tekst;
 - helpt je om vanzelfsprekend toegankelijke keuzes te maken, zonder dat je technische kennis nodig hebt.
 
@@ -36,7 +36,7 @@ Een toegankelijk CMS:
 Een goed CMS helpt contentmakers fouten voorkomen door:
 
 - waarschuwingen bij veelgemaakte fouten (zoals ontbrekende alt-teksten of onlogische kopstructuren);
-- richtlijnen of beperkingen in de editor, zoals vaste kleuren met goed contrast, geen onderstreping (behalve bij links) en waarschuwingen bij gebruik van hoofdletters.
+- richtlijnen of beperkingen in de editor, zoals vaste kleuren met goed contrast, geen onderstreping (behalve bij links) en waarschuwingen bij het overslaan van kopniveaus.
 - controles vóór publicatie (bijvoorbeeld op ontbrekende beschrijvingen of instellingen).
 
 ## Checklist: ondersteunt het CMS toegankelijk publiceren?
@@ -58,7 +58,7 @@ Lees waarom een goede koppenstructuur belangrijk is: [Toegankelijke koppen](/ric
 ### Afbeeldingen
 
 - Kun je bij elke afbeelding een alt-tekst toevoegen via een apart veld?
-- Waarschuwt het CMS als een betekenisvolle afbeelding geen beschrijving heeft?
+- Waarschuwt het CMS als een afbeelding geen beschrijving heeft?
 - Kun je aangeven dat een afbeelding geen beschrijving nodig heeft?
 - Is er een aparte mogelijkheid om een uitgebreide beschrijving bij een afbeelding toe te voegen (voor complexe afbeeldingen, zoals grafieken en infographics)?
 
@@ -69,10 +69,9 @@ Lees waarom de plek van de alt-tekst uitmaakt: [Waar plaats je de alt-tekst?](/r
 
 - Kun je tabellen invoegen zonder zelf HTML te hoeven gebruiken?
 - Kun je kopcellen markeren voor rijen en kolommen?
-- Waarschuwt of voorkomt het CMS complexe tabellen die slecht werken met schermlezers? (Zoals geneste cellen of lege kolommen.)
-- Helpt het CMS om de leesvolgorde van cellen te bewaken? (Bijvoorbeeld door de juiste volgorde aan te houden bij invoer of door rij- en kolomkoppen aan te geven.)
+- Waarschuwt of voorkomt het CMS ingewikkelde tabellen die slecht werken met schermlezers? (Zoals geneste cellen of lege kolommen.)
 
-Lees waarom tabellen niet te complex mogen zijn: [Toegankelijke tabellen maken](/richtlijnen/content/tekstopmaak/tabellen)
+Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken](/richtlijnen/content/tekstopmaak/tabellen)
 
 ### Opsommingen
 
@@ -108,7 +107,6 @@ Lees waarom duidelijke linkteksten belangrijk zijn: [Zo schrijf je toegankelijke
 ### Video
 
 - Kun je een transcript, ondertiteling of audiodescriptie toevoegen?
-- Kun je aangeven of gebarentaal aanwezig is?
 - Waarschuwt het CMS als onderdelen ontbreken die nodig zijn om de video ook zonder beeld of geluid te kunnen volgen (zoals ondertiteling of transcript)?
 
 Lees waarom extra ondersteuning bij video nodig is: [Zo maak je video’s toegankelijk](/richtlijnen/content/video/)
@@ -127,7 +125,7 @@ Lees waarom kleurgebruik en contrast kritisch zijn: [Toegankelijk kleurgebruik](
 - Kun je metadata invullen, zoals titel, taal of beschrijving?
 - Wordt het toevoegen van ontoegankelijke documenten ontmoedigd?
 
-Lees waarom externe documenten ook ontoegankelijk moeten zijn: [Externe documenten](/richtlijnen/content/tekstopmaak/externe-documenten)
+Lees waarom externe documenten ook ontoegankelijk moeten zijn: [Externe documenten](/richtlijnen/content/tekstopmaak/kantoorbestanden)
 
 ## Extra ondersteuning voor een nog betere borging van toegankelijkheid
 
