@@ -79,7 +79,7 @@ Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken]
 - Worden opsommingen automatisch goed opgemaakt, zonder dat je zelf streepjes of cijfers hoeft te typen?
 - Voorkomt het CMS dat je per ongeluk een ‘nep-opsomming’ maakt met alleen visuele opmaak?
 
-Lees waarom juiste lijstopmaak belangrijk is: [Toegankelijke opsommingen](/richtlijnen/content/tekstopmaak/opsommingen)
+Lees waarom de opmaak van opsommingen belangrijk is: [Toegankelijke opsommingen](/richtlijnen/content/tekstopmaak/opsommingen)
 
 ### Tekst benadrukken
 
