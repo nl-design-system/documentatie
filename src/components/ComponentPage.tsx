@@ -15,61 +15,15 @@ import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
-import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
+import {
+  COMPONENT_STATES,
+  getProjectFrameworks,
+  getRelayBoardDescription,
+  relayProjectIds,
+  toKebabCase,
+  type ComponentPageSectionProps,
+} from '../utils';
 import './ComponentPage.css';
-
-type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
-type PROJECT_ID =
-  | 'HELP_WANTED'
-  | 'COMMUNITY'
-  | 'CANDIDATE'
-  | 'HALL_OF_FAME'
-  | 'UTRECHT'
-  | 'AMSTERDAM'
-  | 'RVO'
-  | 'LOGIUS'
-  | 'DEN_HAAG';
-interface Component {
-  relayStep: RELAY_STEP;
-  title: string;
-  backlog: string;
-  projects: {
-    title: string;
-    number: number;
-    id: PROJECT_ID;
-    url: string;
-    tasks: {
-      dataType: string;
-      name: string;
-      id: string;
-      value: string;
-      checked: boolean;
-    }[];
-    done: boolean;
-    progress: {
-      value: number;
-      max: number;
-    };
-  }[];
-}
-
-interface ComponentPageSectionProps {
-  component: Component;
-  headingLevel: number;
-}
-
-interface FrameworkTask {
-  name: string;
-  id: string;
-  description: string;
-  brand?: string;
-  value: string;
-}
-
-interface FrameworkInfo {
-  frameworkName: string;
-  tasks: FrameworkTask[];
-}
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -126,48 +80,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           const task = project.tasks.find(({ name }) => name === 'Naam');
 
           const alias = task?.value;
-
-          // Get the tasks (GitHub, NPM, etc) grouped by framework (CSS, HTML, React, etc)
-          // [
-          //   { frameworkName: 'CSS', tasks: [ ... ] },
-          //   { frameworkName: 'HTML', tasks: [ ... ] },
-          //   ...
-          // ]
-          // First get the unique frameworks this community component has links for
-          const frameworkRx = / URL \((\w+)\)/;
-          const frameworkNames = Array.from(
-            new Set<string>(
-              project.tasks
-                .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
-                .map(({ name }) => frameworkRx.exec(name)?.[1]),
-            ),
-          );
-
-          // Then group the tasks for each framework
-          // { brand:'github', name: 'GitHub URL (CSS)', id: '...', value: '...', description: '...' }
-          const frameworks: FrameworkInfo[] = frameworkNames.map((frameworkName) => {
-            const tasks = project.tasks
-              .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
-              .map(({ name, id, value }) => {
-                const brand = name.split(' ')[0];
-                const description =
-                  brand === 'Storybook'
-                    ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
-                    : `${alias} (${frameworkName}) op ${brand}`;
-                return {
-                  brand: brand.toLowerCase(),
-                  name,
-                  id,
-                  value,
-                  description,
-                };
-              });
-            return {
-              frameworkName,
-              tasks,
-            };
-          });
-
+          const frameworks = getProjectFrameworks(project);
           const urlMap = new Map([
             ['Figma URL', { brand: 'figma', desciption: `${alias} in Figma` }],
             ['Theme Storybook URL', { brand: 'storybook', desciption: `${alias} voor visuele regressie tests` }],
@@ -190,7 +103,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
                 {(links.length > 0 || frameworks.length > 0) && (
-                  <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
+                  <Heading level={headingLevel + 1}>Snel aan de slag</Heading>
                 )}
                 {links.length > 0 && (
                   <>

@@ -1,5 +1,5 @@
 import { Link } from '@site/src/components/Link';
-import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { BadgeList, DataBadge, Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
@@ -14,6 +14,7 @@ interface ComponentCardProps {
   headingLevel?: number;
   description?: string;
   href?: string;
+  frameworkNames?: string[];
 }
 
 export const ComponentCard = ({
@@ -22,6 +23,7 @@ export const ComponentCard = ({
   relayStep,
   headingLevel = 2,
   href,
+  frameworkNames,
 }: PropsWithChildren<ComponentCardProps>) => {
   return (
     <Card
@@ -43,6 +45,15 @@ export const ComponentCard = ({
             </p>
           )}
           {description && <Paragraph>{description}</Paragraph>}
+          {frameworkNames?.length ? (
+            <BadgeList>
+              {frameworkNames.map((frameworkName) => (
+                <DataBadge key={frameworkName}>{frameworkName}</DataBadge>
+              ))}
+            </BadgeList>
+          ) : (
+            ''
+          )}
         </div>
         {href && (
           <Paragraph>
