@@ -69,7 +69,7 @@ Lees waarom de plek van de alt-tekst uitmaakt: [Waar plaats je de alt-tekst?](/r
 
 - Kun je tabellen invoegen zonder zelf HTML te hoeven gebruiken?
 - Kun je kopcellen markeren voor rijen en kolommen?
-- Waarschuwt of voorkomt het CMS ingewikkelde tabellen die slecht werken met schermlezers? (Zoals geneste cellen of lege kolommen.)
+- Waarschuwt of voorkomt het CMS ingewikkelde tabellen die slecht werken met screen readers? (Zoals geneste cellen of lege kolommen.)
 
 Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken](/richtlijnen/content/tekstopmaak/tabellen)
 
@@ -92,7 +92,7 @@ Lees waarom het uitmaakt hoe je tekst benadrukt: [Zo benadruk je tekst toegankel
 ### Citaten
 
 - Kun je citaten invoegen via een aparte knop of functie in het CMS?
-- Worden citaten automatisch herkenbaar weergegeven, zowel voor lezers als voor schermlezers?
+- Worden citaten automatisch herkenbaar weergegeven, zowel voor lezers als voor screen readers?
 
 Lees waarom citaten correct moeten worden opgemaak: [Toegankelijke citaten](/richtlijnen/content/citaten)
 
@@ -119,7 +119,7 @@ Lees waarom extra ondersteuning bij video nodig is: [Zo maak je video’s toegan
 
 Lees waarom kleurgebruik en contrast kritisch zijn: [Toegankelijk kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik)
 
-### Externe documenten
+### Kantoorbestanden
 
 - Kun je aangeven wat voor bestandstype een link opent (zoals pdf)?
 - Kun je metadata invullen, zoals titel, taal of beschrijving?
@@ -140,7 +140,7 @@ Voorbeelden van extra ondersteuning:
 - Toegankelijkheid in herbruikbare componenten  
   Zijn er kant-en-klare blokken (zoals call-to-actions of tabellen) die standaard toegankelijk zijn?
 - Inline previews of simulaties  
-  Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een schermlezer?
+  Laat het CMS zien hoe de content eruitziet voor gebruikers met een visuele beperking of met een screen reader?
 
 ## Tot slot: hoe gebruik je dit hulpmiddel?
 
