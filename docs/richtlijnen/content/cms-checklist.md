@@ -26,7 +26,7 @@ Een goed content management systeem (CMS) doet meer dan alleen de mogelijkheid b
 
 Een toegankelijk CMS:
 
-- biedt semantische opmaak zonder dat je HTML hoeft te gebruiken (zoals koppen, lijsten, tabellen en citaten);
+- biedt semantische opmaak (zoals koppen, lijsten, tabellen en citaten) zonder dat je zelf HTML hoeft te gebruiken;
 - maakt het mogelijk om alternatieve informatie toe te voegen, zoals alt-teksten bij afbeeldingen en transcripties bij video’s;
 - laat je de taal instellen voor de pagina én voor losse stukjes tekst;
 - helpt je om vanzelfsprekend toegankelijke keuzes te maken, zonder dat je technische kennis nodig hebt.
