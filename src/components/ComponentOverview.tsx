@@ -12,7 +12,7 @@ import {
 } from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
 import { useEffect, useState } from 'react';
-import { COMPONENT_STATES, normalizeName, relayProjectIds } from '../utils';
+import { COMPONENT_STATES, getComponentFrameworkNames, normalizeName, relayProjectIds, type Component } from '../utils';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
 import './ComponentOverview.css';
@@ -223,9 +223,10 @@ export const ComponentOverview = () => {
         {filteredComponents.map(({ title, id, href, description }) => {
           const component = componentProgress.find((item) => {
             return item.title === title;
-          });
+          }) as Component;
 
           const relayStep = component && COMPONENT_STATES[component.relayStep];
+          const frameworkNames = getComponentFrameworkNames(component);
 
           return (
             <ComponentCard
@@ -235,6 +236,7 @@ export const ComponentOverview = () => {
               description={description}
               key={id}
               relayStep={relayStep}
+              frameworkNames={frameworkNames}
             />
           );
         })}
