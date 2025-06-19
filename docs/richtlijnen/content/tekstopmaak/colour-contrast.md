@@ -1,11 +1,11 @@
 ---
-title: Kleurgebruik · Content · Richtlijnen
+title: Kleurgebruik in tekst · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Kleurgebruik
-pagination_label: Kleurgebruik
+sidebar_label: Kleurgebruik in tekst
+pagination_label: Kleurgebruik in tekst
 description: Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.
-slug: /richtlijnen/content/tekstopmaak/kleurgebruik
+slug: /richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst
 keywords:
   - tekstopmaak
   - kleurgebruik
@@ -18,7 +18,7 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Kleurgebruik
+# Kleurgebruik in tekst
 
 Kleurgebruik speelt een grote rol in hoe mensen content waarnemen. Niet iedereen ziet kleuren op dezelfde manier. Daarom is het belangrijk dat je informatie nooit alleen met kleur overbrengt, en dat tekst altijd goed leesbaar blijft tegen de achtergrond.
 
