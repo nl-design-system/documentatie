@@ -9,6 +9,7 @@ slug: /richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst
 keywords:
   - tekstopmaak
   - kleurgebruik
+  - tekst
   - kleurcontrast
 ---
 
