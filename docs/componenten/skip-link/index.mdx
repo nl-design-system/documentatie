@@ -54,6 +54,7 @@ import {
 import Usage from "./_usage.md";
 import { Markdown } from "@site/src/components/Markdown";
 import { NewChecklist } from "./NewChecklist";
+import { DoneList } from "./DoneList";
 
 {/* Add name and description for the component */}
 export const title = "Skip Link";
@@ -86,94 +87,64 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <AcComponent />
 
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid algemeen"
+<DoneList
   items={[
     {
-      title: "De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden",
+      title: "De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.",
       sc: "2.5.2",
       status: "",
       component: <Wcag252NLDS />,
     },
     {
-      title: "Het aanwijsgebied van de Skip Link is groot genoeg",
+      title: "Het aanwijsgebied van de Skip Link is groot genoeg.",
       sc: "2.5.5",
       status: "",
       component: <Wcag255NLDS />,
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid visueel ontwerp"
-  items={[
     {
-      title: "De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot",
+      title: "De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.",
       sc: "1.4.12",
       status: "",
       component: <Wcag1412NLDS />,
     },
     {
-      title: "De Skip Link heeft een zichtbare focusindicator",
+      title: "De Skip Link heeft een zichtbare focusindicator.",
       sc: "2.4.7",
       status: "",
       component: <Wcag247NLDS />,
     },
     {
-      title: "De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels",
+      title: "De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.",
       sc: "2.4.13",
       status: "",
       component: <Wcag2413NLDS />,
     },
     {
-      title: "Het aanwijsgebied van de Skip Link is groot genoeg",
+      title: "Het aanwijsgebied van de Skip Link is groot genoeg.",
       sc: "2.5.5",
       status: "",
       component: <Wcag255NLDS />,
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid zoom en herschalen"
-  items={[
     {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
       sc: "1.4.4",
       status: "",
       component: <Wcag144NLDS />,
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid toetsenbord"
-  items={[
     {
-      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets",
+      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.",
       sc: "2.1.1",
       status: "",
       component: <Wcag211NLDS />,
     },
     {
-      title: "De Skip Link heeft een zichtbare focusindicator",
+      title: "De Skip Link heeft een zichtbare focusindicator.",
       sc: "2.4.7",
       status: "",
       component: <Wcag247NLDS />,
     },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={3}
-  testCategory="Toegankelijkheid screenreader"
-  items={[
     {
-      title: "De Skip Link heeft een rol van link",
+      title: "De Skip Link heeft een rol van link.",
       sc: "4.1.2",
       status: "",
       component: <Wcag412NLDS />,
@@ -190,7 +161,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 <NewChecklist
   items={[
     {
-      title: "Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
+      title: "Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.",
       sc: "1.4.5",
       status: "",
       component: <Wcag145 />,
@@ -198,42 +169,42 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)",
+        "De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
       sc: "2.4.4",
       status: "",
       component: <Wcag244 />,
       tags: ["developer"],
     },
     {
-      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam",
+      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.",
       sc: "2.5.3",
       status: "",
       component: <Wcag253 />,
       tags: ["developer"],
     },
     {
-      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats",
+      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.",
       sc: "3.2.1",
       status: "",
       component: <Wcag321 />,
       tags: ["developer"],
     },
     {
-      title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde",
+      title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde.",
       sc: "3.2.3",
       status: "",
       component: <Wcag323 />,
       tags: ["developer", "designer"],
     },
     {
-      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur",
+      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.",
       sc: "1.4.3",
       status: "",
       component: <Wcag143 />,
       tags: ["designer"],
     },
     {
-      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
+      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.",
       sc: "3.2.4",
       status: "",
       component: <Wcag324 />,
@@ -241,7 +212,7 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar",
+        "Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar.",
       sc: "1.4.10",
       status: "",
       component: <Wcag1410 />,
@@ -249,28 +220,28 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord",
+        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.",
       sc: "2.1.2",
       status: "",
       component: <Wcag212 />,
       tags: ["developer"],
     },
     {
-      title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt",
+      title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt.",
       sc: "2.4.1",
       status: "",
       component: <Wcag241 />,
       tags: ["developer"],
     },
     {
-      title: "De Skip Link staat op een logische plek in de focusvolgorde",
+      title: "De Skip Link staat op een logische plek in de focusvolgorde.",
       sc: "2.4.3",
       status: "",
       component: <Wcag243 />,
       tags: ["developer"],
     },
     {
-      title: "De Skip Link wordt niet bedekt door een ander element op de pagina",
+      title: "De Skip Link wordt niet bedekt door een ander element op de pagina.",
       sc: "2.4.11",
       status: "",
       component: <Wcag2411 />,
@@ -278,7 +249,7 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
+        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.",
       sc: "3.1.2",
       status: "",
       component: <Wcag312 />,
@@ -286,28 +257,28 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient",
+        "De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient.",
       sc: "4.1.2",
       status: "",
       component: <Wcag412 />,
       tags: ["developer"],
     },
     {
-      title: "De Skip Link heeft een zichtbare focusindicator",
+      title: "De Skip Link heeft een zichtbare focusindicator.",
       sc: "2.4.7",
       status: "",
       component: <Wcag247 />,
       tags: ["developer", "designer"],
     },
     {
-      title: "De focusindicator van de Skip Link heeft voldoende contrast met de achtergrond",
+      title: "De focusindicator van de Skip Link heeft voldoende contrast met de achtergrond.",
       sc: "2.4.13",
       status: "",
       component: <Wcag2413CC />,
       tags: ["developer", "designer"],
     },
     {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
       sc: "1.4.4",
       status: "",
       component: <Wcag144 />,
