@@ -141,6 +141,12 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@nl-design-system-candidate/data-badge-css':
+        specifier: 1.0.2
+        version: 1.0.2
+      '@nl-design-system-candidate/data-badge-react':
+        specifier: 1.1.2
+        version: 1.1.2(@babel/runtime@7.26.7)(react@18.3.1)
       '@nl-design-system-unstable/documentation':
         specifier: workspace:*
         version: link:docs
@@ -171,12 +177,18 @@ importers:
       '@types/react-dom':
         specifier: 18.3.5
         version: 18.3.5(@types/react@18.3.18)
+      '@utrecht/checkbox-group-react':
+        specifier: 1.0.10
+        version: 1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/component-library-css':
         specifier: 7.0.0
         version: 7.0.0
       '@utrecht/component-library-react':
         specifier: 5.0.0
         version: 5.0.0(@babel/runtime@7.26.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-checkbox-react':
+        specifier: 1.0.10
+        version: 1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/web-component-library-react':
         specifier: 3.0.2
         version: 3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1857,8 +1869,17 @@ packages:
   '@nl-design-system-candidate/color-sample-docs@1.0.1':
     resolution: {integrity: sha512-LuskAUduBpXp9GSU6+rTS39poWHRaMcB8KXRvUBRHrsMHnp+5S2syq7Od5UaeiTWzv0K88BSTgWNVfp3ky1u5g==}
 
+  '@nl-design-system-candidate/data-badge-css@1.0.2':
+    resolution: {integrity: sha512-504WE8ZS/9fYpTa8b9KqMwO7Is1DfZVydZVnfQDBTji85TJ6jpVy9R+sXIJz+kAce6gcUACBRFjaFJusKd+Dvg==}
+
   '@nl-design-system-candidate/data-badge-docs@1.0.1':
     resolution: {integrity: sha512-7YcSK0wbeJ8C3DTcnlygGKsSNgKQR6U+DP5JFBq70W0HcKj9Tp+RkAWz0DGOrzUsA10t5V1PyxjE4NG9OKrCyQ==}
+
+  '@nl-design-system-candidate/data-badge-react@1.1.2':
+    resolution: {integrity: sha512-eu3D8sxmr2h+unxzT9eYvKlaXHMKsmQCClLIf53l0WzntMDkUJXHNvBOonJjLjxS2mHTj4zkbzA1ebb9bJFv1w==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2':
     resolution: {integrity: sha512-r6N8WYLey3REimgVtvTUxtjVC/nwsjc1Vh66qziuq5F6XQ3YqvptmogUaip4Kx59hE+n98IkI2DpEuCVQYoVhA==}
@@ -2481,6 +2502,23 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  '@utrecht/checkbox-css@1.6.1':
+    resolution: {integrity: sha512-P/S3XvYVW+3sgOAub68eZC/Fn8HlJmG9wl5Owky/NyDnRihb811EicdyzEzc8ldpwuxD7n/YNmJLMyj5pRL5NA==}
+
+  '@utrecht/checkbox-group-react@1.0.10':
+    resolution: {integrity: sha512-qu9hVBvA4aFMg3EDrHpW7EWm+UidyauvnZ4RWMNGWPxbvot6Ooy5wTx55jnqTXJaEd1+syyUmpv1/QFOtmXCgQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/checkbox-react@1.0.8':
+    resolution: {integrity: sha512-Kv1qf3nEOZA+Y0Z5+pKYpDMOBfpL2eXqeAeedj0UTYXX6Tkvq3lUK8eB4CLuSNgBV+ejSUj3CuZoEiOENK4Fdg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
   '@utrecht/component-library-css@3.0.0':
     resolution: {integrity: sha512-g4DUnyGqkpg0f307tYbg+KZHHvvIllm4svK8u9TEIcHbXsa86wc+T4ncBZqLbNik4EPOX+g4nDEnePVmFgPS/A==}
 
@@ -2545,8 +2583,68 @@ packages:
   '@utrecht/components@3.0.1-alpha.18':
     resolution: {integrity: sha512-K70QrVpP1lHGdpYNShnhy7FYM1Ce8S1BXW4ES3E+9YBbiA9WgDV+G9iAx2TI10NduOVkjt9KRy7YZ9I8/OUVug==}
 
+  '@utrecht/custom-checkbox-css@1.3.2':
+    resolution: {integrity: sha512-DvrmyGnC7y0xTdCqGu4dpP1bdraPNvWYC8uzS8CAzH/w8mBVti4rctP5mTXa7i5nFQN3BWLu8WF8FRpnRTMdJQ==}
+
   '@utrecht/design-tokens@2.4.0':
     resolution: {integrity: sha512-TPLbXIgNOmoNbl6eTibBGkJ8sIH/8C77Bgot0LyLBe95/CQMCy9t172uB8C2SrtTKBsrxJwQhIUkHZ3YCGPvyA==}
+
+  '@utrecht/fieldset-react@1.0.7':
+    resolution: {integrity: sha512-OilAF6SLn0fC5YbGbFfl6Ea6zfPD2yrE6L6SvtLjT+Gdbxx/e/XOk78+LmcQvY+cT2GlHxLzxM/YchsNBhOTOA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-field-checkbox-react@1.0.10':
+    resolution: {integrity: sha512-vmg06zS5F9XgHfTciPNNLvmjfEc50wBy12tHwi6045Qmuy3g7L7CZ0fSPmNfxUf70RUPvgW7HkHRvhURFuC99Q==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-field-css@1.5.1':
+    resolution: {integrity: sha512-EILCtMcMk3LgTT5pUjna0vKA5S77Av1+fgqgfApEWU7y0wcC8UcYdD7Ujl3goJShhO02Fo7AYM3befJQgYBtuQ==}
+
+  '@utrecht/form-field-description-css@1.5.1':
+    resolution: {integrity: sha512-oaLNNNl0rEKVmK3FvxAaYfAzrzhE3Ahsj2JweDCzkvihyN8lWRT0YZP4DQh04RNU5JuQ1VbNFxRp4SZh0jDPoQ==}
+
+  '@utrecht/form-field-description-react@1.0.7':
+    resolution: {integrity: sha512-laLmOKJXl0vUF3w1eJT9QENUgGz72mWPwdZOebGZfsH0pKKFLcvlXUcXQ+cMnCJyKcBjEdxeUN8DA75UqbKo5g==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-field-error-message-css@1.5.1':
+    resolution: {integrity: sha512-YuAaTsvxC4fWzIflFmnE1wvrDxXnDvtPbomifzy7fMUjXAHSE+I8XRfnMoibGZjRzz6NyBtitrwerai2nUTBww==}
+
+  '@utrecht/form-field-error-message-react@1.0.7':
+    resolution: {integrity: sha512-SNgHTANBkoYv72VpdGOU9Q2NJHSYNAbqWxaFjKM9sXT4EVTemKwL+vSEuc9YmEECwK10saMRTz8eq59ytzHkbQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-field-react@1.0.7':
+    resolution: {integrity: sha512-6fBKG5stkxNj2UnyvpK2aSpLYNGeEX5qmqG0Ma8yneVgzGyEOtQqkjGr8bmM0QlIgdGvBwn2E1ePZD99Vyaa4Q==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-fieldset-css@1.5.1':
+    resolution: {integrity: sha512-ORVxcAXSbPLr0dLuj26XhKY+3/YSdUSjj5r7V8cTYXbh32KJwaoAOrAREFo0Jm1i8vJpwxAwsptb7o9Lmhpw8Q==}
+
+  '@utrecht/form-label-css@1.6.1':
+    resolution: {integrity: sha512-h9d0FpM/VRbeVnr9zd/9Mbr+paKHa2OaJn0eP2ncCBHlLveb3Mww3rl+u6t0vw0lB8mrUAtjDWCLAjKNc8d0Gg==}
+
+  '@utrecht/form-label-react@1.0.7':
+    resolution: {integrity: sha512-rzc5tlLvtRcBFUjZkSqOAdn6C3mHdv3+IITfo/ZXL+HDN6XGzHR+/Rk6ACKfo9hDXad2jJV8bIClWEp9U/yhpg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
 
   '@utrecht/web-component-library-react@3.0.2':
     resolution: {integrity: sha512-KwrE0Lt6H6mx4jXhnDh6WX3SGkqnS0pM/FFKyPnwiaQ3XmNGDPWnabpnEbW22YUkGTup/YUYrSjrzN2TvPr3bg==}
@@ -10541,7 +10639,15 @@ snapshots:
 
   '@nl-design-system-candidate/color-sample-docs@1.0.1': {}
 
+  '@nl-design-system-candidate/data-badge-css@1.0.2': {}
+
   '@nl-design-system-candidate/data-badge-docs@1.0.1': {}
+
+  '@nl-design-system-candidate/data-badge-react@1.1.2(@babel/runtime@7.26.7)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2': {}
 
@@ -11220,6 +11326,31 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
+  '@utrecht/checkbox-css@1.6.1': {}
+
+  '@utrecht/checkbox-group-react@1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/fieldset-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-checkbox-react': 1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-css': 1.5.1
+      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/checkbox-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/checkbox-css': 1.6.1
+      '@utrecht/custom-checkbox-css': 1.3.2
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/component-library-css@3.0.0': {}
 
   '@utrecht/component-library-css@3.0.1-alpha.18': {}
@@ -11262,7 +11393,71 @@ snapshots:
     dependencies:
       clsx: 1.2.1
 
+  '@utrecht/custom-checkbox-css@1.3.2': {}
+
   '@utrecht/design-tokens@2.4.0': {}
+
+  '@utrecht/fieldset-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-fieldset-css': 1.5.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-field-checkbox-react@1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-field-css@1.5.1': {}
+
+  '@utrecht/form-field-description-css@1.5.1': {}
+
+  '@utrecht/form-field-description-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-description-css': 1.5.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-field-error-message-css@1.5.1': {}
+
+  '@utrecht/form-field-error-message-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-error-message-css': 1.5.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-field-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-css': 1.5.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-fieldset-css@1.5.1': {}
+
+  '@utrecht/form-label-css@1.6.1': {}
+
+  '@utrecht/form-label-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-label-css': 1.6.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/web-component-library-react@3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
