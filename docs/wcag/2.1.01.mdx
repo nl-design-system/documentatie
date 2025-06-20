@@ -59,7 +59,13 @@ import Summary from "./summaries/_2.1.1-summary.md";
 Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Daarnaast zijn er tal van apparaten die zich gedragen als een toetsenbord en daarmee ook baat hebben bij dit criterium. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
 
 Bediening met het toetsenbord is ook relatief makkelijk te testen; een computer met toetsenbord volstaat. Dit zorgt ervoor dat velen een bijdrage kunnen leveren aan het voldoen aan dit criterium.
-Door deze lage drempel en de brede impact is testen met het toetsenbord heel geschikt voor bewustzijn rond toegankelijkheid. Zo bestaat er de [<span lang="en">#NoMouse Challenge</span>](https://nomouse.org/) om mensen te motiveren.
+
+De interactieve elementen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en <kbd>shift+tab</kbd>. De ene navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). De andere doet hetzelfde maar in omgekeerde volgorde. Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Het uitvoeren van acties doe je vervolgens met de <kbd>spatiebalk</kbd> of <kbd>return/enter</kbd>.
+
+Op MacOS kunnen extra instellingen nodig zijn:
+
+- [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
+- [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -77,42 +83,36 @@ Door deze lage drempel en de brede impact is testen met het toetsenbord heel ges
 
 ## Hoe te testen
 
-De interactieve elementen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en <kbd>shift+tab</kbd>. De ene navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). De andere doet hetzelfde maar in omgekeerde volgorde. Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Het uitvoeren van acties doe je vervolgens met de <kbd>spatiebalk</kbd> of <kbd>return/enter</kbd>.
+1. Vind alle plekken op een website waar je iets kan doen.
+2. Controleer of je het met een toetsenbord kan doen.
+
+Deze tests moeten ook slagen als de website ingezoomd is.
+
+## Tips
+
+- Als je test voor bediening met het toetsenbord, test dan meteen gerelateerde successcriteria zoals
+  - [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11) voor de focusweergave
+  - [WCAG-succescriterium 2.1.2 Geen toetsenbordval](/wcag/2.1.2)
+  - [WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)](/wcag/2.1.3)
+  - [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1)
+  - [WCAG-succescriterium 2.4.3 Focus volgorde](/wcag/2.4.3)
+  - [WCAG-succescriterium 2.4.7 Focus zichtbaar](/wcag/2.4.7)
+  - [WCAG-succescriterium 2.4.13 Focusweergave](/wcag/2.4.13)
+  - [WCAG-succescriterium 3.2.1 Bij focus](/wcag/3.2.1)
+- Gebruik zo veel mogelijk HTML-elementen in plaats van zelfgebouwde onderdelen. Zelfgebouwde onderdelen houden vaak geen rekening met bediening door een toetsenbord terwijl HTML standaard goed werkt met een toetsenbord. Een niet-interactief element dat klikbaar is gemaakt met JavaScript zal standaard niet werken met een toetsenbord. Een element dat van zichzelf interactief is (`<button>`, `<link>`, etc) werkt wel.
+- Zorg dat bediening met het toetsenbord niet alleen mogelijk is, maar ook logisch werkt. Een groot deel van een fijne gebruikerservaring is dat de focus zich logisch en voorspelbaar gedraagt. Als de gebruiker een venster opent met een knop, laat dan de focus na het sluiten van het venster ook terug gaan naar die knop.
+- Een uitklappend menu en andere overlappende onderdelen zoals chatvensters en cookiemeldingen zijn lastig voor het toetsenbord. Visueel worden ze vaak onderaan een pagina geplaatst. Voor een toetsenbord is het einde van de pagina vaak erg onhandig. De code van een uitklappend menu plaats je het liefst direct na de knop die het opent. Zo zit het voor de navigatie volgorde op een logische plek. De gebruiker opent iets, en met een opvolgende `tab` is het gefocust.
+- Bij het openen van een dialoogvenster moet de focus hierop geplaatst worden. Welk onderdeel de focus krijgt hangt af van de inhoud van het venster. Dit wordt uitgelegd op de Engelstalige pagina [<span lang="en">Dialog (Modal) Pattern</span>](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboard_interaction) van de
+  ARIA Authoring Practices Guide (APG).
+- Als een dialoogvenster sluit moet de focus weer terug naar het element dat het opende.
+- Elementen die reageren op een hover moeten ook werken met het toetsenbord. Denk hierbij bijvoorbeeld aan tooltips en uitklappende menus.
+- Verplaats de focus van de gebruik zo min mogelijk. Het is geen prettige ervaring om "verplaatst te worden" op een website.
+- [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex). Voeg ook geen `tabindex="0"` toe aan elementen die niet interactief zijn. En als het wel interactief is, voeg ook een naam toe voor [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2)
+- Kaarten en visualizaties zijn soms erg lastig toegankelijk te maken voor een toetsenbord. Als er geen andere oplossing mogelijk is kan er een alternatief geboden worden. Zo kan een kaart met markers en adressen aangevuld worden met een lijst met dezelfde adressen. Let wel op dat het alternatief een volwaardige oplossing is.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Een website testen met een toetsenbord is essentieel bij het controleren van de toegankelijkheid.
-Hierbij is een aantal testen belangrijk:
-
-- werkt alle functionaliteit met een toetsenbord?
-- is de tabvolgorde logisch en voorspelbaar?
-- is alles goed bereikbaar, ook als je inzoomt?
-- verplaatst de toetsenbordfocus zich goed bij het openen van een menu of dialog?
-- is er geen "toetsenbordval"? Dat betekent: kun je met Tab-navigatie door naar de rest van de pagina, of kom je in een _loop_ terecht waardoor je niet verder komt?
-
-Hoe toetsenbordnavigatie werkt, is beschreven op [<span lang="en">Keyboard testing</span>](https://webaim.org/techniques/keyboard/#testing) van WebAIM.
-
-Zorg dat de instellingen van de MacOS en browsers goed staan:
-
-- [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
-- [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
-
-### Werkt alle functionaliteit met een toetsenbord
-
-- Controleer of links en buttons focus krijgen en doen wat ze moeten doen. Bijvoorbeeld: een menu openen, een dialog openen of sluiten, een accordeon openen en sluiten.
-- Controleer dat je buttons op beide manieren kan activeren: met `Space` en met `Enter`.
-- Doe alle testen op de verschillende weergaves van een website, door bijvoorbeeld in te zoomen en nogmaals te testen.
-
-### Toetsenbordfocus
-
-- Tab door de website en controleer of de focus volgorde logisch en voorspelbaar is. De logische volgorde van Nederlandse websites is meestal: van boven naar beneden, van links naar rechts.
-- Controleer of het onderdeel met focus en de focus-ring niet verborgen zit achter een ander element.
-- Controleer of de focus niet ineens verdwijnt (weer bovenaan de pagina staat) na het uitvoeren van een actie.
-- Wanneer de focus zich verplaatst naar een dialog die wordt geopend, kun je dan de dialog weer sluiten met het toetsenbord en met de Escape toets? Wanneer de dialog gesloten wordt, komt de focus weer terug op de "open dialog"-button?
 
 ## W3C referenties
 
