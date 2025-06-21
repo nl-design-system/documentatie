@@ -1,5 +1,5 @@
 ---
-"@nl-design-system-unstable/documentation": major
+"@nl-design-system-unstable/documentation": minor
 ---
 
 Hele Stappenplan voor designers herschreven.
