@@ -123,7 +123,7 @@ Lees waarom kleurgebruik en contrast kritisch zijn: [Toegankelijk kleurgebruik](
 
 - Kun je aangeven wat voor bestandstype een link opent (zoals pdf)?
 - Kun je metadata invullen, zoals titel, taal of beschrijving?
-- Wordt het toevoegen van ontoegankelijke documenten ontmoedigd?
+- Wordt er gewaarschuwd bij toevoegen van ontoegankelijke documenten?
 
 Lees waarom externe documenten ook ontoegankelijk moeten zijn: [Externe documenten](/richtlijnen/content/tekstopmaak/kantoorbestanden)
 
