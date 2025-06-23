@@ -113,7 +113,7 @@ Lees waarom extra ondersteuning bij video nodig is: [Zo maak je video’s toegan
 
 ### Kleurgebruik en contrast
 
-- Kun je alleen kleuren kiezen die voldoende contrast bieden?
+- Als het mogelijk is om zelf een kleur in te stellen, helpt het CMS je dan om voldoende contrast te bereiken? Let vooral op bij de volgende componenten: Heading, Button, Mark of een Table. Hierbij kan de kleur regelmatig owrden aangepast.
 - Waarschuwt het CMS bij slechte leesbaarheid?
 - Beperkt het CMS het plaatsen van tekst over afbeeldingen of zorgt het voor automatische styling (zoals een overlay) om de leesbaarheid te garanderen?
 
