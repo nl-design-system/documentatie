@@ -11,7 +11,7 @@ import {
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
-import { ComponentProgress } from './ComponentProgress';
+// import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
@@ -95,11 +95,11 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
               <CardContent>
                 <Heading level={headingLevel}>{project.title}</Heading>
                 <Paragraph>
-                  <ComponentProgress
+                  {/* <ComponentProgress
                     checked={project.progress.value}
                     unchecked={project.progress.max - project.progress.value}
                   />
-                  {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
+                  {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '} */}
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
                 {(links.length > 0 || frameworks.length > 0) && (
