@@ -76,14 +76,14 @@ Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken]
 ### Opsommingen
 
 - Kun je via knoppen kiezen tussen genummerde opsommingen (1, 2, 3) en ongenummerde opsommingen?
-- Worden opsommingen automatisch goed opgemaakt, zonder dat je zelf streepjes of cijfers hoeft te typen?
+- Worden streepjes of cijfers aan het begin van een regel automatisch omgezet naar een echte lijst?
 - Voorkomt het CMS dat je per ongeluk een ‘nep-opsomming’ maakt met alleen visuele opmaak?
 
 Lees waarom de opmaak van opsommingen belangrijk is: [Toegankelijke opsommingen](/richtlijnen/content/tekstopmaak/opsommingen)
 
 ### Tekst benadrukken
 
-- Kun je tekst vet of schuin maken via een knop in de editor?
+- Kun je tekst vet of schuin maken via een knop in de editor, en [levert dat toegankelijke HTML op?](/richtlijnen/content/tekstopmaak/tekst-benadrukken#dikgedrukt-en-schuingedrukt)
 - Voorkomt het CMS dat je onderstreepte tekst of alleen hoofdletters gebruikt voor nadruk?
 - Waarschuwt het CMS als je per ongeluk te veel tekst markeert als vet of schuin?
 
@@ -121,13 +121,13 @@ Lees waarom kleurgebruik en contrast kritisch zijn: [Toegankelijk kleurgebruik](
 
 ### Kantoorbestanden
 
-- Kun je aangeven wat voor bestandstype een link opent (zoals pdf)?
-- Kun je metadata invullen, zoals titel, taal of beschrijving?
-- Wordt er gewaarschuwd bij toevoegen van ontoegankelijke documenten?
+- Herkent het CMS automatisch het bestandstype (zoals pdf) en toont het dat bij de link?
+- Worden titel en taal automatisch overgenomen uit de metadata van het bestand (zoals bij een toegankelijke pdf)?
+- Waarschuwt het CMS als je een document toevoegt dat waarschijnlijk niet toegankelijk is?
 
 Lees waarom externe documenten ook ontoegankelijk moeten zijn: [Externe documenten](/richtlijnen/content/tekstopmaak/kantoorbestanden)
 
-## Extra ondersteuning voor een nog betere borging van toegankelijkheid
+## Extra ondersteuning voor beter toegankelijke content
 
 Een CMS met slimme extra functies helpt contentmakers om toegankelijkheid nog beter te borgen — ook zonder specialistische kennis. Zulke functies maken het makkelijker om fouten te voorkomen en helpen je scherp te blijven in situaties met tijdsdruk, beperkte kennis of veel verschillende soorten content.
 
