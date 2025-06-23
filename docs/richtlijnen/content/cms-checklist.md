@@ -20,7 +20,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Een goed content management systeem (CMS) doet meer dan alleen de mogelijkheid bieden om toegankelijke content te maken. Het helpt contentmakers om direct de juiste keuzes te maken, voorkomt veelgemaakte fouten en maakt toegankelijkheid onderdeel van het hele publicatieproces.
 
-## Wat mag je verwachten van een toegankelijk CMS?
+## Hoe kan een CMS helpen met toegankelijke content?
 
 ### In de basis
 
