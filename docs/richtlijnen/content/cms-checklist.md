@@ -57,7 +57,7 @@ Lees waarom een goede koppenstructuur belangrijk is: [Toegankelijke koppen](/ric
 
 ### Afbeeldingen
 
-- Kun je bij elke afbeelding een alt-tekst toevoegen via een apart veld?
+- Kun je bij elke afbeelding een alt-tekst toevoegen?
 - Waarschuwt het CMS als een afbeelding geen beschrijving heeft?
 - Kun je aangeven dat een afbeelding geen beschrijving nodig heeft?
 - Is er een aparte mogelijkheid om een uitgebreide beschrijving bij een afbeelding toe te voegen (voor complexe afbeeldingen, zoals grafieken en infographics)?
