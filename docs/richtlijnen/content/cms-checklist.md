@@ -69,7 +69,7 @@ Lees waarom de plek van de alt-tekst uitmaakt: [Waar plaats je de alt-tekst?](/r
 
 - Kun je op een gebruiksvriendelijke manier tabellen invoegen, zonder zelf code te schrijven?
 - Kun je kopcellen markeren voor rijen en kolommen?
-- Waarschuwt of voorkomt het CMS ingewikkelde tabellen die slecht werken met screen readers? (Zoals geneste cellen of lege kolommen.)
+- Waarschuwt of voorkomt het CMS ingewikkelde tabellen die slecht werken met screen readers?
 
 Lees waarom tabellen niet ingewikkeld mogen zijn: [Toegankelijke tabellen maken](/richtlijnen/content/tekstopmaak/tabellen)
 
