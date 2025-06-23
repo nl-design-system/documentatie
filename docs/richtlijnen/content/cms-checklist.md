@@ -117,7 +117,7 @@ Lees waarom extra ondersteuning bij video nodig is: [Zo maak je video’s toegan
 - Waarschuwt het CMS bij slechte leesbaarheid?
 - Beperkt het CMS het plaatsen van tekst over afbeeldingen of zorgt het voor automatische styling (zoals een overlay) om de leesbaarheid te garanderen?
 
-Lees waarom kleurgebruik en contrast kritisch zijn: [Toegankelijk kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik)
+Lees waarom kleurgebruik en contrast zo belangrijk zijn: [Toegankelijk kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik)
 
 ### Kantoorbestanden
 
