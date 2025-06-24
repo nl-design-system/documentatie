@@ -82,7 +82,7 @@ Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat releva
 Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:
 
 - Controleer of het citaat is opgemaakt met de citaatfunctie van het CMS (bijvoorbeeld als blokcitaat).
-  Een citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met `<blockquote>`). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl. ￼
+  Een citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met `<blockquote>`). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl.
 - Kijk of er kopstijlen (zoals H2 of H3) zijn gebruikt om een citaat visueel te laten opvallen.
   Als dat zo is, pas dit aan. Koppen zijn bedoeld voor structuur, niet voor vormgeving.
 
