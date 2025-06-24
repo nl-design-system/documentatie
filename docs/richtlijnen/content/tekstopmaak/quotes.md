@@ -49,7 +49,7 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
   </Canvas>
 </Guideline>
 
-Gebruik hiervoor geen semantische opmaak die daar niet voor bedoelt is, zoals een kop of dikgedrukte tekst.
+Gebruik hiervoor geen semantische opmaak die daar niet voor bedoeld is, zoals een kop of dikgedrukte tekst.
 
 <Guideline appearance="dont" title="Een citaat uitlichten met opmaak die daar niet voor bedoeld is, zoals een kop.">
   <Canvas language="html">
