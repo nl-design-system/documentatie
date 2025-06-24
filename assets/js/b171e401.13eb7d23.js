@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [7869],
+ [67398],
  {
-  15600: (e, t, n) => {
+  76046: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => l, component: () => y, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => m, metadata: () => u, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => h, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => l, title: () => d, toc: () => u });
    var r = n(52676),
     i = n(40139),
     c = n(65739),
     s = n(94443);
-   const o = { title: 'Number Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Input', pagination_label: 'Number Input', description: 'Invoerveld voor een heel getal of een getal met decimalen.', slug: '/number-input', keywords: ['cijferinvoer', 'decimaal', 'decimalen invoer', 'form', 'form control', 'form field', 'getal invoer', 'input field', 'invoerveld', 'number field', 'number input', 'numerieke invoer', 'numerieke input', 'nummer invoer', 'numerieke veld', 'value input', 'waarde', 'waarden invoer'] },
+   const o = { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.', slug: '/switch', keywords: ['aan uit', 'checkbox toggle', 'bediening', 'knop', 'lightswitch', 'light switch', 'omschakeling', 'schakelaar', 'schakelknop', 'setting toggle', 'slide toggle', 'switch', 'toggle', 'toggle button', 'toggle switch', 'wissel'] },
     a = void 0,
-    u = { id: 'componenten/number-input/index', title: 'Number Input', description: 'Invoerveld voor een heel getal of een getal met decimalen.', source: '@site/docs/componenten/number-input/index.mdx', sourceDirName: 'componenten/number-input', slug: '/number-input', permalink: '/number-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Number Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Input', pagination_label: 'Number Input', description: 'Invoerveld voor een heel getal of een getal met decimalen.', slug: '/number-input', keywords: ['cijferinvoer', 'decimaal', 'decimalen invoer', 'form', 'form control', 'form field', 'getal invoer', 'input field', 'invoerveld', 'number field', 'number input', 'numerieke invoer', 'numerieke input', 'nummer invoer', 'numerieke veld', 'value input', 'waarde', 'waarden invoer'] }, sidebar: 'componenten', previous: { title: 'Number Badge', permalink: '/number-badge' }, next: { title: 'Ordered List', permalink: '/ordered-list' } },
-    l = {},
-    h = [
+    l = { id: 'componenten/switch/index', title: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.', source: '@site/docs/componenten/switch/index.mdx', sourceDirName: 'componenten/switch', slug: '/switch', permalink: '/switch', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/switch/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Switch', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Switch', pagination_label: 'Switch', description: 'Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.', slug: '/switch', keywords: ['aan uit', 'checkbox toggle', 'bediening', 'knop', 'lightswitch', 'light switch', 'omschakeling', 'schakelaar', 'schakelknop', 'setting toggle', 'slide toggle', 'switch', 'toggle', 'toggle button', 'toggle switch', 'wissel'] }, sidebar: 'componenten', previous: { title: 'Superscript', permalink: '/superscript' }, next: { title: 'Table', permalink: '/table' } },
+    h = {},
+    u = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Implementaties', id: 'implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Number Input',
-    j = 'Invoerveld voor een heel getal of een getal met decimalen.',
-    m = 194,
-    y = c.find((e) => e.number === m);
-   function g(e) {
+    d = 'Switch',
+    j = 'Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.',
+    y = 33,
+    g = c.find((e) => e.number === y);
+   function m(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: y, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: y, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'implementaties', children: 'Implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
    }
   },
   54907: (e, t, n) => {
@@ -46,7 +46,7 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => o, um: () => u, wu: () => s });
+   n.d(t, { Zb: () => a, aY: () => o, um: () => l, wu: () => s });
    var r = n(16167),
     i = n(4814),
     c = n(52676);
@@ -57,43 +57,43 @@
     o = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
     a = (e) => {
      let { href: t, appearance: n, className: s, component: o = 'div', children: a } = e;
-     const u = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
-      l = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, s), children: a });
-     return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: l }) : l;
+     const l = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
+      h = (0, c.jsx)(l, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${n}`, s), children: a });
+     return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: h }) : h;
     },
-    u = (e) => {
+    l = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, c.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
   },
   94443: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => f, vM: () => _, W: () => x, Rv: () => w });
+   n.d(t, { cN: () => f, vM: () => w, W: () => x, Rv: () => _ });
    var r = n(41115),
     i = n(4814),
     c = n(39854),
     s = n(7522),
     o = n(62559),
     a = n(79734),
-    u = n(32636),
-    l = n(52676);
-   const h = { figma: (0, l.jsx)(c.Z, {}), github: (0, l.jsx)(s.Z, {}), npm: (0, l.jsx)(o.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
+    l = n(32636),
+    h = n(52676);
+   const u = { figma: (0, h.jsx)(c.Z, {}), github: (0, h.jsx)(s.Z, {}), npm: (0, h.jsx)(o.Z, {}), storybook: (0, h.jsx)(a.Z, {}) },
     d = (e) => {
      let { brand: t } = e;
-     return (0, l.jsx)(r.JO, { children: h[t] || (0, l.jsx)(u.Z, {}) });
+     return (0, h.jsx)(r.JO, { children: u[t] || (0, h.jsx)(l.Z, {}) });
     };
    var j = n(35038),
-    m = n(23355),
-    y = n(41757),
-    g = n(16167),
+    y = n(23355),
+    g = n(41757),
+    m = n(16167),
     p = n(55476);
    const v = (e) => {
      let { children: t } = e;
-     return (0, l.jsx)('ul', { className: 'task-list', children: t });
+     return (0, h.jsx)('ul', { className: 'task-list', children: t });
     },
     b = (e) => {
      let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(p.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(g.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+     return (0, h.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, h.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, h.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, h.jsx)(p.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, h.jsxs)('div', { children: [(0, h.jsx)(m.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var k = n(14669);
    const f = (e) => {
@@ -102,7 +102,7 @@
       s = c && k.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
-      (0, l.jsx)(r.a2, {
+      (0, h.jsx)(r.a2, {
        appearance: '',
        sections: s.map((e) => ({
         className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, k.mA)(e.title)}`),
@@ -111,15 +111,15 @@
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
         body:
          e &&
-         (0, l.jsxs)(l.Fragment, {
+         (0, h.jsxs)(h.Fragment, {
           children: [
-           (0, l.jsx)(v, {
+           (0, h.jsx)(v, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, l.jsx)(b, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(i) }, i);
+             return (0, h.jsx)(b, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(i) }, i);
             }),
            }),
-           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
+           (0, h.jsx)(r.nv, { children: (0, h.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
           ],
          }),
        })),
@@ -130,7 +130,7 @@
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !k.e9.includes(e.id));
      return t && i.length
-      ? (0, l.jsx)(j.um, {
+      ? (0, h.jsx)(j.um, {
          appearance: 'large',
          className: 'implementation-card-group',
          children: i
@@ -154,29 +154,29 @@
              let { name: t, value: n } = e;
              return s.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
-           return (0, l.jsx)(
+           return (0, h.jsx)(
             j.Zb,
             {
              className: 'implementation-card',
-             children: (0, l.jsxs)(j.aY, {
+             children: (0, h.jsxs)(j.aY, {
               children: [
-               (0, l.jsx)(r.X6, { level: n, children: e.title }),
-               (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] }) }),
-               (o.length > 0 || c.length > 0) && (0, l.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
+               (0, h.jsx)(r.X6, { level: n, children: e.title }),
+               (0, h.jsx)(r.nv, { children: (0, h.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] }) }),
+               (o.length > 0 || c.length > 0) && (0, h.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
                o.length > 0 &&
-                (0, l.jsx)(l.Fragment, {
-                 children: (0, l.jsx)(r.Mc, {
+                (0, h.jsx)(h.Fragment, {
+                 children: (0, h.jsx)(r.Mc, {
                   children: o.map((e) => {
                    const t = s.get(e.name);
-                   return t ? (0, l.jsxs)(r.k7, { href: e.value, children: [(0, l.jsx)(d, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, l.jsx)(l.Fragment, {});
+                   return t ? (0, h.jsxs)(r.k7, { href: e.value, children: [(0, h.jsx)(d, { brand: t.brand }), ' ', t.desciption] }, e.id) : (0, h.jsx)(h.Fragment, {});
                   }),
                  }),
                 }),
                c.length > 0 &&
-                (0, l.jsx)(l.Fragment, {
+                (0, h.jsx)(h.Fragment, {
                  children: c.map((e) => {
                   let { frameworkName: t, tasks: c } = e;
-                  return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, l.jsx)(r.Mc, { children: c.map((e) => (0, l.jsxs)(r.k7, { href: e.value, children: [(0, l.jsx)(d, { brand: e.brand }), ' ', e.description] }, e.id)) })] });
+                  return (0, h.jsxs)(h.Fragment, { children: [(0, h.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, h.jsx)(r.Mc, { children: c.map((e) => (0, h.jsxs)(r.k7, { href: e.value, children: [(0, h.jsx)(d, { brand: e.brand }), ' ', e.description] }, e.id)) })] });
                  }),
                 }),
               ],
@@ -186,18 +186,18 @@
            );
           }),
         })
-      : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
+      : (0, h.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    _ = (e) => {
+    w = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.QI, { children: [i ? (0, l.jsxs)(r.AS, { children: ['Vul de ', (0, l.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.AS, { children: [(0, l.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
+     return t && (0, h.jsxs)(h.Fragment, { children: [(0, h.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, h.jsxs)(r.QI, { children: [i ? (0, h.jsxs)(r.AS, { children: ['Vul de ', (0, h.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, h.jsxs)(r.AS, { children: [(0, h.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, h.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, h.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, h.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    w = (e) => {
+    _ = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && k.$3[t.relayStep];
-     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(y.V, { level: n, suffix: c && (0, l.jsx)(m.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, h.jsxs)(h.Fragment, { children: [(0, h.jsx)(g.V, { level: n, suffix: c && (0, h.jsx)(y.y, { state: c }), children: t.title }), (0, h.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
@@ -225,7 +225,7 @@
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, BA: () => o, Q6: () => c, U: () => u, e9: () => s, mA: () => i, ps: () => l });
+   n.d(t, { $3: () => r, BA: () => o, Q6: () => c, U: () => l, e9: () => s, mA: () => i, ps: () => h });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     c = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -249,8 +249,8 @@
       ),
      );
     },
-    u = (e) => Array.from(new Set(e.projects.flatMap((e) => a(e)))),
-    l = (e) => {
+    l = (e) => Array.from(new Set(e.projects.flatMap((e) => a(e)))),
+    h = (e) => {
      const t = a(e),
       n = ((e) => {
        const t = e.tasks.find((e) => {
