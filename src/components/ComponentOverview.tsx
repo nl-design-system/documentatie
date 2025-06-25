@@ -135,8 +135,8 @@ export const ComponentOverview = () => {
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
             body: (
               <>
-                <h3>Status</h3>
                 <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
+                  <h3 className="utrecht-heading-6">Status</h3>
                   <FormField type="checkbox">
                     <Checkbox defaultChecked={showTodo} id="TODO" onChange={() => setShowTodo((checked) => !checked)} />
                     <FormLabel htmlFor="TODO">
@@ -185,7 +185,7 @@ export const ComponentOverview = () => {
                   </FormField>
                   {selectedFrameworkOptions.length > 0 && (
                     <>
-                      <h3>Implementatie</h3>
+                      <h3 className="utrecht-heading-6">Implementatie</h3>
                       <FormField>
                         <select
                           className="utrecht-select"
