@@ -125,7 +125,7 @@ export const getProjectFrameworkNames = (project: ComponentProject): string[] =>
     removeDuplicates(
       project.tasks
         .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
-        .map(({ name }) => name.match(frameworkRx)?.[1]),
+        .map(({ name }) => frameworkRx.exec(name)?.[1]),
     ),
   );
 };
@@ -156,7 +156,7 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
     const tasks = project.tasks
       .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
       .map(({ name, id, value }): FrameworkTask => {
-        const brand = name.match(/^(.+) URL/)[1];
+        const brand = /^(.+) URL/.exec(name)[1];
         const description =
           brand === 'Storybook'
             ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
