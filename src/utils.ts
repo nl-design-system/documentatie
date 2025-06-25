@@ -103,7 +103,7 @@ export function removeDuplicates<T>(items: T[]): T[] {
 
 const sortFrameworkNames = (frameworkNames: string[]): string[] => {
   // Frameworks will be returned in this order
-  const order = ['CSS', 'HTML', 'React', 'Vue', 'Angular'];
+  const order = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular'];
   return [...frameworkNames].sort((a, b) => order.indexOf(a) - order.indexOf(b));
 };
 
@@ -119,21 +119,19 @@ export const hasFramework = (component: Component, framework: string): boolean =
 
 export const getProjectFrameworkNames = (project: ComponentProject): string[] => {
   // Returns the unique frameworks (CSS, HTML, etc) this community component has tasks (GitHub, NPM, etc) for
-  const frameworkRx = / URL \((\w+)\)/;
+  const frameworkRx = / URL \(([^)]+)\)/;
 
-  // Frameworks will be returned in this order
-  const order = ['CSS', 'HTML', 'React', 'Vue', 'Angular'];
-
-  return removeDuplicates(
-    project.tasks
-      .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
-      .map(({ name }) => name.match(frameworkRx)?.[1])
-      .sort((a, b) => order.indexOf(a) - order.indexOf(b)),
+  return sortFrameworkNames(
+    removeDuplicates(
+      project.tasks
+        .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
+        .map(({ name }) => name.match(frameworkRx)?.[1]),
+    ),
   );
 };
 
 export const getComponentFrameworkNames = (component: Component): string[] =>
-  removeDuplicates(component.projects.flatMap((project) => getProjectFrameworkNames(project)));
+  sortFrameworkNames(removeDuplicates(component.projects.flatMap((project) => getProjectFrameworkNames(project))));
 
 export const getComponentAlias = (project: ComponentProject): string => {
   const task = project.tasks.find(({ name }) => name === 'Naam');

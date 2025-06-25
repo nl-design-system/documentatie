@@ -45,7 +45,7 @@ export const ComponentCard = ({
             </p>
           )}
           {description && <Paragraph>{description}</Paragraph>}
-          {frameworkNames?.length && (
+          {frameworkNames && (
             <BadgeList>
               {frameworkNames.map((frameworkName) => (
                 <DataBadge key={frameworkName}>{frameworkName}</DataBadge>

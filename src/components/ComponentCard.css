@@ -7,8 +7,8 @@
   --component-illustration-svg-max-height: 185px;
   --component-illustration-padding-inline: 24px;
   --card-content-inline-size: 60%;
-  --utrecht-badge-list-item-margin-block: 0;
-  --utrecht-badge-list-item-margin-inline: 6px;
+  --utrecht-badge-list-item-margin-block: 0.25em;
+  --utrecht-badge-list-item-margin-inline: 0.25em;
 }
 
 .component-card--suggestion {
