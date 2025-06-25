@@ -35,4 +35,6 @@
 .implementation-card {
   --component-progress-background-color--checked: var(--nlds-status-community-background-color);
   --component-progress-background-color--unchecked: var(--nlds-status-community-color);
+  --utrecht-link-list-link-column-gap: 0.25em;
+  --utrecht-link-list-icon-inset-block-start: 0.25em;
 }

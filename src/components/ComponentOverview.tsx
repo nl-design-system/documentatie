@@ -3,16 +3,17 @@ import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/theme-common/internal';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
-import {
-  AccordionProvider,
-  Fieldset,
-  FormToggle,
-  Paragraph,
-  PrimaryActionButton,
-} from '@utrecht/component-library-react';
+import { AccordionProvider, Fieldset, Paragraph, PrimaryActionButton } from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
 import { useEffect, useState } from 'react';
-import { COMPONENT_STATES, getComponentFrameworkNames, normalizeName, relayProjectIds, type Component } from '../utils';
+import {
+  COMPONENT_STATES,
+  getAllFrameworkNames,
+  getComponentFrameworkNames,
+  hasFramework,
+  normalizeName,
+  type Component,
+} from '../utils';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
 import './ComponentOverview.css';
@@ -20,6 +21,7 @@ import { EstafetteBadge } from './EstafetteBadge';
 
 export const ComponentOverview = () => {
   const SEARCH_PARAM = 'filter';
+  const SEARCH_PARAM_FRAMEWORK = 'framework';
   const SEARCH_VALUES = {
     TODO: 'todo',
     HELP_WANTED: 'helpWanted',
@@ -34,9 +36,11 @@ export const ComponentOverview = () => {
 
   const params = new URLSearchParams(location.search);
 
-  const getComponent = (item: PropSidebarItemLink) =>
+  const getComponent = (item: PropSidebarItemLink): Component =>
     item['title'] &&
-    componentProgress.find(({ title }) => title && normalizeName(title) === normalizeName(item['title']));
+    (componentProgress as Component[]).find(
+      ({ title }) => title && normalizeName(title) === normalizeName(item['title']),
+    );
 
   const isPropSidebarItemLink = (item: PropSidebarItem): item is PropSidebarItemLink =>
     !!item && typeof item['docId'] === 'string';
@@ -54,14 +58,14 @@ export const ComponentOverview = () => {
   const [showCommunity, setShowCommunity] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY));
   const [showCandidate, setShowCandidate] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE));
   const [showHallOfFame, setShowHallOfFame] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME));
-  const [showOnlyImplemented, setshowOnlyImplemented] = useState(
-    params.has(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED),
-  );
+  const [selectedFramework, setSelectedFramework] = useState(params.get(SEARCH_PARAM_FRAMEWORK) || '');
 
   const showAllComponents = () => {
     // Reset the filter and reload the page to show all components
     window.location.search = '';
   };
+
+  const selectedFrameworkOptions = getAllFrameworkNames(components);
 
   useEffect(() => {
     setFilteredComponents(() =>
@@ -75,9 +79,7 @@ export const ComponentOverview = () => {
             (showHallOfFame && c.relayStep === 'HALL_OF_FAME')
           );
         })
-        .filter((c) =>
-          showOnlyImplemented ? c.projects.filter((p) => !relayProjectIds.includes(p.id)).length > 0 : true,
-        ),
+        .filter((c) => !selectedFramework || hasFramework(c, selectedFramework)),
     );
 
     if (showTodo) {
@@ -110,21 +112,14 @@ export const ComponentOverview = () => {
       params.append(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME);
     }
 
-    if (!showOnlyImplemented) {
-      params.delete(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
-    } else if (!params.has(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED)) {
-      params.append(SEARCH_PARAM, SEARCH_VALUES.ONLY_IMPLEMENTED);
+    if (selectedFramework) {
+      params.set(SEARCH_PARAM_FRAMEWORK, selectedFramework);
+    } else {
+      params.delete(SEARCH_PARAM_FRAMEWORK);
     }
 
     replace({ ...location, search: params.toString() });
-  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showOnlyImplemented]);
-
-  const onlyImplemented = components.filter((c) =>
-    c.projects?.filter((p) => {
-      const results = !relayProjectIds.includes(p.id);
-      return results;
-    }),
-  );
+  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, selectedFramework]);
 
   return (
     <>
@@ -140,6 +135,7 @@ export const ComponentOverview = () => {
             label: (<span id="filter-results-label">Filter componenten</span>) as any,
             body: (
               <>
+                <h3>Status</h3>
                 <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
                   <FormField type="checkbox">
                     <Checkbox defaultChecked={showTodo} id="TODO" onChange={() => setShowTodo((checked) => !checked)} />
@@ -187,19 +183,27 @@ export const ComponentOverview = () => {
                       <EstafetteBadge state="Hall of Fame" />
                     </FormLabel>
                   </FormField>
-                  <Paragraph style={{ '--utrecht-paragraph-margin-block-end': '1rem' }}>
-                    <b>Tip</b>: Zien welke componenten je nu al kunt gebruiken? Kies dan onderstaande optie om alleen
-                    beschikbare componenten te tonen.
-                  </Paragraph>
-                  {!!onlyImplemented.length && (
+                  {selectedFrameworkOptions.length > 0 && (
                     <>
-                      <FormField type="checkbox" className="utrecht-form-field--nlds-switch">
-                        <FormToggle
-                          defaultChecked={showOnlyImplemented}
-                          id="ONLY_IMPLEMENTED"
-                          onChange={() => setshowOnlyImplemented((checked) => !checked)}
-                        />
-                        <FormLabel htmlFor="ONLY_IMPLEMENTED">Toon alleen beschikbare componenten</FormLabel>
+                      <h3>Implementatie</h3>
+                      <FormField>
+                        <select
+                          className="utrecht-select"
+                          onChange={(event) => setSelectedFramework(event.target.value)}
+                        >
+                          <option selected={selectedFramework === ''} value="">
+                            Alle componenten
+                          </option>
+                          {selectedFrameworkOptions.map((frameworkName) => (
+                            <option
+                              selected={selectedFramework === frameworkName}
+                              key={frameworkName}
+                              value={frameworkName}
+                            >
+                              {frameworkName}
+                            </option>
+                          ))}
+                        </select>
                       </FormField>
                     </>
                   )}
@@ -221,9 +225,9 @@ export const ComponentOverview = () => {
 
       <CardGroup appearance="large">
         {filteredComponents.map(({ title, id, href, description }) => {
-          const component = componentProgress.find((item) => {
+          const component = (componentProgress as Component[]).find((item) => {
             return item.title === title;
-          }) as Component;
+          });
 
           const relayStep = component && COMPONENT_STATES[component.relayStep];
           const frameworkNames = getComponentFrameworkNames(component);
