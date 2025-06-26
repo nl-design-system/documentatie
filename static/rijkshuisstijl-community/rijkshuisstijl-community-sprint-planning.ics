@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 VERSION:2.0
-X-WR-CALNAME:Rijkshuisstijl Community Open Hour - NL Design System
+X-WR-CALNAME:Rijkshuisstijl Community sprint planning - NL Design System
 METHOD:PUBLISH
 PRODID:-//Apple Inc.//macOS 14.1.1//EN
 BEGIN:VTIMEZONE
@@ -23,22 +23,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 TRANSP:OPAQUE
-DTEND;TZID=Europe/Amsterdam:20250603T170000
+DTEND;TZID=Europe/Amsterdam:20250703T160000
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
-UID:f80f0b3b-34a2-4d33-9549-d4b04c7cddad
+UID:be43b623-013f-48a3-88ba-03a3d43ba88b
 DTSTAMP:20240610T120000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C05AQK9R41G
-DESCRIPTION:Wees welkom bij de ‘Rijkshuisstijl Community Open Hour’. Deze meeting vind
- t plaats in het #rijkshuisstijl-community kanaal op de Code for NL Sl
- ack.\n\nMeer informatie over Rijkshuisstijl Community Open Hour: https://www.nldesignsy
- stem.nl/events/rijkshuisstijl-community-open-hour \n\nZit je nog niet op de Code for NL
-  Slack? Meld je hier aan: https://praatmee.codefor.nl/
+DESCRIPTION:Geen zorgen als je er niet bij kan zijn, dit is een optionele community meeting! \n\nJoin als je kunt en als je deze sprint betrokken wilt zijn 😃 \n\nWe doen het in de Slack huddle van #rijkshuisstijl-community. \n\nBekijk het community sprint bord: https://github.com/orgs/nl-design-system/projects/59
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
-SUMMARY:Rijkshuisstijl Community Open Hour - NL Design System
-DTSTART;TZID=Europe/Amsterdam:20250603T160000
+SUMMARY:Rijkshuisstijl Community sprint planning - NL Design System
+DTSTART;TZID=Europe/Amsterdam:20250703T150000
 LAST-MODIFIED:20240610T120000Z
 CREATED:20240610T120000Z
-RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
 END:VEVENT
 END:VCALENDAR
