@@ -265,8 +265,22 @@ const sidebars: SidebarsConfig = {
               id: 'community/community-sprints/index',
             },
             {
-              type: 'doc',
-              id: 'community/community-sprints/overheidsbrede-portalen-community',
+              type: 'category',
+              label: 'Overheidsbrede Portalen Community',
+              description:
+                'De Overheidsbrede Portalen Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de Overheidsbrede Portalen.',
+              link: {
+                type: 'generated-index',
+                title: 'Overheidsbrede Portalen Community',
+                slug: 'community/community-sprints/overheidsbrede-portalen-community/overzicht',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'community/community-sprints/overheidsbrede-portalen-community/overheidsbrede-portalen-community',
+                },
+                { type: 'doc', id: 'community/community-sprints/overheidsbrede-portalen-community/aanmelden' },
+              ],
             },
             {
               type: 'category',
