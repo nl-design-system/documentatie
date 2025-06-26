@@ -20,6 +20,7 @@ export interface DoneListItemProps {
   sc?: string;
   component: string;
   status?: string;
+  diy: string;
 }
 
 /**
@@ -38,7 +39,7 @@ export interface DoneListProps {
  * sc and status are optional.
  *
  */
-export const DoneListItem = ({ title, sc, component }: DoneListItemProps) => {
+export const DoneListItem = ({ title, sc, component, diy }: DoneListItemProps) => {
   const labelId = useId();
 
   const badgeTags = [];
@@ -60,7 +61,11 @@ export const DoneListItem = ({ title, sc, component }: DoneListItemProps) => {
           <span id={labelId}>{title}</span>
         </summary>
         <div>
-          <div>{component}</div>
+          <div>
+            {component}
+            <h4>Zelf maken?</h4>
+            {diy}
+          </div>
           <BadgeList className="done-list__badge-list">
             {badgeTags.map((tag, index) => {
               let badge = <DataBadge key={index}>{tag}</DataBadge>;
