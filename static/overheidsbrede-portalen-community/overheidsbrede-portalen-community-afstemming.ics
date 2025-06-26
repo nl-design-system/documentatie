@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME:Overheidsbrede Portalen Community Afstemming - NL Design System
+METHOD:PUBLISH
+PRODID:-//Apple Inc.//macOS 14.1.1//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Amsterdam
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Amsterdam:20250612T140000
+X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
+UID:d30255ae-d53e-4fb3-866c-d2f7a77bbefe
+DTSTAMP:20240610T120000Z
+LOCATION:https://app.slack.com/huddle/T68FXPFQV/C01DAT4TRPF
+DESCRIPTION:Wees welkom bij de 'Overheidsbrede Portalen Community Afstemming'. Deze meeting vindt plaats in het #nl-design-system-developers kanaal op de Code for NL Slack. \n\nMeer informatie over Overheidsbrede Portalen Community: https://nldesignsystem.nl/community/community-sprints/overheidsbrede-portalen-community/ \n\nZit je nog niet op de Code for NL Slack? Meld je hier aan: https://praatmee.codefor.nl/
+X-APPLE-CREATOR-IDENTITY:com.apple.calendar
+SEQUENCE:6
+SUMMARY:Overheidsbrede Portalen Community Afstemming - NL Design System
+DTSTART;TZID=Europe/Amsterdam:20250612T130000
+LAST-MODIFIED:20240610T120000Z
+CREATED:20240610T120000Z
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
+END:VEVENT
+END:VCALENDAR
