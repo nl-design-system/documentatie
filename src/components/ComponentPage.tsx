@@ -3,7 +3,6 @@ import {
   Heading,
   Link,
   LinkList,
-  LinkListLink,
   Paragraph,
   UnorderedList,
   UnorderedListItem,
@@ -107,18 +106,18 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                 )}
                 {links.length > 0 && (
                   <>
-                    <LinkList>
-                      {links.map((item) => {
-                        const url = urlMap.get(item.name);
-                        return url ? (
-                          <LinkListLink key={item.id} href={item.value}>
-                            <BrandIcon brand={url.brand} /> {url.desciption}
-                          </LinkListLink>
-                        ) : (
-                          <></>
-                        );
-                      })}
-                    </LinkList>
+                    <LinkList
+                      links={links
+                        .filter((item) => !!urlMap.get(item.name))
+                        .map((item) => {
+                          const url = urlMap.get(item.name);
+                          return {
+                            children: url.desciption,
+                            icon: <BrandIcon brand={url.brand} />,
+                            href: item.value,
+                          };
+                        })}
+                    />
                   </>
                 )}
                 {frameworks.length > 0 && (
@@ -128,13 +127,13 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         <Heading level={headingLevel + 2}>
                           {alias} in {frameworkName}
                         </Heading>
-                        <LinkList>
-                          {tasks.map((frameworkTask) => (
-                            <LinkListLink key={frameworkTask.id} href={frameworkTask.value}>
-                              <BrandIcon brand={frameworkTask.brand} /> {frameworkTask.description}
-                            </LinkListLink>
-                          ))}
-                        </LinkList>
+                        <LinkList
+                          links={tasks.map((frameworkTask) => ({
+                            children: frameworkTask.description,
+                            icon: <BrandIcon brand={frameworkTask.brand} />,
+                            href: frameworkTask.value,
+                          }))}
+                        />
                       </>
                     ))}
                   </>

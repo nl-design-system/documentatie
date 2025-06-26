@@ -96,29 +96,42 @@ export interface ProjectFramework {
   tasks: FrameworkTask[];
 }
 
+export function removeDuplicates<T>(items: T[]): T[] {
+  // Use Array > Set > Array to remove duplicates
+  return Array.from(new Set<T>(items));
+}
+
+const sortFrameworkNames = (frameworkNames: string[]): string[] => {
+  // Frameworks will be returned in this order
+  const order = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular'];
+  return [...frameworkNames].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+};
+
+export const getAllFrameworkNames = (components: Component[]): string[] => {
+  const allProjects = components.flatMap(({ projects }) => projects);
+  const allFrameworkNames = allProjects.flatMap((project) => getProjectFrameworkNames(project));
+  return sortFrameworkNames(removeDuplicates(allFrameworkNames));
+};
+
+export const hasFramework = (component: Component, framework: string): boolean => {
+  return getComponentFrameworkNames(component).includes(framework);
+};
+
 export const getProjectFrameworkNames = (project: ComponentProject): string[] => {
   // Returns the unique frameworks (CSS, HTML, etc) this community component has tasks (GitHub, NPM, etc) for
-  const frameworkRx = / URL \((\w+)\)/;
+  const frameworkRx = / URL \(([^)]+)\)/;
 
-  // Frameworks will be returned in this order
-  const order = ['CSS', 'HTML', 'React', 'Vue', 'Angular'];
-
-  // Use Array > Set > Array to remove duplicates
-  return Array.from(
-    new Set<string>(
+  return sortFrameworkNames(
+    removeDuplicates(
       project.tasks
         .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
-        .map(({ name }) => name.match(frameworkRx)?.[1])
-        .sort((a, b) => order.indexOf(a) - order.indexOf(b)),
+        .map(({ name }) => frameworkRx.exec(name)?.[1]),
     ),
   );
 };
 
 export const getComponentFrameworkNames = (component: Component): string[] =>
-  Array.from(
-    // Use Array > Set > Array to remove duplicates
-    new Set<string>(component.projects.flatMap((project) => getProjectFrameworkNames(project))),
-  );
+  sortFrameworkNames(removeDuplicates(component.projects.flatMap((project) => getProjectFrameworkNames(project))));
 
 export const getComponentAlias = (project: ComponentProject): string => {
   const task = project.tasks.find(({ name }) => name === 'Naam');
@@ -143,7 +156,7 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
     const tasks = project.tasks
       .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
       .map(({ name, id, value }): FrameworkTask => {
-        const brand = name.match(/^(.+) URL/)[1];
+        const brand = /^(.+) URL/.exec(name)[1];
         const description =
           brand === 'Storybook'
             ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
