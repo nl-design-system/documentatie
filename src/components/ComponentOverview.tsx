@@ -71,7 +71,7 @@ export const ComponentOverview = () => {
   const selectedFrameworkOptions = getAllFrameworkNames(components);
 
   useEffect(() => {
-    setFilteredComponents(() =>
+    setFilteredComponents(
       components
         .filter(
           // Show this component if no status is selected or if this component has any of the selected statuses
