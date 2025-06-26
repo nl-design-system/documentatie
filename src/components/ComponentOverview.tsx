@@ -58,26 +58,20 @@ export const ComponentOverview = () => {
   const [showCommunity, setShowCommunity] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY));
   const [showCandidate, setShowCandidate] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE));
   const [showHallOfFame, setShowHallOfFame] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME));
+  const [showFrameworks, setShowFrameworks] = useState(params.get(SEARCH_PARAM_FRAMEWORK)?.split(',') || []);
 
   const showAllComponents = () => {
     // Reset the filter and reload the page to show all components
     window.location.search = '';
   };
 
-  const selectedFrameworkOptions = getAllFrameworkNames(components).map((frameworkName) => {
-    const selectedParamFrameworks = params.get(SEARCH_PARAM_FRAMEWORK)?.split(',') || [];
-    return {
-      frameworkName,
-      state: useState(selectedParamFrameworks.includes(frameworkName)),
-    };
-  });
-  const selectedFrameworkStates = selectedFrameworkOptions.map(({ state }) => state[0]);
+  const toggleShowFramework = (isChecked: boolean, frameworkName: string) => {
+    setShowFrameworks((prev) => (isChecked ? [...prev, frameworkName] : prev.filter((name) => name !== frameworkName)));
+  };
+
+  const selectedFrameworkOptions = getAllFrameworkNames(components);
 
   useEffect(() => {
-    const selectedFrameworks = selectedFrameworkOptions
-      .filter(({ state }) => state[0])
-      .map(({ frameworkName }) => frameworkName);
-
     setFilteredComponents(() =>
       components
         .filter((c) => {
@@ -90,9 +84,8 @@ export const ComponentOverview = () => {
           );
         })
         .filter(
-          // Show this component if no framework is selected or if this component supports all selected frameworks
-          (c) =>
-            !selectedFrameworks.length || selectedFrameworks.every((frameworkName) => hasFramework(c, frameworkName)),
+          // Show this component if no framework is selected or if this component supports any of the selected frameworks
+          (c) => !showFrameworks.length || showFrameworks.some((frameworkName) => hasFramework(c, frameworkName)),
         ),
     );
 
@@ -126,14 +119,14 @@ export const ComponentOverview = () => {
       params.append(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME);
     }
 
-    if (selectedFrameworks.length) {
-      params.set(SEARCH_PARAM_FRAMEWORK, selectedFrameworks.join(','));
+    if (showFrameworks.length) {
+      params.set(SEARCH_PARAM_FRAMEWORK, showFrameworks.join(','));
     } else {
       params.delete(SEARCH_PARAM_FRAMEWORK);
     }
 
     replace({ ...location, search: params.toString() });
-  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, ...selectedFrameworkStates]);
+  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, showFrameworks]);
 
   return (
     <>
@@ -201,12 +194,12 @@ export const ComponentOverview = () => {
                 {selectedFrameworkOptions.length > 0 && (
                   <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
                     <h3 className="utrecht-heading-6">Implementatie</h3>
-                    {selectedFrameworkOptions.map(({ frameworkName, state }) => (
+                    {selectedFrameworkOptions.map((frameworkName) => (
                       <FormField key={frameworkName} type="checkbox">
                         <Checkbox
-                          defaultChecked={state[0]}
+                          defaultChecked={showFrameworks.includes(frameworkName)}
                           id={frameworkName}
-                          onChange={() => state[1]((checked) => !checked)}
+                          onChange={(event) => toggleShowFramework(event.target.checked, frameworkName)}
                         />
                         <FormLabel htmlFor={frameworkName}>{frameworkName}</FormLabel>
                       </FormField>
