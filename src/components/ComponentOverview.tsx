@@ -58,16 +58,26 @@ export const ComponentOverview = () => {
   const [showCommunity, setShowCommunity] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.COMMUNITY));
   const [showCandidate, setShowCandidate] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.CANDIDATE));
   const [showHallOfFame, setShowHallOfFame] = useState(!params.has(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME));
-  const [selectedFramework, setSelectedFramework] = useState(params.get(SEARCH_PARAM_FRAMEWORK) || '');
 
   const showAllComponents = () => {
     // Reset the filter and reload the page to show all components
     window.location.search = '';
   };
 
-  const selectedFrameworkOptions = getAllFrameworkNames(components);
+  const selectedFrameworkOptions = getAllFrameworkNames(components).map((frameworkName) => {
+    const selectedParamFrameworks = params.get(SEARCH_PARAM_FRAMEWORK)?.split(',') || [];
+    return {
+      frameworkName,
+      state: useState(selectedParamFrameworks.includes(frameworkName)),
+    };
+  });
+  const selectedFrameworkStates = selectedFrameworkOptions.map(({ state }) => state[0]);
 
   useEffect(() => {
+    const selectedFrameworks = selectedFrameworkOptions
+      .filter(({ state }) => state[0])
+      .map(({ frameworkName }) => frameworkName);
+
     setFilteredComponents(() =>
       components
         .filter((c) => {
@@ -79,7 +89,11 @@ export const ComponentOverview = () => {
             (showHallOfFame && c.relayStep === 'HALL_OF_FAME')
           );
         })
-        .filter((c) => !selectedFramework || hasFramework(c, selectedFramework)),
+        .filter(
+          // Show this component if no framework is selected or if this component supports all selected frameworks
+          (c) =>
+            !selectedFrameworks.length || selectedFrameworks.every((frameworkName) => hasFramework(c, frameworkName)),
+        ),
     );
 
     if (showTodo) {
@@ -112,14 +126,14 @@ export const ComponentOverview = () => {
       params.append(SEARCH_PARAM, SEARCH_VALUES.HALL_OF_FAME);
     }
 
-    if (selectedFramework) {
-      params.set(SEARCH_PARAM_FRAMEWORK, selectedFramework);
+    if (selectedFrameworks.length) {
+      params.set(SEARCH_PARAM_FRAMEWORK, selectedFrameworks.join(','));
     } else {
       params.delete(SEARCH_PARAM_FRAMEWORK);
     }
 
     replace({ ...location, search: params.toString() });
-  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, selectedFramework]);
+  }, [showTodo, showHelpWanted, showCommunity, showCandidate, showHallOfFame, ...selectedFrameworkStates]);
 
   return (
     <>
@@ -183,31 +197,22 @@ export const ComponentOverview = () => {
                       <EstafetteBadge state="Hall of Fame" />
                     </FormLabel>
                   </FormField>
-                  {selectedFrameworkOptions.length > 0 && (
-                    <>
-                      <h3 className="utrecht-heading-6">Implementatie</h3>
-                      <FormField>
-                        <select
-                          className="utrecht-select"
-                          onChange={(event) => setSelectedFramework(event.target.value)}
-                        >
-                          <option selected={selectedFramework === ''} value="">
-                            Alle componenten
-                          </option>
-                          {selectedFrameworkOptions.map((frameworkName) => (
-                            <option
-                              selected={selectedFramework === frameworkName}
-                              key={frameworkName}
-                              value={frameworkName}
-                            >
-                              {frameworkName}
-                            </option>
-                          ))}
-                        </select>
-                      </FormField>
-                    </>
-                  )}
                 </Fieldset>
+                {selectedFrameworkOptions.length > 0 && (
+                  <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
+                    <h3 className="utrecht-heading-6">Implementatie</h3>
+                    {selectedFrameworkOptions.map(({ frameworkName, state }) => (
+                      <FormField key={frameworkName} type="checkbox">
+                        <Checkbox
+                          defaultChecked={state[0]}
+                          id={frameworkName}
+                          onChange={() => state[1]((checked) => !checked)}
+                        />
+                        <FormLabel htmlFor={frameworkName}>{frameworkName}</FormLabel>
+                      </FormField>
+                    ))}
+                  </Fieldset>
+                )}
               </>
             ),
           },
