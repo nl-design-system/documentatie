@@ -6,6 +6,7 @@ sidebar_label: Community
 sidebar_position: 6
 pagination_label: Voorbeeld thema
 description: Lees over de community van designers en hoe je hier onderdeel van kan worden.
+slug: /designer/community
 keywords:
   - index
   - designer
