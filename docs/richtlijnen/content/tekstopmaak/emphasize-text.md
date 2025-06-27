@@ -1,5 +1,5 @@
 ---
-title: Tekst benadrukken · Content · Richtlijnen
+title: Tekst benadrukken · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tekst benadrukken

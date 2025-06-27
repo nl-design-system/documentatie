@@ -1,5 +1,5 @@
 ---
-title: Taal instellen · Content · Richtlijnen
+title: Taal instellen · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: De juiste taal instellen
