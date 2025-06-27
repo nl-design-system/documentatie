@@ -1,5 +1,51 @@
 # @nl-design-system-unstable/documentation
 
+## 1.7.0
+
+### Minor Changes
+
+- 0838f84: Links naar richtlijnen bij de relevante wcag succescriteria
+- bdd0da6: Sectie Hoe te testen toegevoegd aan richtlijnen - video - audiodescriptie.
+- 3938610: Banner terug en kleine tekstuele toevoeging.
+- afb398e: Baseline 2025-06
+- b36f6e7: Hoe te testen sectie toegevoegd aan richtlijnen - video - flitsen.
+- c558224: Hoe te testen sectie toegevoegd aan richtlijnen - video - gebarentaal.
+- 7b019fa: Pagina gebarentaal voor video aan de content-richtlijnen toegevoegd.
+- 8dba121: Pagina over grafieken en kleurgebruik voor contentmakers toegevoegd.
+- 089c2d7: "Hoe te testen"-secties toegevoegd aan de pagina's `afbeeldingen > algemene-richtlijnen`en `afbeeldingen > waar moet een alternatieve tekst staan`.
+- 86f65d2: Help Wanted stappenplan uitbreiden met keywords in component template.
+- f13bb3d: Pagina Flitsen bij video bij Video richtlijnen toegevoegd.
+- e5eb1d2: Pagina toegevoegd over kantoorbestanden.
+- 8a5cfb3: Hoe te testen sectie toegevoegd aan richtlijnen - video - ondertiteling.
+- 25cc4cc: Frequentie van Rijkshuisstijl Community Open Hour gewijzigd van incorrecte wekelijks naar correcte tweewekelijks.
+- e270217: Tekst over pixels in tokens verwijderd omdat we via Tokens Studio rem kunnen gebruiken.
+- 1499d1f: Toevoegen algemeen aanmeldformulier voor Rijkshuisstijl Community.
+- 3f4a731: Toevoegen algemeen aanmeldformulier voor Overheidsbrede Portalen Community.
+- bc03e4a: Hele Stappenplan voor designers herschreven.
+- 31e0865: Heartbeat video van 10 juni 2025 toegevoegd.
+- 5c40336: Hoe te testen sectie toegevoegd aan richtlijnen - video - transcript.
+- f531ac9: Pagina over kleurgebruik voor contentmakers toegevoegd.
+- 8a1c18b: Pagina Beschrijving bij video bij Video richtlijnen toegevoegd.
+- e68a7c2: Tekst [WCAG-pagina 2.5.2](/wcag/2.5.2) volledig afgemaakt.
+- a2d1abb: Tekst [WCAG-pagina 2.5.3](/wcag/2.5.3) volledig afgemaakt.
+- 10740ec: Tekst [WCAG-pagina 2.5.4](/wcag/2.5.4) volledig afgemaakt.
+- 7b5a8ce: Tekst [WCAG-pagina 2.5.7](/wcag/2.5.7) volledig afgemaakt.
+- ba43b39: Tekst [WCAG-pagina 3.2.3](/wcag/3.2.3) volledig afgemaakt
+- eb27bf9: Tekst [WCAG-pagina 3.2.4](/wcag/3.2.4) volledig afgemaakt.
+- 8fb571b: Tekst [WCAG-pagina 3.2.2](/wcag/3.3.2) volledig afgemaakt
+- 78b88da: Gebarentaal toegevoegd aan woordenlijst.
+
+### Patch Changes
+
+- 2667cda: Uitleg toegevoegd aan citatie pagina om verwarring te voorkomen.
+- dd5620f: Toevoegen van keywords om de vindbaarheid van componenten te verbeteren.
+- f0b083e: - Oplossen typos in component keywords.
+  - Toestaan meerdere spellingen van woorden in component keywords.
+  - Color component keywords uitbreiden met US spelling.
+- 9d78d99: Consistent gebruik maken van "de" lidwoord met betrekking tot "Open Hour".
+- 3e9bee0: Vervang dubbele 'een een' fouten met correcte verwoordingen.
+- e167f7e: Added an explanation about skipping heading levels in upwards direction.
+
 ## 1.6.0
 
 ### Minor Changes
