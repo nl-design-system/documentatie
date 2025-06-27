@@ -1,6 +1,6 @@
 Een Skip Link die standaard verborgen is, moet bij focus zichtbaar worden.
 
-Verberg de Skip Link nooit met `display:none`. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord.
+Verberg de Skip Link nooit met `display:none`. Dit haalt de link uit de accessibility tree en is dan niet meer te gebruiken met hulpapparatuur of met het toetsenbord. Maak in plaats daarvan gebruik van CSS en zorg ervoor dat de skiplink bij focus visueel zichtbaar is. (nog tips invoegen)
 
 NL Design System richtlijnen:
 

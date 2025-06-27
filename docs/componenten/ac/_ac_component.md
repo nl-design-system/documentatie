@@ -1,0 +1,1 @@
+In dit overzicht vind je de toegankelijkheidscriteria waar dit NL Design System component aan voldoet. Het gaat hierbij uitsluitend om de eigenschappen van de component zelf, los van toepassing in een huisstijl, de context op een pagina of het gebruik binnen een groter geheel.
