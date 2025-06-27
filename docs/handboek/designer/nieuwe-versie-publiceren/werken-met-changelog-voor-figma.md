@@ -6,6 +6,7 @@ sidebar_label: Werken met changelog voor Figma
 sidebar_position: 2
 pagination_label: Werken met changelog voor Figma
 description: Informatie over het gebruik van de changelog voor designers die werken met een duplicaat van de Figma bibliotheek.
+slug: /werken-met-changelog-voor-figma
 keywords:
   - versiebeheer
   - changelog
