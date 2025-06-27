@@ -6,6 +6,7 @@ sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Index
 description: Het startpunt voor designers die willen meedoen met het NL Design System.
+slug: /designer
 keywords:
   - index
   - designer
