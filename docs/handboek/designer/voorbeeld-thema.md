@@ -6,6 +6,7 @@ sidebar_label: Voorbeeld thema
 sidebar_position: 5
 pagination_label: Voorbeeld thema
 description: Toelichting op design keuzes voor het Voorbeeld thema.
+slug: /voorbeeld-thema
 keywords:
   - index
   - designer
