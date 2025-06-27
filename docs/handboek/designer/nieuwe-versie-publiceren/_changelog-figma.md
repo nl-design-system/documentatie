@@ -6,7 +6,7 @@ sidebar_label: Changelog Figma
 sidebar_position: 3
 pagination_label: Changelog Figma
 description: Overzicht van de wijzigingen in de Figma bibliotheken.
-slug: /changelog-figma
+slug: /designer/changelog-figma
 keywords:
   - versiebeheer
   - changelog
