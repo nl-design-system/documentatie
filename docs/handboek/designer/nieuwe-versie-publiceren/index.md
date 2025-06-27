@@ -6,6 +6,7 @@ sidebar_label: Nieuwe versie publiceren
 sidebar_position: 7
 pagination_label: Nieuwe versie publiceren
 description: Informatie over het bijhouden van wijzigingen in design tokens en Figma bibliotheken voor designers.
+slug: /designer/nieuwe-versie-publiceren
 keywords:
   - versiebeheer
   - changelog
