@@ -6,6 +6,7 @@ sidebar_label: Versiebeheer voor design tokens
 sidebar_position: 1
 pagination_label: Versiebeheer voor design tokens
 description: Informatie over wat semver inhoudt en hoe we het toepassen op de packages met design tokens.
+slug: /versiebeheer-voor-design-tokens
 keywords:
   - versiebeheer
   - changelog
