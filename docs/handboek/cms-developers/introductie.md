@@ -27,7 +27,7 @@ Gebruik deze checklist om te zorgen dat jouw CMS:
 
 Zorg dat je CMS:
 
-- werkt met toegankelijke standaardcomponenten, zoals koppen, lijsten en tabellen ([bekijk de componenten](/componenten/));
+- werkt met toegankelijke standaardcomponenten, zoals koppen, lijsten en tabellen (bijvoorbeeld de [componenten van het NL Design System](/componenten/));
 - alt-teksten, transcripties en andere alternatieven ondersteunt, bijvoorbeeld via velden en validatie bij het uploaden van media;
 - taalinstellingen per pagina én per tekstblok ondersteunt;
 - semantisch juiste opmaak afdwingt, bijvoorbeeld door nep-opsommingen of visuele tabellen voor layout te ontmoedigen;
@@ -40,11 +40,11 @@ Het NL Design System biedt toegankelijke, herbruikbare componenten die overheden
 
 Als CMS-ontwikkelaar kun je deze componenten integreren in de editor of preview van je CMS. Zo help je contentmakers om direct toegankelijke keuzes te maken, zonder dat ze technische kennis nodig hebben.
 
-De componenten zijn beschikbaar als HTML/CSS en in verschillende frameworks, zoals React. In [het handboek van het NL Design System](/handboek/introductie/) lees je hoe je deze componenten kunt hergebruiken in je eigen project.
+De componenten zijn beschikbaar als HTML/CSS en in verschillende frameworks, zoals React. In het [handboek van het NL Design System](/handboek/introductie/) lees je hoe je deze componenten kunt hergebruiken in je eigen project.
 
-Bekijk het overzicht in [de componentenbibliotheek](/componenten/) om te zien wat er al beschikbaar is.
+Bekijk het [componenten overzicht](/componenten/) om te zien wat er al beschikbaar is.
 
-## Checklist: help contentmakers bij toegankelijk publiceren
+## Wat het CMS kan doen om contentmakers te helpen bij toegankelijk publiceren
 
 Als CMS-bouwer kun je veel doen om toegankelijke content makkelijker te maken. In deze checklist zie je per contentonderdeel:
 
@@ -58,7 +58,7 @@ Per onderdeel vind je praktische tips en suggesties om toegankelijk publiceren e
 
 Koppenstructuur is essentieel voor schermlezers én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.
 
-Wat het CMS kan doen
+Wat het CMS kan doen:
 
 - Bied duidelijke opties voor kopniveaus  
   Zorg dat gebruikers eenvoudig koppen kunnen invoegen en het juiste niveau kunnen kiezen (bijvoorbeeld H2 of H3), zonder handmatige opmaak.
@@ -69,7 +69,7 @@ Wat het CMS kan doen
 - Gebruik semantisch correcte HTML  
   Laat het CMS altijd de juiste HTML-elementen genereren (H1 t/m H6).
 
-#### Herbruikbare componenten uit NL Design System
+#### Gerelateerde NL Design System-componenten
 
 - [Heading](/heading)
 
@@ -77,7 +77,7 @@ Wat het CMS kan doen
 
 Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen altijd van betekenisvolle alternatieve tekst te voorzien.
 
-Wat het CMS kan doen
+Wat het CMS kan doen:
 
 - Laat contentmakers alt-teksten toevoegen  
   Bied een duidelijk invoerveld bij het uploaden of plaatsen van een afbeelding.
@@ -88,9 +88,10 @@ Wat het CMS kan doen
 - Gebruik semantisch correcte HTML  
   Zorg dat afbeeldingen worden geplaatst met het juiste img-element en correcte attributen (alt, aria-describedby, longdesc waar relevant).
 
-Herbruikbare componenten uit NL Design System
+#### Gerelateerde NL Design System-componenten
 
 - [Image](/image)
+- [Figure](/figure)
 
 ---
 
