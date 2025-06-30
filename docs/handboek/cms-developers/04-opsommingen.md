@@ -11,10 +11,6 @@ keywords:
   - opsommingen
 ---
 
-{/_ @license CC0-1.0 _/}
-
-import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
-
 # Opsommingen
 
 Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook technisch als lijst zijn opgemaakt. Zorg evoor in je CMS dat dit automatisch goed gaat, ook zonder kennis van HTML.
