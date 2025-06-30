@@ -17,7 +17,7 @@ keywords:
 
 # Voorbeeld-thema
 
-Op deze pagina beschrijven we het doel en de stijl van het Voorbeeld-thema.
+Op deze pagina beschrijven we het doel en de stijl van het 'Voorbeeld-thema'.
 
 ## Doel van het Voorbeeld-thema
 
