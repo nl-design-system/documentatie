@@ -136,8 +136,8 @@ Wil je koppen een ander lettertype geven, dan pas je `basis.heading.font-family`
 **Voorbeeld B**
 
 - `basis.color.accent-1.color-default` heeft als waarde `#1B59A4`.
-- `basis.color.accent-2.color-default` heeft als waarde `basis.color.accent-1.color-default`.
-- `basis.color.accent-3.color-default` heeft als waarde `basis.color.accent-1.color-default`.
+- `basis.color.accent-2.color-default` heeft als waarde `{basis.color.accent-1.color-default}`.
+- `basis.color.accent-3.color-default` heeft als waarde `{basis.color.accent-1.color-default}`.
 
 Heeft jouw organisatie één huisstijlkleur? Dan volstaat het om `accent-1` aan te passen.
 
@@ -265,7 +265,7 @@ Gebruik `default` als je kleuren inzet voor structuur, bijvoorbeeld bij componen
 
 ##### Accent-1, accent-2 en accent-3
 
-Gebruik `accent` als je vanuit huisstijl kleur wilt inzetten. Bijvoorbeeld bij componenten zoals [Page Header](/page-header) of [Page Footer](/page-footer). Standaard verwijzen `accent-2` en `accent-3` naar `accent-1`.
+Gebruik `accent` als je vanuit de huisstijl kleur wilt inzetten. Bijvoorbeeld bij componenten zoals [Page Header](/page-header) of [Page Footer](/page-footer). Standaard verwijzen `accent-2` en `accent-3` naar `accent-1`.
 
 ![De afbeelding toont de componenten Page Header en Page Footer op basis van een blauwe kleur.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-accent-start.png)
 
@@ -288,7 +288,7 @@ Gebruik je meerdere interactiekleuren? Dan kun je `action-2` apart instellen.
 
 ##### Disabled
 
-Gebruik `disabled` om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) of [Progress List](/progress-list).
+Gebruik `disabled` om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) of [Progress List](/progress-list). Voor elementen die disabled zijn worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel [genoeg contrast](/wcag/1.4.3/) hebben.
 
 ![De afbeelding toont de componenten Breadcrumb Navigation, Page Number Navigation en Progress List met grijze kleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-disabled.png)
 
@@ -320,20 +320,23 @@ Naast het doel, gebruik je kleuren ook afhankelijk van de toepassing. Denk aan:
 
 Voor deze toepassingen gebruiken we de volgende termen, waarin ook status en hiërarchie zijn meegenomen:
 
-- `bg-document`
-- `bg-subtle`
-- `bg-default`
-- `bg-hover`
-- `bg-active`
-- `border-subtle`
-- `border-default`
-- `border-hover`
-- `border-active`
-- `color-subtle`
-- `color-default`
-- `color-hover`
-- `color-active`
-- `color-document`
+- Achtergrond:
+  - `bg-document`
+  - `bg-subtle`
+  - `bg-default`
+  - `bg-hover`
+  - `bg-active`
+- Kaders en lijnen:
+  - `border-subtle`
+  - `border-default`
+  - `border-hover`
+  - `border-active`
+- Voorgrond:
+  - `color-subtle`
+  - `color-default`
+  - `color-hover`
+  - `color-active`
+  - `color-document`
 
 ![De afbeelding toont as 1, enkele termen verticaal uitgelijnd. Horizontaal zijn de termen van as 2 ook goed zichtbaar.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-as-2.png)
 
@@ -440,9 +443,9 @@ Er is een specifieke basis token beschikbaar voor transparantie: `basis.color.tr
 
 De focusstatus in het Start-thema is visueel krachtig: felgeel gecombineerd met zwart en een zwart-wit gestreepte rand.
 
-Deze kleurwaarden zijn bewust 'hard gecoded', zodat de focus status altijd afwijkt van alle andere content.
+Deze kleurwaarden zijn bewust 'hardcoded', zodat de focus status altijd afwijkt van alle andere content. Dit bevordert de toegankelijkheid.
 
-Bij formulieren vermijden we een gele achtergrond, om verwarring met auto-complete niet te veroorzaken.
+Bij formulieren vermijden we een gele achtergrond, om verwarring met auto-complete te voorkomen.
 
 ### Basis-tokens voor ruimte
 
@@ -468,7 +471,7 @@ Dit zorgt voor tokens met termen zoals `inline`, `block`, `text`, `column` en `r
 - etc.
 
 **Tip!**
-Er zijn ook tokens voor ruimte beschikbaar met de termen `min` en `max`. Hiermee bereiden we ons voor op de mogelijkheid om ruimte vloeiend te laten groeien afhankelijk van de grote van een scherm. Vooralsnog doen we hier niks mee.
+Er zijn ook tokens voor ruimte beschikbaar met de termen `min` en `max`. Hiermee bereiden we ons voor op de mogelijkheid om ruimte vloeiend te laten groeien afhankelijk van de grootte van een scherm. Vooralsnog worden deze tokens niet gebruikt.
 
 ### Basis-tokens voor afmeting
 
