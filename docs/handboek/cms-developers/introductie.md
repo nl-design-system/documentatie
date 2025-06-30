@@ -93,6 +93,45 @@ Wat het CMS kan doen:
 - [Image](/image)
 - [Figure](/figure)
 
+### Tabellen
+
+Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van screenreaders.
+
+Wat het CMS kan doen:
+
+- Laat gebruikers kopcellen aanduiden  
+  Geef een duidelijke optie om rij- en kolomkoppen aan te geven.
+- Voorkom dat tabellen worden misbruikt voor opmaak  
+  Herken en ontmoedig het gebruik van tabellen zonder kopcellen of met lege, geneste structuren.
+- Bewaar, waar mogelijk, de juiste volgorde van invoer  
+  Zorg dat cellen logisch worden geplaatst en in een volgorde die overeenkomt met hoe ze gelezen moeten worden.
+- Waarschuw bij complexe of foutgevoelige tabellen  
+  Detecteer signalen van ontoegankelijke tabellen, zoals samengevoegde cellen of ontbrekende kopcellen, en geef feedback als de structuur lastig te begrijpen kan zijn voor screenreaders.
+
+#### Gerelateerde NL Design System-componenten
+
+- [Table](/table)
+
+### Opsommingen
+
+Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook technisch als lijst zijn opgemaakt. Een goed CMS zorgt dat dit automatisch goed gaat, ook zonder kennis van HTML.
+
+Wat het CMS kan doen:
+
+- Ondersteun automatisch opgemaakte lijsten  
+  Zorg dat genummerde en ongenummerde lijsten automatisch worden herkend en correct worden opgemaakt wanneer een gebruiker begint met een streepje, asterisk of cijfer.
+- Bied duidelijke knoppen voor lijsten  
+  Maak het makkelijk om lijsten toe te voegen via knoppen of sneltoetsen in de editor, zodat contentmakers niet zelf hoeven opmaken.
+- Gebruik semantisch correcte HTML  
+  Laat het CMS altijd echte ul- of ol-elementen genereren, ook bij kant-en-klare componenten of bij het kopiëren van tekst uit andere bronnen.
+- Waarschuw bij foutieve structuur  
+  Geef feedback als een lijst alleen visueel als lijst is opgemaakt (bijvoorbeeld met handmatig toegevoegde streepjes) maar technisch geen lijst is.
+
+#### Gerelateerde NL Design System-componenten
+
+- [Unordered List](/unordered-list)
+- [Ordered List](//ordered-list)
+
 ---
 
 ## Help deze documentatie te verbeteren
