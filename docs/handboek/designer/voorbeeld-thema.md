@@ -37,7 +37,7 @@ In tegenstelling tot het Start-thema wordt er bij het Voorbeeld-thema gebruik ge
 
 Noto Serif wordt gebruikt voor koppen, Noto Sans voor alle andere tekst. Dat betekend dat basis token `basis.heading.font-family` Noto Serif als waarde heeft gekregen.
 
-De Noto familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/). 
+De Noto familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/).
 
 Leuk detail: De naam Noto komt van 'No Tofu. 'Tofu' is de bijnaam voor het rechthoekje dat je ziet (▯) wanneer een letter of karakter niet kan worden weergegeven op een scherm of printer. Dat betekent dat dit lettertype (bijna) alle talen ter wereld kan tonen, dus geen 'tofu-blokjes' meer op het scherm!
 
@@ -55,7 +55,7 @@ Al deze kleuren zijn als design tokens op het Brand niveau vastgelegd. Door vanu
 
 ![De afbeelding toont een blauwe en violet primaire knop. Daarboven staan de verwijzingen vanuit de verschillende token niveau's.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens.png)
 
-Violet leent zich prima als kleur voor interactie. Daarom is ervoor gekozen om de violet kleur toe te passen op Buttons. Door de waarden van de basis tokens `action-1` en `action-2` aan te passen hebben de Buttons een afwijkende kleur ten opzichte van andere interactieve componenten. 
+Violet leent zich prima als kleur voor interactie. Daarom is ervoor gekozen om de violet kleur toe te passen op Buttons. Door de waarden van de basis tokens `action-1` en `action-2` aan te passen hebben de Buttons een afwijkende kleur ten opzichte van andere interactieve componenten.
 
 ![De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation. De knoppen zijn groen. Alle andere interactieve componenten zijn blauw.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens_kleur-action-voorbeeld.png)
 
