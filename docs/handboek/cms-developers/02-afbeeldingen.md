@@ -11,10 +11,6 @@ keywords:
   - afbeeldingen
 ---
 
-{/_ @license CC0-1.0 _/}
-
-import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
-
 # Afbeeldingen
 
 Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen altijd van betekenisvolle alternatieve tekst te voorzien.

@@ -11,10 +11,6 @@ keywords:
   - koppen
 ---
 
-{/_ @license CC0-1.0 _/}
-
-import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
-
 # Koppen
 
 Koppenstructuur is essentieel voor schermlezers én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.

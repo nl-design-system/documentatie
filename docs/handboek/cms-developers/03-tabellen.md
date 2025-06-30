@@ -11,10 +11,6 @@ keywords:
   - tabellen
 ---
 
-{/_ @license CC0-1.0 _/}
-
-import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
-
 # Tabellen
 
 Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van screenreaders.
