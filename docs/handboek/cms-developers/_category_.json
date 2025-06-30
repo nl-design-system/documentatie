@@ -1,0 +1,10 @@
+{
+  "label": "CMS developers",
+  "link": {
+    "type": "doc",
+    "id": "handboek/cms-developers/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
