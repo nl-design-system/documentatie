@@ -37,7 +37,7 @@ In tegenstelling tot het Start-thema wordt er bij het Voorbeeld-thema gebruikgem
 
 Noto Serif wordt gebruikt voor koppen, Noto Sans voor alle andere tekst. Dat betekent dat basis-token `basis.heading.font-family` Noto Serif als waarde heeft gekregen.
 
-De Noto-familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/). 
+De Noto-familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/).
 
 Leuk detail: De naam Noto komt van 'No Tofu. 'Tofu' is de bijnaam voor het rechthoekje dat je ziet (▯) wanneer een letter of karakter niet kan worden weergegeven op een scherm of printer. Dat betekent dat dit lettertype (bijna) alle talen ter wereld kan tonen, dus geen 'tofu-blokjes' meer op het scherm!
 
