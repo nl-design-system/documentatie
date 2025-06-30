@@ -1,69 +1,78 @@
 ---
-title: Voorbeeld thema · Designer · Handboek
+title: Voorbeeld-thema · Thema · Handboek
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Voorbeeld thema
-sidebar_position: 5
-pagination_label: Voorbeeld thema
-description: Toelichting op design keuzes voor het Voorbeeld thema.
+sidebar_label: Voorbeeld-thema
+sidebar_position: 3
+pagination_label: Voorbeeld-thema
+description: Toelichting over het Voorbeeld-thema
+slug: /handboek/huisstijl/themas/voorbeeld-thema
 keywords:
-  - index
-  - designer
-  - meedoen
-  - Voorbeeld thema
-  - figma
+  - componenten
+  - design system
+  - design tokens
+  - thema's
+  - voorbeeld-thema
 ---
 
-# Voorbeeld thema
+# Voorbeeld-thema
 
-Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van Design Tokens aan te tonen maken we wel gebruik van een ‘Voorbeeld’ thema.
+Op deze pagina beschrijven we het doel en de stijl van het Voorbeeld-thema.
 
-**Dit thema mag je helemaal aanpassen naar de huisstijl van jouw organsatie.**
+## Doel van het Voorbeeld-thema
 
-Hieronder leggen we uit welke keuzes we gemaakt hebben voor het Voorbeeld thema.
+Met het Voorbeeld-thema laten we zien hoe je een eigen thema kunt doorvoeren op basis van het [Start-thema](/handboek/huisstijl/themas/start-thema). Het dient als 'voorbeeld'.
 
-## Typografie
+![Stijl van het Voorbeeld-thema uitgebeeld door middel van een violet vlak waarop met witte letters staat geschreven: Voorbeeld thema. Uitgesproken en vriendelijk. Rechts staat in dezelfde violet kleur Nederland afgebeeld als illustratie.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_stijl.png)
 
-![Visuale weergave van het lettertypes Source Serif Pro en Fira Sans.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_typografie.png)
+## Stijl van het Voorbeeld-thema
 
-In het Voorbeeld thema maken we gebruik van de lettertypes ‘Source Serif Pro’ en ‘Fira Sans’. Beide lettertypes zijn Open Source te gebruiken en voldoen aan de richtlijnen die we voor [Typografie](/richtlijnen/stijl/typografie) hebben beschreven. Daarnaast zijn beide lettertypes standaard onderdeel van Figma. Hierdoor hoef je ze niet apart te installeren om te starten met de NL Design System bibliotheek.
+De stijl van het Voorbeeld-thema is uitgesprokener dan die van het Start-thema.
 
-## Kleuren
+### Typografie
 
-![Visuale weergave van het kleurenpalet.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_kleuren.png)
+In tegenstelling tot het Start-thema wordt er bij het Voorbeeld-thema gebruik gemaakt van twee verschillende lettertypes: Noto Serif en Noto Sans.
 
-In het Voorbeeld thema hebben we op [‘Brand token’ niveau](../../handboek/design-tokens/README.mdx) een zeer uitgebreid kleurenpalet opgenomen. Dit kleurenpalet bestaat uit 9 hoofdkleuren: Violet, Grijs, Roze, Rood, Oranje, Geel, Groen, Zee-groen en Blauw. En is aangevuld met zwart, wit en een aantal transparante opties. Het biedt ons veel opties met betrekking tot feedback componenten en bijvoorbeeld een dark-mode thema.
+![De teksten Noto Serif en Noto Sans worden afgebeeld met het overeenkomende lettertype.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_typografie.png)
 
-## Iconen
+Noto Serif wordt gebruikt voor koppen, Noto Sans voor alle andere tekst. Dat betekend dat basis token `basis.heading.font-family` Noto Serif als waarde heeft gekregen.
 
-### Functionele iconen
+De Noto familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/). 
 
-![Tabler logo met op de achtergrond allerlei verschillende iconen uit deze set.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_functionele-iconen.png)
+Leuk detail: De naam Noto komt van 'No Tofu. 'Tofu' is de bijnaam voor het rechthoekje dat je ziet (▯) wanneer een letter of karakter niet kan worden weergegeven op een scherm of printer. Dat betekent dat dit lettertype (bijna) alle talen ter wereld kan tonen, dus geen 'tofu-blokjes' meer op het scherm!
 
-Voor functionele iconen maken we gebruik van een selectie uit de [Tabler iconenset](https://tabler-icons.io/). Deze set bestaat uit meer dan 3100 outline iconen die Open Source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
+### Kleur
 
-Vanuit het NL Design System onderhouden we deze iconenset niet. Het gebruik ervan is daarom je eigen verantwoordelijkheid. Mis je een icoon? Dan kun je deze zelf toevoegen.
+In het Voorbeeld-thema voert de kleur violet de boventoon. Deze wordt gecombineerd met een pure wit.
 
-**Let op!** De iconen van de Tablet iconenset zijn opgebouwd uit lijnen (stroke) met een lijndikte van 2px. Hierdoor blijft de lijndikte 2px ongeacht hoe groot het icoon is. Zoals aangegeven in de [richtlijnen rondom iconen](/richtlijnen/stijl/iconen) is dit niet het gewenste gedrag. Daarom hebben we de iconen in het Voorbeeld thema omgezet van lijn naar vorm (outline stroke).
+![Twee cirkels. De linker is violet de rechter is wit met een grijze rand.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_kleur.png)
 
-De Tabler iconenset is ontworpen op een 24×24 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat de waarde van common token `nl.icon.functional.size` 24×24 betreft.
+Maar dit zijn niet de enige kleuren die vanuit de huisstijl beschikbaar zijn gesteld. Er is een ondersteunend palet aanwezig met blauwgrijze tinten en de nodige signaalkleuren. Deze huisstijlkleuren hebben allemaal een nederlandse benaming: violet, grijs, blauw, groen, geel, oranje en rood.
 
-### Toptaak iconen
+![Zeven verticale kleurenschema's voor de kleuren violet, grijs, blauw, groen, geel, oranje en rood. De kleurenschema's starten met de meest lichte tint bovenaan en worden naar beneden toe steeds donkerder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_kleur-trap.png)
 
-![Gemeente iconen logo met op de achtergrond allerlei verschillende iconen uit deze set.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_toptaak-iconen.png)
+Al deze kleuren zijn als design tokens op het Brand niveau vastgelegd. Door vanuit de basis tokens, op het Common niveau, te verwijzen naar deze huisstijlkleuren worden deze op alle componenten toegepast.
 
-Voor toptaak iconen maken we gebruik van de outline versie van [OpenGemeenten iconenset](https://www.gemeenteniconen.nl/). Deze set bestaat uit meer dan 200 iconen die Open Source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
+![De afbeelding toont een blauwe en violet primaire knop. Daarboven staan de verwijzingen vanuit de verschillende token niveau's.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens.png)
 
-Vanuit het NL Design System onderhouden we deze iconenset niet. Het gebruik ervan is daarom je eigen verantwoordelijkheid. Mis je een icoon? Neem dan contact op met [OpenGemeenten](https://www.gemeenteniconen.nl/doe-mee).
+Violet leent zich prima als kleur voor interactie. Daarom is ervoor gekozen om de violet kleur toe te passen op Buttons. Door de waarden van de basis tokens `action-1` en `action-2` aan te passen hebben de Buttons een afwijkende kleur ten opzichte van andere interactieve componenten. 
 
-De OpenGemeenten iconenset is ontworpen op een 48×48 grid. Dit formaat nemen we dan ook als uitgangspunt bij het ontwerpen van componenten. Vandaar dat de waarde van common token `nl.icon.toptask.size` 48×48 betreft.
+![De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation. De knoppen zijn groen. Alle andere interactieve componenten zijn blauw.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens_kleur-action-voorbeeld.png)
+
+De stijl van het Voorbeeld-thema is meer uitgesproken. Dit zie je ook terug in de Page Footer waar violet doormiddel van de basis token `basis.color.accent-1-inverse.bg-default` van de pagina knalt.
+
+![De afbeelding toont de componenten Button en Page Footer zijn 2 keer afgebeeld. Links hebben ze subtiele kleuren, rechts hebben ze een stevige kleurstelling.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens_kleur-accent-inverse.png)
+
+### Overige keuzes
+
+Vooralsnog zijn dit de wijzigingen ten opzichte van het Start-thema. De iconensets en waarden van basis tokens voor ruimte, afmetingen, afgeronde hoeken, lijndikte en schaduw zijn verder ongewijzigd. Maar pas deze gerust aan als dit voor jouw organisatie wel nodig is.
 
 ---
 
 ## Help deze documentatie te verbeteren
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [GitHub](https://github.com/nl-design-system/documentatie).
 
 ## Vragen
 
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](/project/kernteam).
