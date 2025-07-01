@@ -81,10 +81,10 @@ Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat releva
 
 Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:
 
-- Controleer of het citaat is opgemaakt met de citaatfunctie van het CMS (bijvoorbeeld als blokcitaat).
-  Een citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met `<blockquote>`). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl.
-- Kijk of er kopstijlen (zoals H2 of H3) zijn gebruikt om een citaat visueel te laten opvallen.
-  Als dat zo is, pas dit aan. Koppen zijn bedoeld voor structuur, niet voor vormgeving.
+- Is het citaat opgemaakt met aanhalingstekens? Dan is dat in principe voldoende.
+- Is het citaat uitgelicht op de pagina? Controleer dan of de optie voor citaten in het CMS is gebruikt.
+- Controleer of het citaat niet met de functie voor schuingedrukte tekst is opgemaakt om het citaat op te laten vallen. Is dat zo? Pas de opmaak dan aan. Schuingedrukte tekst is bedoeld om [tekst te benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken), niet om citaten mee op te maken.
+- Controleer of het citaat niet met een koptekst is opgemaakt om het citaat uit te lichten. Als dat zo is, pas dit aan. [Koppen zijn bedoeld voor structuur](/richtlijnen/content/tekstopmaak/koppen), niet voor vormgeving.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 
