@@ -2,4 +2,4 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-Documentatie voor 'Werken met NL Design System toegevoegd'.
+Documentatie voor 'Werken met NL Design System' toegevoegd.
