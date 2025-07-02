@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/component-bijdragen/help-wanted-stappenplan" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">Help Wanted stappenplan · Component bijdragen · Handboek · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/estafettemodel/componenten/help-wanted-stappenplan" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Help Wanted stappenplan · Component bijdragen · Handboek · NL Design System" />
+  <meta data-rh="true" name="description" content="Stappen voor de Help Wanted fase van Definition of Done" />
+  <meta data-rh="true" property="og:description" content="Stappen voor de Help Wanted fase van Definition of Done" />
+  <meta data-rh="true" name="keywords" content="componenten,design system,estafettemodel,definition of done,help wanted" />
+  <link data-rh="true" rel="icon" href="/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/help-wanted-stappenplan" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/help-wanted-stappenplan" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/help-wanted-stappenplan" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.53f6f0cb.css" />
+  <script src="/assets/js/runtime~main.9e7eb22e.js" defer="defer"></script>
+  <script src="/assets/js/main.7e625619.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute('data-theme', t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem('theme');
+      } catch (t) {}
+     })();
+    t(null !== e ? e : 'light');
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_uOWr" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a aria-current="page" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link navbar__link--active" href="/handboek">Handboek</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/richtlijnen">Richtlijnen</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/componenten/">Componenten</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/voorbeelden/">Voorbeelden</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/community">Community</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div class="nav-search-bar">
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" aria-label="Zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_DcPu">
+     <div class="docsWrapper_Dh2W">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_y2Un" type="button"></button>
+      <div class="docRoot_kCcV">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_xdMa">
+        <div class="sidebarViewport_qyvf">
+         <div class="sidebar sidebarWithHideableNavbar sidebarWithNavbar">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" class="sidebar__content">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/introductie">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel">Estafettemodel</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/huisstijl-vastleggen/overzicht">Huisstijl vastleggen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Huisstijl vastleggen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/component-bijdragen/overzicht">Componenten bijdragen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Componenten bijdragen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/definition-of-done">Definition of Done</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/handboek/estafettemodel/componenten/help-wanted-stappenplan">Help Wanted</a></li>
+                 <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                  <div class="menu__list-item-collapsible">
+                   <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/estafettemodel/componenten/community-stappenplan">Community</a
+                   ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Community&#x27;">
+                    <span aria-hidden="true" class="utrecht-icon"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                    ></span>
+                   </button>
+                  </div>
+                 </li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/candidate-stappenplan">Candidate</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/hall-of-fame-stappenplan">Hall of Fame</a></li>
+                </ul>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/designer/overzicht">Voor designers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor designers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/developer/overzicht">Voor developers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor developers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht">Voor organisaties</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor organisaties&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/leverancier/introductie">Voor leveranciers</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/manager/introductie">Voor managers</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/baseline/">Baseline</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Baseline&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/woordenlijst">Woordenlijst</a></li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_HqCc">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col">
+           <div class="docItemContainer_PI1c">
+            <article>
+             <div class="breadcrumbs breadcrumbs--desktop">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs" aria-labelledby=":R15ralaqh:">
+               <h2 class="utrecht-heading-2 utrecht-breadcrumb-nav__heading" id=":R15ralaqh:" aria-hidden="true">breadcrumb</h2>
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Handboek</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/estafettemodel/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Componenten bijdragen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Help Wanted</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs breadcrumbs--mobile">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/handboek/estafettemodel/componenten/definition-of-done"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Componenten bijdragen</a
+               >
+              </p>
+             </div>
+             <div class="theme-doc-markdown">
+              <h1 id="stappenplan-help-wanted" class="utrecht-heading-1">Stappenplan: Help Wanted</h1>
+              <p>Volg dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">&#x27;Help Wanted&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>.</p>
+              <h2 id="naam-bepaald-op-basis-van-nl-design-system-naamgeving" class="utrecht-heading-2">Naam bepaald op basis van NL Design System naamgeving</h2>
+              <p>Begin met het bepalen van een naam.</p>
+              <p>Baseer de naam van de component indien mogelijk, op herkenbare termen uit webstandaarden. Liever termen uit HTML, CSS, SVG en WAI-ARIA dan uit &#x27;UI frameworks&#x27; die op het moment populair zijn. We schrijven componenten over het algemeen als enkelvoud en met kapitalen. Bijvoorbeeld &#x27;Accordion&#x27; of &#x27;Text Input&#x27;.</p>
+              <p>Kijk voor inspiratie bijvoorbeeld bij:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://component.gallery" class="utrecht-link utrecht-link--html-a">Component gallery</a></li>
+               <li><a href="https://www.uiguideline.com/components" class="utrecht-link utrecht-link--html-a">UI guideline</a></li>
+               <li><a href="https://developer.mozilla.org/en-US/docs/Web" class="utrecht-link utrecht-link--html-a">MDN web docs</a></li>
+               <li><a href="https://www.nldesignsystem.nl/componenten/" class="utrecht-link utrecht-link--html-a">NL Design System componenten</a></li>
+              </ul>
+              <p>Zijn er meerdere namen voor de component? Kies de meest gangbare. De andere namen kun je later toevoegen aan de documentatie.</p>
+              <p><strong>🚩 Checkpoint</strong>: Naam</p>
+              <h2 id="component-kort-beschreven" class="utrecht-heading-2">Component kort beschreven</h2>
+              <p>Doel: Vanuit het componentenoverzicht kan men de juiste component uitzoeken.</p>
+              <p>De beschrijving biedt een samenvattende omschrijving van de component, zodat deze niet met een ander verward kan worden.</p>
+              <p>Kijk ter inspiratie bij in het <a href="https://www.nldesignsystem.nl/componenten/" class="utrecht-link utrecht-link--html-a">componentenoverzicht</a>. Of bij de volgende design systems:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://design-system.service.gov.uk" class="utrecht-link utrecht-link--html-a">https://design-system.service.gov.uk</a></li>
+               <li><a href="https://designsystem.digital.gov" class="utrecht-link utrecht-link--html-a">https://designsystem.digital.gov</a></li>
+               <li><a href="https://spectrum.adobe.com" class="utrecht-link utrecht-link--html-a">https://spectrum.adobe.com</a></li>
+               <li><a href="https://carbondesignsystem.com" class="utrecht-link utrecht-link--html-a">https://carbondesignsystem.com</a></li>
+               <li><a href="https://cedar.rei.com" class="utrecht-link utrecht-link--html-a">https://cedar.rei.com</a></li>
+              </ul>
+              <p>Beschrijf specifiek, kort en bondig wat de definitie is voor de component. We schrijven definities over het algemeen niet langer dan één zin, maar zeker niet meer dan een alinea.</p>
+              <p><strong>🚩 Checkpoint</strong>: Beschrijving</p>
+              <h2 id="afbeelding-gemaakt-om-de-component-visueel-duidelijk-te-maken" class="utrecht-heading-2">Afbeelding gemaakt om de component visueel duidelijk te maken</h2>
+              <p>Doel: De component is visueel duidelijk.</p>
+              <p>Om de community letterlijk een beeld te geven van de component voegen we een afbeelding toe. Het kernteam maakt deze in het <a href="https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&amp;node-id=439-969&amp;mode=design" class="utrecht-link utrecht-link--html-a">Figma &#x27;Schetsboek&#x27;</a>. Zelf kun je een eigen afbeelding maken, huisstijl maakt niet uit.</p>
+              <p><strong>🚩 Checkpoint</strong>: Afbeelding</p>
+              <h2 id="aangemaakt-als-een-github-discussion" class="utrecht-heading-2">Aangemaakt als een <a href="https://github.com/orgs/nl-design-system/discussions" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a></h2>
+              <p>Doel: Een plek om input te verzamelen.</p>
+              <p>We gebruiken <a href="https://github.com/orgs/nl-design-system/discussions" class="utrecht-link utrecht-link--html-a">GitHub &#x27;Discussions&#x27; van NL Design System</a> om input te verzamelen.</p>
+              <p>Start een <a href="https://github.com/orgs/nl-design-system/discussions/new?category=component-suggestions" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a> voor de component. Gebruik hierbij de volgende opzet:</p>
+              <p><strong>Title</strong></p>
+              <span hidden="" id=":R6ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{naam-component}</span>
+</span></code></pre>
+              <p><strong>Description</strong></p>
+              <span hidden="" id=":R72hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R72hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Naam</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{naam-component}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Beschrijving</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{beschrijving-component}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Ook bekend als</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{andere namen die je bent tegengekomen toen je de naam bepaalde, niet verplicht}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Gerelateerde componenten</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{zie hieronder}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Onderzoek</span>
+</span></code></pre>
+              <h3 id="gerelateerde-componenten" class="utrecht-heading-3">Gerelateerde componenten</h3>
+              <p>Het kan voorkomen dat andere componenten sterk gerelateerd zijn aan dit component. Denk bijvoorbeeld aan Button en Action group. Dan is het handig om deze componenten naar elkaar te laten verwijzen, indien mogelijk via een link. Noteer gerelateerde componenten als volgt:</p>
+              <span hidden="" id=":R7qhralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R7qhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Gerelateerde componenten</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">X, Y, of Z.</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Discussion URL</p>
+              <h2 id="staat-in-de-publieke-backlog-van-nl-design-system" class="utrecht-heading-2">Staat in de <a href="https://github.com/nl-design-system/backlog/issues" class="utrecht-link utrecht-link--html-a">publieke backlog van NL Design System</a></h2>
+              <p>Doel: Zichtbaarheid en overzicht creëren zodat componenten niet dubbel worden toevoegd.</p>
+              <p>We gebruiken &#x27;Issues&#x27; in de <a href="https://github.com/nl-design-system/backlog/issues" class="utrecht-link utrecht-link--html-a">GitHub &#x27;Backlog&#x27; repository van NL Design System</a> om onze backlog te beheren.</p>
+              <p>Maak een <a href="https://github.com/nl-design-system/backlog/issues/new" class="utrecht-link utrecht-link--html-a">&#x27;Issue</a> voor de component. Gebruik hierbij de volgende opzet:</p>
+              <p><strong>Title</strong></p>
+              <span hidden="" id=":R9ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{naam-component}</span>
+</span></code></pre>
+              <p><strong>Description</strong></p>
+              <span hidden="" id=":Ra2hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Ra2hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Naam</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{naam-component}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Link naar GitHub Discussion</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Selecteer bij &#x27;Labels&#x27; het label: Component.</li>
+               <li>Selecteer bij &#x27;Projects&#x27; het project: Components - 1 - Help Wanted.</li>
+              </ul>
+              <p><strong>Tip!</strong> Het selecteren van labels en projects kan alleen door het kernteam worden gedaan. Vraag ons gerust even om hulp, kleine moeite.</p>
+              <p><strong>🚩 Checkpoint</strong>: Backlog</p>
+              <h3 id="tip-checkpoints-afvinken" class="utrecht-heading-3">Tip: Checkpoints afvinken</h3>
+              <p>Door de vorige stap is de component toegevoegd aan het <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">Help Wanted bord</a>. Je kunt nu de reeds behaalde checkpoints afvinken door per kolom de juiste waarde in te vullen.</p>
+              <h2 id="bewijs-verzameld-dat-de-component-algemeen-bruikbaar-is" class="utrecht-heading-2">Bewijs verzameld dat de component algemeen bruikbaar is</h2>
+              <p>Doel: Alleen componenten die naar verwachting in de Hall of Fame kunnen komen willen we toevoegen als Help Wanted.</p>
+              <h3 id="community-om-hulp-vragen" class="utrecht-heading-3">Community om hulp vragen</h3>
+              <p>Om meer te leren over de component vragen we de community om hulp. Deze oproep doen we via de GitHub Discussion en Slack.</p>
+              <h4 id="oproep-via-github-discussion" class="utrecht-heading-4">Oproep via GitHub Discussion</h4>
+              <p>Vul de beschrijving van de GitHub Discussion aan met de onderstaande oproep. Plaats deze <strong>boven</strong> de informatie die daar al stond zoals Naam, Beschrijving, etc.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voeg de afbeelding toe.</li>
+               <li>
+                Wijzig de &#x27;alt text&#x27; die automatisch door GitHub wordt toegevoegd. Bijvoorbeeld:<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li><code class="utrecht-code">verschillende vormen van een {naam-component} component</code></li>
+                 <li><code class="utrecht-code">visuele weergave van een {naam-component} component</code></li>
+                </ul>
+               </li>
+               <li>Voeg onderstaande tekst toe, vul aan waar nodig en &#x27;Update&#x27; de GitHub Discussion.</li>
+              </ul>
+              <span hidden="" id=":Rdahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">We willen graag meer leren over de {naam-component} component. In welke vorm, of vormen, wordt deze momenteel ingezet en toegepast binnen jouw organisatie?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Deel hieronder een link naar Figma, Storybook, GitHub of screenshots. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Link naar bericht in Slack</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-slack-bericht}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token hr punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span>
+</span></code></pre>
+              <h4 id="oproep-via-slack" class="utrecht-heading-4">Oproep via Slack</h4>
+              <p>Plaats de oproep in het Slack channel <a href="https://codefornl.slack.com/archives/C7KDQRXMZ" class="utrecht-link utrecht-link--html-a">#nl-design-system</a>.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voeg de afbeelding toe aan je bericht.</li>
+               <li>Voeg ook hier de &#x27;alt text&#x27; toe. <a href="https://slack.com/help/articles/4403914924435-Add-descriptions-to-images" class="utrecht-link utrecht-link--html-a">Alt text toevoegen aan een Slack bericht</a></li>
+               <li>Voeg onderstaande tekst toe, vul aan waar nodig en verstuur je bericht.</li>
+              </ul>
+              <span hidden="" id=":Reahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Reahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Hey community 👋</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">We willen graag meer leren over de {naam-component} component. In welke vorm, of vormen, wordt deze momenteel ingezet en toegepast binnen jouw organisatie?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Deel een link naar Figma, Storybook, GitHub of screenshots in de </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain">, of in een thread onder dit bericht. Met deze informatie kunnen we bewijzen dat de component onderdeel moet worden van de NL Design System component library.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Daarnaast wordt het delen van onderzoek gewaardeerd. Dus heb je zelf onderzoek gedaan en zijn er inzichten voor dit component? Dan horen we dit ook graag!</span>
+</span></code></pre>
+              <p>Vergeet niet de link naar het Slack bericht toe te voegen aan de oproep in de GitHub Discussion.</p>
+              <h3 id="zelf-op-onderzoek-uit" class="utrecht-heading-3">Zelf op onderzoek uit</h3>
+              <p>Niet elke organisatie zal op de oproep reageren. Ga daarom ook zelf op onderzoek uit. Duik in Figma, Storybook, GitHub en documentatie omgevingen voor een &#x27;Screenshot-Safari 📸&#x27;. Maak screenshots van de component, varianten en states. Het gaat om bewijs verzamelen dat de component bestaat en in welke vorm, of vormen, deze wordt toegepast.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Kom je de component niet tegen in Figma, Storybook, GitHub of documentatie omgevingen? Dan zou je ook de website van de organisatie kunnen bekijken.</li>
+               <li>Kom je de component maar op 1 plek tegen? Documenteer het nut en noodzaak voor de component met een uitgebreide doelbeschrijving. Gebruikersonderzoek zou je hierbij goed kunnen helpen.</li>
+              </ul>
+              <p>Het kernteam houdt deze set van organisaties aan. Hiermee hebben we een mooie mix te pakken van gemeentes, leveranciers en overige overheidsorganisaties. Zelf kun je deze lijst ook gebruiken, maar gebruik gerust andere bronnen.</p>
+              <h4 id="amsterdam" class="utrecht-heading-4">Amsterdam</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://amsterdam.github.io/design-system/?path=/docs/docs-intro--docs" class="utrecht-link utrecht-link--html-a">Storybook</a></li>
+               <li><a href="https://www.figma.com/file/9IGm6IdPUYizBNGsUnueBd/Standaard-Design-Library---Desktop?type=design&amp;node-id=1222%3A39437&amp;t=nLmwomuRhjnfhbCa-1" class="utrecht-link utrecht-link--html-a">Figma</a></li>
+               <li><a href="https://github.com/amsterdam/design-system" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/Amsterdam/design-system/tree/develop/packages/css/src/components" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h4 id="den-haag" class="utrecht-heading-4">Den Haag</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://nl-design-system.github.io/denhaag/?path=/story/den-haag-introduction--page" class="utrecht-link utrecht-link--html-a">Storybook</a></li>
+               <li><a href="https://www.figma.com/file/JpoY3waVoQGlLQzQXTL9nn/" class="utrecht-link utrecht-link--html-a">Figma - Huidig</a></li>
+               <li><a href="https://www.figma.com/file/x4RkF6BIdrNZbh7D53NTzB/%F0%9F%92%A0-NLDS---Den-Haag---Bibliotheek?type=design&amp;node-id=197%3A664&amp;mode=design&amp;t=F9Lon3x3TsDbzI9q-1" class="utrecht-link utrecht-link--html-a">Figma - WIP</a></li>
+               <li><a href="https://github.com/nl-design-system/denhaag" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/nl-design-system/denhaag/tree/main/components" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h4 id="dso" class="utrecht-heading-4">DSO</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://www.dso-toolkit.nl/" class="utrecht-link utrecht-link--html-a">Documentatie website</a></li>
+               <li>Storybook bekijken via documentatie website.</li>
+               <li><a href="https://github.com/dso-toolkit/dso-toolkit" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/dso-toolkit/dso-toolkit/tree/master/packages/dso-toolkit/src/components" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h4 id="duo" class="utrecht-heading-4">DUO</h4>
+              <p><a href="https://uno.dfront.rijkscloud.nl/" class="utrecht-link utrecht-link--html-a">Documentatie website</a></p>
+              <h4 id="open-formulieren" class="utrecht-heading-4">Open Formulieren</h4>
+              <p><a href="https://open-formulieren.github.io/open-forms-sdk/?path=/docs/introduction--docs" class="utrecht-link utrecht-link--html-a">Storybook</a></p>
+              <h4 id="opengemeenten" class="utrecht-heading-4">OpenGemeenten</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://componenten.lenteveld.nl/" class="utrecht-link utrecht-link--html-a">Documentatie website</a></li>
+               <li><a href="https://patternlab.lenteveld.nl/index.html" class="utrecht-link utrecht-link--html-a">Patternlab</a></li>
+              </ul>
+              <p>Gebruik in Patternlab het linkadres van de <code class="utrecht-code">h2</code> of <code class="utrecht-code">h3</code> om naar een specifiek onderdeel te linken.</p>
+              <h4 id="rotterdam" class="utrecht-heading-4">Rotterdam</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://nl-design-system.github.io/rotterdam/?path=/docs/rotterdam-rotterdam-design-system--docs" class="utrecht-link utrecht-link--html-a">Storybook</a></li>
+               <li><a href="https://www.figma.com/design/RiVsTfcbmnKSU2BGqQBI9n/RODS-fundament?m=auto&amp;node-id=37-1964&amp;t=4HB7uIyaVunmBW6Z-1" class="utrecht-link utrecht-link--html-a">Figma - Fundament</a></li>
+               <li><a href="https://www.figma.com/design/iWuQsxelJzXVfCge87Og81/RODS-component?m=auto&amp;node-id=0-1&amp;t=uSL3DDt2TD2JBfoT-1" class="utrecht-link utrecht-link--html-a">Figma - Component</a></li>
+               <li><a href="https://github.com/nl-design-system/rotterdam" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/nl-design-system/rotterdam/tree/main/packages/components-css" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h4 id="rvo" class="utrecht-heading-4">RVO</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://nl-design-system.github.io/rvo/docs/" class="utrecht-link utrecht-link--html-a">Documentatie website</a></li>
+               <li><a href="https://nl-design-system.github.io/rvo/?path=/docs/introductie--docs" class="utrecht-link utrecht-link--html-a">Storybook</a></li>
+               <li><a href="https://www.figma.com/file/Sj6myBL1Fvot5M1qGxzvEo/ROOS-(RVO-Design-System)?type=design&amp;node-id=484-13305&amp;t=vZTjQBvAiufxd5Qs-0" class="utrecht-link utrecht-link--html-a">Figma</a></li>
+               <li><a href="https://github.com/nl-design-system/rvo" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/nl-design-system/rvo/tree/master/components" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h4 id="utrecht" class="utrecht-heading-4">Utrecht</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://nl-design-system.github.io/utrecht/" class="utrecht-link utrecht-link--html-a">Documentatie website</a></li>
+               <li><a href="https://nl-design-system.github.io/utrecht/storybook/?path=/docs/utrecht-readme--docs" class="utrecht-link utrecht-link--html-a">Storybook</a></li>
+               <li><a href="https://www.figma.com/file/UXIHcIurAD8hyoBWx4hDBV/NLDS---Gemeente-Utrecht---Bibliotheek?type=design&amp;node-id=197%3A664&amp;mode=design&amp;t=QPCkq0xOt8SFquC4-1" class="utrecht-link utrecht-link--html-a">Figma</a></li>
+               <li><a href="https://github.com/nl-design-system/utrecht" class="utrecht-link utrecht-link--html-a">GitHub</a> (<a href="https://github.com/nl-design-system/utrecht/tree/main/components" class="utrecht-link utrecht-link--html-a">CSS componenten</a>)</li>
+              </ul>
+              <h3 id="bevindingen-vastleggen" class="utrecht-heading-3">Bevindingen vastleggen</h3>
+              <p>Voeg per organisatie een losse comment toe aan de GitHub Discussion. Gebruik onderstaande tekst als basis.</p>
+              <span hidden="" id=":Rl2hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rl2hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> {naam-organisatie}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Links naar component implementatie (niet verplicht) --&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token list punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain"> </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Documentatie website</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-documentatie-website}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token list punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain"> </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Storybook</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-storybook}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token list punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain"> </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Figma</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-figma}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token list punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain"> </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token hr punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">###</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Screenshots / Varianten</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token bold content" style="font-weight:bold">{Omgeving}</span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{naam-variant}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{Rationale variant}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">{Screenshot}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token hr punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">###</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Notities</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!--</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">- Vul aan waar nodig.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">- Laat weg wat niet van toepassing is.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">- Noteer wat je opvalt.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - Zijn er specifieke opties (properties) beschikbaar?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - Zijn er specifieke design keuzes gemaakt?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - Is er documentatie beschikbaar?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - Heeft de component een andere naam?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - Is er onderzoek beschikbaar?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  - etc.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic"> --&gt;</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Bruikbaar</p>
+              <h2 id="link-beschikbaar-naar-component-in-figma-of-storybook-met-alle-belangrijke-states-en-varianten" class="utrecht-heading-2">Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten</h2>
+              <p>Doel: Er is niet alleen een schets beschikbaar, maar tenminste één uitgewerkte implementatie.</p>
+              <p>In de stap <a href="#bevindingen-vastleggen" class="utrecht-link utrecht-link--html-a">Bevindingen vastleggen</a> zijn er waarschijnlijk al links beschikbaar. Dan is deze stap al gedaan. Voeg anders een linkje van je eigen implementatie in Figma of Storybook toe in de discussion. Zorg ervoor dat dit linkje te bekijken is zonder in te loggen.</p>
+              <p><strong>🚩 Checkpoint</strong>: Link</p>
+              <h2 id="naam-en-beschrijving-van-benodigde-varianten-bepaald" class="utrecht-heading-2">Naam en beschrijving van benodigde varianten bepaald</h2>
+              <p>Doel: Alleen varianten die algemeen nut hebben zijn vastgelegd. Daarnaast is het duidelijk waarvoor de variant bedoeld is.</p>
+              <p>In de stap <a href="#bevindingen-vastleggen" class="utrecht-link utrecht-link--html-a">Bevindingen vastleggen</a> zijn er waarschijnlijk al beschrijvingen van varianten beschikbaar. Dan is deze stap al gedaan.</p>
+              <p>Noteer anders de naam en beschrijving van de algemeen nuttige varianten. Als je twijfelt over de rationale van een variant kun je de betreffende organisatie eventueel om aanvullende toelichting vragen. Als je twijfelt over het algemeen nut van een variant kun je deze altijd later nog toevoegen.</p>
+              <p><strong>🚩 Checkpoint</strong>: Varianten</p>
+              <h2 id="nut-van-component-is-onderbouwd-door-gebruikersonderzoek" class="utrecht-heading-2">Nut van component is onderbouwd door gebruikersonderzoek</h2>
+              <p>Doel: We kunnen aantonen dat dit een component is dat voor eindgebruikers werkt.</p>
+              <p>Zijn er inzichten rondom de component beschikbaar omdat deze een rol heeft gespeeld bij gebruikersonderzoek? Super! Daarnaast kun je &#x27;desk-research&#x27; doen om inzichten en &#x27;best-practices&#x27; te verzamelen.</p>
+              <p>Kijk bijvoorbeeld bij:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://gebruikersonderzoeken.nl/" class="utrecht-link utrecht-link--html-a">gebruikersonderzoeken.nl</a></li>
+               <li><a href="https://www.nngroup.com/" class="utrecht-link utrecht-link--html-a">nngroup.com</a></li>
+               <li><a href="https://baymard.com/" class="utrecht-link utrecht-link--html-a">baymard.com</a></li>
+               <li><a href="https://github.com/orgs/alphagov/projects/43/views/1" class="utrecht-link utrecht-link--html-a">GOV.UK - Discussions</a></li>
+              </ul>
+              <p>Plaats verwijzingen naar onderzoek onderaan in de beschrijving van de GitHub Discussion. Noteer deze als volgt:</p>
+              <span hidden="" id=":Rpahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rpahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> Onderzoek</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Titel - Afzender</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">url</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Korte beschrijving</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Titel - Afzender</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">url</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Korte beschrijving</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Titel - Afzender (PDF, 124 kb)</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">url</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Korte beschrijving</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Onderzoek</p>
+              <h2 id="nut-van-component-is-door-het-kernteam-bevestigd" class="utrecht-heading-2">Nut van component is door het kernteam bevestigd</h2>
+              <p>Doel: kernteam verwacht dat dit component tot Hall of Fame kan komen.</p>
+              <p>Dit is het moment om de component in zijn geheel nog eens af te stemmen met het kernteam. Deel een link naar de GitHub Discussion met het kernteam via Slack. Na akkoord voert het kernteam de laatste stap uit.</p>
+              <p>Stuur dit bericht naar #nl-design-system op Slack:</p>
+              <span hidden="" id=":Rqqhralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rqqhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Hiep hoi!</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Het is zover, de volgende component is helemaal klaar voor een Help Wanted stempel.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Naam: </span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token bold content" style="font-weight:bold">{naam-component}</span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Beschrijving: </span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token bold content" style="font-weight:bold">{beschrijving-component}</span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Er is nog 1 stap over, namelijk: verwachten we dat deze in de Hall of Fame zou kunnen komen? Laat het weten via een emoticon.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🤩 Top, doen! (hetzelfde als niets zeggen).</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">😭 Nee, deze moet nooit naar de Hall of Fame.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🤨 Ik snap de naam of het nut niet.</span>
+</span></code></pre>
+              <h3 id="kernteam-hakt-knoop-door" class="utrecht-heading-3">Kernteam hakt knoop door</h3>
+              <p>Deze stap kan enkel worden uitgevoerd door het kernteam.</p>
+              <p>Iedereen mag wat vinden, maar de verschillende specialismes uit het kernteam moeten wat vinden. Dus post een link naar het &#x27;Hiep hoi&#x27; bericht in het #nl-design-system-kernteam kanaal. Je kan <code class="utrecht-code">@here</code> gebruiken om iedereen even wakker te schudden.</p>
+              <p>Het kernteam bespreekt de component aan het eind van de eerstvolgende &#x27;Weekly&#x27;. Eventueel benodigde acties worden ter plekke doorgevoerd of voor een volgende sprint vastgelegd.</p>
+              <h4 id="akkoord" class="utrecht-heading-4">Akkoord?</h4>
+              <p>Ga verder bij <a href="#status-bijgewerkt-naar-help-wanted" class="utrecht-link utrecht-link--html-a">Status naar Help Wanted</a>.</p>
+              <p><strong>🚩 Checkpoint</strong>: Kernteam = &#x27;Done&#x27;</p>
+              <h4 id="niet-akkoord" class="utrecht-heading-4">Niet akkoord?</h4>
+              <p>Plaats deze tekst in de &#x27;thread&#x27; van het &#x27;Hiep hoi&#x27; bericht, vul aan waar nodig.</p>
+              <span hidden="" id=":Rtahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rtahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">❌ Het kernteam heeft besloten dat de naam en beschrijving van dit component duidelijk zijn, maar niet voldoende nuttig is voor meerdere organisaties.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Dit hoeft niet te betekenen dat {naam-component} nooit de Help Wanted status krijgt. De </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Kernteam = &#x27;Declined&#x27;</p>
+              <h2 id="status-bijgewerkt-naar-help-wanted" class="utrecht-heading-2">Status bijgewerkt naar Help Wanted</h2>
+              <p>Doel: iedereen kan zien dat de component nu richting Community wil.</p>
+              <p>Deze stap kan enkel worden uitgevoerd door het kernteam.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voeg het &#x27;Help Wanted&#x27; label toe aan de GitHub Discussion.</li>
+               <li>Voeg het &#x27;Help Wanted&#x27; label toe aan het backlog issue.</li>
+               <li>
+                Selecteer bij ‘Projects’ de volgende extra projecten:<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Components - 2 - Community</li>
+                 <li>Components - 3 - Candidate</li>
+                 <li>Components - 4 - Hall of Fame</li>
+                </ul>
+               </li>
+               <li>Filter het <a href="https://github.com/orgs/nl-design-system/projects/29/views/1" class="utrecht-link utrecht-link--html-a">Community bord</a> op de component door op <code class="utrecht-code">{naam-component}</code> te zoeken.</li>
+               <li>Kopieer de URL na het filteren.</li>
+               <li>Voeg onderstaande tekst toe als comment aan de GitHub Discussion.</li>
+              </ul>
+              <span hidden="" id=":Ruqhralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Ruqhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> ✨ Dit component is nu Help Wanted ✨</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help je mee hem door de Community stappen te krijgen?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">{naam-component} op het Community bord</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-community-bord}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Status</p>
+              <h2 id="vindbaar-op-de-nl-design-system-website" class="utrecht-heading-2">Vindbaar op de NL Design System website</h2>
+              <p>Doel: Hierdoor kan de component worden opgepakt door de community.</p>
+              <p>Deze stap kan enkel worden uitgevoerd door het kernteam.</p>
+              <h3 id="schematische-afbeelding-maken" class="utrecht-heading-3">Schematische afbeelding maken</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Maak een schematische afbeelding in het <a href="https://www.figma.com/file/0Y9Tbb373u6QGxGT6mqUnm/NLDS---Doc-website---Afbeeldingen?type=design&amp;node-id=606-943&amp;mode=design" class="utrecht-link utrecht-link--html-a">&#x27;Doc website - Afbeeldingen&#x27; Figma bestand</a>.</li>
+               <li>Gebruik als naam voor het frame <code class="utrecht-code">componenten_overzicht_{naam-component}</code>.</li>
+               <li>Exporteer de afbeelding als SVG-bestand.</li>
+              </ul>
+              <h3 id="branch-klaar-zetten" class="utrecht-heading-3">Branch klaar zetten</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Open de <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">documentatie repository</a> in Visual Studio Code.</li>
+               <li>Maak een nieuwe branch aan. Gebruik hiervoor de volgende naam:</li>
+              </ul>
+              <p><strong>Branch</strong></p>
+              <span hidden="" id=":R11ahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R11ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">feat/add-documentation-page-for-{naam-component}</span>
+</span></code></pre>
+              <h3 id="schematische-afbeelding-bewerken-en-toevoegen" class="utrecht-heading-3">Schematische afbeelding bewerken en toevoegen</h3>
+              <p>Doorloop de volgende stappen om de schematische afbeelding mee te laten kleuren met de statussen van het Estafettemodel.</p>
+              <p><strong>Tip!</strong> Installeer in Visual Studio Code de extensie &#x27;SVG&#x27; ontwikkeld door Jock.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga naar de <a href="https://github.com/nl-design-system/documentatie/tree/main/static/svg" class="utrecht-link utrecht-link--html-a">folder &#x27;static/svg&#x27;</a>.</li>
+               <li>Sleep het SVG-bestand in deze folder. De code van het SVG-bestand wordt zichtbaar.</li>
+               <li>Ga naar &#x27;View&#x27; in de hoofdnavigatie en open &#x27;Command Palette...&#x27;.</li>
+               <li>Typ &#x27;svg&#x27; en kies voor &#x27;Preview SVG&#x27; om de visuele weergave van het SVG-bestand te bekijken.</li>
+               <li>
+                Had je de extensie al geïnstalleeerd, maar is de code niet direct zichtbaar?<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Klik met de rechtermuisknop op de bestandsnaam in het linkerpaneel.</li>
+                 <li>Kies ‘Open With…’ en selecteer ‘Text Editor’ om de code te openen.</li>
+                </ul>
+               </li>
+               <li>
+                Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li><code class="utrecht-code">#FFF3EA</code> wordt <code class="utrecht-code">var(--component-illustration-background-color, white)</code>.</li>
+                 <li><code class="utrecht-code">#FAD6BA</code> wordt <code class="utrecht-code">var(--component-illustration-grid-color, #EEE)</code>.</li>
+                 <li><code class="utrecht-code">#46280D</code> wordt <code class="utrecht-code">var(--component-illustration-color, #666)</code>.</li>
+                 <li><code class="utrecht-code">white</code> wordt <code class="utrecht-code">var(--component-illustration-background-color, white)</code>.</li>
+                </ul>
+               </li>
+              </ul>
+              <p><strong>Tip!</strong> Met de toetscombinatie <code class="utrecht-code">Cmd+D</code> (of <code class="utrecht-code">Ctrl+D</code>) kun je stukjes code selecteren die overeenkomen met je huidige selectie. Let wel op met het selecteren van <code class="utrecht-code">white</code>. Die term komt ook voor als fallback in de eerste token.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                Voeg de volgende stukjes code toe om het SVG-bestand dynamisch in te laden.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Op de 2e regel, direct na <code class="utrecht-code">&lt;svg...</code>, plak je <code class="utrecht-code">&lt;symbol id=&quot;component-illustration&quot;&gt;</code>.</li>
+                 <li>Op de voorlaatste regel, vlak voor <code class="utrecht-code">&lt;/svg&gt;</code>, plak je <code class="utrecht-code">&lt;/symbol&gt;</code>.</li>
+                 <li>Direct daaronder, ook weer vlak voor <code class="utrecht-code">&lt;/svg&gt;</code>, plak je <code class="utrecht-code">&lt;use href=&quot;#component-illustration&quot;/&gt;</code>.</li>
+                </ul>
+               </li>
+               <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
+              </ul>
+              <p><strong>Commit Message</strong></p>
+              <span hidden="" id=":R13ahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R13ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">feat: add illustration for {naam-component}</span>
+</span></code></pre>
+              <h3 id="documentatie-pagina-toevoegen" class="utrecht-heading-3">Documentatie pagina toevoegen</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga naar de <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/componenten" class="utrecht-link utrecht-link--html-a">folder &#x27;docs/componenten&#x27;</a>.</li>
+               <li>Voeg een nieuwe folder toe voor de component en gebruik hiervoor kebab-case als schrijfwijze.</li>
+               <li>Maak een nieuw bestand aan en noem het &#x27;index.mdx&#x27;.</li>
+               <li>Vul het bestand in volgens <a href="https://raw.githubusercontent.com/nl-design-system/documentatie/main/docs/componenten/_template.mdx" class="utrecht-link utrecht-link--html-a">de component template</a>.</li>
+               <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
+              </ul>
+              <p><strong>Commit Message</strong></p>
+              <span hidden="" id=":R14ahralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R14ahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">feat: add documentation page for {naam-component}</span>
+</span></code></pre>
+              <h3 id="component-progress-bijwerken" class="utrecht-heading-3">Component progress bijwerken</h3>
+              <p><strong>Tip!</strong> Voordat je de component progress gaat bijwerken is het handig om te controleren of alle checkpoints op het <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">Help Wanted bord</a> op groen staan. Checkpoint &#x27;nldesignsystem.nl&#x27; mag je nu ook alvast op &#x27;Done&#x27; zetten.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package door op <code class="utrecht-code">Run Workflow</code> te klikken in <a href="https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml" class="utrecht-link utrecht-link--html-a">GitHub Actions van de Index repository</a>. Kies hierbij voor de <code class="utrecht-code">main</code> branch.</li>
+               <li>Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">component-progress op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.</li>
+               <li>Update <code class="utrecht-code">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch <code class="utrecht-code">pnpm install @nl-design-system/component-progress@latest --save-dev -w</code> te draaien. Dit update de devDependency en de lockfile.</li>
+               <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
+              </ul>
+              <p><strong>Commit Message</strong></p>
+              <span hidden="" id=":R15ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R15ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build: update component progress</span>
+</span></code></pre>
+              <h3 id="branch-publiceren" class="utrecht-heading-3">Branch publiceren</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Publiceer je branch naar GitHub om een pull request (PR) aan te maken.</li>
+               <li>Ga naar GitHub en gebruik de volgende opzet voor je PR:</li>
+              </ul>
+              <p><strong>Title</strong></p>
+              <span hidden="" id=":R16ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R16ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">docs: add {naam-component} to documentation site</span>
+</span></code></pre>
+              <p><strong>Description</strong></p>
+              <span hidden="" id=":R172hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R172hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- add illustration for {naam-component}.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- add documentation page for {naam-component}.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">- update component progress.</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Create Pull Request&#x27;.</li>
+               <li>Geef een developer uit het kernteam via Slack een seintje dat de PR klaar staat.</li>
+              </ul>
+              <p><strong>🚩 Checkpoint</strong>: nldesignsystem.nl</p>
+              <h2 id="-finish" class="utrecht-heading-2">🏁 Finish</h2>
+              <p>Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/27/views/1" class="utrecht-link utrecht-link--html-a">&#x27;Help Wanted&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. De component gaat nu door voor de &#x27;Community&#x27; status. Het is goed om dit ook met de rest van de community te delen.</p>
+              <p>Plaats deze tekst in de &#x27;thread&#x27; van het &#x27;Hiep hoi&#x27; bericht, vul aan waar nodig.</p>
+              <span hidden="" id=":R18ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R18ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✅ Het kernteam heeft besloten dat de naam en beschrijving van dit component duidelijk zijn en de component algemeen nuttig is voor meerdere organisaties.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✨ </span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token bold content" style="font-weight:bold">Dit component is nu Help Wanted</span><span class="token bold punctuation" style="font-weight:bold;color:var(--nlds-code-block-punctuation-color)">**</span><span class="token plain"> ✨</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help je mee hem door de Community stappen te krijgen?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">{naam-component} op het Community bord</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-community-bord}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">De </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> blijft beschikbaar voor het delen van voorbeelden, varianten en gebruikersonderzoek.</span>
+</span></code></pre>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/component-bijdragen/help-wanted-stappenplan.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_QIdz" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_ka3N"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/estafettemodel/componenten/definition-of-done"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Definition of Done</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/estafettemodel/componenten/community-stappenplan"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Community</div></a
+             >
+            </nav>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

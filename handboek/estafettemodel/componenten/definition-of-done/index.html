@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/component-bijdragen/definition-of-done" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">Definition of Done voor componenten · Component bijdragen · Handboek · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Definition of Done voor componenten · Component bijdragen · Handboek · NL Design System" />
+  <meta data-rh="true" name="description" content="Definition of Done voor componenten" />
+  <meta data-rh="true" property="og:description" content="Definition of Done voor componenten" />
+  <meta data-rh="true" name="keywords" content="componenten,design system,estafettemodel,definition of done" />
+  <link data-rh="true" rel="icon" href="/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.53f6f0cb.css" />
+  <script src="/assets/js/runtime~main.9e7eb22e.js" defer="defer"></script>
+  <script src="/assets/js/main.7e625619.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute('data-theme', t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem('theme');
+      } catch (t) {}
+     })();
+    t(null !== e ? e : 'light');
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_uOWr" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a aria-current="page" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link navbar__link--active" href="/handboek">Handboek</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/richtlijnen">Richtlijnen</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/componenten/">Componenten</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/voorbeelden/">Voorbeelden</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/community">Community</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div class="nav-search-bar">
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" aria-label="Zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_DcPu">
+     <div class="docsWrapper_Dh2W">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_y2Un" type="button"></button>
+      <div class="docRoot_kCcV">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_xdMa">
+        <div class="sidebarViewport_qyvf">
+         <div class="sidebar sidebarWithHideableNavbar sidebarWithNavbar">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" class="sidebar__content">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/introductie">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel">Estafettemodel</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/huisstijl-vastleggen/overzicht">Huisstijl vastleggen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Huisstijl vastleggen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/component-bijdragen/overzicht">Componenten bijdragen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Componenten bijdragen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/handboek/estafettemodel/componenten/definition-of-done">Definition of Done</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/help-wanted-stappenplan">Help Wanted</a></li>
+                 <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                  <div class="menu__list-item-collapsible">
+                   <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/estafettemodel/componenten/community-stappenplan">Community</a
+                   ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Community&#x27;">
+                    <span aria-hidden="true" class="utrecht-icon"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                    ></span>
+                   </button>
+                  </div>
+                 </li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/candidate-stappenplan">Candidate</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel/componenten/hall-of-fame-stappenplan">Hall of Fame</a></li>
+                </ul>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/designer/overzicht">Voor designers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor designers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/developer/overzicht">Voor developers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor developers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht">Voor organisaties</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor organisaties&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/leverancier/introductie">Voor leveranciers</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/manager/introductie">Voor managers</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/baseline/">Baseline</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Baseline&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/woordenlijst">Woordenlijst</a></li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_HqCc">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col">
+           <div class="docItemContainer_PI1c">
+            <article>
+             <div class="breadcrumbs breadcrumbs--desktop">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs" aria-labelledby=":R15ralaqh:">
+               <h2 class="utrecht-heading-2 utrecht-breadcrumb-nav__heading" id=":R15ralaqh:" aria-hidden="true">breadcrumb</h2>
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Handboek</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/estafettemodel/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Componenten bijdragen</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Definition of Done</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs breadcrumbs--mobile">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/handboek/introductie"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Handboek</a
+               >
+              </p>
+             </div>
+             <div class="theme-doc-markdown">
+              <!-- -->
+              <!-- -->
+              <h1 id="definition-of-done" class="utrecht-heading-1">Definition of Done</h1>
+              <p>Het NL Design System kent voor elke component vier verschillende statussen: &#x27;Help Wanted&#x27;, &#x27;Community&#x27;, &#x27;Candidate&#x27; en &#x27;Hall of Fame&#x27;. Voor elk van deze statussen kun je een Definition of Done opstellen, waarbij het ultime doel van de &#x27;Hall of Fame&#x27; status helemaal af is. Een &#x27;Hall of Fame&#x27; component moet dus aan alle checks voldoen van &#x27;Help Wanted&#x27; tot en met &#x27;Hall of Fame&#x27;.</p>
+              <h2 id="estafettemodel" class="utrecht-heading-2">Estafettemodel</h2>
+              <p>De componenten van NL Design System worden met een <a href="&#x27;/handboek/estafettemodel&#x27;" class="utrecht-link utrecht-link--html-a">estafette aanpak</a> gemaakt. Daarom kan een component een van de volgende statussen hebben:</p>
+              <dl class="status-visual">
+               <div class="status-visual__status status-visual__status--help-wanted">
+                <dt class="status-visual__title">Help Wanted</dt>
+                <dd class="status-visual__description">Klaar om van de backlog opgepakt te worden</dd>
+               </div>
+               <div class="status-visual__status status-visual__status--community">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icon status-visual__connector"><path d="M7 0C7.55228 0 8 0.447715 8 1L7.73285 14.3196L7.73487 14.3218L8 1V12.5858L12.2929 8.29289C12.6834 7.90237 13.3166 7.90237 13.7071 8.29289C14.0976 8.68342 14.0976 9.31658 13.7071 9.70711L7.70731 15.7069L7.70498 15.7092C7.60959 15.8041 7.49984 15.8757 7.38275 15.9241C7.2675 15.9719 7.14137 15.9988 7.00911 16L7.003 16L7 16L6.997 16L6.99235 16C6.85955 15.999 6.7329 15.9721 6.61722 15.9241C6.50195 15.8764 6.3938 15.8063 6.29945 15.7136L6.29289 15.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289C0.683417 7.90237 1.31658 7.90237 1.70711 8.29289L6 12.5858V1C6 0.447715 6.44772 0 7 0Z"></path></svg>
+                <dt class="status-visual__title">Community</dt>
+                <dd class="status-visual__description">Door de community gebouwd volgens NL Design System richtlijnen</dd>
+               </div>
+               <div class="status-visual__status status-visual__status--unstable">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icon status-visual__connector"><path d="M7 0C7.55228 0 8 0.447715 8 1L7.73285 14.3196L7.73487 14.3218L8 1V12.5858L12.2929 8.29289C12.6834 7.90237 13.3166 7.90237 13.7071 8.29289C14.0976 8.68342 14.0976 9.31658 13.7071 9.70711L7.70731 15.7069L7.70498 15.7092C7.60959 15.8041 7.49984 15.8757 7.38275 15.9241C7.2675 15.9719 7.14137 15.9988 7.00911 16L7.003 16L7 16L6.997 16L6.99235 16C6.85955 15.999 6.7329 15.9721 6.61722 15.9241C6.50195 15.8764 6.3938 15.8063 6.29945 15.7136L6.29289 15.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289C0.683417 7.90237 1.31658 7.90237 1.70711 8.29289L6 12.5858V1C6 0.447715 6.44772 0 7 0Z"></path></svg>
+                <dt class="status-visual__title">Candidate</dt>
+                <dd class="status-visual__description">NL Design System component, maar is nog in ontwikkeling</dd>
+               </div>
+               <div class="status-visual__status status-visual__status--stable">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icon status-visual__connector"><path d="M7 0C7.55228 0 8 0.447715 8 1L7.73285 14.3196L7.73487 14.3218L8 1V12.5858L12.2929 8.29289C12.6834 7.90237 13.3166 7.90237 13.7071 8.29289C14.0976 8.68342 14.0976 9.31658 13.7071 9.70711L7.70731 15.7069L7.70498 15.7092C7.60959 15.8041 7.49984 15.8757 7.38275 15.9241C7.2675 15.9719 7.14137 15.9988 7.00911 16L7.003 16L7 16L6.997 16L6.99235 16C6.85955 15.999 6.7329 15.9721 6.61722 15.9241C6.50195 15.8764 6.3938 15.8063 6.29945 15.7136L6.29289 15.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289C0.683417 7.90237 1.31658 7.90237 1.70711 8.29289L6 12.5858V1C6 0.447715 6.44772 0 7 0Z"></path></svg>
+                <dt class="status-visual__title">Hall of Fame</dt>
+                <dd class="status-visual__description">NL Design System component volgens onze Definition of Done</dd>
+               </div>
+              </dl>
+              <h3 id="help-wanted" class="utrecht-heading-3">Help Wanted</h3>
+              <p>Dit component of deze variatie bestaat nog niet, maar het nut ervan is duidelijk, elke organisatie die hem nodig heeft kan hem ontwikkelen volgens NL Design System architectuur:</p>
+              <h4 id="1-duidelijk-waar-het-over-gaat" class="utrecht-heading-4">1. Duidelijk waar het over gaat</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Naam bepaald op basis van NL Design System naamgeving.</li>
+               <li>Component kort beschreven.</li>
+               <li>Afbeelding gemaakt om de component visueel duidelijk te maken.</li>
+               <li>Aangemaakt als een <a href="https://github.com/orgs/nl-design-system/discussions" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a>.</li>
+               <li>Staat in de <a href="https://github.com/nl-design-system/backlog/issues" class="utrecht-link utrecht-link--html-a">publieke backlog van NL Design System</a>.</li>
+               <li>Bewijs verzameld dat de component algemeen bruikbaar is.</li>
+               <li>Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.</li>
+               <li>Naam en doel van benodigde varianten beschreven.</li>
+              </ul>
+              <h4 id="2-besluit-of-het-onderdeel-van-nl-design-system-moet-worden" class="utrecht-heading-4">2. Besluit of het onderdeel van NL Design System moet worden</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Nut van component is onderbouwd door gebruikersonderzoek (eigen of van anderen).</li>
+               <li>Nut van component is door het kernteam bevestigd.</li>
+              </ul>
+              <h4 id="3-kernteam-zet-component-op-help-wanted" class="utrecht-heading-4">3. Kernteam zet component op Help Wanted</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Vindbaar op de NL Design System website.</li>
+               <li>Status bijgewerkt naar Help Wanted.</li>
+              </ul>
+              <p>Bekijk de status op <a href="https://github.com/orgs/nl-design-system/projects/27" class="utrecht-link utrecht-link--html-a">het projectbord voor de Help Wanted componenten</a>.</p>
+              <h3 id="community" class="utrecht-heading-3">Community</h3>
+              <p>Dit component bestaat in de community, op één of meer plekken. Om bij NL Design System als &#x27;Community component&#x27; genoemd te worden moet de component naast alle &#x27;Help Wanted&#x27; criteria aan de volgende voorwaarden voldoen:</p>
+              <h4 id="1-component-voldoet-aan-nl-design-system-architectuur" class="utrecht-heading-4">1. Component voldoet aan NL Design System architectuur</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Beschikbaar in CSS.</li>
+               <li>Publiek in beschikbaar in Storybook.</li>
+               <li>Implementatie voldoet aan naam en doel uit de GitHub Discussion.</li>
+               <li>Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd.</li>
+               <li>API&#x27;s zoals design tokens hebben een prefix van de verantwoordelijke organisatie.</li>
+               <li>Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System.</li>
+               <li>EUPL-1.2 licentie toegepast.</li>
+               <li>Documentatie heeft de Creative Commons 0 licentie (CC0).</li>
+              </ul>
+              <h4 id="2-kernteam-maakt-component-beschikbaar-voor-hergebruik" class="utrecht-heading-4">2. Kernteam maakt component beschikbaar voor hergebruik</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Beschikbaar in de <a href="https://nl-design-system.github.io/themes/" class="utrecht-link utrecht-link--html-a">Storybook met alle NL Design System thema&#x27;s</a>.</li>
+               <li>Visuele regressietests zijn beschikbaar in de Thema Storybook.</li>
+               <li>Beschikbaar in de NL Design System Figma bibliotheek.</li>
+               <li>Beschikbaar in de NL Design System Component assessment (Figma).</li>
+              </ul>
+              <h4 id="3-kernteam-zet-component-op-community" class="utrecht-heading-4">3. Kernteam zet component op Community</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Status bijgewerkt naar Community.</li>
+               <li>Informatie van de component bijgewerkt op nldesignsystem.nl</li>
+               <li>Gebruik van component uit de community gepromoot.</li>
+              </ul>
+              <p>Bekijk de status op <a href="https://github.com/orgs/nl-design-system/projects/29" class="utrecht-link utrecht-link--html-a">het projectbord voor de Community componenten</a>.</p>
+              <h3 id="candidate" class="utrecht-heading-3">Candidate</h3>
+              <p>Dit component is opgenomen in de <code class="utrecht-code">@nl-design-system-unstable</code> organisatie. Het kernteam verwacht dat de component uiteindelijk een Hall of Fame status krijgt, maar kan nog niet garanderen dat API&#x27;s niet wijzigen of er onverhoopt een ander vergelijkbaar component voor in de plaats komt. De component moet mogelijk nog extra goed getest en stabiel gemaakt worden. Omdat de component door het kernteam onderhouden wordt voldoet het, naast de meeste Community DoD eisen, al wel aan veel meer criteria voor stabiel hergebruik.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ingezet door 2 of meer organisaties met verschillende huisstijlen.</li>
+               <li>De NL Design System Figma bibliotheek komt overeen met de implementatie van de component in code wat betreft varianten, states, design tokens en naamgeving.</li>
+               <li>Aliassen van alternatieve namen voor de component zijn vastgelegd in documentatie.</li>
+               <li>Anatomie van de component is vastgelegd.</li>
+               <li>Component is, waar nodig, versimpeld of opgesplitst. Zodat er één of meerdere componenten over blijven met een duidelijke use case en documentatie.</li>
+               <li>Geen organisatie specifieke API&#x27;s meer, alle API&#x27;s zijn gebaseerd op een gemeenschappelijke use case.</li>
+               <li>API volgt conventies en is geprefixed met &#x27;nl&#x27;.</li>
+               <li>Design tokens volgen conventies en zijn geprefixed met &#x27;nl&#x27;.</li>
+               <li>Hergebruik van logische common tokens is geïmplementeerd om theming makkelijk te houden.</li>
+               <li>Alle design tokens zijn algemeen nuttig voor de thema&#x27;s van bestaande publieke organisaties.</li>
+               <li>Beschikbaar in de NL Design System Storybook.</li>
+               <li>Beschikbaar in de NL Design System Figma bibliotheek.</li>
+               <li>Component heeft dezelfde documentatie op de website en Storybook over gebruik.</li>
+               <li>Figma verwijst naar de documentatie op de website.</li>
+               <li>Storybook stories, Figma voorbeelden en unit tests hebben coverage van alle features.</li>
+               <li>Verwijzing beschikbaar naar extern gebruikersonderzoek die tot de keuze van dit component leiden.</li>
+               <li>Accessibility en inclusie documentatie beschikbaar voor de overwegingen die van toepassing zijn.</li>
+               <li>Semantiek (roles, names, states in HTML/ARIA) is goedgekeurd door het kernteam.</li>
+               <li>Implementatie en documentatie is op toegankelijkheid getest door leden van het kernteam.</li>
+               <li>Getest op geschiktheid voor internationalisatie.</li>
+               <li>Component kan omgaan met verschillende soorten content: bijvoorbeeld korte tekst, veel woorden, lange woorden, of juist ontbrekende content.</li>
+               <li>Codebase gebruikt linting en automatische code-formatting met Prettier volgens NL Design System configuraties.</li>
+               <li>Gepubliceerd op NPM in de scope: <code class="utrecht-code">@nl-design-system-unstable</code>.</li>
+               <li>Changelog wordt gepubliceerd bij nieuwe versies.</li>
+               <li>Documentatie is getest bij de doelgroepen en goed bevonden.</li>
+               <li>Status bijgewerkt naar naar Candidate.</li>
+              </ul>
+              <p>Bekijk de status op <a href="https://github.com/orgs/nl-design-system/projects/32" class="utrecht-link utrecht-link--html-a">het projectbord voor de Candidate componenten</a>.</p>
+              <h3 id="hall-of-fame" class="utrecht-heading-3">Hall of Fame</h3>
+              <p>Een component met deze status is bewezen door gebruikname in productie bij ten minste twee verschillende organisaties. De component is daarmee in gebruik getest, zowel door developers en designers als door eindgebruikers en heeft een toegankelijkheids audit succesvol doorlopen. Het gebruiksvriendelijk en toegankelijk gebruik van de component in context is goed gedocumenteerd, zodat developers en designers in staat zijn de component op de juiste manier in te zetten binnen hun eigen project. Ook kan je ervan uitgaan dat de API&#x27;s van de component, zoals design tokens en naamgeving stabiel blijven. Daarnaast worden updates vanaf nu voorzien van duidelijke changelogs en semantische versies die <code class="utrecht-code">breaking changes</code> goed communiceren.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Do&#x27;s en don&#x27;ts als documentatie beschikbaar.</li>
+               <li>Meegenomen in gebruikersonderzoek door de community of kernteam en inzichten beschikbaar.</li>
+               <li>Als HTML/CSS component beschikbaar.</li>
+               <li>Als Webcomponent beschikbaar.</li>
+               <li>Als React component beschikbaar.</li>
+               <li>API&#x27;s zijn opgenomen in unit tests.</li>
+               <li>Bij meerdere organisaties toegankelijk volgens audit.</li>
+               <li>Beschikbaar in NPM scope: <code class="utrecht-code">@nl-design-system</code>.</li>
+               <li><a href="https://semver.org" class="utrecht-link utrecht-link--html-a">Semantic versioning</a> is goed geregeld.</li>
+               <li>Geversioneerd in de NL Design System Figma bibliotheek.</li>
+               <li>Changelog voor Figma component is beschikbaar.</li>
+               <li>Changelog voor coded component is beschikbaar.</li>
+               <li>Richtlijnen voor invulling design tokens beschikbaar.</li>
+               <li>Richtlijnen voor redacteuren beschikbaar.</li>
+               <li>Risico&#x27;s met betrekking tot beveiliging (security) beschikbaar.</li>
+               <li>Risico&#x27;s met betrekking tot privacy (AVG) beschikbaar.</li>
+               <li>Succesvol getest met afnemers van design system: designers.</li>
+               <li>Succesvol getest met afnemers van design system: developers.</li>
+               <li>Succesvol getest met afnemers van design system: redacteuren.</li>
+               <li>Community (2+ organisaties) is geswitcht van eigen naar candidate component.</li>
+               <li>Status bijgewerkt naar naar Hall of Fame. 🍾</li>
+              </ul>
+              <p>Bekijk de status op <a href="https://github.com/orgs/nl-design-system/projects/30" class="utrecht-link utrecht-link--html-a">het projectbord voor de Hall of Fame componenten</a>.</p>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/component-bijdragen/definition-of-done.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_QIdz" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_ka3N"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/component-bijdragen/overzicht"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Componenten bijdragen</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/estafettemodel/componenten/help-wanted-stappenplan"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Help Wanted</div></a
+             >
+            </nav>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

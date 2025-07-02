@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/designer/werken-met-nl-design-system/figma-stappenplan" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.1.0" />
+  <title data-rh="true">Figma stappenplan · Designer · Handboek · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/designer/figma-stappenplan" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Figma stappenplan · Designer · Handboek · NL Design System" />
+  <meta data-rh="true" name="description" content="Een stappenplan om de NL Design System bibliotheken te gebruiken en eventueel een eigen thema door te voeren." />
+  <meta data-rh="true" property="og:description" content="Een stappenplan om de NL Design System bibliotheken te gebruiken en eventueel een eigen thema door te voeren." />
+  <meta data-rh="true" name="keywords" content="index,designer,meedoen,stappenplan,figma,design tokens" />
+  <link data-rh="true" rel="icon" href="/favicon.ico" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/designer/figma-stappenplan" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/designer/figma-stappenplan" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/designer/figma-stappenplan" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.53f6f0cb.css" />
+  <script src="/assets/js/runtime~main.9e7eb22e.js" defer="defer"></script>
+  <script src="/assets/js/main.7e625619.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <script>
+   !(function () {
+    function t(t) {
+     document.documentElement.setAttribute('data-theme', t);
+    }
+    var e =
+     (function () {
+      try {
+       return new URLSearchParams(window.location.search).get('docusaurus-theme');
+      } catch (t) {}
+     })() ||
+     (function () {
+      try {
+       return localStorage.getItem('theme');
+      } catch (t) {}
+     })();
+    t(null !== e ? e : 'light');
+   })(),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })();
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-document nlds-theme main-layout">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_uOWr" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
+     <div class="navbar__inner">
+      <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
+      <div class="navbar__items navbar__items--left"><a aria-current="page" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link navbar__link--active" href="/handboek">Handboek</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/richtlijnen">Richtlijnen</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/componenten/">Componenten</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/voorbeelden/">Voorbeelden</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/community">Community</a><a class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-link" href="/project">Project</a></div>
+      <div class="navbar__items navbar__items--right navbar__items--show-on-mobile">
+       <a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a navbar__item navbar__link utrecht-button-link utrecht-button--subtle utrecht-button-link--html-a navbar__item navbar__item--github-link" aria-label="GitHub repository"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12.0099 0C5.36875 0 0 5.49998 0 12.3042C0 17.7432 3.43994 22.3472 8.21205 23.9767C8.80869 24.0991 9.02724 23.7119 9.02724 23.3862C9.02724 23.1009 9.00757 22.1232 9.00757 21.1044C5.6667 21.8379 4.97099 19.6377 4.97099 19.6377C4.43409 18.2117 3.63858 17.8452 3.63858 17.8452C2.54511 17.0914 3.71823 17.0914 3.71823 17.0914C4.93117 17.1729 5.56763 18.3544 5.56763 18.3544C6.64118 20.2284 8.37111 19.6989 9.06706 19.3729C9.16638 18.5784 9.48473 18.0284 9.82275 17.7229C7.15817 17.4377 4.35469 16.3784 4.35469 11.6522C4.35469 10.3077 4.8316 9.20771 5.58729 8.35222C5.46807 8.04672 5.0504 6.78347 5.70677 5.09273C5.70677 5.09273 6.72083 4.76673 9.00732 6.35572C9.98625 6.08639 10.9958 5.94938 12.0099 5.94823C13.024 5.94823 14.0577 6.09097 15.0123 6.35572C17.299 4.76673 18.3131 5.09273 18.3131 5.09273C18.9695 6.78347 18.5515 8.04672 18.4323 8.35222C19.2079 9.20771 19.6652 10.3077 19.6652 11.6522C19.6652 16.3784 16.8617 17.4172 14.1772 17.7229C14.6148 18.1099 14.9924 18.8432 14.9924 20.0044C14.9924 21.6544 14.9727 22.9787 14.9727 23.3859C14.9727 23.7119 15.1915 24.0991 15.7879 23.9769C20.56 22.3469 23.9999 17.7432 23.9999 12.3042C24.0196 5.49998 18.6312 0 12.0099 0Z" /></svg
+       ></a>
+       <div class="nav-search-bar">
+        <button class="utrecht-button utrecht-button--subtle navbar__item navbar__item--show-on-mobile" type="button" aria-label="Zoeken">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z"></path></svg>
+        </button>
+       </div>
+      </div>
+     </div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_DcPu">
+     <div class="docsWrapper_Dh2W">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_y2Un" type="button"></button>
+      <div class="docRoot_kCcV">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_xdMa">
+        <div class="sidebarViewport_qyvf">
+         <div class="sidebar sidebarWithHideableNavbar sidebarWithNavbar">
+          <button class="utrecht-button utrecht-button--subtle sidebar__toggle-button" type="button" aria-controls=":Rllaqh:" aria-label="Verberg sidebar" aria-expanded="true">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-bar-to-left">
+            <path d="M10 12l10 0"></path>
+            <path d="M10 12l4 4"></path>
+            <path d="M10 12l4 -4"></path>
+            <path d="M4 4l0 16"></path>
+           </svg>
+           Verberg
+          </button>
+          <div id=":Rllaqh:" class="sidebar__content">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+            <ul class="theme-doc-sidebar-menu menu__list">
+             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+              <div class="menu__list-item-collapsible sidebar__main-category">Handboek</div>
+              <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/introductie">Introductie</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/estafettemodel">Estafettemodel</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/huisstijl-vastleggen/overzicht">Huisstijl vastleggen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Huisstijl vastleggen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/component-bijdragen/overzicht">Componenten bijdragen</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Componenten bijdragen&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/designer/overzicht">Voor designers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor designers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+                <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/introductie">Introductie</a></li>
+                 <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
+                  <div class="menu__list-item-collapsible">
+                   <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/designer/werken-met-nl-design-system">Werken met NL Design System</a
+                   ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Werken met NL Design System&#x27;">
+                    <span aria-hidden="true" class="utrecht-icon"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up"><path d="M6 15l6 -6l6 6"></path></svg
+                    ></span>
+                   </button>
+                  </div>
+                  <ul style="display: block; overflow: visible; height: auto" class="menu__list">
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/figma-structuur">Figma structuur</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link menu__link--active utrecht-link" aria-current="page" tabindex="0" href="/handboek/designer/figma-stappenplan">Figma stappenplan</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/figma-hygiene">Figma hygiëne</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/werken-met-figma-changelog">Werken met de Figma changelog</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/figma-changelog">Figma changelog</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/design-tokens-versiebeheer">Design tokens versiebeheer</a></li>
+                  </ul>
+                 </li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/zelf-thema-maken">Zelf een thema maken</a></li>
+                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/zelf-componenten-maken">Zelf componenten maken</a></li>
+                </ul>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/developer/overzicht">Voor developers</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor developers&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht">Voor organisaties</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Voor organisaties&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/leverancier/introductie">Voor leveranciers</a></li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/manager/introductie">Voor managers</a></li>
+               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+                <div class="menu__list-item-collapsible">
+                 <a class="utrecht-link utrecht-link--html-a menu__link utrecht-link menu__link--sublist" tabindex="0" href="/baseline/">Baseline</a
+                 ><button class="utrecht-button utrecht-button--subtle clean-btn" type="button" aria-label="Toggle the collapsible sidebar category &#x27;Baseline&#x27;">
+                  <span aria-hidden="true" class="utrecht-icon"
+                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg
+                  ></span>
+                 </button>
+                </div>
+               </li>
+               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/woordenlijst">Woordenlijst</a></li>
+              </ul>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_HqCc">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col">
+           <div class="docItemContainer_PI1c">
+            <article>
+             <div class="breadcrumbs breadcrumbs--desktop">
+              <nav class="utrecht-breadcrumb-nav utrecht-breadcrumb-nav--html-ol theme-doc-breadcrumbs" aria-labelledby=":R15ralaqh:">
+               <h2 class="utrecht-heading-2 utrecht-breadcrumb-nav__heading" id=":R15ralaqh:" aria-hidden="true">breadcrumb</h2>
+               <ol class="utrecht-breadcrumb-nav__list utrecht-breadcrumb-nav__list--html-ol" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="home" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Home</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Handboek</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/designer/introductie" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Voor designers</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a href="/handboek/designer/figma-structuur" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Werken met NL Design System</span></a>
+                </li>
+                <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
+                <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+                 <a role="link" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link utrecht-breadcrumb-nav__link--current utrecht-breadcrumb-nav__link--disabled" aria-disabled="true" rel="" aria-current="page" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Figma stappenplan</span></a>
+                </li>
+               </ol>
+              </nav>
+             </div>
+             <div class="breadcrumbs breadcrumbs--mobile">
+              <p class="utrecht-button-group">
+               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/handboek/designer/figma-structuur"
+                ><span aria-hidden="true" class="utrecht-icon"
+                 ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
+                >Werken met NL Design System</a
+               >
+              </p>
+             </div>
+             <div class="theme-doc-markdown">
+              <h1 id="figma-stappenplan" class="utrecht-heading-1">Figma stappenplan</h1>
+              <section class="utrecht-spotlight-section">
+               <p><strong>Let op!</strong> We werken momenteel aan een nieuwe versie van de Figma-bibliotheken. Daardoor kan de onderstaande documentatie afwijken van de werkelijkheid. In de komende weken wordt deze bijgewerkt. Heb je vragen? Twijfel niet en <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
+              </section>
+              <p>Je kunt dit stappenplan gebruiken voor 3 doelen:</p>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Snel een prototype maken met componenten op basis van het Start-thema.</li>
+               <li>Voor een langere periode met componenten werken op basis van het Start-thema.</li>
+               <li>Voor een langere periode met componenten werken op basis van een eigen thema.</li>
+              </ol>
+              <p>Elk doel bouwt voort op het vorige. We geven steeds aan wanneer je een doel hebt behaald, zodat je weet wanneer je verder kunt, of juist klaar bent.</p>
+              <p>Voor je het stappenplan doorloopt is het verstandig om de volgende documentatie te hebben gelezen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="/handboek/designer" class="utrecht-link utrecht-link--html-a">Introductie voor designers</a></li>
+               <li><a href="/handboek/designer/figma-structuur" class="utrecht-link utrecht-link--html-a">Figma structuur</a></li>
+               <li><a href="/handboek/estafettemodel" class="utrecht-link utrecht-link--html-a">Estafettemodel</a></li>
+               <li><a href="/handboek/design-tokens" class="utrecht-link utrecht-link--html-a">Design tokens</a></li>
+               <li><a href="/handboek/huisstijl/themas/start-thema" class="utrecht-link utrecht-link--html-a">Start-thema</a></li>
+               <li><a href="/handboek/huisstijl/themas/voorbeeld-thema" class="utrecht-link utrecht-link--html-a">Voorbeeld-thema</a></li>
+              </ul>
+              <p>Loop je ergens vast? Geen zorgen. <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a> en we denken graag met je mee.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_intro.jpg" alt="Cover pagina&#x27;s van Figma bibliotheek met Start-thema en Voorbeeld-thema." class="utrecht-img" /></p>
+              <h2 id="figma-bibliotheken" class="utrecht-heading-2">Figma bibliotheken</h2>
+              <h3 id="maak-een-figma-project-aan" class="utrecht-heading-3">Maak een Figma project aan</h3>
+              <p>We adviseren je om binnen Figma een apart ‘Project’ voor je Design System aan te maken. Zo houd je een duidelijke scheiding tussen je Design System en overige design bestanden.</p>
+              <p><a href="https://help.figma.com/hc/en-us/sections/360006050633-Files-and-projects" class="utrecht-link utrecht-link--html-a">Meer informatie over Figma bestanden en projecten</a></p>
+              <p>Meer informatie over Figma kun je vinden op <a href="https://help.figma.com/" class="utrecht-link utrecht-link--html-a">help.figma.com</a> en <a href="https://forum.figma.com/" class="utrecht-link utrecht-link--html-a">forum.figma.com</a>.</p>
+              <h3 id="figma-bibliotheken-dupliceren" class="utrecht-heading-3">Figma bibliotheken dupliceren</h3>
+              <p>De Figma bibliotheken zijn Open Source beschikbaar en te bereiken via Figma Community.</p>
+              <p>🎥 <a href="https://youtu.be/07qlC6bwpf8" class="utrecht-link utrecht-link--html-a">Video: Bibliotheken dupliceren</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://www.figma.com/@nldesignsystem" class="utrecht-link utrecht-link--html-a">Ga naar de Figma Community profielpagina van NL Design System</a>.</li>
+               <li>Klik op &#x27;NL Design System - Bibliotheek&#x27;.</li>
+               <li>Klik op &#x27;Open&#x27;.</li>
+              </ul>
+              <p>Het duplicaat staat nu in je &#x27;Drafts&#x27;. Verplaats de bibliotheek naar het Figma project dat je hebt aangemaakt.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op het chevron icoon naast de naam van &#x27;NL Design System - Bibliotheek (Community)&#x27;.</li>
+               <li>Kies voor &#x27;Move file...&#x27;.</li>
+               <li>Selecteer de gewenste locatie.</li>
+              </ul>
+              <p>Herhaal deze stappen voor de &#x27;NL Design System - ToDo Bibliotheek&#x27;.</p>
+              <p>Om duidelijk te maken dat deze bestanden nu binnen jouw organisatie staan, pas je de naam aan.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Hernoem <code class="utrecht-code">NL Design System - Bibliotheek (Community)</code> naar <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Hernoem <code class="utrecht-code">NL Design System - ToDo Bibliotheek (Community)</code> naar <code class="utrecht-code">NL Design System - ToDo Bibliotheek - {naam-organisatie}</code>.</li>
+              </ul>
+              <h3 id="figma-bibliotheken-publiceren" class="utrecht-heading-3">Figma bibliotheken publiceren</h3>
+              <p>De Figma bestanden zijn nog geen bibliotheken. Om er bibliotheken van te maken die je vanuit andere bestanden kan aanroepen, moeten ze worden gepubliceerd.</p>
+              <p>🎥 <a href="https://youtu.be/8Kj6C_LQ9gs" class="utrecht-link utrecht-link--html-a">Video: Bibliotheken publiceren</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Assets&#x27;.</li>
+               <li>Klik op &#x27;Publish...&#x27;.</li>
+              </ul>
+              <p>Herhaal deze stappen voor de <code class="utrecht-code">NL Design System - ToDo Bibliotheek</code>.</p>
+              <h3 id="figma-bibliotheken-koppelen" class="utrecht-heading-3">Figma bibliotheken koppelen</h3>
+              <p>Nadat de bestanden zijn gepubliceerd, moeten ze aan elkaar worden gekoppeld. Hierdoor wordt de connectie tussen componenten uit beide bibliotheken hersteld.</p>
+              <p>🎥 <a href="https://youtu.be/U8-yW1Lix-U" class="utrecht-link utrecht-link--html-a">Video: Bibliotheken koppelen</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga binnen <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code> naar Assets.</li>
+               <li>Klik op &#x27;Add more libraries&#x27;.</li>
+               <li>Zoek of browse naar de <code class="utrecht-code">NL Design System - ToDo Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Klik op &#x27;Add to file&#x27;.</li>
+              </ul>
+              <p>Herhaal deze stappen, maar dan gezien vanuit de <code class="utrecht-code">NL Design System - ToDo Bibliotheek</code>.</p>
+              <p>Helaas komt het voor dat componenten ondanks het koppelen toch hun connectie met de andere bibliotheek verliezen. Daarom is het verstandig om dit te controleren.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga binnen <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code> naar Assets.</li>
+               <li>Klik op het boek icoon.</li>
+               <li>Klik op &#x27;View missing libraries&#x27;.</li>
+               <li>Kies voor <code class="utrecht-code">NL Design System - ToDo Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Klik op &#x27;Swap library&#x27;.</li>
+              </ul>
+              <p>Herhaal deze stappen, maar dan gezien vanuit de <code class="utrecht-code">NL Design System - ToDo Bibliotheek</code>.</p>
+              <h3 id="figma-bibliotheken-gebruiken" class="utrecht-heading-3">Figma bibliotheken gebruiken</h3>
+              <p>Nu kun je de bibliotheken gebruiken voor het maken van prototypes. Hiervoor moet je de bibliotheken koppelen aan een Figma bestand.</p>
+              <p>🎥 <a href="https://youtu.be/q9jGU78Y6QQ" class="utrecht-link utrecht-link--html-a">Video: Bibliotheken gebruiken</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Maak een nieuw bestand aan.</li>
+               <li>Maak een eerste Frame aan.</li>
+               <li>Klik op &#x27;Browse team libraries&#x27;.</li>
+               <li>Zoek op &#x27;nl design system&#x27;. De bibliotheken verschijnen vanzelf.</li>
+               <li>Klik op &#x27;Add to file&#x27; voor de <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Klik op &#x27;Add to file&#x27; voor de <code class="utrecht-code">NL Design System - ToDo Bibliotheek - {naam-organisatie}</code>.</li>
+              </ul>
+              <p>Nu kun je componenten uit beide bibliotheken gebruiken voor het maken van een prototype.</p>
+              <h3 id="doel-1-behaald-" class="utrecht-heading-3">Doel 1 behaald 🎉</h3>
+              <p>Je kunt nu stoppen als je doel was om snel een prototype te maken met componenten op basis van het Start-thema. Wil je voor een langere periode met deze componenten werken? Ga dan verder met het stappenplan.</p>
+              <h2 id="tokens-studio" class="utrecht-heading-2">Tokens Studio</h2>
+              <p>Design tokens staan buiten Figma opgeslagen in een JSON bestand. Of je nu het Start-thema blijft gebruiken of een eigen thema wilt doorvoeren: je wilt een connectie leggen met de design tokens. Dat doe je door gebruik te maken van Tokens Studio plugin.</p>
+              <p>De plugin wordt regelmatig bijgewerkt. Hierdoor kunnen onderstaande stappen, video&#x27;s en screenshots verouderd raken. Voor de meest up-to-date documentatie van de plugin ga je naar <a href="https://docs.tokens.studio/" class="utrecht-link utrecht-link--html-a">docs.tokens.studio</a>.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Wil je enkel van het Start-thema gebruik maken? Vervolg dan het stappenplan.</li>
+               <li>Wil je een eigen thema doorvoeren? Ga dan verder bij &#x27;<a href="#zelf-een-thema-doorvoeren" class="utrecht-link utrecht-link--html-a">Zelf een thema doorvoeren</a>&#x27;.</li>
+              </ul>
+              <h2 id="tokens-studio-gebruiken-voor-het-start-thema" class="utrecht-heading-2">Tokens Studio gebruiken voor het Start-thema</h2>
+              <p>🎥 <a href="https://youtu.be/DxWB4c3NPt0" class="utrecht-link utrecht-link--html-a">Video: Tokens Studio gebruiken voor het Start-thema</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Open <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Klik op &#x27;Actions&#x27; (Cmd+K).</li>
+               <li>Zoek op &#x27;Tokens Studio&#x27;.</li>
+               <li>Open &#x27;Tokens Studio&#x27;.</li>
+              </ul>
+              <p>Het introductiescherm kan er anders uitzien, maar zorg ervoor dat je bij het tabblad ‘Settings’ terechtkomt.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Add new sync provider&#x27;.</li>
+               <li>Kies voor &#x27;URL&#x27;.</li>
+               <li>Vul een naam in. Bijvoorbeeld: <code class="utrecht-code">Start-thema</code>.</li>
+               <li>Vul de volgende URL in:</li>
+              </ul>
+              <span hidden="" id=":Rd6hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rd6hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">https://raw.githubusercontent.com/nl-design-system/themes/refs/heads/main/packages/start-design-tokens/figma/start.tokens.json</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Save&#x27;.</li>
+               <li>Klik vervolgens op de tab ‘Tokens’ en... voilà! Daar zal je de tokens hebben.</li>
+               <li>Vink de checkboxes &#x27;brand&#x27;, &#x27;common&#x27; en &#x27;components&#x27; aan.</li>
+              </ul>
+              <p>De design tokens van het Start-thema zijn nu gekoppeld aan de Figma bibliotheek.</p>
+              <p>Herhaal deze stappen, maar dan gezien vanuit de <code class="utrecht-code">NL Design System - ToDo Bibliotheek</code>.</p>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu">
+                <p>Wil je het Voorbeeld-thema inladen? Dat kan! Vul dan de volgende URL in bij ‘Sync provider’:</p>
+                <span hidden="" id=":Rke6hralaqh:"
+                 >codevoorbeeld
+                 <!-- -->
+                 <!-- -->
+                </span>
+                <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rke6hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">https://raw.githubusercontent.com/nl-design-system/themes/refs/heads/main/packages/voorbeeld-design-tokens/figma/voorbeeld.tokens.json</span>
+</span></code></pre>
+               </div>
+              </div>
+              <p>🎥 <a href="https://youtu.be/3JGjxFk4Uwo" class="utrecht-link utrecht-link--html-a">Video: Tokens Studio gebruiken voor het Voorbeeld-thema</a></p>
+              <h3 id="updates" class="utrecht-heading-3">Updates</h3>
+              <p>Het kernteam zit natuurlijk niet stil. We voeren geregeld updates door in de Figma bibliotheken én het JSON bestand met design tokens. Omdat je via een URL gekoppeld bent aan het JSON bestand, ben je automatisch up-to-date. Je kunt de Figma bibliotheken &#x27;in sync&#x27; houden door de updates die wij doen, ook aan jouw kant door te voeren.</p>
+              <p>Op de pagina <a href="/handboek/designer/figma-changelog" class="utrecht-link utrecht-link--html-a">&#x27;Figma changelog&#x27;</a> zie je welke updates zijn doorgevoerd. Wanneer je deze updates doorvoert, bepaal je helemaal zelf. We raden wel aan om dit met enige regelmaat te doen, zodat je zeker weet dat je met de nieuwste versies werkt.</p>
+              <p>We sturen eens in de 2 maanden een reminder via Slack in het #nl-design-system-designers kanaal.</p>
+              <h3 id="doel-2-behaald-" class="utrecht-heading-3">Doel 2 behaald 🎉</h3>
+              <p>Je kunt nu stoppen als je doel was om voor een langere periode met componenten te werken op basis van het Start-thema.</p>
+              <p>Vervolg het stappenplan als je een eigen thema wilt doorvoeren.</p>
+              <h2 id="zelf-een-thema-doorvoeren" class="utrecht-heading-2">Zelf een thema doorvoeren</h2>
+              <p>Als je een eigen thema wilt doorvoeren, ga je werken met GitHub en Tokens Studio. GitHub gebruik je om het JSON-bestand met design tokens op te slaan. Met de Tokens Studio plugin importeer, bewerk en exporteer je tokens in Figma.</p>
+              <p>Bij elke stap vind je een video waarin we laten zien hoe we een thema doorvoeren voor de fictieve &#x27;gemeente Voorbeeld&#x27;.</p>
+              <p>Laten we beginnen aan de kant van GitHub.</p>
+              <p>Eerlijk is eerlijk. Als je niet bekend bent met GitHub kunnen de volgende stappen lastig zijn. Loop je vast? Vraag dan een developer uit je team om hulp, of <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
+              <h3 id="github-account-aanmaken" class="utrecht-heading-3">GitHub account aanmaken</h3>
+              <p><a href="https://github.com/" class="utrecht-link utrecht-link--html-a">Maak een account aan bij github.com</a>.</p>
+              <h3 id="github-repository" class="utrecht-heading-3">GitHub Repository</h3>
+              <p>Een repository kan je zien als de hoofdmap van je project. Binnen deze repository plaats je het JSON bestand met design tokens.</p>
+              <p>Afhankelijk van de situatie van jouw organisatie zal worden bepaald waar het JSON bestand moet komen staan.</p>
+              <p>
+               <strong>Situatie A</strong><br />
+               <!-- -->Jouw organisatie heeft al een map met design tokens binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes repository&#x27;</a>.
+              </p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer wanneer de laatste wijziging op de design tokens heeft plaatsgevonden.</li>
+               <li>Bekijk wie deze wijzigingen heeft gedaan.</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_history.jpg" alt="Screenshot van GitHub waarbij is af te lezen dat het JSON bestand 4 jaar geleden door ene Robbert voor het laatst is aangepast." class="utrecht-img" /></p>
+              <p>Zijn de wijzigingen recent? En ken je de persoon die ze heeft gedaan? Stem dan even met elkaar af. Kom je er niet uit? Stel je vraag gerust in Slack.</p>
+              <p>
+               <strong>Situatie B</strong><br />
+               <!-- -->Jouw organisatie heeft nog géén map binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes repository&#x27;</a>. En dat wil je wel.
+              </p>
+              <p><a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a>.</p>
+              <p>
+               <strong>Situatie C</strong><br />
+               <!-- -->Jouw organisatie werkt vanuit een eigen GitHub omgeving.
+              </p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Stem met je developers af waar de design tokens geplaatst kunnen worden.</li>
+               <li>Hulp nodig? <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a>.</li>
+              </ul>
+              <h3 id="inhoud-json-met-start-thema-kopiëren" class="utrecht-heading-3">Inhoud JSON met Start-thema kopiëren</h3>
+              <p>🎥 <a href="https://youtu.be/KjwpybM48Gg" class="utrecht-link utrecht-link--html-a">Video: Inhoud JSON kopieren</a></p>
+              <p>De Figma bibliotheken maken gebruik van het Start-thema. Het JSON bestand dat hierbij hoort staat in GitHub.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://github.com/nl-design-system/themes/blob/main/packages/start-design-tokens/figma/start.tokens.json" class="utrecht-link utrecht-link--html-a">Bekijk het JSON bestand met het Start-thema</a>.</li>
+               <li>Klik op &#x27;Copy raw file&#x27;.</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_copy-raw.jpg" alt="screenshot van GitHub waarbij er een cirkel om de functionaliteit van &#x27;copy raw file&#x27; staat." class="utrecht-img" /></p>
+              <h3 id="json-bestand-aanmaken" class="utrecht-heading-3">JSON bestand aanmaken</h3>
+              <p>🎥 <a href="https://youtu.be/Bsws_tyLwl8" class="utrecht-link utrecht-link--html-a">Video: JSON bestand aanmaken</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga naar de locatie waar het JSON bestand moet komen staan.</li>
+               <li>Klik op &#x27;Add file&#x27;. Je vindt deze functie rechtsboven.</li>
+               <li>Kies voor &#x27;Create new file&#x27;.</li>
+               <li>Geef het bestand een naam. Bijvoorbeeld: <code class="utrecht-code">{naam-organisatie}.tokens.json</code>.</li>
+               <li>Plak de inhoud van het JSON bestand met het Start-thema.</li>
+               <li>Klik op &#x27;Commit changes&#x27;.</li>
+               <li>Als commit message kun je noteren: <code class="utrecht-code">json met design tokens toegevoegd</code>.</li>
+               <li>Als branch kun je noteren: <code class="utrecht-code">add-tokens-json</code></li>
+               <li>Klik op &#x27;Propose changes&#x27;.</li>
+               <li>Klik op &#x27;Create pull request&#x27;.</li>
+               <li>Geef development een seintje en zorg dat je pull request wordt goedgekeurd.</li>
+              </ul>
+              <p>Voor <strong>situatie A en B</strong> is dit een developer uit het kernteam. <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a>.</p>
+              <p>Voor <strong>situatie C</strong> is dit een developer van je eigen organisatie.</p>
+              <h3 id="personal-access-token-aanmaken" class="utrecht-heading-3">Personal access token aanmaken</h3>
+              <p>Ondanks de naam heeft een personal access token niets met design tokens te maken. Je hebt een personal access token nodig met de benodigde rechten om via Tokens Studio design tokens te kunnen importeren, bewerken én exporteren.</p>
+              <p>🎥 <a href="https://youtu.be/Fz0Hzs6QEao" class="utrecht-link utrecht-link--html-a">Video: Personal access token aanmaken</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ga naar <a href="https://github.com/settings/personal-access-tokens" class="utrecht-link utrecht-link--html-a">github.com/settings/tokens</a>.</li>
+               <li>Klik op &#x27;Generate new token&#x27;.</li>
+              </ul>
+              <p><strong>Vul de gegevens in</strong></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Token name: Deze wordt enkel gebruikt voor GitHub zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld: <code class="utrecht-code">Tokens van {naam-organisatie}</code>.</li>
+               <li>Resource owner: Staan je tokens in de NL Design System &#x27;themes repository&#x27;? Kies dan voor &#x27;nl-design-system&#x27;. Staan de tokens in de GitHub omgeving van jouw organisatie? Selecteer deze dan als resource owner.</li>
+               <li>Expiration: Bepaal wanneer je personal access token zou moeten verlopen. Bijvoorbeeld na een half jaar. Je krijgt vanzelf een email wanneer deze datum in zicht komt.</li>
+               <li>Kies bij &#x27;Repository access&#x27; voor &#x27;Only select repositories&#x27;.</li>
+               <li>Selecteer de repository waar de tokens van jouw organisatie staan.</li>
+               <li>Klik onder &#x27;Permissions&#x27; op &#x27;Repository permissions&#x27;.</li>
+               <li>Kies bij &#x27;Contents&#x27; voor &#x27;Access: Read and write&#x27;.</li>
+              </ul>
+              <p><strong>Genereren en noteren</strong></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Generate token&#x27;.</li>
+               <li>Kopieer je personal access token.</li>
+               <li>Bewaar je personal access token op een veilige plek waar je hem ook altijd terug kan vinden.</li>
+              </ul>
+              <p>
+               <strong>Let op!</strong><br />
+               <!-- -->Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel de token als je persoonlijke wachtwoord.
+              </p>
+              <h3 id="tokens-studio-activeren" class="utrecht-heading-3">Tokens Studio activeren</h3>
+              <p>Nu je in GitHub alles hebt klaargezet, kunnen we in Figma via Tokens Studio een connectie leggen met de design tokens.</p>
+              <p>🎥 <a href="https://youtu.be/8i6pdhyrxG0" class="utrecht-link utrecht-link--html-a">Video: Tokens Studio activeren</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Open <code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code>.</li>
+               <li>Klik op &#x27;Actions&#x27; (Cmd+K).</li>
+               <li>Zoek op &#x27;Tokens Studio&#x27;.</li>
+               <li>Activeer Tokens Studio.</li>
+              </ul>
+              <p>Het introductiescherm kan verschillen.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_ts-intros.jpg" alt="Screenshot van 2 verschillende introductieschermen van Tokens Studio. Op het linkerscherm staat een blauwe knop met de tekst &#x27;Enter credentials&#x27;. Op het rechterscherm staat een knop met de tekst &#x27;New empty file&#x27;." class="utrecht-img" /></p>
+              <p>Zie je een knop met de tekst &#x27;Enter credentials&#x27; staan? Ga dan verder bij &#x27;<a href="#tokens-studio-koppelen-aan-json" class="utrecht-link utrecht-link--html-a">Tokens Studio koppelen aan JSON</a>&#x27;.</p>
+              <p>Zie je een knop met de tekst &#x27;New empty file&#x27; staan?</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op die knop.</li>
+               <li>Ga binnen Tokens Studio naar het tabblad &#x27;Settings&#x27;.</li>
+               <li>Klik op &#x27;Add new sync provider&#x27;.</li>
+               <li>Kies voor &#x27;GitHub&#x27;.</li>
+               <li>Nu kun je de &#x27;Credentials&#x27; gaan invullen.</li>
+              </ul>
+              <h3 id="tokens-studio-koppelen-aan-json" class="utrecht-heading-3">Tokens Studio koppelen aan JSON</h3>
+              <p>🎥 <a href="https://youtu.be/Bpaajeb8Zow" class="utrecht-link utrecht-link--html-a">Video: Credentials invullen</a></p>
+              <p>Er staan standaard al gegevens ingevuld. Dat is prima. We passen aan wat nodig is.</p>
+              <h4 id="name" class="utrecht-heading-4">Name</h4>
+              <p>Deze naam wordt enkel gebruikt voor de plugin zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld: <code class="utrecht-code">{naam-organisatie} thema</code>.</p>
+              <h4 id="personal-access-token" class="utrecht-heading-4">Personal access token</h4>
+              <p>Vul je personal access token in.</p>
+              <h4 id="repository" class="utrecht-heading-4">Repository</h4>
+              <p>Als jouw JSON bestand in de Themes repository van NL Design System staat, kun je laten staan wat er nu staat: <code class="utrecht-code">nl-design-system/themes</code>.</p>
+              <p>Staat het JSON bestand in een repository binnen de GitHub omgeving van jouw organisatie? Vul dan de gegevens van deze repository in.</p>
+              <h4 id="branch" class="utrecht-heading-4">Branch</h4>
+              <p>Hier kun je <code class="utrecht-code">main</code> laten staan.</p>
+              <h4 id="token-storage-location" class="utrecht-heading-4">Token Storage location</h4>
+              <p>Je kunt dit zien als het pad naar het JSON bestand binnen een repository. Dit pad kan per situatie verschillen.</p>
+              <p>Het makkelijkst is om in GitHub naar je JSON bestand te gaan. Boven het bestand zie je een kruimelpad. Achter het kruimelpad vind je een functionaliteit om het pad te kopiëren. Gebruik die om het pad eenvoudig over te nemen.</p>
+              <h4 id="base-url" class="utrecht-heading-4">Base URL</h4>
+              <p>Dit is optioneel. Hier hoef je niets mee te doen.</p>
+              <h4 id="opslaan" class="utrecht-heading-4">Opslaan</h4>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Save&#x27;.</li>
+               <li>De plugin zal aangeven dat er al tokens in de opgegeven ‘repo’ staan en vragen of je deze wilt binnenhalen.</li>
+               <li>Klik op ‘Yes’.</li>
+              </ul>
+              <h3 id="design-tokens-bekijken" class="utrecht-heading-3">Design tokens bekijken</h3>
+              <p>🎥 <a href="https://youtu.be/6Ap0aeY0YPo" class="utrecht-link utrecht-link--html-a">Video: Design tokens bekijken</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op het tabblad ‘Tokens’ en... Voila! Daar zul je de tokens hebben.</li>
+               <li>Zet de checkboxes voor &#x27;brand&#x27;, &#x27;common&#x27; en &#x27;components&#x27; aan.</li>
+              </ul>
+              <p>De termen Brand, Common en Component vind je ook terug in de naamgeving van het pagina overzicht van Figma.</p>
+              <p>Zoals aangegeven bevatten de Figma bibliotheken het <a href="/handboek/huisstijl/themas/start-thema" class="utrecht-link utrecht-link--html-a">Start-thema</a>. Voor deze &#x27;stijl&#x27; zijn er al bepaalde waardes ingevuld voor typografie, kleur, spacing, etc. Deze waardes zijn &#x27;hardcoded&#x27;, oftewel direct ingevuld binnen de set van <a href="/handboek/huisstijl/themas/start-thema" class="utrecht-link utrecht-link--html-a">Basis-tokens</a> die je vindt op het Common niveau.</p>
+              <p>Een prima &#x27;Startpunt&#x27;, maar jij wilt de huisstijl van jouw organisatie als thema doorvoeren.</p>
+              <p>Omdat huisstijlen verschillen, verschillen ook de vervolgstappen. In plaats van dat we alle mogelijkheden uitschrijven, begeleiden we je via video’s stap voor stap terwijl we als voorbeeld de huisstijl van gemeente Voorbeeld toepassen.</p>
+              <p>Uiteraard is het ook slim om de documentatie van de Tokens Studio plugin bij de hand te houden. Deze vind je op <a href="https://docs.tokens.studio/" class="utrecht-link utrecht-link--html-a">docs.tokens.studio</a>.</p>
+              <h3 id="brand-tokens-aanmaken" class="utrecht-heading-3">Brand tokens aanmaken</h3>
+              <p>Je kunt de huisstijl-opties van jouw organisatie direct doorvoeren als waarde op het Common niveau. Maar je kunt ook eerst Brand tokens aanmaken, en daar vervolgens vanuit het Common niveau naar verwijzen. Laten we daarmee beginnen.</p>
+              <p>In deze video bekijken we de huisstijl-opties van gemeente Voorbeeld en laten we zien hoe je hiervoor Brand tokens aanmaakt in Tokens Studio.</p>
+              <p>🎥 <a href="https://youtu.be/r0r7djikGEk" class="utrecht-link utrecht-link--html-a">Video: Brand tokens aanmaken</a></p>
+              <h3 id="naar-brand-tokens-verwijzen" class="utrecht-heading-3">Naar Brand tokens verwijzen</h3>
+              <p>Nadat je Brand tokens hebt aangemaakt, kun je hier naar gaan verwijzen vanuit het Common niveau. In deze video laten we zien hoe je dat doet.</p>
+              <p>🎥 <a href="https://youtu.be/gJPvgNCNMSE" class="utrecht-link utrecht-link--html-a">Video: Naar Brand tokens verwijzen - deel 1</a></p>
+              <p>Het instellen van de kleuren kost even wat tijd, maar daarna heb je er geen omkijken meer naar. Het kleurcontrast staat dan al goed ingesteld op het Common niveau, waardoor je hier bij het ontwerpen of ontwikkelen van nieuwe componenten geen extra werk aan hebt. Heeft jouw organisatie voor bepaalde onderdelen geen eigen richtlijnen? Dan kun je gerust de waarden uit het Start-thema laten staan.</p>
+              <p>In de volgende video zien we het resultaat van het verwijzen naar Brand tokens.</p>
+              <p>🎥 <a href="https://youtu.be/sGhmlLKTEN8" class="utrecht-link utrecht-link--html-a">Video: Naar Brand tokens verwijzen - deel 2</a></p>
+              <h3 id="brand-tokens-documenteren" class="utrecht-heading-3">Brand tokens documenteren</h3>
+              <p>De Brand tokens zijn alleen nog zichtbaar in Tokens Studio. Voor mensen zonder Tokens Studio kan het fijn zijn om de Brand tokens ook te kunnen bekijken in Figma. In de volgende video laten we zien hoe je Brand tokens kunt documenteren via een handig documentatie-component.</p>
+              <p>🎥 <a href="https://youtu.be/5ZXhm-1vR3Q" class="utrecht-link utrecht-link--html-a">Video: Brand tokens documenteren</a></p>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu"><p>Als je een token naam of waarde aanpast in Tokens Studio, wordt deze wijziging automatisch bijgewerkt in je documentatie nadat je op de &#x27;Apply to...&#x27; knop hebt geklikt.</p></div>
+              </div>
+              <h3 id="common-tokens-aanpassen" class="utrecht-heading-3">Common tokens aanpassen</h3>
+              <p>De huisstijlkleuren zijn vastgelegd als Brand tokens, gekoppeld aan Common tokens én gedocumenteerd. Nu is het tijd om ook een ander lettertype door te voeren. Ook hier kun je Brand tokens voor aanmaken. Maar als &#x27;voorbeeld&#x27; laten we zien hoe je huisstijl-opties ook direct op het Common niveau kan doorvoeren.</p>
+              <p>🎥 <a href="https://youtu.be/VPwnrQZQJxQ" class="utrecht-link utrecht-link--html-a">Video: Common tokens aanpassen</a></p>
+              <p>
+               <strong>Let op!</strong><br />
+               <!-- -->Tokens voor Font Family en Font Weight kunnen afzonderlijk van elkaar op tekst worden toegepast. Het is daarbij belangrijk om de naam van de gewicht aan te houden zoals deze in Figma is aangegeven. Bij een Font Family als <code class="utrecht-code">Roboto</code> is dat bijvoorbeeld <code class="utrecht-code">Bold</code>, en niet een waarde als <code class="utrecht-code">700</code>.
+              </p>
+              <h3 id="huisstijlkeuzes-op-componenten" class="utrecht-heading-3">Huisstijlkeuzes op componenten</h3>
+              <p>Nu de kleuren en het lettertype zijn doorgevoerd, kunnen we gaan kijken hoe dit uitpakt op de componenten. Gebruik de pagina &#x27;Component collage&#x27; als visuele check. Hier zie je direct hoe je keuzes uitpakken in de praktijk.</p>
+              <p>Ben je tevreden? Dan kun je je huisstijlkeuzes doorvoeren op de gehele bibliotheek. In deze video laten we zien hoe je dit kan aanpakken.</p>
+              <p>🎥 <a href="https://youtu.be/SpAWzKYS4rw" class="utrecht-link utrecht-link--html-a">Video: Componenten collage</a></p>
+              <h3 id="componenten-nalopen" class="utrecht-heading-3">Componenten nalopen</h3>
+              <p>Nadat je huisstijl over de gehele bibliotheek is doorgevoerd, raden we aan om alle componenten na te lopen. Zo kun je controleren of er toch iets minder goed heeft uitgepakt dan gedacht. Het geeft je ook de mogelijkheid om op Component niveau de waarde van een token aan te passen. Denk aan het veranderen van de border-radius van knoppen, of het instellen van een groene kleur specifiek voor de primaire knop.</p>
+              <p>🎥 <a href="https://youtu.be/SpAWzKYS4rw" class="utrecht-link utrecht-link--html-a">Video: Componenten nalopen</a></p>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu"><p>We hebben gemerkt dat je soms nogmaals op &#x27;Apply to Page&#x27; moet klikken om de aanpassingen doorgevoerd te zien worden.</p></div>
+              </div>
+              <h3 id="pushen-naar-github-en-een-pull-request-aanmaken" class="utrecht-heading-3">Pushen naar GitHub en een pull request aanmaken</h3>
+              <p>Wanneer je de tokens naar wens hebt aangepast kun je deze wijzigingen in de bron doorvoeren.</p>
+              <p>🎥 <a href="https://youtu.be/80FPJOvUubA" class="utrecht-link utrecht-link--html-a">Video: Pushen naar GitHub en een pull request aanmaken</a></p>
+              <p>Bespreek met een developer uit je team hoe jullie omgaan met pull requests. Vraag ook of er afspraken zijn over &#x27;commit messages&#x27; of over de naamgeving van &#x27;branches&#x27;.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op ‘Push to Github’ binnen Tokens Studio.</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_push.jpg" alt="Screenshot toont de Studio Token plugin. Er staat een cirkel om een knop met een omhoog wijzende pijl als icoon." class="utrecht-img" /></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Vul als &#x27;commit message&#x27; kort en bondig in wat je hebt aangepast. Bij deze eerste ronde van huisstijl doorvoeren bijvoorbeeld iets als: <code class="utrecht-code">Eerste ronde huisstijl doorvoeren</code>.</li>
+               <li>Bij &#x27;branch&#x27; staat standaard &#x27;main&#x27; al ingevuld. Het is echter verstandig om bij elke push met wijzigingen een aparte branch aan te maken. Bijvoorbeeld: <code class="utrecht-code">style/eerste-ronde-huisstijl</code>.</li>
+              </ul>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu">
+                <p>Gebruik elke keer een andere naam voor de branch en zorg ervoor dat je geen spaties gebruikt.</p>
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Klik op ‘Push changes’.</li>
+                 <li>Klik op ‘Create pull request’.</li>
+                </ul>
+                <p>Vervolgens word je automatisch naar GitHub geleid waar je een pull request kunt maken.</p>
+               </div>
+              </div>
+              <h3 id="huisstijl-doorvoeren-in-todo-bibliotheek" class="utrecht-heading-3">Huisstijl doorvoeren in ToDo bibliotheek</h3>
+              <p>Nadat je pull request is gemerged is het tijd om de aanpassingen voor de huisstijl van jouw organisatie ook door te voeren in de Todo bibliotheek.</p>
+              <p>🎥 <a href="https://youtu.be/j7fMgsV4-8Q" class="utrecht-link utrecht-link--html-a">Video: Huisstijl doorvoeren in ToDo bibliotheek</a></p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Open de ToDo bibliotheek.</li>
+               <li>Open Tokens Studio.</li>
+               <li>Zorg dat je hier ook de connectie met je JSON bestand hebt.</li>
+               <li>Vink de checkboxes brand, common en component opnieuw aan.</li>
+              </ul>
+              <p>Vervolgens voert Tokens Studio de huisstijl zoals jij hem hebt ingesteld door op alle componenten in deze bibliotheek.</p>
+              <h3 id="todo-componenten-nalopen" class="utrecht-heading-3">ToDo componenten nalopen</h3>
+              <p>Nadat Tokens Studio klaar is met het doorvoeren, is het verstandig om de componenten in je bibliotheek nog eens langs te lopen.</p>
+              <p>Zo kun je op componentniveau alsnog andere keuzes maken. In de video zie je daar een voorbeeld van. Breng je wijzigingen aan? Push ze dan opnieuw naar GitHub en maak een nieuwe pull request aan.</p>
+              <p>🎥 <a href="https://youtu.be/ho87z-B6Jcg" class="utrecht-link utrecht-link--html-a">Video: ToDo componenten nalopen</a></p>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu"><p>We hebben gemerkt dat je soms nogmaals op &#x27;Apply to Page&#x27; moet klikken om de aanpassingen doorgevoerd te zien worden.</p></div>
+              </div>
+              <h3 id="covers-aanpassen" class="utrecht-heading-3">Covers aanpassen</h3>
+              <p>Beide bibliotheken hebben een &#x27;Cover&#x27; pagina. Daar staat nu nog &#x27;Start&#x27;. Pas dit aan naar de naam van jouw organisatie.</p>
+              <p>Wijzigingen in thumbnails worden niet altijd direct door Figma opgepikt. Doorloop daarom de volgende stappen.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Selecteer het gehele Frame en klik op de rechtermuisknop voor het contextuele menu.</li>
+               <li>Kies voor &#x27;Restore default thumbnail&#x27;.</li>
+               <li>Selecteer nogmaals het frame en klik nogmaals op de rechtermuisknop.</li>
+               <li>Kies nu voor &#x27;Set as thumbnail&#x27;.</li>
+              </ul>
+              <p>🎥 <a href="https://youtu.be/9FA08CoKRf8" class="utrecht-link utrecht-link--html-a">Video: Covers aanpassen</a></p>
+              <h3 id="readmes-aanpassen" class="utrecht-heading-3">Readme&#x27;s aanpassen</h3>
+              <p>In beide bibliotheken staan &#x27;Readme&#x27; pagina&#x27;s. Pas de inhoud aan zodat deze past bij jouw organisatie. Zo houd je de documentatie relevant voor jouw team.</p>
+              <p>🎥 <a href="https://youtu.be/QUjwW-CLzf0" class="utrecht-link utrecht-link--html-a">Video: Readme&#x27;s aanpassen</a></p>
+              <h3 id="publiceren" class="utrecht-heading-3">Publiceren</h3>
+              <p>Lekker bezig geweest! Je hebt nu de huisstijl doorgevoerd, Covers en Readme&#x27;s aangepast.</p>
+              <p>Tijd om de bibliotheken opnieuw te publiceren. Heb je eerder in dit proces al een prototype opgezet met deze bibliotheken? Dan kun je de updates daarin accepteren en je huisstijl tot leven zien komen in die prototypes.</p>
+              <h3 id="updates-1" class="utrecht-heading-3">Updates</h3>
+              <p>We zitten natuurlijk niet stil. We voeren geregeld updates door in de Figma bibliotheken én het JSON bestand met design tokens. Omdat je via een URL gekoppeld bent aan het JSON bestand, ben je automatisch up-to-date. Je kunt de Figma bibliotheken &#x27;in sync&#x27; houden door de updates die wij doen, ook aan jouw kant door te voeren. Op de pagina <a href="/handboek/designer/figma-changelog" class="utrecht-link utrecht-link--html-a">&#x27;Figma changelog&#x27;</a> kun je zien welke updates wij doorvoeren. Wanneer jij deze updates doorvoert, mag je zelf weten. We sturen eens in de 2 maanden een reminder via Slack in het #nl-design-system-designers kanaal.</p>
+              <h3 id="doel-3-behaald-" class="utrecht-heading-3">Doel 3 behaald 🎉</h3>
+              <p>Je kunt nu met NL Design System componenten werken op basis van een eigen thema. Veel plezier!</p>
+              <h2 id="van-figma-naar-code" class="utrecht-heading-2">Van Figma naar code</h2>
+              <p>Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je een developer nodig om de tokens te publiceren als CSS thema. Dat kan op twee manieren:</p>
+              <p>
+               <strong>Optie 1</strong><br />
+               <!-- -->Je krijgt een eigen directory in de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System themes repository</a>. Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a>, zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
+              </p>
+              <p>
+               <strong>Optie 2</strong><br />
+               <!-- -->Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de <a href="https://github.com/nl-design-system/example" class="utrecht-link utrecht-link--html-a">NL Design System example repository</a> een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a> om hulp te vragen als je dit wilt doen.
+              </p>
+              <h2 id="wat-is-je-volgende-stap" class="utrecht-heading-2">Wat is je volgende stap?</h2>
+              <p>Ga je een prototype maken en onderzoek doen? Super! Deel je vragen, inzichten en ervaringen vooral met anderen in de community. Zo leren we van elkaar. Dat kan via Slack of tijdens een [Design Open Hour](/events/design-open-hour], <a href="events/design-open-dag" class="utrecht-link utrecht-link--html-a">Design Open Dag</a> of <a href="events/heartbeat" class="utrecht-link utrecht-link--html-a">Heartbeat</a>.</p>
+              <p>Wil je zelf componenten bijdragen? Vet! <a href="/handboek/designer/zelf-componenten-maken" class="utrecht-link utrecht-link--html-a">Lees hier hoe je zelf componenten kunt ontwikkelen</a></p>
+              <hr />
+              <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
+              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">GitHub</a>.</p>
+              <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
+              <p>Heb je een vraag? Twijfel niet en <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/werken-met-nl-design-system/figma-stappenplan.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_QIdz" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_ka3N"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/designer/figma-structuur"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Figma structuur</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/designer/figma-hygiene"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Figma hygiëne</div></a
+             >
+            </nav>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
