@@ -18,111 +18,75 @@ import { SpotlightSection } from "@utrecht/component-library-react/dist/css-modu
 
 # Figma structuur
 
-<SpotlightSection>
-  **Let op!** We werken momenteel aan een nieuwe versie van de Figma-bibliotheken. Daardoor kan de onderstaande
-  documentatie afwijken van de werkelijkheid. In de komende weken wordt deze bijgewerkt. Heb je vragen? Twijfel niet en
-  [neem contact op met het kernteam](../../project/kernteam.mdx).
-</SpotlightSection>
+Wil je als designer werken met het NL Design System in Figma? Dan is het handig om eerst te begrijpen hoe de Figma structuur in elkaar zit.
 
-## Figma
+Op deze pagina lees je hoe de bibliotheken zijn opgebouwd, waarom Figma een logische keuze is, en hoe de structuur werkt binnen je eigen Figma omgeving.
 
-Het kernteam, en reeds aangesloten organisaties hebben een voorkeur voor Figma.
+Je hoeft nu nog niets in te richten. Dit is vooral bedoeld om je op weg te helpen. In het [Figma stappenplan]() leggen we stap voor stap uit hoe je daadwerkelijk aan de slag gaat.
 
-![Logo Figma](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_figma-logo.png)
+## Waarom Figma?
 
-### Waarom Figma?
+Figma sluit goed aan op hoe het NL Design System werkt met componenten, tokens en code.
 
-Figma sluit qua concept, architectuur en naamgeving goed aan bij de front-end implementatie. Daarnaast brengt Figma enkele voordelen met zich mee ten opzichte van andere ontwerptools.
+### Voordelen van Figma
 
-#### Figma voordelen
+* Platformonafhankelijk: werkt vanuit de browser.
+* Samenwerken in realtime: meerdere mensen in 1 bestand.
+* Prototypen en inspecteren in 1 tool.
+* Structuur en naamgeving sluit aan op front-end structuur.
 
-- Platform onafhankelijk. Je kunt zelfs vanuit de browser werken.
-- Samenwerken. Je kunt met meerdere personen tegelijk in dezelfde file werken.
-- Prototypen. Je kan binnen Figma zelf prototypes opzetten.
-- Inspecteren. Developers kunnen binnen Figma zelf ontwerpen inspecteren.
+Dit maakt Figma ideaal voor het werken met een gedeeld design system. Meer verdieping nodig? Bekijk help.figma.com of forum.figma.com.
 
-Meer informatie over Figma kun je vinden op [help.figma.com](https://help.figma.com/) en [forum.figma.com](https://forum.figma.com/).
+## Hoe is de structuur opgebouwd?
 
-Het NL Design System zit echter net even anders in elkaar als andere Design Systems. Dat heeft ook invloed op de Figma structuur en het gebruik.
+Elke organisatie heeft vaak een eigen Figma omgeving waarin een lokale bibliotheek wordt beheerd. Vanuit die bibliotheek kunnen ontwerpers werken aan flows, concepten en prototypes. Ontwerpbestanden kunnen zich 'abboneren' op deze bibliotheek. Zodra de bibliotheek wordt bijgewerkt, worden deze aanpassingen automatisch doorgevoerd in de gekoppelde bestanden.
 
-### Structuur
+[foto]
 
-Een organisatie heeft vaak zijn eigen Figma omgeving. Binnen die omgeving wordt een bibliotheek beheerd met de huisstijl en componenten. Andere design bestanden kunnen zich ‘abonneren’ op die bibliotheek waardoor concepten, flows en/of prototypes snel en consistent kunnen worden uitgewerkt.
+Sommige organisaties beheren meerdere merken of thema's met elk een eigen huisstijl. In dat geval kunnen bestanden gebruik maken van 1 of meerdere bibliotheken.
 
-Wordt er een aanpassing gedaan in de bibliotheek? Dan is die aanpassing met een druk op de knop ook toegepast binnen alle design bestanden die op de bibliotheek geabonneerd zijn.
+[foto]
 
-![Schematische weergave van Figma inrichting voor 1 organisatie](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_single-org-single-brand.png)
+Maar het NL Design System werkt nét even anders. Omdat iedere organisatie een eigen Figma omgeving heeft, kun je je niet direct abonneren op de bibliotheken van het NL Design System. Toch kun je ze wel gebruiken.
 
-Bevat een organisatie meerdere ‘huisstijlen’? Ook dan kunnen design bestanden gebruik maken van één of meerdere bibliotheken.
+## Werken met de NL Design System bibliotheek
 
-![Schematische weergave van Figma inrichting voor 1 organisatie met 3 verschillende merken met ieder een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_single-org-multi-brand.png)
+Je gebruikt de NL Design System bibliotheek naast je eigen bibliotheek. Hoe dat werkt, hangt af van je situatie.
 
-Maar dan is daar het NL Design System. Waarbij we **wel** een bibliotheek aanbieden maar waar andere organisaties zich **niet** op kunnen abonneren. Dat komt omdat iedere organisatie binnen een eigen Figma omgeving werkt. Hoe je toch van deze bibliotheek gebruik kunt maken, en je eigen huisstijl kunt toepassen, leggen we graag aan je uit.
+### Heb je al een eigen bibliotheek?
 
-![Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. Tussen de kaders staat een emoticon die nadenkt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_nlds-question.png)
+Mooi! Je kunt je bestaande bibliotheek blijven gebruiken. Voeg de NL Design System bibliotheek toe als extra bron. Vervolgens kun je, stap voor stap, componenten vervangen die in beide bibliotheken aanwezig zijn. Zo houd je uiteindelijk een lokale bibliotheek over met alleen organisatie-specifieke componenten.
 
-### Gebruik
+:::info
+Zitten daar unieke componenten tussen, zoals een specifieke Page Header? Die kunnen ook relevant zijn voor andere organisaties. Deel ze gerust via onze [backlog]().
+:::
 
-Om vanuit Figma met het NL Design System te werken heb je 2 dingen nodig. De ‘NL Design System bibliotheek' en de ‘Tokens Studio plugin'.
+### Nog geen eigen bibliotheek?
 
-![Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst 'NLDS Bibliotheek' en 'Token Studio'. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-nlds-happy.png)
+Begin dan met de NL Design System bibliotheek. Voeg daarnaast een eigen bibliotheek toe voor componenten die je zelf nodig hebt. Denk aan onderdelen als een Page Header of Page Footer. Zulke unieke componenten noemen we ook wel 'snowflakes'.
 
-#### NL Design System Figma bibliotheek
+## Naamgeving bibliotheken
 
-Vanuit het NL Design System bieden we een Figma bibliotheek aan. Op dit moment zijn we druk bezig om deze Figma bibliotheek te vullen met 'Community' componenten. Deze community componenten zijn een-op-een in code beschikbaar.
+We houden de naamgeving van de Figma bibliotheken graag gelijk tussen de verschillende organisaties. Daarom hebben we de volgende naamgeving afsproken:
 
-Zodra een community component in meerdere organisaties succesvol ingezet is zal deze volgens het [estafettemodel](../estafettemodel.mdx) door het kernteam opgenomen worden als 'Candidate' en later 'Hall of Fame' component.
+* NL Design System - Bibliotheek - [Organisatienaam]
+* NL Design System - ToDo Bibliotheek - [Organisatienaam]
 
-![Voorblad van de NL Design System bibliotheek met de tekst 'Voorbeeld bibliotheek'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_nlds-library.png)
+Zo blijft het herkenbaar, ook als je meerdere bestanden tegelijk open hebt in Figma.
 
-**Al een eigen Figma bibliotheek?**
+## Tokens Studio plugin
 
-Mooi! Die kun je gewoon blijven gebruiken.
+De componenten van het NL Design System hebben van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen kleuren, typografie en stijl toepassen. Dat doen we met [design tokens]().
 
-We adviseren je om de NL Design System bibliotheek naast de lokale bibliotheek van jouw organisatie te positioneren. Vervolgens kun je, geleidelijk aan, componenten die in beide bibliotheken aanwezig zijn uit de lokale bibliotheek van jouw organisatie inwisselen voor componenten uit de NL Design System bibliotheek.
+Omdat Figma zelf geen ondersteuning biedt voor tokens, gebruiken we de Tokens Studio plugin. Die zorgt ervoor dat je tokens in Figma kunt gebruiken én synchroniseren met code (via een gedeeld JSON-bestand).
 
-Zo houd je uiteindelijk een lokale bibliotheek over met componenten die alleen voor jouw organisatie nodig zijn.
+Wil je weten hoe je deze plugin gebruikt? Volg dan het [Figma stappenplan]().
 
-Trouwens… misschien zitten daar wel componenten tussen die andere organisaties goed kunnen gebruiken. In dat geval kun je die componenten altijd aan onze [backlog](https://github.com/nl-design-system/backlog) toevoegen.
+## Direct aan de slag
 
-**Nog geen eigen Figma bibliotheek?**
-
-Start dan met de componenten in de NL Design System bibliotheek. Maak daarnaast een lokale bibliotheek aan voor overige componenten. Denk bijvoorbeeld aan een ‘Pagina Header’ of ‘Pagina Footer’. Componenten die specifiek voor jouw organisatie zijn noemen wij ‘Snowflakes’.
-
-**Naamgeving Figma bibliotheken**
-
-We houden de naamgeving van de Figma bibliotheken graag gelijk tussen de verschillende organisaties. Daarom hebben we als designers de volgende naamgeving afsproken:
-
-- NLDS - [naam-organisatie] - Bibliotheek
-- Local - [naam-organisatie] - Bibliotheek
-
-Hierdoor is het meest onderscheidende deel nog leesbaar als je in Figma meerdere tabjes open hebt staan.
-
-![Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst NLDS Bibliotheek, Token Studio en Lokale Bibliotheek. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-local.png)
-
-#### Tokens Studio plugin
-
-De componenten van het NL Design System hebben van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van [design tokens](../design-tokens/README.mdx).
-
-![Drie dezelfde interfaces ieder met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_themas.png)
-
-Alleen biedt Figma, net als alle andere ontwerpprogramma’s, geen ondersteuning voor design tokens. Daarom maken we gebruik van de [Tokens Studio plugin](https://tokens.studio/).
-
-![Logo Token Studio](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_tokens-studio-logo.png)
-
-Deze plugin zorgt ervoor dat je binnen Figma vanuit hetzelfde JSON bestand kunt werken als developers. Je put dus letterlijk uit dezelfde bron.
-
-![JSON bestand met aftakkingen naar verschillende programma's en technieken](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_json.png)
-
-Binnen de NL Design System bibliotheek houden we de Brand, Common en Component [token niveaus](../design-tokens/README.mdx) aan. Dat betreft de plugin maar ook de pagina-indeling van de bibliotheek.
-
-##### Voorbeeld thema
-
-Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design tokens aan te tonen maken we wel gebruik van een [‘Voorbeeld’ thema](voorbeeld-thema.md).
-
-### Aan de slag
-
-We hebben een [stappenplan](stappenplan.mdx) uitgeschreven om uit te leggen hoe je gebruik kunt maken van de NL Design System bibliotheek en de Token Studio plugin.
+* [Bekijk de NL Design System bibliotheek in Figma]()
+* [Lees over de Tokens Studio plugin]()
+* [Volg het Figma stappenplan om te starten]()
 
 ---
 
