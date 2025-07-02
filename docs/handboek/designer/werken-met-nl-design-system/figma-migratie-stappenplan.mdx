@@ -12,11 +12,11 @@ unlisted: true
 
 ## Over dit migratie-stappenplan
 
-Dit migratie-stappenplan is de 'Big Bieb Sync'. Zoals aangegeven is er zoveel veranderd dat een verse installatie sneller is dan 1-voor-1 aan jouw kant alles aan te passen. Met dit stappenplan helpen we je stap voor stap te migeren.
+Dit migratie-stappenplan noemen we ook wel de 'Big Bieb Sync'. Zoals aangegeven is er zoveel veranderd dat een verse installatie sneller is dan alles aan jouw kant stap voor stap aanpassen. Met dit stappenplan helpen we je stap voor stap te migreren.
 
 :::info[Migratie informatie]
 
-Het migratie-stappenplan is grotendeels gelijk aan het algemene [Figma stappenplan](/handboek/designer/figma-stappenplan). Maar dan aangevuld met extra informatie voor iedereen die al eerder te maken heeft gehad met Figma bibliotheken en Tokens Studio.
+Het migratie-stappenplan lijkt grotendeels op het algemene [Figma stappenplan](/handboek/designer/figma-stappenplan), maar is uitgebreid met extra uitleg voor iedereen die al eerder met Figma bibliotheken en Tokens Studio heeft gewerkt.
 
 :::
 
@@ -28,7 +28,7 @@ Onderaan deze pagina vind je [extra secties voor migratie](#extra-secties-voor-m
 
 ## Op naar 'Doel 3' en voorbereiding
 
-In het algemene stappenplan spreken we over 3 doelen en kan men stoppen op het moment dan hun doel is behaald.
+In het algemene stappenplan spreken we over 3 doelen. Men kan stoppen zodra het eigen doel is behaald.
 
 1. Snel een prototype maken met componenten op basis van het Start-thema.
 1. Voor een langere periode met componenten werken op basis van het Start-thema.
@@ -38,7 +38,7 @@ Elk doel bouwt voort op het vorige. We geven steeds aan wanneer je een doel hebt
 
 **Voor een complete migratie met een eigen thema zal je doel 3 willen behalen.**
 
-Voor je het stappenplan doorloopt is het verstandig om de volgende documentatie te hebben gelezen:
+Voordat je begint, is het slim om de volgende documentatie te hebben gelezen:
 
 - [Figma structuur](/handboek/huisstijl/themas/start-thema)
 - [Start-thema](/handboek/huisstijl/themas/start-thema)
@@ -413,13 +413,13 @@ In deze video bekijken we de huisstijl-opties van gemeente Voorbeeld en laten we
 
 :::info[Migratie informatie]
 
-Als je migreert heb je eerder Brand tokens voor jouw organisatie vastgelegd in Tokens Studio. Het is niet nodig om al die Brand tokens opnieuw aan te maken.
+Als je migreert, heb je eerder Brand tokens voor jouw organisatie vastgelegd in Tokens Studio. Het is niet nodig om al die Brand tokens opnieuw aan te maken.
 
-- Open Tokens Studio in een ander bestand zodat je je 'oude' JSON kunt bekijken.
+- Open Tokens Studio in een ander bestand, zodat je je 'oude' JSON kunt bekijken.
 - Maak de afweging welke Brand tokens je nodig hebt voor jouw organisatie.
-- Kopieer en plak deze Brand tokens vervolgens naar de 'brand' set binnen de nieuwe JSON.
+- Kopieer en plak deze Brand tokens vervolgens naar de 'brand' set in de nieuwe JSON.
 
-Omdat het Start-thema vrij algemene waardes bevat binnen de basis-tokens is de kans groot dat je aan kleur en typografie tokens voldoende hebt. Daarnaast is het goed om te weten dat je huisstijl-opties ook direct op het Common niveau kan doorvoeren. Verderop in het stappenplan lees je daar meer over.
+Omdat het Start-thema vrij algemene waardes bevat binnen de basis-tokens, is de kans groot dat je met kleur en typografie tokens al voldoende hebt. Daarnaast is het goed om te weten dat je huisstijl-opties ook direct op het Common niveau kunt doorvoeren. Verderop in het stappenplan lees je daar meer over.
 
 🎥 [Video: Brand tokens overzetten](https://youtu.be/iA_S4sexh3o)
 
@@ -566,13 +566,13 @@ Je kunt nu met NL Design System componenten werken op basis van een eigen thema.
 
 :::info[Migratie informatie]
 
-In principe ben je nu gemigreerd. Maar misschien zit je nog met de volgende vraagstukken:
+In principe ben je nu gemigreerd, maar misschien zit je nog met de volgende vraagstukken:
 
 - Wat doe ik met mijn huidige bibliotheken?
 - Wat doe ik met mijn lokale bibliotheek?
 - Wat doe ik met mijn prototypes?
 
-Daar vind je meer informatie over in de 'extra secties voor migratie'...
+Daarover vind je meer informatie in de onderstaande extra secties voor migratie.
 
 :::
 
@@ -580,12 +580,12 @@ Daar vind je meer informatie over in de 'extra secties voor migratie'...
 
 ### Wat doe ik met mijn huidige bibliotheken?
 
-Je doorloopt dit migratie stappenplan omdat je ooit eerder NL Design System bibliotheken dupliceerde. Wat doe je nu met deze 'oude' bibliotheken? Die gaan we langzaam uitfaseren. In het engels is daar de mooie term 'Deprecation' voor. Doorloop de volgende stappen.
+Je doorloopt dit migratie-stappenplan omdat je eerder NL Design System bibliotheken hebt gedupliceerd. Maar wat doe je nu met deze ‘oude’ bibliotheken? Die gaan we stap voor stap uitfaseren. In het Engels noemen we dat ‘Deprecation’. Doorloop de volgende stappen.
 
 🎥 [Video: 'Oude' bibliotheken uitfaseren](https://youtu.be/Kabhmi-e8Qw)
 
 - Open de 'oude' bibliotheek of bibliotheken.
-- Hernoemen deze bestanden naar `deprecated-{naam-van-biblitoheek}`. Zo herken je componenten met een connectie naar deze verouderde versie.
+- Hernoem deze bestanden naar `deprecated-{naam-van-biblitoheek}`. Zo herken je componenten met een connectie hebben met deze verouderde versie.
 - Plak een grote 'Depricated' sticker op de Cover.
 - Publiceer deze versie.
 - '[Unpublish](https://help.figma.com/hc/en-us/articles/360039236853-Unpublish-a-library)' nu de bibliotheek of bibliotheken.
@@ -596,14 +596,14 @@ Heb je een lokale bibliotheek? Dan kunnen de stappen die je moet nemen verschill
 
 #### Nieuwe bibliotheken
 
-Sowieso zul je de nieuwe bibliotheken willen koppelen.
+Je zult sowieso de nieuwe bibliotheken willen koppelen.
 
-- Open je Lokale bibliotheek.
+- Open je lokale bibliotheek.
 - Koppel de nieuwe bibliotheken.
 
 #### Componenten binnen lokale componenten
 
-Misschien heb je binnen de lokale componenten gebruik gemaakt van componenten uit een 'oude' bibliotheek. Denk bijvoorbeeld aan een Button, Paragraph of icoon. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek die door de naamswijziging inmiddels begint met `deprecated-*`.
+Misschien maak je binnen de lokale componenten gebruik van componenten uit een 'oude' bibliotheek. Denk bijvoorbeeld aan een Button, Paragraph of icoon. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek, die door de naamswijziging nu begint met `deprecated-*`.
 
 ![Screenshot toont Figma waarbij het zichtbaar is dat een component verwijst naar 'oude' bibliotheek](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_deprecated-herkennen.png)
 
@@ -615,42 +615,42 @@ Via de '[Swap instance](https://help.figma.com/hc/en-us/articles/360039150413-Sw
 
 Ook in je lokale bibliotheek wil je verwijzen naar het 'nieuwe' JSON bestand met design tokens.
 
-- Maak via Tokens Studio connectie met het nieuwe JSON bestand.
+Maak via Tokens Studio connectie met het nieuwe JSON bestand.
 
-Heb je voor lokale componenten design tokens vastgelegd? Dan leven deze nog in het 'oude' JSON bestand en missen ze in de 'nieuwe'. Laten we ze toevoegen.
+Heb je voor lokale componenten design tokens vastgelegd? Dan leven deze nog in het 'oude' JSON bestand en ontbreken ze in het 'nieuwe'. Laten we ze toevoegen.
 
 🎥 [Video: Design tokens van lokale componenten overzetten](https://youtu.be/SoJ9zK_g35g)
 
-- Open Tokens Studio in een ander bestand zodat je je 'oude' JSON kunt bekijken.
-- Kopieer de design tokens sets van je lokale componenten.
+- Open Tokens Studio in een ander bestand, zodat je je 'oude' JSON kunt bekijken.
+- Kopieer de design tokens van je lokale componenten.
 - Ga terug naar je lokale bibliotheek en voeg de design tokens van je lokale componenten toe.
-- Verwijs de design tokens naar de juiste Common tokens.
+- Verwijs deze design tokens naar de juiste Common tokens.
 - Push de wijzigingen naar GitHub en maak een Pull Request aan.
 
 ### Wat doe ik met mijn prototypes?
 
-Heb je prototypes gemaakt dan heb je dat gedaan op basis van de 'oude' Figma bibliotheken. Wat je met deze prototypes gaan doen hangt er vanaf...
+Heb je prototypes gemaakt, dan zijn die gebaseerd op de 'oude' Figma bibliotheken. Wat je met deze prototypes doet, hangt af van het gebruik:
 
-- Is het een prototype waar je niks meer mee gaat doen? Laat ze dan staan zoals ze zijn.
-- Is het een prototype waar je nog wel iets meer gaat doen of zelfs actief mee bezig bent? Dan gaan we de nieuwe bibliotheken een het prototype koppelen.
+- Is het een prototype dat je niet meer gebruikt? Laat het dan gewoon staan zoals het is.
+- Ga je het prototype nog gebruiken of werk je er actief aan? Koppel het dan aan de nieuwe bibliotheken.
 
-Daarbij kun je gebruik maken van de [Figma's Swap Library functionaliteit](https://help.figma.com/hc/en-us/articles/4404856784663-Swap-style-and-component-libraries).
+Gebruik hiervoor [Figma's Swap Library functionaliteit](https://help.figma.com/hc/en-us/articles/4404856784663-Swap-style-and-component-libraries).
 
 🎥 [Video: Prototype koppelen aan nieuwe bibliotheken](https://youtu.be/zfMcHOA2_3U)
 
-Het kan voorkomen dat eventuele 'overwrites', bijvoorbeeld een tekstaanpassing op een Button, worden teruggezet naar de oorspronkelijke tekst die meekomt uit de bibliotheek. Daarom is het verstandig om 2 dingen te doen.
+Het kan gebeuren dat eventuele 'overwrites', bijvoorbeeld een tekstaanpassing op een Button, worden teruggezet naar de oorspronkelijke tekst die meekomt uit de bibliotheek. Daarom is het verstandig om 2 dingen te doen.
 
-Laten we er eerst voor zorgen dat je sowieso niks kwijt raakt.
+Laten we er eerst voor zorgen dat je sowieso niks kwijtraakt.
 
-1. Open het prototype en voeg de huidige versie toe aan de [Figma's Version History](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history). Geef deze versie een herkenbare naam bijvoorbeeld 'Swap Library'. Op die manier kun je het prototype altijd terugzetten naar deze huidige versie.
-1. Maak ook een kopie van het prototype. Dan heb je altijd nog een back-up en kun je 'overwrites' zoals teksten gemakkelijk kopiëren/plakken.
+1. Open het prototype en voeg de huidige versie toe aan [Figma's Version History](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history). Geef deze versie een herkenbare naam, bijvoorbeeld 'Swap Library'. Zo kun je het prototype altijd terugzetten naar deze huidige versie.
+1. Maak ook een kopie van het prototype. Dan heb je altijd nog een back-up en kun je 'overwrites' zoals teksten gemakkelijk kopiëren en plakken.
 
 Ok laten we er nu voor zorgen dat je prototype gekoppeld wordt aan de 'nieuwe' bibliotheken.
 
 - Open het prototype.
 - Voeg de nieuwe bibliotheken toe.
-- Omdat de 'oude' bibliotheken niet langer beschikbaar zijn worden deze 'gemist'.
-- Klik op 'View missing libraries'
+- Omdat de 'oude' bibliotheken niet langer beschikbaar zijn, worden deze als 'gemist' weergegeven.
+- Klik op 'View missing libraries'.
 
 ![Screenshot toont ...](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_missing-libraries.png)
 
@@ -662,7 +662,7 @@ Ok laten we er nu voor zorgen dat je prototype gekoppeld wordt aan de 'nieuwe' b
 
 ![Screenshot toont ...](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_swap-library.png)
 
-Loop voor alle zekerheid de componenten steekproefgewijs langs om te zien of er nog steeds een connectie is met een 'oude' bibliotheek. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek die door de naamswijziging inmiddels begint met `deprecated-*`.
+Loop voor de zekerheid de componenten steekproefsgewijs na om te controleren of er geen connectie meer is met een 'oude' bibliotheek. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek die begint met `deprecated-*`.
 
 ## Van Figma naar code
 
