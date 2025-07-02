@@ -18,17 +18,17 @@ keywords:
 
 Vanuit het NL Design System bieden we het 'Start-thema' aan. De stijl van dit Start-thema hebben we vastgelegd in een set aan 'basis-tokens'. Deze basis-tokens leven op het ['Common' niveau](/handboek/design-tokens/).
 
-Op deze pagina beschrijven we het doel en de stijl van het Start-thema. Daarnaast vind je hier informatie over het doel en de toepassing van de basis-tokens.
+Op deze pagina lees je wat het Start-thema is, welke stijlkeuzes er zijn gemaakt en hoe de basis-tokens werken.
 
 ## Doel van het Start-thema
 
-Met het Start-thema bieden we organisaties een 'startpunt'. Het thema bevat toegankelijke en gebruiksvriendelijke standaarden, en maakt het mogelijk om stap voor stap de huisstijl van je organisatie door te voeren. Daardoor kun je snel starten met een consistente en inclusieve huisstijl, zonder alles zelf vanaf de grond op te bouwen.
+Met het Start-thema bieden we organisaties een stevig 'startpunt'. Het thema bevat toegankelijke en gebruiksvriendelijke standaarden, zodat je stap voor stap de huisstijl van jouw organisatie kunt doorvoeren. Zo kun je direct aan de slag met een consistente en inclusieve huisstijl, zonder alles zelf op te bouwen.
 
-![Stijl van het Start-thema uitgebeeld door middel van een donkerblauw vlak waarop met witte letters staat geschreven: Start-thema. Eenvoudig en neutraal. Rechts staat in dezelfde donkerblauwe kleur Nederland afgebeeld als illustratie.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_stijl.png)
+![Stijl van het Start-thema: een donkerblauw vlak met witte letters ‘Start-thema. Eenvoudig en neutraal.’ Rechts een illustratie van Nederland in dezelfde kleur.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_stijl.png)
 
 ## Stijl van het Start-thema
 
-De stijl is bewust eenvoudig en neutraal, maar er zijn wel duidelijke keuzes gemaakt in typografie, kleurgebruik en iconografie.
+De stijl is bewust eenvoudig en neutraal. Toch zijn er duidelijke keuzes gemaakt voor typografie, kleuren en iconen.
 
 ### Typografie
 
@@ -50,17 +50,17 @@ Ook is er direct een dark-mode beschikbaar.
 
 ![Tabler logo met op de achtergrond allerlei verschillende iconen uit deze set.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_functionele-iconen.png)
 
-Voor functionele iconen maken we gebruik van een selectie uit de [Tabler iconenset](https://tabler-icons.io/). Deze set bestaat uit meer dan 3100 outline iconen die open source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
+Voor functionele iconen gebruiken we een selectie uit de [Tabler iconenset](https://tabler-icons.io/). Deze open-source set bevat meer dan 3100 outline iconen en mag ook binnen jouw organisatie worden gebruikt.
 
 Let op: deze set wordt niet door het NL Design System beheerd. Gebruik is op eigen verantwoordelijkheid. Mis je een icoon? Dan kun je deze zelf toevoegen.
 
-Aangezien de originele iconen uit lijnen van 2px bestaan , die niet meeschalen met het formaat, hebben we ze omgezet naar vaste vormen (outline stroke), in lijn met onze [richtlijnen rondom iconen](/richtlijnen/stijl/iconen).
+Aangezien de originele iconen uit lijnen van 2px bestaan die niet meeschalen met het formaat, hebben we ze omgezet naar vaste vormen (outline stroke). Dit sluit aan bij onze [richtlijnen rondom iconen](/richtlijnen/stijl/iconen).
 
 #### Toptaak iconen
 
 ![Gemeente iconen logo met op de achtergrond allerlei verschillende iconen uit deze set.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_voorbeeld-thema_toptaak-iconen.png)
 
-Voor toptaak iconen maken we gebruik van de outline versie van [OpenGemeenten iconenset](https://www.gemeenteniconen.nl/). Deze set bestaat uit meer dan 200 iconen die open source worden aangeboden. Je mag deze iconenset dus ook gebruiken voor jouw organisatie.
+Voor toptaak iconen maken we gebruik van de outline-versie van de [OpenGemeenten iconenset](https://www.gemeenteniconen.nl/). Deze set met meer dan 200 iconen is ook open source en mag je gebruiken.
 
 Ook deze set valt buiten ons beheer. Mis je een icoon? Neem dan contact op met [OpenGemeenten](https://www.gemeenteniconen.nl/doe-mee).
 
@@ -129,7 +129,7 @@ Omdat we uiteenlopende huisstijlen willen ondersteunen, is de set basis-tokens r
 
 Gebruikt jouw organisatie één lettertype voor zowel tekst als koppen? Dan hoef je enkel de waarde van `basis.text.font-family.default` aan te passen.
 
-Wil je koppen een ander lettertype geven, dan pas je `basis.heading.font-family` afzonderlijk aan.
+Wil je koppen een ander lettertype geven? Dan pas je `basis.heading.font-family` afzonderlijk aan.
 
 ![De afbeelding toont 2 voorbeelden. Links wordt voor tekst en headings hetzelfde lettertype gebruikt. Rechts wordt voor de headings een andere lettertype gebruikt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_voorbeeld-a.png)
 
@@ -160,7 +160,7 @@ Binnen de basis-tokens zijn enkele speciale groepen aangewezen. Deze hebben extr
 
 :::tip[Tip]
 
-Het asterisk-symbool `(*)` betekent dat dit geldt voor alle tokens die met deze termen beginnen. `basis.heading.*` dekt dus `basis.heading.font-family`, `basis.heading.font-weight`, etc.
+Het asterisk-symbool `(*)` betekent dat dit geldt voor alle tokens die met deze termen beginnen. `basis.heading.*` dekt dus `basis.heading.font-family`, `basis.heading.font-weight` etcetera. 
 
 :::
 
@@ -190,7 +190,7 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 #### Lettergewicht
 
 `basis.text.font-weight.default`
-: Standaard gewicht voor reguliere tekst
+: Standaard gewicht voor reguliere tekst.
 
 `basis.text.font-weight.bold`
 : Gewicht voor vetgedrukte tekst.
@@ -210,7 +210,7 @@ De waarden van deze tokens zijn in `rem` genoteerd zodat tekst automatisch schaa
 
 #### Regelhoogte
 
-Voor elke lettergrootte is er een corresponderende basis token voor regelhoogte beschikbaar:
+Voor elke lettergrootte is er een corresponderende basis-token voor regelhoogte beschikbaar:
 
 - `basis.text.line-height.sm`
 - `basis.text.line-height.md`
@@ -241,7 +241,7 @@ Laten we beginnen met de eerste as.
 
 #### As 1: Doel
 
-Kleur gebruik je altijd met een bepaalt doel, een intentie. Bijvoorbeeld:
+Kleur gebruik je altijd met een bepaald doel of intentie. Bijvoorbeeld:
 
 - Huisstijl
 - Interactie
@@ -297,7 +297,7 @@ Gebruik je meerdere interactiekleuren? Dan kun je `action-2` apart instellen.
 
 ##### Disabled
 
-Gebruik `disabled` om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) of [Progress List](/progress-list). Voor elementen die disabled zijn worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel [genoeg contrast](/wcag/1.4.3/) hebben.
+Gebruik `disabled` om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) en [Progress List](/progress-list). Voor elementen die disabled zijn, worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel [genoeg contrast](/wcag/1.4.3/) hebben.
 
 ![De afbeelding toont de componenten Breadcrumb Navigation, Page Number Navigation en Progress List met grijze kleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-disabled.png)
 
@@ -316,12 +316,12 @@ Denk hierbij aan componenten zoals [Alert](/alert), [Progress List](/progress-li
 
 ##### Highlight & Selected
 
-- `highlight`: Gebruik je om iets te markeren of uit te lichten, bijvoorbeeld met de [Mark](/mark) component.
-- `selected`: Gebruik je voor actieve selecties, bijvoorbeeld in een Combobox of Tabel.
+- `highlight`: Gebruik dit om iets te markeren of uit te lichten, bijvoorbeeld met de [Mark](/mark) component.
+- `selected`: Gebruik dit voor actieve selecties, bijvoorbeeld in een Combobox of Table.
 
 #### As 2: Toepassing
 
-Naast het doel, gebruik je kleuren ook afhankelijk van de toepassing. Denk aan:
+Naast het doel gebruik je kleuren ook afhankelijk van de toepassing. Denk aan:
 
 - Achtergrond
 - Voorgrond (tekst en iconen)
@@ -349,7 +349,7 @@ Voor deze toepassingen gebruiken we de volgende termen, waarin ook status en hi�
 
 ![De afbeelding toont as 1, enkele termen verticaal uitgelijnd. Horizontaal zijn de termen van as 2 ook goed zichtbaar.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-as-2.png)
 
-Uitleg per toepassing inclusief richtlijnen die zorgen voor voldoende kleurcontrast.
+Hieronder lees je per toepassing wat het betekent, inclusief richtlijnen die zorgen voor voldoende kleurcontrast.
 
 ##### `bg-document`
 
@@ -357,7 +357,7 @@ Algemene achtergrondkleur.
 
 ##### `bg-subtle`
 
-Alternatieve achtergrondkleur t.o.v. `bg-document`, meestal iets donkerder.
+Alternatieve achtergrondkleur ten opzichte van `bg-document`, meestal iets donkerder.
 
 ##### `bg-default`
 
@@ -377,7 +377,7 @@ Subtiele lijnkleur, inzetbaar als er geen contrast van 3:1 vereist is.
 
 ##### `border-default`
 
-Standaard lijnkleur. Moet 3:1 of meer contrast hebben t.o.v. `bg-default`.
+Standaard lijnkleur. Moet 3:1 of meer contrast hebben ten opzichte van `bg-default`.
 
 ##### `border-hover`
 
@@ -385,27 +385,27 @@ Lijnkleur bij 'hover' status. Moet 3:1 of meer contrast hebben `bg-hover`.
 
 ##### `border-active`
 
-Lijnkleur voor 'active' of 'selected' status. Moet 3:1 of meer contrast hebben t.o.v. `bg-active`.
+Lijnkleur voor 'active' of 'selected' status. Moet 3:1 of meer contrast hebben ten opzichte van `bg-active`.
 
 ##### `color-default`
 
-Standaard tekstkleur. Moet 4.5:1 of meer contrast hebben t.o.v. `bg-default`.
+Standaard tekstkleur. Moet 4.5:1 of meer contrast hebben ten opzichte van `bg-default`.
 
 ##### `color-hover`
 
-Tekstkleur bij 'hover' status. Moet 4.5:1 of meer contrast hebben t.o.v. `bg-hover`.
+Tekstkleur bij 'hover' status. Moet 4.5:1 of meer contrast hebben ten opzichte van `bg-hover`.
 
 ##### `color-active`
 
-Tekstkleur bij 'active' of 'selected' status. Moet 4.5:1 of meer contrast hebben t.o.v. `bg-active`.
+Tekstkleur bij 'active' of 'selected' status. Moet 4.5:1 of meer contrast hebben ten opzichte van `bg-active`.
 
 ##### `color-subtle`
 
-Alternatieve, subtielere voorgrondkleur t.o.v. `color-document`. Moet 4.5:1 of meer contrast hebben t.o.v. `bg-subtle`.
+Alternatieve, subtielere voorgrondkleur ten opzichte van `color-document`. Moet 4.5:1 of meer contrast hebben ten opzichte van `bg-subtle`.
 
 ##### `color-document`
 
-Algemene voorgrondkleur. Moet 4.5:1 of meer contrast hebben t.o.v. `bg-subtle`.
+Algemene voorgrondkleur. Moet 4.5:1 of meer contrast hebben ten opzichte van`bg-subtle`.
 
 #### Combinatie van As 1 en As 2
 
@@ -428,16 +428,16 @@ Door termen van As 1 (doel) en As 2 (toepassing) te combineren, resulteert dat i
 
 #### Inverse set
 
-Als we het hierbij zouden laten zou je enkel subtiel getinte componenten hebben. Maar soms wil je componenten juiste 'stevig' neerzetten. Denk aan een primaire knop die de aandacht moet trekken. Of een [Page Footer](/page-footer) die je visueel duidelijk wilt scheiden van de content erboven.
+Als we het hierbij zouden laten, zouden alle componenten subtiel getint blijven. Maar soms wil je juist componenten 'stevig' neerzetten. Denk aan een primaire knop die echt de aandacht moet trekken, of een [Page Footer](/page-footer) die je visueel duidelijk wilt scheiden van de content erboven.
 
 ![De afbeelding toont de componenten Button en Page Footer zijn 2 keer afgebeeld. Links hebben ze subtiele kleuren, rechts hebben ze een stevige kleurstelling.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-inverse.png)
 
-Daarom is er ook een 'inverse' set tokens beschikbaar.
+Daarom is er ook een 'inverse' set tokens beschikbaar:
 
 - `basis.color.accent-1-inverse.bg-document`
 - `basis.color.accent-1-inverse.bg-subtle`
 - `basis.color.accent-1-inverse.bg-default`
-- etc.
+- etcetera
 
 :::tip[Tip]
 
@@ -453,21 +453,21 @@ Onderstaande afbeelding laat zien hoe de basis-tokens voor kleur binnen een inte
 
 #### Transparant
 
-Er is een specifieke basis token beschikbaar voor transparantie: `basis.color.transparent`. Deze token zorgt ervoor dat transparantie eenduidig vertaald wordt naar verschillende outputformaten (bijv. CSS of design tools).
+Er is een specifieke basis-token beschikbaar voor transparantie: `basis.color.transparent`. Deze token zorgt ervoor dat transparantie eenduidig wordt vertaald naar verschillende outputformaten, zoals CSS of design tools.
 
 #### Focus
 
 De focusstatus in het Start-thema is visueel krachtig: felgeel gecombineerd met zwart en een zwart-wit gestreepte rand.
 
-Deze kleurwaarden zijn bewust 'hardcoded', zodat de focus status altijd afwijkt van alle andere content. Dit bevordert de toegankelijkheid.
+Deze kleurwaarden zijn bewust 'hard-coded', zodat de focus status altijd afwijkt van alle andere content. Dit bevordert de toegankelijkheid.
 
-Bij formulieren vermijden we een gele achtergrond, om verwarring met auto-complete te voorkomen.
+Bij formulieren vermijden we een gele achtergrond om verwarring met auto-complete te voorkomen.
 
 ### Basis-tokens voor ruimte
 
 Voor ruimtelijke indeling (`space`) binnen en tussen componenten zijn basis-tokens beschikbaar. Deze tokens zijn gebaseerd op het ['spacing concept' dat we het NL Design System aanhouden](/richtlijnen/stijl/ruimte/spacing-concepten).
 
-Dit zorgt voor tokens met termen zoals `inline`, `block`, `text`, `column` en `row`. Gecombineerd met opties op basis van 't-shirt sizing':
+Dit zorgt voor tokens met termen zoals `inline`, `block`, `text`, `column` en `row`, gecombineerd met opties op basis van 't-shirt sizing':
 
 - `basis.space.inline.sm`
 - `basis.space.inline.md`
@@ -484,7 +484,7 @@ Dit zorgt voor tokens met termen zoals `inline`, `block`, `text`, `column` en `r
 - `basis.space.row.sm`
 - `basis.space.row.md`
 - `basis.space.row.lg`
-- etc.
+- etcetera
 
 :::tip[Tip]
 
@@ -499,16 +499,16 @@ Wil je componenten een specifieke afmeting (`size`) geven? Ook daar zijn basis-t
 - `basis.size.sm`
 - `basis.size.md`
 - `basis.size.lg`
-- etc.
+- etcetera
 
 #### Afmeting van iconen
 
-Voor het formaat van iconen is een een specifieke set aan basis-tokens beschikbaar.
+Voor het formaat van iconen is er een specifieke set aan basis-tokens beschikbaar:
 
 - `basis.size.icon.sm`
 - `basis.size.icon.md`
 - `basis.size.icon.lg`
-- etc.
+- etcetera
 
 :::tip[Tip]
 
@@ -537,7 +537,7 @@ De minimale afmeting die WCAG voorschrijft is 24x24 CSS-pixels, maar als best pr
 
 ### Basis-tokens voor afgeronde hoeken
 
-Voor afgeronde hoeken (`border-radius`) zijn de volgende basis-tokens beschikbaar.
+Voor afgeronde hoeken (`border-radius`) zijn de volgende basis-tokens beschikbaar:
 
 - `basis.border-radius.sm`
 - `basis.border-radius.md`
@@ -546,7 +546,7 @@ Voor afgeronde hoeken (`border-radius`) zijn de volgende basis-tokens beschikbaa
 
 ### Basis-tokens voor kader- of lijndikte
 
-Voor kader- of lijndikte (`border-width`) zijn de volgende basis-tokens beschikbaar.
+Voor kader- of lijndikte (`border-width`) zijn de volgende basis-tokens beschikbaar:
 
 - `basis.border-width.sm`
 - `basis.border-width.md`
@@ -554,7 +554,7 @@ Voor kader- of lijndikte (`border-width`) zijn de volgende basis-tokens beschikb
 
 ### Basis-tokens voor schaduw
 
-Voor schaduw (`box-shadow`) zijn de volgende basis-tokens beschikbaar.
+Voor schaduw (`box-shadow`) zijn de volgende basis-tokens beschikbaar:
 
 - `basis.box-shadow.sm`
 - `basis.box-shadow.md`
