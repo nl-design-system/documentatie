@@ -1,0 +1,692 @@
+---
+title: Figma mirgatie-stappenplan · Designer · Handboek
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Figma mirgatie-stappenplan
+description: Een stappenplan dat je kan volgen om te migreren naar de nieuwe Figma bibliotheken van NL Design System.
+slug: /handboek/designer/figma-migratie-stappenplan
+unlisted: true
+---
+
+# Figma migratie-stappenplan
+
+## Over dit migratie-stappenplan
+
+Dit migratie-stappenplan is de 'Big Bieb Sync'. Zoals aangegeven is er zoveel veranderd dat een verse installatie sneller is dan 1-voor-1 aan jouw kant alles aan te passen. Met dit stappenplan helpen we je stap voor stap te migeren.
+
+:::info[Migratie informatie]
+
+Het migratie-stappenplan is grotendeels gelijk aan het algemene [Figma stappenplan](/handboek/designer/figma-stappenplan). Maar dan aangevuld met extra informatie voor iedereen die al eerder te maken heeft gehad met Figma bibliotheken en Tokens Studio.
+
+:::
+
+Onderaan deze pagina vind je [extra secties voor migratie](#extra-secties-voor-migratie) waarbij we met je meedenken over de volgende vraagstukken:
+
+- Wat doe ik met mijn huidige bibliotheken?
+- Wat doe ik met mijn lokale bibliotheek?
+- Wat doe ik met mijn prototypes?
+
+## Op naar 'Doel 3' en voorbereiding
+
+In het algemene stappenplan spreken we over 3 doelen en kan men stoppen op het moment dan hun doel is behaald.
+
+1. Snel een prototype maken met componenten op basis van het Start-thema.
+1. Voor een langere periode met componenten werken op basis van het Start-thema.
+1. Voor een langere periode met componenten werken op basis van een eigen thema.
+
+Elk doel bouwt voort op het vorige. We geven steeds aan wanneer je een doel hebt behaald, zodat je weet wanneer je verder kunt, of juist klaar bent.
+
+**Voor een complete migratie met een eigen thema zal je doel 3 willen behalen.**
+
+Voor je het stappenplan doorloopt is het verstandig om de volgende documentatie te hebben gelezen:
+
+- [Figma structuur](/handboek/huisstijl/themas/start-thema)
+- [Start-thema](/handboek/huisstijl/themas/start-thema)
+- [Voorbeeld-thema](/handboek/huisstijl/themas/voorbeeld-thema)
+
+Loop je ergens vast? Geen zorgen. [Neem contact op met het kernteam](/project/kernteam) en we denken graag met je mee.
+
+![Cover pagina's van Figma bibliotheek met Start-thema en Voorbeeld-thema.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_intro.jpg)
+
+OK. Aan de slag!
+
+## Figma bibliotheken
+
+:::info[Migratie informatie]
+
+Voor de migratie plaats je de nieuwe bibliotheken naast je huidige bibliotheken.
+
+🎥 [Video: Nieuwe bibliotheken positioneren](https://youtu.be/AX-z_Rjm3ik)
+
+:::
+
+### Maak een Figma project aan
+
+We adviseren je om binnen Figma een apart ‘Project’ voor je Design System aan te maken. Zo houd je een duidelijke scheiding tussen je Design System en overige design bestanden.
+
+[Meer informatie over Figma bestanden en projecten](https://help.figma.com/hc/en-us/sections/360006050633-Files-and-projects)
+
+Meer informatie over Figma kun je vinden op [help.figma.com](https://help.figma.com/) en [forum.figma.com](https://forum.figma.com/).
+
+### Figma bibliotheken dupliceren
+
+De Figma bibliotheken zijn Open Source beschikbaar en te bereiken via Figma Community.
+
+🎥 [Video: Bibliotheken dupliceren](https://youtu.be/07qlC6bwpf8)
+
+- [Ga naar de Figma Community profielpagina van NL Design System](https://www.figma.com/@nldesignsystem).
+- Klik op 'NL Design System - Bibliotheek'.
+- Klik op 'Open'.
+
+Het duplicaat staat nu in je 'Drafts'. Verplaats de bibliotheek naar het Figma project dat je hebt aangemaakt.
+
+- Klik op het chevron icoon naast de naam van 'NL Design System - Bibliotheek (Community)'.
+- Kies voor 'Move file...'.
+- Selecteer de gewenste locatie.
+
+Herhaal deze stappen voor de 'NL Design System - ToDo Bibliotheek'.
+
+Om duidelijk te maken dat deze bestanden nu binnen jouw organisatie staan, pas je de naam aan.
+
+- Hernoem `NL Design System - Bibliotheek (Community)` naar `NL Design System - Bibliotheek - {naam-organisatie}`.
+- Hernoem `NL Design System - ToDo Bibliotheek (Community)` naar `NL Design System - ToDo Bibliotheek - {naam-organisatie}`.
+
+### Figma bibliotheken publiceren
+
+De Figma bestanden zijn nog geen bibliotheken. Om er bibliotheken van te maken die je vanuit andere bestanden kan aanroepen, moeten ze worden gepubliceerd.
+
+🎥 [Video: Bibliotheken publiceren](https://youtu.be/8Kj6C_LQ9gs)
+
+- Klik op 'Assets'.
+- Klik op 'Publish...'.
+
+Herhaal deze stappen voor de `NL Design System - ToDo Bibliotheek`.
+
+### Figma bibliotheken koppelen
+
+Nadat de bestanden zijn gepubliceerd, moeten ze aan elkaar worden gekoppeld. Hierdoor wordt de connectie tussen componenten uit beide bibliotheken hersteld.
+
+🎥 [Video: Bibliotheken koppelen](https://youtu.be/U8-yW1Lix-U)
+
+- Ga binnen `NL Design System - Bibliotheek - {naam-organisatie}` naar Assets.
+- Klik op 'Add more libraries'.
+- Zoek of browse naar de `NL Design System - ToDo Bibliotheek - {naam-organisatie}`.
+- Klik op 'Add to file'.
+
+Herhaal deze stappen, maar dan gezien vanuit de `NL Design System - ToDo Bibliotheek`.
+
+Helaas komt het voor dat componenten ondanks het koppelen toch hun connectie met de andere bibliotheek verliezen. Daarom is het verstandig om dit te controleren.
+
+- Ga binnen `NL Design System - Bibliotheek - {naam-organisatie}` naar Assets.
+- Klik op het boek icoon.
+- Klik op 'View missing libraries'.
+- Kies voor `NL Design System - ToDo Bibliotheek - {naam-organisatie}`.
+- Klik op 'Swap library'.
+
+Herhaal deze stappen, maar dan gezien vanuit de `NL Design System - ToDo Bibliotheek`.
+
+### Figma bibliotheken gebruiken
+
+Nu kun je de bibliotheken gebruiken voor het maken van prototypes. Hiervoor moet je de bibliotheken koppelen aan een Figma bestand.
+
+🎥 [Video: Bibliotheken gebruiken](https://youtu.be/q9jGU78Y6QQ)
+
+- Maak een nieuw bestand aan.
+- Maak een eerste Frame aan.
+- Klik op 'Browse team libraries'.
+- Zoek op 'nl design system'. De bibliotheken verschijnen vanzelf.
+- Klik op 'Add to file' voor de `NL Design System - Bibliotheek - {naam-organisatie}`.
+- Klik op 'Add to file' voor de `NL Design System - ToDo Bibliotheek - {naam-organisatie}`.
+
+Nu kun je componenten uit beide bibliotheken gebruiken voor het maken van een prototype.
+
+### Doel 1 behaald 🎉
+
+Je kunt nu stoppen als je doel was om snel een prototype te maken met componenten op basis van het Start-thema. Wil je voor een langere periode met deze componenten werken? Ga dan verder met het stappenplan.
+
+## Tokens Studio
+
+Design tokens staan buiten Figma opgeslagen in een JSON bestand. Of je nu het Start-thema blijft gebruiken of een eigen thema wilt doorvoeren: je wilt een connectie leggen met de design tokens. Dat doe je door gebruik te maken van Tokens Studio plugin.
+
+De plugin wordt regelmatig bijgewerkt. Hierdoor kunnen onderstaande stappen, video's en screenshots verouderd raken. Voor de meest up-to-date documentatie van de plugin ga je naar [docs.tokens.studio](https://docs.tokens.studio/).
+
+- Wil je enkel van het Start-thema gebruik maken? Vervolg dan het stappenplan.
+- Wil je een eigen thema doorvoeren? Ga dan verder bij '[Zelf een thema doorvoeren](#zelf-een-thema-doorvoeren)'.
+
+:::info[Migratie informatie]
+
+Voor de migratie ga je verder bij '[Zelf een thema doorvoeren](#zelf-een-thema-doorvoeren)'.
+
+:::
+
+## Tokens Studio gebruiken voor het Start-thema
+
+🎥 [Video: Tokens Studio gebruiken voor het Start-thema](https://youtu.be/DxWB4c3NPt0)
+
+- Open `NL Design System - Bibliotheek - {naam-organisatie}`.
+- Klik op 'Actions' (Cmd+K).
+- Zoek op 'Tokens Studio'.
+- Open 'Tokens Studio'.
+
+Het introductiescherm kan er anders uitzien, maar zorg ervoor dat je bij het tabblad ‘Settings’ terechtkomt.
+
+- Klik op 'Add new sync provider'.
+- Kies voor 'URL'.
+- Vul een naam in. Bijvoorbeeld: `Start-thema`.
+- Vul de volgende URL in:
+
+```
+https://raw.githubusercontent.com/nl-design-system/themes/refs/heads/main/packages/start-design-tokens/figma/start.tokens.json
+```
+
+- Klik op 'Save'.
+- Klik vervolgens op de tab ‘Tokens’ en... voilà! Daar zal je de tokens hebben.
+- Vink de checkboxes 'brand', 'common' en 'components' aan.
+
+De design tokens van het Start-thema zijn nu gekoppeld aan de Figma bibliotheek.
+
+Herhaal deze stappen, maar dan gezien vanuit de `NL Design System - ToDo Bibliotheek`.
+
+:::tip[Tip]
+
+Wil je het Voorbeeld-thema inladen? Dat kan! Vul dan de volgende URL in bij ‘Sync provider’:
+
+```
+https://raw.githubusercontent.com/nl-design-system/themes/refs/heads/main/packages/voorbeeld-design-tokens/figma/voorbeeld.tokens.json
+```
+
+:::
+
+🎥 [Video: Tokens Studio gebruiken voor het Voorbeeld-thema](https://youtu.be/3JGjxFk4Uwo)
+
+### Updates
+
+Het kernteam zit natuurlijk niet stil. We voeren geregeld updates door in de Figma bibliotheken én het JSON bestand met design tokens. Omdat je via een URL gekoppeld bent aan het JSON bestand, ben je automatisch up-to-date. Je kunt de Figma bibliotheken 'in sync' houden door de updates die wij doen, ook aan jouw kant door te voeren.
+
+Op de pagina ['Figma changelog'](/handboek/designer/figma-changelog) zie je welke updates zijn doorgevoerd. Wanneer je deze updates doorvoert, bepaal je helemaal zelf. We raden wel aan om dit met enige regelmaat te doen, zodat je zeker weet dat je met de nieuwste versies werkt.
+
+We sturen eens in de 2 maanden een reminder via Slack in het #nl-design-system-designers kanaal.
+
+### Doel 2 behaald 🎉
+
+Je kunt nu stoppen als je doel was om voor een langere periode met componenten te werken op basis van het Start-thema.
+
+Vervolg het stappenplan als je een eigen thema wilt doorvoeren.
+
+## Zelf een thema doorvoeren
+
+Als je een eigen thema wilt doorvoeren, ga je werken met GitHub en Tokens Studio. GitHub gebruik je om het JSON-bestand met design tokens op te slaan. Met de Tokens Studio plugin importeer, bewerk en exporteer je tokens in Figma.
+
+Bij elke stap vind je een video waarin we laten zien hoe we een thema doorvoeren voor de fictieve 'gemeente Voorbeeld'.
+
+Laten we beginnen aan de kant van GitHub.
+
+Eerlijk is eerlijk. Als je niet bekend bent met GitHub kunnen de volgende stappen lastig zijn. Loop je vast? Vraag dan een developer uit je team om hulp, of [neem contact op met het kernteam](/project/kernteam).
+
+### GitHub account aanmaken
+
+[Maak een account aan bij github.com](https://github.com/).
+
+### GitHub Repository
+
+Een repository kan je zien als de hoofdmap van je project. Binnen deze repository plaats je het JSON bestand met design tokens.
+
+Afhankelijk van de situatie van jouw organisatie zal worden bepaald waar het JSON bestand moet komen staan.
+
+**Situatie A**  
+Jouw organisatie heeft al een map met design tokens binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes).
+
+- Controleer wanneer de laatste wijziging op de design tokens heeft plaatsgevonden.
+- Bekijk wie deze wijzigingen heeft gedaan.
+
+![Screenshot van GitHub waarbij is af te lezen dat het JSON bestand 4 jaar geleden door ene Robbert voor het laatst is aangepast.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_history.jpg)
+
+Zijn de wijzigingen recent? En ken je de persoon die ze heeft gedaan? Stem dan even met elkaar af. Kom je er niet uit? Stel je vraag gerust in Slack.
+
+**Situatie B**  
+Jouw organisatie heeft nog géén map binnen de [NL Design System 'themes repository'](https://github.com/nl-design-system/themes). En dat wil je wel.
+
+[Neem contact op met het kernteam](/project/kernteam).
+
+**Situatie C**  
+Jouw organisatie werkt vanuit een eigen GitHub omgeving.
+
+- Stem met je developers af waar de design tokens geplaatst kunnen worden.
+- Hulp nodig? [Neem contact op met het kernteam](/project/kernteam).
+
+### Inhoud JSON met Start-thema kopiëren
+
+🎥 [Video: Inhoud JSON kopieren](https://youtu.be/KjwpybM48Gg)
+
+De Figma bibliotheken maken gebruik van het Start-thema. Het JSON bestand dat hierbij hoort staat in GitHub.
+
+- [Bekijk het JSON bestand met het Start-thema](https://github.com/nl-design-system/themes/blob/main/packages/start-design-tokens/figma/start.tokens.json).
+- Klik op 'Copy raw file'.
+
+![screenshot van GitHub waarbij er een cirkel om de functionaliteit van 'copy raw file' staat.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_copy-raw.jpg)
+
+### JSON bestand aanmaken
+
+:::info[Migratie informatie]
+
+Voor de migratie plaats je het nieuwe JSON bestand naast het huidige JSON bestand.
+
+🎥 [Video: JSON inwisselen](https://youtu.be/aCPGS7WIM-w)
+
+:::
+
+🎥 [Video: JSON bestand aanmaken](https://youtu.be/Bsws_tyLwl8)
+
+- Ga naar de locatie waar het JSON bestand moet komen staan.
+- Klik op 'Add file'. Je vindt deze functie rechtsboven.
+- Kies voor 'Create new file'.
+- Geef het bestand een naam. Bijvoorbeeld: `{naam-organisatie}.tokens.json`.
+- Plak de inhoud van het JSON bestand met het Start-thema.
+- Klik op 'Commit changes'.
+- Als commit message kun je noteren: `json met design tokens toegevoegd`.
+- Als branch kun je noteren: `add-tokens-json`
+- Klik op 'Propose changes'.
+- Klik op 'Create pull request'.
+- Geef development een seintje en zorg dat je pull request wordt goedgekeurd.
+
+Voor **situatie A en B** is dit een developer uit het kernteam. [Neem contact op met het kernteam](/project/kernteam).
+
+Voor **situatie C** is dit een developer van je eigen organisatie.
+
+### Personal access token aanmaken
+
+Ondanks de naam heeft een personal access token niets met design tokens te maken. Je hebt een personal access token nodig met de benodigde rechten om via Tokens Studio design tokens te kunnen importeren, bewerken én exporteren.
+
+🎥 [Video: Personal access token aanmaken](https://youtu.be/Fz0Hzs6QEao)
+
+- Ga naar [github.com/settings/tokens](https://github.com/settings/personal-access-tokens).
+- Klik op 'Generate new token'.
+
+**Vul de gegevens in**
+
+- Token name: Deze wordt enkel gebruikt voor GitHub zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld: `Tokens van {naam-organisatie}`.
+- Resource owner: Staan je tokens in de NL Design System 'themes repository'? Kies dan voor 'nl-design-system'. Staan de tokens in de GitHub omgeving van jouw organisatie? Selecteer deze dan als resource owner.
+- Expiration: Bepaal wanneer je personal access token zou moeten verlopen. Bijvoorbeeld na een half jaar. Je krijgt vanzelf een email wanneer deze datum in zicht komt.
+- Kies bij 'Repository access' voor 'Only select repositories'.
+- Selecteer de repository waar de tokens van jouw organisatie staan.
+- Klik onder 'Permissions' op 'Repository permissions'.
+- Kies bij 'Contents' voor 'Access: Read and write'.
+
+**Genereren en noteren**
+
+- Klik op 'Generate token'.
+- Kopieer je personal access token.
+- Bewaar je personal access token op een veilige plek waar je hem ook altijd terug kan vinden.
+
+**Let op!**  
+Deel je token nooit met iemand die geen toegang zou moeten hebben tot je repository. Behandel de token als je persoonlijke wachtwoord.
+
+### Tokens Studio activeren
+
+Nu je in GitHub alles hebt klaargezet, kunnen we in Figma via Tokens Studio een connectie leggen met de design tokens.
+
+🎥 [Video: Tokens Studio activeren](https://youtu.be/8i6pdhyrxG0)
+
+- Open `NL Design System - Bibliotheek - {naam-organisatie}`.
+- Klik op 'Actions' (Cmd+K).
+- Zoek op 'Tokens Studio'.
+- Activeer Tokens Studio.
+
+Het introductiescherm kan verschillen.
+
+![Screenshot van 2 verschillende introductieschermen van Tokens Studio. Op het linkerscherm staat een blauwe knop met de tekst 'Enter credentials'. Op het rechterscherm staat een knop met de tekst 'New empty file'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_ts-intros.jpg)
+
+Zie je een knop met de tekst 'Enter credentials' staan? Ga dan verder bij '[Tokens Studio koppelen aan JSON](#tokens-studio-koppelen-aan-json)'.
+
+Zie je een knop met de tekst 'New empty file' staan?
+
+- Klik op die knop.
+- Ga binnen Tokens Studio naar het tabblad 'Settings'.
+- Klik op 'Add new sync provider'.
+- Kies voor 'GitHub'.
+- Nu kun je de 'Credentials' gaan invullen.
+
+### Tokens Studio koppelen aan JSON
+
+🎥 [Video: Credentials invullen](https://youtu.be/Bpaajeb8Zow)
+
+Er staan standaard al gegevens ingevuld. Dat is prima. We passen aan wat nodig is.
+
+#### Name
+
+Deze naam wordt enkel gebruikt voor de plugin zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld: `{naam-organisatie} thema`.
+
+#### Personal access token
+
+Vul je personal access token in.
+
+#### Repository
+
+Als jouw JSON bestand in de Themes repository van NL Design System staat, kun je laten staan wat er nu staat: `nl-design-system/themes`.
+
+Staat het JSON bestand in een repository binnen de GitHub omgeving van jouw organisatie? Vul dan de gegevens van deze repository in.
+
+#### Branch
+
+Hier kun je `main` laten staan.
+
+#### Token Storage location
+
+Je kunt dit zien als het pad naar het JSON bestand binnen een repository. Dit pad kan per situatie verschillen.
+
+Het makkelijkst is om in GitHub naar je JSON bestand te gaan. Boven het bestand zie je een kruimelpad. Achter het kruimelpad vind je een functionaliteit om het pad te kopiëren. Gebruik die om het pad eenvoudig over te nemen.
+
+#### Base URL
+
+Dit is optioneel. Hier hoef je niets mee te doen.
+
+#### Opslaan
+
+- Klik op 'Save'.
+- De plugin zal aangeven dat er al tokens in de opgegeven ‘repo’ staan en vragen of je deze wilt binnenhalen.
+- Klik op ‘Yes’.
+
+### Design tokens bekijken
+
+🎥 [Video: Design tokens bekijken](https://youtu.be/6Ap0aeY0YPo)
+
+- Klik op het tabblad ‘Tokens’ en... Voila! Daar zul je de tokens hebben.
+- Zet de checkboxes voor 'brand', 'common' en 'components' aan.
+
+De termen Brand, Common en Component vind je ook terug in de naamgeving van het pagina overzicht van Figma.
+
+Zoals aangegeven bevatten de Figma bibliotheken het [Start-thema](/handboek/huisstijl/themas/start-thema). Voor deze 'stijl' zijn er al bepaalde waardes ingevuld voor typografie, kleur, spacing, etc. Deze waardes zijn 'hardcoded', oftewel direct ingevuld binnen de set van [Basis-tokens](/handboek/huisstijl/themas/start-thema) die je vindt op het Common niveau.
+
+Een prima 'Startpunt', maar jij wilt de huisstijl van jouw organisatie als thema doorvoeren.
+
+Omdat huisstijlen verschillen, verschillen ook de vervolgstappen. In plaats van dat we alle mogelijkheden uitschrijven, begeleiden we je via video’s stap voor stap terwijl we als voorbeeld de huisstijl van gemeente Voorbeeld toepassen.
+
+Uiteraard is het ook slim om de documentatie van de Tokens Studio plugin bij de hand te houden. Deze vind je op [docs.tokens.studio](https://docs.tokens.studio/).
+
+### Brand tokens aanmaken
+
+Je kunt de huisstijl-opties van jouw organisatie direct doorvoeren als waarde op het Common niveau. Maar je kunt ook eerst Brand tokens aanmaken, en daar vervolgens vanuit het Common niveau naar verwijzen. Laten we daarmee beginnen.
+
+In deze video bekijken we de huisstijl-opties van gemeente Voorbeeld en laten we zien hoe je hiervoor Brand tokens aanmaakt in Tokens Studio.
+
+🎥 [Video: Brand tokens aanmaken](https://youtu.be/r0r7djikGEk)
+
+:::info[Migratie informatie]
+
+Als je migreert heb je eerder Brand tokens voor jouw organisatie vastgelegd in Tokens Studio. Het is niet nodig om al die Brand tokens opnieuw aan te maken.
+
+- Open Tokens Studio in een ander bestand zodat je je 'oude' JSON kunt bekijken.
+- Maak de afweging welke Brand tokens je nodig hebt voor jouw organisatie.
+- Kopieer en plak deze Brand tokens vervolgens naar de 'brand' set binnen de nieuwe JSON.
+
+Omdat het Start-thema vrij algemene waardes bevat binnen de basis-tokens is de kans groot dat je aan kleur en typografie tokens voldoende hebt. Daarnaast is het goed om te weten dat je huisstijl-opties ook direct op het Common niveau kan doorvoeren. Verderop in het stappenplan lees je daar meer over.
+
+🎥 [Video: Brand tokens overzetten](https://youtu.be/iA_S4sexh3o)
+
+:::
+
+### Naar Brand tokens verwijzen
+
+Nadat je Brand tokens hebt aangemaakt, kun je hier naar gaan verwijzen vanuit het Common niveau. In deze video laten we zien hoe je dat doet.
+
+🎥 [Video: Naar Brand tokens verwijzen - deel 1](https://youtu.be/gJPvgNCNMSE)
+
+Het instellen van de kleuren kost even wat tijd, maar daarna heb je er geen omkijken meer naar. Het kleurcontrast staat dan al goed ingesteld op het Common niveau, waardoor je hier bij het ontwerpen of ontwikkelen van nieuwe componenten geen extra werk aan hebt. Heeft jouw organisatie voor bepaalde onderdelen geen eigen richtlijnen? Dan kun je gerust de waarden uit het Start-thema laten staan.
+
+In de volgende video zien we het resultaat van het verwijzen naar Brand tokens.
+
+🎥 [Video: Naar Brand tokens verwijzen - deel 2](https://youtu.be/sGhmlLKTEN8)
+
+### Brand tokens documenteren
+
+De Brand tokens zijn alleen nog zichtbaar in Tokens Studio. Voor mensen zonder Tokens Studio kan het fijn zijn om de Brand tokens ook te kunnen bekijken in Figma. In de volgende video laten we zien hoe je Brand tokens kunt documenteren via een handig documentatie-component.
+
+🎥 [Video: Brand tokens documenteren](https://youtu.be/5ZXhm-1vR3Q)
+
+:::tip[Tip]
+
+Als je een token naam of waarde aanpast in Tokens Studio, wordt deze wijziging automatisch bijgewerkt in je documentatie nadat je op de 'Apply to...' knop hebt geklikt.
+
+:::
+
+### Common tokens aanpassen
+
+De huisstijlkleuren zijn vastgelegd als Brand tokens, gekoppeld aan Common tokens én gedocumenteerd. Nu is het tijd om ook een ander lettertype door te voeren. Ook hier kun je Brand tokens voor aanmaken. Maar als 'voorbeeld' laten we zien hoe je huisstijl-opties ook direct op het Common niveau kan doorvoeren.
+
+🎥 [Video: Common tokens aanpassen](https://youtu.be/VPwnrQZQJxQ)
+
+**Let op!**  
+Tokens voor Font Family en Font Weight kunnen afzonderlijk van elkaar op tekst worden toegepast. Het is daarbij belangrijk om de naam van de gewicht aan te houden zoals deze in Figma is aangegeven. Bij een Font Family als `Roboto` is dat bijvoorbeeld `Bold`, en niet een waarde als `700`.
+
+### Huisstijlkeuzes op componenten
+
+Nu de kleuren en het lettertype zijn doorgevoerd, kunnen we gaan kijken hoe dit uitpakt op de componenten. Gebruik de pagina 'Component collage' als visuele check. Hier zie je direct hoe je keuzes uitpakken in de praktijk.
+
+Ben je tevreden? Dan kun je je huisstijlkeuzes doorvoeren op de gehele bibliotheek. In deze video laten we zien hoe je dit kan aanpakken.
+
+🎥 [Video: Componenten collage](https://youtu.be/SpAWzKYS4rw)
+
+### Componenten nalopen
+
+Nadat je huisstijl over de gehele bibliotheek is doorgevoerd, raden we aan om alle componenten na te lopen. Zo kun je controleren of er toch iets minder goed heeft uitgepakt dan gedacht. Het geeft je ook de mogelijkheid om op Component niveau de waarde van een token aan te passen. Denk aan het veranderen van de border-radius van knoppen, of het instellen van een groene kleur specifiek voor de primaire knop.
+
+🎥 [Video: Componenten nalopen](https://youtu.be/SpAWzKYS4rw)
+
+:::tip[Tip]
+
+We hebben gemerkt dat je soms nogmaals op 'Apply to Page' moet klikken om de aanpassingen doorgevoerd te zien worden.
+
+:::
+
+### Pushen naar GitHub en een pull request aanmaken
+
+Wanneer je de tokens naar wens hebt aangepast kun je deze wijzigingen in de bron doorvoeren.
+
+🎥 [Video: Pushen naar GitHub en een pull request aanmaken](https://youtu.be/80FPJOvUubA)
+
+Bespreek met een developer uit je team hoe jullie omgaan met pull requests. Vraag ook of er afspraken zijn over 'commit messages' of over de naamgeving van 'branches'.
+
+- Klik op ‘Push to Github’ binnen Tokens Studio.
+
+![Screenshot toont de Studio Token plugin. Er staat een cirkel om een knop met een omhoog wijzende pijl als icoon.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_stappenplan_push.jpg)
+
+- Vul als 'commit message' kort en bondig in wat je hebt aangepast. Bij deze eerste ronde van huisstijl doorvoeren bijvoorbeeld iets als: `Eerste ronde huisstijl doorvoeren`.
+- Bij 'branch' staat standaard 'main' al ingevuld. Het is echter verstandig om bij elke push met wijzigingen een aparte branch aan te maken. Bijvoorbeeld: `style/eerste-ronde-huisstijl`.
+
+:::tip[Tip]
+
+Gebruik elke keer een andere naam voor de branch en zorg ervoor dat je geen spaties gebruikt.
+
+- Klik op ‘Push changes’.
+- Klik op ‘Create pull request’.
+
+Vervolgens word je automatisch naar GitHub geleid waar je een pull request kunt maken.
+
+:::
+
+### Huisstijl doorvoeren in ToDo bibliotheek
+
+Nadat je pull request is gemerged is het tijd om de aanpassingen voor de huisstijl van jouw organisatie ook door te voeren in de Todo bibliotheek.
+
+🎥 [Video: Huisstijl doorvoeren in ToDo bibliotheek](https://youtu.be/j7fMgsV4-8Q)
+
+- Open de ToDo bibliotheek.
+- Open Tokens Studio.
+- Zorg dat je hier ook de connectie met je JSON bestand hebt.
+- Vink de checkboxes brand, common en component opnieuw aan.
+
+Vervolgens voert Tokens Studio de huisstijl zoals jij hem hebt ingesteld door op alle componenten in deze bibliotheek.
+
+### ToDo componenten nalopen
+
+Nadat Tokens Studio klaar is met het doorvoeren, is het verstandig om de componenten in je bibliotheek nog eens langs te lopen.
+
+Zo kun je op componentniveau alsnog andere keuzes maken. In de video zie je daar een voorbeeld van. Breng je wijzigingen aan? Push ze dan opnieuw naar GitHub en maak een nieuwe pull request aan.
+
+🎥 [Video: ToDo componenten nalopen](https://youtu.be/ho87z-B6Jcg)
+
+:::tip[Tip]
+
+We hebben gemerkt dat je soms nogmaals op 'Apply to Page' moet klikken om de aanpassingen doorgevoerd te zien worden.
+
+:::
+
+### Covers aanpassen
+
+Beide bibliotheken hebben een 'Cover' pagina. Daar staat nu nog 'Start'. Pas dit aan naar de naam van jouw organisatie.
+
+Wijzigingen in thumbnails worden niet altijd direct door Figma opgepikt. Doorloop daarom de volgende stappen.
+
+- Selecteer het gehele Frame en klik op de rechtermuisknop voor het contextuele menu.
+- Kies voor 'Restore default thumbnail'.
+- Selecteer nogmaals het frame en klik nogmaals op de rechtermuisknop.
+- Kies nu voor 'Set as thumbnail'.
+
+🎥 [Video: Covers aanpassen](https://youtu.be/9FA08CoKRf8)
+
+### Readme's aanpassen
+
+In beide bibliotheken staan 'Readme' pagina's. Pas de inhoud aan zodat deze past bij jouw organisatie. Zo houd je de documentatie relevant voor jouw team.
+
+🎥 [Video: Readme's aanpassen](https://youtu.be/QUjwW-CLzf0)
+
+### Publiceren
+
+Lekker bezig geweest! Je hebt nu de huisstijl doorgevoerd, Covers en Readme's aangepast.
+
+Tijd om de bibliotheken opnieuw te publiceren. Heb je eerder in dit proces al een prototype opgezet met deze bibliotheken? Dan kun je de updates daarin accepteren en je huisstijl tot leven zien komen in die prototypes.
+
+### Updates
+
+We zitten natuurlijk niet stil. We voeren geregeld updates door in de Figma bibliotheken én het JSON bestand met design tokens. Omdat je via een URL gekoppeld bent aan het JSON bestand, ben je automatisch up-to-date. Je kunt de Figma bibliotheken 'in sync' houden door de updates die wij doen, ook aan jouw kant door te voeren. Op de pagina ['Figma changelog'](/handboek/designer/figma-changelog) kun je zien welke updates wij doorvoeren. Wanneer jij deze updates doorvoert, mag je zelf weten. We sturen eens in de 2 maanden een reminder via Slack in het #nl-design-system-designers kanaal.
+
+### Doel 3 behaald 🎉
+
+Je kunt nu met NL Design System componenten werken op basis van een eigen thema. Veel plezier!
+
+:::info[Migratie informatie]
+
+In principe ben je nu gemigreerd. Maar misschien zit je nog met de volgende vraagstukken:
+
+- Wat doe ik met mijn huidige bibliotheken?
+- Wat doe ik met mijn lokale bibliotheek?
+- Wat doe ik met mijn prototypes?
+
+Daar vind je meer informatie over in de 'extra secties voor migratie'...
+
+:::
+
+## Extra secties voor migratie
+
+### Wat doe ik met mijn huidige bibliotheken?
+
+Je doorloopt dit migratie stappenplan omdat je ooit eerder NL Design System bibliotheken dupliceerde. Wat doe je nu met deze 'oude' bibliotheken? Die gaan we langzaam uitfaseren. In het engels is daar de mooie term 'Deprecation' voor. Doorloop de volgende stappen.
+
+🎥 [Video: 'Oude' bibliotheken uitfaseren](https://youtu.be/Kabhmi-e8Qw)
+
+- Open de 'oude' bibliotheek of bibliotheken.
+- Hernoemen deze bestanden naar `deprecated-{naam-van-biblitoheek}`. Zo herken je componenten met een connectie naar deze verouderde versie.
+- Plak een grote 'Depricated' sticker op de Cover.
+- Publiceer deze versie.
+- '[Unpublish](https://help.figma.com/hc/en-us/articles/360039236853-Unpublish-a-library)' nu de bibliotheek of bibliotheken.
+
+### Wat doe ik met mijn lokale bibliotheek?
+
+Heb je een lokale bibliotheek? Dan kunnen de stappen die je moet nemen verschillen. Zie onderstaande stappen dan ook als een leidraad, en voer door wat voor jou van toepassing is.
+
+#### Nieuwe bibliotheken
+
+Sowieso zul je de nieuwe bibliotheken willen koppelen.
+
+- Open je Lokale bibliotheek.
+- Koppel de nieuwe bibliotheken.
+
+#### Componenten binnen lokale componenten
+
+Misschien heb je binnen de lokale componenten gebruik gemaakt van componenten uit een 'oude' bibliotheek. Denk bijvoorbeeld aan een Button, Paragraph of icoon. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek die door de naamswijziging inmiddels begint met `deprecated-*`.
+
+![Screenshot toont Figma waarbij het zichtbaar is dat een component verwijst naar 'oude' bibliotheek](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_deprecated-herkennen.png)
+
+Via de '[Swap instance](https://help.figma.com/hc/en-us/articles/360039150413-Swap-components-and-instances)' functionaliteit kun je deze componenten verwijzen naar de nieuwe bibliotheek.
+
+![Screenshot toont Figma waarbij gebruik wordt gemaakt van de 'swap instance' funtionaliteit.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_swap-instance.png)
+
+#### Design tokens
+
+Ook in je lokale bibliotheek wil je verwijzen naar het 'nieuwe' JSON bestand met design tokens.
+
+- Maak via Tokens Studio connectie met het nieuwe JSON bestand.
+
+Heb je voor lokale componenten design tokens vastgelegd? Dan leven deze nog in het 'oude' JSON bestand en missen ze in de 'nieuwe'. Laten we ze toevoegen.
+
+🎥 [Video: Design tokens van lokale componenten overzetten](https://youtu.be/SoJ9zK_g35g)
+
+- Open Tokens Studio in een ander bestand zodat je je 'oude' JSON kunt bekijken.
+- Kopieer de design tokens sets van je lokale componenten.
+- Ga terug naar je lokale bibliotheek en voeg de design tokens van je lokale componenten toe.
+- Verwijs de design tokens naar de juiste Common tokens.
+- Push de wijzigingen naar GitHub en maak een Pull Request aan.
+
+### Wat doe ik met mijn prototypes?
+
+Heb je prototypes gemaakt dan heb je dat gedaan op basis van de 'oude' Figma bibliotheken. Wat je met deze prototypes gaan doen hangt er vanaf...
+
+- Is het een prototype waar je niks meer mee gaat doen? Laat ze dan staan zoals ze zijn.
+- Is het een prototype waar je nog wel iets meer gaat doen of zelfs actief mee bezig bent? Dan gaan we de nieuwe bibliotheken een het prototype koppelen.
+
+Daarbij kun je gebruik maken van de [Figma's Swap Library functionaliteit](https://help.figma.com/hc/en-us/articles/4404856784663-Swap-style-and-component-libraries).
+
+🎥 [Video: Prototype koppelen aan nieuwe bibliotheken](https://youtu.be/zfMcHOA2_3U)
+
+Het kan voorkomen dat eventuele 'overwrites', bijvoorbeeld een tekstaanpassing op een Button, worden teruggezet naar de oorspronkelijke tekst die meekomt uit de bibliotheek. Daarom is het verstandig om 2 dingen te doen.
+
+Laten we er eerst voor zorgen dat je sowieso niks kwijt raakt.
+
+1. Open het prototype en voeg de huidige versie toe aan de [Figma's Version History](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history). Geef deze versie een herkenbare naam bijvoorbeeld 'Swap Library'. Op die manier kun je het prototype altijd terugzetten naar deze huidige versie.
+1. Maak ook een kopie van het prototype. Dan heb je altijd nog een back-up en kun je 'overwrites' zoals teksten gemakkelijk kopiëren/plakken.
+
+Ok laten we er nu voor zorgen dat je prototype gekoppeld wordt aan de 'nieuwe' bibliotheken.
+
+- Open het prototype.
+- Voeg de nieuwe bibliotheken toe.
+- Omdat de 'oude' bibliotheken niet langer beschikbaar zijn worden deze 'gemist'.
+- Klik op 'View missing libraries'
+
+![Screenshot toont ...](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_missing-libraries.png)
+
+- Selecteer de bibliotheek die wordt gemist.
+
+![Screenshot toont ...](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_missing-libraries-overzicht.png)
+
+- Maak gebruik van de Swap Library functionaliteit.
+
+![Screenshot toont ...](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_migratie_swap-library.png)
+
+Loop voor alle zekerheid de componenten steekproefgewijs langs om te zien of er nog steeds een connectie is met een 'oude' bibliotheek. Je herkent deze componenten aan de verwijzing naar de oude bibliotheek die door de naamswijziging inmiddels begint met `deprecated-*`.
+
+## Van Figma naar code
+
+Zijn je tokens compleet genoeg om gebruikt te worden in een website? Dan heb je een developer nodig om de tokens te publiceren als CSS thema. Dat kan op twee manieren:
+
+**Optie 1**  
+Je krijgt een eigen directory in de [NL Design System themes repository](https://github.com/nl-design-system/themes). Hierin kun je een thema beheren, maar niet zelf nieuwe componenten ontwikkelen. [Neem contact op met het kernteam](/project/kernteam), zodat je een uitnodiging kunt krijgen. Als je eenmaal een eigen directory hebt, dan kun je design tokens JSON die je nu hebt verhuizen naar de themes repository. Het CSS thema wordt vanuit de themes repository automatisch gepubliceerd als NPM pakketje, die je in de code van de website kan inladen.
+
+**Optie 2**  
+Wil je nieuwe front-end componenten ontwikkelen? Een developer uit jouw team kan dan op basis van de [NL Design System example repository](https://github.com/nl-design-system/example) een nieuwe repository beginnen. In onze template zitten alle onderdelen om je eigen thema te publiceren als NPM pakketje. [Neem contact op met het kernteam](/project/kernteam) om hulp te vragen als je dit wilt doen.
+
+## Wat is je volgende stap?
+
+Ga je een prototype maken en onderzoek doen? Super! Deel je vragen, inzichten en ervaringen vooral met anderen in de community. Zo leren we van elkaar. Dat kan via Slack of tijdens een [Design Open Hour](/events/design-open-hour], [Design Open Dag](events/design-open-dag) of [Heartbeat](events/heartbeat).
+
+Wil je zelf componenten bijdragen?
+Vet! [Lees hier hoe je zelf componenten kunt ontwikkelen](/handboek/designer/zelf-componenten-maken)
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [GitHub](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](/project/kernteam).
