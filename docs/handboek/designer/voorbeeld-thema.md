@@ -17,11 +17,11 @@ keywords:
 
 # Voorbeeld-thema
 
-Op deze pagina beschrijven we het doel en de stijl van het 'Voorbeeld-thema'.
+Op deze pagina lees je wat het doel en de stijl is van het 'Voorbeeld-thema'.
 
 ## Doel van het Voorbeeld-thema
 
-Met het Voorbeeld-thema laten we zien hoe je een eigen thema kunt doorvoeren op basis van het [Start-thema](/handboek/huisstijl/themas/start-thema). Het dient als 'voorbeeld'.
+Met het Voorbeeld-thema laten we zien hoe je een eigen thema kunt doorvoeren op basis van het [Start-thema](/handboek/huisstijl/themas/start-thema). Het dient als 'voorbeeld' en laat zien hoe je met een paar slimme aanpassingen je eigen huisstijl kunt toepassen.
 
 ![Stijl van het Voorbeeld-thema uitgebeeld door middel van een violet vlak waarop met witte letters staat geschreven: Voorbeeld thema. Uitgesproken en vriendelijk. Rechts staat in dezelfde violet kleur Nederland afgebeeld als illustratie.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_stijl.png)
 
@@ -35,7 +35,7 @@ In tegenstelling tot het Start-thema wordt er bij het Voorbeeld-thema gebruikgem
 
 ![De teksten Noto Serif en Noto Sans worden afgebeeld met het overeenkomende lettertype.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_typografie.png)
 
-Noto Serif wordt gebruikt voor koppen, Noto Sans voor alle andere tekst. Dat betekent dat basis-token `basis.heading.font-family` Noto Serif als waarde heeft gekregen.
+Noto Serif wordt gebruikt voor koppen. Hiervoor krijgt `basis.heading.font-family` de waarde Noto Serif. Noto Sans wordt gebruikt voor alle andere teksten.
 
 De Noto-familie is open source en voldoet aan onze [richtlijnen voor typografie](/richtlijnen/stijl/typografie/).
 
@@ -51,11 +51,11 @@ Maar dit zijn niet de enige kleuren die vanuit de huisstijl beschikbaar zijn ges
 
 ![Zeven verticale kleurenschema's voor de kleuren violet, grijs, blauw, groen, geel, oranje en rood. De kleurenschema's starten met de meest lichte tint bovenaan en worden naar beneden toe steeds donkerder.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_kleur-trap.png)
 
-Al deze kleuren zijn als design tokens op het 'Brand' niveau vastgelegd. Door vanuit de basis-tokens, op het 'Common' niveau, naar deze huisstijlkleuren te verwijzen, worden ze op alle componenten toegepast.
+Al deze kleuren zijn als design tokens vastgelegd op het 'Brand' niveau. Vanuit de Common basis-tokens wordt daarnaar verwezen. Zo worden de kleuren consistent toegepast op alle componenten.
 
 ![De afbeelding toont een blauwe en violet primaire knop. Daarboven staan de verwijzingen vanuit de verschillende token niveau's.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens.png)
 
-Violet leent zich uitstekend als kleur voor interactie. Daarom is ervoor gekozen om de violetkleur toe te passen op knoppen. Door de waarden van de basis-tokens `action-1` en `action-2` aan te passen, hebben de knoppen een afwijkende kleur ten opzichte van andere interactieve componenten.
+Violet leent zich uitstekend als kleur voor interactie. Daarom is ervoor gekozen knoppen violet te maken. Door de waarden van de basis-tokens `action-1` en `action-2` aan te passen, hebben de knoppen een afwijkende kleur ten opzichte van andere interactieve componenten.
 
 ![De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation. De knoppen zijn violet. Alle andere interactieve componenten zijn blauw.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_voorbeeld-thema_basis-tokens_kleur-action-voorbeeld.png)
 
@@ -65,7 +65,7 @@ De stijl van het Voorbeeld-thema is uitgesproken. Dit zie je ook terug in de [Pa
 
 ### Overige keuzes
 
-Vooralsnog zijn dit de wijzigingen ten opzichte van het Start-thema. De iconensets en waarden van basis-tokens voor ruimte, afmetingen, afgeronde hoeken, lijndikte en schaduw zijn verder ongewijzigd. Pas deze gerust aan als dit voor jouw organisatie wel nodig is.
+Voor nu zijn dit de belangrijkste verschillen met het Start-thema. De iconensets en waarden van basis-tokens voor ruimte, afmetingen, afgeronde hoeken, lijndikte en schaduw zijn verder ongewijzigd. Pas ze gerust aan als dat voor jouw organisatie nodig is.
 
 ---
 
