@@ -92,6 +92,7 @@
     "@nl-design-system-candidate/number-badge-docs": "1.0.1",
     "@nl-design-system-candidate/number-badge-tokens": "2.0.0",
     "@nl-design-system-candidate/paragraph-docs": "1.0.3",
+    "@nl-design-system-candidate/paragraph-react": "2.1.3",
     "@nl-design-system-candidate/paragraph-tokens": "1.1.0",
     "@nl-design-system-candidate/skip-link-docs": "1.0.1",
     "@nl-design-system-candidate/skip-link-tokens": "1.0.1",

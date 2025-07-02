@@ -98,6 +98,9 @@ importers:
       '@nl-design-system-candidate/paragraph-docs':
         specifier: 1.0.3
         version: 1.0.3
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.1.3
+        version: 2.1.3(@babel/runtime@7.26.7)(react@18.3.1)
       '@nl-design-system-candidate/paragraph-tokens':
         specifier: 1.1.0
         version: 1.1.0
@@ -1964,6 +1967,12 @@ packages:
 
   '@nl-design-system-candidate/paragraph-docs@1.0.3':
     resolution: {integrity: sha512-nggC1Sag8roS45P1gvhhPokYBxXRxrkIBuGIRQG92xWxRTFOAkxEnl6D5lnbiUNboJDTJ3eqcc48u2QCJyvAXw==}
+
+  '@nl-design-system-candidate/paragraph-react@2.1.3':
+    resolution: {integrity: sha512-MSMBCpQHW892/WY+Lrqg4S43K9iDtkvYD3cYF82OmS554OcPQwNkDUSF5a+fdilpHporFUEDwOOjC0twirPA8A==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.0':
     resolution: {integrity: sha512-P3uSrLtYs1eG0HXVj4spQmxEWgeY+bKgZ8A6DRDNKevojKy1gQu+kWqRIr64ooxr6YqwLWixyZgrZJnFpFlwmg==}
@@ -10672,6 +10681,12 @@ snapshots:
   '@nl-design-system-candidate/number-badge-tokens@2.0.0': {}
 
   '@nl-design-system-candidate/paragraph-docs@1.0.3': {}
+
+  '@nl-design-system-candidate/paragraph-react@2.1.3(@babel/runtime@7.26.7)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.0': {}
 
