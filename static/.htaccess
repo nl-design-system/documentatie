@@ -8,7 +8,6 @@ Redirect 301 "/componenten/definition-of-done" "/handboek/component-bijdragen/de
 Redirect 301 "/counter-badge" "/number-badge"
 Redirect 301 "/definition-list" "/description-list"
 Redirect 301 "/handboek/designer/community" "/community"
-Redirect 301 "/handboek/designer" "/handboek/designer/introductie"
 Redirect 301 "/handboek/designer/nieuwe-versie-publiceren" "/handboek/designer/werken-met-nl-design-system"
 Redirect 301 "/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens" "/handboek/designer/design-tokens-versiebeheer"
 Redirect 301 "/handboek/designer/nieuwe-versie-publiceren/werken-met-changelog-voor-figma" "/handboek/designer/werken-met-figma-changelog"
@@ -50,6 +49,7 @@ Redirect 301 "/wcag/introduction" "/wcag"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
+RedirectMatch 301 "^/handboek/designer/?$" "/handboek/designer/introductie"
 RedirectMatch 301 "^/meedoen(.*)$" "/handboek$1"
 RedirectMatch 301 "^/meedoen/als-designer/(.*)$" "/handboek/designer$1"
 RedirectMatch 301 "^/meedoen/als-developer/(.*)$" "/handboek/developer$1"
