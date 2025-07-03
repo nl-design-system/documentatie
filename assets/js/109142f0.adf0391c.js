@@ -16,28 +16,28 @@
    }
   },
   42830: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => k, contentTitle: () => c, default: () => u, frontMatter: () => a, metadata: () => d, toc: () => h });
+   t.r(n), t.d(n, { assets: () => k, contentTitle: () => c, default: () => u, frontMatter: () => a, metadata: () => d, toc: () => p });
    var l = t(52676),
     s = t(40139),
     i = t(43599),
     o = t(40761),
     r = t(66968);
-   const a = { title: 'Toegankelijke linkteksten \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] },
+   const a = { title: 'Toegankelijke linkteksten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] },
     c = 'Toegankelijke linkteksten',
-    d = { id: 'richtlijnen/content/tekstopmaak/link-text', title: 'Toegankelijke linkteksten \xb7 Content \xb7 Richtlijnen', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', source: '@site/docs/richtlijnen/content/tekstopmaak/link-text.md', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/tekstopmaak/linkteksten', permalink: '/richtlijnen/content/tekstopmaak/linkteksten', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/link-text.md', tags: [], version: 'current', frontMatter: { title: 'Toegankelijke linkteksten \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] }, sidebar: 'richtlijnen', previous: { title: 'De juiste taal instellen', permalink: '/richtlijnen/content/tekstopmaak/taal' }, next: { title: 'Citaten', permalink: '/richtlijnen/content/citaten' } },
+    d = { id: 'richtlijnen/content/tekstopmaak/link-text', title: 'Toegankelijke linkteksten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', source: '@site/docs/richtlijnen/content/tekstopmaak/link-text.md', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/tekstopmaak/linkteksten', permalink: '/richtlijnen/content/tekstopmaak/linkteksten', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/link-text.md', tags: [], version: 'current', frontMatter: { title: 'Toegankelijke linkteksten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] }, sidebar: 'richtlijnen', previous: { title: 'De juiste taal instellen', permalink: '/richtlijnen/content/tekstopmaak/taal' }, next: { title: 'Citaten', permalink: '/richtlijnen/content/citaten' } },
     k = {},
-    h = [
+    p = [
      { value: 'Wat werkt wel (en wat niet)?', id: 'wat-werkt-wel-en-wat-niet', level: 2 },
      { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 },
      { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 },
     ];
-   function p(e) {
+   function h(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, s.a)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: 'toegankelijke-linkteksten', children: 'Toegankelijke linkteksten' }), '\n', (0, l.jsx)(n.p, { children: 'Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. Een link als \u2018klik hier\u2019 of \u2018lees meer\u2019 zegt dan niets. Zorg daarom dat de linktekst op zichzelf duidelijk is. Dat maakt je content toegankelijker \xe9n beter vindbaar in zoekmachines.' }), '\n', (0, l.jsxs)(n.p, { children: ['Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen \u2014 bijvoorbeeld omdat ze een ', (0, l.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.'] }), '\n', (0, l.jsx)(n.p, { children: 'Op deze pagina lees je hoe je goede linkteksten schrijft en welke fouten je beter kunt vermijden.' }), '\n', (0, l.jsx)(n.p, { children: 'Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.' }), '\n', (0, l.jsx)(n.h2, { id: 'wat-werkt-wel-en-wat-niet', children: 'Wat werkt wel (en wat niet)?' }), '\n', (0, l.jsx)(o.X, { appearance: 'do', title: 'Schrijf goede toegankelijke linkteksten waaruit blijkt wat er gebeurt als je erop klikt.', children: (0, l.jsx)(i.X, { language: 'html', children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.ul, { children: [(0, l.jsxs)(n.li, { children: ['Meer informatie staat op de pagina ', (0, l.jsx)(n.a, { href: 'https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link', children: 'Rechten van mensen met een beperking' })] }), (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: 'https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link', children: 'Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)' }) }), (0, l.jsxs)(n.li, { children: ['Stuur een mail naar ', (0, l.jsx)(n.a, { href: 'https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link', children: 'test@test.nl' })] })] }) }) }) }), '\n', (0, l.jsx)(o.X, { appearance: 'dont', title: 'Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.', children: (0, l.jsx)(i.X, { language: 'html', children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)(n.ul, { children: [(0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: 'https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link', children: 'Klik hier' }), ' voor meer informatie over de rechten van mensen met een beperking'] }), (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: 'https://kennisbank.digitoegankelijk.nl/toegankelijke-linkteksten/#dit-is-een-voorbeeld-link', children: 'Lees meer' }), ' over  digitale toegankelijkheid'] })] }) }) }) }), '\n', (0, l.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, l.jsx)(n.p, { children: 'Lees de pagina door en controleer alle linkteksten. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Controleer of de linktekst duidelijk maakt waar de link naartoe leidt.\nVermijd vage teksten zoals \u2018klik hier\u2019 of \u2018lees meer\u2019. De linktekst moet zelfstandig begrijpelijk zijn, zodat gebruikers weten wat ze kunnen verwachten.' }), '\n', (0, l.jsx)(n.li, { children: 'Controleer of links naar verschillende bestemmingen unieke en beschrijvende linkteksten hebben.\nDit voorkomt verwarring, vooral voor gebruikers van screenreaders die een lijst van links opvragen.' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.4', children: 'Succescriterium 2.4.4 Linkdoel(in context)' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.9', children: 'Succescriterium 2.4.9 Linkdoel (alleen link)' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.5.3', children: 'Succescriterium 2.5.3 Label in naam' }) }), '\n'] }), '\n', (0, l.jsx)(r.ZP, {})] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
-    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(h, { ...e }) }) : h(e);
    }
   },
   43599: (e, n, t) => {
@@ -51,28 +51,28 @@
     c = t(48231),
     d = t(75119),
     k = t(75271),
-    h = t(60027),
-    p = t(52676);
+    p = t(60027),
+    h = t(52676);
    const u = (e) => {
     let { children: n } = e;
-    return (0, p.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: (0, p.jsx)(s.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, p.jsx)(s.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
+    return (0, h.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(s.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, h.jsx)(s.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
    u.displayName = 'ParagraphContainer';
-   const j = (e) => {
-    let { children: n } = e;
-    return (0, p.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: (0, p.jsx)(s.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
-   };
-   j.displayName = 'DocumentContainer';
    const m = (e) => {
     let { children: n } = e;
-    return (0, p.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: n });
+    return (0, h.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(s.BB, { className: (0, i.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
-   m.displayName = 'SurfaceContainer';
+   m.displayName = 'DocumentContainer';
+   const j = (e) => {
+    let { children: n } = e;
+    return (0, h.jsx)(s.Tg, { className: 'nlds-canvas__example-surface', children: n });
+   };
+   j.displayName = 'SurfaceContainer';
    const g = (e) => {
     let { code: n, copy: t = !0, defaultExpandedCode: g = !1, displayCode: b = !0, children: v, container: y = 'document', language: x, designTokens: f } = e;
     const _ = 'function' == typeof v ? v() : v,
      w = 'function' == typeof n ? n() : (0, k.isValidElement)(n) ? n : void 0,
-     N = 'string' == typeof n ? n : h.uS(w || _),
+     N = 'string' == typeof n ? n : p.uS(w || _),
      [z, C] = (0, k.useState)(N),
      [S, Z] = (0, k.useState)(g);
     (0, k.useEffect)(() => {
@@ -81,39 +81,39 @@
       C(e);
      })();
     }, [N]);
-    const D = (0, k.useId)();
-    let T = k.Fragment;
+    const T = (0, k.useId)();
+    let D = k.Fragment;
     return (
-     'paragraph' === y ? (T = u) : 'document' === y ? (T = j) : 'surface' === y && (T = m),
-     (0, p.jsxs)('div', {
+     'paragraph' === y ? (D = u) : 'document' === y ? (D = m) : 'surface' === y && (D = j),
+     (0, h.jsxs)('div', {
       className: (0, i.Z)('nlds-canvas'),
       children: [
-       _ && (0, p.jsx)('div', { className: (0, i.Z)('nlds-canvas__example'), children: (0, p.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, p.jsx)(T, { children: (0, p.jsx)(s.pu, { children: _ }) }) }) }),
+       _ && (0, h.jsx)('div', { className: (0, i.Z)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, h.jsx)(D, { children: (0, h.jsx)(s.pu, { children: _ }) }) }) }),
        b &&
-        (0, p.jsx)('div', {
+        (0, h.jsx)('div', {
          className: (0, i.Z)('nlds-canvas__toolbar'),
-         children: (0, p.jsx)(s.zx, {
+         children: (0, h.jsx)(s.zx, {
           className: (0, i.Z)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
            Z(!S);
           },
           'aria-expanded': S,
-          'aria-controls': D,
+          'aria-controls': T,
           children: S ? 'Verberg code' : 'Bekijk code',
          }),
         }),
        b &&
-        (0, p.jsxs)('div', {
+        (0, h.jsxs)('div', {
          className: (0, i.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
-         id: D,
+         id: T,
          hidden: !S,
          children: [
-          (0, p.jsx)(l.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
+          (0, h.jsx)(l.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
           t &&
-           (0, p.jsx)('div', {
+           (0, h.jsx)('div', {
             className: (0, i.Z)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, p.jsx)(s.zx, {
+            children: (0, h.jsx)(s.zx, {
              className: (0, i.Z)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -176,7 +176,7 @@
    function c(e) {
     let { lineNumber: n, syntax: t, textContent: c, trim: d } = e,
      k = c;
-    const { title: h, type: p } = (0, i.useContext)(o.n),
+    const { title: p, type: h } = (0, i.useContext)(o.n),
      u = (0, i.useId)();
     return (
      d && (k = k.trim()),
@@ -186,7 +186,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: s, getLineProps: i, getTokenProps: o } = e;
-       return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)('span', { hidden: !0, id: u, children: ['codevoorbeeld ', p ? `\u201c${p}\u201d` : '', ' ', h ? ': ' : ' ', h] }), (0, a.jsx)(l.dn, { tabIndex: 0, role: h ? 'region' : void 0, 'aria-labelledby': u, style: t, children: s.map((e, t) => (0, a.jsxs)('span', { ...i({ line: e }), children: [n && (0, a.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, a.jsx)('span', { ...o({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)('span', { hidden: !0, id: u, children: ['codevoorbeeld ', h ? `\u201c${h}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, a.jsx)(l.dn, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': u, style: t, children: s.map((e, t) => (0, a.jsxs)('span', { ...i({ line: e }), children: [n && (0, a.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, a.jsx)('span', { ...o({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -203,10 +203,10 @@
    const c = (0, r.createContext)({}),
     d = (e) => {
      let { title: n, appearance: t, description: r, children: d, figure: k } = e;
-     const h = { do: 'Doen', dont: 'Niet doen' },
-      p = k ? 'figure' : 'div',
+     const p = { do: 'Doen', dont: 'Niet doen' },
+      h = k ? 'figure' : 'div',
       u = k ? 'figcaption' : 'div';
-     return (0, a.jsxs)(p, { className: (0, o.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, a.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: h.dont })] }), (0, a.jsx)(i.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: h.do })] }), (0, a.jsx)(i.nv, { children: n })] }), r] }), (0, a.jsx)('div', { className: 'nlds-guideline__example', children: (0, a.jsx)(c.Provider, { value: { title: n, type: h[t] }, children: d }) })] });
+     return (0, a.jsxs)(h, { className: (0, o.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, a.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, a.jsx)(i.nv, { children: n })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(i.nv, { className: (0, o.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, a.jsx)(s.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, a.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, a.jsx)(i.nv, { children: n })] }), r] }), (0, a.jsx)('div', { className: 'nlds-guideline__example', children: (0, a.jsx)(c.Provider, { value: { title: n, type: p[t] }, children: d }) })] });
     };
   },
   40139: (e, n, t) => {

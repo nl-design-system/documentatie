@@ -22,9 +22,9 @@
     o = t(43599),
     s = t(40761),
     i = t(66968);
-   const a = { title: 'Kleurgebruik in tekst \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Kleurgebruik in tekst', pagination_label: 'Kleurgebruik in tekst', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', keywords: ['tekstopmaak', 'kleurgebruik', 'tekst', 'kleurcontrast'] },
+   const a = { title: 'Kleurgebruik in tekst \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Kleurgebruik in tekst', pagination_label: 'Kleurgebruik in tekst', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', keywords: ['tekstopmaak', 'kleurgebruik', 'tekst', 'kleurcontrast'] },
     c = 'Kleurgebruik in tekst',
-    d = { id: 'richtlijnen/content/tekstopmaak/colour-contrast', title: 'Kleurgebruik in tekst \xb7 Content \xb7 Richtlijnen', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', source: '@site/docs/richtlijnen/content/tekstopmaak/colour-contrast.md', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', permalink: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/colour-contrast.md', tags: [], version: 'current', frontMatter: { title: 'Kleurgebruik in tekst \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Kleurgebruik in tekst', pagination_label: 'Kleurgebruik in tekst', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', keywords: ['tekstopmaak', 'kleurgebruik', 'tekst', 'kleurcontrast'] }, sidebar: 'richtlijnen', previous: { title: 'Content', permalink: '/richtlijnen/content/tekstopmaak' }, next: { title: 'Tekst benadrukken', permalink: '/richtlijnen/content/tekstopmaak/tekst-benadrukken' } },
+    d = { id: 'richtlijnen/content/tekstopmaak/colour-contrast', title: 'Kleurgebruik in tekst \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', source: '@site/docs/richtlijnen/content/tekstopmaak/colour-contrast.md', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', permalink: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/colour-contrast.md', tags: [], version: 'current', frontMatter: { title: 'Kleurgebruik in tekst \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Kleurgebruik in tekst', pagination_label: 'Kleurgebruik in tekst', description: 'Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.', slug: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst', keywords: ['tekstopmaak', 'kleurgebruik', 'tekst', 'kleurcontrast'] }, sidebar: 'richtlijnen', previous: { title: 'Content', permalink: '/richtlijnen/content/tekstopmaak' }, next: { title: 'Tekst benadrukken', permalink: '/richtlijnen/content/tekstopmaak/tekst-benadrukken' } },
     k = {},
     u = [
      { value: 'Bewust omgaan met kleurcontrast', id: 'bewust-omgaan-met-kleurcontrast', level: 2 },
@@ -86,13 +86,13 @@
      })();
     }, [z]);
     const K = (0, k.useId)();
-    let P = k.Fragment;
+    let T = k.Fragment;
     return (
-     'paragraph' === x ? (P = g) : 'document' === x ? (P = p) : 'surface' === x && (P = m),
+     'paragraph' === x ? (T = g) : 'document' === x ? (T = p) : 'surface' === x && (T = m),
      (0, h.jsxs)('div', {
       className: (0, o.Z)('nlds-canvas'),
       children: [
-       _ && (0, h.jsx)('div', { className: (0, o.Z)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, h.jsx)(P, { children: (0, h.jsx)(l.pu, { children: _ }) }) }) }),
+       _ && (0, h.jsx)('div', { className: (0, o.Z)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, h.jsx)(T, { children: (0, h.jsx)(l.pu, { children: _ }) }) }) }),
        b &&
         (0, h.jsx)('div', {
          className: (0, o.Z)('nlds-canvas__toolbar'),
