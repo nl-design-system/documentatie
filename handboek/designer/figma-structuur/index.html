@@ -28,8 +28,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.53f6f0cb.css" />
-  <script src="/assets/js/runtime~main.433e8c44.js" defer="defer"></script>
-  <script src="/assets/js/main.0cf293ac.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.05c2bcde.js" defer="defer"></script>
+  <script src="/assets/js/main.b8561c9e.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -152,6 +152,7 @@
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/werken-met-figma-changelog">Werken met de Figma changelog</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/figma-changelog">Figma changelog</a></li>
                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/design-tokens-versiebeheer">Design tokens versiebeheer</a></li>
+                   <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/figma-migratie-stappenplan">Figma mirgatie-stappenplan</a></li>
                   </ul>
                  </li>
                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="utrecht-link utrecht-link--html-a menu__link utrecht-link" tabindex="0" href="/handboek/designer/zelf-thema-maken">Zelf een thema maken</a></li>
@@ -242,70 +243,77 @@
              </div>
              <div class="theme-doc-markdown">
               <h1 id="figma-structuur" class="utrecht-heading-1">Figma structuur</h1>
-              <section class="utrecht-spotlight-section">
-               <p><strong>Let op!</strong> We werken momenteel aan een nieuwe versie van de Figma-bibliotheken. Daardoor kan de onderstaande documentatie afwijken van de werkelijkheid. In de komende weken wordt deze bijgewerkt. Heb je vragen? Twijfel niet en <a href="../../project/kernteam.mdx" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
-              </section>
-              <h2 id="figma" class="utrecht-heading-2">Figma</h2>
-              <p>Het kernteam, en reeds aangesloten organisaties hebben een voorkeur voor Figma.</p>
+              <p>Wil je als designer werken met het NL Design System in Figma? Dan is het handig om eerst te begrijpen hoe de Figma structuur in elkaar zit.</p>
+              <p>Op deze pagina lees je hoe de bibliotheken zijn opgebouwd, waarom Figma een logische keuze is, en hoe de structuur werkt binnen je eigen Figma omgeving.</p>
+              <p>Je hoeft nu nog niets in te richten. Dit is vooral bedoeld om je op weg te helpen. In het <a href="/handboek/designer/figma-stappenplan" class="utrecht-link utrecht-link--html-a">Figma stappenplan</a> leggen we stap voor stap uit hoe je daadwerkelijk aan de slag gaat.</p>
+              <h2 id="waarom-figma" class="utrecht-heading-2">Waarom Figma?</h2>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_figma-logo.png" alt="Logo Figma" class="utrecht-img" /></p>
-              <h3 id="waarom-figma" class="utrecht-heading-3">Waarom Figma?</h3>
-              <p>Figma sluit qua concept, architectuur en naamgeving goed aan bij de front-end implementatie. Daarnaast brengt Figma enkele voordelen met zich mee ten opzichte van andere ontwerptools.</p>
-              <h4 id="figma-voordelen" class="utrecht-heading-4">Figma voordelen</h4>
+              <p>Figma sluit goed aan op hoe het NL Design System werkt met componenten, design tokens en code.</p>
+              <h3 id="voordelen-van-figma" class="utrecht-heading-3">Voordelen van Figma</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Platform onafhankelijk. Je kunt zelfs vanuit de browser werken.</li>
-               <li>Samenwerken. Je kunt met meerdere personen tegelijk in dezelfde file werken.</li>
-               <li>Prototypen. Je kan binnen Figma zelf prototypes opzetten.</li>
-               <li>Inspecteren. Developers kunnen binnen Figma zelf ontwerpen inspecteren.</li>
+               <li>Platformonafhankelijk: werkt vanuit de browser.</li>
+               <li>Samenwerken in realtime: meerdere mensen in 1 bestand.</li>
+               <li>Prototypen en inspecteren in 1 tool.</li>
+               <li>Structuur en naamgeving sluiten aan op front-end structuur.</li>
               </ul>
-              <p>Meer informatie over Figma kun je vinden op <a href="https://help.figma.com/" class="utrecht-link utrecht-link--html-a">help.figma.com</a> en <a href="https://forum.figma.com/" class="utrecht-link utrecht-link--html-a">forum.figma.com</a>.</p>
-              <p>Het NL Design System zit echter net even anders in elkaar als andere Design Systems. Dat heeft ook invloed op de Figma structuur en het gebruik.</p>
-              <h3 id="structuur" class="utrecht-heading-3">Structuur</h3>
-              <p>Een organisatie heeft vaak zijn eigen Figma omgeving. Binnen die omgeving wordt een bibliotheek beheerd met de huisstijl en componenten. Andere design bestanden kunnen zich ‘abonneren’ op die bibliotheek waardoor concepten, flows en/of prototypes snel en consistent kunnen worden uitgewerkt.</p>
-              <p>Wordt er een aanpassing gedaan in de bibliotheek? Dan is die aanpassing met een druk op de knop ook toegepast binnen alle design bestanden die op de bibliotheek geabonneerd zijn.</p>
+              <p>Dit maakt Figma ideaal voor het werken met een gedeeld design system. Meer informatie over Figma vind je op <a href="https://help.figma.com/" class="utrecht-link utrecht-link--html-a">help.figma.com</a> en <a href="https://forum.figma.com/" class="utrecht-link utrecht-link--html-a">forum.figma.com</a>.</p>
+              <h2 id="hoe-is-de-structuur-opgebouwd" class="utrecht-heading-2">Hoe is de structuur opgebouwd?</h2>
+              <p>Organisaties hebben vaak een eigen Figma omgeving waarin een bibliotheek wordt beheerd. Vanuit die bibliotheek kunnen ontwerpers werken aan flows, concepten en prototypes. Ontwerpbestanden kunnen zich &#x27;abonneren&#x27; op deze bibliotheek. Zodra de bibliotheek wordt bijgewerkt, worden deze aanpassingen automatisch doorgevoerd in alle gekoppelde bestanden.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_single-org-single-brand.png" alt="Schematische weergave van Figma inrichting voor 1 organisatie" class="utrecht-img" /></p>
-              <p>Bevat een organisatie meerdere ‘huisstijlen’? Ook dan kunnen design bestanden gebruik maken van één of meerdere bibliotheken.</p>
+              <p>Sommige organisaties beheren meerdere merken of thema&#x27;s, elk met een eigen huisstijl. In dat geval kunnen bestanden gebruik maken van 1 of meerdere bibliotheken.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_single-org-multi-brand.png" alt="Schematische weergave van Figma inrichting voor 1 organisatie met 3 verschillende merken met ieder een eigen huisstijl" class="utrecht-img" /></p>
-              <p>Maar dan is daar het NL Design System. Waarbij we <strong>wel</strong> een bibliotheek aanbieden maar waar andere organisaties zich <strong>niet</strong> op kunnen abonneren. Dat komt omdat iedere organisatie binnen een eigen Figma omgeving werkt. Hoe je toch van deze bibliotheek gebruik kunt maken, en je eigen huisstijl kunt toepassen, leggen we graag aan je uit.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_nlds-question.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. Tussen de kaders staat een emoticon die nadenkt." class="utrecht-img" /></p>
-              <h3 id="gebruik" class="utrecht-heading-3">Gebruik</h3>
-              <p>Om vanuit Figma met het NL Design System te werken heb je 2 dingen nodig. De ‘NL Design System bibliotheek&#x27; en de ‘Tokens Studio plugin&#x27;.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-nlds-happy.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst &#x27;NLDS Bibliotheek&#x27; en &#x27;Token Studio&#x27;. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is." class="utrecht-img" /></p>
-              <h4 id="nl-design-system-figma-bibliotheek" class="utrecht-heading-4">NL Design System Figma bibliotheek</h4>
-              <p>Vanuit het NL Design System bieden we een Figma bibliotheek aan. Op dit moment zijn we druk bezig om deze Figma bibliotheek te vullen met &#x27;Community&#x27; componenten. Deze community componenten zijn een-op-een in code beschikbaar.</p>
-              <p>Zodra een community component in meerdere organisaties succesvol ingezet is zal deze volgens het <a href="../estafettemodel.mdx" class="utrecht-link utrecht-link--html-a">estafettemodel</a> door het kernteam opgenomen worden als &#x27;Candidate&#x27; en later &#x27;Hall of Fame&#x27; component.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_nlds-library.png" alt="Voorblad van de NL Design System bibliotheek met de tekst &#x27;Voorbeeld bibliotheek&#x27;." class="utrecht-img" /></p>
-              <p><strong>Al een eigen Figma bibliotheek?</strong></p>
-              <p>Mooi! Die kun je gewoon blijven gebruiken.</p>
-              <p>We adviseren je om de NL Design System bibliotheek naast de lokale bibliotheek van jouw organisatie te positioneren. Vervolgens kun je, geleidelijk aan, componenten die in beide bibliotheken aanwezig zijn uit de lokale bibliotheek van jouw organisatie inwisselen voor componenten uit de NL Design System bibliotheek.</p>
-              <p>Zo houd je uiteindelijk een lokale bibliotheek over met componenten die alleen voor jouw organisatie nodig zijn.</p>
-              <p>Trouwens… misschien zitten daar wel componenten tussen die andere organisaties goed kunnen gebruiken. In dat geval kun je die componenten altijd aan onze <a href="https://github.com/nl-design-system/backlog" class="utrecht-link utrecht-link--html-a">backlog</a> toevoegen.</p>
-              <p><strong>Nog geen eigen Figma bibliotheek?</strong></p>
-              <p>Start dan met de componenten in de NL Design System bibliotheek. Maak daarnaast een lokale bibliotheek aan voor overige componenten. Denk bijvoorbeeld aan een ‘Pagina Header’ of ‘Pagina Footer’. Componenten die specifiek voor jouw organisatie zijn noemen wij ‘Snowflakes’.</p>
-              <p><strong>Naamgeving Figma bibliotheken</strong></p>
-              <p>We houden de naamgeving van de Figma bibliotheken graag gelijk tussen de verschillende organisaties. Daarom hebben we als designers de volgende naamgeving afsproken:</p>
+              <p>Maar het NL Design System werkt nét even anders. Omdat iedere organisatie een eigen Figma omgeving heeft, kun je je niet direct abonneren op een bibliotheek van het NL Design System.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_nlds-question.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Twee kaders rond twee verschillende organisaties met ieder hun eigen Figma omgeving. Tussen de kaders staat een emoticon die nadenkt." class="utrecht-img" /></p>
+              <p>Gelukkig kun je wel direct aan de slag met onze Figma bibliotheek, of beter gezegd: bibliotheken. Hoe dat werkt? Dat leggen we je graag uit. Maar eerst vertellen we iets meer over de 2 bibliotheken.</p>
+              <h2 id="nl-design-system-bibliotheken" class="utrecht-heading-2">NL Design System bibliotheken</h2>
+              <p>Vanuit het NL Design System bieden we 2 Figma bibliotheken aan. De componenten in de bibliotheken worden ontwikkeld volgens het <a href="/handboek/estafettemodel" class="utrecht-link utrecht-link--html-a">estafettemodel</a>.</p>
+              <h3 id="nl-design-system---bibliotheek" class="utrecht-heading-3">NL Design System - Bibliotheek</h3>
+              <p>In deze bibliotheek vind je componenten met de status ‘Community’ en ‘Candidate’. Samen werken we toe naar componenten met de status ‘Hall of Fame’.</p>
+              <p><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" class="utrecht-link utrecht-link--html-a">Neem een kijkje in de &#x27;NL Design System - Bibliotheek&#x27; in Figma</a></p>
+              <h3 id="nl-design-system---todo-bibliotheek" class="utrecht-heading-3">NL Design System - ToDo Bibliotheek</h3>
+              <p>In deze bibliotheek vind je componenten met de status ‘Help Wanted’ of ‘Experimental’. Deze componenten zijn nog niet in code beschikbaar. Maar daar kan jij met jouw organisatie verandering in brengen. Gaat jouw organisatie een Help Wanted component ontwikkelen? Laat dan een comment achter in de bijbehorende <a href="https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a> van dat component. Of <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a> om af te stemmen.</p>
+              <p><a href="https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3047-14&amp;t=fpA32yYLXZpVB6tb-1" class="utrecht-link utrecht-link--html-a">Neem een kijkje in de &#x27;NL Design System - ToDo Bibliotheek&#x27; in Figma</a></p>
+              <h2 id="werken-met-de-nl-design-system-bibliotheken" class="utrecht-heading-2">Werken met de NL Design System bibliotheken</h2>
+              <p>Hoe je met de Figma bibliotheken kan werken, hangt af van je situatie.</p>
+              <h3 id="nog-geen-eigen-bibliotheek" class="utrecht-heading-3">Nog geen eigen bibliotheek?</h3>
+              <p>Begin dan met de NL Design System bibliotheken. Voeg daarnaast een eigen &#x27;lokale&#x27; bibliotheek toe voor organisatie-specifieke componenten. Denk aan componenten als een <a href="/page-header" class="utrecht-link utrecht-link--html-a">Page Header</a>,<a href="/page-footer" class="utrecht-link utrecht-link--html-a">Page Footer</a> of een Button waar confetti uit knalt als je erop klikt. Zulke unieke componenten noemen we ook wel &#x27;snowflakes&#x27;.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-nlds-happy.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Twee kaders rond twee verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst &#x27;NL Design System - Bibliotheek&#x27;, &#x27;NL Design System - ToDo Bibliotheek&#x27; en &#x27;Tokens Studio&#x27;. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is." class="utrecht-img" /></p>
+              <h3 id="heb-je-al-een-eigen-bibliotheek" class="utrecht-heading-3">Heb je al een eigen bibliotheek?</h3>
+              <p>Mooi! Je kunt je bestaande bibliotheek blijven gebruiken. Voeg de NL Design System bibliotheken toe als extra bron. Vervolgens kun je stap voor stap componenten vervangen die in beide bibliotheken staan. Zo houd je uiteindelijk een lokale bibliotheek over met alleen organisatie-specifieke componenten.</p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-local.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Twee kaders rond twee verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst &#x27;NL Design System - Bibliotheek&#x27;, &#x27;NL Design System - ToDo Bibliotheek&#x27; en &#x27;Tokens Studio&#x27;. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is." class="utrecht-img" /></p>
+              <div class="theme-admonition theme-admonition-tip admonition_rxXX alert alert--success">
+               <div class="admonitionHeading_eMFo">
+                <span class="admonitionIcon_EbBA"
+                 ><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span
+                >Tip
+               </div>
+               <div class="admonitionContent_GPTu">
+                <p>Misschien zijn die organisatie-specifieke componenten ook relevant voor andere organisaties. Deel ze gerust via onze <a href="https://github.com/nl-design-system/backlog" class="utrecht-link utrecht-link--html-a">backlog</a>.</p>
+               </div>
+              </div>
+              <h2 id="naamgeving-bibliotheken" class="utrecht-heading-2">Naamgeving bibliotheken</h2>
+              <p>We houden de naamgeving van de Figma bibliotheken graag gelijk tussen de verschillende organisaties. Daarom hebben we de volgende naamgeving afsproken:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>NLDS - [naam-organisatie] - Bibliotheek</li>
-               <li>Local - [naam-organisatie] - Bibliotheek</li>
+               <li><code class="utrecht-code">NL Design System - Bibliotheek - {naam-organisatie}</code></li>
+               <li><code class="utrecht-code">NL Design System - ToDo Bibliotheek - {naam-organisatie}</code></li>
+               <li><code class="utrecht-code">Local - Bibliotheek - {naam-organisatie}</code></li>
               </ul>
-              <p>Hierdoor is het meest onderscheidende deel nog leesbaar als je in Figma meerdere tabjes open hebt staan.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_structuur-local.png" alt="Schematische weergave van Figma inrichting voor het NL Design System. Kader rond de Figma omgeving van het NL Design System. Drie kaders rond drie verschillende organisaties met ieder hun eigen Figma omgeving. In elk kader staan blokken met de tekst NLDS Bibliotheek, Token Studio en Lokale Bibliotheek. Tussen het kader van het NL Design System en de andere kaders loopt een stippenlijn. Op de stippellijn staat een emoticon die blij is." class="utrecht-img" /></p>
-              <h4 id="tokens-studio-plugin" class="utrecht-heading-4">Tokens Studio plugin</h4>
-              <p>De componenten van het NL Design System hebben van zichzelf geen huisstijl. Iedere organisatie kan zijn eigen huisstijl op de componenten toepassen. Om dat voor elkaar te krijgen maken we gebruik van <a href="../design-tokens/README.mdx" class="utrecht-link utrecht-link--html-a">design tokens</a>.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_themas.png" alt="Drie dezelfde interfaces ieder met een eigen huisstijl" class="utrecht-img" /></p>
-              <p>Alleen biedt Figma, net als alle andere ontwerpprogramma’s, geen ondersteuning voor design tokens. Daarom maken we gebruik van de <a href="https://tokens.studio/" class="utrecht-link utrecht-link--html-a">Tokens Studio plugin</a>.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_tokens-studio-logo.png" alt="Logo Token Studio" class="utrecht-img" /></p>
-              <p>Deze plugin zorgt ervoor dat je binnen Figma vanuit hetzelfde JSON bestand kunt werken als developers. Je put dus letterlijk uit dezelfde bron.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_designers_figma_json.png" alt="JSON bestand met aftakkingen naar verschillende programma&#x27;s en technieken" class="utrecht-img" /></p>
-              <p>Binnen de NL Design System bibliotheek houden we de Brand, Common en Component <a href="../design-tokens/README.mdx" class="utrecht-link utrecht-link--html-a">token niveaus</a> aan. Dat betreft de plugin maar ook de pagina-indeling van de bibliotheek.</p>
-              <h5 id="voorbeeld-thema" class="utrecht-heading-5">Voorbeeld thema</h5>
-              <p>Het NL Design System heeft van zichzelf geen huisstijl. Maar om de werking en kracht van design tokens aan te tonen maken we wel gebruik van een <a href="voorbeeld-thema.md" class="utrecht-link utrecht-link--html-a">‘Voorbeeld’ thema</a>.</p>
-              <h3 id="aan-de-slag" class="utrecht-heading-3">Aan de slag</h3>
-              <p>We hebben een <a href="stappenplan.mdx" class="utrecht-link utrecht-link--html-a">stappenplan</a> uitgeschreven om uit te leggen hoe je gebruik kunt maken van de NL Design System bibliotheek en de Token Studio plugin.</p>
+              <p>Zo blijft het herkenbaar, ook als je meerdere bestanden tegelijk open hebt in Figma.</p>
+              <h2 id="tokens-studio" class="utrecht-heading-2">Tokens Studio</h2>
+              <p>De componenten in de Figma bibliotheken van het NL Design System komen standaard met het &#x27;Start-thema&#x27;. Iedere organisatie kan zelf zijn eigen kleuren, typografie en stijl toepassen. Dat doen we met design tokens.</p>
+              <p>Omdat Figma zelf geen ondersteuning biedt voor design tokens, gebruiken we Tokens Studio. Deze plugin maakt het mogelijk om design tokens in Figma te gebruiken én te synchroniseren met code (via een gedeeld JSON-bestand).</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="/handboek/huisstijl/design-tokens" class="utrecht-link utrecht-link--html-a">Lees meer over design tokens</a></li>
+               <li><a href="/handboek/huisstijl/themas/start-thema" class="utrecht-link utrecht-link--html-a">Lees meer het Start-thema</a></li>
+               <li><a href="https://tokens.studio/" class="utrecht-link utrecht-link--html-a">Lees meer over de Tokens Studio</a></li>
+              </ul>
+              <h2 id="direct-aan-de-slag" class="utrecht-heading-2">Direct aan de slag</h2>
+              <p>Wil je aan de slag? Volg dan het <a href="/handboek/designer/figma-stappenplan" class="utrecht-link utrecht-link--html-a">Figma Stappenplan</a>. Daarin nemen we je stap voor stap mee in het gebruiken van de Figma bibliotheken en lees je hoe je de huisstijl van jouw organisatie kunt doorvoeren.</p>
               <hr />
               <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
-              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">Github</a>.</p>
+              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">GitHub</a>.</p>
               <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
-              <p>Heb je een vraag? Twijfel niet en <a href="../../project/kernteam.mdx" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
+              <p>Heb je een vraag? Twijfel niet en <a href="/project/kernteam" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="theme-doc-footer-edit-meta-row row">
