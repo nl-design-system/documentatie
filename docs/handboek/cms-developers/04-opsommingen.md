@@ -29,7 +29,7 @@ Wat het CMS kan doen:
 ## Gerelateerde NL Design System-componenten
 
 - [Unordered List](/unordered-list)
-- [Ordered List](//ordered-list)
+- [Ordered List](/ordered-list)
 
 ---
 
