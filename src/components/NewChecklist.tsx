@@ -4,7 +4,7 @@ import { BadgeList, Button, Checkbox, type HeadingProps } from '@utrecht/compone
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
 import clsx from 'clsx';
 import { useId, useState } from 'react';
-import './index.css';
+import './NewChecklist.css';
 
 /**
  * NewChecklistItemProps defines expected variables for the item to test.

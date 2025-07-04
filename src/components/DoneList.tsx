@@ -4,7 +4,7 @@ import { BadgeList, type HeadingProps } from '@utrecht/component-library-react';
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
 import clsx from 'clsx';
 import { useId } from 'react';
-import './index.css';
+import './DoneList.css';
 
 /**
  * DoneListListItemProps defines expected variables for the item to test.
@@ -95,7 +95,7 @@ export const DoneListItem = ({ title, sc, component, diy }: DoneListItemProps) =
 
 export const DoneList = ({ items }: DoneListProps) => {
   return (
-    <div className="new-checklist-group">
+    <div className="done-list-group">
       {items.map((item, idx) => (
         <DoneListItem key={idx} {...item} />
       ))}
