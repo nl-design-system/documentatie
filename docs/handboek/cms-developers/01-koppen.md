@@ -34,4 +34,6 @@ Wat het CMS kan doen:
 
 - [Heading](/heading)
 
+---
+
 <FooterInfo />

@@ -33,4 +33,6 @@ Let op het volgende:
 - [Video](/video)
 - [YouTube Video](/youtube-video)
 
+---
+
 <FooterInfo />

@@ -34,4 +34,6 @@ Let op het volgende:
 
 - [Strong](/strong)
 
+---
+
 <FooterInfo />
