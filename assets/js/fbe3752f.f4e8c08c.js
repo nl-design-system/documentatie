@@ -3,14 +3,14 @@
  [35204],
  {
   66968: (e, n, t) => {
-   t.d(n, { ZP: () => s });
+   t.d(n, { ZP: () => i });
    var o = t(52676),
     l = t(40139);
    function a(e) {
     const n = { a: 'a', em: 'em', h2: 'h2', p: 'p', ...(0, l.a)(), ...e.components };
     return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, o.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door het NL Design System en zijn op dit moment in ', (0, o.jsx)(n.em, { children: 'beta' }), '.'] }), '\n', (0, o.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, o.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
    }
-   function s(e = {}) {
+   function i(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
     return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(a, { ...e }) }) : a(e);
    }
@@ -20,8 +20,8 @@
    var o = t(52676),
     l = t(40139),
     a = t(43599),
-    s = t(40761),
-    i = t(66968);
+    i = t(40761),
+    s = t(66968);
    const r = { title: 'Citaten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Citaten', pagination_label: 'Citaten', description: 'Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.', slug: '/richtlijnen/content/citaten', keywords: ['lettergrootte'] },
     c = 'Citaten op een webpagina',
     d = { id: 'richtlijnen/content/tekstopmaak/quotes', title: 'Citaten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', description: 'Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.', source: '@site/docs/richtlijnen/content/tekstopmaak/quotes.md', sourceDirName: 'richtlijnen/content/tekstopmaak', slug: '/richtlijnen/content/citaten', permalink: '/richtlijnen/content/citaten', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/quotes.md', tags: [], version: 'current', frontMatter: { title: 'Citaten \xb7 Tekstopmaak \xb7 Content \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Citaten', pagination_label: 'Citaten', description: 'Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.', slug: '/richtlijnen/content/citaten', keywords: ['lettergrootte'] }, sidebar: 'richtlijnen', previous: { title: 'Toegankelijke linkteksten', permalink: '/richtlijnen/content/tekstopmaak/linkteksten' }, next: { title: 'Opsommingen', permalink: '/richtlijnen/content/tekstopmaak/opsommingen' } },
@@ -32,8 +32,8 @@
      { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 },
     ];
    function m(e) {
-    const n = { a: 'a', blockquote: 'blockquote', code: 'code', h1: 'h1', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, l.a)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'citaten-op-een-webpagina', children: 'Citaten op een webpagina' }), '\n', (0, o.jsx)(n.p, { children: 'Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken zetten. Je kunt tekst ook markeren als citaat binnen het systeem waarmee je webpagina\u2019s publiceert. Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.' }), '\n', (0, o.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, o.jsx)(s.X, { appearance: 'do', title: 'Plaats dubbele of enkele aanhalingstekens om een quote aan te geven.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.p, { children: 'De voorzitter vroeg: \u201cWas dat het antwoord op uw vraag?\u201d' }) }) }) }), '\n', (0, o.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om een citaat als losstaand content-blok te plaatsen op je pagina. Gebruik deze mogelijkheid als je een citaat uit je tekst uit wil lichten." }), '\n', (0, o.jsx)(s.X, { appearance: 'do', title: 'Een citaat uitlichten met de specifiek daarvoor bedoelde mogelijkheid in het CMS.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: ['  ', (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. ' }), (0, o.jsx)(n.blockquote, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }), (0, o.jsx)(n.p, { children: 'De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.p, { children: 'Gebruik hiervoor geen semantische opmaak die daar niet voor bedoeld is, zoals een kop of dikgedrukte tekst.' }), '\n', (0, o.jsx)(s.X, { appearance: 'dont', title: 'Een citaat uitlichten met opmaak die daar niet voor bedoeld is, zoals een kop.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: ['  ', (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. ' }), (0, o.jsx)(n.h2, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }), (0, o.jsx)(n.p, { children: 'De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.p, { children: 'Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat relevant is voor de tekst die n\xe1 de kop komt. Gebruik dan wel aanhalingstekens om aan te geven dat het om een citaat gaat.' }), '\n', (0, o.jsx)(s.X, { appearance: 'do', title: 'Een citaat uitlichten in een kop die iets zegt over de tekst die volgt.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: '"Een vat vol geleerdheid is nog geen druppel wijsheid waard"' }), (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, o.jsx)(n.p, { children: 'Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsxs)(n.li, { children: ['Controleer of het citaat is opgemaakt met de citaatfunctie van het CMS (bijvoorbeeld als blokcitaat).\nEen citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met ', (0, o.jsx)(n.code, { children: '<blockquote>' }), '). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl.'] }), '\n', (0, o.jsx)(n.li, { children: 'Kijk of er kopstijlen (zoals H2 of H3) zijn gebruikt om een citaat visueel te laten opvallen.\nAls dat zo is, pas dit aan. Koppen zijn bedoeld voor structuur, niet voor vormgeving.' }), '\n'] }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(i.ZP, {})] });
+    const n = { a: 'a', blockquote: 'blockquote', h1: 'h1', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, l.a)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h1, { id: 'citaten-op-een-webpagina', children: 'Citaten op een webpagina' }), '\n', (0, o.jsx)(n.p, { children: 'Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken zetten. Je kunt tekst ook markeren als citaat binnen het systeem waarmee je webpagina\u2019s publiceert. Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.' }), '\n', (0, o.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, o.jsx)(i.X, { appearance: 'do', title: 'Plaats dubbele of enkele aanhalingstekens om een quote aan te geven.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsx)(n.p, { children: 'De voorzitter vroeg: \u201cWas dat het antwoord op uw vraag?\u201d' }) }) }) }), '\n', (0, o.jsx)(n.p, { children: "Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om een citaat als losstaand content-blok te plaatsen op je pagina. Gebruik deze mogelijkheid als je een citaat uit je tekst uit wil lichten." }), '\n', (0, o.jsx)(i.X, { appearance: 'do', title: 'Een citaat uitlichten met de specifiek daarvoor bedoelde mogelijkheid in het CMS.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: ['  ', (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. ' }), (0, o.jsx)(n.blockquote, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }), (0, o.jsx)(n.p, { children: 'De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.p, { children: 'Gebruik hiervoor geen semantische opmaak die daar niet voor bedoeld is, zoals een kop of dikgedrukte tekst.' }), '\n', (0, o.jsx)(i.X, { appearance: 'dont', title: 'Een citaat uitlichten met opmaak die daar niet voor bedoeld is, zoals een kop.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: ['  ', (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. ' }), (0, o.jsx)(n.h2, { children: 'Een vat vol geleerdheid is nog geen druppel wijsheid waard.' }), (0, o.jsx)(n.p, { children: 'De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.p, { children: 'Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat relevant is voor de tekst die n\xe1 de kop komt. Gebruik dan wel aanhalingstekens om aan te geven dat het om een citaat gaat.' }), '\n', (0, o.jsx)(i.X, { appearance: 'do', title: 'Een citaat uitlichten in een kop die iets zegt over de tekst die volgt.', children: (0, o.jsx)(a.X, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { children: '"Een vat vol geleerdheid is nog geen druppel wijsheid waard"' }), (0, o.jsx)(n.p, { children: 'Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.' })] }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, o.jsx)(n.p, { children: 'Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Is het citaat opgemaakt met aanhalingstekens? Dan is dat in principe voldoende.' }), '\n', (0, o.jsx)(n.li, { children: 'Is het citaat uitgelicht op de pagina? Controleer dan of de optie voor citaten in het CMS is gebruikt.' }), '\n', (0, o.jsxs)(n.li, { children: ['Controleer of het citaat niet met de functie voor schuingedrukte tekst is opgemaakt om het citaat op te laten vallen. Is dat zo? Pas de opmaak dan aan. Schuingedrukte tekst is bedoeld om ', (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/tekst-benadrukken', children: 'tekst te benadrukken' }), ', niet om citaten mee op te maken.'] }), '\n', (0, o.jsxs)(n.li, { children: ['Controleer of het citaat niet met een koptekst is opgemaakt om het citaat uit te lichten. Als dat zo is, pas dit aan. ', (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen', children: 'Koppen zijn bedoeld voor structuur' }), ', niet voor vormgeving.'] }), '\n'] }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(s.ZP, {})] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
@@ -45,8 +45,8 @@
    var o = t(41179),
     l = t(16167),
     a = t(4814),
-    s = t(64642),
-    i = t(93872),
+    i = t(64642),
+    s = t(93872),
     r = t(86017),
     c = t(48231),
     d = t(75119),
@@ -77,18 +77,18 @@
      [S, Z] = (0, p.useState)(j);
     (0, p.useEffect)(() => {
      (async () => {
-      const e = await d.ZP.format(z, { parser: x, plugins: [s.Z, i.ZP, r.ZP, c.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+      const e = await d.ZP.format(z, { parser: x, plugins: [i.Z, s.ZP, r.ZP, c.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
       N(e);
      })();
     }, [z]);
-    const E = (0, p.useId)();
-    let P = p.Fragment;
+    const P = (0, p.useId)();
+    let T = p.Fragment;
     return (
-     'paragraph' === y ? (P = u) : 'document' === y ? (P = g) : 'surface' === y && (P = k),
+     'paragraph' === y ? (T = u) : 'document' === y ? (T = g) : 'surface' === y && (T = k),
      (0, m.jsxs)('div', {
       className: (0, a.Z)('nlds-canvas'),
       children: [
-       _ && (0, m.jsx)('div', { className: (0, a.Z)('nlds-canvas__example'), children: (0, m.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, m.jsx)(P, { children: (0, m.jsx)(l.pu, { children: _ }) }) }) }),
+       _ && (0, m.jsx)('div', { className: (0, a.Z)('nlds-canvas__example'), children: (0, m.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, m.jsx)(T, { children: (0, m.jsx)(l.pu, { children: _ }) }) }) }),
        v &&
         (0, m.jsx)('div', {
          className: (0, a.Z)('nlds-canvas__toolbar'),
@@ -99,14 +99,14 @@
            Z(!S);
           },
           'aria-expanded': S,
-          'aria-controls': E,
+          'aria-controls': P,
           children: S ? 'Verberg code' : 'Bekijk code',
          }),
         }),
        v &&
         (0, m.jsxs)('div', {
          className: (0, a.Z)('nlds-canvas__code-block', !t && 'nlds-canvas__code-block--user-select-none'),
-         id: E,
+         id: P,
          hidden: !S,
          children: [
           (0, m.jsx)(o.u, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: C, trim: !0 }),
@@ -134,8 +134,8 @@
    var o = t(16167),
     l = t(60648),
     a = t(75271),
-    s = t(40761);
-   const i = {
+    i = t(40761);
+   const s = {
     plain: { color: 'var(--nlds-code-block-color)', backgroundColor: 'var(--nlds-code-block-background-color)' },
     styles: [
      { types: ['maybe-class-name'], style: { color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))' } },
@@ -176,17 +176,17 @@
    function c(e) {
     let { lineNumber: n, syntax: t, textContent: c, trim: d } = e,
      p = c;
-    const { title: h, type: m } = (0, a.useContext)(s.n),
+    const { title: h, type: m } = (0, a.useContext)(i.n),
      u = (0, a.useId)();
     return (
      d && (p = p.trim()),
      (0, r.jsx)(l.y$, {
-      theme: i,
+      theme: s,
       code: p,
       language: t || '',
       children: (e) => {
-       let { style: t, tokens: l, getLineProps: a, getTokenProps: s } = e;
-       return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)('span', { hidden: !0, id: u, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', h ? ': ' : ' ', h] }), (0, r.jsx)(o.dn, { tabIndex: 0, role: h ? 'region' : void 0, 'aria-labelledby': u, style: t, children: l.map((e, t) => (0, r.jsxs)('span', { ...a({ line: e }), children: [n && (0, r.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, r.jsx)('span', { ...s({ token: e }) }, n)), '\n'] }, t)) })] });
+       let { style: t, tokens: l, getLineProps: a, getTokenProps: i } = e;
+       return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)('span', { hidden: !0, id: u, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', h ? ': ' : ' ', h] }), (0, r.jsx)(o.dn, { tabIndex: 0, role: h ? 'region' : void 0, 'aria-labelledby': u, style: t, children: l.map((e, t) => (0, r.jsxs)('span', { ...a({ line: e }), children: [n && (0, r.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, r.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -197,24 +197,24 @@
    var o = t(69244),
     l = t(20061),
     a = t(16167),
-    s = t(4814),
-    i = t(75271),
+    i = t(4814),
+    s = t(75271),
     r = t(52676);
-   const c = (0, i.createContext)({}),
+   const c = (0, s.createContext)({}),
     d = (e) => {
-     let { title: n, appearance: t, description: i, children: d, figure: p } = e;
+     let { title: n, appearance: t, description: s, children: d, figure: p } = e;
      const h = { do: 'Doen', dont: 'Niet doen' },
       m = p ? 'figure' : 'div',
       u = p ? 'figcaption' : 'div';
-     return (0, r.jsxs)(m, { className: (0, s.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, r.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(a.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: h.dont })] }), (0, r.jsx)(a.nv, { children: n })] }) : (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(a.nv, { className: (0, s.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: h.do })] }), (0, r.jsx)(a.nv, { children: n })] }), i] }), (0, r.jsx)('div', { className: 'nlds-guideline__example', children: (0, r.jsx)(c.Provider, { value: { title: n, type: h[t] }, children: d }) })] });
+     return (0, r.jsxs)(m, { className: (0, i.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, r.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(a.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(o.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: h.dont })] }), (0, r.jsx)(a.nv, { children: n })] }) : (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(a.nv, { className: (0, i.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, r.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, r.jsx)('span', { className: 'nlds-guideline__title', children: h.do })] }), (0, r.jsx)(a.nv, { children: n })] }), s] }), (0, r.jsx)('div', { className: 'nlds-guideline__example', children: (0, r.jsx)(c.Provider, { value: { title: n, type: h[t] }, children: d }) })] });
     };
   },
   40139: (e, n, t) => {
-   t.d(n, { Z: () => i, a: () => s });
+   t.d(n, { Z: () => s, a: () => i });
    var o = t(75271);
    const l = {},
     a = o.createContext(l);
-   function s(e) {
+   function i(e) {
     const n = o.useContext(a);
     return o.useMemo(
      function () {
@@ -223,9 +223,9 @@
      [n, e],
     );
    }
-   function i(e) {
+   function s(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : s(e.components)), o.createElement(a.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : i(e.components)), o.createElement(a.Provider, { value: n }, e.children);
    }
   },
  },
