@@ -30,4 +30,6 @@ Let op het volgende:
 
 - [Blockquote](/blockquote)
 
+---
+
 <FooterInfo />
