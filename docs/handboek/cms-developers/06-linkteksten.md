@@ -11,6 +11,10 @@ keywords:
   - linkteksten
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Linkteksten
 
 Duidelijke linkteksten zorgen dat gebruikers weten waar een link naartoe leidt. Dit is belangrijk voor iedereen die snel wil scannen of gebruik maakt van hulptechnologie. Een CMS kan helpen door contentmakers te ondersteunen bij het maken van betekenisvolle links.
@@ -30,12 +34,4 @@ Let op het volgende:
 - [Link List](/link-list)
 - [Login Link](/login-link)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />
