@@ -1,5 +1,5 @@
 ---
-title: Toegankelijke linkteksten · Content · Richtlijnen
+title: Toegankelijke linkteksten · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Toegankelijke linkteksten
@@ -24,7 +24,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. Een link als ‘klik hier’ of ‘lees meer’ zegt dan niets. Zorg daarom dat de linktekst op zichzelf duidelijk is. Dat maakt je content toegankelijker én beter vindbaar in zoekmachines.
 
-Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen — bijvoorbeeld omdat ze een schermlezer gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.
+Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen — bijvoorbeeld omdat ze een [screenreader](/woordenlijst/#screenreader) gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.
 
 Op deze pagina lees je hoe je goede linkteksten schrijft en welke fouten je beter kunt vermijden.
 

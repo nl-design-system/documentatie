@@ -1,5 +1,5 @@
 ---
-title: Flitsen in video · Content · Richtlijnen
+title: Flitsen in video · Video · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Flitsen
@@ -67,6 +67,13 @@ Ook tijdens en na het monteren kun je een aantal stappen nemen om flitsen te voo
 Is het helemaal niet mogelijk om een mogelijke flits te voorkomen? Voeg dan een waarschuwing toe, zodat bezoekers ervoor kunnen kiezen om de video niet verder te kijken.
 
 Let wel op: Bevat je video meerdere flitsen in een hele korte tijd? Dan is het toevoegen van een waarschuwing niet voldoende om te voldoen aan [succescriterium 2.3.1 Drie flitsen beneden drempelwaarde](/wcag/2.3.1).
+
+## Hoe te testen
+
+Controleer iedere video. Gebruik hierbij de onderstaande stappen als checklist:
+
+- Bekijk de video in de grootst mogelijke aangeboden weergave. Bevat de video mogelijke flitsen?
+- Zo ja, controleer de video dan met een analyse tool.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

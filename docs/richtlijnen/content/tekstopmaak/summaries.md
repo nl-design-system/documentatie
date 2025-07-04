@@ -1,10 +1,10 @@
 ---
-title: Opsommingen · Content · Richtlijnen
+title: Opsommingen · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Opsommingen
 pagination_label: Opsommingen
-description: Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een schermlezer gebruiken.
+description: Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.
 slug: /richtlijnen/content/tekstopmaak/opsommingen
 keywords:
   - semantiek
@@ -25,7 +25,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Opsommingen
 
-Met een opsomming maak je informatie overzichtelijk. Dat is handig voor iedereen die snel wil scannen, maar ook belangrijk voor mensen die gebruikmaken van een schermlezer of een vergroot scherm.
+Met een opsomming maak je informatie overzichtelijk. Dat is handig voor iedereen die snel wil scannen, maar ook belangrijk voor mensen die gebruikmaken van een [screenreader](/woordenlijst/#screenreader) of een vergroot scherm.
 
 Alleen: niet elke lijst is automatisch toegankelijk. Dat hangt af van de manier waarop je de opsomming opmaakt. Een visuele lijst met streepjes of icoontjes wordt niet altijd herkend door hulptechnologie. Ook het type lijst, genummerd of ongenummerd, moet passen bij de inhoud.
 

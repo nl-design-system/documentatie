@@ -15,7 +15,7 @@ De constructie is als volgt:
 - Deze lijst heeft een kopje met bijvoorbeeld de tekst:
   "Er was een probleem met je inzending. Verbeter de fouten voor je verder gaat.".
 - Daaronder staat een lijst met de foutmeldingen. Elke foutmelding is ook een link naar het bijbehorende formulierveld.
-- Het kopje boven de fouten krijgt de toetsenbordfocus. Dan staat het meteen in beeld, wordt het voorgelezen door screenreaders en is de tabvolgorde logisch: de links naar de betreffende velden zijn de eerstvolgende items.
+- Het kopje boven de fouten krijgt de toetsenbordfocus. Dan staat het meteen in beeld, wordt het voorgelezen door [screenreaders](/woordenlijst/#screenreader) en is de tabvolgorde logisch: de links naar de betreffende velden zijn de eerstvolgende items.
 
 GOV.UK geeft hiervan enkele duidelijke voorbeelden op [<span lang="en">Components Error summary</span>](https://design-system.service.gov.uk/components/error-summary/).
 

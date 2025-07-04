@@ -11,19 +11,25 @@ keywords:
   - annotation
   - badge
   - categorie
+  - category
+  - categorie aanduiding
   - categoriseren
   - categorize
-  - category
   - characteristic
   - chip
   - data
   - data badge
+  - data tag
   - eigenschap
   - etiket
   - etiquette
+  - filteren op
   - filter tag
   - index
   - index term
+  - info
+  - info tag
+  - informatiebadge
   - label
   - metadata
   - pill
@@ -33,9 +39,10 @@ keywords:
   - status badge
   - sticker
   - tag
-  - tagged
   - tagging
+  - tagged
   - term
+  - time
 ---
 
 {/* @license CC0-1.0 */}
@@ -60,8 +67,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import Usage from "./_usage.md";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/data-badge-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Data Badge";
@@ -79,6 +88,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={DataBadgeIllustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

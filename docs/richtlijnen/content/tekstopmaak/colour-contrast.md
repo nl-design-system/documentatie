@@ -1,14 +1,15 @@
 ---
-title: Kleurgebruik · Content · Richtlijnen
+title: Kleurgebruik in tekst · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Kleurgebruik
-pagination_label: Kleurgebruik
+sidebar_label: Kleurgebruik in tekst
+pagination_label: Kleurgebruik in tekst
 description: Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.
-slug: /richtlijnen/content/tekstopmaak/kleurgebruik
+slug: /richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst
 keywords:
   - tekstopmaak
   - kleurgebruik
+  - tekst
   - kleurcontrast
 ---
 
@@ -18,7 +19,7 @@ import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
 
-# Kleurgebruik
+# Kleurgebruik in tekst
 
 Kleurgebruik speelt een grote rol in hoe mensen content waarnemen. Niet iedereen ziet kleuren op dezelfde manier. Daarom is het belangrijk dat je informatie nooit alleen met kleur overbrengt, en dat tekst altijd goed leesbaar blijft tegen de achtergrond.
 
@@ -98,33 +99,9 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   </Canvas>
 </Guideline>
 
-## Grafieken
+## Meer over kleurgebruik in grafieken
 
-Gebruik je een grafiek als afbeelding in je content? Let er dan op dat de informatie in de grafiek voor iedereen begrijpelijk is. Dus ook voor mensen die kleuren niet goed kunnen onderscheiden.
-
-Veel grafieken gebruiken kleur om verschil te laten zien tussen lijnen of balken. Maar als iemand kleurenblind is of de pagina in zwart-wit bekijkt, valt dat verschil weg.
-
-Waar let je op als contentmaker?
-
-- Is de grafiek ook te begrijpen zonder kleur?
-  Bijvoorbeeld omdat er labels bij staan, of omdat lijnen verschillende streepjes of patronen hebben.
-- Is er een korte uitleg in de tekst?
-  Omschrijf in je tekst wat de grafiek laat zien. Zo voorkom je dat mensen de informatie missen als de grafiek niet duidelijk is.
-- Is de tekst in de grafiek goed leesbaar?
-  Vermijd kleine of vage letters. Als je de grafiek niet zelf maakt: vraag om een versie met duidelijke tekst.
-
-### Voorbeeld van kleurgebruik in een grafiek
-
-In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers. De eerste grafiek laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De tweede grafiek is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
-
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
-
-Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld stippeltjes of streepjes.
-
-In onderstaande afbeelding worden de lijntjes op verschillende manieren weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn. Zo bestaat één van de lijnen uit stippen, één uit streepjes en één uit afwisselend streepjes en stippen. De vierde lijn is een doorgetrokken lijn. Op deze manier is het niet nodig om kleuren te onderscheiden.
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde maar verschillend gestreepte lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
-
-De data over browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
+Kleur speelt ook een belangrijke rol in grafieken en andere informatieve afbeeldingen. Hoe je die toegankelijk maakt, lees je in de [richtlijnen voor grafieken](/richtlijnen/content/afbeeldingen/grafieken).
 
 ## Hoe te testen
 

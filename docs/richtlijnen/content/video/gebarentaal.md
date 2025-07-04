@@ -1,5 +1,5 @@
 ---
-title: Gebarentaal · Content · Richtlijnen
+title: Gebarentaal · Video · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Gebarentaal
@@ -83,6 +83,17 @@ Je kunt de ondertiteling van je video al automatisch laten maken. Voor gebarenta
 Gebarentaal verschilt per land — en soms zelfs per regio. Zorg dus dat de aanbieder expert is in de specifieke gebarentaal van jouw doelgroep. Waar je bij ondertiteling vooral moet controleren of de tekst juist is en interpunctie bevat, is het bij gebarentaal belangrijk dat zowel de handen, de mimiek en de lichaamshouding kloppen. Anders kan je boodschap totaal verkeerd overkomen.
 
 Gebruik automatisch gegenereerde gebarentaal pas als uit gebruikersonderzoek blijkt dat het ook daadwerkelijk werkt voor dove en slechthorende mensen. Laat de kwaliteit altijd toetsen door mensen die de taal dagelijks gebruiken. Want alleen dan weet je zeker dat je iedereen echt bereikt.
+
+## Hoe te testen
+
+Controleer voor iedere video met gebarentaal:
+
+- Is de tolk volledig in beeld?
+- Zijn de gebaren, mimiek en lichaamshouding goed zichtbaar?
+- Overlapt de tolk niet met belangrijke informatie in beeld?
+- Is het beeld met de tolk groot genoeg?
+- Lopen de gebaren synchroon met de audio?
+- Kloppen de gebaren? Laat dit controleren door één of meerdere mensen die gebarentaal gebruiken.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

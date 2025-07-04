@@ -15,7 +15,7 @@ Voordelen van SVG:
 
 In tegenstelling tot SVG worden iconen van een font toegewezen aan Unicode-punten en geïnterpreteerd als tekst. Dit kan tot toegankelijkheidsproblemen leiden. Zo kan iemand een eigen lettertype hebben geïnstalleerd. Mensen met dyslexie stellen soms hun eigen lettertypen in voor een betere leesbaarheid. In dat geval worden de iconen vervangen door 'ontbrekende tekens'-symbolen. Dat gebeurt trouwens ook als het font niet geladen wordt.
 
-Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een 'A'. Wanneer men een ander font gebruikt of als het font met de iconen niet wordt geladen staat er simpelweg een 'A'. Daarnaast wordt dit icoon door schermlezers ook uitgesproken als 'A'.
+Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo kan een icoon voor sluiten toegewezen zijn aan een 'A'. Wanneer men een ander font gebruikt of als het font met de iconen niet wordt geladen staat er simpelweg een 'A'. Daarnaast wordt dit icoon door [screenreaders](/woordenlijst/#screenreader) ook uitgesproken als 'A'.
 
 ## Toepassen van een SVG in code
 
@@ -36,7 +36,7 @@ Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de te
 
 Alleen iconen die zeer goed ingeburgerd zijn, zoals een vergrootglas (voor zoeken) of een kruis (voor sluiten), zou je kunnen gebruiken zonder aanvullende visuele tekst. In deze gevallen wordt een visueel verborgen `<span>` aanbevolen.
 
-Verberg in deze gevallen de `<span>` met behulp van de class `visually-hidden` of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Schermlezers zullen de tekst nog steeds voorlezen.
+Verberg in deze gevallen de `<span>` met behulp van de class `visually-hidden` of iets vergelijkbaars. Deze class verbergt de tekst enkel visueel. Screenreaders zullen de tekst nog steeds voorlezen.
 
 Ook `aria-label` kan dit voor elkaar krijgen maar [`aria-label` kan voor vertaalproblemen zorgen](https://heydonworks.com/article/aria-label-is-a-xenophobe).
 

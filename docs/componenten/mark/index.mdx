@@ -7,8 +7,28 @@ pagination_label: Mark
 description: Markeert tekst, zodat je ernaar kan verwijzen vanuit een andere context of omdat de tekst relevant is voor de huidige activiteit.
 slug: /mark
 keywords:
+  - accent
+  - ctrl-f
+  - gele lijn
+  - gemarkeerde tekst
   - highlight
   - highlighter
+  - inline resultaat
+  - mark
+  - marked text
+  - markeer
+  - marker
+  - markeren
+  - markering
+  - markertekst
+  - match
+  - opgelicht
+  - resultaat
+  - search term
+  - spotlight
+  - stabilo
+  - term
+  - voorbeeld
 ---
 
 {/* @license CC0-1.0 */}
@@ -32,8 +52,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import Usage from "./_usage.md";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/mark-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Mark";
@@ -51,6 +73,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={MarkIllustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

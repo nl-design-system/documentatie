@@ -3,7 +3,6 @@ import {
   Heading,
   Link,
   LinkList,
-  LinkListLink,
   Paragraph,
   UnorderedList,
   UnorderedListItem,
@@ -15,48 +14,15 @@ import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from './TaskList';
-import { COMPONENT_STATES, getRelayBoardDescription, relayProjectIds, toKebabCase } from '../utils';
+import {
+  COMPONENT_STATES,
+  getProjectFrameworks,
+  getRelayBoardDescription,
+  relayProjectIds,
+  toKebabCase,
+  type ComponentPageSectionProps,
+} from '../utils';
 import './ComponentPage.css';
-
-type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
-type PROJECT_ID =
-  | 'HELP_WANTED'
-  | 'COMMUNITY'
-  | 'CANDIDATE'
-  | 'HALL_OF_FAME'
-  | 'UTRECHT'
-  | 'AMSTERDAM'
-  | 'RVO'
-  | 'LOGIUS'
-  | 'DEN_HAAG';
-interface Component {
-  relayStep: RELAY_STEP;
-  title: string;
-  backlog: string;
-  projects: {
-    title: string;
-    number: number;
-    id: PROJECT_ID;
-    url: string;
-    tasks: {
-      dataType: string;
-      name: string;
-      id: string;
-      value: string;
-      checked: boolean;
-    }[];
-    done: boolean;
-    progress: {
-      value: number;
-      max: number;
-    };
-  }[];
-}
-
-interface ComponentPageSectionProps {
-  component: Component;
-  headingLevel: number;
-}
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -113,12 +79,9 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           const task = project.tasks.find(({ name }) => name === 'Naam');
 
           const alias = task?.value;
-
+          const frameworks = getProjectFrameworks(project);
           const urlMap = new Map([
             ['Figma URL', { brand: 'figma', desciption: `${alias} in Figma` }],
-            ['NPM URL (CSS)', { brand: 'npm', desciption: `${alias} op NPM` }],
-            ['GitHub URL (CSS)', { brand: 'github', desciption: `${alias} op GitHub` }],
-            ['Storybook URL (CSS)', { brand: 'storybook', desciption: `${alias} in Storybook van ${project.title}` }],
             ['Theme Storybook URL', { brand: 'storybook', desciption: `${alias} voor visuele regressie tests` }],
           ]);
 
@@ -138,21 +101,41 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
+                {(links.length > 0 || frameworks.length > 0) && (
+                  <Heading level={headingLevel + 1}>Snel aan de slag</Heading>
+                )}
                 {links.length > 0 && (
                   <>
-                    <Heading level={headingLevel + 1}>Component gebruiken?</Heading>
-                    <LinkList>
-                      {links.map((item) => {
-                        const url = urlMap.get(item.name);
-                        return url ? (
-                          <LinkListLink key={item.id} href={item.value}>
-                            <BrandIcon brand={url.brand} /> {url.desciption}
-                          </LinkListLink>
-                        ) : (
-                          <></>
-                        );
-                      })}
-                    </LinkList>
+                    <LinkList
+                      links={links
+                        .filter((item) => !!urlMap.get(item.name))
+                        .map((item) => {
+                          const url = urlMap.get(item.name);
+                          return {
+                            children: url.desciption,
+                            icon: <BrandIcon brand={url.brand} />,
+                            href: item.value,
+                          };
+                        })}
+                    />
+                  </>
+                )}
+                {frameworks.length > 0 && (
+                  <>
+                    {frameworks.map(({ frameworkName, tasks }) => (
+                      <>
+                        <Heading level={headingLevel + 2}>
+                          {alias} in {frameworkName}
+                        </Heading>
+                        <LinkList
+                          links={tasks.map((frameworkTask) => ({
+                            children: frameworkTask.description,
+                            icon: <BrandIcon brand={frameworkTask.brand} />,
+                            href: frameworkTask.value,
+                          }))}
+                        />
+                      </>
+                    ))}
                   </>
                 )}
               </CardContent>

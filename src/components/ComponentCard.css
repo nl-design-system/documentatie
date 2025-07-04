@@ -7,6 +7,8 @@
   --component-illustration-svg-max-height: 185px;
   --component-illustration-padding-inline: 24px;
   --card-content-inline-size: 60%;
+  --utrecht-badge-list-item-margin-block: 0.25em;
+  --utrecht-badge-list-item-margin-inline: 0.25em;
 }
 
 .component-card--suggestion {
@@ -15,6 +17,10 @@
 
 .component-name {
   text-transform: lowercase;
+}
+
+.component-card .utrecht-badge-list {
+  margin-block-start: 12px;
 }
 
 @media screen and (width <= 768px) {

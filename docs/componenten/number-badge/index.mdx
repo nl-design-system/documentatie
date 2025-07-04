@@ -6,6 +6,24 @@ sidebar_label: Number Badge
 pagination_label: Number Badge
 description: Toont een klein label dat de aandacht trekt en informeert over een aantal.
 slug: /number-badge
+keywords:
+  - aantal
+  - badge
+  - count badge
+  - counter badge
+  - cijfer
+  - chip
+  - counter
+  - label
+  - number
+  - number badge
+  - number label
+  - number marker
+  - notification badge
+  - notification label
+  - pill
+  - stamp
+  - tag
 ---
 
 {/* @license CC0-1.0 */}
@@ -28,8 +46,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import Usage from "./_usage.md";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/number-badge-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Number Badge";
@@ -47,6 +67,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={NumberBadgellustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

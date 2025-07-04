@@ -34,7 +34,7 @@ Ongeacht voor welke afbeelding je een alternatieve tekst gaat schrijven, zijn er
 
 - Zet de belangrijkste informatie vooraan. Zo weet een bezoeker meteen of de rest van de beschrijving nodig is.
 - Hou de beschrijving kort, maar wel volledig. Bij voorkeur is een alternatieve tekst maximaal 150 tekens lang, maar het is het belangrijkst dat de beschrijving klopt.
-- Gebruik altijd interpunctie. Voorleessoftware maakt ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig langere alternateve teksten met een punt. Zo pauzeert voorleessoftware voordat de rest van de pagina wordt voorgelezen.
+- Gebruik altijd interpunctie. [Screenreaders](/woordenlijst/#screenreader) maken ook gebruik van interpunctie. Een alternatieve tekst met interpunctie is beter te beluisteren. Beëindig langere alternateve teksten met een punt. Zo pauzeert een screenreader voordat de rest van de pagina wordt voorgelezen.
 - Benoem niet dát het een afbeelding is, bijvoorbeeld 'afbeelding van een eikenboom' of 'foto van Linda de Vries'. Benoem het alleen als het echt relevant is. Een voorbeeld van wanneer het wel relevant is om te benoemen dat het om een foto gaat, is een foto van een belangrijke historische gebeurtenis. Als de afbeelding een foto is, kan dat aangeven dat het een authentieke, historische opname is. Maar als het een illustratie is, kan dat betekenen dat het een interpretatie of reconstructie is.
 
 <Guideline appearance="dont" title="Geen interpunctie gebruiken">
@@ -60,13 +60,17 @@ Artificial Intelligence (AI) kan enorm behulpzaam zijn voor blinden en slechtzie
 
 Wees wel voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is op dit moment nog niet zo slim als je zou willen. Er kunnen daardoor fouten staan in een tekstalternatief dat door AI is gegenereerd. Of er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. En soms is de beschrijving niet relevant in de context waarvoor jij de afbeelding had gekozen. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
 
-## Test het zelf
+## Hoe te testen
 
 Controleer of je een goed tekstalternatief hebt geschreven door na te gaan of je deze vragen met 'Ja' kunt beantwoorden:
 
 - Geeft de alt-tekst dezelfde informatie als de afbeelding?
 - Is de alt-tekst in [de juiste taal](/wcag/3.1.2) geschreven?
 - Is de alternatieve tekst relevant in de context van waarom de afbeelding op de pagina staat?
+
+**Tip:** Lees de alt-tekst hardop.
+
+Begrijp je als lezer (zonder de afbeelding te zien) wat je moet weten? Dan is de alt-tekst duidelijk en functioneel. Bevat de alt-tekst alleen bestandsnamen, omschrijvingen als “afbeelding”, of overbodige details? Dan moet je ‘m verbeteren.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

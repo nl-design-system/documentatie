@@ -2,7 +2,7 @@
 
 # Geef feedback aan screenreadergebruikers
 
-We geven je 3 extra manieren om feedback te geven over foutmeldingen voor screenreadergebruikers. Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.
+We geven je 3 extra manieren om feedback te geven over foutmeldingen voor gebruikers van [screenreaders](/woordenlijst/#screenreader). Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.
 
 Het geven van feedback aan screenreadergebuikers over foutmeldingen is nodig om te voldoen aan de WCAG-succescriteria:
 
@@ -11,7 +11,7 @@ Het geven van feedback aan screenreadergebuikers over foutmeldingen is nodig om 
 
 ## Gebruik ARIA voor feedback
 
-Gebruik ARIA om aanvullende informatie en feedback te geven aan screenreadergebruikers. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
+Gebruik ARIA om aanvullende informatie en feedback te geven aan gebruikers van screenreaders. Informatie die nodig is om het formulier goed te gebruiken en te begrijpen.
 
 Twee ARIA-attributen zijn belangrijk voor screenreaderfeedback:
 

@@ -6,7 +6,7 @@ import { VideoPlayer } from "@site/src/components/VideoPlayer";
 
 Het HTML-attribuut [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby), waarmee je een description toevoegt, mag alleen 'platte tekst' bevatten. Platte tekst staat voor tekst zonder verdere opmaak en heeft geen extra HTML voor opmaak of betekenis.
 
-Opgemaakte tekst noemen we ['rich text'](https://github.com/orgs/nl-design-system/discussions/289). Screenreaders geven deze informatie niet goed door of slaan het zelfs helemaal over in een description.
+Opgemaakte tekst noemen we ['rich text'](https://github.com/orgs/nl-design-system/discussions/289). [Screenreaders](/woordenlijst/#screenreader) geven deze informatie niet goed door of slaan het zelfs helemaal over in een description.
 
 **Let op**: het NL Design System adviseert ook geen tooltip te gebruiken voor het verbergen van **essentiële informatie**. Zie de discussie over [Toggletip](https://github.com/orgs/nl-design-system/discussions/298) op GitHub.
 

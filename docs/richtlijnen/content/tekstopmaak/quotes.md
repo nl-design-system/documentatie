@@ -1,5 +1,5 @@
 ---
-title: Citaten · Code · Richtlijnen
+title: Citaten · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Citaten
@@ -34,25 +34,44 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
   </Canvas>
 </Guideline>
 
-Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om met een knop een quote toe te voegen.
+Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Veel CMS'en bieden de mogelijkheid om een citaat als losstaand content-blok te plaatsen op je pagina. Gebruik deze mogelijkheid als je een citaat uit je tekst uit wil lichten.
 
-<Guideline appearance="dont" title="Een kop gebruiken om een quote op te maken.">
+<Guideline appearance="do" title="Een citaat uitlichten met de specifiek daarvoor bedoelde mogelijkheid in het CMS.">
   <Canvas language="html">
     {() => (
-      <>
-          <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard."</h2>
+      <>  <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. </p>
+          <blockquote>
+          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
+          </blockquote>
+          <p>De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
       </>
     )}
   </Canvas>
 </Guideline>
 
-<Guideline appearance="do" title="Een quote opmaken met de specifiek daarvoor bedoelde mogelijkheid in het CMS.">
+Gebruik hiervoor geen semantische opmaak die daar niet voor bedoeld is, zoals een kop of dikgedrukte tekst.
+
+<Guideline appearance="dont" title="Een citaat uitlichten met opmaak die daar niet voor bedoeld is, zoals een kop.">
+  <Canvas language="html">
+    {() => (
+      <>  <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. </p>
+          <h2>
+          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
+          </h2>
+          <p>De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat relevant is voor de tekst die ná de kop komt. Gebruik dan wel aanhalingstekens om aan te geven dat het om een citaat gaat.
+
+<Guideline appearance="do" title="Een citaat uitlichten in een kop die iets zegt over de tekst die volgt.">
   <Canvas language="html">
     {() => (
       <>
-          <blockquote>
-          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
-          </blockquote>
+      <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard"</h2>
+      <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
       </>
     )}
   </Canvas>
@@ -62,10 +81,10 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
 
 Lees de pagina door en controleer alle citaten. Gebruik de onderstaande stappen als checklist:
 
-- Controleer of het citaat is opgemaakt met de citaatfunctie van het CMS (bijvoorbeeld als blokcitaat).
-  Een citaat moet als citaat zijn gemarkeerd in de code (bijvoorbeeld met `<blockquote>`). Gebruik dus niet alleen aanhalingstekens of een cursieve stijl. ￼
-- Kijk of er kopstijlen (zoals H2 of H3) zijn gebruikt om een citaat visueel te laten opvallen.
-  Als dat zo is, pas dit aan. Koppen zijn bedoeld voor structuur, niet voor vormgeving.
+- Is het citaat opgemaakt met aanhalingstekens? Dan is dat in principe voldoende.
+- Is het citaat uitgelicht op de pagina? Controleer dan of de optie voor citaten in het CMS is gebruikt.
+- Controleer of het citaat niet met de functie voor schuingedrukte tekst is opgemaakt om het citaat op te laten vallen. Is dat zo? Pas de opmaak dan aan. Schuingedrukte tekst is bedoeld om [tekst te benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken), niet om citaten mee op te maken.
+- Controleer of het citaat niet met een koptekst is opgemaakt om het citaat uit te lichten. Als dat zo is, pas dit aan. [Koppen zijn bedoeld voor structuur](/richtlijnen/content/tekstopmaak/koppen), niet voor vormgeving.
 
 ## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
 

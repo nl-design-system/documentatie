@@ -1,5 +1,5 @@
 ---
-title: Tabellen · Content · Richtlijnen
+title: Tabellen · Tekstopmaak · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen
@@ -27,11 +27,11 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Tabellen
 
-Met tabellen kun je data op een overzichtelijke manier presenteren. Ze zijn vooral geschikt om gestructureerde informatie te tonen, zoals cijferreeksen of vergelijkingen. Een toegankelijke tabel helpt ook mensen die een schermlezer gebruiken: zij moeten bij elke cel kunnen achterhalen wat de bijbehorende kolom- en/of rijkoppen zijn.
+Met tabellen kun je data op een overzichtelijke manier presenteren. Ze zijn vooral geschikt om gestructureerde informatie te tonen, zoals cijferreeksen of vergelijkingen. Een toegankelijke tabel helpt ook mensen die een [screenreader](/woordenlijst/#screenreader) gebruiken: zij moeten bij elke cel kunnen achterhalen wat de bijbehorende kolom- en/of rijkoppen zijn.
 
 ## Toegankelijke tabellen maken
 
-Zorg ervoor dat je in het systeem waarmee je publiceert aangeeft welke cellen kopcellen zijn. Vaak kun je instellen of er kolomkoppen, rijkoppen of beide aanwezig zijn. Schermlezers gebruiken deze informatie om bij elke cel de juiste kop voor te lezen, zodat de structuur en betekenis van de gegevens duidelijk blijven.
+Zorg ervoor dat je in het systeem waarmee je publiceert aangeeft welke cellen kopcellen zijn. Vaak kun je instellen of er kolomkoppen, rijkoppen of beide aanwezig zijn. Screenreaders gebruiken deze informatie om bij elke cel de juiste kop voor te lezen, zodat de structuur en betekenis van de gegevens duidelijk blijven.
 
 <Guideline appearance="do" title="Markeer koppen als rijkoppen of kolomkoppen">
   <Canvas language="html">
@@ -163,7 +163,7 @@ Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar ee
 
 ## Doel van de tabel
 
-Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je namelijk een relatie aan tussen tabelcellen. Iemand die een schermlezer gebruikt, krijgt namelijk te horen dat er een tabel aanwezig is. En ook voor iedere cel in welke rij en in welke kolom de cel staat. Als er geen relatie is, is het gebruik van een tabel verwarrend.
+Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je namelijk een relatie aan tussen tabelcellen. Iemand die een screenreader gebruikt, krijgt namelijk te horen dat er een tabel aanwezig is. En ook voor iedere cel in welke rij en in welke kolom de cel staat. Als er geen relatie is, is het gebruik van een tabel verwarrend.
 
 <Guideline appearance="dont" title="Een tabel gebruiken voor mooiere opmaak">
   <Canvas language="html">
@@ -182,7 +182,7 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
 
 ## Inhoud van de tabel
 
-Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is voor een gebruiker met een schermlezer. De schermlezer leest een tabel voor per rij en van links naar rechts.
+Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is voor een gebruiker met een screenreader. De screenreader leest een tabel voor per rij en van links naar rechts.
 
 <Guideline appearance="dont" title="Gerelateerde informatie in verschillende rijen plaatsen">
   <Canvas language="html">
@@ -202,7 +202,7 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
             <td>Docent Nederlands</td>
           </tr>
         </table>
-        <p>Een schermlezer zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
+        <p>Een screenreader zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
       </>
     )}
   </Canvas>
@@ -230,7 +230,7 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
               <td>Docent Nederlands</td>
           </tr>
         </table>
-        <p>Een schermlezer zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
+        <p>Een screenreader zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>
       </>
     )}
   </Canvas>

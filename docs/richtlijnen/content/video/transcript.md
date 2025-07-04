@@ -1,5 +1,5 @@
 ---
-title: Transcript · Content · Richtlijnen
+title: Transcript · Video · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Transcript

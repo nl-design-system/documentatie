@@ -4,7 +4,3 @@
   --utrecht-accordion-panel-padding-inline-start: 1.5em;
   --utrecht-accordion-panel-padding-block-start: 0;
 }
-
-.utrecht-form-field--nlds-switch {
-  --utrecht-checkbox-size: var(--utrecht-form-toggle-width);
-}

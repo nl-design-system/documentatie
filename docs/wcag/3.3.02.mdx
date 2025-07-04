@@ -4,13 +4,15 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.2 Labels of instructies
 pagination_label: WCAG-succescriterium 3.3.2 Labels of instructies
-description: Toon een label voor alle invoervelden, en geef aanvullende instructies wanneer het label niet voldoende helpt om een veld goed in te vullen.
+description: Geef invoervelden een label of uitleg.
 slug: 3.3.2
 keywords:
   - WCAG
   - A
   - begrijpelijk
   - assistentie bij invoer
+  - invoer
+  - uitleg
   - understandable
   - input assistance
   - labels or instructions
@@ -30,13 +32,68 @@ import Summary from "./summaries/_3.3.2-summary.md";
   {"WCAG-succescriterium 3.3.2 Labels of instructies"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Gebruikers weten wat ze in moeten voeren.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Geef een label of uitleg bij invoer.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Iedereen, vooral mensen met cognitieve beperkingen, weet waar men aan toe is.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Als er ergens invoer nodig is, is het voor iedereen prettig om te weten wat er verwacht wordt. Labels en uitleg helpen daarbij. Een label betekent in deze context dat er iets zichtbaar is, zoals tekst of een icoon, waardoor je als bezoeker weet wat het doel is. Denk aan:
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Voornaam
+- Plaatsnaam
+- Wachtwoord
+- Telefoonnummer
+- Een vergrootglas-icoon bij een zoekfunctie
+
+Het label moet voor iedereen duidelijk genoeg zijn.
+
+Een uitleg (een instructie) vertelt meer over wat er verwacht wordt van de invoer, zoals de manier van spellen of schrijven. Denk aan:
+
+- een nieuw wachtwoord dat lang genoeg moet zijn
+- wel of geen spatie tussen de letters en cijfers van een postcode
+- de manier waarop een datum geschreven moet worden
+
+Als de invoer aan bepaalde eisen moet voldoen, is het een goed idee om een uitleg toe te voegen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+Dit succescriterium past bij bijna alle richtlijnen rond formulieren.
+
+- [Richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren)
+- Formulieren: [Richtlijnen voor labels in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/labels/)
+
+## Hoe te testen
+
+- Zoek de invoervelden en formulieren.
+- Controleer van elk veld of er een beschrijvend label of behulpzame uitleg bij is.
+
+##Tips
+
+- Het behalen van dit criterium kan onder andere ook helpen bij [2.4.6 Koppen en labels](/wcag/2.4.6) en [4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+- Zorg voor zowel labels als uitleg om fouten te voorkomen.
+- Als een nieuw wachtwoord aan bepaalde eisen moet voldoen, maak die dan meteen zichtbaar.
+
+## Veelgemaakte fouten
+
+### Fout: Labels en/of uitleg zijn niet verbonden aan de invoer.
+
+Voor [1.3.1 Info en relaties](/wcag/1.3.1) is het belangrijk dat labels en uitleg niet alleen aanwezig zijn, maar ook in de code aan elkaar verbonden zijn. De relatie die je ziet moet ook in de code aanwezig zijn. Dit kan met het `<label>`-element, maar ook met `aria-labelledby`. Foutmeldingen kun je ook koppelen aan het invoerveld. Dit kan met `aria-describedby`.
 
 ## Gebruikersonderzoek
 

@@ -1,0 +1,166 @@
+---
+title: Design tokens versiebeheer
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Design tokens versiebeheer
+sidebar_position: 7
+pagination_label: Design tokens versiebeheer
+description: Informatie voor designers over semver en hoe we het toepassen op de packages met design tokens.
+slug: /handboek/designer/design-tokens-versiebeheer
+keywords:
+  - design tokens
+  - versiebeheer
+  - changelog
+  - semantic versioning
+  - major
+  - minor
+  - patch
+---
+
+# Design tokens versiebeheer
+
+Design tokens komen uiteindelijk terecht in een package. Een package is een pakketje van code dat gebruikt kan worden door ontwikkelaars. Denk daarbij aan CSS variabelen.
+
+Deze packages worden geüpload naar een package registry. Een package registry is een database van alle packages die ooit zijn geüpload.
+
+Alle packages in een registry hebben een versienummer. Als er een nieuwe versie van een package wordt geüpload, wordt het versienummer van dat package opgehoogd.
+
+## Semantic versioning in een notendop
+
+Bij NL Design System maken we voor het ophogen van versienummers gebruik van ‘semantic versioning’, ook wel bekend als semver. Binnen semver bestaat een versienummer uit drie delen: `major.minor.patch` (bijvoorbeeld `1.3.2`).
+
+### Major
+
+Het ophogen van het major deel van het versienummer gebeurt als er veranderingen zijn doorgevoerd die **niet** achterwaarts compatibel zijn. Deze veranderingen heten ook wel [breaking changes](#wat-zijn-breaking-changes). Bij het ophogen van het major deel van het versienummer springen het minor en patch deel beide terug naar 0.
+
+### Minor
+
+Het ophogen van het minor deel van het versienummer gebeurt als er veranderingen zijn doorgevoerd die **wel** achterwaarts compatibel zijn. Denk daarbij aan nieuwe features, of nog specifieker, nieuwe design tokens. Bij het ophogen van het minor deel van het versienummer blijft het major deel hetzelfde en springt alleen het patch deel terug naar 0.
+
+### Patch
+
+Het ophogen van het patch deel van het versienummer gebeurt in de regel als er bugs zijn opgelost. Deze veranderingen zijn altijd achterwaarts compatibel. Bij het ophogen van het patch deel van het versienummer blijven het major en minor deel hetzelfde.
+
+### Waarom zijn versienummers belangrijk?
+
+Een versienummer alleen zegt niet zo veel. Door versienummers met elkaar te vergelijken, kunnen afnemers van een package zien wat de impact is van veranderingen op code die gebruik maakt van het package.
+
+## Hoe bepaal je het type van je verandering?
+
+### Breaking changes
+
+Breaking changes in design tokens zijn veranderingen die negatieve gevolgen kunnen hebben voor afnemers van je package. Dit zijn veranderingen die niet achterwaarts compatibel zijn, waardoor bestaande code niet meer werkt zoals voorheen.
+
+Er gaat op de een of andere manier iets kapot. Soms is dit heel duidelijk, bijvoorbeeld spacing die helemaal is verdwenen. Soms is het subtieler en misschien niet meteen zichtbaar.
+
+Breaking changes zijn zoals [hierboven uitgelegd](#major), veranderingen die ervoor zorgen dat het **major** deel van het versienummer opgehoogd moet worden.
+
+#### Voorbeelden van breaking changes in design tokens
+
+De eenvoudigste soort breaking change van een design token ontstaat als je een design token verwijdert. Afnemers die dit verwijderde design token in hun code gebruiken zien bij het gebruik van een nieuwe versie dat hun code niet meer werkt zoals voorheen.
+
+**Voorbeeld 1**: Het verwijderen van de design token `example.button.icon.space` zou ervoor zorgen dat de ruimte tussen het icoon en de tekst van een knop komt te vervallen. De knop gaat door deze verandering kapot.
+
+Een ander soort breaking change die hier op lijkt is als je de naam van een design token verandert. Dit lijkt misschien een minder grote verandering dan het verwijderen van een design token maar in feite komt het neer op:
+
+1. Het verwijderen van een design token.
+1. Het toevoegen van een nieuwe design token.
+
+**Voorbeeld 2**: Het hernoemen van de design token `example.button.icon.space` naar `example.button.column-gap` zorgt ervoor dat de design token `example.button.icon.space` niet meer bestaat. Net als in het eerste voorbeeld kan dit ervoor zorgen dat de knop niet meer naar behoren functioneert voor afnemers die de verwijderde design token gebruiken.
+
+**Voorbeeld 3**: Zelfs het aanpassen van slechts één karakter in de naam van een design token, bijvoorbeeld het corrigeren van een typfout `colour` naar `color`, is een breaking change.
+
+Breaking changes zijn, ondanks hun naam, niet per se problematisch. Het is echter van groot belang om hier duidelijk over te communiceren. Daarover meer informatie later.
+
+### Nieuwe features
+
+Nieuwe features, zoals nieuwe design tokens of een nieuwe eigenschap ‘dismissable‘, zijn veranderingen die ervoor zorgen dat het **minor** deel van het versienummer moet worden opgehoogd.
+
+**Voorbeeld**: Je maakt een nieuw design token `example.button.box-shadow` aan dat gebruikt kan worden een knop een drop shadow te geven.
+
+### Bug fixes
+
+In Tokens Studio kun je beschrijvingen aan design tokens toevoegen. Het corrigeren van een spelfout in de beschrijving van een design token heeft geen gevolgen voor de afnemers. Deze veranderingen lijken het meest op een bug fix, maar zullen in de praktijk waarschijnlijk weinig voorkomen.
+
+## Breaking changes uitstellen
+
+Om te voorkomen dat een wijziging meteen een breaking change is kun je ervoor kiezen om een nieuwe design token naast een te verwijderen design token te laten bestaan. Hierbij wordt de te verwijderen design token eerst gemarkeerd als ‘deprecated’ (in het Nederlands ‘achterhaald’) en niet direct verwijderd.
+
+**Voorbeeld**: De naam van de design token `example.button.icon.space` moet veranderen in `example.button.column-gap`.
+
+1. Maak eerst de nieuwe design token `example.button.column-gap` aan.
+1. Verander de waarde van de oude design token `example.button.icon.space` naar de naam van de nieuwe design token: `{example.button.column-gap}`.
+1. Markeer de oude design token `example.button.icon.space` als ‘deprecated’ door `[deprecated]` aan de beschrijving van de token toe te voegen.
+
+Door de oude token niet te verwijderen maar te markeren als ‘deprecated’, informeer je afnemers dat ze deze design token niet meer moeten gebruiken. Ze weten ook dat ze op termijn bestaande code zullen moeten aanpassen. Hoe de code moet worden aangepast, geef je aan in een changelog. Meer daarover hieronder.
+
+Als een token wordt gemarkeerd als ‘deprecated’ maar nog niet wordt verwijderd, wordt dit beschouwd als een patch wijziging. Als een token wordt toegevoegd dat als vervanging gaat dienen, wordt dit beschouwd als een minor wijziging.
+
+## Communiceer over je veranderingen
+
+Je weet zelf het best wat je veranderd hebt. De afnemer van de design tokens weet dit niet. Het is daarom wel zo netjes om afnemers te informeren over de veranderingen. We leggen uit hoe je dat precies kunt doen.
+
+Wanneer je een [pull request hebt aangemaakt](/handboek/designer/stappenplan/#verstuur-aanpassingen-naar-github), geef je met een extra commit aan wat je precies hebt veranderd. De beschrijving die je hierbij opgeeft, wordt opgenomen in de changelog van het package.
+
+### Situatie A: in het NL Design System 'themes' repository
+
+Werk je vanuit de NL Design System 'themes' repository? Volg dan onderstaande stappen.
+
+Ga naar de lijst met [pull requests](https://github.com/nl-design-system/themes/pulls) en zoek je eigen pull request op.
+
+1. Klik bovenaan in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
+1. Navigeer op de volgende pagina naar de folder `.changesets`.
+1. Kopieer het sjabloon uit het `README.md` bestand op deze pagina naar je klembord.
+1. Klik rechtsboven op ‘Add a file’ en kies voor ‘Create new file’.
+1. Geef je bestand een willekeurige naam en de extensie `.md`, bijvoorbeeld `aap-noot-mies.md`.
+1. Plak het gekopieerde sjabloon in het veld met ‘Enter file contents here’ en pas de inhoud aan.
+1. Gebruik de juiste naam voor het package, namelijk `"@nl-design-system-unstable/{organisatie}-design-tokens"`.
+1. Geef het type van je verandering(en) aan: `major`, `minor`, of `patch`.
+1. Geef een duidelijke beschrijving van je veranderingen.
+1. Klik rechtsboven op ‘Commit changes…’.
+1. Geef een commit message op, bijvoorbeeld ‘Changeset toegevoegd’.
+1. Kies onderaan voor ‘Commit directly to the `{naam-van-je-branch}`’ branch.
+1. Klik op ‘Commit changes’. Als je een foutmelding krijgt dat het bestand al bestaat, kies dan een andere willekeurige naam.
+
+Hieronder een voorbeeld van de inhoud van het bestand met de beschrijving van een verandering met breaking changes voor de ‘voorbeeld’ organisatie.
+
+```markdown
+---
+"@nl-design-system-unstable/voorbeeld-design-tokens": major
+---
+
+Deprecated design token example.button.icon.spacing verwijderd
+```
+
+### Situatie B: in je eigen repository
+
+Werk je vanuit een eigen repository? Volg dan onderstaande stappen.
+
+Ga naar de lijst met pull requests en zoek je eigen pull request op.
+
+1. Klik boven in de pagina op de lichtblauwe naam van de branch die je hebt opgegeven.
+1. Navigeer op de volgende pagina naar de folder `.changesets`.
+1. Kopieer het sjabloon uit het `README.md` bestand op deze pagina naar je klembord.
+1. Klik rechtsboven op ‘Add a file’ en kies voor ‘Create new file’.
+1. Geef je bestand een willekeurige naam en de extensie `.md`, bijvoorbeeld `aap-noot-mies.md`.
+1. Plak het gekopieerde sjabloon in het veld met ‘Enter file contents here’ en pas de inhoud aan.
+1. Geef het type van je verandering(en) aan: `major`, `minor`, of `patch`.
+1. Geef een duidelijke beschrijving van je veranderingen.
+1. Klik rechtsboven op ‘Commit changes…’.
+1. Geef een commit message op, bijvoorbeeld ‘Changeset toegevoegd’.
+1. Kies onderaan voor ‘Commit directly to the `{naam-van-je-branch}`’ branch.
+1. Klik op ‘Commit changes’. Als je een foutmelding krijgt dat het bestand al bestaat, kies dan een andere willekeurige naam.
+
+## Hoe verder?
+
+Ben je er klaar voor om je pull request te mergen, komen er geen wijzigingen meer aan?
+
+Voor de volgende stappen heb je een developer nodig.
+
+1. Vraag een developer om je pull request te reviewen.
+1. Is je pull request goedgekeurd? Dan mag je deze mergen met de optie ‘Squash and merge’.
+1. Na het mergen wordt automatisch een nieuwe pull request aangemaakt door een bot om de versie te publiceren.
+1. Bepaal of je deze publicatie-pull request direct wilt mergen of wilt wachten op meer wijzigingen.
+1. De publicatie-pull request wordt automatisch bijgewerkt zodra nieuwe wijzigingen naar main worden gemerged.
+1. Klaar om de publicatie-pull request te mergen? Vraag een developer om dit te doen.
+1. Zodra de publicatie-pull request is gemerged, worden de pakketten automatisch gepubliceerd op npm.

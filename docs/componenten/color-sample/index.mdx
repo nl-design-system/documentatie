@@ -7,10 +7,38 @@ pagination_label: Color Sample
 description: Toont een voorbeeld van een kleur.
 slug: /color-sample
 keywords:
+  - color
+  - color code
+  - color example
+  - color fill
+  - color hash
+  - color preview
+  - color sample
+  - color theme
+  - color visual
   - colour
+  - colour code
+  - colour example
+  - colour fill
+  - colour hash
+  - colour preview
+  - colour sample
+  - colour theme
+  - colour visual
+  - image
   - kleur
+  - kleurinfo
+  - kleurstaal
+  - kleurvoorbeeld
+  - monster
+  - palette
+  - pantone
+  - solid
+  - sub
+  - swatch
   - voorbeeld
-  - color swatch
+  - voorbeeldkleur
+  - voorvertoning
 ---
 
 {/* @license CC0-1.0 */}
@@ -36,8 +64,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
-import Usage from "./_usage.md";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
+import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/color-sample-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Color Sample";
@@ -55,6 +85,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={ColorSampleIllustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

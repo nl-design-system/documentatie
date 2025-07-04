@@ -6,8 +6,38 @@ sidebar_label: Paragraph
 pagination_label: Paragraph
 description: Toont een alinea aan tekst.
 slug: /paragraph
-tags:
-  - Community
+keywords:
+  - alinea
+  - body
+  - body copy
+  - body text
+  - bodytekst
+  - broodtekst
+  - content block
+  - content blok
+  - copy
+  - gewone tekst
+  - hoofdalinea
+  - inleidende alinea
+  - inleiding
+  - introductory
+  - lead
+  - lead paragraph
+  - lead text
+  - paragraaf
+  - paragraph
+  - regular text
+  - rich text
+  - rte
+  - sentence
+  - tekst
+  - tekst-item
+  - tekstblok
+  - text
+  - text block
+  - text block
+  - text element
+  - zin
 ---
 
 {/* @license CC0-1.0 */}
@@ -30,8 +60,10 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
+import tokens from "@nl-design-system-candidate/paragraph-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Paragraph";
@@ -49,6 +81,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 <ComponentAnatomy component={component} illustration={ParagraphIllustration} />
 
 ## Gebruik deze component
+
+### Design tokens
+
+<DesignTokens tokens={tokens} />
 
 <Markdown omitH1 headingLevel={3}>
   <Usage />

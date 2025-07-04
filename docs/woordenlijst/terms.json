@@ -49,6 +49,21 @@
       }
     ]
   },
+    "term": "Gebarentaal",
+    "slug": "Gebarentaal",
+    "definitions": [
+      {
+        "paragraph": "Een gebarentaal is een taal waarbij mensen met elkaar communiceren door gebaren te maken met hun handen, lichaamshouding en gezichtsuitdrukking (mimiek)."
+
+      }
+    ],
+    "sources": [
+      {
+        "name": "Richtlijnen voor gebarentaal bij een video",
+        "url": "https://nldesignsystem.nl/richtlijnen/content/video/gebarentaal"
+      }
+    ]
+  },
   {
     "term": "Tekstalternatief",
     "slug": "tekstalternatief",
@@ -61,6 +76,29 @@
       {
         "name": "WCAG-succescriterium 1.1.1 Niet-tekstuele content",
         "url": "https://nldesignsystem.nl/wcag/1.1.1/"
+      }
+    ]
+  },
+  {
+    "term": "Toegankelijke naam",
+    "slug": "toegankelijke-naam",
+    "definitions": [
+      {
+        "paragraph": "De toegankelijke naam is de werkelijke naam van een component. Dit is vaak (maar niet altijd) hetzelfde als de zichtbare naam."
+      }
+    ],
+    "sources": [
+      {
+        "name": "WCAG-succescriterium 2.5.3 Label in naam",
+        "url": "https://nldesignsystem.nl/wcag/1.1.1/"
+      },
+      {
+        "name": "Formulieren - Labels - Zichtbare naam label",
+        "url": "https://nldesignsystem.nl/richtlijnen/formulieren/labels/zichtbare-naam"
+      },
+      {
+        "name": "&lt;span lang=&#39;en&#39;&gt;Accessible Name and Description Computation&lt;/span&gt;",
+        "url": "https://www.w3.org/TR/accname/"
       }
     ]
   },
@@ -80,6 +118,32 @@
       {
         "name": "Nederlandstalige WCAG definitie",
         "url": "https://www.w3.org/Translations/WCAG22-nl/#dfn-processes"
+      }
+    ]
+  },
+  {
+    "term": "Screenreader",
+    "slug": "screenreader",
+    "synonyms": [
+      {
+        "term": "screen reader"
+      },
+      {
+        "term": "schermlezer"
+      },
+      {
+        "term": "voorleessoftware"
+      }
+    ],
+    "definitions": [
+      {
+        "paragraph": "Zogenaamde hulpsoftware die meldt wat er op het scherm staat. De software gebruikt hiervoor de informatie die in de code aanwezig is. Dit kan voorgelezen worden, maar ook op een brailleleesregel getoond worden. De software maakt een apparaat ook te bedienen zonder het te zien."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NL Design System Baseline",
+        "url": "https://nldesignsystem.nl/baseline/"
       }
     ]
   }
