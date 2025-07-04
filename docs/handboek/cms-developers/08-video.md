@@ -11,6 +11,10 @@ keywords:
   - video
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Video
 
 Video’s zijn niet voor iedereen even goed toegankelijk. Mensen die niet kunnen horen of zien, missen informatie als er geen alternatieven beschikbaar zijn. Een CMS kan contentmakers helpen om video’s begrijpelijk te maken voor iedereen.
@@ -29,12 +33,4 @@ Let op het volgende:
 - [Video](/video)
 - [YouTube Video](/youtube-video)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />

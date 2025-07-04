@@ -11,6 +11,10 @@ keywords:
   - tabellen
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Tabellen
 
 Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van screenreaders.
@@ -30,12 +34,4 @@ Wat het CMS kan doen:
 
 - [Table](/table)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />

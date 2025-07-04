@@ -11,6 +11,10 @@ keywords:
   - citaten
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Citaten
 
 Citaten maken duidelijk dat een stuk tekst afkomstig is uit een andere bron. Een goede semantische opmaak zorgt ervoor dat het citaat herkenbaar is voor iedereen, ook voor mensen die een schermlezer gebruiken. Een CMS kan dit ondersteunen door citaten toegankelijk en correct op te maken, zonder dat de gebruiker daarvoor technische kennis nodig heeft.
@@ -26,12 +30,4 @@ Let op het volgende:
 
 - [Blockquote](/blockquote)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />
