@@ -11,6 +11,10 @@ keywords:
   - koppen
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Koppen
 
 Koppenstructuur is essentieel voor schermlezers én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.
@@ -30,12 +34,4 @@ Wat het CMS kan doen:
 
 - [Heading](/heading)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />

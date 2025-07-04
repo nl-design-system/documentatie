@@ -11,6 +11,10 @@ keywords:
   - tekst benadrukken
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Tekst benadrukken
 
 Duidelijke opmaak helpt om accenten te leggen in een tekst. Denk aan vet of cursief om iets te benadrukken. Maar niet alle visuele opmaak is ook technisch toegankelijk. Een CMS kan contentmakers ondersteunen met toegankelijke opties voor tekstopmaak.
@@ -30,12 +34,4 @@ Let op het volgende:
 
 - [Strong](/strong)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />

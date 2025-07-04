@@ -11,6 +11,10 @@ keywords:
   - opsommingen
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Opsommingen
 
 Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook technisch als lijst zijn opgemaakt. Zorg evoor in je CMS dat dit automatisch goed gaat, ook zonder kennis van HTML.
@@ -31,12 +35,4 @@ Wat het CMS kan doen:
 - [Unordered List](/unordered-list)
 - [Ordered List](/ordered-list)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />

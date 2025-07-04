@@ -11,6 +11,10 @@ keywords:
   - afbeeldingen
 ---
 
+<!-- @license CC0-1.0 -->
+
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
 # Afbeeldingen
 
 Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen altijd van betekenisvolle alternatieve tekst te voorzien.
@@ -31,22 +35,4 @@ Wat het CMS kan doen:
 - [Image](/image)
 - [Figure](/figure)
 
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
-
----
-
-## Help deze documentatie te verbeteren
-
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
-
-## Vragen
-
-Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](../../project/kernteam.mdx).
+<FooterInfo />
