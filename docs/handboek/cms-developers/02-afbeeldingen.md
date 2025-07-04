@@ -35,4 +35,6 @@ Wat het CMS kan doen:
 - [Image](/image)
 - [Figure](/figure)
 
+---
+
 <FooterInfo />
