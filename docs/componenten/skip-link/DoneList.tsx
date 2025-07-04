@@ -34,7 +34,7 @@ export interface DoneListProps {
 }
 
 /**
- * CriteriaListItem generates the test item.
+ * DoneListItem generates the test item.
  *
  * sc and status are optional.
  *
@@ -55,7 +55,6 @@ export const DoneListItem = ({ title, sc, component, diy }: DoneListItemProps) =
   }
   return (
     <div className={clsx('done-list')}>
-      {/* <Checkbox className="done-list__checkbox" aria-labelledby={labelId} /> */}
       <details className="done-list__content">
         <summary>
           <span id={labelId}>{title}</span>

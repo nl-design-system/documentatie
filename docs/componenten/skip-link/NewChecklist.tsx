@@ -7,7 +7,7 @@ import { useId, useState } from 'react';
 import './index.css';
 
 /**
- * CriteriaListItemProps defines expected variables for the item to test.
+ * NewChecklistItemProps defines expected variables for the item to test.
  *
  * title: H4 heading: A test to perform on a component.
  * sc: related succescriterium, not required.
