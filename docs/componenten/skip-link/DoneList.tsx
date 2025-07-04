@@ -12,14 +12,12 @@ import './index.css';
  * title: H4 heading: A test to perform on a component.
  * sc: related succescriterium, not required.
  * component: the snippet with the description of the test.
- * status: passes/fails/conditional or any other string, not required.
  */
 export interface DoneListItemProps {
   headingLevel: HeadingProps['level'];
   title: string;
   sc?: string;
   component: string;
-  status?: string;
   diy: string;
 }
 
@@ -36,7 +34,7 @@ export interface DoneListProps {
 /**
  * DoneListItem generates the test item.
  *
- * sc and status are optional.
+ * sc is optional.
  *
  */
 export const DoneListItem = ({ title, sc, component, diy }: DoneListItemProps) => {
