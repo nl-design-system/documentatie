@@ -35,4 +35,6 @@ Wat het CMS kan doen:
 - [Unordered List](/unordered-list)
 - [Ordered List](/ordered-list)
 
+---
+
 <FooterInfo />

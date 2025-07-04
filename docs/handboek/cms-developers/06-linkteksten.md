@@ -34,4 +34,6 @@ Let op het volgende:
 - [Link List](/link-list)
 - [Login Link](/login-link)
 
+---
+
 <FooterInfo />
