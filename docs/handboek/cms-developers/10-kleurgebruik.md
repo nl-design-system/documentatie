@@ -20,18 +20,28 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 Goede kleuren zorgen voor herkenning en leesbaarheid. Maar niet iedereen ziet kleur op dezelfde manier. Een CMS kan helpen door toegankelijke kleurkeuzes te ondersteunen en foutgevoelige combinaties te voorkomen.
 
-Let op het volgende:
+Wat het CMS kan doen:
 
-- Ondersteun kleurgebruik met voldoende contrast  
-  Zorg dat kleuren die in componenten kunnen worden aangepast altijd voldoen aan de minimale contrastvereisten. Gebruik bijvoorbeeld vaste stijlen met gegarandeerd contrast.
-- Waarschuw bij slechte leesbaarheid  
-  Geef feedback als het contrast tussen tekst en achtergrond te laag is, bijvoorbeeld bij gekleurde tekst of tekst op afbeeldingen.
+- Ondersteun goed kleurcontrast voor tekst  
+  Help contentmakers om kleuren te kiezen met voldoende contrast. Bied bijvoorbeeld een eigen contrastchecker aan of geef een waarschuwing bij combinaties die mogelijk slecht leesbaar zijn. Gebruik vaste stijlen met gegarandeerd contrast waar dat past, of laat zien welke keuzes voldoen aan de toegankelijkheidsnormen.
 - Voorkom ontoegankelijke tekst over afbeeldingen  
   Voorkom dat contentmakers zelf tekst over een afbeelding plaatsen zonder te hebben nagedacht over het contrast. Zorg eventueel voor een automatische oplossing, zoals een donkere transparante overlay tussen de tekst en de afbeelding.
+
+In de richtlijnen voor contentmakers lees je waarom dit onderdeel belangrijk is voor toegankelijkheid en waar je als contentmaker op moet letten. Verwijs hier eventueel naartoe vanuit het CMS voor extra uitleg en context.
+
+Bekijk de [richtlijnen voor contentmakers over kleurgebruik in tekst](/richtlijnen/content/kleurgebruik-in-tekst).
 
 ## Gerelateerde NL Design System-componenten
 
 ...
+
+## Gerelateerde WCAG-succescriteria
+
+Op de WCAG-pagina’s op deze site lees je welke succescriteria van toepassing zijn, welke fouten veel voorkomen en hoe je kunt testen of het CMS contentmakers voldoende ondersteunt om aan deze criteria te voldoen.
+
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1)
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3)
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
 
 ---
 

@@ -30,9 +30,21 @@ Wat het CMS kan doen:
 - Gebruik semantisch correcte HTML  
   Laat het CMS altijd de juiste HTML-elementen genereren (H1 t/m H6).
 
+In de richtlijnen voor contentmakers lees je waarom dit onderdeel belangrijk is voor toegankelijkheid en waar je als contentmaker op moet letten. Verwijs hier eventueel naartoe vanuit het CMS voor extra uitleg en context.
+
+Bekijk de [richtlijnen voor contentmakers over koppen](/richtlijnen/content/tekstopmaak/koppen).
+
 ## Gerelateerde NL Design System-componenten
 
 - [Heading](/heading)
+
+## Gerelateerde WCAG-succescriteria
+
+Op de WCAG-pagina’s op deze site lees je welke succescriteria van toepassing zijn, welke fouten veel voorkomen en hoe je kunt testen of het CMS contentmakers voldoende ondersteunt om aan deze criteria te voldoen.
+
+- [Succescriterium 1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1)
+- [Succescriterium 2.4.6 Koppen en labels](https://nldesignsystem.nl/wcag/2.4.6)
+- [Succescriterium 2.4.10 Paragraafkoppen](https://nldesignsystem.nl/wcag/2.4.10)
 
 ---
 

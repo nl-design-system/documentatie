@@ -25,15 +25,23 @@ Wat het CMS kan doen:
   Bied een duidelijk invoerveld bij het uploaden of plaatsen van een afbeelding.
 - Geef gerichte feedback bij ontbrekende of onnodige alt-teksten  
   Waarschuw als een afbeelding zonder alt-tekst wordt toegevoegd, en geef de mogelijkheid om duidelijk aan te geven dat het om een decoratieve afbeelding gaat.
-- Ondersteun lange beschrijvingen  
-  Bied ruimte voor een aparte toelichting bij complexe afbeeldingen zoals infographics of grafieken.
-- Gebruik semantisch correcte HTML  
-  Zorg dat afbeeldingen worden geplaatst met het juiste img-element en correcte attributen (alt, aria-describedby, longdesc waar relevant).
+- Ondersteun aanvullende beschrijvingen waar nodig  
+  Maak het mogelijk om complexe afbeeldingen, zoals infographics of grafieken, extra toe te lichten. Bijvoorbeeld via een tekstblok dat wordt gekoppeld met aria-describedby.
+
+In de richtlijnen voor contentmakers lees je waarom dit onderdeel belangrijk is voor toegankelijkheid en waar je als contentmaker op moet letten. Verwijs hier eventueel naartoe vanuit het CMS voor extra uitleg en context.
+
+Bekijk de [richtlijnen voor contentmakers over afbeeldingen](/richtlijnen/content/afbeeldingen).
 
 ## Gerelateerde NL Design System-componenten
 
 - [Image](/image)
 - [Figure](/figure)
+
+## Gerelateerde WCAG-succescriteria
+
+Op de WCAG-pagina’s op deze site lees je welke succescriteria van toepassing zijn, welke fouten veel voorkomen en hoe je kunt testen of het CMS contentmakers voldoende ondersteunt om aan deze criteria te voldoen.
+
+- [Succescriterium 1.1.1 Niet-tekstuele content](/wcag/1.1.1)
 
 ---
 
