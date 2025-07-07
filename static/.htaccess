@@ -46,6 +46,7 @@ Redirect 301 "/textarea" "/text-area"
 Redirect 301 "/text-input-group" "/input-group"
 Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022"
 Redirect 301 "/wcag/introduction" "/wcag"
+Redirect 301 "/handboek/design-tokens" "/handboek/huisstijl/design-tokens"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
