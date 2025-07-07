@@ -17,7 +17,7 @@ Terwijl de gemeente Den Haag met hun leveranciers werkte aan de nieuwe DenHaag.n
 
 ## Wat zijn de NL Design System community blocks precies?
 
-[NL Design System community blocks](https://github.com/nl-design-system/nlds-community-blocks) is een plug-in die je in een WordPress-omgeving kan installeren. De plug-in bevat blokken voor de Gutenberg-editor, zodat redacties pagina's kunnen opbouwen met NL Design System-componenten. Ze worden gebruikt door de gemeente Den Haag, maar kunnen in de basis juist ook in andere organisaties worden ingezet. De componenten maken namelijk van je NL Design System-thema, via [design tokens](/handboek/design-tokens/). Goed om te weten: de gebruikte componenten worden nog getoetst op bijvoorbeeld toegankelijkheid volgens het [estafettemodel](/meedoen/estafettemodel).
+[NL Design System community blocks](https://github.com/nl-design-system/nlds-community-blocks) is een plug-in die je in een WordPress-omgeving kan installeren. De plug-in bevat blokken voor de Gutenberg-editor, zodat redacties pagina's kunnen opbouwen met NL Design System-componenten. Ze worden gebruikt door de gemeente Den Haag, maar kunnen in de basis juist ook in andere organisaties worden ingezet. De componenten maken namelijk van je NL Design System-thema, via [design tokens](/handboek/huisstijl/design-tokens/). Goed om te weten: de gebruikte componenten worden nog getoetst op bijvoorbeeld toegankelijkheid volgens het [estafettemodel](/meedoen/estafettemodel).
 
 ## Behoefte aan breed inzetbare componenten
 

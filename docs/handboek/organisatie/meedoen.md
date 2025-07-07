@@ -37,7 +37,7 @@ Het opgeleverde werk voldoet aan de richtlijnen van NL Design System. Vraag de l
 
 ## Niveau 3. Eigen NL Design System thema maken en onderhouden
 
-NL Design System thema's bestaan uit organisatiespecifieke ontwerpbeslissingen, die zijn vastgelegd als [Design Tokens](/handboek/design-tokens/).
+NL Design System thema's bestaan uit organisatiespecifieke ontwerpbeslissingen, die zijn vastgelegd als [Design Tokens](/handboek/huisstijl/design-tokens/).
 
 ### Bewijs
 
