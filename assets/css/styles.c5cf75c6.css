@@ -2855,9 +2855,9 @@ body:not(.navigation-with-keyboard) :not(input):focus {
 .docs-doc-page input[type="text"] {
  display: block;
 }
-.dl__item,
+.docs-doc-page ol,
 .docs-doc-page ul {
- margin-bottom: 20px;
+ margin-bottom: 1.5rem;
 }
 .docs-doc-page div.button {
  border: 1px solid #223c61;
@@ -2978,6 +2978,9 @@ code .namespace {
 }
 .DocSearch ul {
  margin: auto 0;
+}
+.dl__item {
+ margin-bottom: 20px;
 }
 .dl__definition,
 .terms-list__definition {
