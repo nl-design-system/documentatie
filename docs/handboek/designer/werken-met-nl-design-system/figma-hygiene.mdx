@@ -16,4 +16,314 @@ keywords:
 
 # Figma hygiëne
 
-Deze documentatie is nog in ontwikkeling.
+Zo werken we in Figma: met duidelijke afspraken over opzet en structuur, oftewel de 'Figma hygiëne'.
+
+Vooral rondom componenten is het fijn als we dezelfde hygiëne aanhouden. Zo kunnen componenten makkelijk gedeeld en hergebruikt worden tussen organisaties.
+
+## 1. Figma structuur
+
+Met de NL Design System Figma omgeving zitten we momenteel op het '[Organization plan](https://www.figma.com/nl-nl/pricing/)'.
+
+### 1.1 Teams
+
+We hebben op dit moment 1 team: NL Design System.
+
+### 1.2 Projecten
+
+#### 1.2.1 Bibliotheken
+
+Hier plaatsen we onze Figma bestanden die als bibliotheek worden ingezet. Er zijn momenteel 2 Figma bibliotheken.
+
+##### NL Design System - Bibliotheek
+
+In deze bibliotheek vind je componenten met de status 'Community' en 'Candidate'. Samen werken we toe naar componenten met de status 'Hall of Fame'.
+
+[Bekijk de 'NL Design System - Bibliotheek' in Figma](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1)
+
+##### NL Design System - ToDo Bibliotheek
+
+In deze bibliotheek vind je componenten met de status 'Help Wanted' of 'Experimental'. Deze componenten zijn nog niet in code beschikbaar.
+
+[Bekijk de 'NL Design System - ToDo Bibliotheek' in Figma](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3047-14&t=fpA32yYLXZpVB6tb-1)
+
+#### 1.2.2 Werkbestanden
+
+Hier plaatsen we Figma bestanden waar we zelf mee werken. Bijvoorbeeld:
+
+##### Schetsboek
+
+Een schetsbestand om snel ideeën uit te werken, te delen of vast te leggen.
+
+[Bekijk het 'NL Design System - Schetsboek' in Figma](https://www.figma.com/design/fy08SZpZmqx6ljLwvA3Woe/NL-Design-System---Schetsboek?node-id=231-73&t=f7kKKaXvqOj1q3Ey-1)
+
+##### Voorbeeld bibliotheken
+
+Duplicaten van onze Figma bibliotheken met het [Voorbeeld thema](/handboek/huisstijl/themas/voorbeeld-thema). Hiermee laten we zien hoe organisaties de bibliotheken kunnen toepassen.
+
+- [Bekijk 'NL Design System - Bibliotheek - Voorbeeld'](https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=197-664&t=6q27i1PaV5ZFstxx-1)
+- [Bekijk 'NL Design System - ToDo Bibliotheek - Voorbeeld'](https://www.figma.com/design/ig29egqH8dyyWY1oe03OC0/NL-Design-System---ToDo-Bibliotheek---Voorbeeld?node-id=0-1&t=0JUFZYgSsC4NLwHu-1)
+
+##### Voorbeeld templates
+
+Bestand met complete templates, opgebouwd uit componenten uit de 2 Figma bibliotheken met het Voorbeeld thema.
+
+[Bekijk het bestand 'NL Design System - Templates - Voorbeeld' in Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=1-3&t=3lZPNWC5lsZzFZKO-1)
+
+#### 1.2.3 Archief
+
+Hier plaatsen we Figma bestanden die niet langer nodig of relevant zijn.
+
+## 2. Figma bestanden
+
+De volgende punten gelden voor alle Figma bestanden.
+
+### 2.1 Bestandsnaam
+
+Binnen het NL Design System worden bibliotheken benoemd als `NL Design System - {type-bibliotheek} - {naam-organisatie}`. Bijvoorbeeld: `NL Design System - Bibliotheek - Utrecht` of `NL Design System - ToDo Bibliotheek - Voorbeeld`. Gebruik deze naamgevingsconventie om duidelijkheid te geven over de herkomst en status van componenten.
+
+### 2.2 Cover
+
+Elk Figma bestand begint met een pagina ‘Cover’. Dit is de thumbnail die zichtbaar is in het Figma bestandenoverzicht. Je kunt de kleurstelling en titel aanpassen. Gebruik de functionaliteit ‘Set as thumbnail’ om deze cover te updaten.
+
+### 2.3 Read me
+
+Elk Figma bestand heeft als tweede pagina een 'Read me' frame waar wordt beschreven waar het bestand voor dient.
+
+### 2.4 Open Source
+
+Standaard zijn Figma bestanden niet openbaar voor iedereen. Omdat we open source werken, is het belangrijk om bij het delen van linkjes met de community de juiste instellingen te kiezen. Ga bij 'Share' naar de optie 'Anyone can view' om het bestand voor iedereen zichtbaar te maken.
+
+## 3. Component bibliotheken
+
+De volgende punten gelden specifiek voor de Figma bibliotheken.
+
+### 3.1 Bibliotheek indeling
+
+We hanteren 1 pagina per component, gerangschikt in alfabetische volgorde. Dit biedt de volgende voordelen:
+
+- Relevante context per pagina. Door op elke pagina specifieke documentatie en context over de component toe te voegen, krijgen designers en developers direct inzicht in het gebruik en de richtlijnen, zonder afleiding van andere elementen.
+- Snellere en eenvoudigere navigatie. Het terugvinden van specifieke componenten wordt een stuk makkelijker doordat elke component een eigen, goed vindbare pagina heeft.
+- Betere versiebeheer en overzicht van wijzigingen. Alle opmerkingen en wijzigingen over een component blijven op 1 plek. Dit zorgt voor duidelijkheid en voorkomt verwarring bij het doorvoeren van updates.
+- Kortere laadtijden. Door componenten te verdelen over meerdere pagina’s, verbetert de laadtijd per pagina. Dit voorkomt dat Figma traag wordt, met name bij grotere bibliotheken.
+
+### 3.2 Schrijfwijze
+
+#### 3.2.1 Pages, Headings, Frames, Properties en Property values
+
+Pages, Headings, Frames, Properties én Property values schrijven we met een hoofdletter aan het begin van elk woord. Bijvoorbeeld:
+
+- `Button`
+- `Action Group`
+- `Icon Start`
+- `Tokens - Button`
+- `Documentatie - Button`
+- `Documentatie - Icon Size`
+- `Demo - Accordion`
+
+#### 3.2.2 Layers
+
+Layers schrijven we in kleine letters. Bijvoorbeeld:
+
+- `text`
+- `label + description`
+
+#### 3.2.3 Componenten
+
+De componenten, zoals deze vanuit de bibliotheek worden gepubliceerd, schrijven we altijd in 'kebab-case', inclusief een prefix. Bijvoorbeeld:
+
+- `utrecht-button`
+- `denhaag-side-nav`
+- `nl-link`
+
+#### 3.2.4 Sub-componenten
+
+Soms zijn componenten opgesplitst in [sub-componenten](#3-3-sub-componenten). Deze sub-componenten mogen een korte naam hebben, zodat de lagen beter leesbaar blijven. We schrijven deze altijd in 'kebab-case' en plaatsen 2 underscores voor de naam. Dit zorgt ervoor dat ze verborgen blijven bij het gebruik van de bibliotheek en sluit aan bij de BEM-conventie, die ook in code wordt gebruikt. Bijvoorbeeld:
+
+- `.denhaag-contact-timeline__step-header` wordt `__step-header`
+- `.denhaag-contact-timeline__step` wordt `__step`
+- `.todo-modal-dialog-header` wordt `__header`
+
+### 3.3 Sub-componenten
+
+Soms wordt een component opgesplitst in sub-componenten. Dit helpt om het ontwerp overzichtelijk, beheersbaar en herbruikbaar te houden. We maken subcomponenten aan als een component voldoet aan een of meerdere van de volgende criteria:
+
+- De component is complex.
+- De component is groot.
+- De component bevat verschillende states.
+- De component bevat herhalende items, zoals 'Items' in een 'List'.
+
+### 3.4 Properties
+
+#### 3.4.1 Volgorde van properties
+
+De volgorde van properties kan per component verschillen. Over het algemeen geldt: de meest impactvolle of vaak gebruikte properties staan bovenaan. Zie deze lijst als een uitgangspunt, niet als een strikte regel.
+
+1. `Appearance` / `Type`
+2. `Position` / `Level` / `Size`
+3. `Checked`
+4. `Current`
+5. `Collapsible` / `Toggle`
+6. `Expanded`
+7. `Nested`
+8. `State`
+9. `Container`
+10. `Text`
+11. `Show Icon Start`
+12. `↳ Icon Start Value`
+13. `Show Icon End`
+14. `↳ Icon End Value`
+15. `Show {naam-optie}`
+
+#### 3.4.2 Volgorde van property values
+
+Over het algemeen geldt: de meest logische of vaakst gebruikte waarde staat bovenaan. Zie deze lijst als een uitgangspunt, niet als een strikte regel.
+
+- `Checked`
+  - `False`
+  - `True`
+- `Expanded`
+  - `False`
+  - `True`
+- `States`
+  - `Default`
+  - `Active`
+  - `Hover`
+  - `Focus-visible`
+  - `Invalid`
+  - `Read-only`
+  - `Disabled`
+  - `Visited`
+
+#### 3.4.3 Exposed properties
+
+Wanneer je een nested instance gebruikt binnen een component (bijvoorbeeld een Paragraph in een Alert), vermijd dan exposed properties om de volgende redenen:
+
+- Te veel opties in het component-panel kunnen verwarrend zijn.
+- Exposed properties geven geen controle over de volgorde van properties in het component-panel.
+- Het risico bestaat dat een ongewenste variant wordt gekozen (bijvoorbeeld bij de Paragraph purpose 'Lead' in plaats van 'Default').
+- Er kan altijd worden doorgeklikt naar de (sub)component om tekst of andere eigenschappen handmatig aan te passen.
+
+### 3.5 Icons
+
+Iconen worden indien mogelijk samengevoegd tot 1 vorm. Deze laag geven we de naar 'Shape'.
+
+### 3.6 Structuur en positionering
+
+#### 3.6.1 Volgorde van frames
+
+De volgorde van frames is als volgt:
+
+1. Tokens
+2. Sub-componenten (indien van toepassing)
+3. De component
+4. Documentatie
+5. Demo (indien van toepassing)
+
+Bijvoorbeeld:
+
+- `Tokens - Accordion`
+- `__button`
+- `__panel`
+- `__section`
+- `utrecht-accordion`
+- `Documentatie - Accordion`
+- `Demo - Accordion`
+
+#### 3.6.2 Positionering en witruimte
+
+**Buiten frames**
+
+- De 'Page 'Heading' plaatsen we op X:0 en Y:0.
+- De 'Estafettemodel Badge' plaatsen we 80px onder de Page Heading.
+- Het eerste frame, vrijwel altijd `Tokens - {naam-component}`, plaatsen we onder de Estafettemodel Badge.
+- Als een pagina geen Estafette badge heeft, plaatsen we het frame 160px onder de Page Heading.
+- Elke implementatie van een component bestaat uit de frames `Tokens - {naam-component}`, de component zelf en `Documentatie - {naam-component}`. Tussen deze frames zit horizontaal 80px.
+
+**Binnen frames**
+
+Er wordt gebruik gemaakt van auto-layout om de witruimte binnen frames te bepalen.
+
+- Het frame van een (sub)component dat uit minstens 2 varianten bestaat, heeft een vertical gap van 48px en horizontal en vertical padding van 48px.
+- De frames `Tokens - {naam-component}` en `Documentatie - {naam-component}` hebben een vertical gap van 48px, horizontal padding van 48px en een vertical padding van 64px.
+- Het frame `Demo - {naam-component}` heeft een vertical gap van 48px, horizontal padding van 16px en een vertical padding van 64px.
+
+(Sub)component dat uit minstens 2 varianten bestaat:
+
+- Verticale gap: 48px
+- Horizontale padding: 48px
+- Verticale padding: 48px
+
+`Tokens - {naam-component}`
+
+- Verticale gap: 48px
+- Horizontale padding: 48px
+- Verticale padding: 64px
+
+`Documentatie - {naam-component}`
+
+- Verticale gap: 48px
+- Horizontale padding: 48px
+- Verticale padding: 64px
+
+`Demo - {naam-component}`
+
+- Verticale gap: 48px
+- Horizontale padding: 16px
+- Verticale padding: 64px
+
+### 3.7 Estafette Badges
+
+De Estafette Badge bij een component geeft aan welke status de component heeft binnen het estafettemodel. Deze status komt overeen met de status zoals aangegeven op de documentatiewebsite.
+
+Belangrijke opmerking: Niet elke component in de Figma bibliotheek heeft op dit moment een Estafette Badge die volledig synchroon loopt met de documentatiewebsite. Dit betekent dat een component op de documentatiewebsite nog de status Help Wanted kan hebben, terwijl er in de Figma bibliotheek al een Community versie bestaat. In dat geval heeft de Community component nog niet alle vereiste checkpoints behaald. Dit verschil zal in de toekomst steeds minder voorkomen.
+
+#### 3.7.1 Speciale statussen: Help Wanted en Experimental
+
+**Help Wanted**
+
+- Deze componenten hebben de Help Wanted status op de documentatiewebsite.
+- In de Figma bibliotheek bevatten ze een verwijzing naar de documentatiewebsite en vaak al tokens (met als prefix 'todo').
+- Dit maakt verdere ontwikkeling richting de Community status eenvoudiger.
+
+**Experimental**
+
+- Deze componenten hebben nog geen enkele stap binnen het estafettemodel gezet.
+- Ze hebben geen verwijzing naar de documentatiewebsite en bevatten geen tokens.
+- Dit zijn vroege experimenten die nog geen officiële status hebben.
+
+## 4. Templates
+
+De volgende punten gelden specifiek voor een template bestand.
+
+### 4.1 Schrijfwijze
+
+#### 4.1.1 Frames
+
+Voor frames hanteren we de volgende structuur voor de schrijfwijze: `Viewport_Naam-van-pagina_Aanvulling--state`. `SV` staat voor 'small viewport' en`LV` staat voor 'large viewport'.
+
+Bijvoorbeeld:
+
+- `SV_Detailpagina`
+- `LV_Detailpagina`
+- `SV_Titel-van-stap--invalid`
+- `SV_Titel-van-stap_Opslaan`
+- `SV_Titel-van-stap_Opslaan--invalid`
+- `SV_Inloggen_Ja`
+- `SV_Inloggen_Nee`
+- `SV_Uw-gegevens--logged-in`
+
+### 4.2 Structuur en positionering
+
+Per patroon of template maken we een aparte Page aan. Denk hierbij aan:
+
+- Homepage
+- Detailpagina
+- Zoeken
+- Formulieren
+- Mijn omgeving
+
+### 4.2.1 Positionering en witruimte
+
+**Buiten frames**
+
+Tussen verschillende implementaties zit horizontaal 800px.
