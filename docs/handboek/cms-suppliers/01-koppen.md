@@ -29,7 +29,7 @@ Wat het CMS kan doen:
 - Bied duidelijke opties voor kopniveaus  
   Zorg dat gebruikers eenvoudig koppen kunnen invoegen en het juiste niveau kunnen kiezen (bijvoorbeeld H2 of H3), zonder handmatige opmaak.
 - Voorkom foutieve volgorde van kopniveaus  
-  Waarschuw bij onlogische structuren, zoals een H4 direct onder een H2. Stimuleer een logische hiërarchie.
+   Stimuleer een logische aflopende koppenstructuur. Waarschuw bij onlogische structuren, zoals een kop van niveau 4 direct onder een kop van niveau 2.
 - Detecteer lege koppen  
   Geef feedback als een kop is toegevoegd zonder inhoud.
 - Gebruik semantisch correcte HTML  
