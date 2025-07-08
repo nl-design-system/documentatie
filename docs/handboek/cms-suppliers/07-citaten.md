@@ -21,7 +21,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Citaten
 
-Een citaat is een letterlijke overname uit een andere bron. Met de juiste opmaak wordt een citaat herkenbaar voor alle gebruikers, ook voor mensen die content beluisteren, bijvoorbeeld met een schermlezer. Een CMS kan helpen door semantisch juiste opties te bieden voor het invoegen en opmaken van citaten.
+Een citaat is een letterlijke overname uit een andere bron. Met de juiste opmaak wordt een citaat herkenbaar voor alle gebruikers, ook voor mensen die content beluisteren, bijvoorbeeld met een [screenreader.](/woordenlijst/#screenreader). Een CMS kan helpen door semantisch juiste opties te bieden voor het invoegen en opmaken van citaten.
 
 Wat het CMS kan doen:
 
