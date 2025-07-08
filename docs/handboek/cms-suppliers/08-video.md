@@ -34,6 +34,8 @@ Wat het CMS kan doen:
   Waarschuw als een video geen ondertiteling of transcript heeft.
 - Benadruk de noodzaak van tekstuele alternatieven  
   Geef aan waarom het nodig is om transcriptie, ondertiteling of audiodescriptie toe te voegen en hoe ze gebruikers helpen die de video niet kunnen zien of horen.
+- Zorg dat elke video een titel heeft
+  Bied de mogelijkheid om een video een titel mee te geven, of gebruik automatisch de ingestelde videotitel als die beschikbaar is. Zo wordt de inhoud beter herkenbaar voor gebruikers van hulptechnologie.
 
 In de richtlijnen voor contentmakers lees je waarom dit onderdeel belangrijk is voor toegankelijkheid en waar je als contentmaker op moet letten. Verwijs hier eventueel naartoe vanuit het CMS voor extra uitleg en context.
 
