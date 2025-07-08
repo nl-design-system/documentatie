@@ -1,5 +1,5 @@
 ---
-title: Linkteksten · Voor CMS-developers · Handboek
+title: Linkteksten · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Linkteksten
@@ -7,7 +7,8 @@ pagination_label: Linkteksten
 description: Duidelijke linkteksten zorgen dat gebruikers weten waar een link naartoe leidt. Dit is belangrijk voor iedereen die snel wil scannen of gebruik maakt van hulptechnologie. Een CMS kan helpen door contentmakers te ondersteunen bij het maken van betekenisvolle links.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - linkteksten
 ---
 

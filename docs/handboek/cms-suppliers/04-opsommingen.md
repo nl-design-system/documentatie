@@ -1,5 +1,5 @@
 ---
-title: Opsommingen · Voor CMS-developers · Handboek
+title: Opsommingen · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Opsommingen
@@ -7,7 +7,8 @@ pagination_label: Opsommingen
 description: Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook technisch als lijst zijn opgemaakt. Zorg evoor in je CMS dat dit automatisch goed gaat, ook zonder kennis van HTML.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - opsommingen
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Afbeeldingen · Voor CMS-developers · Handboek
+title: Afbeeldingen · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Afbeeldingen
@@ -7,7 +7,8 @@ pagination_label: Afbeeldingen
 description: Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen altijd van betekenisvolle alternatieve tekst te voorzien.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - afbeeldingen
 ---
 

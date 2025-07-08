@@ -1,5 +1,5 @@
 ---
-title: Video · Voor CMS-developers · Handboek
+title: Video · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Video
@@ -7,7 +7,8 @@ pagination_label: Video
 description: Video’s zijn niet voor iedereen even goed toegankelijk. Mensen die niet kunnen horen of zien, missen informatie als er geen alternatieven beschikbaar zijn. Een CMS kan contentmakers helpen om video’s begrijpelijk te maken voor iedereen.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - video
 ---
 

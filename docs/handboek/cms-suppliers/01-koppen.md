@@ -1,5 +1,5 @@
 ---
-title: Koppen · Voor CMS-developers · Handboek
+title: Koppen · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Koppen
@@ -7,7 +7,8 @@ pagination_label: Koppen
 description: Koppenstructuur is essentieel voor schermlezers én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - koppen
 ---
 

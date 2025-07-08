@@ -1,8 +1,8 @@
 {
-  "label": "CMS developers",
+  "label": "CMS leveranciers",
   "link": {
     "type": "doc",
-    "id": "handboek/cms-developers/README"
+    "id": "handboek/cms-suppliers/README"
   },
   "customProps": {
     "showLinkedDoc": true

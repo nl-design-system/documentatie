@@ -1,5 +1,5 @@
 ---
-title: Kantoorbestanden · Voor CMS-developers · Handboek
+title: Kantoorbestanden · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Kantoorbestanden
@@ -7,7 +7,8 @@ pagination_label: Kantoorbestanden
 description: Bij bestanden zoals pdf’s is het belangrijk dat gebruikers weten wat ze kunnen verwachten, en dat contentmakers zich bewust zijn van de toegankelijkheid. Ook bij het plakken van tekst uit bijvoorbeeld Word kan de opmaak problemen geven. Een CMS kan helpen met waarschuwingen, toelichting en ondersteuning bij invoer.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - kantoorbestanden
   - pdf
   - word
