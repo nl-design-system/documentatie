@@ -716,7 +716,10 @@ abbr[title] {
   display: block;
 }
 .docs-doc-page ul {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+}
+.docs-doc-page ol {
+  margin-bottom: 1.5rem;
 }
 .docs-doc-page div.button {
   border: 1px solid #223c61;
