@@ -20,7 +20,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Taalinstellingen
 
-De juiste taalinstelling helpt screenreaders om tekst correct uit te spreken en zorgt ervoor dat browsers de content goed weergeven. Dat geldt voor de hele pagina én voor losse tekstfragmenten in een andere taal.
+De juiste taalinstelling helpt [screenreaders](/woordenlijst/#screenreader) om tekst correct uit te spreken en zorgt ervoor dat browsers de content goed weergeven. Dat geldt voor de hele pagina én voor losse tekstfragmenten in een andere taal.
 
 Wat het CMS kan doen:
 
