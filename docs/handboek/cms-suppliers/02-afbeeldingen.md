@@ -27,7 +27,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Afbeeldingen
 
-Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen altijd van betekenisvolle alternatieve tekst te voorzien.
+Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zichtbaar. Help contentmakers om afbeeldingen van een betekenisvolle alternatieve tekst te voorzien.
 
 Wat het CMS kan doen:
 
