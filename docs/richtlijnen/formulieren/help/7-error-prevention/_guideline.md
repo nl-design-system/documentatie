@@ -40,10 +40,10 @@ Gebruikersonderzoek voor het [Contactformulier voor WMEBV](https://gebruikersond
 
 GOV.UK beschrijft hoe gebruikers te helpen in [<span lang="en">Help users to Check answers</span>](https://design-system.service.gov.uk/patterns/check-answers/).
 
-Voorbeelden van patronen in het NL Design System:
+Gerelateerde patronen en templates:
 
-- [Meer-stappen-formulier](https://nldesignsystem.nl/voorbeelden/patronen/formulieren/meer-stappen-formulier)
-- [Controlepagina](https://nldesignsystem.nl/voorbeelden/patronen/formulieren/controlepagina)
-- [Foutmeldingen](https://nldesignsystem.nl/voorbeelden/patronen/formulieren/foutmeldingen)
+- [Overkoepelende GitHub Discussion voor formulier patronen en templates](https://github.com/orgs/nl-design-system/discussions/364)
+- [GitHub Discussion voor de Controlepagina in een meerstappenformulier](https://github.com/orgs/nl-design-system/discussions/372)
+- [GitHub Discussion voor foutmeldingen in een formulier](https://github.com/orgs/nl-design-system/discussions/376)
 
 Omkeerbaarheid, controle of bevestiging bij een formulier waarin om juridische, financiële of persoonlijke gegevens wordt gevraagd, is nodig om te voldoen aan het [WCAG-succescriterium 3.3.4 Foutpreventie (wettelijk, financieel, gegevens)](/wcag/3.3.4/) (niveau AA).
