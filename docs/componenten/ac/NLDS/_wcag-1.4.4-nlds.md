@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in de component in zijn geheel zichtbaar.
+Als je de tekst vergroot tot 200%, bijvoorbeeld via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst in de component volledig zichtbaar.
 
 NL Design System richtlijnen:
 
