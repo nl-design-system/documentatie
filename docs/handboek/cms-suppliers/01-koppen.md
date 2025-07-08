@@ -22,7 +22,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Koppen
 
-Koppenstructuur is essentieel voor schermlezers én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.
+Een logische koppenstructuur is essentieel voor [screenreaders](/woordenlijst/#screenreader) én voor mensen die snel willen scannen. Help contentmakers om koppen op de juiste manier te gebruiken, zonder dat ze daar technische kennis voor nodig hebben.
 
 Wat het CMS kan doen:
 
