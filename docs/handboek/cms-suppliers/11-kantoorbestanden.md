@@ -8,11 +8,14 @@ description: Bij bestanden zoals pdf’s is het belangrijk dat gebruikers weten 
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - kantoorbestanden
   - pdf
   - word
   - documenten
+  - links
 ---
 
 <!-- @license CC0-1.0 -->

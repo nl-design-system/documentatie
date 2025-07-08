@@ -8,8 +8,11 @@ description: Opsommingen helpen om informatie overzichtelijk te maken. Maar alle
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - opsommingen
+  - lijst
 ---
 
 <!-- @license CC0-1.0 -->

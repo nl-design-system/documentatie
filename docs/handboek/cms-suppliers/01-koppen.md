@@ -8,8 +8,12 @@ description: Koppenstructuur is essentieel voor schermlezers én voor mensen die
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - publiceren
+  - toegankelijke content
   - koppen
+  - structuur
+  - koppenstructuur
 ---
 
 <!-- @license CC0-1.0 -->

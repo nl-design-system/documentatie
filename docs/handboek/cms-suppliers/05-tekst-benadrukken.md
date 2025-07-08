@@ -8,8 +8,14 @@ description: Duidelijke opmaak helpt om accenten te leggen in een tekst. Denk aa
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - tekst benadrukken
+  - dikgedrukt
+  - schuingedrukt
+  - strong
+  - em
 ---
 
 <!-- @license CC0-1.0 -->

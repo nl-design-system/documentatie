@@ -8,8 +8,14 @@ description: Video’s zijn niet voor iedereen even goed toegankelijk. Mensen di
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - video
+  - audiodescriptie
+  - ondertiteling
+  - subtitles
+  - captions
 ---
 
 <!-- @license CC0-1.0 -->

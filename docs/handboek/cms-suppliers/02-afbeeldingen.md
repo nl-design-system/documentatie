@@ -8,8 +8,17 @@ description: Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor 
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - publiceren
+  - toegankelijke content
   - afbeeldingen
+  - alternatieve tekst
+  - tekstalternatief
+  - tekstalternatieven
+  - tekst alternatief
+  - tekstueel alternatief
+  - tekst alternatieven
+  - alt in cms
 ---
 
 <!-- @license CC0-1.0 -->

@@ -8,8 +8,14 @@ description: Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - publiceren
+  - toegankelijke content
+  - tabel
   - tabellen
+  - tabelopmaak
+  - tabelkop
+  - tabelstructuur
 ---
 
 <!-- @license CC0-1.0 -->

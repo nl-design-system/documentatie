@@ -8,8 +8,11 @@ description: Citaten maken duidelijk dat een stuk tekst afkomstig is uit een and
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
-  - citaten
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
+  - quotes
+  - citaat
 ---
 
 <!-- @license CC0-1.0 -->

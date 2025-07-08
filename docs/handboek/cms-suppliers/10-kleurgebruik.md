@@ -8,9 +8,12 @@ description: Goede kleuren zorgen voor herkenning en leesbaarheid. Maar niet ied
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - kleur
   - contrast
+  - tekst
 ---
 
 <!-- @license CC0-1.0 -->
