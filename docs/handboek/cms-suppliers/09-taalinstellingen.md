@@ -8,7 +8,9 @@ description: De juiste taalinstelling helpt screenreaders om tekst correct uit t
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
   - taal
 ---
 
