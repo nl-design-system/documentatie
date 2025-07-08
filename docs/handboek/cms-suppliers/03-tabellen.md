@@ -28,7 +28,7 @@ Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijk
 
 Wat het CMS kan doen:
 
-- Laat gebruikers kopcellen aanduiden  
+- Laat gebruikers kopcellen aangeven  
   Geef een duidelijke optie om rij- en kolomkoppen aan te geven.
 - Voorkom dat tabellen worden misbruikt voor opmaak  
   Maak contentmakers bewust van het risico van tabellen zonder kopcellen of met een complexe, visueel gestuurde structuur.
