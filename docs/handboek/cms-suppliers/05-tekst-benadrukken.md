@@ -36,6 +36,8 @@ Wat het CMS kan doen:
   Tekst in alleen hoofdletters is moeilijker leesbaar en komt schreeuwerig over. Geef bijvoorbeeld een suggestie voor een toegankelijker alternatief, zoals vet of cursief.
 - Waarschuw bij overmatig gebruik van vet of cursief  
   Geef feedback als er te veel tekst in een alinea vet of cursief is gemaakt. Zo voorkom je dat nadruk zijn werking verliest of dat de leesbaarheid verslechtert.
+- Bied de mogelijkheid om standaard onderdelen visueel op te maken  
+  Zorg dat elementen zoals introductieteksten een visuele stijl kunnen krijgen via CSS, zonder dat hiervoor semantische HTML zoals `<strong>` of `<em>` nodig is. Zodat de opmaak geen betekenis suggereert die er niet is.
 
 In de richtlijnen voor contentmakers lees je waarom dit onderdeel belangrijk is voor toegankelijkheid en waar je als contentmaker op moet letten. Verwijs hier eventueel naartoe vanuit het CMS voor extra uitleg en context.
 

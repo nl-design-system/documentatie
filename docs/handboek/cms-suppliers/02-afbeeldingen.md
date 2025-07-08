@@ -32,7 +32,7 @@ Afbeeldingen kunnen informatie verduidelijken, maar zijn niet voor iedereen zich
 Wat het CMS kan doen:
 
 - Laat contentmakers alt-teksten toevoegen  
-  Bied een duidelijk invoerveld bij het uploaden of plaatsen van een afbeelding.
+  Bied een invoerveld bij het plaatsen van een afbeelding, zodat contentmakers per situatie de juiste tekst kunnen toevoegen. De context bepaalt namelijk welke beschrijving passend is. Voorkom dat de alt-tekst alleen centraal, bijvoorbeeld in de mediabibliotheek, wordt ingevuld en daardoor altijd hetzelfde is.
 - Geef gerichte feedback bij ontbrekende of onnodige alt-teksten  
   Waarschuw als een afbeelding zonder alt-tekst wordt toegevoegd en geef de mogelijkheid om een afbeelding als decoratief te markeren.
 - Ondersteun aanvullende beschrijvingen waar nodig  
