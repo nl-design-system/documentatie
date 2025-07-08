@@ -24,7 +24,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Tabellen
 
-Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van screenreaders.
+Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van [screenreaders](/woordenlijst/#screenreader).
 
 Wat het CMS kan doen:
 
