@@ -1,5 +1,5 @@
 ---
-title: Tekst benadrukken · Voor CMS-developers · Handboek
+title: Tekst benadrukken · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tekst benadrukken
@@ -7,7 +7,8 @@ pagination_label: Tekst benadrukken
 description: Duidelijke opmaak helpt om accenten te leggen in een tekst. Denk aan vet of cursief om iets te benadrukken. Maar niet alle visuele opmaak is ook technisch toegankelijk. Een CMS kan contentmakers ondersteunen met toegankelijke opties voor tekstopmaak.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - tekst benadrukken
 ---
 

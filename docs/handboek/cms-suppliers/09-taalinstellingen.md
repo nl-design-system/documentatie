@@ -1,5 +1,5 @@
 ---
-title: Taalinstellingen · Voor CMS-developers · Handboek
+title: Taalinstellingen · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Taalinstellingen
@@ -7,7 +7,8 @@ pagination_label: Taalinstellingen
 description: De juiste taalinstelling helpt screenreaders om tekst correct uit te spreken en zorgt ervoor dat browsers de content goed weergeven. Dat geldt voor de hele pagina én voor losse tekstfragmenten in een andere taal.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - taal
 ---
 
