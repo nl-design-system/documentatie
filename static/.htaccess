@@ -59,6 +59,7 @@ RedirectMatch 301 "^/meedoen/als-organisatie/(._)$" "/handboek/organisatie$1"
 RedirectMatch 301 "^/project/events(.\*)$" "/community/events$1"
 RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.\*)$" "/richtlijnen/formulieren/$1"
 RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
+RedirectMatch 301 "^/voorbeelden/patronen/(.\*)$" "/voorbeelden/patronen-en-formulieren/$1"
 
 # Convenience redirects for every WCAG success criterium
 Redirect 301 "/1.1.1" "/wcag/1.1.1/"
