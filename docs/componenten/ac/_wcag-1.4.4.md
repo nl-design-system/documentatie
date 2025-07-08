@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Als je de tekst vergroot tot 200% (via browserzoom en via de browserinstellingen voor tekstgrootte) blijft de tekst in zijn geheel zichtbaar.
+Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.
 
 Zorg ervoor dat het component meegroeit met de tekst. Definieer hoogte en de breedte niet in `px`, maar gebruik een relatieve waarde als `em` of `rem`.
 
