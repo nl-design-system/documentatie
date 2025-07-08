@@ -35,19 +35,15 @@ import Summary from "./summaries/_1.3.1-summary.md";
 <dl>
   <div class="dl__item">
     <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">
-      Maak het gemakkelijker om een <a href="/woordenlijst/#proces">proces</a> van meerdere stappen te doorlopen.
-    </dd>
+    <dd class="dl__definition">Informatie over de structuur van content is voor iedereen beschikbaar.</dd>
   </div>
   <div class="dl__item">
     <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Vraag geen dubbele informatie in dezelfde sessie.</dd>
+    <dd class="dl__definition">Gebruik code om de relaties en informatie die je ziet over te brengen.</dd>
   </div>
   <div class="dl__item">
     <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Mensen met cognitieve beperkingen kunnen moeite hebben met het onthouden van eerdere invoer.
-    </dd>
+    <dd class="dl__definition">Mensen kunnen wat ze zien aanpassen zonder dat de originele betekenis verandert.</dd>
   </div>
 </dl>
 
@@ -55,22 +51,47 @@ import Summary from "./summaries/_1.3.1-summary.md";
 
 <Summary />
 
-Info en relaties?
+Op een website wordt veel visueel gecommuniceerd. Kopjes staan dichtbij de onderdelen waar ze over gaan. Ze zijn vaak dikgedrukt en groter dan doorsnee tekst.
+Door iets dichtbij te plaatsen geef je een relatie aan. Door vormgeving met letterdikte en -formaat geef je de informatie dat het een kop is.
 
-- Info betekent informatie, tekstueel of visueel. Zoals een kopje boven een paragraaf aangeeft waar de inhoud eronder over gaat.
-- Relatie betekent gerelateerde of gekoppelde inhoud. Zoals een label of foutmelding in de HTML gekoppeld moet zijn aan het bijbehorende formulierveld.
+Deze relaties en informatie moeten voor iedereen duidelijk zijn. Dit is waardevol voor mensen die dit niet kunnen zien. De informatie gaat ook vaak verloren als de presentatie verandert. Dit kan zijn als pagina's geprint worden, de resolutie gewijzigd wordt of lokale styling toegepast wordt.
 
-Zorg ervoor dat informatie en relaties die zichtbaar zijn, ook beschikbaar zijn voor hulpmiddelen, zoals een [screenreader](/woordenlijst/#screenreader). Dan kunnen hulpmiddelen de informatie ook interpreteren en aan gebruikers overbrengen.
+Voor het overbrengen van relaties zijn er verschillende middelen:
 
-Bijvoorbeeld:
+- Elementen van formulier koppelen aan hun label.
+- `aria-labelledby` en `aria-describedby` voor namen en omschrijvingen. Dit is ook waardevol voor instructies en foutmeldingen bij formulieren.
+- Groepeer inhoud die visueel bij elkaar hoort ook in de code. Laat ze bijvoorbeeld onder dezelfde kopjes vallen, en plaatst lopende teksten in dezelfde paragraaf.
+- `aria-controls` geeft aan als een element controle heeft over een ander element.
+- `<nav>` kan groeperen én informatie geven over de navigatie op een pagina.
 
-- Als tekst er uitziet als een kopje, moet dit ook in de HTML een kopje (heading) zijn en geen vet gemaakte tekst. Het kopjesniveau wordt voorgelezen door [screenreaders](/woordenlijst/#screenreader).
-- Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor screenreadersgebruikers, door het gebruik van table headings (th’s). De table heading wordt voorgelezen bij de waarde van een bijbehorende table cell.
-- In een formulier moeten invoervelden en labels aan elkaar gekoppeld zijn met een [for/id-relatie](/richtlijnen/formulieren/labels/toegankelijke-naam). Dan wordt het label voorgelezen als het invoerveld de focus krijgt.
-- Staan gegevens in een lijst, gebruik dan ook in de HTML een lijst (ul) en niet alleen streepjes voor de items. Een screenreader leest dan voor dat het een lijst is, hoeveel items er zijn in de lijst en bij welk item de lezer zich op dat moment bevindt.
-- Gebruik je een afbeelding om informatie te geven, zorg er dan voor dat de alternatieve tekst van de afbeelding de juiste informatie bevat, of voeg de informatie vlakbij de afbeelding in tekst toe.
+Voor het overbrengen van informatie zijn er veel opties in code:
 
-Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relaties, visuele informatie en opmaak, dan begrijpen gebruikers van hulpmiddelen deze informatie ook.
+- Maak voor lijsten gebruik van `<ol>`, `<li>` en `<dl>`. Gebruik geen leestekens als "bullets".
+- Maak HTML-headings van kopjes.
+- Gebruik `<strong>` en `<em>` voor het benadrukken van tekst.
+- Gebruik attributen als `aria-expanded` om te communiceren als iets uitklapt.
+- Een tabel maak je op met `<tabel>`. Gebruik dit element niet voor andere doeleinden.
+- Een citaat kun je opmaken met `<q>` of `<blockquote>`.
+- Gebruik `<address>` voor een adresblok.
+
+De lijst van mogelijke HTML-elementen kan lang zijn. Dit zijn wel de meest voorkomende elementen. Bij een situatie waar je visueel iets communiceert en je geen HTML-tegenhanger kent, kan het handig zijn om na te vragen bij iemand met andere HTML-kennis. Bij gebrek aan passende HTML kan de visuele informatie in tekst uitgeschreven worden.
+
+## Hoe te testen
+
+Het is lastig om dit criterium zowel snel als volledig te testen. Voor een goede indruk:
+
+- Controleer of de volgende visuele elementen ook in de code kloppen:
+  - Headings
+  - Tabellen
+  - Lijsten
+  - Formulieren - inclusief labels, instructies en foutmelding.
+
+Voor een volledige en/of verdere test is een [screenreaders](/woordenlijst/#screenreader) heel erg praktisch. Vergelijk dan de ervaring van de pagina zien, met die van de pagina niet zien.
+
+## Tips
+
+- Gebruik zoveel mogelijk HTML-elementen. Bouw niet zelf wat al in HTML bestaat. Hiermee worden veel fouten voorkomen.
+- Als een leesteken ingezet wordt om iets vorm te geven, dan leidt dit vaak tot problemen.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -89,21 +110,9 @@ De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede in
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## Bronnen en tools
 
-De pagina doorlezen met een screenreader is een goede manier om dit succescriterium te testen. Wordt de informatie die je ziet ook goed voorgelezen.
-
-Controleer of de HTML semantisch is opgemaakt, zoals bijvoorbeeld:
-
-- **Kopjes** (headings): ziet tekst eruit als een kopje, is deze opgemaakt als HTML-kopje (h1, h2, h3 etc)? En andersom: worden kopjes niet gebruikt om tekst alleen groot te maken?
-- **Lijsten**: is tekst opgemaakt als een genummerde of ongenummerde lijst, is deze in de HTML dan ook opgemaakt als een genummerde (`<ol>`) of ongenummerde lijst (`<ul>`)?
-- **Tabellen** voor het weergeven van data: is het duidelijk welke data precies wordt weergegeven? Bijvoorbeeld door het gebruik van table headings (th’s) en scope.
-
-Test voor formuliervelden:
-
-- Is het label en de description gekoppeld aan het invoerveld?
-- Weet een screenreadergebruiker ook dat een veld verplicht is?
-- Worden fout- en succesmeldingen voorgelezen door een screenreader?
+- Browserextensie [<span lang="en">Headingsmap</span>](https://github.com/dzc34/headingsMap)
 
 ## W3C referenties
 
