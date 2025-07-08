@@ -1,5 +1,5 @@
 ---
-title: Kleurgebruik en contrast · Voor CMS-developers · Handboek
+title: Kleurgebruik en contrast · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Kleurgebruik en contrast
@@ -7,7 +7,8 @@ pagination_label: Kleurgebruik en contrast
 description: Goede kleuren zorgen voor herkenning en leesbaarheid. Maar niet iedereen ziet kleur op dezelfde manier. Een CMS kan helpen door toegankelijke kleurkeuzes te ondersteunen en foutgevoelige combinaties te voorkomen.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - kleur
   - contrast
 ---

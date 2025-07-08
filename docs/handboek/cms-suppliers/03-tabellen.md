@@ -1,5 +1,5 @@
 ---
-title: Tabellen · Voor CMS-developers · Handboek
+title: Tabellen · Voor CMS leveranciers · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen
@@ -7,7 +7,8 @@ pagination_label: Tabellen
 description: Tabellen worden vaak gebruikt om gestructureerde data te tonen. Een toegankelijke tabel heeft altijd kopcellen en een logische leesvolgorde, ook voor gebruikers van screenreaders.
 keywords:
   - CMS
-  - developer
+  - leverancier
+  - CMS leverancier
   - tabellen
 ---
 
