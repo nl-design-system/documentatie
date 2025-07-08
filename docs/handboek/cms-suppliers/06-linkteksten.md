@@ -8,7 +8,10 @@ description: Duidelijke linkteksten zorgen dat gebruikers weten waar een link na
 keywords:
   - CMS
   - leverancier
-  - CMS leverancier
+  - Content Management Systeem
+  - toegankelijk
+  - publiceren
+  - links
   - linkteksten
 ---
 
