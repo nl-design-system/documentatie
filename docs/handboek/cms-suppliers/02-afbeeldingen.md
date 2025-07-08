@@ -34,7 +34,7 @@ Wat het CMS kan doen:
 - Laat contentmakers alt-teksten toevoegen  
   Bied een duidelijk invoerveld bij het uploaden of plaatsen van een afbeelding.
 - Geef gerichte feedback bij ontbrekende of onnodige alt-teksten  
-  Waarschuw als een afbeelding zonder alt-tekst wordt toegevoegd, en geef de mogelijkheid om duidelijk aan te geven dat het om een decoratieve afbeelding gaat.
+  Waarschuw als een afbeelding zonder alt-tekst wordt toegevoegd en geef de mogelijkheid om een afbeelding als decoratief te markeren.
 - Ondersteun aanvullende beschrijvingen waar nodig  
   Maak het mogelijk om complexe afbeeldingen, zoals infographics of grafieken, extra toe te lichten. Bijvoorbeeld via een tekstblok dat wordt gekoppeld met aria-describedby.
 
