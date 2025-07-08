@@ -56,18 +56,20 @@ import Summary from "./summaries/_2.1.1-summary.md";
 
 <Summary />
 
-Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of een ander apparaat met aanwijzer gebruiken. Dit criterium is voor tal van apparaten die zich gedragen als een toetsenbord. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
+Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of een ander apparaat met aanwijzer gebruiken. Dit criterium is voor tal van hulpmiddelen die zich gedragen als een toetsenbord. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
+
+### Hoe het hoort te werken
 
 Het is relatief laagdrempelig om verbeteringen te vinden voor dit criterium; een computer met toetsenbord volstaat. Dit zorgt ervoor dat velen een bijdrage kunnen leveren aan het voldoen aan dit criterium.
 
 - De interactieve onderdelen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en de combinatie <kbd>shift+tab</kbd>. <kbd>tab</kbd> navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). <kbd>shift+tab</kbd> doet hetzelfde maar in omgekeerde volgorde.
-- Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Denk hierbij aan groeperingen zoals radio-buttons, tabbladen en kalenders. Een groot onderdeel zoals een kalender is bereikbaar met <kbd>tab</kbd>. Losse dagen zijn daarna bereikbaar met pijltjestoetsen.
+- Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Denk hierbij aan groeperingen zoals radio-buttons, tabbladen en kalenders. Een groepering zoals een kalender is bereikbaar met <kbd>tab</kbd>. Losse dagen zijn daarna bereikbaar met pijltjestoetsen.
 - Het activeren of bedienen van elementen moet ook met het toetsenbord kunnen.
   - Een link is te activeren met <kbd>return/enter</kbd>.
   - Een knop is daarnaast te activeren met de <kbd>spatiebalk</kbd>.
   - Selecties binnen een onderdeel kunnen vaak met de <kbd>spatiebalk</kbd>.
   - Sommige elementen zoals sliders zijn te bedienen met pijltjestoetsen.
-  - Een formulier kan soms vanuit een element verzonden worden met <kbd>return/enter</kbd>. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
+  - Een formulier kan verzonden worden met <kbd>return/enter</kbd> in plaats van een `<button>` te gebruiken. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
   - Soms zijn er nog andere manieren om het toetsenbord te gebruik. Denk hierbij aan acties annuleren met <kbd>esc</kbd> of navigeren met toetsen als <kbd>home</kbd> en <kbd>end</kbd>. Als er twijfel is bij zelfgebouwde elementen, vergelijk dan met pure HTML.
 
 Op MacOS kunnen extra instellingen nodig zijn:
