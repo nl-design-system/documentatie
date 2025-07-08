@@ -21,7 +21,7 @@ import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_foot
 
 # Opsommingen
 
-Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook technisch als lijst zijn opgemaakt. Zorg evoor in je CMS dat dit automatisch goed gaat, ook zonder kennis van HTML.
+Opsommingen helpen om informatie overzichtelijk te maken. Maar alleen als ze ook in de code als lijst zijn opgemaakt. Zorg ervoor dat dit automatisch goed gaat in je CMS, ook zonder kennis van HTML.
 
 Wat het CMS kan doen:
 
