@@ -1,4 +1,4 @@
-/*! For license information please see main.b8561c9e.js.LICENSE.txt */
+/*! For license information please see main.78a6e1dc.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -12156,7 +12156,7 @@
          { label: 'Colofon', to: '/colofon' },
          { label: 'GitHub', href: 'https://github.com/nl-design-system/backlog' },
          { label: 'Storybook', href: 'https://nl-design-system.github.io/themes' },
-         { label: 'Figma', href: 'https://www.figma.com/file/shhwGcqPLi2CapK0P1zz8O/NL-Design-System---Bibliotheek' },
+         { label: 'Figma', href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1' },
         ],
         title: null,
        },
