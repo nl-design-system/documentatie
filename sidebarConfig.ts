@@ -47,12 +47,12 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Voor designers',
           description:
-            'Mee designen aan het NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
+            'Mee designen aan NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
           link: {
             type: 'generated-index',
             title: 'Voor designers',
             description:
-              'Mee designen aan het NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
+              'Mee designen aan NL Design System of gebruik maken van bestaande Figma componenten? Als designer vind je hier alle documentatie die je nodig hebt.',
             slug: '/handboek/designer/overzicht',
             keywords: ['designers', 'overzicht'],
           },
