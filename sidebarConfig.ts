@@ -216,7 +216,7 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       className: 'sidebar__main-category',
       description:
-        "Hier tonen we voorbeelden van veelvoorkomende pagina's en klantreizen, gemaakt met richtlijnen en componenten uit het NL Design System.",
+        "Hier tonen we voorbeelden van veelvoorkomende pagina's en klantreizen, gemaakt met richtlijnen en componenten uit NL Design System.",
       link: {
         type: 'doc',
         id: 'voorbeelden/introductie',
