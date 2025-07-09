@@ -1,0 +1,65 @@
+---
+title: Form controls · Start-thema · Developer · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Form controls
+pagination_label: Form controls
+description: Het NL Design System Start-thema
+keywords:
+  - developer
+  - bijdragen
+  - start-thema
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { TokenUses } from "@site/src/components/StartThema/TokenUses";
+import { CommonDesignTokensTable } from "@site/src/components/StartThema/CommonDesignTokensTable";
+
+# Form controls in het Start-thema
+
+<Paragraph lead>
+  Binnen de meeste thema's hebben formulierelementen zoals invoervelden, checkboxes en dropdowns veel overlap qua stijl.
+  Ze gebruiken vaak dezelfde kleuren, borders en typografie voor dezelfde status (bv. focus, hover of invalid). Daarom
+  defineert het Start-thema een aantal design tokens die gedeeld worden door de verschillende form-componenten. Op deze
+  pagina staan al deze gedeelde tokens en waar ze voor gebruikt worden.
+</Paragraph>
+
+Voor meer informatie over hoe deze tokens gebruikt worden kun je terecht in [het Start-thema handboek](/handboek/huisstijl/themas/start-thema).
+
+## Algemene form control tokens
+
+<CommonDesignTokensTable type="form-control" maxPathLength={3} />
+
+### Placeholder form control tokens
+
+<CommonDesignTokensTable type="form-control" item="placeholder" />
+
+## Active form control tokens
+
+<CommonDesignTokensTable type="form-control" item="active" />
+
+## Hover form control tokens
+
+<CommonDesignTokensTable type="form-control" item="hover" />
+
+## Disabled form control tokens
+
+<CommonDesignTokensTable type="form-control" item="disabled" />
+
+## Focus form control tokens
+
+<CommonDesignTokensTable type="form-control" item="focus" />
+
+## Invalid form control tokens
+
+<CommonDesignTokensTable type="form-control" item="invalid" />
+
+## Read-only form control tokens
+
+<CommonDesignTokensTable type="form-control" item="read-only" />
+
+{/\* ## Waar worden deze tokens gebruikt?
+
+Als je één van deze tokens aanpast kun je hieronder zien op welke tokens uit het Start-thema dit allemaal effect heeft.
+
+<TokenUses tokenType="form-control" /> */}

@@ -1,0 +1,59 @@
+---
+title: Typografie · Start-thema · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Typografie
+pagination_label: Typografie
+description: Informatie over het Start-thema en de basis-tokens.
+slug: /handboek/huisstijl/themas/start-thema/typografie
+keywords:
+  - componenten
+  - design system
+  - design tokens
+  - thema's
+  - start-thema
+  - typografie
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { TokenUses } from "@site/src/components/StartThema/TokenUses";
+import { CommonDesignTokensTable } from "@site/src/components/StartThema/CommonDesignTokensTable";
+
+# Typografie in het Start-thema
+
+<Paragraph lead>
+  Op deze pagina staan alle typografische tokens uit het Start-thema. Deze tokens definieren de verschillende
+  tekststijlen die gebruikt kunnen worden in het Start-thema.
+</Paragraph>
+
+Voor meer informatie over hoe deze tokens gebruikt worden kun je terecht in [het Start-thema handboek](/handboek/huisstijl/themas/start-thema).
+
+## Font-family
+
+### Standaardtekst
+
+<CommonDesignTokensTable type="text" item="font-family" subitem="default" />
+
+### Headings
+
+<CommonDesignTokensTable type="heading" item="font-family" />
+
+### Monospace tekst
+
+<CommonDesignTokensTable type="text" item="font-family" subitem="monospace" />
+
+## Font-size
+
+<CommonDesignTokensTable type="text" item="font-size" />
+
+## Font-weight
+
+<CommonDesignTokensTable type="text" item="font-weight" />
+
+## Line-height
+
+<CommonDesignTokensTable type="text" item="line-height" />
+
+{/\* ## Waar worden deze kleur-tokens gebruikt?
+
+<TokenUses tokenType="text" /> */}
