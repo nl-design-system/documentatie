@@ -82,4 +82,4 @@ export const MyComponent = () => <NumberBadge value="42" />;
 
 ## Figma
 
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — number-badge](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=16036-18152&t=05MMm59Zv67e65gd-4).
+De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Number Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271).
