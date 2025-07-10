@@ -71,4 +71,4 @@ export const MyPage = () => {
 
 ## Figma
 
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Data Badge](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=16013-20496&t=btcSpHPZOXM2P8BA-4).
+De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Data Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-18012).

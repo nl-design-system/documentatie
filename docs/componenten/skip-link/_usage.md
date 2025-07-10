@@ -63,4 +63,4 @@ export const MyComponent = () => <SkipLink href="#inhoud">Direct naar de hoofdin
 
 ## Figma
 
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — skip-link](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=16036-18152&t=05MMm59Zv67e65gd-4).
+De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Skip Link](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2217-10122).
