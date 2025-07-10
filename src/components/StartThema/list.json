@@ -1,7 +1,7 @@
 [
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -72,7 +72,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -592,7 +592,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 16px 48px 0 #111111",
+    "$value": "0 16px 48px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -605,7 +605,7 @@
       "$value": {
         "blur": "48",
         "spread": "0",
-        "color": "{basis.color.default.bg-document}",
+        "color": "{basis.color.default.color-default}",
         "type": "dropShadow",
         "offsetX": "0",
         "offsetY": "16"
@@ -626,7 +626,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 8px 16px 0 #111111",
+    "$value": "0 8px 16px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -639,7 +639,7 @@
       "$value": {
         "blur": "16",
         "spread": "0",
-        "color": "{basis.color.default.bg-document}",
+        "color": "{basis.color.default.color-default}",
         "type": "dropShadow",
         "offsetX": "0",
         "offsetY": "8"
@@ -660,7 +660,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 2px 6px 0 #111111",
+    "$value": "0 2px 6px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -673,7 +673,7 @@
       "$value": {
         "blur": "6",
         "spread": "0",
-        "color": "{basis.color.default.bg-document}",
+        "color": "{basis.color.default.color-default}",
         "type": "dropShadow",
         "offsetX": "0",
         "offsetY": "2"
@@ -694,12 +694,12 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#002D62"
+      "$value": "#DDE6F1"
     },
     "name": "basisColorAccent1BgActive",
     "attributes": {
@@ -712,12 +712,12 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#001D40"
+      "$value": "#ECF1F7"
     },
     "name": "basisColorAccent1BgDefault",
     "attributes": {
@@ -730,12 +730,12 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#001126"
+      "$value": "#FBFCFD"
     },
     "name": "basisColorAccent1BgDocument",
     "attributes": {
@@ -748,12 +748,12 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#002551"
+      "$value": "#E4ECF4"
     },
     "name": "basisColorAccent1BgHover",
     "attributes": {
@@ -766,12 +766,12 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#000409"
+      "$value": "#F4F7FA"
     },
     "name": "basisColorAccent1BgSubtle",
     "attributes": {
@@ -784,12 +784,12 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#4E7FB8"
+      "$value": "#3F74B2"
     },
     "name": "basisColorAccent1BorderActive",
     "attributes": {
@@ -802,12 +802,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3169AD"
+      "$value": "#5C89BE"
     },
     "name": "basisColorAccent1BorderDefault",
     "attributes": {
@@ -820,12 +820,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3F74B2"
+      "$value": "#4E7FB8"
     },
     "name": "basisColorAccent1BorderHover",
     "attributes": {
@@ -838,12 +838,12 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#003B81"
+      "$value": "#B0C6DF"
     },
     "name": "basisColorAccent1BorderSubtle",
     "attributes": {
@@ -856,12 +856,12 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#BBCEE4"
+      "$value": "#003B81"
     },
     "name": "basisColorAccent1ColorActive",
     "attributes": {
@@ -874,12 +874,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#8FAED2"
+      "$value": "#1B59A4"
     },
     "name": "basisColorAccent1ColorDefault",
     "attributes": {
@@ -892,12 +892,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#001B3C"
     },
     "name": "basisColorAccent1ColorDocument",
     "attributes": {
@@ -910,12 +910,12 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#A5BEDB"
+      "$value": "#04499A"
     },
     "name": "basisColorAccent1ColorHover",
     "attributes": {
@@ -928,12 +928,12 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#648EC1"
+      "$value": "#2964AA"
     },
     "name": "basisColorAccent1ColorSubtle",
     "attributes": {
@@ -946,12 +946,12 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#386FAF"
+      "$value": "#003B81"
     },
     "name": "basisColorAccent1InverseBgActive",
     "attributes": {
@@ -964,12 +964,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2661A8"
+      "$value": "#1B59A4"
     },
     "name": "basisColorAccent1InverseBgDefault",
     "attributes": {
@@ -1000,12 +1000,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3169AD"
+      "$value": "#04499A"
     },
     "name": "basisColorAccent1InverseBgHover",
     "attributes": {
@@ -1108,12 +1108,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorAccent1InverseColorActive",
     "attributes": {
@@ -1126,12 +1126,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorAccent1InverseColorDefault",
     "attributes": {
@@ -1144,12 +1144,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorAccent1InverseColorDocument",
     "attributes": {
@@ -1162,12 +1162,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorAccent1InverseColorHover",
     "attributes": {
@@ -1198,7 +1198,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1216,7 +1216,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1234,7 +1234,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1252,7 +1252,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1270,7 +1270,7 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1288,7 +1288,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1306,7 +1306,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1324,7 +1324,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1342,7 +1342,7 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1360,7 +1360,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1378,7 +1378,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1396,7 +1396,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1414,7 +1414,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1432,7 +1432,7 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1450,7 +1450,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1468,7 +1468,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1504,7 +1504,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1612,7 +1612,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1630,7 +1630,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1648,7 +1648,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1666,7 +1666,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1702,7 +1702,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1720,7 +1720,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1738,7 +1738,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1756,7 +1756,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1774,7 +1774,7 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1792,7 +1792,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1810,7 +1810,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1828,7 +1828,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1846,7 +1846,7 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1864,7 +1864,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1882,7 +1882,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1900,7 +1900,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1918,7 +1918,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1936,7 +1936,7 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1954,7 +1954,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -1972,7 +1972,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2008,7 +2008,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2116,7 +2116,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2134,7 +2134,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2152,7 +2152,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2170,7 +2170,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2206,7 +2206,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2224,7 +2224,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2242,7 +2242,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2260,7 +2260,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2278,7 +2278,7 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2296,7 +2296,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2314,7 +2314,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2332,7 +2332,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2350,7 +2350,7 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2368,7 +2368,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2386,7 +2386,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2404,7 +2404,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2422,7 +2422,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2440,7 +2440,7 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2458,7 +2458,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2476,7 +2476,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2512,7 +2512,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2620,7 +2620,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2638,7 +2638,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2656,7 +2656,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2674,7 +2674,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2710,7 +2710,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2728,7 +2728,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2746,7 +2746,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2764,7 +2764,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2782,7 +2782,7 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2800,7 +2800,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2818,7 +2818,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2836,7 +2836,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2854,7 +2854,7 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2872,7 +2872,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2890,7 +2890,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2908,7 +2908,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2926,7 +2926,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2944,7 +2944,7 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2962,7 +2962,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -2980,7 +2980,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3016,7 +3016,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3124,7 +3124,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3142,7 +3142,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3160,7 +3160,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3178,7 +3178,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3214,12 +3214,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2E2E2E"
+      "$value": "#E5E5E5"
     },
     "name": "basisColorDefaultBgActive",
     "attributes": {
@@ -3232,12 +3232,12 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#1D1D1D"
+      "$value": "#F1F1F1"
     },
     "name": "basisColorDefaultBgDefault",
     "attributes": {
@@ -3250,12 +3250,12 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#111111"
+      "$value": "#FCFCFC"
     },
     "name": "basisColorDefaultBgDocument",
     "attributes": {
@@ -3268,12 +3268,12 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#262626"
+      "$value": "#EBEBEB"
     },
     "name": "basisColorDefaultBgHover",
     "attributes": {
@@ -3286,12 +3286,12 @@
   },
   {
     "$type": "color",
-    "$value": "#040404",
+    "$value": "#f6f6f6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#040404"
+      "$value": "#F6F6F6"
     },
     "name": "basisColorDefaultBgSubtle",
     "attributes": {
@@ -3304,12 +3304,12 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#7C7C7C"
+      "$value": "#727272"
     },
     "name": "basisColorDefaultBorderActive",
     "attributes": {
@@ -3322,12 +3322,12 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#686868"
+      "$value": "#868686"
     },
     "name": "basisColorDefaultBorderDefault",
     "attributes": {
@@ -3340,12 +3340,12 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#727272"
+      "$value": "#7C7C7C"
     },
     "name": "basisColorDefaultBorderHover",
     "attributes": {
@@ -3358,12 +3358,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3E3E3E"
+      "$value": "#C4C4C4"
     },
     "name": "basisColorDefaultBorderSubtle",
     "attributes": {
@@ -3376,12 +3376,12 @@
   },
   {
     "$type": "color",
-    "$value": "#cccccc",
+    "$value": "#3e3e3e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#CCCCCC"
+      "$value": "#3E3E3E"
     },
     "name": "basisColorDefaultColorActive",
     "attributes": {
@@ -3394,12 +3394,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ABABAB"
+      "$value": "#595959"
     },
     "name": "basisColorDefaultColorDefault",
     "attributes": {
@@ -3412,12 +3412,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F1F1F1"
+      "$value": "#1B1B1B"
     },
     "name": "basisColorDefaultColorDocument",
     "attributes": {
@@ -3430,12 +3430,12 @@
   },
   {
     "$type": "color",
-    "$value": "#bbbbbb",
+    "$value": "#4b4b4b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#BBBBBB"
+      "$value": "#4B4B4B"
     },
     "name": "basisColorDefaultColorHover",
     "attributes": {
@@ -3448,12 +3448,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#8B8B8B"
+      "$value": "#636363"
     },
     "name": "basisColorDefaultColorSubtle",
     "attributes": {
@@ -3628,12 +3628,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F1F1F1"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorDefaultInverseColorActive",
     "attributes": {
@@ -3646,12 +3646,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F1F1F1"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorDefaultInverseColorDefault",
     "attributes": {
@@ -3664,12 +3664,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F1F1F1"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorDefaultInverseColorDocument",
     "attributes": {
@@ -3682,12 +3682,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F1F1F1"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorDefaultInverseColorHover",
     "attributes": {
@@ -3718,7 +3718,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3736,7 +3736,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3754,7 +3754,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3772,7 +3772,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3790,7 +3790,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3808,7 +3808,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3826,7 +3826,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3844,7 +3844,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3862,7 +3862,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3880,12 +3880,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "{basis.color.disabled.color-subtle}"
+      "$value": "{basis.color.default.color-subtle}"
     },
     "name": "basisColorDisabledColorActive",
     "attributes": {
@@ -3898,12 +3898,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "{basis.color.disabled.color-subtle}"
+      "$value": "{basis.color.default.color-subtle}"
     },
     "name": "basisColorDisabledColorDefault",
     "attributes": {
@@ -3916,12 +3916,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "{basis.color.disabled.color-subtle}"
+      "$value": "{basis.color.default.color-subtle}"
     },
     "name": "basisColorDisabledColorDocument",
     "attributes": {
@@ -3934,12 +3934,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "{basis.color.disabled.color-subtle}"
+      "$value": "{basis.color.default.color-subtle}"
     },
     "name": "basisColorDisabledColorHover",
     "attributes": {
@@ -3952,7 +3952,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -3993,7 +3993,7 @@
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#595959"
+      "$value": "{basis.color.default-inverse.bg-default}"
     },
     "name": "basisColorDisabledInverseBgDefault",
     "attributes": {
@@ -4119,7 +4119,7 @@
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#474747"
+      "$value": "{basis.color.default-inverse.border-subtle}"
     },
     "name": "basisColorDisabledInverseBorderSubtle",
     "attributes": {
@@ -4209,7 +4209,7 @@
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#C4C4C4"
+      "$value": "{basis.color.default-inverse.color-subtle}"
     },
     "name": "basisColorDisabledInverseColorSubtle",
     "attributes": {
@@ -4222,12 +4222,12 @@
   },
   {
     "$type": "color",
-    "$value": "#362d12",
+    "$value": "#ffe57c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#362D12"
+      "$value": "#FFE57C"
     },
     "name": "basisColorHighlightBgActive",
     "attributes": {
@@ -4240,12 +4240,12 @@
   },
   {
     "$type": "color",
-    "$value": "#231d0d",
+    "$value": "#fff1bb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#231D0D"
+      "$value": "#FFF1BB"
     },
     "name": "basisColorHighlightBgDefault",
     "attributes": {
@@ -4258,12 +4258,12 @@
   },
   {
     "$type": "color",
-    "$value": "#141106",
+    "$value": "#fffcf2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#141106"
+      "$value": "#FFFCF2"
     },
     "name": "basisColorHighlightBgDocument",
     "attributes": {
@@ -4276,12 +4276,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2c2510",
+    "$value": "#ffeb9d",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2C2510"
+      "$value": "#FFEB9D"
     },
     "name": "basisColorHighlightBgHover",
     "attributes": {
@@ -4294,12 +4294,12 @@
   },
   {
     "$type": "color",
-    "$value": "#050401",
+    "$value": "#fff7d7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#050401"
+      "$value": "#FFF7D7"
     },
     "name": "basisColorHighlightBgSubtle",
     "attributes": {
@@ -4312,12 +4312,12 @@
   },
   {
     "$type": "color",
-    "$value": "#927a18",
+    "$value": "#867018",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#927A18"
+      "$value": "#867018"
     },
     "name": "basisColorHighlightBorderActive",
     "attributes": {
@@ -4330,12 +4330,12 @@
   },
   {
     "$type": "color",
-    "$value": "#7a6718",
+    "$value": "#9e8418",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#7A6718"
+      "$value": "#9E8418"
     },
     "name": "basisColorHighlightBorderDefault",
     "attributes": {
@@ -4348,12 +4348,12 @@
   },
   {
     "$type": "color",
-    "$value": "#867018",
+    "$value": "#927a18",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#867018"
+      "$value": "#927A18"
     },
     "name": "basisColorHighlightBorderHover",
     "attributes": {
@@ -4366,12 +4366,12 @@
   },
   {
     "$type": "color",
-    "$value": "#483d14",
+    "$value": "#e6c10c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#483D14"
+      "$value": "#E6C10C"
     },
     "name": "basisColorHighlightBorderSubtle",
     "attributes": {
@@ -4384,12 +4384,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f0c908",
+    "$value": "#483d14",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F0C908"
+      "$value": "#483D14"
     },
     "name": "basisColorHighlightColorActive",
     "attributes": {
@@ -4402,12 +4402,12 @@
   },
   {
     "$type": "color",
-    "$value": "#c9a913",
+    "$value": "#695817",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#C9A913"
+      "$value": "#695817"
     },
     "name": "basisColorHighlightColorDefault",
     "attributes": {
@@ -4420,12 +4420,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#201b0c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFF1BB"
+      "$value": "#201B0C"
     },
     "name": "basisColorHighlightColorDocument",
     "attributes": {
@@ -4438,12 +4438,12 @@
   },
   {
     "$type": "color",
-    "$value": "#dcb90f",
+    "$value": "#594a16",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#DCB90F"
+      "$value": "#594A16"
     },
     "name": "basisColorHighlightColorHover",
     "attributes": {
@@ -4456,12 +4456,12 @@
   },
   {
     "$type": "color",
-    "$value": "#a48917",
+    "$value": "#756218",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#A48917"
+      "$value": "#756218"
     },
     "name": "basisColorHighlightColorSubtle",
     "attributes": {
@@ -4474,12 +4474,12 @@
   },
   {
     "$type": "color",
-    "$value": "#806b18",
+    "$value": "#483d14",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#806B18"
+      "$value": "#483D14"
     },
     "name": "basisColorHighlightInverseBgActive",
     "attributes": {
@@ -4492,12 +4492,12 @@
   },
   {
     "$type": "color",
-    "$value": "#725f18",
+    "$value": "#695817",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#725F18"
+      "$value": "#695817"
     },
     "name": "basisColorHighlightInverseBgDefault",
     "attributes": {
@@ -4510,12 +4510,12 @@
   },
   {
     "$type": "color",
-    "$value": "#201b0c",
+    "$value": "#2a230f",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#201B0C"
+      "$value": "#2A230F"
     },
     "name": "basisColorHighlightInverseBgDocument",
     "attributes": {
@@ -4528,12 +4528,12 @@
   },
   {
     "$type": "color",
-    "$value": "#7a6718",
+    "$value": "#594a16",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#7A6718"
+      "$value": "#594A16"
     },
     "name": "basisColorHighlightInverseBgHover",
     "attributes": {
@@ -4546,12 +4546,12 @@
   },
   {
     "$type": "color",
-    "$value": "#211c00",
+    "$value": "#201b0c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#211C00"
+      "$value": "#201B0C"
     },
     "name": "basisColorHighlightInverseBgSubtle",
     "attributes": {
@@ -4636,12 +4636,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFF1BB"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorHighlightInverseColorActive",
     "attributes": {
@@ -4654,12 +4654,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFF1BB"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorHighlightInverseColorDefault",
     "attributes": {
@@ -4672,12 +4672,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFF1BB"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorHighlightInverseColorDocument",
     "attributes": {
@@ -4690,12 +4690,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFF1BB"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorHighlightInverseColorHover",
     "attributes": {
@@ -4726,12 +4726,12 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#002D62"
+      "$value": "#DDE6F1"
     },
     "name": "basisColorInfoBgActive",
     "attributes": {
@@ -4744,12 +4744,12 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#001D40"
+      "$value": "#ECF1F7"
     },
     "name": "basisColorInfoBgDefault",
     "attributes": {
@@ -4762,12 +4762,12 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#001126"
+      "$value": "#FBFCFD"
     },
     "name": "basisColorInfoBgDocument",
     "attributes": {
@@ -4780,12 +4780,12 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#002551"
+      "$value": "#E4ECF4"
     },
     "name": "basisColorInfoBgHover",
     "attributes": {
@@ -4798,12 +4798,12 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#000409"
+      "$value": "#F4F7FA"
     },
     "name": "basisColorInfoBgSubtle",
     "attributes": {
@@ -4816,12 +4816,12 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#4E7FB8"
+      "$value": "#3F74B2"
     },
     "name": "basisColorInfoBorderActive",
     "attributes": {
@@ -4834,12 +4834,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3169AD"
+      "$value": "#5C89BE"
     },
     "name": "basisColorInfoBorderDefault",
     "attributes": {
@@ -4852,12 +4852,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3F74B2"
+      "$value": "#4E7FB8"
     },
     "name": "basisColorInfoBorderHover",
     "attributes": {
@@ -4870,12 +4870,12 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#003B81"
+      "$value": "#B0C6DF"
     },
     "name": "basisColorInfoBorderSubtle",
     "attributes": {
@@ -4888,12 +4888,12 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#BBCEE4"
+      "$value": "#003B81"
     },
     "name": "basisColorInfoColorActive",
     "attributes": {
@@ -4906,12 +4906,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#8FAED2"
+      "$value": "#1B59A4"
     },
     "name": "basisColorInfoColorDefault",
     "attributes": {
@@ -4924,12 +4924,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#001B3C"
     },
     "name": "basisColorInfoColorDocument",
     "attributes": {
@@ -4942,12 +4942,12 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#A5BEDB"
+      "$value": "#04499A"
     },
     "name": "basisColorInfoColorHover",
     "attributes": {
@@ -4960,12 +4960,12 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#648EC1"
+      "$value": "#2964AA"
     },
     "name": "basisColorInfoColorSubtle",
     "attributes": {
@@ -4978,12 +4978,12 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#386FAF"
+      "$value": "#003B81"
     },
     "name": "basisColorInfoInverseBgActive",
     "attributes": {
@@ -4996,12 +4996,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2661A8"
+      "$value": "#1B59A4"
     },
     "name": "basisColorInfoInverseBgDefault",
     "attributes": {
@@ -5032,12 +5032,12 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#3169AD"
+      "$value": "#04499A"
     },
     "name": "basisColorInfoInverseBgHover",
     "attributes": {
@@ -5140,12 +5140,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorInfoInverseColorActive",
     "attributes": {
@@ -5158,12 +5158,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorInfoInverseColorDefault",
     "attributes": {
@@ -5176,12 +5176,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorInfoInverseColorDocument",
     "attributes": {
@@ -5194,12 +5194,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#ECF1F7"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorInfoInverseColorHover",
     "attributes": {
@@ -5230,12 +5230,12 @@
   },
   {
     "$type": "color",
-    "$value": "#650000",
+    "$value": "#fddede",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#650000"
+      "$value": "#FDDEDE"
     },
     "name": "basisColorNegativeBgActive",
     "attributes": {
@@ -5248,12 +5248,12 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#450000"
+      "$value": "#FEEDED"
     },
     "name": "basisColorNegativeBgDefault",
     "attributes": {
@@ -5266,12 +5266,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2d0000",
+    "$value": "#fffbfb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2D0000"
+      "$value": "#FFFBFB"
     },
     "name": "basisColorNegativeBgDocument",
     "attributes": {
@@ -5284,12 +5284,12 @@
   },
   {
     "$type": "color",
-    "$value": "#550000",
+    "$value": "#fde6e6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#550000"
+      "$value": "#FDE6E6"
     },
     "name": "basisColorNegativeBgHover",
     "attributes": {
@@ -5302,12 +5302,12 @@
   },
   {
     "$type": "color",
-    "$value": "#100000",
+    "$value": "#fef4f4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#100000"
+      "$value": "#FEF4F4"
     },
     "name": "basisColorNegativeBgSubtle",
     "attributes": {
@@ -5320,12 +5320,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ef2929",
+    "$value": "#e60000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#EF2929"
+      "$value": "#E60000"
     },
     "name": "basisColorNegativeBorderActive",
     "attributes": {
@@ -5338,12 +5338,12 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#D30000"
+      "$value": "#F14848"
     },
     "name": "basisColorNegativeBorderDefault",
     "attributes": {
@@ -5356,12 +5356,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e60000",
+    "$value": "#ef2929",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E60000"
+      "$value": "#EF2929"
     },
     "name": "basisColorNegativeBorderHover",
     "attributes": {
@@ -5374,12 +5374,12 @@
   },
   {
     "$type": "color",
-    "$value": "#820000",
+    "$value": "#f9b1b1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#820000"
+      "$value": "#F9B1B1"
     },
     "name": "basisColorNegativeBorderSubtle",
     "attributes": {
@@ -5392,12 +5392,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fabdbd",
+    "$value": "#930000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FABDBD"
+      "$value": "#930000"
     },
     "name": "basisColorNegativeColorActive",
     "attributes": {
@@ -5410,12 +5410,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F78D8D"
+      "$value": "#B70000"
     },
     "name": "basisColorNegativeColorDefault",
     "attributes": {
@@ -5428,12 +5428,12 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#410000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FEEDED"
+      "$value": "#410000"
     },
     "name": "basisColorNegativeColorDocument",
     "attributes": {
@@ -5446,12 +5446,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f8a6a6",
+    "$value": "#9c0000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F8A6A6"
+      "$value": "#9C0000"
     },
     "name": "basisColorNegativeColorHover",
     "attributes": {
@@ -5464,12 +5464,12 @@
   },
   {
     "$type": "color",
-    "$value": "#f25454",
+    "$value": "#ca0000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#F25454"
+      "$value": "#CA0000"
     },
     "name": "basisColorNegativeColorSubtle",
     "attributes": {
@@ -5482,12 +5482,12 @@
   },
   {
     "$type": "color",
-    "$value": "#dc0000",
+    "$value": "#820000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#DC0000"
+      "$value": "#820000"
     },
     "name": "basisColorNegativeInverseBgActive",
     "attributes": {
@@ -5500,12 +5500,12 @@
   },
   {
     "$type": "color",
-    "$value": "#c50000",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#C50000"
+      "$value": "#B70000"
     },
     "name": "basisColorNegativeInverseBgDefault",
     "attributes": {
@@ -5536,12 +5536,12 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#9c0000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#D30000"
+      "$value": "#9C0000"
     },
     "name": "basisColorNegativeInverseBgHover",
     "attributes": {
@@ -5644,12 +5644,12 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FEEDED"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorNegativeInverseColorActive",
     "attributes": {
@@ -5662,12 +5662,12 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FEEDED"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorNegativeInverseColorDefault",
     "attributes": {
@@ -5680,12 +5680,12 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FEEDED"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorNegativeInverseColorDocument",
     "attributes": {
@@ -5698,12 +5698,12 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FEEDED"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorNegativeInverseColorHover",
     "attributes": {
@@ -5734,12 +5734,12 @@
   },
   {
     "$type": "color",
-    "$value": "#003714",
+    "$value": "#ceedd9",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#003714"
+      "$value": "#CEEDD9"
     },
     "name": "basisColorPositiveBgActive",
     "attributes": {
@@ -5752,12 +5752,12 @@
   },
   {
     "$type": "color",
-    "$value": "#00230d",
+    "$value": "#e4f5ea",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#00230D"
+      "$value": "#E4F5EA"
     },
     "name": "basisColorPositiveBgDefault",
     "attributes": {
@@ -5770,12 +5770,12 @@
   },
   {
     "$type": "color",
-    "$value": "#001508",
+    "$value": "#fafdfb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#001508"
+      "$value": "#FAFDFB"
     },
     "name": "basisColorPositiveBgDocument",
     "attributes": {
@@ -5788,12 +5788,12 @@
   },
   {
     "$type": "color",
-    "$value": "#002d11",
+    "$value": "#d9f1e2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#002D11"
+      "$value": "#D9F1E2"
     },
     "name": "basisColorPositiveBgHover",
     "attributes": {
@@ -5806,12 +5806,12 @@
   },
   {
     "$type": "color",
-    "$value": "#000502",
+    "$value": "#eff9f3",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#000502"
+      "$value": "#EFF9F3"
     },
     "name": "basisColorPositiveBgSubtle",
     "attributes": {
@@ -5824,12 +5824,12 @@
   },
   {
     "$type": "color",
-    "$value": "#009036",
+    "$value": "#008432",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#009036"
+      "$value": "#008432"
     },
     "name": "basisColorPositiveBorderActive",
     "attributes": {
@@ -5842,12 +5842,12 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#00792D"
+      "$value": "#009B3A"
     },
     "name": "basisColorPositiveBorderDefault",
     "attributes": {
@@ -5860,12 +5860,12 @@
   },
   {
     "$type": "color",
-    "$value": "#008432",
+    "$value": "#009036",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#008432"
+      "$value": "#009036"
     },
     "name": "basisColorPositiveBorderHover",
     "attributes": {
@@ -5878,12 +5878,12 @@
   },
   {
     "$type": "color",
-    "$value": "#00481b",
+    "$value": "#8ad3a6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#00481B"
+      "$value": "#8AD3A6"
     },
     "name": "basisColorPositiveBorderSubtle",
     "attributes": {
@@ -5896,12 +5896,12 @@
   },
   {
     "$type": "color",
-    "$value": "#9bdab3",
+    "$value": "#00481b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#9BDAB3"
+      "$value": "#00481B"
     },
     "name": "basisColorPositiveColorActive",
     "attributes": {
@@ -5914,12 +5914,12 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#54BF7C"
+      "$value": "#006827"
     },
     "name": "basisColorPositiveColorDefault",
     "attributes": {
@@ -5932,12 +5932,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#00210c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E4F5EA"
+      "$value": "#00210C"
     },
     "name": "basisColorPositiveColorDocument",
     "attributes": {
@@ -5950,12 +5950,12 @@
   },
   {
     "$type": "color",
-    "$value": "#78cd98",
+    "$value": "#005821",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#78CD98"
+      "$value": "#005821"
     },
     "name": "basisColorPositiveColorHover",
     "attributes": {
@@ -5968,12 +5968,12 @@
   },
   {
     "$type": "color",
-    "$value": "#03a13f",
+    "$value": "#00732b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#03A13F"
+      "$value": "#00732B"
     },
     "name": "basisColorPositiveColorSubtle",
     "attributes": {
@@ -5986,12 +5986,12 @@
   },
   {
     "$type": "color",
-    "$value": "#007f2f",
+    "$value": "#00481b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#007F2F"
+      "$value": "#00481B"
     },
     "name": "basisColorPositiveInverseBgActive",
     "attributes": {
@@ -6004,12 +6004,12 @@
   },
   {
     "$type": "color",
-    "$value": "#00702a",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#00702A"
+      "$value": "#006827"
     },
     "name": "basisColorPositiveInverseBgDefault",
     "attributes": {
@@ -6040,12 +6040,12 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#005821",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#00792D"
+      "$value": "#005821"
     },
     "name": "basisColorPositiveInverseBgHover",
     "attributes": {
@@ -6148,12 +6148,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E4F5EA"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorPositiveInverseColorActive",
     "attributes": {
@@ -6166,12 +6166,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E4F5EA"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorPositiveInverseColorDefault",
     "attributes": {
@@ -6184,12 +6184,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E4F5EA"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorPositiveInverseColorDocument",
     "attributes": {
@@ -6202,12 +6202,12 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#E4F5EA"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorPositiveInverseColorHover",
     "attributes": {
@@ -6238,7 +6238,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6256,7 +6256,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6274,7 +6274,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001126",
+    "$value": "#fbfcfd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6292,7 +6292,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6310,7 +6310,7 @@
   },
   {
     "$type": "color",
-    "$value": "#000409",
+    "$value": "#f4f7fa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6328,7 +6328,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6346,7 +6346,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6364,7 +6364,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6382,7 +6382,7 @@
   },
   {
     "$type": "color",
-    "$value": "#003b81",
+    "$value": "#b0c6df",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6400,7 +6400,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6418,7 +6418,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6436,7 +6436,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6454,7 +6454,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6472,7 +6472,7 @@
   },
   {
     "$type": "color",
-    "$value": "#648ec1",
+    "$value": "#2964aa",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6490,7 +6490,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6508,7 +6508,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6544,7 +6544,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6652,7 +6652,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6670,7 +6670,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6688,7 +6688,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6706,7 +6706,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -6759,12 +6759,12 @@
   },
   {
     "$type": "color",
-    "$value": "#432810",
+    "$value": "#ffe0c2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#432810"
+      "$value": "#FFE0C2"
     },
     "name": "basisColorWarningBgActive",
     "attributes": {
@@ -6777,12 +6777,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2a1a0b",
+    "$value": "#ffeedd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#2A1A0B"
+      "$value": "#FFEEDD"
     },
     "name": "basisColorWarningBgDefault",
     "attributes": {
@@ -6795,12 +6795,12 @@
   },
   {
     "$type": "color",
-    "$value": "#190f05",
+    "$value": "#fffcf8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#190F05"
+      "$value": "#FFFCF8"
     },
     "name": "basisColorWarningBgDocument",
     "attributes": {
@@ -6813,12 +6813,12 @@
   },
   {
     "$type": "color",
-    "$value": "#36210e",
+    "$value": "#ffe7d0",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#36210E"
+      "$value": "#FFE7D0"
     },
     "name": "basisColorWarningBgHover",
     "attributes": {
@@ -6831,12 +6831,12 @@
   },
   {
     "$type": "color",
-    "$value": "#060301",
+    "$value": "#fff5eb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#060301"
+      "$value": "#FFF5EB"
     },
     "name": "basisColorWarningBgSubtle",
     "attributes": {
@@ -6849,12 +6849,12 @@
   },
   {
     "$type": "color",
-    "$value": "#b86810",
+    "$value": "#a96011",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#B86810"
+      "$value": "#A96011"
     },
     "name": "basisColorWarningBorderActive",
     "attributes": {
@@ -6867,12 +6867,12 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#9A5812"
+      "$value": "#C8700E"
     },
     "name": "basisColorWarningBorderDefault",
     "attributes": {
@@ -6885,12 +6885,12 @@
   },
   {
     "$type": "color",
-    "$value": "#a96011",
+    "$value": "#b86810",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#A96011"
+      "$value": "#B86810"
     },
     "name": "basisColorWarningBorderHover",
     "attributes": {
@@ -6903,12 +6903,12 @@
   },
   {
     "$type": "color",
-    "$value": "#5a3511",
+    "$value": "#ffb46b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#5A3511"
+      "$value": "#FFB46B"
     },
     "name": "basisColorWarningBorderSubtle",
     "attributes": {
@@ -6921,12 +6921,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffbf82",
+    "$value": "#5a3511",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFBF82"
+      "$value": "#5A3511"
     },
     "name": "basisColorWarningColorActive",
     "attributes": {
@@ -6939,12 +6939,12 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FC9016"
+      "$value": "#844C12"
     },
     "name": "basisColorWarningColorDefault",
     "attributes": {
@@ -6957,12 +6957,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#27190a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFEEDD"
+      "$value": "#27190A"
     },
     "name": "basisColorWarningColorDocument",
     "attributes": {
@@ -6975,12 +6975,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffa853",
+    "$value": "#6f4012",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFA853"
+      "$value": "#6F4012"
     },
     "name": "basisColorWarningColorHover",
     "attributes": {
@@ -6993,12 +6993,12 @@
   },
   {
     "$type": "color",
-    "$value": "#cf750c",
+    "$value": "#935412",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#CF750C"
+      "$value": "#935412"
     },
     "name": "basisColorWarningColorSubtle",
     "attributes": {
@@ -7011,12 +7011,12 @@
   },
   {
     "$type": "color",
-    "$value": "#a15c11",
+    "$value": "#5a3511",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#A15C11"
+      "$value": "#5A3511"
     },
     "name": "basisColorWarningInverseBgActive",
     "attributes": {
@@ -7029,12 +7029,12 @@
   },
   {
     "$type": "color",
-    "$value": "#8f5212",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#8F5212"
+      "$value": "#844C12"
     },
     "name": "basisColorWarningInverseBgDefault",
     "attributes": {
@@ -7065,12 +7065,12 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#6f4012",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#9A5812"
+      "$value": "#6F4012"
     },
     "name": "basisColorWarningInverseBgHover",
     "attributes": {
@@ -7173,12 +7173,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFEEDD"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorWarningInverseColorActive",
     "attributes": {
@@ -7191,12 +7191,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFEEDD"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorWarningInverseColorDefault",
     "attributes": {
@@ -7209,12 +7209,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFEEDD"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorWarningInverseColorDocument",
     "attributes": {
@@ -7227,12 +7227,12 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "#FFEEDD"
+      "$value": "#FFFFFF"
     },
     "name": "basisColorWarningInverseColorHover",
     "attributes": {
@@ -7383,7 +7383,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7400,7 +7400,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7418,7 +7418,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7436,7 +7436,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7472,7 +7472,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7490,7 +7490,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7507,7 +7507,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7558,7 +7558,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7575,7 +7575,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7593,7 +7593,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7611,7 +7611,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7629,7 +7629,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7647,7 +7647,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7665,7 +7665,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7701,7 +7701,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7800,7 +7800,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7818,7 +7818,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7836,7 +7836,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7872,7 +7872,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7890,7 +7890,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7908,7 +7908,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -7944,7 +7944,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -8074,7 +8074,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -8092,7 +8092,7 @@
   },
   {
     "$type": "color",
-    "$value": "#040404",
+    "$value": "#f6f6f6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -8128,7 +8128,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -8146,7 +8146,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -11729,7 +11729,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -11780,7 +11780,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -11826,7 +11826,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -11890,7 +11890,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12173,7 +12173,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12317,7 +12317,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12408,7 +12408,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12730,7 +12730,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12787,7 +12787,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12899,7 +12899,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -12955,7 +12955,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13006,7 +13006,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13060,7 +13060,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13096,7 +13096,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13305,7 +13305,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13369,7 +13369,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13388,7 +13388,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13406,7 +13406,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13537,7 +13537,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13556,7 +13556,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13575,7 +13575,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13594,7 +13594,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13630,7 +13630,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13649,7 +13649,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13667,7 +13667,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13703,7 +13703,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00702a",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13760,7 +13760,7 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13779,7 +13779,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13854,7 +13854,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13929,7 +13929,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8f5212",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13967,7 +13967,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -13986,7 +13986,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14032,7 +14032,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14134,7 +14134,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14152,7 +14152,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14171,7 +14171,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14190,7 +14190,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14209,7 +14209,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14340,7 +14340,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14388,7 +14388,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14424,7 +14424,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14472,7 +14472,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14632,7 +14632,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00702a",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14668,7 +14668,7 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14686,7 +14686,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14705,7 +14705,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14724,7 +14724,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14743,7 +14743,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14780,7 +14780,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14835,7 +14835,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14853,7 +14853,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14908,7 +14908,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14926,7 +14926,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14945,7 +14945,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14963,7 +14963,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14981,7 +14981,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -14999,7 +14999,7 @@
   },
   {
     "$type": "color",
-    "$value": "#c50000",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15035,7 +15035,7 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15179,7 +15179,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15197,7 +15197,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15215,7 +15215,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15267,7 +15267,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8f5212",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15303,7 +15303,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15321,7 +15321,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8f5212",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15359,7 +15359,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15377,7 +15377,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15395,7 +15395,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15430,7 +15430,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15481,7 +15481,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15596,7 +15596,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15614,7 +15614,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15632,7 +15632,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15797,7 +15797,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15814,7 +15814,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15848,7 +15848,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -15980,7 +15980,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16153,7 +16153,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16221,7 +16221,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16414,7 +16414,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16584,7 +16584,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16754,7 +16754,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -16924,7 +16924,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17094,7 +17094,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17264,7 +17264,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17434,7 +17434,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17452,7 +17452,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "$description": "[code-only]",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
@@ -17491,7 +17491,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17529,7 +17529,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17585,7 +17585,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17657,7 +17657,7 @@
   },
   {
     "$type": "color",
-    "$value": "#725f18",
+    "$value": "#695817",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17674,7 +17674,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17691,7 +17691,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17759,7 +17759,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -17925,7 +17925,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -18518,7 +18518,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -18586,7 +18586,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -18780,7 +18780,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -18996,7 +18996,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19034,7 +19034,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19127,7 +19127,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19202,7 +19202,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19238,7 +19238,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19256,7 +19256,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19290,7 +19290,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19307,7 +19307,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19326,7 +19326,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19364,7 +19364,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19383,7 +19383,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19402,7 +19402,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19421,7 +19421,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19495,7 +19495,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19625,7 +19625,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19644,7 +19644,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19662,7 +19662,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19766,7 +19766,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19785,7 +19785,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19803,7 +19803,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19821,7 +19821,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19857,7 +19857,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19914,7 +19914,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19933,7 +19933,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19952,7 +19952,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19971,7 +19971,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -19990,7 +19990,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20009,7 +20009,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20047,7 +20047,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20066,7 +20066,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20123,7 +20123,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20193,7 +20193,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20250,7 +20250,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20269,7 +20269,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20288,7 +20288,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20307,7 +20307,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20326,7 +20326,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20345,7 +20345,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20383,7 +20383,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20402,7 +20402,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20459,7 +20459,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20497,7 +20497,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20514,7 +20514,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20565,7 +20565,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 16px 48px 0 #111111",
+    "$value": "0 16px 48px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -20592,7 +20592,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20681,7 +20681,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20807,7 +20807,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -20861,7 +20861,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21137,7 +21137,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21279,7 +21279,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21323,7 +21323,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21340,7 +21340,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21685,7 +21685,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -21721,7 +21721,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22259,7 +22259,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22276,7 +22276,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22327,7 +22327,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 16px 48px 0 #111111",
+    "$value": "0 16px 48px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -22354,7 +22354,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22569,7 +22569,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22623,7 +22623,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22830,7 +22830,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -22876,7 +22876,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23113,7 +23113,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23223,7 +23223,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23241,7 +23241,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23279,7 +23279,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23469,7 +23469,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23671,7 +23671,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23781,7 +23781,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -23855,7 +23855,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24016,7 +24016,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24273,7 +24273,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24425,7 +24425,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24500,7 +24500,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24652,7 +24652,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24709,7 +24709,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24861,7 +24861,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24880,7 +24880,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24899,7 +24899,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24937,7 +24937,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24956,7 +24956,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -24975,7 +24975,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25013,7 +25013,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25032,7 +25032,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25051,7 +25051,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25089,7 +25089,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25127,7 +25127,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25146,7 +25146,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25184,7 +25184,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25277,7 +25277,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25429,7 +25429,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25466,7 +25466,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25485,7 +25485,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25504,7 +25504,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25541,7 +25541,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25596,7 +25596,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25615,7 +25615,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25634,7 +25634,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25765,7 +25765,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25820,7 +25820,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25875,7 +25875,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00702a",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25913,7 +25913,7 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25932,12 +25932,12 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#242424",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
       "$type": "color",
-      "$value": "{basis.color.info-inverse.bg-default}"
+      "$value": "{basis.color.default-inverse.bg-document}"
     },
     "name": "todoProgressListStepMarkerCurrentBackgroundColor",
     "attributes": {
@@ -25970,7 +25970,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -25989,7 +25989,7 @@
   },
   {
     "$type": "color",
-    "$value": "#c50000",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26027,7 +26027,7 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26235,7 +26235,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26254,7 +26254,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26273,7 +26273,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26310,7 +26310,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8f5212",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26348,7 +26348,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26421,7 +26421,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26440,7 +26440,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26459,7 +26459,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26611,7 +26611,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26679,7 +26679,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26777,7 +26777,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26813,7 +26813,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26858,7 +26858,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26894,7 +26894,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26946,7 +26946,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00230d",
+    "$value": "#e4f5ea",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -26982,7 +26982,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27000,7 +27000,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2a1a0b",
+    "$value": "#ffeedd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27036,7 +27036,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27054,7 +27054,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27072,7 +27072,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27200,7 +27200,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 2px 6px 0 #111111",
+    "$value": "0 2px 6px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -27247,7 +27247,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 2px 6px 0 #111111",
+    "$value": "0 2px 6px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -27422,7 +27422,7 @@
   },
   {
     "$type": "color",
-    "$value": "#007f2f",
+    "$value": "#00481b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27441,7 +27441,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00702a",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27498,7 +27498,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#005821",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27628,7 +27628,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 8px 16px 0 #111111",
+    "$value": "0 8px 16px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -27656,7 +27656,7 @@
   },
   {
     "$type": "shadow",
-    "$value": "0 8px 16px 0 #111111",
+    "$value": "0 8px 16px 0 #595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "$extensions": {
@@ -27684,7 +27684,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27748,7 +27748,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27846,7 +27846,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27980,7 +27980,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -27998,7 +27998,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28016,7 +28016,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28034,7 +28034,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28052,7 +28052,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28070,7 +28070,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28173,7 +28173,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28211,7 +28211,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28230,7 +28230,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28302,7 +28302,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28414,7 +28414,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28452,7 +28452,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28725,7 +28725,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28761,7 +28761,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28820,7 +28820,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28837,7 +28837,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28888,7 +28888,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28940,7 +28940,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28958,7 +28958,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28976,7 +28976,7 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#410000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -28994,7 +28994,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29012,7 +29012,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29031,7 +29031,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29068,7 +29068,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29105,7 +29105,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29124,7 +29124,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29142,7 +29142,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29160,7 +29160,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29196,7 +29196,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00230d",
+    "$value": "#e4f5ea",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29214,7 +29214,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29232,7 +29232,7 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#00210c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29318,7 +29318,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2a1a0b",
+    "$value": "#ffeedd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29336,7 +29336,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29354,7 +29354,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#27190a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29406,7 +29406,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29499,7 +29499,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29630,7 +29630,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29647,7 +29647,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29832,7 +29832,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -29849,7 +29849,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30119,7 +30119,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30157,7 +30157,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30204,7 +30204,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30280,7 +30280,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30353,7 +30353,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30390,7 +30390,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30408,7 +30408,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30426,7 +30426,7 @@
   },
   {
     "$type": "color",
-    "$value": "#cccccc",
+    "$value": "#3e3e3e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30461,7 +30461,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30512,7 +30512,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30546,7 +30546,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30564,7 +30564,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30582,7 +30582,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30820,7 +30820,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30838,7 +30838,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -30856,7 +30856,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbbbbb",
+    "$value": "#4b4b4b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31021,7 +31021,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31059,7 +31059,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31078,7 +31078,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31114,7 +31114,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31132,7 +31132,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31151,7 +31151,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31170,7 +31170,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31302,7 +31302,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31340,7 +31340,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31387,7 +31387,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31406,7 +31406,7 @@
   },
   {
     "$type": "color",
-    "$value": "#4e7fb8",
+    "$value": "#3f74b2",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31425,7 +31425,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31462,7 +31462,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31480,7 +31480,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31498,7 +31498,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31517,7 +31517,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31536,7 +31536,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31668,7 +31668,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31687,7 +31687,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3f74b2",
+    "$value": "#4e7fb8",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31706,7 +31706,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31753,7 +31753,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002d62",
+    "$value": "#dde6f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31791,7 +31791,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31846,7 +31846,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -31902,7 +31902,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32034,7 +32034,7 @@
   },
   {
     "$type": "color",
-    "$value": "#002551",
+    "$value": "#e4ecf4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32072,7 +32072,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32119,7 +32119,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32137,7 +32137,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32173,7 +32173,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32190,7 +32190,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32241,7 +32241,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32295,7 +32295,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32313,7 +32313,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32331,7 +32331,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32349,7 +32349,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32367,7 +32367,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32403,7 +32403,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32421,7 +32421,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32475,7 +32475,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32529,7 +32529,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32547,7 +32547,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32565,7 +32565,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32618,7 +32618,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32635,7 +32635,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32652,7 +32652,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -32818,7 +32818,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33054,7 +33054,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33122,7 +33122,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33333,7 +33333,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33350,7 +33350,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33401,7 +33401,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33554,7 +33554,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33628,7 +33628,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33743,7 +33743,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33936,7 +33936,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -33990,7 +33990,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34064,7 +34064,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34081,7 +34081,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34153,7 +34153,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34199,7 +34199,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34324,7 +34324,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34449,7 +34449,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34574,7 +34574,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34699,7 +34699,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34824,7 +34824,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34966,7 +34966,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -34984,7 +34984,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35092,7 +35092,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35299,7 +35299,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "$description": "[code-only]",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
@@ -35356,7 +35356,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35374,7 +35374,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35391,7 +35391,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35442,7 +35442,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35459,7 +35459,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35477,7 +35477,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35495,7 +35495,7 @@
   },
   {
     "$type": "color",
-    "$value": "#386faf",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35514,7 +35514,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35533,7 +35533,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35552,7 +35552,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35571,7 +35571,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35590,7 +35590,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35681,7 +35681,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2661a8",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35700,7 +35700,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35719,7 +35719,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35738,7 +35738,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35757,7 +35757,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35776,7 +35776,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35931,7 +35931,7 @@
   },
   {
     "$type": "color",
-    "$value": "#725f18",
+    "$value": "#695817",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35948,7 +35948,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fff1bb",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35965,7 +35965,7 @@
   },
   {
     "$type": "color",
-    "$value": "#040404",
+    "$value": "#f6f6f6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -35982,7 +35982,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36089,7 +36089,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36157,7 +36157,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ababab",
+    "$value": "#595959",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36448,7 +36448,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36465,7 +36465,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36554,7 +36554,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36571,7 +36571,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36677,7 +36677,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36694,7 +36694,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36926,7 +36926,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36944,7 +36944,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -36982,7 +36982,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37029,7 +37029,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37067,7 +37067,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37248,7 +37248,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37332,7 +37332,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37370,7 +37370,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37497,7 +37497,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37595,7 +37595,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37724,7 +37724,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37826,7 +37826,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37951,7 +37951,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2e2e2e",
+    "$value": "#e5e5e5",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -37969,7 +37969,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38005,7 +38005,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38023,7 +38023,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38040,7 +38040,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38074,7 +38074,7 @@
   },
   {
     "$type": "color",
-    "$value": "#bbcee4",
+    "$value": "#003b81",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38131,7 +38131,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38150,7 +38150,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38204,7 +38204,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38222,7 +38222,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38241,7 +38241,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38279,7 +38279,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38298,7 +38298,7 @@
   },
   {
     "$type": "color",
-    "$value": "#a5bedb",
+    "$value": "#04499a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38355,7 +38355,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38374,7 +38374,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38391,7 +38391,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38409,7 +38409,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38427,7 +38427,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38445,7 +38445,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38463,7 +38463,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38499,7 +38499,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38517,7 +38517,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38535,7 +38535,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38571,7 +38571,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38607,7 +38607,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38625,7 +38625,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38661,7 +38661,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38696,7 +38696,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38713,7 +38713,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38757,7 +38757,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38791,7 +38791,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38842,7 +38842,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38859,7 +38859,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38877,7 +38877,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38895,7 +38895,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38913,7 +38913,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38931,7 +38931,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -38949,7 +38949,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39048,7 +39048,7 @@
   },
   {
     "$type": "color",
-    "$value": "#262626",
+    "$value": "#ebebeb",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39066,7 +39066,7 @@
   },
   {
     "$type": "color",
-    "$value": "#727272",
+    "$value": "#7c7c7c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39084,7 +39084,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39102,7 +39102,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39138,7 +39138,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39320,7 +39320,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39354,7 +39354,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#ffffff",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39544,7 +39544,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39561,7 +39561,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39612,7 +39612,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39629,7 +39629,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39647,7 +39647,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39683,7 +39683,7 @@
   },
   {
     "$type": "color",
-    "$value": "#feeded",
+    "$value": "#410000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39701,7 +39701,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f78d8d",
+    "$value": "#b70000",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39720,7 +39720,7 @@
   },
   {
     "$type": "color",
-    "$value": "#001d40",
+    "$value": "#ecf1f7",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39738,7 +39738,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3169ad",
+    "$value": "#5c89be",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39774,7 +39774,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ecf1f7",
+    "$value": "#001b3c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39792,7 +39792,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8faed2",
+    "$value": "#1b59a4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39849,7 +39849,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00230d",
+    "$value": "#e4f5ea",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39867,7 +39867,7 @@
   },
   {
     "$type": "color",
-    "$value": "#00792d",
+    "$value": "#009b3a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39903,7 +39903,7 @@
   },
   {
     "$type": "color",
-    "$value": "#e4f5ea",
+    "$value": "#00210c",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -39921,7 +39921,7 @@
   },
   {
     "$type": "color",
-    "$value": "#54bf7c",
+    "$value": "#006827",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40008,7 +40008,7 @@
   },
   {
     "$type": "color",
-    "$value": "#2a1a0b",
+    "$value": "#ffeedd",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40026,7 +40026,7 @@
   },
   {
     "$type": "color",
-    "$value": "#9a5812",
+    "$value": "#c8700e",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40062,7 +40062,7 @@
   },
   {
     "$type": "color",
-    "$value": "#ffeedd",
+    "$value": "#27190a",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40080,7 +40080,7 @@
   },
   {
     "$type": "color",
-    "$value": "#fc9016",
+    "$value": "#844c12",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40099,7 +40099,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40391,7 +40391,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40427,7 +40427,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40491,7 +40491,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40536,7 +40536,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40572,7 +40572,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40606,7 +40606,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40657,7 +40657,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40674,7 +40674,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40692,7 +40692,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40710,7 +40710,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40728,7 +40728,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40746,7 +40746,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40764,7 +40764,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40863,7 +40863,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40899,7 +40899,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -40935,7 +40935,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41082,7 +41082,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41100,7 +41100,7 @@
   },
   {
     "$type": "color",
-    "$value": "#040404",
+    "$value": "#f6f6f6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41136,7 +41136,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41154,7 +41154,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41188,7 +41188,7 @@
   },
   {
     "$type": "color",
-    "$value": "#686868",
+    "$value": "#868686",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41239,7 +41239,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41256,7 +41256,7 @@
   },
   {
     "$type": "color",
-    "$value": "#1d1d1d",
+    "$value": "#f1f1f1",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41274,7 +41274,7 @@
   },
   {
     "$type": "color",
-    "$value": "#3e3e3e",
+    "$value": "#c4c4c4",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41292,7 +41292,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41310,7 +41310,7 @@
   },
   {
     "$type": "color",
-    "$value": "#111111",
+    "$value": "#fcfcfc",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41328,7 +41328,7 @@
   },
   {
     "$type": "color",
-    "$value": "#7c7c7c",
+    "$value": "#727272",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41346,7 +41346,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41445,7 +41445,7 @@
   },
   {
     "$type": "color",
-    "$value": "#450000",
+    "$value": "#feeded",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41481,7 +41481,7 @@
   },
   {
     "$type": "color",
-    "$value": "#d30000",
+    "$value": "#f14848",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41517,7 +41517,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41664,7 +41664,7 @@
   },
   {
     "$type": "color",
-    "$value": "#8b8b8b",
+    "$value": "#636363",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41682,7 +41682,7 @@
   },
   {
     "$type": "color",
-    "$value": "#040404",
+    "$value": "#f6f6f6",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41718,7 +41718,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
@@ -41844,7 +41844,7 @@
   },
   {
     "$type": "color",
-    "$value": "#f1f1f1",
+    "$value": "#1b1b1b",
     "filePath": "figma/start.tokens.json",
     "isSource": true,
     "original": {
