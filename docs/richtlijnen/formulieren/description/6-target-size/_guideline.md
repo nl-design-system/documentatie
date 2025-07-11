@@ -10,4 +10,4 @@ Een minimale grootte van het aanklikbare gedeelte is nodig om te voldoen aan het
 
 ![Formfield met textbox van 48 pixels hoog, en formfield met radiobuttons van 24 pixels hoog.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_description_size.png)
 
-Voor het 'Voorbeeld thema' maken we gebruik van een grootte van 24x24 bij checkboxes en radio buttons. En houden we een grootte van 48x48px aan voor componenten zoals buttons en text inputs. Dit sluit mooi aan bij de spacing scale van het voorbeeld thema.
+Voor het 'Start-thema' maken we gebruik van een grootte van 24x24 bij checkboxes en radio buttons. En houden we een grootte van 48x48px aan voor componenten zoals buttons en text inputs. Dit sluit mooi aan bij de spacing scale van het Start-thema.
