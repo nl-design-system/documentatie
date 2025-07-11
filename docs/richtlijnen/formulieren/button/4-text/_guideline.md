@@ -17,11 +17,12 @@ Buttons kunnen tekst bevatten, een icoontje en een combinatie van beide. Uit geb
 
 > Het begrijpen van een icoon is gebaseerd op eerdere ervaringen. Omdat de meeste iconen geen vaste betekenis hebben, zijn tekstlabels nodig om de betekenis eenduidig over te brengen.
 
-## Gebruikersonderzoek
+## Gerelateerde patronen en templates:
 
-Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek.
-Lees hiervoor de inzichten uit ons gebruikersonderzoek: ['Volgende stap' actie binnen een meerstappenformulier](https://www.nldesignsystem.nl/voorbeelden/patronen/formulieren/volgende-stap).
-En lees de [disussie over het Meerstappenformulier](https://github.com/orgs/nl-design-system/discussions/364) op GitHub.
+Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek. Inzichten met betrekking tot deze richtlijn vind je terug in de volgende patronen en templates:
+
+- [GitHub Discussion voor 'Volgende stap' actie in een meerstappenformulier](https://github.com/orgs/nl-design-system/discussions/377)
+- [GitHub Discussion voor de Controlepagina in een meerstappenformulier](https://github.com/orgs/nl-design-system/discussions/372)
 
 ## Gerelateerde links:
 
