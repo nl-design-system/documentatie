@@ -125,6 +125,15 @@
   --utrecht-form-label-font-weight: 400;
 }
 
+.utrecht-html fieldset.site-code-demo {
+  border: solid 1px #666;
+  padding: 1em;
+}
+
+.utrecht-html fieldset.site-code-demo legend {
+  font-size: 1.4em;
+}
+
 .footer {
   padding-block: 16px;
   width: 100%;
