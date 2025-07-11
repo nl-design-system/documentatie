@@ -4,4 +4,4 @@ Om ruimte consistent toe te passen is het verstandig om te werken met een vaste 
 
 ![13 losse blokjes die steeds breeder worden. Onder elk blok staat een getal](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_ruimte_spacing-scale.png)
 
-Ook bij het Voorbeeld thema maken we gebruik van een spacing scale. Sterker nog, we hebben meerdere spacing scales. Één voor elk [spacing concept](/richtlijnen/stijl/ruimte/spacing-concepten).
+Ook bij het Start-thema maken we gebruik van een spacing scale. Sterker nog, we hebben meerdere spacing scales. Één voor elk [spacing concept](/richtlijnen/stijl/ruimte/spacing-concepten).
