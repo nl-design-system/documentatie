@@ -23,16 +23,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 TRANSP:OPAQUE
-DTEND;TZID=Europe/Amsterdam:20250612T140000
+DTEND;TZID=Europe/Amsterdam:20250612T150000
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
-UID:d30255ae-d53e-4fb3-866c-d2f7a77bbefe
+UID:bca5fad1-e9ee-43aa-94a3-eb668abe0bd0
 DTSTAMP:20240610T120000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C01DAT4TRPF
 DESCRIPTION:Wees welkom bij de 'Overheidsbrede Portalen Community Afstemming'. Deze meeting vindt plaats in het #nl-design-system-developers kanaal op de Code for NL Slack. \n\nMeer informatie over Overheidsbrede Portalen Community: https://nldesignsystem.nl/community/community-sprints/overheidsbrede-portalen-community/ \n\nZit je nog niet op de Code for NL Slack? Meld je hier aan: https://praatmee.codefor.nl/
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
 SUMMARY:Overheidsbrede Portalen Community Afstemming - NL Design System
-DTSTART;TZID=Europe/Amsterdam:20250612T130000
+DTSTART;TZID=Europe/Amsterdam:20250612T140000
 LAST-MODIFIED:20240610T120000Z
 CREATED:20240610T120000Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
