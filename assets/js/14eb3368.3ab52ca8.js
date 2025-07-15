@@ -5,33 +5,33 @@
   92139: (e, s, n) => {
    n.d(s, { Z: () => a });
    n(75271);
-   var t = n(40217),
-    i = n(49687),
+   var i = n(40217),
+    t = n(49687),
     r = n(52676);
    function a(e) {
     const { previous: s, next: n } = e;
-    return (0, r.jsxs)('nav', { className: 'pagination-nav docusaurus-mt-lg', 'aria-label': (0, t.I)({ id: 'theme.docs.paginator.navAriaLabel', message: 'Docs pages', description: 'The ARIA label for the docs pagination' }), children: [s && (0, r.jsx)(i.Z, { ...s, subLabel: (0, r.jsx)(t.Z, { id: 'theme.docs.paginator.previous', description: 'The label used to navigate to the previous doc', children: 'Previous' }) }), n && (0, r.jsx)(i.Z, { ...n, subLabel: (0, r.jsx)(t.Z, { id: 'theme.docs.paginator.next', description: 'The label used to navigate to the next doc', children: 'Next' }), isNext: !0 })] });
+    return (0, r.jsxs)('nav', { className: 'pagination-nav docusaurus-mt-lg', 'aria-label': (0, i.I)({ id: 'theme.docs.paginator.navAriaLabel', message: 'Docs pages', description: 'The ARIA label for the docs pagination' }), children: [s && (0, r.jsx)(t.Z, { ...s, subLabel: (0, r.jsx)(i.Z, { id: 'theme.docs.paginator.previous', description: 'The label used to navigate to the previous doc', children: 'Previous' }) }), n && (0, r.jsx)(t.Z, { ...n, subLabel: (0, r.jsx)(i.Z, { id: 'theme.docs.paginator.next', description: 'The label used to navigate to the next doc', children: 'Next' }), isNext: !0 })] });
    }
   },
   46663: (e, s, n) => {
    n.d(s, { Z: () => o });
    n(75271);
-   var t = n(4814),
-    i = n(40217),
+   var i = n(4814),
+    t = n(40217),
     r = n(65697),
     a = n(88758),
     l = n(52676);
    function o(e) {
     let { className: s } = e;
     const n = (0, a.E)();
-    return n.badge ? (0, l.jsx)('span', { className: (0, t.Z)(s, r.k.docs.docVersionBadge, 'badge badge--secondary'), children: (0, l.jsx)(i.Z, { id: 'theme.docs.versionBadge.label', values: { versionLabel: n.label }, children: 'Version: {versionLabel}' }) }) : null;
+    return n.badge ? (0, l.jsx)('span', { className: (0, i.Z)(s, r.k.docs.docVersionBadge, 'badge badge--secondary'), children: (0, l.jsx)(t.Z, { id: 'theme.docs.versionBadge.label', values: { versionLabel: n.label }, children: 'Version: {versionLabel}' }) }) : null;
    }
   },
   35353: (e, s, n) => {
    n.d(s, { Z: () => j });
    n(75271);
-   var t = n(4814),
-    i = n(94699),
+   var i = n(4814),
+    t = n(94699),
     r = n(83033),
     a = n(40217),
     l = n(76694),
@@ -54,20 +54,20 @@
     return (0, h.jsx)(s, { ...e });
    }
    function x(e) {
-    let { versionLabel: s, to: n, onClick: t } = e;
-    return (0, h.jsx)(a.Z, { id: 'theme.docs.versions.latestVersionSuggestionLabel', description: 'The label used to tell the user to check the latest version', values: { versionLabel: s, latestVersionLink: (0, h.jsx)('b', { children: (0, h.jsx)(r.Z, { to: n, onClick: t, children: (0, h.jsx)(a.Z, { id: 'theme.docs.versions.latestVersionLinkLabel', description: 'The label used for the latest version suggestion link label', children: 'latest version' }) }) }) }, children: 'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).' });
+    let { versionLabel: s, to: n, onClick: i } = e;
+    return (0, h.jsx)(a.Z, { id: 'theme.docs.versions.latestVersionSuggestionLabel', description: 'The label used to tell the user to check the latest version', values: { versionLabel: s, latestVersionLink: (0, h.jsx)('b', { children: (0, h.jsx)(r.Z, { to: n, onClick: i, children: (0, h.jsx)(a.Z, { id: 'theme.docs.versions.latestVersionLinkLabel', description: 'The label used for the latest version suggestion link label', children: 'latest version' }) }) }) }, children: 'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).' });
    }
    function b(e) {
     let { className: s, versionMetadata: n } = e;
     const {
       siteConfig: { title: r },
-     } = (0, i.Z)(),
+     } = (0, t.Z)(),
      { pluginId: a } = (0, l.gA)({ failfast: !0 }),
      { savePreferredVersionName: d } = (0, c.J)(a),
      { latestDocSuggestion: u, latestVersionSuggestion: b } = (0, l.Jo)(a),
      j = u ?? (v = b).docs.find((e) => e.id === v.mainDocId);
     var v;
-    return (0, h.jsxs)('div', { className: (0, t.Z)(s, o.k.docs.docVersionBanner, 'alert alert--warning margin-bottom--md'), role: 'alert', children: [(0, h.jsx)('div', { children: (0, h.jsx)(m, { siteTitle: r, versionMetadata: n }) }), (0, h.jsx)('div', { className: 'margin-top--md', children: (0, h.jsx)(x, { versionLabel: b.label, to: j.path, onClick: () => d(b.name) }) })] });
+    return (0, h.jsxs)('div', { className: (0, i.Z)(s, o.k.docs.docVersionBanner, 'alert alert--warning margin-bottom--md'), role: 'alert', children: [(0, h.jsx)('div', { children: (0, h.jsx)(m, { siteTitle: r, versionMetadata: n }) }), (0, h.jsx)('div', { className: 'margin-top--md', children: (0, h.jsx)(x, { versionLabel: b.label, to: j.path, onClick: () => d(b.name) }) })] });
    }
    function j(e) {
     let { className: s } = e;
@@ -78,18 +78,18 @@
   49687: (e, s, n) => {
    n.d(s, { Z: () => a });
    n(75271);
-   var t = n(4814),
-    i = n(83033),
+   var i = n(4814),
+    t = n(83033),
     r = n(52676);
    function a(e) {
     const { permalink: s, title: n, subLabel: a, isNext: l } = e;
-    return (0, r.jsxs)(i.Z, { className: (0, t.Z)('pagination-nav__link', l ? 'pagination-nav__link--next' : 'pagination-nav__link--prev'), to: s, children: [a && (0, r.jsx)('div', { className: 'pagination-nav__sublabel', children: a }), (0, r.jsx)('div', { className: 'pagination-nav__label', children: n })] });
+    return (0, r.jsxs)(t.Z, { className: (0, i.Z)('pagination-nav__link', l ? 'pagination-nav__link--next' : 'pagination-nav__link--prev'), to: s, children: [a && (0, r.jsx)('div', { className: 'pagination-nav__sublabel', children: a }), (0, r.jsx)('div', { className: 'pagination-nav__label', children: n })] });
    }
   },
   24009: (e, s, n) => {
    n.d(s, { Q: () => h });
-   var t = n(57229),
-    i = n(87573),
+   var i = n(57229),
+    t = n(87573),
     r = n(92826),
     a = n(34616),
     l = n(16167),
@@ -99,7 +99,7 @@
    const h = (e) => {
     let { breadcrumbs: s, ...n } = e;
     const h = [{ href: (0, r.Z)('/'), label: 'Home', rel: 'home' }, ...s],
-     { pathname: u } = (0, i.TH)(),
+     { pathname: u } = (0, t.TH)(),
      m = [...h].reverse().find((e) => e.href !== u);
     return (0, d.jsxs)(d.Fragment, {
      children: [
@@ -109,46 +109,46 @@
         ...n,
         label: 'breadcrumb',
         children: h.map((e, s, n) => {
-         let { label: t, href: i, rel: r } = e,
+         let { label: i, href: t, rel: r } = e,
           { length: a } = n;
-         return (0, d.jsxs)(c.Fragment, { children: [(0, d.jsx)(l.yY, { href: i, current: s === a - 1, disabled: s === a - 1, rel: (0, o.Z)(r, { up: s === a - 2 }), children: t }), s < a - 1 && (0, d.jsx)(l.sc, { children: '/' })] }, s);
+         return (0, d.jsxs)(c.Fragment, { children: [(0, d.jsx)(l.yY, { href: t, current: s === a - 1, disabled: s === a - 1, rel: (0, o.Z)(r, { up: s === a - 2 }), children: i }), s < a - 1 && (0, d.jsx)(l.sc, { children: '/' })] }, s);
         }),
        }),
       }),
-      m && (0, d.jsx)('div', { className: (0, o.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(l.hE, { children: (0, d.jsxs)(t.r, { href: m.href, rel: m.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(l.JO, { children: (0, d.jsx)(a.Z, {}) }), m.label] }) }) }),
+      m && (0, d.jsx)('div', { className: (0, o.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(l.hE, { children: (0, d.jsxs)(i.r, { href: m.href, rel: m.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(l.JO, { children: (0, d.jsx)(a.Z, {}) }), m.label] }) }) }),
      ],
     });
    };
   },
   9637: (e, s, n) => {
    n.d(s, { Z: () => l });
-   var t = n(65697),
-    i = n(73436),
+   var i = n(65697),
+    t = n(73436),
     r = n(24009),
     a = n(52676);
    function l() {
-    const e = (0, i.s1)()?.map((e) => ('category' === e.type ? { ...e, ...e.items.find((e) => 'link' === e.type), label: e.label } : { href: e.href, label: e.label })) || [];
-    return (0, a.jsx)(r.Q, { breadcrumbs: e, className: t.k.docs.docBreadcrumbs });
+    const e = (0, t.s1)()?.map((e) => ({ href: e.href, label: e.label })) || [];
+    return (0, a.jsx)(r.Q, { breadcrumbs: e, className: i.k.docs.docBreadcrumbs });
    }
   },
   39772: (e, s, n) => {
    n.d(s, { Z: () => m });
-   var t = n(73436),
-    i = n(57229),
+   var i = n(73436),
+    t = n(57229),
     r = n(41115),
     a = n(4814),
     l = n(52676);
    function o(e) {
-    let { href: s, icon: n = '', title: t, description: r, children: o } = e;
-    return (0, l.jsxs)('div', { className: 'card', children: [s ? (0, l.jsx)(i.r, { href: s, className: (0, a.Z)('cardLink', 'utrecht-link'), children: (0, l.jsxs)('h2', { className: 'cardTitle', children: [n, ' ', t] }) }) : (0, l.jsxs)('h2', { className: 'cardTitle', children: [n, ' ', t] }), r && (0, l.jsx)('p', { className: 'cardDescription', children: r }), o] });
+    let { href: s, icon: n = '', title: i, description: r, children: o } = e;
+    return (0, l.jsxs)('div', { className: 'card', children: [s ? (0, l.jsx)(t.r, { href: s, className: (0, a.Z)('cardLink', 'utrecht-link'), children: (0, l.jsxs)('h2', { className: 'cardTitle', children: [n, ' ', i] }) }) : (0, l.jsxs)('h2', { className: 'cardTitle', children: [n, ' ', i] }), r && (0, l.jsx)('p', { className: 'cardDescription', children: r }), o] });
    }
    function c(e) {
     let { item: s } = e;
-    return (0, l.jsx)(o, { title: s.label, description: s.description, children: (0, l.jsx)(r.QI, { children: s.items.filter((e) => 'link' === e.type || 'category' === e.type).map((e, s) => (0, l.jsx)(r.AS, { children: 'link' === e.type ? (0, l.jsx)(i.r, { to: e.href, children: e.label }) : 'category' === e.type ? (0, l.jsxs)(i.r, { to: e.href, children: [e.items.length, " pagina's voor ", e.label] }) : (0, l.jsx)(l.Fragment, {}) }, s)) }) });
+    return (0, l.jsx)(o, { title: s.label, description: s.description, children: (0, l.jsx)(r.QI, { children: s.items.filter((e) => 'link' === e.type || 'category' === e.type).map((e, s) => (0, l.jsx)(r.AS, { children: 'link' === e.type ? (0, l.jsx)(t.r, { to: e.href, children: e.label }) : 'category' === e.type ? (0, l.jsxs)(t.r, { to: e.href, children: [e.items.length, " pagina's voor ", e.label] }) : (0, l.jsx)(l.Fragment, {}) }, s)) }) });
    }
    function d(e) {
     let { item: s } = e;
-    const n = (0, t.xz)(s.docId);
+    const n = (0, i.xz)(s.docId);
     return (0, l.jsx)(o, { href: s.href, title: s.label, description: s.description ?? n?.description });
    }
    function h(e) {
@@ -164,20 +164,20 @@
    }
    function u(e) {
     let { className: s } = e;
-    const n = (0, t.jA)();
+    const n = (0, i.jA)();
     return (0, l.jsx)(m, { items: n.items, className: s });
    }
    function m(e) {
     const { items: s, className: n } = e;
     if (!s) return (0, l.jsx)(u, { ...e });
-    const i = (0, t.MN)(s);
-    return (0, l.jsx)('section', { className: (0, a.Z)('row', n), children: i.map((e, s) => (0, l.jsx)('article', { className: 'col col--12 margin-bottom--lg doc-card-list', children: (0, l.jsx)(h, { item: e }) }, s)) });
+    const t = (0, i.MN)(s);
+    return (0, l.jsx)('section', { className: (0, a.Z)('row', n), children: t.map((e, s) => (0, l.jsx)('article', { className: 'col col--12 margin-bottom--lg doc-card-list', children: (0, l.jsx)(h, { item: e }) }, s)) });
    }
   },
   75789: (e, s, n) => {
    n.r(s), n.d(s, { default: () => b });
-   var t = n(14225),
-    i = n(73436),
+   var i = n(14225),
+    t = n(73436),
     r = n(92826),
     a = n(9637),
     l = n(39772),
@@ -188,11 +188,11 @@
     u = n(52676);
    function m(e) {
     let { categoryGeneratedIndex: s } = e;
-    return (0, u.jsx)(t.d, { title: s.title, description: s.description, keywords: s.keywords, image: (0, r.Z)(s.image) });
+    return (0, u.jsx)(i.d, { title: s.title, description: s.description, keywords: s.keywords, image: (0, r.Z)(s.image) });
    }
    function x(e) {
     let { categoryGeneratedIndex: s } = e;
-    const n = (0, i.jA)();
+    const n = (0, t.jA)();
     return (0, u.jsxs)('div', { className: 'generatedIndexPage', children: [(0, u.jsx)(d.Z, {}), (0, u.jsx)(a.Z, {}), (0, u.jsx)(c.Z, {}), (0, u.jsxs)('header', { children: [(0, u.jsx)(h.Z, { as: 'h1', className: 'title', children: s.title }), s.description && (0, u.jsx)('p', { children: s.description })] }), (0, u.jsx)('article', { className: 'margin-top--lg', children: (0, u.jsx)(l.Z, { items: n.items, className: 'list' }) }), (0, u.jsx)('footer', { className: 'margin-top--lg', children: (0, u.jsx)(o.Z, { previous: s.navigation.previous, next: s.navigation.next }) })] });
    }
    function b(e) {

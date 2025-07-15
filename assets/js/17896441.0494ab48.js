@@ -315,7 +315,7 @@
     n = l(24009),
     a = l(52676);
    function r() {
-    const e = (0, o.s1)()?.map((e) => ('category' === e.type ? { ...e, ...e.items.find((e) => 'link' === e.type), label: e.label } : { href: e.href, label: e.label })) || [];
+    const e = (0, o.s1)()?.map((e) => ({ href: e.href, label: e.label })) || [];
     return (0, a.jsx)(n.Q, { breadcrumbs: e, className: s.k.docs.docBreadcrumbs });
    }
   },
