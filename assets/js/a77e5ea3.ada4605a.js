@@ -145,10 +145,10 @@
    var P = t(18833),
     M = t(31259),
     O = t(4607),
-    Z = t(23051),
-    H = t(97183),
-    V = (t(31221), t(13361)),
-    E = t(16771),
+    H = t(23051),
+    Z = t(97183),
+    E = (t(31221), t(13361)),
+    V = t(16771),
     I = t(18574),
     B = t(55240),
     U = t(8657);
@@ -199,8 +199,8 @@
         { title: 'De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren', sc: '2.5.2', status: '', component: (0, r.jsx)(G, {}) },
         { title: 'De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion', sc: '2.5.3', status: '', component: (0, r.jsx)(R, {}) },
         { title: 'Het aanwijsgebied van de accordion is groot genoeg', sc: '2.5.5', status: '', component: (0, r.jsx)(N, {}) },
-        { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, r.jsx)(V.ZP, {}) },
-        { title: 'Het gedrag van de accordion is voorspelbaar', sc: '3.2.1', status: '', component: (0, r.jsx)(E.ZP, {}) },
+        { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, r.jsx)(E.ZP, {}) },
+        { title: 'Het gedrag van de accordion is voorspelbaar', sc: '3.2.1', status: '', component: (0, r.jsx)(V.ZP, {}) },
         { title: 'Het openen of sluiten van de accordion verplaatst de focus niet', sc: '3.2.2', status: '', component: (0, r.jsx)(_, {}) },
        ],
       }),
@@ -212,7 +212,7 @@
         { title: 'Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur', sc: '1.4.1', status: '', component: (0, r.jsx)(d, {}) },
         { title: 'De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg', sc: '1.4.3', status: '', component: (0, r.jsx)(h, {}) },
         { title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond', sc: '1.4.11', status: '', component: (0, r.jsx)(f, {}) },
-        { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.7', status: '', component: (0, r.jsx)(Z.ZP, {}) },
+        { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.7', status: '', component: (0, r.jsx)(H.ZP, {}) },
         { title: 'Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit', sc: '3.2.4', status: '', component: (0, r.jsx)(I.ZP, {}) },
        ],
       }),
@@ -236,7 +236,7 @@
         { title: 'De accordion zorgt niet voor een toetsenbordval', sc: '2.1.2', status: '', component: (0, r.jsx)(O.ZP, {}) },
         { title: 'De focusvolgorde rondom en in de accordion is logisch', sc: '2.4.3', status: '', component: (0, r.jsx)(A, {}) },
         { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.6', status: '', component: (0, r.jsx)(C, {}) },
-        { title: 'De accordion wordt niet bedekt door andere content', sc: '2.4.11', status: '', component: (0, r.jsx)(H.ZP, {}) },
+        { title: 'De accordion wordt niet bedekt door andere content', sc: '2.4.11', status: '', component: (0, r.jsx)(Z.ZP, {}) },
        ],
       }),
       '\n',
@@ -246,7 +246,7 @@
        items: [
         { title: 'De staat van de accordion is beschikbaar voor hulpsoftware', sc: '1.3.1', status: '', component: (0, r.jsx)(a, {}) },
         { title: 'Het is duidelijk welke content in de accordion aanwezig is', sc: '2.4.6', status: '', component: (0, r.jsx)(C, {}) },
-        { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, r.jsx)(V.ZP, {}) },
+        { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, r.jsx)(E.ZP, {}) },
         { title: 'De accordion heeft een toegankelijke naam, rol en status', sc: '4.1.2', status: '', component: (0, r.jsx)(F, {}) },
        ],
       }),
@@ -311,7 +311,7 @@
     o = t(40139);
    function i(e) {
     const n = { p: 'p', ...(0, o.a)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.' });
+    return (0, r.jsx)(n.p, { children: 'Een onderdeel dat toetsenbordfocus heeft mag niet volledig bedekt zijn.' });
    }
    function s(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };

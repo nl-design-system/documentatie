@@ -353,7 +353,7 @@
     i = n(40139);
    function o(e) {
     const t = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsx)(t.p, { children: 'Zorg ervoor dat een element dat de toetsenbordfocus heeft zichtbaar is en niet volledig bedekt is door andere inhoud.' });
+    return (0, r.jsx)(t.p, { children: 'Een onderdeel dat toetsenbordfocus heeft mag niet volledig bedekt zijn.' });
    }
    function s(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
