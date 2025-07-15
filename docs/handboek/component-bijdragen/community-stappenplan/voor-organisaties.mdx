@@ -174,7 +174,7 @@ import "@example/organisatie-design-tokens/src/font";
 ```tsx
 // packages/voorbeeld-design-tokens/documentation/{naam-component}/{prefix-organisatie}-{naam-component}.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
-import { ComponentNaam } from "@example";
+import { ComponentNaam } from "{react-component-library-package}";
 
 const meta = {
   id: "{prefix-organisatie}-{naam-component}",
@@ -198,7 +198,7 @@ export const VoorbeeldTheme: Story = {
 
 // Een story met het thema van de organisatie die de component bijdraagt
 export const OrganisatieNaamTheme: Story = {
-  name: "{Organisatie naam} theme",
+  name: "{Organisatie Naam} theme",
   parameters: { theme: "{prefix-organisatie}-theme" },
 };
 ```
@@ -215,16 +215,16 @@ Is er al een bestand genaamd `packages/theme-toolkit/src/component-stories-{pref
 ```tsx
 // packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx
 import { STORY_GROUPS } from "./component-stories-util";
-import { ComponentName } from "{react-component-library-package}";
+import { ComponentNaam } from "{react-component-library-package}";
 
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   {
     // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
-    storyId: "react-{prefix-organisatie}-{component}--default",
+    storyId: "react-{prefix-organisatie}-{naam-component}--default",
     component: "{prefix-organisatie}-{naam-component}",
     // Optioneel: Kies een van de opties van STORY_GROUPS
     group: STORY_GROUPS[],
-    name: "{Naam van de organisatie} {Naam van de component}",
+    name: "{Organisatie Naam} {Component Naam}",
     // De render functie om de component als story te renderen met properties en children zoals nodig als voorbeeld.
     render: () => <></>,
   },
