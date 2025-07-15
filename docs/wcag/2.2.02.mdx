@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.2.2 Pauzeren, stoppen, verbergen
 pagination_label: WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen
-description: Zorg ervoor dat gebruikers zich op de inhoud van de website kunnen concentreren en niet worden afgeleid voor animaties, automatisch scrollen, knipperende onderdelen of voortdurende automatische updates.
+description: Beweging mag niet storen.
 slug: 2.2.2
 keywords:
   - WCAG
@@ -30,13 +30,47 @@ import Summary from "./summaries/_2.2.2-summary.md";
   {"WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Minder bezoekers worden afgeleid door inhoud die vernieuwt of beweegt.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Geef gebruikers controle over inhoud die verandert.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Mensen met cognitieve beperkingen kunnen afgeleid raken.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+**Let op**: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina [ Conformiteitseis 5: Non-interferentie.](https://www.w3.org/Translations/WCAG22-nl/#cc5)
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Zorg ervoor dat gebruikers zich op de inhoud van de website kunnen concentreren. Ze mogen niet worden afgeleid door bewegingen of automatische vernieuwingen.
+
+Voorkom inhoud die vanzelf 5 seconden beweegt of knippert. Anders moet de bezoeker deze kunnen pauzeren, stoppen of verbergen.
+Voor inhoud die automatisch vernieuwt geldt hetzelfde, tenzij de bezoeker zelf kan bepalen hoe vaak dat gebeurt.
+
+## Hoe te testen
+
+Voor alle inhoud die vernieuwt of beweegt:
+
+- Controleer of deze niet automatisch start,
+- Controleer of deze niet langer dan 5 seconden duurt,
+- Controleer of deze te pauzeren, stoppen of verbergen is,
+- Als automatisch vernieuwt, controleer of de bezoeker zelf kan bepalen hoe vaak dat gebeurt.
+
+## Tips
+
+- Zorg dat er geen inhoud is automatisch verandert of beweegt. Zo voorkom je problemen met dit succescriterium en zoek je niet de grenzen op van wat bezoekers fijn vinden.
+- De CSS-functie `prefers-reduced-motion` is een manier om beweging te beperken. De veilige aanpak is om standaard geen beweging te tonen. Toon bewegende inhoud alleen aan mensen die expliciet een voorkeur hebben voor beweging.
 
 ## Gebruikersonderzoek
 
