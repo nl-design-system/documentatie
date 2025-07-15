@@ -32,7 +32,7 @@ DESCRIPTION:Wees welkom bij de 'Overheidsbrede Portalen Community Afstemming'. D
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
 SUMMARY:Overheidsbrede Portalen Community Afstemming - NL Design System
-DTSTART;TZID=Europe/Amsterdam:20250612T130000
+DTSTART;TZID=Europe/Amsterdam:20250612T140000
 LAST-MODIFIED:20240610T120000Z
 CREATED:20240610T120000Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
