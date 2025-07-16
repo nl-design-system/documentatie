@@ -28,7 +28,7 @@ Individuele lettervormen zouden genoeg van vorm moeten verschillen waardoor ze n
 
 ## Letterafstand
 
-Een combinatie van de letters 'r' en 'n' (rn)' zou een duidelijke ruimte moeten hebben om verwarring te voorkomen met letter 'm'. Hier kun je via `letter-spacing` invloed op uitoefenen. Momenteel maken we hier geen gebruik van binnen het Voorbeeld thema.
+Een combinatie van de letters 'r' en 'n' (rn)' zou een duidelijke ruimte moeten hebben om verwarring te voorkomen met letter 'm'. Hier kun je via `letter-spacing` invloed op uitoefenen. Momenteel maken we hier geen gebruik van binnen het Start-thema.
 
 ![De letters 'r' en 'n' zijn twee keer afgebeeld. Bij heeft eerste voorbeeld is er voldoende letter afstand. Bij het tweede voorbeeld is er te weinig letter afstand. Bij het tweede voorbeeld staat een rood kruis.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_letter-afstand.png)
 

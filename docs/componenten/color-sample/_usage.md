@@ -101,4 +101,4 @@ export const MyPage = () => {
 
 ## Figma
 
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Color Sample](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=15527-33899&t=j0HWpfOYWPeYBX0r-4).
+De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Color Sample](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-17931).

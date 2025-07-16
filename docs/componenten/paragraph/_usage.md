@@ -87,4 +87,4 @@ Je kunt de React component zo gebruiken:
 
 ## Figma
 
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Paragraph](https://www.figma.com/design/shhwGcqPLi2CapK0P1zz8O/NLDS---Voorbeeld---Bibliotheek?node-id=150-734&node-type=canvas&t=SxsN8cwA5f9cXqQx-0).
+De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Paragraph](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=150-734).

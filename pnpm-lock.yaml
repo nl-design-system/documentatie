@@ -190,8 +190,8 @@ importers:
         specifier: 3.3.4
         version: 3.3.4
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.117
-        version: 1.0.1-alpha.117
+        specifier: 1.0.1-alpha.120
+        version: 1.0.1-alpha.120
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.20.1(jiti@1.21.0))(typescript@5.7.3)
@@ -1643,6 +1643,7 @@ packages:
 
   '@gemeente-denhaag/sidenav@0.1.0-alpha.192':
     resolution: {integrity: sha512-USN3YcBeYNod4icQ7ZpNWpadiH56AbdSBYGboOSFyDZyE7bwpn0LH0DE2GavFKWu2R9s2mmxqEtYhuHF0O/aCA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0.0
 
@@ -1986,8 +1987,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4':
     resolution: {integrity: sha512-POlUBxviNooS6NpzyH6v3MJ+WwQEqMYj3VcJcX4oDRdRsxoYgsq4GDm3C55IhJ12nPKnd/F5DD+RBomviSkgxg==}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.117':
-    resolution: {integrity: sha512-MgHZbIug8+dQVEMr93jLy1J7wnjmIoG+5RIzbVDFVYsbE+5tdkfgIqOuBEXUEUfv1pxexEKQ9MZKyItAGUrxCA==}
+  '@nl-design-system/component-progress@1.0.1-alpha.120':
+    resolution: {integrity: sha512-J+KvyHSjg9YNe8KJ1FMaMFp85y/UI7X+ALDGn8wbUCGLHbI4wGxNITsllHD0KS6MWjkfCTnFOz0rQzWz9OTVxw==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -10696,7 +10697,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4': {}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.117': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.120': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.20.1(jiti@1.21.0))(typescript@5.7.3)':
     dependencies:
