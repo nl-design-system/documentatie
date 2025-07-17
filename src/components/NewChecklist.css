@@ -16,12 +16,18 @@
   align-items: center;
 }
 .new-checklist {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  grid-template-areas: "checkbox content" ". badge-list";
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.new-checklist__title {
+  font-weight: 600;
+  margin-inline-start: 5px;
+}
+
+.new-checklist__content {
+  margin-inline-start: 20px;
+  margin-block-end: 20px;
 }
 
 .new-checklist__checkbox {
@@ -65,11 +71,6 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--basis-space-row-xl);
-}
-
-/* badge as link */
-.new-checklist__content summary {
-  font-weight: 600;
 }
 
 .ma-filter-block {

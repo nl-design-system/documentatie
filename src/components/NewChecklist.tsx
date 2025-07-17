@@ -1,6 +1,6 @@
 import { Link } from '@site/src/components/Link';
 import { successCriteriaMap } from '@site/src/components/wcag22';
-import { BadgeList, Button, Checkbox, type HeadingProps } from '@utrecht/component-library-react';
+import { BadgeList, Button, type HeadingProps } from '@utrecht/component-library-react';
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
 import clsx from 'clsx';
 import { useId, useState } from 'react';
@@ -52,18 +52,20 @@ export const NewChecklistItem = ({ title, sc, component, tags }: NewChecklistIte
     }
   }
   return (
-    <div
+    <li
       className={clsx(
-        'new-checklist',
-        tags.map((tag) => `new-checklist--${tag}`),
+        'new-checklist__item',
+        tags.map((tag) => `new-checklist__item--${tag}`),
       )}
     >
-      <Checkbox className="new-checklist__checkbox" aria-labelledby={labelId} />
-      <details className="new-checklist__content">
+      {/* <Checkbox className="new-checklist__checkbox" aria-labelledby={labelId} /> */}
+      <details>
         <summary>
-          <span id={labelId}>{title}</span>
+          <span className="new-checklist__title" id={labelId}>
+            {title}
+          </span>
         </summary>
-        <div>
+        <div className="new-checklist__content">
           <div>{component}</div>
           <BadgeList className="new-checklist__badge-list">
             {badgeTags.map((tag, index) => {
@@ -91,7 +93,7 @@ export const NewChecklistItem = ({ title, sc, component, tags }: NewChecklistIte
           </BadgeList>
         </div>
       </details>
-    </div>
+    </li>
   );
 };
 
@@ -169,11 +171,11 @@ export const NewChecklist = ({ items }: NewChecklistProps) => {
         </div>{' '}
       </div>
 
-      <div className="new-checklist-group">
+      <ul className="new-checklist" role="list">
         {filteredItems.map((args, index) => (
           <NewChecklistItem key={index} {...args} />
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
