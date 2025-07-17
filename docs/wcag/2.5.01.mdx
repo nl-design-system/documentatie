@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.1 Aanwijzergebaren
 pagination_label: WCAG-succescriterium 2.5.1 Aanwijzergebaren
-description: Aanwijsgebaren zijn bijvoorbeeld het slepen van inhoud binnen bepaalde kaders, het swipen van foto's of het vergroten van een kaart met twee vingers. Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken.
+description: Acties waarbij je ingewikkelde aanwijsgebaren moet gebruiken, kunnen ook op een eenvoudige manier.
 slug: 2.5.1
 keywords:
   - WCAG
@@ -30,13 +30,52 @@ import Summary from "./summaries/_2.5.1-summary.md";
   {"WCAG-succescriterium 2.5.1 Aanwijzergebaren"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Laat gebruikers touchscreens bedienen met één vinger en eenvoudige gebaren.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Alle functies zijn ook met één aanwijzer te bedienen.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Niet iedereen kan ingewikkelde gebaren uitvoeren.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Aanwijsgebaren zijn bijvoorbeeld:
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Het slepen van inhoud binnen bepaalde kaders.
+- Het swipen van foto's.
+- Het vergroten van een kaart met twee vingers.
+- Een slider of carousel waar je doorheen kunt swipen.
+
+Een simpele beweging is bijvoorbeeld de beweging van een vinger van het ene punt naar het andere (zoals swipen zonder specifieke).
+Zodra er meerdere vingers nodig zijn is de beweging te complex. Ook al de route van het ene punt naar het andere gaat, maar via een ander punt of een specifieke route, dan is het te complex (zoals een swipe via een specifieke route).
+
+Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken.
+
+Je hoeft hierbij geen rekening te houden met de aanwijzergebaren in de software van de gebruiker. Een screenreader die een gebaar met 3 vingers vereist is niet de verantwoordelijkheid van de website.
+Gebaren die niet anders kunnen zijn ook uitgezonderd. Denk bijvoorbeeld aan het zetten van een digitale handtekening.
+
+## Hoe te testen
+
+Voor alle acties die met een aanwijzergebaar uit te voeren zijn, test of een van de volgende dingen klopt:
+
+- Het gebaar is eenvoudig en kan met één aanwijzer uitgevoerd worden.
+- Het gebaar is niet eenvoudig of heeft meerdere aanwijzers nodig, maar het kan ook eenvoudig en met één aanwijzer.
+
+## Tips
+
+- Als je twijfelt of je aanwijzergebaar niet te complex is. Bijvoorbeeld omdat het veel precisie vereist. Voeg dan voor de zekerheid een alternatief toe.
 
 ## Gebruikersonderzoek
 
