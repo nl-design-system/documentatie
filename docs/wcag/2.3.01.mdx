@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.3.1 Drie flitsen of beneden drempelwaarde
 pagination_label: WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde
-description: Zorg ervoor dat de website geen onderdelen bevat met meer dan drie flitsen binnen één seconde of maak het gebied dat flitsen bevat klein genoeg.
+description: Maximaal drie flitsen in een seconde.
 slug: 2.3.1
 keywords:
   - WCAG
@@ -34,9 +34,21 @@ import Summary from "./summaries/_2.3.1-summary.md";
 
 <Summary />
 
-## Opgelet
+**Let op**: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina [ Conformiteitseis 5: Non-interferentie.](https://www.w3.org/Translations/WCAG22-nl/#cc5)
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Zorg ervoor dat een website geen onderdelen bevat met meer dan drie flitsen binnen één seconde. Het tonen van meer dan drie flitsen binnen één seconde kan een epileptische aanval veroorzaken bij gebruikers die hiervoor gevoelig zijn. Dit geldt voor alle onderdelen van de website, zoals animaties, video's en de overgang tussen pagina's.
+
+## Hoe te testen
+
+- Bekijk op elke pagina of er flitsen aanwezig zijn.
+- Mocht er inhoud zijn die flitst, kijk of deze binnen de eisen valt. [PEAT](#bronnen-en-tools) kan hiervoor gebruikt worden.
+
+## Tips
+
+- Dit succescriterium kan falen op onverwachtse momenten. Probeer ook te testen wat er gebeurt als een onderdeel niet of traag laadt. Dit kan zorgen voor flitsen.
+- Er is in de officiële richtlijn een uitzondering voor flitsen die erg klein zijn.
+- Epilepsie kan niet alleen door flitsen veroorzaakt worden, maar ook door statische afbeeldingen en patronen. Denk bijvoorbeeld aan een strepenpatroon dat afwisselend zwart en wit is, waar langs gescrolld word. Dit kan ervaren worden als flitsen. De pagina [<span lang="en">Web accessibility for seizures and physical reactions</span>](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Seizure_disorders) van MDN gaat hier dieper op in.
+- Denk bij het controleren van bewegend beeld ook aan [WCAG-succescriterium 2.2.2 Pauzeren, stoppen verbergen](/wcag/2.2.2) dat aansluit bij dit succescriterium.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -45,6 +57,10 @@ Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en info
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
+
+## Bronnen en tools
+
+- [<span lang="en">Photosensitive Epilepsy Analysis Tool (PEAT)</span>](https://trace.umd.edu/peat/)
 
 ## W3C referenties
 
