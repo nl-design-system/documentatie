@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde · NL Design System" />
-  <meta data-rh="true" name="description" content="Zorg ervoor dat de website geen onderdelen bevat met meer dan drie flitsen binnen één seconde of maak het gebied dat flitsen bevat klein genoeg." />
-  <meta data-rh="true" property="og:description" content="Zorg ervoor dat de website geen onderdelen bevat met meer dan drie flitsen binnen één seconde of maak het gebied dat flitsen bevat klein genoeg." />
+  <meta data-rh="true" name="description" content="Maximaal drie flitsen in een seconde." />
+  <meta data-rh="true" property="og:description" content="Maximaal drie flitsen in een seconde." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,toevallen en fysieke reacties,operable,seizures and physical reactions,three flashes or below threshold" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.3.1" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.c5cf75c6.css" />
-  <script src="/assets/js/runtime~main.d1c63636.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.68ee7456.js" defer="defer"></script>
   <script src="/assets/js/main.c68a5392.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -289,17 +289,35 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Zorg ervoor dat de website geen onderdelen bevat met meer dan drie flitsen binnen één seconde of maak het gebied dat flitsen bevat klein genoeg.</p>
-              <p>Het tonen van meer dan drie flitsen binnen één seconde kan een epileptische aanval veroorzaken bij gebruikers die hiervoor gevoelig zijn.</p>
-              <p>Dit geldt voor alle onderdelen van de website, zoals animaties, video&#x27;s en de overgang tussen pagina&#x27;s.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Maximaal drie flitsen in een seconde.</p>
+              <p><strong>Let op</strong>: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina <a href="https://www.w3.org/Translations/WCAG22-nl/#cc5" class="utrecht-link utrecht-link--html-a"> Conformiteitseis 5: Non-interferentie.</a></p>
+              <p>Zorg ervoor dat een website geen onderdelen bevat met meer dan drie flitsen binnen één seconde. Het tonen van meer dan drie flitsen binnen één seconde kan een epileptische aanval veroorzaken bij gebruikers die hiervoor gevoelig zijn. Dit geldt voor alle onderdelen van de website, zoals animaties, video&#x27;s en de overgang tussen pagina&#x27;s.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Bekijk op elke pagina of er flitsen aanwezig zijn.</li>
+               <li>Mocht er inhoud zijn die flitst, kijk of deze binnen de eisen valt. <a href="#bronnen-en-tools" class="utrecht-link utrecht-link--html-a">PEAT</a> kan hiervoor gebruikt worden.</li>
+              </ul>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Dit succescriterium kan falen op onverwachtse momenten. Probeer ook te testen wat er gebeurt als een onderdeel niet of traag laadt. Dit kan zorgen voor flitsen.</li>
+               <li>Er is in de officiële richtlijn een uitzondering voor flitsen die erg klein zijn.</li>
+               <li>
+                Epilepsie kan niet alleen door flitsen veroorzaakt worden, maar ook door statische afbeeldingen en patronen. Denk bijvoorbeeld aan een strepenpatroon dat afwisselend zwart en wit is, waar langs gescrolld word. Dit kan ervaren worden als flitsen. De pagina <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Seizure_disorders" class="utrecht-link utrecht-link--html-a"><span lang="en">Web accessibility for seizures and physical reactions</span></a> van MDN gaat hier dieper op in.
+               </li>
+               <li>Denk bij het controleren van bewegend beeld ook aan <a href="/wcag/2.2.2" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.2.2 Pauzeren, stoppen verbergen</a> dat aansluit bij dit succescriterium.</li>
+              </ul>
               <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Content: <a href="/richtlijnen/content/video/flitsen" class="utrecht-link utrecht-link--html-a">Flitsen in video</a>.</li>
               </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <a href="https://trace.umd.edu/peat/" class="utrecht-link utrecht-link--html-a"><span lang="en">Photosensitive Epilepsy Analysis Tool (PEAT)</span></a>
+               </li>
+              </ul>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>
@@ -354,9 +372,11 @@
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
              <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
             </ul>
