@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.5.1 Aanwijzergebaren · NL Design System" />
-  <meta data-rh="true" name="description" content="Aanwijsgebaren zijn bijvoorbeeld het slepen van inhoud binnen bepaalde kaders, het swipen van foto&#x27;s of het vergroten van een kaart met twee vingers. Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken." />
-  <meta data-rh="true" property="og:description" content="Aanwijsgebaren zijn bijvoorbeeld het slepen van inhoud binnen bepaalde kaders, het swipen van foto&#x27;s of het vergroten van een kaart met twee vingers. Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken." />
+  <meta data-rh="true" name="description" content="Acties waarbij je ingewikkelde aanwijsgebaren moet gebruiken, kunnen ook op een eenvoudige manier." />
+  <meta data-rh="true" property="og:description" content="Acties waarbij je ingewikkelde aanwijsgebaren moet gebruiken, kunnen ook op een eenvoudige manier." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,input modaliteiten,operable,input modalities,pointer gestures" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.5.1" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.c5cf75c6.css" />
-  <script src="/assets/js/runtime~main.946843c2.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.1c12345f.js" defer="defer"></script>
   <script src="/assets/js/main.c68a5392.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -288,17 +288,43 @@
                <h1 class="nlds-inline-heading-group__heading">WCAG-succescriterium 2.5.1 Aanwijzergebaren</h1>
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
+              <h2 id="in-het-kort" class="utrecht-heading-2">In het kort</h2>
+              <dl>
+               <div class="dl__item">
+                <dt class="dl__term">Doel</dt>
+                <dd class="dl__definition">Laat gebruikers touchscreens bedienen met één vinger en eenvoudige gebaren.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Wat te doen</dt>
+                <dd class="dl__definition">Alle functies zijn ook met één aanwijzer te bedienen.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Waarom het belangrijk is</dt>
+                <dd class="dl__definition">Niet iedereen kan ingewikkelde gebaren uitvoeren.</dd>
+               </div>
+              </dl>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Aanwijsgebaren zijn bijvoorbeeld het slepen van inhoud binnen bepaalde kaders, het swipen van foto&#x27;s of het vergroten van een kaart met twee vingers.</p>
-              <p>Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken.</p>
-              <p>Bijvoorbeeld:</p>
+              <p>Acties waarbij je ingewikkelde aanwijsgebaren moet gebruiken, kunnen ook op een eenvoudige manier.</p>
+              <p>Aanwijsgebaren zijn bijvoorbeeld:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Je kunt foto&#x27;s swipen om meer foto&#x27;s te bekijken. Maar je kunt ook op een button klikken.</li>
-               <li>Je kunt een slider voor de maximumprijs verslepen. Maar je kunt ook klikken op de maximumprijs die je wilt instellen of het getal handmatig invoeren.</li>
+               <li>Het slepen van inhoud binnen bepaalde kaders.</li>
+               <li>Het swipen van foto&#x27;s.</li>
+               <li>Het vergroten van een kaart met twee vingers.</li>
+               <li>Een slider of carousel waar je doorheen kunt swipen.</li>
               </ul>
-              <p>Er is een uitzondering voor als aanwijsgebaar essentieel is voor de functionaliteit.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Een simpele beweging is bijvoorbeeld de beweging van een vinger van het ene punt naar het andere (zoals swipen zonder specifieke). Zodra er meerdere vingers nodig zijn is de beweging te complex. Ook al de route van het ene punt naar het andere gaat, maar via een ander punt of een specifieke route, dan is het te complex (zoals een swipe via een specifieke route).</p>
+              <p>Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken.</p>
+              <p>Je hoeft hierbij geen rekening te houden met de aanwijzergebaren in de software van de gebruiker. Een screenreader die een gebaar met 3 vingers vereist is niet de verantwoordelijkheid van de website. Gebaren die niet anders kunnen zijn ook uitgezonderd. Denk bijvoorbeeld aan het zetten van een digitale handtekening.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Voor alle acties die met een aanwijzergebaar uit te voeren zijn, test of een van de volgende dingen klopt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Het gebaar is eenvoudig en kan met één aanwijzer uitgevoerd worden.</li>
+               <li>Het gebaar is niet eenvoudig of heeft meerdere aanwijzers nodig, maar het kan ook eenvoudig en met één aanwijzer.</li>
+              </ul>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Als je twijfelt of je aanwijzergebaar niet te complex is. Bijvoorbeeld omdat het veel precisie vereist. Voeg dan voor de zekerheid een alternatief toe.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -354,8 +380,10 @@
           <div class="col col--3">
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#in-het-kort" class="table-of-contents__link toc-highlight">In het kort</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
