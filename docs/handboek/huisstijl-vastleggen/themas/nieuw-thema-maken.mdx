@@ -21,29 +21,31 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 # Een nieuw NL Design System thema maken
 
 <Paragraph lead>
-  Op deze pagina lees je hoe je een nieuw NL Design System thema kunt maken, vullen en publiceren voor jouw organisatie.
+  Op deze pagina lees je hoe je als developer een nieuw NL Design System thema kunt maken, vullen met jouw huisstijl en
+  publiceren voor jouw organisatie.
 </Paragraph>
 
 ## Wat is een NL Design System thema?
 
-NL Design System heeft een verzameling van [_white label_](https://en.wikipedia.org/wiki/White-label_product) componenten die gestyled kunnen worden met thema's.
+NL Design System heeft [een verzameling van componenten](/componenten) die gestyled kunnen worden met thema's.
+Deze componenten zijn [_white label_](https://en.wikipedia.org/wiki/White-label_product) zodat ze aangepast kunnen worden aan iedere huisstijl.
 Thema's zijn gestructureerde collecties van [design tokens](/handboek/huisstijl/design-tokens). Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
 
 Het aantal tokens in een nieuw thema kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit [het Start-thema](/handboek/huisstijl/themas/start-thema). Het Start-thema definieert standaard waarden voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
 
-Een nieuw thema bestaat uit drie lagen:
+Een nieuw thema kan bestaan uit drie lagen:
 
 1. **De brand-laag**. Hierin staan alle waardes over de gehele huisstijl die gebruikt mogen worden. Dit zijn bijvoorbeeld het complete palet aan kleuren, alle mogelijke diktes van borders en alle toegestane lettergroottes.
 1. **De common-laag**. Hierin:
    - worden de kleuren uit de **brand** laag gekoppeld aan design tokens uit het Start-thema en
    - worden algemene tokens gedefinieerd voor componenten met veel overlap zoals bijvoorbeeld formulier-elementen die dezelfde achtergrondkleur hebben en headings die hetzelfde lettertype gebruiken.
-1. **De componenten-laag**. Hierin staan tokens voor alle gebruikte componenten die niet onder common vallen en afwijken van de waardes uit het Start-thema.
+1. **De componenten-laag**. Hierin staan tokens voor alle gebruikte componenten die niet onder common vallen en afwijken van de waardes uit het Start-thema. Deze laag is optioneel.
 
 De design tokens zijn gestructureerd in een JSON-bestand volgens het [Design Tokens Format](https://tr.designtokens.org/format/). Met behulp van [Style Dictionary](https://amzn.github.io/style-dictionary/) wordt dit JSON-bestand omgezet in CSS en andere formaten. Deze CSS kun je gebruiken in je HTML. Met de plugin van [Token Studio](https://tokens.studio/plugin) kan dit bestand direct worden gebruikt om onze componenten te stylen in Figma. Kijk voor meer informatie over Token Studio bij het [stappenplan voor designers](/handboek/designer/stappenplan).
 
 ## Hoe weet ik of ik een nieuw thema moet maken?
 
-Diverse gemeentes en andere organisaties hebben al een thema gepubliceerd. Alle beschikbare themas voor NL Design System staan in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Als er in de map [proprietary](https://github.com/nl-design-system/themes/tree/main/proprietary) een map staat voor jouw organisatie kun je dat thema gebruiken. Als er geen map staat voor jouw organisatie, dan kun je zelf een thema maken.
+Diverse gemeentes en andere organisaties hebben al een thema gepubliceerd. Alle beschikbare themas voor NL Design System staan in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Als er in [de map proprietary](https://github.com/nl-design-system/themes/tree/main/proprietary) een map staat voor jouw organisatie kun je dat thema gebruiken. Als er geen map staat voor jouw organisatie, dan kun je zelf een thema maken.
 
 ## Welke stappen moet ik volgen om een nieuw thema te maken?
 
@@ -234,7 +236,7 @@ git commit -am "feat: add prefix theme"
 git push
 ```
 
-Als dit is gelukt zou je de branch terug moeten kunnen zien in het overzicht op https://github.com/nl-design-system/themes/branches. Maak dan een pull request aan voor je branch door op de 3 puntjes rechts van jouw branch te klikken en "New pull request" te kiezen.
+Als dit is gelukt zou je jouw branch terug moeten zien in het overzicht op https://github.com/nl-design-system/themes/branches. Maak dan een pull request aan voor je branch door op de 3 puntjes rechts van jouw branch te klikken en "New pull request" te kiezen.
 
 Als de pull request gepubliceerd is zal het NL Design System kernteam er naar kijken en als alles in orde is ook mergen met de main branch. Dit zorgt ervoor dat jouw thema automatisch gepubliceerd wordt op npm.
 
