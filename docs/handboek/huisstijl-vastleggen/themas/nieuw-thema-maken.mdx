@@ -1,0 +1,249 @@
+---
+title: Nieuw thema maken · Huisstijl vastleggen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Nieuw thema maken
+sidebar_position: 3
+pagination_label: Nieuw thema maken
+description: Informatie over een nieuw thema maken op basis van het Start-thema
+slug: /handboek/huisstijl/themas/nieuw-thema-maken
+keywords:
+  - componenten
+  - design system
+  - design tokens
+  - thema's
+  - start-thema
+  - thema maken
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Een nieuw NL Design System thema maken
+
+<Paragraph lead>
+  Op deze pagina lees je hoe je een nieuw NL Design System thema kunt maken, vullen en publiceren voor jouw organisatie.
+</Paragraph>
+
+## Wat is een NL Design System thema?
+
+NL Design System heeft een verzameling van [_white label_](https://en.wikipedia.org/wiki/White-label_product) componenten die gestyled kunnen worden met thema's.
+Thema's zijn gestructureerde collecties van [design tokens](/handboek/huisstijl/design-tokens). Dit zijn afspraken over welke kleuren, formaten, lettertypes, etc. gebruikt mogen worden binnen de huisstijl voor een organisatie. Een NL Design System thema bevat de tokens die nodig zijn om onze componenten te stylen volgens een bepaalde huisstijl.
+
+Het aantal tokens in een nieuw thema kan groot zijn of klein, afhankelijk van hoeveel uitzonderingen het bevat op de waardes uit [het Start-thema](/handboek/huisstijl/themas/start-thema). Het Start-thema definieert standaard waarden voor alle tokens die nodig zijn om de NL Design System componenten een mooie en toegankelijke basisstijl te geven.
+
+Een nieuw thema bestaat uit drie lagen:
+
+1. **De brand-laag**. Hierin staan alle waardes over de gehele huisstijl die gebruikt mogen worden. Dit zijn bijvoorbeeld het complete palet aan kleuren, alle mogelijke diktes van borders en alle toegestane lettergroottes.
+1. **De common-laag**. Hierin:
+   - worden de kleuren uit de **brand** laag gekoppeld aan design tokens uit het Start-thema en
+   - worden algemene tokens gedefinieerd voor componenten met veel overlap zoals bijvoorbeeld formulier-elementen die dezelfde achtergrondkleur hebben en headings die hetzelfde lettertype gebruiken.
+1. **De componenten-laag**. Hierin staan tokens voor alle gebruikte componenten die niet onder common vallen en afwijken van de waardes uit het Start-thema.
+
+De design tokens zijn gestructureerd in een JSON-bestand volgens het [Design Tokens Format](https://tr.designtokens.org/format/). Met behulp van [Style Dictionary](https://amzn.github.io/style-dictionary/) wordt dit JSON-bestand omgezet in CSS en andere formaten. Deze CSS kun je gebruiken in je HTML. Met de plugin van [Token Studio](https://tokens.studio/plugin) kan dit bestand direct worden gebruikt om onze componenten te stylen in Figma. Kijk voor meer informatie over Token Studio bij het [stappenplan voor designers](/handboek/designer/stappenplan).
+
+## Hoe weet ik of ik een nieuw thema moet maken?
+
+Diverse gemeentes en andere organisaties hebben al een thema gepubliceerd. Alle beschikbare themas voor NL Design System staan in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Als er in de map [proprietary](https://github.com/nl-design-system/themes/tree/main/proprietary) een map staat voor jouw organisatie kun je dat thema gebruiken. Als er geen map staat voor jouw organisatie, dan kun je zelf een thema maken.
+
+## Welke stappen moet ik volgen om een nieuw thema te maken?
+
+:::tip
+
+Om deze stappen te doorlopen hebben we git nodig om met de repository te werken. Je kunt zelf kiezen welke tool je hier het liefst voor gebruikt.
+
+Om de dependencies te installeren gebruiken we [pnpm](https://pnpm.io/).
+
+:::
+
+### Stap 1: De themes repository clonen
+
+Een nieuw thema kun je maken door eerst de [themes repository](https://github.com/nl-design-system/themes) te clonen in een terminal of met jouw favoriete git-programma.
+
+```sh
+git clone git@github.com:nl-design-system/themes.git
+```
+
+### Stap 2: De lokale ontwikkelomgeving klaarmaken
+
+Vervolgens installeren we de dependencies met `pnpm` met de volgende instructies in de terminal.
+
+```sh
+cd themes
+pnpm install
+```
+
+### Stap 3: De eerste build
+
+Om te kijken of alles werkt kunnen we nu de eerste build draaien en alle beschikbare thema's in Storybook bekijken:
+
+```sh
+pnpm run build
+pnpm run watch:storybook
+```
+
+Het eerste commando gaat een build maken van alle thema's in de repository dus dat kan even duren.
+Als alles goed werkt zou je nu de bestaande thema's in Storybook moeten kunnen bekijken door naar http://localhost:6006/ te gaan in je browser.
+
+### Stap 4: De example theme kopiëren en aanpassen
+
+Je hoeft het nieuwe thema niet van de grond af aan zelf te schrijven, we kunnen beginnen met het kopiëren van [het "example" thema](https://github.com/nl-design-system/themes/tree/main/proprietary/example-design-tokens) nadat je een prefix hebt gekozen voor je thema.
+
+:::info[Een prefix kiezen]
+
+Om te zorgen dat de design tokens van alle verschillende thema's elkaar niet in de weg gaan zitten heeft elk thema een eigen **prefix**. Vaak is de prefix de lowercase naam van de organisatie waar het thema voor is maar dat hoeft niet. Zolang de prefix niet al bestaat en alleen letters en/of cijfers bevat is het goed. De prefix wordt ook gebruikt in de naam van de map waar je de example theme naartoe kopiëert. Voordat je dat kunt doen moet je dus eerst een prefix kiezen.
+
+:::
+
+#### Een nieuw thema opzetten
+
+:::tip
+
+Vervang hieronder telkens `prefix` met de prefix die jij gekozen hebt.
+
+:::
+
+1. Kopieer `proprietary/example-design-tokens/` naar `proprietary/prefix-design-tokens`
+1. Gebruik "_Find and replace_" in `proprietary/prefix-design-tokens` en vervang _case-sensitive_ `example-` door jouw `prefix-` (inclusief het koppelstreepje).
+1. Open ook `src/config.json` in de nieuwe directory en full je prefix in bij `"prefix"`
+1. Gebruik "_Find and replace_" in `proprietary/prefix-design-tokens` en vervang _case-sensitive_ `Example Organisation` door jouw de naam van jouw organisatie.
+1. Open ook `src/config.json` en full bij `"name"` en `"fullName"` de naam in van je organisatie. Als het een lange naam is, dan kun je een korte versie invullen bij `"name"` zodat de tekst past in de Side Navigation.
+1. Bewerk `packages/storybook/package.json`, en voeg `"@nl-design-system-community/prefix-design-tokens": "workspace:*",` toe onder `"devDependencies"`.
+1. Doe `pnpm install` in de root van de repository, zodat jouw nieuwe npm package aan de pnpm workspace toegevoegd wordt.
+1. Bewerk `proprietary/prefix-design-tokens/README.md` en pas het aan met je eigen gegevens, voeg een contactpersoon toe. Verwijder de instructies van de template.
+1. Bewerk `proprietary/prefix-design-tokens/package.json` en vul bij `"description"` een duidelijke naam in van dit project.
+1. Bewerk `proprietary/prefix-design-tokens/package.json` en pas het aan met een link naar je eigen website.
+1. Bewerk `packages/storybook/config/preview.ts`
+
+- Voeg een `import` toe voor de CSS met het thema van jouw organisatie.
+- Optioneel: voeg een `import` toe voor de webfonts voor jouw thema.
+
+### Stap 5: Controleren of alles werkt
+
+Als je bovenstaande stappen en de stappen uit de example theme-README hebt afgerond kun je controlen of alles werkt door eerst weer Storybook te starten:
+
+```sh
+pnpm run build
+pnpm run watch:storybook
+```
+
+Als alles goed werkt zou je nu Storybook moeten kunnen openen met http://localhost:6006/ en staat er in het menu aan de linkerkant een link voor het thema van jouw organisatie.
+
+## Het thema vullen met je huisstijl
+
+:::tip
+
+Voordat je aan de slag gaat met het vullen van het thema is het belangrijk dat je weet hoe de basis-tokens in het Start-thema werken. Meer informatie daarover vind je op de pagina [Start-thema](/handboek/huisstijl/themas/start-thema).
+
+:::
+
+### Kleuren
+
+Kleuren voeg je toe aan je thema in twee stappen. Eerst definieer je de huisstijl-kleuren in de brand laag:
+
+```json
+{
+  "brand": {
+    "prefix": {
+        "color": {
+            "indigo": {
+              "1": {
+                "$type": "color",
+                "$value": "#F6F6FF"
+              },
+              "2": {
+                "$type": "color",
+                "$value": "#EAECFB"
+              },
+              // ...etc
+```
+
+Daarna koppel je deze kleuren via de common-laag aan [de basis-tokens uit het Start-thema](/handboek/huisstijl/themas/start-thema):
+
+```json
+{
+  "common": {
+    "basis": {
+      "color": {
+        "transparent": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "text": {
+          "bg-1": {
+            "$type": "color",
+            "$value": "{prefix.color.indigo.1}"
+          },
+```
+
+Deze twee stappen ervoor dat het basis-token `common.basis.color.text.bg-1` de waarde `#F6F6FF` krijgt uit het brand-token `brand.prefix.color.indigo.1`. Componenten die in het Start-thema gebruik maken van dit basis-token zullen nu automatisch de juiste kleur gebruiken. Op de pagina [Basis-tokens voor kleur](/huisstijl/themas/start-thema/kleur-tokens) vind je een overzicht van de tokens voor kleur in het Start-thema.
+
+### Algemene tokens
+
+De common laag bevat ook algemene tokens voor formulier-elementen, koppen en de focus ring. Deze kun je bijvoorbeeld zo aanpassen:
+
+```json
+{
+  "common": {
+    "basis": {
+      "form-control": {
+        "accent-color": {
+         "$type": "color",
+         "$value": "{basis.color.primary.fill-2}"
+        },
+```
+
+Op de pagina [Basis-tokens voor speciale groepen](/handboek/huisstijl/themas/start-thema/speciale-groepen-tokens) vind je een overzicht van alle tokens voor deze groepen in het Start-thema.
+
+### Tokens voor componenten
+
+Als er na het invullen van de kleuren en de algemene tokens nog steeds (onderdelen van) componenten zijn die er niet helemaal naar wens uitzien kun je deze ook aanpassen met tokens in de component-laag. Als je bijvoorbeeld de achtergrondkleur van de button in `utrecht-accordion` wil aanpassen kan dat zo:
+
+```json
+{
+  "components/accordion": {
+    "utrecht": {
+      "accordion": {
+        "button": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.primary.interactive-2}"
+          },
+```
+
+## Je nieuwe thema publiceren
+
+Alle gepubliceerde thema's voor NL Design System staan verzameld in onze [themes GitHub repository](https://github.com/nl-design-system/themes). Het build script voor deze repository bouwt en publiceert automatisch alle thema's die erin staan naar [npm](https://www.npmjs.com/). Het [thema van Purmerend](https://github.com/nl-design-system/themes/tree/main/proprietary/purmerend-design-tokens) wordt bijvoorbeeld gepubliceerd naar [dit npm package](https://www.npmjs.com/package/@nl-design-system-community/purmerend-design-tokens). Om jouw thema te publiceren moet je dus zorgen dat jouw thema onderdeel wordt van onze repository.
+
+:::tip
+
+Om een thema te publiceren heb je git nodig. Hieronder gebruiken we de git command line maar je kunt hier ook je eigen favoriete tool voor gebruiken. Je hebt ook [een GitHub account](https://github.com) nodig om commits en pull requests te kunnen maken. Zorg ervoor dat jouw git tool hetzelfde account gebruikt.
+
+:::
+
+Als je nieuwe thema lokaal in Storybook naar tevredenheid werkt kun je een _pull request_ maken zodat deze in onze repository wordt opgenomen. Zorg er allereerst voor dat jouw aanpassingen lokaal in een nieuwe branch staan. Vervang `prefix` hieronder weer steeds met de prefix die jij gekozen hebt voor je organisatie.
+
+```sh
+# Ga naar je lokale repository
+cd themes
+
+# Maak zo nodig een nieuwe branch en commit je aanpassingen
+git checkout -b feat/prefix-new-theme
+git commit -am "feat: add prefix theme"
+
+# Push je branch naar GitHub
+git push
+```
+
+Als dit is gelukt zou je de branch terug moeten kunnen zien in het overzicht op https://github.com/nl-design-system/themes/branches. Maak dan een pull request aan voor je branch door op de 3 puntjes rechts van jouw branch te klikken en "New pull request" te kiezen.
+
+Als de pull request gepubliceerd is zal het NL Design System kernteam er naar kijken en als alles in orde is ook mergen met de main branch. Dit zorgt ervoor dat jouw thema automatisch gepubliceerd wordt op npm.
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [GitHub](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](/project/kernteam).
