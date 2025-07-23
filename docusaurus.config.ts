@@ -7,6 +7,16 @@ import navbar from './navConfig';
 import nldsPrismTheme from './nldsPrism';
 
 const config: Config = {
+  plugins: [
+    function customElementsPlugin() {
+      return {
+        name: 'custom-elements-plugin',
+        getClientModules() {
+          return ['src/web-components/react-story.mjs'];
+        },
+      };
+    },
+  ],
   title: 'NL Design System',
   titleDelimiter: '·',
   tagline: 'Eén design system voor alle huisstijlen',
@@ -112,6 +122,7 @@ const config: Config = {
       },
     },
   },
+  clientModules: [],
 };
 
 export default config;
