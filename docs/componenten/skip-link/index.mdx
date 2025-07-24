@@ -48,28 +48,40 @@ keywords:
 
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
 import AcIntro from "@nl-design-system-unstable/documentation/componenten/ac/_ac_intro.md";
+import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/_ac_component.md";
+import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/_ac_implementatie.md";
+import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
 import SkipLinkIllustration from "@nl-design-system-candidate/skip-link-docs/docs/anatomy/anatomy.svg";
+import Wcag1412NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-1.4.12-nlds.md";
 import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
 import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
 import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
+import Wcag144NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-1.4.4-nlds.md";
 import Wcag211 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-link.md";
-import Wcag2413 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.13.md";
-import Wcag247 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.7-skip-link.md"; // voor Toegankelijkheid visueel ontwerp en Toegankelijkheid toetsenbord
+import Wcag211NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds.md";
+import Wcag2413CC from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.13-contrast.md";
+import Wcag2413SL from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.13-skip-link.md";
+import Wcag2413NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.13-nlds.md";
+import Wcag243 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.3-skip-link.md";
+import Wcag244 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.4-skip-link.md";
+import Wcag247NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.7-nlds.md";
+import Wcag247 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.7-skip-link.md";
+import Wcag252NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.5.2-nlds.md";
 import Wcag252 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.2.md";
 import Wcag253 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.3-link.md";
-import Wcag255 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.5.md"; // voor Toegankelijkheid algemeen en Toegankelijkheid visueel ontwerp
+import Wcag255NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.5.5-nlds.md";
+import Wcag255 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.5-skip-link.md";
 import Wcag312 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md";
+import Wcag323 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.3-skip-link.md";
 import Wcag324 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4-link.md";
 import Wcag412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.2-link.md";
+import Wcag412NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-4.1.2-nlds.md";
 import Wcag1410 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.10-summary.md";
 import Wcag145 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.5-summary.md";
 import Wcag212 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.1.2-summary.md";
 import Wcag241 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.1-summary.md";
 import Wcag2411 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.11-summary.md";
-import Wcag243 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.3-summary.md";
-import Wcag244 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.4-summary.md";
 import Wcag321 from "@nl-design-system-unstable/documentation/wcag/summaries/_3.2.1-summary.md";
-import Wcag323 from "@nl-design-system-unstable/documentation/wcag/summaries/_3.2.3-summary.md";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
 import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
@@ -83,6 +95,7 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/skip-link-tokens";
+import { Checklist } from "@site/src/components/Checklist";
 
 {/* Add name and description for the component */}
 export const title = "Skip Link";
@@ -93,13 +106,17 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
+Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkelijk contentblokken kunnen overslaan. Bijvoorbeeld navigatie die op meerdere pagina's herhaald wordt.
+
 <ComponentAliases component={component} />
 
 ## Anatomie
 
+<!-- hier komt een werkend component als storybook import -->
+
 <ComponentAnatomy component={component} illustration={SkipLinkIllustration} />
 
-## Gebruik deze component
+## Candidate component gebruiken
 
 ### Design tokens
 
@@ -109,199 +126,187 @@ export const component = componentProgress.find((item) => item.number === issueN
   <Usage />
 </Markdown>
 
-## Definition of Done
+## Checklist voor toegankelijkheid
 
-<DefinitionOfDone component={component} headingLevel={3} />
+<IntroGebruik />
 
-## Implementaties
+### Acceptatiecriteria bij gebruik
 
-<Implementations component={component} headingLevel={3} />
+<AcImplementatie />
 
-## Acceptatiecriteria
-
-<AcIntro />
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid algemeen"
+<Checklist
   items={[
     {
-      title: "Het label van de Skip Link bestaat uit gewone tekst, niet uit een afbeelding van tekst",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-    },
-    {
-      title:
-        "De linktekst van de Skip Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel)",
-      sc: "2.4.4",
-      status: "",
-      component: <Wcag244 />,
-    },
-    {
-      title:
-        "Als de gebruiker de Skip Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid is om actie te voorkomen of ongedaan te maken",
-      sc: "2.5.2",
-      status: "",
-      component: <Wcag252 />,
-    },
-    {
-      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam",
-      sc: "2.5.3",
-      status: "",
-      component: <Wcag253 />,
-    },
-    {
-      title: "De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels",
-      sc: "2.5.5",
-      status: "",
-      component: <Wcag255 />,
-    },
-    {
-      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats",
-      sc: "3.2.1",
-      status: "",
-      component: <Wcag321 />,
-    },
-    {
-      title: "Skip Links die op meerdere pagina's voorkomen staan in dezelfde relatieve volgorde",
-      sc: "3.2.3",
-      status: "",
-      component: <Wcag323 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid visueel ontwerp"
-  items={[
-    {
-      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur",
+      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.",
       sc: "1.4.3",
       status: "",
       component: <Wcag143 />,
+      tags: ["designer"],
     },
     {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
-      sc: "1.4.12",
+      title: "Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.",
+      sc: "1.4.5",
       status: "",
-      component: <Wcag1412 />,
+      component: <Wcag145 />,
+      tags: ["developer", "contentmaker"],
     },
     {
-      title: "Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247 />,
-    },
-    /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
-    /*
-{
-  title: "De Skip Link heeft een goed zichtbare focusindicator",
-  sc: "2.4.13",
-  status: "",
-  component: <Wcag2413 />,
-},
- */
-    {
-      title: "De Skip Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels",
-      sc: "2.5.5",
-      status: "",
-      component: <Wcag255 />,
-    },
-    {
-      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
-      sc: "3.2.4",
-      status: "",
-      component: <Wcag324 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid zoom en herschalen"
-  items={[
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-    },
-    {
-      title:
-        "Als je de hele webpagina inzoomt tot 400% blijft veroorzaakt de Skip Link veroorzaakt geen horizontale scrollbalk en alle tekst op de pagina blijft leesbaar",
-      sc: "1.4.10",
-      status: "",
-      component: <Wcag1410 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid toetsenbord"
-  items={[
-    {
-      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets",
-      sc: "2.1.1",
-      status: "",
-      component: <Wcag211 />,
-    },
-    {
-      title:
-        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord",
-      sc: "2.1.2",
-      status: "",
-      component: <Wcag212 />,
-    },
-    {
-      title: "De Skip Link slaat een contentblok over dat op meerdere pagina's voorkomt",
+      title: "De Skip Link slaat 1 of meerdere herhalende contentblokken over.",
       sc: "2.4.1",
       status: "",
       component: <Wcag241 />,
+      tags: ["developer"],
     },
     {
-      title: "De Skip Link staat op een logische plek in de focusvolgorde",
+      title:
+        "De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina.",
       sc: "2.4.3",
       status: "",
       component: <Wcag243 />,
+      tags: ["developer"],
     },
     {
-      title: "Wanneer de Skip Link de toetsenbordfocus krijgt is de focus zichtbaar",
-      sc: "2.4.7",
+      title: "De linktekst van de Skip Link beschrijft duidelijk het linkdoel.",
+      sc: "2.4.4",
       status: "",
-      component: <Wcag247 />,
+      component: <Wcag244 />,
+      tags: ["developer", "contentmaker"],
     },
     {
-      title: "De Skip Link wordt niet bedekt door een ander element op de pagina",
+      title: "De Skip Link wordt niet bedekt door een ander element op de pagina.",
       sc: "2.4.11",
       status: "",
       component: <Wcag2411 />,
+      tags: ["developer"],
+    },
+    {
+      title:
+        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.",
+      sc: "3.1.2",
+      status: "",
+      component: <Wcag312 />,
+      tags: ["developer", "contentmaker"],
+    },
+    {
+      title:
+        "Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina.",
+      sc: "3.2.3",
+      status: "",
+      component: <Wcag323 />,
+      tags: ["developer", "designer"],
     },
   ]}
 />
 
-<CriteriaList
-  headingLevel={3}
-  testCategory="Toegankelijkheid screenreader"
+### Acceptatiecriteria van de component
+
+<AcComponent />
+
+<Checklist
   items={[
     {
-      title:
-        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode",
-      sc: "3.1.2",
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
+      sc: "1.4.4",
       status: "",
-      component: <Wcag312 />,
+      component: <Wcag144NLDS />,
+      tags: ["developer"],
     },
     {
       title:
-        "De Skip Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Skip Link voor dient",
+        "Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.",
+      sc: "1.4.10",
+      status: "",
+      component: <Wcag1410 />,
+      tags: ["developer", "designer"],
+    },
+    {
+      title: "De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412NLDS />,
+      tags: ["developer", "designer"],
+    },
+    {
+      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.",
+      sc: "2.1.1",
+      status: "",
+      component: <Wcag211NLDS />,
+      tags: ["developer"],
+    },
+    {
+      title:
+        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.",
+      sc: "2.1.2",
+      status: "",
+      component: <Wcag212 />,
+      tags: ["developer"],
+    },
+    {
+      title: "De Skip Link heeft een zichtbare focusindicator.",
+      sc: "2.4.7",
+      status: "",
+      component: <Wcag247NLDS />,
+      tags: ["developer", "designer"],
+    },
+    {
+      title: "De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.",
+      sc: "2.4.13",
+      status: "",
+      component: <Wcag2413NLDS />,
+      tags: ["developer", "designer"],
+    },
+    {
+      title: "De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.",
+      sc: "2.5.2",
+      status: "",
+      component: <Wcag252NLDS />,
+      tags: ["developer"],
+    },
+    {
+      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.",
+      sc: "2.5.3",
+      status: "",
+      component: <Wcag253 />,
+      tags: ["developer"],
+    },
+    {
+      title: "Het aanwijsgebied van de Skip Link is groot genoeg.",
+      sc: "2.5.5",
+      status: "",
+      component: <Wcag255NLDS />,
+      tags: ["developer"],
+    },
+    {
+      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.",
+      sc: "3.2.1",
+      status: "",
+      component: <Wcag321 />,
+      tags: ["developer"],
+    },
+    {
+      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.",
+      sc: "3.2.4",
+      status: "",
+      component: <Wcag324 />,
+      tags: ["developer", "designer"],
+    },
+    {
+      title: "De Skip Link heeft een rol van link.",
       sc: "4.1.2",
       status: "",
-      component: <Wcag412 />,
+      component: <Wcag412NLDS />,
+      tags: ["developer"],
     },
   ]}
 />
+
+## Community implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
 
 ## Help component verbeteren
 
