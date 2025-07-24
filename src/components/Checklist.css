@@ -1,0 +1,87 @@
+:root {
+  --utrecht-badge-list-item-margin-inline: 0.5em;
+  --utrecht-badge-list-item-margin-block: 0.25em;
+  --nl-data-badge-background-color: white;
+  --nl-data-badge-color: black;
+  --nl-data-badge-border-radius: 0;
+  --nl-data-badge-border-width: 1px;
+  --nl-data-badge-font-weight: bold;
+  --nl-data-badge-line-height: 1.5;
+  --nl-data-badge-padding-block: var(--basis-space-block-sm);
+  --nl-data-badge-padding-inline: var(--basis-space-inline-md);
+}
+
+.nl-data-badge {
+  display: inline-flex;
+  align-items: center;
+}
+.new-checklist {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.new-checklist__title {
+  font-weight: 600;
+  margin-inline-start: 5px;
+}
+
+.new-checklist__content {
+  margin-inline-start: 20px;
+  margin-block-end: 20px;
+}
+
+.new-checklist__checkbox {
+  grid-area: checkbox;
+}
+.new-checklist__badge-list {
+  grid-area: badge-list;
+  grid-column: 2;
+}
+.new-checklist__actions {
+  grid-area: actions;
+}
+
+.utrecht-button--contents {
+  --utrecht-button-padding-inline-start: 0;
+  --utrecht-button-padding-inline-end: 0;
+  --utrecht-button-padding-block-start: 0;
+  --utrecht-button-padding-block-end: 0;
+}
+
+.ma-badge-toggle-button-group {
+  /* inverse colors */
+  --utrecht-button-pressed-background-color: var(--utrecht-button-color);
+  --utrecht-button-pressed-color: var(--utrecht-button-background-color);
+  --utrecht-button-pressed-border-color: var(--utrecht-button-color);
+}
+
+/* toggle badge */
+
+.ma-badge-toggle-button-group .utrecht-button[aria-pressed] {
+  --nl-data-badge-min-block-size: 44px;
+  --nl-data-badge-min-inline-size: 44px;
+}
+
+.ma-badge-toggle-button-group .utrecht-button[aria-pressed="true"] {
+  --nl-data-badge-background-color: black;
+  --nl-data-badge-color: white;
+}
+
+.new-checklist-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--basis-space-row-xl);
+}
+
+.ma-filter-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--basis-space-block-md);
+  padding-inline: var(--basis-space-inline-lg);
+  padding-block: var(--basis-space-block-lg);
+  background-color: #eee;
+  border-color: 1px solid #ccc;
+  border-style: solid;
+  border-width: 1px;
+  margin-block-end: var(--basis-space-row-xl);
+}

@@ -92,7 +92,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           return (
             <Card key={project.title} className="implementation-card">
               <CardContent>
-                <Heading level={headingLevel}>{project.title}</Heading>
+                <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
                 <Paragraph>
                   <ComponentProgress
                     checked={project.progress.value}

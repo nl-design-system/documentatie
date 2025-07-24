@@ -2,7 +2,7 @@
 
 De link heeft een rol van `link` en een [toegankelijke naam](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name) die duidelijk maakt waar de link voor dient.
 
-HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een `a`-element als je een link nodig hebt:
+HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een `a`-element met het `href` attribuut als je een link nodig hebt:
 
 ```html
 <a href="url">Contact</a>
