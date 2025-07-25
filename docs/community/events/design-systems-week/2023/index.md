@@ -13,8 +13,6 @@ In oktober 2023 organiseerde het kernteam van NL Design System een Design System
 
 Benieuwd hoe het in 2023 ging? Bekijk [het programma en de video's](/events/design-systems-week-2023/programma) of [het tijdschema](/events/design-systems-week-2023/tijdschema).
 
----
-
 <div lang="en">
 
 English: In October 2023, the NL Design System core team ran a four day event called Design Systems Week, with 12 short talks about the **how and why of design systems**.
