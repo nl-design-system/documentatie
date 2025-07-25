@@ -32,6 +32,8 @@ interface NewsletterSignUpProps {
   privacyPolicyId: string;
   language?: { value: string; id: string };
   submitText: string;
+  talkTitleId: string;
+  talkDescriptionId: string;
 }
 
 /**
@@ -70,6 +72,8 @@ export const NewsletterSignUp = ({
   privacyPolicyId = '',
   language,
   submitText = '',
+  talkTitleId = '',
+  talkDescriptionId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -151,6 +155,63 @@ export const NewsletterSignUp = ({
           />
         </Paragraph>
       </FormField>
+
+      {talkTitleId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={talkTitleId}>
+              {IS_ENGLISH ? 'Title of your talk' : 'Titel van je presentatie'}
+            </FormLabel>
+            <FormFieldDescription>
+              {IS_ENGLISH ? 'What would you name your talk?' : 'Hoe zou jij je presentatie noemen?'}
+            </FormFieldDescription>
+          </Paragraph>
+          <Paragraph>
+            <Textbox
+              id={talkTitleId}
+              name={talkTitleId}
+              {...register(talkTitleId, {
+                required: {
+                  value: true,
+                  message: IS_ENGLISH
+                    ? 'You can only submit a talk if you provide a title.'
+                    : 'Je kunt alleen een voorstel insturen als je een titel toevoegd.',
+                },
+              })}
+            ></Textbox>
+          </Paragraph>
+        </FormField>
+      )}
+
+      {talkDescriptionId && (
+        <FormField type="text">
+          <Paragraph>
+            <FormLabel htmlFor={talkDescriptionId}>
+              {IS_ENGLISH ? 'Descibe your talk' : 'Beschrijf je presentatie'}
+            </FormLabel>
+            <FormFieldDescription>
+              {IS_ENGLISH
+                ? 'What is it about? Who would be your intended audience? Have you spoken about this topic before?'
+                : 'Waar gaat het over? Voor wie is het interessant? Heb je al vaker over dit onderwerp gesproken?'}
+            </FormFieldDescription>
+          </Paragraph>
+          <Paragraph>
+            <Textarea
+              id={talkDescriptionId}
+              name={talkDescriptionId}
+              rows={12}
+              {...register(talkDescriptionId, {
+                required: {
+                  value: true,
+                  message: IS_ENGLISH
+                    ? 'You can only submit a talk if you provide a description.'
+                    : 'Je kunt alleen een voorstel insturen als je een beschrijving toevoegd.',
+                },
+              })}
+            ></Textarea>
+          </Paragraph>
+        </FormField>
+      )}
 
       {orgId && (
         <FormField type="text">
