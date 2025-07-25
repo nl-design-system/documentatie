@@ -1,25 +1,21 @@
 ---
-title: Programma · Design Systems Week 2023
+title: Videos · Design Systems Week 2023
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Programma
-pagination_label: Programma
+sidebar_label: 2023
+pagination_label: Videos
 slug: /events/design-systems-week-2023/programma
 ---
 
 import { DSWSession } from "@site/src/components/DSWSession";
 import speakers from "./speakers.json";
-import { Link } from '@utrecht/component-library-react/dist/css-module';
+import { Link, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
-# Design Systems Week 2023
+# Design Systems Week 2023 terugkijken
 
-NL Design System organiseert dit jaar voor de 3e keer de Design Systems Week. Van **2 tot 5 oktober** zijn er dagelijks meerdere korte sessies van diverse organisaties over het **hoe en waarom van design systems**.
-
-Kijk of luister je mee? Alle sessies zijn gratis online bij te wonen en duren ongeveer 30 minuten. [Meld je aan](https://www.gebruikercentraal.nl/agenda/design-systems-week-2023/#event-booking) voor de hele week of voor losse sessies. Na aanmelding ontvang je een link die voor alle sessies van de week gebruikt wordt.
-
-## Het programma
-
-Dit jaar hebben we nationale én internationale sprekers. We laten ons inspireren door andere design systems en horen waarom organisaties in een design system investeren. Vanuit verschillende perspectieven leren we hoe design systems bijdragen aan toegankelijkheid en gaan we technisch de diepte in met design tokens en web components.
+<Paragraph lead>
+  Tijdens Design Systems Week 2023 met nationale én internationale sprekers. Vanuit verschillende perspectieven hebben we gehoord hoe design systems bijdragen aan toegankelijkheid en zijn we technisch de diepte ingegaan met design tokens en web components. Gelukkig hebben we de video's nog!
+</Paragraph>
 
 <DSWSession title="Toe­gan­kelijk­heid verzekeren met NL Design System" speakers={[speakers.PeterBerrevoets]} organisation="NL Design System" videoId="0w8DVyc9Mos">
 

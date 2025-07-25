@@ -3,7 +3,7 @@ title: Miro Design Systems Week 2024
 hide_title: true
 hide_table_of_contents: true
 sidebar_position: 1
-slug: /miro
+slug: /events/design-systems-week-2024/miro
 unlisted: true
 ---
 
