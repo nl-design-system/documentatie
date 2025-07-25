@@ -1,5 +1,14 @@
 # @nl-design-system-unstable/documentation
 
+## 1.8.0
+
+### Minor Changes
+
+- 96a010e: Nieuwe component en opzet voor toegankelijkheidsdocumentatie op de component pagina's.
+- 32d4bb6: Tekst [WCAG-pagina 2.2.1](/wcag/2.2.1) volledig afgemaakt.
+- d0c630e: Tekst [WCAG-pagina 2.4.5](/wcag/2.4.5) volledig afgemaakt.
+- 30afe5c: Baseline 2025-07
+
 ## 1.7.0
 
 ### Minor Changes
