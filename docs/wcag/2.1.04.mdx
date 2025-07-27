@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.4 Enkel teken sneltoetsen
 pagination_label: WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen
-description: Maak geen extra sneltoetsen aan die bestaan uit één letter. Dit geldt voor hoofdletters en kleine letters, leestekens, cijfers of symbolen. Sneltoetsen van één letter worden bijvoorbeeld al gebruikt door screenreaders.
+description: Bied geen sneltoetsen aan die bestaan uit één teken.
 slug: 2.1.4
 keywords:
   - WCAG
@@ -30,17 +30,57 @@ import Summary from "./summaries/_2.1.4-summary.md";
   {"WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Verminder onbedoeld gebruik van sneltoetsen.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Zorg ervoor dat sneltoetsen uitgeschakeld of aangepast kunnen worden.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">
+      Sneltoetsen met één teken zijn makkelijk onbedoeld te activeren, vooral met spraakbediening.
+    </dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Voor een sneltoets van één teken houden we rekening met hoofdletters, kleine letters, leestekens, cijfers en symbolen. Dit soort sneltoetsen zijn makkelijk onbedoeld te activeren. Denk hierbij bijvoorbeeld aan bezoekers met een [screenreader](/woordenlijst/#screenreader) en spraakbediening. Bezoekers kunnen hun eigen sneltoetsen hebben die conflicteren met de sneltoetsen op de website. Invoer van spraakbediening bereikt een website vaak als losse tekens die ook deze sneltoetsen kunnen activeren.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Mochten dit soort sneltoetsen toch aanwezig zijn, dan zijn ze tenminste:
+
+- Uit te schakelen of,
+- Toe te wijzen aan andere tekens of toetsen of,
+- Alleen actief bij focus op een relevant component.
+
+## Hoe te testen
+
+1. Zorg ervoor dat niks focus heeft. Dit kan vaak door op de achtergrond te klikken.
+2. Gebruik de [<span lang="en">Character key shortcut bookmarklet</span>](http://3needs.org/en/testing/code/kb-shortcuts.html) en controleer of er niks geactiveerd wordt.
+
+**Let op**: Als er tijdens de test iets de focus krijgt, dan moet de focus eerst verwijderd worden voordat de test verder kan gaan.
+
+## Tips
+
+- Dit criterium gaat meestal fout bij het gebruik van externe videospelers. Let bij het toevoegen van externe video op of dit goed gaat. Bij YouTube kan de parameter `disablekb=1` toegevoegd worden aan de URL van de video.
+- Een teken dat op het ene toetsenbord een losse knop is, kan op een ander toetsenbord een combinatie van knoppen zijn. Dat is geen basis voor het afkeuren op dit succescriterium.
+- Ook sneltoetsen die in een reeks gebruikt moeten worden kunnen dit succescriterium doen falen.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
+
+## Bronnen en tools
+
+- [<span lang="en">Character key shortcut bookmarklet</span>](http://3needs.org/en/testing/code/kb-shortcuts.html)
 
 ## W3C referenties
 
