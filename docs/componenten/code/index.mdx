@@ -70,6 +70,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <ComponentAliases component={component} />
 
+## Anatomie
+
+<ComponentAnatomy component={component} illustration={CodeIllustration} />
+
 ## Candidate component gebruiken
 
 Let op: Gebruik de component [Code Block](/code-block) als de code meerdere regels beslaat.
@@ -81,18 +85,6 @@ Let op: Gebruik de component [Code Block](/code-block) als de code meerdere rege
 <Markdown omitH1 headingLevel={3}>
   <Usage />
 </Markdown>
-
-## Anatomie
-
-<ComponentAnatomy component={component} illustration={CodeIllustration} />
-
-## Definition of Done
-
-<DefinitionOfDone component={component} headingLevel={3} />
-
-## Community implementaties
-
-<Implementations component={component} headingLevel={3} />
 
 ## Acceptatiecriteria
 
@@ -155,6 +147,14 @@ Let op: Gebruik de component [Code Block](/code-block) als de code meerdere rege
     },
   ]}
 />
+
+## Community implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
 
 ## Help component verbeteren
 
