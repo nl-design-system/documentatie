@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.13 Content bij hover of focus
 pagination_label: WCAG-succescriterium 1.4.13 Content bij hover of focus
-description: Als de inhoud wijzigt wanneer een gebruiker over een element hovert met de muis of het de toetsenbordfocus geeft, zorg er dan voor dat de interactie voorspelbaar is.
+description: Maak tijdelijke inhoud voorspelbaar.
 slug: 1.4.13
 keywords:
   - WCAG
@@ -30,13 +30,52 @@ import Summary from "./summaries/_1.4.13-summary.md";
   {"WCAG-succescriterium 1.4.13 Content bij hover of focus"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Meer bezoekers kunnen niet-permanente inhoud waarnemen en weghalen.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Als inhoud verandert door hover of focus, dan moet de interactie voorspelbaar zijn.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">
+      Onvoorspelbare tijdelijke inhoud kan voor sommigen lastig te verwerken zijn, en kan anderen storen.
+    </dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Soms wordt inhoud pas zichtbaar bij focus of bij een hover met een [aanwijzer](/woordenlijst/#aanwijzer). Dit kan onder andere voorkomen bij een uitklapmenu of tooltip. Als dit gebeurt moet de interactie voorspelbaar zijn.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Als dit gebeurt
+Hiervoor gelden enkele regels:
+
+- De bezoeker moet de inhoud kunnen verbergen zonder de aanwijzer of focus te verplaatsen, bijvoorbeeld met de <kbd>esc</kbd>-toets.
+- Als de inhoud tevoorschijn komt door de aanwijzer, dan moet de aanwijzer ook over deze inhoud bewogen kunnen worden zonder dat deze verdwijnt.
+- De extra inhoud moet aanwezig blijven totdat:
+  - de zichtbaar-makende focus of aanwijzer verwijderd wordt;
+  - of de bezoeker de extra inhoud verbergt;
+  - of de extra inhoud niet meer geldig is.
+
+## Hoe te testen
+
+- Hover over of focus op het element dat je wil testen.
+- Wacht 10 seconde om te ervaren of de extra inhoud niet vanzelf sluit.
+- Test of de extra inhoud te sluiten is met de <kbd>esc</kbd>-toets.
+- Probeer met de aanwijzer over de extra inhoud te hoveren, en controleer of deze niet verdwijnt.
+
+## Tips
+
+- Door inhoud alleen te laten verschijnen bij activaties, zoals met een aanwijzer of toetsenbord, hoeft er geen rekening gehouden te worden met dit succescriterium.
+- Inhoud die afhankelijk is van focus of hover is ook problematisch voor apparaten met een touchscreen.
 
 ## Gebruikersonderzoek
 
