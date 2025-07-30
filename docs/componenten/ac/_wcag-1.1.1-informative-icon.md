@@ -2,7 +2,7 @@
 
 Een informatieve icon is een visueel symbool dat ontworpen is om snel en intuïtief specifieke informatie over te brengen, zonder dat daar tekst voor nodig is.
 
-Als een informatieve icon géén onderdeel is van een interactief component, zoals een `button` of `link`, heeft de icon zélf een alternatieve tekst nodig.
+Als een informatieve icon géén onderdeel is van een interactief component, zoals een `button` of `link`, heeft het zélf een alternatieve tekst nodig.
 
 Dit kan bijvoorbeeld door een `aria-label` toe te voegen aan een `svg` icon met `role="img"`, of door de content property van een Unicode icon in te vullen met een beschrijvende alternatieve tekst.
 
