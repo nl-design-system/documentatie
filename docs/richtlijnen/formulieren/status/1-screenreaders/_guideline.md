@@ -66,4 +66,4 @@ Het informeren van alle gebruikers over een statusbericht is verplicht om te vol
 Bronnen:
 
 - [<span lang="en">Defining toast messages</span>](https://adrianroselli.com/2020/01/defining-toast-messages.html) van Adrian Roselli.
-- [<span lang="en">Patrick H. Lauke</span>](https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working/) van Patrick H. Lauke.
+- [<span lang="en">Why are my live regions not working?</span>](https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working/) van Patrick H. Lauke.
