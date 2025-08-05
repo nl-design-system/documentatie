@@ -190,7 +190,9 @@ export const NewsletterSignUp = ({
               {IS_ENGLISH ? 'Descibe your talk' : 'Beschrijf je presentatie'}
             </FormLabel>
             <FormFieldDescription>
-              {IS_ENGLISH ? 'Short description. What is it about?' : 'Korte beschrijving. Waar gaat het over?'}
+              {IS_ENGLISH
+                ? 'What is it about? Who would be your intended audience? Have you spoken about this topic before?'
+                : 'Waar gaat het over? Voor wie is het interessant? Heb je al vaker over dit onderwerp gesproken?'}
             </FormFieldDescription>
           </Paragraph>
           <Paragraph>
@@ -198,7 +200,6 @@ export const NewsletterSignUp = ({
               id={talkDescriptionId}
               name={talkDescriptionId}
               rows={12}
-              maxLength={250}
               {...register(talkDescriptionId, {
                 required: {
                   value: true,
