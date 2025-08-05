@@ -111,8 +111,7 @@ export const component = componentProgress.find((item) => item.number === issueN
       tags: ["designer", "contentmaker"],
     },
     {
-      title:
-        "Als een icon onderdeel is van een link, gaat de beschrijving over waar de link naar verwijst, niet het uiterlijk van de link.",
+      title: "Als een icon onderdeel is van een link, beschrijft de alternatieve tekst het doel van het icon.",
       sc: "2.4.4",
       status: "",
       component: <Wcag244 />,
@@ -144,11 +143,12 @@ export const component = componentProgress.find((item) => item.number === issueN
   ]}
 />
 
-#### Unicode icons
+#### Icons uit icon fonts
 
-Wil je in plaats van `svg` icons gebruik maken van pictogrammen of emoji? Gebruik dan icons met Unicode mapping.
-Sommige bezoekers kiezen er voor het gebruikte lettertype van een website te overschrijven, bijvoorbeeld via hun systeem- of browserinstellingen of via een extensie.
-Icons die geen Unicode mapping hebben maar bijvoorbeeld afkomstig zijn uit een speciaal Icon lettertype, zullen daardoor niet meer getoond worden op de pagina.
+Gebruik je een icon font in plaats van SVG afbeeldingen? Houdt er dan rekening mee dat niet iedereen de iconen kan zien.
+Sommige gebruikers kiezen ervoor om altijd een eigen font te gebruiken, of schakelen web fonts uit om data te besparen.
+Wij raden daarom aan om SVG te gebruiken in plaats van een icon font. Als je wel een icon font gebruikt, probeer dan Unicode-karakters te gebruiken.
+Deze icons werken ook als de gebruiker een systeem font gebruikt.
 
 ### Acceptatiecriteria van de component
 
