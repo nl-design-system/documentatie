@@ -32,7 +32,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'voorbeelden/README',
+      docId: 'voorbeelden/introductie',
       position: 'left',
       label: 'Voorbeelden',
       className: 'utrecht-link',
