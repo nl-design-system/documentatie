@@ -107,6 +107,9 @@ importers:
       '@nl-design-system-candidate/skip-link-tokens':
         specifier: 1.0.1
         version: 1.0.1
+      '@nl-design-system-unstable/design-tokens-table-react':
+        specifier: 1.0.0
+        version: 1.0.0(@babel/runtime@7.26.7)(react@18.3.1)
       '@tabler/icons-react':
         specifier: 3.30.0
         version: 3.30.0(react@18.3.1)
@@ -1974,6 +1977,12 @@ packages:
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.1':
     resolution: {integrity: sha512-YKDg8NsNkEEi1Ql3DiijfUJRnHGL6NT2dJtBzZwLnLtUBq4MTpIEvGJV8C0djXyYBF2aNK1mMj1fg7b6c9H3dA==}
+
+  '@nl-design-system-unstable/design-tokens-table-react@1.0.0':
+    resolution: {integrity: sha512-WBc4wkfGvR42Iw0GwcdXLAv5Y21fUM8rPJ1eAID6ymM1rx8VrN3ZnmTqtsQtKdkCCvHGvl2Zl4WJngG+bmJIlQ==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4':
     resolution: {integrity: sha512-POlUBxviNooS6NpzyH6v3MJ+WwQEqMYj3VcJcX4oDRdRsxoYgsq4GDm3C55IhJ12nPKnd/F5DD+RBomviSkgxg==}
@@ -10568,7 +10577,7 @@ snapshots:
 
   '@manypkg/find-root@1.1.0':
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       '@types/node': 12.20.55
       find-up: 4.1.0
       fs-extra: 8.1.0
@@ -10679,6 +10688,12 @@ snapshots:
   '@nl-design-system-candidate/skip-link-docs@1.0.1': {}
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.1': {}
+
+  '@nl-design-system-unstable/design-tokens-table-react@1.0.0(@babel/runtime@7.26.7)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4': {}
 
@@ -13893,7 +13908,7 @@ snapshots:
 
   history@4.10.1:
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.1
@@ -16195,7 +16210,7 @@ snapshots:
 
   react-helmet-async@1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.6
+      '@babel/runtime': 7.26.7
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 18.3.1
@@ -16223,7 +16238,7 @@ snapshots:
 
   react-loadable-ssr-addon-v5-slorber@1.0.1(@docusaurus/react-loadable@5.5.2(react@18.3.1))(webpack@5.89.0):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       react-loadable: '@docusaurus/react-loadable@5.5.2(react@18.3.1)'
       webpack: 5.89.0
 
@@ -16240,13 +16255,13 @@ snapshots:
 
   react-router-config@5.1.1(react-router@5.3.4(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       react: 18.3.1
       react-router: 5.3.4(react@18.3.1)
 
   react-router-dom@5.3.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.6
+      '@babel/runtime': 7.26.7
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -16257,7 +16272,7 @@ snapshots:
 
   react-router@5.3.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -16372,7 +16387,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.7
 
   regexp.prototype.flags@1.5.1:
     dependencies:
