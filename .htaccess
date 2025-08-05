@@ -48,6 +48,7 @@ Redirect 301 "/text-input-group" "/input-group"
 Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022"
 Redirect 301 "/wcag/introduction" "/wcag"
 Redirect 301 "/handboek/design-tokens" "/handboek/huisstijl/design-tokens"
+Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
@@ -60,6 +61,7 @@ RedirectMatch 301 "^/meedoen/als-organisatie/(._)$" "/handboek/organisatie$1"
 RedirectMatch 301 "^/project/events(.\*)$" "/community/events$1"
 RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.\*)$" "/richtlijnen/formulieren/$1"
 RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
+RedirectMatch 301 "^/voorbeelden/patronen/formulieren(?:/.*)?$" "/voorbeelden/patronen-en-templates/formulieren"
 
 # Convenience redirects for every WCAG success criterium
 Redirect 301 "/1.1.1" "/wcag/1.1.1/"
