@@ -15,6 +15,7 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'favicon.ico',
+  trailingSlash: true,
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
   projectName: 'documentatie', // Usually your repo name.
   presets: [
