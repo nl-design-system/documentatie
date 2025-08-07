@@ -46,6 +46,9 @@ keywords:
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
 import ColorSampleIllustration from "@nl-design-system-candidate/color-sample-docs/docs/anatomy/anatomy.svg";
 import AcIntro from "@nl-design-system-unstable/documentation/componenten/ac/_ac_intro.md";
+import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/_ac_component.md";
+import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/_ac_implementatie.md";
+import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
 import Wcag111 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.1.1-color-sample.md";
 import Wcag131 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-color-sample.md";
 import Wcag132 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.2-color-sample.md";
@@ -57,7 +60,7 @@ import Wcag145 from "@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag143 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.3-summary.md";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
-import { CriteriaList } from "@site/src/components/ComponentCriteriaList";
+import { Checklist } from "@site/src/components/Checklist";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -94,88 +97,81 @@ export const component = componentProgress.find((item) => item.number === issueN
   <Usage />
 </Markdown>
 
-## Acceptatiecriteria
+## Checklist voor toegankelijkheid
 
-<AcIntro />
+<IntroGebruik />
 
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid algemeen"
+### Acceptatiecriteria bij gebruik
+
+<AcImplementatie />
+
+<Checklist
   items={[
     {
-      title: "De eigenschappen van de Color Sample staan in tekst",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid visueel ontwerp"
-  items={[
-    {
-      title: "Kleur is niet de enige manier waarop de informatie over de Color Sample beschikbaar is",
-      sc: "1.4.1",
-      status: "",
-      component: <Wcag141 />,
-    },
-    {
-      title: "Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-    },
-    {
-      title: "Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond",
-      sc: "1.4.11",
-      status: "",
-      component: <Wcag1411 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid zoom en herschalen"
-  items={[
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-    },
-    {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-    },
-  ]}
-/>
-
-<CriteriaList
-  headingLevel={4}
-  testCategory="Toegankelijkheid screenreader"
-  items={[
-    {
-      title: "De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven",
+      title: "De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven.",
       sc: "1.1.1",
       status: "",
       component: <Wcag111 />,
+      tags: ["contentmaker", "designer"],
     },
     {
-      title: "Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar",
+      title: "Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar.",
       sc: "1.3.1",
       status: "",
       component: <Wcag131 />,
+      tags: ["contentmaker", "designer"],
     },
     {
-      title: "Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort",
+      title:
+        "Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort.",
       sc: "1.3.2",
       status: "",
       component: <Wcag132 />,
+      tags: ["contentmaker", "designer", "developer"],
+    },
+    {
+      title: "Kleur is niet de enige manier waarop de informatie over de Color Sample beschikbaar is.",
+      sc: "1.4.1",
+      status: "",
+      component: <Wcag141 />,
+      tags: ["contentmaker", "designer"],
+    },
+    {
+      title: "Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende.",
+      sc: "1.4.3",
+      status: "",
+      component: <Wcag143 />,
+      tags: ["contentmaker", "designer"],
+    },
+    {
+      title: "Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond.",
+      sc: "1.4.11",
+      status: "",
+      component: <Wcag1411 />,
+      tags: ["contentmaker", "designer"],
+    },
+  ]}
+/>
+
+### Acceptatiecriteria van de component
+
+<AcComponent />
+
+<Checklist
+  items={[
+    {
+      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
+      sc: "1.4.4",
+      status: "",
+      component: <Wcag144 />,
+      tags: ["developer"],
+    },
+    {
+      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.",
+      sc: "1.4.12",
+      status: "",
+      component: <Wcag1412 />,
+      tags: ["developer"],
     },
   ]}
 />
