@@ -22,10 +22,17 @@ export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
   }[];
 }
 
+function appendTrailingSlash(string: string) {
+  return typeof string === 'string' && string.endsWith('/') === false ? `${string}/` : string;
+}
+
 export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps) => {
   const homeHref = useBaseUrl('/');
-  const links = [{ href: homeHref, label: 'Home', rel: 'home' }, ...breadcrumbs];
   const { pathname } = useLocation();
+  const links = [{ href: homeHref, label: 'Home', rel: 'home' }, ...breadcrumbs].map((breadcrumb) => ({
+    ...breadcrumb,
+    href: appendTrailingSlash(breadcrumb.href),
+  }));
 
   // findLast didn't have fantastic support yet, reverse the array instead
   const up = [...links].reverse().find((link) => link.href !== pathname);
