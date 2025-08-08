@@ -13,6 +13,7 @@ import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/c
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import './Breadcrumbs.css';
+import { appendTrailingSlash } from '../utils';
 
 export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
   breadcrumbs: {
@@ -24,8 +25,11 @@ export interface BreadcrumbNavProps extends UtrechtBreadcrumbNavProps {
 
 export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps) => {
   const homeHref = useBaseUrl('/');
-  const links = [{ href: homeHref, label: 'Home', rel: 'home' }, ...breadcrumbs];
   const { pathname } = useLocation();
+  const links = [{ href: homeHref, label: 'Home', rel: 'home' }, ...breadcrumbs].map((breadcrumb) => ({
+    ...breadcrumb,
+    href: appendTrailingSlash(breadcrumb.href),
+  }));
 
   // findLast didn't have fantastic support yet, reverse the array instead
   const up = [...links].reverse().find((link) => link.href !== pathname);

@@ -217,3 +217,11 @@ export function tokenPathsToEmptyTokenTree(tokenPaths: TokenPath[]): TokenNode {
   }
   return root;
 }
+
+export function appendTrailingSlash(string: string) {
+  if (string[string.length - 1] !== '/') {
+    return string + '/';
+  } else {
+    return string;
+  }
+}
