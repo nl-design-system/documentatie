@@ -5,12 +5,15 @@ import type { Config } from '@docusaurus/types';
 import footer from './footerConfig';
 import navbar from './navConfig';
 import nldsPrismTheme from './nldsPrism';
+import { addTrailingSlashPlugin } from './rehype-trailing-slash';
+
+const siteUrl = 'https://nldesignsystem.nl';
 
 const config: Config = {
   title: 'NL Design System',
   titleDelimiter: '·',
   tagline: 'Eén design system voor alle huisstijlen',
-  url: 'https://nldesignsystem.nl',
+  url: siteUrl,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,6 +31,7 @@ const config: Config = {
           routeBasePath: '/',
         },
         docs: {
+          beforeDefaultRehypePlugins: [[addTrailingSlashPlugin, { siteUrl, stripOrigin: true }]],
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebarConfig.ts'),
           // Please change this to your repo.
@@ -50,6 +54,7 @@ const config: Config = {
           },
         },
         blog: {
+          beforeDefaultRehypePlugins: [[addTrailingSlashPlugin, { siteUrl, stripOrigin: true }]],
           postsPerPage: 'ALL',
           blogSidebarCount: 0,
           showReadingTime: false,
