@@ -59,7 +59,9 @@
     "test-e2e": "playwright test test/e2e/",
     "test-visual": "playwright test test/visual/",
     "publish:argos": "argos upload ./tmp/screenshots",
-    "test-update": "npm-run-all --sequential clean lint build"
+    "test-update": "npm-run-all --sequential clean lint build",
+    "test": "npm-run-all test:**",
+    "test:rehype-plugin": "tsx rehype-trailing-slash.test.ts"
   },
   "dependencies": {
     "@docusaurus/core": "3.1.0",
@@ -159,6 +161,7 @@
     "stylelint-order": "6.0.4",
     "tabler-icons-react": "1.56.0",
     "ts-node": "10.9.2",
+    "tsx": "4.20.3",
     "typescript": "5.7.3",
     "typescript-eslint": "8.24.0",
     "unist-util-visit": "5.0.0",
