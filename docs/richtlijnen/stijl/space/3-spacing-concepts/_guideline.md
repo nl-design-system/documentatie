@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Binnen het NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze 'spacing concepten' worden met behulp van Design Tokens toegepast op alle componenten en templates.
+Binnen NL Design System is ruimte conceptueel opgezet door vijf herbruikbare spacing scales: Inline, Block, Text, Column en Row. Deze 'spacing concepten' worden met behulp van Design Tokens toegepast op alle componenten en templates.
 
 **Let wel**: gebruik 'Spacing' design tokens enkel voor ruimte binnen en tussen componenten. Gebruik 'Sizing' design tokens voor de grootte van elementen.
 
