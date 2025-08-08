@@ -6,6 +6,5 @@ Bijvoorbeeld:
 
 - Een icoon dat betekenis heeft, zoals de 3 streepjes voor een menu of een pijltje naar rechts voor de volgende pagina.
 - Een icoon dat de status aangeeft van een bericht zoals een oranje driehoek voor een waarschuwing en een groen vinkje voor succes.
-- Een rode rand die aangeeft dat een invoerveld fouten bevat (als aanvulling op de foutmelding in tekst).
 
-Het gemeten kleurcontrast tussen het element en de omgeving moet minstens 3:1 zijn. Dit is te controleren met de [Contrast checker](/contrast/).
+Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn. Dit is te controleren met de [Contrast checker](/contrast/).
