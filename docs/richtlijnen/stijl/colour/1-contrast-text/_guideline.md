@@ -17,7 +17,7 @@ De criteria voor kleurcontrast zijn:
 
 Het is handig om een kleurenpalet te hebben waaruit je kan opmaken welke kleurcombinaties voldoende contrast opleveren. Er zijn verschillende tools beschikbaar die je hierbij kunnen helpen. Zo zou je [accessiblepalette.com](https://accessiblepalette.com/) kunnen gebruiken. Deze tool berekend het contrast op basis van de WCAG 2.1 en 3 (concept) richtlijnen.
 
-Het hebben van een uitgebreid kleurenpalet is fijn (ook met het oog op dark-mode). Maar het betekend niet dat je ook veel verschillende kleuren moet gebruiken. Pas de kleuren uit het kleurenpalet toe voor specifieke doeleinden. Het ‘common’ niveau dat we hanteren bij het NL Design System is hier een mooi voorbeeld van.
+Het hebben van een uitgebreid kleurenpalet is fijn (ook met het oog op dark-mode). Maar het betekend niet dat je ook veel verschillende kleuren moet gebruiken. Pas de kleuren uit het kleurenpalet toe voor specifieke doeleinden. Het ‘common’ niveau dat we hanteren bij NL Design System is hier een mooi voorbeeld van.
 
 ## Tekst over afbeelding
 

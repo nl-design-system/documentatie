@@ -8,7 +8,7 @@ Het HTML-attribuut [aria-describedby](https://developer.mozilla.org/en-US/docs/W
 
 Opgemaakte tekst noemen we ['rich text'](https://github.com/orgs/nl-design-system/discussions/289). [Screenreaders](/woordenlijst/#screenreader) geven deze informatie niet goed door of slaan het zelfs helemaal over in een description.
 
-**Let op**: het NL Design System adviseert ook geen tooltip te gebruiken voor het verbergen van **essentiële informatie**. Zie de discussie over [Toggletip](https://github.com/orgs/nl-design-system/discussions/298) op GitHub.
+**Let op**: NL Design System adviseert ook geen tooltip te gebruiken voor het verbergen van **essentiële informatie**. Zie de discussie over [Toggletip](https://github.com/orgs/nl-design-system/discussions/298) op GitHub.
 
 ## Demo video
 

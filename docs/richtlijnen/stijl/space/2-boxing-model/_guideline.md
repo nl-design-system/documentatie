@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De [spacing concepten](#spacing-concepten) van het NL Design System zijn gebouwd rond het fundamentele layout-principe van CSS, ook wel bekend als het ‘box model’.
+De [spacing concepten](#spacing-concepten) van NL Design System zijn gebouwd rond het fundamentele layout-principe van CSS, ook wel bekend als het ‘box model’.
 
 Alle elementen van een webpagina staan in een box, een rechthoek die het element omsluit.
 

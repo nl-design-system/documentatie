@@ -8,8 +8,8 @@ const Jeffrey: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Jeffrey vervult binnen het NL Design System de designrol. Eerder realiseerde hij design systems voor het
-        Ministerie van VWS, Nederlandse Spoorwegen, Nationale Nederlanden en Randstad.
+        Jeffrey vervult binnen NL Design System de designrol. Eerder realiseerde hij design systems voor het Ministerie
+        van VWS, Nederlandse Spoorwegen, Nationale Nederlanden en Randstad.
       </Paragraph>
       <Paragraph>
         Naast een passie voor Design Systems en Ajax heeft Jeffrey een passie voor toegankelijkheid.
