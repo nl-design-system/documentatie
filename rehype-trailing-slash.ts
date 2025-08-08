@@ -3,6 +3,14 @@ import { visit } from 'unist-util-visit';
 
 // Define the type for the element node
 interface ElementNode extends Node {
+  name: string;
+  attributes: {
+    name: string;
+    value: string;
+  }[];
+}
+
+interface MarkdownNode extends Node {
   tagName: string;
   properties: {
     href?: string;
@@ -56,9 +64,24 @@ export function addTrailingSlashPlugin(options: { siteUrl: string; stripOrigin?:
   const siteURL = new URL(siteUrl);
 
   return (tree: Node) => {
-    visit(tree, 'element', (node: ElementNode) => {
+    // handle markdown links
+    visit(tree, 'element', (node: MarkdownNode) => {
       if (node.tagName === 'a' && node?.properties?.href) {
         node.properties.href = addTrailingSlash(node.properties.href, { siteURL, ..._options });
+      }
+    });
+
+    // handle html anchor elements in MDX
+    visit(tree, 'mdxJsxTextElement', (node: ElementNode) => {
+      function findHrefAttribute(list: ElementNode['attributes']) {
+        return list.find((item) => item.name === 'href' && typeof item.value === 'string');
+      }
+
+      if (node.name === 'a') {
+        const attribute = findHrefAttribute(node.attributes);
+        if (attribute) {
+          attribute.value = addTrailingSlash(attribute.value, { siteURL, ..._options });
+        }
       }
     });
   };
