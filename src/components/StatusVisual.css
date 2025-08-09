@@ -1,12 +1,10 @@
 .status-visual__status {
-  align-items: center;
   border-bottom: 2px solid var(--nlds-status-border-color);
   display: flex;
   flex-direction: column;
   padding-block-end: 32px;
   padding-inline-end: 24px;
   padding-inline-start: 24px;
-  text-align: center;
 }
 
 .status-visual__connector {
@@ -15,6 +13,7 @@
   height: 24px;
   margin-top: -2px;
   width: 24px;
+  align-self: center;
 }
 
 .status-visual__status--help-wanted {
@@ -28,13 +27,13 @@
 }
 
 .status-visual__status--unstable {
-  background-color: var(--nlds-status-unstable-background-color);
-  color: var(--nlds-status-unstable-color);
+  background-color: var(--nlds-status-candidate-background-color);
+  color: var(--nlds-status-candidate-color);
 }
 
 .status-visual__status--stable {
-  background-color: var(--nlds-status-stable-background-color);
-  color: var(--nlds-status-stable-color);
+  background-color: var(--nlds-status-hall-of-fame-background-color);
+  color: var(--nlds-status-hall-of-fame-color);
 }
 
 .status-visual__title {
