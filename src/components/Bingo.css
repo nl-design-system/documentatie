@@ -28,8 +28,8 @@
 }
 
 .bingo__input:checked ~ .bingo__label {
-  background-color: var(--nlds-status-stable-background-color);
-  color: var(--nlds-status-stable-color);
+  background-color: var(--nlds-status-hall-of-fame-background-color);
+  color: var(--nlds-status-hall-of-fame-color);
 }
 
 .bingo_items {
