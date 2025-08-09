@@ -16,15 +16,15 @@
 }
 
 .definition-of-done--candidate {
-  --utrecht-accordion-button-background-color: var(--nlds-status-unstable-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-unstable-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-unstable-background-color);
+  --utrecht-accordion-button-background-color: var(--nlds-status-candidate-background-color);
+  --utrecht-accordion-button-color: var(--nlds-status-candidate-color);
+  --utrecht-accordion-panel-border-color: var(--nlds-status-candidate-background-color);
 }
 
 .definition-of-done--hall-of-fame {
-  --utrecht-accordion-button-background-color: var(--nlds-status-stable-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-stable-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-stable-background-color);
+  --utrecht-accordion-button-background-color: var(--nlds-status-hall-of-fame-background-color);
+  --utrecht-accordion-button-color: var(--nlds-status-hall-of-fame-color);
+  --utrecht-accordion-panel-border-color: var(--nlds-status-hall-of-fame-background-color);
 }
 
 .implementation-card-group {
