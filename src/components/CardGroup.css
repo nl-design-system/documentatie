@@ -1,5 +1,4 @@
 .cardgroup {
-  --utrecht-link-color: #30003c;
   --utrecht-heading-2-font-size: 28px;
   display: grid;
   gap: var(--cardgroup-gap);
