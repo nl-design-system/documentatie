@@ -113,6 +113,9 @@ importers:
       '@utrecht/design-tokens':
         specifier: 2.4.0
         version: 2.4.0
+      '@utrecht/youtube-video-react':
+        specifier: 1.0.0
+        version: 1.0.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2802,6 +2805,16 @@ packages:
 
   '@utrecht/web-component-library-stencil@3.0.1':
     resolution: {integrity: sha512-LRviT6RAV7ULxbuF3yxpO41XAlgL6UmPnDWL+ltj9lZm6FmKbprQ03u3mt02RN3Zk9Fr/sTwiJ9ydrHn+aagpQ==}
+
+  '@utrecht/youtube-video-css@1.0.0':
+    resolution: {integrity: sha512-zNbXax+t783aHfl47oST5l/jsz18DdQ3nZP6z5wUl5LHyC3IR/29slu4zl2cTps9KdB8BPCpW1xQj+LMQyRhFg==}
+
+  '@utrecht/youtube-video-react@1.0.0':
+    resolution: {integrity: sha512-6YkBBbt8uciUrxa0z6ogWP8TvhmcawL4tLzYyHCfUc3ubOsGtOvMgpai+JIcnvhqad7IUF+4neLD20mBdadM7A==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      react: '18'
+      react-dom: '18'
 
   '@visx/curve@3.3.0':
     resolution: {integrity: sha512-G1l1rzGWwIs8ka3mBhO/gj8uYK6XdU/3bwRSoiZ+MockMahQFPog0bUkuVgPwwzPSJfsA/E5u53Y/DNesnHQxg==}
@@ -11645,6 +11658,16 @@ snapshots:
   '@utrecht/web-component-library-stencil@3.0.1':
     dependencies:
       '@stencil/core': 4.18.3
+
+  '@utrecht/youtube-video-css@1.0.0': {}
+
+  '@utrecht/youtube-video-react@1.0.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/youtube-video-css': 1.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@visx/curve@3.3.0':
     dependencies:
