@@ -78,7 +78,7 @@
 
   /* TODO add to ma-design-tokens */
   --utrecht-card-background-color: var(--basis-color-action-2-bg-default);
-  --utrecht-card-color: var(--basis-color-action-2-default);
+  --utrecht-card-color: var(--basis-color-action-2-color-document);
   --utrecht-card-border-radius: 4px;
   --utrecht-card-content-padding-block-end: 20px;
   --utrecht-card-content-padding-block-start: 20px;
@@ -145,7 +145,9 @@ p {
   color: var(--ma-navigation-bar-item-hover-color);
 }
 
-.navbar {
+.navbar,
+.main-wrapper,
+.footer {
   width: 100%;
 }
 
@@ -256,10 +258,6 @@ aside button[title="Zijbalk inklappen"],
 #__docusaurus,
 .utrecht-page-layout {
   flex-grow: 1;
-}
-
-.footer {
-  width: 100%;
 }
 
 .footer .container {
