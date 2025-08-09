@@ -28,6 +28,7 @@
   --ifm-container-width-xl: 960px;
   --ifm-link-hover-color: currentColor;
   --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
+  --ifm-navbar-sidebar-width: clamp(20rem, 30rem, 80vw);
   --navbar-inner-min-height: 64px;
   --ifm-navbar-background-color: var(--ma-navigation-bar-background-color);
   --ifm-navbar-link-color: var(--ma-navigation-bar-item-color);
@@ -42,7 +43,6 @@
   --ifm-footer-link-color: var(--ifm-footer-color);
   --ifm-footer-link-hover-color: var(--basis-color-accent-1-inverse-color-subtle);
   --ifm-footer-padding-vertical: 10px;
-  --doc-sidebar-width: 40ch;
   --ifm-breadcrumb-item-background-active: transparent;
   --ifm-breadcrumb-padding-horizontal: 0;
   --ifm-breadcrumb-separator-size: 1.1ch;
@@ -143,6 +143,10 @@ p {
   background-color: var(--ma-navigation-bar-item-hover-background-color);
   border-block-start-color: var(--ma-navigation-bar-item-hover-border-color);
   color: var(--ma-navigation-bar-item-hover-color);
+}
+
+.navbar {
+  width: 100%;
 }
 
 .navbar__link--active {
@@ -249,6 +253,15 @@ aside button[title="Zijbalk inklappen"],
 }
 
 /* Override Docusaurus styles */
+#__docusaurus,
+.utrecht-page-layout {
+  flex-grow: 1;
+}
+
+.footer {
+  width: 100%;
+}
+
 .footer .container {
   margin-inline-start: 20px;
 }
