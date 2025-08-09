@@ -4,807 +4,6 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-:root,
-.nlds-theme {
-  /* Override pixel values from Figma */
-  --utrecht-heading-1-line-height: 1.1;
-  --utrecht-heading-2-line-height: 1.3;
-  --utrecht-heading-3-line-height: 1.3;
-  --utrecht-heading-4-line-height: 1.4;
-  --nlds-blog-post-footer-background-color: #f2ebe4;
-  --nlds-navbar-link-active-border-color: white;
-  --nlds-sidebar-menu-item-active-border-color: white;
-  --nlds-code-block-background-color: #011627;
-  --utrecht-space-around: 1;
-  --utrecht-button-group-margin-block-start: 1em;
-  --utrecht-form-field-margin-block-end: 1em;
-  --utrecht-button-group-inline-gap: 0.25em;
-  --utrecht-form-field-error-message-color: darkred;
-  --utrecht-form-control-max-inline-size: 20em;
-  --utrecht-form-control-border-width: 1px;
-  --utrecht-textbox-padding-block-start: 0.5em;
-  --utrecht-textbox-padding-block-end: 0.5em;
-  --utrecht-textbox-padding-inline-start: 0.5em;
-  --utrecht-textbox-padding-inline-end: 0.5em;
-  --utrecht-form-fieldset-legend-font-weight: 700;
-  --utrecht-form-label-font-weight: 700;
-  --utrecht-form-field-error-message-margin-block-start: 0;
-  --utrecht-form-field-error-message-margin-block-end: 1em;
-  --utrecht-form-field-description-margin-block-start: 0;
-  --ifm-container-width: 1030px;
-  --ifm-container-width-xl: 1080px;
-  --ifm-link-hover-color: currentColor;
-  --utrecht-heading-2-margin-block-start: 32px;
-  --utrecht-checkbox-size: 32px;
-  --utrecht-accordion-panel-padding-block-end: 24px;
-  --utrecht-accordion-panel-padding-block-start: 0;
-  --utrecht-accordion-panel-padding-inline-end: 16px;
-  --utrecht-accordion-panel-padding-inline-start: 16px;
-  --utrecht-button-secondary-action-border-width: 2px;
-  --utrecht-accordion-button-gap: 16px;
-  --utrecht-form-toggle-width: 2.5em;
-  --utrecht-form-toggle-height: 1.5em;
-  --utrecht-form-toggle-thumb-min-inline-size: 0.8em;
-  --utrecht-form-toggle-thumb-margin-inline-start: 0.2em;
-  --utrecht-form-toggle-thumb-margin-inline-end: 0.2em;
-  --utrecht-form-toggle-accent-color: grey;
-  --utrecht-form-toggle-checked-accent-color: green;
-  --utrecht-form-toggle-thumb-background-color: white;
-  --utrecht-form-toggle-track-border-radius: 2em;
-  -moz-osx-font-smoothing: auto !important;
-  --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
-  --navbar-inner-min-height: 64px;
-  --utrecht-button-group-inline-gap: 1ch;
-  --utrecht-button-icon-gap: 1ch;
-  --basis-space-row-6xl: 160px;
-  --basis-space-row-5xl: 64px;
-  --basis-space-row-4xl: 32px;
-  --basis-space-row-3xl: 24px;
-  --basis-space-row-2xl: 20px;
-  --basis-space-row-xl: 16px;
-  --basis-space-row-lg: 12px;
-  --basis-space-row-md: 8px;
-  --basis-space-row-sm: 4px;
-  --basis-space-row-xs: 2px;
-  --basis-space-row-2xs: 1px;
-  --basis-space-column-6xl: 160px;
-  --basis-space-column-5xl: 64px;
-  --basis-space-column-4xl: 32px;
-  --basis-space-column-3xl: 24px;
-  --basis-space-column-2xl: 20px;
-  --basis-space-column-xl: 16px;
-  --basis-space-column-lg: 12px;
-  --basis-space-column-md: 8px;
-  --basis-space-column-sm: 4px;
-  --basis-space-column-xs: 2px;
-  --basis-space-column-2xs: 1px;
-  --basis-space-text-3xl: 24px; /* 3ch */
-  --basis-space-text-2xl: 16px; /* 2ch */
-  --basis-space-text-xl: 14px; /* 1.75ch */
-  --basis-space-text-lg: 12px; /* 1.5ch */
-  --basis-space-text-md: 8px; /* 1ch */
-  --basis-space-text-sm: 6px; /* 0.75ch */
-  --basis-space-text-xs: 4px; /* 0.5ch */
-  --basis-space-text-2xs: 2px; /* 0.25ch */
-  --basis-space-text-3xs: 1px; /* 0.125ch */
-  --basis-space-block-6xl: 64px;
-  --basis-space-block-5xl: 48px;
-  --basis-space-block-4xl: 32px;
-  --basis-space-block-3xl: 24px;
-  --basis-space-block-2xl: 20px;
-  --basis-space-block-xl: 16px;
-  --basis-space-block-lg: 12px;
-  --basis-space-block-md: 8px;
-  --basis-space-block-sm: 4px;
-  --basis-space-block-xs: 2px;
-  --basis-space-block-2xs: 1px;
-  --basis-space-inline-6xl: 64px;
-  --basis-space-inline-5xl: 48px;
-  --basis-space-inline-4xl: 32px;
-  --basis-space-inline-3xl: 24px;
-  --basis-space-inline-2xl: 20px;
-  --basis-space-inline-xl: 16px;
-  --basis-space-inline-lg: 12px;
-  --basis-space-inline-md: 8px;
-  --basis-space-inline-sm: 4px;
-  --basis-space-inline-xs: 2px;
-  --basis-space-inline-2xs: 1px;
-}
-
-.utrecht-form-field--checkbox {
-  align-items: center;
-}
-
-.utrecht-breadcrumb-nav {
-  margin-block-end: var(--utrecht-breadcrumb-nav-margin-block-end, 20px);
-}
-
-.container--narrow {
-  --ifm-container-width: 784px;
-  --ifm-container-width-xl: var(--ifm-container-width);
-}
-
-.utrecht-unordered-list {
-  list-style-type: square;
-}
-
-.utrecht-unordered-list .utrecht-unordered-list__item::marker {
-  content: "◼";
-  font-size: 16px;
-}
-
-.button {
-  border: none;
-  font-size: var(--utrecht-button-font-size);
-  line-height: var(--utrecht-button-line-height);
-  padding-block-end: var(--utrecht-button-padding-block-end);
-  padding-block-start: var(--utrecht-button-padding-block-start);
-  padding-inline-end: calc(8px + var(--utrecht-button-icon-size) + var(--utrecht-button-padding-inline-end));
-  padding-inline-start: var(--utrecht-button-padding-inline-start);
-  position: relative;
-}
-
-.utrecht-button-link:hover,
-.utrecht-button:hover {
-  --utrecht-button-primary-action-background-color: #0b732c;
-  --utrecht-button-primary-action-color: #fff;
-  --utrecht-button-secondary-action-border-color: #0b6728;
-  --utrecht-button-secondary-action-color: #0b6728;
-  --ifm-link-hover-color: var(--_utrecht-button-color);
-  --ifm-link-hover-decoration: none;
-}
-
-.utrecht-form-field--checkbox > p {
-  display: flex;
-  gap: 0.5em;
-  justify-content: flex-start;
-  line-height: 1.4;
-}
-
-.utrecht-form-field--checkbox > p input {
-  --utrecht-checkbox-size: 16px;
-  flex: none;
-}
-
-.utrecht-form-field--checkbox > p .utrecht-checkbox--custom.utrecht-checkbox--html-input:checked,
-.utrecht-form-field--checkbox > .utrecht-checkbox--custom.utrecht-checkbox--html-input:checked,
-.utrecht-custom-checkbox--html-input:checked {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-  background-size: 75%;
-}
-
-.utrecht-form-field--checkbox label {
-  --utrecht-form-label-font-weight: 400;
-}
-
-.footer {
-  padding-block: 16px;
-  width: 100%;
-}
-
-.footer--dark {
-  --ifm-footer-background-color: #0d1f2a;
-  --ifm-footer-color: white;
-  --ifm-footer-link-hover-color: white;
-}
-
-.footer__items {
-  display: grid;
-  gap: 36px;
-  grid-auto-flow: column;
-  justify-content: flex-start;
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.footer__links {
-  justify-content: space-between;
-}
-
-.footer__links .col {
-  flex: none;
-  width: fit-content;
-}
-
-.footer__link-item svg {
-  display: none;
-}
-
-.footer__items {
-  display: grid;
-  gap: 36px;
-  grid-auto-flow: column;
-  justify-content: flex-start;
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.footer__links {
-  justify-content: space-between;
-}
-
-.footer__links .col {
-  flex: none;
-  width: fit-content;
-}
-
-.footer__link-item svg {
-  display: none;
-}
-
-.docusaurus-highlight-code-line {
-  background-color: rgb(0 0 0 / 10%);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
-
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgb(0 0 0 / 30%);
-}
-
-/* Overwrite docusaurus styling but use the classname to enable lookup for content position by docusaurus */
-.navbar {
-  --ifm-link-hover-decoration: none;
-
-  display: unset;
-  height: auto;
-  padding: 0;
-}
-
-.navbar__link {
-  --utrecht-link-text-decoration: none;
-  --utrecht-link-color: currentColor;
-  --utrecht-link-focus-color: #00303d;
-
-  font-size: 18px;
-  position: relative;
-  text-decoration: none;
-}
-
-/* FIXME: when the navbar is custom this should be simpler. Currently the home link is always active */
-.navbar__link--active:not(.navbar__brand, .utrecht-button-link),
-.navbar__link:not(.utrecht-button-link):hover {
-  border-block-end-color: var(--nlds-navbar-link-active-border-color, transparent);
-  border-block-end-style: solid;
-  border-block-end-width: 4px;
-  border-block-start-color: transparent;
-  border-block-start-style: solid;
-  border-block-start-width: 4px;
-}
-
-.navbar--dark {
-  --ifm-navbar-background-color: var(--nlds-page-header-background-color);
-  --ifm-navbar-link-hover-color: white;
-  --ifm-menu-color-active: white;
-}
-
-.navbar__inner {
-  align-items: center;
-  flex-wrap: nowrap;
-  min-height: var(--navbar-inner-min-height);
-}
-.table-of-contents {
-  font-size: 18px;
-}
-
-.nlds-theme {
-  align-content: inherit;
-  font-weight: 400;
-  min-height: 100vh;
-}
-
-.main-layout {
-  display: grid;
-  grid-template-areas:
-    "skip-link"
-    "announcement-bar"
-    "header"
-    "main-content"
-    "footer";
-  grid-template-rows: auto auto auto 1fr auto;
-}
-
-[aria-label="Ga naar hoofdinhoud"] {
-  grid-area: skip-link;
-}
-
-.navbar {
-  grid-area: header;
-}
-
-.main-wrapper {
-  grid-area: main-content;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.mega-footer-link,
-.homepage-hero__description_src-components-HomepageHero-module a {
-  /* Add white foreground color and underline to links in hero and footer */
-  color: white;
-  text-decoration: underline;
-}
-
-.homepage-hero_src-components-HomepageHero-module {
-  --ifm-h1-font-size: var(--utrecht-heading-3-font-size);
-}
-
-/* Display internal link below sticky header */
-:target {
-  scroll-margin-block-start: calc(var(--navbar-inner-min-height));
-}
-
-.nlds-fragment-redirect {
-  --ifm-paragraph-margin-bottom: 0;
-}
-
-code,
-pre {
-  font-family: "Fira Code VF" !important;
-  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
-  font-size: 16px;
-  vertical-align: 1%;
-}
-code {
-  background-color: transparent !important;
-  border-inline-end: 0;
-  border-inline-start: 0;
-  border-width: 0;
-  padding: 0;
-}
-
-article {
-  max-inline-size: var(--utrecht-article-max-inline-size);
-}
-
-p a,
-li a {
-  text-decoration: underline; /* Add underline to links in running paragraph text and lists */
-  text-underline-offset: 0.2em;
-}
-
-[class^="homepage-hero__description"] p a {
-  /* Dirty hack to target link in hero banner text */
-  color: white;
-  text-decoration: underline;
-}
-
-.theme-edit-this-page {
-  /* Temporarily disable Edit this page link since not every page can be editted by the community */
-  display: none;
-}
-
-.pagination-nav {
-  display: none; /* Temporarily disabled pagination */
-}
-
-.utrecht-ordered-list {
-  width: auto !important;
-}
-
-.voorbeeld-theme {
-  --utrecht-button-group-margin-block-start: 20px;
-}
-
-.navbar__items {
-  gap: 16px;
-}
-
-.navbar__items--right {
-  gap: 0;
-}
-
-.navbar__item:not(.utrecht-button-link, .utrecht-button) {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  padding-inline: 0;
-}
-
-.navbar {
-  --utrecht-button-subtle-color: white;
-  --utrecht-link-color: white;
-  --utrecht-item-subtle-hover-color: white;
-  --utrecht-button-subtle-hover-background-color: #004152;
-  --utrecht-link-hover-color: white;
-  --utrecht-link-hover-background-color: #004152;
-  --utrecht-button-subtle-active-color: white;
-  --utrecht-button-subtle-active-background-color: #224a62;
-  --utrecht-link-active-color: white;
-  --utrecht-link-active-background-color: #224a62;
-}
-
-.navbar-sidebar__item {
-  padding-block: 16px;
-  padding-inline: 0;
-}
-
-.menu__list .menu__list {
-  padding-inline: 0;
-}
-
-.menu__list {
-  --utrecht-button-subtle-color: var(--utrecht-link-color);
-  --utrecht-button-focus-color: var(--nlds-focus-color);
-  --utrecht-button-icon-size: 28px;
-}
-
-.menu__link {
-  --utrecht-link-text-decoration: none;
-  --utrecht-link-color: var(--nlds-interaction-color);
-
-  border-radius: 0;
-  line-height: 1.5;
-  margin-inline-start: 4px;
-  padding-block: 0.75rem;
-  text-decoration: none;
-}
-
-.menu__link--active,
-.menu__link:active {
-  background-color: hsl(0 0% 0% / 5%);
-  border-inline-start-color: var(--nlds-sidebar-menu-item-active-border-color);
-  border-inline-start-style: solid;
-  border-inline-start-width: 4px;
-  margin-inline-start: 0;
-}
-
-.menu__link:hover {
-  border-inline-start-color: var(--nlds-sidebar-menu-item-active-border-color);
-  border-inline-start-style: solid;
-  border-inline-start-width: 4px;
-  margin-inline-start: 0;
-}
-
-.menu__list-item-collapsible {
-  border-radius: 0;
-}
-
-.doc-sidebar-main-category {
-  display: none;
-}
-
-.navbar-sidebar__item .menu__link {
-  --utrecht-link-color: white;
-}
-
-.navbar-sidebar__item .menu__link--active,
-.navbar-sidebar__item .menu__link:active {
-  --utrecht-link-color: white;
-
-  background-color: var(--nlds-menu-item-selected-background-color);
-}
-
-.navbar-sidebar .navbar__item--github-link {
-  margin-block-start: 48px;
-}
-
-.sidebar__main-category {
-  display: none;
-}
-
-.menu__list-item-collapsible > .menu__link--active:not([aria-expanded="false"], :hover) {
-  border-color: transparent;
-}
-
-.theme-doc-sidebar-item-link-level-3,
-.theme-doc-sidebar-item-category-level-3 {
-  font-weight: 400;
-  padding-inline-start: 0;
-}
-
-.theme-doc-sidebar-item-link-level-3 a,
-.theme-doc-sidebar-item-category-level-3 a {
-  padding-inline-start: 24px;
-}
-
-.theme-doc-sidebar-item-link-level-4 {
-  padding-inline-start: 0;
-}
-
-.theme-doc-sidebar-item-link-level-4 a,
-.theme-doc-sidebar-item-category-level-4 a {
-  padding-inline-start: 40px;
-}
-
-.theme-doc-sidebar-item-link-level-5 a {
-  padding-inline-start: 56px;
-}
-
-.doc-card-list {
-  margin-block-end: 2em !important;
-}
-
-@media (width >= 997px) {
-  :root {
-    --navbar-inner-min-height: 80px;
-  }
-
-  .navbar__items--left {
-    max-width: 945px;
-  }
-
-  .navbar__inner {
-    align-items: center;
-    gap: 20px;
-    padding-inline-end: 16px;
-    padding-inline-start: 16px;
-  }
-
-  .navbar__items {
-    align-self: stretch;
-  }
-
-  .navbar .navbar__toggle {
-    display: none;
-  }
-}
-
-@media screen and (width <= 996px) {
-  .nlds-theme {
-    --utrecht-article-max-inline-size: calc(100vw - 2 * var(--ifm-spacing-horizontal));
-    --utrecht-heading-1-font-size: 32px;
-    --utrecht-heading-2-font-size: 24px;
-    --utrecht-heading-3-font-size: 22px;
-    --utrecht-heading-4-font-size: 20px;
-    --utrecht-heading-5-font-size: 18px;
-    --utrecht-heading-6-font-size: 16px;
-  }
-
-  .navbar .navbar__item {
-    display: none;
-  }
-
-  .navbar-sidebar {
-    --ifm-menu-link-padding-horizontal: 16px;
-  }
-
-  .navbar .navbar__item--show-on-mobile {
-    display: flex;
-  }
-
-  .navbar .navbar__items {
-    display: none;
-  }
-
-  .navbar .navbar__items--show-on-mobile {
-    display: flex;
-  }
-
-  .footer__items {
-    gap: 16px;
-  }
-
-  .footer__col {
-    margin-bottom: 0;
-  }
-
-  .sidebar__main-category {
-    display: block;
-    font-size: 28px;
-    margin-block-end: 48px;
-    padding-inline-start: 20px;
-  }
-}
-
-@media screen and (width <= 850px) {
-  .footer__items {
-    grid-auto-flow: row;
-  }
-}
-
-a {
-  transition: none;
-}
-
-body:not(.navigation-with-keyboard) *:not(input):focus {
-  outline-color: var(--utrecht-focus-outline-color, revert);
-  outline-offset: var(--utrecht-focus-outline-offset, revert);
-  outline-style: var(--utrecht-focus-outline-style, revert);
-  outline-width: var(--utrecht-focus-outline-width, revert);
-}
-
-.container--wide {
-  padding-inline: 24px;
-}
-
-@media screen and (width >= 1150px) {
-  .navbar__items--left {
-    gap: 20px;
-  }
-}
-
-@media (width >= 997px) {
-  .nlds-theme {
-    --docusaurus-announcement-bar-height: 80px;
-    --nlds-sidebar-menu-item-active-border-color: #148839;
-  }
-}
-
-.dsw-usps ul {
-  padding: 0;
-}
-.dsw-usps li {
-  color: var(--nlds-document-subtle-color);
-  display: inline;
-  font-size: 1.25em;
-  list-style: none;
-  padding: 0;
-}
-.dsw-usps li:not(:last-child)::after {
-  content: "∙";
-  display: inline-block;
-  margin-left: 0.25em;
-  padding-right: 0.25em;
-}
-.dsw-signup {
-  background-color: var(--utrecht-button-primary-action-background-color);
-  border-radius: 0.25em;
-  color: var(--utrecht-button-primary-action-color);
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-.dsw-signup:hover {
-  color: var(--utrecht-button-primary-action-color);
-  text-decoration: inherit;
-}
-.dsw-signup-main {
-  font-weight: 700;
-}
-.dsw-signup-sup {
-  display: block;
-  font-size: 0.65em;
-}
-
-/* HACK: these fixes need to be made in utrecht too */
-.utrecht-button:focus {
-  background-color: var(--_utrecht-button-background-color) !important;
-  border-color: var(--_utrecht-button-border-color) !important;
-  color: var(--_utrecht-button-color) !important;
-  scale: var(--utrecht-button-scale, 1) !important;
-}
-
-.utrecht-button:focus-visible {
-  background-color: var(--_utrecht-button-focus-background-color) !important;
-  border-color: var(--_utrecht-button-focus-border-color) !important;
-  color: var(--_utrecht-button-focus-color) !important;
-  scale: var(--utrecht-button-focus-scale, 1) !important;
-}
-
-.utrecht-link:focus {
-  background-color: inherit !important;
-  color: inherit !important;
-  text-decoration: inherit !important;
-  text-decoration-thickness: inherit !important;
-}
-
-.utrecht-link:focus-visible {
-  background-color: var(--utrecht-link-focus-background-color, transparent) !important;
-  color: var(--utrecht-link-focus-color, var(--utrecht-link-color)) !important;
-  text-decoration: var(--utrecht-link-focus-text-decoration, var(--utrecht-link-text-decoration, underline)) !important;
-  text-decoration-skip: none !important;
-  text-decoration-skip-ink: none !important;
-  text-decoration-thickness: max(
-    var(--utrecht-link-focus-text-decoration-thickness, var(--utrecht-link-text-decoration-thickness)),
-    1px
-  ) !important;
-}
-
-/* End HACK */
-
-img {
-  height: auto;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-abbr[title] {
-  pointer-events: none;
-  text-decoration: none;
-}
-
-.utrecht-breadcrumb-nav {
-  margin-inline-start: calc(-1 * var(--utrecht-breadcrumb-nav-item-padding-inline-start, 0));
-}
-
-#__blog-post-container > p:first-child {
-  font-size: var(--utrecht-paragraph-lead-font-size);
-}
-
-/* WCAG EM rapport */
-.wcag-em dt {
-  font-weight: 700;
-}
-.wcag-em td,
-.wcag-em th {
-  text-align: left;
-  vertical-align: top;
-}
-
-.wcag-em td h6,
-.wcag-em th h6 {
-  margin-top: auto;
-}
-
-/* CSS Richtlijnen */
-.nlds-dont {
-  border: 2px solid #c00;
-  margin: 20px;
-  padding: 20px;
-}
-
-.nlds-icon-ext {
-  background-image: url("../icons/external-link.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  padding-right: 20px;
-}
-.docs-doc-page .utrecht-html label,
-.docs-doc-page .utrecht-html legend {
-  font-weight: 700;
-}
-
-.docs-doc-page input[type="text"],
-.docs-doc-page input[type="email"],
-.docs-doc-page input[type="tel"],
-.docs-doc-page input[type="password"] {
-  display: block;
-}
-.docs-doc-page ul {
-  margin-bottom: 1.5rem;
-}
-.docs-doc-page ol {
-  margin-bottom: 1.5rem;
-}
-.docs-doc-page div.button {
-  border: 1px solid #223c61;
-  border-radius: 8px;
-  font-weight: 700;
-  padding-inline-end: 12px;
-}
-
-.docs-doc-page div.button:hover,
-.docs-doc-page button:hover {
-  cursor: pointer;
-}
-
-.docs-doc-page .utrecht-html input[type="text"]::placeholder,
-.docs-doc-page .nlds-canvas__example_src-components-Canvas-Canvas-module input[type="text"]::placeholder {
-  opacity: 1;
-  color: #757575;
-  opacity: 100%;
-}
-
-.docs-doc-page .utrecht-html button {
-  margin: 16px 0;
-}
-
-.nlds-guideline .utrecht-html p {
-  width: 25rem;
-}
-
-.docs-doc-page .utrecht-html input[type="text" i]:invalid {
-  border-color: #7a8aa0;
-  border-width: 1px;
-}
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -818,6 +17,311 @@ abbr[title] {
   word-wrap: normal;
 }
 
+:root,
+.ma-theme {
+  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
+  -moz-osx-font-smoothing: auto !important;
+  -webkit-font-smoothing: auto !important;
+
+  /* You can override the default Infima variables here. */
+  --ifm-container-width: 870px;
+  --ifm-container-width-xl: 960px;
+  --ifm-link-hover-color: currentColor;
+  --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
+  --navbar-inner-min-height: 64px;
+  --ifm-navbar-background-color: var(--ma-navigation-bar-background-color);
+  --ifm-navbar-link-color: var(--ma-navigation-bar-item-color);
+  --ifm-menu-color: var(--basis-color-accent-1-color-default);
+  --ifm-menu-color-active: var(--basis-color-accent-1-color-active);
+  --ifm-menu-color-background-active: var(--basis-color-accent-1-bg-default);
+  --ifm-menu-color-hover: var(--basis-color-accent-1-color-hover);
+  --ifm-menu-color-background-hover: var(--basis-color-accent-1-bg-hover);
+  --ifm-menu-link-padding-horizontal: 0;
+  --ifm-footer-background-color: var(--basis-color-accent-1-inverse-bg-subtle);
+  --ifm-footer-color: var(--basis-color-accent-1-inverse-color-default);
+  --ifm-footer-link-color: var(--ifm-footer-color);
+  --ifm-footer-link-hover-color: var(--basis-color-accent-1-inverse-color-subtle);
+  --ifm-footer-padding-vertical: 10px;
+  --doc-sidebar-width: 40ch;
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-breadcrumb-padding-horizontal: 0;
+  --ifm-breadcrumb-separator-size: 1.1ch;
+
+  /* Temporary styling for custom nlds components */
+  --nlds-blog-post-footer-background-color: #f2ebe4;
+  --nlds-navbar-link-active-border-color: white;
+  --nlds-sidebar-menu-item-active-border-color: white;
+  --nlds-code-block-background-color: #011627;
+  --nlds-status-help-wanted-subtle-background-color: var(--ma-color-oranje-2);
+  --nlds-status-help-wanted-background-color: var(--ma-color-oranje-3);
+  --nlds-status-help-wanted-border-color: var(--ma-color-oranje-5);
+  --nlds-status-help-wanted-color: var(--ma-color-oranje-12);
+  --nlds-status-community-subtle-background-color: var(--ma-color-paars-2);
+  --nlds-status-community-background-color: var(--ma-color-paars-3);
+  --nlds-status-community-border-color: var(--ma-color-paars-5);
+  --nlds-status-community-color: var(--ma-color-paars-12);
+  --nlds-status-candidate-subtle-background-color: var(--ma-color-blauw-2);
+  --nlds-status-candidate-background-color: var(--ma-color-blauw-3);
+  --nlds-status-candidate-border-color: var(--ma-color-blauw-5);
+  --nlds-status-candidate-color: var(--ma-color-blauw-12);
+  --nlds-status-hall-of-fame-subtle-background-color: var(--ma-color-groen-2);
+  --nlds-status-hall-of-fame-background-color: var(--ma-color-groen-3);
+  --nlds-status-hall-of-fame-border-color: var(--ma-color-groen-5);
+  --nlds-status-hall-of-fame-color: var(--ma-color-groen-12);
+  --nlds-status-border-color: var(--ma-color-paars-12);
+
+  /* Override pixel values from Figma */
+  --utrecht-heading-1-line-height: 1.1;
+  --utrecht-heading-2-line-height: 1.3;
+  --utrecht-heading-3-line-height: 1.3;
+  --utrecht-heading-4-line-height: 1.4;
+
+  /* TODO add to ma-design-tokens */
+  --utrecht-card-background-color: var(--basis-color-action-2-bg-default);
+  --utrecht-card-color: var(--basis-color-action-2-default);
+  --utrecht-card-border-radius: 4px;
+  --utrecht-card-content-padding-block-end: 20px;
+  --utrecht-card-content-padding-block-start: 20px;
+  --utrecht-button-group-margin-block-end: 20px;
+  --utrecht-button-group-margin-block-start: 40px;
+
+  /* Hackysnacky tokens */
+  --utrecht-card-link-hover-background-color: var(--basis-color-action-2-bg-hover);
+
+  /* Pet peaves tokens that should be fixed in ma-design-tokens */
+  --basis-text-font-size-md: 1.125rem !important;
+  --basis-text-font-size-sm: 1rem !important;
+  --utrecht-link-text-underline-offset: 4px !important;
+
+  --ifm-footer-link-horizontal-spacing: 20px;
+}
+
+/* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
+p {
+  max-inline-size: 80ch;
+}
+
+.menu__link {
+  text-decoration: none;
+  padding-inline: 20px;
+  border-radius: 0;
+  border-inline-start: 4px solid transparent;
+}
+
+.menu__link--active,
+.menu__list-item-collapsible--active {
+  background-color: var(--ifm-menu-color-background-active);
+  border-inline-start-color: var(--basis-color-accent-1-border-active);
+  color: var(--basis-color-accent-1-color-active);
+}
+
+.menu__link:hover,
+.menu__list-item-collapsible:hover {
+  background-color: var(--basis-color-accent-1-bg-hover);
+  border-inline-start-color: var(--basis-color-accent-1-border-hover);
+  color: var(--basis-color-accent-1-color-hover);
+}
+
+.menu__caret {
+  padding-inline: 10px;
+}
+
+.menu {
+  padding: 0 !important;
+}
+
+.ma-navigation-bar-item {
+  text-decoration: none;
+  min-height: 100%;
+  align-content: center;
+  border-block-start-width: 4px;
+  border-block-start-style: solid;
+  border-color: transparent;
+}
+
+.ma-navigation-bar-item:hover {
+  background-color: var(--ma-navigation-bar-item-hover-background-color);
+  border-block-start-color: var(--ma-navigation-bar-item-hover-border-color);
+  color: var(--ma-navigation-bar-item-hover-color);
+}
+
+.navbar__link--active {
+  background-color: var(--ma-navigation-bar-item-active-background-color);
+  border-block-start-color: var(--ma-navigation-bar-item-active-border-color);
+}
+
+.navbar-sidebar {
+  --ifm-menu-color: var(--ma-navigation-bar-item-color);
+}
+
+.navbar-sidebar__back {
+  background-color: var(--basis-color-accent-1-inverse-bg-default);
+  color: var(--ma-navigation-bar-item-color);
+  font-size: var(--basis-text-font-size-sm);
+  padding-block-start: 20px;
+}
+
+.navbar-sidebar {
+  --ifm-menu-color-background-active: transparent;
+}
+
+.navbar-sidebar__back:hover {
+  background-color: var(--ma-navigation-bar-item-hover-background-color);
+  color: var(--ma-navigation-bar-item-hover-color);
+}
+
+.navbar-sidebar .menu__link--active {
+  background-color: var(--basis-color-accent-1-inverse-bg-active);
+  border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
+  color: var(--basis-color-accent-1-inverse-color-active);
+}
+.navbar-sidebar .menu__link:hover,
+.navbar-sidebar .menu__list-item-collapsible:hover,
+.navbar-sidebar .menu__caret:hover {
+  background-color: var(--basis-color-accent-1-inverse-bg-hover);
+  border-inline-start-color: var(--basis-color-accent-1-inverse-border-hover);
+  color: var(--basis-color-accent-1-inverse-color-hover);
+}
+
+.theme-doc-sidebar-item-link-level-3 .menu__link,
+.theme-doc-sidebar-item-category-level-3 .menu__link {
+  padding-inline-start: 32px;
+}
+
+.theme-doc-sidebar-item-link-level-4 .menu__link,
+.theme-doc-sidebar-item-category-level-4 .menu__link {
+  padding-inline-start: 48px;
+}
+
+/* Hide Docusaurus items */
+aside a[href="/"],
+aside button[title="Zijbalk inklappen"],
+.sidebar__main-category > div,
+.theme-doc-footer,
+.pagination-nav {
+  display: none !important;
+}
+
+/* HACK: Persoonlijke Regelingen Assistent DonutChart */
+.pra-donutchart {
+  border: none !important;
+  display: inline-flex !important;
+  inline-size: auto !important;
+  padding-inline-end: 1ch;
+  vertical-align: middle;
+}
+
+.pra-donutchart-chart {
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.pra-donutchart-legend {
+  display: none !important;
+}
+
+/* HACK: improve Utrecht components */
+.utrecht-card {
+  --utrecht-heading-3-margin-block-start: 1rem;
+  --utrecht-heading-3-font-size: 1.5rem;
+  --utrecht-link-color: var(--utrecht-card-color);
+  --utrecht-link-text-decoration-color: var(--utrecht-card-color);
+
+  --utrecht-card-padding-inline-end: 20px;
+  --utrecht-card-padding-inline-start: 20px;
+
+  padding-inline-end: var(--utrecht-card-padding-inline-end);
+  padding-inline-start: var(--utrecht-card-padding-inline-start);
+}
+
+.utrecht-card--link:hover {
+  background-color: var(--utrecht-card-link-hover-background-color);
+}
+
+.utrecht-form-field--checkbox label {
+  --utrecht-form-label-font-weight: 400;
+}
+
+.utrecht-accordion__button::after {
+  display: none;
+}
+
+/* Override Docusaurus styles */
+.footer .container {
+  margin-inline-start: 20px;
+}
+
+.footer__link-separator {
+  display: none;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.footer__link-item {
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
+  text-decoration-skip-ink: auto;
+}
+
+.theme-doc-sidebar-container {
+  margin-top: 0 !important;
+}
+
+.DocSearch {
+  --docsearch-muted-color: #757575;
+  --docsearch-modal-width: 50em;
+}
+
+.DocSearch .DocSearch-Label {
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.DocSearch ul {
+  margin: auto 0;
+}
+
+.table-of-contents {
+  font-size: var(--basis-text-font-size-sm);
+}
+
+.breadcrumbs__link {
+  color: var(--basis-color-action-2-color-default);
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
+  font-size: var(--basis-text-font-size-sm);
+  text-decoration-skip-ink: auto;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--basis-color-action-2-color-hover);
+  text-decoration: none;
+  background-color: none;
+}
+
+.breadcrumbs__link:active {
+  color: var(--basis-color-action-2-color-active);
+  text-decoration: none;
+  background-color: none;
+}
+
+.breadcrumbs__link[href="/"]:after {
+  content: "Home";
+}
+
+.breadcrumbs__link[href="/"] svg {
+  display: none;
+}
+
+.containter {
+  padding-block: 20px;
+}
+
+/* Add styling to code blocks  */
 code[class*="language-"] {
   background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-code-color);
@@ -866,10 +370,9 @@ pre[class*="language-"] {
   word-wrap: normal;
 }
 
+/* avoid double spacing */
 pre > code {
   padding: 0 !important;
-
-  /* avoid double spacing */
 }
 
 ul + div[class*="language-"],
@@ -965,74 +468,21 @@ pre {
   --nlds-code-block-keyword-color: rgb(214 222 235);
 }
 
-.theme-doc-sidebar-container {
-  margin-top: 0 !important;
-}
-
-.utrecht-document {
-  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
-  -webkit-font-smoothing: auto !important;
-  -moz-osx-font-smoothing: auto !important;
-}
-
-.utrecht-spotlight-section {
-  --utrecht-link-text-decoration-color: var(--utrecht-document-color);
-  --utrecht-link-color: var(--utrecht-document-color);
-}
-
-/* HACK: Persoonlijke Regelingen Assistent DonutChart */
-.pra-donutchart {
-  border: none !important;
-  display: inline-flex !important;
-  inline-size: auto !important;
-  padding-inline-end: 1ch;
-  vertical-align: middle;
-}
-
-.pra-donutchart-chart {
-  padding-block: 0 !important;
-  padding-inline: 0 !important;
-  height: 20px !important;
-  width: 20px !important;
-}
-
-.pra-donutchart-legend {
-  display: none !important;
-}
-
-.utrecht-paragraph--lead + p {
-  margin-block-start: var(--utrecht-paragraph-margin-block-start);
-}
-
-/* Temporary fix for accordion spacing */
-.utrecht-accordion__header {
+.footer__links {
   margin: 0;
 }
 
-.DocSearch {
-  --docsearch-muted-color: #757575;
-  --docsearch-modal-width: 50em;
+code,
+pre {
+  font-family: "Fira Code VF" !important;
+  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
+  font-size: 16px;
+  vertical-align: 1%;
 }
-.DocSearch .DocSearch-Label {
-  font-size: 0.9em;
-  line-height: 1;
-}
-.DocSearch ul {
-  margin: auto 0;
-}
-
-.dl__item {
-  margin-bottom: 20px;
-}
-
-.dl__term {
-  font-weight: bold;
-}
-
-.dl__definition {
-  margin-left: 0;
-}
-
-.definition__meta {
-  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
+code {
+  background-color: transparent !important;
+  border-inline-end: 0;
+  border-inline-start: 0;
+  border-width: 0;
+  padding: 0;
 }

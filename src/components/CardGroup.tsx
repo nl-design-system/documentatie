@@ -6,7 +6,17 @@ import './CardGroup.css';
 type Appearance = 'small' | 'medium' | 'large' | 'background';
 
 interface CardIllustrationProps extends HTMLAttributes<HTMLElement> {
-  background?: boolean;
+  background?:
+    | 'light-orange'
+    | 'light-pink'
+    | 'light-purple'
+    | 'light-green'
+    | 'light-blue'
+    | 'dark-orange'
+    | 'dark-pink'
+    | 'dark-purple'
+    | 'dark-green'
+    | 'dark-blue';
 }
 
 export const CardIllustration = ({
@@ -15,7 +25,7 @@ export const CardIllustration = ({
   className,
   ...props
 }: PropsWithChildren<CardIllustrationProps>) => (
-  <div className={clsx('card__illustration', background && 'card__illustration--background', className)} {...props}>
+  <div className={clsx('card__illustration', background && `card__illustration--${background}`, className)} {...props}>
     {children}
   </div>
 );
@@ -29,9 +39,17 @@ interface CardProps {
   href?: string;
   className?: string;
   component?: 'article' | 'section' | 'div';
+  background?: boolean;
 }
 
-export const Card = ({ href, appearance, className, component = 'div', children }: PropsWithChildren<CardProps>) => {
+export const Card = ({
+  href,
+  appearance,
+  className,
+  component = 'div',
+  background,
+  children,
+}: PropsWithChildren<CardProps>) => {
   const Wrapper = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => {
     if (component === 'article') return <article {...props} />;
     if (component === 'section') return <section {...props} />;
@@ -39,7 +57,16 @@ export const Card = ({ href, appearance, className, component = 'div', children 
   };
 
   const card = (
-    <Wrapper className={clsx('cardgroup__card', `cardgroup__card--${appearance}`, className)}>{children}</Wrapper>
+    <Wrapper
+      className={clsx(
+        'cardgroup__card',
+        background && 'cardgroup__card--light-purple',
+        `cardgroup__card--${appearance}`,
+        className,
+      )}
+    >
+      {children}
+    </Wrapper>
   );
 
   return href ? (

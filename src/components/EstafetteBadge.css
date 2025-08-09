@@ -25,11 +25,11 @@
 }
 
 .estafette-badge--candidate {
-  --nlds-estafette-badge-background-color: var(--nlds-status-unstable-background-color);
-  --nlds-estafette-badge-color: var(--nlds-status-unstable-color);
+  --nlds-estafette-badge-background-color: var(--nlds-status-candidate-background-color);
+  --nlds-estafette-badge-color: var(--nlds-status-candidate-color);
 }
 
 .estafette-badge--hall-of-fame {
-  --nlds-estafette-badge-background-color: var(--nlds-status-stable-background-color);
-  --nlds-estafette-badge-color: var(--nlds-status-stable-color);
+  --nlds-estafette-badge-background-color: var(--nlds-status-hall-of-fame-background-color);
+  --nlds-estafette-badge-color: var(--nlds-status-hall-of-fame-color);
 }
