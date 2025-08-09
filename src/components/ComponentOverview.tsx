@@ -16,7 +16,6 @@ import {
 } from '../utils';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
-import './ComponentOverview.css';
 import { EstafetteBadge } from './EstafetteBadge';
 
 export const ComponentOverview = () => {
@@ -103,7 +102,6 @@ export const ComponentOverview = () => {
       <AccordionProvider
         sections={[
           {
-            className: 'utrecht-accordion--nlds-subtle',
             headingLevel: 2,
             expanded: params.size > 0,
 
