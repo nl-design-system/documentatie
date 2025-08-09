@@ -128,7 +128,7 @@ Onze [WCAG-pagina's](https://nldesignsystem.nl/wcag) beschrijven wat van belang 
 - Help de gebruiker zo goed als het kan de taak te vervullen op je website. Zorg ervoor dat ze [gemakkelijk om hulp kunnen vragen](/wcag/3.3.5) als ze er niet uitkomen.
 - Maak het [makkelijk om veilig in te loggen](/wcag/3.3.8). Voorkom captcha's en rekensommen. Sta copy/paste van een wachtwoord toe, zodat een gebruiker een wachtwoordmanager kan gebruiken.
 
-De programmeurs kunnen met dit ontwerp eigenlijk al aan de slag, het geeft de grote lijnen aan van de opbouw en functionaliteit van de website. Het NL Design System biedt hiervoor herbruikbare componenten, bij [onze componenten](https://nldesignsystem.nl/componenten/) is al veel functionaliteit uitgewerkt.
+De programmeurs kunnen met dit ontwerp eigenlijk al aan de slag, het geeft de grote lijnen aan van de opbouw en functionaliteit van de website. Het NL Design System biedt hiervoor herbruikbare componenten, bij [onze componenten](/componenten) is al veel functionaliteit uitgewerkt.
 
 Hoe het er dan precies uitziet kan later, in stap 5, worden toegevoegd nadat het visueel ontwerp is gemaakt.
 
@@ -142,7 +142,7 @@ Geef gebruikers een gerichte taak. Bijvoorbeeld: "Er zit een stoeptegel los bij 
 
 Nu gaat de visueel ontwerper aan de slag en werkt het interactie-ontwerp uit tot een mooie visuele weergave van de website. Dit is de fase waar huisstijlelementen zoals kleur, typografie of fotografie worden bepaald. De look-and-feel, de uitstraling. Toegankelijke websites hoeven zeker niet lelijk en saai te zijn.
 
-Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](l/richtlijnen/stijl/typografie/), [kleuren](/richtlijnen/stijl/kleuren/), [ruimte](/richtlijnen/stijl/ruimte/) en [iconen](/richtlijnen/stijl/iconen/) uitgewerkt.
+Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](l/richtlijnen/stijl/typografie), [kleuren](/richtlijnen/stijl/kleuren), [ruimte](/richtlijnen/stijl/ruimte) en [iconen](/richtlijnen/stijl/iconen) uitgewerkt.
 
 Belangrijk om in het visueel ontwerp aan WCAG te voldoen is onder andere:
 
@@ -186,7 +186,7 @@ De beste tijd en manier om te testen is tijdens het bouwen in de browser. Naast 
 
 Programmeurs en ontwerpers kunnen gebruikmaken van het NL Design System om een website toegankelijk te bouwen.
 
-De documentatie bij de [componenten van het NL Design System](https://nldesignsystem.nl/componenten/) beschrijft hoe een component is opgebouwd en aan welke acceptatiecriteria deze moet voldoen. Kijk bijvoorbeeld bij de [component "button](https://nldesignsystem.nl/button)".
+De documentatie bij de [componenten van het NL Design System](https://nldesignsystem.nl/componenten) beschrijft hoe een component is opgebouwd en aan welke acceptatiecriteria deze moet voldoen. Kijk bijvoorbeeld bij de [component "button](https://nldesignsystem.nl/button)".
 
 Veel van onze componenten zijn nu (2025) nog in volop ontwikkeling, maar je kunt al meekijken in de keuken. Samen met [onze community](https://nldesignsystem.nl/community) ontwikkelen we componenten die herbruikbaar, functioneel en toegankelijk zijn en ondersteund worden door gebruikersonderzoek.
 
