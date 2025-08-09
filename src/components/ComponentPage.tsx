@@ -32,7 +32,6 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
   return (
     component && (
       <AccordionProvider
-        appearance=""
         sections={relayOrderedProjects.map((project) => ({
           className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
           headingLevel: headingLevel,
