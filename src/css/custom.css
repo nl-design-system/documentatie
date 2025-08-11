@@ -4,6 +4,7 @@
  * work well for content-centric websites.
  */
 
+.visually-hidden,
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
