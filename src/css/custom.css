@@ -93,8 +93,27 @@
   --basis-text-font-size-md: 1.125rem !important;
   --basis-text-font-size-sm: 1rem !important;
   --utrecht-link-text-underline-offset: 4px !important;
+  --utrecht-color-sample-background-color: currentColor !important;
 
   --ifm-footer-link-horizontal-spacing: 20px;
+}
+
+/* Classnames that might move into a separate component */
+
+.dl__item {
+  margin-bottom: 20px;
+}
+
+.dl__term {
+  font-weight: bold;
+}
+
+.dl__definition {
+  margin-left: 0;
+}
+
+.definition__meta {
+  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
 
 /* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
@@ -331,6 +350,30 @@ aside button[title="Zijbalk inklappen"],
 
 .containter {
   padding-block: 20px;
+}
+
+/* Accessibility improvement */
+* Display internal link below sticky header */ :target {
+  scroll-margin-block-start: calc(var(--navbar-inner-min-height));
+}
+
+abbr[title] {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.DocSearch {
+  --docsearch-muted-color: #757575;
+  --docsearch-modal-width: 50em;
+}
+
+.DocSearch .DocSearch-Label {
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.DocSearch ul {
+  margin: auto 0;
 }
 
 /* Add styling to code blocks  */
