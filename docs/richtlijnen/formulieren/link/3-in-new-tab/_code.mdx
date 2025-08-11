@@ -2,6 +2,8 @@
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
+import { IconExternalLink } from "@tabler/icons-react";
+import { Icon } from "@utrecht/component-library-react/css-module";
 
 ## Voorbeelden
 
@@ -22,8 +24,11 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <a href="#" target="_blank" className="nlds-icon-ext">
+        <a href="#" target="_blank">
           Lees het privacybeleid
+          <Icon style={{ ["--utrecht-icon-inset-block-start"]: "6px" }}>
+            <IconExternalLink />
+          </Icon>
           <span className="sr-only">, opent in een nieuwe tab</span>
         </a>
         .
@@ -36,13 +41,11 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <a
-          href="#"
-          target="_blank"
-          className="nlds-icon-ext"
-          aria-label="Lees het privacybeleid (opent in een nieuwe tab)"
-        >
+        <a href="#" target="_blank" aria-label="Lees het privacybeleid (opent in een nieuwe tab)">
           Lees het privacybeleid
+          <Icon style={{ ["--utrecht-icon-inset-block-start"]: "6px" }}>
+            <IconExternalLink />
+          </Icon>
         </a>
       </>
     )}
