@@ -21,7 +21,7 @@
 .ma-theme {
   /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
   -moz-osx-font-smoothing: auto !important;
-  -webkit-font-smoothing: auto !important;
+  font-size-adjust: 0.5;
 
   /* You can override the default Infima variables here. */
   --ifm-container-width: 870px;
