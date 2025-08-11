@@ -40,7 +40,7 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
           className="contrast-ratio__color-sample"
           color={color}
           role="img"
-          aria-label={`voorbeeld van: ${backgroundColor}`}
+          aria-label={`voorbeeld van: ${color}`}
         />{' '}
         <Code>{color}</Code>
       </dd>
