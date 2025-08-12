@@ -1,6 +1,34 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [72755],
  {
+  94398: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Als je de NL Design System component gebruikt kun je er vanuit gaan dat onderstaande checks zijn gedaan. Maar door keuzes in de website of applicaties kan het natuurlijk zijn dat ze toch niet helemaal werken. Voor de zekerheid is het dus goed om ook op onderstaande punten te letten.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  25653: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   93514: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -9,6 +37,20 @@
    function s(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsx)(n.p, { children: 'Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.' })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  90361: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -71,75 +113,79 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  74719: (e, n, t) => {
+  37903: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => N, component: () => D, contentTitle: () => W, default: () => H, description: () => L, frontMatter: () => G, issueNumber: () => _, metadata: () => R, title: () => S, toc: () => z });
+   t.r(n), t.d(n, { assets: () => S, component: () => F, contentTitle: () => N, default: () => O, description: () => L, frontMatter: () => R, issueNumber: () => P, metadata: () => z, title: () => D, toc: () => _ });
    var r = t(52676),
     i = t(40139),
     s = t(12745),
     o = t(41326),
-    a = t(93514);
-   function c(e) {
+    c = (t(93514), t(94398)),
+    a = t(25653),
+    l = t(90361);
+   function d(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, r.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, r.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.' }), '\n', (0, r.jsxs)(n.p, { children: ['Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een ', (0, r.jsx)(n.code, { children: 'span' }), '- of een ', (0, r.jsx)(n.code, { children: 'p' }), '-element, geen heading-element.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Sla geen kopniveaus over, dus bijvoorbeeld een ', (0, r.jsx)(n.code, { children: 'h3' }), ' na een ', (0, r.jsx)(n.code, { children: 'h1' }), '. Gebruikers van ', (0, r.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ' kunnen dan het idee krijgen dat ze informatie missen.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Let erop dat je per pagina 1 ', (0, r.jsx)(n.code, { children: 'h1' }), ' gebruikt en dat deze aan het begin van de ', (0, r.jsx)(n.code, { children: 'main' }), '-content staat. Door niet meer dan 1 ', (0, r.jsx)(n.code, { children: 'h1' }), ' te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/opmaak/#kopjes', children: 'Gebruik betekenisvolle opmaak voor tekst, Kopjes' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, r.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, r.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.' }), '\n', (0, r.jsxs)(n.p, { children: ['Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een ', (0, r.jsx)(n.code, { children: 'span' }), '- of een ', (0, r.jsx)(n.code, { children: 'p' }), '-element, geen heading-element.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Sla geen kopniveaus over, dus bijvoorbeeld een ', (0, r.jsx)(n.code, { children: 'h3' }), ' na een ', (0, r.jsx)(n.code, { children: 'h1' }), '. Gebruikers van ', (0, r.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ' kunnen dan het idee krijgen dat ze informatie missen.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Let erop dat je per pagina 1 ', (0, r.jsx)(n.code, { children: 'h1' }), ' gebruikt en dat deze aan het begin van de ', (0, r.jsx)(n.code, { children: 'main' }), '-content staat. Door niet meer dan 1 ', (0, r.jsx)(n.code, { children: 'h1' }), ' te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
    }
-   function l(e = {}) {
+   function h(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(c, { ...e }) }) : c(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(d, { ...e }) }) : d(e);
    }
-   var d = t(47913),
-    h = t(68934),
-    u = t(50553);
-   function g(e) {
+   function u(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, r.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, r.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
+   }
+   function g(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(u, { ...e }) }) : u(e);
+   }
+   var p = t(47913),
+    m = t(68934),
+    j = t(50553);
+   function w(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' });
    }
-   function m(e = {}) {
+   function k(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(w, { ...e }) }) : w(e);
    }
-   var p = t(56050);
-   function j(e) {
-    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Zorg ervoor dat je een heading op de juiste manier nest als je hem wilt gebruiken in combinatie een ander element, zoals een button of een link. Denk erom dat de elementen dan correct worden genest in de HTML. Check je code daarom met een ', (0, r.jsx)(n.a, { href: 'https://validator.w3.org/', children: 'HTML-validator' }), ' of ', (0, r.jsx)(n.a, { href: 'https://github.com/caramelomartins/awesome-linters?tab=readme-ov-file#html', children: 'HTML-linter' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Een voorbeeld is een button met een heading erin:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h2>\n  <button>button in heading, wel toegestaan</button>\n</h2>\n' }) }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\n<button>\n  <h2>heading in button, niet toegestaan</h2>\n</button>\n' }) })] });
-   }
-   function w(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(j, { ...e }) }) : j(e);
-   }
+   var v = t(56050);
    var y = t(97520),
-    v = t(76233),
-    k = t(29659),
-    f = t(8657),
-    x = t(49556),
-    A = t(57716);
-   function b(e) {
+    f = t(76233),
+    x = t(6503),
+    A = t(8657),
+    b = t(49556),
+    C = t(57716);
+   function T(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', p: 'p', pre: 'pre', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h1, { id: 'gebruik-code', children: 'Gebruik Code' }), '\n', (0, r.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-css', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fheading-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/heading-css'] }), '\nversie 1.'] }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-css\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/heading-css@1/dist/heading.css" />\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/heading-css/dist/heading.css" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/heading-css/heading.css";\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-1', children: 'Heading level 1' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een hoofdkop van een pagina de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-1' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h1' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h1 class="nl-heading nl-heading--level-1">Hoofdkop van de pagina</h1>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-2', children: 'Heading level 2' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-2' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h2' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-2">\n  Een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat\n</h2>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-3', children: 'Heading level 3' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-3' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h3' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h3 class="nl-heading nl-heading--level-3">Een koptekst die in de koppenstructuur op het derde niveau staat</h3>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-4', children: 'Heading level 4' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-4' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h4' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h4 class="nl-heading nl-heading--level-4">Een koptekst die in de koppenstructuur op het vierde niveau staat</h4>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-5', children: 'Heading level 5' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h5' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h5 class="nl-heading nl-heading--level-5">Een koptekst die in de koppenstructuur op het vijfde niveau staat</h5>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'heading-level-6', children: 'Heading level 6' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het zesde niveau staat de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'h6' }), ', element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h6 class="nl-heading nl-heading--level-6">Een koptekst die in de koppenstructuur op het zesde niveau staat</h6>\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'kop-gebruiken-met-het-uiterlijk-van-een-ander-level', children: 'Kop gebruiken met het uiterlijk van een ander level' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik voor een koptekst die semantisch op het ene level staat, maar visueel de uitstraling heeft van een ander level de ', (0, r.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, r.jsx)(n.code, { children: 'nl-heading--level-{het visuele level}' }), ' op het semantische heading component naar keuze:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-4">\n  Een koptekst die in de koppenstructuur op het tweede level staat en eruit ziet als het vierde level.\n</h2>\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-react', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fheading-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/heading-react'] }), '\nversie 1.'] }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-react\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Of inclusief CSS:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react/css";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, r.jsxs)(n.p, { children: ['De Figma component staat in ', (0, r.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Heading' }), '.'] })] });
    }
-   function C(e = {}) {
+   function G(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(b, { ...e }) }) : b(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(T, { ...e }) }) : T(e);
    }
-   var T = t(30823);
-   const G = { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] },
-    W = void 0,
-    R = { id: 'componenten/heading/index', title: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', source: '@site/docs/componenten/heading/index.mdx', sourceDirName: 'componenten/heading', slug: '/heading', permalink: '/heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] }, sidebar: 'componenten', previous: { title: 'Form Summary', permalink: '/form-summary' }, next: { title: 'Heading 1', permalink: '/heading-1' } },
-    N = {},
-    z = [
+   var W = t(30823);
+   const R = { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] },
+    N = void 0,
+    z = { id: 'componenten/heading/index', title: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', source: '@site/docs/componenten/heading/index.mdx', sourceDirName: 'componenten/heading', slug: '/heading', permalink: '/heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] }, sidebar: 'componenten', previous: { title: 'Form Summary', permalink: '/form-summary' }, next: { title: 'Heading 1', permalink: '/heading-1' } },
+    S = {},
+    _ = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
-     { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
+     { value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 },
+     { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 },
+     { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 },
      { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    S = 'Heading',
+    D = 'Heading',
     L = 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.',
-    _ = 114,
-    D = s.find((e) => e.number === _);
-   function F(e) {
+    P = 114,
+    F = s.find((e) => e.number === P);
+   function H(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -149,72 +195,68 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(f.Rv, { component: D, headingLevel: 1, description: L }),
+      (0, r.jsx)(A.Rv, { component: F, headingLevel: 1, description: L }),
       '\n',
-      (0, r.jsx)(y.I, { component: D }),
+      (0, r.jsx)(y.I, { component: F }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(v.B, { component: D, illustration: o.Z }),
+      (0, r.jsx)(f.B, { component: F, illustration: o.Z }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
       (0, r.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
       '\n',
-      (0, r.jsx)(x.W, { tokens: T }),
+      (0, r.jsx)(b.W, { tokens: W }),
       '\n',
-      (0, r.jsx)(A.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(C, {}) }),
+      (0, r.jsx)(C.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(G, {}) }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
+      (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
+      '\n',
+      (0, r.jsx)(l.ZP, {}),
+      '\n',
+      (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
       '\n',
       (0, r.jsx)(a.ZP, {}),
       '\n',
-      (0, r.jsx)(k.t, {
-       headingLevel: 4,
-       testCategory: 'Toegankelijkheid algemeen',
+      (0, r.jsx)(x.W, {
        items: [
-        { title: 'De koptekst maakt duidelijk waar de sectie over gaat', sc: '2.4.6', status: '', component: (0, r.jsx)(m, {}) },
-        { title: 'Elementen moeten genest zijn volgens de HTML-specificatie', sc: '4.1.1', status: '', component: (0, r.jsx)(w, {}) },
+        { title: 'Het niveau van de kop klopt binnen de koppenstructuur van de pagina.', sc: '1.3.1', status: '', component: (0, r.jsx)(h, {}), tags: ['contentmaker'] },
+        { title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, r.jsx)(m.ZP, {}), tags: ['designer', 'contentmaker'] },
+        { title: 'De koptekst maakt duidelijk waar de sectie over gaat.', sc: '2.4.6', status: '', component: (0, r.jsx)(k, {}), tags: ['designer', 'contentmaker'] },
+        { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode.', sc: '3.1.2', status: '', component: (0, r.jsx)(v.ZP, {}), tags: ['contentmaker', 'developer'] },
        ],
       }),
       '\n',
-      (0, r.jsx)(k.t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', items: [{ title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg', sc: '1.4.3', status: '', component: (0, r.jsx)(h.ZP, {}) }] }),
+      (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
       '\n',
-      (0, r.jsx)(k.t, {
-       headingLevel: 4,
-       testCategory: 'Toegankelijkheid zoom en herschalen',
-       items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(u.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(d.ZP, {}) },
-       ],
-      }),
+      (0, r.jsx)(c.ZP, {}),
       '\n',
-      (0, r.jsx)(k.t, {
-       headingLevel: 3,
-       testCategory: 'Toegankelijkheid screenreader',
+      (0, r.jsx)(x.W, {
        items: [
-        { title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn en geen vet gemaakte tekst', sc: '1.3.1', status: '', component: (0, r.jsx)(l, {}) },
-        { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode', sc: '3.1.2', status: '', component: (0, r.jsx)(p.ZP, {}) },
+        { title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn.', sc: '1.3.1', status: '', component: (0, r.jsx)(g, {}), tags: ['developer'] },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, r.jsx)(j.ZP, {}), tags: ['developer'] },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, r.jsx)(p.ZP, {}), tags: ['developer'] },
        ],
       }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, r.jsx)(f.W, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(A.W, { component: F, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(f.cN, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(A.cN, { component: F, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(f.vM, { component: D, headingLevel: 3 }),
+      (0, r.jsx)(A.vM, { component: F, headingLevel: 3 }),
      ],
     });
    }
-   function H(e = {}) {
+   function O(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(F, { ...e }) }) : F(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(H, { ...e }) }) : H(e);
    }
   },
   54907: (e, n, t) => {
@@ -233,7 +275,7 @@
   },
   35038: (e, n, t) => {
    'use strict';
-   t.d(n, { Zb: () => c, aY: () => a, um: () => l, wu: () => o });
+   t.d(n, { Zb: () => a, aY: () => c, um: () => l, wu: () => o });
    var r = t(16167),
     i = t(4814),
     s = t(52676);
@@ -241,11 +283,11 @@
      let { background: n, children: t, className: r, ...o } = e;
      return (0, s.jsx)('div', { className: (0, i.Z)('card__illustration', n && 'card__illustration--background', r), ...o, children: t });
     },
-    a = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
-    c = (e) => {
-     let { href: n, appearance: t, className: o, component: a = 'div', children: c } = e;
-     const l = (e) => ('article' === a ? (0, s.jsx)('article', { ...e }) : 'section' === a ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
-      d = (0, s.jsx)(l, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${t}`, o), children: c });
+    c = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
+    a = (e) => {
+     let { href: n, appearance: t, className: o, component: c = 'div', children: a } = e;
+     const l = (e) => ('article' === c ? (0, s.jsx)('article', { ...e }) : 'section' === c ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
+      d = (0, s.jsx)(l, { className: (0, i.Z)('cardgroup__card', `cardgroup__card--${t}`, o), children: a });
      return n ? (0, s.jsx)(r.rU, { href: n, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
     l = (e) => {
@@ -253,18 +295,139 @@
      return (0, s.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${n}`, r), children: t });
     };
   },
+  6503: (e, n, t) => {
+   'use strict';
+   t.d(n, { W: () => h });
+   var r = t(57229),
+    i = t(51678),
+    s = t(41115),
+    o = t(70997),
+    c = t(4814),
+    a = t(75271),
+    l = t(52676);
+   const d = (e) => {
+     let { title: n, sc: t, component: d, tags: h } = e;
+     const u = (0, a.useId)(),
+      g = [...h];
+     if (t) {
+      g.push(t);
+      const e = i.fg.get(t);
+      e?.conformance && g.push(`Niveau ${e.conformance}`);
+     }
+     return (0, l.jsx)('li', {
+      className: (0, c.Z)(
+       'new-checklist__item',
+       h.map((e) => `new-checklist__item--${e}`),
+      ),
+      children: (0, l.jsxs)('details', {
+       children: [
+        (0, l.jsx)('summary', { children: (0, l.jsx)('span', { className: 'new-checklist__title', id: u, children: n }) }),
+        (0, l.jsxs)('div', {
+         className: 'new-checklist__content',
+         children: [
+          (0, l.jsx)('div', { children: d }),
+          (0, l.jsx)(s.k, {
+           className: 'new-checklist__badge-list',
+           children: g.map((e, n) => {
+            let t = (0, l.jsx)(o.O, { children: e }, n);
+            if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
+             const s = i.fg.get(e);
+             t = (0, l.jsx)(r.r, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${s.sc} ${s.nl.title}`, style: { lineHeight: 1 }, children: (0, l.jsx)(o.O, { children: `WCAG ${e}` }) }, n);
+            }
+            return t;
+           }),
+          }),
+         ],
+        }),
+       ],
+      }),
+     });
+    },
+    h = (e) => {
+     let { items: n } = e;
+     const [t, r] = (0, a.useState)([]),
+      i = (e) => t.includes(e),
+      c = n.reduce(
+       (e, n) => (
+        n.tags.forEach((n) => {
+         e.add(n);
+        }),
+        e
+       ),
+       new Set(),
+      ),
+      h = (0, a.useId)(),
+      u = n.filter((e) => {
+       let { tags: n } = e;
+       return 0 === t.length || n.some((e) => t.includes(e));
+      }),
+      g = n.length - u.length;
+     return (0, l.jsxs)('div', {
+      children: [
+       (0, l.jsxs)('div', {
+        className: 'ma-filter-block',
+        children: [
+         (0, l.jsx)('span', { id: h, children: 'Ik ben: ' }),
+         (0, l.jsx)(s.k, {
+          role: 'group',
+          'aria-labelledby': h,
+          className: 'ma-badge-toggle-button-group',
+          children: Array.from(c.values()).map((e, n) =>
+           (0, l.jsx)(
+            s.zx,
+            {
+             onClick: () =>
+              ((e, n) => {
+               const s = ('boolean' == typeof n ? n : !i(e)) ? [...t, e] : t.filter((n) => n !== e);
+               r(s);
+              })(e),
+             pressed: i(e),
+             appearance: 'subtle',
+             className: 'utrecht-button--contents',
+             children: (0, l.jsx)(o.O, { children: e }),
+            },
+            n,
+           ),
+          ),
+         }),
+         (0, l.jsx)('div', {
+          children:
+           t.length >= 1
+            ? (0, l.jsxs)(l.Fragment, {
+               children: [
+                (0, l.jsxs)('p', { role: 'status', children: ['Er wordt op ', t.length, ' onderwerpen gefilterd.'] }),
+                (0, l.jsxs)('p', { children: [g, ' van de ', n.length, ' items zijn nu niet zichtbaar.'] }),
+                (0, l.jsx)(s.zx, {
+                 appearance: 'secondary-action-button',
+                 onClick: () => {
+                  r([]);
+                 },
+                 children: 'Toon alles',
+                }),
+               ],
+              })
+            : 'Alle onderwerpen worden getoond.',
+         }),
+         ' ',
+        ],
+       }),
+       (0, l.jsx)('ul', { className: 'new-checklist', role: 'list', children: u.map((e, n) => (0, l.jsx)(d, { ...e }, n)) }),
+      ],
+     });
+    };
+  },
   97520: (e, n, t) => {
    'use strict';
-   t.d(n, { I: () => a });
+   t.d(n, { I: () => c });
    var r = t(57716),
     i = t(75271),
     s = t(14669),
     o = t(52676);
-   const a = (e) => {
+   const c = (e) => {
     let { component: n } = e;
-    const { title: a } = n,
-     c = (0, s.mA)(a),
-     l = i.lazy(() => t(42767)(`./${c}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    const { title: c } = n,
+     a = (0, s.mA)(c),
+     l = i.lazy(() => t(42767)(`./${a}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
     return (0, o.jsx)(i.Suspense, { fallback: null, children: (0, o.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, o.jsx)(l, {}) }) });
    };
   },
@@ -275,66 +438,48 @@
     i = t(4814),
     s = t(75271),
     o = t(14669),
-    a = t(52676);
-   const c = (e) => {
+    c = t(52676);
+   const a = (e) => {
      let { children: n } = e;
-     return (0, a.jsx)('ol', { className: 'nlds-anatomy-list', children: n });
+     return (0, c.jsx)('ol', { className: 'nlds-anatomy-list', children: n });
     },
     l = (e) => {
      let { children: n } = e;
-     return (0, a.jsx)('li', { className: 'nlds-anatomy-list__item', children: n });
+     return (0, c.jsx)('li', { className: 'nlds-anatomy-list__item', children: n });
     },
     d = (e) => {
      let { component: n, illustration: d } = e;
      const { title: h } = n,
       u = (0, o.mA)(h),
       g = s.lazy(() => t(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-     return (0, a.jsx)(s.Suspense, {
+     return (0, c.jsx)(s.Suspense, {
       fallback: null,
-      children: (0, a.jsxs)('figure', {
+      children: (0, c.jsxs)('figure', {
        className: (0, i.Z)('component-anatomy'),
        children: [
-        d && (0, a.jsx)(d, { height: null, className: (0, i.Z)('component-anatomy__illustration') }),
+        d && (0, c.jsx)(d, { height: null, className: (0, i.Z)('component-anatomy__illustration') }),
         d &&
          g &&
-         (0, a.jsx)('figcaption', {
-          children: (0, a.jsx)(r.U, {
+         (0, c.jsx)('figcaption', {
+          children: (0, c.jsx)(r.U, {
            omitH1: !0,
            headingLevel: 1,
            components: {
             ol: (e) => {
              let { children: n } = e;
-             return (0, a.jsx)(c, { children: n });
+             return (0, c.jsx)(a, { children: n });
             },
             li: (e) => {
              let { children: n } = e;
-             return (0, a.jsx)(l, { children: n });
+             return (0, c.jsx)(l, { children: n });
             },
            },
-           children: (0, a.jsx)(g, {}),
+           children: (0, c.jsx)(g, {}),
           }),
          }),
        ],
       }),
      });
-    };
-  },
-  29659: (e, n, t) => {
-   'use strict';
-   t.d(n, { t: () => c });
-   var r = t(16167),
-    i = t(51678),
-    s = t(41115),
-    o = t(52676);
-   const a = (e) => {
-     let { title: n, sc: t, status: s, component: a, headingLevel: c = 4 } = e;
-     const l = i.fg.get(t),
-      d = l ? `${t} ${l.nl?.title}` : t;
-     return (0, o.jsxs)('div', { className: 'component-criteria-section', children: [(0, o.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: c, className: 'component-criteria-section__heading', children: n }), (t || s) && (0, o.jsxs)('dl', { className: 'component-criteria-section__dl', children: [t && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, o.jsx)(r.rU, { href: `/wcag/${t}`, children: d }) })] }), s && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dl', children: s })] })] }), a] });
-    },
-    c = (e) => {
-     let { testCategory: n, items: t } = e;
-     return (0, o.jsx)(s.a2, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, o.jsx)('span', { children: n }), body: t.map((e, n) => (0, o.jsx)(a, { ...e }, n)) }] });
     };
   },
   8657: (e, n, t) => {
@@ -344,20 +489,20 @@
     i = t(4814),
     s = t(39854),
     o = t(7522),
-    a = t(62559),
-    c = t(79734),
+    c = t(62559),
+    a = t(79734),
     l = t(32636),
     d = t(52676);
-   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(a.Z, {}), storybook: (0, d.jsx)(c.Z, {}) },
+   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(o.Z, {}), npm: (0, d.jsx)(c.Z, {}), storybook: (0, d.jsx)(a.Z, {}) },
     u = (e) => {
      let { brand: n } = e;
      return (0, d.jsx)(r.JO, { children: h[n] || (0, d.jsx)(l.Z, {}) });
     };
    var g = t(35038),
-    m = t(40598);
-   const p = (e) => {
+    p = t(40598);
+   const m = (e) => {
     let { checked: n, unchecked: r } = e;
-    return (0, d.jsx)(m.Z, {
+    return (0, d.jsx)(p.Z, {
      fallback: (0, d.jsx)(d.Fragment, {}),
      children: () => {
       const e = t(79333).YE;
@@ -376,15 +521,15 @@
    };
    var j = t(23355),
     w = t(41757),
-    y = t(16167),
+    k = t(16167),
     v = t(55476);
-   const k = (e) => {
+   const y = (e) => {
      let { children: n } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: n });
     },
     f = (e) => {
      let { checked: n, children: t, title: r, description: s, headingLevel: o = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(k.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
     };
    var x = t(14669);
    const A = (e) => {
@@ -404,7 +549,7 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(k, {
+           (0, d.jsx)(y, {
             children: e.tasks.map((e) => {
              let { checked: n, name: r, id: i } = e;
              return (0, d.jsx)(f, { headingLevel: t + 1, checked: n, title: r, description: (0, x.Q6)(i) }, i);
@@ -441,7 +586,7 @@
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            a = e.tasks.filter((e) => {
+            c = e.tasks.filter((e) => {
              let { name: n, value: t } = e;
              return o.has(n) && URL.canParse(t) && 'https:' === new URL(t).protocol;
             });
@@ -452,12 +597,12 @@
              children: (0, d.jsxs)(g.aY, {
               children: [
                (0, d.jsx)(r.X6, { level: t, children: e.title.replace(/^Community/i, '') }),
-               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(p, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (a.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
-               a.length > 0 &&
+               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (c.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
+               c.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
                  children: (0, d.jsx)(r.Mc, {
-                  links: a
+                  links: c
                    .filter((e) => !!o.get(e.name))
                    .map((e) => {
                     const n = o.get(e.name);
@@ -500,14 +645,14 @@
     i = t(70997),
     s = t(14669),
     o = t(16167),
-    a = t(64642),
-    c = t(93872),
+    c = t(64642),
+    a = t(93872),
     l = t(48231),
     d = t(75119),
     h = t(38548),
     u = t(41115),
     g = t(52676);
-   function m(e) {
+   function p(e) {
     let { children: n, content: t, language: r } = e;
     return 'clipboard' in navigator
      ? (0, g.jsxs)(o.zx, {
@@ -515,7 +660,7 @@
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await d.ZP.format(t, { parser: r, plugins: [a.Z, c.ZP, l.ZP] });
+          const e = await d.ZP.format(t, { parser: r, plugins: [c.Z, a.ZP, l.ZP] });
           await navigator.clipboard.writeText(e);
          } catch (e) {
           console.error(e);
@@ -525,16 +670,16 @@
        })
      : null;
    }
-   var p = t(6076),
+   var m = t(6076),
     j = t(32463),
     w = t(85904),
-    y = t(86384),
+    k = t(86384),
     v = t(65012),
-    k = t(31795),
+    y = t(31795),
     f = t(37923),
     x = t(49003),
     A = t(75271);
-   const b = { color: p.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: y.Z, fontWeights: v.Z, lineHeights: k.Z, other: f.Z, textDecoration: x.Z },
+   const b = { color: m.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: k.Z, fontWeights: v.Z, lineHeights: y.Z, other: f.Z, textDecoration: x.Z },
     C = (e) => {
      let { type: n } = e;
      return (0, g.jsx)(u.JO, { children: (0, A.createElement)(b[n]) });
@@ -542,36 +687,36 @@
    function T(e) {
     let { tokens: n } = e;
     const t = (0, s.s0)(n),
-     a = (0, s.fO)(t),
-     c = a.map((e) => (0, s.$e)(e) + ': ;').join('\n'),
-     l = JSON.stringify((0, s.qU)(a));
+     c = (0, s.fO)(t),
+     a = c.map((e) => (0, s.$e)(e) + ': ;').join('\n'),
+     l = JSON.stringify((0, s.qU)(c));
     return (0, g.jsxs)(g.Fragment, {
      children: [
       (0, g.jsxs)(o.iA, {
        children: [
         (0, g.jsx)(o.xD, { children: (0, g.jsxs)(o.SC, { children: [(0, g.jsx)(o.xs, { children: 'name' }), (0, g.jsx)(o.xs, { children: 'type' })] }) }),
         (0, g.jsx)(o.RM, {
-         children: a.map((e) => {
+         children: c.map((e) => {
           const t = (0, s.zP)(e),
-           a = (0, s.Yr)(n, e).$type;
-          return (0, g.jsxs)(o.SC, { children: [(0, g.jsx)(o.pj, { children: (0, g.jsx)(r.E, { children: (0, g.jsx)(o.YG, { children: t }) }) }), (0, g.jsx)(o.pj, { children: (0, g.jsxs)(i.O, { children: [(0, g.jsx)(C, { type: a }), ' ', a] }) })] }, t);
+           c = (0, s.Yr)(n, e).$type;
+          return (0, g.jsxs)(o.SC, { children: [(0, g.jsx)(o.pj, { children: (0, g.jsx)(r.E, { children: (0, g.jsx)(o.YG, { children: t }) }) }), (0, g.jsx)(o.pj, { children: (0, g.jsxs)(i.O, { children: [(0, g.jsx)(C, { type: c }), ' ', c] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, g.jsxs)(o.hE, { children: [(0, g.jsx)(m, { content: l, language: 'json', children: 'Kopieer als JSON' }), (0, g.jsx)(m, { content: c, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, g.jsxs)(o.hE, { children: [(0, g.jsx)(p, { content: l, language: 'json', children: 'Kopieer als JSON' }), (0, g.jsx)(p, { content: a, language: 'css', children: 'Kopieer als CSS' })] }),
      ],
     });
    }
   },
   23355: (e, n, t) => {
    'use strict';
-   t.d(n, { y: () => a });
+   t.d(n, { y: () => c });
    var r = t(16167),
     i = t(4814),
     s = t(14669),
     o = t(52676);
-   const a = (e) => {
+   const c = (e) => {
     let { state: n } = e;
     const t = (0, s.mA)(n);
     return (0, o.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', t && `estafette-badge--${t}`), children: n });
@@ -583,8 +728,8 @@
    var r = t(4814),
     i = t(52676);
    const s = (e) => {
-    let { children: n, className: t, level: s = 1, suffix: o, ...a } = e;
-    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...a, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
+    let { children: n, className: t, level: s = 1, suffix: o, ...c } = e;
+    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...c, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
    };
   },
   57716: (e, n, t) => {
@@ -601,8 +746,8 @@
      }
      return t.toString();
     },
-    a = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
-    c = (e) => ({
+    c = { 1: {}, 2: { h1: i.XJ, h2: i.aC, h3: i.k8, h4: i.by, h5: i.Cd }, 3: { h1: i.aC, h2: i.k8, h3: i.by, h4: i.Cd, h5: i.Cd }, 4: { h1: i.k8, h2: i.by, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 5: { h1: i.by, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd }, 6: { h1: i.Cd, h2: i.Cd, h3: i.Cd, h4: i.Cd, h5: i.Cd } },
+    a = (e) => ({
      img: (n) => {
       let { src: t, ...r } = n;
       return (0, s.jsx)('img', { ...r, src: o(e, t), className: 'utrecht-img utrecht-img--fit' });
@@ -610,14 +755,14 @@
     }),
     l = (e, n) => {
      if (e) {
-      const e = { ...a[n - 1] };
+      const e = { ...c[n - 1] };
       return (e.h1 = () => null), e;
      }
-     return a[n];
+     return c[n];
     },
     d = (e) => {
-     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: o = '', components: a = {} } = e;
-     return (0, s.jsx)(r.Z, { components: { ...l(t, i), ...c(o), ...a }, children: n });
+     let { children: n, omitH1: t = !1, headingLevel: i = 1, baseUrl: o = '', components: c = {} } = e;
+     return (0, s.jsx)(r.Z, { components: { ...l(t, i), ...a(o), ...c }, children: n });
     };
   },
   51678: (e, n, t) => {
@@ -714,13 +859,13 @@
   },
   14669: (e, n, t) => {
    'use strict';
-   t.d(n, { $3: () => r, $e: () => j, BA: () => a, Ee: () => d, Q6: () => s, U: () => g, Yr: () => w, d: () => h, e9: () => o, fO: () => v, mA: () => i, ps: () => m, qU: () => k, s0: () => y, zP: () => p });
+   t.d(n, { $3: () => r, $e: () => j, BA: () => c, Ee: () => d, Q6: () => s, U: () => g, Yr: () => w, d: () => h, e9: () => o, fO: () => v, mA: () => i, ps: () => p, qU: () => y, s0: () => k, zP: () => m });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    a = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
-   function c(e) {
+    c = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+   function a(e) {
     return Array.from(new Set(e));
    }
    const l = (e) => {
@@ -734,13 +879,13 @@
        return n;
       })
       .flatMap((e) => u(e));
-     return l(c(n));
+     return l(a(n));
     },
     h = (e, n) => g(e).includes(n),
     u = (e) => {
      const n = / URL \(([^)]+)\)/;
      return l(
-      c(
+      a(
        e.tasks
         .filter((e) => {
          let { name: t, value: r } = e;
@@ -753,8 +898,8 @@
       ),
      );
     },
-    g = (e) => l(c(e.projects.flatMap((e) => u(e)))),
-    m = (e) => {
+    g = (e) => l(a(e.projects.flatMap((e) => u(e)))),
+    p = (e) => {
      const n = u(e),
       t = ((e) => {
        const n = e.tasks.find((e) => {
@@ -771,27 +916,27 @@
        })
        .map((r) => {
         let { name: i, id: s, value: o } = r;
-        const a = /^(.+) URL/.exec(i)[1],
-         c = 'Storybook' === a ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${a}`;
-        return { brand: a.toLowerCase(), name: i, id: s, value: o, description: c };
+        const c = /^(.+) URL/.exec(i)[1],
+         a = 'Storybook' === c ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${c}`;
+        return { brand: c.toLowerCase(), name: i, id: s, value: o, description: a };
        });
       return { frameworkName: n, tasks: r };
      });
     },
-    p = (e) => e.join('.'),
+    m = (e) => e.join('.'),
     j = (e) => '--' + e.join('-'),
     w = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function y(e, n) {
-    return void 0 === n && (n = []), Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? y(e[t], [...n, t]) : []));
+   function k(e, n) {
+    return void 0 === n && (n = []), Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? k(e[t], [...n, t]) : []));
    }
    function v(e) {
     const n = new Map();
     function t(e) {
-     return n.has(e) || n.set(e, p(e)), n.get(e);
+     return n.has(e) || n.set(e, m(e)), n.get(e);
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   function k(e) {
+   function y(e) {
     const n = {};
     for (const t of e) {
      let e = n;

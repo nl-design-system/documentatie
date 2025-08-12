@@ -7031,23 +7031,6 @@ code .namespace {
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
 }
-.component-criteria-section__heading {
- display: inline-block;
-}
-.component-criteria-section {
- border: 1px solid #ccc;
- margin-bottom: 1em;
- padding: 1em;
-}
-.component-criteria-section__dl {
- grid-gap: 4px 16px;
- display: grid;
- grid-template-columns: max-content;
-}
-.component-criteria-section__dd {
- grid-column-start: 2;
- margin: 0;
-}
 .terms-list__item {
  margin-bottom: 32px;
 }
@@ -7160,6 +7143,23 @@ code .namespace {
 .bingo-item--checked {
  color: grey;
  text-decoration: line-through;
+}
+.component-criteria-section__heading {
+ display: inline-block;
+}
+.component-criteria-section {
+ border: 1px solid #ccc;
+ margin-bottom: 1em;
+ padding: 1em;
+}
+.component-criteria-section__dl {
+ grid-gap: 4px 16px;
+ display: grid;
+ grid-template-columns: max-content;
+}
+.component-criteria-section__dd {
+ grid-column-start: 2;
+ margin: 0;
 }
 .backToTopButton_y2Un {
  background-color: var(--ifm-color-emphasis-200);
