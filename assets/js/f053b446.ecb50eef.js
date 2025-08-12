@@ -1,6 +1,34 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [88474],
  {
+  94398: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => i });
+   var r = n(52676),
+    o = n(40139);
+   function s(e) {
+    const t = { p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, r.jsx)(t.p, { children: 'Als je de NL Design System component gebruikt kun je er vanuit gaan dat onderstaande checks zijn gedaan. Maar door keuzes in de website of applicaties kan het natuurlijk zijn dat ze toch niet helemaal werken. Voor de zekerheid is het dus goed om ook op onderstaande punten te letten.' });
+   }
+   function i(e = {}) {
+    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  25653: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => i });
+   var r = n(52676),
+    o = n(40139);
+   function s(e) {
+    const t = { p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, r.jsx)(t.p, { children: 'Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.' });
+   }
+   function i(e = {}) {
+    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   93514: (e, t, n) => {
    'use strict';
    n.d(t, { ZP: () => i });
@@ -9,6 +37,20 @@
    function s(e) {
     const t = { p: 'p', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsx)(t.p, { children: 'Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.' })] });
+   }
+   function i(e = {}) {
+    const { wrapper: t } = { ...(0, o.a)(), ...e.components };
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  90361: (e, t, n) => {
+   'use strict';
+   n.d(t, { ZP: () => i });
+   var r = n(52676),
+    o = n(40139);
+   function s(e) {
+    const t = { p: 'p', ...(0, o.a)(), ...e.components };
+    return (0, r.jsx)(t.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
    }
    function i(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
@@ -73,58 +115,62 @@
   },
   65022: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => G, component: () => S, contentTitle: () => C, default: () => L, description: () => N, frontMatter: () => b, issueNumber: () => z, metadata: () => T, title: () => R, toc: () => W });
+   n.r(t), n.d(t, { assets: () => N, component: () => L, contentTitle: () => G, default: () => P, description: () => _, frontMatter: () => T, issueNumber: () => S, metadata: () => W, title: () => z, toc: () => R });
    var r = n(52676),
     o = n(40139),
     s = n(12745),
     i = n(5010),
-    c = n(93514);
-   function a(e) {
-    const t = { code: 'code', p: 'p', pre: 'pre', strong: 'strong', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Gebruik voor tekst gemarkeerd als code semantische HTML. In het geval van de component Code is dat het HTML-element ', (0, r.jsx)(t.code, { children: 'code' }), '.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dus niet zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\nEen zin over het element <span class="code">button</span> met een achtergrondkleur in CSS.\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Maar zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: 'Een zin over het element `<code>button</code>` met een achtergrondkleur in CSS.\n' }) }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsx)(t.strong, { children: 'Let op' }), ': Het element ', (0, r.jsx)(t.code, { children: '<code>' }), ' wordt op het moment van schrijven (2024) nog niet ondersteund door alle hulpsoftware. Wellicht in de toekomst wel, dan is het goed om nu alvast het juiste element te gebruiken.'] })] });
+    c = (n(93514), n(94398)),
+    a = n(25653),
+    l = n(90361);
+   function d(e) {
+    const t = { a: 'a', code: 'code', p: 'p', pre: 'pre', strong: 'strong', ...(0, o.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(t.p, { children: ['Gebruik voor tekst gemarkeerd als code semantische HTML. In het geval van de component Code is dat het HTML-element ', (0, r.jsx)(t.code, { children: 'code' }), '.'] }), '\n', (0, r.jsx)(t.p, { children: 'Dus niet zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\nEen zin over het element <span class="code">button</span> met een achtergrondkleur in CSS.\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Maar zo:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: 'Een zin over het element `<code>button</code>` met een achtergrondkleur in CSS.\n' }) }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsx)(t.strong, { children: 'Let op' }), ': Het element ', (0, r.jsx)(t.code, { children: '<code>' }), ' wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een ', (0, r.jsx)(t.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een ', (0, r.jsx)(t.code, { children: 'code' }), ' element gaat.'] })] });
    }
-   function l(e = {}) {
+   function u(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(d, { ...e }) }) : d(e);
    }
-   var d = n(56923),
-    u = n(47913),
-    h = n(68934),
-    m = n(50553),
-    g = n(27794),
-    p = n(97520),
-    j = n(76233),
-    w = n(29659),
-    y = n(8657),
-    f = n(49556),
-    v = n(57716);
-   function k(e) {
+   var h = n(56923),
+    m = n(47913),
+    g = n(68934),
+    p = n(50553),
+    j = n(27794),
+    w = n(97520),
+    y = n(76233),
+    v = (n(29659), n(6503)),
+    f = n(8657),
+    k = n(49556),
+    x = n(57716);
+   function A(e) {
     const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.h1, { id: 'gebruik-code', children: 'Gebruik Code' }), '\n', (0, r.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-css', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-css'] }), '\nversie 1.'] }), '\n', (0, r.jsxs)(t.p, { children: ['Gebruik de ', (0, r.jsx)(t.code, { children: 'nl-code' }), ' class name op een ', (0, r.jsx)(t.code, { children: 'code' }), ' element:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<code dir="ltr" translate="no" class="nl-code"> import { Code } from \'@nl-design-system-candidate/code-react\'; </code>\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-css\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, r.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-css/code.css";\n' }) }), '\n', (0, r.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(t.p, { children: [(0, r.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-react', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-react'] }), '\nversie 1.'] }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-react\n' }) }), '\n', (0, r.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(t.pre, { children: (0, r.jsx)(t.code, { className: 'language-jsx', children: 'import { Code } from "@nl-design-system-candidate/code-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <Code>import {Code} from \'@nl-design-system-candidate/code-react\';</Code>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, r.jsx)(t.h2, { id: 'figma', children: 'Figma' }), '\n', (0, r.jsxs)(t.p, { children: ['De Figma component staat in ', (0, r.jsx)(t.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-1279', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Code' }), '.'] })] });
    }
-   function A(e = {}) {
+   function b(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(k, { ...e }) }) : k(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(A, { ...e }) }) : A(e);
    }
-   var x = n(20480);
-   const b = { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['actie', 'action', 'code', 'codeblock', 'code block', 'code markering', 'code fences', 'code snippet', 'code voorbeeld', 'coded language', 'codetaal', 'css', 'example', 'html', 'java', 'inline code', 'mono', 'monotype', 'monospace', 'plaintext', 'pre', 'samp', 'source code', 'src', 'voorbeeld'] },
-    C = void 0,
-    T = { id: 'componenten/code/index', title: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', source: '@site/docs/componenten/code/index.mdx', sourceDirName: 'componenten/code', slug: '/code', permalink: '/code', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['actie', 'action', 'code', 'codeblock', 'code block', 'code markering', 'code fences', 'code snippet', 'code voorbeeld', 'coded language', 'codetaal', 'css', 'example', 'html', 'java', 'inline code', 'mono', 'monotype', 'monospace', 'plaintext', 'pre', 'samp', 'source code', 'src', 'voorbeeld'] }, sidebar: 'componenten', previous: { title: 'Checkbox Group', permalink: '/checkbox-group' }, next: { title: 'Code Block', permalink: '/code-block' } },
-    G = {},
-    W = [
+   var C = n(20480);
+   const T = { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['actie', 'action', 'code', 'codeblock', 'code block', 'code markering', 'code fences', 'code snippet', 'code voorbeeld', 'coded language', 'codetaal', 'css', 'example', 'html', 'java', 'inline code', 'mono', 'monotype', 'monospace', 'plaintext', 'pre', 'samp', 'source code', 'src', 'voorbeeld'] },
+    G = void 0,
+    W = { id: 'componenten/code/index', title: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', source: '@site/docs/componenten/code/index.mdx', sourceDirName: 'componenten/code', slug: '/code', permalink: '/code', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Code', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code', pagination_label: 'Code', description: 'Computercode die onderdeel is van lopende tekst.', slug: '/code', keywords: ['actie', 'action', 'code', 'codeblock', 'code block', 'code markering', 'code fences', 'code snippet', 'code voorbeeld', 'coded language', 'codetaal', 'css', 'example', 'html', 'java', 'inline code', 'mono', 'monotype', 'monospace', 'plaintext', 'pre', 'samp', 'source code', 'src', 'voorbeeld'] }, sidebar: 'componenten', previous: { title: 'Checkbox Group', permalink: '/checkbox-group' }, next: { title: 'Code Block', permalink: '/code-block' } },
+    N = {},
+    R = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
-     { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 },
+     { value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 },
+     { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 },
+     { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 },
      { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    R = 'Code',
-    N = 'Computercode die onderdeel is van lopende tekst.',
-    z = 326,
-    S = s.find((e) => e.number === z);
-   function _(e) {
+    z = 'Code',
+    _ = 'Computercode die onderdeel is van lopende tekst.',
+    S = 326,
+    L = s.find((e) => e.number === S);
+   function D(e) {
     const t = { a: 'a', h2: 'h2', h3: 'h3', p: 'p', ...(0, o.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
      children: [
@@ -134,13 +180,13 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(y.Rv, { component: S, headingLevel: 1, description: N }),
+      (0, r.jsx)(f.Rv, { component: L, headingLevel: 1, description: _ }),
       '\n',
-      (0, r.jsx)(p.I, { component: S }),
+      (0, r.jsx)(w.I, { component: L }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(j.B, { component: S, illustration: i.Z }),
+      (0, r.jsx)(y.B, { component: L, illustration: i.Z }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
@@ -148,52 +194,55 @@
       '\n',
       (0, r.jsx)(t.h3, { id: 'design-tokens', children: 'Design tokens' }),
       '\n',
-      (0, r.jsx)(f.W, { tokens: x }),
+      (0, r.jsx)(k.W, { tokens: C }),
       '\n',
-      (0, r.jsx)(v.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(A, {}) }),
+      (0, r.jsx)(x.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(b, {}) }),
       '\n',
-      (0, r.jsx)(t.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
+      (0, r.jsx)(t.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
+      '\n',
+      (0, r.jsx)(l.ZP, {}),
+      '\n',
+      (0, r.jsx)(t.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
+      '\n',
+      (0, r.jsx)(a.ZP, {}),
+      '\n',
+      (0, r.jsx)(v.W, {
+       items: [
+        { title: 'De code is niet alleen herkenbaar aan een andere achtergrondkleur.', sc: '1.4.1', status: '', component: (0, r.jsx)(j.ZP, {}), tags: ['designer', 'contentmaker', 'developer'] },
+        { title: 'De code heeft voldoende contrast met de achtergrondkleur.', sc: '1.4.3', status: '', component: (0, r.jsx)(g.ZP, {}), tags: ['designer', 'contentmaker'] },
+        { title: 'Wanneer de achtergrondkleur van de Code component anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.', sc: '1.4.11', status: '', component: (0, r.jsx)(h.ZP, {}), tags: ['designer', 'contentmaker'] },
+       ],
+      }),
+      '\n',
+      (0, r.jsx)(t.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
       '\n',
       (0, r.jsx)(c.ZP, {}),
       '\n',
-      (0, r.jsx)(w.t, {
-       headingLevel: 4,
-       testCategory: 'Toegankelijkheid visueel ontwerp',
+      (0, r.jsx)(v.W, {
        items: [
-        { title: 'De tekst, gemarkeerd als code, is niet alleen herkenbaar aan een andere achtergrondkleur', sc: '1.4.1', status: '', component: (0, r.jsx)(g.ZP, {}) },
-        { title: 'De tekst, gemarkeerd als code, heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: (0, r.jsx)(h.ZP, {}) },
-        { title: 'Wanneer de achtergrondkleur van de Code component anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina', sc: '1.4.11', status: '', component: (0, r.jsx)(d.ZP, {}) },
+        { title: 'Het juiste HTML-element voor de Code component is toegepast.', sc: '1.3.1', status: '', component: (0, r.jsx)(u, {}), tags: ['developer'] },
+        { title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.', sc: '1.4.4', status: '', component: (0, r.jsx)(p.ZP, {}), tags: ['developer'] },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, r.jsx)(m.ZP, {}), tags: ['developer'] },
        ],
       }),
-      '\n',
-      (0, r.jsx)(w.t, {
-       headingLevel: 4,
-       testCategory: 'Toegankelijkheid zoom en herschalen',
-       items: [
-        { title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar', sc: '1.4.4', status: '', component: (0, r.jsx)(m.ZP, {}) },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, r.jsx)(u.ZP, {}) },
-       ],
-      }),
-      '\n',
-      (0, r.jsx)(w.t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', items: [{ title: 'Het juiste HTML-element voor de Code component is toegepast', sc: '1.3.1', status: '', component: (0, r.jsx)(l, {}) }] }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, r.jsx)(y.W, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(f.W, { component: L, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(y.cN, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(f.cN, { component: L, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(y.vM, { component: S, headingLevel: 3 }),
+      (0, r.jsx)(f.vM, { component: L, headingLevel: 3 }),
      ],
     });
    }
-   function L(e = {}) {
+   function P(e = {}) {
     const { wrapper: t } = { ...(0, o.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(_, { ...e }) }) : _(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
    }
   },
   27794: (e, t, n) => {
@@ -244,6 +293,127 @@
     l = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, s.jsx)('div', { className: (0, o.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
+    };
+  },
+  6503: (e, t, n) => {
+   'use strict';
+   n.d(t, { W: () => u });
+   var r = n(57229),
+    o = n(51678),
+    s = n(41115),
+    i = n(70997),
+    c = n(4814),
+    a = n(75271),
+    l = n(52676);
+   const d = (e) => {
+     let { title: t, sc: n, component: d, tags: u } = e;
+     const h = (0, a.useId)(),
+      m = [...u];
+     if (n) {
+      m.push(n);
+      const e = o.fg.get(n);
+      e?.conformance && m.push(`Niveau ${e.conformance}`);
+     }
+     return (0, l.jsx)('li', {
+      className: (0, c.Z)(
+       'new-checklist__item',
+       u.map((e) => `new-checklist__item--${e}`),
+      ),
+      children: (0, l.jsxs)('details', {
+       children: [
+        (0, l.jsx)('summary', { children: (0, l.jsx)('span', { className: 'new-checklist__title', id: h, children: t }) }),
+        (0, l.jsxs)('div', {
+         className: 'new-checklist__content',
+         children: [
+          (0, l.jsx)('div', { children: d }),
+          (0, l.jsx)(s.k, {
+           className: 'new-checklist__badge-list',
+           children: m.map((e, t) => {
+            let n = (0, l.jsx)(i.O, { children: e }, t);
+            if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
+             const s = o.fg.get(e);
+             n = (0, l.jsx)(r.r, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${s.sc} ${s.nl.title}`, style: { lineHeight: 1 }, children: (0, l.jsx)(i.O, { children: `WCAG ${e}` }) }, t);
+            }
+            return n;
+           }),
+          }),
+         ],
+        }),
+       ],
+      }),
+     });
+    },
+    u = (e) => {
+     let { items: t } = e;
+     const [n, r] = (0, a.useState)([]),
+      o = (e) => n.includes(e),
+      c = t.reduce(
+       (e, t) => (
+        t.tags.forEach((t) => {
+         e.add(t);
+        }),
+        e
+       ),
+       new Set(),
+      ),
+      u = (0, a.useId)(),
+      h = t.filter((e) => {
+       let { tags: t } = e;
+       return 0 === n.length || t.some((e) => n.includes(e));
+      }),
+      m = t.length - h.length;
+     return (0, l.jsxs)('div', {
+      children: [
+       (0, l.jsxs)('div', {
+        className: 'ma-filter-block',
+        children: [
+         (0, l.jsx)('span', { id: u, children: 'Ik ben: ' }),
+         (0, l.jsx)(s.k, {
+          role: 'group',
+          'aria-labelledby': u,
+          className: 'ma-badge-toggle-button-group',
+          children: Array.from(c.values()).map((e, t) =>
+           (0, l.jsx)(
+            s.zx,
+            {
+             onClick: () =>
+              ((e, t) => {
+               const s = ('boolean' == typeof t ? t : !o(e)) ? [...n, e] : n.filter((t) => t !== e);
+               r(s);
+              })(e),
+             pressed: o(e),
+             appearance: 'subtle',
+             className: 'utrecht-button--contents',
+             children: (0, l.jsx)(i.O, { children: e }),
+            },
+            t,
+           ),
+          ),
+         }),
+         (0, l.jsx)('div', {
+          children:
+           n.length >= 1
+            ? (0, l.jsxs)(l.Fragment, {
+               children: [
+                (0, l.jsxs)('p', { role: 'status', children: ['Er wordt op ', n.length, ' onderwerpen gefilterd.'] }),
+                (0, l.jsxs)('p', { children: [m, ' van de ', t.length, ' items zijn nu niet zichtbaar.'] }),
+                (0, l.jsx)(s.zx, {
+                 appearance: 'secondary-action-button',
+                 onClick: () => {
+                  r([]);
+                 },
+                 children: 'Toon alles',
+                }),
+               ],
+              })
+            : 'Alle onderwerpen worden getoond.',
+         }),
+         ' ',
+        ],
+       }),
+       (0, l.jsx)('ul', { className: 'new-checklist', role: 'list', children: h.map((e, t) => (0, l.jsx)(d, { ...e }, t)) }),
+      ],
+     });
     };
   },
   97520: (e, t, n) => {
@@ -332,7 +502,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => x, vM: () => C, W: () => b, Rv: () => T });
+   n.d(t, { cN: () => A, vM: () => C, W: () => b, Rv: () => T });
    var r = n(41115),
     o = n(4814),
     s = n(39854),
@@ -370,26 +540,26 @@
    var j = n(23355),
     w = n(41757),
     y = n(16167),
-    f = n(55476);
-   const v = (e) => {
+    v = n(55476);
+   const f = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
     k = (e) => {
      let { checked: t, children: n, title: r, description: s, headingLevel: i = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, o.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, o.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: i, children: r }), s, n] })] });
+     return (0, d.jsxs)('li', { className: (0, o.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, o.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(y.X6, { appearance: 'utrecht-heading-3', level: i, children: r }), s, n] })] });
     };
-   var A = n(14669);
-   const x = (e) => {
+   var x = n(14669);
+   const A = (e) => {
      let { component: t, headingLevel: n } = e;
-     const s = t && t.projects.filter((e) => A.e9.includes(e.id)),
-      i = s && A.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
+     const s = t && t.projects.filter((e) => x.e9.includes(e.id)),
+      i = s && x.e9.map((e) => s.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: i.map((e) => ({
-        className: (0, o.Z)('definition-of-done', e && `definition-of-done--${(0, A.mA)(e.title)}`),
+        className: (0, o.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -397,10 +567,10 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(v, {
+           (0, d.jsx)(f, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: o } = e;
-             return (0, d.jsx)(k, { headingLevel: n + 1, checked: t, title: r, description: (0, A.Q6)(o) }, o);
+             return (0, d.jsx)(k, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(o) }, o);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -412,7 +582,7 @@
     },
     b = (e) => {
      let { component: t, headingLevel: n } = e;
-     const o = t && t.projects.filter((e) => !A.e9.includes(e.id));
+     const o = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && o.length
       ? (0, d.jsx)(m.um, {
          appearance: 'large',
@@ -429,7 +599,7 @@
              return 'Naam' === t;
             }),
             o = t?.value,
-            s = (0, A.ps)(e),
+            s = (0, x.ps)(e),
             i = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${o} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${o} voor visuele regressie tests` }],
@@ -482,7 +652,7 @@
     },
     T = (e) => {
      let { component: t, headingLevel: n, description: o } = e;
-     const s = t && A.$3[t.relayStep];
+     const s = t && x.$3[t.relayStep];
      return t && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(w.V, { level: n, suffix: s && (0, d.jsx)(j.y, { state: s }), children: t.title }), (0, d.jsx)(r.nv, { lead: !0, children: o })] });
     };
   },
@@ -522,15 +692,15 @@
     j = n(32463),
     w = n(85904),
     y = n(86384),
-    f = n(65012),
-    v = n(31795),
+    v = n(65012),
+    f = n(31795),
     k = n(37923),
-    A = n(49003),
-    x = n(75271);
-   const b = { color: p.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: y.Z, fontWeights: f.Z, lineHeights: v.Z, other: k.Z, textDecoration: A.Z },
+    x = n(49003),
+    A = n(75271);
+   const b = { color: p.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: y.Z, fontWeights: v.Z, lineHeights: f.Z, other: k.Z, textDecoration: x.Z },
     C = (e) => {
      let { type: t } = e;
-     return (0, m.jsx)(h.JO, { children: (0, x.createElement)(b[t]) });
+     return (0, m.jsx)(h.JO, { children: (0, A.createElement)(b[t]) });
     };
    function T(e) {
     let { tokens: t } = e;
@@ -707,7 +877,7 @@
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, $e: () => j, BA: () => c, Ee: () => d, Q6: () => s, U: () => m, Yr: () => w, d: () => u, e9: () => i, fO: () => f, mA: () => o, ps: () => g, qU: () => v, s0: () => y, zP: () => p });
+   n.d(t, { $3: () => r, $e: () => j, BA: () => c, Ee: () => d, Q6: () => s, U: () => m, Yr: () => w, d: () => u, e9: () => i, fO: () => v, mA: () => o, ps: () => g, qU: () => f, s0: () => y, zP: () => p });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -777,14 +947,14 @@
    function y(e, t) {
     return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? y(e[n], [...t, n]) : []));
    }
-   function f(e) {
+   function v(e) {
     const t = new Map();
     function n(e) {
      return t.has(e) || t.set(e, p(e)), t.get(e);
     }
     return e.sort((e, t) => e.length - t.length || n(e).localeCompare(n(t)));
    }
-   function v(e) {
+   function f(e) {
     const t = {};
     for (const n of e) {
      let e = t;

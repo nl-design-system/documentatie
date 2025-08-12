@@ -79,20 +79,16 @@ table {
 :root {
  -moz-osx-font-smoothing: auto !important;
 }
-.card__illustration--background,
-.core-team__illustration {
- --card-illustration-background-color: var(--nlds-document-inverse-background-color);
-}
-.component-card,
-:root {
- --utrecht-badge-list-item-margin-block: 0.25em;
-}
 *,
 .DocSearch-Container,
 .DocSearch-Container *,
 .card,
 .cardgroup__card {
  box-sizing: border-box;
+}
+.card__illustration--background,
+.core-team__illustration {
+ --card-illustration-background-color: var(--nlds-document-inverse-background-color);
 }
 .DocSearch-Commands,
 .DocSearch-Dropdown ul,
@@ -6924,23 +6920,6 @@ code .namespace {
  min-inline-size: 32px;
  vertical-align: middle;
 }
-.component-criteria-section__heading {
- display: inline-block;
-}
-.component-criteria-section {
- border: 1px solid #ccc;
- margin-bottom: 1em;
- padding: 1em;
-}
-.component-criteria-section__dl {
- grid-gap: 4px 16px;
- display: grid;
- grid-template-columns: max-content;
-}
-.component-criteria-section__dd {
- grid-column-start: 2;
- margin: 0;
-}
 .status-visual__status {
  align-items: center;
  border-bottom: 2px solid var(--nlds-status-border-color);
@@ -7051,6 +7030,23 @@ code .namespace {
  background: #ffd78e40;
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
+}
+.component-criteria-section__heading {
+ display: inline-block;
+}
+.component-criteria-section {
+ border: 1px solid #ccc;
+ margin-bottom: 1em;
+ padding: 1em;
+}
+.component-criteria-section__dl {
+ grid-gap: 4px 16px;
+ display: grid;
+ grid-template-columns: max-content;
+}
+.component-criteria-section__dd {
+ grid-column-start: 2;
+ margin: 0;
 }
 .terms-list__item {
  margin-bottom: 32px;
@@ -7714,6 +7710,38 @@ svg.DocSearch-Hit-Select-Icon {
 .DocSearch-Container {
  z-index: calc(var(--ifm-z-index-fixed) + 1);
 }
+.card {
+ --utrecht-space-around: 0;
+ --ifm-link-color: var(--nlds-interaction-color);
+ --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+ --utrecht-icon-size: 20px;
+ --utrecht-icon-inset-block-start: 0.25em;
+ background-color: #fff;
+ border: 2px solid #f5f5f5;
+ border-radius: 0;
+ color: #00303d;
+ padding-block: 24px;
+ padding-inline: 16px;
+ position: relative;
+}
+.card:has(.cardLink:hover) {
+ border-color: #ddd;
+}
+.cardTitle {
+ font-size: 28px;
+}
+.cardDescription,
+.homepage-hero__description {
+ font-size: 20px;
+}
+.cardLink:before {
+ content: "";
+ inset-block-end: 0;
+ inset-block-start: 0;
+ inset-inline-end: 0;
+ inset-inline-start: 0;
+ position: absolute;
+}
 .cardgroup {
  --utrecht-heading-2-font-size: 28px;
  display: grid;
@@ -7844,10 +7872,6 @@ svg.DocSearch-Hit-Select-Icon {
  margin: 0;
  margin-block-end: 18px;
 }
-.cardDescription,
-.homepage-hero__description {
- font-size: 20px;
-}
 .homepage-hero__images {
  display: flex;
  justify-content: center;
@@ -7934,6 +7958,7 @@ svg.DocSearch-Hit-Select-Icon {
  --component-illustration-svg-max-height: 185px;
  --component-illustration-padding-inline: 24px;
  --card-content-inline-size: 60%;
+ --utrecht-badge-list-item-margin-block: 0.25em;
  --utrecht-badge-list-item-margin-inline: 0.25em;
 }
 .component-card--suggestion {
@@ -7948,6 +7973,21 @@ svg.DocSearch-Hit-Select-Icon {
  --utrecht-accordion-panel-padding-inline-start: 1.5em;
  --utrecht-accordion-panel-padding-block-start: 0;
 }
+.blog-card {
+ --utrecht-badge-list-item-margin-block: 8px;
+ --utrecht-badge-list-item-margin-inline: 16px;
+ --utrecht-badge-font-weight: 400;
+ --utrecht-badge-background-color: #0000;
+ --utrecht-badge-color: #4a6f78;
+ --cardgroup-card-justify-content: start;
+ --utrecht-icon-size: 1em;
+ --utrecht-icon-inset-block-start: 0.12em;
+}
+.blog-card__badge {
+ display: flex;
+ gap: 4px;
+ margin-block-start: 24px;
+}
 .nlds-inline-heading-group__heading,
 .nlds-inline-heading-group__suffix,
 .tags_MZhc {
@@ -7958,6 +7998,9 @@ svg.DocSearch-Hit-Select-Icon {
  font-family: inherit;
  font-size: inherit;
  line-height: inherit;
+}
+.nlds-inline-heading-group--wcag-heading-group {
+ --utrecht-badge-font-size: max(var(--utrecht-paragraph-font-size), calc(var(--utrecht-heading-1-font-size) * 0.42));
 }
 .task-list {
  --nlds-task-list-item-column-gap: 12px;
@@ -7974,10 +8017,6 @@ svg.DocSearch-Hit-Select-Icon {
  list-style-type: none;
  padding-block-start: 4px;
  padding-inline-start: 0;
-}
-.card,
-.nlds-guideline {
- --utrecht-space-around: 0;
 }
 .task-list-item {
  align-items: baseline;
@@ -8022,43 +8061,11 @@ svg.DocSearch-Hit-Select-Icon {
 .task-list-item__marker--checked {
  background-color: var(--nlds-task-list-item-marker-checked-background-color);
 }
-.definition-of-done {
- fill: var(--utrecht-accordion-button-color);
-}
-.definition-of-done--help-wanted {
- --utrecht-accordion-button-background-color: var(--nlds-status-help-wanted-background-color);
- --utrecht-accordion-button-color: var(--nlds-status-help-wanted-color);
- --utrecht-accordion-panel-border-color: var(--nlds-status-help-wanted-background-color);
-}
-.definition-of-done--community {
- --utrecht-accordion-button-background-color: var(--nlds-status-community-background-color);
- --utrecht-accordion-button-color: var(--nlds-status-community-color);
- --utrecht-accordion-panel-border-color: var(--nlds-status-community-background-color);
-}
-.definition-of-done--candidate {
- --utrecht-accordion-button-background-color: var(--nlds-status-unstable-background-color);
- --utrecht-accordion-button-color: var(--nlds-status-unstable-color);
- --utrecht-accordion-panel-border-color: var(--nlds-status-unstable-background-color);
-}
-.definition-of-done--hall-of-fame {
- --utrecht-accordion-button-background-color: var(--nlds-status-stable-background-color);
- --utrecht-accordion-button-color: var(--nlds-status-stable-color);
- --utrecht-accordion-panel-border-color: var(--nlds-status-stable-background-color);
-}
-.implementation-card-group {
- --cardgroup-large-padding-block-start: 0;
- --cardgroup-large-padding-block-end: 0;
-}
-.implementation-card {
- --component-progress-background-color--checked: var(--nlds-status-community-background-color);
- --component-progress-background-color--unchecked: var(--nlds-status-community-color);
- --utrecht-link-list-link-column-gap: 0.25em;
- --utrecht-link-list-icon-inset-block-start: 0.25em;
-}
 :root {
  --docsearch-primary-color: var(--ifm-color-primary);
  --docsearch-text-color: var(--ifm-font-color-base);
  --utrecht-badge-list-item-margin-inline: 0.5em;
+ --utrecht-badge-list-item-margin-block: 0.25em;
  --nl-data-badge-background-color: #fff;
  --nl-data-badge-color: #000;
  --nl-data-badge-border-radius: 0;
@@ -8129,50 +8136,38 @@ svg.DocSearch-Hit-Select-Icon {
  padding-inline: var(--basis-space-inline-lg);
  row-gap: var(--basis-space-block-md);
 }
-.nlds-inline-heading-group--wcag-heading-group {
- --utrecht-badge-font-size: max(var(--utrecht-paragraph-font-size), calc(var(--utrecht-heading-1-font-size) * 0.42));
+.definition-of-done {
+ fill: var(--utrecht-accordion-button-color);
 }
-.card {
- --ifm-link-color: var(--nlds-interaction-color);
- --ifm-link-hover-color: var(--ifm-color-emphasis-700);
- --utrecht-icon-size: 20px;
- --utrecht-icon-inset-block-start: 0.25em;
- background-color: #fff;
- border: 2px solid #f5f5f5;
- border-radius: 0;
- color: #00303d;
- padding-block: 24px;
- padding-inline: 16px;
- position: relative;
+.definition-of-done--help-wanted {
+ --utrecht-accordion-button-background-color: var(--nlds-status-help-wanted-background-color);
+ --utrecht-accordion-button-color: var(--nlds-status-help-wanted-color);
+ --utrecht-accordion-panel-border-color: var(--nlds-status-help-wanted-background-color);
 }
-.card:has(.cardLink:hover) {
- border-color: #ddd;
+.definition-of-done--community {
+ --utrecht-accordion-button-background-color: var(--nlds-status-community-background-color);
+ --utrecht-accordion-button-color: var(--nlds-status-community-color);
+ --utrecht-accordion-panel-border-color: var(--nlds-status-community-background-color);
 }
-.cardTitle {
- font-size: 28px;
+.definition-of-done--candidate {
+ --utrecht-accordion-button-background-color: var(--nlds-status-unstable-background-color);
+ --utrecht-accordion-button-color: var(--nlds-status-unstable-color);
+ --utrecht-accordion-panel-border-color: var(--nlds-status-unstable-background-color);
 }
-.cardLink:before {
- content: "";
- inset-block-end: 0;
- inset-block-start: 0;
- inset-inline-end: 0;
- inset-inline-start: 0;
- position: absolute;
+.definition-of-done--hall-of-fame {
+ --utrecht-accordion-button-background-color: var(--nlds-status-stable-background-color);
+ --utrecht-accordion-button-color: var(--nlds-status-stable-color);
+ --utrecht-accordion-panel-border-color: var(--nlds-status-stable-background-color);
 }
-.blog-card {
- --utrecht-badge-list-item-margin-block: 8px;
- --utrecht-badge-list-item-margin-inline: 16px;
- --utrecht-badge-font-weight: 400;
- --utrecht-badge-background-color: #0000;
- --utrecht-badge-color: #4a6f78;
- --cardgroup-card-justify-content: start;
- --utrecht-icon-size: 1em;
- --utrecht-icon-inset-block-start: 0.12em;
+.implementation-card-group {
+ --cardgroup-large-padding-block-start: 0;
+ --cardgroup-large-padding-block-end: 0;
 }
-.blog-card__badge {
- display: flex;
- gap: 4px;
- margin-block-start: 24px;
+.implementation-card {
+ --component-progress-background-color--checked: var(--nlds-status-community-background-color);
+ --component-progress-background-color--unchecked: var(--nlds-status-community-color);
+ --utrecht-link-list-link-column-gap: 0.25em;
+ --utrecht-link-list-icon-inset-block-start: 0.25em;
 }
 .video-player {
  aspect-ratio: 16/9;
@@ -8382,6 +8377,7 @@ svg.DocSearch-Hit-Select-Icon {
  margin: 0 0 var(--ifm-spacing-vertical);
 }
 .nlds-guideline {
+ --utrecht-space-around: 0;
  --utrecht-code-font-size: 16px;
  border: 1px solid #0000001a;
  margin-block-end: 40px;
