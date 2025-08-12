@@ -9,27 +9,27 @@
 }
 
 .component-illustration--help-wanted {
-  --component-illustration-background-color: #f9f6f3;
-  --component-illustration-grid-color: #e4ebed;
-  --component-illustration-color: #004152;
+  --component-illustration-background-color: var(--nlds-status-help-wanted-subtle-background-color);
+  --component-illustration-grid-color: var(--nlds-status-help-wanted-border-color);
+  --component-illustration-color: var(--nlds-status-help-wanted-color);
 }
 
 .component-illustration--community {
-  --component-illustration-background-color: #e5f2f7;
-  --component-illustration-grid-color: #cce4ef;
-  --component-illustration-color: #0079af;
+  --component-illustration-background-color: var(--nlds-status-community-subtle-background-color);
+  --component-illustration-grid-color: var(--nlds-status-community-border-color);
+  --component-illustration-color: var(--nlds-status-community-color);
 }
 
 .component-illustration--candidate {
-  --component-illustration-background-color: #e5f0f0;
-  --component-illustration-grid-color: #cce1e1;
-  --component-illustration-color: #006a68;
+  --component-illustration-background-color: var(--nlds-status-candidate-subtle-background-color);
+  --component-illustration-grid-color: var(--nlds-status-candidate-border-color);
+  --component-illustration-color: var(--nlds-status-candidate-color);
 }
 
 .component-illustration--hall-of-fame {
-  --component-illustration-background-color: #f4eef2;
-  --component-illustration-grid-color: #eadfe7;
-  --component-illustration-color: #74295f;
+  --component-illustration-background-color: var(--nlds-status-hall-of-fame-subtle-background-color);
+  --component-illustration-grid-color: var(--nlds-status-hall-of-fame-border-color);
+  --component-illustration-color: var(--nlds-status-hall-of-fame-color);
 }
 
 .component-illustration__caption {
