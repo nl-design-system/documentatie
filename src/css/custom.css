@@ -85,6 +85,8 @@
   --utrecht-card-content-padding-block-start: 20px;
   --utrecht-button-group-margin-block-end: 20px;
   --utrecht-button-group-margin-block-start: 40px;
+  --utrecht-badge-list-row-gap: 1rem;
+  --utrecht-badge-list-column-gap: 1ch;
 
   /* Hackysnacky tokens */
   --utrecht-card-link-hover-background-color: var(--basis-color-action-2-bg-hover);
@@ -94,6 +96,7 @@
   --basis-text-font-size-sm: 1rem !important;
   --utrecht-accordion-button-background-color: transparent !important;
   --utrecht-link-text-underline-offset: 4px !important;
+  --utrecht-accordion-button-background-color: transparent !important;
   --utrecht-color-sample-background-color: currentColor !important;
 
   --ifm-footer-link-horizontal-spacing: 20px;
