@@ -24,7 +24,8 @@ const excludeRecusively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
   }, []);
 
 export const OverviewPage = ({ excludeDocIDs = [], className, ...restProps }: OverviewPageProps) => {
-  const category = useCurrentSidebarCategory();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const category: any = useCurrentSidebarCategory();
 
   return (
     <div {...restProps} className={clsx('margin-top--lg', className)}>

@@ -1,9 +1,4 @@
 import { MDXProvider } from '@mdx-js/react';
-import Admonition from '@theme/Admonition';
-import MDXDetails from '@theme/MDXComponents/Details';
-import MDXPre from '@theme/MDXComponents/Pre';
-import type { Props } from '@theme/MDXContent';
-import Mermaid from '@theme/Mermaid';
 import {
   Code,
   Emphasis,
@@ -20,15 +15,14 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import type { ReactElement } from 'react';
 
-export default function MDXContent({ children }: Props): ReactElement {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function MDXContent({ children }: any): ReactElement {
   return (
     <MDXProvider
       components={{
         code: Code,
         a: Link,
         em: Emphasis,
-        pre: MDXPre,
-        details: MDXDetails,
         ul: ({ children }) => {
           return <UnorderedList className="utrecht-unordered-list--html-content">{children}</UnorderedList>;
         },
@@ -42,8 +36,6 @@ export default function MDXContent({ children }: Props): ReactElement {
         h4: Heading4,
         h5: Heading5,
         h6: Heading6,
-        admonition: Admonition,
-        mermaid: Mermaid,
       }}
     >
       {children}

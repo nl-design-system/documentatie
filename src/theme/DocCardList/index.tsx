@@ -1,21 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { filterDocCardListItems, useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import DocCard from '@theme/DocCard';
-import type { Props } from '@theme/DocCardList';
 import clsx from 'clsx';
 import type { ReactElement } from 'react';
 
-function DocCardListForCurrentSidebarCategory({ className }: Props) {
-  const category = useCurrentSidebarCategory();
+function DocCardListForCurrentSidebarCategory({ className }: any) {
+  const category: any = useCurrentSidebarCategory();
   return <DocCardList items={category.items} className={className} />;
 }
 
-export default function DocCardList(props: Props): ReactElement {
+export default function DocCardList(props: any): ReactElement {
   const { items, className } = props;
 
   if (!items) {
     return <DocCardListForCurrentSidebarCategory {...props} />;
   }
-  const filteredItems = filterDocCardListItems(items);
+  const filteredItems: any = filterDocCardListItems(items);
   return (
     <section className={clsx('row', className)}>
       {filteredItems.map((item, index) => (

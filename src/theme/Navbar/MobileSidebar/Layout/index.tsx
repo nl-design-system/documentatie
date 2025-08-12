@@ -1,11 +1,11 @@
 import { useNavbarMobileSidebar, useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
-import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
 import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 import type { ReactElement } from 'react';
 import './Layout.css';
 
-export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): ReactElement {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: any): ReactElement {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
   const navbarModalDialog = useRef<HTMLDialogElement>();
   const { shown, toggle } = useNavbarMobileSidebar();

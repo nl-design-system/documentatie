@@ -1,7 +1,6 @@
 import { Link } from '@site/src/components/Link';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useDocById } from '@docusaurus/plugin-content-docs/client';
-import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { PropsWithChildren, ReactElement, ReactNode } from 'react';
@@ -67,7 +66,8 @@ function CardLink({ item }: { item: PropSidebarItemLink }): ReactElement {
   return <CardLayout href={item.href} title={item.label} description={item.description ?? doc?.description} />;
 }
 
-export default function DocCard({ item }: Props): ReactElement {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function DocCard({ item }: any): ReactElement {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;

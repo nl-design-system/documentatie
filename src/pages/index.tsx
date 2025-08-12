@@ -37,16 +37,19 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout
-      title={`${siteConfig.title} - homepage`}
-      description="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
-      wrapperClassName="container--narrow"
-    >
+    <Layout>
+      <head>
+        <title>{siteConfig.title}</title>
+        <meta
+          name="description"
+          content="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening."
+        />
+      </head>
       <main>
         <SpotlightSection className="homepage-spotlight-section">
           <div className="container">
             <Heading1>NL Design System</Heading1>
-            <Paragraph lead>
+            <Paragraph appearance="lead">
               Samen met diverse overheidsorganisaties ontwikkelen we herbruikbare bouwblokken voor toegankelijke en
               gebruiksvriendelijke webapplicaties en websites.
             </Paragraph>
@@ -111,7 +114,7 @@ export default function Home() {
         <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--heartbeat">
           <div className="container">
             <Heading2>Bekijk de laatste updates</Heading2>
-            <Paragraph lead>
+            <Paragraph appearance="lead">
               Elke 2 weken delen het Kernteam en de Community waar ze mee bezig zijn in de Heartbeat.
             </Paragraph>
 
