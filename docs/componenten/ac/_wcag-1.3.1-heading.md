@@ -12,5 +12,5 @@ Let erop dat je per pagina 1 `h1` gebruikt en dat deze aan het begin van de `mai
 
 NL Design System richtlijnen:
 
-- [Gebruik betekenisvolle opmaak voor tekst, Kopjes](/richtlijnen/stijl/typografie/opmaak/#kopjes)
+- [Richtlijnen voor koppen](/richtlijnen/content/tekstopmaak/koppen/)
 - [Gebruik ruimte om relaties te creëren tussen elementen, Relaties binnen typografie](/richtlijnen/stijl/ruimte/relaties#relaties-binnen-typografie)
