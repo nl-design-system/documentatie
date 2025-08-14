@@ -20,159 +20,41 @@ import { VideoPlayer } from "@site/src/components/VideoPlayer";
 
 # Zelf componenten maken
 
-De Figma bibliotheek van NL Design System bevat vast (nog) niet alle componenten die nodig zijn voor jouw organisatie. Je kunt zelf componenten gaan opbouwen of de bestaande componenten van jouw organisatie aanpassen. Hoe dan ook, het is het fijn als je dit doet op basis van de NL Design System structuur. Open-source en met design tokens, inclusief de juiste naamgeving. Zo kunnen componenten binnen de community met elkaar worden uitgewisseld.
+De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch kunnen er situaties voorkomen waarbij je zelf componenten maakt.
 
-Aan de hand van twee fictieve lokale componenten (Demo sticker en Demo card) laten we zien hoe je jouw componenten van design tokens voorziet volgens de NL Design System structuur.
+- **Community-component ontbreekt:** De community-component die jij nu juist nodig hebt ontbreekt nog. Je hebt dit doorgegeven aan het kernteam maar die hebben er (nog) geen tijd voor. Dan kun je de component zelf maken.
+- **Community-component verbeteren:** Er is wel een community-component maar deze is niet direct bruikbaar voor jouw organisatie. Maak dan gebruik van het bestaande ontwerp (of de code) als basis om verder op door te ontwikkelen. Probeer hierbij zoveel mogelijk elementen van de bestaande component over te nemen. Het is helemaal super als je samenwerkt met de organisatie die de oorspronkelijke component heeft ontwikkeld, zodat verbeteringen gezamenlijk kunnen worden doorgevoerd.
+- **Eigen community-component bijdragen:** Je wilt als organisatie een eigen community component bijdragen. 
 
-Voordat je begint is het verstandig dat je het [Figma stappenplan](/handboek/designer/figma-stappenplan) hebt doorlopen. Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](/project/kernteam).
+Hoe dan ook, het is fijn als je dit doet op basis van de NL Design System structuur. Open source en met design tokens, inclusief de juiste naamgeving. Zo kunnen componenten binnen de community met elkaar worden uitgewisseld.
 
-## Demo sticker maken
+Aan de hand van twee fictieve lokale componenten (Demo Sticker en Demo Card) laten we zien hoe je dat doet.
 
-In deze video laten we zien hoe je de 'Demo sticker' kan opbouwen met design tokens. Daaronder staat dit ook als tekst beschreven.
+## Demo Sticker maken
 
-<VideoPlayer videoId="cN37hd7KWMY" />
+In deze video laten we zien hoe de component 'Demo Sticker' wordt ontwikkeld in Figma.
 
-### Pagina voorbereiden
+<VideoPlayer videoId="dbTcHS01IGQ" />
 
-- Open jouw Local - [Organisatie] - Bibliotheek.
-- Voeg een nieuwe pagina toe en noem deze ‘Demo sticker’.
-- Plaats deze pagina in alfabetische volgorde.
+## Demo Card maken
 
-### Component maken
+In deze video laten we zien hoe de component 'Demo Card' wordt ontwikkeld in Figma.
 
-- Verzamel de benodigde elementen (label en een icoon). Maak daarbij zo veel mogelijk gebruik van jouw [Organisatie] - Bibliotheek die je hebt gekoppeld aan je Local Bibliotheek.
-- Maak een component van de verzamelde elementen (Mac: ⌥ Option - ⌘ Command - K of Windows: Ctrl + Alt + K).
-- Noem de component ‘[organisatie]-demo-sticker’.
+<VideoPlayer videoId="vsJjs6ehGZ0" />
 
-### Component van huisstijl voorzien
+## Handige links
 
-Je kunt een component van huisstijl voorzien zoals je dat gewend bent (Shared Styles, Auto-layout, Variables). Zolang je deze designkeuzes uiteindelijk maar vastlegt via Tokens Studio. Hierdoor zijn je design tokens te koppelen met code. We vervolgen deze uitleg door direct te werken met de Tokens Studio plugin.
-
-#### Tokens Studio plugin gebruiken
-
-- Open de Tokens Studio plugin.
-- Maak binnen ‘components’ een nieuwe set aan en noem deze ‘components/demo-sticker’.
-- Plaats dit component in alfabetische volgorde door het te slepen.
-- Zet de checkbox van demo-sticker aan.
-
-#### Token naamgeving
-
-Gebruik de [documentatie over de naamgeving](https://www.nldesignsystem.nl/handboek/huisstijl/design-tokens/). Hierin staat hoe je naamgeving van component tokens op kan bouwen.
-
-#### Kleur (color) tokens aanmaken
-
-- Voor een achtergrondkleur:
-  - Klik bij ‘Color’ op het plusje.
-  - Noem het nieuwe achtergrondkleur token ‘[organisatie].demo-sticker.background-color’.
-  - Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.
-- Voor een voorgrondkleur:
-  - Dupliceer het achtergrondkleur token. Op deze manier hoef je de naam niet in z’n geheel opnieuw te schrijven.
-  - Noem het nieuwe voorgrondkleur token ‘[organisatie].demo-sticker.color’.
-  - Kies opnieuw een kleur naar keuze en klik op ‘Create’.
-
-#### Kleur tokens koppelen
-
-- Koppel de achtergrondkleur:
-  - Selecteer de juiste laag. In dit geval is dat het hele component.
-  - Klik op het aangemaakte achtergrondkleur token of gebruik rechtermuisklik en kies voor ‘Fill’.
-- Koppel de voorgrondkleur:
-  - Selecteer de lagen ‘Label’ en ‘Shape’ (gebruik diepe selectie: Mac: ⌘ Command of Windows: Control).
-  - Klik op het aangemaakte voorgrondkleur token.
-
-#### Ruimte (spacing) tokens aanmaken
-
-Gebruik de [documentatie over de ruimte](/richtlijnen/stijl/ruimte). Hierin staat informatie over de spacing scale en concepten.
-
-- Voor inline:
-  - Klik bij ‘Spacing’ op het plusje.
-  - Noem het nieuwe token ‘[organisatie].demo-sticker.padding-inline’.
-  - Kies bij ‘Value’ een waarde uit je common of brand laag en klik op ‘Create’. Tip: typ ‘\{inline’ om gebruik te maken van autosuggestie.
-- Voor block:
-  - Dupliceer de inline token.
-  - Noem het nieuwe token ‘[organisatie].demo-sticker.padding-block’.
-  - Kies opnieuw een waarde naar keuze en klik op ‘Create’.
-
-#### Ruimte tokens aan component koppelen
-
-- Selecteer de juiste laag. In dit geval is dat het hele component.
-- Gebruik rechtermuisklik bij de inline token en klik op ‘Left’ en ‘Right’.
-- Gebruik rechtermuisklik bij de block token en klik op ‘Top’ en ‘Bottom’.
-
-#### Typografie tokens aanmaken
-
-- Voor font family:
-  - Klik bij ‘Font Family’ op het plusje.
-  - Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-family’.
-  - Kies bij ‘Font Family’ voor een typografie uit het common niveau en klik op ‘Create’.
-- Voor font weight:
-  - Om de dikte van het woord ‘Label’ te bepalen, klik je bij ‘Font Weight’ op het plusje.
-  - Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-weight’.
-  - Kies bij ‘Font Size’ een grootte uit het common niveau en klik op ‘Create’.
-- Voor font size en line height:
-  - Herhaal bovenstaande stappen met tokens uit het common niveau.
-
-#### Typografie tokens aan component koppelen
-
-Selecteer de laag ‘Label’ en klik op de aangemaakte typografie tokens.
-
-### Tokens aanpassen of nieuwe tokens maken
-
-Voeg indien nodig tokens toe voor bijvoorbeeld de spacing tussen het icoon en het label, of voor de grootte van het icoon.
-
-### Varianten maken
-
-- Geef de achtergrondkleur van de component set de document.background-color uit het common niveau. Tip: dit is handig wanneer je ooit met dark-mode gaat werken. De achtergrondkleur kleurt dan mee.
-- Pas auto-layout toe de component met varianten. Kies 48px voor de vertical gap, horizontal padding en vertical padding.
-- Verander de naam van de property in overleg met je developer (bijv. ‘Appearance’). Tip: kijk hoe de properties worden genoemd bij andere componenten die ook meerdere varianten hebben.
-- Hernoem de varianten naar ‘Default’ en ‘Hyper’.
-
-#### Border tokens aanmaken
-
-Als voorbeeld voegen we enkel border tokens toe aan de 'hyper' variant.
-
-- Voor border kleur:
-  - Dupliceer het voorgrondkleur token.
-  - Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-color’.
-  - Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.
-- Voor border width:
-  - Klik bij ‘Border Width’ op het plusje.
-  - Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-width’.
-  - Kies bij ‘Border Width’ voor een dikte uit het brand of common niveau en klik op ‘Create’.
-
-#### Border tokens aan component koppelen
-
-- Selecteer de variant ‘Hyper’.
-- Gebruik rechtermuisklik bij het border kleur token en klik op ‘Border’.
-- Gebruik rechtermuisklik bij het border width token en klik op ‘All’.
-
-### Afronden
-
-- Je bent klaar met het opbouwen van je component met design tokens!
-- De volgende stap is om de tokens inzichtelijk te maken voor anderen door ze te documenteren.
-
-## Demo sticker documenteren
-
-In deze video laten we zien hoe je de design tokens van de 'Demo sticker' kan documenteren.
-
-<VideoPlayer videoId="2_SzboMo15c" />
-
-## Demo card maken
-
-In deze video laten we zien hoe je de 'Demo card' kan opbouwen met design tokens.
-
-<VideoPlayer videoId="UbrN67pU0dk" />
-
-## Demo card documenteren
-
-In deze video laten we zien hoe je de design tokens van de 'Demo card' kan documenteren.
-
-<VideoPlayer videoId="w_5ITXBx8kE" />
+- [Definition of Done (Estafettemodel)](/handboek/estafettemodel/componenten/definition-of-done)
+  - [Help Wanted stappenplan](/handboek/estafettemodel/componenten/help-wanted-stappenplan)
+  - [Community stappenplan voor organisaties](/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties)
+- [Design tokens](/handboek/huisstijl/design-tokens)
+- [Figma hygiëne](/handboek/designer/figma-hygiene)
 
 ---
 
 ## Help deze documentatie te verbeteren
 
-Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [GitHub](https://github.com/nl-design-system/documentatie).
 
 ## Vragen
 
