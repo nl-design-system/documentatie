@@ -1,0 +1,184 @@
+<!doctype html>
+<!-- Gebruik altijd als allereerste onderdeel een DOCTYPE zodat je "Standards mode" gebruikt voor layout, niet "Quirks mode". -->
+<!-- TODO: Stel `lang` en `dir` in, zodat de taal van de pagina duidelijk is. -->
+<!-- Lees meer over WCAG-succescriterium 3.1.1 Taal van de pagina: https://nldesignsystem.nl/wcag/3.1.1 -->
+<!-- TODO: Pas het datamodel van het CMS aan om deze informatie te hebben. -->
+<!-- Gebruik CSS van de Root component, voor een aantal doelen: -->
+<!-- - Met de Root component, in combinatie met de Body component, kan de volledige hoogte en breedte van de pagina gebruikt kan worden voor de Page Layout. -->
+<!-- - De Root component stelt woordafbreking in, zodat de pagina ook goed werkt als die ingezoomd is. -->
+<!--   Lees meer over WCAG-succescriterium 1.4.10 Reflow: https://nldesignsystem.nl/wcag/1.4.10 -->
+<!-- - De Root component optimaliseert de font rendering. -->
+<!-- - De Root stelt de standaard kleuren van de pagina. -->
+<!-- De Root component stelt geen font-size in. Je moet zelf ook geen font-size instellen op het `html`-element. -->
+<!-- Dan kan een gebruiker met een User Stylesheet de font-size aanpassen voor toegankelijkheid. De font-size instellen doe je met de Body component. -->
+<!-- Lees meer over WCAG-succescriterium 1.4.4 Herschalen van tekst https://nldesignsystem.nl/wcag/1.4.4 -->
+<!-- Je moet kleuren kiezen waarmee je voldoet aan het minimum contrast van WCAG, en voldoet aan maximum contrast volgens NL Design System. -->
+<!-- Lees meer over WCAG-succescriterium 1.4.3 Contrast (minimum) https://nldesignsystem.nl/wcag/1.4.3 -->
+<html lang="nl" dir="ltr" class="utrecht-root utrecht-theme">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Lees meer over WCAG-succescriterium 2.4.2 Paginatitel: https://nldesignsystem.nl/wcag/2.4.2-->
+    <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
+    <!-- Voorkom met `initial-scale="1` dat letters te klein zijn op kleine schermen, totdat je inzoomt. -->
+    <!-- Je hoeft dan niet met twee vingers "pan and zoom" te doen. -->
+    <!-- Je hebt niet het risico dat je per ongeluk iets activeert door dubbel-tap voor inzoomen. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Gebruik de CSS van de componenten die je gebruikt. -->
+    <!-- De `@1` in de URL verwijst naar de laatste release die onderdeel is van de major release 1.0.0 -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/root-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/skip-link-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-header-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-footer-css@2/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/icon-css@2/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1/dist/heading.css" />
+    <!-- Gebruik de CSS van met CSS variables om de componenten in te stellen met de huisstijl. -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
+
+    <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
+    <!-- TODO: Installeer de CSS als dependency, met npm bijvoorbeeld: -->
+    <!-- npm install --save @utrecht/root-css @utrecht/body-css @utrecht/design-tokens -->
+  </head>
+  <!-- Gebruik de Body component -->
+  <!-- Met de Body component kan de volledige hoogte en breedte van de pagina gebruikt kan worden voor de Page Layout. -->
+  <!-- Met de Body component stel je de default font-size van je pagina in. -->
+  <body class="utrecht-body" id="top">
+    <!-- Gebruik de Skip Link component zodat gebruikers blokken kunnen overslaan die op meerdere pagina's voorkomen, zoals de Page Header. -->
+    <!-- Lees meer over WCAG-succescriterium 2.4.1 Blokken omzeilen: https://nldesignsystem.nl/wcag/2.4.1 -->
+    <!-- Gebruik CSS van de Root component, voor een aantal doelen: -->
+    <!-- - De focus-indicator is consistent met de focus van andere componenten. -->
+    <!--   Lees meer over WCAG-succescriterium 3.2.4 Consistente identificatie: https://nldesignsystem.nl/wcag/3.2.4 -->
+    <!-- - De afmetingen van de link voldoen aan de minimum grootte van een aanwijsgebied. -->
+    <!-- - De focus-indicator is helemaal in beeld, omdat de Skip Link iets van de zijkant van het scherm af staat. -->
+    <!--   Lees meer over WCAG-succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum) https://nldesignsystem.nl/wcag/2.5.8 -->
+    <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
+    <div class="utrecht-page-layout">
+      <!-- Gebruik de Page Header component voor-->
+      <!-- Gebruik het HTML element `header` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
+      <header class="utrecht-page-header">
+        <div class="utrecht-page-header__content">
+          <utrecht-icon-dutch-map></utrecht-icon-dutch-map>
+          <figure>
+            <div>
+              <svg class="utrecht-icon dutch-map" role="presentation" aria-hidden="true" alt=""></svg>
+            </div>
+          </figure>
+          <!-- Plaats in de Page Header componenten -->
+          <!-- Gebruik een consistente volgorde voor navigatie-elementen, zoals links, zoekformulieren en uitlogknoppen. -->
+          <!-- Als je meerdere templates hebt waarin navigatie zit, zorg dan dat die consistent werken. -->
+          <!-- Lees meer over WCAG-succescriterium 3.2.3 Consistente navigatie: https://nldesignsystem.nl/wcag/3.2.3 -->
+        </div>
+      </header>
+      <!-- Gebruik niet het `main` element voor de Page Body component. Gebruik `main` voor het precieze onderdeel dat de main content is. -->
+      <div class="utrecht-page-body">
+        <div class="utrecht-page-body__content">
+          <!-- Plaats op deze plek eventueel de Breadcrumb Navigation component: binnen de Page Body, en buiten de "main" landmark. -->
+          <nav aria-labelledby="breadcrumb-heading">Home > Meldingen > Meldingen openbare ruimte</nav>
+          <main id="main">
+            <h1 class="nl-heading">Graffiti laten verwijderen van uw pand</h1>
+            <p>
+              Heeft u overlast van graffiti, posters of stickers op uw huis of pand? Meldpunt Graffiti zorgt ervoor dat
+              deze gratis worden verwijderd.
+            </p>
+            <p>
+              Als u een koopwoning heeft of een pand van een particuliere eigenaar huurt of beheert, kunt u gebruik
+              maken van de diensten van het Meldpunt Graffiti.
+            </p>
+            <p>
+              Als u een woning van een corporatie huurt, meldt u vervuiling direct aan hen. De corporatie verzorgt
+              namelijk zelf de reiniging van hun panden.
+            </p>
+            <h2>Eerst toestemming geven</h2>
+            <ul>
+              <li>
+                Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
+                keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u de vervuiling meteen melden.
+              </li>
+              <li>
+                Als u eigenaar, beheerder of gebruiker bent en in Gemeente Voorbeeld woont kunt u het formulier met
+                DigiD invullen. Uw inschrijving wordt dan digitaal verzonden.
+              </li>
+              <li>
+                Nutsbedrijven (bijvoorbeeld Stedin, Ziggo, KPN), openbaar vervoersbedrijven (zoals de HTM en de NS) en
+                rijksoverheidsinstellingen, zijn zelf verantwoordelijk voor het reinigen van hun objecten.
+              </li>
+              <li>
+                Woont u niet in Gemeente Voorbeeld of heeft u uw DigiD niet bij de hand? Vul het formulier dan in en
+                print het. Het ondertekende formulier stuurt u naar Meldpunt Graffiti. Dat kan als bijlage per e-mail of
+                per post.
+              </li>
+            </ul>
+            <a class="" href="#">Toestemming geven</a>
+
+            <h2>Dan vervuiling melden</h2>
+            <p>
+              Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
+              vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
+            </p>
+            <a class="" href="#">Melding doen</a>
+
+            <h2>Racistische graffiti melden</h2>
+            <p>
+              Graffiti met racistisch karakter wordt binnen 24 uur verwijderd. Dit soort graffiti kunt u op werkdagen
+              direct bij de gemeente melden via telefoonnummer 14070. In het weekend en op feestdagen belt u hiervoor de
+              politie via 0900 – 88 44.
+            </p>
+
+            <h2>Goed om te weten</h2>
+            <h3>Professioneel verwijderd</h3>
+            <p>
+              Het schoonmaken wordt altijd gedaan door een professioneel en gekwalificeerd schoonmaakbedrijf. Dat is
+              belangrijk, omdat graffiti- en wildplakverwijdering specialistisch werk is en uw pand niet mag worden
+              beschadigd. Naast schoonmaakspecialist zijn de schoonmakers daarom ook schilder en gevelspecialist.
+            </p>
+
+            <h3>Aangifte bij de politie</h3>
+            <p>Als de graffiti te lezen is doet het Meldpunt Graffiti, namens u, aangifte bij de politie.</p>
+
+            <h2>Hoelang duurt het?</h2>
+            <p>
+              Graffiti, posters en stickers worden in principe binnen 5 werkdagen na melding verwijderd. Hoe snel dit
+              gebeurt hangt af van de weersomstandigheden.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+              Het Meldpunt Graffiti van de gemeente coördineert het schoonmaken van de gevels en werkt samen met
+              verschillende organisaties om de stad zoveel mogelijk vrij van graffiti te houden.
+            </p>
+          </main>
+          <!-- Plaats content die op meerdere pagina's voorkomt buiten de "main" landmark, zoals contactinformatie. -->
+          <aside>
+            <!-- Wanneer je op meerdere pagina's hulp biedt, zoals contactinformatie, zorg dan dat ze op dezelfde plek in de pagina staan. -->
+            <p>Vragen? Neem contact op met {afzender}. Dat kan op de volgende manieren: ...</p>
+          </aside>
+        </div>
+      </div>
+      <!-- Gebruik het HTML element `footer` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
+      <footer class="utrecht-page-footer">
+        <div class="utrecht-page-footer__content">
+          <p>Voorbeeld</p>
+          <h3>Contact</h3>
+          <p>Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl</p>
+          <ul>
+            <li>Over gemeente Voorbeeld</li>
+            <li>Nieuwsbrief</li>
+            <li>Social media</li>
+            <li>Werken bij de gemeente Voorbeeld</li>
+          </ul>
+          <ul>
+            <li>Bescherming persoonsgegevens</li>
+            <li>Gebruikersvoorwaarden</li>
+            <li>Proclaimer</li>
+            <li>Toegankelijkheidsverklaring</li>
+          </ul>
+          <!-- Gebruik een consistente volgorde voor navigatie-elementen, zoals links. -->
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/@utrecht/icon@2/dist/iconset.mjs"></script>
+  </body>
+</html>
