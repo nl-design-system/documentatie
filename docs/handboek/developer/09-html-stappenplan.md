@@ -7,7 +7,7 @@ Als ontwikkelaar wil je graag zo snel mogelijk zien wat het NL Design System voo
     <iframe style={{width: '100%', height: '2048px'}} src="/examples/example-page.html"></iframe>
   </div>
 </div>
-Open deze voorbeeld-pagina in een <a href="/examples/example-page.html" target="_blank" rel="noopener noreferrer">nieuw tabblad</a>.
+<a href="/examples/example-page.html" target="_blank" rel="noopener noreferrer">Open de bovenstaande voorbeeldpagina in een nieuw tabblad</a>.
 
 Deze pagina is opgebouwd met behulp van een design in de tool Figma. Deze pagina is vervolgens op te delen in individuele componenten bestaande uit; logo, page header, breadcrumbs, heading, paragraph, button, unordered list.
 
