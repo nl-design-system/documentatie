@@ -27,20 +27,35 @@
     <!-- De `@1` in de URL verwijst naar de laatste release die onderdeel is van de major release 1.0.0 -->
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/root-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/skip-link-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-header-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-footer-css@2/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/icon-css@2/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css" />
+    <!-- https://nldesignsystem.nl/skip-link/ -->
     <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1/dist/heading.css" />
+    <!-- https://nldesignsystem.nl/heading/ -->
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@1/dist/heading.css" />
+    <!-- https://nldesignsystem.nl/link/ -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2/dist/index.css" />
+    <!-- https://nldesignsystem.nl/button/ -->
     <!-- Gebruik de CSS van met CSS variables om de componenten in te stellen met de huisstijl. -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5/dist/index.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
 
     <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
     <!-- TODO: Installeer de CSS als dependency, met npm bijvoorbeeld: -->
     <!-- npm install --save @utrecht/root-css @utrecht/body-css @utrecht/design-tokens -->
+    <style>
+      .nl-button--primary-action {
+        background-color: #5115ef;
+        color: #ffffff;
+      }
+    </style>
   </head>
   <!-- Gebruik de Body component -->
   <!-- Met de Body component kan de volledige hoogte en breedte van de pagina gebruikt kan worden voor de Page Layout. -->
@@ -111,14 +126,15 @@
                 per post.
               </li>
             </ul>
-            <a class="" href="#">Toestemming geven</a>
+
+            <a class="utrecht-button nl-button--primary-action" href="#">Toestemming geven</a>
 
             <h2>Dan vervuiling melden</h2>
             <p>
               Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
               vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
             </p>
-            <a class="" href="#">Melding doen</a>
+            <a class="utrecht-button nl-button--primary-action" href="#">Melding doen</a>
 
             <h2>Racistische graffiti melden</h2>
             <p>
@@ -179,6 +195,5 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="https://unpkg.com/@utrecht/icon@2/dist/iconset.mjs"></script>
   </body>
 </html>
