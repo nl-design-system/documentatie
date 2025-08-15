@@ -1,5 +1,24 @@
 # @nl-design-system-unstable/documentation
 
+## 1.8.0
+
+### Minor Changes
+
+- 444b1ff: Code component nieuwe pagina opzet.
+- 0b3ec51: Nieuwe opzet voor Code block component pagina.
+- 6fbcabf: Nieuwe opzet voor acceptatiecriteria voor de Color sample pagina.
+- 9dc74b2: Nieuwe opzet voor acceptatiecriteria voor de Data badge pagina.
+- e29b8b4: Nieuwe opzet voor Heading component pagina.
+- 74a2758: Nieuwe opzet voor Link component pagina.
+- 5500de3: Nieuwe opzet voor Mark component pagina.
+- 914194d: Nieuwe opzet voor acceptatiecriteria voor de Number Badge pagina.
+- e430397: GitHub Actions documentatie is beschikbaar
+- 13d8169: Toegankelijkheidsinformatie voor de Icon component.
+- 96a010e: Nieuwe component en opzet voor toegankelijkheidsdocumentatie op de component pagina's.
+- 32d4bb6: Tekst [WCAG-pagina 2.2.1](/wcag/2.2.1) volledig afgemaakt.
+- d0c630e: Tekst [WCAG-pagina 2.4.5](/wcag/2.4.5) volledig afgemaakt.
+- 30afe5c: Baseline 2025-07
+
 ## 1.7.0
 
 ### Minor Changes
