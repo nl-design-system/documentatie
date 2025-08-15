@@ -46,7 +46,7 @@ export function addTrailingSlash(href: string, options: { siteURL: URL; stripOri
   if (isHttpProtocol(url) === false || isExternalLink(url, options.siteURL) || isFile(url)) return href;
 
   // Append the slash
-  if (!url.pathname.endsWith('/')) {
+  if (!url.pathname.endsWith('/') && !url.pathname.includes('.')) {
     url.pathname += '/';
   }
 
