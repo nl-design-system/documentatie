@@ -73,9 +73,13 @@
     d = l(52676);
    const m = (e) => {
     let { breadcrumbs: t, ...l } = e;
-    const m = [{ href: (0, s.Z)('/'), label: 'Home', rel: 'home' }, ...t],
+    const m = (0, s.Z)('/'),
      { pathname: u } = (0, r.TH)(),
-     h = [...m].reverse().find((e) => e.href !== u);
+     h = [{ href: m, label: 'Home', rel: 'home' }, ...t].map((e) => {
+      return { ...e, href: ((t = e.href), 'string' == typeof t && !1 === t.endsWith('/') ? `${t}/` : t) };
+      var t;
+     }),
+     p = [...h].reverse().find((e) => e.href !== u);
     return (0, d.jsxs)(d.Fragment, {
      children: [
       (0, d.jsx)('div', {
@@ -83,14 +87,14 @@
        children: (0, d.jsx)(a.Qu, {
         ...l,
         label: 'breadcrumb',
-        children: m.map((e, t, l) => {
+        children: h.map((e, t, l) => {
          let { label: o, href: r, rel: s } = e,
           { length: n } = l;
          return (0, d.jsxs)(i.Fragment, { children: [(0, d.jsx)(a.yY, { href: r, current: t === n - 1, disabled: t === n - 1, rel: (0, c.Z)(s, { up: t === n - 2 }), children: o }), t < n - 1 && (0, d.jsx)(a.sc, { children: '/' })] }, t);
         }),
        }),
       }),
-      h && (0, d.jsx)('div', { className: (0, c.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(a.hE, { children: (0, d.jsxs)(o.r, { href: h.href, rel: h.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(a.JO, { children: (0, d.jsx)(n.Z, {}) }), h.label] }) }) }),
+      p && (0, d.jsx)('div', { className: (0, c.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(a.hE, { children: (0, d.jsxs)(o.r, { href: p.href, rel: p.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(a.JO, { children: (0, d.jsx)(n.Z, {}) }), p.label] }) }) }),
      ],
     });
    };
@@ -286,20 +290,20 @@
     return (0, c.jsx)(d.Z, { 'aria-label': (0, h.I)({ message: 'Read more about {title}', id: 'theme.blog.post.readMoreLabel', description: 'The ARIA label for the link to full blog posts from excerpts' }, { title: t }), ...l, children: (0, c.jsx)(T, {}) });
    }
    const I = { blogPostFooterDetailsFull: 'blogPostFooterDetailsFull_c1qF' };
-   function M() {
+   function $() {
     const { metadata: e, isBlogPostPage: t } = (0, s.C)(),
      { tags: l, title: o, editUrl: r, hasTruncateMarker: a } = e,
      i = !t && a,
      d = l.length > 0;
     return d || i || r ? (0, c.jsxs)('footer', { className: (0, n.Z)('row docusaurus-mt-lg', t && I.blogPostFooterDetailsFull), children: [d && (0, c.jsx)('div', { className: (0, n.Z)('col', { 'col--9': i }), children: (0, c.jsx)(F.Z, { tags: l }) }), t && r && (0, c.jsx)('div', { className: 'col margin-top--sm', children: (0, c.jsx)(C.Z, { editUrl: r }) }), i && (0, c.jsx)('div', { className: (0, n.Z)('col text--right', { 'col--3': d }), children: (0, c.jsx)(B, { blogPostTitle: o, to: e.permalink }) })] }) : null;
    }
-   function $(e) {
+   function M(e) {
     let { children: t, className: l } = e;
     const o = (function () {
      const { isBlogPostPage: e } = (0, s.C)();
      return e ? void 0 : 'margin-bottom--xl';
     })();
-    return (0, c.jsxs)(i, { className: (0, n.Z)(o, l), children: [(0, c.jsx)(_, {}), (0, c.jsx)(w, { children: t }), (0, c.jsx)(M, {})] });
+    return (0, c.jsxs)(i, { className: (0, n.Z)(o, l), children: [(0, c.jsx)(_, {}), (0, c.jsx)(w, { children: t }), (0, c.jsx)($, {})] });
    }
    function L() {
     const { assets: e, metadata: t } = (0, s.C)(),
@@ -345,7 +349,7 @@
      ],
      sidebar: t,
      toc: !d && r.length > 0 ? (0, c.jsx)(A.Z, { toc: r, minHeadingLevel: m, maxHeadingLevel: u }) : void 0,
-     children: [(0, c.jsx)($, { children: l }), (n || a) && (0, c.jsx)(S, { nextItem: n, prevItem: a })],
+     children: [(0, c.jsx)(M, { children: l }), (n || a) && (0, c.jsx)(S, { nextItem: n, prevItem: a })],
     });
    }
    function D(e) {

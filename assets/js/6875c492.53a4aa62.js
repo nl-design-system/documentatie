@@ -133,9 +133,13 @@
     d = t(52676);
    const u = (e) => {
     let { breadcrumbs: a, ...t } = e;
-    const u = [{ href: (0, n.Z)('/'), label: 'Home', rel: 'home' }, ...a],
+    const u = (0, n.Z)('/'),
      { pathname: h } = (0, r.TH)(),
-     m = [...u].reverse().find((e) => e.href !== h);
+     m = [{ href: u, label: 'Home', rel: 'home' }, ...a].map((e) => {
+      return { ...e, href: ((a = e.href), 'string' == typeof a && !1 === a.endsWith('/') ? `${a}/` : a) };
+      var a;
+     }),
+     g = [...m].reverse().find((e) => e.href !== h);
     return (0, d.jsxs)(d.Fragment, {
      children: [
       (0, d.jsx)('div', {
@@ -143,14 +147,14 @@
        children: (0, d.jsx)(i.Qu, {
         ...t,
         label: 'breadcrumb',
-        children: u.map((e, a, t) => {
+        children: m.map((e, a, t) => {
          let { label: s, href: r, rel: n } = e,
           { length: l } = t;
          return (0, d.jsxs)(o.Fragment, { children: [(0, d.jsx)(i.yY, { href: r, current: a === l - 1, disabled: a === l - 1, rel: (0, c.Z)(n, { up: a === l - 2 }), children: s }), a < l - 1 && (0, d.jsx)(i.sc, { children: '/' })] }, a);
         }),
        }),
       }),
-      m && (0, d.jsx)('div', { className: (0, c.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(i.hE, { children: (0, d.jsxs)(s.r, { href: m.href, rel: m.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(i.JO, { children: (0, d.jsx)(l.Z, {}) }), m.label] }) }) }),
+      g && (0, d.jsx)('div', { className: (0, c.Z)('breadcrumbs', 'breadcrumbs--mobile'), children: (0, d.jsx)(i.hE, { children: (0, d.jsxs)(s.r, { href: g.href, rel: g.rel, className: 'utrecht-link utrecht-link--html-a', children: [(0, d.jsx)(i.JO, { children: (0, d.jsx)(l.Z, {}) }), g.label] }) }) }),
      ],
     });
    };

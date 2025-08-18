@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.2e71e596.css" />
-  <script src="/assets/js/runtime~main.990583b2.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d7e83b6d.js" defer="defer"></script>
   <script src="/assets/js/main.3f549f02.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -258,11 +258,11 @@
                 </li>
                 <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
                 <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                 <a href="/richtlijnen" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
+                 <a href="/richtlijnen/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">Richtlijnen</span></a>
                 </li>
                 <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
                 <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                 <a href="/wcag" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">WCAG</span></a>
+                 <a href="/wcag/" class="utrecht-link utrecht-link--html-a utrecht-breadcrumb-nav__link" rel="up" aria-current="false" itemprop="item"><span class="utrecht-breadcrumb-nav__text" itemprop="name">WCAG</span></a>
                 </li>
                 <li aria-hidden="true" hidden="" style="display: var(--_utrecht-breadcrumb-nav-separator-display, block)" class="utrecht-breadcrumb-nav__separator utrecht-breadcrumb-nav__separator--html-li">/</li>
                 <li class="utrecht-breadcrumb-nav__item" itemscope="" itemtype="https://schema.org/ListItem" itemprop="itemListElement">
@@ -273,10 +273,10 @@
              </div>
              <div class="breadcrumbs breadcrumbs--mobile">
               <p class="utrecht-button-group">
-               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/wcag/2.4.10/"
+               <a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a" href="/wcag/"
                 ><span aria-hidden="true" class="utrecht-icon"
                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-left"><path d="M15 6l-6 6l6 6"></path></svg></span
-                >2.4.10 Paragraafkoppen</a
+                >WCAG</a
                >
               </p>
              </div>
@@ -294,9 +294,187 @@
               </section>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
               <p>Gebruik koppen om de content te structureren. Aan de hand van de koppenstructuur geef je een goede indruk van de inhoud. Het is dan niet nodig de hele tekst te lezen om te vinden wat je zoekt.</p>
-              <p>Een paragraaf is gedefinieerd als een &#x27;op zichzelf staand gedeelte van geschreven content die gaat over é</p>
+              <p>Een paragraaf is gedefinieerd als een &#x27;op zichzelf staand gedeelte van geschreven content die gaat over één of meer gerelateerde onderwerpen of ideeën&#x27;. Dit succescriterium gaat alleen over de indeling en aanduiding de inhoud. Dit kan tekst zijn, maar ook een tabel, lijst of bijvoorbeeld een grafiek.</p>
+              <p>De naam is ‘paragraaf’ in dit succescriterium is een vertaling van het Engelse ‘section’, het woord paragraaf slaat in deze context dus niet op het HTML-element <code class="utrecht-code">&lt;p&gt;</code> alleen.</p>
+              <p>De gebruikelijke manier om een paragraafkop aan te geven is met een HTML-kopje, van <code class="utrecht-code">h1</code> tot en met <code class="utrecht-code">h6</code>.</p>
+              <p>HTML-koppen vormen de ruggengraat van de inhoud van een pagina. Een goede koppenstructuur is nuttig voor verschillende soorten gebruikers:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Ziende lezers kunnen &#x27;koppensnellen&#x27; om snel informatie te vinden, de pagina via visueel duidelijk onderscheidbare koppen scannen op de gezochte informatie.</li>
+               <li>Gebruikers van <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> kunnen een lijst van koppen opvragen en zo beslissen welke informatie te gaan lezen.</li>
+               <li>Zoekmachines begrijpen de inhoud van een webpagina beter, als deze is opgedeeld via een semantische koppenstructuur en kunnen zo de inhoud beter indexeren.</li>
+              </ul>
+              <p><strong>Let op</strong>: Dit succescriterium gaat over het beschrijven van lopende tekst en niet over het labelen van componenten zoals formuliervelden, buttons en tabellen, die vallen onder WCAG-succescriterium <a href="/wcag/4.1.2/" class="utrecht-link utrecht-link--html-a">4.1.2 Naam, rol, waarde</a>. WCAG-succescriterium <a href="/wcag/2.4.6/" class="utrecht-link utrecht-link--html-a">2.4.6 Koppen en labels</a> gaat specifiek over de tekst van koppen.</p>
+              <h3 id="semantische-koppenstructuur" class="utrecht-heading-3">Semantische koppenstructuur</h3>
+              <p>In het succescriterium staat eigenlijk alleen: &quot;Paragraafkoppen worden gebruikt om de content te structureren&quot;.</p>
+              <p>Maar een goede werkwijze voor HTML-koppen is:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Gebruik één unieke h1 per pagina die beschrijft waar die pagina over gaat. Deze h1 begint bij voorkeur net boven de hoofdinhoud.</li>
+               <li>Maak tekst niet op als HTML-kop om alleen de tekst groter te laten lijken of op te laten vallen. Koppen beschrijven altijd de inhoud eronder.</li>
+               <li>Kies een kop niet op basis van de zichtbare grootte, maar op basis van het niveau in de context van de inhoud.</li>
+               <li>Sla geen kopniveau over, in de koppenstructuur van boven naar beneden.</li>
+               <li>Wees consistent in het opzet van de koppenstructuur binnen de website. Dit maakt het voor gebruikers makkelijker om de structuur van de content te begrijpen en zo sneller te vinden wat ze willen lezen.</li>
+              </ul>
+              <p>Voorbeeld van een semantische koppenstructuur:</p>
+              <span hidden="" id=":R3ihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R3ihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Contact met de gemeente Voorbeeld</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Naam contact op</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Telefoonnummers</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">E-mailadressen</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Postadres</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Social media</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Melding, klacht of bezwaar doorgeven</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Rommel of overlast melden</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">klacht indienen</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Bezwaar maken</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h3</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Afspraak maken</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">[...]</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Over deze website</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+              <p>
+               In het artikel <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/" class="utrecht-link utrecht-link--html-a"><span lang="en">Accessible heading structure</span></a> op The A11y Project staat gedetailleerd beschreven hoe koppen te gebruiken in een webpagina.
+              </p>
+              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Formulieren: <a href="/richtlijnen/formulieren/foutmeldingen/samenvatting/" class="utrecht-link utrecht-link--html-a">Zet een samenvatting van de foutmeldingen boven het formulier</a>.</li>
+               <li>Formulieren: <a href="/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen/" class="utrecht-link utrecht-link--html-a">Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt</a>.</li>
+               <li>Content: <a href="/richtlijnen/content/tekstopmaak/koppen/" class="utrecht-link utrecht-link--html-a">Koppen</a>.</li>
+              </ul>
+              <h2 id="bronnen" class="utrecht-heading-2">Bronnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/" class="utrecht-link utrecht-link--html-a"><span lang="en">Accessible heading structure</span></a> op The A11y Project.
+               </li>
+               <li>
+                <a href="https://webaim.org/techniques/semanticstructure/" class="utrecht-link utrecht-link--html-a"><span lang="en">Semantic Structure: Regions, Headings, and Lists</span></a> van WebAIM.
+               </li>
+               <li><a href="https://www.internetacademy.nl/ebooks/handboek-webcontent/headings-voor-betekenisvol-opmaken" class="utrecht-link utrecht-link--html-a">Headings voor betekenisvol opmaken</a> in het handboek &quot;Handboek webcontent: meer focus, minder content&quot; van de Internet Academy.</li>
+               <li><a href="https://www.limoengroen.nl/nieuws/toegankelijke-tekst-3-tips-voor-webredacteuren" class="utrecht-link utrecht-link--html-a">Toegankelijke tekst: 3 tips voor webredacteuren</a> van Marloes Bosch.</li>
+              </ul>
+              <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
+              <p>Jaarlijks vraagt WebAIM aan screenreadergebruikers (onder andere) hoe zij een website navigeren. In de <a href="https://webaim.org/projects/screenreadersurvey10/#heading" class="utrecht-link utrecht-link--html-a">Gebruikersenquête voor screenreaders #10</a> van 2024 vond 88,8% van de respondenten HTML-koppen hierbij zeer of enigszins nuttig. In de <a href="https://webaim.org/projects/screenreadersurvey10/#problematic" class="utrecht-link utrecht-link--html-a">top 12 van problemen</a> staat op nummer 8: Ontbrekende of onjuiste koppen.</p>
+              <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer of koppen alleen worden gebruikt om onderliggende inhoud te beschrijven</li>
+               <li>Alle tekst die bij een kopje hoort, moet in de code, in de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" class="utrecht-link utrecht-link--html-a">DOM</a>, onder het kopje staan. Visueel kan dit afwijken, afhankelijk van het ontwerp, maar voor een screenreadergebruiker moet het duidelijk zijn welke inhoud bij welk kopje hoort.</li>
+               <li>Is er een <code class="utrecht-code">h1</code>-kopje, dat de inhoud van de pagina beschrijft? Controleer ook of deze <code class="utrecht-code">h1</code> niet dezelfde inhoud heeft voor alle pagina&#x27;s binnen de website.</li>
+               <li>Controleer of de structuur van de inhoud logisch wordt weergegeven via de koppenstructuur en er geen niveaus worden overgeslagen.</li>
+              </ul>
+              <p>De browserextensie HeadingsMap geeft de koppenstructuur van een webpagina overzichtelijk weer:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Chrome</a>.</li>
+               <li><a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Firefox</a>.</li>
+               <li><a href="https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo" class="utrecht-link utrecht-link--html-a">HeadingsMap voor Edge</a>.</li>
+              </ul>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_screenshot_headingsmap.png" alt="Screenshot de koppensctructuur van de pagina over richtlijnen op deze website" class="utrecht-img" /></p>
+              <p><a href="https://www.deque.com/axe/browser-extensions/" class="utrecht-link utrecht-link--html-a">Axe DevTools</a> in &#x27;Best Practice&#x27;-mode controleert op onjuiste semantiek voor koppen, zoals het overslaan van een kopniveau of een ontbrekende <code class="utrecht-code">h1</code>. Ook <a href="https://wave.webaim.org/" class="utrecht-link utrecht-link--html-a">WAVE</a> meldt het overslaan van een kopniveau of een ontbrekende <code class="utrecht-code">h1</code>, bij de alerts.</p>
+              <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
+              <h3 id="fout-ontbrekend-h1-kopje" class="utrecht-heading-3">Fout: ontbrekend h1-kopje</h3>
+              <p>Zeker op de voorpagina kan het in de vormgeving een puzzel zijn waar de <code class="utrecht-code">h1</code>-kop te plaatsen. Maar weglaten is geen optie.</p>
+              <p>Een oplossing kan zijn de <code class="utrecht-code">h1</code> visueel te verbergen met CSS, met de classes <a href="https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/" class="utrecht-link utrecht-link--html-a">.screen-reader-text</a>, <a href="https://tailwindcss.com/docs/screen-readers" class="utrecht-link utrecht-link--html-a">sr-only</a> of <a href="https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html" class="utrecht-link utrecht-link--html-a">visually-hidden</a> afhankelijk van het CMS of framework wat je gebruikt. Verberg de <code class="utrecht-code">h1</code> niet met <code class="utrecht-code">display:none</code> omdat dit de tekst ook verbergt voor hulpmiddelen zoals een screenreader.</p>
+              <p>Een h1, op elke pagina op dezelfde plek, biedt houvast aan alle gebruikers. Toon de <code class="utrecht-code">h1</code> dus op elke pagina, op dezelfde plek, liefst vlak boven de hoofdinhoud.</p>
+              <h3 id="fout-kopniveau-kiezen-op-grootte" class="utrecht-heading-3">Fout: kopniveau kiezen op grootte</h3>
+              <p>Een <em class="utrecht-emphasis utrecht-emphasis--stressed">Call to Action</em> in een vette grote <code class="utrecht-code">h1</code>, dat trekt visueel de aandacht! Maar dit is verkeerd gebruik van het kopje en wekt verwarring bij screenreadergebruikers. Waar gaat deze pagina nu over?</p>
+              <p>Wil je tekst groot en vet maken, gebruik dan CSS om de tekst vorm te geven en geen kopje.</p>
+              <h3 id="fout-in-plaats-van-een-kopje-vet-gemaakt-tekst-gebruiken" class="utrecht-heading-3">Fout: in plaats van een kopje, vet gemaakt tekst gebruiken</h3>
+              <p>Tekst vet, bold of strong maken om een kopje te maken, geeft alleen visuele informatie weer. Screenreadergebruikers en zoekmachines herkennen dit niet als een kopje en missen zo context. Als een kopje te groot is in jouw ogen, vraag aan de webbouwer om aanpassing van de styling en gebruik geen vet om een kopje aan te geven.</p>
+              <h3 id="fout-dezelfde-h1-voor-elke-pagina-binnen-de-website" class="utrecht-heading-3">Fout: dezelfde h1 voor elke pagina binnen de website</h3>
+              <p>Op alle pagina&#x27;s is het logo een link naar de voorpagina geplaatst binnen een <code class="utrecht-code">h1</code>-kopje.</p>
+              <p>In code:</p>
+              <span hidden="" id=":Raihralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Raihralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Dit is fout, niet gebruiken --&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">logo.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Gemeente Voorbeeld</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+              <p>Deze <code class="utrecht-code">h1</code> geeft geen goede informatie over de inhoud van de pagina als deze zo op elke pagina wordt herhaald. Zet in plaats daarvan een <code class="utrecht-code">h1</code>-kopje vlak boven het begin van de inhoud en beschrijf in dat <code class="utrecht-code">h1</code>-kopje waar de webpagina over gaat.</p>
+              <h3 id="fout-alle-section-kopjes-zijn-een-h1" class="utrecht-heading-3">Fout: alle section-kopjes zijn een h1</h3>
+              <p>
+               Het gebruik van meerdere <code class="utrecht-code">h1</code>-koppen in de outline van de DOM-structuur wordt niet langer ondersteund in HTML. Lees hierover:
+               <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page" class="utrecht-link utrecht-link--html-a"
+                ><span lang="en">Avoid using multiple <code class="utrecht-code">&lt;h1&gt;</code> elements on one page</span></a
+               >
+               op MDN.
+              </p>
+              <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                Engelse tekst van het WCAG-succescriterium: <a href="https://www.w3.org/TR/WCAG22/#section-headings" class="utrecht-link utrecht-link--html-a"><span lang="en">2.4.10 Section Headings</span></a
+                >.
+               </li>
+               <li>Nederlandse vertaling van het WCAG-succescriterium: <a href="https://www.w3.org/Translations/WCAG22-nl/#paragraafkoppen" class="utrecht-link utrecht-link--html-a">2.4.10 Paragraafkoppen</a>.</li>
+               <li>
+                Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: <a href="https://www.w3.org/WAI/WCAG22/quickref/#section-headings" class="utrecht-link utrecht-link--html-a"><span lang="en">Quick Reference 2.4.10 Section Headings</span></a
+                >.
+               </li>
+               <li>
+                Engelstalige toelichting: <a href="https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Understanding SC: 2.4.10 Section Headings</span></a
+                >.
+               </li>
+              </ul>
+              <section class="utrecht-spotlight-section">
+               <h2 id="belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting" class="utrecht-heading-2">Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting</h2>
+               <p>De richtlijnen van NL Design System zijn niet wettelijk verplicht en zijn geen vervanging voor de <a href="https://www.w3.org/TR/WCAG21/" class="utrecht-link utrecht-link--html-a">wettelijk geldende WCAG 2.1 specificatie</a>.</p>
+               <p>Ons doel is om praktische uitleg en voorbeelden te geven die helpen bij het toegankelijk inzetten van de NL Design System componenten, patronen en richtlijnen. We doen dat op basis van een interpretatie van de <a href="https://www.w3.org/TR/WCAG22/" class="utrecht-link utrecht-link--html-a">nieuwe WCAG 2.2 specificatie</a>.</p>
+               <p>Weten waar je volgens de wet aan moet voldoen? Ga dan naar <a href="https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht" class="utrecht-link utrecht-link--html-a">wat is verplicht van DigiToegankelijk</a>.</p>
+              </section>
+              <h2 id="help-richtlijn-verbeteren" class="utrecht-heading-2">Help richtlijn verbeteren</h2>
+              <!-- -->
+              <p>Deze pagina&#x27;s over WCAG worden onderhouden door NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a>.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.4.10.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_QIdz" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_ka3N"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/wcag/2.4.9/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 2.4.9 Linkdoel (alleen link)</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/wcag/2.4.11/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">WCAG-succescriterium 2.4.11 Focus niet bedekt (minimum)</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
+             <li><a href="#bronnen" class="table-of-contents__link toc-highlight">Bronnen</a></li>
+             <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#veelgemaakte-fouten" class="table-of-contents__link toc-highlight">Veelgemaakte fouten</a></li>
+             <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
+             <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -305,6 +483,25 @@
       </div>
      </div>
     </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog/">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam/">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring/">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon/">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a href="https://nl-design-system.github.io/themes" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Storybook</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>
