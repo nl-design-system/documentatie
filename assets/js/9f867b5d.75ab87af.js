@@ -24,7 +24,8 @@
    var f = n(23355);
    const j = (e) => {
      let { name: t, description: n, relayStep: s, headingLevel: a = 2, href: i, frameworkNames: l } = e;
-     return (0, r.jsxs)(m.Zb, { appearance: 'large', className: (0, u.Z)('component-card', !s && 'component-card--suggestion'), component: 'section', children: [(0, r.jsx)(m.wu, { children: (0, r.jsx)(g, { relayStep: s, description: `Schets van de ${t} component`, name: t }) }), (0, r.jsxs)(m.aY, { children: [(0, r.jsxs)('div', { children: [(0, r.jsx)(c.X6, { level: a, className: 'component-card__title', children: t }), s && (0, r.jsx)('p', { children: (0, r.jsx)(f.y, { state: s }) }), n && (0, r.jsx)(c.nv, { children: n }), l && (0, r.jsx)(c.k, { children: l.map((e) => (0, r.jsx)(c.Ou, { children: e }, e)) })] }), i && (0, r.jsx)(c.nv, { children: (0, r.jsxs)(p.r, { className: 'utrecht-link', to: i, children: ['Bekijk ', (0, r.jsx)('span', { className: 'w', children: t }), ' component'] }) })] })] });
+     return (0, r.jsxs)(m.Zb, { appearance: 'large', className: (0, u.Z)('component-card', !s && 'component-card--suggestion'), component: 'section', children: [(0, r.jsx)(m.wu, { children: (0, r.jsx)(g, { relayStep: s, description: `Schets van de ${t} component`, name: t }) }), (0, r.jsxs)(m.aY, { children: [(0, r.jsxs)('div', { children: [(0, r.jsx)(c.X6, { level: a, className: 'component-card__title', children: t }), s && (0, r.jsx)('p', { children: (0, r.jsx)(f.y, { state: s }) }), n && (0, r.jsx)(c.nv, { children: n }), l && (0, r.jsx)(c.k, { children: l.map((e) => (0, r.jsx)(c.Ou, { children: e }, e)) })] }), i && (0, r.jsx)(c.nv, { children: (0, r.jsxs)(p.r, { className: 'utrecht-link', to: ((o = i), 'string' == typeof o && !1 === o.endsWith('/') ? `${o}/` : o), children: ['Bekijk ', (0, r.jsx)('span', { className: 'w', children: t }), ' component'] }) })] })] });
+     var o;
     },
     x = () => {
      const e = 'framework',

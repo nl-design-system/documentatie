@@ -1,4 +1,4 @@
-/*! For license information please see 68ddddde.1af214fe.js.LICENSE.txt */
+/*! For license information please see 68ddddde.6e15ed38.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [5643],
  {
@@ -760,7 +760,7 @@
      let { title: n, sc: t, status: s, component: a, headingLevel: l = 4 } = e;
      const c = i.fg.get(t),
       d = c ? `${t} ${c.nl?.title}` : t;
-     return (0, o.jsxs)('div', { className: 'component-criteria-section', children: [(0, o.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: l, className: 'component-criteria-section__heading', children: n }), (t || s) && (0, o.jsxs)('dl', { className: 'component-criteria-section__dl', children: [t && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, o.jsx)(r.rU, { href: `/wcag/${t}`, children: d }) })] }), s && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dl', children: s })] })] }), a] });
+     return (0, o.jsxs)('div', { className: 'component-criteria-section', children: [(0, o.jsx)(r.X6, { appearance: 'utrecht-heading-4', level: l, className: 'component-criteria-section__heading', children: n }), (t || s) && (0, o.jsxs)('dl', { className: 'component-criteria-section__dl', children: [t && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, o.jsx)(r.rU, { href: `/wcag/${t}/`, children: d }) })] }), s && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, o.jsx)('dd', { className: 'component-criteria-section__dl', children: s })] })] }), a] });
     },
     l = (e) => {
      let { testCategory: n, items: t } = e;
