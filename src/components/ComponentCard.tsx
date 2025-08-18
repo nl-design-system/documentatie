@@ -17,6 +17,10 @@ interface ComponentCardProps {
   frameworkNames?: string[];
 }
 
+function appendTrailingSlash(string: string) {
+  return typeof string === 'string' && string.endsWith('/') === false ? `${string}/` : string;
+}
+
 export const ComponentCard = ({
   name,
   description,
@@ -55,7 +59,7 @@ export const ComponentCard = ({
         </div>
         {href && (
           <Paragraph>
-            <Link className="utrecht-link" to={href}>
+            <Link className="utrecht-link" to={appendTrailingSlash(href)}>
               Bekijk <span className="w">{name}</span> component
             </Link>
           </Paragraph>

@@ -67,7 +67,7 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
             <>
               <dt className="component-criteria-section__dt">WCAG</dt>
               <dd className="component-criteria-section__dd">
-                <Link href={`/wcag/${sc}`}>{scTitle}</Link>
+                <Link href={`/wcag/${sc}/`}>{scTitle}</Link>
               </dd>
             </>
           )}
