@@ -1,4 +1,4 @@
-/*! For license information please see 8ea6c2d1.4f678f4f.js.LICENSE.txt */
+/*! For license information please see 8ea6c2d1.2502971f.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [79947],
  {
@@ -24,20 +24,6 @@
    function i(e) {
     const t = { p: 'p', ...(0, s.a)(), ...e.components };
     return (0, r.jsx)(t.p, { children: 'Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.' });
-   }
-   function o(e = {}) {
-    const { wrapper: t } = { ...(0, s.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(i, { ...e }) }) : i(e);
-   }
-  },
-  93514: (e, t, n) => {
-   'use strict';
-   n.d(t, { ZP: () => o });
-   var r = n(52676),
-    s = n(40139);
-   function i(e) {
-    const t = { p: 'p', ...(0, s.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(t.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsx)(t.p, { children: 'Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.' })] });
    }
    function o(e = {}) {
     const { wrapper: t } = { ...(0, s.a)(), ...e.components };
@@ -130,7 +116,7 @@
   },
   74904: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => Z, component: () => $, contentTitle: () => _, default: () => I, description: () => B, frontMatter: () => D, issueNumber: () => E, metadata: () => P, title: () => F, toc: () => L });
+   n.r(t), n.d(t, { assets: () => Z, component: () => $, contentTitle: () => _, default: () => U, description: () => B, frontMatter: () => D, issueNumber: () => E, metadata: () => P, title: () => F, toc: () => L });
    var r,
     s,
     i,
@@ -141,7 +127,7 @@
     d = n(52676),
     u = n(40139),
     h = n(91670),
-    m = (n(93514), n(75271));
+    m = n(75271);
    function g() {
     return (
      (g = Object.assign
@@ -163,13 +149,13 @@
    var j = n(94398),
     y = n(25653),
     b = n(90361);
-   function v(e) {
+   function w(e) {
     const t = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, u.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.p, { children: ['Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor gebruikers van ', (0, d.jsx)(t.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ". Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat."] }), '\n', (0, d.jsx)(t.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, d.jsx)(t.pre, { children: (0, d.jsx)(t.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
    }
-   function w(e = {}) {
+   function v(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
-    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(v, { ...e }) }) : v(e);
+    return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(w, { ...e }) }) : w(e);
    }
    var f = n(47913),
     k = n(68934),
@@ -258,7 +244,7 @@
       '\n',
       (0, d.jsx)(G.W, {
        items: [
-        { title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, d.jsx)(w, {}), tags: ['developer'] },
+        { title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, d.jsx)(v, {}), tags: ['developer'] },
         { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, d.jsx)(x.ZP, {}), tags: ['developer'] },
         { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, d.jsx)(f.ZP, {}), tags: ['developer'] },
        ],
@@ -278,7 +264,7 @@
      ],
     });
    }
-   function I(e = {}) {
+   function U(e = {}) {
     const { wrapper: t } = { ...(0, u.a)(), ...e.components };
     return t ? (0, d.jsx)(t, { ...e, children: (0, d.jsx)(H, { ...e }) }) : H(e);
    }
@@ -546,14 +532,14 @@
    var j = n(23355),
     y = n(41757),
     b = n(16167),
-    v = n(55476);
-   const w = (e) => {
+    w = n(55476);
+   const v = (e) => {
      let { children: t } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: t });
     },
     f = (e) => {
      let { checked: t, children: n, title: r, description: i, headingLevel: o = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, s.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, s.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(b.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), i, n] })] });
+     return (0, d.jsxs)('li', { className: (0, s.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, s.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, d.jsx)(w.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(b.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), i, n] })] });
     };
    var k = n(14669);
    const x = (e) => {
@@ -573,7 +559,7 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(w, {
+           (0, d.jsx)(v, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: s } = e;
              return (0, d.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, k.Q6)(s) }, s);
@@ -698,12 +684,12 @@
     j = n(32463),
     y = n(85904),
     b = n(86384),
-    v = n(65012),
-    w = n(31795),
+    w = n(65012),
+    v = n(31795),
     f = n(37923),
     k = n(49003),
     x = n(75271);
-   const A = { color: p.Z, dimension: j.Z, fontFamilies: y.Z, fontSizes: b.Z, fontWeights: v.Z, lineHeights: w.Z, other: f.Z, textDecoration: k.Z },
+   const A = { color: p.Z, dimension: j.Z, fontFamilies: y.Z, fontSizes: b.Z, fontWeights: w.Z, lineHeights: v.Z, other: f.Z, textDecoration: k.Z },
     C = (e) => {
      let { type: t } = e;
      return (0, m.jsx)(h.JO, { children: (0, x.createElement)(A[t]) });
@@ -883,7 +869,7 @@
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, $e: () => j, BA: () => a, Ee: () => d, Q6: () => i, U: () => m, Yr: () => y, d: () => u, e9: () => o, fO: () => v, mA: () => s, ps: () => g, qU: () => w, s0: () => b, zP: () => p });
+   n.d(t, { $3: () => r, $e: () => j, BA: () => a, Ee: () => d, Q6: () => i, U: () => m, Yr: () => y, d: () => u, e9: () => o, fO: () => w, mA: () => s, ps: () => g, qU: () => v, s0: () => b, zP: () => p });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     i = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -953,14 +939,14 @@
    function b(e, t) {
     return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? b(e[n], [...t, n]) : []));
    }
-   function v(e) {
+   function w(e) {
     const t = new Map();
     function n(e) {
      return t.has(e) || t.set(e, p(e)), t.get(e);
     }
     return e.sort((e, t) => e.length - t.length || n(e).localeCompare(n(t)));
    }
-   function w(e) {
+   function v(e) {
     const t = {};
     for (const n of e) {
      let e = t;

@@ -1,4 +1,4 @@
-/*! For license information please see 0024c60f.bcd5e832.js.LICENSE.txt */
+/*! For license information please see 0024c60f.ea80a36c.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [72837],
  {
@@ -24,20 +24,6 @@
    function s(e) {
     const n = { p: 'p', ...(0, o.a)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.' });
-   }
-   function i(e = {}) {
-    const { wrapper: n } = { ...(0, o.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
-  93514: (e, n, t) => {
-   'use strict';
-   t.d(n, { ZP: () => i });
-   var r = t(52676),
-    o = t(40139);
-   function s(e) {
-    const n = { p: 'p', ...(0, o.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik jij \xe9\xe9n van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.' }), '\n', (0, r.jsx)(n.p, { children: 'Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.' })] });
    }
    function i(e = {}) {
     const { wrapper: n } = { ...(0, o.a)(), ...e.components };
@@ -88,13 +74,13 @@
   },
   22044: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => U, component: () => X, contentTitle: () => E, default: () => K, description: () => V, frontMatter: () => F, issueNumber: () => B, metadata: () => H, title: () => I, toc: () => $ });
+   t.r(n), t.d(n, { assets: () => U, component: () => X, contentTitle: () => E, default: () => K, description: () => B, frontMatter: () => F, issueNumber: () => I, metadata: () => H, title: () => V, toc: () => $ });
    var r,
     o,
     s,
     i,
-    a,
     l,
+    a,
     c,
     d = t(52676),
     h = t(40139),
@@ -116,9 +102,8 @@
    }
    const g = (e) => {
     let { title: n, titleId: t, ...d } = e;
-    return m.createElement('svg', p({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een gekleurd vierkantje, aangeduid met het cijfer 1.', role: 'img', 'aria-labelledby': t }, d), n ? m.createElement('title', { id: t }, n) : null, r || (r = m.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), o || (o = m.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = m.createElement('path', { fill: '#5315F6', d: 'M463.5 253.5h33v33h-33z' })), i || (i = m.createElement('path', { stroke: '#E4E7EC', d: 'M463.5 253.5h33v33h-33z' })), a || (a = m.createElement('rect', { x: 384, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), l || (l = m.createElement('path', { d: 'M402.502 264.368V276.5H400v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), c || (c = m.createElement('path', { d: 'M416 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+    return m.createElement('svg', p({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een gekleurd vierkantje, aangeduid met het cijfer 1.', role: 'img', 'aria-labelledby': t }, d), n ? m.createElement('title', { id: t }, n) : null, r || (r = m.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), o || (o = m.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = m.createElement('path', { fill: '#5315F6', d: 'M463.5 253.5h33v33h-33z' })), i || (i = m.createElement('path', { stroke: '#E4E7EC', d: 'M463.5 253.5h33v33h-33z' })), l || (l = m.createElement('rect', { x: 384, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), a || (a = m.createElement('path', { d: 'M402.502 264.368V276.5H400v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), c || (c = m.createElement('path', { d: 'M416 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
    };
-   t(93514);
    var j = t(94398),
     v = t(25653),
     y = t(90361);
@@ -188,10 +173,10 @@
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    I = 'Color Sample',
-    V = 'Toont een voorbeeld van een kleur.',
-    B = 325,
-    X = u.find((e) => e.number === B);
+    V = 'Color Sample',
+    B = 'Toont een voorbeeld van een kleur.',
+    I = 325,
+    X = u.find((e) => e.number === I);
    function J(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
@@ -202,7 +187,7 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(O.Rv, { component: X, headingLevel: 1, description: V }),
+      (0, d.jsx)(O.Rv, { component: X, headingLevel: 1, description: B }),
       '\n',
       (0, d.jsx)(N.I, { component: X }),
       '\n',
@@ -311,7 +296,7 @@
   },
   35038: (e, n, t) => {
    'use strict';
-   t.d(n, { Zb: () => l, aY: () => a, um: () => c, wu: () => i });
+   t.d(n, { Zb: () => a, aY: () => l, um: () => c, wu: () => i });
    var r = t(16167),
     o = t(4814),
     s = t(52676);
@@ -319,11 +304,11 @@
      let { background: n, children: t, className: r, ...i } = e;
      return (0, s.jsx)('div', { className: (0, o.Z)('card__illustration', n && 'card__illustration--background', r), ...i, children: t });
     },
-    a = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
-    l = (e) => {
-     let { href: n, appearance: t, className: i, component: a = 'div', children: l } = e;
-     const c = (e) => ('article' === a ? (0, s.jsx)('article', { ...e }) : 'section' === a ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
-      d = (0, s.jsx)(c, { className: (0, o.Z)('cardgroup__card', `cardgroup__card--${t}`, i), children: l });
+    l = (e) => (0, s.jsx)('div', { className: 'card__content', ...e }),
+    a = (e) => {
+     let { href: n, appearance: t, className: i, component: l = 'div', children: a } = e;
+     const c = (e) => ('article' === l ? (0, s.jsx)('article', { ...e }) : 'section' === l ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
+      d = (0, s.jsx)(c, { className: (0, o.Z)('cardgroup__card', `cardgroup__card--${t}`, i), children: a });
      return n ? (0, s.jsx)(r.rU, { href: n, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
     c = (e) => {
@@ -338,12 +323,12 @@
     o = t(51678),
     s = t(41115),
     i = t(70997),
-    a = t(4814),
-    l = t(75271),
+    l = t(4814),
+    a = t(75271),
     c = t(52676);
    const d = (e) => {
      let { title: n, sc: t, component: d, tags: h } = e;
-     const u = (0, l.useId)(),
+     const u = (0, a.useId)(),
       m = [...h];
      if (t) {
       m.push(t);
@@ -351,7 +336,7 @@
       e?.conformance && m.push(`Niveau ${e.conformance}`);
      }
      return (0, c.jsx)('li', {
-      className: (0, a.Z)(
+      className: (0, l.Z)(
        'new-checklist__item',
        h.map((e) => `new-checklist__item--${e}`),
       ),
@@ -381,9 +366,9 @@
     },
     h = (e) => {
      let { items: n } = e;
-     const [t, r] = (0, l.useState)([]),
+     const [t, r] = (0, a.useState)([]),
       o = (e) => t.includes(e),
-      a = n.reduce(
+      l = n.reduce(
        (e, n) => (
         n.tags.forEach((n) => {
          e.add(n);
@@ -392,7 +377,7 @@
        ),
        new Set(),
       ),
-      h = (0, l.useId)(),
+      h = (0, a.useId)(),
       u = n.filter((e) => {
        let { tags: n } = e;
        return 0 === t.length || n.some((e) => t.includes(e));
@@ -408,7 +393,7 @@
           role: 'group',
           'aria-labelledby': h,
           className: 'ma-badge-toggle-button-group',
-          children: Array.from(a.values()).map((e, n) =>
+          children: Array.from(l.values()).map((e, n) =>
            (0, c.jsx)(
             s.zx,
             {
@@ -454,16 +439,16 @@
   },
   97520: (e, n, t) => {
    'use strict';
-   t.d(n, { I: () => a });
+   t.d(n, { I: () => l });
    var r = t(57716),
     o = t(75271),
     s = t(14669),
     i = t(52676);
-   const a = (e) => {
+   const l = (e) => {
     let { component: n } = e;
-    const { title: a } = n,
-     l = (0, s.mA)(a),
-     c = o.lazy(() => t(42767)(`./${l}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    const { title: l } = n,
+     a = (0, s.mA)(l),
+     c = o.lazy(() => t(42767)(`./${a}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
     return (0, i.jsx)(o.Suspense, { fallback: null, children: (0, i.jsx)(r.U, { omitH1: !0, headingLevel: 1, children: (0, i.jsx)(c, {}) }) });
    };
   },
@@ -474,43 +459,43 @@
     o = t(4814),
     s = t(75271),
     i = t(14669),
-    a = t(52676);
-   const l = (e) => {
+    l = t(52676);
+   const a = (e) => {
      let { children: n } = e;
-     return (0, a.jsx)('ol', { className: 'nlds-anatomy-list', children: n });
+     return (0, l.jsx)('ol', { className: 'nlds-anatomy-list', children: n });
     },
     c = (e) => {
      let { children: n } = e;
-     return (0, a.jsx)('li', { className: 'nlds-anatomy-list__item', children: n });
+     return (0, l.jsx)('li', { className: 'nlds-anatomy-list__item', children: n });
     },
     d = (e) => {
      let { component: n, illustration: d } = e;
      const { title: h } = n,
       u = (0, i.mA)(h),
       m = s.lazy(() => t(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-     return (0, a.jsx)(s.Suspense, {
+     return (0, l.jsx)(s.Suspense, {
       fallback: null,
-      children: (0, a.jsxs)('figure', {
+      children: (0, l.jsxs)('figure', {
        className: (0, o.Z)('component-anatomy'),
        children: [
-        d && (0, a.jsx)(d, { height: null, className: (0, o.Z)('component-anatomy__illustration') }),
+        d && (0, l.jsx)(d, { height: null, className: (0, o.Z)('component-anatomy__illustration') }),
         d &&
          m &&
-         (0, a.jsx)('figcaption', {
-          children: (0, a.jsx)(r.U, {
+         (0, l.jsx)('figcaption', {
+          children: (0, l.jsx)(r.U, {
            omitH1: !0,
            headingLevel: 1,
            components: {
             ol: (e) => {
              let { children: n } = e;
-             return (0, a.jsx)(l, { children: n });
+             return (0, l.jsx)(a, { children: n });
             },
             li: (e) => {
              let { children: n } = e;
-             return (0, a.jsx)(c, { children: n });
+             return (0, l.jsx)(c, { children: n });
             },
            },
-           children: (0, a.jsx)(m, {}),
+           children: (0, l.jsx)(m, {}),
           }),
          }),
        ],
@@ -525,11 +510,11 @@
     o = t(4814),
     s = t(39854),
     i = t(7522),
-    a = t(62559),
-    l = t(79734),
+    l = t(62559),
+    a = t(79734),
     c = t(32636),
     d = t(52676);
-   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(i.Z, {}), npm: (0, d.jsx)(a.Z, {}), storybook: (0, d.jsx)(l.Z, {}) },
+   const h = { figma: (0, d.jsx)(s.Z, {}), github: (0, d.jsx)(i.Z, {}), npm: (0, d.jsx)(l.Z, {}), storybook: (0, d.jsx)(a.Z, {}) },
     u = (e) => {
      let { brand: n } = e;
      return (0, d.jsx)(r.JO, { children: h[n] || (0, d.jsx)(c.Z, {}) });
@@ -622,7 +607,7 @@
              ['Figma URL', { brand: 'figma', desciption: `${o} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${o} voor visuele regressie tests` }],
             ]),
-            a = e.tasks.filter((e) => {
+            l = e.tasks.filter((e) => {
              let { name: n, value: t } = e;
              return i.has(n) && URL.canParse(t) && 'https:' === new URL(t).protocol;
             });
@@ -634,11 +619,11 @@
               children: [
                (0, d.jsx)(r.X6, { level: t, children: e.title.replace(/^Community/i, '') }),
                (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (a.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
-               a.length > 0 &&
+               (l.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
+               l.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
                  children: (0, d.jsx)(r.Mc, {
-                  links: a
+                  links: l
                    .filter((e) => !!i.get(e.name))
                    .map((e) => {
                     const n = i.get(e.name);
@@ -681,8 +666,8 @@
     o = t(70997),
     s = t(14669),
     i = t(16167),
-    a = t(64642),
-    l = t(93872),
+    l = t(64642),
+    a = t(93872),
     c = t(48231),
     d = t(75119),
     h = t(38548),
@@ -696,7 +681,7 @@
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await d.ZP.format(t, { parser: r, plugins: [a.Z, l.ZP, c.ZP] });
+          const e = await d.ZP.format(t, { parser: r, plugins: [l.Z, a.ZP, c.ZP] });
           await navigator.clipboard.writeText(e);
          } catch (e) {
           console.error(e);
@@ -723,36 +708,36 @@
    function T(e) {
     let { tokens: n } = e;
     const t = (0, s.s0)(n),
-     a = (0, s.fO)(t),
-     l = a.map((e) => (0, s.$e)(e) + ': ;').join('\n'),
-     c = JSON.stringify((0, s.qU)(a));
+     l = (0, s.fO)(t),
+     a = l.map((e) => (0, s.$e)(e) + ': ;').join('\n'),
+     c = JSON.stringify((0, s.qU)(l));
     return (0, m.jsxs)(m.Fragment, {
      children: [
       (0, m.jsxs)(i.iA, {
        children: [
         (0, m.jsx)(i.xD, { children: (0, m.jsxs)(i.SC, { children: [(0, m.jsx)(i.xs, { children: 'name' }), (0, m.jsx)(i.xs, { children: 'type' })] }) }),
         (0, m.jsx)(i.RM, {
-         children: a.map((e) => {
+         children: l.map((e) => {
           const t = (0, s.zP)(e),
-           a = (0, s.Yr)(n, e).$type;
-          return (0, m.jsxs)(i.SC, { children: [(0, m.jsx)(i.pj, { children: (0, m.jsx)(r.E, { children: (0, m.jsx)(i.YG, { children: t }) }) }), (0, m.jsx)(i.pj, { children: (0, m.jsxs)(o.O, { children: [(0, m.jsx)(C, { type: a }), ' ', a] }) })] }, t);
+           l = (0, s.Yr)(n, e).$type;
+          return (0, m.jsxs)(i.SC, { children: [(0, m.jsx)(i.pj, { children: (0, m.jsx)(r.E, { children: (0, m.jsx)(i.YG, { children: t }) }) }), (0, m.jsx)(i.pj, { children: (0, m.jsxs)(o.O, { children: [(0, m.jsx)(C, { type: l }), ' ', l] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, m.jsxs)(i.hE, { children: [(0, m.jsx)(p, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, m.jsx)(p, { content: l, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, m.jsxs)(i.hE, { children: [(0, m.jsx)(p, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, m.jsx)(p, { content: a, language: 'css', children: 'Kopieer als CSS' })] }),
      ],
     });
    }
   },
   23355: (e, n, t) => {
    'use strict';
-   t.d(n, { y: () => a });
+   t.d(n, { y: () => l });
    var r = t(16167),
     o = t(4814),
     s = t(14669),
     i = t(52676);
-   const a = (e) => {
+   const l = (e) => {
     let { state: n } = e;
     const t = (0, s.mA)(n);
     return (0, i.jsx)(r.Ou, { className: (0, o.Z)('estafette-badge', t && `estafette-badge--${t}`), children: n });
@@ -764,8 +749,8 @@
    var r = t(4814),
     o = t(52676);
    const s = (e) => {
-    let { children: n, className: t, level: s = 1, suffix: i, ...a } = e;
-    return (0, o.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...a, children: [(0, o.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), i && (0, o.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [i ? ' ' : '', i] })] });
+    let { children: n, className: t, level: s = 1, suffix: i, ...l } = e;
+    return (0, o.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${s}`, t), ...l, children: [(0, o.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: n }), i && (0, o.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [i ? ' ' : '', i] })] });
    };
   },
   57716: (e, n, t) => {
@@ -782,8 +767,8 @@
      }
      return t.toString();
     },
-    a = { 1: {}, 2: { h1: o.XJ, h2: o.aC, h3: o.k8, h4: o.by, h5: o.Cd }, 3: { h1: o.aC, h2: o.k8, h3: o.by, h4: o.Cd, h5: o.Cd }, 4: { h1: o.k8, h2: o.by, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 5: { h1: o.by, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 6: { h1: o.Cd, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd } },
-    l = (e) => ({
+    l = { 1: {}, 2: { h1: o.XJ, h2: o.aC, h3: o.k8, h4: o.by, h5: o.Cd }, 3: { h1: o.aC, h2: o.k8, h3: o.by, h4: o.Cd, h5: o.Cd }, 4: { h1: o.k8, h2: o.by, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 5: { h1: o.by, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd }, 6: { h1: o.Cd, h2: o.Cd, h3: o.Cd, h4: o.Cd, h5: o.Cd } },
+    a = (e) => ({
      img: (n) => {
       let { src: t, ...r } = n;
       return (0, s.jsx)('img', { ...r, src: i(e, t), className: 'utrecht-img utrecht-img--fit' });
@@ -791,14 +776,14 @@
     }),
     c = (e, n) => {
      if (e) {
-      const e = { ...a[n - 1] };
+      const e = { ...l[n - 1] };
       return (e.h1 = () => null), e;
      }
-     return a[n];
+     return l[n];
     },
     d = (e) => {
-     let { children: n, omitH1: t = !1, headingLevel: o = 1, baseUrl: i = '', components: a = {} } = e;
-     return (0, s.jsx)(r.Z, { components: { ...c(t, o), ...l(i), ...a }, children: n });
+     let { children: n, omitH1: t = !1, headingLevel: o = 1, baseUrl: i = '', components: l = {} } = e;
+     return (0, s.jsx)(r.Z, { components: { ...c(t, o), ...a(i), ...l }, children: n });
     };
   },
   51678: (e, n, t) => {
@@ -895,13 +880,13 @@
   },
   14669: (e, n, t) => {
    'use strict';
-   t.d(n, { $3: () => r, $e: () => j, BA: () => a, Ee: () => d, Q6: () => s, U: () => m, Yr: () => v, d: () => h, e9: () => i, fO: () => w, mA: () => o, ps: () => p, qU: () => f, s0: () => y, zP: () => g });
+   t.d(n, { $3: () => r, $e: () => j, BA: () => l, Ee: () => d, Q6: () => s, U: () => m, Yr: () => v, d: () => h, e9: () => i, fO: () => w, mA: () => o, ps: () => p, qU: () => f, s0: () => y, zP: () => g });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     i = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    a = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
-   function l(e) {
+    l = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+   function a(e) {
     return Array.from(new Set(e));
    }
    const c = (e) => {
@@ -915,13 +900,13 @@
        return n;
       })
       .flatMap((e) => u(e));
-     return c(l(n));
+     return c(a(n));
     },
     h = (e, n) => m(e).includes(n),
     u = (e) => {
      const n = / URL \(([^)]+)\)/;
      return c(
-      l(
+      a(
        e.tasks
         .filter((e) => {
          let { name: t, value: r } = e;
@@ -934,7 +919,7 @@
       ),
      );
     },
-    m = (e) => c(l(e.projects.flatMap((e) => u(e)))),
+    m = (e) => c(a(e.projects.flatMap((e) => u(e)))),
     p = (e) => {
      const n = u(e),
       t = ((e) => {
@@ -952,9 +937,9 @@
        })
        .map((r) => {
         let { name: o, id: s, value: i } = r;
-        const a = /^(.+) URL/.exec(o)[1],
-         l = 'Storybook' === a ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${a}`;
-        return { brand: a.toLowerCase(), name: o, id: s, value: i, description: l };
+        const l = /^(.+) URL/.exec(o)[1],
+         a = 'Storybook' === l ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${l}`;
+        return { brand: l.toLowerCase(), name: o, id: s, value: i, description: a };
        });
       return { frameworkName: n, tasks: r };
      });
@@ -1016,8 +1001,8 @@
     o = t(58190),
     s = t(52676),
     i = t(4814),
-    a = t(75271),
-    l = ['children', 'className'];
+    l = t(75271),
+    a = ['children', 'className'];
    function c(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -1045,11 +1030,11 @@
     }
     return e;
    }
-   var h = (0, a.forwardRef)(function (e, n) {
+   var h = (0, l.forwardRef)(function (e, n) {
     var t = e.children,
      r = e.className,
-     a = (0, o.Z)(e, l);
-    return (0, s.jsx)('code', d(d({ dir: 'ltr', translate: 'no', className: (0, i.W)('nl-code', r) }, a), {}, { ref: n, children: t }));
+     l = (0, o.Z)(e, a);
+    return (0, s.jsx)('code', d(d({ dir: 'ltr', translate: 'no', className: (0, i.W)('nl-code', r) }, l), {}, { ref: n, children: t }));
    });
    h.displayName = 'Code';
    !(function (e, n) {
@@ -1069,8 +1054,8 @@
     o = t(58190),
     s = t(52676),
     i = t(4814),
-    a = t(75271),
-    l = ['children'],
+    l = t(75271),
+    a = ['children'],
     c = ['dateTime'],
     d = ['value'];
    function h(e, n) {
@@ -1100,10 +1085,10 @@
     }
     return e;
    }
-   var m = (0, a.forwardRef)(function (e, n) {
+   var m = (0, l.forwardRef)(function (e, n) {
     var t = e.children,
-     r = (0, o.Z)(e, l),
-     a = (0, i.W)('nl-data-badge', e.className);
+     r = (0, o.Z)(e, a),
+     l = (0, i.W)('nl-data-badge', e.className);
     if (
      (function (e) {
       return 'dateTime' in e;
@@ -1111,7 +1096,7 @@
     ) {
      var h = r.dateTime,
       m = (0, o.Z)(r, c);
-     return (0, s.jsx)('time', u(u({}, m), {}, { dateTime: h, className: a, ref: n, children: t }));
+     return (0, s.jsx)('time', u(u({}, m), {}, { dateTime: h, className: l, ref: n, children: t }));
     }
     if (
      (function (e) {
@@ -1120,9 +1105,9 @@
     ) {
      var p = r.value,
       g = (0, o.Z)(r, d);
-     return (0, s.jsx)('data', u(u({}, g), {}, { value: p, className: a, ref: n, children: t }));
+     return (0, s.jsx)('data', u(u({}, g), {}, { value: p, className: l, ref: n, children: t }));
     }
-    return (0, s.jsx)('span', u(u({}, r), {}, { className: a, ref: n, children: t }));
+    return (0, s.jsx)('span', u(u({}, r), {}, { className: l, ref: n, children: t }));
    });
    m.displayName = 'DataBadge';
    !(function (e, n) {
