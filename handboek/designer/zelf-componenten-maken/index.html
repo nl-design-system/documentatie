@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.2e71e596.css" />
-  <script src="/assets/js/runtime~main.9219f6c8.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.6c1098f7.js" defer="defer"></script>
   <script src="/assets/js/main.3f549f02.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -230,176 +230,38 @@
              </div>
              <div class="theme-doc-markdown">
               <h1 id="zelf-componenten-maken" class="utrecht-heading-1">Zelf componenten maken</h1>
-              <p>De Figma bibliotheek van NL Design System bevat vast (nog) niet alle componenten die nodig zijn voor jouw organisatie. Je kunt zelf componenten gaan opbouwen of de bestaande componenten van jouw organisatie aanpassen. Hoe dan ook, het is het fijn als je dit doet op basis van de NL Design System structuur. Open-source en met design tokens, inclusief de juiste naamgeving. Zo kunnen componenten binnen de community met elkaar worden uitgewisseld.</p>
-              <p>Aan de hand van twee fictieve lokale componenten (Demo sticker en Demo card) laten we zien hoe je jouw componenten van design tokens voorziet volgens de NL Design System structuur.</p>
-              <p>Voordat je begint is het verstandig dat je het <a href="/handboek/designer/figma-stappenplan/" class="utrecht-link utrecht-link--html-a">Figma stappenplan</a> hebt doorlopen. Heb je een vraag? Twijfel niet en <a href="/project/kernteam/" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
-              <h2 id="demo-sticker-maken" class="utrecht-heading-2">Demo sticker maken</h2>
-              <p>In deze video laten we zien hoe je de &#x27;Demo sticker&#x27; kan opbouwen met design tokens. Daaronder staat dit ook als tekst beschreven.</p>
+              <p>De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch zijn er situaties waarin je zelf componenten moet maken. Dat kan in de volgende gevallen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><strong>Community-component ontbreekt:</strong> De community-component die jij nu juist nodig hebt ontbreekt nog. Je hebt dit doorgegeven aan het kernteam, maar er is (nog) geen tijd om dit op te pakken. In dat geval kun je de component zelf maken.</li>
+               <li><strong>Community-component verbeteren:</strong> Er is wel een community-component, maar die sluit niet goed aan bij de behoeften van jouw organisatie. Gebruik dan het bestaande ontwerp (of de code) als basis om daar verder op door te ontwikkelen. Neem daarbij zoveel mogelijk elementen uit de bestaande component over. Het is helemaal super om hierbij samen te werken met de organisatie die de oorspronkelijke component heeft ontwikkeld, zodat verbeteringen gezamenlijk kunnen worden doorgevoerd.</li>
+               <li><strong>Eigen community-component bijdragen:</strong> Je wilt als organisatie een nieuwe component ontwikkelen en delen met de community.</li>
+              </ul>
+              <p>Hoe dan ook, het is fijn om dit altijd te doen volgens de afspraken van NL Design System: open source, met design tokens en de juiste naamgeving. Zo blijven componenten onderling uitwisselbaar.</p>
+              <p>Om te laten zien hoe dit werkt, laten we met twee fictieve lokale componenten (Demo Sticker en Demo Card) zien hoe je zelf componenten kunt ontwikkelen.</p>
+              <h2 id="demo-sticker-maken" class="utrecht-heading-2">Demo Sticker maken</h2>
+              <p>In deze video laten we zien hoe de component &#x27;Demo Sticker&#x27; wordt ontwikkeld in Figma.</p>
               <div style="width: 100%; height: 100%" class="video-player"></div>
-              <h3 id="pagina-voorbereiden" class="utrecht-heading-3">Pagina voorbereiden</h3>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Open jouw Local - [Organisatie] - Bibliotheek.</li>
-               <li>Voeg een nieuwe pagina toe en noem deze ‘Demo sticker’.</li>
-               <li>Plaats deze pagina in alfabetische volgorde.</li>
-              </ul>
-              <h3 id="component-maken" class="utrecht-heading-3">Component maken</h3>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Verzamel de benodigde elementen (label en een icoon). Maak daarbij zo veel mogelijk gebruik van jouw [Organisatie] - Bibliotheek die je hebt gekoppeld aan je Local Bibliotheek.</li>
-               <li>Maak een component van de verzamelde elementen (Mac: ⌥ Option - ⌘ Command - K of Windows: Ctrl + Alt + K).</li>
-               <li>Noem de component ‘[organisatie]-demo-sticker’.</li>
-              </ul>
-              <h3 id="component-van-huisstijl-voorzien" class="utrecht-heading-3">Component van huisstijl voorzien</h3>
-              <p>Je kunt een component van huisstijl voorzien zoals je dat gewend bent (Shared Styles, Auto-layout, Variables). Zolang je deze designkeuzes uiteindelijk maar vastlegt via Tokens Studio. Hierdoor zijn je design tokens te koppelen met code. We vervolgen deze uitleg door direct te werken met de Tokens Studio plugin.</p>
-              <h4 id="tokens-studio-plugin-gebruiken" class="utrecht-heading-4">Tokens Studio plugin gebruiken</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Open de Tokens Studio plugin.</li>
-               <li>Maak binnen ‘components’ een nieuwe set aan en noem deze ‘components/demo-sticker’.</li>
-               <li>Plaats dit component in alfabetische volgorde door het te slepen.</li>
-               <li>Zet de checkbox van demo-sticker aan.</li>
-              </ul>
-              <h4 id="token-naamgeving" class="utrecht-heading-4">Token naamgeving</h4>
-              <p>Gebruik de <a href="https://www.nldesignsystem.nl/handboek/huisstijl/design-tokens/" class="utrecht-link utrecht-link--html-a">documentatie over de naamgeving</a>. Hierin staat hoe je naamgeving van component tokens op kan bouwen.</p>
-              <h4 id="kleur-color-tokens-aanmaken" class="utrecht-heading-4">Kleur (color) tokens aanmaken</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                Voor een achtergrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Klik bij ‘Color’ op het plusje.</li>
-                 <li>Noem het nieuwe achtergrondkleur token ‘[organisatie].demo-sticker.background-color’.</li>
-                 <li>Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.</li>
-                </ul>
-               </li>
-               <li>
-                Voor een voorgrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Dupliceer het achtergrondkleur token. Op deze manier hoef je de naam niet in z’n geheel opnieuw te schrijven.</li>
-                 <li>Noem het nieuwe voorgrondkleur token ‘[organisatie].demo-sticker.color’.</li>
-                 <li>Kies opnieuw een kleur naar keuze en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="kleur-tokens-koppelen" class="utrecht-heading-4">Kleur tokens koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                Koppel de achtergrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Selecteer de juiste laag. In dit geval is dat het hele component.</li>
-                 <li>Klik op het aangemaakte achtergrondkleur token of gebruik rechtermuisklik en kies voor ‘Fill’.</li>
-                </ul>
-               </li>
-               <li>
-                Koppel de voorgrondkleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Selecteer de lagen ‘Label’ en ‘Shape’ (gebruik diepe selectie: Mac: ⌘ Command of Windows: Control).</li>
-                 <li>Klik op het aangemaakte voorgrondkleur token.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="ruimte-spacing-tokens-aanmaken" class="utrecht-heading-4">Ruimte (spacing) tokens aanmaken</h4>
-              <p>Gebruik de <a href="/richtlijnen/stijl/ruimte/" class="utrecht-link utrecht-link--html-a">documentatie over de ruimte</a>. Hierin staat informatie over de spacing scale en concepten.</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                Voor inline:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Klik bij ‘Spacing’ op het plusje.</li>
-                 <li>Noem het nieuwe token ‘[organisatie].demo-sticker.padding-inline’.</li>
-                 <li>Kies bij ‘Value’ een waarde uit je common of brand laag en klik op ‘Create’. Tip: typ ‘{inline’ om gebruik te maken van autosuggestie.</li>
-                </ul>
-               </li>
-               <li>
-                Voor block:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Dupliceer de inline token.</li>
-                 <li>Noem het nieuwe token ‘[organisatie].demo-sticker.padding-block’.</li>
-                 <li>Kies opnieuw een waarde naar keuze en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="ruimte-tokens-aan-component-koppelen" class="utrecht-heading-4">Ruimte tokens aan component koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Selecteer de juiste laag. In dit geval is dat het hele component.</li>
-               <li>Gebruik rechtermuisklik bij de inline token en klik op ‘Left’ en ‘Right’.</li>
-               <li>Gebruik rechtermuisklik bij de block token en klik op ‘Top’ en ‘Bottom’.</li>
-              </ul>
-              <h4 id="typografie-tokens-aanmaken" class="utrecht-heading-4">Typografie tokens aanmaken</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                Voor font family:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Klik bij ‘Font Family’ op het plusje.</li>
-                 <li>Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-family’.</li>
-                 <li>Kies bij ‘Font Family’ voor een typografie uit het common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-               <li>
-                Voor font weight:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Om de dikte van het woord ‘Label’ te bepalen, klik je bij ‘Font Weight’ op het plusje.</li>
-                 <li>Noem het nieuwe typografie token ‘[organisatie].demo-sticker.font-weight’.</li>
-                 <li>Kies bij ‘Font Size’ een grootte uit het common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-               <li>
-                Voor font size en line height:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Herhaal bovenstaande stappen met tokens uit het common niveau.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="typografie-tokens-aan-component-koppelen" class="utrecht-heading-4">Typografie tokens aan component koppelen</h4>
-              <p>Selecteer de laag ‘Label’ en klik op de aangemaakte typografie tokens.</p>
-              <h3 id="tokens-aanpassen-of-nieuwe-tokens-maken" class="utrecht-heading-3">Tokens aanpassen of nieuwe tokens maken</h3>
-              <p>Voeg indien nodig tokens toe voor bijvoorbeeld de spacing tussen het icoon en het label, of voor de grootte van het icoon.</p>
-              <h3 id="varianten-maken" class="utrecht-heading-3">Varianten maken</h3>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Geef de achtergrondkleur van de component set de document.background-color uit het common niveau. Tip: dit is handig wanneer je ooit met dark-mode gaat werken. De achtergrondkleur kleurt dan mee.</li>
-               <li>Pas auto-layout toe de component met varianten. Kies 48px voor de vertical gap, horizontal padding en vertical padding.</li>
-               <li>Verander de naam van de property in overleg met je developer (bijv. ‘Appearance’). Tip: kijk hoe de properties worden genoemd bij andere componenten die ook meerdere varianten hebben.</li>
-               <li>Hernoem de varianten naar ‘Default’ en ‘Hyper’.</li>
-              </ul>
-              <h4 id="border-tokens-aanmaken" class="utrecht-heading-4">Border tokens aanmaken</h4>
-              <p>Als voorbeeld voegen we enkel border tokens toe aan de &#x27;hyper&#x27; variant.</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                Voor border kleur:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Dupliceer het voorgrondkleur token.</li>
-                 <li>Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-color’.</li>
-                 <li>Kies bij ‘Color’ een kleur uit je common of brand niveau en klik op ‘Create’. We kiezen voor nu een kleur uit het brand niveau.</li>
-                </ul>
-               </li>
-               <li>
-                Voor border width:<!-- -->
-                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                 <li>Klik bij ‘Border Width’ op het plusje.</li>
-                 <li>Noem het nieuwe border token ‘[organisatie].demo-sticker.hyper.border-width’.</li>
-                 <li>Kies bij ‘Border Width’ voor een dikte uit het brand of common niveau en klik op ‘Create’.</li>
-                </ul>
-               </li>
-              </ul>
-              <h4 id="border-tokens-aan-component-koppelen" class="utrecht-heading-4">Border tokens aan component koppelen</h4>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Selecteer de variant ‘Hyper’.</li>
-               <li>Gebruik rechtermuisklik bij het border kleur token en klik op ‘Border’.</li>
-               <li>Gebruik rechtermuisklik bij het border width token en klik op ‘All’.</li>
-              </ul>
-              <h3 id="afronden" class="utrecht-heading-3">Afronden</h3>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Je bent klaar met het opbouwen van je component met design tokens!</li>
-               <li>De volgende stap is om de tokens inzichtelijk te maken voor anderen door ze te documenteren.</li>
-              </ul>
-              <h2 id="demo-sticker-documenteren" class="utrecht-heading-2">Demo sticker documenteren</h2>
-              <p>In deze video laten we zien hoe je de design tokens van de &#x27;Demo sticker&#x27; kan documenteren.</p>
+              <h2 id="demo-card-maken" class="utrecht-heading-2">Demo Card maken</h2>
+              <p>In deze video laten we zien hoe de component &#x27;Demo Card&#x27; wordt ontwikkeld in Figma.</p>
               <div style="width: 100%; height: 100%" class="video-player"></div>
-              <h2 id="demo-card-maken" class="utrecht-heading-2">Demo card maken</h2>
-              <p>In deze video laten we zien hoe je de &#x27;Demo card&#x27; kan opbouwen met design tokens.</p>
-              <div style="width: 100%; height: 100%" class="video-player"></div>
-              <h2 id="demo-card-documenteren" class="utrecht-heading-2">Demo card documenteren</h2>
-              <p>In deze video laten we zien hoe je de design tokens van de &#x27;Demo card&#x27; kan documenteren.</p>
-              <div style="width: 100%; height: 100%" class="video-player"></div>
+              <h2 id="handige-links" class="utrecht-heading-2">Handige links</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <a href="/handboek/estafettemodel/componenten/definition-of-done/" class="utrecht-link utrecht-link--html-a">Definition of Done (Estafettemodel)</a>
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li><a href="/handboek/estafettemodel/componenten/help-wanted-stappenplan/" class="utrecht-link utrecht-link--html-a">Help Wanted stappenplan</a></li>
+                 <li><a href="/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/" class="utrecht-link utrecht-link--html-a">Community stappenplan voor organisaties</a></li>
+                </ul>
+               </li>
+               <li><a href="/handboek/huisstijl/design-tokens/" class="utrecht-link utrecht-link--html-a">Design tokens</a></li>
+               <li><a href="/handboek/designer/figma-hygiene/" class="utrecht-link utrecht-link--html-a">Figma hygiëne</a></li>
+               <li><a href="https://help.figma.com/" class="utrecht-link utrecht-link--html-a">help.figma.com</a></li>
+               <li><a href="https://forum.figma.com/" class="utrecht-link utrecht-link--html-a">forum.figma.com</a></li>
+               <li><a href="https://tokens.studio/" class="utrecht-link utrecht-link--html-a">tokenstudio.com</a></li>
+              </ul>
               <hr />
               <h2 id="help-deze-documentatie-te-verbeteren" class="utrecht-heading-2">Help deze documentatie te verbeteren</h2>
-              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">Github</a>.</p>
+              <p>Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">GitHub</a>.</p>
               <h2 id="vragen" class="utrecht-heading-2">Vragen</h2>
               <p>Heb je een vraag? Twijfel niet en <a href="/project/kernteam/" class="utrecht-link utrecht-link--html-a">neem contact op met het kernteam</a>.</p>
              </div>
