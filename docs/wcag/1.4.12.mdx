@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.12 Tekstafstand
 pagination_label: WCAG-succescriterium 1.4.12 Tekstafstand
-description: Tekst kan op een aantal manieren aangepast worden, door mensen voor wie dat prettig is.
+description: Tekst is door bezoekers aan te passen.
 slug: 1.4.12
 keywords:
   - WCAG
@@ -30,13 +30,43 @@ import Summary from "./summaries/_1.4.12-summary.md";
   {"WCAG-succescriterium 1.4.12 Tekstafstand"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Bezoekers kunnen tekst leesbaarder maken door de stijl aan te passen.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Zorg dat tekst en inhoud zicht schikt naar de instellingen van bezoekers.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Sommige mensen hebben teksten nodig met andere stijlen.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Bezoekers kunnen eigen instelling en voorkeuren hebben voor hoe teksten eruit zien. Deze instellingen moeten ondersteund worden. Er mag geen inhoud of functionaliteit wegvallen. De volgende instellingen moeten ondersteund worden:
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+- Een regelhoogte van ten minste 1,5 keer de lettergrootte;
+- Een afstand tussen alinea's van tetn minste 2 keer de lettergrootte;
+- Een letterafstand van ten minste 0,12 keer de lettergrootte;
+- Een afstand tussen woorden van ten minste 0,16 keer de lettergrootte.
+
+## Hoe te testen
+
+- Op de pagina die je wil testen gebruik je de [<span lang="en">text spacing bookmarklet</span> van HTML5 Accessibility/Steve Faulkner](https://www.html5accessibility.com/tests/tsbookmarklet.html).
+- Controleer of er geen tekst of functionaliteit wegvalt.
+
+## Tips
+
+- De website hoeft zelf niet deze instellingen te gebruiken. De instellingen moeten alleen ondersteund worden als de gebruiker ze zelf instelt. Denk hierbij bijvoorbeeld aan eigen custom CSS-stylesheets.
+- De website hoeft geen instellingen te bieden om dit aan te passen. De instellingen moeten alleen ondersteund worden als de gebruiker ze zelf instelt.
 
 ## Gebruikersonderzoek
 
