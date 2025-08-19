@@ -4,7 +4,7 @@ Informatieve icons moeten herkenbaar zijn als afbeelding voor gebruikers die hul
 
 Bijvoorbeeld: een `svg` icon heeft `role="img"` als attribuut.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen)
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)

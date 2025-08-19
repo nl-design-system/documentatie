@@ -8,6 +8,8 @@ Bijvoorbeeld:
 - De link naar de homepage in een broodkruimelpad is een huis icon.
 - Een knop om een dialoogvenster te sluiten gebruikt een kruis (x) icon.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)
+- [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/)
+- [Informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/)

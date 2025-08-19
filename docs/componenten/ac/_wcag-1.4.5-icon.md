@@ -5,3 +5,4 @@ Een icon kan uit een afbeelding van een letter bestaan (bijvoorbeeld B voor dikg
 NL Design System richtlijnen:
 
 - [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
+- [Tekst in een afbeelding](/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/)

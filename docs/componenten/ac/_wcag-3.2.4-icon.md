@@ -13,6 +13,6 @@ Denk aan:
 - De optie om een dialoogvenster te sluiten, maakt overal gebruik van een kruisje.
 - Bij een goed ingevuld formulierveld staat overal een vinkje.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)

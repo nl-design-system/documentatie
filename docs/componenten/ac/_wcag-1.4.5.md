@@ -5,3 +5,4 @@ Het label bestaat uit gewone tekst, niet uit een afbeelding van tekst. Tenzij he
 NL Design System richtlijnen:
 
 - [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
+- [Tekst in een afbeelding](/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/)

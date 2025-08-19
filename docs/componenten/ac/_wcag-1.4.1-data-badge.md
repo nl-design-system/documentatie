@@ -7,3 +7,4 @@ Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld 
 NL Design System richtlijnen:
 
 - [Gebruik kleur met een doel](/richtlijnen/stijl/kleuren/doel)
+- [Gebruik van kleur in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/)

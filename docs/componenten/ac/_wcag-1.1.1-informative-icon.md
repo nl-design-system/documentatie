@@ -6,7 +6,7 @@ Als een informatief icon géén onderdeel is van een interactief component, zoal
 
 Dit kan bijvoorbeeld door een `aria-label` toe te voegen aan een `svg` icon met `role="img"`.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen)
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)

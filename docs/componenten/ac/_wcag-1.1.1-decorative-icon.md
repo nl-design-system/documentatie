@@ -4,7 +4,7 @@ Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staa
 
 Het is daarom niet nodig dat gebruikers die hulpsoftware gebruiken, zoals een [screenreader](/woordenlijst/#screenreader), weten dat er een icon aanwezig is. Verberg decoratieve icons, bijvoorbeeld met `aria-hidden="true"` op de component.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Decoratieve afbeeldingen](/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen)
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)
