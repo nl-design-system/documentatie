@@ -5,3 +5,4 @@ Gebruik geen afbeelding om de eigenschappen van een kleurvlak weer te geven, maa
 NL Design System richtlijnen:
 
 - [Afbeeldingen als buttons](/richtlijnen/formulieren/buttons/afbeelding-als-button)
+- [Tekst in een afbeelding](https://nldesignsystem.nl/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/)

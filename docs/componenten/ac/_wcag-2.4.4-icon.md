@@ -6,7 +6,8 @@ Zorg er voor dat het duidelijk is waar de link naar verwijst, in plaats van dat 
 
 Bijvoorbeeld: Een link met een icon dat aangeeft dat een link naar een externe website verwijst heeft als beschrijving in de accessibility tree 'Gemeente Den Haag (externe website)' en niet 'Gemeente Den Haag klein vierkantje met een pijl die naar rechtsboven wijst'.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
+- [Toegankelijke linkteksten](/richtlijnen/content/tekstopmaak/linkteksten/)
 - [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen)
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)

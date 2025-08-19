@@ -4,7 +4,8 @@ Vertel in tekst welke kleur wordt weergegeven. Denk hierbij bijvoorbeeld de naam
 
 Dan is het voor gebruikers van [screenreaders](/woordenlijst/#screenreader) en mensen die slechtziend of kleurenblind zijn ook duidelijk welke kleur bedoeld wordt.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Vertrouw niet op kleur alleen](/richtlijnen/stijl/kleuren/niet-kleur-alleen)
 - [Let op verschillen in waarneming van kleur](/richtlijnen/stijl/kleuren/waarneming)
+- [Informatieve afbeeldingen](/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/)

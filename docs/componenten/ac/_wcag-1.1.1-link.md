@@ -24,3 +24,4 @@ NL Design System richtlijnen:
 
 - [Gebruik SVG voor iconen en geen font](/richtlijnen/stijl/iconen/gebruik-svg)
 - [Toepassen van een SVG in code](/richtlijnen/stijl/iconen/gebruik-svg#toepassen-van-een-svg-in-code)
+- [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/)

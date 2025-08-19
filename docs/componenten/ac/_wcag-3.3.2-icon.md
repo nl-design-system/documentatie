@@ -7,6 +7,7 @@ Bijvoorbeeld:
 - Een icon van een slot in een inlogformulier vraagt om een wachtwoord.
 - Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.
 
-Gerelateerde NL Design System richtlijnen:
+NL Design System richtlijnen:
 
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)
+- [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/)

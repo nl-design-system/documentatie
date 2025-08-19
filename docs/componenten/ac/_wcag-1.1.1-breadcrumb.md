@@ -4,6 +4,7 @@ Als het broodkruimelpad een afbeelding bevat, bijvoorbeeld een huisje om de home
 
 Als tussen de links in het broodkruimelpad tekens staan, zoals een schuine streep of een groter-dan-teken, zijn deze verborgen voor hulpsoftware. De relatie tussen de links wordt namelijk al op een andere manier duidelijk gemaakt aan bezoekers die gebruik maken van een [screenreader](/woordenlijst/#screenreader), door de georderende lijst (`ol`) binnen het `nav` element.
 
-NL Design System richtlijn:
+NL Design System richtlijnen:
 
 - [Richtlijnen voor iconen](https://nldesignsystem.nl/richtlijnen/stijl/iconen/)
+- [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/)

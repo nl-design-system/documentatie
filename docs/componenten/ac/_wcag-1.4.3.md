@@ -12,3 +12,4 @@ NL Design System richtlijnen:
 
 - [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst/)
 - [Geef tekst voldoende kleurcontrast](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/)
+- [Gebruik van kleur in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/)
