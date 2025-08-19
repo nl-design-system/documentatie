@@ -64,7 +64,7 @@
     i = t(40139);
    function s(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: '4,5:1 contrast voor normale tekst.' }), '\n', (0, r.jsx)(n.li, { children: '3:1 contrast voor grotere letters (vanaf 24 pixels).' }), '\n', (0, r.jsx)(n.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsxs)(n.p, { children: ['Hogere verhoudingen mogen natuurlijk altijd. Met de ', (0, r.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n'] })] });
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: '4,5:1 contrast voor normale tekst.' }), '\n', (0, r.jsx)(n.li, { children: '3:1 contrast voor grotere letters (vanaf 24 pixels).' }), '\n', (0, r.jsx)(n.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, r.jsxs)(n.p, { children: ['Hogere verhoudingen mogen natuurlijk altijd. Met de ', (0, r.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -91,8 +91,8 @@
    var r = t(52676),
     i = t(40139);
    function s(e) {
-    const n = { code: 'code', p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een ', (0, r.jsx)(n.code, { children: 'lang' }), '-attribuut met de juiste taalcode.'] }), '\n', (0, r.jsx)(n.p, { children: 'Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.' })] });
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een ', (0, r.jsx)(n.code, { children: 'lang' }), '-attribuut met de juiste taalcode.'] }), '\n', (0, r.jsx)(n.p, { children: 'Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/taal/', children: 'De juiste taal instellen' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -101,7 +101,7 @@
   },
   37903: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => S, component: () => F, contentTitle: () => N, default: () => O, description: () => L, frontMatter: () => R, issueNumber: () => P, metadata: () => z, title: () => D, toc: () => _ });
+   t.r(n), t.d(n, { assets: () => S, component: () => P, contentTitle: () => N, default: () => O, description: () => L, frontMatter: () => R, issueNumber: () => F, metadata: () => z, title: () => _, toc: () => D });
    var r = t(52676),
     i = t(40139),
     s = t(91670),
@@ -125,12 +125,12 @@
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(u, { ...e }) }) : u(e);
    }
-   var m = t(47913),
-    p = t(68934),
+   var p = t(47913),
+    m = t(68934),
     j = t(50553);
    function w(e) {
-    const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' });
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Koppen' }) }), '\n'] })] });
    }
    function k(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -156,7 +156,7 @@
     N = void 0,
     z = { id: 'componenten/heading/index', title: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', source: '@site/docs/componenten/heading/index.mdx', sourceDirName: 'componenten/heading', slug: '/heading', permalink: '/heading', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] }, sidebar: 'componenten', previous: { title: 'Form Summary', permalink: '/form-summary' }, next: { title: 'Heading 1', permalink: '/heading-1' } },
     S = {},
-    _ = [
+    D = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
@@ -167,10 +167,10 @@
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    D = 'Heading',
+    _ = 'Heading',
     L = 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.',
-    P = 114,
-    F = s.find((e) => e.number === P);
+    F = 114,
+    P = s.find((e) => e.number === F);
    function H(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, {
@@ -181,13 +181,13 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(A.Rv, { component: F, headingLevel: 1, description: L }),
+      (0, r.jsx)(A.Rv, { component: P, headingLevel: 1, description: L }),
       '\n',
-      (0, r.jsx)(y.I, { component: F }),
+      (0, r.jsx)(y.I, { component: P }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(f.B, { component: F, illustration: o.Z }),
+      (0, r.jsx)(f.B, { component: P, illustration: o.Z }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
@@ -208,7 +208,7 @@
       (0, r.jsx)(x.W, {
        items: [
         { title: 'Het niveau van de kop klopt binnen de koppenstructuur van de pagina.', sc: '1.3.1', status: '', component: (0, r.jsx)(h, {}), tags: ['contentmaker'] },
-        { title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, r.jsx)(p.ZP, {}), tags: ['designer', 'contentmaker'] },
+        { title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, r.jsx)(m.ZP, {}), tags: ['designer', 'contentmaker'] },
         { title: 'De koptekst maakt duidelijk waar de sectie over gaat.', sc: '2.4.6', status: '', component: (0, r.jsx)(k, {}), tags: ['designer', 'contentmaker'] },
         { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode.', sc: '3.1.2', status: '', component: (0, r.jsx)(v.ZP, {}), tags: ['contentmaker', 'developer'] },
        ],
@@ -222,21 +222,21 @@
        items: [
         { title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn.', sc: '1.3.1', status: '', component: (0, r.jsx)(g, {}), tags: ['developer'] },
         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, r.jsx)(j.ZP, {}), tags: ['developer'] },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, r.jsx)(m.ZP, {}), tags: ['developer'] },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, r.jsx)(p.ZP, {}), tags: ['developer'] },
        ],
       }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, r.jsx)(A.W, { component: F, headingLevel: 3 }),
+      (0, r.jsx)(A.W, { component: P, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(A.cN, { component: F, headingLevel: 3 }),
+      (0, r.jsx)(A.cN, { component: P, headingLevel: 3 }),
       '\n',
       (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(A.vM, { component: F, headingLevel: 3 }),
+      (0, r.jsx)(A.vM, { component: P, headingLevel: 3 }),
      ],
     });
    }
@@ -485,10 +485,10 @@
      return (0, d.jsx)(r.JO, { children: h[n] || (0, d.jsx)(l.Z, {}) });
     };
    var g = t(35038),
-    m = t(40598);
-   const p = (e) => {
+    p = t(40598);
+   const m = (e) => {
     let { checked: n, unchecked: r } = e;
-    return (0, d.jsx)(m.Z, {
+    return (0, d.jsx)(p.Z, {
      fallback: (0, d.jsx)(d.Fragment, {}),
      children: () => {
       const e = t(79333).YE;
@@ -583,7 +583,7 @@
              children: (0, d.jsxs)(g.aY, {
               children: [
                (0, d.jsx)(r.X6, { level: t, children: e.title.replace(/^Community/i, '') }),
-               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(p, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                (c.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
                c.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
@@ -638,7 +638,7 @@
     h = t(38548),
     u = t(41115),
     g = t(52676);
-   function m(e) {
+   function p(e) {
     let { children: n, content: t, language: r } = e;
     return 'clipboard' in navigator
      ? (0, g.jsxs)(o.zx, {
@@ -656,7 +656,7 @@
        })
      : null;
    }
-   var p = t(6076),
+   var m = t(6076),
     j = t(32463),
     w = t(85904),
     k = t(86384),
@@ -665,7 +665,7 @@
     f = t(37923),
     x = t(49003),
     A = t(75271);
-   const b = { color: p.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: k.Z, fontWeights: v.Z, lineHeights: y.Z, other: f.Z, textDecoration: x.Z },
+   const b = { color: m.Z, dimension: j.Z, fontFamilies: w.Z, fontSizes: k.Z, fontWeights: v.Z, lineHeights: y.Z, other: f.Z, textDecoration: x.Z },
     C = (e) => {
      let { type: n } = e;
      return (0, g.jsx)(u.JO, { children: (0, A.createElement)(b[n]) });
@@ -690,7 +690,7 @@
         }),
        ],
       }),
-      (0, g.jsxs)(o.hE, { children: [(0, g.jsx)(m, { content: l, language: 'json', children: 'Kopieer als JSON' }), (0, g.jsx)(m, { content: a, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, g.jsxs)(o.hE, { children: [(0, g.jsx)(p, { content: l, language: 'json', children: 'Kopieer als JSON' }), (0, g.jsx)(p, { content: a, language: 'css', children: 'Kopieer als CSS' })] }),
      ],
     });
    }
@@ -845,7 +845,7 @@
   },
   14669: (e, n, t) => {
    'use strict';
-   t.d(n, { $3: () => r, $e: () => j, BA: () => c, Ee: () => d, Q6: () => s, U: () => g, Yr: () => w, d: () => h, e9: () => o, fO: () => v, mA: () => i, ps: () => m, qU: () => y, s0: () => k, zP: () => p });
+   t.d(n, { $3: () => r, $e: () => j, BA: () => c, Ee: () => d, Q6: () => s, U: () => g, Yr: () => w, d: () => h, e9: () => o, fO: () => v, mA: () => i, ps: () => p, qU: () => y, s0: () => k, zP: () => m });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -885,7 +885,7 @@
      );
     },
     g = (e) => l(a(e.projects.flatMap((e) => u(e)))),
-    m = (e) => {
+    p = (e) => {
      const n = u(e),
       t = ((e) => {
        const n = e.tasks.find((e) => {
@@ -909,7 +909,7 @@
       return { frameworkName: n, tasks: r };
      });
     },
-    p = (e) => e.join('.'),
+    m = (e) => e.join('.'),
     j = (e) => '--' + e.join('-'),
     w = (e, n) => n.reduce((e, n) => e?.[n], e);
    function k(e, n) {
@@ -918,7 +918,7 @@
    function v(e) {
     const n = new Map();
     function t(e) {
-     return n.has(e) || n.set(e, p(e)), n.get(e);
+     return n.has(e) || n.set(e, m(e)), n.get(e);
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
