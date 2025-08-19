@@ -1,0 +1,100 @@
+[
+  {
+    "id": "106",
+    "date": "2025-07-08",
+    "topic": "Rijkshuisstijl Community nieuwe website, nieuwe documentatie, slim componenten filteren",
+    "description": "Charlotte deelt hoe de Rijkshuisstijl Community hun nieuwe website heeft geüpdatet. Rozerin vertelt over de vernieuwde pagina's voor designers en ze laat zien hoe je makkelijker componenten kunt filteren op implementatie op [nldesignsystem.nl/componenten](/componenten).",
+    "youtubeId": "1n7LK_zckgQ"
+  },
+  {
+    "id": "105",
+    "date": "2025-06-24",
+    "topic": "Common Ground Fieldlab, minder CSS voor dezelfde design tokens, verbeterd componentenoverzicht",
+    "description": "Bryan geeft een update over de Overheidsbrede Portalen bij het Common Ground Fieldlab. Peter vertelt over zijn PostCSS-plugin om alleen de design tokens in te laden die je daadwerkelijk gebruikt. Menno vertelt over het verbeterde componentenoverzicht op [nldesignsystem.nl/componenten](/componenten).",
+    "youtubeId": "wXkWWCoE9vU"
+  },
+  {
+    "id": "104",
+    "date": "2025-06-10",
+    "topic": "Richtlijnen voor tekstopmaak",
+    "description": "Renate vertelt over de nieuwe richtlijnen voor tekstopmaak en waar je allemaal rekening mee moet houden.",
+    "youtubeId": "Z03nAkH9lvc"
+  },
+  {
+    "id": "103",
+    "date": "2025-05-27",
+    "topic": "Community Sprint pagina's update, Rijkshuisstijl Community met NL Design System, Basis tokens",
+    "description": "Charlotte update ons over de verbetering en uitbreiding van de Community Sprint pagina. Aline vertelt hoe de Rijkshuisstijl Community werkt met NL Design System. Jeffrey neemt ons mee in de Basis tokens inclusief het Start-thema.",
+    "youtubeId": "9sh2FDt3-Og"
+  },
+  {
+    "id": "102",
+    "date": "2025-05-13",
+    "topic": "Multi-framework ervaring Rijkshuisstijl Community, Drupal-team RIVM implementeert Rijkshuisstijl",
+    "description": "Peter Goes stelt zich voor als nieuw kernteam lid. Aref vertelt over de multi-framework ervaring van het Quintor-team in de Rijkshuisstijl Community. Patrick Kannekens vertelt over het Drupal-team van de RIVM, en hun avonturen om het NL Design System te gebruiken voor hun implementatie van de Rijkshuisstijl.",
+    "youtubeId": "kIbdg2ZMKCE"
+  },
+  {
+    "id": "101",
+    "date": "2025-04-29",
+    "topic": "Onderzoek taalswitch. Webcomponenten voor portalen. Alt-teksten richtlijnen",
+    "description": "Sabine deelt inzichten uit het onderzoek naar de taalswitch. Bryan laat zien hoe portaal componenten beschikbaar worden gemaakt zonder React. Renate presenteert de nieuwe richtlijnen voor alt-teksten.",
+    "youtubeId": "WgA8flJjCZ0"
+  },
+  {
+    "id": "100",
+    "date": "2025-04-15",
+    "topic": "Samenwerken aan 1 uitstraling voor Mijn omgevingen. Design tokens documenteren in Figma.",
+    "description": "Francesca en Rozerin vertellen over de Mijn, Mijn, Mijn workshop rondom het samenwerken aan 1 uitstraling voor Mijn omgevingen. Jeffrey laat zien hoe je in Figma design tokens kunt documenteren met Automator en Tokens Studio. En hoe hij experimenteerde om design tokens uit een JSON bestand te ordenen.",
+    "youtubeId": "JutGVOM2s7I"
+  },
+  {
+    "id": "99",
+    "date": "2025-04-01",
+    "topic": "Introductie Eric, Update voor VNG/Overheidsbrede Portalen, Opdracht nieuwe website.",
+    "description": "Toegankelijkheidsspecialist Erik stelt zich voor als nieuw lid van het kernteam. Bryan de Jong vertelt over fase 2 van het Overheidsbrede Portalenproject waar ze werken aan standaardtemplates voor Mijn-omgevingen. Robbert kondigt aan dat er een opdracht uitstaat voor een nieuwe developer die gaat werken aan [nldesignsystem.nl](https://nldesignsystem.nl) en [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl).",
+    "youtubeId": "-duccvorUOw"
+  },
+  {
+    "id": "98",
+    "date": "2025-03-18",
+    "topic": "Proof of concept: combineren NL Design Sytem met Mendix. Twee nieuwe kernteamleden.",
+    "description": "Fiemke Griffioen-Both heeft samen met Frameless en het Frontend Quality Team van Gemeente Rotterdam gewerkt aan een Proof of Concept om NL Design System met Mendix te combineren. Ze vertelt over hoe ze dat hebben aangepakt en wat ze ervan hebben geleerd. Ook introduceren wij twee nieuwe kernteam leden!",
+    "youtubeId": "iGhzBV-1X9U"
+  },
+  {
+    "id": "97",
+    "date": "2025-03-04",
+    "topic": "Introductie Charlotte. Suffix component. Toegankelijke proof-of-concept binnen de Rijkshuisstijl Community.",
+    "description": "Charlotte stelt zich voor als nieuw kernteam lid. Jeffrey bespreekt de Suffix component voor gebruik in formulieren en Sjimmie laat een proof of concept zien waarbij websites met toegankelijkheids issues op toegankelijke wijze zijn nagebouwd met gebruik van Rijkshuisstijl componenten.",
+    "youtubeId": "IkJC_lvTmYE"
+  },
+  {
+    "id": "96",
+    "date": "2025-02-18",
+    "topic": "Blogpost: Tips om in 9 stappen je A-status te halen. Blogpost: Toegankelijke naam van link op een logo. Help Wanted stappenplan.",
+    "description": "Rian bespreekt twee blogposts. De eerste over het behalen van de A-status voor je website in negen stappen en een tweede over hoe je een header logo een toegankelijke naam geeft. Tot slot vertelt Tessa over haar ervaring met het doorlopen van de Help Wanted stappen in de praktijk.",
+    "youtubeId": "Hs3G8ZHwQLU"
+  },
+  {
+    "id": "95",
+    "date": "2025-02-04",
+    "topic": "Samenwerking Klachtenformulier.",
+    "description": "Deze week vertellen Yasmin van gemeente Rotterdam, Jeroen en René van de gemeente Utrecht en Jeffrey over de samenwerking rondom een 2e ronde gebruikersonderzoek van het klachtenformulier.",
+    "youtubeId": "zzsKvrlt5Lc"
+  },
+  {
+    "id": "94",
+    "date": "2025-01-21",
+    "topic": "Signalen voor Purmerend toegankelijk, 4 Community componenten.",
+    "description": "Deze week laat Rozerin de 4 nieuwe community componenten zien: Alert, Heading Group, Select en Text Input. Daarnaast laten Delta10 en Frameless de nieuwe versie van Signalen zien voor Purmerend, die gebouwd met NL Design System een A-status heeft gehaald.",
+    "youtubeId": "PNKkFOylpRE"
+  },
+  {
+    "id": "93",
+    "date": "2025-01-07",
+    "topic": "Candidate componenten. Help Wanted componenten. Update: Rijkshuisstijl Community.",
+    "description": "Deze week vertelt Robbert Broersma over de Candidate componenten, vertelt Jeffrey Lauwers over de Help Wanted componenten en geeft Roy Honders een update over de Rijkshuisstijl Community.",
+    "youtubeId": "5_HtpUtDMRE"
+  }
+]

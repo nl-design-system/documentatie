@@ -3,13 +3,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Canvas } from '@site/src/components/Canvas/Canvas';
 import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
 import { ContrastRatio } from '@site/src/components/ContrastRatio';
-import { FormFieldTextbox } from '@site/src/components/FormFieldTextbox';
 import { Guideline } from '@site/src/components/Guideline';
 import Layout from '@theme/Layout';
 import {
   Button,
-  ButtonGroup,
+  ButtonGroup as ActionGroup,
   Code,
+  FormFieldTextbox,
   Heading2,
   Icon,
   PageContent,
@@ -198,7 +198,10 @@ const ContrastPage = () => {
   const donts = recommendations.filter(({ result, positive }) => !positive && result === positive);
 
   return (
-    <Layout title={`Contrast van kleuren - ${siteConfig.title}`}>
+    <Layout>
+      <head>
+        <title>Contrast van kleuren - ${siteConfig.title}</title>
+      </head>
       <PageContent
         style={{
           '--utrecht-space-around': 1,
@@ -241,19 +244,21 @@ const ContrastPage = () => {
               '--utrecht-textbox-font-family': 'var(--utrecht-code-font-family)',
             }}
           />
-          <Button type="submit" appearance="primary-action-button">
-            Contrast berekenen
-          </Button>
+          <ActionGroup>
+            <Button type="submit" appearance="primary-action-button">
+              Contrast berekenen
+            </Button>
+          </ActionGroup>
         </form>
         {typeof contrastRatio === 'number' && (
           <div>
             <Heading2 id="output">Resultaat</Heading2>
             <ContrastRatio {...{ backgroundColor, color, contrastRatio }} />
-            <ButtonGroup style={{ display: 'none' }}>
+            <ActionGroup style={{ display: 'none' }}>
               <Button appearance="secondary-action-button" onClick={() => navigator.clipboard.writeText(shareURL)}>
                 Link kopiëren
               </Button>
-            </ButtonGroup>
+            </ActionGroup>
             {dos.length > 0 && (
               <>
                 <Paragraph>Gebruik deze kleuren voor bijvoorbeeld:</Paragraph>
