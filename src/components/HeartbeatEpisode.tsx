@@ -7,7 +7,6 @@ import Markdown from 'react-markdown';
 interface Heartbeat {
   id: number;
   date: string;
-  topic: string;
   description: string[];
   youtubeId: string;
 }
