@@ -25,6 +25,281 @@ Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoe
 
 Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg over de changelog voor Figma bibliotheken](/handboek/designer/werken-met-figma-changelog). En wil je weten wat de versienummers precies betekenen? Lees dan over [versiebeheer](/handboek/designer/design-tokens-versiebeheer).
 
+**Hulpvideo's**
+
+- [Component met design tokens overnemen in Figma](https://youtu.be/N0TpU_kANRw)
+- [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
+
+## 2.2.0
+
+20 augustus 2025
+
+Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Page Header in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23069-24687).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "page-header": {
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.xl}"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.3xl}"
+      },
+      "medium": {
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.5xl}"
+        }
+      },
+      "wide": {
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "96px"
+        }
+      },
+      "logo-link": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.xl}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "{code-only}"
+        }
+      },
+      "brand-name": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1.color-document}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.heading.font-weight}"
+        },
+        "text-wrap": {
+          "$type": "other",
+          "$value": "nowrap",
+          "$description": "{code-only}"
+        }
+      },
+      "navigation": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.4xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        }
+      },
+      "menu": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.3xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.3xl}"
+        }
+      },
+      "menu-item": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "{code-only}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.color-hover}"
+          }
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.text.xs}"
+        }
+      },
+      "menu-link": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "None"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "{code-only}"
+        },
+        "hover": {
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        },
+        "text-decoration-thickness": {
+          "$type": "textDecoration",
+          "$value": "auto"
+        }
+      },
+      "mega-menu-button": {
+        "cursor": {
+          "$type": "other",
+          "$value": "default",
+          "$description": "{code-only}"
+        },
+        "label": {
+          "open": {
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": "{basis.text.font-weight.bold}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 2.1.0
+
+19 augustus 2025
+
+Community component 'Page Footer' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Page Footer in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23080-639).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "page-footer": {
+      "spotlight": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1-inverse.bg-default}"
+        }
+      },
+      "menu-link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-default}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.color-hover}"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "None"
+          }
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-thickness": {
+          "$type": "textDecoration",
+          "$value": "auto",
+          "$description": "[code-only]"
+        }
+      },
+      "menu": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.4xl}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        },
+        "medium": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.5xl}"
+          }
+        },
+        "wide": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "96px"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 2.0.0
 
 3 juli 2025
