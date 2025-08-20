@@ -25,6 +25,113 @@ Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoe
 
 Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg over de changelog voor Figma bibliotheken](/handboek/designer/werken-met-figma-changelog). En wil je weten wat de versienummers precies betekenen? Lees dan over [versiebeheer](/handboek/designer/design-tokens-versiebeheer).
 
+## 2.1.0
+
+19 augustus 2025
+
+Community component 'Page Footer' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Page Footer in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23080-639).
+- Bekijk video: Component met design tokens overnemen in Figma.
+
+Hieronder zijn de design tokens van de Page Footer te zien. 
+
+```json
+{
+  "ams": {
+    "page-footer": {
+      "spotlight": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1-inverse.bg-default}"
+        }
+      },
+      "menu-link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-default}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.color-hover}"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "None"
+          }
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-thickness": {
+          "$type": "textDecoration",
+          "$value": "auto",
+          "$description": "[code-only]"
+        }
+      },
+      "menu": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.4xl}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        },
+        "medium": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.5xl}"
+          }
+        },
+        "wide": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "96px"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 2.0.0
 
 3 juli 2025
