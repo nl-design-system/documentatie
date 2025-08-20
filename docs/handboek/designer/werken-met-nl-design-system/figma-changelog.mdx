@@ -47,13 +47,13 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
         "$type": "fontFamilies",
         "$value": "{basis.text.font-family.default}"
       },
-      "padding-inline": {
-        "$type": "dimension",
-        "$value": "{basis.space.inline.xl}"
-      },
       "padding-block": {
         "$type": "dimension",
         "$value": "{basis.space.block.3xl}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.xl}"
       },
       "medium": {
         "padding-inline": {
@@ -65,17 +65,6 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
         "padding-inline": {
           "$type": "dimension",
           "$value": "96px"
-        }
-      },
-      "logo-link": {
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{basis.space.column.xl}"
-        },
-        "outline-offset": {
-          "$type": "other",
-          "$value": "auto",
-          "$description": "{code-only}"
         }
       },
       "brand-name": {
@@ -94,17 +83,33 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
         "text-wrap": {
           "$type": "other",
           "$value": "nowrap",
-          "$description": "{code-only}"
+          "$description": "[code-only]"
         }
       },
-      "navigation": {
+      "logo-link": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{basis.space.column.4xl}"
+          "$value": "{basis.space.column.xl}"
         },
-        "row-gap": {
-          "$type": "dimension",
-          "$value": "{basis.space.row.xl}"
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        }
+      },
+      "mega-menu-button": {
+        "cursor": {
+          "$type": "other",
+          "$value": "default",
+          "$description": "[code-only]"
+        },
+        "label": {
+          "open": {
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": "{basis.text.font-weight.bold}"
+            }
+          }
         }
       },
       "menu": {
@@ -122,9 +127,9 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
           "$type": "color",
           "$value": "{basis.color.action-1.color-default}"
         },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{basis.text.line-height.md}"
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.text.xs}"
         },
         "font-size": {
           "$type": "fontSizes",
@@ -134,10 +139,14 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
           "$type": "fontWeights",
           "$value": "{basis.text.font-weight.default}"
         },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
         "outline-offset": {
           "$type": "other",
           "$value": "auto",
-          "$description": "{code-only}"
+          "$description": "[code-only]"
         },
         "padding-block": {
           "$type": "dimension",
@@ -148,10 +157,6 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
             "$type": "color",
             "$value": "{basis.color.action-1.color-hover}"
           }
-        },
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{basis.space.text.xs}"
         }
       },
       "menu-link": {
@@ -159,35 +164,31 @@ Community component 'Page Header' van gemeente Amsterdam is toegevoegd aan de bi
           "$type": "textDecoration",
           "$value": "None"
         },
+        "text-decoration-thickness": {
+          "$type": "textDecoration",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
         "text-underline-offset": {
           "$type": "other",
           "$value": "auto",
-          "$description": "{code-only}"
+          "$description": "[code-only]"
         },
         "hover": {
           "text-decoration-line": {
             "$type": "textDecoration",
             "$value": "underline"
           }
-        },
-        "text-decoration-thickness": {
-          "$type": "textDecoration",
-          "$value": "auto"
         }
       },
-      "mega-menu-button": {
-        "cursor": {
-          "$type": "other",
-          "$value": "default",
-          "$description": "{code-only}"
+      "navigation": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.4xl}"
         },
-        "label": {
-          "open": {
-            "font-weight": {
-              "$type": "fontWeights",
-              "$value": "{basis.text.font-weight.bold}"
-            }
-          }
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
         }
       }
     }
@@ -208,63 +209,6 @@ Community component 'Page Footer' van gemeente Amsterdam is toegevoegd aan de bi
 {
   "ams": {
     "page-footer": {
-      "spotlight": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{basis.color.accent-1-inverse.bg-default}"
-        }
-      },
-      "menu-link": {
-        "color": {
-          "$type": "color",
-          "$value": "{basis.color.action-1.color-default}"
-        },
-        "hover": {
-          "color": {
-            "$type": "color",
-            "$value": "{basis.color.action-1.color-hover}"
-          },
-          "text-decoration-line": {
-            "$type": "textDecoration",
-            "$value": "None"
-          }
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{basis.text.font-family.default}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{basis.text.font-size.md}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{basis.text.font-weight.default}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{basis.text.line-height.md}"
-        },
-        "outline-offset": {
-          "$type": "other",
-          "$value": "auto",
-          "$description": "[code-only]"
-        },
-        "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "underline"
-        },
-        "text-underline-offset": {
-          "$type": "other",
-          "$value": "auto",
-          "$description": "[code-only]"
-        },
-        "text-decoration-thickness": {
-          "$type": "textDecoration",
-          "$value": "auto",
-          "$description": "[code-only]"
-        }
-      },
       "menu": {
         "column-gap": {
           "$type": "dimension",
@@ -293,6 +237,63 @@ Community component 'Page Footer' van gemeente Amsterdam is toegevoegd aan de bi
             "$type": "dimension",
             "$value": "96px"
           }
+        }
+      },
+      "menu-link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-default}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "text-decoration-thickness": {
+          "$type": "textDecoration",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.color-hover}"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "None"
+          }
+        }
+      },
+      "spotlight": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1-inverse.bg-default}"
         }
       }
     }
