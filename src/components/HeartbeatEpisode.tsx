@@ -22,7 +22,7 @@ export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) =>
 
   return episode ? (
     <>
-      {headingLevel && (
+      {!!headingLevel && (
         <HeadingGroup>
           <Heading level={headingLevel}>
             Heartbeat van{' '}
