@@ -110,6 +110,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </CardGroup>
+        </div>
+        <HomepageUpdates>
           <Heading2>Bekijk de laatste updates</Heading2>
           <HeartbeatEpisode headingLevel={3} />
           <ButtonGroup>
@@ -120,6 +122,71 @@ export default function Home() {
               Bekijk alle Heartbeat videos
             </ButtonLink>
           </ButtonGroup>
+        </HomepageUpdates>
+        <div className="container">
+          <Heading2>Gebruik NL Design System</Heading2>
+          <CardGroup>
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Richtlijnen</Heading2>
+                  <Paragraph>
+                    Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link to="/richtlijnen">Bekijk de richtlijnen</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Componenten</Heading2>
+                  <Paragraph>
+                    Herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer. Inclusief
+                    code en documentatie.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link to="/componenten">Bekijk de componenten</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Handboek</Heading2>
+                  <Paragraph>
+                    Algemene informatie over het Estafettemodel en bijdragen van componenten en handleidingen voor
+                    developers en designers.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link to="/handboek">Bekijk het handboek</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+
+            <Card component="section" appearance="medium">
+              <CardContent>
+                <div>
+                  <Heading2>Voorbeelden</Heading2>
+                  <Paragraph>
+                    Patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te
+                    lossen.
+                  </Paragraph>
+                </div>
+                <Paragraph>
+                  <Link to="/voorbeelden">Bekijk de voorbeelden</Link>
+                </Paragraph>
+              </CardContent>
+            </Card>
+          </CardGroup>
+        </div>
+        <div className="container" style={{ paddingBlockEnd: '40px' }}>
           <Heading2>Wie doen er al mee?</Heading2>
           <CardGroup appearance="small">
             <Card appearance="small" href="https://github.com/nl-design-system/utrecht">
@@ -192,69 +259,6 @@ export default function Home() {
             <Link to="/community/wie-doet-mee">diverse andere organisaties</Link> mee in de community van NL Design
             System.
           </Paragraph>
-        </div>
-        <div className="container" style={{ paddingBlockEnd: '40px' }}>
-          <Heading2>Gebruik NL Design System</Heading2>
-          <CardGroup>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Richtlijnen</Heading2>
-                  <Paragraph>
-                    Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/richtlijnen">Bekijk de richtlijnen</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Componenten</Heading2>
-                  <Paragraph>
-                    Herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer. Inclusief
-                    code en documentatie.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/componenten">Bekijk de componenten</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Handboek</Heading2>
-                  <Paragraph>
-                    Algemene informatie over het Estafettemodel en bijdragen van componenten en handleidingen voor
-                    developers en designers.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/handboek">Bekijk het handboek</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Voorbeelden</Heading2>
-                  <Paragraph>
-                    Patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te
-                    lossen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/voorbeelden">Bekijk de voorbeelden</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-          </CardGroup>
         </div>
         <HomepageUpdates>
           <Heading2>Blijf op de hoogte</Heading2>
