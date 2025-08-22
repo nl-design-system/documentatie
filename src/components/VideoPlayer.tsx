@@ -1,9 +1,7 @@
 import clsx from 'clsx';
 import ReactPlayer from 'react-player';
-import type { ComponentProps } from 'react';
+import type { ReactPlayerProps } from 'react-player/types';
 import './VideoPlayer.css';
-
-type ReactPlayerProps = ComponentProps<typeof ReactPlayer>;
 
 export const VideoPlayer = ({ videoId, className }: ReactPlayerProps & { videoId: string; className?: string }) => (
   <ReactPlayer
