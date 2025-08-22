@@ -1,20 +1,15 @@
 import clsx from 'clsx';
-import type { PropsWithChildren } from 'react';
-import ReactPlayer, { type ReactPlayerProps } from 'react-player';
+import ReactPlayer from 'react-player';
+import type { ReactPlayerProps } from 'react-player/types';
 import './VideoPlayer.css';
 
-export const VideoPlayer = ({
-  videoId,
-  className,
-  ...restProps
-}: PropsWithChildren<ReactPlayerProps & { videoId: string; className?: string }>) => (
+export const VideoPlayer = ({ videoId, className }: ReactPlayerProps & { videoId: string; className?: string }) => (
   <ReactPlayer
-    url={`https://youtube.com/watch?v=${videoId}`}
+    src={`https://youtube.com/watch?v=${videoId}`}
     className={clsx('video-player', className)}
     width="100%"
     height="100%"
     controls
-    {...restProps}
-    config={{ youtube: { playerVars: { disablekb: 1 } } }}
+    config={{ youtube: { disablekb: 1 } }}
   />
 );
