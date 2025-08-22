@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.2e71e596.css" />
-  <script src="/assets/js/runtime~main.44e2c399.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.6c976104.js" defer="defer"></script>
   <script src="/assets/js/main.29770e82.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -363,6 +363,8 @@
               <h2 id="informatie-van-de-component-bijgewerkt-op-nldesignsystemnl" class="utrecht-heading-2">Informatie van de component bijgewerkt op nldesignsystem.nl</h2>
               <p>Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component beschikbaar.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package door op <code class="utrecht-code">Run Workflow</code> te klikken in <a href="https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml" class="utrecht-link utrecht-link--html-a">GitHub Actions van de Index repository</a>. Kies hierbij voor de <code class="utrecht-code">main</code> branch.</li>
+               <li>Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">component-progress op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.</li>
                <li>Open de <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">documentatie repository</a> in Visual Studio Code.</li>
                <li>Maak een nieuwe branch aan en gebruik de volgende naam:</li>
               </ul>
@@ -375,8 +377,6 @@
               <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rmahralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build/update-component-progress-{datum-of-versienummer}</span>
 </span></code></pre>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package door op <code class="utrecht-code">Run Workflow</code> te klikken in <a href="https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml" class="utrecht-link utrecht-link--html-a">GitHub Actions van de Index repository</a>. Kies hierbij voor de <code class="utrecht-code">main</code> branch.</li>
-               <li>Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">component-progress op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.</li>
                <li>Update <code class="utrecht-code">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch <code class="utrecht-code">pnpm install @nl-design-system/component-progress@latest --save-dev -w</code> te draaien. Dit update de devDependency en de lockfile.</li>
                <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
               </ul>
