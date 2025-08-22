@@ -210,6 +210,8 @@ Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaatsgevonden.
 
 Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component beschikbaar.
 
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
 
@@ -219,8 +221,6 @@ Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component be
 build/update-component-progress-{datum-of-versienummer}
 ```
 
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een commit en gebruik hierbij het volgende bericht:
 
