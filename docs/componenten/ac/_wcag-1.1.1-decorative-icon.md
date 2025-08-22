@@ -4,6 +4,8 @@ Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staa
 
 Het is daarom niet nodig dat gebruikers die hulpsoftware gebruiken, zoals een [screenreader](/woordenlijst/#screenreader), weten dat er een icon aanwezig is. Verberg decoratieve icons, bijvoorbeeld met `aria-hidden="true"` op de component.
 
+Let op: VoiceOver negeert Unicode-emoji met `aria-hidden="true"` wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen navigeert. Gebruik daarom liever `SVG` Icons.
+
 NL Design System richtlijnen:
 
 - [Decoratieve afbeeldingen](/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen)
