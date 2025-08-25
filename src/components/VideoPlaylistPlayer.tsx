@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import ReactPlayer from 'react-player';
 import type { ReactPlayerProps } from 'react-player/types';
-import './VideoPlayer.css';
 
 export const VideoPlaylistPlayer = ({
   playlistId,
