@@ -38,7 +38,7 @@ Door de taal goed aan te geven, help je dus mensen die je content anders niet go
 
 In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten waarvan de taal is ingesteld.
 
-<VideoPlayer videoId="2UAjJ_5nxqw" />
+<VideoPlayer id="2UAjJ_5nxqw" id="Voorbeeld van taalwisseling met een screenreader"/>
 
 ## Taal van de pagina
 
