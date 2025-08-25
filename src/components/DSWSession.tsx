@@ -53,12 +53,7 @@ export const DSWSession = ({
       {title}
     </Heading>
     {videoId || session?.videoId ? (
-      <VideoPlayer
-        videoId={videoId ? videoId : session?.videoId}
-        width="100%"
-        height="100%"
-        className="dsw-session__video"
-      />
+      <VideoPlayer id={videoId ? videoId : session?.videoId} title={title} />
     ) : (
       <Paragraph className="dsw-session__subtitle" lead>
         {speakers.map((speaker) => speaker.name).join(' & ')}
