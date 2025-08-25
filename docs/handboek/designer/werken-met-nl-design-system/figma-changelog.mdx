@@ -30,6 +30,71 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 2.3.0
+
+22 augustus 2025
+
+Verschillende bugfixes doorgevoerd.
+
+- Focus state verwijderd uit Link component.
+  - Verwijder de variant voor 'Focus' state bij de [Community component van Utrecht](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1060&t=4XR57VAGXKljzCQj-4).
+  - Verwijder de documentatie over de 'Focus' state in het ['Documentatie' frame](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=907-1967&t=4XR57VAGXKljzCQj-4).
+- 'Settings' icoon in lijn gebracht met de andere iconen (is niet langer een stroke).
+  - Selecteer de 'Shape' van het [settings icoon](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=340-6948&t=4XR57VAGXKljzCQj-4).
+  - Kies via het contextuele menu voor 'Outline stroke'.
+- 'Line-height' tokens toegepast om visuele voorbeelden van 'Icon' sizing.
+  - Open Tokens Studio.
+  - Controleer de 'Text' in [de visuele voorbeelden van 'Icon' sizing](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=21502-25752&t=4XR57VAGXKljzCQj-4). Je zult zien dat hier de basis-tokens voor 'font-size' al op zijn toegepast.
+  - Pas hier ook de bijbehorende basis-tokens voor 'line-height' op toe.
+- Design token `todo.form-field-label.column-gap` toegepast op juiste layer.
+  - Open Tokens Studio.
+  - Selecteer [de layer van het Form Field Label in de component Form Field](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=958-1936&t=4XR57VAGXKljzCQj-4).
+  - Verwijder het design token `todo.form-field-label.column-gap` van deze layer.
+  - Selecteer [de layer genaamd 'label'](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=19018-25014&t=4XR57VAGXKljzCQj-4).
+  - Pas hier opnieuw het design token `todo.form-field-label.column-gap` toe via het contextuele menu van Tokens Studio: kies voor 'Spacing' en vervolgens 'Gap'.
+- 'Line-height' aangepast voor Number Badge component.
+  - Ga naar [de pagina van de Number Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271) en pas de line-height van de Candidate en Community component aan van 150% naar 100%. Doe dit direct in Figma zelf bij de Typography settings.
+- Toepassing van design tokens op Focus-ring component aangepast.
+  - Bij het toepassen van design tokens op de focus-ring component zijn enkele fouten gemaakt.
+  - [Bekijk de video 'Bugfix: Focus-ring](https://youtu.be/ANSezxbNbFA) waarin we uitleggen hoe je dit zelf kunt nalopen en verbeteren.
+  - Loop daarna de volgende componenten per bibliotheek na en voer de verbeteringen daar door:
+
+NL Design System - Bibliotheek
+
+- Accordion \*
+- Breadcrumb Navigation
+- Button \*
+- Checkbox \*
+- Contact Timeline
+- File
+- Link
+- Link List
+- Login Link \*
+- Page Number Navigation \*
+- Radio Button
+- Select \*
+- Side Navigation
+- Skip Link
+- Task Card
+- Task Navigation
+- Text Area \*
+- Text Input \*
+
+NL Design System - ToDo Bibliotheek
+
+- Breadcrumb Navigation
+- Card as Link \*
+- Case Card
+- Icon Only Button \*
+- Listbox
+- Main Navigation
+- Page Number Navigation \*
+- Progress List \*
+- Switch \*
+- Toolbar Button \*
+
+Bij componenten aangeduid met een \* zal ook een design token voor border-radius toegepast moeten worden.
+
 ## 2.2.0
 
 20 augustus 2025
