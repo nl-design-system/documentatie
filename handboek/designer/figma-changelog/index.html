@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.2e71e596.css" />
-  <script src="/assets/js/runtime~main.b460a2db.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.644ea503.js" defer="defer"></script>
   <script src="/assets/js/main.5196f75f.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -251,6 +251,92 @@
                <li><a href="https://youtu.be/RZA4WtAGK1Y" class="utrecht-link utrecht-link--html-a">Component met design tokens overnemen in Figma</a></li>
                <li><a href="https://youtu.be/PPPT6oxIdWo" class="utrecht-link utrecht-link--html-a">Versienummer wijzigen in Figma</a></li>
               </ul>
+              <h2 id="230" class="utrecht-heading-2">2.3.0</h2>
+              <p>22 augustus 2025</p>
+              <p>Verschillende bugfixes doorgevoerd.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                Focus state verwijderd uit Link component.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Verwijder de variant voor &#x27;Focus&#x27; state bij de <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1060&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">Community component van Utrecht</a>.</li>
+                 <li>Verwijder de documentatie over de &#x27;Focus&#x27; state in het <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=907-1967&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">&#x27;Documentatie&#x27; frame</a>.</li>
+                </ul>
+               </li>
+               <li>
+                &#x27;Settings&#x27; icoon in lijn gebracht met de andere iconen (is niet langer een stroke).<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Selecteer de &#x27;Shape&#x27; van het <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=340-6948&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">settings icoon</a>.</li>
+                 <li>Kies via het contextuele menu voor &#x27;Outline stroke&#x27;.</li>
+                </ul>
+               </li>
+               <li>
+                &#x27;Line-height&#x27; tokens toegepast om visuele voorbeelden van &#x27;Icon&#x27; sizing.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Open Tokens Studio.</li>
+                 <li>Controleer de &#x27;Text&#x27; in <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=21502-25752&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">de visuele voorbeelden van &#x27;Icon&#x27; sizing</a>. Je zult zien dat hier de basis-tokens voor &#x27;font-size&#x27; al op zijn toegepast.</li>
+                 <li>Pas hier ook de bijbehorende basis-tokens voor &#x27;line-height&#x27; op toe.</li>
+                </ul>
+               </li>
+               <li>
+                Design token <code class="utrecht-code">todo.form-field-label.column-gap</code> toegepast op juiste layer.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Open Tokens Studio.</li>
+                 <li>Selecteer <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=958-1936&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">de layer van het Form Field Label in de component Form Field</a>.</li>
+                 <li>Verwijder het design token <code class="utrecht-code">todo.form-field-label.column-gap</code> van deze layer.</li>
+                 <li>Selecteer <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=19018-25014&amp;t=4XR57VAGXKljzCQj-4" class="utrecht-link utrecht-link--html-a">de layer genaamd &#x27;label&#x27;</a>.</li>
+                 <li>Pas hier opnieuw het design token <code class="utrecht-code">todo.form-field-label.column-gap</code> toe via het contextuele menu van Tokens Studio: kies voor &#x27;Spacing&#x27; en vervolgens &#x27;Gap&#x27;.</li>
+                </ul>
+               </li>
+               <li>
+                &#x27;Line-height&#x27; aangepast voor Number Badge component.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Ga naar <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271" class="utrecht-link utrecht-link--html-a">de pagina van de Number Badge</a> en pas de line-height van de Candidate en Community component aan van 150% naar 100%. Doe dit direct in Figma zelf bij de Typography settings.</li>
+                </ul>
+               </li>
+               <li>
+                Toepassing van design tokens op Focus-ring component aangepast.<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Bij het toepassen van design tokens op de focus-ring component zijn enkele fouten gemaakt.</li>
+                 <li><a href="https://youtu.be/ANSezxbNbFA" class="utrecht-link utrecht-link--html-a">Bekijk de video &#x27;Bugfix: Focus-ring</a> waarin we uitleggen hoe je dit zelf kunt nalopen en verbeteren.</li>
+                 <li>Loop daarna de volgende componenten per bibliotheek na en voer de verbeteringen daar door:</li>
+                </ul>
+               </li>
+              </ul>
+              <p>NL Design System - Bibliotheek</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Accordion *</li>
+               <li>Breadcrumb Navigation</li>
+               <li>Button *</li>
+               <li>Checkbox *</li>
+               <li>Contact Timeline</li>
+               <li>File</li>
+               <li>Link</li>
+               <li>Link List</li>
+               <li>Login Link *</li>
+               <li>Page Number Navigation *</li>
+               <li>Radio Button</li>
+               <li>Select *</li>
+               <li>Side Navigation</li>
+               <li>Skip Link</li>
+               <li>Task Card</li>
+               <li>Task Navigation</li>
+               <li>Text Area *</li>
+               <li>Text Input *</li>
+              </ul>
+              <p>NL Design System - ToDo Bibliotheek</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Breadcrumb Navigation</li>
+               <li>Card as Link *</li>
+               <li>Case Card</li>
+               <li>Icon Only Button *</li>
+               <li>Listbox</li>
+               <li>Main Navigation</li>
+               <li>Page Number Navigation *</li>
+               <li>Progress List *</li>
+               <li>Switch *</li>
+               <li>Toolbar Button *</li>
+              </ul>
+              <p>Bij componenten aangeduid met een * zal ook een design token voor border-radius toegepast moeten worden.</p>
               <h2 id="220" class="utrecht-heading-2">2.2.0</h2>
               <p>20 augustus 2025</p>
               <p>Community component &#x27;Page Header&#x27; van gemeente Amsterdam is toegevoegd aan de bibliotheek.</p>
@@ -258,12 +344,12 @@
                <li><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23069-24687" class="utrecht-link utrecht-link--html-a">Bekijk Page Header in de NL Design System - Bibliotheek</a>.</li>
                <li>Hieronder vind je de bijbehorende design tokens.</li>
               </ul>
-              <span hidden="" id=":R2mhralaqh:"
+              <span hidden="" id=":R4uhralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2mhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4uhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;ams&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;page-header&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;font-family&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
@@ -425,12 +511,12 @@
                <li><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23080-639" class="utrecht-link utrecht-link--html-a">Bekijk Page Footer in de NL Design System - Bibliotheek</a>.</li>
                <li>Hieronder vind je de bijbehorende design tokens.</li>
               </ul>
-              <span hidden="" id=":R3uhralaqh:"
+              <span hidden="" id=":R66hralaqh:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R3uhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R66hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;ams&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;page-footer&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;menu&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
