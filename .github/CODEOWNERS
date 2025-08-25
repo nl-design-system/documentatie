@@ -3,7 +3,7 @@
 # Changes to any file require approval from @nl-design-system/kernteam-committer
 * @nl-design-system/kernteam-committer
 # Changes to files in /docs/wcag specifically require approval from @nl-design-system/kernteam-a11y
-/docs/wcag/ @nl-design-system/kernteam-a11y
+/docs/wcag/ @nl-design-system/kernteam-a11y @nl-design-system/kernteam-admin
 
 # Changes to this file (.github/CODEOWNERS) require approval from @nl-design-system/kernteam-admin
 .github/CODEOWNERS @nl-design-system/kernteam-admin
