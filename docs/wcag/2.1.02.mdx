@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.2 Geen toetsenbordval
 pagination_label: WCAG-succescriterium 2.1.2 Geen toetsenbordval
-description: Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.
+description: Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.
 slug: 2.1.2
 keywords:
   - WCAG
@@ -30,13 +30,49 @@ import Summary from "./summaries/_2.1.2-summary.md";
   {"WCAG-succescriterium 2.1.2 Geen toetsenbordval"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Bezoekers die een toetsenbord gebruiken komen niet vast te zitten.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Zorg ervoor dat bezoekers altijd weg kunnen navigeren van onderdelen.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">
+      Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.
+    </dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+[WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1) vereist dat alle interactieve onderdelen van een pagina, waar je acties mee uit kan voeren, te bedienen zijn met een toetsenbord. Dit succescriterium vereist dat de bezoeker een component niet alleen kan bereiken, maar ook verder of terug kan navigeren.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes- of tabtoetsen, geef dan aan hoe het wel kan. Een onderdeel wat wel te bereiken is maar waar men niet meer weg kan, wordt ook toetsenbordval genoemd.
+
+## Hoe te testen
+
+- Navigeer door de pagina met het toetsenbord zoals bij [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1)
+- Als je niet verder kan navigeren, controleer dan of er instructies zijn hoe dit wel kan.
+
+Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alternatieve instructies, dan faalt dit criterium.
+
+## Tips
+
+- Beïnvloed zo min mogelijk de focus van de gebruiker met JavaScript, het `autofocus`-attribuut of het `tabindex`-attribuut. Door er niet aan te komen kun je het ook niet slechter maken.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
+- Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
+- Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
 ## Gebruikersonderzoek
 
